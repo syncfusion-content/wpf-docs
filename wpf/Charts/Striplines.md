@@ -763,4 +763,4 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`How to display striplines in DateTimeAxis of WPF Chart`](https://www.syncfusion.com/kb/10674/how-to-display-striplines-in-datetimeaxis-of-wpf-chart)
+[`How to display striplines in DateTimeAxis of WPF Chart`](https://support.syncfusion.com/kb/article/9199/how-to-display-striplines-in-datetimeaxis-of-wpf-chart)
