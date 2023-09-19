@@ -11,13 +11,13 @@ documentation: ug
 
 This section explains about various row types in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid).
 
-[StackedHeaderRow](http://help.syncfusion.com/wpf/sfdatagrid/columns#stacked-headers)
+[StackedHeaderRow](https://help.syncfusion.com/wpf/datagrid/columns#stacked-headers)
 
-[AddNewRow](http://help.syncfusion.com/wpf/sfdatagrid/data-manipulation#built-in-addnewrow)
+[AddNewRow](https://help.syncfusion.com/wpf/datagrid/data-manipulation#built-in-addnewrow)
 
-[SummaryRow](http://help.syncfusion.com/wpf/sfdatagrid/summaries)
+[SummaryRow](https://help.syncfusion.com/wpf/datagrid/summaries)
 
-[UnboundRow](http://help.syncfusion.com/wpf/sfdatagrid/unbound-rows)
+[UnboundRow](https://help.syncfusion.com/wpf/datagrid/unbound-rows)
 
 ## Row Header
 
@@ -39,9 +39,9 @@ dataGrid.ShowRowHeader = true;
 
 See also.
 
-[Show RowIndex in RowHeader](http://help.syncfusion.com/wpf/sfdatagrid/styles-and-templates#styling-rowheader)
+[Show RowIndex in RowHeader](https://help.syncfusion.com/wpf/datagrid/styles-and-templates#styling-rowheader)
 
-[Customizing RowHeader based on record](http://help.syncfusion.com/wpf/sfdatagrid/conditional-styling#row-header)
+[Customizing RowHeader based on record](https://help.syncfusion.com/wpf/datagrid/conditional-styling#row-header)
 
 ### Row indicators and its description
 
@@ -146,7 +146,7 @@ You can display the corresponding row index in each row header, by customizing t
 ![WPF DataGrid displays Row Header Cells with Row Index](Interactive-Features_images/wpf-datagrid-row-index.png)
 
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF-13678149272112665828.zip).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF-13678149272112665828.zip).
 
 ### Change the current row indicator
 
@@ -199,7 +199,7 @@ You can change the CurrentRowIndicator in the row header by customizing the cont
 
 ![Customizing Current Row Indicator in WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-indicator.png)
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator257326168.zip).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator257326168.zip).
 
 ### Change the background of row header 
 
@@ -250,7 +250,7 @@ public class CustomConverter:IValueConverter
 
 ![Changing Row Header Background of WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-header-background.png)
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BackgroundColorForRowHeader_WPF18250214901515913833.zip).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BackgroundColorForRowHeader_WPF18250214901515913833.zip).
 
 ## Header Row
 
@@ -361,7 +361,7 @@ dataGrid.FrozenRowsCount = 3;
 
 ### Differentiate frozen rows from normal rows
 
-You can differentiate the frozen rows and footer rows from normal rows by writing style for [VirtualizingCellsControl](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) and by customizing the `FrozenRow` and `FooterRow` visual states.
+You can differentiate the frozen rows and footer rows from normal rows by writing style for [VirtualizingCellsControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) and by customizing the `FrozenRow` and `FooterRow` visual states.
 
 
 {% tabs %}
@@ -444,7 +444,7 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 ### Disable drag and drop between frozen and non-frozen columns
 
 You can disable the drag and drop between frozen and non-frozen columns by handling [QueryColumnDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
-Using `Reason` property in [QueryColumnDraggingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html), you can cancel the column dropping operation. 
+Using `Reason` property in [QueryColumnDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html), you can cancel the column dropping operation. 
 
 In the below code, if the Reason is `QueryColumnDraggingReason.Dropping` and the column is dragged from frozen region to non-frozen region or vice versa, you can cancel the dropping action by setting `e.Cancel` as `true` in the event.
 

@@ -24,7 +24,6 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages#installing-nuget-packages)
-
 ## Creating Application with WizardControl
 In this walk through, user will create a WPF application that contains [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control.
 1. [Creating project](#Creating-the-project)
@@ -40,7 +39,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#wizard) will be added automatically.
 
-![Adding control via designer](Getting-Started_images/GettingStarted_img1.png)
+![WPF Wizard Adding control via designer](getting-started_images/wpf-wizard-adding-control-via-designer.png)
 
 ## Adding control manually in XAML
 In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control manually in XAML, do the below steps,
@@ -54,6 +53,7 @@ In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Wi
 
 3. Declare [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -75,6 +75,8 @@ In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Wi
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control manually in C#, do the below steps,
@@ -88,6 +90,7 @@ In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Wi
 
 3. Create WizardControl instance and add it to the page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -112,8 +115,10 @@ namespace WizardControl
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![GettingStarted of WizardControl](Getting-Started_images/Getting-Started_img1.jpeg)
+![WPF Wizard Adding Control Manually](getting-started_images/wpf-wizard-adding-control-manually.jpeg)
 
 ## Adding multiple pages
 
@@ -146,7 +151,7 @@ wizardControl.Items.Add(wizardPage3);
 
 {% endtabs %}
 
-![Adding control via designer](Getting-Started_images/GettingStarted_img2.png)
+![WPF Wizard Control Adding Multiple Pages](getting-started_images/wpf-wizard-adding-multiple-pages.png)
 
 ## Theme
 
@@ -156,4 +161,4 @@ WizardControl supports various built-in themes. Refer to the below links to appl
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-   ![Setting theme to WPF WizardControl](Getting-Started_images/Theme.png)
+   ![Setting theme to WPF Wizard Control](getting-started_images/wpf-wizard-control-theme.png)

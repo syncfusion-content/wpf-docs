@@ -6,7 +6,7 @@ platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-## Preview Settings
+# Preview Settings in WPF Diagram
 
 SfDiagram provides support to drag objects as an outline without affecting original object. When multiple elements are selected, outline of every selected element will be moved.
 
@@ -26,7 +26,7 @@ this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode
 
 ![QuickCommand](Interaction/Interaction_images/QuickCommand_img2.png)
 
-### Appearance
+## Appearance
 
 Appearance of the preview can be modified using `PreviewStyle` property of `PreviewSettings`.
 

@@ -23,7 +23,7 @@ Excel-Like UI: Essential Grid’s rich feature set allows you to build Excel-lik
 
 
 
-![Overview of GridTree UI like a excel](Overview_images/Overview_img1.png)
+![Overview of GridTree UI like a excel in WPF](overview_images/wpf-classic-grid-tree-ui-like-excel.png)
 
 
 
@@ -31,13 +31,13 @@ High Performance - EssentialGrid is a great asset to high-performance applicatio
 
 
 
-![Overview of GridTree](Overview_images/Overview_img2.png)
+![Overview of GridTree in WPF](overview_images/wpf-classic-grid-tree-perfomance.png)
 
 
 
 File Explorer - Applications that deal with hierarchical data can make use of Essential Grid’s file explorer feature, which allows child items to be displayed on-demand by using the GridTree control.
 
-![Overview of GridTree](Overview_images/Overview_img3.png)
+![Overview of GridTree in WPF](overview_images/wpf-classic-grid-tree-file-explorer.png)
 
 
 
@@ -140,7 +140,7 @@ Several built-in cell types can be used to display and edit any underlying data 
 
 
 
-![Overview of GridTree](Overview_images/Overview_img4.png)
+![Overview of GridTree in WPF](overview_images/wpf-classic-grid-tree-data-presentation.png)
 
 
 
@@ -150,7 +150,7 @@ The GridTree control provides an effective option for sorting. Also, its appeara
 
 
 
-![Overview of GridTree](Overview_images/Overview_img5.png)
+![Overview of GridTree in WPF](overview_images/wpf-classic-grid-tree-interactive-feature.png)
 
 
 

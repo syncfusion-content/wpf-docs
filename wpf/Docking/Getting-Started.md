@@ -44,6 +44,7 @@ In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 
 3. Declare [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -71,6 +72,8 @@ In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control manually in C#, do the below steps,
@@ -84,6 +87,7 @@ In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 
 3. Create DockingManager control instance and add it to the page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -123,6 +127,8 @@ namespace DockingManager_Sample
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![WPF Docking in Visual Studio](Getting-Started_images/wpf-docking-in-visual-studio.jpeg)
 
@@ -328,6 +334,7 @@ You can customize the visual styles of [DockingManager](https://help.syncfusion.
 
 * Include an namespace for the `SfSkinManager` assembly to the MainWindow.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -355,9 +362,12 @@ using Syncfusion.SfSkinManager;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 * Now apply the value as `VisualStudio2013` to the [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) property of the SfSkinManager for the DockingManager control.
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -385,6 +395,8 @@ SfSkinManager.SetVisualStyle(SyncDockingManager,VisualStyles.VisualStudio2013);
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
 ![WPF Docking Visual Styles](Getting-Started_images/wpf-docking-visual-styles.jpeg)
 

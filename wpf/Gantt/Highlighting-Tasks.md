@@ -48,6 +48,7 @@ To highlight a set of tasks in Gantt chart region:
 1. Bind the tasks that need to be highlighted with Gantt’s HighlightedItems API.
 2. If required, change the value of the Gantt’s HighlightItemBrush API to change the item highlight color. The default color is red.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -105,6 +106,8 @@ this.Gantt.HighlightedItems = this.view.HighlightedTasks;
 
 {% endhighlight  %}
 {% endtabs  %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 The following image shows the Gantt with Highlighted Tasks:
 

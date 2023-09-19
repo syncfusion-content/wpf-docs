@@ -250,9 +250,9 @@ private void PdfViewer_HandwrittenSignatureChanged(object sender, HandwrittenSig
 
 Private Sub PdfViewer_HandwrittenSignatureChanged(ByVal sender As Object, ByVal e As HandwrittenSignatureChangedEventArgs)
     If e.Action = AnnotationChangedAction.Move Then
-		'Get the old location
+	    'Get the old location
         Dim oldLocation As PointF = e.OldBounds.Location
-		'Get the new location
+	    'Get the new location
         Dim newLocation As PointF = e.NewBounds.Location
     ElseIf e.Action = AnnotationChangedAction.Resize Then
         'Get the old size
@@ -292,11 +292,11 @@ private void PdfViewer_HandwrittenSignatureChanged(object sender, HandwrittenSig
 
 Private Sub PdfViewer_HandwrittenSignatureChanged(ByVal sender As Object, ByVal e As HandwrittenSignatureChangedEventArgs)
     If e.Action = AnnotationChangedAction.[Select] Then
-		'Get the page number
+	    'Get the page number
         Dim pageNumber As Integer = e.PageNumber
-		'Get the signature location
+	    'Get the signature location
         Dim location As PointF = e.NewBounds.Location
-		'Get the signature size
+	    'Get the signature size
         Dim size As SizeF = e.NewBounds.Size
     End If
 End Sub
@@ -328,8 +328,8 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
     Dim signature As System.Windows.Shapes.Path = New System.Windows.Shapes.Path()
-	'Note: Set your signature appearance as Data for the path here.
-	'Add signature in the first page of the PDF document at the location: X= 450, Y=750 and with the size: Width=100, Height=100.
+    'Note: Set your signature appearance as Data for the path here.
+    'Add signature in the first page of the PDF document at the location: X= 450, Y=750 and with the size: Width=100, Height=100.
     pdfViewer.AddHandwrittenSignature(signature, 1, New RectangleF(450, 750, 100, 100))
 End Sub
 

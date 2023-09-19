@@ -32,7 +32,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
 
-![Adding control via designer](Getting-Started-images/Getting-Started-img1.png)
+![Adding Control via Designer in WPF Rating](getting-started-images/wpf-rating-add-control-designer.png)
 
 ## Adding control manually in XAML
 
@@ -47,6 +47,7 @@ In order to add [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 3. Declare [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -67,6 +68,8 @@ In order to add [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Add control manually in C#
 
@@ -81,6 +84,7 @@ In order to add [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 3. Create SfRating control instance and add it to window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -111,6 +115,8 @@ namespace SfRating_GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Customize number of rating items
 
@@ -204,4 +210,4 @@ SfRating supports various built-in themes. Refer to the below links to apply the
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfRating](Getting-Started-images/Theme.png)
+  ![Setting Theme in WPF Rating](getting-started-images/wpf-rating-setting-theme.png)

@@ -24,6 +24,18 @@ Assembly</th><th>
 NuGet package</th></tr>
 <tr>
 <td>
+Windows11Light</td><td>
+Syncfusion.Themes.Windows11Light.Wpf.dll</td><td>
+{{'[Syncfusion.Themes.Windows11Light.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Windows11Light.WPF/)'| markdownify }}
+</td></tr>
+<tr>
+<td>
+Windows11Dark</td><td>
+Syncfusion.Themes.Windows11Dark.Wpf.dll</td><td>
+{{'[Syncfusion.Themes.Windows11Dark.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Windows11Dark.WPF/)'| markdownify }}
+</td></tr>
+<tr>
+<td>
 FluentLight</td><td>
 Syncfusion.Themes.FluentLight.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.FluentLight.WPF](https://www.nuget.org/packages/Syncfusion.Themes.FluentLight.WPF/)'| markdownify }}
@@ -206,6 +218,16 @@ The following table lists the available themes supported in theme studio and alt
 Styles</th><th>
 Supported in ThemeStudio</th><th>
 Alternative theme suggestion to use</th></tr>
+<tr>
+<td>
+Windows11Light</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Windows11Dark</td><td>
+Yes</td><td>
+-</td></tr>
 <tr>
 <td>
 FluentLight</td><td>
@@ -467,6 +489,24 @@ Please find the complete list of theme names, respective theme settings class, a
 Styles/Theme name</th><th>
 Respective theme settings class to customize</th>
 <th>Supported palette</th>
+</tr>
+<tr>
+<td>
+Windows11Light</td><td>
+{{'[Windows11LightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Windows11Light.WPF.Windows11LightThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Windows11Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Windows11Light.WPF.Windows11Palette.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Windows11Dark</td><td>
+{{'[Windows11DarkThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Windows11Dark.WPF.Windows11DarkThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Windows11Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Windows11Dark.WPF.Windows11Palette.html)'| markdownify }}
+</td>
 </tr>
 <tr>
 <td>
@@ -737,84 +777,252 @@ private void Window_Closed(object sender, EventArgs e)
 
 {% endtabs %}
 
+## Resource Key List
+
+### Framework Controls
+
+<table>
+<tr><th>Control Name</th><th>Key Name</th></tr>
+<tr><td>Button</td><td>WPFButtonStyle</td></tr>
+<tr><td>Calendar</td><td>WPFCalendarStyle</td></tr>
+<tr><td>CheckBox</td><td>WPFCheckBoxStyle</td></tr>
+<tr><td>ComboBox</td><td>WPFComboBoxStyle</td></tr>
+<tr><td>DataGrid</td><td>WPFDataGridStyle</td></tr>
+<tr><td>DatePicker</td><td>WPFDatePickerStyle</td></tr>
+<tr><td>Expander</td><td>WPFExpanderStyle</td></tr>
+<tr><td>FlatButton</td><td>WPFFlatButtonStyle</td></tr>
+<tr><td>FlatPrimaryButton</td><td>WPFFlatPrimaryButtonStyle</td></tr>
+<tr><td>FlatToggleButton</td><td>WPFFlatToggleButtonStyle</td></tr>
+<tr><td>GlyphButton</td><td>WPFGlyphButtonStyle</td></tr>
+<tr><td>GlyphDropdownExpander</td><td>WPFGlyphDropdownExpanderStyle</td></tr>
+<tr><td>GlyphEditableDropdownExpander</td><td>WPFGlyphEditableDropdownExpanderStyle</td></tr>
+<tr><td>GlyphPrimaryToggleButton</td><td>WPFGlyphPrimaryToggleButtonStyle</td></tr>
+<tr><td>GlyphRepeatButton</td><td>WPFGlyphRepeatButtonStyle</td></tr>
+<tr><td>GlyphToggleButton</td><td>WPFGlyphToggleButtonStyle</td></tr>
+<tr><td>GlyphTreeExpander</td><td>WPFGlyphTreeExpanderStyle</td></tr>
+<tr><td>GridSplitter</td><td>WPFGridSplitterStyle</td></tr>
+<tr><td>GroupBox</td><td>WPFGroupBoxStyle</td></tr>
+<tr><td>Hyperlink</td><td>WPFHyperlinkStyle</td></tr>
+<tr><td>Label</td><td>WPFLabelStyle</td></tr>
+<tr><td>ListBox</td><td>WPFListBoxStyle</td></tr>
+<tr><td>ListView</td><td>WPFListViewStyle</td></tr>
+<tr><td>Menu</td><td>WPFMenuStyle</td></tr>
+<tr><td>PasswordBox</td><td>WPFPasswordBoxStyle</td></tr>
+<tr><td>PrimaryButton</td><td>WPFPrimaryButtonStyle</td></tr>
+<tr><td>ProgressBar</td><td>WPFProgressBarStyle</td></tr>
+<tr><td>RadioButton</td><td>WPFRadioButtonStyle</td></tr>
+<tr><td>RepeatButton</td><td>WPFRepeatButtonStyle</td></tr>
+<tr><td>ResizeGrip</td><td>WPFResizeGripStyle</td></tr>
+<tr><td>RichTextBox</td><td>WPFRichTextBoxStyle</td></tr>
+<tr><td>ScrollViewer</td><td>WPFScrollViewerStyle</td></tr>
+<tr><td>Separator</td><td>WPFSeparatorStyle</td></tr>
+<tr><td>Slider</td><td>WPFSliderStyle</td></tr>
+<tr><td>StatusBar</td><td>WPFStatusBarStyle</td></tr>
+<tr><td>TabControl</td><td>WPFTabControlStyle</td></tr>
+<tr><td>TextBlock</td><td>WPFTextBlockStyle</td></tr>
+<tr><td>TextBox</td><td>WPFTextBoxStyle</td></tr>
+<tr><td>ToggleButton</td><td>WPFToggleButtonStyle</td></tr>
+<tr><td>ToolBar</td><td>WPFToolBarStyle</td></tr>
+<tr><td>ToolTip</td><td>WPFToolTipStyle</td></tr>
+<tr><td>TreeView</td><td>WPFTreeViewStyle</td></tr>
+<tr><td>Window</td><td>WPFWindowStyle</td></tr>
+</table>
+
+### Syncfusion Controls
+
+<table>
+<tr><th>Control Name</th><th>Key Name</th></tr>
+<tr><td>AutoComplete</td><td>SyncfusionAutoCompleteStyle</td></tr>
+<tr><td>BusyIndicator</td><td>SyncfusionBusyIndicatorStyle</td></tr>
+<tr><td>ButtonAdv</td><td>SyncfusionButtonAdvStyle</td></tr>
+<tr><td>CalendarEdit</td><td>SyncfusionCalendarEditStyle</td></tr>
+<tr><td>CardView</td><td>SyncfusionCardViewStyle</td></tr>
+<tr><td>CheckListBox</td><td>SyncfusionCheckListBoxStyle</td></tr>
+<tr><td>ChromelessWindow</td><td>SyncfusionChromelessWindowStyle</td></tr>
+<tr><td>Clock</td><td>SyncfusionClockStyle</td></tr>
+<tr><td>ColorEdit</td><td>SyncfusionColorEditStyle</td></tr>
+<tr><td>ColorPicker</td><td>SyncfusionColorPickerStyle</td></tr>
+<tr><td>ColorPickerPalette</td><td>SyncfusionColorPickerPaletteStyle</td></tr>
+<tr><td>ComboBoxAdv</td><td>SyncfusionComboBoxAdvStyle</td></tr>
+<tr><td>CurrencyTextBox</td><td>SyncfusionCurrencyTextBoxStyle</td></tr>
+<tr><td>DateTimeEdit</td><td>SyncfusionDateTimeEditStyle</td></tr>
+<tr><td>DockingManager</td><td>SyncfusionDockingManagerStyle</td></tr>
+<tr><td>DocumentContainer</td><td>SyncfusionDocumentContainerStyle</td></tr>
+<tr><td>DoubleTextBox</td><td>SyncfusionDoubleTextBoxStyle</td></tr>
+<tr><td>DropDownButtonAdv</td><td>SyncfusionDropDownButtonAdvStyle</td></tr>
+<tr><td>EditControl</td><td>SyncfusionEditControlStyle</td></tr>
+<tr><td>FontListBox</td><td>SyncfusionFontListBoxStyle</td></tr>
+<tr><td>FontListComboBox</td><td>SyncfusionFontListComboBoxStyle</td></tr>
+<tr><td>Gallery</td><td>SyncfusionGalleryStyle</td></tr>
+<tr><td>GridPrintPreviewControl</td><td>SyncfusionGridPrintPreviewControlStyle</td></tr>
+<tr><td>GroupBar</td><td>SyncfusionGroupBarStyle</td></tr>
+<tr><td>HierarchyNavigator</td><td>SyncfusionHierarchyNavigatorStyle</td></tr>
+<tr><td>IntegerTextBox</td><td>SyncfusionIntegerTextBoxStyle</td></tr>
+<tr><td>MaskedTextBox</td><td>SyncfusionMaskedTextBoxStyle</td></tr>
+<tr><td>MenuAdv</td><td>SyncfusionMenuAdvStyle</td></tr>
+<tr><td>NotifyIcon</td><td>SyncfusionNotifyIconStyle</td></tr>
+<tr><td>PdfViewerControl</td><td>SyncfusionPdfViewerControlStyle</td></tr>
+<tr><td>PercentTextBox</td><td>SyncfusionPercentTextBoxStyle</td></tr>
+<tr><td>PinnableListBox</td><td>SyncfusionPinnableListBoxStyle</td></tr>
+<tr><td>PivotGridControl</td><td>SyncfusionPivotGridControlStyle</td></tr>
+<tr><td>PrintPreview</td><td>SyncfusionPrintPreviewStyle</td></tr>
+<tr><td>PrintPreviewControl</td><td>SyncfusionPrintPreviewControlStyle</td></tr>
+<tr><td>PropertyGrid</td><td>SyncfusionPropertyGridStyle</td></tr>
+<tr><td>Ribbon</td><td>SyncfusionRibbonStyle</td></tr>
+<tr><td>SfAccordion</td><td>SyncfusionSfAccordionStyle</td></tr>
+<tr><td>SfAreaSparkline</td><td>SyncfusionSfAreaSparklineStyle</td></tr>
+<tr><td>SfBadge</td><td>SyncfusionSfBadgeStyle</td></tr>
+<tr><td>SfBulletGraph</td><td>SyncfusionSfBulletGraphStyle</td></tr>
+<tr><td>SfBusyIndicator</td><td>SyncfusionSfBusyIndicatorStyle</td></tr>
+<tr><td>SfCalculator</td><td>SyncfusionSfCalculatorStyle</td></tr>
+<tr><td>SfChart</td><td>SyncfusionSfChartStyle</td></tr>
+<tr><td>SfChart3D</td><td>SyncfusionSfChart3DStyle</td></tr>
+<tr><td>SfCircularGauge</td><td>SyncfusionSfCircularGaugeStyle</td></tr>
+<tr><td>SfCircularProgressBar</td><td>SyncfusionSfCircularProgressBarStyle</td></tr>
+<tr><td>SfColorPalette</td><td>SyncfusionSfColorPaletteStyle</td></tr>
+<tr><td>SfColumnSparkline</td><td>SyncfusionSfColumnSparklineStyle</td></tr>
+<tr><td>SfDataGrid</td><td>SyncfusionSfDataGridStyle</td></tr>
+<tr><td>SfDataPager</td><td>SyncfusionSfDataPagerStyle</td></tr>
+<tr><td>SfDatePicker</td><td>SyncfusionSfDatePickerStyle</td></tr>
+<tr><td>SfDateSelector</td><td>SyncfusionSfDateSelectorStyle</td></tr>
+<tr><td>SfDateTimeRangeNavigator</td><td>SyncfusionSfDateTimeRangeNavigatorStyle</td></tr>
+<tr><td>SfDiagram</td><td>SyncfusionSfDiagramStyle</td></tr>
+<tr><td>SfDiagramRibbon</td><td>SyncfusionSfDiagramRibbonStyle</td></tr>
+<tr><td>SfDigitalGauge</td><td>SyncfusionSfDigitalGaugeStyle</td></tr>
+<tr><td>SfDomainUpDown</td><td>SyncfusionSfDomainUpDownStyle</td></tr>
+<tr><td>SfGridSplitter</td><td>SyncfusionSfGridSplitterStyle</td></tr>
+<tr><td>SfHeatMap</td><td>SyncfusionSfHeatMapStyle</td></tr>
+<tr><td>SfHubTile</td><td>SyncfusionSfHubTileStyle</td></tr>
+<tr><td>SfImageEditor</td><td>SyncfusionSfImageEditorStyle</td></tr>
+<tr><td>SfKanban</td><td>SyncfusionSfKanbanStyle</td></tr>
+<tr><td>SfLineSparkline</td><td>SyncfusionSfLineSparklineStyle</td></tr>
+<tr><td>SfLinearGauge</td><td>SyncfusionSfLinearGaugeStyle</td></tr>
+<tr><td>SfLinearProgressBar</td><td>SyncfusionSfLinearProgressBarStyle</td></tr>
+<tr><td>SfMap</td><td>SyncfusionSfMapStyle</td></tr>
+<tr><td>SfMaskedEdit</td><td>SyncfusionSfMaskedEditStyle</td></tr>
+<tr><td>SfMultiColumnDropDownControl</td><td>SyncfusionSfMultiColumnDropDownControlStyle</td></tr>
+<tr><td>SfNavigationDrawer</td><td>SyncfusionSfNavigationDrawerStyle</td></tr>
+<tr><td>SfPulsingTile</td><td>SyncfusionSfPulsingTileStyle</td></tr>
+<tr><td>SfRadialMenu</td><td>SyncfusionSfRadialMenuStyle</td></tr>
+<tr><td>SfRadialSlider</td><td>SyncfusionSfRadialSliderStyle</td></tr>
+<tr><td>SfRangeSlider</td><td>SyncfusionSfRangeSliderStyle</td></tr>
+<tr><td>SfRating</td><td>SyncfusionSfRatingStyle</td></tr>
+<tr><td>SfRichTextBoxAdv</td><td>SyncfusionSfRichTextBoxAdvStyle</td></tr>
+<tr><td>SfScheduler</td><td>SyncfusionSfSchedulerStyle</td></tr>
+<tr><td>SfSmithChart</td><td>SyncfusionSfSmithChartStyle</td></tr>
+<tr><td>SfSpreadsheet</td><td>SyncfusionSfSpreadsheetStyle</td></tr>
+<tr><td>SfStepProgressBar</td><td>SyncfusionSfStepProgressBarStyle</td></tr>
+<tr><td>SfSunburstChart</td><td>SyncfusionSfSunburstChartStyle</td></tr>
+<tr><td>SfTextBoxExt</td><td>SyncfusionSfTextBoxExtStyle</td></tr>
+<tr><td>SfTextInputLayout</td><td>SyncfusionSfTextInputLayoutStyle</td></tr>
+<tr><td>SfTimePicker</td><td>SyncfusionSfTimePickerStyle</td></tr>
+<tr><td>SfTimeSelector</td><td>SyncfusionSfTimeSelectorStyle</td></tr>
+<tr><td>SfTreeGrid</td><td>SyncfusionSfTreeGridStyle</td></tr>
+<tr><td>SfTreeMap</td><td>SyncfusionSfTreeMapStyle</td></tr>
+<tr><td>SfTreeNavigator</td><td>SyncfusionSfTreeNavigatorStyle</td></tr>
+<tr><td>SfTreeView</td><td>SyncfusionSfTreeViewStyle</td></tr>
+<tr><td>SfWinLossSparkline</td><td>SyncfusionSfWinLossSparklineStyle</td></tr>
+<tr><td>SplitButtonAdv</td><td>SyncfusionSplitButtonAdvStyle</td></tr>
+<tr><td>Stencil</td><td>SyncfusionStencilStyle</td></tr>
+<tr><td>TabControlExt</td><td>SyncfusionTabControlExtStyle</td></tr>
+<tr><td>TabNavigationControl</td><td>SyncfusionTabNavigationControlStyle</td></tr>
+<tr><td>TabSplitter</td><td>SyncfusionTabSplitterStyle</td></tr>
+<tr><td>TaskBar</td><td>SyncfusionTaskBarStyle</td></tr>
+<tr><td>TileViewControl</td><td>SyncfusionTileViewControlStyle</td></tr>
+<tr><td>TimeSpanEdit</td><td>SyncfusionTimeSpanEditStyle</td></tr>
+<tr><td>ToolBarAdv</td><td>SyncfusionToolBarAdvStyle</td></tr>
+<tr><td>TreeViewAdv</td><td>SyncfusionTreeViewAdvStyle</td></tr>
+<tr><td>UpDown</td><td>SyncfusionUpDownStyle</td></tr>
+<tr><td>WizardControl</td><td>SyncfusionWizardControlStyle</td></tr>
+</table>	
+
+
 ## How to
 
-### Apply custom theme in the application
+### Apply customized theme from Theme Studio
 
-To apply a custom theme in the application, export the custom theme project from ThemeStudio using [this reference](https://help.syncfusion.com/wpf/themes/theme-studio#exporting-theme-project).
-
-For demonstration purposes, the exported theme name has been used as `MaterialDarkYellow` and assembly name as `Syncfusion.Themes.MaterialDarkYellow.WPF`.
-
-Now, for the control used in the application, set the `SfSkinManager` attached property `Theme` to `MaterialDarkYellow;MaterialDark`. Since, custom theme name should be updated in the following format: `CustomTheme1;BaseThemeName`, where `CustomTheme1` denotes the custom theme name and `BaseThemeName` denotes the theme name from which it is derived. For example, `MaterialDarkYellow;MaterialDark`.
+Create custom themes by modifying the existing themes from Theme studio. To apply a custom theme in the application by using the following reference.
 
 {% tabs %}
+
+{% highlight XAML %}
+
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+syncfusionskin:SfSkinManager.Theme="{syncfusionskin:SkinManagerExtension ThemeName=FluentLightGreen}"
+
+{% endhighlight %}
 
 {% highlight C# %}
 
-SfSkinManager.SetTheme(this, new Theme("MaterialDarkYellow;MaterialDark"));
+SfSkinManager.SetTheme(this, new Theme("FluentLightGreen"));
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Override syncfusion themes in the application
 
-All Syncfusion themes are [supported in theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). A common naming convention can be used to override control styles. A unique key is given to every style so that the styles can be overridden using the `BasedOn` property.
+### Customize theme in application level
 
-The naming convention of a control style will be like `Syncfusion-ControlName-Style`. For example, `MaterialDarkButtonAdvStyle`.
+To customize the Syncfusion theme in application level, merge the theme in ResourceDictionary and override the style using 'BasedOn' property. 
 
-The following steps explain how to override the Syncfusion themes:
+In 'ResourceDictionary', mention the style path which need to be override, in 'BasedOn', mention the key stated in the table.
 
-**Step1:**
+We can customize or override the theme styles by following the steps outlined below.
 
-Add respective resource dictionary from the themes assembly to the application.
 
-The resource dictionary will be in this format: `/Syncfusion.Themes.<ThemeName>.WPF;component/<ControlName>/<ControlName>.xaml`, where `ThemeName` denotes the theme name for which overridden style is going to be applied and `ControlName` denotes the control name. For example, `/Syncfusion.Themes.MaterialDark.WPF;component/ButtonAdv/ButtonAdv.xaml`.
-
+**Step 1**: Merge the resource dictionaries of the controls which need to customize. In this example, we have merged the Framework Button‘s resource dictionary.
 {% tabs %}
 
 {% highlight XAML %}
 
-<ResourceDictionary>
-<ResourceDictionary.MergedDictionaries>
-<ResourceDictionary Source="/Syncfusion.Themes.MaterialDark.WPF;component/ButtonAdv/ButtonAdv.xaml"/>
+<ResourceDictionary.MergedDictionaries> 
+     <ResourceDictionary Source="/Syncfusion.Themes.Windows11Light.WPF;component/MSControl/Button.xaml" /> 
 </ResourceDictionary.MergedDictionaries>
-</ResourceDictionary>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-**Step2:**
-
-Define the new style using the `BasedOn` property.
-
-The following code sample overrides the Syncfusion style for the `ButtonAdv` Control.
+**Step 2**: Declare style for the control with 'BasedOn' key. Here style of the button has been declared and its key is used in 'BasedOn'. Button's Background, Foreground, FontFamily, BorderBrush has been overridden.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<Grid>
-        <Grid.Resources>
-            <Style x:Key="CustomButtonAdvStyle" TargetType="syncfusion:ButtonAdv" BasedOn="{StaticResource SyncfusionButtonAdvStyle}" >
-                <Setter Property="Foreground" Value="Red"/>
-            </Style>
-        </Grid.Resources>
-        <syncfusion:ButtonAdv Name="buttonAdv" Content="Testing" Width="150" Height="30" SmallIcon="{x:Null}" Style="{StaticResource CustomButtonAdvStyle}"></syncfusion:ButtonAdv>   
-</Grid>
+   <Style BasedOn="{StaticResource WPFButtonStyle}" 
+          x:Key="customizeButtonStyle"    
+          TargetType="{x:Type Button}">
+         <Setter Property="Background" Value="#5dbea3" />
+         <Setter Property="Foreground" Value="White" />
+         <Setter Property="FontFamily" Value="Berlin Sans FB Demi" />
+         <Setter Property="BorderBrush" Value="#5dbea3" />   
+   </Style>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Overridden foreground style applied for WPF ButtonAdv control](Skin-Manager_images/WPF-ButtonAdv-Overridden-foreground-style.png)
+**Step 3**: Now, utilize the customized styles in our application using the 'Style' property. This step adds custom styles of Buttons in WPF application. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<StackPanel Orientation="Horizontal" >
+    <Button Content="OK" Height="30" Width="120" Margin="10" Style="{StaticResource customizeButtonStyle}"></Button>
+    <Button Content="Cancel" Height="30" Width="120" Margin="10" Style="{StaticResource customizeButtonStyle}"></Button>          
+</StackPanel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customizing theme styles basedOn for buttons](Skin-Manager_images/CustomizingStyle.png)
 
 ### Change visual style at runtime
 
 Themes for application can be changed at runtime by changing `VisualStyle` property. Make sure that the new theme assembly is attached as reference in the application when applying theme.
-
-![Added references for WPF SkinManager and visual style](Skin-Manager_images/WPF-SkinManager-References.jpg)
 
 {% tabs %}
 
@@ -872,6 +1080,122 @@ Themes for application can be changed at runtime by changing `VisualStyle` prope
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfSkinManager.SetVisualStyle(this, (VisualStyles)Enum.Parse(typeof(VisualStyles), comboVisualStyle.SelectedItem.ToString()));
+
+{% endhighlight %}
+
 {% endtabs %}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/change-themes-at-runtime-using-skinmanager).
+
+### Switch theme with custom styles
+
+To change a theme dynamically with custom styles, utilize the resource dictionary and override the style using the 'BasedOn' property.
+
+We have provided an example that demonstrates switching between the Window11Light and Windows11Dark themes using the SfGrid control. In this example, we customize the foreground color of the GridTableSummaryCell to green in **Window 11 Light** and red in **Windows 11 Dark**.
+ 
+*  **Step 1**: In this example, we have an SfDataGrid and a RadioButton which is used to switching theme and we need to add resource dictionaries with paths in merged dictionaries in view model or code behind. The following code can be used to effortlessly switch themes.
+ 
+{% tabs %}
+
+{% highlight C# %}      
+
+        private void RadioButton_Click(object sender, RoutedEventArgs e)
+        {
+            var themeName = (sender as RadioButton).Content.ToString();
+            string syncfusionTheme = string.Empty;
+            if (themeName == "Dark")
+            {
+                syncfusionTheme = "Windows11Dark";
+                SfSkinManager.SetTheme(Application.Current.MainWindow, new Theme("Windows11Dark"));
+            }
+            else if (themeName == "Light")
+            {
+                syncfusionTheme = "Windows11Light";
+                SfSkinManager.SetTheme(Application.Current.MainWindow, new Theme("Windows11Light"));
+            }
+            
+            MergeResourceDictionary(syncfusionTheme);
+            MergeCustomResourceDictionary(themeName);
+        }
+
+        private void MergeResourceDictionary(string syncfusionTheme)
+        {
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/Window.xaml", UriKind.RelativeOrAbsolute)
+            });
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/ComboBox.xaml", UriKind.RelativeOrAbsolute)
+            });       
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/SfDataGrid/SfDataGrid.xaml", UriKind.RelativeOrAbsolute)
+            });
+        }
+
+        private void MergeCustomResourceDictionary(object selectedTheme)
+        {
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/WpfApp1;component/Themes/{selectedTheme}.xaml", UriKind.RelativeOrAbsolute)
+            });
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+*  **Step 2**: Customize the foreground color and font weight of the table summary row in both light and dark themes.
+
+**Light Theme**
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<!--Light.xaml-->
+<ResourceDictionary>
+           <Style BasedOn="{StaticResource SyncfusionGridTableSummaryCellStyle}"
+                  TargetType="syncfusion:GridTableSummaryCell">      
+                <Setter Property="FontWeight"  Value="Bold" />
+                <Setter Property="Foreground" Value="Green" />      
+           </Style>
+</ResourceDictionary>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Dark Theme**
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<!--Dark.xaml-->
+
+<ResourceDictionary>
+                <Style BasedOn="{StaticResource SyncfusionGridTableSummaryCellStyle}"
+                           TargetType="syncfusion:GridTableSummaryCell">      
+                               <Setter Property="FontWeight"    Value="Bold" />
+                               <Setter Property="Foreground"   Value="Red" />       
+            </Style>
+</ResourceDictionary>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Output Screenshots**
+
+Light Theme:
+
+![Customizing theme while run time in Light](Skin-Manager_images/Switching-theme-at-runtime-light1.png)
+
+Dark Theme:
+![Customizing theme while run time in Dark](Skin-Manager_images/Switching-theme-at-runtime-Dark1.png)
+

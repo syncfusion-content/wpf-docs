@@ -171,6 +171,7 @@ The following code snippet explains how to set the Resource ID through XAML
 
 1. Add the VisualStyle in the sample.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
  
@@ -178,9 +179,12 @@ syncfusion:SkinStorage.VisualStyle="Office2013"
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Set Resource ID as shown below.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -188,6 +192,8 @@ syncfusion:SkinStorage.VisualStyle="Office2013"
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Setting through C#
 

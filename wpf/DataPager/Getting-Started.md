@@ -47,7 +47,7 @@ Covers an editors like CurrencyTextBox, PercentEdit, DateTimeEdit.</td></tr>
 
 The following screenshot describes the elements of the DataPager control.
 
-![Displaying DataPager control](Getting-Started_images/Getting-Started_img1.png)
+![Displaying WPF DataPager control](getting-started_images/wpf-datapager-control.png)
 
 
 
@@ -69,18 +69,19 @@ The following steps help you to use the SfDataPager in an application:
 
 
 
-   ![Displaying the WPF SfDataPager control in designer](Getting-Started_images/Getting-Started_img2.png)
+   ![Displaying the WPF SfDataPager control in designer](getting-started_images/wpf-datapager-designer.png)
 
 
 
 3. When you drag the SfDataPager to the window, it automatically adds the required references to the current application.To add the SfDataPager using code, you can add the following assemblies to the project.
    
-   I. Syncfusion.Data.WPF
+        *Syncfusion.Data.WPF
    
-   II. Syncfusion.SfGrid.WPF
+        *Syncfusion.SfGrid.WPF
 
-4.You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
+4. You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window x:Class="SfDataPagerDemo.MainWindow"
@@ -98,9 +99,12 @@ The following steps help you to use the SfDataPager in an application:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-5.Create Business object class named as OrderInfo
+5. Create Business object class named as OrderInfo
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 public class OrderInfo
@@ -152,9 +156,12 @@ public class OrderInfo
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-6.Add the following code in ViewModel class
+6. Add the following code in ViewModel class
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class ViewModel
@@ -189,9 +196,12 @@ public class ViewModel
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-7.Set the ViewModel instance as DataContext to window. Now, you can bind the data collection to the SfDataPagerSource property.
+7. Set the ViewModel instance as DataContext to window. Now, you can bind the data collection to the SfDataPagerSource property.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
@@ -207,9 +217,12 @@ public class ViewModel
 </Grid>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-8.Then bind the PagedSource property of the SfDataPager control into the SfDataGridItemsSource property.
+8. Then bind the PagedSource property of the SfDataPager control into the SfDataGridItemsSource property.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
@@ -230,11 +243,13 @@ public class ViewModel
 </Grid>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 The following screenshot displays the output for Implementation of the SfDataPager in the SfDataGrid Control.
 
 
-![Displaying the SfDataPager in the SfDataGrid Control ](Getting-Started_images/Getting-Started_img3.png)
+![Displaying the WPF SfDataPager in the SfDataGrid Control ](getting-started_images/wpf-datapager-datagrid-control.png)
 
 ## Theme
 
@@ -244,6 +259,6 @@ SfDataPager supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF DataPager](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF DataPager](getting-started_images/wpf-datapager-Theme.png)
 
 

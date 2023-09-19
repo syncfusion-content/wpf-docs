@@ -28,7 +28,7 @@ Steps to add Overview control manually in XAML:
 2. Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or SfDiagram control namespace `Syncfusion.UI.Xaml.Diagram.Controls` in XAML page.
 
 3. Declare Overview control in XAML page.
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -48,6 +48,8 @@ Steps to add Overview control manually in XAML:
 	
 {% endhighlight %}	
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Overview of WPF Diagram](Overview-Control_images/wpf-diagram-overview.png)
 
@@ -125,10 +127,10 @@ The `OverviewChangedEvent` will notify the interactions in Overview control with
 
 {% seealso %}
 
-[How to virtualize the diagram control](/wpf/sfdiagram/virtualization)
+[How to virtualize the diagram control](/wpf/diagram/virtualization)
 
-[How to serialize the diagram control](/wpf/sfdiagram/serialization)
+[How to serialize the diagram control](/wpf/diagram/serialization)
 
-[How to localize the diagram control](/wpf/sfdiagram/localization)
+[How to localize the diagram control](/wpf/diagram/localization)
 
 {% endseealso %}

@@ -32,19 +32,18 @@ The WPF PDFViewer allows the user to toggle the visibility of a PDF [Layer](http
 
 //Retrieve a PDF document's layers collection using the PdfDocumentView. 
 LayerCollection layers = pdfDocumentView.Layers;  
-
- //Get a layer by its name.              
- for (int i = 0; i < layers.Count; i++) 
- { 
-      if (layers[i].Name == "Layer2") 
-      { 
-         //Toggle the visibility of a Layer.  
-         if (layers[i].IsVisible) 
-            layers[i].IsVisible = false; 
-         else 
-            layers[i].IsVisible = true; 
-      } 
- } 
+//Get a layer by its name.              
+for (int i = 0; i < layers.Count; i++) 
+{ 
+    if (layers[i].Name == "Layer2") 
+    { 
+        //Toggle the visibility of a Layer.  
+        if (layers[i].IsVisible) 
+           layers[i].IsVisible = false; 
+        else 
+           layers[i].IsVisible = true; 
+    } 
+} 
 
 {% endhighlight %}
 
@@ -84,7 +83,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
     PdfLoadedDocument pdf = new PdfLoadedDocument("PdfLayers.pdf");
     pdfViewer.Load(pdf);
     pdfViewer.EnableLayers = false;
-
 }
 
 {% endhighlight %}

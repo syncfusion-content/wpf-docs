@@ -57,6 +57,7 @@ In order to add the control manually in XAML, follow the below steps.
 
 3. Declare ButtonAdv control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -74,6 +75,8 @@ In order to add the control manually in XAML, follow the below steps.
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control manually in C#
 
@@ -87,6 +90,7 @@ In order to the add control manually in C#, do the below steps.
 
 3. Create ButtonAdv control instance and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -124,6 +128,8 @@ using Syncfusion.Windows.Tools.Controls;
 
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Setting label
 

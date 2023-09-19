@@ -38,7 +38,7 @@ The [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Contr
 * Syncfusion.SfColorPalette.WPF
 * Syncfusion.SfShared.WPF
 
-![ColorPalette Drag and dropped from ToolBox](Getting-Started_images/ColorPalette_Drag_and_dropped_from_ToolBox.png)
+![WPF Color Palette Drag and dropped from ToolBox](getting-started_images/wpf-color-palette-drag-and-drop-from-toolbox.png)
 
 ### Adding control manually in XAML
 
@@ -54,6 +54,7 @@ In order to add [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 
 3. Declare [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -76,8 +77,10 @@ In order to add [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![ColorPalette added by xaml code](Getting-Started_images/ColorPalette_img.png)
+![WPF Color Palette added by xaml code](getting-started_images/wpf-color-palette-xaml-code.png)
 
 ### Adding control manually in C#
 
@@ -91,6 +94,7 @@ In order to add [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 
 2. Import SfColorPalette namespace **Syncfusion.Windows.Controls.Media** .
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -100,11 +104,13 @@ using Syncfusion.Windows.Controls.Media;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Create [sfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) control instance and add it to the Page.
 
+{% capture codesnippet3 %}
 {% tabs %}
-
 {% highlight c# %}
 
     public partial class MainWindow : Window
@@ -124,6 +130,8 @@ using Syncfusion.Windows.Controls.Media;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding)
 
@@ -131,7 +139,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 You can select any color by clicking the respective color item in the [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) You can get selected color from the [SelectedColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html#Syncfusion_Windows_Controls_Media_SfColorPalette_SelectedColor) property. If you selecting any color, then the selected color will be displayed as tooltip.
 
-![Select a color from the ColorPalette](Getting-Started_images/ColorPalette_SelectedColor.png)
+![Select a color from the WPF Color Palette](getting-started_images/wpf-color-palette-selected-color.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding)
 
@@ -181,7 +189,7 @@ public class ColorToSolidColorBrushValueConverter : IValueConverter {
 {% endhighlight %}
 {% endtabs %}
 
-![Binding a selected color in ColorPalette](Getting-Started_images/Binding.gif)
+![Binding a selected color in WPF Color Palette](getting-started_images/wpf-color-palette-binding.gif)
 
 N>  [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding)
 
@@ -191,9 +199,9 @@ You can navigate and select a different colors from the different swatches by cl
 
 ### List of swatches
 
-![List of swatches in ColorPalette](Getting-Started_images/Swatches.png)
+![List of swatches in WPF Color Palette](getting-started_images/wpf-color-palette-swatches-list.png)
 
-![Navigate and changes the color swatches in ColorPalette](Getting-Started_images/Navigate_swatches.gif)
+![Navigate and changes the color swatches in WPF Color Palette](getting-started_images/wpf-color-palette-navigate-swatches.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding).
 
@@ -205,6 +213,6 @@ ColorPalette supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF ColorPalette](Getting-Started_images/ColorPalette_theme_Support.png)
+  ![Setting theme to WPF Color Palette](getting-started_images/wpf-color-palette-theme-support.png)
   
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/Themes).

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF DataGrid (SfDataGrid)
 
-This section provides a quick overview for working with the [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for working with the [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
 
 To get start quickly with WPF DataGrid, you can check on this video:
 <style>#WPFDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
@@ -114,7 +114,7 @@ Create new WPF Project in Visual Studio to display SfDataGrid with data objects.
 ### Adding control via Designer
 
 SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-    ![Dragging WPF DataGrid Control from Toolbox to Designer](Getting-Started_images/wpf-datagrid-toolbox.png)
+    ![Dragging WPF DataGrid Control from Toolbox to Designer](getting-started_images/wpf-datagrid-toolbox.png)
 
 ### Adding control manually in XAML
 
@@ -127,6 +127,7 @@ In order to add control manually in XAML, do the below steps,
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 3. Declare SfDataGrid control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -140,6 +141,8 @@ In order to add control manually in XAML, do the below steps,
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control manually in C\#
 
@@ -152,6 +155,7 @@ In order to add control manually in C#, do the below steps,
 2. Import SfDataGrid namespace **Syncfusion.UI.Xaml.Grid** .
 3. Create SfDataGrid control instance and add it to the Page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
@@ -171,6 +175,8 @@ namespace WpfApplication1
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ### Creating Data Model for sample application
 
@@ -178,6 +184,7 @@ SfDataGrid is a data-bound control. So before create binding to the control, you
 
 1. Create data object class named **OrderInfo** and declare properties as shown below,
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class OrderInfo
@@ -229,12 +236,15 @@ public class OrderInfo
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
 N> If you want your data object (OrderInfo class) to automatically reflect property changes, then the object must implement **INotifyPropertyChanged** interface.
  
-2.Create a **ViewModel** class with Orders property and Orders property is initialized with several data objects in constructor.
+2. Create a **ViewModel** class with Orders property and Orders property is initialized with several data objects in constructor.
 
+{% capture codesnippet4 %}
 {% tabs %} 
 {% highlight c# %}
 public class ViewModel
@@ -268,6 +278,8 @@ public class ViewModel
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ### Binding to Data
 
@@ -302,7 +314,7 @@ dataGrid.ItemsSource = viewModel.Orders;
 
 Now, run the application and you can expect the see the below output,
 
-![WPF DataGrid](Getting-Started_images/WPF-DataGrid.png)
+![WPF DataGrid](getting-started_images/wpf-datagrid-output.png)
 
 ## Defining Columns
 By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. 
@@ -543,7 +555,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Sorting](Getting-Started_images/WPF-DataGrid-Sorting.png)
+![WPF DataGrid Sorting](getting-started_images/wpf-datagrid-sorting.png)
 
 You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
 
@@ -575,13 +587,13 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Grouping](Getting-Started_images/WPF-DataGrid-Grouping.png)
+![WPF DataGrid Grouping](getting-started_images/wpf-datagrid-grouping.png)
 
 ### Filtering
 
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFiltering) property to `true` , where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. 
 
-![WPF DataGrid Filtering](Getting-Started_images/wpf-datagrid-filter.png)
+![WPF DataGrid Filtering](getting-started_images/wpf-datagrid-filter.png)
 
 
 ## Editing
@@ -600,4 +612,4 @@ SfDataGrid supports various built-in themes. Refer to the below links to apply t
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Applying Theme to WPF DataGrid](Getting-Started_images/wpf-datagrid-theme.png)
+  ![Applying Theme to WPF DataGrid](getting-started_images/wpf-datagrid-theme.png)

@@ -85,7 +85,6 @@ The following code snippet explains how to select an ink annotation on the first
 {% highlight C# %}
 
 //Selecting ink annotation from page 1 with the annotation’s name and bringing into view parameter 
-
 private void SelectAnnotation() 
 {  
     bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName, 1, true);
@@ -128,7 +127,7 @@ You can also change the name of an annotation. The following code sample demonst
 //Set the annotation name 
 private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedEventArgs e) 
 {  
-   e.Name = ”YOUR OWN NAME”;     
+    e.Name = ”YOUR OWN NAME”;     
 } 
 
 {% endhighlight %}
@@ -146,9 +145,9 @@ The existing annotation’s name can be obtained from [LoadedDocument]( https://
 //Getting existing annotation’s name
 private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
-     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
-     PdfPageBase page = loadedDocument.Pages[0];
-     string annotationName = page.Annotations[0].Name;
+    PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
+    PdfPageBase page = loadedDocument.Pages[0];
+    string annotationName = page.Annotations[0].Name;
 }
 
 {% endhighlight %}
@@ -194,7 +193,6 @@ The following code snippet explains how to hide an ink annotation using the anno
 {% highlight C# %}
 
 //Hide ink annotation using annotation’s name 
-
 private void HideAnnotation() 
 { 
    bool isHidden =  pdfViewer.HideAnnotation(inkAnnotationName); 
@@ -217,7 +215,6 @@ The following code snippet explains how to hide an ink annotation on the first p
 {% highlight C# %}
 
 //Hide ink annotation from page 1 with the annotation’s name 
-
 private void HideAnnotation() { bool isHidden = pdfViewer.HideAnnotation(inkAnnotationName, 1); } 
 
 {% endhighlight %}
@@ -241,7 +238,6 @@ The following code snippet explains how to show a hidden ink annotation using th
 {% highlight C# %}
 
 //Show ink annotation using annotation’s name 
-
 private void ShowAnnotation() 
 { 
    bool isShown =  pdfViewer.ShowAnnotation(inkAnnotationName); 
@@ -264,7 +260,6 @@ The following code snippet explains how to show an ink annotation on the first p
 {% highlight C# %}
 
 //Show ink annotation from page 1 with the annotation’s name 
-
 private void ShowAnnotation() { bool isShown = pdfViewer.ShowAnnotation(inkAnnotationName, 1); } 
 
 {% endhighlight %}
@@ -288,7 +283,6 @@ The following code snippet explains how to delete an ink annotation using the an
 {% highlight C# %}
 
 //delete ink annotation using annotation’s name 
-
 private void DeleteAnnotation()
 { 
    bool isDeleted =  pdfViewer.DeleteAnnotation(inkAnnotationName); 
@@ -317,5 +311,119 @@ private void DeleteAnnotation() { bool isDeleted = pdfViewer.DeleteAnnotation(in
 {% endtabs %}
 
 N> Similarly, we can implement it for all other annotations.
+
+## Delete all annotations  
+
+The PDF Viewer enables users to programmatically remove all annotations from a document without requiring any user interaction. This option helps users to remove unwanted annotations from the document. 
+
+### Delete all annotations in the PDF file
+
+PDF Viewer allows the user to delete all annotations programmatically using the [ClearAllAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ClearAllAnnotations) method. 
+
+The following code snippet explains how to delete all annotations. 
+
+{% tabs %}
+{% highlight C# %}
+
+//delete all annotations
+private void DeleteAnnotations()
+{ 
+   pdfViewer.ClearAllAnnotations(); 
+} 
+
+{% endhighlight %}
+{% highlight VB %}
+
+'delete all annotations
+private void DeleteAnnotations()
+{ 
+   pdfViewer.ClearAllAnnotations()
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+### Delete all annotations at specific page  
+
+PDF Viewer also allows the user to delete all annotations from a specific page programmatically using the overload [ClearAllAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ClearAllAnnotations_System_Int32_) method with a specified page number on which the annotations are located. The page number which we pass as a parameter, its annotations get deleted.
+
+The following code snippet explains how to delete all annotations on the first page of the PDF document. 
+
+{% tabs %}
+{% highlight C# %}
+
+//Delete all annotations from page 1
+private void DeleteAnnotation() 
+{ 
+    pdfViewer.ClearAllAnnotations(1); 
+} 
+
+{% endhighlight %}
+{% highlight VB %}
+
+'delete all annotations from page 1
+private void DeleteAnnotations()
+{ 
+   pdfViewer.ClearAllAnnotations(1)
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+## Update the annotation's modified date
+
+PDF Viewer allows the user to update the [ModifiedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationSettings.html#Syncfusion_Windows_PdfViewer_AnnotationSettings_ModifiedDate) of an annotation programmatically without user interaction. With this feature, users can alter the modified date and time according to their preferences.
+
+### How to update the modified date of an annotation using default annotation settings?
+
+User can include a [ModifiedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationSettings.html#Syncfusion_Windows_PdfViewer_AnnotationSettings_ModifiedDate) field when adding an annotation to a PDF document using default annotation settings.
+
+The following code snippet explains how to set the modified date field of an ink annotation to be included. Similarly, we can implement it for all other annotations.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    pdfviewer.Load("Input.pdf");
+    pdfviewer.InkAnnotationSettings.ModifiedDate = new DateTime(2020, 12, 1, 1, 1, 1);
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+{
+    pdfviewer.Load("Input.pdf")
+    pdfviewer.InkAnnotationSettings.ModifiedDate = new DateTime(2020, 12, 1, 1, 1, 1)
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### How to update the modified date of an annotation using annotation changed event settings?
+
+User can include a [ModifiedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationSettings.html#Syncfusion_Windows_PdfViewer_AnnotationSettings_ModifiedDate) field of an annotation to a PDF document using annotation changed event settings.
+
+The following code snippet explains how to set the modified date field of an ink annotation using ink annotation changed event settings. Similarly, we can implement it for all other annotations.
+
+{% tabs %}
+{% highlight C# %}
+
+private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedEventArgs e)
+{
+    e.Settings.ModifiedDate = new DateTime(2023, 12, 1, 1, 1, 1);
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+private Sub PdfViewer_InkAnnotationChanged(sender As Object, e As InkAnnotationChangedEventArgs)
+{
+    e.Settings.ModifiedDate = new DateTime(2023, 12, 1, 1, 1, 1)
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

@@ -18,7 +18,7 @@ The date-time range navigator control is composed of various elements such as hi
 * Content: Holds any type of UI element inside the navigator.
 * Resizable scroll bar: Allows users to zoom and scroll the content and label bars.
 
-![Getting started for WPF SfDateTimeRangNavigator ](Getting-Started_images/Getting-Started_img1.png)
+![Visual Structure in WPF Range Selector](getting-started_images/wpf-range-selector-visual-structure.png)
 
 ## Create SfDateTimeRangeNavigator
 
@@ -32,13 +32,16 @@ The following section explains how to create SfDateTimeRangeNavigator.
    * If you use VS 2012, choose Assemblies > Extensions > Syncfusion.SfChart.WPF.dll.
    * If you use VS 2010, choose .Net > Syncfusion.SfChart.WPF.dll.
 
-3.  Add the following namespace in your XAML page:
+3. Add the following namespace in your XAML page:
 
+{% capture codesnippet1 %}
 {% highlight xaml %}
 
 xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Initialize the SfDateTimeRangeNavigator
 
@@ -192,7 +195,7 @@ rangeNavigator.Content = chart;
 
 The following screenshot illustrates the result of the above code sample.
 
-![Getting started for WPF SfDateTimeRangNavigator ](Getting-Started_images/Getting-Started_img2.png)
+![Add Content in WPF Range Selector](getting-started_images/wpf-range-selector-add-content.png)
 
 ## Create SfDateTimeRangeNavigator from code-behind
 
@@ -204,14 +207,16 @@ This section explains how to create an application using the date-time range nav
 2. Choose Windows > Extensions > Syncfusion.SfChart.WPF.
 3. Add the following namespace in your C# file: MainPage.xaml.cs.
 
-
+{% capture codesnippet2 %}
 {% highlight c# %}
 
 using Syncfusion.UI.Xaml.Charts;
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-Initialize the Range Navigator
+### Initialize the Range Navigator
 
 {% highlight c# %}
 
@@ -219,7 +224,7 @@ SfDateTimeRangNavigator rangenavigator = new SfDateTimeRangNavigator ();
 
 {% endhighlight  %}
 
-Create a Sample Data Source
+### Create a Sample Data Source
 
 {% highlight c# %}
 
@@ -316,7 +321,7 @@ rangenavigator.Content = content;
 
 The following screenshot illustrates the result of the above code sample.
 
-![Content for WPF SfDateTimeRangNavigator](Getting-Started_images/Getting-Started_img3.png)
+![Content in WPF Range Selector](getting-started_images/wpf-range-selector-content.png)
 
 N> The [`SelectedData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_SelectedData) property of the date-time range navigator control returns the collection that represents the data between the selected ranges.
 
@@ -328,4 +333,4 @@ SfDateTimeRangeNavigator supports various built-in themes. Refer to the below li
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfDateTimeRangNavigator](Getting-Started_images/Theme.png)
+  ![Setting theme in WPF Range Selector](getting-started_images/wpf-range-selector-theme.png)

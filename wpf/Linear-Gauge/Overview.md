@@ -16,15 +16,15 @@ The [`LinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.
 
 ### Scale
 
-The [`Scale`](https://help.syncfusion.com/wpf/sflineargauge/scale) support adding a scale to linear gauge using horizontal and vertical orientations.
+The [`Scale`](https://help.syncfusion.com/wpf/linear-gauge/scale) support adding a scale to linear gauge using horizontal and vertical orientations.
 
 ### Ranges
 
-Highlights the desired [`Ranges`](https://help.syncfusion.com/wpf/sflineargauge/ranges) of values in the gauge scale.
+Highlights the desired [`Ranges`](https://help.syncfusion.com/wpf/linear-gauge/ranges) of values in the gauge scale.
 
 ### Pointers
 
-The [`Pointers`](https://help.syncfusion.com/wpf/sflineargauge/pointers) supports adding multiple pointers (bar and symbol) to the linear scale.
+The [`Pointers`](https://help.syncfusion.com/wpf/linear-gauge/pointers) supports adding multiple pointers (bar and symbol) to the linear scale.
 
 ![Linear Gauge - Overview](Overview_images/Overview_img1.jpeg)
 

@@ -119,12 +119,13 @@ WPF TreeGrid (SfTreeGrid) control can be added to the application by dragging it
 In order to add control manually in XAML, do the below steps,
 
 1. Add the below required assembly references to the project as shown in the below image,
-* Syncfusion.Data.WPF
-* Syncfusion.SfGrid.WPF
-* Syncfusion.Shared.WPF
+    * Syncfusion.Data.WPF
+    * Syncfusion.SfGrid.WPF
+    * Syncfusion.Shared.WPF
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfTreeGrid control namespace **Syncfusion.UI.Xaml.TreeGrid** in XAML page.
 3. Declare SfTreeGrid control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window x:Class="WpfApplication1.MainWindow"
@@ -140,18 +141,21 @@ In order to add control manually in XAML, do the below steps,
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 #### Adding control manually in C\#
 
 To add control manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
-* Syncfusion.Data.WPF
-* Syncfusion.SfGrid.WPF
-* Syncfusion.Shared.WPF
+    * Syncfusion.Data.WPF
+    * Syncfusion.SfGrid.WPF
+    * Syncfusion.Shared.WPF
 2. Import SfTreeGrid namespace **Syncfusion.UI.Xaml.TreeGrid**.
 3. Create SfTreeGrid control instance and add it to the Page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.TreeGrid;
@@ -171,6 +175,8 @@ namespace WpfApplication1
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 #### Binding self-relational data in SfTreeGrid
@@ -188,6 +194,7 @@ SfTreeGrid is a data-bound control. So, before binding to the control, you must 
 
 1. Creating data object class named `EmployeeInfo` and declare properties as shown below,
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class EmployeeInfo
@@ -237,12 +244,15 @@ public class EmployeeInfo
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?redirectedfrom=MSDN&view=net-5.0) interface.
+N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?redirectedfrom=MSDN&view=net-5.0) interface.
 
 2. Create a `ViewModel` class with Employees property and Employees property is initialized with several data objects in constructor.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 public class ViewModel
@@ -314,6 +324,8 @@ private  ObservableCollection<EmployeeInfo> GetEmployees()
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 #### Binding to Data
 
@@ -383,6 +395,7 @@ WPF TreeGrid (SfTreeGrid) supports to bind nested or hierarchical collection (wh
 
 1. Create data object class named `PersonInfo` and declare properties as shown below, 
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 public class PersonInfo
@@ -426,9 +439,12 @@ public class PersonInfo
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 2. Create a `ViewModel` class with PersonDetails property and PersonDetails property is initialized with several data objects in constructor
 
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 public class ViewModel 
@@ -469,6 +485,8 @@ public class ViewModel
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 #### Binding to Data
 

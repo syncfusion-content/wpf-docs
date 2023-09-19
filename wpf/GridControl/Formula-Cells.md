@@ -100,6 +100,7 @@ Here are the steps that are required to add a function to the Function Library.
 
 1. First, define a method that has this signature.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 // Define a method whose name is the FormulaName.
@@ -110,6 +111,9 @@ public string MyLibraryFormulaName(string args)
 Public Function MyLibraryFormulaName(ByVal args As String) As String
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 Here MyLibraryFormulaName must be a name that has not been already used in the Function Library and must include only letters and digits. If you want to replace an existing formula with a formula of the same name, first remove the existing formula before adding the new formula. Use the GridFormulaEngine.RemoveFunction method to remove a formula. 
 

@@ -23,6 +23,34 @@ pdfViewer.ShowToolbar = False
 {% endhighlight %}
 {% endtabs %}
 
+## Expand the Annotation toolbar by programmatically.
+
+The annotation toolbar is a secondary toolbar of PDF Viewer control that contains a collection of annotation buttons. By default, this annotation toolbar will be collapsed. To expand annotation toolbar at runtime, the user can click show annotations button, which is present in the primary toolbar. In order to expand annotation toolbar at loading or by programmatically, the user can just enable the isChecked property in annotations button as true. The following code example shows how to expands the annotation toolbar by programmatically in the PDF Viewer control.
+
+{% tabs %}
+{% highlight c# %}
+private void ExpandAnnotationToolbar() 
+{ 
+	// Get the instance of the toolbar using its template name. 
+	DocumentToolbar toolbar = pdfViewer.Template.Findname("PART_Toolbar", pdfViewer) as DocumentToolbar;
+	// Get the instance of the annotation button using its template name. 
+	ToggleButton annotationButton = (ToggleButton)toolbar.Template.Findname("PART_Annotations", toolbar);
+	// Expand the annotation toolbar. 
+	annotationButton.IsChecked = true; 
+}
+{% endhighlight %}
+{% highlight vbnet %}
+Private Sub ExpandAnnotationToolbar()
+    ' Get the instance of the toolbar using its template name.
+    Dim toolbar As DocumentToolbar = TryCast(pdfViewer.Template.Findname("PART_Toolbar", pdfViewer), DocumentToolbar)
+	' Get the instance of the annotation button using its template name. 
+	Dim annotationButton As ToggleButton = CType(toolbar.Template.Findname("PART_Annotations", toolbar), ToggleButton)
+	' Expand the annotation toolbar. 
+	annotationButton.IsChecked = True
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
 ## Hide the vertical toolbar
 
 You can hide the vertical toolbar which is present in the left side of PDF Viewer by disabling all the items present in the toolbar. Refer to the following code to hide the vertical toolbar.
@@ -33,19 +61,14 @@ private void HideVerticalToolbar()
 { 
 	// Hides the thumbnail icon. 
 	pdfViewer.ThumbnailSettings.IsVisible = false; 
-
 	// Hides the bookmark icon. 
 	pdfViewer.IsBookmarkEnabled = false; 
-
 	// Hides the layer icon. 
 	pdfViewer.EnableLayers = false; 
-
 	// Hides the organize page icon. 
 	pdfViewer.PageOrganizerSettings.IsIconVisible = false; 
-
 	// Hides the redaction icon. 
 	pdfViewer.EnableRedactionTool = false;   
-
 	// Hides the form icon. 
 	pdfViewer.FormSettings.IsIconVisible = false;
 }

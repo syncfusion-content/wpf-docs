@@ -20,7 +20,7 @@ The Syncfusion WPF offline installer can be downloaded from the [Syncfusion.com]
 Our 30-day trial can be downloaded in two ways.
 
    * Download Free Trial Setup
-   * Start Trials if using components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)
+   * Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 ### Download Free Trial Setup
 
@@ -39,13 +39,13 @@ Our 30-day trial can be downloaded in two ways.
 
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-offline-installer.png)
 
-### Start Trials if using components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)
+### Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 You should initiate an evaluation if you have already obtained our components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 1. You can start your 30-day free trial for WPF from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page from your account.
 
-   N> You can generate the license key for your active trial products from [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key will be mandatory to use our trial products in your application. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
+   N> You can generate the license key for your active trial products from [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key will be mandatory to use our trial products in your application. To know more about License key, refer this [help topic](https://help.syncfusion.com/wpf/licensing/overview). 
 	
    ![Trial and downloads of Syncfusion Essential Studio](images/start-trial-download.png)
    
@@ -54,7 +54,7 @@ You should initiate an evaluation if you have already obtained our components th
 
    N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
-4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) key here at any time before the trial period expires. (as shown in below screenshot.)
+4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://help.syncfusion.com/wpf/licensing/how-to-generate) here at any time before the trial period expires. (as shown in below screenshot.)
 
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-installer.png)
 
@@ -77,4 +77,4 @@ You should initiate an evaluation if you have already obtained our components th
    
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-offline-installer.png)
 
-You can also refer to the [**Offline installer**](https://help.syncfusion.com/wpf/Installation/offline-installer/how-to-install) links for step-by-step installation guidelines.	
+You can also refer to the [**Offline installer**](https://help.syncfusion.com/wpf/installation/offline-installer/how-to-install) links for step-by-step installation guidelines.	

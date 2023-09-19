@@ -215,21 +215,17 @@ The following are the steps to create Gantt control through designer.
 
 ![Designer page in application](Getting-Started_images/Getting-Started_img6.png)
 
-
 2. Select GanttControl from ToolBox.
 
 ![ToolBox window in application](Getting-Started_images/Getting-Started_img7.png)
-
 
 3. Drag-and-drop the GanttControl to Designer View.
 
 ![Loading WPF gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
 
-
 4. Gantt control is added to the window. Assembly reference will also be added to Project file.
 
 ![WPF Gantt control loaded in designer page](Getting-Started_images/Getting-Started_img9.png)
-
 
 5. Now you can customize the properties of Gantt control in the Properties Window.
 
@@ -353,12 +349,12 @@ N> By default, GanttGrid will show the date alone.
 
 ## see also
 
-[How to show horizontal and vertical grid lines in WPF gantt control]( https://www.syncfusion.com/kb/11800/how-to-show-horizontal-and-vertical-grid-lines-in-wpf-gantt-control)
+[How to show horizontal and vertical grid lines in WPF gantt control](https://support.syncfusion.com/kb/article/10135/how-to-show-horizontal-and-vertical-grid-lines-in-wpf-gantt-control)
 
-[How to enable horizontal lines for gantt chart rows]( https://www.syncfusion.com/kb/3067/how-to-enable-horizontal-lines-for-ganttcharts-rows)
+[How to enable horizontal lines for gantt chart rows](https://support.syncfusion.com/kb/article/3380/how-to-enable-horizontal-lines-for-ganttcharts-rows)
 
-[How to create gantt chart control in C# WPF](https://www.syncfusion.com/kb/10800/how-to-create-gantt-chart-control-in-c-wpf)
+[How to create gantt chart control in C# WPF](https://support.syncfusion.com/kb/article/9598/how-to-create-gantt-chart-control-in-c-wpf)
 
-[How to create a gantt chart by hiding the gantt grid](https://www.syncfusion.com/kb/10157/how-to-create-a-ganttchart-by-hiding-the-ganttgrid)
+[How to create a gantt chart by hiding the gantt grid](https://support.syncfusion.com/kb/article/8961/how-to-create-a-ganttchart-by-hiding-the-ganttgrid)
 
-[How to wrap WPF gantt in Windows Forms]( https://www.syncfusion.com/kb/9464/how-to-wrap-wpf-gantt-in-windows-forms)
+[How to wrap WPF gantt in Windows Forms](https://support.syncfusion.com/kb/article/8200/how-to-wrap-wpf-gantt-in-windows-forms)

@@ -25,6 +25,9 @@ The below keyboard shortcuts are available to customize the annotation in the PD
 *	Delete key: Deletes the selected annotation from the PDF document.
 *	Ctrl + Z: Performs undo functionality for recently performed operations.
 *	Ctrl + Y: Performs redo functionality for recently performed operations.
+*   Ctrl + C: To copy the selected annotation except the TextMarkup annotations.
+*   Ctrl + X: To cut the selected annotation except the TextMarkup annotations.
+*   Ctrl + V: To paste the recently cut/copied annotation.
 *	Esc key: To exit from the annotation mode.
 *   Up, down, right, left (direction keys): Moves the annotations up, down, right, and left, respectively.
 

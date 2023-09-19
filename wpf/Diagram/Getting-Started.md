@@ -21,13 +21,13 @@ The following section helps you to build your application with SfDiagram.
 
 ## Creating the project
 
-Create new WPF project using Visual Studio. For more [details](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
+Create new WPF project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
 
 ### Adding control via Designer
 
 [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) (SfDiagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![WPF Diagram from Designer](Getting-Started_images\wpf-diagram-from-designer.png)
+![WPF Diagram from Designer](getting-started_images\wpf-diagram-designer.png)
 
 ### Adding control manually in XAML
 
@@ -37,8 +37,9 @@ To add control manually in XAML, do the following steps:
 2. Import Syncfusion WPF schema  http://schemas.syncfusion.com/wpf or SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
 3. Declare SfDiagram control in XAML page.
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use Syncfusion components.
-    
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your WPF application to use Syncfusion components.
+
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -57,6 +58,8 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control manually in C#
 
@@ -66,6 +69,7 @@ To add control manually in C#, do the following steps:
 2. Import SfDiagram namespace Syncfusion.UI.Xaml.Diagram.
 3. Create SfDiagram control instance and add it to the Grid.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -89,6 +93,8 @@ namespace SfDiagram_WPF
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Basic Diagram elements
 
@@ -232,7 +238,7 @@ NodeViewModel Begin = new NodeViewModel()
 
 Now, the node will be as follows.
    
-![WPF Diagram Adding Shape and Style to Node](Getting-Started_images\wpf-diagram-adding-shape-and-style-to-node.png)
+![WPF Diagram Adding Shape and Style to Node](getting-started_images\wpf-diagram-node-shape-and-style.png)
    
 N> ID sets for each node to identify nodes easily while setting connectors.
    
@@ -285,7 +291,7 @@ NodeViewModel Begin = new NodeViewModel()
 
 Now, the node will be as follows.
  
-![WPF Diagram Node Annotation](Getting-Started_images\wpf-diagram-node-annotation.PNG)
+![WPF Diagram Node Annotation](getting-started_images\wpf-diagram-node-annotation.PNG)
 
 N> `Annotations` property is a collection, which indicates that more than one Annotation can be added to a Node and Connector. By default, `Annotations` property of Node and Connector is null.
  
@@ -369,7 +375,7 @@ public NodeViewModel AddNode(double offsetX, double offsetY, double width, doubl
 
 Finally, all the nodes are added to diagram and they will be as follows.
 
-![WPF Diagram Complete Nodes](Getting-Started_images\wpf-diagram-complete-nodes.png)
+![WPF Diagram Complete Nodes](getting-started_images\wpf-diagram-complete-nodes.png)
 
 ### Add connectors
 
@@ -437,7 +443,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 Now, the output will be as follows.
 
-![WPF Diagram Node with Connector](Getting-Started_images\wpf-diagram-node-with-connector.png)
+![WPF Diagram Node with Connector](getting-started_images\wpf-diagram-node-connector.png)
  
 ### Connectors for flow diagram
 
@@ -479,7 +485,7 @@ private ConnectorViewModel CreateConnector(string source, string target)
 
 Now, the output will be as follows.
 
-![WPF Connectors for Flow Diagram](Getting-Started_images\wpf-connectors-for-flow-diagram.png)
+![WPF Connectors for Flow Diagram](getting-started_images\wpf-diagram-connectors-flow.png)
     
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/Simple-FlowChart-Creation)
 
@@ -712,13 +718,13 @@ Declare the style for node, connector, symbol, and symbol group to visualize the
 
 The output will be as follows.
 
-![WPF Diagram Stencil Output](Getting-Started_images\wpf-diagram-stencil-output.PNG)
+![WPF Diagram Stencil Output](getting-started_images\wpf-diagram-stencil-output.PNG)
 
 #### Interaction with stencil
 
 We have represented the steps to interact with stencil such as drag and drop elements from stencil to diagram in the following gif.
 
-![WPF Diagram Interact with Stencil](Getting-Started_images\wpf-diagram-interact-with-stencil.gif)
+![WPF Diagram Interact with Stencil](getting-started_images\wpf-diagram-interact-stencil.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/StencilCreation)
 
@@ -900,7 +906,7 @@ RootGrid.Children.Add(diagram);
 
 The output will be as follows.
 
-![WPF Diagram Organization Layout](Getting-Started_images\wpf-diagram-organization-layout.PNG)
+![WPF Diagram Organization Layout](getting-started_images\wpf-diagram-organization-layout.PNG)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/Simple-OrganizationLayout-Creation)
 
@@ -914,6 +920,6 @@ SfDiagram supports various built-in themes. Refer to the below links to apply th
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![WPF Diagram Theme](Getting-Started_images\wpf-diagram-theme.jpg)
+  ![WPF Diagram Theme](getting-started_images\wpf-diagram-theme.jpg)
   
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme)

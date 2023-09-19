@@ -33,10 +33,8 @@ private void PdfViewer_FileLinkAnnotationClicked(object sender, FileLinkAnnotati
 {
     //Page index in which this file link annotation was clicked 
     int pageNumber = e.PageNumber;
-
     //Annotation's region.
     RectangleF bounds = e.Bounds;
-
     FileLinkAnnotationSettings settings = e.Settings;
     //External file path which was linked. 
     string filePath = settings.FileName;
@@ -53,7 +51,6 @@ You can open the file externally from the application level, by passing the `Fil
 private void PdfViewer_FileLinkAnnotationClicked(object sender, FileLinkAnnotationClickedEventArgs e)
 {
     string filePath = settings.FileName;
-
     Process.Start(filePath);
 }
 

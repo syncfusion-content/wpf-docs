@@ -180,8 +180,9 @@ SfDiagram provides a way to display additional content at the top (Header) or bo
 
 Steps for setting Header for printing:
 
-1.Create DataTemplate in Resources and assign it to the `PageHeaderTemplate` and `PageFooterTemplate` properties.
+1. Create DataTemplate in Resources and assign it to the `PageHeaderTemplate` and `PageFooterTemplate` properties.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML%}
 
@@ -201,9 +202,12 @@ Steps for setting Header for printing:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Set the above defined DataTemplate to `PrintSettings.PageHeaderTemplate` and `PrintSettings.PageFooterTemplate`, then assign value for `PrintSettings.PageHeaderHeight` and `PrintSettings.PageFooterHeight` properties also.
+2. Set the above defined DataTemplate to `PrintSettings.PageHeaderTemplate` and `PrintSettings.PageFooterTemplate`, then assign value for `PrintSettings.PageHeaderHeight` and `PrintSettings.PageFooterHeight` properties also.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -215,6 +219,8 @@ diagram.PrintingService.PrintSettings.PageFooterTemplate =this.Resources["PrintF
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3.Now, run the application and you can see page header and footer in all the pages. 
 

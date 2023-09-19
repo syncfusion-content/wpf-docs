@@ -37,12 +37,13 @@ The HierarchyNavigator control can be added to an application by dragging it fro
 ## Add control manually in XAML
 
 To add the control manually in XAML, follow the given steps:
-1.	Add the following required assembly references to the project:
-    * Syncfusion.Tools.WPF
-    * Syncfusion.Shared.WPF 
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3.	Declare the HierarchyNavigator control the in XAML page.
+1. Add the following required assembly references to the project:
+	* Syncfusion.Tools.WPF
+	* Syncfusion.Shared.WPF 
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3. Declare the HierarchyNavigator control the in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -57,17 +58,20 @@ To add the control manually in XAML, follow the given steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Add control manually in C\#
 
 To add the control manually in C#, follow the given steps:
 
-1.	Add the following required assembly references to the project:
-    * Syncfusion.Tools.WPF
-    * Syncfusion.Shared.WPF
-2.	Import the HierarchyNavigator namespace **using Syncfusion.Windows.Tools.Controls;**.
-3.	Create a HierarchyNavigator instance, and add it to the window.
+1. Add the following required assembly references to the project:
+	* Syncfusion.Tools.WPF
+	* Syncfusion.Shared.WPF
+2. Import the HierarchyNavigator namespace **using Syncfusion.Windows.Tools.Controls;**.
+3. Create a HierarchyNavigator instance, and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Tools;
@@ -90,6 +94,8 @@ namespace HierarchicalNavigatorSample
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![wpf hierarchical navigator control added by code](Getting-Started_images/wpf-hierarchy-navigator-control-added-manually.png)
 
@@ -151,6 +157,7 @@ The steps to bind to a Business Object collection are as follows:
 
 **1. Create a class named HierarchyItem.**
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 public class HierarchyItem
@@ -181,9 +188,12 @@ public class HierarchyItem
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 **2. Create a collection for ItemsSource to bind HierarchyItem.**
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight C# %}
 public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
@@ -205,9 +215,12 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 **3. In XAML, bind the collections to the ItemsSource property of the HierarchyNavigator control**
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight XAML %}
 <syncfusion:HierarchyNavigator Name="hierarchyNavigator2" Width="250" Height="25">
@@ -222,6 +235,8 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 </syncfusion:HierarchyNavigator>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![wpf hierarchy navigator control items added by data binding](Getting-Started_images/wpf-hierarchy-navigator-control-data-binding.png)
 

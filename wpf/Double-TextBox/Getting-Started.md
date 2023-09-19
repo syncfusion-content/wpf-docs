@@ -36,6 +36,7 @@ To add the DoubleTextBox control manually in XAML, follow these steps:
  
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `DoubleTextBox` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -50,6 +51,8 @@ To add the DoubleTextBox control manually in XAML, follow these steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF DoubleTextBox via C\#
 
@@ -61,6 +64,7 @@ To add the DoubleTextBox control manually in C#, follow these steps:
 
 3. Include the required namespace.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -68,9 +72,12 @@ using Syncfusion.Windows.Shared;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 4. Create an instance of DoubleTextBox and add it to the window.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -89,6 +96,8 @@ this.Content = doubleTextBox;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![WPF DoubleTextBox Control](Getting-Started_images/wpf-double-textbox-control.png)
 
@@ -114,7 +123,7 @@ doubleTextBox.Value = 100;
 
 ![WPF DoubleTextBox displays Value](Getting-Started_images/wpf-double-textbox-value.jpeg)
 
-N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the DoubleTextBox. Use only the `Value` property.
+N> Do not use the [Text](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the DoubleTextBox. Use only the `Value` property.
 
 ### Binding Value
 

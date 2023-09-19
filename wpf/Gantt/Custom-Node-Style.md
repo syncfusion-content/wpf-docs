@@ -53,7 +53,7 @@ MileStone</td></tr>
 
 The following code illustrates how to define style:
 
-
+{% capture codesnippet1 %}
 {% highlight xaml %}
 
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -249,12 +249,14 @@ The following code illustrates how to define style:
 </ResourceDictionary>
 
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-1. Add the style as a resource to the Gantt control in your application.
+2. Add the style as a resource to the Gantt control in your application.
 
 The following code illustrates how to add the styles to the application:
 
-
+{% capture codesnippet2 %}
 {% highlight xaml %}
 
 <sync:GanttControl Grid.Row="1" x:Name="Gantt" 
@@ -280,6 +282,8 @@ The following code illustrates how to add the styles to the application:
 </sync:GanttControl>
 
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Custom-Node-Style_img1](Custom-Node-Style_images/Custom-Node-Style_img1.png)
 

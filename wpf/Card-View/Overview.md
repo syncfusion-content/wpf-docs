@@ -17,9 +17,9 @@ The WPF [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 ## Key features
 
-* Editing - Allows to editing the fields in the GroupViewItems.
-* Grouping - Allows to Grouping between the CardViewItems.
-* Filtering - Allows to filtering based on the field's values in the GroupViewItems.
-* Sorting - Allows Sorting between the CardViewItems.
-* Header - Shows or hides the CardView Header panel.
-* Custom UI - Allows to customize the CardViewItems.
+* **Editing** - Allows to editing the fields in the GroupViewItems.
+* **Grouping** - Allows to Grouping between the CardViewItems.
+* **Filtering** - Allows to filtering based on the field's values in the GroupViewItems.
+* **Sorting** - Allows Sorting between the CardViewItems.
+* **Header** - Shows or hides the CardView Header panel.
+* **Custom UI** - Allows to customize the CardViewItems.

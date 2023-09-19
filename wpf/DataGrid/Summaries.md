@@ -161,7 +161,7 @@ The data grid hosts any view(s) inside a table summary for the entire row or for
 
 #### Displaying template for a row
 
-The template for the row can be loaded by using [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=net-5.0) or [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=netframework-4.8) as follows,
+The template for the row can be loaded by using [DataTemplate](https://learn.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) or [DataTemplateSelector](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=netframework-4.8) as follows,
 
 ##### Using template 
 
@@ -1908,7 +1908,7 @@ N> `DoubleAggregate` is used as SummaryType which has Count, Max, Min, Average a
 
 You can format the summary value by setting the appropriate format after the aggregate function followed by colon(:) in  [GridSummaryColumn.Format](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_Format) property.
 
-In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to know about how to set different format.
+In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to know about how to set different format.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2137,8 +2137,9 @@ You can calculate the summary values based on custom logic using [GridSummaryCol
 
 2. In the `CalculateAggregateFunc` method, you have to calculate the summary and assign it to the property.
  
-In the below code snippet, the Standard Deviation is calculated for quantity of products.
+   In the below code snippet, the Standard Deviation is calculated for quantity of products.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 public class CustomAggregate:ISummaryAggregate
@@ -2192,9 +2193,13 @@ public static class LinqExtensions
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3.Assign the custom aggregate to `GridSummaryColumn.CustomAggregate` property and set the [SummaryType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_SummaryType) as [Custom](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SummaryType.html). [GridSummaryColumn.Format](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_Format) property is defined based on property name in custom aggregate `StdDev`.
 
+3. Assign the custom aggregate to `GridSummaryColumn.CustomAggregate` property and set the [SummaryType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_SummaryType) as [Custom](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SummaryType.html). [GridSummaryColumn.Format](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_Format) property is defined based on property name in custom aggregate `StdDev`.
+
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 <Window.Resources>
@@ -2238,10 +2243,13 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 });
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
 
 ![Custom Aggregate Summaries in WPF DataGrid](Summaries_images/wpf-datagrid-custom-summaries.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries-366686956.zip) .
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries-366686956.zip) .
 
 ## Overriding Summary Renderer
 
@@ -2354,7 +2362,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
 
 ![Table Summary Formatting using Renderer in WPF DataGrid](Summaries_images/wpf-datagrid-table-summary-formatting.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-462271589.zip).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-462271589.zip).
 
 ### Customizing GroupCaptionText
 
@@ -2449,26 +2457,26 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 
 ![Customized Group Caption Text Format in WPF DataGrid](Summaries_images/wpf-datagrid-customization.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-1006707349.zip). 
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-1006707349.zip). 
 
 ## See Also
 
-[How to show vertical border to the column wise summary rows?](https://www.syncfusion.com/kb/10038)
+[How to show vertical border to the column wise summary rows?](https://support.syncfusion.com/kb/article/8850/how-to-show-vertical-border-to-the-column-wise-summary-rows-in-wpf-datagrid-sfdatagrid)
 
-[How to define summary rows using AttachedProperty in datagrid](https://www.syncfusion.com/kb/9838)
+[How to define summary rows using AttachedProperty in datagrid](https://support.syncfusion.com/kb/article/8658/how-to-define-summary-rows-using-attached-property-in-wpf-datagrid-)
 
-[How to add a textbox under each group and binding a underlying property on that?](https://www.syncfusion.com/kb/9295)
+[How to add a textbox under each group and binding a underlying property on that?](https://support.syncfusion.com/kb/article/7999/how-to-add-the-textbox-under-each-group-and-binding-underlying-property-in-wpf-datagrid)
 
-[How to load a button in CaptionSummaryRow and prevent expanding and collapsing of groups upon clicking it?](https://www.syncfusion.com/kb/7842)
+[How to load a button in CaptionSummaryRow and prevent expanding and collapsing of groups upon clicking it?](https://support.syncfusion.com/kb/article/7231/how-to-load-a-button-in-caption-summary-row-and-prevent-expand-and-collapse-of-groups-in)
 
-[How to display the NumberFormatInfo in GridSummaryColumn?](https://www.syncfusion.com/kb/6669)
+[How to display the NumberFormatInfo in GridSummaryColumn?](https://support.syncfusion.com/kb/article/6127/how-to-display-the-numberformat-info-in-gridsummarycolumn-of-wpf-datagrid-sfdatagrid)
 
-[How to apply different styles to the GridTableSummaryRow?](https://www.syncfusion.com/kb/5319)
+[How to apply different styles to the GridTableSummaryRow?](https://support.syncfusion.com/kb/article/5070/how-to-apply-different-styles-to-the-gridtablesummaryrow-in-wpf-datagrid)
 
-[How to use NumberFormatInfo in the SummaryColumn of the GridTableSummaryRow?](https://www.syncfusion.com/kb/5312)
+[How to use NumberFormatInfo in the SummaryColumn of the GridTableSummaryRow?](https://support.syncfusion.com/kb/article/5074/how-to-use-numberformatinfo-in-the-summarycolumn-of-the-gridtablesummaryrow-in-wpf-grid)
 
-[How to Change the GroupCaptionText based on Display member of the GridComboboxColumn?](https://www.syncfusion.com/kb/3446)
+[How to Change the GroupCaptionText based on Display member of the GridComboboxColumn?](https://support.syncfusion.com/kb/article/3569/how-to-change-the-groupcaptiontext-based-on-display-member-of-the-gridcomboboxcolumn)
 
-[How to customize the CaptionSummaryCell text in the SfDataGrid?](https://www.syncfusion.com/kb/3249)
+[How to customize the CaptionSummaryCell text in the SfDataGrid?](https://support.syncfusion.com/kb/article/3433/how-to-customize-the-captionsummarycell-text-in-wpf-datagrid)
 
-[How to Set the horizontal alignment on summary columns?](https://www.syncfusion.com/kb/2485)
+[How to Set the horizontal alignment on summary columns?](https://support.syncfusion.com/kb/article/2923/how-to-set-the-horizontal-alignment-on-summary-columns-in-wpf-datagrid)

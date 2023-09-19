@@ -22,7 +22,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
     PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf")
     pdfviewer.Load(pdf);   
-    pdfviewer1.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.FreeText;
+    pdfviewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.FreeText;
 }
 {% endhighlight %}
 {% highlight vbnet %}
@@ -69,11 +69,11 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     Dim pdf As New PdfLoadedDocument(“Input.pdf”)
     pdfViewer.Load(pdf)
-    // To set the background color of text annotation
+    'To set the background color of text annotation
     pdfviewer.FreeTextAnnotationSettings.Background = Colors.White
-    // To set the background color of text annotation
+    'To set the background color of text annotation
     pdfviewer.FreeTextAnnotationSettings.BorderColor = Colors.Blue
-    // To set the font color
+    'To set the font color
     pdfviewer.FreeTextAnnotationSettings.FontColor = Colors.Black
 End Sub
 
@@ -91,7 +91,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
 	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
-  	pdfviewer.FreeTextAnnotationSettings.Opacity = 0.5f;
+    pdfviewer.FreeTextAnnotationSettings.Opacity = 0.5f;
 }
 
 {% endhighlight %}
@@ -100,7 +100,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     Dim pdf As New PdfLoadedDocument(“Input.pdf”)
     pdfViewer.Load(pdf)
-	pdfviewer.FreeTextAnnotationSettings.Opacity = 0.5f
+    pdfviewer.FreeTextAnnotationSettings.Opacity = 0.5f
 End Sub
 
 {% endhighlight %}
@@ -126,7 +126,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     Dim pdf As New PdfLoadedDocument(“Input.pdf”)
     pdfViewer.Load(pdf)
-	pdfviewer.FreeTextAnnotationSettings.FontSize = 16
+    pdfviewer.FreeTextAnnotationSettings.FontSize = 16
 End Sub
 
 {% endhighlight %}
@@ -238,14 +238,11 @@ private void PdfViewer_FreeTextAnnotationChanged(object sender, FreeTextAnnotati
     //COMMON PROPERTIES
     //AnnotationChangedAction to identify action performed for annotation 
     AnnotationChangedAction action = e.Action;
-
     //Page index in which this shape annotation was modified 
     int pageNumber = e.PageNumber;
-
     //Annotation's previous position and current position 
     RectangleF currentBound = e.NewBounds;
     RectangleF previousBound = e.NewBounds;
-
     PdfViewerFreeTextSettings settings = e.Settings;
     //Annotation's properties which can be modify 
     string author = settings.Author;
@@ -260,7 +257,6 @@ private void PdfViewer_FreeTextAnnotationChanged(object sender, FreeTextAnnotati
     System.Windows.Media.Color fontColor = settings.FontColor;
     System.Windows.Media.FontFamily fontFamily = settings.FontFamily;
     int size = settings.FontSize;
-
 }
 
 {% endhighlight %}

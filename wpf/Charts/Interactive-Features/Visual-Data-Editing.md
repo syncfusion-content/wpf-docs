@@ -548,8 +548,8 @@ chart.Series.Add(series);
 
 Series with visual data editing has support for following events:
 
-* [`DragStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html)- Occurs when segment/series drag started. 
-* [`DragDelta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html)- Occurs when segment/series dragging.
-* [`DragEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html)- Occurs when segment/series drag end. 
-* [`PreviewDragEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html)- Occurs before drag end triggered. 
-* [`SegmentEnter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html)- Occurs when mouse enters in segment. 
+* [`DragStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_DragStart)- Occurs when segment/series drag started. 
+* [`DragDelta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_DragDelta)- Occurs when segment/series dragging.
+* [`DragEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_DragEnd)- Occurs when segment/series drag end. 
+* [`PreviewDragEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_PreviewDragEnd)- Occurs before drag end triggered. 
+* [`SegmentEnter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_SegmentEnter)- Occurs when mouse enters in segment. 

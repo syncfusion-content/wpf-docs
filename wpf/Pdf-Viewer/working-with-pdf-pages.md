@@ -35,16 +35,12 @@ namespace PdfViewerDemo
         public MainWindow()
         {
             InitializeComponent();
-
             //Create an instance for `PageBorder`.
             PageBorder pageBorder = new PageBorder();
-
             //Set the `Color` property.
             pageBorder.Color = System.Drawing.Color.Red;
-
             //Assign the 'PageBorder' propery of PDF Viewer.
             pdfViewer.PageBorder = pageBorder;
-
             //Load the PDF file.
             pdfViewer.Load(@"Sample.pdf");
         }
@@ -74,16 +70,12 @@ namespace PdfViewerDemo
         public MainWindow()
         {
             InitializeComponent();
-
             //Create an instance for `PageBorder`.
             PageBorder pageBorder = new PageBorder();
-
             //Set the `IsVisible` property as false to hide the page border.
             pageBorder.IsVisible = false;
-
             //Assign the 'PageBorder' propery of PDF Viewer.
             pdfViewer.PageBorder = pageBorder;
-
             //Load the PDF file.
             pdfViewer.Load(@"Sample.pdf");
         }

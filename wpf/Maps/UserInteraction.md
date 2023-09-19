@@ -615,6 +615,7 @@ Calculate the initial zoom level automatically based on the [`Radius`](https://h
 
 * [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_Center) - Represents center point of ImageryLayer.  
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -672,6 +673,8 @@ Calculate the initial zoom level automatically based on the [`Radius`](https://h
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 ### Geo-bounds
 

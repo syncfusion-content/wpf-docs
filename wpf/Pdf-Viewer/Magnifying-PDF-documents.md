@@ -62,7 +62,6 @@ As stated above, the PDF Viewer supports the fit to page and fit to width zoom m
 {% highlight c# %}
 //To apply fit-to-page zoom mode.
 pdfViewer.ZoomMode = ZoomMode.FitPage;
-
 // To apply fit-to-width zoom mode.
 pdfViewer.ZoomMode = ZoomMode.FitWidth;
 {% endhighlight %}
@@ -80,10 +79,8 @@ N> The allowed value of this property ranges from 10 to the value of the [Maximu
 {% highlight c# %}
 //Load PDF document.
 pdfViewer.Load(@"../../Data/Barcode.pdf");
-
 //Set the minimum zoom percentage.
 pdfViewer.MinimumZoomPercentage = 20;
-
 //Magnify the document to minimum zoom percentage.
 pdfViewer.ZoomTo(pdfviewer.MinimumZoomPercentage);
 {% endhighlight %}
@@ -97,10 +94,8 @@ N> The allowed value of this property ranges from the value of [MinimumZoomPerce
 {% highlight c# %}
 // Load PDF document.
 pdfviewer.Load(@"../../Data/Barcode.pdf");
-
 //Set the maximum zoom percentage.
 pdfviewer.MaximumZoomPercentage = 600;
-
 //Magnify the document to maximum zoom percentage.
 pdfviewer.ZoomTo(pdfviewer.MaximumZoomPercentage);
 {% endhighlight %}
@@ -137,7 +132,6 @@ You need to set the [MaximumZoomPercentage](https://help.syncfusion.com/cr/wpf/S
 
 //Set the maximum zoom percentage.
 pdfviewer.MaximumZoomPercentage = 6400;
-
 //Magnify the document to the zoom percentage you needed (less than or equal to 6400).
 //In the below example, control will magnify to 1200% zoom.
 pdfviewer.ZoomTo(1200);

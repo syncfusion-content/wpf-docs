@@ -60,7 +60,8 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
     ![WPF Grid Control Assembly References](Getting-Started_images/Getting-Started_img9.png)
 
 3. Name the root Grid as layoutRoot in the application’s XAML page.
-  
+
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -72,12 +73,14 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
       
-
 4. Create ScrollViewer and GridControl in code. 
 
 5. To add the grid to the view, add GridControl as content of ScrollViewer and then add the ScrollViewer as a child of layoutRoot (Grid).
 
+{% capture codesnippet2 %}
 {% tabs %}
 {%highlight c#%}
 //ScrollViewer defined here
@@ -90,13 +93,16 @@ ScrollViewer.Content = gridControl;     
 this.layoutRoot.Children.Add(ScrollViewer);           
 {%endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Populating the Grid control with Data
 
 The Grid control is a cell-based control, so to populate it, RowCount and ColumnCount are mandatory. Once ColumnCount and RowCount are specified, data can be populated by using one of the following methods. 
 
-1.You can populate data by looping through the cells in the Grid control. The following code explains this scenario.
+1. You can populate data by looping through the cells in the Grid control. The following code explains this scenario.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {%highlight c#%}
 //Specifying row and column count
@@ -113,10 +119,13 @@ for (int i = 0; i < 100; i++)
 }
 {%endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-2.You can populate data by handling the QueryCellInfo event of gridControl. This will load the data in and on-demand basis, ensuring optimized performance.
+2. You can populate data by handling the QueryCellInfo event of gridControl. This will load the data in and on-demand basis, ensuring optimized performance.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {%highlight c#%}
 //Specifying row and column count
@@ -132,6 +141,8 @@ void gridControl_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Gri
 }   
 {%endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 3.Now, run the application. The grid will appear as follows. 
 

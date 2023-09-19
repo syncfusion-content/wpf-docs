@@ -68,6 +68,7 @@ In the below example, first two items from the Observable Collection bound to th
 
 1. Create a data object class named **Country** and declare the property as follows.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -80,9 +81,12 @@ public class Country
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create a **ViewModel** class with `SelectedItems`, which are initialized with data objects in constructor.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -139,9 +143,12 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. To bind the `ComboBoxAdv` to data, bind the collection created in the previous step to the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netcore-3.1#System_Windows_Controls_ItemsControl_ItemsSource) property in XAML by setting the `ViewModel` as `DataContext`.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -158,6 +165,8 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Adding multiple selections to an application in WPF ComboBoxAdv](Comboboxadv_images/wpf-comboboxadv-multiSelection.png)
 

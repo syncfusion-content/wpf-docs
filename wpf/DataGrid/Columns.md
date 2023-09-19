@@ -24,7 +24,7 @@ Description
 </tr>
 <tr>
 <td>
-{{'[GridTextColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumn.html)'| markdownify }}
+{{'[GridTextColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the string data. 
@@ -32,7 +32,7 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-{{'[GridNumericColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html)'| markdownify }}
+{{'[GridNumericColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the numeric data.
@@ -40,7 +40,7 @@ Use to display the numeric data.
 </tr>
 <tr>
 <td>
-{{'[GridCurrencyColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html)'| markdownify }}
+{{'[GridCurrencyColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the currency value.
@@ -48,7 +48,7 @@ Use to display the currency value.
 </tr>
 <tr>
 <td>
-{{'[GridPercentColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html)'| markdownify }}
+{{'[GridPercentColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the percent value
@@ -56,7 +56,7 @@ Use to display the percent value
 </tr>
 <tr>
 <td>
-{{'[GridMaskColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMaskColumn.html)'| markdownify }}
+{{'[GridMaskColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMaskColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the data to be masked.
@@ -64,7 +64,7 @@ Use to display the data to be masked.
 </tr>
 <tr>
 <td>
-{{'[GridTimeSpanColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn.html)'| markdownify }}
+{{'[GridTimeSpanColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the time span value
@@ -72,7 +72,7 @@ Use to display the time span value
 </tr>
 <tr>
 <td>
-{{'[GridDateTimeColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridDateTimeColumn.html)'| markdownify }}
+{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridDateTimeColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the date time value 
@@ -80,7 +80,7 @@ Use to display the date time value
 </tr>
 <tr>
 <td>
-{{'[GridComboBoxColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html)'| markdownify }}
+{{'[GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the IEnumerable data using ComboBox.
@@ -88,7 +88,7 @@ Use to display the IEnumerable data using ComboBox.
 </tr>
 <tr>
 <td>
-{{'[GridCheckBoxColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html)'| markdownify }}
+{{'[GridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the boolean type data
@@ -96,7 +96,7 @@ Use to display the boolean type data
 </tr>
 <tr>
 <td>
-{{'[GridImageColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridImageColumn.html)'| markdownify }}
+{{'[GridImageColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridImageColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the image in each row.
@@ -104,7 +104,7 @@ Use to display the image in each row.
 </tr>
 <tr>
 <td>
-{{'[GridHyperlinkColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridHyperlinkColumn.html)'| markdownify }}
+{{'[GridHyperlinkColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridHyperlinkColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the Uri data
@@ -112,7 +112,7 @@ Use to display the Uri data
 </tr>
 <tr>
 <td>
-{{'[GridTemplateColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html)'| markdownify }}
+{{'[GridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the custom template-specified content.
@@ -120,7 +120,7 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-{{'[GridUnboundColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html)'| markdownify }}
+{{'[GridUnboundColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display custom information of each record.
@@ -128,7 +128,7 @@ Use to display custom information of each record.
 </tr>
 <tr>
 <td>
-{{'[GridMultiColumnDropDownList](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html)'| markdownify }}
+{{'[GridMultiColumnDropDownList](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html)'| markdownify }}
 </td>
 <td>
 Use to display the IEnumerable data using SfMultiColumnDropdownControl.
@@ -147,7 +147,7 @@ You can let the SfDataGrid to create columns or you can manually define columns 
 
 The automatic column generation based on properties of data object can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns). Default value is `true`.
 
-Columns are generated based on type of property. For example, [GridNumericColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html) is added for `int` type property. Below are table shows data type and its column type. For remaining types, `GridTextColumn` will be added. 
+Columns are generated based on type of property. For example, [GridNumericColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html) is added for `int` type property. Below are table shows data type and its column type. For remaining types, `GridTextColumn` will be added. 
 
 <table>
 <tr>
@@ -352,7 +352,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-[AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [AutoGeneratingColumnArgs.Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html#Syncfusion_UI_Xaml_Grid_AutoGeneratingColumnArgs_Column) property returns the newly created column.
+[AutoGeneratingColumnArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [AutoGeneratingColumnArgs.Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html#Syncfusion_UI_Xaml_Grid_AutoGeneratingColumnArgs_Column) property returns the newly created column.
 
 ##### Cancel column generation for particular property
 
@@ -452,11 +452,11 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 Below screenshot shows the customized header template loaded on the header of OrderID column.
 
-![WPF DataGrid Loaded with Customized Header Template](Columns_images/wpf-datagrid-header-template.png)
+![WPF DataGrid Loaded with Customized Header Template](columns_images/wpf-datagrid-header-template.png)
 
 #### Data Annotations with AutoGenerateColumns
 
-WPF DataGrid (SfDataGrid) support to generate the columns based on built-in [Data Annotation Attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc490428(v=vs.95)). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
+WPF DataGrid (SfDataGrid) support to generate the columns based on built-in [Data Annotation Attributes](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc490428(v=vs.95)). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
 
 ##### Exclude column
 
@@ -547,7 +547,7 @@ public string CustomerID
 
 The OrderID and CustomerID column rearranged based on specified order.
 
-![Changing Columns Order in WPF DataGrid](Columns_images/wpf-datagrid-columns-order.png)
+![Changing Columns Order in WPF DataGrid](columns_images/wpf-datagrid-columns-order.png)
 
 ##### DataGrid column formatting
 
@@ -583,7 +583,7 @@ public string Country
 
 ##### Format datagrid columns using DisplayFormat attribute
 
-The auto-generated columns will be formatted using the [DataFormatString](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679306%28v%3dvs.95%29) property in the [DisplayFormat](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679253%28v%3dvs.95%29) attribute when the `DisplayFormat` attribute is defined for the properties defined in the view model. If the `DisplayFormat` attribute is defined with the `DataFormatString` property, the DataGrid formats the column only based on `DataFormatString`, without considering other formatting property settings of columns.
+The auto-generated columns will be formatted using the [DataFormatString](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679306%28v%3dvs.95%29) property in the [DisplayFormat](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679253%28v%3dvs.95%29) attribute when the `DisplayFormat` attribute is defined for the properties defined in the view model. If the `DisplayFormat` attribute is defined with the `DataFormatString` property, the DataGrid formats the column only based on `DataFormatString`, without considering other formatting property settings of columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -605,7 +605,7 @@ public DateTime OrderDate
 
 N> The `DataFormatString` attribute will be considered only when the column is auto-generated.
 
-![WPF DataGrid with Columns Formatting](Columns_images/wpf-datagrid-columns-formatting.png)
+![WPF DataGrid with Columns Formatting](columns_images/wpf-datagrid-columns-formatting.png)
 
 ### Manually defining columns
 
@@ -716,18 +716,18 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
 
-![Column Resizing in WPF DataGrid](Columns_images/wpf-datagrid-resize-column.png)
+![Column Resizing in WPF DataGrid](columns_images/wpf-datagrid-resize-column.png)
 
 ### Hidden column resizing
 
 SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingHiddenColumns) property to `true`.
 
-![Resizing Hidden Column in WPF DataGrid](Columns_images/wpf-datagrid-resize-hidden-column.png)
+![Resizing Hidden Column in WPF DataGrid](columns_images/wpf-datagrid-resize-hidden-column.png)
 
 ### Disable resizing
 
 You can cancel resizing of particular column by setting [GridColumn.AllowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowResizing) property to `false`. In another way, you can cancel the resizing by handling [SfDataGrid.ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
-[ResizingColumnsEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html) of `ResizingColumns` provides information about the columns’s index and width. 
+[ResizingColumnsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html) of `ResizingColumns` provides information about the columns’s index and width. 
 
 {% tabs %}
 {% highlight c# %}
@@ -773,7 +773,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and Drop Column in WPF DataGrid](Columns_images/wpf-datagrid-drag-and-drop-columns.png)
+![Drag and Drop Column in WPF DataGrid](columns_images/wpf-datagrid-drag-and-drop-columns.png)
 
 You can enable or disable dragging on particular column using [GridColumn.AllowDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowDragging) property.
 
@@ -787,9 +787,9 @@ You can enable or disable dragging on particular column using [GridColumn.AllowD
 
 ### Disable column reordering
 
-You can cancel the particular column dragging by handling [SfDataGrid.QueryColumnDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html). `QueryColumnDragging` event occurs when you start dragging the column header. [QueryColumnDraggingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html) of `QueryColumnDragging` event provides information about the column triggered this event. 
+You can cancel the particular column dragging by handling [SfDataGrid.QueryColumnDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html). `QueryColumnDragging` event occurs when you start dragging the column header. [QueryColumnDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html) of `QueryColumnDragging` event provides information about the column triggered this event. 
 
-`QueryColumnDraggingEventArgs.From` property returns the index of column triggered this event. `QueryColumnDraggingEventArgs.To` property returns the index where you try to drop the column. `QueryColumnDraggingEventArgs.Reason` returns column dragging details by [QueryColumnDraggingReason](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingReason.html).  
+`QueryColumnDraggingEventArgs.From` property returns the index of column triggered this event. `QueryColumnDraggingEventArgs.To` property returns the index where you try to drop the column. `QueryColumnDraggingEventArgs.Reason` returns column dragging details by [QueryColumnDraggingReason](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingReason.html).  
 
 {% tabs %}
 {% highlight c# %}
@@ -809,7 +809,7 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 
 ### Column drag and drop customization 
 
-The drag-and-drop operations can be changed by overriding the virtual methods of [GridColumnDragDropController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnDragDropController.html) class and assigning it to `SfDataGrid.GridColumnDragDropController`. 
+The drag-and-drop operations can be changed by overriding the virtual methods of [GridColumnDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnDragDropController.html) class and assigning it to `SfDataGrid.GridColumnDragDropController`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -928,7 +928,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endhighlight %}
 {% endtabs %}
 
-![Frezzing Columns in WPF DataGrid](Columns_images/wpf-datagrid-freezing-column.png)
+![Frezzing Columns in WPF DataGrid](columns_images/wpf-datagrid-freezing.png)
 
 ### Limitations
 
@@ -971,5 +971,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column with Data Binding](Columns_images/wpf-datagrid-binding-column.png)
+![WPF DataGrid Column with Data Binding](columns_images/wpf-datagrid-data-binding-columns.png)
 

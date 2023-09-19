@@ -543,3 +543,5 @@ The `Constraints` property allows you to enable or disable certain behaviors of 
 * [How to add multiple ports for the node?](https://www.syncfusion.com/kb/11435/how-to-add-multiple-ports-for-node-in-the-wpf-diagramsfdiagram)
 
 * [How to decide whether to drag or draw a connection on port at runtime?](https://www.syncfusion.com/kb/9622/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf)
+
+* [How to add ToolTip for Diagram objects of Node, NodePort in Diagram?](https://www.syncfusion.com/kb/13207/how-to-add-tooltip-for-diagram-objects-of-node-nodeport-in-wpf-diagramsfdiagram)

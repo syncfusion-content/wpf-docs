@@ -32,7 +32,7 @@ This section explains you how to edit the SfMultiColumnDropDownControl structure
 
 
 
-4.You get two options in sub menu bar.     
+4. You get two options in sub menu bar.     
 
 
 1. Edit a Copy- Edit a copy of the default style, when you select this option, a new dialog window opens.        

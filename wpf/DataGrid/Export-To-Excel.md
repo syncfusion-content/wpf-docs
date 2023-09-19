@@ -18,7 +18,7 @@ The following assemblies needs to be added for exporting to excel.
 
 For NuGet package, have to install [Syncfusion.DataGridExcelExport.WPF](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.WPF) package. For more details refer this [UG link](https://help.syncfusion.com/wpf/control-dependencies#exporting-datagrid-to-excel-pdf-and-csv).
 
-You can export SfDataGrid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.html#Syncfusion_UI_Xaml_Grid_Converter_GridExcelExportExtension_ExportToExcel_Syncfusion_UI_Xaml_Grid_SfDataGrid_Syncfusion_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_) extension method present in the [Syncfusion.UI.Xaml.Grid.Converter](http://help.syncfusion.com/cr/wpf) namespace.
+You can export SfDataGrid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.html#Syncfusion_UI_Xaml_Grid_Converter_GridExcelExportExtension_ExportToExcel_Syncfusion_UI_Xaml_Grid_SfDataGrid_Syncfusion_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_) extension method present in the [Syncfusion.UI.Xaml.Grid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.html) namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -31,11 +31,11 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating exported work sheets. 
+N> SfDataGrid exports data to excel by using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating exported work sheets. 
 
 ## Excel exporting options
 
-Exporting operation can be customized by passing [ExcelExportingOptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html) instance as argument to `ExportToExcel` method. 
+Exporting operation can be customized by passing [ExcelExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html) instance as argument to `ExportToExcel` method. 
 
 ### Export mode
 
@@ -53,7 +53,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ### Export groups with outlines
 
-By default, all the groups in dataGrid will be exported in expanded state. You can enable outlines in excel based on groups by setting the [AllowOutlining](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_AllowOutlining) property as `true` in [ExcelExportingOptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html). 
+By default, all the groups in dataGrid will be exported in expanded state. You can enable outlines in excel based on groups by setting the [AllowOutlining](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_AllowOutlining) property as `true` in [ExcelExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -65,11 +65,11 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting to Excel with Outlines for Groups in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-to-excel.png)
+![Exporting to Excel with Outlines for Groups in WPF DataGrid](export-to-excel_images/wpf-datagrid-export-to-excel.png)
 
 ### Exclude columns while exporting
 
-By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. If you want to exclude some columns while exporting to Excel, you can use [ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ExcludeColumns) field in [ExcelExportingOptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html).
+By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. If you want to exclude some columns while exporting to Excel, you can use [ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ExcludeColumns) field in [ExcelExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -155,7 +155,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting to Excel with Custom Row and Column Index in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-with-row-column-index.png)
+![Exporting to Excel with Custom Row and Column Index in WPF DataGrid](export-to-excel_images/wpf-datagrid-export-with-row-column-index.png)
 
 ## Saving options
 
@@ -188,7 +188,7 @@ workBook.SaveAs(fileStream);
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/faq). 
+You can refer [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/faq). 
 
 ### Save using File dialog
 
@@ -238,7 +238,7 @@ if (sfd.ShowDialog() == true)
 
 ## Opening exported excel without saving
 
-You can open the exported workbook without saving by using [SfSpreadsheet](http://help.syncfusion.com/wpf/sfspreadsheet) control.
+You can open the exported workbook without saving by using [SfSpreadsheet](https://help.syncfusion.com/wpf/spreadsheet/overview) control.
 
 {% tabs %}
 {% highlight c# %}
@@ -253,7 +253,7 @@ window1.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![Exported Excel without Saving in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-excel-without-saving.png)
+![Exported Excel without Saving in WPF DataGrid](export-to-excel_images/wpf-datagrid-export-excel-without-saving.png)
 
 ## Export DataGrid pages to Excel
 
@@ -299,7 +299,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting Selected Items only to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-selected-item.png)
+![Exporting Selected Items only to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-export-selected-item.png)
 
 ## Export DataGrid to HTML
 
@@ -315,7 +315,7 @@ workBook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default);
 {% endhighlight %}
 {% endtabs %}
 
-It is also possible to save worksheet as HTML by using [SaveAsHtml](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsHtml_System_IO_Stream_) method. You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html) for this.
+It is also possible to save worksheet as HTML by using [SaveAsHtml](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsHtml_System_IO_Stream_) method. You can refer [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html) for this.
 
 ## Export DataGrid to Mail
 
@@ -398,11 +398,11 @@ workBook.SaveAs("Sample.csv", ",");
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can save exported worksheet also to CSV. You can refer [XlsIO documentation.](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-csv) 
+Similarly, you can save exported worksheet also to CSV. You can refer [XlsIO documentation.](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-csv) 
 
 ## Row Height and Column Width customization 
 
-After exporting data to excel, you can set different row height and column width for the columns based on your requirement. You can refer [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information. 
+After exporting data to excel, you can set different row height and column width for the columns based on your requirement. You can refer [here](https://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information. 
 
 {% tabs %}
 {% highlight c# %}
@@ -453,7 +453,7 @@ private static void ExportingHandler(object sender, GridExcelExportingEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Customized Cell Style based on CellType in Exported Excel](Export-to-Excel_images/wpf-datagrid-cell-style-customization.png)
+![WPF DataGrid displays Customized Cell Style based on CellType in Exported Excel](export-to-excel_images/wpf-datagrid-cell-style-customization.png)
 
 ## Cell customization in Excel while exporting
 
@@ -492,7 +492,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Cell Values while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-cell-value-customization.png)
+![Customizing Cell Values while Exporting to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-cell-value-customization.png)
 
 Here, cell values are changed for `IsClosed` column based on custom condition.
 
@@ -524,7 +524,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Row Style based on Data while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-row-style-customization.png)
+![Customizing Row Style based on Data while Exporting to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-row-style-customization.png)
 
 Here, records having the `Country` name as `Mexico` are customized.
 
@@ -553,13 +553,13 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Cell Values based on Column name while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-cell-value-based-on-column.png)
+![Customizing Cell Values based on Column name while Exporting to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-export-cell-value-based-on-column.png)
 
 Here, `OrderID` column cells are customized while exporting.
 
 ## Customize exported workbook and worksheet
 
-SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
+SfDataGrid exports to excel by using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
 
 ### Workbook
 SfDataGrid provides option to return [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html) from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving. 
@@ -590,7 +590,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-Before saving workbook, you need to set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_Version) property. Here, you can directly manipulate the data in the worksheet. You can refer [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information.
+Before saving workbook, you need to set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_Version) property. Here, you can directly manipulate the data in the worksheet. You can refer [here](https://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information.
 
 #### Setting borders
 
@@ -608,7 +608,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Border Style in Exported Excel for WPF DataGrid](Export-to-Excel_images/wpf-datagrid-change-border-style.png)
+![Changing Border Style in Exported Excel for WPF DataGrid](export-to-excel_images/wpf-datagrid-change-border-style.png)
 
 #### Enabling Filters
 
@@ -625,7 +625,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Filters on Exported Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-filter-on-exported-excel.png)
+![Filters on Exported Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-filter-on-exported-excel.png)
 
 While using `stacked headers`, you can specify the `range` based on Stacked headers count.
 
@@ -642,7 +642,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
+You can refer [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
 
 #### Customize the range of cells
 
@@ -660,11 +660,11 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Range of Cells in Exported Excel for WPF DataGrid](Export-to-Excel_images/wpf-datagrid-range-of-cells-customization.png)
+![Customizing Range of Cells in Exported Excel for WPF DataGrid](export-to-excel_images/wpf-datagrid-range-of-cells-customization.png)
 
 ## Exporting DetailsView
 
-By default, [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) will be exported to Excel. You can customize its exporting operation by using [ChildExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler).
+By default, [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) will be exported to Excel. You can customize its exporting operation by using [ChildExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler).
 
 ### Excluding DetailsViewDataGrid while exporting
 
@@ -688,13 +688,13 @@ private static void ChildExportingHandler(object sender, GridChildExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Excluding Specific DetailsView while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-data-in-detailsview.png)
+![Excluding Specific DetailsView while Exporting to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-export-data-in-details-view.png)
 
 Here, `DetailsViewDataGrid` is not exported for the parent record having `OrderID` as 1002.
 
 ### Excluding DetailsViewDataGrid columns from exporting
 
-You can exclude [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) columns while exporting, by using [ChildExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler) and [GridChildExportingEventArgs.ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridChildExportingEventArgs.html#Syncfusion_UI_Xaml_Grid_Converter_GridChildExportingEventArgs_ExcludeColumns).
+You can exclude [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) columns while exporting, by using [ChildExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler) and [GridChildExportingEventArgs.ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridChildExportingEventArgs.html#Syncfusion_UI_Xaml_Grid_Converter_GridChildExportingEventArgs_ExcludeColumns).
 
 {% tabs %}
 {% highlight c# %}
@@ -711,7 +711,7 @@ private static void ChildExportingHandler(object sender, GridChildExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Excluding Columns in DetailsViewDataGrid while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-without-column.png)
+![Excluding Columns in DetailsViewDataGrid while Exporting to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-export-without-column.png)
 
 Here, `OrderID` column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to excel.
 
@@ -743,7 +743,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing DetailsViewDataGrid Cells while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-exported-cell-customization.png)
+![Customizing DetailsViewDataGrid Cells while Exporting to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-exported-cell-customization.png)
 
 
 ## Performance
@@ -757,7 +757,7 @@ You can perform cell level customization such as row-level styling, formatting p
 In the below code snippet, NumberFormat for `Unit Price` column is changed in the exported sheet after exporting without using `CellsExportingEventHandler`. 
 
 Reference:
-[http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+[https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
 
 {% tabs %}
 {% highlight c# %}
@@ -771,14 +771,14 @@ workBook.ActiveSheet.Columns[4].NumberFormat = "0.0";
 {% endtabs %}
 
 
-![Formatting the Column while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-column-formatting.png)
+![Formatting the Column while Exporting to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-column-formatting.png)
 
 ### Alternate row styling without using CellsExportingEventHandler
 
 In the below code snippet, the background color of rows in excel is changed based on row index using conditional formatting for better performance.
 
 Reference:
-[http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
+[https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
 
 {% tabs %}
 {% highlight c# %}
@@ -800,6 +800,6 @@ condition2.BackColorRGB = System.Drawing.Color.LightGray;
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Row Style while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-row-style.png)
+![Displaying Row Style while Exporting to Excel in WPF DataGrid](export-to-excel_images/wpf-datagrid-row-style.png)
 
 

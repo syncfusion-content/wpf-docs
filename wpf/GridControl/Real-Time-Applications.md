@@ -31,11 +31,14 @@ a. Excel-like Current Cell
 
 You can select a current cell in the Grid, similar to the current cell behavior in Microsoft Excel. This feature can be enabled, by setting GridModelOptions.ExcelLikeCurrentCell property to _true_, as follows:  
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 grid.Model.Options.ExcelLikeCurrentCell = true;
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Showing Excel like Current Cell Selection in WPF GridControl](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)
 
@@ -47,11 +50,14 @@ b. Excel-like Selection Frame
 
 The active selection can be outlined with a selection frame by setting the GridModelOptions.ExcelLikeSelectionFrame property to true, as follows:
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 grid.Model.Options.ExcelLikeSelectionFrame = true;
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Displaying Excel like Selection Frame in WPF GridControl](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)
 
@@ -60,11 +66,14 @@ c. Formula Cells
 
 As we discussed in the previous chapter, Grid control provides complete support to formula cells. It can be enabled for the grid by setting the format string, FormulaCell to the TableStyle.CellType property, as follows: 
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 grid.Model.TableStyle.CellType = "FormulaCell";
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![WPF GridControl with Excel like Formula Cell](Real-Time-Applications_images/Real-Time-Applications_img3.jpeg)
 
@@ -77,6 +86,7 @@ OnPrepareRenderCell event-This event will be triggered for every cell when they 
 
 The following code illustrates how to handle this event:
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 protected override void OnPrepareRenderCell(GridPrepareRenderCellEventArgs e)
@@ -95,6 +105,8 @@ protected override void OnPrepareRenderCell(GridPrepareRenderCellEventArgs e)
 }
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ![WPF GridControl with markup headers](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg)
 

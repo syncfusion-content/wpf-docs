@@ -58,9 +58,12 @@ XX.X450.0.X
 
 4. Add the following namespace in your XAML window.
 
+{% capture codesnippet1 %}
 {% highlight xaml %}
 xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.SmithChart;assembly=Syncfusion.SfSmithChart.WPF"
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 
@@ -455,12 +458,14 @@ Some developers prefer code behind as the first approach for development to crea
 2. Choose Windows > Extensions >Syncfusion.SfSmithChart.WPF
 3. Add the following namespace in your C# file, MainWindow.xaml.cs.
 
-
+{% capture codesnippet2 %}
 {% highlight c# %}
 
 using Syncfusion.UI.Xaml.SmithChart;
 
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ### Initialize the chart
 

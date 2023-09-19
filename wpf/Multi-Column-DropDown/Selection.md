@@ -44,6 +44,7 @@ You can select multiple rows at same time by setting [SelectionMode](https://hel
 3. By using `Space` key.
 4. By interacting with the checkbox in the `Selector column`.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xml %}
 <syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnDropDown"
@@ -59,6 +60,8 @@ using Syncfusion.UI.Xaml.Grid;
 this.MultiColumnDropDown.SelectionMode = DropDownSelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Multiple items selected in WPF SfMultiColumnDropDownControl](Selection_images/Selection_img2.png)
 
@@ -212,7 +215,7 @@ You can handle the selection operations in SfMultiColumnDropDownControl by using
 
 ### SelectionChanged
 
-[SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when select the item in SfDataGrid. You can use this event to get the SelectedItem, SelectedValue. [SelectionChangedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SelectionChangedEventArgs.html) provides data for `SelectionChanged` event.
+[SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when select the item in SfDataGrid. You can use this event to get the SelectedItem, SelectedValue. [SelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SelectionChangedEventArgs.html) provides data for `SelectionChanged` event.
 
 {% tabs %}
 {% highlight c# %}

@@ -30,7 +30,7 @@ The following assembly references are required to deploy SfRichTextBoxAdv contro
 
 * For 4.5 and higher Frameworks – Syncfusion.DocIO.Base
 
-N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to add "Syncfusion.Licensing" assembly reference and include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your WPF application to use our components.
+N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to add "Syncfusion.Licensing" assembly reference and include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your WPF application to use our components.
 
 ## Adding SfRichTextBoxAdv to an application
 
@@ -167,22 +167,23 @@ The following assembly reference are additionally required to deploy SfRichTextR
 
 ### Adding the Control via Designer
 
-1.Create new WPF application in Visual Studio
+1. Create new WPF application in Visual Studio
 
-2.Use the Syncfusion RibbonWindow instead of Window
+2. Use the Syncfusion RibbonWindow instead of Window
 
 ![WPF RibbonWindow](Getting-Started_images/wpf-ribbonwindow.jpeg)
 
-3.Drag the SfRichTextRibbon control from the Toolbox window to the Design View. An instance of the SfRichTextRibbon control is created in the Design view
+3. Drag the SfRichTextRibbon control from the Toolbox window to the Design View. An instance of the SfRichTextRibbon control is created in the Design view
 
 ![Dragging RichTextBox Control from Toolbox](Getting-Started_images/wpf-richtextbox-toolbox.jpeg)
 
-4.Drag the SfRichTextBoxAdv control from the Toolbox window to the Design View. An instance of the SfRichTextBoxAdv control is created in the Design view
+4. Drag the SfRichTextBoxAdv control from the Toolbox window to the Design View. An instance of the SfRichTextBoxAdv control is created in the Design view
 
 ![Draggin RichTextRibbon Control from Toolbox](Getting-Started_images/wpf-richtextribbon-toolbox.jpeg)
 
-5.To make an interaction between SfRichTextRibbon and SfRichTextBoxAdv, bind the SfRichTextBoxAdv as DataContext to the SfRichTextRibbon
+5. To make an interaction between SfRichTextRibbon and SfRichTextBoxAdv, bind the SfRichTextBoxAdv as DataContext to the SfRichTextRibbon
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Syncfusion:SfRichTextRibbon x:Name="richTextRibbon SnapsToDevicePixels="True" DataContext="{Binding ElementName=richTextBoxAdv}" /> 
@@ -190,6 +191,8 @@ The following assembly reference are additionally required to deploy SfRichTextR
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 ### Adding Control via code.
@@ -206,7 +209,7 @@ You can also add the SfRichTextRibbon and SfRichTextBoxAdv programmatically by u
         xmlns:local="clr-namespace:DocumentEditor"
         mc:Ignorable="d"
         xmlns:Syncfusion="http://schemas.syncfusion.com/wpf"
-        Title="MainWindow" Height="350" Width="525" Syncfusion:SkinStorage.VisualStyle="Office2013">
+        Title="MainWindow" Height="350" Width="525" Syncfusion:SfSkinManager.Theme="{Syncfusion:SkinManagerExtension ThemeName=FluentLight}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

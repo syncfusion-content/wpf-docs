@@ -21,6 +21,7 @@ Follow the below steps to create simple sample to understand ribbon menu merging
 
  1. Creating main [RibbonWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonWindow.html) with [Ribbon](https://help.syncfusion.com/wpf/ribbon/gettingstarted) and [DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started)
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -56,10 +57,14 @@ Follow the below steps to create simple sample to understand ribbon menu merging
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
  2. Next, lets create two `UserControl` views with Ribbon which acts as child MDI windows.
 
 Child View 1
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 {% highlight XAML %}
@@ -100,8 +105,12 @@ Child View 1
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 Child View 2
+
+{% capture codesnippet3 %}
 
 {% tabs %}
 {% highlight XAML %}
@@ -140,11 +149,13 @@ Child View 2
 </UserControl>
    
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
  3. Now, add the both child view's into the [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) and set the the [DocumentContainer.MDIParentRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIParentRibbon.html) property of [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html).
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -182,6 +193,8 @@ Child View 2
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 Now run the application and you can see an output like this.
 
@@ -198,6 +211,8 @@ Now run the application and you can see an output like this.
 * [TDI](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainerMode.html) - The child view's will be loaded in tabs. In this mode, the child view's ribbon of the active tab will be merged to the MDI parent Ribbon.
 
 In the below example the [DocumentContainer.Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html) property for [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) is set to [TDI](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainerMode.html).
+
+{% capture codesnippet5 %}
 
 {% tabs %}
 
@@ -236,6 +251,8 @@ In the below example the [DocumentContainer.Mode](https://help.syncfusion.com/cr
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![WPF Ribbon TDI Merging](menu-merging-images/wpf-ribbon-tdi-merging.PNG)
 

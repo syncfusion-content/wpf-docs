@@ -13,15 +13,15 @@ The Radial Menu displays a hierarchical menu in a circular layout. Typically use
 
 ### Key Features
 
-* Items Source – Any business object collection can be bound to control. 
-* Commanding – Each item can be bound to a command that could perform an action. 
-* Color Palette – Easy to form radial color palette layout. 
+* **Items Source** – Any business object collection can be bound to control. 
+* **Commanding** – Each item can be bound to a command that could perform an action. 
+* **Color Palette** – Easy to form radial color palette layout. 
 
 
 
 
 
-![Overview_img1](Overview_images/Overview_img1.png)
+![Overview in WPF Radial Menu](overview_images/wpf-radial-menu-overview.png)
 
 
 

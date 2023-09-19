@@ -45,6 +45,7 @@ In order to add [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 3. Declare [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -66,6 +67,8 @@ In order to add [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 In order to add [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control manually in C#, do the below steps,
@@ -78,6 +81,7 @@ In order to add [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 3. Create ComboBoxAdv control instance and add it to the page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -105,6 +109,8 @@ namespace ComboBox
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Adding items in ComboBoxAdv
 Items can be added in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) control by following ways.
@@ -166,6 +172,8 @@ The items in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 ### Creating Model and ViewModel data for DataBinding
 
 1. Create data object class named **PopulationInfo** and declare properties as shown below,
+
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class PopulationInfo
@@ -201,8 +209,12 @@ public class PopulationInfo
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 2. Create a **ViewModel** class with several data objects in constructor.
+
+{% capture codesnippet4 %}
 {% tabs %} 
 {% highlight c# %}
 public class PopulationViewModel
@@ -233,6 +245,8 @@ public class PopulationViewModel
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ### Binding to Data 
 To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) to data, bind the collection created in previous step to [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) property in XAML by setting `PopulationViewModel` as `DataContext`.
@@ -298,7 +312,7 @@ N> [View the sample in GitHub](https://github.com/SyncfusionExamples/bind-the-da
 
 ## Defining ItemTemplate
 
-You can customize the visualization of data object using the [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8).
+You can customize the visualization of data object using the [ItemTemplate](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8).
 
 {% tabs %}
 {% highlight xaml %}
@@ -349,7 +363,7 @@ ComboBoxAdv supports various built-in themes. Refer to the below links to apply 
 
 
 ## See Also
-[How to filter dropdown items in WPF editable ComboBoxAdv?](https://www.syncfusion.com/kb/11499/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
+[How to filter dropdown items in WPF editable ComboBoxAdv?](https://support.syncfusion.com/kb/article/9968/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
 
 [How to define maximum number of items to be shown in combobox dropdown?](https://www.syncfusion.com/forums/153490/number-of-visible-items-in-comboboxadv-wpf)
 

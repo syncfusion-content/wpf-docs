@@ -33,9 +33,9 @@ The adapter is simply a user control that contains DockingManager as its content
 
 {% highlight XAML %}
 
-<mvvm:dockingadapter itemssource="{Binding Workspaces}" activedocument="{Binding ActiveDocument,Mode=TwoWay}">
+<mvvm:DockingAdapter ItemsSource="{Binding Workspaces}" ActiveDocument="{Binding ActiveDocument,Mode=TwoWay}">
 
-</mvvm:dockingadapter>
+</mvvm:DockingAdapter>
 
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ The DockingManager provides an [ActiveWindowChanged](https://help.syncfusion.co
 ![WPF Docking Application Structure](PatternandPractices_images/wpf-docking-application-structure.jpeg)
 
 
-The view model has a collection of workspaces that is data-bound to the [ItemsSource]([ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2)) property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the DockingManager.
+The view model has a collection of workspaces that is data-bound to the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the DockingManager.
 
 Every dock element in the application is a workspace. There are three kinds of workspaces: the All Documents view, the Properties view, and the Document view. The docking adapter hooks up the “active window changed” event of the docking manager; the view model receives the message whenever the active document is changed.
 
@@ -73,26 +73,26 @@ Since WPF has an implicit template approach, it is easy to apply visuals to the 
 
 {% highlight XAML %}
 
-<application.resources>
-    <datatemplate datatype="{x:Type local:Document}">
+<Application.Resources>
+    <DataTemplate DataType="{x:Type local:Document}">
+        <Grid>
+            <local:DocumentView>
+            </local:DocumentView>
+        </Grid>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local:DocumentsViewModel}">
         <grid>
-            <local:documentview>
-            </local:documentview>
-        </grid>
-    </datatemplate>
-    <datatemplate datatype="{x:Type local:DocumentsViewModel}">
-        <grid>
-            <local:documentsview>
-            </local:documentsview>
-        </grid>
-    </datatemplate>
-    <datatemplate datatype="{x:Type local:PropertiesViewModel}">
-        <grid>
-            <local:propertiesview>
-            </local:propertiesview>
-        </grid>
-    </datatemplate>
-</application.resources>
+            <local:DocumentsView>
+            </local:DocumentsView>
+        </Grid>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local:PropertiesViewModel}">
+        <Grid>
+            <local:PropertiesView>
+            </local:PropertiesView>
+        </Grid>
+    </DataTemplate>
+</Application.Resources>
 
 {% endhighlight %}
 
@@ -128,20 +128,21 @@ N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-w
 
 The following steps helps to create sample project in the PRISM 5.0.
 
-1.Create a New WPF project and add the following references to the solution project.
+1. Create a New WPF project and add the following references to the solution project.
 
-* Microsoft.Practices.Composite.dll
-* Microsoft.Practices.Composite.Presentation.dll
-* Microsoft.Practices.Composite.UnityExtensions.dll
-* Microsoft.Practices.ServiceLocation.dll
-* Microsoft.Practices.Unity.dll
+    * Microsoft.Practices.Composite.dll
+    * Microsoft.Practices.Composite.Presentation.dll
+    * Microsoft.Practices.Composite.UnityExtensions.dll
+    * Microsoft.Practices.ServiceLocation.dll
+    * Microsoft.Practices.Unity.dll
 
-2.Rename MainWindow to Shell in the Project.
+2. Rename MainWindow to Shell in the Project.
 
-3.Add new class called Bootstrapper.cs to initialize the prism application.
+3. Add new class called Bootstrapper.cs to initialize the prism application.
 
 Here MainWindow is treated as shell, so returning the MainWindow in the CreateShell method.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -179,10 +180,13 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
-4.Override OnStartup method in the App.xaml.cs to execute Bootstrapper when the application starts
+4. Override OnStartup method in the App.xaml.cs to execute Bootstrapper when the application starts
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -213,17 +217,24 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
+5. Next, create regions in the shell. To do this, first add the following namespace in the shell Window.
 
-5.Next, create regions in the shell. To do this, first add the following namespace in the shell Window.
+{% capture codesnippet3 %}
 
 {% highlight XAML %}
 
 xmlns:prsm="http://www.codeplex.com/prism"
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 In the following code example, a region called “MainRegion” has been created to load DockingManager Module views.
+
+{% capture codesnippet4 %}
 
 {% tabs %}
 
@@ -244,8 +255,10 @@ In the following code example, a region called “MainRegion” has been created
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_2 }}
 
-6.Add Module to the project.
+6. Add Module to the project.
 
 Right-click the Solution project, point to “Add” and then click “NewProject”. Then a new window called AddNewProject opens. Select “ClassLibrary” from Visual C#, then rename the project with desired name and click OK. Now a New Module is created in the Solution Project.
 
@@ -263,8 +276,9 @@ Also add the following Prism assemblies:
 * Microsoft.Practices.ServiceLocation.dll
 * Microsoft.Practices.Unity.dll
 
-7.In the Shell project, add the reference to the type of DockingManager module by registering with ModuleCatalog instance in the ConfigureModuleCatalog method.
+7. In the Shell project, add the reference to the type of DockingManager module by registering with ModuleCatalog instance in the ConfigureModuleCatalog method.
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -289,9 +303,12 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-8.Adding Views to the Module, shown here is BottomLeftModule, similarly the view for the module can be added according to number of modules.
+8. Adding Views to the Module, shown here is BottomLeftModule, similarly the view for the module can be added according to number of modules.
 
+{% capture codesnippet6 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -311,11 +328,14 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-9.Add a region to the shell.
+9. Add a region to the shell.
 
 After creating View for the Module, register the view as Module using the following code example.
 
+{% capture codesnippet7 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -355,6 +375,8 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 Then when run the project, it is added as three of the Module in the Shell. The number of modules can be add based on the complexity of the project.
 
@@ -370,22 +392,23 @@ Essential WPF controls are flexible with all the `Prism` versions. This section 
 
 ### Setting up WPF application
 
-1.Create a WPF application and rename the file MainWindow.xaml as Shell.xaml and MainWindow.xaml.cs as Shell.xaml.cs.
+1. Create a WPF application and rename the file MainWindow.xaml as Shell.xaml and MainWindow.xaml.cs as Shell.xaml.cs.
   
-2.Rename the class name MainWindow as Shell in all the occurrences. 
+2. Rename the class name MainWindow as Shell in all the occurrences. 
  
-3.Add reference to the following assemblies
+3. Add reference to the following assemblies
 
-* Prism
-* Prism.WPF
-* Prism.Unity.WPF
-* Microsoft.Practices.ServiceLocation
-* Microsoft.Practices.Unity
-* Microsoft.Practices.Unity.Configuration
-* Microsoft.Practices.Unity.RegistrationByConvention
+    * Prism
+    * Prism.WPF
+    * Prism.Unity.WPF
+    * Microsoft.Practices.ServiceLocation
+    * Microsoft.Practices.Unity
+    * Microsoft.Practices.Unity.Configuration
+    * Microsoft.Practices.Unity.RegistrationByConvention
 
-4.In the Shell.xaml file, add the namespace definition for Prism Library as given below:
+4. In the Shell.xaml file, add the namespace definition for Prism Library as given below:
 
+{% capture codesnippet8 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -401,9 +424,12 @@ Essential WPF controls are flexible with all the `Prism` versions. This section 
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-5.Create an instance of the control in Shell.xaml file and set the attached property RegionManager.RegionName for it. Here we have used `DockingManager` control.
+5. Create an instance of the control in Shell.xaml file and set the attached property RegionManager.RegionName for it. Here we have used `DockingManager` control.
 
+{% capture codesnippet9 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -413,15 +439,18 @@ Essential WPF controls are flexible with all the `Prism` versions. This section 
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 When we create an instance for Shell, it will resolve the value of the RegionManager.RegionName attached property and create a region for connecting it with the DockingManager. 
 
 ### Setting up the Bootstrapper
 
-1.Create and add a class file for the Bootstrapper to the project.
+1. Create and add a class file for the Bootstrapper to the project.
  
-2.Add the following using statements to the class that are referred by Bootstrapper.
+2. Add the following using statements to the class that are referred by Bootstrapper.
 
+{% capture codesnippet10 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -434,11 +463,14 @@ using Prism.Modularity;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
-3.Create a class Bootstrapper and inherit it from UnityBootstrapper.
+3. Create a class Bootstrapper and inherit it from UnityBootstrapper.
 
-4.Override the methods CreateShell, InitializeShell and ConfigureModuleCatalog as given below.
+4. Override the methods CreateShell, InitializeShell and ConfigureModuleCatalog as given below.
 
+{% capture codesnippet11 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -463,9 +495,12 @@ public class Bootstrapper: UnityBootstrapper
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet11 | OrderList_Indent_Level_1 }}
 
-5.Remove the StartUpUri in App.xaml file and override the OnStartUp method in App.xaml.cs file. In that instantiate the Bootstrapper and run it as given below:
+5. Remove the StartUpUri in App.xaml file and override the OnStartUp method in App.xaml.cs file. In that instantiate the Bootstrapper and run it as given below:
 
+{% capture codesnippet12 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -480,13 +515,16 @@ protected override void OnStartup(StartupEventArgs e)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet12 | OrderList_Indent_Level_1 }}
 
 ### Adding modules to the project
 
-1.Create as many ClassLibrary projects for the modules. Here three class libraries are created for three modules.
+1. Create as many ClassLibrary projects for the modules. Here three class libraries are created for three modules.
 
-2.Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `DockingManager` for it. 
+2. Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `DockingManager` for it. 
 
+{% capture codesnippet13 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -522,9 +560,12 @@ protected override void OnStartup(StartupEventArgs e)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet13 | OrderList_Indent_Level_1 }}
 
-3.Create a class implementing IModule interface for all the modules in their project. Using Initialize method register the view to the region using region name(“MainRegion”).
+3. Create a class implementing IModule interface for all the modules in their project. Using Initialize method register the view to the region using region name(“MainRegion”).
 
+{% capture codesnippet14 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -545,9 +586,12 @@ public class ProgramModule : IModule
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet14 | OrderList_Indent_Level_1 }}
 
-4.Add all the modules as reference projects in main application. Add all modules to module catalog in Bootstrapper.cs as given below
+4. Add all the modules as reference projects in main application. Add all modules to module catalog in Bootstrapper.cs as given below
 
+{% capture codesnippet15 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -563,6 +607,8 @@ protected override void ConfigureModuleCatalog()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet15 | OrderList_Indent_Level_1 }}
 
 ### Create RegionAdapter for DockingManager
 

@@ -21,6 +21,7 @@ There are several ways to add Syncfusion control in to Visual Studio WPF project
   
 * Include an XML namespace for the above assemblies to the Main window.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -34,9 +35,12 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Change the Window as `RibbonWindow`.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -50,9 +54,12 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 * Add following namespace and inherit MainWindow from `RibbonWindow` in code behind.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -70,9 +77,12 @@ Public class As partial
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 * Now, Add the Ribbon control with a required optimal name, using the included namespace in XAML.
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -89,11 +99,14 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
 ## Set icon for RibbonWindow
 
 * Icon of the RibbonWindow can be set using the property named `Office2010Icon`. Please refer to the below code.
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -119,8 +132,10 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | UnOrderList_Indent_Level_1 }}
 
-![WPF Ribbon Control](GettingStarted_images/wpf-ribbon-control.jpg)
+![Set Icon in WPF Ribbon](getting-started_images/wpf-ribbon-control.jpg)
 
 ## Set visual styles
 
@@ -128,11 +143,12 @@ Ribbon supports various visual styles by using the `SfSkinManager`. To apply Vis
 
 * Refer the following assemblies with the project
 
-1. Syncfusion.SfSkinManager.Wpf
-2. Syncfusion.Themes.Office2013White.Wpf
+    1. Syncfusion.SfSkinManager.Wpf
+    2. Syncfusion.Themes.Office2013White.Wpf
 
 * Include an XML namespace for the SfSkinManager assembly to the MainWindow.
 
+{% capture codesnippet6 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -150,9 +166,12 @@ xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | UnOrderList_Indent_Level_1 }}
 
 * Now apply the value as `Office2013White` to the `VisualStyle` property of the SfSkinManager for the RibbonWindow.
 
+{% capture codesnippet7 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -171,8 +190,10 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | UnOrderList_Indent_Level_1 }}
 
-![WPF Ribbon with Office2013White Style](GettingStarted_images/wpf-ribbon-style.jpg)
+![WPF Ribbon with Office2013White Style](getting-started_images/wpf-ribbon-style.jpg)
 
 ## Add RibbonTab
 
@@ -202,7 +223,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon with RibbonTab](GettingStarted_images/wpf-ribbon-with-ribbontab.jpg)
+![WPF Ribbon with RibbonTab](getting-started_images/wpf-ribbon-with-ribbontab.jpg)
 
 ## Add RibbonBar
 
@@ -238,7 +259,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon with RibbonBars](GettingStarted_images/wpf-ribbon-with-ribbonbar.jpg)
+![WPF Ribbon with RibbonBars](getting-started_images/wpf-ribbon-with-ribbonbar.jpg)
 
 ## Add RibbonButton
 
@@ -300,7 +321,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon with RibbonButton](GettingStarted_images/wpf-ribbon-with-ribbonbutton.jpg)
+![WPF Ribbon with RibbonButton](getting-started_images/wpf-ribbon-with-ribbonbutton.jpg)
 
 N> Image of any size has been used for `RibbonButton` and also it supports image of all formats.
 
@@ -355,7 +376,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon with DropDownButton](GettingStarted_images/wpf-ribbon-with-dropdownbutton.jpg)
+![WPF Ribbon with DropDownButton](getting-started_images/wpf-ribbon-with-dropdownbutton.jpg)
 
 ## Add SplitButton
 
@@ -416,7 +437,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon with SplitButton](GettingStarted_images/wpf-ribbon-with-splitbutton.jpg)
+![WPF Ribbon with SplitButton](getting-started_images/wpf-ribbon-with-splitbutton.jpg)
 
 ## Add RibbonGallery
 
@@ -486,7 +507,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon with RibbonGallery](GettingStarted_images/wpf-ribbon-with-ribbongallery.jpg)
+![WPF Ribbon with Ribbon Gallery](getting-started_images/wpf-ribbon-with-ribbon-gallery.jpg)
 
 ## Add RibbonComboBox
 
@@ -639,7 +660,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon displays Quick Access ToolBar](GettingStarted_images/wpf-ribbon-quick-access-toolbar.jpg)
+![WPF Ribbon displays Quick Access ToolBar](getting-started_images/wpf-ribbon-quick-access-toolbar.jpg)
 
 
 ### Add items to Quick Access toolbar	
@@ -729,7 +750,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon displays Items in Quick Access ToolBar](GettingStarted_images/wpf-ribbon-quick-access-toolbar-items.jpg)
+![WPF Ribbon displays Items in Quick Access ToolBar](getting-started_images/wpf-ribbon-quick-access-toolbar-items.jpg)
 
 ## Add BackStage
 
@@ -821,7 +842,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon displays RibbonBackStage](GettingStarted_images/wpf-ribbon-backstage.jpg)
+![WPF Ribbon Displays Back Stage](getting-started_images/wpf-ribbon-back-stage.jpg)
 
 ## Add application menu
 
@@ -915,7 +936,7 @@ syncfusion:SkinStorage.VisualStyle="Default" >
 
 {% endtabs %}
 
-![WPF Ribbon with ApplicationMenu](GettingStarted_images/wpf-ribbon-with-applicationmenu.jpg)
+![WPF Ribbon with Application Menu](getting-started_images/wpf-ribbon-with-application-menu.jpg)
 
 ### Add application items to the application menu
 
@@ -1017,7 +1038,7 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 {% endtabs %}
 
-![WPF Ribbon displays AppicationMenu with ApplicationItems](GettingStarted_images/wpf-ribbon-applicationmenu-items.jpg)
+![WPF Ribbon displays Appication Menu with Application Items](getting-started_images/wpf-ribbon-application-menu-items.jpg)
 
 ## Adding custom controls to the title bar
 
@@ -1081,7 +1102,7 @@ The [`HeaderItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.
 
 {% endtabs %}
 
-![WPF Ribbon Adding items using headeritems](GettingStarted_images/wpf-ribbon-adding-items-using-headeritems.jpg)
+![WPF Ribbon Adding items using headeritems](getting-started_images/wpf-ribbon-adding-items-using-header-items.jpg)
 
 ### Adding items using HeaderItemsSource
 
@@ -1145,7 +1166,7 @@ The [`HeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
 
 {% endtabs %}
 
-![WPF Ribbon Adding items using headeritemssource](GettingStarted_images/wpf-ribbon-adding-items-using-headeritemssource.jpg)
+![WPF Ribbon Adding Items Using Header Items Source](getting-started_images/wpf-ribbon-adding-items-using-header-items-source.jpg)
 
 ### Setting HeaderItemTemplate
 
@@ -1203,7 +1224,7 @@ The RibbonWindow allows you to customize the visual appearance of the custom ite
 
 {% endtabs %}
 
-![WPF Ribbon Setting headeritemtemplate](GettingStarted_images/wpf-ribbon-setting-headeritemtemplate.jpg)
+![WPF Ribbon Setting Header Item Template](getting-started_images/wpf-ribbon-setting-header-item-template.jpg)
 
 ### Setting HeaderItemTemplateSelector
 
@@ -1288,7 +1309,7 @@ public class ItemTemplateSelector : DataTemplateSelector
 
 {% endtabs %}
 
-![WPF Ribbon Setting headeritemtemplateselector](GettingStarted_images/wpf-ribbon-setting-headeritemtemplateselector.jpg)
+![WPF Ribbon Setting Header Item Template Selector](getting-started_images/wpf-ribbon-setting-header-item-template-selector.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Adding-custom-control-to-the-titlebar)
 
@@ -1304,4 +1325,4 @@ Ribbon supports various built-in themes. Refer to the below links to apply theme
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Applying Theme to WPF Ribbon](GettingStarted_images/wpf-ribbon-theme.png)
+  ![Applying Theme to WPF Ribbon](getting-started_images/wpf-ribbon-theme.png)

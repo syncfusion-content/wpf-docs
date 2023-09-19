@@ -13,7 +13,7 @@ This section explains how to create a [WPF ColorPickerPalette](https://www.syncf
 
 ## Control Structure
 
-![ColorPickerPalette control structure](Getting-Started_images/Control_Structure_GS.png)
+![WPF Color Picker Palette control structure](getting-started_images/wpf-color-picker-palette-control-structure.png)
 
 * The Selected Color represents the color that you select.
 * The Drop-Down represents a button, `ColorPickerPalette` window will open when you click on it.
@@ -26,7 +26,7 @@ This section explains how to create a [WPF ColorPickerPalette](https://www.syncf
 
 ### More Color Window
 
-![ColorPickerPalette control structure](Getting-Started_images/MoreColorControl_Structure_GS.png)
+![WPF Color Picker Palette control structure](getting-started_images/wpf-color-picker-palette-structure.png)
 
 ## Assembly deployment
 
@@ -42,7 +42,7 @@ You can add the WPF Color Picker Palette control to an application by dragging i
 
 * Syncfusion.Shared.WPF
 
-![ColorPickerPalette Control added by designer](Getting-Started_images/Designer.png)
+![WPF Color Picker Palette Control added by designer](getting-started_images/wpf-color-picker-palette-designer.png)
  
 ## Adding WPF ColorPickerPalette via XAML
 
@@ -54,8 +54,9 @@ To add the `ColorPickerPalette` control manually in XAML, follow these steps:
  
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `ColorPickerPalette` control in XAML page.
 
-4.	Declare the `ColorPickerPalette` control in XAML page.
+4. Declare the `ColorPickerPalette` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -73,6 +74,8 @@ To add the `ColorPickerPalette` control manually in XAML, follow these steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF ColorPickerPalette via C\#
 
@@ -85,8 +88,9 @@ To add the `ColorPickerPalette` control manually in C#, follow these steps:
 
 3. Include the required namespace and create an instance of `ColorPickerPalette` and add it to the window.
 
-4.	Declare the `ColorPickerPalette` control using C#.
+4. Declare the `ColorPickerPalette` control using C#.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -108,8 +112,10 @@ public partial class MainWindow : Window {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![ColorPickerPalette control added by xaml and code](Getting-Started_images/Getting-Started_Designer.png)
+![WPF Color Picker Palette control added by xaml and code](getting-started_images/wpf-color-picker-palette-control-added-via-xaml-code.png)
 
 ## Accessing a Color programmatically
 
@@ -137,7 +143,7 @@ colorPickerPalette.Height = 40;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette programmatically picked the red color](Dealing-with-ColorPickerPalette_images/Colorprogrammatically.png)
+![WPF  Color Picker Palette programmatically picked the red color](dealing-with-colorpickerpalette_images/wpf-programmatically-picked-red.png)
 
 Here, `Red` color is selected color in the `ColorPickerPalette`.
 
@@ -167,7 +173,7 @@ colorPickerPalette.Height = 40;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette control with theme and standard color items](Getting-Started_images/ThemeColorPanel.png)
+![WPF Color Picker Palette control with theme and standard color items](getting-started_images/wpf-color-picker-palette-with-standard-theme.png)
 
 ## Add your own color in the palette
 
@@ -228,7 +234,7 @@ public class ViewModel : NotificationObject {
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette with own color items](Dealing-with-ColorPickerPalette_images/CustomColor.png)
+![WPF Color Picker Palette with own color items](dealing-with-colorpickerpalette_images/wpf-own-color-itemns.png)
 
 Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/CustomColors) to download the sample that showcases how to add your own color items into the palette. 
 
@@ -256,7 +262,7 @@ colorPickerPalette.Height = 40;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette with recently used color items](Getting-Started_images/Recentcolors.png)
+![WPF Color Picker Palette with recently used color items](getting-started_images/wpf-color-picker-palette-items-used-recently.png)
 
 ## Choosing a color from MoreColor window
 
@@ -282,7 +288,7 @@ colorPickerPalette.Height = 40;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette with more color panel](Getting-Started_images/MoreColorWindow.gif)
+![WPF Color Picker Palette with more color panel](getting-started_images/wpf-color-picker-palette-window.gif)
 
 N> We can show or hide all color panels. Refer the [Dealing with ColorPickerPalette](https://help.syncfusion.com/wpf/color-picker-palette/dealing-with-colorpickerpalette) page that explains the panel visibility support.
 
@@ -304,7 +310,7 @@ colorPickerPalette.NoColorVisibility = Visibility.Visible;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette reset selected color as Transparent by clicking the No color button](Dealing-with-ColorPickerPalette_images/NoColor.png)
+![WPF Color Picker Palette reset selected color as Transparent by clicking the No color button](dealing-with-colorpickerpalette_images/wpf-reset-transparency-button.png)
 
 N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
 
@@ -365,4 +371,4 @@ ColorPickerPalette supports various built-in themes. Refer to the below links to
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF ColorPickerPalette](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF Color Picker Palette](getting-started_images/wpf-color-picker-palette-theme-settings.png)

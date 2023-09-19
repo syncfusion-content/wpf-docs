@@ -59,6 +59,7 @@ They are:
 2. Above
 3. Cross
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -75,5 +76,7 @@ They are:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Ticks_img1](Ticks_images/Ticks_img1.png)

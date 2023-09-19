@@ -64,7 +64,7 @@ namespace PdfViewerDemo
 
 ## View PDF file from stream
 
-You can view the PDF file from code behind, by passing the [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN&view=netcore-3.1) as a parameter to the Load method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). Refer to the following code to perform the same.
+You can view the PDF file from code behind, by passing the [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN&view=netcore-3.1) as a parameter to the Load method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). Refer to the following code to perform the same.
 
 {% tabs %}
 {% highlight c# %}
@@ -82,7 +82,6 @@ namespace PdfViewerDemo
         public MainWindow()
         {
             InitializeComponent();
-
             FileStream stream = new FileStream(@"HTTP Succinctly.pdf", FileMode.Open);
 
             //Load PDF file using stream.
@@ -96,7 +95,7 @@ namespace PdfViewerDemo
 
 ## View PDF file using the ItemSource property
 
-You can also view a PDF file using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource). The property accepts a string file path, a [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN), and a [PdfLoadedDocument](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object.
+You can also view a PDF file using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource). The property accepts a string file path, a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-7.0&redirectedfrom=MSDN), and a [PdfLoadedDocument](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,7 +122,7 @@ namespace PdfViewerDemo
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below code snippet to load a [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN) using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property
+Refer the below code snippet to load a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-7.0&redirectedfrom=MSDN) using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property
 {% tabs %}
 {% highlight c# %}
 //Load PDF file as Stream using the `ItemSource` property.
@@ -211,7 +210,6 @@ namespace PdfViewerDemo
         public MainWindow()
         {
             InitializeComponent();
-
             //Load PDF file with the absolute file path.
             pdfViewer.Load(Path.GetFullPath(@"HTTP Succinctly.pdf"));
 
@@ -243,7 +241,6 @@ namespace PdfViewerDemo
         public MainWindow()
         {
             InitializeComponent();
-
             //wire the DocumentLoaded event
             pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
         }

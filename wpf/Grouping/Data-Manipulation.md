@@ -17,8 +17,9 @@ The following data manipulation techniques are available in Essential Grouping:
 
 Another collection that is part of the schema information in the Engine.TableDescriptor is the RecordFilters collection. This collection lets you filter the data to see only the items that are in your data list and that satisfy the criteria that is specified. You can express the criteria as a logical expression using the property names, algebraic, and logical operators. You can also use LIKE, MATCH, and IN operators.
 
-1.In the Console Application used in lessons 1 and 2, comment out all the code that is in the Main method and add the following code to create a data object and set it into the Grouping Engine.
+1. In the Console Application used in lessons 1 and 2, comment out all the code that is in the Main method and add the following code to create a data object and set it into the Grouping Engine.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
    
@@ -93,25 +94,26 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
+2. You are now ready to apply a filter to the data. Say for example you want to see only those items whose property D has the value d1. You must observe that D is a string that has non-numeric values. So, in this case you will need to use one of the string comparison operators (LIKE or MATCH) in your filter condition.
 
+3. To add a filter condition, you will need to add a RecordFilterDescriptor to the Engine.TableDescriptor.RecordFilters collection. 
 
-2.You are now ready to apply a filter to the data. Say for example you want to see only those items whose property D has the value d1. You must observe that D is a string that has non-numeric values. So, in this case you will need to use one of the string comparison operators (LIKE or MATCH) in your filter condition.
-3.To add a filter condition, you will need to add a RecordFilterDescriptor to the Engine.TableDescriptor.RecordFilters collection. 
+4. Do the following steps:
 
-Do the following steps:
-
-1.List the data before the filter. 
-2.Apply the filter by creating a RecordFilterDescriptor. 
-3.Add it to the RecordFilters collection. 
-4.List the filtered data. 
+    1.List the data before the filter. 
+    2.Apply the filter by creating a RecordFilterDescriptor. 
+    3.Add it to the RecordFilters collection. 
+    4.List the filtered data. 
 
 N> To list the data, instead of accessing the Table.Records collections, you were using the Table.FilteredRecords collections. The FilteredRecords collection only includes the records that satisfy all filters in the RecordFilters collection. Add this code at the end of the Main method.
 
 
-5.Note that the constructor on theRecordFilterDescription takes an expression, "[D] LIKE 'd1'". This expression will be _True_ only for those items in the list where property D has the value d1.
+5. Note that the constructor on theRecordFilterDescription takes an expression, "[D] LIKE 'd1'". This expression will be _True_ only for those items in the list where property D has the value d1.
 
-
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -230,11 +232,14 @@ Dim obj As MyObject = CType(rec.GetData(), MyObject)
     
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Data-Manipulation_img2](Data-Manipulation_images/Data-Manipulation_img2.png)
 
-6.You can apply more complex filters. Here is the code that will remove any existing filters and filter the property D being d1 or property b equal 2. Note here that since you expect property B to display only numeric data you must use the = operator in the comparison.
+6. You can apply more complex filters. Here is the code that will remove any existing filters and filter the property D being d1 or property b equal 2. Note here that since you expect property B to display only numeric data you must use the = operator in the comparison.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -299,6 +304,8 @@ Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
    ![Data-Manipulation_images3](Data-Manipulation_images/Data-Manipulation_img3.png)
 
@@ -312,8 +319,9 @@ You can add new properties to your data object that are algebraic expressions in
 To add an expression, you need to create an ExpressionFieldDescriptor and add it to the Engine.TableDescriptor.Expression.Fields collection. Here we illustrate this process by adding an expression that computes 2.1 times the value of property B plus 3.2.
 
 
-1.In the Console Application, comment out all the code that is in the Main method and add this code to create a data object and set it into the GroupingEngine.
+1. In the Console Application, comment out all the code that is in the Main method and add this code to create a data object and set it into the GroupingEngine.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -377,9 +385,12 @@ groupingEngine.SetSourceList(list)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-2.Now you must add code to list the data, add an expression property and then display the value of the expression. To retrieve the value, you must use the Record.GetValue method by passing it as the name of the expression that you had assigned when it was created.
+2. Now you must add code to list the data, add an expression property and then display the value of the expression. To retrieve the value, you must use the Record.GetValue method by passing it as the name of the expression that you had assigned when it was created.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -477,6 +488,8 @@ Next rec
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![Data-Manipulation_img4](Data-Manipulation_images/Data-Manipulation_img4.png)
 
@@ -687,6 +700,7 @@ The following steps illustrate how to do custom sorting using the IComparer prop
 1. Here, you must create a class that implements IComparer which can accept value such as ax, where x is a digit which is used to do the comparison. This leads to numerical sorting, ignoring the leading character.
 2. Add this code immediately following the end of the Class1 code.
 
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -809,10 +823,12 @@ End Class
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
+3. Add this code to the Main method to use this custom comparer to sort column A.
 
-3.Add this code to the Main method to use this custom comparer to sort column A.
-
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -1000,6 +1016,8 @@ Console.ReadLine()
    
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 ![Data-Manipulation_img7](Data-Manipulation_images/Data-Manipulation_img7.png)
 

@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-## Remove Individual Menu Items
+# Remove Individual Menu Items in WPF DockingManager
 
 We can remove individual MenuItem in ContextMenu using the following properties.  The removal can be done by right clicking on it.
 
@@ -52,6 +52,6 @@ DockingManager.SetShowTabbedMenuItem(grid1, false);
 
 {% endtabs %}
 
-![Remove-Individual-Menu-Items_images1](Remove-Individual-Menu-Items_images/Remove-Individual-Menu-Items_img1.png)
+![Remove-Individual-Menu-Items_in_WPF_DockingManager](Remove-Individual-Menu-Items_images/Remove-Individual-Menu-Items_img1.png)
 
 Similarly you can use other properties to disable corresponding MenuItems.

@@ -38,12 +38,13 @@ The DocumentContainer control can be added to an application by dragging it from
 
 To add the control manually in XAML, follow the given steps:
 
-1.	Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
     * Syncfusion.Tools.WPF
     * Syncfusion.Shared.WPF 
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3.	Declare the DocumentContainer control in the XAML page.
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3. Declare the DocumentContainer control in the XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -58,16 +59,19 @@ To add the control manually in XAML, follow the given steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Add control manually in C\#
 
 To add the control manually in C#, follow the given steps:
-1.	Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
     * Syncfusion.Tools.WPF
     * Syncfusion.Shared.WPF
-2.	Import the DocumentContainer namespace **using Syncfusion.Windows.Tools.Controls;**.
-3.	Create a DocumentContainer instance, and add it to the window.
+2. Import the DocumentContainer namespace **using Syncfusion.Windows.Tools.Controls;**.
+3. Create a DocumentContainer instance, and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Tools.Controls;
@@ -90,6 +94,8 @@ namespace DocumentContainerSample
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Add document windows
 

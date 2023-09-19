@@ -21,6 +21,7 @@ The following steps explain how to override the Syncfusion Themes.
 
 1. Add the corresponding resource dictionary in the sample.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -32,11 +33,14 @@ The following steps explain how to override the Syncfusion Themes.
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Define the new style using the BasedOn property. 
 
    The following code snippet overrides the Syncfusion style for the Calendar Control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -52,8 +56,8 @@ The following steps explain how to override the Syncfusion Themes.
 
 {% endhighlight %}
 {% endtabs %}
-
-
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 The output is displayed as shown below.
 

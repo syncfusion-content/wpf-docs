@@ -28,7 +28,7 @@ The circular gauge control is highly customizable with variety of simple APIs to
 
 ### Scales
 
-The [`Scales`](https://help.syncfusion.com/wpf/sfcirculargauge/scales) contain labels, tick marks, and a rim to customize its basic look and feel. It defines the start angle, sweep direction, sweep angle, overall minimum and maximum values, the frequency of labels, and tick marks.
+The [`Scales`](https://help.syncfusion.com/wpf/radial-gauge/scales) contain labels, tick marks, and a rim to customize its basic look and feel. It defines the start angle, sweep direction, sweep angle, overall minimum and maximum values, the frequency of labels, and tick marks.
 
 ### Ranges
 
@@ -36,11 +36,11 @@ The [`Ranges`](https://help.syncfusion.com/wpf/radial-gauge/ranges) are visual e
 
 ### Pointers
 
-The [`Pointers`](https://help.syncfusion.com/wpf/sfcirculargauge/pointers) are elements that point out the values of the bound property on a scale. A circular scale can contain one or more pointers that can be used to measure different values. Each pointer has the `Value` property, which informs the current value to users visually.
+The [`Pointers`](https://help.syncfusion.com/wpf/radial-gauge/pointers) are elements that point out the values of the bound property on a scale. A circular scale can contain one or more pointers that can be used to measure different values. Each pointer has the `Value` property, which informs the current value to users visually.
 
 ### Header
 
-The [`Header`](https://help.syncfusion.com/wpf/sfcirculargauge/header) can be used to set a unique header for the circular gauge. You can add text as the header in the circular gauge.
+The [`Header`](https://help.syncfusion.com/wpf/radial-gauge/header) can be used to set a unique header for the circular gauge. You can add text as the header in the circular gauge.
 
 ![Circular Gauge - Overview](Overview_images/Overview_img1.jpeg)
 

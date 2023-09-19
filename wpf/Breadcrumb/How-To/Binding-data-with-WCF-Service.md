@@ -7,7 +7,7 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-## Binding data with WCF Service 
+# Binding data with WCF Service in WPF Hierarchical Navigator
 
 XML data can be bound through WCF Services by using a WPF application enabled with WCF Services.
 

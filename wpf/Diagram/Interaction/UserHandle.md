@@ -85,4 +85,6 @@ The Alignment of QuickCommand is similar  to [Annotation Alignment](https://help
 
 * [How to enable or disable QuickCommands?](https://www.syncfusion.com/kb/6351/how-to-enable-or-disable-quickcommands)
 
+* [How to hide specific default QuickCommands of Node?](https://www.syncfusion.com/kb/13236/how-to-hide-specific-default-quickcommands-of-node-in-wpf-diagramsfdiagram)
+
 

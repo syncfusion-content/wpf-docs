@@ -41,14 +41,15 @@ N> You can customize the properties of DateTimeEdit control using the SmartTag.
 
 To add the control manually in XAML page, follow the given steps:
 
-1.Add the following required assembly references to the project,
+1. Add the following required assembly references to the project,
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-2.Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 
-3.Declare the `DateTimeEdit` control in XAML page.
+3. Declare the `DateTimeEdit` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -70,19 +71,22 @@ To add the control manually in XAML page, follow the given steps:
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 
 To add the control manually in C#, follow the given steps:
 
-1.Add the following required assembly references to the project,
+1. Add the following required assembly references to the project,
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-2.Import the `DateTimeEdit` namespace **Syncfusion.Windows.Shared**.
+2. Import the `DateTimeEdit` namespace **Syncfusion.Windows.Shared**.
 
-3.Create the `DateTimeEdit` control instance and add it to the page.
+3. Create the `DateTimeEdit` control instance and add it to the page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -100,6 +104,8 @@ this.Content = dateTimeEdit;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![overview of WPF DateTimeEdit](Getting-Started_images/wpf-datetimeedit-overview.png)
 

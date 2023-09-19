@@ -23,26 +23,27 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 ## Adding WPF TileViewControl via designer
 
-1) The `TileViewControl` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+1. The `TileViewControl` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
 ![wpf TileViewControl added by designer](Getting-Started_images/Getting-Started_img2.png)
 
-2) Set the properties for `TileViewControl` in design mode using the SmartTag feature.
+2. Set the properties for `TileViewControl` in design mode using the SmartTag feature.
 
 ## Adding WPF TileViewControl via XAML
 
 To add the `TileViewControl` manually in XAML, follow these steps:
 
-1) Create a new WPF project in Visual Studio.
+1. Create a new WPF project in Visual Studio.
 
-2) Add the following required assembly references to the project:
+2. Add the following required assembly references to the project:
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `TileViewControl` in XAML page.
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `TileViewControl` in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -66,19 +67,22 @@ To add the `TileViewControl` manually in XAML, follow these steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF TileViewControl via C#
 
 To add the `TileViewControl` manually in C#, follow these steps:
 
-1) Create a new WPF application via Visual Studio.
+1. Create a new WPF application via Visual Studio.
 
-2) Add the following required assembly references to the project:
+2. Add the following required assembly references to the project:
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -86,9 +90,12 @@ using Syncfusion.Windows.Shared;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of `TileViewControl`, and add it to the window.
+4. Create an instance of `TileViewControl`, and add it to the window.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -101,6 +108,8 @@ tileViewControl.Width = 300;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
 

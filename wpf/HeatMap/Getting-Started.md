@@ -109,6 +109,7 @@ Now data is ready, next we need to configure data source and map rows and column
 
 * Prepare ItemsMapping add it in resource.
 
+{% capture codesnippet1 %}
 {% highlight xaml %}
 
 <syncfusion:TableMapping x:Key="ItemsMapping">
@@ -130,9 +131,12 @@ Now data is ready, next we need to configure data source and map rows and column
 </syncfusion:TableMapping>
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Set items source and mapping
 
+{% capture codesnippet2 %}
 {% highlight xaml %}
 
 <syncfusion:SfHeatMap ItemsSource="{StaticResource productsData}" 
@@ -140,6 +144,8 @@ Now data is ready, next we need to configure data source and map rows and column
 </syncfusion:SfHeatMap>
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 * This will show a grid with data as in following image.
 
@@ -151,6 +157,7 @@ Next we can configure color range for these values using color mapping
 
 * Configure items mapping based on items source.
 
+{% capture codesnippet3 %}
 {% highlight xaml %}
 
 <syncfusion:ColorMappingCollection x:Key="colorMapping">
@@ -159,9 +166,12 @@ Next we can configure color range for these values using color mapping
 </syncfusion:ColorMappingCollection>
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 * Set ColorMapping
 
+{% capture codesnippet4 %}
 {% highlight xaml %}
 
 <syncfusion:SfHeatMap ItemsSource="{StaticResource productsData}" 
@@ -169,6 +179,8 @@ Next we can configure color range for these values using color mapping
                       ColorMappingCollection="{StaticResource colorMapping}">
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
 * This will show the grid data with color based on the range given.
 

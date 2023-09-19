@@ -145,7 +145,7 @@ N> You can explore our [WPF Spline Area Chart](https://www.syncfusion.com/wpf-co
 
 ## Spline Type
 
-[`Spline`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html) and [`SplineArea`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) series provide support for various spline type. The spline type of the series can be changed by using its [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) property. The following spline types are supported by Spline and SplineArea series:
+[`Spline`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html) and [`SplineArea`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) series provide support for various spline type. The spline type of the series can be changed by using its [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) property. The following spline types are supported by Spline and SplineArea series:
 
 * [`Natural`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineType.html) 
 * [`Monotonic`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineType.html) 
@@ -153,6 +153,8 @@ N> You can explore our [WPF Spline Area Chart](https://www.syncfusion.com/wpf-co
 * [`Clamped`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineType.html)
 
 **Cardinal**
+
+The cardinal spline algorithm ensures that the resulting curve passes through each data point, while also providing a smooth and visually appealing interpolation with continuous derivatives up to a certain order at each point.
 
 The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineType.html).
 
@@ -180,7 +182,9 @@ series.SplineType = SplineType.Cardinal;
 
 **Monotonic**
 
-The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) value as Monotonic.
+The monotonic spline algorithm ensures that the resulting curve is non-decreasing (or non-increasing) between each pair of adjacent points. This means that if the data points increase (or decrease) monotonically, the resulting curve will follow the same trend without any oscillations or inflections.
+
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) value as Monotonic.
 
 {% tabs %}
 
@@ -206,7 +210,9 @@ series.SplineType = SplineType.Monotonic;
 
 **Clamped**
 
-The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineTypeProperty) value as Clamped.
+The clamped splines algorithm ensures that the resulting curve passes through the first and last data points and has a specified slope or curvature at these endpoints, thus ensuring that the curve is well-behaved at the boundaries and does not exhibit any unusual behavior.
+
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) value as Clamped.
 
 {% tabs %}
 

@@ -63,7 +63,7 @@ To bind XML data to a TabNavigation control, convert the XML data to a collectio
 
 * **Create a xml file**
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XML %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -91,9 +91,12 @@ To bind XML data to a TabNavigation control, convert the XML data to a collectio
 </Books>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * **Model.cs**
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 namespace TabNavigationXMLBinding
@@ -143,9 +146,12 @@ namespace TabNavigationXMLBinding
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 * **ViewModel.cs**
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 namespace TabNavigationXMLBinding
@@ -200,9 +206,12 @@ namespace TabNavigationXMLBinding
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 * **MainWindow.Xaml.cs**
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight C# %}
 namespace TabNavigationXMLBinding
@@ -243,9 +252,12 @@ namespace TabNavigationXMLBinding
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
 * **MainWindow.Xaml**
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight XAML %}
 <Window.DataContext>
@@ -256,3 +268,5 @@ namespace TabNavigationXMLBinding
 <syncfusion:TabNavigationControl x:Name="TabNavigation" Grid.Column="1" Grid.Row="1"  ItemsSource="{Binding BookCollection}"/>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | UnOrderList_Indent_Level_1 }}

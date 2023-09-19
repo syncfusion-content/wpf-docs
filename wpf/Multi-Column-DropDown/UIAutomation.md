@@ -7,11 +7,11 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-## UIAutomation
+# UIAutomation in WPF Multi Column Dropdown (SfMultiColumnDropDown)
 
 SfMultiColumnDropDownControl supports the following UIAutomations,
 
-### Coded UI
+## Coded UI
 
 SfMultiColumnDropDownControl supports CodedUITest automation that enables you to create an automation test with SfMultiColumnDropDownControl elements and record the sequence of actions.
 
@@ -38,7 +38,7 @@ Coded UI Test Builder generates code from recorded session and custom class is i
 </table>
 The following screenshot illustrates the SfMultiColumnDropDownControl properties, when you drag the crosshair to the SfMultiColumnDropDown control.
 
-![Features_img12](Features_images/Features_img12.png)
+![WPF Multi Column Dropdown Coded UI](Features_images/Features_img12.png)
 
 
 
@@ -64,7 +64,7 @@ SfMultiColumnDropDownControl supports for QTP test. You can record the actions p
 
 The following screenshot illustrates the QTP Test for SfMultiColumnDropDownControl.
 
-![Features_img13](Features_images/Features_img13.png)
+![WPF Multi Column Dropdown Quick Test Professional](Features_images/Features_img13.png)
 
 
 

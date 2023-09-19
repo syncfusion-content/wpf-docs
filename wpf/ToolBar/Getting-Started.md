@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with WPF ToolBar (ToolBarAdv)
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your WPF application to use our components.
 
 This section explains how to add the [WPF ToolBar](https://www.syncfusion.com/wpf-controls/toolbar) (ToolBarAdv) control to an application and its structure.
 
@@ -25,6 +25,7 @@ The following ways explains how to add ToolBarAdv control using XAML code:
 * Create a WPF project in Visual Studio and refer “Syncfusion.Shared.Wpf” assembly to the project.    
 * Include an XML namespace for the above assemblies to the Main window.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -44,8 +45,12 @@ Title="MainWindow" Height="350" Width="525">
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
+
 * Now add the WPF ToolBar (ToolBarAdv) control with a required optimal name using the namespace 
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -57,6 +62,8 @@ Title="MainWindow" Height="350" Width="525">
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 ### Create the ToolBarAdv control to an application by C#:
 

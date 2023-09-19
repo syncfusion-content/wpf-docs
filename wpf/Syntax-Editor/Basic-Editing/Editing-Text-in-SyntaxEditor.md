@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Editing Text in EditControl WPF
+# Editing Text in EditControl WPF
 
 [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) supports displaying or editing string values with any number of lines. It also supports all basic editing operations such as typing, cut, copy, paste, delete, backspace, undo and redo operations.
 

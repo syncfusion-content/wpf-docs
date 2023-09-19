@@ -34,13 +34,13 @@ Create new WPF Project in Visual Studio to display SfNavigationDrawer with data 
 
 Drag and drop the SfNavigationDrawer control from the Toolbox to your application.
 
-![WPF NavigationDrawer shows in Toolbox](Getting-Started_images/wpf-navigation-drawer-toolbox.png)
+![WPF NavigationDrawer shows in Toolbox](getting-started_images/wpf-navigation-drawer-toolbox.png)
 
 Now, the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![Displaying Reference of WPF NavigationDrawer](Getting-Started_images/wpf-navigation-drawer-reference.png)
+![Displaying Reference of WPF NavigationDrawer](getting-started_images/wpf-navigation-drawer-reference.png)
 
-![WPF NavigationDrawer with Namespace](Getting-Started_images/wpf-navigation-drawer-namespace.png)
+![WPF NavigationDrawer with Namespace](getting-started_images/wpf-navigation-drawer-namespace.png)
 
 ### Adding control manually in XAML
 
@@ -51,6 +51,7 @@ In order to add control manually in XAML, do the below steps,
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 3. Declare SfNavigationDrawer control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window x:Class="NavigationDrawerWPF.MainWindow"
@@ -66,6 +67,8 @@ In order to add control manually in XAML, do the below steps,
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control manually in C#
 
@@ -76,6 +79,7 @@ In order to add control manually in C#, do the below steps,
 2. Import SfTreeView namespace **Syncfusion.UI.Xaml.NavigationDrawer** .
 3. Create SfNavigationDrawer control instance and add it to the Page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.NavigationDrawer;
@@ -98,6 +102,8 @@ namespace NavigationDrawerWPF
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Adding content to the control
 
@@ -341,6 +347,6 @@ See also [Different display modes](https://help.syncfusion.com/wpf/navigation-dr
 
 {% endtabs %}
 
-![WPF NavigationDrawer](Getting-Started_images/wpf-navigation-drawer.png)
+![WPF NavigationDrawer](getting-started_images/wpf-navigation-drawer.png)
                    
 N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Getting_Started) in GitHub
