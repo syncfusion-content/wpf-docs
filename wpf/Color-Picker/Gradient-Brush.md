@@ -287,7 +287,7 @@ Here, The `ColorPicker` is in Gradient brush mode.
 
 We can change the brush mode directly by clicking on the corresponding Solid, Linear or Gradient mode buttons which are placed in the bottom right corner of the `ColorPicker`.
 
-![ColorPicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/ColorPicker_Switch_brushes.png)
+![ColorPicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/Brush_mode.png)
 
 ## Disable Switching between Solid, Linear and Gradient brush mode at runtime
 
@@ -307,7 +307,7 @@ colorPicker.EnableSolidToGradientSwitch = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_EnableSolidToGradientSwitch.png)
+![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/wpf-color-picker-switch-brushes.png)
 
 ## Gradient color changed notification
 
