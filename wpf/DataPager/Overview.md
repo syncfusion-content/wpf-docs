@@ -13,7 +13,7 @@ The SfDataPager control provides a configurable user interface for paging usin
 
 The following screenshot displays the basic concept of paging.
 
-![WPF DataPager Overview](overview_images/wpf-datapager-screenshot.png)
+![WPF DataPager Overview](overview_images/wpf-datapager.png)
 
 
 

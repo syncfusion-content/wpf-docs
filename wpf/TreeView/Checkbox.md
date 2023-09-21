@@ -234,8 +234,6 @@ sfTreeView.CheckBoxMode = CheckBoxMode.Recursive;
 {% endhighlight %}
 {% endtabs %}
 
-N> In recursive mode, the parent nodes checkbox state or `IsChecked` property value is updated only in UI interaction.
-
 ## Get or Set Checked Items
 
 ### Get or Set Checked Items in Bound Mode
@@ -243,8 +241,6 @@ N> In recursive mode, the parent nodes checkbox state or `IsChecked` property va
 You can get or set list of items to be checked or un-checked by using [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property.
 
 When the [CheckBoxMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) is other than `None`, the individual `TreeViewNode` or collection of `TreeViewNode` can be checked from the code by setting the  `CheckedItems`, or adding items to the `CheckedItems` property based on the `CheckBoxMode`.
-
-N> Programmatically adding or removing the node value not affects their parent and child nodes checkbox state.
 
 {% tabs %}
 {% highlight c# %}
