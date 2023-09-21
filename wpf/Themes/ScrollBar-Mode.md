@@ -25,7 +25,8 @@ public partial class MainWindow : ChromelessWindow
 {
     public MainWindow()
     {
-        SfSkinManager.SetTheme(this, new Theme() { ThemeName = "MaterialDark", ScrollBarMode = ScrollBarMode.Compact });
+        SfSkinManager.SetTheme(this, new Theme() { ThemeName = "Windows11Dark"});
+        SkinManagerHelper.SetScrollBarMode(this, ScrollBarMode.Default);
         InitializeComponent();            
     }        
 }
