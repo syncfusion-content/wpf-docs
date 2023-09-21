@@ -20,7 +20,7 @@ They are represent in the following types.
 
 The BPMN Association flow is used to link the flow objects with its corresponding text or artifact. An Association is represented as a dotted graphical line with an opened arrow. 
 
-To create an [Association](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnFlowType.html#fields#Association), the [FlowType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnFlowViewModel_FlowType) property of the [BpmnFlowViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html) should be set to **Association**. The types of association are as follows:
+To create an [`Association`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnFlowType.html#fields#Association), the [`FlowType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnFlowViewModel_FlowType) property of the [BpmnFlowViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html) should be set to **Association**. The types of association are as follows:
 
 * DirectionalAssociation: Represented as a dotted graphical line with one side arrow.
 * BiDirectionalAssociation: Represented as a dotted graphical line with double side arrow.
@@ -72,7 +72,7 @@ The following table shows the visual representation of the association flows.
 
 ## SequenceFlow
 
-A SequenceFlow flow shows the order that the activities are performed in a BPMN process and is represented by a solid graphical line. To create a [SequenceFlow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnFlowType.html#fields#SequenceFlow), the [FlowType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnFlowViewModel_FlowType) property of the [BpmnFlowViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html) should be set to **SequenceFlow**. The types of sequence are as follows:
+A SequenceFlow flow shows the order that the activities are performed in a BPMN process and is represented by a solid graphical line. To create a [`SequenceFlow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnFlowType.html#fields#SequenceFlow), the [`FlowType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnFlowViewModel_FlowType) property of the [BpmnFlowViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html) should be set to **SequenceFlow**. The types of sequence are as follows:
 
 * SequenceFlow: Sequence flows represent the typical path between the two flow objects.
 * ConditionalSequenceFlow: Conditional sequence flows are used to control the flow of a process based on the certain conditions.
@@ -123,7 +123,7 @@ The following table contains various representation of sequence flows.
 
 ## MessageFlow
 
-Message flows are the two separately controlled processes communicate and collaborate with one another.  An activity or event in one pool can initiate a message to the another pool.  Message Flows are depicted as lines with an empty circle showing where the message originates and and empty arrowhead where the message terminates. To create a [MessageFlow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnFlowType.html#fields#MessageFlow), the [FlowType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnFlowViewModel_FlowType) property of the [BpmnFlowViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html) should be set to **MessageFlow**. The types of message are as follows:
+Message flows are the two separately controlled processes communicate and collaborate with one another.  An activity or event in one pool can initiate a message to the another pool.  Message Flows are depicted as lines with an empty circle showing where the message originates and and empty arrowhead where the message terminates. To create a [`MessageFlow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnFlowType.html#fields#MessageFlow), the [FlowType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnFlowViewModel_FlowType) property of the [BpmnFlowViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html) should be set to **MessageFlow**. The types of message are as follows:
 
 * InitiatingMessageFlow: An activity or event in one pool can initiate a message to another pool.
 * NonInitiatingMessageFlow: An activity or event in one pool can not initiate a message to another pool.

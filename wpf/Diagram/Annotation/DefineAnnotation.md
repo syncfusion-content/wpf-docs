@@ -13,7 +13,7 @@ Annotation is a block of text that can be displayed over a node or connector. An
 
 ## Define annotation
 
-An annotation can be added to a node or connector by defining the annotation object and adding that to the annotation collection of the node or connector. The `Content` property of `AnnotationEditorViewModel` class defines the text to be displayed. The following code explains how to create an annotation.
+An annotation can be added to a node or connector by defining the annotation object and adding that to the annotation collection of the node or connector. The [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Content) property of [`AnnotationEditorViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html) class defines the text to be displayed. The following code explains how to create an annotation.
 
 {% tabs %}
 {% highlight xaml %}

@@ -13,10 +13,10 @@ The [`Activity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.C
 
 There are two types of activities. They are listed as follows:
 
-* [Task](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#Task): Occurs within a process and it is not broken down to a finer level of detail.
-* [CollapsedSubProcess](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#CollapsedSubProcess): Occurs within a process and it is broken down to a finer level of detail.
+* [`Task`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#Task): Occurs within a process and it is not broken down to a finer level of detail.
+* [`CollapsedSubProcess`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#CollapsedSubProcess): Occurs within a process and it is broken down to a finer level of detail.
 
-You can specify the any one of the above activity type using the [ActivityType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_ActivityType) property of `BpmnNodeViewModel.`
+You can specify the any one of the above activity type using the [`ActivityType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_ActivityType) property of [`BpmnNodeViewModel.`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html)
 
 {% tabs %}
 {% highlight xaml %}

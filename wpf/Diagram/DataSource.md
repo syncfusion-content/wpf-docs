@@ -11,13 +11,13 @@ documentation: ug
 
 Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 
-* The DataSourceSettings `DataSource` property is used to define the data source as a collection of objects, which needs to be populated as diagram.
+* The DataSourceSettings [`DataSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_DataSource) property is used to define the data source as a collection of objects, which needs to be populated as diagram.
 
-* The DataSourceSettings `Id` property is used to define the unique field of each data.
+* The DataSourceSettings [`Id`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_Id) property is used to define the unique field of each data.
 
-* The DataSourceSettings `ParentId` property is used to define the parent field, which builds the relationship between ID and parent field.
+* The DataSourceSettings [`ParentId`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_ParentId) property is used to define the parent field, which builds the relationship between ID and parent field.
 
-* The DataSourceSettings `Root` property is used to define the root node for the diagram populated from the data source.
+* The DataSourceSettings [`Root`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_Root) property is used to define the root node for the diagram populated from the data source.
 
 To explore those properties, refer to [DataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html)
 

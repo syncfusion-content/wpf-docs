@@ -57,7 +57,7 @@ Steps to add Overview control manually in XAML:
 
 ## ZoomSlider
 
-The [ShowZoomSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Overview.html#Syncfusion_UI_Xaml_Diagram_Controls_Overview_ShowZoomSliderProperty) property is used to show or hide the zoom slider in the overview control. By default, the ShowZoomSlider is true.
+The [`ShowZoomSlider`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Overview.html#Syncfusion_UI_Xaml_Diagram_Controls_Overview_ShowZoomSliderProperty) property is used to show or hide the zoom slider in the overview control. By default, the ShowZoomSlider is true.
 
 You can zoom in or zoom out the overview as well as the diagram by changing the slider or click on the zoom in or zoom out button.
 
@@ -104,7 +104,7 @@ Overview control allows Zoom and Pan interactions. The red rectangle indicates t
 {% endhighlight %}	
 {% endtabs %}
 
-The [Constraint](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Overview.html#Syncfusion_UI_Xaml_Diagram_Controls_Overview_ConstraintProperty) property of the Overview class allows you to control the Pan and Zoom interactions based the value assigned to that property. The following table explains the various values and their behaviors:
+The [`Constraint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Overview.html#Syncfusion_UI_Xaml_Diagram_Controls_Overview_ConstraintProperty) property of the Overview class allows you to control the Pan and Zoom interactions based the value assigned to that property. The following table explains the various values and their behaviors:
 
 | OverviewConstraints | Description | Output |
 |---|---|---|

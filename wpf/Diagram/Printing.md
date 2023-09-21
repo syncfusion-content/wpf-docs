@@ -122,7 +122,7 @@ N> Collation applicable when more than one copy of multiple page diagram is prin
 
 ### Orientation 
 
-SfDiagram provides support to switch between Portrait and Landscape orientation while printing. Orientation can be changed by setting the `PageSettings.PageOrientation` Property.
+SfDiagram provides support to switch between Portrait and Landscape orientation while printing. Orientation can be changed by setting the [`PageSettings.PageOrientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageOrientation) Property.
 
 {% tabs %}
 {% highlight C# %}
@@ -142,7 +142,7 @@ The orientation can be changed in print preview window at runtime using orientat
 
 ### Paper size 
 
-SfDiagram provides support to change the page size. Page size can be changed by setting the `PageSettings.PageWidth` and `PageSettings.PageHeight` properties.
+SfDiagram provides support to change the page size. Page size can be changed by setting the [`PageSettings.PageWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageWidth) and [`PageSettings.PageHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageHeight) properties.
 
 {% tabs %}
 {% highlight C# %}
