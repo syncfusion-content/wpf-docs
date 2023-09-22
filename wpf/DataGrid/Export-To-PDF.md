@@ -308,7 +308,7 @@ You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/o
 
 ### Save using File dialog
 
-After exporting to PDF, you can save exported PDF file by opening [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog). 
+After exporting to PDF, you can save exported PDF file by opening [FileDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=windowsdesktop-7.0). 
 
 {% tabs %}
 {% highlight c# %}
@@ -594,7 +594,7 @@ N> While exporting `DetailsViewDataGrid`, [FitAllColumnsInOnePage](https://help.
 
 ### Excluding DetailsViewDataGrid while exporting
 
-You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildGridExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ChildGridExportingEventHandler) and [ChildGridPdfExportingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel).
+You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildGridExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ChildGridExportingEventHandler) and [ChildGridPdfExportingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-7.0).
 
 {% tabs %}
 {% highlight c# %}
