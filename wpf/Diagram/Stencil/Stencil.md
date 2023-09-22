@@ -272,9 +272,9 @@ The `Constraints` property of stencil allows you to enable or disable certain fe
 
 ## See also
 
-* [How to drag and drop elements from a treeview ?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
-* [How to refresh the stencil when adding a new symbol in the symbol source ?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
+* [How to drag and drop elements from a treeview?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
+* [How to refresh the stencil when adding a new symbol in the symbol source?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
 * [How to host different UI elements as a node content ?](https://support.syncfusion.com/kb/article/8182/how-to-host-different-ui-elements-as-node-content-in-the-wpf-diagram-sfdiagram)
-* [How to notify stencil has been loaded ?](https://support.syncfusion.com/kb/article/5863/how-to-notify-stencil-in-wpf-diagram-sfdiagram)
-* [How to get the base node interface while dropping a Symbol from Stencil to SfDiagram ?](https://support.syncfusion.com/kb/article/5494/how-to-get-base-node-interface-while-dropping-a-symbol-from-stencil-to-wpf-diagram)
+* [How to notify stencil has been loaded?](https://support.syncfusion.com/kb/article/5863/how-to-notify-stencil-in-wpf-diagram-sfdiagram)
+* [How to get the base node interface while dropping a Symbol from Stencil to SfDiagram?](https://support.syncfusion.com/kb/article/5494/how-to-get-base-node-interface-while-dropping-a-symbol-from-stencil-to-wpf-diagram)
 * [How to use different User Controls into Stencil?](https://support.syncfusion.com/kb/article/9924/how-to-use-different-user-controls-into-stencil-in-the-wpf-diagram-sfdiagram)
