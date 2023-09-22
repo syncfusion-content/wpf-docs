@@ -172,8 +172,8 @@ Diagram control provides support to change the selection handle display mode of 
 
 ## See Also 
 
-* [How to customize the selection behavior of nodes and connectors?](https://www.syncfusion.com/kb/7457/how-to-customize-the-selection-behavior-of-nodes-and-connectors)
+* [How to customize the selection behavior of nodes and connectors?](https://support.syncfusion.com/kb/article/6761/how-to-customize-the-selection-behavior-in-wpf-diagram-sfdiagram?isInternalRefresh=False)
 
-* [How to disable the selection in Diagram?](https://www.syncfusion.com/kb/5881/how-to-disable-the-selection-in-diagram)
+* [How to disable the selection in Diagram?](https://support.syncfusion.com/kb/article/5495/how-to-disable-the-selection-in-wpf-diagram?isInternalRefresh=False)
 
-* [How to bind the SelectedItems property of SfDiagram to ViewModel property?](https://www.syncfusion.com/kb/13209/how-to-bind-the-selecteditems-property-of-sfdiagram-to-viewmodel-property)
+* [How to bind the SelectedItems property of SfDiagram to ViewModel property?](https://support.syncfusion.com/kb/article/11806/how-to-bind-the-selecteditems-property-of-sfdiagram-to-viewmodel-property?isInternalRefresh=False)
