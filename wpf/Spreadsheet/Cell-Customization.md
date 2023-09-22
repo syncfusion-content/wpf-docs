@@ -33,7 +33,7 @@ Create a custom DataTemplate (For ex: Button Template) in the Main window.xaml f
 
 **Override the SpreadsheetColumn class**
 
-Create an extension class SpreadsheetColumnExt by overriding the [SpreadsheetColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetColumn.html) Class which holds all the operations related with cells.
+Create an extension class SpreadsheetColumnExt by overriding the [SpreadsheetColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetColumn.html) Class which holds all the operations related with cells.
 
 Now override the function `OnUpdateColumn` which updates the column properties (cell types, renderer, cell element, etc.) and get the data template which is used for displaying in the particular cell.
 
@@ -80,7 +80,7 @@ base.OnUpdateColumn(out oldElement);
 
 **Create the Custom Cell Renderer**
 
-Create a SpreadsheetTemplateCellRenderer class by overriding the [SpreadsheetVirtualizingCellRendererBase](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.CellRenderer.SpreadsheetVirtualizingCellRendererBase%602.html) class to display the defined custom renderer element.
+Create a SpreadsheetTemplateCellRenderer class by overriding the [SpreadsheetVirtualizingCellRendererBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.CellRenderer.SpreadsheetVirtualizingCellRendererBase-2.html) class to display the defined custom renderer element.
 
 For initializing the display element, set the content template in `OnInitializeDisplayElement` method and for editing, set the content template in `OnInitializeEditElement` method otherwise it will load the default display and edit element in the cells
 
@@ -139,9 +139,9 @@ N> If you want to load the default edit element, then no need to override the `O
 
 **Associating the Custom Cell Renderer to SpreadsheetGrid**
 
-To associate the custom cell renderer in [SpreadsheetGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html), invoke the [WorkbookLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html) Event of SfSpreadsheet and initialize the SpreadsheetTemplateCellRenderer and add it to the renderer collection. 
+To associate the custom cell renderer in [SpreadsheetGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html), invoke the [WorkbookLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_WorkbookLoaded) Event of SfSpreadsheet and initialize the SpreadsheetTemplateCellRenderer and add it to the renderer collection. 
 
-Invoke the [QueryRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html) Event of `SpreadsheetGrid` and set the CellType of particular range to be “DataTemplate” to load the user defined template.
+Invoke the [QueryRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGrid_QueryRange) Event of `SpreadsheetGrid` and set the CellType of particular range to be “DataTemplate” to load the user defined template.
 
 {% tabs %}
 {% highlight c# %}
@@ -175,7 +175,7 @@ void grid_QueryRange(object sender, SpreadsheetQueryRangeEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-For more reference, please find the [customization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cell_Customization-850724053) sample.
+For more reference, please find the [customization](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Cell_Customization-850724053) sample.
 
 
 N> You can refer to our [WPF Spreadsheet](https://www.syncfusion.com/wpf-controls/spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Spreadsheet example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the spreadsheet.
