@@ -48,7 +48,7 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 {% endhighlight %}
 {% endtabs %}
 
-![popup-item](DropDownMenuItem_images/DropDownMenuItem_img1.png)
+![Setting icon for dropdown menu items in WPF Dropdown Button](DropDownMenuItem_images/DropDownMenuItem_img1.png)
 
 ## Setting icon bar visibility
 
@@ -92,7 +92,7 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 {% endhighlight %}
 {% endtabs %}
 
-![popup-item](DropDownMenuItem_images/DropDownMenuItem_img2.png)
+![Setting icon bar visibility in WPF Dropdown Button](DropDownMenuItem_images/DropDownMenuItem_img2.png)
 
 ## Setting scrollbar visibility
 
@@ -172,7 +172,7 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 {% endhighlight %}
 {% endtabs %}
 
- ![popup-item](DropDownMenuItem_images/DropDownMenuItem_img3.png)
+ ![Setting icon scrollbar visibility in WPF Dropdown Button](DropDownMenuItem_images/DropDownMenuItem_img3.png)
 
 ## Resizing dropdown menu
 
@@ -221,7 +221,7 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 {% endhighlight %}
 {% endtabs %}
 
-![Resizing](Resizing-Support_images/Resizing-Support_img1.png)
+![Resizing dropdown menu in WPF Dropdown Button](Resizing-Support_images/Resizing-Support_img1.png)
 
 ## Checkable dropdown menu items
 
@@ -258,7 +258,7 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 {% endhighlight %}
 {% endtabs %}
 
-![popup-item](DropDownMenuItem_images/DropDownMenuItem_img4.png)
+![Checkable dropdown menu items in WPF Dropdown Button](DropDownMenuItem_images/DropDownMenuItem_img4.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Customize-Menu-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items icon bar in dropdown button control.
 
@@ -336,7 +336,7 @@ namespace Dropdown_Button_Custom_Items
 {% endhighlight %}
 {% endtabs %}
 
-![More-item1](Moreitems_images/More_item_img1.png)
+![Adding custom dropdown menu items in WPF Dropdown Button](Moreitems_images/More_item_img1.png)
 
 ## Setting icon bar visibility for custom dropdown menu items
 
@@ -409,6 +409,6 @@ public class ColorViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![More-item](Moreitems_images/More_item_img2.png)
+![Setting icon bar visibility for custom dropdown menu items](Moreitems_images/More_item_img2.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Add-Custom-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items icon bar in dropdown button control.
