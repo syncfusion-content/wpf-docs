@@ -456,7 +456,7 @@ dataGrid.ShowPrintPreview();
 
 ### Setup columns to be printed
 
-WPF DataGrid (SfDataGrid) allows you to exclude the columns while printing the grid. You can change the column list by overriding the [GetColumnNames](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetColumnNames) method in [PrintManagerBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) class.
+WPF DataGrid (SfDataGrid) allows you to exclude the columns while printing the grid. You can change the column list by overriding the [GetColumnNames](cc) method in [PrintManagerBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) class.
 
 {% tabs %}
 {% highlight c# %}
