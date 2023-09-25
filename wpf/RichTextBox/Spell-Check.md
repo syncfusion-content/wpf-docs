@@ -102,5 +102,21 @@ The following code example demonstrates how to enable spell checking based on la
 {% endhighlight %}
 
 {% endtabs %}
+
+## Spelling Pane
+
+The SfRichTextBoxAdv provides built-in spelling pane support for checking spelling mistakes and rectifying error words, similar to the Microsoft Word application.
+The following code example demonstrates how to show the spelling pane in SfRichTextBoxAdv through command binding.
+{% tabs %}
+{% highlight xaml %}
+<!-- Binding Button to UI Command that shows the spelling pane  -->
+<Button Content="Show Spelling Pane" Command="RichTextBoxAdv:SfRichTextBoxAdv. ShowSpellingPaneCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
+
+
+{% endhighlight %}
+
+{% endtabs %}
+![WPF RichTextBox displays spellcheck option](SpellCheck_images/wpf-richtextbox-spellcheck-option.PNG)
+
 N> In order to enable spell checking functionality based on particular language, language pack for .NET Framework should be installed in the machine.
 You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.
