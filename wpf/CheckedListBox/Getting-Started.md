@@ -16,7 +16,7 @@ This section explains how to display and select the required items using the [WP
 ![CheckListBox Control structure](Getting-Started_images/Control_Structure_GS.png)
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#checklistbox) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
 
 Further information on installing the NuGet package can be found in the following link: [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages).
 

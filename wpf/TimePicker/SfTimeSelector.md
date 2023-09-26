@@ -9,7 +9,7 @@ documentation: ug
 
 # Time Selector in WPF TimePicker (SfTimePicker)
 
-The [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) is a sub-control of [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) which opens inside the drop-down popup and used to select the time for the `SfTimePicker`. It contains the hour, minutes and meridiem selection cells for select the time. The selected time of the `SfTimeSelector` is assigned to the [SfTimePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) property. 
+The [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) is a sub-control of [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) which opens inside the drop-down popup and used to select the time for the `SfTimePicker`. It contains the hour, minutes and meridiem selection cells for select the time. The selected time of the `SfTimeSelector` is assigned to the [SfTimePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) property. 
 
 ![SfTimeSelector](Features_images/Features_img3.png)
 
