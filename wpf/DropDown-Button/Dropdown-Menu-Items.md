@@ -409,6 +409,6 @@ public class ColorViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Setting icon bar visibility for custom dropdown menu items](Moreitems_images/More_item_img2.png)
+![Setting icon bar visibility for custom dropdown menu items in WPF Dropdown Button](Moreitems_images/More_item_img2.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Add-Custom-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items icon bar in dropdown button control.
