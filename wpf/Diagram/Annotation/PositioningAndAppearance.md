@@ -169,7 +169,7 @@ Annotations of a connector can be positioned using the following properties of `
 
 ### Alignment
 
-Connector's annotation can be aligned over its segment path using the [`Alignment`]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Alignment)) property of `AnnotationEditorViewModel` class. Default value is Center.
+Connector's annotation can be aligned over its segment path using the [`Alignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Alignment) property of `AnnotationEditorViewModel` class. Default value is Center.
 
 {% tabs %}
 {% highlight xaml %}

@@ -119,7 +119,7 @@ The [`Constraint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 
 Diagram supports the deferred scrolling behaviour to improve the zoom and pan performances.
 
-To learn more about deferred scrolling, refer to [Deferred Scrolling](/wpf/diagram/virtualization#deferred-scrolling "DeferredScrolling").
+To learn more about deferred scrolling, refer to [Deferred Scrolling](https://help.syncfusion.com/wpf/diagram/virtualization#deferred-scrolling).
 
 ## Event
 

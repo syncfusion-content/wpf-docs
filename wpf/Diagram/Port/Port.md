@@ -464,7 +464,7 @@ For more information , refer to [ConnectionDirection](https://help.syncfusion.co
 
 * The shape of the port can be changed by using its [`shape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_Shape) property. The shape can be any [Built-In Shapes](https://help.syncfusion.com/wpf/diagram/shapes) or any custom geometric path.
 
-* The appearance of ports can be customized by using the [`ShapeStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_ShapeSty) property of the port.
+* The appearance of ports can be customized by using the [`ShapeStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_ShapeStyle) property of the port.
 
 * Customize the port size by using the [`UnitWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_UnitWidth) and [`UnitHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_UnitHeight) properties of port.
 

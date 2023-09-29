@@ -204,7 +204,7 @@ N> You can edit the header by double-clicking the region of the container's head
 
 Container Nodes can be predefined and added to the stencil. You can drop those Containers into Diagram when required.
 
-To explore how to add Containers from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
+To explore how to add Containers from stencil, refer to [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil).
 
 ## Interactively add or remove diagram elements into Container
 
