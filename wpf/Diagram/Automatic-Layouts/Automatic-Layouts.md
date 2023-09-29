@@ -273,7 +273,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ## Customize tree orientation in layout
 
-[`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_Orientation) of `DirectedTreeLayout` is used to arrange the tree layout based on the direction. Orientation is only valid for hierarchical and organization layout. The default value for orientation is TopToBottom. The different orientation types are defined in the following table:
+[`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_Orientation) of [`DirectedTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html) is used to arrange the tree layout based on the direction. Orientation is only valid for hierarchical and organization layout. The default value for orientation is TopToBottom. The different orientation types are defined in the following table:
 
 | Orientation Type | Description |
 |---|---|---|
@@ -299,7 +299,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ![Customizing Tree Orientation in WPF Diagram](Automatic-Layouts_images/wpf-diagram-tree-orientation.png)
 
->N `Orientation` is not valid for `RadialTreeLayout`.
+>N `Orientation` is not valid for [`RadialTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout.html).
 
 ## Avoiding connector segment overlapping in layout
 
