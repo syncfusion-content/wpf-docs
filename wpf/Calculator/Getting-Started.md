@@ -30,7 +30,7 @@ Below section provides detailed information to create new project in Visual Stud
 
 The [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
 
-![wpf SfCalculator control added by designer](Getting-Started_images/wpf-sfcalculator-control-added-by-designer.png)
+![WPF Calculator control added by designer](getting-started_images/wpf-calculator-added-by-designer.png)
 
 ## Add control manually in XAML
 
@@ -101,7 +101,7 @@ namespace SfCalculatorSample
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![wpf SfCalculator control added by code](Getting-Started_images/wpf-sfcalculator-control-added-manually.png)
+![WPF Calculator control added by code](getting-started_images/wpf-calculator-added-by-code.png)
 
 ## Setting watermark
 You can set watermark for [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control using [DefaultText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html#Syncfusion_Windows_Controls_Input_SfCalculator_DisplayText) property.
@@ -123,7 +123,7 @@ SfCalculator sfCalculator = new SfCalculator()
 {% endhighlight %}
 {% endtabs %}
 
-![WaterMark for SfCalculator](Getting-Started_images/GettingStarted_img1.png)
+![Setting WaterMark for Calculator in WPF application](getting-started_images/wpf-calculator-setting-watermark.png)
 
 ## Setting value 
 
@@ -144,7 +144,7 @@ sfCalculator.DefaultValue = 30;
 {% endhighlight %}
 {% endtabs %}
 
-![WaterMark for SfCalculator](Getting-Started_images/GettingStarted_img2.png)
+![Setting values in WPF Calculator](getting-started_images/wpf-calculator-setting-values.png)
 
 ## Theme
 
@@ -154,4 +154,4 @@ The WPF Calculator (SfCalculator) supports various built-in themes. Refer to the
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfCalculator](Getting-Started_images/wpf-sfcalculator-control-theme.png)
+  ![Setting theme to WPF Calculator](getting-started_images/wpf-calculator-theme.png)
