@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF Double TextBox Overview
 
-The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control restricts input to double values with support for data binding, watermark, null value and support for culture. It provides various customization options to improve its appearance and suit an applications.
+The [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control restricts input to double values with support for data binding, watermark, null value and support for culture. It provides various customization options to improve its appearance and suit an applications.
 
 ## Control structure
 
