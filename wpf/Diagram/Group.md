@@ -58,7 +58,7 @@ diagram.Groups = groups;
 
 Group Nodes can be predefined and added to stencil. You can drop those Groups into Diagram, when required. 
 
-To explore how to add Groups from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
+To explore how to add Groups from stencil, refer to [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil).
 
 ## Interaction
 

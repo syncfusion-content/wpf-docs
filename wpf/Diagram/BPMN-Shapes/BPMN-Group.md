@@ -14,7 +14,7 @@ A group may control the flow of a process and describe shared goals. A group is 
 
 ## Create BPMN Group
 
-To create a [BpmnGroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html), you have to define the BpmnGroupViewModel object and add that to groups collection of the Diagram.
+To create a [`BpmnGroupViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html), you have to define the BpmnGroupViewModel object and add that to groups collection of the Diagram.
 
 The following code example explains how to create a BPMN group.
 
@@ -55,7 +55,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ## Add BPMNNode into BPMNGroup by Programmatically
 
-To add a [BpmnNodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) into the BPMNGroup, you have to define the BpmnNodeViewModel object and add that to the nodes collection of the BPMNGroup.
+To add a [`BpmnNodeViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) into the BPMNGroup, you have to define the BpmnNodeViewModel object and add that to the nodes collection of the BPMNGroup.
 
 The following code example explains how to create a BPMN group.
 

@@ -14,7 +14,7 @@ To learn about annotation constraints, refer to the [Annotation Constraints](htt
 
 ## Rotating the annotation
 
-Rotation of annotation can be enabled by using the `Constraints` property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Rotatable`.
+Rotation of annotation can be enabled by using the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Constraints) property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Rotatable`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -46,7 +46,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ## How to customize the annotation rotation
 
- The `RotationReference` property of the annotation is to define the rotation based on Page or its host node or connector.To learn about the Rotate Reference property, refer to the [RotationReference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
+ The [`RotationReference`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_RotationReference) property of the annotation is to define the rotation based on Page or its host node or connector.To learn about the Rotate Reference property, refer to the [RotationReference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
 
 {% tabs %}
 {% highlight xaml %}

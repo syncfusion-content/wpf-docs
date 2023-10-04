@@ -40,8 +40,8 @@ diagram.Constraints |= GraphConstraints.AutomaticPortCreation;
 
  Diagram provides the support to drag the port interactively within the limit.
 
-* For `NodePort` and `DockPort`, port can be dragged within the node bounds.
-* For `ConnectorPort`, port can be dragged anywhere on the connector.
+* For [`NodePort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html) and [`DockPort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPort.html), port can be dragged within the node bounds.
+* For [`ConnectorPort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorPort.html), port can be dragged anywhere on the connector.
  
  ![WPF Diagram Port Dragging](Port_images/wpf-port-dragging.gif)
 
