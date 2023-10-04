@@ -19,6 +19,6 @@ By default, the diagram displays the tooltip at a static position during an inte
 
 ## Dynamic Tooltip
 
-Diagram control displays the tooltip at a dynamic position when the `SelectorHandleDisplayMode` is set as `Compact`. When resizing a diagram element, the tooltip is positioned closer to the resizer thumbs, and when dragging, the tooltip is positioned automatically in the nearest available viewport area around that diagram element. The following image illustrates how the dynamic tooltip works.
+Diagram control displays the tooltip at a dynamic position when the [`SelectorHandleDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorHandleDisplayMode.html) is set as `Compact`. When resizing a diagram element, the tooltip is positioned closer to the resizer thumbs, and when dragging, the tooltip is positioned automatically in the nearest available viewport area around that diagram element. The following image illustrates how the dynamic tooltip works.
 
 ![Dynamic Tooltip](Interaction_images/DynamicTooltip.gif)
