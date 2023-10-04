@@ -71,7 +71,7 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 
 ## How to change the snap indication style
 
-When snapping, cyan shade color indication lines will be shown. These indication lines styles can be customized by using the `SnapIndicatorStyle` property of SnapSettings class.
+When snapping, cyan shade color indication lines will be shown. These indication lines styles can be customized by using the [`SnapIndicatorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapIndicatorStyle) property of SnapSettings class.
 
 {% tabs %}
 {% highlight xaml %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # SelectTool Command in WPF Diagram (SfDiagram)
 
-The [SelectTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SelectTool) command of the diagram helps to change the [DrawingTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool) and [Tool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) properties to a specified value. The [SelectToolCommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectToolCommandParameter.html) of `SelectTool` command is used to represent a specific tool.
+The [`SelectTool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SelectTool) command of the diagram helps to change the [DrawingTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool) and [Tool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) properties to a specified value. The [SelectToolCommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectToolCommandParameter.html) of `SelectTool` command is used to represent a specific tool.
 
 | Property | Description |
 |---|---|

@@ -11,9 +11,9 @@ documentation: ug
 
 By default, Diagram's page size is decided based on the position of diagramming elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html ) property of SfDiagram. 
 
-* The `PageWidth` and `PageHeight` properties of `PageSettings` define the size of the page. 
-* The `PageOrientation` property of `PageSettings` used to change the page orientation to portrait or landscape.
-* Page breaks are used as a visual guide to see how the pages split into multiple pages. The `ShowPageBreaks` property decides the Visibility of Page breaks.
+* The [`PageWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageWidth) and [`PageHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageHeight) properties of `PageSettings` define the size of the page. 
+* The [`PageOrientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageOrientation) property of `PageSettings` used to change the page orientation to portrait or landscape.
+* Page breaks are used as a visual guide to see how the pages split into multiple pages. The [`ShowPageBreaks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_ShowPageBreaks) property decides the Visibility of Page breaks.
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,7 +51,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to enable the multiple page
 
-Based on the diagramming element position, the size of the page dynamically increases or decreases in multiples of page width and height using the `MultiplePage` property of PageSettings.
+Based on the diagramming element position, the size of the page dynamically increases or decreases in multiples of page width and height using the [`MultiplePage`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_MultiplePage) property of PageSettings.
 
 {% tabs %}
 {% highlight xaml %}
@@ -131,7 +131,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to change the margin around the pages
 
-The area between the main content of a page and the page edges can be changed by using the `PrintMargin` property. Default value is 24.
+The area between the main content of a page and the page edges can be changed by using the [`PrintMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PrintMargin) property. Default value is 24.
 
 {% tabs %}
 {% highlight xaml %}
@@ -164,7 +164,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to change the unit of the page
 
-The measurement units of the page can be changed by using the `Unit` property of `PageSettings` class. Default unit value is Pixels.
+The measurement units of the page can be changed by using the [`Unit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_Unit) property of `PageSettings` class. Default unit value is Pixels.
 
 {% tabs %}
 {% highlight xaml %}
@@ -199,7 +199,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to change the scaling of Page
 
-The `PrintScale` property of `PageSettings` class allows you to reduce or enlarge the diagram page to fit into specific area when you print it. The default scaling of the page will be 1 (i.e 100%).
+The [`PrintScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PrintScale) property of `PageSettings` class allows you to reduce or enlarge the diagram page to fit into specific area when you print it. The default scaling of the page will be 1 (i.e 100%).
 
 {% tabs %}
 {% highlight xaml %}
@@ -233,7 +233,7 @@ diagram.PageSettings = new PageSettings()
 {% endhighlight %}
 {% endtabs %}
 
-You can restrict the diagram page scaling to minimum and maximum values by using the `MinimumPrintScale` and `MaximumPrintScale` properties.
+You can restrict the diagram page scaling to minimum and maximum values by using the [`MinimumPrintScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_MinimumPrintScale) and [`MaximumPrintScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_MaximumPrintScale) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -273,7 +273,7 @@ diagram.PageSettings = new PageSettings()
 
 By default, origin of the diagram page will be at (0,0). A virtual method `AdjustPageOrigin` of PageSettings class is used to customize the origin of the page based on the page size (`PageWidth` and `PageHeight`) and diagram elements position, which in turn helps to reduce the number of pages being printed.
 
-The `AdjustPageOrigin` method contains the `Info` property in its argument, and also have the following properties and methods:
+The `AdjustPageOrigin` method contains the [`Info`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_Info) property in its argument, and also have the following properties and methods:
 
 | Properties/Methods | Description | Output |
 |---|---|---|
