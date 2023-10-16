@@ -35,7 +35,7 @@ N> From the version 19.3, The `HyperLinkClickedEventArgs` is renamed to [Hyperli
 
 ## How to disable hyperlink navigation in PDF viewer control
 
-You can disable the hyperlink navigation in PDF viewer control by setting the value of [Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_PdfViewer_HyperlinkClickedEventArgs_Handled) in the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs.html) parameter as true in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) event which is available in the PdfViewerControl and PdfDocumentView class. 
+You can disable the hyperlink navigation in PDF viewer control by setting the value of [Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_PdfViewer_HyperlinkClickedEventArgs_Handled) in the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs.html) parameter as true in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkClicked) event which is available in the PdfViewerControl and PdfDocumentView class. 
 Please refer to the following example for more details.
 
 N> From the version 19.3, we have introduced [Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_PdfViewer_HyperlinkClickedEventArgs_Handled) property in the event arguments to disable the hyperlink navigation based on the standards. You need to change its value to `true` to disable the navigation.
@@ -77,7 +77,7 @@ RemoveHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkCl
 
 ## How to retrieve the clicked URI from PDF viewer
 
-You can acquire the details of the hyperlink, which is clicked in the PDF file using the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs.html) in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) event. 
+You can acquire the details of the hyperlink, which is clicked in the PDF file using the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs.html) in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkClicked) event. 
 Please refer to the following example for more details.
 
 {% tabs %}
