@@ -134,7 +134,7 @@ You can customize the appearance of the ToolTip for particular column by setting
 ![Customizing ToolTip using ToolTipTemplate in WPF DataGrid](Interactive-Features_images/wpf-datagrid-tooltip-customization.png)
 
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSample-904850425.zip). 
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSample-904850425.zip). 
 
 ### Customize the ToolTip with ToolTipTemplateSelector
 
@@ -234,13 +234,13 @@ The below image refers the `AlternateTemplate` which is applied through `ToolTip
 
 ![Displaying AlternateTemplate for ToolTip in WPF DataGrid](Interactive-Features_images/wpf-datagrid-alternate-template-tooltip.png)
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IEnumerableBinding_Demo-1708191985.zip).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/IEnumerableBinding_Demo-1708191985.zip).
 
 ## Events
 
 ### CellToolTipOpening event
 
-The [CellToolTipOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when any tooltip of the cell is opened. The `CellToolTipOpening` event receives the [GridCellToolTipOpeningEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCellToolTipOpeningEventArgs.html) as argument which has the following properties:
+The [CellToolTipOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellToolTipOpening) event occurs when any tooltip of the cell is opened. The `CellToolTipOpening` event receives the [GridCellToolTipOpeningEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCellToolTipOpeningEventArgs.html) as argument which has the following properties:
 
 <ul>
 <li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Column">Column :</a> Gets the hovered cell column in the SfTreeGrid.</li>
