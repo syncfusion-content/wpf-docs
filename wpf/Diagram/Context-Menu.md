@@ -35,11 +35,11 @@ Diagram provides some default context menu items to ease the execution of some f
 
 * Apart from the default ContextMenu items, you can define some additional menu items by using `Menu` property of SfDiagram, Node and Connector. Those additional items have to be defined and added to `MenuItems` Property. 
 
-* The Content property allows you to set Content for the context menu item.
+* The `Content` property allows you to set Content for the context menu item.
 
-* The Icon property allows you to set icon for the context menu item.
+* The `Icon` property allows you to set icon for the context menu item.
 
-* The Command property of the Context menu item allows you to define command for it.
+* The `Command` property of the Context menu item allows you to define command for it.
 
 * The `IsSeparator` property defines the horizontal lines that are used to separate the menu items. You cannot select the separators. You can enable separators to group the menu items using the `IsSeparator` property.
 

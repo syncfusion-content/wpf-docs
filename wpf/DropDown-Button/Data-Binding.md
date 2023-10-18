@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Dropdown Button (DropDownButtonAdv)
 
-Data binding provides an easier way to assign, visualize and interact with the collection of predefined data. The data binding can be achieved by populating the [DropDownMenuGroup.ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_ItemsSource) property.
+Data binding provides an easier way to assign, visualize and interact with the collection of predefined data. The data binding can be achieved by populating the [DropDownMenuGroup.ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_ItemsSource) property.
 
 ## Creating model
 
@@ -100,7 +100,7 @@ public class CountryViewModel
 
 ## Bind data from view model
 
-Bind the list of menu items to [DropDownMenuGroup.ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_ItemsSource) property of [DropDownMenuGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html) and also set the `DataContext` with ViewModel instance. For example, `CountryViewModel` instance has been set as DataContext.
+Bind the list of menu items to [DropDownMenuGroup.ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_ItemsSource) property of [DropDownMenuGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html) and also set the `DataContext` with ViewModel instance. For example, `CountryViewModel` instance has been set as DataContext.
 
 {% tabs %}
 {% highlight xaml %}

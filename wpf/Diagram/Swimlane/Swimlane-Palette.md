@@ -46,7 +46,7 @@ Diagram elements such as [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI
 
 ## Add Swimlane shapes to palette using the category
 
-You can add the swimlane shapes using the category. For more information, refer to the [Symbol categories](/wpf/sfdiagram/stencil#symbol-categories "Symbol categories"). 
+You can add the swimlane shapes using the category. For more information, refer to the [Symbol categories](https://help.syncfusion.com/wpf/diagram/stencil/symbolgroup#symbol-categories). 
 
 ## Interactions
 

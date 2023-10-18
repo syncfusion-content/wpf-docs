@@ -9,9 +9,9 @@ documentation: ug
 
 # Symbol filtering of Stencil in WPF Diagram (SfDiagram)
 
-The grouped symbols can be filtered or hidden using the [SymbolFilters](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilters). The `SymbolFilters` are a collection of [SymbolFilterProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html), which contains the [SymbolFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_SymbolFilter) delegate property to filter the specific symbol group.
+The grouped symbols can be filtered or hidden using the [SymbolFilters](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilters). The `SymbolFilters` are a collection of [SymbolFilterProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html), which contains the [`SymbolFilter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_SymbolFilter) delegate property to filter the specific symbol group.
 
-The [Content](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_Content) and [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_ContentTemplate) property of the `SymbolFilterProvider` is used to update the content of the symbol filter.
+The [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_Content) and [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_ContentTemplate) property of the `SymbolFilterProvider` is used to update the content of the symbol filter.
 
 The following code explains how to create a symbol filter in the stencil.
 
@@ -172,14 +172,14 @@ public class StencilVM : INotifyPropertyChanged
 
 ## Appearance of symbol filters
 
-The visual appearance of the symbol filters can be customized to either a combo box or list view. The [SymbolFilterDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilterDisplayMode) property of the `Stencil` is used to customize the appearance of the symbol filter.
+The visual appearance of the symbol filters can be customized to either a combo box or list view. The [`SymbolFilterDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilterDisplayMode) property of the `Stencil` is used to customize the appearance of the symbol filter.
 
 |SymbolFilterDisplayMode|Description|
 |----------|-----------|
 | ComboBox | The symbol filter is visually represented in a combo box |
 | List | The symbol filter is visually represented in a list view |
 
-In `List` display mode, the filters will be added in the list view only when you set the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the `SymbolFilterProvider` to `true`. By clicking the **more shapes** option, you can dynamically add or remove the filter from the list view and checked or unchecked the filter to add or remove it from the list view. Check marks indicate the filters added to the list.
+In `List` display mode, the filters will be added in the list view only when you set the [`IsChecked`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the `SymbolFilterProvider` to `true`. By clicking the **more shapes** option, you can dynamically add or remove the filter from the list view and checked or unchecked the filter to add or remove it from the list view. Check marks indicate the filters added to the list.
 
 ### SelectedFilter
 

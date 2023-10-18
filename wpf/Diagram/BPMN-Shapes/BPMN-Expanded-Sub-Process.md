@@ -15,7 +15,7 @@ ExpandedSubProcess is the extended version of Group.
 
 ## Create BPMN ExpandedSubProcess
 
-To create a ExpandedSubProcess, you have to define the BpmnGroupViewModel object and enable the [IsExpandedSubProcess](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsExpandedSubProcess) property and add that to the groups collection of the diagram .
+To create a ExpandedSubProcess, you have to define the BpmnGroupViewModel object and enable the [`IsExpandedSubProcess`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsExpandedSubProcess) property and add that to the groups collection of the diagram .
 
 The following code example explains how to create a BPMN group.
 

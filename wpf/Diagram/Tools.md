@@ -28,7 +28,7 @@ As all the three behaviors are completely different, You can achieve only one be
 | SingleSelect | Allows you to select individual or Connectors. |
 | None | Disables all tools. |
 
-You can set the desired tool to the [Tool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) property of the Diagram. The following code illustrates how to enable single/multiple tools.
+You can set the desired tool to the [`Tool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) property of the Diagram. The following code illustrates how to enable single/multiple tools.
 
 {% tabs %}
 {% highlight C# %}
