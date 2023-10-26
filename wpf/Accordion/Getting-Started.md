@@ -136,7 +136,7 @@ this.Content = accordion;
 
 ## Bind data
 
-SfAccordion accepts any business object collection to be bound using its [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
+SfAccordion accepts any business object collection to be bound using its [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
 
 * **Model.cs**
 
@@ -265,7 +265,7 @@ SfAccordion provides the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syn
 
 ## Set content to children
 
-You can set content to SfAccordionItem using the [Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?view=netframework-4.7.2) property of SfAccordion.
+You can set content to SfAccordionItem using the [Content](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?view=netframework-4.7.2) property of SfAccordion.
 
 {% tabs %}
 {% highlight XAML %}

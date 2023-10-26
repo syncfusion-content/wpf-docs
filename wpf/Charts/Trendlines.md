@@ -788,4 +788,4 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`Chart with average line`](https://www.syncfusion.com/kb/2558/chart-with-average-line)
+[`Chart with average line`](https://support.syncfusion.com/kb/article/2804/how-to-get-line-graph-average-for-wpf-chart-sfchart)

@@ -168,7 +168,7 @@ class ViewModel : NotificationObject
 
 ## Value Changed Notification
 
-The `IntegerTextBox` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
+The `IntegerTextBox` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ValueChanged) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
 
 {%tabs%}
 {% highlight xaml %} 
