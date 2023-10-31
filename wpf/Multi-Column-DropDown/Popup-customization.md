@@ -91,7 +91,7 @@ SfMultiColumnDropDownControl provides the following events for popup customizati
  
 ### PopupClosing event
 
-[PopupClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when the popup is closing. You can use this event to skip the popup closing and [PopupClosingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupClosingEventArgs.html) provides data for `PopupClosing` event. You can skip the popup closing by setting `args.Cancel` as true.
+[PopupClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupClosing) event is fired when the popup is closing. You can use this event to skip the popup closing and [PopupClosingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupClosingEventArgs.html) provides data for `PopupClosing` event. You can skip the popup closing by setting `args.Cancel` as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -105,7 +105,7 @@ void sfMultiColumn_PopupClosing(object sender, PopupClosingEventArgs args)
 
 ### PopupClosed event
 
-[PopupClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when the popup is closed. [PopupClosedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupClosedEventArgs.html) provides data for `PopupClosed` event
+[PopupClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupClosed) event is fired when the popup is closed. [PopupClosedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupClosedEventArgs.html) provides data for `PopupClosed` event
 
 {% tabs %}
 {% highlight c# %}
@@ -119,7 +119,7 @@ void sfMultiColumn_PopupClosed(object sender, PopupClosedEventArgs args)
 
 ### PopupOpening event
 
-[PopupOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when the popup is opening. You can use this event to skip the popup opening and [PopupOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupOpeningEventArgs.html) provides data for `PopupOpening` event. You can skip the popup opening by setting `args.Cancel` as true.
+[PopupOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupOpening) event is fired when the popup is opening. You can use this event to skip the popup opening and [PopupOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupOpeningEventArgs.html) provides data for `PopupOpening` event. You can skip the popup opening by setting `args.Cancel` as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -133,7 +133,7 @@ void sfMultiColumn_PopupOpening(object sender, PopupOpeningEventArgs args)
 
 ### PopupOpened event
 
-[PopupOpened](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when the popup is opened. [PopupOpenedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupOpenedEventArgs.html) provides data for `PopupOpened` event
+[PopupOpened](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupOpened) event is fired when the popup is opened. [PopupOpenedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupOpenedEventArgs.html) provides data for `PopupOpened` event
 
 {% tabs %}
 {% highlight c# %}
