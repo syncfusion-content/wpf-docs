@@ -377,4 +377,4 @@ public class StencilViewModel : Stencil
 
 ## See also
 
-* [How to expand all SymbolGroups?](https://www.syncfusion.com/kb/5878/how-to-expand-all-symbolgroups)
+* [How to expand all SymbolGroups?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
