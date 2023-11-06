@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in WPF Charts control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
+title: Tooltip in WPF Charts Control | Syncfusion
+description: Learn here all about tooltip support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -10,11 +10,11 @@ documentation: ug
 
 # Tooltip in WPF Charts (SfChart)
 
-The Tooltip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer or at the data point position. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
+The Tooltip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html). It is used in conjunction with the pointer or at the data point position. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 
 ## Define Tooltip
 
-By default, a small box containing the data points y values are displayed as the Tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in the Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#), high, low, open, and close values are displayed in Tooltip.
+By default, a small box containing the data points y values are displayed as the Tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html). For example, a single y value is usually displayed in the Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html), high, low, open, and close values are displayed in Tooltip.
 
 The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as in the below code snippet.
 
@@ -71,7 +71,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip support in WPF Chart](Interactive-Features_images/Interactive-Features_image1.png)
+![Tooltip support in WPF Chart](Interactive-Features_images/wpf-chart-tooltip-defination.png)
 
 ## Customizing tooltip using ChartTooltipBehavior
 
@@ -146,7 +146,7 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip at pointer position in WPF Chart](Interactive-Features_images/Interactive-Features_image2.png)
+![Tooltip at pointer position in WPF Chart](Interactive-Features_images/wpf-chart-tooltip-pointer.png)
 
 ### Customizing the tooltip background
 
@@ -187,7 +187,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip background style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image3.png)
+![Tooltip background style customization in WPF Chart](Interactive-Features_images/wpf-chart-tooltip-background-style.png)
 
 ### Customizing the tooltip label style
 
@@ -228,7 +228,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip label style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image4.png)
+![Tooltip label style customization in WPF Chart](Interactive-Features_images/wpf-chart-tooltip-label-style.png)
 
 ## Customizing tooltip using ChartTooltip attached properties
 
@@ -298,7 +298,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Chart](Interactive-Features_images/Interactive-Features_image5.png)
+![Tooltip alignment support in WPF Chart](Interactive-Features_images/wpf-chart-tooltip-alignment.png)
 
 N> By default the horizontal alignment is center for the tooltip.
 
@@ -364,7 +364,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_image6.png)
+![Tooltip alignment support in WPF Chart](Interactive-Features_images/wpf-chart-tooltip-alignment-support.png)
 
 **TooltipMargin**
 
@@ -440,7 +440,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_image7.png)
+![Margin for tooltip in WPF Chart](Interactive-Features_images/wpf-chart-tooltip-margin.png)
 
 N>By default, the VerticalAlignment of the Tooltip is Top.
 
@@ -524,7 +524,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_image8.png)
+![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/wpf-chart-tooltip-offset.png)
 
 ### Tooltip duration
 
@@ -781,18 +781,18 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 
 {% endtabs %}
 
-![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_image9.png)
+![Tooltip customization support in WPF Chart](Interactive-Features_images/wpf-chart-tooltip-appearance-customization.png)
 
 N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
 
 ## See also
 
-[`How to display the tooltip when the mouse is in any region of the FastLineBitmapSeries in WPF Chart `](https://www.syncfusion.com/kb/10921/how-to-display-the-tooltip-when-the-mouse-is-in-any-region-of-the-fastlinebitmapseries-in)
+[`How to display the tooltip when the mouse is in any region of the FastLineBitmapSeries in WPF Chart `](https://support.syncfusion.com/kb/article/9517/how-to-display-the-tooltip-when-the-mouse-is-in-any-region-of-the-fastlinebitmapseries-in)
 
- [`How to customize the tooltip in chart `](https://www.syncfusion.com/kb/10723/how-to-customize-the-tooltip-in-chart)
+ [`How to customize the tooltip in chart `](https://support.syncfusion.com/kb/article/9351/how-to-customize-the-tooltip-in-chart)
 
 [`How to set the duration for chart tooltip`](https://www.syncfusion.com/kb/5474/how-to-set-the-duration-for-chart-tooltip)
 
-[`How to make the tooltip to display x and y values together or any other value from the underlying model`](https://www.syncfusion.com/kb/5231/how-to-make-the-tooltip-to-display-x-and-y-values-together-or-any-other-value-from-the)
+[`How to make the tooltip to display x and y values together or any other value from the underlying model`](https://support.syncfusion.com/kb/article/5118/how-to-set-the-duration-for-wpf-chart-sfchart-tooltip)
 
-[`How to view the tooltip when segment is underneath the axis line`](https://www.syncfusion.com/kb/4722/how-to-view-the-tooltip-when-segment-is-underneath-the-axis-line)
+[`How to view the tooltip when segment is underneath the axis line`](https://support.syncfusion.com/kb/article/4467/how-to-show-tooltip-when-segment-is-underneath-axis-line-of-wpf-chart-sfchart)
