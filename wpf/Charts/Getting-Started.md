@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WPF Charts control | Syncfusion
+title: Getting Started with WPF Charts Control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Charts (SfChart) control, its elements and more.
 platform: wpf
 control: SfChart
@@ -94,7 +94,7 @@ chart.SecondaryAxis = secondaryAxis
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html).
 
-![WPF Chart](Getting-Started_images/wpf-chart.png)
+![WPF Chart](Getting-Started_images/wpf-chart-initial.png)
 
 N> [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly.
 

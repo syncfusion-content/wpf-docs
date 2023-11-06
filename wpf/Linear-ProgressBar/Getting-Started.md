@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Getting started with WPF Linear ProgressBar control | Syncfusion
-description: Learn here about getting started with the Syncfusion WPF Linear ProgressBar control and more details.
+title: Getting Started with WPF Linear ProgressBar Control | Syncfusion
+description: Learn here all about getting started with the Syncfusion WPF Linear ProgressBar control, it's elements and more details.
 platform: WPF
 control: SfLinearProgressBar
 documentation: ug
 ---
 
-# Creating a simple application with Linear ProgressBar
-
+# Getting started with WPF Linear ProgressBar Control
 You can create a WPF application with the SfLinearProgressBar control using the following steps:
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
 You can find more details about installing the NuGet package in a WPF application in the following link: [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
@@ -23,7 +22,7 @@ The SfLinearProgressBar control can be added to a WPF application by dragging it
 
 * Syncfusion.SfProgressBar.WPF 
 
-![wpf SfLinearProgressBar control added through designer](Getting-Started_images/wpf-SfLinearProgressBar-control-added-through-designer.png)
+![wpf SfLinearProgressBar control added through designer](Getting-Started_images/wpf-linear-progressbar-control-added-through-designer.png)
 
 ## Adding control manually in XAML
 
@@ -66,7 +65,7 @@ To add control manually through code behind, follow the given steps:
     **using Syncfusion.UI.Xaml.ProgressBar;**
 3. Create an Linear Progressbar instance, and add it to the window.
 
-![WPF Linear ProgressBar control added through code](Getting-Started_images/wpf-SfLinearProgressBar-control-added-manually.png)
+![WPF Linear ProgressBar control added through code](Getting-Started_images/wpf-linear-progressbar-control-added-manually.png)
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -101,4 +100,4 @@ SfLinearProgressBar supports various built-in themes. Refer to the below links t
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF Linear ProgressBar](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF Linear ProgressBar](Getting-Started_images/wpf-linear-progressbar-theme.png)
