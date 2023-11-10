@@ -14,7 +14,7 @@ SfTreeGrid allows you to validate the data and display hints in case of validati
 
 ## Built-in validations
 
-Built-in validations through[IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0), [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) and Data annotation attributes, can be enabled by setting [SfTreeGrid.GridValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridValidationMode) or [TreeGridColumn.GridValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_GridValidationMode) properties. ` TreeGridColumn.GridValidationMode ` takes priority than ` SfTreeGrid.GridValidationMode`.
+Built-in validations through[IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0), [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) and Data annotation attributes, can be enabled by setting [SfTreeGrid.GridValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridValidationMode) or [TreeGridColumn.GridValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_GridValidationMode) properties. ` TreeGridColumn.GridValidationMode ` takes priority than ` SfTreeGrid.GridValidationMode`.
 
 * `GridValidation.InEdit` - display error icon & tips and doesn’t allows the users to commit the invalid data without allowing users to edit other cells.
 * `GridValidation.InView` - displays error icons and tips alone.
@@ -22,11 +22,11 @@ Built-in validations through[IDataErrorInfo](https://docs.microsoft.com/en-us/do
 
 ## Built-in validation using IDataErrorInfo / INotifyDataErrorInfo
 
-SfTreeGrid provides support to validate the data based on [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0)/[INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0).
+SfTreeGrid provides support to validate the data based on [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0)/[INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0).
 
 ### Using IDataErrorInfo 
 
-You can validate the data by inheriting the [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0) interface in model class.
+You can validate the data by inheriting the [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +86,7 @@ treeGrid.GridValidationMode = GridValidationMode.InView;
 ![Data Validation in WPF TreeGrid using IDataErrorInfo](Data-Validation_images/wpf-treegrid-data-validation.png)
 
 ### INotifyDataErrorInfo
-You can validate the data by implementing the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) interface in model class.
+You can validate the data by implementing the [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -147,7 +147,7 @@ You can validate the data using **data annotation attributes** by setting [SfTre
 
 **Using different annotations**
 
-The numeric type like int, double, decimal properties can be validated using [Range attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679261(v=vs.95)).
+The numeric type like int, double, decimal properties can be validated using [Range attributes](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679261(v=vs.95)).
 
 {% tabs %}
 {% highlight c# %}
@@ -171,7 +171,7 @@ public decimal Price
 {% endhighlight %}
 {% endtabs %}
 
-The string type property can be validated using [Required](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679203(v=vs.95)), [String Length attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679251(v=vs.95))
+The string type property can be validated using [Required](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679203(v=vs.95)), [String Length attributes](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679251(v=vs.95))
 
 {% tabs %}
 {% highlight c# %}
@@ -194,7 +194,7 @@ public string CustomerName
 }
 {% endhighlight %}
 {% endtabs %}
-The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679267(v=vs.95)).
+The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679267(v=vs.95)).
 
 {% tabs %}
 {% highlight c# %}
@@ -660,11 +660,11 @@ You can change the error tip background color by setting `Background` property o
 
 ### Showing error details in RowHeader
 
-SfTreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IDataErrorInfo_Error) or [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_INotifyDataErrorInfo_HasErrors) property.
+SfTreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IDataErrorInfo_Error) or [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_INotifyDataErrorInfo_HasErrors) property.
 
 #### Using IDataErrorInfo
 
-You can show the error information in row header by setting [IDataErrorInfo.Error](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IDataErrorInfo_Error). `IDataErrorInfo.Error` will be displayed as error message in tooltip.
+You can show the error information in row header by setting [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IDataErrorInfo_Error). `IDataErrorInfo.Error` will be displayed as error message in tooltip.
 
 {% tabs %}
 {% highlight c# %}
@@ -687,7 +687,7 @@ public string Error
 
 #### Using INotifyDataErrorInfo
 
-You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_INotifyDataErrorInfo_HasErrors). By default, error message “Row Containing Error” will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
+You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_INotifyDataErrorInfo_HasErrors). By default, error message “Row Containing Error” will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
 
 {% tabs %}
 {% highlight c# %}
