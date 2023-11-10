@@ -52,14 +52,14 @@ The following code example illustrates how to initialize the adornment.
 
 ## See also
 
-[`How to show different data marker based on the value in the WPF Chart`](https://www.syncfusion.com/kb/11001/how-to-show-different-data-marker-based-on-the-value-in-the-wpf-chart)
+[`How to show different data marker based on the value in the WPF Chart`](https://support.syncfusion.com/kb/article/9396/how-to-show-different-data-marker-based-on-the-value-in-the-wpf-chart?isInternalRefresh=False)
 
-[`How to show custom data marker in the WPF Chart`](https://www.syncfusion.com/kb/11000/how-to-show-custom-data-marker-in-the-wpf-chart)
+[`How to show custom data marker in the WPF Chart`](https://support.syncfusion.com/kb/article/9620/how-to-show-custom-data-marker-in-the-wpf-chart?isInternalRefresh=False)
 
-[`How to rotate text in adornment`](https://www.syncfusion.com/kb/2908/how-to-rotate-text-in-adornment)
+[`How to rotate text in adornment`](https://support.syncfusion.com/kb/article/3135/how-to-rotate-text-in-adornment-of-wpf-chart-sfchart?isInternalRefresh=False)
 
-[`How to display the labels inside segments`](https://www.syncfusion.com/kb/2580/how-to-display-the-labels-inside-segments)
+[`How to display the labels inside segments`](https://support.syncfusion.com/kb/article/2773/how-to-display-the-labels-inside-segments-in-wpf-chart-sfchart?isInternalRefresh=False)
 
-[`How to bind the underlying DataTable model to the DataMarker Template in WPF Charts`](https://www.syncfusion.com/kb/11603/how-to-bind-the-underlying-datatable-model-to-the-datamarker-template-in-wpf-charts)
+[`How to bind the underlying DataTable model to the DataMarker Template in WPF Charts`](https://support.syncfusion.com/kb/article/10047/how-to-bind-the-underlying-datatable-model-to-the-datamarker-template-in-wpf-charts?isInternalRefresh=False)
 
 
