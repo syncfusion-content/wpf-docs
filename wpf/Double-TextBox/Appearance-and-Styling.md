@@ -13,7 +13,7 @@ This section deals with the appearance of `DoubleTextBox` control and contains t
 
 ## Setting the Foreground
 
-The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `DoubleTextBox` control.
+The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `DoubleTextBox` control.
 
 ### Foreground for Positive Value
 
@@ -89,7 +89,7 @@ doubleTextBox.ZeroColor = Brushes.DarkGoldenrod;
 
 ## Setting the Background
 
-`DoubleTextBox` allows different brushes to fill the control. The [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netframework-4.8) property can be used to modify the control background color. The default color of `Background` is `White`.
+`DoubleTextBox` allows different brushes to fill the control. The [Background](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netframework-4.8) property can be used to modify the control background color. The default color of `Background` is `White`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -134,7 +134,7 @@ doubleTextBox.CornerRadius = new CornerRadius(5);
 
 ## Apply Background for Selection
 
-`DoubleTextBox` allows different brushes to highlight the selected text by setting the [SelectionBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionbrush?view=netframework-4.8) and [SelectionOpacity](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionopacity?view=netframework-4.8) properties. The `SelectionOpacity` property specifies the opacity of the `SelectionBrush`.
+`DoubleTextBox` allows different brushes to highlight the selected text by setting the [SelectionBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionbrush?view=netframework-4.8) and [SelectionOpacity](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionopacity?view=netframework-4.8) properties. The `SelectionOpacity` property specifies the opacity of the `SelectionBrush`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -157,7 +157,7 @@ doubleTextBox.SelectionOpacity = 0.3;
 
 ## Align Value
 
-`DoubleTextBox` allows to display the value from right or center or left side by setting the [TextAlignment](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock.textalignment?view=netframework-4.8) property to `Right` or `Left` or `Center`. The Default value of `TextAlignment` is `Left`.
+`DoubleTextBox` allows to display the value from right or center or left side by setting the [TextAlignment](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock.textalignment?view=netframework-4.8) property to `Right` or `Left` or `Center`. The Default value of `TextAlignment` is `Left`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -179,7 +179,7 @@ doubleTextBox.TextAlignment = TextAlignment.Center;
 
 ## Setting ToolTip
 
-`DoubleTextBox` provides support for ToolTip to display certain information when the mouse hovers on the `DoubleTextBox`. You can customize the tooltip information by setting the [ToolTip](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.tooltip?view=netframework-4.8) property.
+`DoubleTextBox` provides support for ToolTip to display certain information when the mouse hovers on the `DoubleTextBox`. You can customize the tooltip information by setting the [ToolTip](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.tooltip?view=netframework-4.8) property.
 
 {% tabs %}
 {% highlight XAML %}
