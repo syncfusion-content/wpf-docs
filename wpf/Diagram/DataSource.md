@@ -156,7 +156,7 @@ Diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-To learn more about the supported built-in layout, refer to the [Automatic Layouts](https://help.syncfusion.com/wpf/diagram/automatic-layouts) page.
+To learn more about the supported built-in layout, refer to the [Automatic Layouts](https://help.syncfusion.com/wpf/diagram/automatic-layouts/automatic-layouts) page.
 
 ### How to done Add, Remove, Reset and Move in DataSource
 
