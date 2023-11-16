@@ -44,7 +44,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	![Syncfusion WPF project configuration wizard](Template-Studio-Images/WPF-4.png)
 
-	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 6.0 and .NET 7.0 from the project type option in Visual Studio.
+	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0 and .NET 8.0 from the project type option in Visual Studio.
 
 5.	Click **Next** or navigate to the **Project type** tab, then select the desired Syncfusion WPF application type.
 
@@ -78,11 +78,13 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 10.	The Syncfusion WPF application is configured with the latest versions of Syncfusion WPF NuGet packages, complete with the appropriate namespaces and component 			render code for seamless integration of Syncfusion components.
 
-	N> The .Net 6.0 and .Net 7.0 option will be listed in  Select a framework version	 when only the .Net 6.0 and .Net 7.0 SDK setup has been installed.
+	N> The .Net 6.0, .Net 7.0 and .Net 8.0 option will be listed in  Select a framework version	 when only the .Net 6.0, .Net 7.0 and .Net 8.0 SDK setup has been installed.
 
 	> .NET 6.0 version is available from v19.4.0.38 and it support from Visual Studio 2022.
 
 	> .NET 7.0 version is available from v20.4.0.38 and it support from Visual Studio 2022.
+
+	> .NET 8.0 version is available from v23.2.4 and it support from Visual Studio 2022.
 
 11.	Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
 
