@@ -99,7 +99,7 @@ namespace DocumentContainerSample
 
 ## Add document windows
 
-The document container allows users add new framework elements such as button and text block to its container using the [Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.7.2) property. 
+The document container allows users add new framework elements such as button and text block to its container using the [Items](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.7.2) property. 
 
 {% tabs %}
 {% highlight XAML %}
