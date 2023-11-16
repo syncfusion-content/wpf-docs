@@ -44,7 +44,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	![Syncfusion WPF project configuration wizard](Template-Studio-Images/WPF-4.png)
 
-	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0 and .NET 8.0 from the project type option in Visual Studio.
+	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0, and .NET 8.0 from the project type option in Visual Studio.
 
 5.	Click **Next** or navigate to the **Project type** tab, then select the desired Syncfusion WPF application type.
 
@@ -78,7 +78,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 10.	The Syncfusion WPF application is configured with the latest versions of Syncfusion WPF NuGet packages, complete with the appropriate namespaces and component 			render code for seamless integration of Syncfusion components.
 
-	N> The .Net 6.0, .Net 7.0 and .Net 8.0 option will be listed in  Select a framework version	 when only the .Net 6.0, .Net 7.0 and .Net 8.0 SDK setup has been installed.
+	N> The .Net 6.0, .Net 7.0, and .Net 8.0 option will be listed in  Select a framework version	 when only the .Net 6.0, .Net 7.0, and .Net 8.0 SDK setup has been installed.
 
 	> .NET 6.0 version is available from v19.4.0.38 and it support from Visual Studio 2022.
 

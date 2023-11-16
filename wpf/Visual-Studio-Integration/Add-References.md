@@ -51,7 +51,7 @@ To add the Syncfusion assembly references in Visual Studio, follow the steps bel
    ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
 
 
-   N> The GAC option will not be available when you selected WPF (.NET Core 3.1, .NET 5.0, .NET 6.0, .NET 7.0 and .NET 8.0) application in Visual Studio 2019 or Visual Studio 2022. 
+   N> The GAC option will not be available when you selected WPF (.NET Core 3.1, .NET 5.0, .NET 6.0, .NET 7.0, and .NET 8.0) application in Visual Studio 2019 or Visual Studio 2022. 
 
    **Version:** To add the corresponding version assemblies to the project, select the build version.
 
