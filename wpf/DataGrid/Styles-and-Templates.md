@@ -458,7 +458,7 @@ You can change the gridline border as dotted line by customizing [GridCell.Borde
 
 ### Changing Grid line color
 
-You can also change the gridline color by setting [GridCell.BorderBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Windows.Controls.Control.BorderBrush)%26rd%3Dtrue) property.
+You can also change the gridline color by setting [GridCell.BorderBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Windows.Controls.Control.BorderBrush)&rd=true) property.
 
 {% tabs %}
 {% highlight xaml %}
