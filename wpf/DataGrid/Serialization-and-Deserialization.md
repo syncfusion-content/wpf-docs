@@ -181,7 +181,7 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
 
 ### Deserialize from Stream
 
-You can deserialize the SfDataGrid settings from [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-7.0) method.
+You can deserialize the SfDataGrid settings from [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-7.0)using [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_) method.
 
 {% tabs %}
 {% highlight c# %}
