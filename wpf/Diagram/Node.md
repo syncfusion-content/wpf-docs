@@ -96,7 +96,7 @@ Nodes can be generated automatically with the information provided through data 
 
 ### Draw nodes
 
-Nodes can be drawn interactively by clicking and dragging the Diagram surface by using the **Drawing Tool**. For more information about drawing nodes, refer to the [Draw Nodes](https://help.syncfusion.com/wpf/diagram/tools#shapes).
+Nodes can be drawn interactively by clicking and dragging the Diagram surface by using the [`Drawing Tool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DrawingTool.html). For more information about drawing nodes, refer to the [Draw Nodes](https://help.syncfusion.com/wpf/diagram/tools#shapes).
 
 ## Visualize a node
 
@@ -108,7 +108,7 @@ You can use text, image, controls, panels, or any UIElement or template to visua
    5)Built-in resource
 
 ### Using content template
-Node is a ContentControl, so you can use data template to display the content of the node using the ContentTemplate property. Refer to the following code example to define node's shape through ContentTemplate.
+Node is a ContentControl, so you can use data template to display the content of the node using the [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) property. Refer to the following code example to define node's shape through ContentTemplate.
 
 {% tabs %}
 {% highlight xaml %}
@@ -147,7 +147,7 @@ NodeViewModel node = new NodeViewModel()
 
 ### Using content
 
-Node is a ContentControl, so you can set text, image, or any UIElement as node content using the Content property. Refer to the following code example to define image as content of the node.
+Node is a ContentControl, so you can set text, image, or any UIElement as node content using the [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Content) property. Refer to the following code example to define image as content of the node.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ NodeViewModel node = new NodeViewModel()
 
 ### Using geometry
 
-The Shape property of the node class allows to visualize any geometry path as node's content. Refer to the following code example to define geometry for node's shape.
+The [`Shape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Shape) property of the node class allows to visualize any geometry path as node's content. Refer to the following code example to define geometry for node's shape.
 
 {% tabs %}
 {% highlight xaml %}
@@ -526,11 +526,11 @@ NodeViewModel node = new NodeViewModel()
 Diagram provides support to flip the node.[`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_Flip) is performed to give the mirrored node of the original element.
 The flip types are:
 * Flip
- `Flip` that involves both vertical and horizontal changes of the element. 
+ [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) that involves both vertical and horizontal changes of the element. 
 * VerticalFlip
- `VerticalFlip` that involves changes in the vertical direction of the element.
+ [`VerticalFlip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) that involves changes in the vertical direction of the element.
 * HorizontalFlip
- `HorizontalFlip` that involves changes in the horizontal direction of the element.
+ [`HorizontalFlip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) that involves changes in the horizontal direction of the element.
 
 {% tabs %}
 {% highlight xaml %}
@@ -698,7 +698,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * The `BoundaryConstraints` argument in the `NodeChangedEvent` is used to restrict the dragging of the Nodes in the given region.
 
-* The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To explore about aruguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* The `NodeChangedEvent` will notify the [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetY) changes with their old and new values. Along with that, this event will give information about interaction state. To explore about aruguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![WPF Diagram Drag Node](Node_images/wpf-diagram-drag-node.gif)
 
