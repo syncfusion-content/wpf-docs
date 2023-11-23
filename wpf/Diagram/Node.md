@@ -524,13 +524,13 @@ NodeViewModel node = new NodeViewModel()
 ## Flip
 
 Diagram provides support to flip the node.[`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_Flip) is performed to give the mirrored node of the original element.
-The flip types are:
+The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) types are:
 * Flip
- [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) that involves both vertical and horizontal changes of the element. 
+ `Flip` that involves both vertical and horizontal changes of the element. 
 * VerticalFlip
- [`VerticalFlip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) that involves changes in the vertical direction of the element.
+ `VerticalFlip` that involves changes in the vertical direction of the element.
 * HorizontalFlip
- [`HorizontalFlip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) that involves changes in the horizontal direction of the element.
+ `HorizontalFlip` that involves changes in the horizontal direction of the element.
 
 {% tabs %}
 {% highlight xaml %}
