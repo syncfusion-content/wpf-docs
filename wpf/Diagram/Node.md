@@ -19,7 +19,7 @@ A node can be created and added to the Diagram, either programmatically or inter
 
 ### Add Node through Nodes collection 
 
-To create a node, you have to define the node object and add that to nodes collection of the Diagram.
+To create a node, you have to define the [`node object`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) and add that to [`nodes`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeCollection.html) collection of the Diagram.
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,7 +108,7 @@ You can use text, image, controls, panels, or any UIElement or template to visua
    5)Built-in resource
 
 ### Using content template
-Node is a ContentControl, so you can use data template to display the content of the node using the [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) property. Refer to the following code example to define node's shape through ContentTemplate.
+[`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html) is a ContentControl, so you can use data template to display the content of the node using the [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) property. Refer to the following code example to define node's shape through ContentTemplate.
 
 {% tabs %}
 {% highlight xaml %}
