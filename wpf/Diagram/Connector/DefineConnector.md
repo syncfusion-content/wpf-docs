@@ -115,7 +115,7 @@ diagram.DrawingTool = DrawingTool.Connector;
 
 ### Free-hand drawing
 
-Diagram has support for free-hand drawing to draw anything on the diagram page independently. Free-hand drawing will be enabled by using the `DrawingTool` property and setting its value to `FreeHand`.
+Diagram has support for free-hand drawing to draw anything on the diagram page independently. Free-hand drawing will be enabled by using the [`DrawingTool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool) property and setting its value to `FreeHand`.
 
 {% tabs %}
 {% highlight xaml %}
