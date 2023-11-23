@@ -308,7 +308,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### Margin
 
-`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the annotations with the `Margin` property. Default value is (0,0,0,0).
+`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the annotations with the [`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Margin) property. Default value is (0,0,0,0).
 
 {% tabs %}
 {% highlight xaml %}
@@ -415,7 +415,7 @@ Annotations = new AnnotationCollection()
 
 ## How to change the appearance of annotation
 
-Default appearance of the annotations can be customized by using the [`EditTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_EditTemplate) and [`ViewTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_ViewTemplate) properties. ViewTemplate is used to control the appearance of the annotation when it is in non-editing stage. EditTemplate is used to control the appearance of the annotation while it is in editing.
+Default appearance of the annotations can be customized by using the [`EditTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_EditTemplate) and [`ViewTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_ViewTemplate) properties. `ViewTemplate` is used to control the appearance of the annotation when it is in non-editing stage. `EditTemplate` is used to control the appearance of the annotation while it is in editing.
 
 {% tabs %}
 {% highlight xaml %}
@@ -466,7 +466,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ![WPF Diagram Annotation Appearance](Annotation_images/wpf-diagram-annotation-appearance.PNG) &ensp;&ensp;&ensp;&ensp;&ensp; ![WPF Diagram Annotation EditTemplate](Annotation_images/wpf-diagram-annotation-edittemplate.png)
 
-Also, diagram have `TextAnnotationViewModel` class to customize the appearance of the annotation directly instead of overriding view and edit templates of the annotation. This class customization will be applied for both view and edit mode of annotation.
+Also, diagram have [`TextAnnotationViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.TextAnnotationViewModel.html) class to customize the appearance of the annotation directly instead of overriding view and edit templates of the annotation. This class customization will be applied for both view and edit mode of annotation.
 
 {% tabs %}
 {% highlight xaml %}
