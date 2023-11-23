@@ -60,7 +60,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ## BPMN event trigger
 
-The event triggers are notated as icons inside the circle and they represent the specific details of the process. The [`EventTrigger`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventTrigger) property of the `BpmnNodeViewModel` allows you to set the type of trigger. By default, it is set to None. The following code example explains how to create a BPMN trigger.
+The event triggers are notated as icons inside the circle and they represent the specific details of the process. The [`EventTrigger`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventTrigger) property of the [`BpmnNodeViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) allows you to set the type of trigger. By default, it is set to None. The following code example explains how to create a BPMN trigger.
 
 {% tabs %}
 {% highlight xaml %}
