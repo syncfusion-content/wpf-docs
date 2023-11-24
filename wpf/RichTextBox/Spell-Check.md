@@ -110,7 +110,7 @@ The following code example demonstrates how to show the spelling pane in SfRichT
 {% tabs %}
 {% highlight xaml %}
 <!-- Binding Button to UI Command that shows the spelling pane  -->
-<Button Content="Show Spelling Pane" Command="RichTextBoxAdv:SfRichTextBoxAdv. ShowSpellingPaneCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
+<Button Content="Show Spelling Pane" Command="RichTextBoxAdv:SfRichTextBoxAdv.ShowSpellingPaneCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 
 
 {% endhighlight %}

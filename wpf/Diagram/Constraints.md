@@ -61,7 +61,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
 ## Node Constraints
 
-[NodeConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allows to enable or disable the following behaviors of Node.By default Selectable, Connectable, Inherit, RoutingObstacle, PivotDraggable, Delete and ThemeStyle constraints are enabled for Node.
+[NodeConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allows to enable or disable the following behaviors of Node.By default `Selectable`, `Connectable`, `Inherit`, `RoutingObstacle`, `PivotDraggable`, `Delete` and `ThemeStyle` constraints are enabled for Node.
 
 |Constraints	|Description|
 |--|--|
@@ -135,7 +135,7 @@ NodeViewModel node = new NodeViewModel()
 
 ## Connector Constraints
 
-[ConnectorConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html) allows to enable or disable the following behaviors of Connectors. By default Selectable, EndDraggable, Inherit, Thumbs, Connectable, Delete, BridgeObstacle and ThemeStyle constraints are enabled for connector.
+[ConnectorConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html) allows to enable or disable the following behaviors of Connectors. By default `Selectable`, `EndDraggable`, `Inherit`, `Thumbs`, `Connectable`, `Delete`, `BridgeObstacle` and `ThemeStyle` constraints are enabled for connector.
 
 |Constraints	|Description|
 |--|--|

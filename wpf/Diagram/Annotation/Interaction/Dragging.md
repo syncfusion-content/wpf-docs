@@ -14,7 +14,7 @@ To learn about annotation constraints, refer to the [Annotation Constraints](htt
 
 ## Dragging the annotation
 
-Dragging of annotation can be enabled by using the `Constraints` property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Draggable`.
+Dragging of annotation can be enabled by using the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Constraints) property of [`AnnotationEditorViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html) class and setting its value as `AnnotationConstraints.Draggable`.
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ Diagram allows users to nudge annotations by one pixel in a specific direction u
 
 ## How to restrict the dragging area
 
-Diagram allows you to specify the amount of dragging area around the annotation by enabling the `Constraints` as `AnnotationConstraints.DragLimit` and dragging area can be specified by using the `DragLimit` property. You cannot drag the annotation behind this drag limit value. Default value is (10, 10, 10, 10).
+Diagram allows you to specify the amount of dragging area around the annotation by enabling the `Constraints` as `AnnotationConstraints.DragLimit` and dragging area can be specified by using the [`DragLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_DragLimit) property. You cannot drag the annotation behind this drag limit value. Default value is (10, 10, 10, 10).
 
 {% tabs %}
 {% highlight xaml %}

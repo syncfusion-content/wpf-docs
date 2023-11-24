@@ -13,7 +13,7 @@ The diagram can be scrolled by using the vertical and horizontal scrollbars. In 
 
 ## Get current scroll status
 
-Diagram allows to get the scroll settings related values using the `ScrollInfo` property of `ScrollSettings` class.
+Diagram allows to get the scroll settings related values using the [`ScrollInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollInfo) property of `ScrollSettings` class.
 
 * `CurrentZoom`: Specifies the zooming level of the diagram page.
 * `Viewport`: Specifies the position and dimensions of diagram's visible area.
@@ -42,7 +42,7 @@ double viewportWidth = diagram.ScrollSettings.ScrollInfo.ViewportWidth;
 
 You can programmatically change scrolling amount at runtime by using the ZoomPan() method.
 
-The `ScrollDelta` property of `ZoomPositionParameter` class allows you to specify how much the page should be scrolling. The `ZoomCommand` property is used to specify whether it is vertical scroll bar or horizontal scroll bar.
+The [`ScrollDelta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParamenter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParamenter_ScrollDelta) property of [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParamenter.html) class allows you to specify how much the page should be scrolling. The [`ZoomCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomCommand.html) property is used to specify whether it is vertical scroll bar or horizontal scroll bar.
 
 {% tabs %}
 {% highlight C# %}
@@ -73,7 +73,7 @@ Autoscroll feature automatically scrolls the Diagram whenever the Node or Connec
 
 ## Autoscroll border
 
-The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is set as 20 for all sides (left, right, top, and bottom) and it can be changed by using the `AutoScrollBorder` property of ScrollSettings.
+The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is set as 20 for all sides (left, right, top, and bottom) and it can be changed by using the [`AutoScrollBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_AutoScrollBorder) property of ScrollSettings.
 
 {% tabs %}
 {% highlight xaml %}

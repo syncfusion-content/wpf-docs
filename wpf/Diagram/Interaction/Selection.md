@@ -45,7 +45,7 @@ Multiple selected elements are visually represented as shown.
 
 #### Selection mode
 
-[SingleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SingleSelectionMode) and [MultipleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_MultipleSelectionMode) properties of SfDiagram allows us to decide which kind of selection need to be handle .To explore about modes, please refer to [SingleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SingleSelectionMode.html) and [MultipleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MultipleSelectionMode.html).
+[`SingleSelectionMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SingleSelectionMode) and [`MultipleSelectionMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_MultipleSelectionMode) properties of SfDiagram allows us to decide which kind of selection need to be handle .To explore about modes, please refer to [SingleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SingleSelectionMode.html) and [MultipleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MultipleSelectionMode.html).
 
 |SingleSelectionMode|Description|
 |--|--|
@@ -172,8 +172,8 @@ Diagram control provides support to change the selection handle display mode of 
 
 ## See Also 
 
-* [How to customize the selection behavior of nodes and connectors?](https://www.syncfusion.com/kb/7457/how-to-customize-the-selection-behavior-of-nodes-and-connectors)
+* [How to customize the selection behavior of nodes and connectors?](https://support.syncfusion.com/kb/article/6761/how-to-customize-the-selection-behavior-in-wpf-diagram-sfdiagram)
 
-* [How to disable the selection in Diagram?](https://www.syncfusion.com/kb/5881/how-to-disable-the-selection-in-diagram)
+* [How to disable the selection in Diagram?](https://support.syncfusion.com/kb/article/5495/how-to-disable-the-selection-in-wpf-diagram)
 
-* [How to bind the SelectedItems property of SfDiagram to ViewModel property?](https://www.syncfusion.com/kb/13209/how-to-bind-the-selecteditems-property-of-sfdiagram-to-viewmodel-property)
+* [How to bind the SelectedItems property of SfDiagram to ViewModel property?](https://support.syncfusion.com/kb/article/11806/how-to-bind-the-selecteditems-property-of-sfdiagram-to-viewmodel-property)
