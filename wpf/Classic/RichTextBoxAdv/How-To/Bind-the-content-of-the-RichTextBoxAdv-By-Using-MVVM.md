@@ -171,7 +171,7 @@ DescriptionXaml = "<RichText:DocumentAdv xmlns=\"http://schemas.microsoft.com/wi
 
 ## Sample
 
-To view a sample on binding the XAMLText property of RichTextBoxAdv control by using MVVM Framework, see [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVM_Sample-422358601).
+To view a sample on binding the XAMLText property of RichTextBoxAdv control by using MVVM Framework, see [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVM_Sample-422358601).
 
 
 

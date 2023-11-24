@@ -606,7 +606,7 @@ You can customize the edge label by using the [`ShowFirstLabel`](https://help.sy
 
 ## Events
 
-You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html) event. Based on requirements, the labels can be changed by using the [`LabelText`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LabelCreatedEventArgs.html#Syncfusion_UI_Xaml_Gauges_LabelCreatedEventArgs_LabelText) property of `LabelCreatedEventArgs`.
+You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_LabelCreated) event. Based on requirements, the labels can be changed by using the [`LabelText`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LabelCreatedEventArgs.html#Syncfusion_UI_Xaml_Gauges_LabelCreatedEventArgs_LabelText) property of `LabelCreatedEventArgs`.
 
 {% tabs %}
 

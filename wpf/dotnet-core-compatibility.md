@@ -20,9 +20,9 @@ Below table represents the supported Syncfusion Essential Studio version for .NE
 <table>
 <tr>
 <th>Syncfusion Version<br/></th>
-<th>.NET Core 3.1<br/></th>
-<th>.NET 5.0<br/></th>
-<th>.NET 6.0 & above<br/></th>
+<th>.NET 6.0<br/></th>
+<th>.NET 7.0<br/></th>
+<th>.NET 8.0<br/></th>
 </tr>
 
 <tr>
@@ -34,25 +34,25 @@ Below table represents the supported Syncfusion Essential Studio version for .NE
 
 <tr>
 <td>
-From 17.2 (2019 Vol2) <br/></td>
-<td>Yes<br/></td>
-<td>No<br/></td>
-<td>No<br/></td>
-</tr>
-
-<tr>
-<td>
-From 18.4 (2020 Vol4) <br/></td>
-<td>Yes<br/></td>
-<td>Yes<br/></td>
-<td>No<br/></td>
-</tr>
-
-<tr>
-<td>
 From 20.4 (2022 Vol4) <br/></td>
+<td>Yes<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
+</tr>
+
+<tr>
+<td>
+From 21.1 (2023 Vol1) <br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>No<br/></td>
+</tr>
+
+<tr>
+<td>
+From 23.2 (2023 Vol3 SP) <br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
 <td>Yes<br/></td>
 </tr>
 
