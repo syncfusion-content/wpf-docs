@@ -13,7 +13,7 @@ GridControl provides support for UI Automation and VS2010 Coded UI testing. This
 
 ##  Grid Control UI Automation Support
 
-Microsoft UI Automation provides a single, generalized interface that automation clients can examine or use to operate the user interfaces of a variety of platforms and frameworks. For more information, see [https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/ui-automation-of-a-wpf-custom-control](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/ui-automation-of-a-wpf-custom-control).
+Microsoft UI Automation provides a single, generalized interface that automation clients can examine or use to operate the user interfaces of a variety of platforms and frameworks. For more information, see [https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/ui-automation-of-a-wpf-custom-control?view=netframeworkdesktop-4.8](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/ui-automation-of-a-wpf-custom-control?view=netframeworkdesktop-4.8).
 
 With the Grid control, UI Automation is enabled for writing testable applications. It involves the patterns below.
 
@@ -149,7 +149,7 @@ Essential Grid WPF now supports automated UI testing with VS 2010 Coded UI techn
 * UITestPropertyProvider
 * UIActionFilter
 
-You can get the Extension Project of Coded UI from [this](http://www.syncfusion.com/downloads/support/directtrac/general/CODEDU~1-2042805459.ZIP) location.
+You can get the Extension Project of Coded UI from [this](https://www.syncfusion.com/downloads/support/directtrac/general/CODEDU~1-2042805459.ZIP) location.
 
 The architectural diagram is as follows:
 
