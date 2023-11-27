@@ -182,7 +182,7 @@ For VerticalScroll
 
 ## Reset
 
-The [`Reset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Reset) command is used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram. If you want to customize the Reset command, you can use the [IReset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) as parameter.
+The [`Reset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Reset) command is used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram. If you want to customize the `Reset` command, you can use the [IReset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) as parameter.
 
 ### ResetParameter
 
