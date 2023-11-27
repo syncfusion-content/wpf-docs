@@ -210,7 +210,7 @@ diagram.DataSourceSettings.Root = "1";
 
 ## Layout with multiple parents
 
-Tree layout and data sources will now support nodes having multiple parents by defining more than one parent ID to the `ParentID` property. The child node is arranged in center of the parent positions. The following code explains the defining of multiple parent ID's to single node.
+Tree layout and data sources will now support nodes having multiple parents by defining more than one parent ID to the [`ParentID`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_ParentId) property. The child node is arranged in center of the parent positions. The following code explains the defining of multiple parent ID's to single node.
 
 {% tabs %}
 {% highlight xaml %}
@@ -273,15 +273,15 @@ data.Add(new ItemInfo("n21", "#941100")
 
 [FlowchartDataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlowchartDataSourceSettings.html) is the derived class of `DataSourceSettings`, which contains the mapping properties.These properties are used to map the data member in the underlying data object to the datasource item.
 
-`ContentMapping`: Maps the content in the underlying data object to data source item.
+[`ContentMapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlowchartDataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_FlowchartDataSourceSettings_ContentMapping): Maps the content in the underlying data object to data source item.
 
-`ConnectorTextMapping`: Maps the ConnectorText in the underlying data object to data source item.
+[`ConnectorTextMapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlowchartDataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_FlowchartDataSourceSettings_ConnectorTextMapping): Maps the ConnectorText in the underlying data object to data source item.
 
-`ShapeMapping`: Maps the shape in the underlying data object to data source item.
+[`ShapeMapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlowchartDataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_FlowchartDataSourceSettings_ShapeMapping): Maps the shape in the underlying data object to data source item.
  
-`WidthMapping`: Maps the width in the underlying data object to data source item.
+[`WidthMapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlowchartDataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_FlowchartDataSourceSettings_WidthMapping): Maps the width in the underlying data object to data source item.
  
-`HeightMapping`: Maps the height in the underlying data object to data source item.
+[`HeightMapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlowchartDataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_FlowchartDataSourceSettings_HeightMapping): Maps the height in the underlying data object to data source item.
 
 {% tabs %}
 {% highlight xaml %}
