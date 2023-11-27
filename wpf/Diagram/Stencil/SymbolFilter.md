@@ -172,7 +172,7 @@ public class StencilVM : INotifyPropertyChanged
 
 ## Appearance of symbol filters
 
-The visual appearance of the symbol filters can be customized to either a combo box or list view. The [`SymbolFilterDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilterDisplayMode) property of the `Stencil` is used to customize the appearance of the symbol filter.
+The visual appearance of the symbol filters can be customized to either a combo box or list view. The [`SymbolFilterDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilterDisplayMode) property of the [`Stencil`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html) is used to customize the appearance of the symbol filter.
 
 |SymbolFilterDisplayMode|Description|
 |----------|-----------|
@@ -183,7 +183,7 @@ In `List` display mode, the filters will be added in the list view only when you
 
 ### SelectedFilter
 
-There can be multiple SymbolFilters but only one filter can be selected at a time. You can select the filter from the collection of filters using the [SelectedFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SelectedFilter) of the stencil. In the combo box, a particular item will be selected and updated that item to the SelectedFilter. In List view, the selected item will be updated as a SelectedFilter.
+There can be multiple SymbolFilters but only one filter can be selected at a time. You can select the filter from the collection of filters using the [SelectedFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SelectedFilter) of the stencil. In the combo box, a particular item will be selected and updated that item to the `SelectedFilter`. In List view, the selected item will be updated as a SelectedFilter.
 
 ![Symbol](Stencil_images/StencilImprovement.GIF)
 
