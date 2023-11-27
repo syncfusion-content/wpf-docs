@@ -9,7 +9,7 @@ documentation: ug
 
 # Scroll Limit in WPF Diagram (SfDiagram)
 
-The scroll limit allows you to define the scrollable region of the Diagram while mouse scrolling on the page. The [`ScrollLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollLimit) property of scroll settings helps to limit the scrolling area. It includes the following options:
+The scroll limit allows you to define the scrollable region of the Diagram while mouse scrolling on the page. The [`ScrollLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollLimit) property of [`scroll settings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html) helps to limit the scrolling area. It includes the following options:
 
 * Infinity: Allows you to scroll in all directions without any restriction.
 * Diagram: Allows you to scroll within the Diagram content.
@@ -40,7 +40,7 @@ diagram.ScrollSettings = new ScrollSettings()
 
 ## Scrollable area
 
-You can restrict scrolling beyond any particular rectangle area by using the `ScrollableArea` property of ScrollSettings. To restrict scrolling beyond any custom region,you have to set the `ScrollLimit` to Limited. The default value is Rect.Empty.
+You can restrict scrolling beyond any particular rectangle area by using the [`ScrollableArea`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollableArea) property of `ScrollSettings`. To restrict scrolling beyond any custom region,you have to set the `ScrollLimit` to Limited. The default value is Rect.Empty.
 
 {% tabs %}
 {% highlight xaml %}
