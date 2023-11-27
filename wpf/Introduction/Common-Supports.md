@@ -37,7 +37,7 @@ Most of the Syncfusion controls are enhanced with blend support. The following s
 
 ## Testing
 
-The following Syncfusion controls come with built in testing support like [Coded UI](https://docs.microsoft.com/en-us/archive/msdn-magazine/2012/march/coded-ui-test-automation-using-visual-studio-2010-coded-ui) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
+The following Syncfusion controls come with built in testing support like [Coded UI](https://learn.microsoft.com/en-us/archive/msdn-magazine/2012/march/coded-ui-test-automation-using-visual-studio-2010-coded-ui) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
 
 ### Coded UI
 
