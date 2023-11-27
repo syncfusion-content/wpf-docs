@@ -186,7 +186,7 @@ The [`Reset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDia
 
 ### ResetParameter
 
-The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) parameter is used to define the behavior of the Reset Command. 
+The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) parameter is used to define the behavior of the `Reset` Command. 
 
 | Reset Enum Values | Description |
 | --- | --- |
