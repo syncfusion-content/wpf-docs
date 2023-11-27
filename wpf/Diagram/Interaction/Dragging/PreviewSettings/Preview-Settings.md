@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Preview Settings in WPF Diagram (SfDiagram)
 
-SfDiagram provides support to drag objects as an outline without affecting original object. When multiple elements are selected, outline of every selected element will be moved.
+[`SfDiagram`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) provides support to drag objects as an outline without affecting original object. When multiple elements are selected, outline of every selected element will be moved.
 
 Preview Dragging can be enabled by assigning values other than [PreviewMode.Preview](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PreviewMode.html) to [SfDiagram.PreviewSettings.PreviewMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PreviewSettings.html#Syncfusion_UI_Xaml_Diagram_PreviewSettings_PreviewMode).
 

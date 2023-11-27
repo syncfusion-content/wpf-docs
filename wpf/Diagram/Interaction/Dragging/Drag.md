@@ -20,7 +20,7 @@ Based on the [BlockPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 * [Abort](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Abort)- If this boolean is set to true, then dragging is occurs within the limit.
 * [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Cancel)- If this boolean is set to true, then the dragging of element does not occurs.   
 
-[Refer](https://help.syncfusion.com/wpf/diagram/scroll-settings/scrolllimit) for Scroll-Limit.
+Refer for [`Scroll-Limit`](https://help.syncfusion.com/wpf/diagram/scroll-settings/scrolllimit).
 
 ## Dragging Diagram elements in vertical and horizontal axis
 
@@ -30,7 +30,7 @@ Diagram provides support to drag its elements in either vertical or horizontal d
 
 ## Drag and Drop Nodes over other elements
 
-Diagram provides support to drop a [node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) over another node or [connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html). Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the [AllowDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) constraints property for both node and connector.
+Diagram provides support to drop a [node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) over another node or [connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html). Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the [`AllowDrop constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) property for both node and connector.
 
 {% tabs %}
 {% highlight C# %}
@@ -42,7 +42,7 @@ Node.Constraints |= NodeConstraints.AllowDrop;
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can enable [AllowDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Constraints) constraints for connector to drop a node over connector.
+Similarly, you can enable [`AllowDrop constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Constraints) for connector to drop a node over connector.
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Interaction/IndicatorStyle-sample)
 
