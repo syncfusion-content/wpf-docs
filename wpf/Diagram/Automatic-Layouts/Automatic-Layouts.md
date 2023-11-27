@@ -17,7 +17,7 @@ SfDiagram provides a set of built-in automatic layout algorithms, which is used 
 * Hierarchical tree layout
 * Radial tree layout
 
-Automatic layout algorithm uses the nodes and connectors defined in NodeCollection and ConnectorCollection or business objects defined in DataSource as input to generate the layout. To generate layout from NodeCollection and ConnectorCollection, you have to create all the nodes and connectors required for layout and add those items in NodeCollection and ConnectorCollection as defined in the following code snippet.
+Automatic layout algorithm uses the nodes and connectors defined in [`NodeCollection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeCollection.html) and [`ConnectorCollection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorCollection.html) or business objects defined in DataSource as input to generate the layout. To generate layout from NodeCollection and ConnectorCollection, you have to create all the nodes and connectors required for layout and add those items in NodeCollection and ConnectorCollection as defined in the following code snippet.
 
 {% tabs %}
 {% highlight xaml %}
@@ -251,7 +251,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ## Customize spacing between nodes in layout 
 
-The Horizontal and Vertical spacing properties of Layouts are used to customize the space between successive nodes in both horizontally and vertically. The default value for horizontal spacing is `20` and vertical spacing is `50`.
+The Horizontal and Vertical spacing properties of Layouts are used to customize the space between successive nodes in both horizontally and vertically. The default value for [`horizontal spacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.TreeLayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_TreeLayoutBase_HorizontalSpacing) is `20` and [`vertical spacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.TreeLayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_TreeLayoutBase_VerticalSpacing) is `50`.
 
 {% tabs %}
 {% highlight xaml %}
