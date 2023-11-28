@@ -584,17 +584,17 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 
 ## Events for connectors
 
-* On drawing a connector, the `ObjectDrawn` event will notify the DragState and Item. To explore about arguments, refer to [`ObjectDrawn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html). 
+* On drawing a connector, the [`ObjectDrawn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ObjectDrawn) event will notify the DragState and Item. To explore about arguments, refer to [`ObjectDrawn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html). 
 
-* If any changes made in the source thumb of the connector, the `ConnectorSourceChangedEvent` will notify the DragState and Connector Item with its old and new values. 
+* If any changes made in the source thumb of the connector, the [`ConnectorSourceChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ConnectorSourceChangedEvent) will notify the DragState and Connector Item with its old and new values. 
 
-* If any changes made in the target thumb of the connector, the `ConnectorTargetChangedEvent` will notify the DragState and CauseValue Connector Item with its old and new values.
+* If any changes made in the target thumb of the connector, the [`ConnectorTargetChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ConnectorTargetChangedEvent) will notify the DragState and CauseValue Connector Item with its old and new values.
 
-* On dragging the target thumb of the connector, event will notify the Cause as `UnKnown`. On drawing a connector in an Element, event will notify the Cause as `Drawing`.
+* On dragging the target thumb of the connector, event will notify the [`Cause`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Cause.html) as `UnKnown`. On drawing a connector in an Element, event will notify the `Cause` as `Drawing`.
 
 To explore about arguments, refer to [`ChangedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html). 
 
-* If any changes made in the segment of the connector, the `ConnectorEditingEvent` will notify the DragState, Item, and ThumbType. To explore about arguments, refer to [`ConnectorEditingEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorEditingEventArgs.html).
+* If any changes made in the segment of the connector, the [`ConnectorEditingEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ConnectorEditing) will notify the DragState, Item, and ThumbType. To explore about arguments, refer to [`ConnectorEditingEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorEditingEventArgs.html).
 
 ## Customization and validation on connector ends
 
@@ -655,7 +655,7 @@ public class CustomDiagram : SfDiagram
 
 ## Constraints
 
-The `Constraints` property of connector allows you to enable or disable certain features of connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/diagram/constraints#connector-constraints "Connector Constraints").
+The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Constraints) property of connector allows you to enable or disable certain features of connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/diagram/constraints#connector-constraints "Connector Constraints").
 
 Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Appearance) to depict the connector appearance and validation.
 
