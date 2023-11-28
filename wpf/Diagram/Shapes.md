@@ -24,7 +24,7 @@ The following code example illustrates how to merge shapes into diagram.
 
 ## Basic Shapes
 
-The following code example illustrates how to assign Shape property of the Node.
+The following code example illustrates how to assign [`Shape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_Shape) property of the [`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html).
 
 {% tabs %}
 {% highlight xaml %}
