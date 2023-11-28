@@ -115,7 +115,7 @@ Let us create a simple flow chart using SfDiagram.
 
 ### Initialize the Diagram
 
-The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram in XAML as shown in the following code example.
+The `SfDiagram` exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram in XAML as shown in the following code example.
 
 {% tabs %}
 
@@ -383,7 +383,7 @@ Connector is to make connection or link between two nodes, ports, and points.
 
 #### Create connector With source node and target node 
 
-Here, the `SourceNodeID` and `TargetNodeID` properties of the Connector are used. These properties will be assigned with the `ID` property of the node.
+Here, the [`SourceNodeID`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_SourceNodeID) and [`TargetNodeID`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_TargetNodeID) properties of the Connector are used. These properties will be assigned with the [`ID`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_ID) property of the node.
 
 {% tabs %}
 {% highlight xaml %}
@@ -400,7 +400,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 #### Adding connector geometry style
 
-Here, the `ConnectorGeometryStyle` property of the Connector are used to customize the appearance of the line. And, `SourceDecoratorStyle` and `TargetDecoratorStyle` properties are used to customize the appearance of the decorators. 
+Here, the [`ConnectorGeometryStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_ConnectorGeometryStyle) property of the Connector are used to customize the appearance of the line. And, [`SourceDecoratorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_SourceDecoratorStyle) and [`TargetDecoratorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_TargetDecoratorStyle) properties are used to customize the appearance of the decorators. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -495,7 +495,7 @@ Let us create a simple flowchart diagram using stencil.
 
 #### Define stencil
 
-`Stencil` is a gallery of reusable symbols and nodes, which can be dragged and dropped onto the diagram surface at any number of times.
+[`Stencil`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and nodes, which can be dragged and dropped onto the diagram surface at any number of times.
 
 {% tabs %}
 {% highlight xaml %}
@@ -511,7 +511,7 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 
 #### Define SymbolSource
 
-`SymbolSource` is the property of stencil, which is a collection of objects like symbol, node, connector, and more. Based on the SymbolSource, the Stencil will populate the Symbols. And the `SymbolGroupProvider` groups the symbols into SymbolGroup based on the `MappingName` property.
+[`SymbolSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolSource) is the property of stencil, which is a collection of objects like symbol, node, connector, and more. Based on the SymbolSource, the Stencil will populate the Symbols. And the [`SymbolGroupProvider`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html) groups the symbols into SymbolGroup based on the [`MappingName`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupProvider_MappingName) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -819,7 +819,7 @@ diagram.DataSourceSettings = new DataSourceSettings()
 
 #### Rendering layout with DataSource
 
-To create an organizational chart, TreeLayout type should be set to `LayoutType.Organization`. The following code example shows how LayoutManager is used to generate TreeLayout based on the DataSourceSettings of the Diagram.
+To create an organizational chart, TreeLayout type should be set to [`LayoutType.Organization`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutType.html). The following code example shows how LayoutManager is used to generate TreeLayout based on the DataSourceSettings of the Diagram.
 
 {% tabs %}
 {% highlight xaml %}
