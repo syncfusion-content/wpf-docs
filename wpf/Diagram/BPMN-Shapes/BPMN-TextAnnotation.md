@@ -9,7 +9,7 @@ documentation: ug
 
 # TextAnnotation in WPF Diagram (SfDiagram)
 
-* A TextAnnotation points at or references the another BPMN shape, which we call the [`TextAnnotationTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TextAnnotationTarget) of the TextAnnotation. When a target shape is moved, copied, or deleted, any TextAnnotations attached to the shape will be moved, copied, or deleted too.  Thus, the TextAnnotations stay with their target shapes though you can reposition the TextAnnotation to any offset from its target. The TextAnnotationTarget property of the BpmnNodeViewModel is used to connect an annotation element to the BpmnNodeViewModel.
+* A TextAnnotation points at or references the another BPMN shape, which we call the [`TextAnnotationTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TextAnnotationTarget) of the TextAnnotation. When a target shape is moved, copied, or deleted, any TextAnnotations attached to the shape will be moved, copied, or deleted too.  Thus, the TextAnnotations stay with their target shapes though you can reposition the TextAnnotation to any offset from its target. The `TextAnnotationTarget` property of the BpmnNodeViewModel is used to connect an annotation element to the [`BpmnNodeViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html).
 
 * The annotation element can be switched from a BPMN node to another BPMN node simply by dragging the source end of the annotation connector into the other BPMN node.
 
@@ -17,9 +17,9 @@ documentation: ug
 
 * The [`TextAnnotationDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TextAnnotationDirection) property is used to set the shape direction of the text annotation.
 
-* To set the size for text annotation, use the UnitWidth and UnitHeight properties.
+* To set the size for text annotation, use the [`UnitWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_UnitWidth) and [`UnitHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_UnitHeight) properties.
 
-* The OffsetX and OffsetY property is used to set the distance between the BPMN node and the TextAnnotation.
+* The [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetY) property is used to set the distance between the BPMN node and the TextAnnotation.
 
 * The TextAnnotation element can be moved (if their have connected with any BPMN Node) while dragging the BPMN node.
 
