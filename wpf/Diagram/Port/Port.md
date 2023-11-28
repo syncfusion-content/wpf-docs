@@ -258,7 +258,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 ### Length 
 
-The `Length` property of port is used to align the port based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height. Default value is 0.5.
+The [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorPort.html#Syncfusion_UI_Xaml_Diagram_ConnectorPort_Length) property of port is used to align the port based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height. Default value is 0.5.
 
 | Length value | Output |
 |---|---|
@@ -516,7 +516,7 @@ NodePortViewModel port = new NodePortViewModel()
 
 ## Events
 
-The `PortChangedEvent` will get invoked when you drag the port.
+The [`PortChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_PortChanged) will get invoked when you drag the port.
 
 * NodePort: The `PortChangedEvent` will notify the `OffsetX`and `OffsetY` changes with their `OldValue` and `NewValue`. 
  
