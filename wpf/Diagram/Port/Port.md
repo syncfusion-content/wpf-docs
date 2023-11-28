@@ -258,7 +258,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 ### Length 
 
-The `Length` property of port is used to align the port based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height. Default value is 0.5.
+The [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorPort.html#Syncfusion_UI_Xaml_Diagram_ConnectorPort_Length) property of port is used to align the port based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height. Default value is 0.5.
 
 | Length value | Output |
 |---|---|
@@ -268,7 +268,7 @@ The `Length` property of port is used to align the port based on fractions. 0 re
 
 ## Dock port
 
-DockPort is different from standard ports like `NodePort` and `ConnectorPort`. It is a placeholder that allows us to create connections at any point within it. Using [`DockPort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPort.html), you can achieve lines of connecting points within the node boundary as shown in the following image.
+DockPort is different from standard ports like [`NodePort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html) and [`ConnectorPort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorPort.html). It is a placeholder that allows us to create connections at any point within it. Using [`DockPort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPort.html), you can achieve lines of connecting points within the node boundary as shown in the following image.
 
 ![WPF Diagram Dock port](Port_images/wpf-diagram-dock-port.png)
 
@@ -430,7 +430,7 @@ To learn more about PortVisibility, refer to [PortVisibility](https://help.syncf
 
 ## Connection direction
 
-The [`ConnectionDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_ConnectionDirection) is a port’s property, which allows users to specify the direction in which the connector’s connection to be established to a port. This property will be active only if the port constraints contains `PortConstraints.ConnectionDirection`. Default value is Auto.
+The [`ConnectionDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_ConnectionDirection) is a port’s property, which allows users to specify the direction in which the connector’s connection to be established to a port. This property will be active only if the [`port constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortConstraints.html) contains `PortConstraints.ConnectionDirection`. Default value is Auto.
 
 {% tabs %}
 {% highlight xaml %}
@@ -516,13 +516,13 @@ NodePortViewModel port = new NodePortViewModel()
 
 ## Events
 
-The `PortChangedEvent` will get invoked when you drag the port.
+The [`PortChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_PortChanged) will get invoked when you drag the port.
 
-* NodePort: The `PortChangedEvent` will notify the `OffsetX`and `OffsetY` changes with their `OldValue` and `NewValue`. 
+* NodePort: The `PortChangedEvent` will notify the [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html#Syncfusion_UI_Xaml_Diagram_NodePort_NodeOffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html#Syncfusion_UI_Xaml_Diagram_NodePort_NodeOffsetY) changes with their [`OldValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ChangeEventArgs-2.html#Syncfusion_UI_Xaml_Diagram_ChangeEventArgs_2_OldValue) and [`NewValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ChangeEventArgs-2.html#Syncfusion_UI_Xaml_Diagram_ChangeEventArgs_2_NewValue). 
  
-* ConnectorPort: The `PortChangedEvent` will notify the `Length` changes with their `OldValue` and `NewValue`.
+* ConnectorPort: The `PortChangedEvent` will notify the [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorPort.html#Syncfusion_UI_Xaml_Diagram_ConnectorPort_Length) changes with their `OldValue` and `NewValue`.
  
-* DockPort: The `PortChangedEvent` will notify the `SourcePoint`and `TargetPoint` changes with their `OldValue` and `NewValue`.
+* DockPort: The `PortChangedEvent` will notify the `SourcePoint` and `TargetPoint` changes with their `OldValue` and `NewValue`.
 
  To explore about arguments, refer to [`PortChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortChangedEventArgs.html)
 
