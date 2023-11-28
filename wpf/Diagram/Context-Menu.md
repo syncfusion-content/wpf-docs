@@ -13,7 +13,7 @@ In graphical user interface (GUI), a ContextMenu is a type of Menu that appears 
 
 ## Default Context Menu
 
-The `ContextMenu` Constraint helps you to enable/disable the context menu. The following code illustrates how to enable/disable the default context menu items.
+The `ContextMenu Constraint` helps you to enable/disable the context menu. The following code illustrates how to enable/disable the default context menu items.
 
 {% tabs %}
 {% highlight C# %}
@@ -33,15 +33,15 @@ Diagram provides some default context menu items to ease the execution of some f
 
 ## Customize Context Menu
 
-* Apart from the default ContextMenu items, you can define some additional menu items by using `Menu` property of SfDiagram, Node and Connector. Those additional items have to be defined and added to `MenuItems` Property. 
+* Apart from the default ContextMenu items, you can define some additional menu items by using [`Menu`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Menu) property of SfDiagram, Node and Connector. Those additional items have to be defined and added to [`MenuItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenu.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenu_MenuItems) Property. 
 
-* The `Content` property allows you to set Content for the context menu item.
+* The [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenuItem.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenuItem_Content) property allows you to set Content for the context menu item.
 
-* The `Icon` property allows you to set icon for the context menu item.
+* The [`Icon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenuItem.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenuItem_Icon) property allows you to set icon for the context menu item.
 
-* The `Command` property of the Context menu item allows you to define command for it.
+* The [`Command`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenuItem.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenuItem_Command) property of the Context menu item allows you to define command for it.
 
-* The `IsSeparator` property defines the horizontal lines that are used to separate the menu items. You cannot select the separators. You can enable separators to group the menu items using the `IsSeparator` property.
+* The [`IsSeparator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenuItem.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenuItem_IsSeparator) property defines the horizontal lines that are used to separate the menu items. You cannot select the separators. You can enable separators to group the menu items using the `IsSeparator` property.
 
 The following code example illustrates how to add custom context menu items to Menu property of SfDiagram.
 
@@ -89,7 +89,7 @@ DiagramMenuItem mi = new DiagramMenuItem()
 
 ## Events
 
-* `MenuItemClickedEvent`will invoke when you click the menu items. To explore about arguments, refer to [MenuItemClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MenuItemClickedEventArgs.html)
+* [`MenuItemClickedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_MenuItemClickedEvent) will invoke when you click the menu items. To explore about arguments, refer to [MenuItemClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MenuItemClickedEventArgs.html)
 
 The following code example illustrates how to define those events.
 
@@ -109,7 +109,7 @@ void MainPage_MenuItemClickedEvent(object sender,
 {% endhighlight %}
 {% endtabs %}
 
-* `MenuOpening` event will notify when you perform right click on Diagram/Node/Connector.To explore about arguments, refer to [MenuOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MenuOpeningEventArgs.html).
+* [`MenuOpening`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_MenuOpening) event will notify when you perform right click on Diagram/Node/Connector.To explore about arguments, refer to [MenuOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MenuOpeningEventArgs.html).
 
 ## See Also
 
