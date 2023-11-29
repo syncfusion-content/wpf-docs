@@ -62,7 +62,7 @@ N> When different commands are registered for the same key / mouse gestures, you
 
 ### Custom command
 
-CommandManager provides support to define custom commands. The custom commands are executed when the specified key gesture is recognized.
+`CommandManager` provides support to define custom commands. The custom commands are executed when the specified key gesture is recognized.
 The [GestureCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GestureCommand.html) and [Gesture](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gesture.html) help you to define a custom command.
 
 The following code example represents how to define custom command to Save Command (Control + S).
