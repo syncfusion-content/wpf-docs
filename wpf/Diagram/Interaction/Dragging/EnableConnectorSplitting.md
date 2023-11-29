@@ -9,7 +9,7 @@ documentation: ug
 
 # Enable connector splitting in WPF Diagram (SfDiagram)
 
-The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. You can split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting `EnableConnectorSplitting` as `true`. The default value of `EnableConnectorSplitting` is `false`.
+The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. You can split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting [`EnableConnectorSplitting`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_EnableConnectorSplitting) as `true`. The default value of `EnableConnectorSplitting` is `false`.
 
 {% tabs %}
 {% highlight Xaml %}

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Collision State in WPF Diagram (SfDiagram)
 
-SfDiagram provide supports to arrange the nodes and connectors neatly by adjusting node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
+[`SfDiagram`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) provide supports to arrange the nodes and connectors neatly by adjusting node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
 
 Using [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html) and [GetCollisionFreeLocation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_GetCollisionFreeLocation_Syncfusion_UI_Xaml_Diagram_CollisionState_) method, you can able to find a possible position without intersecting others for any given node.
 
@@ -108,7 +108,7 @@ var collisionState = new CollisionState() { Item = selectedNode, Space = 5 };
 
 ## Ignore objects as an overlap
 
-By default, annotation's of other elements were also considered as an intercepts for any given node. This can be disabled with the help of [IncludeSubElements](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_IncludeSubElements) property of CollisionState.
+By default, annotation's of other elements were also considered as an intercepts for any given node. This can be disabled with the help of [IncludeSubElements](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_IncludeSubElements) property of `CollisionState`.
 
 {% tabs %}
 {% highlight C# %}
@@ -120,7 +120,7 @@ var collisionState = new CollisionState() { Item = selectedNode, IncludeSubEleme
 {% endhighlight %}
 {% endtabs %}
 
-In addition to this,[`IgnoreList`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_IgnoreList) property of CollisionState allows you to restrict specific elements as not an intercepts. For example, you can ignore aligning nodes if same shaped node were collided.
+In addition to this,[`IgnoreList`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_IgnoreList) property of `CollisionState` allows you to restrict specific elements as not an intercepts. For example, you can ignore aligning nodes if same shaped node were collided.
 
 ![list to ignore detect overlapping](Drag_images/AutomaticAlignment_img3.gif)
 
