@@ -78,7 +78,7 @@ Printer section.
 ![Printer List in WPF Diagram](Printing_images/wpf-diagram-printer-list.png)
 
 ### Scaling 
- SfDiagram provides support to scale the diagram whether to print as single page or split into multiple pages. Scaling options can be changed by setting the `PrintingService.PrintManager.SelectedScaleIndex`
+ SfDiagram provides support to scale the diagram whether to print as single page or split into multiple pages. Scaling options can be changed by setting the [`PrintingService.PrintManager.SelectedScaleIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintManager.html#Syncfusion_Windows_Shared_Printing_PrintManager_SelectedScaleIndex)
 property. 
 
 {% tabs %}
@@ -160,7 +160,7 @@ Page size can be changed in print preview window also by selecting any value fro
 
  ### Page margin
 
-SfDiagram provides support to change the page margins to adjust content in printed page. Page margin can be changed by setting `PrintingService.PrintSettings.PageMargin` property.
+SfDiagram provides support to change the page margins to adjust content in printed page. Page margin can be changed by setting [`PrintingService.PrintSettings.PageMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintManager.html#Syncfusion_Windows_Shared_Printing_PrintManager_PageMargin) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -232,7 +232,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Exa
 
 Sfdiagram provides support to skip the empty pages while navigating through preview and in printed document, thus reduces paper wastage.
 
-The `GetPrintInfo` virtual method of `PrintingService` is used to cancel the empty pages. This method will execute for page navigation, printing each diagram pages, and changes made in the print preview area.
+The [`GetPrintInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_GetPrintInfo_Syncfusion_UI_Xaml_Diagram_PrintInfo_) virtual method of [`PrintingService`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html) is used to cancel the empty pages. This method will execute for page navigation, printing each diagram pages, and changes made in the print preview area.
 
 {% tabs %}
 {% highlight c# %}
@@ -255,7 +255,7 @@ public class CustomPrintingService : PrintingService
 
 ## Printing event
 
-The `Printing` event will notify the different state of the printing with [PrintingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingEventArgs.html).The argument will provide the print dialog and print state value of the printing. 
+The [`Printing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_Printing) event will notify the different state of the printing with [PrintingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingEventArgs.html).The argument will provide the print dialog and print state value of the printing. 
 
 | PrintStatus | Description |
 |---|---|
@@ -283,7 +283,7 @@ Print preview window's page size drop down will display only the suported paper 
 
 ![WPF Diagram displays Custom Paper Size](Printing_images/wpf-diagram-custom-paper-size.png) 
 
-Using the `OnSelectedPrinterChanged` virtual method of `DiagramPrintManager`, you can add the custom pager sizes to the selected printer apart from the default supported paper sizes. Refer to the following code example.
+Using the `OnSelectedPrinterChanged` virtual method of [`DiagramPrintManager`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPrintManager.html), you can add the custom pager sizes to the selected printer apart from the default supported paper sizes. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -375,7 +375,7 @@ N> Custom page size print is not applicable for any real printer. When you choos
 
 ## Classic PrintPreview
 
-SfDiagram provides backward compatibility to show the older or classic print preview by calling the `ShowClassicPrintPreview` method instead of `Print()` method.
+SfDiagram provides backward compatibility to show the older or classic print preview by calling the [`ShowClassicPrintPreview`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_ShowClassicPrintPreview) method instead of [`Print()`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print) method.
 
 {% tabs %}
 {% highlight c# %}
