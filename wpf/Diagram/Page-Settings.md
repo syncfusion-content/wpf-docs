@@ -9,7 +9,7 @@ documentation: ug
 
 # Page Settings in WPF Diagram (SfDiagram)
 
-By default, Diagram's page size is decided based on the position of diagramming elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html ) property of SfDiagram. 
+By default, Diagram's page size is decided based on the position of diagramming elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html ) property of [`SfDiagram`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html). 
 
 * The [`PageWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageWidth) and [`PageHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageHeight) properties of `PageSettings` define the size of the page. 
 * The [`PageOrientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageOrientation) property of `PageSettings` used to change the page orientation to portrait or landscape.
@@ -51,7 +51,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to enable the multiple page
 
-Based on the diagramming element position, the size of the page dynamically increases or decreases in multiples of page width and height using the [`MultiplePage`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_MultiplePage) property of PageSettings.
+Based on the diagramming element position, the size of the page dynamically increases or decreases in multiples of page width and height using the [`MultiplePage`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_MultiplePage) property of `PageSettings`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -90,9 +90,9 @@ diagram.PageSettings = new PageSettings()
 
 The appearance of the pages can be customized by using the following properties of `PageSettings` class:
 
-* `PageBorderThickness`: Defines the thickness of the  border around the entire page.
-* `PageBackground`: Defines the background colors of the page.
-* `PageBorderBrush`: Defines the color of the page border.
+* [`PageBorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageBorderThickness) : Defines the thickness of the  border around the entire page.
+* [`PageBackground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageBackground) : Defines the background colors of the page.
+* [`PageBorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageBorderBrush) : Defines the color of the page border.
 
 {% tabs %}
 {% highlight xaml %}
