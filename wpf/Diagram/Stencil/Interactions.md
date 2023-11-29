@@ -13,7 +13,7 @@ Stencil symbols can be selected, dragged, and reordered over stencil control.
 
 ## Symbol selection
 
-Stencil offers the flexibility to select either a single symbol or multiple symbols simultaneously, allowing you to easily place them on the diagram surface. You can control the symbol selection mode using the [`SymbolSelectionMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolSelectionMode) property within the 'Stencil' class. This capability enables users to switch between single and multiple symbol selections to align with their preferences. By default, the stencil allows the selection of multiple symbols.
+Stencil offers the flexibility to select either a single symbol or multiple symbols simultaneously, allowing you to easily place them on the diagram surface. You can control the symbol selection mode using the [`SymbolSelectionMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolSelectionMode) property within the [`Stencil`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html) class. This capability enables users to switch between single and multiple symbol selections to align with their preferences. By default, the stencil allows the selection of multiple symbols.
 
 |SelectionMode|Description|
 |----------|-----------|
@@ -73,12 +73,12 @@ stencil.StencilConstraints &= ~StencilConstraints.AllowDragDrop;
 
 ## Events
 
-* The `ExpandedEvent` and `CollapsedEvent` are notified to provide interactions in the SymbolGroup. To explore about arguments, refer to this [SymbolGroupExpandCollapseEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandCollapseEventArgs.html) class.
+* The [`ExpandedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Expanded) and [`CollapsedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Collapsed) are notified to provide interactions in the SymbolGroup. To explore about arguments, refer to this [SymbolGroupExpandCollapseEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandCollapseEventArgs.html) class.
 
-* The `DragEnterEvent` notifies when an element enters into the diagram from a stencil.
-* The `DragLeaveEvent` notifies when an element leaves from the diagram.
-* The `DragOverEvent` notifies when an element drag over another diagram element.
-* The `ItemDropEventEvent` notifies when an element is dropped on the diagram. 
+* The [`DragEnterEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_DragEnter) notifies when an element enters into the diagram from a stencil.
+* The [`DragLeaveEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_DragLeave) notifies when an element leaves from the diagram.
+* The [`DragOverEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_DragOver) notifies when an element drag over another diagram element.
+* The [`ItemDropEventEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemDropEvent) notifies when an element is dropped on the diagram. 
 
 To explore about arguments, refer to this [ItemDropEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html) class.
 
@@ -172,7 +172,7 @@ By default, the cursor appears as a block cursor when dragging the symbol (from 
 
 ## Preserving the node template when dragging and dropping
 
-The Diagram control allows you to drag and drop elements from a stencil using the serialization and deserialization approach, but it does not serialize the framework properties like the [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Content) and [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) properties. So, you need to retain templates as a resource and reassign them once it loaded back in the diagram. This can be achieved by using the `ItemAddedEvent` to restore the `Content` and `ContentTemplate` property values.
+The Diagram control allows you to drag and drop elements from a stencil using the serialization and deserialization approach, but it does not serialize the framework properties like the [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Content) and [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) properties. So, you need to retain templates as a resource and reassign them once it loaded back in the diagram. This can be achieved by using the [`ItemAddedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemAdded) to restore the `Content` and `ContentTemplate` property values.
 
 {% tabs %}
 {% highlight C# %}

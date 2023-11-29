@@ -104,7 +104,7 @@ Overview control allows Zoom and Pan interactions. The red rectangle indicates t
 {% endhighlight %}	
 {% endtabs %}
 
-The [`Constraint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Overview.html#Syncfusion_UI_Xaml_Diagram_Controls_Overview_ConstraintProperty) property of the Overview class allows you to control the Pan and Zoom interactions based the value assigned to that property. The following table explains the various values and their behaviors:
+The [`Constraint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Overview.html#Syncfusion_UI_Xaml_Diagram_Controls_Overview_ConstraintProperty) property of the [`Overview`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Overview.html#properties) class allows you to control the Pan and Zoom interactions based the value assigned to that property. The following table explains the various values and their behaviors:
 
 | OverviewConstraints | Description | Output |
 |---|---|---|
@@ -123,7 +123,7 @@ To learn more about deferred scrolling, refer to [Deferred Scrolling](https://he
 
 ## Event
 
-The `OverviewChangedEvent` will notify the interactions in Overview control with [OverviewChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.OverviewChangedEventArgs.html) as argument. This argument will provide the dragging and interaction state value of the overview.
+The [`OverviewChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Overview.html#Syncfusion_UI_Xaml_Diagram_Controls_Overview_OverviewChangedEvent) will notify the interactions in Overview control with [OverviewChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.OverviewChangedEventArgs.html) as argument. This argument will provide the dragging and interaction state value of the overview.
 
 {% seealso %}
 

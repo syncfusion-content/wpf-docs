@@ -209,7 +209,7 @@ You can customize the appearance of each [SymbolGroup](https://help.syncfusion.c
 
 ## Expand and collapse the symbol group
 
-When there is more number of symbol groups in the stencil, then you can expand and collapse the symbol groups using the [`ExpandMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ExpandMode) property of `Stencil` class. The `ExpandMode` property allows you to decide the number of symbol groups that can be expanded in a stencil.
+When there is more number of symbol groups in the stencil, then you can expand and collapse the symbol groups using the [`ExpandMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ExpandMode) property of [`Stencil`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html) class. The `ExpandMode` property allows you to decide the number of symbol groups that can be expanded in a stencil.
 
 |ExpandMode|Description|Output|
 |----------|-----------|-----------|
@@ -225,8 +225,8 @@ There are plenty of shapes available in the diagram resource dictionary. It take
 
 The `Categories` can be mentioned by using the following properties of the `StencilCategory` class:
 
-* Keys: Specifies the static resource key name value of the category collection.
-* Title: Specifies the title that should be displayed as a header of the category collection.
+* [`Keys`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.StencilCategory.html#Syncfusion_UI_Xaml_Diagram_Stencil_StencilCategory_Keys): Specifies the static resource key name value of the category collection.
+* [`Title`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.StencilCategory.html#Syncfusion_UI_Xaml_Diagram_Stencil_StencilCategory_Title): Specifies the title that should be displayed as a header of the category collection.
 
 ## Built-in symbol categories 
 
