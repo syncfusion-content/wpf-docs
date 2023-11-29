@@ -329,7 +329,7 @@ private void OnAdd(object obj)
 
  To add nodes to the lane, you should add the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Nodes) collection of diagram and reference should add the [`Children`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html#Syncfusion_UI_Xaml_Diagram_LaneViewModel_Children) collection of the lane.
 
- The [LaneOffsetX](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_LaneOffsetX) and [LaneOffsetY](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_LaneOffsetY) property of the node will position the element in the lane canvas.
+ The [`LaneOffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_LaneOffsetX) and [`LaneOffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_LaneOffsetY) property of the node will position the element in the lane canvas.
 
 
 The following code example explains how to add nodes to lane.
@@ -434,7 +434,7 @@ NodeViewModel node = new NodeViewModel() { UnitHeight = 50, UnitWidth = 50, Lane
  * You can select the individual lane header by clicking on the header twice. For first click, the respective lane can select. 
 
  * You can support to resize the individual lane  header. While resizing lane, it has maintain 20px distances from the Lane children.
- * The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) 
+ * The [`NodeChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_NodeChangedEvent) will notify the [`UnitHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneChildViewModel_UnitHeight) and [`UnitWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneChildViewModel_UnitWidth) changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) 
 
  The following image shows how to select and resize the lane header.
 
