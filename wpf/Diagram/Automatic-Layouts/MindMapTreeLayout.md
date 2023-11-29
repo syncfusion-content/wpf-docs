@@ -9,7 +9,7 @@ documentation: ug
 
 # MindMap tree layout in WPF Diagram (SfDiagram)
 
-A mind map is a diagram that displays the nodes as a spider diagram that organizes information around a central concept. You can use the `LayoutManager.Layout` property to specify the [`MindMapTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html) algorithm.
+A mind map is a diagram that displays the nodes as a spider diagram that organizes information around a central concept. You can use the [`LayoutManager.Layout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutManager_Layout) property to specify the [`MindMapTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html) algorithm.
 
 {% tabs %}
 
@@ -294,7 +294,7 @@ Specifies the mind-map branches should be arranged in a defined direction.
 
 #### How to create custom MindMap
 
-We can arrange the branches in a defined direction to create a custom layout by using the [`GetRootChildDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_MindMapTreeLayout_GetRootChildDirection_Syncfusion_UI_Xaml_Diagram_INode_) method of MindMapTreeLayout and by specifying the SplitMode as Custom.
+We can arrange the branches in a defined direction to create a custom layout by using the [`GetRootChildDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_MindMapTreeLayout_GetRootChildDirection_Syncfusion_UI_Xaml_Diagram_INode_) method of `MindMapTreeLayout` and by specifying the SplitMode as Custom.
 
 {% tabs %}
 {% highlight xaml %}
