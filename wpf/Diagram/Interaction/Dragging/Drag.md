@@ -20,7 +20,7 @@ Based on the [BlockPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 * [Abort](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Abort)- If this boolean is set to true, then dragging is occurs within the limit.
 * [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Cancel)- If this boolean is set to true, then the dragging of element does not occurs.   
 
-[Refer](https://help.syncfusion.com/wpf/diagram/scroll-settings/scrolllimit) for Scroll-Limit.
+Refer for [Scroll-Limit](https://help.syncfusion.com/wpf/diagram/scroll-settings/scrolllimit).
 
 ## Dragging Diagram elements in vertical and horizontal axis
 
