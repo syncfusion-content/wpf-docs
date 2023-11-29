@@ -30,15 +30,15 @@ stencil.StencilConstraints &= ~StencilConstraints.ContextMenu;
 
 ## Custom context menu
 
-You can define some additional menu items to the stencil symbols by using [`Menu`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Menu) property of `Stencil` class. Those additional menu items must be defined and added to [MenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenu.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenu_MenuItems) collection.
+You can define some additional menu items to the stencil symbols by using [`Menu`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Menu) property of [`Stencil`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html) class. Those additional menu items must be defined and added to [MenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenu.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenu_MenuItems) collection.
 
 The following properties should be added to custom context menu items of stencil symbols.
 
-* `Content` - allows you to set Content for the context menu item.
-* `Icon` - allows you to set icon for the context menu item.
-* `Command` - allows you to define command for context menu item.
-* `CommandParameter` - allows you to define command parameter value to execute command for the context menu item.
-* `IsSeparator` - allows you to define the horizontal lines that separate the menu items from icon position.
+* [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenuItem.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenuItem_Content) - allows you to set Content for the context menu item.
+* [`Icon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenuItem.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenuItem_Icon) - allows you to set icon for the context menu item.
+* [`Command`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenuItem.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenuItem_Command) - allows you to define command for context menu item.
+* [`CommandParameter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenuItem.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenuItem_CommandParameter) - allows you to define command parameter value to execute command for the context menu item.
+* [`IsSeparator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenuItem.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenuItem_IsSeparator) - allows you to define the horizontal lines that separate the menu items from icon position.
 
 {% highlight C# %}
 
