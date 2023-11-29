@@ -59,7 +59,7 @@ diagram.Export();
 
 ### Image file name
 
-You can save the exported image as stream or file system using the [`ExportStream`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ExportStream) or [`FileName`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_FileName) properties of `ExportSettings` class respectively.
+You can save the exported image as stream or file system using the [`ExportStream`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ExportStream) or [`FileName`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_FileName) properties of [`ExportSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html) class respectively.
 
 {% tabs %}
 {% highlight C# %}
@@ -113,7 +113,7 @@ diagram.Export();
 
 ### Export to XPS
 
-SfDiagram has in-built support to export the diagram as XPS file instead of image file. To export diagram as XPS file, set the [`IsSaveToXps`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_IsSaveToXps) property of `ExportSettings` class to `true` and specify the file name with ".xps" extension.
+SfDiagram has in-built support to export the diagram as XPS file instead of image file. To export diagram as XPS file, set the [`IsSaveToXps`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_IsSaveToXps) property of [`ExportSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html) class to `true` and specify the file name with ".xps" extension.
 
 {% tabs %}
 {% highlight C# %}
@@ -138,7 +138,7 @@ SfDiagram does not have the built-in support to convert the diagram to PDF file,
 
 ### Export specific region of diagram
 
-SfDiagram provides the supports to export any specific region of the diagram by using the [`Clip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_Clip) property of `ExportSettings` class.
+SfDiagram provides the supports to export any specific region of the diagram by using the [`Clip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_Clip) property of [`ExportSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html) class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,7 +169,7 @@ diagram.Export();
 
 ### Change the size of the exported files
 
-SfDiagram provides the supports to change the size of the exported image using the [`ImageSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ImageSize) property of `ExportSettings` class.
+SfDiagram provides the supports to change the size of the exported image using the [`ImageSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ImageSize) property of [`ExportSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html) class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -198,7 +198,7 @@ diagram.Export();
 
 ### Change the strech options of the exported files
 
-SfDiagram provides the supports to strech the exported image within given image size using the [ImageShrunk](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ImageShrunk) property of `ExportSettings` class. The streching options are as follows:
+SfDiagram provides the supports to strech the exported image within given image size using the [ImageShrunk](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ImageShrunk) property of [`ExportSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html) class. The streching options are as follows:
 
 | ImageShrunk | Description |
 |---|---|
@@ -234,7 +234,7 @@ diagram.Export();
 
 ### Change the background of the exported files
 
-SfDiagram provides the supports to change the background color of the exported image using the [`ExportBackground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ExportBackground) property of `ExportSettings` class.
+SfDiagram provides the supports to change the background color of the exported image using the [`ExportBackground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ExportBackground) property of [`ExportSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html) class.
 
 {% tabs %}
 {% highlight xaml %}
