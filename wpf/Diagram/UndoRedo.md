@@ -63,7 +63,7 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
 
 ## History actions
 
-The [`Action`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryEntry.html#Syncfusion_UI_Xaml_Diagram_HistoryEntry_Action) property of the `HistoryEntry` class is used to store the history of actions performed after initializing the diagram. Changing the size of a node, dragging a connection, deleting a node, clicking and dragging the mouse, and so on are some of the actions. These types of actions are saved as `Action` properties that can be performed. This property has the following actions:
+The [`Action`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryEntry.html#Syncfusion_UI_Xaml_Diagram_HistoryEntry_Action) property of the [`HistoryEntry`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryEntry.html) class is used to store the history of actions performed after initializing the diagram. Changing the size of a node, dragging a connection, deleting a node, clicking and dragging the mouse, and so on are some of the actions. These types of actions are saved as [`Action`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryEntry.html#Syncfusion_UI_Xaml_Diagram_HistoryEntry_Action) properties that can be performed. This property has the following actions:
 
 |HistoryAction|Description|
 |--|--|
@@ -89,7 +89,7 @@ The `Mode` property of the HistoryEntry class allows you to know whether the sou
 
 ## Stack limit
 
-The [`StackLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryManager.html#Syncfusion_UI_Xaml_Diagram_HistoryManager_StackLimit) property of `HistoryManager` class allows you to specify a stack limit value, which is used to limit the maximum number of history entries that can be stored in the Undo and Redo stacks.
+The [`StackLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryManager.html#Syncfusion_UI_Xaml_Diagram_HistoryManager_StackLimit) property of [`HistoryManager`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryManager.html) class allows you to specify a stack limit value, which is used to limit the maximum number of history entries that can be stored in the Undo and Redo stacks.
 
 {% tabs %}
 {% highlight xaml %}
@@ -114,7 +114,7 @@ diagram.HistoryManager = new HistoryManager()
 
 ## Start group action
 
-The `BeginComposite()` method of `HistoryManager` class allows you to log multiple actions at a time in the history manager stack. It is easier to undo or revert the changes made in the diagram in a single undo/redo process instead of reverting every actions one by one.
+The [`BeginComposite()`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryManager.html#Syncfusion_UI_Xaml_Diagram_HistoryManager_BeginComposite) method of `HistoryManager` class allows you to log multiple actions at a time in the history manager stack. It is easier to undo or revert the changes made in the diagram in a single undo/redo process instead of reverting every actions one by one.
 
 {% tabs %}
 {% highlight C# %}
@@ -131,7 +131,7 @@ diagram.HistoryManager.BeginComposite();
 
 ## End group action
 
-The `EndComposite()` method of the `HistoryManager` class allows you to end the group actions that are stored in the stack history.
+The [`EndComposite()`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryManager.html#Syncfusion_UI_Xaml_Diagram_HistoryManager_EndComposite) method of the `HistoryManager` class allows you to end the group actions that are stored in the stack history.
 
 {% tabs %}
 {% highlight C# %}
@@ -150,7 +150,7 @@ diagram.HistoryManager.EndComposite();
 
 ## How to view Undo/Redo stack
 
-History manager class of SfDiagram control allows you to view the undo and redo stack values where you can get what the actions, values, and elements are stored in the history manager stack by using the `HistoryChangedEventArgs` argument value of `HistoryChangedEvent` event.
+History manager class of SfDiagram control allows you to view the undo and redo stack values where you can get what the actions, values, and elements are stored in the history manager stack by using the [`HistoryChangedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryChangedEventArgs.html) argument value of [`HistoryChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_HistoryChangedEvent) event.
 
 {% tabs %}
 {% highlight C# %}
@@ -459,7 +459,7 @@ public class CustomDiagram: SfDiagram
 
 ## History changed event
 
-History manager class of `SfDiagram` control provides `HistoryChangedEvent` and `HistoryChangedCommand` to notify while there is a change in undo/redo stack values.
+History manager class of [`SfDiagram`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) control provides [`HistoryChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_HistoryChangedEvent) and `HistoryChangedCommand` to notify while there is a change in undo/redo stack values.
 
 {% tabs %}
 {% highlight xaml %}
