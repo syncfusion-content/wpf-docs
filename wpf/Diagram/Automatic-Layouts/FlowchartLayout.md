@@ -389,7 +389,7 @@ layoutManager.Layout = new FlowchartLayout()
 
 ## Customize vertical and horizontal spacing 
 
-Control the spacing between the nodes both horizontally and vertically using the `HorizontalSpacing` and `VerticalSpacing` properties of `FlowchartLayout` class.
+Control the spacing between the nodes both horizontally and vertically using the [`HorizontalSpacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.TreeLayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_TreeLayoutBase_HorizontalSpacing) and [`VerticalSpacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.TreeLayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_TreeLayoutBase_VerticalSpacing) properties of `FlowchartLayout` class.
 
 {% tabs %}
 {% highlight xaml %}
