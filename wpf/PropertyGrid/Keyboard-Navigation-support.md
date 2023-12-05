@@ -52,7 +52,7 @@ The following table explains how the navigation performed between properties,
 <tr>
 <td>7</td>
 <td>Tab</td>
-<td>When the PropertyName field is focused then the focus will be moved to value field and for next {{'**Tab**'| markdownify }} key press, focus will move to next property Name field from current property Value field.
+<td>Selection will be moved to the first item when the PropertyGrid doesn't have a selected item. It moves out of the PropertyGrid on the next Tab key when the focus is within the PropertyGrid.
 <br/> 
 <br/>
 <img src="KeyNavigation-Images/Tab-Key-Navigation.png" alt="Explaining Name and Value field"/>
