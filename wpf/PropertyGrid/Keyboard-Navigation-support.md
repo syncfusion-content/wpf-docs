@@ -55,7 +55,10 @@ The following table explains how the navigation performed between properties,
 <td>Selection will be moved to the first item when the PropertyGrid doesn't have a selected item. It moves out of the PropertyGrid on the next Tab key when the focus is within the PropertyGrid.
 <br/> 
 <br/>
-<img src="KeyNavigation-Images/Tab-Key-Navigation.png" alt="Explaining Name and Value field"/>
+<img src="KeyNavigation-Images/First-Tab-Key-Navigation.png" alt="Pressing the Tab key focuses on the first item"/>
+<br/>
+<br/>
+<img src="KeyNavigation-Images/Next-Tab-Key-Navigation.png" alt="Pressing the Tab key for the second time in first item, it moves out of the PropertyGrid"/>
 <br/>
 <br/>
 </td>
