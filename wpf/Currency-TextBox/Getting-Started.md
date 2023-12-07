@@ -21,11 +21,11 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF CurrencyTextBox via designer
 
-You can add the [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
+You can add the [CurrencyTextBox](https://www.syncfusion.com/wpf-controls/currency-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.WPF
 
-![Dragging WPF CurrencyTextBox Control from Toolbox to Designer](Getting-Started_images/wpf-currency-textbox-toolbox.png)
+![Dragging WPF Currency TextBox Control from Toolbox to Designer](getting-started_images/wpf-currency-textbox-toolbox.png)
 
 ## Adding WPF CurrencyTextBox via XAML
 
@@ -99,7 +99,7 @@ this.Content = currencyTextBox;
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![WPF CurrencyTextBox Control](Getting-Started_images/wpf-currency-textbox-control.png)
+![WPF Currency TextBox Control](getting-started_images/wpf-currency-textbox-control.png)
 
 ## Setting Value
 
@@ -121,7 +121,7 @@ currencyTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF CurrencyTextBox diplays Value](Getting-Started_images/wpf-currency-textbox-value.png)
+![WPF Currency TextBox diplays Value](getting-started_images/wpf-currency-textbox-value.png)
 
 N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the CurrencyTextBox. Use only the `Value` property.
 
@@ -165,7 +165,7 @@ class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![WPF CurrencyTextBox displays Binding Value](Getting-Started_images/wpf-currency-textbox-binding-value.png)
+![WPF Currency TextBox displays Binding Value](getting-started_images/wpf-currency-textbox-binding-value.png)
 
 ## Value Changed Notification
 
@@ -223,7 +223,7 @@ currencyTextBox.Value = 455;
 {% endhighlight %}
 {% endtabs %}
 
-![Restricts Minimum and Maximum Value of WPF CurrencyTextBox](Getting-Started_images/wpf-currency-textbox-max-and-min-value.png)
+![Restricts Minimum and Maximum Value of WPF Currency TextBox](getting-started_images/wpf-currency-textbox-max-and-min-value.png)
 
 ## Step Interval to increase or decrease the value
 
@@ -250,7 +250,7 @@ currencyTextBox.ScrollInterval = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF CurrencyTextBox displays Incrementing Interval Value](Getting-Started_images/wpf-currency-textbox-step-interval.png)
+![WPF Currency TextBox displays Incrementing Interval Value](getting-started_images/wpf-currency-textbox-interval-value.png)
 
 ## Formatting the value
 
@@ -283,7 +283,7 @@ currencyTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![WPF CurrencyTextBox with Formatting](Getting-Started_images/wpf-currency-textbox-number-format.png)
+![WPF Currency TextBox with Formatting](getting-started_images/wpf-currency-textbox-formatting.png)
 
 ## Setting the Culture
 
@@ -306,7 +306,7 @@ currencyTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 {% endhighlight %}
 {%endtabs%}
 
-![WPF CurrencyTextBox with Culture](Getting-Started_images/wpf-currency-textbox-culture.png)
+![WPF Currency TextBox with Culture](getting-started_images/wpf-currency-textbox-culture.png)
 
 N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
 
@@ -318,4 +318,4 @@ CurrencyTextBox supports various built-in themes. Refer to the below links to ap
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Applying Theme to WPF CurrencyTextBox](Getting-Started_images/wpf-currency-textbox-theme.png)
+  ![Applying Theme to WPF Currency TextBox](getting-started_images/wpf-currency-textbox-theme.png)

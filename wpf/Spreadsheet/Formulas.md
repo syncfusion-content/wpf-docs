@@ -53,6 +53,34 @@ spreadsheet.DeleteNamedRange(name);
 {% endhighlight %}
 {% endtabs %}
 
+## ExcelLikeComputations
+
+To return the result of formula computations of Essential Calculate like Microsoft Excel computational result, this bool property [ExcelLikeComputations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.FormulaEngine.html#Syncfusion_UI_Xaml_CellGrid_FormulaEngine_ExcelLikeComputations) is set to true.
+
+{% tabs %}
+{% highlight c# %}
+//Event subscription
+spreadsheet.WorkbookLoaded += OnWorkbookLoaded; 
+
+//Event customization
+private void OnWorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
+{
+    //Enable Excel-like computation
+    spreadsheet.ActiveGrid.FormulaEngine.ExcelLikeComputations = true;
+}
+{% endhighlight %}
+{% highlight vb %}
+' Event subscription
+AddHandler spreadsheet.WorkbookLoaded, AddressOf OnWorkbookLoaded
+
+' Event customization
+Private Sub OnWorkbookLoaded(ByVal sender As Object, ByVal args As WorkbookLoadedEventArgs)
+	' Enable Excel-like computation
+	spreadsheet.ActiveGrid.FormulaEngine.ExcelLikeComputations = True
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
 ## Supported functions
 
 Following is a list of functions that are supported by SfSpreadsheet

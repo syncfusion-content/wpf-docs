@@ -13,7 +13,7 @@ Stencil symbol titles, headers, names, tooltips, and symbols display modes can b
 
 ## Add a title to the Stencil
 
-The [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Title) property of the `Stencil` class is used to add the title to the stencil. Please find the following code example that explains how to provide the content to the stencil.
+The [`Title`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Title) property of the `Stencil` class is used to add the title to the stencil. Please find the following code example that explains how to provide the content to the stencil.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ The [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stenci
 
 ### Customize the stencil title
 
-The appearance of the title can be customized by using the  [TitleTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_TitleTemplate) property of the `Stencil` class.
+The appearance of the title can be customized by using the  [`TitleTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_TitleTemplate) property of the `Stencil` class.
 
 The following code example explains how to add a title and its customization.
 
@@ -121,7 +121,7 @@ To specify the identifying name to that element, use the `Name` property of the 
 
 ### Custom tool tip to the symbol
 
-When [SymbolsDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolsDisplayMode) is set to `IconsOnly`, the [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolViewModel_Name) property of the diagramming elements(NodeViewModel, ConnectorViewModel, GroupViewModel, and more) is displayed as a tooltip of that symbol when you move the mouse over it, but you can also give that symbol as a custom tooltip.
+When [`SymbolsDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolsDisplayMode) is set to `IconsOnly`, the [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolViewModel_Name) property of the diagramming elements(NodeViewModel, ConnectorViewModel, GroupViewModel, and more) is displayed as a tooltip of that symbol when you move the mouse over it, but you can also give that symbol as a custom tooltip.
 
 Please find the following code example.
 
@@ -174,18 +174,18 @@ N> The `DataContext` of the `Symbol` will be any diagramming elements such as `N
 
 ## Stencil display mode
 
-The stencil view can be toggled between the expanded and compact modes by clicking the expander at the top right corner of the Stencil during run-time. You can do the same using the [DisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_DisplayMode) property of the `Stencil` class.
+The stencil view can be toggled between the expanded and compact modes by clicking the expander at the top right corner of the Stencil during run-time. You can do the same using the [`DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_DisplayMode) property of the `Stencil` class.
 
 |DisplayMode|Description|Output|
 |----------|-----------|--------|
 | Compact | The stencil always shows as a narrow sliver which can be opened to full width |![Expanded](Stencil_images/ExpandModeExpand.PNG) |
 | Expanded | Specifies to update the Expanded state of the stencil |![Symbol](Stencil_images/Stencil_Compact.PNG)|
 
-You can show or hide the expander icon by using the [ShowDisplayModeToggleButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowDisplayModeToggleButton) property of the `Stencil` class. 
+You can show or hide the expander icon by using the [`ShowDisplayModeToggleButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowDisplayModeToggleButton) property of the `Stencil` class. 
 
 ## Symbols display mode
 
-Stencil has option to control how the symbols should be displayed. By default, symbols will be displayed only by its icon. This can be changed by using [SymbolsDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolsDisplayMode) property of `Stencil` class.
+Stencil has option to control how the symbols should be displayed. By default, symbols will be displayed only by its icon. This can be changed by using [`SymbolsDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolsDisplayMode) property of `Stencil` class.
 
 {% tabs %}
 {% highlight xaml %}

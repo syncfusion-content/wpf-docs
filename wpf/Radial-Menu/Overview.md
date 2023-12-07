@@ -21,7 +21,7 @@ The Radial Menu displays a hierarchical menu in a circular layout. Typically use
 
 
 
-![Overview_img1](Overview_images/Overview_img1.png)
+![Overview in WPF Radial Menu](overview_images/wpf-radial-menu-overview.png)
 
 
 

@@ -13,7 +13,7 @@ A set of stencil symbols can be combined together to create a group and many num
 
 ## Group symbols into a category
 
-The symbols of the same category can be grouped using the [SymbolGroupProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html). The `SymbolGroupProvider` groups based on the [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupProvider_MappingName) property, which has the name of the property whose value will be in the group category. In the following code example, the `MappingName` has a value of "Key" and the `SymbolGroupProvider` will create the group, based on the value of the `Key` property. The symbols with the same category name could be grouped under that category.
+The symbols of the same category can be grouped using the [SymbolGroupProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html). The `SymbolGroupProvider` groups based on the [`MappingName`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupProvider_MappingName) property, which has the name of the property whose value will be in the group category. In the following code example, the `MappingName` has a value of "Key" and the `SymbolGroupProvider` will create the group, based on the value of the `Key` property. The symbols with the same category name could be grouped under that category.
 
 {% tabs %}
 {% highlight xaml %}
@@ -170,7 +170,7 @@ stencil.SymbolGroups = new SymbolGroups()
 
 ## Customize the appearance of the symbol group header
 
-You can customize the appearance of each [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html) header by changing the [header](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Header.html) property style. The following code explains how to customize the appearance of the symbol group header.
+You can customize the appearance of each [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html) header by changing the [`header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Header.html) property style. The following code explains how to customize the appearance of the symbol group header.
 
 {% tabs %}
 
@@ -209,7 +209,7 @@ You can customize the appearance of each [SymbolGroup](https://help.syncfusion.c
 
 ## Expand and collapse the symbol group
 
-When there is more number of symbol groups in the stencil, then you can expand and collapse the symbol groups using the [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ExpandMode) property of `Stencil` class. The `ExpandMode` property allows you to decide the number of symbol groups that can be expanded in a stencil.
+When there is more number of symbol groups in the stencil, then you can expand and collapse the symbol groups using the [`ExpandMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ExpandMode) property of `Stencil` class. The `ExpandMode` property allows you to decide the number of symbol groups that can be expanded in a stencil.
 
 |ExpandMode|Description|Output|
 |----------|-----------|-----------|
@@ -221,7 +221,7 @@ When there is more number of symbol groups in the stencil, then you can expand a
 
 ## Symbol categories
 
-There are plenty of shapes available in the diagram resource dictionary. It takes more time and allows repeated code samples to add all symbols to the stencil. To avoid this, the shapes are split and categorized as a list of symbols in the [StencilCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.StencilCategory.html ) class. You can add more than one category using the [Categories](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Categories) property of the stencil class.
+There are plenty of shapes available in the diagram resource dictionary. It takes more time and allows repeated code samples to add all symbols to the stencil. To avoid this, the shapes are split and categorized as a list of symbols in the [StencilCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.StencilCategory.html ) class. You can add more than one category using the [`Categories`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Categories) property of the stencil class.
 
 The `Categories` can be mentioned by using the following properties of the `StencilCategory` class:
 
@@ -377,4 +377,4 @@ public class StencilViewModel : Stencil
 
 ## See also
 
-* [How to expand all SymbolGroups?](https://www.syncfusion.com/kb/5878/how-to-expand-all-symbolgroups)
+* [How to expand all SymbolGroups?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)

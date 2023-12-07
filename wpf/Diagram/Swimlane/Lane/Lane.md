@@ -15,7 +15,7 @@ The number of lanes can be added to swimlane and rendered in the diagram. The la
 
 ## Create an empty lane
 
-* You can create the [Lane]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html)) and add into the [Lanes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Lanes) collection of the Swimlane.
+* You can create the [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html) and add into the [Lanes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Lanes) collection of the Swimlane.
 
 >Note: For the Horizontal Swimlane, you must set the UnitHeight of the Lane. For the Vertical Swimlane, you must set UnitWidth of the Lane.
 

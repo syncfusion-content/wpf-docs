@@ -13,10 +13,10 @@ The [`Activity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.C
 
 There are two types of activities. They are listed as follows:
 
-* [Task](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#Task): Occurs within a process and it is not broken down to a finer level of detail.
-* [CollapsedSubProcess](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#CollapsedSubProcess): Occurs within a process and it is broken down to a finer level of detail.
+* [`Task`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#Task): Occurs within a process and it is not broken down to a finer level of detail.
+* [`CollapsedSubProcess`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#CollapsedSubProcess): Occurs within a process and it is broken down to a finer level of detail.
 
-You can specify the any one of the above activity type using the [ActivityType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_ActivityType) property of `BpmnNodeViewModel.`
+You can specify the any one of the above activity type using the [`ActivityType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_ActivityType) property of [`BpmnNodeViewModel.`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -219,7 +219,7 @@ The following table contains various types of BPMN loops.
 
 ### Compensation
 
-Compensation is triggered when the operation is partially failed and enabled it with the compensation property in both task and the collapsed subprocess. To create a compensation, you have to enable the [IsCompensationActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCompensationActivity) property of the BPMNNodeViewModel.
+Compensation is triggered when the operation is partially failed and enabled it with the compensation property in both task and the collapsed subprocess. To create a compensation, you have to enable the [IsCompensationActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCompensationActivity) property of the BpmnNodeViewModel.
 
 >Note: By default, the IsCompensationActivity property is false.
 
@@ -266,7 +266,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ### Call
 
-A Call activity is a global sub-process that is reused at various points of the business flow. To create a Call activity, you have to enable the [IsCallActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCallActivity) property of the BPMNNodeViewModel.
+A Call activity is a global sub-process that is reused at various points of the business flow. To create a Call activity, you have to enable the [IsCallActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCallActivity) property of the BpmnNodeViewModel.
 
 >Note: By default, the IsCallActivity property is false.
 
@@ -313,7 +313,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ### Ad-Hoc
 
-An ad-hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition. To create a ad-hoc activity, you have to enable the [`IsAdhocActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsAdhocActivity) property of the BPMNNodeViewModel. 
+An ad-hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition. To create a ad-hoc activity, you have to enable the [`IsAdhocActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsAdhocActivity) property of the BpmnNodeViewModel. 
 
 >Note: By default, the IsAdhocActivity property is false.
 

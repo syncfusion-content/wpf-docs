@@ -14,25 +14,27 @@ The Visual Studio Project Templates for the Syncfusion WPF platform allow you to
 
 I> The Syncfusion WPF templates are available from v16.1.0.24. 
 
+> WPF Project Template works seamlessly with Visual Studio 2015 or lower. For the Visual Studio 2017 or later versions, it is recommended to use a [WPF Template Studio](https://help.syncfusion.com/wpf/visual-studio-integration/template-studio).
+
 Create the Syncfusion WPF project using the Visual Studio Project Template by following the steps below: 
 
-> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later, and for Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/download-and-installation) help topic.
+> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio 2015 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/wpf/visual-studio-integration/download-and-installation) help topic.
 
 1.	To create a Syncfusion WPF project, follow either one of the options below:
 
 	**Option 1:**  
-	Click **Extensions >Syncfusion** Menu and choose **Essential Studio for WPF > Create New Syncfusion Project…**  in **Visual Studio**.
+	Click **Syncfusion** Menu and choose **Essential Studio for WPF > Create New Syncfusion Project…**  in **Visual Studio**.
     
-	![Choose Syncfusion WPF Application from Visual Studio new project dialog via Syncfusion menu](Project-Template-images/Syncfusion_Menu_ProjectTemplate.png)
+	![Choose Syncfusion WPF Application from Visual Studio new project dialog via Syncfusion menu](Project-Template-images/Syncfusion-Menu.png)
 
-	N> In Visual Studio 2017 or lower, you can see the  Syncfusion menu directly in the Visual Studio menu.
+	N> In Visual Studio 2015 or lower, you can see the  Syncfusion menu directly in the Visual Studio menu.
 
 	**Option 2:**   
 	Choose **File -> New -> Project**. Opens a new dialog to create a new project. By filtering the project type with Syncfusion or using the Syncfusion keyword in the search option, you can get the templates offered by Syncfusion for WPF.
 
 	![Choose Syncfusion WPF Application from Visual Studio new project dialog](Project-Template-images/Syncfusion-Project-Template-Gallery2019-1.png)
 
-	In Visual Studio 2017 or lower, Select **File > New > Project** and navigate to **Syncfusion > Windows > Syncfusion WPF Application** in Visual Studio. 
+	In Visual Studio 2015 or lower, Select **File > New > Project** and navigate to **Syncfusion > Windows > Syncfusion WPF Application** in Visual Studio. 
 
 	![Choose Syncfusion WPF Application from Visual Studio new project dialog](Project-Template-images/Syncfusion-Project-Template-Gallery-1.png)
 
@@ -44,20 +46,11 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
   
 	![Syncfusion WPF project configuration wizard](Project-Template-images/Syncfusion-Project-Template-Gallery2019-2.png)
                                                  
-	In Visual Studio 2017 or lower, Syncfusion WPF Application project configuration wizard. 
+	In Visual Studio 2015 or lower, Syncfusion WPF Application project configuration wizard. 
 
 	![Syncfusion WPF project configuration wizard](Project-Template-images/Syncfusion-Project-Template-Gallery-2.png)
 
 	**Project Configurations**
-
-	**Project Type:** Choose .Net 7.0 and .Net 6.0 or .Net Framework as the project type.
-
-	N> From Visual Studio 2019, Project type selection option will be available in Syncfusion WPF Project template configuration. The .Net 6.0 and .Net 7.0 option will be listed in project type when only the .Net 6.0 and .Net 7.0 SDK setup has been installed.
-
-	> .NET 6.0 version is available from v19.4.0.38 and it support from Visual Studio 2022.
-
-	> .NET 7.0 version is available from v20.4.0.38 and it support from Visual Studio 2022.
-
 
 	**Language:** Select the language, either CSharp or VB.
 
@@ -67,7 +60,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	**Reference From:** Choose the assembly location such as NuGet, GAC Location, or Essential Studio installed location, from where the assembly is added to the project.
 
-	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. You can use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 6.0 and .NET 7.0 from project type option in Visual Studio.
+	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. You can use the NuGet option instead of installing the Syncfusion Essential WPF setup.
 
 	**Installed ES Build Version:** To add the appropriate version assemblies to the project, choose the build version.
 
@@ -87,6 +80,6 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	![Syncfusion WPF project created with readme](Project-Template-images/Syncfusion-Project-Template-Gallery-10.png)
 
-5.	Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+5.	Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio.
 
 	![Syncfusion license registration required information dialog in Syncfusion WPF project](Project-Template-images/Syncfusion-Project-Template-Gallery-9.png)   

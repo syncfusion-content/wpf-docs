@@ -13,7 +13,7 @@ This section explains how to create a WPF [ColorPicker](https://www.syncfusion.c
 
 ## Structure of ColorPicker
 
-![Structure of WPF ColorPicker](Getting-Started_images/ColorPicker_Structure.png)
+![Structure of WPF Color Picker](getting-started_images/wpf-color-picker-structure.png)
 
 ## Assembly deployment
 
@@ -27,7 +27,7 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 * Syncfusion.Shared.WPF
 
-   ![ColorPicker Drag and dropped from ToolBox](Getting-Started_images/ColorPicker_Drag_and_dropped_from_ToolBox.png)
+   ![WPF Color Picker Drag and dropped from ToolBox](getting-started_images/wpf-color-picker-drag-and-dropped-from-toolbox.png)
 
 ## Adding WPF ColorPicker via XAML
 
@@ -63,7 +63,7 @@ To add the `ColorPicker` manually in XAML, follow these steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![ColorPicker Dropdown](Getting-Started_images/ColorPicker_Dropdown.png)
+![WPF Color Picker Dropdown](getting-started_images/wpf-color-picker-dropdown.png)
 
 ## Adding WPF ColorPicker via C#
 
@@ -105,7 +105,7 @@ colorPicker.Height=100;
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-![ColorPicker Control](Getting-Started_images/ColorPicker_Dropdown.png)
+![WPF Color Picker Control](getting-started_images/wpf-color-picker-dropdown.png)
 
 ## Select a Color
 
@@ -130,7 +130,7 @@ colorPicker.Color = Colors.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![Choose a color from ColorPicker](Getting-Started_images/ColorPicker_select-a-solidcolor.png)
+![Choose a color from WPF Color Picker](getting-started_images/wpf-color-picker-select-color.png)
 
 ### Select a Gradient Color
 
@@ -172,7 +172,7 @@ colorPicker.Brush = linearGradient;
 {% endhighlight %}
 {% endtabs %}
 
-![Choose a Linear Gradient from ColorPicker](Getting-Started_images/ColorPicker_select-a-LinearGradient.png)
+![Choose a Linear Gradient from WPF Color Picker](getting-started_images/wpf-color-picker-linear-gradient.png)
 
 #### Radial Gradient ####
 
@@ -210,13 +210,13 @@ colorPicker.Brush = radialGradient;
 {% endhighlight %}
 {% endtabs %}
 
-![Choose a Radial Gradient from ColorPicker](Getting-Started_images/ColorPicker_select-a-RadialGradient.png)
+![Choose a Radial Gradient from WPF Color Picker](getting-started_images/wpf-color-picker-radial-gradient.png)
 
 ### Change Selected Color at runtime
 
 `ColorPicker` consist of bunch of input components to select color and edit its properties at runtime.
 
-![Choose and edit a color from ColorPicker at runtime](Getting-Started_images/ColorPicker_Choose_a_color.gif)
+![Choose and edit a color from WPF Color Picker at runtime](getting-started_images/wpf-color-picker-Choose-edit-color.gif)
 
 ## Color and Brush changed notification
 
@@ -275,13 +275,13 @@ colorPicker.IsAlphaVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker hides the Alpha slider and vale editor](ScRGB-Color_images/ColorPicker_IsAlphaVisible.png)
+![WPF Color Picker hides the Alpha slider and vale editor](scrgb-color_images/wpf-color-picker-alpha-and-vale.png)
 
 ## Switch between Solid, Linear and Gradient brush mode
 
 We can change the color selection mode directly by clicking on the corresponding Solid, Linear or Gradient brush mode buttons which are placed in the bottom right corner of the `ColorPicker`.
 
-![ColorPicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/ColorPicker_Switch_brushes.gif)
+![WPF Color Picker popup gradient Editor](colorpicker-with-gradient-support_images/wpf-color-picker-switch-brushes.png)
 
 ### Restrict the brush mode from Solid to Gradient
 
@@ -302,7 +302,7 @@ colorPicker.EnableSolidToGradientSwitch = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_EnableSolidToGradientSwitch.png)
+![WPF Color Picker Solid to Gradient brush transition is disabled](colorpicker-with-gradient-support_images/wpf-color-picker-gradient-transition.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Over%20all%20features) to download the sample that showcases the `ColorPicker` overall features.
 
@@ -314,4 +314,4 @@ ColorPicker supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF ColorPicker](Getting-Started_images/ColorPicker_theme_Support.png)
+  ![Setting theme to WPF Color Picker](getting-started_images/wpf-color-picker-theme-support.png)

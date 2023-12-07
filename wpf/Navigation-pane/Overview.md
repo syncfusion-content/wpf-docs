@@ -13,7 +13,7 @@ The GroupBar control implements list-type controls in the UI, similar to the Mic
 
 ## Control Structure
 
-![wpf group bar control](Getting-Started_images/Getting-Started_img1.png)
+![wpf group bar control](getting-started_images/wpf-group-bar-overview.png)
 
 ## Features
 

@@ -123,7 +123,7 @@ public class OrderInfo
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![WPF DataGrid diplays Multiple Pages using SfDataPager](Paging_images/wpf-datagrid-multiple-page.png)
+![WPF DataGrid diplays Multiple Pages using SfDataPager](paging_images/wpf-datagrid-multiple-page.png)
 
 #### Limitations
 
@@ -142,9 +142,9 @@ Follow the below steps to load the `ItemsSource` for page in on-demand,
  
 2. Set [SfDataPager.PageCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageCount) based on total number of records and [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property.
 
-3. Use [OnDemandLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html) event to load the `ItemsSource` for current page using [LoadDynamicItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_LoadDynamicItems_System_Int32_System_Collections_IEnumerable_) method.
+3. Use [OnDemandLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_OnDemandLoading) event to load the `ItemsSource` for current page using [LoadDynamicItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_LoadDynamicItems_System_Int32_System_Collections_IEnumerable_) method.
 
-[OnDemandLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html) event is raised when SfDataPager moves to another page and you can load the `ItemsSource` for corresponding page through `OnDemandLoading` event. 
+[OnDemandLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_OnDemandLoading) event is raised when SfDataPager moves to another page and you can load the `ItemsSource` for corresponding page through `OnDemandLoading` event. 
 
 [OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs.html) has the following members,
 
@@ -402,13 +402,13 @@ private void FilterBtn_Click(object sender, RoutedEventArgs e)
 
 
 Here, records are filtered based on the textbox text in clicking event of Filter button. Initially `PageCount` is 5 and it is changed as 3 once the records are filtered.
-![WPF DataGrid displays Altering Page Count for DataPager while Filtering](Paging_images/wpf-datagrid-change-page-count.png)
+![WPF DataGrid displays Altering Page Count for DataPager while Filtering](paging_images/wpf-datagrid-datapager.png)
 
-You can refer the [sample](http://www.syncfusion.com/downloads/support/directtrac/133329/ze/DataPager398566735) from here.
+You can refer the [sample](https://www.syncfusion.com/downloads/support/directtrac/133329/ze/DataPager398566735) from here.
 
 ### Sorting complete collection
 
-You can sort the complete collection with ‘OnDemandPaging’ by using [SfDataGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+You can sort the complete collection with ‘OnDemandPaging’ by using [SfDataGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortColumnsChanging) event.
 In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
 
 
@@ -485,7 +485,7 @@ private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Control
 {% endtabs %}
 
 
-![WPF DataGrid displys Sorting with loaded DataPager](Paging_images/wpf-datagrid-sorting.png)
+![WPF DataGrid displys Sorting with loaded DataPager](paging_images/wpf-datagrid-sorting.png)
 
 ### Loading ItemsSource for page using async and await
 

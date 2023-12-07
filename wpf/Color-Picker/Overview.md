@@ -9,9 +9,9 @@ documentation: ug
 
 # WPF color picker (ColorPicker) Overview
 
- WPF [ColorPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker ) is an user interface to select and adjust color values. This supports various color specifications like RGB (Red Green Blue), HSV (Hue Saturation Value), and Hex codes.
+ WPF [ColorPicker](https://www.syncfusion.com/wpf-controls/colorpicker) is an user interface to select and adjust color values. This supports various color specifications like RGB (Red Green Blue), HSV (Hue Saturation Value), and Hex codes.
 
- ![Syncfusion WPF ColorPicker-ColorEdit](Getting-Started_images/ColorEdit_Overview.png)
+ ![Syncfusion WPF Color Picker](getting-started_images/wpf-color-picker-overview.png)
 
 This section also discusses the WPF `ColorEdit` control, which is similar to the `ColorPicker`.
 

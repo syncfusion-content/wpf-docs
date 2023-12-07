@@ -560,16 +560,15 @@ You can download the sample demo [here](https://www.syncfusion.com/downloads/sup
 
 ### GroupExpanding event
 
-The [SfDataGrid.GroupExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the group is being expanded.
+The [SfDataGrid.GroupExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupExpanding) event occurs when the group is being expanded.
  
 The [GroupChangingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members.
 
 [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) - Gets the group that’s being expanded.
 
-[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group expansion.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group expansion.
  
-You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) to `true`.
-
+You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -586,7 +585,7 @@ void dataGrid_GroupExpanding(object sender, Syncfusion.UI.Xaml.Grid.GroupChangin
 
 ### GroupExpanded event
 
-The [SfDataGrid.GroupExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs after the group is expanded.
+The [SfDataGrid.GroupExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupExpanded) event occurs after the group is expanded.
 
  
 The [GroupChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member.
@@ -595,16 +594,16 @@ The [GroupChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 ### GroupCollapsing event 
 
-The [SfDataGrid.GroupCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the group is being collapsed.
+The [SfDataGrid.GroupCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupCollapsing) event occurs when the group is being collapsed.
 
 The [GroupChangingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html)  of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member.
 
 [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) - Gets the group that’s being collapsed.
 
-[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group collapsing.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group collapsing.
 
  
-You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `GroupCollapsing` event.
+You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `GroupCollapsing` event.
 
 
 {% tabs %}
@@ -622,37 +621,37 @@ void dataGrid_GroupCollapsing(object sender, GroupChangingEventArgs e)
 
 ### GroupCollapsed event
  
-The [SfDataGrid.GroupCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs after the group is collapsed.
+The [SfDataGrid.GroupCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupCollapsed) event occurs after the group is collapsed.
  
 [GroupChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html) of the `GroupCollapsed` event  provides the information about collapsed group and it contains the following member.
 
 [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangedEventArgs_Group) - Gets the collapsed group.
 
 ## See Also
-[How to remove the gridline of WPF DataGrid (SfDataGrid) with grouping?](https://www.syncfusion.com/kb/11009)
+[How to remove the gridline of WPF DataGrid (SfDataGrid) with grouping?](https://support.syncfusion.com/kb/article/9540/how-to-remove-the-gridline-of-wpf-datagrid-sfdatagrid-with-grouping)
 
-[How to maintain expanded state of groups in printing?](https://www.syncfusion.com/kb/10042)
+[How to maintain expanded state of groups in printing?](https://support.syncfusion.com/kb/article/8842/how-to-maintain-expanded-state-of-groups-in-printing-in-wpf-datagrid-sfdatagrid)
 
-[How to show vertical border to the column wise summary rows?](https://www.syncfusion.com/kb/10038)
+[How to show vertical border to the column wise summary rows?](https://support.syncfusion.com/kb/article/8850/how-to-show-vertical-border-to-the-column-wise-summary-rows-in-wpf-datagrid-sfdatagrid)
 
-[How to define summary rows using AttachedProperty in datagrid](https://www.syncfusion.com/kb/9838)
+[How to define summary rows using AttachedProperty in datagrid](https://support.syncfusion.com/kb/article/8658/how-to-define-summary-rows-using-attached-property-in-wpf-datagrid-)
 
-[How to displaying Group header name based on other column](https://www.syncfusion.com/kb/7837)
+[How to displaying Group header name based on other column](https://support.syncfusion.com/kb/article/7208/how-to-display-the-group-header-based-on-the-column-name-in-wpf-datagrid-sfdatagrid)
 
-[How to clear selection while grouping/ungrouping?](https://www.syncfusion.com/kb/6650)
+[How to clear selection while grouping/ungrouping?](https://support.syncfusion.com/kb/article/6161/how-to-clear-the-selection-while-grouping-or-ungrouping-in-wpf-datagrid-sfdatagrid)
 
-[How to add selection to data rows of each group on expanding its CaptionSummaryRow?](https://www.syncfusion.com/kb/4211)
+[How to add selection to data rows of each group on expanding its CaptionSummaryRow?](https://support.syncfusion.com/kb/article/4115/how-to-add-selection-to-data-rows-of-each-group-on-expanding-its-captionsummaryrow-in-wpf-grid-)
 
-[How to change the CaptionSummaryRow Style based on the grouping level?](https://www.syncfusion.com/kb/4147)
+[How to change the CaptionSummaryRow Style based on the grouping level?](https://support.syncfusion.com/kb/article/4034/how-to-change-the-captionsummaryrow-style-based-on-the-grouping-level-in-wpf-sfdatagrid)
 
-[How to Change the GroupCaptionText based on Display member of the GridComboboxColumn?](https://www.syncfusion.com/kb/3446)
+[How to Change the GroupCaptionText based on Display member of the GridComboboxColumn?](https://support.syncfusion.com/kb/article/3569/how-to-change-the-groupcaptiontext-based-on-display-member-of-the-gridcomboboxcolumn)
 
-[How to add controls like TextBox in GroupDropArea?](https://www.syncfusion.com/kb/3370)
+[How to add controls like TextBox in GroupDropArea?](https://support.syncfusion.com/kb/article/3759/how-to-add-controls-like-textbox-in-groupdroparea-in-wpf-datagrid)
 
-[How to customize the CaptionSummaryCell text in the SfDataGrid?](https://www.syncfusion.com/kb/3249)
+[How to customize the CaptionSummaryCell text in the SfDataGrid?](https://support.syncfusion.com/kb/article/3433/how-to-customize-the-captionsummarycell-text-in-wpf-datagrid)
 
-[How to apply the Custom Grouping while grouping the column using GroupDropArea?](https://www.syncfusion.com/kb/2732)
+[How to apply the Custom Grouping while grouping the column using GroupDropArea?](https://support.syncfusion.com/kb/article/2940/how-to-apply-the-custom-grouping-while-grouping-the-column-using-groupdroparea)
 
-[How to avoid selection while grouping and ungrouping in SfDataGrid?](https://www.syncfusion.com/kb/2531)
+[How to avoid selection while grouping and ungrouping in SfDataGrid?](https://support.syncfusion.com/kb/article/2809/how-to-avoid-selection-while-grouping-and-ungrouping-in-sfdatagrid)
 
-[How to customize the GroupDropArea?](https://www.syncfusion.com/kb/2434)
+[How to customize the GroupDropArea?](https://support.syncfusion.com/kb/article/2878/how-to-customize-the-groupdroparea-in-wpf-datagrid-control)

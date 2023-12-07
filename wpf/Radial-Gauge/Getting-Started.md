@@ -497,6 +497,6 @@ SfCircularGauge supports various built-in themes. Refer to the below links to ap
 
 ## See also
 
-[How to apply themes for SfCircularGauge](https://www.syncfusion.com/kb/2514/how-to-apply-themes-for-sfcirculargauge)
+[How to apply themes for SfCircularGauge](https://support.syncfusion.com/kb/article/2832/how-to-apply-themes-for-sfcirculargauge)
 
-[How to create dynamic application driven by excelling formulas using SfCircularGauge](https://www.syncfusion.com/kb/2391/creating-dynamic-application-driven-by-excelling-formulas-using-circulargauge)
+[How to create dynamic application driven by excelling formulas using SfCircularGauge](https://support.syncfusion.com/kb/article/2720/how-to-prepare-car-dashboard-demo-using-sfcirculargauge)

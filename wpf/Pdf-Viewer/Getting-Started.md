@@ -31,6 +31,9 @@ The following assemblies are required in your WPF application to use the PDF Vie
 <td>Syncfusion.Pdf.Base</td>
 <td>This library contains the PDF reader and creator that supports the PDF Viewer.</td></tr>
 <tr>
+<td>Syncfusion.PdfToImageConverter.Base</td>
+<td>This library is responsible for Pdfium integration and image generation, enhancing the capabilities of the PDF Viewer.</td></tr>
+<tr>
 <td>Syncfusion.PdfViewer.WPF</td>
 <td>This component contains the rendering area and other related UI elements.</td>
 </tr>
@@ -39,6 +42,7 @@ The following assemblies are required in your WPF application to use the PDF Vie
 <td>This component contains various UI controls (ColorPickerPalette and Numeric UpDown) that are used in the PDF Viewer.</td></tr>
 </table>
 
+N> Starting with version 23.1.x, a reference to the Syncfusion.PdfToImageConverter.Base assembly is necessary for PdfViewer applications.
 N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your WPF application to use our components.
 
 ## Create a simple PDF Viewer application 
@@ -52,7 +56,7 @@ Follow these steps to drag and drop the PdfViewerControl from the toolbox.
 2. Open the Visual Studio toolbox.
 3. Navigate to <b>Syncfusion WPF Toolbox</b> tab and drag the `PdfViewerControl` toolbox item to the Designer window, it automatically adds the required references to the current application.
 
-   ![WPF PDF Viewer in Toolbox](Getting-Started_images/wpf-pdf-viewer-in-toolbox.png)
+   ![WPF PDF Viewer in Toolbox](getting-started_images/wpf-pdf-viewer-in-toolbox.png)
     PDF viewer control in toolbox
     {:.caption}
 
@@ -192,7 +196,7 @@ The WPF PdfViewer Control supports various built-in themes. Refer to the below l
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![WPF PDF Viewer Theme](Getting-Started_images/wpf-pdf-viewer-theme.png)
+  ![WPF PDF Viewer Theme](getting-started_images/wpf-pdf-viewer-theme.png)
 
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

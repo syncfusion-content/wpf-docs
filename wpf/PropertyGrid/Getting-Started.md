@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF PropertyGrid
 
-This section explains how to explore and edit the properties of an object using WPF [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control.
+This section explains how to explore and edit the properties of an object using WPF [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control.
 
 ## Assembly deployment
 
@@ -21,13 +21,13 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF PropertyGrid via designer
 
-You can add the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
+You can add the [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
 * Syncfusion.PropertyGrid.Wpf
 * Syncfusion.Shared.WPF
 * Syncfusion.Tools.Wpf
 
-![PropertyGrid Control added by designer](Getting-Started_images/Getting-Started_img2.png)
+![WPF PropertyGrid Control added by designer](getting-started_images/wpf-propertygrid-added-by-designer.png)
 
 ## Adding WPF PropertyGrid via XAML
 
@@ -106,7 +106,7 @@ public partial class MainWindow : Window {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![PropertyGrid control added to Window by code](Getting-Started_images/Getting-Started_img15.png)
+![WPF PropertyGrid control added to Window by code](getting-started_images/wpf-propertygrid-added-by-code.png)
 
 ## Populating the properties
 
@@ -162,15 +162,15 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 {% endhighlight %}
 {% endtabs %}
 
-![ Populating the SelectedEmployee object properties into the PropertyGrid control](Getting-Started_images/Binding-with-any-object_img1.png)
+![ Populating the SelectedEmployee object properties into the PropertyGrid control](getting-started_images/wpf-propertygrid-populating-properties.png)
 
 Here, the `SelectedEmployee` object is set as `SelectedObject` for the `PropertyGrid`. Thus, the `PropertyGrid` shows all the properties available in the `SelectedEmployee` object.
 
 ## Custom Editor as value editors
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors for edit the property values. We can assign own value editor(control) as a value editor for the properties instead of default value editors by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection). 
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors for edit the property values. We can assign own value editor(control) as a value editor for the properties instead of default value editors by using the [Editor](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection). 
 
-For example, if we create an `EmailID` property as a string type, `TextBox` will assigned as a value editor and all the text will be allowed. If we want to accept the input that is only in the mail id format, we can assign [MaskEdit](https://www.syncfusion.com/wpf-ui-controls/maskedtextbox) control with mail ID mask as the value editor for the `EmailID` property. 
+For example, if we create an `EmailID` property as a string type, `TextBox` will assigned as a value editor and all the text will be allowed. If we want to accept the input that is only in the mail id format, we can assign [MaskEdit](https://www.syncfusion.com/wpf-controls/maskedtextbox) control with mail ID mask as the value editor for the `EmailID` property. 
 
 ### Creating the Custom Editor 
 
@@ -274,7 +274,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 Here, The `EmailID` property is accepts only the inputs which are in the email-id format by the `EmailEditor`.
 
-![Property grid with specified custom value editor for EmailID property](CustomEditor-support_images/CustomEditor-Attribute.png)
+![Property grid with specified custom value editor for EmailID property](customeditor-support_images/wpf-propertygrid-customeditor-attribute.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor) to download the sample that showcases the `CustomEditor` support.
 
@@ -372,7 +372,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 {% endhighlight %}
 {% endtabs %}
 
-![Loading selected object without animation](Getting-Started_images/DisableAnimationOnObjectSelection.png)
+![Loading selected object without animation in WPF PropertyGrid](getting-started_images/wpf-propertygrid-object-selection.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/blob/master/Samples/Common)
 
@@ -513,7 +513,7 @@ private void propertyGrid1_AutoGeneratingPropertyGridItem(object sender, Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-![WPF PropertyGrid change editor in AutoGeneratingPropertyGridItem event](Getting-Started_images/Getting-Started-AutoGeneratingPropertyGridItems.png)
+![WPF PropertyGrid change editor in AutoGeneratingPropertyGridItem event](getting-started_images/wpf-propertygrid-auto-generating-items.png)
 
 ## Property item value changed notification
 
@@ -563,4 +563,4 @@ PropertyGrid supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF PropertyGrid](Getting-Started_images/Theme.png)
+![Setting theme to WPF PropertyGrid](getting-started_images/wpf-propertygrid-theme.png)

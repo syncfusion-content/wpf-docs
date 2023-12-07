@@ -140,7 +140,7 @@ public ConnectorViewModel AddConnector(object sourceNode,Point targetPoint,doubl
 
 ### Connection for DockPort
 
-Unlike `NodePort` and `ConnectorPort`, DockPort uses connector port to create connection. But you can create connection interactively like `NodePort` and `ConnectorPort`. 
+Unlike [`NodePort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html) and [`ConnectorPort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorPort.html), DockPort uses connector port to create connection. But you can create connection interactively like `NodePort` and `ConnectorPort`. 
 
 ### Connection between DockPort programmatically
 

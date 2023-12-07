@@ -51,13 +51,13 @@ To add the Syncfusion assembly references in Visual Studio, follow the steps bel
    ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
 
 
-   N> The GAC option will not be available when you selected WPF (.NET Core 3.1, .NET 5.0, and .NET 6.0) application in Visual Studio 2019. 
+   N> The GAC option will not be available when you selected WPF (.NET Core 3.1, .NET 5.0, .NET 6.0, .NET 7.0, and .NET 8.0) application in Visual Studio 2019 or Visual Studio 2022. 
 
    **Version:** To add the corresponding version assemblies to the project, select the build version.
 
    ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger1-img4.png)
 
-   N> WPF (.NET Core 3.1 and .NET 5.0) application in Visual Studio 2019 is supported from 18.2.0.44 version and .NET 6.0 application in Visual Studio 2022 is supported from 19.4.0.38. Version combobox is not visible for nuget option. 
+   N> WPF (.NET Core 3.1 and .NET 5.0) application in Visual Studio 2019 is supported from 18.2.0.44 version and .NET 6.0 application in Visual Studio 2022 is supported from 19.4.0.38 and .NET 7.0 application in Visual Studio 2022 is supported from 20.4.0.38 and .NET 8.0 application in Visual Studio 2022 is supported from 23.2.4 . Version combobox is not visible for nuget option. 
 
    **Themes Option:** Choose the necessary themes based on your requirements. To learn more about built-in themes and their available assembly, click the link below.
 
@@ -78,7 +78,7 @@ To add the Syncfusion assembly references in Visual Studio, follow the steps bel
 
    ![Syncfusion Reference Manager success status in Visual Studio status bar](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img8.png)
 
-6. Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+6. Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio.
 
    ![Syncfusion license registration required information dialog in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img9.png)
 

@@ -113,7 +113,7 @@ namespace ComboBox
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Adding items in ComboBoxAdv
-Items can be added in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) control by following ways.
+Items can be added in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control by following ways.
 
  1. Adding items by ComboBoxItemAdv.
  2. Adding items by DataBinding.
@@ -249,7 +249,7 @@ public class PopulationViewModel
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ### Binding to Data 
-To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) to data, bind the collection created in previous step to [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) property in XAML by setting `PopulationViewModel` as `DataContext`.
+To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) to data, bind the collection created in previous step to [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) property in XAML by setting `PopulationViewModel` as `DataContext`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -312,7 +312,7 @@ N> [View the sample in GitHub](https://github.com/SyncfusionExamples/bind-the-da
 
 ## Defining ItemTemplate
 
-You can customize the visualization of data object using the [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8).
+You can customize the visualization of data object using the [ItemTemplate](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8).
 
 {% tabs %}
 {% highlight xaml %}
@@ -363,7 +363,7 @@ ComboBoxAdv supports various built-in themes. Refer to the below links to apply 
 
 
 ## See Also
-[How to filter dropdown items in WPF editable ComboBoxAdv?](https://www.syncfusion.com/kb/11499/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
+[How to filter dropdown items in WPF editable ComboBoxAdv?](https://support.syncfusion.com/kb/article/9968/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
 
 [How to define maximum number of items to be shown in combobox dropdown?](https://www.syncfusion.com/forums/153490/number-of-visible-items-in-comboboxadv-wpf)
 

@@ -64,7 +64,7 @@ namespace PdfViewerDemo
 
 ## View PDF file from stream
 
-You can view the PDF file from code behind, by passing the [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN&view=netcore-3.1) as a parameter to the Load method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). Refer to the following code to perform the same.
+You can view the PDF file from code behind, by passing the [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN&view=netcore-3.1) as a parameter to the Load method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). Refer to the following code to perform the same.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,7 +95,7 @@ namespace PdfViewerDemo
 
 ## View PDF file using the ItemSource property
 
-You can also view a PDF file using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource). The property accepts a string file path, a [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN), and a [PdfLoadedDocument](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object.
+You can also view a PDF file using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource). The property accepts a string file path, a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-7.0&redirectedfrom=MSDN), and a [PdfLoadedDocument](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object.
 
 {% tabs %}
 {% highlight c# %}
@@ -122,7 +122,7 @@ namespace PdfViewerDemo
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below code snippet to load a [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN) using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property
+Refer the below code snippet to load a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-7.0&redirectedfrom=MSDN) using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property
 {% tabs %}
 {% highlight c# %}
 //Load PDF file as Stream using the `ItemSource` property.
@@ -190,7 +190,7 @@ The following picture illustrates how the PDF file being displayed in [PdfDocume
 
 ## Obtain the PDF file information
 
-You can get the information on the PDF file that is being displayed in the control using the [DocumentInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DocumentInfo) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). This property provides you the information such as file name and the folder name from that the PDF file is opened using the [FileName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.DocumentInfo.html#Syncfusion_Windows_PdfViewer_DocumentInfo_FileName) and [FilePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.DocumentInfo.html#Syncfusion_Windows_PdfViewer_DocumentInfo_FileName) properties respectively.
+You can get the information on the PDF file that is being displayed in the control using the [DocumentInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DocumentInfo) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). This property provides you the information such as file name and the folder name from that the PDF file is opened using the [FileName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.DocumentInfo.html#Syncfusion_Windows_PdfViewer_DocumentInfo_FileName) and [FilePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.DocumentInfo.html#Syncfusion_Windows_PdfViewer_DocumentInfo_FilePath) properties respectively.
 
 Refer to the following code to obtain the document information using the [DocumentInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DocumentInfo) property.
 
