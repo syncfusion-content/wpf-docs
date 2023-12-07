@@ -85,5 +85,115 @@ namespace PasswordPDFDemo
 {% endhighlight %}
 {% endtabs %}
 
+## View password protected PDF with owner password
+
+The PDF Viewer allows you to view password protected PDF with the owner password, and you can perform all the operations available in the PdfViewer. The image below is an example of opening the PDF with the owner password.
+
+![WPF PDF Viewer with Owner Password](password-images/wpf-pdf-viewer-owner-password.png)
+
+## View password protected PDF with user password
+
+The PDF Viewer allows you to view password protected PDF with the user password, and operations are available depending upon PdfPermissionTags. The image below is an example of opening the PDF with user password and `default` permission tag.
+
+![WPF PDF Viewer with User Password](password-images/wpf-pdf-viewer-user-password.png)
+
+The table below lists PdfPermissionTags and features restricted in PdfViewer.
+
+<table>
+<tr>
+<th>PdfPermissionTags</th>
+<th>Restrictions in PdfViewer</th>
+</tr>
+<tr>
+<td>Default</td>
+<td>
+Content Copying<br/>
+Annotations<br/>
+Print<br/>
+Filling of form fields<br/>
+Redaction<br/>
+Page Organizer<br/>
+</td>
+</tr>
+<tr>
+<td>AccessibilityCopyContent</td>
+<td>
+Content Copying<br/>
+Annotations<br/>
+Print<br/>
+Filling of form fields<br/>
+Redaction<br/>
+Page Organizer<br/>
+</td>
+</tr>
+<tr>
+<td>CopyContent</td>
+<td>
+Annotations<br/>
+Print<br/>
+Filling of form fields<br/>
+Redaction<br/>
+Page Organizer<br/>
+</td>
+</tr>
+<tr>
+<td>AssembleDocument</td>
+<td>
+Content Copying<br/>
+Annotations<br/>
+Print<br/>
+Filling of form fields<br/>
+Redaction<br/>
+</td>
+</tr>
+<tr>
+<td>EditAnnotations</td>
+<td>
+Content Copying<br/>
+Print<br/>
+Page Organizer<br/>
+</td>
+</tr>
+<tr>
+<td>Print</td>
+<td>
+Content Copying<br/>
+Annotations<br/>
+Filling of form fields<br/>
+Redaction<br/>
+Page Organizer<br/>
+</td>
+</tr>
+<tr>
+<td>FullQualityPrint</td>
+<td>
+Content Copying<br/>
+Annotations<br/>
+Filling of form fields<br/>
+Redaction<br/>
+Page Organizer<br/>
+</td>
+</tr>
+<tr>
+<td>FillFields</td>
+<td>
+Content Copying<br/>
+Annotations<br/>
+Print<br/>
+Redaction<br/>
+Page Organizer<br/>
+</td>
+</tr>
+<tr>
+<td>EditContent</td>
+<td>
+Content Copying<br/>
+Annotations<br/>
+Print<br/>
+Redaction<br/>
+Page Organizer<br/>
+</td>
+</tr>
+</table>
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
