@@ -147,9 +147,9 @@ End Sub
 
 ## Add form fields at runtime
 
-The PDF Viewer allows users to programmatically add form fields without user interaction at runtime. After adding the form field, user can programmatically change the form field’s properties during runtime.
+The PDF Viewer allows users to programmatically add form fields without user interaction at runtime.
 
-The following code snippet explains how to add the form field textbox and modify the form field textbox’s properties at runtime. Similarly, we can implement this for all other form fields.
+The following code snippet explains how to add the form field textbox at runtime. Similarly, we can implement this for all other form fields.
 
 {% tabs %}
 {% highlight C# %}
@@ -164,7 +164,6 @@ private void AddTextbox_Click(object sender, RoutedEventArgs e)
         textBoxField.Bounds = new RectangleF(0, 0, 100, 20);
         //Add the form field to the document.
         pdfViewer.LoadedDocument.Form.Fields.Add(textBoxField);
-        textBoxField.Text = "Syncfusion";
     }
 }
 
@@ -179,7 +178,6 @@ Private Sub AddTextbox_Click(sender As Object, e As RoutedEventArgs)
         textBoxField.Bounds = New RectangleF(0, 0, 100, 20)
         `Add the form field to the document.
         pdfViewer.LoadedDocument.Form.Fields.Add(textBoxField)
-        textBoxField.Text = "Syncfusion"	
     End If
 End Sub
 
@@ -210,6 +208,41 @@ Private Sub RemoveAt_Click(sender As Object, e As RoutedEventArgs)
 		`Remove the field at index 0.
         pdfViewer.LoadedDocument.Form.Fields.RemoveAt(0)
     End If
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+## Modify the existing form field at runtime
+
+The PDF Viewer allows users to programmatically modify existing form fields without user interaction at runtime.
+
+The following code snippet explains how to modify properties of the form field textbox during runtime. Similarly, we can implement this for all other form fields.
+
+{% tabs %}
+{% highlight C# %}
+
+private void ModifyTextbox_Click(object sender, RoutedEventArgs e)
+{
+    if (pdfViewer.LoadedDocument.Form != null)
+    {
+            if (pdfViewer.LoadedDocument.Form.Fields[0] is PdfLoadedTextBoxField)
+            {
+                (pdfViewer.LoadedDocument.Form.Fields[0] as PdfLoadedTextBoxField).Text = "Syncfusion";
+            }
+    }
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+Private Sub ModifyTextbox_Click(sender As Object, e As RoutedEventArgs)
+If pdfViewer.LoadedDocument.Form IsNot Nothing Then
+ 		If TypeOf pdfViewer.LoadedDocument.Form.Fields(0) Is PdfLoadedTextBoxField Then
+    			Dim textBoxField As PdfLoadedTextBoxField = TryCast(pdfViewer.LoadedDocument.Form.Fields(0), PdfLoadedTextBoxField)
+			textBoxField.Text = "Syncfusion"
+		End If
+End If
 End Sub
 
 {% endhighlight %}
