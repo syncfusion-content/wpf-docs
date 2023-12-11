@@ -85,19 +85,19 @@ namespace PasswordPDFDemo
 {% endhighlight %}
 {% endtabs %}
 
-## View password protected PDF with owner password
+## View Password Protected PDF with Owner Password
 
-The PDF Viewer allows you to view password protected PDF with the owner password, and you can perform all the operations available in the PdfViewer. The image below is an example of opening the PDF with the owner password.
+The PDF Viewer allows you to view password protected PDF with the owner password, and you can perform all the operations available in the PdfViewer. The following image is an example of opening the PDF with the owner password.
 
 ![WPF PDF Viewer with Owner Password](password-images/wpf-pdf-viewer-owner-password.png)
 
-## View password protected PDF with user password
+## View Password Protected PDF with User Password
 
-The PDF Viewer allows you to view password protected PDF with the user password, and operations are available depending upon PdfPermissionTags. The image below is an example of opening the PDF with user password and `default` permission tag.
+The PDF Viewer allows you to view password protected PDF with the user password, and operations are available depending upon PdfPermissionTags. The following image is an example of opening the PDF with user password and `default` permission tag.
 
 ![WPF PDF Viewer with User Password](password-images/wpf-pdf-viewer-user-password.png)
 
-The table below lists PdfPermissionTags and features restricted in PdfViewer.
+The table below lists PdfPermissionTags and features restricted in the PdfViewer.
 
 <table>
 <tr>
