@@ -145,6 +145,76 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## Add form fields at runtime
+
+The PDF Viewer allows users to programmatically add form fields without user interaction at runtime. After adding the form field, user can programmatically change the form field’s properties during runtime.
+
+The following code snippet explains how to add the form field textbox and modify the form field textbox’s properties at runtime. Similarly, we can implement this for all other form fields.
+
+{% tabs %}
+{% highlight C# %}
+
+private void AddTextbox_Click(object sender, RoutedEventArgs e)
+{
+    if (pdfViewer.LoadedDocument.Form != null)
+    {
+        PdfLoadedPage page = pdfViewer.LoadedDocument.Pages[0] as PdfLoadedPage;
+        //Create a textbox field and add the properties.
+        PdfTextBoxField textBoxField = new PdfTextBoxField(page, "FirstName");
+        textBoxField.Bounds = new RectangleF(0, 0, 100, 20);
+        //Add the form field to the document.
+        pdfViewer.LoadedDocument.Form.Fields.Add(textBoxField);
+        textBoxField.Text = "Syncfusion";
+    }
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+Private Sub AddTextbox_Click(sender As Object, e As RoutedEventArgs)
+    If pdfViewer.LoadedDocument.Form IsNot Nothing Then
+        Dim page As PdfLoadedPage = TryCast(pdfViewer.LoadedDocument.Pages(0), PdfLoadedPage)
+        `Create a textbox field and add the properties.
+        Dim textBoxField As PdfTextBoxField = New PdfTextBoxField(page, "FirstName")
+        textBoxField.Bounds = New RectangleF(0, 0, 100, 20)
+        `Add the form field to the document.
+        pdfViewer.LoadedDocument.Form.Fields.Add(textBoxField)
+        textBoxField.Text = "Syncfusion"	
+    End If
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+## Remove form fields at runtime
+
+The PDF Viewer allows users to programmatically remove form fields without user interaction at runtime.
+
+The following code snippet explains how to remove the form field during runtime.
+
+{% tabs %}
+{% highlight C# %}
+
+private void RemoveAt_Click(object sender, RoutedEventArgs e)
+{
+	if (pdfViewer.LoadedDocument.Form.Fields.Count > 0)
+		//Remove the field at index 0.
+        pdfViewer.LoadedDocument.Form.Fields.RemoveAt(0); 
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+Private Sub RemoveAt_Click(sender As Object, e As RoutedEventArgs)
+	If pdfViewer.LoadedDocument.Form.Fields.Count > 0 Then
+		`Remove the field at index 0.
+        pdfViewer.LoadedDocument.Form.Fields.RemoveAt(0)
+    End If
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Keyboard Shortcuts:
 
 The below keyboard shortcuts are used to navigate through the form fields present in the PDF document.
