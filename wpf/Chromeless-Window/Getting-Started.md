@@ -196,7 +196,7 @@ The text alignment of the title can be set using the [`TitleTextAlignment`](http
 
 ## Title bar icon
 
-You can set the caption icon by setting the [Icon](https://docs.microsoft.com/de-de/dotnet/api/system.windows.window.icon?view=netframework-4.7.2) property.
+You can set the caption icon by setting the [Icon](https://learn.microsoft.com/de-de/dotnet/api/system.windows.window.icon?view=netframework-4.7.2) property.
 
 {% tabs %}
 {% highlight XAML %}
