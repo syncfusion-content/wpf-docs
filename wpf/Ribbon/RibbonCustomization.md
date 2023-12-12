@@ -261,6 +261,66 @@ Finally, the Items gets displayed in the QAT
 
 ![Added WPF Ribbon Items in QuickAccessToolbar](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-items-in-quick-access-toolbar.jpg)
 
+## Customize image of RibbonBar in QAT 
+
+Ribbon control provides an option to customize image of RibbonBar in the QAT. These images can be defined in the DataTemplate of the xaml file and can be accessed using [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_IconTemplate). If the custom image of RibbonBar is unavailable in the QAT, the default image will not be displayed in QAT.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+ <Window.Resources>
+        <DataTemplate x:Key="PasteTemplate">
+            <Viewbox>
+                <Path Data="M2.5549936,7.1569824L2.5549936,29.490997 20.737007,29.490997 20.737007,7.1569824 17.521002,7.1569824 17.521002,10.377991 5.7709984,10.377991 5.7709984,7.1569824z M11.646,1.3519897C10.678989,1.3519897 9.8949928,2.0939941 9.8949928,3.0099792 9.8949928,3.9259949 10.678989,4.6679993 11.646,4.6679993 12.613011,4.6679993 13.397008,3.9259949 13.397008,3.0099792 13.397008,2.0939941 12.613011,1.3519897 11.646,1.3519897z M11.646,0C13.402013,0,14.824011,1.3469849,14.824011,3.0099792L17.521002,3.0099792 17.521002,3.9729919 23.292,3.9729919 23.292,32 0,32 0,3.9729919 5.7709984,3.9729919 5.7709984,3.0099792 8.4679899,3.0099792C8.4679899,1.3469849,9.8899879,0,11.646,0z"
+                                    Stretch="Uniform"  
+                                    Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}" >
+                </Path>
+            </Viewbox>
+        </DataTemplate>
+    </Window.Resources>
+
+      <syncfusion:RibbonBar
+                 syncfusion:Ribbon.KeyTip="FN"
+                 syncfusion:Ribbon.ShowInMoreCommands="True"
+                 IsLauncherButtonVisible="False"
+                 Header="Paste"
+                 IconTemplate="{StaticResource PasteTemplate}">
+      </syncfusion:RibbonBar>
+
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+ var pasteTemplate = FindResource("PasteTemplate") as DataTemplate;
+ var ribbonBar = new Syncfusion.Windows.Tools.Controls.RibbonBar
+ {
+    KeyTip = "FN",
+    ShowInMoreCommands = true,
+    IsLauncherButtonVisible = false,
+    Header = "Paste",
+    IconTemplate = pasteTemplate
+ };
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim pasteTemplate = TryCast(FindResource("PasteTemplate"), DataTemplate)
+Dim ribbonBar As New Syncfusion.Windows.Tools.Controls.RibbonBar With 
+{
+    .KeyTip = "FN",
+    .ShowInMoreCommands = True,
+    .IsLauncherButtonVisible = False,
+    .Header = "Paste",
+    .IconTemplate = pasteTemplate
+}
+
+{% endhighlight %}
+
+![Customize RibbonBar items in QAT](AddingItemstoQuickAccessToolBar_images/RibbonQuickAccessToolBar.png)
+
 ## Add custom QAT items
 
 Ribbon control provides an option to add items to the QAT that will not be present in the Ribbon. These items can be defined in the [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html#Syncfusion_Windows_Tools_Controls_QuickAccessToolBar_CustomQATItems) collection of the **QuickAccessToolbar** and can be accessed from the QAT Window in the **"Commands Not in the Ribbon"** and **"All Commands"** section. 
