@@ -369,7 +369,7 @@ dataGrid.UnBoundRowCellRenderers.Add("UnBoundTextColumn", new GridUnBoundRowCell
 
 ### Custom Renderer
 
-You can customize the unbound row cell by creating new renderer, deriving from [GridUnBoundRowCellRenderer](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundRowCellRenderer%602.html) and setting the [GridUnBoundRowEventsArgs.CellType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_CellType) property.
+You can customize the unbound row cell by creating new renderer, deriving from [GridUnBoundRowCellRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundRowCellRenderer-2.html) and setting the [GridUnBoundRowEventsArgs.CellType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_CellType) property.
 
 Below code creates `DatePickerRenderer` to load the [DatePicker](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datepicker?view=windowsdesktop-7.0) as editor element in the first cell of unbound row.
 
