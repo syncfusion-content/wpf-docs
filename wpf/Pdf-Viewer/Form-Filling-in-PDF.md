@@ -145,11 +145,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Add form fields at runtime
+## Add Form Fields at Runtime
 
 The PDF Viewer allows users to programmatically add form fields without user interaction at runtime.
 
-The following code snippet explains how to add the form field textbox at runtime. Similarly, we can implement this for all other form fields.
+The following code sample explains how to add the form field textbox at runtime. Similarly, you can implement this for all other form fields.
 
 {% tabs %}
 {% highlight C# %}
@@ -184,11 +184,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Remove form fields at runtime
+## Remove Form Fields at Runtime
 
 The PDF Viewer allows users to programmatically remove form fields without user interaction at runtime.
 
-The following code snippet explains how to remove the form field during runtime.
+The following code sample explains how to remove the form field during runtime.
 
 {% tabs %}
 {% highlight C# %}
@@ -213,11 +213,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Modify the existing form field at runtime
+## Modify the Existing Form Field at Runtime
 
 The PDF Viewer allows users to programmatically modify existing form fields without user interaction at runtime.
 
-The following code snippet explains how to modify properties of the form field textbox during runtime. Similarly, we can implement this for all other form fields.
+The following code sample explains how to modify properties of the form field textbox during runtime. Similarly, you can implement this for all other form fields.
 
 {% tabs %}
 {% highlight C# %}
