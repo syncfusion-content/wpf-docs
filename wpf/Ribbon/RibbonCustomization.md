@@ -263,7 +263,7 @@ Finally, the Items gets displayed in the QAT
 
 ## Customize image of RibbonBar in QAT 
 
-Ribbon control provides an option to customize image of RibbonBar in the QAT. These images can be defined in the DataTemplate of the xaml file and can be accessed using [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_IconTemplate). If the custom image of RibbonBar is unavailable in the QAT, the default image will not be displayed in QAT. But the default image will be available in QAT header. 
+Ribbon control provides an option to customize image of RibbonBar in the QAT. These images can be defined in the DataTemplate of the xaml file and can be accessed using [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_IconTemplate).
 
 {% tabs %}
 
