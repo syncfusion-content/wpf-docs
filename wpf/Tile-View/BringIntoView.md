@@ -3,21 +3,21 @@ layout: post
 title: BringIntoView in WPF Tile View control | Syncfusion
 description: Learn about BringIntoView support in Syncfusion Essential Studio WPF Tile View control, its elements and more.
 platform: wpf
-control: TileView Control
+control: TileViewControl
 documentation: ug
 ---
 
 # BringIntoView in WPF Tile View
 
-This section explains how to bring the TileViewItem which is out of view to view programmatically in TileView control. 
+This section explains how to bring the `TileViewItem` which is out of view to view programmatically in TileView control. 
 
 ## BringIntoView
 
-The TileViewControl allows programmatically to bring the TileViewItem to view using BringIntoView method.
+The TileViewControl allows programmatically to bring the `TileViewItem` to view using `BringIntoView` method.
 
 ### BringIntoView using TileViewItem
 
-The below example shows how to bring the TileViewItem into view using the specified item.
+The below example shows how to bring the `TileViewItem` into view using the specified item.
 
 {% tabs %}
 {% highlight XAML %}
@@ -29,7 +29,7 @@ The below example shows how to bring the TileViewItem into view using the specif
         <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
 
-    <Button Grid.Row="0" Content="Click to Bring the item in view" Click="Button_Click" Width="200" Height="40"/>
+    <Button Grid.Row="0" Content="Click to bring the item18 in view" Click="Button_Click" Width="200" Height="40"/>
 
     <syncfusion:TileViewControl x:Name="tileViewControl"
                                 Grid.Row="2" 
@@ -85,7 +85,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 ### BringIntoView using Index
 
-The below example shows how to bring the TileViewItem into view using the specified index.
+The below example shows how to bring the `TileViewItem` into view using the specified index.
 
 {% tabs %}
 {% highlight C# %}
@@ -100,7 +100,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 ### BringIntoView using ViewModel
 
-The below example shows how to bring the TileViewItem into view using ViewModel.
+The below example shows how to bring the `TileViewItem` into view using a model value from ViewModel.
 
 {% tabs %}
 {% highlight XAML %}
@@ -140,10 +140,11 @@ The below example shows how to bring the TileViewItem into view using ViewModel.
 //Model.cs
 public class Model :INotifyPropertyChanged
 {
-    private TileViewItemState state;
-
     public string Header { get; set; }
     public string Content { get; set; }
+    
+    private TileViewItemState state;
+    
     public TileViewItemState State
     {
         get { return state; }
@@ -193,8 +194,6 @@ public class ViewModel : NotificationObject
         {
             TileViewItems.Add(new Model() { Header = "Item " + i, Content = "Content " + i, State = TileViewItemState.Normal });
         }
-
-        
     }
 }
 
