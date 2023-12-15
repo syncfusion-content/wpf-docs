@@ -52,10 +52,10 @@ The following table explains how the navigation performed between properties,
 <tr>
 <td>7</td>
 <td>Tab</td>
-<td>Selection will be moved to the first item when the PropertyGrid doesn't have a selected item. It moves out of the PropertyGrid on the next Tab key when the focus is within the PropertyGrid.
+<td>Selecting the first item when no item is chosen and moving out of the PropertyGrid on subsequent Tab key presses when the focus is already within.
 <br/> 
 <br/>
-<img src="KeyNavigation-Images/First-Tab-Key-Navigation.png" alt="Pressing the Tab key focuses on the first item"/>
+<img src="KeyNavigation-Images/first_time_tab_key_press.png" alt="Pressing the Tab key focuses on the first item"/>
 <br/>
 <br/>
 </td>
@@ -63,10 +63,10 @@ The following table explains how the navigation performed between properties,
 <tr>
 <td>8</td>
 <td>Shift + Tab</td>
-<td>Selection will be moved to the last item when the PropertyGrid doesn't have a selected item. It moves out of the PropertyGrid on the next Shift + Tab key when the focus is within the PropertyGrid.
+<td>Selecting the last item when no selection exists, while subsequent Shift + Tab presses moves the focus out of the PropertyGrid when the focus is within.
 <br/>
 <br/>
-<img src="KeyNavigation-Images/Last-Shift-Key-Navigation.png" alt="Pressing the Shift + Tab key focuses on the last item"/>
+<img src="KeyNavigation-Images/shift+tab_key_press.png" alt="Pressing the Shift + Tab key focuses on the last item"/>
 <br/>
 <br/>
 </td>
