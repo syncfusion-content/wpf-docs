@@ -58,13 +58,21 @@ The following table explains how the navigation performed between properties,
 <img src="KeyNavigation-Images/First-Tab-Key-Navigation.png" alt="Pressing the Tab key focuses on the first item"/>
 <br/>
 <br/>
-<img src="KeyNavigation-Images/Next-Tab-Key-Navigation.png" alt="Pressing the Tab key for the second time in first item, it moves out of the PropertyGrid"/>
+</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Shift + Tab</td>
+<td>Selection will be moved to the last item when the PropertyGrid doesn't have a selected item. It moves out of the PropertyGrid on the next Shift + Tab key when the focus is within the PropertyGrid.
+<br/>
+<br/>
+<img src="KeyNavigation-Images/Last-Shift-Key-Navigation.png" alt="Pressing the Shift + Tab key focuses on the last item"/>
 <br/>
 <br/>
 </td>
 </tr>
 <tr>
-<td>8</td>
+<td>9</td>
 <td>Esc</td>
 <td>If the property’s value field is focused, then the focus has been moved to property’s name field.</td>
 </tr>
