@@ -58,8 +58,8 @@ The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.ht
 
 ### Group Flip
 
-![Represents the Group flip](Commands_images/Commands_GroupFlip.gif)
+The Group Flip allows the content of the group, including nodes, connectors, and ports, to be flipped based on their position within the group, following the designated flip direction.
 
-The Group flip allows the content of the Group - including nodes, connectors, and ports - to be flipped based on their position within the group, following the designated flip direction.
+![Represents the Group flip](Commands_images/Commands_GroupFlip.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Flip%20Command)
