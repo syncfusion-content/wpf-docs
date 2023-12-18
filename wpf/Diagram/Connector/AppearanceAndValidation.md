@@ -456,7 +456,7 @@ ConnectorViewModel bridgeConnector = new ConnectorViewModel()
 
 ### How to change the bridging direction and size
 
-The direction of bridge can be customized with the [`BridgeDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_BridgeDirection) property. The default direction is Top.
+The direction of bridge can be customized with the [`BridgeDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_BridgeDirection) property. The default direction is [`Top`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BridgeDirection.html).
 
 The size of bridge in a connector can be customized with the [`BridgeSpace`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_BridgeSpace) property. The default value is 15d.
 
