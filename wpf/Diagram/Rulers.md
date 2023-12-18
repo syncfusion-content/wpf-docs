@@ -43,7 +43,7 @@ diagram.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
 
 ## Customizing the Ruler
 
-By default, ruler segments are arranged based on the `MeasurementUnit`. See the available [LengthUnits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LengthUnit.html) for Ruler.
+By default, ruler segments are arranged based on the [`MeasurementUnit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MeasurementUnit.html). See the available [LengthUnits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LengthUnit.html) for Ruler.
 
 Segment width, the textual description of the ruler segment, and the appearance of the ruler ticks can be customized. 
 
