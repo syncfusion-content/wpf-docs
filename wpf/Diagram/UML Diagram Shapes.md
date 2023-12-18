@@ -8,11 +8,10 @@ documentation: ug
 ---
 
 # UML Diagrams
-The primary purpose of UML (Unified Modeling Language) Diagrams is to provide a standardized way of representing the different aspects of a system, making it easier for software developers, analysts, and other stakeholders to communicate and understand the system's structure and behavior.
-UML Behavioral Diagrams are used to visualize, specify, construct, and document the dynamic aspects of a system. They aid in previewing and determining the model, execution flow, state, or behavior of the system at a specific time. 
+UML (Unified Modeling Language) Diagrams serve as a standardized means to represent diverse facets of a system, facilitating communication and comprehension for software developers, analysts, and stakeholders. UML Behavioral Diagrams, specifically, play a crucial role in visualizing, specifying, constructing, and documenting the dynamic aspects of a system. They aid in visualizing and determining the model, execution flow, state, or behavior of the system at a specific time.
 
 ## UML Diagram Shapes
-The process of creating UML Diagrams involves selecting and combining different UML shapes to visually represent the system's architecture. Each shape has a specific meaning and usage, contributing to the overall clarity and comprehensibility of the diagram.
+Creating UML Diagrams involves the selection and combination of various UML shapes to provide a visual representation of a system's architecture. Each shape carries a distinct meaning and usage, collectively contributing to the overall clarity and comprehensibility of the diagram.
 
 The list of UML Diagram Shapes are available in the diagram resource dictionary, as follows:
 
