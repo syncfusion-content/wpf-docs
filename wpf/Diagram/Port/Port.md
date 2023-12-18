@@ -430,7 +430,7 @@ To learn more about PortVisibility, refer to [PortVisibility](https://help.syncf
 
 ## Connection direction
 
-The [`ConnectionDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_ConnectionDirection) is a port’s property, which allows users to specify the direction in which the connector’s connection to be established to a port. This property will be active only if the [`port constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortConstraints.html) contains `PortConstraints.ConnectionDirection`. Default value is Auto.
+The [`ConnectionDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_ConnectionDirection) is a port’s property, which allows users to specify the direction in which the connector’s connection to be established to a port. This property will be active only if the [`port constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortConstraints.html) contains `PortConstraints.ConnectionDirection`. Default value is [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectionDirection.html).
 
 {% tabs %}
 {% highlight xaml %}
