@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag Limit in WPF Diagram (SfDiagram)
 
-The drag limit allows you to define the dragging region of the Diagram while diagram objects are getting dragged. The [`DragLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_DragLimit) property of scroll settings class helps to limit the dragging area. It includes the following options:
+The drag limit allows you to define the dragging region of the Diagram while diagram objects are getting dragged. The [`DragLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_DragLimit) property of [scroll settings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html) class helps to limit the dragging area. It includes the following options:
 
 * Infinity: Allows you to drag the diagram objects in all directions without any restriction.
 * Diagram: Allows you to drag the diagram objects within the Diagram content.
@@ -17,7 +17,7 @@ The drag limit allows you to define the dragging region of the Diagram while dia
 
 The default operation is `Infinity`. 
 
-Drag limit behaviour will be enabled by handling the `SelectorChangedEvent` and its arguments of `SelectorChangedEventArgs` class of diagram control.
+Drag limit behaviour will be enabled by handling the [`SelectorChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_SelectorChangedEvent) and its arguments of [`SelectorChangedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) class of diagram control.
 
 {% tabs %}
 {% highlight xaml %}
