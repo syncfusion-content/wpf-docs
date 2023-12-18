@@ -88,11 +88,11 @@ diagram.PageSettings = new PageSettings()
 
 ## How to change the page appearance
 
-The appearance of the pages can be customized by using the following properties of `PageSettings` class:
+The appearance of the pages can be customized by using the following properties of [`PageSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html) class:
 
-* `PageBorderThickness`: Defines the thickness of the  border around the entire page.
-* `PageBackground`: Defines the background colors of the page.
-* `PageBorderBrush`: Defines the color of the page border.
+* [`PageBorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageBorderThickness): Defines the thickness of the  border around the entire page.
+* [`PageBackground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageBackground): Defines the background colors of the page.
+* [`PageBorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageBorderBrush): Defines the color of the page border.
 
 {% tabs %}
 {% highlight xaml %}
@@ -164,7 +164,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to change the unit of the page
 
-The measurement units of the page can be changed by using the [`Unit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_Unit) property of `PageSettings` class. Default unit value is Pixels.
+The measurement units of the page can be changed by using the [`Unit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_Unit) property of [`PageSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html) class. Default unit value is Pixels.
 
 {% tabs %}
 {% highlight xaml %}
@@ -199,7 +199,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to change the scaling of Page
 
-The [`PrintScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PrintScale) property of `PageSettings` class allows you to reduce or enlarge the diagram page to fit into specific area when you print it. The default scaling of the page will be 1 (i.e 100%).
+The [`PrintScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PrintScale) property of [`PageSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html) class allows you to reduce or enlarge the diagram page to fit into specific area when you print it. The default scaling of the page will be 1 (i.e 100%).
 
 {% tabs %}
 {% highlight xaml %}
@@ -271,7 +271,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to customize the page origin
 
-By default, origin of the diagram page will be at (0,0). A virtual method `AdjustPageOrigin` of PageSettings class is used to customize the origin of the page based on the page size (`PageWidth` and `PageHeight`) and diagram elements position, which in turn helps to reduce the number of pages being printed.
+By default, origin of the diagram page will be at (0,0). A virtual method [`AdjustPageOrigin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_AdjustPageOrigin) of `PageSettings` class is used to customize the origin of the page based on the page size (`PageWidth` and `PageHeight`) and diagram elements position, which in turn helps to reduce the number of pages being printed.
 
 The `AdjustPageOrigin` method contains the [`Info`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_Info) property in its argument, and also have the following properties and methods:
 
