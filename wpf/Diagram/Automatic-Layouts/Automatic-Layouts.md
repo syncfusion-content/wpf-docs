@@ -223,7 +223,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ## Updating layout
 
-The [`RefreshFrequency`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutManager_RefreshFrequency) property of LayoutManager is used to re-arrange the nodes in the diagram area when a node is added, deleted, moved, or resized. Also, you can decide when the nodes should be arranged for every diagram load or only for the first load. Find the description for each condition in the following table.
+The [`RefreshFrequency`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutManager_RefreshFrequency) property of [LayoutManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html?tabs=tabid-1) is used to re-arrange the nodes in the diagram area when a node is added, deleted, moved, or resized. Also, you can decide when the nodes should be arranged for every diagram load or only for the first load. Find the description for each condition in the following table.
 
 | Refresh Frequencies | Description|
 | --- | --- |
@@ -251,7 +251,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ## Customize spacing between nodes in layout 
 
-The Horizontal and Vertical spacing properties of Layouts are used to customize the space between successive nodes in both horizontally and vertically. The default value for horizontal spacing is `20` and vertical spacing is `50`.
+The Horizontal and Vertical spacing properties of Layouts are used to customize the space between successive nodes in both horizontally and vertically. The default value for [`horizontal spacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.TreeLayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_TreeLayoutBase_HorizontalSpacing) is `20` and [`vertical spacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.TreeLayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_TreeLayoutBase_VerticalSpacing) is `50`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -303,7 +303,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ## Avoiding connector segment overlapping in layout
 
-The [`AvoidSegmentOverlapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_AvoidSegmentOverlapping) property of `DirectedTreeLayout` is used to decide whether segment of each connector from a single parent is distributed automatically or not. It is only valid for hierarchical and multi-parent layout.
+The [`AvoidSegmentOverlapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_AvoidSegmentOverlapping) property of [`DirectedTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html?tabs=tabid-1) is used to decide whether segment of each connector from a single parent is distributed automatically or not. It is only valid for hierarchical and multi-parent layout.
 
 {% tabs %}
 {% highlight xaml %}
@@ -327,7 +327,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ## Customize margin in layout
 
-The [`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutBase_Margin) property of `DirectedTreeLayout` is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
+The [`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutBase_Margin) property of [`DirectedTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html?tabs=tabid-1) is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
 
 {% tabs %}
 {% highlight xaml %}
