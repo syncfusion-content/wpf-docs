@@ -166,7 +166,7 @@ stencil.SymbolGroups = new SymbolGroups()
 {% endhighlight %}
 {% endtabs %} 
 
-![Symbol](Stencil_images/stencil2.PNG) 
+![Symbol](SymbolGroup_images/stencil2.PNG) 
 
 ## Customize the appearance of the symbol group header
 
@@ -205,7 +205,7 @@ You can customize the appearance of each [SymbolGroup](https://help.syncfusion.c
  
 {% endtabs %}
 
-![Custom Header](Stencil_images/CustomHeader.png) 
+![Custom Header](SymbolGroup_images/CustomHeader.png) 
 
 ## Expand and collapse the symbol group
 
@@ -213,11 +213,11 @@ When there is more number of symbol groups in the stencil, then you can expand a
 
 |ExpandMode|Description|Output|
 |----------|-----------|-----------|
-|All       | Enables all the symbol group that can be expanded |![ExpandMode All](Stencil_images/ExpandModeAll.png) |
-|One       | Enables only one symbol group that can be expanded |![ExpandMode One](Stencil_images/ExpandModeOne.png)|
-|OneOrMore | Enables one or more symbol group that can be expanded |![ExpandMode OneOrMore](Stencil_images/ExpandModeOneOrMore.Gif)|
-|ZeroOrMore| Enables none or more symbol group that can be expanded |![ExpandMode ZeroOrMore](Stencil_images/ExpandModeZeroOrMore.Gif)|
-|ZeroOrOne | Enables none or one symbol group that can be expanded |![ExpandMode ZeroOrMore](Stencil_images/ExpandModeZeroOrOne.Gif)|
+|All       | Enables all the symbol group that can be expanded |![ExpandMode All](SymbolGroup_images/ExpandModeAll.png) |
+|One       | Enables only one symbol group that can be expanded |![ExpandMode One](SymbolGroup_images/ExpandModeOne.png)|
+|OneOrMore | Enables one or more symbol group that can be expanded |![ExpandMode OneOrMore](SymbolGroup_images/ExpandModeOneOrMore.Gif)|
+|ZeroOrMore| Enables none or more symbol group that can be expanded |![ExpandMode ZeroOrMore](SymbolGroup_images/ExpandModeZeroOrMore.Gif)|
+|ZeroOrOne | Enables none or one symbol group that can be expanded |![ExpandMode ZeroOrMore](SymbolGroup_images/ExpandModeZeroOrOne.Gif)|
 
 ## Symbol categories
 
@@ -265,7 +265,7 @@ ExpandMode="ZeroOrMore" BorderBrush="#dfdfdf" BorderThickness="1">
 {% endhighlight %}
 {% endtabs %}
 
-![Basic Shapes](Stencil_images/CategoryBasicShapes.png)
+![Basic Shapes](SymbolGroup_images/CategoryBasicShapes.png)
 
 ## Add the custom shapes categories
 
@@ -311,7 +311,7 @@ BorderBrush="#dfdfdf" BorderThickness="1">
 {% endhighlight %}
 {% endtabs %}
 
-![Custom Shapes collection](Stencil_images/CustomShapes.png)
+![Custom Shapes collection](SymbolGroup_images/CustomShapes.png)
 
 N> The custom symbol collections should be added in the App.xaml file.
 
@@ -371,7 +371,7 @@ public class StencilViewModel : Stencil
 {% endhighlight %}
 {% endtabs %}
 
-![Custom Category collection](Stencil_images/CustomCateogry.PNG)
+![Custom Category collection](SymbolGroup_images/CustomCateogry.PNG)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
 
