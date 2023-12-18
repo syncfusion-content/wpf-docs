@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance of SymbolGroup in WPF Diagram (SfDiagram)
 
-The appearance of the SymbolGroup in the Stencil can be changed by the SymbolGroupDisplayMode property. We can view Symbolgroups in the Accordion, List, and Tab view in the Stencil.Default value of the SymbolGroupDisplayMode is Accordion.
+The appearance of the SymbolGroup in the Stencil can be changed by the SymbolGroupDisplayMode property. Symbol groups can be viewed in the Accordion, List, and Tab views in the Stencil. The default value of the SymbolGroupDisplayMode is Accordion.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,6 +31,6 @@ The appearance of the SymbolGroup in the Stencil can be changed by the SymbolGro
 
 |SymbolGroupDisplayMode|Description|Output|
 |----------|-----------|-----------|
-| Accordion | Symbolgroups will be displayed in the Accordion view. |![Accordion_View](SymbolGroup_images/Accordion.png)|
-| List | Symbolgroups will be displayed in the List view. |![List_View](SymbolGroup_images/List.png)|
-| Tab | Symbolgroups will be displayed in the Tab view. |![Tab_View](SymbolGroup_images/Tab.png)|
+| Accordion | Symbol groups will be displayed in the Accordion view. |![Accordion_View](SymbolGroup_images/Accordion.png)|
+| List | Symbol groups will be displayed in the List view. |![List_View](SymbolGroup_images/List.png)|
+| Tab | Symbol groups will be displayed in the Tab view. |![Tab_View](SymbolGroup_images/Tab.png)|
