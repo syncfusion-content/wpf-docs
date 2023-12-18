@@ -54,6 +54,12 @@ The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.ht
 | VerticalFlip | It is used to flip the node or port is mirrored across the vertical axis. |
 | None | It is used to disables all the flip behaviour. |
 
-![Represents the flip](Commands_images/Commands_img7.gif)
+![Represents the Node flip](Commands_images/Commands_img7.gif)
+
+### Group Flip
+
+The Group Flip allows the content of the group, including nodes, connectors, and ports, to be flipped based on their position within the group, following the designated flip direction.
+
+![Represents the Group flip](Commands_images/Commands_GroupFlip.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Flip%20Command)
