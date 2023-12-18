@@ -81,7 +81,7 @@ Diagram.SingleSelectionMode = SingleSelectionMode.Select;
 
 ### Select/Unselect the elements programmatically
 
-The `IsSelected` Property is used to select/unselect the elements at runtime.
+The [`IsSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_IsSelected) Property is used to select/unselect the elements at runtime.
 
 The following code example illustrates how to select/unselect an item  programmatically.
 
@@ -157,7 +157,7 @@ Diagram.ConnectorSelectionIndicatorStyle = this.Resources["connectorselectionind
 
 ### Selector handle display mode
 
-Diagram control provides support to change the selection handle display mode of the Node, Connector, and Group by using the `SelectorHandleDisplayMode` property.
+Diagram control provides support to change the selection handle display mode of the Node, Connector, and Group by using the [`SelectorHandleDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SelectorHandleDisplayMode) property.
 
 |SelectorHandleDisplayMode|Description| Output|
 |--|--|--|
