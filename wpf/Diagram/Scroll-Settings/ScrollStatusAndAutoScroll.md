@@ -13,14 +13,14 @@ The diagram can be scrolled by using the vertical and horizontal scrollbars. In 
 
 ## Get current scroll status
 
-Diagram allows to get the scroll settings related values using the [`ScrollInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollInfo) property of `ScrollSettings` class.
+Diagram allows to get the scroll settings related values using the [`ScrollInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollInfo) property of [`ScrollSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html) class.
 
-* `CurrentZoom`: Specifies the zooming level of the diagram page.
-* `Viewport`: Specifies the position and dimensions of diagram's visible area.
-* `ViewportHeight`: Specifies the height of the view port area of diagram control.
-* `ViewportWidth`: Specifies the width of the view port area of diagram control.
-*  `HorizontalOffset`: Specifies the horizontal origin or left side origin of the view port of the diagram page.
-* `VerticalOffset`: Specifies the vertical origin or top side of the view port of the diagram page.
+* [`CurrentZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_CurrentZoom): Specifies the zooming level of the diagram page.
+* [`Viewport`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_Viewport): Specifies the position and dimensions of diagram's visible area.
+* [`ViewportHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_ViewportHeight): Specifies the height of the view port area of diagram control.
+* [`ViewportWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_ViewportWidth): Specifies the width of the view port area of diagram control.
+*  [`HorizontalOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_HorizontalOffset): Specifies the horizontal origin or left side origin of the view port of the diagram page.
+* [`VerticalOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_VerticalOffset): Specifies the vertical origin or top side of the view port of the diagram page.
 
 {% tabs %}
 {% highlight C# %}
@@ -73,7 +73,7 @@ Autoscroll feature automatically scrolls the Diagram whenever the Node or Connec
 
 ## Autoscroll border
 
-The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is set as 20 for all sides (left, right, top, and bottom) and it can be changed by using the [`AutoScrollBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_AutoScrollBorder) property of ScrollSettings.
+The Autoscroll border is used to specify the maximum distance between the object and Diagram edge to trigger Autoscroll. The default value is set as 20 for all sides (left, right, top, and bottom) and it can be changed by using the [`AutoScrollBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_AutoScrollBorder) property of [ScrollSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html).
 
 {% tabs %}
 {% highlight xaml %}
