@@ -506,7 +506,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### How to change the editing mode
 
-Diagram allows you to show the annotation in view or edit mode while loading the diagram elements by using the [`Mode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Mode) property of [`AnnotationEditorViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html) class. Default value is View.
+Diagram allows you to show the annotation in view or edit mode while loading the diagram elements by using the [`Mode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Mode) property of [`AnnotationEditorViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html) class. Default value is [`View`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ContentEditorMode.html#fields).
 
 {% tabs %}
 {% highlight xaml %}
