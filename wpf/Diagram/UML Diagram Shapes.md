@@ -63,27 +63,3 @@ The list of UML Diagram Shapes are available in the diagram resource dictionary,
 | Attribute | ![Attribute](UMLShapes_Images\Attribute.PNG)|
 | MultivaluedAttribute | ![MultivaluedAttribute](UMLShapes_Images\MultivaluedAttribute.PNG)|
 | StrongRelationship | ![StrongRelationship](UMLShapes_Images\StrongRelationship.PNG)|
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
