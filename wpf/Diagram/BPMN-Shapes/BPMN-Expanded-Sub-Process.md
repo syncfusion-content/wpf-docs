@@ -63,7 +63,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ## Add BPMNNode into BPMNGroup
 
-To add a [BpmnNodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) into BPMNGroup, you have to define the BpmnNodeViewModel object and add that to the nodes collection of the BPMNGroup.
+To add a [BpmnNodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) into BPMNGroup, you have to define the `BpmnNodeViewModel` object and add that to the nodes collection of the BPMNGroup.
 
 The following code example explains how to create a BPMN group.
 
@@ -172,7 +172,7 @@ A Sub-process is a group of tasks that is used to hide or reveal details of addi
 
 ### Loop
 
-The [`LoopActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_LoopActivity) is a task that is internally being looped. The LoopActivity property of [`BpmnGroupViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html) allows you to define the type of loop. The default value for `LoopActivity` is **None**.
+The [`LoopActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_LoopActivity) is a task that is internally being looped. The LoopActivity property of [`BpmnGroupViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html) allows you to define the type of loop. The default value for `LoopActivity` is [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.LoopCharacteristic.html).
 
 You can define the loop property in the subprocess BPMN shape as shown in the following code.
 
@@ -329,7 +329,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ### SubProcessType
 
-SubProcessType represents the type of task that is being processed. The [`SubProcessType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_SubProcessType) property of the [`BpmnGroupViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html) allows you to define the type of SubProcess. By default, it is set to **Default**.
+SubProcessType represents the type of task that is being processed. The [`SubProcessType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_SubProcessType) property of the [`BpmnGroupViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html) allows you to define the type of SubProcess. By default, it is set to [`Default`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.SubProcessType.html).
 
 {% tabs %}
 {% highlight xaml %}
