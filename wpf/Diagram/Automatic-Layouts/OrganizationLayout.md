@@ -232,7 +232,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ## How to change the chart type and orientation in organization layout 
 
-You can change the chart type and orientation of organization layout by using the GetLayoutInfo event of the SfDiagram. This event will fire for each time when an organization layout gets updated. Default chart type is Alternate and default orientation is Vertical.
+You can change the chart type and orientation of organization layout by using the GetLayoutInfo event of the SfDiagram. This event will fire for each time when an organization layout gets updated. Default chart type is [`Alternate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ChartType.html) and default orientation is Vertical.
 
 For GetLayoutInfo, refer to, [GetLayoutInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html).
 
