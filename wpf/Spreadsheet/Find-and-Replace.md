@@ -26,7 +26,7 @@ The common parameters to be passed in Find functions are,
 
 * The option to specify whether the search can be done within the Workbook([IWorkbook](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorksheet.html)).
 * The text to be searched.
-* The option to specify the direction whether the search can be done either by row wise or column wise using [SearchBy](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SearchBy.html) enum.
+* The option to specify the direction whether the search can be done either by row wise or column wise using [SearchBy](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SearchBy.html) enum.
 * The type to specify whether the search can be done either in formulas or values using [ExcelFindType](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.ExcelFindType.html) enum.
 * For a case sensitive search, pass the parameter as true otherwise you can pass the parameter as false.
 * For matching the entire cell content with the search text, pass the parameter as true otherwise you can pass the parameter as false.

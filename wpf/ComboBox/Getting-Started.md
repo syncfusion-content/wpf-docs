@@ -113,7 +113,7 @@ namespace ComboBox
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Adding items in ComboBoxAdv
-Items can be added in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) control by following ways.
+Items can be added in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control by following ways.
 
  1. Adding items by ComboBoxItemAdv.
  2. Adding items by DataBinding.
@@ -249,7 +249,7 @@ public class PopulationViewModel
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ### Binding to Data 
-To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) to data, bind the collection created in previous step to [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) property in XAML by setting `PopulationViewModel` as `DataContext`.
+To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) to data, bind the collection created in previous step to [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) property in XAML by setting `PopulationViewModel` as `DataContext`.
 
 {% tabs %}
 {% highlight xaml %}
