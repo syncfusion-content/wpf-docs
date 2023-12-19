@@ -9,21 +9,21 @@ documentation: ug
 
 # TextAnnotation in WPF Diagram (SfDiagram)
 
-* A TextAnnotation points at or references the another BPMN shape, which we call the [`TextAnnotationTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TextAnnotationTarget) of the TextAnnotation. When a target shape is moved, copied, or deleted, any TextAnnotations attached to the shape will be moved, copied, or deleted too.  Thus, the TextAnnotations stay with their target shapes though you can reposition the TextAnnotation to any offset from its target. The TextAnnotationTarget property of the BpmnNodeViewModel is used to connect an annotation element to the BpmnNodeViewModel.
+* A [Text Annotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#TextAnnotation) points at or references the another BPMN shape, which we call the [`TextAnnotationTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TextAnnotationTarget) of the `TextAnnotation`. When a target shape is moved, copied, or deleted, any Text Annotations attached to the shape will be moved, copied, or deleted too.  Thus, the Text Annotations stay with their target shapes though you can reposition the `TextAnnotation` to any offset from its target. The `TextAnnotationTarget` property of the [`BpmnNodeViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) is used to connect an annotation element to the `BpmnNodeViewModel`.
 
 * The annotation element can be switched from a BPMN node to another BPMN node simply by dragging the source end of the annotation connector into the other BPMN node.
 
-* By default, the TextAnnotation shape having a connection.
+* By default, the `TextAnnotation` shape having a connection.
 
 * The [`TextAnnotationDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TextAnnotationDirection) property is used to set the shape direction of the text annotation.
 
-* To set the size for text annotation, use the UnitWidth and UnitHeight properties.
+* To set the size for text annotation, use the [`UnitWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_UnitWidth) and [`UnitHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_UnitHeight) properties.
 
-* The OffsetX and OffsetY property is used to set the distance between the BPMN node and the TextAnnotation.
+* The [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_OffsetY) property is used to set the distance between the BPMN node and the `TextAnnotation`.
 
-* The TextAnnotation element can be moved (if their have connected with any BPMN Node) while dragging the BPMN node.
+* The `TextAnnotation` element can be moved (if their have connected with any BPMN Node) while dragging the BPMN node.
 
-The following code example represents how to create a TextAnnotation.
+The following code example represents how to create a Text Annotation.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ BpmnNodeViewModel textannotation = new BpmnNodeViewModel()
 
 ![BPMN Text Annotation](BPMN-Shapes-Images/bpmn-textannotation.png)
 
-The following code example represents how to create a TextAnnotation and make a connection between the Activity and TextAnnotation shape.
+The following code example represents how to create a Text Annotation and make a connection between the `Activity` and `TextAnnotation` shape.
 
 {% tabs %}
 {% highlight c# %}
@@ -104,9 +104,9 @@ BpmnNodeViewModel textannotation = new BpmnNodeViewModel()
 
 ## How to create a connection between the TextAnnotation to BPMNNode
 
-Drag and drop any bpmn shapes from the stencil to diagram and make a connection between the BPMN Node and TextAnnotation.
+Drag and drop any bpmn shapes from the stencil to diagram and make a connection between the BPMN Node and `TextAnnotation`.
 
 
-The following image shows how to drag a symbol from the palette and create a connection between the TextAnnotation to BPMNNode with interaction.
+The following image shows how to drag a symbol from the palette and create a connection between the `TextAnnotation` to `BPMNNode` with interaction.
 
 ![BPMN Text Annotation](BPMN-Shapes-Images/textannotationbpmn.gif)
