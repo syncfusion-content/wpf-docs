@@ -15,7 +15,7 @@ The scroll limit allows you to define the scrollable region of the Diagram while
 * Diagram: Allows you to scroll within the Diagram content.
 * Limited: Allows you to scroll within the specified area.
 
-The default operation is `Diagram`.
+The default operation is [`Diagram`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollLimit.html).
 
 {% tabs %}
 {% highlight xaml %}
