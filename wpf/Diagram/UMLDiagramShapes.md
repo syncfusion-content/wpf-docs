@@ -17,38 +17,38 @@ The list of UML Diagram Shapes are available in the diagram resource dictionary,
 
 | Shape Category | Shape Name | Output Shape |
 |---|---|---|
-| UMLActivity | Action | ![Action](UMLShapes_Images\Action.PNG) |
-| | Initial | ![Initial](UMLShapes_Images\Initial.PNG) |
-| | Final | ![Final](UMLShapes_Images\Final.PNG) |
-| | FlowFinal | ![FlowFinal](UMLShapes_Images\FlowFinal.PNG) |
-| | ForkNode | ![ForkNode](UMLShapes_Images\ForkNode.PNG) |
-| | JoinNode | ![JoinNode](UMLShapes_Images\JoinNode.PNG) |
-| | MergeNode | ![MergeNode](UMLShapes_Images\MergeNode.PNG) |
-| | ObjectNode | ![ObjectNode](UMLShapes_Images\ObjectNode.PNG) |
-| | SendSignal |![SendSignal](UMLShapes_Images\SendSignal.PNG) |
-| | AcceptEvent | ![AcceptEvent](UMLShapes_Images\AcceptEvent.PNG) |
-| | WaitTime | ![WaitTime](UMLShapes_Images\WaitTime.PNG) |
-| | Note | ![Note](UMLShapes_Images\Note.PNG) |
-| | ActivityEdge | ![ActivityEdge](UMLShapes_Images\ActivityEdge.PNG) |
-| UMLUseCase | User | ![User](UMLShapes_Images\User.PNG) |
-| | UseCase | ![UseCase](UMLShapes_Images\UseCase.PNG) |
-| | SubSystem | ![SubSystem](UMLShapes_Images\SubSystem.PNG) |
-| | AssociationLink | ![AssociationLink](UMLShapes_Images\AssociationLink.PNG) |
-| | DependencyLink | ![DependencyLink](UMLShapes_Images\DependencyLink.PNG) |
-| | GeneralizationLink | ![GeneralizationLink](UMLShapes_Images\GeneralizationLink.PNG) |
-| | IncludeLink | ![IncludeLink](UMLShapes_Images\IncludeLink.PNG) |
-| | ExtendLink | ![ExtendLink](UMLShapes_Images\ExtendLink.PNG) |
-| UMLStateDiagram | SimpleState | ![SimpleState](UMLShapes_Images\SimpleState.PNG) |
-| | StateWithInternalBehaviour| ![StateWithInternalBehaviour](UMLShapes_Images\StateWithInternalBehaviour.PNG) |
-| | CompositeState | ![CompositeState](UMLShapes_Images\CompositeState.PNG) |
-| | Initial | ![Initial](UMLShapes_Images\Initial.PNG) |
-| | Final | ![Final](UMLShapes_Images\Final.PNG) |
-| | Choice| ![Choice](UMLShapes_Images\Choice.PNG) |
-| | Note | ![Note](UMLShapes_Images\Note.PNG) |
-| UMLRelationship | StrongEntity | ![StrongEntity](UMLShapes_Images\StrongEntity.PNG) |
-| | Attribute | ![Attribute](UMLShapes_Images\Attribute.PNG) |
-| | MultivaluedAttribute | ![MultivaluedAttribute](UMLShapes_Images\MultivaluedAttribute.PNG) |
-| | StrongRelationship | ![StrongRelationship](UMLShapes_Images\StrongRelationship.PNG) |
+| UMLActivity | Action | ![Action](UMLShapes_images\Action.PNG) |
+| | Initial | ![Initial](UMLShapes_images\Initial.PNG) |
+| | Final | ![Final](UMLShapes_images\Final.PNG) |
+| | FlowFinal | ![FlowFinal](UMLShapes_images\FlowFinal.PNG) |
+| | ForkNode | ![ForkNode](UMLShapes_images\ForkNode.PNG) |
+| | JoinNode | ![JoinNode](UMLShapes_images\JoinNode.PNG) |
+| | MergeNode | ![MergeNode](UMLShapes_images\MergeNode.PNG) |
+| | ObjectNode | ![ObjectNode](UMLShapes_images\ObjectNode.PNG) |
+| | SendSignal |![SendSignal](UMLShapes_images\SendSignal.PNG) |
+| | AcceptEvent | ![AcceptEvent](UMLShapes_images\AcceptEvent.PNG) |
+| | WaitTime | ![WaitTime](UMLShapes_images\WaitTime.PNG) |
+| | Note | ![Note](UMLShapes_images\Note.PNG) |
+| | ActivityEdge | ![ActivityEdge](UMLShapes_images\ActivityEdge.PNG) |
+| UMLUseCase | User | ![User](UMLShapes_images\User.PNG) |
+| | UseCase | ![UseCase](UMLShapes_images\UseCase.PNG) |
+| | SubSystem | ![SubSystem](UMLShapes_images\SubSystem.PNG) |
+| | AssociationLink | ![AssociationLink](UMLShapes_images\AssociationLink.PNG) |
+| | DependencyLink | ![DependencyLink](UMLShapes_images\DependencyLink.PNG) |
+| | GeneralizationLink | ![GeneralizationLink](UMLShapes_images\GeneralizationLink.PNG) |
+| | IncludeLink | ![IncludeLink](UMLShapes_images\IncludeLink.PNG) |
+| | ExtendLink | ![ExtendLink](UMLShapes_images\ExtendLink.PNG) |
+| UMLStateDiagram | SimpleState | ![SimpleState](UMLShapes_images\SimpleState.PNG) |
+| | StateWithInternalBehaviour| ![StateWithInternalBehaviour](UMLShapes_images\StateWithInternalBehaviour.PNG) |
+| | CompositeState | ![CompositeState](UMLShapes_images\CompositeState.PNG) |
+| | Initial | ![Initial](UMLShapes_images\Initial.PNG) |
+| | Final | ![Final](UMLShapes_images\Final.PNG) |
+| | Choice| ![Choice](UMLShapes_images\Choice.PNG) |
+| | Note | ![Note](UMLShapes_images\Note.PNG) |
+| UMLRelationship | StrongEntity | ![StrongEntity](UMLShapes_images\StrongEntity.PNG) |
+| | Attribute | ![Attribute](UMLShapes_images\Attribute.PNG) |
+| | MultivaluedAttribute | ![MultivaluedAttribute](UMLShapes_images\MultivaluedAttribute.PNG) |
+| | StrongRelationship | ![StrongRelationship](UMLShapes_images\StrongRelationship.PNG) |
 
 
 
