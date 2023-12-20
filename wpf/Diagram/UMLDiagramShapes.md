@@ -21,7 +21,7 @@ The list of UML Diagram Shapes are available in the diagram resource dictionary,
 
 | Shape Name | Output Shape |
 |---|---|
-| Action | ![Action](UMLShapes_images/Action.png) |
+| Action | ![Action](UMLShapes_images\Action.png) |
 | Initial | ![Initial](UMLShapes_images\Initial.PNG) |
 | Final| ![Final](UMLShapes_images\Final.PNG) |
 | FlowFinal | ![FlowFinal](UMLShapes_images\FlowFinal.PNG) |
