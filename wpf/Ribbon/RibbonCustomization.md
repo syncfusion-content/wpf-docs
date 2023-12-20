@@ -319,6 +319,8 @@ Dim ribbonBar As New Syncfusion.Windows.Tools.Controls.RibbonBar With
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![Customize RibbonBar items in QAT](AddingItemstoQuickAccessToolBar_images/RibbonQuickAccessToolBar.png)
 
 ## Add custom QAT items
