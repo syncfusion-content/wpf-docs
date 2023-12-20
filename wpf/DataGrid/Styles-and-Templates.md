@@ -583,7 +583,7 @@ The header style can be applied to [DetailsViewDataGrid](https://help.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-If [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) is `true`, you can set the header style to DetailsViewDataGrid in [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+If [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) is `true`, you can set the header style to DetailsViewDataGrid in [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) event.
 
 {% tabs %}
 {% highlight xaml %}

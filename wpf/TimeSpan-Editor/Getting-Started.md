@@ -159,7 +159,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Value Changed Notification
 
-The selected time span changed in `TimeSpanEdit` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html) event. The `ValueChanged` event contains the old and newly selected time span values in the `OldValue` and `NewValue` properties.
+The selected time span changed in `TimeSpanEdit` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_ValueChanged) event. The `ValueChanged` event contains the old and newly selected time span values in the `OldValue` and `NewValue` properties.
 
 {% tabs %}
 {% highlight XAML %}
