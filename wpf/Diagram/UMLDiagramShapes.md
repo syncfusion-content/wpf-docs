@@ -60,10 +60,13 @@ The list of UML Diagram Shapes are available in the diagram resource dictionary,
 | Choice| ![Choice](UMLShapes_Images\Choice.PNG)|
 | Note | ![Note](UMLShapes_Images\Note.PNG)|
 
-### UMLRelationship:
+### UMLRelationship
+
 | Shape Name | Output Shape |
 |---|---|
 | StrongEntity | ![StrongEntity](UMLShapes_Images\StrongEntity.PNG)|
 | Attribute | ![Attribute](UMLShapes_Images\Attribute.PNG)|
 | MultivaluedAttribute | ![MultivaluedAttribute](UMLShapes_Images\MultivaluedAttribute.PNG)|
 | StrongRelationship | ![StrongRelationship](UMLShapes_Images\StrongRelationship.PNG)|
+
+
