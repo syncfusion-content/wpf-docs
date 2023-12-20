@@ -8,14 +8,17 @@ documentation: ug
 ---
 
 # UML Diagrams
+
 UML (Unified Modeling Language) Diagrams serve as a standardized means to represent diverse facets of a system, facilitating communication and comprehension for software developers, analysts, and stakeholders. UML Behavioral Diagrams, specifically, play a crucial role in visualizing, specifying, constructing, and documenting the dynamic aspects of a system. They aid in visualizing and determining the model, execution flow, state, or behavior of the system at a specific time.
 
 ## UML Diagram Shapes
+
 Creating UML Diagrams involves the selection and combination of various UML shapes to provide a visual representation of a system's architecture. Each shape carries a distinct meaning and usage, collectively contributing to the overall clarity and comprehensibility of the diagram.
 
 The list of UML Diagram Shapes are available in the diagram resource dictionary, as follows:
 
-### UMLActivity:
+### UMLActivity
+
 | Shape Name | Output Shape |
 |---|---|
 | Action | ![Action](UMLShapes_Images\Action.PNG) |
@@ -32,7 +35,8 @@ The list of UML Diagram Shapes are available in the diagram resource dictionary,
 | Note | ![Note](UMLShapes_Images\Note.PNG)|
 | ActivityEdge | ![ActivityEdge](UMLShapes_Images\ActivityEdge.PNG)|
 
-### UMLUseCase:
+### UMLUseCase
+
 | Shape Name | Output Shape |
 |---|---|
 | User | ![User](UMLShapes_Images\User.PNG)|
@@ -44,7 +48,8 @@ The list of UML Diagram Shapes are available in the diagram resource dictionary,
 | IncludeLink | ![IncludeLink](UMLShapes_Images\IncludeLink.PNG)|
 | ExtendLink | ![ExtendLink](UMLShapes_Images\ExtendLink.PNG)|
 
-### UMLStateDiagram:
+### UMLStateDiagram
+
 | Shape Name | Output Shape |
 |---|---|
 | SimpleState | ![SimpleState](UMLShapes_Images\SimpleState.PNG)|
