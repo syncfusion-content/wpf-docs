@@ -289,7 +289,7 @@ When binding the menu item using CommandBinding, you can get the parameter as [T
 
 ### Events
 
-The [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when opening the context menu in SfTreeGrid. [TreeGridContextMenuEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs.html#Syncfusion_SfGrid_WPF__ctor) has the following members, which provide information about the TreeGridContextMenuOpening event:
+The [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_TreeGridContextMenuOpening) event occurs when opening the context menu in SfTreeGrid. [TreeGridContextMenuEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs.html#Syncfusion_SfGrid_WPF__ctor) has the following members, which provide information about the TreeGridContextMenuOpening event:
   
 [ContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridContextMenuEventArgs__ctor_System_Windows_Controls_ContextMenu_System_Object_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_Syncfusion_UI_Xaml_TreeGrid_ContextMenuType_System_Object_) – Gets the corresponding context menu. 
 [ContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridContextMenuEventArgs_ContextMenuInfo) – Returns the context menu info based on the row that opens the context menu.
@@ -301,7 +301,7 @@ The [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 #### Changing the menu item when ContextMenu opens
 
-You can use the [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event to change the menu item when the context menu opens. 
+You can use the [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_TreeGridContextMenuOpening) event to change the menu item when the context menu opens. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -409,7 +409,7 @@ SfTreeGrid triggers the following events when drag and drop:
 
 ### DragStart
 
-[DragStart](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html): Occurs when you start to drag the node in treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following member, which provides information for the `DragStart` event.
+[DragStart](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropController_DragStart): Occurs when you start to drag the node in treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following member, which provides information for the `DragStart` event.
 
 [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragStartEventArgs_DraggingNodes): Gets the TreeNode that contains the data associated when dragging the rows.
   
@@ -426,7 +426,7 @@ private void RowDragDropController_DragStart(object sender, Syncfusion.UI.Xaml.T
 
 ### DragOver
 
-[DragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html): Occurs continuously when tree node is dragged within the the target treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following members, which provide information for the `DragOver` event:
+[DragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropController_DragOver): Occurs continuously when tree node is dragged within the the target treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following members, which provide information for the `DragOver` event:
 
 [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropEventArgsBase_Data): Gets or sets a data object that contains data associated when dragging the rows.
 
@@ -450,7 +450,7 @@ private void RowDragDropController_DragOver(object sender, Syncfusion.UI.Xaml.Tr
 
 ### DragLeave
 
-[DragLeave](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html): Occurs when perform a drag-and-drop operation. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following members, which provide information for the `DragLeave` event:
+[DragLeave](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropController_DragLeave): Occurs when perform a drag-and-drop operation. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following members, which provide information for the `DragLeave` event:
 
 [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropEventArgsBase_Data): Gets or sets a data object that contains the data associated when dragging the rows.
 
@@ -472,7 +472,7 @@ private void RowDragDropController_DragLeave(object sender, Syncfusion.UI.Xaml.T
 
 ### Drop
 
-[Drop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html): Occurs when a record is dropped within the target treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following members, which provide information for the `Drop` event:
+[Drop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropController_Drop): Occurs when a record is dropped within the target treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following members, which provide information for the `Drop` event:
 
 [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropEventArgsBase_Data): Gets or sets a data object that contains the data associated while dragging the rows.
 
@@ -496,7 +496,7 @@ private void RowDragDropController_Drop(object sender, Syncfusion.UI.Xaml.TreeGr
 
 ### Dropped
 
-[Dropped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html): Occurs when a record is dropped within the target treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following members, which provide information for the `Dropped` event:
+[Dropped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropController_Dropped): Occurs when a record is dropped within the target treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following members, which provide information for the `Dropped` event:
 
 [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropEventArgsBase_Data): Gets or sets a data object that contains the data associated when dragging the rows.
 
@@ -520,7 +520,7 @@ private void RowDragDropController_Dropped(object sender, Syncfusion.UI.Xaml.Tre
 
 #### Drag and drop between ListView and SfTreeGrid
 
-You can drag and drop the items between list view and treegrid by wiring the [Drop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) event from the [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+You can drag and drop the items between list view and treegrid by wiring the [Drop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropController_Drop) event from the [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -702,7 +702,7 @@ Sample for dragging and dropping the items between list view and treegrid: [Samp
 
 #### Drag and drop between TreeViewAdv and SfTreeGrid
 
-You can drag and drop the items between tree view and treegrid by wiring the [Drop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) and [DragStart](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) events from the [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+You can drag and drop the items between tree view and treegrid by wiring the [Drop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropController_Drop) and [DragStart](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDragDropController_DragStart) events from the [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
 
 {% tabs %}
 {% highlight c# %}
