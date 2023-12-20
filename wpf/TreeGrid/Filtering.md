@@ -468,7 +468,7 @@ this.sfTreeGrid.Columns["EmployeeID"].ColumnMemberType = typeof(double);
 
 ### Loading text filter for number or date column
 
-The [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event is used to load text filters for the columns that have number or date value as underlying type by setting value of the `TreeGridFilterItemsPopulatingEventArgs.FilterControl.AdvancedFilterType` property to `AdvancedFilterType.TextFilter`.
+The [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulating) event is used to load text filters for the columns that have number or date value as underlying type by setting value of the `TreeGridFilterItemsPopulatingEventArgs.FilterControl.AdvancedFilterType` property to `AdvancedFilterType.TextFilter`.
 
 {% tabs %}
 {% highlight c# %}
@@ -486,7 +486,7 @@ private void OnSfTreeGridFilterItemsPopulating(object sender, TreeGridFilterItem
 
 ### Customizing filter predicates
 
-The filter predicates can be customized using the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. This event occurs when applying filter using the filter control. Here, [FilterValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) is changed based on some conditions.
+The filter predicates can be customized using the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanging) event. This event occurs when applying filter using the filter control. Here, [FilterValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) is changed based on some conditions.
 
 {% tabs %}
 {% highlight c# %}
@@ -507,7 +507,7 @@ private void OnSfTreeGridFilterChanging(object sender, TreeGridFilterChangingEve
 
 ### Customizing Excel-like filter ItemsSource
 
-The [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) `ItemsSource` can be customized to restrict some data from filtering using the [SfTreeGrid.FilterItemsPopulated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. Here, the [FilterElement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterElement.html) that has actual value as 0 is removed from `ItemsSource`.
+The [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) `ItemsSource` can be customized to restrict some data from filtering using the [SfTreeGrid.FilterItemsPopulated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulated) event. Here, the [FilterElement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterElement.html) that has actual value as 0 is removed from `ItemsSource`.
 
 {% tabs %}
 {% highlight c# %}
@@ -533,7 +533,7 @@ private void OnSfTreeGridFilterItemsPopulated(object sender, TreeGridFilterItems
 
 ### Changing filter UI
 
-Filter UI can be changed either for all the columns or for a specific column in SfTreeGrid by changing the [FilterMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterMode) property value using the [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
+Filter UI can be changed either for all the columns or for a specific column in SfTreeGrid by changing the [FilterMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterMode) property value using the [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulating) event.
 
 Here, filter UI is changed to `AdvancedFilter` only for `EmployeeID` column.
 
@@ -553,7 +553,7 @@ private void SfTreeGrid_FilterItemsPopulating(object sender, TreeGridFilterItems
 
 ### Customizing sort options text
 
-Sort options text can be customized by changing the value of [AscendingSortString](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_AscendingSortString) and [DescendingSortString](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_DescendingSortString) properties in the [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) using the [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
+Sort options text can be customized by changing the value of [AscendingSortString](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_AscendingSortString) and [DescendingSortString](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_DescendingSortString) properties in the [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) using the [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulating) event.
 
 {% tabs %}
 {% highlight c# %}

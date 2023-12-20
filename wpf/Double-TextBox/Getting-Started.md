@@ -21,7 +21,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF DoubleTextBox via designer
 
-You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
+You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.WPF
 
@@ -171,7 +171,7 @@ class ViewModel : NotificationObject
 
 ## Value Changed Notification
 
-The `DoubleTextbox` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
+The `DoubleTextbox` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_ValueChanged) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
 
 {%tabs%}
 {% highlight xaml %} 

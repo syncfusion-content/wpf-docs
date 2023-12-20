@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization and Deserialization in WPF DataGrid
 
-SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer).
+SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-7.0).
  
 ## Serialization 
 You can serialize the SfDataGrid by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method which exports the current DataGrid control properties to an XML file.
@@ -26,7 +26,7 @@ using (var file = File.Create("DataGrid.xml"))
 
 ### Serialize as Stream
 
-You can store the SfDataGrid settings as [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream) using [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method by passing the stream.
+You can store the SfDataGrid settings as [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-7.0) using [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method by passing the stream.
 
 {% tabs %}
 {% highlight c# %}
@@ -38,7 +38,7 @@ this.dataGrid.Serialize(stream);
 
 ## Serialization options 
 
-SfDataGrid serialization  operation can be customized by passing [SerializationOptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationOptions.html) instance as an argument to [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_Syncfusion_UI_Xaml_Grid_SerializationOptions_) method.
+SfDataGrid serialization  operation can be customized by passing [SerializationOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationOptions.html) instance as an argument to [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_Syncfusion_UI_Xaml_Grid_SerializationOptions_) method.
 
 
 ### Serialize sorting
@@ -181,7 +181,7 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
 
 ### Deserialize from Stream
 
-You can deserialize the SfDataGrid settings from [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream) using [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_) method.
+You can deserialize the SfDataGrid settings from [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-7.0)using [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -192,7 +192,7 @@ this.dataGrid.Deserialize(fileStream);
 
 ## Deserialization options
  
-Deserialization operation can be customized by passing [DeserializationOptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DeserializationOptions.html) instance as an argument to [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_Syncfusion_UI_Xaml_Grid_DeserializationOptions_) method.
+Deserialization operation can be customized by passing [DeserializationOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DeserializationOptions.html) instance as an argument to [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_Syncfusion_UI_Xaml_Grid_DeserializationOptions_) method.
 
 ### Deserialize sorting
 
@@ -320,13 +320,13 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
 
 ## Customizing Serialization and Deserialization Operations
 
-SfDataGrid allows you to customize the serialization and deserialization operations by deriving [SerializationController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class and override the necessary virtual methods.
+SfDataGrid allows you to customize the serialization and deserialization operations by deriving [SerializationController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class and override the necessary virtual methods.
 
 ### Serialize custom column 
 
 By default, the unknown(custom) column types are serialized as `GridTextColumn` type. If you want to serialize the custom column, you have to add custom column type into predefined types. 
 
-In the below code snippet, DatePickerColumn is created . For more information about creating custom column refer [here](http://help.syncfusion.com/wpf/sfdatagrid/column-types#custom-column-support).
+In the below code snippet, DatePickerColumn is created . For more information about creating custom column refer [here](https://help.syncfusion.com/wpf/sfdatagrid/column-types#custom-column-support).
 
 {% tabs %}
 {% highlight c# %}
@@ -378,7 +378,7 @@ In the below code snippet, the DatePickerColumn is defined in SfDataGrid.
 
 To serialize the above DatePickerColumn, follow the below steps.
  
-1. Create a class derived from [SerializableGridColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) and define the custom column properties in `SerializableCustomGridColumn` class.
+1. Create a class derived from [SerializableGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) and define the custom column properties in `SerializableCustomGridColumn` class.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -396,7 +396,7 @@ public class SerializableCustomGridColumn : SerializableGridColumn
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Create a new class named as SerializationControllerExt by overriding [SerializationController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class.
+2. Create a new class named as SerializationControllerExt by overriding [SerializationController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -496,7 +496,7 @@ public class SerializationControllerExt : SerializationController
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-6. During deserialization, you can get the custom column settings from [SerializableGridColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) by overriding [GetGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_GetGridColumn_Syncfusion_UI_Xaml_Grid_SerializableGridColumn_) virtual method.
+6. During deserialization, you can get the custom column settings from [SerializableGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) by overriding [GetGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_GetGridColumn_Syncfusion_UI_Xaml_Grid_SerializableGridColumn_) virtual method.
  
 {% capture codesnippet6 %}
 {% tabs %}
@@ -548,7 +548,7 @@ public class SerializationControllerExt : SerializationController
 {% endcapture %}
 {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1590961253.zip).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1590961253.zip).
 
 ### Serializing template column content
 
@@ -611,4 +611,4 @@ public class SerializationControllerExt : SerializationController
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1041317411.zip).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1041317411.zip).
