@@ -60,6 +60,4 @@ The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.ht
 
 When the Flip command is applied to the group, it enables the transformation of its content, including nodes, connectors, and ports, in accordance with their positions within the group, aligning with the specified flip direction.
 
-![Represents the Group flip](Commands_images/Commands_GroupFlip.gif)
-
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Flip%20Command)
