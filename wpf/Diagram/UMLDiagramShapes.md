@@ -17,8 +17,6 @@ Creating UML Diagrams involves the selection and combination of various UML shap
 
 The list of UML Diagram Shapes are available in the diagram resource dictionary, as follows:
 
-### UMLActivity
-
 | Resource Name | Shape Name | Output Shape |
 |---|---|---|
 | UMLActivity | Action | ![Action](UMLShapes_images/Action.png) |
