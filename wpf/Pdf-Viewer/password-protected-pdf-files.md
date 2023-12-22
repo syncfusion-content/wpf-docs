@@ -180,7 +180,6 @@ Page Organizer<br/>
 Content Copying<br/>
 Annotations<br/>
 Print<br/>
-Redaction<br/>
 Page Organizer<br/>
 </td>
 </tr>
@@ -190,7 +189,6 @@ Page Organizer<br/>
 Content Copying<br/>
 Annotations<br/>
 Print<br/>
-Redaction<br/>
 Page Organizer<br/>
 </td>
 </tr>
