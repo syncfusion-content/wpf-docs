@@ -2461,7 +2461,7 @@ You can download the sample demo [here](https://www.syncfusion.com/downloads/sup
 
 ## See Also
 
-[How to show vertical border to the column wise summary rows?](https://support.syncfusion.com/kb/article/8850/how-to-show-vertical-border-to-the-column-wise-summary-rows-in-wpf-datagrid-sfdatagrid)
+[How to show vertical border to the column wise summary rows?](https://support.syncfusion.com/kb/article/8850/how-to-show-vertical-border-to-the-column-wise-summary-rows-in-wpf-datagrid)
 
 [How to define summary rows using AttachedProperty in datagrid](https://support.syncfusion.com/kb/article/8658/how-to-define-summary-rows-using-attached-property-in-wpf-datagrid-)
 
