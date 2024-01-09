@@ -69,6 +69,6 @@ Quadratic bezier segments are annotated with single thumb to represent the contr
 
 N> Quadratic bezier segments also supports to have multiple quadratic bezier segments and `BezierSmoothness` as Cubic bezier segments.
 
+## See Also
 
-
-
+* [How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)

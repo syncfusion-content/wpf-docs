@@ -106,12 +106,9 @@ diagram.OutlineSettings = new OutlineSettings()
 
 Find the [Virtualization sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Virtualization) to depict the Virtualization.
 
-{% seealso %}
+## See Also
 
-[How to serialize the diagram control](/wpf/diagram/serialization)
-
-[How to localize the diagram control](/wpf/diagram/localization)
-
-[How to have overview for diagram control](/wpf/diagram/overview-control)
-
-{% endseealso %}
+* [How to serialize the diagram control](/wpf/diagram/serialization)
+* [How to localize the diagram control](/wpf/diagram/localization)
+* [How to have overview for diagram control](/wpf/diagram/overview-control)
+* [How to enable the virtualization?](https://support.syncfusion.com/kb/article/6081/how-to-enable-the-virtualization-in-wpf-diagram-sfdiagram)

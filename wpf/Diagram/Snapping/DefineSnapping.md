@@ -150,3 +150,7 @@ Diagram allows snapping on dock ports while making new connection on it and drag
 ![Snap to object](Gridlines_images/DockPortSnapping.gif)
 
 Find the [Snapping sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Snapping) to depict the Snapping.
+
+## See Also
+
+* [How to enable snapping in diagram?](https://support.syncfusion.com/kb/article/5908/how-to-enable-snapping-in-wpf-diagram-sfdiagram)

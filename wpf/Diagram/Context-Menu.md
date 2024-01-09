@@ -114,3 +114,5 @@ void MainPage_MenuItemClickedEvent(object sender,
 ## See Also
 
 * [How to customize the context menu?](https://www.syncfusion.com/kb/10467/how-to-customize-the-contextmenu-in-wpf-sfdiagram)
+* [How to display images, image URI and shapes for menu items icon?](https://support.syncfusion.com/kb/article/13009/how-to-display-images-image-uri-and-shapes-for-menu-items-icon-in-wpf-diagram)
+* [How to add icon to context menu item?](https://support.syncfusion.com/kb/article/10986/how-to-add-icon-to-context-menu-item-in-wpf-diagram-sfdiagram)

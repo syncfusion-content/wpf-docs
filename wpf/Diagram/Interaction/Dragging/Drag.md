@@ -96,11 +96,12 @@ Diagram.ConnectorDropIndicatorStyle = this.Resources["connectordropindicator"] a
 ## See Also
 
 * [How to drag and drop elements between diagrams](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
-
 * [How to restrict the diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-the-diagram-objects-dragging-in-the-positive-side-in-the-wpf-diagram)
-
 * [How to drag and drop elements from treeview?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
-
+* [How to drag and drop different shapes from SfTreeView to WPF Diagram?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
 * [How to create parent and child relationship by drag and drop nodes?](https://support.syncfusion.com/kb/article/10008/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagram-sfdiagram)
-
 * [How to restrict the child node dragging whereas allow group dragging?](https://support.syncfusion.com/kb/article/9921/how-to-restrict-the-child-node-dragging-whereas-allow-group-dragging-in-wpf-diagram)
+* [How to show the copied diagram elements as preview image along with the mouse pointer?](https://support.syncfusion.com/kb/article/12037/how-to-show-the-copied-diagram-elements-as-preview-image-along-with-the-mouse-pointer-in)
+* [How to update the Zindex of the dragged node?](https://support.syncfusion.com/kb/article/10388/how-to-update-the-zindex-of-the-dragged-node-in-wpf-diagram-sfdiagram)
+* [How to create filled PolyLine Node?](https://support.syncfusion.com/kb/article/10255/how-to-create-filled-polyline-node-in-wpf-diagram-sfdiagram)
+* [How to restrict diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)

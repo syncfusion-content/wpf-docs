@@ -512,4 +512,5 @@ private void Diagram_NodeChangedEvent(object sender, ChangeEventArgs<object, Nod
 
 ## See Also
 
-* [How to add enable undo and redo using commands?](/wpf/sfdiagram/commands/undoredo)
+* [How to add/enable undo and redo using commands?](/wpf/sfdiagram/commands/undoredo)
+* [How to enable Undo/Redo feature for Diagram?](https://support.syncfusion.com/kb/article/11090/how-to-enable-undo-redo-feature-in-wpf-diagram-sfdiagram)

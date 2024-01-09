@@ -533,15 +533,14 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 ## See Also
 
 * [How to control the visibility of Ports?](https://www.syncfusion.com/kb/6687/how-to-control-the-visibility-of-ports)
-
 * [How to connect only with port not with node?](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
-
 * [How to validate the connection and port visibility (inport and outport) in the diagram?](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
-
 * [How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
-
 * [How to add multiple ports for the node?](https://www.syncfusion.com/kb/11435/how-to-add-multiple-ports-for-node-in-the-wpf-diagramsfdiagram)
-
 * [How to decide whether to drag or draw a connection on port at runtime?](https://www.syncfusion.com/kb/9622/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf)
-
 * [How to add ToolTip for Diagram objects of Node, NodePort in Diagram?](https://www.syncfusion.com/kb/13207/how-to-add-tooltip-for-diagram-objects-of-node-nodeport-in-wpf-diagramsfdiagram)
+* [How to disable the animation while creating a connection in diagram?](https://support.syncfusion.com/kb/article/8187/how-to-disable-the-animation-while-creating-a-connection-in-wpf-diagram-sfdiagram)
+* [How to create port at runtime through set tool?](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
+* [How to override the default cursors while interact on diagram objects?](https://support.syncfusion.com/kb/article/9997/how-to-override-the-default-cursors-while-interaction-in-wpf-diagram-sfdiagram)
+* [How to achieve zoom in or zoom out functionality to ports?](https://support.syncfusion.com/kb/article/10002/how-to-achieve-zoom-in-or-zoom-out-functionality-to-ports-in-wpf-diagram-sfdiagram)
+* [How to add port to the connector?](https://support.syncfusion.com/kb/article/5939/how-to-add-port-to-the-connector-in-wpf-diagram-sfdiagram)

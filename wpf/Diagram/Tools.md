@@ -355,8 +355,9 @@ public class CustomClass:SfDiagram
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools)
 
-{% seealso %}
+## See Also
 
-[How to override the default cursors while interaction?](https://www.syncfusion.com/kb/11407/how-to-override-the-default-cursors-while-interaction-in-wpf-diagramsfdiagram)
-
-{% endseealso %}
+* [How to override the default cursors while interaction?](https://www.syncfusion.com/kb/11407/how-to-override-the-default-cursors-while-interaction-in-wpf-diagramsfdiagram)
+* [How to switch between tools at runtime through the SetTool?](https://support.syncfusion.com/kb/article/9943/how-to-switch-between-tools-at-runtime-through-the-settool-in-wpf-diagram-sfdiagram)
+* [How to create port at runtime through set tool?](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
+* [How to draw nodes in diagram?](https://support.syncfusion.com/kb/article/5989/how-to-draw-node-in-wpf-diagram-sfdiagram)

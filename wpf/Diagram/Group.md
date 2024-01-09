@@ -67,3 +67,4 @@ You can edit the Group and its children at runtime. For more information about h
 ## See Also
  
 * [How to restrict the child node dragging whereas allow group dragging?](https://www.syncfusion.com/kb/11462/how-to-restrict-the-child-node-dragging-whereas-allow-group-dragging-in-wpf)
+* [How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)

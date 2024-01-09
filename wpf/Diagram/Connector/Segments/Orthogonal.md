@@ -165,7 +165,6 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 
 N> Overlapping with Source and Target nodes are only avoided. Other nodes are not considered as obstacles.
 
+## See Also
 
-
-
-
+* [How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)

@@ -211,3 +211,7 @@ stencil.SymbolsDisplayMode = SymbolsDisplayMode.IconsOnly;
 | NamesUnderIcons | Symbols will be displayed by its icon under its name |![NamesUnderIcons](Stencil_images/NameUnderIcons.png)|
 
 N> The `Name` property value will be displayed as tool tip of the symbols when `SymbolsDisplayMode` is set to `IconsOnly`.
+
+## See Also
+
+* [How to expand all symbol groups in stencil?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
