@@ -56,44 +56,56 @@ You can customize the appearance of expander button by writing style of [Accordi
 {% highlight XAML %}
 <!--  AccordionButton Style -->
 <Style TargetType="syncfusion:AccordionButton" x:Key="expanderButtonStyle">
-    <!--  Customization codes -->
-	<VisualStateManager.VisualStateGroups>
-	    <VisualStateGroup x:Name="ExpansionStates">
-		    <VisualState x:Name="Collapsed">
-		        <Storyboard>
-				    <DoubleAnimation BeginTime="00:00:00" Duration="00:00:00.3" Storyboard.TargetName="icon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="0" />
-			    </Storyboard>
-			</VisualState>
-			<VisualState x:Name="Expanded">
-				<Storyboard>
-					<DoubleAnimation BeginTime="00:00:00" Duration="00:00:00.3" Storyboard.TargetName="icon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="90" />
-					<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ExpandedBackground" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
-						<SplineColorKeyFrame KeyTime="00:00:00" Value="DeepPink" />
-			    	</ColorAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ExpandedBackground" Storyboard.TargetProperty="(UIElement.Opacity)">
-			     		<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5" />
-					</DoubleAnimationUsingKeyFrames>
-				</Storyboard>
-			</VisualState>
-		</VisualStateGroup>
-	</VisualStateManager.VisualStateGroups>
-	<Border x:Name="background" Background="{Binding Background}"  CornerRadius="1,1,1,1">
-		<Grid>
-			<Border Height="Auto" Margin="0,0,0,0" x:Name="ExpandedBackground" VerticalAlignment="Stretch" Opacity="0" Background="Red" BorderBrush="Yellow" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="1,1,1,1" />
-				<Grid Height="19" HorizontalAlignment="Center" x:Name="icon"  VerticalAlignment="Center" Width="19" RenderTransformOrigin="0.5,0.5" Grid.Column="0" Grid.Row="0">
-					<Grid.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform />
-							<SkewTransform />
-							<RotateTransform Angle="-90" />
-						<TranslateTransform />
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Path Height="Auto" HorizontalAlignment="Center" Margin="0,0,0,0" x:Name="arrow" VerticalAlignment="Center" Width="Auto" RenderTransformOrigin="0.5,0.5" Stroke="Red" StrokeThickness="1.5" Stretch="Uniform" Data="M16.365994,20.000013L32.000027,29.802015 30.936978,31.497023 16.368008,22.360976 1.0660061,32.000013 2.7179741E-05,30.308973z M16.366,10L32.000001,19.802 30.937001,21.497 16.368001,12.361001 1.0659999,22 0,20.309z M16.366,0L32.000001,9.802 30.937001,11.497001 16.368001,2.3610001 1.0659999,12 0,10.309z"/>
-			</Grid>
-			<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"  x:Name="header" Grid.Column="1" Grid.Row="0" Grid.RowSpan="1" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" />
-		</Grid>
-	</Border>
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="syncfusion:AccordionButton">
+                <Border x:Name="background" Background="{Binding Background}"  CornerRadius="1,1,1,1">
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="ExpansionStates">
+                            <VisualState x:Name="Collapsed">
+                                <Storyboard>
+                                    <DoubleAnimation BeginTime="00:00:00" Duration="00:00:00.3" Storyboard.TargetName="icon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="0" />
+                                </Storyboard>
+                            </VisualState>
+                            <VisualState x:Name="Expanded">
+                                <Storyboard>
+                                    <DoubleAnimation BeginTime="00:00:00" Duration="00:00:00.3" Storyboard.TargetName="icon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="90" />
+                                    <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ExpandedBackground" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
+                                        <SplineColorKeyFrame KeyTime="00:00:00" Value="PowderBlue" />
+                                    </ColorAnimationUsingKeyFrames>
+                                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ExpandedBackground" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5" />
+                                    </DoubleAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Height="Auto" Margin="0,0,0,0" x:Name="ExpandedBackground" VerticalAlignment="Stretch" Opacity="0" Background="Red" BorderBrush="Yellow" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="1,1,1,1" />
+                        <Grid Height="19" HorizontalAlignment="Left" x:Name="icon"  VerticalAlignment="Center" Width="19" RenderTransformOrigin="0.5,0.5" Grid.Column="0" Grid.Row="0">
+                            <Grid.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform />
+                                    <SkewTransform />
+                                    <RotateTransform Angle="-90" />
+                                    <TranslateTransform />
+                                </TransformGroup>
+                            </Grid.RenderTransform>
+                            <Path Height="Auto" HorizontalAlignment="Center" Margin="0,0,0,0" x:Name="arrow" VerticalAlignment="Center" Width="Auto" RenderTransformOrigin="0.5,0.5" Stroke="Red" StrokeThickness="1.5" Stretch="Uniform" Data="M16.365994,20.000013L32.000027,29.802015 30.936978,31.497023 16.368008,22.360976 1.0660061,32.000013 2.7179741E-05,30.308973z M16.366,10L32.000001,19.802 30.937001,21.497 16.368001,12.361001 1.0659999,22 0,20.309z M16.366,0L32.000001,9.802 30.937001,11.497001 16.368001,2.3610001 1.0659999,12 0,10.309z"/>
+                        </Grid>
+
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"  x:Name="header" Grid.Column="1" Grid.Row="0" Grid.RowSpan="1" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" />
+                    </Grid>
+                </Border>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
 </Style>
 <!--SfAccordion Control -->
 <syncfusion:SfAccordion x:Name="accordion1" HorizontalAlignment="Right" VerticalAlignment="Center" Width="180">
