@@ -36,8 +36,7 @@ You can search for symbols in the stencil by entering the symbol name (e.g: "rec
 
 The following image shows the search result of the symbol.
 
- ![Symbol](Stencil_images/Stencil_Search_Textbox.GIF) 
-
+![Symbol](Stencil_images/Stencil_Search_Textbox.GIF) 
 
 ## Search Tags
 

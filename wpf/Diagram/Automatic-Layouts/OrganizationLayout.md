@@ -371,3 +371,9 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 ![WPF Diagram with Organization Layout from Stencil](Automatic-Layouts_images/wpf-diagram-stencil-organization-layout.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/OrgChart%20with%20drag%20and%20dropped%20nodes)
+
+## See Also
+
+[How to show assistants to the parent node in the organization layout?](https://support.syncfusion.com/kb/article/9115/how-to-show-assistants-to-the-parent-node-of-the-organization-layout-in-wpf-diagram)
+
+[How to change the level of nodes in DirectedTreeLayout?](https://support.syncfusion.com/kb/article/6309/how-to-change-the-level-of-nodes-in-directedtreelayout-of-wpf-diagram-sfdiagram)

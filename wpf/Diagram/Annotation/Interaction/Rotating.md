@@ -78,5 +78,3 @@ Annotations = new ObservableCollection<IAnnotation>()
 |---|---|---|---|
 | Page | While rotating the node, annotation will not be rotated. | ![WPF Diagram Annotation Rotation Page](Annotation_images/wpf-diagram-annotation-rotation-page.gif) |
 | Wrap | While rotating the node, annotation will also be rotated with node. | ![WPF Diagram Annotation Rotation Parent](Annotation_images/wpf-diagram-annotation-rotation-parent.gif) |
-
-

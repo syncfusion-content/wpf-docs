@@ -114,10 +114,8 @@ diagram.SnapSettings = new SnapSettings()
 
 ![Snap to object](Gridlines_images/SnapANgle.gif) 
 
-{% seealso %}
+## See Also
 
 [How to add gridlines for diagram](https://help.syncfusion.com/wpf/diagram/gridlines)
 
 [How to add ruler for diagram](/wpf/diagram/rulers)
-
-{% endseealso %}
