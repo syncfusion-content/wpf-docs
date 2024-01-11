@@ -72,4 +72,4 @@ The [FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Fi
 
 ## See Also
  
-* [How to apply margin values to FitToPage command?](https://support.syncfusion.com/kb/article/5474/how-to-apply-margin-to-fittopage-in-wpf-diagram-sfdiagram)
+[How to apply margin values to FitToPage command?](https://support.syncfusion.com/kb/article/5474/how-to-apply-margin-to-fittopage-in-wpf-diagram-sfdiagram)

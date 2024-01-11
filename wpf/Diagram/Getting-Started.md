@@ -926,5 +926,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Exa
 
 ## See Also
 
-* [How to create treeview and diagram with editing options in the WPF Diagram?](https://support.syncfusion.com/kb/article/9926/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagram-sfdiagram)
-* [How to create a WPF SfDiagram?](https://support.syncfusion.com/kb/article/8853/how-to-create-a-wpf-diagram-sfdiagram)
+[How to create treeview and diagram with editing options in the WPF Diagram?](https://support.syncfusion.com/kb/article/9926/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagram-sfdiagram)
+
+[How to create a WPF SfDiagram?](https://support.syncfusion.com/kb/article/8853/how-to-create-a-wpf-diagram-sfdiagram)

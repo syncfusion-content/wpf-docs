@@ -316,14 +316,24 @@ Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagra
 
 ## See Also
 
-* [How to add or remove grid lines for diagram page](/wpf/diagram/gridlines)
-* [How to define scroll setting for diagram page](/wpf/diagram/scroll-settings/scrollstatusandautoscroll)
-* [How to add rulers for diagram page](/wpf/diagram/rulers)
-* [How to print the diagram pages](/wpf/diagram/printing)
-* [How to export the diagram page](/wpf/diagram/exporting)
-* [How to interact with diagram page ](/wpf/diagram/interaction)
-* [How to add multiple diagram pages?](https://www.syncfusion.com/kb/11463/how-to-add-multiple-diagram-pages-in-the-wpf-diagram-sfdiagram)
-* [How to use the property grid for diagram?](https://www.syncfusion.com/kb/11482/how-to-use-the-property-grid-in-the-wpf-diagram-sfdiagram)
-* [How to show or hide the background image?](https://support.syncfusion.com/kb/article/8243/how-to-show-or-hide-background-image-of-wpf-diagram-sfdiagram)
-* [How to enable the behaviour of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
-* [How to disable page editing?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
+[How to add or remove grid lines for diagram page](/wpf/diagram/gridlines)
+
+[How to define scroll setting for diagram page](/wpf/diagram/scroll-settings/scrollstatusandautoscroll)
+
+[How to add rulers for diagram page](/wpf/diagram/rulers)
+
+[How to print the diagram pages](/wpf/diagram/printing)
+
+[How to export the diagram page](/wpf/diagram/exporting)
+
+[How to interact with diagram page ](/wpf/diagram/interaction)
+
+[How to add multiple diagram pages?](https://www.syncfusion.com/kb/11463/how-to-add-multiple-diagram-pages-in-the-wpf-diagram-sfdiagram)
+
+[How to use the property grid for diagram?](https://www.syncfusion.com/kb/11482/how-to-use-the-property-grid-in-the-wpf-diagram-sfdiagram)
+
+[How to show or hide the background image?](https://support.syncfusion.com/kb/article/8243/how-to-show-or-hide-background-image-of-wpf-diagram-sfdiagram)
+
+[How to enable the behaviour of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
+
+[How to disable the page editing behaviour?](https://support.syncfusion.com/kb/article/5860/how-to-disable-page-editing-in-wpf-diagram-sfdiagram)

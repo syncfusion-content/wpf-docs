@@ -152,7 +152,10 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ##  See Also
 
-* [How to add annotations to nodes/connectors and its customization?](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations)
-* [How to add image annotations to a Node?](https://support.syncfusion.com/kb/article/6078/how-to-add-image-annotations-to-a-node-in-wpf-diagram-sfdiagram-control)
-* [How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
-* [How to programmatically Show/Hide the Annotations of node and connector?](https://support.syncfusion.com/kb/article/6281/how-to-programmatically-showhide-annotations-in-wpf-diagram-)
+[How to add annotations to nodes/connectors and its customization?](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations)
+
+[How to add image annotations to a Node?](https://support.syncfusion.com/kb/article/6078/how-to-add-image-annotations-to-a-node-in-wpf-diagram-sfdiagram-control)
+
+[How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
+
+[How to programmatically Show/Hide the Annotations of node and connector?](https://support.syncfusion.com/kb/article/6281/how-to-programmatically-showhide-annotations-in-wpf-diagram-)

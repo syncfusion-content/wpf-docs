@@ -9,13 +9,13 @@ documentation: ug
 
 # Phase in WPF Diagram (SfDiagram)
 
- The [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) is the subprocess which will split each lanes as horizontally or vertically based on the swimlane orientation. The multiple number of phase can be added to swimlane.
+The [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) is the subprocess which will split each lanes as horizontally or vertically based on the swimlane orientation. The multiple number of phase can be added to swimlane.
 
 ## Create an empty Phase
 
 You can create the [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) and add into the[Phases](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Phases) collection of the Swimlane.
 
->Note: For Horizontal Swimlane, you must set the UnitWidth of the Phase. For Vertical Swimlane, you must set UnitHeight of the Phase.
+N> For Horizontal Swimlane, you must set the UnitWidth of the Phase. For Vertical Swimlane, you must set UnitHeight of the Phase.
 
 The following code example explains how to add phase at swimlane.
 
@@ -107,7 +107,7 @@ The following code example explains how to add phase at swimlane.
 
 ## Dynamically add phase to Swimlane
 
- You can add the a phase at runtime by using the `Add` and `Remove` method of the [`SfDiagram.Phases`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Phases) collection. The following code example explains how to add and remove phase at run time.
+You can add the a phase at runtime by using the `Add` and `Remove` method of the [`SfDiagram.Phases`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Phases) collection. The following code example explains how to add and remove phase at run time.
 
 {% tabs %}
 {% highlight xaml %}

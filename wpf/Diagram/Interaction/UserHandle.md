@@ -81,8 +81,12 @@ The Alignment of QuickCommand is similar  to [Annotation Alignment](https://help
 
 ## See Also
 
-* [How to create a quick command in diagram?](https://www.syncfusion.com/kb/10403/how-to-create-a-quick-command-in-diagram)
-* [How to enable or disable QuickCommands?](https://www.syncfusion.com/kb/6351/how-to-enable-or-disable-quickcommands)
-* [How to hide specific default QuickCommands of Node?](https://www.syncfusion.com/kb/13236/how-to-hide-specific-default-quickcommands-of-node-in-wpf-diagramsfdiagram)
-* [How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)
-* [How to remove the rotator thumb of the node?](https://support.syncfusion.com/kb/article/5943/how-to-remove-rotator-of-the-node-in-wpf-diagram-sfdiagram)
+[How to create a quick command in diagram?](https://www.syncfusion.com/kb/10403/how-to-create-a-quick-command-in-diagram)
+
+[How to enable or disable QuickCommands?](https://www.syncfusion.com/kb/6351/how-to-enable-or-disable-quickcommands)
+
+[How to hide specific default QuickCommands of Node?](https://www.syncfusion.com/kb/13236/how-to-hide-specific-default-quickcommands-of-node-in-wpf-diagramsfdiagram)
+
+[How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)
+
+[How to remove the rotator thumb of the node?](https://support.syncfusion.com/kb/article/5943/how-to-remove-rotator-of-the-node-in-wpf-diagram-sfdiagram)

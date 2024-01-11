@@ -23,8 +23,12 @@ documentation: ug
 
 ## See Also
 
-* [How to get notified when zooming and panning the diagram?](https://www.syncfusion.com/kb/5877/how-to-get-notification-when-zooming-and-panning-the-diagram)
-* [How to do Panning the diagram in all the directions at a time?](https://support.syncfusion.com/kb/article/5874/how-to-do-panning-in-all-the-directions-at-a-time-in-wpf-diagram)
-* [How to bring the specific diagram object to the center or viewport of the Diagram?](https://support.syncfusion.com/kb/article/8390/how-to-bring-the-specific-object-to-the-center-or-viewport-of-the-diagram-in-wpf)
-* [How to achieve zoom in or zoom out functionality to ports?](https://support.syncfusion.com/kb/article/10002/how-to-achieve-zoom-in-or-zoom-out-functionality-to-ports-in-wpf-diagram-sfdiagram)
-* [How to get notification when zooming and panning the diagram page?](https://support.syncfusion.com/kb/article/5470/how-to-get-notification-when-zooming-and-panning-the-wpf-diagram-sfdiagram)
+[How to get notified when zooming and panning the diagram?](https://www.syncfusion.com/kb/5877/how-to-get-notification-when-zooming-and-panning-the-diagram)
+
+[How to do Panning the diagram in all the directions at a time?](https://support.syncfusion.com/kb/article/5874/how-to-do-panning-in-all-the-directions-at-a-time-in-wpf-diagram)
+
+[How to bring the specific diagram object to the center or viewport of the Diagram?](https://support.syncfusion.com/kb/article/8390/how-to-bring-the-specific-object-to-the-center-or-viewport-of-the-diagram-in-wpf)
+
+[How to achieve zoom in or zoom out functionality to ports?](https://support.syncfusion.com/kb/article/10002/how-to-achieve-zoom-in-or-zoom-out-functionality-to-ports-in-wpf-diagram-sfdiagram)
+
+[How to get notification when zooming and panning the diagram page?](https://support.syncfusion.com/kb/article/5470/how-to-get-notification-when-zooming-and-panning-the-wpf-diagram-sfdiagram)

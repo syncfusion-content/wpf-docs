@@ -75,9 +75,3 @@ public MainWindow()
 N> You have to define the textual descriptions of the context menu items for your custom cultures.
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Localization)
-
-
-
-
-
-

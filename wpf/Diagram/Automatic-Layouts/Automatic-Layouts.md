@@ -299,7 +299,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ![Customizing Tree Orientation in WPF Diagram](Automatic-Layouts_images/wpf-diagram-tree-orientation.png)
 
->N Orientation is not valid for [`RadialTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout.html).
+N> `Orientation` is not valid for [`RadialTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout.html).
 
 ## Avoiding connector segment overlapping in layout
 
@@ -323,7 +323,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ![WPF Diagram without Overlapping Segment in Tree Layout](Automatic-Layouts_images/wpf-diagram-without-overlapping-segment.png)
 
->N AvoidSegmentOverlapping is not valid for `RadialTreeLayout`.
+N> `AvoidSegmentOverlapping` is not valid for `RadialTreeLayout`.
 
 ## Customize margin in layout
 
@@ -347,12 +347,16 @@ diagram.LayoutManager = new LayoutManager()
 
 {% endtabs %}
 
->N Margin is not valid for `RadialTreeLayout`.
+N> `Margin` is not valid for `RadialTreeLayout`.
 
 ## See Also
  
-* [How to create parent and child relationship by drag and drop nodes?](https://support.syncfusion.com/kb/article/10008/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagram-sfdiagram)
-* [How to show assistants to the parent node of the organization layout?](https://support.syncfusion.com/kb/article/9115/how-to-show-assistants-to-the-parent-node-of-the-organization-layout-in-wpf-diagram)
-* [How to generate Layout with DataSource as NodeViewModel instead of business object class?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in)
-* [How to update layout automatically when collection is changed?](https://support.syncfusion.com/kb/article/5857/how-to-update-layout-automatically-when-collection-is-changed-in-wpf-diagram-sfdiagram)
-* [How to provide MultipleParentSupport in SfDiagram layout using DataSourceSettings?](https://support.syncfusion.com/kb/article/5493/how-to-provide-multipleparentsupport-in-wpf-diagram-sfdiagram-layout-via-datasourcesettings)
+[How to create parent and child relationship by drag and drop nodes?](https://support.syncfusion.com/kb/article/10008/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagram-sfdiagram)
+
+[How to show assistants to the parent node of the organization layout?](https://support.syncfusion.com/kb/article/9115/how-to-show-assistants-to-the-parent-node-of-the-organization-layout-in-wpf-diagram)
+
+[How to generate Layout with DataSource as NodeViewModel instead of business object class?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in)
+
+[How to update layout automatically when collection is changed?](https://support.syncfusion.com/kb/article/5857/how-to-update-layout-automatically-when-collection-is-changed-in-wpf-diagram-sfdiagram)
+
+[How to provide MultipleParentSupport in SfDiagram layout using DataSourceSettings?](https://support.syncfusion.com/kb/article/5493/how-to-provide-multipleparentsupport-in-wpf-diagram-sfdiagram-layout-via-datasourcesettings)
