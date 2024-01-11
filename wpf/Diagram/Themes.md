@@ -104,3 +104,7 @@ node.Annotations = new ObservableCollection<IAnnotation>()
 ![Diagram themes](Themes_images/DiagramThemes.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme/ThemeStyle).
+
+## See Also
+
+[How to apply built-in theme for node and connector?](https://support.syncfusion.com/kb/article/9995/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagram-sfdiagram)

@@ -327,10 +327,9 @@ private void OnAdd(object obj)
 
 ## Add children to lane
 
- To add nodes to the lane, you should add the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Nodes) collection of diagram and reference should add the [`Children`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html#Syncfusion_UI_Xaml_Diagram_LaneViewModel_Children) collection of the lane.
+To add nodes to the lane, you should add the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Nodes) collection of diagram and reference should add the [`Children`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html#Syncfusion_UI_Xaml_Diagram_LaneViewModel_Children) collection of the lane.
 
- The [LaneOffsetX](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_LaneOffsetX) and [LaneOffsetY](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_LaneOffsetY) property of the node will position the element in the lane canvas.
-
+The [LaneOffsetX](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_LaneOffsetX) and [LaneOffsetY](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_LaneOffsetY) property of the node will position the element in the lane canvas.
 
 The following code example explains how to add nodes to lane.
 

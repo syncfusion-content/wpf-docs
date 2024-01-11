@@ -102,3 +102,9 @@ diagram.LayoutManager = new LayoutManager()
 ![WPF Diagram with HierarchicalLayout](Automatic-Layouts_images/wpf-diagram-hierarchical-layout.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Hierarchical%20Tree)
+
+## See Also
+
+[How to generate Layout with DataSource as NodeViewModel instead of business object class?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in)
+
+[How to change the level of nodes in DirectedTreeLayout?](https://support.syncfusion.com/kb/article/6309/how-to-change-the-level-of-nodes-in-directedtreelayout-of-wpf-diagram-sfdiagram)

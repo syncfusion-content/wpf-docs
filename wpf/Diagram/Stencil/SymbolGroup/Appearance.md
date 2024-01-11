@@ -34,3 +34,7 @@ The appearance of the SymbolGroup in the Stencil can be changed by the SymbolGro
 | Accordion | Symbol groups will be displayed in the Accordion view. |![Accordion_View](SymbolGroup_images/Accordion.png)|
 | List | Symbol groups will be displayed in the List view. |![List_View](SymbolGroup_images/List.png)|
 | Tab | Symbol groups will be displayed in the Tab view. |![Tab_View](SymbolGroup_images/Tab.png)|
+
+## See Also
+
+[How to expand all symbol groups in stencil?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
