@@ -172,8 +172,18 @@ Diagram control provides support to change the selection handle display mode of 
 
 ## See Also 
 
-* [How to customize the selection behavior of nodes and connectors?](https://support.syncfusion.com/kb/article/6761/how-to-customize-the-selection-behavior-in-wpf-diagram-sfdiagram)
+[How to customize the selection behavior of nodes and connectors?](https://support.syncfusion.com/kb/article/6761/how-to-customize-the-selection-behavior-in-wpf-diagram-sfdiagram)
 
-* [How to disable the selection in Diagram?](https://support.syncfusion.com/kb/article/5495/how-to-disable-the-selection-in-wpf-diagram)
+[How to disable the selection in Diagram?](https://support.syncfusion.com/kb/article/5495/how-to-disable-the-selection-in-wpf-diagram)
 
-* [How to bind the SelectedItems property of SfDiagram to ViewModel property?](https://support.syncfusion.com/kb/article/11806/how-to-bind-the-selecteditems-property-of-sfdiagram-to-viewmodel-property)
+[How to bind the SelectedItems property of SfDiagram to ViewModel property?](https://support.syncfusion.com/kb/article/11806/how-to-bind-the-selecteditems-property-of-sfdiagram-to-viewmodel-property)
+
+[How to customize the appearance of the node selector?](https://support.syncfusion.com/kb/article/10605/how-to-customize-the-appearance-of-the-selector-in-wpf-diagram-sfdiagram)
+
+[How to use the property grid for diagram elements?](https://support.syncfusion.com/kb/article/9861/how-to-use-the-property-grid-in-the-wpf-diagram-sfdiagram)
+
+[How to customize the Selection behavior?](https://support.syncfusion.com/kb/article/6761/how-to-customize-the-selection-behavior-in-wpf-diagram-sfdiagram)
+
+[How to remove the rotator thumb of the node?](https://support.syncfusion.com/kb/article/5943/how-to-remove-rotator-of-the-node-in-wpf-diagram-sfdiagram)
+
+[How to disable the selection of diagram objects?](https://support.syncfusion.com/kb/article/5495/how-to-disable-the-selection-in-wpf-diagram)

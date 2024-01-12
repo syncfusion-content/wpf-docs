@@ -50,3 +50,7 @@ Segment width, the textual description of the ruler segment, and the appearance 
 ![CustomRuler](Rulers_images/Rulers_img2.jpeg)
 
 Please refer to the sample to [Customize the Ruler](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Rulers).
+
+## See Also
+
+[How to customize the ruler units?](https://support.syncfusion.com/kb/article/5944/how-to-customize-the-ruler-units-in-wpf-diagram-sfdiagram)

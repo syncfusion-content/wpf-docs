@@ -659,7 +659,7 @@ The `Constraints` property of connector allows you to enable or disable certain 
 
 Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Appearance) to depict the connector appearance and validation.
 
-{% seealso %}
+## See Also
 
 [How to add annotations for connectors](/wpf/diagram/annotation)
 
@@ -671,4 +671,24 @@ Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tre
 
 [How to draw connector independently using drawing tool](/wpf/diagram/tools)
 
-{% endseealso %}
+[How to customize the connection indicator style of node and port?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
+
+[How to get or set the positions of the segments by programmatically?](https://support.syncfusion.com/kb/article/10082/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-wpf-diagram)
+
+[How to toggle the visibility of connector at runtime?](https://support.syncfusion.com/kb/article/8897/how-to-toggle-the-visibility-of-connector-at-runtime-in-wpf-diagram-sfdiagram)
+
+[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)
+
+[How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram)
+
+[How to validate the connection and port visibility?](https://support.syncfusion.com/kb/article/8392/how-to-validate-the-connection-and-port-visibility-in-wpf-diagram-sfdiagram)
+
+[How to customize the thumb style of different connectors?](https://support.syncfusion.com/kb/article/8220/how-to-customize-the-wpf-diagram-sfdiagram-thumb-style)
+
+[How to connect only with port not with node?](https://support.syncfusion.com/kb/article/8241/how-to-connect-only-with-port-not-with-node-in-wpf-diagram-sfdiagram)
+
+[How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)
+
+[How to customize the bridging style for connector?](https://support.syncfusion.com/kb/article/6120/how-to-customize-the-bridging-style-for-connector-in-wpf-diagram-sfdiagram)
+
+[How to customize the direction of bridge?](https://support.syncfusion.com/kb/article/6010/how-to-customize-the-direction-of-bridge-in-wpf-diagram-sfdiagram)

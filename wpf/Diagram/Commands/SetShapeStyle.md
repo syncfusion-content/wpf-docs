@@ -38,5 +38,4 @@ graphinfo.Commands.SetShapeStyle.Execute(style);
 
 ![Gif for SelectByType command](Commands_Images/Commands_SetShapeStyle.gif)
 
-
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Rotate%20Command)

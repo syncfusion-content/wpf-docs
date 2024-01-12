@@ -288,6 +288,7 @@ diagram.LayoutManager = new LayoutManager()
 {% endtabs %}
 
 ### Custom
+
 Specifies the mind-map branches should be arranged in a defined direction.
 
 ![WPF Diagram MindMapTreeLayout with SplitMode](Automatic-Layouts_images/wpf-diagram-mindmap-splitmode.gif)

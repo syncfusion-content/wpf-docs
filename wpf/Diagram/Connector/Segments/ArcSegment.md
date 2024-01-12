@@ -130,3 +130,7 @@ ConnectorViewModel arcSegment = new ConnectorViewModel()
 {% endtabs %}
 
 ![Arc segments](Connector_images/CustomArcSegment.PNG)
+
+## See Also
+
+[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)
