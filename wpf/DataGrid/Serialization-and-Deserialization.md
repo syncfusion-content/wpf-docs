@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization and Deserialization in WPF DataGrid
 
-SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer).
+SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0).
  
 ## Serialization 
 You can serialize the SfDataGrid by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method which exports the current DataGrid control properties to an XML file.
@@ -26,7 +26,7 @@ using (var file = File.Create("DataGrid.xml"))
 
 ### Serialize as Stream
 
-You can store the SfDataGrid settings as [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream) using [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method by passing the stream.
+You can store the SfDataGrid settings as [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) using [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method by passing the stream.
 
 {% tabs %}
 {% highlight c# %}
@@ -181,7 +181,7 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
 
 ### Deserialize from Stream
 
-You can deserialize the SfDataGrid settings from [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream) using [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_) method.
+You can deserialize the SfDataGrid settings from [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) using [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -326,7 +326,7 @@ SfDataGrid allows you to customize the serialization and deserialization operati
 
 By default, the unknown(custom) column types are serialized as `GridTextColumn` type. If you want to serialize the custom column, you have to add custom column type into predefined types. 
 
-In the below code snippet, DatePickerColumn is created . For more information about creating custom column refer [here](http://help.syncfusion.com/wpf/sfdatagrid/column-types#custom-column-support).
+In the below code snippet, DatePickerColumn is created . For more information about creating custom column refer [here](https://help.syncfusion.com/wpf/datagrid/column-types#custom-column-support).
 
 {% tabs %}
 {% highlight c# %}
