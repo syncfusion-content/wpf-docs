@@ -30,8 +30,8 @@ spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
 
 Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are triggered while inserting the rows and columns. 
 
-* [RowsInserted](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html)
-* [ColumnsInserted](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html)
+* [RowsInserted](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGridModel_RowsInserted)
+* [ColumnsInserted](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGridModel_ColumnsInserted)
 
 {% tabs %}
 {% highlight c# %}
@@ -71,8 +71,8 @@ spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
 
 Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are triggered while deleting the rows and columns. 
 
-* [RowsRemoved](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html)
-* [ColumnsRemoved](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html)
+* [RowsRemoved](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGridModel_RowsRemoved)
+* [ColumnsRemoved](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGridModel_ColumnsRemoved)
 
 {% tabs %}
 {% highlight c# %}

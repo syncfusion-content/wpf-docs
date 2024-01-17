@@ -172,4 +172,4 @@ The following table contains various representation of the message flows.
 | InitiatingMessageFlow | ![InitiatingMessageFlow BPMN Shape](BPMN-Shapes-Images/InitiatingMessageFlow.png) |
 | NonInitiatingMessageFlow | ![NonInitiatingMessageFlow BPMN Shape](BPMN-Shapes-Images/NonInitiatingMessageFlow.png) |
 
->Note: The default value for the `FlowType` property is **SequenceFlow**.
+N> The default value for the `FlowType` property is **SequenceFlow**.

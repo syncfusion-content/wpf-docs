@@ -495,13 +495,13 @@ button2.SmallIcon = new BitmapImage(new Uri(Images\syncfusion.png", UriKind.Rela
 
 ![Icon Size](Getting-Started_images/Getting-Started_img9.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample showcases how to add dropdown button control and its basic features like image sizing options and size modes.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Getting-Started) in GitHub. This sample showcases how to add dropdown button control and its basic features like image sizing options and size modes.
 
 ## Adding items to Dropdown Button
 
 The [DropDownMenuGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html) acts as a container for the Dropdown Button control. It provides options to add menu items and also options like header name, re-sizing and scrollbar.
 
-N> For more information on how to bind data with command actions for Dropdown Button please refer to the topics [Data Binding](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Data-Binding) and [Command Binding](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Command-Binding).
+N> For more information on how to bind data with command actions for Dropdown Button please refer to the topics [Data Binding](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Data-Binding) and [Command Binding](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Command-Binding).
 
 {% tabs %}
 {% highlight xaml %} 
@@ -609,7 +609,7 @@ public class CountryViewModel
 
 ![Drop-Down-item](Getting-Started_images/Getting-Started_img11.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Add-Menu-Items) in GitHub.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Add-Menu-Items) in GitHub.
 
 ## Theme
 

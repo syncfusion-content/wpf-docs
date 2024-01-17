@@ -14,13 +14,14 @@ A [Swimlane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Swiml
 ![Swimlane Content](Swimlane-images/Swimlane_Default.PNG)
 
 ## Create a swimlane
+
 A swimlane can be created and added to the diagram, either programmatically or interactively. 
 
 ### Add Swimlane through the Swimlanes collection 
 
 To create a swimlane, you have to define the swimlane object and add that to the [Swimlanes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Swimlanes) collection of the diagram.
 
->Note: By default, if you create a swimlane, one lane and phase will be added.
+N> By default, if you create a swimlane, one lane and phase will be added.
 
 {% tabs %}
 {% highlight xaml %}
@@ -317,7 +318,6 @@ Swimlane can be selected by clicking (tap) the header of the swimlane.
 * The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![Drag Node](Swimlane-images/Swimlane_Select_Drag.gif)
-
 
 Please find the swimlane sample as follows.
 

@@ -94,3 +94,7 @@ The following code example represents how to define custom command to Save Comma
 {% endtabs %}
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/CustomCommand)
+
+## See Also
+
+[How to map the custom commands to existing gestures (keyboard shortcuts and mouse)?](https://support.syncfusion.com/kb/article/8709/how-to-map-the-custom-commands-to-existing-gestures-keyboard-shortcuts-and-mouse-in-wpf)

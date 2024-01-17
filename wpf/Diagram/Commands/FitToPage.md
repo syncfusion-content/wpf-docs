@@ -69,3 +69,7 @@ The [FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Fi
 ![Region](Commands_Images/Commands_img20.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Fit%20to%20page%20command)
+
+## See Also
+ 
+[How to apply margin values to FitToPage command?](https://support.syncfusion.com/kb/article/5474/how-to-apply-margin-to-fittopage-in-wpf-diagram-sfdiagram)

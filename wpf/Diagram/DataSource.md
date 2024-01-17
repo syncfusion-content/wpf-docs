@@ -500,3 +500,13 @@ public class DataItems : ObservableCollection<ItemInfo>
 ![Flowchart](DataSource_images/DataSource_Flowchart.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DataSource/Flowchart%20Layout)
+
+## See Also
+
+[How to do Expand/Collapse for Multi-Parent Layout?](https://support.syncfusion.com/kb/article/11417/how-to-do-expand-collapse-for-multiparent-layout-in-wpf-diagramsfdiagram)
+
+[How to generate Layout with DataSource as NodeViewModel instead of business object class?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in)
+
+[How to update layout automatically when collection is changed?](https://support.syncfusion.com/kb/article/5857/how-to-update-layout-automatically-when-collection-is-changed-in-wpf-diagram-sfdiagram)
+
+[How to provide MultipleParentSupport in SfDiagram layout using DataSourceSettings?](https://support.syncfusion.com/kb/article/5493/how-to-provide-multipleparentsupport-in-wpf-diagram-sfdiagram-layout-via-datasourcesettings)

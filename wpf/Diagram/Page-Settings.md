@@ -314,7 +314,7 @@ N> This customization plays a role in reducing the number of pages in printing.
 
 Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/PageSettings) to depict the Page Settings.
 
-{% seealso %}
+## See Also
 
 [How to add or remove grid lines for diagram page](/wpf/diagram/gridlines)
 
@@ -332,4 +332,8 @@ Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagra
 
 [How to use the property grid for diagram?](https://www.syncfusion.com/kb/11482/how-to-use-the-property-grid-in-the-wpf-diagram-sfdiagram)
 
-{% endseealso %}
+[How to show or hide the background image?](https://support.syncfusion.com/kb/article/8243/how-to-show-or-hide-background-image-of-wpf-diagram-sfdiagram)
+
+[How to enable the behaviour of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
+
+[How to disable the page editing behaviour?](https://support.syncfusion.com/kb/article/5860/how-to-disable-page-editing-in-wpf-diagram-sfdiagram)

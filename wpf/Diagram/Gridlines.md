@@ -178,8 +178,8 @@ public class Intervals : List<double>
 
 Find the [Gridlines sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Gridlines) to depict the Gridlines.
 
-{% seealso %}
+## See Also
 
 [How to snap the objects on gridlines](/wpf/diagram/snapping/definesnapping)
 
-{% endseealso %}
+[How to customize the appearance of the gridlines?](https://support.syncfusion.com/kb/article/7414/how-to-customize-the-appearance-of-gridlines-in-wpf-diagram-sfdiagram)

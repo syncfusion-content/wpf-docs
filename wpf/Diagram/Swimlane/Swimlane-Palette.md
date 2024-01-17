@@ -8,7 +8,8 @@ documentation: ug
 ---
 
 # Swimlane-Stencil in WPF Diagram (SfDiagram)
-  Diagram provides support to add lanes and phases to Stencil. 
+
+Diagram provides support to add lanes and phases to Stencil. 
 
 ## Add lanes and phases into stencil
 

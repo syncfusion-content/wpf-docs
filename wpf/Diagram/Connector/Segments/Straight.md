@@ -156,3 +156,7 @@ private void Diagram_ItemTappedEvent(object sender, DiagramEventArgs args)
 N> Segment splitting will be supported only for straight segments.
 
 Find the [Straight segment sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Straight%20Segment) to depict the Straight segment.
+
+## See Also
+
+[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)
