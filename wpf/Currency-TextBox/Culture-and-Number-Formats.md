@@ -17,7 +17,7 @@ Value of `CurrencyTextBox` can be formatted in following ways:
 
 ## Culture based formatting
 
-The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` property is used to format the decimal separator and group separator of the `CurrencyTextBox` value based on the respective culture.
+The [CurrencyTextBox](https://www.syncfusion.com/wpf-controls/currency-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` property is used to format the decimal separator and group separator of the `CurrencyTextBox` value based on the respective culture.
 
 {% tabs %}
 {% highlight xaml %}
