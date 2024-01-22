@@ -229,4 +229,4 @@ TreeMap supports various built-in themes. Refer to the below links to apply them
 
 ## see also
 
-[How to apply gradient color mapping to SfTreeMap](https://www.syncfusion.com/kb/9802/how-to-apply-gradientcolormapping-to-sftreemap)
+[How to apply gradient color mapping to SfTreeMap](https://support.syncfusion.com/kb/article/8597/how-to-apply-gradientcolormapping-to-sftreemap)
