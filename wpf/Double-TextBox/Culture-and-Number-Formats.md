@@ -17,7 +17,7 @@ Value of `DoubleTextBox` can be formatted in following ways:
 
 ## Culture based formatting
 
-The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` property is used to format the decimal separator and group separator of the `DoubleTextBox` value based on the respective culture.
+The [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` property is used to format the decimal separator and group separator of the `DoubleTextBox` value based on the respective culture.
 
 {%tabs%}
 {% highlight xaml %} 
