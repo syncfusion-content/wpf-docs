@@ -26,7 +26,7 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 
 ## Accessing the Current cell
 
-SfSpreadsheet allows the user to access the active cell by using the `CurrentCell` property of [SelectionController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SelectionController.html) Class.
+SfSpreadsheet allows the user to access the active cell by using the `CurrentCell` property of [SelectionController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SelectionController.html) Class.
 
 {% tabs %}
 {% highlight c# %}
@@ -44,7 +44,7 @@ var rangeList = spreadsheet.ActiveGrid.SelectedRanges;
 {% endhighlight %}
 {% endtabs %}
 
-N> To get the active range in the selected ranges list, use [ActiveRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.GridRangeInfoList.html#Syncfusion_UI_Xaml_CellGrid_GridRangeInfoList_ActiveRange) property of [GridRangeInfoList](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.GridRangeInfoList.html) class.
+N> To get the active range in the selected ranges list, use [ActiveRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.GridRangeInfoList.html#Syncfusion_UI_Xaml_CellGrid_GridRangeInfoList_ActiveRange) property of [GridRangeInfoList](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.GridRangeInfoList.html) class.
 
 ## Adding or Clearing the Selection
 
@@ -91,7 +91,7 @@ spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(6, 5);
 
 ## Converting GridRangeInfo into IRange
 
-SfSpreadsheet allows the user to convert the `GridRangeInfo` into the equivalent `IRange` by using [ConvertGridRangeToExcelRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.Helpers.GridExcelHelper.html#Syncfusion_UI_Xaml_Spreadsheet_Helpers_GridExcelHelper_ConvertGridRangeToExcelRange_Syncfusion_UI_Xaml_CellGrid_GridRangeInfo_Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGrid_) method of [GridExcelHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.Helpers.GridExcelHelper.html) class.
+SfSpreadsheet allows the user to convert the `GridRangeInfo` into the equivalent `IRange` by using [ConvertGridRangeToExcelRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.Helpers.GridExcelHelper.html#Syncfusion_UI_Xaml_Spreadsheet_Helpers_GridExcelHelper_ConvertGridRangeToExcelRange_Syncfusion_UI_Xaml_CellGrid_GridRangeInfo_Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGrid_) method of [GridExcelHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.Helpers.GridExcelHelper.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -99,7 +99,7 @@ var excelRange = GridExcelHelper.ConvertGridRangeToExcelRange(GridRangeInfo.Cell
 {% endhighlight %}
 {% endtabs %}
 
-T> Users can also convert the `IRange` into equivalent `GridRangeInfo` by using [ConvertExcelRangeToGridRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.Helpers.GridExcelHelper.html#Syncfusion_UI_Xaml_Spreadsheet_Helpers_GridExcelHelper_ConvertExcelRangeToGridRange_Syncfusion_XlsIO_IRange_) method of  [GridExcelHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.Helpers.GridExcelHelper.html) class.
+T> Users can also convert the `IRange` into equivalent `GridRangeInfo` by using [ConvertExcelRangeToGridRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.Helpers.GridExcelHelper.html#Syncfusion_UI_Xaml_Spreadsheet_Helpers_GridExcelHelper_ConvertExcelRangeToGridRange_Syncfusion_XlsIO_IRange_) method of  [GridExcelHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.Helpers.GridExcelHelper.html) class.
 
 ## Properties, Methods and Events
 

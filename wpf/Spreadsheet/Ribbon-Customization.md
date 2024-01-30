@@ -13,7 +13,7 @@ Ribbon Customization can be done in two ways,
 
 ## Using Control Template
 
-User can customize the ribbon items by overriding the template of [SfSpreadsheetRibbon](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheetRibbon.html).
+User can customize the ribbon items by overriding the template of [SfSpreadsheetRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheetRibbon.html).
 
 ## Using Event
 
