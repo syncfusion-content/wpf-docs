@@ -1622,8 +1622,8 @@ The [`ValueChangeCompleted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 ## See also
 
-[How to create a WPF SfCircularGauge range pointer with rounded corner edge](https://www.syncfusion.com/kb/11958/how-to-create-a-wpf-circular-gauge-sfcirculargauge-range-pointer-with-rounded-corner-edge)
+[How to create a WPF SfCircularGauge range pointer with rounded corner edge](https://support.syncfusion.com/kb/article/10366/how-to-create-a-wpf-circular-gauge-sfcirculargauge-range-pointer-with-rounded-corner-edge)
 
-[How to customize a needle pointer knob in WPF SfCircularGauge](https://www.syncfusion.com/kb/11929/how-to-customize-a-needle-pointer-knob-in-wpf-radial-gauge-sfcirculargauge)
+[How to customize a needle pointer knob in WPF SfCircularGauge](https://support.syncfusion.com/kb/article/10438/how-to-customize-a-needle-pointer-knob-in-wpf-radial-gauge-sfcirculargauge)
 
-[How to drag the (symbol & needle) pointers in the WPF SfCircularGauge](https://www.syncfusion.com/kb/11908/how-to-drag-the-symbol-needle-pointers-in-the-wpf-circular-gauge-sfcirculargauge)
+[How to drag the (symbol & needle) pointers in the WPF SfCircularGauge](https://support.syncfusion.com/kb/article/10540/how-to-drag-the-symbol--needle-pointers-in-the-wpf-circular-gauge)
