@@ -110,7 +110,7 @@ copyPaste.Paste(range, PasteOptions.Paste);
 {% endhighlight %}
 {% endtabs %}
 
-T> Users can also set their default [PasteOptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.PasteOptions.html) while pasting in SfSpreadsheet, by using [DefaultPasteOption](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetCopyPaste_DefaultPasteOption) property.
+T> Users can also set their default [PasteOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.PasteOptions.html) while pasting in SfSpreadsheet, by using [DefaultPasteOption](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetCopyPaste_DefaultPasteOption) property.
 
 ## Undo/Redo
 
