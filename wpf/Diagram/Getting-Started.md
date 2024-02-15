@@ -210,7 +210,7 @@ Please refer to [Shapes](https://help.syncfusion.com/wpf/diagram/shapes) to know
     <Style TargetType="Path" x:Key="ShapeStyle">
         <Setter Property="Fill" Value="#FF5B9BD5"/>
         <Setter Property="Stretch" Value="Fill"/>
-        Setter Property="Stroke" Value="#FFEDF1F6"/>
+        <Setter Property="Stroke" Value="#FFEDF1F6"/>
     </Style>
             
     <!--To apply Style for NodeViewModel-->
