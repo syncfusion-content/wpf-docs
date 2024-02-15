@@ -211,7 +211,7 @@ validation.ErrorBoxText = "Sum of the values in A1 and A2 should be greater than
 {% endhighlight %}
 {% endtabs %}
 
-For more reference, please go through the [XlsIO](http://help.syncfusion.com/file-formats/xlsio/working-with-data-validation) UG.
+For more reference, please go through the [XlsIO](https://help.syncfusion.com/file-formats/xlsio/working-with-data-validation) UG.
 
 T> If you want to load ComboBox to a cell in SfSpreadsheet, you can apply List Validation to that cell.
 
