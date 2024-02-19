@@ -62,3 +62,18 @@ Now, the default localized strings can be modified by changing the Name/Value pa
 
 
 N> You can refer to our [WPF Spreadsheet](https://www.syncfusion.com/wpf-controls/spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Spreadsheet example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the spreadsheet.
+
+## Localize when the resource file present in different assembly or different namespace?
+
+In  [WPF-Spreadsheet](https://help.syncfusion.com/wpf/spreadsheet/getting-started) (SfSpreadsheet) reads the localization resource files based on assembly name from its default namespace. If you are having the localization resource file other than the executing assembly (Assembly.GetExecutingAssembly())or other than default namespace, then you have to pass the assembly having the resource file and it’s default namespace to [Syncfusion.UI.Xaml.Spreadsheet.Resources.GridResourceWrapper.SetResources](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.Resources.GridResourceWrapper.html#Syncfusion_UI_Xaml_Spreadsheet_Resources_GridResourceWrapper_SetResources_System_Reflection_Assembly_System_String_) method.
+
+{% tabs %}
+{% highlight c# %}
+ public MainWindow()
+ {
+      System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja");
+      Syncfusion.UI.Xaml.Spreadsheet.Resources.GridResourceWrapper.SetResources(assemblyname, "namespacename");
+      InitializeComponent();
+ }
+{% endhighlight %}
+{% endtabs %}
