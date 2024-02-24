@@ -72,7 +72,8 @@ In  [WPF-Spreadsheet](https://help.syncfusion.com/wpf/spreadsheet/getting-starte
  public MainWindow()
  {
       System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja");
-      Syncfusion.UI.Xaml.Spreadsheet.Resources.GridResourceWrapper.SetResources(assemblyname, "namespacename");
+      Assembly assembly = Assembly.Load("Another assemblyname having resource file");
+      Syncfusion.UI.Xaml.Spreadsheet.Resources.GridResourceWrapper.SetResources(assembly, "namespacename");
       InitializeComponent();
  }
 {% endhighlight %}
