@@ -11,6 +11,34 @@ documentation: ug
 
 PDF Viewer control allows users to navigate to the bookmarks present in the loaded PDF document at UI level. 
 
+
+## Displaying bookmark
+The bookmark are displayed by clicking the bookmark icon in the left pane.By default the bookmark pane expand is false. To display bookmark pane from code behind,  use the following code example.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+  	pdfviewer.BookMarkSettings.IsExpanded = true;
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+	pdfviewer.BookMarkSettings.IsExpanded = true
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Steps to perform bookmark navigation in PdfViewerControl.
 
 1.	Open the bookmarks contained PDF document to enable the bookmark button in `PdfViewerControl`.
