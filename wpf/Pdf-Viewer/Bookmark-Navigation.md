@@ -13,7 +13,7 @@ PDF Viewer control allows users to navigate to the bookmarks present in the load
 
 
 ## Displaying bookmark
-The bookmark are displayed by clicking the bookmark icon in the left pane.By default the bookmark pane expand is false. To display bookmark pane from code behind,  use the following code example.
+The bookmark are displayed by clicking the bookmark icon in the left pane.To display bookmark pane from code behind, use the following code example.
 
 {% tabs %}
 {% highlight C# %}
@@ -22,6 +22,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
 	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
+    //By default the bookmark pane IsExpanded is false. 
   	pdfviewer.BookMarkSettings.IsExpanded = true;
 }
 
@@ -33,6 +34,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     Dim pdf As New PdfLoadedDocument(“Input.pdf”)
     pdfViewer.Load(pdf)
+    'By default the bookmark pane IsExpanded is false. 
 	pdfviewer.BookMarkSettings.IsExpanded = true
 End Sub
 
