@@ -28,13 +28,11 @@ List of Commands and Key Gesture:
 | Delete | Delete |	|
 | SelectAll | A	| Control |
 | Group| G|	Control |
-| UnGroup | G | Control |
+| UnGroup | U | Control+Shift |
 | SendToBack | [ | Control+Shift |
 | SendBackward | [ | Control |
 | BringToFront | ] | Control+Shift |
 | BringForward | ] | Control |
-| Group | G | Control |
-| Ungroup | G | Control |
 
 #### List of Commands and Key Gestures with Parameter
 
