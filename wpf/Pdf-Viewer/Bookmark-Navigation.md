@@ -22,7 +22,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
 	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
-    //By default the bookmark pane IsExpanded is false. 
+    //By default, the bookmark pane IsExpanded is false. 
   	pdfviewer.BookMarkSettings.IsExpanded = true;
 }
 
@@ -34,7 +34,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     Dim pdf As New PdfLoadedDocument(“Input.pdf”)
     pdfViewer.Load(pdf)
-    'By default the bookmark pane IsExpanded is false. 
+    'By default, the bookmark pane IsExpanded is false. 
 	pdfviewer.BookMarkSettings.IsExpanded = true
 End Sub
 
