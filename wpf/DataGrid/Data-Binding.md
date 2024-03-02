@@ -102,6 +102,7 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
 ### Limitations when binding indexer property 
 
 * SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
+* SfDataGrid doesn’t support [AutoGenerateColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns).
 
 
 ## Defining source data type
