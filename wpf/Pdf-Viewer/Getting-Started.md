@@ -198,5 +198,45 @@ The WPF PdfViewer Control supports various built-in themes. Refer to the below l
 
   ![WPF PDF Viewer Theme](getting-started_images/wpf-pdf-viewer-theme.png)
 
+Apply the variety of themes support for the PDFViewer control. And use the following example code for how to apply the FluentDark theme to PDFViewer.
+  
+{% tabs %}
+{% highlight c# %}
+
+public MainWindow()
+{
+    InitializeComponent();
+
+    //Initialize PDF Viewer.
+    PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+    //Apply the theme to PDFViewer.
+    SfSkinManager.SetTheme(pdfViewer, new Theme() { ThemeName = "FluentDark" });
+    HomeGrid.Children.Add(pdfViewer);
+    pdfViewer.Load(@"../../PDF_Succinctly.pdf");           
+}
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+    Public Sub New()
+
+        InitializeComponent()
+
+        'Initialize PDF Viewer.
+        Dim pdfViewer As PdfViewerControl = New PdfViewerControl()
+
+        'Apply the theme to PDFViewer.
+        SfSkinManager.SetTheme(pdfViewer, New Theme() With {
+            .ThemeName = "FluentDark"
+        })
+        pdfViewer.Load("../../PDF_Succinctly.pdf")
+        HomeGrid.Children.Add(pdfViewer)
+    End Sub
+
+{% endhighlight %}
+{% endtabs %}
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
