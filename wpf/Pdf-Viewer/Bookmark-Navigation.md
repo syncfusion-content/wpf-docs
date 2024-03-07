@@ -11,36 +11,6 @@ documentation: ug
 
 PDF Viewer control allows users to navigate to the bookmarks present in the loaded PDF document at UI level. 
 
-
-## Displaying bookmark
-The bookmark are displayed by clicking the bookmark icon in the left pane.To display bookmark pane from code behind, use the following code example.
-
-{% tabs %}
-{% highlight C# %}
-
-private void Window_Loaded(object sender, RoutedEventArgs e)
-{
-	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
-    pdfviewer.Load(pdf);
-    //By default, the bookmark pane IsExpanded is false. 
-  	pdfviewer.BookMarkSettings.IsExpanded = true;
-}
-
-{% endhighlight %}
-
-
-{% highlight vbnet %}
-
-Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
-    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
-    pdfViewer.Load(pdf)
-    'By default, the bookmark pane IsExpanded is false. 
-	pdfviewer.BookMarkSettings.IsExpanded = true
-End Sub
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Steps to perform bookmark navigation in PdfViewerControl.
 
 1.	Open the bookmarks contained PDF document to enable the bookmark button in `PdfViewerControl`.
@@ -157,6 +127,36 @@ pdfViewerControl.IsBookmarkEnabled = false
 The following screenshot shown the Bookmark navigation in `PdfViewerControl`,
 
 ![WPF PDF Viewer Enabling and Disabling Bookmark Feature](Bookmark_Navigation_images/wpf-pdf-viewer-enabling-and-disabling-bookmark-feature.png)
+
+## Expand bookmark panel Programmatically
+
+The bookmark are displayed by clicking the bookmark icon in the left panel.To display bookmark panel from code behind, use the following code example.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    //By default, the bookmark panel IsExpanded is false. 
+  	pdfviewer.BookMarkSettings.IsExpanded = true;
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    'By default, the bookmark panel IsExpanded is false. 
+	pdfviewer.BookMarkSettings.IsExpanded = true
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
 
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
