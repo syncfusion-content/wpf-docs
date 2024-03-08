@@ -251,11 +251,11 @@ End Sub
 
 ## Signature Form Field:
 
-The PDF viewer allows to add and delete for the signature in the signature form field.
+PDF viewer WPF allows the user to add the signature in the PDF document and provides options to delete the included  signature within the signature field of the PDF document.
 
 ### Add a signature from signature field
 
-Clicking the signature box will open the signature pad, requesting the user to draw the signature. After drawing the signature, clicking on the apply button will add the signature to the signature form field.
+Clicking the signature box will open the signature pad, requesting the user to draw the signature. clicking on the apply button will add the drawn signature to the signature field.
 
 ![WPF PDF Viewer Delete a Signature from Signature field](form-filling-images\wpf-pdf-viewer-signature-form-field-add.png)
 
