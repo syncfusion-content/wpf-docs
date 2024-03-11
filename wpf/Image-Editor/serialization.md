@@ -13,7 +13,7 @@ The Image Editor control provides support to serialize and deserialize the annot
 
 ## Serialization
 
-The Serialize() method is used to serialize the current edits of shapes. It allows you to store the SfImageEditor annotation settings with the help of `Serialize` method by passing the stream as parameter.
+The `Serialize()` method is used to serialize the current edits of shapes. It allows you to store the `SfImageEditor` annotation settings with the help of `Serialize` method by passing the stream as parameter.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ The Serialize() method is used to serialize the current edits of shapes. It allo
 
 ## Deserialization
 
-The Deserialize() method is used to deserialize the edits over an image. It allows you to reload the SfPivotGrid control with the settings available in the stream.
+The `Deserialize()` method is used to deserialize the edits over an image. It allows you to reload the `SfImageEditor` control with the settings available in the stream.
 
 {% tabs %}
 
