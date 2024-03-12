@@ -20,14 +20,13 @@ The `Serialize` method is used to serialize the current edits of annotations. It
 {% highlight C# %}
     
     SaveFileDialog dialog = new SaveFileDialog();
-    dialog.Title = "Save XAML";
-    dialog.Filter = "XAML File (*.xaml)|*.xaml";
+    dialog.Title = "Save XML";
+    dialog.Filter = "XML File (*.xml)|*.xml";
     if (dialog.ShowDialog() == true)
     {
         using (Stream stream = File.Open(dialog.FileName, FileMode.CreateNew))
         {
             imageEditor.Serialize(stream);
-            imageEditor.Reset();
         }
     }
     
@@ -59,7 +58,9 @@ The `Deserialize` method is used to deserialize the annotations over an image. I
 
 ## Annotations collection
 
-The Image Editor provides the read-only collection of annotations using the `Annotations` property.
+The Image Editor provides the read-only collection of annotations using the Annotations property. The Annotations property contains all the annotations currently visible in image editor.
+
+N> This collection will be reset if the background image has been changed.
 
 The following code snippet only adds a rectangle shape from the `Annotations` collection.
 
