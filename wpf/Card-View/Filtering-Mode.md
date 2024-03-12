@@ -113,7 +113,7 @@ public class ViewModel : NotificationObject
 
 ![wpf card view items filetred based on the field values](Grouping-Sorting-Filtering_images/filtering.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Reset the filter
 
@@ -121,7 +121,7 @@ If you want to reset the filtered card selection, click the `Clear Filter` butto
 
 ![wpf card view control clears the created filtered items](Grouping-Sorting-Filtering_images/clearfilter.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Hide the filtering header
 
@@ -143,4 +143,4 @@ cardView.ShowHeader = false;
 
 ![wpf card view control hides the filtering header](Grouping-Sorting-Filtering_images/hidegroupheader.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
