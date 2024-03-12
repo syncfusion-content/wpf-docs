@@ -493,6 +493,22 @@ button2.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.Rela
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample showcases how to add button control and its basic features like image sizing options and size modes.
 
+## Setting corner radius
+
+The CornerRadius allows users to set the corner radius for the Button control, allowing them to tailor the appearance of buttons to fit various design aesthetics.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <syncfusion:ButtonAdv x:Name="defaultButton" Label="Default" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Click="ButtonAdv_Click" CornerRadius="10" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Custom Corner Radius in Button](Getting-Started_images/Getting-Started_CornerRadius.png)
+
 ## IsDefault mode
 
 The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsDefault) property indicates whether the ButtonAdv is a Default button and is used to activate the ButtonAdv by pressing using Enter key. When setting the IsDefault property to true, the user can invoke the button by pressing the `Enter` key. 
