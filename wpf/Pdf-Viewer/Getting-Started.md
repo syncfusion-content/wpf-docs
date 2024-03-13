@@ -208,7 +208,7 @@ public MainWindow()
     InitializeComponent();
     //Initialize PDF Viewer.
     PdfViewerControl pdfViewer1 = new PdfViewerControl();
-	HomeGrid.Children.Add(pdfViewer);
+    HomeGrid.Children.Add(pdfViewer);
 
     //Apply the theme to PDFViewer.
     SfSkinManager.SetTheme(pdfViewer, new Theme() { ThemeName = "FluentDark" });
@@ -223,7 +223,7 @@ public MainWindow()
         InitializeComponent()
         'Initialize PDF Viewer.
         Dim pdfViewer As PdfViewerControl = New PdfViewerControl()
-		HomeGrid.Children.Add(pdfViewer)
+        HomeGrid.Children.Add(pdfViewer)
 
         'Apply the theme to PDFViewer.
         SfSkinManager.SetTheme(pdfViewer, New Theme() With {
