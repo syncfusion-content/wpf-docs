@@ -23,6 +23,7 @@ You can load and fill the following form fields in a PDF document using the PDF 
 4.	Radio button.
 5.	Combo box.
 6.	List box.
+7.	Signature box.
 
 ## Retrieve the form field details 
 
@@ -248,12 +249,30 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## Signature Form Field:
+
+PDF viewer WPF allows the user to add the signature in the PDF document and provides options to remove the included signature in the signature field of the PDF document.
+
+### Add a signature from signature field
+
+Clicking the signature box will open the signature pad, requesting the user to draw the signature. clicking on the apply button will add the drawn signature to the signature field.
+
+![WPF PDF Viewer Delete a Signature from Signature field](form-filling-images/wpf-pdf-viewer-signature-form-field-add.png)
+
+### Deleting a signature from signature field
+
+Selecting the delete option from the context menu, which is displayed when right-clicking on the selected signature, would delete the respective signature from the signature field.
+
+![WPF PDF Viewer Delete a Signature from Signature field](form-filling-images/wpf-pdf-viewer-signature-form-field-delete.png)
+
 ## Keyboard Shortcuts:
 
 The below keyboard shortcuts are used to navigate through the form fields present in the PDF document.
 
 *	Tab key – Navigates to the next form field present in the PDF document.
 *	Shift + Tab – Navigates to the previous form field present in the PDF document.
+*	Ctrl + Z - Performs form field value undo functionality for recently performed operations.
+*	Ctrl + Y - Performs form field value redo functionality for recently performed operations. 
 
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
