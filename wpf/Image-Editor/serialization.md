@@ -62,7 +62,7 @@ The Image Editor provides the read-only collection of annotations using the Anno
 
 N> This collection will be reset if the background image has been changed.
 
-The following code snippet only adds a rectangle shape from the `Annotations` collection.
+The following code sample only adds a rectangle shape from the Annotations collection.
 
 {% tabs %}
 
