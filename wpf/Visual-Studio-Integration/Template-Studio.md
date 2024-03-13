@@ -40,13 +40,13 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	![Choose Syncfusion WPF Application from Visual Studio new project dialog](Template-Studio-Images/WPF-3.png)
 
-4.	When you launch the **Syncfusion WPF Template Studio**, you will encounter a configuration wizard that allows you to set up your Syncfusion WPF application. Within this wizard, you'll have the option to specify your preferred .NET Core Version or .NET Framework Version, select the desired language, and choose the reference type according to your requirements.
+4.	When you launch the **Syncfusion WPF Template Studio**, you will encounter a configuration wizard that allows you to set up your Syncfusion WPF application. Within this wizard, you will have the option to specify your preferred .NET Core Version or .NET Framework Version, select the desired language(CSharp or Visual Basic), and choose the reference type according to your requirements.
 
 	![Syncfusion WPF project configuration wizard](Template-Studio-Images/WPF-4.png)
 
 	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0, and .NET 8.0 from the project type option in Visual Studio.
 
-	I> Visual Basic Language support is available in WPF Template Studio starting from version 25.*.*.
+	I> Visual Basic Language support is available in WPF Template Studio starting from version 25.1.35.
 
 5.	Click **Next** or navigate to the **Project type** tab, then select the desired Syncfusion WPF application type.
 
