@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization in syncfusion SfImageEditor WPF.
+title: Serialization in Syncfusion SfImageEditor WPF.
 description: This section describes how to serialize and deserialize the annotations in Syncfusion Essential Studio WPF ImageEditor (SfImageEditor) control
 platform: wpf
 control: SfImageEditor
