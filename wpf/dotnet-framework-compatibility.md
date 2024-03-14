@@ -20,7 +20,9 @@ Below table represents the supported Syncfusion Essential Studio version for .NE
 <th>.NET 3.5<br/></th>
 <th>.NET 4.0<br/></th>
 <th>.NET 4.5<br/></th>
-<th>.NET 4.6 & above<br/></th>
+<th>.NET 4.6<br/></th>
+<th>.NET 4.6.2 & above <br/></th>
+
 </tr>
 
 <tr>
@@ -29,51 +31,69 @@ Below table represents the supported Syncfusion Essential Studio version for .NE
 <td>Yes<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
+<td>No<br/></td>
 </tr>
 
 <tr>
 <td>
-From 11.2 (2013 Vol2) <br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td><td>
-No<br/></td>
+From 11.2 (2013 Vol2) <br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>No<br/></td>
+<td>No<br/></td>
 </tr>
 
 <tr>
 <td>
-From 13.3 (2015 Vol3) <br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td>
+From 13.3 (2015 Vol3) <br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>No<br/></td>
 </tr>
 
 <tr>
 <td>
-From 17.2 (2019 Vol2) <br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td>
+From 17.2 (2019 Vol2) <br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>No<br/></td>
 </tr>
 
 <tr>
 <td>
-From 18.4 (2020 Vol4) <br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td>
+From 18.4 (2020 Vol4) <br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>No<br/></td>
 </tr>
 
 <tr>
 <td>
-From 21.1 (2023 Vol1) <br/></td><td>
-No<br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td>
+From 21.1 (2023 Vol1) <br/></td>
+<td>No<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>No<br/></td>
+
+</tr>
+
+<tr>
+<td>
+From 25.1 (2024 Vol1) <br/></td>
+<td>No<br/></td>
+<td>Yes<br/></td>
+<td>No<br/></td>
+<td>No<br/></td>
+<td>Yes<br/></td>
+
 </tr>
 
 </table>
