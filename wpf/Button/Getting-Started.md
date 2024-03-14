@@ -495,7 +495,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/
 
 ## Setting corner radius
 
-Corner Radius indicates the degree to which the corners of the border can be rounded. The default value of CornerRadius property is 1.
+Corner Radius indicates the degree to which the corners of the border can be rounded. The default value of CornerRadius property is 3.
 
 {% tabs %}
 
