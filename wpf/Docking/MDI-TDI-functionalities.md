@@ -795,7 +795,6 @@ private void dockingManager_NewButtonClick(object sender, EventArgs e)
     DockingManager.SetState(contentControl, DockState.Document);
     tabControlExt.Container.AddTabDocumentAtLast = true;
     dockingManager.Children.Add(contentControl);
-    dockingManager.Children[tabControlExt.Items.Count - 1] = contentControl;
 }
 
 {% endhighlight %}
