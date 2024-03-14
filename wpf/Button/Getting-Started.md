@@ -518,7 +518,7 @@ button2.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.Rela
 
 {% endtabs %}
 
-![Custom Corner Radius in Button](Getting-Started_images/Getting-Started_CornerRadius.png)
+![Corner Radius in Button](Getting-Started_images/Getting-Started_CornerRadius.png)
 
 ## IsDefault mode
 
