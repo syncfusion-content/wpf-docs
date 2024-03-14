@@ -495,13 +495,24 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/
 
 ## Setting corner radius
 
-The CornerRadius allows users to set the corner radius for the Button control, allowing them to tailor the appearance of buttons to fit various design aesthetics.
+Corner Radius indicates the degree to which the corners of the border can be rounded. The default value of CornerRadius property is 1.
 
 {% tabs %}
 
 {% highlight xaml %}
 
- <syncfusion:ButtonAdv x:Name="defaultButton" Label="Default" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Click="ButtonAdv_Click" CornerRadius="10" />
+<syncfusion:ButtonAdv Width="120" Label="Syncfusion" SmallIcon="Images\syncfusion.png" CornerRadius="15" SizeMode="Normal" IconHeight="25" IconWidth="30"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ButtonAdv button2 = new ButtonAdv();
+button2.Label = "Syncfusion";
+button2.CornerRadius =new CornerRadius(15);
+button2.IconWidth=30;
+button2.IconHeight=25;
+button2.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 
