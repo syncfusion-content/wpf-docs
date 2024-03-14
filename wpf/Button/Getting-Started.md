@@ -501,7 +501,7 @@ Corner Radius indicates the degree to which the corners of the border can be rou
 
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv Width="120" Label="Syncfusion" SmallIcon="Images\syncfusion.png" CornerRadius="15" SizeMode="Normal" IconHeight="25" IconWidth="30"/>
+<syncfusion:ButtonAdv Label="Syncfusion" SmallIcon="Images\syncfusion.png" CornerRadius="15" SizeMode="Normal" IconHeight="25" IconWidth="30"/>
 
 {% endhighlight %}
 
