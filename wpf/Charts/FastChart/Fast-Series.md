@@ -13,7 +13,7 @@ A fast series is a special kind of line chart that can render a collection with 
 
 ## Fast Line
 
-The [`FastLineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastLineSeries.html#) is a special kind of line series that can render a collection with a huge number of datapoints. FastLine is rendered using polyline segment. 
+The [`FastLineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastLineSeries.html?tabs=tabid-1) is a special kind of line series that can render a collection with a huge number of datapoints. FastLine is rendered using polyline segment. 
 
 {% tabs %}
 
@@ -60,7 +60,7 @@ The following line properties are available for FastLineSeries:
 
 ## Fast Stacking Column
 
-[`FastStackingColumnBitmapSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html#) similar to StackingColumnSeries except that it loads faster and provides better performance. 
+[`FastStackingColumnBitmapSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html) similar to StackingColumnSeries except that it loads faster and provides better performance. 
 
 {% tabs %}
 
