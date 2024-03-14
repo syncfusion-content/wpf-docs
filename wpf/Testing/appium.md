@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appium Testing in WPF | WPF | Syncfusion
-description: This section expalins the basic steps to test the WPF controls using appium along with WinAppDriver 
+description: This section explains the fundamental procedures for evaluating WPF controls utilizing Appium along with WinAppDriver.
 platform: wpf
 control: Testing
 documentation: ug
