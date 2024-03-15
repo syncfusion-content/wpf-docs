@@ -748,7 +748,7 @@ In TDI document, new tab group can be created by dragging the tab item into the 
 
 ### Adding a new Tab using NewButtonClick event
 
-The NewButtonClick event is used to notifies when the new button(+) is clicked in DockingManager. In TDI document, new tab can be added at runtime by utilizing this event.
+The NewButtonClick event is used to notify when the new button(+) is clicked in DockingManager. By utilizing this event, a new tab can be added at runtime.
 
 {% tabs %}
 
@@ -773,18 +773,6 @@ The NewButtonClick event is used to notifies when the new button(+) is clicked i
 {% endhighlight %}
 
 {% highlight C# %}
-
-//Adding new button in docking manager using C#
-
-EventManager.RegisterClassHandler(typeof(DocumentTabControl), LoadedEvent, new RoutedEventHandler(DocumentTabControl_Loaded), true);
-
-private void DocumentTabControl_Loaded(object sender, RoutedEventArgs e)
-{
-    DocumentTabControl tab = sender as DocumentTabControl;
-    tab.IsNewButtonEnabled = true;
-    tab.IsNewButtonClosedonNoChild = false;
-    tab.NewButtonAlignment = NewButtonAlignment.Last;
-}
 
 //Adding a new item using the NewButtonClick event.
 private void dockingManager_NewButtonClick(object sender, EventArgs e)
