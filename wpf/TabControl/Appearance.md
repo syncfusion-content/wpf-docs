@@ -49,7 +49,7 @@ The available header styes are,
 
 ### Underline
 
-The below example demonstrates the UI of the `Underline` header style.
+The following example demonstrates the UI of the `Underline` header style.
 
 {% tabs %}
 {% highlight XAML %}
@@ -78,7 +78,7 @@ tabControlExt.TabItemHeaderStyle = TabItemHeaderStyle.Underline;
 
 ### Curve
 
-The below example demonstrates the UI of the `Curve` header style.
+The following example demonstrates the UI of the `Curve` header style.
 
 {% tabs %}
 {% highlight XAML %}
@@ -107,7 +107,7 @@ tabControlExt.TabItemHeaderStyle = TabItemHeaderStyle.Curve;
 
 ### Fill
 
-The below example demonstrates the UI of the `Fill` header style.
+The following example demonstrates the UI of the `Fill` header style.
 
 {% tabs %}
 {% highlight XAML %}
