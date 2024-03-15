@@ -224,6 +224,8 @@ We can control the visibility of RadialGradientBrush properties using the `IsGra
 <Syncfusion:ColorPicker x:Name="colorPicker" IsCenterVisible="False"/>
 
 {% endhighlight %}
+{% endtabs %}
+{% tabs %}
 {% highlight C# %}
 
 ColorPicker colorPicker = new ColorPicker();
