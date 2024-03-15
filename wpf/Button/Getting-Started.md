@@ -495,7 +495,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/
 
 ## Setting corner radius
 
-Corner Radius property allows users to easily customize the appearance of buttons to have rounded corners, the default value of corner radius value is 3.
+The `CornerRadius` property allows users to easily customize the appearance of buttons to have rounded corners. The default value of corner radius is 3.
 
 {% tabs %}
 
