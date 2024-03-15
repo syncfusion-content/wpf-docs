@@ -231,7 +231,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree
 
 ### Free editing
 
-When `AllowInlineEditing` is enabled, you can freely edit the value in the `SfTimePicker`. Validation occurs either when you press Enter or when the control loses focus.
+When `AllowInlineEditing` is true, you can freely edit the value in the `SfTimePicker`. Validation occurs either when you press Enter or when the control loses focus.
 
 {% tabs %}
 {% highlight xaml %}
@@ -255,7 +255,7 @@ sfTimePicker.AllowInlineEditing = true;
 
 ### Editing by selection
 
-When `AllowInlineEditing` is disabled and `ShowDropDownButton` is enabled, you can edit the time by selecting the hours and minutes.
+When `AllowInlineEditing` is false and `ShowDropDownButton` is true, you can edit the time by selecting the hours and minutes.
 
 {% tabs %}
 {% highlight xaml %}
@@ -281,7 +281,7 @@ sfTimePicker.ShowDropDownButton = true;
 
 ### Restrict editing
 
-When both `AllowInlineEditing` and `ShowDropDownButton` are disabled, the control behaves as read-only.
+When both `AllowInlineEditing` and `ShowDropDownButton` are false, the control behaves as read-only.
 
 {% tabs %}
 {% highlight xaml %}
