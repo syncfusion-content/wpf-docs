@@ -227,6 +227,82 @@ sfTimePicker.SetValueOnLostFocus = true;
 
 Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the value setting support in the `SfTimePicker`.
 
+## Restrict Editing and Free editing
+
+# Free editing
+
+When `AllowInlineEditing` is enabled, you can freely edit the value in the `SfTimePicker`. Validation occurs either when you press Enter or when the control loses focus.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTimePicker x:Name="timePicker"
+                     FormatString="HH:mm"
+                     Value="03:00"
+                     AllowInlineEditing="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker= new SfTimePicker();
+sfTimePicker.FormatString = "HH:mm";
+sfTimePicker.AllowInlineEditing = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Free editing in SfTimePicker](Features_images/FreeEditing.gif)
+
+# Editing by selection
+
+When `AllowInlineEditing` is disabled and `ShowDropDownButton` is enabled, you can edit the time by selecting the hours and minutes.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTimePicker x:Name="timePicker"
+                     FormatString="HH:mm"
+                     Value="03:00"
+                     AllowInlineEditing="False"
+                     ShowDropDownButton="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker= new SfTimePicker();
+sfTimePicker.FormatString = "HH:mm";
+sfTimePicker.AllowInlineEditing = false;
+sfTimePicker.ShowDropDownButton = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Editing by select the hours or minutes](Features_images/SelectionEditing.gif)
+
+# Restrict editing
+
+When both `AllowInlineEditing` and `ShowDropDownButton` are disabled, the control behaves as read-only.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTimePicker x:Name="timePicker"
+                     FormatString="HH:mm"
+                     Value="03:00"
+                     AllowInlineEditing="False"
+                     ShowDropDownButton="False" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker= new SfTimePicker();
+sfTimePicker.FormatString = "HH:mm";
+sfTimePicker.AllowInlineEditing = false;
+sfTimePicker.ShowDropDownButton = false;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Localization support
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `Ok` and `Cancel` button text in `SfTimePicker` control by adding resource file for each language.
