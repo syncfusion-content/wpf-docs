@@ -38,7 +38,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## TabItemHeaderStyle
 
-You can customize the tab header style using the `TabItemHeaderStyle` property in ThemeStudio themes. The default value of `TabItemHeaderStyle`  is `Underline`.
+The tab header style can be customized using the `TabItemHeaderStyle` property in ThemeStudio themes. The default value of `TabItemHeaderStyle`  is `Underline`.
 The available header styes are,
 
 * **Underline**
