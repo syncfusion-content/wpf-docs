@@ -47,7 +47,7 @@ The available header styes are,
 
 * **Fill**
 
-# Underline
+### Underline
 
 The below example demonstrates the UI of the `Underline` header style.
 
@@ -76,7 +76,7 @@ tabControlExt.TabItemHeaderStyle = TabItemHeaderStyle.Underline;
 
 ![TabItem with Underline header style](Tab-Item-Header_images/Underline.png)
 
-# Curve
+### Curve
 
 The below example demonstrates the UI of the `Curve` header style.
 
@@ -105,7 +105,7 @@ tabControlExt.TabItemHeaderStyle = TabItemHeaderStyle.Curve;
 
 ![TabItem with Curve header style](Tab-Item-Header_images/Curve.png)
 
-# Fill
+### Fill
 
 The below example demonstrates the UI of the `Fill` header style.
 
