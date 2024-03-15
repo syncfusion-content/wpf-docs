@@ -748,7 +748,7 @@ In TDI document, new tab group can be created by dragging the tab item into the 
 
 ### Adding a new Tab using NewButtonClick event
 
-The NewButtonClick event is used to notify when the new button(+) is clicked in DockingManager. By utilizing this event, a new tab can be added at runtime.
+The 'NewButtonClick' event is used to notify DockingManager when a new button (+) is clicked. By utilizing this event, a new tab can be added at runtime.
 
 {% tabs %}
 
