@@ -315,7 +315,11 @@ private void HideComboBoxTools(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-The following code sample explains disabling the Open tool from the menu.
+## Disable the file menu item
+
+The "PART_FileToggleButton" element was the child element of the PDF viewer control. However, it is actually part of the DocumentToolbar control, specifically referenced as "PART_Toolbar" template. Therefore, you cannot retrieve the name "PART_FileToggleButton" when obtaining the child names of PdfViewer. To access the "PART_FileToggleButton", you need to access the child elements of the document toolbar.Then Get the instance of the corresponding file menu item using its template name and disable its visibility.
+
+The following example code explains disabling the Open tool from the menu.
 
 {% tabs %}
 {% highlight c# %}
