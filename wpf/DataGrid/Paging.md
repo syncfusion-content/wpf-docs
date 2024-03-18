@@ -404,8 +404,6 @@ private void FilterBtn_Click(object sender, RoutedEventArgs e)
 Here, records are filtered based on the textbox text in clicking event of Filter button. Initially `PageCount` is 5 and it is changed as 3 once the records are filtered.
 ![WPF DataGrid displays Altering Page Count for DataPager while Filtering](paging_images/wpf-datagrid-datapager.png)
 
-You can refer the [sample](https://www.syncfusion.com/downloads/support/directtrac/133329/ze/DataPager398566735) from here.
-
 ### Sorting complete collection
 
 You can sort the complete collection with ‘OnDemandPaging’ by using [SfDataGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortColumnsChanging) event.
