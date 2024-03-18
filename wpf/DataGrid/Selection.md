@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WPF DataGrid control | Syncfusion
+title: Selection in WPF DataGrid Control | Syncfusion
 description: Learn here all about Selection support in Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Selection in WPF DataGrid (SfDataGrid)
+# Selection in WPF DataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) as [Row](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) or [Any](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html). In [SelectionUnit.Any](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) option you can select the row by clicking on row header.
 

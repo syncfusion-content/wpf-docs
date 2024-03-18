@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing in WPF Pivot Grid control | Syncfusion
+title: Editing in WPF Pivot Grid Control | Syncfusion
 description: Learn about Editing support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid

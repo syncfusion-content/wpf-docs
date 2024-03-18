@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# Acquire current page being displayed in WPF Pdf Viewer
+# Acquire Current Page Being Displayed in WPF Pdf Viewer
 
 PDF Viewer supports acquiring the index of the page being displayed in the PDF Viewer at any moment using the [CurrentPageIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_CurrentPageIndex) property. The following code example illustrates the same.
 
