@@ -16,15 +16,15 @@ Enable [Developer Mode](https://learn.microsoft.com/en-us/windows/apps/get-start
 Download the [Windows Application Driver](https://github.com/Microsoft/WinAppDriver/releases) and install it. It is used to run tests.
 Download the WinAppDriver UI Recorder, which is used to record tests at runtime. It does not require installation - simply unzip the downloaded archive to any folder.
 
-N> To obtain the UI Recorder app, by visit the Windows Application Driver [releases](https://github.com/Microsoft/WinAppDriver/releases) page and scroll down.
+N> To obtain the UI Recorder app, visit the Windows Application Driver [releases](https://github.com/Microsoft/WinAppDriver/releases) page and scroll down.
 
 ![Shows the WinAppDriver UI Recorder source code](Appium_images/UIRecorder.png)
 
 ### Remote Server
 
-Run WinAppDriver.exe as an administrator and observe the command prompt displaying information about the URL and port that the service is listening on. The default URL is http://127.0.0.1:4723. The command prompt also functions as a logger, showing HTTP requests and JSON payloads whenever the Appium SDK performs an interaction.
+Run WinAppDriver.exe as an administrator and observe the command prompt displaying information about the URL and port that the service is listening to. The default URL is http://127.0.0.1:4723. The command prompt also functions as a logger, showing HTTP requests and JSON payloads whenever the Appium SDK performs an interaction.
 
-N> This process should be run continuously until the test is complete. This serves as the listener server during testing on the machine.
+N> This process should be run continuously until the test is complete. This serves as the listener server during machine testing.
 
 **Location:** `C:\Program Files (x86)\Windows Application Driver`
 
@@ -77,13 +77,13 @@ public class UnitTest1
     // URL for the Windows Application Driver (WinAppDriver)
     private const string WindowsApplicationDriverUrl = "http://127.0.0.1:4723";
 
-    // Path to your WPF application executable
+    // Path to your WPF application executable.
     private const string employeeFormDemoPath = @"…\...\EmployeeFormDemo.exe";
 
     // Initialize the WindowsDriver session for Manually implement the test
     private static WindowsDriver<WindowsElement> driver;
 
-    // Manually implement the test
+    // Manually implement the test.
     [TestMethod]
     public void TestMethod1()
     {
@@ -96,7 +96,7 @@ public class UnitTest1
             // Define the device that makes the test for applications.
             appiumOptions.AddAdditionalCapability("deviceName", "WindowsPC");
 
-            // Create the WindowsDriver session
+            // Create the WindowsDriver session.
             driver = new WindowsDriver<WindowsElement>(new Uri(WindowsApplicationDriverUrl), appiumOptions);
          }
     }
@@ -127,7 +127,7 @@ public void TestMethod1()
         // Define the device that makes the test for applications.
         appiumOptions.AddAdditionalCapability("deviceName", "WindowsPC");
 
-        // Create the WindowsDriver session
+        // Create the WindowsDriver session.
         driver = new WindowsDriver<WindowsElement>(new Uri(WindowsApplicationDriverUrl), appiumOptions);
 
         //Find the element by using the FindElementByAccessibilityId method.
@@ -268,7 +268,7 @@ public class UnitTest1
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:** Run the application (e.g. EmployeeFormDemo)
+**Step 2:** Run the application (e.g. EmployeeFormDemo).
 
 **Step 3:** Launch the WinAppDriver UI Recorder by double-clicking on the `WinAppDriverUiRecorder` application.
 
@@ -296,7 +296,7 @@ The subsequent illustration demonstrates the automated process of filling out th
 
 {% tabs %}
 {% highlight c# %}
-// Use the UI Recorder Tool
+// Use the UI Recorder Tool.
 [TestMethod]
 public void TestMethod2()
 {
@@ -309,7 +309,7 @@ public void TestMethod2()
         // Define the device that makes the test for applications.
         appiumOptions.AddAdditionalCapability("deviceName", "WindowsPC");
 
-        // Create the WindowsDriver session
+        // Create the WindowsDriver session.
         MyDesktopSession = new WindowsDriver<WindowsElement>(new Uri(WindowsApplicationDriverUrl), appiumOptions);
 
         // LeftClick on "employeeIDTextBox" at (26,12)
@@ -476,7 +476,7 @@ string xp1 = "/Pane[@Name=\"Desktop 1\"][@ClassName=\"#32769\"]/Window[@Name=\"E
 {% endhighlight %}
 {% endtabs %}
 
-N> Ensure that all element paths are complete and begin with "/Window" to prevent this.
+N> Ensure all element paths are complete and begin with "/Window" to prevent this.
 
 {% tabs %}
 {% highlight c# %}
@@ -486,13 +486,13 @@ string xp1 = "/Window[@Name=\"Employee Form Demo\"][@ClassName=\"Window\"]";
 
 ## Automate Test Method
 
-After completing the implementation of TestMethod, you can test the application by following these steps.
+After completing the implementation of TestMethod, test the application using the following steps.
 
 **Step 1:** Right-click on the TestProject and click on `Run Tests`.
 
 ![Shows the Run Tests options](Appium_images/RunTest.png)
 
-**Step 2:** Now, the test will launch your application, repeat all recorded steps, and close the application afterwards. All test details can be found in the Test Explorer.
+**Step 2:** Now, the test will launch your application, repeat all recorded steps, and close the application. All test details can be found in the Test Explorer.
 
 ![Shows the results of test](Appium_images/TestExplorer.png)
 
