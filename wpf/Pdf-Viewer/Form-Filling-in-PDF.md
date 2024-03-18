@@ -249,7 +249,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Signature Form Field:
+## Signature Form Field
 
 PDF viewer WPF allows the user to add the signature in the PDF document and provides options to remove the included signature in the signature field of the PDF document.
 

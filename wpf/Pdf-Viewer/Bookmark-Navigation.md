@@ -137,10 +137,10 @@ The bookmark are displayed by clicking the bookmark icon in the left panel.To di
 
 private void Window_Loaded(object sender, RoutedEventArgs e)
 {
-	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
-    pdfviewer.Load(pdf);
-    //By default, the bookmark panel IsExpanded is false. 
-  	pdfviewer.BookMarkSettings.IsExpanded = true;
+   PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+   pdfviewer.Load(pdf);
+   //By default, the bookmark panel IsExpanded is false. 
+   pdfviewer.BookMarkSettings.IsExpanded = true;
 }
 
 {% endhighlight %}
