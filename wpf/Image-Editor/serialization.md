@@ -13,7 +13,7 @@ The Image Editor control provides support to serialize and deserialize the shape
 
 ## Serialization
 
-The `Serialize` method is used to serialize the current edits of annotations. It allows you to store the `SfImageEditor` annotations to the stream by passing the stream as a parameter to the `Serialize` method.
+The [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Serialize_System_IO_Stream_) method is used to serialize the current edits of annotations. It allows you to store the [SfImageEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html) annotations to the stream by passing the stream as a parameter to the [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Serialize_System_IO_Stream_) method.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ The `Serialize` method is used to serialize the current edits of annotations. It
 
 ## Deserialization
 
-The `Deserialize` method is used to deserialize the annotations over an image. It allows you to reload the `SfImageEditor` control with the annotations available in the stream.
+The [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Deserialize_System_IO_Stream_) method is used to deserialize the annotations over an image. It allows you to reload the [SfImageEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html) control with the annotations available in the stream.
 
 {% tabs %}
 
@@ -58,11 +58,11 @@ The `Deserialize` method is used to deserialize the annotations over an image. I
 
 ## Annotations collection
 
-The Image Editor provides the read-only collection of annotations using the Annotations property. The Annotations property contains all the annotations currently visible in image editor.
+The Image Editor provides the read-only collection of annotations using the [Annotations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) property. The [Annotations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) property contains all the annotations currently visible in image editor.
 
 N> This collection will be reset if the background image has been changed.
 
-The following code sample only adds a rectangle shape from the Annotations collection.
+The following code sample only adds a rectangle shape from the [Annotations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) collection.
 
 {% tabs %}
 
