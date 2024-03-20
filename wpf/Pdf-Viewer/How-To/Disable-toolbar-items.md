@@ -315,7 +315,9 @@ private void HideComboBoxTools(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-The following code sample explains disabling the Open tool from the menu.
+## Disable the file menu item
+
+The PDF Viewer allows users to disable the individual menu items present under the file menu of the toolbar. The following example code explains how to disable the open menu item from the file menu.
 
 {% tabs %}
 {% highlight c# %}
