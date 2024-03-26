@@ -39,7 +39,7 @@ To add the `CardView` control manually in XAML, follow these steps:
 2. Add the following required assembly references to the project:
 	* Syncfusion.Shared.WPF
 	* Syncfusion.Tools.WPF
-3. Import Syncfusion WPF schema, and declare the `CardView` control in XAML page.
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `CardView` control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
