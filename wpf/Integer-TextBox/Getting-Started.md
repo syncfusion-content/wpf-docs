@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with WPF IntegerTextBox control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF IntegerTextBox control and more details about the control features.
-platform: WPF
+platform: wpf
 control: IntegerTextBox 
 documentation: ug
 ---
