@@ -448,4 +448,4 @@ The image displayed below shows the output of the above code—items bound to XM
 
 ## See Also
 
-[How to load items in WPF HierarchyNavigator (Breadcrumb) control in on-demand?](https://www.syncfusion.com/kb/11221/how-to-load-items-in-wpf-hierarchynavigator-breadcrumb-control-in-on-demand)
+[How to load items in WPF HierarchyNavigator (Breadcrumb) control in on-demand?](https://support.syncfusion.com/kb/article/9834/how-to-load-items-in-wpf-hierarchynavigator-breadcrumb-control-in-on-demand)
