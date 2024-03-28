@@ -2,7 +2,7 @@
 layout: post
 title: Selecting Items in WPF Accordion control | Syncfusion
 description: Learn here all about Selecting Items support in Syncfusion WPF Accordion (SfAccordion) control and more.
-platform: WPF
+platform: wpf
 control: SfAccordion
 documentation: ug
 ---
@@ -282,7 +282,7 @@ For example: In One SelectionMode, the selected item cannot be collapsed directl
 
 ## Notifying selected item change
 
-[SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html) event is fired whenever an item is expanded or collapsed. The arguments of the event are
+[SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItemsChanged) event is fired whenever an item is expanded or collapsed. The arguments of the event are
 
 <table>
 <tr>
@@ -488,7 +488,7 @@ Collapse the item with header Windows Phone
 
 ## Notifying an item selection
 
-[SfAccordionItem.Selected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html) event is fired whenever the item is selected/expanded.
+[SfAccordionItem.Selected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectAll) event is fired whenever the item is selected/expanded.
 
 {% tabs %}
 
@@ -524,7 +524,7 @@ Collapse the item with header Windows Phone
 
 ## Notifying an item un-selection
 
-[SfAccordionItem.Unselected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html) event is fired whenever the item is unselected/collapsed.
+[SfAccordionItem.Unselected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_UnselectAll) event is fired whenever the item is unselected/collapsed.
 
 {% tabs %}
 
@@ -562,8 +562,8 @@ Collapse the item with header Windows Phone
 
 ## Notifying selection change
 
-[SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html) event fires when an item is selected and unselected. It behaves same as that of [SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html) event. 
-The difference between these two events are the event argument parameters. The parameters of [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html) event are AddedItems and RemovedItems.Added items have the list of recently selected items whereas RemovedItems have the list of recently unselected items.
+[SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionChanged) event fires when an item is selected and unselected. It behaves same as that of [SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItemsChanged) event. 
+The difference between these two events are the event argument parameters. The parameters of [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionChanged) event are AddedItems and RemovedItems.Added items have the list of recently selected items whereas RemovedItems have the list of recently unselected items.
 
 
 
