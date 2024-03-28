@@ -124,7 +124,7 @@ In order to add control manually in XAML, do the below steps,
 	* Syncfusion.Data.WPF 
 	* Syncfusion.SfGrid.WPF
 	* Syncfusion.Shared.WPF
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
+2. Import Syncfusion WPF schema or SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 3. Declare SfDataGrid control in XAML page.
 
 {% capture codesnippet1 %}
