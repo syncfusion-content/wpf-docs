@@ -148,7 +148,7 @@ The solid colors can be mapped to the specific ranges using the [RangeColor] (ht
 <Syncfusion:SfCircularProgressBar Progress="80" >
             <Syncfusion:SfCircularProgressBar.RangeColors>
                 <Syncfusion:RangeColorCollection>
-                    <Syncfusion:RangeColor Color="BlanchedAlmond" Start=5" End="30"/>
+                    <Syncfusion:RangeColor Color="BlanchedAlmond" Start="5" End="30"/>
                     <Syncfusion:RangeColor Color="Coral" Start="30" End="60"/>
                     <Syncfusion:RangeColor Color="Crimson" Start="60" End="100"/>
                 </Syncfusion:RangeColorCollection>
