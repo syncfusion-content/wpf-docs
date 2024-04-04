@@ -41,3 +41,4 @@ The following gif image contains the types of animation in BusyIndicator.
 ![AnimationTypes](AnimationTypes_images/BusyIndicator-animation-video.gif)
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/AnimationType) in GitHub
+

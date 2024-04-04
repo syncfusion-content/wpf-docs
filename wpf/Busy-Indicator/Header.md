@@ -2,7 +2,7 @@
 layout: post
 title: Header in WPF Busy Indicator control | Syncfusion
 description: Learn here all about Header support in Syncfusion WPF Busy Indicator (SfBusyIndicator) control and more.
-platform: wpf
+platform: wpfcontrols
 control: Busy Indicator
 documentation: ug
 ---
