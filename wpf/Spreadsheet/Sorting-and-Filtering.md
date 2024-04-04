@@ -24,9 +24,7 @@ spreadsheet.AllowFiltering = false;
 {% endhighlight %}
 {% endtabs %}
 
-## Programmatic Sorting and Filtering
-
-### Sorting 
+## Programmatic Sorting
 
 Programmatically sort the data while importing the workbook by using XlsIO in the `WorkbookLoaded` event of SfSpreadsheet.
 
@@ -44,35 +42,12 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
     sorter.Sort();
 }
 {% endhighlight %}
-{% endtabs %}
-
-### Filtering 
-
-Programmatically filter the data while importing the workbook by using XlsIO in the `WorkbookLoaded` event of SfSpreadsheet.
-
-{% tabs %}
-{% highlight c# %}
-spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
-
-void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
-{
-    IRange filterRange = spreadsheet.Workbook.ActiveSheet.Range["A1:D9"];
-    spreadsheet.Workbook.ActiveSheet.AutoFilters.FilterRange = filterRange;
-    IAutoFilter filter = spreadsheet.Workbook.ActiveSheet.AutoFilters[0];
-    filter.AddTextFilter("1");
-} 
-{% endhighlight %}
-{% endtabs %}
-
-For more reference, please go through the [XlsIO](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-sorting) UG documentation.
-
-N> If sorting or filtering has been applied programmatically at runtime, then [refresh the view](https://help.syncfusion.com/wpf/spreadsheet/working-with-sfspreadsheet#refreshing-the-view) to update it in `SpreadsheetGrid`. But this changes will not be updated in Filter popup even after refreshing the view. 
+{% endtabs %} 
 
 ## Unsupported Features
 
 Currently SfSpreadsheet does not have support for following features.
 
-* Advanced filtering
 * Table filtering
 * Multi-column sorting
 
