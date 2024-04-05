@@ -44,13 +44,6 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-## Unsupported Features
-
-Currently SfSpreadsheet does not have support for following features.
-
-* Table filtering
-* Multi-column sorting
-
 ## Limitations
 
 ### Sorting
