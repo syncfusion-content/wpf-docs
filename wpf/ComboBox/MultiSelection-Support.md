@@ -146,7 +146,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3. To bind the `ComboBoxAdv` to data, bind the collection created in the previous step to the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netcore-3.1#System_Windows_Controls_ItemsControl_ItemsSource) property in XAML by setting the `ViewModel` as `DataContext`.
+3. To bind the `ComboBoxAdv` to data, bind the collection created in the previous step to the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=windowsdesktop-8.0&viewFallbackFrom=netcore-3.1#System_Windows_Controls_ItemsControl_ItemsSource) property in XAML by setting the `ViewModel` as `DataContext`.
 
 {% capture codesnippet3 %}
 {% tabs %}
