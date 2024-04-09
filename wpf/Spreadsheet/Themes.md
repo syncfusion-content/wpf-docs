@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Themes in WPF Spreadsheet control | Syncfusion
+title: Themes in WPF Spreadsheet Control | Syncfusion
 description: Learn here all about Themes support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control, its elements and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Themes in WPF Spreadsheet (SfSpreadsheet)
+# Themes in WPF Spreadsheet Control
 
 SfSpreadsheet supports the following built-in themes.
 *	MaterialLight

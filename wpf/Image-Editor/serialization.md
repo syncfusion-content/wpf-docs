@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in Syncfusion SfImageEditor WPF.
-description: This section describes how to serialize and deserialize the annotations in Syncfusion Essential Studio WPF ImageEditor (SfImageEditor) control
+title: Serialization in WPF ImageEditor Control | Syncfusion
+description: This section describes how to Serialize and deserialize the annotations in Syncfusion Essential Studio WPF ImageEditor (SfImageEditor) control
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Serialization in Image Editor (SfImageEditor)
+# Serialization in WPF ImageEditor Control
 
 The Image Editor control provides support to serialize and deserialize the shape, text, pen annotations, and custom view along with their settings. You can save the current state of the image editor annotations and load it back when it is needed.
 
