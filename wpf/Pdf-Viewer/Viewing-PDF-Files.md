@@ -188,6 +188,27 @@ The [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfV
 
 The following picture illustrates how the PDF file being displayed in [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control. ![WPF PDF Viewer File in PdfDocumentView](view-pdf-file-images/wpf-pdf-viewer-file-in-pdfdocumentview.png)
 
+## Load multiple PDF files
+You can load multiple PDF files in the WPF PDF Viewer without closing the previous PDF document. In the WPF PDF Viewer, the existing document is automatically **unloaded and closed internally** when loading a new PDF document.
+
+{% tabs %}
+{% highlight c# %}
+
+private void test_Click(object sender, RoutedEventArgs e)
+{
+    pdfViewer.Load("Sample1.pdf");
+}
+
+private void test2_Click(object sender, RoutedEventArgs e)
+{
+    pdfViewer.Load("Sample2.pdf");
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> When loading multiple PDF files, manually closing the existing document using the **close** method before reloading the new PDF document can lead to **unwanted exceptions**.
+
 ## Obtain the PDF file information
 
 You can get the information on the PDF file that is being displayed in the control using the [DocumentInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DocumentInfo) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). This property provides you the information such as file name and the folder name from that the PDF file is opened using the [FileName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.DocumentInfo.html#Syncfusion_Windows_PdfViewer_DocumentInfo_FileName) and [FilePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.DocumentInfo.html#Syncfusion_Windows_PdfViewer_DocumentInfo_FilePath) properties respectively.
