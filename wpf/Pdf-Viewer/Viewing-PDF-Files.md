@@ -188,9 +188,9 @@ The [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfV
 
 The following picture illustrates how the PDF file being displayed in [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control. ![WPF PDF Viewer File in PdfDocumentView](view-pdf-file-images/wpf-pdf-viewer-file-in-pdfdocumentview.png)
 
-## Load multiple PDF files
+## Avoid unnecessary exception while loading PDF Document
 
-You can load multiple PDF files in the WPF PDF Viewer without closing the previous PDF document. In the WPF PDF Viewer, the existing document is automatically **unloaded and closed internally** when loading a new PDF document.
+To ensure smooth loading of PDF documents in the WPF PDF Viewer without encountering unnecessary exceptions, the existing document is automatically **unloaded and closed internally** when a new PDF document is loaded.
 
 {% tabs %}
 {% highlight c# %}
@@ -208,7 +208,7 @@ private void test2_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> When loading multiple PDF files, manually closing the existing document using the **close** method before reloading the new PDF document can lead to **unwanted exceptions**.
+N> To prevent exceptions when loading PDFs, avoid manually closing the current document before loading a new one. Doing so can cause unwanted issues, especially with multiple PDFs. 
 
 ## Obtain the PDF file information
 
