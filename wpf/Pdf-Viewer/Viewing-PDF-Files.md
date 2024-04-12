@@ -208,7 +208,7 @@ private void test2_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> To prevent exceptions when loading PDFs, **avoid manually closing** the current document before loading a new PDF document.
+N> To prevent exceptions when loading PDFs, **avoid manually closing** the current document before loading a new PDF document because it is internally implemented.
 
 ## Obtain the PDF file information
 
