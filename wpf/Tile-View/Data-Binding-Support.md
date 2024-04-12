@@ -78,7 +78,7 @@ public class ViewModel : NotificationObject {
 {% endhighlight %}
 {% endtabs %}
 
-![TileViewControl auto creates tileview item from objects using data binding](Data-binding_images/Data-Binding_img1.png)
+![WPF Tile View Control auto creates tileview item from objects using data binding](Data-binding_images/wpf-tile-view-data-binding-objects.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-Object)
 
@@ -148,7 +148,7 @@ You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in 
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![TileViewControl auto creates tileview item from XML using data binding](Data-binding_images/Data-Binding_img2.png)
+![WPF Tile View Control auto creates tileview item from XML using data binding](Data-binding_images/wpf-tile-view-data-binding-xml.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-XML)
 
@@ -242,7 +242,7 @@ public class ViewModel : NotificationObject {
 {% endhighlight %}
 {% endtabs %}
 
-![TileViewItem header assigned by using the HeaderTemplate](Data-binding_images/header.png)
+![WPF Tile View Item header assigned by using the HeaderTemplate](Data-binding_images/wpf-tile-view-header.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Binding-Object)
 
@@ -277,7 +277,7 @@ You can define the `TileViewItem` content using `ItemTemplate` or `TileViewItem.
 {% endhighlight %}
 {% endtabs %}
 
-![TileViewItem content assigned by using the ItemTemplate](Data-binding_images/content.png)
+![WPF Tile View Item content assigned by using the ItemTemplate](Data-binding_images/wpf-tile-view-content.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Binding-Object)
 
@@ -348,6 +348,6 @@ public class MyTemplateSelector : DataTemplateSelector {
 {% endhighlight %}
 {% endtabs %}
 
-![TileViewItem with various content UI](Data-binding_images/ItemTemplateSelector.png)
+![WPF Tile View Item with various content UI](Data-binding_images/wpf-tile-view-item-template-selector.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/ItemTemplate-Selector)

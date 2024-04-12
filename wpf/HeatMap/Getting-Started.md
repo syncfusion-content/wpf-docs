@@ -149,7 +149,7 @@ Now data is ready, next we need to configure data source and map rows and column
 
 * This will show a grid with data as in following image.
 
-![Showing grid with data](Getting-Started_images/Getting-Started_img1.jpeg)
+![WPF HeatMap showing grid with data](Getting-Started_images/wpf-heatmap-grid-with-data.jpeg)
 
 ## Color Mapping
 
@@ -184,7 +184,7 @@ Next we can configure color range for these values using color mapping
 
 * This will show the grid data with color based on the range given.
 
-![Showing the grid data with color based on the range](Getting-Started_images/Getting-Started_img2.jpeg)
+![WPF HeatMap showing the grid data with color based on the range](Getting-Started_images/wpf-heatmap-color-mapping.jpeg)
 
 ## Legend
 
@@ -320,4 +320,4 @@ SfHeatMap supports various built-in themes. Refer to the below links to apply th
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfHeatMap](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF SfHeatMap](Getting-Started_images/wpf-heatmap-theme.png)
