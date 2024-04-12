@@ -190,7 +190,7 @@ The following picture illustrates how the PDF file being displayed in [PdfDocume
 
 ## Avoid exception while loading PDF Document
 
-When loading a PDF document and unloading it to load a new one, it might cause an exception because this feature is already implemented internally in the WPF PDF   Viewer. Hence, there's no necessity to manually unload an existing document.
+When loading a PDF document and unloading it to load a new one, it might cause an exception because this feature is already implemented internally in the WPF PDF   Viewer. Hence, there's no necessity to manually unload an existing document when loading a new one.
 
 {% tabs %}
 {% highlight c# %}
@@ -198,7 +198,7 @@ When loading a PDF document and unloading it to load a new one, it might cause a
  private void test_Click(object sender, RoutedEventArgs e)
  {
      pdfViewer.Load("Sample1.pdf");
-     //No need to close existing document because it is internally implemented.
+     //No need to close the existing document because it is internally implemented.
      //pdfViewer.LoadedDocument.Close();
      pdfViewer.Load("Sample2.pdf");
  }
