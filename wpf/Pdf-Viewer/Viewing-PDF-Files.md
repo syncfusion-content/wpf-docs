@@ -188,27 +188,23 @@ The [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfV
 
 The following picture illustrates how the PDF file being displayed in [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control. ![WPF PDF Viewer File in PdfDocumentView](view-pdf-file-images/wpf-pdf-viewer-file-in-pdfdocumentview.png)
 
-## Avoid unnecessary exception while loading PDF Document
+## Avoid exception while loading PDF Document
 
-To ensure smooth loading of PDF documents in the WPF PDF Viewer without encountering unnecessary exceptions, the existing document is automatically **unloaded and closed internally** when a new PDF document is loaded.
+When loading a PDF document and unloading it to load a new one, it might cause an exception because this feature is already implemented internally in the WPF PDF   Viewer. Hence, there's no necessity to manually unload an existing document.
 
 {% tabs %}
 {% highlight c# %}
 
-private void test_Click(object sender, RoutedEventArgs e)
-{
-    pdfViewer.Load("Sample1.pdf");
-}
-
-private void test2_Click(object sender, RoutedEventArgs e)
-{
-    pdfViewer.Load("Sample2.pdf");
-}
+ private void test_Click(object sender, RoutedEventArgs e)
+ {
+     pdfViewer.Load("Sample1.pdf");
+     //No need to close existing document because it is internally implemented.
+     //pdfViewer.LoadedDocument.Close();
+     pdfViewer.Load("Sample2.pdf");
+ }
 
 {% endhighlight %}
 {% endtabs %}
-
-N> To prevent exceptions when loading PDFs, **avoid manually closing** the current document before loading a new PDF document because it is internally implemented.
 
 ## Obtain the PDF file information
 
