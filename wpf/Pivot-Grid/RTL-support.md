@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RTL Support in WPF Pivot Grid control | Syncfusion
-description: Learn about RTL Support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
+title: RTL Support in WPF Pivot Grid Control | Syncfusion
+description: Learn here all about rtl support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
