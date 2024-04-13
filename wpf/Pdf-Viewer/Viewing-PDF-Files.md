@@ -190,17 +190,18 @@ The following picture illustrates how the PDF file being displayed in [PdfDocume
 
 ## Avoid exception while loading PDF Document
 
-When loading a PDF document and unloading it to load a new one, it might cause an exception because this feature is already implemented internally in the WPF PDF   Viewer. Hence, there's no necessity to manually unload an existing document when loading a new one.
+When opening a PDF document in PdfViewer and attempting to open a new one, unloading the previously opened document is not required. This is due to PdfViewer's internal process: when loading a new document, it automatically unloads and disposes of any previously opened document. Therefore, attempting to explicitly unload the document may lead to an exception, as this action is already handled internally within the WPF PDF Viewer.
+
+For instance, when attempting to open a document through a button click event, utilize the following code snippet:
 
 {% tabs %}
 {% highlight c# %}
 
  private void test_Click(object sender, RoutedEventArgs e)
  {
-     pdfViewer.Load("Sample1.pdf");
      //No need to close the existing document because it is internally implemented.
-     //pdfViewer.LoadedDocument.Close();
-     pdfViewer.Load("Sample2.pdf");
+     //pdfViewer.Unload();
+     pdfViewer.Load("Document.pdf");    
  }
 
 {% endhighlight %}
