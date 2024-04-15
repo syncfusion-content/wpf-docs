@@ -564,7 +564,7 @@ private static void OnTotalSummaryCountClicked(object obj)
 
 [GridContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs while opening the context menu in SfDataGrid. 
 
-[GridContextMenuEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs.html) has the following members which provides the information about `GridContextMenuOpening` event.
+[GridContextMenuEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs.html) has the following members which provides the information about `GridContextMenuOpening` event.
 
 * [ContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs.html#Syncfusion_UI_Xaml_Grid_GridContextMenuEventArgs__ctor_System_Windows_Controls_ContextMenu_System_Object_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_Syncfusion_UI_Xaml_Grid_ContextMenuType_System_Object_) – Gets the corresponding context menu.
 
