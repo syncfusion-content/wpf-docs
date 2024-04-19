@@ -396,7 +396,7 @@ public class SerializableCustomGridColumn : SerializableGridColumn
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Create a new class named as SerializationControllerExt by overriding [SerializationController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class.
+2. Create a new class named as SerializationControllerExt by overriding [SerializationController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -415,7 +415,6 @@ public class SerializationControllerExt : SerializationController
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
-
 
 3. You can get the custom column property settings for serialization by overriding the [GetSerializableGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_GetSerializableDataGrid) virtual method.
 
