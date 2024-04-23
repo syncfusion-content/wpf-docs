@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion license and unlock keys - Syncfusion
-description: Learn here about the Syncfusion license and unlock keys and difference between license and unlock keys.
+title: Overview of WPF License and unlock keys | Syncfusion
+description: Learn here all about overview of Syncfusion WPF License and unlock keys and difference between license and unlock keys.
 platform: WPF
 control: Essential Studio
 documentation: ug

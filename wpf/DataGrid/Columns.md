@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns in WPF DataGrid control | Syncfusion
-description: Learn here all about Columns support in Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Columns in WPF DataGrid Control | Syncfusion
+description: Learn here all about columns support in Syncfusion WPF DataGrid control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
