@@ -7,7 +7,7 @@ control: Carousel
 documentation: ug
 ---
 
-# Change SelectedItem Position in WPF Carousel Controln
+# Change SelectedItem Position in WPF Carousel Control
 
 To change the position of SelectedItem in a given path, use **TopItemPosition** property
 
