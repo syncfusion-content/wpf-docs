@@ -48,11 +48,41 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	I> Visual Basic Language support is available in WPF Template Studio starting from version 25.1.35.
 
-5.	Click **Next** or navigate to the **Project type** tab, then select the desired Syncfusion WPF application type.
+5.	Click **Next** or navigate to the **Type** tab, then select the desired Syncfusion WPF application type. When selecting the type of template for your application, you have two options:
 
-	![Syncfusion WPF project type selection wizard](Template-Studio-Images/WPF-5.png)
+	![Syncfusion WinForms project type selection wizard](Template-Studio-Images/WPF-4.png)
 
-6.	Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WPF components you can add to the application.
+	**Predefined template:** Choose this option to select from 5 predefined templates, including Calendar, Contact, Outlook, Docking Manager, Spreadsheet, Tile view, and Word. By choosing one of these templates, you can create your application without needing to follow any further steps.
+
+	![Syncfusion WinForms Predefined template wizard](Template-Studio-Images/WPFTemplate-6.png)
+
+	**Project type:** Choose this option to select from 4 project types, including Navigation Pane, Blank, Menu Bar, and Ribbon .
+
+	1. Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WPF components you can add to the application.
+
+		![Syncfusion WinForms pages selection wizard](Template-Studio-Images/WPF-Page.png)
+
+		To unselect the added control(s), Click ‘x’ for the corresponding control in the control list from the Project Details.
+
+		N> The Control Features option is not accessible for Blank Pages.
+
+	2. Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
+
+		![Syncfusion WinForms control features selection wizard](Template-Studio-Images/WPF-Features.png)
+
+	3. Click **Next** or navigate the **App Features** tab to select the desired application features.
+
+		![Syncfusion WinForms app features selection wizard](Template-Studio-Images/WPF-AppFeatures.png)
+
+    	N> The App Features option is not accessible for .NET Framework.	
+
+	**Project Details Section**
+
+	In the **Project Details** section, modify configurations and project types. Additionally, you can remove one or more controls from the selected list and remove the chosen application feature.
+
+	![Syncfusion WinForms project details selection and unselection wizard](Template-Studio-Images/ProjectDetails.png)
+
+    4.	Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WPF components you can add to the application.
 
 	![Syncfusion WPF pages selection wizard](Template-Studio-Images/WPF-6.png)
 
@@ -60,11 +90,11 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	N> The Control Features option is not accessible for Blank, Settings, and Master Detail Pages.
 
-7.	Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
+    5.	Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
 
 	![Syncfusion WPF control features selection wizard](Template-Studio-Images/WPF-2.gif)
 
-8.	Click **Next** or navigate the **App Features** tab to select the desired application features.
+    6.	Click **Next** or navigate the **App Features** tab to select the desired application features.
 
 	![Syncfusion WPF app features selection wizard](Template-Studio-Images/WPF-7.png)
 
@@ -74,11 +104,11 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	![Syncfusion WPF project details selection and unselection wizard](Template-Studio-Images/WPF-8.png)
 
-9.	Click **Create** to initiate the process. This action generates the Syncfusion WPF application. The resulting Syncfusion WPF app has the necessary Syncfusion NuGet 	packages, styles, and rendering code specific to the chosen Syncfusion component.
+     7.	Click **Create** to initiate the process. This action generates the Syncfusion WPF application. The resulting Syncfusion WPF app has the necessary Syncfusion NuGet 	packages, styles, and rendering code specific to the chosen Syncfusion component.
 
 	![Syncfusion WPF project created with readme](Template-Studio-Images/WPF-9.png)
 
-10.	The Syncfusion WPF application is configured with the latest versions of Syncfusion WPF NuGet packages, complete with the appropriate namespaces and component 			render code for seamless integration of Syncfusion components.
+     8.	The Syncfusion WPF application is configured with the latest versions of Syncfusion WPF NuGet packages, complete with the appropriate namespaces and component 			render code for seamless integration of Syncfusion components.
 
 	N> The .Net 6.0, .Net 7.0, and .Net 8.0 option will be listed in  Select a framework version	 when only the .Net 6.0, .Net 7.0, and .Net 8.0 SDK setup has been installed.
 
@@ -88,6 +118,6 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	> .NET 8.0 version is available from v23.2.4 and it support from Visual Studio 2022.
 
-11.	Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
+     9.	Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
 
 	![Syncfusion license registration required information dialog in Syncfusion WPF project](Template-Studio-Images/Syncfusion-Project-Template-Gallery-9.png)   
