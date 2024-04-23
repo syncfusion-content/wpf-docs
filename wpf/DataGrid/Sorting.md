@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in WPF DataGrid control | Syncfusion
-description: Learn here all about Sorting support in Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Sorting in WPF DataGrid Control | Syncfusion
+description: Learn here all about sorting support in Syncfusion WPF DataGrid control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
