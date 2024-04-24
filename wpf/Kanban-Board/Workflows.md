@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kanban Workflows | wpf | Syncfusion
+title: WPF Kanban | Worksflows support | Syncfusion
 description: The following section describes about the workflows in Syncfusion Essential Studio WPF Kanban (SfKanban) control, its elements and more.
 platform: wpf
 control: SfKanban
