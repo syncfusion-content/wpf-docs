@@ -38,7 +38,7 @@ this.dataGrid.Serialize(stream);
 
 ## Serialization options 
 
-SfDataGrid serialization  operation can be customized by passing [SerializationOptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationOptions.html) instance as an argument to [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_Syncfusion_UI_Xaml_Grid_SerializationOptions_) method.
+SfDataGrid serialization  operation can be customized by passing [SerializationOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationOptions.html) instance as an argument to [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_Syncfusion_UI_Xaml_Grid_SerializationOptions_) method.
 
 
 ### Serialize sorting
@@ -192,7 +192,7 @@ this.dataGrid.Deserialize(fileStream);
 
 ## Deserialization options
  
-Deserialization operation can be customized by passing [DeserializationOptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DeserializationOptions.html) instance as an argument to [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_Syncfusion_UI_Xaml_Grid_DeserializationOptions_) method.
+Deserialization operation can be customized by passing [DeserializationOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DeserializationOptions.html) instance as an argument to [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_Syncfusion_UI_Xaml_Grid_DeserializationOptions_) method.
 
 ### Deserialize sorting
 
@@ -320,7 +320,7 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
 
 ## Customizing Serialization and Deserialization Operations
 
-SfDataGrid allows you to customize the serialization and deserialization operations by deriving [SerializationController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class and override the necessary virtual methods.
+SfDataGrid allows you to customize the serialization and deserialization operations by deriving [SerializationController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class and override the necessary virtual methods.
 
 ### Serialize custom column 
 
@@ -378,7 +378,7 @@ In the below code snippet, the DatePickerColumn is defined in SfDataGrid.
 
 To serialize the above DatePickerColumn, follow the below steps.
  
-1. Create a class derived from [SerializableGridColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) and define the custom column properties in `SerializableCustomGridColumn` class.
+1. Create a class derived from [SerializableGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) and define the custom column properties in `SerializableCustomGridColumn` class.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -548,7 +548,7 @@ public class SerializationControllerExt : SerializationController
 {% endcapture %}
 {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1590961253.zip).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1590961253.zip).
 
 ### Serializing template column content
 
@@ -611,4 +611,4 @@ public class SerializationControllerExt : SerializationController
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1041317411.zip).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1041317411.zip).

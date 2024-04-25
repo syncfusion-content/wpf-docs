@@ -188,6 +188,25 @@ The [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfV
 
 The following picture illustrates how the PDF file being displayed in [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control. ![WPF PDF Viewer File in PdfDocumentView](view-pdf-file-images/wpf-pdf-viewer-file-in-pdfdocumentview.png)
 
+## Avoid exception while loading PDF Document
+
+When opening a PDF document in PdfViewer and attempting to open a new one, unloading the previously opened document is not required. This is due to PdfViewer's internal process: when loading a new document, it automatically unloads and disposes of any previously opened document. Therefore, attempting to explicitly unload the document may lead to an exception, as this action is already handled internally within the WPF PDF Viewer.
+
+For instance, when attempting to open a document through a button click event, utilize the following code snippet:
+
+{% tabs %}
+{% highlight c# %}
+
+ private void test_Click(object sender, RoutedEventArgs e)
+ {
+     //No need to close the existing document because it is internally implemented.
+     //pdfViewer.Unload();
+     pdfViewer.Load("Document.pdf");    
+ }
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Obtain the PDF file information
 
 You can get the information on the PDF file that is being displayed in the control using the [DocumentInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DocumentInfo) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). This property provides you the information such as file name and the folder name from that the PDF file is opened using the [FileName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.DocumentInfo.html#Syncfusion_Windows_PdfViewer_DocumentInfo_FileName) and [FilePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.DocumentInfo.html#Syncfusion_Windows_PdfViewer_DocumentInfo_FilePath) properties respectively.
