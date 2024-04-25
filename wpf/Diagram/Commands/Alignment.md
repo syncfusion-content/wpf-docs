@@ -74,7 +74,7 @@ graphinfo.Commands.AlignCenter.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Align commands](Commands_Images/Commands_img1.gif)
+![WPF Diagram gif for align commands](Commands_Images/wpf-diagram-align-center-commands.gif)
 
 ## AlignTop command 
 
@@ -139,6 +139,6 @@ graphinfo.Commands.AlignCenter.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Align commands](Commands_Images/Commands_img2.gif)
+![WPF Diagram gif for align commands](Commands_Images/wpf-diagram-align-middle-commands.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Alignment%20Commands)

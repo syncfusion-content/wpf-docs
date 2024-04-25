@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toolbar customization in syncfusion SfImageEditor WPF.
+title: Toolbar customization in SfImageEditor WPF | Syncfusion
 description: This section describes how to customize the toolbar and toolbar item selected event in SfImageEditor control for WPF platform.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Toolbar Customization
+# Toolbar Customization in WPF Image Editor
 
 ## Customization
 
@@ -86,7 +86,7 @@ This can be done as in the following code snippet.
 
 {% endtabs %} 
 
-![Custom Item](Images/ToolbarCustomization.png) 
+![Custom Item](Images/wpf-image-editor-toolbar-customization.png) 
 
 ## Events
 
@@ -107,13 +107,13 @@ This event occurs when an item in the toolbar is selected. `ToolbarItemSelectedE
 
 {% endtabs %} 
 
-![Custom Item](Images/ToolbarCustomItem.png) 
+![Custom Item](Images/wpf-image-editor-toolbar-custom-item.png) 
 
 ## Image picker support
 
 You can browse images in a local folder and load them in the Image Editor using the toolbar item browse icon. 
 
-![Image picker support in WPF](Images/ImagePicker.png) 
+![Image picker support in WPF](Images/wpf-image-editor-image-picker.png) 
 
 ## Commands
 
@@ -191,4 +191,4 @@ This can be done as in the below code snippet.
 
 {% endtabs %}
 
-![Custom Item](Images/ToolbarCustomization.png) 
+![Custom Item](Images/wpf-image-editor-toolbar-customization.png) 
