@@ -13,7 +13,7 @@ To remove the default toolbar completely, use the [PdfDocumentView](https://help
 
 However, an individual toolbar item can also be removed from the default toolbar of the PDF Viewer using the toolbar template and attaching an event handler to the Loaded event of the PdfViewerControl.
 
-N> Disable the toolbar items using the **PdfViewerControl's Loaded event** so that we can effectively disable the toolbar items. This step is necessary because if the PdfViewer is not fully initialized in your code snippet, accessing the PdfViewer toolbar will result in a null reference exception.
+N> Disable the toolbar items using the **PdfViewerControl's Loaded event** to effectively prevent user interaction with them. This step is necessary because if the PdfViewer is not fully initialized, accessing the PdfViewer toolbar will result in a null reference exception.
 
 The following code sample explains disabling the text search tool from the default toolbar.
 
