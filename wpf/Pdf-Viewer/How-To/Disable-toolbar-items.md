@@ -11,19 +11,38 @@ documentation: ug
 
 To remove the default toolbar completely, use the [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control instead of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) as described in the [section](https://help.syncfusion.com/wpf/pdf-viewer/viewing-pdf-files#view-pdf-files-without-using-the-toolbar). 
 
-However, an individual toolbar item can also be removed from the default toolbar of PDF Viewer using the toolbar template. The following code sample explains disabling the text search tool from the default toolbar.
+However, an individual toolbar item can also be removed from the default toolbar of the PDF Viewer using the toolbar template and attaching an event handler to the Loaded event of the PdfViewerControl.
+
+N> Disable the toolbar items using the **PdfViewerControl's Loaded event** so that we can effectively disable the toolbar items. This step is necessary because if the PdfViewer is not fully initialized in your code snippet, accessing the PdfViewer toolbar will result in a null reference exception.
+
+The following code sample explains disabling the text search tool from the default toolbar.
 
 {% tabs %}
 {% highlight c# %}
 
-private void HideTextSearchTool()
+PdfViewerControl pdfViewer;
+
+public MainWindow()
 {
-	//Get the instance of the toolbar using its template name.
-	DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
-	//Get the instance of the open file button using its template name.
-	Button textSearchButton = (Button)toolbar.Template.FindName("PART_ButtonTextSearch", toolbar);
-	//Set the visibility of the button to collapsed.
-	textSearchButton.Visibility = System.Windows.Visibility.Collapsed;
+    InitializeComponent();
+    // Create a new instance of PdfViewerControl.
+    pdfViewer = new PdfViewerControl();
+    // Add the PdfViewerControl to the HomeGrid.
+    HomeGrid.Children.Add(pdfViewer);
+    // Load the specified PDF file.
+    pdfViewer.Load("Document.pdf");
+    // Attach an event handler to the Loaded event of the PdfViewerControl.
+    pdfViewer.Loaded += pdfViewer_Loaded;
+}
+
+private void pdfViewer_Loaded(object sender, RoutedEventArgs e)
+{
+    // Find the DocumentToolbar element within the PdfViewerControl template.
+    DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
+
+    // Hide the Text Search button within the toolbar.
+    Button textSearchButton = toolbar.Template.FindName("PART_ButtonTextSearch", toolbar) as Button;
+    textSearchButton.Visibility = System.Windows.Visibility.Collapsed;
 }
 
 {% endhighlight %}
