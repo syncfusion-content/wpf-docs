@@ -37,7 +37,7 @@ The following steps show how to implement the localization in SfSpreadsheet,
 
 * Create a folder and name it as ‘Resources’ in your application.
 * Add the default resource[English("en-US")] file of `SfSpreadsheet` in the 'Resources' folder named as Syncfusion.SfSpreadsheet.WPF.resx.
-  You can download the Resx file [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Wpf-1253998106) 
+  You can download the Resx file [here](https://github.com/syncfusion/wpf-controls-localization-resx-files/blob/master/Syncfusion.SfSpreadsheet.WPF/Syncfusion.SfSpreadsheet.Wpf.resx) 
 * Create Resx(resource) file under the 'Resources' folder and name it as Syncfusion.SfSpreadsheet.WPF.[Culture name].resx. 
   For example, Syncfusion.SfSpreadsheet.WPF.ja.resx for Japanese culture. 
 
@@ -54,7 +54,7 @@ The following screenshot shows you the localization in SfSpreadsheet,
 
 ## Modifying the localized strings in Resource file
 
-Users can modify the default localized strings in Resource file by adding the default [Resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Wpf-1253998106) (resource) file of `SfSpreadsheet` in the 'Resources' folder of your application and name it as Syncfusion.SfSpreadsheet.WPF.resx.
+Users can modify the default localized strings in Resource file by adding the default [Resx](https://github.com/syncfusion/wpf-controls-localization-resx-files/blob/master/Syncfusion.SfSpreadsheet.WPF/Syncfusion.SfSpreadsheet.Wpf.resx) (resource) file of `SfSpreadsheet` in the 'Resources' folder of your application and name it as Syncfusion.SfSpreadsheet.WPF.resx.
 
 Now, the default localized strings can be modified by changing the Name/Value pair in the Syncfusion.SfSpreadsheet.WPF.resx file.
 
