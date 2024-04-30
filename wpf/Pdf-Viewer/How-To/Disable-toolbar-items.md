@@ -31,12 +31,12 @@ public MainWindow()
 
 private void pdfViewer_Loaded(object sender, RoutedEventArgs e)
 {
-    // Find the DocumentToolbar element within the PdfViewerControl template.
+    //Get the instance of the toolbar using its template name.
     DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
-
-    // Hide the Text Search button within the toolbar.
-    Button textSearchButton = toolbar.Template.FindName("PART_ButtonTextSearch", toolbar) as Button;
-    textSearchButton.Visibility = Visibility.Collapsed;
+    //Get the instance of the open file button using its template name.
+    Button textSearchButton = (Button)toolbar.Template.FindName("PART_ButtonTextSearch", toolbar);
+    //Set the visibility of the button to collapsed.
+    textSearchButton.Visibility = System.Windows.Visibility.Collapsed;
 }
 
 {% endhighlight %}
