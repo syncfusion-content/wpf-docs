@@ -11,45 +11,30 @@ documentation: ug
 
 To remove the default toolbar completely, use the [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control instead of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) as described in the [section](https://help.syncfusion.com/wpf/pdf-viewer/viewing-pdf-files#view-pdf-files-without-using-the-toolbar). 
 
-However, an individual toolbar item can also be removed from the default toolbar of the PDF Viewer using the toolbar template and attaching an event handler to the Loaded event of the PdfViewerControl.
+However, an individual toolbar item can also be removed from the default toolbar of the PDF Viewer using the toolbar template.
 
-N> Disable the toolbar items using the **PdfViewerControl's Loaded event** to effectively prevent user interaction with them. This step is necessary because if the PdfViewer is not fully initialized, accessing the PdfViewer toolbar will result in a null reference exception.
+N> When disabling the toolbar items using the toolbar template, the toolbar template should be accessed either in the **PdfViewerControl's Loaded event** or **Windowsloaded event** as the toolbar items will be initialized when the PdfViewer is loaded. Accessing the toolbar items using its template before the PdfViewer is loaded will result in a null reference exception
 
 The following code sample explains disabling the text search tool from the default toolbar.
 
 {% tabs %}
 {% highlight c# %}
 
-PdfViewerControl pdfViewer;
-
-public MainWindow()
+private void HideTextSearchTool()
 {
-    InitializeComponent();
-    // Create a new instance of PdfViewerControl.
-    pdfViewer = new PdfViewerControl();
-    // Add the PdfViewerControl to the HomeGrid.
-    HomeGrid.Children.Add(pdfViewer);
-    // Load the specified PDF file.
-    pdfViewer.Load("Document.pdf");
-    // Attach an event handler to the Loaded event of the PdfViewerControl.
-    pdfViewer.Loaded += pdfViewer_Loaded;
-}
-
-private void pdfViewer_Loaded(object sender, RoutedEventArgs e)
-{
-    // Find the DocumentToolbar element within the PdfViewerControl template.
-    DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
-
-    // Hide the Text Search button within the toolbar.
-    Button textSearchButton = toolbar.Template.FindName("PART_ButtonTextSearch", toolbar) as Button;
-    textSearchButton.Visibility = System.Windows.Visibility.Collapsed;
+	//Get the instance of the toolbar using its template name.
+	DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
+	//Get the instance of the open file button using its template name.
+	Button textSearchButton = (Button)toolbar.Template.FindName("PART_ButtonTextSearch", toolbar);
+	//Set the visibility of the button to collapsed.
+	textSearchButton.Visibility = System.Windows.Visibility.Collapsed;
 }
 
 {% endhighlight %}
 {% endtabs %}
 
 N> Apply the changes of hiding toolbar items, only after when the application window is loaded.
-N> The sample project for disabling toolbar item is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Toolbar/DisableToolbarItems).
+N> The sample project for disabling toolbar item is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Toolbar/HideToolbarItems).
 
 Similarly, other toolbar items also can be disabled. The following table lists the template names of the rest of the toolbar items along with their respective types in the order they appear in the toolbar.
 
