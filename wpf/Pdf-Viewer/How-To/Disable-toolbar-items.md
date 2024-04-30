@@ -20,14 +20,23 @@ The following code sample explains disabling the text search tool from the defau
 {% tabs %}
 {% highlight c# %}
 
-private void HideTextSearchTool()
+public MainWindow()
 {
-	//Get the instance of the toolbar using its template name.
-	DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
-	//Get the instance of the open file button using its template name.
-	Button textSearchButton = (Button)toolbar.Template.FindName("PART_ButtonTextSearch", toolbar);
-	//Set the visibility of the button to collapsed.
-	textSearchButton.Visibility = System.Windows.Visibility.Collapsed;
+    InitializeComponent();
+    // Load the specified PDF file.
+    pdfViewer.Load("Document.pdf");
+    // Attach an event handler to the Loaded event of the PdfViewerControl.
+    pdfViewer.Loaded += pdfViewer_Loaded;
+}
+
+private void pdfViewer_Loaded(object sender, RoutedEventArgs e)
+{
+    // Find the DocumentToolbar element within the PdfViewerControl template.
+    DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
+
+    // Hide the Text Search button within the toolbar.
+    Button textSearchButton = toolbar.Template.FindName("PART_ButtonTextSearch", toolbar) as Button;
+    textSearchButton.Visibility = Visibility.Collapsed;
 }
 
 {% endhighlight %}
