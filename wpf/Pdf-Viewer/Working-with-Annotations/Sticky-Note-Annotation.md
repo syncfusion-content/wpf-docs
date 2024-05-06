@@ -39,7 +39,7 @@ End Sub
 
 The following image shows how the sticky note annotation included in the PDF document.
 
-   ![Sticky note Annotation](Annotation-images\Sticky-Note-Annotation-1.png)
+   ![Sticky note Annotation.](Annotation-images\Sticky-Note-Annotation-1.png)
 
 ## How to set the color of the sticky note annotation
 
@@ -194,7 +194,7 @@ Sticky note annotation supports adding notes along with it, also it allows editi
 
 You can add notes to the sticky note annotation by choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected sticky note annotation. The added notes will be saved along with the PDF document and if there are any existing notes, it will be displayed here.
 
-  ![Open popup note](Annotation-images\Sticky-Note-Annotation-2.png)
+  ![Open popup note.](Annotation-images\Sticky-Note-Annotation-2.png)
 
 N> You can also add notes to the sticky note annotation by double tapping on the sticky note annotation.
   
@@ -215,11 +215,11 @@ The color of the selected sticky note annotation will be displayed in the color 
 
 The following image illustrates how to change the color of the sticky note annotation.
 
-  ![Before applying sticky note color](Annotation-images\Sticky-Note-Annotation-3.png)
+  ![Before applying sticky note color.](Annotation-images\Sticky-Note-Annotation-3.png)
 
 The following image illustrates the change in the color of the sticky note annotation.
 
-  ![After applied sticky note color](Annotation-images\Sticky-Note-Annotation-4.png)
+  ![After applied sticky note color.](Annotation-images\Sticky-Note-Annotation-4.png)
 
 #### Changing appearance of the annotation
 
@@ -227,11 +227,11 @@ The appearance of the annotation can be changed by selecting an icon listed in t
 
 The following image illustrates how to change the appearance of the sticky note annotation included.
 
-  ![Before applying sticky note appearance](Annotation-images\Sticky-Note-Annotation-5.png)
+  ![Before applying sticky note appearance.](Annotation-images\Sticky-Note-Annotation-5.png)
 
 The following image illustrates the changes in the appearance of the annotation.
 
-  ![After applied sticky note appearance](Annotation-images\Sticky-Note-Annotation-6.png)
+  ![After applied sticky note appearance.](Annotation-images\Sticky-Note-Annotation-6.png)
 
 #### Editing opacity of the annotation
 
@@ -239,11 +239,11 @@ The slider displayed in the Appearance tab allows you to modify the opacity of t
 
 The following image illustrates how to change the opacity of the sticky note annotation.
 
-  ![Before applying sticky note opacity](Annotation-images\Sticky-Note-Annotation-7.png)
+  ![Before applying sticky note opacity.](Annotation-images\Sticky-Note-Annotation-7.png)
 
 The following image illustrates the change in the opacity of the sticky note annotation.
 
-  ![After applied sticky note opacity](Annotation-images\Sticky-Note-Annotation-8.png)
+  ![After applied sticky note opacity.](Annotation-images\Sticky-Note-Annotation-8.png)
 
 ### General tab
 
@@ -251,7 +251,7 @@ You can add/edit the default Author and Subject to the sticky note annotation us
 
 The following image illustrates how to change  Author and Subject of the sticky note annotation.
 
-  ![General Tab](Annotation-images\Sticky-Note-Annotation-9.png)
+  ![General Tab.](Annotation-images\Sticky-Note-Annotation-9.png)
 
 ### Deleting an annotation
 
@@ -259,13 +259,13 @@ Select the delete option from the context menu, which will be displayed by right
 
 The following image illustrates how to delete the annotation from the PDF document.
 
- ![Delete sticky note annotation](Annotation-images\Sticky-Note-Annotation-10.png)
+ ![Delete sticky note annotation.](Annotation-images\Sticky-Note-Annotation-10.png)
  
 ## Display tooltip of the annotation
 
 When you place the mouse pointer over the annotation, the tooltip will be displayed. The tooltip contains the author name and text of the annotation.
  
- ![Display tooltip of the sticky note annotation](Annotation-images\Sticky-Note-Annotation-11.png)
+ ![Display tooltip of the sticky note annotation.](Annotation-images\Sticky-Note-Annotation-11.png)
 
 ## Events
 
