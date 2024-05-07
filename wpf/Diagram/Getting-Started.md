@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Diagram control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Diagram (SfDiagram) control, its elements and more details.
+title: Getting Started with WPF Diagram Control | Syncfusion
+description: Learn here all about getting started with Syncfusion WPF Diagram (SfDiagram) control, its elements and more details.
 platform: wpf
 control: SfDiagram
 documentation: ug
