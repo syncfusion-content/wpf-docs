@@ -88,13 +88,11 @@ chart.TechnicalIndicators.Add(indicator);
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:AccumulationDistributionIndicator Open="Open" Close="Close"      High="High" 
-
-Low="Low"  ItemsSource="{Binding StockPriceDetails}" 
-
-XBindingPath="Date">                    
-
-</chart:AccumulationDistributionIndicator>
+    <chart:AccumulationDistributionIndicator Open="Open" Close="Close" High="High" Low="Low"  
+                                             ItemsSource="{Binding StockPriceDetails}" 
+                                             XBindingPath="Date">                    
+ 
+    </chart:AccumulationDistributionIndicator>
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -188,7 +186,7 @@ The following code example demonstrates the usage of [`SimpleAverageIndicator`](
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:SimpleAverageIndicator ItemsSource="{Binding  ViewModel1}"  Period="3"     
+<chart:SimpleAverageIndicator ItemsSource="{Binding  ViewModel1}" Period="3"     
 
 SignalLineColor="Black" XBindingPath="Date" 
 
@@ -624,7 +622,7 @@ This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.co
 
 Other than signal line, MACD is having convergence and divergence line. The brushes for these lines can be defined using [`ConvergenceLineColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_ConvergenceLineColor) and [`DivergenceLineColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_DivergenceLineColor).
 
-Also you can draw [`Line`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDType.html), [`Histogram`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDType.html) MACD or [`Both`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDType.html) using the [`Type`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_Type) property, which defines the type of MACD to be drawn.
+Also you can draw [`Line`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDType.html#Syncfusion_UI_Xaml_Charts_MACDType_Line), [`Histogram`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDType.html#Syncfusion_UI_Xaml_Charts_MACDType_Histogram) MACD or [`Both`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDType.html#Syncfusion_UI_Xaml_Charts_MACDType_Both) using the [`Type`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_Type) property, which defines the type of MACD to be drawn.
 
 You can define the [`MACDTechnicalIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html) using the following code example:
 

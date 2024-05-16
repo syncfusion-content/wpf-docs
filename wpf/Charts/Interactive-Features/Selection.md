@@ -491,7 +491,7 @@ chart.Series.Add(series2);
 
 SfChart provides support to select using mouse move or mouse click. By default the selection will take place in mouse click. The selection mode can be defined using [`SelectionMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionMode) property for segment and series selection.
 
-The following code snippet demonstrates the selection mode using [`MouseMove`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SelectionMode.html).
+The following code snippet demonstrates the selection mode using [`MouseMove`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SelectionMode.html#Syncfusion_UI_Xaml_Charts_SelectionMode_MouseMove).
 
 {% tabs %}
 
@@ -526,7 +526,7 @@ chart.Behaviors.Add(selection);
 
 ## Customizing the Selection
 
-SfChart allows you to select single or multiple segment /series using [`SelectionStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionStyle) property. By default the SelectionStyle is [`Single`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SelectionStyle.html).
+SfChart allows you to select single or multiple segment /series using [`SelectionStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionStyle) property. By default the SelectionStyle is [`Single`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SelectionStyle.html#Syncfusion_UI_Xaml_Charts_SelectionStyle_Single).
 
 The following code snippet demonstrates multiple segment selection.
 

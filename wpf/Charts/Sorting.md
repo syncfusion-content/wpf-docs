@@ -20,7 +20,7 @@ The [`SortDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Char
 
 ### Changing sorting axis
 
-This [`SortBy`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SortBy) property decides whether sorting should be done based on [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SortingAxis.html) or [`Y`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SortingAxis.html) values.
+This [`SortBy`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SortBy) property decides whether sorting should be done based on [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SortingAxis.html#Syncfusion_UI_Xaml_Charts_SortingAxis_X) or [`Y`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SortingAxis.html#Syncfusion_UI_Xaml_Charts_SortingAxis_Y) values.
 
 
 The following example illustrates a simple chart (without apply sorting):
@@ -36,11 +36,8 @@ The following example illustrates a simple chart (without apply sorting):
 
 {% highlight xml %}
 <syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
-	
-	                     SortDirection="Ascending"
-
+                         SortDirection="Ascending"
                          ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
                          XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 {% endhighlight %}
@@ -81,12 +78,9 @@ chart.Series.Add(columnSeries);
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
-	 
-	                     SortDirection="Descending"
-
+<syncfusion:ColumnSeries IsSortData="True" SortBy="X"
+                         SortDirection="Descending"
                          ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
                          XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 {% endhighlight %}
@@ -127,14 +121,10 @@ chart.Series.Add(columnSeries);
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
-	                   
-					     SortDirection="Ascending"
-
+<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 	                   
+                         SortDirection="Ascending"
                          ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
                          XBindingPath="Demand"  YBindingPath="Year2011"/>
-
 
 {% endhighlight %}
 
@@ -175,11 +165,8 @@ chart.Series.Add(columnSeries);
 {% highlight xml %}
 
 <syncfusion:ColumnSeries IsSortData="True" SortBy="Y"  
-	
 	                     SortDirection="Descending"
-
                          ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
                          XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 

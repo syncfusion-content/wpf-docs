@@ -14,28 +14,28 @@ Data Marker is used to mark the data points with built-in available shapes.
 ## Define Data Marker
 To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property as True. By default, there is no symbol displayed, you have to add the desired symbol using [`Symbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Symbol) property.
 
-The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
+The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Diamond) symbol:
 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-        <syncfusion:ColumnSeries.AdornmentsInfo>
-            <syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolInterior="Black" Symbol="Diamond">
-            </syncfusion:ChartAdornmentInfo>
-        </syncfusion:ColumnSeries.AdornmentsInfo> 
+<syncfusion:ColumnSeries.AdornmentsInfo>
+    <syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolInterior="Black" Symbol="Diamond">
+    </syncfusion:ChartAdornmentInfo>
+</syncfusion:ColumnSeries.AdornmentsInfo> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
         ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowMarker = true,
-                Symbol = ChartSymbol.Diamond,
-                SymbolInterior=new SolidColorBrush(Colors.Black)          
-            };
+        {
+            ShowMarker = true,
+            Symbol = ChartSymbol.Diamond,
+            SymbolInterior=new SolidColorBrush(Colors.Black)          
+        };
 
 {% endhighlight %}
 
@@ -73,9 +73,9 @@ We have some predefined symbols such as
 
 {% highlight xaml %}
 
-            <syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolStroke="Black" SymbolHeight="10" 
-            SymbolWidth="10" SymbolInterior="DarkGray" Symbol="Ellipse">
-            </syncfusion:ChartAdornmentInfo>o>
+<syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolStroke="Black" SymbolHeight="10" 
+                               SymbolWidth="10" SymbolInterior="DarkGray" Symbol="Ellipse">
+</syncfusion:ChartAdornmentInfo>o>
 
 {% endhighlight %}
 

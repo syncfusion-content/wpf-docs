@@ -67,29 +67,29 @@ The following code example demonstrates the customization of label using the abo
 
 {% highlight xaml %}
 
-        <syncfusion:ColumnSeries.AdornmentsInfo>
-            <syncfusion:ChartAdornmentInfo LabelPosition="Outer" Foreground="Black" FontSize="11" FontFamily="Calibri" BorderBrush="Black" BorderThickness="1" Margin="1" FontStyle="Italic"  Background="DarkGray" ShowLabel="True">                        
-            </syncfusion:ChartAdornmentInfo>
-        </syncfusion:ColumnSeries.AdornmentsInfo>
+<syncfusion:ColumnSeries.AdornmentsInfo>
+    <syncfusion:ChartAdornmentInfo LabelPosition="Outer" Foreground="Black" FontSize="11" FontFamily="Calibri" BorderBrush="Black" BorderThickness="1" Margin="1" FontStyle="Italic"  Background="DarkGray" ShowLabel="True">                        
+    </syncfusion:ChartAdornmentInfo>
+</syncfusion:ColumnSeries.AdornmentsInfo>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
         ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
+        {
 
-                ShowLabel = true,
-                LabelPosition = AdornmentsLabelPosition.Outer,
-                Foreground = new SolidColorBrush(Colors.Black),
-                BorderBrush = new SolidColorBrush(Colors.Black),
-                Background = new SolidColorBrush(Colors.DarkGray),
-                BorderThickness = new Thickness(1),
-                Margin = new Thickness(1),
-                FontStyle = FontStyles.Italic,
-                FontFamily = new FontFamily("Calibri"),
-                FontSize = 11
-            };
+            ShowLabel = true,
+            LabelPosition = AdornmentsLabelPosition.Outer,
+            Foreground = new SolidColorBrush(Colors.Black),
+            BorderBrush = new SolidColorBrush(Colors.Black),
+            Background = new SolidColorBrush(Colors.DarkGray),
+            BorderThickness = new Thickness(1),
+            Margin = new Thickness(1),
+            FontStyle = FontStyles.Italic,
+            FontFamily = new FontFamily("Calibri"),
+            FontSize = 11
+        };
 
 
 {% endhighlight %}
@@ -148,19 +148,19 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
 {% highlight c# %}
 
         ColumnSeries series = new ColumnSeries()
-            {
-                ItemsSource = new ViewModel().Demands,
-                XBindingPath = "Category",
-                YBindingPath = "Value",
-                 Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-            };
+        {
+            ItemsSource = new ViewModel().Demands,
+            XBindingPath = "Category",
+            YBindingPath = "Value",
+                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+        };
 
-            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowLabel = true,
-                LabelPosition = AdornmentsLabelPosition.Outer,
-                LabelTemplate = this.Resources["adornmentTemplate"] as DataTemplate
-            };
+        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+        {
+            ShowLabel = true,
+            LabelPosition = AdornmentsLabelPosition.Outer,
+            LabelTemplate = this.Resources["adornmentTemplate"] as DataTemplate
+        };
         series.AdornmentsInfo = adornmentInfo;
 
 {% endhighlight %}
@@ -236,7 +236,6 @@ The connector line can be customized using the below properies.
 * [`ConnectorHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorHeight)
 * [`ConnectorLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle) 
 * [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorRotationAngle)
-* [`ConnectorLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle)
 
 The following code example shows the customization options for connector line:
 
@@ -272,22 +271,22 @@ The following code example shows the customization options for connector line:
 {% highlight c# %}
 
         PieSeries series = new PieSeries()
-            {
-                ItemsSource = new ServerViewModel().Performance,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic",
-                LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
-                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-            };
+        {
+            ItemsSource = new ServerViewModel().Performance,
+            XBindingPath = "Year",
+            YBindingPath = "Plastic",
+            LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
+            Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+        };
 
         ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowLabel = true,
-                ShowConnectorLine = true,
-                UseSeriesPalette = true,
-                ConnectorLineStyle=this.Resources["lineStyle"] as Style
-                LabelPosition =AdornmentsLabelPosition.Outer,
-            };
+        {
+            ShowLabel = true,
+            ShowConnectorLine = true,
+            UseSeriesPalette = true,
+            ConnectorLineStyle=this.Resources["lineStyle"] as Style
+            LabelPosition =AdornmentsLabelPosition.Outer,
+        };
         series.AdornmentsInfo = adornmentInfo;
 
 {% endhighlight %}
@@ -298,7 +297,7 @@ The following code example shows the customization options for connector line:
 
 **Connector Type**
 
-[`ConnectorType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`Bezier`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ConnectorMode.html). This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
+[`ConnectorType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Line) or [`Bezier`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Bezier). This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
 
 
 {% tabs %}
@@ -319,26 +318,26 @@ The following code example shows the customization options for connector line:
 {% highlight c# %}
 
         PieSeries series = new PieSeries()
-            {
-                ItemsSource = new ServerViewModel().Performance,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic",
-                EnableSmartLabels = true,
-                ExplodeAll = true,
-                ExplodeRadius = 3,
-                ConnectorType=ConnectorMode.Bezier,
-                LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
-                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-            };
+        {
+            ItemsSource = new ServerViewModel().Performance,
+            XBindingPath = "Year",
+            YBindingPath = "Plastic",
+            EnableSmartLabels = true,
+            ExplodeAll = true,
+            ExplodeRadius = 3,
+            ConnectorType=ConnectorMode.Bezier,
+            LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
+            Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+        };
 
         ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowLabel = true,
-                ShowConnectorLine = true,
-                HorizontalAlignment = HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center,
-                ConnectorHeight= 80
-            };
+        {
+            ShowLabel = true,
+            ShowConnectorLine = true,
+            HorizontalAlignment = HorizontalAlignment.Center,
+            VerticalAlignment = VerticalAlignment.Center,
+            ConnectorHeight= 80
+        };
 
     {% endhighlight %}
 
@@ -366,9 +365,9 @@ The following code example shows the customization options for connector line:
 
 {% highlight xaml %}
 
-        <syncfusion:ChartAdornmentInfo ShowLabel="True" UseSeriesPalette="True">
+<syncfusion:ChartAdornmentInfo ShowLabel="True" UseSeriesPalette="True">
 
-        </syncfusion:ChartAdornmentInfo>
+</syncfusion:ChartAdornmentInfo>
 
 {% endhighlight %}
 
@@ -394,12 +393,12 @@ The following code example demonstrates the EnableSmartLabels property:
 
 {% highlight xaml %}
 
-            <chart:PieSeries Interior="#777777" ItemsSource="{Binding CategoricalData}" ConnectorType="Bezier" XBindingPath="Year"
-            YBindingPath="Plastic" EnableSmartLabels="True" LabelPosition="OutsideExtended" ExplodeAll="True" ExplodeRadius="3">
-                <chart:PieSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowLabel="True" HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True"></chart:ChartAdornmentInfo>
-                </chart:PieSeries.AdornmentsInfo>
-            </chart:PieSeries>
+<chart:PieSeries Interior="#777777" ItemsSource="{Binding CategoricalData}" ConnectorType="Bezier" XBindingPath="Year"
+YBindingPath="Plastic" EnableSmartLabels="True" LabelPosition="OutsideExtended" ExplodeAll="True" ExplodeRadius="3">
+    <chart:PieSeries.AdornmentsInfo>
+        <chart:ChartAdornmentInfo ShowLabel="True" HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True"></chart:ChartAdornmentInfo>
+    </chart:PieSeries.AdornmentsInfo>
+</chart:PieSeries>
 
 {% endhighlight %}
 
@@ -434,4 +433,4 @@ The following code example demonstrates the EnableSmartLabels property:
 
 ![Smart labels for adornments in WPF Chart](Adornments_images/smartlabel.png)
 
-N> For circular series, the adornment position can be changed to [`Inside`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html), [`Outside`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) using the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_LabelPosition) property.
+N> For circular series, the adornment position can be changed to [`Inside`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html#Syncfusion_UI_Xaml_Charts_CircularSeriesLabelPosition_Inside), [`Outside`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html#Syncfusion_UI_Xaml_Charts_CircularSeriesLabelPosition_Outside) or [`OutsideExtended`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html#Syncfusion_UI_Xaml_Charts_CircularSeriesLabelPosition_OutsideExtended) using the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_LabelPosition) property.
