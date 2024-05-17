@@ -7,7 +7,7 @@ control: Carousel
 documentation: ug
 ---
 
-## Change SelectedItem Position
+# Change SelectedItem Position
 
 To change the position of SelectedItem in a given path, use **TopItemPosition** property
 
