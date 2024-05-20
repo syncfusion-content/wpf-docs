@@ -200,13 +200,13 @@ The vertical line in contact with the x axes shows axis label. The horizontal ax
 
 Axis Label can be aligned by Near, Far, Center, Auto and None Options.
 
-* [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) – Axis label is aligned in Near/Far positions based on the movement of vertical line.
+* [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Auto) – Axis label is aligned in Near/Far positions based on the movement of vertical line.
 
-* [`Far`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) - Axis label is positioned far from the position of vertical line in cross hair.
+* [`Far`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Far) - Axis label is positioned far from the position of vertical line in cross hair.
 
-* [`Near`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) - Axis label is near to the position of trackball.
+* [`Near`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Near) - Axis label is near to the position of trackball.
 
-* [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) - Axis label is aligned to the center of the vertical line. By default the axis label will positioned in center.
+* [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Center) - Axis label is aligned to the center of the vertical line. By default the axis label will positioned in center.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 

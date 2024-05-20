@@ -272,8 +272,6 @@ legend.DockPosition = ChartDock.Top;
 
 legend.LegendPosition = LegendPosition.Outside;
 
-
-
 chart.Legend = legend;
 {% endhighlight %}
 {% endtabs %}
@@ -1211,8 +1209,6 @@ adornment.SegmentLabelRotation = 30d;
 
 adornment.AdornmentsPosition = AdornmentsPosition.Top;
 
-
-
 lineseries.AdornmentsInfo = adornment;
 
 {% endhighlight %}
@@ -1278,8 +1274,6 @@ adornment.ConnectorHeight = 10d;
 adornment.UseSeriesPalette = true;
 
 adornment.ShowConnectorLine = true;
-
-
 
 lineseries.AdornmentsInfo = adornment;
 {% endhighlight %}
@@ -2504,19 +2498,18 @@ Chart chart = new Chart();
 
 SaveFileDialog saveFileDialog = new SaveFileDialog();
 
-            string C_imageFilesFilter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|TIFF(*.tiff)|*.tiff|PNG(*.png)|*.png|WDP(*.wdp)|*.wdp|Xps file (*.xps)|*.xps|All files (*.*)|*.*";
+string C_imageFilesFilter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|TIFF(*.tiff)|*.tiff|PNG(*.png)|*.png|WDP(*.wdp)|*.wdp|Xps file (*.xps)|*.xps|All files (*.*)|*.*";
 
 saveFileDialog.Filter = C_imageFilesFilter;
 
 
 
 if (saveFileDialog.ShowDialog() == true)
+{
 
- {
+   chart.Save(saveFileDialog.FileName);
 
-    chart.Save(saveFileDialog.FileName);
-
- }
+}
 {% endhighlight %}
 
 ### SfChart
@@ -2527,21 +2520,21 @@ SfChart sfchart = new SfChart();
 
 SaveFileDialog sfd = new SaveFileDialog();      
 
- sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|PNG(*.png)|*.png|All files (*.*)|*.*";          
+sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|PNG(*.png)|*.png|All files (*.*)|*.*";          
 
-  if (sfd.ShowDialog() == true)          
+if (sfd.ShowDialog() == true)          
 
-  {               
+{               
 
-          using (Stream fs = sfd.OpenFile())
+         using (Stream fs = sfd.OpenFile())
 
-          {
+         {
 
-              sfchart.Save(fs, new PngBitmapEncoder());
+            sfchart.Save(fs, new PngBitmapEncoder());
 
-          }           
+         }           
 
-   }
+}
 {% endhighlight %}
 
 ##Printing Chart
