@@ -11,7 +11,7 @@ documentation: ug
 
 SfChart supports selection that allows you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
 
-### Adding Selection Behavior to SfChart
+## Adding Selection Behavior to SfChart
 
 You can create an instance [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#) and add it to the Behaviors collection.
 
