@@ -2,7 +2,7 @@
 layout: post
 title: Dropdown Menu Items in WPF Split Button Control | Syncfusion
 description: Learn here all about dropdown menu items support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
-platform: WPF
+platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
