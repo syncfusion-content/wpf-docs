@@ -154,7 +154,7 @@ For Bound Mode, you can change the binding context of the treeview items by usin
 
 ## ItemTemplate Selector
 
-The TreeView allows you to customize the appearance of each item with different templates based on specific constraints by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateSelector). You can choose a [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=netcore-3.1) for each item at runtime based on the value of data-bound property using `ItemTemplateSelector`.
+The TreeView allows you to customize the appearance of each item with different templates based on specific constraints by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateSelector). You can choose a [DataTemplate](https://learn.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=windowsdesktop-8.0&viewFallbackFrom=netcore-3.1) for each item at runtime based on the value of data-bound property using `ItemTemplateSelector`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -274,7 +274,7 @@ sfTreeView.ExpanderPosition = ExpanderPosition.End;
 
 ## Level based styling
 
-The TreeView allows you to customize the style of [TreeViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) based on different levels by using [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.ivalueconverter?view=netcore-3.1).
+The TreeView allows you to customize the style of [TreeViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) based on different levels by using [IValueConverter](https://learn.microsoft.com/en-us/dotnet/api/system.windows.data.ivalueconverter?view=windowsdesktop-8.0&viewFallbackFrom=netcore-3.1).
 
 {% tabs %}
 {% highlight xaml %}
