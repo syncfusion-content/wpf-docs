@@ -104,14 +104,11 @@ The following code example demonstrates, how you can create multiple panes in th
 
 </chart:SfChart.PrimaryAxis>
 
-
-
 <chart:SfChart.SecondaryAxis>
 
 <chart:NumericalAxis  PlotOffset="13" chart:ChartBase.ColumnSpan="2" />
 
 </chart:SfChart.SecondaryAxis>
-
 
 <chart:ColumnSeries Palette="LightCandy"
 
@@ -260,11 +257,7 @@ TickLinesPosition="Outside">
 
 ItemsSource="{Binding SneakersDetail}"  
 
-YBindingPath="ItemsCount1" 
-
-/>
-
-
+YBindingPath="ItemsCount1" />
 
 <chart:LineSeries Interior="CadetBlue" XBindingPath="Brand"
 
