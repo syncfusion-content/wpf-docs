@@ -241,9 +241,7 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusio
 
   </syncfusion:SfChart.SecondaryAxis>
 
-      <syncfusion:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height" />
-
-  </syncfusion:ColumnSeries>
+      <syncfusion:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height"></syncfusion:ColumnSeries>
 
  </syncfusion:SfChart> 
 
@@ -392,7 +390,7 @@ series.AdornmentsInfo = New ChartAdornmentInfo() With {.ShowLabel = True}
 
 {% endtabs %}  
 
-Refer to [`this`](https://help.syncfusion.com/wpf/charts/annotations) link  to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart adornments.
+Refer to [`this`](https://help.syncfusion.com/wpf/charts/annotations) link  to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart adornments.
 
 ## Enable legend
 
