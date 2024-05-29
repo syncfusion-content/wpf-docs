@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF CheckedListBox (CheckListBox) Overview
 
-The [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) control implements a classic list box with check list box items. The control displays items with a check box to enable multiple selection of items. Custom templates are defined to customize its appearance.
+The [CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) control implements a classic list box with check list box items. The control displays items with a check box to enable multiple selection of items. Custom templates are defined to customize its appearance.
 
 ![CheckListBox Control](Getting-Started_images/Control_Structure.png)
 
