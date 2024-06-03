@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Migrating from GridTreeControl to SfTreeGrid for GanttGrid in WPF Gantt control | Syncfusion
-description: Learn about SfTreeGrid migration in Syncfusion Essential Studio WPF Gantt control.
+title: GridTreeControl to SfTreeGrid migration in WPF Gantt control | Syncfusion
+description: Learn about GridTreeControl to SfTreeGrid migration in Syncfusion Essential Studio WPF Gantt control.
 platform: wpf
 control: Gantt
 documentation: ug
@@ -47,10 +47,10 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 
 <tr>
 <td>GanttControl</td>
-<td>CurentDateLinePositions</td>
-<td>CurentDateLinePositions</td>
-<td>CurentDateIndicatorPositions</td>
-<td>CurentDate IndicatorPositions</td>
+<td>CurrentDateLinePositions</td>
+<td>CurrentDateLinePositions</td>
+<td>CurrentDateIndicatorPositions</td>
+<td>CurrentDate IndicatorPositions</td>
 </tr>
 
 <tr>
