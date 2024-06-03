@@ -11,7 +11,7 @@ documentation: ug
 
 **Gridlines** are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
 
-The `SnapConstraints` property of SnapSettings class allows you to control the visibility of the gridlines.
+The [`SnapConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapConstraints) property of SnapSettings class allows you to control the visibility of the gridlines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -43,7 +43,7 @@ diagram.SnapSettings = new SnapSettings()
 
 ## Change grid lines appearance
 
-The `HorizontalGridLines` and `VerticalGridLines` properties of SnapSettings class allows you to customize the appearance of the gridlines. 
+The [`HorizontalGridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_HorizontalGridlines) and [`VerticalGridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_VerticalGridlines) properties of SnapSettings class allows you to customize the appearance of the gridlines. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,7 +108,7 @@ public class Gridlinestyle : List<Style>
 
 ## Change grid spacing
 
-The thickness and space between the gridlines can be customized by using `LinesInterval` property of Gridlines class. The `LinesInterval` is a type of List<double> collection, where the values at the odd indexes are referred as thickness of the lines and the values at the even indexes are referred as space between the gridlines.
+The thickness and space between the gridlines can be customized by using [`LinesInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html#Syncfusion_UI_Xaml_Diagram_Gridlines_LinesInterval) property of Gridlines class. The `LinesInterval` is a type of List<double> collection, where the values at the odd indexes are referred as thickness of the lines and the values at the even indexes are referred as space between the gridlines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -178,8 +178,8 @@ public class Intervals : List<double>
 
 Find the [Gridlines sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Gridlines) to depict the Gridlines.
 
-{% seealso %}
+## See Also
 
 [How to snap the objects on gridlines](/wpf/diagram/snapping/definesnapping)
 
-{% endseealso %}
+[How to customize the appearance of the gridlines?](https://support.syncfusion.com/kb/article/7414/how-to-customize-the-appearance-of-gridlines-in-wpf-diagram-sfdiagram)

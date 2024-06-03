@@ -141,6 +141,38 @@ private void Schedule_SelectionChanging(object sender, SelectionChangingEventArg
 {% endhighlight %}
 {% endtabs %}
 
+## ViewChanged
+
+The [ViewChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewChanged) event is used to notify when the scheduler's current view is changed, such as when the view is swiped to the previous or next view, or when the scheduler view is moved to another scheduler view.
+
+* `Sender`: This contains the `SfScheduler` object.
+
+* `ViewChanged`: The scheduler current view visible dates are available in the [ViewChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewChangedEventArgs.html) when the scheduler visible dates or view is changed.
+
+    * [NewValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewChangedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_ViewChangedEventArgs_NewValue): Returns the new date range of the view. 
+    * [OldValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewChangedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_ViewChangedEventArgs_OldValue) : Returns the old date range of the view.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
+
+<scheduler:SfScheduler x:Name="Scheduler" 
+                       ViewChanged="OnSchedulerViewChanged" >
+</scheduler:SfScheduler>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
+
+this.Scheduler.ViewChanged += this.OnSchedulerViewChanged;
+
+private void OnSchedulerViewChanged(object sender, ViewChangedEventArgs e)
+{
+    var oldValue = e.OldValue;
+    var newValue = e.NewValue;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## ViewHeaderCellTapped
 
 The [ViewHeaderCellTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs when the user clicks or touches the view header in Scheduler. This event receives two arguments namely `this` that handles `SfScheduler` and [ViewHeaderCellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewHeaderCellTappedEventArgs.html) as objects.

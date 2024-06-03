@@ -287,7 +287,7 @@ public class DataItems : ObservableCollection<ItemInfo>
 ## Customize flowchart layout orientation
 
 Sequence of the node's direction can be customized by flowchart orientation either vertically from top to bottom or by horizontally from left to right.
-The `Orientation` property of `FlowchartLayout` class allows you to define the flow direction for flowchart as `TopToBottom` or `LeftToRight`.
+The [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_Orientation) property of [FlowchartLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html) class allows you to define the flow direction for flowchart as `TopToBottom` or `LeftToRight`.
 
 ### TopToBottom orientation
 
@@ -319,7 +319,7 @@ Arranges the element in the layout horizontally from left to right.
 
 ## Customize the decision output directions
 
-Decision symbol denotes the question that can be answered in binary format (Yes/No, True/False). The output direction of the decision symbol can be controlled by the direction of "Yes" and "No" branches using the `YesBranchDirection` and `NoBranchDirection` properties of `FlowchartLayout` class.
+Decision symbol denotes the question that can be answered in binary format (Yes/No, True/False). The output direction of the decision symbol can be controlled by the direction of "Yes" and "No" branches using the [`YesBranchDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_YesBranchDirection) and [`NoBranchDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_NoBranchDirection) properties of `FlowchartLayout` class.
 
 `Left In Flow`: Arranges the Yes/No branch to the Left of the Decision symbol.
 
@@ -340,7 +340,7 @@ N> If both branch directions are same, **Yes** branch will be prioritized.
 
 ### Custom Yes and No branch values
 
-The decision symbol will produce the two branches as output, which will be **Yes** branch and **No** branch. If the output branch connector text value matches the values in the `YesBranchValues` property of `FlowchartLayout` class, it will be considered as **Yes** branch and similarly if connector text value matches the values in the `NoBranchValues` property, it will be considered as **No** branch. By default, the `YesBranchValues` property will contain **Yes** and **True** string values and the `NoBranchValues` property will contain **No** and **False** string values.  
+The decision symbol will produce the two branches as output, which will be **Yes** branch and **No** branch. If the output branch connector text value matches the values in the [`YesBranchValues`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_YesBranchValues) property of `FlowchartLayout` class, it will be considered as **Yes** branch and similarly if connector text value matches the values in the [`NoBranchValues`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_NoBranchValues) property, it will be considered as **No** branch. By default, the `YesBranchValues` property will contain **Yes** and **True** string values and the `NoBranchValues` property will contain **No** and **False** string values.  
 
 Any text value can be given as a connector text to describe the flow. Also, any string value can be given in the `YesBranchValues` and `NoBranchValues`. To decide the flow based on if or else, that connector text should match the values in the `YesBranchValues` and `NoBranchValues`.
 

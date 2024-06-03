@@ -214,6 +214,28 @@ Here, Radial Gradient created by the gradient colors and their location along th
 
 ![ColorPicker Radial Gradient Editor with Radius](ColorPicker-with-Gradient-Support_images/RadialGradient_Radius.png)
 
+## Show or Hide RadialGradientBrush properties
+
+We can control the visibility of RadialGradientBrush properties using the `IsGradientOriginVisible`, `IsCenterVisible`, and `IsRadiusVisible` properties. By default, all RadialGradientBrush properties are visible, with their default values as `True`. To hide any of these properties, change the respective property value to `False`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Syncfusion:ColorPicker x:Name="colorPicker" IsCenterVisible="False"/>
+
+{% endhighlight %}
+{% endtabs %}
+{% tabs %}
+{% highlight C# %}
+
+ColorPicker colorPicker = new ColorPicker();
+colorPicker.IsCenterVisible = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPicker with show/hide RadialGradientBrush properties](ColorPicker-with-Gradient-Support_images/RadialGradient_IsCentreVisible)
+
 ## Reverse the Gradient Colors
 
 [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) comes with the reverse button which helps in changing the gradient colors upside down or in case of radial gradient inside out. 
@@ -287,7 +309,7 @@ Here, The `ColorPicker` is in Gradient brush mode.
 
 We can change the brush mode directly by clicking on the corresponding Solid, Linear or Gradient mode buttons which are placed in the bottom right corner of the `ColorPicker`.
 
-![ColorPicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/ColorPicker_Switch_brushes.png)
+![ColorPicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/Brush_mode.png)
 
 ## Disable Switching between Solid, Linear and Gradient brush mode at runtime
 
@@ -307,7 +329,7 @@ colorPicker.EnableSolidToGradientSwitch = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_EnableSolidToGradientSwitch.png)
+![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/wpf-color-picker-switch-brushes.png)
 
 ## Gradient color changed notification
 

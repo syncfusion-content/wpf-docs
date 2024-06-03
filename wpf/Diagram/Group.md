@@ -58,7 +58,7 @@ diagram.Groups = groups;
 
 Group Nodes can be predefined and added to stencil. You can drop those Groups into Diagram, when required. 
 
-To explore how to add Groups from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
+To explore how to add Groups from stencil, refer to [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil).
 
 ## Interaction
 
@@ -66,4 +66,6 @@ You can edit the Group and its children at runtime. For more information about h
 
 ## See Also
  
-* [How to restrict the child node dragging whereas allow group dragging?](https://www.syncfusion.com/kb/11462/how-to-restrict-the-child-node-dragging-whereas-allow-group-dragging-in-wpf)
+[How to restrict the child node dragging whereas allow group dragging?](https://www.syncfusion.com/kb/11462/how-to-restrict-the-child-node-dragging-whereas-allow-group-dragging-in-wpf)
+
+[How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)

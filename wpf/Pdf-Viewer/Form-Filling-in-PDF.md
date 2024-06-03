@@ -23,6 +23,7 @@ You can load and fill the following form fields in a PDF document using the PDF 
 4.	Radio button.
 5.	Combo box.
 6.	List box.
+7.	Signature box.
 
 ## Retrieve the form field details 
 
@@ -145,12 +146,133 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## Add Form Fields at Runtime
+
+The PDF Viewer allows users to programmatically add form fields without user interaction at runtime.
+
+The following code sample explains how to add the form field textbox at runtime. Similarly, you can implement this for all other form fields.
+
+{% tabs %}
+{% highlight C# %}
+
+private void AddTextbox_Click(object sender, RoutedEventArgs e)
+{
+    if (pdfViewer.LoadedDocument.Form != null)
+    {
+        PdfLoadedPage page = pdfViewer.LoadedDocument.Pages[0] as PdfLoadedPage;
+        //Create a textbox field and add the properties.
+        PdfTextBoxField textBoxField = new PdfTextBoxField(page, "FirstName");
+        textBoxField.Bounds = new RectangleF(0, 0, 100, 20);
+        //Add the form field to the document.
+        pdfViewer.LoadedDocument.Form.Fields.Add(textBoxField);
+    }
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+Private Sub AddTextbox_Click(sender As Object, e As RoutedEventArgs)
+    If pdfViewer.LoadedDocument.Form IsNot Nothing Then
+        Dim page As PdfLoadedPage = TryCast(pdfViewer.LoadedDocument.Pages(0), PdfLoadedPage)
+        `Create a textbox field and add the properties.
+        Dim textBoxField As PdfTextBoxField = New PdfTextBoxField(page, "FirstName")
+        textBoxField.Bounds = New RectangleF(0, 0, 100, 20)
+        `Add the form field to the document.
+        pdfViewer.LoadedDocument.Form.Fields.Add(textBoxField)
+    End If
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+## Remove Form Fields at Runtime
+
+The PDF Viewer allows users to programmatically remove form fields without user interaction at runtime.
+
+The following code sample explains how to remove the form field during runtime.
+
+{% tabs %}
+{% highlight C# %}
+
+private void RemoveAt_Click(object sender, RoutedEventArgs e)
+{
+	if (pdfViewer.LoadedDocument.Form.Fields.Count > 0)
+		//Remove the field at index 0.
+        pdfViewer.LoadedDocument.Form.Fields.RemoveAt(0); 
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+Private Sub RemoveAt_Click(sender As Object, e As RoutedEventArgs)
+	If pdfViewer.LoadedDocument.Form.Fields.Count > 0 Then
+		`Remove the field at index 0.
+        pdfViewer.LoadedDocument.Form.Fields.RemoveAt(0)
+    End If
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+## Modify the Existing Form Field at Runtime
+
+The PDF Viewer allows users to programmatically modify existing form fields without user interaction at runtime.
+
+The following code sample explains how to modify properties of the form field textbox during runtime. Similarly, you can implement this for all other form fields.
+
+{% tabs %}
+{% highlight C# %}
+
+private void ModifyTextbox_Click(object sender, RoutedEventArgs e)
+{
+    if (pdfViewer.LoadedDocument.Form != null)
+    {
+            if (pdfViewer.LoadedDocument.Form.Fields[0] is PdfLoadedTextBoxField)
+            {
+                (pdfViewer.LoadedDocument.Form.Fields[0] as PdfLoadedTextBoxField).Text = "Syncfusion";
+            }
+    }
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+Private Sub ModifyTextbox_Click(sender As Object, e As RoutedEventArgs)
+If pdfViewer.LoadedDocument.Form IsNot Nothing Then
+ 		If TypeOf pdfViewer.LoadedDocument.Form.Fields(0) Is PdfLoadedTextBoxField Then
+    			Dim textBoxField As PdfLoadedTextBoxField = TryCast(pdfViewer.LoadedDocument.Form.Fields(0), PdfLoadedTextBoxField)
+			textBoxField.Text = "Syncfusion"
+		End If
+End If
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+## Signature Form Field
+
+PDF viewer WPF allows the user to add the signature in the PDF document and provides options to remove the included signature in the signature field of the PDF document.
+
+### Add a signature from signature field
+
+Clicking the signature box will open the signature pad, requesting the user to draw the signature. clicking on the apply button will add the drawn signature to the signature field.
+
+![WPF PDF Viewer Delete a Signature from Signature field](form-filling-images/wpf-pdf-viewer-signature-form-field-add.png)
+
+### Deleting a signature from signature field
+
+Selecting the delete option from the context menu, which is displayed when right-clicking on the selected signature, would delete the respective signature from the signature field.
+
+![WPF PDF Viewer Delete a Signature from Signature field](form-filling-images/wpf-pdf-viewer-signature-form-field-delete.png)
+
 ## Keyboard Shortcuts:
 
 The below keyboard shortcuts are used to navigate through the form fields present in the PDF document.
 
 *	Tab key – Navigates to the next form field present in the PDF document.
 *	Shift + Tab – Navigates to the previous form field present in the PDF document.
+*	Ctrl + Z - Performs form field value undo functionality for recently performed operations.
+*	Ctrl + Y - Performs form field value redo functionality for recently performed operations. 
 
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

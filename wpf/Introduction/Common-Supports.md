@@ -37,7 +37,7 @@ Most of the Syncfusion controls are enhanced with blend support. The following s
 
 ## Testing
 
-The following Syncfusion controls come with built in testing support like [Coded UI](https://docs.microsoft.com/en-us/archive/msdn-magazine/2012/march/coded-ui-test-automation-using-visual-studio-2010-coded-ui) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
+The following Syncfusion controls come with built in testing support like [Coded UI](https://learn.microsoft.com/en-us/archive/msdn-magazine/2012/march/coded-ui-test-automation-using-visual-studio-2010-coded-ui) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
 
 ### Coded UI
 
@@ -154,83 +154,83 @@ Resource file (.resx)</th></tr>
 <tr>
 <td>
 Syncfusion.Tools.wpf.dll</td><td>
-{{ '[Syncfusion.Tools.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Tools.Wpf441372344.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Tools.Wpf.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Tools.Wpf441372344.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Shared.wpf.dll</td><td>
-{{ '[Syncfusion.Shared.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Shared.Wpf1050714761.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Shared.Wpf.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Shared.Wpf1050714761.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.ReportViewer.wpf.dll.</td><td>
-{{ '[Syncfusion.ReportViewer.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.ReportViewer.Wpf-1945952232.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.ReportViewer.Wpf.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.ReportViewer.Wpf-1945952232.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.ReportDesigner.wpf.dll</td><td>
-{{ '[Syncfusion.ReportDesigner.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.ReportDesigner.Wpf-1041727457.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.ReportDesigner.Wpf.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.ReportDesigner.Wpf-1041727457.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.SfSchedule.WPF.dll</td><td>
-{{ '[Syncfusion.Schedule.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Schedule.WPF-2114011865.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Schedule.WPF.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Schedule.WPF-2114011865.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Diagram.wpf.dll</td><td>
-{{ '[Syncfusion.Diagram.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Diagram.Wpf399807340.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Diagram.Wpf.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Diagram.Wpf399807340.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapChart.WPF.dll</td><td>
-{{ '[Syncfusion.OlapChart.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapChart.WPF1784490155.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapChart.WPF.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapChart.WPF1784490155.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapGrid.WPF.dll</td><td>
-{{ '[Syncfusion.OlapGrid.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapGrid.WPF-1780476966.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapGrid.WPF.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapGrid.WPF-1780476966.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapClient.WPF.dll</td><td>
-{{ '[Syncfusion.OlapClient.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapClient.WPF800223558.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapClient.WPF.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapClient.WPF800223558.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapGauge.WPF.dll</td><td>
-{{ '[Syncfusion.OlapGauge.wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapGauge.wpf-703450722.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapGauge.wpf.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapGauge.wpf-703450722.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapShared.WPF.dll</td><td>
-{{ '[Syncfusion.OlapShared.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapShared.WPF892025005.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapShared.WPF.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapShared.WPF892025005.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapTools.WPF.dll</td><td>
-{{ '[Syncfusion.OlapTools.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapTools.WPF1635487656.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapTools.WPF.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapTools.WPF1635487656.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.PdfViewer.Windows.dll</td><td>
-{{ '[Syncfusion.PdfViewer.Windows.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PdfViewer.Windows1715928907.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.PdfViewer.Windows.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PdfViewer.Windows1715928907.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.PdfViewer.WPF.dll</td><td>
-{{ '[Syncfusion.PdfViewer.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PdfViewer.WPF1353718278.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.PdfViewer.WPF.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PdfViewer.WPF1353718278.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.PivotAnalysis.WPF.dll</td><td>
-{{ '[Syncfusion.PivotAnalysis.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PivotAnalysis.Wpf1519720402.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.PivotAnalysis.Wpf.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PivotAnalysis.Wpf1519720402.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.SfGrid.WPF.dll</td><td>
-{{ '[Syncfusion.SfGrid.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF-2055371759.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.SfGrid.WPF.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF-2055371759.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Spreadsheet.Wpf.dll</td><td>
-{{ '[Syncfusion.Speradsheet.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Speradsheet.Wpf-1712328665.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Speradsheet.Wpf.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Speradsheet.Wpf-1712328665.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Grid.WPF.dll</td><td>
-{{ '[Syncfusion.Grid.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Grid.Wpf1812217710.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Grid.Wpf.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Grid.Wpf1812217710.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.SfRichTextBoxAdv.WPF.dll</td><td>
-{{ '[Syncfusion.SfRichTextBoxAdv.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.SfRichTextBoxAdv.WPF.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.SfRichTextRibbon.WPF.dll</td><td>
-{{ '[Syncfusion.SfRichTextRibbon.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.SfRichTextRibbon.WPF.resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579.zip)' | markdownify }}</td></tr>
 </table>
 
 

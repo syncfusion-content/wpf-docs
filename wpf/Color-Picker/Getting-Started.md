@@ -220,7 +220,7 @@ colorPicker.Brush = radialGradient;
 
 ## Color and Brush changed notification
 
-Selected Color and Brush changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) and [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) events.
+Selected Color and Brush changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_SelectedBrushChanged) and [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_ColorChanged) events.
 
 {% tabs %}
 {% highlight xaml %}
@@ -281,7 +281,7 @@ colorPicker.IsAlphaVisible = false;
 
 We can change the color selection mode directly by clicking on the corresponding Solid, Linear or Gradient brush mode buttons which are placed in the bottom right corner of the `ColorPicker`.
 
-![WPF Color Picker popup gradient Editor](color-picker-with-gradient-support_images/wpf-color-picker-switch-brushes.gif)
+![WPF Color Picker popup gradient Editor](colorpicker-with-gradient-support_images/wpf-color-picker-switch-brushes.png)
 
 ### Restrict the brush mode from Solid to Gradient
 
@@ -302,7 +302,7 @@ colorPicker.EnableSolidToGradientSwitch = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Color Picker Solid to Gradient brush transition is disabled](color-picker-with-gradient-support_images/wpf-color-picker-gradient-transition.png)
+![WPF Color Picker Solid to Gradient brush transition is disabled](colorpicker-with-gradient-support_images/wpf-color-picker-gradient-transition.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Over%20all%20features) to download the sample that showcases the `ColorPicker` overall features.
 

@@ -169,7 +169,7 @@ class ViewModel : NotificationObject
 
 ## Value Changed Notification
 
-The `PercentTextBox` control can notifies the percent value changes through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html) event. You can get old percent value and new percent value from `OldValue` and `NewValue` properties in `PercentValueChanged` event.
+The `PercentTextBox` control can notifies the percent value changes through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValueChanged) event. You can get old percent value and new percent value from `OldValue` and `NewValue` properties in `PercentValueChanged` event.
 
 {%tabs%}
 {% highlight xaml %}

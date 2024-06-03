@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## ProceduralLanguageBase Class
+# ProceduralLanguageBase Class in WPF Syntax Editor Control
 
 ProceduralLanguageBase class contains syntax highlighting, outlining, and Auto mode IntelliSense implementations for procedural languages. C# and Visual Basic language support have been implemented using ProceduralLanguageBase class.
 

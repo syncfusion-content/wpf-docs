@@ -122,7 +122,7 @@ N> Collation applicable when more than one copy of multiple page diagram is prin
 
 ### Orientation 
 
-SfDiagram provides support to switch between Portrait and Landscape orientation while printing. Orientation can be changed by setting the `PageSettings.PageOrientation` Property.
+SfDiagram provides support to switch between Portrait and Landscape orientation while printing. Orientation can be changed by setting the [`PageSettings.PageOrientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageOrientation) Property.
 
 {% tabs %}
 {% highlight C# %}
@@ -142,7 +142,7 @@ The orientation can be changed in print preview window at runtime using orientat
 
 ### Paper size 
 
-SfDiagram provides support to change the page size. Page size can be changed by setting the `PageSettings.PageWidth` and `PageSettings.PageHeight` properties.
+SfDiagram provides support to change the page size. Page size can be changed by setting the [`PageSettings.PageWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageWidth) and [`PageSettings.PageHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageHeight) properties.
 
 {% tabs %}
 {% highlight C# %}
@@ -390,4 +390,10 @@ diagram.PrintingService.ShowClassicPrintPreview();
 
 ## See Also
 
-* [How to customize the Header or Footer of the print preview?](https://www.syncfusion.com/kb/11481/how-to-customize-the-header-or-footer-of-the-print-preview-in-the-wpf-diagramsfdiagram)
+[How to customize the Header or Footer of the print preview?](https://www.syncfusion.com/kb/11481/how-to-customize-the-header-or-footer-of-the-print-preview-in-the-wpf-diagramsfdiagram)
+
+[How to ignore empty pages while printing the WPF Diagram?](https://support.syncfusion.com/kb/article/8537/how-to-ignore-empty-pages-while-printing-the-wpf-diagram-sfdiagram)
+
+[How to get progress notification while printing the diagram pages?](https://support.syncfusion.com/kb/article/8465/how-to-get-progress-notification-while-printing-in-wpf-diagram-sfdiagram)
+
+[How to show classic print preview?](https://support.syncfusion.com/kb/article/8186/how-to-show-classic-print-preview-in-wpf-diagram-sfdiagram)

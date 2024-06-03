@@ -83,7 +83,7 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 ### Setting Header for items
 
-`SfAccordionItem` provides a property [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_HeaderedContentControl_Header) that helps to set the header for the item. [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_HeaderedContentControl_Header) is visible in both expanded and collapsed state. Set the value as “WPF” for the first child and repeat the same procedure for the remaining children with values as “Silverlight”, “WinRT”, ”Windows Phone” and “Universal”.
+`SfAccordionItem` provides a property [Header](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_HeaderedContentControl_Header) that helps to set the header for the item. [Header](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_HeaderedContentControl_Header) is visible in both expanded and collapsed state. Set the value as “WPF” for the first child and repeat the same procedure for the remaining children with values as “Silverlight”, “WinRT”, ”Windows Phone” and “Universal”.
 
 {% tabs %}
 
@@ -149,7 +149,7 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 ### Setting Content for items
 
-[Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_ContentControl_Content) property helps to set the content for `SfAccordionItem`. `SfAccordionItem` is a ContentControl so that any object can be added as its content. Content is visible only in expanded state.
+[Content](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_ContentControl_Content) property helps to set the content for `SfAccordionItem`. `SfAccordionItem` is a ContentControl so that any object can be added as its content. Content is visible only in expanded state.
 
 {% tabs %}
 
@@ -230,11 +230,11 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 ## Using ItemsSource
 
-SfAccordion accepts any business object collection to be bound to its [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property. 
+SfAccordion accepts any business object collection to be bound to its [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property. 
 
 ### Adding items to the control
 
-Follow the below steps to add the Items through [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property.
+Follow the below steps to add the Items through [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property.
 
 1. Create a model
 
@@ -357,7 +357,7 @@ Follow the below steps to add the Items through [ItemsSource](https://docs.micro
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4. Bind the Employees collection to [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of `SfAccordion` Control
+4. Bind the Employees collection to [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of `SfAccordion` Control
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -378,7 +378,7 @@ Follow the below steps to add the Items through [ItemsSource](https://docs.micro
 
 ### Setting Header for items
 
-Header can be displayed using the property [DisplayMemberPath](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.displaymemberpath?view=netframework-4.7.2). This property is used to get the header from Model class. Header is visible in both expanded and collapsed state. 
+Header can be displayed using the property [DisplayMemberPath](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.displaymemberpath?view=netframework-4.7.2). This property is used to get the header from Model class. Header is visible in both expanded and collapsed state. 
 
 {% tabs %}
 

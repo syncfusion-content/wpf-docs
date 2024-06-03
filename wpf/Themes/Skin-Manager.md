@@ -712,7 +712,7 @@ public partial class MainWindow : ChromelessWindow
 
 ## Apply themes to the controls derived from Syncfusion controls
 
-To apply themes to the derived control using `SfSkinManager`, call [SetResourceReference](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.setresourcereference) method and, pass the `StyleProperty` and derived control type as parameters. 
+To apply themes to the derived control using `SfSkinManager`, call [SetResourceReference](https://learn.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.setresourcereference?view=windowsdesktop-8.0) method and, pass the `StyleProperty` and derived control type as parameters. 
 
 {% tabs %}
 

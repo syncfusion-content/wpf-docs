@@ -89,7 +89,7 @@ diagram.Groups = groups;
 
 ### Setting a Header
 
-You can textually describe a container by using its 'Header' property. Also, users can customize the header's appearance using the header's "ShapeStyle" property.
+You can textually describe a container by using its 'Header' property. Also, users can customize the header's appearance using the header's [`ShapeStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ContainerHeaderViewModel.html#Syncfusion_UI_Xaml_Diagram_ContainerHeaderViewModel_ShapeStyle) property.
 
 The following code example explains how to define a container header and its customization:
 
@@ -204,7 +204,7 @@ N> You can edit the header by double-clicking the region of the container's head
 
 Container Nodes can be predefined and added to the stencil. You can drop those Containers into Diagram when required.
 
-To explore how to add Containers from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
+To explore how to add Containers from stencil, refer to [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil).
 
 ## Interactively add or remove diagram elements into Container
 

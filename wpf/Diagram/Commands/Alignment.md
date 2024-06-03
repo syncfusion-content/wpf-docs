@@ -13,7 +13,7 @@ Alignment commands are used to align the selected objects such as Nodes and Conn
 
 ## AlignLeft command 
 
-The [AlignLeft](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignLeft) command is used to align all the selected objects along the left corner of the reference object.
+The [`AlignLeft`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignLeft) command is used to align all the selected objects along the left corner of the reference object.
 
 {% tabs %}
 
@@ -34,7 +34,7 @@ graphinfo.Commands.AlignLeft.Execute(null);
 
 ## AlignRight command
 
-The [AlignRight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignRight) command is used to align all the selected objects along the right corner of the reference object.
+The [`AlignRight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignRight) command is used to align all the selected objects along the right corner of the reference object.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ graphinfo.Commands.AlignRight.Execute(null);
 
 ## AlignCenter command
 
-The [AlignCenter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignCenter) command is used to center all selected objects vertically. It aligns selected objects to the center with respect to the horizontal axis by changing the x-coordinate of the object.
+The [`AlignCenter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignCenter) command is used to center all selected objects vertically. It aligns selected objects to the center with respect to the horizontal axis by changing the x-coordinate of the object.
 
 {% tabs %}
 
@@ -78,7 +78,7 @@ graphinfo.Commands.AlignCenter.Execute(null);
 
 ## AlignTop command 
 
-The [AlignTop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignTop) command is used to align all the selected objects along the top corner of the reference object.
+The [`AlignTop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignTop) command is used to align all the selected objects along the top corner of the reference object.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ graphinfo.Commands.AlignTop.Execute(null);
 
 ## AlignBottom command
 
-The [AlignBottom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignBottom) command is used to align all the selected objects along the bottom corner of the reference object.
+The [`AlignBottom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignBottom) command is used to align all the selected objects along the bottom corner of the reference object.
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ graphinfo.Commands.AlignBottom.Execute(null);
 
 ## AlignMiddle command
 
-The [AlignMiddle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignMiddle) command is used to center all selected objects horizontally. It aligns selected objects to the center with respect to the vertical axis by changing the y-coordinate of the object.
+The [`AlignMiddle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignMiddle) command is used to center all selected objects horizontally. It aligns selected objects to the center with respect to the vertical axis by changing the y-coordinate of the object.
 
 {% tabs %}
 

@@ -71,7 +71,7 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 
 ## How to change the snap indication style
 
-When snapping, cyan shade color indication lines will be shown. These indication lines styles can be customized by using the `SnapIndicatorStyle` property of SnapSettings class.
+When snapping, cyan shade color indication lines will be shown. These indication lines styles can be customized by using the [`SnapIndicatorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapIndicatorStyle) property of SnapSettings class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -150,3 +150,7 @@ Diagram allows snapping on dock ports while making new connection on it and drag
 ![Snap to object](Gridlines_images/DockPortSnapping.gif)
 
 Find the [Snapping sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Snapping) to depict the Snapping.
+
+## See Also
+
+[How to enable snapping in diagram?](https://support.syncfusion.com/kb/article/5908/how-to-enable-snapping-in-wpf-diagram-sfdiagram)

@@ -13,7 +13,7 @@ Cubic curve segments are used to create curve segments and the curves are config
 
 ## how to create cubic curve segments
 
-To create a Curve line, you should specify the segment as [CubicCurveSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html).
+To create a Curve line, you should specify the segment as [`CubicCurveSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html).
 
 {% tabs %}
 {% highlight xaml %}

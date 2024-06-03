@@ -31,6 +31,9 @@ The following assemblies are required in your WPF application to use the PDF Vie
 <td>Syncfusion.Pdf.Base</td>
 <td>This library contains the PDF reader and creator that supports the PDF Viewer.</td></tr>
 <tr>
+<td>Syncfusion.PdfToImageConverter.Base</td>
+<td>This library is responsible for Pdfium integration and image generation, enhancing the capabilities of the PDF Viewer.</td></tr>
+<tr>
 <td>Syncfusion.PdfViewer.WPF</td>
 <td>This component contains the rendering area and other related UI elements.</td>
 </tr>
@@ -39,6 +42,7 @@ The following assemblies are required in your WPF application to use the PDF Vie
 <td>This component contains various UI controls (ColorPickerPalette and Numeric UpDown) that are used in the PDF Viewer.</td></tr>
 </table>
 
+N> Starting with version 23.1.x, a reference to the Syncfusion.PdfToImageConverter.Base assembly is necessary for PdfViewer applications.
 N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your WPF application to use our components.
 
 ## Create a simple PDF Viewer application 
@@ -125,7 +129,7 @@ The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Pdf
 
 N> From v16.3.0x onwards, PDF Viewer uses PDFium as a default rendering engine to render the PDF pages, which is a more robust and promising rendering engine. Refer to this [link](https://help.syncfusion.com/wpf/pdf-viewer/pdf-rendering-engines) for more details.
 
-1.	Create a simple class in the application that implements [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=netcore-3.1) and declare a file stream property in the class as shown in the following code sample.
+1.	Create a simple class in the application that implements [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=netcore-3.1) and declare a file stream property in the class as shown in the following code sample.
 
 	~~~csharp
 	using System.ComponentModel;
@@ -166,7 +170,7 @@ N> From v16.3.0x onwards, PDF Viewer uses PDFium as a default rendering engine t
 	}
 	~~~
 
-2. Set the [DataContext](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.datacontext?view=netcore-3.1) to the Window for data binding. To add the `DataContext` in XAML, use the following code example.
+2. Set the [DataContext](https://learn.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.datacontext?view=windowsdesktop-8.0&viewFallbackFrom=netcore-3.1) to the Window for data binding. To add the `DataContext` in XAML, use the following code example.
 
 	~~~xaml
 	<Window.DataContext>
@@ -194,5 +198,41 @@ The WPF PdfViewer Control supports various built-in themes. Refer to the below l
 
   ![WPF PDF Viewer Theme](getting-started_images/wpf-pdf-viewer-theme.png)
 
+The following example code demonstrate how to apply the FluentDark theme to PDF Viewer control.
+  
+{% tabs %}
+{% highlight c# %}
+
+public MainWindow()
+{
+    InitializeComponent();
+    //Initialize PDF Viewer.
+    PdfViewerControl pdfViewer1 = new PdfViewerControl();
+    HomeGrid.Children.Add(pdfViewer);
+
+    //Apply the theme to PDFViewer.
+    SfSkinManager.SetTheme(pdfViewer, new Theme() { ThemeName = "FluentDark" });
+    pdfViewer.Load(@"../../PDF_Succinctly.pdf");           
+}
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+    Public Sub New()
+        InitializeComponent()
+        'Initialize PDF Viewer.
+        Dim pdfViewer As PdfViewerControl = New PdfViewerControl()
+        HomeGrid.Children.Add(pdfViewer)
+
+        'Apply the theme to PDFViewer.
+        SfSkinManager.SetTheme(pdfViewer, New Theme() With {
+            .ThemeName = "FluentDark"
+        })
+        pdfViewer.Load("../../PDF_Succinctly.pdf")
+    End Sub
+
+{% endhighlight %}
+{% endtabs %}
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

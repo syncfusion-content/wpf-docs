@@ -9,7 +9,7 @@ documentation: ug
 
 # Flip Command in WPF Diagram (SfDiagram)
 
-The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Flip) command is used to mirror the selected object's content and port in the diagram page in both horizontal and vertical direction. 
+The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Flip) command is used to mirror the selected object's content and port in the diagram page in both horizontal and vertical direction. 
 
 {% tabs %}
 
@@ -54,6 +54,12 @@ The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.ht
 | VerticalFlip | It is used to flip the node or port is mirrored across the vertical axis. |
 | None | It is used to disables all the flip behaviour. |
 
-![Represents the flip](Commands_images/Commands_img7.gif)
+![Represents the Node flip](Commands_images/Commands_img7.gif)
+
+### Group Flip
+
+When the Flip command is applied to the group, it enables the transformation of its content, including nodes, connectors, and ports, in accordance with their positions within the group, aligning with the specified flip direction.
+
+![Represents the Group flip](Commands_images/Commands_GroupFlip.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Flip%20Command)

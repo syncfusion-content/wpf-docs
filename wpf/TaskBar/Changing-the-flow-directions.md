@@ -9,7 +9,7 @@ documentation: ug
 
 # Changing the flow directions in WPF TaskBar
 
-The flow direction for the TaskBar is set through the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_FrameworkElement_FlowDirection) property.
+The flow direction for the TaskBar is set through the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_FrameworkElement_FlowDirection) property.
 
 Here is the code for setting this property.
 

@@ -29,7 +29,7 @@ SfDiagram supports three types of ports: Node Port, Connector Port, and DockPort
 
 ## Node port
 
-A port on a node can be created using the instance of `NodePort` object. The `NodeOffsetX` and `NodeOffsetY` properties of `NodePort` class is used to specify the position of the port on a node.
+A port on a node can be created using the instance of `NodePort` object. The [`NodeOffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html#Syncfusion_UI_Xaml_Diagram_NodePort_NodeOffsetX) and [`NodeOffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html#Syncfusion_UI_Xaml_Diagram_NodePort_NodeOffsetY) properties of [`NodePort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html) class is used to specify the position of the port on a node.
 
 {% tabs %}
 
@@ -140,7 +140,7 @@ The `NodeOffsetX` and `NodeOffsetY` properties of port is used to position the p
 | (1,1) | ![Left](Port_images/offset9.PNG) |
 
 ### Displacement
-The `Displacement` property is used to dislocate the port by the value given. By default, port will be in the center of the node. When you assign value to the `Displacement` property, port will be displaced from its position by displacment value. Default value is 0d.
+The [`Displacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePortViewModel.html#Syncfusion_UI_Xaml_Diagram_NodePortViewModel_Displacement) property is used to dislocate the port by the value given. By default, port will be in the center of the node. When you assign value to the `Displacement` property, port will be displaced from its position by displacment value. Default value is 0d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -172,7 +172,7 @@ NodePortViewModel port = new NodePortViewModel()
   
 ### Define connector port  
 
-A port on a connector can be created using the instance of `ConnectorPort` object. The `Length` property of the `ConnectorPort` class is used to specify the position of the port on a connector path.
+A port on a connector can be created using the instance of `ConnectorPort` object. The [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorPort.html#Syncfusion_UI_Xaml_Diagram_ConnectorPort_Length) property of the [`ConnectorPort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorPort.html) class is used to specify the position of the port on a connector path.
 
 Find the common style for Connector and ConnectorPort.
 
@@ -268,11 +268,11 @@ The `Length` property of port is used to align the port based on fractions. 0 re
 
 ## Dock port
 
-DockPort is different from standard ports like `NodePort` and `ConnectorPort`. It is a placeholder that allows us to create connections at any point within it. Using `DockPort`, you can achieve lines of connecting points within the node boundary as shown in the following image.
+DockPort is different from standard ports like `NodePort` and `ConnectorPort`. It is a placeholder that allows us to create connections at any point within it. Using [`DockPort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPort.html), you can achieve lines of connecting points within the node boundary as shown in the following image.
 
 ![WPF Diagram Dock port](Port_images/wpf-diagram-dock-port.png)
 
-A DockPort on a node can be created using the instance of `DockPort` object. The `SourcePoint` and `TargetPoint` properties of DockPort allows you to define its start and end points. 
+A DockPort on a node can be created using the instance of `DockPort` object. The [`SourcePoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_SourcePoint) and [`TargetPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_TargetPoint) properties of DockPort allows you to define its start and end points. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -334,7 +334,7 @@ NodeViewModel node = new NodeViewModel()
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/Simple-PortCreation)
 
 ### Geometry Style
-The appearance of `DockPort` such as stroke and stroke thickness can be customized using the `ConnectorGeometryStyle` property.
+The appearance of `DockPort` such as stroke and stroke thickness can be customized using the [`ConnectorGeometryStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_ConnectorGeometryStyle) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -360,7 +360,7 @@ The appearance of `DockPort` such as stroke and stroke thickness can be customiz
 
 ## Padding
 
-Padding is used to leave space between the connector’s end point and the object to where it is connected. The `ConnectorPadding` property of port defines the space to be left between the port bounds and its edges. Default value is 0d.
+Padding is used to leave space between the connector’s end point and the object to where it is connected. The [`ConnectorPadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_ConnectorPadding) property of port defines the space to be left between the port bounds and its edges. Default value is 0d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -387,7 +387,7 @@ NodePortViewModel nodePort = new NodePortViewModel()
 
 ## HitPadding
 
-Connection can be made from or to nodes, connectors, port or on an empty area in a diagram. Making a connection with ports is usually difficult as thickness is usually small. To make it easy to connect, it should be possible to connect when the mouse comes near its vicinity area. The `HitPadding` property allows us to customize the vicinity area when connecting. The connector can be created by clicking and dragging to any point of hit padding of ports and can be dropped at any point of hit padding region of ports. Default value is 0d.
+Connection can be made from or to nodes, connectors, port or on an empty area in a diagram. Making a connection with ports is usually difficult as thickness is usually small. To make it easy to connect, it should be possible to connect when the mouse comes near its vicinity area. The [`HitPadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_HitPadding) property allows us to customize the vicinity area when connecting. The connector can be created by clicking and dragging to any point of hit padding of ports and can be dropped at any point of hit padding region of ports. Default value is 0d.
 
 {% tabs %}
 {% highlight c# %}
@@ -430,7 +430,7 @@ To learn more about PortVisibility, refer to [PortVisibility](https://help.syncf
 
 ## Connection direction
 
-The `ConnectionDirection` is a port’s property, which allows users to specify the direction in which the connector’s connection to be established to a port. This property will be active only if the port constraints contains `PortConstraints.ConnectionDirection`. Default value is Auto.
+The [`ConnectionDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_ConnectionDirection) is a port’s property, which allows users to specify the direction in which the connector’s connection to be established to a port. This property will be active only if the port constraints contains `PortConstraints.ConnectionDirection`. Default value is Auto.
 
 {% tabs %}
 {% highlight xaml %}
@@ -462,13 +462,13 @@ For more information , refer to [ConnectionDirection](https://help.syncfusion.co
 
 ## Appearance
 
-* The shape of the port can be changed by using its `shape` property. The shape can be any [Built-In Shapes](https://help.syncfusion.com/wpf/diagram/shapes) or any custom geometric path.
+* The shape of the port can be changed by using its [`shape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_Shape) property. The shape can be any [Built-In Shapes](https://help.syncfusion.com/wpf/diagram/shapes) or any custom geometric path.
 
-* The appearance of ports can be customized by using the `ShapeStyle` property of the port.
+* The appearance of ports can be customized by using the [`ShapeStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_ShapeStyle) property of the port.
 
-* Customize the port size by using the `UnitWidth` and `UnitHeight` properties of port.
+* Customize the port size by using the [`UnitWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_UnitWidth) and [`UnitHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_UnitHeight) properties of port.
 
-* The  `PortVisibility` property allows you to define, when the port should be visible.
+* The  [`PortVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_PortVisibility) property allows you to define, when the port should be visible.
 
 >N For DockPort customization, refer to [Geometry Style](https://help.syncfusion.com/wpf/diagram/port#geometry-style)
 
@@ -524,24 +524,34 @@ The `PortChangedEvent` will get invoked when you drag the port.
  
 * DockPort: The `PortChangedEvent` will notify the `SourcePoint`and `TargetPoint` changes with their `OldValue` and `NewValue`.
 
- To explore about arguments, refer to [PortChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortChangedEventArgs.html)
+ To explore about arguments, refer to [`PortChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortChangedEventArgs.html)
 
 ## Constraints
 
-The `Constraints` property allows you to enable or disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/diagram/constraints#port-constraints "Port Constraints").
+The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_Constraints) property allows you to enable or disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/diagram/constraints#port-constraints "Port Constraints").
 
 ## See Also
 
-* [How to control the visibility of Ports?](https://www.syncfusion.com/kb/6687/how-to-control-the-visibility-of-ports)
+[How to control the visibility of Ports?](https://www.syncfusion.com/kb/6687/how-to-control-the-visibility-of-ports)
 
-* [How to connect only with port not with node?](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
+[How to connect only with port not with node?](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
 
-* [How to validate the connection and port visibility (inport and outport) in the diagram?](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
+[How to validate the connection and port visibility (inport and outport) in the diagram?](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
 
-* [How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
+[How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
 
-* [How to add multiple ports for the node?](https://www.syncfusion.com/kb/11435/how-to-add-multiple-ports-for-node-in-the-wpf-diagramsfdiagram)
+[How to add multiple ports for the node?](https://www.syncfusion.com/kb/11435/how-to-add-multiple-ports-for-node-in-the-wpf-diagramsfdiagram)
 
-* [How to decide whether to drag or draw a connection on port at runtime?](https://www.syncfusion.com/kb/9622/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf)
+[How to decide whether to drag or draw a connection on port at runtime?](https://www.syncfusion.com/kb/9622/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf)
 
-* [How to add ToolTip for Diagram objects of Node, NodePort in Diagram?](https://www.syncfusion.com/kb/13207/how-to-add-tooltip-for-diagram-objects-of-node-nodeport-in-wpf-diagramsfdiagram)
+[How to add ToolTip for Diagram objects of Node, NodePort in Diagram?](https://www.syncfusion.com/kb/13207/how-to-add-tooltip-for-diagram-objects-of-node-nodeport-in-wpf-diagramsfdiagram)
+
+[How to disable the animation while creating a connection in diagram?](https://support.syncfusion.com/kb/article/8187/how-to-disable-the-animation-while-creating-a-connection-in-wpf-diagram-sfdiagram)
+
+[How to create port at runtime through set tool?](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
+
+[How to override the default cursors while interact on diagram objects?](https://support.syncfusion.com/kb/article/9997/how-to-override-the-default-cursors-while-interaction-in-wpf-diagram-sfdiagram)
+
+[How to achieve zoom in or zoom out functionality to ports?](https://support.syncfusion.com/kb/article/10002/how-to-achieve-zoom-in-or-zoom-out-functionality-to-ports-in-wpf-diagram-sfdiagram)
+
+[How to add port to the connector?](https://support.syncfusion.com/kb/article/5939/how-to-add-port-to-the-connector-in-wpf-diagram-sfdiagram)
