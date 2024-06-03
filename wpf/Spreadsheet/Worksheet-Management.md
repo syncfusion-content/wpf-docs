@@ -179,9 +179,9 @@ spreadsheet.SetZoomFactor("Sheet1", 200);
 
 The Events associated with the Zooming are 
 
-. [ZoomFactorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html)
+. [ZoomFactorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_ZoomFactorChanged)
 
-. [ZoomFactorChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html)
+. [ZoomFactorChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_ZoomFactorChanging)
 
 ## Events
 

@@ -24,7 +24,7 @@ The following code example illustrates how to merge shapes into diagram.
 
 ## Basic Shapes
 
-The following code example illustrates how to assign Shape property of the Node.
+The following code example illustrates how to assign [`Shape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Shape) property of the [`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -208,25 +208,3 @@ The list of shapes are available in the resource dictionary as follows
 |  | ThermoCouple| ![ThermoCouple](Shapes_images\ElectricalThermoCouple.PNG)|
 
 Find the [Shapes sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Shapes) to depict the shapes.
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-

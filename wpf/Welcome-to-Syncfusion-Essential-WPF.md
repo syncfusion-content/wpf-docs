@@ -396,9 +396,9 @@ Refer [licensing documentation](https://help.syncfusion.com/common/essential-stu
 
 ## Additional help resources
 
-The [Knowledge Base](https://www.syncfusion.com/kb/wpf) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
+The [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/83) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
 
-Similar to the [Knowledge Base](https://www.syncfusion.com/kb/wpf), the [Forum](https://www.syncfusion.com/forums/wpf) section also contains responses to questions that other customers have asked in the past.
+Similar to the [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/83), the [Forum](https://www.syncfusion.com/forums/wpf) section also contains responses to questions that other customers have asked in the past.
 
 ## Support and feedback
 

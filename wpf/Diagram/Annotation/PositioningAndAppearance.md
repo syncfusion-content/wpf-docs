@@ -13,7 +13,7 @@ Diagram allows you to customize the position and appearance of the annotation ef
 
 ## How to position node's annotation 
 
-Annotation can be aligned relative to the node boundaries. It has Margin, Offset, Horizontal, and Vertical alignment settings. It is quite tricky when all four alignments are used together but gives more control over alignments properties of `AnnotationEditorViewModel` class.
+Annotation can be aligned relative to the node boundaries. It has Margin, Offset, Horizontal, and Vertical alignment settings. It is quite tricky when all four alignments are used together but gives more control over alignments properties of [`AnnotationEditorViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html) class.
 
 Annotations of a node can be positioned using the following properties of `AnnotationEditorViewModel` class.
 
@@ -23,7 +23,7 @@ Annotations of a node can be positioned using the following properties of `Annot
 
 ### Offset
 
-The `Offset` property of `AnnotationEditorViewModel` is used to align the annotations based on fractions. 0 represents top-left corner, 1 represents bottom-right corner, and 0.5 represents half of width/height. Default value is (0.5, 0.5).
+The  [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Offset) property of `AnnotationEditorViewModel` is used to align the annotations based on fractions. 0 represents top-left corner, 1 represents bottom-right corner, and 0.5 represents half of width/height. Default value is (0.5, 0.5).
 
 {% tabs %}
 {% highlight xaml %}
@@ -80,9 +80,9 @@ NodeViewModel node = new NodeViewModel()
 
 ### Horizontal and vertical Alignments
 
-The `HorizontalAlignment` property of `AnnotationEditorViewModel` class is used to align the annotation horizontally. Default value is Center.
+The [`HorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_HorizontalAlignment) property of `AnnotationEditorViewModel` class is used to align the annotation horizontally. Default value is Center.
 
-The `VerticalAlignment` property of `AnnotationEditorViewModel` class is used to align the annotation vertically. Default value is Center.
+The [`VerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_VerticalAlignment) property of `AnnotationEditorViewModel` class is used to align the annotation vertically. Default value is Center.
 
 {% tabs %}
 {% highlight xaml %}
@@ -127,7 +127,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### Margin
 
-`Margin` is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property. The following code example explains how to align an annotation based on its Margin value. Default value is (0,0,0,0).
+[`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Margin) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property. The following code example explains how to align an annotation based on its Margin value. Default value is (0,0,0,0).
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,7 +169,7 @@ Annotations of a connector can be positioned using the following properties of `
 
 ### Alignment
 
-Connector's annotation can be aligned over its segment path using the `Alignment` property of `AnnotationEditorViewModel` class. Default value is Center.
+Connector's annotation can be aligned over its segment path using the [`Alignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Alignment) property of `AnnotationEditorViewModel` class. Default value is Center.
 
 {% tabs %}
 {% highlight xaml %}
@@ -205,7 +205,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### Length
 
-The `Length` property of annotation is used to align the annotations based on fractions. 0 represents Top-Left corner, 1 represents Bottom-Right corner, and 0.5 represents half of Width/Height. The default value is 0.5d.
+The [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Length) property of annotation is used to align the annotations based on fractions. 0 represents Top-Left corner, 1 represents Bottom-Right corner, and 0.5 represents half of Width/Height. The default value is 0.5d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -238,7 +238,7 @@ The following image shows the relationship between the annotation position and L
 
 ### Displacement
 
-The `Displacement` property is used to dislocate the annotation by the value given. By default, annotation will be in center of the connector path. When you assign value to the `Displacement` property, annotation will be displaced from its position by displacment value. Default value is 0d.
+The [`Displacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Displacement) property is used to dislocate the annotation by the value given. By default, annotation will be in center of the connector path. When you assign value to the `Displacement` property, annotation will be displaced from its position by displacment value. Default value is 0d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -270,7 +270,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### Pivot
 
-Position of an annotation is controlled by using its `Length` property, which represents the distance from connector center. The `Pivot` property is used to align the annotation based on its center point. Default value of the pivot point is (0.5, 0.5), that means center of length.
+Position of an annotation is controlled by using its `Length` property, which represents the distance from connector center. The [`Pivot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Pivot) property is used to align the annotation based on its center point. Default value of the pivot point is (0.5, 0.5), that means center of length.
 
 {% tabs %}
 {% highlight xaml %}
@@ -343,7 +343,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ## How to set size for annotation
 
-Diagram allows you to set size for annotations by using the `UnitWidth` and `UnitHeight` properties. Default value of UnitWidth and UnitHeight properties are double.NaN. 
+Diagram allows you to set size for annotations by using the [`UnitWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_UnitWidth) and [`UnitHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_UnitHeight) properties. Default value of UnitWidth and UnitHeight properties are double.NaN. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -378,7 +378,7 @@ N> Size of the annotation is 100% size of the node.
 
 ## Wrapping
 
-When text overflows node boundaries, you can control it by using the `WrapText` property. So, it is wrapped into multiple lines. The Wrapping property of annotation defines how the content should be wrapped. Default value is Wrap.
+When text overflows node boundaries, you can control it by using the [`WrapText`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_WrapText) property. So, it is wrapped into multiple lines. The Wrapping property of annotation defines how the content should be wrapped. Default value is Wrap.
 
 {% tabs %}
 {% highlight xaml %}
@@ -415,7 +415,7 @@ Annotations = new AnnotationCollection()
 
 ## How to change the appearance of annotation
 
-Default appearance of the annotations can be customized by using the `EditTemplate` and `ViewTemplate` properties. ViewTemplate is used to control the appearance of the annotation when it is in non-editing stage. EditTemplate is used to control the appearance of the annotation while it is in editing.
+Default appearance of the annotations can be customized by using the [`EditTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_EditTemplate) and [`ViewTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_ViewTemplate) properties. ViewTemplate is used to control the appearance of the annotation when it is in non-editing stage. EditTemplate is used to control the appearance of the annotation while it is in editing.
 
 {% tabs %}
 {% highlight xaml %}
@@ -506,7 +506,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### How to change the editing mode
 
-Diagram allows you to show the annotation in view or edit mode while loading the diagram elements by using the `Mode` property of `AnnotationEditorViewModel` class. Default value is View.
+Diagram allows you to show the annotation in view or edit mode while loading the diagram elements by using the [`Mode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Mode) property of `AnnotationEditorViewModel` class. Default value is View.
 
 {% tabs %}
 {% highlight xaml %}
@@ -542,7 +542,7 @@ N> Edit mode will be applied to a single element at a time.
 
 Annotation will be in editing state when you double click the node or annotation. Annotation will be selected when you single click the annotation if selectable constraints are enabled. 
 
-Also, the `ReadOnly` property of `AnnotationEditorViewModel` class allows you to disable the editing option of annotation.
+Also, the [`ReadOnly`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_ReadOnly) property of `AnnotationEditorViewModel` class allows you to disable the editing option of annotation.
 
 {% tabs %}
 {% highlight xaml %}
@@ -569,3 +569,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 {% endhighlight %}
 {% endtabs %}
+
+## See Also
+
+[How to programmatically Show/Hide the Annotations of node and connector?](https://support.syncfusion.com/kb/article/6281/how-to-programmatically-showhide-annotations-in-wpf-diagram-)

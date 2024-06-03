@@ -9,7 +9,7 @@ documentation: ug
 
 # SetShapeStyle Commands in WPF Diagram (SfDiagram)
 
-The [SetShapeStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SetShapeStyle) command is used to set a specific style for the selected elements in the diagram.
+The [`SetShapeStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SetShapeStyle) command is used to set a specific style for the selected elements in the diagram.
 
 {% tabs %}
 
@@ -37,6 +37,5 @@ graphinfo.Commands.SetShapeStyle.Execute(style);
 {% endtabs %}
 
 ![Gif for SelectByType command](Commands_Images/Commands_SetShapeStyle.gif)
-
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Rotate%20Command)

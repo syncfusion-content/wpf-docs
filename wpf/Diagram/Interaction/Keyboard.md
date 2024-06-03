@@ -71,5 +71,4 @@ To add custom commands, configure or modify key or mouse gesture through [Comman
 
 ## See Also
 
-* [How to map the custom commands to existing gestures (keyboard shortcuts and mouse)?](https://www.syncfusion.com/kb/9932/how-to-map-the-custom-commands-to-existing-gestures-keyboard-shortcuts-and-mouse)
-
+[How to map the custom commands to existing gestures (keyboard shortcuts and mouse)?](https://www.syncfusion.com/kb/9932/how-to-map-the-custom-commands-to-existing-gestures-keyboard-shortcuts-and-mouse)

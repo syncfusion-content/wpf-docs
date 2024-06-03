@@ -9,7 +9,7 @@ documentation: ug
 
 # FitToPage Command in WPF Diagram (SfDiagram)
 
-The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_FitToPage) commands are used to bring the entire Diagram into the view. The [IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) is used to customize the FitToPage command behavior.
+The [`FitToPage`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_FitToPage) commands are used to bring the entire Diagram into the view. The [IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) is used to customize the FitToPage command behavior.
 If the parameter is null, entire diagram is fit into the view.
 
 {% tabs %}
@@ -69,3 +69,7 @@ The [FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Fi
 ![Region](Commands_Images/Commands_img20.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Fit%20to%20page%20command)
+
+## See Also
+ 
+[How to apply margin values to FitToPage command?](https://support.syncfusion.com/kb/article/5474/how-to-apply-margin-to-fittopage-in-wpf-diagram-sfdiagram)

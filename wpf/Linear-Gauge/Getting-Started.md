@@ -370,4 +370,4 @@ LinearGauge supports various built-in themes. Refer to the below links to apply 
 
 ## See also
 
-[How to apply themes for SfLinearGauge](https://www.syncfusion.com/kb/2534/how-to-apply-themes-for-sflineargauge)
+[How to apply themes for SfLinearGauge](https://support.syncfusion.com/kb/article/2841/how-to-apply-themes-for-sflineargauge)

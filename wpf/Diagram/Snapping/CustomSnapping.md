@@ -81,9 +81,9 @@ public class DoubleExt : List<double>
 
 ## Changing the snapping angle
 
-Diagram allows the diagram object to rotate at specific angle intervals while rotating. This interval can be customized using the `SnapAngle` property of SnapSettings class. Default snap angle value is 5d.
+Diagram allows the diagram object to rotate at specific angle intervals while rotating. This interval can be customized using the [`SnapAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapAngle) property of SnapSettings class. Default snap angle value is 5d.
 
-Snapping on rotation can be enabled or disabled using the `SnapConstraints` property of SnapSettings class.
+Snapping on rotation can be enabled or disabled using the [`SnapConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapConstraints) property of SnapSettings class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -114,10 +114,8 @@ diagram.SnapSettings = new SnapSettings()
 
 ![Snap to object](Gridlines_images/SnapANgle.gif) 
 
-{% seealso %}
+## See Also
 
 [How to add gridlines for diagram](https://help.syncfusion.com/wpf/diagram/gridlines)
 
 [How to add ruler for diagram](/wpf/diagram/rulers)
-
-{% endseealso %}

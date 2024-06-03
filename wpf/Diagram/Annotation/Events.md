@@ -42,10 +42,10 @@ private void Diagram_AnnotationChanged(object sender, ChangeEventArgs<object, An
 {% endhighlight %}
 {% endtabs %}
 
-{% seealso %}
+## See Also
 
 [How to add or remove annotation constraints](/wpf/sfdiagram/constraints#annotation-constraints)
 
 [How to localize the annotations](/wpf/sfdiagram/localization)
 
-{% endseealso %}
+[How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)

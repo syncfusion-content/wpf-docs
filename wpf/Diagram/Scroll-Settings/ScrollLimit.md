@@ -9,7 +9,7 @@ documentation: ug
 
 # Scroll Limit in WPF Diagram (SfDiagram)
 
-The scroll limit allows you to define the scrollable region of the Diagram while mouse scrolling on the page. The `ScrollLimit` property of scroll settings helps to limit the scrolling area. It includes the following options:
+The scroll limit allows you to define the scrollable region of the Diagram while mouse scrolling on the page. The [`ScrollLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_ScrollLimit) property of scroll settings helps to limit the scrolling area. It includes the following options:
 
 * Infinity: Allows you to scroll in all directions without any restriction.
 * Diagram: Allows you to scroll within the Diagram content.
@@ -70,6 +70,8 @@ diagram.ScrollSettings = new ScrollSettings()
 | Diagram |![ScrollLimit Diagram](Scroll-Settings_images/ScrollLimitDiagram.gif) |
 | Limited <br> ScrollableArea = (0,0,1500,1500) | ![ScrollLimit Limited](Scroll-Settings_images/ScrollLimitLimited.gif) |
 
-
 ## See Also
-* [How to stop infinite scrolling?](https://www.syncfusion.com/kb/11477/how-to-stop-infinite-scrolling-in-wpf-diagramsfdiagram)
+
+[How to stop infinite scrolling?](https://support.syncfusion.com/kb/article/9869/how-to-stop-infinite-scrolling-in-wpf-diagram-sfdiagram)
+
+[How to restrict diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)

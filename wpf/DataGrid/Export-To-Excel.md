@@ -86,7 +86,7 @@ Here, the columns having `CustomerName` and `Country` as MappingName are exclude
 
 ### Excel version
 
-While exporting to Excel, you can specify the excel version by using [ExcelVersion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions__ctor_Syncfusion_XlsIO_ExcelVersion_System_Boolean_System_Boolean_Syncfusion_UI_Xaml_Grid_Converter_GridExcelExportingEventhandler_Syncfusion_UI_Xaml_Grid_Converter_GridCellExcelExportingEventHandler_) property.
+While exporting to Excel, you can specify the excel version by using [ExcelVersion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ExcelVersion) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -192,7 +192,7 @@ You can refer [XlsIO documentation](https://help.syncfusion.com/file-formats/xls
 
 ### Save using File dialog
 
-After exporting to excel, you can save exported workbook by opening [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog). 
+After exporting to excel, you can save exported workbook by opening [FileDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=windowsdesktop-7.0). 
 
 {% tabs %}
 {% highlight c# %}
@@ -668,7 +668,7 @@ By default, [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.
 
 ### Excluding DetailsViewDataGrid while exporting
 
-You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler) and [GridChildExportingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) .
+You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler) and [GridChildExportingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-7.0) .
 
 {% tabs %}
 {% highlight c# %}

@@ -94,7 +94,7 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
 
 ## Spacing
 
-The [Space](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_Space) property of [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html) allows you to change the spacing distance.
+The [`Space`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_Space) property of [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html) allows you to change the spacing distance.
 
 {% tabs %}
 {% highlight C# %}
@@ -120,7 +120,7 @@ var collisionState = new CollisionState() { Item = selectedNode, IncludeSubEleme
 {% endhighlight %}
 {% endtabs %}
 
-In addition to this,[IgnoreList](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_IgnoreList) property of CollisionState allows you to restrict specific elements as not an intercepts. For example, you can ignore aligning nodes if same shaped node were collided.
+In addition to this,[`IgnoreList`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_IgnoreList) property of CollisionState allows you to restrict specific elements as not an intercepts. For example, you can ignore aligning nodes if same shaped node were collided.
 
 ![list to ignore detect overlapping](Drag_images/AutomaticAlignment_img3.gif)
 

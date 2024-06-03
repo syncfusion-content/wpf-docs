@@ -746,6 +746,51 @@ In TDI document, new tab group can be created by dragging the tab item into the 
 
 ![WPF Docking First Item Inserted to Next Tab Group by using Context Menu](MDI_TDIfunctionalities_images/wpf-docking-first-item-inserted-to-next-tab-group-by-using-context-menu.jpeg)
 
+### Adding a new Tab using NewButtonClick event
+
+The `NewButtonClick` event is used to notify DockingManager when a new button (+) is clicked. By utilizing this event, a new tab can be added at runtime.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="dockingManager" NewButtonClick="dockingManager_NewButtonClick">
+    <ContentControl syncfusion:DockingManager.Header="Item2" 
+                    syncfusion:DockingManager.State="Document"/>
+    <ContentControl syncfusion:DockingManager.Header="Item1" 
+                    syncfusion:DockingManager.State="Document"/>
+    <!--Adding new button in docking manager using xaml-->
+    <syncfusion:DockingManager.DocumentTabControlStyle>
+        <Style TargetType="{x:Type syncfusion:TabControlExt}">
+            <Setter Property="IsNewButtonEnabled" Value="True"/>
+            <Setter Property="NewButtonBackground" Value="Transparent"/>
+            <Setter Property="NewButtonAlignment" Value="Last"/>
+            <Setter Property="IsNewButtonClosedonNoChild" Value="False"/>
+        </Style>
+    </syncfusion:DockingManager.DocumentTabControlStyle>
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Adding a new item using the NewButtonClick event.
+private void dockingManager_NewButtonClick(object sender, EventArgs e)
+{
+    DocumentTabControl tabControlExt = (DocumentTabControl)sender;
+    ContentControl contentControl = new ContentControl();
+    DockingManager.SetHeader(contentControl, "New Item");
+    DockingManager.SetState(contentControl, DockState.Document);
+    tabControlExt.Container.AddTabDocumentAtLast = true;
+    dockingManager.Children.Add(contentControl);
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Docking NewButtonClick event](MDI_TDIfunctionalities_images/NewButtonClick-event.gif)
+
 ## Disable TabGroups
 
 Vertical and Horizontal Tab Grouping feature can be enabled or disabled using the property [TabGroupEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabGroupEnabled) in DockingManager. 

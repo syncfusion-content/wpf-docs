@@ -724,7 +724,7 @@ The output will be as follows.
 
 We have represented the steps to interact with stencil such as drag and drop elements from stencil to diagram in the following gif.
 
-![WPF Diagram Interact with Stencil](getting-started_images\wpf-diagram-interact-stencil.gif)
+![WPF Diagram Interact with Stencil](getting-started_images\wpf-diagram-interact-with-stencil.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/StencilCreation)
 
@@ -923,3 +923,9 @@ SfDiagram supports various built-in themes. Refer to the below links to apply th
   ![WPF Diagram Theme](getting-started_images\wpf-diagram-theme.jpg)
   
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme)
+
+## See Also
+
+[How to create treeview and diagram with editing options in the WPF Diagram?](https://support.syncfusion.com/kb/article/9926/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagram-sfdiagram)
+
+[How to create a WPF SfDiagram?](https://support.syncfusion.com/kb/article/8853/how-to-create-a-wpf-diagram-sfdiagram)

@@ -244,7 +244,7 @@ public class ViewModel : NotificationObject {
 
 ![TileViewItem header assigned by using the HeaderTemplate](Data-binding_images/header.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-Object)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Binding-Object)
 
 ## TileViewItem content
 
@@ -279,7 +279,7 @@ You can define the `TileViewItem` content using `ItemTemplate` or `TileViewItem.
 
 ![TileViewItem content assigned by using the ItemTemplate](Data-binding_images/content.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-Object)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Binding-Object)
 
 ## Different UI for TileViewItem content
 
@@ -350,4 +350,4 @@ public class MyTemplateSelector : DataTemplateSelector {
 
 ![TileViewItem with various content UI](Data-binding_images/ItemTemplateSelector.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/ItemTemplate-Selector)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/ItemTemplate-Selector)

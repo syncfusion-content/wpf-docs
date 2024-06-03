@@ -9,7 +9,7 @@ documentation: ug
 
 # Straight Segments creation and customization
 
-The path of the Connector is defined with a collection of `Segments` and each segment represents a line between two points. By default, connector type will be identified using the value of `DefaultConnectorType` property of Diagram. It changes the entire connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are four types of segments,
+The path of the Connector is defined with a collection of [`Segments`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Segments) and each segment represents a line between two points. By default, connector type will be identified using the value of `DefaultConnectorType` property of Diagram. It changes the entire connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are four types of segments,
 
 * Straight
 * Orthogonal
@@ -107,7 +107,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 ## How to add or remove the straight segments at run time
 
-Straight segments can be split into multiple straight segments interactively by clicking on the segemnts. This can be achieved by using `AddRemoveStraightSegmentArgs` class and its properties.
+Straight segments can be split into multiple straight segments interactively by clicking on the segemnts. This can be achieved by using [AddRemoveStraightSegmentArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AddRemoveStraightSegmentArgs.html) class and its properties.
 
 `AddRemoveStraightSegmentArgs` class is having below properties,
 
@@ -156,3 +156,7 @@ private void Diagram_ItemTappedEvent(object sender, DiagramEventArgs args)
 N> Segment splitting will be supported only for straight segments.
 
 Find the [Straight segment sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Straight%20Segment) to depict the Straight segment.
+
+## See Also
+
+[How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)

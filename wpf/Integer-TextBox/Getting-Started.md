@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with WPF IntegerTextBox control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF IntegerTextBox control and more details about the control features.
-platform: WPF
+platform: wpf
 control: IntegerTextBox 
 documentation: ug
 ---
@@ -168,7 +168,7 @@ class ViewModel : NotificationObject
 
 ## Value Changed Notification
 
-The `IntegerTextBox` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
+The `IntegerTextBox` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ValueChanged) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
 
 {%tabs%}
 {% highlight xaml %} 
