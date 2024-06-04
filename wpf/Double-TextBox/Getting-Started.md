@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF Double TextBox control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Double TextBox control, its elements and more details.
-platform: WPF
+platform: wpf
 control: DoubleTextBox
 documentation: ug
 ---
