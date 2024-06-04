@@ -13,7 +13,7 @@ This section deals with the appearance of `DoubleTextBox` control and contains t
 
 ## Setting the Foreground
 
-The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `DoubleTextBox` control.
+The [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `DoubleTextBox` control.
 
 ### Foreground for Positive Value
 
