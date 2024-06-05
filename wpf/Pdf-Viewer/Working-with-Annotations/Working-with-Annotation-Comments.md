@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Comments in WPF Pdf Viewer control | Syncfusion
-description: Learn about annotation comments in Syncfusion WPF PDF Viewer control.
+title: Working with annotation comments using WPF PDF Viewer | Syncfusion
+description: Learn about adding, editing and deleting annotation comments in Syncfusion WPF PDF Viewer control.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Annotation Comments
+# Working with annotation comments
 
 PDF viewer provides options to add, edit, and delete the comments to the following annotation in the PDF documents:
 
