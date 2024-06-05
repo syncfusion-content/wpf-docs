@@ -105,6 +105,8 @@ The comment, comment replies, and status of the annotation can be edited using t
 * Select the Edit option in the context menu that appears.
 * Now, an editable text box appears. You can change the content of the annotation comment or comment reply.
 
+![Editing the Comments](Annotation-images\edit-comment.png)
+
 ### Editing Comment or Reply Status
 
 * Select the Annotation Comments in the comment panel.
@@ -118,3 +120,5 @@ The comment, comment replies, and status of the annotation can be edited using t
 * Select the Annotation Comments in the comment panel.
 * Click the more options button shown in the Comments or reply container.
 * Select the Delete option in the context menu that appears.
+
+![Deleteing the Comments](Annotation-images\delete-comment.png)
