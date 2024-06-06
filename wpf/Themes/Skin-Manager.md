@@ -26,13 +26,11 @@ NuGet package</th></tr>
 <td>
 Material3Light</td><td>
 Syncfusion.Themes.Material3Light.Wpf.dll</td><td>
-{{'[Syncfusion.Themes.Material3Light.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Material3Light.WPF/)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Material3Dark</td><td>
 Syncfusion.Themes.Material3Dark.Wpf.dll</td><td>
-{{'[Syncfusion.Themes.Material3Dark.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Material3Dark.WPF/)'| markdownify }}
 </td></tr>
 <tr>
 <td>
