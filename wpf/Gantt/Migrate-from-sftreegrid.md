@@ -18,11 +18,14 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 <th>Added namespaces</th></tr>
 <tr>
 <td>Syncfusion.Grid.WPF, Syncfusion.GridCommon.WPF</td>
-<td>Syncfusion.SfGrid.WPF, Syncfusion.Data.WPF, Syncfusion.Themes.MaterialLight.WPF</td>
+<td>Syncfusion.SfGrid.WPF, Syncfusion.SfSkinManager.WPF, Syncfusion.Themes.MaterialLight.WPF</td>
 </tr>
 </table>
 
-## API breaking
+## GanttGrid class API breaking
+
+### Namespace
+Added `Syncfusion.Windows.Controls.Gantt` as common namespace for all classes.
 
 ### Class
 <table>
@@ -42,7 +45,6 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 ### Properties
 <table>
 <tr>
-<th>Class name</th>
 <th>Existing API type</th>
 <th>Existing API name</th>
 <th>New API type</th>
@@ -50,7 +52,6 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 </tr>
 
 <tr>
-<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
 <td>ObservableCollection(GridTreeColumn)</td>
 <td>{{'[Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_Columns)'| markdownify }}</td>
 <td>{{'[TreeGridColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumns.html)'| markdownify }}</td>
@@ -58,7 +59,6 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 </tr>
 
 <tr>
-<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
 <td>{{'[GridTreeStartUpExpandState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeStartUpExpandState.html)'| markdownify }}</td>
 <td>{{'[ExpandStateAtStartUp](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateAtStartUp)'| markdownify }}</td>
 <td>{{'[AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.AutoExpandMode.html)'| markdownify }}</td>
@@ -66,7 +66,6 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 </tr>
 
 <tr>
-<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
 <td>bool</td>
 <td>{{'[ReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ReadOnly)'| markdownify }}</td>
 <td>bool</td>
@@ -74,7 +73,6 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 </tr>
 
 <tr>
-<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
 <td>bool</td>
 <td>{{'[AllowSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_AllowSort)'| markdownify }}</td>
 <td>bool</td>
@@ -82,7 +80,6 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 </tr>
 
 <tr>
-<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
 <td>{{'[GridSelectedTreeNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridSelectedTreeNodes.html)'| markdownify }}</td>
 <td>{{'[SelectedNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_SelectedNodes)'| markdownify }}</td>
 <td>ObservableCollection(object)</td>
@@ -99,16 +96,19 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 </tr>
 
 <tr>
-<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
 <td>{{'[CollapseAllNodes(GridTreeNode n)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_CollapseNode_Syncfusion_Windows_Controls_Grid_GridTreeNode_)'| markdownify }}</td>
 <td>{{'[CollapseAllNodes(TreeNode treeNode)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CollapseAllNodes_Syncfusion_UI_Xaml_TreeGrid_TreeNode_)'| markdownify }}</td>
+</tr>
+
+<tr>
+<td>{{'[ExpandAllNodes(GridTreeNode n)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandAllNodes_Syncfusion_Windows_Controls_Grid_GridTreeNode_)'| markdownify }}</td>
+<td>{{'[ExpandAllNodes(TreeNode treeNode)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ExpandAllNodes_Syncfusion_UI_Xaml_TreeGrid_TreeNode_)'| markdownify }}</td>
 </tr>
 </table> 
 
 ### Events
 <table>
 <tr>
-<th>Class name</th>
 <th>Existing structure</th>
 <th>Existing name</th>
 <th>New structure</th>
@@ -116,7 +116,6 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 </tr>
 
 <tr>
-<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
 <td>{{'[GridTreeNodeEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeEventHandler.html)'| markdownify }}</td>
 <td>{{'[ExpandStateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateChanged)'| markdownify }}</td>
 <td>{{'[EventHandler(NodeExpandedEventArgs)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeExpandedEventArgs.html)'| markdownify }}</td>
@@ -124,7 +123,6 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 </tr>
 
 <tr>
-<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
 <td>{{'[GridTreeNodeEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeEventHandler.html)'| markdownify }}</td>
 <td>{{'[ExpandStateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateChanged)'| markdownify }}</td>
 <td>{{'[EventHandler(NodeCollapsedEventArgs)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeCollapsedEventArgs.html)'| markdownify }}</td>
@@ -205,13 +203,100 @@ The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-a
 </tr>
 </table>
 
-### Removed XAML files
+### Removed theme
 
 * Blend
 * Metro
 * Office2010Black
 * Office2010Silver
 * VS2010
+
+### Supported themes
+<table>
+<tr>
+<th>Theme</th>
+<th>Theme name</th>
+<th>Assembly references</th>
+</tr>
+
+<tr>
+<td>Windows 11</td>
+<td>Light</td>
+<td>Syncfusion.Themes.Windows11Light.WPF</td>
+</tr>
+
+<tr>
+<td>Windows 11</td>
+<td>Dark</td>
+<td>Syncfusion.Themes.Windows11Dark.WPF</td>
+</tr>
+
+<tr>
+<td>Material 3</td>
+<td>Light</td>
+<td>Syncfusion.Themes.Material3Light.WPF</td>
+</tr>
+
+<tr>
+<td>Material 3</td>
+<td>Dark</td>
+<td>Syncfusion.Themes.Material3Dark.WPF</td>
+</tr>
+
+<tr>
+<td>Office 2019</td>
+<td>White</td>
+<td>Syncfusion.Themes.Office2019White.WPF</td>
+</tr>
+
+<tr>
+<td>Office 2019</td>
+<td>Black</td>
+<td>Syncfusion.Themes.Office2019Black.WPF</td>
+</tr>
+
+<tr>
+<td>Office 2019</td>
+<td>Dark Gray</td>
+<td>Syncfusion.Themes.Office2019DarkGray.WPF</td>
+</tr>
+
+<tr>
+<td>Office 2019</td>
+<td>Colorful</td>
+<td>Syncfusion.Themes.Office2019Colorful.WPF</td>
+</tr>
+
+<tr>
+<td>Office 2019</td>
+<td>High Contrast White</td>
+<td>Syncfusion.Themes.Office2019HighContrastWhite.WPF</td>
+</tr>
+
+<tr>
+<td>Office 2019</td>
+<td>High Contrast Black</td>
+<td>Syncfusion.Themes.Office2019HighContrast.WPF</td>
+</tr>
+
+<tr>
+<td>Fluent theme</td>
+<td>Light</td>
+<td>Syncfusion.Themes.FluentLight.WPF</td>
+</tr>
+
+<tr>
+<td>Fluent theme</td>
+<td>Dark</td>
+<td>Syncfusion.Themes.FluentDark.WPF</td>
+</tr>
+
+<tr>
+<td>System theme</td>
+<td>System theme</td>
+<td>Syncfusion.Themes.SystemTheme.WPF</td>
+</tr>
+</table>
 
 ### Removed API
 <table>
