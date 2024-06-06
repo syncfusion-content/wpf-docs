@@ -30,7 +30,7 @@ To enable the tooltip for the Scheduler control, utilize the `EnableTooltip` pro
 
 ## Customize tooltip appearance using DataTemplate
 
-You can customize the tooltip appearance by using the ToolTipTemplate property in the `SfScheduler`.
+You can customize the tooltip appearance by using the `ToolTipTemplate` property in the `SfScheduler`.
 
 The following code example shows the usage of DataTemplate.
 
