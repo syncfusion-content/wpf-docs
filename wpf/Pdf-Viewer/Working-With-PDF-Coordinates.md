@@ -36,7 +36,7 @@ PDF page coordinates are represented in terms of a device-independent coordinate
 
 ## Get and set the scroll coordinates
 
-The user can navigate to the specified vertical and horizontal scroll offset coordinates in PDF Viewer using `ScrollToOffset` method and the user can also retrieve the current horizontal and vertical offset position by using the `HorizontalOffset` and `VerticalOffset` properties respectively. The following code snippet explains how to get and set the scroll coordinates.
+The user can navigate to the specified vertical and horizontal scroll offset coordinates in PDF Viewer using [ScrollTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ScrollTo_System_Double_System_Double_) method and the user can also retrieve the current horizontal and vertical offset position by using the [HorizontalOffset](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_HorizontalOffset) and [VerticalOffset](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_VerticalOffset) properties respectively. The following code snippet explains how to get and set the scroll coordinates.
 
 {% tabs %}
 {% highlight c# %}
@@ -46,7 +46,7 @@ m_currentHorizontalOffset = pdfViewerControl.HorizontalOffset;
 //Retrieve the current vertical offset of the PdfViewerControl
 m_currentVerticalOffset = pdfViewerControl.VerticalOffset;
 //Scroll the content to the specified offset position in the PdfViewerControl
-pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalOffset+10);
+pdfViewerControl.ScrollTo(m_currentHorizontalOffset+10, m_currentVerticalOffset+10);
 
 {% endhighlight %}
 {% endtabs %}
