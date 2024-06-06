@@ -25,3 +25,5 @@ pdfViewer.TextExtractionEngine = PdfTextExtractionEngine.SfPdf;
 
 {% endhighlight %}
 {% endtabs %}
+
+For additional information about the usage of the text extraction engine, please refer to the [text extraction](https://help.syncfusion.com/wpf/pdf-viewer/extract-text-from-pdf) functionalities.
