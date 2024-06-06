@@ -54,7 +54,7 @@ SfDiagram diagram = new SfDiagram();
     TargetPoint = new Point(200, 100)
  };
  // Add the BpmnFlowViewModel into the Connectors's collection.
-(Diagram.Connectors as GroupCollection).Add(flow);
+(Diagram.Connectors as ConnectorCollection).Add(flow);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -106,7 +106,7 @@ SfDiagram diagram = new SfDiagram();
     TargetPoint = new Point(200, 100)
  };
  // Add the BpmnFlowViewModel into the Connectors's collection.
-(Diagram.Connectors as GroupCollection).Add(flow);
+(Diagram.Connectors as ConnectorCollection).Add(flow);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -157,7 +157,7 @@ SfDiagram diagram = new SfDiagram();
     TargetPoint = new Point(200, 100)
  };
  // Add the BpmnFlowViewModel into the Connectors's collection.
-(Diagram.Connectors as GroupCollection).Add(flow);
+(Diagram.Connectors as ConnectorCollection).Add(flow);
 
 {% endhighlight %}
 {%  endtabs %}
