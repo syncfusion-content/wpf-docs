@@ -101,11 +101,11 @@ Nodes can be drawn interactively by clicking and dragging the Diagram surface by
 ## Visualize a node
 
 You can use text, image, controls, panels, or any UIElement or template to visualize a node as follows:
-   1)Content template
-   2)Content 
-   3)Geometry
-   4)Custom shapes
-   5)Built-in resource
+   1) Content template
+   2) Content 
+   3) Geometry
+   4) Custom shapes
+   5) Built-in resource
 
 ### Using content template
 [`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) is a ContentControl, so you can use data template to display the content of the node using the [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) property. Refer to the following code example to define node's shape through ContentTemplate.
@@ -240,7 +240,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-### Custom shapes
+### Custom shapes 
 
 #### How to add custom shape using path data
 
@@ -393,18 +393,14 @@ Refer to the following code example to add framework elements as node content,
 {% highlight xaml %}
 
 <DataTemplate x:Key="UserProfile">
-  <Border  BorderThickness="1" Background ="#2E95D8" 
-                    BorderBrush="LightGray">
+  <Border  BorderThickness="1" Background ="#2E95D8" BorderBrush="LightGray">
     <Grid>
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="60" />
         <ColumnDefinition Width="100" />
       </Grid.ColumnDefinitions>
       <Grid Grid.Column="0">
-        <Border Grid.Column="0" VerticalAlignment="Stretch"
-                            Background="Transparent"
-                            BorderBrush="#FF5DC3B1"
-                            Padding="5">
+        <Border Grid.Column="0" VerticalAlignment="Stretch" Background="Transparent" BorderBrush="#FF5DC3B1" Padding="5">
           <Image Stretch="Uniform" HorizontalAlignment="Center" Source="Images\User.png"/>
         </Border>
       </Grid>
@@ -414,23 +410,23 @@ Refer to the following code example to add framework elements as node content,
           <RowDefinition Height="25" />
         </Grid.RowDefinitions>
         <TextBlock x:Name="Name" Grid.Row="0"
-                               HorizontalAlignment="Left"
-                               VerticalAlignment="Center"
-                               FontFamily="Segoe UI"
-                               FontSize="12"
-                               FontWeight="Bold"
-                               Foreground="White"
-                               Text="Daniel Tonini"
-                               TextAlignment="Left" />
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   FontFamily="Segoe UI"
+                   FontSize="12"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Text="Daniel Tonini"
+                   TextAlignment="Left" />
         <TextBlock x:Name="Designation" Grid.Row="1"
-                               HorizontalAlignment="Left"
-                               VerticalAlignment="Top"
-                               FontFamily="Segoe UI"
-                               FontSize="11"
-                               FontWeight="SemiBold"
-                               Foreground="White"
-                               Text="Project Lead"
-                               TextAlignment="Left" />
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   FontFamily="Segoe UI"
+                   FontSize="11"
+                   FontWeight="SemiBold"
+                   Foreground="White"
+                   Text="Project Lead"
+                   TextAlignment="Left" />
       </Grid>
     </Grid>
   </Border>
@@ -445,7 +441,7 @@ Refer to the following code example to add framework elements as node content,
       <syncfusion:NodeViewModel UnitWidth="150" UnitHeight="50" OffsetX="100" OffsetY="100" ContentTemplate="{StaticResource UserProfile}" />
     </syncfusion:NodeCollection>
   </syncfusion:SfDiagram.Nodes>
-</syncfusion:SfDiagram>  
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
@@ -727,8 +723,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * The [`ItemTappedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemTappedEvent) is invoked on clicking the node. To explore about arguments, refer to the [ItemTappedEventargs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
 * The [`ItemDoubleTappedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemDoubleTappedEvent) is invoked on double-clicking the node. To explore about arguments, refer to the [ItemDoubleTappedEventargs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
-* The [`MouseDown`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_MouseDown) and [`MouseUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_MouseUp) are invoked as similar to framework element that is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, refer to the [MouseDownEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
-[MouseUpEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).  
+* The [`MouseDown`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_MouseDown) and [`MouseUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_MouseUp) are invoked as similar to framework element that is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, refer to the [MouseDownEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and [MouseUpEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).  
 
 ## Constraints
 
