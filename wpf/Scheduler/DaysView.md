@@ -435,6 +435,25 @@ Customize the default appearance of view header by setting `ViewHeaderTemplate` 
 {% endhighlight %}
 {% endtabs %}
 
-![ViewHeader appearance customization in WPF Scheduler](DaysView_Images/wpf-scheduler-view-header-style.png)\
+![ViewHeader appearance customization in WPF Scheduler](DaysView_Images/wpf-scheduler-view-header-style.png)
+
+## Cell right padding support
+
+This feature allows you to add spacing between a cell's appointment and its border. The spacing can be applied to the right side in day and week views.
+
+{% tabs %}
+{% highlight xaml  %}
+<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+    <scheduler:SfScheduler.DaysViewSettings>
+        <scheduler:DaysViewSettings CellRightPadding="30"/>
+    </scheduler:SfScheduler.DaysViewSettings>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.CellRightPadding = 30;
+{% endhighlight %}
+{% endtabs %}
+
 
 N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
