@@ -45,6 +45,8 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+The sample project to expand the comments pane in the PDF Viewer is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Annotations/Comments).
+
 ## Show/Hide the comments pane
 
 The user can show or hide the comments pane of the ‘PdfViewerControl’ by setting the 'CommentSettings.IsVisible' property to true or false. By default, the value of 'IsVisible' is true.
