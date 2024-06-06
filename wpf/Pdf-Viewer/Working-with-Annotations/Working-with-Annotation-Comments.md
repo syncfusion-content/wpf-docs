@@ -45,7 +45,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-The sample project to expand the comments pane in the PDF Viewer is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Annotations/Comments).
+The sample project to expand the comments pane in the PDF Viewer is available in the 'GitHub'
 
 ## Show/Hide the comments pane
 
