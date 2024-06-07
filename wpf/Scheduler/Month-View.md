@@ -543,22 +543,26 @@ You can customize the default appearance of more appointments indicator in a mon
 
 ![appointment-display-count-appearance-customization-in-WPF-scheduler-month-view](Month-View_Images/appointment-display-count-appearance-customization-in-WPF-scheduler-month-view.png)
 
-## Cell right padding support
+## Cell right padding
 
-This feature allows you to add spacing between a cell's appointment and its border. The spacing can be applied to the right side in month views.
+You can customize the spacing between an appointment and the right border of its cell to enhance interaction with a scheduler that contains appointments.
 
 {% tabs %}
-{% highlight xaml %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Month">
-     <syncfusion:SfScheduler.MonthViewSettings>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+<scheduler:SfScheduler x:Name="Schedule" 
+                       ViewType="Month">
+ <syncfusion:SfScheduler.MonthViewSettings>
      <syncfusion:MonthViewSettings CellRightPadding="30" />
  </syncfusion:SfScheduler.MonthViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.CellRightPadding = 30;
 {% endhighlight %}
 {% endtabs %}
+
+N>
+* This customization will apply only when the scheduler has an appointment.
 
 N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.

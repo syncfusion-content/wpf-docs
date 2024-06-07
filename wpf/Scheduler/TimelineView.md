@@ -448,22 +448,26 @@ Schedule.TimelineViewSettings.TimelineAppointmentHeight = 100;
 
 ![WPF Scheduler Appointment Height](Timeline_images/wpf-scheduler-appointment-height.png)
 
-## Cell bottom padding support
+## Cell bottom padding
 
-This feature allows you to add spacing between a cell's appointment and its border. The spacing can be applied to the bottom side in timeline views.
+You can customize the spacing between an appointment and the bottom border of its cell to enhance interaction with a scheduler that contains appointments.
 
 {% tabs %}
-{% highlight xaml %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-     <syncfusion:SfScheduler.TimelineViewSettings>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+<scheduler:SfScheduler x:Name="Schedule" 
+                       ViewType="TimelineWeek">
+ <syncfusion:SfScheduler.TimelineViewSettings>
      <syncfusion:TimelineViewSettings CellBottomPadding="30" />
  </syncfusion:SfScheduler.TimelineViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
 this.Schedule.TimelineViewSettings.CellBottomPadding = 30;
 {% endhighlight %}
 {% endtabs %}
+
+N>
+* This customization will apply only when the scheduler has an appointment.
 
 N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
