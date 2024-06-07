@@ -549,12 +549,12 @@ You can customize the spacing between an appointment and the right border of its
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<syncfusion:SfScheduler x:Name="Schedule" 
                        ViewType="Month">
  <syncfusion:SfScheduler.MonthViewSettings>
      <syncfusion:MonthViewSettings CellRightPadding="30" />
  </syncfusion:SfScheduler.MonthViewSettings>
-</scheduler:SfScheduler>
+</syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Month;
