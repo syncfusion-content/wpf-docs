@@ -355,10 +355,12 @@ The `AutoExpandMode` property allows you to set the expanded or collapsed state 
 
 {% highlight xaml %}
 
-<sync:GanttControl x:Name="control" ItemsSource="{Binding TaskCollection}" AutoExpandMode="None"> 
+<sync:GanttControl x:Name="control"
+                   AutoExpandMode="None"
+                   ItemsSource="{Binding TaskCollection}"> 
  <sync:GanttControl.DataContext>
     <local:ViewModel/>
- </sync:GanttControl.DataContext>          
+ </sync:GanttControl.DataContext>
 </Sync:GanttControl>
 
 {% endhighlight %}
@@ -385,7 +387,7 @@ WPF Gantt control supports various built-in themes. Refer to the below links to 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF Gantt control](GettingStarted_images/wpf-gantt-theme.png)
+  ![WPF Gantt control theme](Getting-Started_images/Theme.png)
 
 ### Supported themes
 <table>
