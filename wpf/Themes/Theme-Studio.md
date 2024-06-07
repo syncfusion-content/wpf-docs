@@ -60,8 +60,6 @@ The WPF Theme Studio comes with various set of palettes for each theme variant.
 <th>Supported themes</th>
 </tr>
 <tr>
-<tr>
-<tr>
 <td>Windows 11</td>
 <td>
 <ul>
