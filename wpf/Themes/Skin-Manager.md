@@ -24,16 +24,6 @@ Assembly</th><th>
 NuGet package</th></tr>
 <tr>
 <td>
-Material3Light</td><td>
-Syncfusion.Themes.Material3Light.Wpf.dll</td><td>
-</td></tr>
-<tr>
-<td>
-Material3Dark</td><td>
-Syncfusion.Themes.Material3Dark.Wpf.dll</td><td>
-</td></tr>
-<tr>
-<td>
 Windows11Light</td><td>
 Syncfusion.Themes.Windows11Light.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Windows11Light.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Windows11Light.WPF/)'| markdownify }}
@@ -55,6 +45,16 @@ Syncfusion.Themes.FluentLight.Wpf.dll</td><td>
 FluentDark</td><td>
 Syncfusion.Themes.FluentDark.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.FluentDark.WPF](https://www.nuget.org/packages/Syncfusion.Themes.FluentDark.WPF/)'| markdownify }}
+</td></tr>
+<tr>
+<td>
+Material3Light</td><td>
+Syncfusion.Themes.Material3Light.Wpf.dll</td><td>
+</td></tr>
+<tr>
+<td>
+Material3Dark</td><td>
+Syncfusion.Themes.Material3Dark.Wpf.dll</td><td>
 </td></tr>
 <tr>
 <td>
@@ -230,16 +230,6 @@ Supported in ThemeStudio</th><th>
 Alternative theme suggestion to use</th></tr>
 <tr>
 <td>
-Material3Light</td><td>
-Yes</td><td>
--</td></tr>
-<tr>
-<td>
-Material3Dark</td><td>
-Yes</td><td>
--</td></tr>
-<tr>
-<td>
 Windows11Light</td><td>
 Yes</td><td>
 -</td></tr>
@@ -256,6 +246,16 @@ Yes</td><td>
 <tr>
 <td>
 FluentDark</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Material3Light</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Material3Dark</td><td>
 Yes</td><td>
 -</td></tr>
 <tr>
@@ -512,24 +512,6 @@ Respective theme settings class to customize</th>
 </tr>
 <tr>
 <td>
-Material3Light</td><td>
-{{'[Material3LightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Light.WPF.Material3LightThemeSettings.html)'| markdownify }}
-</td>
-<td>
-{{'[Material3Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Light.WPF.Material3Palette.html)'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Material3Dark</td><td>
-{{'[Material3DarkThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Dark.WPF.Material3DarkThemeSettings.html)'| markdownify }}
-</td>
-<td>
-{{'[Material3Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Dark.WPF.Material3Palette.html)'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
 Windows11Light</td><td>
 {{'[Windows11LightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Windows11Light.WPF.Windows11LightThemeSettings.html)'| markdownify }}
 </td>
@@ -562,6 +544,24 @@ FluentDark</td><td>
 </td>
 <td>
 {{'[FluentPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.FluentDark.WPF.FluentPalette.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Material3Light</td><td>
+{{'[Material3LightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Light.WPF.Material3LightThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Material3Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Light.WPF.Material3Palette.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Material3Dark</td><td>
+{{'[Material3DarkThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Dark.WPF.Material3DarkThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Material3Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Dark.WPF.Material3Palette.html)'| markdownify }}
 </td>
 </tr>
 <tr>

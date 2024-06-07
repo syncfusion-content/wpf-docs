@@ -15,10 +15,6 @@ The Theme Studio helps users to transform their visual presentation into a new t
 
 The WPF Theme Studio comes with the following set of themes:
 
-* Material 3 Light
-
-* Material 3 Dark
-
 * Windows 11 Light
 
 * Windows 11 Dark
@@ -26,6 +22,10 @@ The WPF Theme Studio comes with the following set of themes:
 * Fluent Light
 
 * Fluent Dark
+
+* Material 3 Light
+
+* Material 3 Dark
 
 * Material Light
 
@@ -58,25 +58,6 @@ The WPF Theme Studio comes with various set of palettes for each theme variant.
 <th>Theme variant</th>
 <th>Palette list</th>
 <th>Supported themes</th>
-</tr>
-<tr>
-<td>Material 3</td>
-<td>
-<ul>
-<li>Default</li>
-<li>EnglishRed</li>
-<li>JungleGreen</li>
-<li>DarkYellow</li>
-<li>SlateBlue</li>
-<li>OldLavender</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Material3Light</li>
-<li>Material3Dark</li>
-</ul>
-</td>
 </tr>
 <tr>
 <tr>
@@ -122,6 +103,25 @@ The WPF Theme Studio comes with various set of palettes for each theme variant.
 <ul>
 <li>FluentLight</li>
 <li>FluentDark</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Material 3</td>
+<td>
+<ul>
+<li>Default</li>
+<li>EnglishRed</li>
+<li>JungleGreen</li>
+<li>DarkYellow</li>
+<li>SlateBlue</li>
+<li>OldLavender</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Material3Light</li>
+<li>Material3Dark</li>
 </ul>
 </td>
 </tr>
