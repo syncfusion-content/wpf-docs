@@ -740,7 +740,7 @@ WPF Diagram (SfDiagram) provides support to auto-arrange the nodes in the diagra
 
 #### Business object (employee information)
 
-Define employee information as collection of data. The following code example shows the employee information whose, EmpId is used as an unique identifier and ParentId is used to identify the person to whom an employee report to, in the organization.
+Define employee information as collection of data. The following code example shows the employee information whose, `EmpId` is used as an unique identifier and `ParentId` is used to identify the person to whom an employee report to, in the organization.
 
 {% tabs %}
 {% highlight xaml %}
@@ -787,7 +787,7 @@ public class Employees:ObservableCollection<Employee>
 
 #### Map DataSource with Diagram
 
-You can configure the above “Employee Information” with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example shows how dataSourceSettings is used to map ID , ParentId and DataSource with property name identifiers for employee information.
+You can configure the above “Employee Information” with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example shows how dataSourceSettings is used to map `ID` , `ParentId` and `DataSource` with property name identifiers for employee information.
 
 {% tabs %}
 {% highlight xaml %}
@@ -926,7 +926,7 @@ SfDiagram supports various built-in themes. Refer to the below links to apply th
 
   ![WPF Diagram Theme](getting-started_images\wpf-diagram-theme.jpg)
   
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme)
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme)
 
 ## See Also
 
