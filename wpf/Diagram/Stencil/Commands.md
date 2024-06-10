@@ -443,4 +443,3 @@ Here's an example of how to add a custom command to the CommandManager:
 
 {% endtabs %}
 
-![Gif for Stencil Custom Command](Stencil_Images/Stencil_CustomCommand.gif)
