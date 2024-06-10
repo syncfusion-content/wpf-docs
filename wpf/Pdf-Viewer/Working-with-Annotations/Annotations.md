@@ -12,10 +12,10 @@ documentation: ug
 The WPF PDF Viewer allows you to review PDF Files with the rich set of annotating tools. You can add, edit or remove the following annotations in PDF files.
 
 * Ink.
-* Text markups (Highlight, Underline and Strikethrough).
+* Text markups (Highlight, Underline, Squiggly and Strikethrough).
 * Shapes (Line, Circle, Rectangle, Arrow, Polygon and Polyline).
 * Stamp.
-* Text box.
+* Text box (Text and Text Callout).
 * Sticky note.
 
 ## Keyboard shortcuts
