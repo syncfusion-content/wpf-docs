@@ -194,7 +194,7 @@ The `MoveToLastInColumn` command moves selection focus to the last symbol in the
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil MoveToLastInColumn Command](Stencil_Images/Stencil_Move_Commands.gif)
+![Gif for Stencil Move Commands](Stencil_Images/Stencil_Move_Commands.gif)
 
 ### Cut the selected symbols to the clipboard using Ctrl+X
 
@@ -221,8 +221,6 @@ The `Cut` command removes the selected symbol from the stencil and stores it on 
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil Cut Command](Stencil_Images/Stencil_Cut.gif)
-
 ### Copy the selected symbols to the clipboard using Ctrl+C
 
 The `Copy` command copies the selected symbol from the stencil and stores it on the clipboard.
@@ -247,8 +245,6 @@ The `Copy` command copies the selected symbol from the stencil and stores it on 
 
 {% endhighlight %}
 {% endtabs %}
-
-![Gif for Stencil Copy Command](Stencil_Images/Stencil_Copy.gif)
 
 ### Paste the contents of the clipboard to a new stencil using Ctrl+V
 
@@ -275,7 +271,6 @@ The `Paste` command inserts the symbol into the symbol group that was previously
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil Paste Command](Stencil_Images/Stencil_Paste.gif)
 
 ### Delete the selected symbols using Delete Key
 
@@ -302,7 +297,7 @@ The `Delete` command removes the selected symbol from the symbol group.
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil Delete Command](Stencil_Images/Stencil_Delete.gif)
+![Gif for Stencil Clipboard Commands](Stencil_Images/Stencil_Clipboard_Commands.gif)
 
 ### Select all the symbols in a stencil using Ctrl+A
 
@@ -328,8 +323,6 @@ The `SelectAll` command selects all symbols in the symbol group.
 
 {% endhighlight %}
 {% endtabs %}
-
-![Gif for Stencil SelectAll Command](Stencil_Images/Stencil_SelectAll.gif)
 
 
 ### Cancel the selection of symbols in a stencil using Esc
@@ -357,7 +350,7 @@ The `UnSelect` command deselects any currently selected symbol in the stencil.
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil Unselect Command](Stencil_Images/Stencil_Unselect.gif)
+![Gif for Stencil Selection Commands](Stencil_Images/Stencil_Selection_Commands.gif)
 
 ### Command Manager for Stencil
 The CommandManager for the Stencil component in WPF allows you to map user gestures (keyboard) to stencil commands, add new gesture commands, and remove existing commands. This functionality enhances the flexibility and usability of the stencil.
