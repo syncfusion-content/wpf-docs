@@ -194,7 +194,7 @@ The `MoveToLastInColumn` command moves selection focus to the last symbol in the
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil Move Commands](Stencil_Images/Stencil_Move_Commands.gif)
+![Gif for Stencil Move Commands](Stencil_Images/StencilMoveCommands.gif)
 
 ### Cut the selected symbols to the clipboard using Ctrl+X
 
@@ -297,7 +297,7 @@ The `Delete` command removes the selected symbol from the symbol group.
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil Clipboard Commands](Stencil_Images/Stencil_Clipboard_Commands.gif)
+![Gif for Stencil Clipboard Commands](Stencil_Images/StencilClipboardCommands.gif)
 
 ### Select all the symbols in a stencil using Ctrl+A
 
@@ -350,7 +350,7 @@ The `UnSelect` command deselects any currently selected symbol in the stencil.
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil Selection Commands](Stencil_Images/Stencil_Selection_Commands.gif)
+![Gif for Stencil Selection Commands](Stencil_Images/StencilSelectionCommands.gif)
 
 ### Command Manager for Stencil
 The CommandManager for the Stencil component in WPF allows you to map user gestures (keyboard) to stencil commands, add new gesture commands, and remove existing commands. This functionality enhances the flexibility and usability of the stencil.
