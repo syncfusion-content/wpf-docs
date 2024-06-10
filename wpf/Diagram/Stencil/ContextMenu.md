@@ -185,3 +185,66 @@ BasicStencil.SymbolSource = new SymbolCollection()
 ![Symbol Custom ContextMenu](Stencil_images/SymbolsContextMenuItems.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilContextMenu)
+
+## Menu for SymbolGroup Headers
+
+## Using Menu
+
+You can define a specific menu item for a particular SymbolGroupHeader by using the Menu property of the stencil.
+
+{% highlight xaml %}
+
+<syncfusion:SymbolGroupViewModel  Name="Arrow Shapes">
+    <syncfusion:SymbolGroupViewModel.Menu>
+        <syncfusion:DiagramMenu>
+            <syncfusion:DiagramMenu.MenuItems>
+                <local:DiagramMenuItems>
+                    <!--Define the MenuItem for the Symbolgroup Headers-->
+                    <syncfusion:DiagramMenuItem Content="Delete" Icon="pack://application:,,,/Images/Delete.png" Command="Syncfusion:DiagramCommands.Delete"  />
+                </local:DiagramMenuItems>
+            </syncfusion:DiagramMenu.MenuItems>
+        </syncfusion:DiagramMenu>
+    </syncfusion:SymbolGroupViewModel.Menu>
+</syncfusion:SymbolGroupViewModel>
+
+{% endhighlight %}
+
+![SymbolGroup Header ContextMenu](Stencil_images/SymbolGroupHeadersContextMenuUsingMenu.gif)
+
+## Using SymbolGroupMenu
+
+You can define specific menu items for all SymbolGroupHeaders by using the SymbolGroupMenu property of the stencil.
+
+{% tabs %} 
+{% highlight xaml %}
+
+<syncfusion:Stencil.SymbolGroupMenu>
+     <syncfusion:DiagramMenu>
+         <syncfusion:DiagramMenu.MenuItems>
+             <local:DiagramMenuItems>
+ <!--Define the MenuItem for the Symbolgroup Headers-->
+                 <syncfusion:DiagramMenuItem Content="Delete" Command="Syncfusion:DiagramCommands.Delete" Icon=" pack://application:,,,/Images/Delete.png "  ></syncfusion:DiagramMenuItem>
+             </local:DiagramMenuItems>
+         </syncfusion:DiagramMenu.MenuItems>
+     </syncfusion:DiagramMenu>
+ </syncfusion:Stencil.SymbolGroupMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DiagramMenuItem menu = new DiagramMenuItem() 
+{
+	Content = "Edit Annotation", 
+	Command = (diagram.Info as IGraphInfo).Commands.Delete,
+	Icon = @"pack://application:,,,/Edit Annotation.ico"
+};
+(stencil.Menu.MenuItems as ICollection<DiagramMenuItem>).Add(menu);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SymbolGroup Header ContextMenu](Stencil_images/SymbolGroupHeadersContextMenuUsingSymbolGroupMenu.gif)
+
+
