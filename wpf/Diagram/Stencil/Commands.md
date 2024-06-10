@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Commands Support for Stencil in WPF Diagram control | Syncfusion
-description: Learn here all about Stencil Commands support in Syncfusion WPF Diagram (SfDiagram) control ports.
+description: Learn here all about keyboard commands support for Stencil in Syncfusion WPF Diagram (SfDiagram) control ports.
 platform: wpf
 control: SfDiagram
 documentation: ug
