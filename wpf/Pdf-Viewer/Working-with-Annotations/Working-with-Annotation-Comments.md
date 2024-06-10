@@ -45,19 +45,19 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-The sample project to expand the comments pane in the PDF Viewer is available in the 'GitHub'
+The sample project to expand the comments pane in the PDF Viewer is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Annotations/Comments).
 
-## Show/Hide the comments pane
+## Show/Hide the comments button in the annotation toolbar
 
-The user can show or hide the comments pane of the ‘PdfViewerControl’ by setting the 'CommentSettings.IsVisible' property to true or false. By default, the value of 'IsVisible' is true.
-Refer to the following code example to hide the comments pane.
+The user can show or hide the comments button in the annotation toolbar of the ‘PdfViewerControl’ by setting the 'CommentSettings.IsVisible' property to true or false. By default, the value of 'IsVisible' is true.
+Refer to the following code example to hide the comments button in the annotation toolbar.
 
 {% tabs %}
 {% highlight c# %}
 
 Private void button_Click(object sender,RoutedEventArgs e)
 {
-    //hide the comments pane
+    //hide the comments button in the annotation toolbar
     pdfViewer.CommentSettings.IsVisible = false;
 }
 
@@ -65,7 +65,7 @@ Private void button_Click(object sender,RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button_Click(sender As Object, e As RoutedEventArgs) 
-    'hide the comments pane.
+    'hide the comments button in the annotation toolbar.
     pdfViewer.CommentSettings.IsVisible = false
 End Sub
 
