@@ -11,8 +11,6 @@ documentation: ug
 
 The Stencil in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands. These commands allow users to perform actions such as navigating through symbols, selecting multiple symbols, and performing clipboard operations—all without leaving the keyboard.
 
-![Stencil Keyboard Commands](Stencil_Images/Stencil_Commands.gif)
-
 ### Key Features
 
 1. **Navigation with Arrow Keys**
@@ -94,7 +92,6 @@ Move between symbols by using Arrow keys (MoveUp, MoveDown, MoveLeft, MoveRight)
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil Arrow Commands](Stencil_Images/Stenicl_Arrowkeys.gif)
 
 ### Move to the first symbol in a row of a stencil's symbol group using Home key
 
@@ -121,8 +118,6 @@ The `MoveToFirstInRow` command moves selection focus to the first symbol in the 
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil MoveToFirstInRow Command](Stencil_Images/Stencil_MoveToFirstInRow.gif)
-
 ### Move to the last symbol in a row of a stencil using End key
 
 The `MoveToLastInRow` command moves selection focus to the last symbol in the current row of the stencil or the last symbol of the last row if none is selected. Here's the code to execute this stencil command from the code-behind.
@@ -147,8 +142,6 @@ The `MoveToLastInRow` command moves selection focus to the last symbol in the cu
 
 {% endhighlight %}
 {% endtabs %}
-
-![Gif for Stencil MoveToLastInRow Command](Stencil_Images/Stencil_MoveToLastInRow.gif)
 
 ### Move to the first symbol in a column of a stencil using Page Up key
 
@@ -175,7 +168,6 @@ The `MoveToFirstInColumn` command moves selection focus to the first symbol in t
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil MoveToLastInRow Command](Stencil_Images/Stencil_MoveToFirstInColumn.gif)
 
 ### Move to the last symbol in a column of a stencil using Page Down key
 
@@ -202,7 +194,7 @@ The `MoveToLastInColumn` command moves selection focus to the last symbol in the
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil MoveToLastInColumn Command](Stencil_Images/Stencil_MoveToLastInColumn.gif)
+![Gif for Stencil MoveToLastInColumn Command](Stencil_Images/Stencil_Move_Commands.gif)
 
 ### Cut the selected symbols to the clipboard using Ctrl+X
 
