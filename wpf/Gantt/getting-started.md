@@ -348,14 +348,18 @@ To show the date with time in the GanttGrid, enable the ShowDateWithTime propert
 N> By default, GanttGrid will show the date alone.
 
 ## Auto expand mode
-The `AutoExpandMode` property allows you to set the expanded or collapsed state for parent tasks.
+By default, the GanttGrid items will be in expanded state. You can define how the nodes to be expanded while loading the GanttControl by using AutoExpandMode property.
+
+* `None` : All items are collapsed when loaded.
+* `RootNodesExpanded` : Expands only the root item when loaded.
+* `AllNodesExpanded` : Expands all the items when loaded.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:GanttControl x:Name="ganttControl"
+<syncfusion:GanttControl x:Name="ganttControl"
                    AutoExpandMode="None"> 
-</Sync:GanttControl>
+</syncfusion:GanttControl>
 
 {% endhighlight %}
 
@@ -363,12 +367,6 @@ The `AutoExpandMode` property allows you to set the expanded or collapsed state 
 this.ganttControl.AutoExpandMode = GanttAutoExpandMode.None;
 {% endhighlight  %}
 {% endtabs %}
-
-N> By default, the `GanttGrid` items will be in expanded state. You can define how the nodes to be expanded while loading the `GanttControl` by using `AutoExpandMode` property.
-
-`None` : All items are collapsed when loaded.
-`RootNodesExpanded` : Expands only the root item when loaded.
-`AllNodesExpanded` : Expands all the items when loaded
 
 ## Theme
 The WPF Gantt control supports various built-in themes. Refer to the below links to apply themes for the Gantt control,
