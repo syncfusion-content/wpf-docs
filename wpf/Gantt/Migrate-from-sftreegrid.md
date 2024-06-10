@@ -1,32 +1,38 @@
 ---
 layout: post
-title: Migrate GridTreeControl to TreeGrid in WPF Gantt Control | Syncfusion
-description: Learn about GridTreeControl to SfTreeGrid migration in Syncfusion Essential Studio WPF Gantt control.
+title: Migrate GridTreeControl to SfTreeGrid in WPF GanttControl | Syncfusion
+description: Learn about GridTreeControl to SfTreeGrid migration in Syncfusion Essential Studio WPF GanttControl.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Migrating from GridTreeControl to SfTreeGrid
-The transition from GridTreeControl to SfTreeGrid is aimed at integrating drag-and-drop, filtering, and sorting capabilities into the Gantt grid. This transition result in the breaking of certain APIs and the introduction of new ones. Please find the difference in the following topics.
+# Migrate from GridTreeControl to SfTreeGrid
+To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html) to [`SfTreeGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html), aimed at integrating drag-and-drop, filtering, and sorting capabilities into the GanttGrid, this transition results in the breaking of certain APIs and the introduction of new ones. Please find the differences in the following topics.
 
-## Namespaces
-
+## Assembly references
 <table>
 <tr>
-<th>Removed namespaces</th>
-<th>Added namespaces</th></tr>
+<th>Removed assemblies</th>
+<th>Added assemblies</th></tr>
 <tr>
 <td>Syncfusion.Grid.WPF, Syncfusion.GridCommon.WPF</td>
 <td>Syncfusion.SfGrid.WPF, Syncfusion.SfSkinManager.WPF, Syncfusion.Themes.MaterialLight.WPF</td>
 </tr>
 </table>
 
+## Namespace
+<table>
+<tr>
+<th>Removed namespaces</th>
+<th>Added namespace</th></tr>
+<tr>
+<td>Syncfusion.Windows.Controls.Gantt.Grid, Syncfusion.Windows.Controls.Gantt.Schedule, Syncfusion.Windows.Controls.Gantt.Chart</td>
+<td>Syncfusion.Windows.Controls.Gantt</td>
+</tr>
+</table>
+
 ## GanttGrid class API breaking
-
-### Namespace
-Added `Syncfusion.Windows.Controls.Gantt` as common namespace for all classes.
-
 ### Class
 <table>
 <tr>
@@ -70,13 +76,6 @@ Added `Syncfusion.Windows.Controls.Gantt` as common namespace for all classes.
 <td>{{'[ReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ReadOnly)'| markdownify }}</td>
 <td>bool</td>
 <td>{{'[IsReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_IsReadOnly)'| markdownify }}</td>
-</tr>
-
-<tr>
-<td>bool</td>
-<td>{{'[AllowSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_AllowSort)'| markdownify }}</td>
-<td>bool</td>
-<td>{{'[AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering)'| markdownify }}</td>
 </tr>
 
 <tr>
@@ -130,6 +129,20 @@ Added `Syncfusion.Windows.Controls.Gantt` as common namespace for all classes.
 </tr>
 
 <tr>
+<td>{{'[GridTreeNodeEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeEventHandler.html)'| markdownify }}</td>
+<td>{{'[ExpandStateChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateChanging)'| markdownify }}</td>
+<td>{{'[EventHandler(NodeExpandedEventArgs)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeExpandedEventArgs.html)'| markdownify }}</td>
+<td>{{'[NodeExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeExpanding)'| markdownify }}</td>
+</tr>
+
+<tr>
+<td>{{'[GridTreeNodeEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeEventHandler.html)'| markdownify }}</td>
+<td>{{'[ExpandStateChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateChanging)'| markdownify }}</td>
+<td>{{'[EventHandler(NodeCollapsedEventArgs)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeCollapsedEventArgs.html)'| markdownify }}</td>
+<td>{{'[NodeCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsing)'| markdownify }}</td>
+</tr>
+
+<tr>
 <td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
 <td>{{'[GridRoutedEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.GridRoutedEventHandler.html)'| markdownify }}</td>
 <td>{{'[ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ItemsSourceChanged)'| markdownify }} </td>
@@ -171,7 +184,16 @@ Added `Syncfusion.Windows.Controls.Gantt` as common namespace for all classes.
 
 <tr>
 <td>{{'[SfTreeGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html)'| markdownify }}</td>
-<td>{{'[TreeGridTextColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html#%22%22)'| markdownify }}, {{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#%22%22)'| markdownify }}, {{'[TreeGridCurrencyColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#%22%22)'| markdownify }}, {{'[TreeGridDateTimeColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html#%22%22)'| markdownify }}, {{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html#%22%22)'| markdownify }}, {{'[TreeGridMaskColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridMaskColumn.html#%22%22)'| markdownify }}, {{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#%22%22)'| markdownify }}, {{'[TreeGridPercentColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#%22%22)'| markdownify }}, {{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html#%22%22)'| markdownify }}, {{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html#%22%22)'| markdownify }}</td>
+<td>{{'[TreeGridTextColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html#%22%22)'| markdownify }} <br/>
+{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#%22%22)'| markdownify }} <br/>
+{{'[TreeGridCurrencyColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#%22%22)'| markdownify }} <br/>
+{{'[TreeGridDateTimeColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html#%22%22)'| markdownify }} <br/>
+{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html#%22%22)'| markdownify }} <br/>
+{{'[TreeGridMaskColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridMaskColumn.html#%22%22)'| markdownify }} <br/>
+{{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#%22%22)'| markdownify }} <br/>
+{{'[TreeGridPercentColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#%22%22)'| markdownify }} <br/>
+{{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html#%22%22)'| markdownify }} <br/>
+{{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html#%22%22)'| markdownify }}</td>
 </tr>
 </table>
 
@@ -201,6 +223,16 @@ Added `Syncfusion.Windows.Controls.Gantt` as common namespace for all classes.
 <td>{{'[ResourceCellModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.ResourceCellModel.html)'| markdownify }}</td>
 <td>{{'[GridCellModel(ResourceCellRenderer)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCellModel-1.html)'| markdownify }}</td>
 </tr>
+
+<tr>
+<td>{{'[VisualStyle ](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.VisualStyle.html)'| markdownify }}</td>
+<td>Enum</td>
+</tr>
+
+<tr>
+<td>{{'[GridSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GridSelectionMode.html)'| markdownify }}</td>
+<td>Enum</td>
+</tr>
 </table>
 
 ### Removed theme
@@ -226,7 +258,7 @@ Added `Syncfusion.Windows.Controls.Gantt` as common namespace for all classes.
 </tr>
 </table>
 
-### Access type changed classes
+## Access type changed classes
 <table>
 <tr>
 <th>Class name</th>
@@ -250,7 +282,7 @@ Added `Syncfusion.Windows.Controls.Gantt` as common namespace for all classes.
 </tr>
 </table>
 
-## Newly added API's in GanttControl
+## Newly added APIs
 
 ### Properties
 <table>
@@ -307,13 +339,13 @@ Added `Syncfusion.Windows.Controls.Gantt` as common namespace for all classes.
 <tr>
 <td>TreeGridNodeDragging</td>
 <td>TreeGridNodeDraggingEventArgs</td>
-<td>Provides data for the TreeGridNodeDragging event, which occurs when an item is being dragged over the Gantt control.</td>
+<td>Provides data for the TreeGridNodeDragging event, which occurs when an item is being dragged over the GanttControl.</td>
 </tr>
 
 <tr>
 <td>TreeGridNodeDrop</td>
 <td>TreeGridNodeDropEventArgs</td>
-<td>Provides data for the TreeGridNodeDrop event, which occurs when an item to be dropped within Gantt control.</td>
+<td>Provides data for the TreeGridNodeDrop event, which occurs when an item to be dropped within GanttControl.</td>
 </tr>
 
 <tr>

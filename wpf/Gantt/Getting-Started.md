@@ -347,134 +347,37 @@ To show the date with time in the GanttGrid, enable the ShowDateWithTime propert
 
 N> By default, GanttGrid will show the date alone.
 
-## Auto expand mode in Gantt
-
+## Auto expand mode
 The `AutoExpandMode` property allows you to set the expanded or collapsed state for parent tasks.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<sync:GanttControl x:Name="control"
-                   AutoExpandMode="None"
-                   ItemsSource="{Binding TaskCollection}"> 
- <sync:GanttControl.DataContext>
-    <local:ViewModel/>
- </sync:GanttControl.DataContext>
+<sync:GanttControl x:Name="ganttControl"
+                   AutoExpandMode="None"> 
 </Sync:GanttControl>
 
 {% endhighlight %}
 
 {% highlight c# %}
-
-    //Initializing Gantt
-    GanttControl control = new GanttControl();
-    control.DataContext = new ViewModel();
-    control.SetBinding(GanttControl.ItemsSourceProperty,"TaskCollection");
-    control.AutoExpandMode = GanttAutoExpandMode.None;
-
+this.ganttControl.AutoExpandMode = GanttAutoExpandMode.None;
 {% endhighlight  %}
-
 {% endtabs %}
 
-N> By default, the `AutoExpandMode` is set to `GanttAutoExpandMode.AllNodesExpanded`
+N> By default, the `GanttGrid` items will be in expanded state. You can define how the nodes to be expanded while loading the `GanttControl` by using `AutoExpandMode` property.
+
+`None` : All items are collapsed when loaded.
+`RootNodesExpanded` : Expands only the root item when loaded.
+`AllNodesExpanded` : Expands all the items when loaded
 
 ## Theme
-
-WPF Gantt control supports various built-in themes. Refer to the below links to apply themes for the Gantt control,
+The WPF Gantt control supports various built-in themes. Refer to the below links to apply themes for the Gantt control,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![WPF Gantt control theme](Getting-Started_images/Theme.png)
-
-### Supported themes
-<table>
-<tr>
-<th>Theme variant</th>
-<th>Theme name</th>
-<th>Assembly references</th>
-</tr>
-
-<tr>
-<td>Windows 11</td>
-<td>Light</td>
-<td>Syncfusion.Themes.Windows11Light.WPF</td>
-</tr>
-
-<tr>
-<td>Windows 11</td>
-<td>Dark</td>
-<td>Syncfusion.Themes.Windows11Dark.WPF</td>
-</tr>
-
-<tr>
-<td>Material 3</td>
-<td>Light</td>
-<td>Syncfusion.Themes.Material3Light.WPF</td>
-</tr>
-
-<tr>
-<td>Material 3</td>
-<td>Dark</td>
-<td>Syncfusion.Themes.Material3Dark.WPF</td>
-</tr>
-
-<tr>
-<td>Office 2019</td>
-<td>White</td>
-<td>Syncfusion.Themes.Office2019White.WPF</td>
-</tr>
-
-<tr>
-<td>Office 2019</td>
-<td>Black</td>
-<td>Syncfusion.Themes.Office2019Black.WPF</td>
-</tr>
-
-<tr>
-<td>Office 2019</td>
-<td>Dark Gray</td>
-<td>Syncfusion.Themes.Office2019DarkGray.WPF</td>
-</tr>
-
-<tr>
-<td>Office 2019</td>
-<td>Colorful</td>
-<td>Syncfusion.Themes.Office2019Colorful.WPF</td>
-</tr>
-
-<tr>
-<td>Office 2019</td>
-<td>High Contrast White</td>
-<td>Syncfusion.Themes.Office2019HighContrastWhite.WPF</td>
-</tr>
-
-<tr>
-<td>Office 2019</td>
-<td>High Contrast Black</td>
-<td>Syncfusion.Themes.Office2019HighContrast.WPF</td>
-</tr>
-
-<tr>
-<td>Fluent theme</td>
-<td>Light</td>
-<td>Syncfusion.Themes.FluentLight.WPF</td>
-</tr>
-
-<tr>
-<td>Fluent theme</td>
-<td>Dark</td>
-<td>Syncfusion.Themes.FluentDark.WPF</td>
-</tr>
-
-<tr>
-<td>System theme</td>
-<td>System theme</td>
-<td>Syncfusion.Themes.SystemTheme.WPF</td>
-</tr>
-</table>
+  ![theming-in-wpf-gantt-control](Getting-Started_images/theming-in-wpf-gantt-control.png)
 
 ## see also
 
