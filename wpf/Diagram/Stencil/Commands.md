@@ -1,45 +1,35 @@
 ---
 layout: post
-title: Commands Support for Stencil in WPF Diagram control | Syncfusion
+title: Command Manager Support for Stencil in WPF Diagram control | Syncfusion
 description: Learn here all about keyboard commands support for Stencil in Syncfusion WPF Diagram (SfDiagram) control ports.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Keyboard Commands Support for Stencil in WPF Diagram (SfDiagram)
+# Command Manager for Stencil in WPF Diagram (SfDiagram)
 
-The Stencil in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands. These commands allow users to perform actions such as navigating through symbols, selecting multiple symbols, and performing clipboard operations—all without leaving the keyboard.
+The Stencil in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands, allowing users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently without needing to use a mouse. The CommandManager for the Stencil control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the Stencil.
 
-### Key Features
+## Built-in Commands and Implementations
+The Stencil's CommandManager provides a range of built-in commands that can be executed using specific key gestures. Here is a list of common commands and their corresponding key gestures:
 
-1. **Navigation with Arrow Keys**
-   - Users can now navigate through symbols in the stencil using the arrow keys. This allows for quick and efficient selection of adjacent symbols without using a mouse.
-
-2. **Home and End Keys for Row Navigation**
-   - Pressing the Home key moves the selection focus to the first symbol in the current row of the stencil.
-   - Pressing the End key moves the selection focus to the last symbol in the current row.
-
-3. **Page Up and Page Down for Column Navigation**
-   - Pressing the Page Up key shifts the focus to the first symbol in the current column.
-   - Pressing the Page Down key moves the focus to the last symbol in the current column.
-
-4. **Clipboard Operations**
-   - **Cut (Ctrl+X):** Cuts the selected symbols to the clipboard.
-   - **Copy (Ctrl+C):** Copies the selected symbols to the clipboard.
-   - **Paste (Ctrl+V):** Pastes the contents from the clipboard into the stencil.
-   - **Delete:** Deletes the selected symbols from the symbol group.
-
-5. **Select All and Cancel Selection**
-   - **Select All (Ctrl+A):** Selects all symbols in the selected symbol group. Note that this command does not work if the symbol selection mode is set to single.
-   - **Cancel Selection (Esc):** Unselects the currently selected symbols.
-
-6. **Custom Command Execution**
-   - Custom commands enable users to create and execute specialized actions within stencil interactions, enhancing flexibility beyond standard commands.
-
-### Implementation Details
-
-To enable these keyboard shortcuts in your application, ensure that the SfDiagram library is updated to the latest version. Below are code snippets demonstrating how to execute these commands in XAML and C#:
+| Command | Key | Key Modifiers |
+|---|---|---|
+| Cut | X| Control |
+| Copy | C | Control |
+| Paste | V | Control |
+| SelectAll | A	| Control |
+| UnSelect | Escape |  |
+| Delete | Delete |	|
+| MoveLeft | Left | |	
+| MoveRight | Right | |
+| MoveUp | Up |	|
+| MoveDown | Down |	|
+| MoveToFirstInRow | Home |	|
+| MoveToLastInRow | End | |
+| MoveToFirstInColumn | Page Up | |
+| MoveToLastInColumn | Page Down | |
 
 ### Move between symbols in a stencil using Arrow keys
 
@@ -352,30 +342,7 @@ The `UnSelect` command deselects any currently selected symbol in the stencil.
 
 ![Gif for Stencil Selection Commands](Stencil_Images/StencilSelectionCommands.gif)
 
-### Command Manager for Stencil
-The CommandManager for the Stencil component in WPF allows you to map user gestures (keyboard) to stencil commands, add new gesture commands, and remove existing commands. This functionality enhances the flexibility and usability of the stencil.
-
-#### Built-in Commands and Key Gestures
-The Stencil's CommandManager provides a range of built-in commands that can be executed using specific key gestures. Here is a list of common commands and their corresponding key gestures:
-
-| Command | Key | Key Modifiers |
-|---|---|---|
-| Cut | X| Control |
-| Copy | C | Control |
-| Paste | V | Control |
-| SelectAll | A	| Control |
-| UnSelect | Escape |  |
-| Delete | Delete |	|
-| MoveLeft | Left | |	
-| MoveRight | Right | |
-| MoveUp | Up |	|
-| MoveDown | Down |	|
-| MoveToFirstInRow | Home |	|
-| MoveToLastInRow | End | |
-| MoveToFirstInColumn | Page Up ||
-| MoveToLastInColumn | Page Down ||
-
-#### Removing a Particular Command from the CommandManager
+## Removing a Particular Command from the CommandManager
 Removing a command from the CommandManager is straightforward. You can identify the command by its name and then remove it from the CommandManager's collection of commands.
 
 Here is an example of how to remove a specific command from the CommandManager:
@@ -394,7 +361,7 @@ Here is an example of how to remove a specific command from the CommandManager:
 {% endhighlight %}
 {% endtabs %}
 
-#### Adding a Custom Command to the CommandManager
+## Adding a Custom Command to the CommandManager
 Adding a custom command allows you to extend the functionality of the stencil. You can define a new command, specify its gesture, and add it to the CommandManager.
 
 Here's an example of how to add a custom command to the CommandManager:
