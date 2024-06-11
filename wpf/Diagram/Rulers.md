@@ -18,9 +18,6 @@ Please refer to the sample from Dashboard->Desktop->WPF->Diagram->GettingStarted
 {% tabs %}
 {% highlight XAML %}
 
-xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Diagram;assembly=Syncfusion.SfDiagram.WPF"
-xmlns:SyncControls="clr-namespace:Syncfusion.UI.Xaml.Diagram.Controls;assembly=Syncfusion.SfDiagram.WPF"
-
 <syncfusion:SfDiagram x:Name="diagram">
     <syncfusion:SfDiagram.HorizontalRuler>
         <syncfusion:Ruler/>
@@ -57,9 +54,6 @@ You can change the color of the ruler's position indicator marker to any preferr
 {% tabs %}
 {% highlight XAML %}
 
-xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Diagram;assembly=Syncfusion.SfDiagram.WPF"
-xmlns:SyncControls="clr-namespace:Syncfusion.UI.Xaml.Diagram.Controls;assembly=Syncfusion.SfDiagram.WPF"
-
 <syncfusion:SfDiagram x:Name="diagram">
     <syncfusion:SfDiagram.HorizontalRuler>
         <syncfusion:Ruler MarkerBrush="Red"/>
@@ -72,8 +66,8 @@ xmlns:SyncControls="clr-namespace:Syncfusion.UI.Xaml.Diagram.Controls;assembly=S
 {% endhighlight %}
 {% highlight C# %}
 
-diagram.HorizontalRuler = new Ruler();
-diagram.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
+diagram.HorizontalRuler = new Ruler() { MarkerBrush = Brushes.Red };
+diagram.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical,  MarkerBrush = Brushes.Green };
 
 {% endhighlight %}
 {% endtabs %}

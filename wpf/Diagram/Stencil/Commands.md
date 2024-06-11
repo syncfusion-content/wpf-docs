@@ -9,10 +9,11 @@ documentation: ug
 
 # Command Manager for Stencil in WPF Diagram (SfDiagram)
 
-The Stencil in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands, allowing users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently without needing to use a mouse. The CommandManager for the Stencil control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the Stencil.
+The Stencil in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands. These enhancements allow users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently, all without using a mouse. The CommandManager for the Stencil control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the Stencil.
 
-## Built-in Commands and Implementations
-The Stencil's CommandManager provides a range of built-in commands that can be executed using specific key gestures. Here is a list of common commands and their corresponding key gestures:
+## Built-in Commands and Key Gestures
+
+Stencil's CommandManager provides a range of built-in commands that can be executed using specific key gestures. Below is a list of common commands and their corresponding key gestures.
 
 | Command | Key | Key Modifiers |
 |---|---|---|
@@ -31,9 +32,165 @@ The Stencil's CommandManager provides a range of built-in commands that can be e
 | MoveToFirstInColumn | Page Up | |
 | MoveToLastInColumn | Page Down | |
 
-### Move between symbols in a stencil using Arrow keys
+## Cut Command
 
-Move between symbols by using Arrow keys (MoveUp, MoveDown, MoveLeft, MoveRight). Here's the code to execute these stencil commands from the code-behind.
+The `Cut` command removes the selected symbol from the stencil and stores it on the clipboard. Cut command can be executed by the keyboard shortcut CTRL + X.
+
+{% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="Cut" Click="CutBtn_Click" ToolTip="Ctrl + X"></Button>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+    private void CutBtn_Click(object sender, RoutedEventArgs e)
+    {
+        if (Stencil != null)
+        {
+            Stencil.Commands.Cut.Execute(null);
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+## Copy Command
+
+The `Copy` command copies the selected symbol from the stencil and stores it on the clipboard. Copy command can be executed by the keyboard shortcut CTRL + C.
+
+{% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="Copy" Click="CopyBtn_Click" ToolTip="Ctrl + C"></Button>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+    private void CopyBtn_Click(object sender, RoutedEventArgs e)
+    {
+        if (Stencil != null)
+        {
+            Stencil.Commands.Copy.Execute(null);
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+## Paste Command
+
+The `Paste` command inserts the symbol into the symbol group that was previously stored in the clipboard. Paste command can be executed by the keyboard shortcut CTRL + V.
+
+{% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="Paste" Click="PasteBtn_Click" ToolTip="Ctrl + V"></Button>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+    private void PasteBtn_Click(object sender, RoutedEventArgs e)
+    {
+        if (Stencil != null)
+        {
+            Stencil.Commands.Paste.Execute(null);
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+
+## Delete Command
+
+The `Delete` command removes the selected symbol from the symbol group. Delete command can be executed by pressing the Delete key.
+
+{% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="Delete" Click="DeleteBtn_Click" ToolTip="Delete"></Button>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+    private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+    {
+        if (Stencil != null)
+        {
+            Stencil.Commands.Delete.Execute(null);
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Gif for Stencil Clipboard Commands](Stencil_Images/StencilClipboardCommands.gif)
+
+## SelectAll Command
+
+The `SelectAll` command selects all symbols in the symbol group. SelectAll command can be executed by the keyboard shortcut CTRL + A.
+
+{% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="SelectAll" Click="SelectAllBtn_Click" ToolTip="Ctrl + A"></Button>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+    private void SelectAllBtn_Click(object sender, RoutedEventArgs e)
+    {
+        if (Stencil != null)
+        {
+            Stencil.Commands.SelectAll.Execute(null);
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+
+## UnSelect Command
+
+The `UnSelect` command deselects any currently selected symbol in the stencil. UnSelect command can be executed by pressing the Escape key.
+
+{% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="UnSelect" Click="UnSelect_Click" ToolTip="Esc"></Button>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+    private void UnSelect_Click(object sender, RoutedEventArgs e)
+    {
+    if (Stencil != null)
+    {
+        Stencil.Commands.UnSelect.Execute(null);
+    }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Gif for Stencil Selection Commands](Stencil_Images/StencilSelectionCommands.gif)
+
+## Navigate Between Symbols Commands
+
+The `MoveUp`, `MoveDown`, `MoveLeft`, and `MoveRight` commands help in moving the selection of symbols accordingly. You can navigate between symbols using the arrow keys (Up, Down, Left, Right). 
 
 {% tabs %}
 
@@ -83,9 +240,9 @@ Move between symbols by using Arrow keys (MoveUp, MoveDown, MoveLeft, MoveRight)
 {% endtabs %}
 
 
-### Move to the first symbol in a row of a stencil's symbol group using Home key
+## MoveToFirstInRow Command
 
-The `MoveToFirstInRow` command moves selection focus to the first symbol in the current row of the stencil or the first symbol of the first row if none is selected. Here's the code to execute this stencil commands from the code-behind.
+The `MoveToFirstInRow` command moves selection to the first symbol in the current row of the stencil or the first symbol of the first row if none is selected. MoveToFirstInRow command can be executed by pressing the Home key.
 
 {% tabs %}
 
@@ -108,9 +265,9 @@ The `MoveToFirstInRow` command moves selection focus to the first symbol in the 
 {% endhighlight %}
 {% endtabs %}
 
-### Move to the last symbol in a row of a stencil using End key
+## MoveToLastInRow Command
 
-The `MoveToLastInRow` command moves selection focus to the last symbol in the current row of the stencil or the last symbol of the last row if none is selected. Here's the code to execute this stencil command from the code-behind.
+The `MoveToLastInRow` command moves selection to the last symbol in the current row of the stencil or the last symbol of the last row if none is selected. MoveToLastInRow command can be executed by pressing the End key.
 
 {% tabs %}
 
@@ -133,9 +290,9 @@ The `MoveToLastInRow` command moves selection focus to the last symbol in the cu
 {% endhighlight %}
 {% endtabs %}
 
-### Move to the first symbol in a column of a stencil using Page Up key
+## MoveToFirstInColumn Command
 
-The `MoveToFirstInColumn` command moves selection focus to the first symbol in the current column of the stencil or the first symbol of the first column if none is selected. Here's the code to execute this stencil command from the code-behind.
+The `MoveToFirstInColumn` command moves selection to the first symbol in the current column of the stencil or the first symbol of the first column if none is selected. MoveToFirstInColumn command can be executed by pressing the PageUp key.
 
 {% tabs %}
 
@@ -159,9 +316,9 @@ The `MoveToFirstInColumn` command moves selection focus to the first symbol in t
 {% endtabs %}
 
 
-### Move to the last symbol in a column of a stencil using Page Down key
+## MoveToLastInColumn Command
 
-The `MoveToLastInColumn` command moves selection focus to the last symbol in the current column of the stencil or the last symbol of the symbol group if none is selected. Here's the code to execute this stencil command from the code-behind.
+The `MoveToLastInColumn` command moves selection to the last symbol in the current column of the stencil or the last symbol of the symbol group if none is selected. MoveToLastInColumn command can be executed by pressing the PageDown key.
 
 {% tabs %}
 
@@ -186,164 +343,9 @@ The `MoveToLastInColumn` command moves selection focus to the last symbol in the
 
 ![Gif for Stencil Move Commands](Stencil_Images/StencilMoveCommands.gif)
 
-### Cut the selected symbols to the clipboard using Ctrl+X
-
-The `Cut` command removes the selected symbol from the stencil and stores it on the clipboard.
-
-{% tabs %}
-
-{% highlight Xaml%}
-
-<Button Height="50" Content="Cut" Click="CutBtn_Click" ToolTip="Ctrl + X"></Button>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    private void CutBtn_Click(object sender, RoutedEventArgs e)
-    {
-        if (Stencil != null)
-        {
-            Stencil.Commands.Cut.Execute(null);
-        }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-### Copy the selected symbols to the clipboard using Ctrl+C
-
-The `Copy` command copies the selected symbol from the stencil and stores it on the clipboard.
-
-{% tabs %}
-
-{% highlight Xaml%}
-
-<Button Height="50" Content="Copy" Click="CopyBtn_Click" ToolTip="Ctrl + C"></Button>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    private void CopyBtn_Click(object sender, RoutedEventArgs e)
-    {
-        if (Stencil != null)
-        {
-            Stencil.Commands.Copy.Execute(null);
-        }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-### Paste the contents of the clipboard to a new stencil using Ctrl+V
-
-The `Paste` command inserts the symbol into the symbol group that was previously stored in the clipboard.
-
-{% tabs %}
-
-{% highlight Xaml%}
-
-<Button Height="50" Content="Paste" Click="PasteBtn_Click" ToolTip="Ctrl + V"></Button>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    private void PasteBtn_Click(object sender, RoutedEventArgs e)
-    {
-        if (Stencil != null)
-        {
-            Stencil.Commands.Paste.Execute(null);
-        }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-
-### Delete the selected symbols using Delete Key
-
-The `Delete` command removes the selected symbol from the symbol group.
-
-{% tabs %}
-
-{% highlight Xaml%}
-
-<Button Height="50" Content="Delete" Click="DeleteBtn_Click" ToolTip="Delete"></Button>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    private void DeleteBtn_Click(object sender, RoutedEventArgs e)
-    {
-        if (Stencil != null)
-        {
-            Stencil.Commands.Delete.Execute(null);
-        }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-![Gif for Stencil Clipboard Commands](Stencil_Images/StencilClipboardCommands.gif)
-
-### Select all the symbols in a stencil using Ctrl+A
-
-The `SelectAll` command selects all symbols in the symbol group.
-
-{% tabs %}
-
-{% highlight Xaml%}
-
-<Button Height="50" Content="SelectAll" Click="SelectAllBtn_Click" ToolTip="Ctrl + A"></Button>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    private void SelectAllBtn_Click(object sender, RoutedEventArgs e)
-    {
-        if (Stencil != null)
-        {
-            Stencil.Commands.SelectAll.Execute(null);
-        }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-
-### Cancel the selection of symbols in a stencil using Esc
-
-The `UnSelect` command deselects any currently selected symbol in the stencil.
-
-{% tabs %}
-
-{% highlight Xaml%}
-
-<Button Height="50" Content="UnSelect" Click="UnSelect_Click" ToolTip="Esc"></Button>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    private void UnSelect_Click(object sender, RoutedEventArgs e)
-    {
-    if (Stencil != null)
-    {
-        Stencil.Commands.UnSelect.Execute(null);
-    }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-![Gif for Stencil Selection Commands](Stencil_Images/StencilSelectionCommands.gif)
-
 ## Removing a Particular Command from the CommandManager
-Removing a command from the CommandManager is straightforward. You can identify the command by its name and then remove it from the CommandManager's collection of commands.
+
+Removing a command from the `CommandManager` is straightforward. To do this, you need to identify the command by its name and then remove it from the CommandManager's collection of commands.
 
 Here is an example of how to remove a specific command from the CommandManager:
 
