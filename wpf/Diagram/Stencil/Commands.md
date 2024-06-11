@@ -9,7 +9,7 @@ documentation: ug
 
 # Command Manager for Stencil in WPF Diagram (SfDiagram)
 
-The Stencil in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands. These enhancements allow users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently, all without using a mouse. The `CommandManager` for the Stencil control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the Stencil.
+The Stencil in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands. These enhancements allow users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently, all without using a mouse. The [`CommandManager`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CommandManager) for the Stencil control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the Stencil.
 
 ## Built-in Commands and Key Gestures
 
@@ -34,7 +34,7 @@ Stencil's `CommandManager` provides a range of built-in commands that can be exe
 
 ## Cut Command
 
-The `Cut` command removes the selected symbol from the stencil and stores it on the clipboard. Cut command can be executed by the keyboard shortcut CTRL + X.
+The [`Cut`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_Cut) command removes the selected symbol from the stencil and stores it on the clipboard. Cut command can be executed by the keyboard shortcut CTRL + X.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ The `Cut` command removes the selected symbol from the stencil and stores it on 
 
 ## Copy Command
 
-The `Copy` command copies the selected symbol from the stencil and stores it on the clipboard. Copy command can be executed by the keyboard shortcut CTRL + C.
+The [`Copy`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_Copy) command copies the selected symbol from the stencil and stores it on the clipboard. Copy command can be executed by the keyboard shortcut CTRL + C.
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ The `Copy` command copies the selected symbol from the stencil and stores it on 
 
 ## Paste Command
 
-The `Paste` command inserts the symbol into the symbol group that was previously stored in the clipboard. Paste command can be executed by the keyboard shortcut CTRL + V.
+The [`Paste`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_Paste) command inserts the symbol into the symbol group that was previously stored in the clipboard. Paste command can be executed by the keyboard shortcut CTRL + V.
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ The `Paste` command inserts the symbol into the symbol group that was previously
 
 ## Delete Command
 
-The `Delete` command removes the selected symbol from the symbol group. Delete command can be executed by pressing the Delete key.
+The [`Delete`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_Delete) command removes the selected symbol from the symbol group. Delete command can be executed by pressing the Delete key.
 
 {% tabs %}
 
@@ -137,7 +137,7 @@ The `Delete` command removes the selected symbol from the symbol group. Delete c
 
 ## SelectAll Command
 
-The `SelectAll` command selects all symbols in the symbol group. SelectAll command can be executed by the keyboard shortcut CTRL + A.
+The [`SelectAll`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_SelectAll) command selects all symbols in the symbol group. SelectAll command can be executed by the keyboard shortcut CTRL + A.
 
 {% tabs %}
 
@@ -163,7 +163,7 @@ The `SelectAll` command selects all symbols in the symbol group. SelectAll comma
 
 ## UnSelect Command
 
-The `UnSelect` command deselects any currently selected symbol in the stencil. UnSelect command can be executed by pressing the Escape key.
+The [`UnSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_UnSelect) command deselects any currently selected symbol in the stencil. UnSelect command can be executed by pressing the Escape key.
 
 {% tabs %}
 
@@ -190,7 +190,7 @@ The `UnSelect` command deselects any currently selected symbol in the stencil. U
 
 ## Navigate Between Symbols Commands
 
-The `MoveUp`, `MoveDown`, `MoveLeft`, and `MoveRight` commands help in moving the selection of symbols accordingly. You can navigate between symbols using the arrow keys (Up, Down, Left, Right). 
+The [`MoveUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveUp), [`MoveDown`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveDown), [`MoveLeft`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveLeft), and [`MoveRight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveRight) commands help in moving the selection of symbols accordingly. You can navigate between symbols using the arrow keys (Up, Down, Left, Right). 
 
 {% tabs %}
 
@@ -242,7 +242,7 @@ The `MoveUp`, `MoveDown`, `MoveLeft`, and `MoveRight` commands help in moving th
 
 ## MoveToFirstInRow Command
 
-The `MoveToFirstInRow` command moves selection to the first symbol in the current row of the stencil or the first symbol of the first row if none is selected. MoveToFirstInRow command can be executed by pressing the Home key.
+The [`MoveToFirstInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToFirstInRow) command moves selection to the first symbol in the current row of the stencil or the first symbol of the first row if none is selected. MoveToFirstInRow command can be executed by pressing the Home key.
 
 {% tabs %}
 
@@ -267,7 +267,7 @@ The `MoveToFirstInRow` command moves selection to the first symbol in the curren
 
 ## MoveToLastInRow Command
 
-The `MoveToLastInRow` command moves selection to the last symbol in the current row of the stencil or the last symbol of the last row if none is selected. MoveToLastInRow command can be executed by pressing the End key.
+The [`MoveToLastInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToLastInRow) command moves selection to the last symbol in the current row of the stencil or the last symbol of the last row if none is selected. MoveToLastInRow command can be executed by pressing the End key.
 
 {% tabs %}
 
@@ -292,7 +292,7 @@ The `MoveToLastInRow` command moves selection to the last symbol in the current 
 
 ## MoveToFirstInColumn Command
 
-The `MoveToFirstInColumn` command moves selection to the first symbol in the current column of the stencil or the first symbol of the first column if none is selected. MoveToFirstInColumn command can be executed by pressing the PageUp key.
+The [`MoveToFirstInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToFirstInColumn) command moves selection to the first symbol in the current column of the stencil or the first symbol of the first column if none is selected. MoveToFirstInColumn command can be executed by pressing the PageUp key.
 
 {% tabs %}
 
@@ -318,7 +318,7 @@ The `MoveToFirstInColumn` command moves selection to the first symbol in the cur
 
 ## MoveToLastInColumn Command
 
-The `MoveToLastInColumn` command moves selection to the last symbol in the current column of the stencil or the last symbol of the symbol group if none is selected. MoveToLastInColumn command can be executed by pressing the PageDown key.
+The [`MoveToLastInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToLastInColumn) command moves selection to the last symbol in the current column of the stencil or the last symbol of the symbol group if none is selected. MoveToLastInColumn command can be executed by pressing the PageDown key.
 
 {% tabs %}
 
