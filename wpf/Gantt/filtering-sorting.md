@@ -19,7 +19,7 @@ The `GanttControl` provides an Excel-inspired filtering UI with various options 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GanttControl x:Name="ganttControl" 
-                   AllowFiltering="True">           
+                         AllowFiltering="True">
 </syncfusion:GanttControl>
 {% endhighlight %}
 {% highlight c# %}
@@ -37,7 +37,7 @@ The `GanttControl` allows you to sort column data in either ascending or descend
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GanttControl x:Name="ganttControl"
-                   AllowSorting="True">          
+                         AllowSorting="True">
 </syncfusion:GanttControl>
 {% endhighlight %}
 {% highlight c# %}

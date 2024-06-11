@@ -358,7 +358,7 @@ By default, the `GanttGrid` items will be in expanded state. You can define how 
 {% highlight xaml %}
 
 <syncfusion:GanttControl x:Name="ganttControl"
-                   AutoExpandMode="None"> 
+                         AutoExpandMode="None"> 
 </syncfusion:GanttControl>
 
 {% endhighlight %}
@@ -369,7 +369,7 @@ this.ganttControl.AutoExpandMode = GanttAutoExpandMode.None;
 {% endtabs %}
 
 ## Theme
-The WPF Gantt control supports various built-in themes. Refer to the below links to apply themes for the Gantt control,
+The WPF GanttControl supports various built-in themes. Refer to the below links to apply themes for the Gantt control,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
