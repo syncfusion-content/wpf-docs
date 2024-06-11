@@ -276,7 +276,7 @@ chart.Behaviors.Add(zooming);
 
 The zooming can be done both horizontally and vertically. The zooming direction is defined using [`ZoomMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ZoomMode) property.
 
-Zooming along [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ZoomMode.html) axis
+Zooming along [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ZoomMode.html#Syncfusion_UI_Xaml_Charts_ZoomMode_X) axis
 
 {% tabs %}
 

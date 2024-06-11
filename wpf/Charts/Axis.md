@@ -644,7 +644,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
         <DataTemplate x:Key="postfixLabelTemplate">
 
-             TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
+             <TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
 
         </DataTemplate>
 
@@ -778,7 +778,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Smart** **Axis** **Labels**
 
-When there are more number of axis labels, they may overlap with each other. SfChart provides support to handle the overlapping labels using the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) property. By default the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) value is [`Hide`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html).
+When there are more number of axis labels, they may overlap with each other. SfChart provides support to handle the overlapping labels using the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) property. By default the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) value is [`Hide`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html#Syncfusion_UI_Xaml_Charts_AxisLabelsIntersectAction_Hide).
 
 The following are the options for intersecting action.
 
@@ -917,7 +917,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **EdgeLabelsDrawingMode**
 
-SfChart provides support to customize the position of the edge labels in axis using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property default value is [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
+SfChart provides support to customize the position of the edge labels in axis using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property default value is [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html#Syncfusion_UI_Xaml_Charts_EdgeLabelsDrawingMode_Center).
 
 The following are the customizing options in [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode).
 
@@ -1053,7 +1053,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **EdgeLabelsVisibilityMode**
 
-The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) property. By default the [`Default`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html) option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is set, which displays the edge label based on auto interval calculations .The following image depicts the default option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) while zooming.
+The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) property. By default the [`Default`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html#Syncfusion_UI_Xaml_Charts_EdgeLabelsVisibilityMode_Default) option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is set, which displays the edge label based on auto interval calculations .The following image depicts the default option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) while zooming.
 
 ![WPF Chart displays Axis Edge Label](Axis_images/wpf-chart-axis-edge-label.jpeg)
 
@@ -1146,7 +1146,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 <syncfusion:SfChart.SecondaryAxis>
 
-</syncfusion:NumericalAxis ShowLabelBorder="True"  />       
+<syncfusion:NumericalAxis ShowLabelBorder="True"  />       
 
 </syncfusion:SfChart.SecondaryAxis>
 
@@ -1704,15 +1704,16 @@ The [`RangeStyles`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts
     <syncfusion:NumericalAxis MajorGridLineStyle= "{StaticResource lineStyle}" MajorTickLineStyle="{StaticResource lineStyle}">
         <syncfusion:NumericalAxis.LabelStyle>
             <syncfusion:LabelStyle Foreground="Green"/>
-        </syncfusion:NumericalAxis.LabelStyle>    
+        </syncfusion:NumericalAxis.LabelStyle>
         <syncfusion:NumericalAxis.RangeStyles>
-                <syncfusion:ChartAxisRangeStyleCollection>
-                      <syncfusion:ChartAxisRangeStyle Start="18" End="22" MajorGridLineStyle= "{StaticResource RangeLineStyle}" MajorTickLineStyle = "{StaticResource RangeLineStyle}">                    <syncfusion:ChartAxisRangeStyle.LabelStyle>
-            <syncfusion:LabelStyle Foreground="RoyalBlue" />
-          </syncfusion:ChartAxisRangeStyle.LabelStyle>
-                     </syncfusion:ChartAxisRangeStyle>
-                </syncfusion:ChartAxisRangeStyleCollection>
-            </syncfusion:NumericalAxis.RangeStyles>
+            <syncfusion:ChartAxisRangeStyleCollection>
+                <syncfusion:ChartAxisRangeStyle Start="18" End="22" MajorGridLineStyle= "{StaticResource RangeLineStyle}" MajorTickLineStyle = "{StaticResource RangeLineStyle}">
+                    <syncfusion:ChartAxisRangeStyle.LabelStyle>
+                        <syncfusion:LabelStyle Foreground="RoyalBlue" />
+                    </syncfusion:ChartAxisRangeStyle.LabelStyle>
+                </syncfusion:ChartAxisRangeStyle>
+            </syncfusion:ChartAxisRangeStyleCollection>
+        </syncfusion:NumericalAxis.RangeStyles>
     </syncfusion:NumericalAxis>
 
 </syncfusion:SfChart.SecondaryAxis>
@@ -1885,7 +1886,7 @@ The following image demonstrates the default positioning of header when the axis
 ![Changing Origin Header Position in WPF Chart](Axis_images/wpf-chart-origin-header-position.jpeg)
 
 
-If you want to position the header outside of the chart area then you can set the [`Far`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AxisHeaderPosition.html) option in [`HeaderPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderPosition) property.
+If you want to position the header outside of the chart area then you can set the [`Far`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AxisHeaderPosition.html#Syncfusion_UI_Xaml_Charts_AxisHeaderPosition_Far) option in [`HeaderPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderPosition) property.
 
 The following code example demonstrates the positioning of the header outside even when the axis is moved inside.
 
@@ -2180,7 +2181,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 **LabelPlacement**
 
-In [`CategoryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html), labels is placed based on tick lines using [`LabelPlacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) property. By default the labels is placed [`OnTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LabelPlacement.html). The following code example demonstrates placing the label between ticks in [`CategoryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html)
+In [`CategoryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html), labels is placed based on tick lines using [`LabelPlacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) property. By default the labels is placed [`OnTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LabelPlacement.html#Syncfusion_UI_Xaml_Charts_LabelPlacement_OnTicks). The following code example demonstrates placing the label between ticks in [`CategoryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html)
 
 {% tabs %}
 
@@ -2258,12 +2259,12 @@ N> This feature is not applicable for Accumulation series, ErrorBarSeries, Radar
 
 When the [`IsIndexed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_IsIndexed) property of the [`CategoryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is disabled, the same index values(XValue) are grouped by [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) property of the axis. The following are the types of [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions),
 
-  * [`Average`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html)
-  * [`Count`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html)
-  * [`Max`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html)
-  * [`Min`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html)
-  * [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html)
-  * [`Sum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html)
+  * [`Average`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html#Syncfusion_UI_Xaml_Charts_AggregateFunctions_Average)
+  * [`Count`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html#Syncfusion_UI_Xaml_Charts_AggregateFunctions_Count)
+  * [`Max`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html#Syncfusion_UI_Xaml_Charts_AggregateFunctions_Max)
+  * [`Min`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html#Syncfusion_UI_Xaml_Charts_AggregateFunctions_Min)
+  * [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html#Syncfusion_UI_Xaml_Charts_AggregateFunctions_None)
+  * [`Sum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AggregateFunctions.html#Syncfusion_UI_Xaml_Charts_AggregateFunctions_Sum)
 
 The default value of [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is None, and it is shown in the following code example.
 
@@ -3002,7 +3003,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The DateTimeAxis [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) value corresponds to the type specified in the [`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) property.
 
-For instance, if the [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) is set as 2 and [`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) is set as [`Days`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), the labels are plotted for every two days. The following are the options for [`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) property
+For instance, if the [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) is set as 2 and [`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) is set as [`Days`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Days), the labels are plotted for every two days. The following are the options for [`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) property
 
 Auto
 * Days
@@ -3165,7 +3166,7 @@ The [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 
 **Auto**
 
-By default the date time range padding is [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html).
+By default the date time range padding is [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html#Syncfusion_UI_Xaml_Charts_DateTimeRangePadding_Auto).
 
 ![WPF Chart with Default DateTimeAxis Range Padding](Axis_images/wpf-chart-default-datetime-range-padding.jpeg)
 
@@ -3206,7 +3207,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Round**
 
-When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Round`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Round`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html#Syncfusion_UI_Xaml_Charts_DateTimeRangePadding_Round), the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
 
 {% tabs %}
 
@@ -3240,7 +3241,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **None**
 
-When the [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for a [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html).
+When the [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for a [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html#Syncfusion_UI_Xaml_Charts_DateTimeRangePadding_None).
 
 The following screenshot demonstrates a chart’s x-axis with `RangePadding` set to `None`. 
 
@@ -3275,7 +3276,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **RoundStart**
 
-When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`RoundStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the range of the chart axis is rounded in the start off to the nearest possible DateTime value, as shown in the following screenshot.
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`RoundStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html#Syncfusion_UI_Xaml_Charts_DateTimeRangePadding_RoundStart), the range of the chart axis is rounded in the start off to the nearest possible DateTime value, as shown in the following screenshot.
 
 {% tabs %}
 
@@ -3309,7 +3310,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **RoundEnd**
 
-When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`RoundEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the range of the chart axis is rounded in the end off to the nearest possible DateTime value, as shown in the following screenshot.
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`RoundEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html#Syncfusion_UI_Xaml_Charts_DateTimeRangePadding_RoundEnd), the range of the chart axis is rounded in the end off to the nearest possible DateTime value, as shown in the following screenshot.
 
 {% tabs %}
 
@@ -3343,7 +3344,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **PrependInterval**
 
-When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`PrependInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the DateTime interval of the axis is added in the start as padding, as shown in the following screenshot.
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`PrependInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html#Syncfusion_UI_Xaml_Charts_DateTimeRangePadding_PrependInterval), the DateTime interval of the axis is added in the start as padding, as shown in the following screenshot.
 
 {% tabs %}
 
@@ -3377,7 +3378,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **AppendInterval**
 
-When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`AppendInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the DateTime interval of the axis is added in the end as padding, as shown in the following screenshot.
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`AppendInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html#Syncfusion_UI_Xaml_Charts_DateTimeRangePadding_AppendInterval), the DateTime interval of the axis is added in the end as padding, as shown in the following screenshot.
 
 {% tabs %}
 
@@ -3425,18 +3426,18 @@ The following types are available for [`NumericalAxis`](https://help.syncfusion.
 
 **Round**
 
-By default, the default [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) value for [`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) is Auto and for [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis), the default value is [`Round`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+By default, the default [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) value for [`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) is Auto and for [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis), the default value is [`Round`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_Round).
 
-The following screenshot illustrates a chart’s y-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`Round`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+The following screenshot illustrates a chart’s y-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`Round`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_Round).
 
 ![WPF Chart with NumericalAxis Round Range Padding](Axis_images/wpf-chart-numericaxis-range-padding.jpeg)
 
 
 **Normal**
 
-[`Normal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html) [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for a [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used mostly for the y-axis to have padding based on the Range calculation.
+[`Normal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_Normal) [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for a [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used mostly for the y-axis to have padding based on the Range calculation.
 
-The following screenshot illustrates a chart’s y-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`Normal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+The following screenshot illustrates a chart’s y-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`Normal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_Normal).
 
 {% tabs %}
 
@@ -3470,9 +3471,9 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Additional**
 
-If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is set to [`Additional`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html), the interval of the axis is added as padding.
+If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is set to [`Additional`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_Additional), the interval of the axis is added as padding.
 
-The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`Additional`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`Additional`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_Additional).
 
 {% tabs %}
 
@@ -3506,7 +3507,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **None**
 
-The following screenshot demonstrates [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) as [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html), where no padding is applied for the axis.
+The following screenshot demonstrates [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) as [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_None), where no padding is applied for the axis.
 
 {% tabs %}
 
@@ -3539,9 +3540,9 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **RoundStart**
 
-If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is set to [`RoundStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html), rounds the range of the chart axis in the start to the nearest possible value.
+If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is set to [`RoundStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_RoundStart), rounds the range of the chart axis in the start to the nearest possible value.
 
-The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`RoundStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`RoundStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_RoundStart).
 
 {% tabs %}
 
@@ -3575,9 +3576,9 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **RoundEnd**
 
-If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is set to [`RoundEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html), rounds the range of the chart axis in the end to the nearest possible value.
+If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is set to [`RoundEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_RoundEnd), rounds the range of the chart axis in the end to the nearest possible value.
 
-The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`RoundEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`RoundEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html#Syncfusion_UI_Xaml_Charts_NumericalPadding_RoundEnd).
 
 {% tabs %}
 
@@ -3833,7 +3834,7 @@ By activating the [`EnableScrollBar`](https://help.syncfusion.com/cr/wpf/Syncfus
 
 ### AutoScrollingDeltaType
 
-In [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), you can apply auto scrolling delta value in [`Years`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Months`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Days`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Hours`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Minutes`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Seconds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html) and [`Milliseconds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html) by setting the [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_AutoScrollingDeltaType) property. The default value of this property is [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), and the delta will be calculated automatically based on range.
+In [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), you can apply auto scrolling delta value in [`Years`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Years), [`Months`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Months), [`Days`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Days), [`Hours`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Hours), [`Minutes`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Minutes), [`Seconds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Seconds) and [`Milliseconds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Milliseconds) by setting the [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_AutoScrollingDeltaType) property. The default value of this property is [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Auto), and the delta will be calculated automatically based on range.
 
 {% tabs %} 
 
@@ -3862,7 +3863,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 ### AutoScrollingMode
 
-The [`AutoScrollingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_AutoScrollingMode) property is used to determine whether the axis should be scrolled from the start position or end position. The default value of this property is [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAutoScrollingMode.html).
+The [`AutoScrollingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_AutoScrollingMode) property is used to determine whether the axis should be scrolled from the start position or end position. The default value of this property is [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAutoScrollingMode.html#Syncfusion_UI_Xaml_Charts_ChartAutoScrollingMode_End).
 
 {% tabs %} 
 
@@ -4187,7 +4188,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Border** **Type**
 
-[`Chart Axis`](https://help.syncfusion.com/wpf/charts/axis) provides support to various types of border for [`ChartMultiLevelLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html). It can be applied by using its [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsBorderType) property. The default [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsBorderType) is [`Rectangle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html). The another supported border types are [`Brace`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html) ,[`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html) and [`WithoutTopAndBottomBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html).
+[`Chart Axis`](https://help.syncfusion.com/wpf/charts/axis) provides support to various types of border for [`ChartMultiLevelLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html). It can be applied by using its [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsBorderType) property. The default [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsBorderType) is [`Rectangle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html#Syncfusion_UI_Xaml_Charts_BorderType_Rectangle). The another supported border types are [`Brace`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html#Syncfusion_UI_Xaml_Charts_BorderType_Brace) ,[`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html#Syncfusion_UI_Xaml_Charts_BorderType_None) and [`WithoutTopAndBottomBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html#Syncfusion_UI_Xaml_Charts_BorderType_WithoutTopAndBottomBorder).
 
 **Rectangle**
 

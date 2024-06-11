@@ -142,11 +142,11 @@ N> Here we have enabled the [`CheckBoxVisibility`](https://help.syncfusion.com/c
 
 SfChart supports the following type of Trendlines.
 
-* [`Linear`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html)
-* [`Exponential`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html)
-* [`Power`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html)
-* [`Logarithmic`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html)
-* [`Polynomial`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html)
+* [`Linear`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html#Syncfusion_UI_Xaml_Charts_TrendlineType_Linear)
+* [`Exponential`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html#Syncfusion_UI_Xaml_Charts_TrendlineType_Exponential)
+* [`Power`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html#Syncfusion_UI_Xaml_Charts_TrendlineType_Power)
+* [`Logarithmic`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html#Syncfusion_UI_Xaml_Charts_TrendlineType_Logarithmic)
+* [`Polynomial`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineType.html#Syncfusion_UI_Xaml_Charts_TrendlineType_Polynomial)
 
 ### Linear
 

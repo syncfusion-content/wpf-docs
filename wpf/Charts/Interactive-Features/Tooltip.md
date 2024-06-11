@@ -22,7 +22,8 @@ The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusio
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  ShowTooltip="True"                                                  
+<syncfusion:ColumnSeries  ShowTooltip="True"    
+
 ItemsSource="{Binding Demands}" 
 
 XBindingPath="Demand"  YBindingPath="Year2010"/>
