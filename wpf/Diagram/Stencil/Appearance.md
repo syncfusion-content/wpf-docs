@@ -19,15 +19,15 @@ The [`Title`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Sten
 
 {% highlight xaml %}
 <!--Initialize the stencil-->
-<Stencil:Stencil x:Name="stencil" Title="Shapes">
+<stencil:Stencil x:Name="stencil" Title="Shapes">
     <!--Initialize the stencil categories-->
-    <Stencil:Stencil.Categories>
-        <Stencil:StencilCategoryCollection>
+    <stencil:Stencil.Categories>
+        <stencil:StencilCategoryCollection>
             <!--Specify the basic shapes category with a title and resource key-->
-            <Stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
-        </Stencil:StencilCategoryCollection>
-    </Stencil:Stencil.Categories>
-</Stencil:Stencil>
+            <stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
+        </stencil:StencilCategoryCollection>
+    </stencil:Stencil.Categories>
+</stencil:Stencil>
 
 {% endhighlight %}
  
@@ -52,15 +52,15 @@ The following code example explains how to add a title and its customization.
 </DataTemplate>
 
 <!--Initialize the stencil-->
-<Stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}>
+<stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}>
     <!--Initialize the stencil categories-->
-    <Stencil:Stencil.Categories>
-        <Stencil:StencilCategoryCollection>
+    <stencil:Stencil.Categories>
+        <stencil:StencilCategoryCollection>
             <!--Specify the basic shapes category with a title and resource key-->
-            <Stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
-        </Stencil:StencilCategoryCollection>
-    </Stencil:Stencil.Categories>
-</Stencil:Stencil>
+            <stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
+        </stencil:StencilCategoryCollection>
+    </stencil:Stencil.Categories>
+</stencil:Stencil>
 {% endhighlight %}
 {% endtabs %}
 
@@ -99,21 +99,21 @@ To specify the identifying name to that element, use the `Name` property of the 
 {% tabs %}
 
 {% highlight xaml %}
-<Stencil:Stencil x:Name="stencil" ExpandMode="ZeroOrMore">
-    <Stencil:Stencil.SymbolSource>
-       <Syncfusion:SymbolCollection>
-        <Syncfusion:NodeViewModel Key="Basic Shapes" UnitHeight="100" UnitWidth="100" Name="Triangle" Shape="{StaticResource Triangle}"></Syncfusion:NodeViewModel>
-        <Syncfusion:SymbolViewModel Symbol="User" Key="Image" Name="User"
+<stencil:Stencil x:Name="stencil" ExpandMode="ZeroOrMore">
+    <stencil:Stencil.SymbolSource>
+       <syncfusion:SymbolCollection>
+        <syncfusion:NodeViewModel Key="Basic Shapes" UnitHeight="100" UnitWidth="100" Name="Triangle" Shape="{StaticResource Triangle}"></Syncfusion:NodeViewModel>
+        <syncfusion:SymbolViewModel Symbol="User" Key="Image" Name="User"
           SymbolTemplate="{StaticResource symboltemplate}" />
-      </Syncfusion:SymbolCollection>
-    </Stencil:Stencil.SymbolSource>
-    <Stencil:Stencil.SymbolGroups>
-      <Stencil:SymbolGroups>
+      </syncfusion:SymbolCollection>
+    </stencil:Stencil.SymbolSource>
+    <stencil:Stencil.SymbolGroups>
+      <stencil:SymbolGroups>
       <!--Separate groups based on the key-->
-         <Stencil:SymbolGroupProvider MappingName="Key" />
-       </Stencil:SymbolGroups>
-    </Stencil:Stencil.SymbolGroups>
-</Stencil:Stencil>
+         <stencil:SymbolGroupProvider MappingName="Key" />
+       </stencil:SymbolGroups>
+    </stencil:Stencil.SymbolGroups>
+</stencil:Stencil>
 
 {% endhighlight %}
  
@@ -139,31 +139,31 @@ Please find the following code example.
  <Setter Property="BorderBrush" Value="Blue" />            
  <Setter Property="Padding" Value="5"></Setter>
 </Style>
-<Stencil:Stencil x:Name="stencil" ExpandMode="ZeroOrMore">
-    <Stencil:Stencil.SymbolSource>
-       <Syncfusion:SymbolCollection>
-        <Syncfusion:SymbolViewModel Symbol="User" Key="Image" Name="User"
+<stencil:Stencil x:Name="stencil" ExpandMode="ZeroOrMore">
+    <stencil:Stencil.SymbolSource>
+       <syncfusion:SymbolCollection>
+        <syncfusion:SymbolViewModel Symbol="User" Key="Image" Name="User"
           SymbolTemplate="{StaticResource symboltemplate}" />
-        <Syncfusion:SymbolViewModel  Key="Template" Name="Diamond"
+        <syncfusion:SymbolViewModel  Key="Template" Name="Diamond"
              SymbolTemplate="{StaticResource Diamond}" >
-         <Syncfusion:SymbolViewModel.Symbol>
+         <syncfusion:SymbolViewModel.Symbol>
             <StackPanel Orientation="Vertical">
                 <TextBlock   FontSize="14" FontWeight="Bold" Foreground="Black" Text="Diamond" Margin="0,0,0,10">
                 </TextBlock>
                 <TextBlock FontStyle="Italic" FontSize="12" Foreground="Black" Text="Drag onto the Page">
                 </TextBlock>
             </StackPanel>
-        </Syncfusion:SymbolViewModel.Symbol>
-        </Syncfusion:SymbolViewModel>
-      </Syncfusion:SymbolCollection>
-    </Stencil:Stencil.SymbolSource>
-    <Stencil:Stencil.SymbolGroups>
-      <Stencil:SymbolGroups>
+        </syncfusion:SymbolViewModel.Symbol>
+        </syncfusion:SymbolViewModel>
+      </syncfusion:SymbolCollection>
+    </stencil:Stencil.SymbolSource>
+    <stencil:Stencil.SymbolGroups>
+      <stencil:SymbolGroups>
       <!--Separate groups based on the key-->
-         <Stencil:SymbolGroupProvider MappingName="Key" />
-       </Stencil:SymbolGroups>
-    </Stencil:Stencil.SymbolGroups>
-</Stencil:Stencil>
+         <stencil:SymbolGroupProvider MappingName="Key" />
+       </stencil:SymbolGroups>
+    </stencil:Stencil.SymbolGroups>
+</stencil:Stencil>
 {% endhighlight %}
  
 {% endtabs %}
