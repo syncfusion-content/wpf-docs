@@ -48,6 +48,16 @@ Syncfusion.Themes.FluentDark.Wpf.dll</td><td>
 </td></tr>
 <tr>
 <td>
+Material3Light</td><td>
+Syncfusion.Themes.Material3Light.Wpf.dll</td><td>
+</td></tr>
+<tr>
+<td>
+Material3Dark</td><td>
+Syncfusion.Themes.Material3Dark.Wpf.dll</td><td>
+</td></tr>
+<tr>
+<td>
 MaterialLight</td><td>
 Syncfusion.Themes.MaterialLight.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.MaterialLight.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialLight.WPF/)'| markdownify }}
@@ -236,6 +246,16 @@ Yes</td><td>
 <tr>
 <td>
 FluentDark</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Material3Light</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Material3Dark</td><td>
 Yes</td><td>
 -</td></tr>
 <tr>
@@ -524,6 +544,24 @@ FluentDark</td><td>
 </td>
 <td>
 {{'[FluentPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.FluentDark.WPF.FluentPalette.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Material3Light</td><td>
+{{'[Material3LightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Light.WPF.Material3LightThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Material3Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Light.WPF.Material3Palette.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Material3Dark</td><td>
+{{'[Material3DarkThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Dark.WPF.Material3DarkThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Material3Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Material3Dark.WPF.Material3Palette.html)'| markdownify }}
 </td>
 </tr>
 <tr>

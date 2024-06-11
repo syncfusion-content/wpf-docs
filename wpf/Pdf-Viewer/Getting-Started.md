@@ -42,6 +42,9 @@ The following assemblies are required in your WPF application to use the PDF Vie
 <td>This component contains various UI controls (ColorPickerPalette and Numeric UpDown) that are used in the PDF Viewer.</td></tr>
 </table>
 
+Rather than referencing the assemblies, you can utilize the [PdfViewer NuGet](https://www.nuget.org/packages/Syncfusion.PdfViewer.WPF) Packages. For more information on how to install the NuGet package in a WPF application, please follow the provided link.
+[How to install nuget packages in a WPF application](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
+
 N> Starting with version 23.1.x, a reference to the Syncfusion.PdfToImageConverter.Base assembly is necessary for PdfViewer applications.
 N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your WPF application to use our components.
 
