@@ -186,26 +186,36 @@ BasicStencil.SymbolSource = new SymbolCollection()
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilContextMenu)
 
-## Menu for SymbolGroup Headers
+## Menu for symbol group headers
+
+Using this context menu, you can easily execute commands for the symbol group headers. You can set a specific context menu for a particular symbol group header or use the same menu items for all symbol group headers.
 
 ## Using Menu
 
-You can define a specific menu item for a particular SymbolGroupHeader by using the Menu property of the stencil.
+You can set a particular menu item for a specific symbol group header by using the `Menu` property of the stencil.
 
 {% highlight xaml %}
 
-<syncfusion:SymbolGroupViewModel  Name="Arrow Shapes">
-    <syncfusion:SymbolGroupViewModel.Menu>
-        <syncfusion:DiagramMenu>
-            <syncfusion:DiagramMenu.MenuItems>
-                <local:DiagramMenuItems>
-                    <!--Define the MenuItem for the Symbolgroup Headers-->
-                    <syncfusion:DiagramMenuItem Content="Delete" Icon="pack://application:,,,/Images/Delete.png" Command="Syncfusion:DiagramCommands.Delete"  />
-                </local:DiagramMenuItems>
-            </syncfusion:DiagramMenu.MenuItems>
-        </syncfusion:DiagramMenu>
-    </syncfusion:SymbolGroupViewModel.Menu>
-</syncfusion:SymbolGroupViewModel>
+<syncfusion:Stencil x:Name="stencil" Grid.Column="0" ExpandMode="OneOrMore" BorderBrush="#dfdfdf" BorderThickness="1">
+    <syncfusion:Stencil.SymbolGroups>
+        <syncfusion:SymbolGroups>
+            <syncfusion:SymbolGroupViewModel Name="Basic Shapes" CategorySource="{StaticResource BasicShapes}">
+                <syncfusion:SymbolGroupViewModel.Menu>
+                    <syncfusion:DiagramMenu>
+                        <syncfusion:DiagramMenu.MenuItems>
+                            <local:DiagramMenuItems>
+                            <!--Define the MenuItem for the Symbol group headers-->
+                                <syncfusion:DiagramMenuItem Content="Delete" Icon="pack://application:,,,/Images/Trash-WF.png" />
+                            </local:DiagramMenuItems>
+                        </syncfusion:DiagramMenu.MenuItems>
+                    </syncfusion:DiagramMenu>
+                </syncfusion:SymbolGroupViewModel.Menu>
+            </syncfusion:SymbolGroupViewModel>
+            <syncfusion:SymbolGroupViewModel Name="Flow Shapes" CategorySource="{StaticResource FlowShapes}"/>
+            <syncfusion:SymbolGroupViewModel Name="Arrow Shapes" CategorySource="{StaticResource ArrowShapes}"/>
+            <syncfusion:SymbolGroupViewModel Name="DataFlow Shapes" CategorySource="{StaticResource DataFlowShapes}"/>
+        </syncfusion:SymbolGroups>
+    </syncfusion:Stencil.SymbolGroups>
 
 {% endhighlight %}
 
@@ -213,21 +223,39 @@ You can define a specific menu item for a particular SymbolGroupHeader by using 
 
 ## Using SymbolGroupMenu
 
-You can define specific menu items for all SymbolGroupHeaders by using the SymbolGroupMenu property of the stencil.
+You can set specific menu items for all the headers of symbol groups by using the `SymbolGroupMenu` property of the stencil.
 
 {% tabs %} 
 {% highlight xaml %}
 
-<syncfusion:Stencil.SymbolGroupMenu>
-     <syncfusion:DiagramMenu>
-         <syncfusion:DiagramMenu.MenuItems>
-             <local:DiagramMenuItems>
- <!--Define the MenuItem for the Symbolgroup Headers-->
-                 <syncfusion:DiagramMenuItem Content="Delete" Command="Syncfusion:DiagramCommands.Delete" Icon=" pack://application:,,,/Images/Delete.png "  ></syncfusion:DiagramMenuItem>
-             </local:DiagramMenuItems>
-         </syncfusion:DiagramMenu.MenuItems>
-     </syncfusion:DiagramMenu>
- </syncfusion:Stencil.SymbolGroupMenu>
+ <syncfusion:Stencil x:Name="stencil"  Grid.Column="0"   ExpandMode="ZeroOrMore" BorderBrush="#dfdfdf" BorderThickness="1">
+     <syncfusion:Stencil.SymbolGroups>
+         <syncfusion:SymbolGroups>
+             <syncfusion:SymbolGroupViewModel Name="Basic Shapes" CategorySource="{StaticResource BasicShapes}"/>
+             <syncfusion:SymbolGroupViewModel Name="Flow Shapes" CategorySource="{StaticResource FlowShapes}"/>
+             <syncfusion:SymbolGroupViewModel Name="Arrow Shapes" CategorySource="{StaticResource ArrowShapes}"/>
+             <syncfusion:SymbolGroupViewModel Name="DataFlow Shapes" CategorySource="{StaticResource DataFlowShapes}"/>
+             <syncfusion:SymbolGroupViewModel Name="UMLActivity Shapes" CategorySource="{StaticResource UMLActivity}"/>
+             <syncfusion:SymbolGroupViewModel Name="UMLUseCase Shapes" CategorySource="{StaticResource UMLUseCase}"/>
+             <syncfusion:SymbolGroupViewModel Name="UMLRelationship Shapes" CategorySource="{StaticResource UMLRelationship}"/>
+             <syncfusion:SymbolGroupViewModel Name="Swimlane Shapes" CategorySource="{StaticResource SwimlaneShapes}"/>
+             <syncfusion:SymbolGroupViewModel Name="BPMNEditor Shapes" CategorySource="{StaticResource BPMNEditorShapes}"/>
+         </syncfusion:SymbolGroups>
+     </syncfusion:Stencil.SymbolGroups>
+
+
+     <syncfusion:Stencil.SymbolGroupMenu>
+         <syncfusion:DiagramMenu>
+             <syncfusion:DiagramMenu.MenuItems>
+                 <local:DiagramMenuItems>
+                  <!--Define the MenuItem for the Symbol group headers-->
+                     <syncfusion:DiagramMenuItem Content="Move Up" Icon="pack://application:,,,/Images/Arrow Up -03.png"  ></syncfusion:DiagramMenuItem>
+                     <syncfusion:DiagramMenuItem Content="Move Down" Icon="pack://application:,,,/Images/Road-Backward.png"  ></syncfusion:DiagramMenuItem>
+                 </local:DiagramMenuItems>
+             </syncfusion:DiagramMenu.MenuItems>
+         </syncfusion:DiagramMenu>
+     </syncfusion:Stencil.SymbolGroupMenu>
+ </syncfusion:Stencil>
 
 {% endhighlight %}
 
@@ -235,11 +263,11 @@ You can define specific menu items for all SymbolGroupHeaders by using the Symbo
 
 DiagramMenuItem menu = new DiagramMenuItem() 
 {
-	Content = "Edit Annotation", 
+	Content = "Delete", 
 	Command = (diagram.Info as IGraphInfo).Commands.Delete,
-	Icon = @"pack://application:,,,/Edit Annotation.ico"
+	Icon = @"pack://application:,,,/Delete.ico"
 };
-(stencil.Menu.MenuItems as ICollection<DiagramMenuItem>).Add(menu);
+(stencil.SymbolGroupMenu.MenuItems as ICollection<DiagramMenuItem>).Add(menu);
 
 {% endhighlight %}
 
