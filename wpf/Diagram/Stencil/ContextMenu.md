@@ -219,8 +219,6 @@ You can set a particular menu item for a specific symbol group header by using t
 
 {% endhighlight %}
 
-![SymbolGroup Header ContextMenu](Stencil_images/SymbolGroupHeadersContextMenuUsingMenu.gif)
-
 ## Using SymbolGroupMenu
 
 You can set specific menu items for all the headers of symbol groups by using the `SymbolGroupMenu` property of the stencil.
@@ -273,6 +271,6 @@ DiagramMenuItem menu = new DiagramMenuItem()
 
 {% endtabs %}
 
-![SymbolGroup Header ContextMenu](Stencil_images/SymbolGroupHeadersContextMenuUsingSymbolGroupMenu.gif)
+![SymbolGroupMenu and Menu](Stencil_images/MenuandSymbolGroupMenu.gif)
 
 
