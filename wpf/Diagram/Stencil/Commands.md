@@ -9,11 +9,11 @@ documentation: ug
 
 # Command Manager for Stencil in WPF Diagram (SfDiagram)
 
-The Stencil in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands. These enhancements allow users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently, all without using a mouse. The CommandManager for the Stencil control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the Stencil.
+The Stencil in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands. These enhancements allow users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently, all without using a mouse. The `CommandManager` for the Stencil control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the Stencil.
 
 ## Built-in Commands and Key Gestures
 
-Stencil's CommandManager provides a range of built-in commands that can be executed using specific key gestures. Below is a list of common commands and their corresponding key gestures.
+Stencil's `CommandManager` provides a range of built-in commands that can be executed using specific key gestures. Below is a list of common commands and their corresponding key gestures.
 
 | Command | Key | Key Modifiers |
 |---|---|---|
