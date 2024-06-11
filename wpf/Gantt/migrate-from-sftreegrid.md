@@ -200,11 +200,11 @@ VS2010
 <table>
 <tr>
 <th>GridTreeControl</th>
-<th>GridTreeColumn</th>
+<th>SfTreeGrid</th>
 </tr>
 
 <tr>
-<td>{{'[SfTreeGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html)'| markdownify }}</td>
+<td>{{'[GridTreeColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeColumn.html)'| markdownify }}</td>
 <td>{{'[TreeGridTextColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html#%22%22)'| markdownify }} <br/>
 {{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#%22%22)'| markdownify }} <br/>
 {{'[TreeGridCurrencyColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#%22%22)'| markdownify }} <br/>
