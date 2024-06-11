@@ -467,6 +467,8 @@ this.Schedule.TimelineViewSettings.CellBottomPadding = 30;
 {% endhighlight %}
 {% endtabs %}
 
+![Cell Bottom Padding in Scheduler Appointment](Timeline_images/wpf-cell-padding.png)
+
 N>
 * This customization will apply only when the scheduler has an appointment.
 

@@ -456,6 +456,8 @@ this.Schedule.DaysViewSettings.CellRightPadding = 30;
 {% endhighlight %}
 {% endtabs %}
 
+![Cell Right Padding in Scheduler Appointment](DaysView_Images/wpf-cell-padding.png)
+
 N>
 * This customization will apply only when the scheduler has an appointment.
 
