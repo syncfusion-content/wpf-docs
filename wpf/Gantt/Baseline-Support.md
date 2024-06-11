@@ -101,7 +101,7 @@ this.Gantt.LoadDefaultTableView();
 
 The following image shows the BaseLine Table View:
 
-![Baseline-Support_img1](Baseline-Support_images/Baseline-Support_img1.png)
+![gantt-control-baseline-grid](Baseline-Support_images/gantt-control-baseline-grid.png)
 
 BaseLine Table View
 {:.caption}
@@ -164,7 +164,7 @@ NA</td></tr>
 
 The following image shows the BaseLine Chart View:
 
-![Baseline-Chart_img4](Baseline-Support_images/Baseline-Chart_img4.png)
+![gantt-control-baseline-chart](Baseline-Support_images/gantt-control-baseline-chart.png)
 
 #### Samples
 
@@ -186,7 +186,7 @@ Initially, Gantt will get loaded with a default set of columns. Then, you can ad
 
 This helps the Project Lead to store the estimation and will help to schedule the project in an efficient way by comparing the progress on planning itself. Organizations can have the default set of columns on Gantt Grid on loading, and when they need to compare a field with the estimate data, they can pick that column from the drop down. 
 
-![Baseline-Support_img2](Baseline-Support_images/Baseline-Support_img2.png)
+![gantt-control-add-new-column](Baseline-Support_images/gantt-control-add-new-column.png)
 
 On-Demand Baseline Column Inclusion
 {:caption}

@@ -640,12 +640,7 @@ ObservableCollection<Task> GetData()
 Output:
 
 The corresponding output for the code is as follows.
-
-
-
-![Auto-Update-Hierarchy_img1](Auto-Update-Hierarchy_images/Auto-Update-Hierarchy_img1.png)
-
-
+![gantt-control-auto-updated-hierarchy](Auto-Update-Hierarchy_images/gantt-control-auto-updated-hierarchy.png)
 
 Gantt Control with Auto Updated Hierarchy
 {:.caption}

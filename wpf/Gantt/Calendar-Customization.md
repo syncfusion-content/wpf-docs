@@ -189,7 +189,7 @@ The following image shows Customized Calender and Weekends:
 
 
 
-![Calendar-Customization_img1](Calendar-Customization_images/Calendar-Customization_img1.png)
+![gantt-control-calendar-customization](Calendar-Customization_images/gantt-control-calendar-customization.png)
 
 
 

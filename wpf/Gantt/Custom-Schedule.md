@@ -193,7 +193,7 @@ return RowInfo;
 
 The following image shows Custom Schedule:
 
-![Custom-Schedule_img1](Custom-Schedule_images/Custom-Schedule_img1.png)
+![gantt-control-custom-datetime-schedule](Custom-Schedule_images/gantt-control-custom-datetime-schedule.png)
 
 Custom Schedule
 {:.caption}
@@ -370,11 +370,7 @@ void Gantt_ScheduleCellCreated(object sender, ScheduleCellCreatedEventArgs args)
 
 The following image shows Custom DateTime Schedule:
 
-
-
-![Custom-Schedule_images2](Custom-Schedule_images/Custom-Schedule_img2.png)
-
-
+![gantt-control-custom-schedule](Custom-Schedule_images/gantt-control-custom-schedule.png)
 
 Custom DateTime Schedule
 {:.caption}

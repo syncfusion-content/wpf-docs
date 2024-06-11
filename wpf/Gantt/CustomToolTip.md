@@ -119,12 +119,8 @@ The following code illustrates how to add a custom tooltip to the Gantt control.
 
 {% endhighlight  %}
 
-
 The following image shows Custom ToolTip:
-
-
-
-![CustomToolTip_img1](CustomToolTip_images/CustomToolTip_img1.png)
+![gantt-control-custom-tooltip](CustomToolTip_images/gantt-control-custom-tooltip.png)
 
 
 
