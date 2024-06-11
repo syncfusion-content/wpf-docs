@@ -13,7 +13,7 @@ A set of stencil symbols can be combined together to create a group and many num
 
 ## Group symbols into a category
 
-The symbols of the same category can be grouped using the `GroupMappingKey` property of the [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) class. The `Stencil` groups the symbols based on the `GroupMappingKey` property, which specifies the name of the property whose value will determine the group category. In the following code example, the `GroupMappingKey` is set to "Key", so the `Stencil` will create the SymbolGroups based on the value of the Key property.
+The symbols of the same category can be grouped using the [GroupMappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_GroupMappingName) property of the [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) class. The `Stencil` groups the symbols based on the `GroupMappingName` property, which specifies the name of the property whose value will determine the group category. In the following code example, the `GroupMappingName` is set to "Key", so the `Stencil` will create the SymbolGroups based on the value of the Key property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,7 +55,7 @@ The symbols of the same category can be grouped using the `GroupMappingKey` prop
                   ExpandMode="ZeroOrMore"
                   BorderBrush="#dfdfdf"
                   BorderThickness="1"
-                  GroupMappingKey="Key"
+                  GroupMappingName="Key"
                   Title="Shapes"
                   TitleTemplate="{StaticResource TitleTemplate}">
     <stencil:Stencil.SymbolSource>
@@ -112,7 +112,7 @@ The symbols of the same category can be grouped using the `GroupMappingKey` prop
 //Define a Stencil.
 Stencil stencil = new Stencil()
 {
-    GroupMappingKey = "Key",
+    GroupMappingName = "Key",
 };
 
 //Define the SymbolSource with the SymbolCollection.
@@ -385,11 +385,11 @@ public class StencilViewModel : Stencil
 
 The `SfDiagram` provides supports to populate view models for each SymbolGroup created for the symbols added through the `SymbolSource` property. 
 
-The `SymbolGroupViewModel` class provides the support to create the view models to the symbol group and provides supports to add symbols to it as Node, Connectors, groups and list of predefined symbols.
+The [SymbolGroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html) class provides the support to create the view models to the symbol group and provides supports to add symbols to it as Node, Connectors, groups and list of predefined symbols.
 
-* `Name`: Specifies the display name of the symbol group. It also adds the symbols to the symbol groups defined through the `SymbolSource` property which symbol has same `Key` value as this `Name` property.
-* `Symbols`: Specifies the list of symbols need to be added to the symbol group. It can be any diagram elements of Nodes, Connectors, Groups, Containers, BPMN elements.
-* `CategorySource`: Specifies the list of symbols need to be added to the `SymbolGroupViewModel` using the static resource key value from the predefined category collections.
+* [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Name): Specifies the display name of the symbol group. It also adds the symbols to the symbol groups defined through the `SymbolSource` property which symbol has same `Key` value as this `Name` property.
+* [Symbols](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Symbols): Specifies the list of symbols need to be added to the symbol group. It can be any diagram elements of Nodes, Connectors, Groups, Containers, BPMN elements.
+* [CategorySource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_CategorySource): Specifies the list of symbols need to be added to the `SymbolGroupViewModel` using the static resource key value from the predefined category collections.
 
 In addition to that, new symbols can be added into the symbol groups or you can remove the existing symbols from any symbol group at run time. As same as symbols, new symbol group can be added into the stencil and remove the existing symbol group from the stencil.
 
