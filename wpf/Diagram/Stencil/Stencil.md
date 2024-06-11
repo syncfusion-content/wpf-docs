@@ -137,7 +137,7 @@ The diagram elements such as [NodeViewModel](https://help.syncfusion.com/cr/wpf/
 //Define the SymbolSource with SymbolCollection.
 stencil.SymbolSource = new SymbolCollection();
 
-//Initialize the node diagram element.
+//Initialize the node.
 NodeViewModel node = new NodeViewModel()
 {
     Key = "Nodes",
@@ -148,7 +148,7 @@ NodeViewModel node = new NodeViewModel()
     Shape = this.Resources["Rectangle"],
 };
 
-//Initialize the connector diagram element.
+//Initialize the connector.
 ConnectorViewModel connector = new ConnectorViewModel()
 {
     Key = "Connectors",
@@ -156,7 +156,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
     TargetPoint = new Point(200, 200),
 };
 
-//Initialize the group element.
+//Initialize the group.
 GroupViewModel group = new GroupViewModel()
 {
     Key = "Groups",
