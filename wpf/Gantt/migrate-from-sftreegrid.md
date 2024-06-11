@@ -16,8 +16,13 @@ To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com
 <th>Removed assemblies</th>
 <th>Added assemblies</th></tr>
 <tr>
-<td>Syncfusion.Grid.WPF, Syncfusion.GridCommon.WPF</td>
-<td>Syncfusion.SfGrid.WPF, Syncfusion.SfSkinManager.WPF, Syncfusion.Themes.MaterialLight.WPF</td>
+<td>Syncfusion.Grid.WPF</br>
+Syncfusion.GridCommon.WPF
+</td>
+<td>Syncfusion.SfGrid.WPF</br>
+Syncfusion.SfSkinManager.WPF</br>
+Syncfusion.Themes.MaterialLight.WPF
+</td>
 </tr>
 </table>
 
@@ -27,7 +32,9 @@ To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com
 <th>Removed namespaces</th>
 <th>Added namespace</th></tr>
 <tr>
-<td>Syncfusion.Windows.Controls.Gantt.Grid, Syncfusion.Windows.Controls.Gantt.Schedule, Syncfusion.Windows.Controls.Gantt.Chart</td>
+<td>Syncfusion.Windows.Controls.Gantt.Grid</br>
+Syncfusion.Windows.Controls.Gantt.Schedule</br>
+Syncfusion.Windows.Controls.Gantt.Chart</td>
 <td>Syncfusion.Windows.Controls.Gantt</td>
 </tr>
 </table>
@@ -89,7 +96,6 @@ To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com
 ### Methods
 <table>
 <tr>
-<th>Class name</th>
 <th>Existing method</th>
 <th>New method</th>
 </tr>
@@ -115,36 +121,26 @@ To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com
 </tr>
 
 <tr>
-<td>{{'[GridTreeNodeEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeEventHandler.html)'| markdownify }}</td>
+<td>{{'[GridTreeNodeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeEventArgs.html)'| markdownify }}</td>
 <td>{{'[ExpandStateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateChanged)'| markdownify }}</td>
-<td>{{'[EventHandler(NodeExpandedEventArgs)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeExpandedEventArgs.html)'| markdownify }}</td>
-<td>{{'[NodeExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeExpanded)'| markdownify }}</td>
+<td>{{'[NodeExpandedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeExpandedEventArgs.html)'| markdownify }}</br>
+{{'[NodeCollapsedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeCollapsedEventArgs.html)'| markdownify }}</td>
+<td>{{'[NodeExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeExpanded)'| markdownify }}</br>
+{{'[NodeCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsed)'| markdownify }}</td>
 </tr>
 
 <tr>
-<td>{{'[GridTreeNodeEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeEventHandler.html)'| markdownify }}</td>
-<td>{{'[ExpandStateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateChanged)'| markdownify }}</td>
-<td>{{'[EventHandler(NodeCollapsedEventArgs)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeCollapsedEventArgs.html)'| markdownify }}</td>
-<td>{{'[NodeCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsed)'| markdownify }}</td>
-</tr>
-
-<tr>
-<td>{{'[GridTreeNodeEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeEventHandler.html)'| markdownify }}</td>
+<td>{{'[GridTreeNodeCancelEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeCancelEventHandler.html)'| markdownify }}</td>
 <td>{{'[ExpandStateChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateChanging)'| markdownify }}</td>
-<td>{{'[EventHandler(NodeExpandedEventArgs)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeExpandedEventArgs.html)'| markdownify }}</td>
-<td>{{'[NodeExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeExpanding)'| markdownify }}</td>
+<td>{{'[NodeExpandingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeExpandingEventArgs.html)'| markdownify }}</br>
+{{'[NodeCollapsingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeCollapsingEventArgs.html)'| markdownify }}</td>
+<td>{{'[NodeExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeExpanding)'| markdownify }}</br>
+{{'[NodeCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsing)'| markdownify }}</td>
 </tr>
 
-<tr>
-<td>{{'[GridTreeNodeEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeEventHandler.html)'| markdownify }}</td>
-<td>{{'[ExpandStateChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateChanging)'| markdownify }}</td>
-<td>{{'[EventHandler(NodeCollapsedEventArgs)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeCollapsedEventArgs.html)'| markdownify }}</td>
-<td>{{'[NodeCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsing)'| markdownify }}</td>
-</tr>
 
 <tr>
-<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
-<td>{{'[GridRoutedEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.GridRoutedEventHandler.html)'| markdownify }}</td>
+<td>{{'[SyncfusionRoutedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.SyncfusionRoutedEventArgs.html)'| markdownify }}</td>
 <td>{{'[ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ItemsSourceChanged)'| markdownify }} </td>
 <td>{{'[EventHandler(TreeGridItemsSourceChangedEventArgs)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridItemsSourceChangedEventArgs.html)'| markdownify }}</td>
 <td>{{'[ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSourceChanged)'| markdownify }}</td>
@@ -162,28 +158,53 @@ To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com
 
 <tr>
 <td>{{'[GridSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GridSelectionMode.html)'| markdownify }}</td>
-<td>MouseMove, MouseClick</td>
+<td>MouseMove</br>
+MouseClick</td>
 <td>{{'[SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode)'| markdownify }}</td>
-<td>None, Single, Multiple</td>
+<td>None</br>
+Single</br>
+Multiple</td>
 </tr>
 
 <tr>
 <td>{{'[GridTreeNodeActions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeActions.html)'| markdownify }}</td>
-<td>Expanding, Expanded, Collapsing, Collapsed, Selecting, Unselecting</td>
+<td>Expanding</br>
+Expanded</br>
+Collapsing</br>
+Collapsed</br>
+Selecting</br>
+Unselecting</td>
 <td>{{'[AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoExpandMode)'| markdownify }}</td>
-<td>None, RootNodesExpanded, AllNodesExpanded</td>
+<td>None</br>
+RootNodesExpanded</br>
+AllNodesExpanded</td>
 </tr>
+
+<tr>
+<td>{{'[VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.VisualStyle.html)'| markdownify }}</td>
+<td>Office 2010 Blue Style</br>
+Office2010Blue</br>
+Office2010Black</br>
+Office2010Silver</br>
+Metro</br>
+Blend</br>
+VS2010
+</td>
+<td>Nil</td>
+<td>Nil</td>
+</tr>
+
 </table>
 
 ### Column types
 <table>
 <tr>
 <th>GridTreeControl</th>
-<th>GridTreeColumn</th>
+<th>SfTreeGrid</th>
 </tr>
 
 <tr>
-<td>{{'[SfTreeGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html)'| markdownify }}</td>
+<td>{{'[GridTreeColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeColumn.html)'| markdownify }}</td>
 <td>{{'[TreeGridTextColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html#%22%22)'| markdownify }} <br/>
 {{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#%22%22)'| markdownify }} <br/>
 {{'[TreeGridCurrencyColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#%22%22)'| markdownify }} <br/>
@@ -358,5 +379,202 @@ To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com
 <td>SelectionChanged</td>
 <td>SelectionChangedEventArgs</td>
 <td>Occurs when the selection is changed in the Gantt.</td>
+</tr>
+</table>
+
+## Gantt.MVVM.WPF
+To make the migration from GridTreeControl to SfTreeGrid, integrating drag-and-drop, filtering, and sorting into the Gantt grid, this transition breaks certain APIs and introduces new ones. Please find the differences in the following topics.
+
+### Assembly references
+<table>
+<tr>
+<th>Removed assemblies</th>
+<th>Added assemblies</th>
+</tr>
+
+<tr>
+<td>Syncfusion.Grid.WPF</br>
+Syncfusion.GridCommon.WPF
+</td>
+<td>Syncfusion.SfGrid.WPF</td>
+</tr>
+</table>
+
+### Alternate events
+<table>
+<tr>
+<th>GridTreeControl Structure</th>
+<th>GridTreeControl - Event name</th>
+<th>SfTreeGrid Structure</th>
+<th>SfTreeGrid - Event name</th>
+<th>Summary</th>
+</tr>
+
+<tr>
+<td>{{'[GridTreeRequestTreeItemsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeRequestTreeItemsEventArgs.html)'| markdownify }}</td>
+<td>{{'[RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_RequestTreeItems)'| markdownify }}</td>
+<td>{{'[TreeGridRequestTreeItemsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRequestTreeItemsEventArgs.html)'| markdownify }}</td>
+<td>{{'[RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems)'| markdownify }}</td>
+<td>This event is used to request an IEnumerable object that holds the child item objects for a particular parent item in on demand loading.</td>
+</tr>
+
+<tr>
+<td>{{'[SyncfusionRoutedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.SyncfusionRoutedEventArgs.html)'| markdownify }}</td>
+<td>{{'[ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ItemsSourceChanged)'| markdownify }}</td>
+<td>{{'[TreeGridItemsSourceChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridItemsSourceChangedEventArgs.html)'| markdownify }}</td>
+<td>{{'[ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSourceChanged)'| markdownify }}</td>
+<td>Occurs when the ItemsSource changed.</td>
+</tr>
+
+<tr>
+<td>{{'[GridTreeNodeCancelEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeCancelEventArgs.html)'| markdownify }}</td>
+<td>{{'[ExpandStateChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateChanging)'| markdownify }}</td>
+<td>{{'[NodeExpandingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeExpandingEventArgs.html)'| markdownify }}</br>
+{{'[NodeCollapsingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeCollapsingEventArgs.html)'| markdownify }}</td>
+<td>{{'[NodeExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeExpanding)'| markdownify }}</br>
+{{'[NodeCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsing)'| markdownify }}</td>
+<td>Occurs when the node is being expanded or collapsed.</td>
+</tr>
+
+<tr>
+<td>{{'[GridTreeNodeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeNodeEventArgs.html)'| markdownify }}</td>
+<td>{{'[ExpandStateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandStateChanged)'| markdownify }}</td>
+<td>{{'[NodeExpandedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeExpandedEventArgs.html)'| markdownify }}</br>
+{{'[NodeCollapsedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.NodeCollapsedEventArgs.html)'| markdownify }}
+</td>
+<td>{{'[NodeExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeExpanded)'| markdownify }}</br>
+{{'[NodeCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsed)'| markdownify }}</td>
+<td>Occurs after the node is expanded or collapsed.</td>
+</tr>
+</table>
+
+### Alternate commands
+#### ExpandStateChanging
+<table>
+<tr>
+<th>GridTreeControl commands</th>
+<th>SfTreeGrid commands</th>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangingCommandBehaviorWithEventArgs</td>
+<td>GanttGridNodeExpandingCommandBehaviorWithEventArgs</br>
+ GanttGridNodeCollapsingCommandBehaviorWithEventArgs</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangingCommandWithEventArgs</td>
+<td>GanttGridNodeExpandingCommandWithEventArgs</br>
+GanttGridNodeCollapsingCommandWithEventArgs</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangingCommandBehavior</td>
+<td>GanttGridNodeExpandingCommandBehavior</br>
+GanttGridNodeCollapsingCommandBehavior
+</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangingCommand</td>
+<td>GanttGridNodeExpandingCommand</br>
+GanttGridNodeCollapsingCommand</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangingCommandBehavior</td>
+<td>GanttGridNodeExpandingCommandBehavior</br>
+GanttGridNodeCollapsingCommandBehavior</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangingCommand</td>
+<td>GanttGridNodeExpandingCommand</br>
+GanttGridNodeCollapsingCommand</td>
+</tr>
+</table>
+
+#### ExpandStateChanged
+<table>
+<tr>
+<th>GridTreeControl commands</th>
+<th>SfTreeGrid commands</th>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangedCommandBehaviorWithEventArg</td>
+<td>GanttGridNodeExpandedCommandBehaviorWithEventArg</br>
+GanttGridNodeCollapsedCommandBehaviorWithEventArgs</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangedCommandWithEventArgs</td>
+<td>GanttGridNodeExpandedCommandWithEventArgs</br>
+GanttGridNodeCollapsedCommandWithEventArgs</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangedCommandBehavior</td>
+<td>GanttGridNodeExpandedCommandBehavior</br> 
+GanttGridNodeCollapsedCommandbehavior</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangedCommand</td>
+<td>GanttGridNodeExpandStateChangedCommand</br> 
+GanttGridNodeCollapsedCommand</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangedCommandBehavior</td>
+<td>GanttGridNodeExpandedCommandBehavior</br> 
+GanttGridNodeCollapsedCommandbehavior</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangedCommand</td>
+<td>GanttGridNodeExpandedCommand</br> 
+GanttGridNodeCollapsedCommand</td>
+</tr>
+</table>
+
+### Deprecated events
+These events are deprecated. The GridTreeControl has been replaced by the SfTreeGrid in the GanttControl.
+<table>
+<tr>
+<th>Structure</th>
+<th>Event name</th>
+<th>Summary</th>
+</tr>
+
+<tr>
+<td>EventHandler</td>
+<td>{{'[NodesPopulated](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_NodesPopulated)'| markdownify }}</td>
+<td>Occurs after the nodes are populated in the Grid.</td>
+</tr>
+
+<tr>
+<td>EventHandler</td>
+<td>{{'[RequestNodeImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_RequestNodeImage)'| markdownify }}</td>
+<td>This event is used to request an image for the specified node item. This event is only raised if SupportNodeImages is true.</td>
+</tr>
+
+<tr>
+<td>{{'[EventHandler< GridTreeCreatingNodeEventArgs>](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeCreatingNodeHandler.html)'| markdownify }}</td>
+<td>{{'[CreatingTreeNode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_CreatingTreeNode)'| markdownify }}</td>
+<td>Event which is raised as GridTreeNodes are created so derived tree nodes can be used.
+</td>
+</tr>
+
+<tr>
+<td>{{'[EventHandler< SyncfusionRoutedEventArgs>](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.GridRoutedEventHandler.html)'| markdownify }}</td>
+<td>{{'[ParentPropertyNameChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ParentPropertyNameChanged)'| markdownify }}</td>
+<td>Occurs when ParentPropertyName are being changed.</td>
+</tr>
+
+<tr>
+<td>{{'[EventHandler< SyncfusionRoutedEventArgs>](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.GridRoutedEventHandler.html)'| markdownify }}</td>
+<td>{{'[ChildPropertyNameChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ChildPropertyNameChanged)'| markdownify }}</td>
+<td>Occurs when ChildPropertyName are being changed.</td>
 </tr>
 </table>

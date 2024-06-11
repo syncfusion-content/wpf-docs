@@ -16,7 +16,7 @@ The WPF `GanttControl` allows you to reorder rows and columns within the `GanttG
 {% highlight xaml %}
 
 <syncfusion:GanttControl x:Name="ganttControl" 
-                   AllowDragDrop="False">
+                         AllowDragDrop="False">
 </syncfusion:GanttControl>
 
 {% endhighlight %}
@@ -25,14 +25,14 @@ this.ganttControl.AllowDragDrop = false;
 {% endhighlight  %}
 {% endtabs %}
 
-## Handle node drag starting in Gantt grid
+## Handle node drag starting in gantt grid
 You can get the node details and handle whether the node can be draggable or not by using the `TreeGridNodeDragStarting` event. This event will be triggered when the node is started dragging. The `TreeGridNodeDragStartingEventArgs` argument contains the `Nodes` property which gets the nodes that contain the associated data while dragging the rows.
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:GanttControl x:Name="ganttControl"
-                   TreeGridNodeDragStarting="OnGanttControlTreeGridNodeDragStarting"> 
+                         TreeGridNodeDragStarting="OnGanttControlTreeGridNodeDragStarting"> 
 </syncfusion:GanttControl>
 
 {% endhighlight %}
@@ -51,14 +51,14 @@ private void OnGanttControlTreeGridNodeDragStarting(object sender, TreeGridNodeD
 {% endhighlight  %}
 {% endtabs %}
 
-## Handle node dragging in Gantt grid
+## Handle node dragging in gantt grid
 You can get the dragging node details in gantt grid by using the `TreeGridNodeDragging` event. This event will be continuously triggered when the node is being dragged. The `TreeGridNodeDraggingEventArgs` argument contains the `Nodes` property which gets the nodes that are being dragged.
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:GanttControl x:Name="ganttControl"
-                   TreeGridNodeDragging="OnGanttControlTreeGridNodeDragging">
+                         TreeGridNodeDragging="OnGanttControlTreeGridNodeDragging">
 </syncfusion:GanttControl>
 
 {% endhighlight %}
@@ -76,17 +76,17 @@ private void OnGanttControlTreeGridNodeDragging(object sender, TreeGridNodeDragg
 {% endhighlight  %}
 {% endtabs %}
 
-## Handle node drop in Gantt grid
+## Handle node drop in gantt grid
 Using the `TreeGridNodeDrop` event you can get the dropping node details, target node, and you can handle whether the node can be dropped to the specific position or not. This event will trigger after dropping the node. The `TreeGridNodeDropEventArgs` argument contains the following properties.
 
-* `Nodes` - Gets the item that contains the associated data while dragging the rows.
+* `Nodes` - Gets the item that contains the associated data.
 * `TargetNode` - Gets a value indicating the target node which is going to drop.
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:GanttControl x:Name="ganttControl"
-                   TreeGridNodeDrop="OnGanttControlTreeGridNodeDrop">
+                         TreeGridNodeDrop="OnGanttControlTreeGridNodeDrop">
 </syncfusion:GanttControl>
 
 {% endhighlight %}
@@ -106,7 +106,7 @@ private void OnGanttControlTreeGridNodeDrop(object sender, TreeGridNodeDropEvent
 {% endhighlight  %}
 {% endtabs %}
 
-## Handle drag and drop in Gantt chart
+## Handle drag and drop in gantt chart
 You can get the dragging and dropping node details in gantt chart by using the `NodeDragDelta` and `NodeDragCompleted` events. The `NodeDragAndDropEventArgs` argument contains the following properties.
 
 * `Node` - Gets or sets the node.
@@ -115,14 +115,14 @@ You can get the dragging and dropping node details in gantt chart by using the `
 * `EndTime` - Gets or sets the end time.
 * `Start` - Gets or sets the start.
 * `End` - Gets or sets the end.
-* `NodePresenter` - Gets or sets the node parent.
+* `NodePresenter` - Gets the node parent.
 
 ### Handle node dragging in Gantt chart
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:GanttControl x:Name="ganttControl"
-                   NodeDragDelta="OnGanttControlNodeDragDelta">
+                         NodeDragDelta="OnGanttControlNodeDragDelta">
 </syncfusion:GanttControl>
 
 {% endhighlight %}
@@ -140,12 +140,12 @@ private void OnGanttControlNodeDragDelta(object sender, NodeDragAndDropEventArgs
 {% endhighlight  %}
 {% endtabs %}
 
-### Handle node drop in Gantt chart
+### Handle node drop in gantt chart
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:GanttControl x:Name="ganttControl"
-                   NodeDragCompleted="OnGanttControlNodeDragCompleted">
+                         NodeDragCompleted="OnGanttControlNodeDragCompleted">
 </syncfusion:GanttControl>
 
 {% endhighlight %}
