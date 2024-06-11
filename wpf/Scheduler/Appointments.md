@@ -774,7 +774,7 @@ this.Schedule.EnableToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Appointment tooltip in WPF Scheduler](appointments_images/Appointment-tooltip.gif)
+![appointment-tool-tip-support-in-WPF-scheduler](appointments_images/Appointment-tooltip.gif)
 
 ### Customize tooltip appearance
 
