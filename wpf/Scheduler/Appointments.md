@@ -774,6 +774,8 @@ this.Schedule.EnableToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
+![appointment-tool-tip-support-in-WPF-scheduler](appointments_images/appointment-tool-tip-support-in-WPF-scheduler.gif)
+
 ### Customize tooltip appearance
 
 You can customize the tooltip appearance by using the `ToolTipTemplate` property in the `SfScheduler.`

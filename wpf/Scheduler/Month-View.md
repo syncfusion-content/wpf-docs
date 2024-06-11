@@ -562,6 +562,8 @@ this.Schedule.MonthViewSettings.CellRightPadding = 30;
 {% endhighlight %}
 {% endtabs %}
 
+![cell-right-padding-support-in-WPF-scheduler](Month-View_Images/cell-right-padding-support-in-WPF-scheduler.png)
+
 N>
 * This customization will apply only when the scheduler has an appointment.
 
