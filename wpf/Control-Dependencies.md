@@ -375,8 +375,9 @@ Syncfusion.Edit.WPF
 <tr>
 <td> 
 Syncfusion.Gantt.WPF <br/>
-Syncfusion.Grid.WPF <br/>
-Syncfusion.GridCommon.WPF <br/>
+Syncfusion.SfGrid.WPF <br/>
+Syncfusion.Themes.MaterialLight.WPF <br/>
+Syncfusion.SfSkinManager.WPF <br/>
 Syncfusion.Shared.WPF <br/>
 Syncfusion.ProjIO.Base
 </td>
