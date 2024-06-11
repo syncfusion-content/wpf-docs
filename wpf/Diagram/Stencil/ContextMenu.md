@@ -185,3 +185,46 @@ BasicStencil.SymbolSource = new SymbolCollection()
 ![Symbol Custom ContextMenu](Stencil_images/SymbolsContextMenuItems.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilContextMenu)
+
+## Context menu for SymbolGroup in Stencil
+
+You can use the [Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Menu) property in the [SymbolGroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Symbols) class to specify menu for each [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html) or use the [SymbolGroupMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolGroupMenu) property in the `Stencil` for use the same menu for all `SymbolGroups`.
+
+{% highlight xaml %}
+
+<syncfusion:Stencil x:Name="stencil11"  Grid.Column="0" Grid.Row="1"  ExpandMode="ZeroOrMore" BorderBrush="#dfdfdf" BorderThickness="1">
+    <syncfusion:Stencil.SymbolGroups>
+        <syncfusion:SymbolGroups>
+            <syncfusion:SymbolGroupViewModel Name="Basic Shapes" CategorySource="{StaticResource BasicShapes}">
+                <syncfusion:SymbolGroupViewModel.Menu>
+                    <syncfusion:DiagramMenu>
+                        <syncfusion:DiagramMenu.MenuItems>
+                            <local:DiagramMenuItems>
+                                <syncfusion:DiagramMenuItem Content="Delete" Icon="pack://application:,,,/Images/Delete.png"/>
+                            </local:DiagramMenuItems>
+                        </syncfusion:DiagramMenu.MenuItems>
+                    </syncfusion:DiagramMenu>
+                </syncfusion:SymbolGroupViewModel.Menu>
+            </syncfusion:SymbolGroupViewModel>
+            <syncfusion:SymbolGroupViewModel Name="Flow Shapes" CategorySource="{StaticResource FlowShapes}"/>
+            <syncfusion:SymbolGroupViewModel Name="Arrow Shapes" CategorySource="{StaticResource ArrowShapes}"/>
+            <syncfusion:SymbolGroupViewModel Name="DataFlow Shapes" CategorySource="{StaticResource DataFlowShapes}"/>
+        </syncfusion:SymbolGroups>
+    </syncfusion:Stencil.SymbolGroups>
+    <syncfusion:Stencil.SymbolGroupMenu>
+        <syncfusion:DiagramMenu>
+            <syncfusion:DiagramMenu.MenuItems>
+                <local:DiagramMenuItems>
+                    <syncfusion:DiagramMenuItem Content="Move Up" Icon="pack://application:,,,/Images/Arrow Up -03.png"  ></syncfusion:DiagramMenuItem>
+                    <syncfusion:DiagramMenuItem Content="Move Down" Icon="pack://application:,,,/Images/Road-Backward.png"  ></syncfusion:DiagramMenuItem>
+                </local:DiagramMenuItems>
+            </syncfusion:DiagramMenu.MenuItems>
+        </syncfusion:DiagramMenu>
+    </syncfusion:Stencil.SymbolGroupMenu>
+</syncfusion:Stencil>    
+
+{% endhighlight %}
+
+![SymbolGroupMenu and Menu](Stencil_images/MenuandSymbolGroupMenu.gif)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolGroupViewModel/SymbolGroupsWithContextMenu)

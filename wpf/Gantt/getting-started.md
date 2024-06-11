@@ -347,6 +347,36 @@ To show the date with time in the GanttGrid, enable the ShowDateWithTime propert
 
 N> By default, GanttGrid will show the date alone.
 
+## Auto expand mode
+By default, the `GanttGrid` items will be in expanded state. You can define how the nodes to be expanded while loading the `GanttControl` by using `AutoExpandMode` property.
+
+* `None` : All items are collapsed when loaded.
+* `RootNodesExpanded` : Expands only the root item when loaded.
+* `AllNodesExpanded` : Expands all the items when loaded.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:GanttControl x:Name="ganttControl"
+                         AutoExpandMode="None"> 
+</syncfusion:GanttControl>
+
+{% endhighlight %}
+
+{% highlight c# %}
+this.ganttControl.AutoExpandMode = GanttAutoExpandMode.None;
+{% endhighlight  %}
+{% endtabs %}
+
+## Theme
+The WPF GanttControl supports various built-in themes. Refer to the below links to apply themes for the Gantt control,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![theming-in-wpf-gantt-control](Getting-Started_images/theming-in-wpf-gantt-control.png)
+
 ## see also
 
 [How to show horizontal and vertical grid lines in WPF gantt control](https://support.syncfusion.com/kb/article/10135/how-to-show-horizontal-and-vertical-grid-lines-in-wpf-gantt-control)
