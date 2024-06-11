@@ -215,8 +215,8 @@ The following table illustrates the list of commands along with their associated
 | LeftArrow    | MoveLeft              | Move the selection to the symbol to the left in the symbol group              |
 | Home         | MoveToFirstInRow      | Move the selection to the first symbol in the current row of the symbol group |
 | End          | MoveToLastInRow       | Move the selection to the last symbol in the current row of the symbol group  |
-| Page Up      | MoveToFirstInColumn   | Move the selection to the first symbol in the current column of the symbolgroup| 
-| Page Down    | MoveToLastInColumn    | Move the selection to the last symbol in the current column of the symbolgroup |
+| Page Up      | MoveToFirstInColumn   | Move the selection to the first symbol in the current column of the symbol group| 
+| Page Down    | MoveToLastInColumn    | Move the selection to the last symbol in the current column of the symbol group |
 
 
 
