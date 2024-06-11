@@ -188,7 +188,7 @@ BasicStencil.SymbolSource = new SymbolCollection()
 
 ## Context menu for SymbolGroup in Stencil
 
-You can use the `Menu` property in the `SymbolGroupViewModel` class to specify menu for each `SymbolGroup` or use the `SymbolGroupMenu` property in the `Stencil` for use the same menu for all `SymbolGroups`.
+You can use the [Menu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Menu) property in the [SymbolGroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Symbols) class to specify menu for each `SymbolGroup` or use the `SymbolGroupMenu` property in the `Stencil` for use the same menu for all `SymbolGroups`.
 
 {% highlight xaml %}
 
@@ -227,4 +227,4 @@ You can use the `Menu` property in the `SymbolGroupViewModel` class to specify m
 
 ![SymbolGroupMenu and Menu](Stencil_images/MenuandSymbolGroupMenu.gif)
 
-
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolGroupViewModel/SymbolGroupsWithContextMenu)
