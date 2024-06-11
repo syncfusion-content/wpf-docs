@@ -52,7 +52,7 @@ Segment width, the textual description of the ruler segment, and the appearance 
 
 ### Customizing Position Indicator Marker Brush Color
 
-We can change the color of the ruler's position indicator marker to any preferred shade.
+You can change the color of the ruler's position indicator marker to any preferred shade by using `MarkerBrush` property of the `Ruler` class.
 
 {% tabs %}
 {% highlight XAML %}
