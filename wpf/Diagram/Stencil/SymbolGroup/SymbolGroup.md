@@ -13,78 +13,97 @@ A set of stencil symbols can be combined together to create a group and many num
 
 ## Group symbols into a category
 
-The symbols of the same category can be grouped using the [SymbolGroupProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html). The `SymbolGroupProvider` groups based on the [`MappingName`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupProvider_MappingName) property, which has the name of the property whose value will be in the group category. In the following code example, the `MappingName` has a value of "Key" and the `SymbolGroupProvider` will create the group, based on the value of the `Key` property. The symbols with the same category name could be grouped under that category.
+The symbols of the same category can be grouped using the [GroupMappingKey]() property of the [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) class. The `Stencil` groups based on the [`GroupMappingKey`]() property, which has the name of the property whose value will be in the group category. In the following code example, the `GroupMappingKey` has a value of "Key" and the `Stencil` will create the group, based on the value of the `Key` property. The symbols with the same category name could be grouped under that category.
 
 {% tabs %}
 {% highlight xaml %}
 
-<Style TargetType="sync:Node">
- <Setter Property="ShapeStyle">
- <Setter.Value>
-    <Style TargetType="Path">
-      <Setter Property="Fill" Value="#FF5B9BD5"></Setter>
-      <Setter Property="Stretch" Value="Fill"></Setter>
-    </Style>
- </Setter.Value>
- </Setter>
-</Style>
-<Style TargetType="sync:Connector">
-   <Setter Property="ConnectorGeometryStyle">
-   <Setter.Value>
-     <Style TargetType="Path">
-       <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
-     </Style>
-   </Setter.Value>
-  </Setter>
+<!--Style for Node-->
+<Style TargetType="syncfusion:Node">
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style  TargetType="Path">
+                <Setter Property="Fill"
+                        Value="#FF5B9BD5" />
+                <Setter Property="Stretch"
+                        Value="Fill" />
+            </Style>
+        </Setter.Value>
+    </Setter>
 </Style>
 
+<!--Style for Connector-->
+<Style TargetType="syncfusion:Connector">
+    <Setter Property="ConnectorGeometryStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+<!--Template for the Stencil title-->
 <DataTemplate x:Key="TitleTemplate">
    <TextBlock x:Name="HeaderText" Text="{Binding}" FontSize="15" FontWeight="SemiBold"  Foreground="#2b579a" />
 </DataTemplate>
 
-<stencil:Stencil Grid.Column="0" BorderThickness="1" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}" BorderBrush="#dfdfdf" x:Name="stencil">
-    <!--Initialize the SymbolSource-->
+<!--Initialize the stencil-->
+<stencil:Stencil x:Name="stencil"
+                  Grid.Column="0"
+                  Grid.Row="1"
+                  ExpandMode="ZeroOrMore"
+                  BorderBrush="#dfdfdf"
+                  BorderThickness="1"
+                  GroupMappingKey="Key"
+                  Title="Shapes"
+                  TitleTemplate="{StaticResource TitleTemplate}">
     <stencil:Stencil.SymbolSource>
-    <!--Define the SymbolCollection-->
-    <local:SymbolCollection>
-        <syncfusion:NodeViewModel x:Name="node" UnitHeight="70" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}" Key="Node">
-        </syncfusion:NodeViewModel>
-        <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200" Key="Connector"/>
-        <!--Define the DiagramElement- Group-->
-        <syncfusion:GroupViewModel Key="Group">
-            <!--Creates the Groupable Nodes-->
-            <syncfusion:GroupViewModel.Nodes>
-                <syncfusion:NodeCollection>
-                    <syncfusion:NodeViewModel UnitHeight="70" ID="srcnode" OffsetX="0" OffsetY="300" 
-                                              UnitWidth="100"
-                                              Shape="{StaticResource Rectangle}">
-                    </syncfusion:NodeViewModel>
-                    <syncfusion:NodeViewModel UnitHeight="70" 
-                                              ID="tarnode"
-                                              OffsetX="100"
-                                              OffsetY="500"
-                                              UnitWidth="100"
-                                              Shape="{StaticResource Rectangle}">
-                    </syncfusion:NodeViewModel>
-                </syncfusion:NodeCollection>
-            </syncfusion:GroupViewModel.Nodes>
-            <!--Creates the Groupable Connectors-->
-            <syncfusion:GroupViewModel.Connectors>
-                <syncfusion:ConnectorCollection>
-                    <syncfusion:ConnectorViewModel SourceNodeID="srcnode" TargetNodeID="tarnode"/>
-                </syncfusion:ConnectorCollection>
-            </syncfusion:GroupViewModel.Connectors>
-        </syncfusion:GroupViewModel>
-    </local:SymbolCollection>
-</stencil:Stencil.SymbolSource>
-    <!--Initialize the SymbolGroup-->
-    <stencil:Stencil.SymbolGroups>
-        <stencil:SymbolGroups>
-            <!--Map Symbols Using MappingName-->
-            <stencil:SymbolGroupProvider MappingName="Key">
-            </stencil:SymbolGroupProvider>
-        </stencil:SymbolGroups>
-    </stencil:Stencil.SymbolGroups>
+        <syncfusion:SymbolCollection>
+            <!--Define the Node element-->
+            <syncfusion:NodeViewModel x:Name="node"
+                                      Key="Node"
+                                      UnitHeight="70"
+                                      UnitWidth="100"
+                                      OffsetX="100"
+                                      OffsetY="100"
+                                      Shape="{StaticResource Rectangle}">
+            </syncfusion:NodeViewModel>
+            <!--Define the Connector-->
+            <syncfusion:ConnectorViewModel Key="Connector"
+                                           SourcePoint="100,100"
+                                           TargetPoint="200,200" />
+            <!--Define the Group element-->
+            <syncfusion:GroupViewModel Key="Group">
+                <!--Creates the Group Nodes-->
+                <syncfusion:GroupViewModel.Nodes>
+                    <syncfusion:NodeCollection>
+                        <syncfusion:NodeViewModel ID="srcnode"
+                                                  UnitHeight="70"
+                                                  UnitWidth="100"
+                                                  OffsetX="0"
+                                                  OffsetY="300"
+                                                  Shape="{StaticResource Rectangle}">
+                        </syncfusion:NodeViewModel>
+                        <syncfusion:NodeViewModel ID="tarnode"
+                                                  UnitHeight="70"
+                                                  OffsetX="100"
+                                                  OffsetY="500"
+                                                  UnitWidth="100"
+                                                  Shape="{StaticResource Rectangle}">
+                        </syncfusion:NodeViewModel>
+                    </syncfusion:NodeCollection>
+                </syncfusion:GroupViewModel.Nodes>
+                <!--Creates the Group Connectors-->
+                <syncfusion:GroupViewModel.Connectors>
+                    <syncfusion:ConnectorCollection>
+                        <syncfusion:ConnectorViewModel SourceNodeID="srcnode"
+                                                       TargetNodeID="tarnode" />
+                    </syncfusion:ConnectorCollection>
+                </syncfusion:GroupViewModel.Connectors>
+            </syncfusion:GroupViewModel>
+        </syncfusion:SymbolCollection>
+    </stencil:Stencil.SymbolSource>
 </stencil:Stencil>
 
 {% endhighlight %}
@@ -93,80 +112,73 @@ The symbols of the same category can be grouped using the [SymbolGroupProvider](
 //Define a Stencil.
 Stencil stencil = new Stencil()
 {
-    ExpandMode =ExpandMode.All,
-    BorderThickness =new Thickness(0,0,1,0),
-    BorderBrush =new SolidColorBrush(Colors.Black)
+    GroupMappingKey = "Key",
 };
+
 //Define the SymbolSource with the SymbolCollection.
 stencil.SymbolSource = new SymbolCollection();
 NodeViewModel node = new NodeViewModel()
 {
+    Key = "Node",
     UnitHeight = 100,
     UnitWidth = 100,
-    OffsetX = 100, OffsetY = 100,
-    Shape = App.Current.MainWindow.Resources["Rectangle"],
-    Key = "Node"
+    OffsetX = 100, 
+    OffsetY = 100,
+    Shape = this.Resources["Rectangle"],
 };
 
-ConnectorViewModel cvm = new ConnectorViewModel()
+ConnectorViewModel connector = new ConnectorViewModel()
 {
+    Key="Connector",
     SourcePoint = new Point(100, 100),
     TargetPoint = new Point(200, 200),
-    Key="Connector"
 };
 
-GroupViewModel grp = new GroupViewModel()
+GroupViewModel group = new GroupViewModel()
 {
     Key="Group",
     Nodes = new NodeCollection()
     {
        new NodeViewModel()
        {
-        ID="srcnode",
-        UnitHeight=70,
-        UnitWidth=100,
-        OffsetX=0,
-        OffsetY=300,
-        Shape=App.Current.Resources["Rectangle"]
+            ID = "srcnode",
+            UnitHeight = 70,
+            UnitWidth = 100,
+            OffsetX = 0,
+            OffsetY = 300,
+            Shape = this.Resources["Rectangle"]
        },
        new NodeViewModel()
        {
-        ID="tarnode",
-        UnitHeight=70,
-        UnitWidth=100,
-        OffsetX=100,
-        OffsetY=500,
-        Shape=App.Current.Resources["Rectangle"]
+            ID = "tarnode",
+            UnitHeight = 70,
+            UnitWidth = 100,
+            OffsetX = 100,
+            OffsetY = 500,
+            Shape = this.Resources["Rectangle"]
         }
     },
     Connectors = new ConnectorCollection()
     {
       new ConnectorViewModel()
       {
-        SourceNodeID="srcnode", 
-        TargetNodeID="tarnode"
+            SourceNodeID = "srcnode", 
+            TargetNodeID = "tarnode"
        }
     }
 };
 
 //Add the element to the symbol collection.
 (stencil.SymbolSource as SymbolCollection).Add(node);
-(stencil.SymbolSource as SymbolCollection).Add(cvm);
-(stencil.SymbolSource as SymbolCollection).Add(grp);
-
-//Define the SymbolGroups.
-stencil.SymbolGroups = new SymbolGroups()
-{
-    new SymbolGroupProvider()
-    {
-        MappingName = "Key"
-    }
-};
+(stencil.SymbolSource as SymbolCollection).Add(connector);
+(stencil.SymbolSource as SymbolCollection).Add(group);
 
 {% endhighlight %}
 {% endtabs %} 
 
 ![Symbol](SymbolGroup_images/stencil2.PNG) 
+
+View Sample in GitHub
 
 ## Customize the appearance of the symbol group header
 
@@ -246,22 +258,21 @@ The built-in shape paths available in the diagram resource dictionary are groupe
 {% tabs %}
 {% highlight xaml %}
 <!--Initialize the stencil-->
-<Stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}"
-ExpandMode="ZeroOrMore" BorderBrush="#dfdfdf" BorderThickness="1">
+<stencil:Stencil x:Name="stencil" 
+                 Title="Shapes" 
+                 TitleTemplate="{StaticResource TitleTemplate}"
+                 ExpandMode="ZeroOrMore" 
+                 BorderBrush="#dfdfdf" 
+                 BorderThickness="1"
+                 GroupMappingKey="Key">
    <!--Initialize the stencil categories-->
-    <Stencil:Stencil.Categories>
-     <Stencil:StencilCategoryCollection>
-       <!--Specify the basic shapes category with title and resource key-->
-       <Stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
-        </Stencil:StencilCategoryCollection>
-        </Stencil:Stencil.Categories>
-        <Stencil:Stencil.SymbolGroups>
-        <Stencil:SymbolGroups>
-          <!--Separate groups based on the key-->
-          <Stencil:SymbolGroupProvider MappingName="Key" />
-        </Stencil:SymbolGroups>
-    </Stencil:Stencil.SymbolGroups>
-</Stencil:Stencil>
+    <stencil:Stencil.Categories>
+        <stencil:StencilCategoryCollection>
+            <!--Specify the basic shapes category with title and resource key-->
+            <stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
+        </stencil:StencilCategoryCollection>
+    </stencil:Stencil.Categories>
+</stencil:Stencil>
 {% endhighlight %}
 {% endtabs %}
 
@@ -287,26 +298,23 @@ The custom symbol collections can be added to the stencil by defining the custom
     <sys:String>Ellipse</sys:String>
     <sys:String>CustomPath</sys:String>
 </x:Array>
+
+<!--Template for stencil title-->
 <DataTemplate x:Key="TitleTemplate">
    <TextBlock x:Name="HeaderText" Text="{Binding}" FontSize="15" FontWeight="SemiBold"  Foreground="#2b579a" >
    </TextBlock>
 </DataTemplate>
+
 <!--Initialize the stencil-->
-<Stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}" ExpandMode="ZeroOrMore"
+<stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}" ExpandMode="ZeroOrMore"
 BorderBrush="#dfdfdf" BorderThickness="1">
     <!--Initialize the stencil categories-->
-    <Stencil:Stencil.Categories>
-        <Stencil:StencilCategoryCollection>
+    <stencil:Stencil.Categories>
+        <stencil:StencilCategoryCollection>
             <!--Specify the custom shapes category with title and resource key-->
-            <Stencil:StencilCategory Title="Custom shapes" Keys="{StaticResource customShapeCollection}"/>
-        </Stencil:StencilCategoryCollection>
-    </Stencil:Stencil.Categories>
-    <Stencil:Stencil.SymbolGroups>
-        <Stencil:SymbolGroups>
-        <!--Separate groups based on the key-->
-        <Stencil:SymbolGroupProvider MappingName="Key" />
-        </Stencil:SymbolGroups>
-    </Stencil:Stencil.SymbolGroups>
+            <stencil:StencilCategory Title="Custom shapes" Keys="{StaticResource customShapeCollection}"/>
+        </stencil:StencilCategoryCollection>
+    </stencil:Stencil.Categories>
 </Stencil:Stencil>
 {% endhighlight %}
 {% endtabs %}
@@ -374,6 +382,135 @@ public class StencilViewModel : Stencil
 ![Custom Category collection](SymbolGroup_images/CustomCateogry.PNG)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
+
+## View Models for the SymbolGroups
+
+`SfDiagram` provides supports to populate view models for each SymbolGroup created to the `Stencil`. The `SymbolGroupViewModel`() class provides the support to populate view models to the symbol group and as well symbol groups view models can be created to the stencil by directly using the `SymbolGroupViewModel` class.
+
+You can add more than one symbol groups using the `SymbolGroupViewModel` of the stencil class.
+
+The `SymbolGroupViewModel` class have following properties:
+
+* `Name`(): Defines the display name of the symbol group. Also, it groups the symbols added through the `SymbolSource` property based on the Name property value to the respective symbol group. 
+* `Symbols`(): Defines the list of symbols need to be added to the symbol group.
+* `CategorySource`(): To specify the static resource key name value from the predefined category collections.
+
+{% highlight xaml %}
+<!--Initialize the stencil-->
+<syncfusion:Stencil x:Name="stencil" 
+                    Title="Shapes"
+                    SymbolGroupDisplayMode="Accordion"
+                    SymbolSelectionMode="Multiple"
+                    DisplayMode="Expanded"
+                    GroupMappingName="Key">
+    <!--Initialize the symbol groups-->
+    <syncfusion:Stencil.SymbolGroups>
+        <syncfusion:SymbolGroups>
+            <syncfusion:SymbolGroupViewModel Name="Custom Shapes" CategorySource="{StaticResource UMLActivity}">
+                <syncfusion:SymbolGroupViewModel.Symbols>
+                    <syncfusion:SymbolCollection>
+                        <syncfusion:NodeViewModel Name="Star" 
+                                                  UnitHeight="50"
+                                                  UnitWidth="50"
+                                                  Shape="{StaticResource Star}"/>
+                        <syncfusion:NodeViewModel Name="FourPointStar" 
+                                                  UnitHeight="50"
+                                                  UnitWidth="50"
+                                                  Shape="{StaticResource FourPointStar}"/>
+                    </syncfusion:SymbolCollection>
+                </syncfusion:SymbolGroupViewModel.Symbols>
+            </syncfusion:SymbolGroupViewModel>
+        </syncfusion:SymbolGroups>
+    </syncfusion:Stencil.SymbolGroups>
+</syncfusion:Stencil>
+{% endhighlight %}
+{% endtabs %}
+
+![SymbolGroupViewModel](SymbolGroup_images/SymbolGroupViewModel.PNG)
+
+[View Sample in GitHub]()
+
+### Interaction on the SymbolGroups
+
+The `SymbolGroupViewModel` class provides support to do following interaction on the symbol groups at run time.
+* Add new symbols to the existing symbol groups
+* Add new symbol groups to the stencil 
+* Remove an exisiting symbol from its symbol group 
+* Remove the symbol groups from the stencil
+
+{% tabs %}
+{% highlight C# %}
+
+private void AddNewSymbol_Click(object sender, RoutedEventArgs e)
+{
+    NodeViewModel hexagon = new NodeViewModel()
+    {
+        UnitHeight = 50,
+        UnitWidth = 50,
+        OffsetX = 100,
+        OffsetY = 100,
+        Name = "Hexagon",
+        Shape = this.Resources["Hexagon"],
+    };
+
+    //Adding the Hexagon shape to the existing symbol group.
+    (stencil.SymbolGroups[0] as SymbolGroupViewModel).Symbols.Add(hexagon);
+}
+
+private void RemoveExistingSymbol_Click(object sender, RoutedEventArgs e)
+{
+    //Removes the first symbol from the symbol group.
+    (stencil.SymbolGroups[0] as SymbolGroupViewModel).Symbols.RemoveAt(0);
+}
+
+private void AddNewSymbolGroup_Click(object sender, RoutedEventArgs e)
+{
+    //Creating star symbols
+    NodeViewModel sixPointStar = new NodeViewModel()
+    {
+        UnitHeight = 50,
+        UnitWidth = 50,
+        OffsetX = 100,
+        OffsetY = 100,
+        Name = "SixPointStar",
+        Shape = this.Resources["SixPointStar"],
+    };
+
+    NodeViewModel sevenPointStar = new NodeViewModel()
+    {
+        UnitHeight = 50,
+        UnitWidth = 50,
+        OffsetX = 100,
+        OffsetY = 100,
+        Name = "SevenPointStar",
+        Shape = this.Resources["SevenPointStar"],
+    };
+
+    //Creating symbol group view model for the star shapes.
+    SymbolGroupViewModel starShapes = new SymbolGroupViewModel()
+    {
+        //Name of the symbol group.
+        Name = "Stars",
+        //Adding symbols to the group
+        Symbols = new DiagramCollection<object> { sixPointStar, sevenPointStar },
+    };
+
+    //adding the symbol group into the stencil.
+    stencil.SymbolGroups.Add(starShapes);
+}
+
+private void RemoveExistingSymbolGroup_Click(object sender, RoutedEventArgs e)
+{
+    //Removes the first symbol group from the stencil.
+    stencil.SymbolGroups.RemoveAt(1);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom Category collection](SymbolGroup_images/InteractionOnSymbolGroups.gif)
+
+[View Sample in GitHub]()
 
 ## See also
 

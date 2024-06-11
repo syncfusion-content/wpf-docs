@@ -52,148 +52,217 @@ The diagram elements such as [NodeViewModel](https://help.syncfusion.com/cr/wpf/
  
 {% tabs %} 
 {% highlight xaml %}
-
-<!--Initialize the SymbolSource-->
-<stencil:Stencil.SymbolSource>
-    <!--Define the SymbolCollection-->
-    <Syncfusion:SymbolCollection>
-        <syncfusion:NodeViewModel x:Name="node" UnitHeight="70" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}">
-        </syncfusion:NodeViewModel>
-        <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200"/>
-        <!--Define the DiagramElement- Group-->
-        <syncfusion:GroupViewModel>
-            <!--Creates the Groupable Nodes-->
-            <syncfusion:GroupViewModel.Nodes>
-                <syncfusion:NodeCollection>
-                    <syncfusion:NodeViewModel UnitHeight="70" ID="srcnode" OffsetX="0" OffsetY="300" 
-                                              UnitWidth="100"
-                                              Shape="{StaticResource Rectangle}">
-                    </syncfusion:NodeViewModel>
-                    <syncfusion:NodeViewModel UnitHeight="70" 
-                                              ID="tarnode"
-                                              OffsetX="100"
-                                              OffsetY="500"
-                                              UnitWidth="100"
-                                              Shape="{StaticResource Rectangle}">
-                    </syncfusion:NodeViewModel>
-                </syncfusion:NodeCollection>
-            </syncfusion:GroupViewModel.Nodes>
-            <!--Creates the Groupable Connectors-->
-            <syncfusion:GroupViewModel.Connectors>
-                <syncfusion:ConnectorCollection>
-                    <syncfusion:ConnectorViewModel SourceNodeID="srcnode" TargetNodeID="tarnode"/>
-                </syncfusion:ConnectorCollection>
-            </syncfusion:GroupViewModel.Connectors>
-        </syncfusion:GroupViewModel>
-        <Syncfusion:ContainerViewModel Key="Container" UnitHeight="300" UnitWidth="300">
-            <!--Creates the Groupable Nodes-->
-            <Syncfusion:GroupViewModel.Nodes>
-                <Syncfusion:NodeCollection>
-                    <Syncfusion:NodeViewModel UnitHeight="70"
-                                              OffsetX="0"
-                                              OffsetY="100"
-                                              UnitWidth="100"
-                                              Shape="{StaticResource Rectangle}">
-                    </Syncfusion:NodeViewModel>
-                    <Syncfusion:NodeViewModel UnitHeight="70"
-                                              OffsetX="100"
-                                              OffsetY="200"
-                                              UnitWidth="100"
-                                              Shape="{StaticResource Rectangle}">
-                    </Syncfusion:NodeViewModel>
-                </Syncfusion:NodeCollection>
-            </Syncfusion:GroupViewModel.Nodes>
-        </Syncfusion:ContainerViewModel>
-    </Syncfusion:SymbolCollection>
-</stencil:Stencil.SymbolSource>
-
+<!--Initialize the stencil-->
+<stencil:Stencil x:Name="stencil"
+                 Grid.Column="0"
+                 Grid.Row="1"
+                 ExpandMode="ZeroOrMore"
+                 BorderBrush="#dfdfdf"
+                 BorderThickness="1"
+                 GroupMappingName="Key">
+    <stencil:Stencil.SymbolSource>
+        <syncfusion:SymbolCollection>
+            <!--Define the DiagramElement- Node-->
+            <syncfusion:NodeViewModel x:Name="node"
+                                      Key="Nodes"
+                                      UnitHeight="70"
+                                      UnitWidth="100"
+                                      OffsetX="100"
+                                      OffsetY="100"
+                                      Shape="{StaticResource Rectangle}">
+            </syncfusion:NodeViewModel>
+            <!--Define the DiagramElement- Connector-->
+            <syncfusion:ConnectorViewModel Key="Connectors" 
+                                           SourcePoint="100,100"
+                                           TargetPoint="200,200" />
+            <!--Define the DiagramElement- Group-->
+            <syncfusion:GroupViewModel Key="Groups">
+                <!--Creates the Groupable Nodes-->
+                <syncfusion:GroupViewModel.Nodes>
+                    <syncfusion:NodeCollection>
+                        <syncfusion:NodeViewModel UnitHeight="70"
+                                                  ID="srcnode"
+                                                  OffsetX="0"
+                                                  OffsetY="300"
+                                                  UnitWidth="100"
+                                                  Shape="{StaticResource Rectangle}">
+                        </syncfusion:NodeViewModel>
+                        <syncfusion:NodeViewModel UnitHeight="70"
+                                                  ID="tarnode"
+                                                  OffsetX="100"
+                                                  OffsetY="500"
+                                                  UnitWidth="100"
+                                                  Shape="{StaticResource Rectangle}">
+                        </syncfusion:NodeViewModel>
+                    </syncfusion:NodeCollection>
+                </syncfusion:GroupViewModel.Nodes>
+                <!--Creates the Groupable Connectors-->
+                <syncfusion:GroupViewModel.Connectors>
+                    <syncfusion:ConnectorCollection>
+                        <syncfusion:ConnectorViewModel SourceNodeID="srcnode"
+                                                       TargetNodeID="tarnode" />
+                    </syncfusion:ConnectorCollection>
+                </syncfusion:GroupViewModel.Connectors>
+            </syncfusion:GroupViewModel>
+            <!--Creates the container-->
+            <syncfusion:ContainerViewModel Key="Container" 
+                                           OffsetX="300" 
+                                           OffsetY="300" 
+                                           UnitHeight="200" 
+                                           UnitWidth="250">
+                <!--Creates the container Nodes-->
+                <syncfusion:GroupViewModel.Nodes>
+                    <syncfusion:NodeCollection>
+                        <syncfusion:NodeViewModel UnitHeight="70"
+                                                  UnitWidth="100"
+                                                  OffsetX="250"
+                                                  OffsetY="250"
+                                                  Shape="{StaticResource Rectangle}">
+                        </syncfusion:NodeViewModel>
+                        <syncfusion:NodeViewModel UnitHeight="70"
+                                                  UnitWidth="100"
+                                                  OffsetX="300"
+                                                  OffsetY="350"
+                                                  Shape="{StaticResource Rectangle}">
+                        </syncfusion:NodeViewModel>
+                    </syncfusion:NodeCollection>
+                </syncfusion:GroupViewModel.Nodes>
+            </syncfusion:ContainerViewModel>
+        </syncfusion:SymbolCollection>
+    </stencil:Stencil.SymbolSource>
+</stencil:Stencil>
 {% endhighlight %}
 
 {% highlight c# %}
-
 //Define the SymbolSource with SymbolCollection.
 stencil.SymbolSource = new SymbolCollection();
 
-//Initialize the diagram element.
+//Initialize the node diagram element.
 NodeViewModel node = new NodeViewModel()
 {
+    Key = "Nodes",
     UnitHeight = 70,
     UnitWidth = 100,
-    OffsetX = 100, OffsetY = 100,
-    Shape = App.Current.MainWindow.Resources["Rectangle"],
-}; 
+    OffsetX = 100,
+    OffsetY = 100,
+    Shape = this.Resources["Rectangle"],
+};
 
-ConnectorViewModel cvm = new ConnectorViewModel()
+//Initialize the connector diagram element.
+ConnectorViewModel connector = new ConnectorViewModel()
 {
+    Key = "Connectors",
     SourcePoint = new Point(100, 100),
     TargetPoint = new Point(200, 200),
 };
 
-GroupViewModel grp = new GroupViewModel()
+//Initialize the group element.
+GroupViewModel group = new GroupViewModel()
 {
+    Key = "Groups",
+    //Adding group nodes
     Nodes = new NodeCollection()
     {
-       new NodeViewModel()
-       {
-         ID="srcnode",
-         UnitHeight=70,
-         UnitWidth=100,
-         OffsetX=0,
-         OffsetY=300,
-         Shape=App.Current.Resources["Rectangle"]
+        new NodeViewModel()
+        {
+            ID="srcnode",
+            UnitHeight=70,
+            UnitWidth=100,
+            OffsetX=0,
+            OffsetY=300,
+            Shape=this.Resources["Rectangle"]
         },
-       new NodeViewModel()
-       {
-        ID="tarnode",
-        UnitHeight=70,
-        UnitWidth=100,
-        OffsetX=100,
-        OffsetY=500,
-        Shape=App.Current.Resources["Rectangle"]
+        new NodeViewModel()
+        {
+            ID="tarnode",
+            UnitHeight=70,
+            UnitWidth=100,
+            OffsetX=100,
+            OffsetY=500,
+            Shape=this.Resources["Rectangle"]
         }
     },
+    //Adding group connector.
     Connectors = new ConnectorCollection()
     {
-      new ConnectorViewModel()
-      {
-        SourceNodeID="srcnode", 
-        TargetNodeID="tarnode"
-      }
+        new ConnectorViewModel()
+        {
+            SourceNodeID="srcnode",
+            TargetNodeID="tarnode"
+        }
+    }
+};
+GroupViewModel group = new GroupViewModel()
+{
+    Key = "Groups",
+    //Adding group nodes
+    Nodes = new NodeCollection()
+    {
+        new NodeViewModel()
+        {
+            ID="srcnode",
+            UnitHeight=70,
+            UnitWidth=100,
+            OffsetX=0,
+            OffsetY=300,
+            Shape=this.Resources["Rectangle"]
+        },
+        new NodeViewModel()
+        {
+            ID="tarnode",
+            UnitHeight=70,
+            UnitWidth=100,
+            OffsetX=100,
+            OffsetY=500,
+            Shape=this.Resources["Rectangle"]
+        }
+    },
+    //Adding group connector.
+    Connectors = new ConnectorCollection()
+    {
+        new ConnectorViewModel()
+        {
+            SourceNodeID="srcnode",
+            TargetNodeID="tarnode"
+        }
     }
 };
 
+//Creating container element.
 ContainerViewModel container = new ContainerViewModel()
 {
-    UnitHeight = 300,
-    UnitWidth = 300,
     Key = "Container",
+    UnitHeight = 200,
+    UnitWidth = 250,
+    OffsetX = 300,
+    OffsetY = 300,
+    //Creating container nodes
     Nodes = new NodeCollection()
     {
         new NodeViewModel()
         {
             UnitHeight = 70,
-            OffsetX = 0,
-            OffsetY = 100,
             UnitWidth = 100,
+            OffsetX = 250,
+            OffsetY = 250,
             Shape = this.Resources["Rectangle"],
         },
         new NodeViewModel()
         {
             UnitHeight = 70,
-            OffsetX = 100,
-            OffsetY = 200,
             UnitWidth = 100,
+            OffsetX = 300,
+            OffsetY = 350,
             Shape = this.Resources["Rectangle"],
         },
     },
 };
 
-//Adding an element to the collection.
+//Adding diagram elements to the stencil SymbolSource collection.
 (stencil.SymbolSource as SymbolCollection).Add(node);
-(stencil.SymbolSource as SymbolCollection).Add(cvm);
-(stencil.SymbolSource as SymbolCollection).Add(grp);
-(stencil.SymbolSource as SymbolCollection).Add(container);
-
+(stencil.SymbolSource as SymbolCollection).Add(connector);
+(stencil.SymbolSource as SymbolCollection).Add(group);
+(stencil.SymbolSource as SymbolCollection).Add(container); 
 {% endhighlight %}
 
 {% endtabs %}
@@ -227,13 +296,23 @@ The [SymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diag
     </StackPanel>
 </DataTemplate>
 
-<stencil:Stencil.SymbolSource>
-    <!--Define the SymbolCollection-->
-    <Syncfusion:SymbolCollection>
-        <Syncfusion:SymbolViewModel Symbol="User" SymbolTemplate="{StaticResource symboltemplate}"/>
-         <Syncfusion:SymbolViewModel Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
-    </Syncfusion:SymbolCollection>
-</stencil:Stencil.SymbolSource>
+<stencil:Stencil x:Name="stencil"
+                 Grid.Column="0"
+                 Grid.Row="1"
+                 ExpandMode="ZeroOrMore"
+                 BorderBrush="#dfdfdf"
+                 BorderThickness="1"
+                 GroupMappingName="Key">
+    <stencil:Stencil.SymbolSource>
+        <syncfusion:SymbolCollection>
+            <syncfusion:SymbolViewModel Symbol="User" Key="Image"
+                                        SymbolTemplate="{StaticResource symboltemplate}" />
+            <syncfusion:SymbolViewModel Symbol="Diamond" Key="Template"
+                                        SymbolTemplate="{StaticResource Diamond}" />
+
+        </syncfusion:SymbolCollection>
+    </stencil:Stencil.SymbolSource>
+</stencil:Stencil>
  
 {% endhighlight %}
  
@@ -264,11 +343,11 @@ SymbolViewModel symbol = new SymbolViewModel()
 
 ![Symbol](Stencil_images/symbolimage.PNG) 
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil-with-symbols)
+
 ## Constraints
 
 The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Constraints) property of stencil allows you to enable or disable certain features. For more information about stencil constraints, refer to the [StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html).
-
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil-with-symbols)
 
 ## See also
 
