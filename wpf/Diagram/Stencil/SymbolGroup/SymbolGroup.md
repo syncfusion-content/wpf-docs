@@ -13,7 +13,7 @@ A set of stencil symbols can be combined together to create a group and many num
 
 ## Group symbols into a category
 
-The symbols of the same category can be grouped using the [GroupMappingKey]() property of the [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) class. The `Stencil` groups based on the [`GroupMappingKey`]() property, which has the name of the property whose value will be in the group category. In the following code example, the `GroupMappingKey` has a value of "Key" and the `Stencil` will create the group, based on the value of the `Key` property. The symbols with the same category name could be grouped under that category.
+The symbols of the same category can be grouped using the `GroupMappingKey` property of the [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) class. The `Stencil` groups the symbols based on the `GroupMappingKey` property, which specifies the name of the property whose value will determine the group category. In the following code example, the `GroupMappingKey` is set to "Key", so the `Stencil` will create the SymbolGroups based on the value of the Key property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -176,9 +176,7 @@ GroupViewModel group = new GroupViewModel()
 {% endhighlight %}
 {% endtabs %} 
 
-![Symbol](SymbolGroup_images/stencil2.PNG) 
-
-View Sample in GitHub
+![Symbol](SymbolGroup_images/stencil2.PNG)
 
 ## Customize the appearance of the symbol group header
 
@@ -385,15 +383,15 @@ public class StencilViewModel : Stencil
 
 ## View Models for the SymbolGroups
 
-`SfDiagram` provides supports to populate view models for each SymbolGroup created to the `Stencil`. The `SymbolGroupViewModel`() class provides the support to populate view models to the symbol group and as well symbol groups view models can be created to the stencil by directly using the `SymbolGroupViewModel` class.
+The `SfDiagram` provides supports to populate view models for each SymbolGroup created for the symbols added through the `SymbolSource` property. 
 
-You can add more than one symbol groups using the `SymbolGroupViewModel` of the stencil class.
+The `SymbolGroupViewModel` class provides the support to create the view models to the symbol group and provides supports to add symbols to it as Node, Connectors, groups and list of predefined symbols.
 
-The `SymbolGroupViewModel` class have following properties:
+* `Name`: Specifies the display name of the symbol group. It also adds the symbols to the symbol groups defined through the `SymbolSource` property which symbol has same `Key` value as this `Name` property.
+* `Symbols`: Specifies the list of symbols need to be added to the symbol group. It can be any diagram elements of Nodes, Connectors, Groups, Containers, BPMN elements.
+* `CategorySource`: Specifies the list of symbols need to be added to the `SymbolGroupViewModel` using the static resource key value from the predefined category collections.
 
-* `Name`(): Defines the display name of the symbol group. Also, it groups the symbols added through the `SymbolSource` property based on the Name property value to the respective symbol group. 
-* `Symbols`(): Defines the list of symbols need to be added to the symbol group.
-* `CategorySource`(): To specify the static resource key name value from the predefined category collections.
+In addition to that, new symbols can be added into the symbol groups or you can remove the existing symbols from any symbol group at run time. As same as symbols, new symbol group can be added into the stencil and remove the existing symbol group from the stencil.
 
 {% highlight xaml %}
 <!--Initialize the stencil-->
@@ -406,17 +404,17 @@ The `SymbolGroupViewModel` class have following properties:
     <!--Initialize the symbol groups-->
     <syncfusion:Stencil.SymbolGroups>
         <syncfusion:SymbolGroups>
-            <syncfusion:SymbolGroupViewModel Name="Custom Shapes" CategorySource="{StaticResource UMLActivity}">
+            <syncfusion:SymbolGroupViewModel Name="Basic Shapes" CategorySource="{StaticResource BasicShapes}">
                 <syncfusion:SymbolGroupViewModel.Symbols>
                     <syncfusion:SymbolCollection>
-                        <syncfusion:NodeViewModel Name="Star" 
+                        <syncfusion:NodeViewModel Name="Object" 
                                                   UnitHeight="50"
                                                   UnitWidth="50"
-                                                  Shape="{StaticResource Star}"/>
-                        <syncfusion:NodeViewModel Name="FourPointStar" 
+                                                  Shape="{StaticResource Object}"/>
+                        <syncfusion:NodeViewModel Name="User" 
                                                   UnitHeight="50"
                                                   UnitWidth="50"
-                                                  Shape="{StaticResource FourPointStar}"/>
+                                                  Shape="{StaticResource User}"/>
                     </syncfusion:SymbolCollection>
                 </syncfusion:SymbolGroupViewModel.Symbols>
             </syncfusion:SymbolGroupViewModel>
@@ -427,90 +425,6 @@ The `SymbolGroupViewModel` class have following properties:
 {% endtabs %}
 
 ![SymbolGroupViewModel](SymbolGroup_images/SymbolGroupViewModel.PNG)
-
-[View Sample in GitHub]()
-
-### Interaction on the SymbolGroups
-
-The `SymbolGroupViewModel` class provides support to do following interaction on the symbol groups at run time.
-* Add new symbols to the existing symbol groups
-* Add new symbol groups to the stencil 
-* Remove an exisiting symbol from its symbol group 
-* Remove the symbol groups from the stencil
-
-{% tabs %}
-{% highlight C# %}
-
-private void AddNewSymbol_Click(object sender, RoutedEventArgs e)
-{
-    NodeViewModel hexagon = new NodeViewModel()
-    {
-        UnitHeight = 50,
-        UnitWidth = 50,
-        OffsetX = 100,
-        OffsetY = 100,
-        Name = "Hexagon",
-        Shape = this.Resources["Hexagon"],
-    };
-
-    //Adding the Hexagon shape to the existing symbol group.
-    (stencil.SymbolGroups[0] as SymbolGroupViewModel).Symbols.Add(hexagon);
-}
-
-private void RemoveExistingSymbol_Click(object sender, RoutedEventArgs e)
-{
-    //Removes the first symbol from the symbol group.
-    (stencil.SymbolGroups[0] as SymbolGroupViewModel).Symbols.RemoveAt(0);
-}
-
-private void AddNewSymbolGroup_Click(object sender, RoutedEventArgs e)
-{
-    //Creating star symbols
-    NodeViewModel sixPointStar = new NodeViewModel()
-    {
-        UnitHeight = 50,
-        UnitWidth = 50,
-        OffsetX = 100,
-        OffsetY = 100,
-        Name = "SixPointStar",
-        Shape = this.Resources["SixPointStar"],
-    };
-
-    NodeViewModel sevenPointStar = new NodeViewModel()
-    {
-        UnitHeight = 50,
-        UnitWidth = 50,
-        OffsetX = 100,
-        OffsetY = 100,
-        Name = "SevenPointStar",
-        Shape = this.Resources["SevenPointStar"],
-    };
-
-    //Creating symbol group view model for the star shapes.
-    SymbolGroupViewModel starShapes = new SymbolGroupViewModel()
-    {
-        //Name of the symbol group.
-        Name = "Stars",
-        //Adding symbols to the group
-        Symbols = new DiagramCollection<object> { sixPointStar, sevenPointStar },
-    };
-
-    //adding the symbol group into the stencil.
-    stencil.SymbolGroups.Add(starShapes);
-}
-
-private void RemoveExistingSymbolGroup_Click(object sender, RoutedEventArgs e)
-{
-    //Removes the first symbol group from the stencil.
-    stencil.SymbolGroups.RemoveAt(1);
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-![Custom Category collection](SymbolGroup_images/InteractionOnSymbolGroups.gif)
-
-[View Sample in GitHub]()
 
 ## See also
 
