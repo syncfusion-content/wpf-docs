@@ -426,6 +426,8 @@ In addition to that, new symbols can be added into the symbol groups or you can 
 
 ![SymbolGroupViewModel](SymbolGroup_images/SymbolGroupViewModel.PNG)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolGroupViewModel/BasicSymbolGroupViewModel)
+
 ## See also
 
 [How to expand all SymbolGroups?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
