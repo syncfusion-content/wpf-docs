@@ -442,15 +442,15 @@ Customize the default appearance of view header by setting `ViewHeaderTemplate` 
 You can customize the spacing between an appointment and the right border of its cell to enhance interaction with a scheduler that contains appointments.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml hl_lines="4" %}
 <syncfusion:SfScheduler x:Name="Schedule" 
-                       ViewType="Week">
+                        ViewType="Week">
     <syncfusion:SfScheduler.DaysViewSettings>
         <syncfusion:DaysViewSettings CellRightPadding="30"/>
     </syncfusion:SfScheduler.DaysViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.CellRightPadding = 30;
 {% endhighlight %}

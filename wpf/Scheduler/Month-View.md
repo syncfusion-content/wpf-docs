@@ -548,15 +548,15 @@ You can customize the default appearance of more appointments indicator in a mon
 You can customize the spacing between an appointment and the right border of its cell to enhance interaction with a scheduler that contains appointments.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml hl_lines="4" %}
 <syncfusion:SfScheduler x:Name="Schedule" 
-                       ViewType="Month">
+                        ViewType="Month">
  <syncfusion:SfScheduler.MonthViewSettings>
      <syncfusion:MonthViewSettings CellRightPadding="30" />
  </syncfusion:SfScheduler.MonthViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.CellRightPadding = 30;
 {% endhighlight %}

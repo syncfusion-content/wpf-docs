@@ -453,15 +453,15 @@ Schedule.TimelineViewSettings.TimelineAppointmentHeight = 100;
 You can customize the spacing between an appointment and the bottom border of its cell to enhance interaction with a scheduler that contains appointments.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml hl_lines="4" %}
 <syncfusion:SfScheduler x:Name="Schedule" 
-                       ViewType="TimelineWeek">
+                        ViewType="TimelineWeek">
  <syncfusion:SfScheduler.TimelineViewSettings>
      <syncfusion:TimelineViewSettings CellBottomPadding="30" />
  </syncfusion:SfScheduler.TimelineViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# hl_lines="2" %}
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
 this.Schedule.TimelineViewSettings.CellBottomPadding = 30;
 {% endhighlight %}
