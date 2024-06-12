@@ -746,11 +746,11 @@ Define employee information as collection of data. The following code example sh
 {% highlight xaml %}
 <!--Initializes the DataSource -->
 <local:Employees x:Key="employees">
-   <local:Employee  EmpId="1" ParentId="" Designation="CEO"/>
-   <local:Employee  EmpId="2" ParentId="1" Designation="Project Manager1"/>
-   <local:Employee  EmpId="3" ParentId="1" Designation="Project Manager2"/>
-   <local:Employee  EmpId="4" ParentId="2" Designation="Engineer1"/>
-   <local:Employee  EmpId="5" ParentId="3" Designation="Engineer2"/>  
+   <local:Employee EmpId="1" ParentId="" Designation="CEO"/>
+   <local:Employee EmpId="2" ParentId="1" Designation="Project Manager1"/>
+   <local:Employee EmpId="3" ParentId="1" Designation="Project Manager2"/>
+   <local:Employee EmpId="4" ParentId="2" Designation="Engineer1"/>
+   <local:Employee EmpId="5" ParentId="3" Designation="Engineer2"/>  
 </local:Employees>
 {% endhighlight %}
 
@@ -771,7 +771,6 @@ public class Employee
 {
     public Employee()
     {
-
     }
     public string EmpId { get; set; }
     public string ParentId { get; set; }
