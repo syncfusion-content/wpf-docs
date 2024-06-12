@@ -229,49 +229,17 @@ Event </td></tr>
 
 #### Regular strip lines
 
-The following code sample demonstrates how to define a collection of regular strip lines.
-
-{% highlight c# %}
-
-
-StripCollection =  new List<StripLineInfo>();
-
-//Getting the collection of StripLineInfo
-StripCollection = GetStripCollection();
-
-//Method will return the collection StripLineInfo
-private List<StripLineInfo> GetStripCollection()
-
-{
-    List<StripLineInfo> stripCollection = new List<StripLineInfo>();
-    stripCollection.Add(new StripLineInfo() 
-    { 
-        Content =  "Weekly Team Meeting", 
-        StartDate = new DateTime(2012, 6, 4), 
-        EndDate = new DateTime(2012, 6, 4), 
-        HorizontalContentAlignment = HorizontalAlignment.Center, 
-        VerticalContentAlignment = VerticalAlignment.Center, 
-        Background =  Brushes.Gold, RepeatBehavior = Repeat.Week, RepeatFor = 1,
-        RepeatUpto = new DateTime(2012, 12, 10),
-    });
-
-    return stripCollection;
-}
-
-
-{% endhighlight  %}
-
 The following code sample demonstrates how to bind the regular strip line collection to strip lines.
 
+{% tabs %}
 {% highlight xaml %}
 
-
-<sync:GanttControl x:Name="Gantt"
-                   Grid.Row="1"
+<syncfusion:GanttControl x:Name="Gantt"
                    ShowStripLines="True"
+                   ItemsSource="{Binding TaskCollection}"
                    StripLines="{Binding StripCollection}">
-    <sync:GanttControl.TaskAttributeMapping>
-        <sync:TaskAttributeMapping TaskIdMapping="TaskId"
+    <syncfusion:GanttControl.TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
                                    TaskNameMapping="TaskName"
                                    StartDateMapping="StartDate"
                                    FinishDateMapping="FinishDate"
@@ -280,10 +248,183 @@ The following code sample demonstrates how to bind the regular strip line collec
                                    ProgressMapping="Progress"
                                    PredecessorMapping="Predecessor"
                                    ResourceInfoMapping="Resources"/>
-    </sync:GanttControl.TaskAttributeMapping>
-</sync:GanttControl>                                                
+    </syncfusion:GanttControl.TaskAttributeMapping>
+</syncfusion:GanttControl>     
 
 {% endhighlight  %}
+
+{% highlight c# %}
+
+//Initializing Gantt
+ GanttControl Gantt = new GanttControl();
+ ViewModel GanttControlViewModel =  new ViewModel();
+ TaskAttributeMapping attributes = new TaskAttributeMapping();
+ attributes.TaskIdMapping = "TaskId";
+ attributes.TaskNameMapping = "TaskName";
+ attributes.StartDateMapping = "StartDate";
+ attributes.FinishDateMapping = "FinishDate";
+ attributes.DurationMapping = "Duration";
+ attributes.PredecessorMapping = "Predecessor";
+ attributes.ProgressMapping = "Progress";
+ attributes.ResourceInfoMapping = "Resources";
+ attributes.ChildMapping = "Child"; 
+ this.Gantt.DataContext = GanttControlViewModel;
+ Gantt.TaskAttributeMapping = attributes;
+ Gantt.ShowStripLines = true;
+ Gantt.ItemsSource = GanttControlViewModel.TaskCollection;
+ Gantt.Striplines = GanttControlViewModel.StripCollection;
+
+ public class GanttControlViewModel
+ {
+    /// <summary>
+    /// Holds the task collections.
+    /// </summary>
+    private ObservableCollection<TaskDetails> _taskCollections;
+
+    /// <summary>
+    /// Holds the strip collection
+    /// </summary>
+    private List<StripLineInfo> _stripCollection;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public GanttControlViewModel()
+    {
+        _taskCollections = GetData();
+        _stripCollection = GetStripCollection();
+    }
+
+    /// <summary>
+    /// Gets or sets the strip collection.
+    /// </summary>
+    /// <value>The strip collection.</value>
+    public List<StripLineInfo> StripCollection
+    {
+        get
+        {
+            return _stripCollection;
+        }
+        set
+        {
+            _stripCollection = value;
+            //RaisePropertyChanged("StripCollection");
+        }
+    }
+    
+    /// <summary>
+    /// Gets or sets the appointment item source.
+    /// </summary>
+    /// <value>The appointment item source.</value>
+    public ObservableCollection<TaskDetails> TaskCollection
+    {
+        get
+        {
+            return _taskCollections;
+        }
+        set
+        {
+            _taskCollections = value;
+        }
+    }
+
+    /// <summary>
+    /// Gets the strip collection
+    /// </summary>
+    /// <returns></returns>
+    private List<StripLineInfo> GetStripCollection()
+    {
+        List<StripLineInfo> stripCollection = new List<StripLineInfo>();
+        stripCollection.Add(new StripLineInfo()
+        {
+            Content = "Weekly Team Meeting",
+            StartDate = new DateTime(2011, 7, 3),
+            EndDate = new DateTime(2011, 7, 4),
+            HorizontalContentAlignment = HorizontalAlignment.Center,
+            VerticalContentAlignment = VerticalAlignment.Center,
+            Background = Brushes.Green,
+            RepeatBehavior = Repeat.Week,
+            RepeatFor = 1,
+            RepeatUpto = new DateTime(2011, 12, 10),
+        });
+
+        return stripCollection;
+    }
+
+    /// <summary>
+    /// Gets the data.
+    /// </summary>
+    /// <returns></returns>
+    public  ObservableCollection<TaskDetails> GetData()
+    {
+        var data = new ObservableCollection<TaskDetails>();
+        data.Add(new TaskDetails() { TaskId = 1, TaskName = "Analysis/Planning", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 40d });
+        data[0].Child.Add((new TaskDetails() { TaskId = 2, TaskName = "Identify Components to be Localized", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 5), Progress = 20d }));
+        data[0].Child.Add((new TaskDetails() { TaskId = 3, TaskName = "Ensure file localizability", StartDate = new DateTime(2011, 7, 6), FinishDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        data[0].Child.Add((new TaskDetails() { TaskId = 4, TaskName = "Identify tools", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        data[0].Child.Add((new TaskDetails() { TaskId = 5, TaskName = "Test tools", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 8, 1), Progress = 10d }));
+        data[0].Child.Add((new TaskDetails() { TaskId = 6, TaskName = "Develop delivery timeline", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 8, 1), Progress = 10d }));
+        data[0].Child.Add((new TaskDetails() { TaskId = 7, TaskName = "Analysis Complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 8, 10), Progress = 10d }));
+
+        data.Add(new TaskDetails() { TaskId = 8, TaskName = "Production", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 40d });
+        data[1].Child.Add((new TaskDetails() { TaskId = 9, TaskName = "Software Components", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 5), Progress = 20d }));
+        data[1].Child.Add((new TaskDetails() { TaskId = 10, TaskName = "Localization Component - User Interface", StartDate = new DateTime(2011, 7, 6), FinishDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        data[1].Child.Add((new TaskDetails() { TaskId = 11, TaskName = "User Assistance Components", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        data[1].Child.Add((new TaskDetails() { TaskId = 12, TaskName = "Software components complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 19), Progress = 10d }));
+
+
+        data.Add(new TaskDetails() { TaskId = 13, TaskName = "Quality Assurance", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 12), Progress = 40d, });
+        data[2].Child.Add((new TaskDetails() { TaskId = 14, TaskName = "Review project information", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 15), Progress = 20d }));
+        data[2].Child.Add((new TaskDetails() { TaskId = 15, TaskName = "Localization Component", StartDate = new DateTime(2011, 7, 6), FinishDate = new DateTime(2011, 7, 8), Progress = 20d }));
+        data[2].Child.Add((new TaskDetails() { TaskId = 16, TaskName = "Localization Component", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        data[2].Child.Add((new TaskDetails() { TaskId = 17, TaskName = "Localization Component", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 18), Progress = 10d }));
+
+        data.Add(new TaskDetails() { TaskId = 18, TaskName = "Beta Testing", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 40d });
+        data[3].Child.Add((new TaskDetails() { TaskId = 19, TaskName = "Disseminate completed product", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 5), Progress = 20d }));
+        data[3].Child.Add((new TaskDetails() { TaskId = 20, TaskName = "Obtain feedback", StartDate = new DateTime(2011, 7, 6), FinishDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        data[3].Child.Add((new TaskDetails() { TaskId = 21, TaskName = "Modify", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 19), Progress = 10d }));
+        data[3].Child.Add((new TaskDetails() { TaskId = 22, TaskName = "Test", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 19), Progress = 10d }));
+        data[3].Child.Add((new TaskDetails() { TaskId = 23, TaskName = "Complete", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 19), Progress = 10d }));
+
+        data.Add(new TaskDetails() { TaskId = 24, TaskName = "Post-Project Review", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 18), Progress = 40d, });
+        data[4].Child.Add((new TaskDetails() { TaskId = 25, TaskName = "Finalize cost analysis", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 5), Progress = 20d }));
+        data[4].Child.Add((new TaskDetails() { TaskId = 26, TaskName = "Analyze performance", StartDate = new DateTime(2011, 7, 6), FinishDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        data[4].Child.Add((new TaskDetails() { TaskId = 27, TaskName = "Archive files", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        data[4].Child.Add((new TaskDetails() { TaskId = 28, TaskName = "Document lessons learned", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 18), Progress = 10d }));
+        data[4].Child.Add((new TaskDetails() { TaskId = 29, TaskName = "Distribute to team members", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        data[4].Child.Add((new TaskDetails() { TaskId = 30, TaskName = "Post-project review complete", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
+
+        data[0].Resources = new ObservableCollection<Resource>() { new Resource { ID = 1, Name = "John" }, new Resource { ID = 2, Name = "Neil" } };
+        data[0].Child[3].Resources = new ObservableCollection<Resource>() { new Resource() { ID = 3, Name = "Peter" } };
+        data[1].Resources = new ObservableCollection<Resource>() { new Resource() { ID = 4, Name = "David" } };
+
+        data[0].Child[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 2, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        data[0].Child[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        data[0].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+
+        data[1].Child[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 9, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        data[1].Child[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 10, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        data[1].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 7, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+
+        data[2].Child[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+        data[2].Child[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+        data[2].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+
+        data[3].Child[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        data[3].Child[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        data[3].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 19, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+
+        data[4].Child[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 25, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        data[4].Child[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 28, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        data[4].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 30, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        data[4].Child[4].Predecessor.Add(new Predecessor() { GanttTaskIndex = 27, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        return data;
+
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 #### Output
 
@@ -330,13 +471,12 @@ The following code sample demonstrates how to bind the absolute strip line colle
 
 {% highlight xaml %}
 
-
-<sync:GanttControl x:Name="Gantt"
-                   Grid.Row="1"
+<syncfusion:GanttControl x:Name="Gantt"
                    ShowStripLines="True"
+                   ItemsSource="{Binding TaskCollection}"
                    StripLines="{Binding StripCollection}">
-    <sync:GanttControl.TaskAttributeMapping>
-        <sync:TaskAttributeMapping TaskIdMapping="TaskId"
+    <syncfusion:GanttControl.TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
                                    TaskNameMapping="TaskName"
                                    StartDateMapping="StartDate"
                                    FinishDateMapping="FinishDate"
@@ -345,8 +485,8 @@ The following code sample demonstrates how to bind the absolute strip line colle
                                    ProgressMapping="Progress"
                                    PredecessorMapping="Predecessor"
                                    ResourceInfoMapping="Resources"/>
-    </sync:GanttControl.TaskAttributeMapping>
-</sync:GanttControl>                                                
+    </syncfusion:GanttControl.TaskAttributeMapping>
+</syncfusion:GanttControl>                                                 
 
 {% endhighlight  %}
 
