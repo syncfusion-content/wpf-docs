@@ -209,11 +209,19 @@ N> Default RotateAngle value of LaneHeader's Annotation is 270 degrees. If you w
 
 {% tabs %}
 {% highlight xaml %}
- <Button Name="AddButton" Width="100"  Height="30" IsEnabled="True" Content="Add Lane" ToolTip="Add Lane" Command="{Binding AddCommand}" Cursor="Hand"></Button>
-<Button Name="RemoveButton" Width="100"  Height="30" IsEnabled="True" Content="Remove Lane" ToolTip="Remove Lane" Command="{Binding RemoveCommand}" Cursor="Hand">
-</Button>
- <syncfusion:SfDiagram x:Name="diagram" Nodes="{Binding Nodes}" 
-    Swimlanes="{Binding Swimlanes}" Connectors="{Binding Connectors}" SelectedItems="{Binding SelectedItems}"         SnapSettings="{Binding SnapSettings}"                        HorizontalRuler="{Binding HorizontalRuler}"                  VerticalRuler="{Binding VerticalRuler}"/>
+
+<Button Name="AddButton" Width="100" Height="30" IsEnabled="True" Content="Add Lane" ToolTip="Add Lane" Command="{Binding AddCommand}" Cursor="Hand"></Button>
+<Button Name="RemoveButton" Width="100" Height="30" IsEnabled="True" Content="Remove Lane" ToolTip="Remove Lane" Command="{Binding RemoveCommand}" Cursor="Hand"></Button>
+
+<syncfusion:SfDiagram x:Name="diagram"
+                      Nodes="{Binding Nodes}"
+                      Swimlanes="{Binding Swimlanes}"
+                      Connectors="{Binding Connectors}"
+                      SelectedItems="{Binding SelectedItems}"
+                      SnapSettings="{Binding SnapSettings}"
+                      HorizontalRuler="{Binding HorizontalRuler}"
+                      VerticalRuler="{Binding VerticalRuler}" />
+
 
 {% endhighlight %}
 {% highlight c# %}
