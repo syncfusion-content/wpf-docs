@@ -13,7 +13,7 @@ Connectors are objects used to create link between two points or nodes to indica
 
 ![WPF Diagram Point to Point Connection](Connector_images/wpf-diagram-point-to-point-connection.PNG)
 
-## Connector Types
+## Connector types
 
 Diagram supports to create five types of connectors. They are:
 
@@ -84,7 +84,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ![WPF Diagram Connector Types](Connector_images/wpf-diagram-connector-types.PNg)
 
-### How to Draw Polyline
+### How to draw polyline
 
 Polyline is a continuous line of a segment or a continuous line composed of more line segments. When you click the diagram page, a line will be drawn, and then new segments will be kept on added for every click on page. Line drawing will be stopped when double-click the page. This polyline will be drawn using the [`Tool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool), [`DrawingTool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool), and `DefaultConnectorType` properties.
 
@@ -113,7 +113,7 @@ diagram.DrawingTool = DrawingTool.Connector;
 
 ![WPF Diagram PloyLine Drawing](Connector_images/wpf-diagram-ployline-drawing.gif)
 
-### Free-Hand Drawing
+### Free-hand drawing
 
 Diagram has support for free-hand drawing to draw anything on the diagram page independently. Free-hand drawing will be enabled by using the `DrawingTool` property and setting its value to `FreeHand`.
 
@@ -141,13 +141,13 @@ For more information about changing drawing tool of diagram, refer to [Tools](/w
 
 Find the [Drawing tools sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools) to depict the Tools.
 
-## Create Connector 
+## Create connector 
 
 Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of [Segments](https://help.syncfusion.com/wpf/diagram/connector/segments/straight "Segments").
 
-## Create Connectors Through Connection Points
+## Create connectors through connection points
 
-The Connector can be created by defining the source and target point of the connection. The [`SourcePoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_SourcePoint) and [`TargetPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_TargetPoint) properties, which are `Point` type allows you to set or get the start and end points of a connection.
+The connector can be created by defining the source and target point of the connection. The [`SourcePoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_SourcePoint) and [`TargetPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_TargetPoint) properties, which are `Point` type allows you to set or get the start and end points of a connection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -188,9 +188,9 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ![WPF Diagram Connectors through Connection Points](Connector_images/wpf-diagram-connectors-through-connection-points.png)
 
-## Create Connection Between Nodes
+## Create connection between nodes
 
-The Connector can be created between nodes to display the relationship between them. The [`SourceNode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_SourceNode)/[`SourceNodeID`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_SourceNodeID) and [`TargetNode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_TargetNode)/[`TargetNodeID`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_TargetNodeID) properties allows you to represent the nodes to be connected.
+The connector can be created between nodes to display the relationship between them. The [`SourceNode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_SourceNode)/[`SourceNodeID`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_SourceNodeID) and [`TargetNode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_TargetNode)/[`TargetNodeID`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_TargetNodeID) properties allows you to represent the nodes to be connected.
 
 {% tabs %}
 {% highlight xaml %}
@@ -268,7 +268,7 @@ ConnectorViewModel nodeToNodeConnection = new ConnectorViewModel()
 
 ![WPF Diagram Connection Between Nodes](Connector_images/wpf-diagram-connection-between-nodes.PNG)
 
-## Connections with Ports
+## Connections with ports
 
 By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with ports.
 
@@ -405,7 +405,7 @@ For more details about Ports, refer to [Port](https://help.syncfusion.com/wpf/di
 
 Find the [Connector creation sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Create%20Connector) to depict the connector creation.
 
-## Draw Connectors
+## Draw connectors
 
 Connectors can be interactively drawn by clicking and dragging on the diagram surface by using the drawing tool. For more information about drawing connectors, refer to [Drawing Tools](/wpf/diagram/tools#drawing-tools:connectors "Drawing Tools").
 
@@ -413,7 +413,7 @@ Connectors can be interactively drawn by clicking and dragging on the diagram su
 
 Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [DataSource](/wpf/diagram/datasource "DataSource").
 
-## Add Connectors From Stencil
+## Add connectors from stencil
 
 Connectors can be predefined and added to the stencil. You can drop those connectors into the diagram, when required. 
 
