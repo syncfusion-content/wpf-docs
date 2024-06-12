@@ -137,9 +137,9 @@ connector.Constraints.Add(ConnectorConstraints.Routing);
 
 Diagram supports two types of routing algorithm:
 
-* Classic: Additional segments will be added based on the position and dimension of the obstacles in their path. This type of routing gives less priority to geometry length and number of bends.
+* **Classic:** Additional segments will be added based on the position and dimension of the obstacles in their path. This type of routing gives less priority to geometry length and number of bends.
 
-* Advanced: This routing type evaluates all possible geometrical paths for a connector aiming to find one that has a minimal bends and length.
+* **Advanced:** This routing type evaluates all possible geometrical paths for a connector aiming to find one that has a minimal bends and length.
 
 The routing algorithm can be specified by using [`RoutingType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LineRoutingSettings.html#Syncfusion_UI_Xaml_Diagram_LineRoutingSettings_RoutingType) property of [`LineRoutingSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LineRoutingSettings.html) class.
 
