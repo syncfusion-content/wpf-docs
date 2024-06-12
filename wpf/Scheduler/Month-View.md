@@ -545,7 +545,7 @@ You can customize the default appearance of more appointments indicator in a mon
 
 ## Cell right padding
 
-You can customize the spacing between an appointment and the right border of its cell to enhance interaction with a scheduler that contains appointments.
+To enhance interaction with a scheduler's appointments, you can customize the spacing between appointments and the right border of their cells using the [CellRightPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_CellRightPadding) property of [MonthViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the scheduler.
 
 {% tabs %}
 {% highlight xaml hl_lines="4" %}

@@ -778,7 +778,7 @@ this.Schedule.EnableToolTip = true;
 
 ### Customize tooltip appearance
 
-You can customize the tooltip appearance by using the `ToolTipTemplate` property in the `SfScheduler.`
+You can customize the tooltip appearance by using the [ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ToolTipTemplate) property in the [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
 The following code example shows the usage of DataTemplate.
 
