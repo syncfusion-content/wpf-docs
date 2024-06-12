@@ -47,7 +47,7 @@ chart.Series.Add(series);
 ![WPF Pyramid Chart](Series_images/wpf-pyramid-chart.png)
 
 
-The [`PyramidMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries_PyramidMode) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) or [`Linear`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) pyramid segments.
+The [`PyramidMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries_PyramidMode) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Surface) or [`Linear`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Linear) pyramid segments.
 
 **PyramidMode** **as** **Surface**
 
@@ -128,7 +128,7 @@ chart.Series.Add(series);
 
 ![WPF Chart with Linear Pyramid Mode](Series_images/wpf-chart-pyramid-linear.png)
 
-N> You can explore our [WPF Pyramid Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-pyramid-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Pyramid Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Funnel%20and%20Pyramid%20Chart/PyramidChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can explore our [WPF Pyramid Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-pyramid-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Pyramid Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Triangular%20Charts/PyramidChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Funnel Chart
 
@@ -170,7 +170,7 @@ chart.Series.Add(series);
 
 ### Funnel Mode
 
-The [`FunnelMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FunnelSeries.html#Syncfusion_UI_Xaml_Charts_FunnelSeries_FunnelMode) defines a rendering mode for the funnel series which define, where to bind your values (to height or width). The following example demonstrates [`ValueIsHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) and [`ValueIsWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) funnel mode:
+The [`FunnelMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FunnelSeries.html#Syncfusion_UI_Xaml_Charts_FunnelSeries_FunnelMode) defines a rendering mode for the funnel series which define, where to bind your values (to height or width). The following example demonstrates [`ValueIsHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsHeight) and [`ValueIsWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsWidth) funnel mode:
 
 **ValueIsHeight**
 
@@ -333,7 +333,7 @@ chart.Series.Add(series);
 
 ![WPF Funnel Chart displays Gap between Segments](Series_images/wpf-funnel-chart-with-gaps.png)
 
-N> You can refer to our [WPF Funnel Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-funnel-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Funnel Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Funnel%20and%20Pyramid%20Chart/FunnelChart.xaml) to know how to render and configure the funnel chart.
+N> You can refer to our [WPF Funnel Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-funnel-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Funnel Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Triangular%20Charts/FunnelChart.xaml) to know how to render and configure the funnel chart.
 
 ## See also
 

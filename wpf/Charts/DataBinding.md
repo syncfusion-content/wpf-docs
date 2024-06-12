@@ -30,7 +30,6 @@ YBindingPath="Year2010">
 
 </syncfusion:LineSeries>
 
-
 </syncfusion:SfChart>
 
 {% endhighlight %}

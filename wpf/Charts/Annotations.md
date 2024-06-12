@@ -24,21 +24,21 @@ You can create an instance for any type of Annotation and add it to [`Annotation
 
 {% highlight xml %}
 
-            <chart:SfChart.Annotations>            
-                    <chart:EllipseAnnotation  X1="1.5" Y1="20" Text="Ellipse" X2="3" Y2="23" >
-                    </chart:EllipseAnnotation>                           
-            </chart:SfChart.Annotations>
+<chart:SfChart.Annotations>            
+        <chart:EllipseAnnotation  X1="1.5" Y1="20" Text="Ellipse" X2="3" Y2="23" >
+        </chart:EllipseAnnotation>                           
+</chart:SfChart.Annotations>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        EllipseAnnotation annotation=new EllipseAnnotation()
-        {
-            X1 = 1.5, Y1 = 20,
-            X2 = 3, Y2 = 23,
-            Text = "Ellipse"
-        };
+EllipseAnnotation annotation=new EllipseAnnotation()
+{
+    X1 = 1.5, Y1 = 20,
+    X2 = 3, Y2 = 23,
+    Text = "Ellipse"
+};
 
 chart.Annotations.Add(annotation);
 
@@ -61,8 +61,8 @@ To position the annotation based on axis, set the X1 and Y1, X2 and Y2 propertie
 
 {% highlight xml %}
        
-         <chart:RectangleAnnotation  X1="1.25" Y1="1300" FontSize="10" FontFamily="Calibri" Text="Axis Value" X2="2.25" Y2="1500" CoordinateUnit="Axis">
-                        </chart:RectangleAnnotation>
+<chart:RectangleAnnotation  X1="1.25" Y1="1300" FontSize="10" FontFamily="Calibri" Text="Axis Value" X2="2.25" Y2="1500" CoordinateUnit="Axis">
+</chart:RectangleAnnotation>
 
 {% endhighlight %}
 
@@ -94,20 +94,20 @@ To position based on the pixel values you have to set the CoordinateUnit as Pixe
 
 {% highlight xml %}
 
-            <chart:RectangleAnnotation  X1="50" Y1="150" Text="Pixel Value" X2="100" Y2="125" CoordinateUnit="Pixel">
-                    </chart:RectangleAnnotation>
+<chart:RectangleAnnotation  X1="50" Y1="150" Text="Pixel Value" X2="100" Y2="125" CoordinateUnit="Pixel">
+</chart:RectangleAnnotation>
             
 {% endhighlight %}
 
 {% highlight c# %}
 
-        RectangleAnnotation annotation=new RectangleAnnotation()
-        {
-            X1 = 50, Y1 = 150,
-            X2 = 100, Y2 = 125,
-            CoordinateUnit=CoordinateUnit.Pixel,
-            Text="Pixel Value"
-        };
+RectangleAnnotation annotation=new RectangleAnnotation()
+{
+    X1 = 50, Y1 = 150,
+    X2 = 100, Y2 = 125,
+    CoordinateUnit=CoordinateUnit.Pixel,
+    Text="Pixel Value"
+};
 
 chart.Annotations.Add(annotation);
 
@@ -161,65 +161,65 @@ You can also add annotation for a particular axis when there is multiple axes us
 
 {% highlight c# %}
 
-            SfChart chart = new SfChart();
-            chart.RowDefinitions.Add(new ChartRowDefinition());
-            chart.RowDefinitions.Add(new ChartRowDefinition());
-            chart.PrimaryAxis = new CategoryAxis();
-            chart.SecondaryAxis = new NumericalAxis();
-            ChartBase.SetRow(chart.SecondaryAxis, 0);
+SfChart chart = new SfChart();
+chart.RowDefinitions.Add(new ChartRowDefinition());
+chart.RowDefinitions.Add(new ChartRowDefinition());
+chart.PrimaryAxis = new CategoryAxis();
+chart.SecondaryAxis = new NumericalAxis();
+ChartBase.SetRow(chart.SecondaryAxis, 0);
 
-            HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
-            {
-                X1 = -0.5,
-                Y1 = 1700,
-                X2 = 3.5,
-                YAxisName = "ColumnAxis",
-                LineCap=LineCap.Arrow,
-                Stroke=new SolidColorBrush(Colors.DarkGray)
-            };
+HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
+{
+    X1 = -0.5,
+    Y1 = 1700,
+    X2 = 3.5,
+    YAxisName = "ColumnAxis",
+    LineCap=LineCap.Arrow,
+    Stroke=new SolidColorBrush(Colors.DarkGray)
+};
 
-            RectangleAnnotation rect = new RectangleAnnotation()
-            {
-                YAxisName = "ScatterAxis",
-                Fill = new SolidColorBrush(Colors.LightGray),
-                Stroke = new SolidColorBrush(Colors.DarkGray),
-                Opacity = 0.5,
-                X1 = 0.5,
-                Y1 = 900,
-                X2 = 2.5,
-                Y2 = 1600
-            };
+RectangleAnnotation rect = new RectangleAnnotation()
+{
+    YAxisName = "ScatterAxis",
+    Fill = new SolidColorBrush(Colors.LightGray),
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+    Opacity = 0.5,
+    X1 = 0.5,
+    Y1 = 900,
+    X2 = 2.5,
+    Y2 = 1600
+};
 
-            ColumnSeries columnSeries = new ColumnSeries()
-            {
-                ItemsSource = new CategoricalViewModel().CategoricalData,
-                XBindingPath = "Category",
-                YBindingPath = "Plastic",
-                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))               
-            };
+ColumnSeries columnSeries = new ColumnSeries()
+{
+    ItemsSource = new CategoricalViewModel().CategoricalData,
+    XBindingPath = "Category",
+    YBindingPath = "Plastic",
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))               
+};
 
-            ScatterSeries scatterSeries = new ScatterSeries()
-            {
-                ItemsSource = new CategoricalViewModel().CategoricalData,
-                XBindingPath = "Category",
-                YBindingPath = "Plastic",
-                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))               
-            };
+ScatterSeries scatterSeries = new ScatterSeries()
+{
+    ItemsSource = new CategoricalViewModel().CategoricalData,
+    XBindingPath = "Category",
+    YBindingPath = "Plastic",
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))               
+};
 
-            NumericalAxis axis = new NumericalAxis()
-            {
-                Name = "ScatterAxis",
-                Maximum = 2000,
-                FontSize = 11,
-                Interval = 500,
-                ShowGridLines = false
-            };
+NumericalAxis axis = new NumericalAxis()
+{
+    Name = "ScatterAxis",
+    Maximum = 2000,
+    FontSize = 11,
+    Interval = 500,
+    ShowGridLines = false
+};
 
-            scatterSeries.YAxis = axis;
-            ChartBase.SetRow(axis, 1);
+scatterSeries.YAxis = axis;
+ChartBase.SetRow(axis, 1);
 
-        chart.Series.Add(columnSeries);
-        chart.Series.Add(scatterSeries);
+chart.Series.Add(columnSeries);
+chart.Series.Add(scatterSeries);
 
 {% endhighlight %}
 
@@ -235,21 +235,21 @@ You can also add annotation for a particular axis when there is multiple axes us
 
 {% highlight xml %}
 
-        <chart:SfChart.Annotations>
-          <chart:TextAnnotation Text="Annotation" X1="2.5" Y1="1400" >
-                    </chart:TextAnnotation>
-        </chart:SfChart.Annotations>
+<chart:SfChart.Annotations>
+    <chart:TextAnnotation Text="Annotation" X1="2.5" Y1="1400" >
+    </chart:TextAnnotation>
+</chart:SfChart.Annotations>
             
 {% endhighlight %}
 
 {% highlight c# %}
 
-        TextAnnotation annotation=new TextAnnotation()
-        {
-            X1 = 2.5, 
-            Y1 = 1400,
-            Text="Annotation"
-        };
+TextAnnotation annotation=new TextAnnotation()
+{
+    X1 = 2.5, 
+    Y1 = 1400,
+    Text="Annotation"
+};
 
 chart.Annotations.Add(annotation);
 
@@ -288,24 +288,24 @@ The following properties are used to customize the text:
 
 {% highlight xml %}
 
-    <chart:TextAnnotation Angle="90" EnableEditing="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold"
-    Foreground="Black"  Text="Annotation" X1="3.5" Y1="500" >
+<chart:TextAnnotation Angle="90" EnableEditing="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold"
+Foreground="Black"  Text="Annotation" X1="3.5" Y1="500" >
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-       TextAnnotation annotation = new TextAnnotation()
-            {
-                X1 = 3.5,
-                Y1 = 500,
-                Text = "Annotation",
-                EnableEditing=true,
-                Foreground=new SolidColorBrush(Colors.Black),
-                FontStyle=FontStyles.Bold,
-                HorizontalAlignment=HorizontalAlignment.Stretch,
-                VerticalAlignment=VerticalAlignment.Stretch
-            };
+TextAnnotation annotation = new TextAnnotation()
+{
+    X1 = 3.5,
+    Y1 = 500,
+    Text = "Annotation",
+    EnableEditing=true,
+    Foreground=new SolidColorBrush(Colors.Black),
+    FontStyle=FontStyles.Bold,
+    HorizontalAlignment=HorizontalAlignment.Stretch,
+    VerticalAlignment=VerticalAlignment.Stretch
+};
 
     chart.Annotations.Add(annotation);
 
@@ -353,21 +353,21 @@ The [`EllipseAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 {% highlight xml %}
 
-     <chart:EllipseAnnotation  X1="1.5" Y1="1400" X2="2.5" Y2="1600" Text="Ellipse">
-                    </chart:EllipseAnnotation>
+<chart:EllipseAnnotation  X1="1.5" Y1="1400" X2="2.5" Y2="1600" Text="Ellipse">
+</chart:EllipseAnnotation>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        EllipseAnnotation ellipse = new EllipseAnnotation()
-            {
-                X1 = 1.5,
-                Y1 = 1400,
-                X2 = 2.5,
-                Y2 = 1600,
-                Text = "Ellipse"
-            };
+EllipseAnnotation ellipse = new EllipseAnnotation()
+{
+    X1 = 1.5,
+    Y1 = 1400,
+    X2 = 2.5,
+    Y2 = 1600,
+    Text = "Ellipse"
+};
 
 {% endhighlight %}
 
@@ -383,8 +383,8 @@ The [`RectangleAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 {% highlight xml %}
 
-        <chart:RectangleAnnotation  X1="2.5" Y1="1500" X2="3.5" Y2="1750" Text="Rectangle">
-        </chart:RectangleAnnotation>
+<chart:RectangleAnnotation  X1="2.5" Y1="1500" X2="3.5" Y2="1750" Text="Rectangle">
+</chart:RectangleAnnotation>
 
 {% endhighlight %}
 
@@ -413,21 +413,21 @@ The [`LineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Cha
 
 {% highlight xml %}
 
-        <chart:LineAnnotation  X1="1.5" Y1="1150" X2="3.5" Y2="1600" Text="Line">
-        </chart:LineAnnotation>
+<chart:LineAnnotation  X1="1.5" Y1="1150" X2="3.5" Y2="1600" Text="Line">
+</chart:LineAnnotation>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        LineAnnotation line = new LineAnnotation()
-            {
-                X1 = 1.5,
-                Y1 = 1150,
-                X2 = 3.5,
-                Y2 = 1600,
-                Text = "Line"
-            };
+LineAnnotation line = new LineAnnotation()
+{
+    X1 = 1.5,
+    Y1 = 1150,
+    X2 = 3.5,
+    Y2 = 1600,
+    Text = "Line"
+};
 
 {% endhighlight %}
 
@@ -443,26 +443,25 @@ The [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 {% highlight xml %}
 
-        <chart:HorizontalLineAnnotation  X1="-0.5" Y1="1500" X2="4.5">
-            </chart:HorizontalLineAnnotation>
+<chart:HorizontalLineAnnotation  X1="-0.5" Y1="1500" X2="4.5"></chart:HorizontalLineAnnotation>
 
-        <chart:VerticalLineAnnotation X1="2.5"></chart:VerticalLineAnnotation>
+<chart:VerticalLineAnnotation X1="2.5"></chart:VerticalLineAnnotation>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        HorizontalLineAnnotation hor = new HorizontalLineAnnotation()
-            {
-                X1 = -0.5,
-                Y1 = 1500,
-                X2 = 4.5,
-            };
+HorizontalLineAnnotation hor = new HorizontalLineAnnotation()
+{
+    X1 = -0.5,
+    Y1 = 1500,
+    X2 = 4.5,
+};
 
-        VerticalLineAnnotation ver = new VerticalLineAnnotation()
-            {
-                X1 = 2.5
-            };
+VerticalLineAnnotation ver = new VerticalLineAnnotation()
+{
+    X1 = 2.5
+};
 
 {% endhighlight %}
 
@@ -483,28 +482,27 @@ The appearance of the LineAnnotation, VerticalLineAnnotation and HorizontalLineA
 
 **Adding arrow to line annotation**
 
-To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineCap.html). The default value of the [`LineCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_LineCap) property is [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineCap.html).
+To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineCap.html#Syncfusion_UI_Xaml_Charts_LineCap_Arrow). The default value of the [`LineCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_LineCap) property is [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineCap.html#Syncfusion_UI_Xaml_Charts_LineCap_None).
 
 {% tabs %}
 
 {% highlight xml %}
 
-       <chart:LineAnnotation  X1="0.5" Y1="1500" X2="3.5" Y2="1500" LineCap="Arrow" Text="Line">
-    </chart:LineAnnotation>
+<chart:LineAnnotation  X1="0.5" Y1="1500" X2="3.5" Y2="1500" LineCap="Arrow" Text="Line"></chart:LineAnnotation>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        LineAnnotation ellipse = new LineAnnotation()
-            {
-                X1 = 0.5,
-                Y1 = 1500,
-                X2 = 3.5,
-                Y2 = 1500,
-                Text = "Line",
-                LineCap=LineCap.Arrow
-            };
+LineAnnotation ellipse = new LineAnnotation()
+{
+    X1 = 0.5,
+    Y1 = 1500,
+    X2 = 3.5,
+    Y2 = 1500,
+    Text = "Line",
+    LineCap=LineCap.Arrow
+};
 
 {% endhighlight %}
 
@@ -521,28 +519,27 @@ To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/
 
 {% highlight xml %}
 
-        <chart:HorizontalLineAnnotation ShowAxisLabel="True" X1="-0.5" Y1="1500" X2="4.5">
-                    </chart:HorizontalLineAnnotation>
+<chart:HorizontalLineAnnotation ShowAxisLabel="True" X1="-0.5" Y1="1500" X2="4.5"></chart:HorizontalLineAnnotation>
 
-        <chart:VerticalLineAnnotation ShowAxisLabel="True" X1="2.5"></chart:VerticalLineAnnotation>
+<chart:VerticalLineAnnotation ShowAxisLabel="True" X1="2.5"></chart:VerticalLineAnnotation>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        HorizontalLineAnnotation hor = new HorizontalLineAnnotation()
-            {
-                X1 = -0.5,
-                Y1 = 1500,
-                X2 = 4.5,
-                ShowAxisLabel=true               
-            };
+HorizontalLineAnnotation hor = new HorizontalLineAnnotation()
+{
+    X1 = -0.5,
+    Y1 = 1500,
+    X2 = 4.5,
+    ShowAxisLabel=true               
+};
 
-        VerticalLineAnnotation ver = new VerticalLineAnnotation()
-            {
-                X1 = 2.5,
-                ShowAxisLabel=true
-            };
+VerticalLineAnnotation ver = new VerticalLineAnnotation()
+{
+    X1 = 2.5,
+    ShowAxisLabel=true
+};
 
 {% endhighlight %}
 
@@ -563,24 +560,24 @@ The text alignment can be changed using [`HorizontalTextAlignment`](https://help
 {% tabs %}
 {% highlight xaml %}
 
-        <chart:EllipseAnnotation  X1="1.5" Y1="1400" X2="2.5" Y2="1600" FontWeight="Bold"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Ellipse">
-        </chart:EllipseAnnotation> 
+<chart:EllipseAnnotation  X1="1.5" Y1="1400" X2="2.5" Y2="1600" FontWeight="Bold"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Ellipse">
+</chart:EllipseAnnotation> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        EllipseAnnotation ellipse = new EllipseAnnotation()
-            {
-                X1 = 1.5,
-                Y1 = 1400,
-                X2 = 2.5,
-                Y2 = 1600,
-                HorizontalTextAlignment =HorizontalAlignment.Center,
-                VerticalTextAlignment = VerticalAlignment.Center,
-                FontStyle=FontStyles.Bold,
-                Text = "Ellipse"               
-            };
+EllipseAnnotation ellipse = new EllipseAnnotation()
+{
+    X1 = 1.5,
+    Y1 = 1400,
+    X2 = 2.5,
+    Y2 = 1600,
+    HorizontalTextAlignment =HorizontalAlignment.Center,
+    VerticalTextAlignment = VerticalAlignment.Center,
+    FontStyle=FontStyles.Bold,
+    Text = "Ellipse"               
+};
 
 {% endhighlight %}
 
@@ -607,32 +604,30 @@ SfChart allows customization of shape annotation using the following properties.
 
 {% highlight xaml %}
 
-         <chart:HorizontalLineAnnotation  X1="-0.5" StrokeThickness="3" StrokeDashCap="Square" StrokeEndLineCap="Square" StrokeStartLineCap="Square"
-                          Stroke="DarkGray" Fill="LightGray" StrokeDashArray="1,3" Y1="1600" X2="4.5" Y2="1600" Text="Line">
-        </chart:HorizontalLineAnnotation>                
+<chart:HorizontalLineAnnotation  X1="-0.5" StrokeThickness="3" StrokeDashCap="Square" StrokeEndLineCap="Square" StrokeStartLineCap="Square" Stroke="DarkGray" Fill="LightGray" StrokeDashArray="1,3" Y1="1600" X2="4.5" Y2="1600" Text="Line">
+</chart:HorizontalLineAnnotation>                
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfChart chart = new SfChart();
+SfChart chart = new SfChart();
 
-            HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
-            {
+HorizontalLineAnnotation annotation = new HorizontalLineAnnotation()
+{
+    X1 = -0.5,
+    X2 = 4.5,
+    Y1 = 1500,
+    StrokeThickness = 3,
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+    Fill = new SolidColorBrush(Colors.LightGray),
+    StrokeDashArray = new DoubleCollection() { 1, 3 },
+    StrokeStartLineCap = PenLineCap.Square,
+    StrokeEndLineCap = PenLineCap.Square,
+    StrokeDashCap = PenLineCap.Round
+};
 
-                X1 = -0.5,
-                X2 = 4.5,
-                Y1 = 1500,
-                StrokeThickness = 3,
-                Stroke = new SolidColorBrush(Colors.DarkGray),
-                Fill = new SolidColorBrush(Colors.LightGray),
-                StrokeDashArray = new DoubleCollection() { 1, 3 },
-                StrokeStartLineCap = PenLineCap.Square,
-                StrokeEndLineCap = PenLineCap.Square,
-                StrokeDashCap = PenLineCap.Round
-            };
-
-            chart.Annotations.Add(annotation);
+chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
@@ -656,25 +651,24 @@ The following API’s are used in ImageAnnotation.
 
 {% highlight xaml %}
 
-        <syncfusion:ImageAnnotation  Text="Annotation" HorizontalTextAlignment="Center" 
-            VerticalTextAlignment="Top" ImageSource="Images\Graduate.png" X1="2.5" Y1="1200" X2="3.6" Y2="1700" >
-        </syncfusion:ImageAnnotation>                       
+<syncfusion:ImageAnnotation  Text="Annotation" HorizontalTextAlignment="Center" VerticalTextAlignment="Top" ImageSource="Images\Graduate.png" X1="2.5" Y1="1200" X2="3.6" Y2="1700" >
+</syncfusion:ImageAnnotation>                       
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ImageAnnotation annotation = new ImageAnnotation()
-            {
-                Text = "Annotation",
-                HorizontalTextAlignment = HorizontalAlignment.Center,
-                VerticalTextAlignment = VerticalAlignment.Top,
-                X1 = 2.5,
-                Y1 = 1200,
-                X2 = 3.6,
-                Y2 = "1700",
-                ImageSource = new BitmapImage(new Uri(@"Images\Graduate.png", UriKind.RelativeOrAbsolute))
-            };
+ImageAnnotation annotation = new ImageAnnotation()
+{
+    Text = "Annotation",
+    HorizontalTextAlignment = HorizontalAlignment.Center,
+    VerticalTextAlignment = VerticalAlignment.Top,
+    X1 = 2.5,
+    Y1 = 1200,
+    X2 = 3.6,
+    Y2 = "1700",
+    ImageSource = new BitmapImage(new Uri(@"Images\Graduate.png", UriKind.RelativeOrAbsolute))
+};
 
 {% endhighlight %}
 
@@ -704,25 +698,25 @@ The following code example demonstrates the dragging the rectangle annotation.
 
 {% highlight xaml %}
 
-        <chart:RectangleAnnotation  X1="0.6" CanDrag="True" X2="2.2" Y2="1500" Y1="1800" 
-                Stroke="DarkGray" Fill="LightGray" Opacity="0.5">
-        </chart:RectangleAnnotation>
+<chart:RectangleAnnotation  X1="0.6" CanDrag="True" X2="2.2" Y2="1500" Y1="1800" 
+                            Stroke="DarkGray" Fill="LightGray" Opacity="0.5">
+</chart:RectangleAnnotation>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        RectangleAnnotation an = new RectangleAnnotation()
-            {
-                X1 = 0.6,
-                Y1 = 1800,
-                X2 = 2.2,
-                Y2 = 1500,
-                Fill = new SolidColorBrush(Colors.LightGray),
-                Stroke = new SolidColorBrush(Colors.DarkGray),
-                CanDrag = true,
-                Opacity = 0.5
-            };
+RectangleAnnotation an = new RectangleAnnotation()
+{
+    X1 = 0.6,
+    Y1 = 1800,
+    X2 = 2.2,
+    Y2 = 1500,
+    Fill = new SolidColorBrush(Colors.LightGray),
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+    CanDrag = true,
+    Opacity = 0.5
+};
 
 {% endhighlight %}
 
@@ -741,29 +735,29 @@ You can resize the annotation by enabling [`CanResize`](https://help.syncfusion.
 
 {% highlight xaml %}
 
-        <chart:RectangleAnnotation  X1="0.6" CanResize="True" X2="2.2" Y2="1500" Y1="1800" 
-            Stroke="DarkGray" Fill="LightGray" Opacity="0.5" >
-        </chart:RectangleAnnotation>
+<chart:RectangleAnnotation  X1="0.6" CanResize="True" X2="2.2" Y2="1500" Y1="1800" 
+                            Stroke="DarkGray" Fill="LightGray" Opacity="0.5" >
+</chart:RectangleAnnotation>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-         RectangleAnnotation an = new RectangleAnnotation()
-            {
-                X1 = 0.6,
-                Y1 = 1800,
-                X2 = 2.2,
-                Y2 = 1500,
-                Fill = new SolidColorBrush(Colors.LightGray),
-                Stroke = new SolidColorBrush(Colors.DarkGray),
-                CanDrag = true,
-                Opacity = 0.5
-            };
+RectangleAnnotation an = new RectangleAnnotation()
+{
+    X1 = 0.6,
+    Y1 = 1800,
+    X2 = 2.2,
+    Y2 = 1500,
+    Fill = new SolidColorBrush(Colors.LightGray),
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+    CanDrag = true,
+    Opacity = 0.5
+};
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% endtabs %}
+{% endtabs %}
 
 ![Eesizing Annotation in WPF Chart](Annotation_images/wpf-chart-resize-annotation.jpeg)
 
@@ -785,27 +779,27 @@ The following code example demonstrates the default tooltip.
 
 {% highlight xaml %}
 
-        <chart:EllipseAnnotation  X1="2.5" Y1="1500" X2="3.6" Y2="1680" 
-            ShowToolTip="True" ToolTipContent="Annotation">
-        </chart:EllipseAnnotation>
+<chart:EllipseAnnotation  X1="2.5" Y1="1500" X2="3.6" Y2="1680" 
+                          ShowToolTip="True" ToolTipContent="Annotation">
+</chart:EllipseAnnotation>
             
 {% endhighlight %}
 
 {% highlight c# %}
 
-        SfChart chart = new SfChart();
-        EllipseAnnotation annotation=new EllipseAnnotation ()
-        {
-            X1 = 2.5, 
-            Y1 = 1500, 
-            X2 = 3.6, 
-            Y2 = 1680,
-            Stroke = new SolidColorBrush(Colors.DarkGray),
-            Fill = new SolidColorBrush (Colors.LightGray),
-            ShowToolTip = true ,
-            ToolTipContent = "Annotation"
-        };
-        chart.Annotations.Add(annotation);
+SfChart chart = new SfChart();
+EllipseAnnotation annotation=new EllipseAnnotation ()
+{
+    X1 = 2.5, 
+    Y1 = 1500, 
+    X2 = 3.6, 
+    Y2 = 1680,
+    Stroke = new SolidColorBrush(Colors.DarkGray),
+    Fill = new SolidColorBrush (Colors.LightGray),
+    ShowToolTip = true ,
+    ToolTipContent = "Annotation"
+};
+chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
@@ -868,29 +862,29 @@ SfChart allows you to clip the annotation if the annotation crosses the boundary
 
 {% highlight xaml %}
 
-        <chart:SfChart.Annotations>            
-                  
-            <chart:ImageAnnotation ImageSource="Images\Graduate.png"  X1="6" Y1="16" X2="9" Y2="18"     EnableClipping="True"/>
+<chart:SfChart.Annotations>            
+            
+    <chart:ImageAnnotation ImageSource="Images\Graduate.png"  X1="6" Y1="16" X2="9" Y2="18"     EnableClipping="True"/>
 
-        </chart:SfChart.Annotations>
+</chart:SfChart.Annotations>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfChart chart = new SfChart();
+SfChart chart = new SfChart();
 
-        ImageAnnotation image = new ImageAnnotation()
-            {
-                X1 = 6,
-                Y1 = 16,
-                X2 = 9,
-                Y2 = 18,
-                ImageSource = new BitmapImage(new Uri("Images\Graduate.png", UriKind.RelativeOrAbsolute)),
-                EnableClipping=true
-            };
+ImageAnnotation image = new ImageAnnotation()
+{
+    X1 = 6,
+    Y1 = 16,
+    X2 = 9,
+    Y2 = 18,
+    ImageSource = new BitmapImage(new Uri("Images\Graduate.png", UriKind.RelativeOrAbsolute)),
+    EnableClipping=true
+};
 
-        chart.Annotations.Add(image);
+chart.Annotations.Add(image);
 
 {% endhighlight %}
 
@@ -1032,22 +1026,21 @@ The corresponding DateTime value will be given as values for X1 and X2 propertie
         </chart:SfChart.SecondaryAxis>
 
         <chart:SfChart.Annotations>
-            <chart:RectangleAnnotation  X1="2019/12/17" Y1="1200" X2="2020/02/19" Y2="1300" >
-                    </chart:RectangleAnnotation>
+            <chart:RectangleAnnotation  X1="2019/12/17" Y1="1200" X2="2020/02/19" Y2="1300" ></chart:RectangleAnnotation>
         </chart:SfChart.Annotations>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- 			SfChart chart = new SfChart();
-            chart.PrimaryAxis = new DateTimeAxis();
-            chart.SecondaryAxis = new NumericalAxis();
-            RectangleAnnotation annotation = new RectangleAnnotation()
-            {
-                X1 = new DateTime(2019,12,17), X2 = new DateTime(2020,02,19), Y1 = 1200, Y2 = 1300,  
-            };
-            chart.Annotations.Add(annotation);
+SfChart chart = new SfChart();
+chart.PrimaryAxis = new DateTimeAxis();
+chart.SecondaryAxis = new NumericalAxis();
+RectangleAnnotation annotation = new RectangleAnnotation()
+{
+    X1 = new DateTime(2019,12,17), X2 = new DateTime(2020,02,19), Y1 = 1200, Y2 = 1300,  
+};
+chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 

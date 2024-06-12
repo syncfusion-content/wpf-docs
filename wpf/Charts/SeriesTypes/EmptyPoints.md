@@ -39,8 +39,8 @@ You can show these empty points by setting the [`ShowEmptyPoints`](https://help
 
 This is an enum property having the following values: 
 
-* [`Zero`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EmptyPointValue.html) - Replace all the empty points with zero (0), this is the default value.
-* [`Average`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EmptyPointValue.html) - Replace all the empty points with average value.
+* [`Zero`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EmptyPointValue.html#Syncfusion_UI_Xaml_Charts_EmptyPointValue_Zero) - Replace all the empty points with zero (0), this is the default value.
+* [`Average`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EmptyPointValue.html#Syncfusion_UI_Xaml_Charts_EmptyPointValue_Average) - Replace all the empty points with average value.
 
 The following code examples shows how to display the empty points:
 
@@ -144,9 +144,9 @@ The following code example shows the [`EmptyPointValue`](https://help.syncfusion
 
 You can customize the empty points using [`EmptyPointStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EmptyPointStyle) property. The following are the values of EmptyPointStyle:
 
-* [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html) - Used to define the custom brush for the empty points.
-* [`Symbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html) - Used to add symbols for the empty points.
-* [`SymbolAndInterior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html) - This is similar to Symbol, which includes empty point brush also.
+* [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html#Syncfusion_UI_Xaml_Charts_EmptyPointStyle_Interior) - Used to define the custom brush for the empty points.
+* [`Symbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html#Syncfusion_UI_Xaml_Charts_EmptyPointStyle_Symbol) - Used to add symbols for the empty points.
+* [`SymbolAndInterior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html#Syncfusion_UI_Xaml_Charts_EmptyPointStyle_SymbolAndInterior) - This is similar to Symbol, which includes empty point brush also.
 
 **Interior**
 

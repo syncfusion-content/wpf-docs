@@ -275,9 +275,9 @@ N> Here, Start and Width of the stripline as adjusted based on the rotation angl
                                                        
                                                Label="Stock Price" 
                                                        
-                                                Background="#C3C3C3"
+                                               Background="#C3C3C3"
                                                        
-                                                LabelTemplate="{StaticResource labelTemplate}"/>
+                                               LabelTemplate="{StaticResource labelTemplate}"/>
 
                 </syncfusion:NumericalAxis.StripLines>
 
