@@ -11,13 +11,13 @@ documentation: ug
 
 Connectors can be selected, dragged and routed over the diagram page. 
 
-## How to Select and Edit the Connector
+## How to select and edit the connector
 
-The Connector can be selected by tapping it. When the connector is selected, circles will be added on the starting and ending of the connector, which is represented by `Thumbs`. Clicking and dragging those handles helps you to adjust the source and target points.
+The connector can be selected by tapping it. When the connector is selected, circles will be added on the starting and ending of the connector, which is represented by `Thumbs`. Clicking and dragging those handles helps you to adjust the source and target points.
 
 ![WPF Diagram Thumb](Connector_images/wpf-diagram-thumb.gif)
 
-## How to Drag the Connector
+## How to drag the connector
 
 Also, the entire connector can be dragged over the page by using the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Constraints) property and setting its value as Draggable.
 
@@ -63,9 +63,9 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ![WPF Diagram Draggable Connector](Connector_images/wpf-diagram-draggable-connector.gif)
 
-## How to Route the Connectors
+## How to route the connectors
 
-The Connectors in the diagram can be overlapped with any neighboring nodes when the node is placed in contact with the connector. This will make less clarity about the connector path flow. This can be avoided using Routing process.
+The connectors in the diagram can be overlapped with any neighboring nodes when the node is placed in contact with the connector. This will make less clarity about the connector path flow. This can be avoided using Routing process.
 
 The routing is the process of updating the connector's geometry to avoid the overlapping with any neighboring nodes in their path. This behavior can be enabled by adding `GraphConstraints.Routing` enum value to the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Constraints) property of diagram.
 
@@ -90,7 +90,7 @@ diagram.Constraints.Add(GraphConstraints.Routing);
 
 N> Routing is applicable only for orthogonal connectors.
 
-### How to Enable or Disable Routing for Nodes
+### How to enable or disable routing for nodes
 
 By default, all nodes are treated as an obstacle for a connector that is connections will go around the node boundary.  You can disable the node's routing obstacles by removing the `NodeConstraints.RoutingObstacle` from the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Constraints) property of node.
 
@@ -112,7 +112,7 @@ node.Constraints.Remove(NodeConstraints.RoutingObstacle);
 
 ![WPF Diagram Connector Routing Obstacles](Connector_images/wpf-diagram-connector-routing-obstacles.png)
 
-### How to Enable or Disable Routing for Connectors
+### How to enable or disable routing for connectors
 
 By default, each connector's routing process is inherited based on the value of the `Constraints` property of the diagram. To control the individual connector's routing regardless of the diagram, you should remove the `ConnectorConstraints.InheritRouting` enum value from the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Constraints) property of the connector and add `ConnectorConstraints.Routing` enum value to the Constraints property or remove `ConnectorConstraints.Routing` enum value from the Constraints property to enable or disable the routing respectively.
 
