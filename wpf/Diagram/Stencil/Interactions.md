@@ -195,6 +195,32 @@ private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil%20Drag%20Drop%20Template)
 
+## Keyboard Support for Stencil in WPF Diagram
+
+The Stencil in WPF Diagram (SfDiagram) provides support for interacting with its elements using keyboard shortcuts. By default, certain built-in commands are bound to specific key combinations to enhance user efficiency. 
+
+The following table illustrates the list of commands along with their associated key gestures:
+
+| Shortcut Key | Command               | Description                                                                   |
+|--------------|-----------------------|-------------------------------------------------------------------------------|
+| Ctrl + X     | Cut                   | Cut the selected symbols from the symbol group                                |
+| Ctrl + C     | Copy                  | Copy the selected symbols to the clipboard                                    |
+| Ctrl + V     | Paste                 | Paste the symbol from the clipboard into the symbol group                     |
+| Ctrl + A     | SelectAll             | Select all the symbols in the current symbol group                            |
+| Escape       | UnSelect              | Deselect any selected symbols in the symbol group                             |
+| Delete       | Delete                | Delete the selected symbols                                                   |
+| UpArrow      | MoveUp                | Move the selection to the symbol above in the symbol group                    |
+| DownArrow    | MoveDown              | Move the selection to the symbol below in the symbol group                    |
+| RightArrow   | MoveRight             | Move the selection to the symbol to the right in the symbol group             |
+| LeftArrow    | MoveLeft              | Move the selection to the symbol to the left in the symbol group              |
+| Home         | MoveToFirstInRow      | Move the selection to the first symbol in the current row of the symbol group |
+| End          | MoveToLastInRow       | Move the selection to the last symbol in the current row of the symbol group  |
+| Page Up      | MoveToFirstInColumn   | Move the selection to the first symbol in the current column of the symbol group| 
+| Page Down    | MoveToLastInColumn    | Move the selection to the last symbol in the current column of the symbol group |
+
+
+
+
 ## See also
 
 [How to refresh the stencil with new collection or new symbol?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
