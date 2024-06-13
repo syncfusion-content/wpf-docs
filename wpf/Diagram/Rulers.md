@@ -39,7 +39,6 @@ diagram.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
 ![DefaultRuler](Rulers_images/Rulers_img1.gif)
 
 ## Customizing the Ruler
-### Customizing Measurement Units
 
 By default, ruler segments are arranged based on the `MeasurementUnit`. See the available [LengthUnits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LengthUnit.html) for Ruler.
 
@@ -62,7 +61,7 @@ You can change the color of the ruler's position indicator marker to any preferr
         <syncfusion:Ruler Orientation="Vertical" MarkerBrush="Green"/>
     </syncfusion:SfDiagram.VerticalRuler>
 </syncfusion:SfDiagram>
-		
+
 {% endhighlight %}
 {% highlight C# %}
 

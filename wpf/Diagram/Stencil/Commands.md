@@ -9,7 +9,7 @@ documentation: ug
 
 # Command Manager for Stencil in WPF Diagram (SfDiagram)
 
-The Stencil in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands. These enhancements allow users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently, all without using a mouse. The [`CommandManager`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CommandManager) for the Stencil control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the Stencil.
+The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) in the WPF Diagram (SfDiagram) library now supports a variety of keyboard commands. These enhancements allow users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently, all without using a mouse. The [`CommandManager`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CommandManager) for the `Stencil` control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the `Stencil`.
 
 ## Built-in Commands and Key Gestures
 
@@ -188,7 +188,7 @@ The [`UnSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.S
 
 ![Gif for Stencil Selection Commands](Stencil_Images/StencilSelectionCommands.gif)
 
-## Symbol Selection Navigation Commands
+## Navigate Between Symbols Commands
 
 The [`MoveUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveUp), [`MoveDown`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveDown), [`MoveLeft`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveLeft), and [`MoveRight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveRight) commands help in moving the selection of symbols accordingly. You can navigate between symbols using the arrow keys (Up, Down, Left, Right). 
 
@@ -242,7 +242,7 @@ The [`MoveUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Ste
 
 ## MoveToFirstInRow Command
 
-The [`MoveToFirstInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToFirstInRow) command moves selection to the first symbol in the current row of the stencil or the first symbol of the first row if none is selected. MoveToFirstInRow command can be executed by pressing the Home key.
+The [`MoveToFirstInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToFirstInRow) command moves selection to the first symbol in the current row of the `SymbolGroup` or the first symbol of the first row if none is selected. MoveToFirstInRow command can be executed by pressing the Home key.
 
 {% tabs %}
 
@@ -267,7 +267,7 @@ The [`MoveToFirstInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.D
 
 ## MoveToLastInRow Command
 
-The [`MoveToLastInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToLastInRow) command moves selection to the last symbol in the current row of the stencil or the last symbol of the last row if none is selected. MoveToLastInRow command can be executed by pressing the End key.
+The [`MoveToLastInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToLastInRow) command moves selection to the last symbol in the current row of the `SymbolGroup` or the last symbol of the last row if none is selected. MoveToLastInRow command can be executed by pressing the End key.
 
 {% tabs %}
 
@@ -292,7 +292,7 @@ The [`MoveToLastInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Di
 
 ## MoveToFirstInColumn Command
 
-The [`MoveToFirstInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToFirstInColumn) command moves selection to the first symbol in the current column of the stencil or the first symbol of the first column if none is selected. MoveToFirstInColumn command can be executed by pressing the PageUp key.
+The [`MoveToFirstInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToFirstInColumn) command moves selection to the first symbol in the current column of the `SymbolGroup` or the first symbol of the first column if none is selected. MoveToFirstInColumn command can be executed by pressing the PageUp key.
 
 {% tabs %}
 
@@ -318,7 +318,7 @@ The [`MoveToFirstInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 ## MoveToLastInColumn Command
 
-The [`MoveToLastInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToLastInColumn) command moves selection to the last symbol in the current column of the stencil or the last symbol of the symbol group if none is selected. MoveToLastInColumn command can be executed by pressing the PageDown key.
+The [`MoveToLastInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToLastInColumn) command moves selection to the last symbol in the current column of the `SymbolGroup` or the last symbol of the symbol group if none is selected. MoveToLastInColumn command can be executed by pressing the PageDown key.
 
 {% tabs %}
 
@@ -365,9 +365,9 @@ Here is an example of how to remove a specific command from the CommandManager:
 
 ## Adding a Custom Command to the CommandManager
 
-Adding a custom command allows you to extend the functionality of the stencil. You can define a new command, specify its gesture, and add it to the CommandManager.
+Adding a custom command allows you to extend the functionality of the `Stencil`. You can define a new command, specify its gesture, and add it to the `CommandManager`.
 
-Below is an example of how to add a custom command to the CommandManager:
+Here's an example of how to add a custom command to the CommandManager:
 
 {% tabs %}
 
