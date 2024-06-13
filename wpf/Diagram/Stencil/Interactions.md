@@ -197,7 +197,7 @@ private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
 
 ## Keyboard Support for Stencil in WPF Diagram
 
-The Stencil in WPF Diagram (SfDiagram) provides support for interacting with its elements using keyboard shortcuts. By default, certain built-in commands are bound to specific key combinations to enhance user efficiency. 
+The `Stencil` in WPF Diagram (SfDiagram) provides support for interacting with its elements using keyboard shortcuts. By default, certain built-in commands are bound to specific key combinations to enhance user efficiency. 
 
 The following table illustrates the list of commands along with their associated key gestures:
 

@@ -62,7 +62,7 @@ You can change the color of the ruler's position indicator marker to any preferr
         <syncfusion:Ruler Orientation="Vertical" MarkerBrush="Green"/>
     </syncfusion:SfDiagram.VerticalRuler>
 </syncfusion:SfDiagram>
-		
+
 {% endhighlight %}
 {% highlight C# %}
 
