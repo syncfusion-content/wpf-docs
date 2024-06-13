@@ -761,7 +761,7 @@ An interactive tooltip provides additional details about the appointments on hov
 
 ### Enable tooltip for appointments
 
-To enable tooltip for the scheduler appointments, use the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) property of `SfScheduler.` By default, [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to `false.` To provide users with additional information or context about appointments, simply set this property to true.
+To enable tooltip for the scheduler appointments, use the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) property of [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). By default, [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to `false.` To provide users with additional information or context about appointments, simply set this property to true.
 
 {% tabs %}
 {% highlight xaml %}
