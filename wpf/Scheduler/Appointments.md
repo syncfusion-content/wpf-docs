@@ -761,7 +761,7 @@ An interactive tooltip provides additional details about the appointments on hov
 
 ### Enable tooltip for appointments
 
-To enable tooltip for the scheduler appointments, use the `EnableTooltip` property of `SfScheduler.` By default, `EnableTooltip` is set to `false.` To provide users with additional information or context about appointments, simply set this property to true.
+To enable tooltip for the scheduler appointments, use the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) property of [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). By default, [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to `false.` To provide users with additional information or context about appointments, simply set this property to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -778,12 +778,12 @@ this.Schedule.EnableToolTip = true;
 
 ### Customize tooltip appearance
 
-You can customize the tooltip appearance by using the `ToolTipTemplate` property in the `SfScheduler.`
+You can customize the tooltip appearance by using the [ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ToolTipTemplate) property in the [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
 The following code example shows the usage of DataTemplate.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" %}
+{% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule"
                         EnableToolTip="True">
  <syncfusion:SfScheduler.ToolTipTemplate>
@@ -809,11 +809,11 @@ The following code example shows the usage of DataTemplate.
  </syncfusion:SfScheduler.ToolTipTemplate>
 </syncfusion:SfScheduler>
 
-N>
-* This property will only be applicable when `EnableTooltip` is set to true.
-
 {% endhighlight %}
 {% endtabs %}
+
+N>
+* This property will only be applicable when [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to true.
 
 ## Appearance customization
 The default appearance of schedule appointment can be customized in all the views by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) and [AppointmentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplateSelector) properties of [ViewSettingsBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html). Use the [AllDayAppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayAppointmentTemplate) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) to customize the appearance of all day appointments in day, week and work week views.
