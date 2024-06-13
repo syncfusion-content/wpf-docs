@@ -346,24 +346,24 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`How to bind a list of Tuple in WPF Charts`](https://www.syncfusion.com/kb/11645/how-to-bind-a-list-of-tuple-in-wpf-charts)
+[`How to bind a list of Tuple in WPF Charts`](https://support.syncfusion.com/kb/article/10198/how-to-bind-a-list-of-tuple-in-wpf-charts)
 
-[`How to bind the underlying DataTable model to the DataMarker Template in WPF Charts`](https://www.syncfusion.com/kb/11603/how-to-bind-the-underlying-datatable-model-to-the-datamarker-template-in-wpf-charts)
+[`How to bind the underlying DataTable model to the DataMarker Template in WPF Charts`](https://support.syncfusion.com/kb/article/10047/how-to-bind-the-underlying-datatable-model-to-the-datamarker-template-in-wpf-charts)
 
-[`How to bind the SQL Database to WPF Charts`](https://www.syncfusion.com/kb/11595/how-to-bind-the-sql-database-to-wpf-charts)
+[`How to bind the SQL Database to WPF Charts`](https://support.syncfusion.com/kb/article/9945/how-to-bind-the-sql-database-to-wpf-charts)
 
-[`How to bind the JSON data in WPF Chart`](https://www.syncfusion.com/kb/10929/how-to-bind-the-json-data-in-wpf-chart)
+[`How to bind the JSON data in WPF Chart`](https://support.syncfusion.com/kb/article/9418/how-to-bind-the-json-data-in-wpf-chart)
 
-[`How to bind KeyValuePair collection in WPF Chart`](https://www.syncfusion.com/kb/10449/how-to-bind-keyvaluepair-collection-in-wpf-sfchart)
+[`How to bind KeyValuePair collection in WPF Chart`](https://support.syncfusion.com/kb/article/9234/how-to-bind-keyvaluepair-collection-in-wpf-sfchart)
 
-[`How to bind the series collection property using MVVM pattern`](https://www.syncfusion.com/kb/9406/how-to-bind-the-series-collection-property-using-mvvm-pattern)
+[`How to bind the series collection property using MVVM pattern`](https://support.syncfusion.com/kb/article/8344/how-to-bind-series-property-using-mvvm-pattern-in-wpf-chart)
 
-[`How to bind data table in the Chart`](https://www.syncfusion.com/kb/5515/how-to-bind-data-table-in-the-sfchart)
+[`How to bind data table in the Chart`](https://support.syncfusion.com/kb/article/5196/how-to-bind-data-table-in-wpf-chart-sfchart)
 
-[`How to create a real time Chart using MVVM in WPF`](https://www.syncfusion.com/kb/11416/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
+[`How to create a real time Chart using MVVM in WPF`](https://support.syncfusion.com/kb/article/10039/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
 
-[`How to bind the array property in Chart`](https://www.syncfusion.com/kb/4923/how-to-bind-the-array-property-in-sfchart)
+[`How to bind the array property in Chart`](https://support.syncfusion.com/kb/article/4555/how-to-bind-the-array-property-in-wpf-chart-sfchart)
 
-[`How to generate dynamic number of series based on common items source`](https://www.syncfusion.com/kb/7578/how-to-generate-dynamic-number-of-series-based-on-common-items-source)
+[`How to generate dynamic number of series based on common items source`](https://support.syncfusion.com/kb/article/6858/how-to-generate-dynamic-number-of-series-based-on-common-items-source-in-wpf-chart-sfchart)
 
-[`How to manage the empty values (NaN) in Chart`](https://www.syncfusion.com/kb/2900/how-to-manage-the-empty-values-nan-in-sfchart)
+[`How to manage the empty values (NaN) in Chart`](https://support.syncfusion.com/kb/article/3088/how-to-manage-the-empty-values-in-wpf-chart-sfchart)
