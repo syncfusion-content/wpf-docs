@@ -193,7 +193,7 @@ return RowInfo;
 
 The following image shows Custom Schedule:
 
-![gantt-control-custom-datetime-schedule](Custom-Schedule_images/gantt-control-custom-datetime-schedule.png)
+![Custom-Schedule_img1](Custom-Schedule_images/Custom-Schedule_img1.png)
 
 Custom Schedule
 {:.caption}
@@ -222,40 +222,50 @@ The following code illustrates this:
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GanttControl x:Name="ganttControl"
-                         ScheduleType="CustomDateTime"
-                         ShowChartLines="False"
-                         ShowNonWorkingHoursBackground="False"
-                         ItemsSource="{Binding TaskCollection}">
-    <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping ChildMapping="ChildCollection"
-                                         DurationMapping="Duration"
-                                         FinishDateMapping="EndDate"
-                                         PredecessorMapping="Predecessor"
-                                         ProgressMapping="Progress"
-                                         ResourceInfoMapping="Resource"
-                                         StartDateMapping="StartDate"
-                                         TaskIdMapping="ID"
-                                         TaskNameMapping="Name" />
-    </syncfusion:GanttControl.TaskAttributeMapping>
-</syncfusion:GanttControl>
+<sync:GanttControl Grid.Row="1" x:Name="Gantt" 
+                   ScheduleType="CustomDateTime"                                                                                          VisualStyle="Office2010Black"
+                   ItemsSource="{Binding GanttItemSource}" 
+                   ShowChartLines="False"
+                   ShowNonWorkingHoursBackground="False"
+                   ToolTipTemplate="{StaticResource toolTipTemplate}">
+	<sync:GanttControl.TaskAttributeMapping>
+    	<sync:TaskAttributeMapping TaskIdMapping="Id"
+                                   TaskNameMapping="Name"
+                                   StartDateMapping="StDate" 
+                                   ChildMapping="ChildTask"
+                                   FinishDateMapping="EndDate"
+                                   DurationMapping="Duration"                                            
+                                   ProgressMapping="Complete"
+                                   ResourceInfoMapping="Resource"
+                                   PredecessorMapping="Predecessor"	>
+	    </sync:TaskAttributeMapping>
+	</sync:GanttControl.TaskAttributeMapping>
+</sync:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
 
 // Assigning the custom schedule Items Source.
-this.ganttControl.CustomScheduleSource = this.GetCustomScheduleSource();
+
+this.Gantt.CustomScheduleSource = this.GetCustomScheduleSource();
 
 // Hooks the schedule cell created event to customize the schedule cell appearance.
-this.ganttControl.ScheduleCellCreated += this.OnGanttScheduleCellCreated;
 
-// Gets the Custom Schedule Items Info
+this.Gantt.ScheduleCellCreated += new GanttControl.ScheduleCellCreatedEventHandler(Gantt_ScheduleCellCreated);
+
+// Gets the Custom Schedule Items Info        
+
+
 public IList<GanttScheduleRowInfo> GetCustomScheduleSource()
+
 {
+
     List<GanttScheduleRowInfo> RowInfo = new List<GanttScheduleRowInfo>();
 
     // Defining the top most row of the schedule
+
     // Here we need the Year Schedule in this row. So we are defining  the TimeUnit as years
+
     RowInfo.Add(new GanttScheduleRowInfo()
     {
         TimeUnit = TimeUnit.Years,
@@ -264,8 +274,11 @@ public IList<GanttScheduleRowInfo> GetCustomScheduleSource()
     });
 
     // Defining the bottom most row of the schedule
+
     // Here we need to display the three months in a cell so we are defining TimeUnit in months, and cells per Unit as 3 
+
     // Bottom Most row should consist information about the pixels per Unit, so we define the pixels per unit as 15 (here this is a one month width).
+
     RowInfo.Add(new GanttScheduleRowInfo()
     {
         TimeUnit = TimeUnit.Months,
@@ -274,306 +287,81 @@ public IList<GanttScheduleRowInfo> GetCustomScheduleSource()
     });
 
     return RowInfo;
+
 }
 
 /// Handles the Schedule cell Created Event of the Gantt 
 
 void Gantt_ScheduleCellCreated(object sender, ScheduleCellCreatedEventArgs args)
+
 {
+
     DateTime currentDate = args.CurrentCell.CellDate;
+
     if (args.CurrentCell.CellTimeUnit == TimeUnit.Months)
+
     {
+
         args.CurrentCell.Foreground = new SolidColorBrush(Colors.White);
+
         // Quarter 1 dates contain months below 3 as we are checking the cell date and changing the content of the cell.
+
         if (currentDate.Month <= 3)
+
         {
+
             args.CurrentCell.Content = "Q 1";
+
             args.CurrentCell.CellToolTip = "Quarter 1";
+
             args.CurrentCell.Background = new SolidColorBrush(Colors.DarkGray);
+
         }
 
         // Quarter 2 dates contain months between 4 – 6 as we are checking the cell dates and changing the content of the cell.
+
         else if (currentDate.Month > 3 && currentDate.Month <= 6)
+
         {
+
             args.CurrentCell.Content = "Q 2";
+
             args.CurrentCell.CellToolTip = "Quarter 2";
+
             args.CurrentCell.Background = new SolidColorBrush(Colors.LightGray);
+
         }
 
         // Quarter 3 dates contains months between 6 - 9 as we are checking the cell date and changing the Content of the cell.
+
         else if (currentDate.Month > 6 && currentDate.Month <= 9)
+
         {
+
             args.CurrentCell.Content = "Q 3";
+
             args.CurrentCell.CellToolTip = "Quarter 3";
+
             args.CurrentCell.Background = new SolidColorBrush(Colors.DarkGray);
+
         }
 
         // Quarter 4 dates contains months between 9 - 12. So we are checking the cell date and changing the content of the cell.
+
         else if (currentDate.Month > 9 && currentDate.Month <= 12)
+
         {
+
             args.CurrentCell.Content = "Q 4";
+
             args.CurrentCell.CellToolTip = "Quarter 4";
+
             args.CurrentCell.Background = new SolidColorBrush(Colors.LightGray);
+
         }
+
     }
 
-}
-
-{% endhighlight  %}
-{% highlight c# tabtitle="Task.cs" %}
-
-public class Task : INotifyPropertyChanged
-{
-    private DateTime startDate, endDate;
-
-    private TimeSpan duration;
-
-    private double progress;
-
-    private int id;
-
-    private string name;
-
-    private ObservableCollection<Task> childCollection;
-
-    private ObservableCollection<Resource> resource;
-
-    private ObservableCollection<Predecessor> predecessor;
-
-    public Task()
-    {
-        ChildCollection = new ObservableCollection<Task>();
-        Predecessor = new ObservableCollection<Predecessor>();
-        Resource = new ObservableCollection<Resource>();
-    }
-
-    /// <summary>
-    /// Property for Start Date.
-    /// </summary>
-    public DateTime StartDate
-    {
-        get
-        {
-            return this.startDate;
-        }
-        set
-        {
-            this.startDate = value;
-            OnPropertyChanged("StartDate");
-        }
-    }
-
-    /// <summary>
-    /// Property for Finish Date.
-    /// </summary>
-    public DateTime EndDate
-    {
-        get
-        {
-            return this.endDate;
-        }
-        set
-        {
-            this.endDate = value;
-            OnPropertyChanged("EndDate");
-        }
-    }
-
-    /// <summary>
-    /// Property for duration value.
-    /// </summary>
-    public TimeSpan Duration
-    {
-        get
-        {
-            return this.duration;
-        }
-        set
-        {
-            this.duration = value;
-            OnPropertyChanged("Duration");
-        }
-    }
-
-    /// <summary>
-    /// Property for ID value.
-    /// </summary>
-    public int ID
-    {
-        get
-        {
-            return this.id;
-        }
-        set
-        {
-            this.id = value;
-            OnPropertyChanged("ID");
-        }
-    }
-
-    /// <summary>
-    /// Property for Name.
-    /// </summary>
-    public string Name
-    {
-        get
-        {
-            return this.name;
-        }
-        set
-        {
-            this.name = value;
-            OnPropertyChanged("Name");
-        }
-    }
-
-    /// <summary>
-    /// Property to define progress value.
-    /// </summary>
-    public double Progress
-    {
-        get
-        {
-            return this.progress;
-        }
-        set
-        {
-            this.progress = value;
-            OnPropertyChanged("Progress");
-        }
-    }
-
-    /// <summary>
-    /// Property to add child collection.
-    /// </summary>
-    public ObservableCollection<Task> ChildCollection
-    {
-        get
-        {
-            return this.childCollection;
-        }
-        set
-        {
-            this.childCollection = value;
-            OnPropertyChanged("ChildCollection");
-        }
-    }
-
-    /// <summary>
-    /// Property to define resource value.
-    /// </summary>
-    public ObservableCollection<Resource> Resource
-    {
-        get
-        {
-            return this.resource;
-        }
-        set
-        {
-            this.resource = value;
-            OnPropertyChanged("Resource");
-        }
-    }
-
-    /// <summary>
-    /// Property to define predecessor value.
-    /// </summary>
-    public ObservableCollection<Predecessor> Predecessor
-    {
-        get
-        {
-            return this.predecessor;
-        }
-        set
-        {
-            this.predecessor = value;
-            OnPropertyChanged("Predecessor");
-        }
-    }
-
-    private void OnPropertyChanged(string propName)
-    {
-        if (this.PropertyChanged != null)
-        {
-            PropertyChanged(this, new PropertyChangedEventArgs(propName));
-        }
-    }
-
-    public event PropertyChangedEventHandler PropertyChanged;
-}
-
-{% endhighlight  %}
-{% highlight c# tabtitle="ViewModel.cs" %}
- 
-public class ViewModel
-{
-    public ObservableCollection<Task> TaskCollection { get; set; }
-
-    public ViewModel()
-    {
-    TaskCollection = this.GetDataSource();
-    }
-
-    private ObservableCollection<Task> GetDataSource()
-    {
-        var data = new ObservableCollection<Task>();
-        data.Add(new Task() { ID = 1, Name = "Scope", StartDate = new DateTime(2011, 8, 9), EndDate = new DateTime(2012, 6, 20), Progress = 40d });
-        data[0].ChildCollection.Add((new Task() { ID = 2, Name = "Determine project office scope", StartDate = new DateTime(2011, 8, 9), EndDate = new DateTime(2012, 2, 20), Progress = 20d, }));
-        data[0].ChildCollection.Add((new Task() { ID = 3, Name = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 11, 6), EndDate = new DateTime(2012, 4, 7), Progress = 20d, }));
-        data[0].ChildCollection.Add((new Task() { ID = 4, Name = "Secure executive sponsorship", StartDate = new DateTime(2012, 2, 10), EndDate = new DateTime(2012, 6, 14), Progress = 10d, }));
-        data[0].ChildCollection.Add((new Task() { ID = 5, Name = "Secure Progress", StartDate = new DateTime(2012, 6, 14), EndDate = new DateTime(2012, 9, 14), Progress = 10d }));
-
-        data.Add(new Task() { ID = 6, Name = "Risk Assessment", StartDate = new DateTime(2012, 7, 15), EndDate = new DateTime(2011, 7, 24) });
-        data[1].ChildCollection.Add((new Task() { ID = 7, Name = "Perform risk assessment", StartDate = new DateTime(2012, 2, 15), EndDate = new DateTime(2012, 8, 21), Progress = 20d, }));
-        data[1].ChildCollection.Add((new Task() { ID = 8, Name = "Evaluate risk assessment", StartDate = new DateTime(2012, 5, 21), EndDate = new DateTime(2012, 7, 23), Progress = 20d, }));
-        data[1].ChildCollection.Add((new Task() { ID = 9, Name = "Prepare contingency plans", StartDate = new DateTime(2012, 8, 21), EndDate = new DateTime(2013, 2, 24), Progress = 20d, }));
-        data[1].ChildCollection.Add((new Task() { ID = 10, Name = "Risk Assessment Progress", StartDate = new DateTime(2012, 4, 24), EndDate = new DateTime(2012, 9, 24), Progress = 30d }));
-
-        data.Add(new Task() { ID = 11, Name = "Monitoring", StartDate = new DateTime(2012, 7, 25), EndDate = new DateTime(2012, 8, 6), Duration = new TimeSpan(1, 0, 0, 0) });
-        data[2].ChildCollection.Add((new Task() { ID = 12, Name = "Prepare Meeting agenda", StartDate = new DateTime(2012, 9, 25), EndDate = new DateTime(2012, 12, 26), Progress = 20d, }));
-        data[2].ChildCollection.Add((new Task() { ID = 13, Name = "Conduct review meeting", StartDate = new DateTime(2013, 1, 27), EndDate = new DateTime(2013, 7, 30), Progress = 20d, }));
-        data[2].ChildCollection.Add((new Task() { ID = 14, Name = "Migrate critical issues", StartDate = new DateTime(2013, 3, 30), EndDate = new DateTime(2013, 7, 2), Progress = 20d, }));
-        data[2].ChildCollection.Add((new Task() { ID = 15, Name = "Estabilish change mgmt Control", StartDate = new DateTime(2013, 5, 3), EndDate = new DateTime(2013, 9, 6), Progress = 30d, }));
-        data[2].ChildCollection.Add((new Task() { ID = 16, Name = "Monitoring Progress", StartDate = new DateTime(2013, 7, 6), EndDate = new DateTime(2013, 12, 6), Progress = 30d }));
-
-        data.Add(new Task() { ID = 17, Name = "Post Implementation", StartDate = new DateTime(2013, 7, 25), EndDate = new DateTime(2012, 3, 12) });
-        data[3].ChildCollection.Add((new Task() { ID = 18, Name = "Obtain User feedback", StartDate = new DateTime(2013, 7, 25), EndDate = new DateTime(2014, 4, 29), Progress = 20d, }));
-        data[3].ChildCollection.Add((new Task() { ID = 19, Name = "Evaluate lessons learned", StartDate = new DateTime(2013, 10, 29), EndDate = new DateTime(2014, 7, 5), Progress = 20d, }));
-        data[3].ChildCollection.Add((new Task() { ID = 20, Name = "Modify items as necessary", StartDate = new DateTime(2014, 1, 2), EndDate = new DateTime(2014, 9, 8), Progress = 20d, }));
-        data[3].ChildCollection.Add((new Task() { ID = 21, Name = "Post Implementation Progress", StartDate = new DateTime(2014, 4, 8), EndDate = new DateTime(2014, 9, 12), Progress = 30d }));
-
-        data[0].ChildCollection[0].Resource.Add(new Resource() { ID = 1, Name = "Leslie" });
-        data[0].ChildCollection[1].Resource.Add(new Resource() { ID = 2, Name = "John" });
-        data[0].ChildCollection[2].Resource.Add(new Resource() { ID = 3, Name = "DavID" });
-        data[0].ChildCollection[3].Resource.Add(new Resource() { ID = 4, Name = "Peter" });
-
-        data[1].ChildCollection[0].Resource.Add(new Resource() { ID = 5, Name = "Neil" });
-        data[1].ChildCollection[1].Resource.Add(new Resource() { ID = 7, Name = "Johnson" });
-        data[1].ChildCollection[1].Resource.Add(new Resource() { ID = 8, Name = "Julie" });
-        data[1].ChildCollection[2].Resource.Add(new Resource() { ID = 9, Name = "Peterson" });
-        data[1].ChildCollection[3].Resource.Add(new Resource() { ID = 10, Name = "Thomas" });
-
-        data[3].ChildCollection[1].Resource.Add(new Resource() { ID = 5, Name = "DavID" });
-        data[3].ChildCollection[2].Resource.Add(new Resource() { ID = 7, Name = "Peter" });
-        data[3].ChildCollection[3].Resource.Add(new Resource() { ID = 8, Name = "Thomas" });
-
-        data[0].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 2, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[0].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[0].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-
-        data[1].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 9, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[1].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 10, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[1].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 7, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-
-        data[2].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
-        data[2].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
-        data[2].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
-
-        data[3].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[3].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[3].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 19, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        return data;
-    }
 }
 
 {% endhighlight  %}
@@ -582,7 +370,11 @@ public class ViewModel
 
 The following image shows Custom DateTime Schedule:
 
-![gantt-control-custom-schedule](Custom-Schedule_images/gantt-control-custom-schedule.png)
+
+
+![Custom-Schedule_images2](Custom-Schedule_images/Custom-Schedule_img2.png)
+
+
 
 Custom DateTime Schedule
 {:.caption}
