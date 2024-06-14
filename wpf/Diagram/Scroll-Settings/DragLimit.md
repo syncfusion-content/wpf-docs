@@ -11,9 +11,9 @@ documentation: ug
 
 The drag limit allows you to define the dragging region of the Diagram while diagram objects are getting dragged. The [`DragLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_DragLimit) property of scroll settings class helps to limit the dragging area. It includes the following options:
 
-* Infinity: Allows you to drag the diagram objects in all directions without any restriction.
-* Diagram: Allows you to drag the diagram objects within the Diagram content.
-* Limited: Allows you to drag the diagram objects within the specified area. The [`EditableArea`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea) property is used to specify the area that is allowed to dragging.
+* **Infinity**: Allows you to drag the diagram objects in all directions without any restriction.
+* **Diagram**: Allows you to drag the diagram objects within the Diagram content.
+* **Limited**: Allows you to drag the diagram objects within the specified area. The [`EditableArea`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea) property is used to specify the area that is allowed to dragging.
 
 The default operation is `Infinity`. 
 
@@ -60,12 +60,12 @@ private void Diagram_SelectorChangedEvent(object sender, SelectorChangedEventArg
 
 {% seealso %}
 
-[How to snap the diagram objects on the diagram page](/wpf/diagram/snapping/definesnapping)
+[How to snap the diagram objects on the diagram page?](/wpf/diagram/snapping/definesnapping)
 
-[How to change the page settings of the diagram control](/wpf/diagram/page-settings)
+[How to change the page settings of the diagram control?](/wpf/diagram/page-settings)
 
-[How to add the gridlines for the diagram control](/wpf/diagram/gridlines)
+[How to add the gridlines for the diagram control?](/wpf/diagram/gridlines)
 
-[How to add the rulers for the diagram control](/wpf/diagram/rulers)
+[How to add the rulers for the diagram control?](/wpf/diagram/rulers)
 
 {% endseealso %}

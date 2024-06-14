@@ -11,9 +11,9 @@ documentation: ug
 
 The auto-scroll limit allows you to define the scrollable region of the Diagram while the page is getting auto scrolled. The [`AutoScrollLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_AutoScrollLimit) property of scroll settings class helps to limit the auto scrolling area. It includes the following options:
 
-* Infinity: Allows auto-scroll in all directions without any restriction.
-* Diagram: Allows auto-scroll within the Diagram content.
-* Limited: Allows auto-scroll within the specified area.
+* **Infinity**: Allows auto-scroll in all directions without any restriction.
+* **Diagram**: Allows auto-scroll within the Diagram content.
+* **Limited**: Allows auto-scroll within the specified area.
 
 The default operation is `Infinity`.
 
