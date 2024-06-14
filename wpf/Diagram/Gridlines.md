@@ -106,6 +106,8 @@ public class Gridlinestyle : List<Style>
 
 ![Snap to Gridlines](Gridlines_images/CustomGridlines.png)
 
+Find the [Gridlines Styling Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Gridlines/GridlineStyle) to customize the Gridlines appearance.
+
 ## Change grid spacing
 
 The thickness and space between the gridlines can be customized by using [`LinesInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html#Syncfusion_UI_Xaml_Diagram_Gridlines_LinesInterval) property of Gridlines class. The `LinesInterval` is a type of List<double> collection, where the values at the odd indexes are referred as thickness of the lines and the values at the even indexes are referred as space between the gridlines.
@@ -176,7 +178,7 @@ public class Intervals : List<double>
 
 ![Snap to Gridlines](Gridlines_images/LineIntervals.png)
 
-Find the [Gridlines sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Gridlines) to depict the Gridlines.
+Find the [Gridlines Custom Spacing Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Gridlines/GridlineCustomSpacing) to customize the Gridlines spacing.
 
 ## See Also
 
