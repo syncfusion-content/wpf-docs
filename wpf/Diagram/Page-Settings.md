@@ -9,7 +9,7 @@ documentation: ug
 
 # Page Settings in WPF Diagram (SfDiagram)
 
-By default, Diagram's page size is decided based on the position of diagramming elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html ) property of SfDiagram. 
+By default, Diagram's page size is decided based on the position of diagramming elements. The size and appearance of the diagram pages can be customized using the [`PageSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html ) property of SfDiagram. 
 
 * The [`PageWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageWidth) and [`PageHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageHeight) properties of `PageSettings` define the size of the page. 
 * The [`PageOrientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageOrientation) property of `PageSettings` used to change the page orientation to portrait or landscape.
@@ -316,17 +316,17 @@ Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagra
 
 ## See Also
 
-[How to add or remove grid lines for diagram page](/wpf/diagram/gridlines)
+[How to add or remove grid lines for diagram page?](/wpf/diagram/gridlines)
 
-[How to define scroll setting for diagram page](/wpf/diagram/scroll-settings/scrollstatusandautoscroll)
+[How to define scroll setting for diagram page?](/wpf/diagram/scroll-settings/scrollstatusandautoscroll)
 
-[How to add rulers for diagram page](/wpf/diagram/rulers)
+[How to add rulers for diagram page?](/wpf/diagram/rulers)
 
-[How to print the diagram pages](/wpf/diagram/printing)
+[How to print the diagram pages?](/wpf/diagram/printing)
 
-[How to export the diagram page](/wpf/diagram/exporting)
+[How to export the diagram page?](/wpf/diagram/exporting)
 
-[How to interact with diagram page ](/wpf/diagram/interaction)
+[How to interact with diagram page?](/wpf/diagram/interaction)
 
 [How to add multiple diagram pages?](https://www.syncfusion.com/kb/11463/how-to-add-multiple-diagram-pages-in-the-wpf-diagram-sfdiagram)
 
