@@ -422,7 +422,6 @@ In addition to that, new symbols can be added into the symbol groups or you can 
     </syncfusion:Stencil.SymbolGroups>
 </syncfusion:Stencil>
 {% endhighlight %}
-{% endtabs %}
 
 ![SymbolGroupViewModel](SymbolGroup_images/SymbolGroupViewModel.png)
 
