@@ -118,7 +118,7 @@ diagram.SnapSettings = new SnapSettings()
 
 This feature allows the diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
-Snapping to gridlines can be enabled or disabled with the [SnapConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of SnapSettings. Default value is None.
+Snapping to gridlines can be enabled or disabled with the [`SnapConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of SnapSettings. Default value is None.
 
 {% tabs %}
 {% highlight xaml %}
