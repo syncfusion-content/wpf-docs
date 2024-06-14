@@ -9,7 +9,7 @@ documentation: ug
 
 # Gridlines in WPF Diagram (SfDiagram)
 
-**Gridlines** are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
+[Gridlines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html) are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
 
 The [`SnapConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapConstraints) property of SnapSettings class allows you to control the visibility of the gridlines.
 
@@ -180,6 +180,6 @@ Find the [Gridlines sample](https://github.com/SyncfusionExamples/WPF-Diagram-Ex
 
 ## See Also
 
-[How to snap the objects on gridlines](/wpf/diagram/snapping/definesnapping)
+[How to snap the objects on gridlines?](/wpf/diagram/snapping/definesnapping)
 
 [How to customize the appearance of the gridlines?](https://support.syncfusion.com/kb/article/7414/how-to-customize-the-appearance-of-gridlines-in-wpf-diagram-sfdiagram)
