@@ -46,13 +46,13 @@ The [`Cut`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stenci
 
 {% highlight C# %}
 
-    private void CutBtn_Click(object sender, RoutedEventArgs e)
+private void CutBtn_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.Cut.Execute(null);
-        }
+        Stencil.Commands.Cut.Execute(null);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -71,13 +71,13 @@ The [`Copy`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stenc
 
 {% highlight C# %}
 
-    private void CopyBtn_Click(object sender, RoutedEventArgs e)
+private void CopyBtn_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.Copy.Execute(null);
-        }
+        Stencil.Commands.Copy.Execute(null);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -96,13 +96,13 @@ The [`Paste`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Sten
 
 {% highlight C# %}
 
-    private void PasteBtn_Click(object sender, RoutedEventArgs e)
+private void PasteBtn_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.Paste.Execute(null);
-        }
+        Stencil.Commands.Paste.Execute(null);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -122,13 +122,13 @@ The [`Delete`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Ste
 
 {% highlight C# %}
 
-    private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.Delete.Execute(null);
-        }
+        Stencil.Commands.Delete.Execute(null);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -149,13 +149,13 @@ The [`SelectAll`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.
 
 {% highlight C# %}
 
-    private void SelectAllBtn_Click(object sender, RoutedEventArgs e)
+private void SelectAllBtn_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.SelectAll.Execute(null);
-        }
+        Stencil.Commands.SelectAll.Execute(null);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -175,13 +175,13 @@ The [`UnSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.S
 
 {% highlight C# %}
 
-    private void UnSelect_Click(object sender, RoutedEventArgs e)
-    {
+private void UnSelect_Click(object sender, RoutedEventArgs e)
+{
     if (Stencil != null)
     {
         Stencil.Commands.UnSelect.Execute(null);
     }
-    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -205,36 +205,36 @@ The [`MoveUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Ste
 
 {% highlight C# %}
 
-    private void MoveRightBtn_Click(object sender, RoutedEventArgs e)
+private void MoveRightBtn_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.MoveRight.Execute(null);
-        }
+        Stencil.Commands.MoveRight.Execute(null);
     }
+}
 
-    private void MoveLeftBtn_Click(object sender, RoutedEventArgs e)
+private void MoveLeftBtn_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.MoveLeft.Execute(null);
-        }
+        Stencil.Commands.MoveLeft.Execute(null);
     }
-    private void MoveUp_Click(object sender, RoutedEventArgs e)
+}
+private void MoveUp_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.MoveUp.Execute(null);
-        }
+        Stencil.Commands.MoveUp.Execute(null);
     }
+}
 
-    private void MoveDown_Click(object sender, RoutedEventArgs e)
+private void MoveDown_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.MoveDown.Execute(null);
-        }
+        Stencil.Commands.MoveDown.Execute(null);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -254,13 +254,13 @@ The [`MoveToFirstInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.D
 
 {% highlight C# %}
 
-    private void MoveToFirstInRow_Click(object sender, RoutedEventArgs e)
+private void MoveToFirstInRow_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.MoveToFirstInRow.Execute(null);
-        }
+        Stencil.Commands.MoveToFirstInRow.Execute(null);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -279,13 +279,13 @@ The [`MoveToLastInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Di
 
 {% highlight C# %}
 
-    private void MoveToLastInRow_Click(object sender, RoutedEventArgs e)
+private void MoveToLastInRow_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.MoveToLastInRow.Execute(null);
-        }
+        Stencil.Commands.MoveToLastInRow.Execute(null);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -304,13 +304,13 @@ The [`MoveToFirstInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 {% highlight C# %}
 
-    private void MoveToFirstInColumn_Click(object sender, RoutedEventArgs e)
+private void MoveToFirstInColumn_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.MoveToFirstInColumn.Execute(null);
-        }
+        Stencil.Commands.MoveToFirstInColumn.Execute(null);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -330,13 +330,13 @@ The [`MoveToLastInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 
 {% highlight C# %}
 
-    private void MoveToLastInColumn_Click(object sender, RoutedEventArgs e)
+private void MoveToLastInColumn_Click(object sender, RoutedEventArgs e)
+{
+    if (Stencil != null)
     {
-        if (Stencil != null)
-        {
-            Stencil.Commands.MoveToLastInColumn.Execute(null);
-        }
+        Stencil.Commands.MoveToLastInColumn.Execute(null);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -352,13 +352,13 @@ Here is an example of how to remove a specific command from the CommandManager:
 {% tabs %}
 {% highlight C# %}
 
-    // Removing a particular stencil command from the CommandManager
-    if (Stencil != null)
-    {
-        string commandName = "SelectAll";
-        commandToBeRemoved = Stencil.CommandManager.Commands.FirstOrDefault(command => command.Name.Equals(commandName));
-        Stencil.CommandManager.Commands.Remove(commandToBeRemoved);
-    }
+// Removing a particular stencil command from the CommandManager
+if (Stencil != null)
+{
+    string commandName = "SelectAll";
+    commandToBeRemoved = Stencil.CommandManager.Commands.FirstOrDefault(command => command.Name.Equals(commandName));
+    Stencil.CommandManager.Commands.Remove(commandToBeRemoved);
+}
     
 {% endhighlight %}
 {% endtabs %}
@@ -379,35 +379,35 @@ Here's an example of how to add a custom command to the CommandManager:
 
 {% highlight C# %}
 
-    ICommand Custom;
-    if (Stencil != null)
+ICommand Custom;
+if (Stencil != null)
+{
+    // Adding a custom command to the stencil CommandManager
+    Custom = new Command(OnCustomCommand);
+    GestureCommand customCommandGesture = new GestureCommand()
     {
-        // Adding a custom command to the stencil CommandManager
-        Custom = new Command(OnCustomCommand);
-        GestureCommand customCommandGesture = new GestureCommand()
+        Command = Custom,
+        Gesture = new Gesture
         {
-            Command = Custom,
-            Gesture = new Gesture
-            {
-                Key = Key.K,
-                KeyModifiers = ModifierKeys.Control,
-                KeyState = KeyStates.Down
-            },
-            Name = "Custom",
-        };
-        Stencil.CommandManager.Commands.Add(customCommandGesture);
-    }
+            Key = Key.K,
+            KeyModifiers = ModifierKeys.Control,
+            KeyState = KeyStates.Down
+        },
+        Name = "Custom",
+    };
+    Stencil.CommandManager.Commands.Add(customCommandGesture);
+}
 
-    private void CustomCommandBtn_Click(object sender, RoutedEventArgs e)
-    {
-        Custom.Execute(null);
-    }
+private void CustomCommandBtn_Click(object sender, RoutedEventArgs e)
+{
+    Custom.Execute(null);
+}
 
-    private void OnCustomCommand(object obj)
-    {
-        // Perform Operations
-        CustomCommandMessageDisplay.Text = "Custom Command Executed Successfully!";
-    }
+private void OnCustomCommand(object obj)
+{
+    // Perform Operations
+    CustomCommandMessageDisplay.Text = "Custom Command Executed Successfully!";
+}
 
 {% endhighlight %}
 
