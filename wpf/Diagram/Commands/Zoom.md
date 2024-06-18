@@ -11,11 +11,11 @@ documentation: ug
 
 The [`Zoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Zoom) commands are used to do zoom-in and zoom-out operations on the Diagram view. This command is also used to do scroll and pan operations with its parameter. 
 
-To execute zoom commands, IZoomParameter type [IZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) have to be passed.
+To execute zoom commands, parameter of type [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) have to be passed.
 
 ## Zoom position parameter
 
-The [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) is used to represent the position parameters to for executing zoom command. Please find its properties and their description as follows.
+The `ZoomPositionParameter` is used to represent the position parameters for executing the zoom command. Please find its properties and their descriptions as follows.
 
 | Property name | Description |
 | --- | --- |
@@ -182,11 +182,11 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 
 ## Reset
 
-The [`Reset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Reset) command is used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram. If you want to customize the Reset command, you can use the [IReset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) as parameter.
+The [`Reset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Reset) command is used to reset Horizontal Offset, Vertical Offset, and Zoom Level of the Diagram. If you want to customize the `Reset` command, you can use parameter of type [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html).
 
 ### ResetParameter
 
-The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) parameter is used to define the behavior of the Reset Command. 
+The `Reset` parameter is used to define the behavior of the Reset Command. 
 
 | Reset Enum Values | Description |
 | --- | --- |
