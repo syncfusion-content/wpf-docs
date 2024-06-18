@@ -24,9 +24,11 @@ The [`Rotate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDi
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
 graphinfo.Commands.Rotate.Execute(new RotateParameter() 
 { 
-    RotationDirection=RotationDirection.Clockwise,Angle=45
+    RotationDirection=RotationDirection.Clockwise,
+    Angle=45
 });
 
 {% endhighlight %}
@@ -34,4 +36,4 @@ graphinfo.Commands.Rotate.Execute(new RotateParameter()
 
 ![Gif for Rotate command](Commands_Images/Commands_Rotate.gif)
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Commands%20Sample)
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Rotate%20Command)
