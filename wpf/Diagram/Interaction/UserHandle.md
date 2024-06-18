@@ -23,35 +23,35 @@ SfDiagram provides support to define custom quick command around the Nodes, Conn
 
 {% highlight Xaml %}
 
-        <Style TargetType="Path" x:Key="QuickCommandstyle">
-           <Setter Property="Stretch" Value="Fill"/>
-           <Setter Property="Fill" Value="Black"/>
-           <Setter Property="Stroke" Value="White"/>
-        </Style>
+<Style TargetType="Path" x:Key="QuickCommandstyle">
+    <Setter Property="Stretch" Value="Fill"/>
+    <Setter Property="Fill" Value="Black"/>
+    <Setter Property="Stroke" Value="White"/>
+</Style>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
  // Element to represent the frequently used commands
-            QuickCommandViewModel quick = new QuickCommandViewModel()
-            {
-                // Outer part of quick command.
-                Shape = this.Resources["Ellipse"],
-               // appearence of shape.
-                ShapeStyle = this.Resources["QuickCommandstyle"] as Style,
-                //Inner part of quick command and it allows to host any UI elements
-                Content =
-                    "M3.7399902,0L16,12.258972 28.26001,0 32,3.7399902 19.73999,16 32,28.258972 28.26001,32 16,19.73999 3.7399902,32 0,28.258972 12.26001,16 0,3.7399902z",
-               
-                Command = (Diagram.Info as IGraphInfo).Commands.Cut
-            };
+QuickCommandViewModel quick = new QuickCommandViewModel()
+{
+    // Outer part of quick command.
+    Shape = this.Resources["Ellipse"],
+    // appearence of shape.
+    ShapeStyle = this.Resources["QuickCommandstyle"] as Style,
+    //Inner part of quick command and it allows to host any UI elements
+    Content =
+        "M3.7399902,0L16,12.258972 28.26001,0 32,3.7399902 19.73999,16 32,28.258972 28.26001,32 16,19.73999 3.7399902,32 0,28.258972 12.26001,16 0,3.7399902z",
+    
+    Command = (Diagram.Info as IGraphInfo).Commands.Cut
+};
 
-            // Adding new QuickCommand object in Commands collection
-            (Diagram.SelectedItems as SelectorViewModel).Commands = new QuickCommandCollection()
-            {
-                quick
-            };
+// Adding new QuickCommand object in Commands collection
+(Diagram.SelectedItems as SelectorViewModel).Commands = new QuickCommandCollection()
+{
+    quick
+};
 
 {% endhighlight %}
 {% endtabs %}   
@@ -64,7 +64,7 @@ Appearance of the [QuickCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 ![custom appearance of quick command](Interaction_images/quickcommand_img3.png)
 
-N> By default QuickCommand will host on Node. [VisibilityMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_VisibilityMode) property is to define the host of the QuickCommand on either Node or Connector or both.    
+N> By default QuickCommand will host on Node. [`VisibilityMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_VisibilityMode) property is to define the host of the QuickCommand on either Node or Connector or both.    
 
 ### Alignment
 
