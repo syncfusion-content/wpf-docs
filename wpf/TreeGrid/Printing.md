@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing in WPF TreeGrid control | Syncfusion
+title: Printing in WPF TreeGrid Control | Syncfusion
 description: Learn here all about Printing support in Syncfusion WPF TreeGrid (SfTreeGrid) control, its elements and more.
 platform: wpf
 control: SfTreeGrid
