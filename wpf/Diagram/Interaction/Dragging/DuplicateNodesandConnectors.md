@@ -12,6 +12,8 @@ The SfDiagram simplifies the process of duplicating nodes and connectors. You ca
 
 ![DuplicateNodesandConnectors](Drag_images/DuplicateNodeandConnectors.gif)
 
+N> To enable dragging of connectors in your diagrams, use `ConnectorConstraints.Draggable`.
+
 ## See Also
 
 [How to show the copied diagram elements as preview image along with the mouse pointer?](https://support.syncfusion.com/kb/article/12037/how-to-show-the-copied-diagram-elements-as-preview-image-along-with-the-mouse-pointer-in)
