@@ -9,7 +9,7 @@ documentation: ug
 
 # SelectByType Command in WPF Diagram (SfDiagram)
 
-The [`SelectByType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SelectByType) command is used to select the specified type (NodeViewModel,BpmnNodeViewModel,...) of elements in the diagram.
+The [`SelectByType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SelectByType) command is used to select the specified type _(NodeViewModel, BpmnNodeViewModel, etc)_ of elements in the diagram.
 
 {% tabs %}
 
@@ -30,4 +30,4 @@ graphinfo.Commands.SelectByType.Execute(typeof(NodeViewModel));
 ![Gif for SelectByType command](Commands_Images/Commands_SelectByType.gif)
 
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Commands%20Sample)
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Rotate%20Command)
