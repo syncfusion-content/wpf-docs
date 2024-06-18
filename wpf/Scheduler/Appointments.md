@@ -786,31 +786,59 @@ The following code example shows the usage of DataTemplate.
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule"
                         EnableToolTip="True">
- <syncfusion:SfScheduler.ToolTipTemplate>
+  <syncfusion:SfScheduler.ToolTipTemplate>
      <DataTemplate>
-        <Border x:Name="PART_ToolTipBorder"
-                BorderBrush="White"
-                Background="Black"
-                CornerRadius="0"
-                VerticalAlignment="Stretch"
-                HorizontalAlignment="Stretch"
-                BorderThickness="1"
-                Padding="5">
-         <StackPanel>
-             <TextBlock x:Name="PART_AppointmentTextBlock"
-                        Text="{Binding Subject}"
-                        Foreground="White"
-                        FontSize="12"
-                        TextWrapping="Wrap"
-                        TextTrimming="CharacterEllipsis" />
-         </StackPanel>
-       </Border>
-   </DataTemplate>
+         <Border CornerRadius="0"
+                 Padding="5">
+             <Grid>
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="Auto" />
+                     <ColumnDefinition Width="*" />
+                 </Grid.ColumnDefinitions>
+                 <Rectangle Fill="{Binding AppointmentBackground}"
+                            Grid.Column="0"
+                            VerticalAlignment="Stretch"
+                            HorizontalAlignment="Left"
+                            Width="10"
+                            Margin="0,0,5,0" />
+                 <StackPanel Grid.Column="1"
+                             Orientation="Vertical">
+                     <TextBlock Text="{Binding Subject}"
+                                TextWrapping="Wrap"
+                                FontWeight="Bold"
+                                FontSize="12"
+                                Foreground="White"
+                                TextTrimming="CharacterEllipsis"
+                                Margin="0,0,0,5" />
+                     <StackPanel Orientation="Horizontal">
+                         <TextBlock Text="Start Time: "
+                                    FontWeight="Bold"
+                                    FontSize="12"
+                                    Foreground="White" />
+                         <TextBlock Text="{Binding StartTime, StringFormat='{}{0:MM/dd/yyyy }'}"
+                                    FontSize="12"
+                                    Foreground="White" />
+                     </StackPanel>
+                     <StackPanel Orientation="Horizontal">
+                         <TextBlock Text="End Time: "
+                                    FontWeight="Bold"
+                                    FontSize="12"
+                                    Foreground="White" />
+                         <TextBlock Text="{Binding EndTime, StringFormat='{}{0:MM/dd/yyyy}'}"
+                                    FontSize="12"
+                                    Foreground="White" />
+                     </StackPanel>
+                 </StackPanel>
+             </Grid>
+         </Border>
+     </DataTemplate>
  </syncfusion:SfScheduler.ToolTipTemplate>
 </syncfusion:SfScheduler>
 
 {% endhighlight %}
 {% endtabs %}
+
+![appointment-tool-tip-customisation-support-in-WPF-scheduler](appointments_images/appointment-tool-tip-customisation-support-in-WPF-scheduler.gif)
 
 N>
 * This property will only be applicable when [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableToolTip) is set to true.
