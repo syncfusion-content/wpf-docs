@@ -137,7 +137,7 @@ N> SfDiagram's interface and view model classes are created without DataContract
 
 ## How to serialize a custom class 
 
-You can serialize a business class with the help of DataContract attribute and SfDiagram's KnownTypes property. You have to add DataContract attribute to serialize the whole class, which is not derived from a base class without DataContract attribute.
+You can serialize a business class with the help of DataContract attribute and SfDiagram's `KnownTypes` property. You have to add DataContract attribute to serialize the whole class, which is not derived from a base class without DataContract attribute.
 
 {% tabs %}
 {% highlight C# %}
