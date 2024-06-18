@@ -9,14 +9,16 @@ documentation: ug
 
 # Nudge Commands in WPF Diagram (SfDiagram)
 
-Nudge commands are used to move the selected elements towards up, down, left, or right by 1 pixel. The [IMoveParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IMoveParameter.html) is provided to customize the movement of the selected objects. The Nudge Commands as follows.
+Nudge commands are used to move the selected elements towards up, down, left, or right by 1 pixel. The [IMoveParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IMoveParameter.html) is provided to customize the movement of the selected objects.
+
+Below are the specific nudge commands:
 
 | Commands | Description |
 |---|---|
-| NudgeUp | The [`NudgeUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveUp) command moves the selected object towards the top by 1 pixel. |
-| NudgeDown | The [`NudgeDown`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveDown) command moves the selected object towards the bottom by 1 pixel. |
-| NudgeLeft | The [`NudgeLeft`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveLeft) command moves the selected object towards the left by 1 pixel. |
-| NudgeRight | The [`NudgeRight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveRight) command moves the selected object towards the right by 1 pixel. |
+| [`NudgeUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveUp) | Moves the selected object Up by 1 pixel. |
+| [`NudgeDown`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveDown) | Moves the selected object Down by 1 pixel. |
+| [`NudgeLeft`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveLeft) | Moves the selected object Left by 1 pixel. |
+| [`NudgeRight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveRight) | Moves the selected object Right by 1 pixel. |
 
 {% tabs %}
 
@@ -30,10 +32,10 @@ Nudge commands are used to move the selected elements towards up, down, left, or
 
 {% highlight C# %}
 
-            IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-            // Nudge up the selected objects
-            graphinfo.Commands.MoveUp.Execute(new MoveParameter() { MoveDelta = 5 });
+// Nudge up the selected objects
+graphinfo.Commands.MoveUp.Execute(new MoveParameter() { MoveDelta = 5 });
 
 {% endhighlight %}
 {% endtabs %}
