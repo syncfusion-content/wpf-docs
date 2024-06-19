@@ -54,7 +54,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   IsExpandedSubProcess = true
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -144,7 +144,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 // Add the connector into the Connector's collection.
 (group.Connectors as ConnectorCollection).Add(flow);
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -212,7 +212,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   LoopActivity = LoopCharacteristic.Standard
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -270,7 +270,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   IsCompensationActivity = true
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -320,7 +320,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   IsAdhocActivity = true
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -367,7 +367,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   SubProcessType = SubProcessType.Event
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}

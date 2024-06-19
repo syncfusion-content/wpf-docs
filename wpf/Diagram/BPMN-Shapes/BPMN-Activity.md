@@ -51,7 +51,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 };
 
 // Add the node into the Node's collection.
-(Diagram.Nodes as NodeCollection).Add(node);
+(diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -97,7 +97,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 };
 
 // Add the node into the Node's collection.
-(Diagram.Nodes as NodeCollection).Add(node);
+(diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -154,7 +154,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 };
 
 // Add the node into the Node's collection.
-(Diagram.Nodes as NodeCollection).Add(node);
+(diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -201,7 +201,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 };
 
 // Add the node into the Node's collection.
-(Diagram.Nodes as NodeCollection).Add(node);
+(diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -256,7 +256,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 };
 
 // Add the node into the Node's collection.
-(Diagram.Nodes as NodeCollection).Add(node);
+(diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -301,7 +301,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 };
 
 // Add the node into the Node's collection.
-(Diagram.Nodes as NodeCollection).Add(node);
+(diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -347,7 +347,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 };
 
 // Add the node into the Node's collection.
-(Diagram.Nodes as NodeCollection).Add(node);
+(diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -392,7 +392,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 };
 
 // Add the node into the Node's collection.
-(Diagram.Nodes as NodeCollection).Add(node);
+(diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
 {%  endtabs %}

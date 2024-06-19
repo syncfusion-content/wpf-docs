@@ -46,7 +46,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   UnitHeight = 250,
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -129,7 +129,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 // Add the connector into the Connector's collection.
 (group.Connectors as ConnectorCollection).Add(flow);
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
