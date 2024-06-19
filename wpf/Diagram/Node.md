@@ -19,7 +19,7 @@ A node can be created and added to the Diagram, either programmatically or inter
 
 ### Add Node through Nodes collection 
 
-To create a node, you have to define the [`node object`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) and add that to [`nodes`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Nodes) collection of the Diagram.
+To create a node, you have to define the [`node object`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) and add that to [`Nodes`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Nodes) collection of the Diagram.
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,7 +88,7 @@ Now, node will be as follows.
 
 ### Add node from stencil
 
-Nodes can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to the [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil).
+Nodes can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from `Stencil`, refer to the [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil).
 
 ### Create node through data source
 
@@ -108,7 +108,7 @@ You can use text, image, controls, panels, or any UIElement or template to visua
    5) Built-in resource
 
 ### Using content template
-[`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) is a ContentControl, so you can use data template to display the content of the node using the [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) property. Refer to the following code example to define node's shape through ContentTemplate.
+[`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) is a `ContentControl`, so you can use `DataTemplate` to display the content of the node using the [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) property. Refer to the following code example to define node's shape through `ContentTemplate`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -147,7 +147,7 @@ NodeViewModel node = new NodeViewModel()
 
 ### Using content
 
-[`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) is a ContentControl, so you can set text, image, or any UIElement as node content using the [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Content) property. Refer to the following code example to define image as content of the node.
+[`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) is a `ContentControl`, so you can set text, image, or any UIElement as node content using the [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Content) property. Refer to the following code example to define image as `Content` of the `Node`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ NodeViewModel node = new NodeViewModel()
 
 ### Using geometry
 
-The [`Shape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Shape) property of the node class allows to visualize any geometry path as node's content. Refer to the following code example to define geometry for node's shape.
+The [`Shape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Shape) property of the `Node` class allows to visualize any geometry path as node's content. Refer to the following code example to define geometry for node's shape.
 
 {% tabs %}
 {% highlight xaml %}
@@ -474,9 +474,9 @@ Some basic built-in shapes are provided as ResourceDictionary. For more informat
 
 ## Position
 
-Position of a node is controlled by using its [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetY) properties. By default, these Offset properties represent the distance between origin of the diagram’s page and node’s center point. You may expect this Offset values to represent the distance between page origin and node’s top left corner instead of center. The [`Pivot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_Pivot) property helps solve this problem. Default value of node’s pivot point is (0.5, 0.5), that means center of node.
+Position of a node is controlled by using its [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetY) properties. By default, these `Offset` properties represent the distance between origin of the diagram’s page and node’s center point. You may expect this Offset values to represent the distance between page origin and node’s top left corner instead of center. The [`Pivot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_Pivot) property helps solve this problem. Default value of node’s pivot point is (0.5, 0.5), that means center of node.
 
-The following table explains how pivot relates Offset values with node boundaries:
+The following table explains how `Pivot` relates Offset values with `Node` boundaries:
 
 | Pivot | Offset |
 |---|---|
@@ -521,11 +521,11 @@ NodeViewModel node = new NodeViewModel()
 
 Diagram provides support to flip the node.[`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_Flip) is performed to give the mirrored node of the original element.
 The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) types are:
-* Flip
+* **Flip**
  `Flip` that involves both vertical and horizontal changes of the element. 
-* VerticalFlip
+* **VerticalFlip**
  `VerticalFlip` that involves changes in the vertical direction of the element.
-* HorizontalFlip
+* **HorizontalFlip**
  `HorizontalFlip` that involves changes in the horizontal direction of the element.
 
 {% tabs %}
@@ -565,7 +565,7 @@ The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.
 
 ## Padding
 
-Padding is used to leave space between the connector’s end point and the object to where it is connected. The [`ConnectorPadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_ConnectorPadding) property of node defines the space to be left between the node bounds and its edges.
+`Padding` is used to leave space between the connector’s end point and the object to where it is connected. The [`ConnectorPadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_ConnectorPadding) property of node defines the space to be left between the node bounds and its edges.
 
 {% tabs %}
 {% highlight xaml %}
@@ -676,9 +676,9 @@ Node can be selected by clicking (tap) it.
 
 * The [`IsSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_IsSelected) Property is used to select or unselect the node at runtime.
 
-* [`ItemSelectingEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemSelectingEvent) and [`ItemSelectedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemSelectedEvent) for selecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html).
+* [`ItemSelectingEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemSelectingEvent) and [`ItemSelectedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemSelectedEvent) for selecting an element, will notify you the `Item` and its `OriginalSource`. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html).
 
-* [`ItemUnselectingEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemUnSelectingEvent) and [`ItemUnselectedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemUnSelectedEvent) for unselecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html).
+* [`ItemUnselectingEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemUnSelectingEvent) and [`ItemUnselectedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemUnSelectedEvent) for unselecting an element, will notify you the `Item` and its `OriginalSource`. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html).
 
 ![WPF Diagram Node Selection](Node_images/wpf-diagram-node-selection.jpg)
 
@@ -713,9 +713,9 @@ To explore about selection and selection related events, refer to the [Selection
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
 * The node is rotated with reference to the static pivot point.
-* Pivot thumb (thumb at the middle of the Node) appears when rotating the node to represent the static point. For more information about pivot, refer to [`Position`](https://help.syncfusion.com/wpf/diagram/node#position)
+* `Pivot` thumb (thumb at the middle of the Node) appears when rotating the node to represent the static point. For more information about pivot, refer to [`Position`](https://help.syncfusion.com/wpf/diagram/node#position)
 
-* The [`NodeChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_NodeChangedEvent) will notify the [`RotateAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_RotateAngle) changes with their old and new values. Along with that, this event will give information about iteraction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* The [`NodeChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_NodeChangedEvent) will notify the [`RotateAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_RotateAngle) changes with their old and new values. Along with that, this event will give information about interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![WPF Diagram Rotate Node](Node_images/wpf-diagram-rotate-node.gif)
 
