@@ -116,15 +116,15 @@ The following code illustrates adding Calendar Customization to an Application:
                          ShowNonWorkingHoursBackground="True"
                          ItemsSource="{Binding TaskCollection}">
     <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping ChildMapping="Child"
-                                         DurationMapping="Duration"
-                                         FinishDateMapping="FinishDate"
-                                         MileStoneMapping="IsMileStone"
-                                         PredecessorMapping="Predecessor"
-                                         ProgressMapping="Progress"
+        <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
+                                         TaskNameMapping="TaskName"
                                          StartDateMapping="StartDate"
-                                         TaskIdMapping="TaskId"
-                                         TaskNameMapping="TaskName" />
+                                         ChildMapping="Child"
+                                         FinishDateMapping="FinishDate"
+                                         DurationMapping="Duration"
+                                         ProgressMapping="Progress"
+                                         MileStoneMapping="IsMileStone"
+                                         PredecessorMapping="Predecessor"/>
     </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.DataContext>
         <local:CalendarCustomizationViewModel/>
@@ -168,15 +168,15 @@ ganttControl.ShowNonWorkingHoursBackground = true;
 
 // Task attribute mapping
 TaskAttributeMapping attributes = new TaskAttributeMapping();
+attributes.TaskNameMapping = "TaskName";
+attributes.TaskIdMapping = "TaskId";
+attributes.StartDateMapping = "StartDate";
 attributes.ChildMapping = "Child";
-attributes.DurationMapping = "Duration";
 attributes.FinishDateMapping = "FinishDate";
+attributes.DurationMapping = "Duration";
+attributes.ProgressMapping = "Progress";
 attributes.MileStoneMapping = "IsMileStone";
 attributes.PredecessorMapping = "Predecessor";
-attributes.ProgressMapping = "Progress";
-attributes.StartDateMapping = "StartDate";
-attributes.TaskIdMapping = "TaskId";
-attributes.TaskNameMapping = "TaskName";
 ganttControl.TaskAttributeMapping = attributes;
 this.Content = ganttControl;
 
@@ -185,9 +185,24 @@ this.Content = ganttControl;
  
 public class CalendarCustomizationViewModel
 {
+    /// <summary>
+    /// Holds the collection value.
+    /// </summary>
     private ObservableCollection<TaskDetails> _taskCollection;
+
+    /// <summary>
+    /// Holds the default start value.
+    /// </summary>
     private string[] defaultstart;
+
+    /// <summary>
+    /// Holds the default end value.
+    /// </summary>
     private string[] defaultend;
+
+    /// <summary>
+    /// Holds the fynumbering value.
+    /// </summary>
     private string[] fynumbering;
 
 
@@ -299,20 +314,15 @@ public class CalendarCustomizationViewModel
         }
     }
 
-
-    /// <summary>
-    /// Gets the data.
-    /// </summary>
-    /// <returns></returns>
     /// <summary>
     /// Gets the data.
     /// </summary>
     /// <returns></returns>
     public ObservableCollection<TaskDetails> GetData()
     {
-        ObservableCollection<TaskDetails> Activities = new ObservableCollection<TaskDetails>();
+        ObservableCollection<TaskDetails> taskDetails = new ObservableCollection<TaskDetails>();
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 2), FinishDate = new DateTime(2010, 6, 18), TaskName = "Analysing Market Scope of the Product", TaskId = 1 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 2), FinishDate = new DateTime(2010, 6, 18), TaskName = "Analysing Market Scope of the Product", TaskId = 1 });
 
         ObservableCollection<IGanttTask> MarketAnalysis = new ObservableCollection<IGanttTask>();
         MarketAnalysis.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 2), FinishDate = new DateTime(2010, 6, 6), TaskName = "Current Market Review", TaskId = 2 });
@@ -322,19 +332,19 @@ public class CalendarCustomizationViewModel
         MarketAnalysis.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 11), FinishDate = new DateTime(2010, 6, 14), TaskName = "Define product goals and milestones", TaskId = 6 });
         MarketAnalysis.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 12), FinishDate = new DateTime(2010, 6, 17), TaskName = "Organization status review", TaskId = 7 });
         MarketAnalysis.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 18), FinishDate = new DateTime(2010, 6, 18), TaskName = "Market Scope of Product clarified", TaskId = 8 });
-        ObservableCollection<Predecessor> mrkPredecessor = new ObservableCollection<Predecessor>();
-        mrkPredecessor.Add(new Predecessor { GanttTaskIndex = 2, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
-        mrkPredecessor.Add(new Predecessor { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
-        mrkPredecessor.Add(new Predecessor { GanttTaskIndex = 4, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
-        mrkPredecessor.Add(new Predecessor { GanttTaskIndex = 5, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
-        mrkPredecessor.Add(new Predecessor { GanttTaskIndex = 6, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
-        mrkPredecessor.Add(new Predecessor { GanttTaskIndex = 7, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
-        MarketAnalysis[6].Predecessor = mrkPredecessor;
+        ObservableCollection<Predecessor> predecessors = new ObservableCollection<Predecessor>();
+        predecessors.Add(new Predecessor { GanttTaskIndex = 2, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
+        predecessors.Add(new Predecessor { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
+        predecessors.Add(new Predecessor { GanttTaskIndex = 4, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
+        predecessors.Add(new Predecessor { GanttTaskIndex = 5, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
+        predecessors.Add(new Predecessor { GanttTaskIndex = 6, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
+        predecessors.Add(new Predecessor { GanttTaskIndex = 7, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
+        MarketAnalysis[6].Predecessor = predecessors;
 
-        Activities[0].Child = MarketAnalysis;
+        taskDetails[0].Child = MarketAnalysis;
 
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 18), FinishDate = new DateTime(2010, 7, 14), TaskName = "Infrastructure for Product Planning", TaskId = 9 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 18), FinishDate = new DateTime(2010, 7, 14), TaskName = "Infrastructure for Product Planning", TaskId = 9 });
         ObservableCollection<IGanttTask> InfrastructureReq = new ObservableCollection<IGanttTask>();
         InfrastructureReq.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 18), FinishDate = new DateTime(2010, 6, 24), TaskName = "Define procedure for qualifying ideas", TaskId = 10 });
         InfrastructureReq.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 24), FinishDate = new DateTime(2010, 7, 7), TaskName = "Define process for idea sharing", TaskId = 11 });
@@ -342,9 +352,9 @@ public class CalendarCustomizationViewModel
         InfrastructureReq[1].Predecessor.Add(new Predecessor { GanttTaskIndex = 10, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         InfrastructureReq[2].Predecessor.Add(new Predecessor { GanttTaskIndex = 11, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
 
-        Activities[1].Child = InfrastructureReq;
+        taskDetails[1].Child = InfrastructureReq;
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 7, 14), FinishDate = new DateTime(2010, 8, 29), TaskName = "Product Definition Phase", TaskId = 13 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 7, 14), FinishDate = new DateTime(2010, 8, 29), TaskName = "Product Definition Phase", TaskId = 13 });
         ObservableCollection<IGanttTask> Product = new ObservableCollection<IGanttTask>();
         Product.Add(new TaskDetails { StartDate = new DateTime(2010, 7, 14), FinishDate = new DateTime(2010, 7, 25), TaskName = "Identify product", TaskId = 14 });
         Product.Add(new TaskDetails { StartDate = new DateTime(2010, 7, 28), FinishDate = new DateTime(2010, 8, 1), TaskName = "Identify need for the product", TaskId = 15 });
@@ -361,9 +371,9 @@ public class CalendarCustomizationViewModel
         Product[5].Predecessor.Add(new Predecessor { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
 
 
-        Activities[2].Child = Product;
+        taskDetails[2].Child = Product;
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 10), TaskName = "Analysing Customer Requirement", TaskId = 20 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 10), TaskName = "Analysing Customer Requirement", TaskId = 20 });
         ObservableCollection<IGanttTask> Customer = new ObservableCollection<IGanttTask>();
         Customer.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 4), TaskName = "Identify Consumer of Products", TaskId = 21 });
         Customer.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 3), FinishDate = new DateTime(2010, 9, 6), TaskName = "Identify Customer Requirement", TaskId = 22 });
@@ -375,9 +385,9 @@ public class CalendarCustomizationViewModel
         Customer[3].Predecessor.Add(new Predecessor { GanttTaskIndex = 23, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         Customer[4].Predecessor.Add(new Predecessor { GanttTaskIndex = 24, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
 
-        Activities[3].Child = Customer;
+        taskDetails[3].Child = Customer;
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 10, 10), TaskName = "Competitor Analysis", TaskId = 26 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 10, 10), TaskName = "Competitor Analysis", TaskId = 26 });
         ObservableCollection<IGanttTask> Competitor = new ObservableCollection<IGanttTask>();
         Competitor.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 13), TaskName = "Define competitor with similar Product", TaskId = 27 });
         Competitor.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 13), FinishDate = new DateTime(2010, 9, 20), TaskName = "Define competitive advantage", TaskId = 28 });
@@ -387,9 +397,9 @@ public class CalendarCustomizationViewModel
         Competitor[2].Predecessor.Add(new Predecessor { GanttTaskIndex = 28, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         Competitor[3].Predecessor.Add(new Predecessor { GanttTaskIndex = 29, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
 
-        Activities[4].Child = Competitor;
+        taskDetails[4].Child = Competitor;
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 9), FinishDate = new DateTime(2010, 9, 20), TaskName = "Defining Sucess Measure", TaskId = 31 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 9), FinishDate = new DateTime(2010, 9, 20), TaskName = "Defining Sucess Measure", TaskId = 31 });
         ObservableCollection<IGanttTask> Measure = new ObservableCollection<IGanttTask>();
         Measure.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 6), TaskName = "Identify Risks", TaskId = 32 });
         Measure.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 6), TaskName = "Define Key success measures", TaskId = 33 });
@@ -402,9 +412,9 @@ public class CalendarCustomizationViewModel
         Measure[4].Predecessor.Add(new Predecessor { GanttTaskIndex = 34, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         Measure[4].Predecessor.Add(new Predecessor { GanttTaskIndex = 35, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
 
-        Activities[5].Child = Measure;
+        taskDetails[5].Child = Measure;
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 23), FinishDate = new DateTime(2010, 10, 17), TaskName = "Defining Team to Develop", TaskId = 37 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 23), FinishDate = new DateTime(2010, 10, 17), TaskName = "Defining Team to Develop", TaskId = 37 });
         ObservableCollection<IGanttTask> Team = new ObservableCollection<IGanttTask>();
         Team.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 23), FinishDate = new DateTime(2010, 9, 27), TaskName = "Define successful team components for success", TaskId = 38 });
         Team.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 30), FinishDate = new DateTime(2010, 10, 3), TaskName = "Identify Key qualities needed to develop, produce and grow", TaskId = 39 });
@@ -417,9 +427,9 @@ public class CalendarCustomizationViewModel
         Team[3].Predecessor.Add(new Predecessor { GanttTaskIndex = 40, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         Team[4].Predecessor.Add(new Predecessor { GanttTaskIndex = 41, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
 
-        Activities[6].Child = Team;
+        taskDetails[6].Child = Team;
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 24), TaskName = "Budgeting in the Product", TaskId = 43 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 24), TaskName = "Budgeting in the Product", TaskId = 43 });
         ObservableCollection<IGanttTask> Budget = new ObservableCollection<IGanttTask>();
         Budget.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 3), TaskName = "Define financial metrics of product", TaskId = 44 });
         Budget.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 3), FinishDate = new DateTime(2010, 9, 13), TaskName = "Estimate cost need to develop", TaskId = 45 });
@@ -434,9 +444,9 @@ public class CalendarCustomizationViewModel
         Budget[4].Predecessor.Add(new Predecessor { GanttTaskIndex = 47, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         Budget[5].Predecessor.Add(new Predecessor { GanttTaskIndex = 48, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
 
-        Activities[7].Child = Budget;
+        taskDetails[7].Child = Budget;
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 10, 20), FinishDate = new DateTime(2010, 11, 10), TaskName = "Product Development", TaskId = 50 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 10, 20), FinishDate = new DateTime(2010, 11, 10), TaskName = "Product Development", TaskId = 50 });
         ObservableCollection<IGanttTask> Development = new ObservableCollection<IGanttTask>();
         Development.Add(new TaskDetails { StartDate = new DateTime(2010, 10, 20), FinishDate = new DateTime(2010, 10, 30), TaskName = "Implementation Phase 1", TaskId = 51 });
         Development.Add(new TaskDetails { StartDate = new DateTime(2010, 10, 30), FinishDate = new DateTime(2010, 11, 10), TaskName = "Implementation Phase 2", TaskId = 52 });
@@ -445,13 +455,13 @@ public class CalendarCustomizationViewModel
         Development[1].Predecessor.Add(new Predecessor { GanttTaskIndex = 51, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         Development[2].Predecessor.Add(new Predecessor { GanttTaskIndex = 52, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
 
-        Activities[8].Child = Development;
+        taskDetails[8].Child = Development;
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 8), FinishDate = new DateTime(2010, 11, 13), TaskName = "Product Review", TaskId = 54 });
-        Activities[9].Child.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 8), FinishDate = new DateTime(2010, 11, 10), TaskName = "Product Techincal Review", TaskId = 55 });
-        Activities[9].Child.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 9), FinishDate = new DateTime(2010, 11, 13), TaskName = "Product Cost Review", TaskId = 56 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 8), FinishDate = new DateTime(2010, 11, 13), TaskName = "Product Review", TaskId = 54 });
+        taskDetails[9].Child.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 8), FinishDate = new DateTime(2010, 11, 10), TaskName = "Product Techincal Review", TaskId = 55 });
+        taskDetails[9].Child.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 9), FinishDate = new DateTime(2010, 11, 13), TaskName = "Product Cost Review", TaskId = 56 });
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 15), FinishDate = new DateTime(2010, 11, 30), TaskName = "Beta Testing", TaskId = 57 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 15), FinishDate = new DateTime(2010, 11, 30), TaskName = "Beta Testing", TaskId = 57 });
         ObservableCollection<IGanttTask> Testing = new ObservableCollection<IGanttTask>();
         Testing.Add((new TaskDetails { StartDate = new DateTime(2010, 11, 15), FinishDate = new DateTime(2010, 11, 17), TaskName = "Disseminate completed product", TaskId = 58 }));
         Testing.Add((new TaskDetails { StartDate = new DateTime(2010, 11, 18), FinishDate = new DateTime(2010, 11, 20), TaskName = "Obtain feedback", TaskId = 59 }));
@@ -464,9 +474,9 @@ public class CalendarCustomizationViewModel
         Testing[3].Predecessor.Add(new Predecessor { GanttTaskIndex = 60, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         Testing[4].Predecessor.Add(new Predecessor { GanttTaskIndex = 61, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
 
-        Activities[10].Child = Testing;
+        taskDetails[10].Child = Testing;
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 25), FinishDate = new DateTime(2010, 12, 06), TaskName = "Post Product Review", TaskId = 63 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 25), FinishDate = new DateTime(2010, 12, 06), TaskName = "Post Product Review", TaskId = 63 });
         ObservableCollection<IGanttTask> PostReview = new ObservableCollection<IGanttTask>();
         PostReview.Add((new TaskDetails { StartDate = new DateTime(2010, 11, 25), FinishDate = new DateTime(2010, 11, 27), TaskName = "Finalize cost analysis", TaskId = 64 }));
         PostReview.Add((new TaskDetails { StartDate = new DateTime(2010, 11, 27), FinishDate = new DateTime(2010, 11, 28), TaskName = "Analyze performance", TaskId = 65 }));
@@ -481,11 +491,11 @@ public class CalendarCustomizationViewModel
         PostReview[4].Predecessor.Add(new Predecessor { GanttTaskIndex = 67, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         PostReview[5].Predecessor.Add(new Predecessor { GanttTaskIndex = 68, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
 
-        Activities[11].Child = PostReview;
+        taskDetails[11].Child = PostReview;
 
-        Activities.Add(new TaskDetails { StartDate = new DateTime(2010, 12, 10), FinishDate = new DateTime(2010, 12, 10), TaskName = "Product Released Successfully", TaskId = 70 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 12, 10), FinishDate = new DateTime(2010, 12, 10), TaskName = "Product Released Successfully", TaskId = 70 });
 
-        return Activities;
+        return taskDetails;
     }
 }
 

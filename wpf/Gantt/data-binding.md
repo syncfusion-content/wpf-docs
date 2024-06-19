@@ -15,7 +15,7 @@ Essential Gantt for WPF includes an built-in class called TaskDetails, which is 
 
 #### Use Case Scenarios
 
-You can easily create the task details collection using the TaskDetails class or by creating a new class by inheriting the IGantt interface.
+You can easily create the taskDetails details collection using the TaskDetails class or by creating a new class by inheriting the IGantt interface.
 
 Binding TaskDetails collection to Gantt Control
 
@@ -27,8 +27,17 @@ The following code illustrates how to bind the Task Details to the Gantt Control
 
 <syncfusion:GanttControl x:Name="ganttControl" 
                          ItemsSource="{Binding TaskDetails}">
+    <syncfusion:GanttControl.TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
+                                         TaskNameMapping="Name"
+                                         StartDateMapping="StartDate"
+                                         ChildMapping="ChildCollection"
+                                         FinishDateMapping="EndDate"
+                                         DurationMapping="Duration"
+                                         ProgressMapping="Progress"/>
+    </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.DataContext>
-        <local:ViewModel></local:ViewModel>
+        <local:ViewModel/>
     </syncfusion:GanttControl.DataContext>
 </syncfusion:GanttControl>
 
@@ -37,9 +46,7 @@ The following code illustrates how to bind the Task Details to the Gantt Control
 {% highlight c# %}
 
 GanttControl ganttControl = new GanttControl();
-ViewModel viewModel = new ViewModel();
-ganttControl.DataContext = viewModel;
-ganttControl.ItemsSource = viewModel.TaskDetails;
+this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
 this.Content = ganttControl;
 
 {% endhighlight  %}
@@ -48,12 +55,15 @@ this.Content = ganttControl;
 
 public class ViewModel
 {
+    /// <summary>
+    /// Holds the collection value.
+    /// </summary>
+    private ObservableCollection<TaskDetails> taskDetails;
+
     public ViewModel()
     {
-        taskDetails = this.GetTaskDetails();
+        this.taskDetails = this.GetTaskDetails();
     }
-
-    private ObservableCollection<TaskDetails> taskDetails;
 
     /// <summary>
     /// Gets or sets the task collection.
@@ -67,7 +77,7 @@ public class ViewModel
         }
         set
         {
-            taskDetails = value;
+            this.taskDetails = value;
         }
     }
 
@@ -77,37 +87,37 @@ public class ViewModel
     /// <returns></returns>
     ObservableCollection<TaskDetails> GetTaskDetails()
     {
-        ObservableCollection<TaskDetails> task = new ObservableCollection<TaskDetails>();
-        task.Add(new TaskDetails { TaskId = 1, TaskName = "Scope", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 40d });
-        task[0].Child.Add(new TaskDetails { TaskId = 2, TaskName = "Determine project office scope", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 5), Progress = 20d });
-        task[0].Child.Add(new TaskDetails { TaskId = 3, TaskName = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 7), Progress = 20d });
-        task[0].Child.Add(new TaskDetails { TaskId = 4, TaskName = "Secure executive sponsorship", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
-        task[0].Child.Add(new TaskDetails { TaskId = 5, TaskName = "Secure complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
+        ObservableCollection<TaskDetails> taskDetails = new ObservableCollection<TaskDetails>();
+        taskDetails.Add(new TaskDetails { TaskId = 1, TaskName = "Scope", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 40d });
+        taskDetails[0].Child.Add(new TaskDetails { TaskId = 2, TaskName = "Determine project office scope", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 5), Progress = 20d });
+        taskDetails[0].Child.Add(new TaskDetails { TaskId = 3, TaskName = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 7), Progress = 20d });
+        taskDetails[0].Child.Add(new TaskDetails { TaskId = 4, TaskName = "Secure executive sponsorship", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
+        taskDetails[0].Child.Add(new TaskDetails { TaskId = 5, TaskName = "Secure complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
 
-        task.Add(new TaskDetails { TaskId = 6, TaskName = "Risk Assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
+        taskDetails.Add(new TaskDetails { TaskId = 6, TaskName = "Risk Assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
 
-        task[1].Child.Add(new TaskDetails { TaskId = 7, TaskName = "Perform risk assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 21), Progress = 20d });
-        task[1].Child.Add(new TaskDetails { TaskId = 8, TaskName = "Evaluate risk assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 23), Progress = 30d });
-        task[1].Child.Add(new TaskDetails { TaskId = 9, TaskName = "Prepare contingency plans", StartDate = new DateTime(2011, 7, 12), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
-        task[1].Child.Add(new TaskDetails { TaskId = 10, TaskName = "Risk Assessment complete", StartDate = new DateTime(2011, 7, 15), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
+        taskDetails[1].Child.Add(new TaskDetails { TaskId = 7, TaskName = "Perform risk assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 21), Progress = 20d });
+        taskDetails[1].Child.Add(new TaskDetails { TaskId = 8, TaskName = "Evaluate risk assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 23), Progress = 30d });
+        taskDetails[1].Child.Add(new TaskDetails { TaskId = 9, TaskName = "Prepare contingency plans", StartDate = new DateTime(2011, 7, 12), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
+        taskDetails[1].Child.Add(new TaskDetails { TaskId = 10, TaskName = "Risk Assessment complete", StartDate = new DateTime(2011, 7, 15), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
 
-        task.Add(new TaskDetails { TaskId = 11, TaskName = "Monitoring", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 8, 6), Progress = 40d });
-        task[2].Child.Add(new TaskDetails { TaskId = 12, TaskName = "Prepare Meeting agenda", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 7, 26), Progress = 30d });
-        task[2].Child.Add(new TaskDetails { TaskId = 13, TaskName = "Conduct review meeting", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 7, 30), Progress = 30d });
-        task[2].Child.Add(new TaskDetails { TaskId = 14, TaskName = "Migrate critical issues", StartDate = new DateTime(2011, 7, 18), FinishDate = new DateTime(2011, 8, 2), Progress = 30d });
-        task[2].Child.Add(new TaskDetails { TaskId = 15, TaskName = "Estabilish change mgmt Control", StartDate = new DateTime(2011, 8, 3), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
-        task[2].Child.Add(new TaskDetails { TaskId = 16, TaskName = "Monitoring Complete", StartDate = new DateTime(2011, 8, 6), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
+        taskDetails.Add(new TaskDetails { TaskId = 11, TaskName = "Monitoring", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 8, 6), Progress = 40d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 12, TaskName = "Prepare Meeting agenda", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 7, 26), Progress = 30d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 13, TaskName = "Conduct review meeting", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 7, 30), Progress = 30d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 14, TaskName = "Migrate critical issues", StartDate = new DateTime(2011, 7, 18), FinishDate = new DateTime(2011, 8, 2), Progress = 30d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 15, TaskName = "Estabilish change mgmt Control", StartDate = new DateTime(2011, 8, 3), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 16, TaskName = "Monitoring Complete", StartDate = new DateTime(2011, 8, 6), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
 
-        task.Add(new TaskDetails { TaskId = 17, TaskName = "Post Implementation", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 19), Progress = 40d });
-        task[3].Child.Add(new TaskDetails { TaskId = 18, TaskName = "Obtain User feedback", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 10), Progress = 30d });
-        task[3].Child.Add(new TaskDetails { TaskId = 19, TaskName = "Evaluate lessons learned", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 17), Progress = 30d });
-        task[3].Child.Add(new TaskDetails { TaskId = 20, TaskName = "Modify items as necessary", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 19), Progress = 30d });
-        task[3].Child.Add(new TaskDetails { TaskId = 21, TaskName = "Post Implementation complete", StartDate = new DateTime(2011, 8, 19), FinishDate = new DateTime(2011, 8, 19), Progress = 30d });
+        taskDetails.Add(new TaskDetails { TaskId = 17, TaskName = "Post Implementation", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 19), Progress = 40d });
+        taskDetails[3].Child.Add(new TaskDetails { TaskId = 18, TaskName = "Obtain User feedback", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 10), Progress = 30d });
+        taskDetails[3].Child.Add(new TaskDetails { TaskId = 19, TaskName = "Evaluate lessons learned", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 17), Progress = 30d });
+        taskDetails[3].Child.Add(new TaskDetails { TaskId = 20, TaskName = "Modify items as necessary", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 19), Progress = 30d });
+        taskDetails[3].Child.Add(new TaskDetails { TaskId = 21, TaskName = "Post Implementation complete", StartDate = new DateTime(2011, 8, 19), FinishDate = new DateTime(2011, 8, 19), Progress = 30d });
 
-        task[0].Resources = new ObservableCollection<Resource>() { new Resource { ID = 1, Name = "John" }, new Resource { ID = 2, Name = "Neil" } };
-        task[0].Child[3].Resources = new ObservableCollection<Resource>() { new Resource() { ID = 3, Name = "Peter" } };
-        task[1].Resources = new ObservableCollection<Resource>() { new Resource() { ID = 4, Name = "David" } };
-        return task;
+        taskDetails[0].Resources = new ObservableCollection<Resource>() { new Resource { ID = 1, Name = "John" }, new Resource { ID = 2, Name = "Neil" } };
+        taskDetails[0].Child[3].Resources = new ObservableCollection<Resource>() { new Resource() { ID = 3, Name = "Peter" } };
+        taskDetails[1].Resources = new ObservableCollection<Resource>() { new Resource() { ID = 4, Name = "David" } };
+        return taskDetails;
     }
 }
  
@@ -138,32 +148,41 @@ The following code illustrate how to map the properties using the TaskAttributeM
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GanttControl.TaskAttributeMapping>
-    <syncfusion:TaskAttributeMapping ChildMapping="ChildCollection"
-                                     DurationMapping="Duration"
-                                     FinishDateMapping="EndDate"
-                                     PredecessorMapping="Predecessor"
-                                     ProgressMapping="Progress"
-                                     ResourceInfoMapping="Resource"
-                                     StartDateMapping="StartDate"
-                                     TaskIdMapping="ID"
-                                     TaskNameMapping="Name" />
-</syncfusion:GanttControl.TaskAttributeMapping>
+<syncfusion:GanttControl x:Name="ganttControl" 
+                         ItemsSource="{Binding TaskDetails}">
+    <syncfusion:GanttControl.TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
+                                         TaskNameMapping="Name"
+                                         StartDateMapping="StartDate"
+                                         ChildMapping="ChildCollection"
+                                         FinishDateMapping="EndDate"
+                                         DurationMapping="Duration"
+                                         ProgressMapping="Progress"
+                                         PredecessorMapping="Predecessor"
+                                         ResourceInfoMapping="Resource"/>
+    </syncfusion:GanttControl.TaskAttributeMapping>
+    <syncfusion:GanttControl.DataContext>
+        <local:ViewModel/>
+    </syncfusion:GanttControl.DataContext>
+</syncfusion:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
 
-TaskAttributeMapping attributes = new TaskAttributeMapping();
-attributes.ChildMapping = "ChildCollection";
-attributes.DurationMapping = "Duration";
-attributes.FinishDateMapping = "EndDate";
-attributes.PredecessorMapping = "Predecessor";
-attributes.ProgressMapping = "Progress";
-attributes.ResourceInfoMapping = "Resource";
-attributes.StartDateMapping = "StartDate";
-attributes.TaskIdMapping = "ID";
-attributes.TaskNameMapping = "Name";
-this.ganttControl.TaskAttributeMapping = attributes;
+GanttControl ganttControl = new GanttControl();
+this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.TaskIdMapping = "ID";
+taskAttributeMapping.TaskNameMapping = "Name";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
+this.Content = ganttControl;
 
 {% endhighlight  %}
 {% endtabs %}
@@ -175,16 +194,16 @@ The following code illustrates how to bind the external source to Gantt control:
 
 <syncfusion:GanttControl x:Name="ganttControl"
                          ItemsSource="{Binding TaskCollection}">
-    <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping ChildMapping="ChildCollection"
-                                         DurationMapping="Duration"
-                                         FinishDateMapping="EndDate"
-                                         PredecessorMapping="Predecessor"
-                                         ProgressMapping="Progress"
-                                         ResourceInfoMapping="Resource"
+   <syncfusion:GanttControl.TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
+                                         TaskNameMapping="Name"
                                          StartDateMapping="StartDate"
-                                         TaskIdMapping="ID"
-                                         TaskNameMapping="Name" />
+                                         ChildMapping="ChildCollection"
+                                         FinishDateMapping="EndDate"
+                                         DurationMapping="Duration"
+                                         ProgressMapping="Progress"
+                                         PredecessorMapping="Predecessor"
+                                         ResourceInfoMapping="Resource"/>
     </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
@@ -195,22 +214,20 @@ The following code illustrates how to bind the external source to Gantt control:
 {% highlight c# %}
 
 GanttControl ganttControl = new GanttControl();
- viewModel = new ViewModel();
-ganttControl.DataContext = viewModel;
-ganttControl.ItemsSource = viewModel.TaskCollection;
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 
 // Task attribute mapping
-TaskAttributeMapping attributes = new TaskAttributeMapping();
-attributes.ChildMapping = "ChildCollection";
-attributes.DurationMapping = "Duration";
-attributes.FinishDateMapping = "EndDate";
-attributes.PredecessorMapping = "Predecessor";
-attributes.ProgressMapping = "Progress";
-attributes.ResourceInfoMapping = "Resource";
-attributes.StartDateMapping = "StartDate";
-attributes.TaskIdMapping = "ID";
-attributes.TaskNameMapping = "Name";
-ganttControl.TaskAttributeMapping = attributes;
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.TaskIdMapping = "ID";
+taskAttributeMapping.TaskNameMapping = "Name";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 this.Content = ganttControl;
 
 {% endhighlight  %}
@@ -218,27 +235,51 @@ this.Content = ganttControl;
 
 public class Task : INotifyPropertyChanged
 {
+    /// <summary>
+    /// Holds the start date and end date value.
+    /// </summary>
     private DateTime startDate, endDate;
 
+    /// <summary>
+    /// Holds the duration value.
+    /// </summary>
     private TimeSpan duration;
 
+    /// <summary>
+    /// Holds the progress value.
+    /// </summary>
     private double progress;
 
+    /// <summary>
+    /// Holds the id value.
+    /// </summary>
     private int id;
 
+    /// <summary>
+    /// Holds the name value.
+    /// </summary>
     private string name;
 
+    /// <summary>
+    /// Holds the collection value.
+    /// </summary>
     private ObservableCollection<Task> childCollection;
 
+    /// <summary>
+    /// Holds the resource value.
+    /// </summary>
     private ObservableCollection<Resource> resource;
 
+    /// <summary>
+    /// Holds the predecessor value.
+    /// </summary>
     private ObservableCollection<Predecessor> predecessor;
 
     public Task()
     {
-        ChildCollection = new ObservableCollection<Task>();
-        Predecessor = new ObservableCollection<Predecessor>();
-        Resource = new ObservableCollection<Resource>();
+        this.ChildCollection = new ObservableCollection<Task>();
+        this.Predecessor = new ObservableCollection<Predecessor>();
+        this.Resource = new ObservableCollection<Resource>();
     }
 
     /// <summary>
@@ -401,11 +442,14 @@ public class Task : INotifyPropertyChanged
  
 public class ViewModel
 {
+    /// <summary>
+    /// Property to add task collection.
+    /// </summary>
     public ObservableCollection<Task> TaskCollection { get; set; }
 
     public ViewModel()
     {
-        TaskCollection = this.GetDataSource();
+        this.TaskCollection = this.GetDataSource();
     }
 
     private ObservableCollection<Task> GetDataSource()

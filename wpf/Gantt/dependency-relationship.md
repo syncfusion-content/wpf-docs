@@ -77,15 +77,15 @@ The following code illustrates how to add the Dependency Relationship between ta
 <syncfusion:GanttControl x:Name="ganttControl"
                          ItemsSource="{Binding TaskCollection}">
     <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping ChildMapping="ChildCollection"
-                                         DurationMapping="Duration"
-                                         FinishDateMapping="EndDate"
-                                         PredecessorMapping="Predecessor"
-                                         ProgressMapping="Progress"
-                                         ResourceInfoMapping="Resource"
+        <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
+                                         TaskNameMapping="Name"
                                          StartDateMapping="StartDate"
-                                         TaskIdMapping="ID"
-                                         TaskNameMapping="Name" />
+                                         ChildMapping="ChildCollection"
+                                         FinishDateMapping="EndDate"
+                                         DurationMapping="Duration"
+                                         ProgressMapping="Progress"
+                                         PredecessorMapping="Predecessor"
+                                         ResourceInfoMapping="Resource"/>
     </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
@@ -96,22 +96,21 @@ The following code illustrates how to add the Dependency Relationship between ta
 {% highlight c# %}
 
 GanttControl ganttControl = new GanttControl();
- viewModel = new ViewModel();
-ganttControl.DataContext = viewModel;
-ganttControl.ItemsSource = viewModel.TaskCollection;
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
+this.Content = ganttControl;
 
 // Task attribute mapping
-TaskAttributeMapping attributes = new TaskAttributeMapping();
-attributes.ChildMapping = "ChildCollection";
-attributes.DurationMapping = "Duration";
-attributes.FinishDateMapping = "EndDate";
-attributes.PredecessorMapping = "Predecessor";
-attributes.ProgressMapping = "Progress";
-attributes.ResourceInfoMapping = "Resource";
-attributes.StartDateMapping = "StartDate";
-attributes.TaskIdMapping = "ID";
-attributes.TaskNameMapping = "Name";
-ganttControl.TaskAttributeMapping = attributes;
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.TaskIdMapping = "ID";
+taskAttributeMapping.TaskNameMapping = "Name";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 this.Content = ganttControl;
 
 {% endhighlight  %}
@@ -119,27 +118,51 @@ this.Content = ganttControl;
 
 public class Task : INotifyPropertyChanged
 {
+    /// <summary>
+    /// Holds the start date and end date value.
+    /// </summary>
     private DateTime startDate, endDate;
 
+    /// <summary>
+    /// Holds the duration value.
+    /// </summary>
     private TimeSpan duration;
 
+    /// <summary>
+    /// Holds the progress value.
+    /// </summary>
     private double progress;
 
+    /// <summary>
+    /// Holds the id value.
+    /// </summary>
     private int id;
 
+    /// <summary>
+    /// Holds the name value.
+    /// </summary>
     private string name;
 
+    /// <summary>
+    /// Holds the collection value.
+    /// </summary>
     private ObservableCollection<Task> childCollection;
 
+    /// <summary>
+    /// Holds the resource value.
+    /// </summary>
     private ObservableCollection<Resource> resource;
 
+    /// <summary>
+    /// Holds the predecessor value.
+    /// </summary>
     private ObservableCollection<Predecessor> predecessor;
 
     public Task()
     {
-        ChildCollection = new ObservableCollection<Task>();
-        Predecessor = new ObservableCollection<Predecessor>();
-        Resource = new ObservableCollection<Resource>();
+        this.ChildCollection = new ObservableCollection<Task>();
+        this.Predecessor = new ObservableCollection<Predecessor>();
+        this.Resource = new ObservableCollection<Resource>();
     }
 
     /// <summary>
@@ -302,78 +325,81 @@ public class Task : INotifyPropertyChanged
  
 public class ViewModel
 {
+    /// <summary>
+    /// Property to add task collection.
+    /// </summary>
     public ObservableCollection<Task> TaskCollection { get; set; }
 
     public ViewModel()
     {
-    TaskCollection = this.GetDataSource();
+        this.TaskCollection = this.GetDataSource();
     }
 
     private ObservableCollection<Task> GetDataSource()
     {
 
-        var data = new ObservableCollection<Task>();
-        data.Add(new Task() { ID = 1, Name = "Analysis/Planning", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 8, 14), Progress = 40d });
-        data[0].ChildCollection.Add((new Task() { ID = 2, Name = "IDentify Components to be Localized", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
-        data[0].ChildCollection.Add((new Task() { ID = 3, Name = "Ensure file localizability", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
-        data[0].ChildCollection.Add((new Task() { ID = 4, Name = "IDentify tools", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
-        data[0].ChildCollection.Add((new Task() { ID = 5, Name = "Test tools", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 8, 1), Progress = 10d }));
-        data[0].ChildCollection.Add((new Task() { ID = 6, Name = "Develop delivery timeline", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 8, 1), Progress = 10d }));
-        data[0].ChildCollection.Add((new Task() { ID = 7, Name = "Analysis Progress", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 8, 10), Progress = 10d }));
+        var taskDetails = new ObservableCollection<Task>();
+        taskDetails.Add(new Task() { ID = 1, Name = "Analysis/Planning", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 8, 14), Progress = 40d });
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 2, Name = "IDentify Components to be Localized", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 3, Name = "Ensure file localizability", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 4, Name = "IDentify tools", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 5, Name = "Test tools", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 8, 1), Progress = 10d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 6, Name = "Develop delivery timeline", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 8, 1), Progress = 10d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 7, Name = "Analysis Progress", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 8, 10), Progress = 10d }));
 
-        data.Add(new Task() { ID = 8, Name = "Production", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 14), Progress = 40d });
-        data[1].ChildCollection.Add((new Task() { ID = 9, Name = "Software Components", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d, }));
-        data[1].ChildCollection.Add((new Task() { ID = 10, Name = "Localization Component - User Interface", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
-        data[1].ChildCollection.Add((new Task() { ID = 11, Name = "User Assistance Components", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
-        data[1].ChildCollection.Add((new Task() { ID = 12, Name = "Software components Progress", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 18), Progress = 10d }));
+        taskDetails.Add(new Task() { ID = 8, Name = "Production", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 14), Progress = 40d });
+        taskDetails[1].ChildCollection.Add((new Task() { ID = 9, Name = "Software Components", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d, }));
+        taskDetails[1].ChildCollection.Add((new Task() { ID = 10, Name = "Localization Component - User Interface", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        taskDetails[1].ChildCollection.Add((new Task() { ID = 11, Name = "User Assistance Components", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        taskDetails[1].ChildCollection.Add((new Task() { ID = 12, Name = "Software components Progress", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 18), Progress = 10d }));
 
 
-        data.Add(new Task() { ID = 13, Name = "Quality Assurance", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 12), Progress = 40d, });
-        data[2].ChildCollection.Add((new Task() { ID = 14, Name = "Review project information", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 15), Progress = 20d }));
-        data[2].ChildCollection.Add((new Task() { ID = 15, Name = "Localization Component", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 8), Progress = 20d }));
-        data[2].ChildCollection.Add((new Task() { ID = 16, Name = "Localization Component", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
-        data[2].ChildCollection.Add((new Task() { ID = 17, Name = "Localization Component", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 18), Progress = 10d }));
+        taskDetails.Add(new Task() { ID = 13, Name = "Quality Assurance", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 12), Progress = 40d, });
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 14, Name = "Review project information", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 15), Progress = 20d }));
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 15, Name = "Localization Component", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 8), Progress = 20d }));
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 16, Name = "Localization Component", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 17, Name = "Localization Component", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 18), Progress = 10d }));
 
-        data.Add(new Task() { ID = 18, Name = "Beta Testing", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 14), Progress = 40d });
-        data[3].ChildCollection.Add((new Task() { ID = 19, Name = "Disseminate Progressd product", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
-        data[3].ChildCollection.Add((new Task() { ID = 20, Name = "Obtain feedback", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
-        data[3].ChildCollection.Add((new Task() { ID = 21, Name = "Modify", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 19), Progress = 10d }));
-        data[3].ChildCollection.Add((new Task() { ID = 22, Name = "Test", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 19), Progress = 10d }));
-        data[3].ChildCollection.Add((new Task() { ID = 23, Name = "Progress", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 19), Progress = 10d }));
+        taskDetails.Add(new Task() { ID = 18, Name = "Beta Testing", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 14), Progress = 40d });
+        taskDetails[3].ChildCollection.Add((new Task() { ID = 19, Name = "Disseminate Progressd product", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
+        taskDetails[3].ChildCollection.Add((new Task() { ID = 20, Name = "Obtain feedback", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        taskDetails[3].ChildCollection.Add((new Task() { ID = 21, Name = "Modify", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 19), Progress = 10d }));
+        taskDetails[3].ChildCollection.Add((new Task() { ID = 22, Name = "Test", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 19), Progress = 10d }));
+        taskDetails[3].ChildCollection.Add((new Task() { ID = 23, Name = "Progress", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 19), Progress = 10d }));
 
-        data.Add(new Task() { ID = 24, Name = "Post-Project Review", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 14), Progress = 40d, });
-        data[4].ChildCollection.Add((new Task() { ID = 25, Name = "Finalize cost analysis", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
-        data[4].ChildCollection.Add((new Task() { ID = 26, Name = "Analyze performance", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
-        data[4].ChildCollection.Add((new Task() { ID = 27, Name = "Archive files", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
-        data[4].ChildCollection.Add((new Task() { ID = 28, Name = "Document lessons learned", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 18), Progress = 10d }));
-        data[4].ChildCollection.Add((new Task() { ID = 29, Name = "Distribute to team members", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
-        data[4].ChildCollection.Add((new Task() { ID = 30, Name = "Post-project review Progress", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        taskDetails.Add(new Task() { ID = 24, Name = "Post-Project Review", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 14), Progress = 40d, });
+        taskDetails[4].ChildCollection.Add((new Task() { ID = 25, Name = "Finalize cost analysis", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
+        taskDetails[4].ChildCollection.Add((new Task() { ID = 26, Name = "Analyze performance", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        taskDetails[4].ChildCollection.Add((new Task() { ID = 27, Name = "Archive files", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        taskDetails[4].ChildCollection.Add((new Task() { ID = 28, Name = "Document lessons learned", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 18), Progress = 10d }));
+        taskDetails[4].ChildCollection.Add((new Task() { ID = 29, Name = "Distribute to team members", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        taskDetails[4].ChildCollection.Add((new Task() { ID = 30, Name = "Post-project review Progress", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
 
-        data[1].Resource.Add(new Resource() { ID = 1, Name = "Localizer" });
-        data[2].Resource.Add(new Resource() { ID = 2, Name = "Technical Reviewer" });
-        data[3].Resource.Add(new Resource() { ID = 3, Name = "Project Manager" });
+        taskDetails[1].Resource.Add(new Resource() { ID = 1, Name = "Localizer" });
+        taskDetails[2].Resource.Add(new Resource() { ID = 2, Name = "Technical Reviewer" });
+        taskDetails[3].Resource.Add(new Resource() { ID = 3, Name = "Project Manager" });
 
-        data[0].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 2, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[0].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[0].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[0].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 2, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[0].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[0].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
 
-        data[1].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 9, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[1].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 10, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[1].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 7, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[1].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 9, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[1].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 10, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[1].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 7, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
 
-        data[2].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
-        data[2].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
-        data[2].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+        taskDetails[2].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+        taskDetails[2].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+        taskDetails[2].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
 
-        data[3].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[3].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[3].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 19, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[3].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[3].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[3].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 19, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
 
-        data[4].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 25, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[4].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 28, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[4].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 30, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        data[4].ChildCollection[4].Predecessor.Add(new Predecessor() { GanttTaskIndex = 27, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
-        return data;
+        taskDetails[4].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 25, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[4].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 28, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[4].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 30, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[4].ChildCollection[4].Predecessor.Add(new Predecessor() { GanttTaskIndex = 27, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        return taskDetails;
     }
 }
 
@@ -487,15 +513,15 @@ The dynamic editing of predecessor will be automatically included in the Gantt b
 <syncfusion:GanttControl x:Name="ganttControl"
                          ItemsSource="{Binding TaskCollection}">
     <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping ChildMapping="ChildCollection"
-                                         DurationMapping="Duration"
-                                         FinishDateMapping="EndDate"
-                                         PredecessorMapping="Predecessor"
-                                         ProgressMapping="Progress"
-                                         ResourceInfoMapping="Resource"
+        <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
+                                         TaskNameMapping="Name"
                                          StartDateMapping="StartDate"
-                                         TaskIdMapping="ID"
-                                         TaskNameMapping="Name" />
+                                         ChildMapping="ChildCollection"
+                                         FinishDateMapping="EndDate"
+                                         DurationMapping="Duration"
+                                         ProgressMapping="Progress"
+                                         PredecessorMapping="Predecessor"
+                                         ResourceInfoMapping="Resource"/>
     </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
@@ -504,6 +530,10 @@ The dynamic editing of predecessor will be automatically included in the Gantt b
  
 {% endhighlight  %}
 {% highlight c# %}
+GanttControl ganttControl = new GanttControl();
+ViewModel viewModel = new ViewModel();
+ganttControl.ItemsSource = viewModel.TaskCollection;
+this.Content = ganttControl;
 
 //// The following code will illustrate how to dynamically add resource and predecessor in the underlying collection:
 // To Add the Dynamic Predecessors

@@ -119,9 +119,7 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
 {% highlight c# %}
 
 GanttControl ganttControl = new GanttControl();
-ViewModel viewModel = new ViewModel();
-ganttControl.DataContext = viewModel;
-ganttControl.ItemsSource = viewModel.TaskDetails;
+this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
 this.Content = ganttControl;
 
 {% endhighlight  %}
@@ -311,9 +309,7 @@ To show the date with time in the GanttGrid, enable the ShowDateWithTime propert
 
 GanttControl ganttControl = new GanttControl();
 ganttControl.ShowDateWithTime = true;
-ViewModel viewModel = new ViewModel();
-ganttControl.DataContext = viewModel;
-ganttControl.ItemsSource = viewModel.TaskDetails;
+this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
 this.Content = ganttControl;
 
 {% endhighlight  %}
