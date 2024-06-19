@@ -41,7 +41,7 @@ List of Commands and Key Gesture:
 | Zoom | - | Control | new ZoomPositionParameter { ZoomCommand=ZoomCommand.ZoomOut} |
 | Zoom | + | Control | new ZoomPositionParameter { ZoomCommand = ZoomCommand.ZoomIn } |
 | Reset | 0 | Control | new ResetParameter { Reset = Diagram.Reset.ZoomPan } |
-| FitToPage | 0 | Control+ Menu | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
+| FitToPage | W | Control + Shift | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
 
 #### List of Commands and Mouse Gesture with Parameter
 
