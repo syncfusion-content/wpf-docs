@@ -138,7 +138,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ## Add Group from stencil
 
-Groups can be predefined and added to the stencil and can be dropped into the diagram when needed. For more information about adding the nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil") and [BPMN-Shapes-Palette](/wpf/sfdiagram/BPMN-Shapes/BPMN-Shapes-Palette "BPMN-Shapes-Palette").
+Groups can be predefined and added to the stencil and can be dropped into the diagram when needed. For more information about adding the nodes from Stencil, refer to the [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil "Stencil") and [BPMN-Shapes-Palette](https://help.syncfusion.com/wpf/diagram/bpmn-shapes/bpmn-shapes-palette "BPMN-Shapes-Palette").
 
 ## Add BPMN Nodes/Groups into BPMNGroup at runtime
 You can add the BPMN Nodes or Groups into BPMNGroup at runtime in two ways.
