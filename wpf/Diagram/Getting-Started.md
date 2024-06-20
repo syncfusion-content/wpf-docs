@@ -210,7 +210,7 @@ Please refer to [Shapes](https://help.syncfusion.com/wpf/diagram/shapes) to know
     <Style TargetType="Path" x:Key="ShapeStyle">
         <Setter Property="Fill" Value="#FF5B9BD5"/>
         <Setter Property="Stretch" Value="Fill"/>
-        Setter Property="Stroke" Value="#FFEDF1F6"/>
+        <Setter Property="Stroke" Value="#FFEDF1F6"/>
     </Style>
             
     <!--To apply Style for NodeViewModel-->
@@ -524,17 +524,17 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
         <!--Initialize the SymbolCollection-->
         <local:SymbolCollection>
             <!--Define the DiagramElement-Node-->
-            <Syncfusion:NodeViewModel UnitHeight="40" UnitWidth="120" 
+            <syncfusion:NodeViewModel UnitHeight="40" UnitWidth="120" 
                                       Shape="{StaticResource Ellipse}" Key="Nodes">
-                <Syncfusion:NodeViewModel.Annotations>
+                <syncfusion:NodeViewModel.Annotations>
                     <!--Observable Collection of AnnotationEditorViewModel-->
-                    <Syncfusion:AnnotationCollection>
-                        <Syncfusion:AnnotationEditorViewModel Content="Begin"/>
-                    </Syncfusion:AnnotationCollection>
-                </Syncfusion:NodeViewModel.Annotations>
-            </Syncfusion:NodeViewModel>
+                    <syncfusion:AnnotationCollection>
+                        <syncfusion:AnnotationEditorViewModel Content="Begin"/>
+                    </syncfusion:AnnotationCollection>
+                </syncfusion:NodeViewModel.Annotations>
+            </syncfusion:NodeViewModel>
             <!--Define the DiagramElement-Connector-->
-            <Syncfusion:ConnectorViewModel Key="Connectors"
+            <syncfusion:ConnectorViewModel Key="Connectors"
                                            SourcePoint="100,100" 
                                            TargetPoint="200,200" /> 
         </local:SymbolCollection>
@@ -549,14 +549,14 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 </stencil:Stencil>
 
 <!--Define DiagramControl to drag and drop elements into the diagram-->
-<Syncfusion:SfDiagram x:Name="sfdiagram">
-    <Syncfusion:SfDiagram.Nodes>
-        <Syncfusion:NodeCollection/>
-    </Syncfusion:SfDiagram.Nodes>
-    <Syncfusion:SfDiagram.Connectors>
-        <Syncfusion:ConnectorCollection/>
-    </Syncfusion:SfDiagram.Connectors>
-</Syncfusion:SfDiagram>
+<syncfusion:SfDiagram x:Name="sfdiagram">
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection/>
+    </syncfusion:SfDiagram.Nodes>
+    <syncfusion:SfDiagram.Connectors>
+        <syncfusion:ConnectorCollection/>
+    </syncfusion:SfDiagram.Connectors>
+</syncfusion:SfDiagram>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -644,13 +644,17 @@ Declare the style for node, connector, symbol, and symbol group to visualize the
 
 {% tabs %}
 {% highlight xaml %}
+
+<!--Namespace for stencil-->
+xmlns:stencil="clr-namespace:syncfusion.UI.Xaml.Diagram.Stencil;assembly=syncfusion.SfDiagram.WPF"
+
 <ResourceDictionary>
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <!--Style for Node-->
-    <Style TargetType="Syncfusion:Node">
+    <Style TargetType="syncfusion:Node">
         <Setter Property="ShapeStyle">
             <Setter.Value>
                 <Style TargetType="Path">
@@ -662,7 +666,7 @@ Declare the style for node, connector, symbol, and symbol group to visualize the
     </Style>
 
     <!--Style for Connector-->
-    <Style TargetType="Syncfusion:Connector">
+    <Style TargetType="syncfusion:Connector">
         <Setter Property="TargetDecoratorStyle">
             <Setter.Value>
                 <Style TargetType="Path">
@@ -736,17 +740,17 @@ WPF Diagram (SfDiagram) provides support to auto-arrange the nodes in the diagra
 
 #### Business object (employee information)
 
-Define employee information as collection of data. The following code example shows the employee information whose, EmpId is used as an unique identifier and ParentId is used to identify the person to whom an employee report to, in the organization.
+Define employee information as collection of data. The following code example shows the employee information whose, `EmpId` is used as an unique identifier and `ParentId` is used to identify the person to whom an employee report to, in the organization.
 
 {% tabs %}
 {% highlight xaml %}
 <!--Initializes the DataSource -->
 <local:Employees x:Key="employees">
-   <local:Employee  EmpId="1" ParentId="" Designation="CEO"/>
-   <local:Employee  EmpId="2" ParentId="1" Designation="Project Manager1"/>
-   <local:Employee  EmpId="3" ParentId="1" Designation="Project Manager2"/>
-   <local:Employee  EmpId="4" ParentId="2" Designation="Engineer1"/>
-   <local:Employee  EmpId="5" ParentId="3" Designation="Engineer2"/>  
+   <local:Employee EmpId="1" ParentId="" Designation="CEO"/>
+   <local:Employee EmpId="2" ParentId="1" Designation="Project Manager1"/>
+   <local:Employee EmpId="3" ParentId="1" Designation="Project Manager2"/>
+   <local:Employee EmpId="4" ParentId="2" Designation="Engineer1"/>
+   <local:Employee EmpId="5" ParentId="3" Designation="Engineer2"/>  
 </local:Employees>
 {% endhighlight %}
 
@@ -767,7 +771,6 @@ public class Employee
 {
     public Employee()
     {
-
     }
     public string EmpId { get; set; }
     public string ParentId { get; set; }
@@ -783,19 +786,19 @@ public class Employees:ObservableCollection<Employee>
 
 #### Map DataSource with Diagram
 
-You can configure the above “Employee Information” with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example shows how dataSourceSettings is used to map ID , ParentId and DataSource with property name identifiers for employee information.
+You can configure the above “Employee Information” with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example shows how dataSourceSettings is used to map [`Id`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_Id) , [`ParentId`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_ParentId) and [`DataSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_DataSource) with property name identifiers for employee information.
 
 {% tabs %}
 {% highlight xaml %}
 
 <!--Initializes the DataSourceSettings -->
-<Syncfusion:DataSourceSettings x:Key="DataSourcesettings" 
+<syncfusion:DataSourceSettings x:Key="DataSourcesettings" 
                                DataSource="{StaticResource employees}" 
                                ParentId="ParentId" Id="EmpId" />
     <!--Map the DataSourceSettings class with Diagram-->
-    <Syncfusion:SfDiagram x:Name="sfdiagram" 
+    <syncfusion:SfDiagram x:Name="sfdiagram" 
                           DataSourceSettings="{StaticResource DataSourcesettings}"/>   
-</Syncfusion:SfDiagram> 
+</syncfusion:SfDiagram> 
 {% endhighlight %}
 
 {% highlight c# %}
@@ -825,7 +828,7 @@ To create an organizational chart, TreeLayout type should be set to `LayoutType.
 {% highlight xaml %}
 
 <!--Style for Connector-->
-<Style TargetType="Syncfusion:Connector">
+<Style TargetType="syncfusion:Connector">
     <Setter Property="ConnectorGeometryStyle">
         <Setter.Value>
             <Style TargetType="Path">
@@ -847,7 +850,7 @@ To create an organizational chart, TreeLayout type should be set to `LayoutType.
 </Style>
 
 <!--Style for Node-->
-<Style TargetType="Syncfusion:Node">
+<Style TargetType="syncfusion:Node">
     <Setter Property="ContentTemplate">
         <Setter.Value>
             <DataTemplate>
@@ -865,23 +868,23 @@ To create an organizational chart, TreeLayout type should be set to `LayoutType.
 </Style>
 
 <!--Initializes the Layout-->
-<Syncfusion:DirectedTreeLayout x:Key="treeLayout" Orientation="TopToBottom" 
+<syncfusion:DirectedTreeLayout x:Key="treeLayout" Orientation="TopToBottom" 
                                HorizontalSpacing="50" Type="Organization"/>
 
 <!--Initializes the LayoutManager-->
-<Syncfusion:LayoutManager x:Key="LayoutManager" Layout="{StaticResource treeLayout}" />
+<syncfusion:LayoutManager x:Key="LayoutManager" Layout="{StaticResource treeLayout}" />
 
 <!--Map the DataSourceSettings and LayoutManager class with Diagram-->
-<Syncfusion:SfDiagram x:Name="sfdiagram" 
+<syncfusion:SfDiagram x:Name="sfdiagram" 
                       DataSourceSettings="{StaticResource DataSourcesettings}" 
                       LayoutManager="{StaticResource LayoutManager}">
-    <Syncfusion:SfDiagram.Nodes>
-        <Syncfusion:NodeCollection/>
-    </Syncfusion:SfDiagram.Nodes>
-    <Syncfusion:SfDiagram.Connectors>
-        <Syncfusion:ConnectorCollection/>
-    </Syncfusion:SfDiagram.Connectors>
-</Syncfusion:SfDiagram>
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection/>
+    </syncfusion:SfDiagram.Nodes>
+    <syncfusion:SfDiagram.Connectors>
+        <syncfusion:ConnectorCollection/>
+    </syncfusion:SfDiagram.Connectors>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
@@ -922,7 +925,7 @@ SfDiagram supports various built-in themes. Refer to the below links to apply th
 
   ![WPF Diagram Theme](getting-started_images\wpf-diagram-theme.jpg)
   
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme)
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme)
 
 ## See Also
 
