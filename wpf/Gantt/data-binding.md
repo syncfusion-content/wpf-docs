@@ -15,7 +15,7 @@ Essential Gantt for WPF includes an built-in class called TaskDetails, which is 
 
 #### Use Case Scenarios
 
-You can easily create the taskDetails details collection using the TaskDetails class or by creating a new class by inheriting the IGantt interface.
+You can easily create the task details collection using the TaskDetails class or by creating a new class by inheriting the IGantt interface.
 
 Binding TaskDetails collection to Gantt Control
 
@@ -45,9 +45,18 @@ The following code illustrates how to bind the Task Details to the Gantt Control
 
 {% highlight c# %}
 
-GanttControl ganttControl = new GanttControl();
 this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
-this.Content = ganttControl;
+
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "ID";
+taskAttributeMapping.TaskNameMapping = "Name";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.ProgressMapping = "Progress";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight  %}
 
@@ -82,7 +91,7 @@ public class ViewModel
     }
 
     /// <summary>
-    /// Gets the task details.
+    /// Method to get the task details.
     /// </summary>
     /// <returns></returns>
     ObservableCollection<TaskDetails> GetTaskDetails()
@@ -169,20 +178,21 @@ The following code illustrate how to map the properties using the TaskAttributeM
 {% endhighlight  %}
 {% highlight c# %}
 
-GanttControl ganttControl = new GanttControl();
+
 this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
+
+// Task attribute mapping
 TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
-taskAttributeMapping.ChildMapping = "ChildCollection";
-taskAttributeMapping.DurationMapping = "Duration";
-taskAttributeMapping.FinishDateMapping = "EndDate";
-taskAttributeMapping.PredecessorMapping = "Predecessor";
-taskAttributeMapping.ProgressMapping = "Progress";
-taskAttributeMapping.ResourceInfoMapping = "Resource";
-taskAttributeMapping.StartDateMapping = "StartDate";
 taskAttributeMapping.TaskIdMapping = "ID";
 taskAttributeMapping.TaskNameMapping = "Name";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
-this.Content = ganttControl;
 
 {% endhighlight  %}
 {% endtabs %}
@@ -213,22 +223,20 @@ The following code illustrates how to bind the external source to Gantt control:
 {% endhighlight  %}
 {% highlight c# %}
 
-GanttControl ganttControl = new GanttControl();
 this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 
 // Task attribute mapping
 TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
-taskAttributeMapping.ChildMapping = "ChildCollection";
-taskAttributeMapping.DurationMapping = "Duration";
-taskAttributeMapping.FinishDateMapping = "EndDate";
-taskAttributeMapping.PredecessorMapping = "Predecessor";
-taskAttributeMapping.ProgressMapping = "Progress";
-taskAttributeMapping.ResourceInfoMapping = "Resource";
-taskAttributeMapping.StartDateMapping = "StartDate";
 taskAttributeMapping.TaskIdMapping = "ID";
 taskAttributeMapping.TaskNameMapping = "Name";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
-this.Content = ganttControl;
 
 {% endhighlight  %}
 {% highlight c# tabtitle="Task.cs" %}
@@ -283,7 +291,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for Start Date.
+    /// Gets or sets the start date.
     /// </summary>
     public DateTime StartDate
     {
@@ -299,7 +307,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for Finish Date.
+    /// Gets or sets the finish date.
     /// </summary>
     public DateTime EndDate
     {
@@ -315,7 +323,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for duration value.
+    /// Gets or sets the duration value.
     /// </summary>
     public TimeSpan Duration
     {
@@ -331,7 +339,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for ID value.
+    /// Gets or sets the id value.
     /// </summary>
     public int ID
     {
@@ -347,7 +355,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for Name.
+    /// Gets or sets the Name.
     /// </summary>
     public string Name
     {
@@ -363,7 +371,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to define progress value.
+    /// Gets or sets the progress value.
     /// </summary>
     public double Progress
     {
@@ -379,7 +387,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to add child collection.
+    /// Gets or sets the child collection.
     /// </summary>
     public ObservableCollection<Task> ChildCollection
     {
@@ -395,7 +403,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to define resource value.
+    /// Gets or sets the resource value.
     /// </summary>
     public ObservableCollection<Resource> Resource
     {
@@ -411,7 +419,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to define predecessor value.
+    /// Gets or sets the predecessor value.
     /// </summary>
     public ObservableCollection<Predecessor> Predecessor
     {
@@ -426,6 +434,9 @@ public class Task : INotifyPropertyChanged
         }
     }
 
+    /// <summary>
+    /// Method for property changed.
+    /// </summary>
     private void OnPropertyChanged(string propName)
     {
         if (this.PropertyChanged != null)

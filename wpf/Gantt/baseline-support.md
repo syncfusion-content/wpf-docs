@@ -92,9 +92,21 @@ The following codes illustrate this:
 {% endhighlight  %}
 {% highlight c# %}
 
-GanttControl ganttControl = new GanttControl();
 this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
-this.Content = ganttControl;
+this.ganttControl.ShowBaseline = true;
+
+/// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "ID";
+taskAttributeMapping.TaskNameMapping = "Name";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight  %}
 
@@ -170,7 +182,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for Start Date.
+    /// Gets or sets the start date.
     /// </summary>
     public DateTime StartDate
     {
@@ -186,7 +198,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for Finish Date.
+    /// Gets or sets the finish date.
     /// </summary>
     public DateTime EndDate
     {
@@ -202,7 +214,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for duration value.
+    /// Gets or sets the duration value.
     /// </summary>
     public TimeSpan Duration
     {
@@ -218,7 +230,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for ID value.
+    /// Gets or sets the id value.
     /// </summary>
     public int ID
     {
@@ -234,7 +246,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for Name.
+    /// Gets or sets the Name.
     /// </summary>
     public string Name
     {
@@ -250,7 +262,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to define progress value.
+    /// Gets or sets the progress value.
     /// </summary>
     public double Progress
     {
@@ -266,7 +278,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets cost.
+    /// Gets or sets the cost.
     /// </summary>
     public Double Cost
     {
@@ -282,7 +294,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the Baseline start.
+    /// Gets or sets the baseline start.
     /// </summary>
     public DateTime BaselineStart
     {
@@ -298,7 +310,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the Baseline end.
+    /// Gets or sets the baseline end.
     /// </summary>
     public DateTime BaselineEnd
     {
@@ -314,7 +326,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets cost.
+    /// Gets or sets the baseline cost.
     /// </summary>
     public Double BaselineCost
     {
@@ -330,7 +342,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to add child collection.
+    /// Gets or sets the child collection.
     /// </summary>
     public ObservableCollection<Task> ChildCollection
     {
@@ -346,7 +358,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to define resource value.
+    /// Gets or sets the resource value.
     /// </summary>
     public ObservableCollection<Resource> Resource
     {
@@ -362,7 +374,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to define predecessor value.
+    /// Gets or sets the predecessor value.
     /// </summary>
     public ObservableCollection<Predecessor> Predecessor
     {
@@ -377,6 +389,9 @@ public class Task : INotifyPropertyChanged
         }
     }
 
+    /// <summary>
+    /// Method for property changed.
+    /// </summary>
     private void OnPropertyChanged(string propName)
     {
         if (this.PropertyChanged != null)
@@ -824,11 +839,26 @@ The following codes illustrate Adding On-Demand Baseline Column Inclusion to an 
 {% endhighlight  %}
 {% highlight c# %}
 
-GanttControl ganttControl = new GanttControl();
 this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
+
 // Displaying the Add new column drop down
-ganttControl.ShowAddNewColumn = true;
-this.Content = ganttControl;
+this.ganttControl.ShowAddNewColumn = true;
+
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "ID";
+taskAttributeMapping.TaskNameMapping = "Name";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+taskAttributeMapping.BaselineCostMapping = "BaselineCost";
+taskAttributeMapping.BaselineFinishMapping = "BaselineEnd";
+taskAttributeMapping.BaselineStartMapping = "BaselineStart";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight  %}
 {% endtabs %}
@@ -915,9 +945,8 @@ The following codes illustrate adding Project Statistics to an application:
 {% endhighlight  %}
 {% highlight c# %}
 
-GanttControl ganttControl = new GanttControl();
 this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
-this.Content = ganttControl;
+
 // To get the Project Statistics 
 ProjectInfo projInfo = this.ganttControl.GetProjectStatistics();
 
@@ -925,6 +954,22 @@ ProjectInfo projInfo = this.ganttControl.GetProjectStatistics();
 
 ProjectInfo projInfo = new ProjectInfo();
 projInfo = this.ganttControl.GetProjectStatistics();     
+
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "ID";
+taskAttributeMapping.TaskNameMapping = "Name";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+taskAttributeMapping.BaselineCostMapping = "BaselineCost";
+taskAttributeMapping.BaselineFinishMapping = "BaselineEnd";
+taskAttributeMapping.BaselineStartMapping = "BaselineStart";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight  %}
 {% endtabs %}
