@@ -411,7 +411,7 @@ Connectors can be interactively drawn by clicking and dragging on the diagram su
 
 ## Connectors through data source
 
-Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/wpf/diagram/datasource "DataSource").
+Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [DataSource](/wpf/diagram/datasource "DataSource").
 
 ## Add connectors from stencil
 
@@ -421,13 +421,13 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 ## See Also
 
-[`How to apply built-in theme for node and connector?`](https://support.syncfusion.com/kb/article/9995/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagram-sfdiagram)
+[How to apply built-in theme for node and connector?](https://support.syncfusion.com/kb/article/9995/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagram-sfdiagram)
 
-[`How to decide whether to drag or draw a connection on port at runtime?`](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram)
+[How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram)
 
-[`How to customize the context menu?`](https://support.syncfusion.com/kb/article/9270/how-to-customize-the-contextmenu-in-wpf-diagram-sfdiagram)
+[How to customize the context menu?](https://support.syncfusion.com/kb/article/9270/how-to-customize-the-contextmenu-in-wpf-diagram-sfdiagram)
 
-[`How to create port at runtime though SetTool?`](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
+[How to create port at runtime though SetTool?](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
 
 [How to customize the connection indicator style of node and port?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
 
