@@ -38,10 +38,10 @@ The following code sample demonstrates how to define the holidays.
                          ExcludeHolidays="False">
     <syncfusion:GanttControl.Holidays>
         <syncfusion:GanttHolidayCollection>
-            <syncfusion:GanttHoliday Day="6/10/2010" Background="CadetBlue"/>
-            <syncfusion:GanttHoliday Day="7/8/2010" Background="CadetBlue"/>
-            <syncfusion:GanttHoliday Day="8/3/2010" Background="CadetBlue"/>
-            <syncfusion:GanttHoliday Day="9/20/2010" Background="CadetBlue"/>
+            <syncfusion:GanttHoliday Day="6/10/2011" Background="CadetBlue"/>
+            <syncfusion:GanttHoliday Day="7/8/2011" Background="CadetBlue"/>
+            <syncfusion:GanttHoliday Day="8/3/2011" Background="CadetBlue"/>
+            <syncfusion:GanttHoliday Day="9/20/2011" Background="CadetBlue"/>
         </syncfusion:GanttHolidayCollection>
     </syncfusion:GanttControl.Holidays>
     <syncfusion:GanttControl.TaskAttributeMapping>
