@@ -96,7 +96,7 @@ public partial class MainWindow : Window
 
 The following screenshot illustrates the customized holidays sample.
 
-![Holiday customization sample](Holiday-Customization_images/Holiday-Customization_images_img1.png)
+![gantt-control-holiday-customization](Holiday-Customization_images/gantt-control-holiday-customization.png)
 
 
 You can download the holiday customization sample from the following link:
