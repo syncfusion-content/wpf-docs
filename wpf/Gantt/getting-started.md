@@ -120,7 +120,7 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
 
 GanttControl ganttControl = new GanttControl();
 ganttControl.ItemsSource = new ViewModel().TaskDetails;
-Content = ganttControl;
+this.Content = ganttControl;
 
 {% endhighlight  %}
 
