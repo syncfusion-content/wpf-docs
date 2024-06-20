@@ -34,98 +34,382 @@ DataTemplate</td></tr>
 
 The following code illustrates how to add a custom tooltip to the Gantt control.
 
+{% tabs %}
 {% highlight xaml %}
+<Window.DataContext>
+    <local:ViewModel/>
+</Window.DataContext>
+<Window.Resources>
+    <DataTemplate x:Key="toolTipTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="22" />
+                <RowDefinition Height="22" />
+                <RowDefinition Height="22" />
+                <RowDefinition Height="22" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+    <Border Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2">
+    <TextBlock Margin="5,0,0,0"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontFamily="Verdana"
+               FontWeight="Bold"
+               Text="{Binding Name}" />
+    </Border>
+    <TextBlock Grid.Row="1"
+               Grid.Column="0"
+               Margin="1"
+               VerticalAlignment="Center"
+               FontFamily="Verdana"
+               Text="TaskID:" />
+    <TextBlock Grid.Row="1"
+               Grid.Column="1"
+               Margin="1"
+               VerticalAlignment="Center"
+               FontFamily="Verdana"
+               Text="{Binding ID}" />
+    <TextBlock Grid.Row="2"
+               Grid.Column="0"
+               Margin="1"
+               VerticalAlignment="Center"
+               FontFamily="Verdana"
+               Text="Start Date:" />
+    <TextBlock Grid.Row="2"
+               Grid.Column="1"
+               Margin="1"
+               VerticalAlignment="Center"
+               FontFamily="Verdana"
+               Text="{Binding StartDate}" />
+    <TextBlock Grid.Row="3"
+               Grid.Column="0"
+               Margin="1"
+               VerticalAlignment="Center"
+               FontFamily="Verdana"
+               Text="Finish Date:" />
+    <TextBlock Grid.Row="3"
+               Grid.Column="1"
+               Margin="1"
+               VerticalAlignment="Center"
+               FontFamily="Verdana"
+               Text="{Binding EndDate}" />
+    <TextBlock Grid.Row="4"
+               Grid.Column="0"
+               Margin="1"
+               VerticalAlignment="Center"
+               FontFamily="Verdana"
+               Text="Progress:" />
+    <ProgressBar Grid.Row="4"
+                 Grid.Column="1"
+                 Height="15"
+                 Margin="1,1,2,2"
+                 VerticalAlignment="Center"
+                 Value="{Binding Progress}" />
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
 
-<DataTemplate x:Key="ToolTipTemp">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-        </Grid.RowDefinitions>
-        <Border Grid.Column="0"
-                Grid.Row="0" 
-                Margin="-2"
-                CornerRadius="5" 
-                Grid.ColumnSpan="2" 
-                Background="#FF1F4877"
-                BorderThickness="2">
-            <TextBlock Text="{Binding TaskName}"
-                       Margin="5,0,0,0"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center" 
-                       FontWeight="Bold"
-                       FontFamily="Verdana"
-                       Foreground="WhiteSmoke"/>
-        </Border>
-        <TextBlock Margin = "1"
-                   Text="TaskID:" 
-                   Grid.Column="0"
-                   Grid.Row="1" 
-                   VerticalAlignment="Center"
-                   FontFamily="Verdana"/>
-        
-        <TextBlock Margin="1" Text="{Binding TaskId}" 
-                   Grid.Column="1"
-                   VerticalAlignment="Center" 
-                   Grid.Row="1"
-                   FontFamily="Verdana"/>
-
-        <TextBlock Margin="1" Text="Start Date:" 
-                   Grid.Column="0"
-                   Grid.Row="2" 
-                   VerticalAlignment="Center"
-                   FontFamily="Verdana"/>
-
-        <TextBlock Margin="1" Text="{Binding StartDate}" 
-                   Grid.Row="2"
-                   Grid.Column="1" 
-                   VerticalAlignment="Center"
-                   FontFamily="Verdana"/>
-        
-        <TextBlock Margin="1" Text="Finish Date:"  
-                   Grid.Column="0"
-                   Grid.Row="3" 
-                   VerticalAlignment="Center"
-                   FontFamily="Verdana"/>
-
-        <TextBlock Margin="1" Text="{Binding FinishDate}" 
-                   Grid.Column="1"
-                   Grid.Row="3"
-                   VerticalAlignment="Center"
-                   FontFamily="Verdana"/>
-        
-        <TextBlock Margin="1" Text="Progress:" 
-                   Grid.Column="0"
-                   Grid.Row="4" 
-                   VerticalAlignment="Center" 
-                   FontFamily="Verdana"/>
-        
-        <ProgressBar Margin="1" Height="25" 
-                     Value="{Binding Progress}"
-                     Grid.Column="1" 
-                     VerticalAlignment="Center"
-                     Grid.Row="4"/>
-    </Grid>
-</DataTemplate>
-
-<Sync:GanttControl x:Name="Gantt" ToolTipTemplate="{StaticResource ToolTipTemp}"/>
+<syncfusion:GanttControl x:Name="ganttControl"
+                         ToolTipTemplate="{StaticResource toolTipTemplate}"
+                         ItemsSource="{Binding TaskCollection}">
+    <syncfusion:GanttControl.TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping ChildMapping="ChildCollection"
+                                         DurationMapping="Duration"
+                                         FinishDateMapping="EndDate"
+                                         PredecessorMapping="Predecessor"
+                                         ProgressMapping="Progress"
+                                         ResourceInfoMapping="Resource"
+                                         StartDateMapping="StartDate"
+                                         TaskIdMapping="ID"
+                                         TaskNameMapping="Name" />
+    </syncfusion:GanttControl.TaskAttributeMapping>
+</syncfusion:GanttControl>
 
 {% endhighlight  %}
+{% highlight c# tabtitle="Task.cs" %}
 
+public class Task : INotifyPropertyChanged
+{
+    /// <summary>
+    /// Holds the start date and end date value.
+    /// </summary>
+    private DateTime startDate, endDate;
+
+    /// <summary>
+    /// Holds the duration value.
+    /// </summary>
+    private TimeSpan duration;
+
+    /// <summary>
+    /// Holds the progress value.
+    /// </summary>
+    private double progress;
+
+    /// <summary>
+    /// Holds the id value.
+    /// </summary>
+    private int id;
+
+    /// <summary>
+    /// Holds the name value.
+    /// </summary>
+    private string name;
+
+    /// <summary>
+    /// Holds the collection value.
+    /// </summary>
+    private ObservableCollection<Task> childCollection;
+
+    /// <summary>
+    /// Holds the resource value.
+    /// </summary>
+    private ObservableCollection<Resource> resource;
+
+    /// <summary>
+    /// Holds the predecessor value.
+    /// </summary>
+    private ObservableCollection<Predecessor> predecessor;
+
+    public Task()
+    {
+        this.ChildCollection = new ObservableCollection<Task>();
+        this.Predecessor = new ObservableCollection<Predecessor>();
+        this.Resource = new ObservableCollection<Resource>();
+    }
+
+    /// <summary>
+    /// Property for Start Date.
+    /// </summary>
+    public DateTime StartDate
+    {
+        get
+        {
+            return this.startDate;
+        }
+        set
+        {
+            this.startDate = value;
+            OnPropertyChanged("StartDate");
+        }
+    }
+
+    /// <summary>
+    /// Property for Finish Date.
+    /// </summary>
+    public DateTime EndDate
+    {
+        get
+        {
+            return this.endDate;
+        }
+        set
+        {
+            this.endDate = value;
+            OnPropertyChanged("EndDate");
+        }
+    }
+
+    /// <summary>
+    /// Property for duration value.
+    /// </summary>
+    public TimeSpan Duration
+    {
+        get
+        {
+            return this.duration;
+        }
+        set
+        {
+            this.duration = value;
+            OnPropertyChanged("Duration");
+        }
+    }
+
+    /// <summary>
+    /// Property for ID value.
+    /// </summary>
+    public int ID
+    {
+        get
+        {
+            return this.id;
+        }
+        set
+        {
+            this.id = value;
+            OnPropertyChanged("ID");
+        }
+    }
+
+    /// <summary>
+    /// Property for Name.
+    /// </summary>
+    public string Name
+    {
+        get
+        {
+            return this.name;
+        }
+        set
+        {
+            this.name = value;
+            OnPropertyChanged("Name");
+        }
+    }
+
+    /// <summary>
+    /// Property to define progress value.
+    /// </summary>
+    public double Progress
+    {
+        get
+        {
+            return this.progress;
+        }
+        set
+        {
+            this.progress = value;
+            OnPropertyChanged("Progress");
+        }
+    }
+
+    /// <summary>
+    /// Property to add child collection.
+    /// </summary>
+    public ObservableCollection<Task> ChildCollection
+    {
+        get
+        {
+            return this.childCollection;
+        }
+        set
+        {
+            this.childCollection = value;
+            OnPropertyChanged("ChildCollection");
+        }
+    }
+
+    /// <summary>
+    /// Property to define resource value.
+    /// </summary>
+    public ObservableCollection<Resource> Resource
+    {
+        get
+        {
+            return this.resource;
+        }
+        set
+        {
+            this.resource = value;
+            OnPropertyChanged("Resource");
+        }
+    }
+
+    /// <summary>
+    /// Property to define predecessor value.
+    /// </summary>
+    public ObservableCollection<Predecessor> Predecessor
+    {
+        get
+        {
+            return this.predecessor;
+        }
+        set
+        {
+            this.predecessor = value;
+            OnPropertyChanged("Predecessor");
+        }
+    }
+
+    private void OnPropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(propName));
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+}
+
+{% endhighlight  %}
+{% highlight c# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    /// <summary>
+    /// Property to add task collection.
+    /// </summary>
+    public ObservableCollection<Task> TaskCollection { get; set; }
+
+    public ViewModel()
+    {
+        this.TaskCollection = this.GetDataSource();
+    }
+
+    /// <summary>
+    /// Method to get taskDetails source.
+    /// </summary>
+    private ObservableCollection<Task> GetDataSource()
+    {
+        var taskDetails = new ObservableCollection<Task>();
+        taskDetails.Add(new Task() { ID = 1, Name = "Scope", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 14), Progress = 40d, Resource = new ObservableCollection<Resource>() { new Resource() { Name = "John" } } });
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 2, Name = "Determine project office scope", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 3, Name = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 4, Name = "Secure executive sponsorship", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 5, Name = "Secure Progress", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
+
+        taskDetails.Add(new Task() { ID = 6, Name = "Risk Assessment", StartDate = new DateTime(2011, 7, 15), EndDate = new DateTime(2011, 7, 24), Resource = new ObservableCollection<Resource>() { new Resource() { Name = "DavID" } } });
+        taskDetails[1].ChildCollection.Add((new Task() { ID = 7, Name = "Perform risk assessment", StartDate = new DateTime(2011, 7, 15), EndDate = new DateTime(2011, 7, 21), Progress = 20d }));
+        taskDetails[1].ChildCollection.Add((new Task() { ID = 8, Name = "Evaluate risk assessment", StartDate = new DateTime(2011, 7, 21), EndDate = new DateTime(2011, 7, 23), Progress = 20d }));
+        taskDetails[1].ChildCollection.Add((new Task() { ID = 9, Name = "Prepare contingency plans", StartDate = new DateTime(2011, 7, 21), EndDate = new DateTime(2011, 7, 24), Progress = 20d }));
+        taskDetails[1].ChildCollection.Add((new Task() { ID = 10, Name = "Risk Assessment Progress", StartDate = new DateTime(2011, 7, 24), EndDate = new DateTime(2011, 7, 24), Progress = 30d }));
+
+        taskDetails.Add(new Task() { ID = 11, Name = "Monitoring", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 8, 6), Duration = new TimeSpan(1, 0, 0, 0) });
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 12, Name = "Prepare Meeting agenda", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 7, 26), Progress = 20d }));
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 13, Name = "Conduct review meeting", StartDate = new DateTime(2011, 7, 27), EndDate = new DateTime(2011, 7, 30), Progress = 20d }));
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 14, Name = "Migrate critical issues", StartDate = new DateTime(2011, 7, 31), EndDate = new DateTime(2011, 8, 2), Progress = 20d }));
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 15, Name = "Estabilish change mgmt Control", StartDate = new DateTime(2011, 8, 3), EndDate = new DateTime(2011, 8, 6), Progress = 30d }));
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 16, Name = "Monitoring Progress", StartDate = new DateTime(2011, 8, 6), EndDate = new DateTime(2011, 8, 6), Progress = 30d }));
+
+        taskDetails.Add(new Task() { ID = 17, Name = "Post Implementation", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 8, 12) });
+        taskDetails[3].ChildCollection.Add((new Task() { ID = 18, Name = "Obtain User feedback", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 7, 29), Progress = 20d }));
+        taskDetails[3].ChildCollection.Add((new Task() { ID = 19, Name = "Evaluate lessons learned", StartDate = new DateTime(2011, 7, 29), EndDate = new DateTime(2011, 8, 5), Progress = 20d }));
+        taskDetails[3].ChildCollection.Add((new Task() { ID = 20, Name = "Modify items as necessary", StartDate = new DateTime(2011, 8, 2), EndDate = new DateTime(2011, 8, 8), Progress = 20d }));
+        taskDetails[3].ChildCollection.Add((new Task() { ID = 21, Name = "Post Implementation Progress", StartDate = new DateTime(2011, 8, 8), EndDate = new DateTime(2011, 8, 12), Progress = 30d }));
+
+
+        taskDetails[0].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 2, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[0].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[0].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+
+        taskDetails[1].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 9, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[1].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 10, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[1].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 7, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+
+        taskDetails[2].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+        taskDetails[2].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+        taskDetails[2].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+
+        taskDetails[3].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[3].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        taskDetails[3].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 19, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+        return taskDetails;
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %}
 
 The following image shows Custom ToolTip:
 
-
-
-![CustomToolTip_img1](CustomToolTip_images/CustomToolTip_img1.png)
-
+![gantt-control-custom-tooltip](CustomToolTip_images/gantt-control-custom-tooltip.png)
 
 
 Custom ToolTip Demo
