@@ -422,9 +422,8 @@ In addition to that, new symbols can be added into the symbol groups or you can 
     </syncfusion:Stencil.SymbolGroups>
 </syncfusion:Stencil>
 {% endhighlight %}
-{% endtabs %}
 
-![SymbolGroupViewModel](SymbolGroup_images/SymbolGroupViewModel.PNG)
+![SymbolGroupViewModel](SymbolGroup_images/SymbolGroupViewModel.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolGroupViewModel/BasicSymbolGroupViewModel)
 
