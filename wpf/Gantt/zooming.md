@@ -35,20 +35,20 @@ To add the built-in zooming:
 
 <Slider x:Name="ZoomSlider" Minimum="80" Maximum="600" Value="100" Width="150" ValueChanged="slider_ValueChanged"/>
 
- <syncfusion:GanttControl x:Name="Gantt"
+ <syncfusion:GanttControl x:Name="ganttControl"
                           ItemsSource="{Binding TaskCollection}" 
                           UseOnDemandSchedule="True"
                           ZoomFactor="{Binding ElementName=ZoomSlider, Path=Value}">
      <syncfusion:GanttControl.TaskAttributeMapping>
-         <syncfusion:TaskAttributeMapping  TaskIdMapping="TaskId"
-                                   TaskNameMapping="TaskName"
-                                   StartDateMapping="StartDate"
-                                   ChildMapping="Child"
-                                   FinishDateMapping="FinishDate"
-                                   DurationMapping="Duration"
-                                   MileStoneMapping="IsMileStone"
-                                   PredecessorMapping="Predecessor"
-                                   ProgressMapping="Progress"/>
+         <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
+                                          TaskNameMapping="TaskName"
+                                          StartDateMapping="StartDate"
+                                          ChildMapping="Child"
+                                          FinishDateMapping="FinishDate"
+                                          DurationMapping="Duration"
+                                          MileStoneMapping="IsMileStone"
+                                          PredecessorMapping="Predecessor"
+                                          ProgressMapping="Progress"/>
      </syncfusion:GanttControl.TaskAttributeMapping>
      <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
@@ -60,9 +60,22 @@ To add the built-in zooming:
 {% highlight c# %}
 
 //Initializing Gantt
- GanttControl ganttControl = new GanttControl();
- ganttControl.ItemsSource = new ViewModel().TaskCollection;
- Content = ganttControl;
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
+this.ganttControl.UseOnDemandSchedule = true;
+
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "TaskId";
+taskAttributeMapping.TaskNameMapping = "TaskName";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "Child";
+taskAttributeMapping.FinishDateMapping = "FinishDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.MileStoneMapping = "IsMileStone";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 /// Defining the Slider
 Slider slider = new Slider();
@@ -236,7 +249,7 @@ To add custom zooming:
           ItemsSource="{Binding ZoomFactors}" 
           SelectedItem="{Binding ZoomFactor}"/>
 
- <syncfusion:GanttControl x:Name="Gantt"
+ <syncfusion:GanttControl x:Name="ganttControl"
                           ItemsSource="{Binding TaskCollection}" 
                           UseOnDemandSchedule="True"
                           ZoomFactor="{Binding ZoomFactor}"
@@ -261,10 +274,22 @@ To add custom zooming:
 {% highlight c# %}
 
 //Initializing Gantt
- GanttControl ganttControl = new GanttControl();
- ganttControl.ItemsSource = new ViewModel().TaskCollection;
- ganttControl.FlowDirection = System.Windows.FlowDirection.RightToLeft;
- Content = ganttControl;
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
+this.ganttControl.UseOnDemandSchedule = true;
+
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "TaskId";
+taskAttributeMapping.TaskNameMapping = "TaskName";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "Child";
+taskAttributeMapping.FinishDateMapping = "FinishDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.MileStoneMapping = "IsMileStone";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 private List<double> _zoomFactors  = new List<double> { 100d, 200d, 300d, 400d, 600d, 800d, 1000d };
 

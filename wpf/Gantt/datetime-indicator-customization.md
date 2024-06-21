@@ -65,7 +65,7 @@ The following code samples illustrate how to customize the DateTime indicator.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GanttControl x:Name="Gantt" Grid.Row="1"
+<syncfusion:GanttControl x:Name="ganttControl"
                          ItemsSource="{Binding TaskCollection}"
                          StickCurrentDateLineTo="Today">
     <syncfusion:GanttControl.CurrentDateLine>
@@ -74,15 +74,15 @@ The following code samples illustrate how to customize the DateTime indicator.
               StrokeThickness="2" />
     </syncfusion:GanttControl.CurrentDateLine>
     <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping  TaskIdMapping="TaskId"
-                                  TaskNameMapping="TaskName"
-                                  StartDateMapping="StartDate"
-                                  ChildMapping="Child"
-                                  FinishDateMapping="FinishDate"
-                                  DurationMapping="Duration"
-                                  MileStoneMapping="IsMileStone"
-                                  PredecessorMapping="Predecessor"
-                                  ProgressMapping="Progress"/>
+        <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
+                                         TaskNameMapping="TaskName"
+                                         StartDateMapping="StartDate"
+                                         ChildMapping="Child"
+                                         FinishDateMapping="FinishDate"
+                                         DurationMapping="Duration"
+                                         MileStoneMapping="IsMileStone"
+                                         PredecessorMapping="Predecessor"
+                                         ProgressMapping="Progress"  />
     </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
@@ -94,9 +94,22 @@ The following code samples illustrate how to customize the DateTime indicator.
 {% highlight c# %}
 
 //Initializing Gantt
- GanttControl ganttControl = new GanttControl();
- ganttControl.ItemsSource = new ViewModel().TaskCollection;
- Content = ganttControl;
+ this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
+ this.ganttControl.StickCurrentDateLineTo = CurentDateLinePositions.Today;
+
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "TaskId";
+taskAttributeMapping.TaskNameMapping = "TaskName";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "Child";
+taskAttributeMapping.FinishDateMapping = "FinishDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.MileStoneMapping = "IsMileStone";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 //StrokeDashArray will change the style of Line
 DoubleCollection strokeArray = new DoubleCollection();
@@ -212,7 +225,6 @@ this.Gantt.CurrentDateLine.StrokeThickness = 1;
         taskDetails[4].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 30, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
         taskDetails[4].Child[4].Predecessor.Add(new Predecessor() { GanttTaskIndex = 27, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
         return taskDetails;
-
     }
 }
 

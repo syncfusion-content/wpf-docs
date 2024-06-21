@@ -15,9 +15,9 @@ Gantt provides support to display the contents from right-to-left or left-to-rig
 
 {% highlight xaml %}
 
-<syncfusion:GanttControl x:Name="Gantt"
-                   FlowDirection="RightToLeft"
-                   ItemsSource="{Binding TaskCollection}">
+<syncfusion:GanttControl x:Name="ganttControl"
+                         FlowDirection="RightToLeft"
+                         ItemsSource="{Binding TaskCollection}">
     <syncfusion:GanttControl.TaskAttributeMapping>
         <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
                                          TaskNameMapping="TaskName"
@@ -40,10 +40,22 @@ Gantt provides support to display the contents from right-to-left or left-to-rig
 
 //Initializing Gantt
 
- GanttControl ganttControl = new GanttControl();
- ganttControl.ItemsSource = new ViewModel().TaskCollection;
- ganttControl.FlowDirection = System.Windows.FlowDirection.RightToLeft;
- Content = ganttControl;
+ this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
+ this.ganttControl.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "TaskId";
+taskAttributeMapping.TaskNameMapping = "TaskName";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "Child";
+taskAttributeMapping.FinishDateMapping = "FinishDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.MileStoneMapping = "IsMileStone";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight %}
 

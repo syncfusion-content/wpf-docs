@@ -87,7 +87,7 @@ The following code illustrates how to Import and Export Task Details from or to 
                  Content="Import From XML" />
 </StackPanel>
 
-<syncfusion:GanttControl x:Name="Gantt" 
+<syncfusion:GanttControl x:Name="ganttControl" 
                          ItemsSource="{Binding TaskCollection}">
     <syncfusion:GanttControl.TaskAttributeMapping>
              <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
@@ -132,12 +132,22 @@ private void Open_Click(object sender, System.Windows.RoutedEventArgs e)
 }
 
 //Initializing Gantt
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 
- //Initializing Gantt
- GanttControl ganttControl = new GanttControl();
- ganttControl.ItemsSource = new ViewModel().TaskCollection;
- Content = ganttControl;
-
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "TaskId";
+taskAttributeMapping.TaskNameMapping = "TaskName";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "Child";
+taskAttributeMapping.FinishDateMapping = "FinishDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.MileStoneMapping = "IsMileStone";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
+ 
  {% endhighlight  %}
 
  {% highlight c# tabtitle="ViewModel.cs" %}

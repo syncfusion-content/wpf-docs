@@ -234,10 +234,10 @@ The following code sample demonstrates how to bind the regular strip line collec
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GanttControl x:Name="Gantt"
-                   ShowStripLines="True"
-                   ItemsSource="{Binding TaskCollection}"
-                   StripLines="{Binding StripCollection}">
+<syncfusion:GanttControl x:Name="ganttControl"
+                         ShowStripLines="True"
+                         ItemsSource="{Binding TaskCollection}"
+                         StripLines="{Binding StripCollection}">
     <syncfusion:GanttControl.TaskAttributeMapping>
         <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
                                          TaskNameMapping="TaskName"
@@ -259,9 +259,22 @@ The following code sample demonstrates how to bind the regular strip line collec
 {% highlight c# %}
 
 //Initializing Gantt
- GanttControl ganttControl = new GanttControl();
- ganttControl.ItemsSource = new ViewModel().TaskCollection;
- Content = ganttControl;
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
+this.ganttControl.ShowStripLines = true;
+
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "TaskId";
+taskAttributeMapping.TaskNameMapping = "TaskName";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "Child";
+taskAttributeMapping.FinishDateMapping = "FinishDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.MileStoneMapping = "IsMileStone";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 StripCollection =  new List<StripLineInfo>();
 
@@ -414,7 +427,7 @@ The following code sample demonstrates how to bind the absolute strip line colle
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GanttControl x:Name="Gantt"
+<syncfusion:GanttControl x:Name="ganttControl"
                          ShowStripLines="True"
                          ItemsSource="{Binding TaskCollection}"
                          StripLines="{Binding StripCollection}">
@@ -439,9 +452,22 @@ The following code sample demonstrates how to bind the absolute strip line colle
 {% highlight c# %}
 
 //Initializing Gantt
- GanttControl ganttControl = new GanttControl();
- ganttControl.ItemsSource = new ViewModel().TaskCollection;
- Content = ganttControl;
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
+this.ganttControl.ShowStripLines = true;
+
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "TaskId";
+taskAttributeMapping.TaskNameMapping = "TaskName";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "Child";
+taskAttributeMapping.FinishDateMapping = "FinishDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.MileStoneMapping = "IsMileStone";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 StripCollection =  new List<StripLineInfo>();
 
