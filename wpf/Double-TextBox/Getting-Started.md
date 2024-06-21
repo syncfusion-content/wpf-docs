@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF Double TextBox control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Double TextBox control, its elements and more details.
-platform: WPF
+platform: wpf
 control: DoubleTextBox
 documentation: ug
 ---
@@ -21,7 +21,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF DoubleTextBox via designer
 
-You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
+You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.WPF
 
