@@ -2,7 +2,7 @@
 layout: post
 title: MVVM in WPF Button control | Syncfusion
 description: Learn here all about MVVM support in Syncfusion WPF Button (ButtonAdv) control, its elements and more details.
-platform: WPF
+platform: wpf
 control: ButtonAdv
 documentation: ug
 ---
@@ -11,8 +11,8 @@ documentation: ug
 
 The command and command parameter properties allow to execute any action on clicking the button control.
 
-* **Command** - The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
-* **CommandParameter** - The [CommandParameter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation. 
+* **Command** - The [Command](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
+* **CommandParameter** - The [CommandParameter](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation. 
 
 {% tabs %}
 {% highlight xaml %}
