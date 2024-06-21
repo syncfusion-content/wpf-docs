@@ -127,63 +127,60 @@ The following code illustrates adding Calendar Customization to an Application:
                                          PredecessorMapping="Predecessor"/>
     </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.DataContext>
-        <local:CalendarCustomizationViewModel/>
+        <local:ViewModel/>
     </syncfusion:GanttControl.DataContext>
 </syncfusion:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
 
-GanttControl ganttControl = new GanttControl();
-CalendarCustomizationViewModel viewModel = new CalendarCustomizationViewModel();
-ganttControl.DataContext = viewModel;
-ganttControl.ItemsSource = viewModel.TaskCollection;
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 
 //To set WeekBeginsOn
-ganttControl.WeekBeginsOn = DayOfWeek.Friday;
+this.ganttControl.WeekBeginsOn = DayOfWeek.Friday;
 
 //To set FY Numbering
-ganttControl.IsFiscalYearNumberingEnabled = true;
+this.ganttControl.IsFiscalYearNumberingEnabled = true;
 
 //To set FiscalYearBeginsOn
-ganttControl.FiscalYearBeginsOn = Month.June;
+this.ganttControl.FiscalYearBeginsOn = Month.June;
 
 //To set DefaultStartTime
-ganttControl.DefaultStartTime = new TimeSpan(10, 0, 0);
+this.ganttControl.DefaultStartTime = new TimeSpan(10, 0, 0);
 
 //To set DefaultEndTime
-ganttControl.DefaultEndTime = new TimeSpan(16, 0, 0);
+this.ganttControl.DefaultEndTime = new TimeSpan(16, 0, 0);
 
 //To set Weekends
-ganttControl.Weekends = Days.Wednesday | Days.Thursday;
+this.ganttControl.Weekends = Days.Wednesday | Days.Thursday;
 
 //To set ShowWeekends
-ganttControl.ShowWeekends = true;
+this.ganttControl.ShowWeekends = true;
 
 //To set ExcludeWeekends
-ganttControl.ExcludeWeekends = true;
+this.ganttControl.ExcludeWeekends = true;
 
 //To set ShowNonWorkingHoursBackground
-ganttControl.ShowNonWorkingHoursBackground = true;
+this.ganttControl.ShowNonWorkingHoursBackground = true;
 
 // Task attribute mapping
-TaskAttributeMapping attributes = new TaskAttributeMapping();
-attributes.TaskNameMapping = "TaskName";
-attributes.TaskIdMapping = "TaskId";
-attributes.StartDateMapping = "StartDate";
-attributes.ChildMapping = "Child";
-attributes.FinishDateMapping = "FinishDate";
-attributes.DurationMapping = "Duration";
-attributes.ProgressMapping = "Progress";
-attributes.MileStoneMapping = "IsMileStone";
-attributes.PredecessorMapping = "Predecessor";
-ganttControl.TaskAttributeMapping = attributes;
-this.Content = ganttControl;
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "TaskId";
+taskAttributeMapping.TaskNameMapping = "TaskName";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "Child";
+taskAttributeMapping.FinishDateMapping = "FinishDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+taskAttributeMapping.MileStoneMapping = "IsMileStone";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight  %}
-{% highlight c# tabtitle="CalendarCustomizationViewModel.cs" %}
+{% highlight c# tabtitle="ViewModel.cs" %}
  
-public class CalendarCustomizationViewModel
+public class ViewModel
 {
     /// <summary>
     /// Holds the collection value.
@@ -254,11 +251,24 @@ public class CalendarCustomizationViewModel
         }
     }
 
+    /// <summary>
+    /// Gets or sets the show holidays collection.
+    /// </summary>
     public string[] ShowHolidaysCollection { get; set; }
+
+    /// <summary>
+    /// Gets or sets the exclude holidays collection.
+    /// </summary>
     public string[] ExcludeHolidaysCollection { get; set; }
 
+    /// <summary>
+    /// Gets or sets the show weekend collection.
+    /// </summary>
     public string[] ShowWeekendsCollection { get; set; }
 
+    /// <summary>
+    /// Gets or sets the exclude weekend collection.
+    /// </summary>
     public string[] ExcludeWeekendsCollection { get; set; }
 
     /// <summary>
@@ -270,7 +280,7 @@ public class CalendarCustomizationViewModel
     /// <summary>
     /// Initializes a new instance of the <see cref="ViewModel"/> class.
     /// </summary>
-    public CalendarCustomizationViewModel()
+    public ViewModel()
     {
         _taskCollection = GetData();
         ExcludeWeekendsCollection = ShowWeekendsCollection = ExcludeHolidaysCollection = ShowHolidaysCollection = FYNumbering = new string[] { "True", "False" };

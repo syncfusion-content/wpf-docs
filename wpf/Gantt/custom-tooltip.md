@@ -119,19 +119,42 @@ The following code illustrates how to add a custom tooltip to the Gantt control.
                          ToolTipTemplate="{StaticResource toolTipTemplate}"
                          ItemsSource="{Binding TaskCollection}">
     <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping ChildMapping="ChildCollection"
-                                         DurationMapping="Duration"
-                                         FinishDateMapping="EndDate"
-                                         PredecessorMapping="Predecessor"
-                                         ProgressMapping="Progress"
-                                         ResourceInfoMapping="Resource"
+        <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
+                                         TaskNameMapping="Name"
                                          StartDateMapping="StartDate"
-                                         TaskIdMapping="ID"
-                                         TaskNameMapping="Name" />
+                                         ChildMapping="ChildCollection"
+                                         FinishDateMapping="EndDate"
+                                         DurationMapping="Duration"
+                                         ProgressMapping="Progress"
+                                         PredecessorMapping="Predecessor"
+                                         ResourceInfoMapping="Resource" />
     </syncfusion:GanttControl.TaskAttributeMapping>
+    <syncfusion:GanttControl.DataContext>
+        <local:ViewModel/>
+    </syncfusion:GanttControl.DataContext>
 </syncfusion:GanttControl>
 
 {% endhighlight  %}
+
+{% highlight c# %}
+
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
+
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "ID";
+taskAttributeMapping.TaskNameMapping = "Name";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
+
+{% endhighlight  %}
+
 {% highlight c# tabtitle="Task.cs" %}
 
 public class Task : INotifyPropertyChanged
@@ -184,7 +207,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for Start Date.
+    /// Gets or sets the start date.
     /// </summary>
     public DateTime StartDate
     {
@@ -200,7 +223,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for Finish Date.
+    /// Gets or sets the finish date.
     /// </summary>
     public DateTime EndDate
     {
@@ -216,7 +239,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for duration value.
+    /// Gets or sets the duration value.
     /// </summary>
     public TimeSpan Duration
     {
@@ -232,7 +255,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for ID value.
+    /// Gets or sets the ID value.
     /// </summary>
     public int ID
     {
@@ -248,7 +271,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property for Name.
+    /// Gets or sets the Name.
     /// </summary>
     public string Name
     {
@@ -264,7 +287,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to define progress value.
+    /// Gets or sets the progress value.
     /// </summary>
     public double Progress
     {
@@ -280,7 +303,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to add child collection.
+    /// Gets or sets the child collection.
     /// </summary>
     public ObservableCollection<Task> ChildCollection
     {
@@ -296,7 +319,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to define resource value.
+    /// Gets or sets the resource value.
     /// </summary>
     public ObservableCollection<Resource> Resource
     {
@@ -312,7 +335,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Property to define predecessor value.
+    /// Gets or sets the predecessor value.
     /// </summary>
     public ObservableCollection<Predecessor> Predecessor
     {
@@ -327,6 +350,9 @@ public class Task : INotifyPropertyChanged
         }
     }
 
+    /// <summary>
+    /// Method for property changed.
+    /// </summary>
     private void OnPropertyChanged(string propName)
     {
         if (this.PropertyChanged != null)
@@ -344,7 +370,7 @@ public class Task : INotifyPropertyChanged
 public class ViewModel
 {
     /// <summary>
-    /// Property to add task collection.
+    /// Gets or sets the task collection.
     /// </summary>
     public ObservableCollection<Task> TaskCollection { get; set; }
 
