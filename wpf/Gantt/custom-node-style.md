@@ -53,11 +53,7 @@ MileStone</td></tr>
 {% tabs %}
 {% highlight xaml %}
 
-<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:gantt="http://schemas.syncfusion.com/wpf"
-                    xmlns:chart="clr-namespace:Syncfusion.Windows.Controls.Gantt;assembly=Syncfusion.Gantt.Wpf" >
-
+    <!-- Resources -->
     <!-- Header Node style-->
     <Style TargetType="chart:HeaderNode">
         <Setter Property="MaxHeight" Value="24"/>
@@ -243,7 +239,6 @@ MileStone</td></tr>
             </Setter.Value>
         </Setter>
     </Style>
-</ResourceDictionary>
 
 <syncfusion:GanttControl x:Name="ganttControl"
                          ItemsSource="{Binding TaskCollection}">

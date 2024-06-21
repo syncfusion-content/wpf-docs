@@ -546,8 +546,8 @@ public class ViewModel
 
     public ViewModel()
     {
-        _items = GetData();
-        _customScheduleInfo = GetCustomScheduleInfo();
+        this._items = GetData();
+        this._customScheduleInfo = GetCustomScheduleInfo();
     }
 
     /// <summary>
@@ -901,24 +901,31 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
     /// <summary>
     /// Holds the name value.
     /// </summary>
-    string _Name;
+    string _name;
 
     /// <summary>
     /// Holds the start date value.
     /// </summary>
-    DateTime _StartDate;
+    DateTime _startDate;
 
     /// <summary>
     /// Holds the end date value.
     /// </summary>
-    DateTime _FinishDate;
+    DateTime _finishDate;
 
     /// <summary>
     /// Holds the progress value.
     /// </summary>
     double _progress;
 
+    /// <summary>
+    /// Holds the sub items.
+    /// </summary>
      ObservableCollection<Item> _subItems = new ObservableCollection<Item>();
+
+    /// <summary>
+    /// Holds the inline items.
+    /// </summary>
      ObservableCollection<Item> _inLineItems = new ObservableCollection<Item>();
 
      /// <summary>
@@ -926,8 +933,8 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      /// </summary>
      public Item()
      {
-         _subItems.CollectionChanged += ItemsCollectionChanged;
-         _inLineItems.CollectionChanged += ItemsCollectionChanged;
+        _subItems.CollectionChanged += ItemsCollectionChanged;
+        _inLineItems.CollectionChanged += ItemsCollectionChanged;
      }
 
      /// <summary>
@@ -938,11 +945,11 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      {
          get
          {
-             return _Name;
+             return this._name;
          }
          set
          {
-             _Name = value;
+             this._name = value;
              RaisePropertyChanged("Name");
          }
      }
@@ -956,11 +963,11 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      {
          get
          {
-             return _StartDate;
+             return this._startDate;
          }
          set
          {
-             _StartDate = value;
+             this._startDate = value;
              RaisePropertyChanged("StartDate");
          }
      }
@@ -973,11 +980,11 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      {
          get
          {
-             return _FinishDate;
+             return this._finishDate;
          }
          set
          {
-             _FinishDate = value;
+             this._finishDate = value;
              RaisePropertyChanged("FinishDate");
          }
      }
@@ -990,11 +997,11 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      {
          get
          {
-             return Math.Round(_progress, 2);
+             return Math.Round(this._progress, 2);
          }
          set
          {
-             _progress = value;
+             this._progress = value;
              RaisePropertyChanged("Progress");
          }
      }
@@ -1007,17 +1014,17 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      {
          get
          {
-             return _subItems;
+             return this._subItems;
          }
          set
          {
-             _subItems = value;
+             this._subItems = value;
 
-             _subItems.CollectionChanged += ItemsCollectionChanged;
+             this._subItems.CollectionChanged += ItemsCollectionChanged;
 
              if (value.Count > 0)
              {
-                 _subItems.ToList().ForEach(n =>
+                 this._subItems.ToList().ForEach(n =>
                  {
                      /// To listen the changes occuring in child task.
                      n.PropertyChanged += ItemPropertyChanged;
@@ -1037,17 +1044,17 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      {
          get
          {
-             return _inLineItems;
+             return this._inLineItems;
          }
          set
          {
-             _inLineItems = value;
+             this._inLineItems = value;
 
-             _inLineItems.CollectionChanged += ItemsCollectionChanged;
+             this._inLineItems.CollectionChanged += ItemsCollectionChanged;
 
              if (value.Count > 0)
              {
-                 _inLineItems.ToList().ForEach(n =>
+                 this._inLineItems.ToList().ForEach(n =>
                  {
                      /// To listen the changes occuring in child task.
                      n.PropertyChanged += ItemPropertyChanged;

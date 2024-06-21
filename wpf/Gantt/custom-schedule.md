@@ -448,19 +448,6 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
      }
      #endregion
-
-     internal void Dispose()
-     {
-         if (CountryNamesandFlags != null && CountryNamesandFlags.Count > 0)
-         {
-             CountryNamesandFlags.Clear();
-         }
-
-         foreach(var topCountry in TopCountriesCollection)
-         {
-             topCountry.Dispose();
-         }
-     }
  }
 
 {% endhighlight  %}
