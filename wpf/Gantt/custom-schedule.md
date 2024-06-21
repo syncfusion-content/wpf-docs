@@ -135,8 +135,11 @@ The following code illustrates Adding Custom Schedule to an Application:
 
 {% tabs  %}
 {% highlight xaml %}
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:gantt="http://schemas.syncfusion.com/wpf"
+                    xmlns:chart="clr-namespace:Syncfusion.Windows.Controls.Gantt;assembly=Syncfusion.Gantt.Wpf" >
 
-<!--Resource-->
 <!--Gantt node style-->
  <Style x:Key="TopCountriesNode" TargetType="{x:Type gantt:GanttNode}">
      <Setter Property="Template">
@@ -241,6 +244,7 @@ The following code illustrates Adding Custom Schedule to an Application:
          </Setter.Value>
      </Setter>
  </Style>
+ </ResourceDictionary>
 
 <syncfusion:GanttControl x:Name="ganttControl"
                          CustomScheduleSource="{Binding CustomScheduleInfo}"
@@ -257,10 +261,7 @@ The following code illustrates Adding Custom Schedule to an Application:
                                          ResourceInfoMapping="Resource">
         </syncfusion:TaskAttributeMapping>
     </syncfusion:GanttControl.TaskAttributeMapping>
- <gantt:GanttControl.Resources>
-     <Style BasedOn="{StaticResource TopCountriesNode}" TargetType="gantt:GanttNode" />
-     <Style BasedOn="{StaticResource MileStone}" TargetType="gantt:MileStone" />
- </gantt:GanttControl.Resources>
+ 
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
     </syncfusion:GanttControl.DataContext>
@@ -469,7 +470,7 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 The following image shows Custom Schedule:
 
-![gantt-control-custom-datetime-schedule](Custom-Schedule_images/gantt-control-custom-datetime-schedule.png)
+![gantt-control-custom-numeric-schedule](Custom-Schedule_images/gantt-control-custom-numeric-schedule.png)
 
 Custom Schedule
 {:.caption}
@@ -911,7 +912,7 @@ public class ViewModel
 
 The following image shows Custom DateTime Schedule:
 
-![gantt-control-custom-schedule](Custom-Schedule_images/gantt-control-custom-schedule.png)
+![gantt-control-custom-datetime-schedule](Custom-Schedule_images/gantt-control-custom-datetime-schedule.png)
 
 Custom DateTime Schedule
 {:.caption}
