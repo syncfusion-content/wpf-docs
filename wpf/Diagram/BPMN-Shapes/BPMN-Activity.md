@@ -219,7 +219,7 @@ The following table contains various types of BPMN loops.
 
 ### Compensation
 
-Compensation is triggered when the operation is partially failed and enabled it with the compensation property in both task and the collapsed subprocess. To create a compensation, you have to enable the [IsCompensationActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCompensationActivity) property of the BpmnNodeViewModel. By default, the IsCompensationActivity property is false.
+Compensation is triggered when the operation is partially failed and enabled it with the compensation property in both task and the collapsed subprocess. To create a compensation, you have to enable the [`IsCompensationActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCompensationActivity) property of the BpmnNodeViewModel. By default, the `IsCompensationActivity` property is false.
 
 
 {% tabs %}
@@ -265,7 +265,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ### Call
 
-A Call activity is a global sub-process that is reused at various points of the business flow. To create a Call activity, you have to enable the [IsCallActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCallActivity) property of the BpmnNodeViewModel. By default, the IsCallActivity property is false.
+A Call activity is a global sub-process that is reused at various points of the business flow. To create a Call activity, you have to enable the [`IsCallActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCallActivity) property of the BpmnNodeViewModel. By default, the `IsCallActivity` property is false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -310,7 +310,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ### Ad-Hoc
 
-An ad-hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition. To create a ad-hoc activity, you have to enable the [`IsAdhocActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsAdhocActivity) property of the BpmnNodeViewModel. By default, the IsAdhocActivity property is false.
+An ad-hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition. To create a ad-hoc activity, you have to enable the [`IsAdhocActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsAdhocActivity) property of the BpmnNodeViewModel. By default, the `IsAdhocActivity` property is false.
 
 
 {% tabs %}
