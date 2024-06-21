@@ -19,7 +19,7 @@ A node can be created and added to the Diagram, either programmatically or inter
 
 ### Add Node through Nodes collection 
 
-To create a node, you have to define the [`node object`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) and add that to [`nodes`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Nodes) collection of the Diagram.
+To create a node, you have to define the [`node object`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) and add that to [`Nodes`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Nodes) collection of the Diagram.
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,7 +88,7 @@ Now, node will be as follows.
 
 ### Add node from stencil
 
-Nodes can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to the [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil).
+Nodes can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from `Stencil`, refer to the [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil).
 
 ### Create node through data source
 
@@ -101,14 +101,14 @@ Nodes can be drawn interactively by clicking and dragging the Diagram surface by
 ## Visualize a node
 
 You can use text, image, controls, panels, or any UIElement or template to visualize a node as follows:
-   1)Content template
-   2)Content 
-   3)Geometry
-   4)Custom shapes
-   5)Built-in resource
+   1) Content template
+   2) Content 
+   3) Geometry
+   4) Custom shapes
+   5) Built-in resource
 
 ### Using content template
-[`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) is a ContentControl, so you can use data template to display the content of the node using the [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) property. Refer to the following code example to define node's shape through ContentTemplate.
+[`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) is a `ContentControl`, so you can use `DataTemplate` to display the content of the node using the [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) property. Refer to the following code example to define node's shape through `ContentTemplate`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -147,7 +147,7 @@ NodeViewModel node = new NodeViewModel()
 
 ### Using content
 
-[`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) is a ContentControl, so you can set text, image, or any UIElement as node content using the [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Content) property. Refer to the following code example to define image as content of the node.
+[`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) is a `ContentControl`, so you can set text, image, or any UIElement as node content using the [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Content) property. Refer to the following code example to define image as content of the `Node`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ NodeViewModel node = new NodeViewModel()
 
 ### Using geometry
 
-The [`Shape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Shape) property of the node class allows to visualize any geometry path as node's content. Refer to the following code example to define geometry for node's shape.
+The [`Shape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Shape) property of the `Node` class allows to visualize any geometry path as node's content. Refer to the following code example to define geometry for node's shape.
 
 {% tabs %}
 {% highlight xaml %}
@@ -240,7 +240,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-### Custom shapes
+### Custom shapes 
 
 #### How to add custom shape using path data
 
@@ -393,18 +393,14 @@ Refer to the following code example to add framework elements as node content,
 {% highlight xaml %}
 
 <DataTemplate x:Key="UserProfile">
-  <Border  BorderThickness="1" Background ="#2E95D8" 
-                    BorderBrush="LightGray">
+  <Border  BorderThickness="1" Background ="#2E95D8" BorderBrush="LightGray">
     <Grid>
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="60" />
         <ColumnDefinition Width="100" />
       </Grid.ColumnDefinitions>
       <Grid Grid.Column="0">
-        <Border Grid.Column="0" VerticalAlignment="Stretch"
-                            Background="Transparent"
-                            BorderBrush="#FF5DC3B1"
-                            Padding="5">
+        <Border Grid.Column="0" VerticalAlignment="Stretch" Background="Transparent" BorderBrush="#FF5DC3B1" Padding="5">
           <Image Stretch="Uniform" HorizontalAlignment="Center" Source="Images\User.png"/>
         </Border>
       </Grid>
@@ -414,23 +410,23 @@ Refer to the following code example to add framework elements as node content,
           <RowDefinition Height="25" />
         </Grid.RowDefinitions>
         <TextBlock x:Name="Name" Grid.Row="0"
-                               HorizontalAlignment="Left"
-                               VerticalAlignment="Center"
-                               FontFamily="Segoe UI"
-                               FontSize="12"
-                               FontWeight="Bold"
-                               Foreground="White"
-                               Text="Daniel Tonini"
-                               TextAlignment="Left" />
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   FontFamily="Segoe UI"
+                   FontSize="12"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Text="Daniel Tonini"
+                   TextAlignment="Left" />
         <TextBlock x:Name="Designation" Grid.Row="1"
-                               HorizontalAlignment="Left"
-                               VerticalAlignment="Top"
-                               FontFamily="Segoe UI"
-                               FontSize="11"
-                               FontWeight="SemiBold"
-                               Foreground="White"
-                               Text="Project Lead"
-                               TextAlignment="Left" />
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   FontFamily="Segoe UI"
+                   FontSize="11"
+                   FontWeight="SemiBold"
+                   Foreground="White"
+                   Text="Project Lead"
+                   TextAlignment="Left" />
       </Grid>
     </Grid>
   </Border>
@@ -445,7 +441,7 @@ Refer to the following code example to add framework elements as node content,
       <syncfusion:NodeViewModel UnitWidth="150" UnitHeight="50" OffsetX="100" OffsetY="100" ContentTemplate="{StaticResource UserProfile}" />
     </syncfusion:NodeCollection>
   </syncfusion:SfDiagram.Nodes>
-</syncfusion:SfDiagram>  
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
@@ -478,9 +474,9 @@ Some basic built-in shapes are provided as ResourceDictionary. For more informat
 
 ## Position
 
-Position of a node is controlled by using its [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetY) properties. By default, these Offset properties represent the distance between origin of the diagram’s page and node’s center point. You may expect this Offset values to represent the distance between page origin and node’s top left corner instead of center. The [`Pivot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_Pivot) property helps solve this problem. Default value of node’s pivot point is (0.5, 0.5), that means center of node.
+Position of a node is controlled by using its [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetY) properties. By default, these `Offset` properties represent the distance between origin of the diagram’s page and node’s center point. You may expect this Offset values to represent the distance between page origin and node’s top left corner instead of center. The [`Pivot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_Pivot) property helps solve this problem. Default value of node’s pivot point is (0.5, 0.5), that means center of node.
 
-The following table explains how pivot relates Offset values with node boundaries:
+The following table explains how `Pivot` relates `Offset` values with `Node` boundaries:
 
 | Pivot | Offset |
 |---|---|
@@ -525,11 +521,11 @@ NodeViewModel node = new NodeViewModel()
 
 Diagram provides support to flip the node.[`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_Flip) is performed to give the mirrored node of the original element.
 The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) types are:
-* Flip
+* **Flip**
  `Flip` that involves both vertical and horizontal changes of the element. 
-* VerticalFlip
+* **VerticalFlip**
  `VerticalFlip` that involves changes in the vertical direction of the element.
-* HorizontalFlip
+* **HorizontalFlip**
  `HorizontalFlip` that involves changes in the horizontal direction of the element.
 
 {% tabs %}
@@ -569,7 +565,7 @@ The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.
 
 ## Padding
 
-Padding is used to leave space between the connector’s end point and the object to where it is connected. The [`ConnectorPadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_ConnectorPadding) property of node defines the space to be left between the node bounds and its edges.
+`Padding` is used to leave space between the connector’s end point and the object to where it is connected. The [`ConnectorPadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_ConnectorPadding) property of `Node` defines the space to be left between the node bounds and its edges.
 
 {% tabs %}
 {% highlight xaml %}
@@ -717,9 +713,9 @@ To explore about selection and selection related events, refer to the [Selection
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
 * The node is rotated with reference to the static pivot point.
-* Pivot thumb (thumb at the middle of the Node) appears when rotating the node to represent the static point. For more information about pivot, refer to [`Position`](https://help.syncfusion.com/wpf/diagram/node#position)
+* `Pivot` thumb (thumb at the middle of the Node) appears when rotating the node to represent the static point. For more information about pivot, refer to [`Position`](https://help.syncfusion.com/wpf/diagram/node#position)
 
-* The [`NodeChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_NodeChangedEvent) will notify the [`RotateAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_RotateAngle) changes with their old and new values. Along with that, this event will give information about iteraction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* The [`NodeChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_NodeChangedEvent) will notify the [`RotateAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_RotateAngle) changes with their old and new values. Along with that, this event will give information about interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![WPF Diagram Rotate Node](Node_images/wpf-diagram-rotate-node.gif)
 
@@ -727,8 +723,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * The [`ItemTappedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemTappedEvent) is invoked on clicking the node. To explore about arguments, refer to the [ItemTappedEventargs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
 * The [`ItemDoubleTappedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemDoubleTappedEvent) is invoked on double-clicking the node. To explore about arguments, refer to the [ItemDoubleTappedEventargs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
-* The [`MouseDown`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_MouseDown) and [`MouseUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_MouseUp) are invoked as similar to framework element that is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, refer to the [MouseDownEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
-[MouseUpEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).  
+* The [`MouseDown`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_MouseDown) and [`MouseUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_MouseUp) are invoked as similar to framework element that is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, refer to the [MouseDownEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and [MouseUpEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).  
 
 ## Constraints
 

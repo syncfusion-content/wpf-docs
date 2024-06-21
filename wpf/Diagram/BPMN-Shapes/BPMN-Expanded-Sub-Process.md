@@ -54,7 +54,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   IsExpandedSubProcess = true
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -144,7 +144,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 // Add the connector into the Connector's collection.
 (group.Connectors as ConnectorCollection).Add(flow);
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -153,7 +153,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ## Add ExpandedSubProcess from stencil
 
-The ExpandedSubProcess can be predefined and added to the stencil and can be dropped into the diagram when needed. For more information about adding nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil") and [BPMN-Shapes-Palette](/wpf/sfdiagram/BPMN-Shapes/BPMN-Shapes-Palette "BPMN-Shapes-Palette").
+The ExpandedSubProcess can be predefined and added to the stencil and can be dropped into the diagram when needed. For more information about adding nodes from Stencil, refer to the [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil "Stencil") and [BPMN-Shapes-Palette](https://help.syncfusion.com/wpf/diagram/bpmn-shapes/bpmn-shapes-palette "BPMN-Shapes-Palette").
 
 ## Add BPMN Nodes/Groups into BPMN ExpandedSubProcess at runtime
 You can add BPMN Nodes or Groups into the BPMN ExpandedSubProcess at runtime in two ways.
@@ -212,7 +212,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   LoopActivity = LoopCharacteristic.Standard
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -270,7 +270,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   IsCompensationActivity = true
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -320,7 +320,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   IsAdhocActivity = true
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}
@@ -367,7 +367,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   SubProcessType = SubProcessType.Event
  };
  // Add the group into the Group's collection.
-(Diagram.Groups as GroupCollection).Add(group);
+(diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
 {%  endtabs %}

@@ -17,13 +17,13 @@ Gantt control is composed of three controls. They are:
 * ScheduleHeader  
 * GanttChartVisualControl
 
-![WPF Gantt appearance and structure](Getting-Started_images/Getting-Started_img1.png)
+![gantt-control-appearance-and-structure](Getting-Started_images/gantt-control-appearance-and-structure.png)
 
 #### Gantt grid
 
 Gantt Grid is a table view control which displays the scheduled tasks/activities of the project with its hierarchy. You can edit the fields of the bounded tasks using this grid.
 
-![WPF Gantt grid allotment](Getting-Started_images/Getting-Started_img2.png)
+![gantt-control-gantt-grid](Getting-Started_images/gantt-control-gantt-grid.png)
 
 * Header— Header represents the table header which contains the field name of the task.
 * Parent Task—Parent task represents the summary of the child tasks. This is an activity which will be further split into various child tasks.
@@ -34,7 +34,7 @@ Gantt Grid is a table view control which displays the scheduled tasks/activities
 
 Gantt Chart is an items control which provides a graphically representation of the task/activity that are currently scheduled. Gantt Chart have different components to represent the type of Task, Progress of the Task and Relationship between Tasks.
 
-![WPF Gantt chart allotment](Getting-Started_images/Getting-Started_img3.png)
+![gantt-control-gantt-chart](Getting-Started_images/gantt-control-gantt-chart.png)
 
 * Node— Node represents an individual or child task.
 * Header Node—HeaderNode represents the parent or summary task of the projects.
@@ -88,16 +88,10 @@ You can add Gantt control to the application using the following code:
 {% tabs %}
 
 {% highlight xaml %}
-
-<Sync:GanttControl x:Name="Gantt" />
-
+<syncfusion:GanttControl x:Name="ganttControl" />
 {% endhighlight %}
-
 {% highlight c# %}
-
- //Initializing Gantt
- GanttControl Gantt = new GanttControl();
-
+GanttControl ganttControl = new GanttControl();
 {% endhighlight  %}
 
 {% endtabs %}
@@ -113,99 +107,93 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
 
 {% highlight xaml %}
 
-<Sync:GanttControl ItemsSource="{Binding TaskCollection}">
-    <Sync:GanttControl.DataContext>
-        <local:ViewModel></local:ViewModel>
-    </Sync:GanttControl.DataContext>
-</Sync:GanttControl>
+<syncfusion:GanttControl x:Name="ganttControl" 
+                         ItemsSource="{Binding TaskDetails}">
+    <syncfusion:GanttControl.DataContext>
+        <local:ViewModel/>
+    </syncfusion:GanttControl.DataContext>
+</syncfusion:GanttControl>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- //Initializing Gantt
-GanttControl Gantt = new GanttControl();
-ViewModel model=  new ViewModel();
-this.Gantt.DataContext = model;
-Gantt.ItemsSource = model.GanttItemSource;
+GanttControl ganttControl = new GanttControl();
+ganttControl.ItemsSource = new ViewModel().TaskDetails;
+this.Content = ganttControl;
 
 {% endhighlight  %}
 
-{% endtabs %}
-
-{% highlight c# %}
-
-[C#]
+{% highlight c# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
 {
-    public ObservableCollection<TaskDetails> TaskCollection { get; set; }
     public ViewModel()
     {
-        TaskCollection = this.GetDataSource();
+        taskDetails = this.GetTaskDetails();
     }
-    
-    private ObservableCollection<TaskDetails> GetDataSource()
+
+    private ObservableCollection<TaskDetails> taskDetails;
+
+    /// <summary>
+    /// Gets or sets the task collection.
+    /// </summary>
+    /// <value>The task collection.</value>
+    public ObservableCollection<TaskDetails> TaskDetails
     {
-        ObservableCollection<TaskDetails> task = new ObservableCollection<TaskDetails>();
-        task.Add(
-            new TaskDetails
-                {
-                    TaskId = 1,
-                    TaskName = "Scope",
-                    StartDate = new DateTime(2011, 1, 3),
-                    FinishDate = new DateTime(2011, 1, 14),
-                    Progress = 40d
-                });
+        get
+        {
+            return taskDetails;
+        }
+        set
+        {
+            taskDetails = value;
+        }
+    }
 
-        task[0].Child.Add(
-            new TaskDetails
-                {
-                    TaskId = 2,
-                    TaskName = "Determine project office scope",
-                    StartDate = new DateTime(2011, 1, 3),
-                    FinishDate = new DateTime(2011, 1, 5),
-                    Progress = 20d
-                });
+    /// <summary>
+    /// Gets the task details.
+    /// </summary>
+    /// <returns></returns>
+    ObservableCollection<TaskDetails> GetTaskDetails()
+    {
+        ObservableCollection<TaskDetails> taskDetails = new ObservableCollection<TaskDetails>();
 
-        task[0].Child.Add(
-            new TaskDetails
-                {
-                    TaskId = 3,
-                    TaskName = "Justify project office via business model",
-                    StartDate = new DateTime(2011, 1, 6),
-                    FinishDate = new DateTime(2011, 1, 7),
-                    Duration = new TimeSpan(1, 0, 0, 0),
-                    Progress = 20d
-                });
+        taskDetails.Add(new TaskDetails { TaskId = 1, TaskName = "Scope", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 40d });
+        taskDetails[0].Child.Add(new TaskDetails { TaskId = 2, TaskName = "Determine project office scope", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 5), Progress = 20d });
+        taskDetails[0].Child.Add(new TaskDetails { TaskId = 3, TaskName = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 7), Progress = 20d });
+        taskDetails[0].Child.Add(new TaskDetails { TaskId = 4, TaskName = "Secure executive sponsorship", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
+        taskDetails[0].Child.Add(new TaskDetails { TaskId = 5, TaskName = "Secure complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
 
-        task[0].Child.Add(
-            new TaskDetails
-                {
-                    TaskId = 4,
-                    TaskName = "Secure executive sponsorship",
-                    StartDate = new DateTime(2011, 1, 10),
-                    FinishDate = new DateTime(2011, 1, 14),
-                    Duration = new TimeSpan(1, 0, 0, 0),
-                    Progress = 20d
-                });
+        taskDetails.Add(new TaskDetails { TaskId = 6, TaskName = "Risk Assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
 
-        task[0].Child.Add(
-            new TaskDetails
-                {
-                    TaskId = 5,
-                    TaskName = "Secure complete",
-                    StartDate = new DateTime(2011, 1, 14),
-                    FinishDate = new DateTime(2011, 1, 14),
-                    Duration = new TimeSpan(1, 0, 0, 0),
-                    Progress = 20d
-                });
+        taskDetails[1].Child.Add(new TaskDetails { TaskId = 7, TaskName = "Perform risk assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 21), Progress = 20d });
+        taskDetails[1].Child.Add(new TaskDetails { TaskId = 8, TaskName = "Evaluate risk assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 23), Progress = 30d });
+        taskDetails[1].Child.Add(new TaskDetails { TaskId = 9, TaskName = "Prepare contingency plans", StartDate = new DateTime(2011, 7, 12), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
+        taskDetails[1].Child.Add(new TaskDetails { TaskId = 10, TaskName = "Risk Assessment complete", StartDate = new DateTime(2011, 7, 15), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
 
-        return task;
+        taskDetails.Add(new TaskDetails { TaskId = 11, TaskName = "Monitoring", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 8, 6), Progress = 40d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 12, TaskName = "Prepare Meeting agenda", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 7, 26), Progress = 30d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 13, TaskName = "Conduct review meeting", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 7, 30), Progress = 30d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 14, TaskName = "Migrate critical issues", StartDate = new DateTime(2011, 7, 18), FinishDate = new DateTime(2011, 8, 2), Progress = 30d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 15, TaskName = "Estabilish change mgmt Control", StartDate = new DateTime(2011, 8, 3), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 16, TaskName = "Monitoring Complete", StartDate = new DateTime(2011, 8, 6), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
+
+        taskDetails.Add(new TaskDetails { TaskId = 17, TaskName = "Post Implementation", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 19), Progress = 40d });
+        taskDetails[3].Child.Add(new TaskDetails { TaskId = 18, TaskName = "Obtain User feedback", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 10), Progress = 30d });
+        taskDetails[3].Child.Add(new TaskDetails { TaskId = 19, TaskName = "Evaluate lessons learned", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 17), Progress = 30d });
+        taskDetails[3].Child.Add(new TaskDetails { TaskId = 20, TaskName = "Modify items as necessary", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 19), Progress = 30d });
+        taskDetails[3].Child.Add(new TaskDetails { TaskId = 21, TaskName = "Post Implementation complete", StartDate = new DateTime(2011, 8, 19), FinishDate = new DateTime(2011, 8, 19), Progress = 30d });
+
+        taskDetails[0].Resources = new ObservableCollection<Resource>() { new Resource { ID = 1, Name = "John" }, new Resource { ID = 2, Name = "Neil" } };
+        taskDetails[0].Child[3].Resources = new ObservableCollection<Resource>() { new Resource() { ID = 3, Name = "Peter" } };
+        taskDetails[1].Resources = new ObservableCollection<Resource>() { new Resource() { ID = 4, Name = "David" } };
+        return taskDetails;
     }
 }
-    
- {% endhighlight  %}
+ 
+{% endhighlight  %}
+{% endtabs %}
 
 ### Adding GanttControl through designer
 
@@ -234,48 +222,39 @@ The following are the steps to create Gantt control through designer.
 The GanttControl allows users to set the width for GanttChart and GanttGrid  using the [`ChartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ChartWidth) and [`GridWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_GridWidth) properties. The following code sample demonstrates how to set width for chart and grid.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<sync:GanttControl x:Name="control" GridWidth="200" ChartWidth="800" > 
-</Sync:GanttControl>
-
+<syncfusion:GanttControl x:Name="ganttControl"
+                         GridWidth="200"
+                         ChartWidth="800">
+</syncfusion:GanttControl>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
- //Initializing Gantt
-GanttControl control = new GanttControl();
-control.GridWidth = new GridLength(200); 
-control.ChartWidth = new GridLength(800); 
+this.ganttControl.GridWidth = new GridLength(200);
+this.ganttControl.ChartWidth = new GridLength(800);
 
 {% endhighlight  %}
-
-{% endtabs %}
-   
+{% endtabs %}   
 
 ## Schedule padding 
 
 Gantt schedule view can be extended by using the [`ScheduleRangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleRangePadding) property in GanttControl. This property extends the schedule with number of lower schedule units in starting position to improve the user experience.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<Sync:GanttControl x:Name="control" ItemsSource="{Binding TaskCollection}"  ScheduleRangePadding="5">
-</Sync:GanttControl>
+<syncfusion:GanttControl x:Name="ganttControl"
+                         ScheduleRangePadding="5">
+</syncfusion:GanttControl>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
- //Initializing Gantt
-GanttControl control = new GanttControl();
-control.ScheduleRangePadding = 5;
+this.ganttControl.ScheduleRangePadding = 5;
 
 {% endhighlight  %}
-
 {% endtabs %}
 
 ## ScheduleType
@@ -297,24 +276,18 @@ By using the [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 The following code sample demonstrates how to set **ScheduleType** for GanttControl.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<Sync:GanttControl x:Name="control" ItemsSource="{Binding TaskCollection}"           ScheduleType="YearWithMonths" >
-</Sync:GanttControl>
+<syncfusion:GanttControl x:Name="ganttControl" 
+                         ScheduleType="YearWithMonths">
+</syncfusion:GanttControl>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
-//Initializing Gantt
-GanttControl control = new GanttControl();
-control.DataContext = new ViewModel();
-control.SetBinding(GanttControl.ItemsSourceProperty,"TaskCollection");
-control.ScheduleType = ScheduleType.YearWithMonths;
+this.ganttControl.ScheduleType = ScheduleType.YearWithMonths;
 
 {% endhighlight  %}
-
 {% endtabs %}
 
 ## Showing date with time in GanttGrid
@@ -322,27 +295,23 @@ control.ScheduleType = ScheduleType.YearWithMonths;
 To show the date with time in the GanttGrid, enable the ShowDateWithTime property as shown in the following code sample.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<sync:GanttControl x:Name="control" ShowDateWithTime="True" ItemsSource="{Binding TaskCollection}"> 
- <sync:GanttControl.DataContext>
-    <local:ViewModel/>
- </sync:GanttControl.DataContext>          
-</Sync:GanttControl>
+<syncfusion:GanttControl x:Name="ganttControl"
+                         ShowDateWithTime="True"
+                         ItemsSource="{Binding TaskDetails}">
+    <syncfusion:GanttControl.DataContext>
+        <local:ViewModel/>
+    </syncfusion:GanttControl.DataContext>
+</syncfusion:GanttControl>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
-    //Initializing Gantt
-    GanttControl control = new GanttControl();
-    control.DataContext = new ViewModel();
-    control.SetBinding(GanttControl.ItemsSourceProperty,"TaskCollection");
-    control.ShowDateWithTime = true;
+this.ganttControl.ShowDateWithTime = true;
+this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight  %}
-
 {% endtabs %}
 
 N> By default, GanttGrid will show the date alone.
@@ -364,7 +333,9 @@ By default, the `GanttGrid` items will be in expanded state. You can define how 
 {% endhighlight %}
 
 {% highlight c# %}
+
 this.ganttControl.AutoExpandMode = GanttAutoExpandMode.None;
+
 {% endhighlight  %}
 {% endtabs %}
 
