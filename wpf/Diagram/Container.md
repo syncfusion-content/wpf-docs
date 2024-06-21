@@ -89,7 +89,7 @@ diagram.Groups = groups;
 
 ### Setting a Header
 
-You can textually describe a container by using its `Header` property. Also, users can customize the header's appearance using the header's [`ShapeStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ContainerHeaderViewModel.html#Syncfusion_UI_Xaml_Diagram_ContainerHeaderViewModel_ShapeStyle) property.
+You can textually describe a container by using its [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ContainerViewModel.html#Syncfusion_UI_Xaml_Diagram_ContainerViewModel_Header) property. Also, users can customize the header's appearance using the header's [ShapeStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ContainerHeaderViewModel.html#Syncfusion_UI_Xaml_Diagram_ContainerHeaderViewModel_ShapeStyle) property.
 
 The following code example explains how to define a container header and its customization:
 
