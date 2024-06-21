@@ -15,9 +15,4 @@ Essential Gantt for WPF is a MS Project-like Project Viewer with built-in grid, 
 
 Research scholars, IT companies or any organization that following work breakdown structure can use Gantt control to schedule and track their tasks/ activities. This helps tracking the progress of an assignment. By tracking the progress one can change or reschedule the plan to achieve the goal.
 
-
-
-![Gantt - Overview](Overview_images/Overview_img1.png)
-
-
-
+![gantt-control-overview](Overview_images/gantt-control-overview.png)

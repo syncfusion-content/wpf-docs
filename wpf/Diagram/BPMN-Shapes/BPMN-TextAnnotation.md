@@ -26,6 +26,34 @@ documentation: ug
 The following code example represents how to create a Text Annotation.
 
 {% tabs %}
+{% highlight xaml %}
+
+<!-- Initialize the SfDiagram control -->
+<syncfusion:SfDiagram x:Name="diagram">
+   <!-- Define the Nodes collection within the SfDiagram -->
+   <syncfusion:SfDiagram.Nodes>
+         <syncfusion:NodeCollection>
+            <!-- Define a BpmnNodeViewModel with properties set as required -->
+            <syncfusion:BpmnNodeViewModel OffsetX="300" OffsetY="100" UnitWidth="100" UnitHeight="70"
+                                          Type="TextAnnotation" TextAnnotationDirection="Left">
+               <!-- Define the Annotations for the BpmnNodeViewModel -->
+               <syncfusion:BpmnNodeViewModel.Annotations>
+                     <syncfusion:AnnotationCollection>
+                        <!-- Add an AnnotationEditorViewModel with the specified content -->
+                        <syncfusion:AnnotationEditorViewModel Content="Text"/>
+                     </syncfusion:AnnotationCollection>
+               </syncfusion:BpmnNodeViewModel.Annotations>
+            </syncfusion:BpmnNodeViewModel>
+         </syncfusion:NodeCollection>
+   </syncfusion:SfDiagram.Nodes>
+   <!-- Define the Connectors collection within the SfDiagram -->
+   <syncfusion:SfDiagram.Connectors>
+         <syncfusion:ConnectorCollection/>
+   </syncfusion:SfDiagram.Connectors>
+</syncfusion:SfDiagram>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 //Initialize the diagram.
@@ -60,6 +88,36 @@ BpmnNodeViewModel textannotation = new BpmnNodeViewModel()
 The following code example represents how to create a Text Annotation and make a connection between the `Activity` and `TextAnnotation` shape.
 
 {% tabs %}
+{% highlight xaml %}
+
+ <!-- Initialize the SfDiagram control -->
+ <syncfusion:SfDiagram x:Name="diagram">
+     <!-- Define the Nodes collection within the SfDiagram -->
+     <syncfusion:SfDiagram.Nodes>
+         <syncfusion:NodeCollection>
+             <!-- Define the BpmnNodeViewModel with properties set as required -->
+             <syncfusion:BpmnNodeViewModel x:Name="Node" OffsetX="150" OffsetY="250" UnitWidth="100" UnitHeight="100"
+                                           Type="Activity"/>
+             <!-- Define the TextAnnotation BpmnNodeViewModel and set the TextAnnotationTarget property from the code-behind -->
+             <syncfusion:BpmnNodeViewModel x:Name="TextAnnotationNode" OffsetX="300" OffsetY="100" UnitWidth="100" UnitHeight="70"
+                                           Type="TextAnnotation">
+                 <!-- Define the Annotations for the BpmnNodeViewModel -->
+                 <syncfusion:BpmnNodeViewModel.Annotations>
+                     <syncfusion:AnnotationCollection>
+                         <!-- Add an AnnotationEditorViewModel with the specified content -->
+                         <syncfusion:AnnotationEditorViewModel Content="Text"/>
+                     </syncfusion:AnnotationCollection>
+                 </syncfusion:BpmnNodeViewModel.Annotations>
+             </syncfusion:BpmnNodeViewModel>
+         </syncfusion:NodeCollection>
+     </syncfusion:SfDiagram.Nodes>
+     <!-- Define the Connectors collection within the SfDiagram -->
+     <syncfusion:SfDiagram.Connectors>
+         <syncfusion:ConnectorCollection/>
+     </syncfusion:SfDiagram.Connectors>
+ </syncfusion:SfDiagram>
+
+{% endhighlight %}
 {% highlight c# %}
 
 //Initialize the diagram.
