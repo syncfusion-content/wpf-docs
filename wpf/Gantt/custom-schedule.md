@@ -261,7 +261,10 @@ The following code illustrates Adding Custom Schedule to an Application:
                                          ResourceInfoMapping="Resource">
         </syncfusion:TaskAttributeMapping>
     </syncfusion:GanttControl.TaskAttributeMapping>
- 
+ <syncfusion:GanttControl.Resources>
+    <Style BasedOn="{StaticResource TopCountriesNode}" TargetType="gantt:GanttNode" />
+    <Style BasedOn="{StaticResource MileStone}" TargetType="gantt:MileStone" />
+ </syncfusion:GanttControl.Resources>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
     </syncfusion:GanttControl.DataContext>
