@@ -38,8 +38,6 @@ Gantt provides support to display the contents from right-to-left or left-to-rig
  
 {% highlight c# %}
 
-//Initializing Gantt
-
  this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
  this.ganttControl.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
@@ -94,7 +92,7 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
     /// <summary>
     /// Method to get the data.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The task details</returns>
     public  ObservableCollection<TaskDetails> GetData()
     {
         var taskDetails = new ObservableCollection<TaskDetails>();
@@ -112,7 +110,6 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 10, TaskName = "Localization Component - User Interface", StartDate = new DateTime(2011, 7, 6), FinishDate = new DateTime(2011, 7, 7), Progress = 20d }));
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 11, TaskName = "User Assistance Components", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 12, TaskName = "Software components complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 19), Progress = 10d }));
-
 
         taskDetails.Add(new TaskDetails() { TaskId = 13, TaskName = "Quality Assurance", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 12), Progress = 40d, });
         taskDetails[2].Child.Add((new TaskDetails() { TaskId = 14, TaskName = "Review project information", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 15), Progress = 20d }));
@@ -167,4 +164,4 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endtabs %}
 
-![Right-To-Left](Flow-Direction-Images/Right-To-Left.png)
+![gantt-control-flow-direction-right-to-left](Flow-Direction-Images/gantt-control-flow-direction-right-to-left.png)

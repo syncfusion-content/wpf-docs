@@ -258,7 +258,6 @@ The following code sample demonstrates how to bind the regular strip line collec
 
 {% highlight c# %}
 
-//Initializing Gantt
 this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 this.ganttControl.ShowStripLines = true;
 
@@ -337,7 +336,7 @@ private List<StripLineInfo> GetStripCollection()
     /// <summary>
     /// Gets the data.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The task details</returns>
     public  ObservableCollection<TaskDetails> GetData()
     {
         var taskDetails = new ObservableCollection<TaskDetails>();
@@ -355,7 +354,6 @@ private List<StripLineInfo> GetStripCollection()
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 10, TaskName = "Localization Component - User Interface", StartDate = new DateTime(2011, 7, 6), FinishDate = new DateTime(2011, 7, 7), Progress = 20d }));
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 11, TaskName = "User Assistance Components", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 12, TaskName = "Software components complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 19), Progress = 10d }));
-
 
         taskDetails.Add(new TaskDetails() { TaskId = 13, TaskName = "Quality Assurance", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 12), Progress = 40d, });
         taskDetails[2].Child.Add((new TaskDetails() { TaskId = 14, TaskName = "Review project information", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 15), Progress = 20d }));
@@ -403,7 +401,6 @@ private List<StripLineInfo> GetStripCollection()
         taskDetails[4].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 30, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
         taskDetails[4].Child[4].Predecessor.Add(new Predecessor() { GanttTaskIndex = 27, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
         return taskDetails;
-
     }
 }
 
@@ -415,7 +412,7 @@ private List<StripLineInfo> GetStripCollection()
 The following screenshot illustrates how to render the regular strip lines.
 
 
-![WPF Gantt with regular strip line](Strip-Lines_images/Strip-Lines_img1.png)
+![regular-striplines-in-gantt-control](Strip-Lines_images/regular-striplines-in-gantt-control.png)
 
 Strip lines in the Gantt chart
 {:.caption}
@@ -451,7 +448,6 @@ The following code sample demonstrates how to bind the absolute strip line colle
 
 {% highlight c# %}
 
-//Initializing Gantt
 this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 this.ganttControl.ShowStripLines = true;
 
@@ -528,7 +524,7 @@ private List<StripLineInfo> GetStripCollection()
     /// <summary>
     /// Gets the data.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The task details</returns>
     public  ObservableCollection<TaskDetails> GetData()
     {
         var taskDetails = new ObservableCollection<TaskDetails>();
@@ -546,7 +542,6 @@ private List<StripLineInfo> GetStripCollection()
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 10, TaskName = "Localization Component - User Interface", StartDate = new DateTime(2011, 7, 6), FinishDate = new DateTime(2011, 7, 7), Progress = 20d }));
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 11, TaskName = "User Assistance Components", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 12, TaskName = "Software components complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 19), Progress = 10d }));
-
 
         taskDetails.Add(new TaskDetails() { TaskId = 13, TaskName = "Quality Assurance", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 12), Progress = 40d, });
         taskDetails[2].Child.Add((new TaskDetails() { TaskId = 14, TaskName = "Review project information", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 15), Progress = 20d }));
@@ -594,7 +589,6 @@ private List<StripLineInfo> GetStripCollection()
         taskDetails[4].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 30, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
         taskDetails[4].Child[4].Predecessor.Add(new Predecessor() { GanttTaskIndex = 27, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
         return taskDetails;
-
     }
 }
 
@@ -605,8 +599,7 @@ private List<StripLineInfo> GetStripCollection()
 
 The following screenshot illustrates how to render the absolute strip lines.
 
-![WPF Gantt with absolute strip line](Strip-Lines_images/Strip-Lines_absolute.png)
-
+![absolute-striplines-in-gantt-control](Strip-Lines_images/absolute-striplines-in-gantt-control.png)
 
 Strip lines in the Gantt chart
 {:.caption}

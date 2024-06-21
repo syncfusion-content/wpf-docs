@@ -56,9 +56,19 @@ To populate a Resource view Gantt in a Custom Numeric Schedule:
 {% tabs %}
 {% highlight xaml %}
 
-<!-- Resource -->
-<!-- Header Node style-->
-<Style TargetType="chart:HeaderNode">
+<syncfusion:GanttControl x:Name="ganttControl"
+                         ScheduleType="CustomNumeric"
+                         CustomScheduleSource="{Binding CustomScheduleInfo}"
+                         ItemsSource="{Binding Items}">
+     <syncfusion:GanttControl.TaskAttributeMapping>
+         <syncfusion:TaskAttributeMapping TaskNameMapping="Name"
+                                          StartPointMapping="Start"
+                                          ChildMapping="SubItems"
+                                          FinishPointMapping="End"
+                                          InLineTaskMapping="InLineItems" />
+     </syncfusion:GanttControl.TaskAttributeMapping>
+     <syncfusion:GanttControl.Resources>
+     <Style TargetType="chart:HeaderNode">
         <Setter Property="MaxHeight"
                 Value="24" />
         <Setter Property="Template">
@@ -256,31 +266,15 @@ To populate a Resource view Gantt in a Custom Numeric Schedule:
             </Setter.Value>
         </Setter>
     </Style>
-
-<syncfusion:GanttControl x:Name="ganttControl"
-                         ScheduleType="CustomNumeric"
-                         CustomScheduleSource="{Binding CustomScheduleInfo}"
-                         ItemsSource="{Binding Items}">
-     <syncfusion:GanttControl.TaskAttributeMapping>
-         <syncfusion:TaskAttributeMapping TaskNameMapping="Name"
-                                          StartPointMapping="Start"
-                                          ChildMapping="SubItems"
-                                          FinishPointMapping="End"
-                                          InLineTaskMapping="InLineItems" />
-     </syncfusion:GanttControl.TaskAttributeMapping>
-     <syncfusion:GanttControl.Resources>
-         <Style TargetType="chart:GanttNode"
-                BasedOn="{StaticResource TaskNode}" />
-         <Style TargetType="chart:MileStone"
-                BasedOn="{StaticResource MileStone}" />
+         <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}" />
+         <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}" />
      </syncfusion:GanttControl.Resources>
-     <syncfusion:GanttControl.DataContext>
+    <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
     </syncfusion:GanttControl.DataContext>
  </syncfusion:GanttControl>
 
 {% endhighlight  %}
-
 
 {% highlight c# %}
 
@@ -591,7 +585,7 @@ public class ViewModel
     /// <summary>
     /// Gets the Numeric Schedule Items Info
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The row information</returns>
     private ObservableCollection<GanttScheduleRowInfo> GetCustomScheduleInfo()
     {
         ObservableCollection<GanttScheduleRowInfo> RowInfo = new ObservableCollection<GanttScheduleRowInfo>();
@@ -603,35 +597,34 @@ public class ViewModel
     /// <summary>
     /// Gets the data.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The teams</returns>
     public ObservableCollection<Item> GetData()
     {
         ObservableCollection<Item> teams = new ObservableCollection<Item>();
         teams.Add(new Item() { Name = "RDU Team" });
 
-        Item Person = new Item() { Name = "Robert" };
-        Person.InLineItems.Add(new Item() { Start = 0, End = 2, Name = "Market Analysis", Progress = 50 });
-        Person.InLineItems.Add(new Item() { Start = 2, End = 4, Name = "Competitor Analysis", Progress = 20 });
-        Person.InLineItems.Add(new Item() { Start = 3, End = 6, Name = "Design Spec" });
-        teams[0].SubItems.Add(Person);
+        Item person = new Item() { Name = "Robert" };
+        person.InLineItems.Add(new Item() { Start = 0, End = 2, Name = "Market Analysis", Progress = 50 });
+        person.InLineItems.Add(new Item() { Start = 2, End = 4, Name = "Competitor Analysis", Progress = 20 });
+        person.InLineItems.Add(new Item() { Start = 3, End = 6, Name = "Design Spec" });
+        teams[0].SubItems.Add(person);
 
-        Person = new Item() { Name = "Michael" };
-        Person.InLineItems.Add(new Item() { Start = 2, End = 4, Name = "Basic Requirement Analysis", Progress = 40 });
-        Person.InLineItems.Add(new Item() { Start = 5, End = 7, Name = "Requirement Spec" });
-        teams[0].SubItems.Add(Person);
+        person = new Item() { Name = "Michael" };
+        person.InLineItems.Add(new Item() { Start = 2, End = 4, Name = "Basic Requirement Analysis", Progress = 40 });
+        person.InLineItems.Add(new Item() { Start = 5, End = 7, Name = "Requirement Spec" });
+        teams[0].SubItems.Add(person);
 
-        Person = new Item() { Name = "Anne" };
-        Person.InLineItems.Add(new Item() { Start = 0, End = 2, Name = "Estimation", Progress = 30 });
-        Person.InLineItems.Add(new Item() { Start = 3, End = 6, Name = "Budget & Plan Spec" });
-        teams[0].SubItems.Add(Person);
+        person = new Item() { Name = "Anne" };
+        person.InLineItems.Add(new Item() { Start = 0, End = 2, Name = "Estimation", Progress = 30 });
+        person.InLineItems.Add(new Item() { Start = 3, End = 6, Name = "Budget & Plan Spec" });
+        teams[0].SubItems.Add(person);
 
         teams.Add(new Item() { Name = "Graphics Team" });
 
-        Person = new Item() { Name = "Madhan" };
-        Person.InLineItems.Add(new Item() { Start = 0, End = 3, Name = "Identifying UI modules", Progress = 40 });
-        Person.InLineItems.Add(new Item() { Start = 2, End = 5, Name = "Defining UI Design" });
-        teams[1].SubItems.Add(Person);
-
+        person = new Item() { Name = "Madhan" };
+        person.InLineItems.Add(new Item() { Start = 0, End = 3, Name = "Identifying UI modules", Progress = 40 });
+        person.InLineItems.Add(new Item() { Start = 2, End = 5, Name = "Defining UI Design" });
+        teams[1].SubItems.Add(person);
         return teams;
     }
 }
@@ -641,7 +634,7 @@ public class ViewModel
 
 The following shows the Resultant output:
 
-![Resource-View-Gantt-Inline-Items_img1](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img1.png)
+![resource-view-gantt-inline-items](Resource-View-Gantt-Inline-Items_images/resource-view-gantt-inline-items.png)
 
 #### Resource View Gantt with a Date-Time Schedule
 
@@ -653,9 +646,19 @@ To populate the Resource view Gantt with a date-time schedule:
 {% tabs %}
 {% highlight xaml %}
 
-<!-- Resources -->
-<!-- Header Node style-->
- <Style TargetType="chart:HeaderNode">
+ <syncfusion:GanttControl x:Name="ganttControl"
+                          ItemsSource="{Binding TeamDetails}">
+    <syncfusion:GanttControl.TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping TaskNameMapping="Name"
+                                         StartDateMapping="StartDate"
+                                         ChildMapping="SubItems"
+                                         FinishDateMapping="FinishDate"
+                                         ProgressMapping="Progress"
+                                         InLineTaskMapping="InLineItems">
+        </syncfusion:TaskAttributeMapping>
+    </syncfusion:GanttControl.TaskAttributeMapping>
+    <syncfusion:GanttControl.Resources>
+    <Style TargetType="chart:HeaderNode">
      <Setter Property="MaxHeight"
              Value="24" />
      <Setter Property="Template">
@@ -854,23 +857,8 @@ To populate the Resource view Gantt with a date-time schedule:
          </Setter.Value>
      </Setter>
  </Style>
-
- <syncfusion:GanttControl x:Name="ganttControl"
-                          ItemsSource="{Binding TeamDetails}">
-    <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping TaskNameMapping="Name"
-                                         StartDateMapping="StartDate"
-                                         ChildMapping="SubItems"
-                                         FinishDateMapping="FinishDate"
-                                         ProgressMapping="Progress"
-                                         InLineTaskMapping="InLineItems">
-        </syncfusion:TaskAttributeMapping>
-    </syncfusion:GanttControl.TaskAttributeMapping>
-    <syncfusion:GanttControl.Resources>
-        <Style TargetType="chart:GanttNode"
-               BasedOn="{StaticResource TaskNode}" />
-        <Style TargetType="chart:MileStone"
-               BasedOn="{StaticResource MileStone}" />
+        <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}" />
+        <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}" />
     </syncfusion:GanttControl.Resources>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
@@ -1083,9 +1071,12 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
          else
          {
              foreach (Item item in e.OldItems)
+             {
                  item.PropertyChanged -= ItemPropertyChanged;
+             }
          }
-         UpdateDates();
+
+         this.UpdateDates();
      }
 
      /// <summary>
@@ -1162,96 +1153,89 @@ public class ViewModel
         }
     }
 
-
     /// <summary>
     /// Gets the team info.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The teams</returns>
     public ObservableCollection<Item> GetTeamInfo()
     {
-        DateTime dtS = DateTime.Today;
-
+        DateTime dateTime = DateTime.Today;
         ObservableCollection<Item> teams = new ObservableCollection<Item>();
 
         teams.Add(new Item() { Name = "RDU Team" });
-        Item Person = new Item() { Name = "Robert" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 07), FinishDate = new DateTime(2012, 01, 11), Name = "Market Analysis", Progress = 50d });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 11, 12, 0, 0), FinishDate = new DateTime(2012, 01, 17), Name = "Competitor Analysis", Progress = 20d });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 17, 12, 0, 0), FinishDate = new DateTime(2012, 01, 21), Name = "Design Spec" });
-        teams[0].SubItems.Add(Person);
+        Item person = new Item() { Name = "Robert" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 07), FinishDate = new DateTime(2012, 01, 11), Name = "Market Analysis", Progress = 50d });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 11, 12, 0, 0), FinishDate = new DateTime(2012, 01, 17), Name = "Competitor Analysis", Progress = 20d });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 17, 12, 0, 0), FinishDate = new DateTime(2012, 01, 21), Name = "Design Spec" });
+        teams[0].SubItems.Add(person);
 
-        Person = new Item() { Name = "Michael" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 14), FinishDate = new DateTime(2012, 01, 19), Name = "Basic Requirement Analysis", Progress = 40 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 19, 12, 0, 0), FinishDate = new DateTime(2012, 01, 23), Name = "Requirement Spec" });
-        teams[0].SubItems.Add(Person);
+        person = new Item() { Name = "Michael" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 14), FinishDate = new DateTime(2012, 01, 19), Name = "Basic Requirement Analysis", Progress = 40 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 19, 12, 0, 0), FinishDate = new DateTime(2012, 01, 23), Name = "Requirement Spec" });
+        teams[0].SubItems.Add(person);
 
-        Person = new Item() { Name = "Anne" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21), FinishDate = new DateTime(2012, 01, 25), Name = "Estimation", Progress = 30 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 25, 12, 0, 0), FinishDate = new DateTime(2012, 01, 29, 12, 0, 0), Name = "Budget & Plan Spec" });
-        teams[0].SubItems.Add(Person);
-
+        person = new Item() { Name = "Anne" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21), FinishDate = new DateTime(2012, 01, 25), Name = "Estimation", Progress = 30 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 25, 12, 0, 0), FinishDate = new DateTime(2012, 01, 29, 12, 0, 0), Name = "Budget & Plan Spec" });
+        teams[0].SubItems.Add(person);
 
         teams.Add(new Item() { Name = "Graphics Team" });
-        Person = new Item() { Name = "Madhan" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 17), FinishDate = new DateTime(2012, 01, 21), Name = "Identifying UI modules", Progress = 40 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21, 12, 0, 0), FinishDate = new DateTime(2012, 01, 26), Name = "Defining UI Design" });
-        teams[1].SubItems.Add(Person);
+        person = new Item() { Name = "Madhan" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 17), FinishDate = new DateTime(2012, 01, 21), Name = "Identifying UI modules", Progress = 40 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21, 12, 0, 0), FinishDate = new DateTime(2012, 01, 26), Name = "Defining UI Design" });
+        teams[1].SubItems.Add(person);
 
-        Person = new Item() { Name = "Peter" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21), FinishDate = new DateTime(2012, 01, 24), Name = "Designing Animagions", Progress = 40 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 24, 12, 0, 0), FinishDate = new DateTime(2012, 01, 28), Name = "Completing Overall Graphics design" });
-        teams[1].SubItems.Add(Person);
-
+        person = new Item() { Name = "Peter" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21), FinishDate = new DateTime(2012, 01, 24), Name = "Designing Animagions", Progress = 40 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 24, 12, 0, 0), FinishDate = new DateTime(2012, 01, 28), Name = "Completing Overall Graphics design" });
+        teams[1].SubItems.Add(person);
 
         teams.Add(new Item() { Name = "Dev Team" });
-        Person = new Item() { Name = "Ruban" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 19), FinishDate = new DateTime(2012, 01, 22), Name = "Analysis", Progress = 30 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 22, 12, 0, 0), FinishDate = new DateTime(2012, 01, 26), Name = "Defining Modules", Progress = 10 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 26, 12, 0, 0), FinishDate = new DateTime(2012, 01, 30), Name = "Development Plan", Progress = 10 });
-        teams[2].SubItems.Add(Person);
+        person = new Item() { Name = "Ruban" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 19), FinishDate = new DateTime(2012, 01, 22), Name = "Analysis", Progress = 30 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 22, 12, 0, 0), FinishDate = new DateTime(2012, 01, 26), Name = "Defining Modules", Progress = 10 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 26, 12, 0, 0), FinishDate = new DateTime(2012, 01, 30), Name = "Development Plan", Progress = 10 });
+        teams[2].SubItems.Add(person);
 
-        Person = new Item() { Name = "Karthick" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 20), FinishDate = new DateTime(2012, 01, 22, 12, 0, 0), Name = "Analysis", Progress = 10 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 23), FinishDate = new DateTime(2012, 1, 29), Name = "Module Development" });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 29, 12, 0, 0), FinishDate = new DateTime(2012, 02, 2), Name = "Self Testing" });
-        teams[2].SubItems.Add(Person);
+        person = new Item() { Name = "Karthick" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 20), FinishDate = new DateTime(2012, 01, 22, 12, 0, 0), Name = "Analysis", Progress = 10 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 23), FinishDate = new DateTime(2012, 1, 29), Name = "Module Development" });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 29, 12, 0, 0), FinishDate = new DateTime(2012, 02, 2), Name = "Self Testing" });
+        teams[2].SubItems.Add(person);
 
-        Person = new Item() { Name = "Suyama" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21), FinishDate = new DateTime(2012, 01, 24), Name = "Analysis", Progress = 10 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 24, 12, 0, 0), FinishDate = new DateTime(2012, 01, 31), Name = "Module Development" });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 1), FinishDate = new DateTime(2012, 02, 4), Name = "Self Testing" });
-        teams[2].SubItems.Add(Person);
+        person = new Item() { Name = "Suyama" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21), FinishDate = new DateTime(2012, 01, 24), Name = "Analysis", Progress = 10 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 24, 12, 0, 0), FinishDate = new DateTime(2012, 01, 31), Name = "Module Development" });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 1), FinishDate = new DateTime(2012, 02, 4), Name = "Self Testing" });
+        teams[2].SubItems.Add(person);
 
-        Person = new Item() { Name = "Albert" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 27), FinishDate = new DateTime(2012, 01, 31), Name = "Modules Integration" });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 31, 12, 0, 0), FinishDate = new DateTime(2012, 02, 4), Name = "Integration Testing" });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 5), FinishDate = new DateTime(2012, 02, 8, 12, 0, 0), Name = "Completeness" });
-        teams[2].SubItems.Add(Person);
-
+        person = new Item() { Name = "Albert" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 27), FinishDate = new DateTime(2012, 01, 31), Name = "Modules Integration" });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 31, 12, 0, 0), FinishDate = new DateTime(2012, 02, 4), Name = "Integration Testing" });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 5), FinishDate = new DateTime(2012, 02, 8, 12, 0, 0), Name = "Completeness" });
+        teams[2].SubItems.Add(person);
 
         teams.Add(new Item() { Name = "Doc Team" });
-        Person = new Item() { Name = "Laura" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 02), FinishDate = new DateTime(2012, 02, 07), Name = "User Guide Development", Progress = 10 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 08), FinishDate = new DateTime(2012, 02, 11), Name = "Publishing User Guide", Progress = 10 });
-        teams[3].SubItems.Add(Person);
+        person = new Item() { Name = "Laura" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 02), FinishDate = new DateTime(2012, 02, 07), Name = "User Guide Development", Progress = 10 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 08), FinishDate = new DateTime(2012, 02, 11), Name = "Publishing User Guide", Progress = 10 });
+        teams[3].SubItems.Add(person);
 
-        Person = new Item() { Name = "Margaret" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 05), FinishDate = new DateTime(2012, 02, 08), Name = "Web Conetent Development", Progress = 10 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 08, 12, 0, 0), FinishDate = new DateTime(2012, 02, 12), Name = "Publishing Web Conetent", Progress = 10 });
-        teams[3].SubItems.Add(Person);
-
+        person = new Item() { Name = "Margaret" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 05), FinishDate = new DateTime(2012, 02, 08), Name = "Web Conetent Development", Progress = 10 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 08, 12, 0, 0), FinishDate = new DateTime(2012, 02, 12), Name = "Publishing Web Conetent", Progress = 10 });
+        teams[3].SubItems.Add(person);
 
         teams.Add(new Item() { Name = "Sales Team" });
-        Person = new Item() { Name = "Steven" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 13), FinishDate = new DateTime(2012, 01, 17), Name = "Defining Target", Progress = 80 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 18), FinishDate = new DateTime(2012, 01, 22), Name = "Defining Startegy", Progress = 50 });
-        teams[4].SubItems.Add(Person);
+        person = new Item() { Name = "Steven" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 13), FinishDate = new DateTime(2012, 01, 17), Name = "Defining Target", Progress = 80 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 18), FinishDate = new DateTime(2012, 01, 22), Name = "Defining Startegy", Progress = 50 });
+        teams[4].SubItems.Add(person);
 
-        Person = new Item() { Name = "Janet" };
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21), FinishDate = new DateTime(2012, 01, 26), Name = "Collect Customers list", Progress = 50 });
-        Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 09), FinishDate = new DateTime(2012, 02, 14), Name = "Contacting Customer" });
-        teams[4].SubItems.Add(Person);
-
+        person = new Item() { Name = "Janet" };
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 21), FinishDate = new DateTime(2012, 01, 26), Name = "Collect Customers list", Progress = 50 });
+        person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 02, 09), FinishDate = new DateTime(2012, 02, 14), Name = "Contacting Customer" });
+        teams[4].SubItems.Add(person);
         return teams;
     }
 }
@@ -1263,7 +1247,7 @@ Output
 
 The following image shows the resultant output:
 
-![Resource-View-Gantt-Inline-Items_img2](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img2.png)
+![resource-view-gantt-inline-datetime-items](Resource-View-Gantt-Inline-Items_images/resource-view-gantt-inline-datetime-items.png)
 
 ## Data Structure
 

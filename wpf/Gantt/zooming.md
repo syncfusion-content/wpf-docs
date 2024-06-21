@@ -33,9 +33,31 @@ To add the built-in zooming:
 {% tabs %}
 {% highlight xaml %}
 
-<Slider x:Name="ZoomSlider" Minimum="80" Maximum="600" Value="100" Width="150" ValueChanged="slider_ValueChanged"/>
+<Grid>
+ <Grid.RowDefinitions>
+     <RowDefinition Height="0.1*" />
+     <RowDefinition Height="0.9*" />
+ </Grid.RowDefinitions>
+
+ <StackPanel Grid.Row="0"
+             Orientation="Horizontal"
+             HorizontalAlignment="Right"
+             VerticalAlignment="Center">
+     <Label Content="Zoom Factor:"
+            VerticalAlignment="Center"
+            FontSize="12" />
+     <Slider x:Name="ZoomSlider"
+             VerticalAlignment="Center"
+             Margin="0,0,20,0"
+             Minimum="80"
+             Maximum="600"
+             Value="100"
+             Width="150"
+             ValueChanged="OnSliderValueChanged" />
+ </StackPanel>
 
  <syncfusion:GanttControl x:Name="ganttControl"
+                          Grid.Row="1"
                           ItemsSource="{Binding TaskCollection}" 
                           UseOnDemandSchedule="True"
                           ZoomFactor="{Binding ElementName=ZoomSlider, Path=Value}">
@@ -54,12 +76,12 @@ To add the built-in zooming:
         <local:ViewModel/>
     </syncfusion:GanttControl.DataContext>
  </syncfusion:GanttControl>
+ </Grid>
 
 {% endhighlight  %}
 
 {% highlight c# %}
 
-//Initializing Gantt
 this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 this.ganttControl.UseOnDemandSchedule = true;
 
@@ -88,7 +110,7 @@ slider.ValueChanged += slider_ValueChanged;
 /// <summary>
 /// Handles the ValueChanged event of the slider control.
 /// </summary>
-void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+void OnSliderValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
 {
     //Changing the value of zoom factor
     this.Gantt.ZoomFactor = (sender as Slider).Value;
@@ -132,7 +154,7 @@ void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e
     /// <summary>
     /// Gets the data.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The task details</returns>
     public  ObservableCollection<TaskDetails> GetData()
     {
         var taskDetails = new ObservableCollection<TaskDetails>();
@@ -150,7 +172,6 @@ void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 10, TaskName = "Localization Component - User Interface", StartDate = new DateTime(2011, 7, 6), FinishDate = new DateTime(2011, 7, 7), Progress = 20d }));
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 11, TaskName = "User Assistance Components", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 12, TaskName = "Software components complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 19), Progress = 10d }));
-
 
         taskDetails.Add(new TaskDetails() { TaskId = 13, TaskName = "Quality Assurance", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 12), Progress = 40d, });
         taskDetails[2].Child.Add((new TaskDetails() { TaskId = 14, TaskName = "Review project information", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 15), Progress = 20d }));
@@ -208,7 +229,7 @@ void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e
 
 The following image shows Built-in Zooming in Gantt:
 
-![Zooming_img1](Zooming_images/Zooming_img1.png)
+![gantt-control-built-in-zooming](Zooming_images/gantt-control-built-in-zooming.png)
 
 #### Samples Link
 
@@ -244,16 +265,32 @@ To add custom zooming:
 {% tabs %}
 {% highlight xaml %}
 
-<ComboBox x:Name="ZoomBox" 
-          Width="75" 
-          ItemsSource="{Binding ZoomFactors}" 
-          SelectedItem="{Binding ZoomFactor}"/>
+<Grid>
+ <Grid.RowDefinitions>
+     <RowDefinition Height="0.1*" />
+     <RowDefinition Height="0.9*" />
+ </Grid.RowDefinitions>
+
+<StackPanel Grid.Row="0" 
+            HorizontalAlignment="Right" 
+            Margin="0,0,20,0" 
+            Orientation="Horizontal">
+     <Label Content="Zoom Factor : " 
+            VerticalAlignment="Center" 
+            FontSize="12"/>
+  <ComboBox x:Name="ZoomBox" 
+            Width="75" 
+            Height="40"
+            ItemsSource="{Binding ZoomFactors}"
+            SelectedItem="{Binding ZoomFactor}" />
+</StackPanel>
 
  <syncfusion:GanttControl x:Name="ganttControl"
+                          Grid.Row="1" 
                           ItemsSource="{Binding TaskCollection}" 
                           UseOnDemandSchedule="True"
                           ZoomFactor="{Binding ZoomFactor}"
-                          ZoomChanged="Gantt_ZoomChanged">
+                          ZoomChanged="OnGanttZoomChanged">
      <syncfusion:GanttControl.TaskAttributeMapping>
          <syncfusion:TaskAttributeMapping  TaskIdMapping="TaskId"
                                            TaskNameMapping="TaskName"
@@ -269,11 +306,11 @@ To add custom zooming:
         <local:ViewModel/>
     </syncfusion:GanttControl.DataContext>
  </syncfusion:GanttControl>
+ </Grid>
 
 {% endhighlight  %}
 {% highlight c# %}
 
-//Initializing Gantt
 this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 this.ganttControl.UseOnDemandSchedule = true;
 
@@ -335,7 +372,7 @@ public double ZoomFactor
 /// </summary>
 /// <param name="sender">The source of the event.</param>
 /// <param name="args">The <see cref="Syncfusion.Windows.Controls.Gantt.ZoomChangedEventArgs"/> instance containing the event data.</param>
-private void Gantt_ZoomChanged(object sender, ZoomChangedEventArgs args)
+private void OnGanttZoomChanged(object sender, ZoomChangedEventArgs args)
 {
     if (args.ZoomFactor == 100)
     {
@@ -435,7 +472,7 @@ private void Gantt_ZoomChanged(object sender, ZoomChangedEventArgs args)
     /// <summary>
     /// Gets the data.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The task details</returns>
     public  ObservableCollection<TaskDetails> GetData()
     {
         var taskDetails = new ObservableCollection<TaskDetails>();
@@ -453,7 +490,6 @@ private void Gantt_ZoomChanged(object sender, ZoomChangedEventArgs args)
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 10, TaskName = "Localization Component - User Interface", StartDate = new DateTime(2011, 7, 6), FinishDate = new DateTime(2011, 7, 7), Progress = 20d }));
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 11, TaskName = "User Assistance Components", StartDate = new DateTime(2011, 7, 10), FinishDate = new DateTime(2011, 7, 14), Progress = 10d }));
         taskDetails[1].Child.Add((new TaskDetails() { TaskId = 12, TaskName = "Software components complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 19), Progress = 10d }));
-
 
         taskDetails.Add(new TaskDetails() { TaskId = 13, TaskName = "Quality Assurance", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 12), Progress = 40d, });
         taskDetails[2].Child.Add((new TaskDetails() { TaskId = 14, TaskName = "Review project information", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 15), Progress = 20d }));
@@ -501,7 +537,6 @@ private void Gantt_ZoomChanged(object sender, ZoomChangedEventArgs args)
         taskDetails[4].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 30, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
         taskDetails[4].Child[4].Predecessor.Add(new Predecessor() { GanttTaskIndex = 27, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
         return taskDetails;
-
     }
 }
 
@@ -512,7 +547,7 @@ private void Gantt_ZoomChanged(object sender, ZoomChangedEventArgs args)
 
 The following image shows Custom Zooming in Gantt:
 
-![Zooming_img2](Zooming_images/Zooming_img2.png)
+![gantt-control-custom-zooming](Zooming_images/gantt-control-custom-zooming.png)
 
 #### Samples Link
 

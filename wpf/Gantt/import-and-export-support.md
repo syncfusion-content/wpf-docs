@@ -69,25 +69,33 @@ The following code illustrates how to Import and Export Task Details from or to 
 {% tabs  %}
 {% highlight xaml %}
 
-<StackPanel Orientation="Horizontal"
-                 HorizontalAlignment="Center">
+<Grid>
+<Grid.RowDefinitions>
+    <RowDefinition Height="0.9*" />
+    <RowDefinition Height="0.1*" />
+</Grid.RowDefinitions>
+
+<StackPanel Grid.Row="1"     
+            Orientation="Horizontal"
+            HorizontalAlignment="Center">
          <Button Height="25"
                  HorizontalAlignment="Center"
                  VerticalAlignment="Center"
                  Margin="0,10,0,0"
                  Width="200"
-                 Click="SaveButton_Click"
+                 Click="OnSaveButtonClick"
                  Content="Export To XML" />
          <Button Height="25"
                  HorizontalAlignment="Center"
                  VerticalAlignment="Center"
                  Margin="0,10,0,0"
                  Width="200"
-                 Click="Open_Click"
+                 Click="OnOpenButtonClick"
                  Content="Import From XML" />
 </StackPanel>
 
 <syncfusion:GanttControl x:Name="ganttControl" 
+                         Grid.Row="0"
                          ItemsSource="{Binding TaskCollection}">
     <syncfusion:GanttControl.TaskAttributeMapping>
              <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
@@ -104,12 +112,13 @@ The following code illustrates how to Import and Export Task Details from or to 
         <local:ViewModel/>
     </syncfusion:GanttControl.DataContext>
 </syncfusion:GanttControl>
+</Grid>
 
 {% endhighlight  %}
 
 {% highlight c# %}
 
-private void SaveButton_Click(object sender, System.Windows.RoutedEventArgs e)
+private void OnSaveButtonClick(object sender, System.Windows.RoutedEventArgs e)
 {
     if (this.Gantt.ExportToXML())
     {
@@ -120,7 +129,7 @@ private void SaveButton_Click(object sender, System.Windows.RoutedEventArgs e)
     }
 }
 
-private void Open_Click(object sender, System.Windows.RoutedEventArgs e)
+private void OnOpenButtonClick(object sender, System.Windows.RoutedEventArgs e)
 {
     if (this.Gantt.ImportFromXML())
     {
@@ -186,7 +195,7 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
     /// <summary>
     /// Gets the data.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The task details</returns>
     public  ObservableCollection<TaskDetails> GetData()
     {
         var taskDetails = new ObservableCollection<TaskDetails>();
@@ -252,7 +261,6 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
         taskDetails[4].Child[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 30, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
         taskDetails[4].Child[4].Predecessor.Add(new Predecessor() { GanttTaskIndex = 27, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
         return taskDetails;
-
     }
 }
 
@@ -261,11 +269,7 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 The following image shows XML Export Import:
 
-
-
-![Import-and-Export-Support_img1](Import-and-Export-Support_images/Import-and-Export-Support_img1.png)
-
-
+![gantt-import-and-export-support](Import-and-Export-Support_images/gantt-import-and-export-support.png)
 
 XML Export Import
 {:.caption}

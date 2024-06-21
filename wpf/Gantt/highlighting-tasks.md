@@ -618,7 +618,7 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      /// <summary>
      /// Gets the data.
      /// </summary>
-     /// <returns></returns>
+     /// <returns>The task details</returns>
      public ObservableCollection<HighlightingTasksModel> GetData()
      {
          var taskDetails = new ObservableCollection<HighlightingTasksModel>();
@@ -682,7 +682,6 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
          taskDetails[0].ChildTask[6].ChildTask[0].ChildTask.Add(new HighlightingTasksModel() { Id = 40, Name = "Install Wall Insulation", StDate = new DateTime(2012, 6, 19), EndDate = new DateTime(2012, 6, 21), Complete = 0d, Cost = 53, BaselineCost = 83d, BaselineStart = new DateTime(2012, 7, 10), BaselineEnd = new DateTime(2012, 7, 20) });
          taskDetails[0].ChildTask[6].ChildTask[0].ChildTask.Add(new HighlightingTasksModel() { Id = 41, Name = "Install Ceiling Insulation", StDate = new DateTime(2012, 6, 21), EndDate = new DateTime(2012, 6, 22), Complete = 0d, Cost = 89, BaselineCost = 83d, BaselineStart = new DateTime(2012, 7, 20), BaselineEnd = new DateTime(2012, 7, 22) });
 
-
          taskDetails[0].ChildTask[6].ChildTask.Add(new HighlightingTasksModel() { Id = 42, Name = "Painting and Wallpaper", StDate = new DateTime(2012, 6, 22), EndDate = new DateTime(2012, 6, 23), Complete = 0d, Cost = 453, BaselineCost = 563, BaselineStart = new DateTime(2012, 7, 21), BaselineEnd = new DateTime(2012, 7, 25) });
          taskDetails[0].ChildTask[6].ChildTask[1].ChildTask.Add(new HighlightingTasksModel() { Id = 43, Name = "Painting all Interior", StDate = new DateTime(2012, 6, 22), EndDate = new DateTime(2012, 6, 23), Complete = 0d, Cost = 453, BaselineCost = 563, BaselineStart = new DateTime(2012, 7, 21), BaselineEnd = new DateTime(2012, 7, 25) });
          taskDetails[0].ChildTask[6].ChildTask[1].ChildTask.Add(new HighlightingTasksModel() { Id = 44, Name = "Painting all Exterior", StDate = new DateTime(2012, 6, 23), EndDate = new DateTime(2012, 6, 25), Complete = 0d, Cost = 352, BaselineCost = 342, BaselineStart = new DateTime(2012, 7, 26), BaselineEnd = new DateTime(2012, 7, 27) });
@@ -707,7 +706,6 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
          taskDetails[0].ChildTask[7].ChildTask.Add(new HighlightingTasksModel() { Id = 59, Name = "Cleaning", StDate = new DateTime(2012, 7, 14), EndDate = new DateTime(2012, 7, 16), Complete = 0d, Cost = 430, BaselineCost = 433d, BaselineStart = new DateTime(2012, 8, 25), BaselineEnd = new DateTime(2012, 8, 26) });
          taskDetails[0].ChildTask[7].ChildTask.Add(new HighlightingTasksModel() { Id = 60, Name = "Final Inspection", StDate = new DateTime(2012, 7, 16), EndDate = new DateTime(2012, 7, 17), Complete = 0d, Cost = 0, BaselineCost = 5, BaselineStart = new DateTime(2012, 8, 26), BaselineEnd = new DateTime(2012, 8, 27) });
          taskDetails[0].ChildTask[7].ChildTask.Add(new HighlightingTasksModel() { Id = 61, Name = "Move In", StDate = new DateTime(2012, 7, 17), EndDate = new DateTime(2012, 7, 17), Complete = 0d, Cost = 0, BaselineCost = 0, BaselineStart = new DateTime(2012, 8, 28), BaselineEnd = new DateTime(2012, 8, 28) });
-
 
          //Adding Resources
          taskDetails[0].ChildTask[0].ChildTask[0].ChildTask[0].Resource.Add(ResidentialConstructionResources[1]);
@@ -825,14 +823,13 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
          taskDetails[0].ChildTask[7].ChildTask[0].Predecessor.Add(new Predecessor() { GanttTaskIndex = 57, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
          taskDetails[0].ChildTask[7].ChildTask[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 59, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
          taskDetails[0].ChildTask[7].ChildTask[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 60, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
-
          return taskDetails;
      }
 
      /// <summary>
      /// Gets the resources.
      /// </summary>
-     /// <returns></returns>
+     /// <returns>The resources</returns>
      private static ObservableCollection<Resource> GetResources()
      {
          ObservableCollection<Resource> Resources = new ObservableCollection<Resource>();
@@ -853,7 +850,6 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
          Resources.Add(new Resource() { ID = 15, Name = "Appliance Contractor" });
          Resources.Add(new Resource() { ID = 16, Name = "Masonry Contractor" });
          Resources.Add(new Resource() { ID = 17, Name = "Maid Service" });
-
          return Resources;
      }
  }
@@ -1007,11 +1003,7 @@ public class ViewModel : TaskRepository
 
 The following image shows the Gantt with Highlighted Tasks:
 
-
-
-![Highlighting-Tasks_image](Highlighting-Tasks_images/Highlighting-Tasks_img1.png)
-
-
+![gantt-control-highlighting-tasks](Highlighting-Tasks_images/gantt-control-highlighting-tasks.png)
 
 Gantt with Highlighted Tasks
 {:.caption}

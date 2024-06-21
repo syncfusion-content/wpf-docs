@@ -135,8 +135,23 @@ The following code illustrates Adding Custom Schedule to an Application:
 
 {% tabs  %}
 {% highlight xaml %}
-
-<!--Gantt node style-->
+ 
+<syncfusion:GanttControl x:Name="ganttControl"
+                         CustomScheduleSource="{Binding CustomScheduleInfo}"
+                         ItemsSource="{Binding TopCountriesCollection}"
+                         ScheduleType="CustomNumeric"
+                         UseAutoUpdateHierarchy="False">
+    <syncfusion:GanttControl.TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping TaskIdMapping="Id"                    
+                                         TaskNameMapping="Name"                
+                                         StartPointMapping="Start" 
+                                         FinishPointMapping="End"              
+                                         ChildMapping="ChildTask"              
+                                         ProgressMapping="Complete"
+                                         ResourceInfoMapping="Resource">
+        </syncfusion:TaskAttributeMapping>
+    </syncfusion:GanttControl.TaskAttributeMapping>
+ <syncfusion:GanttControl.Resources>
  <Style x:Key="TopCountriesNode" TargetType="{x:Type gantt:GanttNode}">
      <Setter Property="Template">
          <Setter.Value>
@@ -240,23 +255,6 @@ The following code illustrates Adding Custom Schedule to an Application:
          </Setter.Value>
      </Setter>
  </Style>
- 
-<syncfusion:GanttControl x:Name="ganttControl"
-                         CustomScheduleSource="{Binding CustomScheduleInfo}"
-                         ItemsSource="{Binding TopCountriesCollection}"
-                         ScheduleType="CustomNumeric"
-                         UseAutoUpdateHierarchy="False">
-    <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping TaskIdMapping="Id"                    
-                                         TaskNameMapping="Name"                
-                                         StartPointMapping="Start" 
-                                         FinishPointMapping="End"              
-                                         ChildMapping="ChildTask"              
-                                         ProgressMapping="Complete"
-                                         ResourceInfoMapping="Resource">
-        </syncfusion:TaskAttributeMapping>
-    </syncfusion:GanttControl.TaskAttributeMapping>
- <syncfusion:GanttControl.Resources>
     <Style BasedOn="{StaticResource TopCountriesNode}" TargetType="gantt:GanttNode" />
     <Style BasedOn="{StaticResource MileStone}" TargetType="gantt:MileStone" />
  </syncfusion:GanttControl.Resources>
@@ -268,7 +266,6 @@ The following code illustrates Adding Custom Schedule to an Application:
 {% endhighlight  %}
 {% highlight c# %}
 
-//Initializing Gantt
 this.ganttControl.ItemsSource = new ViewModel().TaskCollections;
 this.ganttControl.ScheduleType= ScheduleType.CustomNumeric;
 this.ganttControl.UseAutoUpdateHierarchy = false;
@@ -310,7 +307,7 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      /// <summary>
      /// Collection which is used to store the CountryNamesWith their Flags
      /// </summary>
-     internal static Dictionary<string, string> CountryNamesandFlags = new Dictionary<string, string>();
+     internal static Dictionary<string, string> countryFlagDetails = new Dictionary<string, string>();
 
      /// <summary>
      /// Gets or sets the custom schedule info.
@@ -360,7 +357,7 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      /// <summary>
      /// Gets the data.
      /// </summary>
-     /// <returns></returns>
+     /// <returns>The task details</returns>
      public ObservableCollection<TopCountries> GetData()
      {
          var taskDetails = new ObservableCollection<TopCountries>();
@@ -405,46 +402,47 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      }
 
      #region Image and Country Collection
+
      /// <summary>
      /// Creates the country collection with the corresponding Image.
      /// </summary>
-     void CreateCountryCollection()
+     private void CreateCountryCollection()
      {
-         CountryNamesandFlags.Add("Afghanistan", "Flag_Afghanistan.png");
-         CountryNamesandFlags.Add("Argentina", "Flag_Argentina.png");
-         CountryNamesandFlags.Add("Belarus", "Flag_Belarus.png");
-         CountryNamesandFlags.Add("Botswana", "Flag_Botswana.png");
-         CountryNamesandFlags.Add("Brazil", "Flag_Brazil.png");
-         CountryNamesandFlags.Add("Democratic Republic of the Congo", "Flag_Democratic_Republic_of_the_Congo.png");
-         CountryNamesandFlags.Add("Dominican Republic", "Flag_Dominican_Republic.png");
-         CountryNamesandFlags.Add("Ethiopia", "Flag_Ethiopia.png");
-         CountryNamesandFlags.Add("India", "Flag_India.png");
-         CountryNamesandFlags.Add("Laos", "Flag_Laos.png");
-         CountryNamesandFlags.Add("Lebanon", "Flag_Lebanon.png");
-         CountryNamesandFlags.Add("Malaysia", "Flag_Malaysia.png");
-         CountryNamesandFlags.Add("Maldives", "Flag_Maldives.png");
-         CountryNamesandFlags.Add("Mozambique", "Flag_Mozambique.png");
-         CountryNamesandFlags.Add("Niger", "Flag_Niger.png");
-         CountryNamesandFlags.Add("Nigeria", "Flag_Nigeria.png");
-         CountryNamesandFlags.Add("Panama", "Flag_Panama.png");
-         CountryNamesandFlags.Add("Papua New Guinea", "Flag_Papua_New_Guinea.png");
-         CountryNamesandFlags.Add("Paraguay", "Flag_Paraguay.png");
-         CountryNamesandFlags.Add("People's Republic of China", "Flag_People's_Republic_of_China.png");
-         CountryNamesandFlags.Add("Peru", "Flag_Peru.png");
-         CountryNamesandFlags.Add("Philippines", "Flag_Philippines.png");
-         CountryNamesandFlags.Add("Qatar", "Flag_Qatar.png");
-         CountryNamesandFlags.Add("Republic of China(Taiwan)", "Flag_Republic_of_China.png");
-         CountryNamesandFlags.Add("Republic of the Congo", "Flag_Republic_of_the_Congo.png");
-         CountryNamesandFlags.Add("Singapore", "Flag_Singapore.png");
-         CountryNamesandFlags.Add("Sri Lanka", "Flag_Sri_Lanka.png");
-         CountryNamesandFlags.Add("Thailand", "Flag_Thailand.png");
-         CountryNamesandFlags.Add("Turkey", "Flag_Turke.png");
-         CountryNamesandFlags.Add("Turkmenistan", "Flag_Turkmenistan.png");
-         CountryNamesandFlags.Add("Uruguay", "Flag_Uruguay.png");
-         CountryNamesandFlags.Add("Uzbekistan", "Flag_Uzbekistan.png");
-         CountryNamesandFlags.Add("Yemen", "Flag_Yemen.png");
-         CountryNamesandFlags.Add("Zambia", "Flag_Zambia.png");
-         CountryNamesandFlags.Add("Zimbabwe", "Flag_Zimbabwe.png");
+         countryFlagDetails.Add("Afghanistan", "Flag_Afghanistan.png");
+         countryFlagDetails.Add("Argentina", "Flag_Argentina.png");
+         countryFlagDetails.Add("Belarus", "Flag_Belarus.png");
+         countryFlagDetails.Add("Botswana", "Flag_Botswana.png");
+         countryFlagDetails.Add("Brazil", "Flag_Brazil.png");
+         countryFlagDetails.Add("Democratic Republic of the Congo", "Flag_Democratic_Republic_of_the_Congo.png");
+         countryFlagDetails.Add("Dominican Republic", "Flag_Dominican_Republic.png");
+         countryFlagDetails.Add("Ethiopia", "Flag_Ethiopia.png");
+         countryFlagDetails.Add("India", "Flag_India.png");
+         countryFlagDetails.Add("Laos", "Flag_Laos.png");
+         countryFlagDetails.Add("Lebanon", "Flag_Lebanon.png");
+         countryFlagDetails.Add("Malaysia", "Flag_Malaysia.png");
+         countryFlagDetails.Add("Maldives", "Flag_Maldives.png");
+         countryFlagDetails.Add("Mozambique", "Flag_Mozambique.png");
+         countryFlagDetails.Add("Niger", "Flag_Niger.png");
+         countryFlagDetails.Add("Nigeria", "Flag_Nigeria.png");
+         countryFlagDetails.Add("Panama", "Flag_Panama.png");
+         countryFlagDetails.Add("Papua New Guinea", "Flag_Papua_New_Guinea.png");
+         countryFlagDetails.Add("Paraguay", "Flag_Paraguay.png");
+         countryFlagDetails.Add("People's Republic of China", "Flag_People's_Republic_of_China.png");
+         countryFlagDetails.Add("Peru", "Flag_Peru.png");
+         countryFlagDetails.Add("Philippines", "Flag_Philippines.png");
+         countryFlagDetails.Add("Qatar", "Flag_Qatar.png");
+         countryFlagDetails.Add("Republic of China(Taiwan)", "Flag_Republic_of_China.png");
+         countryFlagDetails.Add("Republic of the Congo", "Flag_Republic_of_the_Congo.png");
+         countryFlagDetails.Add("Singapore", "Flag_Singapore.png");
+         countryFlagDetails.Add("Sri Lanka", "Flag_Sri_Lanka.png");
+         countryFlagDetails.Add("Thailand", "Flag_Thailand.png");
+         countryFlagDetails.Add("Turkey", "Flag_Turke.png");
+         countryFlagDetails.Add("Turkmenistan", "Flag_Turkmenistan.png");
+         countryFlagDetails.Add("Uruguay", "Flag_Uruguay.png");
+         countryFlagDetails.Add("Uzbekistan", "Flag_Uzbekistan.png");
+         countryFlagDetails.Add("Yemen", "Flag_Yemen.png");
+         countryFlagDetails.Add("Zambia", "Flag_Zambia.png");
+         countryFlagDetails.Add("Zimbabwe", "Flag_Zimbabwe.png");
 
      }
      #endregion
@@ -822,13 +820,13 @@ public class ViewModel
 
     public ViewModel()
     {
-    TaskCollection = this.GetDataSource();
+         this.TaskCollection = this.GetDataSource();
     }
 
     /// <summary>
     /// Gets the data.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The task details</returns>
     private ObservableCollection<Task> GetDataSource()
     {
         var taskDetails = new ObservableCollection<Task>();
@@ -895,7 +893,7 @@ public class ViewModel
 {% endtabs %}
 
 
-The following image shows Custom DateTime Schedule:
+The following image shows custom DateTime schedule:
 
 ![gantt-control-custom-datetime-schedule](Custom-Schedule_images/gantt-control-custom-datetime-schedule.png)
 
