@@ -135,10 +135,6 @@ The following code illustrates Adding Custom Schedule to an Application:
 
 {% tabs  %}
 {% highlight xaml %}
-<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:gantt="http://schemas.syncfusion.com/wpf"
-                    xmlns:chart="clr-namespace:Syncfusion.Windows.Controls.Gantt;assembly=Syncfusion.Gantt.Wpf" >
 
 <!--Gantt node style-->
  <Style x:Key="TopCountriesNode" TargetType="{x:Type gantt:GanttNode}">
@@ -244,8 +240,7 @@ The following code illustrates Adding Custom Schedule to an Application:
          </Setter.Value>
      </Setter>
  </Style>
- </ResourceDictionary>
-
+ 
 <syncfusion:GanttControl x:Name="ganttControl"
                          CustomScheduleSource="{Binding CustomScheduleInfo}"
                          ItemsSource="{Binding TopCountriesCollection}"
