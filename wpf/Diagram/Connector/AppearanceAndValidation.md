@@ -406,7 +406,7 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 
 ![WPF Diagram Connector Padding](Connector_images/wpf-diagram-connector-padding.PNG)
 
-For sample, refer to [Decorator](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Connector%20Padding "Decorator")
+For sample, refer to [Decorator](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Connector%20Padding)
 
 ## Bridging
 
