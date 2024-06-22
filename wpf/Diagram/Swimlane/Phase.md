@@ -13,9 +13,9 @@ The [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseV
 
 ## Create an empty Phase
 
-You can create the [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) and add into the[Phases](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Phases) collection of the Swimlane.
+You can create the [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) and add into the [Phases](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Phases) collection of the Swimlane.
 
-N> For Horizontal Swimlane, you must set the UnitWidth of the Phase. For Vertical Swimlane, you must set UnitHeight of the Phase.
+N> For Horizontal Swimlane, you must set the `UnitWidth` of the Phase. For Vertical Swimlane, you must set `UnitHeight` of the Phase.
 
 The following code example explains how to add phase at swimlane.
 

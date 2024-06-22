@@ -50,7 +50,7 @@ CheckBoxAlignment = "Right"
 
 ## Flow direction
 
-The flow direction for the CheckListBox control is set through the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.7.2) property.
+The flow direction for the CheckListBox control is set through the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.7.2) property.
 
 To set the FlowDirection to RightToLeft, use the below code:
 

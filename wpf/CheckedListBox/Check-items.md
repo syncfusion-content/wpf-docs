@@ -9,7 +9,7 @@ documentation: ug
 
 # Check Items in WPF CheckedListBox (CheckListBox)
 
-In [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), items present in the control can be checked or unchecked either by using any one of the following ways:
+In [CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox), items present in the control can be checked or unchecked either by using any one of the following ways:
 
 1. Using Collection
 2. Using Property
@@ -348,7 +348,7 @@ private void CheckListBox_ItemChecked(object sender, ItemCheckedEventArgs e)
  
 ## Selection changed notification
 
-When the selected item is changed, it will be notified by using the [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) event.The [SelectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.selectionchangedeventargs?redirectedfrom=MSDN&view=netframework-4.8) has the following members that provides information for the `SelectionChanged` event:
+When the selected item is changed, it will be notified by using the [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) event.The [SelectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.selectionchangedeventargs?redirectedfrom=MSDN&view=netframework-4.8) has the following members that provides information for the `SelectionChanged` event:
 
 * **Added items** : Gets a collection of the underlying data objects in which the selection has to be processed.
 

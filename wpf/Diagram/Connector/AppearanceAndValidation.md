@@ -406,7 +406,7 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 
 ![WPF Diagram Connector Padding](Connector_images/wpf-diagram-connector-padding.PNG)
 
-For sample, refer to [Decorator](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Connector%20Padding "Decorator")
+For sample, refer to [Decorator](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Connector%20Padding)
 
 ## Bridging
 
@@ -661,15 +661,15 @@ Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tre
 
 ## See Also
 
-[How to add annotations for connectors](/wpf/diagram/annotation)
+[How to add annotations for connectors?](/wpf/diagram/annotation)
 
-[How to add or remove connector constraints](/wpf/diagram/constraints#connector-constraints)
+[How to add or remove connector constraints?](/wpf/diagram/constraints#connector-constraints)
 
-[How to add ports for connector](/wpf/diagram/port)
+[How to add ports for connector?](/wpf/diagram/port)
 
-[How to group other elements with connector](/wpf/diagram/group)
+[How to group other elements with connector?](/wpf/diagram/group)
 
-[How to draw connector independently using drawing tool](/wpf/diagram/tools)
+[How to draw connector independently using drawing tool?](/wpf/diagram/tools)
 
 [How to customize the connection indicator style of node and port?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
 

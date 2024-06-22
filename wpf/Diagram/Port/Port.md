@@ -122,7 +122,7 @@ RootGrid.Children.Add(diagram);
 
 ![WPF Diagram Node Port](Port_images/wpf-diagram-node-Port.PNG)
 
->N By default, port will be visible while dragging the connector thumb hover the diagram element where port presents within the diagram element. For more information , refer to the [PortVisibility](https://help.syncfusion.com/wpf/diagram/port#portvisibility) 
+N> By default, port will be visible while dragging the connector thumb hover the diagram element where port presents within the diagram element. For more information , refer to the [PortVisibility](https://help.syncfusion.com/wpf/diagram/port#portvisibility) 
 
 ### NodeOffset
 The `NodeOffsetX` and `NodeOffsetY` properties of port is used to position the port based on fractions. 0 represents Node’s top/left corner, 1 represents Node’s bottom/right corner, and 0.5 represents Node’s center point. Default value is (0.5, 0.5).
@@ -356,7 +356,7 @@ The appearance of `DockPort` such as stroke and stroke thickness can be customiz
 
 ![WPF Diagram Port Geometry Style](Port_images/wpf-diagram-port-geometry-style.PNG)
 
->N To visualize the DockPort, it is must to specify the SourcePoint , TargetPoint, and ConnectorGeometryStyle properties.
+N> To visualize the DockPort, it is must to specify the SourcePoint , TargetPoint, and ConnectorGeometryStyle properties.
 
 ## Padding
 
@@ -419,11 +419,11 @@ The visibility of ports depends on the properties of `MouseOver`, `Default`, `Co
 
 | Property | Definition |
 |---|---|
-| MouseOver |  Port is visible when mousehover the DiagramElement. |
-| Default | Port is visible while dragging the connector thumb hover the DiagramElement where port presents within the DiagramElement. |
+| MouseOver |  Port is visible when mouse hover over the DiagramElement. |
+| Default | Port is visible while dragging the connector thumb over the DiagramElement where port is present within the DiagramElement. |
 | Collapse | Port is not visible for the DiagramElement. |
-| MouseOverOnConnect | Port is visible while dragging the connector thumb hover the DiagramElement where port presents within the DiagramElement. |
-| ValidConnection |Specifies to visible the port when mousehover the DiagramElement and enable the PortConstraints as InConnect and Outconnect. |
+| MouseOverOnConnect | Port is visible while dragging the connector thumb over the DiagramElement where a port is present within the DiagramElement. |
+| ValidConnection |Specifies to make the port visible when hovering over the DiagramElement and enable the PortConstraints as InConnect and OutConnect.|
 | Visible | Port is always visible for the DiagramElement. |
 
 To learn more about PortVisibility, refer to [PortVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortVisibility.html).
@@ -470,7 +470,7 @@ For more information , refer to [ConnectionDirection](https://help.syncfusion.co
 
 * The  [`PortVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DockPortViewModel.html#Syncfusion_UI_Xaml_Diagram_DockPortViewModel_PortVisibility) property allows you to define, when the port should be visible.
 
->N For DockPort customization, refer to [Geometry Style](https://help.syncfusion.com/wpf/diagram/port#geometry-style)
+N> For DockPort customization, refer to [Geometry Style](https://help.syncfusion.com/wpf/diagram/port#geometry-style)
 
 {% tabs %}
 {% highlight xaml %}
@@ -518,11 +518,11 @@ NodePortViewModel port = new NodePortViewModel()
 
 The `PortChangedEvent` will get invoked when you drag the port.
 
-* NodePort: The `PortChangedEvent` will notify the `OffsetX`and `OffsetY` changes with their `OldValue` and `NewValue`. 
+* **NodePort:** The `PortChangedEvent` will notify the `OffsetX`and `OffsetY` changes with their `OldValue` and `NewValue`. 
  
-* ConnectorPort: The `PortChangedEvent` will notify the `Length` changes with their `OldValue` and `NewValue`.
+* **ConnectorPort:** The `PortChangedEvent` will notify the `Length` changes with their `OldValue` and `NewValue`.
  
-* DockPort: The `PortChangedEvent` will notify the `SourcePoint`and `TargetPoint` changes with their `OldValue` and `NewValue`.
+* **DockPort:** The `PortChangedEvent` will notify the `SourcePoint`and `TargetPoint` changes with their `OldValue` and `NewValue`.
 
  To explore about arguments, refer to [`PortChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortChangedEventArgs.html)
 
