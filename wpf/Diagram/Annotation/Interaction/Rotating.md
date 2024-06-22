@@ -10,6 +10,7 @@ documentation: ug
 # How to Rotate the Annotation
 
 Rotation process can be applied over annotation and rotation can be controlled by annotation and its parent node or connector.
+
 To learn about annotation constraints, refer to the [Annotation Constraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html).
 
 ## Rotating the annotation

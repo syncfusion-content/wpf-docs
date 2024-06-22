@@ -19,26 +19,28 @@ Diagram elements such as [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:Stencil x:Name="stencil"                             BorderThickness="0,0,1,0" ExpandMode="All">
-     <syncfusion:Stencil.SymbolSource>
-         <syncfusion:SymbolCollection>
-        <!--Rendered HorizontalSwimlane-->
-         <syncfusion:LaneViewModel ID="HorizontalSwimlane" Key="Swimlane Shapes" Orientation="Horizontal" ></syncfusion:LaneViewModel>
-         <!--Rendered VerticalSwimlane-->
-        <syncfusion:LaneViewModel ID="VerticalSwimlane" Key="Swimlane Shapes" Orientation="Vertical" ></syncfusion:LaneViewModel>
-         <!--Rendered HorizontalPhase-->
-        <syncfusion:PhaseViewModel ID="HorizontalPhase" Key="Swimlane Shapes" Orientation="Horizontal" ></syncfusion:PhaseViewModel>
-        <!--Rendered VerticalPhase-->
-        <syncfusion:PhaseViewModel ID="VerticalPhase" Key="Swimlane Shapes" Orientation="Vertical"></syncfusion:PhaseViewModel>
-                        </syncfusion:SymbolCollection>
-                    </syncfusion:Stencil.SymbolSource>
-         <syncfusion:Stencil.SymbolGroups>
-             <syncfusion:SymbolGroups>
-               <!--Separate groups based on the key-->
-             <syncfusion:SymbolGroupProvider MappingName="Key"/>
-         </syncfusion:SymbolGroups>
+
+<syncfusion:Stencil x:Name="stencil" BorderThickness="0,0,1,0" ExpandMode="All">
+    <syncfusion:Stencil.SymbolSource>
+        <syncfusion:SymbolCollection>
+            <!-- Rendered HorizontalSwimlane -->
+            <syncfusion:LaneViewModel ID="HorizontalSwimlane" Key="Swimlane Shapes" Orientation="Horizontal" />
+            <!-- Rendered VerticalSwimlane -->
+            <syncfusion:LaneViewModel ID="VerticalSwimlane" Key="Swimlane Shapes" Orientation="Vertical" />
+            <!-- Rendered HorizontalPhase -->
+            <syncfusion:PhaseViewModel ID="HorizontalPhase" Key="Swimlane Shapes" Orientation="Horizontal" />
+            <!-- Rendered VerticalPhase -->
+            <syncfusion:PhaseViewModel ID="VerticalPhase" Key="Swimlane Shapes" Orientation="Vertical" />
+        </syncfusion:SymbolCollection>
+    </syncfusion:Stencil.SymbolSource>
+    <syncfusion:Stencil.SymbolGroups>
+        <syncfusion:SymbolGroups>
+            <!-- Separate groups based on the key -->
+            <syncfusion:SymbolGroupProvider MappingName="Key" />
+        </syncfusion:SymbolGroups>
     </syncfusion:Stencil.SymbolGroups>
- </syncfusion:Stencil>
+</syncfusion:Stencil>
+
 
 {% endhighlight %}
 {% endtabs %}

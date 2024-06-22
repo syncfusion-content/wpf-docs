@@ -70,7 +70,7 @@ Now, the swimlane will be as follows.
 
 The Swimlane Header was the primary element for swimlanes. The [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Header) property of swimlane allows you to define its textual description and to customize its appearance.
 
->Note: By using this header,the swimlane interaction will be performed,like selection, dragging,and more.
+N> By using this header,the swimlane interaction will be performed,like selection, dragging,and more.
 
 The following code example explains how to define the swimlane header.
 
@@ -251,7 +251,7 @@ The following image shows how to edit the swimlane header.
 
 The orientation of swimlane can be customized with the [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Orientation) property of the header.
 
->Note: By default the swimlane orientation has Horizontal.
+N> By default the swimlane orientation has Horizontal.
 
 The following code example explains how to set the orientation of the swimlane.
 
