@@ -13,8 +13,8 @@ To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com
 ## Assembly references
 <table>
 <tr>
-<th>Removed Assemblies</th>
-<th>Added Assemblies</th></tr>
+<th>Removed assemblies</th>
+<th>Added assemblies</th></tr>
 <tr>
 <td>Syncfusion.Grid.WPF<br/>
 Syncfusion.GridCommon.WPF
@@ -29,8 +29,8 @@ Syncfusion.Themes.MaterialLight.WPF
 ## Namespace
 <table>
 <tr>
-<th>Removed Namespaces</th>
-<th>Added Namespaces</th></tr>
+<th>Removed namespaces</th>
+<th>Added namespace</th></tr>
 <tr>
 <td>Syncfusion.Windows.Controls.Gantt.Grid<br/>
 Syncfusion.Windows.Controls.Gantt.Schedule<br/>
@@ -43,9 +43,9 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 ### Class
 <table>
 <tr>
-<th>Class Names</th>
-<th>Existing Base Classes</th>
-<th>New Base Classes</th>
+<th>Class Name</th>
+<th>Existing base class</th>
+<th>New base class</th>
 </tr>
 
 <tr>
@@ -58,10 +58,10 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 ### Properties
 <table>
 <tr>
-<th>Existing API Types</th>
-<th>Existing API Names</th>
-<th>New API Types</th>
-<th>New API Names</th>
+<th>Existing API type</th>
+<th>Existing API name</th>
+<th>New API type</th>
+<th>New API Name</th>
 </tr>
 
 <tr>
@@ -96,8 +96,8 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 ### Methods
 <table>
 <tr>
-<th>Existing Methods</th>
-<th>New Methods</th>
+<th>Existing method</th>
+<th>New method</th>
 </tr>
 
 <tr>
@@ -114,10 +114,10 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 ### Events
 <table>
 <tr>
-<th>Existing Structures</th>
-<th>Existing Names</th>
-<th>New Structures</th>
-<th>New Names</th>
+<th>Existing structure</th>
+<th>Existing name</th>
+<th>New structure</th>
+<th>New name</th>
 </tr>
 
 <tr>
@@ -150,10 +150,10 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 ### Enums
 <table>
 <tr>
-<th>Existing Names</th>
-<th>Existing Members</th>
-<th>New Names</th>
-<th>New Members</th>
+<th>Existing name</th>
+<th>Existing members</th>
+<th>New name</th>
+<th>New members</th>
 </tr>
 
 <tr>
@@ -221,8 +221,8 @@ VS2010
 ### Removed public classes
 <table>
 <tr>
-<th>Class Names</th>
-<th>Base Classes</th>
+<th>Class name</th>
+<th>Base class</th>
 </tr>
 
 <tr>
@@ -267,9 +267,9 @@ VS2010
 ### Removed API
 <table>
 <tr>
-<th>Class Names</th>
-<th>Property Types</th>
-<th>Property Names</th>
+<th>Class name</th>
+<th>Property type</th>
+<th>Property name</th>
 </tr>
 
 <tr>
@@ -282,10 +282,10 @@ VS2010
 ## Access type changed classes
 <table>
 <tr>
-<th>Class Names</th>
-<th>Base Classes</th>
-<th>Existing Access Types</th>
-<th>Changed Access Types</th>
+<th>Class name</th>
+<th>Base class</th>
+<th>Existing access type</th>
+<th>Changed access type</th>
 </tr>
 
 <tr>
@@ -308,10 +308,10 @@ VS2010
 ### Properties
 <table>
 <tr>
-<th>Names</th>
-<th>Types</th>
-<th>Default Values</th>
-<th>Summaries</th>
+<th>Name</th>
+<th>Type</th>
+<th>Default value</th>
+<th>Summary</th>
 </tr>
 
 <tr>
@@ -346,9 +346,9 @@ VS2010
 ### Events
 <table>
 <tr>
-<th>Event Names</th>
-<th>EventArg Names</th>
-<th>Summaries</th>
+<th>Event name</th>
+<th>EventArg name</th>
+<th>Summary</th>
 </tr>
 
 <tr>
@@ -388,8 +388,8 @@ To make the migration from GridTreeControl to SfTreeGrid, integrating drag-and-d
 ### Assembly references
 <table>
 <tr>
-<th>Removed Assemblies</th>
-<th>Added Assemblies</th>
+<th>Removed assemblies</th>
+<th>Added assemblies</th>
 </tr>
 
 <tr>
@@ -452,8 +452,8 @@ Syncfusion.GridCommon.WPF
 #### ExpandStateChanging
 <table>
 <tr>
-<th>GridTreeControl Commands</th>
-<th>SfTreeGrid Commands</th>
+<th>GridTreeControl commands</th>
+<th>SfTreeGrid commands</th>
 </tr>
 
 <tr>
@@ -497,8 +497,8 @@ GanttGridNodeCollapsingCommand</td>
 #### ExpandStateChanged
 <table>
 <tr>
-<th>GridTreeControl Commands</th>
-<th>SfTreeGrid Commands</th>
+<th>GridTreeControl commands</th>
+<th>SfTreeGrid commands</th>
 </tr>
 
 <tr>
@@ -542,9 +542,9 @@ GanttGridNodeCollapsedCommand</td>
 These events are deprecated. The GridTreeControl has been replaced by the SfTreeGrid in the GanttControl.
 <table>
 <tr>
-<th>Structures</th>
-<th>Event Names</th>
-<th>Summaries</th>
+<th>Structure</th>
+<th>Event name</th>
+<th>Summary</th>
 </tr>
 
 <tr>
