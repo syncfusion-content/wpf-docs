@@ -51,6 +51,6 @@ For example, you have to give name as **Syncfusion.Gantt.WPF.fr.resx** for Frenc
 
 7.Add the Name/Value pair in Resource Designer of **Syncfusion.Gantt.WPF.fr.resx** file and change its corresponding value to corresponding culture. 
 
-![FinalOutput](Localization_images/FinalOutput.png)
+![localization-in-wpf-gantt-control](Localization_images/localization-in-wpf-gantt-control.png)
 
 You can download the sample for localization of Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Gantt-1030234357.zip)
