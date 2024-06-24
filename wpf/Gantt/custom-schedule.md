@@ -162,9 +162,6 @@ The following code illustrates Adding Custom Schedule to an Application:
                      VerticalAlignment="Center"
                      BorderThickness="0.5"
                      Opacity="0.8">
-                     <interact:Interaction.Behaviors>
-                         <local:NumericGanttNodeCustomizationBehavior />
-                     </interact:Interaction.Behaviors>
                      <Grid>
                          <Grid.ColumnDefinitions>
                              <ColumnDefinition Width="Auto" />
@@ -280,6 +277,291 @@ taskAttributeMapping.FinishDateMapping = "End";
 taskAttributeMapping.ProgressMapping = "Complete";
 taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
+
+{% endhighlight  %}
+
+{% highlight c# tabtitle="Model.cs" %}
+
+public class TopCountries : NotificationObject
+{
+    /// <summary>
+    /// Initializes a new instance of the <see cref="TopCountries"/> class.
+    /// </summary>
+    public TopCountries()
+    {
+        this.ChildTopCountries = new ObservableCollection<TopCountries>();
+    }
+
+    /// <summary>
+    /// Holds the id value.
+    /// </summary>
+    private int id;
+
+    /// <summary>
+    /// Holds the name value.
+    /// </summary>
+    private string name;
+
+    /// <summary>
+    /// Holds the rank value.
+    /// </summary>
+    private int _rank;
+
+    /// <summary>
+    /// Holds the child countries value.
+    /// </summary>
+    private ObservableCollection<TopCountries> childTopCountries;
+
+    /// <summary>
+    /// Holds the end value.
+    /// </summary>
+    private double _end;
+
+    /// <summary>
+    /// Holds the complete value.
+    /// </summary>
+    private int _complete = 100;
+
+    /// <summary>
+    /// Holds the start value.
+    /// </summary>
+    private double _start;
+
+    /// <summary>
+    /// Gets or sets the start.
+    /// </summary>
+    /// <value>
+    /// The start.
+    /// </value>
+    public double Start
+    {
+        get
+        {
+            return _start;
+        }
+        set
+        {
+            // if the TopCountries is parent TopCountries it selects the minimum start date of the childTopCountriess
+            if (childTopCountries != null && childTopCountries.Count >= 1)
+            {
+                if (this._start != value)
+                {
+                    this._start = childTopCountries.Min(s => s.Start);
+                }
+            }
+            else
+            {
+                this._start = value;
+            }
+            RaisePropertyChanged("Start");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the end.
+    /// </summary>
+    /// <value>
+    /// The end.
+    /// </value>
+    public double End
+    {
+        get
+        {
+            return this._end;
+        }
+        set
+        {
+            // if the TopCountries is parent TopCountries it selects the maximum end date of the childTopCountriess
+            if (this.childTopCountries != null && this.childTopCountries.Count >= 1)
+            {
+                if (this._end != value)
+                {
+                   this._end = childTopCountries.Max(s => s.End);
+                }
+            }
+            else
+            {
+                this._end = value;
+            }
+            RaisePropertyChanged("End");
+        }
+    }
+
+
+    /// <summary>
+    /// Gets or sets the complete.
+    /// </summary>
+    /// <value>
+    /// The complete.
+    /// </value>
+    public int Rank
+    {
+        get
+        {
+            return this._rank;
+        }
+        set
+        {
+            this._rank = value;
+            RaisePropertyChanged("Rank");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the complete.
+    /// </summary>
+    /// <value>
+    /// The complete.
+    /// </value>
+    public int Complete
+    {
+        get { return this._complete; }
+        set { this._complete = value; }
+    }
+
+    /// <summary>
+    /// Gets or sets the name.
+    /// </summary>
+    /// <value>
+    /// The name.
+    /// </value>
+    public string Name
+    {
+        get
+        {
+            return this.name;
+        }
+        set
+        {
+            this.name = value;
+            RaisePropertyChanged("Name");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the id.
+    /// </summary>
+    /// <value>
+    /// The id.
+    /// </value>
+    public int Id
+    {
+        get
+        {
+            return this.id;
+        }
+        set
+        {
+            this.id = value;
+            RaisePropertyChanged("Id");
+        }
+    }
+
+    #region ChildTopCountries Collection
+
+    /// <summary>
+    /// Gets or sets the child top countries.
+    /// </summary>
+    /// <value>The child top countries.</value>
+    public ObservableCollection<TopCountries> ChildTopCountries
+    {
+        get
+        {
+            if (this.childTopCountries == null)
+            {
+                this.childTopCountries = new ObservableCollection<TopCountries>();
+                /// Collection changed of child TopCountriess are hooked to listen and refresh the parent node based on the changes made in Child.
+                this.childTopCountries.CollectionChanged += ChildNodesCollectionChanged;
+            }
+            return this.childTopCountries;
+        }
+        set
+        {
+            this.childTopCountries = value;
+            ///Collection changed of child TopCountriess are hooked to listen and refresh the parent node based on the changes made in Child.
+
+            this.childTopCountries.CollectionChanged += ChildNodesCollectionChanged;
+
+            if (value.Count > 0)
+            {
+                this.childTopCountries.ToList().ForEach(n =>
+                {
+                    /// To listen the changes occuring in child TopCountries.
+                    n.PropertyChanged += ChildNodePropertyChanged;
+
+                });
+                UpdateData();
+            }
+            RaisePropertyChanged("ChildTopCountries");
+        }
+    }
+
+    /// <summary>
+    /// The following does the calculations to update the Parent TopCountries, when child collection property changes.
+    /// </summary>
+    /// <param name="sender">The source</param>
+    /// <param name="e">Property changed event args</param>
+    void ChildNodePropertyChanged(object sender, PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName != null)
+            if (e.PropertyName == "Start" || e.PropertyName == "End")
+            {
+                UpdateData();
+            }
+    }
+
+    /// <summary>
+    /// Updates the data.
+    /// </summary>
+    private void UpdateData()
+    {
+        /// Updating the start and end  based on the chagne occur in the date of child TopCountries
+        if (this.childTopCountries == null || this.childTopCountries.Count == 0)
+        {
+            return;
+        }
+
+        Start = this.childTopCountries.Select(s => s.Start).Min();
+        End = this.childTopCountries.Select(s => s.End).Max();
+    }
+
+    /// <summary>
+    /// Childs the nodes collection changed.
+    /// </summary>
+    /// <param name="sender">The sender.</param>
+    /// <param name="e">The <see cref="System.Collections.Specialized.NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
+    public void ChildNodesCollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+    {
+        if (e.Action == NotifyCollectionChangedAction.Add)
+        {
+            foreach (TopCountries node in e.NewItems)
+            {
+                node.PropertyChanged += ChildNodePropertyChanged;
+            }
+        }
+        else
+        {
+            foreach (TopCountries node in e.OldItems)
+                node.PropertyChanged -= ChildNodePropertyChanged;
+        }
+        UpdateData();
+    }
+
+    #endregion
+
+    internal void Dispose()
+    {
+        ChildTopCountries.CollectionChanged -= ChildNodesCollectionChanged;
+
+        if (ChildTopCountries.Count > 0)
+        {
+            ChildTopCountries.ToList().ForEach(node =>
+            {
+                node.PropertyChanged -= ChildNodePropertyChanged;
+            });
+        }
+    }
+}
 
 {% endhighlight  %}
 
@@ -560,7 +842,7 @@ public IList<GanttScheduleRowInfo> GetCustomScheduleSource()
 
 /// Handles the Schedule cell Created Event of the Gantt 
 
-void Gantt_ScheduleCellCreated(object sender, ScheduleCellCreatedEventArgs args)
+private void OnGanttScheduleCellCreated(object sender, ScheduleCellCreatedEventArgs args)
 {
     DateTime currentDate = args.CurrentCell.CellDate;
     if (args.CurrentCell.CellTimeUnit == TimeUnit.Months)

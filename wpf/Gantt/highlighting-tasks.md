@@ -53,8 +53,8 @@ To highlight a set of tasks in Gantt chart region:
 {% highlight xaml %}
 
  <syncfusion:GanttControl x:Name="ganttControl"
-                          HighlightItemBrush="{Binding Path=Brush, ElementName=HighlightBrush, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged"
-                          HighlightedItems="{Binding HighlightTaskItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          HighlightItemBrush="Red"
+                          HighlightedItems="{Binding HighlightTaskItems}"
                           ItemsSource="{Binding TaskCollections}">
      <syncfusion:GanttControl.TaskAttributeMapping>
         <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
@@ -81,6 +81,7 @@ To highlight a set of tasks in Gantt chart region:
 {% highlight c# %}
 
 this.ganttControl.ItemsSource = new ViewModel().TaskCollections;
+this.ganttControl.HighlightItemBrush = new SolidColorBrush(Colors.Red);
 
 /// Task attribute mapping
 TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();

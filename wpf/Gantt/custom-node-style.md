@@ -67,7 +67,6 @@ MileStone</td></tr>
                                            ProgressMapping="Progress" />
      </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.Resources>
-    <syncfusion:GanttControl.Resources>
     <Style TargetType="chart:HeaderNode">
         <Setter Property="MaxHeight"
                 Value="24" />
@@ -443,6 +442,10 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight %}
 {% endtabs %}
+
+![gantt-custom-node-style-with-gradient](Custom-Node-Style_images/gantt-custom-node-style-with-gradient.png)
+
+_Custom Node Style_
 
 ![gantt-custom-node-style](Custom-Node-Style_images/gantt-custom-node-style.png)
 

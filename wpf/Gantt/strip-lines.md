@@ -275,16 +275,29 @@ taskAttributeMapping.ProgressMapping = "Progress";
 taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
-StripCollection =  new List<StripLineInfo>();
+List<StripLineInfo> stripCollection = new List<StripLineInfo>();
 
 //Getting the collection of StripLineInfo
-StripCollection = GetStripCollection();
+stripCollection = GetStripCollection();
+
+//Property for strip collection.
+public List<StripLineInfo> StripCollection
+{
+    get
+    {
+        return this.stripCollection;
+    }
+    set
+    {
+        this.stripCollection = value;
+        RaisePropertyChanged("StripCollection");
+    }
+}
 
 //Method will return the collection StripLineInfo
 private List<StripLineInfo> GetStripCollection()
 {
-    List<StripLineInfo> stripCollection = new List<StripLineInfo>();
-    stripCollection.Add(new StripLineInfo() 
+    this.stripCollection.Add(new StripLineInfo() 
     { 
         Content =  "Weekly Team Meeting", 
         StartDate = new DateTime(2012, 6, 4), 
@@ -295,7 +308,7 @@ private List<StripLineInfo> GetStripCollection()
         RepeatUpto = new DateTime(2012, 12, 10),
     });
 
-    return stripCollection;
+    return this.stripCollection;
 }
 
  {% endhighlight  %}
@@ -465,25 +478,40 @@ taskAttributeMapping.ProgressMapping = "Progress";
 taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
-StripCollection =  new List<StripLineInfo>();
+List<StripLineInfo> stripCollection = new List<StripLineInfo>();
 
 //Getting the collection of StripLineInfo
-StripCollection = GetStripCollection();
+stripCollection = GetStripCollection();
+
+//Property for strip collection.
+public List<StripLineInfo> StripCollection
+{
+    get
+    {
+        return this.stripCollection;
+    }
+    set
+    {
+        this.stripCollection = value;
+        RaisePropertyChanged("StripCollection");
+    }
+}
 
 //Method will return the collection StripLineInfo
 private List<StripLineInfo> GetStripCollection()
-
 {
-    List<StripLineInfo> stripCollection = new List<StripLineInfo>();
-    stripCollection.Add(new StripLineInfo()
-    {
-        Type = StriplineType.Absolute,
-        Height = 1500,
-        Width = 200,
-        Position = new System.Windows.Point(300, 5),
-        Background = new SolidColorBrush(Colors.LightGray)
+    this.stripCollection.Add(new StripLineInfo() 
+    { 
+        Content =  "Weekly Team Meeting", 
+        StartDate = new DateTime(2012, 6, 4), 
+        EndDate = new DateTime(2012, 6, 4), 
+        HorizontalContentAlignment = HorizontalAlignment.Center, 
+        VerticalContentAlignment = VerticalAlignment.Center, 
+        Background =  Brushes.Gold, RepeatBehavior = Repeat.Week, RepeatFor = 1,
+        RepeatUpto = new DateTime(2012, 12, 10),
     });
-    return stripCollection;
+
+    return this.stripCollection;
 }
 
 {% endhighlight  %}

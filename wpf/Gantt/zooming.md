@@ -105,7 +105,7 @@ slider.Minimum = 1;
 slider.Minimum = 600;
 
 //Hooking the value changed event of the slider
-slider.ValueChanged += slider_ValueChanged;
+slider.ValueChanged += OnSliderValueChanged;
 
 /// <summary>
 /// Handles the ValueChanged event of the slider control.
