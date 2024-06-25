@@ -71,7 +71,7 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 
 ## How to change the snap indication style
 
-When snapping, cyan shade color indication lines will be shown. These indication lines styles can be customized by using the [`SnapIndicatorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapIndicatorStyle) property of SnapSettings class.
+When snapping, cyan shade color indication lines will be shown. These indication lines styles can be customized by using the [`SnapIndicatorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapIndicatorStyle) property of `SnapSettings` class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -118,7 +118,7 @@ diagram.SnapSettings = new SnapSettings()
 
 This feature allows the diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
-Snapping to gridlines can be enabled or disabled with the [`SnapConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of SnapSettings. Default value is None.
+Snapping to gridlines can be enabled or disabled with the [SnapConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of `SnapSettings`. Default value is None.
 
 {% tabs %}
 {% highlight xaml %}
