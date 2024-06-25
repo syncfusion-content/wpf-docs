@@ -37,14 +37,14 @@ Type </th><th>
 Return Type </th></tr>
 <tr>
 <td>
-LoadVarianceTableView</td><td>
+[LoadVarianceTableView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_LoadVarianceTableView)</td><td>
 this method is used to load the Variance view of the Gantt.</td><td>
 LoadVarianceTableView()</td><td>
 N/A</td><td>
 void </td></tr>
 <tr>
 <td>
-LoadDefaultTableView</td><td>
+[LoadDefaultTableView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_LoadDefaultTableView)</td><td>
 this method is used to load the Default (Editing) view of the Gantt.</td><td>
 LoadDefaultTableView()</td><td>
 N/A</td><td>
@@ -57,8 +57,8 @@ To add Baseline Table View to an application:
 
 1. Declare the baseline properties in the view model.
 2. Map the properties to Gantt in the corresponding TaskAttributeMappingProperty.
-3. To load the Variance view, call the LoadVarianceTableView() method of the Gantt.
-4. To load the Default (Editing) view, call the LoadDefaultTableView() method of the Gantt.
+3. To load the Variance view, call the [LoadVarianceTableView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_LoadVarianceTableView) method of the Gantt.
+4. To load the Default (Editing) view, call the [LoadDefaultTableView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_LoadDefaultTableView) method of the Gantt.
 
 The following codes illustrate this:
 
@@ -451,7 +451,6 @@ public class ViewModel
         taskDetails.Add(new Task() { ID = 1, Name = "Residential Construction (2500 sq.ft)", StartDate = new DateTime(2012, 3, 1), EndDate = new DateTime(2012, 3, 15), BaselineStart = new DateTime(2012, 3, 1), BaselineEnd = new DateTime(2012, 3, 14), Progress = 0d, Cost = 500, BaselineCost = 833d, });
 
         taskDetails[0].ChildCollection.Add(new Task() { ID = 2, Name = "General Considerations", StartDate = new DateTime(2012, 7, 3), EndDate = new DateTime(2012, 7, 14), BaselineStart = new DateTime(2012, 7, 3), BaselineEnd = new DateTime(2012, 7, 14), Progress = 0d, Cost = 89, BaselineCost = 833d, });
-
         taskDetails[0].ChildCollection[0].ChildCollection.Add(new Task() { ID = 3, Name = "Finalize and Approve Plans", StartDate = new DateTime(2012, 3, 1), EndDate = new DateTime(2012, 3, 15), BaselineStart = new DateTime(2012, 3, 2), BaselineEnd = new DateTime(2012, 3, 16), Progress = 0d, Cost = 500, BaselineCost = 833d, });
         taskDetails[0].ChildCollection[0].ChildCollection[0].ChildCollection.Add(new Task() { ID = 4, Name = "Review and Finalize Site Plans", StartDate = new DateTime(2012, 3, 1), EndDate = new DateTime(2012, 3, 20), BaselineStart = new DateTime(2012, 3, 1), BaselineEnd = new DateTime(2012, 3, 20), Progress = 0d, Cost = 500, BaselineCost = 833d, });
         taskDetails[0].ChildCollection[0].ChildCollection[0].ChildCollection.Add(new Task() { ID = 5, Name = "Sign contract and Proceed", StartDate = new DateTime(2012, 3, 20), EndDate = new DateTime(2012, 3, 22), BaselineStart = new DateTime(2012, 3, 19), BaselineEnd = new DateTime(2012, 3, 21), Progress = 0d, Cost = 500, BaselineCost = 833d, });
@@ -501,7 +500,6 @@ public class ViewModel
         taskDetails[0].ChildCollection[6].ChildCollection[0].ChildCollection.Add(new Task() { ID = 40, Name = "Install Wall Insulation", StartDate = new DateTime(2012, 6, 19), EndDate = new DateTime(2012, 6, 21), BaselineStart = new DateTime(2012, 6, 19), BaselineEnd = new DateTime(2012, 6, 21), Progress = 0d, Cost = 53, BaselineCost = 83d, });
         taskDetails[0].ChildCollection[6].ChildCollection[0].ChildCollection.Add(new Task() { ID = 41, Name = "Install Ceiling Insulation", StartDate = new DateTime(2012, 6, 21), EndDate = new DateTime(2012, 6, 22), BaselineStart = new DateTime(2012, 6, 21), BaselineEnd = new DateTime(2012, 6, 22), Progress = 0d, Cost = 89, BaselineCost = 83d, });
 
-
         taskDetails[0].ChildCollection[6].ChildCollection.Add(new Task() { ID = 42, Name = "Painting and Wallpaper", StartDate = new DateTime(2012, 6, 22), EndDate = new DateTime(2012, 6, 23), BaselineStart = new DateTime(2012, 6, 22), BaselineEnd = new DateTime(2012, 6, 23), Progress = 0d, Cost = 453, BaselineCost = 563, });
         taskDetails[0].ChildCollection[6].ChildCollection[1].ChildCollection.Add(new Task() { ID = 43, Name = "Painting all Interior", StartDate = new DateTime(2012, 6, 22), EndDate = new DateTime(2012, 6, 23), BaselineStart = new DateTime(2012, 6, 22), BaselineEnd = new DateTime(2012, 6, 23), Progress = 0d, Cost = 453, BaselineCost = 563, });
         taskDetails[0].ChildCollection[6].ChildCollection[1].ChildCollection.Add(new Task() { ID = 44, Name = "Painting all Exterior", StartDate = new DateTime(2012, 6, 23), EndDate = new DateTime(2012, 6, 25), BaselineStart = new DateTime(2012, 6, 23), BaselineEnd = new DateTime(2012, 6, 25), Progress = 0d, Cost = 352, BaselineCost = 342, });
@@ -526,7 +524,6 @@ public class ViewModel
         taskDetails[0].ChildCollection[7].ChildCollection.Add(new Task() { ID = 59, Name = "Cleaning", StartDate = new DateTime(2012, 7, 14), EndDate = new DateTime(2012, 7, 16), BaselineStart = new DateTime(2012, 7, 14), BaselineEnd = new DateTime(2012, 7, 16), Progress = 0d, Cost = 430, BaselineCost = 433d, });
         taskDetails[0].ChildCollection[7].ChildCollection.Add(new Task() { ID = 60, Name = "Final Inspection", StartDate = new DateTime(2012, 7, 16), EndDate = new DateTime(2012, 7, 17), BaselineStart = new DateTime(2012, 7, 16), BaselineEnd = new DateTime(2012, 7, 17), Progress = 0d, Cost = 0, BaselineCost = 5, });
         taskDetails[0].ChildCollection[7].ChildCollection.Add(new Task() { ID = 61, Name = "Move In", StartDate = new DateTime(2012, 7, 17), EndDate = new DateTime(2012, 7, 17), BaselineStart = new DateTime(2012, 7, 18), BaselineEnd = new DateTime(2012, 7, 18), Progress = 0d, Cost = 0, BaselineCost = 0, });
-
 
         //Adding Resources
         taskDetails[0].ChildCollection[0].ChildCollection[0].ChildCollection[0].Resource.Add(ResidentialConstructionResources[1]);
@@ -715,7 +712,7 @@ Data Type</th><th>
 Reference links</th></tr>
 <tr>
 <td>
-ShowBaseline</td><td>
+[ShowBaseline](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowBaseline)</td><td>
 Controls the view of baseline in the Gantt Chart. Default value is false</td><td>
 DependencyProperty</td><td>
 bool</td><td>
@@ -738,14 +735,14 @@ Data Type</th><th>
 Reference links</th></tr>
 <tr>
 <td>
-BaselineColor</td><td>
+[BaselineColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaselineColor)</td><td>
 Used to customize the baseline color. Default value is Orange</td><td>
 DependencyProperty</td><td>
 Brush</td><td>
 NA</td></tr>
 <tr>
 <td>
-BaselineStrokeThickness</td><td>
+[BaselineStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaselineStrokeThickness)</td><td>
 Used to customize the baseline thickness. Default value is 3d</td><td>
 DependencyProperty</td><td>
 bool</td><td>
@@ -792,7 +789,7 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-ShowAddNewColumn</td><td>
+[ShowAddNewColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowAddNewColumn)</td><td>
 Gets/Sets the  value that is used in displaying/hiding the add new column combo box in grid</td><td>
 DependencyProperty </td><td>
 bool</td></tr>
@@ -803,8 +800,8 @@ Adding On-Demand Baseline Column Inclusion to an Application
 
 To add the On-Demand Baseline Column Inclusion to an application you need to enable the AddNewColumn of Gantt Grid, which will have a drop down cell on its head, which in turn will have the baseline columns that can be added dynamically. To enable this feature:
 
-1. To show the Add New Column of Gantt Grid, set the ShowAddNewColumn Property to true in Gantt.
-2. To include the Baseline columns in the Add New Columns drop down cell, provide the corresponding mapping name in TaskAttributeMapping. 
+1. To show the Add New Column of Gantt Grid, set the [ShowAddNewColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowAddNewColumn) Property to true in Gantt.
+2. To include the Baseline columns in the Add New Columns drop down cell, provide the corresponding mapping name in [TaskAttributeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html). 
 3. Mapped Baseline columns will be listed in the drop down cell.
 4. By selecting a column name from the drop down cell, the corresponding column will be dynamically added to the Gantt Grid.
 
@@ -898,7 +895,7 @@ Type </th><th>
 Return Type </th></tr>
 <tr>
 <td>
-GetProjectStatistics</td><td>
+[GetProjectStatistics](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_GetProjectStatistics)</td><td>
 this method is used to get the current statistics information about the project</td><td>
 GetProjectStatistics()</td><td>
 N/A</td><td>

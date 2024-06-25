@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization in WPF Gantt
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the GanttControl by [adding resource file](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)). Application culture can be changed by setting `CurrentUICulture` and `CurrentCulture` before `InitializeComponent()` method. 
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) by [adding resource file](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)). Application culture can be changed by setting `CurrentUICulture` and `CurrentCulture` before `InitializeComponent()` method. 
 
 In the below application, culture is configured to French language.
 
@@ -28,7 +28,7 @@ public MainWindow()
 {% endtabs %}
 
 
-To localize the GanttControl based on `CurrentUICulture` using resource files, follow the below steps. 
+To localize the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) based on `CurrentUICulture` using resource files, follow the below steps. 
 
 1.Create new folder and named as **Resources** in your application. 
 2.Add the default resource file of GanttControl into **Resources** folder. You can download the Syncfusion.Gantt.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources-2137559261.zip).

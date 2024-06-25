@@ -20,15 +20,15 @@ These types are included in the existing ScheduleType enum.
 
 ## Custom Numeric
 
-Custom Numeric schedule is used to define your own schedule with any numeric measurement unit other than date time. With this schedule, you can track the progress based on your own measurement and there is no need to depend on Date Time. Two new API’s are added to the Mapping attributes to support this schedule in GanttChart and GanttGrid.
+Custom Numeric schedule is used to define your own schedule with any numeric measurement unit other than date time. With this schedule, you can track the progress based on your own measurement and there is no need to depend on Date Time. Two new API’s are added to the Mapping attributes to support this schedule in [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html) and [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html).
 
 ## Custom DateTime
 
 Custom DateTime schedule is used to define your own date time schedule, which can match your current financial calendar. By using schedule type as custom schedule, you can define your schedule on quarterly basis.
 
-In both the custom schedules, Gantt will get the information from the application to render the schedule. Gantt will accept the custom schedule information in the form of a collection of GanttScheduleRowInfo object, and process it to draw the schedule. 
+In both the custom schedules, Gantt will get the information from the application to render the schedule. Gantt will accept the custom schedule information in the form of a collection of [GanttScheduleRowInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleRowInfo.html) object, and process it to draw the schedule. 
 
-GanttScheduleRowInfo class will have following fields:
+[GanttScheduleRowInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleRowInfo.html) class will have following fields:
 
 1. PixelsPerUnit—Gets the information of the pixel value equivalent to one unit in custom measurement.
 2. CellsPerUnit—Gets the information of a cell size of preceding row in the schedule based on the immediate next row. In CustomDateTime Schedule, the CellsPerUnit will be used to customize the cell. For example, in quarterly basis month cell, You need to draw a schedule by consolidating three months. For this, you need to define the CellsPerUnit of that corresponding row as 3.
@@ -61,7 +61,7 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-CustomScheduleSource</td><td>
+[CustomScheduleSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CustomScheduleSource)</td><td>
 Gets/Sets the custom schedule items Source of the Gantt.</td><td>
 DependencyProperty </td><td>
 IList&lt;GanttScheduleRowInfo&gt;</td></tr>
@@ -78,7 +78,7 @@ Arguments </th><th>
 Type </th></tr>
 <tr>
 <td>
-ScheduleCellCreated </td><td>
+[ScheduleCellCreated](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleCellCreated) </td><td>
 Event will be triggered whenever a schedule cell is created. The handler of the event will have the newly created cell (GanttScheduleCell) in the argument.By handling this event, you can customize the appearance of the cell. </td><td>
 ScheduleCellCreated (object sender, ScheduleCellCreatedEventArgs args)</td><td>
 Routed Event </td></tr>
@@ -99,25 +99,25 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-CellDate</td><td>
+[CellDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleCell.html#Syncfusion_Windows_Controls_Gantt_GanttScheduleCell_CellDate)</td><td>
 Gets/Sets the current schedule cell date in the datetime schedule. </td><td>
 Dependency Property </td><td>
 DateTime</td></tr>
 <tr>
 <td>
-CellToolTip</td><td>
+[CellToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleCell.html#Syncfusion_Windows_Controls_Gantt_GanttScheduleCell_CellToolTip)</td><td>
 Gets/Sets the current schedule cell tool tip.</td><td>
 Dependency Property</td><td>
 Object</td></tr>
 <tr>
 <td>
-CellTimeUnit</td><td>
+[CellTimeUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleCell.html#Syncfusion_Windows_Controls_Gantt_GanttScheduleCell_CellTimeUnit)</td><td>
 Gets/Sets the current schedule row time unit (like weeks, months and so on).</td><td>
 Dependency Property</td><td>
 TimeUnit (Enum)</td></tr>
 <tr>
 <td>
-Content</td><td>
+`Content`</td><td>
 Gets/Sets the current schedule cell content.</td><td>
 Dependency Property</td><td>
 Object</td></tr>
@@ -127,9 +127,9 @@ Object</td></tr>
 
 To Add CustomNumeric Schedule to an application:
 
-1. Define the Mapping for StartPointMapping and FinishPointMapping in TaskAttributeMapping.
-1. Set the Gantt Schedule type as CustomNumeric.
-2. Bind the GanttScheduleRowInfo collection to the CustomScheduleSource property of the Gantt.
+1. Define the Mapping for [StartPointMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_StartPointMapping) and [FinishPointMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_FinishPointMapping) in [TaskAttributeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html).
+1. Set the Gantt [ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) as CustomNumeric.
+2. Bind the [GanttScheduleRowInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleRowInfo.html) collection to the [CustomScheduleSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CustomScheduleSource) property of the Gantt.
 
 The following code illustrates Adding Custom Schedule to an Application:
 
@@ -756,8 +756,8 @@ To view samples:
 
 To Add CustomDateTime Schedule to an application:
 
-1. Define the Gantt Schedule type as CustomDateTime.
-2. Bind the GanttScheduleRowInfo collection to the CustomScheduleSource property of the Gantt.
+1. Define the Gantt [ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) as CustomDateTime.
+2. Bind the [GanttScheduleRowInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleRowInfo.html) collection to the [CustomScheduleSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CustomScheduleSource) property of the Gantt.
 
 The following code illustrates this:
 

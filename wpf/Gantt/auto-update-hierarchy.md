@@ -9,7 +9,7 @@ documentation: ug
 
 # Auto Update Hierarchy in WPF Gantt
 
-Essential Gantt provides support for auto updating hierarchy, in which the Gantt control will listen to the change in child tasks/activities and automatically update them in the parent task/activity accordingly. There is no need to have any custom logics in business objects to update the hierarchy. You can enable or disable this functionality by using the UseAutoUpdateHierarchy property. 
+Essential Gantt provides support for auto updating hierarchy, in which the Gantt control will listen to the change in child tasks/activities and automatically update them in the parent task/activity accordingly. There is no need to have any custom logics in business objects to update the hierarchy. You can enable or disable this functionality by using the [UseAutoUpdateHierarchy](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseAutoUpdateHierarchy) property. 
 
 ## Use Case Scenario
 
@@ -430,8 +430,8 @@ public class Task : NotificationObject
             }
 
             /// The difference between the end date and starting date is calculated exactly.
-            duration = endDate.Subtract(startDate);
-            return duration;
+            this.duration = endDate.Subtract(startDate);
+            return this.duration;
         }
         set
         {
@@ -439,13 +439,13 @@ public class Task : NotificationObject
             {
                 var sum = new TimeSpan(0, 0, 0, 0);
                 sum = this.childCollection.Aggregate(sum, (current, task) => current + task.Duration);
-                duration = sum;
+                this.duration = sum;
                 return;
             }
 
             duration = value;
             /// The end date is calculated to make the change in end date based on duration. The duration is interlinked with the starting date and end date, so it will affect the both based on the changes.
-            EndDate = startDate.AddDays(Double.Parse(duration.TotalDays.ToString()));
+            this.EndDate = this.startDate.AddDays(Double.Parse(this.duration.TotalDays.ToString()));
         }
     }
 
@@ -454,17 +454,17 @@ public class Task : NotificationObject
     /// </summary>
     public DateTime EndDate
     {
-        get { return endDate; }
+        get { return this.endDate; }
         set
         {
             if (this.childCollection != null && this.childCollection.Count >= 1)
             {
                 /// If this task is a parent task, then it should have the maximum end time to compare the date with maximum date of its child tasks.
-                if (value >= this.childCollection.Max(s => s.EndDate) && endDate != value)
-                    endDate = value;
+                if (value >= this.childCollection.Max(s => s.EndDate) && this.endDate != value)
+                    this.endDate = value;
             }
             else
-                endDate = value;
+                this.endDate = value;
             RaisePropertyChanged("EndDate");
             /// The changed duration is invoked to notify the change in duration based on the new end date.
             RaisePropertyChanged("Duration");
@@ -478,7 +478,7 @@ public class Task : NotificationObject
     {
         get
         {
-            return startDate;
+            return this.startDate;
         }
         set
         {
@@ -486,11 +486,11 @@ public class Task : NotificationObject
 
             if (this.childCollection != null && this.childCollection.Count >= 1)
             {
-                if (value <= this.childCollection.Min(s => s.startDate) && startDate != value)
-                    startDate = value;
+                if (value <= this.childCollection.Min(s => s.startDate) && this.startDate != value)
+                    this.startDate = value;
             }
             else
-                startDate = value;
+                this.startDate = value;
             RaisePropertyChanged("startDate");
             /// The changed duration is invoked to notify the change in duration based on the new start date.
             RaisePropertyChanged("Duration");
@@ -502,10 +502,10 @@ public class Task : NotificationObject
     /// </summary>
     public string Name
     {
-        get { return name; }
+        get { return this.name; }
         set
         {
-            name = value;
+            this.name = value;
             RaisePropertyChanged("Name");
         }
     }
@@ -515,10 +515,10 @@ public class Task : NotificationObject
     /// </summary>
     public int Id
     {
-        get { return id; }
+        get { return this.id; }
         set
         {
-            id = value;
+            this.id = value;
             RaisePropertyChanged("Id");
         }
     }
@@ -573,9 +573,9 @@ public class Task : NotificationObject
     private void UpdateData()
     {
         /// Update the starting date and end date based on the changes made in the date of child tasks.
-        StartDate = this.childCollection.Select(c => c.startDate).Min();
-        EndDate = this.childCollection.Select(c => c.EndDate).Max();
-        progress = (this.childCollection.Aggregate(0d, (cur, task) => cur + task.progress)) / this.childCollection.Count;
+        this.StartDate = this.childCollection.Select(c => c.startDate).Min();
+        this.EndDate = this.childCollection.Select(c => c.EndDate).Max();
+        this.progress = (this.childCollection.Aggregate(0d, (cur, task) => cur + task.progress)) / this.childCollection.Count;
     }
 
     /// <summary>

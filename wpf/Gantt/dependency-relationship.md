@@ -44,14 +44,14 @@ Data Type </th><th>
 Reference links </th></tr>
 <tr>
 <td>
-Predecessor</td><td>
+[Predecessor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Predecessor.html)</td><td>
 This enables you to set the relationship between the tasks.</td><td>
 Object</td><td>
 Object</td><td>
 NA</td></tr>
 <tr>
 <td>
-GanttTaskRelationship</td><td>
+[GanttTaskRelationship](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Predecessor.html#Syncfusion_Windows_Controls_Gantt_Predecessor_GanttTaskRelationship)</td><td>
 This contains four relationships. They are:
 
 * StartToStart
@@ -339,7 +339,6 @@ public class ViewModel
     /// </summary>
     private ObservableCollection<Task> GetDataSource()
     {
-
         var taskDetails = new ObservableCollection<Task>();
         taskDetails.Add(new Task() { ID = 1, Name = "Analysis/Planning", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 8, 14), Progress = 40d });
         taskDetails[0].ChildCollection.Add((new Task() { ID = 2, Name = "IDentify Components to be Localized", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
@@ -354,7 +353,6 @@ public class ViewModel
         taskDetails[1].ChildCollection.Add((new Task() { ID = 10, Name = "Localization Component - User Interface", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
         taskDetails[1].ChildCollection.Add((new Task() { ID = 11, Name = "User Assistance Components", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
         taskDetails[1].ChildCollection.Add((new Task() { ID = 12, Name = "Software components Progress", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 18), Progress = 10d }));
-
 
         taskDetails.Add(new Task() { ID = 13, Name = "Quality Assurance", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 12), Progress = 40d, });
         taskDetails[2].ChildCollection.Add((new Task() { ID = 14, Name = "Review project information", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 15), Progress = 20d }));
@@ -430,7 +428,7 @@ Essential Gantt provides support for dynamic editing of predecessors in the Grid
 
 You can add/remove/update the predecessors and resources of tasks at run time. Initially, the Gantt is loaded with the Predecessor/Resource information in the underlying collection and you can update this information if required.
 
-You can edit the predecessor information from the GanttGrid. For resource, you can edit in the underlying source, Gantt will listen to the change in the underlying source and reflect it in both GanttGrid and GanttChart.
+You can edit the predecessor information from the [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html). For resource, you can edit in the underlying source, Gantt will listen to the change in the underlying source and reflect it in both [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html) and [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html).
 
 ## Predecessor Validation
 
@@ -451,7 +449,7 @@ Data Type</th><th>
 Reference links</th></tr>
 <tr>
 <td>
-ValidationMode</td><td>
+[ValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ValidationMode)</td><td>
 This contains two modes.<ul><li>
 Manual,</li><li>
 Auto.</li></ul>
@@ -479,7 +477,7 @@ While creating a new predecessor in Grid, it should be in the following format:
 	
 {% endhighlight  %}
 
-Here the {GanttTaskRelationship} is any one of the following:
+Here the {[GanttTaskRelationship](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttTaskRelationship.html)} is any one of the following:
 
 * SS
 * FS
@@ -497,7 +495,7 @@ If any other data is added, the current editing relationship will be deleted and
 
 #### Editing Resources
 
-As of now, resources cannot be edited in Grid. You can update the resource collection in the underlying source whenever you need. Gantt will listen to the changes in the collection and will update the GanttGrid and GanttChart accordingly.
+As of now, resources cannot be edited in Grid. You can update the resource collection in the underlying source whenever you need. Gantt will listen to the changes in the collection and will update the [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html) and [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html) accordingly.
 
 #### Use Case Scenario
 
