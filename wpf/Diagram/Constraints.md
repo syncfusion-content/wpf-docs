@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Constraints in WPF Diagram control | Syncfusion
-description: Learn here all about Constraints support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
+title: Constraints in WPF Diagram Control | Syncfusion
+description: Learn here all about constraints support in Syncfusion WPF Diagram (SfDiagram) control, it's elements, and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -195,7 +195,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %} 
 
-![WPF Diagram displays GraphConstraints](Constraints_images/wpf-diagram-group-contraints.gif)
+![WPF Diagram displays graphconstraints.](constraints_images/wpf-diagram-group-contraints.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Constraints-Node-Connector-Graph)
 
@@ -236,7 +236,7 @@ NodePortViewModel port=	new NodePortViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Diagram displays Port Connection](Constraints_images/wpf-diagram-port-connection.gif)
+![WPF Diagram displays port connection.](constraints_images/wpf-diagram-port-connection.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Port-Constraints-sample)
 
@@ -284,7 +284,7 @@ AnnotationEditorViewModel anno = new AnnotationEditorViewModel()
 {% endhighlight %}
 {% endtabs %} 
 
-![WPF Diagram displays Annotation Constraints](Constraints_images/wpf-diagram-drag-annotation.gif)
+![WPF Diagram displays annotation constraints.](constraints_images/wpf-diagram-drag-annotation.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Annotation-constraints-sample)
 
@@ -316,7 +316,7 @@ The following code example illustrates how to hide rotator.
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Diagram displays Selector Constraints](Constraints_images/wpf-diagram-selector-constraints.png)
+![WPF Diagram displays selector constraints.](constraints_images/wpf-diagram-selector-constraints.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Selector-constraints-sample)
 
