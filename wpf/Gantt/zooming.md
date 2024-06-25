@@ -113,7 +113,7 @@ slider.ValueChanged += OnSliderValueChanged;
 void OnSliderValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
 {
     //Changing the value of zoom factor
-    this.Gantt.ZoomFactor = (sender as Slider).Value;
+    this.ganttControl.ZoomFactor = (sender as Slider).Value;
 }
 
 {% endhighlight  %}
