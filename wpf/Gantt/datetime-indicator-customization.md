@@ -18,7 +18,7 @@ Essential Gantt provides support for indicating the current date or time in the 
 
 These are all included in the CurrentDateLinePositions enum.
 
-Essential Gantt allows you to customize the appearance of the DateTime indicator by using the CurrentDateLine property.
+Essential Gantt allows you to customize the appearance of the DateTime indicator by using the [CurrentDateLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CurrentDateLine) property.
 
 * Today: DateTime indicator will be positioned at the current date.
 * LoadedTime: DateTime indicator will be positioned at the Gantt control loaded time.
@@ -42,13 +42,13 @@ Type</th><th>
 Data Type</th></tr>
 <tr>
 <td>
-CurrentDateLine </td><td>
+[CurrentDateLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CurrentDateLine) </td><td>
 Get the user-defined line for the DateTime indicator.</td><td>
 Dependency Property</td><td>
 Line</td></tr>
 <tr>
 <td>
-StickCurrentDateLineTo</td><td>
+[StickCurrentDateLineTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_StickCurrentDateLineTo)</td><td>
 Get/sets the StickCurrentDateLineTo property of the Gantt control.By default this is set to Today.</td><td>
 Dependency Property</td><td>
 EnumNoneTodayDynamic TimeLoaded TimeAbsolute</td></tr>
@@ -58,8 +58,8 @@ EnumNoneTodayDynamic TimeLoaded TimeAbsolute</td></tr>
 
 Adding the DateTime indicator customization will change the appearance and position of the DateTime indicator. By default, the DateTime indicator will appear in the current date. The following steps explain how to add a customized DateTime indicator:
 
-1. Set the StickCurrentDateLineTo value for positioning the DateTime indicator. By default this is set as Today.
-2. Customize the appearance of the DateTime indicator using the CurrentDateLine API in the Gantt control.
+1. Set the [StickCurrentDateLineTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_StickCurrentDateLineTo) value for positioning the DateTime indicator. By default this is set as Today.
+2. Customize the appearance of the DateTime indicator using the [CurrentDateLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CurrentDateLine) API in the Gantt control.
 
 The following code samples illustrate how to customize the DateTime indicator.
 {% tabs %}
@@ -116,9 +116,9 @@ strokeArray.Add(5);
 strokeArray.Add(1);
 strokeArray.Add(5);
 
-this.Gantt.CurrentDateLine.Stroke = Brushes.Green;
-this.Gantt.CurrentDateLine.StrokeDashArray = strokeArray;
-this.Gantt.CurrentDateLine.StrokeThickness = 1;
+this.ganttControl.CurrentDateLine.Stroke = Brushes.Green;
+this.ganttControl.CurrentDateLine.StrokeDashArray = strokeArray;
+this.ganttControl.CurrentDateLine.StrokeThickness = 1;
 
 {% endhighlight  %}
 

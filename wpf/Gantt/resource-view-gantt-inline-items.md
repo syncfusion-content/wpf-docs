@@ -11,7 +11,7 @@ documentation: ug
 
 By default, the Gantt chart will display a single node in a row. This helps you to manage the project. When you want to manage the resources in a project, you need multiple nodes in a single row. A Resource view Gantt enables you to manage the resources involved in a project.
 
-In a normal Gantt, a node represents a task or activity of the project. In a resource view Gantt, the node represents task assigned to a resource. Multiple tasks assigned to a resource can be displayed in a single row. You can achieve this by using the mapping attribute of the InLineTaskMapping. 
+In a normal Gantt, a node represents a task or activity of the project. In a resource view Gantt, the node represents task assigned to a resource. Multiple tasks assigned to a resource can be displayed in a single row. You can achieve this by using the mapping attribute of the [InLineTaskMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_InLineTaskMapping). 
 
 Essential Gantt will listen to the dynamic inclusion of inline items and refresh the chart region.
 
@@ -42,7 +42,7 @@ Example: A very big development project that contains multiple phases to complet
 
 ## Adding Inline Items to an Application 
 
-You can populate a resource view Gantt by populating the collection of tasks in a single row by mapping the corresponding field in the underlying source to the InLineTaskMapping. 
+You can populate a resource view Gantt by populating the collection of tasks in a single row by mapping the corresponding field in the underlying source to the [InLineTaskMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_InLineTaskMapping). 
 
 You can populate a Resource view Gantt for both date-time schedules and numeric schedules. 
 
@@ -51,7 +51,7 @@ You can populate a Resource view Gantt for both date-time schedules and numeric 
 To populate a Resource view Gantt in a Custom Numeric Schedule:
 
 1. Define the Gantt with a custom numeric schedule source. For more information about custom numeric schedules, visit the following link: <https://help.syncfusion.com/wpf/gantt/custom-schedule#custom-numeric>
-2. You can populate the collection of tasks in a single row by mapping the corresponding field in the underlying source to the InLineTaskMapping.
+2. You can populate the collection of tasks in a single row by mapping the corresponding field in the underlying source to the [InLineTaskMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_InLineTaskMapping).
 
 {% tabs %}
 {% highlight xaml %}
@@ -641,7 +641,7 @@ The following shows the Resultant output:
 To populate the Resource view Gantt with a date-time schedule:
 
 1. Define the Gantt with DateTime values.
-2. Populate the collection of tasks in a single row by mapping the corresponding field in the underlying source to the InLineTaskMapping.
+2. Populate the collection of tasks in a single row by mapping the corresponding field in the underlying source to the [InLineTaskMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_InLineTaskMapping).
 
 {% tabs %}
 {% highlight xaml %}

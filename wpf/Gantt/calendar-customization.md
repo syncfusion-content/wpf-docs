@@ -29,63 +29,63 @@ Data Type </th><th>
 Reference links </th></tr>
 <tr>
 <td>
-WeekBeginsOn</td><td>
+[WeekBeginsOn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_WeekBeginsOn)</td><td>
 Gets or sets the starting day of a week in the project schedule. By default it is set to Sunday. </td><td>
 DependencyProperty </td><td>
 Enum</td><td>
 N/A</td></tr>
 <tr>
 <td>
-FiscalYearBeginsOn</td><td>
+[FiscalYearBeginsOn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_FiscalYearBeginsOn)</td><td>
 Gets or sets the starting month of a fiscal year. By default it is set to January</td><td>
 DependencyProperty</td><td>
 Enum</td><td>
 N/A</td></tr>
 <tr>
 <td>
-IsFYNumberingEnabled</td><td>
+[IsFYNumberingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_IsFiscalYearNumberingEnabled)</td><td>
 Gets or sets the Fiscal Year Numbering. If this property is changed, it will be reflected in the schedule.By default FY Numbering is set to false.</td><td>
 Dependency Property</td><td>
 bool</td><td>
 N/A</td></tr>
 <tr>
 <td>
-DefaultStartTime</td><td>
+[DefaultStartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_DefaultStartTime)</td><td>
 Gets or sets the task starting time in a day. This is based on the {{ '_GanttTime_' | markdownify }} class of the Gantt control.By default this is set to 9.00 AM</td><td>
 Dependency Property</td><td>
 GanttTime</td><td>
 N/A</td></tr>
 <tr>
 <td>
-DefaultEndTime</td><td>
+[DefaultEndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_DefaultEndTime)</td><td>
 Gets or sets the task ending time in a day. This is based on the {{ '_GanttTime_' | markdownify }} class of the Gantt control.By default this is set to 6.00 PM</td><td>
 Dependency Property</td><td>
 GanttTime</td><td>
 N/A</td></tr>
 <tr>
 <td>
-Weekends</td><td>
+[Weekends](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_Weekends)</td><td>
 Gets or sets the weekend days. Default value is Saturday, Sunday.</td><td>
 Dependency Property</td><td>
 Days</td><td>
 N/A</td></tr>
 <tr>
 <td>
-ShowWeekends</td><td>
+[ShowWeekends](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowWeekends)</td><td>
 Enables or disables the weekend days in schedule. Default value is true.</td><td>
 Dependency Property</td><td>
 bool</td><td>
 N/A</td></tr>
 <tr>
 <td>
-ExcludeWeekends</td><td>
+[ExcludeWeekends](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ExcludeWeekends)</td><td>
 Excludes or includes the weekend days in duration calculation. Default value is false.</td><td>
 Dependency Property</td><td>
 bool</td><td>
 N/A</td></tr>
 <tr>
 <td>
-ShowNonWorkingHoursBackground</td><td>
+[ShowNonWorkingHoursBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowNonWorkingHoursBackground)</td><td>
 Enables or disables the background for weekend days. Default value is true.</td><td>
 Dependency Property</td><td>
 bool</td><td>
@@ -211,11 +211,11 @@ public class ViewModel
     {
         get
         {
-            return defaultstart;
+            return this.defaultstart;
         }
         set
         {
-            defaultstart = value;
+            this.defaultstart = value;
         }
     }
 
@@ -227,11 +227,11 @@ public class ViewModel
     {
         get
         {
-            return defaultend;
+            return this.defaultend;
         }
         set
         {
-            defaultend = value;
+            this.defaultend = value;
         }
     }
 
@@ -243,11 +243,11 @@ public class ViewModel
     {
         get
         {
-            return fynumbering;
+            return this.fynumbering;
         }
         set
         {
-            fynumbering = value;
+            this.fynumbering = value;
         }
     }
 
@@ -316,11 +316,11 @@ public class ViewModel
     {
         get
         {
-            return _taskCollection;
+            return this._taskCollection;
         }
         set
         {
-            _taskCollection = value;
+            this._taskCollection = value;
         }
     }
 
@@ -353,7 +353,6 @@ public class ViewModel
 
         taskDetails[0].Child = MarketAnalysis;
 
-
         taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 18), FinishDate = new DateTime(2010, 7, 14), TaskName = "Infrastructure for Product Planning", TaskId = 9 });
         ObservableCollection<IGanttTask> InfrastructureReq = new ObservableCollection<IGanttTask>();
         InfrastructureReq.Add(new TaskDetails { StartDate = new DateTime(2010, 6, 18), FinishDate = new DateTime(2010, 6, 24), TaskName = "Define procedure for qualifying ideas", TaskId = 10 });
@@ -379,7 +378,6 @@ public class ViewModel
         Product[5].Predecessor.Add(new Predecessor { GanttTaskIndex = 16, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         Product[5].Predecessor.Add(new Predecessor { GanttTaskIndex = 17, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
         Product[5].Predecessor.Add(new Predecessor { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
-
 
         taskDetails[2].Child = Product;
 
