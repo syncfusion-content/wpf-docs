@@ -9,19 +9,19 @@ documentation: ug
 
 # Dragging based on DragLimit in WPF Diagram (SfDiagram)
 
-Diagram provides support to drag the elements within the given limitations using [`EditableArea`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea), [`ScrollLimit.Limited`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollLimit.html) property and based on [SelectorChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) enabling/disabling of dragging within the limits occur.
+Diagram provides support to drag the elements within the given limitations using [EditableArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea), [ScrollLimit.Limited](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollLimit.html) property and based on [SelectorChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) enabling/disabling of dragging within the limits occur.
 
 In `SelectorChangedEvent` based on the arguments the process occurs,
-* [`Block`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Block): If this boolean expression is set to true, then the dragging occurs within the given rectangular area. If dragging exceeds than the limit, then it hit back to previous position. Based on the Block Position the dragging of `Block` occurs.
+* [Block](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Block): If this boolean expression is set to true, then the dragging occurs within the given rectangular area. If dragging exceeds than the limit, then it hit back to previous position. Based on the `BlockPosition` the dragging of Block occurs.
 
-* [`BlockPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_BlockPosition):  It is an enum that encapsulates two properties:
+* [BlockPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_BlockPosition):  It is an enum that encapsulates two properties:
 
   * `SourcePosition`- When the element exceeds the dragging limitation, it moves back to its previous position.
 
   * `CurrentPosition`- The element remains within the limited area position and does not return to the previous position during dragging.
 
-* [`Abort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Abort): If this boolean is set to true, dragging is restricted within the defined limits.
-* [`Cancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Cancel): If this boolean is set to true, dragging of the element does not occur at all.   
+* [Abort](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Abort): If this boolean is set to true, dragging is restricted within the defined limits.
+* [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SelectorChangedEventArgs_Cancel): If this boolean is set to true, dragging of the element does not occur at all.   
 
 [Refer](https://help.syncfusion.com/wpf/diagram/scroll-settings/scrolllimit) for Scroll-Limit.
 
@@ -56,7 +56,7 @@ Node.Constraints |= NodeConstraints.AllowDrop;
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can enable [AllowDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Constraints) constraints for connector to drop a node over connector.
+Similarly, you can enable [AllowDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html) constraints for connector to drop a node over connector.
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Interaction/IndicatorStyle-sample)
 
@@ -123,7 +123,7 @@ Diagram.ConnectorDropIndicatorStyle = this.Resources["connectordropindicator"] a
 
 [How to show the copied diagram elements as preview image along with the mouse pointer?](https://support.syncfusion.com/kb/article/12037/how-to-show-the-copied-diagram-elements-as-preview-image-along-with-the-mouse-pointer-in)
 
-[How to update the Zindex of the dragged node?](https://support.syncfusion.com/kb/article/10388/how-to-update-the-zindex-of-the-dragged-node-in-wpf-diagram-sfdiagram)
+[How to update the z-index of the dragged node?](https://support.syncfusion.com/kb/article/10388/how-to-update-the-zindex-of-the-dragged-node-in-wpf-diagram-sfdiagram)
 
 [How to create filled PolyLine Node?](https://support.syncfusion.com/kb/article/10255/how-to-create-filled-polyline-node-in-wpf-diagram-sfdiagram)
 
