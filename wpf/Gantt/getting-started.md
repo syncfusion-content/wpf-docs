@@ -60,12 +60,24 @@ The following features are available in the Essential Gantt for WPF:
 * Data Binding
 * TaskDetails Binding
 * External Property Binding
-* Dependency relationship
+* Dependency Relationship
+* Auto Update Hierarchy
+* Baseline Support
 * CustomToolTip
-* Calendar customization
-* Custom Node style
-* VisualStyle
+* Custom Schedule
+* Calendar Customization
+* Holidays Customization
+* Zooming
+* Drag and Drop
+* Filtering and Sorting
+* Highlighting Tasks
+* Custom Node Style
+* DateTime Indicator Customization
+* Resource View Gantt Inline Items
+* Strip Lines
 * XML Import/Export
+* Flow Direction
+* Localization
 
 ## Adding GanttControl to an application
 
@@ -128,12 +140,15 @@ this.Content = ganttControl;
 
 public class ViewModel
 {
+    /// <summary>
+    /// Holds the collection value.
+    /// </summary>
+    private ObservableCollection<TaskDetails> taskDetails;
+
     public ViewModel()
     {
-        taskDetails = this.GetTaskDetails();
+        this.taskDetails = this.GetTaskDetails();
     }
-
-    private ObservableCollection<TaskDetails> taskDetails;
 
     /// <summary>
     /// Gets or sets the task collection.
@@ -143,11 +158,11 @@ public class ViewModel
     {
         get
         {
-            return taskDetails;
+            return this.taskDetails;
         }
         set
         {
-            taskDetails = value;
+            this.taskDetails = value;
         }
     }
 
@@ -166,7 +181,6 @@ public class ViewModel
         taskDetails[0].Child.Add(new TaskDetails { TaskId = 5, TaskName = "Secure complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
 
         taskDetails.Add(new TaskDetails { TaskId = 6, TaskName = "Risk Assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
-
         taskDetails[1].Child.Add(new TaskDetails { TaskId = 7, TaskName = "Perform risk assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 21), Progress = 20d });
         taskDetails[1].Child.Add(new TaskDetails { TaskId = 8, TaskName = "Evaluate risk assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 23), Progress = 30d });
         taskDetails[1].Child.Add(new TaskDetails { TaskId = 9, TaskName = "Prepare contingency plans", StartDate = new DateTime(2011, 7, 12), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
