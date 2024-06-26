@@ -118,28 +118,6 @@ The following code illustrates how to Import and Export Task Details from or to 
 
 {% highlight c# %}
 
-private void OnSaveButtonClick(object sender, System.Windows.RoutedEventArgs e)
-{
-    if (this.Gantt.ExportToXML())
-    {
-        MessageBox.Show("Tasks exported successfully.", 
-        "XML Import/Export", 
-        MessageBoxButton.OK, 
-        MessageBoxImage.Information);
-    }
-}
-
-private void OnOpenButtonClick(object sender, System.Windows.RoutedEventArgs e)
-{
-    if (this.Gantt.ImportFromXML())
-    {
-        MessageBox.Show("Tasks imported successfully.", 
-        "XML Import/Export", 
-        MessageBoxButton.OK, 
-        MessageBoxImage.Information);
-    }
-}
-
 //Initializing Gantt
 this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 
@@ -156,7 +134,29 @@ taskAttributeMapping.PredecessorMapping = "Predecessor";
 taskAttributeMapping.ProgressMapping = "Progress";
 taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
- 
+
+private void OnSaveButtonClick(object sender, System.Windows.RoutedEventArgs e)
+{
+    if (this.ganttControl.ExportToXML())
+    {
+        MessageBox.Show("Tasks exported successfully.", 
+        "XML Import/Export", 
+        MessageBoxButton.OK, 
+        MessageBoxImage.Information);
+    }
+}
+
+private void OnOpenButtonClick(object sender, System.Windows.RoutedEventArgs e)
+{
+    if (this.ganttControl.ImportFromXML())
+    {
+        MessageBox.Show("Tasks imported successfully.", 
+        "XML Import/Export", 
+        MessageBoxButton.OK, 
+        MessageBoxImage.Information);
+    }
+}
+
  {% endhighlight  %}
 
  {% highlight c# tabtitle="ViewModel.cs" %}
