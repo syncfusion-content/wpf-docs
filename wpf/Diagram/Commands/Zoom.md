@@ -182,7 +182,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 
 ## Reset
 
-The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Reset) command is used to reset Horizontal Offset, Vertical Offset, and Zoom Level of the Diagram. If you want to customize the `Reset` command, you can use parameter of type [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html).
+The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Reset) command is used to reset Horizontal Offset, Vertical Offset, and Zoom Level of the Diagram. If you want to customize the `Reset` command, you can use parameter of type [ResetParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html).
 
 ### ResetParameter
 
