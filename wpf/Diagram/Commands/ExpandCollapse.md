@@ -9,7 +9,7 @@ documentation: ug
 
 # Expand Collapse Command in WPF Diagram (SfDiagram)
 
-The [`ExpandCollapse`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_ExpandCollapse) command is used to show or hide children and view only the relevant nodes in the diagram. The `ExpandCollapse` command will be executed with the [ExpandCollapseParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html), where the parameter contains the information about node that need to be expanded or collapsed. The `IsExpanded` property of node is used to expand or collapse the children nodes. 
+The [ExpandCollapse](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_ExpandCollapse) command is used to show or hide children and view only the relevant nodes in the diagram. The `ExpandCollapse` command will be executed with the [ExpandCollapseParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html), where the parameter contains the information about node that need to be expanded or collapsed. The `IsExpanded` property of node is used to expand or collapse the children nodes. 
 
 ## ExpandCollapseParameter 
 
@@ -17,11 +17,11 @@ The `ExpandCollapseParameter` is used to compress a view of a hierarchy so that 
 
 ### Node
 
-The [`Node`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html#Syncfusion_UI_Xaml_Diagram_ExpandCollapseParameter_node) is used to set the node that is to be act as root element.
+The [Node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html#Syncfusion_UI_Xaml_Diagram_ExpandCollapseParameter_node) property is used to set the node that is to be act as root element.
 
 ### IsUpdateLayout
 
-The [`IsUpdateLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html#Syncfusion_UI_Xaml_Diagram_ExpandCollapseParameter_IsUpdateLayout) is used to set whether the layout to be updated or not after the command execution.
+The [IsUpdateLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html#Syncfusion_UI_Xaml_Diagram_ExpandCollapseParameter_IsUpdateLayout) property is used to set whether the layout to be updated or not after the command execution.
 
 {% tabs %}
 {% highlight C# %}
