@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Drag and drop support in GanttControl
-The WPF `GanttControl` allows you to reorder rows and columns within the `GanttGrid` and rearrange nodes in the `GanttChart` by dragging and dropping them. You can disable drag and drop by setting the `AllowDragDrop` property to false. The default value is `true`.
+The WPF [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) allows you to reorder rows and columns within the [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html) and rearrange nodes in the [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html) by dragging and dropping them. You can disable drag and drop by setting the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AllowDragDrop) property to false. The default value is `true`.
 
 ![drag-and-drop-in-wpf-gantt-control](Drag-drop-images/drag-and-drop-in-wpf-gantt-control.gif)
 
@@ -26,7 +26,7 @@ this.ganttControl.AllowDragDrop = false;
 {% endtabs %}
 
 ## Handle node drag starting in gantt grid
-You can get the node details and handle whether the node can be draggable or not by using the `TreeGridNodeDragStarting` event. This event will be triggered when the node is started dragging. The `TreeGridNodeDragStartingEventArgs` argument contains the `Nodes` property which gets the nodes that contain the associated data while dragging the rows.
+You can get the node details and handle whether the node can be draggable or not by using the [TreeGridNodeDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_TreeGridNodeDragStarting) event. This event will be triggered when the node is started dragging. The [TreeGridNodeDragStartingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDragStartingEventArgs.html) argument contains the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDragStartingEventArgs.html#Syncfusion_Windows_Controls_Gantt_TreeGridNodeDragStartingEventArgs_Nodes) property which gets the nodes that contain the associated data while dragging the rows.
 
 {% tabs %}
 {% highlight xaml %}
@@ -52,7 +52,7 @@ private void OnGanttControlTreeGridNodeDragStarting(object sender, TreeGridNodeD
 {% endtabs %}
 
 ## Handle node dragging in gantt grid
-You can get the dragging node details in gantt grid by using the `TreeGridNodeDragging` event. This event will be continuously triggered when the node is being dragged. The `TreeGridNodeDraggingEventArgs` argument contains the `Nodes` property which gets the nodes that are being dragged.
+You can get the dragging node details in gantt grid by using the [TreeGridNodeDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_TreeGridNodeDragging) event. This event will be continuously triggered when the node is being dragged. The [TreeGridNodeDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDraggingEventArgs.html) argument contains the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDraggingEventArgs.html#Syncfusion_Windows_Controls_Gantt_TreeGridNodeDraggingEventArgs_Nodes) property which gets the nodes that are being dragged.
 
 {% tabs %}
 {% highlight xaml %}
@@ -77,10 +77,10 @@ private void OnGanttControlTreeGridNodeDragging(object sender, TreeGridNodeDragg
 {% endtabs %}
 
 ## Handle node drop in gantt grid
-Using the `TreeGridNodeDrop` event you can get the dropping node details, target node, and you can handle whether the node can be dropped to the specific position or not. This event will trigger after dropping the node. The `TreeGridNodeDropEventArgs` argument contains the following properties.
+Using the [TreeGridNodeDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_TreeGridNodeDrop) event you can get the dropping node details, target node, and you can handle whether the node can be dropped to the specific position or not. This event will trigger after dropping the node. The [TreeGridNodeDropEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDropEventArgs.html) argument contains the following properties.
 
-* `Nodes` - Gets the item that contains the associated data.
-* `TargetNode` - Gets a value indicating the target node which is going to drop.
+* [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_TreeGridNodeDropEventArgs_Nodes) - Gets the item that contains the associated data.
+* [TargetNode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_TreeGridNodeDropEventArgs_TargetNode) - Gets a value indicating the target node which is going to drop.
 
 {% tabs %}
 {% highlight xaml %}
@@ -107,15 +107,15 @@ private void OnGanttControlTreeGridNodeDrop(object sender, TreeGridNodeDropEvent
 {% endtabs %}
 
 ## Handle drag and drop in gantt chart
-You can get the dragging and dropping node details in gantt chart by using the `NodeDragDelta` and `NodeDragCompleted` events. The `NodeDragAndDropEventArgs` argument contains the following properties.
+You can get the dragging and dropping node details in gantt chart by using the [NodeDragDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_NodeDragDelta) and [NodeDragCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_NodeDragCompleted) events. The [NodeDragAndDropEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.NodeDragAndDropEventArgs.html) argument contains the following properties.
 
-* `Node` - Gets or sets the node.
-* `HorizontalChange` - Gets or sets the horizontal change.
-* `StartTime` - Gets or sets the start time.
-* `EndTime` - Gets or sets the end time.
-* `Start` - Gets or sets the start.
-* `End` - Gets or sets the end.
-* `NodePresenter` - Gets the node parent.
+* [Node](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.NodeDragAndDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_NodeDragAndDropEventArgs_Node) - Gets or sets the node.
+* [HorizontalChange](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.NodeDragAndDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_NodeDragAndDropEventArgs_HorizontalChange) - Gets or sets the horizontal change.
+* [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.NodeDragAndDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_NodeDragAndDropEventArgs_StartTime) - Gets or sets the start time.
+* [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.NodeDragAndDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_NodeDragAndDropEventArgs_EndTime) - Gets or sets the end time.
+* [Start](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.NodeDragAndDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_NodeDragAndDropEventArgs_Start) - Gets or sets the start.
+* [End](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.NodeDragAndDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_NodeDragAndDropEventArgs_End) - Gets or sets the end.
+* [NodePresenter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.NodeDragAndDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_NodeDragAndDropEventArgs_NodePresenter) - Gets the node parent.
 
 ### Handle node dragging in Gantt chart
 {% tabs %}

@@ -22,13 +22,13 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-ImportFromXMLCommand</td><td>
+[ImportFromXMLCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ImportFromXMLCommand)</td><td>
 Command binding used to import the XML file generated from MS Project to populate data’s in Gantt control.</td><td>
 Command</td><td>
 DelegateCommand</td></tr>
 <tr>
 <td>
-ExportToXMLCommand</td><td>
+[ExportToXMLCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ExportToXMLCommand)</td><td>
 Command binding used to export the XML file generated from Gantt control to populate data’s in MS Project.</td><td>
 Command</td><td>
 DelegateCommand</td></tr>
@@ -47,14 +47,14 @@ Type </th><th>
 Return Type </th></tr>
 <tr>
 <td>
-ExportToXML()</td><td>
+[ExportToXML()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ExportToXML)</td><td>
 Responsible for exporting the GanttControl to MSProject XML File.</td><td>
 -</td><td>
 -</td><td>
 bool</td></tr>
 <tr>
 <td>
-ImportFromXML()</td><td>
+[ImportFromXML()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ImportFromXML)</td><td>
 Responsible for importing the data from MS Project XML file to GanttControl.</td><td>
 -</td><td>
 -</td><td>
@@ -118,28 +118,6 @@ The following code illustrates how to Import and Export Task Details from or to 
 
 {% highlight c# %}
 
-private void OnSaveButtonClick(object sender, System.Windows.RoutedEventArgs e)
-{
-    if (this.Gantt.ExportToXML())
-    {
-        MessageBox.Show("Tasks exported successfully.", 
-        "XML Import/Export", 
-        MessageBoxButton.OK, 
-        MessageBoxImage.Information);
-    }
-}
-
-private void OnOpenButtonClick(object sender, System.Windows.RoutedEventArgs e)
-{
-    if (this.Gantt.ImportFromXML())
-    {
-        MessageBox.Show("Tasks imported successfully.", 
-        "XML Import/Export", 
-        MessageBoxButton.OK, 
-        MessageBoxImage.Information);
-    }
-}
-
 //Initializing Gantt
 this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 
@@ -156,7 +134,29 @@ taskAttributeMapping.PredecessorMapping = "Predecessor";
 taskAttributeMapping.ProgressMapping = "Progress";
 taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
- 
+
+private void OnSaveButtonClick(object sender, System.Windows.RoutedEventArgs e)
+{
+    if (this.ganttControl.ExportToXML())
+    {
+        MessageBox.Show("Tasks exported successfully.", 
+        "XML Import/Export", 
+        MessageBoxButton.OK, 
+        MessageBoxImage.Information);
+    }
+}
+
+private void OnOpenButtonClick(object sender, System.Windows.RoutedEventArgs e)
+{
+    if (this.ganttControl.ImportFromXML())
+    {
+        MessageBox.Show("Tasks imported successfully.", 
+        "XML Import/Export", 
+        MessageBoxButton.OK, 
+        MessageBoxImage.Information);
+    }
+}
+
  {% endhighlight  %}
 
  {% highlight c# tabtitle="ViewModel.cs" %}

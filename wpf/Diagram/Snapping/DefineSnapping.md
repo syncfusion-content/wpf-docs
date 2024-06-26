@@ -9,7 +9,7 @@ documentation: ug
 
 # Snapping in WPF Diagram (SfDiagram)
 
-When you draw, resize, or move a diagramming element in the page, you can set it, so that it will align or snap to the nearest intersection in the page even when the grid is visible or not. However, you can control the alignment and snap-to capabilities of elements by using the snapping option of SfDiagram.
+When you draw, resize, or move a diagramming element in the page, you can set it, so that it will align or snap to the nearest intersection in the page even when the grid is visible or not. However, you can control the alignment and snap-to capabilities of elements by using the snapping option of `SfDiagram`.
 
 The `SnapSettings` class and its properties allows you to snap the shapes to the ruler subdivisions more easily.
 
@@ -71,7 +71,7 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 
 ## How to change the snap indication style
 
-When snapping, cyan shade color indication lines will be shown. These indication lines styles can be customized by using the [`SnapIndicatorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapIndicatorStyle) property of SnapSettings class.
+When snapping, cyan shade color indication lines will be shown. These indication lines styles can be customized by using the [SnapIndicatorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapIndicatorStyle) property of `SnapSettings` class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -118,7 +118,7 @@ diagram.SnapSettings = new SnapSettings()
 
 This feature allows the diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
-Snapping to gridlines can be enabled or disabled with the [SnapConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of SnapSettings. Default value is None.
+Snapping to gridlines can be enabled or disabled with the [SnapConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of `SnapSettings`. Default value is None.
 
 {% tabs %}
 {% highlight xaml %}

@@ -27,13 +27,13 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-HighlightedItems</td><td>
+[HighlightedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightedItems)</td><td>
 The items that are passed through this API will be highlighted in Gantt chart region. The items should be in linear form. </td><td>
 Dependency</td><td>
 IList</td></tr>
 <tr>
 <td>
-HighlightItemBrush</td><td>
+[HighlightItemBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightItemBrush)</td><td>
 Specifies the color in which items should be highlight</td><td>
 Dependency</td><td>
 Brush</td></tr>
@@ -45,8 +45,8 @@ Brush</td></tr>
 To highlight a set of tasks in Gantt chart region:
 
 1. Define the Gantt with initial setup.
-1. Bind the tasks that need to be highlighted with Gantt’s HighlightedItems API.
-2. If required, change the value of the Gantt’s HighlightItemBrush API to change the item highlight color. The default color is red.
+1. Bind the tasks that need to be highlighted with Gantt’s [HighlightedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightedItems) API.
+2. If required, change the value of the Gantt’s [HighlightItemBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightItemBrush) API to change the item highlight color. The default color is red.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -274,7 +274,7 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
      {
          get
          {
-             return endDate;
+             return this.endDate;
          }
          set
          {
@@ -286,7 +286,7 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
                      this.endDate = value;
              }
              else
-                 endDate = value;
+                 this.endDate = value;
              this.RaisePropertyChanged("EndDate");
              /// Duration changed is invoked to notify the chagne in duration based on the new end date.
              this.RaisePropertyChanged("Duration");

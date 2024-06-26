@@ -49,7 +49,7 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 </tr>
 
 <tr>
-<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Grid.GanttGrid.html)'| markdownify }}</td>
+<td>{{'[GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html)'| markdownify }}</td>
 <td>{{'[GridTreeControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html)'| markdownify }}</td>
 <td>{{'[SfTreeGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html)'| markdownify }} </td>
 </tr>

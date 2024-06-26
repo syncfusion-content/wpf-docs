@@ -11,13 +11,13 @@ documentation: ug
 
 ## TaskDetails Binding
 
-Essential Gantt for WPF includes an built-in class called TaskDetails, which is inherited from the IGanttTask interface. A collection of the TaskDetails can be bounded as an ItemsSource for the GanttControl.
+Essential Gantt for WPF includes an built-in class called [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html), which is inherited from the [IGanttTask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.IGanttTask.html) interface. A collection of the [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html) can be bounded as an ItemsSource for the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html).
 
 #### Use Case Scenarios
 
-You can easily create the task details collection using the TaskDetails class or by creating a new class by inheriting the IGantt interface.
+You can easily create the task details collection using the TaskDetails class or by creating a new class by inheriting the [IGanttTask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.IGanttTask.html) interface.
 
-Binding TaskDetails collection to Gantt Control
+Binding [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html) collection to Gantt Control
 
 The following code illustrates how to bind the Task Details to the Gantt Control:
 
@@ -82,7 +82,7 @@ public class ViewModel
     {
         get
         {
-            return taskDetails;
+            return this.taskDetails;
         }
         set
         {
@@ -104,7 +104,6 @@ public class ViewModel
         taskDetails[0].Child.Add(new TaskDetails { TaskId = 5, TaskName = "Secure complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
 
         taskDetails.Add(new TaskDetails { TaskId = 6, TaskName = "Risk Assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
-
         taskDetails[1].Child.Add(new TaskDetails { TaskId = 7, TaskName = "Perform risk assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 21), Progress = 20d });
         taskDetails[1].Child.Add(new TaskDetails { TaskId = 8, TaskName = "Evaluate risk assessment", StartDate = new DateTime(2011, 7, 8), FinishDate = new DateTime(2011, 7, 23), Progress = 30d });
         taskDetails[1].Child.Add(new TaskDetails { TaskId = 9, TaskName = "Prepare contingency plans", StartDate = new DateTime(2011, 7, 12), FinishDate = new DateTime(2011, 7, 24), Progress = 30d });
@@ -151,9 +150,10 @@ To view samples:
 
 ## External Property Binding
 
-Essential Gantt for WPF allow you to bind any type of IEnumerable source to Gantt.You can bind any collection to Gantt using the TaskAttributeMapping class. This will get the mapping name of the required fields from the underlying source. With this mapping the Gantt will get the required information to render the Chart nodes.
+Essential Gantt for WPF allows you to bind any type of IEnumerable source to Gantt. You can bind any collection to Gantt using the [TaskAttributeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html) class. This will get the mapping name of the required fields from the underlying source. With this mapping the Gantt will get the required information to render the Chart nodes.
 
-The following code illustrate how to map the properties using the TaskAttributeMapping class:
+The following code illustrate how to map the properties using the [TaskAttributeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html) class:
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -177,7 +177,6 @@ The following code illustrate how to map the properties using the TaskAttributeM
 
 {% endhighlight  %}
 {% highlight c# %}
-
 
 this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
 
