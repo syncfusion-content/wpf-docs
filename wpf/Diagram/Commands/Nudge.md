@@ -15,10 +15,10 @@ Below are the specific nudge commands:
 
 | Commands | Description |
 |---|---|
-| [`NudgeUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveUp) | Moves the selected object Up by 1 pixel. |
-| [`NudgeDown`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveDown) | Moves the selected object Down by 1 pixel. |
-| [`NudgeLeft`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveLeft) | Moves the selected object Left by 1 pixel. |
-| [`NudgeRight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveRight) | Moves the selected object Right by 1 pixel. |
+| [NudgeUp](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveUp) | Moves the selected object Up by 1 pixel. |
+| [NudgeDown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveDown) | Moves the selected object Down by 1 pixel. |
+| [NudgeLeft](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveLeft) | Moves the selected object Left by 1 pixel. |
+| [NudgeRight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_MoveRight) | Moves the selected object Right by 1 pixel. |
 
 {% tabs %}
 
