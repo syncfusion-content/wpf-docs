@@ -11,7 +11,7 @@ documentation: ug
 
 Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded and remaining objects will be loaded only when they come into view. 
 
-This feature gives optimized performance and low memory consumption while loading and dragging items to the SfDiagram that consists of large diagram objects.
+This feature gives optimized performance and low memory consumption while loading and dragging items to the `SfDiagram` that consists of large diagram objects.
 
 {% tabs %}
 {% highlight xaml %}
@@ -49,7 +49,7 @@ diagram.Constraints |= GraphConstraints.Virtualize | GraphConstraints.Outline;
 {% endhighlight %}
 {% endtabs %}
 
-N> In SfDiagram, Deferred Scrolling support is named as `Outline`. Outline is only applicable when virtualization is enabled.
+N> In `SfDiagram`, Deferred Scrolling support is named as `Outline`. This feature is only applicable when virtualization is enabled.
 
 ![DeferredScrolling](Virtualization_images/VirtualizeOutline.gif)
 
@@ -57,8 +57,8 @@ N> In SfDiagram, Deferred Scrolling support is named as `Outline`. Outline is on
 
 Options are provided to override the appearance, style, and interval time of outline by using the [OutlineSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OutlineSettings.html) class of diagram.
 
-* [`OutlineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OutlineSettings.html#Syncfusion_UI_Xaml_Diagram_OutlineSettings_OutlineStyle): Specifies the style for the outline of the diagram elements.
-* [`RenderInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OutlineSettings.html#Syncfusion_UI_Xaml_Diagram_OutlineSettings_RenderInterval): Specifies the time interval to render the diagram elements into view. Default time interval is 200ms.
+* [OutlineStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OutlineSettings.html#Syncfusion_UI_Xaml_Diagram_OutlineSettings_OutlineStyle): Specifies the style for the outline of the diagram elements.
+* [RenderInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OutlineSettings.html#Syncfusion_UI_Xaml_Diagram_OutlineSettings_RenderInterval): Specifies the time interval to render the diagram elements into view. Default time interval is 200ms.
 
 {% tabs %}
 {% highlight xaml %}
