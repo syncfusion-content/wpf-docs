@@ -9,11 +9,11 @@ documentation: ug
 
 # Drag Limit in WPF Diagram (SfDiagram)
 
-The drag limit allows you to define the dragging region of the Diagram while diagram objects are getting dragged. The [`DragLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_DragLimit) property of scroll settings class helps to limit the dragging area. It includes the following options:
+The drag limit allows you to define the dragging region of the Diagram while diagram objects are getting dragged. The [DragLimit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_DragLimit) property of scroll settings class helps to limit the dragging area. It includes the following options:
 
 * **Infinity**: Allows you to drag the diagram objects in all directions without any restriction.
 * **Diagram**: Allows you to drag the diagram objects within the Diagram content.
-* **Limited**: Allows you to drag the diagram objects within the specified area. The [`EditableArea`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea) property is used to specify the area that is allowed to dragging.
+* **Limited**: Allows you to drag the diagram objects within the specified area. The [EditableArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea) property is used to specify the area that is allowed to dragging.
 
 The default operation is `Infinity`. 
 
