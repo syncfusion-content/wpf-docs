@@ -315,28 +315,28 @@ VS2010
 </tr>
 
 <tr>
-<td>AllowDragDrop </td>
+<td>{{'[AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AllowDragDrop)'| markdownify }} </td>
 <td>bool</td>
 <td>true</td>
 <td>Gets or sets a value indicating whether to allow the nodes reordering in Gantt.</td>
 </tr>
 
 <tr>
-<td>AutoExpandMode</td>
+<td>{{'[AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AutoExpandMode)'| markdownify }}</td>
 <td>GanttAutoExpandMode</td>
 <td>AllNodesExpanded</td>
 <td>Gets or sets the value which indicates how the nodes to be expanded while loading.</td>
 </tr>
 
 <tr>
-<td>AllowSorting</td>
+<td>{{'[AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AllowSorting)'| markdownify }}</td>
 <td>bool</td>
 <td>false</td>
 <td>Gets or sets a value indicating whether to allow sorting of records in Gantt.</td>
 </tr>
 
 <tr>
-<td>AllowFiltering</td>
+<td>{{'[AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AllowFiltering)'| markdownify }}</td>
 <td>bool</td>
 <td>false</td>
 <td>Gets or sets a value indicating whether to allow filtering of records in Gantt.</td>
@@ -352,31 +352,31 @@ VS2010
 </tr>
 
 <tr>
-<td>TreeGridNodeDragStarting</td>
+<td>{{'[TreeGridNodeDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_TreeGridNodeDragStarting)'| markdownify }}</td>
 <td>TreeGridNodeDragStartingEventArgs</td>
 <td>Provides data for the TreeGridNodeDragStarting  event, which occurs when an item is to be dragged.</td>
 </tr>
 
 <tr>
-<td>TreeGridNodeDragging</td>
+<td>{{'[TreeGridNodeDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_TreeGridNodeDragging)'| markdownify }}</td>
 <td>TreeGridNodeDraggingEventArgs</td>
 <td>Provides data for the TreeGridNodeDragging event, which occurs when an item is being dragged over the GanttControl.</td>
 </tr>
 
 <tr>
-<td>TreeGridNodeDrop</td>
+<td>{{'[TreeGridNodeDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_TreeGridNodeDrop)'| markdownify }}</td>
 <td>TreeGridNodeDropEventArgs</td>
 <td>Provides data for the TreeGridNodeDrop event, which occurs when an item to be dropped within GanttControl.</td>
 </tr>
 
 <tr>
-<td>SelectionChanging</td>
+<td>{{'[SelectionChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_SelectionChanging)'| markdownify }}</td>
 <td>SelectionChangingEventArgs</td>
 <td>Occurs when the selection is being changed in the Gantt.</td>
 </tr>
 
 <tr>
-<td>SelectionChanged</td>
+<td>{{'[SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_SelectionChanged)'| markdownify }}</td>
 <td>SelectionChangedEventArgs</td>
 <td>Occurs when the selection is changed in the Gantt.</td>
 </tr>

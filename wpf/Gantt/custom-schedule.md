@@ -61,7 +61,7 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-[CustomScheduleSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CustomScheduleSource)</td><td>
+{{'[CustomScheduleSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CustomScheduleSource)'| markdownify }}</td><td>
 Gets/Sets the custom schedule items Source of the Gantt.</td><td>
 DependencyProperty </td><td>
 IList&lt;GanttScheduleRowInfo&gt;</td></tr>
@@ -78,7 +78,7 @@ Arguments </th><th>
 Type </th></tr>
 <tr>
 <td>
-[ScheduleCellCreated](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleCellCreated) </td><td>
+{{'[ScheduleCellCreated](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleCellCreated)'| markdownify }} </td><td>
 Event will be triggered whenever a schedule cell is created. The handler of the event will have the newly created cell (GanttScheduleCell) in the argument.By handling this event, you can customize the appearance of the cell. </td><td>
 ScheduleCellCreated (object sender, ScheduleCellCreatedEventArgs args)</td><td>
 Routed Event </td></tr>
@@ -99,19 +99,19 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-[CellDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleCell.html#Syncfusion_Windows_Controls_Gantt_GanttScheduleCell_CellDate)</td><td>
+{{'[CellDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleCell.html#Syncfusion_Windows_Controls_Gantt_GanttScheduleCell_CellDate)'| markdownify }}</td><td>
 Gets/Sets the current schedule cell date in the datetime schedule. </td><td>
 Dependency Property </td><td>
 DateTime</td></tr>
 <tr>
 <td>
-[CellToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleCell.html#Syncfusion_Windows_Controls_Gantt_GanttScheduleCell_CellToolTip)</td><td>
+{{'[CellToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleCell.html#Syncfusion_Windows_Controls_Gantt_GanttScheduleCell_CellToolTip)'| markdownify }}</td><td>
 Gets/Sets the current schedule cell tool tip.</td><td>
 Dependency Property</td><td>
 Object</td></tr>
 <tr>
 <td>
-[CellTimeUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleCell.html#Syncfusion_Windows_Controls_Gantt_GanttScheduleCell_CellTimeUnit)</td><td>
+{{'[CellTimeUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleCell.html#Syncfusion_Windows_Controls_Gantt_GanttScheduleCell_CellTimeUnit)'| markdownify }}</td><td>
 Gets/Sets the current schedule row time unit (like weeks, months and so on).</td><td>
 Dependency Property</td><td>
 TimeUnit (Enum)</td></tr>

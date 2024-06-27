@@ -44,14 +44,14 @@ Data Type </th><th>
 Reference links </th></tr>
 <tr>
 <td>
-[Predecessor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Predecessor.html)</td><td>
+{{'[Predecessor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Predecessor.html)'| markdownify }}</td><td>
 This enables you to set the relationship between the tasks.</td><td>
 Object</td><td>
 Object</td><td>
 NA</td></tr>
 <tr>
 <td>
-[GanttTaskRelationship](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Predecessor.html#Syncfusion_Windows_Controls_Gantt_Predecessor_GanttTaskRelationship)</td><td>
+{{'[GanttTaskRelationship](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Predecessor.html#Syncfusion_Windows_Controls_Gantt_Predecessor_GanttTaskRelationship)'| markdownify }}</td><td>
 This contains four relationships. They are:
 
 * StartToStart
@@ -449,7 +449,7 @@ Data Type</th><th>
 Reference links</th></tr>
 <tr>
 <td>
-[ValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ValidationMode)</td><td>
+{{'[ValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ValidationMode)'| markdownify }}</td><td>
 This contains two modes.<ul><li>
 Manual,</li><li>
 Auto.</li></ul>
