@@ -40,7 +40,8 @@ The [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfV
 {% tabs %}
 {%highlight c#%}
 
-pdfviewer1.Print("Microsoft Print to PDF");
+string printerName = "enter the printer name";
+pdfviewer1.Print(printerName);
 
 {%endhighlight%}
 
