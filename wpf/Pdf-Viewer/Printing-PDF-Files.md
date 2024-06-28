@@ -47,7 +47,8 @@ pdfviewer1.Print(printerName);
 
 {%highlight vb%}
 
-pdfviewer1.Print("Microsoft Print to PDF")
+Dim printerName As String = "enter the printer name"
+pdfviewer1.Print(printerName)
 
 {%endhighlight%}
 {% endtabs %}
