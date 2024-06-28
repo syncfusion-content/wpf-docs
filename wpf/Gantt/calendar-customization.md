@@ -29,63 +29,63 @@ Data Type </th><th>
 Reference links </th></tr>
 <tr>
 <td>
-[WeekBeginsOn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_WeekBeginsOn)</td><td>
+{{'[WeekBeginsOn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_WeekBeginsOn)'| markdownify }}</td><td>
 Gets or sets the starting day of a week in the project schedule. By default it is set to Sunday. </td><td>
 DependencyProperty </td><td>
 Enum</td><td>
 N/A</td></tr>
 <tr>
 <td>
-[FiscalYearBeginsOn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_FiscalYearBeginsOn)</td><td>
+{{'[FiscalYearBeginsOn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_FiscalYearBeginsOn)'| markdownify }}</td><td>
 Gets or sets the starting month of a fiscal year. By default it is set to January</td><td>
 DependencyProperty</td><td>
 Enum</td><td>
 N/A</td></tr>
 <tr>
 <td>
-[IsFYNumberingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_IsFiscalYearNumberingEnabled)</td><td>
+{{'[IsFYNumberingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_IsFiscalYearNumberingEnabled)'| markdownify }}</td><td>
 Gets or sets the Fiscal Year Numbering. If this property is changed, it will be reflected in the schedule.By default FY Numbering is set to false.</td><td>
 Dependency Property</td><td>
 bool</td><td>
 N/A</td></tr>
 <tr>
 <td>
-[DefaultStartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_DefaultStartTime)</td><td>
+{{'[DefaultStartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_DefaultStartTime)'| markdownify }}</td><td>
 Gets or sets the task starting time in a day. This is based on the {{ '_GanttTime_' | markdownify }} class of the Gantt control.By default this is set to 9.00 AM</td><td>
 Dependency Property</td><td>
 GanttTime</td><td>
 N/A</td></tr>
 <tr>
 <td>
-[DefaultEndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_DefaultEndTime)</td><td>
+{{'[DefaultEndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_DefaultEndTime)'| markdownify }}</td><td>
 Gets or sets the task ending time in a day. This is based on the {{ '_GanttTime_' | markdownify }} class of the Gantt control.By default this is set to 6.00 PM</td><td>
 Dependency Property</td><td>
 GanttTime</td><td>
 N/A</td></tr>
 <tr>
 <td>
-[Weekends](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_Weekends)</td><td>
+{{'[Weekends](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_Weekends)'| markdownify }}</td><td>
 Gets or sets the weekend days. Default value is Saturday, Sunday.</td><td>
 Dependency Property</td><td>
 Days</td><td>
 N/A</td></tr>
 <tr>
 <td>
-[ShowWeekends](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowWeekends)</td><td>
+{{'[ShowWeekends](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowWeekends)'| markdownify }}</td><td>
 Enables or disables the weekend days in schedule. Default value is true.</td><td>
 Dependency Property</td><td>
 bool</td><td>
 N/A</td></tr>
 <tr>
 <td>
-[ExcludeWeekends](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ExcludeWeekends)</td><td>
+{{'[ExcludeWeekends](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ExcludeWeekends)'| markdownify }}</td><td>
 Excludes or includes the weekend days in duration calculation. Default value is false.</td><td>
 Dependency Property</td><td>
 bool</td><td>
 N/A</td></tr>
 <tr>
 <td>
-[ShowNonWorkingHoursBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowNonWorkingHoursBackground)</td><td>
+{{'[ShowNonWorkingHoursBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowNonWorkingHoursBackground)'| markdownify }}</td><td>
 Enables or disables the background for weekend days. Default value is true.</td><td>
 Dependency Property</td><td>
 bool</td><td>

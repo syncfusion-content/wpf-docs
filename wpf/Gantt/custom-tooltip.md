@@ -23,7 +23,7 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-[ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ToolTipTemplate)</td><td>
+{{'[ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ToolTipTemplate)'| markdownify }}</td><td>
 Gets or set the TaskBarCollection Property of GanttControl</td><td>
 Dependency Property</td><td>
 DataTemplate</td></tr>

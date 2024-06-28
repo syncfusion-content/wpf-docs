@@ -574,25 +574,25 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-[UseOnDemandSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseOnDemandSchedule)</td><td>
+{{'[UseOnDemandSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseOnDemandSchedule)'| markdownify }}</td><td>
 To get the expected performance you need to use dynamic schedule rendering. </td><td>
 Dependency</td><td>
 boolean</td></tr>
 <tr>
 <td>
-[BaseCellMaxLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMaxLength)</td><td>
+{{'[BaseCellMaxLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMaxLength)'| markdownify }}</td><td>
 Splits the schedule cells by comparing the cell size with the API value on zooming-in </td><td>
 Dependency</td><td>
 double</td></tr>
 <tr>
 <td>
-[BaseCellMinLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMinLength)</td><td>
+{{'[BaseCellMinLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMinLength)'| markdownify }}</td><td>
 Merges schedule cells by comparing the cell size with the API value on zooming-out</td><td>
 Dependency</td><td>
 double</td></tr>
 <tr>
 <td>
-[ZoomFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ZoomFactor)</td><td>
+{{'[ZoomFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ZoomFactor)'| markdownify }}</td><td>
 Zooming takes place based on the ZoomFactor. The ZoomFactor should be greater than zero.</td><td>
 Dependency</td><td>
 double</td></tr>
@@ -610,7 +610,7 @@ Arguments </th><th>
 Type </th></tr>
 <tr>
 <td>
-[ZoomChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ZoomChanged)</td><td>
+{{'[ZoomChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ZoomChanged)'| markdownify }}</td><td>
 Event triggers when the zoom factor is changed. This can be handled in application level.</td><td>
 ZoomChangedEventArgs</td><td>
 Simple event </td></tr>
