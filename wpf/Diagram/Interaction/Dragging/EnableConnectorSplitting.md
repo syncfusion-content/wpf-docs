@@ -14,7 +14,7 @@ The connectors are used to create a link between two points, ports, or nodes to 
 {% tabs %}
 {% highlight Xaml %}
 
-<Syncfusion:SfDiagram x:Name="Diagram" EnableConnectorSplitting="True">
+<Syncfusion:SfDiagram x:Name="Diagram" EnableConnectorSplitting="True"/>
 
 {% endhighlight %}
 
