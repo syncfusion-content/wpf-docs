@@ -41,7 +41,7 @@ List of Commands and Key Gesture:
 | Zoom | - | Control | new ZoomPositionParameter { ZoomCommand=ZoomCommand.ZoomOut} |
 | Zoom | + | Control | new ZoomPositionParameter { ZoomCommand = ZoomCommand.ZoomIn } |
 | Reset | 0 | Control | new ResetParameter { Reset = Diagram.Reset.ZoomPan } |
-| FitToPage | 0 | Control+ Menu | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
+| FitToPage | W | Control + Shift | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
 
 #### List of Commands and Mouse Gesture with Parameter
 
@@ -54,14 +54,13 @@ List of Commands and Key Gesture:
 | Command | KeyModifier | Scroll State | Parameter |
 |---|---|---|---|
 | Horizontal Scroll using ‘Zoom’ command | Shift | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.HorizontalScroll} |
-| Zoom | Control | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.ZoomIn `|` ZoomCommand.ZoomOut} |
+| Zoom | Control | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.ZoomIn \| ZoomCommand.ZoomOut} |
 
 N> When different commands are registered for the same key / mouse gestures, you need to handle the command while execution.
 
 ### Custom command
 
-CommandManager provides support to define custom commands. The custom commands are executed when the specified key gesture is recognized.
-The [GestureCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GestureCommand.html) and [Gesture](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gesture.html) help you to define a custom command.
+`CommandManager` provides support to define custom commands. The custom commands are executed when the specified key gesture is recognized. The [GestureCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GestureCommand.html) and [Gesture](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gesture.html) help you to define a custom command.
 
 The following code example represents how to define custom command to Save Command (Control + S).
 
@@ -69,24 +68,24 @@ The following code example represents how to define custom command to Save Comma
 {% tabs %}
 {% highlight C# %}
 
-            // To define the mouse and keyboard gesture for the commands
-            GestureCommand saveGesture = new GestureCommand()
-            {
-                // Define the command with custom command
-                Command = Save,
-                // Define gesture for custom Command
-                Gesture = new Gesture
-                {
-                    KeyModifiers = ModifierKeys.Control,
-                    KeyState = KeyStates.Down,
-                    Key = Key.S
-                },
-                // Parameter for command - file name for save command
-                Parameter = "diagram"
-            };
+// To define the mouse and keyboard gesture for the commands
+GestureCommand saveGesture = new GestureCommand()
+{
+    // Define the command with custom command
+    Command = Save,
+    // Define gesture for custom Command
+    Gesture = new Gesture
+    {
+        KeyModifiers = ModifierKeys.Control,
+        KeyState = KeyStates.Down,
+        Key = Key.S
+    },
+    // Parameter for command - file name for save command
+    Parameter = "diagram"
+};
 
-            // Add the custom command to the existing command collection.
-            diagram.CommandManager.Commands.Add(saveGesture);
+// Add the custom command to the existing command collection.
+diagram.CommandManager.Commands.Add(saveGesture);
 
 {% endhighlight %}
 {% endtabs %}
