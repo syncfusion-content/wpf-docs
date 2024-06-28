@@ -78,7 +78,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 {% endhighlight %}
 {% endtabs %}
 
-![ZoomIn and ZoomOut gif](Commands_Images/Commands_img13.gif)
+![ZoomIn and ZoomOut](Commands_Images/Commands_img13.gif)
 
 For ZoomTo specific value
 
@@ -106,7 +106,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 {% endhighlight %}
 {% endtabs %}
 
-![ZoomTo gif](Commands_Images/Commands_img14.gif)
+![ZoomTo](Commands_Images/Commands_img14.gif)
 
 For Panning
 
@@ -178,7 +178,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 {% endhighlight %}
 {% endtabs %}
 
-![Scroll and pan gif](Commands_Images/Commands_img15.gif)
+![Scroll and pan](Commands_Images/Commands_img15.gif)
 
 ## Reset
 
