@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Dropdown Menu Items in WPF Split Button control | Syncfusion
-description: Learn about Dropdown Menu Items support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
-platform: WPF
+title: Dropdown Menu Items in WPF Split Button Control | Syncfusion
+description: Learn here all about dropdown menu items support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
+platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
@@ -48,7 +48,7 @@ splitbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png"));
 {% endhighlight %}
 {% endtabs %}
 
-![popup-item](DropDownMenuItem_images/DropDownMenuItem_img1.png)
+![Popup-item in WPF Split Button.](dropdownmenuitem_images/wpf-split-button-popup-item.png)
 
 ## Setting icon bar visibility
 
@@ -92,7 +92,7 @@ splitbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png"));
 {% endhighlight %}
 {% endtabs %}
 
-![popup-item](DropDownMenuItem_images/DropDownMenuItem_img2.png)
+[Setting icon bar visibility in WPF Split Button.](dropdownmenuitem_images/wpf-split-button-setting-icon-bar-visibility.png)
 
 ## Setting scrollbar visibility
 
@@ -172,7 +172,8 @@ splitbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png"));
 {% endhighlight %}
 {% endtabs %}
 
- ![popup-item](DropDownMenuItem_images/DropDownMenuItem_img3.png)
+[Setting scrollbar visibility in WPF Split Button.](dropdownmenuitem_images/wpf-split-button-setting-scrollbar-visibility.png)
+
 
 ## Checkable dropdown menu items
 
@@ -209,8 +210,7 @@ splitbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png"));
 {% endhighlight %}
 {% endtabs %}
 
-
-![popup-item](DropDownMenuItem_images/DropDownMenuItem_img4.png)
+[Checkable dropdown menu items in WPF Split Button.](dropdownmenuitem_images/wpf-split-button-checkable-dropdown-menu-items.png)
 
 ## Resizing dropdown menu
 
