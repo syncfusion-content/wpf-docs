@@ -17,7 +17,7 @@ The `ExpandCollapseParameter` is used to compress a view of a hierarchy so that 
 
 ### Node
 
-The [Node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html#Syncfusion_UI_Xaml_Diagram_ExpandCollapseParameter_node) property is used to set the node that is to be act as root element.
+The [Node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html#Syncfusion_UI_Xaml_Diagram_ExpandCollapseParameter_Node) property is used to set the node that is to be act as root element.
 
 ### IsUpdateLayout
 
