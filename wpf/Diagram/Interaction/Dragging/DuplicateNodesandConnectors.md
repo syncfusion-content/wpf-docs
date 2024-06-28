@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Support to duplicate the nodes and connectors using ctrl key | Syncfusion.
-description: How to create the copy of Node, Connectors, and Groups using ctrl key.
+title: Support to duplicate nodes and connectors with Ctrl key | Syncfusion
+description: How to create the copy of Node, Connectors, and Groups using ctrl key in Syncfusion WPF Diagram (SfDiagram).
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -11,6 +11,8 @@ documentation: ug
 The SfDiagram simplifies the process of duplicating nodes and connectors. You can easily drag to create duplicates of selected nodes or connectors by simply holding down the Ctrl key, providing an improved experience for editing your diagrams.
 
 ![DuplicateNodesandConnectors](Drag_images/DuplicateNodeandConnectors.gif)
+
+N> To enable dragging of connectors in your diagrams, use `ConnectorConstraints.Draggable`.
 
 ## See Also
 
