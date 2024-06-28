@@ -65,7 +65,7 @@ sfDiagram.Load(str);
 
 ### Has the diagram modified?
 
-[`HasChanges`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramViewModel.html#Syncfusion_UI_Xaml_Diagram_DiagramViewModel_HasChanges) property of diagram control is used to notify that the diagram has any unsaved changes. This property track all changes that are made through interaction and through the public APIs.
+[HasChanges](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramViewModel.html#Syncfusion_UI_Xaml_Diagram_DiagramViewModel_HasChanges) property of diagram control is used to notify that the diagram has any unsaved changes. This property track all changes that are made through interaction and through the public APIs.
 
 {% tabs %}
 {% highlight xaml %}
@@ -137,7 +137,7 @@ N> SfDiagram's interface and view model classes are created without DataContract
 
 ## How to serialize a custom class 
 
-You can serialize a business class with the help of DataContract attribute and SfDiagram's KnownTypes property. You have to add DataContract attribute to serialize the whole class, which is not derived from a base class without DataContract attribute.
+You can serialize a business class with the help of DataContract attribute and SfDiagram's `KnownTypes` property. You have to add DataContract attribute to serialize the whole class, which is not derived from a base class without DataContract attribute.
 
 {% tabs %}
 {% highlight C# %}
