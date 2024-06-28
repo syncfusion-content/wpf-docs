@@ -9,7 +9,7 @@ documentation: ug
 
 # Rotate Command in WPF Diagram (SfDiagram)
 
-The [`Rotate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Rotate) Command is used to rotate the elements in diagram. The [RotateParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotateParameter.html) is used to represent [RotationDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotationDirection.html) and [Angle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotateParameter.html#Syncfusion_UI_Xaml_Diagram_RotateParameter_Angle) to rotate the element in diagram.
+The [Rotate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Rotate) Command is used to rotate the elements in diagram. The [RotateParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotateParameter.html) is used to represent [RotationDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotationDirection.html) and [Angle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotateParameter.html#Syncfusion_UI_Xaml_Diagram_RotateParameter_Angle) to rotate the element in diagram.
 
 {% tabs %}
 
@@ -24,9 +24,11 @@ The [`Rotate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDi
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
 graphinfo.Commands.Rotate.Execute(new RotateParameter() 
 { 
-    RotationDirection=RotationDirection.Clockwise,Angle=45
+    RotationDirection=RotationDirection.Clockwise,
+    Angle=45
 });
 
 {% endhighlight %}
@@ -34,4 +36,4 @@ graphinfo.Commands.Rotate.Execute(new RotateParameter()
 
 ![Gif for Rotate command](Commands_Images/Commands_Rotate.gif)
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Commands%20Sample)
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Rotate%20Command)

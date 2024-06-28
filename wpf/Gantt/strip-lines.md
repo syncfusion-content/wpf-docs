@@ -54,103 +54,103 @@ Type</th><th>
 Data Type</th></tr>
 <tr>
 <td>
-[Background](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Background)</td><td>
+{{'[Background](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Background)'| markdownify }}</td><td>
 Gets/sets background color of strip line.</td><td>
 CLR</td><td>
 Brush</td></tr>
 <tr>
 <td>
-[Content](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Content)</td><td>
+{{'[Content](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Content)'| markdownify }}</td><td>
 Gets/sets the content of the strip line.</td><td>
 CLR</td><td>
 Object</td></tr>
 <tr>
 <td>
-[ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_ContentTemplate)</td><td>
+{{'[ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_ContentTemplate)'| markdownify }}</td><td>
 Gets/sets the content template of the strip line.</td><td>
 CLR</td><td>
 DataTemplate</td></tr>
 <tr>
 <td>
-[ContentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_ContentTemplateSelector)</td><td>
+{{'[ContentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_ContentTemplateSelector)'| markdownify }}</td><td>
 Gets/sets the TemplateSelector of the strip line.</td><td>
 CLR</td><td>
 DataTemplateSelector</td></tr>
 <tr>
 <td>
-[StartDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_StartDate)</td><td>
+{{'[StartDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_StartDate)'| markdownify }}</td><td>
 Gets/sets the start date of the strip line.</td><td>
 CLR</td><td>
 DateTime</td></tr>
 <tr>
 <td>
-[EndDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_EndDate)</td><td>
+{{'[EndDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_EndDate)'| markdownify }}</td><td>
 Gets/sets the end date of the strip line.</td><td>
 CLR</td><td>
 DateTime</td></tr>
 <tr>
 <td>
-[RepeatBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_RepeatBehavior)</td><td>
+{{'[RepeatBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_RepeatBehavior)'| markdownify }}</td><td>
 Gets/sets the repeat behavior of the strip line.</td><td>
 CLR</td><td>
 Repeat (Enum)</td></tr>
 <tr>
 <td>
-[RepeatFor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_RepeatFor)</td><td>
+{{'[RepeatFor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_RepeatFor)'| markdownify }}</td><td>
 Gets/sets the intervals between the repeating strip lines.</td><td>
 CLR</td><td>
 Integer</td></tr>
 <tr>
 <td>
-[RepeatUpto](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_RepeatUpto)</td><td>
+{{'[RepeatUpto](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_RepeatUpto)'| markdownify }}</td><td>
 Gets/sets DateTime value. The strip line will be repeated up to this value.</td><td>
 CLR</td><td>
 DateTime</td></tr>
 <tr>
 <td>
-[Style](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Style)</td><td>
+{{'[Style](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Style)'| markdownify }}</td><td>
 Gets/sets the style for the strip line.</td><td>
 CLR</td><td>
 Style</td></tr>
 <tr>
 <td>
-[StyleSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_StyleSelector)</td><td>
+{{'[StyleSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_StyleSelector)'| markdownify }}</td><td>
 Gets/sets the style selector of the strip line.</td><td>
 CLR</td><td>
 StyleSelector</td></tr>
 <tr>
 <td>
-[VerticalContentAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_VerticalContentAlignment)</td><td>
+{{'[VerticalContentAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_VerticalContentAlignment)'| markdownify }}</td><td>
 Gets/sets the vertical alignment of the content present in the strip line.</td><td>
 CLR</td><td>
 VerticalAlignment</td></tr>
 <tr>
 <td>
-[HorizontalContentAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_HorizontalContentAlignment)</td><td>
+{{'[HorizontalContentAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_HorizontalContentAlignment)'| markdownify }}</td><td>
 Gets/sets the horizontal alignment of the content present in the strip line.</td><td>
 CLR</td><td>
 Horizontal Alignment</td></tr>
 <tr>
 <td>
-[Type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Type)</td><td>
+{{'[Type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Type)'| markdownify }}</td><td>
 Gets/sets the type of the strip line.</td><td>
 CLR</td><td>
 StriplineType(Enum)</td></tr>
 <tr>
 <td>
-[Position](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Position)</td><td>
+{{'[Position](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Position)'| markdownify }}</td><td>
 Gets/sets the absolute position of the strip line for Absolute strip line type.</td><td>
 CLR</td><td>
 Point</td></tr>
 <tr>
 <td>
-[Height](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Height)</td><td>
+{{'[Height](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Height)'| markdownify }}</td><td>
 Gets/sets the absolute height of the strip line for Absolute strip line type.</td><td>
 CLR</td><td>
 Double</td></tr>
 <tr>
 <td>
-[Width](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Width)</td><td>
+{{'[Width](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Width)'| markdownify }}</td><td>
 Get/sets the absolute width of the strip line for Absolute strip line type.</td><td>
 CLR</td><td>
 Double</td></tr>
@@ -173,13 +173,13 @@ Type</th><th>
 Data Type</th></tr>
 <tr>
 <td>
-[ShowStripLines](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowStripLines)</td><td>
+{{'[ShowStripLines](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowStripLines)'| markdownify }}</td><td>
 Get the user option to show the strip lines.</td><td>
 Dependency Property</td><td>
 Bool</td></tr>
 <tr>
 <td>
-[StripLines](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_StripLines)</td><td>
+{{'[StripLines](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_StripLines)'| markdownify }}</td><td>
 Get/sets the collection of StripLineInfo from the user.</td><td>
 Dependency Property</td><td>
 IEnumerable</td></tr>
@@ -197,11 +197,11 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-[Repeat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Repeat.html)</td><td>
+{{'[Repeat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Repeat.html)'| markdownify }}</td><td>
 This property contains the following values:Year: Repeating the strip line on a yearly basis depends on the RepeatFor value in StripLineInfo.Month: Repeating the strip line on a monthly basis depends on the RepeatFor value in StripLineInfo.Week: Repeating the strip line on a weekly basis depends on the RepeatFor value in StripLineInfo.Day: Repeating the strip line on a daily basis depends on the RepeatFor value in StripLineInfo.Hour: Repeating the strip line on an hourly basis depends on the RepeatFor value in StripLineInfo.Minute: Repeating the strip line on per-minute basis depends on the RepeatFor value in StripLineInfo.</td></tr>
 <tr>
 <td>
-[StriplineType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StriplineType.html#fields)</td><td>
+{{'[StriplineType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StriplineType.html#fields)'| markdownify }}</td><td>
 This property contains the following values:Regular: This denotes the normal strip line.Absolute: This denotes the absolute strip line. You can customize the position, size, and appearance of the strip line in this type.</td></tr>
 </table>
 
@@ -219,7 +219,7 @@ Arguments</th><th>
 Type</th></tr>
 <tr>
 <td>
-[StripLineCreated](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_StripLineCreated)</td><td>
+{{'[StripLineCreated](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_StripLineCreated)'| markdownify }}</td><td>
 Whenever a strip line is created, this event will be triggered. the handler of the event will have the newly created strip line (StripLineInfo) in the argument.By handling this event, you can customize the appearance of the strip line.</td><td>
 StripLineCreated(object sender, StriplineCreatedEventArgs args)</td><td>
 Event </td></tr>

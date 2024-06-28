@@ -331,7 +331,7 @@ this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
 N> By default, GanttGrid will show the date alone.
 
 ## Auto expand mode
-By default, the `GanttGrid` items will be in expanded state. You can define how the nodes to be expanded while loading the `GanttControl` by using `AutoExpandMode` property.
+By default, the [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html) items will be in expanded state. You can define how the nodes to be expanded while loading the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) by using [AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AutoExpandMode) property.
 
 * `None` : All items are collapsed when loaded.
 * `RootNodesExpanded` : Expands only the root item when loaded.

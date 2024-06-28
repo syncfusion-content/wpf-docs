@@ -9,22 +9,22 @@ documentation: ug
 
 # Zoom Command in WPF Diagram (SfDiagram)
 
-The [`Zoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Zoom) commands are used to do zoom-in and zoom-out operations on the Diagram view. This command is also used to do scroll and pan operations with its parameter. 
+The [Zoom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Zoom) commands are used to do zoom-in and zoom-out operations on the Diagram view. This command is also used to do scroll and pan operations with its parameter. 
 
-To execute zoom commands, IZoomParameter type [IZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) have to be passed.
+To execute zoom commands, parameter of type [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) have to be passed.
 
 ## Zoom position parameter
 
-The [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) is used to represent the position parameters to for executing zoom command. Please find its properties and their description as follows.
+The `ZoomPositionParameter` is used to represent the position parameters for executing the zoom command. Please find its properties and their descriptions as follows.
 
 | Property name | Description |
 | --- | --- |
-| [FocusPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_FocusPoint) | It is used to set the point of foucus when zooming. Usually used to specify a particular point in the diagram view. |
-| [PanDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_PanDelta) | It is used to set the finite increament in the pan value. |
-| [ScrollDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ScrollDelta) | It is used to set the finite increament in the scroll value. |
-| [ZoomCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ZoomCommand) | It is used to set the opertaion to be performed. |
-| [ZoomFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ZoomFactor) | It is used to set the percentage of scale value for each ZoomIn or ZoomOut functionalities. |
-| [ZoomTo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ZoomTo) | It is used to set the zoom to a particular value. |
+| [FocusPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_FocusPoint) | It is used to set the point of focus when zooming, Usually used to specify a particular point within the diagram view. |
+| [PanDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_PanDelta) | It is used to set the finite increment in the pan value. |
+| [ScrollDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ScrollDelta) | It is used to set the finite increment in the scroll value. |
+| [ZoomCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ZoomCommand) | It is used to set the operation to be performed. |
+| [ZoomFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ZoomFactor) | It is used to set the percentage scale value for each ZoomIn or ZoomOut operation. |
+| [ZoomTo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ZoomTo) | It is used to set the zoom level to a specific value. |
 
 For ZoomIn operation
 
@@ -40,14 +40,14 @@ For ZoomIn operation
 
 {% highlight C# %}
 
-            IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-            // For ZoomIn function
-            graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
-            {
-                ZoomCommand = ZoomCommand.ZoomIn,
-                ZoomFactor = 0.2,
-            });
+// For ZoomIn function
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
+{
+    ZoomCommand = ZoomCommand.ZoomIn,
+    ZoomFactor = 0.2,
+});
 
 {% endhighlight %}
 {% endtabs %}
@@ -66,21 +66,21 @@ For ZoomOut operation
 
 {% highlight C# %}
 
-            IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-            // For ZoomOut function
-            graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
-            {
-                ZoomCommand = ZoomCommand.ZoomOut,
-                ZoomFactor = 0.2,
-            });
+// For ZoomOut function
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
+{
+    ZoomCommand = ZoomCommand.ZoomOut,
+    ZoomFactor = 0.2,
+});
 
 {% endhighlight %}
 {% endtabs %}
 
-![ZoomIn and ZoomOut gif](Commands_Images/Commands_img13.gif)
+![ZoomIn and ZoomOut](Commands_Images/Commands_img13.gif)
 
-For ZoomTo speciffic value
+For ZoomTo specific value
 
 {% tabs %}
 
@@ -94,33 +94,33 @@ For ZoomTo speciffic value
 
 {% highlight C# %}
 
-            IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-            // For ZoomTo specific value
-            graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
-            {
-                ZoomCommand = ZoomCommand.Zoom,
-                ZoomTo = 2,
-            });
+// For ZoomTo specific value
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
+{
+    ZoomCommand = ZoomCommand.Zoom,
+    ZoomTo = 2,
+});
 
 {% endhighlight %}
 {% endtabs %}
 
-![ZoomTo gif](Commands_Images/Commands_img14.gif)
+![ZoomTo](Commands_Images/Commands_img14.gif)
 
 For Panning
 
 {% tabs %}
 {% highlight C# %}
 
-            IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-            // For horizontal scroll
-            graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
-            {
-                ZoomCommand = ZoomCommand.HorizondalScroll,
-                ScrollDelta = 50,
-            });
+// For horizontal scroll
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
+{
+    ZoomCommand = ZoomCommand.HorizondalScroll,
+    ScrollDelta = 50,
+});
 
 {% endhighlight %}
 {% endtabs %}
@@ -140,14 +140,14 @@ For HorizontalScroll
 
 {% highlight C# %}
 
-            IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-            // For horizontal scroll
-            graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
-            {
-                ZoomCommand = ZoomCommand.HorizondalScroll,
-                ScrollDelta = 50,
-            });
+// For horizontal scroll
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
+{
+    ZoomCommand = ZoomCommand.HorizondalScroll,
+    ScrollDelta = 50,
+});
 
 {% endhighlight %}
 {% endtabs %}
@@ -166,34 +166,34 @@ For VerticalScroll
 
 {% highlight C# %}
 
-            IGraphInfo graphinfo = Diagram.Info as IGraphInfo;
+IGraphInfo graphinfo = Diagram.Info as IGraphInfo;
 
-            // For vertical scroll
-            graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
-            {
-                ZoomCommand = ZoomCommand.VerticalScroll,
-                ScrollDelta = 50,
-            });
+// For vertical scroll
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
+{
+    ZoomCommand = ZoomCommand.VerticalScroll,
+    ScrollDelta = 50,
+});
 
 {% endhighlight %}
 {% endtabs %}
 
-![Scroll and pan gif](Commands_Images/Commands_img15.gif)
+![Scroll and pan](Commands_Images/Commands_img15.gif)
 
 ## Reset
 
-The [`Reset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Reset) command is used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram. If you want to customize the Reset command, you can use the [IReset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) as parameter.
+The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Reset) command is used to reset [HorizontalOffset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_HorizontalOffset), [VerticalOffset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_VerticalOffset), and [CurrentZoom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_CurrentZoom) of the Diagram. If you want to customize the `Reset` command, you can use the parameter of type [ResetParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html).
 
 ### ResetParameter
 
-The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) parameter is used to define the behavior of the Reset Command. 
+The `Reset` parameter is used to define the behavior of the Reset Command. 
 
 | Reset Enum Values | Description |
 | --- | --- |
-| None | It is used to disables all the behaviors of the Reset Command. |
-| Pan | It is used to specifies to reset the panned diagram. |
-| Zoom | It is used to specifies to reset the zoomed diagram. |
-| ZoomPan | It is used to Specifies to reset the zoomed and panned diagram. |
+| None | It is used to disable all behaviors of the Reset Command. |
+| Pan | It specifies resetting the panned diagram. |
+| Zoom | It specifies resetting the zoomed diagram. |
+| ZoomPan | It specifies resetting both the zoomed and panned diagram. |
 
 
 {% tabs %}
@@ -208,10 +208,10 @@ The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetP
 
 {% highlight C# %}
 
-            IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-            // Reset the Zoom level of the Diagram
-            graphinfo.Commands.Reset.Execute(new ResetParameter() { Reset = Reset.ZoomPan });
+// Reset the Zoom level of the Diagram
+graphinfo.Commands.Reset.Execute(new ResetParameter() { Reset = Reset.ZoomPan });
 
 {% endhighlight %}
 {% endtabs %}

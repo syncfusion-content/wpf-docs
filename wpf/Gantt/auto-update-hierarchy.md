@@ -28,7 +28,7 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-UseAutoUpdateHierarchy</td><td>
+{{'[UseAutoUpdateHierarchy](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseAutoUpdateHierarchy)'| markdownify }}</td><td>
 Enable or disable the auto update hierarchy support.</td><td>
 Dependency Property</td><td>
 bool</td></tr>

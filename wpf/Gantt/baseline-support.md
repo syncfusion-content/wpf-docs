@@ -36,15 +36,14 @@ Parameters </th><th>
 Type </th><th>
 Return Type </th></tr>
 <tr>
-<td>
-[LoadVarianceTableView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_LoadVarianceTableView)</td><td>
+<td>{{'[LoadVarianceTableView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_LoadVarianceTableView)'| markdownify }}</td><td>
 this method is used to load the Variance view of the Gantt.</td><td>
 LoadVarianceTableView()</td><td>
 N/A</td><td>
 void </td></tr>
 <tr>
 <td>
-[LoadDefaultTableView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_LoadDefaultTableView)</td><td>
+{{'[LoadDefaultTableView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_LoadDefaultTableView)'| markdownify }}</td><td>
 this method is used to load the Default (Editing) view of the Gantt.</td><td>
 LoadDefaultTableView()</td><td>
 N/A</td><td>
@@ -708,7 +707,7 @@ Data Type</th><th>
 Reference links</th></tr>
 <tr>
 <td>
-[ShowBaseline](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowBaseline)</td><td>
+{{'[ShowBaseline](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowBaseline)'| markdownify }}</td><td>
 Controls the view of baseline in the Gantt Chart. Default value is false</td><td>
 DependencyProperty</td><td>
 bool</td><td>
@@ -731,14 +730,14 @@ Data Type</th><th>
 Reference links</th></tr>
 <tr>
 <td>
-[BaselineColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaselineColor)</td><td>
+{{'[BaselineColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaselineColor)'| markdownify }}</td><td>
 Used to customize the baseline color. Default value is Orange</td><td>
 DependencyProperty</td><td>
 Brush</td><td>
 NA</td></tr>
 <tr>
 <td>
-[BaselineStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaselineStrokeThickness)</td><td>
+{{'[BaselineStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaselineStrokeThickness)'| markdownify }}</td><td>
 Used to customize the baseline thickness. Default value is 3d</td><td>
 DependencyProperty</td><td>
 bool</td><td>
@@ -785,7 +784,7 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-[ShowAddNewColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowAddNewColumn)</td><td>
+{{'[ShowAddNewColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowAddNewColumn)'| markdownify }}</td><td>
 Gets/Sets the  value that is used in displaying/hiding the add new column combo box in grid</td><td>
 DependencyProperty </td><td>
 bool</td></tr>
@@ -1459,7 +1458,7 @@ Type </th><th>
 Return Type </th></tr>
 <tr>
 <td>
-[GetProjectStatistics](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_GetProjectStatistics)</td><td>
+{{'[GetProjectStatistics](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_GetProjectStatistics)'| markdownify }}</td><td>
 this method is used to get the current statistics information about the project</td><td>
 GetProjectStatistics()</td><td>
 N/A</td><td>

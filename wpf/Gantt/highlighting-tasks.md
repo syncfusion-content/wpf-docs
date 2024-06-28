@@ -27,13 +27,13 @@ Type </th><th>
 Data Type </th></tr>
 <tr>
 <td>
-[HighlightedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightedItems)</td><td>
+{{'[HighlightedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightedItems)'| markdownify }}</td><td>
 The items that are passed through this API will be highlighted in Gantt chart region. The items should be in linear form. </td><td>
 Dependency</td><td>
 IList</td></tr>
 <tr>
 <td>
-[HighlightItemBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightItemBrush)</td><td>
+{{'[HighlightItemBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightItemBrush)'| markdownify }}</td><td>
 Specifies the color in which items should be highlight</td><td>
 Dependency</td><td>
 Brush</td></tr>

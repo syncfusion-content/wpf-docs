@@ -42,13 +42,13 @@ Type</th><th>
 Data Type</th></tr>
 <tr>
 <td>
-[CurrentDateLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CurrentDateLine) </td><td>
+{{'[CurrentDateLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CurrentDateLine)'| markdownify }} </td><td>
 Get the user-defined line for the DateTime indicator.</td><td>
 Dependency Property</td><td>
 Line</td></tr>
 <tr>
 <td>
-[StickCurrentDateLineTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_StickCurrentDateLineTo)</td><td>
+{{'[StickCurrentDateLineTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_StickCurrentDateLineTo)'| markdownify }}</td><td>
 Get/sets the StickCurrentDateLineTo property of the Gantt control.By default this is set to Today.</td><td>
 Dependency Property</td><td>
 EnumNoneTodayDynamic TimeLoaded TimeAbsolute</td></tr>
