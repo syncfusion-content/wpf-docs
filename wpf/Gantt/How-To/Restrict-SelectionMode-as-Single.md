@@ -19,7 +19,7 @@ The following codes illustrate this
 …
 <gantt:GanttControl x:Name="Gantt"
                     ItemsSource="{Binding TaskDetails}"
-                    Loaded="Gantt_Loaded">
+                    Loaded="OnGanttLoaded">
 </gantt:GanttControl>
 …
 
@@ -27,7 +27,7 @@ The following codes illustrate this
 {% highlight c# %}
 
 …
-private void Gantt_Loaded(object sender, RoutedEventArgs e)
+private void OnGanttLoaded(object sender, RoutedEventArgs e)
 {
      this.Gantt.SelectionMode = GanttSelectionMode.Single;
 }
