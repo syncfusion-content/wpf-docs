@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selecting Items in WPF Accordion control | Syncfusion
+title: Selecting Items in WPF Accordion Control | Syncfusion
 description: Learn here all about Selecting Items support in Syncfusion WPF Accordion (SfAccordion) control and more.
 platform: wpf
 control: SfAccordion
@@ -136,7 +136,7 @@ Here is an example showing the functioning of these properties in which items ar
 
 {% endtabs %}
 
-![WPF Accordion Selected Item Customization](Selecting-Items-images/wpf-accordion-selected-item-customization.jpeg)
+![WPF Accordion selected item customization.](selecting-items-images/wpf-accordion-selected-item-customization.jpeg)
 
 ## Selecting item using IsSelected
 
@@ -233,7 +233,7 @@ Here is an example showing the behavior of this property by binding [SfAccordion
 
 {% endtabs %}
 
-![WPF Accordion Selecting Items](Selecting-Items-images/wpf-accordion-selecting-items.jpeg)
+![WPF Accordion selecting items.](selecting-items-images/wpf-accordion-selecting-items.jpeg)
 
 ## Checking the lock state of an item
 
@@ -480,11 +480,11 @@ Here is an example to demonstrate the values of event arguments:
 
 Expand the item with header Windows Phone
 
-![WPF Accordion Expand Items with Header](Selecting-Items-images/wpf-accordion-expand-items-with-header.jpeg)
+![WPF Accordion expand items with header.](selecting-items-images/wpf-accordion-expand-items-with-header.jpeg)
 
 Collapse the item with header Windows Phone
 
-![WPF Accordion Collapse Items with Header](Selecting-Items-images/wpf-accordion-collapse-items-with-header.jpeg)
+![WPF Accordion collapse items with header.](selecting-items-images/wpf-accordion-collapse-items-with-header.jpeg)
 
 ## Notifying an item selection
 
