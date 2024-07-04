@@ -257,6 +257,16 @@ public class ColumnSizerExt : GridColumnSizer
 {% endhighlight %}
 {% endtabs %}
 
+## Performance tips
+
+By default, when using the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ColumnSizer) property, the column widths are calculated based on the contents of every cell in each column. This comprehensive calculation can lead to performance issues. To improve the loading performance of the [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid), set the [GridColumnSizer.AutoFitMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoFitMode.html) property to [AutoFitMode.SmartFit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoFitMode.html#Syncfusion_UI_Xaml_Grid_AutoFitMode_SmartFit).
+
+In the [AutoFitMode.SmartFit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoFitMode.html#Syncfusion_UI_Xaml_Grid_AutoFitMode_SmartFit) mode, the column widths are adjusted by measuring the text only when the current string length exceeds the previous string length.
+
+{% tabs %} {% highlight c# %} dataGrid.GridColumnSizer.AutoFitMode = AutoFitMode.SmartFit; {% endhighlight %} {% endtabs %}
+
+N>  `AutoFitMode.SmartFit` mode does not account for special characters such as `\n` (newline) or `\t` (tab). If your `WPF DataGrid` (SfDataGrid) does not contain these special characters, we recommend enabling the Smart Fit calculation to enhance loading performance.
+
 ## Star column sizer ratio support
 
 You can customize the `ColumnSizer.Star` width calculation logic by overriding [SetStarWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_SetStarWidth_System_Double_System_Collections_Generic_IEnumerable_Syncfusion_UI_Xaml_Grid_GridColumn__) method of [GridColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html).
