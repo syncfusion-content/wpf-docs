@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restrict SelectionMode | Gantt | Wpf | Syncfusion
-description: This section describes how to restrict the SelectionMode behavior in GanttControl for WPF platform.
+description: This section describes how to restrict the SelectionMode behavior in Gantt control for WPF platform.
 platform: wpf
 control: Gantt
 documentation: ug
