@@ -7,7 +7,7 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-## Using the Refresh button
+# Using the Refresh button
 
 The Refresh button is on the right side of the HierarchyNavigator control. Clicking the Refresh button will initiate the HierarchyNavigatorRefreshButtonClick event.
 
