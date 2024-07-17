@@ -57,6 +57,9 @@ To test SfDataGrid with CUITs, build the Extension Project and place it in the m
 
 The above assembly must be placed into the following directory based on your Visual Studio version.
 
+For Visual Studio 2015: 
+C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPackages
+
 N> `Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll` need to be installed in GAC location. Please refer the MSDN link for  [GAC](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/ex0ss12c(v=vs.80))  installation.
 
 ### Getting Started
