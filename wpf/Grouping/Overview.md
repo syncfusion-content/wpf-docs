@@ -2,7 +2,7 @@
 layout: post
 title: About WPF Grouping control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Grouping control, its elements and more details.
-platform: WindowsForms
+platform: wpf
 control: Grouping
 documentation: ug
 ---
