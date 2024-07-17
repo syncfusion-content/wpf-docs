@@ -17,8 +17,6 @@ Following steps explain how to create sparkline,
 
 * Open the [Add Reference](https://www.microsoft.com/en-us/download/details.aspx?id=55984) window from your project.
 * To Choose our assemblies follow the below step depending upon the developing environment. 
-* If using VS 2012 choose Assemblies > Extensions > Syncfusion.SfChart.WPF.dll 
-* If using VS 2010 choose .Net>Syncfusion.SfChart.WPF.dll
 * Add the following namespace in your XAML page:
 
 {% tabs %}

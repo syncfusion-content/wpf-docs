@@ -81,7 +81,7 @@ Visual Studio
 
 </td>
 <td>
-Coded UI provides support only in Visual Studio – 2010, 2012 and 2013 Ultimate and Premium platforms for Visual Studio 2015 and 2017 supported only in Enterprise platform. For more information about the platforms and configurations supported by Coded UI tests, refer to this {{'[link](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings?view=vs-2015&redirectedfrom=MSDN#%22%22)'| markdownify }}.
+Coded UI provides support only in Visual Studio – Premium platforms for Visual Studio 2015 and 2017 supported only in Enterprise platform. For more information about the platforms and configurations supported by Coded UI tests, refer to this {{'[link](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings?view=vs-2015&redirectedfrom=MSDN#%22%22)'| markdownify }}.
 </td>
 </tr>
 </table>
@@ -363,22 +363,6 @@ The above assembly must be placed in the following directory based on your Visua
 </td>
 <td>
 C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2012
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\11.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2013
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\13.0\UITestExtensionPackages
 </td>
 </tr>
 <tr>

@@ -49,9 +49,6 @@ The prerequisites details are listed below:
 Development Environments</td><td>
 <ul>
 <li> Visual Studio 2015 (Ultimate, Premium, Professional, and Express)</li>
-<li> Visual Studio 2012 (Ultimate, Premium, Professional, and Express)</li>
-<li> Visual Studio 2010 (Ultimate, Premium, Professional, and Express)</li>
-<li> Visual Studio 2008 (Team System, Professional, Standard & Express)</li>
 <li> Visual Studio 2005 (Professional, Standard & Express)</li></ul></td></tr>
 <tr>
 <td>

@@ -29,9 +29,6 @@ The following section explains how to create SfDateTimeRangeNavigator.
 1. Open the Add Reference window in your project.
 2. Choose our assemblies by following the given steps depending upon the developing environment.
 
-   * If you use VS 2012, choose Assemblies > Extensions > Syncfusion.SfChart.WPF.dll.
-   * If you use VS 2010, choose .Net > Syncfusion.SfChart.WPF.dll.
-
 3. Add the following namespace in your XAML page:
 
 {% capture codesnippet1 %}
