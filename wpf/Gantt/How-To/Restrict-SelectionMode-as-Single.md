@@ -19,9 +19,9 @@ The following codes illustrate this
 <gantt:GanttControl x:Name="gantt"
                     ItemsSource="{Binding TaskDetails}"
                     SelectionMode="None">
-    <syncfusion:GanttControl.DataContext>
+    <gantt:GanttControl.DataContext>
         <local:ViewModel/>
-    </syncfusion:GanttControl.DataContext>
+    </gantt:GanttControl.DataContext>
 </gantt:GanttControl>
 
 {% endhighlight  %}
