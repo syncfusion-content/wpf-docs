@@ -1,58 +1,34 @@
 ---
 layout: post
-title: Restrict SelectionMode | Gantt | Wpf | Syncfusion
-description: This section describes how to restrict the SelectionMode behavior in Gantt control for WPF platform.
+title: Restrict item selection | Gantt | Wpf | Syncfusion
+description: This section describes how to implement the SelectionMode behavior in the WPF Gantt Control.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Restrict SelectionMode
+# Restrict item selection
 
-To restrict the selection mode, set the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_SelectionMode) of the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) as None. 
+To restrict item selection, set the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_SelectionMode) of the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) to None. 
 
 The following codes illustrate this
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml hl_lines="3" %}
 
 <gantt:GanttControl x:Name="Gantt"
                     ItemsSource="{Binding TaskDetails}"
                     SelectionMode="None">
-    <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
-                                         TaskNameMapping="TaskName"
-                                         StartDateMapping="StartDate"
-                                         ChildMapping="Child"
-                                         FinishDateMapping="FinishDate"
-                                         DurationMapping="Duration"
-                                         ProgressMapping="Progress"
-                                         PredecessorMapping="Predecessor"
-                                         ResourceInfoMapping="Resources"/>
-    </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
     </syncfusion:GanttControl.DataContext>
 </gantt:GanttControl>
 
 {% endhighlight  %}
-{% highlight c# %}
+{% highlight c# hl_lines="2" %}
 
 this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 this.ganttControl.SelectionMode = GanttSelectionMode.None;
-
-// Task attribute mapping
-TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
-taskAttributeMapping.TaskIdMapping = "TaskId";
-taskAttributeMapping.TaskNameMapping = "TaskName";
-taskAttributeMapping.StartDateMapping = "StartDate";
-taskAttributeMapping.ChildMapping = "Child";
-taskAttributeMapping.FinishDateMapping = "FinishDate";
-taskAttributeMapping.DurationMapping = "Duration";
-taskAttributeMapping.ProgressMapping = "Progress";
-taskAttributeMapping.PredecessorMapping = "Predecessor";
-taskAttributeMapping.ResourceInfoMapping = "Resources";
-this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight  %}
 
