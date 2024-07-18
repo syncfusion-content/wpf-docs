@@ -9,7 +9,7 @@ documentation: ug
 
 # Restrict item selection
 
-To restrict item selection, set the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_SelectionMode) of the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) to [None](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttSelectionMode.html#Syncfusion_Windows_Controls_Gantt_GanttSelectionMode_None). 
+To restrict item selection, set the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_SelectionMode) property of the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) to [None](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttSelectionMode.html#Syncfusion_Windows_Controls_Gantt_GanttSelectionMode_None). 
 
 The following codes illustrate this
 
