@@ -33,6 +33,26 @@ pdfviewer1.Print()
 {%endhighlight%}
 {% endtabs %}
 
+## Silent Printing with Printer Name
+
+The [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Print_System_String_) method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) allows you to print PDF files silently to the specified printer, without any user interaction. You can enable the preferred settings for silent printing using the [PrinterSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PrinterSettings) property. The following code example shows how to perform silent printing with a specified printer name in WPF PDF Viewer.
+
+{% tabs %}
+{%highlight c#%}
+
+string printerName = "enter the printer name";
+pdfviewer1.Print(printerName);
+
+{%endhighlight%}
+
+{%highlight vb%}
+
+Dim printerName As String = "enter the printer name"
+pdfviewer1.Print(printerName)
+
+{%endhighlight%}
+{% endtabs %}
+
 ## Customizing print size
 
 PDF viewer printer settings allows scaling PDF pages to shrink or enlarge while printing.
