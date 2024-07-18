@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restrict item selection | Gantt | Wpf | Syncfusion
-description: This section describes how to implement the SelectionMode behavior in the WPF Gantt Control.
+description: This section describes how to implement the SelectionMode behavior in the Syncfusion Essential Studio WPF Gantt control.
 platform: wpf
 control: Gantt
 documentation: ug
