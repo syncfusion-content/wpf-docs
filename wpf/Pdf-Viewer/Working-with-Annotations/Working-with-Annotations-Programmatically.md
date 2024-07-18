@@ -8,6 +8,53 @@ documentation: ug
 ---
 
 # Working with annotations programmatically
+## Add an annotation
+
+PDF Viewer allows the users to add the annotation programmatically without user interaction. We can add the annotation to the PDF document with the help of the [PdfViewerControl’s loadedDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_LoadedDocument) property from the code behind.
+
+The following code snippet explains how to add an ink annotation at runtime to the PDF document.
+
+{% tabs %}
+{% highlight C# %}
+
+//Adding ink annotation at runtime to the PDF document.
+private void AddAnnotation()
+{ 
+    //Get the instance of the loadedDocument from the PdfViewerControl.
+    PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
+
+    //Specify the ink points
+    List<float> inkPoints = new List<float> { 40, 300, 60, 100, 40, 50, 40, 300 };
+    //Specify the bounds of an annotation
+    RectangleF rectangle = new RectangleF(0, 0, 300, 400);
+    //Create a new ink annotation
+    PdfInkAnnotation inkAnnotation = new PdfInkAnnotation(rectangle, inkPoints);
+
+    //Add the ink annotation to the desired page of the PdfLoadedDocument property instance.
+    loadedDocument.Pages[0].Annotations.Add(inkAnnotation);
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+'Adding ink annotation at runtime to the PDF document.
+private void AddAnnotation()
+{ 
+    'Get the instance of the loadedDocument from the PdfViewerControl.
+    Dim loadedDocument As PdfLoadedDocument = pdfViewer.LoadedDocument
+
+    'Specify the ink points
+    Dim inkPoints As List(Of Single) = New List(Of Single) From {40, 300, 60, 100, 40, 50, 40, 300}
+    'Specify the bounds of an annotation
+    Dim rectangle As RectangleF = New RectangleF(0, 0, 300, 400)
+    'Create a new ink annotation
+    Dim inkAnnotation As PdfInkAnnotation = New PdfInkAnnotation(rectangle, inkPoints)
+
+    'Add the ink annotation to the desired page of the PdfLoadedDocument property instance.
+    loadedDocument.Pages[0].Annotations.Add(inkAnnotation)
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## Select an annotation
 
