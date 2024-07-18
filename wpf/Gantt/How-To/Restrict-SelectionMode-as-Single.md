@@ -9,14 +9,14 @@ documentation: ug
 
 # Restrict item selection
 
-To restrict item selection, set the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_SelectionMode) of the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) to None. 
+To restrict item selection, set the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttSelectionMode.html#Syncfusion_Windows_Controls_Gantt_GanttSelectionMode_None) of the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) to None. 
 
 The following codes illustrate this
 
 {% tabs %}
 {% highlight xaml hl_lines="3" %}
 
-<gantt:GanttControl x:Name="Gantt"
+<gantt:GanttControl x:Name="gantt"
                     ItemsSource="{Binding TaskDetails}"
                     SelectionMode="None">
     <syncfusion:GanttControl.DataContext>
@@ -27,8 +27,8 @@ The following codes illustrate this
 {% endhighlight  %}
 {% highlight c# hl_lines="2" %}
 
-this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
-this.ganttControl.SelectionMode = GanttSelectionMode.None;
+this.gantt.ItemsSource = new ViewModel().TaskCollection;
+this.gantt.SelectionMode = GanttSelectionMode.None;
 
 {% endhighlight  %}
 
