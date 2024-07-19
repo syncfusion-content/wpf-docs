@@ -378,7 +378,7 @@ You can edit or create new style for the following SfDataGrid elements through *
 15. FilterPopupTemplate
 16. DetailsViewDataGridStyle
 
-N> Visual Studio Editing option is available from Visual Studio 2012 and higher versions only.
+N> Visual Studio Editing option is available from Visual Studio 2015 and higher versions only.
 
 ## Writing Style by TargetType
 

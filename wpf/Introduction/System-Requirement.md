@@ -22,14 +22,3 @@ This section describes the system requirements to use Syncfusion WPFControls for
 
 
 
-## IDE
-
-### Following IDEs can be used for development:
-
-* Microsoft Visual Studio 2008
-* Microsoft Visual Studio 2010
-* Microsoft Visual Studio 2012
-* Microsoft Visual Studio 2013
-
-
-

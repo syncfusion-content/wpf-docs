@@ -39,15 +39,6 @@ Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
 </table>
 
 The SfGridExtension assembly must be placed into the following directory based on your Visual Studio version.
-For Visual Studio 2010: 
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages
-
-For Visual Studio 2012: 
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\11.0\UITestExtensionPackages
-
-For Visual Studio 2013: 
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\13.0\UITestExtensionPackages
-
 For Visual Studio 2015: 
 C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPackages
 
