@@ -259,8 +259,8 @@ private void ModifyAnnotation()
     Dim loadedDocument As PdfLoadedDocument = pdfViewer.LoadedDocument
     Dim inkAnnotation As PdfInkAnnotation = Nothing
     'Check whether the annotation in PdfInkAnnotation
-    If TypeOf loadedDocument.Pages(0).Annotations(1) Is PdfInkAnnotation Then
-        inkAnnotation = TryCast(loadedDocument.Pages(0).Annotations(1), PdfInkAnnotation)
+    If TypeOf loadedDocument.Pages(0).Annotations(0) Is PdfInkAnnotation Then
+        inkAnnotation = TryCast(loadedDocument.Pages(0).Annotations(0), PdfInkAnnotation)
         'Modify the color of the ink annotation 
         inkAnnotation.Color = New PdfColor(System.Drawing.Color.Blue)
     End If
