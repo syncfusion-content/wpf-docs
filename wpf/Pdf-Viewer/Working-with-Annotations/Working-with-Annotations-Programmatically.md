@@ -10,7 +10,7 @@ documentation: ug
 # Working with annotations programmatically
 ## Add an annotation
 
-PDF Viewer allows users to add annotations programmatically without user interaction. Annotations can be added to the PDF document using the [PdfViewerControl’s loadedDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_LoadedDocument) property from the code behind.
+The PDF Viewer allows users to add annotations programmatically without user interaction. Annotations can be added to the PDF document using the [PdfViewerControl’s loadedDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_LoadedDocument) property in the code behind.
 
 The following code snippet explains how to add an ink annotation at runtime to the PDF document.
 
@@ -201,7 +201,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {% endtabs %}
 
 ## Modify an annotation
-PDF Viewer allows users to modify annotations programmatically without user interaction with the below ways.
+The PDF Viewer allows users to modify annotations programmatically without user interaction in the following ways.
 
 ### Modify an annotation using annotation changed event settings 
 Annotation’s properties can be modified programmatically through `Settings` in respective annotation changed event. 
@@ -228,19 +228,19 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
 
 ### Modify an annotation using loadedDocument
 
-Annotations can be modified to the PDF document using the [PdfViewerControl’s loadedDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_LoadedDocument) property from the code behind.
+Annotations can be modified in the PDF document using the [PdfViewerControl’s loadedDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_LoadedDocument) property in the code behind.
 
-The following code snippet explains how to modify an ink annotation at runtime to the PDF document.
+The following code snippet demonstrates how to modify an ink annotation at runtime.
 
 {% tabs %}
 {% highlight C# %}
 
-//Modify ink annotation at runtime to the PDF document.
+//Modify the ink annotation in the PDF Viewer runtime.
 private void ModifyAnnotation()
 { 
     //Get the instance of the loadedDocument from the PdfViewerControl.
     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
-    //Check whether the annotation in PdfInkAnnotation
+    //Check whether the annotation is PdfInkAnnotation.
     if(loadedDocument.Pages[0].Annotations[0] is PdfInkAnnotation)
     {
         PdfInkAnnotation inkAnnotation = loadedDocument.Pages[0].Annotations[0] as PdfInkAnnotation;
@@ -252,16 +252,16 @@ private void ModifyAnnotation()
 {% endhighlight %}
 {% highlight VB %}
 
-'Modify ink annotation at runtime to the PDF document.
+'Modify the ink annotation in the PDF Viewer runtime.
 private void ModifyAnnotation()
 { 
     'Get the instance of the loadedDocument from the PdfViewerControl.
     Dim loadedDocument As PdfLoadedDocument = pdfViewer.LoadedDocument
     Dim inkAnnotation As PdfInkAnnotation = Nothing
-    'Check whether the annotation in PdfInkAnnotation
+    'Check whether the annotation is PdfInkAnnotation.
     If TypeOf loadedDocument.Pages(0).Annotations(0) Is PdfInkAnnotation Then
         inkAnnotation = TryCast(loadedDocument.Pages(0).Annotations(0), PdfInkAnnotation)
-        'Modify the color of the ink annotation 
+        'Modify the color of the ink annotation.
         inkAnnotation.Color = New PdfColor(System.Drawing.Color.Blue)
     End If
 }
