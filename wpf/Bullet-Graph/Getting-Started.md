@@ -79,7 +79,7 @@ The SfBulletGraph control will be created as shown in the figure below.
 
 ![Displaying SfBulletGraph control](Getting-Started_images/Getting-Started_img7.jpg)
 
->**Note:- The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version and Syncfusion Reference Manager can be used only in Visual Studio 2010, 2012, 2013 and 2015.**
+>**Note:- The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version and Syncfusion Reference Manager can be used only in Visual Studio 2015.**
 
 ## Configuring SfBulletGraph
 
