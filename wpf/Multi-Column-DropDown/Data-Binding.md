@@ -31,13 +31,13 @@ You can populate the drop down list for SfMultiColumnDropDownControl by setting 
     <TextBlock FontSize="16" Text="SelectedItem (Display Member) " />
     <TextBlock FontSize="22"
                FontWeight="Bold"
-               Text="{Binding ElementName= "sfMultiColumn",
+               Text="{Binding ElementName= sfMultiColumn,
                               Mode=TwoWay,
                               Path=SelectedItem.Title}" />
     <TextBlock FontSize="16" Text="SelectedValue (Value Member) " />
     <TextBlock FontSize="22"
                FontWeight="Bold"
-               Text="{Binding ElementName= "sfMultiColumn",
+               Text="{Binding ElementName= sfMultiColumn,
                               Mode=TwoWay,
                               Path=SelectedValue}" />
 </StackPanel>

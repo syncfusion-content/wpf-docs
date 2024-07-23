@@ -229,7 +229,7 @@ public class ViewModel
         _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
         _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
         _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
-        _orders.Add(new OrderInfo(1006, "Hanna Moos', "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
         _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
         _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
         _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
