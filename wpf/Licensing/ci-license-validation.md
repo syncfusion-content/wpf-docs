@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion license validation in CI services - Syncfusion
 description: Learn here about how to register Syncfusion license key for Syncfusion application for license validation.
-platform: WPF
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---
