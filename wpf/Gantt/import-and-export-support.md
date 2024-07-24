@@ -62,7 +62,9 @@ bool</td></tr>
 </table>
 
 
-## Import/Export Task Details from/to XML
+## Import/Export Tasks from/to XML
+
+### Using Default view model(Task Details)
 
 The following code illustrates how to Import and Export Task Details from or to XML.
 
@@ -97,17 +99,6 @@ The following code illustrates how to Import and Export Task Details from or to 
 <syncfusion:GanttControl x:Name="ganttControl" 
                          Grid.Row="0"
                          ItemsSource="{Binding TaskCollection}">
-    <syncfusion:GanttControl.TaskAttributeMapping>
-             <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
-                                              TaskNameMapping="TaskName"
-                                              StartDateMapping="StartDate"
-                                              ChildMapping="Child"
-                                              FinishDateMapping="FinishDate"
-                                              DurationMapping="Duration"
-                                              MileStoneMapping="IsMileStone"
-                                              PredecessorMapping="Predecessor"
-                                              ProgressMapping="Progress"/>
-    </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
     </syncfusion:GanttControl.DataContext>
@@ -120,20 +111,6 @@ The following code illustrates how to Import and Export Task Details from or to 
 
 //Initializing Gantt
 this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
-
-// Task attribute mapping
-TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
-taskAttributeMapping.TaskIdMapping = "TaskId";
-taskAttributeMapping.TaskNameMapping = "TaskName";
-taskAttributeMapping.StartDateMapping = "StartDate";
-taskAttributeMapping.ChildMapping = "Child";
-taskAttributeMapping.FinishDateMapping = "FinishDate";
-taskAttributeMapping.DurationMapping = "Duration";
-taskAttributeMapping.MileStoneMapping = "IsMileStone";
-taskAttributeMapping.PredecessorMapping = "Predecessor";
-taskAttributeMapping.ProgressMapping = "Progress";
-taskAttributeMapping.ResourceInfoMapping = "Resource";
-this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 private void OnSaveButtonClick(object sender, System.Windows.RoutedEventArgs e)
 {
@@ -265,6 +242,380 @@ private void OnOpenButtonClick(object sender, System.Windows.RoutedEventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
+
+### Using Custom view model
+
+The following code illustrates how to Import and Export Custom ViewModel collections from or to XML.
+
+{% tabs  %}
+{% highlight xaml %}
+
+ <Grid>
+     <Grid.RowDefinitions>
+         <RowDefinition Height="0.9*" />
+         <RowDefinition Height="0.1*"/>
+     </Grid.RowDefinitions>
+<StackPanel Grid.Row="1"     
+            Orientation="Horizontal"
+            HorizontalAlignment="Center">
+         <Button Height="25"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Margin="0,10,0,0"
+                 Width="200"
+                 Click="OnSaveButtonClick"
+                 Content="Export To XML" />
+         <Button Height="25"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Margin="0,10,0,0"
+                 Width="200"
+                 Click="OnOpenButtonClick"
+                 Content="Import From XML" />
+</StackPanel>
+<syncfusion:GanttControl x:Name="ganttControl" 
+                         Grid.Row="0"
+                         ItemsSource="{Binding TaskCollection}">
+                         <syncfusion:GanttControl.TaskAttributeMapping>
+    <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
+                             TaskNameMapping="Name"
+                             StartDateMapping="StartDate"
+                             ChildMapping="ChildCollection"
+                             FinishDateMapping="EndDate"
+                             DurationMapping="Duration"
+                             ProgressMapping="Progress"
+                             PredecessorMapping="Predecessor"
+                             ResourceInfoMapping="Resource">
+    </syncfusion:TaskAttributeMapping>
+</syncfusion:GanttControl.TaskAttributeMapping>
+    <syncfusion:GanttControl.DataContext>
+        <local:GanttViewModel/>
+    </syncfusion:GanttControl.DataContext>
+</syncfusion:GanttControl>
+</Grid>
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+
+//Initializing Gantt
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
+
+private void OnSaveButtonClick(object sender, System.Windows.RoutedEventArgs e)
+{
+    if (this.ganttControl.ExportToXML())
+    {
+        MessageBox.Show("Tasks exported successfully.", 
+        "XML Import/Export", 
+        MessageBoxButton.OK, 
+        MessageBoxImage.Information);
+    }
+}
+
+private void OnOpenButtonClick(object sender, System.Windows.RoutedEventArgs e)
+{
+    if (this.ganttControl.ImportFromXML())
+    {
+        MessageBox.Show("Tasks imported successfully.", 
+        "XML Import/Export", 
+        MessageBoxButton.OK, 
+        MessageBoxImage.Information);
+    }
+}
+
+{% endhighlight  %}
+
+{% highlight c# tabtitle="Task.cs" %}
+
+  public class Task : INotifyPropertyChanged
+  {
+      /// <summary>
+      /// Holds the start date and end date value.
+      /// </summary>
+      private DateTime startDate, endDate;
+
+      /// <summary>
+      /// Holds the duration value.
+      /// </summary>
+      private TimeSpan duration;
+
+      /// <summary>
+      /// Holds the progress value.
+      /// </summary>
+      private double progress;
+
+      /// <summary>
+      /// Holds the id value.
+      /// </summary>
+      private int id;
+
+      /// <summary>
+      /// Holds the name value.
+      /// </summary>
+      private string name;
+
+      /// <summary>
+      /// Holds the collection value.
+      /// </summary>
+      private ObservableCollection<Task> childCollection;
+
+      /// <summary>
+      /// Holds the resource value.
+      /// </summary>
+      private ObservableCollection<Resource> resource;
+
+      /// <summary>
+      /// Holds the predecessor value.
+      /// </summary>
+      private ObservableCollection<Predecessor> predecessor;
+
+      public Task()
+      {
+          this.ChildCollection = new ObservableCollection<Task>();
+          this.Predecessor = new ObservableCollection<Predecessor>();
+          this.Resource = new ObservableCollection<Resource>();
+      }
+
+      /// <summary>
+      /// Gets or sets the start date.
+      /// </summary>
+      public DateTime StartDate
+      {
+          get
+          {
+              return this.startDate;
+          }
+          set
+          {
+              this.startDate = value;
+              OnPropertyChanged("StartDate");
+          }
+      }
+
+      /// <summary>
+      /// Gets or sets the finish date.
+      /// </summary>
+      public DateTime EndDate
+      {
+          get
+          {
+              return this.endDate;
+          }
+          set
+          {
+              this.endDate = value;
+              OnPropertyChanged("EndDate");
+          }
+      }
+
+      /// <summary>
+      /// Gets or sets the duration value.
+      /// </summary>
+      public TimeSpan Duration
+      {
+          get
+          {
+              return this.duration;
+          }
+          set
+          {
+              this.duration = value;
+              OnPropertyChanged("Duration");
+          }
+      }
+
+      /// <summary>
+      /// Gets or sets the id value.
+      /// </summary>
+      public int ID
+      {
+          get
+          {
+              return this.id;
+          }
+          set
+          {
+              this.id = value;
+              OnPropertyChanged("ID");
+          }
+      }
+
+      /// <summary>
+      /// Gets or sets the Name.
+      /// </summary>
+      public string Name
+      {
+          get
+          {
+              return this.name;
+          }
+          set
+          {
+              this.name = value;
+              OnPropertyChanged("Name");
+          }
+      }
+
+      /// <summary>
+      /// Gets or sets the progress value.
+      /// </summary>
+      public double Progress
+      {
+          get
+          {
+              return this.progress;
+          }
+          set
+          {
+              this.progress = value;
+              OnPropertyChanged("Progress");
+          }
+      }
+
+      /// <summary>
+      /// Gets or sets the child collection.
+      /// </summary>
+      public ObservableCollection<Task> ChildCollection
+      {
+          get
+          {
+              return this.childCollection;
+          }
+          set
+          {
+              this.childCollection = value;
+              OnPropertyChanged("ChildCollection");
+          }
+      }
+
+      /// <summary>
+      /// Gets or sets the resource value.
+      /// </summary>
+      public ObservableCollection<Resource> Resource
+      {
+          get
+          {
+              return this.resource;
+          }
+          set
+          {
+              this.resource = value;
+              OnPropertyChanged("Resource");
+          }
+      }
+
+      /// <summary>
+      /// Gets or sets the predecessor value.
+      /// </summary>
+      public ObservableCollection<Predecessor> Predecessor
+      {
+          get
+          {
+              return this.predecessor;
+          }
+          set
+          {
+              this.predecessor = value;
+              OnPropertyChanged("Predecessor");
+          }
+      }
+
+      /// <summary>
+      /// Method for property changed.
+      /// </summary>
+      private void OnPropertyChanged(string propName)
+      {
+          if (this.PropertyChanged != null)
+          {
+              PropertyChanged(this, new PropertyChangedEventArgs(propName));
+          }
+      }
+
+      public event PropertyChangedEventHandler PropertyChanged;
+  }
+
+  {% endhighlight  %}
+
+  {% highlight c# tabtitle="ViewModel.cs" %}
+
+   public class ViewModel
+   {
+     /// <summary>
+     /// Property to add task collection.
+     /// </summary>
+     public ObservableCollection<Task> TaskCollection { get; set; }
+
+     public ViewModel()
+     {
+         this.TaskCollection = this.GetDataSource();
+     }
+
+     private ObservableCollection<Task> GetDataSource()
+     {
+
+         var data = new ObservableCollection<Task>();
+         data.Add(new Task() { ID = 1, Name = "Scope", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 14), Progress = 40d });
+         data[0].ChildCollection.Add((new Task() { ID = 2, Name = "Determine project office scope", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d, }));
+         data[0].ChildCollection.Add((new Task() { ID = 3, Name = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
+         data[0].ChildCollection.Add((new Task() { ID = 4, Name = "Secure executive sponsorship", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d, }));
+         data[0].ChildCollection.Add((new Task() { ID = 5, Name = "Secure Progress", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
+
+         data.Add(new Task() { ID = 6, Name = "Risk Assessment", StartDate = new DateTime(2011, 7, 15), EndDate = new DateTime(2011, 7, 24) });
+         data[1].ChildCollection.Add((new Task() { ID = 7, Name = "Perform risk assessment", StartDate = new DateTime(2011, 7, 15), EndDate = new DateTime(2011, 7, 21), Progress = 20d, }));
+         data[1].ChildCollection.Add((new Task() { ID = 8, Name = "Evaluate risk assessment", StartDate = new DateTime(2011, 7, 21), EndDate = new DateTime(2011, 7, 23), Progress = 20d, }));
+         data[1].ChildCollection.Add((new Task() { ID = 9, Name = "Prepare contingency plans", StartDate = new DateTime(2011, 7, 21), EndDate = new DateTime(2011, 7, 24), Progress = 20d, }));
+         data[1].ChildCollection.Add((new Task() { ID = 10, Name = "Risk Assessment Progress", StartDate = new DateTime(2011, 7, 24), EndDate = new DateTime(2011, 7, 24), Progress = 30d }));
+
+         data.Add(new Task() { ID = 11, Name = "Monitoring", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 8, 6), Duration = new TimeSpan(1, 0, 0, 0) });
+         data[2].ChildCollection.Add((new Task() { ID = 12, Name = "Prepare Meeting agenda", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 7, 26), Progress = 20d, }));
+         data[2].ChildCollection.Add((new Task() { ID = 13, Name = "Conduct review meeting", StartDate = new DateTime(2011, 7, 27), EndDate = new DateTime(2011, 7, 30), Progress = 20d, }));
+         data[2].ChildCollection.Add((new Task() { ID = 14, Name = "Migrate critical issues", StartDate = new DateTime(2011, 7, 31), EndDate = new DateTime(2011, 8, 2), Progress = 20d, }));
+         data[2].ChildCollection.Add((new Task() { ID = 15, Name = "Estabilish change mgmt Control", StartDate = new DateTime(2011, 8, 3), EndDate = new DateTime(2011, 8, 6), Progress = 30d, }));
+         data[2].ChildCollection.Add((new Task() { ID = 16, Name = "Monitoring Progress", StartDate = new DateTime(2011, 8, 6), EndDate = new DateTime(2011, 8, 6), Progress = 30d }));
+
+         data.Add(new Task() { ID = 17, Name = "Post Implementation", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 8, 12) });
+         data[3].ChildCollection.Add((new Task() { ID = 18, Name = "Obtain User feedback", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 7, 29), Progress = 20d, }));
+         data[3].ChildCollection.Add((new Task() { ID = 19, Name = "Evaluate lessons learned", StartDate = new DateTime(2011, 7, 29), EndDate = new DateTime(2011, 8, 5), Progress = 20d, }));
+         data[3].ChildCollection.Add((new Task() { ID = 20, Name = "Modify items as necessary", StartDate = new DateTime(2011, 8, 2), EndDate = new DateTime(2011, 8, 8), Progress = 20d, }));
+         data[3].ChildCollection.Add((new Task() { ID = 21, Name = "Post Implementation Progress", StartDate = new DateTime(2011, 8, 8), EndDate = new DateTime(2011, 8, 12), Progress = 30d }));
+
+         data[0].ChildCollection[0].Resource.Add(new Resource() { ID = 1, Name = "Leslie" });
+         data[0].ChildCollection[1].Resource.Add(new Resource() { ID = 2, Name = "John" });
+         data[0].ChildCollection[2].Resource.Add(new Resource() { ID = 3, Name = "DavID" });
+         data[0].ChildCollection[3].Resource.Add(new Resource() { ID = 4, Name = "Peter" });
+
+         data[1].ChildCollection[0].Resource.Add(new Resource() { ID = 5, Name = "Neil" });
+         data[1].ChildCollection[1].Resource.Add(new Resource() { ID = 7, Name = "Johnson" });
+         data[1].ChildCollection[1].Resource.Add(new Resource() { ID = 8, Name = "Julie" });
+         data[1].ChildCollection[2].Resource.Add(new Resource() { ID = 9, Name = "Peterson" });
+         data[1].ChildCollection[3].Resource.Add(new Resource() { ID = 10, Name = "Thomas" });
+
+         data[3].ChildCollection[1].Resource.Add(new Resource() { ID = 5, Name = "DavID" });
+         data[3].ChildCollection[2].Resource.Add(new Resource() { ID = 7, Name = "Peter" });
+         data[3].ChildCollection[3].Resource.Add(new Resource() { ID = 8, Name = "Thomas" });
+
+         data[0].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 2, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+         data[0].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+         data[0].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 3, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+
+         data[1].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 9, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+         data[1].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 10, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+         data[1].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 7, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+
+         data[2].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+         data[2].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+         data[2].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 12, GanttTaskRelationship = GanttTaskRelationship.FinishToFinish });
+
+         data[3].ChildCollection[1].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+         data[3].ChildCollection[2].Predecessor.Add(new Predecessor() { GanttTaskIndex = 18, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+         data[3].ChildCollection[3].Predecessor.Add(new Predecessor() { GanttTaskIndex = 19, GanttTaskRelationship = GanttTaskRelationship.StartToStart });
+         return data;
+      }
+    }
+
+ {% endhighlight  %}
+ {% endtabs %}
 
 The following image shows XML Export Import:
 
