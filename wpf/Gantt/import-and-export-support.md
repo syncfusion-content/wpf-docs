@@ -273,25 +273,25 @@ The following code illustrates how to Import and Export custom model from or to 
                  Click="OnOpenButtonClick"
                  Content="Import From XML" />
 </StackPanel>
-<syncfusion:GanttControl x:Name="ganttControl" 
-                         Grid.Row="0"
-                         ItemsSource="{Binding TaskCollection}">
-                         <syncfusion:GanttControl.TaskAttributeMapping>
-    <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
-                             TaskNameMapping="Name"
-                             StartDateMapping="StartDate"
-                             ChildMapping="ChildCollection"
-                             FinishDateMapping="EndDate"
-                             DurationMapping="Duration"
-                             ProgressMapping="Progress"
-                             PredecessorMapping="Predecessor"
-                             ResourceInfoMapping="Resource">
-    </syncfusion:TaskAttributeMapping>
-</syncfusion:GanttControl.TaskAttributeMapping>
-    <syncfusion:GanttControl.DataContext>
-        <local:ViewModel/>
-    </syncfusion:GanttControl.DataContext>
-</syncfusion:GanttControl>
+ <syncfusion:GanttControl x:Name="ganttControl" 
+                          Grid.Row="0"
+                          ItemsSource="{Binding TaskCollection}">
+     <syncfusion:GanttControl.TaskAttributeMapping>
+         <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
+                                          TaskNameMapping="Name"
+                                          StartDateMapping="StartDate"
+                                          ChildMapping="ChildCollection"
+                                          FinishDateMapping="EndDate"
+                                          DurationMapping="Duration"
+                                          ProgressMapping="Progress"
+                                          PredecessorMapping="Predecessor"
+                                          ResourceInfoMapping="Resource">
+         </syncfusion:TaskAttributeMapping>
+     </syncfusion:GanttControl.TaskAttributeMapping>
+     <syncfusion:GanttControl.DataContext>
+         <local:ViewModel/>
+     </syncfusion:GanttControl.DataContext>
+ </syncfusion:GanttControl>
 </Grid>
 
 {% endhighlight  %}
