@@ -299,6 +299,18 @@ The following code illustrates how to Import and Export custom model from or to 
 {% highlight c# %}
 
 this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
+//Task attribute mapping 
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskIdMapping = "ID";
+taskAttributeMapping.TaskNameMapping = "Name";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping="ChildCollection";
+taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.DurationMapping = "Duration";
+taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
+this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 private void OnSaveButtonClick(object sender, System.Windows.RoutedEventArgs e)
 {
