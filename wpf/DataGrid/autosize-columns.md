@@ -257,6 +257,16 @@ public class ColumnSizerExt : GridColumnSizer
 {% endhighlight %}
 {% endtabs %}
 
+## Performance tips
+
+When the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ColumnSizer) is set to [GridLengthUnitType.Auto](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridLengthUnitType.html#Syncfusion_UI_Xaml_Grid_GridLengthUnitType_Auto), the column widths are calculated based on the contents of every cell in each column. But using large datasets with `ColumnSizer` as `Auto` can lead to performance issues due to the extensive calculations.
+
+To improve the loading performance, you can use [GridColumnSizer.AutoFitMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoFitMode.html) as [AutoFitMode.SmartFit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoFitMode.html#Syncfusion_UI_Xaml_Grid_AutoFitMode_SmartFit) mode. When using both `AutoFitMode` as `SmartFit` mode with `ColumnSizer` as `Auto`, the column widths are adjusted based on the text length, but only when the current text length is greater than the previous text length. 
+
+{% tabs %} {% highlight c# %} dataGrid.GridColumnSizer.AutoFitMode = AutoFitMode.SmartFit; {% endhighlight %} {% endtabs %}
+
+N>  `AutoFitMode.SmartFit` mode does not account for special characters such as `\n` (newline) or `\t` (tab). If your `WPF DataGrid` (SfDataGrid) does not contain these special characters, we recommend enabling the Smart Fit calculation to enhance loading performance.
+
 ## Star column sizer ratio support
 
 You can customize the `ColumnSizer.Star` width calculation logic by overriding [SetStarWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_SetStarWidth_System_Double_System_Collections_Generic_IEnumerable_Syncfusion_UI_Xaml_Grid_GridColumn__) method of [GridColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html).
