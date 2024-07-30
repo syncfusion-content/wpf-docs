@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion license registration - Syncfusion
 description: Learn here about how to register Syncfusion WPF license key for WPF application for license validation.
-platform: WPF
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---
