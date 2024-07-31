@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion license registration - Syncfusion
 description: Learn here about how to register Syncfusion WPF license key for WPF application for license validation.
-platform: WPF
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---
@@ -19,6 +19,8 @@ Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY
 
 N> * Place the license key between double quotes.  Also, ensure that Syncfusion.Licensing.dll is referenced in your project where the license key is being registered.
 * Syncfusion license validation is done offline during application execution and does not require internet access.  Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
+
+I> Syncfusion license keys can be validated during the Continuous Integration (CI) processes to ensure proper licensing and prevent licensing errors during deployment. Refer to the [CI License Validation] (https://help.syncfusion.com/wpf/licensing/licensing-faq/ci-license-validation) section for detailed instructions on how to implement it.
 
 ### WPF 
 
