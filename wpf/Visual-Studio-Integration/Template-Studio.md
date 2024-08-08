@@ -96,7 +96,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 11.	Click **Next** or navigate the **App Features** tab to select the desired application features.
 
-	![Syncfusion WPF app features selection wizard](Template-Studio-Images/WPF-7.png)
+    ![Syncfusion WPF app features selection wizard](Template-Studio-Images/WPF-7.png)
 
 **Project Details Section**
 
