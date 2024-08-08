@@ -60,41 +60,17 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 6. Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WPF components you can add to the application.
 
-	![Syncfusion WinForms pages selection wizard](Template-Studio-Images/WPF-Page.png)
-
-		To unselect the added control(s), Click ‘x’ for the corresponding control in the control list from the Project Details.
-
-		N> The Control Features option is not accessible for Blank Pages.
-
-7. Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
-
-	  ![Syncfusion WinForms control features selection wizard](Template-Studio-Images/WPF-Features.png)
-
-8. Click **Next** or navigate the **App Features** tab to select the desired application features.
-
-	![Syncfusion WinForms app features selection wizard](Template-Studio-Images/WPF-AppFeatures.png)
-
-    	N> The App Features option is not accessible for .NET Framework.	
-
-	**Project Details Section**
-
-	In the **Project Details** section, modify configurations and project types. Additionally, you can remove one or more controls from the selected list and remove the chosen application feature.
-
-	![Syncfusion WinForms project details selection and unselection wizard](Template-Studio-Images/ProjectDetails.png)
-
-9.	Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WPF components you can add to the application.
-
 	![Syncfusion WPF pages selection wizard](Template-Studio-Images/WPF-6.png)
 
 	To unselect the added control(s), Click ‘x’ for the corresponding control in the control list from the Project Details.
 
 	N> The Control Features option is not accessible for Blank, Settings, and Master Detail Pages.
 
-10.	Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
+7.	Click **Next** or navigate to the **Control Features** tab to view the listed features for the selected controls. From here, choose the features needed.
 
 	![Syncfusion WPF control features selection wizard](Template-Studio-Images/WPF-2.gif)
 
-11.	Click **Next** or navigate the **App Features** tab to select the desired application features.
+8.	Click **Next** or navigate the **App Features** tab to select the desired application features.
 
     ![Syncfusion WPF app features selection wizard](Template-Studio-Images/WPF-7.png)
 
@@ -104,17 +80,17 @@ In the **Project Details** section, you can modify configurations and project ty
 
 ![Syncfusion WPF project details selection and unselection wizard](Template-Studio-Images/WPF-8.png)
 
-12. Click **Create** to generate the Syncfusion WPF application, which will include the necessary Syncfusion NuGet packages, styles, and rendering code specific to the chosen components. The application is configured with the latest versions of Syncfusion WPF NuGet packages, complete with the appropriate namespaces for seamless integration.
+9. Click **Create** to generate the Syncfusion WPF application, which will include the necessary Syncfusion NuGet packages, styles, and rendering code specific to the chosen components. The application is configured with the latest versions of Syncfusion WPF NuGet packages, complete with the appropriate namespaces for seamless integration.
 
      ![Syncfusion WPF project created with readme](Template-Studio-Images/WPF-9.png)
 
-13.	After creating the project and selecting the desired components, the necessary Syncfusion NuGet packages will be installed automatically. For example, if you add an DataGrid control, the corresponding Syncfusion NuGet packages required for that control will be installed. 
+10.	After creating the project and selecting the desired components, the necessary Syncfusion NuGet packages will be installed automatically. For example, if you add an DataGrid control, the corresponding Syncfusion NuGet packages required for that control will be installed. 
 
       ![NuGetEntry](Template-Studio-Images/NuGetEntry.png)
 
     To find out which NuGet packages are needed for other WPF controls, please refer to this [documentation link](https://help.syncfusion.com/wpf/control-dependencies) for detailed information on the required NuGet packages for each control.
 
-14. When you create a WPF project, the following Dependency Injection (DI) setup is added to the `App.xaml.cs` file. This setup registers services, view models, and views with the DI container, ensuring proper functionality for the selected components and service management within your application. Below, the `ConfigureServices` method in `App.xaml.cs` sets up Dependency Injection (DI) in a WPF project to manage the application's services, view models, and views. Here's a simple breakdown:
+11. When you create a WPF project, the following Dependency Injection (DI) setup is added to the `App.xaml.cs` file. This setup registers services, view models, and views with the DI container, ensuring proper functionality for the selected components and service management within your application. Below, the `ConfigureServices` method in `App.xaml.cs` sets up Dependency Injection (DI) in a WPF project to manage the application's services, view models, and views. Here's a simple breakdown:
 
       ![ConfigureServices](Template-Studio-Images/DI-Setup.png)
 
@@ -133,7 +109,7 @@ In the **Project Details** section, you can modify configurations and project ty
      IV. Configuration:
      - Binds the app's configuration settings to the `AppConfig` class using the settings from the configuration file.
 
-15. In a WPF MVVM application, the `PageService.cs` class helps manage navigation and page creation. For instance, it facilitates registering and navigating to pages associated with specific view models. Here's a simple explanation:
+12. In a WPF MVVM application, the `PageService.cs` class helps manage navigation and page creation. For instance, it facilitates registering and navigating to pages associated with specific view models. Here's a simple explanation:
 
        I. Initialization:
       - The constructor of PageService takes a serviceProvider to access registered services.
@@ -144,7 +120,7 @@ In the **Project Details** section, you can modify configurations and project ty
     
 	![PageServices](Template-Studio-Images/PageService.png)
 
-16. Some components require additional resource files, such as images and other necessary files, to function correctly. For example, if you add the `PDFViewer` and `Carousel` component to your WPF project, the respective images and PDF files will be added to the Images and Assets folder in your project.
+13. Some components require additional resource files, such as images and other necessary files, to function correctly. For example, if you add the `PDFViewer` and `Carousel` component to your WPF project, the respective images and PDF files will be added to the Images and Assets folder in your project.
 
 	 ![Resources](Template-Studio-Images/Resources.png)
 
@@ -157,6 +133,6 @@ In the **Project Details** section, you can modify configurations and project ty
     > | .NET 8.0     | v23.2.4                | Visual Studio 2022          |
 
 
-17.   Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
+14.   Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
 
        ![Syncfusion license registration required information dialog in Syncfusion WPF project](Template-Studio-Images/Syncfusion-Project-Template-Gallery-9.png)   
