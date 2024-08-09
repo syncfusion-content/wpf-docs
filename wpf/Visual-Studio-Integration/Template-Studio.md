@@ -80,17 +80,15 @@ In the **Project Details** section, you can modify configurations and project ty
 
 ![Syncfusion WPF project details selection and unselection wizard](Template-Studio-Images/WPF-8.png)
 
-9. Click **Create** to generate the Syncfusion WPF application, which will include the necessary Syncfusion NuGet packages, styles, and rendering code specific to the chosen components. The application is configured with the latest versions of Syncfusion WPF NuGet packages, complete with the appropriate namespaces for seamless integration.
+9. Click **Create** to generate the Syncfusion WPF application. Once you've created the project, the relevant Syncfusion NuGet packages will be automatically added to your project for the chosen components. For example, if you add an **DataGrid** control, the corresponding Syncfusion NuGet packages required for that control will be installed.
 
      ![Syncfusion WPF project created with readme](Template-Studio-Images/WPF-9.png)
 
-10.	After creating the project and selecting the desired components, the necessary Syncfusion NuGet packages will be installed automatically. For example, if you add an `DataGrid` control, the corresponding Syncfusion NuGet packages required for that control will be installed. 
-
-      ![NuGetEntry](Template-Studio-Images/NuGetEntry.png)
+     ![NuGetEntry](Template-Studio-Images/NuGetEntry.png)
 
     To find out which NuGet packages are needed for other WPF controls, please refer to this [documentation link](https://help.syncfusion.com/wpf/control-dependencies) for detailed information on the required NuGet packages for each control.
 
-11. When you create a WPF project, the following Dependency Injection (DI) setup is added to the `App.xaml.cs` file. This setup registers services, view models, and views with the DI container, ensuring proper functionality for the selected components and service management within your application. Below, the `ConfigureServices` method in `App.xaml.cs` sets up Dependency Injection (DI) in a WPF project to manage the application's services, view models, and views. Here's a simple breakdown:
+10. When you create a WPF project, the following Dependency Injection (DI) setup is added to the `App.xaml.cs` file. This setup registers services, view models, and views with the DI container, ensuring proper functionality for the selected components and service management within your application. Below, the `ConfigureServices` method in `App.xaml.cs` sets up Dependency Injection (DI) in a WPF project to manage the application's services, view models, and views. Here's a simple breakdown:
 
       ![ConfigureServices](Template-Studio-Images/DI-Setup.png)
 
@@ -109,7 +107,7 @@ In the **Project Details** section, you can modify configurations and project ty
      IV. Configuration:
      - Binds the app's configuration settings to the `AppConfig` class using the settings from the configuration file.
 
-12. In a WPF MVVM application, the `PageService.cs` class helps manage navigation and page creation. For instance, it facilitates registering and navigating to pages associated with specific view models. Here's a simple explanation:
+11. In a WPF MVVM application, the `PageService.cs` class helps manage navigation and page creation. For instance, it facilitates registering and navigating to pages associated with specific view models. Here's a simple explanation:
 
        I. Initialization:
       - The constructor of PageService takes a serviceProvider to access registered services.
@@ -120,7 +118,7 @@ In the **Project Details** section, you can modify configurations and project ty
     
 	![PageServices](Template-Studio-Images/PageService.png)
 
-13. Some components require additional resource files, such as images and other necessary files, to function correctly. For example, if you add the `PDFViewer` and `Carousel` component to your WPF project, the respective images and PDF files will be added to the Images and Assets folder in your project.
+12. Some components require additional resource files, such as images and other necessary files, to function correctly. For example, if you add the `PDFViewer` and `Carousel` component to your WPF project, the respective images and PDF files will be added to the Images and Assets folder in your project.
 
 	 ![Resources](Template-Studio-Images/Resources.png)
 
@@ -133,6 +131,6 @@ In the **Project Details** section, you can modify configurations and project ty
     > | .NET 8.0     | v23.2.4                | Visual Studio 2022          |
 
 
-14.   Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
+13.   Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
 
        ![Syncfusion license registration required information dialog in Syncfusion WPF project](Template-Studio-Images/Syncfusion-Project-Template-Gallery-9.png)   
