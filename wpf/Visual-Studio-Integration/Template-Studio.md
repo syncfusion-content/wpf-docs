@@ -50,11 +50,11 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 5.	Click **Next** or navigate to the **Type** tab, then select the desired Syncfusion WPF application type. When selecting the type of template for your application, you have two options:
 
-	![Syncfusion WinForms project type selection wizard](Template-Studio-Images/WPF-4.png)
+	![Syncfusion WPF project type selection wizard](Template-Studio-Images/WPF-4.png)
 
 	**Predefined template:** Choose this option to select from 5 predefined templates, including Calendar, Contact, Outlook, Docking Manager, Spreadsheet, Tile view, and Word. By choosing one of these templates, you can create your application without needing to follow any further steps.
 
-	![Syncfusion WinForms Predefined template wizard](Template-Studio-Images/WPFTemplate-6.png)
+	![Syncfusion WPF Predefined template wizard](Template-Studio-Images/WPFTemplate-6.png)
 
 	**Project type:** Choose this option to select from 4 project types, including Navigation Pane, Blank, Menu Bar, and Ribbon .
 
