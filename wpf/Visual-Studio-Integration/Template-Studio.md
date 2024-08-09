@@ -84,7 +84,7 @@ In the **Project Details** section, you can modify configurations and project ty
 
      ![Syncfusion WPF project created with readme](Template-Studio-Images/WPF-9.png)
 
-10.	After creating the project and selecting the desired components, the necessary Syncfusion NuGet packages will be installed automatically. For example, if you add an DataGrid control, the corresponding Syncfusion NuGet packages required for that control will be installed. 
+10.	After creating the project and selecting the desired components, the necessary Syncfusion NuGet packages will be installed automatically. For example, if you add an `DataGrid` control, the corresponding Syncfusion NuGet packages required for that control will be installed. 
 
       ![NuGetEntry](Template-Studio-Images/NuGetEntry.png)
 
