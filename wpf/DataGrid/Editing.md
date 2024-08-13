@@ -642,7 +642,7 @@ public class CellStyleSelector : StyleSelector
 
 ### Allow editing when pressing minus key
 
-SfDataGrid does not allow the cell to get into the edit mode while pressing the <kbd>Minus</kbd> key or any special character. You can overcome this behavior by customizing the SfDataGrid class, and overriding its `OnTextInput()` method.
+SfDataGrid does not allow the cell to enter edit mode when pressing the <kbd>Minus</kbd> key or any special character. You can overcome this behavior by customizing the SfDataGrid class and overriding its `OnTextInput()` method. However, you can insert the <kbd>Minus</kbd> key on the first press in a numeric cell editor by customizing the GridNumericCellRenderer class and overriding its `OnEditElementLoaded()` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -689,6 +689,46 @@ public class SfDataGridExt : SfDataGrid
                 dataColumn.Renderer.PreviewTextInput(e);
         }
         base.OnTextInput(e);
+    }
+}
+
+public class CustomGridCellNumericRenderer : GridCellNumericRenderer
+{
+    protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
+    {
+        var previewInputText = PreviewInputText;
+        base.OnEditElementLoaded(sender, e);
+
+        var uiElement = ((DoubleTextBox)sender);
+        uiElement.ValueChanged += UiElement_ValueChanged;
+        uiElement.Focus();
+
+        if ((this.DataGrid.EditorSelectionBehavior == EditorSelectionBehavior.SelectAll || 
+            this.DataGrid.IsAddNewIndex(this.CurrentCellIndex.RowIndex)) && previewInputText == null)
+            uiElement.SelectAll();
+        else
+        {
+            if (previewInputText == null || char.IsLetter(previewInputText.ToString(), 0))
+            {
+                var index = uiElement.Text.Length;
+                uiElement.Select(index + 1, 0);
+                return;
+            }
+            double value;
+            double.TryParse(previewInputText.ToString(), out value);
+            if (previewInputText.Equals("-"))
+                uiElement.Text = previewInputText.ToString();
+            else
+                uiElement.Value = value;
+            var caretIndex = uiElement.Text.IndexOf(previewInputText, StringComparison.Ordinal);
+            uiElement.Select(caretIndex + 1, 0);
+        }
+        previewInputText = null;
+    }
+
+    private void UiElement_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    {
+        base.CurrentRendererValueChanged();
     }
 }
 {% endhighlight %}
