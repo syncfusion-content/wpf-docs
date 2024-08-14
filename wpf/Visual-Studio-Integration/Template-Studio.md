@@ -88,7 +88,7 @@ In the **Project Details** section, you can modify configurations and project ty
 
     To find out which NuGet packages are needed for other WPF controls, please refer to this [documentation link](https://help.syncfusion.com/wpf/control-dependencies) for detailed information on the required NuGet packages for each control.
 
-10. When you create a WPF project, the following Dependency Injection (DI) setup is added to the **App.xaml.cs** file. This setup registers services, view models, and views with the DI container, ensuring proper functionality for the selected components and service management within your application. Below, the **ConfigureServices** method in **App.xaml.cs**`** sets up Dependency Injection (DI) in a WPF project to manage the application's services, view models, and views. Here's a simple breakdown:
+10. When you create a WPF project, the following Dependency Injection (DI) setup is added to the **App.xaml.cs** file. This setup registers services, view models, and views with the DI container, ensuring proper functionality for the selected components and service management within your application. Below, the **ConfigureServices** method in **App.xaml.cs** sets up Dependency Injection (DI) in a WPF project to manage the application's services, view models, and views. Here's a simple breakdown:
       
 
      *I. Application Host:*
