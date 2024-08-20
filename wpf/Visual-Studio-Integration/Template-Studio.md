@@ -123,11 +123,32 @@ In the **Project Details** section, you can modify configurations and project ty
 	 ![Resources](Template-Studio-Images/Resources.png)
 
 	> The .NET 6.0, .NET 7.0, and .NET 8.0 options will be available in the Select a framework version dropdown only if the respective .NET SDKs are installed on your system. The table below outlines the .NET versions, the specific product versions from which they are available, and the Visual Studio versions that support them:
-	> | .NET Version | Available From Version | Supported from Visual Studio |
-    > |--------------|------------------------|-----------------------------|
-    > | .NET 6.0     | v19.4.0.38             | Visual Studio 2022          |
-    > | .NET 7.0     | v20.4.0.38             | Visual Studio 2022          |
-    > | .NET 8.0     | v23.2.4                | Visual Studio 2022          |        
+	> <table>
+	>   <thead>
+	>     <tr>
+	>       <th>.NET Version</th>
+	>       <th>Available From Version</th>
+	>       <th>Supported from Visual Studio</th>
+	>     </tr>
+	>   </thead>
+	>   <tbody>
+	>     <tr>
+	>       <td>.NET 6.0</td>
+	>       <td>v19.4.0.38</td>
+	>       <td>Visual Studio 2022</td>
+	>     </tr>
+	>     <tr>
+	>       <td>.NET 7.0</td>
+	>       <td>v20.4.0.38</td>
+	>       <td>Visual Studio 2022</td>
+	>     </tr>
+	>     <tr>
+	>       <td>.NET 8.0</td>
+	>       <td>v23.2.4</td>
+	>       <td>Visual Studio 2022</td>
+	>     </tr>
+	>   </tbody>
+	> </table>       
 
 13.   Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
 
