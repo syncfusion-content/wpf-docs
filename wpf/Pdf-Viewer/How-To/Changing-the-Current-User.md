@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# Change the CurrentUser of annotations in WPF Pdf Viewer
+# Change the CurrentUser in WPF Pdf Viewer
 
 The PDF Viewer allows you to change the CurrentUser. If the CurrentUser property is not set, it defaults to the system user name. When you set the CurrentUser, you will see the changes in the annotation properties when adding an annotation to the document. The following code example illustrates this:
 
