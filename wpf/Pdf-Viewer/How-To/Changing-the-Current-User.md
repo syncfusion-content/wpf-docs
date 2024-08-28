@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change the CurrentUser of annotations in Pdf Viewer | Syncfusion
-description: Learn about Change the CurrentUser of annotations, programmatically in Syncfusion WPF Pdf Viewer control.
+title: Change the Current user in PdfViewer | Syncfusion
+description: Learn about how to Change the CurrentUser in Syncfusion WPF Pdf Viewer control using CurrentUser property.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -9,18 +9,18 @@ documentation: ug
 
 # Change the CurrentUser of annotations in WPF Pdf Viewer
 
-PDF Viewer allows you to change the CurrentUser of annotations. The following code example illustrates the same.
+The PDF Viewer allows you to change the CurrentUser. If the CurrentUser property is not set, it defaults to the system user name. When you set the CurrentUser, you will see the changes in the annotation properties when adding an annotation to the document. The following code example illustrates this:
 
 {% tabs %}
 {% highlight C# %}
 
 //Initialize PDF Viewer.
-PdfViewerControl pdfViewer1 = new PdfViewerControl();
+PdfViewerControl pdfViewer = new PdfViewerControl();
 //Load the PDF.
-pdfViewer1.Load("Sample.pdf");
+pdfViewer.Load("Sample.pdf");
 
 //Changing the CurrentUser of document
-pdfViewer1.CurrentUser = "set the name here";
+pdfViewer.CurrentUser = "set the name here";
 {% endhighlight %}
 
 
@@ -28,12 +28,12 @@ pdfViewer1.CurrentUser = "set the name here";
 {% highlight vbnet %}
 
 'Initialize PDF Viewer.
-Private pdfViewer1 As New PdfViewerControl()
+Private pdfViewer As New PdfViewerControl()
 'Load the PDF.
-pdfViewer1.Load("Sample.pdf")
+pdfViewer.Load("Sample.pdf")
 
 'Changing the CurrentUser of document
-pdfViewer1.CurrentUser = "set the name here";
+pdfViewer.CurrentUser = "set the name here";
 
 {% endhighlight %}
 {% endtabs %}
