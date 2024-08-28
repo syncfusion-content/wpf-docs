@@ -19,10 +19,7 @@ To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com
 <td>Syncfusion.Grid.WPF<br/>
 Syncfusion.GridCommon.WPF
 </td>
-<td>Syncfusion.SfGrid.WPF<br/>
-Syncfusion.SfSkinManager.WPF<br/>
-Syncfusion.Themes.MaterialLight.WPF
-</td>
+<td>Syncfusion.SfGrid.WPF</td>
 </tr>
 </table>
 
