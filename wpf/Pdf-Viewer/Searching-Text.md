@@ -79,6 +79,8 @@ private void SearchPrevious_Click(object sender, RoutedEventArgs e)
 
 ## Find text method
 
+N> From version 21.1.x,a reference to the Syncfusion.PdfToImageConverter.Base assembly is necessary for PdfViewer FindText methods.We have updated the PDFBase approach to PdfToImageConverter approach for better performance.
+
 The [FindText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_String_System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF____) method allows the user to search a particular text and get its bounds after loading the document in the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). The [FindText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_String_System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF____) method returns ‘true’ when the given text is found in the document; else, it returns ‘false’.
 
 ### Find and get the bounds of a text
