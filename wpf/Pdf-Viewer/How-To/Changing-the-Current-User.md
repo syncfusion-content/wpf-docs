@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Change the CurrentUser of annotations in Pdf Viewer | Syncfusion
-description: Learn about Change the CurrentUser of annotations in Syncfusion WPF Pdf Viewer control.
+description: Learn about Change the CurrentUser of annotations, programmatically in Syncfusion WPF Pdf Viewer control.
 platform: wpf
 control: PDF Viewer
 documentation: ug
