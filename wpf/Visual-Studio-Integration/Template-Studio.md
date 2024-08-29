@@ -92,7 +92,7 @@ In the **Project Details** section, you can modify configurations and project ty
       
 
      *I. Application Host:*
-     - Registers **ApplicationHostService** to manage the app's lifecycle.      
+     - Registers **ApplicationHostService** to manage the app's life cycle.      
 
      *II. Specific Services:*
      - Registers **PageService** and **NavigationService** for handling page navigation.
