@@ -376,8 +376,6 @@ Syncfusion.Edit.WPF
 <td> 
 Syncfusion.Gantt.WPF <br/>
 Syncfusion.SfGrid.WPF <br/>
-Syncfusion.Themes.MaterialLight.WPF <br/>
-Syncfusion.SfSkinManager.WPF <br/>
 Syncfusion.Shared.WPF <br/>
 Syncfusion.ProjIO.Base
 </td>
@@ -1669,8 +1667,7 @@ Syncfusion.SfInput.WPF<br/>
 Syncfusion.SfBusyIndicator.WPF<br/>
 Syncfusion.SfSkinManager.WPF<br/>
 Syncfusion.SfShared.WPF <br/>
-Syncfusion.Shared.WPF<br/>
-Syncfusion.Themes.MaterialLight.WPF
+Syncfusion.Shared.WPF
 </td>
 <td> 
 Syncfusion.SfScheduler.WPF
