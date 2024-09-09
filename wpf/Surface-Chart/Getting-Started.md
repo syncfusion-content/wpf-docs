@@ -525,4 +525,6 @@ WPF SurfaceChart (SfSurfaceChart) supports various built-in themes. Refer to the
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
+  ![theming-support-in-WPF-surface-chart-control](surface_chart_images/theming-support-in-WPF-surface-chart-control.png)
+
  
