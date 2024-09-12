@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing in WPF Charts control | Syncfusion
-description: Learn here all about Printing support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
+title: Printing in WPF Charts Control | Syncfusion
+description: Learn here all about printing support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -87,7 +87,7 @@ private void Button_Click_1(object sender, RoutedEventArgs e)
 
 The following image shows the printing dialog window upon invoking print method.
 
-![SfChart Printing Dialog Window](Printing_images/Printing_img1.png)
+![Charts printing dialog window in WPF](printing_images/wpf-charts-printing-dialog-window.png)
 
 
 N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
