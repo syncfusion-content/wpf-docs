@@ -536,7 +536,7 @@ wizardControl.FinishButtonClosesWindow = true;
 
 ## Event for Next Button in Wizard Control  
 
-You can use the [Next](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) event in [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) to perform any required operation when Next button is clicked.
+You can use the [Next](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_Next) event in [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) to perform any required operation when Next button is clicked.
 
 {% tabs %}
 
