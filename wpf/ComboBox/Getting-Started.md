@@ -113,7 +113,7 @@ namespace ComboBox
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Adding items in ComboBoxAdv
-Items can be added in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) control by following ways.
+Items can be added in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control by following ways.
 
  1. Adding items by ComboBoxItemAdv.
  2. Adding items by DataBinding.
