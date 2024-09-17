@@ -18,7 +18,7 @@ The following assemblies should be added for exporting a tree grid to PDF file:-
 
 For NuGet package, have to install [Syncfusion.DataGridExcelExport.WPF](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.WPF) package. For more details refer this [UG link](https://help.syncfusion.com/wpf/control-dependencies#exporting-treegrid-to-excel-pdf-and-csv).
 
-You can export the tree grid to PDF by using the following extension methods present in the [Syncfusion.UI.Xaml.TreeGrid.Converter](http://help.syncfusion.com/cr/wpf/) namespace:-
+You can export the tree grid to PDF by using the following extension methods present in the [Syncfusion.UI.Xaml.TreeGrid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.html) namespace:-
 
 * [ExportToPdf](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportExtension.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportExtension_ExportToPdf_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_)
 
@@ -32,7 +32,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfTreeGrid exports the data to PDF file using [Essential PDF](http://help.syncfusion.com/file-formats/pdf/overview). You can refer to the [PDF documentation](http://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulation.
+N> SfTreeGrid exports the data to PDF file using [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer to the [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulation.
 
 ## Export options
 
@@ -135,7 +135,7 @@ document.Save("Sample.pdf");
 TreeGrid provides a way to display additional content at the top (header) or bottom (footer) of a page when exporting to PDF. This can be performed by setting the [PageHeaderFooterEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_PageHeaderFooterEventHandler) property in [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) class.
 
 You can insert any string, image or drawing in the header and footer using the `PdfHeaderFooterEventHandler` property.
-Setting [PdfPageTemplateElement](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfPageTemplateElement.html) class to the [PdfHeaderFooterEventArgs.PdfDocumentTemplate.Top](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfDocumentTemplate.html#Syncfusion_Pdf_PdfDocumentTemplate_Top) property loads the content at the top of a page. Setting `PdfPageTemplateElement` class to the [PdfHeaderFooterEventArgs.PdfDocumentTemplate.Bottom](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfDocumentTemplate.html#Syncfusion_Pdf_PdfDocumentTemplate_Bottom) property loads the content at the bottom of a page.
+Setting [PdfPageTemplateElement](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfPageTemplateElement.html) class to the [PdfHeaderFooterEventArgs.PdfDocumentTemplate.Top](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfDocumentTemplate.html#Syncfusion_Pdf_PdfDocumentTemplate_Top) property loads the content at the top of a page. Setting `PdfPageTemplateElement` class to the [PdfHeaderFooterEventArgs.PdfDocumentTemplate.Bottom](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfDocumentTemplate.html#Syncfusion_Pdf_PdfDocumentTemplate_Bottom) property loads the content at the bottom of a page.
 
 {% tabs %}
 {% highlight c# %}
@@ -154,7 +154,7 @@ Here, `string` is inserted in the header of the exported PDF file using the [
 ## PDF page orientation
 
 You can change the page orientation of PDF when exporting. The default page orientation is Portrait.
-To change the page orientation, get the exported [PdfGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Grid.PdfGrid.html) by using the [ExportToPdfGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.html#Syncfusion_UI_Xaml_Grid_Converter_GridPdfExportExtension_ExportToPdfGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_Syncfusion_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_) method. Then, draw that `PdfGrid` into a [PdfDocument](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfDocument.html) by changing the [PageSettings.Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfPageSettings.html#Syncfusion_Pdf_PdfPageSettings_Orientation) property.
+To change the page orientation, get the exported [PdfGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Grid.PdfGrid.html) by using the [ExportToPdfGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension.html#Syncfusion_UI_Xaml_Grid_Converter_GridPdfExportExtension_ExportToPdfGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_Syncfusion_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_) method. Then, draw that `PdfGrid` into a [PdfDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfDocument.html) by changing the [PageSettings.Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfPageSettings.html#Syncfusion_Pdf_PdfPageSettings_Orientation) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -188,7 +188,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-You can refer to the [PDF documentation](http://help.syncfusion.com/file-formats/pdf/loading-and-saving-document#saving-a-pdf-document-to-file-system).
+You can refer to the [PDF documentation](https://help.syncfusion.com/file-formats/pdf/loading-and-saving-document/open-and-save-pdf-document-in-wpf).
 
 ### Save PDF as stream
 
@@ -206,7 +206,7 @@ fileStream.Close();
 
 ### Save PDF using file dialog
 
-After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?redirectedfrom=MSDN&view=net-5.0).
+After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&redirectedfrom=MSDN).
 
 {% tabs %}
 {% highlight c# %}
@@ -240,7 +240,7 @@ if (sfd.ShowDialog() == true)
 
 ## Open exported PDF without saving in disk
 
-You can view the exported PDF document without saving in a disk by using the [PDFViewerControl](http://help.syncfusion.com/wpf/pdfviewer/overview).
+You can view the exported PDF document without saving in a disk by using the [PDFViewerControl](https://help.syncfusion.com/wpf/pdf-viewer/overview).
 
 {% tabs %}
 {% highlight c# %}
@@ -356,7 +356,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 
 ### Export images to PDF 
 
-By default, images loaded in the [GridTemplateColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html) will not be exported to PDF. To export it, use [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_CellsExportingEventHandler) property  in [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) class. In `CellsExportingEventHandler`, an image will be loaded in [PdfGridCell](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Grid.PdfGridCell.html) class.
+By default, images loaded in the [GridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html) will not be exported to PDF. To export it, use [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_CellsExportingEventHandler) property  in [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) class. In `CellsExportingEventHandler`, an image will be loaded in [PdfGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Grid.PdfGridCell.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -402,11 +402,11 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 
 ![Exporting Image to PDF page from WPF TreeGrid Content](Export-To-PDF_images/wpf-treegrid-export-with-image.png)
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfExportingDemo386427743.zip).
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfExportingDemo386427743.zip).
 
 ## Embed fonts in PDF file
 
-By default, some fonts (such as Unicode font) are not supported in PDF. In this case, it is possible to embed the font in PDF document with the help of [PdfTrueTypeFont](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfTrueTypeFont.html) class.
+By default, some fonts (such as Unicode font) are not supported in PDF. In this case, it is possible to embed the font in PDF document with the help of [PdfTrueTypeFont](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfTrueTypeFont.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -428,7 +428,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EmbeddingFonts_to_PDF-1471058966.zip).
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EmbeddingFonts_to_PDF-1471058966.zip).
 
 ## Export parent and expanded child nodes
 
@@ -477,7 +477,7 @@ You can download the sample [here](http://www.syncfusion.com/downloads/support/d
 
 ## Export Middle Eastern languages (Arabic and Hebrew) content to PDF
 
-By default, [Middle Eastern languages ](http://en.wikipedia.org/wiki/Middle_East)(Arabic and Hebrew) in the tree grid will be exported from left to right in PDF. You can export them as displayed in the tree grid (export from right to left) by enabling the[RightToLeft](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html#Syncfusion_Pdf_Graphics_PdfStringFormat_RightToLeft) property in [PdfStringFormat](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to [PdfGridCell](http://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Grid.PdfGridCell.html) class using the [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_CellsExportingEventHandler) property.
+By default, [Middle Eastern languages ](https://en.wikipedia.org/wiki/Middle_East)(Arabic and Hebrew) in the tree grid will be exported from left to right in PDF. You can export them as displayed in the tree grid (export from right to left) by enabling the[RightToLeft](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html#Syncfusion_Pdf_Graphics_PdfStringFormat_RightToLeft) property in [PdfStringFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to [PdfGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Grid.PdfGridCell.html) class using the [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_CellsExportingEventHandler) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -502,7 +502,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 
 ![Exporting with Arabic Language Text from WPF TreeGrid to PDF Page](Export-To-PDF_images/wpf-treegrid-export-arabic-text.png)
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExportMiddleEstern_to_PDF32087667.zip).
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ExportMiddleEstern_to_PDF32087667.zip).
 
 
 N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
