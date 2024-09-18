@@ -127,7 +127,7 @@ this.Schedule.MonthViewSettings.MonthNavigationDirection = MonthNavigationDirect
 ![WPF Scheduler month view MonthNavigationDirection](Month-View_Images/wpf-scheduler-month-navigation-direction.png)
 
 ## Date format
-Customize the date format of the scheduler month view by using the [DateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_DateFormat) property of `MonthViewSettings`. By default, the month date format is `d`.
+Customize the date format of the scheduler month view by using the [DateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_DateFormat) property of `MonthViewSettings`. By default, the month date format is `%d`.
 
 {% tabs %}
 {% highlight xaml %}

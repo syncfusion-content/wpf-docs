@@ -516,3 +516,13 @@ The following output is displayed as a result of the above code example.
 You can get the complete getting started sample [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SurfaceChartDemo-1998279060).
 
 ![simple surface from Code behind](surface_chart_images/surface_chart_img7.jpeg)
+
+## Theme
+
+WPF SurfaceChart (SfSurfaceChart) supports various built-in themes. Refer to the below links to apply themes for the SfSurfaceChart,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![theming-support-in-WPF-surface-chart-control](surface_chart_images/theming-support-in-WPF-surface-chart-control.png)
