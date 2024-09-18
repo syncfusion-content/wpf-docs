@@ -940,7 +940,7 @@ When you apply above style to [FilterToggleButton](https://help.syncfusion.com/c
 
 [How to filter the records based on display text in the SfDataGrid?](https://support.syncfusion.com/kb/article/4684/how-to-filter-the-records-based-on-display-text-in-the-sfdatagrid)
 
-[How to change the position of FilterToggleButton and SortIcon in header cell of SfDataGrid?](https://support.syncfusion.com/kb/article/4194/how-to-change-the-position-of-filtertogglebutton-and-sorticon-in-header-cell-of-sfdatagrid)
+[How to change the position of FilterToggleButton and SortIcon in header cell of SfDataGrid?](https://support.syncfusion.com/kb/article/4194/how-to-change-the-position-of-header-cell-in-wpf-datagrid?isInternalRefresh=False)
 
 [How to Save and Reload the filters in SfDataGrid?](https://support.syncfusion.com/kb/article/3331/how-to-save-and-reload-the-filters-of-datagrid-in-wpf-application)
 
