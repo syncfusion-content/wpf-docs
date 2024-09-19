@@ -189,3 +189,74 @@ toolBarManager.CanDockAtTop = false;
 {% endhighlight %}
 
 {% endtabs%}
+
+## Implementation of toolbar state changed event to detect when the state of ToolBarAdv changes.
+
+Introducing a state changed event in the ToolbarAdv control that notifies users whenever the toolbar's state changes, including transitions between Docked, Floating, and Hidden states. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:ToolBarManager x:Name="toolBarManager" Grid.Row="0" Height="83">
+
+<syncfusion:ToolBarManager.TopToolBarTray>
+
+<syncfusion:ToolBarTrayAdv VerticalAlignment="Top">
+
+<syncfusion:ToolBarAdv x:Name="toolbar" ToolBarStateChanged="ToolBarAdv_ToolBarStateChanged1" Height="40" EnableAddRemoveButton="True">
+               
+<Button syncfusion:ToolBarAdv.Label="Open Folder" Height="40" Width="40" ToolTip="Open Folder" Margin="5,0,5,0">
+
+<Image Source="C:\OpenFolder.png" Stretch="Uniform"/>
+
+</Button>
+
+<Button syncfusion:ToolBarAdv.Label="Save" Height="40" Width="40" ToolTip="Save" Margin="5,0,5,0">
+
+<Image Source="C:\Save.JPG" Stretch="Uniform"/>
+
+</Button>
+
+<Button syncfusion:ToolBarAdv.Label="Cut" Height="40" Width="40" ToolTip="Cut" Margin="5,0,5,0">
+
+<Image Source="C:\Cut.jpg" Stretch="Fill"/>
+
+</Button>
+
+<Button syncfusion:ToolBarAdv.Label="Copy" Height="40" Width="40" ToolTip="Copy" Margin="5,0,5,0">
+
+<Image Source="C:\Copy.png" Stretch="Uniform"/>
+
+</Button>
+
+<Button syncfusion:ToolBarAdv.Label="Paste" Height="40" Width="40" ToolTip="Paste" Margin="5,0,5,0">
+
+<Image Source="C:\Paste.jpg" Stretch="Uniform"/>
+
+</Button>
+
+</syncfusion:ToolBarAdv>
+
+</syncfusion:ToolBarTrayAdv>
+
+</syncfusion:ToolBarManager.TopToolBarTray>
+
+</syncfusion:ToolBarManager>
+
+
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+ToolBarAdv toolbar = new ToolBarAdv();
+
+toolbar.ToolBarStateChanged += ToolBarAdv_ToolBarStateChanged;
+
+
+
+{% endhighlight %}
+
+{% endtabs%}
+
