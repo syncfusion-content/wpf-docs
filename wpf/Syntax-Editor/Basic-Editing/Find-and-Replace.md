@@ -323,7 +323,7 @@ The following output shows the GoToLine Window localized in French culture.
 
 ## Opened and Closed event support for GotoLineWindow in EditControl 
 
-EditControl also provides opened and closed events for the GoToLine window to access the instance of the GoToLine window when it is opened or closed, enabling further customization.
+EditControl provides opened and closed events for the GoToLine window to access the instance of the GoToLine window when it is opened or closed, enabling further customization.
 
 **GoToLineWindowOpened**
 
