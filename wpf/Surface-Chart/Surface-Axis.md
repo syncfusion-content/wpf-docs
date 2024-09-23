@@ -9,7 +9,7 @@ documentation: ug
 
 # Surface Axis in WPF Surface Chart (SfSurfaceChart)
 
-SurfaceAxis is used to locate a data point inside the surface area. In surface, you require three axis to locate data points, such as X-Axis, Y-Axis and Z-Axis. You can define axis in surface using the following code example. If you do not define the axis, then it automatically takes the default axis with default properties values.
+SurfaceAxis is used to locate a data point inside the surface area. In surface, you require three axis to locate data points, such as X-Axis, Y-Axis and Z-Axis. You can define axis in surface using the following code example.  If no axis is defined, the chart will automatically use the default axes with preset property values.
 
 XAML:
 
