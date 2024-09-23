@@ -320,3 +320,5 @@ The following output shows the GoToLine Window localized in French culture.
 
 
 ![Find-and-Replace_img17](Find-and-Replace_images/Find-and-Replace_img17.jpg)
+
+
