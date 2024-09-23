@@ -296,4 +296,24 @@ This event will be raised when the caret position of the text in the EditControl
 <li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex">Cursor Index </a> : Gets the current cursor index value of the EditControl.</li>
 </ul>
 <br/><br/></td></tr>
+<tr>
+<td>
+FindReplaceWindowOpened<br/><br/></td><td>
+RoutedEventHandler<br/><br/></td><td>
+This event is raised when the Find and Replace window is opened. This event can be used to access the instance of the Find and Replace window when it opens.<br/><br/></td></tr>
+<tr>
+<td>
+FindReplaceWindowClosed<br/><br/></td><td>
+RoutedEventHandler<br/><br/></td><td>
+This event is raised when the Find and Replace window is closed. This event can be used to access the instance of the Find and Replace window when it closes.<br/><br/></td></tr>
+<tr>
+<td>
+GoToLineWindowOpened<br/><br/></td><td>
+RoutedEventHandler<br/><br/></td><td>
+This event is raised when the GoToLine window is opened. This event can be used to access the instance of the GoToLine window when it opens.<br/><br/></td></tr>
+<tr>
+<td>
+GoToLineWindowClosed<br/><br/></td><td>
+RoutedEventHandler<br/><br/></td><td>
+This event is raised when the GoToLine window is closed. This event can be used to access the instance of the GoToLine window when it closes.<br/><br/></td></tr>
 </table>
