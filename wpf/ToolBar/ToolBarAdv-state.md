@@ -19,59 +19,75 @@ ToolBarAdv provides different states such as Docking, Floating or Hidden. It can
             <syncfusion:ToolBarTrayAdv >
                 <syncfusion:ToolBarAdv ToolBarName="Standard" Band="0">
                     <Button syncfusion:ToolBarAdv.Label="New Document"
-                    syncfusion:ToolBarAdv.Icon="Images/NewDocumentHS.png">
+                    syncfusion:ToolBarAdv.Icon="Images/New.png">
                         <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
                     </Button>
                     <Button syncfusion:ToolBarAdv.Label="Open Document"
-                    syncfusion:ToolBarAdv.Icon="Images/openHS.png">
-                        <Image Source="Images/openHS.png" Width="16" Height="16"/>
+                    syncfusion:ToolBarAdv.Icon="Images/Open.png">
+                        <Image Source="Images/OpenDocument.png" Width="16" Height="16"/>
                     </Button>
                 <syncfusion:ToolBarAdv Band="1" ToolBarName="Extras"
                  syncfusion:ToolBarManager.ToolBarState="Floating"
 			FloatingBarLocation="500,300">
-                    <Button syncfusion:ToolBarAdv.Label="Insert Picture"
-                     syncfusion:ToolBarAdv.Icon="Images/InsertPictureHS.png">
-                        <Image Source="Images/InsertPictureHS.png" Width="16" Height="16"/>
-                    </Button>
-                    <Button syncfusion:ToolBarAdv.Label="Insert Hyperlink"
-                     syncfusion:ToolBarAdv.Icon="Images/InsertHyperlinkHS.png">
-                        <Image Source="Images/InsertHyperlinkHS.png" Width="16" Height="16"/>
+                    <Button syncfusion:ToolBarAdv.Label="Save Document"
+                     syncfusion:ToolBarAdv.Icon="Images/Save.png">
+                        <Image Source="Images/SaveDocument.png" Width="16" Height="16"/>
                     </Button>
                     <Button syncfusion:ToolBarAdv.Label="Insert Table"
-                      syncfusion:ToolBarAdv.Icon="Images/TableHS.png">
-                        <Image Source="Images/TableHS.png" Width="16" Height="16"/>
+                      syncfusion:ToolBarAdv.Icon="Images/Insert.png">
+                        <Image Source="Images/InsertTable.png" Width="16" Height="16"/>
                     </Button>
                 </syncfusion:ToolBarAdv>
                 </syncfusion:ToolBarAdv>
             </syncfusion:ToolBarTrayAdv>
         </syncfusion:ToolBarManager.TopToolBarTray>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <ScrollViewer >
-            <Grid Margin="20">
-                <Border CornerRadius="2" Background="Black"
-                 Opacity="0.3" Width="600" Height="700">
-                    <Border.Effect>
-                        <BlurEffect Radius="15"/>
-                    </Border.Effect>
-                </Border>
-                <RichTextBox Width="600" Height="700" Padding="20"></RichTextBox>
-            </Grid>
-        </ScrollViewer>
-    </Grid>
     </syncfusion:ToolBarManager>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    ToolBarAdv toolBar = new ToolBarAdv(); 
-    toolBar.FloatingBarLocation = new Point(500, 300); 
-    ToolBarManager.SetToolBarState(toolBar, ToolBarState.Floating);
-    Grid1.Children.Add(toolBar);
+    ToolBarManager toolBarManager = new ToolBarManager();
+    //Initialize ToolBarTrayAdv
+    ToolBarTrayAdv toolBarTray = new ToolBarTrayAdv();
+    // Initialize toolbar1 and subscribe to ToolBarStateChanged event
+    ToolBarAdv toolbar1 = new ToolBarAdv();
+    // Add a button to the toolbar1
+    toolbar1.Items.Add(new Button
+     {
+        Content = new Image
+        {
+            Source = new BitmapImage(new Uri("Images/Open.png")),
+            Stretch = Stretch.Uniform
+        },
+        Height = 40,
+        Width = 40,
+        ToolTip = "Open Folder",
+        Margin = new Thickness(5, 0, 5, 0)
+    });
+    // Add toolbar1 to the ToolBarTrayAdv
+    toolBarTray.ToolBars.Add(toolbar1);
+    // Set Floating location for the floating toolbar
+    toolbar1.FloatingBarLocation = new Point(500, 300);
+    // Set the floating toolbar state to floating
+    ToolBarManager.SetToolBarState(toolbar1, ToolBarState.Floating);
+    // Add buttons to the floating toolbar
+    toolbar1.Items.Add(new Button
+    {
+        Content = new Image
+        {
+           Source = new BitmapImage(new Uri("Images/Save.png")),
+           Stretch = Stretch.Uniform
+        },
+           Height = 40,
+           Width = 40,
+           ToolTip = "Save",
+           Margin = new Thickness(5, 0, 5, 0)
+    });
+    // Set the ToolBarTrayAdv as the top tray for the ToolBarManager
+    toolBarManager.TopToolBarTray = toolBarTray;
+    // Set the ToolBarManager as the main content
+    this.Content = toolBarManager;
 
 {% endhighlight %}
 
@@ -130,13 +146,13 @@ Following code restricts docking at the top:
 
 {% endtabs%}
 
-## ToolBar State Changed Event
+## ToolBarStateChanged event
 
-ToolBarStateChanged event is triggered when the state of a ToolBarAdv changes, such as when it is hidden, floated, or docked. This event passes an instance of ToolBarStateChangedEventArgs, which contains information about the state change, including the old state and new state of the toolbar.
+The [ToolBarStateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_ToolBarStateChanged) event is triggered when the state of a ToolBarAdv changes, such as when it is hidden, floated, or docked. This event passes an instance of [ToolBarStateChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarStateChangedEventArgs.html), which contains information about the state change, including the old state and the new state of the toolbar.
 
-NewState: Gets the current state of the toolBarAdv control.
+NewState: Gets the current state of the ToolBarAdv control.
 
-OldState: Gets the previous state of the toolBarAdv control.
+OldState: Gets the previous state of the ToolBarAdv control.
 
 {% tabs %}
 
@@ -147,13 +163,13 @@ OldState: Gets the previous state of the toolBarAdv control.
                 <syncfusion:ToolBarTrayAdv >
                         <syncfusion:ToolBarAdv ToolBarStateChanged="Toolbar1_ToolBarStateChanged" ToolBarName="Standard" Band="0">
                                 <Button syncfusion:ToolBarAdv.Label="Open Document"
-                                syncfusion:ToolBarAdv.Icon="Images/openHS.png">
-                                        <Image Source="Images/openHS.png" Width="16" Height="16"/>
+                                syncfusion:ToolBarAdv.Icon="Images/Open.png">
+                                        <Image Source="Images/Open.png" Width="16" Height="16"/>
                                 </Button>
                         <syncfusion:ToolBarAdv Band="1" ToolBarName="Extras">
-                                <Button syncfusion:ToolBarAdv.Label="Insert Pictures"
-                                syncfusion:ToolBarAdv.Icon="Images/InsertPictureHS.png">
-                                        <Image Source="Images/InsertPictureHS.png" Width="16" Height="16"/>
+                                <Button syncfusion:ToolBarAdv.Label="Save Document"
+                                syncfusion:ToolBarAdv.Icon="Images/Save.png">
+                                        <Image Source="Images/Save.png" Width="16" Height="16"/>
                                 </Button>
                         </syncfusion:ToolBarAdv>
                         </syncfusion:ToolBarAdv>
@@ -174,7 +190,7 @@ OldState: Gets the previous state of the toolBarAdv control.
         {
                 Content = new Image
                 {
-                        Source = new BitmapImage(new Uri("Images\\OpenHS.png")),
+                        Source = new BitmapImage(new Uri("Images\\Open.png")),
                         Stretch = Stretch.Uniform
                 },
                 Height = 40,
@@ -187,7 +203,7 @@ OldState: Gets the previous state of the toolBarAdv control.
         {
                 Content = new Image
                 {
-                        Source = new BitmapImage(new Uri("Images\\InsertPictureHS.png")),
+                        Source = new BitmapImage(new Uri("Images\\Save.png")),
                         Stretch = Stretch.Uniform
                 },
                 Height = 40,
