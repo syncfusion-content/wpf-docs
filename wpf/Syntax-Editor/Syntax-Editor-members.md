@@ -300,20 +300,20 @@ This event will be raised when the caret position of the text in the EditControl
 <td>
 FindReplaceWindowOpened<br/><br/></td><td>
 RoutedEventHandler<br/><br/></td><td>
-This event is raised when the <b>Find and Replace</b> window is opened. It can be used to access the instance of the <b>Find and Replace</b> window as it opens and allows for customization of the window during this event.<br/><br/></td></tr>
+This event is raised when the **Find and Replace** window is opened. It can be used to access the instance of the **Find and Replace** window as it opens and allows for customization of the window during this event.<br/><br/></td></tr>
 <tr>
 <td>
 FindReplaceWindowClosed<br/><br/></td><td>
 RoutedEventHandler<br/><br/></td><td>
-This event is raised when the <b>Find and Replace</b> window is closed. It can be used to access the instance of the <b>Find and Replace</b> window as it closes and allows for customization of the window during this event.<br/><br/></td></tr>
+This event is raised when the **Find and Replace** window is closed. It can be used to access the instance of the **Find and Replace** window as it closes and allows for customization of the window during this event.<br/><br/></td></tr>
 <tr>
 <td>
 GoToLineWindowOpened<br/><br/></td><td>
 RoutedEventHandler<br/><br/></td><td>
-This event is raised when the <b>GoToLine</b> window is opened. It can be used to access the instance of the <b>GoToLine</b> window as it opens and allows for customization of the window during this event.<br/><br/></td></tr>
+This event is raised when the **GoToLine** window is opened. It can be used to access the instance of the **GoToLine** window as it opens and allows for customization of the window during this event.<br/><br/></td></tr>
 <tr>
 <td>
 GoToLineWindowClosed<br/><br/></td><td>
 RoutedEventHandler<br/><br/></td><td>
-This event is raised when the <b>GoToLine</b> window is closed. It can be used to access the instance of the <b>GoToLine</b> window as it closes and allows for customization of the window during this event.<br/><br/></td></tr>
+This event is raised when the **GoToLine** window is closed. It can be used to access the instance of the **GoToLine** window as it closes and allows for customization of the window during this event.<br/><br/></td></tr>
 </table>
