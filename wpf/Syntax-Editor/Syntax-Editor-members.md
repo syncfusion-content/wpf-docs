@@ -315,4 +315,5 @@ This event is raised when the **GoToLine** window is opened. It can be used to a
 <td>
 GoToLineWindowClosed<br/><br/></td><td>
 RoutedEventHandler<br/><br/></td><td>
-This event is raised when the **GoToLine** window is closed. It can be used to access the instance of the **GoToLine** window as it closes and allows for customization of the window during this event.<br/><br/></td></tr></table>
+This event is raised when the **GoToLine** window is closed. It can be used to access the instance of the **GoToLine** window as it closes and allows for customization of the window during this event.<br/><br/></td></tr>
+</table>
