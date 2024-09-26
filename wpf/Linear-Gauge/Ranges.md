@@ -85,7 +85,7 @@ The start and end values of ranges are set using the [`StartValue`](https://help
 
 {% endtabs %}
 
-![Ranges - Linear Gauge](Ranges_images/Ranges_img1.png)
+![Setting Ranges in WPF  Linear Gauge](ranges_images/wpf-linear-gauge-ranges.png)
 
 ## Range customization
 
@@ -161,7 +161,7 @@ The UI element of a range is customized by changing the [`RangeStroke`](https://
 
 {% endtabs %}
 
-![Ranges - Linear Gauge](Ranges_images/Ranges_img2.png)
+![Range Customization in WPF  Linear Gauge](ranges_images/wpf-linear-gauge-range-customization.png)
 
 ## Binding range stroke to ticks and labels
 
@@ -283,7 +283,7 @@ You can bind the range’s stroke to tick lines and labels within its range by s
 
 {% endtabs %}
 
-![Ranges - Linear Gauge](Ranges_images/Ranges_img3.png)
+![Binding Range in WPF  Linear Gauge](ranges_images/wpf-linear-gauge-binding-range.png)
 
 ## Setting range position
 
@@ -365,7 +365,7 @@ Using the [`RangeOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 {% endtabs %}
 
-![Ranges - Linear Gauge](Ranges_images/Ranges_img4.png)
+![Setting Range in WPF  Linear Gauge](ranges_images/wpf-linear-gauge-setting-range.png)
 
 ### Setting range position in linear scale
 
@@ -447,7 +447,7 @@ The range can be placed above or below the scale by choosing one of the followin
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![Ranges - Linear Gauge](Ranges_images/Ranges_img5.png)
+![Setting Range for Scale in WPF  Linear Gauge](ranges_images/wpf-linear-gauge-setting-range-for-scale.png)
 
 ### Adding multiple ranges
 
@@ -547,4 +547,4 @@ You can add “n” number of ranges to a scale using the `LinearRange` property
 
 {% endtabs %}
 
-![Ranges - Linear Gauge](Ranges_images/Ranges_img6.png)
+![Adding Multiple Ranges for Scale in WPF Linear Gauge](ranges_images/wpf-linear-gauge-add-multiple-ranges.png)

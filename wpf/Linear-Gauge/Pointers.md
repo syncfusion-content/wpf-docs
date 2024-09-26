@@ -79,7 +79,7 @@ The [`LinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges
 
 {% endtabs %}
 
-![Pointers - Linear Gauge](Pointers_images/Pointers_img1.png)
+![Bar Pointers in WPF Linear Gauge](pointers_images/wpf-linear-gauge-bar-pointers.png)
 
 ### Bar pointer customization
 
@@ -149,7 +149,7 @@ The UI of `Bar pointer` is customized using the [`BarPointerStroke`](https://hel
 
 {% endtabs %}
 
-![Pointers - Linear Gauge](Pointers_images/Pointers_img2.png)
+![Bar Pointers Customization in WPF Linear Gauge](pointers_images/wpf-linear-gauge-bar-pointers-customization.png)
 
 ## Symbol pointer in linear scale
 
@@ -227,7 +227,7 @@ In `SymbolPointer`, the value is pointed by a symbol on the scale.
 
 {% endtabs %}
 
-![Pointers - Linear Gauge](Pointers_images/Pointers_img3.png)
+![Symbol Pointers in WPF Linear Gauge](pointers_images/wpf-linear-gauge-symbol-pointers.png)
 
 ### Symbol pointer customization
 
@@ -303,7 +303,7 @@ You can modify the size of symbol pointer by changing the [`SymbolPointerHeight`
 
 {% endtabs %}
 
-![Pointers - Linear Gauge](Pointers_images/Pointers_img4.png)
+![Symbol Pointers Customization in WPF Linear Gauge](pointers_images/wpf-linear-gauge-symbol-pointers-customization.png)
 
 ## Positioning symbol pointer
 
@@ -390,7 +390,7 @@ You can modify the size of symbol pointer by changing the [`SymbolPointerHeight`
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![Pointers - Linear Gauge](Pointers_images/Pointers_img5.png)
+![Positioning Symbol Pointer in WPF Linear Gauge](pointers_images/wpf-linear-gauge-positioning-symbol-pointer.png)
 
 ### Change symbol pointer shapes
 
@@ -436,7 +436,7 @@ The [`SymbolPointerStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 
 {% endhighlight %}
 
-![Pointers - Linear Gauge](Pointers_images/Pointers_img6.png)
+![Change Symbol Pointer in WPF Linear Gauge](pointers_images/wpf-linear-gauge-change-symbol-pointer.png)
 
 ### Adding multiple pointers
 
@@ -524,7 +524,7 @@ In addition to the default pointer, you can add "n" number of [`Pointers`](https
 
 {% endtabs %}
 
-![Pointers - Linear Gauge](Pointers_images/Pointers_img7.png)
+![Add Multiple Pointers in WPF Linear Gauge](pointers_images/wpf-linear-gauge-add-multiple-pointers.png)
 
 ## Setting animation for pointer
 
@@ -610,4 +610,4 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
 
 {% endtabs %}
 
-![Pointer animation](Pointers_images/PointerAnimation.gif)
+![Setting Animation for Pointers in WPF Linear Gauge](pointers_images/wpf-linear-gauge-pointer-animation.gif)
