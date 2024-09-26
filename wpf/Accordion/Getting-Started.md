@@ -29,7 +29,7 @@ Create a new WPF project in Visual Studio to display the SfAccordion with functi
 
 The SfAccordion control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.SfAccordion.WPF** assembly reference will be added automatically to the project.
 
-![WPF Accordion Control](Getting-Started_images/wpf-accordion-control.png)
+![WPF Accordion Control](getting-started_images/wpf-accordion-control.png)
 
 ## Add control manually in XAML
 
@@ -132,7 +132,7 @@ this.Content = accordion;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Accordion Items](Getting-Started_images/wpf-accordion-items.png)
+![WPF Accordion items](getting-started_images/wpf-accordion-items.png)
 
 ## Bind data
 
@@ -241,7 +241,7 @@ public class ViewModel
 	</syncfusion:SfAccordion.ContentTemplate>
 </syncfusion:SfAccordion>
 
-![WPF Accordion Item Binding](Getting-Started_images/wpf-accordion-item-binding.png)
+![WPF Accordion item binding](getting-started_images/wpf-accordion-item-binding.png)
 
 ## Apply template to item header
 
@@ -261,7 +261,7 @@ SfAccordion provides the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syn
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Accordion Header Template](Getting-Started_images/wpf-accordion-header-template.png)
+![WPF Accordion header template](getting-started_images/wpf-accordion-header-template.png)
 
 ## Set content to children
 
@@ -278,7 +278,7 @@ You can set content to SfAccordionItem using the [Content](https://docs.microsof
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Accordion Item Content](Getting-Started_images/wpf-accordion-item-content.png)
+![WPF Accordion item content](getting-started_images/wpf-accordion-item-content.png)
 
 ## Theme
 
@@ -288,4 +288,4 @@ SfAccordion supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![WPF Accordion Themes](Getting-Started_images/wpf-accordion-themes.png)
+  ![WPF Accordion themes](getting-started_images/wpf-accordion-themes.png)

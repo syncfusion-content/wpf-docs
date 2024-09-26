@@ -91,7 +91,7 @@ hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
 
    The following figure shows the items added in code displayed on the interface.
 
-   ![Populating Data](Populating-Data_images/Populating-Data_img1.png)
+   ![Populating data in WPF Hierarchical Navigator](populating-data_images/wpf-hierarchical-navigator-populating-data.png)
 
 
 
@@ -197,7 +197,7 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
    The following screenshot shows the items added in code displayed on the interface.
 
-   ![Binding to an object](Populating-Data_images/Populating-Data_img2.png)
+   ![Binding to an object in WPF Hierarchical Navigator ](populating-data_images/wpf-hierarchical-navigator-binding.png)
 
   
    
@@ -320,7 +320,7 @@ public partial class MainPage : UserControl
 
 The image displayed below shows the output of the above code—items bound to XML data.
 
-![Binding XML data](Populating-Data_images/Populating-Data_img3.png)
+![Binding XML data in WPF Hierarchical Navigator](populating-sata_images/wpf-hierarchical-navigator-binding-xml-data.png)
 
 
 
@@ -333,7 +333,7 @@ The steps to bind XML data through WCF services are as follows:
 1. Create an XML and a class object. Refer the XML data-binding class and the XML used in the 
 2. The following screenshot shows the items added in code displayed on the interface.
 
-   ![Binding to WCF service](Populating-Data_images/Populating-Data_img4.png)
+   ![Binding to WCF service in WPF Hierarchical Navigator](populating-data_images/wpf-hierarchical-navigator-binding-to-wcf-service.png)
 
 
 
@@ -444,7 +444,7 @@ x:Name="Window" Title="MainWindow" UseLayoutRounding="True" Width="640" Heig
 
 The image displayed below shows the output of the above code—items bound to XML data.
 
-![Binding to WCF service](Populating-Data_images/Populating-Data_img5.png)
+![XML data enabling WCF service in WPF hierachical Navigator](populating-data_images/wpf-hierarchical-navigator-xml-data-enable-wcf-service.png)
 
 ## See Also
 

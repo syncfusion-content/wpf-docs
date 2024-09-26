@@ -41,12 +41,12 @@ The following code example demonstrates about define the value to be displayed a
 
 | SegmentLabelContent values | Description | Output |
 |---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![ DateTime in Adornment](Adornments_images/Datetime.png) |
-|LabelContentPath | Without using a LabelTemplate, it displays the y value by default. If we use LabelTemplate for Adornment, we must specify this in to get the underlying data model as DataContext. |![ LabelContentPath in Adornment](Adornments_images/LabelContentPath.png)|
-| Percentage | Displays the percentage value of series' point among other points |![ Percentage in Adornment](Adornments_images/Percentage.png) |
-| XValue | Displays the X value of series' point|![ XValue in Adornment](Adornments_images/Xvalue.png) |
-| YofTot | Displays the value of Y of total values' point|![ YofTot in Adornment](Adornments_images/YofTot.png) |
-| YValue | Displays the Y value of series' point| ![ YValue in Adornment](Adornments_images/YValue.png) |
+| DateTime | Displays LabelContent.DateTime value | ![WPF Chart DateTime in Adornment](adornments_images/wpf-chart-datetime.png) |
+|LabelContentPath | Without using a LabelTemplate, it displays the y value by default. If we use LabelTemplate for Adornment, we must specify this in to get the underlying data model as DataContext. |![WPF Chart LabelContentPath in Adornment](adornments_images/wpf-chart-label-content-path.png)|
+| Percentage | Displays the percentage value of series' point among other points |![WPF Chart Percentage in Adornment](adornments_images/wpf-chart-percentage.png) |
+| XValue | Displays the X value of series' point|![WPF Chart XValue in Adornment](adornments_images/wpf-chart-Xvalue.png) |
+| YofTot | Displays the value of Y of total values' point|![WPF Chart YofTot in Adornment](Adornments_images/YofTot.png) |
+| YValue | Displays the Y value of series' point| ![WPF Chart YValue in Adornment](adornments_images/wpf-chart-YValue.png) |
 
 ## Customizing Labels
 
@@ -96,7 +96,7 @@ The following code example demonstrates the customization of label using the abo
 
 {% endtabs %}
 
-![Adornments label content customization support in WPF Chart](Adornments_images/Custom_Label.png)
+![Adornments label content customization support in WPF Chart](adornments_images/wpf-chart-custom-Label.png)
 
 ## Label Template
 
@@ -167,7 +167,7 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
 
 {% endtabs %}
 
-![LabelTemplate support for adornments in WPF Chart](Adornments_images/label_template.png)
+![LabelTemplate support for adornments in WPF Chart](adornments_images/wpf-chart-label-template.png)
 
 ## Label Format
 
@@ -198,7 +198,7 @@ The following code example demonstrates the y value having three decimal digits.
 
 In the following image, you can see the decimal position will be rounded off to two digits by default.
 
-![Adornments label format support in WPF Chart](Adornments_images/label_format.png)
+![Adornments label format support in WPF Chart](adornments_images/wpf-chart-label-format.png)
 
 ## Label Rotation
 
@@ -225,7 +225,7 @@ In the following image, you can see the decimal position will be rounded off to 
 
 {% endtabs %}
 
-![Adornments label rotation support in WPF Chart](Adornments_images/label_rotation.png)
+![Adornments label rotation support in WPF Chart](adornments_images/wpf-chart-label-rotation.png)
 
 ## Connector Line
 
@@ -294,7 +294,7 @@ The following code example shows the customization options for connector line:
 
 {% endtabs %}
 
-![Connector line for adornments support in WPF Chart](Adornments_images/connectorline.png)
+![Connector line for adornments support in WPF Chart](adornments_images/wpf-chart-connector-line.png)
 
 **Connector Type**
 
@@ -346,15 +346,15 @@ The following code example shows the customization options for connector line:
 
  **Line** 
  
- ![Connector Line in WPF Chart](Adornments_images/Line.png) 
+ ![Connector Line in WPF Chart](adornments_images/wpf-chart-line.png) 
 
  **Bezier**
  
-  ![Bezier in WPF Chart](Adornments_images/Bezier.png)
+  ![Bezier in WPF Chart](adornments_images/wpf-chart-bezier.png)
 
    **Straight Line**
 
-![Connector line with StraightLine type](Adornments_images/StraightLine.png)
+![Connector line with StraightLine type in WPF Chart](Adornments_images/wpf-chart-straight-line.png)
 
 ## Applying Series Brush
 
@@ -432,6 +432,6 @@ The following code example demonstrates the EnableSmartLabels property:
 
 {% endtabs %}
 
-![Smart labels for adornments in WPF Chart](Adornments_images/smartlabel.png)
+![Smart labels for adornments in WPF Chart](adornments_images/wpf-chart-smart-label.png)
 
 N> For circular series, the adornment position can be changed to [`Inside`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html), [`Outside`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) using the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_LabelPosition) property.

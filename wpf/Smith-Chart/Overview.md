@@ -13,7 +13,7 @@ Smith chart is one of the most useful data visualization tools for high frequenc
 
 SfSmithChart provides a perfect way to visualize data with high level of user interactivity that focuses on development, productivity, and simplicity of use. 
 
-![Overview_img1](Overview_images/Overview_img1.png)
+![Overview in WPF Smith Chart](overview_images/wpf-smith-chart-overview.png)
     
 
 
