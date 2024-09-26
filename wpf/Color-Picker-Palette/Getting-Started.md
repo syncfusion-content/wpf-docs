@@ -234,7 +234,7 @@ public class ViewModel : NotificationObject {
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Color Picker Palette with own color items](dealing-with-colorpickerpalette_images/wpf-own-color-itemns.png)
+![WPF Color Picker Palette with own color items](dealing-with-colorpickerpalette_images/wpf-own-color-items.png)
 
 Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/CustomColors) to download the sample that showcases how to add your own color items into the palette. 
 
