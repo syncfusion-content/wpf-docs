@@ -41,9 +41,9 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding Diagram Ribbon
 
-The following section helps you to add the SfDiagramRibbon in your application with the SfDiagram.
+The following section helps you to add the [`SfDiagramRibbon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.DiagramRibbon.SfDiagramRibbon.html) in your application with the [`SfDiagram`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html).
 
-The SfDiagramRibbon control can be added to the application by dragging it from the toolbox and dropping it in the designer view. The required assembly references will be added automatically.
+The `SfDiagramRibbon` control can be added to the application by dragging it from the toolbox and dropping it in the designer view. The required assembly references will be added automatically.
 
 ![DiagramRibbonfromToolbox](Diagram-Ribbon_images/DiagramRibbonToolbox.png)
 
