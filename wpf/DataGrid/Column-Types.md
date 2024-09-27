@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Types in WPF DataGrid control | Syncfusion
-description: Learn here all about Column Types support in Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Column types in WPF DataGrid Control | Syncfusion
+description: Learn here all about column types support in Syncfusion WPF DataGrid control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
