@@ -71,7 +71,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip support in WPF Chart](Interactive-Features_images/Interactive-Features_image1.png)
+![Tooltip support in WPF Chart](interactive-features_images/wpf-chart-tooltip.png)
 
 ## Customizing tooltip using ChartTooltipBehavior
 
@@ -146,7 +146,7 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip at pointer position in WPF Chart](Interactive-Features_images/Interactive-Features_image2.png)
+![Tooltip at pointer position in WPF Chart](interactive-features_images/wpf-chart-position-tooltip.png)
 
 ### Customizing the tooltip background
 
@@ -187,7 +187,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip background style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image3.png)
+![Tooltip background style customization in WPF Chart](interactive-features_images/wpf-chart-tooltip-background-customization.png)
 
 ### Customizing the tooltip label style
 
@@ -228,7 +228,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip label style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image4.png)
+![Tooltip label style customization in WPF Chart](interactive-features_images/wpf-label-style-customization.png)
 
 ## Customizing tooltip using ChartTooltip attached properties
 
@@ -298,7 +298,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Chart](Interactive-Features_images/Interactive-Features_image5.png)
+![Tooltip alignment support in WPF Chart](interactive-features_images/wpf-chart-tooltip-alignment.png)
 
 N> By default the horizontal alignment is center for the tooltip.
 
@@ -364,7 +364,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_image6.png)
+![Tooltip vertical alignment support in WPF Char](interactive-features_images/wpf-chart-tooltip-vertical-alignment.png)
 
 **TooltipMargin**
 
@@ -440,7 +440,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_image7.png)
+![Margin for tooltip in WPF Chart](interactive-features_images/wpf-chart-tooltip-margin.png)
 
 N>By default, the VerticalAlignment of the Tooltip is Top.
 
@@ -524,7 +524,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_image8.png)
+![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](interactive-features_images/wpf-chart-vertical-and-horizontal-offset.png)
 
 ### Tooltip duration
 
@@ -781,7 +781,7 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 
 {% endtabs %}
 
-![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_image9.png)
+![Tooltip customization support in WPF Chart](interactive-features_images/wpf-chart-tooltip-customization.png)
 
 N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
 

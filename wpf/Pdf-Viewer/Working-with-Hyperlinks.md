@@ -31,7 +31,7 @@ This event is triggered when the hyperlink in the PDF document is clicked.</td><
 HyperlinkClickedEventArgs</td></tr>
 </table>
 
-N> From the version 19.3, The `HyperLinkClickedEventArgs` is renamed to [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs.html). Also, We recommend you to use [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) and [HyperlinkMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.HyperLinkMouseOverEventHandler.html) events to notify when the hyperlink is clicked and when mouse is over the hyperlink respectively as shown in the above table.
+N> From the version 19.3, The `HyperLinkClickedEventArgs` is renamed to [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_PdfViewer_HyperlinkClickedEventArgs_Handled). Also, We recommend you to use [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.html) and [HyperlinkMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.HyperLinkMouseOverEventHandler.html) events to notify when the hyperlink is clicked and when mouse is over the hyperlink respectively as shown in the above table.
 
 ## How to disable hyperlink navigation in PDF viewer control
 
