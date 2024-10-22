@@ -15,9 +15,159 @@ Items can be selected programmatically using the properties [SelectedIndex](http
 
 [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedIndex) property is used to select an item using its index. It contains the index of most recently selected item in case of OneOrMore, ZeroOrMore SelectionModes. 
 
+{% tabs %}
+
+{% highlight XAML %}
+
+ <Grid>
+     <StackPanel>
+     <layout:SfAccordion SelectedIndex="2" Width="500" Height="200">
+         <layout:SfAccordionItem Header="WPF" Content="Essential Studio for WPF"/>
+         <layout:SfAccordionItem Header="SilverLight" Content="Essential Studio for WPF"/>
+         <layout:SfAccordionItem Header="WinRT" Content="Essential Studio for WPF"/>
+         <layout:SfAccordionItem Header="Windows Phone" Content="Essential Studio for WPF"/>
+         <layout:SfAccordionItem Header="Universal" Content="Essential Studio for WPF"/>
+     </layout:SfAccordion>
+     </StackPanel>
+ </Grid>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+// Create SfAccordion control
+SfAccordion accordion = new SfAccordion();
+accordion.Width = 500;
+accordion.Height = 200;
+
+// Create SfAccordionItems
+SfAccordionItem wpfItem = new SfAccordionItem
+{
+    Header = "WPF",
+    Content = "Essential Studio for WPF"
+};
+
+SfAccordionItem silverlightItem = new SfAccordionItem
+{
+    Header = "SilverLight",
+    Content = "Essential Studio for WPF"
+};
+
+SfAccordionItem winrtItem = new SfAccordionItem
+{
+    Header = "WinRT",
+    Content = "Essential Studio for WPF"
+};
+
+SfAccordionItem windowsPhoneItem = new SfAccordionItem
+{
+    Header = "Windows Phone",
+    Content = "Essential Studio for WPF"
+};
+
+SfAccordionItem universalItem = new SfAccordionItem
+{
+    Header = "Universal",
+    Content = "Essential Studio for WPF"
+};
+
+// Add the items to the accordion
+accordion.Items.Add(wpfItem);
+accordion.Items.Add(silverlightItem);
+accordion.Items.Add(winrtItem);
+accordion.Items.Add(windowsPhoneItem);
+accordion.Items.Add(universalItem);
+accordion.SelectedIndex = 2;
+this.Content = accordion;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Accordion Item with SelectedIndex](Selecting-Items-images/wpf-accordion-selected-item-selectedindex.png)
+
 ## Selecting item using SelectedItem
 
 [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItem) property is used to select an item using its instance. It contains the instance of most recently selected item in case of OneOrMore, ZeroOrMore SelectionModes. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+ <Grid>
+     <Grid.DataContext>
+         <local:AccordionViewModel/>
+     </Grid.DataContext>
+     <StackPanel>
+     <layout:SfAccordion ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedAccordionItem, Mode=TwoWay}" Width="500" Height="200" Margin="50">
+         <layout:SfAccordion.HeaderTemplate>
+             <DataTemplate>
+                 <TextBlock Text="{Binding Name}"/>
+             </DataTemplate>
+         </layout:SfAccordion.HeaderTemplate>
+         <layout:SfAccordion.ContentTemplate>
+             <DataTemplate>
+                 <TextBlock Text="{Binding Description}"/>
+             </DataTemplate>
+         </layout:SfAccordion.ContentTemplate>
+     </layout:SfAccordion>
+     </StackPanel>
+ </Grid>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+  public class AccordionViewModel 
+  {
+      private object _selectedAccordionItem;
+      public object SelectedAccordionItem
+      {
+          get { return _selectedAccordionItem; }
+          set
+          {
+              _selectedAccordionItem = value;
+              OnPropertyChanged(nameof(SelectedAccordionItem));
+          }
+      }
+
+      private ObservableCollection<AccordionItem> _items;
+      public ObservableCollection<AccordionItem> Items
+      {
+          get { return _items; }
+          set
+          {
+              _items = value;
+              OnPropertyChanged(nameof(Items));
+          }
+      }
+
+      public AccordionViewModel()
+      {
+          Items = new ObservableCollection<AccordionItem>
+      {
+          new AccordionItem { Name = "WPF", Description = "Essential Studio for WPF"},
+          new AccordionItem { Name = "SilverLight", Description = "Essential Studio for Silverlight" },
+          new AccordionItem { Name = "WinRT", Description = "Essential Studio for WinRT" },
+          new AccordionItem { Name = "Windows Phone", Description = "Essential Studio for Windows Phone" },
+          new AccordionItem { Name = "Universal", Description = "Essential Studio for Universal" }
+      };
+
+          SelectedAccordionItem = Items[4];   
+      }
+  }
+
+  public class AccordionItem
+  {
+      public string Name { get; set; }
+      public string Description { get; set; }
+  }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Accordion Item with SelectedItem](Selecting-Items-images/wpf-accordion-selected-item-selecteditem.png)
 
 ## Retrieving the selected items
 
