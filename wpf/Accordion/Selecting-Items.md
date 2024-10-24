@@ -15,9 +15,156 @@ Items can be selected programmatically using the properties [SelectedIndex](http
 
 [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedIndex) property is used to select an item using its index. It contains the index of most recently selected item in case of OneOrMore, ZeroOrMore SelectionModes. 
 
+{% tabs %}
+
+{% highlight XAML %}
+    <layout:SfAccordion SelectedIndex="2" Width="500" Height="200">
+       <layout:SfAccordionItem Header="WPF" 
+       Content="WPF is a framework for building rich Windows desktop applications"/>
+       <layout:SfAccordionItem Header="UWP" 
+       Content="UWP is a framework for building cross-platform Windows applications."/>
+       <layout:SfAccordionItem Header="WinUI" 
+       Content="WinUI is a modern framework for building Windows desktop applications."/>
+       <layout:SfAccordionItem Header="Windows Forms" 
+       Content="Windows Forms is a UI framework for building classic Windows desktop applications."/>
+       <layout:SfAccordionItem Header="Metro Studio" 
+       Content="Metro Studio is an icon library with customizable flat and wireframe icon templates."/>
+    </layout:SfAccordion>
+{% endhighlight %}
+
+{% highlight C# %}
+
+// Create SfAccordion control
+SfAccordion accordion = new SfAccordion();
+accordion.Width = 500;
+accordion.Height = 200;
+
+// Create SfAccordionItems
+SfAccordionItem wpfItem = new SfAccordionItem
+{
+    Header = "WPF",
+    Content = "WPF is a framework for building rich Windows desktop applications"
+};
+SfAccordionItem uWPItem = new SfAccordionItem
+{
+    Header = "UWP",
+    Content = "UWP is a framework for building cross-platform Windows applications."
+};
+
+SfAccordionItem winUIItem = new SfAccordionItem
+{
+    Header = "WinUI",
+    Content = "WinUI is a modern framework for building Windows desktop applications."
+};
+
+SfAccordionItem windowsFormsItem = new SfAccordionItem
+{
+    Header = "Windows Forms",
+    Content = "Windows Forms is a UI framework for building classic Windows desktop applications."
+};
+
+SfAccordionItem metroStudioItem = new SfAccordionItem
+{
+    Header = "Metro Studio",
+    Content = "Metro Studio is an icon library with customizable flat and wireframe icon templates."
+};
+
+// Add the items to the accordion
+accordion.Items.Add(wpfItem);
+accordion.Items.Add(uWPItem);
+accordion.Items.Add(winUIItem);
+accordion.Items.Add(windowsFormsItem);
+accordion.Items.Add(metroStudioItem);
+accordion.SelectedIndex = 2;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Accordion item selection using SelectedIndex](Selecting-Items-images/wpf-accordion-selected-index-selection.png)
+
 ## Selecting item using SelectedItem
 
 [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItem) property is used to select an item using its instance. It contains the instance of most recently selected item in case of OneOrMore, ZeroOrMore SelectionModes. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+ <Grid>
+     <Grid.DataContext>
+         <local:AccordionViewModel/>
+     </Grid.DataContext>
+     <StackPanel>
+     <layout:SfAccordion ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedAccordionItem, Mode=TwoWay}" Width="500" Height="200" Margin="50">
+         <layout:SfAccordion.HeaderTemplate>
+             <DataTemplate>
+                 <TextBlock Text="{Binding Name}"/>
+             </DataTemplate>
+         </layout:SfAccordion.HeaderTemplate>
+         <layout:SfAccordion.ContentTemplate>
+             <DataTemplate>
+                 <TextBlock Text="{Binding Description}"/>
+             </DataTemplate>
+         </layout:SfAccordion.ContentTemplate>
+     </layout:SfAccordion>
+     </StackPanel>
+ </Grid>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+  public class AccordionViewModel 
+  {
+      private object _selectedItem;
+      public object SelectedItem
+      {
+          get { return _selectedItem; }
+          set
+          {
+              _selectedItem = value;
+              OnPropertyChanged(nameof(SelectedItem));
+          }
+      }
+
+      private ObservableCollection<AccordionItem> _items;
+      public ObservableCollection<AccordionItem> Items
+      {
+          get { return _items; }
+          set
+          {
+              _items = value;
+              OnPropertyChanged(nameof(Items));
+          }
+      }
+
+      public AccordionViewModel()
+      {
+          Items = new ObservableCollection<AccordionItem>
+        {
+           new AccordionItem { Name = "WPF", Description = "WPF is a framework for building rich Windows desktop applications."},
+           new AccordionItem { Name = "UWP", Description = "UWP is a framework for building cross-platform Windows applications." },
+           new AccordionItem { Name = "WinUI", Description = "WinUI is a modern framework for building Windows desktop applications." },
+           new AccordionItem { Name = "Windows Form", Description = "Windows Forms is a UI framework for building classic Windows desktop applications." },
+           new AccordionItem { Name = "Metro Studio", Description = "Metro Studio is an icon library with customizable flat and wireframe icon templates." }
+        };
+
+        SelectedItem = Items[4];   
+      }
+  }
+
+  public class AccordionItem
+  {
+      public string Name { get; set; }
+      public string Description { get; set; }
+  }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Accordion item selection using SelectedItem](Selecting-Items-images/wpf-accordion-selected-item-selection.png)
 
 ## Retrieving the selected items
 
