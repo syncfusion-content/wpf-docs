@@ -18,19 +18,18 @@ Items can be selected programmatically using the properties [SelectedIndex](http
 {% tabs %}
 
 {% highlight XAML %}
-
- <Grid>
-     <StackPanel>
-     <layout:SfAccordion SelectedIndex="2" Width="500" Height="200">
-         <layout:SfAccordionItem Header="WPF" Content="Essential Studio for WPF"/>
-         <layout:SfAccordionItem Header="SilverLight" Content="Essential Studio for WPF"/>
-         <layout:SfAccordionItem Header="WinRT" Content="Essential Studio for WPF"/>
-         <layout:SfAccordionItem Header="Windows Phone" Content="Essential Studio for WPF"/>
-         <layout:SfAccordionItem Header="Universal" Content="Essential Studio for WPF"/>
-     </layout:SfAccordion>
-     </StackPanel>
- </Grid>
-
+    <layout:SfAccordion SelectedIndex="2" Width="500" Height="200">
+       <layout:SfAccordionItem Header="WPF" 
+       Content="WPF is a framework for building rich Windows desktop applications"/>
+       <layout:SfAccordionItem Header="UWP" 
+       Content="UWP is a framework for building cross-platform Windows applications."/>
+       <layout:SfAccordionItem Header="WinUI" 
+       Content="WinUI is a modern framework for building Windows desktop applications."/>
+       <layout:SfAccordionItem Header="Windows Forms" 
+       Content="Windows Forms is a UI framework for building classic Windows desktop applications."/>
+       <layout:SfAccordionItem Header="Metro Studio" 
+       Content="Metro Studio is an icon library with customizable flat and wireframe icon templates."/>
+    </layout:SfAccordion>
 {% endhighlight %}
 
 {% highlight C# %}
@@ -44,47 +43,45 @@ accordion.Height = 200;
 SfAccordionItem wpfItem = new SfAccordionItem
 {
     Header = "WPF",
-    Content = "Essential Studio for WPF"
+    Content = "WPF is a framework for building rich Windows desktop applications"
+};
+SfAccordionItem uWPItem = new SfAccordionItem
+{
+    Header = "UWP",
+    Content = "UWP is a framework for building cross-platform Windows applications."
 };
 
-SfAccordionItem silverlightItem = new SfAccordionItem
+SfAccordionItem winUIItem = new SfAccordionItem
 {
-    Header = "SilverLight",
-    Content = "Essential Studio for WPF"
+    Header = "WinUI",
+    Content = "WinUI is a modern framework for building Windows desktop applications."
 };
 
-SfAccordionItem winrtItem = new SfAccordionItem
+SfAccordionItem windowsFormsItem = new SfAccordionItem
 {
-    Header = "WinRT",
-    Content = "Essential Studio for WPF"
+    Header = "Windows Forms",
+    Content = "Windows Forms is a UI framework for building classic Windows desktop applications."
 };
 
-SfAccordionItem windowsPhoneItem = new SfAccordionItem
+SfAccordionItem metroStudioItem = new SfAccordionItem
 {
-    Header = "Windows Phone",
-    Content = "Essential Studio for WPF"
-};
-
-SfAccordionItem universalItem = new SfAccordionItem
-{
-    Header = "Universal",
-    Content = "Essential Studio for WPF"
+    Header = "Metro Studio",
+    Content = "Metro Studio is an icon library with customizable flat and wireframe icon templates."
 };
 
 // Add the items to the accordion
 accordion.Items.Add(wpfItem);
-accordion.Items.Add(silverlightItem);
-accordion.Items.Add(winrtItem);
-accordion.Items.Add(windowsPhoneItem);
-accordion.Items.Add(universalItem);
+accordion.Items.Add(uWPItem);
+accordion.Items.Add(winUIItem);
+accordion.Items.Add(windowsFormsItem);
+accordion.Items.Add(metroStudioItem);
 accordion.SelectedIndex = 2;
-this.Content = accordion;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![WPF Accordion Item with SelectedIndex](Selecting-Items-images/wpf-accordion-selected-item-selectedindex.png)
+![WPF Accordion item selection using SelectedIndex](Selecting-Items-images/wpf-accordion-selected-index-selection.png)
 
 ## Selecting item using SelectedItem
 
@@ -120,14 +117,14 @@ this.Content = accordion;
 
   public class AccordionViewModel 
   {
-      private object _selectedAccordionItem;
-      public object SelectedAccordionItem
+      private object _selectedItem;
+      public object SelectedItem
       {
-          get { return _selectedAccordionItem; }
+          get { return _selectedItem; }
           set
           {
-              _selectedAccordionItem = value;
-              OnPropertyChanged(nameof(SelectedAccordionItem));
+              _selectedItem = value;
+              OnPropertyChanged(nameof(SelectedItem));
           }
       }
 
@@ -145,15 +142,15 @@ this.Content = accordion;
       public AccordionViewModel()
       {
           Items = new ObservableCollection<AccordionItem>
-      {
-          new AccordionItem { Name = "WPF", Description = "Essential Studio for WPF"},
-          new AccordionItem { Name = "SilverLight", Description = "Essential Studio for Silverlight" },
-          new AccordionItem { Name = "WinRT", Description = "Essential Studio for WinRT" },
-          new AccordionItem { Name = "Windows Phone", Description = "Essential Studio for Windows Phone" },
-          new AccordionItem { Name = "Universal", Description = "Essential Studio for Universal" }
-      };
+        {
+           new AccordionItem { Name = "WPF", Description = "WPF is a framework for building rich Windows desktop applications."},
+           new AccordionItem { Name = "UWP", Description = "UWP is a framework for building cross-platform Windows applications." },
+           new AccordionItem { Name = "WinUI", Description = "WinUI is a modern framework for building Windows desktop applications." },
+           new AccordionItem { Name = "Windows Form", Description = "Windows Forms is a UI framework for building classic Windows desktop applications." },
+           new AccordionItem { Name = "Metro Studio", Description = "Metro Studio is an icon library with customizable flat and wireframe icon templates." }
+        };
 
-          SelectedAccordionItem = Items[4];   
+        SelectedItem = Items[4];   
       }
   }
 
@@ -167,7 +164,7 @@ this.Content = accordion;
 
 {% endtabs %}
 
-![WPF Accordion Item with SelectedItem](Selecting-Items-images/wpf-accordion-selected-item-selecteditem.png)
+![WPF Accordion item selection using SelectedItem](Selecting-Items-images/wpf-accordion-selected-item-selection.png)
 
 ## Retrieving the selected items
 
