@@ -7,6 +7,8 @@ control: Overview
 documentation: ug
 ---
 
+> With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and File-Formats Framework. Please plan upgrade to .Net 8.0 or higher.
+
 # Welcome to Syncfusion WPF UI controls
 
 Syncfusion Essential Studio for WPF is a comprehensive collection of over 90+ essential WPF controls like DataGrid, Chart, Diagram, and PDF Viewer for building powerful line-of-business Windows applications faster. Syncfusion WPF controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
