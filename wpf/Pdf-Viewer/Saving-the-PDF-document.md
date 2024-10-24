@@ -101,9 +101,9 @@ namespace SaveEvents
 		private void PdfViewer_BeginSave(object sender, BeginSaveEventArgs e)
 		{
 			//Insert your code here
-             
-            //Cancel the save operation
-            e.Cancel = true;
+
+			//Cancel the save operation
+			 e.Cancel = true;
 		}
 		#endregion
 	}
