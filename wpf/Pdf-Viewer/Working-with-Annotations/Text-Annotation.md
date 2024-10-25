@@ -132,6 +132,32 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## Setting the font family of the text annotation
+
+The font family of the text annotation can be customized either at the time of inclusion or after the inclusion. The following code shows how to set the font family of the text annotation at the time of inclusion.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.FreeTextAnnotationSettings.FontFamily = new System.Windows.Media.FontFamily("font family");
+}
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.FreeTextAnnotationSettings.FontFamily = new System.Windows.Media.FontFamily("font family")
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Working with included/existing text annotations
 
 The included/existing text annotations are moved, resized, edited, customized, and deleted. To perform these operations, select the included/existing text annotation and right-click over the selected annotation, a pop-up context menu will appear with the following options:
