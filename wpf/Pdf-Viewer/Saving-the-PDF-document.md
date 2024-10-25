@@ -82,24 +82,26 @@ The [BeginSave](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.
 {% tabs %}
 {% highlight c# %}
 
-  public MainWindow()
-  {
-	InitializeComponent();
-	//Wire the `BeginSave` event.
-	PdfViewer.BeginSave += PdfViewer_BeginSave;
-	//Load the PDF file
-	PdfViewer.Load("../../Data/Windows Store Apps Succinctly.pdf");
-  }
-  #region Events
-  private void PdfViewer_BeginSave(object sender, BeginSaveEventArgs e)
+	public MainWindow()
 	{
-	   //Insert your code here
-
-	   //Cancel the save operation
-	   e.Cancel = true;
+		InitializeComponent();
+		//Wire the `BeginSave` event.
+		PdfViewer.BeginSave += PdfViewer_BeginSave;
+		//Load the PDF file
+		PdfViewer.Load("../../Data/Windows Store Apps Succinctly.pdf");
 	}
-  #endregion
-	
+		
+	#region Events
+	private void PdfViewer_BeginSave(object sender, BeginSaveEventArgs e)
+	{
+		//Insert your code here
+
+		//Cancel the save operation
+		e.Cancel = true;
+	}
+	#endregion
+
+
 {% endhighlight %}
 {% endtabs %}
 
