@@ -101,7 +101,6 @@ The [BeginSave](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.
 	}
 	#endregion
 
-
 {% endhighlight %}
 {% endtabs %}
 
