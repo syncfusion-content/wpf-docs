@@ -96,7 +96,7 @@ The [BeginSave](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.
 	   //Insert your code here
 
 	   //Cancel the save operation
-		e.Cancel = true;
+	   e.Cancel = true;
 	}
   #endregion
 	
