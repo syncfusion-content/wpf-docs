@@ -75,6 +75,35 @@ namespace SaveEvents
 {% endhighlight %}
 {% endtabs %}
 
+### Canceling save in Save events 
+
+The [BeginSave](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_BeginSave) event occurs before initiating the save operation of the PDF file. It also allows you to cancel the save operation using the [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.BeginSaveEventArgs.html#Syncfusion_Windows_PdfViewer_BeginSaveEventArgs_Cancel) property of [BeginSaveEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.BeginSaveEventArgs.html). The following code shows how to wire the event in the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+
+{% tabs %}
+{% highlight c# %}
+
+public MainWindow()
+{
+    InitializeComponent();
+    // Wire the `BeginSave` event.
+    PdfViewer.BeginSave += PdfViewer_BeginSave;
+    // Load the PDF file
+    PdfViewer.Load("../../Data/Windows Store Apps Succinctly.pdf");
+}
+
+#region Events
+private void PdfViewer_BeginSave(object sender, BeginSaveEventArgs e)
+{
+    // Insert your code here
+
+    // Cancel the save operation
+    e.Cancel = true;
+}
+#endregion
+
+{% endhighlight %}
+{% endtabs %}
+
 ### End Save
 
 The [EndSave](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_EndSave) event occurs after the completion of the save operation.  The [IsCanceled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.EndSaveEventArgs.html#Syncfusion_Windows_PdfViewer_EndSaveEventArgs_IsCanceled) property of the [EndSaveEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.EndSaveEventArgs.html) helps you to know whether the save operation is canceled or not. The following code shows how to wire the event in the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
