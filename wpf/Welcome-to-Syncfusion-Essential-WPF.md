@@ -7,7 +7,7 @@ control: Overview
 documentation: ug
 ---
 
-> With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and File-Formats Framework. Please plan upgrade to .Net 8.0 or higher.
+> With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan upgrade to .Net 8.0 or higher.
 
 # Welcome to Syncfusion WPF UI controls
 
