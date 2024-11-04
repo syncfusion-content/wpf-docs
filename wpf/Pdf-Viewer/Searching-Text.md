@@ -79,6 +79,8 @@ private void SearchPrevious_Click(object sender, RoutedEventArgs e)
 
 ## Find text method
 
+N> From version 27.1.x, we have used text extraction engine for find text from PDF documents. By default text extraction engine uses PDFium for extracting text information. Please refer to the [link](https://help.syncfusion.com/wpf/pdf-viewer/text-extraction-engines) for more details.
+
 The [FindText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_String_System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF____) method allows the user to search a particular text and get its bounds after loading the document in the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). The [FindText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_String_System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF____) method returns ‘true’ when the given text is found in the document; else, it returns ‘false’.
 
 ### Find and get the bounds of a text
