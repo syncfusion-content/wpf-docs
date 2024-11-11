@@ -23,10 +23,12 @@ Below table represents the supported Syncfusion Essential Studio version for .NE
 <th>.NET 6.0<br/></th>
 <th>.NET 7.0<br/></th>
 <th>.NET 8.0<br/></th>
+<th>.NET 9.0<br/></th>
 </tr>
 
 <tr>
 <td>Earlier Version<br/></td>
+<td>No<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
@@ -38,6 +40,7 @@ From 20.4 (2022 Vol4) <br/></td>
 <td>Yes<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
+<td>No<br/></td>
 </tr>
 
 <tr>
@@ -45,6 +48,7 @@ From 20.4 (2022 Vol4) <br/></td>
 From 21.1 (2023 Vol1) <br/></td>
 <td>Yes<br/></td>
 <td>Yes<br/></td>
+<td>No<br/></td>
 <td>No<br/></td>
 </tr>
 
@@ -54,11 +58,19 @@ From 23.2 (2023 Vol3 SP) <br/></td>
 <td>Yes<br/></td>
 <td>Yes<br/></td>
 <td>Yes<br/></td>
+<td>No<br/></td>
+</tr>
+
+<tr>
+<td>
+From 27.2 (2024 Vol3 SP) <br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
 </tr>
 
 </table>
-
-N> Dedicated assemblies are not included for .NET 7.0 and higher versions. Instead, .NET 6.0 assemblies can be used.
 
 ## Adding Reference
 
