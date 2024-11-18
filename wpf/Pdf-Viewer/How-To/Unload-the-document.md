@@ -9,20 +9,28 @@ documentation: ug
 
 # Unload the document in Pdf Viewer
 
-The [Unload](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Unload) method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) allows you to unload the pdf document.The following code snippet illustrates unload the pdf document in the PdfViewer.
+PDF Viewer allows you to unload the document with the  [Unload](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Unload) method of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) classes. The following code sample illustrates the same.
 
 {% tabs %}
 {% highlight c# %}
 
-pdfviewer.Unload();
+private void button1_Click(object sender, RoutedEventArgs e)
+{
+      //Unload the document
+      pdfviewer.Unload();
+}
 
-{%endhighlight%}
+{% endhighlight %}
+{% highlight VB %}
 
-{% highlight vb %}
+Private Sub button1_Click(sender As Object, e As RoutedEventArgs)
+     'Unload the document
+    pdfviewer.Unload();
+End Sub
 
-pdfviewer.Unload()
-
-{% endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
-N>* In PdfViewerControl, there’s no need to manually unload the current document before loading a new one, as the control automatically unloads the previous document after the new one has finished loading.
+N>* In PdfViewerControl, there is no need to manually unload the current document before loading a new one. 
+N>* The control automatically unloads the previous document after the new one has finished loading. This built-in functionality ensures seamless transitions between documents without requiring additional code for manual unloading.
+N>*However, if you want to explicitly unload a document,you can use the Unload method.
