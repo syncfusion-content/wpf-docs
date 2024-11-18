@@ -9,7 +9,7 @@ documentation: ug
 
 # Unload the document in Pdf Viewer
 
-PDF Viewer allows you to unload the document with the  [Unload](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Unload) method of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) classes. The following code sample illustrates the same.
+PDF Viewer allows you to unload the document with the  [Unload](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Unload) method of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) classes.The Unload method is used only for unloading the document. The following code sample illustrates the same.
 
 {% tabs %}
 {% highlight c# %}
@@ -25,12 +25,34 @@ private void button1_Click(object sender, RoutedEventArgs e)
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs)
      'Unload the document
-    pdfviewer.Unload();
+    pdfviewer.Unload()
 End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
-N>* In PdfViewerControl, there is no need to manually unload the current document before loading a new one. 
-N>* The control automatically unloads the previous document after the new one has finished loading. This built-in functionality ensures seamless transitions between documents without requiring additional code for manual unloading.
-N>*However, if you want to explicitly unload a document,you can use the Unload method.
+The [Unload(Boolean)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Unload_System_Boolean_) method of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) classes includes an optional Boolean parameter to control the disposal of the loaded document. When this parameter is set to true, the method fully disposes of the loaded document. By default, the parameter is set to false.
+
+{% tabs %}
+{% highlight c# %}
+
+private void button1_Click(object sender, RoutedEventArgs e)
+{
+      //Unload the document
+      pdfviewer.Unload(true);
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+Private Sub button1_Click(sender As Object, e As RoutedEventArgs)
+     'Unload the document
+    pdfviewer.Unload(true)
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+N>* In PdfViewerControl, it is recommended not to manually unload the document externally.
+N>* The control internally handles the document unloading process.
+
