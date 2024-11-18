@@ -9,14 +9,14 @@ documentation: ug
 
 # Unload the document in Pdf Viewer
 
-PDF Viewer allows you to unload the document with the  [Unload](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Unload) method of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) classes.The Unload method is used only for unloading the document. The following code sample illustrates the same.
+PDF Viewer allows you to unload the PDF document with the  [Unload](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Unload) method of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) classes.The Unload method is used only for unloading the document. The following code sample illustrates the same.
 
 {% tabs %}
 {% highlight c# %}
 
 private void button1_Click(object sender, RoutedEventArgs e)
 {
-      //Unload the document
+      //Unload the PDF document
       pdfviewer.Unload();
 }
 
@@ -24,7 +24,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs)
-     'Unload the document
+     'Unload the PDF document
     pdfviewer.Unload()
 End Sub
 
@@ -38,7 +38,7 @@ The [Unload(Boolean)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfV
 
 private void button1_Click(object sender, RoutedEventArgs e)
 {
-      //Unload the document
+      //Unload the PDF document
       pdfviewer.Unload(true);
 }
 
@@ -46,13 +46,12 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs)
-     'Unload the document
+     'Unload the PDF document
     pdfviewer.Unload(true)
 End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
-N>* In PdfViewerControl, it is recommended not to manually unload the document externally.
-N>* The control internally handles the document unloading process.
+N>* In PdfViewerControl, it is recommended not to unload the PDF document externally when loading a new PDF document, as the control internally handles the unloading process.
 
