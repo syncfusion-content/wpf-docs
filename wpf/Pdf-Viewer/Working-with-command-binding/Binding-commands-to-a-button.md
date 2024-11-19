@@ -107,9 +107,9 @@ GoToPageCommand allows you to navigate through the pages of the PDF document. Th
 N>
 * If the command parameter is some other text or invalid page number, the GoToPageCommand does not have any effect.
 
-## Page Rotations
+## Page Rotation commands
 
-The list of commands below rotates the specific pages in a PDF document. These commands allow for rotating pages to a custom angle, or by 90 degrees in either a clockwise or counterclockwise direction.
+The below list of commands helps to rotate the specific pages in a PDF document. 
 
 *  [RotatePagesCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_RotatePagesCommand)
 *  [RotatePagesClockwiseCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_RotatePagesClockwiseCommand)
@@ -117,30 +117,29 @@ The list of commands below rotates the specific pages in a PDF document. These c
 
 ### RotatePagesCommand
 
-We can rotate the pages to a specified angle regardless of their current rotation angle. It is achieved by giving the array of indexes of the pageNumber and the PdfPageRotateAngle passed as a command parameter to the RotatePagesCommand.
+We can rotate the pages to a specified angle regardless of their current rotation angle(0,90,180,270).
 
 The following C# code shows how to rotate the pages to 180-degree angle 
 
 {% tabs %}
 {% highlight c# %}
 
+<!--The below code rotates the 6 th page to 180 degree in clockwise direction -->
 pdfViewer.PageOrganizer.RotatePagesCommand.Execute(new object[] { new int[] {  5 }, PdfPageRotateAngle.RotateAngle180 });
 
 {% endhighlight %}
 {% endtabs %}
 
-N>
-* In this RotatePagesCommand we can specify the angle to which the page is rotated in the PDF
-
 ### RotatePagesClockwiseCommand
 
-We can rotate the pages 90 degrees with respect to the current rotation angle in a clockwise direction. It is achieved by giving the array of indexes of the page number passed as command parameters to the RotatePagesClockwiseCommand
+We can rotate the pages 90 degrees with respect to the current rotation angle in a clockwise direction.
 
 The following C# code shows how to rotate the pages in a clockwise direction using the command RotatePagesClockwiseCommand
 
 {% tabs %}
 {% highlight c# %}
 
+<!--The below code rotates the 1 and 2 page to 90 degree in clockwise direction-->
 pdfViewer.PageOrganizer.RotatePagesClockwiseCommand.Execute(new int[] { 0, 1 });
 
 {% endhighlight %}
@@ -148,21 +147,18 @@ pdfViewer.PageOrganizer.RotatePagesClockwiseCommand.Execute(new int[] { 0, 1 });
 
 ### RotatePagesCounterclockwiseCommand
 
-We can rotate the pages 90 degrees with respect to the current rotation angle in a counterclockwise direction. It is achieved by giving the array of indexes of the page number passed as command parameters to the RotatePagesCounterclockwiseCommand
+We can rotate the pages only 90 degrees with respect to the current rotation angle in a counterclockwise direction.
 
 The following C# code shows how to rotate the pages in a counterclockwise direction using the command RotatePagesCounterclockwiseCommand
 
 {% tabs %}
 {% highlight c# %}
 
+<!--The below code rotates teh 1 and 2 page to 90 degree in counter clockwise direction-->
 pdfViewer.PageOrganizer.RotatePagesCounterclockwiseCommand.Execute(new int[] { 0, 1 });
 
 {% endhighlight %}
 {% endtabs %}
-
-N>
-* In the RotatePagesCounterclockwiseCommand, we can't specify the angle to which the page is rotated counterclockwise.
-* In the RotatePagesClockwiseCommand, we can't specify the angle to which the page is rotated clockwise.
 
 ## RemovePagesCommand
 
@@ -175,15 +171,12 @@ The following C# code shows how to remove pages using the [RemovePagesCommand](h
 
 private void Button_Click(object sender, RoutedEventArgs e)
   {
+          // This line removes the 3 rd page in the PDF
           pdfViewer.PageOrganizer.RemovePagesCommand.Execute(new int[] {2});
   }	
 
 {% endhighlight %}
 {% endtabs %}
-
-N>
-* For the page number give the page number as 0-based indexing. i.e. If the page number is 1 the value should be 0.
-* If the given page number exceeds the pdf's page count, nothing will happen.
 
 ## Magnification operations
 
@@ -192,9 +185,9 @@ The PdfViewerControl provides the following set of commands to perform magnifica
 *   [IncreaseZoomCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_IncreaseZoomCommand)
 *   [DecreaseZoomCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DecreaseZoomCommand)
 
-N>  
-* When executing the IncreaseZoomCommand, the 25% of zoom value has been increased from the current zoom percentage.
-* When executing the DecreaseZoomCommand, the 25% of zoom value has been decreased from the current zoom percentage.
+### IncreaseZoomCommand
+
+IncreaseZoomCommand increases the current zoom percentage by 25%.
 
 The following XAML code shows how to bind the IncreaseZoomCommand to a button.
 
@@ -207,6 +200,10 @@ The following XAML code shows how to bind the IncreaseZoomCommand to a button.
 {% endhighlight %}
 {% endtabs %}
 
+### DecreaseZoomCommand
+
+DecreaseZoomCommand decreases the current zoom percentage by 25%.
+
 The following XAML code shows how to bind the DecreaseZoomCommand to a button.
 
 {% tabs %}
@@ -217,7 +214,7 @@ The following XAML code shows how to bind the DecreaseZoomCommand to a button.
 {% endhighlight %}
 {% endtabs %}
 
-## Text Searching
+## Text Search Operations
 
 The below two commands will help perform text searching
 
@@ -380,7 +377,7 @@ The following XAML code shows how to bind the annotation command for underline a
 {% endhighlight %}
 {% endtabs %}
 
-## Undo and Redo Commands
+## Undo/Redo Command
 
 The UndoCommand and RedoCommand provided by Syncfusion enable users to revert or reapply their recent actions on the PDF document
 
