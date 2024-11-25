@@ -32,7 +32,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfTreeGrid exports the data to Excel using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the exported work sheets.
+N> SfTreeGrid exports the data to Excel using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the exported work sheets.
 
 ## Export options
 
@@ -581,7 +581,7 @@ private static void CellExportingHandler(object sender, TreeGridCellExcelExporti
 
 ## Customize exported workbook and worksheet
 
-The tree grid can be exported to Excel using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the workbooks and sheets after exporting.
+The tree grid can be exported to Excel using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating the workbooks and sheets after exporting.
 
 ### Set borders
 
@@ -632,7 +632,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
+You can refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/worksheet-cells-manipulation#data-filtering).
 
 ### Customize the range of cells
 
@@ -662,7 +662,7 @@ You can perform cell level customizations such as row-level styling, formatting 
 In the following code snippet, NumberFormat for `Employee ID` column is changed in the exported sheet after exporting without using the [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_CellsExportingEventHandler).
 
 Reference:
-[https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+[https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-cell-or-range-formatting)
 
 {% tabs %}
 {% highlight c# %}
@@ -683,7 +683,7 @@ workBook.SaveAs("Sample.xlsx");
 In the following code snippet, the background color of the rows in Excel is changed based on the row index using conditional formatting for better performance.
 
 Reference:
-[https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
+[https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-conditional-formatting](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-conditional-formatting)
 
 {% tabs %}
 {% highlight c# %}
