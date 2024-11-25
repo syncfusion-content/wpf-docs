@@ -396,7 +396,7 @@ public class SerializableCustomGridColumn : SerializableGridColumn
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Create a new class named as SerializationControllerExt by overriding [SerializationController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class.
+2. Create a new class named as SerializationControllerExt by overriding [SerializationController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -496,7 +496,7 @@ public class SerializationControllerExt : SerializationController
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-6. During deserialization, you can get the custom column settings from [SerializableGridColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) by overriding [GetGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_GetGridColumn_Syncfusion_UI_Xaml_Grid_SerializableGridColumn_) virtual method.
+6. During deserialization, you can get the custom column settings from [SerializableGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) by overriding [GetGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_GetGridColumn_Syncfusion_UI_Xaml_Grid_SerializableGridColumn_) virtual method.
  
 {% capture codesnippet6 %}
 {% tabs %}
