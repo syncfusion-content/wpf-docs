@@ -17,15 +17,16 @@ Value of `IntegerTextBox` can be formatted in following ways:
 
 ## Culture based formatting
 
-The [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` property is used to format the number group size and group separator of the `IntegerTextBox` value based on the respective culture.
+The [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` property is used to format the number group size and group separator of the `IntegerTextBox` value based on the respective culture.
 
-{%tabs%}
-{% highlight xaml %} 
+{% tabs %}
+{% highlight xaml %}
 
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150" Culture="bs-Latn" Value="1234567"/>
 
 {% endhighlight %}
-{% highlight C# %} 
+
+{% highlight C# %}
 
 IntegerTextBox integerTextBox = new IntegerTextBox();
 integerTextBox.Width = 150;
@@ -36,7 +37,7 @@ integerTextBox.Value = 1234567;
 integerTextBox.Culture = new System.Globalization.CultureInfo("bs-Latn");
 
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
 By default the US culture uses “,” as the `NumberGroupSeparator` where as the Latin culture uses “.” as the `NumberGroupSeparator`. 
 
