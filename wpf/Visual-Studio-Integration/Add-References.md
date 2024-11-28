@@ -9,7 +9,7 @@ documentation: ug
 
 # Add Reference for WPF
 
-Syncfusion Reference Manager is the Visual Studio Add-In for WPF platform. It adds the Syncfusion assembly reference to the project, either from the GAC location or from Essential Studio installed location or from NuGet packages. It can also migrate the projects that contain the old versions of the Syncfusion assembly reference to newer or specific versions of the Syncfusion assembly reference. It supports Microsoft Visual Studio 2015 or higher. This Visual Studio extension is included from Essential Studio 2013 Volume 3 release.
+Syncfusion Reference Manager is the Visual Studio Add-In for WPF platform. It adds the Syncfusion assembly reference to the project, either from the GAC location or from Essential Studio® installed location or from NuGet packages. It can also migrate the projects that contain the old versions of the Syncfusion assembly reference to newer or specific versions of the Syncfusion assembly reference. It supports Microsoft Visual Studio 2015 or higher. This Visual Studio extension is included from Essential Studio® 2013 Volume 3 release.
 
 N> This Reference Manager can be applied to a project for Syncfusion assembly versions 10.4.0.71 and later.
 
@@ -22,11 +22,11 @@ To add the Syncfusion assembly references in Visual Studio, follow the steps bel
 2. To open Syncfusion Reference Manager Wizard, follow either one of the options below:
 
    **Option 1:**  
-   Click **Extensions->Syncfusion Menu** and choose **Essential Studio for WPF > Add References…** in **Visual Studio**.
+   Click **Extensions->Syncfusion Menu** and choose **Essential Studio® for WPF > Add References…** in **Visual Studio**.
 
     ![Syncfusion Reference Manager via Syncfusion Menu](Syncfusion-Reference-Manger_images/Syncfusion_Menu_AddReference_2019.png)
 
-   N> In Visual Studio 2017 or lower, click Syncfusion Menu and choose Essential Studio for WPF>Add References….
+   N> In Visual Studio 2017 or lower, click Syncfusion Menu and choose Essential Studio® for WPF>Add References….
 
    ![Syncfusion Reference Manager via Syncfusion Menu](Syncfusion-Reference-Manger_images/Syncfusion_Menu_AddReference.png)
 
@@ -44,7 +44,7 @@ To add the Syncfusion assembly references in Visual Studio, follow the steps bel
 
    ![Platform selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img3.png)
 
-   N> The platform selection option will appear only if Essential Studio for Enterprise Edition with the platforms WPF and Windows Forms has been installed, or if both Essential Studio for WPF and WinForms has been installed.
+   N> The platform selection option will appear only if Essential Studio® for Enterprise Edition with the platforms WPF and Windows Forms has been installed, or if both Essential Studio® for WPF and WinForms has been installed.
 
    **Assembly From:** Choose the assembly location, from where the assembly is added to the project.
 
@@ -78,11 +78,11 @@ To add the Syncfusion assembly references in Visual Studio, follow the steps bel
 
    ![Syncfusion Reference Manager success status in Visual Studio status bar](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img8.png)
 
-6. Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio.
+6. Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio®.
 
    ![Syncfusion license registration required information dialog in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img9.png)
 
-N>  Reference Manager support is provided by Syncfusion for select versions of the.NET Framework that are included (as assemblies) in the Syncfusion Essential Studio installation. If you try to add Syncfusion assemblies to a project and the project framework isn't compatible with the specified Syncfusion version assemblies, a dialogue box shows with the message "**Current build v{version} isn't compatible with this framework v{Framework} Version**".
+N>  Reference Manager support is provided by Syncfusion for select versions of the.NET Framework that are included (as assemblies) in the Syncfusion Essential Studio® installation. If you try to add Syncfusion assemblies to a project and the project framework isn't compatible with the specified Syncfusion version assemblies, a dialogue box shows with the message "**Current build v{version} isn't compatible with this framework v{Framework} Version**".
 
 
 
