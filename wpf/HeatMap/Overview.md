@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of WPF HeatMap (SfHeatMap) Control | Syncfusion
-description: Learn here all about overview of Syncfusion Essential Studio WPF HeatMap (SfHeatMap) control, its elements, and more.
+description: Learn here all about overview of Syncfusion Essential Studio® WPF HeatMap (SfHeatMap) control, its elements, and more.
 platform: wpf
 control: SfHeatMap
 documentation: ug
