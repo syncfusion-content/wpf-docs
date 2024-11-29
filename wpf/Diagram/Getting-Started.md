@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Diagram control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Diagram (SfDiagram) control, its elements and more details.
+title: Getting Started with WPF Diagram control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Diagram (SfDiagram) control, its elements and more details.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -34,10 +34,10 @@ Create new WPF project using Visual Studio. For more [details](https://learn.mic
 To add control manually in XAML, do the following steps:
 
 1. Add the following required assembly reference to the project, Syncfusion.SfDiagram.WPF .
-2. Import Syncfusion WPF schema  http://schemas.syncfusion.com/wpf or SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
+2. Import Syncfusion® WPF schema  http://schemas.syncfusion.com/wpf or SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
 3. Declare SfDiagram control in XAML page.
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your WPF application to use Syncfusion components.
+N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion® license key in your WPF application to use Syncfusion® components.
 
 {% capture codesnippet1 %}
 {% tabs %}

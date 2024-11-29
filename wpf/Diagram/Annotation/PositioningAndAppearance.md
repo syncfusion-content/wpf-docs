@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Positioning and Appearance in WPF Diagram control | Syncfusion
-description: Learn here all about Positioning and Appearance support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Positioning and Appearance in WPF Diagram control | Syncfusion®
+description: Learn here all about Positioning and Appearance support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

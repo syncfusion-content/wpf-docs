@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SymbolGroup appearance in WPF Diagram control | Syncfusion
-description: Learn here all about the appearance of the SymbolGroup in Stencil of the Syncfusion WPF Diagram (SfDiagram) .
+title: SymbolGroup appearance in WPF Diagram control | Syncfusion®
+description: Learn here all about the appearance of the SymbolGroup in Stencil of the Syncfusion® WPF Diagram (SfDiagram) .
 platform: wpf
 control: SfDiagram
 documentation: ug

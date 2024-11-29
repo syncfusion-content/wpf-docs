@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualize graphical object using Swimlanes | Syncfusion
+title: Visualize graphical object using Swimlanes | Syncfusion®
 description: How to select, resize(with and without selection) and swap the lane and how to add the child element into lane?
 platform: wpf
 control: SfDiagram
