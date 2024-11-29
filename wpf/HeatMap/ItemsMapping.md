@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ItemsMapping in WPF HeatMap (SfHeatMap) control | Syncfusion
-description: Learn here about ItemsMapping in Syncfusion Essential Studio® WPF HeatMap (SfHeatMap) control, its elements and more.
+title: ItemsMapping in WPF HeatMap (SfHeatMap) control | Syncfusion®
+description: Learn here about ItemsMapping in Syncfusion® Essential Studio® WPF HeatMap (SfHeatMap) control, its elements and more.
 platform: wpf
 control: SfHeatMap
 documentation: ug
