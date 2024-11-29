@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview of WPF HeatMap (SfHeatMap)
 
-**Essential HeatMap WPF** represents tabular data values as gradient colors instead of numbers. Low and high values are different colors with different gradients.
+**Essential® HeatMap WPF** represents tabular data values as gradient colors instead of numbers. Low and high values are different colors with different gradients.
 
 ![Overview_Image](Images/Overview_img1.jpeg)
 
