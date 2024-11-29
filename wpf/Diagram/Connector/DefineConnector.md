@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector in WPF Diagram control | Syncfusion
-description: Learn here all about Connector support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
+title: Connector in WPF Diagram control | Syncfusion®
+description: Learn here all about Connector support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

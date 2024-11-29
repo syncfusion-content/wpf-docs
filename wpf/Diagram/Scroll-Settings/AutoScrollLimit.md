@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Auto-Scroll Limit in WPF Diagram control | Syncfusion
-description: Learn here all about Auto-Scroll Limit support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Auto-Scroll Limit in WPF Diagram control | Syncfusion®
+description: Learn here all about Auto-Scroll Limit support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

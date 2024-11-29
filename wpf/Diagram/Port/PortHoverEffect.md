@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Port hovering effect in WPF Diagram control | Syncfusion
-description: Learn here all about Port hovering animation effect support in Syncfusion WPF Diagram (SfDiagram) control ports.
+title: Port hovering effect in WPF Diagram control | Syncfusion®
+description: Learn here all about Port hovering animation effect support in Syncfusion® WPF Diagram (SfDiagram) control ports.
 platform: wpf
 control: SfDiagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Varies interactions of stencil in WPF Diagram control | Syncfusion
-description: Learn here all about varies interaction on stencil in Syncfusion WPF Diagram (SfDiagram) control ports.
+title: Varies interactions of stencil in WPF Diagram control | Syncfusion®
+description: Learn here all about varies interaction on stencil in Syncfusion® WPF Diagram (SfDiagram) control ports.
 platform: wpf
 control: SfDiagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Snapping in WPF Diagram control | Syncfusion
-description: Learn here all about Custom Snapping support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Custom Snapping in WPF Diagram control | Syncfusion®
+description: Learn here all about Custom Snapping support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
