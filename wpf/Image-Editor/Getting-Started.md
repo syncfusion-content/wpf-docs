@@ -111,7 +111,7 @@ You can load the image as stream using the [`Image`](https://help.syncfusion.com
 
 {% endhighlight %}
 
-![ImageEditor](Images/ImageEditor.png)   
+![WPF Image Editor Loading Image](images/wpf-image-editor-loading-image.png)   
 
 ## Theme
 
@@ -121,7 +121,7 @@ You can load the image as stream using the [`Image`](https://help.syncfusion.com
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF ImageEditor](Images/Theme.jpg)   
+  ![Setting theme to WPF Image Editor](images/wpf-image-editor-theme.jpg)   
 
 ## See also
 

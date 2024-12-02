@@ -22,13 +22,13 @@ The NuGet Package Manager UI allows you to search, install, uninstall, and updat
 
 1. Right-click on the WPF application or solution in the Solution Explorer, and choose **Manage NuGet Packages...**
 
-    ![Manage NuGet Packages add-in](Platform_images/manage-nuget.png)
+    ![Manage WPF NuGet Packages add-in](platform_images/wpf-nuget-packages-manage-nuget.png)
 
     As an alternative, after opening the WPF application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
 
 2. The Manage NuGet Packages window will open. Navigate to the Browse tab, then search for the Syncfusion WPF NuGet packages using a term like "**Syncfusion.WPF**" and select the appropriate Syncfusion WPF NuGet package for your development.
 
-    ![WPF NuGet Packages Search](Platform_images/NuGetsearch.png)
+    ![WPF NuGet Packages Search](platform_images/wpf-nuget-packages-search.png)
 
     > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
  
@@ -36,7 +36,7 @@ The NuGet Package Manager UI allows you to search, install, uninstall, and updat
 
 4. By default, the package selected with latest version. You can choose the required version and click the Install button and accept the license terms. The package will be added to your WPF application.
 
-    ![WPF NuGet Packages Install](Platform_images/InstallNuGet.png)
+    ![WPF NuGet Packages Install](platform_images/wpf-nuget-packages-install.png)
 
 5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with  [Syncfusion WPF components](https://www.syncfusion.com/wpf-controls). Also, you can refer to the [Syncfusion WPF help document](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf) for development.
 
@@ -58,7 +58,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 
 3. Examine the Syncfusion WPF project file after the command has completed to ensure that the Syncfusion WPF package was installed. To see the added reference, open the .csproj file.
 
-    ![WPF Package Entry ](Platform_images/packageentry.png)
+    ![WPF NuGet Package Entry ](platform_images/wpf-nuget-packages-packageentry.png)
 
 4. Then run  [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) command to restores all the packages listed in the application file.
 
@@ -72,7 +72,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
 1. To show the Package Manager Console, open your WPF application in Visual Studio and navigate to **Tools -> NuGet Package Manager -> Package Manager Console**.
 
-    ![Package Manager Console ](Platform_images/console.png)
+    ![WPF NuGet Package Manager Console ](platform_images/wpf-nuget-packages-console.png)
 
 2. The **Package Manager Console** will be shown at the bottom of the screen. You can install the Syncfusion WPF NuGet packages by enter the following NuGet installation commands.
 
@@ -98,7 +98,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
     ```Install-Package Syncfusion.SfGrid.WPF -Version 19.3.0.44```
 
-    ![Package Manager Console Output ](Platform_images/ConsoleInstallationOutput.PNG)
+    ![WPF NuGet Package Manager Console Output ](platform_images/wpf-nuget-packages-console-output.PNG)
 
 4. The NuGet package manager console will install the Syncfusion WPF NuGet package as well as the dependencies it has. When the installation is complete, the console will show that your Syncfusion WPF package has been successfully added to the application.
 
