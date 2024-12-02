@@ -456,7 +456,7 @@ Below screenshot shows the customized header template loaded on the header of Or
 
 #### Data Annotations with AutoGenerateColumns
 
-WPF DataGrid (SfDataGrid) support to generate the columns based on built-in [Data Annotation Attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc490428(v=vs.95)). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
+WPF DataGrid (SfDataGrid) support to generate the columns based on built-in [Data Annotation Attributes](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc490428(v=vs.95)). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
 
 ##### Exclude column
 
@@ -928,7 +928,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endhighlight %}
 {% endtabs %}
 
-![Frezzing Columns in WPF DataGrid](columns_images/wpf-datagrid-freezing.png)
+![Frezzing Columns in WPF DataGrid](columns_images/wpf-datagrid-freezing-column.png)
 
 ### Limitations
 
