@@ -31,7 +31,7 @@ This event is triggered when a menu item is clicked,this event enables users to 
 ContextMenuItemClickedEventArgs</td></tr>
 </table>
 
-## How to customize the contextMenu before opening
+## How to customize the contextMenu items before opening.
 The `ContextMenuOpening` Event allows users to customize and manage context menus dynamically based on the source type where the context menu is triggered. This event provides the flexibility to modify, add, or suppress menu items based on the specific operation.
 
 {% tabs %}
@@ -45,7 +45,7 @@ pdfViewer.ContextMenuOpening += PdfViewer_ContextMenuOpening;
 
 Using the `ContextMenuOpeningEventArgs`, you can add,remove or hide context menu items.
 Please refer to the following example for more details.
-### Add the context menu item
+### Add the context menu item.
 
 {% tabs %}
 {% highlight c# %}
@@ -72,7 +72,7 @@ Please refer to the following example for more details.
 {% endhighlight %}
 {% endtabs %}
 
-### Remove the context menu item
+### Remove the context menu item.
 
 {% tabs %}
 {% highlight c# %}
@@ -115,7 +115,7 @@ Please refer to the following example for more details.
 {% endhighlight %}
 {% endtabs %}
 
-### Hide the context menu item
+### Hide the context menu item.
 
 {% tabs %}
 {% highlight c# %}
@@ -160,7 +160,7 @@ private void PdfViewer_ContextMenuItemClickedEvent(object sender, ContextMenuIte
 {% endhighlight %}
 {% endtabs %}
 
-## How to retrieve the clicked menu items and its source type.
+## How to retrieve the clicked menu item content and its source type.
 
 You can acquire the details of the context menu item, which is clicked in the PDF file using the`ContextMenuItemClickedEventArgs`in the`ContextMenuItemClickedEvent`event. 
 Please refer to the following example for more details.
