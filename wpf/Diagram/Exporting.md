@@ -265,6 +265,30 @@ diagram.Export();
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Exporting)
 
+## How to change the export resolution
+
+SfDiagram provides support to change export resolution in the application level. To change Export resolution using following properties. 
+
+* DpiX- Specifies the horizontal resolution in which the diagram is exported. The default value is 96.
+* DpiY- Specifies the vertical resolution in which the diagram is exported. The default value is 96.
+
+The following code example illustrate how to change export resolution.
+{% tabs %}
+{% highlight C# %}
+
+//Initialize the export settings
+ExportSettings settings = new ExportSettings()
+{  
+  ExportType = ExportType.PNG, DpiX = 300, DpiY = 300 
+}; 
+
+diagram.ExportSettings = settings;         
+//Method to export the SfDiagram
+diagram.Export();
+
+{% endhighlight %}
+{% endtabs %}
+
 ## See Also
  
 [How to export the Diagram as PDF?](https://support.syncfusion.com/kb/article/7520/how-to-export-the-diagram-as-a-pdf-in-the-wpf-diagram-sfdiagram)
