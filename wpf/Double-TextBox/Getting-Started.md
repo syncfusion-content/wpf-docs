@@ -25,7 +25,7 @@ You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/doubl
 
 * Syncfusion.Shared.WPF
 
-![Dragging WPF DoubleTextBox Control from Toolbox to Designer](Getting-Started_images/wpf-double-textbox-toolbox.png)
+![Dragging WPF DoubleTextBox Control from Toolbox to Designer](getting-started_images/wpf-double-textbox-toolbox.png)
 
 ## Adding WPF DoubleTextBox via XAML
 
@@ -99,7 +99,7 @@ this.Content = doubleTextBox;
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![WPF DoubleTextBox Control](Getting-Started_images/wpf-double-textbox-control.png)
+![WPF DoubleTextBox Control](getting-started_images/wpf-double-textbox-control.png)
 
 ## Setting Value
 
@@ -167,7 +167,7 @@ class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox displays Binding Value](Getting-Started_images/wpf-double-textbox-binding-value.png)
+![WPF DoubleTextBox displays Binding Value](getting-started_images/wpf-double-textbox-binding-value.png)
 
 ## Value Changed Notification
 
@@ -252,7 +252,7 @@ doubleTextBox.ScrollInterval = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox displays Incrementing Interval Value](Getting-Started_images/wpf-double-textbox-step-interval.png)
+![WPF DoubleTextBox displays Incrementing Interval Value](getting-started_images/wpf-double-textbox-step-interval.png)
 
 ## Formatting the value
 
@@ -280,7 +280,7 @@ doubleTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox with Formatting](Getting-Started_images/wpf-double-textbox-formatting.png)
+![WPF DoubleTextBox with Formatting](getting-started_images/wpf-double-textbox-formatting.png)
 
 ## Setting the Culture
 
@@ -303,7 +303,7 @@ doubleTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 {% endhighlight %}
 {%endtabs%}
 
-![WPF DoubleTextBox with Culture](Getting-Started_images/wpf-double-textbox-culture.png)
+![WPF DoubleTextBox with Culture](getting-started_images/wpf-double-textbox-culture.png)
 
 N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
 
@@ -315,4 +315,4 @@ DoubleTextBox supports various built-in themes. Refer to the below links to appl
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Applying Theme to WPF DoubleTextBox](Getting-Started_images/wpf-double-textbox-theme.png)
+  ![Applying Theme to WPF DoubleTextBox](getting-started_images/wpf-double-textbox-theme.png)
