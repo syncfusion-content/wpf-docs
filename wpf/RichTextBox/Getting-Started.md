@@ -30,7 +30,7 @@ The following assembly references are required to deploy SfRichTextBoxAdv contro
 
 * For 4.5 and higher Frameworks – Syncfusion.DocIO.Base
 
-N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to add "Syncfusion.Licensing" assembly reference and include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your WPF application to use our components.
+N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion&reg; assemblies from trial setup or from the NuGet feed, you also have to add "Syncfusion.Licensing" assembly reference and include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion&reg; license key in your WPF application to use our components.
 
 ## Adding SfRichTextBoxAdv to an application
 
@@ -169,7 +169,7 @@ The following assembly reference are additionally required to deploy SfRichTextR
 
 1. Create new WPF application in Visual Studio
 
-2. Use the Syncfusion RibbonWindow instead of Window
+2. Use the Syncfusion&reg; RibbonWindow instead of Window
 
 ![WPF RibbonWindow](Getting-Started_images/wpf-ribbonwindow.jpeg)
 

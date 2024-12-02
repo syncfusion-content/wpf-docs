@@ -9,7 +9,7 @@ keywords: embedded-image-html
 
 # Export the inserted image as an Embedded image in HTML in the WPF SfRichTextBoxAdv
 
-This page explains how to export the inserted image as an Embedded image in HTML in Syncfusion WPF SfRichTextBoxAdv.
+This page explains how to export the inserted image as an Embedded image in HTML in Syncfusion&reg; WPF SfRichTextBoxAdv.
 
 In the SfRichTextBoxAdv control, we offer an option to specify HTML export settings. By utilizing the [ImageNodeVisitedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.RichTextBoxAdv.ImageNodeVisitedEventArgs.html) event of the [HtmlImportExportSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.RichTextBoxAdv.HtmlImportExportSettings.html) instance, you can both retrieve and define the image stream and image source. When setting the image source as Empty, the inserted picture can be exported as an embedded image in the HTML.
 
