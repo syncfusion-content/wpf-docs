@@ -1,5 +1,5 @@
 ---
-title: Export the inserted image as an Embedded image in HTML in WPF SfRichTextBoxAdv | Syncfusion
+title: Export image as Embedded in HTML in WPF SfRichTextBoxAdv | Syncfusion
 description: Learn here all about how to export the inserted image as an Embedded image in HTML in Syncfusion WPF SfRichTextBoxAdv and more.
 platform: wpf
 control: SfRichTextBoxAdv
@@ -7,7 +7,7 @@ documentation: ug
 keywords: embedded-image-html
 ---
 
-# Export the inserted image as an Embedded image in HTML in the WPF SfRichTextBoxAdv
+# Export Image as Embedded in HTML in WPF SfRichTextBoxAdv
 
 This page explains how to export the inserted image as an Embedded image in HTML in Syncfusion&reg; WPF SfRichTextBoxAdv.
 
