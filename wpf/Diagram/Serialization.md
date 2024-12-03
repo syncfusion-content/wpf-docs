@@ -179,6 +179,66 @@ using (Stream myStream = dialog.OpenFile())
 {% endhighlight %}
 {% endtabs %}
 
+## Save Diagram as Mermaid Text
+
+In addition to saving the diagram as a XAML file or a memory stream, you can also save the diagram in the Mermaid text format. This format allows you to convert your diagram into a syntax that can be easily shared and visualized using tools that support Mermaid diagrams. The following example demonstrates how to save a diagram in Mermaid text format:
+
+{% tabs %}
+{% highlight C# %}
+
+// Initialize a layout for diagram
+Diagram.LayoutManager = new LayoutManager()
+{
+    Layout = new FlowchartLayout()
+    {
+        Orientation = FlowchartOrientation.TopToBottom,
+        YesBranchValues = new List<string> { "Yes", "True", "Y", "s" },
+        YesBranchDirection = BranchDirection.LeftInFlow,
+        NoBranchValues = new List<string> { "No", "N", "False", "no" },
+        NoBranchDirection = BranchDirection.RightInFlow,
+        HorizontalSpacing = 60,
+        VerticalSpacing = 40,
+    },
+};
+
+// Convert the diagram layout to a Mermaid string format.
+string mermaidData = Diagram.SaveDiagramAsMermaid();
+
+{% endhighlight %}
+{% endtabs %}
+
+## Load Diagram from Mermaid Text
+
+To create a diagram layout based on the Mermaid syntax. Use the following code example:
+
+{% tabs %}
+{% highlight C# %}
+
+// Initialize a layout for diagram
+Diagram.LayoutManager = new LayoutManager()
+{
+    Layout = new FlowchartLayout()
+    {
+        Orientation = FlowchartOrientation.TopToBottom,
+        YesBranchValues = new List<string> { "Yes", "True", "Y", "s" },
+        YesBranchDirection = BranchDirection.LeftInFlow,
+        NoBranchValues = new List<string> { "No", "N", "False", "no" },
+        NoBranchDirection = BranchDirection.RightInFlow,
+        HorizontalSpacing = 60,
+        VerticalSpacing = 40,
+    },
+};
+
+// Load the diagram using Mermaid text.
+Diagram.LoadDiagramFromMermaid(mermaidData);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> When working with Mermaid text, ensure that the syntax is correct and adheres to the expectations of the diagramming logic to ensure successful loading and rendering of the diagram.
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Serialization/MermaidTextToDiagramLayout)
+
 ## See Also
 
 [How to serialize the Content and ContentTemplate properties of a Node?](https://support.syncfusion.com/kb/article/11574/how-to-serialize-content-and-contenttemplate-properties-of-a-node-in-wpf-diagramsfdiagram)
