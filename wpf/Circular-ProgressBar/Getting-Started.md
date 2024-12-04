@@ -31,7 +31,7 @@ To add control manually in XAML, follow the given steps:
 
 1. Add the following required assembly references to the project:
     * Syncfusion.SfProgressBar.WPF     
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** the in XAML page.
+2. Import Syncfusion&reg; WPF schema **http://schemas.syncfusion.com/wpf** the in XAML page.
 3. Declare the SfCircularProgressBar control in the XAML page.
 
 {% capture codesnippet1 %}
