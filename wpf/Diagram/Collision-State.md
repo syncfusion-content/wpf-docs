@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion® Diagram provides support to find overlapping of objects.
+title: Syncfusion Diagram provides support to find overlapping of objects.
 description: How to find overlapping of diagramming objects during runtime and changing their position when objects are getting overlap with each other?
 platform: wpf
 control: SfDiagram
