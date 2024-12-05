@@ -244,6 +244,23 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 
 ![WPF Scheduler month view Leading and Trailing Days Visibility](Month-View_Images/wpf-scheduler-leading-and-trailing-days-visibility.png)
 
+## Customizing the Number of Visible Weeks
+The number of week visible in the month view can be changed by setting the NumberOfVisibleWeeks property in the MonthView.The default value is 6, and the valid range is from 1 to 6.
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" 
+                     ViewType="Month">
+    <syncfusion:SfScheduler.MonthViewSettings>
+        <syncfusion:MonthViewSetting NumberOfVisibleWeeks="3"/>
+    </syncfusion:SfScheduler.MonthViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+this.Schedule.ViewType = SchedulerViewType.Month;
+this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
+{% endhighlight %}
+{% endtabs %}
+
 ## Blackout dates
 Disable the interaction for certain dates in the scheduler month view by adding those specific dates to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html?tabs=tabid-1#Syncfusion_UI_Xaml_Scheduler_SfScheduler_BlackoutDates) collection property of the `SfScheduler.` Using this, allocate or restrict specific dates for the predefined events.
 

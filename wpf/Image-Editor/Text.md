@@ -27,6 +27,7 @@ The following properties of the added text can be customized:
 * Font color
 * Alignment (center, left, and right)
 * Text effects (bold, italic, and underline)
+* Background 
 
 Upon selecting the Text icon in the toolbar, a sub toolbar will be generated below the main toolbar for providing the text customizing options. 
 
@@ -52,6 +53,9 @@ You can make the text bold, italic, or underline by clicking the corresponding i
 
 Text can be aligned to the left, center, or right by clicking the corresponding icon. By default, text will be aligned at the left.
 
+### Background
+
+The Background of the Text color can be customized.
 
 ## Adding text programmatically
 
@@ -79,9 +83,11 @@ Using the following properties in TextSettings, text can be customized.
 * [`Color`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Color) - Modifies the font color of the text.
 * [`TextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_TextAlignment) - Text alignment such as left, top, and center can be applied.
 * [`TextEffects`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_TextEffects) - Text effects such as bold, italic, and underline can be applied.
+* [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html) -  Specifies the background color of the text annotation. The default value is Brush.Transparent.
 * [`Opacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Opacity) - Modifies the opacity of the text.
 * [`Angle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Angle) - Rotates the text to the specified angle.
 * [`Bounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Bounds) - Rect used to position the text. 
+
 
 >N Values of bounds will be in percentage. For example (25, 25, 25, 25) will take the position of 25 percent from the left and top.
 
@@ -94,6 +100,7 @@ Using the following properties in TextSettings, text can be customized.
             textSettings.FontSize = 30;
             textSettings.Color = new SolidColorBrush(Colors.Red);
             textSettings.TextEffects = TextEffects.Bold | TextEffects.Italic;
+            textSettings.Background = new SolidColorBrush(Colors.White);
             textSettings.Bounds = new Rect(50, 10, 50, 15);
             editor.AddText("Good morning", textSettings);
 
@@ -102,6 +109,7 @@ Using the following properties in TextSettings, text can be customized.
             textSettings.FontSize = 22;
             textSettings.Color = new SolidColorBrush(Colors.DarkGreen);
             textSettings.TextEffects =  TextEffects.Italic;
+            textSettings.Background = new SolidColorBrush(Colors.Yellow);
             textSettings.Bounds = new Rect(50, 23, 30, 15);
             textSettings.TextAlignment = TextAlignment.Center;
             editor.AddText("The happiness of your \nlife depend upon the \nquality of your thoughts.", textSettings);

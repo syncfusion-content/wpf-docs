@@ -128,6 +128,91 @@ The Maps control provides the support for defining the custom markers using the 
 
 ![Custom Marker Image](Marker_images/Marker_CustomMarkerImg.png)
 
+## Customizing Marker Templates Using DataTemplateSelector
+A DataTemplateSelector can be used to dynamically customize marker appearances.This allows you to apply different templates based on specific conditions or data-bound properties using DataTemplateSelector in MarkerTemplateSelector property.
+
+{% tabs %}
+
+{% highlight xaml %}
+    <Window.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="AsiaMarkerTemplate"> 
+              <Grid> 
+                <Canvas> 
+                <Ellipse Width="15" Height="15" Fill="Red"/> 
+                 <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" FontSize="10" FontFamily="Segoe UI" Text="{Binding Label}"/> 
+                </Canvas> 
+              </Grid>    
+            </DataTemplate> 
+            <DataTemplate x:Key="SouthAmericaMarkerTemplate"> 
+             <Grid> 
+              <Canvas> 
+               <Ellipse Width="15" Height="15" Fill="Blue"/> 
+                 <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" FontSize="10" FontFamily="Segoe UI" Text="{Binding Label}"/> 
+             </Canvas> 
+            </Grid> 
+           </DataTemplate>              
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <syncfusion:SfMap>  
+          <syncfusion:SfMap.Layers>  
+                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp"   
+                                           MarkerTemplateSelector="{StaticResource customMarkerTemplateSelector}" 
+                                           Markers="{Binding Models}"/>                          
+         </syncfusion:SfMap.Layers>     
+        </syncfusion:SfMap>   
+    </Grid>
+{% endhighlight %}
+
+{% highlight c# %}
+
+ public class CustomMarkerTemplateSelector : DataTemplateSelector 
+ { 
+    public DataTemplate AsiaMarkerTemplate { get; set; } 
+
+    public DataTemplate SouthAmericaMarkerTemplate { get; set; } 
+
+    public override DataTemplate SelectTemplate(object item, DependencyObject container) 
+    { 
+      if (item is CustomDataSymbol customDataSymbol && customDataSymbol.Data != null) 
+     {  
+            var value = customDataSymbol.Data as Marker; 
+
+            if (value.Label == "India" || value.Label == "China") 
+             { 
+                return AsiaMarkerTemplate; 
+             } 
+
+             return SouthAmericaMarkerTemplate; 
+       } 
+
+       return base.SelectTemplate(item, container); 
+   } 
+ }
+
+    public class ViewModel
+    {
+        public ObservableCollection<Model> Models { get; set; }
+        public ViewModel()
+        {
+            this.Models = new ObservableCollection<Model>();
+            this.Models.Add(new Model() { Label = "India", Latitude = "21.0000N", Longitude = "78.0000E" });
+            this.Models.Add(new Model() { Label = "China", Latitude = "35.0000N", Longitude = "103.0000E" });
+            this.Models.Add(new Model() { Label = "Brazil", Latitude = "15.7833S", Longitude = "47.8667W" });
+        }
+    }
+
+    public class Model
+    {
+        public string Label { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+    }
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Customizing marker icons
 
 The size and color of marker icons can be customized using the [`MarkerIconSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerIconSize) and [`MarkerIconFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerIconFill) properties.
