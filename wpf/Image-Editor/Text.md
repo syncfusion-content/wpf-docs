@@ -88,7 +88,6 @@ Using the following properties in TextSettings, text can be customized.
 * [`Angle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Angle) - Rotates the text to the specified angle.
 * [`Bounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Bounds) - Rect used to position the text. 
 
-
 >N Values of bounds will be in percentage. For example (25, 25, 25, 25) will take the position of 25 percent from the left and top.
 
 {% tabs %} 

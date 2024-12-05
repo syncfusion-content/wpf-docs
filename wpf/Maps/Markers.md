@@ -129,6 +129,7 @@ The Maps control provides the support for defining the custom markers using the 
 ![Custom Marker Image](Marker_images/Marker_CustomMarkerImg.png)
 
 ## Customizing Marker Templates Using DataTemplateSelector
+
 A DataTemplateSelector can be used to dynamically customize marker appearances.This allows you to apply different templates based on specific conditions or data-bound properties using DataTemplateSelector in MarkerTemplateSelector property.
 
 {% tabs %}
