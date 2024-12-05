@@ -54,19 +54,19 @@ You can enhance the existing default context menu by adding new menu items to it
       if (e.Source == "Annotation")
       {
 	      e.MenuItems.Insert(0,(new ContextMenuItem { Content = "Lock Annotation" }));
-          e.MenuItems.Add(new ContextMenuItem { Content = "Custom Annotation Item" });
+          e.MenuItems.Add(new ContextMenuItem { Content = "New menu Item" });
       }
       if (e.Source == "Redaction")
       {
-          e.MenuItems.Add(new ContextMenuItem { Content = "Custom Redaction Item" });
+          e.MenuItems.Add(new ContextMenuItem { Content = "New menu Item" });
       }
       if (e.Source == "Text Selection")
       {
-          e.MenuItems.Add(new ContextMenuItem { Content = "Custom TextSelection Item" });
+          e.MenuItems.Add(new ContextMenuItem { Content = "New menu Item" });
       }
       if(e.Source == "Signature Field")
       {
-          e.MenuItems.Add(new ContextMenuItem { Content = "Custom SignatureField Item" });
+          e.MenuItems.Add(new ContextMenuItem { Content = "New menu Item" });
       }
   }
 
