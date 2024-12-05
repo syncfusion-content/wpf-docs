@@ -66,7 +66,7 @@ You can add text to an image using the AddText method programmatically. This met
 
 {% tabs %} 
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 editor.AddText("Hello", new TextSettings());
 
@@ -92,7 +92,7 @@ Using the following properties in TextSettings, text can be customized.
 
 {% tabs %} 
 
-{% highlight C# %} 
+{% highlight c# %} 
 
             TextSettings textSettings = new TextSettings();
             textSettings.FontFamily = new FontFamily("Century Schoolbook");
