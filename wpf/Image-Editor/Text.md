@@ -55,7 +55,7 @@ Text can be aligned to the left, center, or right by clicking the corresponding 
 
 ### Background
 
-The Background of the Text color can be customized.
+You can customize the text background color by clicking the fill icon, selecting color from the color picker, and applying it as the background.
 
 ## Adding text programmatically
 
@@ -83,7 +83,7 @@ Using the following properties in TextSettings, text can be customized.
 * [`Color`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Color) - Modifies the font color of the text.
 * [`TextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_TextAlignment) - Text alignment such as left, top, and center can be applied.
 * [`TextEffects`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_TextEffects) - Text effects such as bold, italic, and underline can be applied.
-* [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html) -  Specifies the background color of the text annotation. The default value is Brush.Transparent.
+* Background -  Specifies the background color of the text annotation. The default value is Brush.Transparent.
 * [`Opacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Opacity) - Modifies the opacity of the text.
 * [`Angle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Angle) - Rotates the text to the specified angle.
 * [`Bounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Bounds) - Rect used to position the text. 

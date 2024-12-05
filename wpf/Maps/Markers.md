@@ -137,7 +137,11 @@ A DataTemplateSelector can be used to dynamically customize marker appearances.T
 {% highlight xaml %}
     <Window.Resources>
         <ResourceDictionary>
-            <DataTemplate x:Key="AsiaMarkerTemplate"> 
+           
+            <local:CustomMarkerTemplateSelector x:Key="customMarkerTemplateSelector"
+                                                AsiaMarkerTemplate="{StaticResource asiaMarkerTemplate}"
+                                                SouthAmericaMarkerTemplate="{StaticResource southAmericaMarkerTemplate}"/>
+            <DataTemplate x:Key="asiaMarkerTemplate"> 
               <Grid> 
                 <Canvas> 
                 <Ellipse Width="15" Height="15" Fill="Red"/> 
@@ -145,7 +149,7 @@ A DataTemplateSelector can be used to dynamically customize marker appearances.T
                 </Canvas> 
               </Grid>    
             </DataTemplate> 
-            <DataTemplate x:Key="SouthAmericaMarkerTemplate"> 
+            <DataTemplate x:Key="southAmericaMarkerTemplate"> 
              <Grid> 
               <Canvas> 
                <Ellipse Width="15" Height="15" Fill="Blue"/> 
@@ -164,6 +168,7 @@ A DataTemplateSelector can be used to dynamically customize marker appearances.T
          </syncfusion:SfMap.Layers>     
         </syncfusion:SfMap>   
     </Grid>
+
 {% endhighlight %}
 
 {% highlight c# %}
