@@ -105,7 +105,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {%  endtabs %}
 
-![Create Annotation](Annotation_images/Create_Annotation.jpg)
+![Create Annotation](Annotation_images/wpf-diagram-annotation.jpg)
 
 ## Multiple Annotations
 
@@ -146,7 +146,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple Annotations](Annotation_images/annotation_img21.png) &ensp;&ensp;&ensp;&ensp;&ensp; ![Multiple Annotations](Annotation_images/MultipleAnnotationConnector.png)
+![Multiple Annotations](Annotation_images/wpf-diagram-multiple-annotations.PNG) &ensp;&ensp;&ensp;&ensp;&ensp; ![Multiple Annotations](Annotation_images/wpf-diagram-multiple-annotation-connector.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations/MultipleAnnotation).
 
