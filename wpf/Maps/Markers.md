@@ -130,18 +130,14 @@ The Maps control provides the support for defining the custom markers using the 
 
 ## Customizing Marker Templates Using DataTemplateSelector
 
-A DataTemplateSelector can be used to dynamically customize marker appearances.This allows you to apply different templates based on specific conditions or data-bound properties using DataTemplateSelector in MarkerTemplateSelector property.
+A DataTemplateSelector can be used to dynamically customize marker appearances. This allows you to apply different templates based on specific conditions or data-bound properties using DataTemplateSelector in MarkerTemplateSelector property.
 
 {% tabs %}
 
 {% highlight xaml %}
     <Window.Resources>
         <ResourceDictionary>
-           
-            <local:CustomMarkerTemplateSelector x:Key="customMarkerTemplateSelector"
-                                                AsiaMarkerTemplate="{StaticResource asiaMarkerTemplate}"
-                                                SouthAmericaMarkerTemplate="{StaticResource southAmericaMarkerTemplate}"/>
-            <DataTemplate x:Key="asiaMarkerTemplate"> 
+            <DataTemplate x:Key="AsiaRegionMarkerTemplate"> 
               <Grid> 
                 <Canvas> 
                 <Ellipse Width="15" Height="15" Fill="Red"/> 
@@ -149,14 +145,17 @@ A DataTemplateSelector can be used to dynamically customize marker appearances.T
                 </Canvas> 
               </Grid>    
             </DataTemplate> 
-            <DataTemplate x:Key="southAmericaMarkerTemplate"> 
+            <DataTemplate x:Key="SouthAmericaRegionMarkerTemplate"> 
              <Grid> 
               <Canvas> 
                <Ellipse Width="15" Height="15" Fill="Blue"/> 
                  <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" FontSize="10" FontFamily="Segoe UI" Text="{Binding Label}"/> 
              </Canvas> 
             </Grid> 
-           </DataTemplate>              
+           </DataTemplate>  
+             <local:CustomMarkerTemplateSelector x:Key="customMarkerTemplateSelector"
+               AsiaMarkerTemplate="{StaticResource AsiaRegionMarkerTemplate}"
+               SouthAmericaMarkerTemplate="{StaticResource SouthAmericaRegionMarkerTemplate}"/>            
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
