@@ -305,7 +305,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
  {% highlight XAML %}
 
- <Window x:Class="TemplateSelector_ButtonAdv.MainWindow"
+    <Window x:Class="TemplateSelector_ButtonAdv.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
