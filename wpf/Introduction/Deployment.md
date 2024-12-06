@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deployment| | Wpf | Syncfusion®
-description: Learn here all about Deployment of Syncfusion® Essential Studio® WPF Controls, its elements, features and more.
+title: Deployment| | Wpf | Syncfusion
+description: Learn here all about Deployment of Syncfusion Essential Studio WPF Controls, its elements, features and more.
 platform: wpf
 control: Introduction
 documentation: ug
 ---
 
-# Deployment of Essential Studio® WPF
+# Deployment of Essential Studio WPF
 
 ## Control Dependencies
 
@@ -430,7 +430,7 @@ Syncfusion.Grid.WPFSyncfusion.GridCommon.WPFSyncfusion.Shared.WPFSyncfusion.Pivo
 
 ## ClickOnce Deployment
 
-While processing [ClickOnce](https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/ms996413(v=msdn.10)) deployment for publishing an applications with Syncfusion® WPF component, change the Publish Status option of the Syncfusion® Assemblies as “Include”.
+While processing [ClickOnce](https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/ms996413(v=msdn.10)) deployment for publishing an applications with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
 
 ![Deployment_images1](Deployment_images/Deployment_img1.png)
 

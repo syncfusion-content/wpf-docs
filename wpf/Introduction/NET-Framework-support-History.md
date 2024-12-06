@@ -1,7 +1,7 @@
 ---
 layout: post
-title: NET Framework support History| Introduction | Wpf | Syncfusion®
-description: Learn here all about .NET Framework support History of Syncfusion® Essential Studio® WPF, its elements and more.
+title: NET Framework support History| Introduction | Wpf | Syncfusion
+description: Learn here all about .NET Framework support History of Syncfusion Essential Studio WPF, its elements and more.
 platform: wpf
 control: Introduction
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 ## Version Compatibility
 
-The table represents the .NET Framework versions vs Syncfusion® version.
+The table represents the .NET Framework versions vs Syncfusion version.
 
-### .NET Framework versions vs Syncfusion® version
+### .NET Framework versions vs Syncfusion version
 
 <table>
 <tr>
@@ -49,7 +49,7 @@ Yes</td></tr>
 
 ## Control compatibility 
 
-Syncfusion® WPF controls are always updated with the Microsoft latest Framework. The following table contains information about controls compatibility with earlier version of .NET Framework
+Syncfusion WPF controls are always updated with the Microsoft latest Framework. The following table contains information about controls compatibility with earlier version of .NET Framework
 
 ### List of controls compatibility with earlier version of .NET Framework
 

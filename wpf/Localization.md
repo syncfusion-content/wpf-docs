@@ -17,7 +17,7 @@ When you change the application culture, you can localize the application based 
 
 {% tabs %}
 
-{%highlight C#%}
+{% highlight C# %}
 
 public partial class MainWindow
 {

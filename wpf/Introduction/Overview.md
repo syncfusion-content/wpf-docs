@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About Essential Studio® WPF | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Essential Studio® WPF, its elements, features and more.
+title: About Essential Studio WPF | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF, its elements, features and more.
 platform: wpf
 control: Introduction
 documentation: ug
 ---
 
-# Introduction of Essential Studio® WPF
+# Introduction of Essential Studio WPF
 
-Comprehensive toolkit with 100+ unique WPF controls that contains enriched features, built in Performance, Enterprise dashboards, MVVM Compatible, Unique file format libraries. This is a user guide for Essential Studio® for WPF that is also documented along with separate code examples showcasing the usage on different controls.
+Comprehensive toolkit with 100+ unique WPF controls that contains enriched features, built in Performance, Enterprise dashboards, MVVM Compatible, Unique file format libraries. This is a user guide for Essential Studio for WPF that is also documented along with separate code examples showcasing the usage on different controls.
 
 ### List of controls
 

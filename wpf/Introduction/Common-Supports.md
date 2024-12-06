@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Common Supports| Introduction | Wpf | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Essential Studio® WPF Common Supports, its elements and more.
+title: Common Supports| Introduction | Wpf | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Common Supports, its elements and more.
 platform: wpf
 control: Introduction
 documentation: ug
 ---
 
-# Common Supports in Essential Studio® WPF
+# Common Supports in Essential Studio WPF
 
 ## Expression Blend
 
-Most of the Syncfusion® controls are enhanced with blend support. The following steps allow the control to design in Visual Studio Expression Blend.
+Most of the Syncfusion controls are enhanced with blend support. The following steps allow the control to design in Visual Studio Expression Blend.
 
-1. Create a WPF project in Expression Blend and refer to the Syncfusion® corresponding control’s assemblies. For example, to add Docking Manager control, add its assembly Syncfusion.Tools.Wpf and its dependency assembly Syncfusion.Shared.Wpf
+1. Create a WPF project in Expression Blend and refer to the Syncfusion corresponding control’s assemblies. For example, to add Docking Manager control, add its assembly Syncfusion.Tools.Wpf and its dependency assembly Syncfusion.Shared.Wpf
   
    
    ![Common-Supports_images1](Common-Supports_images/Common-Supports_img1.png)
@@ -37,7 +37,7 @@ Most of the Syncfusion® controls are enhanced with blend support. The following
 
 ## Testing
 
-The following Syncfusion® controls come with built in testing support like [Coded UI](https://learn.microsoft.com/en-us/archive/msdn-magazine/2012/march/coded-ui-test-automation-using-visual-studio-2010-coded-ui) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
+The following Syncfusion controls come with built in testing support like [Coded UI](https://learn.microsoft.com/en-us/archive/msdn-magazine/2012/march/coded-ui-test-automation-using-visual-studio-2010-coded-ui) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
 
 ### Coded UI
 
@@ -61,7 +61,7 @@ The following Syncfusion® controls come with built in testing support like [Cod
 
 ## Localization
 
-Localization is the process of making your application multi-lingual, by formatting the content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and location, for example En-US is the culture for English spoken in United States; En-GB is the culture for English spoken in Great Britain. Syncfusion® controls allow you to set custom resource through the Resx file with standard filename as [AssemblyName].[CultureInfo Code].resx, for example Syncfusion.Tools.wpf.fr-FR.resx, Syncfusion.SfSchedule.wpf.fr-FR.resx. And by giving the string values in the resource file for a specific culture and set the culture in the application. The string values should be set to the controls respective resource key.
+Localization is the process of making your application multi-lingual, by formatting the content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and location, for example En-US is the culture for English spoken in United States; En-GB is the culture for English spoken in Great Britain. Syncfusion controls allow you to set custom resource through the Resx file with standard filename as [AssemblyName].[CultureInfo Code].resx, for example Syncfusion.Tools.wpf.fr-FR.resx, Syncfusion.SfSchedule.wpf.fr-FR.resx. And by giving the string values in the resource file for a specific culture and set the culture in the application. The string values should be set to the controls respective resource key.
 
 ### The followings are the step to localize a control:
 
