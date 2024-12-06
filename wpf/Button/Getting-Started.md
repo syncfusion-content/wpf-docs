@@ -341,12 +341,12 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
                      Stretch="Fill" />
             </Grid>
         </DataTemplate>
-        <local:TemplateSelector x:Key="IconTemp" NewIcon="{StaticResource newIcon}" OpenIcon="{StaticResource OpenIcon}"/>
+        <local:Model x:Key="IconTemp" NewIcon="{StaticResource newIcon}" OpenIcon="{StaticResource OpenIcon}"/>
     </Window.Resources>
     <Grid>
         <StackPanel VerticalAlignment="Center">
-            <CheckBox Name="Check" IsChecked="True" Checked="Check_Checked" Unchecked="Check_Unchecked" HorizontalAlignment="Center" Command="{Binding CheckCommand}" Content="ChangeIcon"/>
-            <syncfusion:ButtonAdv HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}"/>
+            <CheckBox Name="Check" IsChecked="{Binding IsChecked}" HorizontalAlignment="Center"  Content="ChangeIcon"/>
+            <syncfusion:ButtonAdv HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}" DataContext="{Binding IsChecked}"/>
         </StackPanel>
     </Grid>
  </Window>
@@ -355,27 +355,45 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
  {% highlight c# %}
 
- public class TemplateSelector : DataTemplateSelector
- {
-    public DataTemplate NewIcon { get; set; }
-    public DataTemplate OpenIcon { get; set; }
-    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    public class Model : DataTemplateSelector,INotifyPropertyChanged
     {
-        if (item == null)
+     public DataTemplate NewIcon { get; set; }
+     public DataTemplate OpenIcon { get; set; }
+     private bool _isChecked;
+     public event PropertyChangedEventHandler PropertyChanged;
+     public bool IsChecked
+     {
+       get => _isChecked;
+       set
+       {
+         if (_isChecked != value)
+         {
+             _isChecked = value;
+             OnPropertyChanged(nameof(IsChecked));
+         }
+       }
+     }
+     protected void OnPropertyChanged(string propertyName) =>
+     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
+     public override DataTemplate SelectTemplate(object item, DependencyObject container)
+     {
+        if (item is bool isChecked)
         {
-            return OpenIcon;
+           return isChecked ? NewIcon : OpenIcon;
         }
-        if ((item as Model).IsChecked)
-        {
-            return NewIcon;
-        }
-        return base.SelectTemplate(item, container);
+      return base.SelectTemplate(item, container);
+     }
     }
- }
 
  {% endhighlight %}
 
  {% endtabs %}
+
+ ![Setting Image](Getting-Started_images/Getting-Started_img13.png)
+
+ ![Setting Image](Getting-Started_images/Getting-Started_img14.png)
+
 
  N> The [ButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html) loads the icon in the following priority order.
 * [IconTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IconTemplateSelector)
