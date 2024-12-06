@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Keyboard Focus Visual | Syncfusion WPF Controls
-description: This article explains how to apply high visibility keyboard visual feedback followed in fluent design for WPF controls and Syncfusion controls.
+title: Getting Started with Keyboard Focus Visual | Syncfusion® WPF Controls
+description: This article explains how to apply high visibility keyboard visual feedback followed in fluent design for WPF controls and Syncfusion® controls.
 platform: wpf
 control: Themes
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Keyboard Focus Visual for WPF Controls
 
-The [WPF Skin Manager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) allows you to apply various keyboard focus visual styles for both Syncfusion and Framework controls using the [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.Theme.html#Syncfusion_SfSkinManager_Theme_FocusVisualKind) property. 
+The [WPF Skin Manager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) allows you to apply various keyboard focus visual styles for both Syncfusion® and Framework controls using the [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.Theme.html#Syncfusion_SfSkinManager_Theme_FocusVisualKind) property. 
 
 The [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FocusVisualKind.html) enum contains the following values:
 
