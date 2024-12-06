@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Common Supports| Introduction | Wpf | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Common Supports, its elements and more.
+title: Common Supports| Introduction | Wpf | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Essential Studio® WPF Common Supports, its elements and more.
 platform: wpf
 control: Introduction
 documentation: ug
 ---
 
-# Common Supports in Essential Studio WPF
+# Common Supports in Essential Studio® WPF
 
 ## Expression Blend
 
-Most of the Syncfusion controls are enhanced with blend support. The following steps allow the control to design in Visual Studio Expression Blend.
+Most of the Syncfusion® controls are enhanced with blend support. The following steps allow the control to design in Visual Studio Expression Blend.
 
-1. Create a WPF project in Expression Blend and refer to the Syncfusion corresponding control’s assemblies. For example, to add Docking Manager control, add its assembly Syncfusion.Tools.Wpf and its dependency assembly Syncfusion.Shared.Wpf
+1. Create a WPF project in Expression Blend and refer to the Syncfusion® corresponding control’s assemblies. For example, to add Docking Manager control, add its assembly Syncfusion.Tools.Wpf and its dependency assembly Syncfusion.Shared.Wpf
   
    
    ![Common-Supports_images1](Common-Supports_images/Common-Supports_img1.png)
@@ -37,7 +37,7 @@ Most of the Syncfusion controls are enhanced with blend support. The following s
 
 ## Testing
 
-The following Syncfusion controls come with built in testing support like [Coded UI](https://learn.microsoft.com/en-us/archive/msdn-magazine/2012/march/coded-ui-test-automation-using-visual-studio-2010-coded-ui) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
+The following Syncfusion® controls come with built in testing support like [Coded UI](https://learn.microsoft.com/en-us/archive/msdn-magazine/2012/march/coded-ui-test-automation-using-visual-studio-2010-coded-ui) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
 
 ### Coded UI
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sample Locations| Introduction | Wpf | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Sample Locations, its elements and more.
+title: Sample Locations| Introduction | Wpf | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Essential Studio® WPF Sample Locations, its elements and more.
 platform: wpf
 control: Introduction
 documentation: ug

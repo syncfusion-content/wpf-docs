@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Essential Studio WPF | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF, its elements, features and more.
+title: About Essential Studio WPF | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Essential Studio® WPF, its elements, features and more.
 platform: wpf
 control: Introduction
 documentation: ug
