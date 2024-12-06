@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotation Dragging | Syncfusion 
+title: Annotation Dragging | Syncfusion® 
 description: how to drag the annotations of nodes and Connectors and how to customize the dragging behaviour of annotations.
 platform: wpf
 control: SfDiagram
