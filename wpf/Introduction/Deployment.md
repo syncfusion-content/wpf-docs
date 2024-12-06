@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Deployment| | Wpf | Syncfusion
-description: Learn here all about Deployment of Syncfusion Essential Studio WPF Controls, its elements, features and more.
+title: Deployment| | Wpf | Syncfusion®
+description: Learn here all about Deployment of Syncfusion® Essential Studio® WPF Controls, its elements, features and more.
 platform: wpf
 control: Introduction
 documentation: ug
