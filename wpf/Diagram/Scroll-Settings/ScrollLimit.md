@@ -37,6 +37,22 @@ diagram.ScrollSettings = new ScrollSettings()
 };
 {% endhighlight %}
 {% endtabs %}
+## Scrolling Diagrams with Arrow Keys
+
+The arrow keys (Left, Right, Up, Down) and navigation keys (Home, End, Page Up, Page Down) on the keyboard provide a convenient way to navigate through the diagram. Depending on the configuration of the `ScrollLimit` property, these keys can be used to scroll the diagram in various ways.
+
+| ShortCut Keys | Description |
+|---|---|
+|Left Arrow Key| The diagram page scrolls to the left.|
+|Right Arrow Key| The diagram page scrolls to the Right.|
+|Up Arrow Key|The diagram page scrolls to the Up.|
+|Down Arrow Key| The diagram page scrolls to the Down.|
+|Home Key|The diagram page jumps to the rightmost position.|
+|End Key|The diagram page jumps to the leeftmost position.|
+|PageUp Key| The diagram page jumps to the topmost position.|
+|PageDown Key|The diagram page jumps to the bottommost position.|
+
+N> When the `ScrollLimit` is Infinity, pressing the Page Up, Page Down, Home or End keys does not result in any navigation on the diagram page.
 
 ## Scrollable area
 
