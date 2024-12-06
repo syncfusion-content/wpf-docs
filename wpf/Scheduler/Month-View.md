@@ -245,12 +245,12 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 ![WPF Scheduler month view Leading and Trailing Days Visibility](Month-View_Images/wpf-scheduler-leading-and-trailing-days-visibility.png)
 
 ## Customizing the Number of Visible Weeks
-The number of week visible in the month view can be changed by setting the NumberOfVisibleWeeks property in the MonthView. The default value is 6, and the valid range is from 1 to 6. Even if leading and trailing days are hidden, they will appear when changing the number of visible weeks, as no additional days exist during this change.
+The number of week visible in the month view can be changed by setting the NumberOfVisibleWeeks property of the MonthViewSettings in SfScheduler. The default value is 6, and the valid range is from 1 to 6. Even if leading and trailing days are hidden, they will appear when changing the number of visible weeks, as no additional days exist during this change.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" 
-                     ViewType="Month">
+                        ViewType="Month">
     <syncfusion:SfScheduler.MonthViewSettings>
         <syncfusion:MonthViewSetting NumberOfVisibleWeeks="3"/>
     </syncfusion:SfScheduler.MonthViewSettings>

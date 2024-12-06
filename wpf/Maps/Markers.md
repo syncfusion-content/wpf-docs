@@ -186,10 +186,10 @@ A DataTemplateSelector can be used to dynamically customize marker appearances. 
 
             if (value.Label == "India" || value.Label == "China") 
              { 
-                return AsiaMarkerTemplate; 
+                return this.AsiaMarkerTemplate; 
              } 
 
-             return SouthAmericaMarkerTemplate; 
+             return this.SouthAmericaMarkerTemplate; 
        } 
 
        return base.SelectTemplate(item, container); 
