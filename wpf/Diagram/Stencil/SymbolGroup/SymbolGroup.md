@@ -11,7 +11,7 @@ documentation: ug
 
 A set of stencil symbols can be combined together to create a group and many numbers of group can be created. This helps you to look overall stencil symbols into split view and it is easy to find specific or particular shape category into stencil. 
 
-## Group symbols into a category
+## SymbolCollection With GroupMappingName in Stencil
 
 The symbols of the same category can be grouped using the [GroupMappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_GroupMappingName) property of the [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) class. The `Stencil` groups the symbols based on the `GroupMappingName` property, which specifies the name of the property whose value will determine the group category. In the following code example, the `GroupMappingName` is set to "Key", so the `Stencil` will create the SymbolGroups based on the value of the Key property.
 
@@ -229,18 +229,58 @@ When there is more number of symbol groups in the stencil, then you can expand a
 |ZeroOrMore| Enables none or more symbol group that can be expanded |![ExpandMode ZeroOrMore](SymbolGroup_images/ExpandModeZeroOrMore.Gif)|
 |ZeroOrOne | Enables none or one symbol group that can be expanded |![ExpandMode ZeroOrMore](SymbolGroup_images/ExpandModeZeroOrOne.Gif)|
 
-## Symbol categories
+## SymbolGroupViewModel in Stencil
 
-There are plenty of shapes available in the diagram resource dictionary. It takes more time and allows repeated code samples to add all symbols to the stencil. To avoid this, the shapes are split and categorized as a list of symbols in the [StencilCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.StencilCategory.html ) class. You can add more than one category using the [`Categories`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Categories) property of the stencil class.
+The [SymbolGroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html) class provides the support to create the view models to the symbol group and provides supports to add symbols to it as Node, Connectors, groups and list of predefined symbols. It includes the following properties:
 
-The `Categories` can be mentioned by using the following properties of the `StencilCategory` class:
+* [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Name): Specifies the display name of the symbol group. It also adds the symbols to the symbol groups defined through the `SymbolSource` property which symbol has same `Key` value as this `Name` property.
+* [Symbols](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Symbols): Specifies the list of symbols need to be added to the symbol group. It can be any diagram elements such as Nodes, Connectors, Groups, Containers, BPMN elements.
+* [CategorySource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_CategorySource): Specifies the list of symbols need to be added to the `SymbolGroupViewModel` using the static resource key value from the predefined category collections.
 
-* Keys: Specifies the static resource key name value of the category collection.
-* Title: Specifies the title that should be displayed as a header of the category collection.
+Additionally, You can dynamically add new symbols to symbol groups or remove existing ones at runtime. Similarly, you can also add or remove entire symbol groups within the stencil as needed.
 
-## Built-in symbol categories 
+### Adding Symbols via Symbols Property in SymbolGroupViewModel
 
-The built-in shape paths available in the diagram resource dictionary are grouped by categories. The following are the built-in categories being available in the diagram resource dictionary:
+To add symbols through the `Symbols` property, you can define a collection of symbols directly within the `SymbolGroupViewModel`, allowing for more customized symbol definitions.
+
+{% highlight xaml %}
+
+<!--Initialize the stencil-->
+<syncfusion:Stencil x:Name="stencil" 
+                    Title="Shapes"
+                    SymbolGroupDisplayMode="Accordion"
+                    SymbolSelectionMode="Multiple"
+                    DisplayMode="Expanded"
+                    GroupMappingName="Key">
+        <syncfusion:Stencil.SymbolGroups>
+            <syncfusion:SymbolGroups>
+                <syncfusion:SymbolGroupViewModel>
+                    <syncfusion:SymbolGroupViewModel.Symbols>
+                        <syncfusion:SymbolCollection>
+                            <syncfusion:NodeViewModel Name="Object" 
+                                                      UnitHeight="50"
+                                                      UnitWidth="50"
+                                                      Shape="{StaticResource Object}"/>
+                            <syncfusion:NodeViewModel Name="User" 
+                                                      UnitHeight="50"
+                                                      UnitWidth="50"
+                                                      Shape="{StaticResource User}"/>
+                        </syncfusion:SymbolCollection>
+                    </syncfusion:SymbolGroupViewModel.Symbols>
+                </syncfusion:SymbolGroupViewModel>
+            </syncfusion:SymbolGroups>
+        </syncfusion:Stencil.SymbolGroups>
+</syncfusion:Stencil>
+
+{% endhighlight %}
+
+![SymbolGroupViewModel](SymbolGroup_images/SymbolGroupViewModel.png)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolGroupViewModel/BasicSymbolGroupViewModel)
+
+### Adding Symbols via CategorySource Property in SymbolGroupViewModel
+
+The `sfDiagram` resource dictionary includes a wide array of shapes organized into categorized lists. These shape paths are grouped into specific categories to simplify the process of adding them to the stencil, avoiding repetitive additions. You can also create custom symbol collections. Below are the built-in categories available in the diagram resource dictionary:
 
 * BasicShapes
 * FlowShapes
@@ -253,147 +293,33 @@ The built-in shape paths available in the diagram resource dictionary are groupe
 * SwimlaneShapes
 * BPMNEditorShapes
 
-{% tabs %}
-{% highlight xaml %}
-<!--Initialize the stencil-->
-<stencil:Stencil x:Name="stencil" 
-                 Title="Shapes" 
-                 TitleTemplate="{StaticResource TitleTemplate}"
-                 ExpandMode="ZeroOrMore" 
-                 BorderBrush="#dfdfdf" 
-                 BorderThickness="1"
-                 GroupMappingKey="Key">
-   <!--Initialize the stencil categories-->
-    <stencil:Stencil.Categories>
-        <stencil:StencilCategoryCollection>
-            <!--Specify the basic shapes category with title and resource key-->
-            <stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
-        </stencil:StencilCategoryCollection>
-    </stencil:Stencil.Categories>
-</stencil:Stencil>
-{% endhighlight %}
-{% endtabs %}
+You can also create custom symbol collections. This additional flexibility allows you to tailor the stencil to your specific needs beyond the built-in options.
 
-![Basic Shapes](SymbolGroup_images/CategoryBasicShapes.png)
-
-## Add the custom shapes categories
-
-The custom symbol collections can be added to the stencil by defining the custom symbol's resource collection.
-
-{% tabs %}
-{% highlight xaml %}
-
-<!--custom path data-->
-<sys:String x:Key="CustomPath">
-    F1M1.66,0.25C0.882,0.25,0.25,0.881,0.25,1.66L0.25,24.622C0.25,25.401,0.882,26.032,1.66,26.032L4.48,26.032C5.259,26.032,5.89,25.401,5.89,24.622L5.89,1.66C5.89,0.881,5.259,0.25,4.48,0.25z
-</sys:String>
-
-<!--custom shapes collection-->
-<x:Array Type="sys:String" x:Key="customShapeCollection">
-    <sys:String>Rectangle</sys:String>
-    <sys:String>Cube</sys:String>
-    <sys:String>Triangle</sys:String>
-    <sys:String>Ellipse</sys:String>
-    <sys:String>CustomPath</sys:String>
-</x:Array>
-
-<!--Template for stencil title-->
-<DataTemplate x:Key="TitleTemplate">
-   <TextBlock x:Name="HeaderText" Text="{Binding}" FontSize="15" FontWeight="SemiBold"  Foreground="#2b579a" >
-   </TextBlock>
-</DataTemplate>
-
-<!--Initialize the stencil-->
-<stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}" ExpandMode="ZeroOrMore"
-BorderBrush="#dfdfdf" BorderThickness="1">
-    <!--Initialize the stencil categories-->
-    <stencil:Stencil.Categories>
-        <stencil:StencilCategoryCollection>
-            <!--Specify the custom shapes category with title and resource key-->
-            <stencil:StencilCategory Title="Custom shapes" Keys="{StaticResource customShapeCollection}"/>
-        </stencil:StencilCategoryCollection>
-    </stencil:Stencil.Categories>
-</Stencil:Stencil>
-{% endhighlight %}
-{% endtabs %}
-
-![Custom Shapes collection](SymbolGroup_images/CustomShapes.png)
-
-N> The custom symbol collections should be added in the App.xaml file.
-
-## Customize the appearance of the symbols in the built-in categories 
-
-The symbol sizes for the built-in symbol categories are equivalent to the Visio symbol size. Each symbol available in the category collection can be customized by the [PrepareSymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_PrepareSymbolViewModel_System_Object_System_String_System_String_) virtual method of the stencil class. Symbols can be modified by using the following properties of the `PrepareSymbolViewModel` method:
-
-* `Item`: To modify the symbol and its properties.
-* `SymbolName`: To know the name of the symbol.
-* `CategoryName`: To know the name of the category.
-
-Also, you can decide whether a symbol can be added to the stencil symbol collection or not. It can be achieved by using the `Cancel` property of [CanAddSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CanAddSymbol_System_String_System_String_), the virtual method of stencil class. 
-
-{% tabs %}
-{% highlight C# %}
-/// <summary>
-/// The custom class for the stencil view model.
-/// </summary>
-public class StencilViewModel : Stencil
-{
-    /// <summary>
-    /// Overridden method to change the symbol.
-    /// </summary>
-    /// <param name="Item">Item value of the shape</param>
-    /// <param name="SymbolName">Name of the symbol</param>
-    /// <param name="CategoryName">Name of the category</param>
-    /// <returns>Return the item of the shape</returns>
-    protected override object PrepareSymbolViewModel(object Item, string SymbolName, string CategoryName)
-    {
-        if (SymbolName == "Rectangle")
-        {
-            (Item as INode).UnitWidth = 80;
-            (Item as INode).UnitHeight = 40;
-            return Item;
-        }
-        else
-            return base.PrepareSymbolViewModel(Item, SymbolName, CategoryName);
-    }
-
-    /// <summary>
-    /// Overidden method to decide whether a symbol can be added or not
-    /// </summary>
-    /// <param name="symbolName">Name of the symbol</param>
-    /// <param name="categoryName">Name of the category</param>
-    /// <returns>Return the boolean</returns>
-    protected override bool CanAddSymbol(string symbolName, string categoryName)
-    {
-        if (symbolName == "Triangle")
-        {
-            return false;            
-        }
-
-        return base.CanAddSymbol(symbolName, categoryName);
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-![Custom Category collection](SymbolGroup_images/CustomCateogry.PNG)
-
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
-
-## View Models for the SymbolGroups
-
-The `SfDiagram` provides supports to populate view models for each SymbolGroup created for the symbols added through the `SymbolSource` property. 
-
-The [SymbolGroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html) class provides the support to create the view models to the symbol group and provides supports to add symbols to it as Node, Connectors, groups and list of predefined symbols.
-
-* [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Name): Specifies the display name of the symbol group. It also adds the symbols to the symbol groups defined through the `SymbolSource` property which symbol has same `Key` value as this `Name` property.
-* [Symbols](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Symbols): Specifies the list of symbols need to be added to the symbol group. It can be any diagram elements of Nodes, Connectors, Groups, Containers, BPMN elements.
-* [CategorySource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_CategorySource): Specifies the list of symbols need to be added to the `SymbolGroupViewModel` using the static resource key value from the predefined category collections.
-
-In addition to that, new symbols can be added into the symbol groups or you can remove the existing symbols from any symbol group at run time. As same as symbols, new symbol group can be added into the stencil and remove the existing symbol group from the stencil.
+To add symbols to a Stencil through `SymbolGroupViewModel`, you can utilize the `CategorySource` property, which allows you to bind a predefined collection of symbols based on a static resource key. This enables dynamic loading of symbols into the group, ensuring that any updates to the category collection are reflected in the symbol group automatically.
 
 {% highlight xaml %}
+
+<ResourceDictionary>
+    <ResourceDictionary.MergedDictionaries>
+        <!--Dictionary which contains the inbuilt shapes-->
+        <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--custom path data-->
+    <sys:String x:Key="CustomPath">
+        F1M1.66,0.25C0.882,0.25,0.25,0.881,0.25,1.66L0.25,24.622C0.25,25.401,0.882,26.032,1.66,26.032L4.48,26.032C5.259,26.032,5.89,25.401,5.89,24.622L5.89,1.66C5.89,0.881,5.259,0.25,4.48,0.25z
+    </sys:String>
+
+    <!--custom shapes collection-->
+    <x:Array Type="sys:String" x:Key="customShapeCollection">
+        <sys:String>Rectangle</sys:String>
+        <sys:String>Cube</sys:String>
+        <sys:String>Triangle</sys:String>
+        <sys:String>Ellipse</sys:String>
+        <sys:String>CustomPath</sys:String>
+    </x:Array>
+</ResourceDictionary>
+
 <!--Initialize the stencil-->
 <syncfusion:Stencil x:Name="stencil" 
                     Title="Shapes"
@@ -401,31 +327,21 @@ In addition to that, new symbols can be added into the symbol groups or you can 
                     SymbolSelectionMode="Multiple"
                     DisplayMode="Expanded"
                     GroupMappingName="Key">
-    <!--Initialize the symbol groups-->
     <syncfusion:Stencil.SymbolGroups>
-        <syncfusion:SymbolGroups>
-            <syncfusion:SymbolGroupViewModel Name="Basic Shapes" CategorySource="{StaticResource BasicShapes}">
-                <syncfusion:SymbolGroupViewModel.Symbols>
-                    <syncfusion:SymbolCollection>
-                        <syncfusion:NodeViewModel Name="Object" 
-                                                  UnitHeight="50"
-                                                  UnitWidth="50"
-                                                  Shape="{StaticResource Object}"/>
-                        <syncfusion:NodeViewModel Name="User" 
-                                                  UnitHeight="50"
-                                                  UnitWidth="50"
-                                                  Shape="{StaticResource User}"/>
-                    </syncfusion:SymbolCollection>
-                </syncfusion:SymbolGroupViewModel.Symbols>
-            </syncfusion:SymbolGroupViewModel>
-        </syncfusion:SymbolGroups>
+            <syncfusion:SymbolGroups>
+                <syncfusion:SymbolGroupViewModel Name="Basic Shapes" CategorySource="{StaticResource BasicShapes}"/>
+                <syncfusion:SymbolGroupViewModel Name="BPMNEditor Shapes" CategorySource="{StaticResource BPMNEditorShapes}"/>
+                <syncfusion:SymbolGroupViewModel Name="Custom Shapes" CategorySource="{StaticResource customShapeCollection}"/>
+            </syncfusion:SymbolGroups>
     </syncfusion:Stencil.SymbolGroups>
 </syncfusion:Stencil>
+
+![Category Source](SymbolGroup_images/BuiltInShapesList.png)
+
 {% endhighlight %}
 
-![SymbolGroupViewModel](SymbolGroup_images/SymbolGroupViewModel.png)
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolGroupViewModel/BasicSymbolGroupViewModel)
 
 ## See also
 
