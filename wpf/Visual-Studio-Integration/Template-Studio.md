@@ -25,7 +25,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 2.	Select one of the following options to create the Syncfusion WPF application
 
 	**Option 1:**  
-	Choose **Extension -> Syncfusion -> Essential Studio for WPF -> Create New Syncfusion Project…** from the Visual Studio menu.
+	Choose **Extension -> Syncfusion -> Essential Studio® for WPF -> Create New Syncfusion Project…** from the Visual Studio menu.
     
 	![Choose Syncfusion WPF Application from Visual Studio new project dialog via Syncfusion menu](Template-Studio-Images/WPF-1.png)
 
@@ -155,6 +155,6 @@ In the **Project Details** section, you can modify configurations and project ty
 	>   </tbody>
 	> </table>       
 
-13.   Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
+13.   Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio®.
 
        ![Syncfusion license registration required information dialog in Syncfusion WPF project](Template-Studio-Images/Syncfusion-Project-Template-Gallery-9.png)   

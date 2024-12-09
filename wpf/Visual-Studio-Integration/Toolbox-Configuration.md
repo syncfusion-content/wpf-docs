@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Toolbox Configuration | Wpf | Syncfusion
-description: This section provides information regarding all the Syncfusion Essential Studio utilities and its usage
+description: This section provides information regarding all the Syncfusion Essential Studio® utilities and its usage
 platform: wpf
-control: Essential Studio
+control: Essential Studio®
 documentation: ug
 ---
 
@@ -25,7 +25,7 @@ To add the Syncfusion WPF components via the Syncfusion Toolbox Installer, perfo
    ![Add On and Utilities in Toolbox Installer for WPF](toolbox-configuration_images/wpf-toolbox-installer-add-on-and-utilities.png)
    
    **Option 2:**  
-   Click **Syncfusion menu** and choose **Essential Studio for WPF > Toolbox Configuration...** in **Visual Studio**
+   Click **Syncfusion menu** and choose **Essential Studio® for WPF > Toolbox Configuration...** in **Visual Studio**
 
    ![Toolbox Installer via Syncfusion menu](toolbox-configuration_images/syncfusion-menu-toolbox.png)
 
