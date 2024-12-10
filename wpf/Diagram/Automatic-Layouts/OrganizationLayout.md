@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Organization layout in WPF Diagram control | Syncfusion
-description: Learn here all about Organization layout support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Organization layout in WPF Diagram control | Syncfusion®
+description: Learn here all about Organization layout support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

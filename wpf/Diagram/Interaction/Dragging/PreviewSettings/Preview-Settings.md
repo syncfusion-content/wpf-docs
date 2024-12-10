@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Diagram supports to drag nodes and connectors at runtime.
+title: Syncfusion® Diagram supports to drag nodes and connectors at runtime.
 description: How to drag the preview of the nodes and connectors instead of dragging the original nodes and connectors ?
 platform: wpf
 control: SfDiagram

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scroll-Settings in WPF Diagram control | Syncfusion
-description: Learn here all about Scroll-Settings support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Scroll-Settings in WPF Diagram control | Syncfusion®
+description: Learn here all about Scroll-Settings support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

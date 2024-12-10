@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Straight segments of connectors | Syncfusion
+title: Straight segments of connectors | Syncfusion®
 description: What are the segment types and how to draw, select, and edit the straight segments of connectors in the diagram control.
 platform: wpf
 control: SfDiagram

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Command Manager in WPF Diagram control | Syncfusion
-description: Learn here all about Command Manager support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Command Manager in WPF Diagram control | Syncfusion®
+description: Learn here all about Command Manager support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
