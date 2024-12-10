@@ -280,7 +280,7 @@ To add symbols through the `Symbols` property, you can define a collection of sy
 
 ### Adding Symbols via CategorySource Property in SymbolGroupViewModel
 
-The `sfDiagram` resource dictionary includes a wide array of shapes organized into categorized lists. These shape paths are grouped into specific categories to simplify the process of adding them to the stencil, avoiding repetitive additions. You can also create custom symbol collections. Below are the built-in categories available in the diagram resource dictionary:
+The `sfDiagram` resource dictionary includes a wide array of shapes organized into categorized lists. These shape paths are grouped into specific categories to simplify the process of adding them to the stencil, avoiding repetitive additions. Below are the built-in categories available in the diagram resource dictionary:
 
 * BasicShapes
 * FlowShapes
