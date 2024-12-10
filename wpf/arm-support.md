@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ARM support | WPF | Syncfusion
-description: Learn here about the details of ARM64 devices compatibility support in .net 6.0 framework for Syncfusion WPF controls.
+title: ARM support | WPF | Syncfusion®
+description: Learn here about the details of ARM64 devices compatibility support in .net 6.0 framework for Syncfusion® WPF controls.
 platform: wpf
 control: ARM support
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # ARM support in WPF Controls
 
-The Syncfusion WPF components are compatible with ARM64 devices. You can build the application with our components. The following components/features are alone yet to be supported for ARM64 device compatibility. Based on the feasibility, we will provide the support for the below components/features soon,
+The Syncfusion® WPF components are compatible with ARM64 devices. You can build the application with our components. The following components/features are alone yet to be supported for ARM64 device compatibility. Based on the feasibility, we will provide the support for the below components/features soon,
 
 * PDF library: HTML to PDF conversion
 * PDF library: OCR Processing
