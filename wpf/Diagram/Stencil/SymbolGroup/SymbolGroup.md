@@ -254,7 +254,7 @@ To add symbols through the `Symbols` property, you can define a collection of sy
                     GroupMappingName="Key">
         <syncfusion:Stencil.SymbolGroups>
             <syncfusion:SymbolGroups>
-                <syncfusion:SymbolGroupViewModel>
+                <syncfusion:SymbolGroupViewModel Name="Symbols">
                     <syncfusion:SymbolGroupViewModel.Symbols>
                         <syncfusion:SymbolCollection>
                             <syncfusion:NodeViewModel Name="Object" 
@@ -265,6 +265,18 @@ To add symbols through the `Symbols` property, you can define a collection of sy
                                                       UnitHeight="50"
                                                       UnitWidth="50"
                                                       Shape="{StaticResource User}"/>
+                            <syncfusion:NodeViewModel Name="Amplifier"
+                                                      UnitHeight="50"
+                                                      UnitWidth="50"
+                                                      Shape="{StaticResource  Amplifier}"/>
+                            <syncfusion:NodeViewModel Name="CircularArrow"
+                                                      UnitHeight="50"
+                                                      UnitWidth="50"
+                                                      Shape="{StaticResource CircularArrow}"/>
+                            <syncfusion:NodeViewModel Name="Data1"
+                                                      UnitHeight="50"
+                                                      UnitWidth="50"
+                                                      Shape="{StaticResource Data1}"/>
                         </syncfusion:SymbolCollection>
                     </syncfusion:SymbolGroupViewModel.Symbols>
                 </syncfusion:SymbolGroupViewModel>
@@ -274,7 +286,7 @@ To add symbols through the `Symbols` property, you can define a collection of sy
 
 {% endhighlight %}
 
-![SymbolGroupViewModel](SymbolGroup_images/SymbolGroupViewModel.png)
+![SymbolGroupViewModel](SymbolGroup_images/SGVMSymbols.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolGroupViewModel/BasicSymbolGroupViewModel)
 
