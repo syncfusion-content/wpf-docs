@@ -1138,7 +1138,7 @@ We have provided an example that demonstrates switching between the Window11Ligh
  
 {% tabs %}
 
-{% highlight C# %}      
+{% highlight C# %}
 
         private void RadioButton_Click(object sender, RoutedEventArgs e)
         {
