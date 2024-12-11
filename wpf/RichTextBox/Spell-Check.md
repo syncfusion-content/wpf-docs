@@ -82,7 +82,7 @@ The following code example demonstrates how to define custom dictionaries for sp
 
 {% endtabs %}
 
-You can download a complete working sample from [GitHub]. (https://github.com/SyncfusionExamples/WPF-RichTextBox-Samples/tree/main/How-to-add-custom-dictionaries-in-richtextbox)
+You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Samples/tree/main/How-to-add-custom-dictionaries-in-richtextbox) .
 
 
 ## Multilingual Spell Check Support
