@@ -179,6 +179,77 @@ using (Stream myStream = dialog.OpenFile())
 {% endhighlight %}
 {% endtabs %}
 
+## Importing and Exporting Mind Map and Flowchart Diagrams using Mermaid Syntax
+
+The [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) supports saving diagrams in Mermaid syntax format. Mermaid is a Markdown-inspired syntax that automatically generates diagrams. With this functionality, you can easily create mind maps and flowcharts from Mermaid syntax data, simplifying the visualization of complex ideas and processes without manual drawing. Additionally, you can export your mind maps and flowcharts to Mermaid syntax, allowing for easy sharing, editing, and use across different platforms.
+
+
+### Save diagram as Mermaid syntax
+
+The [SaveDiagramAsMermaid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SaveDiagramAsMermaid) method serializes the diagram into a Mermaid-compatible string format. This method is specifically designed for diagrams that utilize Flowchart and Mind map layouts. The following code illustrates how to save the diagram in Mermaid string format.
+
+{% tabs %}
+{% highlight C# %}
+
+//Initialize the SfDiagram
+SfDiagram Diagram = new SfDiagram();
+
+// Initialize a layout for diagram
+Diagram.LayoutManager = new LayoutManager()
+{
+    Layout = new FlowchartLayout()
+    {
+        Orientation = FlowchartOrientation.TopToBottom,
+        YesBranchValues = new List<string> { "Yes", "True", "Y", "s" },
+        YesBranchDirection = BranchDirection.LeftInFlow,
+        NoBranchValues = new List<string> { "No", "N", "False", "no" },
+        NoBranchDirection = BranchDirection.RightInFlow,
+        HorizontalSpacing = 60,
+        VerticalSpacing = 40,
+    },
+};
+
+// Convert the diagram layout to a Mermaid string format.
+string mermaidData = Diagram.SaveDiagramAsMermaid();
+
+{% endhighlight %}
+{% endtabs %}
+
+### Load diagram from Mermaid syntax
+
+You can load a [diagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) from the serialized Mermaid syntax data using the [LoadDiagramFromMermaid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_LoadDiagramFromMermaid_System_String_) method. The following code illustrates how to load a diagram from a Mermaid string data.
+
+{% tabs %}
+{% highlight C# %}
+
+//Initialize the SfDiagram
+SfDiagram Diagram = new SfDiagram();
+
+// Initialize a layout for diagram
+Diagram.LayoutManager = new LayoutManager()
+{
+    Layout = new FlowchartLayout()
+    {
+        Orientation = FlowchartOrientation.TopToBottom,
+        YesBranchValues = new List<string> { "Yes", "True", "Y", "s" },
+        YesBranchDirection = BranchDirection.LeftInFlow,
+        NoBranchValues = new List<string> { "No", "N", "False", "no" },
+        NoBranchDirection = BranchDirection.RightInFlow,
+        HorizontalSpacing = 60,
+        VerticalSpacing = 40,
+    },
+};
+
+// Load the diagram using Mermaid text.
+Diagram.LoadDiagramFromMermaid(mermaidData);
+
+{% endhighlight %}
+{% endtabs %}
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Serialization/MermaidTextToDiagramLayout)
+
+N> Mermaid syntax data serialization and deserialization are only supported for Flowchart and Mind map layouts. Please ensure that your diagram uses one of these layouts to successfully load the data.
+
 ## See Also
 
 [How to serialize the Content and ContentTemplate properties of a Node?](https://support.syncfusion.com/kb/article/11574/how-to-serialize-content-and-contenttemplate-properties-of-a-node-in-wpf-diagramsfdiagram)
