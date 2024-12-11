@@ -107,7 +107,7 @@ You can customize the marker appearance by using the [`MarkerTemplate`](https://
         <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
                 <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp"  
-                                           Markers="{Binding Models}"  
+                                           Markers="{Binding Markers}"  
                                            MarkerTemplate="{StaticResource markerTemplate}">
                </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
@@ -125,6 +125,33 @@ You can customize the marker appearance by using the [`MarkerTemplate`](https://
 	shape.Markers = view.Models;
 	maps.Layers.Add(shape);
 	this.Content = maps;
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="Marker" %}
+
+    public class Marker
+    {
+        public string Label { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+    }
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="MapViewModel" %}
+
+    public class MapViewModel
+    {
+        public ObservableCollection<Marker> Markers { get; set; }
+        public MapViewModel()
+        {
+            this.Markers = new ObservableCollection<Marker>();
+            this.Markers.Add(new Marker() { Label = "India", Latitude = "21.0000N", Longitude = "78.0000E" });
+            this.Markers.Add(new Marker() { Label = "China", Latitude = "35.0000N", Longitude = "103.0000E" });
+            this.Markers.Add(new Marker() { Label = "Brazil", Latitude = "15.7833S", Longitude = "47.8667W" });
+        }
+    }
 
 {% endhighlight %}
 
