@@ -179,9 +179,14 @@ using (Stream myStream = dialog.OpenFile())
 {% endhighlight %}
 {% endtabs %}
 
-## Save Diagram Layout as Mermaid Text
+## Importing and Exporting Mind Map and Flowchart Diagrams using Mermaid Syntax
 
-We can save the diagram layout in Mermaid text format by using the `SaveDiagramAsMermaid` method. This format makes it easy to share and visualize the diagram using tools that support Mermaid. The following example demonstrates how to save a diagram layout in Mermaid text format:
+The [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) supports saving diagrams in Mermaid syntax format. Mermaid is a Markdown-inspired syntax that automatically generates diagrams. With this functionality, you can easily create mind maps and flowcharts from Mermaid syntax data, simplifying the visualization of complex ideas and processes without manual drawing. Additionally, you can export your mind maps and flowcharts to Mermaid syntax, allowing for easy sharing, editing, and use across different platforms.
+
+
+### Save diagram as Mermaid syntax
+
+The `SaveDiagramAsMermaid` method serializes the diagram into a Mermaid-compatible string format. This method is specifically designed for diagrams that utilize Flowchart and Mind map layouts. The following code illustrates how to save the diagram in Mermaid string format.
 
 {% tabs %}
 {% highlight C# %}
@@ -210,9 +215,9 @@ string mermaidData = Diagram.SaveDiagramAsMermaid();
 {% endhighlight %}
 {% endtabs %}
 
-## Load Diagram Layout from Mermaid Text
+### Load diagram from Mermaid syntax
 
-We can load the Mermaid text to create a specified layout in `SfDiagram` using the `LoadDiagramFromMermaid` method. Use the following code example to load the Mermaid text.
+You can load a [diagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) from the serialized Mermaid syntax data using the `LoadDiagramFromMermaid` method. The following code illustrates how to load a diagram from a Mermaid string data.
 
 {% tabs %}
 {% highlight C# %}
@@ -241,9 +246,9 @@ Diagram.LoadDiagramFromMermaid(mermaidData);
 {% endhighlight %}
 {% endtabs %}
 
-N> When working with Mermaid text, ensure that the syntax is correct and adheres to the expectations of the diagramming logic to ensure successful loading and rendering of the diagram.
-
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Serialization/MermaidTextToDiagramLayout)
+
+N> Mermaid syntax data serialization and deserialization are only supported for Flowchart and Mind map layouts. Please ensure that your diagram uses one of these layouts to successfully load the data.
 
 ## See Also
 
