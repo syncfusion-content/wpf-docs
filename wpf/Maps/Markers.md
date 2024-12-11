@@ -185,7 +185,7 @@ You can customize the marker appearance by using the `MarkerTemplateSelector` pr
              </Canvas> 
             </Grid> 
            </DataTemplate>  
-             <local:CustomMarkerTemplateSelector x:Key="customMarkerTemplateSelector"
+           <local:CustomMarkerTemplateSelector x:Key="customMarkerTemplateSelector"
                                                  AsiaMarkerTemplate="{StaticResource AsiaRegionMarkerTemplate}"
                                                  SouthAmericaMarkerTemplate="{StaticResource SouthAmericaRegionMarkerTemplate}"/>            
     </Grid.Resources>
@@ -261,7 +261,7 @@ You can customize the marker appearance by using the `MarkerTemplateSelector` pr
 {% endtabs %}
 
 N>
-* The DataContext for both the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) and `MarkerTemplateSelector` properties of the ImageryLayer and ShapeLayer in the SfMap is set to CustomDataSymbol.
+* The DataContext for both the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) and `MarkerTemplateSelector` properties of the  [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) and [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) in the SfMap is set to [`CustomDataSymbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.CustomDataSymbol.html).
 
 ## Customizing marker icons
 
