@@ -24,14 +24,18 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl + Y | Redo | Redo(Restores the last editing action when no other actions have occurred since the last undo on diagram). |
 | Ctrl + D | Duplicate | Copies the selected element from the diagram and pastes the copied element into the diagram. |
 | Delete | Delete | Delete the selected elements in the diagram. |
-| LeftArrow | MoveLeft | MoveLeft (move the selected elements towards the left by one pixel). |
+| LeftArrow | MoveLeft | 1. MoveLeft (move the selected elements towards the left by one pixel).<br>2. MoveLeft (move the diagram page to the left, when scrolling is enabled). |
 | Shift + LeftArrow | MoveLeft | MoveLeft (move the selected elements towards the left by ten pixels). |
-| RightArrow | MoveRight | MoveRight (move the selected elements towards the right by one pixel). |
+| RightArrow | MoveRight |1. MoveRight (move the selected elements towards the right by one pixel).<br>2. MoveRight (move the diagram page to the right, when scrolling is enabled). |
 | Shift + RightArrow | MoveRight | MoveRight (move the selected elements towards the right by ten pixels). |
-| UpArrow | MoveUp | MoveUp (move the selected elements upwards by one pixel). |
+| UpArrow | MoveUp |1. MoveUp (move the selected elements upwards by one pixel).<br>2. MoveUp (move the diagram page upwards, when scrolling is enabled). |
 | Shift + UpArrow | MoveUp | MoveUp (move the selected elements upwards by ten pixels). |
-| DownArrow | MoveDown | MoveDown (move the selected elements downwards by one pixel). |
+| DownArrow | MoveDown |1. MoveDown (move the selected elements downwards by one pixel).<br>2. MoveDown (move the diagram page downwards,  when scrolling is enabled). |
 | Shift + DownArrow | MoveDown | MoveDown (move the selected elements downwards by ten pixels). |
+| PageUp | MoveTop | Moves the diagram page to the topmost position. |
+| PageDown | MoveBottom | Moves the diagram page to the bottommost position. |
+| Home | MoveLeft | Moves the diagram page to the leftmost position. |
+| End | MoveRight | Moves the diagram page to the rightmost position. |
 | MouseScroll | Zoom | Scrolls the diagram page up and down in a vertical direction. |
 | Shift + MouseScroll | Zoom | Scrolls the diagram page left and right in a horizontal direction. |
 | Ctrl + MouseScroll | Zoom | Zoom(Zoom in/Zoom out the diagram). |

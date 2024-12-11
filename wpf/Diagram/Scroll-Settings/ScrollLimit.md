@@ -38,6 +38,25 @@ diagram.ScrollSettings = new ScrollSettings()
 {% endhighlight %}
 {% endtabs %}
 
+## Scrolling Diagram with Arrow and Navigation Keys
+
+You can scroll through the diagram page effortlessly with arrow keys (Left, Right, Up, Down) and navigation keys (Home, End, Page Up, Page Down). The behavior of these keys adapts based on the configuration of the ScrollLimit property, offering a tailored navigation experience.
+
+The following table lists key gestures and their actions:
+
+| Shortcut Key | Action |
+|---|---|
+| Left Arrow | Scrolls the diagram page to the left. | 
+| Right Arrow | Scrolls the diagram page to the right. | 
+| Up Arrow | Scrolls the diagram page upward. | 
+| Down Arrow | Scrolls the diagram page downward. | 
+| Home | Moves the diagram page to the leftmost position. | 
+| End | Moves the diagram page to the rightmost position. | 
+| Page Up | Moves the diagram page to the topmost position. | 
+| Page Down | Moves the diagram page to the bottommost position. |
+
+N> When the `ScrollLimit` is set to Infinity, the Navigation keys does not result in any navigation on the diagram page.
+
 ## Scrollable area
 
 You can restrict scrolling beyond any particular rectangle area by using the `ScrollableArea` property of ScrollSettings. To restrict scrolling beyond any custom region,you have to set the `ScrollLimit` to Limited. The default value is Rect.Empty.
@@ -70,6 +89,7 @@ diagram.ScrollSettings = new ScrollSettings()
 | Diagram |![ScrollLimit Diagram](Scroll-Settings_images/ScrollLimitDiagram.gif) |
 | Limited <br> ScrollableArea = (0,0,1500,1500) | ![ScrollLimit Limited](Scroll-Settings_images/ScrollLimitLimited.gif) |
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Interaction/DiagramScrollUsingArrowKeys)
 ## See Also
 
 [How to stop infinite scrolling?](https://support.syncfusion.com/kb/article/9869/how-to-stop-infinite-scrolling-in-wpf-diagram-sfdiagram)
