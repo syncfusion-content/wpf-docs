@@ -52,6 +52,7 @@ You can make the text bold, italic, or underline by clicking the corresponding i
 
 Text can be aligned to the left, center, or right by clicking the corresponding icon. By default, text will be aligned at the left.
 
+
 ## Adding text programmatically
 
 You can add text to an image using the AddText method programmatically. This method requires the following parameters:
@@ -86,7 +87,7 @@ Using the following properties in TextSettings, text can be customized.
 
 {% tabs %} 
 
-{% highlight c# %} 
+{% highlight C# %} 
 
             TextSettings textSettings = new TextSettings();
             textSettings.FontFamily = new FontFamily("Century Schoolbook");

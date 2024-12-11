@@ -83,11 +83,11 @@ N> You must create a model that contains properties such as Latitude and Longitu
 
 ## Add a custom marker
 
-The marker appearance customization can be achieved by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) and `MarkerTemplateSelector` properties of Imagerylayer and ShapeLayer in the SfMaps.
+The marker appearance customization can be achieved by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) and `MarkerTemplateSelector` properties of [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) and [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) in the SfMaps.
 
 ### Customize marker appearance using DataTemplate
 
-You can customize the marker appearance by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) properties of Imagerylayer and ShapeLayer in SfMaps
+You can customize the marker appearance by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) properties of Imagery layer and Shape file layer in SfMaps
 
 {% tabs %}
 
