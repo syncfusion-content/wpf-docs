@@ -186,7 +186,7 @@ The [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Sf
 
 ### Save diagram as Mermaid syntax
 
-The `SaveDiagramAsMermaid` method serializes the diagram into a Mermaid-compatible string format. This method is specifically designed for diagrams that utilize Flowchart and Mind map layouts. The following code illustrates how to save the diagram in Mermaid string format.
+The [SaveDiagramAsMermaid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SaveDiagramAsMermaid) method serializes the diagram into a Mermaid-compatible string format. This method is specifically designed for diagrams that utilize Flowchart and Mind map layouts. The following code illustrates how to save the diagram in Mermaid string format.
 
 {% tabs %}
 {% highlight C# %}
@@ -217,7 +217,7 @@ string mermaidData = Diagram.SaveDiagramAsMermaid();
 
 ### Load diagram from Mermaid syntax
 
-You can load a [diagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) from the serialized Mermaid syntax data using the `LoadDiagramFromMermaid` method. The following code illustrates how to load a diagram from a Mermaid string data.
+You can load a [diagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) from the serialized Mermaid syntax data using the [LoadDiagramFromMermaid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_LoadDiagramFromMermaid_System_String_) method. The following code illustrates how to load a diagram from a Mermaid string data.
 
 {% tabs %}
 {% highlight C# %}
