@@ -8,7 +8,7 @@ documentation: ug
 ---
 # .NET Framework Compatibility
 
-Syncfusion® WPF Controls are always compatible latest .NET Framework versions. 
+Syncfusion&reg; WPF Controls are always compatible latest .NET Framework versions. 
 
 ## Version Compatibility
 
@@ -90,6 +90,17 @@ From 21.1 (2023 Vol1) <br/></td>
 From 25.1 (2024 Vol1) <br/></td>
 <td>No<br/></td>
 <td>Yes<br/></td>
+<td>No<br/></td>
+<td>No<br/></td>
+<td>Yes<br/></td>
+
+</tr>
+
+<tr>
+<td>
+From 28.1 (2024 Vol4) <br/></td>
+<td>No<br/></td>
+<td>No<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
 <td>Yes<br/></td>
