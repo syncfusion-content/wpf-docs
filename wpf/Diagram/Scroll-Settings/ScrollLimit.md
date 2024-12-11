@@ -43,14 +43,14 @@ The arrow keys (Left, Right, Up, Down) and navigation keys (Home, End, Page Up, 
 
 | Shortcut Keys | Description |
 |---|---|
-| Left Arrow Key | The diagram page scrolls to the left. | 
-| Right Arrow Key | The diagram page scrolls to the right. | 
-| Up Arrow Key | The diagram page scrolls up. | 
-| Down Arrow Key | The diagram page scrolls down. | 
-| Home Key | The diagram page jumps to the leftmost position. | 
-| End Key | The diagram page jumps to the rightmost position. | 
-| Page Up Key | The diagram page jumps to the topmost position. | 
-| Page Down Key | The diagram page jumps to the bottommost position. |
+| Left Arrow Key | The diagram page scrolls to the left by 120 pixels. | 
+| Right Arrow Key | The diagram page scrolls to the right by 120 pixels. | 
+| Up Arrow Key | The diagram page scrolls to the top by 120 pixels. | 
+| Down Arrow Key | The diagram page scrolls to the bottom by 120 pixels. | 
+| Home Key | The diagram page jump to the leftmost position. | 
+| End Key | The diagram page jump to the rightmost position. | 
+| Page Up Key | The diagram page jump to the topmost position. | 
+| Page Down Key | The diagram page jump to the bottommost position. |
 
 N> When the `ScrollLimit` is set to Infinity, pressing the Page Up, Page Down, Home, or End keys does not result in any navigation on the diagram page.
 

@@ -32,10 +32,10 @@ The following table illustrates list of Commands with key Gesture.
 | Shift + UpArrow | MoveUp | MoveUp (move the selected elements upwards by ten pixels). |
 | DownArrow | MoveDown |1. MoveDown (move the selected elements downwards by one pixel).<br>2. MoveDown (move the diagram page towards the down by 120 pixels when scrolling is enabled). |
 | Shift + DownArrow | MoveDown | MoveDown (move the selected elements downwards by ten pixels). |
-| PageUp | JumpsTop | JummpsTop (Jumps the diagram page towards the Top).|
-| PageDown | JumpsBottom | JumpsBottom (Jumps the diagram page towards the bottom).|
-| Home | JumpsRight | JummpsRight (Jumps the diagram page towards the right).|
-| End | JumpsLeft | JummpsLeft (Jumps the diagram page towards the left).|
+| PageUp |  | JumpTop (Jump to the top end of the diagram page).|
+| PageDown |  | JumpsBottom (Jump to the bottom end of the diagram page).|
+| Home |  | JummpsRight (Jump to the right end of the diagram page).|
+| End |  | JummpsLeft (Jump to the left end of the diagram page).|
 | MouseScroll | Zoom | Scrolls the diagram page up and down in a vertical direction. |
 | Shift + MouseScroll | Zoom | Scrolls the diagram page left and right in a horizontal direction. |
 | Ctrl + MouseScroll | Zoom | Zoom(Zoom in/Zoom out the diagram). |
