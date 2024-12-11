@@ -87,7 +87,7 @@ The marker appearance customization can be achieved by using the [`MarkerTemplat
 
 ### Customize marker appearance using DataTemplate
 
-You can customize the marker appearance by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) properties of Imagery layer and Shape file layer in SfMaps
+You can customize the marker appearance by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) properties of [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) and [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) in SfMaps
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ You can customize the marker appearance by using the [`MarkerTemplate`](https://
 
 ### Customize marker appearance using DataTemplateSelector
 
-You can customize the marker appearance by using the `MarkerTemplateSelector` property of Imagerylayer and ShapeLayer in the SfMaps. The DataTemplateSelector can choose a DataTemplate at runtime based on the value of a data-bound to marker appearance by using the `MarkerTemplateSelector`. It allows you to choose a different data template for each marker, as well as to customize the appearance of a particular marker based on certain conditions.
+You can customize the marker appearance by using the `MarkerTemplateSelector` property of [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) and [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) in the SfMaps. The DataTemplateSelector can choose a DataTemplate at runtime based on the value of a data-bound to marker appearance by using the `MarkerTemplateSelector`. It allows you to choose a different data template for each marker, as well as to customize the appearance of a particular marker based on certain conditions.
 
 {% tabs %}
 
