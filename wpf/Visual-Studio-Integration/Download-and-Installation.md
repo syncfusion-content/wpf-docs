@@ -10,7 +10,7 @@ documentation: ug
 
 # Download and Installation
 
-In below Visual Studio marketplace link, Syncfusion publishing the WPF Visual Studio extension. You can either use the Visual Studio to install it or go to the Visual Studio marketplace to download and install it.
+In below Visual Studio marketplace link, Syncfusion® publishing the WPF Visual Studio extension. You can either use the Visual Studio to install it or go to the Visual Studio marketplace to download and install it.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WPFVSExtension)
 
