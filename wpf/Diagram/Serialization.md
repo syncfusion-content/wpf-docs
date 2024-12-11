@@ -179,12 +179,15 @@ using (Stream myStream = dialog.OpenFile())
 {% endhighlight %}
 {% endtabs %}
 
-## Save Diagram as Mermaid Text
+## Save Diagram Layout as Mermaid Text
 
-In addition to saving the diagram as a XAML file or a memory stream, you can also save the diagram in the Mermaid text format. This format allows you to convert your diagram into a syntax that can be easily shared and visualized using tools that support Mermaid diagrams. The following example demonstrates how to save a diagram in Mermaid text format:
+We can save the diagram layout in Mermaid text format by using the `SaveDiagramAsMermaid` method. This format makes it easy to share and visualize the diagram using tools that support Mermaid. The following example demonstrates how to save a diagram layout in Mermaid text format:
 
 {% tabs %}
 {% highlight C# %}
+
+//Initialize the SfDiagram
+SfDiagram Diagram = new SfDiagram();
 
 // Initialize a layout for diagram
 Diagram.LayoutManager = new LayoutManager()
@@ -207,12 +210,15 @@ string mermaidData = Diagram.SaveDiagramAsMermaid();
 {% endhighlight %}
 {% endtabs %}
 
-## Load Diagram from Mermaid Text
+## Load Diagram Layout from Mermaid Text
 
-To create a diagram layout based on the Mermaid syntax. Use the following code example:
+We can load the Mermaid text to create a specified layout in `SfDiagram` using the `LoadDiagramFromMermaid` method. Use the following code example to load the Mermaid text.
 
 {% tabs %}
 {% highlight C# %}
+
+//Initialize the SfDiagram
+SfDiagram Diagram = new SfDiagram();
 
 // Initialize a layout for diagram
 Diagram.LayoutManager = new LayoutManager()
