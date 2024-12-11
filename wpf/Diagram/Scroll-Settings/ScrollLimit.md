@@ -37,22 +37,25 @@ diagram.ScrollSettings = new ScrollSettings()
 };
 {% endhighlight %}
 {% endtabs %}
-## Scrolling Diagrams with Arrow Keys
 
-The arrow keys (Left, Right, Up, Down) and navigation keys (Home, End, Page Up, Page Down) on the keyboard provide a convenient way to navigate through the diagram. Depending on the configuration of the `ScrollLimit` property, these keys can be used to scroll the diagram in various ways.
+## Scrolling Diagram with Arrow and Navigation Keys
 
-| Shortcut Keys | Description |
+You can scroll through the diagram page effortlessly with arrow keys (Left, Right, Up, Down) and navigation keys (Home, End, Page Up, Page Down). The behavior of these keys adapts based on the configuration of the ScrollLimit property, offering a tailored navigation experience.
+
+The following table lists key gestures and their actions:
+
+| Shortcut Key | Action |
 |---|---|
-| Left Arrow Key | The diagram page scrolls to the left by 120 pixels. | 
-| Right Arrow Key | The diagram page scrolls to the right by 120 pixels. | 
-| Up Arrow Key | The diagram page scrolls to the top by 120 pixels. | 
-| Down Arrow Key | The diagram page scrolls to the bottom by 120 pixels. | 
-| Home Key | The diagram page jump to the leftmost position. | 
-| End Key | The diagram page jump to the rightmost position. | 
-| Page Up Key | The diagram page jump to the topmost position. | 
-| Page Down Key | The diagram page jump to the bottommost position. |
+| Left Arrow | Scrolls the diagram page to the left. | 
+| Right Arrow | Scrolls the diagram page to the right. | 
+| Up Arrow | Scrolls the diagram page upward. | 
+| Down Arrow | Scrolls the diagram page downward. | 
+| Home | Moves the diagram page to the leftmost position. | 
+| End | Moves the diagram page to the rightmost position. | 
+| Page Up | Moves the diagram page to the topmost position. | 
+| Page Down | Moves the diagram page to the bottommost position. |
 
-N> When the `ScrollLimit` is set to Infinity, pressing the Page Up, Page Down, Home, or End keys does not result in any navigation on the diagram page.
+N> When the `ScrollLimit` is set to Infinity, the Navigation keys does not result in any navigation on the diagram page.
 
 ## Scrollable area
 
