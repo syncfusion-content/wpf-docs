@@ -11,7 +11,7 @@ documentation: ug
 
 Stencil includes some default context menu items to make it easier to execute some frequently used stencil symbol commands.
 
-## Default Context Menu for Stencil Symbols
+## Default Context Menu for Stencil
 
 Context menu items can be enabled or disabled by adding or removing the `ContextMenu` constraint from
 [`StencilConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) property. By default, context menu items will be displayed with Cut, Copy, and Paste menu items.
@@ -28,7 +28,7 @@ stencil.StencilConstraints &= ~StencilConstraints.ContextMenu;
 
 ![Symbol ContextMenu](Stencil_images/SymbolsContextmenu.png)
 
-## Custom Context Menu for Stencil Symbols
+## Custom Context Menu for Stencil
 
 You can define some additional menu items to the stencil symbols by using [`Menu`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Menu) property of `Stencil` class. Those additional menu items must be defined and added to [MenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.DiagramMenu.html#Syncfusion_UI_Xaml_Diagram_Controls_DiagramMenu_MenuItems) collection.
 
@@ -122,7 +122,7 @@ BasicStencil.SymbolSource = new SymbolCollection()
 
 ![Symbol Custom ContextMenu](Stencil_images/CustomContextMenu.gif)
 
-## Custom Context Menu for Individual Stencil Symbols
+## Custom Context Menu for Symbols in Stencil
 
 You can define specific menu items to each stencil symbols by using the `Menu` property of symbols.
 
