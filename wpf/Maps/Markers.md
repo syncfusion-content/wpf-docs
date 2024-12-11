@@ -83,14 +83,18 @@ N> You must create a model that contains properties such as Latitude and Longitu
 
 ## Add a custom marker
 
-The Maps control provides the support for defining the custom markers using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) property.
+The marker appearance customization can be achieved by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) and `MarkerTemplateSelector` properties of Imagerylayer and ShapeLayer in the SfMaps.
+
+### Customize marker appearance using DataTemplate
+
+You can customize the marker appearance by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) properties of Imagerylayer and ShapeLayer in SfMaps
 
 {% tabs %}
 
-{% highlight xaml %}
-
-      <Window.Resources>
-        <ResourceDictionary>
+{% highlight xaml hl_lines="16" %}
+     
+    <Grid>
+     <Grid.Resources>
             <DataTemplate x:Key="markerTemplate">
                 <Grid>
                     <Canvas Margin="-12,-30,0,0">
@@ -99,12 +103,12 @@ The Maps control provides the support for defining the custom markers using the 
                     </Canvas>
                 </Grid>
             </DataTemplate>
-        </ResourceDictionary>
-    </Window.Resources>
-    <Grid>
+    </Grid.Resources>
         <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp"  Markers="{Binding Models}"  MarkerTemplate="{StaticResource markerTemplate}">
+                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp"  
+                                           Markers="{Binding Models}"  
+                                           MarkerTemplate="{StaticResource markerTemplate}">
                </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
         </syncfusion:SfMap>
@@ -112,7 +116,7 @@ The Maps control provides the support for defining the custom markers using the 
 		
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight c# hl_lines="4" %}
 
 	SfMap maps = new SfMap();
 	ShapeFileLayer shape = new ShapeFileLayer();
@@ -128,15 +132,16 @@ The Maps control provides the support for defining the custom markers using the 
 
 ![Custom Marker Image](Marker_images/Marker_CustomMarkerImg.png)
 
-## Customizing Marker Templates Using DataTemplateSelector
+### Customize marker appearance using DataTemplateSelector
 
-A DataTemplateSelector can be used to dynamically customize marker appearances. This allows you to apply different templates based on specific conditions or data-bound properties using DataTemplateSelector in MarkerTemplateSelector property.
+You can customize the marker appearance by using the `MarkerTemplateSelector` property of Imagerylayer and ShapeLayer in the SfMaps. The DataTemplateSelector can choose a DataTemplate at runtime based on the value of a data-bound to marker appearance by using the `MarkerTemplateSelector`. It allows you to choose a different data template for each marker, as well as to customize the appearance of a particular marker based on certain conditions.
 
 {% tabs %}
 
-{% highlight xaml %}
-    <Window.Resources>
-        <ResourceDictionary>
+{% highlight xaml hl_lines="26 29" %}
+   
+    <Grid>
+     <Grid.Resources>
             <DataTemplate x:Key="AsiaRegionMarkerTemplate"> 
               <Grid> 
                 <Canvas> 
@@ -154,23 +159,24 @@ A DataTemplateSelector can be used to dynamically customize marker appearances. 
             </Grid> 
            </DataTemplate>  
              <local:CustomMarkerTemplateSelector x:Key="customMarkerTemplateSelector"
-               AsiaMarkerTemplate="{StaticResource AsiaRegionMarkerTemplate}"
-               SouthAmericaMarkerTemplate="{StaticResource SouthAmericaRegionMarkerTemplate}"/>            
-        </ResourceDictionary>
-    </Window.Resources>
-    <Grid>
+                                                 AsiaMarkerTemplate="{StaticResource AsiaRegionMarkerTemplate}"
+                                                 SouthAmericaMarkerTemplate="{StaticResource SouthAmericaRegionMarkerTemplate}"/>            
+    </Grid.Resources>
         <syncfusion:SfMap>  
-          <syncfusion:SfMap.Layers>  
+          <syncfusion:SfMap.Layers>
+                <syncfusion:ImageryLayer LayerType="OSM"  
+                                         MarkerTemplateSelector="{StaticResource customMarkerTemplateSelector}"
+                                         Markers="{Binding Markers}"/>
                 <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp"   
                                            MarkerTemplateSelector="{StaticResource customMarkerTemplateSelector}" 
-                                           Markers="{Binding Models}"/>                          
+                                           Markers="{Binding Markers}"/>                          
          </syncfusion:SfMap.Layers>     
         </syncfusion:SfMap>   
     </Grid>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight c# tabtitle="MarkerTemplateSelector" %}
 
  public class CustomMarkerTemplateSelector : DataTemplateSelector 
  { 
@@ -196,27 +202,39 @@ A DataTemplateSelector can be used to dynamically customize marker appearances. 
    } 
  }
 
-    public class ViewModel
-    {
-        public ObservableCollection<Model> Models { get; set; }
-        public ViewModel()
-        {
-            this.Models = new ObservableCollection<Model>();
-            this.Models.Add(new Model() { Label = "India", Latitude = "21.0000N", Longitude = "78.0000E" });
-            this.Models.Add(new Model() { Label = "China", Latitude = "35.0000N", Longitude = "103.0000E" });
-            this.Models.Add(new Model() { Label = "Brazil", Latitude = "15.7833S", Longitude = "47.8667W" });
-        }
-    }
+{% endhighlight %}
 
-    public class Model
+{% highlight c# tabtitle="Marker" %}
+
+    public class Marker
     {
         public string Label { get; set; }
         public string Longitude { get; set; }
         public string Latitude { get; set; }
     }
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="MapViewModel" %}
+
+    public class MapViewModel
+    {
+        public ObservableCollection<Marker> Markers { get; set; }
+        public MapViewModel()
+        {
+            this.Markers = new ObservableCollection<Marker>();
+            this.Markers.Add(new Marker() { Label = "India", Latitude = "21.0000N", Longitude = "78.0000E" });
+            this.Markers.Add(new Marker() { Label = "China", Latitude = "35.0000N", Longitude = "103.0000E" });
+            this.Markers.Add(new Marker() { Label = "Brazil", Latitude = "15.7833S", Longitude = "47.8667W" });
+        }
+    }
+
 {% endhighlight %}
 
 {% endtabs %}
+
+N>
+* The DataContext for both the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) and `MarkerTemplateSelector` properties of the ImageryLayer and ShapeLayer in the SfMap is set to CustomDataSymbol.
 
 ## Customizing marker icons
 
