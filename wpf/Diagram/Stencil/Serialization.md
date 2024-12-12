@@ -67,7 +67,7 @@ The Stencil also supports exporting and importing specific symbol groups. This f
 
 ### Exporting a Symbol Group
 
-In Stencil, the `ExportGroup` method allows you to export SymbolGroups. By providing the symbol group names as parameters to this method, you can save the SymbolGroups to a stream, preserving all their properties for easy sharing or future use. Here is a simple code example showing how to export the symbol groups:
+In Stencil, the [ExportGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ExportGroup_System_IO_Stream_System_String___) method allows you to export SymbolGroups. By providing the symbol group names as parameters to this method, you can save the specified SymbolGroups to a stream, preserving all their properties for easy sharing or future use. Here is a simple code example showing how to export the symbol groups:
 
 {% tabs %}
 {% highlight C# %}
@@ -90,7 +90,7 @@ if (dialog.ShowDialog() == true)
 
 ### Importing a Symbol Group
 
-To import the saved symbol groups back into the stencil, use the `ImportGroup` method with the saved stream. This will load the stencil with the saved symbol groups. Here is a simple code example showing how to import the symbol groups:
+To import the saved symbol groups back into the stencil, use the [ImportGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ImportGroup_System_IO_Stream_) method with the saved stream. This will load the stencil with the saved symbol groups. Here is a simple code example showing how to import the symbol groups:
 
 {% tabs %}
 {% highlight C# %}
