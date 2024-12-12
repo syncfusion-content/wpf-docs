@@ -2,7 +2,7 @@
 layout: post
 title: Notifications | Wpf | Syncfusion
 description: For displaying the notifications about trial and newer version update information for Syncfusion applications.
-platform: WPF
+platform: wpf
 control: Syncfusion Extensions
 documentation: ug
 ---
