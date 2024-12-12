@@ -2,7 +2,7 @@
 layout: post
 title: About WPF AI AssistView control | Syncfusion
 description: Learn about the introduction of Syncfusion WPF AI AssistView Control (SfAvatarView) with essential features and more.
-platform: WPF
+platform: wpf
 control: SfAIAssistView
 documentation: ug
 ---

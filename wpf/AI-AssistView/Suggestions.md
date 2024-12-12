@@ -2,7 +2,7 @@
 layout: post
 title: Suggestions in WPF AI AssistView control | Syncfusion
 description: Learn about the suggestion feature that displays AI-driven suggestions in the bottom right corner of the AI AssistView control.
-platform: WPF
+platform: wpf
 control: SfAIAssistView
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF AI AssistView control | Syncfusion
 description: Learn about getting started with the Syncfusion WinUI AI AssistView (SfAIAssistView) control with its basic features.
-platform: WPF
+platform: wpf
 control: AI AssistView
 documentation: ug
 ---
