@@ -94,7 +94,7 @@ Using the following properties in TextSettings, text can be customized.
 {% highlight XAML %}
 
     <editor:SfImageEditor x:Name="imageEditor"                         
-                          Loaded="ImageEditorLoaded">
+                          Loaded="OnImageEditorLoaded">
 
 {% endhighlight %}
 
@@ -103,10 +103,10 @@ Using the following properties in TextSettings, text can be customized.
         public MainWindow()
         {
             InitializeComponent();
-            this.imageEditor.Loaded += ImageEditorLoaded;
+            this.imageEditor.Loaded += OnImageEditorLoaded;
         }
 
-        private void ImageEditorLoaded(object sender, RoutedEventArgs e)
+        private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
         {
             TextSettings textSettings = new TextSettings();
             textSettings.FontFamily = new FontFamily("Century Schoolbook");
