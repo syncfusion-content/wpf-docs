@@ -52,6 +52,9 @@ You can make the text bold, italic, or underline by clicking the corresponding i
 
 Text can be aligned to the left, center, or right by clicking the corresponding icon. By default, text will be aligned at the left.
 
+### Background
+
+You can customize the text background color by clicking the fill icon, selecting color from the color picker, and applying it as the background.
 
 ## Adding text programmatically
 
@@ -80,6 +83,7 @@ Using the following properties in TextSettings, text can be customized.
 * [`TextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_TextAlignment) - Text alignment such as left, top, and center can be applied.
 * [`TextEffects`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_TextEffects) - Text effects such as bold, italic, and underline can be applied.
 * [`Opacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Opacity) - Modifies the opacity of the text.
+* `Background` - Specifies the background color of the text annotation. The default value is Brush.Transparent.
 * [`Angle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Angle) - Rotates the text to the specified angle.
 * [`Bounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Bounds) - Rect used to position the text. 
 
@@ -87,15 +91,31 @@ Using the following properties in TextSettings, text can be customized.
 
 {% tabs %} 
 
+{% highlight XAML %}
+
+    <editor:SfImageEditor x:Name="imageEditor"                         
+                          Loaded="ImageEditorLoaded">
+
+{% endhighlight %}
+
 {% highlight C# %} 
 
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.imageEditor.Loaded += ImageEditorLoaded;
+        }
+
+        private void ImageEditorLoaded(object sender, RoutedEventArgs e)
+        {
             TextSettings textSettings = new TextSettings();
             textSettings.FontFamily = new FontFamily("Century Schoolbook");
             textSettings.FontSize = 30;
             textSettings.Color = new SolidColorBrush(Colors.Red);
             textSettings.TextEffects = TextEffects.Bold | TextEffects.Italic;
             textSettings.Bounds = new Rect(50, 10, 50, 15);
-            editor.AddText("Good morning", textSettings);
+            textSettings.Background = new SolidColorBrush(Colors.Yellow);
+            this.imageEditor.AddText("Good morning", textSettings);
 
             textSettings = new TextSettings();
             textSettings.FontFamily = new FontFamily("Bell MT");
@@ -104,9 +124,10 @@ Using the following properties in TextSettings, text can be customized.
             textSettings.TextEffects =  TextEffects.Italic;
             textSettings.Bounds = new Rect(50, 23, 30, 15);
             textSettings.TextAlignment = TextAlignment.Center;
-            editor.AddText("The happiness of your \nlife depend upon the \nquality of your thoughts.", textSettings);
-
-
+            textSettings.Background = new SolidColorBrush(Colors.Red);
+            this.imageEditor.AddText("The happiness of your \nlife depend upon the \nquality of your thoughts.", textSettings);
+        }
+ 
 {% endhighlight %}
 
 {% endtabs %} 
