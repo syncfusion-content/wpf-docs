@@ -98,7 +98,7 @@ You can customize the marker appearance by using the [`MarkerTemplate`](https://
                 <Grid> 
                     <Canvas> 
                         <Ellipse Width="15" Height="15" Fill="Red"/> 
-                        <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" FontSize="10" FontFamily="Segoe UI" Text="{Binding Label}"/> 
+                        <TextBlock HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="15" FontFamily="Segoe UI" Text="{Binding Label}"/> 
                     </Canvas> 
               </Grid>  
             </DataTemplate>
@@ -170,7 +170,7 @@ You can customize the marker appearance by using the `MarkerTemplateSelector` pr
               <Grid> 
                 <Canvas> 
                     <Ellipse Width="15" Height="15" Fill="Red"/> 
-                    <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" FontSize="10" FontFamily="Segoe UI" Text="{Binding Label}"/> 
+                    <TextBlock HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="15" FontFamily="Segoe UI" Text="{Binding Label}"/> 
                 </Canvas> 
               </Grid>    
             </DataTemplate> 
@@ -178,7 +178,7 @@ You can customize the marker appearance by using the `MarkerTemplateSelector` pr
                 <Grid> 
                     <Canvas> 
                         <Ellipse Width="15" Height="15" Fill="Blue"/> 
-                        <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" FontSize="10" FontFamily="Segoe UI" Text="{Binding Label}"/> 
+                        <TextBlock HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="15" FontFamily="Segoe UI" Text="{Binding Label}"/> 
                     </Canvas> 
                 </Grid> 
            </DataTemplate>  
