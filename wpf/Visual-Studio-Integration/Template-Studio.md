@@ -10,22 +10,22 @@ documentation: ug
 
 # Syncfusion WPF Template Studio
 
-The WPF Template Studio is a tool Syncfusion provides specifically for building applications using their WPF components. This studio streamlines the development process by including essential Syncfusion components, managing necessary NuGet references, providing predefined namespaces, and generating component render code. It acts as a template studio wizard, making it easier for developers to create WPF applications using Syncfusion components.
+The WPF Template Studio is a tool Syncfusion® provides specifically for building applications using their WPF components. This studio streamlines the development process by including essential Syncfusion® components, managing necessary NuGet references, providing predefined namespaces, and generating component render code. It acts as a template studio wizard, making it easier for developers to create WPF applications using Syncfusion® components.
 
 I> The Syncfusion WPF Template Studio is available from v23.1.36.
 
 N> WPF Template Studio works seamlessly with Visual Studio 2017 or later. For the Visual Studio 2015 or lower versions, it is recommended to use a [WPF project template](https://help.syncfusion.com/wpf/visual-studio-integration/create-project).
 
-Create the Syncfusion WPF project using the Visual Studio Project Template by following the provided steps.
+Create the Syncfusion® WPF project using the Visual Studio Project Template by following the provided steps.
 
 > Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later, and for Visual Studio 2017 by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/wpf/visual-studio-integration/download-and-installation) help topic.
 
 1.	Open the Visual Studio 2022.
 
-2.	Select one of the following options to create the Syncfusion WPF application
+2.	Select one of the following options to create the Syncfusion® WPF application
 
 	**Option 1:**  
-	Choose **Extension -> Syncfusion -> Essential Studio for WPF -> Create New Syncfusion Project…** from the Visual Studio menu.
+	Choose **Extension -> Syncfusion -> Essential Studio® for WPF -> Create New Syncfusion Project…** from the Visual Studio menu.
     
 	![Choose Syncfusion WPF Application from Visual Studio new project dialog via Syncfusion menu](Template-Studio-Images/WPF-1.png)
 
@@ -58,7 +58,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	**Project type:** Choose this option to select from 4 project types, including Navigation Pane, Blank, Menu Bar, and Ribbon .
 
-6. Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WPF components you can add to the application.
+6. Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion® WPF components you can add to the application.
 
 	![Syncfusion WPF pages selection wizard](Template-Studio-Images/WPF-6.png)
 
@@ -80,7 +80,7 @@ In the **Project Details** section, you can modify configurations and project ty
 
 ![Syncfusion WPF project details selection and unselection wizard](Template-Studio-Images/WPF-8.png)
 
-9. Click **Create** to generate the Syncfusion WPF application. Once you've created the project, the relevant Syncfusion NuGet packages will be automatically added to your project for the chosen components. For example, if you add an **DataGrid** control, the corresponding Syncfusion NuGet packages required for that control will be installed.
+9. Click **Create** to generate the Syncfusion WPF application. Once you've created the project, the relevant Syncfusion® NuGet packages will be automatically added to your project for the chosen components. For example, if you add an **DataGrid** control, the corresponding Syncfusion® NuGet packages required for that control will be installed.
 
      ![Syncfusion WPF project created with readme](Template-Studio-Images/WPF-9.png)
 
@@ -155,6 +155,6 @@ In the **Project Details** section, you can modify configurations and project ty
 	>   </tbody>
 	> </table>       
 
-13.   Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio.
+13.   Then, Syncfusion® licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion® introduced the 			licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion® license key to your 	project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in 		Essential Studio®.
 
        ![Syncfusion license registration required information dialog in Syncfusion WPF project](Template-Studio-Images/Syncfusion-Project-Template-Gallery-9.png)   
