@@ -352,6 +352,64 @@ To add symbols to a Stencil through `SymbolGroupViewModel`, you can utilize the 
 
 {% endhighlight %}
 
+## Customize the appearance of the symbols in the built-in categories 
+
+The symbol sizes for the built-in symbol categories are equivalent to the Visio symbol size. Each symbol available in the category collection can be customized by the [PrepareSymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_PrepareSymbolViewModel_System_Object_System_String_System_String_) virtual method of the stencil class. Symbols can be modified by using the following properties of the `PrepareSymbolViewModel` method:
+
+* `Item`: To modify the symbol and its properties.
+* `SymbolName`: To know the name of the symbol.
+* `CategoryName`: To know the name of the category.
+
+Also, you can decide whether a symbol can be added to the stencil symbol collection or not. It can be achieved by using the `Cancel` property of [CanAddSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CanAddSymbol_System_String_System_String_), the virtual method of stencil class. 
+
+{% tabs %}
+{% highlight C# %}
+/// <summary>
+/// The custom class for the stencil view model.
+/// </summary>
+public class StencilViewModel : Stencil
+{
+    /// <summary>
+    /// Overridden method to change the symbol.
+    /// </summary>
+    /// <param name="Item">Item value of the shape</param>
+    /// <param name="SymbolName">Name of the symbol</param>
+    /// <param name="CategoryName">Name of the category</param>
+    /// <returns>Return the item of the shape</returns>
+    protected override object PrepareSymbolViewModel(object Item, string SymbolName, string CategoryName)
+    {
+        if (SymbolName == "Rectangle")
+        {
+            (Item as INode).UnitWidth = 80;
+            (Item as INode).UnitHeight = 40;
+            return Item;
+        }
+        else
+            return base.PrepareSymbolViewModel(Item, SymbolName, CategoryName);
+    }
+
+    /// <summary>
+    /// Overidden method to decide whether a symbol can be added or not
+    /// </summary>
+    /// <param name="symbolName">Name of the symbol</param>
+    /// <param name="categoryName">Name of the category</param>
+    /// <returns>Return the boolean</returns>
+    protected override bool CanAddSymbol(string symbolName, string categoryName)
+    {
+        if (symbolName == "Triangle")
+        {
+            return false;            
+        }
+
+        return base.CanAddSymbol(symbolName, categoryName);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom Category collection](SymbolGroup_images/CustomCateogry.PNG)
+
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
 
 
