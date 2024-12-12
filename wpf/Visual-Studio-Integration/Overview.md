@@ -9,17 +9,17 @@ documentation: ug
 
 # Syncfusion WPF Extension
 
-The Syncfusion WPF Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio.The Syncfusion WPF Extensions supports Microsoft Visual Studio 2015 or higher.
+The Syncfusion®® WPF Studio Extensions can be accessed through the Syncfusion® Menu to create and configure the project with Syncfusion® references in Visual Studio.The Syncfusion® WPF Extensions supports Microsoft Visual Studio 2015 or higher.
 
-N> Syncfusion Extension is published in Visual Studio Marketplace. We provided separate Syncfusion WPF Extension support for Visual Studio 2022 and Visual Studio 2019 or lower. Please refer below marketplace link.
+N> Syncfusion® Extension is published in Visual Studio Marketplace. We provided separate Syncfusion® WPF Extension support for Visual Studio 2022 and Visual Studio 2019 or lower. Please refer below marketplace link.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WPFVSExtension)
 
 [Visual Studio 2019 or lower](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WPFExtension)
 
-I> The Syncfusion WPF menu option is available from `v17.1.0.32`.
+I> The Syncfusion® WPF menu option is available from `v17.1.0.32`.
 
-The Syncfusion provides the following extension supports in Visual Studio:
+The Syncfusion® provides the following extension supports in Visual Studio:
 
 1.  [Template Studio](https://help.syncfusion.com/wpf/visual-studio-integration/template-studio): Syncfusion WPF Template Studio simplifies application development with its components by managing references and providing pre-defined code. It streamlines the process of creating WPF applications.
 2.	[Create Project](https://help.syncfusion.com/wpf/visual-studio-integration/create-project): Creates the Syncfusion WPF application by adding the required Syncfusion assemblies and XMAL.
