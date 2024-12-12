@@ -178,8 +178,8 @@ The stencil view can be toggled between the expanded and compact modes by clicki
 
 |DisplayMode|Description|Output|
 |----------|-----------|--------|
-| Compact | The stencil always shows as a narrow sliver which can be opened to full width |![Expanded](Stencil_images/ExpandModeExpand.PNG) |
-| Expanded | Specifies to update the Expanded state of the stencil |![Symbol](Stencil_images/Stencil_Compact.PNG)|
+| Compact | The stencil always shows as a narrow sliver which can be opened to full width |![Symbol](Stencil_images/Stencil_Compact.PNG)|
+| Expanded | Specifies to update the Expanded state of the stencil |![Expanded](Stencil_images/ExpandModeExpand.PNG)|
 
 You can show or hide the expander icon by using the [`ShowDisplayModeToggleButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowDisplayModeToggleButton) property of the `Stencil` class. 
 
