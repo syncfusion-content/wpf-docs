@@ -244,6 +244,35 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 
 ![WPF Scheduler month view Leading and Trailing Days Visibility](Month-View_Images/wpf-scheduler-leading-and-trailing-days-visibility.png)
 
+## Change the number of visible weeks
+
+The number of weeks visible in the month view can be changed by setting the `NumberOfVisibleWeeks` property of [MonthViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [`SfScheduler`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html). By default, 6 weeks are visible.
+
+{% tabs %}
+{% highlight xaml hl_lines="4" %}
+
+<syncfusion:SfScheduler x:Name="Schedule" 
+                        ViewType="Month">
+    <syncfusion:SfScheduler.MonthViewSettings>
+        <syncfusion:MonthViewSetting NumberOfVisibleWeeks="3"/>
+    </syncfusion:SfScheduler.MonthViewSettings>
+</syncfusion:SfScheduler>
+
+{% endhighlight %}
+{% highlight c#  hl_lines="2" %}
+
+this.Schedule.ViewType = SchedulerViewType.Month;
+this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* The week number range is limited to values between 1 and 6. Any value outside this range will cause the `NumberOfVisibleWeeks` to default to 6.
+* The `NumberOfVisibleWeeks` property dynamically controls the number of weeks displayed in the scheduler's month view.
+* The  [DisplayDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DisplayDate) property defines the first row of dates shown in the scheduler's month view.
+* The [LeadingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_LeadingDaysVisibility) and [TrailingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_TrailingDaysVisibility) properties are applicable only when the number of visible weeks is set to 6.
+
 ## Blackout dates
 Disable the interaction for certain dates in the scheduler month view by adding those specific dates to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html?tabs=tabid-1#Syncfusion_UI_Xaml_Scheduler_SfScheduler_BlackoutDates) collection property of the `SfScheduler.` Using this, allocate or restrict specific dates for the predefined events.
 
