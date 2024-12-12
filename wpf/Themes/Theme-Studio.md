@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Theme Studio | WPF | Syncfusion®
-description: Learn how to create customized themes for Syncfusion® WPF controls and integrate to your WPF Application.
+title: Getting Started with WPF Theme Studio | WPF | Syncfusion&reg;
+description: Learn how to create customized themes for Syncfusion&reg; WPF controls and integrate to your WPF Application.
 platform: wpf
 control: ThemeStudio
 documentation: ug
@@ -212,13 +212,13 @@ The WPF Theme Studio comes with various set of palettes for each theme variant.
 
 ### Customizing theme color from theme studio
 
-In theme studio utility, each theme has a unique common variable list. When user changes the common variable color code value, it will be reflected in all the Syncfusion® WPF controls. All Syncfusion® WPF control styles are derived from these theme-based common variables. This common variable list is handled inside the theme studio application for customizing theme-based colors. 
+In theme studio utility, each theme has a unique common variable list. When user changes the common variable color code value, it will be reflected in all the Syncfusion&reg; WPF controls. All Syncfusion&reg; WPF control styles are derived from these theme-based common variables. This common variable list is handled inside the theme studio application for customizing theme-based colors. 
 
 Let us see the step-by-step procedure to launch and work with the theme studio utility as follows.
 
 **Step 1**
 
-After installing the `Syncfusion® WPF` suite, launch it and select `Theme Studio` from the start-up panel.
+After installing the `Syncfusion&reg; WPF` suite, launch it and select `Theme Studio` from the start-up panel.
 
 ![Theme Studio for WPF](ThemeStudio_images/ThemeStudio-LaunchPage.png)
 
@@ -242,11 +242,11 @@ Use the built-in **color picker** in the theme customization section to select t
 
 **Step 5**
 
-The Syncfusion® WPF controls will be rendered with the newly selected colors in the preview section, after selecting the desired color. 
+The Syncfusion&reg; WPF controls will be rendered with the newly selected colors in the preview section, after selecting the desired color. 
 
 ![Color reflected in controls loaded inside Theme Studio for WPF](ThemeStudio_images/ThemeStudio-CustomColor-Change.png)
 
-N> The WPF theme studio groups both Syncfusion® and Framework controls under different tabs for a quick preview of the UI when the color changes.
+N> The WPF theme studio groups both Syncfusion&reg; and Framework controls under different tabs for a quick preview of the UI when the color changes.
 
 ### Exporting theme project
  
@@ -260,13 +260,13 @@ Click `Export` in the top right corner, below the exit of the theme studio appli
 
 **Step 2**
 
-Now, the Export dialog box appears with the option to select either the entire controls or just the desired control(s). This option is useful only for selective list of Syncfusion® WPF controls in the application. The theme studio will filter only the selected controls and customize the final output for those controls alone. 
+Now, the Export dialog box appears with the option to select either the entire controls or just the desired control(s). This option is useful only for selective list of Syncfusion&reg; WPF controls in the application. The theme studio will filter only the selected controls and customize the final output for those controls alone. 
 
 ![Export dialog in Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Export.png)
 
 **Step 3**
 
-Provide the theme name, in which the theme should be exported and select the required folder for Theme Export to be selected. When you export the download theme, it will come as a theme project with color codes for the selected Syncfusion® WPF controls.
+Provide the theme name, in which the theme should be exported and select the required folder for Theme Export to be selected. When you export the download theme, it will come as a theme project with color codes for the selected Syncfusion&reg; WPF controls.
 
 ![Export details dialog from Theme Studio for WPF](ThemeStudio_images/ThemeStudio-ExportName.png)
 
@@ -323,7 +323,7 @@ Ensure whether the `Sign the assembly` checkbox is clicked or not, to use the pr
 
 ### Integrating custom theme to the application
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) control helps to apply the built-in themes to the Syncfusion® UI controls for WPF.
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) control helps to apply the built-in themes to the Syncfusion&reg; UI controls for WPF.
 
 Let us see the step-by-step procedure for adding exported theme project as assembly(.dll) and witness the custom theme set for Docking Manager.  
 
@@ -351,7 +351,7 @@ Add reference of **Syncfusion.SfSkinManager.Wpf.dll** to the WPF application and
 
 **Step 3**
 
-The appearance of any Syncfusion® UI controls for WPF can be customized by using the [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_ThemeProperty) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). 
+The appearance of any Syncfusion&reg; UI controls for WPF can be customized by using the [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_ThemeProperty) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). 
 
 Now, use the [RegisterTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_RegisterTheme_System_String_Syncfusion_SfSkinManager_SkinHelper_) method to register the instance of generated MaterialDarkYellow (`Syncfusion.Themes.MaterialDarkYellow.WPF`) assembly from the exported theme project for demonstration purposes, passing the exported custom theme name and respective theme assembly instance as parameters.
 
