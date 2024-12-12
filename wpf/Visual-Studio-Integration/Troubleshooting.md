@@ -9,7 +9,7 @@ documentation: ug
 
 # Troubleshoot the project
 
-Troubleshoot the project with the Syncfusion configuration and apply the fix, such as wrong.NET Framework version of a Syncfusion assembly to the project or missing any Syncfusion dependent assembly of a referred assembly. The Syncfusion Troubleshooter can perform the following tasks:
+Troubleshoot the project with the Syncfusion® configuration and apply the fix, such as wrong.NET Framework version of a Syncfusion® assembly to the project or missing any Syncfusion® dependent assembly of a referred assembly. The Syncfusion Troubleshooter can perform the following tasks:
 
 * Report the Configuration issues.  
 * Apply the solution
@@ -23,11 +23,11 @@ The steps below will assist you in using the Syncfusion Troubleshooter by Visual
 1. To open Syncfusion Troubleshooter Wizard, follow either one of the options below: 
    
    **Option 1**  
-   Open an existing Syncfusion WPF Application, Click **Extensions-> Syncfusion Menu and choose Essential Studio for WPF > Troubleshoot…** in Visual Studio.
+   Open an existing Syncfusion WPF Application, Click **Extensions-> Syncfusion Menu and choose Essential Studio® for WPF > Troubleshoot…** in Visual Studio.
 
    ![Syncfusion Troubleshooter via Syncfusion menu](SyncfusionTroubleshooter_images/Syncfusion_Menu_Troubleshooter_2019.png)
 
-   N> In Visual Studio 2017 or lower, click Syncfusion Menu and choose Essential Studio for WPF > Troubleshoot… in Visual Studio.
+   N> In Visual Studio 2017 or lower, click Syncfusion Menu and choose Essential Studio® for WPF > Troubleshoot… in Visual Studio.
 
    ![Syncfusion Troubleshooter via Syncfusion menu](SyncfusionTroubleshooter_images/Syncfusion_Menu_Troubleshooter.png)
 
@@ -36,7 +36,7 @@ The steps below will assist you in using the Syncfusion Troubleshooter by Visual
 
    ![Syncfusion Troubleshooter add-in](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img1_2019.png)
 
-2. Analyze the project now, and if any Syncfusion controls project configuration errors are discovered, they will be reported in the Troubleshooter dialog.  If there are no configuration issues with the project, the dialog box will indicate that no modifications are required in the following areas:
+2. Analyze the project now, and if any Syncfusion® controls project configuration errors are discovered, they will be reported in the Troubleshooter dialog.  If there are no configuration issues with the project, the dialog box will indicate that no modifications are required in the following areas:
 
 * Syncfusion assembly references.
 * Syncfusion NuGet Packages. 
@@ -44,7 +44,7 @@ The steps below will assist you in using the Syncfusion Troubleshooter by Visual
 
    ![No configuration changes required dialog box](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img2.png)
 
-I> The Syncfusion Troubleshooter options will be visible only for Syncfusion projects which means the project should contain Syncfusion assemblies or Syncfusion NuGet packages referred, and project should be .NET Framework project.
+I> The Syncfusion Troubleshooter options will be visible only for Syncfusion® projects which means the project should contain Syncfusion® assemblies or Syncfusion® NuGet packages referred, and project should be .NET Framework project.
 
 The Syncfusion Troubleshooter handles the following project configuration issues: 
 
@@ -56,7 +56,7 @@ The Syncfusion Troubleshooter handles the following project configuration issues
 
 ### Assembly Reference Issues
 
-The Syncfusion Troubleshooter handles the assembly reference issues listed below in Syncfusion Projects. 
+The Syncfusion Troubleshooter handles the assembly reference issues listed below in Syncfusion® Projects. 
 
 1. Dependent assemblies are missing for referred assemblies from project. 
 
@@ -64,7 +64,7 @@ The Syncfusion Troubleshooter handles the assembly reference issues listed below
 
    ![Dependent assemblies missing issue shown in Troubleshooter wizard](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img3.png)
 
-2. Syncfusion Troubleshooter compare all Syncfusion assembly’s versions in the same project. If found any Syncfusion assembly version inconsistency, the Syncfusion Troubleshooter will show Syncfusion assemblies version mismatched. 
+2. Syncfusion Troubleshooter compare all Syncfusion® assembly’s versions in the same project. If found any Syncfusion assembly version inconsistency, the Syncfusion Troubleshooter will show Syncfusion assemblies version mismatched. 
 
    **For Instance:**  If “Syncfusion.Tools.WPF” assembly (v17.1450.0.32) referred in project, but other Syncfusion assemblies referred assembly version is v17.1450.0.38. The Syncfusion Troubleshooter will show Syncfusion assembly version mismatched.
 
@@ -82,7 +82,7 @@ The Syncfusion Troubleshooter handles the assembly reference issues listed below
 
 ### NuGet Issues
 
-The Syncfusion Troubleshooter addressed following NuGet package related issues in Syncfusion projects. 
+The Syncfusion Troubleshooter addressed following NuGet package related issues in Syncfusion® projects. 
 
 1. If the application has Syncfusion NuGet packages in multiple versions, then Syncfusion Troubleshooter will show  Syncfusion  NuGet package version is mismatched. 
 
@@ -106,7 +106,7 @@ I> Internet connection is required to restore the missing dependent packages. If
 
 ### Toolbox Configuration Issues
 
-In Syncfusion projects, the Syncfusion Troubleshooter addresses the following Toolbox Configuration issues.
+In Syncfusion® projects, the Syncfusion Troubleshooter addresses the following Toolbox Configuration issues.
 
 1. If the project .NET Framework version’s Syncfusion Toolbox is not installed/configured, the Syncfusion Troubleshooter will show Syncfusion Toolbox .NET Framework version is mismatched. 
 
@@ -134,6 +134,6 @@ In Syncfusion projects, the Syncfusion Troubleshooter addresses the following To
 
    ![Syncfusion Troubleshooter process success status message in visual studio status bar](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img14.jpeg)
 
-4. Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio.   
+4. Then, Syncfusion® licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion® introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion® license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio®.   
 
    ![Syncfusion license registration required information dialog in Syncfusion Troubleshooter](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img15.jpeg)
