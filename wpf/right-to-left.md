@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Right-to-Left support in Syncfusion&reg; WPF UI Controls | Syncfusion&reg;
+title: Right-to-Left support in Syncfusion WPF UI Controls | Syncfusion
 description: Learn about Right-to-Left (RTL) support in Syncfusion&reg; WPF UI Controls and more details. All Syncfusion&reg; controls supports Right to Left.
 platform: wpf
 control: RightToLeft

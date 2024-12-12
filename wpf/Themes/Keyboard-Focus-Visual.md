@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Keyboard Focus Visual | Syncfusion&reg; WPF Controls
+title: Getting Started with Keyboard Focus Visual | Syncfusion WPF Controls
 description: This article explains how to apply high visibility keyboard visual feedback followed in fluent design for WPF controls and Syncfusion&reg; controls.
 platform: wpf
 control: Themes
