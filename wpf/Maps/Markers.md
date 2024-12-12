@@ -87,7 +87,7 @@ The marker appearance customization can be achieved by using the [`MarkerTemplat
 
 ### Customize marker appearance using DataTemplate
 
-You can customize the marker appearance by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) properties of [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) and [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) in [`SfMap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html).
+You can customize the marker appearance by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) property of [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) and [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) in the [`SfMap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html).
 
 {% tabs %}
 {% highlight xaml hl_lines="21" %}
@@ -95,12 +95,12 @@ You can customize the marker appearance by using the [`MarkerTemplate`](https://
     <Grid>
         <Grid.Resources>
             <DataTemplate x:Key="markerTemplate">
-                <Grid>
-                    <Canvas Margin="-12,-30,0,0">
-                        <Image Source="pin.png" Height="30" />
-                        <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" FontSize="30" FontFamily="Segoe UI" Text="{Binding Label}"/>
-                    </Canvas>
-                </Grid>
+                <Grid> 
+                    <Canvas> 
+                        <Ellipse Width="15" Height="15" Fill="Red"/> 
+                        <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" FontSize="10" FontFamily="Segoe UI" Text="{Binding Label}"/> 
+                    </Canvas> 
+              </Grid>  
             </DataTemplate>
         </Grid.Resources>
 
@@ -159,10 +159,10 @@ You can customize the marker appearance by using the [`MarkerTemplate`](https://
 
 ### Customize marker appearance using DataTemplateSelector
 
-You can customize the marker appearance by using the `MarkerTemplateSelector` property of [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) and [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) in the SfMaps. The DataTemplateSelector can choose a DataTemplate at runtime based on the value of a data-bound to marker appearance by using the `MarkerTemplateSelector`. It allows you to choose a different data template for each marker, as well as to customize the appearance of a particular marker based on certain conditions.
+You can customize the marker appearance by using the `MarkerTemplateSelector` property of [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) and [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) in the [`SfMap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html). The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to marker appearance by using the `MarkerTemplateSelector`. It allows you to choose a different data template for each marker, as well as to customize the appearance of a particular marker based on certain conditions.
 
 {% tabs %}
-{% highlight xaml hl_lines="31 34" %}
+{% highlight xaml hl_lines="30 33" %}
    
     <Grid>
         <Grid.Resources>
