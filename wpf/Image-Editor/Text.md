@@ -125,7 +125,7 @@ Using the following properties in TextSettings, text can be customized.
             this.editor.AddText("Good morning", textSettings);
 
             textSettings = new TextSettings();
-            textSettings.Background = new SolidColorBrush(Colors.LightBeige);
+            textSettings.Background = new SolidColorBrush(Colors.Ivory);
             textSettings.FontFamily = new FontFamily("Bell MT");
             textSettings.FontSize = 22;
             textSettings.Color = new SolidColorBrush(Colors.DarkGreen);
