@@ -155,7 +155,7 @@ You can customize the marker appearance by using the [`MarkerTemplate`](https://
 {% endhighlight %}
 {% endtabs %}
 
-![Custom Marker Image](Marker_images/Marker_CustomMarkerImg.png)
+![Marker-template-support-in-WPF-maps](Marker_images/marker-template-support-in-wpf-maps.webp){:width="540" height="280"}
 
 ### Customize marker appearance using DataTemplateSelector
 
@@ -255,6 +255,8 @@ You can customize the marker appearance by using the `MarkerTemplateSelector` pr
 
 {% endhighlight %}
 {% endtabs %}
+
+![Marker-template-selector-support-in-WPF-maps](Marker_images/marker-template-selector-support-in-wpf-maps.webp){:width="540" height="280"}
 
 N>
 * The `DataContext` for both the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) and `MarkerTemplateSelector` properties of the  [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) and [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) in the SfMap is set to [`CustomDataSymbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.CustomDataSymbol.html).

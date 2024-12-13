@@ -267,6 +267,8 @@ this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
 {% endhighlight %}
 {% endtabs %}
 
+![Number-of-visible-weeks-in-month-view-in-WPF-Scheduler](Month-View_Images/number-of-visible-weeks-in-month-view-in-wpf-scheduler.webp){:width="540" height="300"}
+
 N>
 * The week number range is limited to values between 1 and 6. Any value outside this range will cause the `NumberOfVisibleWeeks` to default to 6.
 * The `NumberOfVisibleWeeks` property dynamically controls the number of weeks displayed in the scheduler's month view.
