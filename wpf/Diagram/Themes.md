@@ -105,7 +105,7 @@ node.Annotations = new ObservableCollection<IAnnotation>()
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme/ThemeStyle).
 
-N> When you apply a theme, it affects all [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) elements and overrides any individual ShapeStyle settings for those elements. And also, you cannot update the `ShapeStyle` property for diagram elements when a theme is applied.
+N> When you apply a theme, it affects all [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) elements and overrides any individual `ShapeStyle` settings for those elements. And also, you cannot update the `ShapeStyle` property for diagram elements when a theme is applied.
 
 ## See Also
 
