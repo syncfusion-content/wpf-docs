@@ -131,3 +131,5 @@ By using the [TypingIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 {% endhighlight %}
 {% endtabs %}
+
+![WPF AI AssistView control typing indicator](aiassistview_images/wpf_aiassistview_typing_indicator.gif)
