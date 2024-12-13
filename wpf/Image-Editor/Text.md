@@ -88,7 +88,7 @@ private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
 
 Using the following properties in TextSettings, text can be customized.
 
-* `Background` - Specifies the background color of the text annotation. The default value is Brush.Transparent.
+* [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Background) - Specifies the background color of the text annotation. The default value is Brush.Transparent.
 * [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_FontFamily) - Changes the font family of the text.
 * [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_FontSize) - Changes the font size of the text.
 * [`Color`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Color) - Modifies the font color of the text.
