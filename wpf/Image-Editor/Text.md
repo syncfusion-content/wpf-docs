@@ -22,6 +22,7 @@ To add text, click the Text icon (T) in the toolbar. Now, the text will be added
 
 The following properties of the added text can be customized:
 
+* Background
 * Font family
 * Font size
 * Font color
@@ -31,6 +32,10 @@ The following properties of the added text can be customized:
 Upon selecting the Text icon in the toolbar, a sub toolbar will be generated below the main toolbar for providing the text customizing options. 
 
 >N Text needs to be selected to apply the customization from the sub toolbar.
+
+### Background
+
+You can customize the text background color by clicking the fill icon, selecting color from the color picker, and applying it as the background.
 
 ### Font family
 
@@ -52,7 +57,6 @@ You can make the text bold, italic, or underline by clicking the corresponding i
 
 Text can be aligned to the left, center, or right by clicking the corresponding icon. By default, text will be aligned at the left.
 
-
 ## Adding text programmatically
 
 You can add text to an image using the AddText method programmatically. This method requires the following parameters:
@@ -62,9 +66,19 @@ You can add text to an image using the AddText method programmatically. This met
 
 {% tabs %} 
 
-{% highlight C# %} 
+{% highlight XAML %} 
 
-editor.AddText("Hello", new TextSettings());
+<editor:SfImageEditor x:Name="editor"                         
+                      Loaded="OnImageEditorLoaded">
+
+{% endhighlight %}
+
+{% highlight C# hl_lines="3" %}
+
+private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
+{
+    this.editor.AddText("Hello", new TextSettings());
+}
 
 {% endhighlight %}
 
@@ -74,6 +88,7 @@ editor.AddText("Hello", new TextSettings());
 
 Using the following properties in TextSettings, text can be customized.
 
+* `Background` - Specifies the background color of the text annotation. The default value is Brush.Transparent.
 * [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_FontFamily) - Changes the font family of the text.
 * [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_FontSize) - Changes the font size of the text.
 * [`Color`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Color) - Modifies the font color of the text.
@@ -87,25 +102,38 @@ Using the following properties in TextSettings, text can be customized.
 
 {% tabs %} 
 
-{% highlight C# %} 
+{% highlight XAML %}
 
+    <editor:SfImageEditor x:Name="editor"                         
+                          Loaded="OnImageEditorLoaded">
+
+{% endhighlight %}
+
+{% highlight C# %} 
+       
+        this.editor.Loaded += OnImageEditorLoaded;
+
+        private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
+        {
             TextSettings textSettings = new TextSettings();
+            textSettings.Background = new SolidColorBrush(Colors.Yellow);
             textSettings.FontFamily = new FontFamily("Century Schoolbook");
             textSettings.FontSize = 30;
             textSettings.Color = new SolidColorBrush(Colors.Red);
             textSettings.TextEffects = TextEffects.Bold | TextEffects.Italic;
             textSettings.Bounds = new Rect(50, 10, 50, 15);
-            editor.AddText("Good morning", textSettings);
+            this.editor.AddText("Good morning", textSettings);
 
             textSettings = new TextSettings();
+            textSettings.Background = new SolidColorBrush(Colors.LightBeige);
             textSettings.FontFamily = new FontFamily("Bell MT");
             textSettings.FontSize = 22;
             textSettings.Color = new SolidColorBrush(Colors.DarkGreen);
             textSettings.TextEffects =  TextEffects.Italic;
             textSettings.Bounds = new Rect(50, 23, 30, 15);
             textSettings.TextAlignment = TextAlignment.Center;
-            editor.AddText("The happiness of your \nlife depend upon the \nquality of your thoughts.", textSettings);
-
+            this.editor.AddText("The happiness of your \nlife depend upon the \nquality of your thoughts.", textSettings);
+        }
 
 {% endhighlight %}
 
