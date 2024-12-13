@@ -11,7 +11,7 @@ documentation: ug
 
 [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) serialization is the process of converting the state of stencil into a stream of bytes to recreate them when needed. Such streams can be stored in a database, as a file, or in memory. The reverse process is called deserialization.
 
-### Saving the Stencil
+## Saving the Stencil
 
 In Stencil, [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0) is used for serialization. It allows you to serialize and save your stencil into a stream. Here is a simple code example showing how to save the stencil:
 
@@ -37,7 +37,7 @@ stencil.Save(str);
 {% endhighlight %}
 {% endtabs %}
 
-### Loading the Stencil
+## Loading the Stencil
 
 On deserialization, the saved stream is used to load the Stencil. We can continue using previously saved stencil by loading the saved stream. Here is a simple code example showing how to load the stencil:
 

@@ -135,3 +135,5 @@ Create a simple chat collection as shown in the following code example in a new 
 
 {% endhighlight %}
 {% endtabs %}
+
+![WPF AI AssistView control getting started](aiassistview_images/wpf_aiassistview_gettingstarted.png)

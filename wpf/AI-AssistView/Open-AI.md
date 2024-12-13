@@ -196,3 +196,5 @@ To connect with OpenAI, we need the following details.
 
 {% endhighlight %}
 {% endtabs %}
+
+![WPF AI AssistView control open ai](aiassistview_images/wpf_aiassistview_openai.gif)
