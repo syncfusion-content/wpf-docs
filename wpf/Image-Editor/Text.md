@@ -116,3 +116,4 @@ Using the following properties in TextSettings, text can be customized.
 ## See also
 
 [How to load the image annotated with shapes and text on the image editor](https://support.syncfusion.com/kb/article/9825/how-to-load-the-image-annotated-with-shapes-and-text-in-wpf-image-editor)
+ 
