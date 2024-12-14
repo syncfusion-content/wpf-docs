@@ -65,14 +65,12 @@ You can add text to an image using the AddText method programmatically. This met
 * TextSettings - Customizes the text.
 
 {% tabs %} 
-
 {% highlight XAML %} 
 
 <editor:SfImageEditor x:Name="editor"                         
                       Loaded="OnImageEditorLoaded">
 
 {% endhighlight %}
-
 {% highlight C# hl_lines="3" %}
 
 private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
@@ -81,7 +79,6 @@ private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
 {% endtabs %} 
 
 ## Text settings
@@ -101,42 +98,39 @@ Using the following properties in TextSettings, text can be customized.
 >N Values of bounds will be in percentage. For example (25, 25, 25, 25) will take the position of 25 percent from the left and top.
 
 {% tabs %} 
-
 {% highlight XAML %}
 
-    <editor:SfImageEditor x:Name="editor"                         
-                          Loaded="OnImageEditorLoaded">
+<editor:SfImageEditor x:Name="editor"                         
+                      Loaded="OnImageEditorLoaded">
 
 {% endhighlight %}
-
 {% highlight C# %} 
        
-        this.editor.Loaded += OnImageEditorLoaded;
+this.editor.Loaded += OnImageEditorLoaded;
 
-        private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
-        {
-            TextSettings textSettings = new TextSettings();
-            textSettings.Background = new SolidColorBrush(Colors.Yellow);
-            textSettings.FontFamily = new FontFamily("Century Schoolbook");
-            textSettings.FontSize = 30;
-            textSettings.Color = new SolidColorBrush(Colors.Red);
-            textSettings.TextEffects = TextEffects.Bold | TextEffects.Italic;
-            textSettings.Bounds = new Rect(50, 10, 50, 15);
-            this.editor.AddText("Good morning", textSettings);
+private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
+{
+    TextSettings textSettings = new TextSettings();
+    textSettings.Background = new SolidColorBrush(Colors.Yellow);
+    textSettings.FontFamily = new FontFamily("Century Schoolbook");
+    textSettings.FontSize = 30;
+    textSettings.Color = new SolidColorBrush(Colors.Red);
+    textSettings.TextEffects = TextEffects.Bold | TextEffects.Italic;
+    textSettings.Bounds = new Rect(50, 10, 50, 15);
+    this.editor.AddText("Good morning", textSettings);
 
-            textSettings = new TextSettings();
-            textSettings.Background = new SolidColorBrush(Colors.Ivory);
-            textSettings.FontFamily = new FontFamily("Bell MT");
-            textSettings.FontSize = 22;
-            textSettings.Color = new SolidColorBrush(Colors.DarkGreen);
-            textSettings.TextEffects =  TextEffects.Italic;
-            textSettings.Bounds = new Rect(50, 23, 30, 15);
-            textSettings.TextAlignment = TextAlignment.Center;
-            this.editor.AddText("The happiness of your \nlife depend upon the \nquality of your thoughts.", textSettings);
-        }
+    textSettings = new TextSettings();
+    textSettings.Background = new SolidColorBrush(Colors.Ivory);
+    textSettings.FontFamily = new FontFamily("Bell MT");
+    textSettings.FontSize = 22;
+    textSettings.Color = new SolidColorBrush(Colors.DarkGreen);
+    textSettings.TextEffects =  TextEffects.Italic;
+    textSettings.Bounds = new Rect(50, 23, 30, 15);
+    textSettings.TextAlignment = TextAlignment.Center;
+    this.editor.AddText("The happiness of your \nlife depend upon the \nquality of your thoughts.", textSettings);
+}
 
 {% endhighlight %}
-
 {% endtabs %} 
 
 ![Text](Images/Text.jpg)   
