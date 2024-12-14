@@ -113,3 +113,5 @@ By using the [Suggestions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 
 {% endhighlight %}
 {% endtabs %}
+
+![WPF AI AssistView control suggestion](aiassistview_images/wpf_aiassistview_suggestions.png)

@@ -348,9 +348,9 @@ To add symbols to a Stencil through `SymbolGroupViewModel`, you can utilize the 
     </syncfusion:Stencil.SymbolGroups>
 </syncfusion:Stencil>
 
-![Category Source](SymbolGroup_images/BuiltInShapesList.png)
-
 {% endhighlight %}
+
+![Category Source](SymbolGroup_images/BuiltInShapesList.png)
 
 ## Customize the appearance of the symbols in the built-in categories 
 
