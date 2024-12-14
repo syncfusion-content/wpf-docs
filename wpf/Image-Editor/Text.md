@@ -18,6 +18,8 @@ You can annotate an image by adding the desired text to it. This can be done in 
 
 To add text, click the Text icon (T) in the toolbar. Now, the text will be added at the center of the image along with the selection handle, which helps in resizing. By default, the added text will be in pan mode, so you can position the text anywhere by dragging it. By clicking the text, it will change into typing mode, and you can edit the text directly. Click outside to exit from typing mode.
 
+![Text-settings-toolbar-in-WPF-ImageEditor](Images/text-setting-toolbar-in-wpf-image-editor.gif)   
+
 ## Customization
 
 The following properties of the added text can be customized:
