@@ -37,7 +37,7 @@ Upon selecting the Text icon in the toolbar, a sub toolbar will be generated bel
 
 ### Background
 
-You can customize the text background color by clicking the fill icon, selecting color from the color picker, and applying it as the background.
+You can customize the text background color by clicking on the fill icon, choosing a color from the color picker, and applying it to the background.
 
 ### Font family
 
@@ -71,9 +71,12 @@ You can add text to an image using the AddText method programmatically. This met
 
 <editor:SfImageEditor x:Name="editor"                         
                       Loaded="OnImageEditorLoaded">
+</editor:SfImageEditor>
 
 {% endhighlight %}
-{% highlight C# hl_lines="3" %}
+{% highlight C# hl_lines="5" %}
+
+this.editor.Loaded += this.OnImageEditorLoaded;
 
 private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
 {
@@ -104,11 +107,12 @@ Using the following properties in TextSettings, text can be customized.
 
 <editor:SfImageEditor x:Name="editor"                         
                       Loaded="OnImageEditorLoaded">
+</editor:SfImageEditor>
 
 {% endhighlight %}
 {% highlight C# %} 
        
-this.editor.Loaded += OnImageEditorLoaded;
+this.editor.Loaded += this.OnImageEditorLoaded;
 
 private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
 {
