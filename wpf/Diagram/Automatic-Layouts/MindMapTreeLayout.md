@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MindMap tree layout in WPF Diagram control | Syncfusion
-description: Learn here all about MindMap tree layout support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: MindMap tree layout in WPF Diagram control | Syncfusion®
+description: Learn here all about MindMap tree layout support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

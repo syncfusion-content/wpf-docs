@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SetShapeStyle Commands in WPF Diagram control | Syncfusion
-description: Learn here all about SetShapeStyle Commands support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: SetShapeStyle Commands in WPF Diagram control | Syncfusion®
+description: Learn here all about SetShapeStyle Commands support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

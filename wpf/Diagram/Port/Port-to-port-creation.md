@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Port-to-port-creation in WPF Diagram control | Syncfusion
-description: Learn here all about Port-to-port-creation support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Port-to-port-creation in WPF Diagram control | Syncfusion®
+description: Learn here all about Port-to-port-creation support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

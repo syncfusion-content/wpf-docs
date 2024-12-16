@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supports to drag nodes, connectors and page at runtime | Syncfusion.
+title: Supports to drag nodes, connectors and page at runtime | Syncfusion®
 description: How to drag the nodes and connectors and avoid overlapping of the nodes with connectors during runtime?
 platform: wpf
 control: SfDiagram

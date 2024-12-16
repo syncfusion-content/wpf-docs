@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand Collapse Command in WPF Diagram control | Syncfusion
-description: Learn here all about Expand Collapse Command support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Expand Collapse Command in WPF Diagram control | Syncfusion®
+description: Learn here all about Expand Collapse Command support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WPF Diagram control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Diagram (SfDiagram) control, its elements and more details.
+title: About WPF Diagram control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® WPF Diagram (SfDiagram) control, its elements and more details.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF Diagram (SfDiagram) Overview
 
-**Essential Diagram WPF** is a powerful, extensible, and feature-rich library for visualizing, creating, and editing interactive diagrams. It supports creating flowcharts, organizational charts, mind maps, floor plans, UML diagrams, and BPMN charts either through code or a visual interface.
+**Essential® Diagram WPF** is a powerful, extensible, and feature-rich library for visualizing, creating, and editing interactive diagrams. It supports creating flowcharts, organizational charts, mind maps, floor plans, UML diagrams, and BPMN charts either through code or a visual interface.
 
 ![WPF Diagram Overview](Overview_images/wpf-diagram-overview.png)
 
