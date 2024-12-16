@@ -138,7 +138,7 @@ private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 {% endtabs %} 
-ss
+
 ![Text-settings-in-WPF-Image-editor](Images/text-settings-in-wpf-image-editor.jpg)   
 
 ## See also
