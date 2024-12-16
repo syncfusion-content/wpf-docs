@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance of stencil in WPF Diagram control | Syncfusion
-description: Learn here all about appearance customazation on stencil in Syncfusion WPF Diagram (SfDiagram) control ports.
+title: Appearance of stencil in WPF Diagram control | Syncfusion®
+description: Learn here all about appearance customazation on stencil in Syncfusion® WPF Diagram (SfDiagram) control ports.
 platform: wpf
 control: SfDiagram
 documentation: ug

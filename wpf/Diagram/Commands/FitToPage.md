@@ -1,7 +1,7 @@
 ---
 layout: post
-title: FitToPage Command in WPF Diagram control | Syncfusion
-description: Learn here all about FitToPage Command support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: FitToPage Command in WPF Diagram control | Syncfusion®
+description: Learn here all about FitToPage Command support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

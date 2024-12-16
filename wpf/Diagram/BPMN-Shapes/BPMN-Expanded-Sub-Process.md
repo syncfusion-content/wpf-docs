@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expanded SubProcess in WPF Diagram control | Syncfusion
-description: Learn here all about Expanded SubProcess support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Expanded SubProcess in WPF Diagram control | Syncfusion®
+description: Learn here all about Expanded SubProcess support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

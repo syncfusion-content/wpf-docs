@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit and Format Text Commands in WPF Diagram control | Syncfusion
-description: Learn here all about Edit and Format Text Commands support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Edit and Format Text Commands in WPF Diagram control | Syncfusion®
+description: Learn here all about Edit and Format Text Commands support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Constraints in WPF Diagram Control | Syncfusion
-description: Learn here all about constraints support in Syncfusion WPF Diagram (SfDiagram) control, it's elements, and more.
+title: Constraints in WPF Diagram Control | Syncfusion®
+description: Learn here all about constraints support in Syncfusion® WPF Diagram (SfDiagram) control, it's elements, and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Validation in WPF Diagram control | Syncfusion
-description: Learn here all about Appearance and Validation support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Appearance and Validation in WPF Diagram control | Syncfusion®
+description: Learn here all about Appearance and Validation support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
