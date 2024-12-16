@@ -245,25 +245,20 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 ![WPF Scheduler month view Leading and Trailing Days Visibility](Month-View_Images/wpf-scheduler-leading-and-trailing-days-visibility.png)
 
 ## Change the number of visible weeks
-
 The number of weeks visible in the month view can be changed by setting the `NumberOfVisibleWeeks` property of [MonthViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [`SfScheduler`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html). By default, 6 weeks are visible.
 
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
-
 <syncfusion:SfScheduler x:Name="Schedule" 
                         ViewType="Month">
     <syncfusion:SfScheduler.MonthViewSettings>
         <syncfusion:MonthViewSetting NumberOfVisibleWeeks="3"/>
     </syncfusion:SfScheduler.MonthViewSettings>
 </syncfusion:SfScheduler>
-
 {% endhighlight %}
 {% highlight c#  hl_lines="2" %}
-
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
-
 {% endhighlight %}
 {% endtabs %}
 
