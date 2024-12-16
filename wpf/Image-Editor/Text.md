@@ -117,7 +117,7 @@ this.editor.Loaded += this.OnImageEditorLoaded;
 private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
 {
     TextSettings textSettings = new TextSettings();
-    textSettings.Background = new SolidColorBrush(Colors.Yellow);
+    textSettings.Background = new SolidColorBrush(Colors.PeachPuff);
     textSettings.FontFamily = new FontFamily("Century Schoolbook");
     textSettings.FontSize = 30;
     textSettings.Color = new SolidColorBrush(Colors.Red);
@@ -126,10 +126,10 @@ private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
     this.editor.AddText("Good morning", textSettings);
 
     textSettings = new TextSettings();
-    textSettings.Background = new SolidColorBrush(Colors.Ivory);
+    textSettings.Background = new SolidColorBrush(Colors.LightYellow);
     textSettings.FontFamily = new FontFamily("Bell MT");
     textSettings.FontSize = 22;
-    textSettings.Color = new SolidColorBrush(Colors.DarkGreen);
+    textSettings.Color = new SolidColorBrush(Colors.Teal);
     textSettings.TextEffects =  TextEffects.Italic;
     textSettings.Bounds = new Rect(50, 23, 30, 15);
     textSettings.TextAlignment = TextAlignment.Center;
@@ -138,8 +138,8 @@ private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 {% endtabs %} 
-
-![Text](Images/Text.jpg)   
+ss
+![Text-settings-in-WPF-Image-editor](Images/text-settings-in-wpf-image-editor.jpg)   
 
 ## See also
 
