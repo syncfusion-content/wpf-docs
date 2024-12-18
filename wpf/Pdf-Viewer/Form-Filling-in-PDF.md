@@ -78,7 +78,7 @@ private void PdfViewer_FormFieldClicked(object sender, FormFieldClickedEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-N> The sample project of PDF form filling using the Syncfusion PDF Viewer is available in the [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/pdfviewer).
+N> The sample project of PDF form filling using the Syncfusion&reg; PDF Viewer is available in the [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/pdfviewer).
 
 ## Import and Export Form Data
 
