@@ -120,11 +120,11 @@ You can customize the marker appearance by using the [`MarkerTemplate`](https://
 		
 {% endhighlight %}
 {% highlight c# hl_lines="3" %}
-	ShapeFileLayer shape = new ShapeFileLayer();
-	shape.Uri = "Maps.ShapeFiles.world1.shp";
-	shape.MarkerTemplate= this.Resources["markerTemplate"] as DataTemplate;
-	shape.Markers = view.Models;
-	this.maps.Layers.Add(shape);
+ShapeFileLayer shape = new ShapeFileLayer();
+shape.Uri = "Maps.ShapeFiles.world1.shp";
+shape.MarkerTemplate= this.Resources["markerTemplate"] as DataTemplate;
+shape.Markers = view.Models;
+this.maps.Layers.Add(shape);
 {% endhighlight %}
 {% highlight c# tabtitle="MarkerDetails.cs" %}
 public class MarkerDetails
