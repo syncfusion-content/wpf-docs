@@ -284,7 +284,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> The sample projects for organizing pages using the Syncfusion PDF Viewer are available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/OrganzingPages-Examples/PageOrganizer).
+N> The sample projects for organizing pages using the Syncfusion&reg; PDF Viewer are available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/OrganzingPages-Examples/PageOrganizer).
 
 ## Show/Hide the annotations in page organizer panel
 
