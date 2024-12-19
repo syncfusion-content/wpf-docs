@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Organize Pages in WPF Pdf Viewer control | Syncfusion
-description: Learn about Organize Pages support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
+title: Organize Pages in WPF Pdf Viewer control | Syncfusion&reg;
+description: Learn about Organize Pages support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -284,7 +284,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> The sample projects for organizing pages using the Syncfusion PDF Viewer are available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/OrganzingPages-Examples/PageOrganizer).
+N> The sample projects for organizing pages using the Syncfusion&reg; PDF Viewer are available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/OrganzingPages-Examples/PageOrganizer).
 
 ## Show/Hide the annotations in page organizer panel
 

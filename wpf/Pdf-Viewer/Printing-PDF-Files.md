@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing PDF Files in WPF Pdf Viewer control | Syncfusion
-description: Learn about Printing PDF Files support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
+title: Printing PDF Files in WPF Pdf Viewer control | Syncfusion&reg;
+description: Learn about Printing PDF Files support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug

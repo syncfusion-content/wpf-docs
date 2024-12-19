@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Commands in WPF Pdf Viewer control | Syncfusion
-description: Learn about Working with Commands support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
+title: Working with Commands in WPF Pdf Viewer control | Syncfusion&reg;
+description: Learn about Working with Commands support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -379,7 +379,7 @@ The following XAML code shows how to bind the annotation command for underline a
 
 ## Undo/Redo Command
 
-The UndoCommand and RedoCommand provided by Syncfusion enable users to revert or reapply their recent actions on the PDF document
+The UndoCommand and RedoCommand provided by Syncfusion&reg; enable users to revert or reapply their recent actions on the PDF document
 
 *   [UndoCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_UndoCommand)
 *   [RedoCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_RedoCommand)
