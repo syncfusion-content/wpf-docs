@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change the Current user in PdfViewer | Syncfusion
-description: Learn about how to Change the CurrentUser in Syncfusion WPF Pdf Viewer control using CurrentUser property.
+title: Change the Current user in PdfViewer | Syncfusion&reg;
+description: Learn about how to Change the CurrentUser in Syncfusion&reg; WPF Pdf Viewer control using CurrentUser property.
 platform: wpf
 control: PDF Viewer
 documentation: ug
