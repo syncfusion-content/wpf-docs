@@ -55,7 +55,7 @@ You can create a PDF Viewer application by simply drag the control from the Visu
 ### Drag and drop the PdfViewerControl from the toolbox
 Follow these steps to drag and drop the PdfViewerControl from the toolbox.
 
-1. After installing the Syncfusion Essential Studio&reg; in your machine, create a new WPF application in Visual Studio.
+1. After installing the Syncfusion&reg; Essential Studio&reg; in your machine, create a new WPF application in Visual Studio.
 2. Open the Visual Studio toolbox.
 3. Navigate to <b>Syncfusion&reg; WPF Toolbox</b> tab and drag the `PdfViewerControl` toolbox item to the Designer window, it automatically adds the required references to the current application.
 
