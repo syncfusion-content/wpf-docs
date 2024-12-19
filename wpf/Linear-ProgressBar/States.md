@@ -1,7 +1,7 @@
 ---
 layout: post
-title: States of the WPF Linear ProgressBar control | Syncfusion
-description: Learn here about states like determinate, indeterminate and Buffer in the Syncfusion WPF Linear ProgressBar control and more details.
+title: States of the WPF Linear ProgressBar control | Syncfusion&reg;
+description: Learn here about states like determinate, indeterminate and Buffer in the Syncfusion&reg; WPF Linear ProgressBar control and more details.
 platform: WPF
 control: SfLinearProgressBar
 documentation: ug
