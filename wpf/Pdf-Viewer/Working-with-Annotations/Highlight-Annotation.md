@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Highlight text in PDF files using WPF PDF Viewer | Syncfusion
-description: Learn about highlight annotation support in Syncfusion WPF PDF Viewer control, and the manipulations.
+title: Highlight text in PDF files using WPF PDF Viewer | Syncfusion&reg;
+description: Learn about highlight annotation support in Syncfusion&reg; WPF PDF Viewer control, and the manipulations.
 platform: wpf
 control: PDF Viewer
 documentation: ug

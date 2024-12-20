@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Squiggly text in PDF files using WPF PDF Viewer | Syncfusion
-description: Learn about squiggly annotation support in Syncfusion WPF PDF Viewer control, and the manipulations.
+title: Squiggly text in PDF files using WPF PDF Viewer | Syncfusion&reg;
+description: Learn about squiggly annotation support in Syncfusion&reg; WPF PDF Viewer control, and the manipulations.
 platform: wpf
 control: PDF Viewer
 documentation: ug

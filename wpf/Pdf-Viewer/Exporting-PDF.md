@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting PDF pages in WPF Pdf Viewer control | Syncfusion
-description: Learn about Exporting PDF pages support in Syncfusion WPF Pdf Viewer control, its elements and more.
+title: Exporting PDF pages in WPF Pdf Viewer control | Syncfusion&reg;
+description: Learn about Exporting PDF pages support in Syncfusion&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting PDF pages in WPF Pdf Viewer
 
-Essential PDF Viewer allows exporting pages of a PDF file into JPG, PNG, TIFF, and BMP formats using [ExportAsImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) methods. This option helps to convert PDF pages into images.
+Essential&reg; PDF Viewer allows exporting pages of a PDF file into JPG, PNG, TIFF, and BMP formats using [ExportAsImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) methods. This option helps to convert PDF pages into images.
 
 ## Exporting a single page
 
@@ -203,7 +203,7 @@ if (images != null)
 {% endhighlight %}
 {% endtabs %}
 
-N> The complete sample project of exporting the PDF pages to images using the Syncfusion PDF viewer is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Export/PDFToImage).
+N> The complete sample project of exporting the PDF pages to images using the Syncfusion&reg; PDF viewer is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Export/PDFToImage).
 
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

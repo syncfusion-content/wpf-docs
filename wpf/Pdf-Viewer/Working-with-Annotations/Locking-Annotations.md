@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to lock an annotation in WPF pdf viewer | Syncfusion
+title: How to lock an annotation in WPF pdf viewer | Syncfusion&reg;
 description: Learn about how to enable or disable lock option for an annotation programmatically or UI using WPF Pdf Viewer.
 platform: wpf
 control: PDF Viewer

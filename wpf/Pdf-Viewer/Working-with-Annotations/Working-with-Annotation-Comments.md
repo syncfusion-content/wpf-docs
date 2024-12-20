@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with annotation comments using WPF PDF Viewer | Syncfusion
-description: Learn how to expand or collapse, show or hide the comments pane, and add, edit, or delete annotation comments in the Syncfusion WPF PDF Viewer control.
+title: Working with annotation comments using WPF PDF Viewer | Syncfusion&reg;
+description: Learn how to expand or collapse, show or hide the comments pane, and add, edit, or delete annotation comments in the Syncfusion&reg; WPF PDF Viewer control.
 platform: wpf
 control: PDF Viewer
 documentation: ug
