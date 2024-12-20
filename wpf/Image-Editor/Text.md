@@ -63,8 +63,8 @@ Text can be aligned to the left, center, or right by clicking the corresponding 
 
 You can add text to an image using the AddText method programmatically. This method requires the following parameters:
 
-* Text – Specifies the content you need to add on the image.
-* TextSettings - Customizes the text.
+* Text - Specifies the content you need to add on the image.
+* TextSettings - Customize the appearance of text by changing the background, font family, font size, and font color. Adjust alignment with options like center, left, and right, and enhance text with effects such as bold, italic, and underline.
 
 {% tabs %} 
 {% highlight XAML %} 
