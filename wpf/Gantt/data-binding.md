@@ -32,8 +32,6 @@ The following code illustrates how to bind the Task Details to the Gantt Control
 
 {% highlight c# %}
 
-this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
-
 // Task attribute mapping
 TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
 taskAttributeMapping.TaskIdMapping = "TaskId";
@@ -146,41 +144,24 @@ The following code illustrate how to map the properties using the [TaskAttribute
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GanttControl x:Name="ganttControl" 
-                         ItemsSource="{Binding TaskDetails}">
-    <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
-                                         TaskNameMapping="Name"
-                                         StartDateMapping="StartDate"
-                                         ChildMapping="ChildCollection"
-                                         FinishDateMapping="EndDate"
-                                         DurationMapping="Duration"
-                                         ProgressMapping="Progress"
-                                         PredecessorMapping="Predecessor"
-                                         ResourceInfoMapping="Resource"/>
-    </syncfusion:GanttControl.TaskAttributeMapping>
-    <syncfusion:GanttControl.DataContext>
-        <local:ViewModel/>
-    </syncfusion:GanttControl.DataContext>
+<syncfusion:GanttControl x:Name="ganttControl">
 </syncfusion:GanttControl>
 
 {% endhighlight  %}
 {% highlight c# %}
 
-this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
-
 // Task attribute mapping
 TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
-taskAttributeMapping.TaskIdMapping = "ID";
-taskAttributeMapping.TaskNameMapping = "Name";
+taskAttributeMapping.TaskIdMapping = "TaskId";
+taskAttributeMapping.TaskNameMapping = "TaskName";
 taskAttributeMapping.StartDateMapping = "StartDate";
-taskAttributeMapping.ChildMapping = "ChildCollection";
-taskAttributeMapping.FinishDateMapping = "EndDate";
+taskAttributeMapping.ChildMapping = "Child";
+taskAttributeMapping.FinishDateMapping = "FinishDate";
 taskAttributeMapping.DurationMapping = "Duration";
 taskAttributeMapping.ProgressMapping = "Progress";
-taskAttributeMapping.PredecessorMapping = "Predecessor";
-taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
+
+this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight  %}
 {% endtabs %}
@@ -211,8 +192,6 @@ The following code illustrates how to bind the external source to Gantt control:
 {% endhighlight  %}
 {% highlight c# %}
 
-this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
-
 // Task attribute mapping
 TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
 taskAttributeMapping.TaskIdMapping = "ID";
@@ -225,6 +204,8 @@ taskAttributeMapping.ProgressMapping = "Progress";
 taskAttributeMapping.PredecessorMapping = "Predecessor";
 taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
+
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 
 {% endhighlight  %}
 {% highlight c# tabtitle="Task.cs" %}
