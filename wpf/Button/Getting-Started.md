@@ -402,7 +402,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
        }
     }
 
-    public class ViewModel
+    public class ViewModel : INotifyPropertyChanged
     {
        private Model _model;
        public event PropertyChangedEventHandler PropertyChanged;
