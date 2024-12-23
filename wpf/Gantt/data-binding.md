@@ -25,7 +25,7 @@ The following code illustrates how to bind the Task Details to the Gantt Control
 
 {% highlight xaml %}
 
-<syncfusion:GanttControl x:Name="ganttControl">
+<syncfusion:GanttControl x:Name="ganttControl"
                          ItemsSource="{Binding TaskDetails}">
     <syncfusion:GanttControl.TaskAttributeMapping>
         <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
