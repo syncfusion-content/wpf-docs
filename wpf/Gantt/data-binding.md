@@ -160,15 +160,15 @@ The following code illustrate how to map the properties using the [TaskAttribute
 <syncfusion:GanttControl x:Name="ganttControl" 
                          ItemsSource="{Binding TaskDetails}">
     <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
+        <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
                                          TaskNameMapping="Name"
                                          StartDateMapping="StartDate"
-                                         ChildMapping="Child"
-                                         FinishDateMapping="FinishDate"
+                                         ChildMapping="ChildCollection"
+                                         FinishDateMapping="EndDate"
                                          DurationMapping="Duration"
                                          ProgressMapping="Progress"
                                          PredecessorMapping="Predecessor"
-                                         ResourceInfoMapping="Resources"/>
+                                         ResourceInfoMapping="Resource"/>
     </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
@@ -180,15 +180,15 @@ The following code illustrate how to map the properties using the [TaskAttribute
 
 // Task attribute mapping
 TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
-taskAttributeMapping.TaskIdMapping = "TaskId";
-taskAttributeMapping.TaskNameMapping = "TaskName";
+taskAttributeMapping.TaskIdMapping = "ID";
+taskAttributeMapping.TaskNameMapping = "Name";
 taskAttributeMapping.StartDateMapping = "StartDate";
-taskAttributeMapping.ChildMapping = "Child";
-taskAttributeMapping.FinishDateMapping = "FinishDate";
+taskAttributeMapping.ChildMapping = "ChildCollection";
+taskAttributeMapping.FinishDateMapping = "EndDate";
 taskAttributeMapping.DurationMapping = "Duration";
 taskAttributeMapping.ProgressMapping = "Progress";
 taskAttributeMapping.PredecessorMapping = "Predecessor";
-taskAttributeMapping.ResourceInfoMapping = "Resources";
+taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
