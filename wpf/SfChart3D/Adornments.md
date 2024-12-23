@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adornments | SfChart | Wpf | Syncfusion
+title: Adornments | SfChart | Wpf | Syncfusion®
 description: This section explains about adornments behavior and its customization properties in WPF Chart (SfChart3D)
 platform: wpf
 control: SfChart3D

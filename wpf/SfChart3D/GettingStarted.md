@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF SfChart3D control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF SfChart3D control, its elements and more.
+title: Getting Started with WPF SfChart3D control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Essential Studio® WPF SfChart3D control, its elements and more.
 platform: wpf
 control: SfChart3D
 documentation: ug
@@ -13,7 +13,7 @@ This section explains you the steps required to populate the Chart with data, he
 
 ## Adding chart reference
 
-Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls to Visual Studio projects in various ways. You can also refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to learn about the assemblies required for adding Chart to your project. 
+Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion® controls to Visual Studio projects in various ways. You can also refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to learn about the assemblies required for adding Chart to your project. 
 
 ## Initialize chart
 
