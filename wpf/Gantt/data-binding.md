@@ -26,6 +26,19 @@ The following code illustrates how to bind the Task Details to the Gantt Control
 {% highlight xaml %}
 
 <syncfusion:GanttControl x:Name="ganttControl">
+                         ItemsSource="{Binding TaskDetails}">
+    <syncfusion:GanttControl.TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
+                                         TaskNameMapping="TaskName"
+                                         StartDateMapping="StartDate"
+                                         ChildMapping="Child"
+                                         FinishDateMapping="FinishDate"
+                                         DurationMapping="Duration"
+                                         ProgressMapping="Progress"/>
+    </syncfusion:GanttControl.TaskAttributeMapping>
+    <syncfusion:GanttControl.DataContext>
+        <local:ViewModel/>
+    </syncfusion:GanttControl.DataContext>
 </syncfusion:GanttControl>
 
 {% endhighlight %}
@@ -144,7 +157,22 @@ The following code illustrate how to map the properties using the [TaskAttribute
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GanttControl x:Name="ganttControl">
+<syncfusion:GanttControl x:Name="ganttControl" 
+                         ItemsSource="{Binding TaskDetails}">
+    <syncfusion:GanttControl.TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping TaskIdMapping="TaskId"
+                                         TaskNameMapping="Name"
+                                         StartDateMapping="StartDate"
+                                         ChildMapping="Child"
+                                         FinishDateMapping="FinishDate"
+                                         DurationMapping="Duration"
+                                         ProgressMapping="Progress"
+                                         PredecessorMapping="Predecessor"
+                                         ResourceInfoMapping="Resources"/>
+    </syncfusion:GanttControl.TaskAttributeMapping>
+    <syncfusion:GanttControl.DataContext>
+        <local:ViewModel/>
+    </syncfusion:GanttControl.DataContext>
 </syncfusion:GanttControl>
 
 {% endhighlight  %}
@@ -159,6 +187,8 @@ taskAttributeMapping.ChildMapping = "Child";
 taskAttributeMapping.FinishDateMapping = "FinishDate";
 taskAttributeMapping.DurationMapping = "Duration";
 taskAttributeMapping.ProgressMapping = "Progress";
+taskAttributeMapping.PredecessorMapping = "Predecessor";
+taskAttributeMapping.ResourceInfoMapping = "Resources";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
