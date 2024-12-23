@@ -191,7 +191,7 @@ taskAttributeMapping.PredecessorMapping = "Predecessor";
 taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
-this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 
 {% endhighlight  %}
 {% endtabs %}
