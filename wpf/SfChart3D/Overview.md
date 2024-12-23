@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WPF SfChart3D control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF SfChart3D control, its elements and more.
+title: About WPF SfChart3D control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Essential Studio® WPF SfChart3D control, its elements and more.
 platform: wpf
 control: SfChart3D
 documentation: ug
