@@ -314,8 +314,11 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+     <Window.DataContext>
+      <local:Model/>
+     </Window.DataContext>
     <Window.Resources>
-        <DataTemplate x:Key="newIcon">
+        <DataTemplate x:Key="checkedIcon">
             <Grid Width="12" Height="16">
                 <Path
                       Margin="0.5"
@@ -328,7 +331,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
                      Stretch="Fill" />
             </Grid>
         </DataTemplate>
-        <DataTemplate x:Key="OpenIcon">
+        <DataTemplate x:Key="unCheckedIcon">
             <Grid Width="16" Height="16">
                 <Path
                      Margin="0.5,0.5,0.738,0.502"
@@ -341,12 +344,12 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
                      Stretch="Fill" />
             </Grid>
         </DataTemplate>
-        <local:Model x:Key="IconTemp" NewIcon="{StaticResource newIcon}" OpenIcon="{StaticResource OpenIcon}"/>
+        <local:IconTemplateSelector x:Key="IconTemp" CheckedIcon="{StaticResource checkedIcon}" UnCheckedIcon="{StaticResource unCheckedIcon}"/>
     </Window.Resources>
     <Grid>
         <StackPanel VerticalAlignment="Center">
-            <CheckBox Name="Check" IsChecked="{Binding IsChecked}" HorizontalAlignment="Center"  Content="ChangeIcon"/>
-            <syncfusion:ButtonAdv HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}" DataContext="{Binding IsChecked}"/>
+            <CheckBox Name="Check" IsChecked="{Binding IsChecked}" Checked="Check_Checked" Unchecked="Check_Unchecked"  HorizontalAlignment="Center"  Content="ChangeIcon"/>
+            <syncfusion:ButtonAdv x:Name="button" HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}"/>
         </StackPanel>
     </Grid>
  </Window>
@@ -355,35 +358,87 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
  {% highlight c# %}
 
-    public class Model : DataTemplateSelector,INotifyPropertyChanged
+   public partial class MainWindow : Window
     {
-     public DataTemplate NewIcon { get; set; }
-     public DataTemplate OpenIcon { get; set; }
-     private bool _isChecked;
-     public event PropertyChangedEventHandler PropertyChanged;
-     public bool IsChecked
-     {
-       get => _isChecked;
-       set
+       public MainWindow()
        {
-         if (_isChecked != value)
-         {
-             _isChecked = value;
-             OnPropertyChanged(nameof(IsChecked));
-         }
+         InitializeComponent();
        }
-     }
-     protected void OnPropertyChanged(string propertyName) =>
-     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
-     public override DataTemplate SelectTemplate(object item, DependencyObject container)
-     {
-        if (item is bool isChecked)
+      private void Check_Unchecked(object sender, RoutedEventArgs e)
+      {
+         SetIconTemplateSelector();
+      }
+
+      private void Check_Checked(object sender, RoutedEventArgs e)
+      {
+         SetIconTemplateSelector();
+      }
+
+      private void SetIconTemplateSelector()
         {
-           return isChecked ? NewIcon : OpenIcon;
+            var templateSelector = new IconTemplateSelector
+           {
+             CheckedIcon = (DataTemplate)this.Resources["CheckedIcon"],
+             UnCheckedIcon = (DataTemplate)this.Resources["UnCheckedIcon"]
+           };
+         button.IconTemplateSelector = templateSelector;
         }
-      return base.SelectTemplate(item, container);
-     }
+    }
+
+    public class Model 
+    {
+       private bool _isChecked;
+       public bool IsChecked
+       {
+         get { return _isChecked; }
+         set
+          {
+            if (_isChecked != value)
+            {
+             _isChecked = value;
+            }
+          }
+       }
+    }
+
+     public class ViewModel : INotifyPropertyChanged
+    {
+       private Model _model;
+       public event PropertyChangedEventHandler PropertyChanged;
+       public ViewModel()
+        {
+            _model = new Model();
+        }
+       public bool IsChecked
+        {
+          get => _model.IsChecked;
+          set
+          {
+            if (_model.IsChecked != value)
+            {
+              _model.IsChecked = value;
+              OnPropertyChanged(nameof(IsChecked));
+            }
+          }
+       }
+     
+      protected void OnPropertyChanged(string propertyName) =>
+      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+
+    public class IconTemplateSelector : DataTemplateSelector
+    {
+       public DataTemplate CheckedIcon { get; set; }
+       public DataTemplate UnCheckedIcon { get; set; }
+       public override DataTemplate SelectTemplate(object item, DependencyObject container)
+        {
+         if (item is Model model)
+         {
+             return model.IsChecked ? CheckedIcon : UnCheckedIcon;
+         }
+         return base.SelectTemplate(item, container);
+        }
     }
 
  {% endhighlight %}
