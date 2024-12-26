@@ -402,9 +402,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
  {% endtabs %}
 
-![IconTemplateSelector in WPF Button](Getting-Started_images/Getting-Started_img13.png)
-
-![IconTemplateSelector in WPF Button](Getting-Started_images/Getting-Started_img14.png)
+![IconTemplateSelector in WPF Button](Getting-Started_images/Getting-Started_IconTemplateSelector.gif)
 
  N> The [ButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html) loads the icon in the following priority order.
 * [IconTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IconTemplateSelector)
