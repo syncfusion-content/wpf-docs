@@ -349,7 +349,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
     <Grid>
         <StackPanel VerticalAlignment="Center">
             <CheckBox Name="Check" IsChecked="{Binding IsChecked,Mode=TwoWay}" HorizontalAlignment="Center"  Content="ChangeIcon"/>
-            <syncfusion:ButtonAdv x:Name="button" HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}" DataContext="{Binding IsChecked}"/>
+            <syncfusion:ButtonAdv x:Name="button" HorizontalAlignment="Center" Margin="10" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}" DataContext="{Binding IsChecked}"/>
         </StackPanel>
     </Grid>
  </Window>
