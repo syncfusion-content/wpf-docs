@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get current page displayed in WPF Pdf Viewer | Syncfusion&reg;
+title: Acquire current page being displayed in WPF Pdf Viewer | Syncfusion®
 description: Learn about Acquire current page being displayed support in Syncfusion&reg; WPF Pdf Viewer control and more.
 platform: wpf
 control: PDF Viewer
