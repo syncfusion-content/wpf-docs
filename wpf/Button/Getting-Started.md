@@ -385,9 +385,9 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
        public DataTemplate UnCheckedIcon { get; set; }
        public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
-         if (item is bool IsChecked)
+         if (item is bool isChecked)
          {
-             return IsChecked ? CheckedIcon : UnCheckedIcon;
+             return isChecked ? CheckedIcon : UnCheckedIcon;
          }
          return base.SelectTemplate(item, container);
         }
