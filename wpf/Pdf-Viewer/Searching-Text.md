@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Search text in PDF files using WPF PDF Viewer | Syncfusion
-description: Learn about Searching Text support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
+title: Search text in PDF files using WPF PDF Viewer | Syncfusion&reg;
+description: Learn about Searching Text support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
