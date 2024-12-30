@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual Data Editing in WPF Charts control | Syncfusion
-description: Learn here all about Visual Data Editing support in Syncfusion WPF Charts (SfChart) control and more.
+title: Visual Data Editing in WPF Charts control | Syncfusion®
+description: Learn here all about Visual Data Editing support in Syncfusion® WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug

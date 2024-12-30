@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Features in WPF Charts control | Syncfusion
-description: Learn here all about Interactive Features support in Syncfusion WPF Charts (SfChart) control and more.
+title: Interactive Features in WPF Charts control | Syncfusion®
+description: Learn here all about Interactive Features support in Syncfusion® WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
