@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Label in WPF SfChart3D control | Syncfusion®
-description: Learn about Data Label support in Syncfusion® Essential Studio WPF SfChart3D control, its elements and more.
+description: Learn about Data Label support in Syncfusion® Essential Studio® WPF SfChart3D control, its elements and more.
 platform: wpf
 control: SfChart3D
 documentation: ug

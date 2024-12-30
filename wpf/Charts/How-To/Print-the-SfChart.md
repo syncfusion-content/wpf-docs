@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Print the SfChart| SfChart | Wpf | Syncfusion®
-description: Print the sfchart in Syncfusion® Essential Studio WPF Chart (SfChart) control, its elements and more.
+description: Print the sfchart in Syncfusion® Essential Studio® WPF Chart (SfChart) control, its elements and more.
 platform: wpf
 control: SfChart
 documentation: ug
