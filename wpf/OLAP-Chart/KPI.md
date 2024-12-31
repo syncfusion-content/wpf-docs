@@ -1,7 +1,7 @@
 ---
 layout: post
 title: KPI in WPF Olap Chart control | Syncfusion®
-description: Learn about KPI support in Syncfusion® Essential Studio® WPF Olap Chart control, its elements and more details.
+description: Learn about KPI support in Syncfusion Essential Studio® WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart
 documentation: ug
