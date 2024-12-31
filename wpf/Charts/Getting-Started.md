@@ -317,7 +317,7 @@ chart.Series.Add(series)
 
 {% endtabs %} 
 
-N> Syncfusion Chart also supports rendering combination of multiple series. Refer to [`this`](https://help.syncfusion.com/wpf/charts/area#multiple-area) for details.
+N> Syncfusion® Chart also supports rendering combination of multiple series. Refer to [`this`](https://help.syncfusion.com/wpf/charts/area#multiple-area) for details.
 
 ## Add title
 
