@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resizable Scrollbar in WPF Charts control | Syncfusion
-description: Learn here all about Resizable Scrollbar support in Syncfusion WPF Charts (SfChart) control and more.
+description: Learn here all about Resizable Scrollbar support in Syncfusion® WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
