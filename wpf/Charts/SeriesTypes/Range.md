@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range Chart in WPF Charts control | Syncfusion®
+title: Range Chart in WPF Charts control | Syncfusion
 description: Learn here all about Range Chart support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart

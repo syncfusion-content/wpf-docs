@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Marker in WPF SfChart3D control | Syncfusion®
+title: Data Marker in WPF SfChart3D control | Syncfusion
 description: Learn about Data Marker support in Syncfusion Essential Studio® WPF SfChart3D control, its elements and more.
 platform: wpf
 control: SfChart3D

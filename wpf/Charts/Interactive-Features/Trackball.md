@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trackball in WPF Charts control | Syncfusion®
+title: Trackball in WPF Charts control | Syncfusion
 description: Learn here all about Trackball support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart

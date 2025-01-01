@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation in WPF Charts control | Syncfusion®
+title: Animation in WPF Charts control | Syncfusion
 description: Learn here all about Animation support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart

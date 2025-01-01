@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fast Bitmap Series in WPF Charts control | Syncfusion®
+title: Fast Bitmap Series in WPF Charts control | Syncfusion
 description: Learn here all about Fast Bitmap Series support in Syncfusion® WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart

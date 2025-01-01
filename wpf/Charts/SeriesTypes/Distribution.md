@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Histogram Chart in WPF Charts control | Syncfusion®
+title: Histogram Chart in WPF Charts control | Syncfusion
 description: Learn here all about Histogram Chart support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart

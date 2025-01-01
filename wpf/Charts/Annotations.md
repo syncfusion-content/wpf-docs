@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotations in WPF Charts control | Syncfusion®
+title: Annotations in WPF Charts control | Syncfusion
 description: Learn here all about Annotations support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactivity in WPF Range Selector control | Syncfusion®
+title: Interactivity in WPF Range Selector control | Syncfusion
 description: Learn here all about Interactivity support in Syncfusion® WPF Range Selector (SfDateTimeRangeNavigator) control and more.
 platform: wpf
 control: SfDateTimeRangeNavigator

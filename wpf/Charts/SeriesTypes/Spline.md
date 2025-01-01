@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spline Chart in WPF Charts control | Syncfusion®
+title: Spline Chart in WPF Charts control | Syncfusion
 description: Learn here all about Spline Chart support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart

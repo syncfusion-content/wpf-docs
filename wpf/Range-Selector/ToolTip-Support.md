@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip Support in WPF Range Selector control | Syncfusion®
+title: ToolTip Support in WPF Range Selector control | Syncfusion
 description: Learn here all about ToolTip Support in Syncfusion® WPF Range Selector (SfDateTimeRangeNavigator) control and more.
 platform: wpf
 control: SfDateTimeRangeNavigator

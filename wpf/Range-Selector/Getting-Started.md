@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WPF Range Selector control | Syncfusion®
+title: Getting Started with WPF Range Selector control | Syncfusion
 description: Learn here about getting started with Syncfusion® WPF Range Selector (SfDateTimeRangeNavigator) control, its elements and more.
 platform: wpf
 control: SfDateTimeRangeNavigator

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Palette in WPF Olap Chart control | Syncfusion®
+title: Palette in WPF Olap Chart control | Syncfusion
 description: Learn about Palette support in Syncfusion Essential Studio® WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart

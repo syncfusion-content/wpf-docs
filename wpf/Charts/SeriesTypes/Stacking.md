@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked Chart in WPF Charts control | Syncfusion®
+title: Stacked Chart in WPF Charts control | Syncfusion
 description: Learn here all about Stacked Chart support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart

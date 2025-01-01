@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging in WPF Olap Chart control | Syncfusion®
+title: Paging in WPF Olap Chart control | Syncfusion
 description: Learn about Paging support in Syncfusion Essential Studio® WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart

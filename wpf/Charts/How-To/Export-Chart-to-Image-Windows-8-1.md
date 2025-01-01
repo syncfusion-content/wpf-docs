@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export Chart to Image Windows 8.1 in WPF Chart Control | Syncfusion®
+title: Export Chart to Image Windows 8.1 in WPF Chart Control | Syncfusion
 description: Learn here all about export chart to image windows 8.1 support in Syncfusion Essential® WPF Chart(SFChart) control, it's elements, and more.
 platform: wpf
 control: SfChart
