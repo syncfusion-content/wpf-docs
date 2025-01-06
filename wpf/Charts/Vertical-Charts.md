@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vertical Charts in WPF Charts control | Syncfusion
-description: Learn here all about Vertical Charts support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
+description: Learn here all about Vertical Charts support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
