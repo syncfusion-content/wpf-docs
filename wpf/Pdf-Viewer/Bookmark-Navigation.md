@@ -92,6 +92,8 @@ private void PdfViewer_DocumentLoaded(object sender, System.EventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
+N>You can also explore our [WPF PDF Viewer example](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Navigation/Bookmark/Bookmark_Navigation) to know how to Programmatically navigate to a bookmark destination in  pdfviewer.
+
 ## Enabling and disabling bookmark feature
 
 You can enable and disable the bookmark button from the built-in toolbar using the `IsBookmarkEnabled` property available in `PdfViewerControl`.
