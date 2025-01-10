@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF Charts control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Charts (SfChart) control, its elements and more.
+description: Learn here about getting started with Syncfusion® WPF Charts (SfChart) control, its elements and more.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -17,7 +17,7 @@ To get start quickly with [WPF Chart](https://www.syncfusion.com/wpf-controls/ch
 
 ## Adding chart reference
 
-Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls to Visual Studio projects in various ways. You can also refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to learn about the assemblies required for adding Chart to your project. 
+Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion® controls to Visual Studio projects in various ways. You can also refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to learn about the assemblies required for adding Chart to your project. 
  
 ## Initialize chart
 
@@ -317,7 +317,7 @@ chart.Series.Add(series)
 
 {% endtabs %} 
 
-N> Syncfusion Chart also supports rendering combination of multiple series. Refer to [`this`](https://help.syncfusion.com/wpf/charts/area#multiple-area) for details.
+N> Syncfusion® Chart also supports rendering combination of multiple series. Refer to [`this`](https://help.syncfusion.com/wpf/charts/area#multiple-area) for details.
 
 ## Add title
 
