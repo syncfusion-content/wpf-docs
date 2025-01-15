@@ -11,31 +11,11 @@ documentation: ug
 
 By using the [TypingIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_TypingIndicator) property, a typing indicator is shown while the AI is processing or generating a response, giving users real-time feedback and enhancing conversational flow
 
+## Create a ViewModel class with TypingIndicator
+
+Create a simple suggestion collection as shown in the following code example in a new class file. Save it as ViewModel.cs file.
+
 {% tabs %}
-
-{% highlight xaml %}
-
-<Page
-    x:Class="GettingStarted.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
-      <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"
-                                   Suggestions="{Binding Suggestion}"
-                                   ShowTypingIndicator="True"
-                                   TypingIndicator="{Binding TypingIndicator}"
-                                   Messages="{Binding Chats}"/>
-    </Grid>
-</Page>
-
-{% endhighlight %} 
-
 {% highlight C# %}
 
  public class ViewModel : INotifyPropertyChanged
@@ -128,6 +108,40 @@ By using the [TypingIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
      public event PropertyChangedEventHandler PropertyChanged;
   }
+
+{% endhighlight %}
+{% endtabs %}
+
+## Bind the TypingIndicator
+
+Set the ViewModel as the DataContext for the AI AssistView or the parent window. This allows data binding between the UI and the ViewModel properties.
+To populate AI AssistView, bind the [TypingIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_TypingIndicator) in ViewModel to Messages property of AI AssistView.
+When the application runs, the TypingIndicator will show an animation representing the AI or user typing a message. This indicator is shown when the [ShowTypingIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_ShowTypingIndicator) property value as true.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window
+    x:Class="GettingStarted.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GettingStarted"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+     <Grid.DataContext>
+        <local:ViewModel/>
+     </Grid.DataContext>
+      <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"
+                                   Suggestions="{Binding Suggestion}"
+                                   ShowTypingIndicator="True"
+                                   TypingIndicator="{Binding TypingIndicator}"
+                                   Messages="{Binding Chats}"/>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
