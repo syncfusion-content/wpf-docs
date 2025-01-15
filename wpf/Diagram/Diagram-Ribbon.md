@@ -298,3 +298,8 @@ private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 
 {% endtabs %}
+
+## See Also
+[How to change the visibility of the BackStageButton in the SfDiagramRibbon control?](https://support.syncfusion.com/kb/article/18414/how-to-change-the-visibility-of-the-backstagebutton-in-the-sfdiagramribbon-control)
+
+[How to change the background color of the diagram using the color picker in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18351/how-to-change-the-background-color-of-the-diagram-using-the-color-picker-in-wpf-diagram-sfdiagram)

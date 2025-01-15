@@ -95,3 +95,9 @@ diagram.CommandManager.Commands.Add(saveGesture);
 ## See Also
 
 [How to map the custom commands to existing gestures (keyboard shortcuts and mouse)?](https://support.syncfusion.com/kb/article/8709/how-to-map-the-custom-commands-to-existing-gestures-keyboard-shortcuts-and-mouse-in-wpf)
+
+[How to add a custom gesture command in the WPF Diagram (SfDiagram )?](https://support.syncfusion.com/kb/article/18237/how-to-add-a-custom-gesture-command-in-the-wpf-diagram-sfdiagram-)
+
+[How to Display Different QuickCommands Based on Nodes in WPF Diagram?](https://support.syncfusion.com/kb/article/17969/how-to-display-different-quickcommands-based-on-nodes-in-wpf-diagram)
+
+[How to add a node as a child of a container using the context menu in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18053/how-to-add-a-node-as-a-child-of-a-container-using-the-context-menu-in-the-wpf-diagram-sfdiagram)

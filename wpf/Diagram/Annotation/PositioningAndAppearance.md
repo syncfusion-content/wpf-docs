@@ -573,3 +573,8 @@ Annotations = new ObservableCollection<IAnnotation>()
 ## See Also
 
 [How to programmatically Show/Hide the Annotations of node and connector?](https://support.syncfusion.com/kb/article/6281/how-to-programmatically-showhide-annotations-in-wpf-diagram-)
+
+[How to set font properties for newly added items Annotations in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18670/how-to-set-font-properties-for-newly-added-items-annotations-in-wpf-diagram-sfdiagram)
+
+
+[How to update text formatting properties of an Annotation in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18407/how-to-update-text-formatting-properties-of-an-annotation-in-wpf-diagram-sfdiagram)

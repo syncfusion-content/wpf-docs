@@ -692,3 +692,11 @@ Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tre
 [How to customize the bridging style for connector?](https://support.syncfusion.com/kb/article/6120/how-to-customize-the-bridging-style-for-connector-in-wpf-diagram-sfdiagram)
 
 [How to customize the direction of bridge?](https://support.syncfusion.com/kb/article/6010/how-to-customize-the-direction-of-bridge-in-wpf-diagram-sfdiagram)
+
+[How to update the size of a Connector's source and target decorators in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18246/how-to-update-the-size-of-a-connectors-source-and-target-decorators-in-the-wpf-diagram-sfdiagram)
+
+[How to prevent the Connector lines from overlapping the Connector's target decorator in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18404/how-to-prevent-the-connector-lines-from-overlapping-the-connectors-target-decorator-in-wpf-diagramsfdiagram)
+
+[How to restrict the Connector's source and target decorator from being positioned in different places in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18413/how-to-restrict-the-connectors-source-and-target-decorator-from-being-positioned-in-different-places-in-wpf-diagram-sfdiagram)
+
+[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)

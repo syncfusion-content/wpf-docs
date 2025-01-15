@@ -268,3 +268,5 @@ diagram.Export();
 ## See Also
  
 [How to export the Diagram as PDF?](https://support.syncfusion.com/kb/article/7520/how-to-export-the-diagram-as-a-pdf-in-the-wpf-diagram-sfdiagram)
+
+[How to Export the Visible Area Within the ViewPort in WPF Diagram?](https://support.syncfusion.com/kb/article/18001/how-to-export-the-visible-area-within-the-viewport-in-wpf-diagram)

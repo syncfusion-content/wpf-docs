@@ -932,3 +932,5 @@ SfDiagram supports various built-in themes. Refer to the below links to apply th
 [How to create treeview and diagram with editing options in the WPF Diagram?](https://support.syncfusion.com/kb/article/9926/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagram-sfdiagram)
 
 [How to create a WPF SfDiagram?](https://support.syncfusion.com/kb/article/8853/how-to-create-a-wpf-diagram-sfdiagram)
+
+[How to use the WPF SfDiagram as the Content of the Node?](https://support.syncfusion.com/kb/article/18397/how-to-use-the-wpf-sfdiagram-as-the-content-of-the-node)

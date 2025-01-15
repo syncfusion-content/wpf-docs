@@ -397,3 +397,5 @@ diagram.PrintingService.ShowClassicPrintPreview();
 [How to get progress notification while printing the diagram pages?](https://support.syncfusion.com/kb/article/8465/how-to-get-progress-notification-while-printing-in-wpf-diagram-sfdiagram)
 
 [How to show classic print preview?](https://support.syncfusion.com/kb/article/8186/how-to-show-classic-print-preview-in-wpf-diagram-sfdiagram)
+
+[How to enable the Print Properties option in the Print dialog in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18697/how-to-enable-the-print-properties-option-in-the-print-dialog-in-wpf-diagram-sfdiagram)
