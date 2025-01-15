@@ -13,8 +13,11 @@ This section explains about how to connect the AI AssistView with OpenAI.
 
 ## Creating an application with NuGet reference.
 
-1. Create a [WPF desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/getting-started/?view=netframeworkdesktop-4.8).
-2. Add reference to [Microsoft Semantic NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet. 
+1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
+2. Add reference to [Syncfusion.SfChat.Wpf](https://www.nuget.org/packages/Syncfusion.SfChat.Wpf) NuGet. 
+3. Import the control namespace `Syncfusion.UI.Xaml.Chat` in XAML or C# code.
+4. Initialize the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
+5. Add reference to [Microsoft Semantic NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet. 
 
 ## Creating the OpenAI view model class.
 
@@ -24,30 +27,6 @@ To connect with OpenAI, we need the following details.
 * API_ENDPOINT: A string variable representing the URL endpoint of the OpenAI API.
 
 {% tabs %}
-
-{% highlight xaml %}
-
-<Page
-    x:Class="GettingStarted.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
-      <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"
-                                   Suggestions="{Binding Suggestion}"
-                                   ShowTypingIndicator="True"
-                                   TypingIndicator="{Binding TypingIndicator}"
-                                   Messages="{Binding Chats}"/>
-    </Grid>
-</Page>
-
-{% endhighlight %} 
-
 {% highlight C# %}
 
  public class ViewModel : INotifyPropertyChanged
@@ -195,6 +174,38 @@ To connect with OpenAI, we need the following details.
  }
 
 {% endhighlight %}
+{% endtabs %}
+
+## Bind Messages
+
+Set the ViewModel as the DataContext for the AI AssistView or the parent window. This allows data binding between the UI and the ViewModel properties.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Page
+    x:Class="GettingStarted.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GettingStarted"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+     <Grid.DataContext>
+        <local:ViewModel/>
+     </Grid.DataContext>
+     <syncfusion:SfAIAssistView    CurrentUser="{Binding CurrentUser}"
+                                   Suggestions="{Binding Suggestion}"
+                                   ShowTypingIndicator="True"
+                                   TypingIndicator="{Binding TypingIndicator}"
+                                   Messages="{Binding Chats}"/>
+    </Grid>
+</Page>
+
+{% endhighlight %} 
 {% endtabs %}
 
 ![WPF AI AssistView control open ai](aiassistview_images/wpf_aiassistview_openai.gif)
