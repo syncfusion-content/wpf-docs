@@ -486,3 +486,11 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 [How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)
 
 [How to prevent the connector segment from collapsing while dragging a node in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)
+
+[How to Get the Node or Connector in the MouseMove Event in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15646/how-to-get-the-node-or-connector-in-the-mousemove-event-in-the-wpf-diagram-sfdiagram)
+
+[How to update the same length for connector segments in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15538/how-to-update-the-same-length-for-connector-segments-in-the-wpf-diagram-sfdiagram)
+
+[How to manage the visibility of node and connector objects in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
+
+[How to create a quick command in WPF Diagram?](https://support.syncfusion.com/kb/article/8951/how-to-create-a-quick-command-in-wpf-diagram)

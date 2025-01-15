@@ -303,3 +303,7 @@ private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
 [How to change the visibility of the BackStageButton in the SfDiagramRibbon control?](https://support.syncfusion.com/kb/article/18414/how-to-change-the-visibility-of-the-backstagebutton-in-the-sfdiagramribbon-control)
 
 [How to change the background color of the diagram using the color picker in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18351/how-to-change-the-background-color-of-the-diagram-using-the-color-picker-in-wpf-diagram-sfdiagram)
+
+[How to modify the Save and Open commands in both the Quick Access Toolbar and the Backstage items of the SfDiagramRibbon control?](https://support.syncfusion.com/kb/article/17754/how-to-modify-the-save-and-open-commands-in-both-the-quick-access-toolbar-and-the-backstage-items-of-the-sfdiagramribbon-control)
+
+[How to add or insert a new Ribbon Bar in an existing Ribbon Tab at a specified position in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14979/how-to-add-or-insert-a-new-ribbon-bar-in-an-existing-ribbon-tab-at-a-specified-position-in-the-wpf-diagram-sfdiagram)

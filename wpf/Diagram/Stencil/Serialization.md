@@ -114,3 +114,5 @@ if (dialog.ShowDialog() == true)
 [How to change the color of a node in the stencil and diagram while loading a saved file in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
 
 [How to serialize the LinearGradientBrush type as a Fill value in the ShapeStyle of a Node in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18058/how-to-serialize-the-lineargradientbrush-type-as-a-fill-value-in-the-shapestyle-of-a-node-in-the-wpf-diagram-sfdiagram)
+
+[How to serialize and deserialize the image nodes in WPF Diagram( SfDiagram) ?](https://support.syncfusion.com/kb/article/17743/how-to-serialize-and-deserialize-the-image-nodes-in-wpf-diagram-sfdiagram-)

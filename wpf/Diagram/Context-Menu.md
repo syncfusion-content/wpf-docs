@@ -128,3 +128,11 @@ void MainPage_MenuItemClickedEvent(object sender,
 [How to display the paste context menu only after cutting or copying nodes in a diagram in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17759/how-to-display-the-paste-context-menu-only-after-cutting-or-copying-nodes-in-a-diagram-in-wpf-diagram-sfdiagram)
 
 [How to enable or disable custom context menu items based on a node's selection in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17784/how-to-enable-or-disable-custom-context-menu-items-based-on-a-nodes-selection-in-wpf-diagram-sfdiagram-)
+
+[How to add a container as parent of the selected node using the context menu in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17747/how-to-add-a-container-as-parent-of-the-selected-node-using-the-context-menu-in-the-wpf-diagram-sfdiagram)
+
+[How to set a shortcut key for menu items in the Context Menu in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14975/how-to-set-a-shortcut-key-for-menu-items-in-the-context-menu-in-wpf-diagram-sfdiagram)
+
+[How to change the annotation content of a node using context menu in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14962/how-to-change-the-annotation-content-of-a-node-using-context-menu-in-wpf-diagram-sfdiagram)
+
+[How to implement color palette functionality using context menu in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14963/how-to-implement-color-palette-functionality-using-context-menu-in-wpf-diagram-sfdiagram)

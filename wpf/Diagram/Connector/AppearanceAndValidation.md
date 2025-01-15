@@ -700,3 +700,7 @@ Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tre
 [How to restrict the Connector's source and target decorator from being positioned in different places in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18413/how-to-restrict-the-connectors-source-and-target-decorator-from-being-positioned-in-different-places-in-wpf-diagram-sfdiagram)
 
 [How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)
+
+[How to manage the visibility of node and connector objects in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
+
+[How to customize the size of the segment decorators of a Connector in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/14933/how-to-customize-the-size-of-the-segment-decorators-of-a-connector-in-wpf-diagramsfdiagram)

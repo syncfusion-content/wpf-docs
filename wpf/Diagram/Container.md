@@ -266,3 +266,11 @@ To explore about selection and selection related events, refer to the [Selection
 [How to prevent a container's size from updating when drawing a connector between child nodes of different containers in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18402/how-to-prevent-a-containers-size-from-updating-when-drawing-a-connector-between-child-nodes-of-different-containers-in-wpf-diagram-sfdiagram)
 
 [How to add a node as a child of a container using the context menu in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18053/how-to-add-a-node-as-a-child-of-a-container-using-the-context-menu-in-the-wpf-diagram-sfdiagram)
+
+[How to rearrange the containers after the layout has been updated in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17749/how-to-rearrange-the-containers-after-the-layout-has-been-updated-in-wpf-diagram-sfdiagram-)
+
+[How to add a container as parent of the selected node using the context menu in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17747/how-to-add-a-container-as-parent-of-the-selected-node-using-the-context-menu-in-the-wpf-diagram-sfdiagram)
+
+[How to adjust the unit width of the Container in the WPF Diagram?](https://support.syncfusion.com/kb/article/16438/how-to-adjust-the-unit-width-of-the-container-in-the-wpf-diagram)
+
+[How to Restrict Node is being removed from its Parent Container when Dragging in WPF Diagram (SfDiagram)](https://support.syncfusion.com/kb/article/15644/how-to-restrict-node-is-being-removed-from-its-parent-container-when-dragging-in-wpf-diagram-sfdiagram)

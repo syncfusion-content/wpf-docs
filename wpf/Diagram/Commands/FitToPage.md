@@ -76,3 +76,5 @@ The [FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Fi
 [How to Display Different QuickCommands Based on Nodes in WPF Diagram?](https://support.syncfusion.com/kb/article/17969/how-to-display-different-quickcommands-based-on-nodes-in-wpf-diagram)
 
 [How to Fit Selected Nodes and Connectors to the WPF Diagram Window?](https://support.syncfusion.com/kb/article/18062/how-to-fit-selected-nodes-and-connectors-to-the-wpf-diagram-window)
+
+[How to apply margin to FitToPage in WPF Diagram (SfDiagram)?]()
