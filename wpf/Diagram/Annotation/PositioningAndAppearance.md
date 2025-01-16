@@ -576,7 +576,6 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 [How to set font properties for newly added items Annotations in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18670/how-to-set-font-properties-for-newly-added-items-annotations-in-wpf-diagram-sfdiagram)
 
-
 [How to update text formatting properties of an Annotation in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18407/how-to-update-text-formatting-properties-of-an-annotation-in-wpf-diagram-sfdiagram)
 
 [How to get parent of annotation using changed command in WPF Diagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)
