@@ -102,3 +102,5 @@ graphinfo.Commands.Duplicate.Execute(null);
 ![Clipboard gif](Commands_Images/Commands_img11.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Clipboard%20commands)
+
+[How to disable or override clipboard support](https://support.syncfusion.com/kb/article/9010/how-to-disable-or-override-clipboard-support)
