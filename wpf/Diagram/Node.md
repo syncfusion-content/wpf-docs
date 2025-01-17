@@ -876,3 +876,7 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 [How to update the Zindex of the dragged node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10388/how-to-update-the-zindex-of-the-dragged-node-in-wpf-diagram-sfdiagram)
 
 [How to create filled PolyLine Node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10255/how-to-create-filled-polyline-node-in-wpf-diagram-sfdiagram)
+
+[How to generate Layout with DataSource as NodeViewModel instead of business object class in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in)
+
+[How to bring the specific node to the center or viewport in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/9918/how-to-bring-the-specific-node-to-the-center-or-viewport-in-wpf-diagram-sfdiagram)
