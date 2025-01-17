@@ -490,3 +490,7 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 [How to update the same length for connector segments in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15538/how-to-update-the-same-length-for-connector-segments-in-the-wpf-diagram-sfdiagram)
 
 [How to manage the visibility of node and connector objects in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
+
+[How to restrict annotation editing by double-clicking the node or connector in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
+
+[How to restrict Connector's source/target changing from native Nodes to other Nodes in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11796/how-to-restrict-connectors-source-target-changing-from-native-nodes-to-other-nodes-in-wpf)

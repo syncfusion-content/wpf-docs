@@ -561,3 +561,5 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 [How to display only the ports of the same color in the target node based on the source node's port color in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17723/how-to-display-only-the-ports-of-the-same-color-in-the-target-node-based-on-the-source-nodes-port-color-in-wpf-diagram-sfdiagram)
 
 [How to customize the connection indicator style of node and port in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
+
+[How to add ToolTip for Diagram objects of Node, NodePort in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11748/how-to-add-tooltip-for-diagram-objects-of-node-nodeport-in-wpf-diagramsfdiagram)
