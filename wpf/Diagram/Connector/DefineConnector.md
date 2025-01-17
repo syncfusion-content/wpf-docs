@@ -468,3 +468,7 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 [How to add space between connector decorator and node?](https://support.syncfusion.com/kb/article/5448/how-to-add-space-between-decorator-and-node-in-wpf-diagram-sfdiagram)
 
 [How to disable the selection of diagram objects?](https://support.syncfusion.com/kb/article/5495/how-to-disable-the-selection-in-wpf-diagram)
+
+[How to restrict annotation editing by double-clicking the node or connector in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
+
+[How to restrict Connector's source/target changing from native Nodes to other Nodes in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11796/how-to-restrict-connectors-source-target-changing-from-native-nodes-to-other-nodes-in-wpf)
