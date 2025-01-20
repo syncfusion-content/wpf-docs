@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with WPF Linear ProgressBar control | Syncfusion&reg;
-description: Learn here about getting started with the Syncfusion&reg; WPF Linear ProgressBar control and more details.
+title: Getting started with WPF Linear ProgressBar control | Syncfusion<sup>&reg;</sup>;
+description: Learn here about getting started with the Syncfusion<sup>&reg;</sup>; WPF Linear ProgressBar control and more details.
 platform: wpf
 control: SfLinearProgressBar
 documentation: ug
@@ -31,7 +31,7 @@ To add control manually in XAML, follow the given steps:
 
 1. Add the following required assembly reference to the project:
     * Syncfusion.SfProgressBar.WPF     
-2. Import Syncfusion&reg; WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+2. Import Syncfusion<sup>&reg;</sup>; WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3. Declare the SfLinearProgressBar control in the XAML page.
 
 {% capture codesnippet1 %}
