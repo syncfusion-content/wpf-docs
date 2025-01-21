@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ARM support | WPF | Syncfusion<sup>&reg;</sup>
-description: Learn here about the details of ARM64 devices compatibility support in .net 6.0 framework for Syncfusion<sup>&reg;</sup> WPF controls.
+title: ARM support | WPF | Syncfusion
+description: Learn here about the details of ARM64 devices compatibility support in .net 6.0 framework for Syncfusion WPF controls.
 platform: wpf
 control: ARM support
 documentation: ug

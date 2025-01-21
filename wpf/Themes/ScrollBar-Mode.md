@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows 10 Compact ScrollBar | Touch ScrollBars | Syncfusion<sup>&reg;</sup>
+title: Windows 10 Compact ScrollBar | Touch ScrollBars | Syncfusion
 description: This article explains how to enable Windows 10 like compact scrollbars (touch scrollbars) in WPF applications.
 platform: wpf
 control: Themes

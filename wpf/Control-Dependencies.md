@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Control Dependencies and Dependency assembly | WPF | Syncfusion<sup>&reg;</sup>
-description: Control and it's Dependency assembly or NuGet reference details for Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> WPF products
+title: Control Dependencies and Dependency assembly | WPF | Syncfusion
+description: Control and it's Dependency assembly or NuGet reference details for Syncfusion Essential Studio WPF products
 platform: wpf
 control: Control Dependencies
 documentation: ug

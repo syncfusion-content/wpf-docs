@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> WPF products
-description: Essential<sup>&reg;</sup> WPF is a collection of 90 enterprise-grade WPF components including Tools, Charts, Grids and Diagram for building modern Desktop applications.
+title: Overview of Syncfusion Essential Studio WPF products
+description: Essential WPF is a collection of 90 enterprise-grade WPF components including Tools, Charts, Grids and Diagram for building modern Desktop applications.
 platform: wpf
 control: Overview
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WPF Applications using .NET Core and WPF Controls | Syncfusion<sup>&reg;</sup>
-description: Learn here about how to creating the WPF Applications using .NET Core and the Syncfusion<sup>&reg;</sup> WPF Controls.
+title: WPF Applications using .NET Core and WPF Controls | Syncfusion
+description: Learn here about how to creating the WPF Applications using .NET Core and the Syncfusion WPF Controls.
 platform: wpf
 control: .NET Core
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Theme Studio | WPF | Syncfusion<sup>&reg;</sup>
-description: Learn how to create customized themes for Syncfusion<sup>&reg;</sup> WPF controls and integrate to your WPF Application.
+title: Getting Started with WPF Theme Studio | WPF | Syncfusion
+description: Learn how to create customized themes for Syncfusion WPF controls and integrate to your WPF Application.
 platform: wpf
 control: ThemeStudio
 documentation: ug
