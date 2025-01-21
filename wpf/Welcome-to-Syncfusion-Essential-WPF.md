@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion&reg; Essential Studio&reg; WPF products
-description: Essential&reg; WPF is a collection of 90 enterprise-grade WPF components including Tools, Charts, Grids and Diagram for building modern Desktop applications.
+title: Overview of Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> WPF products
+description: Essential<sup>&reg;</sup> WPF is a collection of 90 enterprise-grade WPF components including Tools, Charts, Grids and Diagram for building modern Desktop applications.
 platform: wpf
 control: Overview
 documentation: ug
@@ -12,7 +12,7 @@ With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0
 
 # Welcome to Syncfusion WPF UI controls
 
-Syncfusion&reg; Essential Studio&reg; for WPF is a comprehensive collection of over 90+ essential&reg; WPF controls like DataGrid, Chart, Diagram, and PDF Viewer for building powerful line-of-business Windows applications faster. Syncfusion&reg; WPF controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
+Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> for WPF is a comprehensive collection of over 90+ essential<sup>&reg;</sup> WPF controls like DataGrid, Chart, Diagram, and PDF Viewer for building powerful line-of-business Windows applications faster. Syncfusion<sup>&reg;</sup> WPF controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
 
 ## How to best read this user guide
 
@@ -395,7 +395,7 @@ N> Using `Classic` labeled controls in new projects is not recommended. In `Clas
 
 ## Licensing
 
-Refer [licensing documentation](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion&reg; license key in your WPF application to use Syncfusion controls without license message dialog at runtime.
+Refer [licensing documentation](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup>&reg;</sup> license key in your WPF application to use Syncfusion controls without license message dialog at runtime.
 
 ## Additional help resources
 

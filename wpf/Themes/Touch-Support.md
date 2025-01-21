@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Touch Support in Syncfusion&reg; WPF controls
-description: This article explains how to enable touch design for Syncfusion&reg; WPF Controls using SizeMode property in SkinManager. 
+title: Touch Support in Syncfusion<sup>&reg;</sup> WPF controls
+description: This article explains how to enable touch design for Syncfusion<sup>&reg;</sup> WPF Controls using SizeMode property in SkinManager. 
 platform: wpf
 control: General
 documentation: ug
 ---
 
-# Touch Support in Syncfusion&reg; WPF Controls
+# Touch Support in Syncfusion<sup>&reg;</sup> WPF Controls
 
 ## Size mode
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps you to render in different size modes for both Syncfusion&reg; and Framework controls using the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SizeModeProperty) property, which will be available only in [themes supported from theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list).
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps you to render in different size modes for both Syncfusion<sup>&reg;</sup> and Framework controls using the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SizeModeProperty) property, which will be available only in [themes supported from theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list).
 
 The [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SizeMode.html) enum contains the following values:
 
@@ -31,7 +31,7 @@ N> The default value is `SizeMode.Default`.
 
 ## Gesture
 
-Gestures determine whether a finger or stylus has moved over a control or not. Syncfusion&reg; WPF controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/>.
+Gestures determine whether a finger or stylus has moved over a control or not. Syncfusion<sup>&reg;</sup> WPF controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/>.
 The following table shows the gesture mappings for each control.
 
 <table>
