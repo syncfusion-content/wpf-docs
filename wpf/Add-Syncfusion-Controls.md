@@ -6,9 +6,9 @@ platform: wpf
 control: common
 documentation: ug
 ---
-# Add Syncfusion WPF Controls
+# Add Syncfusion<sup>&reg;</sup> WPF Controls
 
-The Syncfusion WPF controls can be added in a Visual Studio projects by using either of the following ways:
+The Syncfusion<sup>&reg;</sup> WPF controls can be added in a Visual Studio projects by using either of the following ways:
 
 * Using Designer
 * Using Code-Behind
@@ -16,7 +16,7 @@ The Syncfusion WPF controls can be added in a Visual Studio projects by using ei
 
 ## Using Designer
 
-Syncfusion UI for WPF are added automatically to the Visual Studio Toolbox during installation. The following steps help you to add the required Essential WPF control using drag and drop from the Toolbox. For example: **SfTextBoxExt**
+Syncfusion<sup>&reg;</sup> UI for WPF are added automatically to the Visual Studio Toolbox during installation. The following steps help you to add the required Essential<sup>&reg;</sup> WPF control using drag and drop from the Toolbox. For example: **SfTextBoxExt**
 
 1. Create a WPF project in Visual Studio.
 
@@ -30,7 +30,7 @@ Syncfusion UI for WPF are added automatically to the Visual Studio Toolbox durin
 
 ### Using XAML
 
-The following steps help you to add a required Essential WPF Control using XAML Code, for example: **SfTextBoxExt**.
+The following steps help you to add a required Essential<sup>&reg;</sup> WPF Control using XAML Code, for example: **SfTextBoxExt**.
 
 1. Create a WPF project in Visual Studio and refer the following assemblies:
 
@@ -72,7 +72,7 @@ The following steps help you to add a required Essential WPF Control using XAML
 
 ## Using Code-Behind
 
-Syncfusion UI for WPF can be added at runtime using C# / VB. The following steps help you to add required Essential WPF control using code. For example: **SfTextBoxExt**.
+Syncfusion<sup>&reg;</sup> UI for WPF can be added at runtime using C# / VB. The following steps help you to add required Essential<sup>&reg;</sup> WPF control using code. For example: **SfTextBoxExt**.
 
 1. Create a WPF project in Visual Studio and refer to the following assemblies:
 
@@ -156,23 +156,23 @@ Me.Content = textBoxExt1
 
 ## Using Project Template
 
-Syncfusion provides the Visual Studio Project Templates for the Syncfusion WPF platform to create Syncfusion WPF Application. 
+Syncfusion<sup>&reg;</sup> provides the Visual Studio Project Templates for the Syncfusion<sup>&reg;</sup> WPF platform to create Syncfusion<sup>&reg;</sup> WPF Application. 
 
-I> The Syncfusion WPF templates are available from v16.1.0.24. 
+I> The Syncfusion<sup>&reg;</sup> WPF templates are available from v16.1.0.24. 
 
 ### Create Syncfusion WPF project 
 
-The following steps direct you to create the Syncfusion WPF project using the Visual Studio Project Template. 
+The following steps direct you to create the Syncfusion<sup>&reg;</sup> WPF project using the Visual Studio Project Template. 
 
-1. To create a Syncfusion WPF project, choose New Project-> Syncfusion->Windows->Syncfusion WPF Application from Visual Studio.
+1. To create a Syncfusion<sup>&reg;</sup> WPF project, choose New Project-> Syncfusion->Windows->Syncfusion WPF Application from Visual Studio.
 
 ![Create WPF application](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-1.png)
 
 2. Name the Project, choose the destination location when required and set the framework of the project, then click OK.  
 
-N> Minimum target Framework is 4.0 for Syncfusion WPF project templates. 
+N> Minimum target Framework is 4.0 for Syncfusion<sup>&reg;</sup> WPF project templates. 
 
-3. Choose the options to configure the Syncfusion WPF Application by using the following Project Configuration Wizard.  
+3. Choose the options to configure the Syncfusion<sup>&reg;</sup> WPF Application by using the following Project Configuration Wizard.  
   
 ![WPF Project configuration wizard](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-2.png)
                                                      
@@ -200,6 +200,6 @@ N> Minimum target Framework is 4.0 for Syncfusion WPF project templates.
 
 ![Shows project folder for added control](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)
 
-5. Then, Syncfusion licensing registration required message box will be shown as follows, if you have installed the trial setup or NuGet packages since Syncfusion introduced the licensing system with the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key for your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+5. Then, Syncfusion<sup>&reg;</sup> licensing registration required message box will be shown as follows, if you have installed the trial setup or NuGet packages since Syncfusion introduced the licensing system with the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion<sup>&reg;</sup> license key for your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
 
 ![Shows syncfusion license registration message](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-9.png)

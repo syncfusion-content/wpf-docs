@@ -6,9 +6,9 @@ platform: wpf
 control: System Requirement
 documentation: ug
 ---
-# System Requirement in Syncfusion Essential WPF
+# System Requirement in Syncfusion<sup>&reg;</sup> Essential<sup>&reg;</sup> WPF
 
-This section describes the system requirements to use Syncfusion WPF Controls for development.
+This section describes the system requirements to use Syncfusion<sup>&reg;</sup> WPF Controls for development.
 
 ### Operating Systems
 

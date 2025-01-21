@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Strikethrough text in PDF files using WPF PDF Viewer | Syncfusion&reg;
-description: Learn about Strikethrough annotation support in Syncfusion&reg; WPF PDF Viewer control, and the manipulations.
+title: Strikethrough text in PDF files using WPF PDF Viewer | Syncfusion<sup>&reg;</sup>;
+description: Learn about Strikethrough annotation support in Syncfusion<sup>&reg;</sup>; WPF PDF Viewer control, and the manipulations.
 platform: wpf
 control: PDF Viewer
 documentation: ug

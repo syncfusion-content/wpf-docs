@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Handwritten Signature in WPF Pdf Viewer control | Syncfusion&reg;
-description: Learn about Handwritten Signature support in Syncfusion&reg; WPF Pdf Viewer control, its elements and more.
+description: Learn about Handwritten Signature support in Syncfusion<sup>&reg;</sup>; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
