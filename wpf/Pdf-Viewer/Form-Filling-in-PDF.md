@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Form Filling in PDF Files in WPF Pdf Viewer | Syncfusion;
+title: Form Filling in PDF Files in WPF Pdf Viewer | Syncfusion&reg;
 description: Learn about Form Filling in PDF Files support in Syncfusion<sup>&reg;</sup>; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer

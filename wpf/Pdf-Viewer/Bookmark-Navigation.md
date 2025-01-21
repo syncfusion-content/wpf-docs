@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bookmark Navigation in WPF Pdf Viewer control | Syncfusion;
+title: Bookmark Navigation in WPF Pdf Viewer control | Syncfusion&reg;
 description: Learn about Bookmark Navigation support in Syncfusion<sup>&reg;</sup>; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
