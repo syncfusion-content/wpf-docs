@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Segment in WPF circular progressbar control | Syncfusion<sup>&reg;</sup>;
+title: Segment in WPF circular progressbar control | Syncfusion;
 description: Learn here all about Segment support in Syncfusion<sup>&reg;</sup>; WPF circular progressbar (SfCircularProgressBar) control and more.
 platform: wpf
 control: SfCircularProgressBar

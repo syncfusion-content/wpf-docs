@@ -1,6 +1,6 @@
 ---
 layout: post
-title: States in WPF circular progressbar control | Syncfusion<sup>&reg;</sup>;
+title: States in WPF circular progressbar control | Syncfusion;
 description: Learn here all about States support in Syncfusion<sup>&reg;</sup>; WPF circular progressbar (SfCircularProgressBar) control and more.
 platform: wpf
 control: SfCircularProgressBar

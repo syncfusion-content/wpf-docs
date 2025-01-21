@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change annotation selection color in WPF Pdf Viewer | Syncfusion<sup>&reg;</sup>;
+title: Change annotation selection color in WPF Pdf Viewer | Syncfusion;
 description: Learn about Change the Selection color of the annotations support in Syncfusion<sup>&reg;</sup>; WPF Pdf Viewer control and more.
 platform: wpf
 control: PDF Viewer
