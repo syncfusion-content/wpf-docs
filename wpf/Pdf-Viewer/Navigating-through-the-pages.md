@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Page Navigation in WPF Pdf Viewer control | Syncfusion&reg;
-description: Learn about Page Navigation support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
+title: Page Navigation in WPF Pdf Viewer control | Syncfusion<sup>&reg;</sup>;
+description: Learn about Page Navigation support in Syncfusion<sup>&reg;</sup>; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug

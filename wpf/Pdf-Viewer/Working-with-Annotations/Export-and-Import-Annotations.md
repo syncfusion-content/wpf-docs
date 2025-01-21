@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export and Import Annotations in WPF Pdf Viewer control | Syncfusion&reg;
+title: Export and Import Annotations in WPF Pdf Viewer control | Syncfusion<sup>&reg;</sup>;
 description: Learn about Export and Import information about annotations in the FDF and XFDF formats using WPF Pdf Viewer.
 platform: wpf
 control: PDF Viewer
