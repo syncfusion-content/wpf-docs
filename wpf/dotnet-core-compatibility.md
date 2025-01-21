@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WPF Applications using .NET Core and WPF Controls | Syncfusion&reg;
-description: Learn here about how to creating the WPF Applications using .NET Core and the Syncfusion&reg; WPF Controls.
+title: WPF Applications using .NET Core and WPF Controls | Syncfusion
+description: Learn here about how to creating the WPF Applications using .NET Core and the Syncfusion WPF Controls.
 platform: wpf
 control: .NET Core
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting started with .NET Core
 
-Syncfusion&reg; Essential Studio&reg; for WPF ships .NET Core assemblies for building WPF .NET Core applications using Syncfusion&reg; Controls. This section explains how to create the project in .NET Core application and using syncfusion&reg; WPF controls.
+Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> for WPF ships .NET Core assemblies for building WPF .NET Core applications using Syncfusion<sup>&reg;</sup> Controls. This section explains how to create the project in .NET Core application and using syncfusion<sup>&reg;</sup> WPF controls.
 
 N> All Syncfusion WPF controls supports .NET Core except the controls labeled as `classic`.
 
 ## Version Compatibility
 
-Below table represents the supported Syncfusion&reg; Essential Studio&reg; version for .NET Core versions.
+Below table represents the supported Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> version for .NET Core versions.
 
 <table>
 <tr>
@@ -74,7 +74,7 @@ From 27.2 (2024 Vol3 SP) <br/></td>
 
 ## Adding Reference
 
-You can add the Syncfusion&reg; assembly references in one of the following ways.
+You can add the Syncfusion<sup>&reg;</sup> assembly references in one of the following ways.
 
 * NuGet
 * Adding assembly references from installed location
@@ -87,7 +87,7 @@ Refer [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/
 
 ### Adding assembly references from installed location
 
-You can also add the Syncfusion&reg; WPF (.NET Core) controls assemblies from the `precompiledassemblies` folder in the following location.
+You can also add the Syncfusion<sup>&reg;</sup> WPF (.NET Core) controls assemblies from the `precompiledassemblies` folder in the following location.
 
 <table>
 <tr>
@@ -142,7 +142,7 @@ In **Solution Explorer**, right-click on **Dependencies** and select **Add Refer
 
 Now, **Reference Manager** dialog will be opened. Here click **Browse** and can select the needed assemblies from the location mentioned in below note section. On selecting necessary assemblies, click **Add** and then click **OK**. Now, required assemblies are added in to the project, like in the below screenshot.
 
-N> You can get Syncfusion&reg; WPF (.NET Core) controls assemblies from `netcoreapp3.1` or `net 5.0` folder in the following location - C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies
+N> You can get Syncfusion<sup>&reg;</sup> WPF (.NET Core) controls assemblies from `netcoreapp3.1` or `net 5.0` folder in the following location - C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies
 
 ![NET Core showing assembly](NETcore_WPF_images/NETcore_assembly.jpeg)
 
