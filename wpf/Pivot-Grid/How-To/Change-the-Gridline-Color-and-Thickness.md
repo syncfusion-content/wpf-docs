@@ -9,13 +9,19 @@ documentation: ug
 
 # How to change the GridLine color and thickness?
 
-GridLine color can be changed by using the `GridLineStroke` property of PivotGrid and it can be mentioned either in *XAML* or in *Code-Behind*. 
+The color and thickness of the grid lines can be modified using the `GridLineStroke` property of the PivotGridControl and the `BorderThickness` property of PivotGridCellStyle.
 
 If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
-<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" GridLineStroke="#2F5BB7" ItemSource="{Binding   Source={StaticResource data}}">
+<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ItemSource="{Binding   Source={StaticResource data}}">
+    <syncfusion:PivotGridControl.GridLineStroke>
+        <SolidColorBrush Color="DeepPink"/>
+    </syncfusion:PivotGridControl.GridLineStroke>
+   <syncfusion:PivotGridControl.ValueCellStyle>
+        <syncfusion:PivotGridCellStyle BorderThickness="2"/>
+   </syncfusion:PivotGridControl.ValueCellStyle>
 </syncfusion:PivotGridControl>
      
 {% endhighlight %}
@@ -27,6 +33,7 @@ Else if through *Code-Behind*, please refer the below code sample.
 public MainWindow() {
     InitializeComponent();
     pivotGrid.GridLineStroke = new SolidColorBrush(Colors.Black);
+    pivotGrid.ValueCellStyle.BorderThickness = 2;
 }
 		
 {% endhighlight %}
