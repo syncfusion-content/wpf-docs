@@ -15,14 +15,14 @@ If through *XAML*, please refer the below code sample.
 
 {% highlight xaml %}
 
-<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ItemSource="{Binding   Source={StaticResource data}}">
-    <syncfusion:PivotGridControl.GridLineStroke>
-        <SolidColorBrush Color="DeepPink"/>
-    </syncfusion:PivotGridControl.GridLineStroke>
-   <syncfusion:PivotGridControl.ValueCellStyle>
-        <syncfusion:PivotGridCellStyle BorderThickness="2"/>
-   </syncfusion:PivotGridControl.ValueCellStyle>
-</syncfusion:PivotGridControl>
+    <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="pivotGrid" VerticalAlignment="Top" ItemSource="{Binding Source={StaticResource data}}">
+        <syncfusion:PivotGridControl.GridLineStroke>
+            <SolidColorBrush Color="DeepPink"/>
+        </syncfusion:PivotGridControl.GridLineStroke>
+        <syncfusion:PivotGridControl.ValueCellStyle>
+            <syncfusion:PivotGridCellStyle BorderThickness="2"/>
+        </syncfusion:PivotGridControl.ValueCellStyle>
+    </syncfusion:PivotGridControl>
      
 {% endhighlight %}
 
