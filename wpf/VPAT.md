@@ -9,7 +9,7 @@ documentation: ug
 
 # Section 508 Compliance - Voluntary Product Accessibility Template
 
-The following Voluntary Product Accessibility information refers to Syncfusion Essential Studio for WPF.
+The following Voluntary Product Accessibility information refers to Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> for WPF.
 
 <table>
 <tr>
@@ -187,5 +187,5 @@ Essential Studio WPF controls are accessible<br/><br/></td></tr>
 Supported.<br/><br/></td><td>
 Online support <a href="https://www.syncfusion.com/support/directtrac/incidents">Incidents</a> and <a href="https://www.syncfusion.com/support/directtrac/forums">Forums</a> are available.<br/><br/></td></tr>
 </table>
-Syncfusion does not promise that the information provided in this document will be error-free, or that any errors will be corrected, or that your use of the information will provide specific results. The document and its content are delivered on an “as-is” basis. All information provided is subject to change without notice. Syncfusion disclaims all warranties, express or implied, including any warranties of accuracy, non-infringement, merchantability and fitness for a particular purpose.
+Syncfusion<sup>&reg;</sup> does not promise that the information provided in this document will be error-free, or that any errors will be corrected, or that your use of the information will provide specific results. The document and its content are delivered on an “as-is” basis. All information provided is subject to change without notice. Syncfusion<sup>&reg;</sup> disclaims all warranties, express or implied, including any warranties of accuracy, non-infringement, merchantability and fitness for a particular purpose.
 
