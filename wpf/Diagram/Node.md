@@ -855,8 +855,6 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to customize the connection indicator style of node and port in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
 
-[How to create a quick command in WPF Diagram?](https://support.syncfusion.com/kb/article/8951/how-to-create-a-quick-command-in-wpf-diagram)
-
 [How to notify state of operation performed on node in WPF Diagram?](https://support.syncfusion.com/kb/article/5523/how-to-notify-state-of-operation-performed-on-node-in-wpf-diagram)
 
 [How to remove all its children when deleting a parent node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10027/how-to-remove-all-its-children-when-deleting-a-parent-node-in-wpf-diagram-sfdiagram)

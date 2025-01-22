@@ -58,6 +58,3 @@ graphinfo.Commands.UnGroup.Execute(null);
 ![Group/UnGroup gif](Commands_Images/Commands_img12.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Grouping%20Commands)
-
-## See Also
-[How to Display Different QuickCommands Based on Nodes in WPF Diagram?](https://support.syncfusion.com/kb/article/17969/how-to-display-different-quickcommands-based-on-nodes-in-wpf-diagram)

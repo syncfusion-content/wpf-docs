@@ -63,6 +63,3 @@ When the Flip command is applied to the group, it enables the transformation of 
 ![Represents the Group flip](Commands_images/Commands_GroupFlip.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Flip%20Command)
-
-## See Also
-[How to Display Different QuickCommands Based on Nodes in WPF Diagram?](https://support.syncfusion.com/kb/article/17969/how-to-display-different-quickcommands-based-on-nodes-in-wpf-diagram)

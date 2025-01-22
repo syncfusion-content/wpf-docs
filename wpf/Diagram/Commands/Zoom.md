@@ -219,6 +219,4 @@ graphinfo.Commands.Reset.Execute(new ResetParameter() { Reset = Reset.ZoomPan })
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Zoom%20Command)
 
 ## See Also
-[How to Display Different QuickCommands Based on Nodes in WPF Diagram?](https://support.syncfusion.com/kb/article/17969/how-to-display-different-quickcommands-based-on-nodes-in-wpf-diagram)
-
 [How to Fit Selected Nodes and Connectors to the WPF Diagram Window?](https://support.syncfusion.com/kb/article/18062/how-to-fit-selected-nodes-and-connectors-to-the-wpf-diagram-window)

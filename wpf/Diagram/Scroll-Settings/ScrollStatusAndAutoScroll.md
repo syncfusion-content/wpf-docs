@@ -106,4 +106,3 @@ Find the [Scroll Settings sample](https://github.com/SyncfusionExamples/WPF-Diag
 
 [How to restrict diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)
 
-[How to get the coordinates of the current viewport in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18032/how-to-get-the-coordinates-of-the-current-viewport-in-wpf-diagram-sfdiagram)

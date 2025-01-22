@@ -172,3 +172,5 @@ N> Overlapping with Source and Target nodes are only avoided. Other nodes are no
 [How to avoid overlapping connector segments for the Orthogonal Connector in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17740/how-to-avoid-overlapping-connector-segments-for-the-orthogonal-connector-in-wpf-diagram-sfdiagram)
 
 [How to update the same length for connector segments in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15538/how-to-update-the-same-length-for-connector-segments-in-the-wpf-diagram-sfdiagram)
+
+[How to prevent the connector segment from collapsing while dragging a node in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)

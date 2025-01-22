@@ -477,8 +477,6 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 [How to restrict the Connector's source and target decorator from being positioned in different places in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18413/how-to-restrict-the-connectors-source-and-target-decorator-from-being-positioned-in-different-places-in-wpf-diagram-sfdiagram)
 
-[How to disable Ctrl + Drag duplicate behavior in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18502/how-to-disable-ctrl--drag-duplicate-behavior-in-wpf-diagramsfdiagram)
-
 [How to change the source and target ports of the connector at runtime in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18302/how-to-change-the-source-and-target-ports-of-the-connector-at-runtime-in-the-wpf-diagram-sfdiagram)
 
 [How to Fit Selected Nodes and Connectors to the WPF Diagram Window?](https://support.syncfusion.com/kb/article/18062/how-to-fit-selected-nodes-and-connectors-to-the-wpf-diagram-window)
@@ -492,5 +490,3 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 [How to update the same length for connector segments in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15538/how-to-update-the-same-length-for-connector-segments-in-the-wpf-diagram-sfdiagram)
 
 [How to manage the visibility of node and connector objects in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
-
-[How to create a quick command in WPF Diagram?](https://support.syncfusion.com/kb/article/8951/how-to-create-a-quick-command-in-wpf-diagram)

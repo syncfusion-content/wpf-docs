@@ -933,4 +933,6 @@ SfDiagram supports various built-in themes. Refer to the below links to apply th
 
 [How to create a WPF SfDiagram?](https://support.syncfusion.com/kb/article/8853/how-to-create-a-wpf-diagram-sfdiagram)
 
-[How to use the WPF SfDiagram as the Content of the Node?](https://support.syncfusion.com/kb/article/18397/how-to-use-the-wpf-sfdiagram-as-the-content-of-the-node)
+[How to achieve the AutoConnect functionality in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-autoconnect-functionality-in-wpf-diagram-sfdiagram)
+
+[How to get the coordinates of the current viewport in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18032/how-to-get-the-coordinates-of-the-current-viewport-in-wpf-diagram-sfdiagram)

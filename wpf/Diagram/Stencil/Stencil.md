@@ -397,8 +397,6 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to enable/disable the Stencil symbol in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17888/how-to-enabledisable-the-stencil-symbol-in-wpf-diagram-sfdiagram)
 
-[How to avoid the node clipping while export in the WPF Diagram?](https://support.syncfusion.com/kb/article/15536/how-to-avoid-the-node-clipping-while-export-in-the-wpf-diagram)
-
 [How to Achieve the Stencil Preview Effect Without Dragging a Symbol in the WPF Diagram (SfDiagram)](https://support.syncfusion.com/kb/article/15537/how-to-achieve-the-stencil-preview-effect-without-dragging-a-symbol-in-the-wpf-diagram-sfdiagram)
 
 [How to refresh stencil with new collection or symbol in WPF Diagram?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
