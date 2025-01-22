@@ -2,7 +2,7 @@
 layout: post
 title: Section 508 Compliance for Syncfusion Essential Studio WPF products
 description: Learn here about Section 508 Compliance for Syncfusion Essential Studio WPF products, its elements and more.
-platform: WPF
+platform: wpf
 control: Section 508 Compliance
 documentation: ug
 ---
