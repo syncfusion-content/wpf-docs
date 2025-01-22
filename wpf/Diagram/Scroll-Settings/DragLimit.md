@@ -68,4 +68,6 @@ private void Diagram_SelectorChangedEvent(object sender, SelectorChangedEventArg
 
 [How to add the rulers for the diagram control?](/wpf/diagram/rulers)
 
+[How to restrict diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)
+
 {% endseealso %}
