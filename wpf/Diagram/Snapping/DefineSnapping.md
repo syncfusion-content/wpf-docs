@@ -154,3 +154,5 @@ Find the [Snapping sample](https://github.com/SyncfusionExamples/WPF-Diagram-Exa
 ## See Also
 
 [How to enable snapping in diagram?](https://support.syncfusion.com/kb/article/5908/how-to-enable-snapping-in-wpf-diagram-sfdiagram)
+
+[How to enable the snapping lines only for nodes in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15540/how-to-enable-the-snapping-lines-only-for-nodes-in-the-wpf-diagram-sfdiagram)

@@ -382,3 +382,23 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 [How to get base node interface while dropping a symbol from stencil?](https://support.syncfusion.com/kb/article/5494/how-to-get-base-node-interface-while-dropping-a-symbol-from-stencil-to-wpf-diagram)
 
 [How to expand all symbol groups in stencil?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
+
+[How to change the color of a node in the stencil and diagram while loading a saved file in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
+
+[How to group all the SymbolViewModels into the same group in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
+
+[How to Create Customized Stencil Using SVG Images in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18251/how-to-create-customized-stencil-using-svg-images-in-wpf-sfdiagram)
+
+[How to Change Cursor to Block Cursor When Hovering in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18242/how-to-change-cursor-to-block-cursor-when-hovering-in-wpf-sfdiagram)
+
+[How to Change the Background Color of a Symbol in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)
+
+[How to drag and drop both default and custom node from the stencil into the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18459/how-to-drag-and-drop-both-default-and-custom-node-from-the-stencil-into-the-wpf-diagram-sfdiagram)
+
+[How to enable/disable the Stencil symbol in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17888/how-to-enabledisable-the-stencil-symbol-in-wpf-diagram-sfdiagram)
+
+[How to Achieve the Stencil Preview Effect Without Dragging a Symbol in the WPF Diagram (SfDiagram)](https://support.syncfusion.com/kb/article/15537/how-to-achieve-the-stencil-preview-effect-without-dragging-a-symbol-in-the-wpf-diagram-sfdiagram)
+
+[How to refresh stencil with new collection or symbol in WPF Diagram?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
+
+[How to create the WPF Diagram (SfDiagram) with stencil?](https://support.syncfusion.com/kb/article/8908/how-to-create-the-wpf-diagram-sfdiagram-with-stencil)

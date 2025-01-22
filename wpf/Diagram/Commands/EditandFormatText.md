@@ -135,5 +135,3 @@ graphinfo.Commands.Cancel.Execute(null);
 ![Gif for EditAnnotation command](Commands_Images/Commands_EditStyleText.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Commands%20Sample)
-
-

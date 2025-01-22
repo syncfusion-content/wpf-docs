@@ -17,3 +17,5 @@ N> To enable dragging of connectors in your diagrams, use `ConnectorConstraints.
 ## See Also
 
 [How to show the copied diagram elements as preview image along with the mouse pointer?](https://support.syncfusion.com/kb/article/12037/how-to-show-the-copied-diagram-elements-as-preview-image-along-with-the-mouse-pointer-in)
+
+[How to disable Ctrl + Drag duplicate behavior in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18502/how-to-disable-ctrl--drag-duplicate-behavior-in-wpf-diagramsfdiagram)

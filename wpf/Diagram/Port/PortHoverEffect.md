@@ -35,3 +35,6 @@ diagram.PortHoverEffect = PortHoverEffect.Ripple;
 | Shrink |![shrink diagram](Port_images/ShrinkAnimation.gif) |
 | FilledRipple |![Filled Ripple](Port_images/FilledRippleAnimation.gif) |
 | None | Connection animation effect does not appear. |
+
+## See Also
+[How to change the PortHover effect color in the WPF Diagram?](https://support.syncfusion.com/kb/article/17720/how-to-change-the-porthover-effect-color-in-the-wpf-diagram)

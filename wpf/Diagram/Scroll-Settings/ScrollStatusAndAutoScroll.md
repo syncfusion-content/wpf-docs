@@ -105,3 +105,4 @@ Find the [Scroll Settings sample](https://github.com/SyncfusionExamples/WPF-Diag
 [How to stop infinite scrolling in diagram?](https://support.syncfusion.com/kb/article/9869/how-to-stop-infinite-scrolling-in-wpf-diagram-sfdiagram)
 
 [How to restrict diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)
+

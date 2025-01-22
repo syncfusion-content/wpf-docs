@@ -360,3 +360,5 @@ N> `Margin` is not valid for `RadialTreeLayout`.
 [How to update layout automatically when collection is changed?](https://support.syncfusion.com/kb/article/5857/how-to-update-layout-automatically-when-collection-is-changed-in-wpf-diagram-sfdiagram)
 
 [How to provide MultipleParentSupport in SfDiagram layout using DataSourceSettings?](https://support.syncfusion.com/kb/article/5493/how-to-provide-multipleparentsupport-in-wpf-diagram-sfdiagram-layout-via-datasourcesettings)
+
+[How to create a custom layout in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17780/how-to-create-a-custom-layout-in-the-wpf-diagram-sfdiagram)

@@ -105,7 +105,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {%  endtabs %}
 
-![Create Annotation](Annotation_images/Create_Annotation.jpg)
+![Create Annotation](Annotation_images/wpf-diagram-annotation.jpg)
 
 ## Multiple Annotations
 
@@ -146,7 +146,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple Annotations](Annotation_images/annotation_img21.png) &ensp;&ensp;&ensp;&ensp;&ensp; ![Multiple Annotations](Annotation_images/MultipleAnnotationConnector.png)
+![Multiple Annotations](Annotation_images/wpf-diagram-multiple-annotations.PNG) &ensp;&ensp;&ensp;&ensp;&ensp; ![Multiple Annotations](Annotation_images/wpf-diagram-multiple-annotation-connector.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations/MultipleAnnotation).
 
@@ -159,3 +159,13 @@ Annotations = new ObservableCollection<IAnnotation>()
 [How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
 
 [How to programmatically Show/Hide the Annotations of node and connector?](https://support.syncfusion.com/kb/article/6281/how-to-programmatically-showhide-annotations-in-wpf-diagram-)
+
+[How to set font properties for newly added items Annotations in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18670/how-to-set-font-properties-for-newly-added-items-annotations-in-wpf-diagram-sfdiagram)
+
+[How to highlight the node when selecting an annotation of the node and vice versa in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18245/how-to-highlight-the-node-when-selecting-an-annotation-of-the-node-and-vice-versa-in-the-wpf-diagram-sfdiagram)
+
+[How to update text formatting properties of an Annotation in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18407/how-to-update-text-formatting-properties-of-an-annotation-in-wpf-diagram-sfdiagram)
+
+[How to get parent of annotation using changed command in WPF Diagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)
+
+[How to add image annotations to a node in WPF Diagram (SfDiagram) control?](https://support.syncfusion.com/kb/article/6078/how-to-add-image-annotations-to-a-node-in-wpf-diagram-sfdiagram-control)
