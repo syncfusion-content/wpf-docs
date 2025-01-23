@@ -801,8 +801,6 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)
 
-[How to enable the behaviour of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
-
 [How to draw nodes in diagram?](https://support.syncfusion.com/kb/article/5989/how-to-draw-node-in-wpf-diagram-sfdiagram)
 
 [How to remove the rotator thumb of the node?](https://support.syncfusion.com/kb/article/5943/how-to-remove-rotator-of-the-node-in-wpf-diagram-sfdiagram)
@@ -853,8 +851,16 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to manage the visibility of node and connector objects in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
 
-[How to customize the connection indicator style of node and port in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
-
-[How to notify state of operation performed on node in WPF Diagram?](https://support.syncfusion.com/kb/article/5523/how-to-notify-state-of-operation-performed-on-node-in-wpf-diagram)
-
 [How to remove all its children when deleting a parent node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10027/how-to-remove-all-its-children-when-deleting-a-parent-node-in-wpf-diagram-sfdiagram)
+
+[How to arrange the Nodes in Circular(Radial) mode in WPF Diagram?](https://support.syncfusion.com/kb/article/3342/how-to-arrange-the-nodes-in-circularradial-mode-in-wpf-diagram)
+
+[How to hide specific default QuickCommands of node in WPF Diagram?](https://support.syncfusion.com/kb/article/11519/how-to-hide-specific-default-quickcommands-of-node-in-wpf-diagram)
+
+[How to restrict Connector's source/target changing from native Nodes to other Nodes in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11796/how-to-restrict-connectors-source-target-changing-from-native-nodes-to-other-nodes-in-wpf)
+
+[How to serialize Content and ContentTemplate properties of a Node in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11574/how-to-serialize-content-and-contenttemplate-properties-of-a-node-in-wpf-diagramsfdiagram)
+
+[How to create filled PolyLine Node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10255/how-to-create-filled-polyline-node-in-wpf-diagram-sfdiagram)
+
+[How to bring the specific node to the center or viewport in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/9918/how-to-bring-the-specific-node-to-the-center-or-viewport-in-wpf-diagram-sfdiagram)

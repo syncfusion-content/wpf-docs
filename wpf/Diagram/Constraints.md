@@ -442,10 +442,12 @@ In the above example, you can check whether the rotate constraints are enabled i
 
 [How to disable the selection of diagram objects?](https://support.syncfusion.com/kb/article/5495/how-to-disable-the-selection-in-wpf-diagram)
 
-[How to enable Undo/Redo feature for Diagram?](https://support.syncfusion.com/kb/article/11090/how-to-enable-undo-redo-feature-in-wpf-diagram-sfdiagram)
-
 [How to enable the AspectRatio for node?](https://support.syncfusion.com/kb/article/5473/how-to-enable-the-aspectratio-of-node-in-wpf-diagram-sfdiagram)
 
 [How to disable the events of Diagram?](https://support.syncfusion.com/kb/article/5475/how-to-disable-the-events-of-wpf-diagram-sfdiagram)
 
 [How to prevent nodes from moving to a negative index when nudging in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17732/how-to-prevent-nodes-from-moving-to-a-negative-index-when-nudging-in-wpf-diagram-sfdiagram)
+
+[How to enable Undo/Redo feature in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/11090/how-to-enable-undo-redo-feature-in-wpf-diagram-sfdiagram)
+
+[How to enable undo or redo in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/5471/how-to-enable-undo-or-redo-in-wpf-diagram-sfdiagram)

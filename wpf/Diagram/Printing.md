@@ -399,5 +399,3 @@ diagram.PrintingService.ShowClassicPrintPreview();
 [How to show classic print preview?](https://support.syncfusion.com/kb/article/8186/how-to-show-classic-print-preview-in-wpf-diagram-sfdiagram)
 
 [How to enable the Print Properties option in the Print dialog in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18697/how-to-enable-the-print-properties-option-in-the-print-dialog-in-wpf-diagram-sfdiagram)
-
-[How to ignore empty pages while printing the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/8537/how-to-ignore-empty-pages-while-printing-the-wpf-diagram-sfdiagram)

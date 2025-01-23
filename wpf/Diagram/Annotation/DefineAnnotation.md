@@ -167,5 +167,3 @@ Annotations = new ObservableCollection<IAnnotation>()
 [How to update text formatting properties of an Annotation in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18407/how-to-update-text-formatting-properties-of-an-annotation-in-wpf-diagram-sfdiagram)
 
 [How to get parent of annotation using changed command in WPF Diagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)
-
-[How to add image annotations to a node in WPF Diagram (SfDiagram) control?](https://support.syncfusion.com/kb/article/6078/how-to-add-image-annotations-to-a-node-in-wpf-diagram-sfdiagram-control)
