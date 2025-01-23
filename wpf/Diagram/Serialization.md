@@ -261,3 +261,5 @@ N> Mermaid syntax data serialization and deserialization are only supported for 
 [How to serialize and deserialize the image nodes in WPF Diagram( SfDiagram) ?](https://support.syncfusion.com/kb/article/17743/how-to-serialize-and-deserialize-the-image-nodes-in-wpf-diagram-sfdiagram-)
 
 [How to serialize multiple diagram pages in WPF Diagram?](https://support.syncfusion.com/kb/article/16204/how-to-serialize-multiple-diagram-pages-in-wpf-diagram)
+
+[How to preserve the state of the diagram while switching tabs in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18230/how-to-preserve-the-state-of-the-diagram-while-switching-tabs-in-the-wpf-diagram-sfdiagram)

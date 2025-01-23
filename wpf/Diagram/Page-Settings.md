@@ -337,3 +337,5 @@ Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagra
 [How to enable the behaviour of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
 
 [How to disable the page editing behaviour?](https://support.syncfusion.com/kb/article/5860/how-to-disable-page-editing-in-wpf-diagram-sfdiagram)
+
+[How to set the image background for the Diagram page in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/14932/how-to-set-the-image-background-for-the-diagram-page-in-wpf-diagramsfdiagram)

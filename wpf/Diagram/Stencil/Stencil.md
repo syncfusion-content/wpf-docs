@@ -402,3 +402,5 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 [How to refresh stencil with new collection or symbol in WPF Diagram?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
 
 [How to create the WPF Diagram (SfDiagram) with stencil?](https://support.syncfusion.com/kb/article/8908/how-to-create-the-wpf-diagram-sfdiagram-with-stencil)
+
+[How to achieve the AutoConnect functionality in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-autoconnect-functionality-in-wpf-diagram-sfdiagram)

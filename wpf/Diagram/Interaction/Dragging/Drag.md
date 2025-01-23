@@ -140,3 +140,5 @@ Diagram.ConnectorDropIndicatorStyle = this.Resources["connectordropindicator"] a
 [How to identify the dragging state of connectors in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
 
 [How to prevent the node from moving outside the group in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18852/how-to-prevent-the-node-from-moving-outside-the-group-in-wpf-diagram-sfdiagram)
+
+[How to achieve the AutoConnect functionality in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-autoconnect-functionality-in-wpf-diagram-sfdiagram)

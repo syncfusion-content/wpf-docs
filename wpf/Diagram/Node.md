@@ -869,9 +869,6 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to create filled PolyLine Node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10255/how-to-create-filled-polyline-node-in-wpf-diagram-sfdiagram)
 
-<<<<<<< HEAD
-=======
-[How to generate Layout with DataSource as NodeViewModel instead of business object class in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in)
-
->>>>>>> 9376ece49cfde9f3b53e8470cead6f7cd3110928
 [How to bring the specific node to the center or viewport in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/9918/how-to-bring-the-specific-node-to-the-center-or-viewport-in-wpf-diagram-sfdiagram)
+
+[How to switch the visibility of an icon in the ContentTemplate in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17725/how-to-switch-the-visibility-of-an-icon-in-the-contenttemplate-in-wpf-diagram-sfdiagram-)
