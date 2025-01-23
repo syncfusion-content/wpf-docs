@@ -362,3 +362,9 @@ N> `Margin` is not valid for `RadialTreeLayout`.
 [How to provide MultipleParentSupport in SfDiagram layout using DataSourceSettings?](https://support.syncfusion.com/kb/article/5493/how-to-provide-multipleparentsupport-in-wpf-diagram-sfdiagram-layout-via-datasourcesettings)
 
 [How to create a custom layout in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17780/how-to-create-a-custom-layout-in-the-wpf-diagram-sfdiagram)
+
+[How to generate tree like diagram with nested objects in WPF ?](https://support.syncfusion.com/kb/article/3478/how-to-generate-tree-like-diagram-with-nested-objects-in-wpf-)
+
+[How to drag and drop elements from treeview in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
+
+[How to do Expand/Collapse for MultiParent Layout in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11417/how-to-do-expand-collapse-for-multiparent-layout-in-wpf-diagramsfdiagram)

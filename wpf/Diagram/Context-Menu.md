@@ -136,3 +136,5 @@ void MainPage_MenuItemClickedEvent(object sender,
 [How to change the annotation content of a node using context menu in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14962/how-to-change-the-annotation-content-of-a-node-using-context-menu-in-wpf-diagram-sfdiagram)
 
 [How to implement color palette functionality using context menu in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14963/how-to-implement-color-palette-functionality-using-context-menu-in-wpf-diagram-sfdiagram)
+
+[How to enable or disable QuickCommands in WPF Diagram?](https://support.syncfusion.com/kb/article/5902/how-to-enable-or-disable-quickcommands-in-wpf-diagram)
