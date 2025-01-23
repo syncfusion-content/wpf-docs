@@ -129,13 +129,9 @@ Diagram.ConnectorDropIndicatorStyle = this.Resources["connectordropindicator"] a
 
 [How to restrict diagram objects dragging in the positive side in WPF Diagram?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)
 
-[How to enable the behaviour of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
-
 [How to Restrict Node is being removed from its Parent Container when Dragging in WPF Diagram (SfDiagram)](https://support.syncfusion.com/kb/article/15644/how-to-restrict-node-is-being-removed-from-its-parent-container-when-dragging-in-wpf-diagram-sfdiagram)
 
 [How to prevent the connector segment from collapsing while dragging a node in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)
-
-[How to drag and drop different shapes from SfTreeView to WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
 
 [How to update the Zindex of the dragged node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10388/how-to-update-the-zindex-of-the-dragged-node-in-wpf-diagram-sfdiagram)
 

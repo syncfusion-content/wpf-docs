@@ -90,3 +90,5 @@ The Alignment of QuickCommand is similar  to [Annotation Alignment](https://help
 [How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)
 
 [How to remove the rotator thumb of the node?](https://support.syncfusion.com/kb/article/5943/how-to-remove-rotator-of-the-node-in-wpf-diagram-sfdiagram)
+
+[How to enable or disable QuickCommands in WPF Diagram?](https://support.syncfusion.com/kb/article/5902/how-to-enable-or-disable-quickcommands-in-wpf-diagram)

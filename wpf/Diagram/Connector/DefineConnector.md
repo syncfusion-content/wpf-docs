@@ -491,12 +491,6 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 [How to manage the visibility of node and connector objects in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
 
-[How to restrict annotation editing by double-clicking the node or connector in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
-
-[How to restrict Connector's source/target changing from native Nodes to other Nodes in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11796/how-to-restrict-connectors-source-target-changing-from-native-nodes-to-other-nodes-in-wpf)
-
-[How to generate Layout with DataSource as NodeViewModel instead of business object class in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10187/how-to-generate-layout-with-datasource-as-nodeviewmodel-instead-of-business-object-class-in)
-
 [How to change the connector style based on its SourcePort style in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)
 
 [How to identify the dragging state of connectors in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)

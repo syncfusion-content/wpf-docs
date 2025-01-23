@@ -73,5 +73,3 @@ You can edit the Group and its children at runtime. For more information about h
 [How to Obtain InConnectors and OutConnectors of Node in WPF Diagram?](https://support.syncfusion.com/kb/article/18250/how-to-obtain-inconnectors-and-outconnectors-of-node-in-wpf-diagram)
 
 [How to prevent the node from moving outside the group in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18852/how-to-prevent-the-node-from-moving-outside-the-group-in-wpf-diagram-sfdiagram)
-
-[How to prevent the node from moving outside the group in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18852/how-to-prevent-the-node-from-moving-outside-the-group-in-wpf-diagram-sfdiagram)

@@ -136,13 +136,3 @@ void MainPage_MenuItemClickedEvent(object sender,
 [How to change the annotation content of a node using context menu in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14962/how-to-change-the-annotation-content-of-a-node-using-context-menu-in-wpf-diagram-sfdiagram)
 
 [How to implement color palette functionality using context menu in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14963/how-to-implement-color-palette-functionality-using-context-menu-in-wpf-diagram-sfdiagram)
-
-[How to display images, image URI and shapes for menu items icon in WPF Diagram?](https://support.syncfusion.com/kb/article/13009/how-to-display-images-image-uri-and-shapes-for-menu-items-icon-in-wpf-diagram)
-
-[How to add icon to context menu item in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10986/how-to-add-icon-to-context-menu-item-in-wpf-diagram-sfdiagram)
-
-[How to display images, image URI and shapes for menu items icon in WPF Diagram?](https://support.syncfusion.com/kb/article/13009/how-to-display-images-image-uri-and-shapes-for-menu-items-icon-in-wpf-diagram)
-
-[How to enable or disable QuickCommands in WPF Diagram?](https://support.syncfusion.com/kb/article/5902/how-to-enable-or-disable-quickcommands-in-wpf-diagram)
-
-[How to add icon to context menu item in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10986/how-to-add-icon-to-context-menu-item-in-wpf-diagram-sfdiagram)
