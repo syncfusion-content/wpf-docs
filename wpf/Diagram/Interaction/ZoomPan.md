@@ -36,3 +36,7 @@ documentation: ug
 [How to Use the Mouse Middle Button for Pan and Middle Button Scroll for Zoom in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15645/how-to-use-the-mouse-middle-button-for-pan-and-middle-button-scroll-for-zoom-in-wpf-diagram-sfdiagram)
 
 [How to do Panning in all the directions at a time in WPF Diagram?](https://support.syncfusion.com/kb/article/5874/how-to-do-panning-in-all-the-directions-at-a-time-in-wpf-diagram)
+
+[How to deactivate the rubberbandzoom in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15535/how-to-deactivate-the-rubberbandzoom-in-the-wpf-diagram-sfdiagram)
+
+[How to use the Magnifier control in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17727/how-to-use-the-magnifier-control-in-the-wpf-diagram-sfdiagram)

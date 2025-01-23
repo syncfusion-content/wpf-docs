@@ -179,3 +179,6 @@ diagram.LayoutManager = new LayoutManager()
 };
 {% endhighlight %}
 {% endtabs %}
+
+## See Also
+[How to arrange the Nodes in Circular(Radial) mode in WPF Diagram?](https://support.syncfusion.com/kb/article/3342/how-to-arrange-the-nodes-in-circularradial-mode-in-wpf-diagram)

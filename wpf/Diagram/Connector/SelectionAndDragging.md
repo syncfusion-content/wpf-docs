@@ -182,3 +182,5 @@ Find the [Connector interactions sample](https://github.com/SyncfusionExamples/W
 [How to decide whether to drag or draw a connection on port at runtime?](https://support.syncfusion.com/kb/article/8538/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf-diagram)
 
 [How to select a connector when the mouse hovers over a node port that is connected by the connector in the WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18695/how-to-select-a-connector-when-the-mouse-hovers-over-a-node-port-that-is-connected-by-the-connector-in-the-wpf-diagram-sfdiagram)
+
+[How to identify the dragging state of connectors in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
