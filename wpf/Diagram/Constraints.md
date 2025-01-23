@@ -448,4 +448,6 @@ In the above example, you can check whether the rotate constraints are enabled i
 
 [How to prevent nodes from moving to a negative index when nudging in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17732/how-to-prevent-nodes-from-moving-to-a-negative-index-when-nudging-in-wpf-diagram-sfdiagram)
 
+[How to enable Undo/Redo feature in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/11090/how-to-enable-undo-redo-feature-in-wpf-diagram-sfdiagram)
+
 [How to enable undo or redo in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/5471/how-to-enable-undo-or-redo-in-wpf-diagram-sfdiagram)
