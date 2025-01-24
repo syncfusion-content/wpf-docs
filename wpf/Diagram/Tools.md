@@ -364,3 +364,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Exa
 [How to create port at runtime through set tool?](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
 
 [How to draw nodes in diagram?](https://support.syncfusion.com/kb/article/5989/how-to-draw-node-in-wpf-diagram-sfdiagram)
+
+[How to Obtain the Polyline Connector Completed status in WPF Diagram?](https://support.syncfusion.com/kb/article/18899/how-to-obtain-the-completed-status-of-a-polyline-connector-in-the-wpf-diagram-sfdiagram)

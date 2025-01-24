@@ -814,3 +814,5 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 [How to get base node interface while dropping a symbol from stencil?](https://support.syncfusion.com/kb/article/5494/how-to-get-base-node-interface-while-dropping-a-symbol-from-stencil-to-wpf-diagram)
 
 [How to enable the AspectRatio for node?](https://support.syncfusion.com/kb/article/5473/how-to-enable-the-aspectratio-of-node-in-wpf-diagram-sfdiagram)
+
+[How to select the node that is outside of the selection region in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18896/how-to-select-the-node-that-is-outside-of-the-selection-region-in-the-wpf-diagram-sfdiagram)
