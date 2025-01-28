@@ -101,16 +101,16 @@ Use the following steps to add the SyncfusionÂ® WPF controls through SyncfusionÂ
 
    Or you can create this file in the same location by using the XML format given below
     
-   {% tabs %}
-   {% highlight XML %}
+{% tabs %}
+{% highlight XML %}
      <?xml version="1.0" encoding="utf-8"?>
       <configuration>
         <fallbackPackageFolders>
           <add key="Syncfusion Toolbox Local NuGet Packages {version}" value="F:\Syncfusion" />
         </fallbackPackageFolders>
       </configuration>
-   {% endhighlight %}
-   {% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 	
 **step 3:**
    

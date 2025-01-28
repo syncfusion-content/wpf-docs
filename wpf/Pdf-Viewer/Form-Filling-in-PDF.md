@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Form Filling in PDF Files in WPF Pdf Viewer | Syncfusion
-description: Learn about Form Filling in PDF Files support in Syncfusion WPF Pdf Viewer control, its elements and more.
+title: Form Filling in PDF Files in WPF Pdf Viewer | Syncfusion&reg;
+description: Learn about Form Filling in PDF Files support in Syncfusion<sup>&reg;</sup>; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -78,7 +78,7 @@ private void PdfViewer_FormFieldClicked(object sender, FormFieldClickedEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-N> The sample project of PDF form filling using the Syncfusion PDF Viewer is available in the [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/pdfviewer).
+N> The sample project of PDF form filling using the Syncfusion<sup>&reg;</sup>; PDF Viewer is available in the [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/pdfviewer).
 
 ## Import and Export Form Data
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Pdf Viewer control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
+title: Getting Started with WPF Pdf Viewer control | Syncfusion&reg;
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup>; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -46,7 +46,7 @@ Rather than referencing the assemblies, you can utilize the [PdfViewer NuGet](ht
 [How to install nuget packages in a WPF application](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 N> Starting with version 23.1.x, a reference to the Syncfusion.PdfToImageConverter.Base assembly is necessary for PdfViewer applications.
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your WPF application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion<sup>&reg;</sup>; assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion&reg; license key in your WPF application to use our components.
 
 ## Create a simple PDF Viewer application 
 
@@ -55,9 +55,9 @@ You can create a PDF Viewer application by simply drag the control from the Visu
 ### Drag and drop the PdfViewerControl from the toolbox
 Follow these steps to drag and drop the PdfViewerControl from the toolbox.
 
-1. After installing the Syncfusion Essential Studio in your machine, create a new WPF application in Visual Studio.
+1. After installing the Syncfusion<sup>&reg;</sup>; Essential Studio&reg; in your machine, create a new WPF application in Visual Studio.
 2. Open the Visual Studio toolbox.
-3. Navigate to <b>Syncfusion WPF Toolbox</b> tab and drag the `PdfViewerControl` toolbox item to the Designer window, it automatically adds the required references to the current application.
+3. Navigate to <b>Syncfusion<sup>&reg;</sup>; WPF Toolbox</b> tab and drag the `PdfViewerControl` toolbox item to the Designer window, it automatically adds the required references to the current application.
 
    ![WPF PDF Viewer in Toolbox](getting-started_images/wpf-pdf-viewer-in-toolbox.png)
     PDF viewer control in toolbox
@@ -67,7 +67,7 @@ Follow these steps to drag and drop the PdfViewerControl from the toolbox.
 To add control manually in XAML, do the following steps,
 
 1. Add the required assemblies as a reference to the project.
-2. Add the following Syncfusion namespace in XAML to make use of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+2. Add the following Syncfusion<sup>&reg;</sup>; namespace in XAML to make use of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
 	~~~xaml
 	<Window
@@ -95,7 +95,7 @@ To add control manually in XAML, do the following steps,
 To add control manually from code, follow these steps,
 
 1.	Add the required assemblies as a reference to the project.
-2.	Add the following Syncfusion namespace class file.
+2.	Add the following Syncfusion<sup>&reg;</sup>; namespace class file.
 
 	~~~csharp
 	using Syncfusion.Windows.PdfViewer;

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Syncfusion Essential SfHeatMap for WPF.
+title: Getting started with Syncfusion® Essential® SfHeatMap for WPF.
 description: This section explain about how to integrate WPF HeatMap (SfHeatMap) into an applicationl and enable its basic features with example. 
 platform: wpf
 control: SfHeatMap
@@ -33,7 +33,7 @@ The SfHeatMap exists in the Syncfusion.UI.Xaml.HeatMap namespace. Initialize SfH
 
 {% endhighlight %}
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your WPF application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion® license key in your WPF application to use our components.
 
 ## Prepare data
 

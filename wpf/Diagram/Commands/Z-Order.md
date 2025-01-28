@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Z-Order Commands in WPF Diagram control | Syncfusion
-description: Learn here all about Z-Order Commands support in Syncfusion WPF Diagram (SfDiagram) control and more.
+title: Z-Order Commands in WPF Diagram control | Syncfusion®
+description: Learn here all about Z-Order Commands support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

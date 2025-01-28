@@ -7,9 +7,9 @@ control: Localization
 documentation: ug
 ---
 
-# Localization of Syncfusion WPF Controls
+# Localization of Syncfusion<sup>&reg;</sup> WPF Controls
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the syncfusion WPF controls by adding a resource file for each language.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the syncfusion<sup>&reg;</sup> WPF controls by adding a resource file for each language.
 
 ## Changing application culture
 
@@ -17,7 +17,7 @@ When you change the application culture, you can localize the application based 
 
 {% tabs %}
 
-{%highlight C#%}
+{% highlight C# %}
 
 public partial class MainWindow
 {
@@ -48,7 +48,7 @@ End Class
 
 You can create .resx files for any language by following these steps:
 
-N> You can get the default resource files of all Syncfusion WPF libraries from [GitHub](https://github.com/syncfusion/wpf-controls-localization-resx-files).
+N> You can get the default resource files of all Syncfusion<sup>&reg;</sup> WPF libraries from [GitHub](https://github.com/syncfusion/wpf-controls-localization-resx-files).
 
 1) Right-click your project and add a new folder named as `Resources`. 
 
@@ -75,4 +75,4 @@ N> Download demo from the [GitHub](https://github.com/SyncfusionExamples/wpf-dat
 
 ## Editing default culture strings
 
-You can change default string of any control by adding the default .resx files ([from GitHub](https://github.com/syncfusion/wpf-controls-localization-resx-files)) to `Resources` folder of your application. If it is added, Syncfusion WPF controls reads the default string from the .resx files of application. 
+You can change default string of any control by adding the default .resx files ([from GitHub](https://github.com/syncfusion/wpf-controls-localization-resx-files)) to `Resources` folder of your application. If it is added, Syncfusion<sup>&reg;</sup> WPF controls reads the default string from the .resx files of application. 

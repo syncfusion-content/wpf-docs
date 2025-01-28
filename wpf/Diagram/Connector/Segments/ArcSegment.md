@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Arc segments of connectors | Syncfusion
+title: Arc segments of connectors | Syncfusion®
 description: How to draw the arc segments and how to edit, and customize the arc segments of connectors in the diagram control.
 platform: wpf
 control: SfDiagram

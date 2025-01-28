@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selected Item in WPF Step ProgressBar control | Syncfusion
-description: Learn here all about Selected Item support in Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more.
+title: Selected Item in WPF Step ProgressBar control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about Selected Item support in Syncfusion<sup>&reg;</sup>; WPF Step ProgressBar (SfStepProgressBar) control and more.
 platform: WPF
 control: Step ProgressBar
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Delete Command in WPF Diagram control | Syncfusion
-description: Learn here all about Delte Command support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
+title: Delete Command in WPF Diagram control | Syncfusion®
+description: Learn here all about Delte Command support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

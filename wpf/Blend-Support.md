@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Blend Support
 
-Essential WPF control's Style and Template can be editable in Expression Blend and this section explains the same.
+Essential<sup>&reg;</sup> WPF control's Style and Template can be editable in Expression Blend and this section explains the same.
 
 ## Edit Control Style in Expression Blend
 
@@ -17,7 +17,7 @@ Essential WPF control's Style and Template can be editable in Expression Blend a
 
 2.Expand the Views, choose `Other Windows` and then choose `Objects` and `Timeline`.
 
-3.In the “Objects and Timeline” pane, select a Syncfusion control to modify a style.
+3.In the “Objects and Timeline” pane, select a Syncfusion<sup>&reg;</sup> control to modify a style.
 
 ![Blend-Support_images1](Blend-Support_images/GettingStarted_img1.jpeg)
 
@@ -43,12 +43,12 @@ Essential WPF control's Style and Template can be editable in Expression Blend a
 
 2.Expand the Views, choose `Other Windows` and then choose `Objects` and `Timeline`.
 
-3.In the “Objects and Timeline” pane, select a Syncfusion control to modify a template.
+3.In the “Objects and Timeline” pane, select a Syncfusion<sup>&reg;</sup> control to modify a template.
 
 ![Blend-Support_images4](Blend-Support_images/GettingStarted_img4.jpeg)
 
 
-4.Right-click the Syncfusion control and choose `Edit` template
+4.Right-click the Syncfusion<sup>&reg;</sup> control and choose `Edit` template
 
 ![Blend-Support_images5](Blend-Support_images/GettingStarted_img5.jpeg)
 

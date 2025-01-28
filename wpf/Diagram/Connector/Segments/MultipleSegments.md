@@ -1,6 +1,6 @@
 ---
 layout: post
-title: creating multiple segments | Syncfusion
+title: creating multiple segments | Syncfusion®
 description: How to add multiple and different types of segments into a single connector and how to edit the multiple connectors
 platform: wpf
 control: SfDiagram

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UML Diagrams in WPF Diagram control | Syncfusion
-description: Learn here all about UML Diagram Shapes support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
+title: UML Diagrams in WPF Diagram control | Syncfusion®
+description: Learn here all about UML Diagram Shapes support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

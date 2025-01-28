@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diagram Ribbon in WPF Diagram control | Syncfusion
-description: Learn here all about Diagram Ribbon support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
+title: Diagram Ribbon in WPF Diagram control | Syncfusion®
+description: Learn here all about Diagram Ribbon support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -51,7 +51,7 @@ Steps to add the Diagram ribbon control manually is given below with its code ex
 
 1. Add the following required assembly reference to the project `Syncfusion.SfDiagramRibbon.WPF`.
 
-2. Import the Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the SfDiagramRibbon control namespace `Syncfusion.UI.Xaml.DiagramRibbon` in your application.
+2. Import the Syncfusion® WPF schema `http://schemas.syncfusion.com/wpf` or the SfDiagramRibbon control namespace `Syncfusion.UI.Xaml.DiagramRibbon` in your application.
 
 3. Declare the SfDiagramRibbon control in your application.
 

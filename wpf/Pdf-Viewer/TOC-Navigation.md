@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Table Of Contents Navigation in WPF Pdf Viewer control | Syncfusion
-description: Learn about Table of Contents Navigation support in Syncfusion WPF Pdf Viewer control, its elements and more.
+title: Table Of Contents Navigation in WPF Pdf Viewer control | Syncfusion<sup>&reg;</sup>;
+description: Learn about Table of Contents Navigation support in Syncfusion<sup>&reg;</sup>; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug

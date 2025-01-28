@@ -10,7 +10,7 @@ documentation: ug
 
 ## Getting Started with MVVM
 
-Essential WPF controls are suitable for MVVM Pattern. Since, the controls are provided with built-in commands. 
+Essential<sup>&reg;</sup> WPF controls are suitable for MVVM Pattern. Since, the controls are provided with built-in commands. 
 
 The `DataContext` property specifies the default source for Data Binding in MVVM pattern.
 

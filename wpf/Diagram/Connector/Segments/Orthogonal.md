@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orthogonal segment connectors | Syncfusion
+title: Orthogonal segment connectors | Syncfusion®
 description: How to create the orthogonal segments, how to edit and customize the Orthogonal segments and how orthogonal connectors are avoiding overlapping.
 platform: wpf
 control: SfDiagram

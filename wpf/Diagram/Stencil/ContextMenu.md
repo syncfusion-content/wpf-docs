@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context menu support for stencil in WPF Diagram control | Syncfusion
-description: Learn here all about context menu support for stencil in Syncfusion WPF Diagram (SfDiagram) control ports.
+title: Context menu support for stencil in WPF Diagram control | Syncfusion®
+description: Learn here all about context menu support for stencil in Syncfusion® WPF Diagram (SfDiagram) control ports.
 platform: wpf
 control: SfDiagram
 documentation: ug

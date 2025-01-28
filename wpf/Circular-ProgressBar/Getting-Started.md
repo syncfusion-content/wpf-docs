@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF Circular ProgressBar control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Circular ProgressBar (SfCircularProgressBar) control, its elements and more details.
-platform: WPF
+title: Getting Started with WPF Circular ProgressBar | Syncfusion&reg;
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup>; WPF Circular ProgressBar (SfCircularProgressBar) control, its elements and more details.
+platform: wpf
 control: SfCircularProgressBar
 documentation: ug
 ---
@@ -31,7 +31,7 @@ To add control manually in XAML, follow the given steps:
 
 1. Add the following required assembly references to the project:
     * Syncfusion.SfProgressBar.WPF     
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** the in XAML page.
+2. Import Syncfusion<sup>&reg;</sup>; WPF schema **http://schemas.syncfusion.com/wpf** the in XAML page.
 3. Declare the SfCircularProgressBar control in the XAML page.
 
 {% capture codesnippet1 %}

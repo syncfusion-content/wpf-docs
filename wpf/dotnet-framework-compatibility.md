@@ -8,11 +8,11 @@ documentation: ug
 ---
 # .NET Framework Compatibility
 
-Syncfusion WPF Controls are always compatible latest .NET Framework versions. 
+Syncfusion<sup>&reg;</sup> WPF Controls are always compatible latest .NET Framework versions. 
 
 ## Version Compatibility
 
-Below table represents the supported Syncfusion Essential Studio version for .NET Framework versions .
+Below table represents the supported Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> version for .NET Framework versions .
 
 <table>
 <tr>
