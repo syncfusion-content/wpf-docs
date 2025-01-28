@@ -160,7 +160,7 @@ Syncfusion<sup>&reg;</sup> provides the Visual Studio Project Templates for the 
 
 I> The Syncfusion<sup>&reg;</sup> WPF templates are available from v16.1.0.24. 
 
-### Create Syncfusion WPF project 
+### Create Syncfusion<sup>&reg;</sup> WPF project 
 
 The following steps direct you to create the Syncfusion<sup>&reg;</sup> WPF project using the Visual Studio Project Template. 
 
@@ -200,6 +200,6 @@ N> Minimum target Framework is 4.0 for Syncfusion<sup>&reg;</sup> WPF project te
 
 ![Shows project folder for added control](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)
 
-5. Then, Syncfusion<sup>&reg;</sup> licensing registration required message box will be shown as follows, if you have installed the trial setup or NuGet packages since Syncfusion introduced the licensing system with the 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion<sup>&reg;</sup> license key for your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+5. Then, Syncfusion<sup>&reg;</sup> licensing registration required message box will be shown as follows, if you have installed the trial setup or NuGet packages since Syncfusion introduced the licensing system with the 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>&reg;</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion<sup>&reg;</sup> license key for your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>&reg;</sup>.
 
 ![Shows syncfusion license registration message](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-9.png)

@@ -866,7 +866,7 @@ private void Window_Closed(object sender, EventArgs e)
 <tr><td>Window</td><td>WPFWindowStyle</td></tr>
 </table>
 
-### Syncfusion Controls
+### Syncfusion<sup>&reg;</sup> Controls
 
 <table>
 <tr><th>Control Name</th><th>Key Name</th></tr>
