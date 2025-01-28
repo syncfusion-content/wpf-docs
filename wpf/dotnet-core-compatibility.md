@@ -11,7 +11,7 @@ documentation: ug
 
 Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> for WPF ships .NET Core assemblies for building WPF .NET Core applications using Syncfusion<sup>&reg;</sup> Controls. This section explains how to create the project in .NET Core application and using syncfusion<sup>&reg;</sup> WPF controls.
 
-N> All Syncfusion WPF controls supports .NET Core except the controls labeled as `classic`.
+N> All Syncfusion<sup>&reg;</sup> WPF controls supports .NET Core except the controls labeled as `classic`.
 
 ## Version Compatibility
 
