@@ -218,7 +218,7 @@ Let us see the step-by-step procedure to launch and work with the theme studio u
 
 **Step 1**
 
-After installing the `Syncfusion<sup>&reg;</sup> WPF` suite, launch it and select `Theme Studio` from the start-up panel.
+After installing the `Syncfusion WPF` suite, launch it and select `Theme Studio` from the start-up panel.
 
 ![Theme Studio for WPF](ThemeStudio_images/ThemeStudio-LaunchPage.png)
 
