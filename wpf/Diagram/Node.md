@@ -815,6 +815,8 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to enable the AspectRatio for node?](https://support.syncfusion.com/kb/article/5473/how-to-enable-the-aspectratio-of-node-in-wpf-diagram-sfdiagram)
 
+[How to select the node that is outside of the selection region in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18896/how-to-select-the-node-that-is-outside-of-the-selection-region-in-the-wpf-diagram-sfdiagram)
+
 [How to manage the node's visibility when it is dropped onto another node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18312/how-to-manage-the-nodes-visibility-when-it-is-dropped-onto-another-node-in-wpf-diagram-sfdiagram)
 
 [How to use the WPF SfDiagram as the Content of the Node?](https://support.syncfusion.com/kb/article/18397/how-to-use-the-wpf-sfdiagram-as-the-content-of-the-node)
