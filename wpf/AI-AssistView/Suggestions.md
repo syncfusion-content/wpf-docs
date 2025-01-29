@@ -11,11 +11,29 @@ documentation: ug
 
 By using the [Suggestions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_Suggestions) property, the AssistView displays AI-driven suggestions in the bottom right corner, making it easy for users to quickly respond or choose from relevant options.
 
-## Create a ViewModel class with suggestion property
-
-Create a simple suggestion collection as shown in the following code example in a new class file. Save it as ViewModel.cs file.
-
 {% tabs %}
+
+{% highlight xaml %}
+
+<Page
+    x:Class="GettingStarted.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GettingStarted"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+      <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"
+                                   Suggestions="{Binding Suggestion}" 
+                                   Messages="{Binding Chats}"/>
+    </Grid>
+</Page>
+
+{% endhighlight %} 
+
 {% highlight C# %}
 
  public class ViewModel : INotifyPropertyChanged
@@ -95,34 +113,3 @@ Create a simple suggestion collection as shown in the following code example in 
 
 {% endhighlight %}
 {% endtabs %}
-
-
-## Bind the Suggestion
-
-{% tabs %}
-{% highlight xaml %}
-
-<Page
-    x:Class="GettingStarted.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
-      <Grid.DataContext>
-        <local:ViewModel/>
-     </Grid.DataContext>
-      <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"
-                                   Suggestions="{Binding Suggestion}" 
-                                   Messages="{Binding Chats}"/>
-    </Grid>
-</Page>
-
-{% endhighlight %}
-{% endtabs %}
-
-![WPF AI AssistView control suggestion](aiassistview_images/wpf_aiassistview_suggestions.png)

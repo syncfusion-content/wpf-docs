@@ -80,3 +80,5 @@ Please refer to the sample to [Customize the Ruler](https://github.com/Syncfusio
 ## See Also
 
 [How to customize the ruler units?](https://support.syncfusion.com/kb/article/5944/how-to-customize-the-ruler-units-in-wpf-diagram-sfdiagram)
+
+[How to round off the ruler's value if it displays a decimal value in the WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/18665/how-to-round-off-the-rulers-value-if-it-displays-a-decimal-value-in-the-wpf-diagram-sfdiagram)

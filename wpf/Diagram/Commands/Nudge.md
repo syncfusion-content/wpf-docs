@@ -42,4 +42,4 @@ graphinfo.Commands.MoveUp.Execute(new MoveParameter() { MoveDelta = 5 });
 
 ![Nudge gif](Commands_Images/Commands_img17.gif)
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Nudge%20Commands) 
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Nudge%20Commands)

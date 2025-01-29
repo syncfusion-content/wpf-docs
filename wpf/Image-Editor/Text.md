@@ -63,8 +63,8 @@ Text can be aligned to the left, center, or right by clicking the corresponding 
 
 You can add text to an image using the AddText method programmatically. This method requires the following parameters:
 
-* Text - Defines the content to be displayed on the image.
-* TextSettings - Allows customization of the text's appearance, including options for background, font family, font size, and font color. You can adjust the alignment (center, left, right) and improve the text with effects such as bold, italic, and underline.
+* Text – Specifies the content you need to add on the image.
+* TextSettings - Customizes the text.
 
 {% tabs %} 
 {% highlight XAML %} 
@@ -117,7 +117,7 @@ this.editor.Loaded += this.OnImageEditorLoaded;
 private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
 {
     TextSettings textSettings = new TextSettings();
-    textSettings.Background = new SolidColorBrush(Colors.PeachPuff);
+    textSettings.Background = new SolidColorBrush(Colors.Yellow);
     textSettings.FontFamily = new FontFamily("Century Schoolbook");
     textSettings.FontSize = 30;
     textSettings.Color = new SolidColorBrush(Colors.Red);
@@ -126,10 +126,10 @@ private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
     this.editor.AddText("Good morning", textSettings);
 
     textSettings = new TextSettings();
-    textSettings.Background = new SolidColorBrush(Colors.LightYellow);
+    textSettings.Background = new SolidColorBrush(Colors.Ivory);
     textSettings.FontFamily = new FontFamily("Bell MT");
     textSettings.FontSize = 22;
-    textSettings.Color = new SolidColorBrush(Colors.Teal);
+    textSettings.Color = new SolidColorBrush(Colors.DarkGreen);
     textSettings.TextEffects =  TextEffects.Italic;
     textSettings.Bounds = new Rect(50, 23, 30, 15);
     textSettings.TextAlignment = TextAlignment.Center;
@@ -139,7 +139,7 @@ private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %} 
 
-![Text-settings-in-WPF-Image-editor](Images/text-settings-in-wpf-image-editor.jpg)   
+![Text](Images/Text.jpg)   
 
 ## See also
 

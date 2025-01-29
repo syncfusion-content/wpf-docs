@@ -322,3 +322,8 @@ Swimlane can be selected by clicking (tap) the header of the swimlane.
 Please find the swimlane sample as follows.
 
 [View Swimlane sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Swimlane/Swimlane-Sample)
+
+## See Also
+[How to restrict node’s dragging from native lane to other lanes in WPF diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11744/how-to-restrict-nodes-dragging-from-native-lane-to-other-lanes-in-wpf-diagramsfdiagram)
+
+[How to render the Swimlane at the top-left corner of the diagram in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18841/how-to-render-the-swimlane-at-the-top-left-corner-of-the-diagram-in-the-wpf-diagram-sfdiagram)

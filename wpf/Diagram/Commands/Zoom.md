@@ -217,3 +217,6 @@ graphinfo.Commands.Reset.Execute(new ResetParameter() { Reset = Reset.ZoomPan })
 {% endtabs %}
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Zoom%20Command)
+
+## See Also
+[How to Fit Selected Nodes and Connectors to the WPF Diagram Window?](https://support.syncfusion.com/kb/article/18062/how-to-fit-selected-nodes-and-connectors-to-the-wpf-diagram-window)

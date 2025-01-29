@@ -110,3 +110,5 @@ N> When you apply a theme, it affects all [SfDiagram](https://help.syncfusion.co
 ## See Also
 
 [How to apply built-in theme for node and connector?](https://support.syncfusion.com/kb/article/9995/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagram-sfdiagram)
+
+[How to create a custom theme using the SfDiagram Control in the WPF Diagram?](https://support.syncfusion.com/kb/article/18673/how-to-create-a-custom-theme-using-the-sfdiagram-control-in-the-wpf-diagram)

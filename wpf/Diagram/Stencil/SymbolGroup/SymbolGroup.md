@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stencil Symbol grouping in WPF Diagram control | Syncfusion®
-description: Learn here all about port hovering animation effect support in Syncfusion® WPF Diagram (SfDiagram) control ports.
+title: Stencil Symbol grouping in WPF Diagram control | Syncfusion
+description: Learn here all about port hovering animation effect support in Syncfusion WPF Diagram (SfDiagram) control ports.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -348,9 +348,9 @@ To add symbols to a Stencil through `SymbolGroupViewModel`, you can utilize the 
     </syncfusion:Stencil.SymbolGroups>
 </syncfusion:Stencil>
 
-{% endhighlight %}
-
 ![Category Source](SymbolGroup_images/BuiltInShapesList.png)
+
+{% endhighlight %}
 
 ## Customize the appearance of the symbols in the built-in categories 
 
@@ -416,3 +416,7 @@ public class StencilViewModel : Stencil
 ## See also
 
 [How to expand all SymbolGroups?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
+
+[How to group all the SymbolViewModels into the same group in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
+
+[How to Change the Background Color of a Symbol in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)
