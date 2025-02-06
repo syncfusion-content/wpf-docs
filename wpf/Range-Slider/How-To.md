@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events | SfRangeSlider | wpf | Syncfusion
-description: This section provides details about all events and their arguments in Syncfusion WPF RangeSlider (SfRangeSlider). 
+title: Events | SfRangeSlider | wpf | Syncfusion®
+description: This section provides details about all events and their arguments in Syncfusion® WPF RangeSlider (SfRangeSlider). 
 platform: wpf
 control: SfRangeSlider 
 documentation: ug

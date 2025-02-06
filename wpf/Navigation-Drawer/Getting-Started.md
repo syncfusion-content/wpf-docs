@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF Navigation Drawer control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control, its elements and more details.
-platform: WPF
+title: Getting Started with WPF Navigation Drawer control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control, its elements and more details.
+platform: wpf
 control: NavigationDrawer
 documentation: ug
 ---
@@ -36,7 +36,7 @@ Drag and drop the SfNavigationDrawer control from the Toolbox to your applicatio
 
 ![WPF NavigationDrawer shows in Toolbox](getting-started_images/wpf-navigation-drawer-toolbox.png)
 
-Now, the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
+Now, the Syncfusion<sup>®</sup> Controls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
 ![Displaying Reference of WPF NavigationDrawer](getting-started_images/wpf-navigation-drawer-reference.png)
 
@@ -48,7 +48,7 @@ In order to add control manually in XAML, do the below steps,
 
 1. Add the below required assembly references to the project,
 	* Syncfusion.SfNavigationDrawer.WPF 
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 3. Declare SfNavigationDrawer control in XAML page.
 
 {% capture codesnippet1 %}

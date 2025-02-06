@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Thumb ToolTip in WPF Range Slider control | Syncfusion
-description: Learn here all about Thumb ToolTip support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
+title: Thumb ToolTip in WPF Range Slider control | Syncfusion®
+description: Learn here all about Thumb ToolTip support in Syncfusion® WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
