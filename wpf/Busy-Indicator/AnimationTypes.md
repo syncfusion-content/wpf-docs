@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AnimationTypes in WPF Busy Indicator control | Syncfusion
-description: Learn here all about AnimationTypes support in Syncfusion WPF Busy Indicator (SfBusyIndicator) control and more.
+title: AnimationTypes in WPF Busy Indicator control | Syncfusion®
+description: Learn here all about AnimationTypes support in Syncfusion® WPF Busy Indicator (SfBusyIndicator) control and more.
 platform: wpf
 control: Busy Indicator
 documentation: ug
