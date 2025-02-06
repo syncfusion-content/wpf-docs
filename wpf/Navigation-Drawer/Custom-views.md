@@ -2,7 +2,7 @@
 layout: post
 title: Custom views in WPF Navigation Drawer control | Syncfusion®
 description: Learn here all about Custom views support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
-platform: WPF
+platform: wpf
 control: NavigationDrawer
 documentation: ug
 ---

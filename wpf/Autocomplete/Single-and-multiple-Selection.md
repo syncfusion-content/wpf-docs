@@ -2,7 +2,7 @@
 layout: post
 title: Single and multiple selection in WPF Autocomplete control | Syncfusion®
 description: Learn here all about Single and multiple selection support in Syncfusion® WPF Autocomplete (SfTextBoxExt) control and more.
-platform: WPF
+platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
