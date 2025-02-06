@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling in WPF Rating control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion WPF Rating (SfRating) control and more.
+title: Appearance and Styling in WPF Rating control | Syncfusion®
+description: Learn here all about Appearance and Styling support in Syncfusion® WPF Rating (SfRating) control and more.
 platform: wpf
 control: SfRating
 documentation: ug

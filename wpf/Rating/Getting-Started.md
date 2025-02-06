@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Rating control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Rating (SfRating) control, its elements and more.
+title: Getting Started with WPF Rating control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Rating (SfRating) control, its elements and more.
 platform: wpf
 control: SfRating
 documentation: ug
@@ -43,7 +43,7 @@ In order to add [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
    * Syncfusion.SfShared.WPF
    * Syncfusion.SfInput.WPF
 
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 
 3. Declare [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) in XAML page.
 

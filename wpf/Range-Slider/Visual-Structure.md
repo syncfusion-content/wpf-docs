@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual Structure in WPF Range Slider control | Syncfusion
-description: Learn here all about Visual Structure support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
+title: Visual Structure in WPF Range Slider control | Syncfusion®
+description: Learn here all about Visual Structure support in Syncfusion® WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
