@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header and Footer in WPF Navigation Drawer control | Syncfusion
-description: Learn here all about Header and Footer support in Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control and more.
+title: Header and Footer in WPF Navigation Drawer control | Syncfusion®
+description: Learn here all about Header and Footer support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
 platform: WPF
 control: NavigationDrawer
 documentation: ug

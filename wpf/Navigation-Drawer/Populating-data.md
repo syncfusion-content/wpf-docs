@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating data in WPF Navigation Drawer control | Syncfusion
-description: Learn here all about Populating data support in Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control and more.
+title: Populating data in WPF Navigation Drawer control | Syncfusion®
+description: Learn here all about Populating data support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
 platform: WPF
 control: NavigationDrawer
 documentation: ug
