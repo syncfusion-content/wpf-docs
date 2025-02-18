@@ -375,7 +375,7 @@ colorPickerPalette.NoColorVisibility = Visibility.Visible;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette reset selected color as Transparent by clicking the No color button](Dealing-with-ColorPickerPalette_images/NoColor.png)
+![ColorPickerPalette reset selected color as Transparent by clicking the No color button](Dealing-with-ColorPickerPalette_images/wpf-reset-transparency-button.png)
 
 N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
 
