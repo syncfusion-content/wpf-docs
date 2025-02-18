@@ -2,7 +2,7 @@
 layout: post
 title: Customization in WPF Badge control | Syncfusion®
 description: Learn here all about Customization support in Syncfusion® WPF Badge (SfBadge) control, its elements and more details.
-platform: WPF
+platform: wpf
 control: SfBadge
 documentation: ug
 ---

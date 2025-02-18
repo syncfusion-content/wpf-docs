@@ -2,7 +2,7 @@
 layout: post
 title: About WPF Color Palette control | Syncfusion®
 description: Learn here all about introduction of Syncfusion® WPF Color Palette (SfColorPalette) control, its elements and more.
-platform: WPF
+platform: wpf
 control: SfColorPalette
 documentation: ug
 ---

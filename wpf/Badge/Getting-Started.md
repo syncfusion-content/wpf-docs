@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF Badge control | Syncfusion®
 description: Learn here about getting started with Syncfusion® WPF Badge (SfBadge) control, its elements and more details.
-platform: WPF
+platform: wpf
 control: SfBadge
 documentation: ug
 ---

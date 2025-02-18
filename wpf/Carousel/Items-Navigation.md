@@ -2,7 +2,7 @@
 layout: post
 title: Items Navigation in WPF Carousel control | Syncfusion®
 description: Learn about Items Navigation support in Syncfusion® Essential Studio® WPF Carousel control, its elements and more details.
-platform: WPF
+platform: wpf
 control: Carousel 
 documentation: ug
 ---

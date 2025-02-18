@@ -2,7 +2,7 @@
 layout: post
 title: Custom Path in WPF carousel control | Syncfusion®
 description: Learn here all about Custom Path support in Syncfusion® WPF carousel (Carousel) control, its elements and more details.
-platform: WPF
+platform: wpf
 control: Carousel
 documentation: ug
 ---
