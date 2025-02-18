@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Date Selector in WPF DatePicker control | Syncfusion
-description: Learn here all about Date Selector support in Syncfusion WPF DatePicker (SfDatePicker) control and more.
-platform: wpf
+title: Date Selector in WPF DatePicker control | Syncfusion®
+description: Learn here all about Date Selector support in Syncfusion® WPF DatePicker (SfDatePicker) control and more.
+platform: WPF
 control: SfDatePicker
 documentation: ug
 ---

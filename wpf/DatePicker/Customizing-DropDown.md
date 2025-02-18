@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customizing DropDown in WPF DatePicker control | Syncfusion
-description: Learn here all about Customizing DropDown support in Syncfusion WPF DatePicker (SfDatePicker) control and more.
-platform: wpf
+title: Customizing DropDown in WPF DatePicker control | Syncfusion®
+description: Learn here all about Customizing DropDown support in Syncfusion® WPF DatePicker (SfDatePicker) control and more.
+platform: WPF
 control:  SfDatePicker
 documentation: ug
 ---

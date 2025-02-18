@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Badge control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Badge (SfBadge) control, its elements and more details.
+title: Getting Started with WPF Badge control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Badge (SfBadge) control, its elements and more details.
 platform: WPF
 control: SfBadge
 documentation: ug
@@ -32,7 +32,7 @@ To add the `SfBadge` manually in XAML, follow these steps:
     * Syncfusion.Shared.WPF
     * Syncfusion.Tools.WPF
 
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `SfBadge` in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `SfBadge` in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}

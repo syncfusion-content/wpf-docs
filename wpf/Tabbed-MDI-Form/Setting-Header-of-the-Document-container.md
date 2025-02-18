@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Setting Header of Document container in Tabbed MDI Form | Syncfusion
-description: Learn here all about Setting Header of the Document container support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: wpf
+title: Setting Header of Document container in Tabbed MDI Form | Syncfusion®
+description: Learn here all about Setting Header of the Document container support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
+platform: WPF
 control: Tabbed MDI Form
 documentation: ug
 ---

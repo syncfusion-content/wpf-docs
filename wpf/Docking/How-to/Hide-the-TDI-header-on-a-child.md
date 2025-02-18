@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Hide the TDI header on a child | DockingManager | wpf | Syncfusion
-description: Hide the tdi header on a child in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
-platform: wpf
+title: Hide the TDI header on a child | DockingManager | wpf | Syncfusion®
+description: Hide the tdi header on a child in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---

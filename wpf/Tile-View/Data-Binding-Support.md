@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data Binding in WPF Tile View control | Syncfusion
-description: Learn about Data Binding support in Syncfusion Essential Studio WPF Tile View control, its elements and more.
-platform: wpf
+title: Data Binding in WPF Tile View control | Syncfusion®
+description: Learn about Data Binding support in Syncfusion® Essential Studio® WPF Tile View control, its elements and more.
+platform: WPF
 control: TileViewControl
 documentation: ug
 ---

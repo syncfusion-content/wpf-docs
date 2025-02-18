@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Command Binding in WPF Split Button control | Syncfusion
-description: Learn about Command Binding support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
-platform: wpf
+title: Command Binding in WPF Split Button control | Syncfusion®
+description: Learn about Command Binding support in Syncfusion® Essential Studio® WPF Split Button control, its elements and more.
+platform: WPF
 control: SplitButtonAdv
 documentation: ug
 ---

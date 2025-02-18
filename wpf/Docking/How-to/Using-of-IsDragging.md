@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Using of IsDragging | DockingManager | wpf | Syncfusion
-description: Using of isdragging in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
-platform: wpf
+title: Using of IsDragging | DockingManager | wpf | Syncfusion®
+description: Using of isdragging in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---

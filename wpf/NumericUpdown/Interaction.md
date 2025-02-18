@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interaction in WPF NumericUpdown control | Syncfusion
-description: Learn here all about Interaction support in Syncfusion WPF NumericUpdown (UpDown) control, its elements and more details.
-platform: wpf
+title: Interaction in WPF NumericUpdown control | Syncfusion®
+description: Learn here all about Interaction support in Syncfusion® WPF NumericUpdown (UpDown) control, its elements and more details.
+platform: WPF
 control: UpDown
 documentation: ug
 ---

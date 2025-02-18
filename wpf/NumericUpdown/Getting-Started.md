@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF NumericUpdown control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF NumericUpdown (UpDown) control, its elements and more details.
-platform: wpf
+title: Getting Started with WPF NumericUpdown control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF NumericUpdown (UpDown) control, its elements and more details.
+platform: WPF
 control: UpDown
 documentation: ug
 ---
@@ -45,7 +45,7 @@ In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 
     * Syncfusion.Shared.WPF
 
-3. Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf and declare the UpDown control in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema http://schemas.syncfusion.com/wpf and declare the UpDown control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}

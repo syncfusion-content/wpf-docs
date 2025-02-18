@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About WPF Tile View control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Tile View control, its elements and more.
-platform: wpf
+title: About WPF Tile View control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Essential Studio® WPF Tile View control, its elements and more.
+platform: WPF
 control: TileView Control
 documentation: ug
 ---

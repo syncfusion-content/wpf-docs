@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Select gradient color in WPF color picker control | Syncfusion
-description: Learn here all about Select gradient color support in Syncfusion WPF color picker (ColorPicker) control and more.
-platform: wpf
+title: Select gradient color in WPF color picker control | Syncfusion®
+description: Learn here all about Select gradient color support in Syncfusion® WPF color picker (ColorPicker) control and more.
+platform: WPF
 control: ColorPicker
 documentation: ug
 ---

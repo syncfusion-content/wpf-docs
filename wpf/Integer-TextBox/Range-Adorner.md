@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Range Adorner in WPF IntegerTextBox control | Syncfusion
-description: Learn about Range Adorner support in Syncfusion WPF IntegerTextBox control and more details about the control features.
-platform: wpf
+title: Range Adorner in WPF IntegerTextBox control | Syncfusion®
+description: Learn about Range Adorner support in Syncfusion® WPF IntegerTextBox control and more details about the control features.
+platform: WPF
 control: IntegerTextBox 
 documentation: ug
 ---
