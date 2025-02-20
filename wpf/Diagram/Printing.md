@@ -390,7 +390,7 @@ diagram.PrintingService.ShowClassicPrintPreview();
 
 ## See Also
 
-[How to customize the Header or Footer of the print preview?](https://www.syncfusion.com/kb/11481/how-to-customize-the-header-or-footer-of-the-print-preview-in-the-wpf-diagramsfdiagram)
+[How to customize the Header or Footer of the print preview?](https://support.syncfusion.com/kb/article/9863/how-to-customize-the-header-or-footer-of-the-print-preview-in-the-wpf-diagram-sfdiagram)
 
 [How to ignore empty pages while printing the WPF Diagram?](https://support.syncfusion.com/kb/article/8537/how-to-ignore-empty-pages-while-printing-the-wpf-diagram-sfdiagram)
 
