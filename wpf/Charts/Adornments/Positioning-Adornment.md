@@ -11,9 +11,9 @@ documentation: ug
 
 The positioning of adornments inside the series is defined using [`AdornmentsPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
 
-* [`Top`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the top edge point of a chart segment.
-* [`Bottom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the bottom edge point of a chart segment.
-* [`TopAndBottom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the center point of a chart segment.
+* [`Top`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsPosition_Top) - Positions the Adornment at the top edge point of a chart segment.
+* [`Bottom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsPosition_Bottom) - Positions the Adornment at the bottom edge point of a chart segment.
+* [`TopAndBottom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsPosition_TopAndBottom) - Positions the Adornment at the center point of a chart segment.
 
 N> This behavior varies based on the chart series type.
 
@@ -23,21 +23,21 @@ The following code example explains the positioning of adornments in the middle 
 
 {% highlight xaml %}
 
-        <syncfusion:ChartAdornmentInfo ShowMarker="True" AdornmentsPosition="TopAndBottom" SymbolInterior="DarkGray"  Symbol="Ellipse">
-        </syncfusion:ChartAdornmentInfo>
+<syncfusion:ChartAdornmentInfo ShowMarker="True" AdornmentsPosition="TopAndBottom" SymbolInterior="DarkGray"  Symbol="Ellipse">
+</syncfusion:ChartAdornmentInfo>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
         ColumnSeries series = new ColumnSeries();
-            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowMarker = true,
-                Symbol = ChartSymbol.Ellipse,
-                SymbolInterior = new SolidColorBrush(Colors.DarkGray),
-                AdornmentsPosition=AdornmentsPosition.TopAndBottom
-            };
+        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+        {
+            ShowMarker = true,
+            Symbol = ChartSymbol.Ellipse,
+            SymbolInterior = new SolidColorBrush(Colors.DarkGray),
+            AdornmentsPosition=AdornmentsPosition.TopAndBottom
+        };
         series.AdornmentsInfo = adornmentInfo;
 
 {% endhighlight %}
@@ -55,11 +55,11 @@ Other than the above positioning options, SfChart providing additional customiza
 
 The following are the values for this property: 
 
-* [`Default`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Inner`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Outer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Default`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Default)
+* [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Auto)
+* [`Inner`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Inner)
+* [`Outer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Outer)
+* [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Center)
 
 The following code sample illustrates the center position of data marker labels,
 
