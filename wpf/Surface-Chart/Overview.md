@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF Surface Chart (SfSurfaceChart) Overview
 
-Essential Surface Chart shows a three-dimensional surface that connects a set of data points.  
+Essential Surface Chart shows a three-dimensional surface used to display the relationship between three variables (X, Y, and Z). It is particularly useful for analyzing and presenting complex data sets where two dimensions (X and Y) are related to a third variable (Z). 
 
 ![WPF Surface Chart overview.](surface_chart_images/wpf-surface-chart-overview.jpeg)
 
