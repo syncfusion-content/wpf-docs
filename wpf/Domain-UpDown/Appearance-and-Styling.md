@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance and Styling in WPF Domain Updown control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion WPF Domain Updown (SfDomainUpDown) control and more.
-platform: wpf
+title: Appearance and Styling in WPF Domain Updown control | Syncfusion®
+description: Learn here all about Appearance and Styling support in Syncfusion® WPF Domain Updown (SfDomainUpDown) control and more.
+platform: WPF
 control: DomainUpDown
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF TabControl control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF TabControl (TabControlExt) control, its elements and more.
+title: Getting Started with WPF TabControl control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF TabControl (TabControlExt) control, its elements and more.
 platform: WPF
 control: TabControl
 documentation: ug
@@ -43,7 +43,7 @@ To add the `TabControl` manually in XAML, follow these steps:
     * Syncfusion.Tools.WPF
     * Syncfusion.Shared.WPF
 
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `TabControl` in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `TabControl` in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}

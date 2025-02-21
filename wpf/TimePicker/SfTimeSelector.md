@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Time Selector in WPF TimePicker control | Syncfusion
-description: Learn here all about Time Selector support in Syncfusion WPF TimePicker (SfTimePicker) control and more.
-platform: wpf
+title: Time Selector in WPF TimePicker control | Syncfusion®
+description: Learn here all about Time Selector support in Syncfusion® WPF TimePicker (SfTimePicker) control and more.
+platform: WPF
 control: SfTimePicker
 documentation: ug
 ---

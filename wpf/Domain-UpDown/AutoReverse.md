@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AutoReverse in WPF Domain Updown control | Syncfusion
-description: Learn here all about AutoReverse support in Syncfusion WPF Domain Updown (SfDomainUpDown) control and more.
-platform: wpf
+title: AutoReverse in WPF Domain Updown control | Syncfusion®
+description: Learn here all about AutoReverse support in Syncfusion® WPF Domain Updown (SfDomainUpDown) control and more.
+platform: WPF
 control: DomainUpDown
 documentation: ug
 ---

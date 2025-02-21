@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF PinnableListBox control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF PinnableListBox control, its elements and more.
+title: Getting Started with WPF PinnableListBox control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Essential Studio® WPF PinnableListBox control, its elements and more.
 platform: WPF
 control: PinnableListBox
 documentation: ug
@@ -36,7 +36,7 @@ The PinnableListBox control can be added to an application by dragging it from t
 To add the control manually in XAML, follow the given steps:
 
 1. Add the **Syncfusion.Shared.WPF** assembly reference to the project.
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3. Declare the PinnableListBox control in the XAML page.
 
 {% tabs %}

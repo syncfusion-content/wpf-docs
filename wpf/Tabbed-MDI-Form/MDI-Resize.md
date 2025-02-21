@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MDI Resize in WPF Tabbed MDI Form control | Syncfusion
-description: Learn here all about MDI Resize support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: wpf
+title: MDI Resize in WPF Tabbed MDI Form control | Syncfusion®
+description: Learn here all about MDI Resize support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
+platform: WPF
 control: DocumentContainer
 documentation: ug
 ---

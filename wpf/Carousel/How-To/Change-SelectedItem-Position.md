@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change SelectedItem position in WPF Carousel control | Syncfusion
-description: Change SelectedItem position of the Syncfusion Essential Studio WPF Carousel control, its elements and more.
+title: Change SelectedItem position in WPF Carousel control | Syncfusion®
+description: Change SelectedItem position of the Syncfusion® Essential Studio WPF Carousel control, its elements and more.
 platform: wpf
 control: Carousel
 documentation: ug

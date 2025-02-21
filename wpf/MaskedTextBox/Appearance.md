@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance in WPF MaskedTextBox control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion WPF MaskedTextBox (SfMaskedEdit) control and more.
-platform: wpf
+title: Appearance in WPF MaskedTextBox control | Syncfusion®
+description: Learn here all about Appearance support in Syncfusion® WPF MaskedTextBox (SfMaskedEdit) control and more.
+platform: WPF
 control: SfMaskedEdit
 documentation: ug
 ---

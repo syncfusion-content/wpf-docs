@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Layout Related Features in WPF Tabbed MDI Form control | Syncfusion
-description: Learn here all about Layout Related Features support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: wpf
+title: Layout Related Features in WPF Tabbed MDI Form control | Syncfusion®
+description: Learn here all about Layout Related Features support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
+platform: WPF
 control: DocumentContainer
 documentation: ug
 ---

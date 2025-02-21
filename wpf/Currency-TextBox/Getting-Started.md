@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Currency TextBox control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Currency TextBox control, its elements and more.
+title: Getting Started with WPF Currency TextBox control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Currency TextBox control, its elements and more.
 platform: WPF
 control: CurrencyTextBox
 documentation: ug
@@ -34,7 +34,7 @@ To add the CurrencyTextBox control manually in XAML, follow these steps:
 
 2. Add the **Syncfusion.Shared.WPF** assembly references to the project.
  
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `CurrencyTextBox` control in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `CurrencyTextBox` control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}

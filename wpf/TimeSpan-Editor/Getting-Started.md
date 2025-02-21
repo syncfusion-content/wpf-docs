@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF TimeSpan Editor control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF TimeSpan Editor (TimeSpanEdit) control, its elements and more.
+title: Getting Started with WPF TimeSpan Editor control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF TimeSpan Editor (TimeSpanEdit) control, its elements and more.
 platform: WPF
 control: TimeSpanEdit
 documentation: ug
@@ -39,7 +39,7 @@ To add the `TimeSpanEdit` control manually in XAML, follow these steps:
 2. Add the  following assembly references to the project,
     * Syncfusion.Shared.WPF
  
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `TimeSpanEdit` control in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `TimeSpanEdit` control in XAML page.
 
 4. Declare the `TimeSpanEdit` control in XAML page.
 

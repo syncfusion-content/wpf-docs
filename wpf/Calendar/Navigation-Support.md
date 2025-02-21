@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Date Navigation in WPF Calendar control | Syncfusion
-description: Learn here all about Date Navigation support in Syncfusion WPF Calendar (CalendarEdit) control and more.
-platform: WPF
+title: Date Navigation in WPF Calendar control | Syncfusion®
+description: Learn here all about Date Navigation support in Syncfusion® WPF Calendar (CalendarEdit) control and more.
+platform: wpf
 control: CalendarEdit
 documentation: ug
 ---

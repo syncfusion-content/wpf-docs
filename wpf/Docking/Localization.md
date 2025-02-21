@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization | DockingManager | WPF | Syncfusion
-description: Learn here about Localization in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
-platform: wpf
+title: Localization | DockingManager | WPF | Syncfusion®
+description: Learn here about Localization in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
 # Localization in WPF DockingManager control
 
-Localization customizes the application towards a specific language and region. Syncfusion Tools allow you to set custom resource through the Resx file. In the following table, DockingManager’s property is localized in English and French.
+Localization customizes the application towards a specific language and region. Syncfusion<sup>®</sup> Tools allow you to set custom resource through the Resx file. In the following table, DockingManager’s property is localized in English and French.
 
 <table>
 <tr>

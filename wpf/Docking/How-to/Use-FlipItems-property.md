@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Use FlipItems property | DockingManager | wpf | Syncfusion
-description: Use flipitems property in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
-platform: wpf
+title: Use FlipItems property | DockingManager | wpf | Syncfusion®
+description: Use flipitems property in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---

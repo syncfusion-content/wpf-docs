@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Quick Access ToolBar in WPF Ribbon control | Syncfusion
-description: Learn about Quick Access ToolBar support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
-platform: wpf
+title: Quick Access ToolBar in WPF Ribbon control | Syncfusion®
+description: Learn about Quick Access ToolBar support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
+platform: WPF
 control: Ribbon
 documentation: ug
 ---

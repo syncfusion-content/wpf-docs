@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date-Selection in WPF Calendar control | Syncfusion
-description: Learn here all about Date-Selection support in Syncfusion WPF Calendar (CalendarEdit) control and more.
+title: Date-Selection in WPF Calendar control | Syncfusion®
+description: Learn here all about Date-Selection support in Syncfusion® WPF Calendar (CalendarEdit) control and more.
 platform: wpf
 control: CalendarEdit
 documentation: ug

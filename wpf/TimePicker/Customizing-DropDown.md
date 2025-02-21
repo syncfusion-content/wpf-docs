@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customizing DropDown in WPF TimePicker control | Syncfusion
-description: Learn here all about Customizing DropDown support in Syncfusion WPF TimePicker (SfTimePicker) control and more.
-platform: wpf
+title: Customizing DropDown in WPF TimePicker control | Syncfusion®
+description: Learn here all about Customizing DropDown support in Syncfusion® WPF TimePicker (SfTimePicker) control and more.
+platform: WPF
 control:  SfTimePicker
 documentation: ug
 ---

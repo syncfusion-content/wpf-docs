@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Restriction or Validation in WPF IntegerTextBox control | Syncfusion
-description: Learn about Restriction or Validation support in Syncfusion WPF IntegerTextBox control and more details about the control features.
-platform: wpf
+title: Restriction or Validation in WPF IntegerTextBox control | Syncfusion®
+description: Learn about Restriction or Validation support in Syncfusion® WPF IntegerTextBox control and more details about the control features.
+platform: WPF
 control: IntegerTextBox 
 documentation: ug
 ---
