@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Color Palette control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Color Palette (SfColorPalette) control, its elements and more.
+title: Getting Started with WPF Color Palette control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Color Palette (SfColorPalette) control, its elements and more.
 platform: wpf
 control: SfColorPalette
 documentation: ug
@@ -50,7 +50,7 @@ In order to add [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 
     * Syncfusion.SfShared.Wpf
 
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfColorPalette namespace [**Syncfusion.Windows.Controls.Media**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.html) in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfColorPalette namespace [**Syncfusion.Windows.Controls.Media**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.html) in XAML page.
 
 3. Declare [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) control in XAML page.
 

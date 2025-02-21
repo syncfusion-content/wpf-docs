@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF Ribbon control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF Ribbon control, its elements and more.
-platform: wpf
+title: Getting Started with WPF Ribbon control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
+platform: WPF
 control: Ribbon
 documentation: ug
 ---
@@ -12,7 +12,7 @@ This section explains how to implement a similar UI as Microsoft Outlook using R
 
 ## Add ribbon
 
-There are several ways to add Syncfusion control in to Visual Studio WPF project, the following steps will helps to add a Ribbon control through XAML Code.
+There are several ways to add Syncfusion<sup>®</sup> control in to Visual Studio WPF project, the following steps will helps to add a Ribbon control through XAML Code.
 
 * Create a WPF project in Visual Studio and refer the following assemblies.
 

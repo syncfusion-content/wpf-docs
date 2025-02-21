@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Context menu in WPF TabControl control | Syncfusion
-description: Learn here all about Context menu support in Syncfusion WPF TabControl (TabControlExt) control and more.
-platform: wpf
+title: Context menu in WPF TabControl control | Syncfusion®
+description: Learn here all about Context menu support in Syncfusion® WPF TabControl (TabControlExt) control and more.
+platform: WPF
 control: TabControlExt
 documentation: ug
 ---

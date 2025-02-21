@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance in WPF GridSplitter control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion WPF GridSplitter (SfGridSplitter) control and more.
-platform: wpf
+title: Appearance in WPF GridSplitter control | Syncfusion®
+description: Learn here all about Appearance support in Syncfusion® WPF GridSplitter (SfGridSplitter) control and more.
+platform: WPF
 control: SfGridSplitter
 documentation: ug
 ---

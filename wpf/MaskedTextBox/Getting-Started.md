@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF MaskedTextBox control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF MaskedTextBox (SfMaskedEdit) control, its elements and more details.
+title: Getting Started with WPF MaskedTextBox control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF MaskedTextBox (SfMaskedEdit) control, its elements and more details.
 platform: WPF
 control: SfMaskedEdit
 documentation: ug
@@ -42,7 +42,7 @@ To add the `SfMaskedEdit` control manually in XAML, follow these steps:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
  
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `SfMaskedEdit` control in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `SfMaskedEdit` control in XAML page.
 
 4. Declare the `SfMaskedEdit` control in XAML page.
 

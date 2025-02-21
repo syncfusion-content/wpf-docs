@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Binding Support | PinnableListBox | wpf | Syncfusion
-description: Learn here about Binding support in Syncfusion Essential Studio WPF PinnableListBox control, its elements, and more.
-platform: wpf
+title: Binding Support | PinnableListBox | wpf | Syncfusion®
+description: Learn here about Binding support in Syncfusion® Essential Studio® WPF PinnableListBox control, its elements, and more.
+platform: WPF
 control: PinnableListBox 
 documentation: ug
 ---

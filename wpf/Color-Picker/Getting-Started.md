@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF color picker control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF color picker (ColorPicker) control, its elements and more.
-platform: wpf
+title: Getting Started with WPF color picker control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF color picker (ColorPicker) control, its elements and more.
+platform: WPF
 control: ColorPicker
 documentation: ug
 ---
@@ -39,7 +39,7 @@ To add the `ColorPicker` manually in XAML, follow these steps:
 
     * Syncfusion.Shared.WPF
 
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `ColorPicker` in WPF XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `ColorPicker` in WPF XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}

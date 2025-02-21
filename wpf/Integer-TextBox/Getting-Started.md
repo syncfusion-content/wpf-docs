@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting started with WPF IntegerTextBox control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF IntegerTextBox control and more details about the control features.
-platform: wpf
+title: Getting started with WPF IntegerTextBox control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF IntegerTextBox control and more details about the control features.
+platform: WPF
 control: IntegerTextBox 
 documentation: ug
 ---
@@ -34,7 +34,7 @@ To add the IntegerTextBox control manually in XAML, follow these steps:
 
 2. Add the **Syncfusion.Shared.WPF** assembly references to the project.
  
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `IntegerTextBox` control in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `IntegerTextBox` control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF Calculator control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Calculator (SfCalculator) control, its elements and more.
-platform: WPF
+title: Getting Started with WPF Calculator control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Calculator (SfCalculator) control, its elements and more.
+platform: wpf
 control: SfCalculator
 documentation: ug
 ---
@@ -41,7 +41,7 @@ In order to add [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
    * Syncfusion.SfInput.WPF
    * Syncfusion.Shared.WPF
 
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 
 3. Declare [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) in XAML page.
 

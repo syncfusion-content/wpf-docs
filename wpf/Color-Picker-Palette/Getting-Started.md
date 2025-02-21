@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF Color Picker Palette | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Color Picker Palette control, its elements, and more.
-platform: WPF
+title: Getting Started with WPF Color Picker Palette | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Color Picker Palette control, its elements, and more.
+platform: wpf
 control: colorPickerPalette
 documentation: ug
 ---
@@ -52,7 +52,7 @@ To add the `ColorPickerPalette` control manually in XAML, follow these steps:
 2. Add the  following assembly references to the project,
    * Syncfusion.Shared.WPF
  
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `ColorPickerPalette` control in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `ColorPickerPalette` control in XAML page.
 
 4. Declare the `ColorPickerPalette` control in XAML page.
 

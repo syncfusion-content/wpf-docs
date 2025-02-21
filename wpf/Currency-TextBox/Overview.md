@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About WPF Currency TextBox control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Currency TextBox control, its elements and more.
-platform: wpf
+title: About WPF Currency TextBox control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® WPF Currency TextBox control, its elements and more.
+platform: WPF
 control: CurrencyTextBox
 documentation: ug
 ---

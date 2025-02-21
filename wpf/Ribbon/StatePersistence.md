@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Serialization and Deserialization in WPF Ribbon control | Syncfusion
-description: Learn about Serialization and Deserialization support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
-platform: wpf
+title: Serialization and Deserialization in WPF Ribbon control | Syncfusion®
+description: Learn about Serialization and Deserialization support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
+platform: WPF
 control: Ribbon
 documentation: ug
 ---

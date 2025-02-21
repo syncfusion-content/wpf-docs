@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Configuring a build machine in WPF DockingManager Control | Syncfusion
-description: Configuring a build machine to compile projects after version v8.1.0.30 in Syncfusion WPF DockingManager control, its elements and more.
-platform: wpf
+title: Configuring a build machine in WPF DockingManager Control | Syncfusion®
+description: Configuring a build machine to compile projects after version v8.1.0.30 in Syncfusion® WPF DockingManager control, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
 # Configuring a build machine in WPF DockingManager Control
 
-To compile projects that use Syncfusion controls in a build machine, Syncfusion helps to install the Link Install Setup. The setup installs Syncfusion assemblies into the target folder, and registers the product key to the registry. This allows you to compile a project, developed on a build machine. Please download the link install setup from the below location 
+To compile projects that use Syncfusion<sup>®</sup> controls in a build machine, Syncfusion<sup>®</sup> helps to install the Link Install Setup. The setup installs Syncfusion<sup>®</sup> assemblies into the target folder, and registers the product key to the registry. This allows you to compile a project, developed on a build machine. Please download the link install setup from the below location 
 
 [http://files2.syncfusion.com/installs/v9.1.0.20/essentialstudiolinkinstall.exe](http://files2.syncfusion.com/installs/v9.1.0.20/essentialstudiolinkinstall.exe)
 

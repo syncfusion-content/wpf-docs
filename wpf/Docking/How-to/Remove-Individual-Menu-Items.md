@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Remove Individual Menu Items | DockingManager | wpf | Syncfusion
-description: Remove individual menu items in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
-platform: wpf
+title: Remove Individual Menu Items | DockingManager | wpf | Syncfusion®
+description: Remove individual menu items in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---

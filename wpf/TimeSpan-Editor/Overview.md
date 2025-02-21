@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About WPF TimeSpan Editor control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF TimeSpan Editor (TimeSpanEdit) control, its elements and more.
-platform: wpf
+title: About WPF TimeSpan Editor control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® WPF TimeSpan Editor (TimeSpanEdit) control, its elements and more.
+platform: WPF
 control: TimeSpanEdit
 documentation: ug
 ---
