@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF Split Button control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF Split Button control, its elements and more.
-platform: wpf
+title: Getting Started with WPF Split Button control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Essential Studio® WPF Split Button control, its elements and more.
+platform: WPF
 control: SplitButtonAdv
 documentation: ug
 ---
@@ -53,7 +53,7 @@ In order to add the control manually in XAML, follow the below steps.
 
     * Syncfusion.Shared.WPF
 
-2. Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the control namespace `Syncfusion.Windows.Tools.Controls` in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema `http://schemas.syncfusion.com/wpf` or the control namespace `Syncfusion.Windows.Tools.Controls` in XAML page.
 
 3. Declare SplitButtonAdv control in XAML page.
 

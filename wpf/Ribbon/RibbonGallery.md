@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RibbonGallery in WPF Ribbon control | Syncfusion
-description: Learn about RibbonGallery support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
-platform: wpf
+title: RibbonGallery in WPF Ribbon control | Syncfusion®
+description: Learn about RibbonGallery support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
+platform: WPF
 control: Ribbon
 documentation: ug
 ---

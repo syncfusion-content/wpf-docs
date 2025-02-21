@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with TimeSpanEdit in WPF TimeSpan Editor control | Syncfusion
-description: Learn here all about Working with TimeSpanEdit support in Syncfusion WPF TimeSpan Editor (TimeSpanEdit) control and more.
+title: Working with TimeSpanEdit in WPF TimeSpan Editor control | Syncfusion®
+description: Learn here all about Working with TimeSpanEdit support in Syncfusion® WPF TimeSpan Editor (TimeSpanEdit) control and more.
 platform: WPF
 control: TimeSpanEdit
 documentation: ug

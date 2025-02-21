@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Detect the closing of a DockingManagerchild in WPF | Syncfusion
-description: Detect the closing of a dockingmanagerchild in Syncfusion Essential Studio WPF, its elements and more.
-platform: wpf
+title: Detect the closing of a DockingManagerchild in WPF | Syncfusion®
+description: Detect the closing of a dockingmanagerchild in Syncfusion® Essential Studio® WPF, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---

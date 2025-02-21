@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF Carousel control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF Carousel control, its elements and more.
-platform: WPF
+title: Getting Started with WPF Carousel control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Essential Studio® WPF Carousel control, its elements and more.
+platform: wpf
 control: Carousel
 documentation: ug
 ---
@@ -41,7 +41,7 @@ To add the `Carousel` manually in XAML, follow these steps:
 
     * Syncfusion.Shared.WPF
 
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the Carousel in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**, and declare the Carousel in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}

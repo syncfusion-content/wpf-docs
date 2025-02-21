@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF DatePicker control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF DatePicker (SfDatePicker) control, its elements and more.
+title: Getting Started with WPF DatePicker control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF DatePicker (SfDatePicker) control, its elements and more.
 platform: WPF
 control: SfDatePicker
 documentation: ug
@@ -39,7 +39,7 @@ To add the control manually in XAML, follow the given steps:
 1. Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3. Declare the `SfDatePicker` control in the XAML page.
 
 {% capture codesnippet1 %}

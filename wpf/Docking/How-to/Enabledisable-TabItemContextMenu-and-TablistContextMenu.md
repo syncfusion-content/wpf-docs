@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Enabledisable TabItemContextMenu in WPF DockingManager | Syncfusion
-description: Enabledisable tabitemcontextmenu and tablistcontextmenu in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
-platform: wpf
+title: Enabledisable TabItemContextMenu in WPF DockingManager | Syncfusion®
+description: Enabledisable tabitemcontextmenu and tablistcontextmenu in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---

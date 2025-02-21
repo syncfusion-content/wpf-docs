@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Select solid color in WPF color picker control | Syncfusion
-description: Learn here all about Select solid color support in Syncfusion WPF color picker (ColorPicker) control and more.
-platform: wpf
+title: Select solid color in WPF color picker control | Syncfusion®
+description: Learn here all about Select solid color support in Syncfusion® WPF color picker (ColorPicker) control and more.
+platform: WPF
 control: ColorPicker
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance in WPF DatePicker control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion WPF DatePicker (SfDatePicker) control and more.
-platform: wpf
+title: Appearance in WPF DatePicker control | Syncfusion®
+description: Learn here all about Appearance support in Syncfusion® WPF DatePicker (SfDatePicker) control and more.
+platform: WPF
 control: SfDatePicker
 documentation: ug
 ---

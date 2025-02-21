@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Feature to resize the FloatWindow in WPF DockingManager | Syncfusion
-description: Feature to resize the floatwindow dynamically depend on child size in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
-platform: wpf
+title: Feature to resize the FloatWindow in WPF DockingManager | Syncfusion®
+description: Feature to resize the floatwindow dynamically depend on child size in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---

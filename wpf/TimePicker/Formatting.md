@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Time Formatting in WPF TimePicker control | Syncfusion
-description: Learn here all about Time Formatting support in Syncfusion WPF TimePicker (SfTimePicker) control and more.
-platform: wpf
+title: Time Formatting in WPF TimePicker control | Syncfusion®
+description: Learn here all about Time Formatting support in Syncfusion® WPF TimePicker (SfTimePicker) control and more.
+platform: WPF
 control: SfTimePicker
 documentation: ug
 ---

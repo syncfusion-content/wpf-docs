@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Styling and Templates in WPF Docking control | Syncfusion
-description: Learn here all about Styling and Templates support in Syncfusion WPF Docking (DockingManager) control and more.
-platform: wpf
+title: Styling and Templates in WPF Docking control | Syncfusion®
+description: Learn here all about Styling and Templates support in Syncfusion® WPF Docking (DockingManager) control and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---

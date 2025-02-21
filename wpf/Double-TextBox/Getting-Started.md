@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF Double TextBox control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Double TextBox control, its elements and more details.
-platform: wpf
+title: Getting Started with WPF Double TextBox control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Double TextBox control, its elements and more details.
+platform: WPF
 control: DoubleTextBox
 documentation: ug
 ---
@@ -34,7 +34,7 @@ To add the DoubleTextBox control manually in XAML, follow these steps:
 
 2. Add the **Syncfusion.Shared.WPF** assembly references to the project.
  
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `DoubleTextBox` control in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `DoubleTextBox` control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}

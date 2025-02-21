@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Adding and Removing Items from the WPF Tabbed MDI Form | Syncfusion
-description: Learn here all about Adding and Removing Items from the Document Container Control support in Syncfusion WPF Tabbed MDI Form control and more.
-platform: wpf
+title: Adding and Removing Items from the WPF Tabbed MDI Form | Syncfusion®
+description: Learn here all about Adding and Removing Items from the Document Container Control support in Syncfusion® WPF Tabbed MDI Form control and more.
+platform: WPF
 control: Tabbed MDI Form
 documentation: ug
 ---

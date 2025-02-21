@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Setting Time in WPF TimePicker control | Syncfusion
-description: Learn here all about Setting Time support in Syncfusion WPF TimePicker (SfTimePicker) control and more.
-platform: wpf
+title: Setting Time in WPF TimePicker control | Syncfusion®
+description: Learn here all about Setting Time support in Syncfusion® WPF TimePicker (SfTimePicker) control and more.
+platform: WPF
 control: SfTimePicker
 documentation: ug
 ---

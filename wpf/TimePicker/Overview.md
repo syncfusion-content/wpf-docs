@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About WPF TimePicker control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF TimePicker (SfTimePicker) control, its elements and more.
-platform: wpf
+title: About WPF TimePicker control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® WPF TimePicker (SfTimePicker) control, its elements and more.
+platform: WPF
 control: SfTimePicker
 documentation: ug
 ---

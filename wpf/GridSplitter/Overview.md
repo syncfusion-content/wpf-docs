@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About WPF GridSplitter control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF GridSplitter (SfGridSplitter) control, its elements and more details.
-platform: wpf
+title: About WPF GridSplitter control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® WPF GridSplitter (SfGridSplitter) control, its elements and more details.
+platform: WPF
 control: SfGridSplitter
 documentation: ug
 ---

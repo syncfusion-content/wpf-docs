@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance in WPF SpellChecker control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion WPF SpellChecker (SfSpellChecker) control and more.
-platform: wpf
+title: Appearance in WPF SpellChecker control | Syncfusion®
+description: Learn here all about Appearance support in Syncfusion® WPF SpellChecker (SfSpellChecker) control and more.
+platform: WPF
 control: SfSpellChecker
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Using the FullScreen mode | DockingManager | wpf | Syncfusion
-description: Using the fullscreen mode in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
-platform: wpf
+title: Using the FullScreen mode | DockingManager | wpf | Syncfusion®
+description: Using the fullscreen mode in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---

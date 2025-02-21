@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About WPF DatePicker control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF DatePicker (SfDatePicker) control, its elements and more.
-platform: wpf
+title: About WPF DatePicker control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® WPF DatePicker (SfDatePicker) control, its elements and more.
+platform: WPF
 control: SfDatePicker
 documentation: ug
 ---

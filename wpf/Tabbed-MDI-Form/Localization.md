@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization in WPF Tabbed MDI Form control | Syncfusion
-description: Learn here all about Localization support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: wpf
+title: Localization in WPF Tabbed MDI Form control | Syncfusion®
+description: Learn here all about Localization support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
+platform: WPF
 control: DocumentContainer
 documentation: ug
 ---

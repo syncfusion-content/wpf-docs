@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Culture and Formatting in WPF Currency TextBox control | Syncfusion
-description: Learn about Culture and Formatting support in Syncfusion WPF Currency TextBox control, its elements and more details.
-platform: wpf
+title: Culture and Formatting in WPF Currency TextBox control | Syncfusion®
+description: Learn about Culture and Formatting support in Syncfusion® WPF Currency TextBox control, its elements and more details.
+platform: WPF
 control: CurrencyTextBox
 documentation: ug
 ---

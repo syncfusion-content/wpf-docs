@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with ColorPickerPalette in WPF | Syncfusion
-description: Learn about Working with ColorPickerPalette support in Syncfusion WPF Color Picker Palette control and more.
+title: Working with ColorPickerPalette in WPF | Syncfusion®
+description: Learn about Working with ColorPickerPalette support in Syncfusion® WPF Color Picker Palette control and more.
 platform: wpf
 control: ColorPickerPalette
 documentation: ug
@@ -375,7 +375,7 @@ colorPickerPalette.NoColorVisibility = Visibility.Visible;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette reset selected color as Transparent by clicking the No color button](Dealing-with-ColorPickerPalette_images/NoColor.png)
+![ColorPickerPalette reset selected color as Transparent by clicking the No color button](Dealing-with-ColorPickerPalette_images/wpf-reset-transparency-button.png)
 
 N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
 

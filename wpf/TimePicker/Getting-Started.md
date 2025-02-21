@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF TimePicker control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF TimePicker (SfTimePicker) control, its elements and more.
-platform: wpf
+title: Getting Started with WPF TimePicker control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF TimePicker (SfTimePicker) control, its elements and more.
+platform: WPF
 control: SfTimePicker
 documentation: ug
 ---
@@ -39,7 +39,7 @@ To add the control manually in XAML, follow the given steps:
 1. Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3. Declare the `SfTimePicker` control in the XAML page.
 
 {% capture codesnippet1 %}

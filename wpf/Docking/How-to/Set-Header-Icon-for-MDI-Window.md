@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Set Header Icon for MDI Window | DockingManager | wpf | Syncfusion
-description: Set header icon for mdi window in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
-platform: wpf
+title: Set Header Icon for MDI Window | DockingManager | wpf | Syncfusion®
+description: Set header icon for mdi window in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+platform: WPF
 control: DockingManager
 documentation: ug
 ---

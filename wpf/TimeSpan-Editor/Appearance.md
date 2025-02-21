@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance in WPF TimeSpan Editor control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion WPF TimeSpan Editor (TimeSpanEdit) control and more.
-platform: wpf
+title: Appearance in WPF TimeSpan Editor control | Syncfusion®
+description: Learn here all about Appearance support in Syncfusion® WPF TimeSpan Editor (TimeSpanEdit) control and more.
+platform: WPF
 control: TimeSpanEdit
 documentation: ug
 ---

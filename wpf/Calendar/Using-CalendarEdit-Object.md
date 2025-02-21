@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Using CalendarEdit Object in WPF Calendar control | Syncfusion
-description: Learn here all about Using CalendarEdit Object support in Syncfusion WPF Calendar (CalendarEdit) control and more.
+title: Using CalendarEdit Object in WPF Calendar control | Syncfusion®
+description: Learn here all about Using CalendarEdit Object support in Syncfusion® WPF Calendar (CalendarEdit) control and more.
 platform: wpf
 control: CalendarEdit
 documentation: ug

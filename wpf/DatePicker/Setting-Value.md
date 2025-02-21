@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Setting Date in WPF DatePicker control | Syncfusion
-description: Learn here all about Setting Date support in Syncfusion WPF DatePicker (SfDatePicker) control and more.
-platform: wpf
+title: Setting Date in WPF DatePicker control | Syncfusion®
+description: Learn here all about Setting Date support in Syncfusion® WPF DatePicker (SfDatePicker) control and more.
+platform: WPF
 control: SfDatePicker
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WPF Tabbed MDI Form control | Syncfusion
-description: Learn here all about getting started with Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: wpf
+title: Getting Started with WPF Tabbed MDI Form control | Syncfusion®
+description: Learn here all about getting started with Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
+platform: WPF
 control: DocumentContainer
 documentation: ug
 ---
@@ -41,7 +41,7 @@ To add the control manually in XAML, follow the given steps:
 1. Add the following required assembly references to the project:
     * Syncfusion.Tools.WPF
     * Syncfusion.Shared.WPF 
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3. Declare the DocumentContainer control in the XAML page.
 
 {% capture codesnippet1 %}
