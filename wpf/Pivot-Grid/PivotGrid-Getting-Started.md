@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Pivot Grid control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
+title: Getting Started with WPF Pivot Grid control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -10,13 +10,13 @@ documentation: ug
 # Getting Started with WPF Pivot Grid
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your WPF application to use the components.
+Starting with v16.2.0.x, if you refer to Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup>®</sup> license key in your WPF application to use the components.
 
 ## Adding pivot grid through designer
 
 Open Visual Studio IDE and navigate to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
 
-After creating the WPF application, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. Drag the pivot grid control from **Syncfusion BI WPF** category in the toolbox to the designer page. The pivot grid control will be added along with the dependency assemblies automatically to the application.
+After creating the WPF application, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. Drag the pivot grid control from **Syncfusion<sup>®</sup> BI WPF** category in the toolbox to the designer page. The pivot grid control will be added along with the dependency assemblies automatically to the application.
 
 ![Adding pivot grid through designer](PivotGrid-Getting-Started-images/Adding PivotGrid through designer.png)
 
@@ -24,7 +24,7 @@ After creating the WPF application, go to View menu and select Toolbox option. N
 
 Open Visual Studio IDE and navigate to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
 
-Next, you should add the following dependency assemblies to your WPF application. To add them to your WPF application, right-click **References** in the Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following mentioned Syncfusion assemblies are found.
+Next, you should add the following dependency assemblies to your WPF application. To add them to your WPF application, right-click **References** in the Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following mentioned Syncfusion<sup>®</sup> assemblies are found.
 
 * Syncfusion.Grid.Wpf
 * Syncfusion.GridCommon.Wpf
@@ -56,7 +56,7 @@ Then, define the pivot grid control in MainWindow.xaml as shown in the following
 
 Open Visual Studio IDE and navigate to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
 
-Add the following dependency assemblies to your WPF application. To add them to your WPF application, right-click **References** in the Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following mentioned Syncfusion assemblies are found.
+Add the following dependency assemblies to your WPF application. To add them to your WPF application, right-click **References** in the Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following mentioned Syncfusion<sup>®</sup> assemblies are found.
 
 * Syncfusion.Grid.Wpf
 * Syncfusion.GridCommon.Wpf

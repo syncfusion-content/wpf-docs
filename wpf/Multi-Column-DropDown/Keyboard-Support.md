@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keyboard Support| SfMultiColumnDropDownControl | Wpf | Syncfusion
-description: Keyboard support in Syncfusion WPF MultiColumnDropDown (SfMultiColumnDropDown) control, its elements and more.
+title: Keyboard Support| SfMultiColumnDropDownControl | Wpf | Syncfusion®
+description: Keyboard support in Syncfusion® WPF MultiColumnDropDown (SfMultiColumnDropDown) control, its elements and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug

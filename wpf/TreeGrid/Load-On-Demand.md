@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load On Demand in WPF TreeGrid control | Syncfusion
-description: Learn here all about Load On Demand support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
+title: Load On Demand in WPF TreeGrid control | Syncfusion®
+description: Learn here all about Load On Demand support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

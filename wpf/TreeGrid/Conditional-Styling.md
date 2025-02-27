@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Conditional Styling in WPF TreeGrid control | Syncfusion
-description: Learn here all about Conditional Styling support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
+title: Conditional Styling in WPF TreeGrid control | Syncfusion®
+description: Learn here all about Conditional Styling support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

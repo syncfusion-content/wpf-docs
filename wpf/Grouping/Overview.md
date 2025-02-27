@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WPF Grouping control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Grouping control, its elements and more details.
+title: About WPF Grouping control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® WPF Grouping control, its elements and more details.
 platform: wpf
 control: Grouping
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # WPF Grouping Overview
 
-This section covers information on Essential Grouping, its key features, prerequisites to use the control, its compatibility with various OS and browsers, and finally the documentation details complimentary with the product. It comprises the following subsections:
+This section covers information on Essential<sup>®</sup> Grouping, its key features, prerequisites to use the control, its compatibility with various OS and browsers, and finally the documentation details complimentary with the product. It comprises the following subsections:
 
-## Introduction to Essential Grouping
+## Introduction to Essential<sup>®</sup> Grouping
 
-Essential Grouping is a 100% Native .NET library that provides you with support for managing and manipulating tabular information without dependencies on any particular UI component. Our Grouping Framework can be used in any .NET environment, including C#, VB.NET, and managed C++.
+Essential<sup>®</sup> Grouping is a 100% Native .NET library that provides you with support for managing and manipulating tabular information without dependencies on any particular UI component. Our Grouping Framework can be used in any .NET environment, including C#, VB.NET, and managed C++.
 
-Syncfusion Essential Grouping is a data technology that allows you to easily access, manipulate, and display your data in a variety of configurations. Your data source can be any IList object whose items have public properties. You can easily sort the items on one or several of these public properties. You can display and retrieve items based on the grouping that is produced through these sorts, you can include caption information and / or summary information on these groups; you can impose filters on the items, retrieving only items that specify your filter conditions and you can also add expression properties to display calculated values depending upon other properties in the item. 
+Syncfusion<sup>®</sup> Essential<sup>®</sup> Grouping is a data technology that allows you to easily access, manipulate, and display your data in a variety of configurations. Your data source can be any IList object whose items have public properties. You can easily sort the items on one or several of these public properties. You can display and retrieve items based on the grouping that is produced through these sorts, you can include caption information and / or summary information on these groups; you can impose filters on the items, retrieving only items that specify your filter conditions and you can also add expression properties to display calculated values depending upon other properties in the item. 
 
 
 ![Grouping - Overview](Overview_images/Overview_img1.jpeg)
@@ -23,7 +23,7 @@ Syncfusion Essential Grouping is a data technology that allows you to easily acc
 
 ### Key Features
 
-Some of the key features of Essential Grouping are listed below:
+Some of the key features of Essential<sup>®</sup> Grouping are listed below:
 
 * Grouping supports data presentation techniques like sorting, grouping, adding caption and summary information for the groups.
 * Grouping also supports nested tables and hierarchies in the form of related tables. 
@@ -34,7 +34,7 @@ Some of the key features of Essential Grouping are listed below:
 
 ## Prerequisites and Compatibility
 
-This section covers the requirements mandatory for using Essential Grouping. It also lists operating systems and browsers compatible with the product.
+This section covers the requirements mandatory for using Essential<sup>®</sup> Grouping. It also lists operating systems and browsers compatible with the product.
 
 
 ### Prerequisites

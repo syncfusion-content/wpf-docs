@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export To PDF in WPF TreeGrid control | Syncfusion
-description: Learn here all about Export To PDF support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
+title: Export To PDF in WPF TreeGrid control | Syncfusion®
+description: Learn here all about Export To PDF support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -32,7 +32,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfTreeGrid exports the data to PDF file using [Essential PDF](http://help.syncfusion.com/file-formats/pdf/overview). You can refer to the [PDF documentation](http://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulation.
+N> SfTreeGrid exports the data to PDF file using [Essential<sup>®</sup> PDF](http://help.syncfusion.com/file-formats/pdf/overview). You can refer to the [PDF documentation](http://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulation.
 
 ## Export options
 

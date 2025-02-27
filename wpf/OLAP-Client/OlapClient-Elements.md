@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Elements support in WPF Olap Client control | Syncfusion
-description: Learn here all about elements support in Syncfusion Essential Studio WPF Olap Client control and more.
+title: Elements support in WPF Olap Client control | Syncfusion®
+description: Learn here all about elements support in Syncfusion® Essential Studio® WPF Olap Client control and more.
 platform: wpf
 control: OLAP Client
 documentation: ug

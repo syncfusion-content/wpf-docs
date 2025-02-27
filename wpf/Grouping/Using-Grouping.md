@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Using Grouping in WPF Grouping control | Syncfusion
-description: Learn about Using Grouping support in Syncfusion Essential Studio WPF Grouping control, its elements and more details.
+title: Using Grouping in WPF Grouping control | Syncfusion®
+description: Learn about Using Grouping support in Syncfusion® Essential Studio® WPF Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
@@ -13,7 +13,7 @@ The Grouping of data is one type of data analysis technique. It is natural to or
 
 ## Grouping a Table
 
-In this lesson, you will start working with the Grouping.Engine object to see how to apply a grouping to the data as well as summarize the data. In the Data Binding section, you used the grouping.Engine.Table.Records collection to access the data in the Grouping.Engine object. The grouping.Engine.Table property is the property of the Grouping.Engine that holds the actual data needed by Essential Grouping. 
+In this lesson, you will start working with the Grouping.Engine object to see how to apply a grouping to the data as well as summarize the data. In the Data Binding section, you used the grouping.Engine.Table.Records collection to access the data in the Grouping.Engine object. The grouping.Engine.Table property is the property of the Grouping.Engine that holds the actual data needed by Essential<sup>®</sup> Grouping. 
 
 You will now look at the property that holds the schema information that is associated with the data, i.e., the grouping.Engine.TableDescriptor property. For example, the TableDescriptor.Columns property holds a collection of ColumnDescriptor objects that define the schema information on the columns in the data. 
 
@@ -339,7 +339,7 @@ Console.ReadLine()
    
 ## Adding a Summary
 
-Essential Grouping lets you summarize your data by adding SummaryDescriptor objects to the schema information that is stored in the Engine.TableDescriptor.Summaries collection. You can have multiple summaries by adding several SummaryDescriptors.
+Essential<sup>®</sup> Grouping lets you summarize your data by adding SummaryDescriptor objects to the schema information that is stored in the Engine.TableDescriptor.Summaries collection. You can have multiple summaries by adding several SummaryDescriptors.
 
 At the bottom of the Main method, add this code to create a summary item for the Engine.
 

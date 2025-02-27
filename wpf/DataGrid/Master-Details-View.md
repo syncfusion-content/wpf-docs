@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Master Details View in WPF DataGrid control | Syncfusion
-description: Learn here all about Master Details View support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
+title: Master Details View in WPF DataGrid control | Syncfusion®
+description: Learn here all about Master Details View support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug

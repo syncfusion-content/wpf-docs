@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in WPF Spreadsheet control | Syncfusion
-description: Learn here all about Selection support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
+title: Selection in WPF Spreadsheet control | Syncfusion®
+description: Learn here all about Selection support in Syncfusion® WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

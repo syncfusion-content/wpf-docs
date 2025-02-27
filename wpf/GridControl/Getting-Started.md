@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF GridControl | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Getting Started with WPF GridControl | Syncfusion®
+description: Learn here about getting started with Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: wpf
 control: Grid Control
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WPF GridControl
 
-This section is designed to help you understand and quickly get started using Essential Grid in your WPF application.
+This section is designed to help you understand and quickly get started using Essential<sup>®</sup> Grid in your WPF application.
 
-Syncfusion WPF suite comes up with a package of powerful grid controls that provides cell-oriented features and acts as an efficient display engine for tabular data that can be customized down to the cell level. It also offers excellent performance characteristics, such as a virtual mode and high-frequency updates, which makes the grid suitable for real-time applications.
+Syncfusion<sup>®</sup> WPF suite comes up with a package of powerful grid controls that provides cell-oriented features and acts as an efficient display engine for tabular data that can be customized down to the cell level. It also offers excellent performance characteristics, such as a virtual mode and high-frequency updates, which makes the grid suitable for real-time applications.
 
-The Essential Studio for WPF is comprised of following three types of grid controls:
+The Essential Studio<sup>®</sup> for WPF is comprised of following three types of grid controls:
 
 * [Grid Control](https://www.syncfusion.com/wpf-controls/excel-like-grid)
 * [SfDataGrid](https://www.syncfusion.com/wpf-controls/datagrid) and GridDataControl (classic)
@@ -51,7 +51,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 
 1. Create a new WPF application.
 
-2. Add the following Syncfusion assemblies to the project.
+2. Add the following Syncfusion<sup>®</sup> assemblies to the project.
    * Syncfusion.Core.dll
    * Syncfusion.Grid.Wpf.dll
    * Syncfusion.GridCommon.Wpf.dll

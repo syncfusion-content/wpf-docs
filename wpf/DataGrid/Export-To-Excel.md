@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export To Excel in WPF DataGrid control | Syncfusion
-description: Learn here all about Export To Excel support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
+title: Export To Excel in WPF DataGrid control | Syncfusion®
+description: Learn here all about Export To Excel support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF TreeGrid control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF TreeGrid (SfTreeGrid) control, its elements and more.
+title: Getting Started with WPF TreeGrid control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -122,7 +122,7 @@ In order to add control manually in XAML, do the below steps,
     * Syncfusion.Data.WPF
     * Syncfusion.SfGrid.WPF
     * Syncfusion.Shared.WPF
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfTreeGrid control namespace **Syncfusion.UI.Xaml.TreeGrid** in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfTreeGrid control namespace **Syncfusion.UI.Xaml.TreeGrid** in XAML page.
 3. Declare SfTreeGrid control in XAML page.
 
 {% capture codesnippet1 %}

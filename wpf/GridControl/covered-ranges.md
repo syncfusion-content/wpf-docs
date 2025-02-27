@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Covered Ranges in WPF GridControl | Syncfusion
-description: Learn about Covered Ranges support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Covered Ranges in WPF GridControl | Syncfusion®
+description: Learn about Covered Ranges support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: WPF
 control: GridControl
 documentation: ug

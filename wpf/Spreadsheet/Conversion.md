@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Conversion in WPF Spreadsheet control | Syncfusion
-description: Learn here all about Conversion support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
+title: Conversion in WPF Spreadsheet control | Syncfusion®
+description: Learn here all about Conversion support in Syncfusion® WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

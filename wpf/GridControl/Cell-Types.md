@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Types in WPF GridControl | Syncfusion
-description: Learn about Cell Types support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Cell Types in WPF GridControl | Syncfusion®
+description: Learn about Cell Types support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: wpf
 control: Grid Control
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Cell Types in WPF GridControl
 
-Essential Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the grid control. This attribute of a grid cell is referred to as its Cell Type. This section lists out various cell controls that can be placed inside the grid cells. Essential Grid currently supports 20+ cell types. It also provides support to create and use custom cell types.
+Essential<sup>®</sup> Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the grid control. This attribute of a grid cell is referred to as its Cell Type. This section lists out various cell controls that can be placed inside the grid cells. Essential<sup>®</sup> Grid currently supports 20+ cell types. It also provides support to create and use custom cell types.
 
 Following is the list of built-in cell types:
 
@@ -1890,7 +1890,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/nestedgird-in-w
 
 ##  Creating custom cell type
 
-Essential Grid allows you to create custom derived controls to use additional cell types. This requires a cell model class and a cell renderer class. The cell model class creates the actual cell control while the cell renderer class handles the UI requirements of the cell control. The custom cell type can be created by  registering the cell model to the corresponding grid by naming this cell type. It can be enabled by assigning its name to the style.CellType property.
+Essential<sup>®</sup> Grid allows you to create custom derived controls to use additional cell types. This requires a cell model class and a cell renderer class. The cell model class creates the actual cell control while the cell renderer class handles the UI requirements of the cell control. The custom cell type can be created by  registering the cell model to the corresponding grid by naming this cell type. It can be enabled by assigning its name to the style.CellType property.
 
 In general, the built-in cell types are also constructed only in this way. Every such cell type has its own cell model and renderer classes in the code base. These cell model and renderer classes originate from GridCellModelBase and GridCellRendererBase classes. These two classes define the basic functionality for a cell type.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Spreadsheet control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Spreadsheet (SfSpreadsheet) control, its elements and more.
+title: Getting Started with WPF Spreadsheet control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Spreadsheet (SfSpreadsheet) control, its elements and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
@@ -81,11 +81,11 @@ SfSpreadsheet control can be added into the application either via designer or v
 
 1.Create new WPF application in Visual Studio.
 
-2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items 
+2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion<sup>®</sup> Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items 
 
 ![WPF Spreadsheet Getting-Started](Getting-Started_images/wpf-spreadsheet-getting-started.jpeg)
 
-Syncfusion Control tab
+Syncfusion<sup>®</sup> Control tab
    {:.caption}
 
 3.Drag `SfSpreadsheet` and drop in the Designer area from the Toolbox
