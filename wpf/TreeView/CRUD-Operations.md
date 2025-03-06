@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CRUD Operations in WPF TreeView control | Syncfusion
-description: Learn here all about CRUD Operations support in Syncfusion WPF TreeView (SfTreeView) control and more.
+title: CRUD Operations in WPF TreeView control | Syncfusion®
+description: Learn here all about CRUD Operations support in Syncfusion® WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
 documentation: ug

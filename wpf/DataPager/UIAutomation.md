@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UIAutomation in WPF DataPager control | Syncfusion
-description: Learn here all about UIAutomation support in Syncfusion WPF DataPager (SfDataPager) control and more.
+title: UIAutomation in WPF DataPager control | Syncfusion®
+description: Learn here all about UIAutomation support in Syncfusion® WPF DataPager (SfDataPager) control and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug
@@ -73,7 +73,7 @@ SfDataPager</td><td>
 ## Quick Test Professional
 
 SfDataPager supports QTP test. You can record the actions performed in the control by the corresponding method name 
-with Syncfusion namespace. To know more about QTP test, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
+with Syncfusion<sup>®</sup> namespace. To know more about QTP test, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
 
 The following screenshot displays the QTP Test for SfDataPager
 

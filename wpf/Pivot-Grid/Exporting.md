@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting in WPF Pivot Grid control | Syncfusion
-description: Learn about Exporting support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
+title: Exporting in WPF Pivot Grid control | Syncfusion®
+description: Learn about Exporting support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -18,7 +18,7 @@ The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) provide
 
 ## Export to Excel
 
-The pivot grid can be exported to an Excel document using Syncfusion XlsIO libraries. It consists of two exporting modes, and you can switch from one mode to another mode using the `ExportMode` property.
+The pivot grid can be exported to an Excel document using Syncfusion<sup>®</sup> XlsIO libraries. It consists of two exporting modes, and you can switch from one mode to another mode using the `ExportMode` property.
 
 * **Pivot Table**: Exports the pivot grid directly as a pivot table like in Microsoft Excel.
 * **Cell**: Exports the pivot grid as individual cell values.

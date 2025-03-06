@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Sizing in WPF TreeGrid control | Syncfusion
-description: Learn here all about Column Sizing support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
+title: Column Sizing in WPF TreeGrid control | Syncfusion®
+description: Learn here all about Column Sizing support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in WPF Spreadsheet control | Syncfusion
-description: Learn here all about Localization support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
+title: Localization in WPF Spreadsheet control | Syncfusion®
+description: Learn here all about Localization support in Syncfusion® WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

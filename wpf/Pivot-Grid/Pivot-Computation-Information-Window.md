@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pivot Computation Information Dialog in WPF Pivot Grid | Syncfusion
-description: Learn about Pivot Computation Information Dialog support in Syncfusion WPF Pivot Grid control and more.
+title: Pivot Computation Information Dialog in WPF Pivot Grid | Syncfusion®
+description: Learn about Pivot Computation Information Dialog support in Syncfusion® WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Multi Column Dropdown control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control, its elements and more details.
+title: Getting Started with WPF Multi Column Dropdown control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control, its elements and more details.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -48,7 +48,7 @@ Syncfusion.Data.WPF assembly contains fundamental and base classes for Collectio
 Syncfusion.SfGrid.WPF
 </td>
 <td>
-Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of SfMultiColumnDropDownControl, DropDownGrid. SfMultiColumnDropDownControl control present in Syncfusion.UI.Xaml.Grid namespace. This namespace also added in <b>http://schemas.syncfusion.com/wpf</b> Syncfusion WPF schema.
+Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of SfMultiColumnDropDownControl, DropDownGrid. SfMultiColumnDropDownControl control present in Syncfusion.UI.Xaml.Grid namespace. This namespace also added in <b>http://schemas.syncfusion.com/wpf</b> Syncfusion<sup>®</sup> WPF schema.
 </td>
 </tr>
 </table>
@@ -85,7 +85,7 @@ In order to add control manually in XAML, do the below steps,
 1. Add the below required assembly references to the project,
     * Syncfusion.Data.WPF
     * Syncfusion.SfGrid.WPF
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfMultiColumnDropDownControl namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfMultiColumnDropDownControl namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 3. Declare `SfMultiColumnDropDownControl` in XAML page.
 
 {% capture codesnippet1 %}

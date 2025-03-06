@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formulas in WPF Spreadsheet control | Syncfusion
-description: Learn here all about Formulas support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
+title: Formulas in WPF Spreadsheet control | Syncfusion®
+description: Learn here all about Formulas support in Syncfusion® WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
@@ -55,7 +55,7 @@ spreadsheet.DeleteNamedRange(name);
 
 ## ExcelLikeComputations
 
-To return the result of formula computations of Essential Calculate like Microsoft Excel computational result, this bool property [ExcelLikeComputations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.FormulaEngine.html#Syncfusion_UI_Xaml_CellGrid_FormulaEngine_ExcelLikeComputations) is set to true.
+To return the result of formula computations of Essential<sup>®</sup> Calculate like Microsoft Excel computational result, this bool property [ExcelLikeComputations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.FormulaEngine.html#Syncfusion_UI_Xaml_CellGrid_FormulaEngine_ExcelLikeComputations) is set to true.
 
 {% tabs %}
 {% highlight c# %}

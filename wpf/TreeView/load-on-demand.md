@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load On Demand in WPF TreeView control | Syncfusion
-description: Learn here all about Load On Demand support in Syncfusion WPF TreeView (SfTreeView) control and more.
+title: Load On Demand in WPF TreeView control | Syncfusion®
+description: Learn here all about Load On Demand support in Syncfusion® WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
 documentation: ug

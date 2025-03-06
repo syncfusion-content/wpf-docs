@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grid Lines | TreeGrid | WPF | Syncfusion
-description: Learn about customization of grid lines for GridCells and HeaderCells in Syncfusion WPF TreeGrid (SfTreeGrid) control and more details.
+title: Grid Lines | TreeGrid | WPF | Syncfusion®
+description: Learn about customization of grid lines for GridCells and HeaderCells in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more details.
 platform: wpf
 control: TreeGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of WPF DataPager Control | Syncfusion
-description: Learn here all about overview of Syncfusion WPF DataPager (SfDataPager) control, its elements and more.
+title: Overview of WPF DataPager Control | Syncfusion®
+description: Learn here all about overview of Syncfusion® WPF DataPager (SfDataPager) control, its elements and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug

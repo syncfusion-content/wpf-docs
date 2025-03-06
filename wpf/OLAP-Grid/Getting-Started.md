@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Olap Grid control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Olap Grid control, its elements and more details.
+title: Getting Started with WPF Olap Grid control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with WPF Olap Grid
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your WPF application to use the components.
+Starting with v16.2.0.x, if you refer to Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup>®</sup> license key in your WPF application to use the components.
 
 This section covers the information required to create a simple OLAP grid bound to the OLAP data source.
 
@@ -18,7 +18,7 @@ This section covers the information required to create a simple OLAP grid bound 
 
 Open Visual Studio IDE and go to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
   
-After creating the WPF application, go to View menu and select Toolbox option. Now, the Toolbox will appear inside Visual Studio IDE. From the Visual Studio Toolbox, drag and drop the OLAP grid under the **Syncfusion BI WPF** tag. It will automatically add the required assemblies into the application.
+After creating the WPF application, go to View menu and select Toolbox option. Now, the Toolbox will appear inside Visual Studio IDE. From the Visual Studio Toolbox, drag and drop the OLAP grid under the **Syncfusion<sup>®</sup> BI WPF** tag. It will automatically add the required assemblies into the application.
 
 ![WPF OLAPGrid Getting-Started Image0](Getting-Started_images/Getting-Started_img0.png)
 
@@ -310,7 +310,7 @@ Run the application. The following output will be generated.
 
 Open Visual Studio IDE and go to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
    
-To add the dependency assemblies within the application, right-click the **References** and select **Add Reference**. Then, add the following Syncfusion assemblies manually to the project from the installed location.
+To add the dependency assemblies within the application, right-click the **References** and select **Add Reference**. Then, add the following Syncfusion<sup>®</sup> assemblies manually to the project from the installed location.
 
    * Syncfusion.Core
    * Syncfusion.Grid.Wpf

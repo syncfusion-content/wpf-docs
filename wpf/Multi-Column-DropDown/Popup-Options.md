@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Popup Options| SfMultiColumnDropDownControl | Wpf | Syncfusion
-description: Popup options in Syncfusion WPF MultiColumnDropDown (SfMultiColumnDropDown) control, its elements and more.
+title: Popup Options| SfMultiColumnDropDownControl | Wpf | Syncfusion®
+description: Popup options in Syncfusion® WPF MultiColumnDropDown (SfMultiColumnDropDown) control, its elements and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug

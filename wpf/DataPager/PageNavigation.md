@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PageNavigation in WPF DataPager control | Syncfusion
-description: Learn here all about PageNavigation support in Syncfusion WPF DataPager (SfDataPager) control and more.
+title: PageNavigation in WPF DataPager control | Syncfusion®
+description: Learn here all about PageNavigation support in Syncfusion® WPF DataPager (SfDataPager) control and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug

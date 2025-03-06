@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CRUD Operations in WPF DataGrid control | Syncfusion
-description: Learn here all about CRUD Operations support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
+title: CRUD Operations in WPF DataGrid control | Syncfusion®
+description: Learn here all about CRUD Operations support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug

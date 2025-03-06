@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visibility of Grouping Bar in Specific Area | Syncfusion
+title: Visibility of Grouping Bar in Specific Area | Syncfusion®
 description: Support to customize the visibility of grouping bar headers to some specific areas in PivotGrid control.
 platform: wpf
 control: Pivot grid

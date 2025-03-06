@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing and AutoCompletion in WPF MultiColumnDropDown | Syncfusion
-description: Editing and autocompletion in Syncfusion WPF MultiColumnDropDown (SfMultiColumnDropDownControl), its elements and more.
+title: Editing and AutoCompletion in WPF MultiColumnDropDown | Syncfusion®
+description: Editing and autocompletion in Syncfusion® WPF MultiColumnDropDown (SfMultiColumnDropDownControl), its elements and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
