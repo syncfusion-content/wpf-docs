@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prevent Grouping of Specific Pivot Item | Syncfusion
+title: Prevent Grouping of Specific Pivot Item | Syncfusion®
 description: Support to prevent the drag and drop of certain pivot items in the pivot schema designer or grouping bar.
 platform: wpf
 control: Pivot grid

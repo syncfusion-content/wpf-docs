@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Manipulation in WPF Grouping control | Syncfusion
-description: Learn about Data Manipulation support in Syncfusion Essential Studio WPF Grouping control, its elements and more details.
+title: Data Manipulation in WPF Grouping control | Syncfusion®
+description: Learn about Data Manipulation support in Syncfusion® Essential Studio® WPF Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Data Manipulation in WPF Grouping
 
-In addition to grouping data, you may want to filter it for some special criteria. For example, you may want to see the total monthly sales due to orders under some value. Essential Grouping gives you the flexibility to add calculated values to the data, and then use these values to produce other information like total monthly sales due for respective order etc. 
+In addition to grouping data, you may want to filter it for some special criteria. For example, you may want to see the total monthly sales due to orders under some value. Essential<sup>®</sup> Grouping gives you the flexibility to add calculated values to the data, and then use these values to produce other information like total monthly sales due for respective order etc. 
 
-The following data manipulation techniques are available in Essential Grouping:
+The following data manipulation techniques are available in Essential<sup>®</sup> Grouping:
 
 ## Filters
 

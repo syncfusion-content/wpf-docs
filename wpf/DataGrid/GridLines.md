@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grid Lines | DataGrid | WPF | Syncfusion
-description: Learn about customization of grid lines for GridCells and HeaderCells in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+title: Grid Lines | DataGrid | WPF | Syncfusion®
+description: Learn about customization of grid lines for GridCells and HeaderCells in Syncfusion® WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: DataGrid
 documentation: ug

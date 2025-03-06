@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF DataGrid control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more.
+title: Getting Started with WPF DataGrid control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -41,7 +41,7 @@ Syncfusion.Data.WPF assembly contains fundamental and base classes for {{'[Colle
 Syncfusion.SfGrid.WPF
 </td>
 <td>
-Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of SfDataGrid. SfDataGrid control present <b>Syncfusion.UI.Xaml.Grid</b> namespace. This namespace also added in <b>http://schemas.syncfusion.com/wpf</b> Syncfusion WPF schema. 
+Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of SfDataGrid. SfDataGrid control present <b>Syncfusion.UI.Xaml.Grid</b> namespace. This namespace also added in <b>http://schemas.syncfusion.com/wpf</b> Syncfusion<sup>®</sup> WPF schema. 
 </td>
 </tr>
 <tr>
@@ -124,7 +124,7 @@ In order to add control manually in XAML, do the below steps,
 	* Syncfusion.Data.WPF 
 	* Syncfusion.SfGrid.WPF
 	* Syncfusion.Shared.WPF
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 3. Declare SfDataGrid control in XAML page.
 
 {% capture codesnippet1 %}

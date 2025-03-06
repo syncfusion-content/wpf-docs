@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize a Cell in WPF Spreadsheet Control | Syncfusion
-description: Customize a cell in Syncfusion Essential Studio WPF Spreadsheet (SfSpreadsheet) control, its elements and more.
+title: Customize a Cell in WPF Spreadsheet Control | Syncfusion®
+description: Customize a cell in Syncfusion® Essential Studio® WPF Spreadsheet (SfSpreadsheet) control, its elements and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

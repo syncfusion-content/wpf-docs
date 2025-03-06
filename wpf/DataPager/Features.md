@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features | SfDataPagerControl | wpf | Syncfusion
-description: Learn here about features of Syncfusion Essential Studio WPF SfDataPagerControl, its elements, and more.
+title: Features | SfDataPagerControl | wpf | Syncfusion®
+description: Learn here about features of Syncfusion® Essential Studio® WPF SfDataPagerControl, its elements, and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug
@@ -842,7 +842,7 @@ SfDataPager</td><td>
 
 ### Quick Test Professional
 
-SfDataPager supports QTP test. You can record the actions performed in the control by the corresponding method name with Syncfusion namespace. To know more about QTP test, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
+SfDataPager supports QTP test. You can record the actions performed in the control by the corresponding method name with Syncfusion<sup>®</sup> namespace. To know more about QTP test, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
 The following screenshot displays the QTP Test for SfDataPager
 
 ![Features_images27](Features_images/Features_img27.png)

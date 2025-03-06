@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About WPF TreeView control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF TreeView (SfTreeView) control, its elements and more.
+title: About WPF TreeView control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Essential Studio® WPF TreeView (SfTreeView) control, its elements and more.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 # WPF TreeView (SfTreeView) Overview
 
-The Syncfusion [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) is a data-oriented control that displays data in a hierarchical structure with expanding and collapsing nodes. It is commonly used to illustrate a folder structure, or nested relationships in an application.
+The Syncfusion<sup>®</sup> [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) is a data-oriented control that displays data in a hierarchical structure with expanding and collapsing nodes. It is commonly used to illustrate a folder structure, or nested relationships in an application.
 
 ## Key features
 

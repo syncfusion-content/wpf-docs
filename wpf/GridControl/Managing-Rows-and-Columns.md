@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Managing Rows and Columns in WPF GridControl | Syncfusion
-description: Learn about Managing Rows and Columns support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Managing Rows and Columns in WPF GridControl | Syncfusion®
+description: Learn about Managing Rows and Columns support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
@@ -59,7 +59,7 @@ grid.Model.ColumnWidths.DefaultLineSize = 100;
 
 ## Hiding rows and columns
 
-Essential Grid supports efficient hiding of rows and columns. You can hide and unhide ranges of rows and columns using SetHidden method on ColumnWidths and RowHeights.
+Essential<sup>®</sup> Grid supports efficient hiding of rows and columns. You can hide and unhide ranges of rows and columns using SetHidden method on ColumnWidths and RowHeights.
 
 N> SetHidden method accepts the following three parameters: 
 

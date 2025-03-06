@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataBinding in WPF DataPager control | Syncfusion
-description: Learn here all about DataBinding support in Syncfusion WPF DataPager (SfDataPager) control and more.
+title: DataBinding in WPF DataPager control | Syncfusion®
+description: Learn here all about DataBinding support in Syncfusion® WPF DataPager (SfDataPager) control and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug

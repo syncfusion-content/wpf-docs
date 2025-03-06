@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging in WPF Olap Grid control | Syncfusion
-description: Learn about Paging support in Syncfusion Essential Studio WPF Olap Grid control, its elements and more details.
+title: Paging in WPF Olap Grid control | Syncfusion®
+description: Learn about Paging support in Syncfusion® Essential Studio® WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
 documentation: ug
@@ -15,7 +15,7 @@ The OLAP pager (user control) is included and bound with the OlapDataManager obj
 
 When you process a large cell set, it is split into several segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible ways by using the UI options in the OLAP pager. You can also change the page size and other pager settings at runtime by using the **PageSetting** window.
 
-Include the following Syncfusion assembly from the installed location to add the OLAP pager with OLAP grid:
+Include the following Syncfusion<sup>®</sup> assembly from the installed location to add the OLAP pager with OLAP grid:
 
 * Syncfusion.OlapShared.Wpf
 

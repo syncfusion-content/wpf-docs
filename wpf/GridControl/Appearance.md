@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WPF GridControl | Syncfusion
-description: Learn about Appearance support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Appearance in WPF GridControl | Syncfusion®
+description: Learn about Appearance support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
@@ -13,7 +13,7 @@ You can customize the appearance of the grid to the cell-level using our Grid pr
 
 ## Cell Styles
 
-The EssentialGrid's cell style architecture plays an integral role in almost every aspect of Essential Grid. The display system hosts a powerful and complete Styles architecture. Settings can be specified at the cell level or at higher levels using parent styles that are referred to as Base Styles. Base Styles can affect a groups of cells. Cell level settings override any higher-level settings and enable easy customization to cell level. With this initial version, Syncfusion's core focus has been on the underlying architecture for displaying cells with virtualized cell editors to enable good performance characteristics.
+The EssentialGrid's cell style architecture plays an integral role in almost every aspect of Essential<sup>®</sup> Grid. The display system hosts a powerful and complete Styles architecture. Settings can be specified at the cell level or at higher levels using parent styles that are referred to as Base Styles. Base Styles can affect a groups of cells. Cell level settings override any higher-level settings and enable easy customization to cell level. With this initial version, Syncfusion's core focus has been on the underlying architecture for displaying cells with virtualized cell editors to enable good performance characteristics.
 
 Following are the two cell styles available:
 
@@ -54,11 +54,11 @@ A basic understanding of this layered cell style architecture will help you unde
 
 ### GridStyleInfo class Overview
 
-An EssentialGrid can be thought of as a rectangular table of grid cells. Each cell will contain distinct information and that can be displayed independently of other cells. Essential Grid uses GridStyleInfo object to store state information about the appearance of a grid cell. So attributes like the type of font, background color, cell value and cell type are all reflected in a single GridStyleInfo object.
+An EssentialGrid can be thought of as a rectangular table of grid cells. Each cell will contain distinct information and that can be displayed independently of other cells. Essential<sup>®</sup> Grid uses GridStyleInfo object to store state information about the appearance of a grid cell. So attributes like the type of font, background color, cell value and cell type are all reflected in a single GridStyleInfo object.
 
 Every cell in a grid may have such an object associated with it, giving the individual cell its unique appearance. It is not necessary that all cells should require fully populated GridStyleInfo objects stored in memory to function. And, for a given GridStyleInfo object, not all possible properties need to be populated in the object. So for example, a particular cell may or may not have a stored GridStyleInfo object, and if it does, this GridStyleInfo object may, or may not, contain a particular property such as font.
 
-In general, when Essential Grid needs a cell's state information, usually to draw the cell, it uses an inheritance process to generate a GridStyleInfo from several parent styles. These parent styles are GridStyleInfo objects associated with particular grid entities:
+In general, when Essential<sup>®</sup> Grid needs a cell's state information, usually to draw the cell, it uses an inheritance process to generate a GridStyleInfo from several parent styles. These parent styles are GridStyleInfo objects associated with particular grid entities:
 
 * TableStyle is a single GridStyleInfo object associated with the entire grid. 
 * RowStyles are GridStyleInfo objects associated with each row. 
@@ -66,7 +66,7 @@ In general, when Essential Grid needs a cell's state information, usually to dra
 
 These three GridStyleInfo objects may not be fully populated, meaning that some properties may not have been set. However, there is a fourth parent style referred to as the StandardStyle, which is a fully populated style object comprising settings for every property.
 
-Hence, when Essential Grid needs to generate a composite GridStyleInfo object for a particular cell, it first looks at any property that may be specifically set in the GridStyleInfo (if one exists) for the current cell. If properties are not set in the cell-specific GridStyleInfo object, Essential Grid will then pick up the RowStyles for the cell and will populate any property that was explicitly set in the RowStyle and not set in the cell-specific GridStyleInfo object. After adding unset properties to the composite GridStyleInfo from the RowStyle, it does the same for the ColumnStyle, the TableStyle and finally the StandardStyle. In this manner, Essential Grid comes up with a fully populated composite GridStyleInfo object to use.
+Hence, when Essential<sup>®</sup> Grid needs to generate a composite GridStyleInfo object for a particular cell, it first looks at any property that may be specifically set in the GridStyleInfo (if one exists) for the current cell. If properties are not set in the cell-specific GridStyleInfo object, Essential<sup>®</sup> Grid will then pick up the RowStyles for the cell and will populate any property that was explicitly set in the RowStyle and not set in the cell-specific GridStyleInfo object. After adding unset properties to the composite GridStyleInfo from the RowStyle, it does the same for the ColumnStyle, the TableStyle and finally the StandardStyle. In this manner, Essential<sup>®</sup> Grid comes up with a fully populated composite GridStyleInfo object to use.
 
 The following graphic illustrates the effect of using the GridStyleInfo inheritance to come up with the appearance of a cell. Even though the BackColor property is set in each of the table style, RowStyle and ColumnStyle objects, it is the cell specific style that determines the background color of cell.
 
@@ -78,12 +78,12 @@ The following graphic illustrates the effect of using the GridStyleInfo inherita
 
 Property settings for individual/groups of cells are stored in a GridStyleInfo property. The style allows you to set properties such as background, cell value, and cell type for a particular cell.
 
-Essential Grid for WPF holds two different style caches that depend upon how the cell style is being used:
+Essential<sup>®</sup> Grid for WPF holds two different style caches that depend upon how the cell style is being used:
 
 Volatile style-cache-Is maintained for styles populated through calls made to the QueryCellInfo (the virtual grid event that provides the cell values to the grid on demand) event. This volatile style-cache uses weak references to interact with the .NET Framework's Garbage collection to ensure optimal memory use. These styles remain cached as long as they are not garbage collected by the Framework.
 
 Render style-cache-Is maintained for styles needed to draw the grid and are disposed of as soon as the cell scrolls out of view.
-The combination of these two caches makes Essential Grid for WPF highly efficient. This section elaborates on important style properties.
+The combination of these two caches makes Essential<sup>®</sup> Grid for WPF highly efficient. This section elaborates on important style properties.
 
 #### Base Styles
 
@@ -343,7 +343,7 @@ The following output is generated using the code above.
 
 ### Data Formats
 
-Essential Grid allows the user to specify the format string for Text and DateTime cell values. The following table lists the various format strings supported.
+Essential<sup>®</sup> Grid allows the user to specify the format string for Text and DateTime cell values. The following table lists the various format strings supported.
 
 
 

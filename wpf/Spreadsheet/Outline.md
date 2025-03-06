@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Outline in WPF Spreadsheet control | Syncfusion
-description: Learn here all about Outline support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
+title: Outline in WPF Spreadsheet control | Syncfusion®
+description: Learn here all about Outline support in Syncfusion® WPF Spreadsheet (SfSpreadsheet) control and more.
 control: SfSpreadsheet
 documentation: ug
 ---

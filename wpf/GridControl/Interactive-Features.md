@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Features in WPF GridControl | Syncfusion
-description: Learn about Interactive Features support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Interactive Features in WPF GridControl | Syncfusion®
+description: Learn about Interactive Features support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
@@ -13,7 +13,7 @@ This section explains the Resizing the columns, Drag and drop the columns and ce
 
 ## Drag-and-Drop columns
 
-Essential Grid for WPF provides support for drag-and-drop functionality. This feature enables the user to just click a column header and drag it to a new position. It is not required to select the column header for dragging. This is an easy way of rearranging the columns dynamically. You can enable or disable this feature using AllowDragColumns property of the Grid as follows:
+Essential<sup>®</sup> Grid for WPF provides support for drag-and-drop functionality. This feature enables the user to just click a column header and drag it to a new position. It is not required to select the column header for dragging. This is an easy way of rearranging the columns dynamically. You can enable or disable this feature using AllowDragColumns property of the Grid as follows:
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +112,7 @@ This event allows you to provide customized clipboard formats or add supp
 
 ## Excel like - Resizing
 
-Essential Grid control supports Excel like resizing to hide or unhide columns. It also acts as a visual marker to indicate hidden columns.
+Essential<sup>®</sup> Grid control supports Excel like resizing to hide or unhide columns. It also acts as a visual marker to indicate hidden columns.
 
 ### Use Case Scenarios
 

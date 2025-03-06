@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in WPF DataGrid control | Syncfusion
-description: Learn here all about Selection support in Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Selection in WPF DataGrid control | Syncfusion®
+description: Learn here all about Selection support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -1742,7 +1742,7 @@ public class GridSelectionControllerExt : GridSelectionController
 
 [How to programmatically select the records of the Master-DetailsView at run time?](https://support.syncfusion.com/kb/article/5079/how-to-programmatically-select-the-records-of-the-master-detailsview-at-run-time-in-wpf-)
 
-[How to accomplish RecordNavigationBar in the SfDataGrid like Syncfusion Windows Forms DataBoundGrid?](https://support.syncfusion.com/kb/article/5122/how-to-accomplish-recordnavigationbar-in-the-wpf-sfdatagrid-like-syncfusion-windowsforms-databoundgrid)
+[How to accomplish RecordNavigationBar in the SfDataGrid like Syncfusion<sup>®</sup> Windows Forms DataBoundGrid?](https://support.syncfusion.com/kb/article/5122/how-to-accomplish-recordnavigationbar-in-the-wpf-sfdatagrid-like-syncfusion-windowsforms-databoundgrid)
 
 [How to select the entire column in SfDataGrid ?](https://support.syncfusion.com/kb/article/4862/how-to-select-the-entire-column-in-sfdatagrid)
 
