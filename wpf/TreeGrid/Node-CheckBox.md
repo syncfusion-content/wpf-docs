@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Node CheckBox in WPF TreeGrid control | Syncfusion
-description: Learn here all about Node CheckBox support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
+title: Node CheckBox in WPF TreeGrid control | Syncfusion®
+description: Learn here all about Node CheckBox support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

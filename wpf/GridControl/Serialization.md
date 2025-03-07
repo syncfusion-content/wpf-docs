@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in WPF GridControl | Syncfusion
-description: Learn about Serialization support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Serialization in WPF GridControl | Syncfusion®
+description: Learn about Serialization support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization in WPF GridControl
 
-Essential GridControl supports Serialization. The whole grid can be serialized and deserialized at run-time. 
+Essential<sup>®</sup> GridControl supports Serialization. The whole grid can be serialized and deserialized at run-time. 
 
 ### Use Case Scenarios
 

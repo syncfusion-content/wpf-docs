@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Olap Client control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Olap Client control, its elements and more details.
+title: Getting Started with WPF Olap Client control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF Olap Client control, its elements and more details.
 platform: wpf
 control: OLAP Client
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with WPF Olap Client
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your WPF application to use the components.
+Starting with v16.2.0.x, if you refer to Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup>®</sup> license key in your WPF application to use the components.
 
 This section covers the information required to create a simple OLAP client bound to the OLAP data source.
 
@@ -18,7 +18,7 @@ This section covers the information required to create a simple OLAP client boun
 
 Open the Visual Studio IDE and navigate to File > New > Project > WPF application (inside Visual C# templates) to create a new WPF application.
 
-After creating the WPF application, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the OLAP client under the **Syncfusion BI WPF** tag. It will automatically add the required assemblies to the application.
+After creating the WPF application, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the OLAP client under the **Syncfusion<sup>®</sup> BI WPF** tag. It will automatically add the required assemblies to the application.
    
 ![WPF OLAP Client Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
@@ -98,7 +98,7 @@ Run the application. The following output will be generated.
 
 Open Blend for Visual Studio and navigate to File > New project > WPF > WPF application to create a new WPF application.
 
-Select the **Project** tab available in the left-corner of the Blend IDE, right-click the **References** and select **Add Reference**. Now, browse and add the following Syncfusion assemblies to the project.
+Select the **Project** tab available in the left-corner of the Blend IDE, right-click the **References** and select **Add Reference**. Now, browse and add the following Syncfusion<sup>®</sup> assemblies to the project.
 
 * Syncfusion.Grid.Wpf
 * Syncfusion.Olap.Base
@@ -193,7 +193,7 @@ Run the application. The following output will be generated.
 
 Open the Visual Studio IDE and go to File > New > Project > WPF application (inside Visual C# Templates) to create a new WPF application.
 
-To add the dependency assemblies within the application, right-click the **References** and select **Add Reference**. Then, add the following Syncfusion assemblies manually to the project from the installed location.
+To add the dependency assemblies within the application, right-click the **References** and select **Add Reference**. Then, add the following Syncfusion<sup>®</sup> assemblies manually to the project from the installed location.
 
 * Syncfusion.Chart.WPF
 * Syncfusion.Shared.WPF

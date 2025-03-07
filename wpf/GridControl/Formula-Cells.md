@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formula Cells in WPF GridControl | Syncfusion
-description: Learn about Formula Cells support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Formula Cells in WPF GridControl | Syncfusion®
+description: Learn about Formula Cells support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Formula Cells in WPF GridControl
 
-Setting the CellType of a cell to a FormulaCell will allow you to enter algebraic expressions using formulas and cell references. Cell references are entries such as A11 for column A row 11 or BA3 for column BA row 3. A formula is a defined calculation from the Formula Library which, is included with Essential Grid. This Formula Library is extensible and allows you to add additional formulas.
+Setting the CellType of a cell to a FormulaCell will allow you to enter algebraic expressions using formulas and cell references. Cell references are entries such as A11 for column A row 11 or BA3 for column BA row 3. A formula is a defined calculation from the Formula Library which, is included with Essential<sup>®</sup> Grid. This Formula Library is extensible and allows you to add additional formulas.
 
 This section comprises the following topics:
 
@@ -32,7 +32,7 @@ Me.GridControl1.BaseStylesMap("Standard"). StyleInfo.CellType = "FormulaCell"
 
 ## Using the Formula Library
 
-Essential Grid's Formula Library contains the mathematical functions that are available in the .NET FrameWork's System.Math class. In addition, there are Sum and Avg members. For a complete list of these library functions, please see the Class Reference for GridFormulaEngine. You can also add additional functions to this library using your own code. 
+Essential<sup>®</sup> Grid's Formula Library contains the mathematical functions that are available in the .NET FrameWork's System.Math class. In addition, there are Sum and Avg members. For a complete list of these library functions, please see the Class Reference for GridFormulaEngine. You can also add additional functions to this library using your own code. 
 
 ![Sample formula library usage](Formulacells_images/formulacells.jpeg)
 
@@ -255,7 +255,7 @@ cellModel.Engine.AddFunction("SumPosNums", New GridFormulaEngine.LibraryFunction
 
 ## Function Reference Section
 
-The Syncfusion Grid control supports 370 formulas under various categories including math, statistical, logical, engineering, information, date, time, text, web, financial, lookup, and database functions.
+The Syncfusion<sup>®</sup> Grid control supports 370 formulas under various categories including math, statistical, logical, engineering, information, date, time, text, web, financial, lookup, and database functions.
 
 ### Math & Trigonometry functions
 

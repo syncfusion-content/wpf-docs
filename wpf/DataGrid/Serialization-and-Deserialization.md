@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in WPF DataGrid Control | Syncfusion
-description: Learn here all about Serialization and Deserialization support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
+title: Serialization in WPF DataGrid Control | Syncfusion®
+description: Learn here all about Serialization and Deserialization support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug

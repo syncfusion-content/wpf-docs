@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Validation in WPF TreeGrid control | Syncfusion
-description: Learn here all about Data Validation support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
+title: Data Validation in WPF TreeGrid control | Syncfusion®
+description: Learn here all about Data Validation support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

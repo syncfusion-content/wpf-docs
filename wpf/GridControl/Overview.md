@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WPF GridControl | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF GridControl control, its elements and more details.
+title: About WPF GridControl | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Essential Studio® WPF GridControl control, its elements and more details.
 platform: wpf
 control: Grid
 documentation: ug
@@ -22,11 +22,11 @@ The Excel like WPF grid control (virtual grid) is a cell-oriented control for di
 Below are key features of WPF Grid Control:
 
 * Easy APIs to add, delete, or move rows and columns – You can easily add, delete, or move rows and columns throughout the Grid control using its well-defined APIs.
-* Clipboard Support – Essential Grid provides excellent clipboard support that allows users to copy and paste grid cell content to text or any format.
-* Frozen Rows and Columns – Essential Grid allows users to freeze grid columns to the left or right or freeze rows to the top or bottom of the grid.
-* Resize Rows and Columns – Essential Grid provides options for resizing rows and columns. 
-* Hide Rows and Columns – Essential Grid provides support for hiding or displaying a range of rows and columns.
-* Keyboard Interface – Essential Grid provides extensive support for keyboard handling. The following list contains some supported keys and actions:
+* Clipboard Support – Essential<sup>®</sup> Grid provides excellent clipboard support that allows users to copy and paste grid cell content to text or any format.
+* Frozen Rows and Columns – Essential<sup>®</sup> Grid allows users to freeze grid columns to the left or right or freeze rows to the top or bottom of the grid.
+* Resize Rows and Columns – Essential<sup>®</sup> Grid provides options for resizing rows and columns. 
+* Hide Rows and Columns – Essential<sup>®</sup> Grid provides support for hiding or displaying a range of rows and columns.
+* Keyboard Interface – Essential<sup>®</sup> Grid provides extensive support for keyboard handling. The following list contains some supported keys and actions:
 * Arrow keys – To move cell focus.
 * PageUp/PageDown – To scroll a grid by page.
 * F2  – To activate/deactivate a current cell.
@@ -36,17 +36,17 @@ Below are key features of WPF Grid Control:
 * DELETE – To delete an entire row in the GridData control.
 * CTRL+X, CTRL+V, CTRL+C – For common clipboard operations.
 * All keyboard operations can be customized. 
-* Selection Modes - Essential Grid offers different kinds of selection modes such as row only, column only, and cell only for selecting a particular row, column, or cell, respectively.
-* Drag-Drop Support - Essential Grid lets you drag any column and drop it at any position in the grid. This allows columns to be repositioned as required.
-* Virtual Mode - Essential Grid for WPF supports a virtual mode, which lets you dynamically provide data to the grid from an external data source through an event. This means the grid does not store any data in its internal data structure.
+* Selection Modes - Essential<sup>®</sup> Grid offers different kinds of selection modes such as row only, column only, and cell only for selecting a particular row, column, or cell, respectively.
+* Drag-Drop Support - Essential<sup>®</sup> Grid lets you drag any column and drop it at any position in the grid. This allows columns to be repositioned as required.
+* Virtual Mode - Essential<sup>®</sup> Grid for WPF supports a virtual mode, which lets you dynamically provide data to the grid from an external data source through an event. This means the grid does not store any data in its internal data structure.
 
 ## Feature Summary
 
-This section provides basic information, such as definitions and usage, regarding important features of Essential Grid.
+This section provides basic information, such as definitions and usage, regarding important features of Essential<sup>®</sup> Grid.
 
 ### Grid Control Features
 
-The Grid control is a cell-based, data-representation control. It can load millions of rows very quickly and is very easy to customize. The following features are just a sampling of what you can expect from Essential Grid.
+The Grid control is a cell-based, data-representation control. It can load millions of rows very quickly and is very easy to customize. The following features are just a sampling of what you can expect from Essential<sup>®</sup> Grid.
 
 #### Data Population and Virtual Mode
 

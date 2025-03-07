@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Testing in WPF GridControl | Syncfusion
-description: Learn about Testing support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Testing in WPF GridControl | Syncfusion®
+description: Learn about Testing support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
@@ -53,7 +53,7 @@ Setting up an Automation Sample is very useful to understand the usage of API fo
 
 The following set of instructions illustrates the same.
 
-1. Create a WPF sample application with references added up for Syncfusion assemblies.
+1. Create a WPF sample application with references added up for Syncfusion<sup>®</sup> assemblies.
 
 
    ![Syncfusion Assemblies referenced in the WPF Application](Testability-Frameworks_images/Testability-Frameworks_img3.png)
@@ -143,7 +143,7 @@ if (item != null)
 
 ## VS 2010 Coded UI Testing
 
-Essential Grid WPF now supports automated UI testing with VS 2010 Coded UI technology. The Grid Test plugin blends in with the automated UI Testing Framework in VS 2010 by implementing the following classes:
+Essential<sup>®</sup> Grid WPF now supports automated UI testing with VS 2010 Coded UI technology. The Grid Test plugin blends in with the automated UI Testing Framework in VS 2010 by implementing the following classes:
 
 * UITechnologyManager
 * UITestPropertyProvider
@@ -173,7 +173,7 @@ Following are the properties exposed in Coded UI Testing:
 * Format
 * FormulaTag
 
-### Creating a Coded UI Test With Essential Grid WPF
+### Creating a Coded UI Test With Essential<sup>®</sup> Grid WPF
 
 Initial steps before creating the Coded UI Test project:
 

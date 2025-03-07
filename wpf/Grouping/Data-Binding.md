@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in WPF Grouping control | Syncfusion
-description: Learn about Data Binding support in Syncfusion Essential Studio WPF Grouping control, its elements and more details.
+title: Data Binding in WPF Grouping control | Syncfusion®
+description: Learn about Data Binding support in Syncfusion® Essential Studio® WPF Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Grouping
 
-Essential Grouping lets you sort, group and summarize data. The data needs to be an IList object. For this lesson, we will use an ArrayList of custom objects which have four public properties: A, B, C, and D.
+Essential<sup>®</sup> Grouping lets you sort, group and summarize data. The data needs to be an IList object. For this lesson, we will use an ArrayList of custom objects which have four public properties: A, B, C, and D.
 
 The below section illustrates how to access the data that is bound to the grouping engine.
 
@@ -360,7 +360,7 @@ End Sub
 Add the following grouping namespace for referring the assemblies deployed in the application.
 
 
- Refer Deploying Essential Grouping section to know about deploying Essential Grouping.
+ Refer Deploying Essential<sup>®</sup> Grouping section to know about deploying Essential<sup>®</sup> Grouping.
 
 
 {% tabs %}

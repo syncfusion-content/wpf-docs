@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WPF DataGrid control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more.
+title: About WPF DataGrid control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -32,7 +32,7 @@ Following are the key features of SfDataGrid control
 
 ## Choose between different Grid's
 
-Syncfusion WPF suite comes up with following different Grid’s namely,
+Syncfusion<sup>®</sup> WPF suite comes up with following different Grid’s namely,
 
 1. [GridControl](https://www.syncfusion.com/wpf-controls/excel-like-grid)
 2. [GridTreeControl](https://help.syncfusion.com/wpf/classic/gridtree/overview) and [SfTreeGrid](https://www.syncfusion.com/wpf-controls/treegrid)

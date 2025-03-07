@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF TreeView control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF TreeView (SfTreeView) control, its elements and more.
+title: Getting Started with WPF TreeView control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Essential Studio® WPF TreeView (SfTreeView) control, its elements and more.
 platform: wpf
 control: SfTreeView
 documentation: ug
@@ -49,7 +49,7 @@ In order to add control manually in XAML, do the below steps,
 	* Syncfusion.SfTreeView.WPF
 	* Syncfusion.SfGridCommon.WPF
 	
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 3. Declare SfTreeView control in XAML page.
 
 {% capture codesnippet1 %}

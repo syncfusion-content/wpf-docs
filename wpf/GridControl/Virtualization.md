@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in WPF GridControl | Syncfusion
-description: Learn about Virtualization support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Virtualization in WPF GridControl | Syncfusion®
+description: Learn about Virtualization support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: wpf
 control: Grid Control
 documentation: ug
@@ -16,7 +16,7 @@ This section covers the below grid virtualization topics:
 
 ## Virtual Mode
 
-Essential Grid for WPF supports virtual mode, which lets you dynamically provide data to the grid by handling an event, QueryCellInfo. This means that the grid does not store any data in its internal data structures. A virtual grid can display millions of rows as easily as it displays a dozen. The grid also exposes a second event, CommitCellInfo that lets you save the changes made in the UI, to the external data source.
+Essential<sup>®</sup> Grid for WPF supports virtual mode, which lets you dynamically provide data to the grid by handling an event, QueryCellInfo. This means that the grid does not store any data in its internal data structures. A virtual grid can display millions of rows as easily as it displays a dozen. The grid also exposes a second event, CommitCellInfo that lets you save the changes made in the UI, to the external data source.
 
 ### Example
 

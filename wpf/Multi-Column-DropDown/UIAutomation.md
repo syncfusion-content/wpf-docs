@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UIAutomation in WPF Multi Column Dropdown control | Syncfusion
-description: Learn here all about UIAutomation support in Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
+title: UIAutomation in WPF Multi Column Dropdown control | Syncfusion®
+description: Learn here all about UIAutomation support in Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -60,7 +60,7 @@ SfMultiColumnDropDownControl</td><td>
 ### Quick Test Professional
 
 
-SfMultiColumnDropDownControl supports for QTP test. You can record the actions performed in the control, by mentioning the corresponding method name with Syncfusion namespace. To know more about QTP test refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp).
+SfMultiColumnDropDownControl supports for QTP test. You can record the actions performed in the control, by mentioning the corresponding method name with Syncfusion<sup>®</sup> namespace. To know more about QTP test refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp).
 
 The following screenshot illustrates the QTP Test for SfMultiColumnDropDownControl.
 

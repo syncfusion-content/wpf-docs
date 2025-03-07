@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formatting in WPF Spreadsheet control | Syncfusion
-description: Learn here all about Formatting support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
+title: Formatting in WPF Spreadsheet control | Syncfusion®
+description: Learn here all about Formatting support in Syncfusion® WPF Spreadsheet (SfSpreadsheet) control and more.
 control: SfSpreadsheet
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactivity in WPF TreeView control | Syncfusion
-description: Learn here all about Interactivity support in Syncfusion WPF TreeView (SfTreeView) control and more.
+title: Interactivity in WPF TreeView control | Syncfusion®
+description: Learn here all about Interactivity support in Syncfusion® WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
 documentation: ug

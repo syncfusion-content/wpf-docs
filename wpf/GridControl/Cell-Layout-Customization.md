@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Layout Customization in WPF GridControl | Syncfusion
-description: Learn about Cell Layout Customization support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
+title: Cell Layout Customization in WPF GridControl | Syncfusion®
+description: Learn about Cell Layout Customization support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
@@ -60,7 +60,7 @@ You can create custom range of cells inside a Grid, which is termed as banner ce
 
 ### Cell Spanned Backgrounds
 
-Essential Grid lets you span the given background across multiple cells either row-wise, column-wise or both. The information about all the cell spans for a given grid is maintained by the GridModel.CellSpanBackgrounds. Each entry represents an object of CellSpanBackgroundInfo class that defines a cell span. This class exposes properties such as background, border, and more to customize the cell span.
+Essential<sup>®</sup> Grid lets you span the given background across multiple cells either row-wise, column-wise or both. The information about all the cell spans for a given grid is maintained by the GridModel.CellSpanBackgrounds. Each entry represents an object of CellSpanBackgroundInfo class that defines a cell span. This class exposes properties such as background, border, and more to customize the cell span.
 
 You can also trigger QueryCellSpanBackgrounds event to create and customize cell spans.
 
