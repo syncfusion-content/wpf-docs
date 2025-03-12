@@ -535,6 +535,8 @@ The default value of the CloseMode property is Hide.
 
 {% highlight XAML %}
 
+{% endtabs %}
+
 ## Restricting Docking in Float Window
 
 The float window allows to dock another float window inside it by default. This behavior can be restricted by set [CanDockOnFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDockonFloat) as False for that particular window.
