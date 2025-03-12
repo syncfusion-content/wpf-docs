@@ -506,7 +506,7 @@ private void DockingManager_ChildrenCollectionChanged(object sender, NotifyColle
 
 ## Hide or delete when closing a child item
 
-You can decide whether a child item in the DockingManager should be only hidden from the view or removed from the items collection by using the CloseMode property while closing it.
+You can decide whether a child item in the `DockingManager` should be only hidden from the view or removed from the items collection by using the CloseMode property while closing it.
 
 * If you set the CloseMode property as Hide, the child item will be hidden, but it will remain in the collection. The focus will move to the previously active docked item while hiding it.
 * If you set the CloseMode property as Delete, the child item will be completely removed from the items collection, and the selection will be retained at the same index while removing it.
