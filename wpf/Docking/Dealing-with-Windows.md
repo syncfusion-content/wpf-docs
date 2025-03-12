@@ -533,8 +533,6 @@ The default value of the CloseMode property is Hide.
 
 {% endhighlight %}
 
-{% highlight XAML %}
-
 {% endtabs %}
 
 ## Restricting Docking in Float Window
