@@ -504,6 +504,37 @@ private void DockingManager_ChildrenCollectionChanged(object sender, NotifyColle
 {% endhighlight %}
 {% endtabs %}
 
+## Hide or delete when closing a child item
+
+You can decide whether a child item in the DockingManager should be only hidden from the view or removed from the items collection by using the CloseMode property while closing it.
+
+* If you set the CloseMode property as Hide, the child item will be hidden, but it will remain in the collection. The focus will move to the previously active docked item while hiding it.
+* If you set the CloseMode property as Delete, the child item will be completely removed from the items collection, and the selection will be retained at the same index while removing it.
+
+The default value of the CloseMode property is Hide.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="dockingManager" CloseMode="Delete">
+
+<ContentControl syncfusion:DockingManager.Header="Item"/> 
+
+<ContentControl syncfusion:DockingManager.Header="Item1"/> 
+
+<ContentControl syncfusion:DockingManager.Header="Item2"/> 
+
+<ContentControl syncfusion:DockingManager.Header="Item3"/> 
+
+<ContentControl syncfusion:DockingManager.Header="Item4"/>            
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight XAML %}
+
 ## Restricting Docking in Float Window
 
 The float window allows to dock another float window inside it by default. This behavior can be restricted by set [CanDockOnFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDockonFloat) as False for that particular window.
