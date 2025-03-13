@@ -808,64 +808,6 @@ Syncfusion.ReportDesigner.WPF
 </tr>
 </table>
 
-## ReportViewer
-
-<table>
-<tr>
-<th>Assembly references </th>
-<th>NuGet package </th>
-</tr>
-<tr>
-<td> 
-Syncfusion.Chart.Wpf <br/>
-Syncfusion.Compression.Base <br/>
-Syncfusion.DocIO.Base <br/>
-Syncfusion.Gauge.Wpf <br/>
-Syncfusion.Grid.Wpf <br/>
-Syncfusion.Linq.Base <br/>
-Syncfusion.Pdf.Base <br/>
-Syncfusion.PropertyGrid.Wpf <br/>
-Syncfusion.ReportControls.Wpf <br/>
-Syncfusion.ReportViewer.Wpf <br/>
-Syncfusion.SfMaps.Wpf <br/>
-Syncfusion.SfSkinManager.Wpf <br/>
-Syncfusion.Shared.Wpf <br/>
-Syncfusion.Tools.Wpf <br/>
-Syncfusion.XlsIO.Base <br/>
-</td>
-<td> 
-Syncfusion.ReportViewer.WPF
-</td>
-</tr>
-</table>
-
-## ReportWriter
-
-<table>
-<tr>
-<th>Assembly references </th>
-<th>NuGet package </th>
-</tr>
-<tr>
-<td> 
-Syncfusion.Chart.Wpf <br/>
-Syncfusion.Compression.Base <br/>
-Syncfusion.DocIO.Base <br/>
-Syncfusion.Gauge.Wpf <br/>
-Syncfusion.Linq.Base <br/>
-Syncfusion.Pdf.Base <br/>
-Syncfusion.ReportControls.Wpf <br/>
-Syncfusion.ReportWriter.Base <br/>
-Syncfusion.SfMaps.Wpf <br/>
-Syncfusion.Shared.Wpf <br/>
-Syncfusion.XlsIO.Base 
-</td>
-<td> 
-No separate nuget
-</td>
-</tr>
-</table>
-
 ## Ribbon
 
 <table>
