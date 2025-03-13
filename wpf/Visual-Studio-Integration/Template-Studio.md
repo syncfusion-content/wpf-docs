@@ -44,7 +44,7 @@ Create the Syncfusion® WPF project using the Visual Studio Project Template by 
 
 	![Syncfusion WPF project configuration wizard](Template-Studio-Images/WPF-4.png)
 
-	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 6.0, .NET 7.0, .NET 8.0 and .NET 9.0 from the project type option in Visual Studio.
+	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 8.0 and .NET 9.0 from the project type option in Visual Studio.
 
 	I> Visual Basic Language support is available in WPF Template Studio starting from version 25.1.35.
 
@@ -122,7 +122,7 @@ In the **Project Details** section, you can modify configurations and project ty
 
 	 ![Resources](Template-Studio-Images/Resources.png)
 
-	> The .NET 6.0, .NET 7.0, .NET 8.0 and .NET 9.0 options will be available in the Select a framework version dropdown only if the respective .NET SDKs are installed on your system. The table below outlines the .NET versions, the specific product versions from which they are available, and the Visual Studio versions that support them:
+	> The .NET 8.0 and .NET 9.0 options will be available in the Select a framework version dropdown only if the respective .NET SDKs are installed on your system. The table below outlines the .NET versions, the specific product versions from which they are available, and the Visual Studio versions that support them:
 	> <table>
 	>   <thead>
 	>     <tr>
@@ -132,16 +132,6 @@ In the **Project Details** section, you can modify configurations and project ty
 	>     </tr>
 	>   </thead>
 	>   <tbody>
-	>     <tr>
-	>       <td>.NET 6.0</td>
-	>       <td>v19.4.0.38</td>
-	>       <td>Visual Studio 2022</td>
-	>     </tr>
-	>     <tr>
-	>       <td>.NET 7.0</td>
-	>       <td>v20.4.0.38</td>
-	>       <td>Visual Studio 2022</td>
-	>     </tr>
 	>     <tr>
 	>       <td>.NET 8.0</td>
 	>       <td>v23.2.4</td>
