@@ -9,7 +9,7 @@ documentation: ug
 
 # Sequence Diagram Model in WPF Diagram (SfDiagram)
 
-A sequence diagram is an interaction diagram that shows how objects operate with one another and in what order. The SfDiagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the `UMLSequenceDiagramModel` class.
+A sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The SfDiagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the `UMLSequenceDiagramModel` class.
 
 ## Sequence Diagram Elements
 
@@ -18,15 +18,6 @@ A sequence diagram consists of several key elements: participants, messages, act
 ### Participants
 
 Participants in a sequence diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
-
-#### Types of Participants
-
-The `UMLSequenceParticipant` class offers two participant shape types:
-
-| Type | Description  | Example |
-|------|-------|---------|
-| **Human-shaped** | Represents actors like users or external systems | ![Actor](UML_SequenceDiagram_Images\Actor.png)  |
-| **Rectangle-shaped** | Represents software components or objects | ![Participant](UML_SequenceDiagram_Images\Participant.png) |
 
 #### Creating Participants
 
@@ -92,7 +83,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 | Property | Type | Description |
 |---|---|---|
-| ID | object | Unique identifier for the participant |
+| ID | object | A unique identifier for the participant |
 | Content | string | The display text for the participant |
 | IsActor | bool | Determines if the participant is displayed as an actor (true) or object (false) |
 | ShowDestroyAtEnd | bool | Determines if a destruction marker (X) is shown at the end of the lifeline |
@@ -297,7 +288,7 @@ SfDiagram Diagram = new SfDiagram();
 
 | Property | Type | Description |
 |---|---|---|
-| ID | object | Unique identifier for the message |
+| ID | object | A unique identifier for the message |
 | Content | string | The display text for the message |
 | FromParticipantID | object | ID of the participant sending the message |
 | ToParticipantID | object | ID of the participant receiving the message |
@@ -422,7 +413,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 | Property | Type | Description |
 |---|---|---|
-| ID | object | Unique identifier for the activation box |
+| ID | object | A unique identifier for the activation box |
 | StartMessageID | object | ID of the message that initiates the activation |
 | EndMessageID | object | ID of the message that terminates the activation |
 
@@ -693,7 +684,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 | Property | Type | Description |
 |---|---|---|
-| ID | object | Unique identifier for the fragment |
+| ID | object | A unique identifier for the fragment |
 | Type | UMLSequenceFragmentType | Type of the fragment (Optional, Loop, Alternative) |
 | Conditions | IEnumerable\<UMLSequenceFragmentCondition\> | Collection of conditions for the fragment |
 
