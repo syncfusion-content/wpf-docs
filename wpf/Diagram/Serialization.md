@@ -181,11 +181,11 @@ using (Stream myStream = dialog.OpenFile())
 
 ## Importing and Exporting using Mermaid Syntax
 
-Syncfusion [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) supports saving and loading diagrams using Mermaid syntax—a Markdown-inspired text format that automatically generates diagrams. This feature lets you easily share, edit, and reuse flowcharts, mind maps, and sequence diagrams across different platforms.
+The [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) supports saving diagrams in Mermaid syntax format. Mermaid is a Markdown-inspired syntax that automatically generates diagrams. With this functionality, you can easily create mind maps and flowcharts from Mermaid syntax data, simplifying the visualization of complex ideas and processes without manual drawing. Additionally, you can export your mind maps and flowcharts to Mermaid syntax, allowing for easy sharing, editing, and use across different platforms.
 
 ### Save diagram as Mermaid syntax
 
-The [SaveDiagramAsMermaid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SaveDiagramAsMermaid) method serializes your diagram into a Mermaid-compatible string. This method works for diagrams using Flowchart, Mind Map, or Sequence Diagram layouts (with slight implementation differences for each). The following example shows how to save a diagram:
+The [SaveDiagramAsMermaid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SaveDiagramAsMermaid) method serializes your diagram into a Mermaid-compatible string. This method works for diagrams using Flowchart, Mind Map, or Sequence Diagram layouts. The following example shows how to save a diagram:
 
 {% tabs %}
 {% highlight C# %}
