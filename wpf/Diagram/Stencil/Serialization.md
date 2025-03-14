@@ -80,6 +80,8 @@ stencil.Load(myStream, true);
 
 N> You do not need to explicitly specify false for the second parameter of the Load method, as it is the default value.
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil%20Save%20and%20Load/Stencil%20Save%20and%20Load)
+
 ## Exporting and Importing Symbol Group in Stencil
 
 The Stencil also supports exporting and importing specific symbol groups. This functionality is useful when you need to save and reuse only certain symbol groups.
