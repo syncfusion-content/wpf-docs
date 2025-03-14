@@ -54,7 +54,7 @@ stencil.Save(str);
 
 ## Loading the Stencil
 
-By default, when deserializing a Stencil, symbols and their properties are loaded from the saved stream. To restore the previously saved Stencil settings, pass true as the second argument of the Load method. This ensures that the Stencil settings, including visibility, are deserialized and applied, regardless of its current visibility.
+By default, when deserializing a Stencil, symbols and their properties are loaded from the saved stream. To restore the previously saved Stencil settings, pass true as the second argument of the Load method. This ensures that the Stencil settings, are deserialized and applied, regardless of its current visibility.
 
 The following example demonstrates how to load a Stencil with its saved settings:
 
