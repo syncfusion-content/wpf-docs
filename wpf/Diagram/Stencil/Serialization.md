@@ -13,9 +13,7 @@ documentation: ug
 
 ## Saving the Stencil
 
-In Stencil, [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0) is used for serialization. It allows you to serialize and save your stencil along with its settings into a stream.
-
-Stencil can be serialized and saved with the following settings:
+In Stencil, [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0) is used for serialization. It allows you to serialize and save your stencil along with its settings into a stream.Stencil can be serialized and saved with the following settings:
 
 * Constraints
 * SymbolGroupDisplayMode
@@ -30,7 +28,7 @@ Stencil can be serialized and saved with the following settings:
 * ShowDisplayModeToggleButton
 * SymbolSelectionMode
  
-Here is a simple code example showing how to save the stencil.
+Here is a simple code example to demonstrate how to save the stencil.
 
 {% tabs %}
 {% highlight C# %}
@@ -54,50 +52,9 @@ stencil.Save(str);
 {% endhighlight %}
 {% endtabs %}
 
-## Loading the Stencil with Settings
-
-On deserialization, the saved stream is used to load the stencil along with its settings. We can continue using previously saved stencil along with its settings by loading the saved stream.
-
-Stencil can be Loaded with the following settings:
-
-* Constraints
-* SymbolGroupDisplayMode
-* ExpandMode
-* DisplayMode
-* SymbolsDisplayMode
-* ShowSearchTextBox
-* GroupMappingName
-* Title
-* BorderBrush
-* BorderThickness
-* ShowDisplayModeToggleButton
-* SymbolSelectionMode
-
-Here is a simple code example showing how to load the stencil with settings.
-
-{% tabs %}
-{% highlight C# %}
-
-// Load from saved XAML file
-OpenFileDialog dialog = new OpenFileDialog();
-if (dialog.ShowDialog() == true)
-{
-    using (Stream myStream = dialog.OpenFile())
-    {
-        stencil.Load(myStream, true);
-    }
-}
-
-// Load from saved memory stream
-myStream.Position = 0;
-stencil.Load(myStream, true);
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Loading the Stencil without Settings
 
-On deserialization, the saved stream is used to load the stencil without retaining any previous settings. We can continue using previously saved stencil without retaining any previous settings by loading the saved stream. Here is a simple code example showing how to load the stencil without settings.
+On deserialization, the saved stream is used to load the stencil, without retaining any previous settings. Here is a simple code example to demonstrate how to load the stencil without its previous settings.
 
 {% tabs %}
 {% highlight C# %}
@@ -119,7 +76,31 @@ stencil.Load(myStream);
 {% endhighlight %}
 {% endtabs %}
 
-N> There is no need to explicitly mention the Load method with the false parameter, as the default value is already false.
+N> There is no need to explicitly mention the Load method with the parameter set to false, as the default value is already false.
+
+## Loading the Stencil with Settings
+
+On deserialization, the saved stream is used to load the stencil along with its settings. Here is a simple code example to demonstrate how to load the stencil along with its settings.
+
+{% tabs %}
+{% highlight C# %}
+
+// Load from saved XAML file
+OpenFileDialog dialog = new OpenFileDialog();
+if (dialog.ShowDialog() == true)
+{
+    using (Stream myStream = dialog.OpenFile())
+    {
+        stencil.Load(myStream, true);
+    }
+}
+
+// Load from saved memory stream
+myStream.Position = 0;
+stencil.Load(myStream, true);
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Exporting and Importing Symbol Group in Stencil
 
