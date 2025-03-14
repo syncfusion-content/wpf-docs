@@ -54,7 +54,7 @@ stencil.Save(str);
 
 ## Loading the Stencil without Settings
 
-On deserialization, the saved stream is used to load the stencil, without retaining any previous settings. Here is a simple code example to demonstrate how to load the stencil without its previous settings.
+On deserialization, the saved stream is used to load the stencil along with its settings. We can continue using previously saved stencil without retaining any previous settings by loading the saved stream. Here is a simple code example to demonstrate how to load the stencil along with its settings.
 
 {% tabs %}
 {% highlight C# %}
@@ -80,7 +80,7 @@ N> There is no need to explicitly mention the Load method with the parameter set
 
 ## Loading the Stencil with Settings
 
-On deserialization, the saved stream is used to load the stencil along with its settings. Here is a simple code example to demonstrate how to load the stencil along with its settings.
+On deserialization, the saved stream is used to load the stencil along with its settings. We can continue using previously saved stencil along with its settings by loading the saved stream. Here is a simple code example to demonstrate how to load the stencil with settings.
 
 {% tabs %}
 {% highlight C# %}
