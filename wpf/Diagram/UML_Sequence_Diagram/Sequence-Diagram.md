@@ -9,65 +9,7 @@ documentation: ug
 
 # Sequence Diagram Model in WPF Diagram (SfDiagram)
 
-A sequence diagram is an interaction diagram that shows how objects operate with one another and in what order. The WPF Diagram (SfDiagram) control provides comprehensive support for creating and visualizing UML sequence diagrams through the `UMLSequenceDiagramModel` class.
-
-## Creating a Sequence Diagram
-
-To create a sequence diagram using the SfDiagram control, follow these steps:
-
-1. Create an instance of `SfDiagram`
-2. Create a `UMLSequenceDiagramModel` and assign it to the diagram's Model property
-3. Define participants, messages, activation boxes, and fragments
-4. Call the `UpdateUMLSequenceDiagram` method to render the diagram
-
-{% tabs %}
-{% highlight xaml %}
-<!-- Initialize the SfDiagram with UMLSequenceDiagramModel -->
-<syncfusion:SfDiagram x:Name="diagram">
-    <syncfusion:SfDiagram.Model>
-        <syncfusion:UMLSequenceDiagramModel SpaceBetweenParticipants="120">
-            <!-- Participants will be defined here -->
-            <syncfusion:UMLSequenceDiagramModel.Participants>
-                <syncfusion:ParticipantCollection>
-                    <!-- Participant definitions -->
-                </syncfusion:ParticipantCollection>
-            </syncfusion:UMLSequenceDiagramModel.Participants>
-            
-            <!-- Messages will be defined here -->
-            <syncfusion:UMLSequenceDiagramModel.Messages>
-                <syncfusion:MessageCollection>
-                    <!-- Message definitions -->
-                </syncfusion:MessageCollection>
-            </syncfusion:UMLSequenceDiagramModel.Messages>
-            
-            <!-- Fragments will be defined here -->
-            <syncfusion:UMLSequenceDiagramModel.Fragments>
-                <syncfusion:FragmentCollection>
-                    <!-- Fragment definitions -->
-                </syncfusion:FragmentCollection>
-            </syncfusion:UMLSequenceDiagramModel.Fragments>
-        </syncfusion:UMLSequenceDiagramModel>
-    </syncfusion:SfDiagram.Model>
-</syncfusion:SfDiagram>
-{% endhighlight %}
-
-{% highlight c# %}
-// Initialize the diagram
-SfDiagram diagram = new SfDiagram();
-
-// Create a sequence diagram model
-UMLSequenceDiagramModel model = new UMLSequenceDiagramModel();
-
-// Set the spacing between participants (optional)
-model.SpaceBetweenParticipants = 120;
-
-// Define participants, messages, and fragments
-// (code for these definitions will be shown in the following sections)
-
-// Assign the model to the diagram
-diagram.Model = model;
-{% endhighlight %}
-{% endtabs %}
+A sequence diagram is an interaction diagram that shows how objects operate with one another and in what order. The SfDiagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the `UMLSequenceDiagramModel` class.
 
 ## Sequence Diagram Elements
 
@@ -75,14 +17,16 @@ A sequence diagram consists of several key elements: participants, messages, act
 
 ### Participants
 
-Participants represent objects or actors in the sequence diagram. They appear at the top of the diagram with lifelines extending vertically downward.
+Participants in a sequence diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
 
 #### Types of Participants
 
-The `UMLSequenceParticipant` class offers two types of participants:
+The `UMLSequenceParticipant` class offers two participant shape types:
 
-1. **Actors**: Human users or external systems (set `IsActor = true`)
-2. **Lifelines**: Software components or objects (set `IsActor = false`)
+| Type | Description  | Example |
+|------|-------|---------|
+| **Human-shaped** | Represents actors like users or external systems | ![Actor](UML_SequenceDiagram_Images\Actor.png)  |
+| **Rectangle-shaped** | Represents software components or objects | ![Participant](UML_SequenceDiagram_Images\Participant.png) |
 
 #### Creating Participants
 
@@ -90,26 +34,30 @@ To create participants in your sequence diagram:
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:UMLSequenceDiagramModel.Participants>
-    <syncfusion:ParticipantCollection>
-        <!-- An actor participant -->
-        <syncfusion:UMLSequenceParticipant ID="User" 
-                                          Content="User" 
-                                          IsActor="true" />
-        
-        <!-- A lifeline participant -->
-        <syncfusion:UMLSequenceParticipant ID="System" 
-                                          Content="System" 
-                                          IsActor="false" />
-    </syncfusion:ParticipantCollection>
-</syncfusion:UMLSequenceDiagramModel.Participants>
+<syncfusion:SfDiagram.Model>
+    <syncfusion:UMLSequenceDiagramModel>
+        <syncfusion:UMLSequenceDiagramModel.Participants>
+            <syncfusion:ParticipantCollection>
+                <!-- A human-shaped participant-->
+                <syncfusion:UMLSequenceParticipant ID="User" 
+                                Content="User" 
+                                IsActor="true" />
+
+                <!-- A rectangle-shaped participant -->
+                <syncfusion:UMLSequenceParticipant ID="System" 
+                                Content="System" 
+                                IsActor="false" ShowDestroyAtEnd="True" />
+            </syncfusion:ParticipantCollection>
+        </syncfusion:UMLSequenceDiagramModel.Participants>
+    </syncfusion:UMLSequenceDiagramModel>
+</syncfusion:SfDiagram.Model>
 {% endhighlight %}
 
 {% highlight c# %}
 // Create participants
-List<UMLSequenceParticipant> participants = new List<UMLSequenceParticipant>
+ParticipantCollection participants = new ParticipantCollection
 {
-    // Create an actor participant
+    // A human-shaped participant
     new UMLSequenceParticipant
     {
         ID = "User",            // Unique identifier for the participant
@@ -117,7 +65,7 @@ List<UMLSequenceParticipant> participants = new List<UMLSequenceParticipant>
         IsActor = true          // Set to true for actor, false for lifeline
     },
     
-    // Create a lifeline participant
+    // A rectangle-shaped participant
     new UMLSequenceParticipant
     {
         ID = "System",
@@ -127,10 +75,18 @@ List<UMLSequenceParticipant> participants = new List<UMLSequenceParticipant>
     }
 };
 
+// Initialize Diagram
+SfDiagram Diagram = new SfDiagram();
+
 // Add participants to the model
-model.Participants = participants;
+Diagram.Model = new UMLSequenceDiagramModel()
+{
+    Participants = participants
+};
 {% endhighlight %}
 {% endtabs %}
+
+![ParticipantsExample](UML_SequenceDiagram_Images\ParticipantsExample.png)
 
 #### Participant Properties
 
@@ -138,7 +94,7 @@ model.Participants = participants;
 |---|---|---|
 | ID | object | Unique identifier for the participant |
 | Content | string | The display text for the participant |
-| IsActor | bool | Determines if the participant is displayed as an actor (true) or lifeline (false) |
+| IsActor | bool | Determines if the participant is displayed as an actor (true) or object (false) |
 | ShowDestroyAtEnd | bool | Determines if a destruction marker (X) is shown at the end of the lifeline |
 | ActivationBoxes | IEnumerable\<UMLSequenceActivationBox\> | Collection of activation boxes for this participant |
 
@@ -150,14 +106,14 @@ Messages represent communication between participants and are displayed as arrow
 
 The `UMLSequenceMessageType` enum defines the following message types:
 
-| Message Type | Description | Visual Representation |
+| Message Type | Description | Example |
 |---|---|---|
-| Synchronous | The sender waits for a response | Solid line with filled arrowhead |
-| Asynchronous | The sender continues without waiting | Solid line with open arrowhead |
-| Reply | A response to a previous message | Dashed line with open arrowhead |
-| Create | Creates a new participant | Dashed line with open arrowhead (to newly created object) |
-| Delete | Terminates a participant | Solid line with X at the end (receiver is destroyed) |
-| Self | A message from a participant to itself | Curved line from and to the same lifeline |
+| Synchronous | The sender waits for a response | ![Synchronous Message](UML_SequenceDiagram_Images\Synchronous.png) |
+| Asynchronous | The sender continues without waiting | ![Asynchronous Message](UML_SequenceDiagram_Images\Asynchronous.png) |
+| Reply | A response to a previous message | ![Reply Message](UML_SequenceDiagram_Images\Reply.png) |
+| Create | Creates a new participant | ![Create Message](UML_SequenceDiagram_Images\Create.png) |
+| Delete | Terminates a participant | ![Delete Message](UML_SequenceDiagram_Images\Delete.png)) |
+| Self | A message from a participant to itself | ![Self Message](UML_SequenceDiagram_Images\Self.png) | |
 
 #### Creating Messages
 
@@ -165,40 +121,122 @@ To create messages in your sequence diagram:
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:UMLSequenceDiagramModel.Messages>
-    <syncfusion:MessageCollection>
-        <!-- Synchronous message -->
-        <syncfusion:UMLSequenceMessage ID="MSG1" 
-                                      Content="Login Request" 
-                                      FromParticipantID="User" 
-                                      ToParticipantID="System" 
-                                      Type="Synchronous" />
-        
-        <!-- Reply message -->
-        <syncfusion:UMLSequenceMessage ID="MSG2" 
-                                      Content="Login Response" 
-                                      FromParticipantID="System" 
-                                      ToParticipantID="User" 
-                                      Type="Reply" />
-    </syncfusion:MessageCollection>
-</syncfusion:UMLSequenceDiagramModel.Messages>
+<syncfusion:SfDiagram.Model>
+    <syncfusion:UMLSequenceDiagramModel>
+        <syncfusion:UMLSequenceDiagramModel.Participants>
+            <syncfusion:ParticipantCollection>
+                <!-- A human-shaped participant-->
+                <syncfusion:UMLSequenceParticipant ID="User" 
+                                    Content="User" 
+                                    IsActor="true" />
+
+                <!-- A rectangle-shaped participant -->
+                <syncfusion:UMLSequenceParticipant ID="System" 
+                                    Content="System" 
+                                    IsActor="false" ShowDestroyAtEnd="True" />
+
+                <syncfusion:UMLSequenceParticipant ID="Logger" 
+                                    Content="Logger" 
+                                    IsActor="false" ShowDestroyAtEnd="True" />
+
+                <syncfusion:UMLSequenceParticipant ID="SessionManager" 
+                                    Content="SessionManager" 
+                                    IsActor="false" />
+            </syncfusion:ParticipantCollection>
+        </syncfusion:UMLSequenceDiagramModel.Participants>
+
+        <syncfusion:UMLSequenceDiagramModel.Messages>
+            <syncfusion:MessageCollection>
+                <!-- Synchronous message -->
+                <syncfusion:UMLSequenceMessage ID="MSG1" 
+                                Content="Login Request" 
+                                FromParticipantID="User" 
+                                ToParticipantID="System" 
+                                Type="Synchronous" />
+
+                <!-- Reply message -->
+                <syncfusion:UMLSequenceMessage ID="MSG2" 
+                                Content="Login Response" 
+                                FromParticipantID="System" 
+                                ToParticipantID="User" 
+                                Type="Reply" />
+
+                <!-- Asynchronous message -->
+                <syncfusion:UMLSequenceMessage ID="MSG3" 
+                                Content="Log Event" 
+                                FromParticipantID="System" 
+                                ToParticipantID="Logger" 
+                                Type="Asynchronous" />
+
+                <!-- Create message -->
+                <syncfusion:UMLSequenceMessage ID="MSG4" 
+                                Content="Create Session" 
+                                FromParticipantID="System" 
+                                ToParticipantID="SessionManager" 
+                                Type="Create" />
+
+                <!-- Delete message -->
+                <syncfusion:UMLSequenceMessage ID="MSG5" 
+                                Content="Delete Session" 
+                                FromParticipantID="System" 
+                                ToParticipantID="SessionManager" 
+                                Type="Delete" />
+
+                <!-- Self message -->
+                <syncfusion:UMLSequenceMessage ID="MSG6" 
+                                Content="Validate Inputs" 
+                                FromParticipantID="System" 
+                                ToParticipantID="System" 
+                                Type="Self" />
+            </syncfusion:MessageCollection>
+        </syncfusion:UMLSequenceDiagramModel.Messages>
+    </syncfusion:UMLSequenceDiagramModel>
+</syncfusion:SfDiagram.Model>
 {% endhighlight %}
 
 {% highlight c# %}
-// Create messages
-List<UMLSequenceMessage> messages = new List<UMLSequenceMessage>
+// Create Participants
+var participants = new ParticipantCollection
 {
-    // Synchronous message
+    new UMLSequenceParticipant
+    {
+        ID = "User",
+        Content = "User",
+        IsActor = true
+    },
+    new UMLSequenceParticipant
+    {
+        ID = "System",
+        Content = "System",
+        IsActor = false,
+        ShowDestroyAtEnd = true
+    },
+    new UMLSequenceParticipant
+    {
+        ID = "Logger",
+        Content = "Logger",
+        IsActor = false,
+        ShowDestroyAtEnd = true
+    },
+    new UMLSequenceParticipant
+    {
+        ID = "SessionManager",
+        Content = "SessionManager",
+        IsActor = false
+    }
+};
+
+// Create Messages
+var messages = new MessageCollection
+{
     new UMLSequenceMessage
     {
-        ID = "MSG1",                   // Unique identifier for the message
-        Content = "Login Request",     // Message text
-        FromParticipantID = "User",    // ID of the sending participant
-        ToParticipantID = "System",    // ID of the receiving participant
+        ID = "MSG1",
+        Content = "Login Request",
+        FromParticipantID = "User",
+        ToParticipantID = "System",
         Type = UMLSequenceMessageType.Synchronous
     },
-    
-    // Reply message
     new UMLSequenceMessage
     {
         ID = "MSG2",
@@ -207,22 +245,53 @@ List<UMLSequenceMessage> messages = new List<UMLSequenceMessage>
         ToParticipantID = "User",
         Type = UMLSequenceMessageType.Reply
     },
-    
-    // Self message
     new UMLSequenceMessage
     {
         ID = "MSG3",
-        Content = "Process Data",
+        Content = "Log Event",
+        FromParticipantID = "System",
+        ToParticipantID = "Logger",
+        Type = UMLSequenceMessageType.Asynchronous
+    },
+    new UMLSequenceMessage
+    {
+        ID = "MSG4",
+        Content = "Create Session",
+        FromParticipantID = "System",
+        ToParticipantID = "SessionManager",
+        Type = UMLSequenceMessageType.Create
+    },
+    new UMLSequenceMessage
+    {
+        ID = "MSG5",
+        Content = "Delete Session",
+        FromParticipantID = "System",
+        ToParticipantID = "SessionManager",
+        Type = UMLSequenceMessageType.Delete
+    },
+    new UMLSequenceMessage
+    {
+        ID = "MSG6",
+        Content = "Validate Inputs",
         FromParticipantID = "System",
         ToParticipantID = "System",
         Type = UMLSequenceMessageType.Self
     }
 };
 
-// Add messages to the model
-model.Messages = messages;
+// Initialize Diagram
+SfDiagram Diagram = new SfDiagram();
+
+ // Add participants and messages to the model
+ Diagram.Model = new UMLSequenceDiagramModel
+{
+    Participants = participants,
+    Messages = messages
+};
 {% endhighlight %}
 {% endtabs %}
+
+![Message Example](UML_SequenceDiagram_Images\MessagesExample.png)
 
 #### Message Properties
 
@@ -244,41 +313,64 @@ To create activation boxes in your sequence diagram:
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:UMLSequenceParticipant ID="System" Content="System" IsActor="false">
-    <syncfusion:UMLSequenceParticipant.ActivationBoxes>
-        <syncfusion:ActivationBoxCollection>
-            <syncfusion:UMLSequenceActivationBox ID="ActSystem" 
-                                               StartMessageID="MSG1" 
-                                               EndMessageID="MSG2" />
-        </syncfusion:ActivationBoxCollection>
-    </syncfusion:UMLSequenceParticipant.ActivationBoxes>
-</syncfusion:UMLSequenceParticipant>
+<syncfusion:SfDiagram.Model>
+    <syncfusion:UMLSequenceDiagramModel>
+        <syncfusion:UMLSequenceDiagramModel.Participants>
+            <syncfusion:ParticipantCollection>
+                <!-- A human-shaped participant-->
+                <syncfusion:UMLSequenceParticipant ID="User" 
+                                    Content="User" 
+                                    IsActor="true" />
+                <!-- A rectangle-shaped participant -->
+                <syncfusion:UMLSequenceParticipant ID="System" 
+                                    Content="System" 
+                                    IsActor="false" ShowDestroyAtEnd="True">
+                    <syncfusion:UMLSequenceParticipant.ActivationBoxes>
+                        <syncfusion:ActivationBoxCollection>
+                            <syncfusion:UMLSequenceActivationBox ID="ActivateSystem" 
+                                    StartMessageID="MSG1" 
+                                    EndMessageID="MSG2" />
+                        </syncfusion:ActivationBoxCollection>
+                    </syncfusion:UMLSequenceParticipant.ActivationBoxes>
+                </syncfusion:UMLSequenceParticipant>
+            </syncfusion:ParticipantCollection>
+        </syncfusion:UMLSequenceDiagramModel.Participants>
+        <syncfusion:UMLSequenceDiagramModel.Messages>
+            <syncfusion:MessageCollection>
+                <!-- Synchronous message -->
+                <syncfusion:UMLSequenceMessage ID="MSG1" 
+                                Content="Login Request" 
+                                FromParticipantID="User" 
+                                ToParticipantID="System" 
+                                Type="Synchronous" />
+                <!-- Reply message -->
+                <syncfusion:UMLSequenceMessage ID="MSG2" 
+                                Content="Login Response" 
+                                FromParticipantID="System" 
+                                ToParticipantID="User" 
+                                Type="Reply" />
+            </syncfusion:MessageCollection>
+        </syncfusion:UMLSequenceDiagramModel.Messages>
+    </syncfusion:UMLSequenceDiagramModel>
+</syncfusion:SfDiagram.Model>
 {% endhighlight %}
 
 {% highlight c# %}
-// Create participants with activation boxes
-List<UMLSequenceParticipant> participants = new List<UMLSequenceParticipant>
+// Create Participants with Activation Boxes
+var participants = new ParticipantCollection
 {
     new UMLSequenceParticipant
     {
         ID = "User",
         Content = "User",
-        IsActor = true,
-        ActivationBoxes = new List<UMLSequenceActivationBox>
-        {
-            new UMLSequenceActivationBox
-            {
-                ID = "ActUser",
-                StartMessageID = "MSG1",
-                EndMessageID = "MSG2"
-            }
-        }
+        IsActor = true
     },
     new UMLSequenceParticipant
     {
         ID = "System",
         Content = "System",
         IsActor = false,
+        ShowDestroyAtEnd = true,
         ActivationBoxes = new List<UMLSequenceActivationBox>
         {
             new UMLSequenceActivationBox
@@ -291,10 +383,40 @@ List<UMLSequenceParticipant> participants = new List<UMLSequenceParticipant>
     }
 };
 
-// Add participants to the model
-model.Participants = participants;
+// Create Messages
+var messages = new MessageCollection
+{
+    new UMLSequenceMessage
+    {
+        ID = "MSG1",
+        Content = "Login Request",
+        FromParticipantID = "User",
+        ToParticipantID = "System",
+        Type = UMLSequenceMessageType.Synchronous
+    },
+    new UMLSequenceMessage
+    {
+        ID = "MSG2",
+        Content = "Login Response",
+        FromParticipantID = "System",
+        ToParticipantID = "User",
+        Type = UMLSequenceMessageType.Reply
+    }
+};
+
+// Intialize Diagram
+SfDiagram Diagram = new SfDiagram();
+
+// Update Participants and Messages to the Model
+Diagram.Model = new UMLSequenceDiagramModel()
+{
+    Participants = participants,
+    Messages = messages
+};
 {% endhighlight %}
 {% endtabs %}
+
+![Activations Example](UML_SequenceDiagram_Images\ActivationsExample.png)
 
 #### Activation Box Properties
 
@@ -306,17 +428,19 @@ model.Participants = participants;
 
 ### Fragments
 
-Fragments group messages together and apply control structures like conditions, loops, and alternatives. They are displayed as rectangles enclosing a section of the sequence diagram.
+Fragments group a set of messages based on specific conditions in a sequence diagram. They are displayed as rectangular enclosures that visually separate conditional or looping interactions.
 
 #### Types of Fragments
 
 The `UMLSequenceFragmentType` enum defines the following fragment types:
 
-| Fragment Type | Description | Usage |
-|---|---|---|
-| Optional (opt) | Shows an optional sequence that executes only if a condition is true | Single condition section |
-| Alternative (alt) | Shows different paths based on conditions (if-else structure) | Multiple condition sections |
-| Loop | Shows a repeating sequence | Single condition section with a loop guard |
+Here is the updated table with precise descriptions and correct usage:  
+
+| Fragment Type  | Description  | Usage  |  
+|---------------|-------------|--------|  
+| Optional  | Represents a sequence that is executed only if a specified condition is met; otherwise, it is skipped. | ![Optional Fragment](UML_SequenceDiagram_Images\OptFragment.png) |  
+| Alternative | Represents multiple conditional paths (if-else structure), where only one path executes based on the condition. | ![Alternative Fragment](UML_SequenceDiagram_Images\AltFragment.png) |  
+| Loop | Represents a repeating sequence of interactions that continues based on a loop condition. | ![Loop Fragment](UML_SequenceDiagram_Images\LoopFragment.png) |  
 
 #### Creating Fragments
 
@@ -324,111 +448,246 @@ To create fragments in your sequence diagram:
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:UMLSequenceDiagramModel.Fragments>
-    <syncfusion:FragmentCollection>
-        <!-- Optional fragment -->
-        <syncfusion:UMLSequenceFragment ID="Frag1" Type="Optional">
-            <syncfusion:UMLSequenceFragment.Conditions>
-                <syncfusion:ConditionCollection>
-                    <syncfusion:UMLSequenceFragmentCondition Content="[if user exists]">
-                        <syncfusion:UMLSequenceFragmentCondition.MessageIds>
-                            <syncfusion:MessageIdCollection>
-                                <sys:String>MSG3</sys:String>
-                            </syncfusion:MessageIdCollection>
-                        </syncfusion:UMLSequenceFragmentCondition.MessageIds>
-                    </syncfusion:UMLSequenceFragmentCondition>
-                </syncfusion:ConditionCollection>
-            </syncfusion:UMLSequenceFragment.Conditions>
-        </syncfusion:UMLSequenceFragment>
-        
-        <!-- Alternative fragment (if-else) -->
-        <syncfusion:UMLSequenceFragment ID="Frag2" Type="Alternative">
-            <syncfusion:UMLSequenceFragment.Conditions>
-                <syncfusion:ConditionCollection>
-                    <!-- If condition -->
-                    <syncfusion:UMLSequenceFragmentCondition Content="[valid credentials]">
-                        <syncfusion:UMLSequenceFragmentCondition.MessageIds>
-                            <syncfusion:MessageIdCollection>
-                                <sys:String>MSG4</sys:String>
-                            </syncfusion:MessageIdCollection>
-                        </syncfusion:UMLSequenceFragmentCondition.MessageIds>
-                    </syncfusion:UMLSequenceFragmentCondition>
-                    <!-- Else condition -->
-                    <syncfusion:UMLSequenceFragmentCondition Content="[else]">
-                        <syncfusion:UMLSequenceFragmentCondition.MessageIds>
-                            <syncfusion:MessageIdCollection>
-                                <sys:String>MSG5</sys:String>
-                            </syncfusion:MessageIdCollection>
-                        </syncfusion:UMLSequenceFragmentCondition.MessageIds>
-                    </syncfusion:UMLSequenceFragmentCondition>
-                </syncfusion:ConditionCollection>
-            </syncfusion:UMLSequenceFragment.Conditions>
-        </syncfusion:UMLSequenceFragment>
-    </syncfusion:FragmentCollection>
-</syncfusion:UMLSequenceDiagramModel.Fragments>
+<syncfusion:SfDiagram.Model>
+    <syncfusion:UMLSequenceDiagramModel SpaceBetweenParticipants="300">
+
+        <!-- Define Participants -->
+        <syncfusion:UMLSequenceDiagramModel.Participants>
+            <syncfusion:ParticipantCollection>
+                <!-- Customer initiates the order -->
+                <syncfusion:UMLSequenceParticipant ID="Customer" Content="Customer" IsActor="True" />
+
+                <!-- Order Processing System -->
+                <syncfusion:UMLSequenceParticipant ID="OrderSystem" Content="Order System" IsActor="False" />
+
+                <!-- Payment Gateway -->
+                <syncfusion:UMLSequenceParticipant ID="PaymentGateway" Content="Payment Gateway" IsActor="False" />
+            </syncfusion:ParticipantCollection>
+        </syncfusion:UMLSequenceDiagramModel.Participants>
+
+        <!-- Define Messages -->
+        <syncfusion:UMLSequenceDiagramModel.Messages>
+            <syncfusion:MessageCollection>
+                <!-- Customer places an order -->
+                <syncfusion:UMLSequenceMessage ID="MSG1" 
+                                        Content="Place Order" 
+                                        FromParticipantID="Customer" 
+                                        ToParticipantID="OrderSystem" 
+                                        Type="Synchronous" />
+
+                <!-- System checks if the item is in stock -->
+                <syncfusion:UMLSequenceMessage ID="MSG2" 
+                                        Content="Check Stock Availability" 
+                                        FromParticipantID="OrderSystem" 
+                                        ToParticipantID="OrderSystem" 
+                                        Type="Synchronous" />
+
+                <!-- System confirms stock is available -->
+                <syncfusion:UMLSequenceMessage ID="MSG3" 
+                                        Content="Stock Available" 
+                                        FromParticipantID="OrderSystem" 
+                                        ToParticipantID="Customer" 
+                                        Type="Reply" />
+
+                <!-- System requests payment processing -->
+                <syncfusion:UMLSequenceMessage ID="MSG4" 
+                                        Content="Process Payment" 
+                                        FromParticipantID="OrderSystem" 
+                                        ToParticipantID="PaymentGateway" 
+                                        Type="Synchronous" />
+
+                <!-- Payment success message -->
+                <syncfusion:UMLSequenceMessage ID="MSG5" 
+                                        Content="Payment Successful" 
+                                        FromParticipantID="PaymentGateway" 
+                                        ToParticipantID="OrderSystem" 
+                                        Type="Reply" />
+
+                <!-- System confirms order processing -->
+                <syncfusion:UMLSequenceMessage ID="MSG6" 
+                                        Content="Order Confirmed and Shipped" 
+                                        FromParticipantID="OrderSystem" 
+                                        ToParticipantID="Customer" 
+                                        Type="Reply" />
+
+                <!-- Payment failure message -->
+                <syncfusion:UMLSequenceMessage ID="MSG7" 
+                                        Content="Payment Failed" 
+                                        FromParticipantID="PaymentGateway" 
+                                        ToParticipantID="OrderSystem" 
+                                        Type="Reply" />
+
+                <!-- Retry payment message -->
+                <syncfusion:UMLSequenceMessage ID="MSG8" 
+                                        Content="Retry Payment" 
+                                        FromParticipantID="OrderSystem" 
+                                        ToParticipantID="Customer" 
+                                        Type="Reply" />
+
+            </syncfusion:MessageCollection>
+        </syncfusion:UMLSequenceDiagramModel.Messages>
+
+        <!-- Define Fragments -->
+        <syncfusion:UMLSequenceDiagramModel.Fragments>
+            <syncfusion:FragmentCollection>
+                <!-- Loop Fragment: Retry payment attempts -->
+                <syncfusion:UMLSequenceFragment ID="Frag3" Type="Loop">
+                    <syncfusion:UMLSequenceFragment.Conditions>
+                        <syncfusion:ConditionCollection>
+                            <syncfusion:UMLSequenceFragmentCondition Content="[while attempts less than 3]">
+                                <!--Nested Fragments Inside Loop Fragment-->
+                                <syncfusion:UMLSequenceFragmentCondition.Fragments>
+                                    <syncfusion:FragmentCollection>
+                                        <!-- Optional Fragment: Only executes if item is in stock -->
+                                        <syncfusion:UMLSequenceFragment ID="Frag1" Type="Optional">
+                                            <syncfusion:UMLSequenceFragment.Conditions>
+                                                <syncfusion:ConditionCollection>
+                                                    <syncfusion:UMLSequenceFragmentCondition Content="[if item is in stock]">
+                                                        <syncfusion:UMLSequenceFragmentCondition.MessageIds>
+                                                            <syncfusion:MessageIdCollection>
+                                                                <sys:String>MSG3</sys:String>
+                                                            </syncfusion:MessageIdCollection>
+                                                        </syncfusion:UMLSequenceFragmentCondition.MessageIds>
+                                                    </syncfusion:UMLSequenceFragmentCondition>
+                                                </syncfusion:ConditionCollection>
+                                            </syncfusion:UMLSequenceFragment.Conditions>
+                                        </syncfusion:UMLSequenceFragment>
+
+                                        <!-- Alternative Fragment: Payment success or failure -->
+                                        <syncfusion:UMLSequenceFragment ID="Frag2" Type="Alternative">
+                                            <syncfusion:UMLSequenceFragment.Conditions>
+                                                <syncfusion:ConditionCollection>
+                                                    <!-- If payment is successful -->
+                                                    <syncfusion:UMLSequenceFragmentCondition Content="[if payment is successful]">
+                                                        <syncfusion:UMLSequenceFragmentCondition.MessageIds>
+                                                            <syncfusion:MessageIdCollection>
+                                                                <sys:String>MSG5</sys:String>
+                                                                <sys:String>MSG6</sys:String>
+                                                            </syncfusion:MessageIdCollection>
+                                                        </syncfusion:UMLSequenceFragmentCondition.MessageIds>
+                                                    </syncfusion:UMLSequenceFragmentCondition>
+
+                                                    <!-- If payment fails -->
+                                                    <syncfusion:UMLSequenceFragmentCondition Content="[if payment fails]">
+                                                        <syncfusion:UMLSequenceFragmentCondition.MessageIds>
+                                                            <syncfusion:MessageIdCollection>
+                                                                <sys:String>MSG7</sys:String>
+                                                                <sys:String>MSG8</sys:String>
+                                                            </syncfusion:MessageIdCollection>
+                                                        </syncfusion:UMLSequenceFragmentCondition.MessageIds>
+                                                    </syncfusion:UMLSequenceFragmentCondition>
+                                                </syncfusion:ConditionCollection>
+                                            </syncfusion:UMLSequenceFragment.Conditions>
+                                        </syncfusion:UMLSequenceFragment>
+                                    </syncfusion:FragmentCollection>
+                                </syncfusion:UMLSequenceFragmentCondition.Fragments>
+                            </syncfusion:UMLSequenceFragmentCondition>
+                        </syncfusion:ConditionCollection>
+                    </syncfusion:UMLSequenceFragment.Conditions>
+                </syncfusion:UMLSequenceFragment>
+
+
+
+            </syncfusion:FragmentCollection>
+        </syncfusion:UMLSequenceDiagramModel.Fragments>
+
+    </syncfusion:UMLSequenceDiagramModel>
+</syncfusion:SfDiagram.Model>
 {% endhighlight %}
 
 {% highlight c# %}
-// Create fragments
-List<UMLSequenceFragment> fragments = new List<UMLSequenceFragment>
+// Define Participants
+var participants = new ParticipantCollection
 {
-    // Optional fragment
-    new UMLSequenceFragment
-    {
-        ID = 1,
-        Type = UMLSequenceFragmentType.Optional,
-        Conditions = new List<UMLSequenceFragmentCondition>
-        {
-            new UMLSequenceFragmentCondition
-            {
-                Content = "[if user exists]",
-                MessageIds = new List<object> { "MSG3" }
-            }
-        }
-    },
-    
-    // Alternative fragment (if-else)
-    new UMLSequenceFragment
-    {
-        ID = 2,
-        Type = UMLSequenceFragmentType.Alternative,
-        Conditions = new List<UMLSequenceFragmentCondition>
-        {
-            // If condition
-            new UMLSequenceFragmentCondition
-            {
-                Content = "[valid credentials]",
-                MessageIds = new List<object> { "MSG4" }
-            },
-            // Else condition
-            new UMLSequenceFragmentCondition
-            {
-                Content = "[else]",
-                MessageIds = new List<object> { "MSG5" }
-            }
-        }
-    },
-    
-    // Loop fragment
+    new UMLSequenceParticipant { ID = "Customer", Content = "Customer", IsActor = true },
+    new UMLSequenceParticipant { ID = "OrderSystem", Content = "Order System", IsActor = false },
+    new UMLSequenceParticipant { ID = "PaymentGateway", Content = "Payment Gateway", IsActor = false }
+};
+
+// Define Messages
+var messages = new MessageCollection
+{
+    new UMLSequenceMessage { ID = "MSG1", Content = "Place Order", FromParticipantID = "Customer", ToParticipantID = "OrderSystem", Type = UMLSequenceMessageType.Synchronous },
+    new UMLSequenceMessage { ID = "MSG2", Content = "Check Stock Availability", FromParticipantID = "OrderSystem", ToParticipantID = "OrderSystem", Type = UMLSequenceMessageType.Synchronous },
+    new UMLSequenceMessage { ID = "MSG3", Content = "Stock Available", FromParticipantID = "OrderSystem", ToParticipantID = "Customer", Type = UMLSequenceMessageType.Reply },
+    new UMLSequenceMessage { ID = "MSG4", Content = "Process Payment", FromParticipantID = "OrderSystem", ToParticipantID = "PaymentGateway", Type = UMLSequenceMessageType.Synchronous },
+    new UMLSequenceMessage { ID = "MSG5", Content = "Payment Successful", FromParticipantID = "PaymentGateway", ToParticipantID = "OrderSystem", Type = UMLSequenceMessageType.Reply },
+    new UMLSequenceMessage { ID = "MSG6", Content = "Order Confirmed and Shipped", FromParticipantID = "OrderSystem", ToParticipantID = "Customer", Type = UMLSequenceMessageType.Reply },
+    new UMLSequenceMessage { ID = "MSG7", Content = "Payment Failed", FromParticipantID = "PaymentGateway", ToParticipantID = "OrderSystem", Type = UMLSequenceMessageType.Reply },
+    new UMLSequenceMessage { ID = "MSG8", Content = "Retry Payment", FromParticipantID = "OrderSystem", ToParticipantID = "Customer", Type = UMLSequenceMessageType.Reply }
+};
+
+// Define Fragments
+var fragments = new FragmentCollection
+{
+    // Loop Fragment: Retry payment attempts
     new UMLSequenceFragment
     {
         ID = 3,
         Type = UMLSequenceFragmentType.Loop,
-        Conditions = new List<UMLSequenceFragmentCondition>
+        Conditions = new ConditionCollection
         {
             new UMLSequenceFragmentCondition
             {
-                Content = "[for each item]",
-                MessageIds = new List<object> { "MSG6", "MSG7" }
+                Content = "[while attempts less than 3]",
+                Fragments = new List<UMLSequenceFragment>
+                {
+                    // Optional Fragment: Only executes if item is in stock
+                    new UMLSequenceFragment
+                    {
+                        ID = 1,
+                        Type = UMLSequenceFragmentType.Optional,
+                        Conditions = new ConditionCollection
+                        {
+                            new UMLSequenceFragmentCondition
+                            {
+                                Content = "[if item is in stock]",
+                                MessageIds = new MessageIdCollection { "MSG3" }
+                            }
+                        }
+                    },
+
+                    // Alternative Fragment: Payment success or failure
+                    new UMLSequenceFragment
+                    {
+                        ID = 2,
+                        Type = UMLSequenceFragmentType.Alternative,
+                        Conditions = new ConditionCollection
+                        {
+                            new UMLSequenceFragmentCondition
+                            {
+                                Content = "[if payment is successful]",
+                                MessageIds = new MessageIdCollection { "MSG5", "MSG6" }
+                            },
+                            new UMLSequenceFragmentCondition
+                            {
+                                Content = "[if payment fails]",
+                                MessageIds = new MessageIdCollection { "MSG7", "MSG8" }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 };
 
-// Add fragments to the model
-model.Fragments = fragments;
+
+// Intialize Diagram
+SfDiagram Diagram = new SfDiagram();
+
+// Update Participants, Messages and Fragments to the Model
+Diagram.Model = new UMLSequenceDiagramModel()
+{
+    SpaceBetweenParticipants = 300,
+    Participants = participants,
+    Messages = messages,
+    Fragments = fragments
+};
 {% endhighlight %}
 {% endtabs %}
+
+![Fragment Example](UML_SequenceDiagram_Images\FragmentsExample.png)
 
 #### Fragment Properties
 
@@ -442,448 +701,49 @@ model.Fragments = fragments;
 
 | Property | Type | Description |
 |---|---|---|
-| Content | string | Text describing the condition or guard |
+| Content | string | Text describing the condition or parameter |
 | MessageIds | IEnumerable\<object\> | Collection of message IDs included in this condition section |
 | Fragments | IEnumerable\<UMLSequenceFragment\> | Collection of nested fragments (for complex structures) |
 
-## Step-by-Step Guide to Creating a Sequence Diagram
+### Customizing Participant Spacing in Sequence Diagram 
 
-Let's create a complete sequence diagram that demonstrates a login interaction between a user and a system:
+The `SpaceBetweenParticipants` property in `UMLSequenceDiagramModel` controls the horizontal gap between participants. The default value is 100, but you can adjust it as needed.  
 
-### Step 1: Create and Configure the SfDiagram
-
-{% tabs %}
+{% tabs %}  
 {% highlight xaml %}
-<syncfusion:SfDiagram x:Name="diagram">
+{% endhighlight %}  
+<syncfusion:SfDiagram x:Name="Diagram">
     <syncfusion:SfDiagram.Model>
-        <syncfusion:UMLSequenceDiagramModel SpaceBetweenParticipants="120"/>
-    </syncfusion:SfDiagram.Model>
-</syncfusion:SfDiagram>
-{% endhighlight %}
-
-{% highlight c# %}
-// Initialize the diagram
-SfDiagram diagram = new SfDiagram();
-
-// Create the sequence diagram model
-UMLSequenceDiagramModel model = new UMLSequenceDiagramModel
-{
-    SpaceBetweenParticipants = 120
-};
-
-// Assign the model to the diagram
-diagram.Model = model;
-{% endhighlight %}
-{% endtabs %}
-
-### Step 2: Define Participants
-
-{% tabs %}
-{% highlight c# %}
-// Create participants
-List<UMLSequenceParticipant> participants = new List<UMLSequenceParticipant>
-{
-    // User (Actor)
-    new UMLSequenceParticipant
-    {
-        ID = "User",
-        Content = "User",
-        IsActor = true,
-        ActivationBoxes = new List<UMLSequenceActivationBox>
-        {
-            new UMLSequenceActivationBox
-            {
-                ID = "ActUser1",
-                StartMessageID = "MSG1",
-                EndMessageID = "MSG2"
-            }
-        }
-    },
-    
-    // Authentication Service (Lifeline)
-    new UMLSequenceParticipant
-    {
-        ID = "Auth",
-        Content = "Authentication Service",
-        IsActor = false,
-        ActivationBoxes = new List<UMLSequenceActivationBox>
-        {
-            new UMLSequenceActivationBox
-            {
-                ID = "ActAuth1",
-                StartMessageID = "MSG1",
-                EndMessageID = "MSG2"
-            },
-            new UMLSequenceActivationBox
-            {
-                ID = "ActAuth2",
-                StartMessageID = "MSG3",
-                EndMessageID = "MSG3"
-            }
-        }
-    },
-    
-    // Database (Lifeline)
-    new UMLSequenceParticipant
-    {
-        ID = "DB",
-        Content = "Database",
-        IsActor = false,
-        ActivationBoxes = new List<UMLSequenceActivationBox>
-        {
-            new UMLSequenceActivationBox
-            {
-                ID = "ActDB1",
-                StartMessageID = "MSG4",
-                EndMessageID = "MSG5"
-            }
-        }
-    }
-};
-
-// Add participants to the model
-model.Participants = participants;
-{% endhighlight %}
-{% endtabs %}
-
-### Step 3: Define Messages
-
-{% tabs %}
-{% highlight c# %}
-// Create messages
-List<UMLSequenceMessage> messages = new List<UMLSequenceMessage>
-{
-    // User sends login request
-    new UMLSequenceMessage
-    {
-        ID = "MSG1",
-        Content = "Login(username, password)",
-        FromParticipantID = "User",
-        ToParticipantID = "Auth",
-        Type = UMLSequenceMessageType.Synchronous
-    },
-    
-    // Authentication service self-processes
-    new UMLSequenceMessage
-    {
-        ID = "MSG3",
-        Content = "ValidateInput()",
-        FromParticipantID = "Auth",
-        ToParticipantID = "Auth",
-        Type = UMLSequenceMessageType.Self
-    },
-    
-    // Authentication service checks database
-    new UMLSequenceMessage
-    {
-        ID = "MSG4",
-        Content = "CheckCredentials(username, password)",
-        FromParticipantID = "Auth",
-        ToParticipantID = "DB",
-        Type = UMLSequenceMessageType.Synchronous
-    },
-    
-    // Database returns result
-    new UMLSequenceMessage
-    {
-        ID = "MSG5",
-        Content = "Return result",
-        FromParticipantID = "DB",
-        ToParticipantID = "Auth",
-        Type = UMLSequenceMessageType.Reply
-    },
-    
-    // Authentication service returns login success
-    new UMLSequenceMessage
-    {
-        ID = "MSG6",
-        Content = "Login Success",
-        FromParticipantID = "Auth",
-        ToParticipantID = "User",
-        Type = UMLSequenceMessageType.Reply
-    },
-    
-    // Authentication service returns login failure
-    new UMLSequenceMessage
-    {
-        ID = "MSG7",
-        Content = "Login Failed",
-        FromParticipantID = "Auth",
-        ToParticipantID = "User",
-        Type = UMLSequenceMessageType.Reply
-    },
-    
-    // Final response message (success or failure)
-    new UMLSequenceMessage
-    {
-        ID = "MSG2",
-        Content = "Return response",
-        FromParticipantID = "Auth",
-        ToParticipantID = "User",
-        Type = UMLSequenceMessageType.Reply
-    }
-};
-
-// Add messages to the model
-model.Messages = messages;
-{% endhighlight %}
-{% endtabs %}
-
-### Step 4: Define Fragments
-
-{% tabs %}
-{% highlight c# %}
-// Create fragments
-List<UMLSequenceFragment> fragments = new List<UMLSequenceFragment>
-{
-    // Optional fragment for input validation
-    new UMLSequenceFragment
-    {
-        ID = 1,
-        Type = UMLSequenceFragmentType.Optional,
-        Conditions = new List<UMLSequenceFragmentCondition>
-        {
-            new UMLSequenceFragmentCondition
-            {
-                Content = "opt [if input not empty]",
-                MessageIds = new List<object> { "MSG3" }
-            }
-        }
-    },
-    
-    // Alternative fragment for login result
-    new UMLSequenceFragment
-    {
-        ID = 2,
-        Type = UMLSequenceFragmentType.Alternative,
-        Conditions = new List<UMLSequenceFragmentCondition>
-        {
-            // If credentials are valid
-            new UMLSequenceFragmentCondition
-            {
-                Content = "alt [valid credentials]",
-                MessageIds = new List<object> { "MSG6" }
-            },
-            // If credentials are invalid
-            new UMLSequenceFragmentCondition
-            {
-                Content = "else [invalid credentials]",
-                MessageIds = new List<object> { "MSG7" }
-            }
-        }
-    },
-    
-    // Loop fragment (example for complex scenarios)
-    new UMLSequenceFragment
-    {
-        ID = 3,
-        Type = UMLSequenceFragmentType.Loop,
-        Conditions = new List<UMLSequenceFragmentCondition>
-        {
-            new UMLSequenceFragmentCondition
-            {
-                Content = "loop [for retry attempts]",
-                MessageIds = new List<object> { "MSG4", "MSG5" }
-            }
-        }
-    }
-};
-
-// Add fragments to the model
-model.Fragments = fragments;
-{% endhighlight %}
-{% endtabs %}
-
-### Step 5: Update and Render the Diagram
-
-{% tabs %}
-{% highlight c# %}
-// Create the complete model
-UMLSequenceDiagramModel sequenceModel = new UMLSequenceDiagramModel
-{
-    SpaceBetweenParticipants = 120,
-    Participants = participants,
-    Messages = messages,
-    Fragments = fragments
-};
-
-// Assign the model to the diagram
-diagram.Model = sequenceModel;
-
-// Update the diagram to render it
-(diagram.Model as UMLSequenceDiagramModel).UpdateUMLSequenceDiagram();
-{% endhighlight %}
-{% endtabs %}
-
-![Complete Sequence Diagram in WPF Diagram](Automatic-Layouts_images/wpf-diagram-complete-sequence-diagram.png)
-
-## Customizing Diagram Layout
-
-The `UMLSequenceDiagramModel` provides several properties to customize the layout of the sequence diagram:
-
-{% tabs %}
-{% highlight c# %}
-// Customize the sequence diagram layout
-UMLSequenceDiagramModel model = new UMLSequenceDiagramModel
-{
-    // Space between participants
-    SpaceBetweenParticipants = 150,
-    
-    // Width of activation boxes
-    // (Access through internal property, consider requesting API for this)
-    // model.ActivationWidth = 20,
-    
-    // Initial length of lifelines
-    // (Access through internal property, consider requesting API for this)
-    // model.InitialLifelineLength = 100,
-    
-    // Vertical spacing between messages
-    // (Access through internal property, consider requesting API for this)
-    // model.MessageSpacing = 50
-};
-{% endhighlight %}
-{% endtabs %}
-
-## Mermaid Text Support
-
-The `UMLSequenceDiagramModel` provides support for working with Mermaid text format, a popular text-based syntax for creating diagrams.
-
-### Import from Mermaid
-
-You can load a sequence diagram from Mermaid text format:
-
-{% tabs %}
-{% highlight c# %}
-// Mermaid text representation of a sequence diagram
-string mermaidText = @"sequenceDiagram
-    User->>Auth: Login(username, password)
-    Auth->>Auth: ValidateInput()
-    Auth->>Database: CheckCredentials(username, password)
-    Database-->>Auth: Return result
-    
-    alt valid credentials
-        Auth-->>User: Login Success
-    else invalid credentials
-        Auth-->>User: Login Failed
-    end";
-
-// Create a sequence diagram model
-UMLSequenceDiagramModel model = new UMLSequenceDiagramModel();
-
-// Load the diagram from Mermaid text
-// (Note: This method is internal and not part of the public API)
-// model.LoadFromMermaid(mermaidText);
-
-// Assign the model to the diagram
-diagram.Model = model;
-
-// Update the diagram to render it
-(diagram.Model as UMLSequenceDiagramModel).UpdateUMLSequenceDiagram();
-{% endhighlight %}
-{% endtabs %}
-
-### Export to Mermaid
-
-You can export a sequence diagram to Mermaid text format:
-
-{% tabs %}
-{% highlight c# %}
-// Create a sequence diagram (using steps from earlier examples)
-UMLSequenceDiagramModel model = new UMLSequenceDiagramModel();
-// ... (define participants, messages, fragments)
-
-// Assign the model to the diagram
-diagram.Model = model;
-
-// Export diagram to Mermaid text
-// (Note: This method is internal and not part of the public API)
-// string mermaidText = model.ExportToMermaid();
-// Console.WriteLine(mermaidText);
-{% endhighlight %}
-{% endtabs %}
-
-## Complete Example
-
-Here's a complete example that creates a sequence diagram showing a user authentication flow:
-
-{% tabs %}
-{% highlight xaml %}
-<!-- Complete XAML example with all elements -->
-<syncfusion:SfDiagram x:Name="diagram">
-    <syncfusion:SfDiagram.Model>
-        <syncfusion:UMLSequenceDiagramModel SpaceBetweenParticipants="120">
-            <!-- Define participants -->
+        <syncfusion:UMLSequenceDiagramModel SpaceBetweenParticipants="300">
+            
+            <!-- Define Participants -->
             <syncfusion:UMLSequenceDiagramModel.Participants>
                 <syncfusion:ParticipantCollection>
-                    <!-- User actor -->
-                    <syncfusion:UMLSequenceParticipant ID="User" Content="User" IsActor="true">
-                        <syncfusion:UMLSequenceParticipant.ActivationBoxes>
-                            <syncfusion:ActivationBoxCollection>
-                                <syncfusion:UMLSequenceActivationBox ID="ActUser1" 
-                                                                    StartMessageID="MSG1" 
-                                                                    EndMessageID="MSG2" />
-                            </syncfusion:ActivationBoxCollection>
-                        </syncfusion:UMLSequenceParticipant.ActivationBoxes>
-                    </syncfusion:UMLSequenceParticipant>
-                    
-                    <!-- Authentication Service -->
-                    <syncfusion:UMLSequenceParticipant ID="Auth" Content="Authentication Service" IsActor="false">
-                        <syncfusion:UMLSequenceParticipant.ActivationBoxes>
-                            <syncfusion:ActivationBoxCollection>
-                                <syncfusion:UMLSequenceActivationBox ID="ActAuth1" 
-                                                                    StartMessageID="MSG1" 
-                                                                    EndMessageID="MSG2" />
-                                <syncfusion:UMLSequenceActivationBox ID="ActAuth2" 
-                                                                    StartMessageID="MSG3" 
-                                                                    EndMessageID="MSG3" />
-                            </syncfusion:ActivationBoxCollection>
-                        </syncfusion:UMLSequenceParticipant.ActivationBoxes>
-                    </syncfusion:UMLSequenceParticipant>
-                    
-                    <!-- Database -->
-                    <syncfusion:UMLSequenceParticipant ID="DB" Content="Database" IsActor="false">
-                        <syncfusion:UMLSequenceParticipant.ActivationBoxes>
-                            <syncfusion:ActivationBoxCollection>
-                                <syncfusion:UMLSequenceActivationBox ID="ActDB1" 
-                                                                    StartMessageID="MSG4" 
-                                                                    EndMessageID="MSG5" />
-                            </syncfusion:ActivationBoxCollection>
-                        </syncfusion:UMLSequenceParticipant.ActivationBoxes>
-                    </syncfusion:UMLSequenceParticipant>
+                    <!-- Add participants here -->
                 </syncfusion:ParticipantCollection>
             </syncfusion:UMLSequenceDiagramModel.Participants>
-            
-            <!-- Define messages -->
+
+            <!-- Define Messages -->
             <syncfusion:UMLSequenceDiagramModel.Messages>
                 <syncfusion:MessageCollection>
-                    <!-- Login request -->
-                    <syncfusion:UMLSequenceMessage ID="MSG1" 
-                                                  Content="Login(username, password)" 
-                                                  FromParticipantID="User" 
-                                                  ToParticipantID="Auth" 
-                                                  Type="Synchronous" />
-                    
-                    <!-- Validate input (self message) -->
-                    <syncfusion:UMLSequenceMessage ID="MSG3" 
-                                                  Content="ValidateInput()" 
-                                                  FromParticipantID="Auth" 
-                                                  ToParticipantID="Auth" 
-                                                  Type="Self" />
-                    
-                    <!-- Check credentials -->
-                    <syncfusion:UMLSequenceMessage ID="MSG4" 
-                                                  Content="CheckCredentials(username, password)" 
-                                                  FromParticipantID="Auth" 
-                                                  ToParticipantID="DB" 
-                                                  Type="Synchronous" />
-                    
-                    <!-- Database response -->
-                    <syncfusion:UMLSequenceMessage ID="MSG5" 
-                                                  Content="Return result" 
-                                                  FromParticipantID="DB" 
-                                                  ToParticipantID="Auth" 
-                                                  Type="Reply" />
-                    
-                    <!-- Login success -->
-                    <syncfusion:UMLSequenceMessage ID="MSG6" 
-                                                  Content="
+                    <!-- Add messages here -->
+                </syncfusion:MessageCollection>
+            </syncfusion:UMLSequenceDiagramModel.Messages>
+
+        </syncfusion:UMLSequenceDiagramModel>
+    </syncfusion:SfDiagram.Model>
+</syncfusion:SfDiagram>
+{% highlight c# %}  
+// Intialize Diagram
+SfDiagram Diagram = new SfDiagram();
+
+// Initialize the sequence diagram model with custom spacing and predefined elements  
+Diagram.Model = new UMLSequenceDiagramModel()  
+{  
+    SpaceBetweenParticipants = 300, // Sets the horizontal spacing between participants (default is 100)  
+    Participants = participants,    // List of participants in the sequence diagram  
+    Messages = messages,            // List of messages exchanged between participants  
+    Fragments = fragments           // List of sequence diagram fragments (opt, alt, loop)  
+};
+{% endhighlight %}  
+{% endtabs %}  
