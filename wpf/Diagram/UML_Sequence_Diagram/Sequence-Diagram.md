@@ -739,3 +739,5 @@ Diagram.Model = new UMLSequenceDiagramModel()
 };
 {% endhighlight %}  
 {% endtabs %}  
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Sequence%20Diagram)
