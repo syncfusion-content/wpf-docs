@@ -575,6 +575,7 @@ We can customize the header of each [DockItem](https://help.syncfusion.com/cr/wp
  <UserControl.Resources>
      <local:BoolVisibilityConverter x:Key="BoolVisibilityConverter" />
  </UserControl.Resources>
+ 
  <StackPanel x:Name="stackPanel" Orientation="Horizontal">
      <StackPanel Orientation="Horizontal">
          <TextBlock
@@ -598,8 +599,6 @@ We can customize the header of each [DockItem](https://help.syncfusion.com/cr/wp
 {% endtabs %}
 
 ![WPF DockItem Header Appearance Customization](Dealing-with-Windows_images/DockItemHeader.jpg)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu) 
 
 ## Customizing FloatWindow
 
