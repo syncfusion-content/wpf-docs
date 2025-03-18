@@ -564,6 +564,42 @@ SyncDockingManager.HeaderMouseOverBackground = new SolidColorBrush(Colors.DarkOr
 
 ![WPF Docking Window Appearance Customization](Dealing-with-Windows_images/wpf-docking-window-appearance-customization.jpeg)
 
+## Customizing the Header of DockItem
+
+We can customize the header of each [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderStyleProperty). Previously, any customization applied to a child item would affect all [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) instances. To enhance flexibility, we have updated the Header property to support object types instead of just strings. This allows for individual customization of each child item, including the ability to control its visibility separately.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+ <UserControl.Resources>
+     <local:BoolVisibilityConverter x:Key="BoolVisibilityConverter" />
+ </UserControl.Resources>
+ <StackPanel x:Name="stackPanel" Orientation="Horizontal">
+     <StackPanel Orientation="Horizontal">
+         <TextBlock
+      Margin="3,0"
+      VerticalAlignment="Center"
+      Text="{Binding DocumentTitle}" />
+         <Ellipse
+      Width="6"
+      Height="6"
+      Margin="1"
+      VerticalAlignment="Center"
+      Fill="Red"
+      Stroke="Black"
+      StrokeThickness="1"
+      Visibility="{Binding DocumentIsModified, Converter={StaticResource BoolVisibilityConverter}}" />
+     </StackPanel>
+ </StackPanel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF DockItem Header Appearance Customization](Dealing-with-Windows_images/DockItemHeader.jpg)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu) 
 
 ## Customizing FloatWindow
 
