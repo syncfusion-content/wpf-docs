@@ -256,11 +256,11 @@ To open QAT Customize Window, select `MoreCommands` option from the ContextMenu 
 
 When same item is added to QAT
 
-![AlertDialogBox of QATCustomizationDialog](AddingItemstoQuickAccessToolBar_images/AlertDialogWindows11Light.jpg)
+![AlertDialogBox of QATCustomizationDialog](AddingItemstoQuickAccessToolBar_images/AlertDialogBox.png)
 
 when we click the reset button in QATCustomization dialog
 
-![ResetDialogBox of QATCustomizationDialog](AddingItemstoQuickAccessToolBar_images/ResetDialogWIndows11Light.jpg)
+![ResetDialogBox of QATCustomizationDialog](AddingItemstoQuickAccessToolBar_images/ResetDialogBox.png)
 
 
 ![Adding WPF Ribbon Items to QuickAccessToolbar](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-item-to-quick-access-toolbar.jpg)
