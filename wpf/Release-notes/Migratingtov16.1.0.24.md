@@ -1,11 +1,11 @@
 ---
 title: Essential Studio for WPF 2018 volume 1 Migration document
-description: Essential Studio for WPF 2018 volume 1 Migration document
+description: Learn about Easy Customization support in Syncfusion WPF Release notes control, its elements, and more.
 platform: wpf
 documentation: ug
 keywords: migration, upgrade-changes, 2018vol1-changes
 ---
-## SfRichTextBoxAdv
+# SfRichTextBoxAdv in WPF Release notes
 
 The SfRichTextBoxAdv control validates DocumentAdv instance internally when the value of Document property is updated. It ensures that minimal child elements are available in each container elements like,
 
