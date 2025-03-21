@@ -58,13 +58,6 @@ Please refer the [Change date time using custom calendar and clock](https://help
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Custom-FullDateSelector) in GitHub
 
-## Custom UI for drop down button
-
-You can customize the dropdown button appearance by using the [DropDownButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_DropDownButtonTemplate) property.
-
-{% tabs %}
-{% highlight XAML %}
-
 ## Custom Time Intervals in Clock view
 
 The TimeStepInterval property allows you to define a custom increment or decrement step for adjusting hours, minutes, or seconds in the Clock view of the DateTimeEdit control. By default, the time step will increase or decrease by 1 unit.
@@ -85,6 +78,13 @@ dateTimeEdit.TimeStepInterval = 3;
 
 {% endhighlight %}
 {% endtabs %}
+
+## Custom UI for drop down button
+
+You can customize the dropdown button appearance by using the [DropDownButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_DropDownButtonTemplate) property.
+
+{% tabs %}
+{% highlight XAML %}
 
 <syncfusion:DateTimeEdit DropDownView="Calendar"
                          Name="dateTimeEdit">
