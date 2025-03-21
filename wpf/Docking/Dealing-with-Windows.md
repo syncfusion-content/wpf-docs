@@ -2,7 +2,7 @@
 layout: post
 title: Dealing with Windows in WPF Docking control | Syncfusion®
 description: Learn here all about Dealing with Windows support in Syncfusion® WPF Docking (DockingManager) control and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
@@ -502,6 +502,38 @@ private void DockingManager_ChildrenCollectionChanged(object sender, NotifyColle
 }
 
 {% endhighlight %}
+{% endtabs %}
+
+## Hide or delete when closing a child item
+
+The CloseMode property in `DockingManager` determines whether a child item is hidden from view or permanently removed from the items collection when closed.
+
+* Hide (default): The child element remains in the `DockingManager` but is hidden from view. Its DockState is updated, and focus shifts to the previously active docked item. Since the item is not removed from the collection, it can be restored later.
+* Delete: The child element is completely removed from the `DockingManager` items collection. The selection remains at the same index after removal, ensuring UI consistency.
+By default, CloseMode is set to Hide, allowing closed items to be restored when needed.
+
+The default value of the CloseMode property is Hide.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="dockingManager" CloseMode="Delete">
+
+<ContentControl syncfusion:DockingManager.Header="Item"/> 
+
+<ContentControl syncfusion:DockingManager.Header="Item1"/> 
+
+<ContentControl syncfusion:DockingManager.Header="Item2"/> 
+
+<ContentControl syncfusion:DockingManager.Header="Item3"/> 
+
+<ContentControl syncfusion:DockingManager.Header="Item4"/>            
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Restricting Docking in Float Window
