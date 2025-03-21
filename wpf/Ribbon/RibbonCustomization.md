@@ -553,9 +553,9 @@ In the below example, the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 {% endtabs %}
 
-![WPF Ribbon Custom Items in MoreCommands Window](RibbonCustomItem_images/wpf-ribbon-custom-items-in-morecommands.png)
+![WPF Ribbon Custom Items in MoreCommands Window](RibbonCustomItem_images/wpf-ribbon-custom-items-in-morecommands-window.png)
 
-![Adding WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/wpf-ribbon-custom-items-with-ribbonbar.png)
+![Adding WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/WPF-Ribbon-Custom-Items-in-RibbonBar.png)
 
 
 To know more about the [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html), refer [here](https://help.syncfusion.com/wpf/ribbon/ribbonitemhost).
