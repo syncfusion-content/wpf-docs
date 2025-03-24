@@ -14,12 +14,10 @@ This section explains the steps required to add the WPF [SfAvatarView](https://h
 ## Creating an application with WPF AvatarView
 
 Follow these steps to integrate the SfAvatarView control into your WPF application:
-
-    1.Create a new WPF application.
-    2.Add the [Syncfusion.Shared.WPF](https://www.nuget.org/packages/Syncfusion.Shared.WPF) NuGet package to your project.
-    3.Import the Syncfusion WPF schema in your XAML file:
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-    4.Initialize the SfAvatarView control in your XAML file.
+1. Create a new WPF application.
+2. Add the [Syncfusion.Shared.WPF](https://www.nuget.org/packages/Syncfusion.Shared.WPF) NuGet package to your project.
+3. Import the Syncfusion WPF schema in your XAML file: `xmlns:syncfusion="http://schemas.syncfusion.com/wpf"`.
+4. Initialize the SfAvatarView control in your XAML file.
 
 ## Initialize AvatarView 
 
