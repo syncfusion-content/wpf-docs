@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with WPF AvatarView
 
-This section explains the steps required to add the WPF `SfAvatarView` control with its basic features.
+This section explains the steps required to add the WPF [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control with its basic features.
 
 ## Creating an application with WPF AvatarView
 
-1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
-2. Add reference to `Syncfusion.Shared.WPF` NuGet. 
+1. Create a new WPF App using .NET 6 in Visual Studio.
+2. Install Syncfusion.Shared.WPF NuGet package. 
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-4. Declare the SfAvatarView control in the XAML page.
+4. Initialize the SfAvatarView control.
 
 ## Initialize AvatarView 
 
@@ -25,7 +25,7 @@ By default, AvatarView control is displayed with the [Avatar1](https://help.sync
 {% tabs %}
 {% highlight xaml %}
 
-<Page x:Class="GettingStarted.MainPage"
+<Window x:Class="GettingStarted.MainPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -37,7 +37,7 @@ By default, AvatarView control is displayed with the [Avatar1](https://help.sync
     <Grid>
         <syncfusion:SfAvatarView />
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %} 
 {% highlight C# %}
@@ -73,4 +73,4 @@ avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///Images\\person.png"
 {% endhighlight %}
 {% endtabs %}
 
-![WPF AvatarView control with custom image](avatarview_images/wpf_imagesource_avatarview.png)
+![WPF AvatarView control with custom image](avatarview_images/wpf_avatarview_imagesource.png)

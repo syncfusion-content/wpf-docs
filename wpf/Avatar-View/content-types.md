@@ -9,7 +9,7 @@ documentation: ug
 
 # Content Types in WPF AvatarView
 
-The `SfAvatarView` control supports five types of content: [Default](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_Default), [Initials](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_Initials), [CustomImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_CustomImage), [AvatarCharacter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_AvatarCharacter), and [GroupView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_Group).
+The [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control supports five types of content: [Default](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_Default), [Initials](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_Initials), [CustomImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_CustomImage), [AvatarCharacter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_AvatarCharacter), and [GroupView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_Group).
 
 ## Default
 
@@ -72,7 +72,7 @@ this.Content = grid;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF AvatarView control with SingleCharacter](avatarview_images/wpf_single_character_initialstype_avatarview.png)
+![WPF AvatarView control with SingleCharacter](avatarview_images/wpf_avatarview_single_character_initialstype.png)
 
 **Double character**
 
@@ -107,7 +107,7 @@ this.Content = grid;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF AvatarView control with DoubleCharacter](avatarview_images/wpf_double_character_initialstype_avatarview.png)
+![WPF AvatarView control with DoubleCharacter](avatarview_images/wpf_avatarview_double_character_initialstype.png)
 
 ## Custom image
 
@@ -137,7 +137,7 @@ this.Content = grid;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF AvatarView control with custom image](avatarview_images/wpf_imagesource_avatarview.png)
+![WPF AvatarView control with custom image](avatarview_images/wpf_avatarview_imagesource.png)
 
 ## Avatar character
 
@@ -167,7 +167,7 @@ this.Content = grid;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF AvatarView control with avatar character](avatarview_images/wpf_avatar_character_avatarview.png)
+![WPF AvatarView control with avatar character](avatarview_images/wpf_avatarview_avatar_character.png)
 
 ## Group view 
 
@@ -216,9 +216,9 @@ The following code example illustrates how to set the group source and member pa
 {% tabs %}
 {% highlight xaml %}
 
-<Page.DataContext>
+<Window.DataContext>
     <local:EmployeeViewModel/>
-</Page.DataContext>
+</Window.DataContext>
 
 <syncfusion:SfAvatarView ContentType="Group"   
                          GroupSource="{Binding CollectionImage}"
@@ -234,7 +234,7 @@ The following code example illustrates how to set the group source and member pa
 
 public partial class MainWindow : Window
 {
-   public MainPage()
+   public MainWindow()
    {
       Grid grid = new Grid();
       EmployeeViewModel employeeViewModel = new EmployeeViewModel();
@@ -257,4 +257,4 @@ public partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-![WPF AvatarView control with Group Content Type](avatarview_images/wpf_group_contenttype_avatarview.png)
+![WPF AvatarView control with Group content type](avatarview_images/wpf_avatarview_group_contenttype.png)

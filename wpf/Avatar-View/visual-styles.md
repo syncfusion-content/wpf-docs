@@ -9,7 +9,7 @@ documentation: ug
 
 # Visual Styles in WPF AvatarView
 
-The `SfAvatarView` control provides support for various built-in visual styles. Configure the visual style of your AvatarView by using the [AvatarShape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html#Syncfusion_Windows_Shared_SfAvatarView_AvatarShape) property and selecting from the available options, such as:
+The [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control provides support for various built-in visual styles. Configure the visual style of your AvatarView by using the [AvatarShape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html#Syncfusion_Windows_Shared_SfAvatarView_AvatarShape) property and selecting from the available options, such as:
 
 * Custom
 * Circle
@@ -49,7 +49,7 @@ this.Content = grid;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF AvatarView control with custom visual styles](avatarview_images/wpf_custom_style_avatarview.png)
+![WPF AvatarView control with custom visual styles](avatarview_images/wpf_avatarview_custom_style.png)
 
 ## Circle
 
@@ -68,16 +68,16 @@ N> The default [AvatarShape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 {% tabs %}
 {% highlight xaml %}
 
-<Page.Resources>
+<Window.Resources>
     <ResourceDictionary>
         <Style x:Key="AvatarViewStyle"  TargetType="syncfusion:SfAvatarView">
             <Setter Property="ContentType" Value="AvatarCharacter"/>
             <Setter Property="AvatarCharacter" Value="Avatar13"/>
         </Style>
     </ResourceDictionary>
-</Page.Resources>
+</Window.Resources>
 
-<Page.Content>
+<Window.Content>
     <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid>
             <Grid.RowDefinitions>
@@ -104,7 +104,7 @@ N> The default [AvatarShape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
             <TextBlock Text="Extra-large" Grid.Row="1"  TextAlignment="Center" Grid.Column="0" FontSize="10"/>
         </Grid>
     </StackPanel>
-</Page.Content>
+</Window.Content>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -224,7 +224,7 @@ this.Content=stack;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF AvatarView control with circle visual styles](avatarview_images/wpf_circle_style_avatarview.png)
+![WPF AvatarView control with circle visual styles](avatarview_images/wpf_avatarview_circle_style.png)
 
 ## Square
 
@@ -241,16 +241,16 @@ The following code sample illustrates how to set the visual styles of AvatarView
 {% tabs %}
 {% highlight xaml %}
 
-<Page.Resources>
+<Window.Resources>
     <ResourceDictionary>
         <Style x:Key="AvatarViewStyle"  TargetType="syncfusion:SfAvatarView">
             <Setter Property="ContentType" Value="AvatarCharacter"/>
             <Setter Property="AvatarCharacter" Value="Avatar13"/>
         </Style>
     </ResourceDictionary>
-</Page.Resources>
+</Window.Resources>
 
-<Page.Content>
+<Window.Content>
     <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid>
             <Grid.RowDefinitions>
@@ -277,7 +277,7 @@ The following code sample illustrates how to set the visual styles of AvatarView
             <TextBlock Text="Extra-large" Grid.Row="1" TextAlignment="Center" Grid.Column="0" FontSize="10"/>
         </Grid>
     </StackPanel>
-</Page.Content>
+</Window.Content>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -397,4 +397,4 @@ this.Content=stack;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF AvatarView control with square visual styles](avatarview_images/wpf_square_avatarview.png)
+![WPF AvatarView control with square visual styles](avatarview_images/wpf_avatarview_square.png)

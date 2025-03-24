@@ -9,9 +9,9 @@ documentation: ug
 
 # How to use badge for WPF AvatarView
 
-The `SfAvatarView` control supports various [SfBadge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) states to notify users of new or unread messages, notifications, or status updates.
+The [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control supports various [SfBadge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) states to notify users of new or unread messages, notifications, or status updates.
 
-The following code explains how to set [SfBadge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) for `SfAvatarView`.
+The following code explains how to set [SfBadge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) for [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html).
 
 {% tabs %}
 {% highlight xaml %}

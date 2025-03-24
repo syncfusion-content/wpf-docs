@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in WPF AvatarView 
 
-The `SfAvatarView` control offers a range of customization options, including modifying its border, background, and more.
+The [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control offers a range of customization options, including modifying its border, background, and more.
 
 ## Border
 
@@ -113,7 +113,7 @@ this.Content = grid;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF AvatarView control with custom background](avatarview_images/wpf_double_character_initialstype_avatarview.png)
+![WPF AvatarView control with custom background](avatarview_images/wpf_avatarview_double_character_initialstype.png)
 
 ## Gradient background
 
