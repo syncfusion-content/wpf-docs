@@ -25,7 +25,7 @@ By default, AvatarView control is displayed with the [Avatar1](https://help.sync
 {% tabs %}
 {% highlight xaml %}
 
-<Window x:Class="GettingStarted.MainPage"
+<Window x:Class="GettingStarted.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
