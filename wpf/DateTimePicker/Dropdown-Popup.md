@@ -58,9 +58,9 @@ Please refer the [Change date time using custom calendar and clock](https://help
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Custom-FullDateSelector) in GitHub
 
-## Custom Time Intervals in Clock view
+## Customize Time Step value in Dropdown Clock
 
-The TimeStepInterval property allows you to define a custom increment or decrement step for adjusting hours, minutes, or seconds in the Clock view of the DateTimeEdit control. By default, the time step will increase or decrease by 1 unit.
+The TimeStepInterval property allows you to define a custom increment or decrement step for adjusting hours, minutes, or seconds in the clock when using the dropdown view of the DateTimeEdit control. By default, the time step increases or decreases by 1. Setting this property to a different value enables users to adjust time in larger or smaller increments.
 
 {% tabs %}
 {% highlight XAML %}
