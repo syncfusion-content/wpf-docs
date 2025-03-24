@@ -11,9 +11,24 @@ documentation: ug
 
 [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) serialization is the process of converting the state of stencil into a stream of bytes to recreate them when needed. Such streams can be stored in a database, as a file, or in memory. The reverse process is called deserialization.
 
-### Saving the Stencil
+## Saving the Stencil
 
-In Stencil, [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0) is used for serialization. It allows you to serialize and save your stencil into a stream. Here is a simple code example showing how to save the stencil:
+In Stencil, [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0) serializes symbols and their properties into an XML file. The following Stencil properties are included in the serialization process, ensuring that the Stencil settings can be restored regardless of its current visibility:
+
+* Constraints
+* SymbolGroupDisplayMode
+* ExpandMode
+* DisplayMode
+* SymbolsDisplayMode
+* ShowSearchTextBox
+* GroupMappingName
+* Title
+* BorderBrush
+* BorderThickness
+* ShowDisplayModeToggleButton
+* SymbolSelectionMode
+ 
+Here is a simple code example to demonstrate how to save the stencil.
 
 {% tabs %}
 {% highlight C# %}
@@ -37,9 +52,11 @@ stencil.Save(str);
 {% endhighlight %}
 {% endtabs %}
 
-### Loading the Stencil
+## Loading the Stencil
 
-On deserialization, the saved stream is used to load the Stencil. We can continue using previously saved stencil by loading the saved stream. Here is a simple code example showing how to load the stencil:
+By default, when deserializing a Stencil, symbols and their properties are loaded from the saved stream. To restore the previously saved Stencil settings, pass true as the second argument of the Load method. This ensures that the Stencil settings, are deserialized and applied, regardless of its current visibility.
+
+The following example demonstrates how to load a Stencil with its saved settings:
 
 {% tabs %}
 {% highlight C# %}
@@ -50,16 +67,20 @@ if (dialog.ShowDialog() == true)
 {
     using (Stream myStream = dialog.OpenFile())
     {
-        stencil.Load(myStream);
+        stencil.Load(myStream, true);
     }
 }
 
 // Load from saved memory stream
 myStream.Position = 0;
-stencil.Load(myStream);
+stencil.Load(myStream, true);
 
 {% endhighlight %}
 {% endtabs %}
+
+N> You do not need to explicitly specify false for the second parameter of the Load method, as it is the default value.
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil%20Save%20and%20Load/Stencil%20Save%20and%20Load)
 
 ## Exporting and Importing Symbol Group in Stencil
 

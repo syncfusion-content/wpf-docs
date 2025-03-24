@@ -2,7 +2,7 @@
 layout: post
 title: Quick Access ToolBar in WPF Ribbon control | Syncfusion®
 description: Learn about Quick Access ToolBar support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
@@ -253,6 +253,14 @@ The “Paste” QATMenuItem has been selected and it is displayed as one of the 
 To open QAT Customize Window, select `MoreCommands` option from the ContextMenu of the QAT. In the QAT Customized Window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
 
 ![Adding WPF Ribbon Items to QAT Customize Window](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-items-to-customize-window.jpg)
+
+When same item is added to QAT
+
+![AlertDialogBox of QATCustomizationDialog](AddingItemstoQuickAccessToolBar_images/AlertDialog.png)
+
+when we click the reset button in QATCustomization dialog
+
+![ResetDialogBox of QATCustomizationDialog](AddingItemstoQuickAccessToolBar_images/ResetDialog.png)
 
 
 ![Adding WPF Ribbon Items to QuickAccessToolbar](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-item-to-quick-access-toolbar.jpg)
@@ -545,9 +553,9 @@ In the below example, the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 {% endtabs %}
 
-![WPF Ribbon Custom Items in MoreCommands Window](RibbonCustomItem_images/wpf-ribbon-custom-items-in-morecommands.png)
+![WPF Ribbon Custom Items in MoreCommands Window](RibbonCustomItem_images/wpf-ribbon-custom-items-in-morecommands-window.png)
 
-![Adding WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/wpf-ribbon-custom-items-with-ribbonbar.png)
+![Adding WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/WPF-Ribbon-Custom-Items-in-RibbonBar.png)
 
 
 To know more about the [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html), refer [here](https://help.syncfusion.com/wpf/ribbon/ribbonitemhost).
