@@ -566,7 +566,7 @@ SyncDockingManager.HeaderMouseOverBackground = new SolidColorBrush(Colors.DarkOr
 
 ## Customizing the Header of DockItem
 
-We can customize the header of each [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderStyleProperty). Previously, any customization applied to a child item would affect all [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) instances. To enhance flexibility, we have updated the Header property to support object types instead of just strings. This allows for individual customization of each child item, including the ability to control its visibility separately.
+We can customize the header of each [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderStyleProperty). The Header property initially accepted only string values, limiting customization options. Now, the Header property has been updated to accept an object, allowing more flexible customization. You can now bind complex objects or even use templates to control the appearance of the header.
 
 {% tabs %}
 
