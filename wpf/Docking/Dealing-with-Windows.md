@@ -530,6 +530,41 @@ DockingManager.SetCanDockonFloat(Item1, false);
 
 {% endtabs %}
 
+## Customizing a window
+
+A Docking window can be customized using the property [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderBackground), [SelectedHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SelectedHeaderBackground), [HeaderMouseHoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderMouseOverBackground) with the desired brush values respectively.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager SelectedHeaderBackground="Red" HeaderBackground="Brown" HeaderMouseOverBackground="DarkOrchid"  >
+
+<ContentControl syncfusion:DockingManager.Header="Dock"/>
+
+<ContentControl syncfusion:DockingManager.Header="Dock1"/>                
+
+<ContentControl syncfusion:DockingManager.Header="Dock2"/>            
+
+</syncfusion:DockingManager> 
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SyncDockingManager.SelectedHeaderBackground = new SolidColorBrush(Colors.Red);
+
+SyncDockingManager.HeaderBackground = new SolidColorBrush(Colors.Brown);
+
+SyncDockingManager.HeaderMouseOverBackground = new SolidColorBrush(Colors.DarkOrchid);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Docking Window Appearance Customization](Dealing-with-Windows_images/wpf-docking-window-appearance-customization.jpeg)
+
+
 
 ## Customizing FloatWindow
 
