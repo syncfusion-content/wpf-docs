@@ -572,25 +572,38 @@ We can customize the header of each [DockItem](https://help.syncfusion.com/cr/wp
 
 {% highlight XAML %}
 
- <UserControl.Resources>
-     <local:BoolVisibilityConverter x:Key="BoolVisibilityConverter" />
+  <UserControl.Resources>
+     <BooleanToVisibilityConverter x:Key="BoolVisibilityConverter" />
  </UserControl.Resources>
- 
  <StackPanel x:Name="stackPanel" Orientation="Horizontal">
      <StackPanel Orientation="Horizontal">
+         <Image Width="16" Height="16" Margin="3,0,0,0">
+             <Image.Style>
+                 <Style TargetType="Image">
+                     <Style.Triggers>
+                         <DataTrigger Binding="{Binding DocumentTitle}" Value="ToolBox">
+                             <Setter Property="Source" Value="/ToolBox.jpg"/>
+                         </DataTrigger>
+                         <DataTrigger Binding="{Binding DocumentTitle}" Value="Features">
+                             <Setter Property="Source" Value="/HeaderImg.jpg"/>
+                         </DataTrigger>
+                         <DataTrigger Binding="{Binding DocumentTitle}" Value="Docking">
+                             <Setter Property="Source" Value="/Dock.jpg"/>
+                         </DataTrigger>
+                         <DataTrigger Binding="{Binding DocumentTitle}" Value="ChatGPT">
+                             <Setter Property="Source" Value="/ChatGpt.jpg"/>
+                         </DataTrigger>
+                         <DataTrigger Binding="{Binding DocumentTitle}" Value="Output">
+                             <Setter Property="Source" Value="/Syncfusion.jpg"/>
+                         </DataTrigger>
+                     </Style.Triggers>
+                 </Style>
+             </Image.Style>
+         </Image>
          <TextBlock
-      Margin="3,0"
-      VerticalAlignment="Center"
-      Text="{Binding DocumentTitle}" />
-         <Ellipse
-      Width="6"
-      Height="6"
-      Margin="1"
-      VerticalAlignment="Center"
-      Fill="Red"
-      Stroke="Black"
-      StrokeThickness="1"
-      Visibility="{Binding DocumentIsModified, Converter={StaticResource BoolVisibilityConverter}}" />
+   Margin="3,0"
+   VerticalAlignment="Center"
+   Text="{Binding DocumentTitle}" />
      </StackPanel>
  </StackPanel>
 
