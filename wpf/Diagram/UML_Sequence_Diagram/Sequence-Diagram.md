@@ -9,15 +9,15 @@ documentation: ug
 
 # Sequence Diagram Model in WPF Diagram (SfDiagram)
 
-A sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The SfDiagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the `UMLSequenceDiagramModel` class.
+A sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The `SfDiagram` control provides comprehensive support for creating and visualizing UML sequence diagrams through the [UMLSequenceDiagramModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceDiagramModel.html) class. You need to assign the `UMLSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Model) property of the `SfDiagram` control to enable this functionality.
 
 ## Sequence Diagram Elements
 
-A sequence diagram consists of several key elements: participants, messages, activation boxes, and fragments. Let's explore each of these in detail.
+A sequence diagram contain several key elements, such as participants, messages, activation boxes, and fragments. Let's discuss how to implement these components using the `SfDiagram` control.
 
 ### Participants
 
-Participants in a sequence diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
+[UMLSequenceParticipant](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceParticipant.html) in a sequence diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
 
 #### Creating Participants
 
@@ -81,7 +81,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 ![ParticipantsExample](UML_SequenceDiagram_Images\ParticipantsExample.png)
 
-#### Participant Properties
+#### UMLSequenceParticipant Properties
 
 | Property | Type | Description |
 |---|---|---|
@@ -93,11 +93,11 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 ### Messages
 
-Messages represent communication between participants and are displayed as arrows connecting lifelines.
+[UMLSequenceMessage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceMessage.html) represent communication between participants and are displayed as arrows connecting lifelines.
 
 #### Types of Messages
 
-The `UMLSequenceMessageType` enum defines the following message types:
+The [UMLSequenceMessageType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceMessageType.html) enum defines the following message types:
 
 | Message Type | Description | Example |
 |---|---|---|
@@ -105,8 +105,8 @@ The `UMLSequenceMessageType` enum defines the following message types:
 | Asynchronous | The sender continues without waiting | ![Asynchronous Message](UML_SequenceDiagram_Images\Asynchronous.png) |
 | Reply | A response to a previous message | ![Reply Message](UML_SequenceDiagram_Images\Reply.png) |
 | Create | Creates a new participant | ![Create Message](UML_SequenceDiagram_Images\Create.png) |
-| Delete | Terminates a participant | ![Delete Message](UML_SequenceDiagram_Images\Delete.png)) |
-| Self | A message from a participant to itself | ![Self Message](UML_SequenceDiagram_Images\Self.png) | |
+| Delete | Terminates a participant | ![Delete Message](UML_SequenceDiagram_Images\Delete.png) |
+| Self | A message from a participant to itself | ![Self Message](UML_SequenceDiagram_Images\Self.png) |
 
 #### Creating Messages
 
@@ -288,7 +288,7 @@ SfDiagram Diagram = new SfDiagram();
 
 ![Message Example](UML_SequenceDiagram_Images\MessagesExample.png)
 
-#### Message Properties
+#### UMLSequenceMessage Properties
 
 | Property | Type | Description |
 |---|---|---|
@@ -300,7 +300,7 @@ SfDiagram Diagram = new SfDiagram();
 
 ### Activation Boxes
 
-Activation boxes represent periods when a participant is active and processing a message. They appear as thin rectangles on participant lifelines.
+[UMLSequenceActivationBox](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceActivationBox.html) represent periods when a participant is active and processing a message. They appear as thin rectangles on participant lifelines.
 
 #### Creating Activation Boxes
 
@@ -415,7 +415,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 ![Activations Example](UML_SequenceDiagram_Images\ActivationsExample.png)
 
-#### Activation Box Properties
+#### UMLSequenceActivationBox Properties
 
 | Property | Type | Description |
 |---|---|---|
@@ -425,15 +425,13 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 ### Fragments
 
-Fragments group a set of messages based on specific conditions in a sequence diagram. They are displayed as rectangular enclosures that visually separate conditional or looping interactions.
+[UMLSequenceFragment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceFragment.html) groups a set of messages based on specific conditions in a sequence diagram. They are displayed as rectangular enclosures that visually separate conditional or looping interactions.
 
 #### Types of Fragments
 
-The `UMLSequenceFragmentType` enum defines the following fragment types:
+The [UMLSequenceFragmentType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceFragmentType.html) enum defines the following fragment types:
 
-Here is the updated table with precise descriptions and correct usage:  
-
-| Fragment Type  | Description  | Usage  |  
+| Fragment Type  | Description  | Example  |  
 |---------------|-------------|--------|  
 | Optional  | Represents a sequence that is executed only if a specified condition is met; otherwise, it is skipped. | ![Optional Fragment](UML_SequenceDiagram_Images\OptFragment.png) |  
 | Alternative | Represents multiple conditional paths (if-else structure), where only one path executes based on the condition. | ![Alternative Fragment](UML_SequenceDiagram_Images\AltFragment.png) |  
@@ -441,7 +439,7 @@ Here is the updated table with precise descriptions and correct usage:
 
 #### Creating Fragments
 
-To create fragments in your sequence diagram:
+To create fragments in your sequence diagram, you will need to use the `UMLSequenceFragment` to define fragments and the [UMLSequenceFragmentCondition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceFragmentCondition.html) to specify each condition block within those fragments.
 
 {% tabs %}
 {% highlight xaml %}
@@ -681,7 +679,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 ![Fragment Example](UML_SequenceDiagram_Images\FragmentsExample.png)
 
-#### Fragment Properties
+#### UMLSequenceFragment Properties
 
 | Property | Type | Description |
 |---|---|---|
@@ -689,7 +687,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 | Type | UMLSequenceFragmentType | Type of the fragment (Optional, Loop, Alternative) |
 | Conditions | IEnumerable\<UMLSequenceFragmentCondition\> | Collection of conditions for the fragment |
 
-#### Fragment Condition Properties
+#### UMLSequenceFragmentCondition Properties
 
 | Property | Type | Description |
 |---|---|---|
@@ -699,11 +697,10 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 ### Customizing Participant Spacing in Sequence Diagram 
 
-The `SpaceBetweenParticipants` property in `UMLSequenceDiagramModel` controls the horizontal gap between participants. The default value is 100, but you can adjust it as needed.  
+The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceDiagramModel.html#Syncfusion_UI_Xaml_Diagram_UMLSequenceDiagramModel_SpaceBetweenParticipants) property in `UMLSequenceDiagramModel` controls the horizontal gap between participants. The default value is 100, but you can adjust it as needed.  
 
 {% tabs %}  
 {% highlight xaml %}
-{% endhighlight %}  
 <syncfusion:SfDiagram x:Name="Diagram">
     <syncfusion:SfDiagram.Model>
         <syncfusion:UMLSequenceDiagramModel SpaceBetweenParticipants="300">
@@ -725,6 +722,7 @@ The `SpaceBetweenParticipants` property in `UMLSequenceDiagramModel` controls th
         </syncfusion:UMLSequenceDiagramModel>
     </syncfusion:SfDiagram.Model>
 </syncfusion:SfDiagram>
+{% endhighlight %}  
 {% highlight c# %}  
 // Intialize Diagram
 SfDiagram Diagram = new SfDiagram();
@@ -741,3 +739,5 @@ Diagram.Model = new UMLSequenceDiagramModel()
 {% endtabs %}  
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Sequence%20Diagram)
+
+
