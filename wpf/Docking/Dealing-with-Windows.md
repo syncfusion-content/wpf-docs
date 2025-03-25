@@ -632,7 +632,9 @@ We can customize the header of each [DockItem](https://help.syncfusion.com/cr/wp
 
 {% endtabs %}
 
-![WPF DockItem Header Appearance Customization](Dealing-with-Windows_images/DockItemHeader.jpg)
+![WPF DockItem Header Appearance Customization](Dealing-with-Windows_images/DockHeader.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/DockItem%20Header)
 
 ## Customizing FloatWindow
 
