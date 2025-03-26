@@ -261,7 +261,7 @@ public partial class MainWindow : Window
 
 ## Content Template
 
-A [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html#Syncfusion_Windows_Shared_SfAvatarView_ContentTemplate) in AvatarView is a DataTemplate that defines how the avatar's content should be displayed. Instead of just showing an image or initials, you can use a custom layout inside the avatar view.
+A [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html#Syncfusion_Windows_Shared_SfAvatarView_ContentTemplate) in AvatarView is a DataTemplate that defines how the avatar's content should be displayed. By default, the SfAvatarView displays an image or initials. However, you can customize the avatar content using the ContentTemplate property to define a custom layout, such as text or UI elements.
 
 {% tabs %}
 {% highlight xaml %}
@@ -302,6 +302,7 @@ public partial class MainWindow : Window
         DataContext = new AvatarViewModel();
     }
 }
+
 public class AvatarViewModel
 {
     public ObservableCollection<AvatarItem> Avatars { get; set; }
@@ -329,6 +330,7 @@ public class AvatarViewModel
         SelectedAvatar = Avatars[0];
     }
 }
+
 public class AvatarItem
 {
     public string AvatarName { get; set; }
