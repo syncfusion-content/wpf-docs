@@ -13,7 +13,7 @@ The [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.
 
 ## Border
 
-Customize the `AvatarView` control border using the [BorderBrush](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderbrush) and [BorderThickness](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderthickness) properties.
+Customize the AvatarView control border using the [BorderBrush](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderbrush) and [BorderThickness](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderthickness) properties.
 
 **BorderBrush**
 
@@ -117,7 +117,7 @@ this.Content = grid;
 
 ## Gradient background
 
-Use the `LinearGradientBrush` or `RadialGradientBrush` for the [Background](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.background) property to specify a range of colors to apply the gradient background for the AvatarView as shown in the following code example.
+Use the LinearGradientBrush or RadialGradientBrush for the [Background](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.background) property to specify a range of colors to apply the gradient background for the AvatarView as shown in the following code example.
 
 {% tabs %}
 {% highlight xaml %}
@@ -168,7 +168,7 @@ this.Content = grid;
 
 ## Font
 
-Customize the font of initials in the `AvatarView` control by using the [FontFamily](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.fontfamily) and [Foreground](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.foreground) properties.
+Customize the font of initials in the AvatarView control by using the [FontFamily](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.fontfamily) and [Foreground](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.foreground) properties.
 
 {% tabs %}
 {% highlight xaml %}
