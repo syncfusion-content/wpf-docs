@@ -230,6 +230,8 @@ private void AddStandardStamp()
 {% endhighlight %}
 {% endtabs %}
 
+N> The sample for adding your standard stamps in toolbar is present in the [Github](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Annotations/AddStandardStampsinToolBar)
+
 ## Adding custom stamps in the toolbar
 
 You can create and add your custom stamps from the images available on the disk using the “Add Stamp” option available in the custom stamps’ category of the toolbar (as shown in the following screenshot). It allows you to browse the image from the disk and creates a custom stamp from the image and allows you to include the stamp at the required location of the page using a mouse-tap. It also adds the stamp to the custom stamp collection for future use.
