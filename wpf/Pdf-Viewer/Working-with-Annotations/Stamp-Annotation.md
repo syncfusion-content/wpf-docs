@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stamp Annotation in WPF Pdf Viewer control | Syncfusion<sup>&reg;</sup>;
+title: Stamp Annotation in WPF Pdf Viewer control | Syncfusion&reg;
 description: Learn about Stamp Annotation support in Syncfusion<sup>&reg;</sup>; Essential Studio<sup>&reg;</sup>; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
@@ -229,6 +229,8 @@ private void AddStandardStamp()
 
 {% endhighlight %}
 {% endtabs %}
+
+N> The complete sample project of adding your standard stamps in the toolbar using the Syncfusion&reg; PDF viewer is available in the [Github](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Annotations/AddStandardStampsinToolBar).
 
 ## Adding custom stamps in the toolbar
 
