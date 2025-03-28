@@ -258,3 +258,87 @@ public partial class MainWindow : Window
 {% endtabs %}
 
 ![WPF AvatarView control with Group content type](avatarview_images/wpf_avatarview_group_contenttype.png)
+
+## Content Template
+
+A [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html#Syncfusion_Windows_Shared_SfAvatarView_ContentTemplate) in AvatarView is a DataTemplate that defines how the avatar's content should be displayed. By default, the SfAvatarView displays an image or initials. However, you can customize the avatar content using the ContentTemplate property to define a custom layout, such as text or UI elements.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window.Resources>
+    <DataTemplate x:Key="AvatarContentTemplate">
+        <Grid>
+            <Ellipse StrokeThickness="2" Fill="{Binding Background}">
+                <Ellipse.Stroke>
+                    <SolidColorBrush Color="Orange"/>
+                </Ellipse.Stroke>
+            </Ellipse>
+            <TextBlock Text="{Binding AvatarName}"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="{Binding Foreground}"
+                       FontWeight="Bold"/>
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
+
+<Grid>
+    <syncfusion:SfAvatarView AvatarSize="ExtraLarge"
+                             AvatarShape="Square"
+                             Content="{Binding SelectedAvatar}"
+                             ContentTemplate="{StaticResource AvatarContentTemplate}"
+                             Background="Transparent"/>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        DataContext = new AvatarViewModel();
+    }
+}
+
+public class AvatarViewModel
+{
+    public ObservableCollection<AvatarItem> Avatars { get; set; }
+    public AvatarItem SelectedAvatar { get; set; }
+
+    public AvatarViewModel()
+    {
+        Avatars = new ObservableCollection<AvatarItem>
+        {
+            new AvatarItem
+            {
+                AvatarName = "John Doe",
+                Foreground = new SolidColorBrush(Colors.Black),
+                Background = new SolidColorBrush(Colors.LightGray)
+                
+            },
+            new AvatarItem
+            {
+                AvatarName = "Alice",
+                Foreground = new SolidColorBrush(Colors.White),
+                Background = new SolidColorBrush(Colors.Green)
+            }
+        };
+        // Set default avatar
+        SelectedAvatar = Avatars[0];
+    }
+}
+
+public class AvatarItem
+{
+    public string AvatarName { get; set; }
+    public Brush Foreground { get; set; }
+    public Brush Background { get; set; }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF AvatarView control with content template](avatarview_images/wpf_avatarview_content_template.png)
