@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Sizing in WPF TreeGrid control | SyncfusionÂ®
-description: Learn here all about Column Sizing support in SyncfusionÂ® WPF TreeGrid (SfTreeGrid) control and more.
+title: Column Sizing in WPF TreeGrid control | Syncfusion®
+description: Learn here all about Column Sizing support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -50,8 +50,8 @@ While setting the `TreeGrid.ColumnSizer` property, all column widths are calcula
 <td>
 <code>AutoFillColumn</code>
 </td>
-While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and the last column fills the remaining column width as auto fill. And possible to set any column to fill the remaining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `AutoFillColumn` for that particular column.
 <td>
+While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and the last column fills the remaining column width as auto fill. And possible to set any column to fill the remaining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `AutoFillColumn` for that particular column. 
 </td>
 </tr>
 <tr>
