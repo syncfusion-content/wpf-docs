@@ -127,7 +127,7 @@ chart.SecondaryAxis = axis;
 
 ### Scale
 
-[`Scale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html) option allows you to position the breaks based on the delta of each axis range relative to the other.
+[`Scale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html#Syncfusion_UI_Xaml_Charts_ScaleBreakPosition_Scale) option allows you to position the breaks based on the delta of each axis range relative to the other.
 
 {% tabs %}
 
@@ -314,7 +314,7 @@ chart.SecondaryAxis = axis;
 
 The following are the customizing options for scale break.
 
-Line type such as [`Wave`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BreakLineType.html) or [`StraightLine`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BreakLineType.html), background, spacing, stroke, stroke thickness of the scale break can be customized using [`LineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_LineType), [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Fill), [`BreakSpacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_BreakSpacing), [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Stroke), [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_StrokeThickness) properties respectively.
+Line type such as [`Wave`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BreakLineType.html#Syncfusion_UI_Xaml_Charts_BreakLineType_StraightLine) or [`StraightLine`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BreakLineType.html#Syncfusion_UI_Xaml_Charts_BreakLineType_StraightLine), background, spacing, stroke, stroke thickness of the scale break can be customized using [`LineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_LineType), [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Fill), [`BreakSpacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_BreakSpacing), [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Stroke), [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_StrokeThickness) properties respectively.
 
 {% tabs %}
 
