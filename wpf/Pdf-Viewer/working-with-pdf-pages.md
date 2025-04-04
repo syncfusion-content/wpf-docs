@@ -87,3 +87,74 @@ namespace PdfViewerDemo
 
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
+
+## Page Events
+The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) notifies you when clicking on PDF pages and while moving the mouse over PDF pages through events such as [PageClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageClicked) and [PageMouseMove](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageMouseMove), respectively.
+
+### Page Clicked
+The [PageClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageClicked) event provides information about the page index and the position on the page where you clicked. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+
+{% tabs %}
+{% highlight c# %}
+
+using System.Windows;
+using Syncfusion.Windows.PdfViewer;
+
+namespace WPF_PDFViewer
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            //Load the PDF file
+            pdfViewer.Load("F Sharp Succinctly.pdf");
+            //Wire the PageClicked event
+            pdfViewer.PageClicked += PdfViewer_PageClicked;
+        }
+        //Handle the PageClicked Event
+        private void PdfViewer_PageClicked(object sender, PageClickedEventArgs args)
+        {
+            int pageIndex = args.PageIndex;
+            Point position = args.Position;
+            //Insert Your code Here.
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Page Mouse Move
+The [PageMouseMove](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageMouseMove) event provides information about the page index and the position on the page where you have been moving the mouse. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+
+{% tabs %}
+{% highlight c# %}
+
+using System.Windows;
+using Syncfusion.Windows.PdfViewer;
+
+namespace WPF_PDFViewer
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            //Load the PDF file
+            pdfViewer.Load("F Sharp Succinctly.pdf");
+            //Wire the PageMouseMove event
+            pdfViewer.PageMouseMove += PdfViewer_PageMouseMove;
+        }
+        //Handle the PageMouseMove Event
+        private void PdfViewer_PageMouseMove(object sender, PageMouseMoveEventArgs args)
+        {
+            int pageIndex = args.PageIndex;
+            Point position = args.Position;
+            //Insert Your code Here.
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
