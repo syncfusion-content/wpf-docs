@@ -1,11 +1,11 @@
 ---
-title: Essential Studio for WPF 2018 volume 1 Migration document
-description: Essential Studio for WPF 2018 volume 1 Migration document
+title: Essential Studio for WPF 2018 Volume 1 Migration Info | Syncfusion
+description: This page provides information about using the WPF SfRichTextBoxAdv component in Essential Studio 2018 Volume 1.
 platform: wpf
 documentation: ug
 keywords: migration, upgrade-changes, 2018vol1-changes
 ---
-# SfRichTextBoxAdv
+# How to use SFRichTextBoxAdv in 16.1.024 compared to prior versions
 
 The SfRichTextBoxAdv control validates DocumentAdv instance internally when the value of Document property is updated. It ensures that minimal child elements are available in each container elements like,
 
