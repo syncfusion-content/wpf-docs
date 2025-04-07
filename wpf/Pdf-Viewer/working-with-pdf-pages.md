@@ -89,7 +89,7 @@ namespace PdfViewerDemo
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
 
 ## Page Events
-The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) notifies you of user interactions such as clicking on PDF pages and moving the mouse over them via events like [PageClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageClicked) and [PageMouseMove](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageMouseMove), respectively.
+The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) notifies users of interactions such as clicking on PDF pages and moving the mouse over them via events like [PageClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageClicked) and [PageMouseMove](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageMouseMove), respectively.
 
 ### Page Clicked
 The [PageClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageClicked) event occurs when you click on a PDF page. It provides the information about the page index and the position on the page where you clicked. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
@@ -111,6 +111,7 @@ namespace WPF_PDFViewer
             //Wire the PageClicked event
             pdfViewer.PageClicked += PdfViewer_PageClicked;
         }
+
         /// <summary>
         /// Handle the PageClicked Event of PdfViewerControl
         /// </summary>
@@ -148,6 +149,7 @@ namespace WPF_PDFViewer
             //Wire the PageMouseMove event
             pdfViewer.PageMouseMove += PdfViewer_PageMouseMove;
         }
+
         /// <summary>
         /// Handle the PageMouseMove Event of PdfViewerControl
         /// </summary>
