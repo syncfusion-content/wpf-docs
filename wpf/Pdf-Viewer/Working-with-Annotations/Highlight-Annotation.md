@@ -213,6 +213,12 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
     string subject = settings.Subject;
     string Text = settings.Text;
     float opacity = settings.Opacity;
+	//Change the default color of the Highlight annotation
+	if (settings is HighlightAnnotationSettings)
+    {
+       HighlightAnnotationSettings highlightSettings = settings as HighlightAnnotationSettings;
+       highlightSettings.HighlightColor= System.Windows.Media.Colors.Green;
+    }
 }
 
 {% endhighlight %}

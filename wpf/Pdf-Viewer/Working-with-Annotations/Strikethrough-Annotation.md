@@ -211,6 +211,12 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
     string subject = settings.Subject;
     string Text = settings.Text;
     float opacity = settings.Opacity;
+	//Change the default color of the strikethrough annotation
+	if (settings is StrikethroughAnnotationSettings)
+    {
+       StrikethroughAnnotationSettings strikethroughSettings = settings as StrikethroughAnnotationSettings;
+       strikethroughSettings.StrikethroughColor=System.Windows.Media.Colors.Blue;
+    }
 }
 
 {% endhighlight %}
