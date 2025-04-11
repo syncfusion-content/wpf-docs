@@ -210,6 +210,12 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
     string subject = settings.Subject;
     string Text = settings.Text;
     float opacity = settings.Opacity;
+	//Change the default color of the squiggly annotation
+	if (settings is SquigglyAnnotationSettings)
+    {
+       SquigglyAnnotationSettings squigglyAnnotationSettings = settings as SquigglyAnnotationSettings;
+       squigglyAnnotationSettings.Color = System.Windows.Media.Colors.Blue;
+    }
 }
 
 {% endhighlight %}

@@ -212,6 +212,12 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
     string subject = settings.Subject;
     string Text = settings.Text;
     float opacity = settings.Opacity;
+	//Change the default color of the underline annotation
+	if (settings is PdfViewerUnderlineSettings)
+    {
+       PdfViewerUnderlineSettings underlineSettings = settings as PdfViewerUnderlineSettings;
+       underlineSettings.UnderlineColor = System.Windows.Media.Colors.Blue;
+    }
 }
 
 {% endhighlight %}
