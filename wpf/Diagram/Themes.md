@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes with WPF Diagram (SfDiagram)
 
-Diagram themes are predefined sets of diagram item styles that can be applied easily to the diagram elements. In Diagram, nearly 20 Built-In themes are available. DiagramTheme has NodeStyles, ConnectorStyles, and Theme properties that can be used to create custom Diagram theme.
+Diagram themes are predefined sets of diagram item styles that can be applied easily to the diagram elements. In Diagram, nearly 20 Built-In themes are available. `DiagramTheme` has NodeStyles, ConnectorStyles, and Theme properties that can be used to create custom Diagram theme.
 
 To know more about DiagramTheme properties, refer to the [DiagramTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.DiagramTheme.html).
 
@@ -50,7 +50,7 @@ diagram.Theme = theme;
 
 ### Variant Styles and ShapeStyles
 
-Variant styles are set of styles that are applied to Diagram elements. Each variant style contains 46 shape styles. You can change the style of each node in the diagram using the ThemeStyleId property. Based on the values of theme and variant style, the style will be applied to the node.
+Variant styles are set of styles that are applied to Diagram elements. Each variant style contains 46 shape styles. You can change the style of each node in the diagram using the [`ThemeStyleId`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_ThemeStyleId) property. Based on the values of theme and variant style, the style will be applied to the node.
 
 To change the Variant and Style, 
 
