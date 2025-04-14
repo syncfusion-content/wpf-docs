@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in WPF Multi Column Dropdown control | Syncfusion®
-description: Learn here all about Data Binding support in Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
+title: Data Binding in WPF Multi Column Dropdown control | Syncfusion�
+description: Learn here all about Data Binding support in Syncfusion� WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -19,25 +19,25 @@ You can populate the drop down list for SfMultiColumnDropDownControl by setting 
         <RowDefinition Height="400" />
         <RowDefinition Height="*" />
     </Grid.RowDefinitions>
-<syncfusion:SfMultiColumnDropDownControl x:Name=”sfMultiColumn”
-                                         Width=”175”
-                                         Height=”30”
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
+                                         Width="175"
+                                         Height="30"
                                          Grid.Row="0"
-                                         SelectedIndex=”0”
-                                         DisplayMember=”Title”
-                                         ValueMember=”OrderID”
-                                         ItemsSource=”{Binding Orders}” />
+                                         SelectedIndex="0"
+                                         DisplayMember="Title"
+                                         ValueMember="OrderID"
+                                         ItemsSource="{Binding Orders}" />
 <StackPanel Grid.Row="1" Margin="100,0,0,0">
     <TextBlock FontSize="16" Text="SelectedItem (Display Member) " />
     <TextBlock FontSize="22"
                FontWeight="Bold"
-               Text="{Binding ElementName= ”sfMultiColumn”,
+               Text="{Binding ElementName= sfMultiColumn,
                               Mode=TwoWay,
                               Path=SelectedItem.Title}" />
     <TextBlock FontSize="16" Text="SelectedValue (Value Member) " />
     <TextBlock FontSize="22"
                FontWeight="Bold"
-               Text="{Binding ElementName= ”sfMultiColumn”,
+               Text="{Binding ElementName= sfMultiColumn,
                               Mode=TwoWay,
                               Path=SelectedValue}" />
 </StackPanel>
@@ -58,19 +58,19 @@ Binding with complex properties
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name=”sfMultiColumn”
-                                         Width=”175”
-                                         Height=”30”
-                                         SelectedIndex=”0”
-                                         AutoGenerateColumns=”false”
-                                         DisplayMember=”ProductDetails.ProductID”
-                                         ValueMember=”ProductDetails.ProductID”
-                                         ItemsSource=”{Binding Orders}”>
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
+                                         Width="175"
+                                         Height="30"
+                                         SelectedIndex="0"
+                                         AutoGenerateColumns="false"
+                                         DisplayMember="ProductDetails.ProductID"
+                                         ValueMember="ProductDetails.ProductID"
+                                         ItemsSource="{Binding Orders}">
     <syncfusion:SfMultiColumnDropDownControl.Columns>
-        <syncfusion:GridTextColumn MappingName=”OrderID” />
-        <syncfusion:GridTextColumn MappingName=”ProductDetails.ProductID” />
-        <syncfusion:GridTextColumn MappingName=”CustomerID” />
-        <syncfusion:GridTextColumn MappingName=”Country” />
+        <syncfusion:GridTextColumn MappingName="OrderID" />
+        <syncfusion:GridTextColumn MappingName="ProductDetails.ProductID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" />
+        <syncfusion:GridTextColumn MappingName="Country" />
     </syncfusion:SfMultiColumnDropDownControl.Columns>
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
@@ -82,19 +82,19 @@ Binding with indexer properties
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name=”sfMultiColumn”
-                                         Width=”175”
-                                         Height=”30”
-                                         SelectedIndex=”0”
-                                         AutoGenerateColumns=”false”
-                                         DisplayMember=”Country[0]”
-                                         ValueMember=”Country[0]”
-                                         ItemsSource=”{Binding Orders}”>
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
+                                         Width="175"
+                                         Height="30"
+                                         SelectedIndex="0"
+                                         AutoGenerateColumns="false"
+                                         DisplayMember="Country[0]"
+                                         ValueMember="Country[0]"
+                                         ItemsSource="{Binding Orders}">
     <syncfusion:SfMultiColumnDropDownControl.Columns>
-        <syncfusion:GridTextColumn MappingName=”OrderID” />
-        <syncfusion:GridTextColumn MappingName=”ProductID” />
-        <syncfusion:GridTextColumn MappingName=”CustomerID” />
-        <syncfusion:GridTextColumn MappingName=”Country[0]” />
+        <syncfusion:GridTextColumn MappingName="OrderID" />
+        <syncfusion:GridTextColumn MappingName="ProductID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" />
+        <syncfusion:GridTextColumn MappingName="Country[0]" />
     </syncfusion:SfMultiColumnDropDownControl.Columns>
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
