@@ -23,6 +23,4 @@ Chart.SuspendSeriesNotification();
 
 Chart.ResumeSeriesNotification();
 
-
-
 {% endhighlight  %}
