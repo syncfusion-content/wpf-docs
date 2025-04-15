@@ -181,7 +181,7 @@ The following image illustrates how to delete the included annotation from the P
 
 The [TextMarkupAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextMarkupAnnotationChanged) event occurs when a highlight annotation is added, removed or modified. The [TextMarkupAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html) provides the information such as the [type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_TextMarkupAnnotationChangedEventArgs_Type) of the annotation, the [action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) performed, and the annotation properties.
 
-The following code shows how to wire and handle the event properly, also color need to get change in add action you can do needful in the codesnippet.
+The following code shows how to wire and handle the event, and also how to change the color when an adding action is performed on an annotation.
 
 {% tabs %}
 {% highlight C# %}
@@ -214,7 +214,7 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
     string Text = settings.Text;
     float opacity = settings.Opacity;
 	//Change the default color of the Highlight annotation
-	if (settings is HighlightAnnotationSettings)
+	if (e.Action == AnnotationChangedAction.Add && settings is HighlightAnnotationSettings)
     {
        HighlightAnnotationSettings highlightSettings = settings as HighlightAnnotationSettings;
        highlightSettings.HighlightColor= System.Windows.Media.Colors.Green;
