@@ -180,7 +180,7 @@ The following image illustrates how to delete the included annotation from the P
 
 The [TextMarkupAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextMarkupAnnotationChanged) event occurs when a strikethrough annotation is added, removed or modified. The [TextMarkupAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html) provides the information such as the [type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_TextMarkupAnnotationChangedEventArgs_Type) of the annotation, the [action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) performed, and the annotation properties.
 
-The following code shows how to wire and handle the event.
+The following code shows how to wire and handle the event, and also how to change the color when an adding action is performed on an annotation.
 
 {% tabs %}
 {% highlight C# %}
@@ -211,6 +211,12 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
     string subject = settings.Subject;
     string Text = settings.Text;
     float opacity = settings.Opacity;
+	//Change the default color of the strikethrough annotation
+	if (e.Action == AnnotationChangedAction.Add && settings is StrikethroughAnnotationSettings)
+    {
+       StrikethroughAnnotationSettings strikethroughSettings = settings as StrikethroughAnnotationSettings;
+       strikethroughSettings.StrikethroughColor=System.Windows.Media.Colors.Blue;
+    }
 }
 
 {% endhighlight %}
