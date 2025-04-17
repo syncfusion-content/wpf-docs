@@ -143,7 +143,7 @@ This property allows you to apply a custom style and template to the internal Sf
 {%endhighlight%}
 {% endtabs %}
 
-![UpDown_Button Customization]("Appearance-and-Styling_images\UpDown_Button.png")
+![UpDown_Button Customization]("Appearance-and-Styling_images/UpDown_Button.png")
 
 ## Theme
 
