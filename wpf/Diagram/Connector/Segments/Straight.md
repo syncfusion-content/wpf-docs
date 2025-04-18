@@ -9,7 +9,7 @@ documentation: ug
 
 # Straight Segments creation and customization
 
-The path of the Connector is defined with a collection of [`Segments`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Segments) and each segment represents a line between two points. By default, connector type will be identified using the value of `DefaultConnectorType` property of Diagram. It changes the entire connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are four types of segments,
+The path of the Connector is defined with a collection of [`Segments`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Segments) and each segment represents a line between two points. By default, connector type will be identified using the value of [`DefaultConnectorType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramViewModel.html#Syncfusion_UI_Xaml_Diagram_DiagramViewModel_DefaultConnectorType) property of Diagram. It changes the entire connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are four types of segments,
 
 * Straight
 * Orthogonal
@@ -68,7 +68,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 A straight-line connector can be edited by adding a new StraightSegment into the Segments collections of a Connector.
 
-Straight segments can be split into multiple straight lines using `Point` property of  `StraightSegment` class.
+Straight segments can be split into multiple straight lines using [`Point`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StraightSegment.html#Syncfusion_UI_Xaml_Diagram_StraightSegment_Point) property of  [`StraightSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StraightSegment.html) class.
 
 {% tabs %}
 {% highlight xaml %}
