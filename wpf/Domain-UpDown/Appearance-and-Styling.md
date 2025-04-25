@@ -46,9 +46,10 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 {%endhighlight%}
 {% endtabs %}
 
-## UpDownStyle
+## Customize Up,Down button Style
 
-We can customize the appearance of the up/down buttons in the SfDomainUpDown control by using the UpDownStyle property. 
+We can customize the appearance of the up/down buttons in the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control by using the [UpDownStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_UpDownStyle) property. 
+
 This property allows you to apply a custom style and template to the internal SfUpDown control, which hosts the up/down buttons.
 
 {% tabs %}
