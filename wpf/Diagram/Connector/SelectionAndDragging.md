@@ -114,7 +114,7 @@ node.Constraints.Remove(NodeConstraints.RoutingObstacle);
 
 ### How to enable or disable routing for connectors
 
-By default, each connector's routing process is inherited based on the value of the `Constraints` property of the diagram. To control the individual connector's routing regardless of the diagram, you should remove the `ConnectorConstraints.InheritRouting` enum value from the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Constraints) property of the connector and add `ConnectorConstraints.Routing` enum value to the Constraints property or remove `ConnectorConstraints.Routing` enum value from the Constraints property to enable or disable the routing respectively.
+By default, each connector's routing process is inherited based on the value of the `Constraints` property of the diagram. To control the individual connector's routing regardless of the diagram, you should remove the `ConnectorConstraints.InheritRouting` enum value from the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Constraints) property of the connector and add `ConnectorConstraints.Routing` enum value to the `Constraints` property or remove `ConnectorConstraints.Routing` enum value from the `Constraints` property to enable or disable the routing respectively.
 
 {% tabs %}
 {% highlight C# %}
