@@ -322,7 +322,7 @@ The following code example illustrates how to hide rotator.
 
 ## Snap Constraints
 
-[SnapConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) control the visibility of gridlines and enable or disable snapping. Snap constraints allow to set the following behaviors.
+[SnapConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) control the visibility of gridlines and enable or disable snapping. `Snap constraints` allow to set the following behaviors.
 
 |Constraints	|Description|
 |--|--|
@@ -376,7 +376,7 @@ diagram.Connectors = connectors;
 
 ## Bitwise Operations
 
-Bitwise Operations are used to manipulate the flagged enumerations [enum]. In the section, Bitwise Operations are illustrated by using Node Constraints. The same is applicable while working with Node Constraints, Connector Constraints, or Port Constraints.
+Bitwise Operations are used to manipulate the flagged enumerations [enum]. In the section, Bitwise Operations are illustrated by using `Node Constraints`. The same is applicable while working with `Node Constraints`, `Connector Constraints`, or `Port Constraints`.
 
 ### Add Operation
 
