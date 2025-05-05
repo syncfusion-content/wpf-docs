@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing and AutoComplete in WPF Multi Column Dropdown | Syncfusion®
-description: Learn here all about Editing and AutoComplete support in Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
+title: Editing and AutoComplete in WPF Multi Column Dropdown | Syncfusion�
+description: Learn here all about Editing and AutoComplete support in Syncfusion� WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -115,14 +115,14 @@ You can access the text displayed in the Textbox by using [SfMultiColumnDropDown
         <ColumnDefinition Width="400" />
             <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
-<syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn”
-                                         Width=”175”
-                                         Height=”30”
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfmultiColumn"
+                                         Width="175"
+                                         Height="30"
                                          Grid.Column="0"
-                                         SelectedIndex=”0”
-                                         DisplayMember=”Cast”
-                                         ValueMember=”Title”
-                                         ItemsSource=”{Binding Orders}” />
+                                         SelectedIndex="0"
+                                         DisplayMember="Cast"
+                                         ValueMember="Title"
+                                         ItemsSource="{Binding Orders}" />
         <StackPanel Grid.Column="1" Margin="0,100,0,0">
     <TextBlock FontSize="16" Text="MultiColumnDropDownControl text " />
     <TextBlock FontSize="22"

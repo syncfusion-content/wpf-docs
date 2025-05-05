@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Multi Column Dropdown control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control, its elements and more details.
+title: Getting Started with WPF Multi Column Dropdown control | Syncfusion�
+description: Learn here about getting started with Syncfusion� WPF Multi Column Dropdown (SfMultiColumnDropDown) control, its elements and more details.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -48,7 +48,7 @@ Syncfusion.Data.WPF assembly contains fundamental and base classes for Collectio
 Syncfusion.SfGrid.WPF
 </td>
 <td>
-Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of SfMultiColumnDropDownControl, DropDownGrid. SfMultiColumnDropDownControl control present in Syncfusion.UI.Xaml.Grid namespace. This namespace also added in <b>http://schemas.syncfusion.com/wpf</b> Syncfusion<sup>®</sup> WPF schema.
+Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of SfMultiColumnDropDownControl, DropDownGrid. SfMultiColumnDropDownControl control present in Syncfusion.UI.Xaml.Grid namespace. This namespace also added in <b>http://schemas.syncfusion.com/wpf</b> Syncfusion<sup>�</sup> WPF schema.
 </td>
 </tr>
 </table>
@@ -85,20 +85,20 @@ In order to add control manually in XAML, do the below steps,
 1. Add the below required assembly references to the project,
     * Syncfusion.Data.WPF
     * Syncfusion.SfGrid.WPF
-2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfMultiColumnDropDownControl namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
+2. Import Syncfusion<sup>�</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfMultiColumnDropDownControl namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 3. Declare `SfMultiColumnDropDownControl` in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window
-        xmlns=”http://schemas.microsoft.com/winfx/2006/xaml/presentation”
-        xmlns:x=”http://schemas.microsoft.com/winfx/2006/xaml”
-        xmlns:syncfusion=”http://schemas.syncfusion.com/wpf” 
-        x:Class=”WpfApplication1.MainWindow”
-        Title=”MainWindow” Height=”350” Width=”525”>
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <syncfusion:SfMultiColumnDropDownControl  x:Name=”sfmultiColumn”/>
+        <syncfusion:SfMultiColumnDropDownControl  x:Name="sfmultiColumn"/>
     </Grid>
 </Window>
 {% endhighlight %}
@@ -224,16 +224,16 @@ public class ViewModel
 
     private void GenerateOrders()
     {
-        _orders.Add(new OrderInfo(1001, “Maria Anders”, “Germany”, “ALFKI”, “Berlin”));
-        _orders.Add(new OrderInfo(1002, “Ana Trujilo”, “Mexico”, “ANATR”, “Mexico D.F.”));
-        _orders.Add(new OrderInfo(1003, “Antonio Moreno”, “Mexico”, “ANTON”, “Mexico D.F.”));
-        _orders.Add(new OrderInfo(1004, “Thomas Hardy”, “UK”, “AROUT”, “London”));
-        _orders.Add(new OrderInfo(1005, “Christina Berglund”, “Sweden”, “BERGS”, “Lula”));
-        _orders.Add(new OrderInfo(1006, “Hanna Moos”, “Germany”, “BLAUS”, “Mannheim”));
-        _orders.Add(new OrderInfo(1007, “Frederique Citeaux”, “France”, “BLONP”, “Strasbourg”));
-        _orders.Add(new OrderInfo(1008, “Martin Sommer”, “Spain”, “BOLID”, “Madrid”));
-        _orders.Add(new OrderInfo(1009, “Laurence Lebihan”, “France”, “BONAP”, “Marseille”));
-        _orders.Add(new OrderInfo(1010, “Elizabeth Lincoln”, “Canada”, “BOTTM”, “Tsawassen”));
+        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
+        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+        _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
     }
 }
 {% endhighlight %}
@@ -249,22 +249,22 @@ Bind the collection created in previous step to `ItemsSource` property by settin
 {% tabs %}
 {% highlight xaml %}
 <Window
-        xmlns=”http://schemas.microsoft.com/winfx/2006/xaml/presentation”
-        xmlns:x=”http://schemas.microsoft.com/winfx/2006/xaml”
-        xmlns:syncfusion=”http://schemas.syncfusion.com/wpf” 
-        x:Class=”WpfApplication1.MainWindow”
-        xmlns:local=”clr-namespace:WpfApplication1”
-        Title=”MainWindow” Height=”350” Width=”525”>
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="WpfApplication1.MainWindow"
+        xmlns:local="clr-namespace:WpfApplication1"
+        Title="MainWindow" Height="350" Width="525">
     <Window.DataContext>
         <local:ViewModel/>
     </Window.DataContext>
-    <Grid x:Name=”Root_Grid”>
-        <syncfusion:SfMultiColumnDropDownControl x:Name=”sfMultiColumn” 
-                                                 ItemsSource=”{Binding Orders}” 
-                                                 DisplayMember=”OrderID” 
-                                                 Width=”175”
-                                                 Height=”30”
-                                                 SelectedIndex=”2”/>
+    <Grid x:Name="Root_Grid">
+        <syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn" 
+                                                 ItemsSource="{Binding Orders}" 
+                                                 DisplayMember="OrderID" 
+                                                 Width="175"
+                                                 Height="30"
+                                                 SelectedIndex="2"/>
     </Grid>
 </Window>
 {% endhighlight %}
@@ -287,26 +287,26 @@ By default, the SfMultiColumnDropDownControl generates the columns automatically
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name=”sfMultiColumn”
-                                         Width=”175”
-                                         Height=”30”
-                                         SelectedIndex=”0”
-                                         AutoGenerateColumns=”false”
-                                         DisplayMember=”OrderID”
-                                         ItemsSource=”{Binding Orders}”>
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
+                                         Width="175"
+                                         Height="30"
+                                         SelectedIndex="0"
+                                         AutoGenerateColumns="false"
+                                         DisplayMember="OrderID"
+                                         ItemsSource="{Binding Orders}">
     <syncfusion:SfMultiColumnDropDownControl.Columns>
-        <syncfusion:GridTextColumn MappingName=”OrderID” />
-        <syncfusion:GridTextColumn MappingName=”CustomerID” />
-        <syncfusion:GridTextColumn MappingName=”Country” />
+        <syncfusion:GridTextColumn MappingName="OrderID" />
+        <syncfusion:GridTextColumn MappingName="CustomerID" />
+        <syncfusion:GridTextColumn MappingName="Country" />
     </syncfusion:SfMultiColumnDropDownControl.Columns>
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 {% highlight c# %}
 SfMultiColumnDropDownControl sfMultiColumn = new SfMultiColumnDropDownControl();
 sfMultiColumn.AutoGenerateColumns = false;
-sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “OrderID” });
-sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “CustomerID” });
-sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
+sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
+sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = "CustomerID" });
+sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = "Country" });
 {% endhighlight %}
 {% endtabs %}
 
