@@ -159,7 +159,7 @@ public class ViewModel : INotifyPropertyChanged
 <Grid>
     <syncfusion:ComboBoxAdv DisplayMemberPath="Name" SelectedItems="{Binding SelectedItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
             AllowMultiSelect="True" Name="comboboxadv"  HorizontalAlignment="Center" Height="30"
-            VerticalAlignment="Center" Width="150" ItemsSource="{Binding Products}"/>
+            VerticalAlignment="Center" Width="150" ItemsSource="{Binding Countries}"/>
 </Grid>
 
 {% endhighlight %}
@@ -206,6 +206,47 @@ You can override the selected items programmatically by overriding the [`OnItemC
 {% endhighlight %}
 
 {% highlight C# %}
+
+public class ComboBoxViewModel : NotificationObject
+    {
+        private ObservableCollection<object> continentCollection;
+        public ComboBoxViewModel()
+        {
+            continentCollection = new ObservableCollection<object>()
+            {
+                new Country(){ Name = "Asia" },
+                new Country(){ Name = "India" },
+                new Country(){ Name = "China" },
+                new Country(){ Name = "Africa" },
+                new Country(){ Name = "Europe" },
+            };
+        }
+
+        public ObservableCollection<object> Continent
+        {
+            get { return continentCollection; }
+            set
+            {
+                continentCollection = value;
+                RaisePropertyChanged("Continent");
+            }
+        }
+
+        public class Country : NotificationObject
+        {
+            private string name;
+
+            public string Name
+            {
+                get { return name; }
+                set
+                {
+                    name = value;
+                    RaisePropertyChanged("Name");
+                }
+            }
+        }
+    }    
 
 public class ComboBoxExt : ComboBoxAdv
 {
