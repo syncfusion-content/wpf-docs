@@ -89,7 +89,7 @@ chart.Series.Add(errorBar);
 
 ## Mode
 
-This [`Mode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_Mode) property is used to define whether to identify horizontal error or vertical error. By default, the Mode value is [`Both`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarMode.html), which will display both horizontal and vertical error values.
+This [`Mode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_Mode) property is used to define whether to identify horizontal error or vertical error. By default, the Mode value is [`Both`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarMode.html#Syncfusion_UI_Xaml_Charts_ErrorBarMode_Both), which will display both horizontal and vertical error values.
 
 **Horizontal**
 
@@ -191,9 +191,9 @@ chart.Series.Add(errorBar);
 
 [`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirection) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows you to view the horizontal error value in the following type of directions:
 
- * [`Both`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of positive and negative error values.
- * [`Minus`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of negative error value.
- * [`Plus`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of positive error value.
+ * [`Both`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html#Syncfusion_UI_Xaml_Charts_ErrorBarDirection_Both) – It indicates the actual data point value along with specific amount of positive and negative error values.
+ * [`Minus`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html#Syncfusion_UI_Xaml_Charts_ErrorBarDirection_Minus) – It indicates the actual data point value along with specific amount of negative error value.
+ * [`Plus`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html#Syncfusion_UI_Xaml_Charts_ErrorBarDirection_Plus) – It indicates the actual data point value along with specific amount of positive error value.
 
 **Both**
 
@@ -376,10 +376,10 @@ chart.Series.Add(errorBar);
 
 SfChart supports the following type of error bar series.
 
-* [`Fixed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html) 
-* [`Percentage`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html) 
-* [`StandardDeviation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html)
-* [`StandardError`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html)
+* [`Fixed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html#Syncfusion_UI_Xaml_Charts_ErrorBarType_Fixed) 
+* [`Percentage`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html#Syncfusion_UI_Xaml_Charts_ErrorBarType_Percentage) 
+* [`StandardDeviation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html#Syncfusion_UI_Xaml_Charts_ErrorBarType_StandardDeviation)
+* [`StandardError`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html#Syncfusion_UI_Xaml_Charts_ErrorBarType_StandardErrors)
 
 N> The default error bar series is Fixed.
 
