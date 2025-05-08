@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Badge in WPF AvatarView control | Syncfusion
-description: Learn how to set different states for badges in the WPF AvatarView control (SfAvatarView) and customize its appearance based on user interaction.
+title: Badge in WPF AvatarView Control | Syncfusion
+description: Learn how to set different states for badges in Syncfusion Essential WPF AvatarView control (SfAvatarView), its elements, and more.
 platform: wpf
 control: AvatarView
 documentation: ug

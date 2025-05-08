@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual Styles in WPF AvatarView control | Syncfusion
-description: Explore the various visual styles available in the Syncfusion WPF AvatarView control and learn how to customize its appearance for different use cases.
+title: Visual Styles in WPF AvatarView Control | Syncfusion
+description: Learn here about visual styles in Syncfusion Essential WPF AvatarView control, its elements, and more.
 platform: wpf
 control: AvatarView
 documentation: ug
