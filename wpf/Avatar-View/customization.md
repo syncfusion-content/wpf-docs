@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Customization in WPF AvatarView control | Syncfusion
-description: Learn about the various customization features in the WPF AvatarView control, including border, background, gradient, font, and more.
+title: Customization in WPF AvatarView Control | Syncfusion
+description: Learn about the various customization in Syncfusion Essential WPF AvatarView control, its elements, and more.
+platform: wpf, and more.
 platform: wpf
 control: AvatarView
 documentation: ug
