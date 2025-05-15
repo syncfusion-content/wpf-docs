@@ -9,7 +9,7 @@ documentation: ug
 
 #  Determining the Clicked Position in the WPF PDF Viewer
 
-Use the [PageClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageClicked) event of the Syncfusion WPF PDF Viewer control to capture the exact location where the user clicks on a PDF page. The event provides pixel coordinates, which can be converted to PDF points (1 point = 1/72 inch) and adjusted for the viewer’s zoom level to yield accurate positions on the document.
+Use the [PageClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageClicked) event of the Syncfusion WPF PDF Viewer control to capture the exact location where the user clicks on a PDF page. The event provides pixel coordinates, which can be converted to PDF points and adjusted for the viewer’s zoom level to yield accurate positions on the document.
 
 Refer to the code snippet below for implementation details
 
