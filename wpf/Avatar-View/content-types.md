@@ -1,7 +1,7 @@
 ---
 layout: post 
-title: Content Types in WPF AvatarView control | Syncfusion
-description: Learn about the available content types and how to set values for them in the WPF AvatarView control.
+title: Content Types in WPF AvatarView Control | Syncfusion
+description: Learn about the available content types in Syncfusion Essential WPF AvatarView control, its elements, and more.
 platform: wpf
 control: AvatarView
 documentation: ug
