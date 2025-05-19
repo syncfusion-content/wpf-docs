@@ -70,6 +70,15 @@ From 27.2 (2024 Vol3 SP) <br/></td>
 <td>Yes<br/></td>
 </tr>
 
+<tr>
+<td>
+From 29.1 (2025 Vol1) <br/></td>
+<td>No<br/></td>
+<td>No<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+</tr>
+
 </table>
 
 ## Adding Reference
