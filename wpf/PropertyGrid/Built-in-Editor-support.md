@@ -12,44 +12,65 @@ documentation: ug
  The [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties and it allows only the valid inputs based on property type.
 
 <table>
-<th> S.No </th>
-<th> Property Type </th>
-<th> Default Editor </th>
-<tr>
-<td>1</td>
-<td>int</td>
-<td>IntegerTextBox</td>
-</tr>
-<tr>
-<td>2</td>
-<td>double</td>
-<td>DoubleTextBox</td>
-</tr>
-<tr>
-<td>3</td>
-<td>string</td>
-<td>TextBox</td>
-</tr>
-<tr>
-<td>4</td>
-<td>enum</td>
-<td>ComboBox</td>
-</tr>
-<tr>
-<td>5</td>
-<td>DateTime</td>
-<td>DateTimeEdit</td>
-</tr>
-<tr>
-<td>6</td>
-<td>bool</td>
-<td>CheckBox</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Brush</td>
-<td>ColorPicker</td>
-</tr>
+  <thead>
+    <tr>
+      <th>Property Type</th>
+      <th>Default Editor</th>
+      <th>Control used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>int</td>
+      <td>IntegerTextBoxEditor</td>
+      <td>IntegerTextBox</td>
+    </tr>
+    <tr>
+      <td>double</td>
+      <td>DoubleTextBoxEditor</td>
+      <td>DoubleTextBox</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td>TextBoxEditor</td>
+      <td>TextBox</td>
+    </tr>
+    <tr>
+      <td>enum</td>
+      <td>EnumComboEditor</td>
+      <td>ComboBox</td>
+    </tr>
+    <tr>
+      <td>DateTime</td>
+      <td>DateTimeEditor</td>
+      <td>DateTimeEdit</td>
+    </tr>
+    <tr>
+      <td>bool</td>
+      <td>CheckBoxEditor</td>
+      <td>CheckBox</td>
+    </tr>
+    <tr>
+      <td>Brush</td>
+      <td>BrushSelectorEditor</td>
+      <td>ColorPicker</td>
+    </tr>
+    <tr>
+      <td>Input Mask</td>
+      <td>MaskEditor</td>
+      <td>SfMaskedEdit</td>
+    </tr>
+    <tr>
+      <td>TimeSpan</td>
+      <td>TimeSpanEditor</td>
+      <td>TimeSpanEdit</td>
+    </tr>
+    <tr>
+      <td>FontFamily</td>
+      <td>FontComboEditor</td>
+      <td>ComboBox</td>
+    </tr>
+  </tbody>
 </table>
 
 {% tabs %}
