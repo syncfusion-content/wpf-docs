@@ -9,21 +9,21 @@ documentation: ug
 
 # Sorting in WPF Charts (SfChart)
 
-Chart provides the support for sorting the data point either in ascending or descending based on X or Y axis.
+Chart provides support for sorting data points either in ascending or descending order based on X or Y axis.
 
 ### Enable Sorting
-This [`IsSortData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_IsSortData) property used to enable the sorting in series.
+The [`IsSortData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_IsSortData) property is used to enable sorting in series.
 
 ### Changing sorting direction
 
-The [`SortDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SortDirection) property defines the direction of sorting either in [`Ascending`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Direction.html) or [`Descending`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Direction.html) based on x or y value.
+The [`SortDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SortDirection) property defines the direction of sorting either in [`Ascending`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Direction.html) or [`Descending`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Direction.html) order based on X or Y value.
 
 ### Changing sorting axis
 
-This [`SortBy`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SortBy) property decides whether sorting should be done based on [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SortingAxis.html) or [`Y`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SortingAxis.html) values.
+The [`SortBy`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SortBy) property decides whether sorting should be done based on [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SortingAxis.html) or [`Y`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SortingAxis.html) values.
 
 
-The following example illustrates a simple chart (without apply sorting):
+The following example illustrates a simple chart (without applying sorting):
 
 ![WPF Chart Axis without Sorting](sorting_chart_images/wpf-chart-axis-without-sorting.png)
 
@@ -36,38 +36,24 @@ The following example illustrates a simple chart (without apply sorting):
 
 {% highlight xml %}
 <syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
-	
-	                     SortDirection="Ascending"
-
+                         SortDirection="Ascending"
                          ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
                          XBindingPath="Demand"  YBindingPath="Year2011"/>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.X,
-
     SortDirection = Direction.Ascending,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -80,40 +66,25 @@ chart.Series.Add(columnSeries);
 {% tabs %}
 
 {% highlight xml %}
-
 <syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
-	 
-	                     SortDirection="Descending"
-
+                         SortDirection="Descending"
                          ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
                          XBindingPath="Demand"  YBindingPath="Year2011"/>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.X,
-
     SortDirection = Direction.Descending,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -126,41 +97,25 @@ chart.Series.Add(columnSeries);
 {% tabs %}
 
 {% highlight xml %}
-
 <syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
-	                   
-					     SortDirection="Ascending"
-
+                         SortDirection="Ascending"
                          ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
                          XBindingPath="Demand"  YBindingPath="Year2011"/>
-
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.Y,
-
     SortDirection = Direction.Ascending,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -173,41 +128,25 @@ chart.Series.Add(columnSeries);
 {% tabs %}
 
 {% highlight xml %}
-
 <syncfusion:ColumnSeries IsSortData="True" SortBy="Y"  
-	
-	                     SortDirection="Descending"
-
+                         SortDirection="Descending"
                          ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
                          XBindingPath="Demand"  YBindingPath="Year2011"/>
-
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
-    SortBy = SortingAxis.X,
-
+    SortBy = SortingAxis.Y,
     SortDirection = Direction.Descending,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -219,11 +158,11 @@ N> This feature is primarily applicable for indexed (non-linear) axis like Categ
 
 ## Sorting for linear axis
 
-As mentioned above, the sorting for the linear axis is different from CategoryAxis. Here the rendering order of the data point (x or y) will be sorted.
+As mentioned above, the sorting for the linear axis is different from CategoryAxis. Here the rendering order of the data points (x or y) will be sorted.
 
-This will be useful especially when we have one or more values added in same data point. Also this rendering order will be captured by applying Palette to each point.
+This is especially useful when you have one or more values added in the same data point. Also, this rendering order will be captured by applying a Palette to each point.
 
-The following example illustrates a simple chart having AutumnBrights palette (without apply sorting):
+The following example illustrates a simple chart having AutumnBrights palette (without applying sorting):
 
 ![WPF Chart Linear Axis with Sorting](sorting_chart_images/wpf-chart-linear-axis-with-sorting.png)
 
@@ -232,42 +171,26 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 {% tabs %}
 
 {% highlight xml %}
-
 <syncfusion:ColumnSeries IsSortData="True" SortBy="X" Palette="AutumnBrights"
-
                          SortDirection="Ascending"
-
                          ItemsSource="{Binding Demands}" 
-
                          XBindingPath="Position"  YBindingPath="Year2011"/>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.X,
-
     SortDirection = Direction.Ascending,
-
     Palette = ChartColorPalette.AutumnBrights,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Position",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -279,44 +202,27 @@ chart.Series.Add(columnSeries);
 {% tabs %}
 
 {% highlight xml %}
-
 <syncfusion:ColumnSeries IsSortData="True" SortBy="X" 
-	
-	                     Palette="AutumnBrights"
-
+                         Palette="AutumnBrights"
                          SortDirection="Descending"
-
                          ItemsSource="{Binding Demands}" 
-
                          XBindingPath="Position"  YBindingPath="Year2011"/>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.X,
-
     SortDirection = Direction.Descending,
-
     Palette = ChartColorPalette.AutumnBrights,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Position",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -329,42 +235,26 @@ chart.Series.Add(columnSeries);
 
 {% highlight xml %}
 <syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
-	
-	                     Palette="AutumnBrights"
-
+                         Palette="AutumnBrights"
                          SortDirection="Ascending"
-
                          ItemsSource="{Binding Demands}" 
-
                          XBindingPath="Position"  YBindingPath="Year2011"/>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.Y,
-
     SortDirection = Direction.Ascending,
-
     Palette = ChartColorPalette.AutumnBrights,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Position",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -377,42 +267,26 @@ chart.Series.Add(columnSeries);
 
 {% highlight xml %}
 <syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
-	
-	                     Palette="AutumnBrights"
-
+                         Palette="AutumnBrights"
                          SortDirection="Descending"
-
                          ItemsSource="{Binding Demands}" 
-
                          XBindingPath="Position"  YBindingPath="Year2011"/>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.Y,
-
     SortDirection = Direction.Descending,
-
     Palette = ChartColorPalette.AutumnBrights,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Position",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -420,4 +294,4 @@ chart.Series.Add(columnSeries);
 ![WPF Chart Sorting y-axis in Descending Order](sorting_chart_images/wpf-chart-sorting-linear-y-axis-in-descending-order.png)
 
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.

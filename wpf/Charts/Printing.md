@@ -9,63 +9,43 @@ documentation: ug
 
 # Printing in WPF Charts (SfChart)
 
-SfChart supports printing that enables you to print the chart. The following method is used to print the chart.
+SfChart supports printing functionality that enables you to print the chart. The following method is used to print the chart.
 
 ## Print()
 
-This method will invoke a printing dialog window with set of printing options.
+This method invokes a printing dialog window with a set of printing options.
 
-The following code example demonstrates the printing of chart in button click event:
+The following code example demonstrates how to print a chart in a button click event:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfChart x:Name="ExportDemoChart" >
+<chart:SfChart x:Name="ExportDemoChart">
 
-<chart:SfChart.Watermark>
+    <chart:SfChart.Watermark>
+        <chart:Watermark Canvas.ZIndex="-1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <chart:Watermark.Content>
+                <TextBlock Text="Climate Report" FontSize="60" Foreground="Gray" Opacity="0.5"></TextBlock>
+            </chart:Watermark.Content>
+        </chart:Watermark>
+    </chart:SfChart.Watermark>
 
-<chart:Watermark Canvas.ZIndex="-1"  HorizontalAlignment="Center" VerticalAlignment="Center">
+    <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis PlotOffset="20" Header="Month" />
+    </chart:SfChart.PrimaryAxis>
 
-<chart:Watermark.Content>
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis Header="Degree (In Celsius)" RangePadding="Round"/>
+    </chart:SfChart.SecondaryAxis>
 
-<TextBlock Text="Climate Report" FontSize="60" Foreground="Gray" Opacity="0.5"></TextBlock>
-
-</chart:Watermark.Content>
-
-</chart:Watermark>
-
-</chart:SfChart.Watermark>
-
-<chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  PlotOffset="20" Header="Month" />
-
-</chart:SfChart.PrimaryAxis>
-
-<chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis Header="Degree ( In Celsius )" 
-
-RangePadding="Round"/>
-
-</chart:SfChart.SecondaryAxis>
-
-<!-- Add Series to the Chart-->
-
-<chart:SplineSeries Label="Sports" ItemsSource="{Binding ClimateData}"         
-
-XBindingPath="Month" YBindingPath="Temperature">
-
-<chart:SplineSeries.AdornmentsInfo>
-
-<chart:ChartAdornmentInfo  ShowMarker="True" Symbol="Ellipse" 
-
-ShowLabel="True"/>
-
-</chart:SplineSeries.AdornmentsInfo>
-
-</chart:SplineSeries>
+    <!-- Add Series to the Chart-->
+    <chart:SplineSeries Label="Sports" ItemsSource="{Binding ClimateData}"         
+                        XBindingPath="Month" YBindingPath="Temperature">
+        <chart:SplineSeries.AdornmentsInfo>
+            <chart:ChartAdornmentInfo ShowMarker="True" Symbol="Ellipse" ShowLabel="True"/>
+        </chart:SplineSeries.AdornmentsInfo>
+    </chart:SplineSeries>
 
 </chart:SfChart>
 
@@ -74,20 +54,17 @@ ShowLabel="True"/>
 {% highlight C# %}
 
 private void Button_Click_1(object sender, RoutedEventArgs e)
-
 {
-
     ExportDemoChart.Print();
-
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-The following image shows the printing dialog window upon invoking print method.
+The following image shows the printing dialog window upon invoking the Print method.
 
 ![SfChart Printing Dialog Window](Printing_images/Printing_img1.png)
 
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.

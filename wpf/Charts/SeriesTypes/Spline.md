@@ -16,53 +16,36 @@ documentation: ug
 {% tabs %}
 
 {% highlight xaml %}
+<chart:SplineSeries XBindingPath="Year"     
+                    ItemsSource="{Binding List}" 
+                    YBindingPath="India"               
+                    Interior="#4A4A4A"/>
 
-<chart:SplineSeries  XBindingPath="Year"     
-
-ItemsSource="{Binding List}" YBindingPath="India"               
-
-Interior="#4A4A4A"/>
-
-<chart:SplineSeries  XBindingPath="Year"     
-
-ItemsSource="{Binding List}" YBindingPath="America"               
-
-Interior="#4A4A4A"/>
-
+<chart:SplineSeries XBindingPath="Year"     
+                    ItemsSource="{Binding List}" 
+                    YBindingPath="America"               
+                    Interior="#4A4A4A"/>
 {% endhighlight %}
 
 {% highlight c# %}
-
 SplineSeries series1 = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "India",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 SplineSeries series2 = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "America",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series1);
-
 chart.Series.Add(series2);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -76,13 +59,13 @@ chart.Series.Add(series2);
 {% tabs %}
 
 {% highlight xaml %}
-
-<chart:SplineSeries ItemsSource="{Binding List}" XBindingPath="Year" YBindingPath="India" StrokeDashArray="5,3" />
-
+<chart:SplineSeries ItemsSource="{Binding List}" 
+                    XBindingPath="Year" 
+                    YBindingPath="India" 
+                    StrokeDashArray="5,3" />
 {% endhighlight %}
 
 {% highlight c# %}
-
 SplineSeries series = new SplineSeries()
 {
     ItemsSource = new ViewModel().List,
@@ -95,7 +78,6 @@ doubleCollection.Add(5);
 doubleCollection.Add(3);
 series.StrokeDashArray = doubleCollection;
 chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -109,32 +91,22 @@ N> You can explore our [WPF Spline Chart](https://www.syncfusion.com/wpf-control
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SplineAreaSeries Interior="#7F7F7F"              
-
-ItemsSource="{Binding Products}" XBindingPath="ProdName"     
-
-YBindingPath="Price" />
-
+                        ItemsSource="{Binding Products}" 
+                        XBindingPath="ProdName"     
+                        YBindingPath="Price" />
 {% endhighlight %}
 
 {% highlight c# %}
-
 SplineAreaSeries series = new SplineAreaSeries()
 {
-
     ItemsSource = new ViewModel().Products,
-
     XBindingPath = "ProdName",
-
     YBindingPath = "Price",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -161,19 +133,13 @@ The following code illustrates how to set the [`SplineType`](https://help.syncfu
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SplineSeries SplineType="Cardinal">
-
 </chart:SplineSeries>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 SplineSeries series = new SplineSeries();
-
 series.SplineType = SplineType.Cardinal;
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -189,19 +155,13 @@ The following code illustrates how to set the [`SplineType`](https://help.syncfu
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SplineSeries SplineType="Monotonic">
-
 </chart:SplineSeries>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 SplineSeries series = new SplineSeries();
-
 series.SplineType = SplineType.Monotonic;
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -217,19 +177,13 @@ The following code illustrates how to set the [`SplineType`](https://help.syncfu
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SplineSeries SplineType="Clamped">
-
 </chart:SplineSeries>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 SplineSeries series = new SplineSeries();
-
 series.SplineType = SplineType.Clamped;
-
 {% endhighlight %}
 
 {% endtabs %}

@@ -1,28 +1,33 @@
 ---
 layout: post
-title: Add range of points dynamically| SfChart | Wpf | Syncfusion
-description: Add range of points dynamically in Syncfusion Essential Studio® WPF Chart (SfChart) control, its elements and more.
+title: Add Range of Points Dynamically | SfChart | WPF | Syncfusion
+description: Learn how to add a range of points dynamically in Syncfusion WPF Chart (SfChart) control, its elements and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Add range of points dynamically
+# Add Range of Points Dynamically
 
-Whenever you add a data point to ItemsSource dynamically, corresponding data will be updated inside chart series synchronously. This operation will be happening for each and every data point that we add subsequently. You can avoid this by calling SuspendSeriesNotification method of Chart before adding range of data points and then call ResumeSeriesNotification to update all the data points that have been added between these two method calls.
+When you add data points to the ItemsSource dynamically, the chart series updates synchronously for each individual point added. This can impact performance when adding multiple points in succession. To optimize this process, you can use the `SuspendSeriesNotification` and `ResumeSeriesNotification` methods of the Chart control.
+
+This approach allows you to add multiple data points at once and update the chart only after all points have been added:
 
 {% highlight c# %}
 
+// Suspend notifications before adding multiple points
 Chart.SuspendSeriesNotification();
 
-// ...
+// Add multiple data points here
+// For example:
+// for (int i = 0; i < 1000; i++)
+// {
+//     dataCollection.Add(new DataPoint(i, Math.Sin(i)));
+// }
 
-// Add multiple data points.
-
-// ...
-
+// Resume notifications to update the chart with all added points
 Chart.ResumeSeriesNotification();
 
+{% endhighlight %}
 
-
-{% endhighlight  %}
+By using this pattern, you can significantly improve performance when adding large datasets to your chart.

@@ -28,9 +28,9 @@ Chart contains the following overloading methods for saving a chart as an image.
 
 ### Save(string filename)
 
-This method will export chart to the specified location with the given name. By default, i.e., if you didn’t mention any specific location. It will be exported to “../bin/debug” location.
+This method will export chart to the specified location with the given name. By default, i.e., if you don't mention any specific location, it will be exported to the "../bin/debug" location.
 
-The following code examples illustrates the usage of this method:
+The following code example illustrates the usage of this method:
 
 {% highlight C# %}
 
@@ -38,16 +38,16 @@ private void SaveImage_Click(object sender, RoutedEventArgs e)
 {
     this.SampleChart.Save("ExportedChart"); //Save in Debug location
 
-    this.SampleChart.Save("D:\\Pictures\\Test\\ExportedChart"); //Save in ‘D:\Picture\Test’ location.
+    this.SampleChart.Save("D:\\Pictures\\Test\\ExportedChart"); //Save in 'D:\Pictures\Test' location.
 }
 
 {% endhighlight %}
 
-T> We can change the image formats in above code by changing its extension as .jpg, .tiff, etc.
+T> You can change the image formats in the above code by changing its extension as .jpg, .tiff, etc.
 
 ### Save(Stream stream, BitmapEncoder imgEncoderID)
 
-This helps to export the chart to any stream as in below code example.
+This helps to export the chart to any stream as shown in the below code example.
 
 {% highlight C# %}
 
@@ -55,18 +55,14 @@ private void SaveImageEncoder_Click(object sender, RoutedEventArgs e)
 {
     SaveFileDialog sfd = new SaveFileDialog();
     
-	sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|PNG(*.png)|*.png|TIFF(*.tif,*.tiff)|*.tif|All files (*.*)|*.*";
+    sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|PNG(*.png)|*.png|TIFF(*.tif,*.tiff)|*.tif|All files (*.*)|*.*";
 
     if (sfd.ShowDialog() == true)
     {
-	
         using (Stream fs = sfd.OpenFile())
         {
-		
             SampleChart.Save(fs, new PngBitmapEncoder());
-			
         }
-		
     }
 }
 
@@ -89,7 +85,6 @@ static IntPtr ApplicationMessageFilter(IntPtr hwnd, int message, IntPtr wParam, 
     return IntPtr.Zero;
 }
 
-
 HwndSourceParameters sourceParameters = new HwndSourceParameters();
 
 sourceParameters.HwndSourceHook = ApplicationMessageFilter;
@@ -101,9 +96,9 @@ source.RootVisual = chart;
 //Save chart
 chart.Save("Chart.png");
 
-{% endhighlight  %}
+{% endhighlight %}
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.
 
 ## See also
 

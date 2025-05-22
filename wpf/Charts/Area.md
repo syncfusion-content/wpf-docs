@@ -9,7 +9,7 @@ documentation: ug
 
 # Area in WPF Charts (SfChart)
 
-Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
+Chart area represents the entire chart and all its elements. It's a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
 
 The following are the major properties of chart(SfChart):
 
@@ -68,7 +68,7 @@ chart.AreaBorderThickness = new Thickness(3);
 
 ## Multiple Area 
 
-You can split plot area into multiple rows and columns using [`ChartRowDefinition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_RowDefinitions) and [`ChartColumnDefinition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ColumnDefinitions) like Grid panel’s row and column definition. 
+You can split plot area into multiple rows and columns using [`ChartRowDefinition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_RowDefinitions) and [`ChartColumnDefinition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ColumnDefinitions) like Grid panel's row and column definition. 
 
 The following code example demonstrates, how you can create multiple panes in the chart area:
 
@@ -218,7 +218,7 @@ chart.Series.Add(columnSeries2);
 
 ## Column Span and Row Span
 
-These can be used to specify the number of column or rows up to which the axis can extend. Same like Grid’s RowSpan or ColumnSpan property, it is also an attached property.
+These can be used to specify the number of column or rows up to which the axis can extend. Same like Grid's RowSpan or ColumnSpan property, it is also an attached property.
 
 You can set the row span in chart like the following code example.
 

@@ -18,9 +18,7 @@ You can define the legend using the following code example.
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
-       <chart:ChartLegend />                                 
-
+    <chart:ChartLegend />                                 
 </chart:SfChart.Legend>
 
 {% endhighlight %}
@@ -28,7 +26,6 @@ You can define the legend using the following code example.
 {% highlight c# %}
 
 SfChart chart = new SfChart();
-
 chart.Legend = new ChartLegend();
 
 {% endhighlight %}
@@ -54,17 +51,12 @@ This can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/w
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
-      <chart:ChartLegend/>
-
-</chart:ChartLegend>
+    <chart:ChartLegend/>
+</chart:SfChart.Legend>
 
 <chart:SplineSeries XBindingPath="Year" Label="Gold"
-	                  
                     ItemsSource="{Binding List}" YBindingPath="India"
-                     
-					LegendIcon="Diamond" />
-
+                    LegendIcon="Diamond" />
 
 {% endhighlight %}
 
@@ -74,17 +66,11 @@ chart.Legend = new ChartLegend();
 
 SplineSeries splineSeries = new SplineSeries()
 {
-
     Label = "Gold",
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "India",
-
     LegendIcon = ChartLegendIcon.Diamond
-
 };
 
 chart.Series.Add(splineSeries);
@@ -111,29 +97,17 @@ The following code example illustrates the customization of legend icon.
 
 {% highlight xaml %}
 
-
 <chart:SfChart.Legend>
-
-    <chart:ChartLegend  IconHeight="10" IconWidth="10" 
-
+    <chart:ChartLegend IconHeight="10" IconWidth="10" 
                         Margin="0,0,0,5"
-
                         HorizontalAlignment="Center"
-
                         VerticalAlignment="Center"                                    
-
                         DockPosition="Top"
-
                         BorderBrush="Black" BorderThickness="1"
-
                         IconVisibility="Visible" CornerRadius="5" 
-
                         ItemMargin="10">                   
-
     </chart:ChartLegend>
-
 </chart:SfChart.Legend>       
-
 
 {% endhighlight %}
 
@@ -141,29 +115,17 @@ The following code example illustrates the customization of legend icon.
 
 chart.Legend = new ChartLegend()
 {
-
     IconHeight = 10,
-
     IconWidth = 10,
-
     Margin = new Thickness(0, 0, 0, 5),
-
     HorizontalAlignment = HorizontalAlignment.Center,
-
     VerticalAlignment = VerticalAlignment.Center,
-
     DockPosition = ChartDock.Top,
-
     IconVisibility = Visibility.Visible,
-
     CornerRadius = new CornerRadius(5),
-
     ItemMargin = new Thickness(10),
-
     BorderThickness = new Thickness(1),
-
     BorderBrush = new SolidColorBrush(Colors.Black)
-
 };
 
 {% endhighlight %}
@@ -179,13 +141,9 @@ The visibility of the legend icon can be changed by setting [`IconVisibility`](h
 
 {% highlight xaml %}
 
-
 <chart:SfChart.Legend>
-
-   <chart:ChartLegend  IconHeight="8" IconWidth="8"  
-
+   <chart:ChartLegend IconHeight="8" IconWidth="8"  
                        IconVisibility="Collapsed" />                                 
-
 </chart:SfChart.Legend>
 
 {% endhighlight %}
@@ -194,13 +152,9 @@ The visibility of the legend icon can be changed by setting [`IconVisibility`](h
 
 chart.Legend = new ChartLegend()
 {
-
     IconHeight = 8,
-
     IconWidth = 8,
-
     IconVisibility = Visibility.Collapsed,
-
 };
 
 {% endhighlight %}
@@ -210,7 +164,7 @@ chart.Legend = new ChartLegend()
 ![Hide Legend Icon in WPF Chart](Legend_images/wpf-chart-hide-legend-icon.png)
 
 
-**Custom** **Legend** **Icon**
+**Custom Legend Icon**
 
 We can add custom icon for the legend using [`LegendIconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIconTemplate) property in ChartSeries as in below example.
 
@@ -219,35 +173,22 @@ We can add custom icon for the legend using [`LegendIconTemplate`](https://help.
 {% highlight xaml %}
 
 <syncfusion:SfChart x:Name="chart">
-
     <syncfusion:SfChart.Resources>
-
         <DataTemplate x:Key="iconTemplate">
-
             <Ellipse Height="15" Width="15" Fill="White" 
-			                   
                      Stroke="#4a4a4a" StrokeThickness="2"/>
-
         </DataTemplate>
-
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.Legend>
-
         <syncfusion:ChartLegend/>
+    </syncfusion:SfChart.Legend>
 
-     </syncfusion:SfChart.Legend>
-
-    <syncfusion:SplineSeries XBindingPath="Year"  Label="Gold" 
-  
-	                         ItemsSource="{Binding List}" 
-                                     
+    <syncfusion:SplineSeries XBindingPath="Year" Label="Gold" 
+                             ItemsSource="{Binding List}" 
                              YBindingPath="India" 
-                                     
                              LegendIconTemplate="{StaticResource iconTemplate}">
-
     </syncfusion:SplineSeries>
-        
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -256,15 +197,10 @@ We can add custom icon for the legend using [`LegendIconTemplate`](https://help.
 
 SplineSeries series = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "India",
-
     LegendIconTemplate = chart.Resources["iconTemplate"] as DataTemplate
-
 };
 
 chart.Series.Add(series);
@@ -285,16 +221,12 @@ This allows us to specify the label for each series which is to be displayed in 
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
     <chart:ChartLegend>
-
     </chart:ChartLegend>
-
 </chart:SfChart.Legend>
 
 <chart:SplineSeries XBindingPath="Year" Label="Spline"
-   
-	                  ItemsSource="{Binding List}" YBindingPath="India"/>
+                    ItemsSource="{Binding List}" YBindingPath="India"/>
 
 {% endhighlight %}
 
@@ -304,15 +236,10 @@ chart.Legend = new ChartLegend();
 
 SplineSeries splineSeries = new SplineSeries()
 {
-
     Label = "Spline",
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "India",
-
 };
 
 chart.Series.Add(splineSeries);
@@ -335,9 +262,7 @@ We can enable it by using the [`CheckBoxVisibility`](https://help.syncfusion.com
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
-        <chart:ChartLegend CheckBoxVisibility="Visible" />
-
+    <chart:ChartLegend CheckBoxVisibility="Visible" />
 </chart:SfChart.Legend>
 
 {% endhighlight %}
@@ -346,9 +271,7 @@ We can enable it by using the [`CheckBoxVisibility`](https://help.syncfusion.com
 
 chart.Legend = new ChartLegend()
 {
-
     CheckBoxVisibility = Visibility.Visible
-
 };
 
 {% endhighlight %}
@@ -374,9 +297,7 @@ We can enable the [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/wpf/
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
-        <chart:ChartLegend ToggleSeriesVisibility="True" />
-
+    <chart:ChartLegend ToggleSeriesVisibility="True" />
 </chart:SfChart.Legend>
 
 {% endhighlight %}
@@ -385,9 +306,7 @@ We can enable the [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/wpf/
 
 chart.Legend = new ChartLegend()
 {
-
     ToggleSeriesVisibility = true
-
 };
 
 {% endhighlight %}
@@ -407,7 +326,7 @@ We can also view the associated [`series`](https://help.syncfusion.com/wpf/chart
 
 ## Positioning the Legend
 
-**Legend** **Position**
+**Legend Position**
 
 This allows us to position the legends [`Inside`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LegendPosition.html) or [`Outside`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LegendPosition.html) of the chart area (plotting area). 
 By default, it will be displayed outside and positioned at top (using [`DockPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition)) of the chart area.
@@ -417,9 +336,7 @@ By default, it will be displayed outside and positioned at top (using [`DockPosi
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
-     <chart:ChartLegend LegendPosition="Inside" />                                 
-
+    <chart:ChartLegend LegendPosition="Inside" />                                 
 </chart:SfChart.Legend>
 
 {% endhighlight %}
@@ -428,9 +345,7 @@ By default, it will be displayed outside and positioned at top (using [`DockPosi
 
 chart.Legend = new ChartLegend()
 {
-
     LegendPosition = LegendPosition.Inside
-
 };
 
 {% endhighlight %}
@@ -452,9 +367,7 @@ To display the legend at the bottom, you can set the [`DockPosition`](https://he
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
-    <chart:ChartLegend  DockPosition="Bottom"/>
-
+    <chart:ChartLegend DockPosition="Bottom"/>
 </chart:SfChart.Legend>
 
 {% endhighlight %}
@@ -463,9 +376,7 @@ To display the legend at the bottom, you can set the [`DockPosition`](https://he
 
 chart.Legend = new ChartLegend()
 {
-
     DockPosition = ChartDock.Bottom
-
 };
 
 {% endhighlight %}
@@ -475,7 +386,7 @@ chart.Legend = new ChartLegend()
 ![Displaying Legend at Bottom Position of WPF Chart](Legend_images/wpf-chart-legend-bottom.png)
 
 
-**Floating** **Legends**
+**Floating Legends**
 
 To position the legend at any arbitrary location inside chart, we need to set [`DockPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as **Floating** and provide its relative position using [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetY) properties.
  
@@ -486,9 +397,7 @@ Offset specifies x or y distance from origin.
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
-      <chart:ChartLegend  DockPosition="Floating" OffsetX="30" OffsetY="10"/>
-
+    <chart:ChartLegend DockPosition="Floating" OffsetX="30" OffsetY="10"/>
 </chart:SfChart.Legend>
 
 {% endhighlight %}
@@ -497,13 +406,9 @@ Offset specifies x or y distance from origin.
 
 chart.Legend = new ChartLegend()
 {
-
     DockPosition = ChartDock.Floating,
-
     OffsetX = 30,
-
     OffsetY = 10
-
 };
 
 {% endhighlight %}
@@ -523,23 +428,14 @@ You can define the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.X
 
 {% highlight xaml %}
 
-
 <chart:SfChart.Legend>
-
-      <chart:ChartLegend>
-
-          <chart:ChartLegend.Header>
-
-               <TextBlock Text="Medals" VerticalAlignment="Center"  
-
-                           HorizontalAlignment="Center" Margin="15"/>
-
-            </chart:ChartLegend.Header>
-
-     </chart:ChartLegend>
-
+    <chart:ChartLegend>
+        <chart:ChartLegend.Header>
+            <TextBlock Text="Medals" VerticalAlignment="Center"  
+                       HorizontalAlignment="Center" Margin="15"/>
+        </chart:ChartLegend.Header>
+    </chart:ChartLegend>
 </chart:SfChart.Legend>
-
 
 {% endhighlight %}
 
@@ -549,15 +445,10 @@ ChartLegend legend = new ChartLegend();
 
 TextBlock textBlock = new TextBlock()
 {
-
     Text = "Medals",
-
     HorizontalAlignment = HorizontalAlignment.Center,
-
     VerticalAlignment = VerticalAlignment.Center,
-
     Margin = new Thickness(15)
-
 };
 
 legend.Header = textBlock;
@@ -582,37 +473,23 @@ The following code example shows how to create multiple legends in a single char
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
-   <chart:ChartLegendCollection>
-
-       <chart:ChartLegend chart:SfChart.Column="0"/>
-
-       <chart:ChartLegend chart:SfChart.Column="1" />
-
+    <chart:ChartLegendCollection>
+        <chart:ChartLegend chart:SfChart.Column="0"/>
+        <chart:ChartLegend chart:SfChart.Column="1" />
     </chart:ChartLegendCollection>
-
 </chart:SfChart.Legend>
 
 <chart:ColumnSeries Interior="#4a4a4a" Label="Legend1"
-
                     ItemsSource="{Binding SneakersDetail}" XBindingPath="Brand" 
-					
-					          YBindingPath="ItemsCount1" />
+                    YBindingPath="ItemsCount1" />
 
 <chart:SplineSeries Label="Legend2" ItemsSource="{Binding SneakersDetail}"  
-
                     XBindingPath="Brand" YBindingPath="ItemsCount" >
-
     <chart:SplineSeries.XAxis>
-
-          <chart:CategoryAxis chart:SfChart.Column="1">
-
-          </chart:CategoryAxis>
-
-     </chart:SplineSeries.XAxis>
-
+        <chart:CategoryAxis chart:SfChart.Column="1">
+        </chart:CategoryAxis>
+    </chart:SplineSeries.XAxis>
 </chart:SplineSeries>
-
 
 {% endhighlight %}
 
@@ -621,15 +498,12 @@ The following code example shows how to create multiple legends in a single char
 ChartLegendCollection legendCollection = new ChartLegendCollection();
 
 ChartLegend legend1 = new ChartLegend();
-
 SfChart.SetColumn(legend1, 0);
 
 ChartLegend legend2 = new ChartLegend();
-
 SfChart.SetColumn(legend2, 1);
 
 legendCollection.Add(legend1);
-
 legendCollection.Add(legend2);
 
 chart.Legend = legendCollection;
@@ -637,38 +511,25 @@ chart.Legend = legendCollection;
 ColumnSeries columnSeries = new ColumnSeries()
 {
     Label = "Legend1",
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount1",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4a, 0x4a, 0x4a)),
-
 };
 
 CategoryAxis axis = new CategoryAxis();
-
 SfChart.SetColumn(axis, 1);
 
 SplineSeries splineSeries = new SplineSeries()
 {
-
     Label = "Legend1",
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount",
-
     XAxis = axis
-
 };
 
 chart.Series.Add(columnSeries);
-
 chart.Series.Add(splineSeries);
 
 {% endhighlight %}
@@ -689,14 +550,11 @@ The following code snippets explains how the legends displaying for accumulation
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
-   <chart:ChartLegend />                                 
-
+    <chart:ChartLegend />                                 
 </chart:SfChart.Legend>
 
-<chart:PieSeries  XBindingPath="Category" 
-	
-	             ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
+<chart:PieSeries XBindingPath="Category" 
+                 ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -706,13 +564,9 @@ chart.Legend = new ChartLegend();
 
 PieSeries pieSeries = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage"
-
 };
 
 chart.Series.Add(pieSeries);
@@ -724,7 +578,7 @@ chart.Series.Add(pieSeries);
 ![Legends for Accumulation Series in WPF Chart](Legend_images/wpf-chart-legend-series.png)
 
 
-N> Here Legend ‘Label’ will be the x value of the Pie chart.
+N> Here Legend 'Label' will be the x value of the Pie chart.
 
 ## Series visibility on legend
 
@@ -736,29 +590,19 @@ property as shown in below example.
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
     <chart:ChartLegend>                  
-
     </chart:ChartLegend>
-
 </chart:SfChart.Legend>
 
 <chart:SplineSeries XBindingPath="Year" Label="Gold" 
-
                     VisibilityOnLegend="Collapsed"
-
                     ItemsSource="{Binding List}" YBindingPath="India">
-
 </chart:SplineSeries>
 
 <chart:ColumnSeries XBindingPath="Year"
-
                     VisibilityOnLegend="Visible"
-
                     Label="Silver" YBindingPath="America"
-
                     ItemsSource="{Binding List}" />   
-
 
 {% endhighlight %}
 
@@ -768,36 +612,23 @@ chart.Legend = new ChartLegend();
 
 SplineSeries splineSeries = new SplineSeries()
 {
-
     Label = "Gold",
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "India",
-
     VisibilityOnLegend = Visibility.Collapsed
-
 };
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     Label = "Silver",
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "America",
-
     VisibilityOnLegend = Visibility.Visible
-
 };
 
 chart.Series.Add(splineSeries);
-
 chart.Series.Add(columnSeries);
 
 {% endhighlight %}
@@ -816,9 +647,7 @@ Orientation of the Legend can be vertical or horizontal. By default the [`Orient
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
-
-   <chart:ChartLegend  Orientation="Vertical"/>
-
+    <chart:ChartLegend Orientation="Vertical"/>
 </chart:SfChart.Legend>
 
 {% endhighlight %}
@@ -827,9 +656,7 @@ Orientation of the Legend can be vertical or horizontal. By default the [`Orient
 
 chart.Legend = new ChartLegend()
 {
-
     Orientation = ChartOrientation.Vertical
-
 };
 
 {% endhighlight %}
@@ -849,48 +676,28 @@ You can customize each legend item using `ItemTemplate` property in ChartLegend 
 
 {% highlight xaml %}
 
- <syncfusion:SfChart x:Name="chart">
-
-     <syncfusion:SfChart.Resources>
-
-            <local:ImageConverter x:Key="imageConverter"/>
-
-            <DataTemplate x:Key="itemTemplate">
-
-                <Grid Margin="10,0,10,0" >
-
-                    <Grid.RowDefinitions>
-
-                        <RowDefinition/>
-
-                        <RowDefinition/>
-
-                    </Grid.RowDefinitions>
-
-                    <Image  Width="30" Height="15"
-                                        
-                            Source="{Binding Converter={StaticResource imageConverter}}"/>
-
-                    <TextBlock HorizontalAlignment="Center" FontSize="12"
-                                           
-                               Grid.Row="1" Foreground="Black" 
-                                           
-                               FontWeight="SemiBold" Text="{Binding Label}">
-
-                    </TextBlock>
-
-                </Grid>
-
-             </DataTemplate>
-
+<syncfusion:SfChart x:Name="chart">
+    <syncfusion:SfChart.Resources>
+        <local:ImageConverter x:Key="imageConverter"/>
+        <DataTemplate x:Key="itemTemplate">
+            <Grid Margin="10,0,10,0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Image Width="30" Height="15"
+                       Source="{Binding Converter={StaticResource imageConverter}}"/>
+                <TextBlock HorizontalAlignment="Center" FontSize="12"
+                           Grid.Row="1" Foreground="Black" 
+                           FontWeight="SemiBold" Text="{Binding Label}">
+                </TextBlock>
+            </Grid>
+        </DataTemplate>
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.Legend>
-
-                <syncfusion:ChartLegend ItemTemplate="{StaticResource itemTemplate}"/>
-
+        <syncfusion:ChartLegend ItemTemplate="{StaticResource itemTemplate}"/>
     </syncfusion:SfChart.Legend>
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -901,41 +708,25 @@ SfChart chart = new SfChart();
 
 chart.Legend = new ChartLegend()
 {
-
    ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
-
 };
 
 public class ImageConverter:IValueConverter
-
 {
+    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        LegendItem item = value as LegendItem;
+        if (item.Label == "Gold")
+            return new BitmapImage(new Uri(("gold_symb.png"),UriKind.RelativeOrAbsolute));
+        else
+            return new BitmapImage(new Uri(("silver_symb.png"), UriKind.RelativeOrAbsolute));
+    }
 
- public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-
-  {
-
-   LegendItem item = value as LegendItem;
-
-   if (item.Label == "Gold")
-
-     return new BitmapImage(new Uri(("gold_symb.png"),UriKind.RelativeOrAbsolute));
-
-   else
-
-    return new BitmapImage(new Uri(("silver_symb.png"), UriKind.RelativeOrAbsolute));
-
-  }
-
-  public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-
-  {
-
-    return value;
-
-  }
-
+    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        return value;
+    }
 }
-
 
 {% endhighlight %}
 
@@ -944,7 +735,7 @@ public class ImageConverter:IValueConverter
 ![Customizing Legend in WPF Chart](Legend_images/wpf-chart-legend-customization.png)
 
 
-**Customizing** **Legend** **Items** **Layout**
+**Customizing Legend Items Layout**
 
 When there is more number of legends, the legend exceeds the chart will be cropped, as it arranged horizontally. To avoid the cropping we can change the existing arrangement layout (one which arrange each legend items horizontally) using `ItemsPanel` property as in below code snippet:
 
@@ -953,24 +744,16 @@ When there is more number of legends, the legend exceeds the chart will be cropp
 {% highlight xaml %}
 
 <syncfusion:SfChart x:Name="chart">
-
     <syncfusion:SfChart.Resources>
-
         <ItemsPanelTemplate x:Key="itemPanelTemplate">
-
-             <WrapPanel/>
-
+            <WrapPanel/>
         </ItemsPanelTemplate>
-                
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.Legend>
-
-            <syncfusion:ChartLegend ItemsPanel="{StaticResource itemPanelTemplate}"/>
-
+        <syncfusion:ChartLegend ItemsPanel="{StaticResource itemPanelTemplate}"/>
     </syncfusion:SfChart.Legend>
-
- </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -980,9 +763,7 @@ SfChart chart = new SfChart();
 
 chart.Legend = new ChartLegend()
 {
-
     ItemsPanel = chart.Resources["itemPanelTemplate"] as ItemsPanelTemplate
-
 };
 
 {% endhighlight %}
@@ -990,52 +771,36 @@ chart.Legend = new ChartLegend()
 {% endtabs %}
 
 ![Customizing Legend Items Layout in WPF Chart](Legend_images/wpf-chart-legend-item-customization.png)
-
 ## Troubleshooting
 
-The legend item is not showing because the chart view is running in the background thread with the timespan problem while updating the chart element dynamically. You can resolve this by using the Dispatcher.BeginInvoke() method. Please refer to the following code sample.
+The legend item may not appear when the chart view runs in a background thread, particularly when there are timing issues while dynamically updating chart elements. You can resolve this by using the `Dispatcher.BeginInvoke()` method as shown in the following code sample:
 
 {% highlight c# %}
-
 ChartWindow chartWindow = new ChartWindow();
-
 chartWindow.DataContext = measurementChart;
-
-chartWindow.Content = new AutoChart();
-
+// Note: The following line appears redundant as it's immediately overwritten
+// chartWindow.Content = new AutoChart();
 chartWindow.Content = new SfChart()
 {    
-	. . .
+    // Chart properties and settings
 }
 
 Action action = chartWindow.Show;
-
-Application.Current.Dispatcher.BeginInvoke(action, Array.Empty<object>()); 
-
+Application.Current.Dispatcher.BeginInvoke(action, Array.Empty<object>());
 {% endhighlight %}
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts examples](https://github.com/syncfusion/wpf-demos) to learn about various chart types and how to easily configure them with built-in support for creating stunning visual effects.
 
 ## See also
 
-[`How to customize the legend Icon based on series appearance in WPF Chart`](https://support.syncfusion.com/kb/article/10172/how-to-customize-the-legend-icon-based-on-series-appearance-in-wpf-chart)
-
-[`How to achieve the draggable legend in WPF Chart`](https://support.syncfusion.com/kb/article/9860/how-to-achieve-the-draggable-legend-in-wpf-chart-sfchart)
-
-[`How to wrap the text in the WPF Chart legend`](https://support.syncfusion.com/kb/article/9626/how-to-wrap-the-text-in-the-wpf-chart-legend)
-
-[`How to control the visibility of all series with a single legend item in WPF Chart`](https://support.syncfusion.com/kb/article/9625/how-to-control-the-visibility-of-all-series-with-a-single-legend-item-in-wpf-charts)
-
-[`How to create custom legend items in WPF Chart`](https://support.syncfusion.com/kb/article/9200/how-to-create-custom-legend-items-in-wpf-chart)
-
-[`How to get a notification when the legend items are clicked in WPF Chart`](https://support.syncfusion.com/kb/article/8940/how-to-get-a-notification-when-the-legend-items-are-clicked-in-wpf-chart)
-
-[`How to add multiple legend items in scroll viewer`](https://support.syncfusion.com/kb/article/4571/how-to-add-multiple-legend-items-in-scroll-viewer-of-wpf-chart-sfchart)
-
-[`How to format the legend text`](https://support.syncfusion.com/kb/article/4475/how-to-format-the-legend-text-in-wpf-chart-sfchart)
-
-[`How to set or modify the label of the each legend`](https://support.syncfusion.com/kb/article/4477/how-to-change-the-label-of-each-legend-in-wpf-chart-sfchart)
-
-[`How to customize the legends position`](https://support.syncfusion.com/kb/article/4478/how-to-customize-the-legends-position-of-wpf-chart-sfchart)
-
-[`How to customize the icons of the legends in Chart`](https://support.syncfusion.com/kb/article/3937/how-to-customize-the-icons-of-legends-in-wpf-chart-sfchart)
+* [How to customize the legend icon based on series appearance in WPF Chart](https://support.syncfusion.com/kb/article/10172/how-to-customize-the-legend-icon-based-on-series-appearance-in-wpf-chart)
+* [How to achieve the draggable legend in WPF Chart](https://support.syncfusion.com/kb/article/9860/how-to-achieve-the-draggable-legend-in-wpf-chart-sfchart)
+* [How to wrap the text in the WPF Chart legend](https://support.syncfusion.com/kb/article/9626/how-to-wrap-the-text-in-the-wpf-chart-legend)
+* [How to control the visibility of all series with a single legend item in WPF Chart](https://support.syncfusion.com/kb/article/9625/how-to-control-the-visibility-of-all-series-with-a-single-legend-item-in-wpf-charts)
+* [How to create custom legend items in WPF Chart](https://support.syncfusion.com/kb/article/9200/how-to-create-custom-legend-items-in-wpf-chart)
+* [How to get a notification when the legend items are clicked in WPF Chart](https://support.syncfusion.com/kb/article/8940/how-to-get-a-notification-when-the-legend-items-are-clicked-in-wpf-chart)
+* [How to add multiple legend items in scroll viewer](https://support.syncfusion.com/kb/article/4571/how-to-add-multiple-legend-items-in-scroll-viewer-of-wpf-chart-sfchart)
+* [How to format the legend text](https://support.syncfusion.com/kb/article/4475/how-to-format-the-legend-text-in-wpf-chart-sfchart)
+* [How to set or modify the label of each legend](https://support.syncfusion.com/kb/article/4477/how-to-change-the-label-of-each-legend-in-wpf-chart-sfchart)
+* [How to customize the legends position](https://support.syncfusion.com/kb/article/4478/how-to-customize-the-legends-position-of-wpf-chart-sfchart)
+* [How to customize the icons of the legends in Chart](https://support.syncfusion.com/kb/article/3937/how-to-customize-the-icons-of-legends-in-wpf-chart-sfchart)
