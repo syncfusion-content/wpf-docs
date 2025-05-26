@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Appearance and Styling in WPF Rating control | Syncfusion®
-description: Learn here all about Appearance and Styling support in Syncfusion® WPF Rating (SfRating) control and more.
-platform: wpf
+title: Customizing Appearance and Styling in WPF Rating Control | Syncfusion®
+description: Discover how to customize the appearance and styling of the Syncfusion® WPF Rating (SfRating) control, focusing on item sizes, colors, and styles.
+platform: WPF
 control: SfRating
 documentation: ug
 ---
 
-# Appearance and Styling in WPF Rating (SfRating)
+# Customizing Appearance and Styling in WPF Rating (SfRating)
 
-When the default view is not needed, you can customize the view of WPF SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
+The default view of the SfRating control can be altered to suit your needs by customizing the size, item count, and spacing between rating items.
 
-N> These properties are available in SfRatingItem. To set this property, use the ItemContainerStyle property of the SfRating control.
+> **Note**: These properties are available in `SfRatingItem`. To set these properties, use the `ItemContainerStyle` property of the SfRating control.
 
-## Set fill color
+## Setting Fill Colors
 
-The SfRating control supports to set the fill color to the selected and unselected items.
+The SfRating control allows for specifying fill colors for both selected and unselected items.
 
-### Selected items
+### Selected Items
 
-The `RatedFill` property fills the rated area with the specified solid color in the SfRating control.
+Use the `RatedFill` property to fill the rated area with a specified color in the SfRating control.
 
 {% highlight xaml %}
 
@@ -33,11 +33,11 @@ The `RatedFill` property fills the rated area with the specified solid color in 
 	
 {% endhighlight %}
 
-![Rated item ](images/rated_fill.png)
+![Rated item](images/rated_fill.png)
 
-### Unselected items
+### Unselected Items
 
-The `UnRatedFill` property fills the unrated area with the specified solid color in the SfRating control.
+The `UnRatedFill` property fills the unrated area with a specified color in the SfRating control.
 
 {% highlight xaml %}
 
@@ -56,11 +56,11 @@ The `UnRatedFill` property fills the unrated area with the specified solid color
 
 ## Set stroke color
 
-The SfRating control supports to set the stroke color to the selected and unselected items.
+SfRating control supports setting stroke colors for both selected and unselected items.
 
-### Selected items
+### Selected Items
 
-The `RatedStroke` property sets the stroke color to the rated area with the specified solid color to the selected items in the SfRating control.
+The `RatedStroke` property sets the stroke color for the rated area with the specified color.
 
 {% highlight xaml %}
 
@@ -77,10 +77,9 @@ The `RatedStroke` property sets the stroke color to the rated area with the spec
 
 ![Rated item stroke color](images/ratedstroke.png)
 
-### Unselected items
+### Unselected Items
 
-The `UnratedStroke` property sets the stroke color to the unrated area with the specified solid color in the SfRating control.
-
+The `UnRatedStroke` property specifies the stroke color for the unrated area.
 {% highlight xaml %}
 
     <rating:SfRating ItemsCount="5" Value="2" >
@@ -96,13 +95,13 @@ The `UnratedStroke` property sets the stroke color to the unrated area with the 
 
 ![Unrated item stroke color](images/unratedstroke.png)
 
-## Set stroke thickness
+## Setting Stroke Thickness
 
-The SfRating control supports to set the stroke thickness to the selected and unselected items.
+The SfRating control also supports customizing stroke thickness for selected and unselected items.
 
-### Selected items
+### Selected Items
 
-The `RatedStrokeThickness` property sets the stroke thickness to the rated area with the specified value in the SfRating control.
+The `RatedStrokeThickness` property defines the stroke thickness for the rated area.
 
 {% highlight xaml %}
 
@@ -119,9 +118,9 @@ The `RatedStrokeThickness` property sets the stroke thickness to the rated area 
 
 ![Rated item stroke thickness](images/ratedstrokethickness.png)
 
-### Unselected items
+### Unselected Items
 
-The `UnratedStrokeThickness` property sets the stroke thickness to the unrated area with the specified value in the SfRating control.
+The `UnRatedStrokeThickness` property sets the stroke thickness for unrated items.
 
 {% highlight xaml %}
 
@@ -138,9 +137,12 @@ The `UnratedStrokeThickness` property sets the stroke thickness to the unrated a
 
 ![Unrated item stroke thickness](images/unratedstrokethickness.png)
 
-### PointerOverFill
+## Pointer Over Effects
 
-The `PointerOverFill` property fills the mouse over area with the specified solid color in the SfRating control.
+SfRating enables customization of interactions through pointer effects.
+
+### PointerOverFill
+The `PointerOverFill` property fills the area under the mouse pointer with a specified color.
 
 {% highlight xaml %}
 
@@ -154,12 +156,11 @@ The `PointerOverFill` property fills the mouse over area with the specified soli
 
 {% endhighlight %}
 
-![PointOverFill](images/pointover_fill.png)
+![PointerOverFill](images/pointover_fill.png)
 
 ### PointerOverStroke
 
-The `PointerOverStroke` property sets the stroke color to the mouse over area with the specified solid color in the SfRating control.
-
+Sets the stroke color for the area under the mouse pointer using the `PointerOverStroke` property.
 {% highlight xaml %}
 
     <rating:SfRating ItemsCount="5">
@@ -172,11 +173,11 @@ The `PointerOverStroke` property sets the stroke color to the mouse over area wi
 
 {% endhighlight %}
 
-![PointOverStroke](images/pointover_stroke.png)
+![PointerOverStroke](images/pointover_stroke.png)
 
 ### PointerOverStrokeThickness
 
-The `PointerOverStrokeThickness` property sets the stroke thickness to the mouse over area with the specified value in the SfRating control.
+The `PointerOverStrokeThickness` property sets stroke thickness for the mouse-over area.
 
 {% highlight xaml %}
 
@@ -193,9 +194,8 @@ The `PointerOverStrokeThickness` property sets the stroke thickness to the mouse
 
 ![PointerOverStrokeThickness](images/pointover_strokethickness.png)
 
-### Height
-
-You can set the height of each SfRatingItem using the `Height` property.
+## Customizing Item Height
+Adjust the height of each `SfRatingItem` by using the `Height` property.
 
 {% tabs %}
 
@@ -233,7 +233,7 @@ public MainWindow()
 
 ![SfRating item custom height](images/height_customization.png)
 
-To set same height to each SfRatingItem, use the `ItemContainerStyle` property.
+To set the same height for each `SfRatingItem`, use the `ItemContainerStyle` property.
 
 {% highlight xaml %}
 
@@ -247,4 +247,4 @@ To set same height to each SfRatingItem, use the `ItemContainerStyle` property.
 
 {% endhighlight %}
 
-![SfRating item normal height](images/equal_height.png)
+![SfRating item uniform height](images/equal_height.png)

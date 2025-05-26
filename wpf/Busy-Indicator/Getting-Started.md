@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with WPF Busy Indicator control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Busy Indicator (SfBusyIndicator) control, its elements and more details.
-platform: wpf
+title: Getting Started with WPF Busy Indicator Control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Busy Indicator (SfBusyIndicator) control, including its elements and additional details.
+platform: WPF
 control: Busy Indicator
 documentation: ug
 ---
 
 # Getting Started with WPF Busy Indicator (SfBusyIndicator)
 
-Namespace: Syncfusion.Windows.Controls.Notification.
+Namespace: `Syncfusion.Windows.Controls.Notification`
 
-Assembly: Syncfusion.SfBusyIndicator.WPF (in Syncfusion.SfBusyIndicator.WPF.dll)
+Assembly: `Syncfusion.SfBusyIndicator.WPF` (in Syncfusion.SfBusyIndicator.WPF.dll)
 
-The following code example shows how to create the SfBusyIndicator from XAML and code behind respectively.
+The following code examples demonstrate how to create the `SfBusyIndicator` using XAML and C# code-behind.
 
 {% tabs %}
 
@@ -39,15 +39,14 @@ SfBusyIndicator busyIndicator = new SfBusyIndicator();
 
 {% endtabs %}
 
-
-N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Getting-Started) in GitHub
+> **Note:** View the [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Getting-Started) on GitHub.
 
 ## Theme
 
-SfBusyIndicator supports various built-in themes. Refer to the below links to apply themes for the SfBusyIndicator,
+The `SfBusyIndicator` supports various built-in themes. Refer to the links below to apply themes to the `SfBusyIndicator`:
 
-  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+  * [Apply Theme Using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
-  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+  * [Create a Custom Theme Using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfBusyIndicator](IsBusy_images/Theme.png)
+![Setting the Theme for WPF SfBusyIndicator](IsBusy_images/Theme.png)
