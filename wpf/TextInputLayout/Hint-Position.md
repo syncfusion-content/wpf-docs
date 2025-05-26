@@ -1,22 +1,21 @@
 ---
 layout: post
-title: Hint Position in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Hint Position support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
-platform: wpf
+title: Hint Position in WPF TextInputLayout Control | Syncfusion
+description: Learn about hint position support in the Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+platform: WPF
 control: SfTextInputLayout
 documentation: ug
 ---
 
 # Hint Position in WPF TextInputLayout (SfTextInputLayout)
 
-We can decide how the floating label will display by setting the `HintFloatMode` property.
+The display of the floating label can be controlled by setting the `HintFloatMode` property.
 
->**NOTE**
-The default value of the `HintFloatMode` is `Float`.
+> **Note:** The default value of `HintFloatMode` is `Float`.
 
 ## Float
 
-The hint label will be float to the top of input view get focused.
+The hint label will float to the top of the input view when it receives focus.
 
 {% tabs %} 
 
@@ -48,7 +47,7 @@ inputLayout.InputView = new TextBox();
 
 ## AlwaysFloat
 
-The hint label will be positioned always at the top of input view.
+The hint label will always be positioned at the top of the input view.
 
 {% tabs %} 
 

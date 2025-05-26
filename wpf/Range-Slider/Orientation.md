@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Orientation in WPF Range Slider control | Syncfusion®
-description: Learn here all about Orientation support in Syncfusion® WPF Range Slider (SfRangeSlider) control and more.
-platform: wpf
+title: Orientation Settings in WPF Range Slider Control | Syncfusion®
+description: Discover how to configure orientation settings for the Syncfusion® WPF Range Slider (SfRangeSlider) control.
+platform: WPF
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Orientation in WPF Range Slider (SfRangeSlider)
+# Orientation Settings in WPF Range Slider (SfRangeSlider)
 
-The [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~Orientation.html) property has the following two options.  
+The [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~Orientation.html) property of the SfRangeSlider allows you to specify its alignment either horizontally or vertically. The default setting is Horizontal.
 
 1. Horizontal  
 2. Vertical  
@@ -48,7 +48,7 @@ The default option is Horizontal.
 
 {% endtabs %}
 
-![Horizontal](Orientation_images/Orientation_img1.png)
+![Horizontal Orientation](Orientation_images/Orientation_img1.png)
 
 
 The following code sample illustrates how to set vertical orientation to [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html).  
@@ -87,7 +87,4 @@ The following code sample illustrates how to set vertical orientation to [SfRang
 
 {% endtabs %}
 
-![Vertical](Orientation_images/Orientation_img2.png)
-
-
-
+![Vertical Orientation](Orientation_images/Orientation_img2.png)

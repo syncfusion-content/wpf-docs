@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with WPF Radial Menu control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Radial Menu (SfRadialMenu) control, its elements and more.
-platform: wpf
+title: Getting Started with WPF Radial Menu Control | Syncfusion®
+description: Learn about getting started with the Syncfusion® WPF Radial Menu (SfRadialMenu) control, its elements, and more.
+platform: WPF
 control: SfRadialMenu 
 documentation: ug
 ---
 
 # Getting Started with WPF Radial Menu (SfRadialMenu)
 
-Namespace : Syncfusion.Windows.Controls.Navigation 
+**Namespace:** Syncfusion.Windows.Controls.Navigation
 
-Assembly : Syncfusion.SfRadialMenu.WPF (in Syncfusion.SfRadialMenu.WPF.dll) 
+**Assembly:** Syncfusion.SfRadialMenu.WPF (contained in Syncfusion.SfRadialMenu.WPF.dll)
 
-The following code sample shows how to create the RadialMenu from code-behind and XAML. 
+The following code samples demonstrate how to create the RadialMenu in both code-behind and XAML.
 
 {%tabs%}
 {%highlight xaml%}
@@ -70,10 +70,9 @@ radialMenu.Items.Add(paste);
 
 ## Theme
 
-Radial Menu supports various built-in themes. Refer to the below links to apply themes for the Radial Menu,
+The Radial Menu supports various built-in themes. Refer to the links below to apply themes for the Radial Menu:
 
-  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
-  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+- [Apply a theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+- [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme in WPF Radial Menu](appearance-and-styling_images/wpf-radial-menu-setting-theme.png)
+![Setting Theme in WPF Radial Menu](appearance-and-styling_images/wpf-radial-menu-setting-theme.png)
