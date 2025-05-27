@@ -9,26 +9,24 @@ documentation: ug
 
 # WPF SfChart3D Overview
 
-3D charts are used to view two-dimensional data in a three-dimensional view, and can be rotated in all 3 dimensions to get the best possible view of the data.
+3D charts are used to visualize two-dimensional data in a three-dimensional view. These charts can be rotated in all three dimensions to provide the optimal view of your data.
 
- <img src="3D-Charts_images/Charts-3D.png" alt="WPF Chart support SfChart3D" width="400" height="400" style="vertical-align:middle"> 
-
+<img src="3D-Charts_images/Charts-3D.png" alt="WPF Chart support SfChart3D" width="400" height="400" style="vertical-align:middle">
 
 ## Key features
 
-* SfChart3D supports different type of [`Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_Series) which can be used for different data visualizations.Each type of chart represents a unique style of representing data with more user friendly and greater UI visualization.
+* **Versatile Series Types**: SfChart3D supports various [`Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_Series) types for different data visualization needs. Each chart type offers a unique style of data representation with enhanced UI visualization.
 
-* Supports several axes types which can be used with the charts. There are axes specialized for Numerical,          Category, DateTime, TimeSpan, Logarithmic scenarios.
+* **Multiple Axis Types**: Supports specialized axes for Numerical, Category, DateTime, TimeSpan, and Logarithmic data scenarios.
 
-* SfChart3D supports DepthAxis (Z Axis) helps us to plot chart data based on X, Y and Z Co – ordinates.
+* **Depth Axis Support**: SfChart3D includes a DepthAxis (Z-Axis) that enables plotting chart data based on X, Y, and Z coordinates.
 
-* Supports multiple axes that can be stacked and spanned for multiple panes.
+* **Flexible Axis Layout**: Supports multiple axes that can be stacked and spanned across multiple panes.
 
-* Allows you to map the data from the specified path, by achieving, Data binding concept.
+* **Data Binding**: Allows mapping data from specified paths through comprehensive data binding capabilities.
 
-* Animations allows to animate the chart series on loading, and whenever the ItemsSource changes.
+* **Animation Effects**: Enables animating chart series on loading and whenever the ItemsSource changes.
 
-* Dynamic rotation allows to view the best possible view of data dynamically using a mouse or touch device.
+* **Dynamic Rotation**: Provides the ability to view data from different angles dynamically using a mouse or touch device.
 
-* Selection support allows to select Segment and series programmatically or user interaction.
-
+* **Selection Support**: Allows selecting segments and series programmatically or through user interaction.

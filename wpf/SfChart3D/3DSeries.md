@@ -9,7 +9,7 @@ documentation: ug
 
 # Series in WPF SfChart3D
 
-ChartSeries is the visual representation of the data. SfChart3D offers eight types of series. Based on your requirements and specifications, any type of Series can be added for data visualization. 
+ChartSeries is the visual representation of the data. SfChart3D offers eleven types of series. Based on your requirements and specifications, any type of Series can be added for data visualization. 
 
 * Column
 * Bar
@@ -19,15 +19,14 @@ ChartSeries is the visual representation of the data. SfChart3D offers eight typ
 * Stacking column 
 * Stacking column 100 
 * Stacking bar
-* Stacking bar
+* Stacking bar 100
 * Pie
 * Doughnut
 
-The following APIs are common for the most of the series types:
+The following APIs are common for most of the series types:
 
 * [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) – A string property that represents the X values for the series.
 * [`YBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyDataSeries3D.html#Syncfusion_UI_Xaml_Charts_XyDataSeries3D_YBindingPath) – A string property that represents the Y values for the series.
-Eight types of chart [`Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_Series).
 * [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior) – Represents the brush to fill the series.
 
 
@@ -63,7 +62,7 @@ chart3D.Series.Add(series);
 
 ## Bar Charts
 
-[`BarSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries3D.html) are similar to column series, excepts its orientation.
+[`BarSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries3D.html) are similar to column series, except for their orientation.
 
 {% tabs %}
 
@@ -93,7 +92,7 @@ chart3D.Series.Add(series);
 
 ### Spacing
 
-[`Spacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SpacingProperty) property of series is used to decide the width of a segment. [`Spacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SpacingProperty) value ranges from 0 to 1. The following code illustrates how to set [`Spacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SpacingProperty) property of the series,
+[`Spacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SpacingProperty) property of series is used to decide the width of a segment. [`Spacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SpacingProperty) value ranges from 0 to 1. The following code illustrates how to set [`Spacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SpacingProperty) property of the series:
 
 {% tabs %}
 
@@ -124,7 +123,7 @@ chart3D.Series.Add(series);
 
 **Segment Spacing**
 
-[`SegmentSpacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property in series,
+[`SegmentSpacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property is used to set the spacing among the segments when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property in series:
 
 {% tabs %}
 
@@ -145,16 +144,16 @@ chart3D.Series.Add(series);
         {
             ItemsSource = new CategoryDataViewModel().CategoricalData,
             XBindingPath = "Year",
-            YBindingPath = "Plastic"
-            SegmentSpacing = 0.6,
+            YBindingPath = "Plastic",
+            SegmentSpacing = 0.6
         };
 
     ColumnSeries3D series1 = new ColumnSeries3D()
         {
             ItemsSource = new CategoryDataViewModel().CategoricalData,
             XBindingPath = "Year",
-            YBindingPath = "Iron"
-            SegmentSpacing = 0.6,
+            YBindingPath = "Iron",
+            SegmentSpacing = 0.6
         };
        
     chart3D.Series.Add(series);
@@ -167,7 +166,7 @@ chart3D.Series.Add(series);
 ![Spacing support in WPF 3D Chart](3D-Charts_images/Series/Column_SegmentSpacing.png)
 
 ## Line Charts
-[`LineSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html#) join points on a plot by straight lines, showing data trends at equal intervals. 
+[`LineSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html#) joins points on a plot by straight lines, showing data trends at equal intervals. 
 
 {% tabs %}
 
@@ -187,19 +186,19 @@ chart3D.Series.Add(series);
                 YBindingPath = "Metal"
             };
 
-chart3D.Series.Add(series);
+chart3D.Series.Add(line);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Column Charts support in WPF 3D Chart](3D-Charts_images/Series/LineSeries3D.png)
+![Line Charts support in WPF 3D Chart](3D-Charts_images/Series/LineSeries3D.png)
 
 ## Scatter Chart
 
-[`ScatterSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries3D.html#) will represent each point by a Rectangle with equal size. 
+[`ScatterSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries3D.html#) represents each point by a Rectangle with equal size. 
 
-This size can be defined by using below properties.
+This size can be defined by using the following properties:
 
 * [`ScatterHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries3D.html#Syncfusion_UI_Xaml_Charts_ScatterSeries3D_ScatterHeight) 
 * [`ScatterWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries3D.html#Syncfusion_UI_Xaml_Charts_ScatterSeries3D_ScatterWidth)
@@ -208,7 +207,7 @@ This size can be defined by using below properties.
 
 {% highlight xaml %}
 
-      <chart:ScatterSeries3D  ItemsSource="{Binding DataPoints}"  
+      <chart:ScatterSeries3D ItemsSource="{Binding DataPoints}"  
             XBindingPath="Year" YBindingPath="Germany"></chart:ScatterSeries3D>
 
 {% endhighlight %}
@@ -238,7 +237,7 @@ This size can be defined by using below properties.
 
 {% highlight xaml %}
 
-        <chart:AreaSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+        <chart:AreaSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
         YBindingPath="Plastic"></chart:AreaSeries3D>
 
 {% endhighlight %}
@@ -259,7 +258,7 @@ This size can be defined by using below properties.
 
 {% endtabs %}
 
-![Scatter chart support in WPF 3D Chart](3D-Charts_images/Series/AreaSeries3D.png)
+![Area chart support in WPF 3D Chart](3D-Charts_images/Series/AreaSeries3D.png)
 
 
 ## Stacking Charts
@@ -273,13 +272,13 @@ The following code example illustrates how to use StackingColumnSeries3D:
 
 {% highlight xaml %}
 
-        <chart:StackingColumnSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+        <chart:StackingColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
                 YBindingPath="Plastic"></chart:StackingColumnSeries3D>
 
-        <chart:StackingColumnSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+        <chart:StackingColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
                 YBindingPath="Iron"></chart:StackingColumnSeries3D>
 
-        <chart:StackingColumnSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+        <chart:StackingColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
                 YBindingPath="Metal"></chart:StackingColumnSeries3D>
 
 {% endhighlight %}
@@ -327,10 +326,10 @@ The following code example illustrates how to use StackingColumn100Series3D:
 
 {% highlight xaml %}
 
-        <chart:StackingColumn100Series3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+        <chart:StackingColumn100Series3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
         YBindingPath="Plastic"></chart:StackingColumn100Series3D>
             
-        <chart:StackingColumn100Series3D Interior="Brown" ItemsSource="{Binding CategoricalData}"  XBindingPath="Year" YBindingPath="Iron"></chart:StackingColumn100Series3D>
+        <chart:StackingColumn100Series3D Interior="Brown" ItemsSource="{Binding CategoricalData}" XBindingPath="Year" YBindingPath="Iron"></chart:StackingColumn100Series3D>
 
 {% endhighlight %}
 
@@ -348,7 +347,7 @@ The following code example illustrates how to use StackingColumn100Series3D:
                 ItemsSource = new CategoryDataViewModel().CategoricalData,
                 XBindingPath = "Year",
                 YBindingPath = "Iron",
-                Interior=new SolidColorBrush(Colors.Brown)
+                Interior = new SolidColorBrush(Colors.Brown)
             };
 
         chart3D.Series.Add(stack1);
@@ -370,13 +369,13 @@ The following code example illustrates how to use StackingBarSeries3D:
 
 {% highlight xaml %}
 
-            <chart:StackingBarSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+            <chart:StackingBarSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
                 YBindingPath="Plastic"></chart:StackingBarSeries3D>
 
-            <chart:StackingBarSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+            <chart:StackingBarSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
                 YBindingPath="Iron"></chart:StackingBarSeries3D>
 
-            <chart:StackingBarSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+            <chart:StackingBarSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
                 YBindingPath="Metal"></chart:StackingBarSeries3D>
 
 {% endhighlight %}
@@ -424,10 +423,10 @@ The following code example illustrates how to use StackingBar100Series3D:
 
 {% highlight xaml %}
 
-            <chart:StackingBar100Series3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+            <chart:StackingBar100Series3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
             YBindingPath="Plastic"></chart:StackingBar100Series3D>
 
-            <chart:StackingBar100Series3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+            <chart:StackingBar100Series3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
             YBindingPath="Iron"></chart:StackingBar100Series3D>
 
 {% endhighlight %}
@@ -461,13 +460,13 @@ The following code example illustrates how to use StackingBar100Series3D:
 
 [`PieSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PieSeries3D.html#) is divided into sectors, illustrating numerical proportion.
 
-The following code example illustrates the PieSeries3D.
+The following code example illustrates the PieSeries3D:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-        <chart:PieSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+        <chart:PieSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
         YBindingPath="Iron"></chart:PieSeries3D>
 
 {% endhighlight %}
@@ -495,13 +494,13 @@ The following code example illustrates the PieSeries3D.
 
 [`DoughnutSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries3D.html#) is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 
 
-The DoughnutSeries3D can be added to chart as in below code example:
+The DoughnutSeries3D can be added to chart as in the below code example:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-        <chart:DoughnutSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"                        YBindingPath="Iron"> </chart:DoughnutSeries3D>
+        <chart:DoughnutSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year" YBindingPath="Iron"></chart:DoughnutSeries3D>
 
 {% endhighlight %}
 
@@ -524,14 +523,14 @@ The DoughnutSeries3D can be added to chart as in below code example:
 
 ### Coefficient
 
-The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries3D.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries3D_DoughnutCoefficient)  and [`CircleCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase3D_CircleCoefficient) property to define the inner circle of Doughnut and Pie Charts.
+The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries3D.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries3D_DoughnutCoefficient) and [`CircleCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase3D_CircleCoefficient) properties define the inner circle of Doughnut and Pie Charts.
 
 {% tabs %}
 
 {% highlight xaml %}
 
         <chart:DoughnutSeries3D ItemsSource="{Binding CategoricalData}" DoughnutCoefficient="0.5"   
-        XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
+        XBindingPath="Year" YBindingPath="Iron"></chart:DoughnutSeries3D>
 
 {% endhighlight %}
 
@@ -542,7 +541,7 @@ The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
                 ItemsSource = new CategoryDataViewModel().CategoricalData,
                 XBindingPath = "Year",
                 YBindingPath = "Iron",
-                DoughnutCoefficient=0.5
+                DoughnutCoefficient = 0.5
             };
 
         chart.Series.Add(series);
@@ -562,7 +561,7 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 {% highlight xaml %}
 
         <chart:DoughnutSeries3D StartAngle="180" EndAngle="360" ItemsSource="{Binding CategoricalData}" 
-        DoughnutCoefficient="0.7" XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
+        DoughnutCoefficient="0.7" XBindingPath="Year" YBindingPath="Iron"></chart:DoughnutSeries3D>
 
 {% endhighlight %}
 
@@ -573,9 +572,9 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
                 ItemsSource = new CategoryDataViewModel().CategoricalData,
                 XBindingPath = "Year",
                 YBindingPath = "Iron",
-                DoughnutCoefficient=0.7,
-                StartAngle=180,
-                EndAngle=360
+                DoughnutCoefficient = 0.7,
+                StartAngle = 180,
+                EndAngle = 360
             };
 
         chart.Series.Add(series);
@@ -592,7 +591,7 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 {% highlight xaml %}
 
         <chart:PieSeries3D StartAngle="180" EndAngle="360" ItemsSource="{Binding CategoricalData}" 
-        CircleCoefficient="0.7" XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
+        CircleCoefficient="0.7" XBindingPath="Year" YBindingPath="Iron"></chart:PieSeries3D>
 
 {% endhighlight %}
 
@@ -603,9 +602,9 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
                 ItemsSource = new CategoryDataViewModel().CategoricalData,
                 XBindingPath = "Year",
                 YBindingPath = "Iron",
-                CircleCoefficient=0.7,
-                StartAngle=180,
-                EndAngle=360
+                CircleCoefficient = 0.7,
+                StartAngle = 180,
+                EndAngle = 360
             };
 
         chart.Series.Add(series);
@@ -614,20 +613,20 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 {% endtabs %}
 
-![Doughnut support in WPF 3D Chart](3D-Charts_images/Series/Semi_Pie.png)
+![Pie support in WPF 3D Chart](3D-Charts_images/Series/Semi_Pie.png)
 
 ## Dynamic explode
 
 This feature allows users to explode a particular segment in a circular series using [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PieSeries3D.html#Syncfusion_UI_Xaml_Charts_PieSeries3D_ExplodeOnMouseClick). This can also be achieved by setting the [`ExplodeIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase3D_ExplodeIndex) or [`ExplodeAll`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase3D_ExplodeAll) property. 
 
 
-The following code example illustrates how to enable dynamic explode for circular series, for data please refer series category in 3D charts.
+The following code example illustrates how to enable dynamic explode for circular series, for data please refer to series category in 3D charts.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <chart:SfChart3D EnableRotation="True"  Tilt="-30" Rotation="45"
+    <chart:SfChart3D EnableRotation="True" Tilt="-30" Rotation="45"
             Depth="30" PerspectiveAngle="90" Width="500" Height="500">
 
             <!--PrimaryAxis-->
@@ -640,7 +639,7 @@ The following code example illustrates how to enable dynamic explode for circula
             </chart:SfChart3D.SecondaryAxis>           
 
             <!--PieSeries3D - Dynamic explode-->
-            <chart:PieSeries3D  ExplodeOnMouseClick="True" ItemsSource="{Binding CategoricalData}"  XBindingPath="Year" YBindingPath="Iron"></chart:PieSeries3D>
+            <chart:PieSeries3D ExplodeOnMouseClick="True" ItemsSource="{Binding CategoricalData}" XBindingPath="Year" YBindingPath="Iron"></chart:PieSeries3D>
 
     </chart:SfChart3D>
 

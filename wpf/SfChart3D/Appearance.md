@@ -13,9 +13,9 @@ SfChart3D supports various customizing and styling options that allow you to enr
 
 ## Palettes
 
-SfChart3D provides the options to apply the different kinds of themes or palettes to your chart. You can define the [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) either for the entire chart or for an individual series.
+SfChart3D provides options to apply different kinds of themes or palettes to your chart. You can define the [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) either for the entire chart or for an individual series.
 
-We have some predefined palette such as,
+We have some predefined palettes such as:
 
 * Metro
 * AutumnBrights
@@ -30,22 +30,21 @@ We have some predefined palette such as,
 * LightCandy
 * SandyBeach
 
-
 ### Applying Palette to Series
 
-Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
+Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <chart:SfChart3D Height="250" Width="350" Palette="Metro"  >
+<chart:SfChart3D Height="250" Width="350" Palette="Metro">
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    chart.Palette = ChartColorPalette.Metro;
+chart.Palette = ChartColorPalette.Metro;
 
 {% endhighlight %}
 
@@ -53,19 +52,19 @@ Each palette applies a set of predefined brushes to the series in a predefined o
 
 ![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Series_metro_Palatte.PNG)
 
-The following code example defined the palette as a [`BlueChrome`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
+The following code example defines the palette as [`BlueChrome`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <chart:SfChart3D Height="250" Width="350" Palette="BlueChrome">
+<chart:SfChart3D Height="250" Width="350" Palette="BlueChrome">
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    chart.Palette = ChartColorPalette.BlueChrome;
+chart.Palette = ChartColorPalette.BlueChrome;
 
 {% endhighlight %}
 
@@ -73,33 +72,32 @@ The following code example defined the palette as a [`BlueChrome`](https://help.
 
 ![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Series_bluechrome_Palatte.PNG)
 
-
 ### Applying Palette to Segment
 
-Each palette applies a set of predefined brushes to the segment in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
+Each palette applies a set of predefined brushes to the segment in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <syncfusion:ColumnSeries3D ItemsSource="{Binding Data}"
-                           XBindingPath="XValue"
-                           YBindingPath="YValue"
-                           Palette="Metro"/>
-						   
+<syncfusion:ColumnSeries3D ItemsSource="{Binding Data}"
+                       XBindingPath="XValue"
+                       YBindingPath="YValue"
+                       Palette="Metro"/>
+                       
 {% endhighlight %}
-						   
+                       
 {% highlight c# %}
 
-    ColumnSeries3D columnSeries = new ColumnSeries3D()
-    {
-        ItemsSource = viewModel.Data,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
-        Palette = ChartColorPalette.Metro
-    };
+ColumnSeries3D columnSeries = new ColumnSeries3D()
+{
+    ItemsSource = viewModel.Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    Palette = ChartColorPalette.Metro
+};
 
-    chart.Series.Add(columnSeries);
+chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
@@ -107,37 +105,36 @@ Each palette applies a set of predefined brushes to the segment in a predefined 
 
 ![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Segment_Palatte.PNG)
 
-The following code example defined the palette as an **AutumnBrights**.
+The following code example defines the palette as **AutumnBrights**.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <syncfusion:ColumnSeries3D ItemsSource="{Binding Data}"
-                           XBindingPath="XValue"
-                           YBindingPath="YValue"
-                           Palette="AutumnBrights"/>
+<syncfusion:ColumnSeries3D ItemsSource="{Binding Data}"
+                       XBindingPath="XValue"
+                       YBindingPath="YValue"
+                       Palette="AutumnBrights"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    ColumnSeries3D columnSeries = new ColumnSeries3D()
-    {
-        ItemsSource = viewModel.Data,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
-        Palette = ChartColorPalette.AutumnBrights
-    };
+ColumnSeries3D columnSeries = new ColumnSeries3D()
+{
+    ItemsSource = viewModel.Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    Palette = ChartColorPalette.AutumnBrights
+};
 
-    chart.Series.Add(series);
+chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Segment_AutumnBrights_Palatte.PNG)
-
 
 N> Metro palette is the default palette for both Series and Segment.
 
@@ -149,54 +146,36 @@ SfChart3D provides an option that enables you to define your own color brushes w
 
 {% highlight xaml %}
 
-    <chart:DoughnutSeries3D  YBindingPath="Percentage" Palette="Custom"
-
-    XBindingPath="Category" ItemsSource="{Binding Tax}" >   
-
+<chart:DoughnutSeries3D YBindingPath="Percentage" Palette="Custom"
+XBindingPath="Category" ItemsSource="{Binding Tax}">   
     <chart:DoughnutSeries3D.ColorModel>
-
-    <chart:ChartColorModel>
-
-    <chart:ChartColorModel.CustomBrushes>
-
-    <SolidColorBrush Color="Cyan"/>
-
-    <SolidColorBrush Color="DarkCyan"/>                                                
-
-    </chart:ChartColorModel.CustomBrushes>
-
-    </chart:ChartColorModel>
-
+        <chart:ChartColorModel>
+            <chart:ChartColorModel.CustomBrushes>
+                <SolidColorBrush Color="Cyan"/>
+                <SolidColorBrush Color="DarkCyan"/>                                                
+            </chart:ChartColorModel.CustomBrushes>
+        </chart:ChartColorModel>
     </chart:DoughnutSeries3D.ColorModel>
-
-    </chart:DoughnutSeries3D>
+</chart:DoughnutSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    ChartColorModel colorModel = new ChartColorModel();
+ChartColorModel colorModel = new ChartColorModel();
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Cyan));
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.DarkCyan));
 
-    colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Cyan));
+DoughnutSeries3D series = new DoughnutSeries3D()
+{
+    ItemsSource = new ViewModel().Tax,
+    XBindingPath = "Category",
+    YBindingPath = "Percentage",
+    Palette = ChartColorPalette.Custom,
+    ColorModel = colorModel
+};
 
-    colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.DarkCyan));
-
-    DoughnutSeries3D series = new DoughnutSeries3D()
-    {
-
-        ItemsSource = new ViewModel().Tax,
-
-        XBindingPath = "Category",
-
-        YBindingPath = "Percentage",
-
-        Palette = ChartColorPalette.Custom,
-
-        ColorModel = colorModel
-
-    };
-
-    chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -210,50 +189,34 @@ You can define the custom palette for the series as shown in the following code 
 
 {% highlight xaml %}
 
-    <chart:SfChart3D Height="250" Width="350" Palette="Custom">
-
+<chart:SfChart3D Height="250" Width="350" Palette="Custom">
     <chart:SfChart3D.ColorModel>
-
-    <chart:ChartColorModel>
-
-    <chart:ChartColorModel.CustomBrushes>
-
-    <SolidColorBrush Color="BlueViolet"/>
-
-    <SolidColorBrush Color="PeachPuff"/>
-
-    <SolidColorBrush Color="Purple"/>
-
-    </chart:ChartColorModel.CustomBrushes>
-
-    </chart:ChartColorModel>
-
+        <chart:ChartColorModel>
+            <chart:ChartColorModel.CustomBrushes>
+                <SolidColorBrush Color="BlueViolet"/>
+                <SolidColorBrush Color="PeachPuff"/>
+                <SolidColorBrush Color="Purple"/>
+            </chart:ChartColorModel.CustomBrushes>
+        </chart:ChartColorModel>
     </chart:SfChart3D.ColorModel>
-
-    </chart:SfChart3D>
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    chart.Palette = ChartColorPalette.Custom;
-
-    ChartColorModel colorModel = new ChartColorModel();
-
-    colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.BlueViolet));
-
-    colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.PeachPuff));
-
-    colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Purple));
-
-    chart.ColorModel = colorModel;
+chart.Palette = ChartColorPalette.Custom;
+ChartColorModel colorModel = new ChartColorModel();
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.BlueViolet));
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.PeachPuff));
+colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Purple));
+chart.ColorModel = colorModel;
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Custom palette in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_custom_palatte_chart.PNG)
-
 
 ## SegmentColorPath
 
@@ -263,32 +226,27 @@ The color for the chart segments can be bound from its items source collection b
 
 {% highlight xaml %}
 
-    <chart:ColumnSeries3D ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" SegmentColorPath="ColorPath">
-
-    </chart:ColumnSeries3D>
+<chart:ColumnSeries3D ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" SegmentColorPath="ColorPath">
+</chart:ColumnSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    ColumnSeries3D series = new ColumnSeries3D()
- 
-    {
-        
-        ItemsSource = viewModel.Data,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
-        SegmentColorPath = "ColorPath"
-            
-    };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = viewModel.Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    SegmentColorPath = "ColorPath"
+};
 
-    Data = new ObservableCollection<Model>();
-    Data.Add(new Model() { XValue = "Jan", YValue = 10, ColorPath = new SolidColorBrush(Colors.Cyan) });
-    Data.Add(new Model() { XValue = "Feb", YValue = 24, ColorPath = new SolidColorBrush(Colors.Pink) });
-    Data.Add(new Model() { XValue = "Mar", YValue = 18, ColorPath = new SolidColorBrush(Colors.Red) });
-    Data.Add(new Model() { XValue = "Apr", YValue = 16, ColorPath = new SolidColorBrush(Colors.Orange) });
-    Data.Add(new Model() { XValue = "May", YValue = 28, ColorPath = new SolidColorBrush(Colors.LightGreen) });
-
+Data = new ObservableCollection<Model>();
+Data.Add(new Model() { XValue = "Jan", YValue = 10, ColorPath = new SolidColorBrush(Colors.Cyan) });
+Data.Add(new Model() { XValue = "Feb", YValue = 24, ColorPath = new SolidColorBrush(Colors.Pink) });
+Data.Add(new Model() { XValue = "Mar", YValue = 18, ColorPath = new SolidColorBrush(Colors.Red) });
+Data.Add(new Model() { XValue = "Apr", YValue = 16, ColorPath = new SolidColorBrush(Colors.Orange) });
+Data.Add(new Model() { XValue = "May", YValue = 28, ColorPath = new SolidColorBrush(Colors.LightGreen) });
 
 {% endhighlight %}
 
@@ -297,5 +255,3 @@ The color for the chart segments can be bound from its items source collection b
 ![SegmentColorPath in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_SegmentColorPath.PNG)
 
 N> The SegmentColorPath property is not applicable to the Area and CircularSeries.
-
-

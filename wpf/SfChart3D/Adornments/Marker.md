@@ -13,10 +13,9 @@ Data Marker is used to mark the data points with built-in available shapes.
 
 ## Define Data Marker
 
-To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property as True. By default, there is no symbol displayed, you have to add the desired symbol using Symbol property.
+To enable the marker in adornments, you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property as True. By default, there is no symbol displayed, so you need to add the desired symbol using the Symbol property.
 
 The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
-
 
 {% tabs %}
 
@@ -46,7 +45,7 @@ The following code example demonstrates the column series with [`Diamond`](https
                 ShowMarker = true,
                 SymbolInterior = new SolidColorBrush(Colors.White),
                 Symbol = ChartSymbol.Diamond,
-                UseSeriesPalette=true
+                UseSeriesPalette = true
             };
 
         series.AdornmentsInfo = adornmentInfo;
@@ -61,7 +60,7 @@ The following code example demonstrates the column series with [`Diamond`](https
 
 ### Customization of Symbol
 
-SfChart3D provides support more customization for symbol in adornments.
+SfChart3D provides extensive customization options for symbols in adornments:
 
 * [`SymbolHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolHeight) - used to change the height of the symbol.
 * [`SymbolWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolWidth) - used to change the width of the symbol.
@@ -69,7 +68,7 @@ SfChart3D provides support more customization for symbol in adornments.
 * [`SymbolStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolStroke) - used to change the stroke color of symbol.
 * [`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolTemplate) - used to customize the appearance of symbol.
 
-The following code example demonstrates the basic customization of symbol size and appearance.
+The following code example demonstrates the basic customization of symbol size and appearance:
 
 {% tabs %}
 
@@ -98,7 +97,7 @@ The following code example demonstrates the basic customization of symbol size a
             {
                 ShowMarker = true,
                 SymbolInterior = new SolidColorBrush(Colors.Brown),
-                SymbolStroke=new SolidColorBrush(Colors.White),
+                SymbolStroke = new SolidColorBrush(Colors.White),
                 Symbol = ChartSymbol.Triangle,
                 AdornmentsPosition = AdornmentsPosition.Top,
                 SymbolHeight = 15,
@@ -113,11 +112,11 @@ The following code example demonstrates the basic customization of symbol size a
 
 {% endtabs %}
 
-![ Custom Symbol in Adornment](Adornments-Images/SymblBasic.png) 
+![Custom Symbol in Adornment](Adornments-Images/SymblBasic.png) 
 
 **Symbol Template**
 
-The following code example demonstrates how to use SymbolTemplate.
+The following code example demonstrates how to use SymbolTemplate:
 
 {% tabs %}
 
@@ -182,5 +181,4 @@ The following code example demonstrates how to use SymbolTemplate.
 
 {% endtabs %}
 
-![ Custom Symbol in Adornment](Adornments-Images/SymbolCustom.png) 
-
+![Custom Symbol in Adornment](Adornments-Images/SymbolCustom.png) 
