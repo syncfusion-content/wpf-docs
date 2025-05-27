@@ -22,7 +22,7 @@ The following code example illustrates how to initialize adornments:
 {% tabs %}
 
 {% highlight xaml %}
-<chart:StackingBarSeries3D ItemsSource="{Binding CategoricalDatas}" XBindingPath="Year" YBindingPath="Plastic">
+<chart:StackingBarSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year" YBindingPath="Plastic">
     <!--AdornmentsInfo-->
     <chart:StackingBarSeries3D.AdornmentsInfo>
         <chart:ChartAdornmentInfo3D ShowLabel="True"></chart:ChartAdornmentInfo3D>
@@ -38,7 +38,7 @@ StackingBarSeries3D series = new StackingBarSeries3D()
     YBindingPath = "Plastic"                
 };
 
-ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo() { ShowLabel = true };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D() { ShowLabel = true };
 
 series.AdornmentsInfo = adornmentInfo;
 
@@ -51,7 +51,7 @@ chart.Series.Add(series);
 
 ## Marker
 
-To enable the marker in adornments, set the [`ShowMarker`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property to True. By default, there is no symbol displayed; you need to add the desired symbol using the Symbol property.
+To enable the marker in adornments, set the [`ShowMarker`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property to True. By default, there is no symbol displayed, you need to add the desired symbol using the Symbol property.
 
 The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
 
@@ -188,7 +188,7 @@ The following code example demonstrates how to use SymbolTemplate:
     
 <Grid>
     <chart:SfChart3D Width="500" Height="500">
-        <!-- Other chart elements -->
+        . . .
         <chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
             YBindingPath="Plastic">
             <chart:ColumnSeries3D.AdornmentsInfo>
@@ -196,7 +196,7 @@ The following code example demonstrates how to use SymbolTemplate:
                     SymbolTemplate="{StaticResource symbolTemplate}"></chart:ChartAdornmentInfo3D>
             </chart:ColumnSeries3D.AdornmentsInfo>
         </chart:ColumnSeries3D>
-        <!-- Other chart elements -->
+        . . .
     </chart:SfChart3D>
 </Grid>
 {% endhighlight %}

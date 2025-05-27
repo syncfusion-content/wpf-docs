@@ -9,7 +9,7 @@ documentation: ug
 
 # Series in WPF SfChart3D
 
-ChartSeries is the visual representation of the data. SfChart3D offers ten types of series. Based on your requirements and specifications, any type of Series can be added for data visualization. 
+ChartSeries is the visual representation of the data. SfChart3D offers eleven types of series. Based on your requirements and specifications, any type of Series can be added for data visualization. 
 
 * Column
 * Bar
@@ -19,6 +19,7 @@ ChartSeries is the visual representation of the data. SfChart3D offers ten types
 * Stacking column 
 * Stacking column 100 
 * Stacking bar
+* Stacking bar 100
 * Pie
 * Doughnut
 
