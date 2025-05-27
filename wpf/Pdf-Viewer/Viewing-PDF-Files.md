@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Viewing PDF Files in WPF Pdf Viewer control | Syncfusion<sup>&reg;</sup>;
+title: Viewing PDF Files in WPF Pdf Viewer control | Syncfusion
 description: Learn about Viewing PDF Files support in Syncfusion<sup>&reg;</sup>; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
