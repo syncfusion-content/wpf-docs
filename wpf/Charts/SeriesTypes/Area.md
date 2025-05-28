@@ -17,30 +17,21 @@ The following code example initializes the AreaSeries:
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:AreaSeries XBindingPath="FruitName" Interior="#BCBCBC" 
-
-YBindingPath="People" ItemsSource="{Binding Fruits}" >   
-
+                  YBindingPath="People" ItemsSource="{Binding Fruits}">   
+</chart:AreaSeries>
 {% endhighlight %}
 
 {% highlight c# %}
-
 AreaSeries series = new AreaSeries()
 {
-
     ItemsSource = new ViewModel().Fruits,
-
     XBindingPath = "FruitName",
-
     YBindingPath = "People",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -56,32 +47,22 @@ N> You can refer to our [WPF Area Chart](https://www.syncfusion.com/wpf-controls
 {% tabs %}
 
 {% highlight xaml %}
-
-<chart:StepAreaSeries  Interior="#7F7F7F"  
-
-ItemsSource="{Binding SneakersDetail}" XBindingPath="Brand" 
-
-YBindingPath="ItemsCount"/>
-
+<chart:StepAreaSeries Interior="#7F7F7F"  
+                      ItemsSource="{Binding SneakersDetail}" 
+                      XBindingPath="Brand" 
+                      YBindingPath="ItemsCount"/>
 {% endhighlight %}
 
 {% highlight c# %}
-
 StepAreaSeries series = new StepAreaSeries()
 {
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -97,34 +78,24 @@ If you wish to draw the open area series (Area with stroke only at top), SfChart
 {% tabs %}
 
 {% highlight xaml %}
-
-<chart:AreaSeries  IsClosed="False"
-
-XBindingPath="FruitName" Interior="#BCBCBC" 
-
-YBindingPath="People" ItemsSource="{Binding Fruits}" /> 
-
+<chart:AreaSeries IsClosed="False"
+                  XBindingPath="FruitName" 
+                  Interior="#BCBCBC" 
+                  YBindingPath="People" 
+                  ItemsSource="{Binding Fruits}" /> 
 {% endhighlight %}
 
 {% highlight c# %}
-
 AreaSeries series = new AreaSeries()
 {
-
     ItemsSource = new ViewModel().Fruits,
-
     XBindingPath = "FruitName",
-
     YBindingPath = "People",
-
-    IsClosed = true,
-
+    IsClosed = false,
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}

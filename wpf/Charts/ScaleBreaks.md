@@ -12,57 +12,39 @@ Scale break is a stripe drawn in the chart area to denote the break in the conti
 
 ## Positioning the Breaks
 
-SfChart provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Start) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_End) properties for defining the scale break range (ranges that needs to be skipped). These values are based on axis values. 
+SfChart provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Start) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_End) properties for defining the scale break range (ranges that need to be skipped). These values are based on axis values. 
 
-The following image has data points with both greater and smaller magnitude, but the segments with smaller values is not visualized properly.
+The following image has data points with both greater and smaller magnitude, but the segments with smaller values are not visualized properly.
 
 ![WPF Chart displays ScaleBreaks Position](ScaleBreak_images/wpf-chart-scalebreak-position.jpeg)
-
 
 Applying scale breaks helps in proper visualization of all the data points.
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis>                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="300"
-
-End="8500">
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis>                                
+        <chart:NumericalAxis.AxisScaleBreaks>                     
+            <chart:ChartAxisScaleBreak Start="300" End="8500">
+            </chart:ChartAxisScaleBreak>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 NumericalAxis axis = new NumericalAxis();
-
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
-
 scaleBreak.Start = 300;
-
 scaleBreak.End = 8500;
-
 axis.AxisScaleBreaks.Add(scaleBreak);
-
 chart.SecondaryAxis = axis;
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WPF Chart displays ScaleBreaks Position based on Axis Value](ScaleBreak_images/wpf-chart-scalebreak-based-on-axis.jpeg)
-
 
 ## Break Position Customization
 
@@ -72,58 +54,38 @@ Break position is determined based on the following factors:
 
 ### Data Count
 
-Based on the number of data points that fall in axis ranges (other than break range) scale break will be positioned.
+Based on the number of data points that fall in axis ranges (other than break range), scale break will be positioned.
 
-In the below image the range [0,350] contains maximum number of data compared to the range 
-
-[8000, 10000] hence the break is positioned in such a way that allocates more space to the range [0,350].
+In the below image, the range [0,350] contains maximum number of data compared to the range [8000, 10000], hence the break is positioned in such a way that allocates more space to the range [0,350].
 
 Range [0,350] takes nearly 4/5th of the axis height and the range [8000,10000] takes 1/5th.
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis x:Name="axis" BreakPosition="DataCount">                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="350"
-
-End="8000">  
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis x:Name="axis" BreakPosition="DataCount">                                
+        <chart:NumericalAxis.AxisScaleBreaks>                     
+            <chart:ChartAxisScaleBreak Start="350" End="8000">  
+            </chart:ChartAxisScaleBreak>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 NumericalAxis axis = new NumericalAxis();
-
 axis.BreakPosition = ScaleBreakPosition.DataCount;
-
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
-
 scaleBreak.Start = 350;
-
 scaleBreak.End = 8000;
-
 axis.AxisScaleBreaks.Add(scaleBreak);
-
 chart.SecondaryAxis = axis;
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WPF Chart displays ScaleBreak Position based on Data Count](ScaleBreak_images/wpf-chart-scalebreak-position-based-on-data.jpeg)
-
 
 ### Scale
 
@@ -132,47 +94,29 @@ chart.SecondaryAxis = axis;
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis x:Name="axis" BreakPosition="Scale">                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="350"
-
-End="8000">  
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis x:Name="axis" BreakPosition="Scale">                                
+        <chart:NumericalAxis.AxisScaleBreaks>                     
+            <chart:ChartAxisScaleBreak Start="350" End="8000">  
+            </chart:ChartAxisScaleBreak>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 NumericalAxis axis = new NumericalAxis();
-
 axis.BreakPosition = ScaleBreakPosition.Scale;
-
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
-
 scaleBreak.Start = 350;
-
 scaleBreak.End = 8000;
-
 axis.AxisScaleBreaks.Add(scaleBreak);
-
 chart.SecondaryAxis = axis;
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WPF Chart displays ScaleBreak Position based on Scale](ScaleBreak_images/wpf-chart-scalebreak-based-on-scale.jpeg)
-
 
 ### Percent
 
@@ -185,67 +129,40 @@ In the below image, each break is given percent value as 50. First break is posi
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis x:Name="axis" BreakPosition="Percent ">                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="300"
-
-End="8000" BreakPercent="50"> 
-
-</chart:ChartAxisScaleBreak>                     
-
-<chart:ChartAxisScaleBreak Start="12500"
-
-End="19000" BreakPercent="50"> 
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis.AxisScaleBreaks>
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis x:Name="axis" BreakPosition="Percent">                                
+        <chart:NumericalAxis.AxisScaleBreaks>                     
+            <chart:ChartAxisScaleBreak Start="300" End="8000" BreakPercent="50"> 
+            </chart:ChartAxisScaleBreak>                     
+            <chart:ChartAxisScaleBreak Start="12500" End="19000" BreakPercent="50"> 
+            </chart:ChartAxisScaleBreak>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 NumericalAxis axis = new NumericalAxis();
-
 axis.BreakPosition = ScaleBreakPosition.Percent;
 
 ChartAxisScaleBreak scaleBreak1 = new ChartAxisScaleBreak();
-
 scaleBreak1.Start = 300;
-
 scaleBreak1.End = 8000;
-
 scaleBreak1.BreakPercent = 50;
-
 axis.AxisScaleBreaks.Add(scaleBreak1);
 
 ChartAxisScaleBreak scaleBreak2 = new ChartAxisScaleBreak();
-
 scaleBreak2.Start = 12500;
-
 scaleBreak2.End = 19000;
-
 scaleBreak2.BreakPercent = 50;
-
 axis.AxisScaleBreaks.Add(scaleBreak2);
 
 chart.SecondaryAxis = axis;
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WPF Chart displays ScaleBreak Position based on Percentage](ScaleBreak_images/wpf-chart-scalebreak-based-on-percentage.jpeg)
-
 
 ## Multiple Breaks
 
@@ -254,61 +171,37 @@ Multiple breaks can be included in the chart.
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis>                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="300"
-
-End="8000"> 
-
-</chart:ChartAxisScaleBreak>                   
-
-<chart:ChartAxisScaleBreak Start="12500"
-
-End="19000"> 
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis.AxisScaleBreaks>
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis>                                
+        <chart:NumericalAxis.AxisScaleBreaks>                     
+            <chart:ChartAxisScaleBreak Start="300" End="8000"> 
+            </chart:ChartAxisScaleBreak>                   
+            <chart:ChartAxisScaleBreak Start="12500" End="19000"> 
+            </chart:ChartAxisScaleBreak>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 NumericalAxis axis = new NumericalAxis();
 
 ChartAxisScaleBreak scaleBreak1 = new ChartAxisScaleBreak();
-
 scaleBreak1.Start = 300;
-
 scaleBreak1.End = 8000;
-
 axis.AxisScaleBreaks.Add(scaleBreak1);
 
 ChartAxisScaleBreak scaleBreak2 = new ChartAxisScaleBreak();
-
 scaleBreak2.Start = 12500;
-
 scaleBreak2.End = 19000;
-
 axis.AxisScaleBreaks.Add(scaleBreak2);
 
 chart.SecondaryAxis = axis;
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Multiple ScaleBreaks in WPF Chart](ScaleBreak_images/wpf-chart-multiple-scale-breaks.jpeg)
-
 
 ## Customization
 
@@ -319,60 +212,35 @@ Line type such as [`Wave`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis>                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="300"  BreakSpacing="12"
-
-End="8500" LineType="Wave" 
-
-Fill="PaleTurquoise"
-
-Stroke="Black" StrokeThickness="1.2" >  
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis.AxisScaleBreaks> 
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis>                                
+        <chart:NumericalAxis.AxisScaleBreaks>                     
+            <chart:ChartAxisScaleBreak Start="300" BreakSpacing="12"
+                                      End="8500" LineType="Wave" 
+                                      Fill="PaleTurquoise"
+                                      Stroke="Black" StrokeThickness="1.2">  
+            </chart:ChartAxisScaleBreak>
+        </chart:NumericalAxis.AxisScaleBreaks> 
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 NumericalAxis axis = new NumericalAxis();
-
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
-
 scaleBreak.Start = 300;
-
 scaleBreak.End = 8500;
-
 scaleBreak.LineType = BreakLineType.Wave;
-
 scaleBreak.BreakSpacing = 12;
-
 scaleBreak.Fill = new SolidColorBrush(Colors.PaleTurquoise);
-
 scaleBreak.Stroke = new SolidColorBrush(Colors.Black);
-
 scaleBreak.StrokeThickness = 1.2;
-
 axis.AxisScaleBreaks.Add(scaleBreak);
-
 chart.SecondaryAxis = axis;
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Customization of ScaleBreaks in WPF Chart](ScaleBreak_images/wpf-chart-scalebreak-customization.jpeg)
 
-
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.

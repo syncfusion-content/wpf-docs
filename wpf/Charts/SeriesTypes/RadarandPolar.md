@@ -11,43 +11,30 @@ documentation: ug
 
 ## Radar Chart
 
-[`RadarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RadarSeries.html#) represents a collection of data, displayed by quantitative variables, represented by axes starting from the same point. The relative position and angle of the axes is not uniform. 
+[`RadarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RadarSeries.html#) represents a collection of data displayed by quantitative variables, represented by axes starting from the same point. The relative position and angle of the axes are not uniform.
 
 The following code example illustrates the use of radar series:
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:RadarSeries ItemsSource="{Binding PlantDetails}" 
-
-Interior="#BCBCBC"
-
-XBindingPath="Direction"
-
-YBindingPath="Tree" >
-
+                   Interior="#BCBCBC"
+                   XBindingPath="Direction"
+                   YBindingPath="Tree">
 </chart:RadarSeries>        
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 RadarSeries series = new RadarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -58,47 +45,34 @@ N> You can explore our [WPF Radar Chart](https://www.syncfusion.com/wpf-controls
 
 ## Polar Chart
 
-[`PolarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PolarSeries.html#) displays data points that are grouped by category, on a 360 degree circle. The following code example shows how to use polar series.
+[`PolarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PolarSeries.html#) displays data points that are grouped by category on a 360-degree circle. The following code example shows how to use polar series:
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:PolarSeries Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-XBindingPath="Direction"
-
-YBindingPath="Tree" />                 
-
+                   ItemsSource="{Binding PlantDetails}"  
+                   XBindingPath="Direction"
+                   YBindingPath="Tree" />                 
 {% endhighlight %}
 
 {% highlight c# %}
-
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WPF Polar Chart](Series_images/wpf-polar-chart.png)
 
-
-The Radar and Polar charts having the following properties in common:
+The Radar and Polar charts have the following properties in common:
 
 * [`IsClosed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_IsClosed)
 * [`DrawType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_DrawType)
@@ -106,49 +80,32 @@ The Radar and Polar charts having the following properties in common:
 
 ### IsClosed
 
-This property used to draw the closed path as below.
+This property is used to draw the closed path as shown below:
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-Label="Amount Spent" DrawType="Line" IsClosed="False" 
-
-XBindingPath="Direction" YBindingPath="Tree" 
-
-StrokeThickness="2" />
-
+                   ItemsSource="{Binding PlantDetails}"  
+                   Label="Amount Spent" DrawType="Line" IsClosed="False" 
+                   XBindingPath="Direction" YBindingPath="Tree" 
+                   StrokeThickness="2" />
 {% endhighlight %}
 
 {% highlight c# %}
-
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     IsClosed = false,
-
     DrawType = ChartSeriesDrawType.Line,
-
     Label = "Amount Spent",
-
     StrokeThickness = 2,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -157,92 +114,62 @@ chart.Series.Add(series);
 
 ### DrawType
 
-This property defines type of curve, whether its [`Line`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html) or [`Area`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html).
+This property defines the type of curve, whether it's [`Line`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html) or [`Area`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html).
 
-**DrawType** **as** **Area**
+**DrawType as Area**
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-DrawType="Area" IsClosed="True" 
-
-XBindingPath="Direction" YBindingPath="Tree" />
-
+                   ItemsSource="{Binding PlantDetails}"  
+                   DrawType="Area" IsClosed="True" 
+                   XBindingPath="Direction" YBindingPath="Tree" />
 {% endhighlight %}
 
 {% highlight c# %}
-
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
-    IsClosed = True,
-
+    IsClosed = true,
     DrawType = ChartSeriesDrawType.Area,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WPF Polar Chart with Covered Area](Series_images/wpf-polar-chart-covered-area.png)
 
-**DrawType** **as** **Line**
+**DrawType as Line**
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-DrawType="Line" IsClosed="True" 
-
-XBindingPath="Direction" YBindingPath="Tree" 
-
-StrokeThickness="2" />
-
+                   ItemsSource="{Binding PlantDetails}"  
+                   DrawType="Line" IsClosed="True" 
+                   XBindingPath="Direction" YBindingPath="Tree" 
+                   StrokeThickness="2" />
 {% endhighlight %}
 
 {% highlight c# %}
-
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
-    IsClosed = True,
-
+    IsClosed = true,
     DrawType = ChartSeriesDrawType.Line,
-
     StrokeThickness = 2,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -251,189 +178,130 @@ chart.Series.Add(series);
 
 ### Polar Angle
 
-[`Chart axis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html) provides support to render polar and radar series on 0,90,180 and 270 degrees. It can be achieved by its [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) property.The [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) is type of [`ChartPolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) and its default value is [`Rotate270`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html).`Rotate0`, `Rotate90` and `Rotate180` are another supported values of [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle). Both the primary and secondary axes can be rotated individually based on its [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value.
+[`Chart axis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html) provides support to render polar and radar series at 0, 90, 180, and 270 degrees. This can be achieved using the [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) property. The [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) is of type [`ChartPolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) and its default value is [`Rotate270`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html). `Rotate0`, `Rotate90`, and `Rotate180` are other supported values of [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle). Both the primary and secondary axes can be rotated individually based on their [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value.
 
 **Rotate0**
 
-The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate0`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series are rotated when [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate0`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html):
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  PolarAngle="Rotate0"/>
-
+    <chart:CategoryAxis PolarAngle="Rotate0"/>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis PolarAngle="Rotate0"/>
-
+    <chart:NumericalAxis PolarAngle="Rotate0"/>
 </chart:SfChart.SecondaryAxis>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
- chart.PrimaryAxis = new CategoryAxis()
-
- {
-
-    PolarAngle = ChartPolarAngle.Rotate0
-
- };
-
-chart.SecondaryAxis = new NumericalAxis()
-
+chart.PrimaryAxis = new CategoryAxis()
 {
-
     PolarAngle = ChartPolarAngle.Rotate0
-            
 };
 
+chart.SecondaryAxis = new NumericalAxis()
+{
+    PolarAngle = ChartPolarAngle.Rotate0
+};
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WPF Polar Chart with Zero Rotation](Series_images/wpf-polar-chart-with-zero-rotation.png)
 
-
 **Rotate90**
 
-The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate90`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series are rotated when [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate90`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html):
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  PolarAngle="Rotate90"/>
-
+    <chart:CategoryAxis PolarAngle="Rotate90"/>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis PolarAngle="Rotate90"/>
-
+    <chart:NumericalAxis PolarAngle="Rotate90"/>
 </chart:SfChart.SecondaryAxis>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
- chart.PrimaryAxis = new CategoryAxis()
-
- {
-
-    PolarAngle = ChartPolarAngle.Rotate90
-
- };
-
-chart.SecondaryAxis = new NumericalAxis()
-
+chart.PrimaryAxis = new CategoryAxis()
 {
-
     PolarAngle = ChartPolarAngle.Rotate90
-            
 };
 
+chart.SecondaryAxis = new NumericalAxis()
+{
+    PolarAngle = ChartPolarAngle.Rotate90
+};
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WPF Polar Chart with 90 Degree Rotation](Series_images/wpf-polar-chart-90-rotation.png)
 
-
 **Rotate180**
 
-The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate180`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series are rotated when [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate180`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html):
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  PolarAngle="Rotate180"/>
-
+    <chart:CategoryAxis PolarAngle="Rotate180"/>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis PolarAngle="Rotate180"/>
-
+    <chart:NumericalAxis PolarAngle="Rotate180"/>
 </chart:SfChart.SecondaryAxis>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
- chart.PrimaryAxis = new CategoryAxis()
-
- {
-
-    PolarAngle = ChartPolarAngle.Rotate180
-
- };
-
-chart.SecondaryAxis = new NumericalAxis()
-
+chart.PrimaryAxis = new CategoryAxis()
 {
-
     PolarAngle = ChartPolarAngle.Rotate180
-            
 };
 
+chart.SecondaryAxis = new NumericalAxis()
+{
+    PolarAngle = ChartPolarAngle.Rotate180
+};
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WPF Polar Chart with 180 Degree Rotation](Series_images/wpf-polar-chart-180-degree-rotation.png)
 
-
 **Rotate270**
 
-The below snippet explains how the axes of series has been rotated, when [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate270`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series are rotated when [`PolarAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate270`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html):
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  PolarAngle="Rotate270"/>
-
+    <chart:CategoryAxis PolarAngle="Rotate270"/>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis PolarAngle="Rotate270"/>
-
+    <chart:NumericalAxis PolarAngle="Rotate270"/>
 </chart:SfChart.SecondaryAxis>
-
 {% endhighlight %}
 
 {% highlight c# %}
-
- chart.PrimaryAxis = new CategoryAxis()
-
- {
-
-    PolarAngle = ChartPolarAngle.Rotate270
-
- };
-
-chart.SecondaryAxis = new NumericalAxis()
-
+chart.PrimaryAxis = new CategoryAxis()
 {
-
     PolarAngle = ChartPolarAngle.Rotate270
-            
 };
 
+chart.SecondaryAxis = new NumericalAxis()
+{
+    PolarAngle = ChartPolarAngle.Rotate270
+};
 {% endhighlight %}
 
 {% endtabs %}

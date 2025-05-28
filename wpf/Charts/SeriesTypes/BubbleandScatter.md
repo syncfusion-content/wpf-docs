@@ -11,21 +11,21 @@ documentation: ug
 
 ## Bubble Chart
 
-[`BubbleSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#) is represented by closely packed circles, whose areas are proportional to the quantities. 
+[`BubbleSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html) is represented by closely packed circles whose areas are proportional to the quantities.
 
-The size of the bubble series is relative proportional to the value bind with the series using [`Size`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_Size)  property. You can set the constraints on this size using [`MinimumRadius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MinimumRadius) and [`MaximumRadius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MaximumRadius).
+The size of the bubble series is proportional to the value bound with the series using the [`Size`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_Size) property. You can set constraints on this size using [`MinimumRadius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MinimumRadius) and [`MaximumRadius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MaximumRadius) properties.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:BubbleSeries  ItemsSource="{Binding Fruits}"  XBindingPath="FruitName" 
-
-YBindingPath="People"   Size="Size" MinimumRadius="5" 
-
-MaximumRadius="10"
-
-Interior="#BCBCBC" />
+<chart:BubbleSeries ItemsSource="{Binding Fruits}" 
+                    XBindingPath="FruitName" 
+                    YBindingPath="People"   
+                    Size="Size" 
+                    MinimumRadius="5" 
+                    MaximumRadius="10"
+                    Interior="#BCBCBC" />
 
 {% endhighlight %}
 
@@ -33,19 +33,13 @@ Interior="#BCBCBC" />
 
 BubbleSeries series = new BubbleSeries()
 {
-
     ItemsSource = new ViewModel().Fruits,
-
     XBindingPath = "FruitName",
-
     YBindingPath = "People",
-
     Size = "Size",
-
     MinimumRadius = 5,
-
+    MaximumRadius = 10,
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -58,17 +52,17 @@ chart.Series.Add(series);
 
 N> You can refer to our [WPF Bubble Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-bubble-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Bubble Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/Bubble.xaml) to know how to render and configure the bubble chart.
 
-**Show Zero Bubbles**
+### Show Zero Bubbles
 
 The zero size bubble segments can be enabled or disabled by using the [`ShowZeroBubbles`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_ShowZeroBubbles) property. By default, the property value is True.
-The following code illustrates how to set the value to the property.
+
+The following code illustrates how to set the value to the property:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:BubbleSeries ShowZeroBubbles="True" >
-
+<chart:BubbleSeries ShowZeroBubbles="True">
 </chart:BubbleSeries>
 
 {% endhighlight %}
@@ -76,7 +70,6 @@ The following code illustrates how to set the value to the property.
 {% highlight c# %}
 
 BubbleSeries series = new BubbleSeries();
-
 series.ShowZeroBubbles = true;
 
 {% endhighlight %}
@@ -85,14 +78,13 @@ series.ShowZeroBubbles = true;
 
 ![WPF Chart displays Zero Bubbles](Series_images/wpf-chart-zero-bubble.png)
 
-The following code example and screenshots describes when [`ShowZeroBubbles`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_ShowZeroBubbles) value is false.
+The following code example and screenshots describe when [`ShowZeroBubbles`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_ShowZeroBubbles) value is false:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:BubbleSeries ShowZeroBubbles="False" >
-
+<chart:BubbleSeries ShowZeroBubbles="False">
 </chart:BubbleSeries>
 
 {% endhighlight %}
@@ -100,7 +92,6 @@ The following code example and screenshots describes when [`ShowZeroBubbles`](ht
 {% highlight c# %}
 
 BubbleSeries series = new BubbleSeries();
-
 series.ShowZeroBubbles = false;
 
 {% endhighlight %}
@@ -111,17 +102,18 @@ series.ShowZeroBubbles = false;
 
 ## Scatter Chart
 
-[`ScatterSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#) is similar to bubble series when each point being represented by an ellipse with equal size. This size can be defined by using [`ScatterHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_ScatterHeight) and [`ScatterWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_ScatterWidth) properties.
+[`ScatterSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries.html) is similar to bubble series with each point being represented by an ellipse with equal size. This size can be defined by using [`ScatterHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_ScatterHeight) and [`ScatterWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_ScatterWidth) properties.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:ScatterSeries Interior="#4A4A4A" ScatterHeight="4" ScatterWidth="4" 
-
-ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions" 
-
-YBindingPath="WaitingTime"/>
+<chart:ScatterSeries Interior="#4A4A4A" 
+                     ScatterHeight="4" 
+                     ScatterWidth="4" 
+                     ItemsSource="{Binding DataPoints}" 
+                     XBindingPath="Eruptions" 
+                     YBindingPath="WaitingTime"/>
 
 {% endhighlight %}
 
@@ -129,19 +121,12 @@ YBindingPath="WaitingTime"/>
 
 ScatterSeries series = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().DataPoints,
-
     XBindingPath = "Eruptions",
-
     YBindingPath = "WaitingTime",
-
     ScatterHeight = 4,
-
     ScatterWidth = 4,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -154,4 +139,4 @@ chart.Series.Add(series);
 
 ## See also
 
-[`How to change the size and color of scatter series`](https://www.syncfusion.com/kb/3857/how-to-change-the-size-and-color-of-scatter-series)
+[How to change the size and color of scatter series](https://www.syncfusion.com/kb/3857/how-to-change-the-size-and-color-of-scatter-series)

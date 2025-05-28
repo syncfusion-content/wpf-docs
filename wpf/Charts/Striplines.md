@@ -13,24 +13,18 @@ SfChart allows you to add Striplines to the chart, which shades the specific reg
 
 ## Positioning the Striplines
 
-SfChart provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Start) and [`Width`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Width) property for defining the Stripline start and end range. These values correspond to the axis values (or range). The Stripline can be filled using brush set in [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Background) property.
+SfChart provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Start) and [`Width`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Width) properties for defining the Stripline start and end range. These values correspond to the axis values (or range). The Stripline can be filled using the brush set in the [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Background) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis >
-
-<syncfusion:NumericalAxis.StripLines>
-
-<syncfusion:ChartStripLine Start="20" Width="10"  Background="#BCBCBC"/>
-
-</syncfusion:NumericalAxis.StripLines>
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis>
+        <syncfusion:NumericalAxis.StripLines>
+            <syncfusion:ChartStripLine Start="20" Width="10" Background="#BCBCBC"/>
+        </syncfusion:NumericalAxis.StripLines>
+    </syncfusion:NumericalAxis>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -41,15 +35,12 @@ NumericalAxis axis = new NumericalAxis();
 
 ChartStripLine stripline = new ChartStripLine()
 {
-
-    Start = 20, Width = 10,
-
+    Start = 20, 
+    Width = 10,
     Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 axis.StripLines.Add(stripline);
-
 chart.SecondaryAxis = axis;
 
 {% endhighlight %}
@@ -61,28 +52,22 @@ chart.SecondaryAxis = axis;
 
 ### Position based on device coordinates
 
-You can specify the stripline width in pixel by enabling [`IsPixelWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_IsPixelWidth) Boolean property. By default, this property value is false.
+You can specify the stripline width in pixels by enabling the [`IsPixelWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_IsPixelWidth) Boolean property. By default, this property value is false.
 
-The following code example illustrates the positioning of stripline based on pixels.
+The following code example illustrates the positioning of stripline based on pixels:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis >
-
-<syncfusion:NumericalAxis.StripLines>
-
-<syncfusion:ChartStripLine Start="20" Width="10"  
-
-IsPixelWidth="True" Background="#BCBCBC"/>
-
-</syncfusion:NumericalAxis.StripLines>
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis>
+        <syncfusion:NumericalAxis.StripLines>
+            <syncfusion:ChartStripLine Start="20" Width="10" 
+                                      IsPixelWidth="True" 
+                                      Background="#BCBCBC"/>
+        </syncfusion:NumericalAxis.StripLines>
+    </syncfusion:NumericalAxis>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -93,17 +78,13 @@ NumericalAxis axis = new NumericalAxis();
 
 ChartStripLine stripline = new ChartStripLine()
 {
-
-    Start = 20, Width = 10,
-
+    Start = 20, 
+    Width = 10,
     IsPixelWidth = true,
-
     Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 axis.StripLines.Add(stripline);
-
 chart.SecondaryAxis = axis;
 
 {% endhighlight %}
@@ -115,34 +96,24 @@ chart.SecondaryAxis = axis;
 
 ## Label 
 
-We can define any text inside the stripline using [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Label) property. Also SfChart provides various customization options for this label like alignment, templates, etc.
+You can define any text inside the stripline using the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Label) property. SfChart also provides various customization options for this label such as alignment and templates.
 
-The [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelHorizontalAlignment) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelVerticalAlignment) property can be used for positioning the labels inside the stripline.
+The [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelHorizontalAlignment) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelVerticalAlignment) properties can be used for positioning the labels inside the stripline.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis>              
-
-<syncfusion:NumericalAxis.StripLines>
-
-<syncfusion:ChartStripLine Start="10" Width="10"  
-
-Label="Stock Price" 
-
-LabelHorizontalAlignment="Center" 
-
-LabelVerticalAlignment="Top"
-
-Background="#BCBCBC"/>
-
-</syncfusion:NumericalAxis.StripLines>
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis>              
+        <syncfusion:NumericalAxis.StripLines>
+            <syncfusion:ChartStripLine Start="10" Width="10"  
+                                      Label="Stock Price" 
+                                      LabelHorizontalAlignment="Center" 
+                                      LabelVerticalAlignment="Top"
+                                      Background="#BCBCBC"/>
+        </syncfusion:NumericalAxis.StripLines>
+    </syncfusion:NumericalAxis>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -153,21 +124,15 @@ NumericalAxis axis = new NumericalAxis();
 
 ChartStripLine stripline = new ChartStripLine()
 {
-
-    Start = 20, Width = 10,
-
+    Start = 20, 
+    Width = 10,
     Label = "Stock Price",
-
     LabelHorizontalAlignment = HorizontalAlignment.Center,
-
     LabelVerticalAlignment = VerticalAlignment.Top,
-
     Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 axis.StripLines.Add(stripline);
-
 chart.SecondaryAxis = axis;
 
 {% endhighlight %}
@@ -179,30 +144,21 @@ chart.SecondaryAxis = axis;
 
 ### Rotating the label
 
-The label can be rotated to the specified angle using [`LabelAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelAngle) property. The following code example explains the rotation of stripline label:
+The label can be rotated to a specified angle using the [`LabelAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelAngle) property. The following code example demonstrates the rotation of a stripline label:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis>     
-
-<syncfusion:NumericalAxis.StripLines>
-
-<syncfusion:ChartStripLine Start="10" Width="20"  
-
-Label="Stock Price" 
-
-LabelAngle="-45"
-
-Background="#BCBCBC"/>
-
-</syncfusion:NumericalAxis.StripLines>
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis>     
+        <syncfusion:NumericalAxis.StripLines>
+            <syncfusion:ChartStripLine Start="10" Width="20"  
+                                      Label="Stock Price" 
+                                      LabelAngle="-45"
+                                      Background="#BCBCBC"/>
+        </syncfusion:NumericalAxis.StripLines>
+    </syncfusion:NumericalAxis>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -213,19 +169,14 @@ NumericalAxis axis = new NumericalAxis();
 
 ChartStripLine stripline = new ChartStripLine()
 {
-
-    Start = 20, Width = 10,
-
+    Start = 20, 
+    Width = 10,
     Label = "Stock Price",
-
     LabelAngle = -45,
-
     Background = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 axis.StripLines.Add(stripline);
-
 chart.SecondaryAxis = axis;
 
 {% endhighlight %}
@@ -235,56 +186,37 @@ chart.SecondaryAxis = axis;
 ![WPF Chart displays Label Rotated in Stripline](Striplines_images/wpf-chart-stripline-label-rotation.png)
 
 
-N> Here, Start and Width of the stripline as adjusted based on the rotation angle. Stripline won’t adjust its range based on the stripline angle.
+N> Here, Start and Width of the stripline are adjusted based on the rotation angle. The stripline won't adjust its range based on the stripline angle.
 
 ### Template support for the label
 
-[`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelTemplate) property allows you to define the data template for the stripline label like the following code example.
+The [`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelTemplate) property allows you to define a data template for the stripline label as shown in the following code example:
 
 {% tabs %}
 
 {% highlight xaml %}
 
- <syncfusion:SfChart x:Name="chart">
-
+<syncfusion:SfChart x:Name="chart">
     <syncfusion:SfChart.Resources>
-
         <DataTemplate x:Key="labelTemplate">
-
-                    <Border Background="Gray" CornerRadius="5" >
-
-                        <TextBlock Text="{Binding }" Foreground="White" 
-                                   
-                                   FontStyle="Normal" FontSize="10" 
-                                   
-                                   FontWeight="Bold" Margin="3"/>
-
-                    </Border>
-
+            <Border Background="Gray" CornerRadius="5">
+                <TextBlock Text="{Binding}" Foreground="White" 
+                           FontStyle="Normal" FontSize="10" 
+                           FontWeight="Bold" Margin="3"/>
+            </Border>
         </DataTemplate>
-
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.PrimaryAxis>
-
-          <syncfusion:NumericalAxis>
-
-                <syncfusion:NumericalAxis.StripLines>
-
-                    <syncfusion:ChartStripLine Width="20" Start="10" 
-                                                       
-                                               Label="Stock Price" 
-                                                       
-                                                Background="#C3C3C3"
-                                                       
-                                                LabelTemplate="{StaticResource labelTemplate}"/>
-
-                </syncfusion:NumericalAxis.StripLines>
-
-            </syncfusion:NumericalAxis>
-
+        <syncfusion:NumericalAxis>
+            <syncfusion:NumericalAxis.StripLines>
+                <syncfusion:ChartStripLine Width="20" Start="10" 
+                                          Label="Stock Price" 
+                                          Background="#C3C3C3"
+                                          LabelTemplate="{StaticResource labelTemplate}"/>
+            </syncfusion:NumericalAxis.StripLines>
+        </syncfusion:NumericalAxis>
     </syncfusion:SfChart.PrimaryAxis>
-
 </syncfusion:SfChart>
         
 {% endhighlight %}
@@ -292,22 +224,15 @@ N> Here, Start and Width of the stripline as adjusted based on the rotation angl
 {% highlight c# %}
 
 SfChart chart = new SfChart();
-
 chart.PrimaryAxis = new NumericalAxis();
 
 ChartStripLine stripline = new ChartStripLine()
 {
-
     Width = 20,
-
     Start = 10,
-
     Label = "Stock Price",
-
-    Background =new SolidColorBrush(Color.FromRgb(0xC3,0XC3,0XC3)),
-
+    Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3)),
     LabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
-
 };
 
 chart.PrimaryAxis.StripLines.Add(stripline);
@@ -321,42 +246,27 @@ chart.PrimaryAxis.StripLines.Add(stripline);
 
 ## Multiple Striplines
 
-You can add multiple number of striplines in the same axis like the following code example,
+You can add multiple striplines to the same axis as shown in the following code example:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis >
-
-<syncfusion:NumericalAxis.StripLines>
-
-<syncfusion:ChartStripLine 
-
-SegmentStartValue="0" 
-
-Width="10" 
-
-Start="0" Label="Low" Background="#C3C3C3"/>
-
-<syncfusion:ChartStripLine 
-
-Width="10" Start="20"
-
-Label="Average" Background="#C3C3C3"/>
-
-<syncfusion:ChartStripLine 
-
-Width="10" 
-
-Start="40" Label="High" Background="#C3C3C3"/>
-
-</syncfusion:NumericalAxis.StripLines>
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis>
+        <syncfusion:NumericalAxis.StripLines>
+            <syncfusion:ChartStripLine 
+                SegmentStartValue="0" 
+                Width="10" 
+                Start="0" Label="Low" Background="#C3C3C3"/>
+            <syncfusion:ChartStripLine 
+                Width="10" Start="20"
+                Label="Average" Background="#C3C3C3"/>
+            <syncfusion:ChartStripLine 
+                Width="10" 
+                Start="40" Label="High" Background="#C3C3C3"/>
+        </syncfusion:NumericalAxis.StripLines>
+    </syncfusion:NumericalAxis>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -367,43 +277,32 @@ NumericalAxis axis = new NumericalAxis();
 
 ChartStripLine stripline1 = new ChartStripLine()
 {
-
-    SegmentStartValue = 0, Start = 0,
-
-    Width = 10, Label = "Low",
-
+    SegmentStartValue = 0, 
+    Start = 0,
+    Width = 10, 
+    Label = "Low",
     Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
-
 };
 
 ChartStripLine stripline2 = new ChartStripLine()
 {
-
-    Start = 20, Width = 10,
-
+    Start = 20, 
+    Width = 10,
     Label = "Average",
-
     Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
-
 };
 
 ChartStripLine stripline3 = new ChartStripLine()
 {
-
-    Start = 40,Width = 10,
-
+    Start = 40,
+    Width = 10,
     Label = "High",
-
     Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
-
 };
 
 axis.StripLines.Add(stripline1);
-
 axis.StripLines.Add(stripline2);
-
 axis.StripLines.Add(stripline3);
-
 chart.SecondaryAxis = axis;
 
 {% endhighlight %}
@@ -413,24 +312,19 @@ chart.SecondaryAxis = axis;
 ![Multiple Striplines in WPF Chart](Striplines_images/wpf-chart-multiple-striplines.png)
 
 
-If you want to repeat the same type of stripline at regular intervals, SfChart provides two properties[`RepeatEvery`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_RepeatEvery) and [`RepeatUntil`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_RepeatUntil).
+If you want to repeat the same type of stripline at regular intervals, SfChart provides two properties: [`RepeatEvery`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_RepeatEvery) and [`RepeatUntil`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_RepeatUntil).
 
-N> This can be used to fill plot area background alternatively.
+N> This can be used to fill the plot area background alternatively.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:NumericalAxis.StripLines>
-
-<syncfusion:ChartStripLine RepeatEvery="20" RepeatUntil="50"
-
-Width="10"  Start="0" Background="#C3C3C3"/>
-
-<syncfusion:ChartStripLine RepeatEvery="20" RepeatUntil="50"
-
-Width="10"  Start="10" Background="#A3A3A3"/>
-
+    <syncfusion:ChartStripLine RepeatEvery="20" RepeatUntil="50"
+                              Width="10" Start="0" Background="#C3C3C3"/>
+    <syncfusion:ChartStripLine RepeatEvery="20" RepeatUntil="50"
+                              Width="10" Start="10" Background="#A3A3A3"/>
 </syncfusion:NumericalAxis.StripLines>
 
 {% endhighlight %}
@@ -440,37 +334,25 @@ Width="10"  Start="10" Background="#A3A3A3"/>
 NumericalAxis axis = new NumericalAxis();
 
 ChartStripLine stripline1 = new ChartStripLine()
-
 {
-
     RepeatEvery = 20,
-
     RepeatUntil = 50,
-
-    Start = 0, Width = 10,
-
+    Start = 0, 
+    Width = 10,
     Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
-
 };
 
 ChartStripLine stripline2 = new ChartStripLine()
-
 {
-
     RepeatEvery = 20,
-
     RepeatUntil = 50,
-
-    Start = 10, Width = 10,
-
+    Start = 10, 
+    Width = 10,
     Background = new SolidColorBrush(Color.FromRgb(0xA3, 0xA3, 0xA3))
-
 };
 
 axis.StripLines.Add(stripline1);
-
 axis.StripLines.Add(stripline2);
-
 chart.SecondaryAxis = axis;
 
 {% endhighlight %}
@@ -482,56 +364,36 @@ chart.SecondaryAxis = axis;
 
 ## Segmented Stripline
 
-Striplines can also be placed in a particular region with respect to segment. You can enable the segment striplines using [`IsSegmented`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_IsSegmented) property.
+Striplines can also be placed in a particular region with respect to a segment. You can enable segment striplines using the [`IsSegmented`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_IsSegmented) property.
 
-So the start and end value of this type of striplines can be defined using [`SegmentStartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_SegmentStartValue) and [`SegmentEndValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_SegmentEndValue) property.
+The start and end values of this type of stripline can be defined using the [`SegmentStartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_SegmentStartValue) and [`SegmentEndValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_SegmentEndValue) properties.
 
-The following code example demonstrates segmented striplines.
+The following code example demonstrates segmented striplines:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis >
-
-<syncfusion:NumericalAxis.StripLines>
-
-<syncfusion:ChartStripLine 
-
-IsSegmented="True" SegmentStartValue="0" 
-
-Width="10" SegmentEndValue="2"                                               
-
-SegmentAxisName="Segment1"  
-
-Start="0" Label="Low" Background="#C3C3C3"/>
-
-<syncfusion:ChartStripLine 
-
-IsSegmented="True" SegmentStartValue="2"
-
-SegmentAxisName="Segment2"  
-
-Width="10" SegmentEndValue="4" Start="20"
-
-Label="Average" Background="#C3C3C3"/>
-
-<syncfusion:ChartStripLine 
-
-IsSegmented="True" SegmentStartValue="4" 
-
-Width="10" SegmentEndValue="6" 
-
-SegmentAxisName="Segment3"  
-
-Start="40" Label="High" Background="#C3C3C3"/>
-
-</syncfusion:NumericalAxis.StripLines>
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis>
+        <syncfusion:NumericalAxis.StripLines>
+            <syncfusion:ChartStripLine 
+                IsSegmented="True" SegmentStartValue="0" 
+                Width="10" SegmentEndValue="2"                                               
+                SegmentAxisName="Segment1"  
+                Start="0" Label="Low" Background="#C3C3C3"/>
+            <syncfusion:ChartStripLine 
+                IsSegmented="True" SegmentStartValue="2"
+                SegmentAxisName="Segment2"  
+                Width="10" SegmentEndValue="4" Start="20"
+                Label="Average" Background="#C3C3C3"/>
+            <syncfusion:ChartStripLine 
+                IsSegmented="True" SegmentStartValue="4" 
+                Width="10" SegmentEndValue="6" 
+                SegmentAxisName="Segment3"  
+                Start="40" Label="High" Background="#C3C3C3"/>
+        </syncfusion:NumericalAxis.StripLines>
+    </syncfusion:NumericalAxis>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -542,65 +404,43 @@ NumericalAxis axis = new NumericalAxis();
 
 ChartStripLine stripline1 = new ChartStripLine()
 {
-
     IsSegmented = true,
-
     SegmentStartValue = 0,
-
     SegmentEndValue = 2,
-
     SegmentAxisName = "Segment1",
-
-    Start = 0, Width = 10,
-
+    Start = 0, 
+    Width = 10,
     Label = "Low",
-
     Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
-
 };
 
 ChartStripLine stripline2 = new ChartStripLine()
 {
     IsSegmented = true,
-
     SegmentStartValue = 2,
-
     SegmentEndValue = 4,
-
     SegmentAxisName = "Segment2",
-
-    Start = 20, Width = 10,
-
+    Start = 20, 
+    Width = 10,
     Label = "Average",
-
     Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
 };
 
 ChartStripLine stripline3 = new ChartStripLine()
 {
-
     IsSegmented = true,
-
     SegmentStartValue = 4,
-
     SegmentEndValue = 6,
-
     SegmentAxisName = "Segment3",
-
-    Start = 40, Width = 10,
-
+    Start = 40, 
+    Width = 10,
     Label = "High",
-
     Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
-
 };
 
 axis.StripLines.Add(stripline1);
-
 axis.StripLines.Add(stripline2);
-
 axis.StripLines.Add(stripline3);
-
 chart.SecondaryAxis = axis;
 
 {% endhighlight %}
@@ -612,30 +452,21 @@ chart.SecondaryAxis = axis;
 
 ## Customization
 
-The background, border brush and border thickness of the stripline can be modified using [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Background), [`BorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_BorderBrush) and [`BorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_BorderThickness) properties  as in the following code example.
+The background, border brush, and border thickness of the stripline can be modified using the [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Background), [`BorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_BorderBrush), and [`BorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_BorderThickness) properties as shown in the following code example:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis >
-
-<syncfusion:NumericalAxis.StripLines>
-
-<syncfusion:ChartStripLine Start="20" Width="15"   
-
-BorderBrush="Black" 
-
-BorderThickness="2"
-
-Background="#C3C3C3"/>
-
-</syncfusion:NumericalAxis.StripLines>
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis>
+        <syncfusion:NumericalAxis.StripLines>
+            <syncfusion:ChartStripLine Start="20" Width="15"   
+                                      BorderBrush="Black" 
+                                      BorderThickness="2"
+                                      Background="#C3C3C3"/>
+        </syncfusion:NumericalAxis.StripLines>
+    </syncfusion:NumericalAxis>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -645,21 +476,15 @@ Background="#C3C3C3"/>
 NumericalAxis axis = new NumericalAxis();
 
 ChartStripLine stripline = new ChartStripLine()  
-
 {
-
-    Start = 20, Width = 15,
-
+    Start = 20, 
+    Width = 15,
     BorderThickness = new Thickness(2),
-
     BorderBrush = new SolidColorBrush(Colors.Black),
-
     Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
-
 };
 
 axis.StripLines.Add(stripline);
-
 chart.SecondaryAxis = axis;
 
 {% endhighlight %}
@@ -671,46 +496,31 @@ chart.SecondaryAxis = axis;
 
 ### Transparency 
 
-You can set the transparency for the striplines using `Opacity` property as in the following code snippets.
+You can set the transparency for striplines using the `Opacity` property as shown in the following code snippets:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis >
-
-<syncfusion:NumericalAxis.StripLines>
-
-<syncfusion:ChartStripLine Start="25" Width="15" 
-
-Opacity="0.4" Background="#C3C3C3"/>
-
-</syncfusion:NumericalAxis.StripLines>
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis>
+        <syncfusion:NumericalAxis.StripLines>
+            <syncfusion:ChartStripLine Start="25" Width="15" 
+                                      Opacity="0.4" Background="#C3C3C3"/>
+        </syncfusion:NumericalAxis.StripLines>
+    </syncfusion:NumericalAxis>
 </syncfusion:SfChart.SecondaryAxis>
 
 <syncfusion:SfChart.Watermark>
-
-<syncfusion:Watermark >
-
-<syncfusion:Watermark.Content>
-
-<TextBlock Text="StockValue">
-
-<TextBlock.RenderTransform>
-
-<RotateTransform Angle="345"/>
-
-</TextBlock.RenderTransform>                        
-
-</TextBlock>
-
-</syncfusion:Watermark.Content>
-
+    <syncfusion:Watermark>
+        <syncfusion:Watermark.Content>
+            <TextBlock Text="StockValue">
+                <TextBlock.RenderTransform>
+                    <RotateTransform Angle="345"/>
+                </TextBlock.RenderTransform>                        
+            </TextBlock>
+        </syncfusion:Watermark.Content>
+    </syncfusion:Watermark>
 </syncfusion:SfChart.Watermark>
 
 {% endhighlight %}
@@ -721,36 +531,25 @@ NumericalAxis axis = new NumericalAxis();
 
 ChartStripLine stripline = new ChartStripLine()
 {
-
-    Start = 25,Width = 15,
-
+    Start = 25,
+    Width = 15,
     Opacity = 0.4,
-
     Background = new SolidColorBrush(Color.FromRgb(0xC3, 0xC3, 0xC3))
-
 };
 
 axis.StripLines.Add(stripline);
-
 chart.SecondaryAxis = axis;
 
 chart.Watermark = new Watermark()
 {
-
     HorizontalAlignment = HorizontalAlignment.Center,
-
     VerticalAlignment = VerticalAlignment.Center
-
 };
 
 TextBlock textBlock = new TextBlock();
-
 textBlock.Text = "StockValue";
-
 textBlock.FontSize = 70;
-
 textBlock.RenderTransform = new RotateTransform() { Angle = 345 };
-
 chart.Watermark.Content = textBlock;
 
 {% endhighlight %}
@@ -759,7 +558,7 @@ chart.Watermark.Content = textBlock;
 
 ![Transparency of Striplines in WPF Chart](Striplines_images/wpf-chart-stripline-transparency.png)
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.
 
 ## See also
 

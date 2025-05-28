@@ -9,13 +9,13 @@ documentation: ug
 
 # Data Marker in WPF Charts (SfChart)
 
-Data Marker is used to mark the data points with built-in available shapes.
+Data Markers are used to visually highlight data points with built-in shapes in a chart.
 
 ## Define Data Marker
-To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property as True. By default, there is no symbol displayed, you have to add the desired symbol using [`Symbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Symbol) property.
 
-The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
+To enable markers in adornments, set the [`ShowMarker`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property to True. By default, no symbol is displayed, so you need to specify the desired symbol using the [`Symbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Symbol) property.
 
+The following code example demonstrates a column series with a [`Diamond`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
 
 {% tabs %}
 
@@ -31,11 +31,11 @@ The following code example demonstrates the column series with [`Diamond`](https
 {% highlight c# %}
 
         ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowMarker = true,
-                Symbol = ChartSymbol.Diamond,
-                SymbolInterior=new SolidColorBrush(Colors.Black)          
-            };
+        {
+            ShowMarker = true,
+            Symbol = ChartSymbol.Diamond,
+            SymbolInterior = new SolidColorBrush(Colors.Black)          
+        };
 
 {% endhighlight %}
 
@@ -43,31 +43,30 @@ The following code example demonstrates the column series with [`Diamond`](https
 
 ![WPF Chart Symbol Support](Adornments_images/wpf-chart-symbol-support.png)
 
-
 ### Customizing Symbol
 
-SfChart provides support more customization for symbols in adornments. 
+SfChart provides extensive customization options for symbols in adornments:
 
-* [`SymbolHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolHeight) - used to change the height of the symbol.
-* [`SymbolWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolWidth) - used to change the width of the symbol.
-* [`SymbolInterior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolInterior) - used to change the color of symbol.
-* [`SymbolStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolStroke) - used to change the stroke color of symbol.
-* [`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolTemplate) - used to customize the appearance of symbol.
-* [`Symbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Symbol) - used to change the predefined symbol.
+* [`SymbolHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolHeight) - Changes the height of the symbol
+* [`SymbolWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolWidth) - Changes the width of the symbol
+* [`SymbolInterior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolInterior) - Changes the fill color of the symbol
+* [`SymbolStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolStroke) - Changes the stroke color of the symbol
+* [`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolTemplate) - Customizes the appearance of the symbol
+* [`Symbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Symbol) - Changes the predefined symbol type
 
-We have some predefined symbols such as
+SfChart includes the following predefined symbols:
 
-* Cross	 
+* Cross
 * Diamond
-* Ellipse	
-* Hexagon	
-* HorizontalLine	
-* InvertedTriangle	
-* Pentagon	
-* Plus	
-* Square	
+* Ellipse
+* Hexagon
+* HorizontalLine
+* InvertedTriangle
+* Pentagon
+* Plus
+* Square
 * Triangle
-* VerticalLine	
+* VerticalLine
 
 {% tabs %}
 
@@ -75,7 +74,7 @@ We have some predefined symbols such as
 
             <syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolStroke="Black" SymbolHeight="10" 
             SymbolWidth="10" SymbolInterior="DarkGray" Symbol="Ellipse">
-            </syncfusion:ChartAdornmentInfo>o>
+            </syncfusion:ChartAdornmentInfo>
 
 {% endhighlight %}
 
@@ -97,10 +96,9 @@ We have some predefined symbols such as
 
 ![WPF Chart Custom Marker](Adornments_images/wpf-chart-custom-marker.png)
 
-
 **SymbolTemplate**
 
-The following code example demonstrates how to use SymbolTemplate.
+The following code example demonstrates how to use the SymbolTemplate property:
 
 {% tabs %}
 
@@ -145,7 +143,7 @@ The following code example demonstrates how to use SymbolTemplate.
     </Window.Resources>
 
 <Grid>
-        <chart:SfChart  Width="400" Height="300" >
+        <chart:SfChart Width="400" Height="300">
     ...
             
         <syncfusion:ColumnSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
@@ -166,6 +164,7 @@ The following code example demonstrates how to use SymbolTemplate.
     ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
     {
         AdornmentsPosition = AdornmentsPosition.Top,
+        ShowMarker = true,
         SymbolTemplate = chart.Resources["symbolTemplate"] as DataTemplate,
         Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
     };

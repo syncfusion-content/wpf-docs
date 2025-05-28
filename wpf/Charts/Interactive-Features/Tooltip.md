@@ -22,16 +22,13 @@ The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusio
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  ShowTooltip="True"                                                  
+<syncfusion:ColumnSeries ShowTooltip="True"                                                  
 ItemsSource="{Binding Demands}" 
-
-XBindingPath="Demand"  YBindingPath="Year2010"/>
+XBindingPath="Demand" YBindingPath="Year2010"/>
 
 <syncfusion:ColumnSeries ItemsSource="{Binding Demands}" 
-
 ShowTooltip="True"                           
-
-XBindingPath="Demand"  YBindingPath="Year2011"/>           
+XBindingPath="Demand" YBindingPath="Year2011"/>           
 
 {% endhighlight %}
 
@@ -39,32 +36,21 @@ XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true
-
 };
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     ShowTooltip = true
-
 };
 
 chart.Series.Add(series1);
-
 chart.Series.Add(series2);
 
 {% endhighlight %}
@@ -95,9 +81,7 @@ The following properties are used to customize and configure tooltip which is av
 {% highlight xml %}
 
 <chart:SfChart.Behaviors>
-
-<chart:ChartTooltipBehavior/>                                                  
-
+    <chart:ChartTooltipBehavior/>                                                  
 </chart:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -105,9 +89,7 @@ The following properties are used to customize and configure tooltip which is av
 {% highlight c# %}
 
 SfChart chart = new SfChart();
-
 ChartTooltipBehavior behavior = new ChartTooltipBehavior();
-
 chart.Behaviors.Add(behavior);
 
 {% endhighlight %}
@@ -127,9 +109,7 @@ The following code example explains positioning the tooltip at `Pointer` positio
 {% highlight xml %}
 
 <chart:SfChart.Behaviors>
-
-<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" Position="Pointer"/>                                               
-
+    <chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" Position="Pointer"/>                                               
 </chart:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -166,7 +146,7 @@ The following code example explains applying the style for tooltip.
 </chart:SfChart.Resources>
 ...
 <chart:SfChart.Behaviors>
-    <chart:ChartTooltipBehavior Style = {StaticResource style}/>
+    <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
 </chart:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -207,7 +187,7 @@ The following code example explains applying the style for a tooltip label.
 </chart:SfChart.Resources>
 ...
 <chart:SfChart.Behaviors>
-   <chart:ChartTooltipBehavior LabelStyle = {StaticResource labelStyle}/>
+   <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
 </chart:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -245,16 +225,12 @@ The following code example explains the positioning of tooltip to the left of th
 {% highlight xaml %}
 
 <Chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"  
-
 Chart:ChartTooltip.HorizontalAlignment="Left"
-
-XBindingPath="Demand"  YBindingPath="Year2010" />
+XBindingPath="Demand" YBindingPath="Year2010" />
 
 <Chart:ColumnSeries ItemsSource="{Binding Demands}" 
-
 Chart:ChartTooltip.HorizontalAlignment="Left" ShowTooltip="True"
-
-XBindingPath="Demand"  YBindingPath="Year2011"/>
+XBindingPath="Demand" YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -262,36 +238,25 @@ XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true
-    
 };
 
 ChartTooltip.SetHorizontalAlignment(series1, HorizontalAlignment.Left);
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     ShowTooltip = true
-
 };
 
 ChartTooltip.SetHorizontalAlignment(series2, HorizontalAlignment.Left);
 
 chart.Series.Add(series1);
-
 chart.Series.Add(series2);
 
 {% endhighlight %}
@@ -311,16 +276,12 @@ The following code example explains the positioning of tooltip to the bottom of 
 {% highlight xaml %}
 
 <Chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"  
-
 Chart:ChartTooltip.VerticalAlignment="Bottom"
-
 XBindingPath="Demand" YBindingPath="Year2010" />
 
 <Chart:ColumnSeries ItemsSource="{Binding Demands}"
-
 Chart:ChartTooltip.VerticalAlignment="Bottom"
-
-ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
+ShowTooltip="True" XBindingPath="Demand" YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -328,43 +289,32 @@ ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true
-    
 };
 
 ChartTooltip.SetVerticalAlignment(series1, VerticalAlignment.Bottom);
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     ShowTooltip = true
-
 };
 
 ChartTooltip.SetVerticalAlignment(series2, VerticalAlignment.Bottom);
 
 chart.Series.Add(series1);
-
 chart.Series.Add(series2);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_image6.png)
+![Tooltip alignment support in WPF Chart](Interactive-Features_images/Interactive-Features_image6.png)
 
 **TooltipMargin**
 
@@ -375,20 +325,14 @@ You can also set the distance for the margin to be positioned from the cursor us
 {% highlight xaml %}
 
 <Chart:ColumnSeries Label="2010" ShowTooltip="True"
-
-ItemsSource="{Binding Demands}"   Interior="#777777"
-
+ItemsSource="{Binding Demands}" Interior="#777777"
 Chart:ChartTooltip.TooltipMargin="25"
-
 XBindingPath="Demand" YBindingPath="Year2010" />
 
-<Chart:ColumnSeries Label="2011"  ItemsSource="{Binding Demands}"
-
+<Chart:ColumnSeries Label="2011" ItemsSource="{Binding Demands}"
 Interior="#4A4A4A"
-
 Chart:ChartTooltip.TooltipMargin="25"
-
-ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
+ShowTooltip="True" XBindingPath="Demand" YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -396,51 +340,36 @@ ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 ChartTooltip.SetTooltipMargin(series1, new Thickness(25));
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A)),
-
     Label = "2011"
-
 };
 
 ChartTooltip.SetTooltipMargin(series2, new Thickness(25));
 
 chart.Series.Add(series1);
-
 chart.Series.Add(series2);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_image7.png)
+![Margin for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_image7.png)
 
 N>By default, the VerticalAlignment of the Tooltip is Top.
 
@@ -453,22 +382,15 @@ The tooltip can be positioned at a particular distance from the cursor horizonta
 {% highlight xaml %}
 
 <Chart:ColumnSeries ShowTooltip="True"
-
 ItemsSource="{Binding Demands}" 
-
 Chart:ChartTooltip.HorizontalOffset="40"
-
 Chart:ChartTooltip.VerticalOffset="40"
-
 XBindingPath="Demand" YBindingPath="Year2010" />
 
 <Chart:ColumnSeries ItemsSource="{Binding Demands}"
-
 Chart:ChartTooltip.HorizontalOffset="40"
-
 Chart:ChartTooltip.VerticalOffset="40" ShowTooltip="True"
-
-XBindingPath="Demand"  YBindingPath="Year2011"/>
+XBindingPath="Demand" YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -476,48 +398,31 @@ XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 ChartTooltip.SetHorizontalOffset(series1, 40);
-
 ChartTooltip.SetVerticalOffset(series1, 40);
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A)),
-
     Label = "2011"
-
 };
 
 ChartTooltip.SetHorizontalOffset(series2, 40);
-
 ChartTooltip.SetVerticalOffset(series2, 40);
 
 chart.Series.Add(series1);
-
 chart.Series.Add(series2);
 
 {% endhighlight %}
@@ -537,13 +442,9 @@ The following code example demonstrates the duration of the tooltip set as 5 sec
 {% highlight xml %}
 
 <Chart:ColumnSeries ShowTooltip="True"  
-
 Chart:ChartTooltip.ShowDuration="5000"                                          
-
 ItemsSource="{Binding Demands}" Interior="#777777"                                     
-
-XBindingPath="Demand"  YBindingPath="Year2010">                                   
-
+XBindingPath="Demand" YBindingPath="Year2010">                                   
 </Chart:ColumnSeries>
 
 {% endhighlight %}
@@ -552,23 +453,15 @@ XBindingPath="Demand"  YBindingPath="Year2010">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 ChartTooltip.SetShowDuration(series, 5000);
-
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -588,12 +481,9 @@ The following code example demonstrates the tooltip will be delayed for 1 second
 {% highlight xml %}
 
 <Chart:ColumnSeries Label="2010" ShowTooltip="True"  
-
 Chart:ChartTooltip.InitialShowDelay="1000"                                          
-
 ItemsSource="{Binding Demands}" Interior="#777777"                                     
-
-XBindingPath="Demand"  YBindingPath="Year2010" />                                   
+XBindingPath="Demand" YBindingPath="Year2010" />                                   
 
 {% endhighlight %}
 
@@ -601,23 +491,15 @@ XBindingPath="Demand"  YBindingPath="Year2010" />
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 ChartTooltip.SetInitialShowDelay(series, 1000);
-
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -633,13 +515,9 @@ You can also provide animation effects for tooltip by setting the [`EnableAnimat
 {% highlight xml %}
 
 <Chart:ColumnSeries Label="2010" ShowTooltip="True"  
-
 Chart:ChartTooltip.EnableAnimation="True"                                          
-
 ItemsSource="{Binding Demands}" Interior="#777777"                                     
-
-XBindingPath="Demand"  YBindingPath="Year2010">                                   
-
+XBindingPath="Demand" YBindingPath="Year2010">                                   
 </Chart:ColumnSeries>
 
 {% endhighlight %}
@@ -648,23 +526,15 @@ XBindingPath="Demand"  YBindingPath="Year2010">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 ChartTooltip.SetEnableAnimation(series, true);
-
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -678,7 +548,6 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 {% tabs %}
 
 {% highlight xaml %}
-
 <chart:SfChart.Resources>
     <Style TargetType="Path" x:Key="style">
         <Setter Property="Stroke" Value="Black"/>
@@ -687,7 +556,6 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
     </Style>
 </chart:SfChart.Resources>
 ...
-
 <chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
     XBindingPath="Demand" YBindingPath="Year2010" >
     <chart:ColumnSeries.TooltipTemplate>
@@ -703,8 +571,8 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
     </chart:ColumnSeries.TooltipTemplate>
 </chart:ColumnSeries>
 
-<chart:ColumnSeries  ItemsSource="{Binding Demands}"
-    ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011">
+<chart:ColumnSeries ItemsSource="{Binding Demands}"
+    ShowTooltip="True" XBindingPath="Demand" YBindingPath="Year2011">
     <chart:ColumnSeries.TooltipTemplate>
         <DataTemplate>
             <StackPanel Orientation="Horizontal">
@@ -719,66 +587,55 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 </chart:ColumnSeries>
 ...
 <chart:SfChart.Behaviors>
-        <chart:ChartTooltipBehavior Style="{StaticResource style}" />
+    <chart:ChartTooltipBehavior Style="{StaticResource style}" />
 </chart:SfChart.Behaviors>
 ...
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 ...
+DataTemplate tooltip = new DataTemplate();
+FrameworkElementFactory stackpanel = new FrameworkElementFactory(typeof(StackPanel));
+stackpanel.SetValue(StackPanel.OrientationProperty, Orientation.Horizontal);
 
-    DataTemplate tooltip = new DataTemplate();
+FrameworkElementFactory textblock = new FrameworkElementFactory(typeof(TextBlock));
+textblock.SetBinding(TextBlock.TextProperty, new Binding("Item.Demand"));
+textblock.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
+textblock.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+textblock.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
+textblock.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Black));
+stackpanel.AppendChild(textblock);
 
-    FrameworkElementFactory stackpanel = new FrameworkElementFactory(typeof(StackPanel));
-    stackpanel.SetValue(StackPanel.OrientationProperty, Orientation.Horizontal);
+FrameworkElementFactory textblock1 = new FrameworkElementFactory(typeof(TextBlock));
+textblock1.SetValue(TextBlock.TextProperty, " : ");
+textblock1.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
+textblock1.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+textblock1.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
+textblock1.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Black));
+stackpanel.AppendChild(textblock1);
 
-    FrameworkElementFactory textblock = new FrameworkElementFactory(typeof(TextBlock));
-    textblock.SetBinding(TextBlock.TextProperty, new Binding("Item.Demand"));
-    textblock.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
-    textblock.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
-    textblock.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
-    textblock.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Black));
+FrameworkElementFactory textblock2 = new FrameworkElementFactory(typeof(TextBlock));
+textblock2.SetBinding(TextBlock.TextProperty, new Binding("Item.Year2010"));
+textblock2.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
+textblock2.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+textblock2.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
+textblock2.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Black));
+stackpanel.AppendChild(textblock2);
+tooltip.VisualTree = stackpanel;
 
-    stackpanel.AppendChild(textblock);
+ColumnSeries series1 = new ColumnSeries()
+{
+    ItemsSource = Demands,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010",
+    Label = "2010",
+    ShowTooltip = true,
+    TooltipTemplate = tooltip
+};
 
-    FrameworkElementFactory textblock1 = new FrameworkElementFactory(typeof(TextBlock));
-    textblock1.SetValue(TextBlock.TextProperty, " : ");
-    textblock1.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
-    textblock1.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
-    textblock1.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
-    textblock1.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Black));
-
-    stackpanel.AppendChild(textblock1);
-
-    FrameworkElementFactory textblock2 = new FrameworkElementFactory(typeof(TextBlock));
-    textblock2.SetBinding(TextBlock.TextProperty, new Binding("Item.Year2010"));
-    textblock2.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
-    textblock2.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
-    textblock2.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
-    textblock2.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Black));
-
-    stackpanel.AppendChild(textblock2);
-    tooltip.VisualTree = stackpanel;
-
-    ColumnSeries series1 = new ColumnSeries()
-    {
-
-        ItemsSource = Demands,
-        XBindingPath = "Demand",
-        YBindingPath = "Year2010",
-        Label = "2010",
-        ShowTooltip = true,
-        TooltipTemplate = tooltip
-
-    };
-
-    chart.Series.Add(series1);
+chart.Series.Add(series1);
 ...
-        
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_image9.png)
@@ -787,12 +644,12 @@ N> The `ChartTooltipBehavior` is commonly used for all series to customize the t
 
 ## See also
 
-[`How to display the tooltip when the mouse is in any region of the FastLineBitmapSeries in WPF Chart `](https://www.syncfusion.com/kb/10921/how-to-display-the-tooltip-when-the-mouse-is-in-any-region-of-the-fastlinebitmapseries-in)
+[How to display the tooltip when the mouse is in any region of the FastLineBitmapSeries in WPF Chart](https://www.syncfusion.com/kb/10921/how-to-display-the-tooltip-when-the-mouse-is-in-any-region-of-the-fastlinebitmapseries-in)
 
- [`How to customize the tooltip in chart `](https://www.syncfusion.com/kb/10723/how-to-customize-the-tooltip-in-chart)
+[How to customize the tooltip in chart](https://www.syncfusion.com/kb/10723/how-to-customize-the-tooltip-in-chart)
 
-[`How to set the duration for chart tooltip`](https://www.syncfusion.com/kb/5474/how-to-set-the-duration-for-chart-tooltip)
+[How to set the duration for chart tooltip](https://www.syncfusion.com/kb/5474/how-to-set-the-duration-for-chart-tooltip)
 
-[`How to make the tooltip to display x and y values together or any other value from the underlying model`](https://www.syncfusion.com/kb/5231/how-to-make-the-tooltip-to-display-x-and-y-values-together-or-any-other-value-from-the)
+[How to make the tooltip to display x and y values together or any other value from the underlying model](https://www.syncfusion.com/kb/5231/how-to-make-the-tooltip-to-display-x-and-y-values-together-or-any-other-value-from-the)
 
-[`How to view the tooltip when segment is underneath the axis line`](https://www.syncfusion.com/kb/4722/how-to-view-the-tooltip-when-segment-is-underneath-the-axis-line)
+[How to view the tooltip when segment is underneath the axis line](https://www.syncfusion.com/kb/4722/how-to-view-the-tooltip-when-segment-is-underneath-the-axis-line)

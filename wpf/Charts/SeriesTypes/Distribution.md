@@ -11,7 +11,7 @@ documentation: ug
 
 ## Histogram Chart
 
-[`HistogramSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#) is one of the seven basic tools of quality control to Visualize the frequency distribution of data over a certain time period. HistogramSeries is often used to plot the density of data.
+[`HistogramSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#) is one of the seven basic tools of quality control to visualize the frequency distribution of data over a certain time period. HistogramSeries is often used to plot the density of data.
  
 The following code example shows how to add the HistogramSeries:
 
@@ -20,16 +20,11 @@ The following code example shows how to add the HistogramSeries:
 {% highlight xaml %}
 
 <chart:HistogramSeries x:Name="histogramSeries" 
-
-HistogramInterval="5" 
-
-Interior="#BCBCBC"
-
-ItemsSource="{Binding Product}"
-
-XBindingPath="Price" 
-
-YBindingPath="Value"/>
+                       HistogramInterval="5" 
+                       Interior="#BCBCBC"
+                       ItemsSource="{Binding Product}"
+                       XBindingPath="Price" 
+                       YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -37,17 +32,11 @@ YBindingPath="Value"/>
 
 HistogramSeries series = new HistogramSeries()
 {
-
     ItemsSource = new ViewModel().Product,
-
     XBindingPath = "Price",
-
     YBindingPath = "Value",
-
     HistogramInterval = 5,
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
@@ -66,18 +55,12 @@ You can customize interval using [`HistogramInterval`](https://help.syncfusion.c
 {% highlight xaml %}
 
 <chart:HistogramSeries x:Name="histogramSeries" 
-
-HistogramInterval="5"
-
-ShowNormalDistributionCurve="False"
-
-Interior="#BCBCBC"
-
-ItemsSource="{Binding Product}"
-
-XBindingPath="Price" 
-
-YBindingPath="Value"/>
+                       HistogramInterval="5"
+                       ShowNormalDistributionCurve="False"
+                       Interior="#BCBCBC"
+                       ItemsSource="{Binding Product}"
+                       XBindingPath="Price" 
+                       YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -85,19 +68,12 @@ YBindingPath="Value"/>
 
 HistogramSeries series = new HistogramSeries()
 {
-
     ItemsSource = new ViewModel().Product,
-
     XBindingPath = "Price",
-
     YBindingPath = "Value",
-
     HistogramInterval = 5,
-
     ShowNormalDistributionCurve = false,
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
@@ -124,20 +100,13 @@ You can customize the normal distribution curve by using the [`CurveLineStyle`](
 ...
 
 <chart:HistogramSeries x:Name="histogramSeries" 
-
-HistogramInterval="5"
-
-ShowNormalDistributionCurve="True"
-
-CurveLineStyle="{StaticResource CurveColorStyle}"
-
-Interior="LightSkyBlue"
-
-ItemsSource="{Binding Product}"
-
-XBindingPath="Price" 
-
-YBindingPath="Value"/>
+                       HistogramInterval="5"
+                       ShowNormalDistributionCurve="True"
+                       CurveLineStyle="{StaticResource CurveColorStyle}"
+                       Interior="LightSkyBlue"
+                       ItemsSource="{Binding Product}"
+                       XBindingPath="Price" 
+                       YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -146,21 +115,13 @@ YBindingPath="Value"/>
 ...
 HistogramSeries series = new HistogramSeries()
 {
-
     ItemsSource = new ViewModel().Product,
-
     XBindingPath = "Price",
-
     YBindingPath = "Value",
-
     HistogramInterval = 5,
-
-    ShowNormalDistributionCurve = True,
-
+    ShowNormalDistributionCurve = true,
     CurveLineStyle = histogramChart.Resources["CurveColorStyle"] as Style,
-
-    Interior = new SolidColorBrush(new SolidColorBrush(Colors.LightSkyBlue))
-
+    Interior = new SolidColorBrush(Colors.LightSkyBlue)
 };
 
 chart.Series.Add(series);
