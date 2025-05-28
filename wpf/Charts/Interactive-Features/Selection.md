@@ -11,7 +11,7 @@ documentation: ug
 
 SfChart supports selection that allows you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
 
-## Adding Selection Behavior to SfChart
+### Adding Selection Behavior to SfChart
 
 You can create an instance of [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#) and add it to the Behaviors collection.
 
@@ -31,7 +31,7 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-## Segment Selection
+### Segment Selection
 
 Segment Selection allows you to highlight a segment in a chart series. To enable segment selection in a chart series, set the [`EnableSegmentSelection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_EnableSegmentSelection) property to True. For highlighting a segment, the brush color can be set using the [`SegmentSelectionBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSelectionBrush) property.
 
@@ -126,7 +126,7 @@ chart.Series.Add(series);
 
 ![Segment selection support in WPF Chart](Interactive-Features_images/Interactive-Features_img35.jpeg)
 
-## Series Selection
+### Series Selection
 
 Series selection is used in case of multiple series when you want to highlight a particular series. Series Selection can be enabled by setting the [`EnableSeriesSelection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_EnableSeriesSelection) property to True. The [`SeriesSelectionBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SeriesSelectionBrush) property is used to set the brush color to highlight the series.
 
@@ -189,7 +189,7 @@ chart.Series.Add(series2);
 
 N> By default the segment selection is true, so for selecting series you have to set the EnableSegmentSelection property to false.
 
-## Adornment Selection
+### Adornment Selection
 
 SfChart provides selection for adornments by defining the [`HighlightOnSelection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_HighlightOnSelection) property which allows you to select the segment or series with the corresponding adornments.
 
@@ -335,7 +335,7 @@ chart.Series.Add(series2);
 
 ![Series selection with adornments in WPF Chart](Interactive-Features_images/Interactive-Features_img40.jpeg)
 
-## Selection Mode
+### Selection Mode
 
 SfChart provides support to select using mouse move or mouse click. By default, the selection will take place on mouse click. The selection mode can be defined using the [`SelectionMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionMode) property for segment and series selection.
 
@@ -362,7 +362,7 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-## Customizing the Selection
+### Customizing the Selection
 
 SfChart allows you to select single or multiple segment/series using the [`SelectionStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionStyle) property. By default, the SelectionStyle is [`Single`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SelectionStyle.html).
 

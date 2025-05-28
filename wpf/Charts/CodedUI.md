@@ -57,7 +57,7 @@ The assembly must be placed into the following directory based on your Visual St
 For Visual Studio 2015: 
 C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPackages
 
-> Note: Syncfusion.SfChart.CUITExtension.WPF.dll needs to be installed in the GAC location. Please refer to the [Microsoft documentation on GAC installation](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/ex0ss12c(v=vs.80)).
+N> Syncfusion.SfChart.CUITExtension.WPF.dll needs to be installed in the GAC location. Please refer to the [Microsoft documentation on GAC installation](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/ex0ss12c(v=vs.80)).
 
 ## Getting Started
 
@@ -191,4 +191,4 @@ Legend Item<br/><br/></td><td>
 IconVisibility, CheckBoxVisibility, VisibilityOnLegend, IsSeriesVisible, Label, IconWidth, IconHeight, ItemMargin.<br/><br/></td></tr>
 </table>
 
-> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to learn about various chart types and how to easily configure them with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to learn about various chart types and how to easily configure them with built-in support for creating stunning visual effects.

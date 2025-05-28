@@ -483,9 +483,39 @@ VerticalLineAnnotation ver = new VerticalLineAnnotation()
 
 Also, the axis label can be customized in appearance using the [`AxisLabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html#Syncfusion_UI_Xaml_Charts_StraightLineAnnotation_AxisLabelTemplate) property.
 
-### Adding text in shape annotation
+## Adding Text in Shape Annotation
 
-For all shape annotations, text can be displayed using the [`Text`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Text) property.
+For all the shape annotations, the text can be displayed by using the [`Text`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Text) property.
+
+### Customizing Text in Shape Annotation
+
+The text alignment can be changed using the [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_HorizontalTextAlignment) and [`VerticalTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_VerticalTextAlignment) properties.
+
+{% tabs %}
+{% highlight xaml %}
+<chart:EllipseAnnotation X1="1.5" Y1="1400" X2="2.5" Y2="1600" FontWeight="Bold"
+    HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Ellipse">
+</chart:EllipseAnnotation> 
+{% endhighlight %}
+
+{% highlight c# %}
+EllipseAnnotation ellipse = new EllipseAnnotation()
+{
+    X1 = 1.5,
+    Y1 = 1400,
+    X2 = 2.5,
+    Y2 = 1600,
+    HorizontalTextAlignment = HorizontalAlignment.Center,
+    VerticalTextAlignment = VerticalAlignment.Center,
+    FontWeight = FontWeights.Bold,
+    Text = "Ellipse"               
+};
+{% endhighlight %}
+{% endtabs %}
+
+![Customizing Text of Shape Annotation in WPF Chart](Annotation_images/wpf-chart-text-in-shape.jpg)
+
+N> [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_HorizontalTextAlignment) and [`VerticalTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_VerticalTextAlignment) properties are not applicable for [`TextAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TextAnnotation.html#).
 
 ### Customizing the Shape Annotation
 
@@ -584,7 +614,7 @@ The following code example demonstrates dragging the rectangle annotation:
 </chart:RectangleAnnotation>
 {% endhighlight %}
 {% highlight c# %}
-RectangleAnnotation an = new RectangleAnnotation()
+RectangleAnnotation annotation = new RectangleAnnotation()
 {
     X1 = 0.6,
     Y1 = 1800,
@@ -613,7 +643,7 @@ You can resize the annotation by enabling the [`CanResize`](https://help.syncfus
 </chart:RectangleAnnotation>
 {% endhighlight %}
 {% highlight c# %}
-RectangleAnnotation an = new RectangleAnnotation()
+RectangleAnnotation annotation = new RectangleAnnotation()
 {
     X1 = 0.6,
     Y1 = 1800,
@@ -633,7 +663,7 @@ Also, the direction of resizing can be customized by using the [`ResizingMode`](
 
 ## ToolTip
 
-SfChart provides support to view the tooltip when mouse hovered on the annotation. To view the tooltip, you have to enable the [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ShowToolTip) property. By default, the tooltip has no content; you have to set the content for the tooltip in the [`ToolTipContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ToolTipContent) property.
+SfChart provides support to view the tooltip when mouse hovered on the annotation. To view the tooltip, you have to enable the [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ShowToolTip) property. By default, the tooltip has no content, you have to set the content for the tooltip in the [`ToolTipContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ToolTipContent) property.
 
 * [`ToolTipPlacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ToolTipPlacement) - Used to position the Tooltip at the top, bottom, left, or right side of the cursor.
 * [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ToolTipTemplate) - Used to customize the default appearance of the Tooltip.

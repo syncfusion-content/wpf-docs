@@ -266,7 +266,7 @@ The following code sample and screenshot illustrate how to apply the custom grad
 
 SfChart chart = new SfChart();
 
-// ...
+. . .
 
 ChartColorModel colorModel = new ChartColorModel();
 
@@ -282,12 +282,12 @@ stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 204, 45) };
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
 
-// ...
+. . .
 
 colorModel.CustomBrushes.Add(gradientColor1);
 colorModel.CustomBrushes.Add(gradientColor2);
 
-// ...
+. . .
 
 ColumnSeries series = new ColumnSeries()
 {
@@ -329,7 +329,7 @@ The following code sample and screenshot illustrate how to apply the gradient co
 
 SfChart chart = new SfChart();
 
-// ...
+. . .
 
 LinearGradientBrush gradientColor = new LinearGradientBrush();
 GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(168, 234, 238) };
@@ -337,7 +337,7 @@ GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(123,
 gradientColor.GradientStops.Add(stop1);
 gradientColor.GradientStops.Add(stop2);
 
-// ...
+. . .
 
 ColumnSeries series = new ColumnSeries()
 {

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add custom labels to track ball behavior | SfChart | WPF | Syncfusion
-description: Add custom labels to track ball behavior in Syncfusion WPF Chart (SfChart) control, its elements and more.
+description: Add custom labels to track ball behavior in Syncfusion® WPF Chart (SfChart) control, its elements and more.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -40,7 +40,7 @@ public class CustomTrackBallBehavior : ChartTrackBallBehavior
 
         Rect rect = this.ChartArea.SecondaryAxis.ArrangeRect;
 
-        // Custom label
+        // Custom label.
         AddLabel(label, LabelVerticalAlignment, LabelHorizontalAlignment, CustomLabelTemplate, pointInfo1.X, rect.Top);
     }
 }

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialize the SfChart | SfChart | WPF | Syncfusion
-description: Learn about serialization and deserialization in Syncfusion Essential Studio WPF Chart (SfChart) control, its elements and more.
+description: Learn about serialization and deserialization in Syncfusion Essential Studio® WPF Chart (SfChart) control, its elements and more.
 platform: wpf
 control: SfChart
 documentation: ug

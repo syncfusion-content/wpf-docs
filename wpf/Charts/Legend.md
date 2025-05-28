@@ -778,18 +778,17 @@ The legend item may not appear when the chart view runs in a background thread, 
 {% highlight c# %}
 ChartWindow chartWindow = new ChartWindow();
 chartWindow.DataContext = measurementChart;
-// Note: The following line appears redundant as it's immediately overwritten
-// chartWindow.Content = new AutoChart();
+chartWindow.Content = new AutoChart();
 chartWindow.Content = new SfChart()
 {    
-    // Chart properties and settings
+    . . .
 }
 
 Action action = chartWindow.Show;
 Application.Current.Dispatcher.BeginInvoke(action, Array.Empty<object>());
 {% endhighlight %}
 
-> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts examples](https://github.com/syncfusion/wpf-demos) to learn about various chart types and how to easily configure them with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts examples](https://github.com/syncfusion/wpf-demos) to learn about various chart types and how to easily configure them with built-in support for creating stunning visual effects.
 
 ## See also
 

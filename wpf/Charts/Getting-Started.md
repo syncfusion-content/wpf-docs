@@ -342,13 +342,13 @@ You can add data labels to improve the readability of the chart and it can be en
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-    <!-- ... -->
+    . . .
     <syncfusion:ColumnSeries> 
         <syncfusion:ColumnSeries.AdornmentsInfo>
             <syncfusion:ChartAdornmentInfo ShowLabel="True"/> 
         </syncfusion:ColumnSeries.AdornmentsInfo> 
     </syncfusion:ColumnSeries>     
-    <!-- ... -->
+    . . .
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -378,11 +378,11 @@ You can enable legend using the [`SfChart.Legend`](https://help.syncfusion.com/c
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-    <!-- ... -->
+    . . .
     <syncfusion:SfChart.Legend>
         <syncfusion:ChartLegend/>
     </syncfusion:SfChart.Legend>
-    <!-- ... -->
+    . . .
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -408,9 +408,9 @@ Additionally, you need to set label for each series using the [`Label`](https://
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-    <!-- ... -->
+    . . .
     <syncfusion:ColumnSeries Label="Heights" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height" />
-    <!-- ... -->
+    . . .
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -448,9 +448,9 @@ Tooltips are used to show information about the segment, when you click the segm
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-    <!-- ... -->
+    . . .
     <syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height"/>
-    <!-- ... -->
+    . . .
 </syncfusion:SfChart> 
 
 {% endhighlight %}
