@@ -12,7 +12,7 @@ documentation: ug
 
 The WPF Template Studio is a tool Syncfusion® provides specifically for building applications using their WPF components. This studio streamlines the development process by including essential Syncfusion® components, managing necessary NuGet references, providing predefined namespaces, and generating component render code. It acts as a template studio wizard, making it easier for developers to create WPF applications using Syncfusion® components.
 
-I> The Syncfusion WPF Template Studio is available from v23.1.36.
+I> The Syncfusion® WPF Template Studio is available from v23.1.36.
 
 N> WPF Template Studio works seamlessly with Visual Studio 2017 or later. For the Visual Studio 2015 or lower versions, it is recommended to use a [WPF project template](https://help.syncfusion.com/wpf/visual-studio-integration/create-project).
 
@@ -25,34 +25,34 @@ Create the Syncfusion® WPF project using the Visual Studio Project Template by 
 2.	Select one of the following options to create the Syncfusion® WPF application
 
 	**Option 1:**  
-	Choose **Extension -> Syncfusion -> Essential Studio® for WPF -> Create New Syncfusion Project…** from the Visual Studio menu.
+	Choose **Extension -> Syncfusion® -> Essential Studio® for WPF -> Create New Syncfusion® Project…** from the Visual Studio menu.
     
 	![Choose Syncfusion WPF Application from Visual Studio new project dialog via Syncfusion menu](Template-Studio-Images/WPF-1.png)
 
-	N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
+	N> In Visual Studio 2017, you can see the Syncfusion® menu directly in the Visual Studio menu.
 
 	**Option 2:**   
-	Choose **File -> New -> Project** from the menu. This launches a new dialogue for creating a new application. Filtering the application type by Syncfusion or typing Syncfusion as a keyword in the search option can help you find the Syncfusion templates for WPF.
+	Choose **File -> New -> Project** from the menu. This launches a new dialogue for creating a new application. Filtering the application type by Syncfusion® or typing Syncfusion® as a keyword in the search option can help you find the Syncfusion® templates for WPF.
 
 	![Choose Syncfusion WPF Application from Visual Studio new project dialog](Template-Studio-Images/WPF-2.png)
 
-3.	Select the Syncfusion WPF Template Studio and click Next.
+3.	Select the Syncfusion® WPF Template Studio and click Next.
 
 	![Choose Syncfusion WPF Application from Visual Studio new project dialog](Template-Studio-Images/WPF-3.png)
 
-4.	When you launch the **Syncfusion WPF Template Studio**, you will encounter a configuration wizard that allows you to set up your Syncfusion WPF application. Within this wizard, you will have the option to specify your preferred .NET Core Version or .NET Framework Version, select the desired language(CSharp or Visual Basic), and choose the reference type according to your requirements.
+4.	When you launch the **Syncfusion® WPF Template Studio**, you will encounter a configuration wizard that allows you to set up your Syncfusion® WPF application. Within this wizard, you will have the option to specify your preferred .NET Core version or .NET Framework version, select the desired language(CSharp or Visual Basic), and choose the reference type according to your requirements.
 
 	![Syncfusion WPF project configuration wizard](Template-Studio-Images/WPF-4.png)
 
-	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 8.0 and .NET 9.0 from the project type option in Visual Studio.
+	N> The installed location and GAC options will be available only after the Syncfusion® Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion® Essential WPF setup. Also, the GAC option will not be available when you choose .NET 8.0 and .NET 9.0 from the project type option in Visual Studio.
 
 	I> Visual Basic Language support is available in WPF Template Studio starting from version 25.1.35.
 
-5.	Click **Next** or navigate to the **Type** tab, then select the desired Syncfusion WPF application type. When selecting the type of template for your application, you have two options:
+5.	Click **Next** or navigate to the **Type** tab, then select the desired Syncfusion® WPF application type. When selecting the type of template for your application, you have two options:
 
 	![Syncfusion WPF project type selection wizard](Template-Studio-Images/WPF-4.png)
 
-	**Predefined template:** Choose this option to select from 5 predefined templates, including Calendar, Contact, Outlook, Docking Manager, Spreadsheet, Tile view, and Word. By choosing one of these templates, you can create your application without needing to follow any further steps.
+	**Predefined template:** Choose this option to select from 5 predefined templates, including Calendar, Contact, Outlook, Docking Manager, Spreadsheet, Tile View, and Word. By choosing one of these templates, you can create your application without needing to follow any further steps.
 
 	![Syncfusion WPF Predefined template wizard](Template-Studio-Images/WPFTemplate-6.png)
 
@@ -80,7 +80,7 @@ In the **Project Details** section, you can modify configurations and project ty
 
 ![Syncfusion WPF project details selection and unselection wizard](Template-Studio-Images/WPF-8.png)
 
-9. Click **Create** to generate the Syncfusion WPF application. Once you've created the project, the relevant Syncfusion® NuGet packages will be automatically added to your project for the chosen components. For example, if you add an **DataGrid** control, the corresponding Syncfusion® NuGet packages required for that control will be installed.
+9. Click **Create** to generate the Syncfusion® WPF application. Once you've created the project, the relevant Syncfusion® NuGet packages will be automatically added to your project for the chosen components. For example, if you add a **DataGrid** control, the corresponding Syncfusion® NuGet packages required for that control will be installed.
 
      ![Syncfusion WPF project created with readme](Template-Studio-Images/WPF-9.png)
 
@@ -118,7 +118,7 @@ In the **Project Details** section, you can modify configurations and project ty
     
 	![PageServices](Template-Studio-Images/PageService.png)
 
-12. Some components require additional resource files, such as images and other necessary files, to function correctly. For example, if you add the **PDFViewer** and **Carousel** component to your WPF project, the respective images and PDF files will be added to the Images and Assets folder in your project.
+12. Some components require additional resource files, such as images and other necessary files, to function correctly. For example, if you add the **PDFViewer** and **Carousel** components to your WPF project, the respective images and PDF files will be added to the Images and Assets folder in your project.
 
 	 ![Resources](Template-Studio-Images/Resources.png)
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Syncfusion® Notifications
 
-Syncfusion® enhances the user experience in WPF applications through notification messages. These notifications cover various aspects, including alerts for trial applications when utilizing Syncfusion® trial assemblies, updates regarding the availability of the latest Syncfusion® NuGet package, and notifications regarding newer releases of Essential Studio®. By keeping users informed, Syncfusion® ensures that developers stay updated with Syncfusion® latest features and enhancements.
+Syncfusion® enhances the user experience in WPF applications through notification messages. These notifications cover various aspects, including alerts for trial applications when utilizing Syncfusion® trial assemblies, updates regarding the availability of the latest Syncfusion® NuGet package, and notifications regarding newer releases of Essential Studio®. By keeping users informed, Syncfusion® ensures that developers stay updated with Syncfusion®'s latest features and enhancements.
 
 N> The Syncfusion® Notification feature is available from Essential Studio® v22.1.34.
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Download and Installation
 
-In below Visual Studio marketplace link, Syncfusion® publishing the WPF Visual Studio extension. You can either use the Visual Studio to install it or go to the Visual Studio marketplace to download and install it.
+In the below Visual Studio Marketplace link, Syncfusion® is publishing the WPF Visual Studio extension. You can either use Visual Studio to install it or go to the Visual Studio Marketplace to download and install it.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WPFVSExtension)
 
@@ -49,7 +49,7 @@ The steps below illustrate how to download and install the Syncfusion WPF extens
     [Visual Studio 2019 or lower](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WPFExtension)
 	
 2.	If any Visual Studio instances are still open, close them.
-3.	Double-click on the downloaded VSIX file to install. You will see the VSIX installation prompts with the corresponding installed Visual Studio version checkbox for select the Visual Studio to install extension.
+3.	Double-click on the downloaded VSIX file to install. You will see the VSIX installation prompts with the corresponding installed Visual Studio version checkbox to select the Visual Studio to install the extension.
 	
 	![Vsix Modify Window](Download-and-Installation-images/VSIXInstall.png)
 4.	Click the **Install** button.

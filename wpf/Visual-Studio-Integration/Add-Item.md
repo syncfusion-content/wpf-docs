@@ -16,15 +16,15 @@ I> The Syncfusion® WPF item templates are available from v19.1.0.54.
 
 The following steps will guide you to add the Syncfusion® WPF Components to your Visual Studio WPF application.
 
-> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/wpf/visual-studio-integration/download-and-installation) help topic.
+> Check whether the **WPF Extensions - Syncfusion®** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/wpf/visual-studio-integration/download-and-installation) help topic.
 
-## Add components using Syncfusion Item Template
+## Add components using Syncfusion® Item Template
 
 1.	Open a new or existing WPF application.
 
 	**Option 1:**
 
-2.	From the **Solution Explorer, right-click** on the WPF application. Choose **Add Syncfusion Item...**.
+2.	From the **Solution Explorer, right-click** on the WPF application. Choose **Add Syncfusion® Item...**.
 
 	![Choose Add Syncfusion Item option from right click project](Add-Item-images/Add-syncfusion-item.png)
 
@@ -55,7 +55,7 @@ The following steps will guide you to add the Syncfusion® WPF Components to you
 
 6.	Choose an assembly reference option such as GAC location, Essential Studio® installed location, or NuGet packages to specify where the required Syncfusion® assemblies 	are added to the project.
 
-	N> If the Syncfusion® Essential WPF build is installed, the Installed location and GAC options will be enabled. Without installing the Syncfusion® Essential WPF setup, use the NuGet option. The GAC option will not be available when using the Syncfusion® WPF components in a .NET Core application. The Version drop-down lists the installed WPF versions.
+	N> If the Syncfusion® Essential WPF build is installed, the **Installed Location** and **GAC** options will be enabled. Without installing the Syncfusion® Essential WPF setup, use the NuGet option. The GAC option will not be available when using the Syncfusion® WPF components in a .NET Core application. The Version drop-down lists the installed WPF versions.
 
 7.  Click **Add**, and a pop-up will appear providing information about adding component **files** and **NuGet/Assemblies** details.
 
@@ -69,7 +69,7 @@ The following steps will guide you to add the Syncfusion® WPF Components to you
 
     ![Syncfusion WPF Item template Gallery](Add-Item-images/LicensePage.png)
 
-10. To run the application using the selected Syncfusion® window, set the added Syncfusion® Window as the startup window in your application. This ensures that when you launch the application, it opens with the selected Syncfusion® Window.
+10. To run the application using the selected Syncfusion® window, set the added Syncfusion® window as the startup window in your application. This ensures that when you launch the application, it opens with the selected Syncfusion® Window.
 
 	**For C#:** Open the **App.xaml** file in your project. Locate the line of code where the main window is being instantiated and set as the startup window.
 
