@@ -59,16 +59,23 @@ The following steps help you add ChromelessWindow:
 
 3. Change the Window to ChromelessWindow.
 
+{% capture codesnippet2 %}
+{% tabs %}
+{% highlight XAML %}
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="MainWindow" Height="350" Width="525"
     xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF">
 </syncfusion:ChromelessWindow>
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 4. Add the **Syncfusion.Windows.Shared namespace**, and inherit MainWindow from ChromelessWindow in code behind.
 
-{% capture codesnippet2 %}
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Shared;
@@ -82,7 +89,7 @@ public partial class MainWindow : ChromelessWindow
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![wpf chromeless window application](Getting-Started_images/wpf-chromeless-window.jpeg)
 
