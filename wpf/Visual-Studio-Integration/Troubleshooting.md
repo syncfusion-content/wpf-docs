@@ -9,7 +9,7 @@ documentation: ug
 
 # Troubleshoot the project
 
-Troubleshoot the project with the Syncfusion® configuration and apply the fix, such as wrong.NET Framework version of a Syncfusion® assembly to the project or missing any Syncfusion® dependent assembly of a referred assembly. The Syncfusion Troubleshooter can perform the following tasks:
+Troubleshoot the project with the Syncfusion® configuration and apply the fix, such as the wrong .NET Framework version of a Syncfusion® assembly to the project or missing any Syncfusion® dependent assembly of a referred assembly. The Syncfusion Troubleshooter can perform the following tasks:
 
 * Report the Configuration issues.  
 * Apply the solution
