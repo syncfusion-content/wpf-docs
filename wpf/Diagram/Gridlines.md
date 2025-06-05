@@ -180,6 +180,53 @@ public class Intervals : List<double>
 
 Find the [Gridlines Custom Spacing Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Gridlines/GridlineCustomSpacing) to customize the Gridlines spacing.
 
+## Static GridLines
+
+ The [`DynamicZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html#Syncfusion_UI_Xaml_Diagram_Gridlines_DynamicZoom) property of the [`GridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html) class allows you to control whether the horizontal and vertical gridlines should zoom in or out during zooming operations. To prevent the gridlines from zooming, set this property to `false`. By default, the **DynamicZoom** property is set to `true`.
+
+ {% tabs %}
+{% highlight xaml %}
+
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram" >
+    <!--Initialize Snap Settings-->
+    <syncfusion:SfDiagram.SnapSettings>
+        <syncfusion:SnapSettings SnapConstraints="ShowLines">
+            <!--Initialize Horizontal Gridlines-->
+            <syncfusion:SnapSettings.HorizontalGridlines>
+                 <syncfusion:Gridlines DynamicZoom="False" />
+            </syncfusion:SnapSettings.HorizontalGridlines>
+            <!--Initialize Vertical Gridlines-->
+            <syncfusion:SnapSettings.VerticalGridlines>
+                 <syncfusion:Gridlines DynamicZoom="False" />
+            </syncfusion:SnapSettings.VerticalGridlines>
+        </syncfusion:SnapSettings>
+    </syncfusion:SfDiagram.SnapSettings>
+</syncfusion:SfDiagram>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Initialize SfDiagram
+SfDiagram Diagram = new SfDiagram();
+
+ Diagram.SnapSettings = new SnapSettings()
+ {
+     SnapConstraints = SnapConstraints.ShowLines,
+     HorizontalGridlines = new Syncfusion.UI.Xaml.Diagram.Gridlines()
+     {    
+         DynamicZoom = false,
+     },
+     VerticalGridlines = new Syncfusion.UI.Xaml.Diagram.Gridlines()
+     {
+         DynamicZoom = false,
+     },
+ };
+{% endhighlight %}
+{% endtabs %}
+
+![Snap to Gridlines](Gridlines_images\StaticGridlines.gif)
+
 ## See Also
 
 [How to snap the objects on gridlines?](/wpf/diagram/snapping/definesnapping)
