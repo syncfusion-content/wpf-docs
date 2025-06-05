@@ -182,7 +182,7 @@ Find the [Gridlines Custom Spacing Sample](https://github.com/SyncfusionExamples
 
 ## Static GridLines
 
- The [`DynamicZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html#Syncfusion_UI_Xaml_Diagram_Gridlines_DynamicZoom) property of the [`GridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html) class allows you to control whether the horizontal and vertical gridlines should zoom in or out during zooming operations. To prevent the gridlines from zooming, set this property to `false`. By default, the **DynamicZoom** property is set to `true`.
+ The [`DynamicZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html#Syncfusion_UI_Xaml_Diagram_Gridlines_DynamicZoom) property of the [`GridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html) class allows you to control whether the gridlines should zoom in or out during zooming operations. To prevent the gridlines from zooming, set this property to `false`. By default, the **DynamicZoom** property is set to `true`.
 
  {% tabs %}
 {% highlight xaml %}
