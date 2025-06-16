@@ -77,6 +77,17 @@ Printer section.
 
 ![Printer List in WPF Diagram](Printing_images/wpf-diagram-printer-list.png)
 
+#### Printer Properties
+
+The **Printer Properties** option allows you to configure advanced settings for the selected printer before printing the diagram. The available options may vary depending on the printer model and driver, but commonly include:
+
+- **Paper Size**: Select from supported paper sizes such as A4, Letter, Legal, etc.
+- **Orientation**: Choose between Portrait and Landscape.
+
+To access these settings, click the **Printer Properties** button in the Print Preview window after selecting your printer. This allows you to customize the print output according to your requirements.
+
+![Printer Properties in WPF Diagram](Printing_images/wpf-diagram-printer-properties.png)
+
 ### Scaling 
  SfDiagram provides support to scale the diagram whether to print as single page or split into multiple pages. Scaling options can be changed by setting the `PrintingService.PrintManager.SelectedScaleIndex`
 property. 
