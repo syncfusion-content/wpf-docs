@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text Annotation in WPF Pdf Viewer control | Syncfusion<sup>&reg;</sup>;
-description: Learn about Text Annotation support in Syncfusion<sup>&reg;</sup>; Essential Studio<sup>&reg;</sup>; WPF Pdf Viewer control, its elements and more.
+title: Text Annotation in WPF Pdf Viewer control | Syncfusion&reg;
+description: Learn about Text Annotation support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
