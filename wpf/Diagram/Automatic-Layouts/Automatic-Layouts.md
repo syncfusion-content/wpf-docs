@@ -327,7 +327,7 @@ N> `AvoidSegmentOverlapping` is not valid for `RadialTreeLayout`.
 
 ## Customize margin in layout
 
-The [`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutBase_Margin) property of `DirectedTreeLayout` is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
+The [`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutBase_Margin) property of [`LayoutBase`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html) is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -346,8 +346,6 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 
 {% endtabs %}
-
-N> `Margin` is not valid for `RadialTreeLayout`.
 
 ## See Also
  
