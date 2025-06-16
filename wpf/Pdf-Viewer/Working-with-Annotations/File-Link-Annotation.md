@@ -13,7 +13,7 @@ The PDF viewer supports file link annotations, which means that if you open a PD
 
 ## How to obtain the details of the of the annotation and the file linked with the annotation?
 
-The `FileLinkAnnotationClicked` event will be raised when you click the annotation in PDF pages. Refer to the following code example to wire the `FileLinkAnnotationClicked` event with the PDF Viewer.
+The [FileLinkAnnotationClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FileLinkAnnotationClicked) event will be raised when you click the annotation in PDF pages. Refer to the following code example to wire the `FileLinkAnnotationClicked` event with the PDF Viewer.
 
 {% tabs %}
 {% highlight C# %}
@@ -23,9 +23,9 @@ pdfViewer.FileLinkAnnotationClicked += PdfViewer_FileLinkAnnotationClicked;
 {% endhighlight %}
 {% endtabs %}
 
-Using the `FileLinkAnnotationClickedEventArgs`, you can obtain the page number, bounds of the annotation through the ‘PageNumber’ and ‘Bounds’ properties respectively.
+Using the [FileLinkAnnotationClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FileLinkAnnotationClickedEventArgs.html) you can obtain the page number, bounds of the annotation through the [PageNumber](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FileLinkAnnotationClickedEventArgs.html#Syncfusion_Windows_PdfViewer_FileLinkAnnotationClickedEventArgs_PageNumber) and [Bounds](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FileLinkAnnotationClickedEventArgs.html#Syncfusion_Windows_PdfViewer_FileLinkAnnotationClickedEventArgs_Bounds) properties respectively.
 
-Similarly, you can obtain the details of the file linked with the annotation using the `Settings` property in the `FileLinkAnnotationClickedEventArgs`. Refer to the following code example to obtain the details of the of the annotation and the file linked with the annotation
+Similarly, you can obtain the details of the file linked with the annotation using the [Settings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FileLinkAnnotationClickedEventArgs.html#Syncfusion_Windows_PdfViewer_FileLinkAnnotationClickedEventArgs_Settings) property in the [FileLinkAnnotationClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FileLinkAnnotationClickedEventArgs.html). Refer to the following code example to obtain the details of the of the annotation and the file linked with the annotation
 
 {% tabs %}
 {% highlight C# %}

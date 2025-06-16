@@ -15,7 +15,7 @@ N> From version 19.4.0.48, we have updated our default text extraction engine to
 
 ## Detecting the completion of text selection
 
-When the text selection is completed, the [TextSelectionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) event will be raised. Refer to the following code snippet for wiring the event.
+When the text selection is completed, the [TextSelectionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextSelectionCompleted) event will be raised. Refer to the following code snippet for wiring the event.
 
 {% tabs %}
 {% highlight c# %}

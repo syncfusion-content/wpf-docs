@@ -270,7 +270,7 @@ private void ModifyAnnotation()
 
 ## Hide an annotation
 
-PDF Viewer allows the user to hide the annotation programmatically without user interaction. This functionality returns true if any annotation is found and hidden, otherwise it returns false. The annotation [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Name) property is used to identify the annotation. Refer this [UG link](https://help.syncfusion.com/wpf/pdf-viewer/working-with-annotations/select-and-modify-annotations#how-to-get-and-set-name-of-an-annotation) to get and set an annotation Name property. 
+PDF Viewer allows the user to hide the annotation programmatically without user interaction. This functionality returns true if any annotation is found and hidden, otherwise it returns false. The annotation [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Name) property is used to identify the annotation. Refer this [UG link](https://help.syncfusion.com/wpf/pdf-viewer/working-with-annotations/working-with-annotations-programmatically#get-and-set-annotations-name) to get and set an annotation Name property. 
 
 N> If there are multiple annotations with the same name in the document, it will hide the first one.
 
@@ -315,7 +315,7 @@ N> Similarly, we can implement it for all other annotations.
 
 ## Show an annotation 
 
-PDF Viewer allows the user to show the hidden annotation programmatically without user interaction. This functionality returns true if any annotation is found and shown, otherwise it returns false. The annotation [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Name) property is used to identify the annotation. Refer this [UG link](https://help.syncfusion.com/wpf/pdf-viewer/working-with-annotations/select-and-modify-annotations#how-to-get-and-set-name-of-an-annotation) to get and set an annotation Name property.   
+PDF Viewer allows the user to show the hidden annotation programmatically without user interaction. This functionality returns true if any annotation is found and shown, otherwise it returns false. The annotation [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Name) property is used to identify the annotation. Refer this [UG link](https://help.syncfusion.com/wpf/pdf-viewer/working-with-annotations/working-with-annotations-programmatically#get-and-set-annotations-name) to get and set an annotation Name property.   
 
 N> If there are multiple annotations with the same name in the document, it will show the first one. 
 
@@ -360,7 +360,7 @@ N> Similarly, we can implement it for all other annotations.
 
 ## Delete an annotation  
 
-PDF Viewer allows the user to delete an annotation programmatically without user interaction. This functionality returns true if any annotation is found and deleted, otherwise it returns false. The annotation [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Name) property is used to identify the annotation. Refer this [UG link](https://help.syncfusion.com/wpf/pdf-viewer/working-with-annotations/select-and-modify-annotations#how-to-get-and-set-name-of-an-annotation) to get and set an annotation Name property.    
+PDF Viewer allows the user to delete an annotation programmatically without user interaction. This functionality returns true if any annotation is found and deleted, otherwise it returns false. The annotation [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Name) property is used to identify the annotation. Refer this [UG link](https://help.syncfusion.com/wpf/pdf-viewer/working-with-annotations/working-with-annotations-programmatically#get-and-set-annotations-name) to get and set an annotation Name property.    
 
 N> If there are multiple annotations with the same name in the document, it will delete the first one.
 

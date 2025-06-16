@@ -9,7 +9,7 @@ documentation: ug
 
 # Change the Selection color of the annotations
 
-PDF Viewer allows you to change the selection color of both the locked and unlocked annotations with the `SelectorSettings` property of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) classes. The following code sample illustrates the same.
+PDF Viewer allows you to change the selection color of both the locked and unlocked annotations with the [SelectorSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectorSettings) property of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) classes. The following code sample illustrates the same.
 
 {% tabs %}
 {% highlight c# %}

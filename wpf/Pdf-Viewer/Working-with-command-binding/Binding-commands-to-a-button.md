@@ -432,7 +432,7 @@ The following XAML code shows how to bind the [PrintCommand](https://help.syncfu
 
 ## Save Document Command
 
-You can save the PDF file in the given file path using the `SaveDocumentCommand`. The following code shows how to save the PDF file by executing the command and to the pass the file path as command parameter.
+You can save the PDF file in the given file path using the [SaveDocumentCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SaveDocumentCommand). The following code shows how to save the PDF file by executing the command and to the pass the file path as command parameter.
 
 {% tabs %}
 {% highlight c# %}
