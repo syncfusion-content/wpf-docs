@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Commands in WPF Pdf Viewer control | Syncfusion<sup>&reg;</sup>;
-description: Learn about Working with Commands support in Syncfusion<sup>&reg;</sup>; Essential Studio<sup>&reg;</sup>; WPF Pdf Viewer control, its elements and more.
+title: Working with Commands in WPF Pdf Viewer control | Syncfusion&reg;
+description: Learn about Working with Commands support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -432,7 +432,7 @@ The following XAML code shows how to bind the [PrintCommand](https://help.syncfu
 
 ## Save Document Command
 
-You can save the PDF file in the given file path using the `SaveDocumentCommand`. The following code shows how to save the PDF file by executing the command and to the pass the file path as command parameter.
+You can save the PDF file in the given file path using the [SaveDocumentCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SaveDocumentCommand). The following code shows how to save the PDF file by executing the command and to the pass the file path as command parameter.
 
 {% tabs %}
 {% highlight c# %}

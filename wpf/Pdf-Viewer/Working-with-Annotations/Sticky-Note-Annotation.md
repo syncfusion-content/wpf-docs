@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sticky Note Annotation in WPF Pdf Viewer control | Syncfusion<sup>&reg;</sup>;
-description: Learn about Sticky Note Annotation support in Syncfusion<sup>&reg;</sup>; Essential Studio<sup>&reg;</sup>; WPF Pdf Viewer control, its elements and more.
+title: Sticky Note Annotation in WPF Pdf Viewer control | Syncfusion&reg;
+description: Learn about Sticky Note Annotation support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -273,7 +273,7 @@ The PdfViewerControl notifies through events, when `AnnotationChangedAction` suc
 
 ### StickyNoteAnnotationChanged Event
 
-The `StickyNoteAnnotationChanged` event occurs when the `Action` performed in sticky note annotation. It provides the common information and annotation properties which are available in `Settings` through the `StickyNoteAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings`.
+The [StickyNoteAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_StickyNoteAnnotationChanged) event occurs when the [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Action) performed in sticky note annotation. It provides the common information and annotation properties which are available in `Settings` through the [StickyNoteAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.StickyNoteAnnotationChangedEventArgs.html). The user can modify the annotation properties through [Settings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.StickyNoteAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_StickyNoteAnnotationChangedEventArgs_Settings).
 
 The following code shows how to write the StickyNoteAnnotationChanged event in PdfViewerControl
 
