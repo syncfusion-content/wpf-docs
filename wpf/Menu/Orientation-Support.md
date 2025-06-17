@@ -33,48 +33,27 @@ Users can add the Orientation support to MenuAdv used in the application as ment
 
 {% highlight xaml %}
 
-
-
-
-<shared:MenuAdv x:Name="Menu"  Orientation="Horizontal”/>
-
-<shared:MenuItemAdv Header="File">
-
-<shared:MenuItemAdv Header="New">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Copy">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Cut">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Edit"/>
-
+<shared:MenuAdv x:Name="Menu" Orientation="Horizontal">
+    <shared:MenuItemAdv Header="File">
+        <shared:MenuItemAdv Header="New">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Header="Copy">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Header="Cut">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+    </shared:MenuItemAdv>
+    <shared:MenuItemAdv Header="Edit"/>
 </shared:MenuAdv>
+
 {% endhighlight %}
 
 
@@ -118,59 +97,31 @@ When the ExpandMode property is set to ExpandOnClick, you can open the submenu o
 
 {% highlight xaml %}
 
-
-
-
-
-
-<shared:MenuAdv x:Name="Menu"  ExpandMode="ExpandOnMouseOver”/>
-
-<shared:MenuItemAdv Header="File">
-
-<shared:MenuItemAdv Header="New">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Copy">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Cut">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Edit"/>
-
+<shared:MenuAdv x:Name="Menu" ExpandMode="ExpandOnMouseOver">
+    <shared:MenuItemAdv Header="File">
+        <shared:MenuItemAdv Header="New">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Header="Copy">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Header="Cut">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+    </shared:MenuItemAdv>
+    <shared:MenuItemAdv Header="Edit"/>
 </shared:MenuAdv>
-
 {% endhighlight %}
-
-
 
 ### Properties
 
 The property for the Expand Modes support is described in the following tabulation:
-
 
 
 <table>

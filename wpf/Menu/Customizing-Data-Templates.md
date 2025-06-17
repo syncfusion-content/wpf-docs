@@ -17,35 +17,18 @@ You can customize how a business object is displayed as MenuItemAdv using ItemTe
 
 {% highlight xaml %}
 
-
-
-
-<syncfusion:MenuAdv ItemsSource="{Binding MenuItems}" >
-
-
-
-<syncfusion:MenuAdv.ItemTemplate>
-
-
-
-<HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
-
-<StackPanel Orientation="Horizontal">
-
-<Image Source="App.ico"  Width="15" Height="15"/>
-
-<TextBlock Text="{Binding Header}" FontWeight="Bold" 			FontStyle="Italic" />
-
-</StackPanel>
-
-</HierarchicalDataTemplate>
-
-
-
-</syncfusion:MenuAdv.ItemTemplate>
-
-
-
+<syncfusion:MenuAdv ItemsSource="{Binding MenuItems}">
+    <syncfusion:MenuAdv.ItemTemplate>
+        <HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="App.ico" Width="15" Height="15" />
+                <TextBlock Text="{Binding Header}" 
+                           FontWeight="Bold" 
+                           FontStyle="Italic" 
+                           Margin="5,0,0,0"/>
+            </StackPanel>
+        </HierarchicalDataTemplate>
+    </syncfusion:MenuAdv.ItemTemplate>
 </syncfusion:MenuAdv>
 
 

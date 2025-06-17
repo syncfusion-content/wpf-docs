@@ -49,11 +49,11 @@ To add the control manually in XAML, follow the given steps:
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-		x:Class="HierarchicalNavigatorSample.MainWindow"
-		Title="HierarchicalNavigator Sample" Height="350" Width="525">
+		x:Class="HierarchyNavigatorSample.MainWindow"
+		Title="HierarchyNavigator Sample" Height="350" Width="525">
 	<Grid>
-		<!--Adding HierarchicalNavigator control -->
-		<syncfusion:HierarchicalNavigator x:Name="hierarchicalNavigator" Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+		<!--Adding HierarchyNavigator control -->
+		<syncfusion:HierarchyNavigator x:Name="hierarchyNavigator" Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 	</Grid>
 </Window>
 {% endhighlight %}
@@ -75,7 +75,7 @@ To add the control manually in C#, follow the given steps:
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Tools;
-namespace HierarchicalNavigatorSample
+namespace HierarchyNavigatorSample
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
@@ -85,10 +85,10 @@ namespace HierarchicalNavigatorSample
 		public MainWindow()
 		{
 			InitializeComponent();
-			//Creating an instance of HierarchicalNavigator control
-			HierarchicalNavigator hierarchicalNavigator = new HierarchicalNavigator();
-			//Adding HierarchicalNavigator as window content
-			this.Content = hierarchicalNavigator;
+			//Creating an instance of HierarchyNavigator control
+			HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+			//Adding HierarchyNavigator as window content
+			this.Content = hierarchyNavigator;
 		}
 	}
 }
@@ -97,7 +97,7 @@ namespace HierarchicalNavigatorSample
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![wpf hierarchical navigator control added by code](Getting-Started_images/wpf-hierarchy-navigator-control-added-manually.png)
+![wpf hierarchy navigator control added by code](Getting-Started_images/wpf-hierarchy-navigator-control-added-manually.png)
 
 ## Add items using HierarchyNavigatorItem
 
