@@ -224,6 +224,7 @@ You can display image on left of the [MenuItemAdv](https://help.syncfusion.com/c
 
 {% endhighlight %}
 
+{% highlight C# %}
 
 string path;
 path = Path.GetFullPath(@"../../" +"NewIcon.png");
@@ -272,6 +273,7 @@ menuAdv.Items.Add(Edit);
 menuAdv.Items.Add(View);
 menuAdv.Items.Add(Project);
 
+{% endhighlight %}
 {% endtabs %}
 
 ![Icons in WPF MenuAdv](getting-started_images/wpf-menu-icons.png)
