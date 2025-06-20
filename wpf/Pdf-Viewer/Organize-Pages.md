@@ -28,6 +28,22 @@ Use the following steps to organize the PDF page(s) in [PdfViewerControl](https:
 4. You can rearrange the page(s) by dragging and dropping them.
 
 	![WPF PDF Viewer Rearrange Pages](OrganizePages_Images/wpf-pdf-viewer-rearrange-pages.png)
+	
+5. You can insert a new PDF or a blank page using the Organize Pages toolbar. By clicking the **From File** menu item, you can insert pages from   another PDF file. By clicking **Blank Page**, you can add a new blank page to the document.
+    ![WPF PDF Viewer insert Pages](OrganizePages_Images/wpf-pdf-viewer-insert-pages-toolbar.png)
+6. You can insert a new PDF or a blank page, and you can also perform clipboard actions such as Cut, Copy, and Paste using the menu that appears when hovering the mouse over the pages.
+   ![WPF PDF Viewer insert Pages option button](OrganizePages_Images/wpf-pdf-viewer-Option-button.png)
+By clicking the options button that appears when hovering the mouse over a page, you can access the context menu and perform the above-mentioned operations.
+    ![WPF PDF Viewer option button context menu](OrganizePages_Images/wpf-pdf-viewer-Option-button-contextmenu.png)
+
+## Customizing insert pages(new pdf pages or blank page)insertion position
+Choosing the **From File** or **Blank Page** option from either the Organize Pages toolbar or the context menu that appears when hovering over a page will open the default Insert Page Properties window. In this window, you can view the name of the file being inserted and customize the position where the new page will be added. The window includes a Location section with a dropdown that lets you choose whether to insert the new page before or after the currently selected page. Selecting Before will insert the new PDF pages or blank page before the selected page, while selecting After will insert them after. Additionally, there are three radio buttons labeled First, Last, and Page. Choosing First inserts the new pages at the beginning of the document, while Last places them at the end. Selecting Page enables the Location dropdown, allowing you to insert the new pages at a specific position based on your customization. 
+
+    ![WPF PDF Viewer insert page window ](OrganizePages_Images/wpf-pdf-viewer-insert-page-window.png)
+
+    ![WPF PDF Viewer insert page window blank page ](OrganizePages_Images/wpf-pdf-viewer-insert-page-window-blank-page.png)
+
+N> The Location dropdown is only enabled when the Page radio button is selected.
 
 ## Rotating PDF page(s)
 
