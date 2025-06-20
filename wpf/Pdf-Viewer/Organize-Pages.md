@@ -9,7 +9,7 @@ documentation: ug
 
 # Organize Pages in WPF Pdf Viewer
 
-Organize pages support allows you to rotate, rearrange, and delete pages from a PDF document using a miniature preview of the PDF pages.
+Organize pages support allows you to rotate, rearrange,insert and delete pages from a PDF document using a miniature preview of the PDF pages.
 
 Use the following steps to organize the PDF page(s) in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html):
 
@@ -29,21 +29,12 @@ Use the following steps to organize the PDF page(s) in [PdfViewerControl](https:
 
 	![WPF PDF Viewer Rearrange Pages](OrganizePages_Images/wpf-pdf-viewer-rearrange-pages.png)
 	
-5. You can insert a new PDF or a blank page using the Organize Pages toolbar. By clicking the **From File** menu item, you can insert pages from   another PDF file. By clicking **Blank Page**, you can add a new blank page to the document.
+5. You can insert a new PDF pages or a blank page using the Organize Pages toolbar.
     ![WPF PDF Viewer insert Pages](OrganizePages_Images/wpf-pdf-viewer-insert-pages-toolbar.png)
-6. You can insert a new PDF or a blank page, and you can also perform clipboard actions such as Cut, Copy, and Paste using the menu that appears when hovering the mouse over the pages.
+6.You can insert new PDF pages or a blank page, and perform clipboard actions like Cut, Copy, and Paste using the context menu that appears when    hovering over a page.
    ![WPF PDF Viewer insert Pages option button](OrganizePages_Images/wpf-pdf-viewer-Option-button.png)
-By clicking the options button that appears when hovering the mouse over a page, you can access the context menu and perform the above-mentioned operations.
+By clicking the options button that appears when hovering the mouse over a page, you can access the context menu and perform the above mentioned operations.
     ![WPF PDF Viewer option button context menu](OrganizePages_Images/wpf-pdf-viewer-Option-button-contextmenu.png)
-
-## Customizing insert pages(new pdf pages or blank page)insertion position
-Choosing the **From File** or **Blank Page** option from either the Organize Pages toolbar or the context menu that appears when hovering over a page will open the default Insert Page Properties window. In this window, you can view the name of the file being inserted and customize the position where the new page will be added. The window includes a Location section with a dropdown that lets you choose whether to insert the new page before or after the currently selected page. Selecting Before will insert the new PDF pages or blank page before the selected page, while selecting After will insert them after. Additionally, there are three radio buttons labeled First, Last, and Page. Choosing First inserts the new pages at the beginning of the document, while Last places them at the end. Selecting Page enables the Location dropdown, allowing you to insert the new pages at a specific position based on your customization. 
-
-    ![WPF PDF Viewer insert page window ](OrganizePages_Images/wpf-pdf-viewer-insert-page-window.png)
-
-    ![WPF PDF Viewer insert page window blank page ](OrganizePages_Images/wpf-pdf-viewer-insert-page-window-blank-page.png)
-
-N> The Location dropdown is only enabled when the Page radio button is selected.
 
 ## Rotating PDF page(s)
 
@@ -256,6 +247,20 @@ pdfViewerControl.PageOrganizer.RemovePagesCommand.Execute(new int[] { 0, 1 });
 {% endhighlight %}
 {% endtabs %}
 
+## Insert Page(s) Position Customization
+When you try insert page(s) from either the Organize Pages toolbar or the context menu that appears when hovering over a page will open the default Insert Page Properties window.
+### From file 
+ After the Insert Page Properties window open by clciking the **From file**. In this window, you can view the name of the file being inserted. This window includes a **Location** section with a dropdown that lets you choose whether to insert the new pdf pages before or after the currently selected page. Selecting Before will insert the new PDF pages before the selectedpage, while selecting After will insert them after. Additionally, there are three radio buttons labeled **First**,**Last**, and **Page**. Choosing **First** inserts the new pdf pages at the beginning of the document, while **Last** places them at the end. Selecting **Page** enables the **Location** dropdown, allowing you to insert the new pdf pages at a specific position based on your customization.
+ 
+     ![WPF PDF Viewer insert page window ](OrganizePages_Images/wpf-pdf-viewer-insert-page-window.png)
+	 
+N> The Location dropdown is only available when the 'Page' radio button is selected.	 
+### Blank page 
+ After the Insert Page Properties window open by clciking the **Blank page**. In this window, you can view the name of the inserted page as Blank page. This window includes a **Location** section with a dropdown that lets you choose whether to insert the new blank page before or after the currently selected page. Selecting Before will insert the new blank page before the selectedpage, while selecting After will insert them after. Additionally, there are three radio buttons labeled **First**,**Last**, and **Page**. Choosing **First** inserts the new blank page at the beginning of the document, while **Last** places them at the end. Selecting **Page** enables the **Location** dropdown, allowing you to insert the new blank page at a specific position based on your customization.
+ 
+    ![WPF PDF Viewer insert page window blank page ](OrganizePages_Images/wpf-pdf-viewer-insert-page-window-blank-page.png)
+	
+N> The Location dropdown is only available when the 'Page' radio button is selected.	
 ## Get the selected page indexes
 
 You can get the selected page indexes of the PDF document in the organizing pages window. The [PageSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageSelected) event indicates that a page(s) is selected and the [SelectedPages](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageSelectedEventArgs.html#Syncfusion_Windows_PdfViewer_PageSelectedEventArgs_SelectedPages) property of the [PageSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageSelectedEventArgs.html) provides you the index of the pages that are currently selected. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
