@@ -2906,3 +2906,72 @@ End Sub
  
 {% endtabs %}
 
+## Customizing the Header in RibbonTab
+
+The Ribbon control allows customization of the tab headers using The ContentTemplate property. This enables users to enhance the visual appearance of tabs by adding icons and styled caption text.
+
+Below is an example where the HOME, SEND/RECEIVE, and FOLDER tabs are customized with an icon and caption text:
+ 
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:Ribbon>
+    <syncfusion:Ribbon.ApplicationMenu>
+        <syncfusion:ApplicationMenu IsPopupOpen="False"/>
+    </syncfusion:Ribbon.ApplicationMenu>
+    <syncfusion:Ribbon.QuickAccessToolBar>
+        <syncfusion:QuickAccessToolBar/>
+    </syncfusion:Ribbon.QuickAccessToolBar>
+    <syncfusion:RibbonTab x:Name="homeTab">
+        <!--Custom header template for the HOME tab.-->
+        <syncfusion:RibbonTab.ContentTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0,0,0">
+                    <Path Width="16" Height="16" Stroke="Black" StrokeThickness="1" Margin="0,0,5,0" Stretch="Uniform"
+                         Data="M10,1 L3,6.5 V14 H7 V10 H13 V14 H17 V6.5 L10,1 Z" />
+                    <TextBlock Text="HOME" FontSize="14"/>
+                </StackPanel>
+            </DataTemplate>
+        </syncfusion:RibbonTab.ContentTemplate>
+
+        <syncfusion:RibbonBar Name="New" Width="90"  Header="New"/>
+        <syncfusion:RibbonBar Name="Delete" Width="90"  Header="Delete"/>
+        <syncfusion:RibbonBar Name="Respond" Width="90" Header="Respond"/>
+        <syncfusion:RibbonBar Name="Quicksteps" Width="90" Header="Quick Steps"/>
+        <syncfusion:RibbonBar Name="Find" Width="90" Header="Find"/>
+    </syncfusion:RibbonTab>
+
+    <syncfusion:RibbonTab x:Name="sendORecivTab">
+        <!--Custom header template for the SEND/RECEIVE tab.-->
+        <syncfusion:RibbonTab.ContentTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0,0,0">
+                    <Path Width="16" Height="16" Stroke="Black" StrokeThickness="1" Margin="0,0,5,0" Stretch="Uniform"
+                      Data="M2,2 L14,8 L2,14 L4,9 L10,8 L4,7 Z" />
+                    <TextBlock Text="SEND/RECEIVE" FontSize="14" />
+                </StackPanel>
+            </DataTemplate>
+        </syncfusion:RibbonTab.ContentTemplate>
+    </syncfusion:RibbonTab>
+
+    <syncfusion:RibbonTab x:Name="folderTab">
+        <!--Custom header template for the FOLDER tab.-->
+        <syncfusion:RibbonTab.ContentTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0,0,0">
+                    <Path Width="16" Height="16" Stroke="Black" StrokeThickness="1" Margin="0,0,5,0" Stretch="Uniform" 
+                    Data="M2,4 H6 L7,6 H14 A1,1 0 0 1 15,7 V13 A1,1 0 0 1 14,14 H2 A1,1 0 0 1 1,13 V5 A1,1 0 0 1 2,4 Z" />
+                    <TextBlock Text="FOLDER" FontSize="14" />
+                </StackPanel>
+            </DataTemplate>
+        </syncfusion:RibbonTab.ContentTemplate>
+    </syncfusion:RibbonTab>
+</syncfusion:Ribbon>
+
+
+{% endhighlight %}
+ 
+{% endtabs %}
+
+![Set Icon to RibbonTab's header in WPF Ribbon](getting-started_images/wpf-ribbon-add-icon-in-header.jpg)
