@@ -999,6 +999,124 @@ SfSkinManager.SetTheme(this, new Theme("FluentLightGreen"));
 
 {% endtabs %}
 
+### Apply Theme with default style support
+
+You can apply the theme as default style by setting `ApplyThemeAsDefaultStyle` property as `true`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfSkinManager.ApplyThemeAsDefaultStyle = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N>The `SfSkinManager.ApplyThemeAsDefaultStyle` static property should be set before `InitializeComponent` of the window or during application start up.
+
+When ApplyThemeAsDefaultStyle is set to true, it removes the need to manually:
+1) Merge resource dictionaries for individual controls.
+2) Declare styles using the BasedOn attribute.
+3) Reference custom styles via the Style property.
+
+With this approach, you can override theme styles directly and more efficiently.
+
+Follow the steps below to implement this behavior:
+
+**Step 1: Enable Default Style Application**
+
+In your MainWindow constructor, set the `ApplyThemeAsDefaultStyle` API to `true`:
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+	    SfSkinManager.ApplyThemeAsDefaultStyle = true;
+        InitializeComponent();       
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 2: Define Styles Without BasedOn**
+
+Declare styles directly for the controls you wish to customize. Below is an example of a Button style override without using `BasedOn`:
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Style TargetType="{x:Type Button}">
+    <Setter Property="Foreground" Value="Red" />
+    <Setter Property="Background" Value="Purple" />
+    <Setter Property="FontFamily" Value="Berlin Sans FB Demi" />
+    <Setter Property="BorderBrush" Value="Yellow" />
+</Style> 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 3: Add Controls in XAML**
+
+You can now add controls to your `XAML`. The custom style will be automatically applied to all instances of the target control type:
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<StackPanel Orientation="Horizontal">
+    <Button Content="Ok" Height="30" Width="150" Margin="10"></Button>
+    <Button Content="Cancel" Height="30" Width="150" Margin="10"></Button> 
+</StackPanel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customizing theme styles without using basedOn for buttons](Skin-Manager_images/Customizing-theme-styles-without-basedon.png)
+
+We can also change a theme dynamically with custom styles, without utilizing the resource dictionary and override the style using the `BasedOn` property.
+
+In this example, we have a Button and a ComboBox which is used to switch theme between the Window11Light and Windows11Dark themes and we need not add resource dictionaries with paths in merged dictionaries in view model or code behind. The following code can be used to effortlessly switch themes. Here we customize the foreground color of the Button to red.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+   switch (combo.SelectedIndex)
+   {
+      case 0: SfSkinManager.SetTheme(this, new Theme("Windows11Light"));
+           break;
+      case 1: SfSkinManager.SetTheme(this, new Theme("Windows11Dark"));
+           break;                
+    }
+ }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+At runtime, the applied theme along with any custom style modifications will automatically reflect on the Button control.
+
+**Output Screenshots**
+
+Light Theme:
+
+![Customizing theme while run time in Light Without BasedOn](Skin-Manager_images/Switching-theme-at-runtime-Light-without-basedon.png)
+
+Dark Theme:
+
+![Customizing theme while run time in Dark Without BasedOn](Skin-Manager_images/Switching-theme-at-runtime-Dark-without-basedon.png)
 
 ### Customize theme in application level
 
