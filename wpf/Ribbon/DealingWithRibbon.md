@@ -2924,7 +2924,7 @@ Below is an example where the HOME, SEND/RECEIVE, and FOLDER tabs are customized
         <syncfusion:QuickAccessToolBar/>
     </syncfusion:Ribbon.QuickAccessToolBar>
     <syncfusion:RibbonTab x:Name="homeTab">
-        <!--Custom header template for the HOME tab.-->
+        <!--Custom header template for the HOME tab-->
         <syncfusion:RibbonTab.ContentTemplate>
             <DataTemplate>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0,0,0">
@@ -2942,8 +2942,8 @@ Below is an example where the HOME, SEND/RECEIVE, and FOLDER tabs are customized
         <syncfusion:RibbonBar Name="Find" Width="90" Header="Find"/>
     </syncfusion:RibbonTab>
 
-    <syncfusion:RibbonTab x:Name="sendORecivTab">
-        <!--Custom header template for the SEND/RECEIVE tab.-->
+    <syncfusion:RibbonTab x:Name="sendOReceiveTab">
+        <!--Custom header template for the SEND/RECEIVE tab-->
         <syncfusion:RibbonTab.ContentTemplate>
             <DataTemplate>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0,0,0">
@@ -2956,7 +2956,7 @@ Below is an example where the HOME, SEND/RECEIVE, and FOLDER tabs are customized
     </syncfusion:RibbonTab>
 
     <syncfusion:RibbonTab x:Name="folderTab">
-        <!--Custom header template for the FOLDER tab.-->
+        <!--Custom header template for the FOLDER tab-->
         <syncfusion:RibbonTab.ContentTemplate>
             <DataTemplate>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0,0,0">
@@ -2974,4 +2974,4 @@ Below is an example where the HOME, SEND/RECEIVE, and FOLDER tabs are customized
  
 {% endtabs %}
 
-![Set Icon to RibbonTab's header in WPF Ribbon](getting-started_images/wpf-ribbon-add-icon-in-header.jpg)
+![Set Icon to RibbonTab header in WPF Ribbon](getting-started_images/wpf-ribbon-add-icon-in-header.jpg)
