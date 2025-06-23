@@ -257,7 +257,7 @@ When users want to insert pages using the **From File** option, a browser window
 ![WPF PDF Viewer insert page window ](OrganizePages_Images/wpf-pdf-viewer-insert-page-window.png)
 	 
 ### Blank page 
-To insert a page using the **Blank Page** option, a single blank page will be added to the document as per the Customization in the **Insert Pages** window.
+When users want to insert page a page using the **Blank Page** option, a single blank page will be added to the document as per the Customization in the **Insert Pages** window.
 
 ![WPF PDF Viewer insert page window blank page ](OrganizePages_Images/wpf-pdf-viewer-insert-page-window-blank-page.png)	
 
