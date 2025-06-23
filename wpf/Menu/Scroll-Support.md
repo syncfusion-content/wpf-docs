@@ -11,9 +11,7 @@ documentation: ug
 
 MenuAdv allows users to scroll through the submenu items so that all the items of the submenu are visible even if the submenu crosses the vertical boundary. The Scroll support can be enabled by setting the IsScrollEnabled property to true. If the IsScrollEnabled property is set to false, users will not be able to scroll through the submenu items and the items that cross the vertical boundary will not be visible.
 
-![Scroll-Support_img1](Scroll-Support_images/Scroll-Support_img1.png)}
-
-
+![Scroll-Support_img1](Scroll-Support_images/Scroll-Support_img1.png)
 
 ### Use Case Scenarios
 
@@ -26,7 +24,6 @@ If the value of the IsScrollEnabled property is set to true, users can scroll th
 ### Properties
 
 The property for the Scroll support is described in the following tabulation:
-
 
 
 <table>
@@ -43,7 +40,6 @@ Gets or sets IsScrollEnabled of MenuAdv.</td><td>
 DependencyProperty</td><td>
 bool(true)</td></tr>
 </table>
-
 
 ### Sample Link
 
