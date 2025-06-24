@@ -18,7 +18,7 @@ I> The Syncfusion WPF templates are available from v16.1.0.24.
 
 Create the Syncfusion® WPF project using the Visual Studio Project Template by following the steps below: 
 
-> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio 2015 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/wpf/visual-studio-integration/download-and-installation) help topic.
+> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio 2015 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/wpf/visual-studio-integration/download-and-installation) help topic.
 
 1.	To create a Syncfusion® WPF project, follow either one of the options below:
 
@@ -60,7 +60,7 @@ Create the Syncfusion® WPF project using the Visual Studio Project Template by 
 
 	**Reference From:** Choose the assembly location such as NuGet, GAC Location, or Essential Studio® installed location, from where the assembly is added to the project.
 
-	N> The installed location and GAC options will be available only after the Syncfusion® Essential WPF setup has been installed. You can use the NuGet option instead of installing the Syncfusion® Essential WPF setup.
+	N> The **Installed Location** and **GAC** options will be available only after the Syncfusion® Essential WPF setup has been installed. You can use the NuGet option instead of installing the Syncfusion® Essential WPF setup.
 
 	**Installed ES Build Version:** To add the appropriate version assemblies to the project, choose the build version.
 
@@ -72,7 +72,7 @@ Create the Syncfusion® WPF project using the Visual Studio Project Template by 
 
 	N> Project create option will be enabled only if you have selected the window
       
-4.	After choosing above project configuration options in the Project Configuration Wizard, click the create button then Syncfusion® WPF project is created with the necessary XAML files and required Syncfusion® WPF assemblies/NuGet packages. 
+4.	After choosing the above project configuration options in the Project Configuration Wizard, click the Create button, and then the Syncfusion® WPF project is created with the necessary XAML files and required Syncfusion® WPF assemblies/NuGet packages.  
 
 	![Syncfusion WPF project created with required Syncfusion WPF assemblies](Project-Template-images/Syncfusion-Project-Template-Gallery-7.png)
 

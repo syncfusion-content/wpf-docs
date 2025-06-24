@@ -11,7 +11,7 @@ documentation: ug
 
 The Syncfusion Toolbox Installer utility incorporates the Syncfusion® WPF components into the Visual Studio .NET toolbox.
 
-N> Toolbox configuration support is not available for the Visual Studio Express Edition. However, you can manually configure the Syncfusion® controls into the Visual Studio Express Toolbox. To do so, refer the [Manual Toolbox Configuration](https://help.syncfusion.com/common/faq/how-to-configure-the-toolbox-of-visual-studio-manually).
+N> Toolbox configuration support is not available for the Visual Studio Express Edition. However, you can manually configure the Syncfusion® controls into the Visual Studio Express Toolbox. To do so, refer to the [Manual Toolbox Configuration](https://help.syncfusion.com/common/faq/how-to-configure-the-toolbox-of-visual-studio-manually).
 
 If the <b>“Configure Syncfusion® Controls in Visual Studio”</b> checkbox is selected from the installer UI while installing the Syncfusion® WPF installer, Syncfusion® components will be automatically configured in the Visual Studio toolbox.
 
@@ -125,7 +125,7 @@ Use the following steps to add the Syncfusion® WPF controls through Syncfusion�
 
 ## Configuring toolbox for .NET Core 3.1 projects
 
-The Syncfusion® NuGet packages must be installed in the WPF .NET Core application before the Syncfusion® toolbox can be configured. The corresponding NuGet packages Syncfusion® components will be configured in Visual Studio toolbox after installing the Syncfusion® NuGet packages in.NET Core application. 
+The Syncfusion® NuGet packages must be installed in the WPF .NET Core application before the Syncfusion® toolbox can be configured. The corresponding NuGet packages for Syncfusion® components will be configured in the Visual Studio toolbox after installing the Syncfusion® NuGet packages in the .NET Core application.  
 
 Please refer the documentation [link](../installation/install-nuget-packages), to learn more about how to use the Syncfusion® components using the Syncfusion® NuGet packages in .NET Core application.
    

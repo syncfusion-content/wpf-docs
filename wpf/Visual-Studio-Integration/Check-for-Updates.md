@@ -9,7 +9,7 @@ documentation: ug
 
 # Check for Updates in Syncfusion® Essential WPF
 
-Syncfusion® provides Extensions to update the most recent version of the Essential Studio® release. Installing the most recent version ensures that you always have the most up-to-date features, fixes, and improvements.
+Syncfusion® provides extensions to update the most recent version of the Essential Studio® release. Installing the most recent version ensures that you always have the most up-to-date features, fixes, and improvements.
 
 I> The Syncfusion® Check for updates is available from v17.1.0.32.
 
