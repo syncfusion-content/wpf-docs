@@ -19,15 +19,15 @@ The MenuAdv control also supports binding to objects. The following example show
 
    ~~~csharp
 
-	public class Model
-	{
-    	public Model()
-    	{
-        	SubItems = new ObservableCollection<Model>();
-    	}
-    	public string Header { get; set; }
-    	public ObservableCollection<Model> SubItems { get; set; }
-	}
+public class Model
+{
+    public Model()
+    {
+        SubItems = new ObservableCollection<Model>();
+    }
+    public string Header { get; set; }
+    public ObservableCollection<Model> SubItems { get; set; }
+}
 
    ~~~
 
@@ -36,56 +36,57 @@ The MenuAdv control also supports binding to objects. The following example show
 
    ~~~csharp
 
-	public class ViewModel
-	{
-		public ViewModel()
-		{
-			MenuItems = new ObservableCollection<Model>();
-			PopulateData();
-		}
+public class ViewModel
+{
+    public ViewModel()
+    {
+        MenuItems = new ObservableCollection<Model>();
+        PopulateData();
+    }
 
-		public ObservableCollection<Model> MenuItems { get; set; }
+    public ObservableCollection<Model> MenuItems { get; set; }
 
-		private void PopulateData()
-		{
-			Model product = new Model() { Header = "Products" };
-			PopulateSubSubItems(product);
-			MenuItems.Add(product);
-		}
+    private void PopulateData()
+    {
+        Model product = new Model() { Header = "Products" };
+        PopulateSubSubItems(product);
+        MenuItems.Add(product);
+    }
 
-		private void PopulateSubSubItems(Model product)
-		{
-			Model bi = new Model() { Header = "Business Intelligence" };
-			Model ui = new Model() { Header = "User Interface" };
-			Model wpf = new Model() { Header = "WPF" };
-			Model tools = new Model() { Header = "Tools" };
-			Model chart = new Model() { Header = "Chart" };
-			Model grid = new Model() { Header = "Grid" };
-			Model diagram = new Model() { Header = "Diagram" };
-			Model gauge = new Model() { Header = "Gauge" };
-			Model schedule = new Model() { Header = "Schedule" };
-			Model edit = new Model() { Header = "Edit" };
+    private void PopulateSubSubItems(Model product)
+    {
+        Model bi = new Model() { Header = "Business Intelligence" };
+        Model ui = new Model() { Header = "User Interface" };
+        Model wpf = new Model() { Header = "WPF" };
+        Model tools = new Model() { Header = "Tools" };
+        Model chart = new Model() { Header = "Chart" };
+        Model grid = new Model() { Header = "Grid" };
+        Model diagram = new Model() { Header = "Diagram" };
+        Model gauge = new Model() { Header = "Gauge" };
+        Model schedule = new Model() { Header = "Schedule" };
+        Model edit = new Model() { Header = "Edit" };
 
-			wpf.SubItems.Add(tools);
-			wpf.SubItems.Add(chart);
-			wpf.SubItems.Add(grid);
-			wpf.SubItems.Add(diagram);
-			wpf.SubItems.Add(gauge);
-			wpf.SubItems.Add(schedule);
-			wpf.SubItems.Add(edit);
+        wpf.SubItems.Add(tools);
+        wpf.SubItems.Add(chart);
+        wpf.SubItems.Add(grid);
+        wpf.SubItems.Add(diagram);
+        wpf.SubItems.Add(gauge);
+        wpf.SubItems.Add(schedule);
+        wpf.SubItems.Add(edit);
 
-			Model sl = new Model() { Header = "Silverlight" };
+        Model sl = new Model() { Header = "Silverlight" };
 
-			ui.SubItems.Add(wpf);
-			ui.SubItems.Add(sl);
+        ui.SubItems.Add(wpf);
+        ui.SubItems.Add(sl);
 
-			Model reporting = new Model() { Header = "Reporting" };
+        Model reporting = new Model() { Header = "Reporting" };
 
-			product.SubItems.Add(bi);
-			product.SubItems.Add(ui);
-			product.SubItems.Add(reporting);
-		}
-	}
+        product.SubItems.Add(bi);
+        product.SubItems.Add(ui);
+        product.SubItems.Add(reporting);
+    }
+}
+
    ~~~
 
 
@@ -129,43 +130,40 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 
    ~~~xaml
 
-	<Categories>
-		<Root Name="Products">
+   <Categories>
+      <Root Name="Products">
+          <SubItem Name="User Interface">
+              <SubItem Name="ASP .NET"/>
+              <SubItem Name="ASP .NET MVC"/>
+              <SubItem Name="WPF">
+                  <SubItem Name="Tools"/>
+                  <SubItem Name="Chart"/>
+                  <SubItem Name="Grid"/>
+                  <SubItem Name="Diagram"/>
+                  <SubItem Name="Gauge"/>
+                  <SubItem Name="Schedule"/>
+                  <SubItem Name="Edit"/>
+              </SubItem>
+              <SubItem Name="Silverlight"/>
+              <SubItem Name="Mobile MVC"/>
+              <SubItem Name="Windows Phone"/>
+              <SubItem Name="Windows Forms"/>
+          </SubItem>
 
-			<SubItem Name="User Interface">
-				<SubItem Name="ASP .NET"/>
-				<SubItem Name="ASP .NET MVC"/>
-				<SubItem Name="WPF">
-					<SubItem Name="Tools"/>
-					<SubItem Name="Chart"/>
-					<SubItem Name="Grid"/>
-					<SubItem Name="Diagram"/>
-					<SubItem Name="Gauge"/>
-					<SubItem Name="Schedule"/>
-					<SubItem Name="Edit"/>
-				</SubItem>
-				<SubItem Name="Silverlight"/>
-				<SubItem Name="Mobile MVC"/>
-				<SubItem Name="Windows Phone"/>
-				<SubItem Name="Windows Forms"/>
-			</SubItem>
-				
-			<SubItem Name="Business Intelligence">
-				<SubItem Name="WPF"/>
-				<SubItem Name="ASP.NET"/>
-				<SubItem Name="ASP.NET MVC"/>
-				<SubItem Name="Silverlight"/>
-			</SubItem>
-				
-			<SubItem Name="Reporting">
-				<SubItem Name="WPF"/>
-				<SubItem Name="Windows Forms"/>
-			</SubItem>
-				
-		</Root>
-	</Categories>
-		
+          <SubItem Name="Business Intelligence">
+              <SubItem Name="WPF"/>
+              <SubItem Name="ASP.NET"/>
+              <SubItem Name="ASP.NET MVC"/>
+              <SubItem Name="Silverlight"/>
+          </SubItem>
 
+          <SubItem Name="Reporting">
+              <SubItem Name="WPF"/>
+              <SubItem Name="Windows Forms"/>
+          </SubItem>
+      </Root>
+  </Categories>
+   
    ~~~
 
 2. Add XmlDataProvider for the above XML document.
