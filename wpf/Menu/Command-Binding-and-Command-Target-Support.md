@@ -24,92 +24,120 @@ To use the Command Binding support in an application users have to create a Dele
 {% tabs %}
 {% highlight xaml %}
 
+<shared:MenuAdv x:Name="Menu">
+    <shared:MenuItemAdv Header="File">
+        <shared:MenuItemAdv Header="New">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg" />
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Command="Copy" CommandTarget="{Binding ElementName=textbox}">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg" />
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Command="Cut" CommandTarget="{Binding ElementName=textbox}">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg" />
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+    </shared:MenuItemAdv>
+    <shared:MenuItemAdv Header="Edit" />
+    <shared:MenuItemAdv Header="View" />
+    <shared:MenuItemAdv Header="Themes">
+        <shared:MenuItemAdv
+            IsCheckable="True"
+            Header="Default"
+            CheckIconType="RadioButton"
+            GroupName="Themes"
+            IsChecked="True"
+            CommandParameter="Default"
+            Command="{Binding ElementName=root, Path=MyCommand}" />
+        <shared:MenuItemAdv
+            IsCheckable="True"
+            Header="Blend"
+            CheckIconType="RadioButton"
+            GroupName="Themes"
+            IsChecked="False"
+            CommandParameter="Blend"
+            Command="{Binding ElementName=root, Path=MyCommand}" />
+        <shared:MenuItemAdv
+            IsCheckable="True"
+            Header="Vs2010"
+            CheckIconType="RadioButton"
+            GroupName="Themes"
+            IsChecked="False"
+            CommandParameter="Vs2010"
+            Command="{Binding ElementName=root, Path=MyCommand}" />
+    </shared:MenuItemAdv>
+</shared:MenuAdv>
 
-<shared:MenuAdv x:Name="Menu">               
- <shared:MenuItemAdv Header="File">           
- <shared:MenuItemAdv Header="New">                
- <shared:MenuItemAdv.Icon>                          
- <Image Source="/MenuControlDemo; component/Images/NewIcon.jpg"/>                     
- </shared:MenuItemAdv.Icon>                   
- </shared:MenuItemAdv>                   
- <shared:MenuItemAdv Command="Copy"     CommandTarget="{Binding ElementName=textbox}">          
- <shared:MenuItemAdv.Icon>                            
- <Image Source="/MenuControlDemo; component/Images/CopyIcon.jpg"/>              
- </shared:MenuItemAdv.Icon>                   
- </shared:MenuItemAdv>                   
- <shared:MenuItemAdv Command="Cut"    CommandTarget="{Binding ElementName=textbox}">         
- <shared:MenuItemAdv.Icon>                            
- <Image Source="/MenuControlDemo;   component/Images/CutIcon.jpg"/>       
- </shared:MenuItemAdv.Icon>                  
- </shared:MenuItemAdv>               
- </shared:MenuItemAdv>                
- <shared:MenuItemAdv Header="Edit"/>    
- <shared:MenuItemAdv Header="View"/>              
- <shared:MenuItemAdv Header="Themes">                   
- <shared:MenuItemAdv IsCheckable="True" Header="Default"  CheckIconType="RadioButton" GroupName="Themes" IsChecked="True" CommandParameter="Default" Command="{Binding ElementName=root, Path=MyCommand}"/>               
- <shared:MenuItemAdv IsCheckable="True" Header="Blend"  CheckIconType="RadioButton" GroupName="Themes" IsChecked="False" CommandParameter="Blend" Command="{Binding ElementName=root, Path=MyCommand}"/>              
- <shared:MenuItemAdv IsCheckable="True" Header="Vs2010"  CheckIconType="RadioButton" GroupName="Themes" IsChecked="False" CommandParameter="Vs2010" Command="{Binding ElementName=root, Path=MyCommand}"/>        
- </shared:MenuItemAdv></shared:MenuAdv><TextBox x:Name="textbox"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-
 public partial class MainPage : UserControl
-{       
- public MainPage()       
- {            
- InitializeComponent();       
- }        
- private DelegateCommand myCommand;       
- public DelegateCommand MyCommand       
- {            
- get            
- {               
- if (myCommand == null)               
- {                    
- myCommand = new DelegateCommand(ApplyTheme);                
- }                
- return myCommand;           
- }        
- }        
- private void ApplyTheme(object visualStyle)        
- {            
- SkinManager.SetVisualStyle(this,(Syncfusion.Windows.Controls.Theming.VisualStyle)(visualStyle));      
- }
- }
+{
+    public MainPage()
+    {
+        InitializeComponent();
+    }
 
+    private DelegateCommand myCommand;
 
+    public DelegateCommand MyCommand
+    {
+        get
+        {
+            if (myCommand == null)
+            {
+                myCommand = new DelegateCommand(ApplyTheme);
+            }
+            return myCommand;
+        }
+    }
 
-public class DelegateCommand : ICommand  
-  {       
-  public event EventHandler CanExecuteChanged;       
-  readonly Predicate<Object> _canExecute = null;      
- readonly Action<Object> _executeAction = null;       
- public DelegateCommand(Action<object> executeAction, Predicate<Object> canExecute)        
- {           
- _executeAction = executeAction;          
- _canExecute = canExecute;      
- }        
- public DelegateCommand(Action<object> executeAction) : this(executeAction, null)    
- {            
- _executeAction = executeAction;        
- }        
- public void UpdateCanExecute()        
- {          
- if (CanExecuteChanged != null)               
- CanExecuteChanged(this, new EventArgs());    
- }        
- public bool CanExecute(object parameter)      
- {        
- return _canExecute == null || _canExecute(parameter);     
- }        public void Execute(object parameter)       
- {           
- if (_executeAction != null)         
- _executeAction(parameter);          
- UpdateCanExecute();      
- }   
- }
+    private void ApplyTheme(object visualStyle)
+    {
+        SkinManager.SetVisualStyle(this, (Syncfusion.Windows.Controls.Theming.VisualStyle)(visualStyle));
+    }
+}
+
+public class DelegateCommand : ICommand
+{
+    public event EventHandler CanExecuteChanged;
+
+    private readonly Predicate<object> _canExecute;
+    private readonly Action<object> _executeAction;
+
+    public DelegateCommand(Action<object> executeAction, Predicate<object> canExecute)
+    {
+        _executeAction = executeAction;
+        _canExecute = canExecute;
+    }
+
+    public DelegateCommand(Action<object> executeAction)
+        : this(executeAction, null)
+    {
+    }
+
+    public void UpdateCanExecute()
+    {
+        CanExecuteChanged?.Invoke(this, new EventArgs());
+    }
+
+    public bool CanExecute(object parameter)
+    {
+        return _canExecute == null || _canExecute(parameter);
+    }
+
+    public void Execute(object parameter)
+    {
+        _executeAction?.Invoke(parameter);
+        UpdateCanExecute();
+    }
+}
+
 {% endhighlight %}
 {% endtabs %}
 

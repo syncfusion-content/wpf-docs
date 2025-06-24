@@ -21,85 +21,44 @@ The value assigned by using the InputGestureText property will be displayed in M
 
 {% highlight xaml %}
 
-
-
-
 <shared:MenuAdv x:Name="Menu" Margin="10">
-
-<shared:MenuItemAdv Header="File">
-
-<shared:MenuItemAdv Header="New" InputGestureText="Ctrl+n">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Cut" InputGestureText="Ctrl+x">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Copy" InputGestureText="Ctrl+c">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Paste" InputGestureText="Ctrl+v">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/PasteIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Undo" InputGestureText="Ctrl+z">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/UndoIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Redo" InputGestureText="Ctrl+y">
-
-<shared:MenuItemAdv.Icon>
-
-<Image Source="/MenuControlDemo;component/Images/RedoIcon.jpg"/>
-
-</shared:MenuItemAdv.Icon>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemSeparator/>
-
-</shared:MenuItemAdv>
-
-<shared:MenuItemAdv Header="Edit"/>
-
-<shared:MenuItemAdv Header="View"/>
-
-<shared:MenuItemAdv Header="Project"/>
-
-<shared:MenuItemAdv Header="Build"/>
-
+    <shared:MenuItemAdv Header="File">
+        <shared:MenuItemAdv Header="New" InputGestureText="Ctrl+N">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg" />
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Header="Cut" InputGestureText="Ctrl+X">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg" />
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Header="Copy" InputGestureText="Ctrl+C">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg" />
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Header="Paste" InputGestureText="Ctrl+V">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/PasteIcon.jpg" />
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Header="Undo" InputGestureText="Ctrl+Z">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/UndoIcon.jpg" />
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemAdv Header="Redo" InputGestureText="Ctrl+Y">
+            <shared:MenuItemAdv.Icon>
+                <Image Source="/MenuControlDemo;component/Images/RedoIcon.jpg" />
+            </shared:MenuItemAdv.Icon>
+        </shared:MenuItemAdv>
+        <shared:MenuItemSeparator />
+    </shared:MenuItemAdv>
+    <shared:MenuItemAdv Header="Edit" />
+    <shared:MenuItemAdv Header="View" />
+    <shared:MenuItemAdv Header="Project" />
+    <shared:MenuItemAdv Header="Build" />
 </shared:MenuAdv>
 
 {% endhighlight %}
@@ -107,11 +66,9 @@ The value assigned by using the InputGestureText property will be displayed in M
 ![InputGestureText-Support_img1](InputGestureText-Support_images/InputGestureText-Support_img1.png)
 
 
-
 ### Properties
 
 The property for the InputGestureText support is described in the following tabulation:
-
 
 
 <table>
