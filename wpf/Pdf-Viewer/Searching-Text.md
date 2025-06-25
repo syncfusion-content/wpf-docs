@@ -85,7 +85,7 @@ The [FindText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.P
 
 ### Find and get the bounds of a text
 
-The [FindText(String, out Dictionary<Int32, List<RectangleF>>)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_String_System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF____) method takes the input argument as the given text. It provides a dictionary that contains the page index and the list of rectangular coordinates(bounds) of the text found on that page. The below code snippet shows how to get the bounds of the given text:
+The [FindText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_String_System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF____) method takes the input argument as the given text. It provides a dictionary that contains the page index and the list of rectangular coordinates(bounds) of the text found on that page. The below code snippet shows how to get the bounds of the given text:
 
 {% tabs %}
 {% highlight c# %}
@@ -109,7 +109,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 ### Find and get the bounds of a text on the desired page
 
-The [FindText(String, Int32, out List<RectangleF>)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_String_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF___) method takes the input arguments as the text to be found along with the desired page index and provides a list of values that contains the rectangular coordinates(bounds) of the found text. The below code snippet shows how to get the bounds of the given text on a particular page:
+The [FindText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_String_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF___) method takes the input arguments as the text to be found along with the desired page index and provides a list of values that contains the rectangular coordinates(bounds) of the found text. The below code snippet shows how to get the bounds of the given text on a particular page:
 
 {% tabs %}
 {% highlight c# %}
@@ -133,7 +133,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 ### Find and get the bounds of the list of text
 
-The [FindText(List<String>, out Dictionary<Int32, List<TextSearchResult>>)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_Collections_Generic_List_System_String__System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_Syncfusion_Windows_PdfViewer_TextSearchResult____) method takes the input argument as the list of text that needs to be found. It provides a list of ‘TextSearchResult’, which contains the found text and its rectangular coordinates(bounds). The below code snippet shows how to get the bounds of the found text from the Text Search Result:
+The [FindText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_Collections_Generic_List_System_String__System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_Syncfusion_Windows_PdfViewer_TextSearchResult____) method takes the input argument as the list of text that needs to be found. It provides a list of ‘TextSearchResult’, which contains the found text and its rectangular coordinates(bounds). The below code snippet shows how to get the bounds of the found text from the Text Search Result:
 
 {% tabs %}
 {% highlight c# %}
@@ -159,7 +159,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 ### Find and get the bounds of the list of text on the desired page
 
-The [FindText(List<String>, Int32, out List<MatchedItem>)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_Collections_Generic_List_System_String__System_Int32_System_Collections_Generic_List_Syncfusion_Pdf_Parsing_MatchedItem___) method takes the input argument as the list of text to be found along with the desired page index and provides the list of [MatchedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Parsing.MatchedItem.html), which contains the matched text, and its rectangular coordinates(bounds). The below code snippet illustrates how to get the bounds of the text from the matched item:
+The [FindText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FindText_System_Collections_Generic_List_System_String__System_Int32_System_Collections_Generic_List_Syncfusion_Pdf_Parsing_MatchedItem___) method takes the input argument as the list of text to be found along with the desired page index and provides the list of [MatchedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Parsing.MatchedItem.html), which contains the matched text, and its rectangular coordinates(bounds). The below code snippet illustrates how to get the bounds of the text from the matched item:
 
 {% tabs %}
 {% highlight c# %}
