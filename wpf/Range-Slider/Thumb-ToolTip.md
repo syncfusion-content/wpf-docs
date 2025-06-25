@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Thumb ToolTip in WPF Range Slider control | Syncfusion®
-description: Learn here all about Thumb ToolTip support in Syncfusion® WPF Range Slider (SfRangeSlider) control and more.
-platform: wpf
+title: Thumb ToolTip in WPF Range Slider Control | Syncfusion®
+description: Explore the Thumb ToolTip configurations in the Syncfusion® WPF Range Slider (SfRangeSlider) control, including precision, format, and positioning.
+platform: WPF
 control: SfRangeSlider 
 documentation: ug
 ---
 
 # Thumb ToolTip in WPF Range Slider (SfRangeSlider)
 
-The Thumb tooltip displays the current value where the Thumb stands. 
+The Thumb tooltip in the SfRangeSlider displays the current value at the thumb's position on the slider.
 
 ![ToolTip](Thumb-ToolTip_images/Thumb-ToolTip_img1.png)
 
 ## Thumb ToolTip Precision  
 
-[ThumbToolTipPrecision](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ThumbToolTipPrecision.html) property is used to define the precision of the value displayed in the tooltip.  
+The [`ThumbToolTipPrecision`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ThumbToolTipPrecision.html) property defines the precision of the value shown in the tooltip.
 
 
 {% tabs %}
@@ -36,13 +36,11 @@ The Thumb tooltip displays the current value where the Thumb stands.
 
 ![Precision](Thumb-ToolTip_images/Thumb-ToolTip_img2.png)
 
-N> ThumbToolTipPrecision property is only applicable, if ToolTipFormat value is N.
+> **Note**: `ThumbToolTipPrecision` is applicable only if `ToolTipFormat` value is set to "N".
 
+## Thumb ToolTip Format
 
-## Thumb ToolTipFormat
-
-The [ToolTipFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ToolTipFormat) property, specifies the format specifier by which to format the ToolTip display value. 
-
+The [`ToolTipFormat`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ToolTipFormat) property specifies the format specifier for the tooltip display value.
 
 {% tabs %}
 
@@ -78,21 +76,18 @@ The [ToolTipFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Contro
 
 ![Format](Thumb-ToolTip_images/ToolTip-Format.png)
 
-
-N> Default value of `ToolTipFormat` is N.
-
+> **Note**: The default value of `ToolTipFormat` is "N".
 
 ## Thumb ToolTip Position 
 
-The position of the Thumb tooltip in relation to the Thumb can be controlled by the [ThumbToolTipPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ThumbToolTipPlacement.html) property. It has the following options.  
-
+The [`ThumbToolTipPlacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ThumbToolTipPlacement.html) property controls the tooltip's position relative to the thumb, offering three options:
 1. BottomRight 
 2. TopLeft 
 3. None 
 
 ### BottomRight  
 
-Tooltip is placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation. 
+Places the tooltip below the thumb in horizontal orientation and to the right in vertical orientation.
 
 {% tabs %}
 
@@ -128,12 +123,11 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
 
 ![BottomRight](Thumb-ToolTip_images/Thumb-ToolTip_img4.png)
 
-
-N> This option displays the tooltip to right in vertical orientation.
+> **Note**: Displays tooltip to the right in vertical orientation.
 
 ### TopLeft 
 
-Tooltip is placed either above the Thumb in horizontal orientation or left of the Thumb in vertical orientation. 
+Places the tooltip above the thumb in horizontal orientation and to the left in vertical orientation.
 
 {% tabs %}
 
@@ -169,12 +163,11 @@ Tooltip is placed either above the Thumb in horizontal orientation or left of th
 
 ![TopLeft](Thumb-ToolTip_images/Thumb-ToolTip_img3.png)
 
-N> This option displays the tooltip to left in vertical orientation.
+> **Note**: Displays tooltip to the left in vertical orientation.
 
 ### None 
 
-No Tooltip appears. 
-
+Disables the tooltip display.
 {% tabs %}
 
 {% highlight XAML %}
@@ -209,9 +202,9 @@ No Tooltip appears.
 
 ![None](Thumb-ToolTip_images/Thumb-ToolTip_img5.png)
 
-## ThumbInterval
+## Thumb Interval
 
-[ThumbInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ThumbInterval.html) is an interval between the two thumbs, the thumbs cannot be moved within this range.
+The [`ThumbInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ThumbInterval.html) property defines the interval between two thumbs, preventing movement within this range.
 
 {% tabs %}
 
