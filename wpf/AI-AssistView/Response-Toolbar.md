@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Response Toolbar in WPF AI AssistView control | Syncfusion
-description: Learn about the response toolbar feature in the AI AssistView control, which enables users to access quick actions such as copying, regenerating, or reacting to chat responses through customizable toolbar items.
+description: Learn about the response toolbar feature in the AI AssistView control, which enables users to access quick actions to chat responses through toolbar items.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
