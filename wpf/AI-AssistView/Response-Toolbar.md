@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Response Toolbar in WPF AI AssistView control | Syncfusion
-description: Learn about the Response Toolbar feature in the AI AssistView control, which allows users to cancel AI processing or response generation in WPF applications.
+description: Learn about the response toolbar feature in the AI AssistView control, which enables users to access quick actions such as copying, regenerating, or reacting to chat responses through customizable toolbar items.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Response Toolbar in WPF AI AssistView
 
-The [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature that enables users to customize the response toolbar in chat interactions. By default, the toolbar offers built-in options such as Copy, Regenerate, Like, and Dislike. Additionally, you can add custom toolbar items as needed.
+The [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature, which provides built-in options such as Copy, Regenerate, Like, and Dislike for each chat response. These items provide quick actions to enhance user interactions. In addition to the built-in options, users can personalize the Response Toolbar by adding their own custom toolbar items to suit specific application needs.
 
 ## ResponseToolbarItem
 
