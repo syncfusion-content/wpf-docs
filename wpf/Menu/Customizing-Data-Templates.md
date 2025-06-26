@@ -31,12 +31,9 @@ You can customize how a business object is displayed as MenuItemAdv using ItemTe
     </syncfusion:MenuAdv.ItemTemplate>
 </syncfusion:MenuAdv>
 
-
 {% endhighlight %}
 
-
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/customizing-data-templates-in-menuadv)
-
 
 Implementing the above code will generate the following MenuAdv control.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Organize Pages in WPF Pdf Viewer
 
-Organize pages support allows you to rotate, rearrange, and delete pages from a PDF document using a miniature preview of the PDF pages.
+Organize pages support allows you to rotate, rearrange, insert and delete pages from a PDF document using a miniature preview of the PDF pages.
 
 Use the following steps to organize the PDF page(s) in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html):
 
@@ -28,6 +28,12 @@ Use the following steps to organize the PDF page(s) in [PdfViewerControl](https:
 4. You can rearrange the page(s) by dragging and dropping them.
 
 	![WPF PDF Viewer Rearrange Pages](OrganizePages_Images/wpf-pdf-viewer-rearrange-pages.png)
+	
+5. You can insert a blank page or any PDF page(s) using the Organize Pages toolbar.
+    ![WPF PDF Viewer insert Pages](OrganizePages_Images/wpf-pdf-viewer-insert-pages-toolbar.png)
+6.You can insert a blank page or any PDF page(s),and perform clipboard actions like Cut, Copy, and Paste using the more option in the context menu that appears when hovering over a pages.
+   ![WPF PDF Viewer insert Pages option button](OrganizePages_Images/wpf-pdf-viewer-Option-button.png)
+    ![WPF PDF Viewer option button context menu](OrganizePages_Images/wpf-pdf-viewer-Option-button-contextmenu.png)
 
 ## Rotating PDF page(s)
 
@@ -239,6 +245,21 @@ pdfViewerControl.PageOrganizer.RemovePagesCommand.Execute(new int[] { 0, 1 });
 
 {% endhighlight %}
 {% endtabs %}
+
+## Insert Page(s) Customization
+Insert page feature allows users to choose where to add pages using the **Insert Pages** window.Users can access this via from either the Organize Pages toolbar or the context menu that appears when hovering over a pages.
+In the window, there are three options **First**, **Last**, and **Page**. Selecting **First** inserts pages at the document's beginning, while **Last** adds them at the end. The **Page** option lets users specify a position using **Location** **Before** adds pages before the selected page, and **After** inserts them after.
+
+N> The **Location** is accessible only when the **Page** radio button is selected.
+### From file 
+When users want to insert pages using the **From File** option, a browser window will open to select a PDF. Once selected, all pages from the PDF are inserted into the document based on the customization in the **Insert Pages** window.
+
+![WPF PDF Viewer insert page window ](OrganizePages_Images/wpf-pdf-viewer-insert-page-window.png)
+	 
+### Blank page 
+When users want to insert page a page using the **Blank Page** option, a single blank page will be added to the document as per the Customization in the **Insert Pages** window.
+
+![WPF PDF Viewer insert page window blank page ](OrganizePages_Images/wpf-pdf-viewer-insert-page-window-blank-page.png)	
 
 ## Get the selected page indexes
 

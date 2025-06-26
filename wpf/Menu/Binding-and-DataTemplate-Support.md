@@ -52,7 +52,6 @@ The data source can be bound to MenuItemAdv by using the ItemsSource property. W
 </shared:MenuAdv>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
 public class MenuList
@@ -151,15 +150,11 @@ public class CustomItemSource : ObservableCollection<ObjectModel>
 }
 
 {% endhighlight %}
-
 {% endtabs %}
-
 
 ![Adding menu items using data binding in WPF MenuAdv control](Binding-and-DataTemplate-Support_images/Binding-and-DataTemplate-Support_img1.png)
 
-
 ![Adding hierarchical menu items using data template in WPF MenuAdv control ](Binding-and-DataTemplate-Support_images/Binding-and-DataTemplate-Support_img2.png)
-
 
 ### Sample Link
 

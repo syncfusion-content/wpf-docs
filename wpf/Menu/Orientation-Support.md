@@ -56,7 +56,6 @@ Users can add the Orientation support to MenuAdv used in the application as ment
 
 {% endhighlight %}
 
-
 ### Properties
 
 The property for the Orientation support is described in the following tabulation:

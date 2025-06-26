@@ -13,8 +13,6 @@ MenuAdv allows users to scroll through the submenu items so that all the items o
 
 ![Scroll-Support_img1](Scroll-Support_images/Scroll-Support_img1.png)
 
-
-
 ### Use Case Scenarios
 
 MenuAdv will be very useful in the case of adding more number of items to the single MenuItemAdv and the size of the submenu crosses the vertical boundary.
@@ -26,7 +24,6 @@ If the value of the IsScrollEnabled property is set to true, users can scroll th
 ### Properties
 
 The property for the Scroll support is described in the following tabulation:
-
 
 
 <table>
@@ -43,7 +40,6 @@ Gets or sets IsScrollEnabled of MenuAdv.</td><td>
 DependencyProperty</td><td>
 bool(true)</td></tr>
 </table>
-
 
 ### Sample Link
 

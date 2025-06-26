@@ -44,14 +44,12 @@ The Icon support can be added to an application by using the Icon property of Me
 
 {% endhighlight %}
 
-
 ![Icon-Support_img1](Icon-Support_images/Icon-Support_img1.png)
 
 
 ### Properties
 
 The property for the Icon support is described in the following tabulation:
-
 
 
 <table>
