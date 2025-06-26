@@ -34,8 +34,6 @@ Use the following steps to organize the PDF page(s) in [PdfViewerControl](https:
 6.You can insert a blank page or any PDF page(s),and perform clipboard actions like Cut, Copy, and Paste using the more option in the context menu that appears when hovering over a pages.
    ![WPF PDF Viewer insert Pages option button](OrganizePages_Images/wpf-pdf-viewer-Option-button.png)
     ![WPF PDF Viewer option button context menu](OrganizePages_Images/wpf-pdf-viewer-Option-button-contextmenu.png)
-	
-   N> Keyboard shortcuts are not supported for Cut, Copy, and Paste operations.
 
 ## Rotating PDF page(s)
 
