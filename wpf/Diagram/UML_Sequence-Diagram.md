@@ -1,27 +1,27 @@
 ---
 layout: post
-title: Sequence Diagram Model in WPF Diagram control | Syncfusion®
-description: Learn here all about Sequence Diagram Model support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: UML Sequence Diagram Model in WPF Diagram control | Syncfusion®
+description: Learn here all about UML Sequence Diagram Model support in Syncfusion® WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Sequence Diagram Model in WPF Diagram (SfDiagram)
+# UML Sequence Diagram Model in WPF Diagram (SfDiagram)
 
-A sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The `SfDiagram` control provides comprehensive support for creating and visualizing UML sequence diagrams through the [UMLSequenceDiagramModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceDiagramModel.html) class. You need to assign the `UMLSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Model) property of the `SfDiagram` control to enable this functionality.
+A UML Sequence Diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The `SfDiagram` control provides comprehensive support for creating and visualizing UML Sequence Diagrams through the [UMLSequenceDiagramModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceDiagramModel.html) class. You need to assign the `UMLSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Model) property of the `SfDiagram` control to enable this functionality.
 
-## Sequence Diagram Elements
+## UML Sequence Diagram Elements
 
-A sequence diagram contain several key elements, such as participants, messages, activation boxes, and fragments. Let's discuss how to implement these components using the `SfDiagram` control.
+A UML Sequence Diagram contain several key elements, such as participants, messages, activation boxes, and fragments. Let's discuss how to implement these components using the `SfDiagram` control.
 
 ### Participants
 
-[UMLSequenceParticipant](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceParticipant.html) in a sequence diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
+[UMLSequenceParticipant](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceParticipant.html) in a UML Sequence Diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
 
 #### Creating Participants
 
-To create participants in your sequence diagram:
+To create participants in your UML Sequence Diagram:
 
 {% tabs %}
 {% highlight xaml %}
@@ -110,7 +110,7 @@ The [UMLSequenceMessageType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 #### Creating Messages
 
-To create messages in your sequence diagram:
+To create messages in your UML Sequence Diagram:
 
 {% tabs %}
 {% highlight xaml %}
@@ -304,7 +304,7 @@ SfDiagram Diagram = new SfDiagram();
 
 #### Creating Activation Boxes
 
-To create activation boxes in your sequence diagram:
+To create activation boxes in your UML Sequence Diagram:
 
 {% tabs %}
 {% highlight xaml %}
@@ -425,7 +425,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 ### Fragments
 
-[UMLSequenceFragment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceFragment.html) groups a set of messages based on specific conditions in a sequence diagram. They are displayed as rectangular enclosures that visually separate conditional or looping interactions.
+[UMLSequenceFragment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceFragment.html) groups a set of messages based on specific conditions in a UML Sequence Diagram. They are displayed as rectangular enclosures that visually separate conditional or looping interactions.
 
 #### Types of Fragments
 
@@ -439,7 +439,7 @@ The [UMLSequenceFragmentType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.X
 
 #### Creating Fragments
 
-To create fragments in your sequence diagram, you will need to use the `UMLSequenceFragment` to define fragments and the [UMLSequenceFragmentCondition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceFragmentCondition.html) to specify each condition block within those fragments.
+To create fragments in your UML Sequence Diagram, you will need to use the `UMLSequenceFragment` to define fragments and the [UMLSequenceFragmentCondition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceFragmentCondition.html) to specify each condition block within those fragments.
 
 {% tabs %}
 {% highlight xaml %}
@@ -695,7 +695,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 | MessageIds | IEnumerable\<object\> | Collection of message IDs included in this condition section |
 | Fragments | IEnumerable\<UMLSequenceFragment\> | Collection of nested fragments (for complex structures) |
 
-### Customizing Participant Spacing in Sequence Diagram 
+### Customizing Participant Spacing in UML Sequence Diagram 
 
 The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceDiagramModel.html#Syncfusion_UI_Xaml_Diagram_UMLSequenceDiagramModel_SpaceBetweenParticipants) property in `UMLSequenceDiagramModel` controls the horizontal gap between participants. The default value is 100, but you can adjust it as needed.  
 
@@ -727,13 +727,13 @@ The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 // Intialize Diagram
 SfDiagram Diagram = new SfDiagram();
 
-// Initialize the sequence diagram model with custom spacing and predefined elements  
+// Initialize the UML Sequence Diagram model with custom spacing and predefined elements  
 Diagram.Model = new UMLSequenceDiagramModel()  
 {  
     SpaceBetweenParticipants = 300, // Sets the horizontal spacing between participants (default is 100)  
-    Participants = participants,    // List of participants in the sequence diagram  
+    Participants = participants,    // List of participants in the UML Sequence Diagram  
     Messages = messages,            // List of messages exchanged between participants  
-    Fragments = fragments           // List of sequence diagram fragments (opt, alt, loop)  
+    Fragments = fragments           // List of UML Sequence Diagram fragments (opt, alt, loop)  
 };
 {% endhighlight %}  
 {% endtabs %}  
