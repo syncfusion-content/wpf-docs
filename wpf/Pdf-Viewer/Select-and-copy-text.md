@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Select and Copy Text in PDF files using WPF PDF Viewer | Syncfusion<sup>&reg;</sup>;
-description: Learn about Select and Copy Text support in Syncfusion<sup>&reg;</sup>; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
+title: Select and Copy Text from PDF using WPF PDF Viewer | Syncfusion&reg;
+description: Learn about Select and Copy Text support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -15,7 +15,7 @@ N> From version 19.4.0.48, we have updated our default text extraction engine to
 
 ## Detecting the completion of text selection
 
-When the text selection is completed, the [TextSelectionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) event will be raised. Refer to the following code snippet for wiring the event.
+When the text selection is completed, the [TextSelectionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextSelectionCompleted) event will be raised. Refer to the following code snippet for wiring the event.
 
 {% tabs %}
 {% highlight c# %}
