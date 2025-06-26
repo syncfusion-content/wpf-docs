@@ -251,6 +251,7 @@ Insert page feature allows users to choose where to add pages using the **Insert
 In the window, there are three options **First**, **Last**, and **Page**. Selecting **First** inserts pages at the document's beginning, while **Last** adds them at the end. The **Page** option lets users specify a position using **Location** **Before** adds pages before the selected page, and **After** inserts them after.
 
 N> The **Location** is accessible only when the **Page** radio button is selected.
+
 ### From file 
 When users want to insert pages using the **From File** option, a browser window will open to select a PDF. Once selected, all pages from the PDF are inserted into the document based on the customization in the **Insert Pages** window.
 

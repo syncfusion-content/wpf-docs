@@ -11,13 +11,14 @@ documentation: ug
 
 The topics under this section explain the data binding support for the MenuAdv control.
 
-## Data-Binding to Objects
+## Data Binding to Objects
 
 The MenuAdv control also supports binding to objects. The following example shows this.
 
 1. Create a class that act as a model for MenuAdv.
 
-   ~~~csharp
+{% tabs %}
+{% highlight C# %}
 
 public class Model
 {
@@ -29,12 +30,14 @@ public class Model
     public ObservableCollection<Model> SubItems { get; set; }
 }
 
-   ~~~
+{% endhighlight %}
+{% endtabs %}
 
 
 2. Create a ViewModel class and initialize the items.
 
-   ~~~csharp
+{% tabs %}
+{% highlight C# %}
 
 public class ViewModel
 {
@@ -87,33 +90,36 @@ public class ViewModel
     }
 }
 
-   ~~~
-
+{% endhighlight %}
+{% endtabs %}
 
 3. Create a ViewModel instance and use it as DataContext for the root window.
 
-   ~~~xaml
+{% tabs %}
+{% highlight xaml %}
 
-	<Window.DataContext>
-		<local:ViewModel/>
-	</Window.DataContext>
+<Window.DataContext>
+	<local:ViewModel/>
+</Window.DataContext>
 
-   ~~~
+{% endhighlight %} 
+{% endtabs %}
 
 4. Now configure the ItemsSource and ItemTemplate of MenuAdv.
 
-   ~~~xaml
+{% tabs %}
+{% highlight xaml %}
 
-	<syncfusion:MenuAdv ItemsSource="{Binding MenuItems}">
-		<syncfusion:MenuAdv.ItemTemplate>
-			<HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
-				<TextBlock Text="{Binding Header}" />
-			</HierarchicalDataTemplate>
-		</syncfusion:MenuAdv.ItemTemplate>
-	</syncfusion:MenuAdv>
-		
-   ~~~
+<syncfusion:MenuAdv ItemsSource="{Binding MenuItems}">
+	<syncfusion:MenuAdv.ItemTemplate>
+		<HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
+			<TextBlock Text="{Binding Header}" />
+		</HierarchicalDataTemplate>
+	</syncfusion:MenuAdv.ItemTemplate>
+</syncfusion:MenuAdv>
 
+{% endhighlight %} 
+{% endtabs %}
 
    Implementing the above code will generate the following control.
 
@@ -121,74 +127,76 @@ public class ViewModel
 
 
 
-## Data-Biding with XML
+## Data Binding with XML
 
 An XML file can also be used as _ItemsSource_ for the MenuAdv control. The following example illustrates this.
 
 1. Create an XML file with the following details as follows and name it as Data.xml.
 
+{% tabs %}
+{% highlight xaml %}
 
-   ~~~xaml
-
-   <Categories>
-      <Root Name="Products">
-          <SubItem Name="User Interface">
-              <SubItem Name="ASP .NET"/>
-              <SubItem Name="ASP .NET MVC"/>
-              <SubItem Name="WPF">
-                  <SubItem Name="Tools"/>
-                  <SubItem Name="Chart"/>
-                  <SubItem Name="Grid"/>
-                  <SubItem Name="Diagram"/>
-                  <SubItem Name="Gauge"/>
-                  <SubItem Name="Schedule"/>
-                  <SubItem Name="Edit"/>
-              </SubItem>
-              <SubItem Name="Silverlight"/>
-              <SubItem Name="Mobile MVC"/>
-              <SubItem Name="Windows Phone"/>
-              <SubItem Name="Windows Forms"/>
-          </SubItem>
-
-          <SubItem Name="Business Intelligence">
-              <SubItem Name="WPF"/>
-              <SubItem Name="ASP.NET"/>
-              <SubItem Name="ASP.NET MVC"/>
-              <SubItem Name="Silverlight"/>
-          </SubItem>
-
-          <SubItem Name="Reporting">
-              <SubItem Name="WPF"/>
-              <SubItem Name="Windows Forms"/>
-          </SubItem>
-      </Root>
+<Categories>
+   <Root Name="Products">
+      <SubItem Name="User Interface">
+         <SubItem Name="ASP .NET"/>
+         <SubItem Name="ASP .NET MVC"/>
+         <SubItem Name="WPF">
+            <SubItem Name="Tools"/>
+            <SubItem Name="Chart"/>
+            <SubItem Name="Grid"/>
+            <SubItem Name="Diagram"/>
+            <SubItem Name="Gauge"/>
+            <SubItem Name="Schedule"/>
+            <SubItem Name="Edit"/>
+         </SubItem>
+         <SubItem Name="Silverlight"/>
+         <SubItem Name="Mobile MVC"/>
+         <SubItem Name="Windows Phone"/>
+         <SubItem Name="Windows Forms"/>
+      </SubItem>
+      <SubItem Name="Business Intelligence">
+         <SubItem Name="WPF"/>
+         <SubItem Name="ASP.NET"/>
+         <SubItem Name="ASP.NET MVC"/>
+         <SubItem Name="Silverlight"/>
+      </SubItem>
+      <SubItem Name="Reporting">
+         <SubItem Name="WPF"/>
+         <SubItem Name="Windows Forms"/>
+      </SubItem>
+   </Root>
   </Categories>
-   
-   ~~~
+
+{% endhighlight %} 
+{% endtabs %}
 
 2. Add XmlDataProvider for the above XML document.
 
-   ~~~xaml
+{% tabs %}
+{% highlight xaml %}
 
-	<XmlDataProvider Source="Data.xml" 
+<XmlDataProvider Source="Data.xml" 
 	x:Key="xmlSource" XPath="Categories"/> 
 
-   ~~~
+{% endhighlight %} 
+{% endtabs %}
 
 
 3. Set ItemsSource property for the MenuAdv.
+{% tabs %}
+{% highlight xaml %}
 
-   ~~~xaml
+<syncfusion:MenuAdv ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Root}">
+	<syncfusion:MenuAdv.ItemTemplate>
+		<HierarchicalDataTemplate ItemsSource="{Binding XPath=SubItem}">
+			<TextBlock Text="{Binding XPath=@Name}" />
+		</HierarchicalDataTemplate>
+	</syncfusion:MenuAdv.ItemTemplate>
+</syncfusion:MenuAdv>
 
-	<syncfusion:MenuAdv ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Root}">
-		<syncfusion:MenuAdv.ItemTemplate>
-			<HierarchicalDataTemplate ItemsSource="{Binding XPath=SubItem}">
-				<TextBlock Text="{Binding XPath=@Name}" />
-			</HierarchicalDataTemplate>
-		</syncfusion:MenuAdv.ItemTemplate>
-	</syncfusion:MenuAdv>	
-	
-   ~~~
+{% endhighlight %} 
+{% endtabs %}
 
    This will create the following MenuAdv control.
 
