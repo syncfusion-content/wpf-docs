@@ -13,11 +13,11 @@ A UML Sequence Diagram is an interaction diagram that demonstrates how objects i
 
 ## UML Sequence Diagram Elements
 
-A UML Sequence Diagram contain several key elements, such as participants, messages, activation boxes, and fragments. Let's discuss how to implement these components using the `SfDiagram` control.
+A UML Sequence Diagram contains several key elements, such as participants, messages, activation boxes, and fragments. Let's discuss how to implement these components using the `SfDiagram` control.
 
 ### Participants
 
-[UMLSequenceParticipant](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceParticipant.html) in a UML Sequence Diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
+[UMLSequenceParticipant](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceParticipant.html) in a UML Sequence Diagram represents the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
 
 #### Creating Participants
 
@@ -93,7 +93,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 ### Messages
 
-[UMLSequenceMessage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceMessage.html) represent communication between participants and are displayed as arrows connecting lifelines.
+[UMLSequenceMessage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceMessage.html) represent communication between participants and is displayed as arrows connecting lifelines.
 
 #### Types of Messages
 
