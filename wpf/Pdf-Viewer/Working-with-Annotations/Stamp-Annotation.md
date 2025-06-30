@@ -296,7 +296,7 @@ The PdfViewerControl notifies through events, when `AnnotationChangedAction` suc
 
 ### StampAnnotationChanged Event
 
-The `StampAnnotationChanged` event occurs when the `Action` performed in stamp annotation. It provides the common information and annotation properties which are available in `Settings` through the `StampAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings`.
+The [StampAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_StampAnnotationChanged) event occurs when the [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Action) performed in stamp annotation. It provides the common information and annotation properties which are available in `Settings` through the [StampAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.StampAnnotationChangedEventArgs.html). The user can modify the annotation properties through [Settings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.StampAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_StampAnnotationChangedEventArgs_Settings).
 
 The following code shows how to write the StampAnnotationChanged event in PdfViewerControl
 
