@@ -6,7 +6,7 @@ platform: wpf
 control: Themes
 documentation: ug
 ---
-# Getting Started with WPF Skin Manager
+# WPF Skin Manager Classic 
 
 The Classic Skin Manager in WPF applies themes by merging style definitions from theme assemblies into the application's visual tree. Each theme assembly contains resource dictionaries with styles for controls. When the `Theme` property is set, the Skin Manager merges the appropriate theme resources into the resource dictionary of the target element or into `Application.Current.Resources`, ensuring consistent styling across the element and its descendants. 
 
