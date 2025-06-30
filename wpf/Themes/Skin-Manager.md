@@ -204,7 +204,7 @@ SfSkinManager.SetTheme(this, new Theme("Windows11Light"));
 
 {% endtabs %}
 
-![Applied skinmanager theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Applied-SkinManager-Theme-Window-DataGrid.png)
+![Applied skinmanager theme for Window and SfDataGrid control](Skin-Manager_images/Applied-SkinManager-Theme-Window-DataGrid.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-themes-demo-using-skinmanager).
 
