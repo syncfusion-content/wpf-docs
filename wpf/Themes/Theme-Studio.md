@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WPF Theme Studio
 
-The Theme Studio helps users to transform their visual presentation into a new theme in minutes. End-users can select an appropriate base theme, change its primary color, preview and export it as a theme project, and utilize it in their applications for a rich user interface experience.
+The Theme Studio enables users to transform their application's visual presentation into a new theme within minutes. Users can choose a base theme, change its primary color, preview the changes, and export the result as a theme project, ready to be integrated into their applications for a rich and engaging user interface experience. 
 
 ## Supported themes
 
-The WPF Theme Studio comes with the following set of themes:
+The WPF Theme Studio includes the following built-in themes: 
 
 * Windows 11 Light
 
@@ -51,7 +51,7 @@ The WPF Theme Studio comes with the following set of themes:
 
 ## Supported palettes
 
-The WPF Theme Studio comes with various set of palettes for each theme variant.
+The WPF Theme Studio comes with various sets of palettes for each theme variant.
 
 <table>
 <tr>
@@ -230,7 +230,7 @@ The theme studio application has been divided into two sections: the controls pr
 
 **Step 3**
 
-To apply predefined themes, select the appropriate themes from Themes List Drop-down available in the top left corner. 
+To apply predefined themes, select the appropriate themes from Themes List Drop-down available in the top right corner. 
 
 ![Shows the List of Themes in ThemeStudio](ThemeStudio_images/ThemeStudio-Theme-Selection.png)
 
@@ -250,7 +250,7 @@ N> The WPF theme studio groups both Syncfusion<sup>&reg;</sup> and Framework con
 
 ### Exporting theme project
  
-Let us see the step-by-step procedure for exporting theme project from theme studio.
+Let us see the step-by-step procedure for exporting theme project from a theme studio.
 
 **Step 1**
 
@@ -266,7 +266,7 @@ Now, the Export dialog box appears with the option to select either the entire c
 
 **Step 3**
 
-Provide the theme name, in which the theme should be exported and select the required folder for Theme Export to be selected. When you export the download theme, it will come as a theme project with color codes for the selected Syncfusion<sup>&reg;</sup> WPF controls.
+Provide the theme name, in which the theme should be exported, and select the required folder for Theme Export to be selected. When you export the download theme, it will come as a theme project with color codes for the selected Syncfusion<sup>&reg;</sup> WPF controls.
 
 ![Export details dialog from Theme Studio for WPF](ThemeStudio_images/ThemeStudio-ExportName.png)
 
@@ -276,11 +276,11 @@ Provide the theme name, in which the theme should be exported and select the req
 
 ### Generating theme assembly
 
-Let us see the step-by-step procedure for ensuring theme assembly generation for exported theme project.
+Let us see the step-by-step procedure for ensuring theme assembly generation for exported theme projects.
 
 **Step 1**
 
-The following exported theme project should be attached for corresponding target frameworks used in the WPF application.
+The following exported theme project should be attached to corresponding target frameworks used in the WPF application.
 
 <table>
 <tr>
@@ -289,31 +289,23 @@ Target Framework</th><th>
 Solution Project</th></tr>
 <tr>
 <td>
-.Net 6.0</td><td>
-Syncfusion.Themes.MaterialDarkYellow.WPF_NET60.csproj</td>
+.Net 9.0</td><td>
+Syncfusion.Themes.Windows11LightYellow.WPF_NET90.csproj </td>
 </tr>
 <tr>
 <td>
-.Net Framework 4.6</td><td>
-Syncfusion.Themes.MaterialDarkYellow.WPF_2015.csproj</td></tr>
+.Net 8.0</td><td>
+Syncfusion.Themes.Windows11LightYellow.WPF_NET80.csproj </td>
+</tr>
 <tr>
 <td>
-.Net Framework 4.5.1</td><td>
-Syncfusion.Themes.MaterialDarkYellow.WPF_2013.csproj</td></tr>
-<tr>
-<td>
-.Net Framework 4.5 </td><td>
-Syncfusion.Themes.MaterialDarkYellow.WPF_2012.csproj</td></tr>
-<tr>
-<td>
-.Net Framework 4.0</td><td>
-Syncfusion.Themes.MaterialDarkYellow.WPF_2010.csproj</td></tr>
+.Net Framework 4.6.2</td><td>
+Syncfusion.Themes.Windows11LightYellow.WPF_2017.csproj </td></tr>
 </table>
-
 
 **Step 2**
 
-The exported theme project should be rebuild in `Release` mode to generate theme assembly.
+Rebuild the exported theme project in `Release` mode to generate the theme assembly.  
 
 The export theme project has default `ThemeStudio.snk` key pair. If it is not required, use the already created private key pair by referring to the export theme project inside the application properties or [Create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) using Visual Studio if the private key pair was not created externally.
 
@@ -325,7 +317,7 @@ Ensure whether the `Sign the assembly` checkbox is clicked or not, to use the pr
 
 The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) control helps to apply the built-in themes to the Syncfusion<sup>&reg;</sup> UI controls for WPF.
 
-Let us see the step-by-step procedure for adding exported theme project as assembly(.dll) and witness the custom theme set for Docking Manager.  
+Let us see the step-by-step procedure for adding exported theme project as assembly(.dll) and apply the custom theme to the DockingManager.  
 
 **Step 1**
 
@@ -353,13 +345,13 @@ Add reference of **Syncfusion.SfSkinManager.Wpf.dll** to the WPF application and
 
 The appearance of any Syncfusion<sup>&reg;</sup> UI controls for WPF can be customized by using the [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_ThemeProperty) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). 
 
-Now, use the [RegisterTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_RegisterTheme_System_String_Syncfusion_SfSkinManager_SkinHelper_) method to register the instance of generated MaterialDarkYellow (`Syncfusion.Themes.MaterialDarkYellow.WPF`) assembly from the exported theme project for demonstration purposes, passing the exported custom theme name and respective theme assembly instance as parameters.
+Now, use the [RegisterTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_RegisterTheme_System_String_Syncfusion_SfSkinManager_SkinHelper_) method to register the instance of generated Windows11LightYellow (`Syncfusion.Themes.Windows11LightYellow.WPF`) assembly from the exported theme project for demonstration purposes, passing the exported custom theme name and respective theme assembly instance as parameters.
 
 {% tabs %}
 
 {% highlight C# %}
 
-string style = "MaterialDarkYellow";
+string style = "Windows11LightYellow";
 SkinHelper styleInstance = null;
 var skinHelpterStr = "Syncfusion.Themes." + style + ".WPF." + style + "SkinHelper, Syncfusion.Themes." + style + ".WPF";
 Type skinHelpterType = Type.GetType(skinHelpterStr);
@@ -367,7 +359,7 @@ if (skinHelpterType != null)
     styleInstance = Activator.CreateInstance(skinHelpterType) as SkinHelper;
 if (styleInstance != null)
 {
-    SfSkinManager.RegisterTheme("MaterialDarkYellow", styleInstance);
+    SfSkinManager.RegisterTheme("Windows11LightYellow", styleInstance);
 }
 
 {% endhighlight %}
@@ -376,9 +368,9 @@ if (styleInstance != null)
 
 **Step 4**
 
-Now, set the `SfSkinManager` attached property `Theme` as `MaterialDarkYellow;MaterialDark` for the Docking Manager control since the MaterialDarkYellow (`Syncfusion.Themes.MaterialDarkYellow.WPF`) assembly has been generated from the exported theme project for demonstration purposes.
+Now, set the `SfSkinManager` attached property `Theme` as `Windows11LightYellow;Windows11Light` for the Docking Manager control since the Windows11LightYellow  (`Syncfusion.Themes.Windows11LightYellow.WPF`) assembly has been generated from the exported theme project for demonstration purposes.
 
-N> Custom theme name is provided in this format: `CustomTheme1;BaseThemeName`, where `CustomTheme1` denotes the custom theme name and `BaseThemeName` denotes the theme name from which it is derived. For example, `MaterialDarkYellow;MaterialDark`.
+N> Custom theme name is provided in this format: `CustomTheme1;BaseThemeName`, where `CustomTheme1` denotes the custom theme name and `BaseThemeName` denotes the theme name from which it is derived. For example, `Windows11LightYellow;Windows11Light`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -409,7 +401,7 @@ N> Custom theme name is provided in this format: `CustomTheme1;BaseThemeName`, w
 {% endhighlight %}
 {% highlight C# %}
 
-string style = "MaterialDarkYellow";
+string style = "Windows11LightYellow";
 SkinHelper styleInstance = null;
 var skinHelpterStr = "Syncfusion.Themes." + style + ".WPF." + style + "SkinHelper, Syncfusion.Themes." + style + ".WPF";
 Type skinHelpterType = Type.GetType(skinHelpterStr);
@@ -417,9 +409,9 @@ if (skinHelpterType != null)
     styleInstance = Activator.CreateInstance(skinHelpterType) as SkinHelper;
 if (styleInstance != null)
 {
-    SfSkinManager.RegisterTheme("MaterialDarkYellow", styleInstance);
+    SfSkinManager.RegisterTheme("Windows11LightYellow", styleInstance);
 }
-SfSkinManager.SetTheme(this, new Theme("MaterialDarkYellow;MaterialDark"));
+SfSkinManager.SetTheme(this, new Theme("Windows11LightYellow;Windows11Light"));
 
 {% endhighlight %}
 {% endtabs %}
