@@ -662,8 +662,8 @@ public partial class MainWindow : Window
 {
     public MainWindow()
     {
-	    SfSkinManager.ApplyThemeAsDefaultStyle = true;
-        InitializeComponent();       
+        SfSkinManager.ApplyThemeAsDefaultStyle = true;
+        InitializeComponent();
     }
 }
 
