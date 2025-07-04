@@ -274,6 +274,9 @@ Provide the theme name, in which the theme should be exported, and select the re
 
 ![Add Theme as Project for Theme Export](ThemeStudio_images/ThemeStudio-Themes-Folder.png)
 
+N> When running the exported project, you may encounter reference issues in .NET 8.0 or .NET 9.0 environments. To resolve this, manually reference the required assemblies from the following path:  
+C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{product version}\precompiledassemblies\{targetframework}\
+
 ### Generating theme assembly
 
 Let us see the step-by-step procedure for ensuring theme assembly generation for exported theme projects.
