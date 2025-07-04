@@ -73,6 +73,32 @@ DockingManager1.PersistState = True
 
 {% endtabs %}
 
+To Save the AutoPersist state of the DockingManager, call the [SaveDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SaveDockState) method of the DockingManager in the window closing event.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+{
+	DockingManager1.SaveDockState();
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+
+Private Sub Window_Closing(sender As Object, e As System.ComponentModel.CancelEventArgs)
+	DockingManager1.SaveDockState()
+End Sub
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 To load the AutoPersist state of the DockingManager, call the [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_LoadDockState().html) method of the DockingManager in its loaded event.
 
 {% tabs %}
