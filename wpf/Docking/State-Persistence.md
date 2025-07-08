@@ -2,7 +2,7 @@
 layout: post
 title: State Persistence in WPF Docking control | Syncfusion®
 description: Learn here all about State Persistence support in Syncfusion® WPF Docking (DockingManager) control and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
@@ -68,6 +68,32 @@ DockingManager1.PersistState = true;
 {% highlight VB %}
 
 DockingManager1.PersistState = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+To Save the AutoPersist state of the DockingManager, call the [SaveDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SaveDockState) method of the DockingManager in the window closing event.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+{
+	DockingManager1.SaveDockState();
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+
+Private Sub Window_Closing(sender As Object, e As System.ComponentModel.CancelEventArgs)
+	DockingManager1.SaveDockState()
+End Sub
+
 
 {% endhighlight %}
 
