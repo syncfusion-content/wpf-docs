@@ -217,7 +217,7 @@ Also ensure that the `ApplyThemeAsDefaultStyle` property is set to `true`
 
 N> The `SfSkinManager.ApplicationTheme` static property should be set before `InitializeComponent` of the window or during application start up, when applying for multiple windows.
 
-{% endhighlight %}
+{% tabs %}
 
 {% highlight C# %}
 
