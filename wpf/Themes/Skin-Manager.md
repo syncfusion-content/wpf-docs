@@ -197,7 +197,6 @@ N> While applying the theme to a Window or any element, `SkinManager` inherits t
 {% highlight C# %}
 
 SfSkinManager.ApplyThemeAsDefaultStyle = true; 
-
 SfSkinManager.SetTheme(this, new Theme("Windows11Light"));
 
 {% endhighlight %}
@@ -208,7 +207,39 @@ SfSkinManager.SetTheme(this, new Theme("Windows11Light"));
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-themes-demo-using-skinmanager).
 
-## Customize theme colors and fonts in the application
+## Apply a theme globally in the application
+
+To apply a theme globally in an application, set the theme using `ApplicationTheme` attached property of the SfSkinManager in the constructor of your MainWindow. This ensures that the selected theme is automatically applied to any new windows when they are loaded.
+
+If you set the theme using the `ApplicationTheme` attached property of [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html), you don’t need to set it again using the [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_ThemeProperty) attached property in xaml or by using [SetTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SetTheme_System_Windows_DependencyObject_Syncfusion_SfSkinManager_Theme_) in code behind.
+
+Also ensure that the `ApplyThemeAsDefaultStyle` property is set to `true`
+
+N> The `SfSkinManager.ApplicationTheme` static property should be set before `InitializeComponent` of the window or during application start up, when applying for multiple windows.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+       SfSkinManager.ApplyThemeAsDefaultStyle = true;
+       SfSkinManager.ApplicationTheme = new Theme("Windows11Light");
+       InitializeComponent();
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Applied theme globally](Skin-Manager_images/Applied-theme-globally.png)
+
+## Customization 
+
+### Customize theme colors and fonts in the application
 
 To customize the theme colors and fonts in the application, call [RegisterThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_RegisterThemeSettings_System_String_Syncfusion_SfSkinManager_IThemeSetting_) method and pass the theme name and respective theme setting instance as parameters.
 
@@ -385,6 +416,7 @@ themeSettings.SubTitleFontSize = 16;
 themeSettings.BodyAltFontSize = 15;
 themeSettings.FontFamily = new FontFamily("Callibri");
 SfSkinManager.RegisterThemeSettings("Windows11Light", themeSettings);
+SfSkinManager.ApplyThemeAsDefaultStyle = true;
 SfSkinManager.SetTheme(this, new Theme("Windows11Light")); 
 
 {% endhighlight %}
@@ -402,12 +434,107 @@ Customize theme colors using the predefined palette
 Windows11LightThemeSettings themeSettings = new Windows11LightThemeSettings();
 themeSettings.Palette = FluentPalette.PinkRed;
 SfSkinManager.RegisterThemeSettings("Windows11Light", themeSettings);
+SfSkinManager.ApplyThemeAsDefaultStyle = true;
+SfSkinManager.SetTheme(this, new Theme("Windows11Light")); 
 
 {% endhighlight %}
 
 {% endtabs %}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/customize-themes-using-theme-settings).
+
+### Styling with Dynamic Themes Using ThemeResource and ThemeKey
+When a button is used in XAML, it automatically applies the base style associated with its control type. If you want to apply a different predefined style to the same target type (Button), you can use [ThemeResource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.ThemeResourceExtension.html) and [ThemeKey](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.ThemeKey.html) to override the default appearance.[ThemeKey](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.ThemeKey.html) identifies a specific resource, such as a style or brush, within the theme library. It is typically mapped to a visual element, like a button style or a background color.
+
+To dynamically apply different brush keys (for properties such as Background, Foreground, etc.) or to reference alternative styles for the same Button type, use the following code in `XAML`
+
+{% tabs %}
+
+{% highlight XAML %}
+
+xmlns:sfskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Also, in your MainWindow constructor, set the `ApplyThemeAsDefaultStyle` API to `true`
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+       SfSkinManager.ApplyThemeAsDefaultStyle = true;
+       InitializeComponent();
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Applying Background Using `ErrorBackground` Brush:
+
+{% tabs %}
+
+{% highlight XAML %}
+
+Background="{sfskin:ThemeResource ThemeKey={sfskin:ThemeKey Key=ErrorBackground}}"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+This sets the button’s background based on the themed `ErrorBackground` brush.
+
+You can find the brushes for each theme in the `Brushes.xaml` file located in the Common folder after [exporting theme project](https://help.syncfusion.com/wpf/themes/theme-studio#exporting-theme-project).
+
+Applying Style Using `WPFPrimaryButtonStyle`:
+
+{% tabs %}
+
+{% highlight XAML %}
+
+Style="{sfskin:ThemeResource ThemeKey={sfskin:ThemeKey Key=WPFPrimaryButtonStyle}}"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+This applies the WPFPrimaryButtonStyle to the button, overriding its default style.
+
+You can retrieve the styles for specific controls from the [Resource Key list](https://help.syncfusion.com/wpf/themes/skin-manager#resource-key-list) according to your requirements.
+
+In the example below, a ComboBox is used to toggle between the Windows11Light and Windows11Dark themes. Two buttons are displayed: one applies a different style (WPFPrimaryButtonStyle), while the other uses a different background brush (ErrorBackground).
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<StackPanel Orientation="Horizontal" >
+    <Button Content="OK" Height="30" Width="120" Margin="10" Background="{sfskin:ThemeResource ThemeKey={sfskin:ThemeKey Key=ErrorBackground}}"></Button>
+    <Button Content="Cancel" Height="30" Width="120" Margin="10" Style="{sfskin:ThemeResource ThemeKey={sfskin:ThemeKey Key=WPFPrimaryButtonStyle}}"></Button>          
+</StackPanel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+This creates two buttons styled dynamically based on the active theme. One reflects an error state background; the other adopts the primary button style.
+
+**Output Screenshots**
+
+Light Theme:
+
+![Customizing using ThemeResource Light](Skin-Manager_images/Customizing-using-ThemeResource-Light.png)
+
+Dark Theme:
+
+![Customizing using ThemeResource Dark](Skin-Manager_images/Customizing-using-ThemeResource-Dark.png)
 
 ## Resource Key List
 
@@ -572,7 +699,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/customize-theme
 
 ## Apply themes to the controls derived from Syncfusion<sup>&reg;</sup> controls
 
-To apply themes to a derived control using `SfSkinManager`, assign the base control type to the DefaultStyleKey property in the constructor of your derived control.  
+To apply themes to a derived control using `SfSkinManager`, assign the base control type to the DefaultStyleKey property in the constructor of your derived control.Also ensure that the `ApplyThemeAsDefaultStyle` property is set to `true` in the MainWindow Constructor. 
 
 {% tabs %}
 
@@ -600,13 +727,22 @@ To apply themes to a derived control using `SfSkinManager`, assign the base cont
 
 {% highlight C# %}
 
- public class SfDataGridExt : SfDataGrid
- {
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        SfSkinManager.ApplyThemeAsDefaultStyle = true;
+        InitializeComponent();
+    }
+    
+}
+public class SfDataGridExt : SfDataGrid
+{
     public SfDataGridExt()
     {
         this.DefaultStyleKey = typeof(SfDataGrid);
     }
- }
+}
 
 {% endhighlight %}
 
