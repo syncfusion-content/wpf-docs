@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF Skin Manager | Apply Themes for Syncfusion WPF controls
-description: Learn about how to apply the themes for Syncfusion WPF controls and Framework controls using the skin manager.
+description: Check out and learn about how to apply the themes for Syncfusion WPF controls and Framework controls using the skin manager.
 platform: wpf
 control: Themes
 documentation: ug
