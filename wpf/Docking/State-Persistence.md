@@ -73,32 +73,6 @@ DockingManager1.PersistState = True
 
 {% endtabs %}
 
-To Save the AutoPersist state of the DockingManager, call the [SaveDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SaveDockState) method of the DockingManager in the window closing event.
-
-{% tabs %}
-
-{% highlight C# %}
-
-private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-{
-	DockingManager1.SaveDockState();
-}
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-
-Private Sub Window_Closing(sender As Object, e As System.ComponentModel.CancelEventArgs)
-	DockingManager1.SaveDockState()
-End Sub
-
-
-{% endhighlight %}
-
-{% endtabs %}
-
 To load the AutoPersist state of the DockingManager, call the [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_LoadDockState().html) method of the DockingManager in its loaded event.
 
 {% tabs %}
@@ -150,6 +124,45 @@ Some of the formats are:
  * XML file
  * XmlWriter
 
+### Where to call the Save and Load dock state:
+
+To save the DockState of the DockingManager, call the [SaveDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SaveDockState) method. You can call this method during any specific or desired scenario where preserving the layout is needed. For instance, before a window is closed or when switching between views.
+
+{% tabs %}
+{% highlight C# %}
+// Saves the current dock state of the DockingManager when the window is closing event.
+private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+{
+	DockingManager1.SaveDockState();
+}
+{% endhighlight %}
+
+{% highlight VB %}
+' Saves the current dock state of the DockingManager when the window is closing event.
+Private Sub Window_Closing(sender As Object, e As System.ComponentModel.CancelEventArgs)
+	DockingManager1.SaveDockState()
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+To load the previously saved DockState of the DockingManager when any specific desired scenario, call the [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_LoadDockState().html) method. This method can be called in any specific or desired scenario where you need to bring back a saved layout, such as during application initialization or after resetting the layout.
+
+{% tabs %}
+{% highlight C# %}
+// Loads the previously saved dock state of the DockingManager on button click event.
+private void LoadButton_Click(object sender, RoutedEventArgs e)
+{
+	DockingManager1.LoadDockState();
+}
+{% endhighlight %}
+
+{% highlight VB %}
+' Loads the previously saved dock state of the DockingManager on button click event.
+Private Sub LoadButton_Click(sender As Object, e As RoutedEventArgs)
+	DockingManager1.LoadDockState()
+End Sub
+{% endhighlight %}
+{% endtabs %}
 
 ### Load and save the DockState using Isolated Storage:
 
