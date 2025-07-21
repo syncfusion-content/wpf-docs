@@ -47,7 +47,7 @@ boxWhiskerChart.Series.Add(boxAndWhisker);
 
 N>By default, the `BoxPlotMode` property value is Exclusive.
 
-N> You can refer to our [WPF Box and Whisker Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-box-and-whisker-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Box and Whisker Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Other%20Charts/BoxAndWhiskerChart.xaml) to know how to render and configure the box and whisker chart.
+N> You can refer to our [WPF Box and Whisker Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-box-and-whisker-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Box and Whisker Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Box%20Plot) to know how to render and configure the box and whisker chart.
 
 **Customize the series Box mode**
 
@@ -432,4 +432,4 @@ series.ConnectorLineStyle = style;
 
 ![Customizing Connector Line in WPF Waterfall Chart](Series_images/wpf-waterfall-chart-connector-line-customization.png)
 
-N> You can explore our [WPF Waterfall Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-waterfall-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Waterfall Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Other%20Charts/Waterfall.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can explore our [WPF Waterfall Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-waterfall-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Waterfall Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Waterfall) to know how to represent time-dependent data, showing trends in data at equal intervals.

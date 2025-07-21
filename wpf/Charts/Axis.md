@@ -5531,7 +5531,7 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 * [`PrefixLabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_PrefixLabelTemplate) - Gets the prefix template of label.
 * [`PostfixLabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_PostfixLabelTemplate) - Gets the postfix template of label.
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Axis) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 
