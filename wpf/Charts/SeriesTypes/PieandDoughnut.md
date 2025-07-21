@@ -224,7 +224,7 @@ pieSeries.AdornmentsInfo = adornmentInfo;
 
 ![WPF Pie Chart with Grouping in Percentage Mode](Series_images/wpf-pie-chart-grouping.png)
 
-N> You can explore our [WPF Pie Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-pie-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Pie Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Circular%20Charts/PieChart.xaml) to know how to render and configure the pie chart.
+N> You can explore our [WPF Pie Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-pie-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Pie Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Circular%20Charts/Pie) to know how to render and configure the pie chart.
 
 ## Doughnut Chart
 
@@ -641,7 +641,7 @@ chart.Series.Add(series);
 
 ![WPF Chart displays Exploded Segments of Accumlation Series](Series_images/wpf-chart-exploded-segments.png)
 
-N> You can refer to our [WPF Doughnut Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-doughnut-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Doughnut Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Circular%20Charts/DoughnutChart.xaml) to know how to render and configure the doughnut chart.
+N> You can refer to our [WPF Doughnut Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-doughnut-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Doughnut Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Circular%20Charts/Doughnut) to know how to render and configure the doughnut chart.
 
 ## See also
 

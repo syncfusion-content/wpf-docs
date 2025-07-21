@@ -46,7 +46,7 @@ chart.Series.Add(series);
 
 ![WPF Column Chart](Series_images/wpf-column-chart.png)
 
-N> You can also explore our [WPF Column Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/Column.xaml) to know how to render and configure the column chart.
+N> You can explore our [WPF Column Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-column-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Column Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Column) to know how to render and configure the column chart.
 
 ## Bar Chart
 
@@ -83,7 +83,7 @@ BarSeries series = new BarSeries()
 
 ![WPF Bar Chart](Series_images/wpf-bar-chart.png)
 
-N> You can also explore our [WPF Bar Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/Bar.xaml) to know how to render and configure the bar chart.
+N> You can explore our [WPF Bar Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-bar-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Bar Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Bar) to know how to render and configure the bar chart.
 
 ### Spacing
 
