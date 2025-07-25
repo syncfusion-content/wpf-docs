@@ -292,36 +292,24 @@ Arranges template for the <code>ViewPortHeight</code> when the {{'[RowTemplate](
 </tr>
 </table>
 
-## TemplateRenderMode Support in TemplateViewDefinition
+## Handling Row Virtualization in RowTemplate
+By default, row are reused in the DataGrid to optimize performance. As a result, if you define a row template containing interactive controls (such as SfDataGrid, DataGrid, and similar components) and perform data operations (like sorting or filtering), the visual state and data bindings of these controls may not always persist correctly. 
 
-[TemplateViewDefinition]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html)) support for controlling how row templates are rendered using the `TemplateRenderMode` property. This property determines whether a unique template instance is created for each row or if a template is reused across multiple rows.
+This is because the same row visual elements are recycled and displayed for different data items during virtualization. 
 
-<table>
-<tr>
-<th>
-Template Render Mode
-</th>
-<th>
-Definition
-</th>
-</tr>
-<tr>
-<td>
-<code>Shared</code>
-</td>
-<td>
-Rows and template instances are reused across different rows.
-</td>
-</tr>
-<tr>
-<td>
-<code>Individual</code>
-</td>
-<td>
-Row and template instances are created for each row, and a template instance is reused only for its corresponding row reference.
-</td>
-</tr>
-<table>
+To provide greater flexibility, the `TemplateRenderMode` property is available for row templates. This property allows you to configure how the row templates are instantiated and managed within the DataGrid.
+
+### TemplateRenderMode Options:
+
+### Shared (Default):
+* Rows (and their templates) are reused across multiple rows as you scroll or interact with the grid.
+* This mode provides the best performance and lowest memory usage.
+* Template instances are reused, some state or data operations on template controls may not be maintained correctly when expanding, collapsing, or scrolling, leading to possible visual or data mismatches.
+
+### Individual:
+* A unique rows and template instance is created for each data row.
+* Template instances are not shared or reused across rows.
+* Data operations and visual state are always preserved correctly for each row, even after expanding, collapsing, or scrolling.
 
 ## Keyboard navigation support for DetailsViewTemplate
 
