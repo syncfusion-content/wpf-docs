@@ -292,6 +292,38 @@ Arranges template for the <code>ViewPortHeight</code> when the {{'[RowTemplate](
 </tr>
 </table>
 
+## TemplateRenderMode Support in TemplateViewDefinition
+
+[TemplateViewDefinition]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html)) support for controlling how row templates are rendered using the `TemplateRenderMode` property. This property determines whether a unique template instance is created for each row or if a template is reused across multiple rows.
+
+<table>
+<tr>
+<th>
+Template Render Mode
+</th>
+<th>
+Definition
+</th>
+</tr>
+<tr>
+<td>
+<code>Shared</code>
+</td>
+<td>
+Rows and template instances are reused across different rows.
+</td>
+</tr>
+<tr>
+<td>
+<code>Individual</code>
+</td>
+<td>
+Row and template instances are created for each row, and a template instance is reused only for its corresponding row reference.
+</td>
+</tr>
+<tr>
+<td>
+
 ## Keyboard navigation support for DetailsViewTemplate
 
 In the SfDataGrid, you can navigate from parent row to DetailsViewTemplate and vice-versa using <kbd>Tab</kbd> key by default. You can also restrict tab key navigation from parent to DetailsViewTemplate by setting the [TemplateViewDefinition.TemplateNavigationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html#Syncfusion_UI_Xaml_Grid_TemplateViewDefinition_NavigationMode) property value to `ExcludeTemplateRow`.
