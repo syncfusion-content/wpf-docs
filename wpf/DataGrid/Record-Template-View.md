@@ -321,8 +321,7 @@ Rows and template instances are reused across different rows.
 Row and template instances are created for each row, and a template instance is reused only for its corresponding row reference.
 </td>
 </tr>
-<tr>
-<td>
+<table>
 
 ## Keyboard navigation support for DetailsViewTemplate
 
