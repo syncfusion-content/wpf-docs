@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Surface Chart (SfSurfaceChart)
 
-In surface chart, you cane apply data in a grid table format, that contains the number of rows and columns as shown in the following table. 
+In the Surface Chart, you can visualize data provided in a grid table format that contains the number of rows and columns as shown in the following table. 
 
 <table>
 <tr>
