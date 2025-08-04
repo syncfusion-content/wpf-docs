@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Container Type in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Container Type support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
-platform: wpf
+title: Container Type in WPF TextInputLayout Control | Syncfusion
+description: Learn all about container type support in the Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+platform: WPF
 control: SfTextInputLayout
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 Containers enhance the discoverability of the input view by creating a contrast between the input view and the assistive elements.
 
-N> The default value of the `ContainerType` is `Outlined`.
+> **Note:** The default value of the `ContainerType` is `Outlined`.
 
 ## Outlined
 
@@ -45,7 +45,7 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 ## Filled
 
-The background of the input view will be filled with container color, and the base line stroke and thickness will be changed based on the state of the input view.
+The background of the input view will be filled with the container color, and the baseline stroke and thickness will be changed based on the state of the input view.
 
 {% tabs %} 
 
@@ -74,7 +74,7 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 ## None
 
-The container will have an empty background and enough space.
+The container will have an empty background and sufficient space.
 
 {% tabs %} 
 
