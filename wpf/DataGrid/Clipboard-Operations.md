@@ -411,7 +411,6 @@ public class CustomCopyPaste : GridCutCopyPaste
         
         string[] clipBoardText = Regex.Split(text, @"\r\n");
         
-        clipBoardText = Regex.Split(clipBoardText[0], @"\t");
 
         //Get the clipBoardText and check if the clipBoardText is more than one cell
 
@@ -420,6 +419,7 @@ public class CustomCopyPaste : GridCutCopyPaste
         if (clipBoardText.Count() > 1)
         {
             base.PasteToCell(record, column, value);
+            return;
         }
         
         //Get the selectedCells for paste the copied cell 
