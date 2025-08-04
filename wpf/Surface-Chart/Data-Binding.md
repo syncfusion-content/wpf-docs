@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Surface Chart (SfSurfaceChart)
 
-In surface chart, you cane apply data in a grid table format, that contains the number of rows and columns as shown in the following table. 
+In surface chart, data can be applied in a grid format, with a specified number of rows and columns as shown in the following table. 
 
 <table>
 <tr>
@@ -49,16 +49,16 @@ Y<sub>n2</sub></td><td>
 Y<sub>nn</sub></td></tr>
 </table>
 
-You can apply the data in surface in two ways. 
+You can apply data to the surface chart in two ways. 
 
 * Using ItemsSource property 
 * Directly passing value through Data.AddPoints method.
 
 ### Using ItemsSource
 
-You can bind the IEnumerable collection property to the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ItemsSource) property of a surface chart. Each item holds the model properties that are used to map surface [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_XBindingPath), [`YBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_YBindingPath) and [`ZBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ZBindingPath) property. 
+You can bind an IEnumerable collection to the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ItemsSource) property of the surface chart. Each item contains model properties that map to the [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_XBindingPath),  [`YBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_YBindingPath) and [`ZBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ZBindingPath) properties. 
 
-Also, you must set the given data row and column size to surface chart [`RowSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_RowSize) and [`ColumnSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ColumnSize) Properties. 
+You must also set the data's row and column size using the surface chart's [`RowSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_RowSize) and [`ColumnSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ColumnSize) properties.
 
 {% tabs %}
 
@@ -68,9 +68,12 @@ Also, you must set the given data row and column size to surface chart [`RowSize
      <local:ViewModel />	 
     </Grid.DataContext>
 
-         <chart:SfSurfaceChart ItemsSource="{Binding DataValue}"  XBindingPath="X"  
-                              YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}"
-                              ColumnSize="{Binding ColumnSize}">
+         <chart:SfSurfaceChart ItemsSource="{Binding DataValue}"  
+                               XBindingPath="X"  
+                               YBindingPath="Y" 
+                               ZBindingPath="Z" 
+                               RowSize="{Binding RowSize}"
+                               ColumnSize="{Binding ColumnSize}">
         </chart:SfSurfaceChart>    
 
 {% endhighlight %}
