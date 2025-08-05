@@ -184,7 +184,6 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 
 
 3. Set ItemsSource property for the MenuAdv.
-
 {% tabs %}
 {% highlight xaml %}
 
