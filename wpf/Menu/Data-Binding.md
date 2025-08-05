@@ -99,7 +99,7 @@ public class ViewModel
 {% highlight xaml %}
 
 <Window.DataContext>
-	<local:ViewModel/>
+   <local:ViewModel/>
 </Window.DataContext>
 
 {% endhighlight %} 
@@ -111,11 +111,11 @@ public class ViewModel
 {% highlight xaml %}
 
 <syncfusion:MenuAdv ItemsSource="{Binding MenuItems}">
-	<syncfusion:MenuAdv.ItemTemplate>
-		<HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
-			<TextBlock Text="{Binding Header}" />
-		</HierarchicalDataTemplate>
-	</syncfusion:MenuAdv.ItemTemplate>
+   <syncfusion:MenuAdv.ItemTemplate>
+      <HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
+         <TextBlock Text="{Binding Header}" />
+      </HierarchicalDataTemplate>
+   </syncfusion:MenuAdv.ItemTemplate>
 </syncfusion:MenuAdv>
 
 {% endhighlight %} 
@@ -177,22 +177,23 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 {% highlight xaml %}
 
 <XmlDataProvider Source="Data.xml" 
-	x:Key="xmlSource" XPath="Categories"/> 
+   x:Key="xmlSource" XPath="Categories"/> 
 
 {% endhighlight %} 
 {% endtabs %}
 
 
 3. Set ItemsSource property for the MenuAdv.
+
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:MenuAdv ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Root}">
-	<syncfusion:MenuAdv.ItemTemplate>
-		<HierarchicalDataTemplate ItemsSource="{Binding XPath=SubItem}">
-			<TextBlock Text="{Binding XPath=@Name}" />
-		</HierarchicalDataTemplate>
-	</syncfusion:MenuAdv.ItemTemplate>
+   <syncfusion:MenuAdv.ItemTemplate>
+      <HierarchicalDataTemplate ItemsSource="{Binding XPath=SubItem}">
+         <TextBlock Text="{Binding XPath=@Name}" />
+      </HierarchicalDataTemplate>
+   </syncfusion:MenuAdv.ItemTemplate>
 </syncfusion:MenuAdv>
 
 {% endhighlight %} 
