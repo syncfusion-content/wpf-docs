@@ -34,6 +34,7 @@ The **ResponseToolbarItem** class is used to define and add items in the respons
 
 ![Response toolbar feature in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_responsetoolbar.png)
 
+
 ## Response toolbar visibility
 
 The **IsResponseToolbarVisible** property of the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the response toolbar is displayed below each chat items responses. When set to false, the response toolbar is hidden. By default, this property is set to true.
@@ -55,6 +56,7 @@ aiAssistView.IsResponseToolbarVisible = false;
 {% endtabs %}
 
 ![Response toolbar visibility in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_isresponsetoolbarvisible.png)
+
 
 ## Customization of Response toolbar item using ItemTemplate
 
