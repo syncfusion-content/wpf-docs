@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Viewing PDF Files in WPF Pdf Viewer control | Syncfusion<sup>&reg;</sup>;
-description: Learn about Viewing PDF Files support in Syncfusion<sup>&reg;</sup>; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
+title: Viewing PDF Files in WPF Pdf Viewer control | Syncfusion&reg;
+description: Learn about Viewing PDF Files support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -95,7 +95,7 @@ namespace PdfViewerDemo
 
 ## View PDF file using the ItemSource property
 
-You can also view a PDF file using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource). The property accepts a string file path, a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-7.0&redirectedfrom=MSDN), and a [PdfLoadedDocument](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object.
+You can also view a PDF file using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). The property accepts a string file path, a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-7.0&redirectedfrom=MSDN), and a [PdfLoadedDocument](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object.
 
 {% tabs %}
 {% highlight c# %}
@@ -142,7 +142,7 @@ pdfViewer.ItemSource = pdfLoadedDocument;
 
 ## View PDF files without using the toolbar
 
-The [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control allows you to view the PDF files without toolbar using the [Load](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) methods from code behind. Refer to the following steps to perform the same.
+The [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control allows you to view the PDF files without toolbar using the [Load](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Load_System_String_) methods from code behind. Refer to the following steps to perform the same.
 
 1. Add the [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control in the MainWindow.xaml.
 
@@ -243,7 +243,7 @@ namespace PdfViewerDemo
 {% endhighlight %}
 {% endtabs %}
 
-If you open a file using the toolbar, you can obtain the information in the [DocumentLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) event. Refer to the following code to achieve the same.
+If you open a file using the toolbar, you can obtain the information in the [DocumentLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DocumentLoaded) event. Refer to the following code to achieve the same.
 
 {% tabs %}
 {% highlight c# %}

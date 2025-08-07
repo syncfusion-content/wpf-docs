@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text Annotation in WPF Pdf Viewer control | Syncfusion<sup>&reg;</sup>;
-description: Learn about Text Annotation support in Syncfusion<sup>&reg;</sup>; Essential Studio<sup>&reg;</sup>; WPF Pdf Viewer control, its elements and more.
+title: Text Annotation in WPF Pdf Viewer control | Syncfusion&reg;
+description: Learn about Text Annotation support in Syncfusion&reg; Essential Studio&reg; WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -252,7 +252,7 @@ The PdfViewerControl notifies through events, when `AnnotationChangedAction` suc
 
 ### FreeTextAnnotationChanged Event
 
-The `FreeTextAnnotationChanged` event occurs when the `Action` performed in free text annotation. It provides the common information and annotation properties which are available in `Settings` through the `FreeTextAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings’.
+The [FreeTextAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FreeTextAnnotationChanged) event occurs when the [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Action) performed in free text annotation. It provides the common information and annotation properties which are available in `Settings` through the [FreeTextAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FreeTextAnnotationChangedEventArgs.html). The user can modify the annotation properties through [Settings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FreeTextAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_FreeTextAnnotationChangedEventArgs_Settings).
 
 The following code shows how to write the FreeTextAnnotationChanged event in PdfViewerControl
 
