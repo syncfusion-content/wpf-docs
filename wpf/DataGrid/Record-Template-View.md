@@ -297,22 +297,21 @@ By default, rows in the `DataGrid` are virtualized and reused to enhance perform
 
 This occurs because the same row visual elements are recycled and displayed for different data items during virtualization. 
 
-To provide greater flexibility, the `TemplateRenderMode` property is available for row templates. This property allows you to configure how the row templates are instantiated and managed within the DataGrid.
+To provide greater flexibility, the [TemplateRenderMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html#Syncfusion_UI_Xaml_Grid_TemplateViewDefinition_TemplateRenderMode) property is available for row templates. This property allows you to configure how the row templates are instantiated and managed within the DataGrid.
 
-## TemplateRenderMode:
+## TemplateRenderMode
 
-### Shared (Default):
+### Shared (Default)
 * Rows (and their templates) are reused across multiple rows as you scroll or interact with the grid.
 * This mode provides the best performance and lowest memory usage.
 * Since templates are shared, visual state and control data may not persist correctly during operations like expanding, collapsing, or scrolling. This can lead to visual inconsistencies or data mismatches.
 
-### Individual:
+### Individual
 * A unique rows and template instance is created for each data row.
 * Template instances are not shared or reused across rows.
 * Data operations and visual state are always preserved correctly for each row, even after expanding, collapsing, or scrolling.
 
 N> Use `Shared` for maximum performance and when your row template only contains simple data-bound controls with no per-row persistent state.
-
 Use `Individual` when your row template is contains interactive controls that need to preserve their state for each data row independently.
 
 
