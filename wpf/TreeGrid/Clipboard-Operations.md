@@ -32,14 +32,14 @@ You can use the IncludeHeaders, IncludeFormat, and IncludeHiddenColumn options a
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                                       AutoExpandMode="RootNodesExpanded"
-                                       AutoGenerateColumns="False" 
-                                       GridCopyOption="CopyData,IncludeHeaders" 
-                                       ChildPropertyName="Children"
-                                       ColumnSizer="Star"
-                                       ExpanderColumn="FirstName"
-                                       ItemsSource="{Binding PersonDetails}"
-                                       NavigationMode="Row">
+                       AutoExpandMode="RootNodesExpanded"
+                       AutoGenerateColumns="False" 
+                       GridCopyOption="CopyData,IncludeHeaders" 
+                       ChildPropertyName="Children"
+                       ColumnSizer="Star"
+                       ExpanderColumn="FirstName"
+                       ItemsSource="{Binding PersonDetails}"
+                       NavigationMode="Row">
 {% endhighlight %}
 {% highlight c# %}
 

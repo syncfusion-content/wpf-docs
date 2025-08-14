@@ -10,14 +10,14 @@ documentation: ug
 # Data Binding in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically using [RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) or [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LoadOnDemandCommand).
-If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?redirectedfrom=MSDN&view=net-5.0) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in[ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?redirectedfrom=MSDN&view=net-5.0)`, SfTreeGrid automatically refresh the UI as `ObservableCollection’ implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=net-5.0), SfTreeGrid will not refresh the UI automatically.
+If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?redirectedfrom=MSDN&view=net-5.0) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?redirectedfrom=MSDN&view=net-5.0)`, SfTreeGrid automatically refresh the UI as `ObservableCollection implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=net-5.0), SfTreeGrid will not refresh the UI automatically.
 
 Below are the ways to bind the data source to SfTreeGrid.
 
 * [Populate data using self-relational binding](https://help.syncfusion.com/wpf/treegrid/getting-started#binding-self-relational-data-in-sftreegrid)
 * [Populate data using nested collection](https://help.syncfusion.com/wpf/treegrid/getting-started#binding-nested-collection-with-sftreegrid)
-* [Populate data with `RequestTreeItems` event](https://help.syncfusion.com/wpf/treegrid/load-on-demand#using-requesttreeitems-event)
-* [Populate data with `LoadOnDemandCommand`](https://help.syncfusion.com/wpf/treegrid/load-on-demand#using-loadondemandcommand)
+* [Populate data with RequestTreeItems event](https://help.syncfusion.com/wpf/treegrid/load-on-demand#using-requesttreeitems-event)
+* [Populate data with LoadOnDemandCommand](https://help.syncfusion.com/wpf/treegrid/load-on-demand#using-loadondemandcommand)
 
 ## Binding with IEnumerable
 
@@ -269,14 +269,15 @@ You can cancel the specific node being expanded by using `SfTreeGrid.NodeExpandi
 
 {% tabs %}
 {% highlight c# %}
+
 treeGrid.NodeExpanding += TreeGrid_NodeExpanding;
 
 private void TreeGrid_NodeExpanding(object sender, NodeExpandingEventArgs e)
 {
-
     if ((e.Node.Item as EmployeeInfo).ID == 2)
         e.Cancel = true;
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -412,20 +413,21 @@ You can cancel the specific node being collapsed by using `TreeGrid.NodeCollapsi
 
 {% tabs %}
 {% highlight c# %}
+
 treeGrid.NodeCollapsing += TreeGrid_NodeCollapsing;
 
 private void TreeGrid_NodeCollapsing(object sender, NodeCollapsingEventArgs e)
 {
-
     if ((e.Node.Item as EmployeeInfo).ID == 2)
         e.Cancel = true;
 }
+
 {% endhighlight %}
 {% endtabs %}
 
 ### NodeCollapsed Event
 
-You can get the notification once a node is collapsed from [TreeGrid.NodeCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event and here you can get the collapsed node.
+You can get the notification once a node is collapsed from [TreeGrid.NodeCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsed) event and here you can get the collapsed node.
 
 {% tabs %}
 {% highlight c# %}
@@ -479,7 +481,7 @@ treeGrid.LiveNodeUpdateMode = LiveNodeUpdateMode.AllowDataShaping;
 
 ### ItemsSourceChanged
 
-[SfTreeGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when the data source is changed by using [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property.
+[SfTreeGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSourceChanged) event occurs when the data source is changed by using [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property.
 
 This event receives two arguments namely sender that handles SfTreeGrid and `GridItemsSourceChangedEventArgs` as objects.
 The `GridItemsSourceChangedEventArgs` object contains the following properties:
@@ -509,7 +511,7 @@ This event is raised when the DataModel property value is changed, if the DataMo
 
 `PropertyChangedEventArgs` has below property,
 
-`PropertyName` – It denotes the PropertyName of the changed value.
+* `PropertyName` – It denotes the PropertyName of the changed value.
 
 #### NodeCollectionChanged
 
@@ -553,7 +555,7 @@ using (treeGrid.View.DeferRefresh(TreeViewRefreshMode.NodeRefresh))
 
 **BeginInit and EndInit**
 
-When &lt;code&gt;BeginInit&lt;/code&gt; method is called, it suspends all the updates until &lt;code&gt;EndInit&lt;/code&gt; method is called. You can perform all the update with in these methods and update the view at once. You can refresh the nodes or completely recreates the nodes by using [TreeViewRefreshMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeViewRefreshMode.html) parameter.
+When <code>BeginInit</code> method is called, it suspends all the updates until <code>EndInit</code> method is called. You can perform all the update with in these methods and update the view at once. You can refresh the nodes or completely recreates the nodes by using [TreeViewRefreshMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeViewRefreshMode.html) parameter.
 
 {% tabs %}
 {% highlight c# %}
