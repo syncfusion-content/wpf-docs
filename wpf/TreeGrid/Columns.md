@@ -240,7 +240,7 @@ Keeps old columns in TreeGrid.Columns collection.
 
 ### Customize auto-generated columns
 
-You can customize or cancel the generated column by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. `AutoGeneratingColumn` event occurs when the individual column is auto-generated for public and non-static property of underlying data object.
+You can customize or cancel the generated column by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoGeneratingColumn) event. `AutoGeneratingColumn` event occurs when the individual column is auto-generated for public and non-static property of underlying data object.
 
 {% tabs %}
 {% highlight c# %}
@@ -263,11 +263,11 @@ In the below code, column generation for `ReportsTo` property is canceled by set
 
 {% tabs %}
 {% highlight c# %}
+
 treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn; 
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
-
 	if (e.Column.MappingName == "ReportsTo")
 		e.Cancel = true;
 }
@@ -282,14 +282,13 @@ In the below code, column type for `Salary` property is changed to `TreeGridText
 
 {% tabs %}
 {% highlight c# %}
+
 treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn; 
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
-
 	if (e.Column.MappingName == "Salary")
 	{
-
 		if (e.Column is TreeGridNumericColumn)
 			e.Column = new TreeGridTextColumn() { MappingName = "Salary" };
 	}
@@ -309,7 +308,6 @@ treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
-
 	if (e.Column.MappingName == "Salary")
 	{
 		e.Column.AllowEditing = false;
@@ -346,7 +344,6 @@ treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
-
 	if (e.Column.MappingName == "FirstName")
 	{
 		e.Column.HeaderTemplate = this.Resources["headerTemplate"] as DataTemplate;
@@ -558,7 +555,7 @@ treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", Heade
 
 ### Accessing column
 
-You can access the column through its column index or [TreeGridColumn.MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName) from the SfTreeGrid.Columns collection.
+You can access the column through its column index or [TreeGridColumn.MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName) from the `SfTreeGrid.Columns` collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -624,7 +621,7 @@ SfTreeGrid shows indication for hidden columns in column header and also allows 
 
 ### Disable resizing
 
-You can cancel resizing of particular column by setting [TreeGridColumn.AllowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_AllowResizing) property to `false`. In another way, you can cancel the resizing by handling [SfTreeGrid.ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
+You can cancel resizing of particular column by setting [TreeGridColumn.AllowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_AllowResizing) property to `false`. In another way, you can cancel the resizing by handling [SfTreeGrid.ResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ResizingColumns) event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
 [ResizingColumnsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html) of `ResizingColumns` provides information about the columns’s index and width. 
 
 {% tabs %}
@@ -691,7 +688,7 @@ You can enable or disable dragging on particular column using [TreeGridColumn.Al
 {% endtabs %}
 
 ### Disable column reordering
-You can cancel the particular column dragging by handling [SfTreeGrid.ColumnDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html). `ColumnDragging` event occurs when you start dragging the column header. 
+You can cancel the particular column dragging by handling [SfTreeGrid.ColumnDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnDragging). `ColumnDragging` event occurs when you start dragging the column header. 
 
 [TreeGridColumnDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnDraggingEventArgs.html) of `ColumnDragging` event provides information about the column triggered this event. 
 
@@ -811,25 +808,22 @@ string childColumns = string.Empty;
 
 foreach (var stackedColumnName in removingColumns.ToList())
 {
-
     if (stackedColumnName.Equals("OrderID"))
     {
         removingColumns.Remove(stackedColumnName);
     }
-
     else
         childColumns = childColumns + stackedColumnName + ",";
 }
 
 this.treeGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumns;
-}
 
 {% endhighlight %}
 {% endtabs %}
 
 ### Changing Stacked Header Row Height
 
-You can change the height of StackedHeaderRows by using [GetTreePanel.RowHeights](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPanel.html) property.
+You can change the height of StackedHeaderRows by using [GetTreePanel.RowHeights](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPanel.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPanel_RowHeights) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -872,7 +866,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-Below code, binds the `ViewModel.AllowEditing` property to `TreeGridColumn. AllowEditing` property.
+Below code, binds the `ViewModel.AllowEditing` property to `TreeGridColumn.AllowEditing` property.
 {% tabs %}
 {% highlight xaml %}
 

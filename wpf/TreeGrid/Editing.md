@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing in WPF TreeGrid (SfTreeGrid)
 
-SfTreeGrid provides support for editing and it can be enabled or disabled by setting [SfTreeGrid.AllowEditing]() property.
+SfTreeGrid provides support for editing and it can be enabled or disabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -50,9 +50,9 @@ N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEdi
 
 N> It is mandatory to set the NavigationMode to Cell to enable CurrentCell navigation and editing.
 
-### Entering into edit mode
+## Entering into edit mode
 
-You can enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_EditTrigger) property.
+You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_EditTrigger) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,7 +73,7 @@ this.treeGrid.EditTrigger = EditTrigger.OnTap;
 {% endhighlight %}
 {% endtabs %}
 
-### Cursor placement
+## Cursor placement
 
 When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_EditorSelectionBehavior) property.
 
@@ -105,13 +105,13 @@ this.treeGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 
 SfTreeGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
 
-The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_EndEdit). Also when user press &lt;kbd&gt; Esc &lt;/kbd&gt; key, then the changes made in a row will be reverted in [CancelEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit). 
+The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_EndEdit). Also when user press <kbd>Esc</kbd> key, then the changes made in a row will be reverted in [CancelEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit). 
 
 `IEditableObject` has the following methods to capture editing,
 
 [BeginEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_BeginEdit) - Gets called to begin edit on underlying data object when cell in a row get into edit mode. 
 
-[CancelEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit) - Gets called when user press the &lt;kbd&gt;Esc&lt;/kbd&gt; key to discard the changes in a row since last `BeginEdit` call. 
+[CancelEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit) - Gets called when user press the <kbd>Esc</kbd> key to discard the changes in a row since last `BeginEdit` call. 
 
 [EndEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_EndEdit) - Gets called when user move to the next row or press Enter key  to commit changes in underlying data object since last `BeginEdit` call. 
 
@@ -127,7 +127,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the ID.
 	/// </summary>
 	/// <value>The ID.</value>
-
 	public int ID
 	{
 		get
@@ -146,7 +145,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the first name.
 	/// </summary>
 	/// <value>The first name.</value>   
-
 	public string FirstName
 	{
 		get { return _firstName; }
@@ -162,7 +160,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the last name.
 	/// </summary>
 	/// <value>The last name.</value>
-
 	public string LastName
 	{
 		get { return _lastName; }
@@ -178,7 +175,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the title.
 	/// </summary>
 	/// <value>The title.</value>
-
 	public string Title
 	{
 		get
@@ -197,7 +193,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the salary.
 	/// </summary>
 	/// <value>The salary.</value>
-
 	public double? Salary
 	{
 		get
@@ -216,7 +211,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 	/// Gets or sets the reports to.
 	/// </summary>
 	/// <value>The reports to.</value>
-
 	public int ReportsTo
 	{
 		get
@@ -237,7 +231,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 
 		foreach (var pDescriptor in itemProperties)
 		{
-
 			if (pDescriptor.CanWrite)
 				dictionary.Add(pDescriptor.Name, pDescriptor.GetValue(this));
 		}
@@ -253,7 +246,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 
 	public void CancelEdit()
 	{
-
 		if (this.storedValues == null)
 			return;
 
@@ -269,7 +261,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 
 	public void EndEdit()
 	{           
-
 		if (this.storedValues != null)
 		{
 			this.storedValues.Clear();
@@ -281,7 +272,6 @@ public class EmployeeInfo : IEditableObject, INotifyPropertyChanged
 
 	public void RaisePropertyChanged(string propertyName)
 	{
-
 		if (PropertyChanged != null)
 			PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 	}
@@ -296,7 +286,7 @@ SfTreeGrid triggers the following events during editing.
 
 ### CurrentCellBeginEdit Event
 
-[CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) enter into edit mode. [TreeCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
+[CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellBeginEdit) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) enter into edit mode. [TreeCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
 * [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_CancelEventArgs_Cancel) : When set to `true`, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 
@@ -318,8 +308,8 @@ void TreeGrid_CurrentCellBeginEdit(object sender, TreeGridCurrentCellBeginEditEv
 
 ### CurrentCellEndEdit Event
 
-[CurrentCellEndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) exits the edit mode. 
-[CurrentCellEndEditEventArgs]() has following members which provides information for `CurrentCellEndEdit` event.
+[CurrentCellEndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellEndEdit) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) exits the edit mode. 
+[CurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellEndEditEventArgs.html) has following members which provides information for `CurrentCellEndEdit` event.
 
 * RowColumnIndex : Gets the value for the current row column index.
 
@@ -337,7 +327,7 @@ void TreeGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args
 
 ### CurrentCellValueChanged Event
 
-[CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs whenever a value changes in TreeGridColumn that supports editing. 
+[CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellValueChanged) event occurs whenever a value changes in TreeGridColumn that supports editing. 
 [TreeGridCurrentCellValueChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs.html) has following members which provides information for `CurrentCellValueChanged` event.
 
 * [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellValueChangedEventArgs_Column) : Gets the Grid Column of the SfTreeGrid.
@@ -359,7 +349,7 @@ N> For TreeGridComboBoxColumn, you have to use the 'CurrentCellDropDownSelection
 
 ### CurrentCellDropDownSelectionChanged Event
 
-[CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs whenever the `SelectedItem` of `TreeGridComboBoxColumn` column changed.
+[CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellDropDownSelectionChanged) event occurs whenever the `SelectedItem` of `TreeGridComboBoxColumn` column changed.
 [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) has following members which provides information for `CurrentCellDropDownSelectionChanged` event.
 
 * [RowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellDropDownSelectionChangedEventArgs_RowColumnIndex)  - Gets the RowColumnIndex of the corresponding item that were selected from the drop-down control.
@@ -382,7 +372,7 @@ void TreeGrid_CurrentCellDropDownSelectionChanged(object sender, CurrentCellDrop
 
 ### BeginEdit
 
-SfTreeGrid allows you to edit the cell programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_BeginEdit) method. Initially the[CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) need to set before calling the `BeginEdit` method when the CurrentCell value is null.
+SfTreeGrid allows you to edit the cell programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_BeginEdit) method. Initially the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrentCellManager_CurrentCell) need to set before calling the `BeginEdit` method when the CurrentCell value is null.
 
 {% tabs %}
 {% highlight c# %}
@@ -420,7 +410,7 @@ void TreeGrid_Loaded(object sender, RoutedEventArgs e)
 
 ### CancelEdit
 
-You can use the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event to cancel the editing operation for the corresponding cell.
+You can use the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellBeginEdit) event to cancel the editing operation for the corresponding cell.
 
 {% tabs %}
 {% highlight c# %}
