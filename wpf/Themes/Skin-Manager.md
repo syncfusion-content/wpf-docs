@@ -578,7 +578,6 @@ Dark Theme:
 <tr><td>Slider</td><td>WPFSliderStyle</td></tr>
 <tr><td>StatusBar</td><td>WPFStatusBarStyle</td></tr>
 <tr><td>TabControl</td><td>WPFTabControlStyle</td></tr>
-<tr><td>TextBlock</td><td>WPFTextBlockStyle</td></tr>
 <tr><td>TextBox</td><td>WPFTextBoxStyle</td></tr>
 <tr><td>ToggleButton</td><td>WPFToggleButtonStyle</td></tr>
 <tr><td>ToolBar</td><td>WPFToolBarStyle</td></tr>
