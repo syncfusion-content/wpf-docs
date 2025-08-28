@@ -592,7 +592,7 @@ Dark Theme:
 <tr><th>Control Name</th><th>Key Name</th></tr>
 <tr><td>AutoComplete</td><td>SyncfusionAutoCompleteStyle</td></tr>
 <tr><td>AssistView</td><td>SyncfusionChatStyle</td></tr>
-<tr><td>AvartarView</td><td>SyncfusionAvatarViewStyle</td></tr>
+<tr><td>AvatarView</td><td>SyncfusionAvatarViewStyle</td></tr>
 <tr><td>BusyIndicator</td><td>SyncfusionBusyIndicatorStyle</td></tr>
 <tr><td>ButtonAdv</td><td>SyncfusionButtonAdvStyle</td></tr>
 <tr><td>CalendarEdit</td><td>SyncfusionCalendarEditStyle</td></tr>
