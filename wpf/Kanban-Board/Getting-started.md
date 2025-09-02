@@ -152,6 +152,7 @@ this.grid.Children.Add(kanban);
 {% highlight C# tabtitle="ViewModel" %}
 
 using Syncfusion.UI.Xaml.Kanban;
+
 public class ViewModel
 {
     public ObservableCollection<KanbanModel> Tasks { get; set; }
