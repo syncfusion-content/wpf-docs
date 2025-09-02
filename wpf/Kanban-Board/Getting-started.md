@@ -212,9 +212,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Defining columns for SfKanban](sfkanban_images/wpf-kanban-board-column.png)
-
-You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/Getting-started-in-SfKanban-WPF).
+View the sample in [`GitHub`](https://github.com/SyncfusionExamples/Getting-started-in-SfKanban-WPF).
 
 ### Creating the custom model tasks with data mapping
 
