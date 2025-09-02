@@ -95,7 +95,6 @@ To populate the kanban card items, utilize the [`ItemsSource`](https://help.sync
 The following sample code demonstrates this process in action:
 
 {% tabs %}
-
 {% highlight XAML hl_lines="3, 4, 5, 6, 7, 8, 91, 11, 12, 13" %}
 
 <Grid x:Name="grid">
@@ -103,7 +102,7 @@ The following sample code demonstrates this process in action:
                          ItemsSource="{Binding Tasks}"
                          AutoGenerateColumns="False">
         <syncfusion:SfKanban.DataContext>
-            <local:KanbanViewModel />
+            <local:ViewModel />
         </syncfusion:SfKanban.DataContext>
         <syncfusion:KanbanColumn Categories="Open"
                                  Title="To Do"></syncfusion:KanbanColumn>
@@ -115,13 +114,12 @@ The following sample code demonstrates this process in action:
 </Grid>
 
 {% endhighlight %}
-
 {% highlight C# hl_lines="1, 3, 4, 7, 9, 10, 11, 12, 15, 17, 18, 19, 20, 23, 25, 26, 27, 28, 31"%}
 
 SfKanban kanban = new SfKanban()
 {
     AutoGenerateColumns = false,
-    ItemsSource = new KanbanViewModel().Tasks
+    ItemsSource = new ViewModel().Tasks
 };
 
 kanban.Columns.Add(new KanbanColumn()
@@ -151,15 +149,14 @@ kanban.Columns.Add(new KanbanColumn()
 this.grid.Children.Add(kanban);
 
 {% endhighlight %}
-
-{% highlight C# tabtitle="KanbanViewModel" %}
+{% highlight C# tabtitle="ViewModel" %}
 
 using Syncfusion.UI.Xaml.Kanban;
-public class KanbanViewModel
+public class ViewModel
 {
     public ObservableCollection<KanbanModel> Tasks { get; set; }
 
-    public KanbanViewModel()
+    public ViewModel()
     {
 
         Tasks = new ObservableCollection<KanbanModel>();
@@ -214,7 +211,6 @@ public class KanbanViewModel
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Defining columns for SfKanban](sfkanban_images/wpf-kanban-board-column.png)
@@ -245,7 +241,6 @@ Alternatively, you can manually define columns by setting [`AutoGenerateColumns`
 Let’s look at the practical code example:
 
 {% tabs %}
-
 {% highlight XAML hl_lines="2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27" %}
 
 <syncfusion:SfKanban x:Name="kanban"
@@ -278,14 +273,12 @@ Let’s look at the practical code example:
 </syncfusion:SfKanban>
 
 {% endhighlight %}
-
 {% highlight C# hl_lines="1, 2" %}
 
 this.kanban.ItemsSource = new KanbanViewModel().Tasks;
 this.kanban.ColumnMappingPath = "Status";
 
 {% endhighlight %}
-
 {% highlight C# tabtitle="TaskDetails.cs" %}
 
 public class TaskDetails
@@ -297,13 +290,13 @@ public class TaskDetails
 
 {% endhighlight %}
 
-{% highlight C# tabtitle="KanbanViewModel.cs" %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
-public class KanbanViewModel
+public class ViewModel
 {
     public ObservableCollection<TaskDetails> Tasks { get; set; }
 
-    public KanbanViewModel()
+    public ViewModel()
     {
         Tasks = new ObservableCollection<TaskDetails>();
 
@@ -341,7 +334,6 @@ public class KanbanViewModel
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
 You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
