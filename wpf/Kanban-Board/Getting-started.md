@@ -160,7 +160,6 @@ public class ViewModel
 
     public ViewModel()
     {
-
         Tasks = new ObservableCollection<KanbanModel>();
 
         Tasks.Add(new KanbanModel()
@@ -304,7 +303,6 @@ public class ViewModel
             Status = "Open",
         });
 
-
         Tasks.Add(new TaskDetails()
         {
             Title = "Universal App",
@@ -312,14 +310,12 @@ public class ViewModel
             Status = "In Progress",
         });
 
-
         Tasks.Add(new TaskDetails()
         {
             Title = "Universal App",
             Description = "Review preliminary software specifications",
             Status = "Done",
         });
-
 
         Tasks.Add(new TaskDetails()
         {
