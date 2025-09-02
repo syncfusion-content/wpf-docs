@@ -114,7 +114,7 @@ The following sample code demonstrates this process in action:
 </Grid>
 
 {% endhighlight %}
-{% highlight C# hl_lines="1, 3, 4, 7, 9, 10, 11, 12, 15, 17, 18, 19, 20, 23, 25, 26, 27, 28, 31"%}
+{% highlight C# hl_lines="1, 3, 4, 7, 9, 10, 11, 12, 15, 17, 18, 19, 20, 23, 25, 26, 27, 28, 31" %}
 
 SfKanban kanban = new SfKanban()
 {
