@@ -78,6 +78,8 @@ Now the Syncfusion.SfKanban.WPF reference is added to the application references
 
 ## Populate WPF Kanban item source
 
+This section explains how to populate the .NET MAUI Kanban control's `ItemSource` by creating and binding both default and custom task data models.
+
 ### Creating the default model tasks
 
 * **Define the View Model:** 
