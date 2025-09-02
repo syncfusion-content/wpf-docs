@@ -76,25 +76,6 @@ aiAssistView.InputToolbarPosition = ToolbarPosition.Left;
 
 ![Left input toolbar position in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_inputtoolbar_Left.png)
 
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfAIAssistView CurrentUser="{Binding CurrentUser}"  
-                           Messages="{Binding Chats}" IsInputToolbarVisible="True"
-                           InpuToolbarPosition="Right">
-</syncfusion:SfAIAssistView>
-
-{% endhighlight %} 
-{% highlight C# %}
-
-SfAIAssistView aiAssistView = new SfAIAssistView();
-aiAssistView.InputToolbarPosition = ToolbarPosition.Right;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Right input toolbar position in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_inputtoolbar_right.png)
-
 ## Input toolbar visibility
 
 The **IsInputToolbarVisible** property of the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the input toolbar is displayed in the SfAIAssistView. When set to true, the input toolbar becomes visible. By default, this property is set to false.
