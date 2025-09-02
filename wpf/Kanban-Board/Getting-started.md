@@ -21,8 +21,9 @@ N> This window differs for the Visual Basic project.
 
 ## Create a simple Kanban
 
-### Adding SfKanban
+In this walkthrough, we will demonstrate how to create a new application that integrates the SfKanban control.
 
+### Adding SfKanban
 
 1. Add the required assembly references to the project as discussed in the Reference Essential Studio Components in your Solution section.
 2. Add the “Syncfusion.UI.Xaml.Kanban” namespace to the application as shown below.
@@ -78,7 +79,7 @@ Now the Syncfusion.SfKanban.WPF reference is added to the application references
 
 ## Populate WPF Kanban item source
 
-This section explains how to populate the .NET MAUI Kanban control's `ItemSource` by creating and binding both default and custom task data models.
+This section explains how to populate the WPF Kanban control's `ItemSource` by creating and binding both default and custom task data models.
 
 ### Creating the default model tasks
 
@@ -173,7 +174,6 @@ public class ViewModel
             ImageURL = new Uri("/images/People_Circle1.png", UriKind.RelativeOrAbsolute)
         });
 
-
         Tasks.Add(new KanbanModel()
         {
             Title = "Universal App",
@@ -185,7 +185,6 @@ public class ViewModel
             ImageURL = new Uri("/images/People_Circle2.png", UriKind.RelativeOrAbsolute)
         });
 
-
         Tasks.Add(new KanbanModel()
         {
             Title = "Universal App",
@@ -196,7 +195,6 @@ public class ViewModel
             Tags = new string[] { "Analysis" },
             ImageURL = new Uri("/images/People_Circle3.png", UriKind.RelativeOrAbsolute)
         });
-
 
         Tasks.Add(new KanbanModel()
         {
