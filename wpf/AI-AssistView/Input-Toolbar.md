@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Input Toolbar in WPF AI AssistView control | Syncfusion
-description: Learn about the input toolbar feature in the AI AssistView control, which enables users to access quick actions to input responses through toolbar items.
+description: Learn about the input toolbar feature in the AI AssistView control, which enables users to access quick actions to input textbox responses through toolbar items.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
@@ -13,7 +13,7 @@ The [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.
 
 ## InputToolbarItem
 
-The **InputToolbarItem** class is used to define and add items in the response toolbar of chat responses for SfAIAssistView. The following properties are available in this class:
+The **InputToolbarItem** class is used to define and add items in the input textbox of the SfAIAssistView. The following properties are available in this class:
 
 - **IsEnabled**: Specifies whether the toolbar item is enabled (interactive) or disabled (non-interactive).
 - **Tooltip**: Sets the tooltip text displayed when the user hovers over the toolbar item.
@@ -65,8 +65,8 @@ Data="M10.2656 3.0293C10.5 3.0293 10.7207 3.07422 10.9277 3.16406C11.1348 3.2539
                                     </Button>
                             </DataTemplate>
             </syncfusion:InputToolbarItem.ItemTemplate>
-        </syncfusion:ResponseToolbarItem>
-    </syncfusion:SfAIAssistView.ResponseToolbarItems>
+        </syncfusion:InputToolbarItem>
+    </syncfusion:SfAIAssistView.InputToolbarItems>
 </syncfusion:SfAIAssistView>
 
 {% endhighlight %} 
@@ -82,7 +82,7 @@ The **InputToolbarItemClicked** event is triggered whenever a toolbar item in th
 {% highlight xaml %}
 
 <syncfusion:SfAIAssistView x:Name="sfAIAssistView" CurrentUser="{Binding CurrentUser}"  
-                               Messages="{Binding Chats}" InputToolbarItemClicked="AiAssistView_ResponseToolbarItemClicked"/>
+                               Messages="{Binding Chats}" InputToolbarItemClicked="AiAssistView_InputToolbarItemClicked"/>
 
 {% endhighlight %} 
 {% highlight C# %}
