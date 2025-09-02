@@ -9,43 +9,22 @@ documentation: ug
 
 # Input Toolbar in WPF AI AssistView
 
-The [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Input Toolbar** feature, This allows users to add custom toolbar items directly inside the text input, providing quick access to frequently used actions and tools.
+The [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a toolbar feature inside the input text box. This toolbar allows users to add custom toolbar items directly within the text input area, providing quick access to frequently used actions and tools.
 
 ## InputToolbarItem
 
-The **InputToolbarItem** class is used to define and add items in the input textbox of the SfAIAssistView. The following properties are available in this class:
+The **InputToolbarItem** class is used to define and add items to the input text box toolbar in the SfAIAssistView. The following properties are available in this class:
 
 - **IsEnabled**: Specifies whether the toolbar item is enabled (interactive) or disabled (non-interactive).
 - **Tooltip**: Sets the tooltip text displayed when the user hovers over the toolbar item.
 - **Visible**: Indicates whether the toolbar item is visible.
 - **ItemTemplate**: Allows you to set a custom template for rendering the toolbar item.
 
-## Input toolbar visibility
+## Adding an input toolbar item to the input toolbar
 
-The **IsInputToolbarVisible** property of the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the input toolbar is displayed inside the input textbox. When set to true, the input toolbar is visible. By default, this property is set to false.
+The **InputToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) the text area does not include built-in toolbar items like the response toolbar (e.g., Copy, Like, Dislike, Regenerate). However, you can add custom items using the InputToolbarItem class.
 
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfAIAssistView CurrentUser="{Binding CurrentUser}"  
-                               Messages="{Binding Chats}" IsInputToolbarVisible="True">
-</syncfusion:SfAIAssistView>
-
-{% endhighlight %} 
-{% highlight C# %}
-
-SfAIAssistView aiAssistView = new SfAIAssistView();
-aiAssistView.IsInputToolbarVisible = false;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Input toolbar visibility in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_isinputtoolbarvisible.png)
-
-
-## Customization of input toolbar item using ItemTemplate
-
-The **InputToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even UI elements such as Path, Image, or TextBlock within the toolbar.
+Use the ItemTemplate property to define the appearance and behavior of each toolbar item. This allows you to display icons, buttons, text, or even complex UI elements such as Path, Image, or TextBlock within the toolbar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -72,7 +51,71 @@ Data="M10.2656 3.0293C10.5 3.0293 10.7207 3.07422 10.9277 3.16406C11.1348 3.2539
 {% endhighlight %} 
 {% endtabs %}
 
-![Customization of input toolbar item using ItemTemplate feature in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_customizedinputtoolbaritemtemplate.png)
+![Adding an input toolbar item using ItemTemplate feature in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_input_toolbar_items.png)
+
+## Input toolbar position
+
+The **InputToolbarPosition** property of the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control is used to define the placement of the input toolbar within the control. By default, the toolbar is positioned on the right side of the control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfAIAssistView CurrentUser="{Binding CurrentUser}"  
+                           Messages="{Binding Chats}" IsInputToolbarVisible="True"
+                           InpuToolbarPosition="Left">
+</syncfusion:SfAIAssistView>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+SfAIAssistView aiAssistView = new SfAIAssistView();
+aiAssistView.InputToolbarPosition = ToolbarPosition.Left;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Left input toolbar position in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_inputtoolbar_Left.png)
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfAIAssistView CurrentUser="{Binding CurrentUser}"  
+                           Messages="{Binding Chats}" IsInputToolbarVisible="True"
+                           InpuToolbarPosition="Right">
+</syncfusion:SfAIAssistView>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+SfAIAssistView aiAssistView = new SfAIAssistView();
+aiAssistView.InputToolbarPosition = ToolbarPosition.Right;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Right input toolbar position in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_inputtoolbar_right.png)
+
+## Input toolbar visibility
+
+The **IsInputToolbarVisible** property of the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the input toolbar is displayed in the SfAIAssistView. When set to true, the input toolbar becomes visible. By default, this property is set to false.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfAIAssistView CurrentUser="{Binding CurrentUser}"  
+                           Messages="{Binding Chats}" IsInputToolbarVisible="True">
+</syncfusion:SfAIAssistView>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+SfAIAssistView aiAssistView = new SfAIAssistView();
+aiAssistView.IsInputToolbarVisible = True;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Input toolbar visibility in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_input_toolbar_visibility.png)
 
 ## Item clicked event 
 
