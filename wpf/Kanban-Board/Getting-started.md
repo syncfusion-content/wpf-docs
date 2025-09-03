@@ -19,19 +19,11 @@ The following section provides an assistance to create a simple Kanban applicati
 
 N> This window differs for the Visual Basic project.
 
-## Create a simple Kanban
+## Create a simple Kanban Board
 
-In this walk through, you will create a new application that contains the SfKanban which includes the below topics.
+In this section, we'll demonstrate how to build a new WPF application that integrates the `SfKanban` control.
 
-* Adding SfKanban 
-* Create data model
-* Binding data
-* Defining columns
-* Working with Workflows
-* Work In-Progress Limit
-
-#### Adding SfKanban
-
+### Adding SfKanban
 
 1. Add the required assembly references to the project as discussed in the Reference Essential Studio Components in your Solution section.
 2. Add the “Syncfusion.UI.Xaml.Kanban” namespace to the application as shown below.
@@ -71,238 +63,256 @@ SfKanban kanban = new SfKanban();
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-#### Adding SfKanban from toolbox
+### Adding SfKanban from toolbox
 
 Drag and drop the Kanban control from the toolbox to your application.
 
 ![Adding SfKanban from toolbox](sfkanban_images/wpf-kanban-board-toolbox.png)
 
-
 Now the Syncfusion.SfKanban.WPF reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
 ![Adding SfKanban from toolbox Assembly Included](sfkanban_images/wpf-kanban-board-assembly-included.png)
 
-
 ![Adding SfKanban from toolbox Xaml Reference](sfkanban_images/wpf-kanban-board-xaml-reference.png)
 
+### Populate WPF Kanban item source
 
-#### Create data model
+This section explains how to populate the WPF Kanban control's `ItemSource` by creating and binding both default and custom task data models.
 
-You need to create a collection of KanbanModel objects for populating SfKanban.
+#### Creating the default model tasks
 
-{% highlight c# %}
-   
-    public class TaskDetails
-    {
-        public TaskDetails()
-        {
+* **Define the View Model:** 
 
-            Tasks = new ObservableCollection<KanbanModel>();
+Create a view model class to set values for the properties listed in the [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class as shown in the following example code. Each [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) instance represent a card in Kanban control.
 
-            Tasks.Add(new KanbanModel()
-            {
+* **Bind item source for Kanban:** 
 
-                Title = "Universal App",
+To populate the kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
-                ID = "27654",
+* **Defining columns in the Kanban Board:** The columns are generated automatically based on the different values of the [`Category`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) in the [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class from the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource). However, you can manually define the columns by setting the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to `false` and adding [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html). You can define the column categories using the [`Categories`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html), and the cards will be added to their respective columns.
 
-                Description = "Incorporate feedback into functional specifications",
-
-                Category = "Open",
-
-                ColorKey = "Low",
-
-                Tags = new string[] { "Deployment" },
-
-                ImageURL = new Uri("/images/icon.jpg", UriKind.RelativeOrAbsolute )
-            });
-
-
-            Tasks.Add(new KanbanModel()
-            {
-
-                Title = "Universal App",
-
-                ID = "29477",
-
-                Description = "Design functional specifications",
-
-                Category = "In Progress",
-
-                ColorKey = "Normal",
-
-                Tags = new string[] { "Design" },
-
-                ImageURL = new Uri("/images/icon.jpg", UriKind.RelativeOrAbsolute )
-            });
-
-
-            Tasks.Add(new KanbanModel()
-            {
-                Title = "Universal App",
-
-                ID = "25678",
-
-                Description = "Review preliminary software specifications",
-
-                Category = "Done",
-
-                ColorKey = "Low",
-
-                Tags = new string[] { "Analysis" },
-
-                ImageURL = new Uri("/images/icon.jpg", UriKind.RelativeOrAbsolute )
-            });
-
-
-            Tasks.Add(new KanbanModel()
-            {
-                Title = "Universal App",
-
-                ID = "6593",
-
-                Description = "Draft preliminary software specifications",
-
-                Category = "Review",
-
-                ColorKey = "High",
-
-                Tags = new string[] { "Analysis" },
-
-                ImageURL = new Uri("/images/icon.jpg", UriKind.RelativeOrAbsolute )
-
-            });
-        }
-        public ObservableCollection<KanbanModel> Tasks { get; set; }
-    }
-
-{% endhighlight %}
-
-#### Binding data
-
-In order to bind the data source of the SfKanban, set ItemsSource property as shown below.
+The following sample code demonstrates this process in action:
 
 {% tabs %}
+{% highlight XAML hl_lines="3, 4, 5, 6, 7, 8, 91, 11, 12, 13" %}
 
-{% highlight xaml %}
-
-<syncfusion:SfKanban ItemsSource="{Binding Tasks}" />
+<Grid x:Name="grid">
+    <syncfusion:SfKanban x:Name="kanban"
+                         ItemsSource="{Binding Tasks}"
+                         AutoGenerateColumns="False">
+        <syncfusion:SfKanban.DataContext>
+            <local:ViewModel />
+        </syncfusion:SfKanban.DataContext>
+        <syncfusion:KanbanColumn Categories="Open"
+                                 Title="To Do"/>
+        <syncfusion:KanbanColumn Categories="In Progress"
+                                 Title="Progress"/>
+        <syncfusion:KanbanColumn Categories="Review,Done"
+                                 Title="Done"/>
+    </syncfusion:SfKanban>
+</Grid>
 
 {% endhighlight %}
-
-{% highlight c# %}
+{% highlight C# hl_lines="1, 3, 4, 7, 9, 10, 11, 12, 15, 17, 18, 19, 20, 23, 25, 26, 27, 28, 31" %}
 
 SfKanban kanban = new SfKanban()
 {
-    ItemsSource = new TaskDetails().Tasks
+    AutoGenerateColumns = false,
+    ItemsSource = new ViewModel().Tasks
 };
 
+kanban.Columns.Add(new KanbanColumn()
+{
+    Categories = "Open",
+    Title = "To Do"
+});
+
+kanban.Columns.Add(new KanbanColumn()
+{
+    Categories = "In Progress",
+    Title = "Progress"
+});
+
+kanban.Columns.Add(new KanbanColumn()
+{
+    Categories = "Review,Done",
+    Title = "Done"
+});
+
+this.grid.Children.Add(kanban);
+
 {% endhighlight %}
+{% highlight C# tabtitle="ViewModel" %}
 
+using Syncfusion.UI.Xaml.Kanban;
 
+public class ViewModel
+{
+    public ObservableCollection<KanbanModel> Tasks { get; set; }
+    public ViewModel()
+    {
+        Tasks = new ObservableCollection<KanbanModel>();
+        Tasks.Add(new KanbanModel()
+        {
+            Title = "Universal App",
+            ID = "27654",
+            Description = "Incorporate feedback into functional specifications",
+            Category = "Open",
+            ColorKey = "Low",
+            Tags = new string[] { "Deployment" },
+        });
+
+        Tasks.Add(new KanbanModel()
+        {
+            Title = "Universal App",
+            ID = "29477",
+            Description = "Design functional specifications",
+            Category = "In Progress",
+            ColorKey = "Normal",
+            Tags = new string[] { "Design" },
+        });
+
+        Tasks.Add(new KanbanModel()
+        {
+            Title = "Universal App",
+            ID = "25678",
+            Description = "Review preliminary software specifications",
+            Category = "Done",
+            ColorKey = "Low",
+            Tags = new string[] { "Analysis" },
+        });
+
+        Tasks.Add(new KanbanModel()
+        {
+            Title = "Universal App",
+            ID = "6593",
+            Description = "Draft preliminary software specifications",
+            Category = "Review",
+            ColorKey = "High",
+            Tags = new string[] { "Analysis" },
+        });
+    }
+}
+
+{% endhighlight %}
 {% endtabs %}
 
-#### Defining columns
+View the sample in [`GitHub`](https://github.com/SyncfusionExamples/Getting-started-in-SfKanban-WPF).
 
-By default, we need to define the columns manually by adding the KanbanColumn object to the [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) collection property in SfKanban.
+#### Creating the custom model tasks with data mapping
 
-ItemsSource which was bound to the Kanban will be added to the respective columns using ColumnMappingPath property in SfKanban and Categories property in KanbanColumn.
+You can also map custom data model to our Kanban control. The following steps demonstrate how to render tasks using the [WPF Kanban](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control with respective custom data properties.
 
-We need to set the required property name to ColumnMappingPath which will be essential to add the data to the respective columns.
+* **Create a data model for kanban:** Create a simple data model in a new class file as shown in the following example code.
 
-In this example, the data whose Category property’s value is set as Open will be added to the ‘To Do’ Column and other data will be added to the respective columns.
+* **Create view model:** Create a view model class to set values for the properties listed in the model class as shown in the following example code.
 
-The following code example illustrates how this can be done.
+* **Bind item source for Kanban:** 
+
+To populate the Kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. Additionally, ensure that the following property of `SfKanban` are mapped from corresponding properties in the `ItemsSource` while initializing the kanban control.
+
+The [ColumnMappingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath) specifies the name of the property within the data object that is used to generate columns in the Kanban control when [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) is set to `true`.
+
+* **Defining columns in the Kanban Board:** 
+
+The [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) in the Kanban board are mapped based on the values of a specified property (e.g., "Status") from your custom data model. The [`ColumnMappingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath) specifies the name of the property within the data object that is used to generate columns in the Kanban control when [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns)  is set to `true`. 
+
+Alternatively, you can manually define columns by setting [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) to `false` and adding instances of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to the [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) collection of the [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. Based on the property specified in [ColumnMappingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath), the Kanban control will generate the columns and render the corresponding cards accordingly.
+
+Let’s look at the practical code example:
 
 {% tabs %}
+{% highlight XAML hl_lines="2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27" %}
 
-{% highlight xaml %}
-
-  <syncfusion:SfKanban MinColumnWidth="150" 
-                      
-                       ColumnMappingPath="Category" 
-                      
-                       ItemsSource="{Binding Tasks}"
-                      
-                       AutoGenerateColumns="False">
-
-            <syncfusion:KanbanColumn Categories="Open" Title="To Do"></syncfusion:KanbanColumn>
-
-            <syncfusion:KanbanColumn Categories="In Progress" Title="Progress"></syncfusion:KanbanColumn>
-
-            <syncfusion:KanbanColumn Categories="Review,Done" Title="Done"></syncfusion:KanbanColumn>
-
+<syncfusion:SfKanban x:Name="kanban"
+                     ColumnMappingPath="Status"
+                     ItemsSource="{Binding Tasks}">
+    <syncfusion:SfKanban.DataContext>
+        <local:ViewModel />
+    </syncfusion:SfKanban.DataContext>
+    <syncfusion:SfKanban.CardTemplate>
+        <DataTemplate>
+            <StackPanel Width="250"
+                        Orientation="Vertical"
+                        Background="Gray">
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock Text="{Binding Title}"
+                               Foreground="Silver"
+                               HorizontalAlignment="Stretch">
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel  Orientation="Horizontal">
+                    <TextBox Text="{Binding Description}"
+                             Width="150"
+                             FontSize="14"
+                             Foreground="Silver"
+                             TextWrapping="Wrap" />
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+    </syncfusion:SfKanban.CardTemplate>
 </syncfusion:SfKanban>
 
+{% endhighlight %}
+{% highlight C# hl_lines="1, 2" %}
+
+this.kanban.ItemsSource = new ViewModel().Tasks;
+this.kanban.ColumnMappingPath = "Status";
+
+{% endhighlight %}
+{% highlight C# tabtitle="TaskDetails.cs" %}
+
+public class TaskDetails
+{
+    public string Title { get; set; }
+    public string Description { get; set; }
+    public object Status { get; set; }
+}
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# tabtitle="ViewModel.cs" %}
 
-SfKanban kanban = new SfKanban()
-
+public class ViewModel
 {
+    public ObservableCollection<TaskDetails> Tasks { get; set; }
+    public ViewModel()
+    {
+        Tasks = new ObservableCollection<TaskDetails>();
+        Tasks.Add(new TaskDetails()
+        {
+            Title = "Universal App",
+            Description = "Incorporate feedback into functional specifications",
+            Status = "Open",
+        });
 
-    AutoGenerateColumns = false,
+        Tasks.Add(new TaskDetails()
+        {
+            Title = "Universal App",
+            Description = "Design functional specifications",
+            Status = "In Progress",
+        });
 
-    ItemsSource = new TaskDetails().Tasks
+        Tasks.Add(new TaskDetails()
+        {
+            Title = "Universal App",
+            Description = "Review preliminary software specifications",
+            Status = "Done",
+        });
 
-};
-
-kanban.Columns.Add(new KanbanColumn()
-
-{
-
-    Categories = "Open",
-
-    Title = "To Do",
-
-    MinimumLimit = 1,
-
-    MaximumLimit = 2,
-
-});
-
-kanban.Columns.Add(new KanbanColumn()
-
-{
-
-    Categories = "In Progress",
-
-    Title = "Progress",
-
-    MinimumLimit = 1,
-
-    MaximumLimit = 2
-
-});
-
-kanban.Columns.Add(new KanbanColumn()
-
-{
-
-    Categories = "Review,Done",
-
-    Title = "Done",
-
-    MinimumLimit = 1,
-
-    MaximumLimit = 2
-
-});
-
-grid.Children.Add(kanban);
+        Tasks.Add(new TaskDetails()
+        {
+            Title = "Universal App",
+            Description = "Draft preliminary software specifications",
+            Status = "Review",
+        });
+    }
+}
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![Defining columns for SfKanban](sfkanban_images/wpf-kanban-board-column.png)
-
-
 You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
-
-You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/Getting-started-in-SfKanban-WPF).
 
 N> When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
 
