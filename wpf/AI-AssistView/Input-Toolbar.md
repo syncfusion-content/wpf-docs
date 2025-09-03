@@ -9,11 +9,11 @@ documentation: ug
 
 # Input Toolbar in WPF AI AssistView
 
-The [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a toolbar feature inside the input text box. This toolbar allows users to add custom toolbar items directly within the text input area, providing quick access to frequently used actions and tools.
+The [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a toolbar feature inside the input textbox. This toolbar allows users to add custom toolbar items directly within the text input area, providing quick access to frequently used actions and tools.
 
 ## InputToolbarItem
 
-The **InputToolbarItem** class is used to define and add items to the input text box toolbar in the SfAIAssistView. The following properties are available in this class:
+The **InputToolbarItem** class is used to define and add items to the input textbox toolbar in the SfAIAssistView. The following properties are available in this class:
 
 - **IsEnabled**: Specifies whether the toolbar item is enabled (interactive) or disabled (non-interactive).
 - **Tooltip**: Sets the tooltip text displayed when the user hovers over the toolbar item.
@@ -51,11 +51,11 @@ Data="M10.2656 3.0293C10.5 3.0293 10.7207 3.07422 10.9277 3.16406C11.1348 3.2539
 {% endhighlight %} 
 {% endtabs %}
 
-![Adding an input toolbar item using ItemTemplate feature in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_input_toolbar_items.png)
+![Adding an input toolbar item using ItemTemplate in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_input_toolbar_items.png)
 
 ## Input toolbar position
 
-The **InputToolbarPosition** property of the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control is used to define the placement of the input toolbar within the control. By default, the toolbar is positioned on the right side of the control.
+The **InputToolbarPosition** property of the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control specifies the placement of the input toolbar within the control. By default, the toolbar is positioned on the right side of the control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,7 +74,7 @@ aiAssistView.InputToolbarPosition = ToolbarPosition.Left;
 {% endhighlight %}
 {% endtabs %}
 
-![Left input toolbar position in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_inputtoolbar_Left.png)
+![Input toolbar position in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_inputtoolbar_Left.png)
 
 ## Input toolbar visibility
 
