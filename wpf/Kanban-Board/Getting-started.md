@@ -19,9 +19,9 @@ The following section provides an assistance to create a simple Kanban applicati
 
 N> This window differs for the Visual Basic project.
 
-## Create a simple Kanban
+## Create a simple Kanban Board
 
-In this walkthrough, we will demonstrate how to create a new application that integrates the SfKanban control.
+In this section, we'll demonstrate how to build a new WPF application that integrates the `SfKanban` control.
 
 ### Adding SfKanban
 
@@ -69,19 +69,17 @@ Drag and drop the Kanban control from the toolbox to your application.
 
 ![Adding SfKanban from toolbox](sfkanban_images/wpf-kanban-board-toolbox.png)
 
-
 Now the Syncfusion.SfKanban.WPF reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
 ![Adding SfKanban from toolbox Assembly Included](sfkanban_images/wpf-kanban-board-assembly-included.png)
 
-
 ![Adding SfKanban from toolbox Xaml Reference](sfkanban_images/wpf-kanban-board-xaml-reference.png)
 
-## Populate WPF Kanban item source
+### Populate WPF Kanban item source
 
 This section explains how to populate the WPF Kanban control's `ItemSource` by creating and binding both default and custom task data models.
 
-### Creating the default model tasks
+#### Creating the default model tasks
 
 * **Define the View Model:** 
 
@@ -106,11 +104,11 @@ The following sample code demonstrates this process in action:
             <local:ViewModel />
         </syncfusion:SfKanban.DataContext>
         <syncfusion:KanbanColumn Categories="Open"
-                                 Title="To Do"></syncfusion:KanbanColumn>
+                                 Title="To Do"/>
         <syncfusion:KanbanColumn Categories="In Progress"
-                                 Title="Progress"></syncfusion:KanbanColumn>
+                                 Title="Progress"/>
         <syncfusion:KanbanColumn Categories="Review,Done"
-                                 Title="Done"></syncfusion:KanbanColumn>
+                                 Title="Done"/>
     </syncfusion:SfKanban>
 </Grid>
 
@@ -126,25 +124,19 @@ SfKanban kanban = new SfKanban()
 kanban.Columns.Add(new KanbanColumn()
 {
     Categories = "Open",
-    Title = "To Do",
-    MinimumLimit = 1,
-    MaximumLimit = 2,
+    Title = "To Do"
 });
 
 kanban.Columns.Add(new KanbanColumn()
 {
     Categories = "In Progress",
-    Title = "Progress",
-    MinimumLimit = 1,
-    MaximumLimit = 2
+    Title = "Progress"
 });
 
 kanban.Columns.Add(new KanbanColumn()
 {
     Categories = "Review,Done",
-    Title = "Done",
-    MinimumLimit = 1,
-    MaximumLimit = 2
+    Title = "Done"
 });
 
 this.grid.Children.Add(kanban);
@@ -157,11 +149,9 @@ using Syncfusion.UI.Xaml.Kanban;
 public class ViewModel
 {
     public ObservableCollection<KanbanModel> Tasks { get; set; }
-
     public ViewModel()
     {
         Tasks = new ObservableCollection<KanbanModel>();
-
         Tasks.Add(new KanbanModel()
         {
             Title = "Universal App",
@@ -170,7 +160,6 @@ public class ViewModel
             Category = "Open",
             ColorKey = "Low",
             Tags = new string[] { "Deployment" },
-            ImageURL = new Uri("/images/People_Circle1.png", UriKind.RelativeOrAbsolute)
         });
 
         Tasks.Add(new KanbanModel()
@@ -181,7 +170,6 @@ public class ViewModel
             Category = "In Progress",
             ColorKey = "Normal",
             Tags = new string[] { "Design" },
-            ImageURL = new Uri("/images/People_Circle2.png", UriKind.RelativeOrAbsolute)
         });
 
         Tasks.Add(new KanbanModel()
@@ -192,7 +180,6 @@ public class ViewModel
             Category = "Done",
             ColorKey = "Low",
             Tags = new string[] { "Analysis" },
-            ImageURL = new Uri("/images/People_Circle3.png", UriKind.RelativeOrAbsolute)
         });
 
         Tasks.Add(new KanbanModel()
@@ -203,7 +190,6 @@ public class ViewModel
             Category = "Review",
             ColorKey = "High",
             Tags = new string[] { "Analysis" },
-            ImageURL = new Uri("/images/People_Circle4.png", UriKind.RelativeOrAbsolute)
         });
     }
 }
@@ -213,10 +199,9 @@ public class ViewModel
 
 View the sample in [`GitHub`](https://github.com/SyncfusionExamples/Getting-started-in-SfKanban-WPF).
 
-### Creating the custom model tasks with data mapping
+#### Creating the custom model tasks with data mapping
 
 You can also map custom data model to our Kanban control. The following steps demonstrate how to render tasks using the [WPF Kanban](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control with respective custom data properties.
-
 
 * **Create a data model for kanban:** Create a simple data model in a new class file as shown in the following example code.
 
@@ -243,7 +228,7 @@ Let’s look at the practical code example:
                      ColumnMappingPath="Status"
                      ItemsSource="{Binding Tasks}">
     <syncfusion:SfKanban.DataContext>
-        <local:KanbanViewModel />
+        <local:ViewModel />
     </syncfusion:SfKanban.DataContext>
     <syncfusion:SfKanban.CardTemplate>
         <DataTemplate>
@@ -271,7 +256,7 @@ Let’s look at the practical code example:
 {% endhighlight %}
 {% highlight C# hl_lines="1, 2" %}
 
-this.kanban.ItemsSource = new KanbanViewModel().Tasks;
+this.kanban.ItemsSource = new ViewModel().Tasks;
 this.kanban.ColumnMappingPath = "Status";
 
 {% endhighlight %}
@@ -291,11 +276,9 @@ public class TaskDetails
 public class ViewModel
 {
     public ObservableCollection<TaskDetails> Tasks { get; set; }
-
     public ViewModel()
     {
         Tasks = new ObservableCollection<TaskDetails>();
-
         Tasks.Add(new TaskDetails()
         {
             Title = "Universal App",
