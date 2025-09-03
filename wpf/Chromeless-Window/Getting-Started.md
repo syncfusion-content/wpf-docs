@@ -109,7 +109,6 @@ You can customize the background of the title bar by setting the [TitleBarBackgr
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
     TitleBarBackground="Red"
-    syncfusion:SkinStorage.VisualStyle="Metro"
     Title="ChromelessWindow Sample" Height="350" Width="525">
     <Grid>
     </Grid>
@@ -133,7 +132,6 @@ The font of the caption in the title bar can be customized using the [TitleFontS
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
     TitleFontSize="15"
-	syncfusion:SkinStorage.VisualStyle="Metro"
     Title="ChromelessWindow Sample" Height="350" Width="525">
 	<Grid>
 	</Grid>
@@ -158,7 +156,6 @@ You can customize the caption height by setting the [TitleBarHeight](https://hel
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
     xmlns:local="clr-namespace:WPF_CalendarEdit"
 	TitleBarHeight="50"
-	syncfusion:SkinStorage.VisualStyle="Metro"
     Title="ChromelessWindow Sample" Height="350" Width="525">
 	<Grid>
     </Grid>
@@ -186,8 +183,6 @@ The text alignment of the title can be set using the [`TitleTextAlignment`](http
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chromeless_Window_Sample"
         mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="Office2016Colorful"
         TitleTextAlignment="Center"
         Title="Chromeless Window Sample"
         Height="350" Width="550">
@@ -214,7 +209,6 @@ You can set the caption icon by setting the [Icon](https://learn.microsoft.com/d
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
 	Icon="App.ico"
-    syncfusion:SkinStorage.VisualStyle="Metro"
     Title="ChromelessWindow Sample" Height="350" Width="525">
     <Grid>
     </Grid>
@@ -240,8 +234,6 @@ The title bar icon can be aligned to `Left` or `Right` using the [`IconAlignment
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chromeless_Window_Sample"
         mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="Office2016Colorful"
         TitleTextAlignment="Center"
         Title="Chromeless Window Sample" IconAlignment="Left"
         Height="350" Width="550">
@@ -264,7 +256,6 @@ You can change the border color of the chromeless window by setting the [ResizeB
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	syncfusion:SkinStorage.VisualStyle="Metro"
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
 	ResizeBorderBrush="Red"
     Title="ChromelessWindow Sample" Height="350" Width="525">
