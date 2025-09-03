@@ -74,7 +74,7 @@ aiAssistView.InputToolbarPosition = ToolbarPosition.Left;
 {% endhighlight %}
 {% endtabs %}
 
-![Input toolbar position in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_inputtoolbar_Left.png)
+![Input toolbar position in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_input_toolbar_Left.png)
 
 ## Input toolbar visibility
 
