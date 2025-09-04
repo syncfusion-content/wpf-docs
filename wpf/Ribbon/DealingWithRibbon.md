@@ -2908,7 +2908,7 @@ End Sub
 
 ## Customizing the Header in RibbonTab
 
-The Ribbon control allows customization of the tab headers using The ContentTemplate property. This enables users to enhance the visual appearance of tabs by adding icons and styled caption text.
+The Ribbon control allows customization of the tab headers using The CaptionTemplate property. This enables users to enhance the visual appearance of tabs by adding icons and styled caption text.
 
 Below is an example where the Home, Send / Receive, and Folder tabs are customized with an icon and caption text:
  
@@ -2918,7 +2918,7 @@ Below is an example where the Home, Send / Receive, and Folder tabs are customiz
 
 <syncfusion:Ribbon VerticalAlignment="Top">
     <syncfusion:RibbonTab x:Name="homeTab" Caption="Home">
-        <syncfusion:RibbonTab.ContentTemplate>
+        <syncfusion:RibbonTab.CaptionTemplate>
             <DataTemplate>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0,0,0">
                     <Path Width="16" Height="16" Stroke="Black" StrokeThickness="0.5" Margin="0,0,5,0" Stretch="Uniform"
@@ -2926,7 +2926,7 @@ Below is an example where the Home, Send / Receive, and Folder tabs are customiz
                     <TextBlock Text="{Binding}" FontSize="14" Margin="0 3 0 0"/>
                 </StackPanel>
             </DataTemplate>
-        </syncfusion:RibbonTab.ContentTemplate>
+        </syncfusion:RibbonTab.CaptionTemplate>
 
         <syncfusion:RibbonBar Name="New" Width="90"  Header="New"/>
         <syncfusion:RibbonBar Name="Delete" Width="90"  Header="Delete"/>
@@ -2936,7 +2936,7 @@ Below is an example where the Home, Send / Receive, and Folder tabs are customiz
     </syncfusion:RibbonTab>
 
     <syncfusion:RibbonTab x:Name="sendOReceiveTab" Caption="Send / Receive">
-        <syncfusion:RibbonTab.ContentTemplate>
+        <syncfusion:RibbonTab.CaptionTemplate>
             <DataTemplate>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0,0,0">
                     <Path Width="16" Height="16" Stroke="Black" StrokeThickness="1" Margin="0,0,5,0" Stretch="Uniform"
@@ -2944,11 +2944,11 @@ Below is an example where the Home, Send / Receive, and Folder tabs are customiz
                     <TextBlock Text="{Binding}" FontSize="14" Margin="0 3 0 0"/>
                 </StackPanel>
             </DataTemplate>
-        </syncfusion:RibbonTab.ContentTemplate>
+        </syncfusion:RibbonTab.CaptionTemplate>
     </syncfusion:RibbonTab>
 
     <syncfusion:RibbonTab x:Name="folderTab" Caption="Folder">
-        <syncfusion:RibbonTab.ContentTemplate>
+        <syncfusion:RibbonTab.CaptionTemplate>
             <DataTemplate>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0,0,0">
                     <Path Width="16" Height="16" Stroke="Black" StrokeThickness="1" Margin="0,0,5,0" Stretch="Uniform" 
@@ -2956,7 +2956,7 @@ Below is an example where the Home, Send / Receive, and Folder tabs are customiz
                     <TextBlock Text="{Binding}" FontSize="14" Margin="0 3 0 0"/>
                 </StackPanel>
             </DataTemplate>
-        </syncfusion:RibbonTab.ContentTemplate>
+        </syncfusion:RibbonTab.CaptionTemplate>
     </syncfusion:RibbonTab>
 </syncfusion:Ribbon>
 
