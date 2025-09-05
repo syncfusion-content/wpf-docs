@@ -203,11 +203,6 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/spreadsheet/getting-started" >Spreadsheet</a><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
 			<a href="https://help.syncfusion.com/wpf/richtextbox/getting-started" >RichTextBox</a><br/>
 		</td>
 	</tr>
