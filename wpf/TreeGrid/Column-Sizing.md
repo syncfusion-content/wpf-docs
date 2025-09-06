@@ -43,6 +43,7 @@ Calculates the width of column based on header and cell contents. So that header
 <code>FillColumn</code>
 </td>
 <td>
+         
 While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and last column fills the remaining space of grid. And possible to set any column to fill the remaining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `FillColumn` for that particular column.
 </td>
 </tr>
@@ -50,8 +51,9 @@ While setting the `TreeGrid.ColumnSizer` property, all column widths are calcula
 <td>
 <code>AutoFillColumn</code>
 </td>
-While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and the last column fills the remaining column width as auto fill. And possible to set any column to fill the remaining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `AutoFillColumn` for that particular column.
 <td>
+
+While setting the `TreeGrid.ColumnSizer` property, all column widths are calculated based on content of cell and the last column fills the remaining column width as auto fill. And possible to set any column to fill the remaining space instead of last column by setting `TreeGridColumn.ColumnSizer` as `AutoFillColumn` for that particular column.
 </td>
 </tr>
 <tr>
@@ -104,7 +106,7 @@ N> The `TreeGridColumn.ColumnSizer` takes higher priority than the `SfTreeGrid.C
 
 ### Refreshing ColumnSizer at runtime
 
-You can refresh the `ColumnSizer` at runtime by calling [SfTreeGrid.TreeGridColumnSizer.Refresh](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumnSizer_Refresh().html) method.
+You can refresh the `ColumnSizer` at runtime by calling [SfTreeGrid.TreeGridColumnSizer.Refresh](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumnSizer_Refresh) method.
 SfTreeGrid support to recalculates the column auto width by calling reset methods of `TreeGridColumnSizer`. [TreeGridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [TreeGridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grid_GridColumnBase_) method reset the width to particular column.
 
 N> The `TreeGridColumnSizer.ResetAutoCalculationforAllColumns` or `TreeGridColumnSizer.ResetAutoCalculation` methods applicable for Auto, FillColumn, AutoFillColumn, SizeToCells types.
@@ -129,17 +131,17 @@ When the width of the column is explicitly defined or column is resized, then co
 
 foreach (var column in treeGrid.Columns)
 {
-
 	if (!double.IsNaN(column.Width))
 		column.Width = double.NaN;
 }
 this.treeGrid.TreeGridColumnSizer.Refresh();   
+
 {% endhighlight %}
 {% endtabs %}
 
 ### Customizing built-in column sizing logic
 
-SfTreeGrid process column sizing operations in [TreeGridColumnSizer](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html) class. You can customize the column sizing operations by overriding `GridColumnSizer` and set it to `SfTreeGrid.TreeGridColumnSizer`.
+SfTreeGrid process column sizing operations in [TreeGridColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html) class. You can customize the column sizing operations by overriding `GridColumnSizer` and set it to `SfTreeGrid.TreeGridColumnSizer`.
 
 {% tabs %}
 {% highlight c# %}
@@ -172,7 +174,7 @@ public class TreeGridColumnSizerExt:TreeGridColumnSizer
 
 ### Auto width calculation based on font settings
 
-By default, the ColumnSizer calculates column&#39;s width based on fixed `FontSize`, `FontFamily`, `Margin`,`SortIconWidth`. You can change the calculation by customized settings.
+By default, the ColumnSizer calculates column&#39;s width based on fixed `FontSize`, `FontFamily`, `Margin`, `SortIconWidth`. You can change the calculation by customized settings.
 
 #### Changing SortIcon width
 
@@ -204,9 +206,9 @@ For example, you can calculate the column width, with specified ratios instead o
 
 {% tabs %}
 {% highlight c# %}
+
 public static class StarRatio
 {
-
 	public static int GetColumnRatio(DependencyObject obj)
 	{
 		return (int)obj.GetValue(ColumnRatioProperty);
@@ -219,6 +221,7 @@ public static class StarRatio
 
 	public static readonly DependencyProperty ColumnRatioProperty = DependencyProperty.RegisterAttached("ColumnRatio", typeof(int), typeof(StarRatio), new PropertyMetadata(1, null));
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -226,12 +229,12 @@ Below code to define the star width calculation based on the `ColumnRatio`.
 
 {% tabs %}
 {% highlight c# %}
+
 //Assign the customized TreeGridColumnSizerExt to SfTreeGrid.TreeGridColumnSizer
 this.treeGrid.TreeGridColumnSizer = new TreeGridColumnSizerExt(treeGrid);
 
 public class TreeGridColumnSizerExt : TreeGridColumnSizer
 {
-
 	public TreeGridColumnSizerExt(SfTreeGrid treeGrid) : base(treeGrid)
 	{
 	}
@@ -267,7 +270,6 @@ public class TreeGridColumnSizerExt : TreeGridColumnSizer
 
 				foreach (var remColumn in removedColumn)
 				{
-
 					if (!columns.Contains(remColumn))
 					{
 						removedWidth += remColumn.ActualWidth;
@@ -335,19 +337,17 @@ Below code creates `CustomColumnSizer` to change the width of `TreeGridComboboxC
 
 {% tabs %}
 {% highlight c# %}
+
 this.TreeGrid.TreeGridColumnSizer = new CustomColumnSizer(this.treeGrid);
 
 public class CustomColumnSizer : TreeGridColumnSizer
 {
-
-	public CustomColumnSizer(SfTreeGrid treeGrid)
-		: base(treeGrid)
+	public CustomColumnSizer(SfTreeGrid treeGrid) : base(treeGrid)
 	{
 	}
 
 	protected override double CalculateCellWidth(TreeGridColumn column)
 	{
-
 		if (column is TreeGridComboBoxColumn)
 		{
 			double colWidth = double.MaxValue;
@@ -365,11 +365,11 @@ public class CustomColumnSizer : TreeGridColumnSizer
 			var measureSize = MeasureText(clientSize, maximumComboItemsText, column, null, Syncfusion.UI.Xaml.Grid.GridQueryBounds.Width);
 			return measureSize.Width + SystemParameters.ScrollWidth;
 		}
-
 		else
 			return base.CalculateCellWidth(column);
 	}
 }
+
 {% endhighlight %}
 
 {% endtabs %}

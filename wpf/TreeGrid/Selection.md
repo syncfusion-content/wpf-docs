@@ -22,15 +22,14 @@ The [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.S
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                                       AutoExpandMode="RootNodesExpanded"
-                                       AutoGenerateColumns="False" 
-                                       NavigationMode="Row"
-                                       ChildPropertyName="Children"
-                                       SelectionMode="Single"
-                                       ColumnSizer="Star" 
-                                       ExpanderColumn="FirstName"
-                                       ItemsSource="{Binding PersonDetails}"
-                                       >
+                       AutoExpandMode="RootNodesExpanded"
+                       AutoGenerateColumns="False" 
+                       NavigationMode="Row"
+                       ChildPropertyName="Children"
+                       SelectionMode="Single"
+                       ColumnSizer="Star" 
+                       ExpanderColumn="FirstName"
+                       ItemsSource="{Binding PersonDetails}">
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,7 +37,7 @@ The [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.S
 
 ## Disable selection for rows and columns
 
-You can disable selection and navigation on particular column by setting the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowFocus) property. You can disable selection on particular row or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
+You can disable selection and navigation on particular column by setting the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowFocus) property. You can disable selection on particular row or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellActivating) event.
 
 ## Multiple row selection
 
@@ -49,15 +48,14 @@ When using Extended, you can select multiple rows by pressing the key modifiers 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                                       AutoExpandMode="RootNodesExpanded"
-                                       AutoGenerateColumns="False" 
-                                       NavigationMode="Row"
-                                       ChildPropertyName="Children"
-                                       SelectionMode="Extended"
-                                       ColumnSizer="Star" 
-                                       ExpanderColumn="FirstName"
-                                       ItemsSource="{Binding PersonDetails}"
-                                       >
+                       AutoExpandMode="RootNodesExpanded"
+                       AutoGenerateColumns="False" 
+                       NavigationMode="Row"
+                       ChildPropertyName="Children"
+                       SelectionMode="Extended"
+                       ColumnSizer="Star" 
+                       ExpanderColumn="FirstName"
+                       ItemsSource="{Binding PersonDetails}">
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,13 +86,13 @@ Both [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.S
 You can select a single row by setting the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property or [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedIndex) property.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="C# [SelectedIndex]" %}
 
 var recordIndex = this.treeGrid.ResolveToNodeIndex(6);
 this.treeGrid.SelectedIndex = recordIndex;
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="C# [SelectedItem]" %}
 
 var node = this.treeGrid.GetNodeAtRowIndex(6);
 this.treeGrid.SelectedItem = node.Item;
@@ -110,7 +108,7 @@ var viewModel = this.treeGrid.DataContext as ViewModel;
 
 foreach (var order in viewModel.PersonDetails)
 {
-        if (order.LastName == "Buchanan")
+    if (order.LastName == "Buchanan")
         this.treeGrid.SelectedItems.Add(order);
 }
 {% endhighlight %}
@@ -363,7 +361,7 @@ Commits only the changes when the current cell is in edit mode and retains the f
 
 </td>
 <td>
-If the {{'[TreeGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing)'| markdownify }} property is true, and the 
+If the {{'[SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing)'| markdownify }} property is true, and the 
 {{'[GridColumn.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowEditing)'| markdownify }} property is true for the current column, the current cell enters into edit mode.
 </td>
 </tr>
@@ -486,7 +484,7 @@ You can customize the mouse and keyboard behaviors by overriding the selection c
 
 ### CurrentCellActivating
 
-[ActivationTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing): Returns the reason for moving the current cell.
+[ActivationTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.Helpers.CurrentCellActivatingEventArgs.html#Syncfusion_UI_Xaml_CellGrid_Helpers_CurrentCellActivatingEventArgs_ActivationTrigger): Returns the reason for moving the current cell.
 
 [CurrentRowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellActivatingEventArgs_CurrentRowColumnIndex): [RowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ScrollAxis.RowColumnIndex.html) of the cell where the current cell need to move.
 
@@ -516,7 +514,7 @@ private void TreeGrid_CurrentCellActivating(object sender, Syncfusion.UI.Xaml.Gr
 {% endhighlight %}
 {% endtabs %}
 
-You can cancel the current cell moving process within this event by setting [GridCurrentCellActivatingEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) to true.
+You can cancel the current cell moving process within this event by setting [GridCurrentCellActivatingEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.SyncfusionCancelRoutedEventArgs.html#Syncfusion_Windows_ComponentModel_SyncfusionCancelRoutedEventArgs_Cancel) to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -573,7 +571,7 @@ private void TreeGrid_CurrentCellActivated(object sender, Syncfusion.UI.Xaml.Gri
 
 ### SelectionChanging
 
-The [SelectionChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellActivatedEventArgs_PreviousRowColumnIndex) event occurs before processing the selection to a particular row or cell. This event is triggered only to the keyboard and mouse interactions. [GridSelectionChangingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs.html) has the following members, which provide information to the SelectionChanging event.
+The [SelectionChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionChanging) event occurs before processing the selection to a particular row or cell. This event is triggered only to the keyboard and mouse interactions. [GridSelectionChangingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs.html) has the following members, which provide information to the SelectionChanging event.
 
 [AddedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSelectionChangingEventArgs_AddedItems): Collection of [GridRowInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowInfo.html) or [GridCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCellInfo.html) where the selection is going to be processed.
 
@@ -645,16 +643,15 @@ You can change the selection background and foreground using the [SelectionBackG
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                                           Grid.Row="0"
-                                           AutoExpandMode="RootNodesExpanded"
-                                           AutoGenerateColumns="False"
-                                           SelectionMode="Multiple"
-                                           ChildPropertyName="ReportsTo"
-                                           SelectionChanged="TreeGrid_SelectionChanged"
-                                           ItemsSource="{Binding EmployeeInfo}"
-                                           SelectionBackground="SkyBlue"                                                    
-                                           SelectionForeground="DarkBlue"
-                                         >
+                       Grid.Row="0"
+                       AutoExpandMode="RootNodesExpanded"
+                       AutoGenerateColumns="False"
+                       SelectionMode="Multiple"
+                       ChildPropertyName="ReportsTo"
+                       SelectionChanged="TreeGrid_SelectionChanged"
+                       ItemsSource="{Binding EmployeeInfo}"
+                       SelectionBackground="SkyBlue"                                                    
+                       SelectionForeground="DarkBlue">
 {% endhighlight %}
 {% endtabs %}
 
@@ -667,19 +664,18 @@ You can change the current cell border thickness and border color using the [Cur
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                                           Grid.Row="0"
-                                           AutoExpandMode="RootNodesExpanded"
-                                           AutoGenerateColumns="False"
-                                           SelectionMode="Multiple"
-                                           ChildPropertyName="ReportsTo"
-                                           SelectionChanged="TreeGrid_SelectionChanged"
-                                           ItemsSource="{Binding EmployeeInfo}"
-                                           LiveNodeUpdateMode="AllowDataShaping"
-                                           ParentPropertyName="ID"
-                                           SelectedIndex="0"
-                                           CurrentCellBorderBrush="Red"
-                                           CurrentCellBorderThickness="1.6"
-                                         >
+                       Grid.Row="0"
+                       AutoExpandMode="RootNodesExpanded"
+                       AutoGenerateColumns="False"
+                       SelectionMode="Multiple"
+                       ChildPropertyName="ReportsTo"
+                       SelectionChanged="TreeGrid_SelectionChanged"
+                       ItemsSource="{Binding EmployeeInfo}"
+                       LiveNodeUpdateMode="AllowDataShaping"
+                       ParentPropertyName="ID"
+                       SelectedIndex="0"
+                       CurrentCellBorderBrush="Red"
+                       CurrentCellBorderThickness="1.6">
 {% endhighlight %}
 {% endtabs %}
 
@@ -776,14 +772,13 @@ You can customize the row selection by editing the control template of TreeGridR
 ## Customize selection behaviors
 
 The tree grid processes the selection operations in selection controller. [GridSelectionController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionController) processes selection operations when selection unit is row.
-You can customize the default row selection behaviors by overriding the GridSelectionController class and set it to SfTreeGrid.SelectionController.
+You can customize the default row selection behaviors by overriding the `GridSelectionController` class and set it to `SfTreeGrid.SelectionController`.
 
 {% tabs %}
 {% highlight c# %}
 this.treeGrid.SelectionController = new GridSelectionControllerExt(this.treeGrid);
 public class GridSelectionControllerExt : TreeGridRowSelectionController
 {
-
     public GridSelectionControllerExt(SfTreeGrid treeGrid) : base(treeGrid)
     {
     }
@@ -808,7 +803,6 @@ public class GridSelectionControllerExt : TreeGridRowSelectionController
     {
         if (args.Key == Key.Enter)
         {
-
             //Creates new KeyEventArgs to refer the Tab key.
             KeyEventArgs arguments = new KeyEventArgs(args.KeyboardDevice, args.InputSource, args.Timestamp, Key.Tab) { RoutedEvent = args.RoutedEvent };
 
@@ -921,7 +915,7 @@ You can download the [sample](https://github.com/SyncfusionExamples/how-to-chang
 
 ### Select the rows based on cell value
 
-In tree grid, you can select the rows based on cell value by adding the corresponding records to SelectedItems. You can get the cell value of a particular cell using the View.GetPropertyAccess provider method.
+In tree grid, you can select the rows based on cell value by adding the corresponding records to SelectedItems. You can get the cell value of a particular cell using the `View.GetPropertyAccessProvider` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -1026,7 +1020,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 ### Show the selection of row/cell when setting the background
 
-The `Row`/`Cell` selection border is behind the grid cell content. So, when you apply the background for a row, the selection is not displayed in `UI`. You can overcome this by setting opacity in TreeGridCell.
+The `Row`/`Cell` selection border is behind the grid cell content. So, when you apply the background for a row, the selection is not displayed in `UI`. You can overcome this by setting opacity in `TreeGridCell`.
 
 {% tabs %}
 {% highlight xaml %}
