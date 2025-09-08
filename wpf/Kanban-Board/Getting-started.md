@@ -94,7 +94,7 @@ To populate the kanban card items, utilize the [`ItemsSource`](https://help.sync
 The following sample code demonstrates this process in action:
 
 {% tabs %}
-{% highlight XAML hl_lines="3, 4, 5, 6, 7, 8, 91, 11, 12, 13" %}
+{% highlight XAML hl_lines="3 4 5 6 7 8 9 10 11 12 13" %}
 
 <Grid x:Name="grid">
     <syncfusion:SfKanban x:Name="kanban"
@@ -113,7 +113,7 @@ The following sample code demonstrates this process in action:
 </Grid>
 
 {% endhighlight %}
-{% highlight C# hl_lines="1, 3, 4, 7, 9, 10, 11, 12, 15, 17, 18, 19, 20, 23, 25, 26, 27, 28, 31" %}
+{% highlight C# hl_lines="1 3 4 7 9 10 11 12 15 17 18 19 20 23 25 26 27 28 31" %}
 
 SfKanban kanban = new SfKanban()
 {
@@ -222,7 +222,7 @@ Alternatively, you can manually define columns by setting [`AutoGenerateColumns`
 Let’s look at the practical code example:
 
 {% tabs %}
-{% highlight XAML hl_lines="2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27" %}
+{% highlight XAML hl_lines="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27" %}
 
 <syncfusion:SfKanban x:Name="kanban"
                      ColumnMappingPath="Status"
@@ -254,7 +254,7 @@ Let’s look at the practical code example:
 </syncfusion:SfKanban>
 
 {% endhighlight %}
-{% highlight C# hl_lines="1, 2" %}
+{% highlight C# hl_lines="1 2" %}
 
 this.kanban.ItemsSource = new ViewModel().Tasks;
 this.kanban.ColumnMappingPath = "Status";
