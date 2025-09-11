@@ -268,7 +268,6 @@ public class TaskDetails
 public class ViewModel
 {
     public ObservableCollection<TaskDetails> Tasks { get; set; }
-
     public ViewModel()
     {
         Tasks = new ObservableCollection<TaskDetails>();
@@ -309,7 +308,7 @@ You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syn
 
 N> 
 * When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
-* When using a custom data model, the default card UI is not applicable. You must define a custom DataTemplate using the CardTemplate property to render the card content appropriately.
+* When using a custom data model, the default card UI is not applicable. You must define a custom `DataTemplate` using the [`CardTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate)  property to render the card content appropriately.
 
 ## Theme
 
