@@ -81,20 +81,16 @@ This section explains how to populate the WPF Kanban control's `ItemSource` by c
 
 #### Creating the default model tasks
 
-* **Define the View Model:** 
+* **Define the View Model:** Create a view model class to set values for the properties listed in the [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class as shown in the following example code. Each [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) instance represent a card in Kanban control.
 
-Create a view model class to set values for the properties listed in the [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class as shown in the following example code. Each [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) instance represent a card in Kanban control.
-
-* **Bind item source for Kanban:** 
-
-To populate the kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
+* **Bind item source for Kanban:** To populate the kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
 * **Defining columns in the Kanban Board:** The columns are generated automatically based on the different values of the [`Category`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) in the [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class from the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource). However, you can manually define the columns by setting the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to `false` and adding [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html). You can define the column categories using the [`Categories`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html), and the cards will be added to their respective columns.
 
 The following sample code demonstrates this process in action:
 
 {% tabs %}
-{% highlight XAML hl_lines="3 4 5 6 7 8 9 10 11 12 13" %}
+{% highlight XAML hl_lines="3 4 8 9 10 11 12 13" %}
 
 <Grid x:Name="grid">
     <syncfusion:SfKanban x:Name="kanban"
@@ -106,14 +102,14 @@ The following sample code demonstrates this process in action:
         <syncfusion:KanbanColumn Categories="Open"
                                  Title="To Do"/>
         <syncfusion:KanbanColumn Categories="In Progress"
-                                 Title="Progress"/>
+                                 Title="In Progress"/>
         <syncfusion:KanbanColumn Categories="Review,Done"
                                  Title="Done"/>
     </syncfusion:SfKanban>
 </Grid>
 
 {% endhighlight %}
-{% highlight C# hl_lines="1 3 4 7 9 10 11 12 15 17 18 19 20 23 25 26 27 28 31" %}
+{% highlight C# hl_lines="1 2 3 4 5 7 8 9 10 11 13 14 15 16 17 19 20 21 22 23 24 25" %}
 
 SfKanban kanban = new SfKanban()
 {
@@ -130,7 +126,7 @@ kanban.Columns.Add(new KanbanColumn()
 kanban.Columns.Add(new KanbanColumn()
 {
     Categories = "In Progress",
-    Title = "Progress"
+    Title = "In Progress"
 });
 
 kanban.Columns.Add(new KanbanColumn()
@@ -197,7 +193,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-View the sample in [`GitHub`](https://github.com/SyncfusionExamples/Getting-started-in-SfKanban-WPF).
+N> View the sample in [`GitHub`](https://github.com/SyncfusionExamples/Getting-started-in-SfKanban-WPF).
 
 #### Creating the custom model tasks with data mapping
 
@@ -207,22 +203,18 @@ You can also map custom data model to our Kanban control. The following steps de
 
 * **Create view model:** Create a view model class to set values for the properties listed in the model class as shown in the following example code.
 
-* **Bind item source for Kanban:** 
-
-To populate the Kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. Additionally, ensure that the following property of `SfKanban` are mapped from corresponding properties in the `ItemsSource` while initializing the kanban control.
+* **Bind item source for Kanban:** To populate the Kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. Additionally, ensure that the following property of `SfKanban` are mapped from corresponding properties in the `ItemsSource` while initializing the kanban control.
 
 The [ColumnMappingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath) specifies the name of the property within the data object that is used to generate columns in the Kanban control when [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) is set to `true`.
 
-* **Defining columns in the Kanban Board:** 
-
-The [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) in the Kanban board are mapped based on the values of a specified property (e.g., "Status") from your custom data model. The [`ColumnMappingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath) specifies the name of the property within the data object that is used to generate columns in the Kanban control when [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns)  is set to `true`. 
+* **Defining columns in the Kanban Board:** The [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) in the Kanban board are mapped based on the values of a specified property (e.g., "Status") from your custom data model. The [`ColumnMappingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath) specifies the name of the property within the data object that is used to generate columns in the Kanban control when [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns)  is set to `true`. 
 
 Alternatively, you can manually define columns by setting [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) to `false` and adding instances of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to the [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) collection of the [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. Based on the property specified in [ColumnMappingPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath), the Kanban control will generate the columns and render the corresponding cards accordingly.
 
 Let’s look at the practical code example:
 
 {% tabs %}
-{% highlight XAML hl_lines="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27" %}
+{% highlight XAML hl_lines="2 3 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27" %}
 
 <syncfusion:SfKanban x:Name="kanban"
                      ColumnMappingPath="Status"
@@ -276,6 +268,7 @@ public class TaskDetails
 public class ViewModel
 {
     public ObservableCollection<TaskDetails> Tasks { get; set; }
+
     public ViewModel()
     {
         Tasks = new ObservableCollection<TaskDetails>();
@@ -314,7 +307,9 @@ public class ViewModel
 
 You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
 
-N> When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
+N> 
+* When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
+* When using a custom data model, the default card UI is not applicable. You must define a custom DataTemplate using the CardTemplate property to render the card content appropriately.
 
 ## Theme
 
