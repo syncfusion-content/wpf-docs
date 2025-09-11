@@ -81,7 +81,7 @@ Using the [TreeGridNodeDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 
 * [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_TreeGridNodeDropEventArgs_Nodes) - Gets the item that contains the associated data.
 * [TargetNode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_TreeGridNodeDropEventArgs_TargetNode) - Gets a value indicating the target node which is going to drop.
-* [Position](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDropEventArgs.html…) - Gets the position where the dragged node is dropped relative to the target node.
+* [Position](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TreeGridNodeDropEventArgs.html#Syncfusion_Windows_Controls_Gantt_TreeGridNodeDropEventArgs_Position) - Gets the position where the dragged node is dropped relative to the target node.
 
 {% tabs %}
 {% highlight xaml %}
