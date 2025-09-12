@@ -19,8 +19,7 @@ The default value is zero, which implies sharp corners
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-Title="ChromelessWindow" Height="350" Width="525"  CornerRadius="8"  AllowsTransparency="True" 
-syncfusion:SkinStorage.VisualStyle="Metro" x:Name="_chromelessWindow"    
+Title="ChromelessWindow" Height="350" Width="525"  CornerRadius="8"  AllowsTransparency="True"    
 xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
 </syncfusion:ChromelessWindow>
 
