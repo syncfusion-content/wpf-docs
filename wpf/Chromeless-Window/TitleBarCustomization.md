@@ -20,7 +20,6 @@ documentation: ug
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   Title="MainWindow" Height="350" Width="525"  TitleBarBackground="Red"   x:Name="_chromelessWindow"  
-  syncfusion:SkinStorage.VisualStyle="Metro"  
   xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
   <Grid>
   </Grid>
@@ -58,7 +57,6 @@ documentation: ug
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   Title="ChromelessWindow" Height="350" Width="525" TitleBarHeight="60" TitleBarBackground="Pink" 
-  syncfusion:SkinStorage.VisualStyle="Metro"  x:Name="_chromelessWindow"  
   xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
   <Grid>
   </Grid>
@@ -93,7 +91,7 @@ documentation: ug
  <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-  Title="ChromelessWindow" Height="350" Width="525" TitleFontSize="25" syncfusion:SkinStorage.VisualStyle="Metro"     
+  Title="ChromelessWindow" Height="350" Width="525" TitleFontSize="25"     
   x:Name="_chromelessWindow" xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
   <Grid>
   </Grid>
@@ -130,8 +128,6 @@ documentation: ug
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chromeless_Window_Sample"
         mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="Office2019Colorful"
         TitleTextAlignment="Center"
         Icon="App.ico"
         ShowTitle="False" 
@@ -160,8 +156,6 @@ documentation: ug
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chromeless_Window_Sample"
         mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="Office2019Colorful"
         TitleTextAlignment="Center"
         Icon="App.ico"
         ShowMinimizeButton="False"
