@@ -193,6 +193,8 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
+![wpf-kanban-board-column-using-default-model](sfkanban_images/wpf-kanban-board-column-using-default-model.png)
+
 N> View the sample in [`GitHub`](https://github.com/SyncfusionExamples/Getting-started-in-SfKanban-WPF).
 
 #### Creating the custom model tasks with data mapping
@@ -214,7 +216,7 @@ Alternatively, you can manually define columns by setting [`AutoGenerateColumns`
 Let’s look at the practical code example:
 
 {% tabs %}
-{% highlight XAML hl_lines="2 3 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27" %}
+{% highlight XAML hl_lines="2 3 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26" %}
 
 <syncfusion:SfKanban x:Name="kanban"
                      ColumnMappingPath="Status"
@@ -224,23 +226,22 @@ Let’s look at the practical code example:
     </syncfusion:SfKanban.DataContext>
     <syncfusion:SfKanban.CardTemplate>
         <DataTemplate>
-            <StackPanel Width="250"
-                        Orientation="Vertical"
-                        Background="Gray">
-                <StackPanel  Orientation="Horizontal">
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    CornerRadius="3"
+                    Background="#F3CFCE">
+                <StackPanel Margin="10">
                     <TextBlock Text="{Binding Title}"
-                               Foreground="Silver"
-                               HorizontalAlignment="Stretch">
-                    </TextBlock>
+                               TextAlignment="Center"
+                               FontWeight="Bold"
+                               FontSize="14" />
+                    <TextBlock Text="{Binding Description}"
+                               TextAlignment="Center"
+                               FontSize="12"
+                               TextWrapping="Wrap"
+                               Margin="5" />
                 </StackPanel>
-                <StackPanel  Orientation="Horizontal">
-                    <TextBox Text="{Binding Description}"
-                             Width="150"
-                             FontSize="14"
-                             Foreground="Silver"
-                             TextWrapping="Wrap" />
-                </StackPanel>
-            </StackPanel>
+            </Border>
         </DataTemplate>
     </syncfusion:SfKanban.CardTemplate>
 </syncfusion:SfKanban>
@@ -303,6 +304,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![wpf-kanban-board-column-using-custom-model](sfkanban_images/wpf-kanban-board-column-using-custom-model.png)
 
 You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
 
