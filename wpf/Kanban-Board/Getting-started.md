@@ -75,11 +75,11 @@ Now the Syncfusion.SfKanban.WPF reference is added to the application references
 
 ![Adding SfKanban from toolbox Xaml Reference](sfkanban_images/wpf-kanban-board-xaml-reference.png)
 
-### Populate WPF Kanban item source
+## Populate WPF Kanban item source
 
 This section explains how to populate the WPF Kanban control's `ItemSource` by creating and binding both default and custom task data models.
 
-#### Creating the default model tasks
+### Creating the default model tasks
 
 * **Define the View Model:** Create a view model class to set values for the properties listed in the [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class as shown in the following example code. Each [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) instance represent a card in Kanban control.
 
@@ -197,7 +197,7 @@ public class ViewModel
 
 N> View the sample in [`GitHub`](https://github.com/SyncfusionExamples/Getting-started-in-SfKanban-WPF).
 
-#### Creating the custom model tasks with data mapping
+### Creating the custom model tasks with data mapping
 
 You can also map custom data model to our Kanban control. The following steps demonstrate how to render tasks using the [WPF Kanban](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control with respective custom data properties.
 
