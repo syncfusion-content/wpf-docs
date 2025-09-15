@@ -536,6 +536,75 @@ Dark Theme:
 
 ![Customizing using ThemeResource Dark](Skin-Manager_images/Customizing-using-ThemeResource-Dark.png)
 
+### Accessing Theme Resources Using TryFindResource 
+
+To access specific theme resources in your WPF application, you can use the `TryFindResource(key)` method to retrieve a resource by its key and apply it in the code-behind. 
+
+Theme resource keys are typically defined in: 
+
+1) **Brushes.xaml:** Contains brush-related keys such as ContentBackground, ContentForeground, etc. 
+
+2) **Common.xaml:** Contains font size and style keys like HeaderTextStyle, SubHeaderTextStyle, etc.  
+
+These files are located under the Common folder when [exporting a theme from ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#exporting-theme-project). You can also refer to the [Resource Key list](https://help.syncfusion.com/wpf/themes/skin-manager#resource-key-list) to locate specific styles for various controls. 
+
+**Example: Applying Theme Resources to a Button** 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Button x:Name="myButton" Content="Submit" Height="30" Width="120" Margin="10"></Button>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Include the following namespace and apply the implementation in your code-behind to retrieve and assign theme-specific resources for a button control.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.Themes.Windows11Light.WPF; 
+
+Theme currentTheme = SfSkinManager.GetTheme(myButton);
+
+if (currentTheme.ThemeName == "Windows11Light")
+{
+    var buttonStyleKey = new ThemeKey
+    {
+        Theme = typeof(Windows11LightSkinHelper),
+        Key = "WPFPrimaryButtonStyle"
+    };
+    var textStyleKey = new ThemeKey
+    {
+        Theme = typeof(Windows11LightSkinHelper),
+        Key = "HeaderTextStyle"
+    };
+    var foregroundStyleKey = new ThemeKey
+    {
+        Theme = typeof(Windows11LightSkinHelper),
+        Key = "ContentForeground"
+    };
+    Style buttonStyle = TryFindResource(buttonStyleKey) as Style;
+    myButton.Style = buttonStyle;
+    double fontSize = (double)TryFindResource(textStyleKey);
+    myButton.FontSize = fontSize;
+    SolidColorBrush backgroundBrush = TryFindResource(foregroundStyleKey) as SolidColorBrush;
+    myButton.Foreground = backgroundBrush;                
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+This example demonstrates how to dynamically apply a button style, foreground color, and font size using theme resource keys defined in the Brushes.xaml and Common.xaml files for the Windows11Light theme. 
+
+**Output Screenshot**
+
+![Accessing Theme Resources Using TryFindResource](Skin-Manager_images/Accessing-Theme-Resources-Using-TryFindResource.png)
+
 ## Resource Key List
 
 ### Framework Controls
