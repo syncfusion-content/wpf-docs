@@ -22,7 +22,7 @@ ChromelessWindow allows the end-user to write own templates for the TitleBar. Th
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 Title="ChromelessWindow" Height="350" Width="525" TitleBarTemplate="{StaticResource TitleBarTemplateKey}"   
-syncfusion:SkinStorage.VisualStyle="Metro" x:Name="_chromelessWindow"    
+x:Name="_chromelessWindow"    
 xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
 </syncfusion:ChromelessWindow>
 
@@ -64,7 +64,7 @@ ChromelessWindow enables the user to write their own templates for the Title bu
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 Title="ChromelessWindow" Height="350" Width="525" MaximizeButtonTemplate="{StaticResource MaxTemplateKey}" 
-syncfusion:SkinStorage.VisualStyle="Metro"    x:Name="_chromelessWindow"    
+x:Name="_chromelessWindow"    
 xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
 <Grid>
 </Grid>
@@ -158,7 +158,7 @@ Then apply this style to the ChromelessWindow using Template Property
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 Title="ChromelessWindow" Height="350" Width="525" Template="{StaticResource ChromelessWindowTemplate}"   
-syncfusion:SkinStorage.VisualStyle="Metro" x:Name="_chromelessWindow"    
+x:Name="_chromelessWindow"    
 xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"  >
 </syncfusion:ChromelessWindow>
 
