@@ -311,7 +311,7 @@ Brush</td><td>
 Used to customize the major line label stroke in the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickLabelStroke.html">MinorTickLabelStroke</a></td><td>
+<a href="https://help.syncfusion.com/wpf/classic/schedule/timelineview#stroke-customization">MinorTickLabelStroke</a></td><td>
 Brush</td><td>
 Used to customize the minor line label stroke of the day, week, workweek and timeline views.</td></tr>
 <tr>
