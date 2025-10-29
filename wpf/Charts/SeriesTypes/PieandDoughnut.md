@@ -100,32 +100,30 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% highlight xaml %}
 
-    <Window.Resources>
-        <local:DataLabelTemplateConverter x:Key="DataLabelConverter"/>
-        <local:SegmentBrushConverter x:Key="BackgroundConverter"/>
+        <Window.Resources>
+            <local:DataLabelTemplateConverter x:Key="DataLabelConverter"/>
 
-        <DataTemplate x:Key="DataLabelTemplate">
-            <StackPanel Orientation="Vertical" Margin="5">
-                <TextBlock Text="{Binding Converter={StaticResource DataLabelConverter}}"                          
-                           Margin="3" Foreground="White">
-                </TextBlock>
-            </StackPanel>
-        </DataTemplate>
-    </Window.Resources>
+            <DataTemplate x:Key="DataLabelTemplate">
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="{Binding Converter={StaticResource DataLabelConverter}}"                          
+                            Margin="3" Foreground="White">
+                    </TextBlock>
+                </StackPanel>
+            </DataTemplate>
+        </Window.Resources>
 
-    <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"
-                     GroupMode="Value" GroupTo="1000" >
+            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"
+				   GroupMode="Value" GroupTo="1000" >
 
-        <chart:PieSeries.AdornmentsInfo>
-            <chart:ChartAdornmentInfo   ShowConnectorLine="True" 
-                                        ConnectorHeight="80" 
-                                        ShowLabel="True" 
-                                        LabelPosition="OutsideExtended"
-                                        LabelTemplate="{StaticResource DataLabelTemplate}"  
-                                        SegmentLabelContent="LabelContentPath">
-            </chart:ChartAdornmentInfo>
-        </chart:PieSeries.AdornmentsInfo>
-    </chart:PieSeries>
+                <chart:PieSeries.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo ShowConnectorLine="True" 
+                                              ConnectorHeight="80" 
+                                              ShowLabel="True" 
+                                              LabelTemplate="{StaticResource DataLabelTemplate}"  
+                                              SegmentLabelContent="LabelContentPath">
+                    </chart:ChartAdornmentInfo>
+                </chart:PieSeries.AdornmentsInfo>
+            </chart:PieSeries>
 
 {% endhighlight %}
 
@@ -144,32 +142,6 @@ The small segments in the pie chart can be grouped into the “others” categor
             };
 
             pieSeries.AdornmentsInfo = adornmentInfo;
-
-
-            public class DataLabelTemplateConverter : IValueConverter
-            {
-                public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-                {
-                    if (value is ChartPieAdornment adornment)
-                    {
-                        if (adornment.Item is CountryInfo model)
-                        {
-                           // Case 1: Single data label item
-                        }
-                        else if (adornment.Item is IEnumerable<object> group)
-                        {
-                           // Case 2: Grouped items (e.g., List<CountryInfo>)
-                        }
-                    }
-
-                    return value;
-                }
-
-                public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-                {
-                    throw new NotImplementedException();
-                }
-            }
 
 {% endhighlight %}
 
