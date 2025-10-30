@@ -100,6 +100,18 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% highlight xaml %}
 
+        <Window.Resources>
+            <local:DataLabelTemplateConverter x:Key="DataLabelConverter"/>
+
+            <DataTemplate x:Key="DataLabelTemplate">
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="{Binding Converter={StaticResource DataLabelConverter}}"                          
+                               Margin="3" Foreground="White">
+                    </TextBlock>
+                </StackPanel>
+            </DataTemplate>
+        </Window.Resources>
+
             <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"
 				   GroupMode="Value" GroupTo="1000" >
 
@@ -136,6 +148,8 @@ The small segments in the pie chart can be grouped into the “others” categor
 {% endtabs %}
 
 ![WPF Pie Chart with Grouping](Series_images/wpf-pie-chart-grouping.png)
+
+You can explore our KB article on showing adornment labels for grouped values in WPF Circular Chart to learn [`how to configure and display labels for grouped values`](https://support.syncfusion.com/kb/article/21684/how-to-show-adornment-labels-for-grouped-values-in-wpf-circular-chart) effectively.
 
 **Pie series with grouping (Mode - Angle)**
 
