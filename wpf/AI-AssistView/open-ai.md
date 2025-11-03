@@ -369,5 +369,5 @@ public class ViewTemplateSelector : DataTemplateSelector
 {% endhighlight %} 
 {% endtabs %}
 
-![WPF AI AssistView control open ai](aiassistview_images/wpf_aiassistview_openai1.png)
+![WPF AI AssistView control ViewTemplateSelector](aiassistview_images/wpf_aiassistview_openai1.png)
 
