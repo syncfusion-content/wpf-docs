@@ -15,7 +15,7 @@ This section explains the steps required to add the Wpf [SfAIAssistView](https:/
 
 ![WPF SfAIAssistView Structure](aiassistview_images/wpf_aiassistview_control_structure.png)
 
-## Adding WPF SfAIAssistview via xaml
+## Adding WPF SfAIAssistView via xaml
 
 1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
 2. Add reference to [Syncfusion.SfChat.Wpf](https://www.nuget.org/packages/Syncfusion.SfChat.Wpf) NuGet. 
@@ -43,7 +43,7 @@ This section explains the steps required to add the Wpf [SfAIAssistView](https:/
 {% endhighlight %}
 {% endtabs %}
 
-## Adding WPF SfAIAssistview via C#
+## Adding WPF SfAIAssistView via C#
 
 1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
 2. Add reference to [Syncfusion.SfChat.Wpf](https://www.nuget.org/packages/Syncfusion.SfChat.Wpf) NuGet. 
