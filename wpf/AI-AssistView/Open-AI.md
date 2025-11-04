@@ -211,95 +211,16 @@ Set the ViewModel as the DataContext for the AI AssistView or the parent window.
 ![WPF AI AssistView control open ai](aiassistview_images/wpf_aiassistview_openai.gif)
 
 ## Customize AI Response Rendering with ViewTemplateSelector in SfAIAssistView
+Use the [ViewTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_ViewTemplateSelector) property to assign a DataTemplateSelector that controls how messages (including AI responses) are rendered in SfAIAssistView. The selector can return different DataTemplates based on the message type or role (user/assistant/system), enabling rich presentations such as:
+- Markdown (via a Markdown viewer like MdXaml)
+- FlowDocument-based layouts
+- Images and custom visuals
+- HTML (via a WebBrowser control or third-party HTML renderer)
 
- ViewTemplateSelector allows you to control how AI responses are visually rendered in SfAIAssistView. By assigning a custom DataTemplate, you can format messages using markdown, HTML, or other visual layouts to enable rich, styled content in the message view.
-
-{% tabs %}
-{% highlight C# %}
-
-public class AIMessage : NotificationObject, ITextMessage
-{
-
-    private string solution;
-
-    /// <summary>
-    /// Gets or sets the text to be display as the message.
-    /// </summary>
-    public string Solution
-    {
-        get
-        {
-            return this.solution;
-        }
-        set
-        {
-            this.solution = value;
-            RaisePropertyChanged(nameof(Solution));
-        }
-    }
-
-    private Author author;
-
-    /// <summary>
-    /// Gets or sets the author to be display in the message.
-    /// </summary>
-    public Author Author
-    {
-        get { return author; }
-        set
-        {
-            author = value;
-            RaisePropertyChanged(nameof(Author));
-        }
-    }
-
-    private DateTime dateTime;
-
-    /// <summary>
-    /// Gets or sets the date and time details when the message was created.
-    /// </summary>
-    public DateTime DateTime
-    {
-        get { return dateTime; }
-        set
-        {
-            dateTime = value;
-            RaisePropertyChanged(nameof(DateTime));
-        }
-    }
-
-    private string text;
-
-    /// <summary>
-    /// Gets or sets the text to be display as the message.
-    /// </summary>
-    public string Text
-    {
-        get { return text; }
-        set { text = value; RaisePropertyChanged(nameof(Text)); }
-    }
-}
-
-public class ViewTemplateSelector : DataTemplateSelector
-{
-    public DataTemplate AITemplate { get; set; }
-
-    public override DataTemplate SelectTemplate(object item, DependencyObject container)
-    {
-        if (item is AIMessage)
-        {
-            return AITemplate;
-        }
-        return null;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
+This approach lets you tailor the appearance of assistant messages without modifying your data model.
 
 {% tabs %}
 {% highlight xaml %}
-
 <Page
     x:Class="GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -368,7 +289,87 @@ public class ViewTemplateSelector : DataTemplateSelector
     </Grid>
 </Page>
 
-{% endhighlight %} 
+{% endhighlight %}
+{% highlight C# %}
+
+public class ViewTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate AITemplate { get; set; }
+
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        if (item is AIMessage)
+        {
+            return AITemplate;
+        }
+        return null;
+    }
+}
+
+public class AIMessage : NotificationObject, ITextMessage
+{
+
+    private string solution;
+
+    /// <summary>
+    /// Gets or sets the text to be display as the message.
+    /// </summary>
+    public string Solution
+    {
+        get
+        {
+            return this.solution;
+        }
+        set
+        {
+            this.solution = value;
+            RaisePropertyChanged(nameof(Solution));
+        }
+    }
+
+    private Author author;
+
+    /// <summary>
+    /// Gets or sets the author to be display in the message.
+    /// </summary>
+    public Author Author
+    {
+        get { return author; }
+        set
+        {
+            author = value;
+            RaisePropertyChanged(nameof(Author));
+        }
+    }
+
+    private DateTime dateTime;
+
+    /// <summary>
+    /// Gets or sets the date and time details when the message was created.
+    /// </summary>
+    public DateTime DateTime
+    {
+        get { return dateTime; }
+        set
+        {
+            dateTime = value;
+            RaisePropertyChanged(nameof(DateTime));
+        }
+    }
+
+    private string text;
+
+    /// <summary>
+    /// Gets or sets the text to be display as the message.
+    /// </summary>
+    public string Text
+    {
+        get { return text; }
+        set { text = value; RaisePropertyChanged(nameof(Text)); }
+    }
+}
+
+{% endhighlight %}
 {% endtabs %}
 
 ![WPF AI AssistView control ViewTemplateSelector](aiassistview_images/wpf_aiassistview_openai1.png)
