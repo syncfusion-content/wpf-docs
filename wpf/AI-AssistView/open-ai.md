@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TypingIndicator in WPF AI AssistView control | Syncfusion
+title: Open-AI in WPF AI AssistView control | Syncfusion
 description: Learn about how to connect the AI AssistView control with OpenAI and chat gpt conversation experience.
 platform: wpf
 control: SfAIAssistView
