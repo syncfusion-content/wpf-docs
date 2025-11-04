@@ -210,7 +210,9 @@ Set the ViewModel as the DataContext for the AI AssistView or the parent window.
 
 ![WPF AI AssistView control open ai](aiassistview_images/wpf_aiassistview_openai.gif)
 
-## Customize Response using ViewTemplateSelector
+## Customize AI Response Rendering with ViewTemplateSelector in SfAIAssistView
+
+ ViewTemplateSelector allows you to control how AI responses are visually rendered in SfAIAssistView. By assigning a custom DataTemplate, you can format messages using markdown, HTML, or other visual layouts to enable rich, styled content in the message view.
 
 {% tabs %}
 {% highlight C# %}
