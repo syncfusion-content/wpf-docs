@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TypingIndicator in WPF AI AssistView control | Syncfusion
+title: Open-AI in WPF AI AssistView control | Syncfusion
 description: Learn about how to connect the AI AssistView control with OpenAI and chat gpt conversation experience.
 platform: wpf
 control: SfAIAssistView
@@ -209,3 +209,168 @@ Set the ViewModel as the DataContext for the AI AssistView or the parent window.
 {% endtabs %}
 
 ![WPF AI AssistView control open ai](aiassistview_images/wpf_aiassistview_openai.gif)
+
+## Customize AI Response Rendering with ViewTemplateSelector in SfAIAssistView
+Use the [ViewTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_ViewTemplateSelector) property to assign a DataTemplateSelector that controls how messages (including AI responses) are rendered in SfAIAssistView. The selector can return different DataTemplates based on the message type or role (user/assistant/system), enabling rich presentations such as:
+- Markdown (via a Markdown viewer like MdXaml)
+- FlowDocument-based layouts
+- Images and custom visuals
+- HTML (via a WebBrowser control or third-party HTML renderer)
+
+This approach lets you tailor the appearance of assistant messages without modifying your data model.
+
+{% tabs %}
+{% highlight xaml %}
+<Page
+    x:Class="GettingStarted.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GettingStarted"
+    xmlns:mdxam="clr-namespace:MdXaml;assembly=MdXaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Window.Resources>
+        <local:ViewTemplateSelector x:Key="viewTS">
+            <local:ViewTemplateSelector.AITemplate>
+                <DataTemplate>
+                    <Border Background="Transparent">
+                        <StackPanel>
+                            <Image Height="200" Width="500" 
+                                Source="statue-liberty.jpg"
+                                HorizontalAlignment="Left"/>
+                            <mdxam:MarkdownScrollViewer 
+                                Markdown="{Binding Text}" 
+                                Foreground="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"
+                                VerticalScrollBarVisibility="Auto"
+                                IsHitTestVisible="False"
+                                Padding="8">
+                                <mdxam:MarkdownScrollViewer.MarkdownStyle>
+                                    <Style TargetType="FlowDocument" BasedOn="{x:Static mdxam:MarkdownStyle.Standard}">
+                                        <Setter Property="FontSize" Value="12"/>
+                                        <Setter Property="FontFamily" Value="Segoe UI"/>
+                                        <Style.Resources>
+                                            <Style TargetType="Paragraph" x:Key="H1">
+                                                <Setter Property="FontSize" Value="20"/>
+                                                <Setter Property="FontWeight" Value="Bold"/>
+                                                <Setter Property="Margin" Value="0,0,0,8"/>
+                                            </Style>
+                                            <Style TargetType="Paragraph" x:Key="H2">
+                                                <Setter Property="FontSize" Value="16"/>
+                                                <Setter Property="FontWeight" Value="SemiBold"/>
+                                                <Setter Property="Margin" Value="0,8,0,4"/>
+                                            </Style>
+                                            <Style TargetType="Image">
+                                                <Setter Property="MaxWidth" Value="400"/>
+                                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                            </Style>
+                                        </Style.Resources>
+                                    </Style>
+                                </mdxam:MarkdownScrollViewer.MarkdownStyle>
+                            </mdxam:MarkdownScrollViewer>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </local:ViewTemplateSelector.AITemplate>
+        </local:ViewTemplateSelector>
+    </Window.Resources>
+    <Grid>
+     <Grid.DataContext>
+        <local:ViewModel/>
+     </Grid.DataContext>
+     <syncfusion:SfAIAssistView    CurrentUser="{Binding CurrentUser}"
+                                   Suggestions="{Binding Suggestion}"
+                                   ShowTypingIndicator="True"
+                                   TypingIndicator="{Binding TypingIndicator}"
+                                   Messages="{Binding Chats}"
+                                   ViewTemplateSelector="{StaticResource viewTS}"/>
+    </Grid>
+</Page>
+
+{% endhighlight %}
+{% highlight C# %}
+
+public class ViewTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate AITemplate { get; set; }
+
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        if (item is AIMessage)
+        {
+            return AITemplate;
+        }
+        return null;
+    }
+}
+
+public class AIMessage : NotificationObject, ITextMessage
+{
+
+    private string solution;
+
+    /// <summary>
+    /// Gets or sets the text to be display as the message.
+    /// </summary>
+    public string Solution
+    {
+        get
+        {
+            return this.solution;
+        }
+        set
+        {
+            this.solution = value;
+            RaisePropertyChanged(nameof(Solution));
+        }
+    }
+
+    private Author author;
+
+    /// <summary>
+    /// Gets or sets the author to be display in the message.
+    /// </summary>
+    public Author Author
+    {
+        get { return author; }
+        set
+        {
+            author = value;
+            RaisePropertyChanged(nameof(Author));
+        }
+    }
+
+    private DateTime dateTime;
+
+    /// <summary>
+    /// Gets or sets the date and time details when the message was created.
+    /// </summary>
+    public DateTime DateTime
+    {
+        get { return dateTime; }
+        set
+        {
+            dateTime = value;
+            RaisePropertyChanged(nameof(DateTime));
+        }
+    }
+
+    private string text;
+
+    /// <summary>
+    /// Gets or sets the text to be display as the message.
+    /// </summary>
+    public string Text
+    {
+        get { return text; }
+        set { text = value; RaisePropertyChanged(nameof(Text)); }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF AI AssistView control ViewTemplateSelector](aiassistview_images/wpf_aiassistview_openai1.png)
+
