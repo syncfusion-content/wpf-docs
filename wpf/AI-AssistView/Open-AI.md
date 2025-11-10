@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open-AI in WPF AI AssistView control | Syncfusion
+title: OpenAI in WPF AI AssistView control | Syncfusion
 description: Learn about how to connect the AI AssistView control with OpenAI and chat gpt conversation experience.
 platform: wpf
 control: SfAIAssistView
@@ -373,4 +373,3 @@ public class AIMessage : NotificationObject, ITextMessage
 {% endtabs %}
 
 ![WPF AI AssistView control ViewTemplateSelector](aiassistview_images/wpf_aiassistview_openai1.png)
-
