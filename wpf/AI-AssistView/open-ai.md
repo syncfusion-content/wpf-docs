@@ -373,4 +373,3 @@ public class AIMessage : NotificationObject, ITextMessage
 {% endtabs %}
 
 ![WPF AI AssistView control ViewTemplateSelector](aiassistview_images/wpf_aiassistview_openai1.png)
-
