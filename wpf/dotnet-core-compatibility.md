@@ -109,7 +109,7 @@ You can add the Syncfusion<sup>&reg;</sup> assembly references in one of the fol
 
 Refer [control dependencies](https://help.syncfusion.com/wpf/control-dependencies) section to know control and its NuGet to use in the application. After that, add the required NuGet as reference and then you can use the control from ToolBox. The ToolBox will show a list of available controls once you have installed the NuGet package.
 
-Refer [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) section to find more details about installing the NuGet package in your application.
+Refer [NuGet package](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages) section to find more details about installing the NuGet package in your application.
 
 ### Adding assembly references from installed location
 
