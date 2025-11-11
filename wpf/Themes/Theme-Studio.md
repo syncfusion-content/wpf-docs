@@ -274,40 +274,15 @@ Provide the theme name, in which the theme should be exported, and select the re
 
 ![Add Theme as Project for Theme Export](ThemeStudio_images/ThemeStudio-Themes-Folder.png)
 
-N> When running the exported project in .NET 8.0 or .NET 9.0 environments, you may encounter reference issues due to missing or incompatible assemblies. To resolve this, manually add references to the required assemblies from the appropriate framework installation path or NuGet packages. Refer path location: C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\ {product version}\precompiledassemblies\ {targetframework}\
+When running the exported single SDK-style theme project, you may encounter reference issues due to missing or incompatible assemblies across the targeted frameworks (4.6.2, .NET 8.0, .NET 9.0, and .NET 10). To resolve this, update the product version in the path specified in the <SyncfusionInstallLocation> tag of the exported .csproj theme project to match the installed product version, as shown in the image below. Reference path: C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{product version} 
+
+![Add Reference Path for Exported Theme Projects](ThemeStudio_images/Reference_Path.png)
 
 ### Generating theme assembly
 
-Let us see the step-by-step procedure for ensuring theme assembly generation for exported theme projects.
+Let us see the procedure for ensuring theme assembly generation for exported theme projects.
 
-**Step 1**
-
-The following exported theme project should be attached to corresponding target frameworks used in the WPF application.
-
-<table>
-<tr>
-<th>
-Target Framework</th><th>
-Solution Project</th></tr>
-<tr>
-<td>
-.Net 9.0</td><td>
-Syncfusion.Themes.Windows11LightYellow.WPF_NET90.csproj </td>
-</tr>
-<tr>
-<td>
-.Net 8.0</td><td>
-Syncfusion.Themes.Windows11LightYellow.WPF_NET80.csproj </td>
-</tr>
-<tr>
-<td>
-.Net Framework 4.6.2</td><td>
-Syncfusion.Themes.Windows11LightYellow.WPF_2017.csproj </td></tr>
-</table>
-
-**Step 2**
-
-Rebuild the exported theme project in `Release` mode to generate the theme assembly.  
+Rebuild the exported single SDK-Style theme project in `Release` mode to generate the theme assembly.  
 
 The export theme project has default `ThemeStudio.snk` key pair. If it is not required, use the already created private key pair by referring to the export theme project inside the application properties or [Create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) using Visual Studio if the private key pair was not created externally.
 
