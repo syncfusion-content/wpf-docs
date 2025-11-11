@@ -49,11 +49,11 @@ All the sample browser projects are configured as single SDK-style projects that
 
 When you click the `Explore Demo Source` button, the `net10.0-windows` entry will be automatically removed from the targets file if .NET 10 is not installed on your machine, preventing any compilation errors. 
 
-To use the `.NET 10 framework`, install the required SDK and add `net10.0-windows` to the <TargetFrameworks> tag in the `MultiTargeting.targets` file located at the Samples Location: D:\WPF31.2.9\WPF\31.2.9\SampleBrowser\targets\MultiTargeting.targets as shown in the image below. 
+To use the `.NET 10 framework`, install the required SDK and add `net10.0-windows` to the `<TargetFrameworks>` tag in the `MultiTargeting.targets` file located at the Samples Location: D:\WPF31.2.9\WPF\31.2.9\SampleBrowser\targets\MultiTargeting.targets as shown in the image below. 
 
 ![WPF TargetFrameworks](Guidetorunthesamples_images/TargetFrameworks-wpf.jpg)
 
-If you don’t have other frameworks installed and encounter compilation issues as a result, you can remove the unsupported framework from the <TargetFrameworks> tag in the same file and retain only the available ones to resolve the issue. 
+If you don’t have other frameworks installed and encounter compilation issues as a result, you can remove the unsupported framework from the `<TargetFrameworks>` tag in the same file and retain only the available ones to resolve the issue. 
 
 N> To run the individual control demos, please refer the instruction from [Running Individual Control Demos](https://github.com/syncfusion/wpf-demos#running-individual-control-demos). 
 
