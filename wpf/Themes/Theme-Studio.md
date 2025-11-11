@@ -274,6 +274,12 @@ Provide the theme name, in which the theme should be exported, and select the re
 
 ![Add Theme as Project for Theme Export](ThemeStudio_images/ThemeStudio-Themes-Folder.png)
 
+Until version 31.2.2, while exporting themes from Theme Studio, separate projects were created for each framework. Starting with version 31.2.9, themes are exported as a single SDK-style project that supports multiple frameworks: `.NET Framework 4.6.2`, `.NET 8.0`, `.NET 9.0`, and `.NET 10`. 
+
+When opening the exported theme project, the `.NET Framework 4.6.2` will be selected by default.  
+
+If any of the supported frameworks (`.NET Framework 4.6.2`, `.NET 8.0`, `.NET 9.0`, or `.NET 10`) are not installed on your machine, you can remove the unavailable framework from the <TargetFrameworks> tag in the `MultiTargeting.targets` file located at: [ D:\Windows11Light\targets\MultiTargeting.targets ].This will resolve any compilation issues caused by missing frameworks.  
+
 When running the exported single SDK-style theme project, you may encounter reference issues due to missing or incompatible assemblies across the targeted frameworks (4.6.2, .NET 8.0, .NET 9.0, and .NET 10). To resolve this, update the product version in the path specified in the <SyncfusionInstallLocation> tag of the exported .csproj theme project to match the installed product version, as shown in the image below. Reference path: C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{product version} 
 
 ![Add Reference Path for Exported Theme Projects](ThemeStudio_images/Reference_Path.png)
