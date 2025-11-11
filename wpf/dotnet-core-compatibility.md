@@ -24,10 +24,12 @@ Below table represents the supported Syncfusion<sup>&reg;</sup> Essential Studio
 <th>.NET 7.0<br/></th>
 <th>.NET 8.0<br/></th>
 <th>.NET 9.0<br/></th>
+<th>.NET 10.0<br/></th>
 </tr>
 
 <tr>
 <td>Earlier Version<br/></td>
+<td>No<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
@@ -41,6 +43,7 @@ From 20.4 (2022 Vol4) <br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
+<td>No<br/></td>
 </tr>
 
 <tr>
@@ -48,6 +51,7 @@ From 20.4 (2022 Vol4) <br/></td>
 From 21.1 (2023 Vol1) <br/></td>
 <td>Yes<br/></td>
 <td>Yes<br/></td>
+<td>No<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
 </tr>
@@ -59,6 +63,7 @@ From 23.2 (2023 Vol3 SP) <br/></td>
 <td>Yes<br/></td>
 <td>Yes<br/></td>
 <td>No<br/></td>
+<td>No<br/></td>
 </tr>
 
 <tr>
@@ -68,6 +73,7 @@ From 27.2 (2024 Vol3 SP) <br/></td>
 <td>Yes<br/></td>
 <td>Yes<br/></td>
 <td>Yes<br/></td>
+<td>No<br/></td>
 </tr>
 
 <tr>
@@ -75,6 +81,17 @@ From 27.2 (2024 Vol3 SP) <br/></td>
 From 29.1 (2025 Vol1) <br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+<td>No<br/></td>
+</tr>
+
+<tr>
+<td>
+From 31.2 (2025 Vol3 SP) <br/></td>
+<td>No<br/></td>
+<td>No<br/></td>
+<td>Yes<br/></td>
 <td>Yes<br/></td>
 <td>Yes<br/></td>
 </tr>
