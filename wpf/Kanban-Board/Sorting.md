@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in .NET WPF Kanban Board control | SfKanban | wpf | Syncfusion
-description: Learn here all about Sorting support in Syncfusion<sup>®</sup> Essential Studio .NET WPF Kanban Board (SfKanban) control and more. 
+title: Sorting in WPF Kanban Board control | SfKanban | wpf | Syncfusion
+description: Learn here all about Sorting support in Syncfusion<sup>®</sup> Essential Studio WPF Kanban Board (SfKanban) control and more. 
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
 
-# Card Item Sorting in .NET WPF Kanban (SfKanban)
+# Card Item Sorting in WPF Kanban (SfKanban)
 
 The Kanban control supports customizable card sorting within columns based on specific data fields such as `Priority`, `DueDate`, or `Status`. Sorting can be configured programmatically and updated dynamically at runtime using the following properties:
 
