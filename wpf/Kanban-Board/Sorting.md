@@ -240,15 +240,231 @@ The following code example illustrates how cards numeric property updated using 
 </kanban:SfKanban>
 
 {% endhighlight %}
-{% highlight C# hl_lines="2 6 7" %}
+{% highlight C# hl_lines="5 6 7 11 22 23" %}
 
+private KanbanCardItem selectedCard;
+private KanbanColumn? targetColumn;
+
+// Add the following lines in constructor
 this.kanban.ItemsSource = new SortingViewModel().Cards;
+this.kanban.CardDragStart += OnKanbanCardDragStart;
 this.kanban.CardDragEnd += OnKanbanCardDragEnd;
+
+private void OnKanbanCardDragStart(object sender, KanbanDragStartEventArgs e)
+{
+    this.selectedCard = e.SelectedCard;
+}
 
 private void OnKanbanCardDragEnd(object sender, KanbanDragEndEventArgs e)
 {
+    if (this.kanban == null || this.selectedCard == null || e.TargetColumn == null)
+    {
+        return;
+    }
+
     this.ApplySortingWithoutPositionChange(e);
-    this.kanban.RefreshKanbanColumn(e.TargetKey.ToString());
+    this.kanban.RefreshKanbanColumn(e.TargetKey.ToString());   
+}
+
+private void ApplySortingWithoutPositionChange(KanbanDragEndEventArgs e)
+{
+    var cardItems = e.TargetColumn.Items.Cast<KanbanCardItem>().ToList();
+    if (this.kanban == null || this.selectedCard == null || this.selectedCard.Content == null || e.TargetColumn == null || e.TargetKey == null || cardItems == null || !cardItems.Any()
+        || e.SelectedColumn == null || (e.SelectedColumn == e.TargetColumn && e.SelectedColumnIndex == e.TargetCardIndex))
+    {
+        return;
+    }
+
+    // Retrieve sorting configuration
+    var sortMappingPath = this.kanban.SortingMappingPath;
+    var sortingOrder = this.kanban.SortingOrder;
+    CardDetails cardDetails = this.selectedCard.Content as CardDetails;
+
+    // Proceed only if sorting path is defined
+    if (cardDetails == null || string.IsNullOrEmpty(sortMappingPath))
+    {
+        return;
+    }
+
+    // Extract items from the target colum
+    var targetColumnItems = cardItems.Where(card => card != null && card.Content is CardDetails).ToList();
+
+    // Sort items based on the sorting order
+    if (targetColumnItems.Count > 0)
+    {
+        Func<KanbanCardItem, object> keySelector = item => this.GetPropertyInfo(item.GetType(), sortMappingPath);
+        targetColumnItems = sortingOrder == KanbanSortingOrder.Ascending
+            ? targetColumnItems.OrderBy(item => keySelector(item) ?? 0).ToList()
+            : targetColumnItems.OrderByDescending(item => keySelector(item) ?? 0).ToList();
+    }
+
+    // Determine the index to insert the dragged card.
+    int currentCardIndex = e.TargetCardIndex;
+
+    if (e.SelectedColumn != e.TargetColumn)
+    {
+        cardDetails.Category = e.TargetKey.ToString();
+    }
+
+    if (currentCardIndex >= 0 && currentCardIndex <= targetColumnItems.Count)
+    {
+        targetColumnItems.Insert(currentCardIndex, this.selectedCard);
+    }
+    else
+    {
+        targetColumnItems.Add(this.selectedCard);
+        currentCardIndex = targetColumnItems.Count - 1;
+    }
+
+    // Update index property of all items using smart positioning logic
+    this.ApplySmartIndexUpdate(targetColumnItems, currentCardIndex);
+}
+
+private void ApplySmartIndexUpdate(List<KanbanCardItem> items, int droppedIndex)
+{
+    if (this.kanban == null || items == null || items.Count == 0)
+    {
+        return;
+    }
+
+    if (this.kanban.SortingOrder == KanbanSortingOrder.Ascending)
+    {
+        this.HandleAscendingIndexSorting(items, droppedIndex);
+        return;
+    }
+
+    this.HandleDescendingIndexSorting(items, droppedIndex);
+}
+
+private void HandleAscendingIndexSorting(List<KanbanCardItem> items, int currentCardIndex)
+{
+    int afterCardIndex = -1;
+    int lastItemIndex = -1;
+
+    // Get the index of the card after the insertion point
+    if (currentCardIndex < items.Count - 1)
+    {
+        var afterCard = items[currentCardIndex + 1];
+        afterCardIndex = GetCardIndex(afterCard?.Content) ?? -1;
+    }
+
+    for (int i = 0; i < items.Count; i++)
+    {
+        var item = items[i].Content;
+        if (item == null)
+        {
+            continue;
+        }
+
+        PropertyInfo propertyInfo = this.GetPropertyInfo(item.GetType(), "Index");
+        if (propertyInfo == null)
+        {
+            continue;
+        }
+
+        int itemIndex = Convert.ToInt32(propertyInfo.GetValue(item) ?? 0);
+        bool isFirstItem = i == 0;
+        if (isFirstItem)
+        {
+            // If the inserted card is at the beginning, assign a smart index
+            if (currentCardIndex == 0)
+            {
+                lastItemIndex = afterCardIndex > 1 ? afterCardIndex - 1 : 1;
+                propertyInfo.SetValue(item, lastItemIndex);
+            }
+            else
+            {
+                lastItemIndex = itemIndex;
+            }
+        }
+        else
+        {
+            // Increment index for subsequent items
+            lastItemIndex++;
+            propertyInfo.SetValue(item, lastItemIndex);
+        }
+    }
+}
+
+private void HandleDescendingIndexSorting(List<KanbanCardItem> items, int currentCardIndex)
+{
+    int beforeCardIndex = -1;
+    int lastItemIndex = -1;
+
+    // Get the index of the card before the insertion point
+    if (currentCardIndex > 0 && currentCardIndex < items.Count)
+    {
+        var cardBefore = items[currentCardIndex - 1];
+        beforeCardIndex = GetCardIndex(cardBefore?.Content) ?? -1;
+    }
+
+    for (int i = items.Count - 1; i >= 0; i--)
+    {
+        var item = items[i].Content;
+        if (item == null)
+        {
+            continue;
+        }
+
+        PropertyInfo propertyInfo = this.GetPropertyInfo(item.GetType(), "Index");
+        if (propertyInfo == null)
+        {
+            continue;
+        }
+
+        int itemIndex = Convert.ToInt32(propertyInfo.GetValue(item) ?? 0);
+        bool isLastItem = i == items.Count - 1;
+        if (isLastItem)
+        {
+            // If the inserted card is at the end, assign a smart index
+            if (currentCardIndex == items.Count - 1)
+            {
+                lastItemIndex = beforeCardIndex > 1 ? beforeCardIndex - 1 : 1;
+                propertyInfo.SetValue(item, lastItemIndex);
+            }
+            else
+            {
+                lastItemIndex = itemIndex;
+            }
+        }
+        else
+        {
+            lastItemIndex++;
+            propertyInfo.SetValue(item, lastItemIndex);
+        }
+    }
+}
+
+private int? GetCardIndex(object cardDetails)
+{
+    if (cardDetails == null)
+    {
+        return null;
+    }
+
+    PropertyInfo propertyInfo = this.GetPropertyInfo(cardDetails.GetType(), "Index");
+    if (propertyInfo == null)
+    {
+        return null;
+    }
+
+    var indexValue = propertyInfo.GetValue(cardDetails);
+    if (indexValue != null)
+    {
+        return Convert.ToInt32(indexValue);
+    }
+
+    return null;
+}
+
+private PropertyInfo GetPropertyInfo(Type type, string key)
+{
+    return this.GetPropertyInfoCustomType(type, key);
+}
+
+private PropertyInfo GetPropertyInfoCustomType(Type type, string key)
+{
+    return type.GetProperty(key);
 }
 
 {% endhighlight %}
