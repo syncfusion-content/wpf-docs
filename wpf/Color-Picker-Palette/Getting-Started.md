@@ -290,7 +290,7 @@ colorPickerPalette.Height = 40;
 
 ![WPF Color Picker Palette with more color panel](getting-started_images/wpf-color-picker-palette-window.gif)
 
-N> We can show or hide all color panels. Refer the [Dealing with ColorPickerPalette](https://help.syncfusion.com/wpf/color-picker-palette/dealing-with-colorpickerpalette) page that explains the panel visibility support.
+N> We can show or hide all color panels. Refer the [Dealing with ColorPickerPalette](https://help.syncfusion.com/wpf/color-picker-palette/working-with-colorpickerpalette) page that explains the panel visibility support.
 
 ## Reset selected color
 
