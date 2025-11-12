@@ -49,7 +49,6 @@ N> To run the individual control demos, please refer the instruction from [Runni
 
 ## Online Samples
 
-* Download and install `.NetCore` demos from [App Center](https://install.appcenter.ms/orgs/syncfusion-demos/apps/wpf-demos/distribution_groups/release).
 * Download and install `.Net Framework` demos from [Microsoft Store](https://apps.microsoft.com/detail/9n99kdhrff6g?hl=en-US&gl=US).
 
 ## Download demos from online (Clone from github repository)
