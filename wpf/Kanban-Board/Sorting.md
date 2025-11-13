@@ -64,13 +64,13 @@ This example demonstrates how card positions are updated based on sorting config
                         <TextBlock Text="•" 
                                    FontSize="14" 
                                    FontWeight="Bold" 
-                                   Foreground="Orange"
+                                   Foreground="#FF0000"
                                    VerticalAlignment="Center" 
                                    HorizontalAlignment="Center" />
                         <TextBlock Text="{Binding Priority}" 
                                    FontSize="14" 
                                    FontWeight="Bold" 
-                                   Foreground="Orange"
+                                   Foreground="#003366"
                                    VerticalAlignment="Center" 
                                    HorizontalAlignment="Left" 
                                    Height="20" />
@@ -153,12 +153,12 @@ public class SortingViewModel
     public ObservableCollection<CardDetails> Cards { get; set; }
 }
 
+{% endhighlight %}
+{% endtabs %}
+
 N> 
  * To apply sorting after a drop operation, handle the `CardDragEnd` event and explicitly call the `RefreshKanbanColumn` method. This ensures the column updates to reflect the new card order based on the defined sorting logic.
  * When using a custom data model, the default card UI is not applicable. To render the card content, you must define a custom `DataTemplate` using the `CardTemplate` property.
-
-{% endhighlight %}
-{% endtabs %}
 
 ### Index-Based Sorting
 
