@@ -156,6 +156,8 @@ public class SortingViewModel
 {% endhighlight %}
 {% endtabs %}
 
+![custom-field-sorting-in-wpf-kanban](SfKanban_images/custom-field-sorting-in-wpf-kanban.gif)
+
 N> 
  * To apply sorting after a drop operation, handle the `CardDragEnd` event and explicitly call the `RefreshKanbanColumn` method. This ensures the column updates to reflect the new card order based on the defined sorting logic.
  * When using a custom data model, the default card UI is not applicable. To render the card content, you must define a custom `DataTemplate` using the `CardTemplate` property.
@@ -504,6 +506,8 @@ public class SortingViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+![index-based-sorting-in-wpf-kanban](SfKanban_images/index-based-sorting-in-wpf-kanban.gif)
 
 N> 
  * The Index-based sorting can be achieved at the sample level after a drag-and-drop action. To implement this handle the `CardDragEnd` event, access the items in the target column using `e.TargetColumn.Items`, and update the numeric field used for sorting to maintain a continuous order. Finally, call `RefreshKanbanColumn` method to update the UI with the new order.
