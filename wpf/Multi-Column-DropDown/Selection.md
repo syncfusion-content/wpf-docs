@@ -19,11 +19,11 @@ By default, you can select only one item at a time from the dropdown, as the def
 
 {% tabs %}
 {% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnDropDown"
-                         ItemsSource="{Binding Orders}"
-						 ValueMember="CustomerID"
-                         DisplayMember="CustomerName"
-                         SelectionMode="Single">
+<syncfusion:SfMultiColumnDropDownControl  x:Name="MultiColumnDropDown" 
+                                          ItemsSource="{Binding Orders}" 
+                                          ValueMember="CustomerID"
+                                          DisplayMember="CustomerName"
+                                          SelectionMode="Single">
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 {% highlight c# %}
@@ -47,11 +47,11 @@ You can select multiple rows at same time by setting [SelectionMode](https://hel
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnDropDown"
-                         ItemsSource="{Binding Orders}"
-						 ValueMember="CustomerID"
-                         DisplayMember="CustomerName"
-                         SelectionMode="Multiple">
+<syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnDropDown" 
+                                         ItemsSource="{Binding Orders}"
+                                         ValueMember="CustomerID"
+                                         DisplayMember="CustomerName"
+                                         SelectionMode="Multiple">
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 {% highlight c# %}
@@ -73,12 +73,12 @@ By default, selected values in the editor are separated by `;`. You can change t
 
 {% tabs %}
 {% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnDropDown"
-                         ItemsSource="{Binding Orders}"
-                         SelectionMode="Multiple"
-						 ValueMember="CustomerID"
-                         DisplayMember="CustomerName"
-                         SeparatorString="-">            
+<syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnDropDown" 
+                                         ItemsSource="{Binding Orders}"
+                                         SelectionMode="Multiple"
+                                         ValueMember="CustomerID"
+                                         DisplayMember="CustomerName"
+                                         SeparatorString="-">            
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 {% highlight c# %}
@@ -133,7 +133,7 @@ xmlns:interactivity="http://schemas.microsoft.com/expression/2010/interactivity"
     <interactivity:Interaction.Triggers>
         <interactivity:EventTrigger EventName="PopupOpening">
             <interactivity:InvokeCommandAction 
-			        Command="{Binding Path=DataContext.PopupOpening, ElementName=MultiColumnDropDown}"
+                    Command="{Binding Path=DataContext.PopupOpening, ElementName=MultiColumnDropDown}"
                     CommandParameter="{Binding ElementName=MultiColumnDropDown}" />
         </interactivity:EventTrigger>
     </interactivity:Interaction.Triggers>

@@ -35,18 +35,13 @@ As an example of this feature, consider a simple scenario where the SfMultiColum
 <Window.DataContext>
 
   <local:Viewmodel/>
-
+  
 </Window.DataContext>
 
-
-
-<syncfusion:SfMultiColumnDropDownControl AllowAutoComplete="True"
-
-DisplayMember="Name"    
-
-ItemsSource="{Binding GridItemSource}"
-
-ValueMember="Title" />
+<syncfusion:SfMultiColumnDropDownControl  AllowAutoComplete="True" 
+                                          DisplayMember="Name"  
+                                          ItemsSource="{Binding GridItemSource}" 
+                                          ValueMember="Title" />
 {% endhighlight %}
 
 In the above code example, AutoCompletion is enabled .It gives the matching suggestion from the collection based on the input as illustrated in the following screenshot.
