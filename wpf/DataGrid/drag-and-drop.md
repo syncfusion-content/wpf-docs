@@ -179,9 +179,12 @@ this.sfDataGrid.RowDragDropController.DragStart += RowDragDropController_DragSta
 
 private void RowDragDropController_DragStart(object sender, Syncfusion.UI.Xaml.Grid.GridRowDragStartEventArgs e)
 {
-    var recordIndex = e.TargetRecord;
-
-    if ((int)recordIndex > 5)
+    var records = e.DraggingRecords;
+    var orders = records[0] as Orders;
+    // You can restrict the dragging for certain rows based on the record value also. 
+    var rowIndex = this.sfDataGrid.ResolveToRowIndex(orders);
+    var recordIndex = this.sfDataGrid.ResolveToRecordIndex(rowIndex);
+    if (recordIndex > 5)
         e.Handled = true;
 }
 
@@ -198,13 +201,8 @@ this.sfDataGrid.RowDragDropController.Drop += RowDragDropController_Drop;
 
 private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 {
-    var record = e.TargetRecord;
-    if (record == null)
-        return;
-    var orders = (record as RecordEntry).Data as Orders;
-    // You can restrict the dropping for certain rows based on the target record value also. 
-    var rowIndex = this.sfDataGrid.ResolveToRowIndex(orders);
-    var recordIndex = this.sfDataGrid.ResolveToRecordIndex(rowIndex);
+    int recordIndex = (int)e.TargetRecord;
+
     if (recordIndex > 5)
         e.Handled = true;
 }

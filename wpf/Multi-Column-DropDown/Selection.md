@@ -19,7 +19,7 @@ By default, you can select only one item at a time from the dropdown, as the def
 
 {% tabs %}
 {% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl  x:Name="MultiColumnDropDown" 
+<syncfusion:SfMultiColumnDropDownControl  x:Name="sfMultiColumn" 
                                           ItemsSource="{Binding Orders}" 
                                           ValueMember="CustomerID"
                                           DisplayMember="CustomerName"
@@ -47,7 +47,7 @@ You can select multiple rows at same time by setting [SelectionMode](https://hel
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnDropDown" 
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn" 
                                          ItemsSource="{Binding Orders}"
                                          ValueMember="CustomerID"
                                          DisplayMember="CustomerName"
@@ -73,7 +73,7 @@ By default, selected values in the editor are separated by `;`. You can change t
 
 {% tabs %}
 {% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnDropDown" 
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn" 
                                          ItemsSource="{Binding Orders}"
                                          SelectionMode="Multiple"
                                          ValueMember="CustomerID"
@@ -109,10 +109,10 @@ xmlns:interactivity="http://schemas.microsoft.com/expression/2010/interactivity"
             <TextBox x:Name="searchTextBox" Margin="3" >
                 <interactivity:Interaction.Triggers>
                     <interactivity:EventTrigger EventName="TextChanged">
-                        <interactivity:InvokeCommandAction Command="{Binding Path=DataContext.TextChanged, Source={x:Reference Name=MultiColumnDropDown}}" >
+                        <interactivity:InvokeCommandAction Command="{Binding Path=DataContext.TextChanged, Source={x:Reference Name=sfMultiColumn}}" >
                             <interactivity:InvokeCommandAction.CommandParameter>
                                 <MultiBinding Converter="{StaticResource multiConverter}">
-                                    <Binding Source="{x:Reference Name=MultiColumnDropDown}"/>
+                                    <Binding Source="{x:Reference Name=sfMultiColumn}"/>
                                     <Binding RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=TextBox}"/>
                                 </MultiBinding>
                             </interactivity:InvokeCommandAction.CommandParameter>
@@ -124,7 +124,7 @@ xmlns:interactivity="http://schemas.microsoft.com/expression/2010/interactivity"
     </DataTemplate>
 </Window.Resources>
 	
-<syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnDropDown"                                        
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"                                        
                                          DisplayMember="Title"
                                          HeaderTemplate="{StaticResource headerTemplate}"
                                          ItemsSource="{Binding MoviesLists}" 
@@ -133,8 +133,8 @@ xmlns:interactivity="http://schemas.microsoft.com/expression/2010/interactivity"
     <interactivity:Interaction.Triggers>
         <interactivity:EventTrigger EventName="PopupOpening">
             <interactivity:InvokeCommandAction 
-                    Command="{Binding Path=DataContext.PopupOpening, ElementName=MultiColumnDropDown}"
-                    CommandParameter="{Binding ElementName=MultiColumnDropDown}" />
+                    Command="{Binding Path=DataContext.PopupOpening, ElementName=sfMultiColumn}"
+                    CommandParameter="{Binding ElementName=sfMultiColumn}" />
         </interactivity:EventTrigger>
     </interactivity:Interaction.Triggers>
 </syncfusion:SfMultiColumnDropDownControl>
