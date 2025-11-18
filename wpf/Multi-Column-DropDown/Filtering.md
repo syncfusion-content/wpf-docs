@@ -15,7 +15,7 @@ By default, drop down list is filtered based on `SearchCondition.StartsWith` con
 
 {% tabs %}
 {% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn "
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
                                          Width="175"
                                          Height="30"
                                          AutoGenerateColumns="False"
@@ -79,8 +79,8 @@ public class CustomMultiColumnControl : SfMultiColumnDropDownControl
         var _item = item as GrossingMoviesList;
         var result = (_item.Title.Contains(this.SearchText)) || (_item.Cast.Contains(this.SearchText));
         return result;
-        }
-      }
+    }
+}
 {% endhighlight %}
 {% highlight xml %}
 <local:CustomMultiColumnControl x:Name="sfMultiColumn"

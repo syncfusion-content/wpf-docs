@@ -113,24 +113,24 @@ You can access the text displayed in the Textbox by using [SfMultiColumnDropDown
 <Grid>
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="400" />
-            <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
-<syncfusion:SfMultiColumnDropDownControl x:Name=”sfmultiColumn”
-                                         Width=”175”
-                                         Height=”30”
+    <syncfusion:SfMultiColumnDropDownControl x:Name="sfmultiColumn"
+                                         Width="175"
+                                         Height="30"
                                          Grid.Column="0"
-                                         SelectedIndex=”0”
-                                         DisplayMember=”Cast”
-                                         ValueMember=”Title”
-                                         ItemsSource=”{Binding Orders}” />
+                                         SelectedIndex="0"
+                                         DisplayMember="Cast"
+                                         ValueMember="Title"
+                                         ItemsSource="{Binding Orders}" />
         <StackPanel Grid.Column="1" Margin="0,100,0,0">
-    <TextBlock FontSize="16" Text="MultiColumnDropDownControl text " />
-    <TextBlock FontSize="22"
+            <TextBlock FontSize="16" Text="MultiColumnDropDownControl text " />
+            <TextBlock FontSize="22"
                FontWeight="Bold"
                Text="{Binding ElementName= sfmultiColumn,
                               Mode=TwoWay,
                               Path=Text}" />    
-</StackPanel>
+        </StackPanel>
 </Grid>
 {% endhighlight %}
 {% highlight c# %}

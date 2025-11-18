@@ -201,13 +201,8 @@ this.sfDataGrid.RowDragDropController.Drop += RowDragDropController_Drop;
 
 private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 {
-    var record = e.TargetRecord;
-    if (record == null)
-        return;
-    var orders = (record as RecordEntry).Data as Orders;
-    // You can restrict the dropping for certain rows based on the target record value also. 
-    var rowIndex = this.sfDataGrid.ResolveToRowIndex(orders);
-    var recordIndex = this.sfDataGrid.ResolveToRecordIndex(rowIndex);
+    int recordIndex = (int)e.TargetRecord;
+    //You can restrict the dropping for certain rows based on the target record index.
     if (recordIndex > 5)
         e.Handled = true;
 }

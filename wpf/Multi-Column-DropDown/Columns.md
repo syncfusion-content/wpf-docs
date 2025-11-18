@@ -43,9 +43,9 @@ SfMultiColumnDropDownControl control allows you to define the columns manually b
 {% highlight c# %}
 SfMultiColumnDropDownControl sfMultiColumn = new SfMultiColumnDropDownControl();
 sfMultiColumn.AutoGenerateColumns = false;
-sfMultiColumn.Columns.Add(new GridCurrencyColumn() { MappingName = “OrderID” });
-sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “CustomerID” });
-sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
+sfMultiColumn.Columns.Add(new GridCurrencyColumn() { MappingName = "OrderID" });
+sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = "CustomerID" });
+sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = "Country" });
 {% endhighlight %}
 {% endtabs %}
 
