@@ -29,7 +29,7 @@ By default, you can select only one item at a time from the dropdown, as the def
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
 
-this.MultiColumnDropDown.SelectionMode = DropDownSelectionMode.Single;
+this.sfMultiColumn.SelectionMode = DropDownSelectionMode.Single;
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,7 +57,7 @@ You can select multiple rows at same time by setting [SelectionMode](https://hel
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
 
-this.MultiColumnDropDown.SelectionMode = DropDownSelectionMode.Multiple;
+this.sfMultiColumn.SelectionMode = DropDownSelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
@@ -84,7 +84,7 @@ By default, selected values in the editor are separated by `;`. You can change t
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
 
-this.MultiColumnDropDown.SeparatorString = "-";
+this.sfMultiColumn.SeparatorString = "-";
 {% endhighlight %}
 {% endtabs %}
 
@@ -219,7 +219,7 @@ You can handle the selection operations in SfMultiColumnDropDownControl by using
 
 {% tabs %}
 {% highlight c# %}
-MultiColumnDropDown.SelectionChanged += MultiColumnDropDown_SelectionChanged;
+sfMultiColumn.SelectionChanged += MultiColumnDropDown_SelectionChanged;
 
 void MultiColumnDropDown_SelectionChanged(object sender, Syncfusion.UI.Xaml.Grid.SelectionChangedEventArgs args)
 {
