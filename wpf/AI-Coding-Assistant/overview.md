@@ -66,5 +66,5 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant is desi
 
 ## See also
 
-* Add the **SyncfusionWPFAssistant** MCP Server to an MCP-enabled client.
+* Add the **SyncfusionWPFAssistant MCP Server** to an MCP-enabled client.
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> WPF Documentation](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf).
