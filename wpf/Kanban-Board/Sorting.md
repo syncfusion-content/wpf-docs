@@ -158,6 +158,9 @@ public class SortingViewModel
 
 ![custom-field-sorting-in-wpf-kanban](SfKanban_images/custom-field-sorting-in-wpf-kanban.gif)
 
+N>
+[View sample in GitHub](https://github.com/SyncfusionExamples/wpf-kanban-examples/tree/master/CustomFieldSorting)
+
 N> 
  * To apply sorting after a drop operation, handle the [CardDragEnd](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragEnd) event and explicitly call the [RefreshKanbanColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_RefreshKanbanColumn_System_String_) method. This ensures the column updates to reflect the new card order based on the defined sorting logic.
  * When using a custom data model, the default card UI is not applicable. To render the card content, you must define a custom `DataTemplate` using the [CardTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) property.
@@ -508,6 +511,9 @@ public class SortingViewModel
 {% endtabs %}
 
 ![index-based-sorting-in-wpf-kanban](SfKanban_images/index-based-sorting-in-wpf-kanban.gif)
+
+N>
+[View sample in GitHub](https://github.com/SyncfusionExamples/wpf-kanban-examples/tree/master/IndexBasedSorting)
 
 N> 
  * The Index-based sorting can be achieved at the sample level after a drag-and-drop action. To implement this handle the [CardDragEnd](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragEnd) event, access the items in the target column using `e.TargetColumn.Items`, and update the numeric field used for sorting to maintain a continuous order. Finally, call [RefreshKanbanColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_RefreshKanbanColumn_System_String_) method to update the UI with the new order.
