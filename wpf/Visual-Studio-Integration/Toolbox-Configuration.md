@@ -39,15 +39,11 @@ To add the Syncfusion® WPF components via the Syncfusion Toolbox Installer, per
 
    The following options are available in Toolbox Configuration:
 
-   * Install VS2005 – Configures Framework 2.0 Syncfusion controls in VS 2005 toolbox.
-   * Install VS2008 – Configures Framework 3.5 Syncfusion controls in VS 2008 toolbox.
-   * Install VS2010 – Configures Framework 4.0 Syncfusion controls in VS 2010 toolbox.
-   * Install VS2012 – Configures Framework 4.5 Syncfusion controls in VS 2012 toolbox.
-   * Install VS2013 – Configures Framework 4.5.1 Syncfusion controls in VS 2013 toolbox.
-   * Install VS2015 – Configures Framework 4.6 Syncfusion controls in VS 2015 toolbox.
-   * Install VS2017 – Configures Framework 4.6 Syncfusion controls in VS 2017 toolbox.
-   * Install VS2019 – Configures Framework 4.6 Syncfusion controls in VS 2019 toolbox
-   * Install VS2022 – Configures Framework 4.6 Syncfusion controls in VS 2022 toolbox.
+   * Install VS2015 – Configures Framework 4.6.2 Syncfusion controls in VS 2015 toolbox.
+   * Install VS2017 – Configures Framework 4.6.2 Syncfusion controls in VS 2017 toolbox.
+   * Install VS2019 – Configures Framework 4.6.2 Syncfusion controls in VS 2019 toolbox
+   * Install VS2022 – Configures Framework 4.6.2 Syncfusion controls in VS 2022 toolbox.
+   * Install VS2026 – Configures Framework 4.6.2 Syncfusion controls in VS 2026 toolbox.
    
     N> You can also configure Syncfusion controls from a lower version Framework assembly to higher version of Visual Studio.
    
@@ -59,12 +55,20 @@ To add the Syncfusion® WPF components via the Syncfusion Toolbox Installer, per
    N> * If your installed controls are not reflected properly in the Visual Studio Toolbox, you'll have to reset the Toolbox.
    * This tool configures only the controls that are located under {Installed Location}\Assemblies\{Framework version}. 
 
+## Configuring toolbox for WPF in Visual Studio 2026
+
+From 2025 Volume 3 SP 2, Syncfusion® started providing toolbox support for .NET Framework in Visual Studio 2026 Toolbox. After installing the Syncfusion® WPF installer, Syncfusion® controls will be automatically configured in the Visual Studio 2026 toolbox for WPF projects.
+
 ## Configuring toolbox for WPF in Visual Studio 2022   
 
 From 2021 Volume 4, Syncfusion® started providing toolbox support for .NET Framework in Visual Studio 2022 Toolbox. After installing the Syncfusion® WPF installer, Syncfusion® controls will be automatically configured in the Visual Studio 2022 toolbox for WPF projects.
 
 N> * Syncfusion® WPF .NET 5.0 controls will be compatible with .NET 6.0, on installing the Syncfusion® WPF installer, our .NET 5.0 controls will be configured the toolbox for .NET 6.0 projects too.
    
+## Configuring toolbox for WPF .NET 8.0\9.0\10.0 projects
+
+From 2025 Volume 3 SP 2 Release, Syncfusion® started providing toolbox support for WPF .NET 8.0\9.0\10.0 framework in Visual Studio 2026. Syncfusion® controls will be automatically configured in the Visual Studio 2026 toolbox for WPF .NET 8.0\9.0\10.0 projects.
+
 ## Configuring toolbox for WPF .NET 5.0 projects
 
 From 2021 Volume 1, Syncfusion® started providing toolbox support for the WPF .NET 5.0 framework in Visual Studio. After installing the Syncfusion® WPF installer, Syncfusion® controls will be automatically configured in the Visual Studio toolbox for WPF.NET 5.0 projects.
