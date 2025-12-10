@@ -65,7 +65,7 @@ The Syncfusion WPF Data Grid delivers fast, flexible tables for large datasets w
 #SyncfusionWPFAssistant How can I dynamically configure multicolumn layout with filtering and sorting?
 {% endpromptcard %}
 {% promptcard Drag and drop support %}
-#SyncfusionWPFAssistant How to Drag and Drop a Row in WPF DataGrid??
+#SyncfusionWPFAssistant How to Drag and Drop a Row in WPF DataGrid?
 {% endpromptcard %}
 {% endpromptcards %}
 
