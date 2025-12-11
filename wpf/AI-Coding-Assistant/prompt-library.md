@@ -90,7 +90,7 @@ The Syncfusion WPF Chart suite offers versatile visualizations across many serie
 #SyncfusionWPFAssistant What chart types are available in Syncfusion WPF Charts, and how to configure them?
 {% endpromptcard %}
 {% promptcard Markers and Data Labels %}
-#SyncfusionWPFAssistant How can I display markers and data labels on a line chart in .NET MAUI?
+#SyncfusionWPFAssistant How can I display markers and data labels on a line chart in WPF?
 {% endpromptcard %}
 {% promptcard Zooming and Panning %}
 #SyncfusionWPFAssistant How to enable zooming and panning in WPF Charts for large datasets?
