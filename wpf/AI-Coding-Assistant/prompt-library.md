@@ -73,6 +73,9 @@ The Syncfusion WPF DataGrid provides fast, flexible tables for large datasets wi
 {% promptcard Drag and Drop Support %}
 #SyncfusionWPFAssistant How to enable row drag-and-drop in the Syncfusion WPF DataGrid?
 {% endpromptcard %}
+{% promptcard Styling and Conditional Formatting %}
+#SyncfusionWPFAssistant Customize cell and header styles and apply conditional formatting based on data values.
+{% endpromptcard %}
 {% endpromptcards %}
 
 ### Chart
