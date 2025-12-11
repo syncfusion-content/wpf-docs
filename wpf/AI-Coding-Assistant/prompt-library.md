@@ -25,195 +25,246 @@ Before starting, make sure your MCP Server is set up and running.
 
 ### Grid
 
-The Syncfusion WPF Data Grid delivers fast, flexible tables for large datasets with built-in interactivity.
+The Syncfusion WPF DataGrid provides fast, flexible tables for large datasets with rich built-in interactivity.
 
 {% promptcards %}
 {% promptcard Paging and Sorting %}
-#SyncfusionWPFAssistant How do I enable paging and sorting in the Syncfusion WPF Grid?
+#SyncfusionWPFAssistant How to enable paging and sorting in the Syncfusion WPF DataGrid?
 {% endpromptcard %}
 {% promptcard Grouping and Filtering %}
-#SyncfusionWPFAssistant Show me an example of grouping and filtering data in the Grid component.
+#SyncfusionWPFAssistant Show me an example of grouping and filtering data in the Syncfusion WPF DataGrid.
 {% endpromptcard %}
 {% promptcard CRUD Operations %}
-#SyncfusionWPFAssistant What’s the code to implement full CRUD operations in Syncfusion WPF Grid?
+#SyncfusionWPFAssistant What’s the code to implement full CRUD operations in the Syncfusion WPF DataGrid?
 {% endpromptcard %}
-{% promptcard Grid Export to PDF and Excel %}
-#SyncfusionWPFAssistant How to export data to PDF and Excel in syncfusion WPF Grid?
+{% promptcard Export to PDF and Excel %}
+#SyncfusionWPFAssistant How to export DataGrid content to PDF and Excel in Syncfusion WPF?
 {% endpromptcard %}
 {% promptcard Virtual Scrolling %}
-#SyncfusionWPFAssistant How do I configure virtual scrolling for large datasets in the Grid?
+#SyncfusionWPFAssistant How to configure virtual scrolling for large datasets in the DataGrid?
 {% endpromptcard %}
 {% promptcard Multicolumn Grid Setup %}
-#SyncfusionWPFAssistant Create a multicolumn Grid to display product details with sorting and filtering.
+#SyncfusionWPFAssistant Create a multi-column DataGrid to display product details with sorting and filtering.
 {% endpromptcard %}
 {% promptcard Chat Integration %}
-#SyncfusionWPFAssistant How can I integrate a chat widget inside each row of the Syncfusion Grid?
+#SyncfusionWPFAssistant How can I integrate a chat widget inside each row of the Syncfusion WPF DataGrid?
 {% endpromptcard %}
 {% promptcard Advanced Grid Features %}
-#SyncfusionWPFAssistant Show me a Grid with paging, sorting, grouping, filtering, and virtual scrolling
+#SyncfusionWPFAssistant Show me a DataGrid with paging, sorting, grouping, filtering, and virtual scrolling.
 {% endpromptcard %}
-{% promptcard Troubleshooting Grid Export %}
-#SyncfusionWPFAssistant Why isn’t my Grid exporting to PDF and Excel correctly?
+{% promptcard Troubleshooting Export %}
+#SyncfusionWPFAssistant Why isn’t my DataGrid exporting to PDF or Excel correctly?
 {% endpromptcard %}
 {% promptcard Inline Editing %}
-#SyncfusionWPFAssistant How do I enable inline editing for CRUD operations in the Grid?
+#SyncfusionWPFAssistant How to enable inline editing for CRUD operations in the DataGrid?
 {% endpromptcard %}
 {% promptcard Custom Toolbar %}
-#SyncfusionWPFAssistant Add custom toolbar buttons for PDF and Excel export in the Grid.
+#SyncfusionWPFAssistant Add custom toolbar buttons for PDF and Excel export in the DataGrid.
 {% endpromptcard %}
 {% promptcard Dynamic Column Configuration %}
-#SyncfusionWPFAssistant How can I dynamically configure multicolumn layout with filtering and sorting?
+#SyncfusionWPFAssistant How can I dynamically configure a multi-column layout with filtering and sorting?
 {% endpromptcard %}
-{% promptcard Drag and drop support %}
-#SyncfusionWPFAssistant How to Drag and Drop a Row in WPF DataGrid?
+{% promptcard Drag and Drop Support %}
+#SyncfusionWPFAssistant How to enable row drag-and-drop in the Syncfusion WPF DataGrid?
 {% endpromptcard %}
 {% endpromptcards %}
 
 ### Chart
 
-The Syncfusion WPF Chart suite offers versatile visualization tools across various series types for insightful data representation.
+The Syncfusion WPF Chart suite offers versatile visualizations across many series types for insightful data exploration.
 
 {% promptcards %}
 {% promptcard Data Binding %}
-#SyncfusionWPFAssistant How to quickly bind data sources to a Syncfusion WPF Chart for real-time insights?
+#SyncfusionWPFAssistant How to bind data sources to a Syncfusion WPF Chart for real-time updates?
 {% endpromptcard %}
-{% promptcard Selection and Highlighting Support %}
-#SyncfusionWPFAssistant How to enable selection and highlighting of data points in WPF Charts for better analysis?
+{% promptcard Selection and Highlighting %}
+#SyncfusionWPFAssistant How to enable selection and highlighting of data points in WPF Charts?
 {% endpromptcard %}
 {% promptcard Chart Types Overview %}
-#SyncfusionWPFAssistant What chart types are available in Syncfusion WPF Chart and how to configure them?
+#SyncfusionWPFAssistant What chart types are available in Syncfusion WPF Charts, and how to configure them?
 {% endpromptcard %}
-{% promptcard Zooming and panning %}
-#SyncfusionWPFAssistant How to enable zooming and panning in WPF Charts to make large datasets more interactive?
+{% promptcard Zooming and Panning %}
+#SyncfusionWPFAssistant How to enable zooming and panning in WPF Charts for large datasets?
 {% endpromptcard %}
 {% promptcard Annotations %}
 #SyncfusionWPFAssistant Add custom annotations to highlight specific data points in a chart.
 {% endpromptcard %}
-{% promptcard Chart Export to Image or PDF %}
-#SyncfusionWPFAssistant How do I export a Syncfusion Chart to PDF or image format?
+{% promptcard Export to Image or PDF %}
+#SyncfusionWPFAssistant How to export a Syncfusion WPF Chart to PDF or image formats?
 {% endpromptcard %}
 {% promptcard Print Support %}
-#SyncfusionWPFAssistant Enable print functionality for a Syncfusion WPF Chart component.
+#SyncfusionWPFAssistant Enable print functionality for a Syncfusion WPF Chart.
 {% endpromptcard %}
-{% promptcard Data Label and ToolTip Support %}
-#SyncfusionWPFAssistant Enable tooltips and data labels in Syncfusion WPF Chart component.
+{% promptcard Data Labels and ToolTips %}
+#SyncfusionWPFAssistant Enable tooltips and data labels in the Syncfusion WPF Chart.
 {% endpromptcard %}
 {% promptcard Animation Support %}
-#SyncfusionWPFAssistant How to enable animations in WPF Charts to make data visualization more engaging?
+#SyncfusionWPFAssistant How to enable animations in WPF Charts to make visualization more engaging?
 {% endpromptcard %}
 {% promptcard Dynamic Chart with Remote Data %}
-#SyncfusionWPFAssistant Create a chart that updates dynamically with remote API data.
+#SyncfusionWPFAssistant Create a chart that updates dynamically from a remote API.
 {% endpromptcard %}
 {% promptcard Multiple Series Types %}
-#SyncfusionWPFAssistant How do I combine bar and line chart types in a single Syncfusion Chart?
+#SyncfusionWPFAssistant How to combine bar and line series in a single Syncfusion WPF Chart?
 {% endpromptcard %}
-{% promptcard Troubleshooting Chart Data Binding %}
-#SyncfusionWPFAssistant Why isn’t my remote data showing up in the Syncfusion Chart?
+{% promptcard Troubleshooting Data Binding %}
+#SyncfusionWPFAssistant Why isn’t my remote data showing up in the Syncfusion WPF Chart?
 {% endpromptcard %}
 {% promptcard Custom Markers and Labels %}
-#SyncfusionWPFAssistant Show me an example of customizing chart markers and data label styles.
+#SyncfusionWPFAssistant Show me how to customize chart markers and data label styles.
 {% endpromptcard %}
 {% endpromptcards %}
 
 ### Diagram
 
-The Syncfusion WPF Diagram is a powerful, extensible, and feature-rich library for visualizing, creating, and editing interactive diagrams. 
+The Syncfusion WPF Diagram is a powerful, extensible library for visualizing, creating, and editing interactive diagrams.
 
 {% promptcards %}
-{% promptcard DataSource %}
-#SyncfusionWPFAssistant How to generate Layout with DataSource as NodeViewModel instead of business object class?
+{% promptcard Data Source %}
+#SyncfusionWPFAssistant How to generate a layout using NodeViewModel as the data source instead of a business object class?
 {% endpromptcard %}
 {% promptcard Annotations %}
-#SyncfusionWPFAssistant How to add labels to a Node in the Syncfusion Diagram component?
+#SyncfusionWPFAssistant How to add labels (annotations) to a node in the Diagram?
 {% endpromptcard %}
 {% promptcard Ports %}
-#SyncfusionWPFAssistant How to add connection points to the Diagram elements?
+#SyncfusionWPFAssistant How to add connection points (ports) to Diagram elements?
 {% endpromptcard %}
 {% promptcard Gridlines %}
-#SyncfusionWPFAssistant How to customize the appearance of the gridlines?
+#SyncfusionWPFAssistant How to customize the appearance of gridlines?
 {% endpromptcard %}
 {% promptcard Snapping %}
-#SyncfusionWPFAssistant How to enable snapping in in the Syncfusion Diagram component?
+#SyncfusionWPFAssistant How to enable snapping in the Syncfusion WPF Diagram?
 {% endpromptcard %}
 {% promptcard Scrolling %}
-#SyncfusionWPFAssistant How to restrict or enable scrolling only for the Diagram area?
+#SyncfusionWPFAssistant How to restrict or enable scrolling only within the Diagram area?
 {% endpromptcard %}
 {% promptcard Serialization %}
-#SyncfusionWPFAssistant How to serialize the Content and ContentTemplate properties of a Node?
+#SyncfusionWPFAssistant How to serialize the Content and ContentTemplate properties of a node?
 {% endpromptcard %}
 {% promptcard Virtualization %}
-#SyncfusionWPFAssistant Enable the virtualization in the Syncfusion Diagram component.
+#SyncfusionWPFAssistant How to enable virtualization in the Syncfusion WPF Diagram?
 {% endpromptcard %}
 {% promptcard Commands %}
 #SyncfusionWPFAssistant How to add a custom gesture command in the WPF Diagram?
 {% endpromptcard %}
 {% promptcard Automatic Layout %}
-#SyncfusionWPFAssistant How can I create flowchart and organization layout with the Diagram?
+#SyncfusionWPFAssistant How can I create flowchart and organization layouts with the Diagram?
 {% endpromptcard %}
-{% promptcard Stencil %}
-#SyncfusionWPFAssistant How to use different User Controls into Stencil?
+{% promptcard Stencil: Custom Controls %}
+#SyncfusionWPFAssistant How to use different user controls in the Stencil?
 {% endpromptcard %}
-{% promptcard Stencil %}
-#SyncfusionWPFAssistant How to add symbols in a Stencil?
+{% promptcard Stencil: Add Symbols %}
+#SyncfusionWPFAssistant How to add symbols to the Stencil?
 {% endpromptcard %}
-{% promptcard Print support %}
-#SyncfusionWPFAssistant How to enable the Print Properties option in the Print dialog in WPF Diagram?
+{% promptcard Print Support %}
+#SyncfusionWPFAssistant How to enable the Print Properties option in the WPF Diagram print dialog?
 {% endpromptcard %}
-{% promptcard Diagram Export to PDF %}
-#SyncfusionWPFAssistant How to export the Diagram as PDF?
+{% promptcard Export to PDF %}
+#SyncfusionWPFAssistant How to export the Diagram as a PDF?
 {% endpromptcard %}
 {% endpromptcards %}
 
 ### Ribbon
 
-The Syncfusion WPF Ribbon is a command bar that organizes an application’s commands and tools into a series of tabs. It also supports a backstage view as like in Microsoft Office products.
+The Syncfusion WPF Ribbon is a command bar that organizes an application’s tools into tabs and supports a Backstage view similar to Microsoft Office.
 
 {% promptcards %}
-{% promptcard Add ribbon items in Ribbon control %}
-#SyncfusionWPFAssistant How to add element like ribbon tab, ribbon group, ribbon button, ribbon drop-down button, ribbon combo-box in Syncfusion Ribbon control?
+{% promptcard Add Ribbon Items %}
+#SyncfusionWPFAssistant How to add RibbonTab, RibbonGroup, RibbonButton, RibbonDropDownButton, and RibbonComboBox in the WPF Ribbon?
 {% endpromptcard %}
-{% promptcard Application menu %}
-#SyncfusionWPFAssistant How to add the items to ribbon application menu in WPF Ribbon control?
+{% promptcard Application Menu / Backstage %}
+#SyncfusionWPFAssistant How to add and customize the Backstage (application menu) with pages, navigation, and commands in the WPF Ribbon?
 {% endpromptcard %}
-{% promptcard Quick Access ToolBar %}
-#SyncfusionWPFAssistant How to add an item to the Quick Access Toolbar in WPF Ribbon control?
+{% promptcard Quick Access Toolbar (QAT) %}
+#SyncfusionWPFAssistant How to add, remove, and persist QAT items and position it above or below the Ribbon?
 {% endpromptcard %}
-{% promptcard ScreenTip %}
-#SyncfusionWPFAssistant How to create ScreenTip for the ribbon items in WPF Ribbon control?
+{% promptcard ScreenTips %}
+#SyncfusionWPFAssistant How to create ScreenTips with headers, footers, images, and shortcuts for Ribbon items?
 {% endpromptcard %}
-{% promptcard KeyTip %}
-#SyncfusionWPFAssistant How to set KeyTip in the WPF Ribbon control?
+{% promptcard KeyTips %}
+#SyncfusionWPFAssistant How to enable and customize KeyTips for keyboard navigation in the Ribbon?
 {% endpromptcard %}
 {% promptcard Serialization %}
-#SyncfusionWPFAssistant How to handle state persistence in the WPF Ribbon control?
+#SyncfusionWPFAssistant How to save and restore Ribbon state (selected tab, QAT items, recent files) to a file or user settings?
 {% endpromptcard %}
 {% promptcard Simplified Layout %}
-#SyncfusionWPFAssistant Enabling simplified layout in Syncfusion Ribbon component.
+#SyncfusionWPFAssistant How to enable simplified layout and configure group resizing behavior in the Ribbon?
 {% endpromptcard %}
 {% promptcard Ribbon Merging %}
-#SyncfusionWPFAssistant Merging RibbonTab and RibbonBar of two different Ribbon controls in MDI applications.
+#SyncfusionWPFAssistant How to merge RibbonTab and RibbonBar from two different Ribbon controls in MDI applications?
+{% endpromptcard %}
+{% promptcard Contextual Tabs %}
+#SyncfusionWPFAssistant How to create contextual RibbonTab groups and show or hide them based on selection or app state?
+{% endpromptcard %}
+{% promptcard MVVM Commands %}
+#SyncfusionWPFAssistant How to bind Ribbon items to ICommand using MVVM, including CanExecute and routed commands?
+{% endpromptcard %}
+{% promptcard Galleries %}
+#SyncfusionWPFAssistant How to build Ribbon galleries with item templates, filtering, and selection change handling?
+{% endpromptcard %}
+{% promptcard Localization and RTL %}
+#SyncfusionWPFAssistant How to localize Ribbon text and tooltips and enable right-to-left (RTL) layout?
+{% endpromptcard %}
+{% promptcard Theming %}
+#SyncfusionWPFAssistant How to apply Office/Fluent themes and switch themes at runtime for the Ribbon?
+{% endpromptcard %}
+{% promptcard Group Resizing Policies %}
+#SyncfusionWPFAssistant How to configure Ribbon group size definitions (Large, Medium, Small) and item collapsing for narrow widths?
+{% endpromptcard %}
+{% promptcard Backstage: Recent and Pinned Files %}
+#SyncfusionWPFAssistant How to implement recent and pinned file lists and custom commands inside Backstage?
 {% endpromptcard %}
 {% endpromptcards %}
 
 ### Docking Manager
 
-The Syncfusion WPF Docking Manager provides an interface to create Visual Studio like dockable windows in your applications.
+The Syncfusion WPF Docking Manager provides a Visual Studio–like interface for creating dockable windows in your applications.
 
 {% promptcards %}
 {% promptcard Data Binding %}
-#SyncfusionWPFAssistant how to add child window through data binding in Syncfusion Docking Manager.
+#SyncfusionWPFAssistant How to add and manage child dock windows via data binding and MVVM in DockingManager?
 {% endpromptcard %}
-{% promptcard Dock support %}
-#SyncfusionWPFAssistant Enabling or Disabling the Dock functionality in Syncfusion Docking Manager.
+{% promptcard Dock Support %}
+#SyncfusionWPFAssistant How to enable or disable docking globally or for specific panes in DockingManager?
 {% endpromptcard %}
-{% promptcard Drag support %}
-#SyncfusionWPFAssistant How to enable or or disable the dragging functionality of a window.
+{% promptcard Drag/Resize Behavior %}
+#SyncfusionWPFAssistant How to enable or disable dragging and resizing behavior for docked panes?
 {% endpromptcard %}
-{% promptcard Hosting a Windows Form control %}
-#SyncfusionWPFAssistant Show me how to host windows form control in Syncfusion Docking Manager. 
+{% promptcard Float and Auto-Hide Programmatically %}
+#SyncfusionWPFAssistant How to float, auto-hide, pin, or restore a docked pane via code?
 {% endpromptcard %}
-{% promptcard Serialization %}
-#SyncfusionWPFAssistant How to handle state persistence in the WPF Docking Manager control?
+{% promptcard Tabbed Documents %}
+#SyncfusionWPFAssistant How to create tabbed document windows and manage document groups?
+{% endpromptcard %}
+{% promptcard Prevent Close and Customize Header %}
+#SyncfusionWPFAssistant How to prevent closing certain panes and customize header text, icons, and header buttons?
+{% endpromptcard %}
+{% promptcard Context Menu Customization %}
+#SyncfusionWPFAssistant How to disable or customize the dock window/tab context menu?
+{% endpromptcard %}
+{% promptcard Events for State Changes %}
+#SyncfusionWPFAssistant Which events notify dock state changes (docked, floating, auto-hide, closed) and how to handle them?
+{% endpromptcard %}
+{% promptcard Serialization / Layout Persistence %}
+#SyncfusionWPFAssistant How to save and restore DockingManager layout to a file/stream and manage versioned changes safely?
+{% endpromptcard %}
+{% promptcard Multi-Monitor and Bounds %}
+#SyncfusionWPFAssistant How to persist floating windows across multiple monitors and recover out-of-bounds panes?
+{% endpromptcard %}
+{% promptcard Runtime Add/Remove Panes %}
+#SyncfusionWPFAssistant How to dynamically add and remove dock panes at runtime and refresh the layout?
+{% endpromptcard %}
+{% promptcard Restrict Docking Targets %}
+#SyncfusionWPFAssistant How to restrict where a pane can dock (left/right/top/bottom/tabbed) or disallow floating?
+{% endpromptcard %}
+{% promptcard Per-User Layouts %}
+#SyncfusionWPFAssistant How to maintain separate layouts per user and switch between them at runtime?
+{% endpromptcard %}
+{% promptcard Performance and Memory %}
+#SyncfusionWPFAssistant What are best practices to improve performance and avoid memory leaks when frequently adding/removing panes?
+{% endpromptcard %}
+{% promptcard Host Windows Forms Control %}
+#SyncfusionWPFAssistant How to host a Windows Forms control inside a dock pane using WindowsFormsHost?
 {% endpromptcard %}
 {% endpromptcards %}
 
@@ -223,7 +274,7 @@ The Syncfusion WPF Calendar supports flexible date selection, localization, and 
 
 {% promptcards %}
 {% promptcard Date Range Selection %}
-#SyncfusionWPFAssistant How do I enable date range selection in the Syncfusion WPF Calendar?
+#SyncfusionWPFAssistant How to enable date range selection in the Syncfusion WPF Calendar?
 {% endpromptcard %}
 {% promptcard Globalization Support %}
 #SyncfusionWPFAssistant Configure the Calendar to support multiple cultures and languages.
@@ -232,21 +283,21 @@ The Syncfusion WPF Calendar supports flexible date selection, localization, and 
 #SyncfusionWPFAssistant Show me how to allow users to select multiple dates in the Calendar.
 {% endpromptcard %}
 {% promptcard Skip Months Feature %}
-#SyncfusionWPFAssistant Enable skipping months in the Calendar navigation for faster browsing.
+#SyncfusionWPFAssistant Enable skipping months in Calendar navigation for faster browsing.
 {% endpromptcard %}
-{% promptcard Calendar Showing Other Month Days %}
-#SyncfusionWPFAssistant How do I show days from adjacent months in the current Calendar view?
+{% promptcard Show Other Month Days %}
+#SyncfusionWPFAssistant How to show days from adjacent months in the current Calendar view?
 {% endpromptcard %}
 {% promptcard Custom Day Cell Format %}
 #SyncfusionWPFAssistant Customize the day cell format in the Calendar to show short weekday names.
 {% endpromptcard %}
-{% promptcard Calendar Highlighting Weekends %}
+{% promptcard Highlight Weekends %}
 #SyncfusionWPFAssistant Highlight weekends in the Calendar with a different background color.
 {% endpromptcard %}
 {% promptcard Multi-Selection and Range %}
 #SyncfusionWPFAssistant Enable both multi-date selection and range selection in the Calendar.
 {% endpromptcard %}
-{% promptcard Troubleshooting Calendar Date Range %}
+{% promptcard Troubleshooting Date Range %}
 #SyncfusionWPFAssistant Why isn’t my Calendar selecting the correct date range?
 {% endpromptcard %}
 {% promptcard Advanced Calendar Setup %}
