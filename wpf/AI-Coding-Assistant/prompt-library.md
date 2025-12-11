@@ -34,6 +34,12 @@ The Syncfusion WPF DataGrid provides fast, flexible tables for large datasets wi
 {% promptcard Grouping and Filtering %}
 #SyncfusionWPFAssistant Show me an example of grouping and filtering data in the Syncfusion WPF DataGrid.
 {% endpromptcard %}
+{% promptcard Editing with Column Types %}
+#SyncfusionWPFAssistant How to configure in-place editing using numeric, text, date, checkbox, image, combo box, picker, and template editors in the DataGrid.
+{% endpromptcard %}
+{% promptcard Selection and Keyboard Navigation %}
+#SyncfusionMAUIAssistant Enable single and multiple row selection with programmatic selection APIs and Windows keyboard navigation.
+{% endpromptcard %}
 {% promptcard CRUD Operations %}
 #SyncfusionWPFAssistant What’s the code to implement full CRUD operations in the Syncfusion WPF DataGrid?
 {% endpromptcard %}
@@ -83,6 +89,9 @@ The Syncfusion WPF Chart suite offers versatile visualizations across many serie
 {% promptcard Chart Types Overview %}
 #SyncfusionWPFAssistant What chart types are available in Syncfusion WPF Charts, and how to configure them?
 {% endpromptcard %}
+{% promptcard Markers and Data Labels %}
+#SyncfusionWPFAssistant How can I display markers and data labels on a line chart in .NET MAUI?
+{% endpromptcard %}
 {% promptcard Zooming and Panning %}
 #SyncfusionWPFAssistant How to enable zooming and panning in WPF Charts for large datasets?
 {% endpromptcard %}
@@ -115,25 +124,71 @@ The Syncfusion WPF Chart suite offers versatile visualizations across many serie
 {% endpromptcard %}
 {% endpromptcards %}
 
+### Scheduler
+
+The Syncfusion WPF Scheduler helps manage events, resources, and timelines with powerful views and customization.
+
+{% promptcards %}
+{% promptcard Views and Quick Switch %}
+#SyncfusionWPFAssistant Configure Day, Week, Month, Timeline Day/Week/WorkWeek/Month views and add quick view switching.
+{% endpromptcard %}
+{% promptcard Appointment Mapping and Data Binding %}
+#SyncfusionWPFAssistant How to bind custom appointment models using mapping (subject, notes, location, start time, end time) with MVVM.
+{% endpromptcard %}
+{% promptcard Recurring Events and Series Editing %}
+#SyncfusionWPFAssistant Create recurring appointments (daily/weekly/monthly/yearly) and enable editing a single occurrence or the entire series.
+{% endpromptcard %}
+{% promptcard Time Zones and DST %}
+#SyncfusionWPFAssistant Show appointments in specific time zones with automatic Daylight Saving Time handling and conversion.
+{% endpromptcard %}
+{% promptcard Work Time, Work Days, and First Day of Week %}
+#SyncfusionWPFAssistant How to set working hours, configure work days, customize the first day of week, and hide non-working days.
+{% endpromptcard %}
+{% promptcard Min/Max Date Navigation Limits %}
+#SyncfusionWPFAssistant How to restrict navigation with MinimumDateTime and MaximumDateTime to keep users in a valid planning range.
+{% endpromptcard %}
+{% promptcard Special Time Regions (Blocking Intervals) %}
+#SyncfusionWPFAssistant Define special time regions to block interaction (e.g., holidays/breaks) and highlight them across views.
+{% endpromptcard %}
+{% promptcard Blackout Dates (Selectable Day Predicate) %}
+#SyncfusionWPFAssistant Disable specific dates like weekends or holidays to prevent selection and interaction.
+{% endpromptcard %}
+{% promptcard Drag-and-Drop and Inline Editing %}
+#SyncfusionWPFAssistant Enable drag to reschedule, resize to change duration, and inline editors for quick appointment updates.
+{% endpromptcard %}
+{% promptcard Resources and Grouping %}
+#SyncfusionWPFAssistant Group by resources (rooms/people/teams) with color-coding and timeline views optimized for many resources.
+{% endpromptcard %}
+{% promptcard Load on Demand %}
+#SyncfusionWPFAssistant Load appointments on demand with a loading indicator for large schedules.
+{% endpromptcard %}
+{% promptcard Reminders and Notifications Integration %}
+#SyncfusionWPFAssistant Add reminder metadata to appointments and integrate with app notifications for alerts.
+{% endpromptcard %}
+{% promptcard Theming and Customization %}
+#SyncfusionWPFAssistant How to style headers, cells, appointments, selection, and special regions; support Light/Dark themes.
+{% endpromptcard %}
+{% endpromptcards %}
+
 ### Diagram
 
 The Syncfusion WPF Diagram is a powerful, extensible library for visualizing, creating, and editing interactive diagrams.
 
 {% promptcards %}
 {% promptcard Data Source %}
-#SyncfusionWPFAssistant How to generate a layout using NodeViewModel as the data source instead of a business object class?
+#SyncfusionWPFAssistant Generate a layout using NodeViewModel as the data source instead of a business object class?
 {% endpromptcard %}
 {% promptcard Annotations %}
-#SyncfusionWPFAssistant How to add labels (annotations) to a node in the Diagram?
+#SyncfusionWPFAssistant Add labels (annotations) to a node in the Diagram?
 {% endpromptcard %}
 {% promptcard Ports %}
-#SyncfusionWPFAssistant How to add connection points (ports) to Diagram elements?
+#SyncfusionWPFAssistant Add connection points (ports) to Diagram elements?
 {% endpromptcard %}
 {% promptcard Gridlines %}
 #SyncfusionWPFAssistant How to customize the appearance of gridlines?
 {% endpromptcard %}
 {% promptcard Snapping %}
-#SyncfusionWPFAssistant How to enable snapping in the Syncfusion WPF Diagram?
+#SyncfusionWPFAssistant Enable snapping in the Syncfusion WPF Diagram?
 {% endpromptcard %}
 {% promptcard Scrolling %}
 #SyncfusionWPFAssistant How to restrict or enable scrolling only within the Diagram area?
@@ -142,7 +197,7 @@ The Syncfusion WPF Diagram is a powerful, extensible library for visualizing, cr
 #SyncfusionWPFAssistant How to serialize the Content and ContentTemplate properties of a node?
 {% endpromptcard %}
 {% promptcard Virtualization %}
-#SyncfusionWPFAssistant How to enable virtualization in the Syncfusion WPF Diagram?
+#SyncfusionWPFAssistant Configure Diagram with UI virtualization for smooth scrolling on large objects.
 {% endpromptcard %}
 {% promptcard Commands %}
 #SyncfusionWPFAssistant How to add a custom gesture command in the WPF Diagram?
@@ -170,16 +225,16 @@ The Syncfusion WPF Ribbon is a command bar that organizes an application’s too
 
 {% promptcards %}
 {% promptcard Add Ribbon Items %}
-#SyncfusionWPFAssistant How to add RibbonTab, RibbonGroup, RibbonButton, RibbonDropDownButton, and RibbonComboBox in the WPF Ribbon?
+#SyncfusionWPFAssistant Add RibbonTab, RibbonGroup, RibbonButton, RibbonDropDownButton, and RibbonComboBox in the WPF Ribbon?
 {% endpromptcard %}
 {% promptcard Application Menu / Backstage %}
 #SyncfusionWPFAssistant How to add and customize the Backstage (application menu) with pages, navigation, and commands in the WPF Ribbon?
 {% endpromptcard %}
 {% promptcard Quick Access Toolbar (QAT) %}
-#SyncfusionWPFAssistant How to add, remove, and persist QAT items and position it above or below the Ribbon?
+#SyncfusionWPFAssistant Add, remove, and persist QAT items and position it above or below the Ribbon?
 {% endpromptcard %}
 {% promptcard ScreenTips %}
-#SyncfusionWPFAssistant How to create ScreenTips with headers, footers, images, and shortcuts for Ribbon items?
+#SyncfusionWPFAssistant Create ScreenTips with headers, footers, images, and shortcuts for Ribbon items?
 {% endpromptcard %}
 {% promptcard KeyTips %}
 #SyncfusionWPFAssistant How to enable and customize KeyTips for keyboard navigation in the Ribbon?
@@ -188,13 +243,13 @@ The Syncfusion WPF Ribbon is a command bar that organizes an application’s too
 #SyncfusionWPFAssistant How to save and restore Ribbon state (selected tab, QAT items, recent files) to a file or user settings?
 {% endpromptcard %}
 {% promptcard Simplified Layout %}
-#SyncfusionWPFAssistant How to enable simplified layout and configure group resizing behavior in the Ribbon?
+#SyncfusionWPFAssistant Enable simplified layout and configure group resizing behavior in the Ribbon?
 {% endpromptcard %}
 {% promptcard Ribbon Merging %}
 #SyncfusionWPFAssistant How to merge RibbonTab and RibbonBar from two different Ribbon controls in MDI applications?
 {% endpromptcard %}
 {% promptcard Contextual Tabs %}
-#SyncfusionWPFAssistant How to create contextual RibbonTab groups and show or hide them based on selection or app state?
+#SyncfusionWPFAssistant Create contextual RibbonTab groups and show or hide them based on selection or app state?
 {% endpromptcard %}
 {% promptcard MVVM Commands %}
 #SyncfusionWPFAssistant How to bind Ribbon items to ICommand using MVVM, including CanExecute and routed commands?
@@ -243,7 +298,7 @@ The Syncfusion WPF Docking Manager provides a Visual Studio–like interface for
 #SyncfusionWPFAssistant How to disable or customize the dock window/tab context menu?
 {% endpromptcard %}
 {% promptcard Events for State Changes %}
-#SyncfusionWPFAssistant Which events notify dock state changes (docked, floating, auto-hide, closed) and how to handle them?
+#SyncfusionWPFAssistant Show events that notify dock state changes (docked, floating, auto-hide, closed) and how to handle them?
 {% endpromptcard %}
 {% promptcard Serialization / Layout Persistence %}
 #SyncfusionWPFAssistant How to save and restore DockingManager layout to a file/stream and manage versioned changes safely?
@@ -264,7 +319,7 @@ The Syncfusion WPF Docking Manager provides a Visual Studio–like interface for
 #SyncfusionWPFAssistant What are best practices to improve performance and avoid memory leaks when frequently adding/removing panes?
 {% endpromptcard %}
 {% promptcard Host Windows Forms Control %}
-#SyncfusionWPFAssistant How to host a Windows Forms control inside a dock pane using WindowsFormsHost?
+#SyncfusionWPFAssistant Host a Windows Forms control inside a dock pane using WindowsFormsHost?
 {% endpromptcard %}
 {% endpromptcards %}
 
