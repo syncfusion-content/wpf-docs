@@ -38,7 +38,7 @@ The Syncfusion WPF DataGrid provides fast, flexible tables for large datasets wi
 #SyncfusionWPFAssistant How to configure in-place editing using numeric, text, date, checkbox, image, combo box, picker, and template editors in the DataGrid.
 {% endpromptcard %}
 {% promptcard Selection and Keyboard Navigation %}
-#SyncfusionMAUIAssistant Enable single and multiple row selection with programmatic selection APIs and Windows keyboard navigation.
+#SyncfusionWPFAssistant Enable single and multiple row selection with programmatic selection APIs and Windows keyboard navigation.
 {% endpromptcard %}
 {% promptcard CRUD Operations %}
 #SyncfusionWPFAssistant What’s the code to implement full CRUD operations in the Syncfusion WPF DataGrid?
@@ -167,6 +167,40 @@ The Syncfusion WPF Scheduler helps manage events, resources, and timelines with 
 {% endpromptcard %}
 {% promptcard Theming and Customization %}
 #SyncfusionWPFAssistant How to style headers, cells, appointments, selection, and special regions; support Light/Dark themes.
+{% endpromptcard %}
+{% endpromptcards %}
+
+### AI AssistView
+
+The Syncfusion WPF AI AssistView provides a ready-made conversational UI for integrating LLMs with features like message list, input box, suggestions, attachments, and tool/action invocation.
+
+{% promptcards %}
+{% promptcard Messages %}
+#SyncfusionWPFAssistant Bind AssistView to a message collection with system, user, and pre load conversation history.
+{% endpromptcard %}
+{% promptcard Streaming and Typing Indicator %}
+#SyncfusionWPFAssistant Enable token streaming with a typing indicator and incremental message updates.
+{% endpromptcard %}
+{% promptcard Suggestions (Quick Prompts) %}
+#SyncfusionWPFAssistant How to add clickable suggestion chips that insert predefined prompts into the input box.
+{% endpromptcard %}
+{% promptcard Markdown and Rich Rendering %}
+#SyncfusionWPFAssistant How to render assistant responses with Markdown (headings, code blocks) and support inline images/emojis.
+{% endpromptcard %}
+{% promptcard Avatars and Message Templates %}
+#SyncfusionWPFAssistant How to customize assistant avatars and use DataTemplate/DataTemplateSelector for message bubbles.
+{% endpromptcard %}
+{% promptcard Error Handling and Retries %}
+#SyncfusionWPFAssistant How to handle provider errors with retry/cancel UI and graceful fallback messages.
+{% endpromptcard %}
+{% promptcard Theming and Styling %}
+#SyncfusionWPFAssistant Apply custom themes for message bubbles, background, input bar, and suggestion chips (Light/Dark support).
+{% endpromptcard %}
+{% promptcard Command/Enter Behavior %}
+#SyncfusionWPFAssistant Configure Enter to send and Shift+Enter for newline; support multiline input with character counter.
+{% endpromptcard %}
+{% promptcard Citations and References %}
+#SyncfusionWPFAssistant Display citations/references returned by the model as hyper links under the message.
 {% endpromptcard %}
 {% endpromptcards %}
 
