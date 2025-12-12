@@ -195,7 +195,7 @@ An interactive tooltip provides additional details about the cards on hovering t
 To enable tooltip for the kanban cards, use the `IsToolTipEnabled` property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, `IsToolTipEnabled` is set to `false.` To provide users with additional information or context about cards, simply set this property to true.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  IsToolTipEnabled="True"
@@ -206,7 +206,7 @@ To enable tooltip for the kanban cards, use the `IsToolTipEnabled` property of [
 </kanban:SfKanban>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight C# hl_lines="1" %}
 
 this.kanban.IsToolTipEnabled = true;
 
@@ -264,7 +264,7 @@ public class ViewModel
         task.Description = "Need to implement tooltip support for histogram series.";
         task.Category = "Closed";
         task.Tags = new string[] { "Bug Fixing" };
-        task.ImageURL = new Uri("/Assets/People/People\People_Circle6.png", UriKind.RelativeOrAbsolute);
+        task.ImageURL = new Uri("/Assets/People/People_Circle6.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -287,7 +287,7 @@ You can customize the tooltip appearance by using the `ToolTipTemplate` property
 The following code example shows the usage of DataTemplate.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"   
                  IsToolTipEnabled="True" 
