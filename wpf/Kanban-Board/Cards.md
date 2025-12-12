@@ -185,3 +185,231 @@ You can replace the entire card template with your own design using [`SfKanban.C
 
 
 ![Template support for cards in WPF SfKanban](SfKanban_images/CardTemplate.png)
+
+## Cards ToolTip
+
+An interactive tooltip provides additional details about the cards on hovering the mouse over them.
+
+### Enable tooltip for cards
+
+To enable tooltip for the kanban cards, use the `IsToolTipEnabled` property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, `IsToolTipEnabled` is set to `false.` To provide users with additional information or context about cards, simply set this property to true.
+
+{% tabs %}
+{% highlight xaml %}
+
+<kanban:SfKanban x:Name="kanban"
+                 IsToolTipEnabled="True"
+                 ItemsSource="{Binding Tasks}">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# %}
+
+this.kanban.IsToolTipEnabled = true;
+
+{% endhighlight %}
+{% highlight C# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> Tasks { get; set; }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        Tasks = new ObservableCollection<KanbanModel>();
+
+        KanbanModel task = new KanbanModel();
+        task.Title = "UWP Issue";
+        task.Description = "Sorting is not working properly in DateTimeAxis";
+        task.Category = "Open";
+        task.Tags = new string[] { "Bug Fixing" };
+        task.ImageURL = new Uri(@"D:\Win\WPFToolTipKanban\WPFToolTipKanban\Assets\People\People_Circle1.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+
+        task = new KanbanModel();
+        task.Title = "New Feature";
+        task.Description = "Need to create code base for Gantt control";
+        task.Category = "Open";
+        task.Tags = new string[] { "GanttControl UWP" };
+        task.ImageURL = new Uri("/Assets/People/People_Circle2.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+
+        task = new KanbanModel();
+        task.Title = "UG";
+        task.Description = "Need to do post processing work for closed incidents";
+        task.Category = "In Progress";
+        task.Tags = new string[] { "Post processing" };
+        task.ImageURL = new Uri("/Assets/People/People_Circle3.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+
+        task = new KanbanModel();
+        task.Title = "UWP Issue";
+        task.Description = "Crosshair label template not visible in UWP.";
+        task.Category = "In Progress";
+        task.Tags = new string[] { "Bug Fixing" };
+        task.ImageURL = new Uri("/Assets/People/People_Circle4.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+
+        task = new KanbanModel();
+        task.Title = "WPF Issue";
+        task.Description = "Need to implement tooltip support for histogram series.";
+        task.Category = "Closed";
+        task.Tags = new string[] { "Bug Fixing" };
+        task.ImageURL = new Uri("/Assets/People/People\People_Circle6.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+
+        task = new KanbanModel();
+        task.Title = "WF Issue";
+        task.Description = "HorizontalAlignment for tooltip is not working";
+        task.Category = "Closed";
+        task.Tags = new string[] { "Bug fixing" };
+        task.ImageURL = new Uri("/Assets/People/People_Circle8.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Customize tooltip appearance
+
+You can customize the tooltip appearance by using the `ToolTipTemplate` property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
+
+The following code example shows the usage of DataTemplate.
+
+{% tabs %}
+{% highlight xaml %}
+
+<kanban:SfKanban x:Name="kanban"   
+                 IsToolTipEnabled="True" 
+                 ItemsSource="{Binding Tasks}">
+    <kanban:SfKanban.ToolTipTemplate>
+        <DataTemplate>
+            <Border CornerRadius="4" Padding="10" Background="Black">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="{Binding ColorKey}" Grid.Column="0" VerticalAlignment="Stretch"
+                               HorizontalAlignment="Left" Width="8" Margin="0,0,5,0" />
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="3.5*"/>
+                            <RowDefinition Height="3.5*"/>
+                            <RowDefinition Height="3*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Title : " FontSize="10.5" Grid.Row="0" Grid.Column="0"
+                                   Margin="0,0,0,8" Foreground="White" />
+                        <TextBlock Text="{Binding  Title}" Grid.Row="0" Grid.Column="1"
+                                   FontSize="10.5"   Margin="5,0,0,8" Foreground="White" />
+                        <TextBlock Text="Status : " Margin="0,0,0,8" Grid.Row="1" Grid.Column="0"
+                                   FontSize="10.5" Foreground="White" />
+                        <TextBlock Text="{Binding Category}" Grid.Row="1" Grid.Column="1"
+                                   FontSize="10.5" Margin="5,0,0,8" Foreground="White" />
+                        <TextBlock Text="Description : " Grid.Row="2" Grid.Column="0"
+                                   FontSize="10.5" Foreground="White" />
+                        <TextBlock Text="{Binding Description}" Margin="5,0,0,0" Width="150"
+                                   TextWrapping="Wrap" TextTrimming="CharacterEllipsis"
+                                   FontSize="10.5"   Grid.Row="2" Grid.Column="1" Foreground="White" />
+                    </Grid>
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </kanban:SfKanban.ToolTipTemplate>
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    /// <summary>
+    /// Gets or sets the collection of <see cref="KanbanModel"/> objects representing tasks in various stages.
+    /// </summary>
+    public ObservableCollection<KanbanModel> Tasks { get; set; }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        Tasks = new ObservableCollection<KanbanModel>();
+
+        KanbanModel task = new KanbanModel();
+        task.Title = "UWP Issue";
+        task.Description = "Sorting is not working properly in DateTimeAxis";
+        task.Category = "Open";
+        task.ColorKey = "#FF5187C6";
+        task.Tags = new string[] { "Bug Fixing" };
+        task.ImageURL = new Uri("/Assets/People/People_Circle1.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+
+        task = new KanbanModel();
+        task.Title = "New Feature";
+        task.Description = "Need to create code base for Gantt control";
+        task.Category = "Open";
+        task.ColorKey = "#FF57B94C";
+        task.Tags = new string[] { "GanttControl UWP" };
+        task.ImageURL = new Uri("/Assets/People/People_Circle2.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+
+        task = new KanbanModel();
+        task.Title = "UG";
+        task.Description = "Need to do post processing work for closed incidents";
+        task.Category = "In Progress";
+        task.ColorKey = "#FF57B94C";
+        task.Tags = new string[] { "Post processing" };
+        task.ImageURL = new Uri("/Assets/People/People_Circle3.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+
+        task = new KanbanModel();
+        task.Title = "UWP Issue";
+        task.Description = "Crosshair label template not visible in UWP.";
+        task.Category = "In Progress";
+        task.ColorKey = "#FFECB93C";
+        task.Tags = new string[] { "Bug Fixing" };
+        task.ImageURL = new Uri("/Assets/People/People_Circle4.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+
+        task = new KanbanModel();
+        task.Title = "WPF Issue";
+        task.Description = "Need to implement tooltip support for histogram series.";
+        task.Category = "Closed";
+        task.ColorKey = "#FF5187C6";
+        task.Tags = new string[] { "Bug Fixing" };
+        task.ImageURL = new Uri("/Assets/People/People_Circle6.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+
+        task = new KanbanModel();
+        task.Title = "WF Issue";
+        task.Description = "HorizontalAlignment for tooltip is not working";
+        task.Category = "Closed";
+        task.ColorKey = "#FFECB93C";
+        task.Tags = new string[] { "Bug fixing" };
+        task.ImageURL = new Uri("/Assets/People/People_Circle8.png", UriKind.RelativeOrAbsolute);
+        Tasks.Add(task);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* This property will only be applicable when `EnableToolTip` is set to true.
