@@ -2406,3 +2406,70 @@ private void MainWindow_Loaded(object sender, RoutedEventArgs e)
 
 ![WPF Ribbon BackStageButton collapsed by using Visibility property](GettingStarted_images/wpf-ribbon-backstagebutton-visibility.png)
 
+## Customizie the Backstage Header
+
+You can customize the `BackstageButton` header in Ribbon by using the `BackStageHeaderTemplate` property. This property accepts a DataTemplate to define the header layout, such as adding an icon and text.
+
+The following code example illustrates how to customize the BackstageButton header.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow x:Class="IconSupport_BackStageButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IconSupport_BackStageButton"
+        mc:Ignorable="d"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        syncfusion:SfSkinManager.VisualStyle="Windows11Light"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <syncfusion:RibbonWindow.Resources>
+        <DataTemplate x:Key="FileHeaderTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Image Width="16" Height="16" Source="\Image\10782771.png"/>
+                <TextBlock Text="File" FontWeight="Bold"/>
+            </StackPanel>
+        </DataTemplate>
+    </syncfusion:RibbonWindow.Resources>
+    <Grid>
+        <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top" BackStageHeaderTemplate="{StaticResource FileHeaderTemplate}">
+            <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
+                <syncfusion:RibbonBar Name="New" Width="120"  Header="New">
+                    <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
+                    <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
+                        <syncfusion:DropDownMenuItem Header="E-mail Message"/>
+                        <syncfusion:DropDownMenuItem Header="Appointment"/>
+                        <syncfusion:DropDownMenuItem Header="Meeting"/>
+                        <syncfusion:DropDownMenuItem Header="Contact"/>
+                        <syncfusion:DropDownMenuItem Header="Task"/>
+                    </syncfusion:DropDownButton>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
+                    <syncfusion:RibbonButton Label="Ignore"/>
+                    <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
+                    <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Meeting"/>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Quicksteps" Width="90" Header="Quick Steps"/>
+                <syncfusion:RibbonBar Name="Find" Width="90" Header="Find"/>
+            </syncfusion:RibbonTab>
+            <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
+            <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
+            <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Ribbon BackStageButton header template support by using BackStageHeaderTemplate property](GettingStarted_images/wpf-ribbon-backstagebutton-template.png)
