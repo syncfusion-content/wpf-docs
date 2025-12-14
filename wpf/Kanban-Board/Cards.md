@@ -186,16 +186,16 @@ You can replace the entire card template with your own design using [`SfKanban.C
 
 ![Template support for cards in WPF SfKanban](SfKanban_images/CardTemplate.png)
 
-## Cards ToolTip
+## Cards tooltip
 
 An interactive tooltip provides additional details about the cards on hovering the mouse over them.
 
 ### Enable tooltip for cards
 
-To enable tooltip for the kanban cards, use the `IsToolTipEnabled` property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, `IsToolTipEnabled` is set to `false.` To provide users with additional information or context about cards, simply set this property to true.
+To enable tooltip for the kanban cards, use `IsToolTipEnabled` property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, `IsToolTipEnabled` is set to `false.` To provide users with additional information or context about cards, simply set this property to `true.`
 
 {% tabs %}
-{% highlight xaml hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"
                  IsToolTipEnabled="True"
@@ -206,7 +206,7 @@ To enable tooltip for the kanban cards, use the `IsToolTipEnabled` property of [
 </kanban:SfKanban>
 
 {% endhighlight %}
-{% highlight C# hl_lines="1" %}
+{% highlight C# hl %}
 
 this.kanban.IsToolTipEnabled = true;
 
@@ -232,7 +232,6 @@ public class ViewModel
         task.Description = "Sorting is not working properly in DateTimeAxis";
         task.Category = "Open";
         task.Tags = new string[] { "Bug Fixing" };
-        task.ImageURL = new Uri(@"D:\Win\WPFToolTipKanban\WPFToolTipKanban\Assets\People\People_Circle1.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -240,7 +239,6 @@ public class ViewModel
         task.Description = "Need to create code base for Gantt control";
         task.Category = "Open";
         task.Tags = new string[] { "GanttControl UWP" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle2.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -248,7 +246,6 @@ public class ViewModel
         task.Description = "Need to do post processing work for closed incidents";
         task.Category = "In Progress";
         task.Tags = new string[] { "Post processing" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle3.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -256,7 +253,6 @@ public class ViewModel
         task.Description = "Crosshair label template not visible in UWP.";
         task.Category = "In Progress";
         task.Tags = new string[] { "Bug Fixing" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle4.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -264,7 +260,6 @@ public class ViewModel
         task.Description = "Need to implement tooltip support for histogram series.";
         task.Category = "Closed";
         task.Tags = new string[] { "Bug Fixing" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle6.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -272,7 +267,6 @@ public class ViewModel
         task.Description = "HorizontalAlignment for tooltip is not working";
         task.Category = "Closed";
         task.Tags = new string[] { "Bug fixing" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle8.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
     }
 }
@@ -287,7 +281,7 @@ You can customize the tooltip appearance by using the `ToolTipTemplate` property
 The following code example shows the usage of DataTemplate.
 
 {% tabs %}
-{% highlight xaml hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
 <kanban:SfKanban x:Name="kanban"   
                  IsToolTipEnabled="True" 
@@ -358,7 +352,6 @@ public class ViewModel
         task.Category = "Open";
         task.ColorKey = "#FF5187C6";
         task.Tags = new string[] { "Bug Fixing" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle1.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -367,7 +360,6 @@ public class ViewModel
         task.Category = "Open";
         task.ColorKey = "#FF57B94C";
         task.Tags = new string[] { "GanttControl UWP" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle2.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -376,7 +368,6 @@ public class ViewModel
         task.Category = "In Progress";
         task.ColorKey = "#FF57B94C";
         task.Tags = new string[] { "Post processing" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle3.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -385,7 +376,6 @@ public class ViewModel
         task.Category = "In Progress";
         task.ColorKey = "#FFECB93C";
         task.Tags = new string[] { "Bug Fixing" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle4.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -394,7 +384,6 @@ public class ViewModel
         task.Category = "Closed";
         task.ColorKey = "#FF5187C6";
         task.Tags = new string[] { "Bug Fixing" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle6.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
 
         task = new KanbanModel();
@@ -403,7 +392,6 @@ public class ViewModel
         task.Category = "Closed";
         task.ColorKey = "#FFECB93C";
         task.Tags = new string[] { "Bug fixing" };
-        task.ImageURL = new Uri("/Assets/People/People_Circle8.png", UriKind.RelativeOrAbsolute);
         Tasks.Add(task);
     }
 }
@@ -412,4 +400,4 @@ public class ViewModel
 {% endtabs %}
 
 N>
-* This property will only be applicable when `EnableToolTip` is set to true.
+* This property will only be applicable when `IsToolTipEnabled` is set to `true.`
