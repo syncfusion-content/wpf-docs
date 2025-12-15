@@ -2,7 +2,7 @@
 layout: post
 title: Backstage in WPF Ribbon control | Syncfusion®
 description: Learn about Backstage support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
@@ -101,7 +101,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon displays BackStage](GettingStarted_images/wpf-ribbon-backstage.jpg)
+![WPF Ribbon displays BackStage](getting-started_images/wpf-ribbon-back-stage.jpg)
 
 ### Customize the BackStage Visibility 
 
@@ -285,7 +285,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon Backstage with BackStageCommandButton](GettingStarted_images/wpf-ribbon-backstage-commandbutton.jpg)
+![WPF Ribbon Backstage with BackStageCommandButton](getting-started_images/wpf-ribbon-backstage-commandbutton.jpg)
 
 ## Setting image to BackStageCommandButton
 
@@ -419,7 +419,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![WPF Ribbon Backstage displays Image for BackStageCommandButton](GettingStarted_images/wpf-ribbon-backstage-commandbutton-icon.png)
+ ![WPF Ribbon Backstage displays Image for BackStageCommandButton](getting-started_images/wpf-ribbon-backstage-commandbutton-icon.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
@@ -493,7 +493,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![WPF Ribbon Backstage displays Image for BackStageCommandButton](GettingStarted_images/wpf-ribbon-backstage-icon.png)
+ ![WPF Ribbon Backstage displays Image for BackStageCommandButton](getting-started_images/wpf-ribbon-backstage-icon.png)
 
 ### Setting vector image 
 
@@ -598,7 +598,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
  {% endtabs %}
 
 
- ![WPF Ribbon Backstage displays Image for BackstageButton using VectorImage](GettingStarted_images/wpf-ribbon-backstage-button-with-image.png)
+ ![WPF Ribbon Backstage displays Image for BackstageButton using VectorImage](getting-started_images/wpf-ribbon-backstage-button-with-image.png)
 
 ## Add BackStageTabItem
 
@@ -704,7 +704,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon Backstage with BackStageTabItem](GettingStarted_images/wpf-ribbon-backstage-tabitem.jpg)
+![WPF Ribbon Backstage with BackStageTabItem](getting-started_images/wpf-ribbon-backstage-tabitem.jpg)
 
 ## Add BackStage separator			
 
@@ -811,7 +811,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon Backstage with BackStageSeparator](GettingStarted_images/wpf-ribbon-backstage-with-separator.jpg)
+![WPF Ribbon Backstage with BackStageSeparator](getting-started_images/wpf-ribbon-backstage-with-separator.jpg)
 
 ## BackStage items position
 
@@ -926,7 +926,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2019Colorful" Width="820" Height
 
 {% endtabs %}
 
-![Changinh BackStageItems Position in WPF Ribbon Backstage](GettingStarted_images/wpf-ribbon-backstage-item-position.jpg)
+![Changinh BackStageItems Position in WPF Ribbon Backstage](getting-started_images/wpf-ribbon-backstage-item-position.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Positioning-BackStageItems)
 
@@ -1236,7 +1236,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![WPF Ribbon BackStage Placed in RibbonWindow as FullScreen](GettingStarted_images/wpf-ribbon-backstage-in-ribbonwindow.png)
+![WPF Ribbon BackStage Placed in RibbonWindow as FullScreen](getting-started_images/wpf-ribbon-backstage-in-ribbonwindow.png)
 
 #### Backstage placed in MS Window
 
@@ -1450,7 +1450,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![WPF Ribbon BackStage Placed in MS Window as FullScreen](GettingStarted_images/wpf-ribbon-backstage-in-ms-window.png)
+![WPF Ribbon BackStage Placed in MS Window as FullScreen](getting-started_images/wpf-ribbon-backstage-in-ms-window.png)
 
 #### Backstage placed in Placement target
 
@@ -1670,7 +1670,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![WPF Ribbon BackStage Placed in Target Element as FullScreen](GettingStarted_images/wpf-ribbon-backstage-target-placement.png)
+![WPF Ribbon BackStage Placed in Target Element as FullScreen](getting-started_images/wpf-ribbon-backstage-target-placement.png)
 
 ### Place the backstage in BelowTab
 
@@ -1886,7 +1886,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![WPF Ribbon BackStage Placed in RibbonWindow as BelowTab](GettingStarted_images/wpf-ribbon-backstage-in-belowtab.png)
+![WPF Ribbon BackStage Placed in RibbonWindow as BelowTab](getting-started_images/wpf-ribbon-backstage-in-belowtab.png)
 
 #### Backstage placed in MS Window
 
@@ -2100,7 +2100,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![WPF Ribbon BackStage Placed in MS Window as BelowTab](GettingStarted_images/wpf-ribbon-backstage-belowtab-mswindow.png)
+![WPF Ribbon BackStage Placed in MS Window as BelowTab](getting-started_images/wpf-ribbon-backstage-belowtab-mswindow.png)
 
 #### Backstage placed in Placement target
 
@@ -2320,11 +2320,170 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![WPF Ribbon BackStage Placed in Target Element as BelowTab](GettingStarted_images/wpf-ribbon-backstage-belowtab-placement.png)
+![WPF Ribbon BackStage Placed in Target Element as BelowTab](getting-started_images/wpf-ribbon-backstage-belowtab-placement.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/How-to-set-placement-type-and-placement-target-for-Backstage) in GitHub.
 
-## Customize the BackStageButton visibility
+## Customization of BackStageButton
+
+The BackStage button in Ribbon can be customized to change its header text, apply a custom header template, or control its visibility.
+
+### BackStageHeader
+
+The `BackStageHeader` property allows you to set the header text for the Backstage button in the Ribbon. By default, this header is displayed as File in plain text.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow x:Class="IconSupport_BackStageButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IconSupport_BackStageButton"
+        mc:Ignorable="d"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        syncfusion:SfSkinManager.VisualStyle="Windows11Light"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top" BackStageHeader="App">
+            <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
+                <syncfusion:RibbonBar Name="New" Width="120"  Header="New">
+                    <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
+                    <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
+                        <syncfusion:DropDownMenuItem Header="E-mail Message"/>
+                        <syncfusion:DropDownMenuItem Header="Appointment"/>
+                        <syncfusion:DropDownMenuItem Header="Meeting"/>
+                        <syncfusion:DropDownMenuItem Header="Contact"/>
+                        <syncfusion:DropDownMenuItem Header="Task"/>
+                    </syncfusion:DropDownButton>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
+                    <syncfusion:RibbonButton Label="Ignore"/>
+                    <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
+                    <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Meeting"/>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Quicksteps" Width="90" Header="Quick Steps"/>
+                <syncfusion:RibbonBar Name="Find" Width="90" Header="Find"/>
+            </syncfusion:RibbonTab>
+            <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
+            <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
+            <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% tabs %}
+
+![WPF Ribbon BackStage Header](getting-started_images/wpf-ribbon-backstageheader.png)
+
+### BackstageHeaderTemplate
+
+The `BackStageHeaderTemplate` property allows you to customize the Backstage header by applying a DataTemplate. This enables you to define a custom layout, such as adding an icon and text.
+
+The following code example illustrates how to customize the Backstage header.
+
+{% endtabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow x:Class="IconSupport_BackStageButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IconSupport_BackStageButton"
+        mc:Ignorable="d"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        syncfusion:SfSkinManager.VisualStyle="Windows11Light"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <syncfusion:RibbonWindow.Resources>      
+        <DataTemplate x:Key="FileHeaderTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Path
+                    Width="15"
+                    Height="15"
+                    Margin="0,0,0,0"
+                    Data="M21,7.9999917L21,27.000005C21,28.103001,20.103027,29.000005,19,29.000005L8,29.000005 8,29.999991 22,29.999991 22,7.9999917z 
+                    M18,5.0000043L18,24.000001C18,25.102999,17.103,26.000001,16,26.000001L5,26.000001 5,27.000005 6.0000002,27.000005 8,26.999991 
+                    19,27.000005 19,7.9999917 19,5.9999917 19,5.0000043z 
+                    M7,3.414L3.3819871,7.0320127 7,7.0320127z 
+                    M9,1.9999999L9,9.0320108 2.0000004,9.0320108 2.0000004,24.000001 16,24.000001 16,5.0000043 16,3.0000044 16,1.9999999z 
+                    M7.586,0L16,0C17.103,0,18,0.89700007,18,1.9999999L18,3.0000044 19,3.0000044C20.103027,3.0000045,21,3.8969772,21,5.0000043L21,5.9999917 
+                    22,5.9999917C23.103001,5.9999917,24,6.8969915,24,7.9999917L24,29.999991C24,31.102992,23.103001,31.999991,22,31.999991L8,31.999991 
+                    C6.8970001,31.999991,6,31.102992,6.0000002,29.999991L6.0000002,29.000005 5,29.000005C3.8969727,29.000005,3,28.103001,3.0000001,27.000005 
+                    L3.0000001,26.000001 2.0000004,26.000001C0.89700007,26.000001,0,25.102999,0,24.000001L0,7.5860002z"
+                    Fill="{sfskin:ThemeResource ThemeKey={sfskin:ThemeKey Key=PrimaryBackground}}"
+                    RenderTransformOrigin="0.5,0.5"
+                    Stretch="Uniform">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <RotateTransform Angle="0" />
+                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <TextBlock
+                    Text="{Binding}"
+                    FontWeight="Bold"
+                    Margin="4,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" />
+            </StackPanel>
+        </DataTemplate>
+    </syncfusion:RibbonWindow.Resources>
+    <Grid>
+        <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top" BackStageHeaderTemplate="{StaticResource FileHeaderTemplate}" BackStageHeader="App">
+            <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
+                <syncfusion:RibbonBar Name="New" Width="120"  Header="New">
+                    <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
+                    <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
+                        <syncfusion:DropDownMenuItem Header="E-mail Message"/>
+                        <syncfusion:DropDownMenuItem Header="Appointment"/>
+                        <syncfusion:DropDownMenuItem Header="Meeting"/>
+                        <syncfusion:DropDownMenuItem Header="Contact"/>
+                        <syncfusion:DropDownMenuItem Header="Task"/>
+                    </syncfusion:DropDownButton>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
+                    <syncfusion:RibbonButton Label="Ignore"/>
+                    <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
+                    <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Meeting"/>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Quicksteps" Width="90" Header="Quick Steps"/>
+                <syncfusion:RibbonBar Name="Find" Width="90" Header="Find"/>
+            </syncfusion:RibbonTab>
+            <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
+            <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
+            <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Ribbon BackStageButton header template support by using BackStageHeaderTemplate property](getting-started_images/wpf-ribbon-backstagebutton-template.png)
+
+### BackStageButton visibility
 
 Ribbon control allows to show or hide the `BackStageButton` by using its `Visibility` property.
 
@@ -2404,5 +2563,4 @@ private void MainWindow_Loaded(object sender, RoutedEventArgs e)
 
 {% endtabs %}
 
-![WPF Ribbon BackStageButton collapsed by using Visibility property](GettingStarted_images/wpf-ribbon-backstagebutton-visibility.png)
-
+![WPF Ribbon BackStageButton collapsed by using Visibility property](getting-started_images/wpf-ribbon-backstagebutton-visibility.png)
