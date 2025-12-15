@@ -2,7 +2,7 @@
 layout: post
 title: Backstage in WPF Ribbon control | Syncfusion®
 description: Learn about Backstage support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
@@ -2406,7 +2406,7 @@ private void MainWindow_Loaded(object sender, RoutedEventArgs e)
 
 ![WPF Ribbon BackStageButton collapsed by using Visibility property](GettingStarted_images/wpf-ribbon-backstagebutton-visibility.png)
 
-## Customizie the Backstage Header
+## Customize the Backstage Header
 
 You can customize the `BackstageButton` header in Ribbon by using the `BackStageHeaderTemplate` property. This property accepts a DataTemplate to define the header layout, such as adding an icon and text.
 
