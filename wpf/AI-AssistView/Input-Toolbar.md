@@ -126,49 +126,8 @@ private void AiAssistView_InputToolbarItemClicked(object sender, InputToolbarIte
 
 This feature allows users to customize the header section of the input area using a flexible template. The layout and styling of the header can include elements such as file upload information, error details, notifications, or other custom components to display relevant information.
 
-{% tabs %}
-{% highlight xaml %}
+### Uploaded files template
 
-<syncfusion:SfAIAssistView 
-       x:Name="sfAIAssistView"  
-       CurrentUser="{Binding CurrentUser}"  
-       Messages="{Binding Chats}">
-    <syncfusion:SfAIAssistView.InputToolbarHeaderTemplate>
-        <DataTemplate>
-            <Border>
-                <ItemsControl ItemsSource="{Binding DataContext.Files, RelativeSource={RelativeSource AncestorType=syncfusion:SfAIAssistView}}">
-                    <ItemsControl.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapPanel Orientation="Horizontal"/>
-                        </ItemsPanelTemplate>
-                    </ItemsControl.ItemsPanel>
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="4" Margin="4" Padding="4">
-                                <StackPanel Orientation="Horizontal">
-                                    <Viewbox Width="22" Height="22">
-                                        <Grid>
-                                            <Path Data="M19.5 20V9.12132C19.5 8.7235 19.342 8.34196 19.0607 8.06066L13.9393 2.93934C13.658 2.65804 13.2765 2.5 12.8787 2.5H6C5.17157 2.5 4.5 3.17157 4.5 4V20C4.5 20.8284 5.17157 21.5 6 21.5H18C18.8284 21.5 19.5 20.8284 19.5 20Z" Fill="white"/>
-                                            <Path Data="M12.8789 2C13.4093 2.00006 13.9179 2.21092 14.293 2.58594L19.4141 7.70703C19.7891 8.08205 19.9999 8.59074 20 9.12109V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V4C4 2.89543 4.89543 2 6 2H12.8789ZM6 3C5.44772 3 5 3.44772 5 4V20C5 20.5523 5.44772 21 6 21H18C18.5523 21 19 20.5523 19 20V9.12109C19 9.08039 18.9971 9.03999 18.9922 9H15C13.8954 9 13 8.10457 13 7V3.00781C12.96 3.00292 12.9196 3.00001 12.8789 3H6ZM14 7C14 7.55228 14.4477 8 15 8H18.293L14 3.70703V7Z" Fill="#707070"/>
-                                            <Path Data="M16.5 17C16.7761 17 17 17.2239 17 17.5C17 17.7761 16.7761 18 16.5 18H7.5C7.22386 18 7 17.7761 7 17.5C7 17.2239 7.22386 17 7.5 17H16.5ZM16.5 14C16.7761 14 17 14.2239 17 14.5C17 14.7761 16.7761 15 16.5 15H7.5C7.22386 15 7 14.7761 7 14.5C7 14.2239 7.22386 14 7.5 14H16.5ZM16.5 11C16.7761 11 17 11.2239 17 11.5C17 11.7761 16.7761 12 16.5 12H7.5C7.22386 12 7 11.7761 7 11.5C7 11.2239 7.22386 11 7.5 11H16.5Z" Fill="#0F2F56"/>
-                                        </Grid>
-                                    </Viewbox>
-                                    <StackPanel Margin="10,0,10,0" Orientation="Vertical">
-                                        <TextBlock Text="{Binding Name}" Foreground="Black" FontWeight="SemiBold"/>
-                                        <TextBlock Text="{Binding Size}" Foreground="Black" FontSize="11"/>
-                                    </StackPanel>
-                                </StackPanel>
-                            </Border>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
-            </Border>
-        </DataTemplate>
-    </syncfusion:SfAIAssistView.InputToolbarHeaderTemplate>
+This feature allows users to display uploaded files in the input area using a customizable template. The template presents details such as the file name, type, size, and other relevant metadata, enhancing the user experience and improving file interaction within the control.
 
-</syncfusion:SfAIAssistView>
-
-{% endhighlight %} 
-{% endtabs %}
-
-![Input toolbar header template in WPF SfAIAssistView control](aiassistview_images/wpf-aiassistview-input-header-template.webp)
+![Uploaded files template in WPF SfAIAssistView control](aiassistview_images/wpf-aiassistview-input-header-template.webp)
