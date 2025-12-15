@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event in WPF AI AssistView (SfAIAssistView) | Syncfusion
+title: Events in WPF AI AssistView control | Syncfusion
 description: Learn here all about Events support in Syncfusion AI AssistView control, its elements and more details.
 platform: wpf
 control: SfAIAssistView
