@@ -101,7 +101,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![WPF Ribbon displays BackStage](getting-started_images/wpf-ribbon-backstage.jpg)
+![WPF Ribbon displays BackStage](getting-started_images/wpf-ribbon-back-stage.jpg)
 
 ### Customize the BackStage Visibility 
 
