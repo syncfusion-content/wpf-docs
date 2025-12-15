@@ -54,13 +54,33 @@ Before you can invoke the `SyncfusionWPFAssistant` MCP server, you need to confi
 - **Arguments**: -y
 - **Server name**: SyncfusionWPFAssistant
 
-You need to add your [Syncfusion API key](https://syncfusion.com/account/api-key) as an env parameter in the configuration file:
+#### API Key Configuration
 
-```json
-"env": {
-  "Syncfusion_API_Key": "YOUR_API_KEY"
-}
-```
+Login to your [Syncfusion account](http://syncfusion.com/account/) and generate an API Key from the [API Key page](https://www.syncfusion.com/account/api-key). Replace `YOUR_API_KEY_FILE_PATH` or `YOUR_API_KEY` in the configuration files with your generated key.
+
+There are two options:
+
+* **Using an API Key File (Recommended)**
+
+  Store your API key in a separate file and reference its path in the `Syncfusion_API_Key_Path` environment parameter. This approach is more secure as you don't expose the key directly in configuration files.
+
+  **Supported file formats:** `.txt` or `.key` file
+
+  ```json
+  "env": {
+    "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH" // "D:\\syncfusion-key.txt" (or) "D:\\syncfusion-key.key"
+  }
+  ```
+
+* **Direct API Key**
+
+  Paste your `Syncfusion_API_Key` directly in the configuration file's environment parameter.
+
+  ```json
+  "env": {
+    "Syncfusion_API_Key": "YOUR_API_KEY"
+  }
+  ```
 
 Below are setup instructions for popular MCP clients:
 
