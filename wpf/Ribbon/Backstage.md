@@ -2392,7 +2392,7 @@ The `BackStageHeaderTemplate` property allows you to customize the Backstage hea
 
 The following code example illustrates how to customize the Backstage header.
 
-{% tabs %}
+{% endtabs %}
 
 {% highlight XAML %}
 
