@@ -128,7 +128,7 @@ This feature allows users to customize the header section of the input area usin
 
 ![Uploaded files template in WPF SfAIAssistView control](aiassistview_images/wpf-aiassistview-input-header-template.webp)
 
-% tabs %}
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfAIAssistView.InputToolbarHeaderTemplate>
