@@ -126,8 +126,39 @@ private void AiAssistView_InputToolbarItemClicked(object sender, InputToolbarIte
 
 This feature allows users to customize the header section of the input area using a flexible template. The layout and styling of the header can include elements such as file upload information, error details, notifications, or other custom components to display relevant information.
 
-### Uploaded files template
-
-This feature allows users to display uploaded files in the input area using a customizable template. The template presents details such as the file name, type, size, and other relevant metadata, enhancing the user experience and improving file interaction within the control.
-
 ![Uploaded files template in WPF SfAIAssistView control](aiassistview_images/wpf-aiassistview-input-header-template.webp)
+
+% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfAIAssistView.InputToolbarHeaderTemplate>
+<DataTemplate>
+<Border CornerRadius="6" Padding="0,4,0,4" Margin="0,0,0,6">
+<ItemsControl Margin="0,0,6,0" ItemsSource="{Binding DataContext.Files, RelativeSource={RelativeSource AncestorType=syncfusion:SfAIAssistView}}">
+<ItemsControl.ItemsPanel>
+<ItemsPanelTemplate>
+<WrapPanel Orientation="Horizontal" Margin="0"/>
+</ItemsPanelTemplate>
+</ItemsControl.ItemsPanel>
+<ItemsControl.ItemTemplate>
+<DataTemplate>
+<Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="4" Margin="4" Padding="4">
+<StackPanel Orientation="Horizontal"> 
+<Viewbox Width="22" Height="22">
+<ContentPresenter ContentTemplateSelector="{StaticResource fileIconSelector}" Width="22" Height="22"/>
+</Viewbox>
+<StackPanel Margin="10,0,10,0" Orientation="Vertical">
+<TextBlock Text="{Binding Name}" Foreground="#777" FontWeight="SemiBold"/>
+<TextBlock Text="{Binding Size}" Foreground="#777" FontSize="11"/>
+</StackPanel>
+</StackPanel>
+</Border>
+</DataTemplate>
+</ItemsControl.ItemTemplate>
+</ItemsControl>
+</Border>
+</DataTemplate>
+</syncfusion:SfAIAssistView.InputToolbarHeaderTemplate>
+
+{% endhighlight %} 
+{% endtabs %}
