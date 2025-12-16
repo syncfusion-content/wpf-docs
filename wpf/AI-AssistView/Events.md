@@ -19,8 +19,9 @@ Handled : The value indicating whether the input message in the Messages collect
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfAIAssistView x:Name="sfAIAssistView" CurrentUser="{Binding CurrentUser}"  
-                               Messages="{Binding Chats}" PromptRequest="AiAssistView_PromptRequest"/>
+<syncfusion:SfAIAssistView x:Name="sfAIAssistView"
+                            CurrentUser="{Binding CurrentUser}" 
+                            Messages="{Binding Chats}" PromptRequest="AiAssistView_PromptRequest"/>
 
 {% endhighlight %} 
 {% highlight C# %}
@@ -28,10 +29,10 @@ Handled : The value indicating whether the input message in the Messages collect
 SfAIAssistView sfAIAssistView = new SfAIAssistView();
 sfAIAssistView.PromptRequest += AiAssistView_PromptRequest;
 
-private void AiAssistView_PromptRequest(object sender, PromptRequestEventArgs args)
+private void AiAssistView_PromptRequest(object sender, PromptRequestEventArgs e)
 {
-    IMessage message = args.InputMessage;
-    bool result = args.Handled;
+    IMessage message = e.InputMessage;
+    bool result = e.Handled;
 }
 
 {% endhighlight %}
