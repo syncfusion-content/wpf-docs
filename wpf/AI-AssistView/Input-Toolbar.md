@@ -126,8 +126,6 @@ private void AiAssistView_InputToolbarItemClicked(object sender, InputToolbarIte
 
 This feature allows users to customize the header section of the input area using a flexible template. The layout and styling of the header can include elements such as file upload information, error details, notifications, or other custom components to display relevant information.
 
-![Input toolbar header template in WPF SfAIAssistView control](aiassistview_images/wpf-aiassistview-input-header-template.webp)
-
 {% tabs %}
 {% highlight xaml %}
 
@@ -172,3 +170,5 @@ This feature allows users to customize the header section of the input area usin
 
 {% endhighlight %} 
 {% endtabs %}
+
+![Input toolbar header template in WPF SfAIAssistView control](aiassistview_images/wpf-aiassistview-input-header-template.webp)
