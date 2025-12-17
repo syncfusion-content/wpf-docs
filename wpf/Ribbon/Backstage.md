@@ -2382,7 +2382,7 @@ The `BackStageHeader` property allows you to set the header text for the Backsta
 
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 ![WPF Ribbon BackStage Header](getting-started_images/wpf-ribbon-backstageheader.png)
 
@@ -2392,7 +2392,7 @@ The `BackStageHeaderTemplate` property allows you to customize the Backstage hea
 
 The following code example illustrates how to customize the Backstage header.
 
-{% endtabs %}
+{% tabs %}
 
 {% highlight XAML %}
 
