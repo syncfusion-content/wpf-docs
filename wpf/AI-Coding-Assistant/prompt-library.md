@@ -300,9 +300,6 @@ The Syncfusion WPF Ribbon is a command bar that organizes an application’s too
 {% promptcard Group Resizing Policies %}
 #SyncfusionWPFAssistant How to configure Ribbon group size definitions (Large, Medium, Small) and item collapsing for narrow widths?
 {% endpromptcard %}
-{% promptcard Backstage: Recent and Pinned Files %}
-#SyncfusionWPFAssistant How to implement recent and pinned file lists and custom commands inside Backstage?
-{% endpromptcard %}
 {% endpromptcards %}
 
 ### Docking Manager
@@ -315,9 +312,6 @@ The Syncfusion WPF Docking Manager provides a Visual Studio–like interface for
 {% endpromptcard %}
 {% promptcard Dock Support %}
 #SyncfusionWPFAssistant How to enable or disable docking globally or for specific panes in DockingManager?
-{% endpromptcard %}
-{% promptcard Drag/Resize Behavior %}
-#SyncfusionWPFAssistant How to enable or disable dragging and resizing behavior for docked panes?
 {% endpromptcard %}
 {% promptcard Float and Auto-Hide Programmatically %}
 #SyncfusionWPFAssistant How to float, auto-hide, pin, or restore a docked pane via code?
@@ -336,9 +330,6 @@ The Syncfusion WPF Docking Manager provides a Visual Studio–like interface for
 {% endpromptcard %}
 {% promptcard Serialization / Layout Persistence %}
 #SyncfusionWPFAssistant How to save and restore DockingManager layout to a file/stream and manage versioned changes safely?
-{% endpromptcard %}
-{% promptcard Multi-Monitor and Bounds %}
-#SyncfusionWPFAssistant How to persist floating windows across multiple monitors and recover out-of-bounds panes?
 {% endpromptcard %}
 {% promptcard Runtime Add/Remove Panes %}
 #SyncfusionWPFAssistant How to dynamically add and remove dock panes at runtime and refresh the layout?
