@@ -122,6 +122,12 @@ The Syncfusion WPF Chart suite offers versatile visualizations across many serie
 {% promptcard Axis Customization %}
 #SyncfusionWPFAssistant Configure axis intervals, labels format, inversed axis, axis crossing, and logarithmic axis.
 {% endpromptcard %}
+{% promptcard Data Labels and Smart Labels %}
+#SyncfusionWPFAssistant Enable data labels with templates, alignment, and smart label collision avoidance for dense data.
+{% endpromptcard %}
+{% promptcard Gridlines and Chart Area Styling %}
+#SyncfusionWPFAssistant Customize major/minor gridlines, tick lines, chart area background, and border.
+{% endpromptcard %}
 {% promptcard Animation Support %}
 #SyncfusionWPFAssistant How to enable animations in WPF Charts to make visualization more engaging?
 {% endpromptcard %}
