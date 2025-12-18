@@ -110,14 +110,8 @@ The Syncfusion WPF Chart suite offers versatile visualizations across many serie
 {% promptcard Animation Support %}
 #SyncfusionWPFAssistant How to enable animations in WPF Charts to make visualization more engaging?
 {% endpromptcard %}
-{% promptcard Dynamic Chart with Remote Data %}
-#SyncfusionWPFAssistant Create a chart that updates dynamically from a remote API.
-{% endpromptcard %}
 {% promptcard Multiple Series Types %}
 #SyncfusionWPFAssistant How to combine bar and line series in a single Syncfusion WPF Chart?
-{% endpromptcard %}
-{% promptcard Troubleshooting Data Binding %}
-#SyncfusionWPFAssistant Why isn’t my remote data showing up in the Syncfusion WPF Chart?
 {% endpromptcard %}
 {% promptcard Custom Markers and Labels %}
 #SyncfusionWPFAssistant Show me how to customize chart markers and data label styles.
