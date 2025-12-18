@@ -52,8 +52,8 @@ The Syncfusion WPF DataGrid provides fast, flexible tables for large datasets wi
 {% promptcard Multicolumn Grid Setup %}
 #SyncfusionWPFAssistant Create a multi-column DataGrid to display product details with sorting and filtering.
 {% endpromptcard %}
-{% promptcard Chat Integration %}
-#SyncfusionWPFAssistant How can I integrate a chat widget inside each row of the Syncfusion WPF DataGrid?
+{% promptcard Load control in a cell/column %}
+#SyncfusionWPFAssistant How can I integrate or load a WPF control inside each cell or column of the Syncfusion WPF DataGrid?
 {% endpromptcard %}
 {% promptcard Advanced Grid Features %}
 #SyncfusionWPFAssistant Show me a DataGrid with paging, sorting, grouping, filtering, and virtual scrolling.
@@ -61,14 +61,11 @@ The Syncfusion WPF DataGrid provides fast, flexible tables for large datasets wi
 {% promptcard Troubleshooting Export %}
 #SyncfusionWPFAssistant Why isn’t my DataGrid exporting to PDF or Excel correctly?
 {% endpromptcard %}
-{% promptcard Inline Editing %}
-#SyncfusionWPFAssistant How to enable inline editing for CRUD operations in the DataGrid?
-{% endpromptcard %}
-{% promptcard Custom Toolbar %}
-#SyncfusionWPFAssistant Add custom toolbar buttons for PDF and Excel export in the DataGrid.
+{% promptcard Cell Editing %}
+#SyncfusionWPFAssistant How to enable cell editing in the DataGrid?
 {% endpromptcard %}
 {% promptcard Dynamic Column Configuration %}
-#SyncfusionWPFAssistant How can I dynamically configure a multi-column layout with filtering and sorting?
+#SyncfusionWPFAssistant How can I add or display the predefined or multi columns in a drop-down in the DataGrid?
 {% endpromptcard %}
 {% promptcard Drag and Drop Support %}
 #SyncfusionWPFAssistant How to enable row drag-and-drop in the Syncfusion WPF DataGrid?
