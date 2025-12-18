@@ -153,11 +153,11 @@ The Syncfusion WPF Scheduler helps manage events, resources, and timelines with 
 {% promptcard Recurring Events and Series Editing %}
 #SyncfusionWPFAssistant Create recurring appointments (daily/weekly/monthly/yearly) and enable editing a single occurrence or the entire series.
 {% endpromptcard %}
-{% promptcard Time Zones and DST %}
-#SyncfusionWPFAssistant Show appointments in specific time zones with automatic Daylight Saving Time handling and conversion.
+{% promptcard Time Zones %}
+#SyncfusionWPFAssistant Show appointments in the WPF Scheduler control for specific time zones.
 {% endpromptcard %}
 {% promptcard Work Time, Work Days, and First Day of Week %}
-#SyncfusionWPFAssistant How to set working hours, configure work days, customize the first day of week, and hide non-working days.
+#SyncfusionWPFAssistant How to set working hours, configure work days and customize the first day of week.
 {% endpromptcard %}
 {% promptcard Min/Max Date Navigation Limits %}
 #SyncfusionWPFAssistant How to restrict navigation with MinimumDateTime and MaximumDateTime to keep users in a valid planning range.
@@ -165,11 +165,11 @@ The Syncfusion WPF Scheduler helps manage events, resources, and timelines with 
 {% promptcard Special Time Regions (Blocking Intervals) %}
 #SyncfusionWPFAssistant Define special time regions to block interaction (e.g., holidays/breaks) and highlight them across views.
 {% endpromptcard %}
-{% promptcard Blackout Dates (Selectable Day Predicate) %}
-#SyncfusionWPFAssistant Disable specific dates like weekends or holidays to prevent selection and interaction.
+{% promptcard Blackout Dates for MonthView %}
+#SyncfusionWPFAssistant Disable specific dates like weekends or holidays to prevent selection and interaction for month view.
 {% endpromptcard %}
-{% promptcard Drag-and-Drop and Inline Editing %}
-#SyncfusionWPFAssistant Enable drag to reschedule, resize to change duration, and inline editors for quick appointment updates.
+{% promptcard Drag-and-Drop %}
+#SyncfusionWPFAssistant Enable drag to reschedule, resize to change duration for quick appointment updates.
 {% endpromptcard %}
 {% promptcard Resources and Grouping %}
 #SyncfusionWPFAssistant Group by resources (rooms/people/teams) with color-coding and timeline views optimized for many resources.
