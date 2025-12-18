@@ -96,7 +96,7 @@ The Syncfusion WPF Chart suite offers versatile visualizations across many serie
 #SyncfusionWPFAssistant How to enable zooming and panning in WPF Charts for large datasets?
 {% endpromptcard %}
 {% promptcard Annotations %}
-#SyncfusionWPFAssistant Add custom annotations to highlight specific data points in a chart.
+#SyncfusionWPFAssistant Add image and shape annotations to highlight specific data points in a chart.
 {% endpromptcard %}
 {% promptcard Export to Image or PDF %}
 #SyncfusionWPFAssistant How to export a Syncfusion WPF Chart to PDF or image formats?
