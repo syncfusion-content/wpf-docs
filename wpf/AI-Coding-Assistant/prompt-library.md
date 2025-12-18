@@ -104,8 +104,23 @@ The Syncfusion WPF Chart suite offers versatile visualizations across many serie
 {% promptcard Print Support %}
 #SyncfusionWPFAssistant Enable print functionality for a Syncfusion WPF Chart.
 {% endpromptcard %}
-{% promptcard Data Labels and ToolTips %}
-#SyncfusionWPFAssistant Enable tooltips and data labels in the Syncfusion WPF Chart.
+{% promptcard Tooltips and Trackball %}
+#SyncfusionWPFAssistant Show interactive tooltips and a trackball with formatted labels and multiple series value display.
+{% endpromptcard %}
+{% promptcard Axes and Multiple Axes %}
+#SyncfusionWPFAssistant Configure CategoryAxis, NumericalAxis, DateTimeAxis, and add a secondary Y-axis with series mapped to it.
+{% endpromptcard %}
+{% promptcard Legend and Title %}
+#SyncfusionWPFAssistant Add chart title, subtitle, and a responsive legend (positioning, overflow modes) in a WPF chart.
+{% endpromptcard %}
+{% promptcard Series Types Quick Setup %}
+#SyncfusionWPFAssistant Create a chart with Line, Spline, StepLine, Area, SplineArea, Column, Bar, Scatter, and Bubble series.
+{% endpromptcard %}
+{% promptcard Segment Color Mapping and Gradients %}
+#SyncfusionWPFAssistant Apply segment color mapping and gradient fills based on Y-value ranges.
+{% endpromptcard %}
+{% promptcard Axis Customization %}
+#SyncfusionWPFAssistant Configure axis intervals, labels format, inversed axis, axis crossing, and logarithmic axis.
 {% endpromptcard %}
 {% promptcard Animation Support %}
 #SyncfusionWPFAssistant How to enable animations in WPF Charts to make visualization more engaging?
