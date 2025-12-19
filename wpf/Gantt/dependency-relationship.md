@@ -561,3 +561,66 @@ viewModel.TaskCollection[2].Resource.Add(new Resource { ID = 3, Name = "Resource
 
 {% endhighlight %}
 {% endtabs %}
+
+## Predecessor Events
+
+### PredecessorChanging event 
+
+An event is raised when a predecessor relationship is about to be added, updated, or removed. The `PredecessorChangingEventArgs` arguments contains following properties.
+
+* `CurrentNode` - Represents the current task node. 
+* `DependencyNodes` - List of tasks this one depends on. 
+* `PredecessorChangeInfo` - Represents the state change of a predecessor relationship within a Gantt chart node. 
+    * `OldValues` - Represents the current task node. 
+    * `NewValues` - List of tasks this one depends on. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:GanttControl x:Name="ganttControl" 
+                         PredecessorChanging="Gantt_PredecessorChanging">
+</syncfusion:GanttControl>
+
+{% endhighlight %}
+{% highlight C# %}
+
+this.ganttControl.PredecessorChanging += Gantt_PredecessorChanging;
+
+private void Gantt_PredecessorChanging(object sender, Syncfusion.Windows.Controls.Gantt.PredecessorChangingEventArgs e)
+{
+    var currentNode = e.CurrentNode;
+    e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### PredecessorChanged event 
+
+An event is raised after a predecessor relationship has been added, updated, or removed. The `PredecessorChangedEventArgs` arguments contains following properties.
+
+* `CurrentNode` - Represents the current task node.
+* `DependencyNodes` -  List of tasks this one depends on. 
+* `PredecessorChangeInfo` - Represents the state change of a predecessor relationship within a Gantt chart node. 
+    * `OldValues` - Represents the current task node. 
+    * `NewValues` - List of tasks this one depends on. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:GanttControl x:Name="ganttControl" 
+                         PredecessorChanged="Gantt_PredecessorChanged">
+</syncfusion:GanttControl>
+
+{% endhighlight %}
+{% highlight C# %}
+
+this.ganttControl.PredecessorChanged += Gantt_PredecessorChanged;
+
+private void Gantt_PredecessorChanged(object sender, Syncfusion.Windows.Controls.Gantt.PredecessorChangedEventArgs e)
+{
+    var currentNode = e.CurrentNode;
+}
+
+{% endhighlight %}
+{% endtabs %}
