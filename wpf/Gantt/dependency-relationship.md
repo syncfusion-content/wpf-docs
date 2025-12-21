@@ -556,8 +556,75 @@ viewModel.TaskCollection[2].Predecessor.Add(new Predecessor()
     GanttTaskRelationship = GanttTaskRelationship.StartToFinish
 });
 
-//To Add the Dynamic Resources   
+// To Add the Dynamic Resources   
 viewModel.TaskCollection[2].Resource.Add(new Resource { ID = 3, Name = "Resource3" });
+
+{% endhighlight %}
+{% endtabs %}
+
+## Events
+
+You can get the node and predecessor relationship details in [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) by using the [PredecessorChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_PredecessorChanging) and [PredecessorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_PredecessorChanged) events. 
+
+### PredecessorChanging event 
+
+This event is raised when a predecessor relationship is about to be added, updated, or removed. The [PredecessorChangingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangingEventArgs.html) provides the following properties:
+
+* [CurrentNode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangingEventArgs.html#Syncfusion_Windows_Controls_Gantt_PredecessorChangingEventArgs_CurrentNode) - Gets the node that is about to undergo a dependency change.
+* [DependencyNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangingEventArgs.html#Syncfusion_Windows_Controls_Gantt_PredecessorChangingEventArgs_DependencyNodes) - Gets the list of all nodes currently linked as dependencies to the task.
+* [PredecessorChangeInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangingEventArgs.html#Syncfusion_Windows_Controls_Gantt_PredecessorChangingEventArgs_PredecessorChangeInfo) - Gets the details of the pending predecessor change, including old and new values.
+    * [OldValues](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangeInfo.html#Syncfusion_Windows_Controls_Gantt_PredecessorChangeInfo_OldValues) - Gets the previous value of the predecessor relationship before the change occurs.
+    * [NewValues](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangeInfo.html#Syncfusion_Windows_Controls_Gantt_PredecessorChangeInfo_NewValues) - Gets the new value of the predecessor relationship after the change occurred.
+
+{% tabs %}
+{% highlight XAML hl_lines="2" %}
+
+<syncfusion:GanttControl x:Name="ganttControl" 
+                         PredecessorChanging="OnGanttPredecessorChanging">
+</syncfusion:GanttControl>
+
+{% endhighlight %}
+{% highlight C# hl_lines="1 5 6 7" %}
+
+this.ganttControl.PredecessorChanging += this.OnGanttPredecessorChanging;
+
+private void OnGanttPredecessorChanging(object sender, PredecessorChangingEventArgs e)
+{
+    var currentNode = e.CurrentNode;
+    var dependencyNodes = e.DependencyNodes;
+    e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### PredecessorChanged event
+
+This event is raised after a predecessor relationship has been added, updated, or removed. The [PredecessorChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangedEventArgs.html) provides the following properties:
+
+* [CurrentNode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangedEventArgs.html#Syncfusion_Windows_Controls_Gantt_PredecessorChangedEventArgs_CurrentNode) - Gets the details of the current node involved in the dependency relationship.
+* [DependencyNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangedEventArgs.html#Syncfusion_Windows_Controls_Gantt_PredecessorChangedEventArgs_DependencyNodes) - Gets the list of all nodes that are linked as dependencies to the current task.
+* [PredecessorChangeInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangedEventArgs.html#Syncfusion_Windows_Controls_Gantt_PredecessorChangedEventArgs_PredecessorChangeInfo) - Gets the details of the predecessor change, including old and new values.
+    * [OldValues](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangeInfo.html#Syncfusion_Windows_Controls_Gantt_PredecessorChangeInfo_OldValues) - Gets the previous value of the predecessor relationship before the change occurs.
+    * [NewValues](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.PredecessorChangeInfo.html#Syncfusion_Windows_Controls_Gantt_PredecessorChangeInfo_NewValues) - Gets the new value of the predecessor relationship after the change occurred.
+
+{% tabs %}
+{% highlight XAML hl_lines="2" %}
+
+<syncfusion:GanttControl x:Name="ganttControl" 
+                         PredecessorChanged="OnGanttPredecessorChanged">
+</syncfusion:GanttControl>
+
+{% endhighlight %}
+{% highlight C# hl_lines="1 5 6" %}
+
+this.ganttControl.PredecessorChanged += this.OnGanttPredecessorChanged;
+
+private void OnGanttPredecessorChanged(object sender, PredecessorChangedEventArgs e)
+{
+    var currentNode = e.CurrentNode;
+    var dependencyNodes = e.DependencyNodes;
+}
 
 {% endhighlight %}
 {% endtabs %}
