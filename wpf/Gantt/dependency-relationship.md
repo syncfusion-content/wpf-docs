@@ -564,7 +564,7 @@ viewModel.TaskCollection[2].Resource.Add(new Resource { ID = 3, Name = "Resource
 
 ## Events
 
-You can get the node and predecessor relationship details in gantt chart by using the [PredecessorChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_PredecessorChanging) and [PredecessorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_PredecessorChanged) events. 
+You can get the node and predecessor relationship details in [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) by using the [PredecessorChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_PredecessorChanging) and [PredecessorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_PredecessorChanged) events. 
 
 ### PredecessorChanging event 
 
