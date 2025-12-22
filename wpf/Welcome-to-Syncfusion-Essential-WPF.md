@@ -193,7 +193,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 			FILE VIEWERS & EDITORS<br/>
 		</td>	
 		<td>
-			<a href="https://help.syncfusion.com/wpf/pdf-viewer/getting-started" >PDF Viewer</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/pdf/pdf-viewer/wpf/getting-started" >PDF Viewer</a><br/>
 		</td>
 	</tr>
 	<tr>
@@ -223,17 +223,17 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 	</tr>	
     <tr>
 		<td>
-			<a href="https://help.syncfusion.com/file-formats/pdf/create-pdf-file-in-wpf" >PDF</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/pdf/pdf-library/net/create-pdf-file-in-wpf" >PDF</a><br/>
 		</td>
 	</tr>
     <tr>
 	    <td>
-			<a href="https://help.syncfusion.com/file-formats/docio/getting-started" >Word</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/word/word-library/net/getting-started" >Word</a><br/>
 		</td>
 	</tr>
     <tr>
 	    <td>
-			<a href="https://help.syncfusion.com/file-formats/presentation/getting-started" >PowerPoint</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/powerpoint/powerpoint-library/net/getting-started" >PowerPoint</a><br/>
 		</td>
 	</tr>
     <tr>
