@@ -332,6 +332,12 @@ The following code example shows the usage of DataTemplate.
 </kanban:SfKanban>
 
 {% endhighlight %}
+{% highlight C# hl_lines="1" %}
+
+this.kanban.IsToolTipEnabled = true;
+this.kanban.ItemsSource = (this.DataContext as KanbanViewModel)?.Tasks;
+
+{% endhighlight %}
 {% highlight C# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
