@@ -31,7 +31,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to PDF file by using [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
+N> SfDataGrid exports data to PDF file by using [Essential PDF](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/overview). You can refer [PDF documentation](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/working-with-document) for manipulating.
 
 ## PDF exporting options
 
