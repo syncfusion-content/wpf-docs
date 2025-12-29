@@ -38,7 +38,7 @@ The Syncfusion WPF DataGrid provides fast, flexible tables for large datasets wi
 #SyncfusionWPFAssistant How to configure in-place editing using numeric, text, date, checkbox, image, combo box, picker, and template editors in the DataGrid.
 {% endpromptcard %}
 {% promptcard Selection and Keyboard Navigation %}
-#SyncfusionWPFAssistant Describe how to enable both single‑row and multiple‑row selection and how to perform programmatic row selection using APIs. Also provide explanation of all supported mouse and keyboard interactions
+#SyncfusionWPFAssistant Describe how to enable both single‑row and multiple‑row selection and how to perform programmatic row selection using APIs. Also provide explanation of all supported mouse and keyboard interactions.
 {% endpromptcard %}
 {% promptcard CRUD Operations %}
 #SyncfusionWPFAssistant Give me the code example to perform full CRUD operations in the Syncfusion WPF DataGrid?
@@ -49,13 +49,13 @@ The Syncfusion WPF DataGrid provides fast, flexible tables for large datasets wi
 {% promptcard Virtual Scrolling %}
 #SyncfusionWPFAssistant How to configure virtual scrolling for large datasets in the DataGrid?
 {% endpromptcard %}
-{% promptcard Multicolumn Grid Setup %}
+{% promptcard Multicolumn DataGrid Setup %}
 #SyncfusionWPFAssistant Create a DataGrid with multiple columns that displays product details and includes features for sorting and filtering.
 {% endpromptcard %}
 {% promptcard Load control in a cell/column %}
 #SyncfusionWPFAssistant How can I integrate or load a WPF control inside each cell or column of the Syncfusion WPF DataGrid?
 {% endpromptcard %}
-{% promptcard Advanced Grid Features %}
+{% promptcard Advanced DataGrid Features %}
 #SyncfusionWPFAssistant Show me a DataGrid with paging, sorting, grouping, filtering, and virtual scrolling.
 {% endpromptcard %}
 {% promptcard Troubleshooting Export %}
