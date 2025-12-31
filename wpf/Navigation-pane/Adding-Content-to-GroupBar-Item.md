@@ -20,11 +20,11 @@ GroupView control can be added to the GroupBar Item by using XAML or C# code. He
 {% highlight xaml %} 
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" Name="groupBar">  
-<!-- Adding GroupBarItem -->  
-<syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem"> 
-<!-- Adding GroupView to GroupBarItem -->  
-<syncfusion:GroupView Name="groupView"/>  
-</syncfusion:GroupBarItem>
+  <!-- Adding GroupBarItem -->  
+  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem"> 
+    <!-- Adding GroupView to GroupBarItem -->  
+    <syncfusion:GroupView Name="groupView"/>  
+  </syncfusion:GroupBarItem>
 </syncfusion:GroupBar> 
 {% endhighlight %} 
 
@@ -61,14 +61,14 @@ GroupView Item can be added to a GroupView using XAML or C# code. Here is the co
 {% highlight xaml %} 
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" Name="groupBar">
-<!-- Adding GroupBarItem --> 
-<syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">  
-<!-- Adding GroupView to GroupBarItem -->   
-<syncfusion:GroupView Name="groupView">     
-<!-- Adding GroupViewItem to GroupView -->   
-<syncfusion:GroupViewItem Name="groupViewItem"                 Text="GroupViewItem"/> 
-</syncfusion:GroupView>  
-</syncfusion:GroupBarItem>
+  <!-- Adding GroupBarItem --> 
+  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">  
+    <!-- Adding GroupView to GroupBarItem -->   
+    <syncfusion:GroupView Name="groupView">     
+      <!-- Adding GroupViewItem to GroupView -->   
+      <syncfusion:GroupViewItem Name="groupViewItem" Text="GroupViewItem"/> 
+    </syncfusion:GroupView>  
+  </syncfusion:GroupBarItem>
 </syncfusion:GroupBar> 
   {% endhighlight %} 
 
@@ -108,41 +108,20 @@ You can add content to the GroupBar Item using a Panel as follows. This is achie
 
 
 {% highlight xaml %}
-
-
-
 <!-- Adding GroupBar -->
-
 <syncfusion:GroupBar Height="200" Width="230" Name="groupBar">
-
-
-
   <!-- Adding GroupBarItem -->
-
   <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">
-
-
-
     <!-- Adding content for groupbar item using panel -->
-
     <StackPanel Orientation="Vertical">
-
       <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>
-
       <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>
-
       <RadioButton Margin="4,2,2,2">Vertical</RadioButton>
-
       <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>
-
       <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>
-
       <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>
-
     </StackPanel>
-
   </syncfusion:GroupBarItem>
-
 </syncfusion:GroupBar>
 
 {% endhighlight %}
