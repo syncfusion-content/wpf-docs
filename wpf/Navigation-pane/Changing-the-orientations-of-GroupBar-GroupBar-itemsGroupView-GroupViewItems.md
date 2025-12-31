@@ -21,38 +21,38 @@ Use the following code snippet to set GroupBar Orientation to Horizontal.
 {% highlight xaml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="300" Width="230" Orientation="Horizontal" Name="groupBar">  
-<!-- Adding GroupBarItem -->  
-<syncfusion:GroupBarItem Name="groupBarItem1" Header="General"> 
-   <!-- Adding content for GroupBar item using GroupView -->
-   <syncfusion:GroupView>     
-   <syncfusion:GroupViewItem Text="List View"/>   
-   <syncfusion:GroupViewItem Text="Show ContextMenu"/>  
-   <syncfusion:GroupViewItem Text="Show ToolTip"/>  
-   </syncfusion:GroupView> 
+   <!-- Adding GroupBarItem -->  
+   <syncfusion:GroupBarItem Name="groupBarItem1" Header="General"> 
+      <!-- Adding content for GroupBar item using GroupView -->
+      <syncfusion:GroupView>     
+         <syncfusion:GroupViewItem Text="List View"/>   
+         <syncfusion:GroupViewItem Text="Show ContextMenu"/>  
+         <syncfusion:GroupViewItem Text="Show ToolTip"/>  
+      </syncfusion:GroupView> 
    </syncfusion:GroupBarItem>  
    <!-- Adding GroupBarItem --> 
    <syncfusion:GroupBarItem Name="groupBarItem2" Header="Visual Mode"> 
-   <!-- Adding content for GroupBar item using GroupView --> 
-   <syncfusion:GroupView>      
-   <syncfusion:GroupViewItem Text="Default"/>  
-   <syncfusion:GroupViewItem Text="Multiple Expansion"/> 
-   <syncfusion:GroupViewItem Text="StackMode"/>  
-   </syncfusion:GroupView>  
+      <!-- Adding content for GroupBar item using GroupView --> 
+      <syncfusion:GroupView>      
+         <syncfusion:GroupViewItem Text="Default"/>  
+         <syncfusion:GroupViewItem Text="Multiple Expansion"/> 
+         <syncfusion:GroupViewItem Text="StackMode"/>  
+      </syncfusion:GroupView>  
    </syncfusion:GroupBarItem>  
    <!-- Adding GroupBarItem -->  
    <syncfusion:GroupBarItem Name="groupBarItem4" Header="Orientation"> 
-   <!-- Adding content for GroupBar item using panel -->  
-   <StackPanel Orientation="Vertical">     
-   <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>   
-   <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>     
-   <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      
-   <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>    
-   <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>   
-   <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>
-   </StackPanel>
+      <!-- Adding content for GroupBar item using panel -->  
+      <StackPanel Orientation="Vertical">     
+         <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>   
+         <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>     
+         <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      
+         <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>    
+         <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>   
+         <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>
+      </StackPanel>
    </syncfusion:GroupBarItem>
-   </syncfusion:GroupBar> 
-   {% endhighlight %} 
+</syncfusion:GroupBar> 
+{% endhighlight %} 
 
 {% highlight C# %}
 //Setting orientation as horizontal
@@ -98,36 +98,39 @@ Use the following code snippet to set GroupView Orientation to Horizontal.
 {% tabs %}
 {% highlight xaml %}
 <!-- Adding GroupBar -->
- <syncfusion:GroupBar Height="300" Width="230" Name="groupBar">
- <!-- Adding GroupBarItem -->
- <syncfusion:GroupBarItem Name="groupBarItem1" Header="General"> 
- <!-- Adding content for GroupBar item using GroupView --> 
- <syncfusion:GroupView Name="groupView" Orientation="Horizontal"> 
- <syncfusion:GroupViewItem Text="List View"/>  
- <syncfusion:GroupViewItem Text="Show ContextMenu"/>  
- <syncfusion:GroupViewItem Text="Show ToolTip"/>  
- </syncfusion:GroupView></syncfusion:GroupBarItem>
- <!-- Adding GroupBarItem -->
- <syncfusion:GroupBarItem Name="groupBarItem2" Header="Visual Mode"> 
- <!-- Adding content for GroupBar item using GroupView --> 
- <syncfusion:GroupView>    
- <syncfusion:GroupViewItem Text="Default"/> 
- <syncfusion:GroupViewItem Text="Multiple Expansion"/> 
- <syncfusion:GroupViewItem Text="StackMode"/> 
- </syncfusion:GroupView></syncfusion:GroupBarItem>
- <!-- Adding GroupBarItem -->
- <syncfusion:GroupBarItem Name="groupBarItem4" Header="Orientation"> 
- <!-- Adding content for GroupBar item using panel --> 
- <StackPanel Orientation="Vertical">   
- <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>    
- <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>
- <RadioButton Margin="4,2,2,2">Vertical</RadioButton>  
- <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>   
- <RadioButton Margin="4,2,2,2">Horizontal</RadioButton> 
- <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton> 
- </StackPanel></syncfusion:GroupBarItem>
- </syncfusion:GroupBar>
- {% endhighlight %} 
+<syncfusion:GroupBar Height="300" Width="230" Name="groupBar">
+   <!-- Adding GroupBarItem -->
+   <syncfusion:GroupBarItem Name="groupBarItem1" Header="General"> 
+      <!-- Adding content for GroupBar item using GroupView --> 
+      <syncfusion:GroupView Name="groupView" Orientation="Horizontal"> 
+         <syncfusion:GroupViewItem Text="List View"/>  
+         <syncfusion:GroupViewItem Text="Show ContextMenu"/>  
+         <syncfusion:GroupViewItem Text="Show ToolTip"/>  
+      </syncfusion:GroupView>
+   </syncfusion:GroupBarItem>
+   <!-- Adding GroupBarItem -->
+   <syncfusion:GroupBarItem Name="groupBarItem2" Header="Visual Mode"> 
+      <!-- Adding content for GroupBar item using GroupView --> 
+      <syncfusion:GroupView>    
+         <syncfusion:GroupViewItem Text="Default"/> 
+         <syncfusion:GroupViewItem Text="Multiple Expansion"/> 
+         <syncfusion:GroupViewItem Text="StackMode"/> 
+      </syncfusion:GroupView>
+   </syncfusion:GroupBarItem>
+   <!-- Adding GroupBarItem -->
+   <syncfusion:GroupBarItem Name="groupBarItem4" Header="Orientation"> 
+      <!-- Adding content for GroupBar item using panel --> 
+      <StackPanel Orientation="Vertical">   
+         <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>    
+         <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>
+         <RadioButton Margin="4,2,2,2">Vertical</RadioButton>  
+         <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>   
+         <RadioButton Margin="4,2,2,2">Horizontal</RadioButton> 
+         <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton> 
+      </StackPanel>
+   </syncfusion:GroupBarItem>
+</syncfusion:GroupBar>
+{% endhighlight %} 
 
 {% highlight C# %}
 //Setting the orientation of GroupView as Horizontal
