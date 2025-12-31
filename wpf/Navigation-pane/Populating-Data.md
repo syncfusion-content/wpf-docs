@@ -20,27 +20,13 @@ Create a GroupBar control in XAML, as seen below.
 {% highlight xaml %}
 
 <syncfusion:GroupBar Name="groupBar1">
-
-<syncfusion:GroupBarItem HeaderText="NewGroupBarItem1" IsSelected="True" >
-
-<syncfusion:GroupView>
-
-<syncfusion:GroupViewItem Text="New GroupViewItem" />
-
-</syncfusion:GroupView>
-
-</syncfusion:GroupBarItem>
-
-
-
-<syncfusion:GroupBarItem HeaderText="NewGroupBarItem2" />
-
-
-
-<syncfusion:GroupBarItem HeaderText="NewGroupBarItem3"  />
-
-
-
+    <syncfusion:GroupBarItem HeaderText="NewGroupBarItem1" IsSelected="True" >
+        <syncfusion:GroupView>
+            <syncfusion:GroupViewItem Text="New GroupViewItem" />
+        </syncfusion:GroupView>
+    </syncfusion:GroupBarItem>
+    <syncfusion:GroupBarItem HeaderText="NewGroupBarItem2" />
+    <syncfusion:GroupBarItem HeaderText="NewGroupBarItem3"  />
 </syncfusion:GroupBar>
 
 {% endhighlight %}
@@ -62,42 +48,19 @@ using Syncfusion.Windows.Tools.Controls;
 Next, create the GroupBar as follows.
 
 
-
 {% highlight C# %}
 
 GroupBar gBar = new GroupBar();
-
-
-
 GroupBarItem gBarItem1 = new GroupBarItem() { HeaderText ="NewGroupBarItem1", 					IsSelected = true };
-
-
-
 GroupView gView = new GroupView();
-
 GroupViewItem gViewItem = new GroupViewItem() { Text="New GroupViewItem"};
-
 gView.Items.Add(gViewItem);
-
-
-
 gBarItem1.Content = gView;
-
-
-
 GroupBarItem gBarItem2 = new GroupBarItem() { HeaderText="NewGroupBarItem2"};
-
 GroupBarItem gBarItem3 = new GroupBarItem() { HeaderText="NewGroupBarItem3"};
-
-
-
 gBar.Items.Add(gBarItem1);
-
 gBar.Items.Add(gBarItem2);
-
 gBar.Items.Add(gBarItem3);
-
-
 
 {% endhighlight %}
 

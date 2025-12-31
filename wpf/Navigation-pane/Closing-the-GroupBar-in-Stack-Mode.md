@@ -18,29 +18,28 @@ Use the below code snippet to set this property.
 {% highlight xaml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" IsCloseButtonEnabled="True" 	IsToolBarEnabled="False" VisualMode="StackMode" Name="groupBar">  
-<!-- Adding GroupBarItem -->  
-<syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem" IsSelected="True">  
-  <!-- Adding content for groupbar item using panel -->   
-  <StackPanel Orientation="Vertical">    
-  <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>    
-  <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton> 
-  <RadioButton Margin="4,2,2,2"  >Vertical</RadioButton>   
-  <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>  
-  <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>    
-  <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton> 
-  </StackPanel>  </syncfusion:GroupBarItem>  
+  <!-- Adding GroupBarItem -->  
+  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem" IsSelected="True">  
+    <!-- Adding content for groupbar item using panel -->   
+    <StackPanel Orientation="Vertical">    
+      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>    
+      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton> 
+      <RadioButton Margin="4,2,2,2"  >Vertical</RadioButton>   
+      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>  
+      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>    
+      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton> 
+    </StackPanel>  </syncfusion:GroupBarItem>  
   <!-- Adding GroupBarItem --> 
   <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">  
-  <!-- Adding content for GroupBar item using GroupView --> 
-  <syncfusion:GroupView Name="groupView" IsListViewMode="True">    
-  <syncfusion:GroupViewItem Text="List View"/>   
-  <syncfusion:GroupViewItem Text="Show ContextMenu"/>   
-  <syncfusion:GroupViewItem Text="Show ToolTip"/>   
-  </syncfusion:GroupView>  
-
+    <!-- Adding content for GroupBar item using GroupView --> 
+    <syncfusion:GroupView Name="groupView" IsListViewMode="True">    
+      <syncfusion:GroupViewItem Text="List View"/>   
+      <syncfusion:GroupViewItem Text="Show ContextMenu"/>   
+      <syncfusion:GroupViewItem Text="Show ToolTip"/>   
+    </syncfusion:GroupView>  
   </syncfusion:GroupBarItem>
-  </syncfusion:GroupBar>
-  {% endhighlight %}
+</syncfusion:GroupBar>
+{% endhighlight %}
 
 {% highlight C# %}
 //Setting the visual mode as stack mode
@@ -58,28 +57,27 @@ User can customize the maximum number of Visible Items to be displayed in the St
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:GroupBar Name="GroupBar" Height="340" VerticalAlignment="Center"
-HorizontalAlignment="Center" VisualMode="StackMode" IsToolBarEnabled="True" StackVisibleItemsCount="2">
-<syncfusion:GroupBarItem x:Name="groupitem1" HeaderText="Mail" HeaderImageSource="Images/mail.png"    >
-<Border >
-<TextBlock Text="GroupBarItem1" />
-</Border>
-</syncfusion:GroupBarItem>
-<syncfusion:GroupBarItem HeaderText="Inbox" HeaderImageSource="Images/inbox.png" >
-<Border >
-<TextBlock Text="GroupBarItem2" />
-</Border>
-</syncfusion:GroupBarItem>
-<syncfusion:GroupBarItem HeaderText="Notes" HeaderImageSource="Images/Notes.png"  >
-<Border >
-<TextBlock Text="GroupBarItem3" />
-</Border>
-</syncfusion:GroupBarItem>
-<syncfusion:GroupBarItem HeaderText="Sent" HeaderImageSource="Images/sent.png" >
-<Border >
-<TextBlock Text="GroupBarItem4" />
-</Border>
-</syncfusion:GroupBarItem>
+<syncfusion:GroupBar Name="GroupBar" Height="340" VerticalAlignment="Center"HorizontalAlignment="Center" VisualMode="StackMode" IsToolBarEnabled="True" StackVisibleItemsCount="2">
+  <syncfusion:GroupBarItem x:Name="groupitem1" HeaderText="Mail" HeaderImageSource="Images/mail.png">
+    <Border >
+      <TextBlock Text="GroupBarItem1" />
+    </Border>
+  </syncfusion:GroupBarItem>
+  <syncfusion:GroupBarItem HeaderText="Inbox" HeaderImageSource="Images/inbox.png" >
+    <Border >
+      <TextBlock Text="GroupBarItem2" />
+    </Border>
+  </syncfusion:GroupBarItem>
+  <syncfusion:GroupBarItem HeaderText="Notes" HeaderImageSource="Images/Notes.png"  >
+    <Border >
+      <TextBlock Text="GroupBarItem3" />
+    </Border>
+  </syncfusion:GroupBarItem>
+  <syncfusion:GroupBarItem HeaderText="Sent" HeaderImageSource="Images/sent.png" >
+    <Border >
+      <TextBlock Text="GroupBarItem4" />
+    </Border>
+  </syncfusion:GroupBarItem>
 </syncfusion:GroupBar>
 
 {% endhighlight %}
