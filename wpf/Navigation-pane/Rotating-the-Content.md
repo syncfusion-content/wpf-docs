@@ -19,21 +19,20 @@ The following code snippet will help you setting this property.
 {% highlight xaml %}
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" ContentRotationAngle="45" Width="230" Name="groupBar"> 
- <!-- Adding GroupBarItem --> 
- <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    
- <!-- Adding content for groupbar item using panel -->  
- <StackPanel Orientation="Vertical">    
- <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>  
- <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal
- </RadioButton>    
- <RadioButton Margin="4,2,2,2">Vertical</RadioButton> 
- <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/> 
- <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>  
- <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>   
- </StackPanel>  
- </syncfusion:GroupBarItem>
- </syncfusion:GroupBar>
- {% endhighlight %}
+    <!-- Adding GroupBarItem --> 
+    <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    
+    <!-- Adding content for groupbar item using panel -->  
+    <StackPanel Orientation="Vertical">    
+        <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>  
+        <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>    
+        <RadioButton Margin="4,2,2,2">Vertical</RadioButton> 
+        <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/> 
+        <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>  
+        <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>   
+    </StackPanel>  
+    </syncfusion:GroupBarItem>
+</syncfusion:GroupBar>
+{% endhighlight %}
 
 {% highlight C# %}
 //Setting the rotation angle as 45
