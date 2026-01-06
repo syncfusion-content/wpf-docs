@@ -31,7 +31,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to excel by using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating exported work sheets. 
+N> SfDataGrid exports data to excel by using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating exported work sheets. 
 
 ## Excel exporting options
 
