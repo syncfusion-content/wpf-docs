@@ -312,8 +312,8 @@ The Syncfusion WPF Ribbon is a command bar that organizes an application’s too
 {% promptcard Theming %}
 #SyncfusionWPFAssistant How to apply Office/Fluent themes and switch themes at runtime for the Ribbon?
 {% endpromptcard %}
-{% promptcard Group Resizing Policies %}
-#SyncfusionWPFAssistant How to configure Ribbon group size definitions (Large, Medium, Small) and item collapsing for narrow widths?
+{% promptcard RibbonButton Sizing %}
+#SyncfusionWPFAssistant What are the available SizeForm modes for a RibbonButton and how do they affect its appearance? 
 {% endpromptcard %}
 {% endpromptcards %}
 
