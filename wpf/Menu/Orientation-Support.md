@@ -116,7 +116,6 @@ When the ExpandMode property is set to ExpandOnClick, you can open the submenu o
     </shared:MenuItemAdv>
     <shared:MenuItemAdv Header="Edit"/>
 </shared:MenuAdv>
-
 {% endhighlight %}
 
 ### Properties
