@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Dropdown customization in WPF Autocomplete control | Syncfusion®
-description: Learn here all about Dropdown customization support in Syncfusion® WPF Autocomplete (SfTextBoxExt) control and more.
-platform: wpf
+title: Dropdown Customization in WPF Autocomplete Control | Syncfusion®
+description: Learn about dropdown customization support in the Syncfusion® WPF Autocomplete (SfTextBoxExt) control and more.
+platform: WPF
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Dropdown customization in WPF Autocomplete (SfTextBoxExt)
+# Dropdown Customization in WPF Autocomplete (SfTextBoxExt)
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties and customizations that deals with drop-down list in the `AutoComplete` control.
+The suggestion box is a drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties and customizations that deal with the drop-down list in the `AutoComplete` control.
 
-## Customize the background 
+## Customize the Background
 
-The [DropDownBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_DropDownBackground) property is used to modify the background color of suggestion box. The following code example demonstrates how to change the background color of suggestion box.
+The [DropDownBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_DropDownBackground) property is used to modify the background color of the suggestion box. The following code example demonstrates how to change the background color of the suggestion box.
 
 {% tabs %}
 
@@ -38,16 +38,15 @@ textBoxExt.DropDownBackground = new SolidColorBrush(Colors.AliceBlue);
 
 ![Dropdown background color](Dropdown_customization_images/drop_down_background_color.png)
 
+## Drop-down Placement
 
-## Drop-down placement 
-
-The [SuggestionBoxPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionBoxPlacement) property, defines the position of pop-up relative to the control. It contains three built-in options:
+The [SuggestionBoxPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionBoxPlacement) property defines the position of the pop-up relative to the control. It contains three built-in options:
 
 1. Top
 2. Bottom
 3. None
 
-The default value is bottom.
+The default value is `Bottom`.
 
 ### Top
 
@@ -133,10 +132,9 @@ textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
 
 ![None](Dropdown_customization_images/None.png)
 
+## Setting the Maximum Height
 
-## Setting the maximum height 
-
-The maximum height of the suggestion box in the AutoComplete control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MaxDropDownHeight) property.
+The maximum height of the suggestion box in the AutoComplete control can be changed using the [MaxDropDownHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MaxDropDownHeight) property.
 
 {% tabs %}
 
@@ -160,9 +158,9 @@ textBoxExt.MaxDropDownHeight = 500;
 
 ![MaxDropDownHeight](Dropdown_customization_images/maximum_drop_down_height.png)
 
-## Open the drop-down on focus 
+## Open the Drop-down on Focus
 
-Suggestion box can be shown whenever the control receives focus using the [ShowSuggestionsOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowSuggestionsOnFocus) property. At that time, suggestion list is the complete list of data source.
+The suggestion box can be shown whenever the control receives focus using the [ShowSuggestionsOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowSuggestionsOnFocus) property. At that time, the suggestion list is the complete list of the data source.
 
 {% tabs %}
 
@@ -186,9 +184,9 @@ textBoxExt.ShowSuggestionsOnFocus = true;
 
 ![ShowSuggestionsOnFocus](Dropdown_customization_images/suggestion_on_focus.png)
 
-## Open drop-down with a delay 
+## Open Drop-down with a Delay
 
-The [PopupDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_PopupDelay) specifies the delay after, which the suggestion pop-up should open. 
+The [PopupDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_PopupDelay) specifies the delay after which the suggestion pop-up should open.
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,7 +207,7 @@ textBoxExt.PopupDelay = new TimeSpan(00,00,02);
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing the SelectedItem background
+## Customizing the Selected Item Background
 
 The [SelectionBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectionBackgroundColor) property is used to set the background color of the selected item in the suggestion box.
 
@@ -238,9 +236,9 @@ textBoxExt.SelectionBackgroundColor = new SolidColorBrush(Colors.Red);
 
 ![Selected item background color](Dropdown_customization_images/SelectionBackgroundColor.png)
 
-## Highlighting matched text in DropDown
+## Highlighting Matched Text in DropDown
 
-`SfTextBoxExt` supports highlighting the first matched item when a dropdown is opened by setting the `AutoHighlightMatchedItem` API to true. The default value is false.
+`SfTextBoxExt` supports highlighting the first matched item when a dropdown is opened by setting the `AutoHighlightMatchedItem` property to true. The default value is false.
 
 {% tabs %}
 
@@ -283,4 +281,4 @@ textBoxExt.SelectionBackgroundColor = new SolidColorBrush(Colors.Red);
 
 ![Highlighted Matched Item](Dropdown_customization_images/highlight_matched_item.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Dropdown-customization) in GitHub
+> **Note:** View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Dropdown-customization) on GitHub

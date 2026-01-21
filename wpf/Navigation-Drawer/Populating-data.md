@@ -1,36 +1,36 @@
 ---
 layout: post
-title: Populating data in WPF Navigation Drawer control | Syncfusion®
-description: Learn here all about Populating data support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
-platform: wpf
+title: Populating Data in WPF Navigation Drawer Control | Syncfusion®
+description: Learn about data population support in the Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control.
+platform: WPF
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Populating data in WPF Navigation Drawer (SfNavigationDrawer)
+# Populating Data in WPF Navigation Drawer (SfNavigationDrawer)
 
-This section explains how to populate the drawer menu. 
+This section explains how to populate data in the drawer menu.
 
-## Populating using built-in items
+## Populating Using Built-in Items
 
-The WPF Navigation Drawer sidebar provides a built-in items support of type [NavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html) that can be populated using the [Items] property.
+The WPF Navigation Drawer sidebar offers built-in item support of the type [NavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html), which can be populated using the `Items` property.
 
-The below properties are available in the `NavigationItem` and can be used to define each item of the navigation menu.
+The following properties are available in the `NavigationItem` and can be used to define each item in the navigation menu:
 
-* **Header** - Represents the content of the `NavigationItem.`
-* **Icon** - Represents the icon in the `NavigationItem.`
-* **IconTemplate** - Used to display the custom icon in the `NavigationItem.` Also see the [IconTemplate](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#icontemplate) section.
-* **IconMemberPath** - Used to display the icon for sub-items, while providing the `ItemsSource.`
-* **DisplayMemberPath** - Used to display the content for sub-items, while providing the `ItemsSource.` Also see the [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section.
-* **ExpanderTemplate** - Used to provide a custom view for the expander icon in both collapsed and expanded state.
-* **Command** — Executes when the item gets clicked. See also [Commands](https://help.syncfusion.com/wpf/navigation-drawer/commands-and-events) section. 
-* **CommandParameter** — [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_CommandParameter) is user defined data value that can be passed to the `Command` when it is executed.
-* **IsChildSelected** — Gets whether any sub item is selected or not. 
-* **ItemType** — Defines the type of navigation item. See also [Different item types](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#different-item-types) section.
-* **IsExpanded** — Gets whether the item is in expanded or collapsed state.
-* **IsSelected** — Gets whether the item is selected or not.
-* **SelectionBackground** — Used to customize the selection indicator in `NavigationItem`.
-* **Items** - Used to populate the sub-items.
+- **Header**: Represents the content of the `NavigationItem`.
+- **Icon**: Represents the icon in the `NavigationItem`.
+- **IconTemplate**: Used to display a custom icon in the `NavigationItem`. See the [IconTemplate](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#icontemplate) section for more details.
+- **IconMemberPath**: Used to display the icon for sub-items when providing the `ItemsSource`.
+- **DisplayMemberPath**: Used to display the content for sub-items when providing the `ItemsSource`. See the [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section for more details.
+- **ExpanderTemplate**: Used to provide a custom view for the expander icon in both collapsed and expanded states.
+- **Command**: Executes when the item is clicked. See the [Commands](https://help.syncfusion.com/wpf/navigation-drawer/commands-and-events) section for more details.
+- **CommandParameter**: [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_CommandParameter) is a user-defined data value that can be passed to the `Command` when it is executed.
+- **IsChildSelected**: Determines whether any sub-item is selected.
+- **ItemType**: Defines the type of navigation item. See the [Different Item Types](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#different-item-types) section for more details.
+- **IsExpanded**: Determines whether the item is expanded or collapsed.
+- **IsSelected**: Determines whether the item is selected.
+- **SelectionBackground**: Used to customize the selection indicator in `NavigationItem`.
+- **Items**: Used to populate the sub-items.
 
 
 
@@ -237,11 +237,11 @@ The below properties are available in the `NavigationItem` and can be used to de
 
 ![Populating with Data in WPF NavigationDrawer](populating_data_images/wpf-navigation-drawer-item.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Populating_With_Items) in GitHub
+> **Note:** View the [sample on GitHub](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Populating_With_Items).
 
 ### IconTemplate
 
-The IconTemplate is used to provide the custom icon for the NavigationItem.
+The `IconTemplate` is used to provide a custom icon for the `NavigationItem`.
 
 ### Model
 
@@ -374,27 +374,25 @@ The IconTemplate is used to provide the custom icon for the NavigationItem.
 
 ![WPF NavigationDrawer with Custom Icon](populating_data_images/wpf-navigation-drawer-custom-icon.png)
 
+### Different Item Types
 
-### Different item types
+The WPF Navigation Drawer includes four built-in item types that can be set for each `NavigationItem`:
 
-The WPF Navigation Drawer has four built-in item types that can be set to each `NavigationItem`.
+- **Tab**: Interactable and supports selection. Supports multi-level population with expand and collapse icons.
+- **Button**: Behaves similarly to button controls. Supports interactions but does not have selection. It supports multi-level populations with expand and collapse icons.
+- **Header**: Functions as a header label. Not selectable and only visible when the drawer menu is expanded.
+- **Separator**: Acts as a separator line. Cannot have sub-items or interactions.
+See also the [Populating Using Built-in Items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
 
-* **Tab** — Interactions can be performed in this type and can have selection. This type supports multi-level population having an expand and collapse icon. 
-* **Button** — This type is similar to a button control behavior.Interactions can be performed and does not have selection. This type supports multi-level population having an expand and collapse icon.
-* **Header** — This item type does not have any interaction or selection and acts like a header label. This item will gets visible only in drawer menu expanded state. This item can be added as a sub item also but cannot have a sub item. 
-* **Separator** — This item type does not have any interaction or selection and acts a separator line. This item can be added as a sub item also but cannot have a sub item. 
-
-See also [Populating using built in items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
-
-N> ItemType default value is Tab.
+> **Note:** The default ItemType value is Tab.
 
 ## Data Binding
 
-The drawer menu can be populated by [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource) property. It can support, bound collection of objects through the `ItemsSource`. 
+The drawer menu can be populated via the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource) property. It supports collections of objects bound through `ItemsSource`.
 
-[ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemTemplate) property used to customize the content of the item, while using the ItemsSource and the icon of the item showing by used the [IconMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IconMemberPath) property. 
+The [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemTemplate) property customizes the item content when using `ItemsSource`, and the [IconMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IconMemberPath) property displays the icon of each item.
 
-See also [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section.
+See the [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section for more details.
 
 ### Model
 
@@ -541,7 +539,7 @@ See also [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-
 
 ## Hierarchical Data Binding
 
-The control populates the items using the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource), also it allows the sub items. 
+The control populates items using the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource), also it allows the sub items.
 
 When using the `ItemsSource` to show the content of the item achieved by [DisplayMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMemberPath) property and [ItemsContainerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemContainerStyle) property used to customize the items and allows to set the `ItemsSource` and `DisplayMemberPath` properties of the sub items.
                                     

@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Ticks in WPF Range Slider control | Syncfusion®
-description: Learn here all about Ticks support in Syncfusion® WPF Range Slider (SfRangeSlider) control, its elements and more.
-platform: wpf
+title: Configuring Ticks in WPF Range Slider Control | Syncfusion®
+description: Discover how to configure ticks in the Syncfusion® WPF Range Slider (SfRangeSlider) control, including frequency, placement, and customization options.
+platform: WPF
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Ticks in WPF Range Slider (SfRangeSlider)
+# Configuring Ticks in WPF Range Slider (SfRangeSlider)
 
-RangeSlider makes it possible to place tick marks along the track in a uniform manner and also to customize the position of the tick marks.
-
+The SfRangeSlider enables the placement of tick marks along the track, allowing for uniform distribution and customization of tick positioning.
 ## Tick Frequency 
 
-The [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~TickFrequency.html) property is used to define the number of ticks along the track, based on Minimum and Maximum values. 
+The [`TickFrequency`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~TickFrequency.html) property defines how many ticks appear along the track, based on defined minimum and maximum values.
 
 {% tabs %}
 
@@ -49,11 +48,11 @@ The [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Sy
 
 ![TickFrequency](Ticks_images/Ticks_img1.png)
 
-N> When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points.
+> **Note**: When `SnapsTo` is set to `Ticks`, `TickFrequency` determines the interval between snap points.
 
-## MinorTickFrequency
+## Minor Tick Frequency
 
-The `MinorTickFrequency` property, determines the number of minor ticks on the track between the major ticks. 
+The `MinorTickFrequency` property sets the number of minor ticks between each major tick on the track.
 
 {% tabs %}
 

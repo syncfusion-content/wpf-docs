@@ -1,29 +1,25 @@
 ---
 layout: post
-title: Intermediate Values in WPF Range Slider control | Syncfusion®
-description: Learn here all about Intermediate Values support in Syncfusion® WPF Range Slider (SfRangeSlider) control and more.
-platform: wpf
+title: Intermediate Values in WPF Range Slider Control | Syncfusion®
+description: Explore how to manage intermediate values in the Syncfusion® WPF Range Slider (SfRangeSlider) control.
+platform: WPF
 control: SfRangeSlider 
 documentation: ug
 ---
 
 # Intermediate Values in WPF Range Slider (SfRangeSlider)
 
-It is possible to get an intermediate value before either the tick value or the step value is snapped when interacting with SfRangeSlider. 
+The Syncfusion SfRangeSlider allows retrieval of intermediate values during interactions, before snapping to either the tick value or step value.
+## IntermediateValue
 
-### IntermediateValue 
+Retrieves the current intermediate value. This property is applicable when `ShowRange` is set to false.
 
-Gets the intermediate value. This works when ShowRange is false. 
+## IntermediateRangeStart
 
-### IntermediateRangeStart  
+Retrieves the current intermediate `RangeStart` value.
 
-Gets the intermediate RangeStart value. 
+## IntermediateRangeEnd
 
-### IntermediateRangeEnd 
+Retrieves the current intermediate `RangeEnd` value.
 
-Gets the intermediate RangeEnd value.  
-
-N> Above properties are read only properties and cannot set through XAML or code behind.
-
-
-
+> **Note**: The above properties are read-only and cannot be set through XAML or code-behind.

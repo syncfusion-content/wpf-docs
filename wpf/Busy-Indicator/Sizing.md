@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sizing in WPF Busy Indicator control | Syncfusion®
-description: Learn here all about Sizing support in Syncfusion® WPF Busy Indicator (SfBusyIndicator) control and more.
-platform: wpf
+title: Sizing in WPF Busy Indicator Control | Syncfusion®
+description: Learn about sizing support in the Syncfusion® WPF Busy Indicator (SfBusyIndicator) control and more.
+platform: WPF
 control: Busy Indicator
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## ViewBoxHeight
 
-The ViewBoxHeight property allows the user to set the height of the ViewBox.
+The `ViewBoxHeight` property allows the user to set the height of the ViewBox.
 
 {% tabs %}
 
@@ -49,13 +49,11 @@ Grid1.Children.Add(SfBusyIndicator)
 
 {% endtabs %}
 
-
-![ViewboxHeight](Sizing_images/Sizing_img1.png)
-
+![ViewBoxHeight](Sizing_images/Sizing_img1.png)
 
 ## ViewBoxWidth
 
-ViewBoxWidth property allows the user to set the width of the ViewBox.
+The `ViewBoxWidth` property allows the user to set the width of the ViewBox.
 
 {% tabs %}
 
@@ -99,10 +97,7 @@ Grid1.Children.Add(SfBusyIndicator)
 
 ![ViewBoxWidth](Sizing_images/Sizing_img2.png)
 
-Busy Indicator with height and width
+Busy Indicator with Height and Width
 {:.caption}
 
-
-
-
-N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Sizing) in GitHub
+> **Note:** View the [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Sizing) on GitHub.

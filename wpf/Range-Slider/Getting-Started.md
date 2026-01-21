@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting Started with WPF Range Slider control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Range Slider (SfRangeSlider) control, its elements and more.
-platform: wpf
+title: Getting Started with WPF Range Slider Control | Syncfusion®
+description: Discover how to integrate and utilize the Syncfusion® WPF Range Slider (SfRangeSlider) control, including its components and features.
+platform: WPF
 control: SfRangeSlider 
 documentation: ug
 ---
 
 # Getting Started with WPF Range Slider (SfRangeSlider)
 
-This section describes how to design a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control in a WPF application and overview of its basic functionalities.
+This section provides a comprehensive guide on designing an [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control in a WPF application and gives an overview of its basic functionalities.
 
-## Assembly deployment
+## Assembly Deployment
 
  Namespace:  Syncfusion.Windows.Controls.Input
 
@@ -63,9 +63,9 @@ The steps to create a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfus
 
 {% endtabs %}
 
-### Adding a control manually in code
+### Adding a Control Manually in Code
 
-The following code sample shows how to create the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) from code-behind.
+The following code demonstrates how to create an [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) in code-behind.
 
 {% tabs %}
 
@@ -89,10 +89,9 @@ SfRangeSlider rangeSlider = new SfRangeSlider()
 
 ## Theme
 
-SfRangeSlider supports various built-in themes. Refer to the below links to apply themes for the SfRangeSlider,
+The SfRangeSlider supports various built-in themes. Use the following resources to apply themes:
 
-  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
-  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+- [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+- [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Setting theme in WPF Range Slider](getting-started_images/wpf-range-slider-theme.png)

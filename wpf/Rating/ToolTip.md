@@ -1,15 +1,15 @@
 ---
 layout: post
-title: ToolTip in WPF Rating control | Syncfusion®
-description: Learn here all about ToolTip support in Syncfusion® WPF Rating (SfRating) control, its elements and more.
-platform: wpf
+title: ToolTip in WPF Rating Control | Syncfusion®
+description: Learn about ToolTip support in the Syncfusion® WPF Rating (SfRating) control, including its features and more.
+platform: WPF
 control: SfRating
 documentation: ug
 ---
 
 # ToolTip in WPF Rating (SfRating)
 
-Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the WPF SfRating control, tooltip shows the data of `Value` property. It will be displayed when the mouse is hovered over the rating items, and it will be disappeared when the mouse is moved from the rating items. The tooltip is enabled or disabled using the `ShowToolTip` property. The default value of this property is true.
+A tooltip provides additional information about objects that may not be immediately recognizable to users and do not have direct UI representation. In the WPF `SfRating` control, the tooltip displays the data of the `Value` property. It appears when the mouse hovers over the rating items and disappears when the mouse is moved away. The tooltip can be enabled or disabled using the `ShowToolTip` property, which defaults to `true`.
 
 {% tabs %}
 
@@ -38,11 +38,11 @@ public MainWindow()
 
 ![SfRating tooltip](images/ToolTip.png)
 
-### Set tooltip precision
+### Set Tooltip Precision
 
-The `AutoToolTipPrecision` property sets the number precisions to be displayed after decimal point in tooltip. To set AutoToolTipPrecision, set the precision mode to `Exact`.
+The `AutoToolTipPrecision` property defines the number of decimal places displayed in the tooltip. To configure `AutoToolTipPrecision`, set the precision mode to `Exact`.
 
-N> The default value of this property is 1.
+> **Note:** The default value of `AutoToolTipPrecision` is 1.
 
 {% tabs %}
 

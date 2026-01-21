@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Customization in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Customization support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
-platform: wpf
+title: Customization in WPF TextInputLayout Control | Syncfusion
+description: Learn about customization support in the Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+platform: WPF
 control: SfTextInputLayout
 documentation: ug
 ---
 
 # Customization in WPF TextInputLayout (SfTextInputLayout)
 
-Based on the text input layout state, the colors will be applied to the hint label, base line, border and assistive labels.
+Based on the text input layout state, colors are applied to the hint label, baseline, border, and assistive labels.
 
-## Focused color
+## Focused Color
 
-When the input view is focused, the value of the `FocusedForeground` property will be added to the hint label, base line and border.
+When the input view is focused, the `FocusedForeground` property value is applied to the hint label, baseline, and border.
 
-I> The cursor color of the input view is the same as the `Accent` color of the  application.
+> **Important:** The cursor color of the input view matches the `Accent` color of the application.
 
 {% tabs %} 
 
@@ -43,13 +43,10 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 ![WPF TextInputLayout Focused color](Images/Focusedcolor.png)
 
-N> The current active color of the text input layout can be obtained from the `ActiveForeground` property.
+> **Note:** The current active color of the text input layout can be obtained from the `ActiveForeground` property. Since error is not a state, the error color will not be set to `ActiveForeground` when the `HasError` property is set to `true`.
+## Unfocused Color
 
-Since error is not a state, the error color will not be set to `ActiveForeground` when `HasError` property is set to `true`.
-
-## Unfocused color
-
-When the input view is unfocused, the `Foreground` property value will be applied to the hint label, base line and border.
+When the input view is unfocused, the `Foreground` property value is applied to the hint label, baseline, and border.
 
 {% tabs %} 
 
@@ -77,9 +74,9 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 ![WPF TextInputLayout Unfocused color](Images/Unfocusedcolor.png)
 
-## Error color
+## Error Color
 
-When the input layout is set to error state, the `ErrorForeground` property value will be added to the hint label, base line, border and error text.
+When the input layout is set to an error state, the `ErrorForeground` property value is applied to the hint label, baseline, border, and error text.
 
 {% tabs %} 
 
@@ -110,8 +107,8 @@ inputLayout.InputView = new TextBox() { Text = "John/" };
 
 ![WPF TextInputLayout Error color](Images/Errorcolor.png)
 
-## Container color
-The color of the container can be customized by setting the `ContainerBackground` property. It is applicable when the `ContainerType` property is set to `Filled` and `Outlined`.
+## Container Color
+The color of the container can be customized by setting the `ContainerBackground` property. It is applicable when the `ContainerType` property is set to `Filled` or `Outlined`.
 
 {% tabs %} 
 
@@ -142,11 +139,11 @@ inputLayout.InputView = new Entry() { TextBox = "John" };
 
 ![WPF TextInputLayout Container color](Images/Containercolor.png)
 
-N> Container color is not applicable for `None' type.
+> **Note:** Container color is not applicable for the `None` type.
 
-## Outline corner radius
+## Outline Corner Radius
 
-The corner radius of the outlined border can be customized by setting `OutlineCornerRadius` property.
+The corner radius of the outlined border can be customized by setting the `OutlineCornerRadius` property.
 
 {% tabs %}
 
@@ -175,5 +172,4 @@ inputLayout.InputView = new TextBox();
 
 ![WPF TextInputLayout Outline radius](Images/outlineradius.png)
 
->**NOTE**
-It is only applicable to the `Outlined` type of container.
+> **Note:** It is only applicable to the `Outlined` type of container.
