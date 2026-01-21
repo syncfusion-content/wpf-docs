@@ -11,6 +11,8 @@ documentation: ug
 
 Backstage is a separate view containing tabs and buttons that can show an application’s information and basic settings. The backstage items can also be arranged at either the top or bottom. It provides different types of animations such as fade, scale, and zoom as well as support to customize the animation duration.
 
+N> The BackStage feature is not available when using the default Ribbon style. In the default style and in older themes, the Ribbon supports only the [`ApplicationMenu`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ApplicationMenu.html). The BackStage feature is supported only in the latest ThemeStudio themes. To use BackStage in your application, you must apply one of the latest ThemeStudio themes.
+
 ## BackStage settings in Ribbon
 
 The BackStage can be added by using [BackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_BackStage) property of Ribbon. To show the BackStage by, click the `FILE` Menu in Ribbon like in Microsoft Outlook. 
