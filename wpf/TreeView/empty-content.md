@@ -30,9 +30,9 @@ treeView.EmptyContent = "No Items";
 {% endhighlight %}
 {% endtabs %}
 
-## Empty Content customization
+## Display Content when TreeView has no items
 
-The `SfTreeView` control allows you to fully customize the empty content appearance by using the `EmptyContentTemplate` property. This property lets you define a custom view and style for the `EmptyContent`.
+The `SfTreeView` control uses the `EmptyContent` property to display a custom view when the tree view has no items.
 
 {% tabs %}
 {% highlight xaml hl_lines="14" %}
@@ -61,7 +61,6 @@ The `SfTreeView` control allows you to fully customize the empty content appeara
         AutoExpandMode="AllNodes"
         FocusVisualStyle="{x:Null}"
         IsAnimationEnabled="True"
-        EmptyContent="No Items"
         ItemsSource="{Binding CollectionView}"
         ChildPropertyName="SubFiles">
         <syncfusion:SfTreeView.ItemTemplate>
@@ -77,6 +76,13 @@ The `SfTreeView` control allows you to fully customize the empty content appeara
                 <local:TreeViewFilterTrigger/>
             </behavior:EventTrigger>
         </behavior:Interaction.Triggers>
+        <syncfusion:SfTreeView.EmptyContent>
+            <Border Padding="10" BorderBrush="Blue" 
+                    BorderThickness="2" CornerRadius="6">
+                <TextBlock Text="No Items Found"
+                           FontSize="16" FontWeight="Bold"/>
+            </Border>
+        </syncfusion:SfTreeView.EmptyContent>
     </syncfusion:SfTreeView>
 </Grid>
 
@@ -152,6 +158,30 @@ public class FileManagerViewModel : NotificationObject
 N> The view displayed by the `EmptyContent` can be a single view or a view that includes multiple child views.
 
 ![EmptyContent in WPF TreeView](EmptyContent_images\wpf-treeview-emptycontent.gif)
+
+## Empty view customization
+
+The `SfTreeView` control allows you to fully customize the empty view appearance by using the `EmptyContentTemplate` property. This property lets you define a custom view and style for the `EmptyContent`.
+
+{% tabs %}
+{% highlight xaml hl_lines="14" %}
+<Grid>
+    <syncfusion:SfTreeView x:Name="treeView"
+                           ItemsSource="{Binding CollectionView}"
+                           AutoExpandMode="AllNodesExpanded">
+
+        <syncfusion:SfTreeView.EmptyContentTemplate>
+            <DataTemplate>
+                <Border>
+                      ....
+                </Border>
+            </DataTemplate>
+        </syncfusion:SfTreeView.EmptyContentTemplate>
+    </syncfusion:SfTreeView>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
 
 N>
 * The `EmptyContentTemplate` will only be applied when the `EmptyContent` property is explicitly defined. If `EmptyContent` is not set, the template will not be displayed.
