@@ -16,14 +16,14 @@ The [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.
 The `EmptyContent` property in `SfTreeView` can be set to a string, which will be displayed when no items are present in the tree view.
 
 {% tabs %}
-{% highlight xaml hl_lines="3" %}
+{% highlight xaml %}
   <syncfusion:SfTreeView x:Name="treeView"
                          ItemsSource="{Binding Items}"
                          EmptyContent="No Items">
   </syncfusion:SfTreeView>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# hl_lines="3" %}
+{% highlight c# %}
 SfTreeView treeView = new SfTreeView();
 treeView.ItemsSource = viewModel.Items;
 treeView.EmptyContent = "No Items";
@@ -32,11 +32,10 @@ treeView.EmptyContent = "No Items";
 
 ## Display Content when TreeView has no items
 
-The `SfTreeView` control uses the `EmptyContent` property to display a custom view when the tree view has no items.
+The `SfTreeView` control allows you to fully customize the empty Content appearance by using the `EmptyContentTemplate` property. This property lets you define a custom view and style for the `EmptyContent`.
 
 {% tabs %}
-{% highlight xaml hl_lines="14" %}
-
+{% highlight xaml %}
 <Window x:Class="syncfusion.treeviewdemos.wpf.FilteringDemo"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -78,20 +77,20 @@ The `SfTreeView` control uses the `EmptyContent` property to display a custom vi
                 <local:TreeViewFilterTrigger/>
             </behavior:EventTrigger>
         </behavior:Interaction.Triggers>
-        <syncfusion:SfTreeView.EmptyContent>
-            <Border Padding="10" BorderBrush="Blue" 
-                    BorderThickness="2" CornerRadius="6">
-                <TextBlock Text="No Items Found"
-                           FontSize="16" FontWeight="Bold"/>
-            </Border>
-        </syncfusion:SfTreeView.EmptyContent>
+         <syncfusion:SfTreeView.EmptyContentTemplate>
+            <DataTemplate>
+                <Border Padding="10" BorderBrush="Blue" 
+                        BorderThickness="2" CornerRadius="6">
+                    <TextBlock Text="No Items Found"
+                               FontSize="16" FontWeight="Bold"/>
+                </Border>
+            </DataTemplate>
+        </syncfusion:SfTreeView.EmptyContentTemplate>
     </syncfusion:SfTreeView>
 </Grid>
 
 {% endhighlight %}
-{% highlight c# hl_lines="34" %}
-
-
+{% highlight c# %}
 public class FileManagerViewModel : NotificationObject
 {
     private ObservableCollection<FileManager> imageNodeInfo;
@@ -157,35 +156,31 @@ public class FileManagerViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-N> The view displayed by the `EmptyContent` can be a single view or a view that includes multiple child views.
-
 ![EmptyContent in WPF TreeView](EmptyContent_images\wpf-treeview-emptycontent.gif)
 
-## Empty Content customization
+## Binding for Empty Content Customization
 
-The `SfTreeView` control allows you to fully customize the empty Content appearance by using the `EmptyContentTemplate` property. This property lets you define a custom view and style for the `EmptyContent`.
+The `SfTreeView` control allows data binding, enabling you to dynamically update the empty content based on values provided by the ViewModel.
 
 {% tabs %}
-{% highlight xaml hl_lines="14" %}
+{% highlight xaml %}
 <Grid>
     <syncfusion:SfTreeView x:Name="treeView"
-                           ItemsSource="{Binding CollectionView}"
-                           AutoExpandMode="AllNodes">
-
-        <syncfusion:SfTreeView.EmptyContentTemplate>
-            <DataTemplate>
-                <Border>
-                      ....
-                </Border>
-            </DataTemplate>
-        </syncfusion:SfTreeView.EmptyContentTemplate>
-    </syncfusion:SfTreeView>
+                               ItemsSource="{Binding Items}"
+                               EmptyContent="{Binding EmptyContentText}">
 </Grid>
 
 {% endhighlight %}
+{% highlight c# %}
+public class EmptyContentSampleViewModel 
+{
+    private string _emptyContentText = "No items to display";
+    public string EmptyContentText
+    {
+        get {return _emptyContentText;}
+        set { _emptyContentText = value;}
+    }
+}
+{% endhighlight %}
 {% endtabs %}
-
-N>
-* The `EmptyContentTemplate` will only be applied when the `EmptyContent` property is explicitly defined. If `EmptyContent` is not set, the template will not be displayed.
-* `EmptyContent` can be set to custom data model and the appearance of the `EmptyContent` can be customized by using the `EmptyContentTemplate`.
 
