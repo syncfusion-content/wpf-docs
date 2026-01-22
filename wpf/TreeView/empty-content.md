@@ -40,10 +40,12 @@ The `SfTreeView` control uses the `EmptyContent` property to display a custom vi
 <Window x:Class="syncfusion.treeviewdemos.wpf.FilteringDemo"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:democommon="clr-namespace:syncfusion.demoscommon.wpf;assembly=syncfusion.demoscommon.wpf"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:syncfusion.treeviewdemos.wpf"
         xmlns:behavior="http://schemas.microsoft.com/xaml/behaviors"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d">
 
     <Window.DataContext>
         <local:FileManagerViewModel/>
@@ -159,16 +161,16 @@ N> The view displayed by the `EmptyContent` can be a single view or a view that 
 
 ![EmptyContent in WPF TreeView](EmptyContent_images\wpf-treeview-emptycontent.gif)
 
-## Empty view customization
+## Empty Content customization
 
-The `SfTreeView` control allows you to fully customize the empty view appearance by using the `EmptyContentTemplate` property. This property lets you define a custom view and style for the `EmptyContent`.
+The `SfTreeView` control allows you to fully customize the empty Content appearance by using the `EmptyContentTemplate` property. This property lets you define a custom view and style for the `EmptyContent`.
 
 {% tabs %}
 {% highlight xaml hl_lines="14" %}
 <Grid>
     <syncfusion:SfTreeView x:Name="treeView"
                            ItemsSource="{Binding CollectionView}"
-                           AutoExpandMode="AllNodesExpanded">
+                           AutoExpandMode="AllNodes">
 
         <syncfusion:SfTreeView.EmptyContentTemplate>
             <DataTemplate>
