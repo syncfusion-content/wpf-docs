@@ -31,7 +31,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to excel by using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating exported work sheets. 
+N> SfDataGrid exports data to excel by using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating exported work sheets. 
 
 ## Excel exporting options
 
@@ -188,7 +188,7 @@ workBook.SaveAs(fileStream);
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/faq). 
+You can refer [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/faq). 
 
 ### Save using File dialog
 
@@ -315,7 +315,7 @@ workBook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default);
 {% endhighlight %}
 {% endtabs %}
 
-It is also possible to save worksheet as HTML by using [SaveAsHtml](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsHtml_System_IO_Stream_) method. You can refer [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html) for this.
+It is also possible to save worksheet as HTML by using [SaveAsHtml](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsHtml_System_IO_Stream_) method. You can refer [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet#save-worksheet-as-html) for this.
 
 ## Export DataGrid to Mail
 
@@ -398,11 +398,11 @@ workBook.SaveAs("Sample.csv", ",");
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can save exported worksheet also to CSV. You can refer [XlsIO documentation.](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-csv) 
+Similarly, you can save exported worksheet also to CSV. You can refer [XlsIO documentation.](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet#save-worksheet-as-csv) 
 
 ## Row Height and Column Width customization 
 
-After exporting data to excel, you can set different row height and column width for the columns based on your requirement. You can refer [here](https://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information. 
+After exporting data to excel, you can set different row height and column width for the columns based on your requirement. You can refer [here](https://help.syncfusion.com/document-processing/excel/excel-library/net/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information. 
 
 {% tabs %}
 {% highlight c# %}
@@ -559,7 +559,7 @@ Here, `OrderID` column cells are customized while exporting.
 
 ## Customize exported workbook and worksheet
 
-SfDataGrid exports to excel by using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
+SfDataGrid exports to excel by using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
 
 ### Workbook
 SfDataGrid provides option to return [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html) from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving. 
@@ -590,7 +590,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-Before saving workbook, you need to set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_Version) property. Here, you can directly manipulate the data in the worksheet. You can refer [here](https://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information.
+Before saving workbook, you need to set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_Version) property. Here, you can directly manipulate the data in the worksheet. You can refer [here](https://help.syncfusion.com/document-processing/excel/excel-library/net/worksheet-rows-and-columns-manipulation) for more information.
 
 #### Setting borders
 
@@ -757,7 +757,7 @@ You can perform cell level customization such as row-level styling, formatting p
 In the below code snippet, NumberFormat for `Unit Price` column is changed in the exported sheet after exporting without using `CellsExportingEventHandler`. 
 
 Reference:
-[https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+[https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-cell-or-range-formatting](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-cell-or-range-formatting)
 
 {% tabs %}
 {% highlight c# %}
@@ -778,7 +778,7 @@ workBook.ActiveSheet.Columns[4].NumberFormat = "0.0";
 In the below code snippet, the background color of rows in excel is changed based on row index using conditional formatting for better performance.
 
 Reference:
-[https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
+[https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-conditional-formatting](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-conditional-formatting)
 
 {% tabs %}
 {% highlight c# %}

@@ -31,7 +31,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to PDF file by using [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
+N> SfDataGrid exports data to PDF file by using [Essential PDF](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/overview). You can refer [PDF documentation](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/working-with-document) for manipulating.
 
 ## PDF exporting options
 
@@ -289,7 +289,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/open-and-save-pdf-file-in-c-sharp-vb-net#saving-a-pdf-document-to-file-system). 
+You can refer [PDF documentation](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/open-and-save-pdf-file-in-c-sharp-vb-net#saving-a-pdf-document-to-file-system). 
 
 ### Save as stream
 
@@ -304,7 +304,7 @@ fileStream.Close();
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/open-and-save-pdf-file-in-c-sharp-vb-net#saving-a-pdf-document-to-stream). 
+You can refer [PDF documentation](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/open-and-save-pdf-file-in-c-sharp-vb-net#saving-a-pdf-document-to-stream). 
 
 ### Save using File dialog
 
