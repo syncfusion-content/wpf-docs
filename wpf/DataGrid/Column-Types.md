@@ -1338,7 +1338,7 @@ Private Sub sfDataGrid1_CellCheckBoxClick(ByVal sender As Object, ByVal e As Cel
     End If
 End Sub
 {% endhighlight %}
-{% tabs %}
+{% endtabs %}
 
 
 ## GridTemplateColumn
@@ -2417,7 +2417,7 @@ Private Sub sfDataGrid1_CellCheckBoxClick(ByVal sender As Object, ByVal e As Cel
     End If
 End Sub
 {% endhighlight %}
-{% tabs %}
+{% endtabs %}
 
 ### Limitations
 
