@@ -1323,7 +1323,6 @@ void sfDataGrid1_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
         e.Cancel = true;
     else if (e.RowIndex == 2)
         e.NewValue = CheckState.Checked;
-
 }
 {% endhighlight %}
 
@@ -2402,7 +2401,6 @@ void sfDataGrid1_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
         e.Cancel = true;
     else if (e.RowIndex == 2)
         e.NewValue = CheckState.Checked;
-
 }
 {% endhighlight %}
 
