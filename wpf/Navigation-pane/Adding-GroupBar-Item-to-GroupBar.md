@@ -16,7 +16,7 @@ GroupBar Item is added to the GroupBar using XAML or C# code. The following code
 {% highlight xaml %} 
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" Width="230" Name="groupBar"> 
- 	<!-- Adding GroupBarItem -->  
+ <!-- Adding GroupBarItem -->  
     <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem"/>
 </syncfusion:GroupBar> 
  {% endhighlight %} 
