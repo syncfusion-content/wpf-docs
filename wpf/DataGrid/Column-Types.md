@@ -1315,9 +1315,9 @@ The checkbox state change can be canceled by setting `CellCheckBoxClickEventArgs
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.CellCheckBoxClick += sfDataGrid1_CellCheckBoxClick;
+this.sfDataGrid1.CellCheckBoxClick += OnCellCheckBoxClick;
 
-void sfDataGrid1_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
+void OnCellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
 {
     if (e.RowIndex == 1)
         e.Cancel = true;
@@ -1327,9 +1327,9 @@ void sfDataGrid1_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
 {% endhighlight %}
 
 {% highlight VB.NET %}
-AddHandler sfDataGrid1.CellCheckBoxClick, AddressOf SfDataGrid1_CellCheckBoxClick
+AddHandler sfDataGrid1.CellCheckBoxClick, AddressOf OnCellCheckBoxClick
 	
-Private Sub sfDataGrid1_CellCheckBoxClick(ByVal sender As Object, ByVal e As CellCheckBoxClickEventArgs)
+Private Sub OnCellCheckBoxClick(ByVal sender As Object, ByVal e As CellCheckBoxClickEventArgs)
 	If e.RowIndex = 1 Then
 		e.Cancel = True
     ElseIf e.RowIndex = 2 Then
@@ -2393,9 +2393,9 @@ Based on this, the selection state is not changed when `e.Cancel` is set to true
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.CellCheckBoxClick += sfDataGrid1_CellCheckBoxClick;
+this.sfDataGrid1.CellCheckBoxClick += OnCellCheckBoxClick;
 
-void sfDataGrid1_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
+void OnCellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
 {
     if (e.RowIndex == 1)
         e.Cancel = true;
@@ -2405,9 +2405,9 @@ void sfDataGrid1_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
 {% endhighlight %}
 
 {% highlight VB.NET %}
-AddHandler sfDataGrid1.CellCheckBoxClick, AddressOf SfDataGrid1_CellCheckBoxClick
+AddHandler sfDataGrid1.CellCheckBoxClick, AddressOf OnCellCheckBoxClick
 	
-Private Sub sfDataGrid1_CellCheckBoxClick(ByVal sender As Object, ByVal e As CellCheckBoxClickEventArgs)
+Private Sub OnCellCheckBoxClick(ByVal sender As Object, ByVal e As CellCheckBoxClickEventArgs)
 	If e.RowIndex = 1 Then
 		e.Cancel = True
     ElseIf e.RowIndex = 2 Then
