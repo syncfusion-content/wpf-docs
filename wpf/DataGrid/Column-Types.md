@@ -1339,7 +1339,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-
 ## GridTemplateColumn
 
 `GridTemplateColumn` derived from `GridTextColumnBase` and it displays the template-specified cell content. You can load any WPF control in the display mode for all columns by setting [CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplate) and [EditTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html#Syncfusion_UI_Xaml_Grid_GridTemplateColumn_EditTemplate)   properties.
