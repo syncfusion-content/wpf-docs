@@ -213,7 +213,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 
 ![Copy to Clipboard based on Mapping Name in WPF TreeGrid](Clipboard-Operations_images/wpf-treegrid-clipboard-copy-based-on-mapping-name.jpeg)
 
-N> When `GridCopyOption` with `IncludeHeaders` (CopyData, IncludeHeaders / CutData, IncludeHeaders), the `CopyGridCellContent` event also fires for header rows, causing e.RowData to be `null`.
+N> When [GridCopyOption](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridCopyOption) with [IncludeHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) (CopyData, IncludeHeaders / CutData, IncludeHeaders), the `CopyGridCellContent` event also fires for header rows, causing e.RowData to be `null`.
 With CopyData or CutData (without headers), the event fires only for data rows, and RowData is populated correctly.
 
 ### PasteCellContent
