@@ -22,15 +22,14 @@ The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncf
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                                       AutoExpandMode="RootNodesExpanded"
-                                       AutoGenerateColumns="False" 
-                                       NavigationMode="Row"
-                                       ChildPropertyName="Children"
-                                       SelectionMode="Single"
-                                       ColumnSizer="Star" 
-                                       ExpanderColumn="FirstName"
-                                       ItemsSource="{Binding PersonDetails}"
-                                       >
+                       AutoExpandMode="RootNodesExpanded"
+                       AutoGenerateColumns="False" 
+                       NavigationMode="Row"
+                       ChildPropertyName="Children"
+                       SelectionMode="Single"
+                       ColumnSizer="Star" 
+                       ExpanderColumn="FirstName"
+                       ItemsSource="{Binding PersonDetails}">
 {% endhighlight %}
 {% endtabs %}
 
