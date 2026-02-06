@@ -17,7 +17,7 @@ Keyboard navigation through the cells and rows is determined based on the [Navig
 
 ## Selection modes
 
-The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) properties together define the behavior of selection in SfTreeGrid. If the `SelectionMode` is [Single](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can able to select single row or cell, and if the `SelectionMode` is `Extended` or `Multiple`, you can able to select multiple rows or cells. If you want to disable the selection you need to set `SelectionMode` as `None`.
+The [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionUnit) and [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) properties together define the behavior of selection in SfTreeGrid. If the `SelectionMode` is [Single](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can able to select single row or cell, and if the `SelectionMode` is `Extended` or `Multiple`, you can able to select multiple rows or cells. If you want to disable the selection you need to set `SelectionMode` as `None`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -111,9 +111,7 @@ You can get all the selected records using the [SelectedItems](https://help.sync
 
 ### Cell Selection
 
-You can get all selected cells information through `SfTreeGrid.SelectionController.SelectedCells` property which is the collection of [TreeGridCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCellInfo.html).
-
-You can get the selected cells as `TreeGridCellInfo` collection by using [GetSelectedCells](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_GetSelectedCells) method.
+You can get the selected cells as [TreeGridCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCellInfo.html) collection by using [GetSelectedCells](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_GetSelectedCells) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -135,13 +133,13 @@ Both [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.S
 You can select a single row or cell by setting the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property or [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedIndex) property.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="C# [SelectedIndex]" %}
 
 var recordIndex = this.treeGrid.ResolveToNodeIndex(6);
 this.treeGrid.SelectedIndex = recordIndex;
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# tabtitle="C# [SelectedItem]" %}
 
 var node = this.treeGrid.GetNodeAtRowIndex(6);
 this.treeGrid.SelectedItem = node.Item;

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard Operations in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Clipboard Operations support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
+title: Clipboard Operations in WPF TreeGrid control | SyncfusionÂ®
+description: Learn here all about Clipboard Operations support in SyncfusionÂ® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -354,7 +354,7 @@ this.treeGrid.TreeGridCopyPaste.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-Cut the entire column in tree grid by using **SelectCells** method and `Cut` method in `GridCopyPaste` of SfDataGrid.
+Cut the entire column in tree grid by using **SelectCells** method and `Cut` method in `GridCopyPaste` of SfTreeGrid.
 
 {% tabs %}
 {% highlight c# %}
