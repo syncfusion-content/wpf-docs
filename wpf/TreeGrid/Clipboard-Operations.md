@@ -50,6 +50,8 @@ this.treeGrid.GridCopyOption = GridCopyOption.CopyData | GridCopyOption.IncludeH
 
 ![Copy to Clipboard in WPF TreeGrid](Clipboard-Operations_images/wpf-treegrid-clipboard-copy.jpeg)
 
+N> `IncludeHiddenColumn` is not supported when **SelectionUnit** is [Cell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html).
+
 ## Paste
 
 The paste operation works based on the [GridPasteOption](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridPasteOption) property.
@@ -211,6 +213,9 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 
 ![Copy to Clipboard based on Mapping Name in WPF TreeGrid](Clipboard-Operations_images/wpf-treegrid-clipboard-copy-based-on-mapping-name.jpeg)
 
+N> When [GridCopyOption](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridCopyOption) with [IncludeHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) (CopyData, IncludeHeaders / CutData, IncludeHeaders), the `CopyGridCellContent` event also fires for header rows, causing e.RowData to be `null`.
+With CopyData or CutData (without headers), the event fires only for data rows, and RowData is populated correctly.
+
 ### PasteCellContent
 
 The [PasteGridCellContent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when a cell is being pasted. The [GridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCopyPasteCellEventArgs.html) provides information to the `PasteGridCellContent` event, which has the following members:
@@ -268,7 +273,7 @@ private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEvent
 
 ### Copy the node
 
-You can copy the selected nodes in tree grid using the [Copy](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Copy) method in [TreeGridCopyPaste](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of tree grid.
+You can copy the selected nodes or cells in tree grid using the [Copy](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Copy) method in [TreeGridCopyPaste](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of tree grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -278,7 +283,7 @@ this.treeGrid.TreeGridCopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-Copy a record by selecting the record using the [MoveCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridBaseSelectionController.html#Syncfusion_UI_Xaml_Grid_GridBaseSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_System_Boolean_) method and [Copy](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Copy) method in [TreeGridCopyPaste](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of treegrid.
+Copy a record by selecting the record using the [MoveCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridBaseSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridBaseSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_System_Boolean_) method and [Copy](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Copy) method in [TreeGridCopyPaste](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of treegrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -295,6 +300,15 @@ Copy the multiple records by selecting a group of records using the SelectRows m
 {% tabs %}
 {% highlight c# %}
 this.treeGrid.SelectionController.SelectRows(2, 10);
+this.treeGrid.TreeGridCopyPaste.Copy();
+{% endhighlight %}
+{% endtabs %}
+
+Copy the multiple cells by selecting group of cells using **SelectCells** method and `Copy` method in `GridCopyPaste` of tree grid.
+
+{% tabs %}
+{% highlight c# %}
+this.treeGrid.SelectCells(this.treeGrid.GetNodeAtRowIndex(10).Item, this.treeGrid.Columns[1], this.treeGrid.GetNodeAtRowIndex(12).Item, this.treeGrid.Columns[3]);
 this.treeGrid.TreeGridCopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
@@ -340,7 +354,18 @@ this.treeGrid.TreeGridCopyPaste.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-### Customize the copy and paste behaviors
+Cut the entire column in tree grid by using **SelectCells** method and `Cut` method in `GridCopyPaste` of SfTreeGrid.
+
+{% tabs %}
+{% highlight c# %}
+var firstRowData = this.treeGrid.GetNodeAtRowIndex(treeGrid.GetFirstDataRowIndex()).Item;
+var lastRowData = this.treeGrid.GetNodeAtRowIndex(treeGrid.GetLastDataRowIndex()).Item;
+this.treeGrid.SelectCells(firstRowData, this.treeGrid.Columns[2], lastRowData, this.treeGrid.Columns[2]);
+this.treeGrid.TreeGridCopyPaste.Cut();
+{% endhighlight %}
+{% endtabs %}
+
+## Customize the copy and paste behaviors
 
 The tree grid processes the clipboard operations in the [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class. You can customize the default copy paste behaviors by overriding the TreeGridCutCopyPaste class and set it to `SfTreeGrid.TreeGridCopyPaste`.
 
@@ -359,6 +384,56 @@ public MainWindow()
 {
     InitializeComponent();
     this.treeGrid.TreeGridCopyPaste = new CustomCopyPaste(this.treeGrid);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Paste a cell into many cells in WPF TreeGrid
+
+By default, you can copy one cell and paste it into another cell when Cell Selection is enabled in SfTreeGrid. The below code shows how to copy one cell and paste it into all the selected cells by overriding [PasteCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_PasteCell_System_Object_Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_System_Object_) method in [GridCutCopyPaste](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomTreeGridCutCopyPaste : TreeGridCutCopyPaste
+{
+    public CustomTreeGridCutCopyPaste(SfTreeGrid treeGrid) : base(treeGrid)
+    {
+    }
+    protected override void PasteCell(object record, TreeGridColumn column, object value)
+    {
+        var text = Clipboard.GetText();
+
+        string[] clipBoardText = Regex.Split(text, @"\r\n");
+
+        clipBoardText = Regex.Split(clipBoardText[0], @"\t");
+
+        //Get the clipBoardText and check if the clipBoardText is more than one cell
+
+        //means call the base.
+
+        if (clipBoardText.Count() > 1)
+        {
+            base.PasteCell(record, column, value);
+        }
+
+        //Get the selectedCells for paste the copied cell 
+        var selectedCells = this.TreeGrid.GetSelectedCells();
+        int selectedCellsCount = selectedCells.Count;
+
+        for (int i = 0; i < selectedCellsCount; i++)
+        {
+            record = selectedCells[i].RowData;
+
+            column = selectedCells[i].Column;
+
+            //Call PasteToCell method with particular record of selectedCells,
+
+            //Column of selected records and rowData
+
+            if (record != null && column != null)
+                base.PasteCell(record, column, value);
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}
