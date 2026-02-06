@@ -651,7 +651,7 @@ private void TreeGrid_CurrentCellActivating(object sender, Syncfusion.UI.Xaml.Gr
 {% endhighlight %}
 {% endtabs %}
 
-You can cancel the current cell moving process within this event by setting [GridCurrentCellActivatingEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) to true.
+You can cancel the current cell moving process within this event by setting [GridCurrentCellActivatingEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.SyncfusionCancelRoutedEventArgs.html#Syncfusion_Windows_ComponentModel_SyncfusionCancelRoutedEventArgs_Cancel) to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -780,16 +780,15 @@ You can change the selection background and foreground using the [SelectionBackG
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                                           Grid.Row="0"
-                                           AutoExpandMode="RootNodesExpanded"
-                                           AutoGenerateColumns="False"
-                                           SelectionMode="Multiple"
-                                           ChildPropertyName="ReportsTo"
-                                           SelectionChanged="TreeGrid_SelectionChanged"
-                                           ItemsSource="{Binding EmployeeInfo}"
-                                           SelectionBackground="SkyBlue"
-                                           SelectionForeground="DarkBlue"
-                                         >
+                       Grid.Row="0"
+                       AutoExpandMode="RootNodesExpanded"
+                       AutoGenerateColumns="False"
+                       SelectionMode="Multiple"
+                       ChildPropertyName="ReportsTo"
+                       SelectionChanged="TreeGrid_SelectionChanged"
+                       ItemsSource="{Binding EmployeeInfo}"
+                       SelectionBackground="SkyBlue"
+                       SelectionForeground="DarkBlue" >
 {% endhighlight %}
 {% endtabs %}
 
@@ -802,19 +801,18 @@ You can change the current cell border thickness and border color using the [Cur
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                                           Grid.Row="0"
-                                           AutoExpandMode="RootNodesExpanded"
-                                           AutoGenerateColumns="False"
-                                           SelectionMode="Multiple"
-                                           ChildPropertyName="ReportsTo"
-                                           SelectionChanged="TreeGrid_SelectionChanged"
-                                           ItemsSource="{Binding EmployeeInfo}"
-                                           LiveNodeUpdateMode="AllowDataShaping"
-                                           ParentPropertyName="ID"
-                                           SelectedIndex="0"
-                                           CurrentCellBorderBrush="Red"
-                                           CurrentCellBorderThickness="1.6"
-                                         >
+                       Grid.Row="0"
+                       AutoExpandMode="RootNodesExpanded"
+                       AutoGenerateColumns="False"
+                       SelectionMode="Multiple"
+                       ChildPropertyName="ReportsTo"
+                       SelectionChanged="TreeGrid_SelectionChanged"
+                       ItemsSource="{Binding EmployeeInfo}"
+                       LiveNodeUpdateMode="AllowDataShaping"
+                       ParentPropertyName="ID"
+                       SelectedIndex="0"
+                       CurrentCellBorderBrush="Red"
+                       CurrentCellBorderThickness="1.6">
 {% endhighlight %}
 {% endtabs %}
 
