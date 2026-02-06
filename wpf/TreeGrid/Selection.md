@@ -48,15 +48,14 @@ When using `Extended`, you can select multiple rows or cells by pressing the key
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                                       AutoExpandMode="RootNodesExpanded"
-                                       AutoGenerateColumns="False" 
-                                       NavigationMode="Row"
-                                       ChildPropertyName="Children"
-                                       SelectionMode="Extended"
-                                       ColumnSizer="Star" 
-                                       ExpanderColumn="FirstName"
-                                       ItemsSource="{Binding PersonDetails}"
-                                       >
+                       AutoExpandMode="RootNodesExpanded"
+                       AutoGenerateColumns="False" 
+                       NavigationMode="Row"
+                       ChildPropertyName="Children"
+                       SelectionMode="Extended"
+                       ColumnSizer="Star" 
+                       ExpanderColumn="FirstName"
+                       ItemsSource="{Binding PersonDetails}">
 {% endhighlight %}
 {% endtabs %}
 
