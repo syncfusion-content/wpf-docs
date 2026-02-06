@@ -1310,6 +1310,35 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 
 * [HorizontalAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html#Syncfusion_UI_Xaml_Grid_GridCheckBoxColumn_HorizontalAlignment) - You can change the horizontal alignment of CheckBox using `HorizontalAlignment` property. 
 
+### Canceling the check box state change
+The checkbox state change can be canceled by setting `CellCheckBoxClickEventArgs.Cancel` to true in the `SfDataGrid.CellCheckBoxClick` event. Additionally, the checkbox value can be modified by setting `CellCheckBoxClickEventArgs.NewValue` within the event.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.CellCheckBoxClick += OnCellCheckBoxClick;
+
+void OnCellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
+{
+    if (e.RowIndex == 1)
+        e.Cancel = true;
+    else if (e.RowIndex == 2)
+        e.NewValue = CheckState.Checked;
+}
+{% endhighlight %}
+
+{% highlight VB.NET %}
+AddHandler sfDataGrid1.CellCheckBoxClick, AddressOf OnCellCheckBoxClick
+	
+Private Sub OnCellCheckBoxClick(ByVal sender As Object, ByVal e As CellCheckBoxClickEventArgs)
+	If e.RowIndex = 1 Then
+		e.Cancel = True
+    ElseIf e.RowIndex = 2 Then
+        e.NewValue = CheckState.Checked
+    End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
 ## GridTemplateColumn
 
 `GridTemplateColumn` derived from `GridTextColumnBase` and it displays the template-specified cell content. You can load any WPF control in the display mode for all columns by setting [CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplate) and [EditTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html#Syncfusion_UI_Xaml_Grid_GridTemplateColumn_EditTemplate)   properties.
@@ -2355,6 +2384,37 @@ As above, style of the header check box can be customized using the `HeaderCellS
 {% endtabs %}
 
 ![WPF DataGrid Column with CheckBox Style in header](Column-Types_images/wpf-datagrid-checkbox-style-in-header.png)
+
+### Canceling the check box state change
+The checkbox state change in the `GridCheckBoxSelectorColumn` can be canceled by setting `CellCheckBoxClickEventArgs.Cancel` to true in the `SfDataGrid.CellCheckBoxClick` event. Additionally, the checkbox value can be modified by setting `CellCheckBoxClickEventArgs.NewValue` within the same event.
+
+Based on this, the selection state is not changed when `e.Cancel` is set to true, and the selection is applied according to the value specified in `e.NewValue`.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.CellCheckBoxClick += OnCellCheckBoxClick;
+
+void OnCellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
+{
+    if (e.RowIndex == 1)
+        e.Cancel = true;
+    else if (e.RowIndex == 2)
+        e.NewValue = CheckState.Checked;
+}
+{% endhighlight %}
+
+{% highlight VB.NET %}
+AddHandler sfDataGrid1.CellCheckBoxClick, AddressOf OnCellCheckBoxClick
+	
+Private Sub OnCellCheckBoxClick(ByVal sender As Object, ByVal e As CellCheckBoxClickEventArgs)
+	If e.RowIndex = 1 Then
+		e.Cancel = True
+    ElseIf e.RowIndex = 2 Then
+        e.NewValue = CheckState.Checked
+    End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
 
 ### Limitations
 
