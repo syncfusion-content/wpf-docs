@@ -270,7 +270,7 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar and T
 
 ![WPF DataGrid Column with ProgressBar](Column-Types_images/wpf-datagrid-column-progressbar.png)
 
-`CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns
+`CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
 
 N> When using a cell template, a column mapping name is optional during the initial load. For data operations, the mapping name is mandatory; otherwise, an InvalidOperationException is thrown.
 
