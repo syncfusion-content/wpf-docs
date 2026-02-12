@@ -272,6 +272,8 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar and T
 
 `CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
 
+N> When using a cell template, a column mapping name is optional during the initial load. For data operations, the mapping name is mandatory; otherwise, an InvalidOperationException is thrown.
+
 ### Reusing same DataTemplate for multiple columns
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
