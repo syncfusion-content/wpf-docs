@@ -208,6 +208,8 @@ _ribbon.BackStageColor = new SolidColorBrush(Colors.Green);
 {% endhighlight %}
 {% endtabs %}
 
+![WPF Ribbon BackStage Color](getting-started_images/wpf-ribbon-backstage-color.jpg)
+
 ## Add BackStageCommandButton
 
 The `BackStageCommandButton` can be added to BackStage as BackStage Element. Here four BackStageCommandButtons are added with `Header` property value as "Save", "SaveAttachments", "Options" and "Exit". 
