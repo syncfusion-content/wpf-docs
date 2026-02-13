@@ -192,6 +192,24 @@ Ribbon control provides the static command [OpenBackStage](https://help.syncfusi
 
 N> In order to bind the [`OpenBackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_RibbonCommands_OpenBackStage) command, CommandTarget and CommandParameter must be defined.
 
+### Customize the BackStage Color
+The [`BackStageColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_BackStageColor) property allows you to apply a custom color to the BackStage Button (“File”) and its built‑in items, including the BackStage background, BackStageCommandButton, and BackStageTabItem. Based on the specified color, these BackStage elements automatically reflect the applied color to maintain a consistent visual appearance throughout the BackStage UI, making it easy to align the BackStage with your application without restyling templates.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:Ribbon x:Name="_ribbon" BackStageColor="Green" VerticalAlignment="Top" IsBackStageVisible ="True"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+_ribbon.BackStageColor = new SolidColorBrush(Colors.Green);
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Ribbon BackStage Color](getting-started_images/wpf-ribbon-backstage-color.jpg)
+
 ## Add BackStageCommandButton
 
 The `BackStageCommandButton` can be added to BackStage as BackStage Element. Here four BackStageCommandButtons are added with `Header` property value as "Save", "SaveAttachments", "Options" and "Exit". 
