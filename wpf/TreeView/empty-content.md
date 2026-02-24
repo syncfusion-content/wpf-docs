@@ -17,8 +17,6 @@ The `EmptyContent` property in `SfTreeView` can be set to a string, which will b
 {% tabs %}
 {% highlight xaml %}
 <Window x:Class="Samples.EmptyContentDemo"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         Title="EmptyContent Text" Height="300" Width="400">
     <Grid>
@@ -41,25 +39,7 @@ The `SfTreeView` control allows you to fully customize how empty content is disp
 
 {% tabs %}
 {% highlight xaml %}
-<Window x:Class="syncfusion.treeviewdemos.wpf.FilteringDemo"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:syncfusion.treeviewdemos.wpf"
-        xmlns:behavior="http://schemas.microsoft.com/xaml/behaviors"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        mc:Ignorable="d">
-
-    <Window.DataContext>
-        <local:FileManagerViewModel/>
-    </Window.DataContext>
-    <Grid Width="450" Margin="0,50">
-    <Grid.RowDefinitions>
-        <RowDefinition Height="30"/>
-        <RowDefinition Height="*"/>
-    </Grid.RowDefinitions>
-    <TextBox x:Name="TextBox" Padding="2,0,2,0" BorderThickness="0.5" Text="{Binding FilterText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,3" />
+<Grid>
     <syncfusion:SfTreeView
         Grid.Row="1"
         x:Name="treeView"
@@ -77,11 +57,6 @@ The `SfTreeView` control allows you to fully customize how empty content is disp
                 </Grid>
             </DataTemplate>
         </syncfusion:SfTreeView.ItemTemplate>
-        <behavior:Interaction.Triggers>
-            <behavior:EventTrigger EventName="Loaded">
-                <local:TreeViewFilterTrigger/>
-            </behavior:EventTrigger>
-        </behavior:Interaction.Triggers>
          <syncfusion:SfTreeView.EmptyContentTemplate>
             <DataTemplate>
                 <Border Padding="10" BorderBrush="Blue" 
@@ -95,70 +70,6 @@ The `SfTreeView` control allows you to fully customize how empty content is disp
 </Grid>
 
 {% endhighlight %}
-{% highlight c# %}
-public class FileManagerViewModel : NotificationObject
-{
-    private ObservableCollection<FileManager> imageNodeInfo;
-
-    public object Item { get; set; }
-
-    public FileManagerViewModel()
-    {
-        this.Folders = GetFiles();
-        this.ImageNodeInfo = GenerateSource();
-        CollectionView = new ListCollectionView(ImageNodeInfo);
-        GenerateListViewData();
-    }
-
-    public ObservableCollection<Folder> Folders { get; set; }
-
-    public ObservableCollection<FileManager> ImageNodeInfo
-    {
-        get { return imageNodeInfo; }
-        set { this.imageNodeInfo = value; }
-    }
-
-    public ObservableCollection<Folder> ListViewCollection { get; set; }
-
-    public ListCollectionView CollectionView { get; set; }
-
-    internal delegate void FilterChanged();
-    internal FilterChanged filterChanged;
-
-    private string filterText = string.Empty;
-
-    public string FilterText
-    {
-        get { return filterText; }
-        set
-        {
-            filterText = value;
-            if (filterChanged != null)
-                filterChanged();
-            RaisePropertyChanged("FilterText");
-        }
-    }
-
-    private ObservableCollection<FileManager> GenerateSource()
-    {
-        var nodeImageInfo = new ObservableCollection<FileManager>();
-
-        var doc = new FileManager() { FileName = "Documents", ImageIcon = folderIcon, Visibility = Visibility.Collapsed };
-        var download = new FileManager() { FileName = "Downloads", ImageIcon = folderIcon, Visibility = Visibility.Collapsed };
-        var mp3 = new FileManager() { FileName = "Music", ImageIcon = folderIcon, Visibility = Visibility.Collapsed };
-        var pictures = new FileManager() { FileName = "Pictures", ImageIcon = folderIcon, Visibility = Visibility.Collapsed };
-        var video = new FileManager() { FileName = "Videos", ImageIcon = folderIcon, Visibility = Visibility.Collapsed };
-
-        var pollution = new FileManager()
-        {
-            FileName = "Environmental Pollution.docx",
-            FileDescription = "A holistic examination of environmental pollution, from its sources to its effects on flora, fauna, and humans.",
-            ImageIcon = this.wordIcon
-        };
-    }
-}
-
-{% endhighlight %}
 {% endtabs %}
 
 ![EmptyContent in WPF TreeView](EmptyContent_images/wpf-treeview-emptycontent.gif)
@@ -169,12 +80,14 @@ public class FileManagerViewModel : NotificationObject
 {% tabs %}
 {% highlight xaml %}
 <Grid>
+    <Grid.DataContext>
+	  <local:EmptyContentBindingViewModel/>
+	</Grid.DataContext>
     <syncfusion:SfTreeView x:Name="treeView"
                            ItemsSource="{Binding Items}"
                            EmptyContent="{Binding EmptyContentText}"/>
 </Grid>
 {% endhighlight %}
-
 {% highlight c# %}
 public class EmptyContentBindingViewModel : INotifyPropertyChanged
 {
@@ -184,7 +97,13 @@ public class EmptyContentBindingViewModel : INotifyPropertyChanged
     public string EmptyContentText
     {
         get => _emptyContentText;
-        set { if (_emptyContentText == value) return; _emptyContentText = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(EmptyContentText))); }
+        set 
+        { 
+           if (_emptyContentText == value) 
+                  return; 
+           emptyContentText = value; 
+           PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(EmptyContentText))); 
+        }
     }
 }
 {% endhighlight %}
