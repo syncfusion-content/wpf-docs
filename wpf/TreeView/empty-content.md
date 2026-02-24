@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EmptyContent in WPF TreeView control | Syncfusion®
-description: Learn here about EmptyContent support in Syncfusion® WPF TreeView (SfTreeView) control, its elements and more.
+description: Learn about EmptyContent support in Syncfusion WPF TreeView (SfTreeView) control—what it is, when it appears, and how to customize it.
 platform: wpf
 control: SfTreeView
 documentation: ug
@@ -9,19 +9,24 @@ documentation: ug
 
 # Empty Content WPF TreeView (SfTreeView)
 
-The [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) control allows you to display and customize the empty content when no data is available. The `EmptyContent` property can be set to either a string or a view, and it will be displayed when the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) is empty or null, or the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection is empty. `EmptyContentTemplate` is used to customize the appearance of `EmptyContent`.
+The [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) control allows you to display and customize **empty content** when no data is available. The `EmptyContent` property can be set to either a string or a view, and it will be displayed when the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) is **null** or **emoty**, or when the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection is **empty**. Use `EmptyContentTemplate` to customize the appearance of `EmptyContent`.
 
-## Display a string when TreeView has no items
-
+## Display text when TreeView has no items
 The `EmptyContent` property in `SfTreeView` can be set to a string, which will be displayed when no items are present in the tree view.
 
 {% tabs %}
 {% highlight xaml %}
-  <syncfusion:SfTreeView x:Name="treeView"
-                         ItemsSource="{Binding Items}"
-                         EmptyContent="No Items">
-  </syncfusion:SfTreeView>
-</ContentPage>
+<Window x:Class="Samples.EmptyContentDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Title="EmptyContent - Text" Height="300" Width="400">
+    <Grid>
+        <syncfusion:SfTreeView x:Name="treeView"
+                               ItemsSource="{Binding Items}"
+                               EmptyContent="No items"/>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
 SfTreeView treeView = new SfTreeView();
@@ -30,7 +35,7 @@ treeView.EmptyContent = "No Items";
 {% endhighlight %}
 {% endtabs %}
 
-## Display Content when TreeView has no items
+## Display custom UI when TreeView has no items
 
 The `SfTreeView` control allows you to fully customize the empty Content appearance by using the `EmptyContentTemplate` property. This property lets you define a custom view and style for the `EmptyContent`.
 
@@ -158,9 +163,11 @@ public class FileManagerViewModel : NotificationObject
 
 ![EmptyContent in WPF TreeView](EmptyContent_images\wpf-treeview-emptycontent.gif)
 
-## Binding for Empty Content Customization
+> **Tip**
+> When filtering hides all nodes, the `EmptyContent` / `EmptyContentTemplate` will be displayed.
 
-The `SfTreeView` control allows data binding, enabling you to dynamically update the empty content based on values provided by the ViewModel.
+## Binding Empty Content from ViewModel
+`SfTreeView` supports data binding of `EmptyContent`, allowing you to update the empty content dynamically from the ViewModel.
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,16 +176,18 @@ The `SfTreeView` control allows data binding, enabling you to dynamically update
                                ItemsSource="{Binding Items}"
                                EmptyContent="{Binding EmptyContentText}">
 </Grid>
-
 {% endhighlight %}
+
 {% highlight c# %}
-public class EmptyContentSampleViewModel 
+public class EmptyContentBindingViewModel : INotifyPropertyChanged
 {
     private string _emptyContentText = "No items to display";
+    public event PropertyChangedEventHandler? PropertyChanged;
+
     public string EmptyContentText
     {
-        get {return _emptyContentText;}
-        set { _emptyContentText = value;}
+        get => _emptyContentText;
+        set { if (_emptyContentText == value) return; _emptyContentText = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(EmptyContentText))); }
     }
 }
 {% endhighlight %}
