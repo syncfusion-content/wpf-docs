@@ -11,8 +11,7 @@ documentation: ug
 
 The Force-Directed Tree layout arranges nodes using a physics simulation: nodes repel each other to reduce overlap while connectors behave like springs that pull related nodes together. This produces organic, visually balanced diagrams that work well for social graphs, dependency maps, and knowledge networks.
 
-# Properties for Configure force-directed tree layout (WPF)
-
+## Properties for Configure force-directed tree layout (WPF)
 The below mentioned properties are used to configure the force-directed tree layout:
 
  **MaximumIteration**
@@ -594,7 +593,7 @@ private ConnectorViewModel Edge(string sourceId, string targetId)
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Diagram with Force-Directed Layout](Automatic-Layouts_images/Force_directed_tree_Nodes_and_Connectors.png)
+![WPF Diagram with Force-Directed Layout](Automatic-Layouts_images/wpf-diagram-force-directed-tree-layout-nodes-connectors.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/)
 
