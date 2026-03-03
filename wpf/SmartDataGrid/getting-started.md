@@ -174,7 +174,6 @@ public partial class OrderInfo : INotifyPropertyChanged
     private int _orderID;
     private string _customerID = string.Empty;
     private string _customerName = string.Empty;
-    private string _customerImage = string.Empty;
     private string _productName = string.Empty;
     private DateTime _orderDate;
     private int _quantity;
@@ -185,9 +184,10 @@ public partial class OrderInfo : INotifyPropertyChanged
     private double _rating;
     private bool _isSelected;
 
-    public event PropertyChangedEventHandler? PropertyChanged;
 
-    protected bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string? propertyName = null)
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    protected bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
     {
         if (Equals(storage, value))
             return false;
@@ -212,12 +212,6 @@ public partial class OrderInfo : INotifyPropertyChanged
     {
         get => _customerName;
         set => SetProperty(ref _customerName, value);
-    }
-
-    public string CustomerImage
-    {
-        get => _customerImage;
-        set => SetProperty(ref _customerImage, value);
     }
 
     public string ProductName
@@ -277,18 +271,17 @@ public partial class OrderInfo : INotifyPropertyChanged
     public OrderInfo() { }
 
     public OrderInfo(int orderId,
-                        string customerName,
-                        string customerId,
-                        string productName,
-                        DateTime orderDate,
-                        int quantity,
-                        double freight,
-                        string shipCountry,
-                        string shipCity,
-                        string paymentStatus,
-                        double rating,
-                        string customerImage,
-                        bool isSelected = false)
+                    string customerName,
+                    string customerId,
+                    string productName,
+                    DateTime orderDate,
+                    int quantity,
+                    double freight,
+                    string shipCountry,
+                    string shipCity,
+                    string paymentStatus,
+                    double rating,
+                    bool isSelected = false)
     {
         _orderID = orderId;
         _customerName = customerName;
@@ -301,7 +294,6 @@ public partial class OrderInfo : INotifyPropertyChanged
         _shipCity = shipCity;
         _paymentStatus = paymentStatus;
         _rating = rating;
-        _customerImage = customerImage;
         _isSelected = isSelected;
     }
 }
@@ -318,7 +310,7 @@ N> If you want your data object (OrderInfo class) to automatically reflect prope
 {% capture codesnippet4 %}
 {% tabs %} 
 {% highlight c# %}
- public class ViewModel : INotifyPropertyChanged
+public class ViewModel : INotifyPropertyChanged
 {
     public ObservableCollection<OrderInfo> OrderInfoCollection { get; set; }
     private Author currentUser;
@@ -437,8 +429,6 @@ N> If you want your data object (OrderInfo class) to automatically reflect prope
             var rating = Math.Round(3 + (rnd.NextDouble() - 0.5) * 2, 1);
             rating = Math.Min(Math.Max(rating, 1.0), 5.0);
 
-            var image = $"people_circle{i % 10}.png";
-
             OrderInfoCollection.Add(new OrderInfo(
                 orderId: orderId,
                 customerName: name,
@@ -451,11 +441,9 @@ N> If you want your data object (OrderInfo class) to automatically reflect prope
                 shipCity: city,
                 paymentStatus: status,
                 rating: rating,
-                customerImage: image,
                 isSelected: false));
         }
     }
-
 }
 {% endhighlight %}
 {% endtabs %}
