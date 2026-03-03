@@ -519,21 +519,16 @@ dataGrid.ItemsSource = viewModel.Orders;
 
 To configure the AI services, you must give the `azureApiKey` in the `App.xaml.cs` file.
 
-{% capture codesnippet4 %}
-{% tabs %} 
-{% highlight c# %}
+```csharp
 string key = "<MENTION-YOUR-KEY>";
-            Uri azureEndPoint = new Uri("<MENTION-YOUR-URL>");
-            string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
-			AzureOpenAIClient azureClient = new AzureOpenAIClient(azureEndpoint, new ApiKeyCredential(azureApiKey));
-            IChatClient azureChatClient = azureClient.GetChatClient(deploymentName).AsIChatClient();
-            SyncfusionAIExtension.Services.AddChatClient(azureChatClient);
-            SyncfusionAIExtension.ConfigureSyncfusionAIServices();
+Uri azureEndPoint = new Uri("<MENTION-YOUR-URL>");
+string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
 
-{% endhighlight %}
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
+AzureOpenAIClient azureClient = new AzureOpenAIClient(azureEndpoint, new ApiKeyCredential(azureApiKey));
+IChatClient azureChatClient = azureClient.GetChatClient(deploymentName).AsIChatClient();
+SyncfusionAIExtension.Services.AddChatClient(azureChatClient);
+SyncfusionAIExtension.ConfigureSyncfusionAIServices();
+```
 
 ### Running the Application
 
