@@ -1,314 +1,554 @@
 ---
 layout: post
-title: Getting Started with WPF Smart DataGrid | Syncfusion®
-description: Learn about getting started with Syncfusion WPF Smart DataGrid (SfDataGrid) control, its elements, and more here.
-platform: WPF
+title: Getting Started with WPF SfSmartDataGrid control | Syncfusion®
+description: Learn here about getting started with Syncfusion® WPF SfSmartDataGrid (SfSmartDataGrid) control, its elements and more.
+platform: wpf
 control: SfSmartDataGrid
 documentation: ug
-keywords: WPF smart datagrid getting started, ai datagrid WPF, WPF smart datagrid setup, Syncfusion.WPF.SmartComponents
 ---
 
-# Getting Started with WPF Smart DataGrid
+# Getting Started with WPF SfSmartDataGrid (SfSmartDataGrid)
 
-This section provides a quick overview for working with the `SfSmartDataGrid` for WPF. Follow the steps below to add a basic Smart DataGrid to your project.
+This section provides a quick overview for working with the [WPF SfSmartDataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfSmartDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
 
-N> The Smart DataGrid is distributed as part of the `Syncfusion.WPF.SmartComponents` package and supports AI-assisted interactions such as intelligent sorting, filtering, grouping, and highlighting. Ensure your application has the required AI service configuration to enable these features.
+## Assembly deployment
 
-{% tabcontents %}
-{% tabcontent Visual Studio %}
+The following list of assemblies needs to be added as reference to use SfSmartDataGrid control in any application,
 
-## Prerequisites
-Before proceeding, ensure the following are set up:
+<table>
+<tr>
+<th>
+Required assemblies
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Syncfusion.Data.WPF
+</td>
+<td>
+Syncfusion.Data.WPF assembly contains fundamental and base classes for {{'[CollectionViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html)'| markdownify }} which is responsible for data processing operations handled in SfSmartDataGrid.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfGrid.WPF
+</td>
+<td>
+Syncfusion.SfGrid.WPF assembly contains the core grid engine and UI components for the WPF data grid. It provides the `Syncfusion.UI.Xaml.Grid` namespace and implements essential features such as virtualization, row/column generation, selection, editing, sorting, filtering, grouping, and performance optimizations for large data sets. Use this assembly when you need fine-grained control over grid behavior, column types, cell templates, and advanced grid interactions.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfSmartComponents.WPF
+</td>
+<td>
+Syncfusion.SfSmartComponents.WPF assembly contains the Smart extensions and higher-level controls that enable AI-assisted and smart behaviors for data grids and related components. It exposes the `Syncfusion.UI.Xaml.SmartComponents` namespace and includes `SfSmartDataGrid` (smart features on top of the core grid), suggestions and natural-language action hooks, and helper services for integrating AI-driven sorting, filtering, grouping, and highlighting. Include this assembly when you want Smart/AI capabilities (for example, `EnableSmartActions`, `Suggestions`, or integration with Syncfusion® AI services).
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfChat.WPF
+</td>
+<td>
+Syncfusion.SfChat.WPF assembly contains UI controls and services for building chat and messaging experiences in WPF applications. It provides chat windows, message templates, typing indicators, message grouping, and utilities for loading and persisting message history. This assembly is useful when integrating conversational interfaces, help/chat widgets, or bot-driven assistants alongside data-grid scenarios.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.WPF
+</td>
+<td>
+Syncfusion.Shared.WPF contains various editor controls (such as IntegerTextBox, DoubleTextBox and etc) which are used in SfSmartDataGrid. 
+</td>
+</tr>
+</table>
 
-1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later is installed.
-2. Set up a WPF environment with Visual Studio 2026 (v18.0.0 or later).
+## Creating simple application with SfSmartDataGrid
+In this walk-through you will create a WPF application that uses the Syncfusion® WPF DataGrid (`SfSmartDataGrid`) control. The steps below correspond to the seven key topics needed to add and bind a SfSmartDataGrid in a WPF project.
 
-## Step 1: Create a new WPF Project
+1. [Create a new WPF project](#create-a-new-wpf-project)
+2. [Install required Syncfusion® NuGet packages](#install-the-syncfusion-wpf-nuget-packages)
+3. [Add the control via Designer](#adding-control-via-designer)
+4. [Add the control manually in XAML](#adding-control-manually-in-xaml)
+5. [Add the control manually in C#](#adding-control-manually-in-c)
+6. [Create the data model](#creating-data-model-for-sample-application)
+7. [Bind data](#binding-to-data)
+8. [Register the AI Service](#register-the-ai-service)
+9. [Running the Application](#running-the-application)
+### Create a new WPF project
 
-1. Go to **File > New > Project** and choose the **WPF App** template.
-2. Name the project and choose a location. Then, click **Next.**
-3. Select the .NET framework version and click **Create.**
+Create new WPF Project in Visual Studio to display SfSmartDataGrid with data objects.
 
-## Step 2: Install the Syncfusion<sup>®</sup> WPF Smart DataGrid NuGet Package
+<a id="install-the-syncfusion-wpf-nuget-packages"></a>
+### Install the Syncfusion® WPF NuGet packages
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.WPF.SmartComponents]() and install the latest version.
+2. Search for [Syncfusion.SfSmartComponents.Wpf]() and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
+### Adding control via Designer
 
-[Syncfusion.WPF.Core](https://www.nuget.org/packages/Syncfusion.WPF.Core/) NuGet is a dependent package for all Syncfusion<sup>®</sup> controls of WPF. In the WPFProgram.cs file, register the handler for Syncfusion<sup>®</sup> core.
+SfSmartDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+    ![Dragging WPF SfSmartDataGrid Control from Toolbox to Designer]()
 
-{% highlight c# hl_lines="6 22" %}
-using Microsoft.WPF;
-using Microsoft.WPF.Hosting;
-using Microsoft.WPF.Controls.Compatibility;
-using Microsoft.WPF.Controls.Hosting;
-using Microsoft.WPF.Controls.Xaml;
-using Syncfusion.WPF.Core.Hosting;
+### Adding control manually in XAML
 
-namespace GettingStarted
-{
-    public class WPFProgram
-    {
-        public static WPFApp CreateWPFApp()
-        {
-            var builder = WPFApp.CreateBuilder();
-            builder
-                .UseWPFApp<App>()
-                .ConfigureFonts(fonts =>
-                {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                });
+In order to add control manually in XAML, do the below steps,
 
-            builder.ConfigureSyncfusionCore();
-            return builder.Build();
-        }
-    }
-}
-{% endhighlight %}
+1. Add the below required assembly references to the project,
+	* Syncfusion.Data.WPF 
+	* Syncfusion.SfGrid.WPF
+	* Syncfusion.Shared.WPF
+    * Syncfusion.SfChat.WPF
+    * Syncfusion.SfSmartComponents.WPF
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfSmartDataGrid control namespace **SSyncfusion.UI.Xaml.SmartComponents** in XAML page.
+3. Declare SfSmartDataGrid control in XAML page.
 
-## Step 4: Register the AI Service
-
-To configure the AI services, you must call the `ConfigureSyncfusionAIServices()` method in the `WPFProgram.cs` file.
-
-{% highlight c# hl_lines="6 31" %}
-using Microsoft.WPF;
-using Microsoft.WPF.Hosting;
-using Microsoft.WPF.Controls.Compatibility;
-using Microsoft.WPF.Controls.Hosting;
-using Microsoft.WPF.Controls.Xaml;
-using Syncfusion.WPF.SmartComponents.Hosting;
-
-namespace GettingStarted
-{
-    public class WPFProgram
-    {
-        public static WPFApp CreateWPFApp()
-        {
-            var builder = WPFApp.CreateBuilder();
-            builder
-                .UseWPFApp<App>()
-                .ConfigureFonts(fonts =>
-                {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                });
-
-            string key = "<MENTION-YOUR-KEY>";
-            Uri azureEndPoint = new Uri("<MENTION-YOUR-URL>");
-            string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
-
-            // Shows how to configure Azure AI service to the Smart Components.
-            AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(azureEndPoint, new AzureKeyCredential(key));
-            IChatClient azureChatClient = azureOpenAIClient.GetChatClient(deploymentName).AsIChatClient();
-
-            builder.Services.AddChatClient(azureChatClient);
-            builder.ConfigureSyncfusionAIServices();
-
-            return builder.Build();
-        }
-    }
-}
-{% endhighlight %}
-
-## Step 5: Add a Basic Smart DataGrid
-
-1. Import the control namespace `Syncfusion.WPF.SmartComponents` in XAML or C# code.
-2. Initialize the `SfSmartDataGrid` control.
-
+{% capture codesnippet1 %}
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" %}
-
-<ContentPage
-    . . .
-    xmlns:syncfusion="clr-namespace:Syncfusion.WPF.SmartComponents;assembly=Syncfusion.WPF.SmartComponents">
-
-    <syncfusion:SfSmartDataGrid />
-</ContentPage>
-
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" %}
-
-using Syncfusion.WPF.SmartComponents;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfSmartDataGrid dataGrid = new SfSmartDataGrid();
-        this.Content = dataGrid;
-    }
-}
-
+{% highlight xaml %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <syncfusion:SfSmartDataGrid  x:Name="smartDataGrid"/>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
-{% endtabcontent %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Step 6: Define the View Model
+### Adding control manually in C\#
 
-### Data Model
+In order to add control manually in C#, do the below steps,
 
-Create a simple data model as shown in the following code example, and save it as `OrderInfo.cs` file:
+1. Add the below required assembly references to the project,
+	* Syncfusion.Data.WPF 
+	* Syncfusion.SfGrid.WPF
+	* Syncfusion.Shared.WPF
+    * Syncfusion.SfChat.WPF
+    * Syncfusion.SfSmartComponents.WPF
+2. Import SfSmartDataGrid namespace **Syncfusion.UI.Xaml.SmartComponents** .
+3. Create SfSmartDataGrid control instance and add it to the Page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
-public class OrderInfo
+using Syncfusion.UI.Xaml.SmartComponents;
+namespace WpfApplication1
 {
-    private string orderID;
-    private string customerID;
-    private string customer;
-    private string shipCity;
-    private string shipCountry;
-
-    public string OrderID
+ 
+    public partial class MainWindow : Window
     {
-        get { return orderID; }
-        set { this.orderID = value; }
+ 
+        public MainWindow()
+        {
+            InitializeComponent();
+            SfSmartDataGrid smartDataGrid = new SfSmartDataGrid();
+            Root_Grid.Children.Add(smartDataGrid);
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
+### Creating Data Model for sample application
+
+SfSmartDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
+
+1. Create data object class named **OrderInfo** and declare properties as shown below,
+
+{% capture codesnippet3 %}
+{% tabs %}
+{% highlight c# %}
+public partial class OrderInfo : INotifyPropertyChanged
+{
+    private int _orderID;
+    private string _customerID = string.Empty;
+    private string _customerName = string.Empty;
+    private string _customerImage = string.Empty;
+    private string _productName = string.Empty;
+    private DateTime _orderDate;
+    private int _quantity;
+    private double _freight;
+    private string _shipCountry = string.Empty;
+    private string _shipCity = string.Empty;
+    private string _paymentStatus = string.Empty;
+    private double _rating;
+    private bool _isSelected;
+
+    public event PropertyChangedEventHandler? PropertyChanged;
+
+    protected bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string? propertyName = null)
+    {
+        if (Equals(storage, value))
+            return false;
+        storage = value;
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        return true;
+    }
+
+    public int OrderID
+    {
+        get => _orderID;
+        set => SetProperty(ref _orderID, value);
     }
 
     public string CustomerID
     {
-        get { return customerID; }
-        set { this.customerID = value; }
+        get => _customerID;
+        set => SetProperty(ref _customerID, value);
+    }
+
+    public string CustomerName
+    {
+        get => _customerName;
+        set => SetProperty(ref _customerName, value);
+    }
+
+    public string CustomerImage
+    {
+        get => _customerImage;
+        set => SetProperty(ref _customerImage, value);
+    }
+
+    public string ProductName
+    {
+        get => _productName;
+        set => SetProperty(ref _productName, value);
+    }
+
+    public DateTime OrderDate
+    {
+        get => _orderDate;
+        set => SetProperty(ref _orderDate, value);
+    }
+
+    public int Quantity
+    {
+        get => _quantity;
+        set => SetProperty(ref _quantity, value);
+    }
+
+    public double Freight
+    {
+        get => _freight;
+        set => SetProperty(ref _freight, value);
     }
 
     public string ShipCountry
     {
-        get { return shipCountry; }
-        set { this.shipCountry = value; }
-    }
-
-    public string Customer
-    {
-        get { return this.customer; }
-        set { this.customer = value; }
+        get => _shipCountry;
+        set => SetProperty(ref _shipCountry, value);
     }
 
     public string ShipCity
     {
-        get { return shipCity; }
-        set { this.shipCity = value; }
+        get => _shipCity;
+        set => SetProperty(ref _shipCity, value);
     }
 
-    public OrderInfo(string orderId, string customerId, string country, string customer, string shipCity)
+    public string PaymentStatus
     {
-        this.OrderID = orderId;
-        this.CustomerID = customerId;
-        this.Customer = customer;
-        this.ShipCountry = country;
-        this.ShipCity = shipCity;
+        get => _paymentStatus;
+        set => SetProperty(ref _paymentStatus, value);
+    }
+
+    public double Rating
+    {
+        get => _rating;
+        set => SetProperty(ref _rating, value);
+    }
+
+    public bool IsSelected
+    {
+        get => _isSelected;
+        set => SetProperty(ref _isSelected, value);
+    }
+
+    public OrderInfo() { }
+
+    public OrderInfo(int orderId,
+                        string customerName,
+                        string customerId,
+                        string productName,
+                        DateTime orderDate,
+                        int quantity,
+                        double freight,
+                        string shipCountry,
+                        string shipCity,
+                        string paymentStatus,
+                        double rating,
+                        string customerImage,
+                        bool isSelected = false)
+    {
+        _orderID = orderId;
+        _customerName = customerName;
+        _customerID = customerId;
+        _productName = productName;
+        _orderDate = orderDate;
+        _quantity = quantity;
+        _freight = freight;
+        _shipCountry = shipCountry;
+        _shipCity = shipCity;
+        _paymentStatus = paymentStatus;
+        _rating = rating;
+        _customerImage = customerImage;
+        _isSelected = isSelected;
     }
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-N> If you want your data model to respond to property changes, implement the `INotifyPropertyChanged` interface in your model class.
 
-### View Model
+N> If you want your data object (OrderInfo class) to automatically reflect property changes, then the object must implement **INotifyPropertyChanged** interface.
+ 
+2. Create a **ViewModel** class with Orders property and Orders property is initialized with several data objects in constructor.
 
-Create a model repository class with `OrderInfo` collection property initialized with the required number of data objects in a new class file as shown in the following code example, and save it as `OrderInfoRepository.cs` file:
-
-{% tabs %}
+{% capture codesnippet4 %}
+{% tabs %} 
 {% highlight c# %}
-public class OrderInfoRepository
+ public class ViewModel : INotifyPropertyChanged
 {
-    private ObservableCollection<OrderInfo> orderInfo;
-    public ObservableCollection<OrderInfo> OrderInfoCollection
+    public ObservableCollection<OrderInfo> OrderInfoCollection { get; set; }
+    private Author currentUser;
+    public Author CurrentUser
     {
-        get { return orderInfo; }
-        set { this.orderInfo = value; }
+        get
+        {
+            return this.currentUser;
+        }
+        set
+        {
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
+        }
+    }
+    public ObservableCollection<string> AiSuggestions { get; } = new ObservableCollection<string>
+    {
+        "Which orders have a payment status of Not Paid?",
+        "What are the top 10 orders with the highest freight cost?",
+        "Which customers have placed the most orders?",
+        "What are the orders shipped to Brazil?",
+        "What is the total quantity of products ordered across all orders?",
+    };
+
+    public ObservableCollection<string> SortableProperties { get; set; } = new ObservableCollection<string>
+    {
+        "OrderID",
+        "CustomerName",
+        "CustomerID",
+        "ProductID",
+        "OrderDate",
+        "Quantity",
+        "Freight",
+        "ShipCountry",
+        "ShipCity",
+        "PaymentStatus",
+        "Rating"
+    };
+
+
+
+    public event PropertyChangedEventHandler PropertyChanged;
+    public void RaisePropertyChanged(string propName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
     }
 
     public OrderInfoRepository()
     {
-        orderInfo = new ObservableCollection<OrderInfo>();
-        this.GenerateOrders();
+        this.CurrentUser = new Author { Name = "John" };
+        OrderInfoCollection = new ObservableCollection<OrderInfo>();
+        GenerateOrders();
     }
 
-    public void GenerateOrders()
+    private Random random = new Random();
+    private static readonly string[] Names = new[]
     {
-        orderInfo.Add(new OrderInfo("1001", "Maria Anders", "Germany", "ALFKI", "Berlin"));
-        orderInfo.Add(new OrderInfo("1002", "Ana Trujillo", "Mexico", "ANATR", "Mexico D.F."));
-        orderInfo.Add(new OrderInfo("1003", "Ant Fuller", "Mexico", "ANTON", "Mexico D.F."));
-        orderInfo.Add(new OrderInfo("1004", "Thomas Hardy", "UK", "AROUT", "London"));
-        orderInfo.Add(new OrderInfo("1005", "Tim Adams", "Sweden", "BERGS", "London"));
-        orderInfo.Add(new OrderInfo("1006", "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
-        orderInfo.Add(new OrderInfo("1007", "Andrew Fuller", "France", "BLONP", "Strasbourg"));
-        orderInfo.Add(new OrderInfo("1008", "Martin King", "Spain", "BOLID", "Madrid"));
-        orderInfo.Add(new OrderInfo("1009", "Lenny Lin", "France", "BONAP", "Marsiella"));
-        orderInfo.Add(new OrderInfo("1010", "John Carter", "Canada", "BOTTM", "Lenny Lin"));
-        orderInfo.Add(new OrderInfo("1011", "Laura King", "UK", "AROUT", "London"));
-        orderInfo.Add(new OrderInfo("1012", "Anne Wilson", "Germany", "BLAUS", "Mannheim"));
-        orderInfo.Add(new OrderInfo("1013", "Martin King", "France", "BLONP", "Strasbourg"));
-        orderInfo.Add(new OrderInfo("1014", "Gina Irene", "UK", "AROUT", "London"));
+        "Emma", "Olivia", "Charlotte", "Amelia", "Sophia",
+        "William", "Isabella", "Emily", "George", "Grace",
+        "Lily","Ava","Chloe","Ella","Mia","James","Sophie",
+        "Isla","Henry","Lucy"
+    };
+
+    private static readonly string[] Countries = new[]
+    {
+        "Spain","Brazil","Switzerland","France","Germany","UK","Canada","Mexico","USA","Italy"
+    };
+
+
+    public string[] ElectronicsProducts = new string[]
+    {
+        "Keyboard", "Mouse", "Trackpad", "Stylus", "Scanner", "Webcam", "Microphone", "Monitor", "Speakers", "Headphones", "Printers", "Projectors", "External Drive", "UPS"
+    };
+
+    private static readonly string[] Cities = new[]
+    {
+        "Madrid","Rio","Bern","Paris","Berlin","London","Toronto","Mexico D.F.","Seattle","Rome"
+    };
+
+    private static readonly string[] PaymentStatuses = new[] { "Paid", "Not Paid" };
+
+
+    private void GenerateOrders()
+    {
+        var rnd = new Random(42);
+        int baseOrderId = 20251001;
+
+        for (int i = 0; i < 100; i++)
+        {
+            int orderId = baseOrderId + i;
+            var name = Names[i % Names.Length];
+            var custId = $"C{100 + (i % 50):D3}";
+            string productName = ElectronicsProducts[random.Next(ElectronicsProducts.Length)];
+            DateTime orderDate = DateTime.Today.AddDays(-rnd.Next(1, 90));
+
+            // Quantity realistic
+            int quantity = rnd.Next(1, 20);
+
+            // Freight based on product type
+            int freight;
+            if (productName == "Mouse" || productName == "Stylus" || productName == "Trackpad")
+                freight = rnd.Next(50, 150);
+            else if (productName == "Keyboard" || productName == "Webcam" || productName == "Microphone")
+                freight = rnd.Next(150, 350);
+            else
+                freight = rnd.Next(350, 750);
+
+            // Country and city mapping
+            var country = Countries[i % Countries.Length];
+            var city = Cities[i % Cities.Length];
+
+            // Payment status with realistic ratio
+            var status = rnd.NextDouble() < 0.7 ? "Paid" : "Not Paid";
+
+            // Rating bell curve around 3-4
+            var rating = Math.Round(3 + (rnd.NextDouble() - 0.5) * 2, 1);
+            rating = Math.Min(Math.Max(rating, 1.0), 5.0);
+
+            var image = $"people_circle{i % 10}.png";
+
+            OrderInfoCollection.Add(new OrderInfo(
+                orderId: orderId,
+                customerName: name,
+                customerId: custId,
+                productName: productName,
+                orderDate: orderDate,
+                quantity: quantity,
+                freight: freight,
+                shipCountry: country,
+                shipCity: city,
+                paymentStatus: status,
+                rating: rating,
+                customerImage: image,
+                isSelected: false));
+        }
     }
+
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-### Binding the ViewModel
+### Binding to Data
 
-Create a `ViewModel` instance and set it as the DataGrid's `BindingContext`. This enables property binding from `ViewModel` class.
-
-To populate the `SfSmartDataGrid`, bind the item collection from its `BindingContext` to [SfSmartDataGrid.ItemsSource]() property.
-
-The following code example binds the collection created in the previous step to the `SfSmartDataGrid.ItemsSource` property:
+To bind the SfSmartDataGrid to data, set the [SfSmartDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property to an IEnumerable implementation. Each row in SfSmartDataGrid is bound to an object in data source and each column in SfSmartDataGrid bound to a property in data object. 
+ 
+Bind the collection created in previous step to `SfSmartDataGrid.ItemsSource` property in XAML by setting ViewModel as `DataContext`.
 
 {% tabs %}
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/WPF"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:syncfusion="clr-namespace:Syncfusion.WPF.SmartComponents;assembly=Syncfusion.WPF.SmartComponents"
-              xmlns:local="clr-namespace:GettingStarted"
-             x:Class="GettingStarted.MainPage">
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="WpfApplication1.MainWindow"
+        xmlns:local="clr-namespace:WpfApplication1"
+        Title="MainWindow" Height="350" Width="525">
+		
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
 
-    <ContentPage.BindingContext>
-        <local:OrderInfoRepository x:Name="viewModel" />
-    </ContentPage.BindingContext>
+    <Grid x:Name="Root_Grid">
+        <syncfusion:SfSmartDataGrid x:Name="SmartGrid" ItemsSource="{Binding OrderInfoCollection}" AutoGenerateColumns="False" CurrentUser="{Binding CurrentUser}" Suggestions="{Binding AiSuggestions}">
+            <syncfusion:SfSmartDataGrid.Columns>
+                <syncfusion:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" Width="100" NumberDecimalDigits="0" TextAlignment="Center"/>
+                <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" Width="150" TextAlignment="Center"/>
 
-    <ContentPage.Content>
-        <syncfusion:SfSmartDataGrid x:Name="dataGrid"
-                               ItemsSource="{Binding OrderInfoCollection}">
-        <syncfusion:SfSmartDataGrid.Columns>
-            <syncfusion:TextColumn HeaderText="Order ID" Format="0"
-                                            MappingName="OrderID" Width="150"/>
-            <syncfusion:TextColumn  HeaderText="Customer ID"
-                                            MappingName="CustomerID"
-                                            Width="150" />
-            <syncfusion:TextColumn  HeaderText="Ship Country"
-                                            MappingName="ShipCountry"
-                                            Width="150" />
-        </syncfusion:SfSmartDataGrid.Columns>
+                <syncfusion:GridTextColumn MappingName="ProductName" HeaderText="Product Name" Width="145" TextAlignment="Center"/>
+
+                <syncfusion:GridDateTimeColumn  MappingName="OrderDate" Width="140" HeaderText="Order Date" TextAlignment="Center">
+                </syncfusion:GridDateTimeColumn>
+
+                <syncfusion:GridNumericColumn  MappingName="Quantity" Width="120" NumberDecimalDigits="0" TextAlignment="Center">
+                </syncfusion:GridNumericColumn>
+
+                <syncfusion:GridNumericColumn MappingName="Freight" Width="120" TextAlignment="Center">
+                </syncfusion:GridNumericColumn>
+
+                <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" Width="150" TextAlignment="Center"/>
+
+                <syncfusion:GridTextColumn MappingName="ShipCountry" HeaderText="Ship Country" Width="150" TextAlignment="Center"/>
+
+                <syncfusion:GridTextColumn MappingName="PaymentStatus" HeaderText="Payment Status" Width="130" TextAlignment="Center"/>
+            </syncfusion:SfSmartDataGrid.Columns>
         </syncfusion:SfSmartDataGrid>
-    </ContentPage.Content>
-</ContentPage>
+    </Grid>
+	
+</Window>
 {% endhighlight %}
 {% highlight c# %}
-OrderInfoRepository viewModel = new OrderInfoRepository();
-dataGrid.ItemsSource = viewModel.OrderInfoCollection;
+ViewModel viewModel = new ViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
 {% endhighlight %}
 {% endtabs %}
 
-## Step 7: Enabling AI-Assisted Operations
+### Register the AI Service
 
-The Smart DataGrid supports natural language operations for enhanced data interaction. These features require configuring an AI provider in your application.
+To configure the AI services, you must give the `azureApiKey` in the `App.xaml.cs` file.
 
-### Using AI Features
+{% capture codesnippet4 %}
+{% tabs %} 
+{% highlight c# %}
+string key = "<MENTION-YOUR-KEY>";
+            Uri azureEndPoint = new Uri("<MENTION-YOUR-URL>");
+            string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
+			AzureOpenAIClient azureClient = new AzureOpenAIClient(azureEndpoint, new ApiKeyCredential(azureApiKey));
+            IChatClient azureChatClient = azureClient.GetChatClient(deploymentName).AsIChatClient();
+            SyncfusionAIExtension.Services.AddChatClient(azureChatClient);
+            SyncfusionAIExtension.ConfigureSyncfusionAIServices();
 
-Once configured, leverage AI-assisted features such as:
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-- **AI Sorting**: Sort data intelligently by entering prompts like “Sort by customer name alphabetically”.
-- **Intelligent Filtering**: Apply filters using natural language, e.g., “Show orders from Germany shipped in the last month”.
-- **Smart Grouping**: Group data with prompts like “Group by ship country, then by customer”.
-- **Row and Cell Highlighting**: Highlight critical information, e.g., “Highlight orders where quantity is greater than 10”.
-
-## Step 8: Running the Application
+### Running the Application
 
 Press **F5** to build and run the application. Once compiled, the smart datagrid will be displayed with the data provided, and AI features will be available after configuration.
 
 Here is the result of the previous codes,
 
-<img src="Images\getting-started\WPF-smart-datagrid.png" width="600" alt="Getting started with WPF Smart DataGrid." />
+<img src="getting-started_images/wpf-smart-datagrid-output.png" width="600" alt="Getting started with WPF Smart DataGrid." />
+
+## Theme
+
+SfSmartDataGrid supports various built-in themes. Refer to the below links to apply themes for the SfSmartDataGrid,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Applying Theme to WPF SmartDataGrid](getting-started_images/wpf-smart-datagrid-theme.png)

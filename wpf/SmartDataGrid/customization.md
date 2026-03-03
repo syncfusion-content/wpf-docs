@@ -10,32 +10,28 @@ keywords : WPF datagrid, customization, assistview, prompts, smart actions
 
 # Customization in WPF SmartDataGrid (SfSmartDataGrid)
 
-The `SfSmartDataGrid` provides options to customize its behavior and appearance, including predefined suggestions, initial prompts, enabling or disabling smart actions, and programmatic control of the AssistView.
+The `SfSmartDataGrid` provides options to customize its behavior and appearance, including predefined suggestions, initial prompts, enabling or disabling smart actions.
 
-## Suggestion
+## Suggestions
 
-The `SuggestedPrompts` property in `DataGridAssistViewSettings` is used to provide a predefined list of suggestions that appear in the AssistView. These suggestions help users quickly select common actions without typing commands manually.
+The `Suggestions` property in `SfSmartDataGrid` is used to provide a predefined list of suggestions that appear in the AssistView. These suggestions help users quickly select common actions without typing commands manually.
 
 {% tabs %}
 {% highlight xaml %}
-    <smart:SfSmartDataGrid ItemsSource="{Binding OrderInfoCollection}">
-        <syncfusion:SfSmartDataGrid.AssistViewSettings>
-            <syncfusion:DataGridAssistViewSettings SuggestedPrompts="{Binding Suggestions}"/>
-        </syncfusion:SfSmartDataGrid.AssistViewSettings>
-    </smart:SfSmartDataGrid>
+    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" Suggestions="{Binding AiSuggestions}"/>
 {% endhighlight %}
 
 {% highlight c# %}
 public class OrderInfoRepository
 {
-    public ObservableCollection<ISuggestion> Suggestions { get; set; } = new ObservableCollection<ISuggestion>
-    {
-        new AssistSuggestion() {Text = "Which orders have a payment status of Not Paid?"},
-        new AssistSuggestion() {Text ="What are the top 10 orders with the highest freight cost?"},
-        new AssistSuggestion() {Text = "Which customers have placed the most orders?"},
-        new AssistSuggestion() {Text = "What are the orders shipped to Brazil?"},
-        new AssistSuggestion() {Text = "What is the total quantity of products ordered across all orders?"},
-    };
+	public ObservableCollection<string> AiSuggestions { get; } = new ObservableCollection<string>
+	{
+		"Which orders have a payment status of Not Paid?",
+		"What are the top 10 orders with the highest freight cost?",
+		"Which customers have placed the most orders?",
+		"What are the orders shipped to Brazil?",
+		"What is the total quantity of products ordered across all orders?",
+	};
 }
 {% endhighlight %}
 {% endtabs %}
@@ -44,65 +40,39 @@ public class OrderInfoRepository
 
 ## Prompt
 
-The `Prompt` property in `DataGridAssistViewSettings` defines an initial prompt that is automatically executed when the AssistView opens for the first time. 
+The `Prompt` property in `SfSmartDataGrid` defines an initial prompt that is automatically executed when the AssistView opens for the first time. 
 
 {% tabs %}
 {% highlight xaml %}
-    <smart:SfSmartDataGrid ItemsSource="{Binding OrderInfoCollection}">
-        <syncfusion:SfSmartDataGrid.AssistViewSettings>
-            <syncfusion:DataGridAssistViewSettings Prompt="Sort by OrderDate ascending" />
-        </syncfusion:SfSmartDataGrid.AssistViewSettings>
-    </smart:SfSmartDataGrid>
+    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" Prompt="Sort the Quantity column"/>
 {% endhighlight %}
 
 {% highlight c# %}
-SmartGrid.AssistViewSettings.Prompt = "Sort by OrderDate ascending";
+SmartGrid.Prompt = "Sort the Quantity column";;
 {% endhighlight %}
 {% endtabs %}
 
 ## EnableSmartActions
 
-The `EnableSmartActions` property in `DataGridAssistViewSettings` determines whether actions are applied to the DataGrid. By default, this property is set to true, allowing operations such as sorting, grouping, filtering, and highlighting to be executed automatically. Setting it to false restricts these actions from being applied to the grid.
+The `EnableSmartActions` property in `SfSmartDataGrid` determines whether actions are applied to the DataGrid. By default, this property is set to true, allowing operations such as sorting, grouping, filtering, and highlighting to be executed automatically. Setting it to false restricts these actions from being applied to the grid.
 
 {% tabs %}
 {% highlight xaml %}
-    <smart:SfSmartDataGrid ItemsSource="{Binding OrderInfoCollection}">
-        <syncfusion:SfSmartDataGrid.AssistViewSettings>
-            <syncfusion:DataGridAssistViewSettings EnableSmartActions="True" />
-        </syncfusion:SfSmartDataGrid.AssistViewSettings>
-    </smart:SfSmartDataGrid>
+    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" ItemsSource="{Binding OrderInfoCollection}" EnableSmartActions="True"/>
 {% endhighlight %}
 
 {% highlight c# %}
-SmartGrid.AssistViewSettings.EnableSmartActions = true;
-{% endhighlight %}
-{% endtabs %}
-
-## Show AssistView Programmatically
-
-The `ShowAssistView` and `CloseAssistView` methods in `DataGridAssistViewSettings` are used to display or hide the AssistView popup programmatically. By default, calling ShowAssistView() opens the AssistView popup relative to the default assist button. The ShowAssistView method also provides an optional parameter of type View; when a view is passed, the popup opens relative to the specified view instead of the default button.
-
-{% tabs %}
-{% highlight c# %}
-// Show AssistView popup relative to the default assist button
-SmartGrid.ShowAssistView();
-
-// Show AssistView popup relative to a specific view (e.g., a button)
-SmartGrid.ShowAssistView();
-
-// Close the AssistView popup
-SmartGrid.CloseAssistView();
-
+SmartGrid.EnableSmartActions = true;
 {% endhighlight %}
 {% endtabs %}
 
 ## Apply Smart Actions Programmatically
 
-The `GetResponseAsync` method in `DataGridAssistViewSettings` is used to fetch a response programmatically without opening the AssistView popup. By passing a prompt to this method, the required action is applied directly to the DataGrid. 
+The `ExecutePrompt` method in `SfSmartDataGrid` is used to fetch a response programmatically without opening the AssistView popup. By passing a prompt to this method, the required action is applied directly to the DataGrid. 
 
 {% tabs %}
 {% highlight c# %}
-SmartGrid.GetResponseAsync("Sort the OrderID by Descending");
+SmartGrid.ExecutePrompt("Sort the OrderID by Descending");
 {% endhighlight %}
 {% endtabs %}
 
@@ -115,9 +85,9 @@ The `SfSmartDataGrid.AssistViewRequest` event is triggered whenever a user reque
 
 {% tabs %}
 {% highlight xaml %}
-    <smart:SfSmartDataGrid ItemsSource="{Binding OrderInfoCollection}" 
+    <syncfusion:SfSmartDataGrid ItemsSource="{Binding OrderInfoCollection}" 
                            AssistViewRequest="OnAssistRequest">
-    </smart:SfSmartDataGrid>
+    </syncfusion:SfSmartDataGrid>
 {% endhighlight %}
 
 {% highlight c# %}

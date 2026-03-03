@@ -29,7 +29,7 @@ sort by city column in descending and Revenue ascending
 clear sorting
 ```
 
-<img alt="WPF-smart-datagrid-sort" src="Images\AI-Powered Features\WPF-smart-datagrid-sort.gif" width="600"/>
+<img alt="WPF-smart-datagrid-sort" src="ai-powered-features_gifs\WPF-smart-datagrid-sort.gif" width="600"/>
 
 ## Grouping
 
@@ -48,7 +48,7 @@ group by Country and ShipCity
 clear grouping
 ```
 
-<img alt="WPF-smart-datagrid-group" src="Images\AI-Powered Features\WPF-smart-datagrid-group.gif" width="600"/>
+<img alt="WPF-smart-datagrid-group" src="ai-powered-features_gifs\WPF-smart-datagrid-group.gif" width="600"/>
 
 ## Filtering
 
@@ -67,7 +67,7 @@ filter Country equals Germany AND Revenue greaterThan 1000
 clear filters
 ```
 
-<img alt="WPF-smart-datagrid-filter" src="Images\AI-Powered Features\WPF-smart-datagrid-filter.gif" width="600"/>
+<img alt="WPF-smart-datagrid-filter" src="ai-powered-features_gifs\WPF-smart-datagrid-filter.gif" width="600"/>
 
 ## Highlight
 
@@ -92,4 +92,4 @@ clear row highlight
 clear cell highlight
 ```
 
-<img alt="WPF-smart-datagrid-highlight" src="Images\AI-Powered Features\WPF-smart-datagrid-highlight.gif" width="600" />
+<img alt="WPF-smart-datagrid-highlight" src="ai-powered-features_gifs\WPF-smart-datagrid-highlight.gif" width="600" />

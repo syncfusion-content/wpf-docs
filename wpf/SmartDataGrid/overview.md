@@ -12,7 +12,7 @@ keywords: wpf smart datagrid, ai datagrid wpf, smart grid wpf, ai gridview wpf, 
 
 The WPF Smart DataGrid is an AI-assisted data grid control that enhances how users interact with data. It enables natural language–driven operations for sorting, filtering, grouping, and highlighting, helping users perform complex tasks more intuitively and efficiently.
 
-<img src="Images\getting-started\maui-smart-datagrid.png" width="600" alt="WPF Smart DataGrid." />
+<img src="getting-started_images\wpf-smart-datagrid-overview.png" width="600" alt="WPF Smart DataGrid." />
 
 **Key Features**
 
