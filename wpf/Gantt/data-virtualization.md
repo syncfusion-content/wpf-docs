@@ -11,7 +11,7 @@ documentation: ug
 
 Data virtualization ensures that only data within the visible viewport is rendered. As you scroll, improving performance and reducing memory usage even with large datasets.
 
-This feature renders only the tasks that fall within the visible timeline viewport during horizontal scrolling, and virtualizes nodes so large sets of inline items scroll smoothly both horizontally and vertically.
+This feature renders only the tasks that fall within the visible timeline viewport during horizontal scrolling, and virtualize nodes so large sets of inline items scroll smoothly both horizontally and vertically.
 
 To enable timeline virtualization, set `EnableTimelineVirtualization="True"` on the Gantt control.
 
