@@ -186,3 +186,238 @@ using (var file = File.Open("TreeGrid.xml", FileMode.Open))
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Customizing Serialization and Deserialization Operations
+
+SfTreeGrid allows you to customize the serialization and deserialization operations by deriving `TreeGridSerializationController` class and override the necessary virtual methods.
+
+### Serialize custom column 
+
+By default, the unknown(custom) column types are serialized as `TreeGridTextColumn` type. If you want to serialize the custom column, you have to add custom column type into predefined types. 
+
+In the below code snippet, DatePickerColumn is created . For more information about creating custom column refer [here](https://help.syncfusion.com/wpf/treegrid/column-type#custom-column-support).
+
+{% tabs %}
+{% highlight c# %}
+public class DatePickerColumn : TreeGridColumn
+{        
+    public DatePickerColumn()
+    {
+        SetCellType("DatePickerRenderer");
+    }
+
+    public static readonly DependencyProperty DateMappingNameProperty = DependencyProperty.Register("DateMappingName",
+typeof(string), typeof(DatePickerColumn));
+
+    public string DateMappingName
+    {
+        get { return (string)GetValue(DateMappingNameProperty); }
+        set { SetValue(DateMappingNameProperty, value); }
+    }
+
+    protected override Freezable CreateInstanceCore()
+    {
+        return new DatePickerColumn();
+    }
+
+    protected override void SetDisplayBindingConverter()
+    {
+        (this.DisplayBinding as Binding).Converter = new CustomConverter();      
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+In the below code snippet, the DatePickerColumn is defined in SfTreeGrid.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid Name="treeGrid"
+              ChildPropertyName="ReportsTo"
+              ItemsSource="{Binding Employees}"
+              ParentPropertyName="ID"
+              AutoGenerateColumns="False"
+              AllowEditing="True">
+
+    <syncfusion:SfTreeGrid.Columns>
+        <local:DatePickerColumn HeaderText="DOJ" MappingName="DOJ" />
+    </syncfusion:SfTreeGrid.Columns>
+
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+
+To serialize the above DatePickerColumn, follow the below steps.
+ 
+1. Create a class derived from `SerializableTreeGridColumn`and define the custom column properties in `SerializableCustomTreeGridColumn` class.
+
+{% capture codesnippet1 %}
+{% tabs %}
+{% highlight c# %}
+[DataContract(Name="SerializableCustomTreeGridColumn")]
+
+public class SerializableCustomTreeGridColumn : SerializableTreeGridColumn
+{
+    [DataMember]
+
+    public string DateMappingName { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
+2. Create a new class named as SerializationControllerExt by overriding `TreeGridSerializationController` class.
+
+{% capture codesnippet2 %}
+{% tabs %}
+{% highlight c# %}
+treeGrid.SerializationController = new SerializationControllerExt(treeGrid);
+
+public class SerializationControllerExt : TreeGridSerializationController
+{
+ 
+    public SerializationControllerExt(SfTreeGrid treeGrid)
+        : base(treeGrid)
+    {
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
+
+3. You can get the custom column property settings for serialization by overriding the `GetSerializableTreeGridColumn` virtual method.
+
+{% capture codesnippet3 %}
+{% tabs %}
+{% highlight c# %}
+public class SerializationControllerExt : TreeGridSerializationController
+{
+
+    public SerializationControllerExt(SfTreeGrid treeGrid)
+        : base(treeGrid)
+    {
+    }
+
+    protected override SerializableTreeGridColumn GetSerializableTreeGridColumn(TreeGridColumn column)
+    {
+
+        if (column.MappingName == "DOJ")
+        {
+            return new SerializableCustomTreeGridColumn();
+        }
+        return base.GetSerializableTreeGridColumn(column);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | EmployeeList_Indent_Level_1 }}
+
+4. Store the custom column property settings during serialization by overriding the `StoreTreeGridColumnProperties` virtual method.
+ 
+{% capture codesnippet4 %}
+{% tabs %}
+{% highlight c# %}
+public class SerializationControllerExt : TreeGridSerializationController
+{
+
+    public SerializationControllerExt(SfTreeGrid treeGrid)
+            : base(treeGrid)
+    {
+    }
+
+    protected override void StoreTreeGridColumnProperties(TreeGridColumn column, SerializableTreeGridColumn serializableColumn)
+    {
+        base.StoreTreeGridColumnProperties(column, serializableColumn);
+
+        if (column is DatePickerColumn)
+            (serializableColumn as SerializableCustomTreeGridColumn).DateMappingName = (column as DatePickerColumn).DateMappingName;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | EmployeeList_Indent_Level_1 }}
+
+5. Add the custom column in to known column types by overriding the `KnownTypes` virtual method.
+
+{% capture codesnippet5 %}
+{% tabs %}
+{% highlight c# %}
+public class SerializationControllerExt : TreeGridSerializationController
+{
+    public SerializationControllerExt(SfTreeGrid treeGrid)
+            : base(treeGrid)
+    {
+    }
+
+    public override Type[] KnownTypes()
+    {
+        var types = base.KnownTypes();
+        var list = types.Cast<Type>().ToList();
+        list.Add(typeof(SerializableCustomTreeGridColumn));
+        return list.ToArray();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
+
+6. During deserialization, you can get the custom column settings from `SerializableTreeGridColumn` by overriding `GetTreeGridColumn`virtual method.
+ 
+{% capture codesnippet6 %}
+{% tabs %}
+{% highlight c# %}
+public class SerializationControllerExt : TreeGridSerializationController
+{
+    public SerializationControllerExt(SfDataGrid dataGrid)
+            : base(dataGrid)
+    {
+    }
+
+    protected override TreeGridColumn GetTreeGridColumn(SerializableTreeGridColumn serializableColumn)
+    {
+
+        if (serializableColumn is SerializableCustomTreeGridColumn)
+            return new DatePickerColumn();
+            return base.GetTreeGridColumn(serializableColumn);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
+
+7. Now restore the custom column settings from SerializableTreeGridColumn by overriding the `RestoreColumnProperties` virtual method.
+
+{% capture codesnippet7 %}
+{% tabs %}
+{% highlight c# %}
+public class SerializationControllerExt : TreeGridSerializationController
+{
+
+    public SerializationControllerExt(SfTreeGrid treeGrid)
+        : base(treeGrid)
+    {
+    }
+
+    protected override void RestoreColumnProperties(SerializableTreeGridColumn serializableColumn, TreeGridColumn column)
+    {
+        base.RestoreColumnProperties(serializableColumn, column);
+        
+        if (column is DatePickerColumn)
+            (column as DatePickerColumn).DateMappingName = (serializableColumn as SerializableCustomTreeGridColumn).DateMappingName;
+    }
+
+}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
+
+You can download the sample demo `here`.
