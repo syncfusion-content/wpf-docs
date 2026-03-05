@@ -2,9 +2,9 @@
 layout: post
 title: Customization in WPF SmartDataGrid control | Syncfusion®
 description: Learn here all about how to customize behavior and features of Syncfusion® WPF SmartDataGrid (SfSmartDataGrid) control and more.
-platform: WPF
+platform: wpf
 control: SfSmartDataGrid
-documentation: UG
+documentation: ug
 keywords : WPF datagrid, customization, assistview, prompts, smart actions
 ---
 
@@ -22,12 +22,11 @@ The `Suggestions` property in `SfSmartDataGrid` is used to provide a predefined 
 {% endhighlight %}
 
 {% highlight c# %}
-public class OrderInfoRepository
+public class ViewModel
 {
 	public ObservableCollection<string> AiSuggestions { get; } = new ObservableCollection<string>
 	{
 		"Which orders have a payment status of Not Paid?",
-		"What are the top 10 orders with the highest freight cost?",
 		"Which customers have placed the most orders?",
 		"What are the orders shipped to Brazil?",
 		"What is the total quantity of products ordered across all orders?",
@@ -36,7 +35,7 @@ public class OrderInfoRepository
 {% endhighlight %}
 {% endtabs %}
 
-<img alt="WPF-smart-datagrid-suggested-prompts" src="Images\Customization\WPF-smart-datagrid-suggested-prompts.png" width="600"/>
+<img alt="WPF-smart-datagrid-suggested-prompts" src="getting-started_images\wpf-smart-datagrid-overview.png" width="600"/>
 
 ## Prompt
 
@@ -54,7 +53,9 @@ SmartGrid.Prompt = "Sort the Quantity column";;
 
 ## EnableSmartActions
 
-The `EnableSmartActions` property in `SfSmartDataGrid` determines whether actions are applied to the DataGrid. By default, this property is set to true, allowing operations such as sorting, grouping, filtering, and highlighting to be executed automatically. Setting it to false restricts these actions from being applied to the grid.
+The `EnableSmartActions` property in `SfSmartDataGrid` determines whether AI actions can be applied to the DataGrid. By default, this property is set to false, meaning actions such as sorting, grouping, filtering, and highlighting are not applied automatically.
+When the property is set to true, these actions are enabled and can be applied to the grid.
+
 
 {% tabs %}
 {% highlight xaml %}

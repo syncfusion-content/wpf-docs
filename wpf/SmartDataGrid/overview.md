@@ -2,7 +2,7 @@
 layout: post
 title: About WPF Smart DataGrid control | Syncfusion®
 description: Learn about the Syncfusion® WPF Smart DataGrid (SfSmartDataGrid) control and its AI-assisted features.
-platform: WPF
+platform: wpf
 control: SfSmartDataGrid
 documentation: ug
 keywords: wpf smart datagrid, ai datagrid wpf, smart grid wpf, ai gridview wpf, wpf smart datagrid, wpf ai grid

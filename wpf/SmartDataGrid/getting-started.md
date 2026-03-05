@@ -104,7 +104,7 @@ In order to add control manually in XAML, do the below steps,
 	* Syncfusion.Shared.WPF
     * Syncfusion.SfChat.WPF
     * Syncfusion.SfSmartComponents.WPF
-2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfSmartDataGrid control namespace **SSyncfusion.UI.Xaml.SmartComponents** in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfSmartDataGrid control namespace **Syncfusion.UI.Xaml.SmartComponents** in XAML page.
 3. Declare SfSmartDataGrid control in XAML page.
 
 {% capture codesnippet1 %}
@@ -350,15 +350,13 @@ public class ViewModel : INotifyPropertyChanged
         "Rating"
     };
 
-
-
     public event PropertyChangedEventHandler PropertyChanged;
     public void RaisePropertyChanged(string propName)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
     }
 
-    public OrderInfoRepository()
+    public ViewModel()
     {
         this.CurrentUser = new Author { Name = "John" };
         OrderInfoCollection = new ObservableCollection<OrderInfo>();
@@ -391,7 +389,6 @@ public class ViewModel : INotifyPropertyChanged
     };
 
     private static readonly string[] PaymentStatuses = new[] { "Paid", "Not Paid" };
-
 
     private void GenerateOrders()
     {

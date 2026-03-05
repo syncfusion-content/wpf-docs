@@ -2,9 +2,9 @@
 layout: post
 title: AI-Powered Features in WPF SmartDataGrid control | Syncfusion®
 description: Learn here all about how to use AI-powered natural language commands in Syncfusion® WPF SmartDataGrid (SfSmartDataGrid) control and more.
-platform: WPF
+platform: wpf
 control: SfSmartDataGrid
-documentation: UG
+documentation: ug
 keywords : WPF datagrid, ai assist, natural language commands, sorting, grouping, filtering, highlighting
 ---
 
@@ -29,7 +29,7 @@ sort by city column in descending and Revenue ascending
 clear sorting
 ```
 
-<img alt="WPF-smart-datagrid-sort" src="ai-powered-features_gifs\WPF-smart-datagrid-sort.gif" width="600"/>
+<img alt="WPF-smart-datagrid-sort" src="ai-powered-features_images\WPF-smart-datagrid-sort.png" width="600"/>
 
 ## Grouping
 
@@ -48,7 +48,7 @@ group by Country and ShipCity
 clear grouping
 ```
 
-<img alt="WPF-smart-datagrid-group" src="ai-powered-features_gifs\WPF-smart-datagrid-group.gif" width="600"/>
+<img alt="WPF-smart-datagrid-group" src="ai-powered-features_images\WPF-smart-datagrid-group.png" width="600"/>
 
 ## Filtering
 
@@ -67,7 +67,7 @@ filter Country equals Germany AND Revenue greaterThan 1000
 clear filters
 ```
 
-<img alt="WPF-smart-datagrid-filter" src="ai-powered-features_gifs\WPF-smart-datagrid-filter.gif" width="600"/>
+<img alt="WPF-smart-datagrid-filter" src="ai-powered-features_images\WPF-smart-datagrid-filter.png" width="600"/>
 
 ## Highlight
 
@@ -92,4 +92,4 @@ clear row highlight
 clear cell highlight
 ```
 
-<img alt="WPF-smart-datagrid-highlight" src="ai-powered-features_gifs\WPF-smart-datagrid-highlight.gif" width="600" />
+<img alt="WPF-smart-datagrid-highlight" src="ai-powered-features_images\WPF-smart-datagrid-highlight.png" width="600" />
