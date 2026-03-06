@@ -16,6 +16,7 @@ SfDiagram provides a set of built-in automatic layout algorithms, which is used 
 * MindMap tree layout
 * Hierarchical tree layout
 * Radial tree layout
+* Force directed tree layout
 
 Automatic layout algorithm uses the nodes and connectors defined in NodeCollection and ConnectorCollection or business objects defined in DataSource as input to generate the layout. To generate layout from NodeCollection and ConnectorCollection, you have to create all the nodes and connectors required for layout and add those items in NodeCollection and ConnectorCollection as defined in the following code snippet.
 
