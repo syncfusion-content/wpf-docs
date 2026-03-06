@@ -72,7 +72,7 @@ namespace MarkdownViewerGettingStarted
 
 ## Step 4: Add Source to the SfMarkdownViewer
 
-To display Markdown content, assign a string to the Sourceproperty of the SfMarkdownViewer control. This string can contain standard Markdown syntax such as headings, bold text, lists, and images.
+To display Markdown content, assign a string to the Source property of the SfMarkdownViewer control. This string can contain standard Markdown syntax such as headings, bold text, lists, and images.
 
 {% tabs %} 
 {% highlight xaml %}
