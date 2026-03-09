@@ -31,6 +31,21 @@ The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncf
 
 ![Single Row Selection in WPF DataGrid](Selection_images/wpf-datagrid-single-row-selection.png)
 
+### SingleDeselect mode for Selection and Deselection
+
+SfDataGrid allows you to select or deselect a single row or cell, when the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is `SingleDeselect`
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfDataGrid x:Name=”dataGrid”
+                       SelectionUnit="Row"
+                       NavigationMode="Cell"
+                       SelectionMode="SingleDeselect"
+                       ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% endtabs %}
+
+N> When the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is `SingleDeselect`, a single row or cell can be selected or deselected by clicking the respective row and cell or by pressing <kbd>space</kbd> key.
 
 ### Disable selection for rows and columns
 
