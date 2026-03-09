@@ -276,6 +276,63 @@ The following screenshot illustrates the AerialWithLabel view.
 
 N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
 
+## Azure Maps
+
+Azure Maps is an online map service provider from Microsoft. Similar to OSM and Bing Maps, it provides map tile images based on requests and combines them to display the map area. Azure Maps offers various map styles including satellite imagery, road maps, and terrain views with global coverage.
+
+### Prerequisites
+
+Before using Azure Maps with the Maps component, the following prerequisites must be met:
+
+* **Azure account** - An active Microsoft Azure account is required
+* **Azure Maps subscription** - Create an Azure Maps account in the Azure portal
+* **Subscription key** - Generate a subscription key (primary or secondary) for authentication
+
+To obtain an Azure Maps subscription key, follow the steps outlined in the [Azure Maps authentication documentation](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-authentication). The subscription key must be included in all API requests to authenticate and access Azure Maps services.
+
+N> Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/) for terms of use and pricing information.
+
+### Adding Azure Maps
+
+Azure Maps can be rendered using the `UrlTemplate` property with the tile server URL provided by Azure Maps. The URL template must include the subscription key for authentication. Replace `Your-Key` in the URL template below with the actual subscription key obtained from the Azure portal.
+
+The URL template contains several parameters that are automatically replaced by the Maps component:
+
+* **subscription-key** - The Azure Maps authentication key (replace with actual key)
+* **api-version** - The Azure Maps API version (e.g., 2024-04-01)
+* **TilesetID** - The map tilesetId type (microsoft.base.road, etc.)
+* **zoom** - The zoom level (automatically populated as `level`)
+* **x** - The tile X coordinate (automatically populated as `tileX`)
+* **y** - The tile Y coordinate (automatically populated as `tileY`)
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:SfMap>
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ImageryLayer
+                UrlTemplate="https://atlas.microsoft.com/map/tile?api-version=2024-04-01&amp;tilesetId=microsoft.base.road&amp;zoom={z}&amp;x={x}&amp;y={y}&amp;subscription-key=<your-azure-maps-key>"/>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    // Azure Maps via UrlTemplate (XYZ tiles)
+    SfMap map = new SfMap();
+    ImageryLayer layer = new ImageryLayer();
+    layer.UrlTemplate = "https://atlas.microsoft.com/map/tile?api-version=2024-04-01&tilesetId=microsoft.base.road&zoom={z}&x={x}&y={y}&subscription-key=<your-azure-maps-key>";
+    map.Layers.Add(layer);
+    this.Content = map;
+    
+{% endhighlight %}
+{% endtabs %}
+
+![Azure Maps tiles](Map-Providers_images/wpf-auzure-maps.webp){:width="1000" height="488"}
+
+N> When `UrlTemplate` is set, `ImageryLayer` loads tiles from that URL and ignores `LayerType`/`BingMapKey`. If `UrlTemplate` is not set, it continues to use `LayerType` (Bing or OpenStreetMap), ensuring full backward compatibility. You can also point `UrlTemplate` to any XYZ tile provider that follows the `{z}/{x}/{y}` pattern.
+
 ## See also
 
 [How to show google map in WPF SfMap](https://support.syncfusion.com/kb/article/10441/how-to-show-google-map-in-wpf-map-sfmap)
