@@ -240,19 +240,17 @@ In the below code snippet, the DatePickerColumn is defined in SfTreeGrid.
               AllowEditing="True">
 
     <syncfusion:SfTreeGrid.Columns>
-        <local:DatePickerColumn HeaderText="DOJ" MappingName="DOJ" />
+        <local:DatePickerColumn HeaderText="DOJ" MappingName="DOJ" DateMappingName="JoiningDate"/>
     </syncfusion:SfTreeGrid.Columns>
 
 </syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
-
 To serialize the above DatePickerColumn, follow the below steps.
  
 1. Create a class derived from `SerializableTreeGridColumn`and define the custom column properties in `SerializableCustomTreeGridColumn` class.
 
-{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 [DataContract(Name="SerializableCustomTreeGridColumn")]
@@ -265,12 +263,9 @@ public class SerializableCustomTreeGridColumn : SerializableTreeGridColumn
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create a new class named as SerializationControllerExt by overriding `TreeGridSerializationController` class.
 
-{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 treeGrid.SerializationController = new SerializationControllerExt(treeGrid);
@@ -285,13 +280,9 @@ public class SerializationControllerExt : TreeGridSerializationController
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
-
 
 3. You can get the custom column property settings for serialization by overriding the `GetSerializableTreeGridColumn` virtual method.
 
-{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class SerializationControllerExt : TreeGridSerializationController
@@ -314,12 +305,9 @@ public class SerializationControllerExt : TreeGridSerializationController
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | EmployeeList_Indent_Level_1 }}
 
 4. Store the custom column property settings during serialization by overriding the `StoreTreeGridColumnProperties` virtual method.
  
-{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 public class SerializationControllerExt : TreeGridSerializationController
@@ -340,12 +328,9 @@ public class SerializationControllerExt : TreeGridSerializationController
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet4 | EmployeeList_Indent_Level_1 }}
 
-5. Add the custom column in to known column types by overriding the `KnownTypes` virtual method.
+5. Add the custom column into known column types by overriding the `KnownTypes` virtual method.
 
-{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 public class SerializationControllerExt : TreeGridSerializationController
@@ -365,12 +350,9 @@ public class SerializationControllerExt : TreeGridSerializationController
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 6. During deserialization, you can get the custom column settings from `SerializableTreeGridColumn` by overriding `GetTreeGridColumn`virtual method.
  
-{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 public class SerializationControllerExt : TreeGridSerializationController
@@ -390,12 +372,9 @@ public class SerializationControllerExt : TreeGridSerializationController
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 7. Now restore the custom column settings from SerializableTreeGridColumn by overriding the `RestoreColumnProperties` virtual method.
 
-{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 public class SerializationControllerExt : TreeGridSerializationController
@@ -417,7 +396,69 @@ public class SerializationControllerExt : TreeGridSerializationController
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet7 | OrderList_Indent_Level_1 }}
+
+You can download the sample demo `here`.
+
+### Serializing template column content
+
+By default, you cannot serialize the template content in SfTreeGrid. This is the default behavior during  Serialization and Deserialization operation.
+
+{% tabs %}
+{% highlight xaml %}
+<Application.Resources>
+    <DataTemplate x:Key="cellTemplate">
+        <Button Content="{Binding Value}" />
+    </DataTemplate>
+</Application.Resources>
+
+<syncfusion:SfTreeGrid Name="treeGrid"
+              ChildPropertyName="ReportsTo"
+              ItemsSource="{Binding Employees}"
+              ParentPropertyName="ID"
+              AutoGenerateColumns="False">
+
+    <syncfusion:SfTreeGrid.Columns>
+
+        <syncfusion:TreeGridTemplateColumn CellTemplate="{StaticResource cellTemplate}"
+                                       HeaderText="Salary"
+                                       MappingName="Salary"
+                                       SetCellBoundValue="True" />        
+    </syncfusion:SfTreeGrid.Columns>
+
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+If you want to serialize and deserialize the template content, you have to reconstruct the same template during deserialization in `RestoreColumnProperties` method.
+
+{% tabs %}
+{% highlight c# %}
+this.treeGrid.SerializationController = new SerializationControllerExt(this.treeGrid);
+
+public class SerializationControllerExt : TreeGridSerializationController
+{
+
+    public SerializationControllerExt(SfTreeGrid treeGrid)
+        : base(treeGrid)
+    {
+
+    }
+        
+    protected override void RestoreColumnProperties(SerializableTreeGridColumn serializableColumn, TreeGridColumn column)
+    {
+        base.RestoreColumnProperties(serializableColumn, column);
+
+        if (column is TreeGridTemplateColumn)
+        {
+
+            if (column.MappingName == "Salary")
+            {
+                column.CellTemplate = App.Current.Resources["cellTemplate"] as DataTemplate;
+            }
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
 You can download the sample demo `here`.
