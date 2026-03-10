@@ -37,7 +37,7 @@ SfDataGrid allows you to select or deselect a single row or cell, when the [Sele
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid x:Name=”dataGrid”
+<Syncfusion:SfDataGrid x:Name="dataGrid"
                        SelectionUnit="Row"
                        NavigationMode="Cell"
                        SelectionMode="SingleDeselect"
