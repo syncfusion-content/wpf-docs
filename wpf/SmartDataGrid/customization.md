@@ -12,6 +12,17 @@ keywords : WPF datagrid, customization, assistview, prompts, smart actions
 
 The `SfSmartDataGrid` provides options to customize its behavior and appearance, including predefined suggestions, initial prompts, enabling or disabling smart actions.
 
+## CurrentUser
+
+The `CurrentUser` property of `SfSmartDataGrid` provides the current author or user context. This can be used by the AssistView and smart actions for personalization, audit information, or to tailor suggestions based on the active user.
+
+{% tabs %}
+{% highlight c# %}
+// Set the current user in code-behind
+SmartGrid.CurrentUser = new Author { Name = "John Doe" };
+{% endhighlight %}
+{% endtabs %}
+
 ## Suggestions
 
 The `Suggestions` property in `SfSmartDataGrid` is used to provide a predefined list of suggestions that appear in the AssistView. These suggestions help users quickly select common actions without typing commands manually.
@@ -64,6 +75,21 @@ When the property is set to true, these actions are enabled and can be applied t
 
 {% highlight c# %}
 SmartGrid.EnableSmartActions = true;
+{% endhighlight %}
+{% endtabs %}
+
+## HighlightBrush
+
+The `HighlightBrush` property is of type `SolidColorBrush` and controls the brush used when smart actions apply visual highlights to rows or cells (for example, when the AI highlights matching records). You can set this in XAML or code-behind.
+
+{% tabs %}
+{% highlight xaml %}
+    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" HighlightBrush="Orange"/>
+{% endhighlight %}
+
+{% highlight c# %}
+// Set the highlight brush in code-behind
+SmartGrid.HighlightBrush = new SolidColorBrush(Colors.Orange);
 {% endhighlight %}
 {% endtabs %}
 

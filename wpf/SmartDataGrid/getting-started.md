@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF SfSmartDataGrid (SfSmartDataGrid)
 
-This section provides a quick overview for working with the [WPF SfSmartDataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfSmartDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for working with the [WPF SfSmartDataGrid](https://www.syncfusion.com/wpf-controls/smartdatagrid) (SfSmartDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
 
 ## Assembly deployment
 
@@ -86,13 +86,12 @@ Create new WPF Project in Visual Studio to display SfSmartDataGrid with data obj
 ### Install the Syncfusion® WPF NuGet packages
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.SfSmartComponents.Wpf]() and install the latest version.
+2. Search for [Syncfusion.SfSmartComponents.Wpf](https://www.nuget.org/packages/Syncfusion.SfSmartDataGrid.WPF) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ### Adding control via Designer
 
 SfSmartDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-    ![Dragging WPF SfSmartDataGrid Control from Toolbox to Designer]()
 
 ### Adding control manually in XAML
 
@@ -142,11 +141,9 @@ In order to add control manually in C#, do the below steps,
 {% highlight c# %}
 using Syncfusion.UI.Xaml.SmartComponents;
 namespace WpfApplication1
-{
- 
+{ 
     public partial class MainWindow : Window
     {
- 
         public MainWindow()
         {
             InitializeComponent();
@@ -170,9 +167,8 @@ SfSmartDataGrid is a data-bound control. So before create binding to the control
 {% tabs %}
 {% highlight c# %}
 public partial class OrderInfo : INotifyPropertyChanged
-{
+{ 
     private int _orderID;
-    private string _customerID = string.Empty;
     private string _customerName = string.Empty;
     private string _productName = string.Empty;
     private DateTime _orderDate;
@@ -181,9 +177,6 @@ public partial class OrderInfo : INotifyPropertyChanged
     private string _shipCountry = string.Empty;
     private string _shipCity = string.Empty;
     private string _paymentStatus = string.Empty;
-    private double _rating;
-    private bool _isSelected;
-
 
     public event PropertyChangedEventHandler PropertyChanged;
 
@@ -200,12 +193,6 @@ public partial class OrderInfo : INotifyPropertyChanged
     {
         get => _orderID;
         set => SetProperty(ref _orderID, value);
-    }
-
-    public string CustomerID
-    {
-        get => _customerID;
-        set => SetProperty(ref _customerID, value);
     }
 
     public string CustomerName
@@ -256,36 +243,20 @@ public partial class OrderInfo : INotifyPropertyChanged
         set => SetProperty(ref _paymentStatus, value);
     }
 
-    public double Rating
-    {
-        get => _rating;
-        set => SetProperty(ref _rating, value);
-    }
-
-    public bool IsSelected
-    {
-        get => _isSelected;
-        set => SetProperty(ref _isSelected, value);
-    }
-
     public OrderInfo() { }
 
     public OrderInfo(int orderId,
-                    string customerName,
-                    string customerId,
-                    string productName,
-                    DateTime orderDate,
-                    int quantity,
-                    double freight,
-                    string shipCountry,
-                    string shipCity,
-                    string paymentStatus,
-                    double rating,
-                    bool isSelected = false)
+                     string customerName,
+                     string productName,
+                     DateTime orderDate,
+                     int quantity,
+                     double freight,
+                     string shipCountry,
+                     string shipCity,
+                     string paymentStatus)
     {
         _orderID = orderId;
         _customerName = customerName;
-        _customerID = customerId;
         _productName = productName;
         _orderDate = orderDate;
         _quantity = quantity;
@@ -293,8 +264,6 @@ public partial class OrderInfo : INotifyPropertyChanged
         _shipCountry = shipCountry;
         _shipCity = shipCity;
         _paymentStatus = paymentStatus;
-        _rating = rating;
-        _isSelected = isSelected;
     }
 }
 {% endhighlight %}
@@ -311,9 +280,11 @@ N> If you want your data object (OrderInfo class) to automatically reflect prope
 {% tabs %} 
 {% highlight c# %}
 public class ViewModel : INotifyPropertyChanged
-{
+{ 
     public ObservableCollection<OrderInfo> OrderInfoCollection { get; set; }
+
     private Author currentUser;
+
     public Author CurrentUser
     {
         get
@@ -326,6 +297,7 @@ public class ViewModel : INotifyPropertyChanged
             RaisePropertyChanged("CurrentUser");
         }
     }
+
     public ObservableCollection<string> AiSuggestions { get; } = new ObservableCollection<string>
     {
         "Which orders have a payment status of Not Paid?",
@@ -333,21 +305,6 @@ public class ViewModel : INotifyPropertyChanged
         "Which customers have placed the most orders?",
         "What are the orders shipped to Brazil?",
         "What is the total quantity of products ordered across all orders?",
-    };
-
-    public ObservableCollection<string> SortableProperties { get; set; } = new ObservableCollection<string>
-    {
-        "OrderID",
-        "CustomerName",
-        "CustomerID",
-        "ProductID",
-        "OrderDate",
-        "Quantity",
-        "Freight",
-        "ShipCountry",
-        "ShipCity",
-        "PaymentStatus",
-        "Rating"
     };
 
     public event PropertyChangedEventHandler PropertyChanged;
@@ -377,7 +334,6 @@ public class ViewModel : INotifyPropertyChanged
         "Spain","Brazil","Switzerland","France","Germany","UK","Canada","Mexico","USA","Italy"
     };
 
-
     public string[] ElectronicsProducts = new string[]
     {
         "Keyboard", "Mouse", "Trackpad", "Stylus", "Scanner", "Webcam", "Microphone", "Monitor", "Speakers", "Headphones", "Printers", "Projectors", "External Drive", "UPS"
@@ -399,7 +355,6 @@ public class ViewModel : INotifyPropertyChanged
         {
             int orderId = baseOrderId + i;
             var name = Names[i % Names.Length];
-            var custId = $"C{100 + (i % 50):D3}";
             string productName = ElectronicsProducts[random.Next(ElectronicsProducts.Length)];
             DateTime orderDate = DateTime.Today.AddDays(-rnd.Next(1, 90));
 
@@ -422,23 +377,16 @@ public class ViewModel : INotifyPropertyChanged
             // Payment status with realistic ratio
             var status = rnd.NextDouble() < 0.7 ? "Paid" : "Not Paid";
 
-            // Rating bell curve around 3-4
-            var rating = Math.Round(3 + (rnd.NextDouble() - 0.5) * 2, 1);
-            rating = Math.Min(Math.Max(rating, 1.0), 5.0);
-
             OrderInfoCollection.Add(new OrderInfo(
                 orderId: orderId,
                 customerName: name,
-                customerId: custId,
                 productName: productName,
                 orderDate: orderDate,
                 quantity: quantity,
                 freight: freight,
                 shipCountry: country,
                 shipCity: city,
-                paymentStatus: status,
-                rating: rating,
-                isSelected: false));
+                paymentStatus: status));
         }
     }
 }
