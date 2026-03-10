@@ -86,7 +86,7 @@ Create new WPF Project in Visual Studio to display SfSmartDataGrid with data obj
 ### Install the Syncfusion® WPF NuGet packages
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.SfSmartComponents.Wpf](https://www.nuget.org/packages/Syncfusion.SfSmartDataGrid.WPF) and install the latest version.
+2. Search for Syncfusion.SfSmartComponents.Wpf and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ### Adding control via Designer
