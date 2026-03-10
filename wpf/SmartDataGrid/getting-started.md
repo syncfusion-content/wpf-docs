@@ -415,27 +415,27 @@ Bind the collection created in previous step to `SfSmartDataGrid.ItemsSource` pr
     </Window.DataContext>
 
     <Grid x:Name="Root_Grid">
-        <syncfusion:SfSmartDataGrid x:Name="SmartGrid" ItemsSource="{Binding OrderInfoCollection}" AutoGenerateColumns="False" CurrentUser="{Binding CurrentUser}" Suggestions="{Binding AiSuggestions}">
+        <syncfusion:SfSmartDataGrid x:Name="SmartGrid" ItemsSource="{Binding OrderInfoCollection}" AutoGenerateColumns="False" CurrentUser="{Binding CurrentUser}" Suggestions="{Binding AiSuggestions}" ColumnSizer="Star">
             <syncfusion:SfSmartDataGrid.Columns>
-                <syncfusion:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" Width="100" NumberDecimalDigits="0" TextAlignment="Center"/>
-                <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" Width="150" TextAlignment="Center"/>
+                <syncfusion:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" NumberDecimalDigits="0" TextAlignment="Center"/>
+                <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" TextAlignment="Center"/>
 
-                <syncfusion:GridTextColumn MappingName="ProductName" HeaderText="Product Name" Width="145" TextAlignment="Center"/>
+                <syncfusion:GridTextColumn MappingName="ProductName" HeaderText="Product Name" TextAlignment="Center"/>
 
-                <syncfusion:GridDateTimeColumn  MappingName="OrderDate" Width="140" HeaderText="Order Date" TextAlignment="Center">
+                <syncfusion:GridDateTimeColumn  MappingName="OrderDate" HeaderText="Order Date" TextAlignment="Center">
                 </syncfusion:GridDateTimeColumn>
 
-                <syncfusion:GridNumericColumn  MappingName="Quantity" Width="120" NumberDecimalDigits="0" TextAlignment="Center">
+                <syncfusion:GridNumericColumn  MappingName="Quantity" NumberDecimalDigits="0" TextAlignment="Center">
                 </syncfusion:GridNumericColumn>
 
-                <syncfusion:GridNumericColumn MappingName="Freight" Width="120" TextAlignment="Center">
+                <syncfusion:GridNumericColumn MappingName="Freight" TextAlignment="Center">
                 </syncfusion:GridNumericColumn>
 
-                <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" Width="150" TextAlignment="Center"/>
+                <syncfusion:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" TextAlignment="Center"/>
 
-                <syncfusion:GridTextColumn MappingName="ShipCountry" HeaderText="Ship Country" Width="150" TextAlignment="Center"/>
+                <syncfusion:GridTextColumn MappingName="ShipCountry" HeaderText="Ship Country" TextAlignment="Center"/>
 
-                <syncfusion:GridTextColumn MappingName="PaymentStatus" HeaderText="Payment Status" Width="130" TextAlignment="Center"/>
+                <syncfusion:GridTextColumn MappingName="PaymentStatus" HeaderText="Payment Status" TextAlignment="Center"/>
             </syncfusion:SfSmartDataGrid.Columns>
         </syncfusion:SfSmartDataGrid>
     </Grid>
