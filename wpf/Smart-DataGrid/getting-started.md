@@ -92,6 +92,7 @@ Create new WPF Project in Visual Studio to display SfSmartDataGrid with data obj
 ### Adding control via Designer
 
 SfSmartDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+    ![Dragging WPF SfSmartDataGrid Control from Toolbox to Designer](getting-started_images/wpf-smart-datagrid-toolbox.png)
 
 ### Adding control manually in XAML
 
