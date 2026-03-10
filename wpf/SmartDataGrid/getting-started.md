@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF SfSmartDataGrid (SfSmartDataGrid)
 
-This section provides a quick overview for working with the [WPF SfSmartDataGrid](https://www.syncfusion.com/wpf-controls/smartdatagrid) (SfSmartDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for working with the [WPF SfSmartDataGrid](https://www.syncfusion.com/wpf-controls/smart-datagrid) (SfSmartDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
 
 ## Assembly deployment
 
@@ -453,14 +453,32 @@ dataGrid.ItemsSource = viewModel.Orders;
 To configure the AI services, you must give the `azureApiKey` in the `App.xaml.cs` file.
 
 ```csharp
-string key = "<MENTION-YOUR-KEY>";
-Uri azureEndPoint = new Uri("<MENTION-YOUR-URL>");
-string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
+using Azure.AI.OpenAI;
+using Microsoft.Extensions.AI;
+using Microsoft.Extensions.DependencyInjection;
+using Syncfusion.UI.Xaml.SmartComponents;
+using System.ClientModel;
+using System.Windows;
+namespace WpfApplication1
+{
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : Application
+    {
+        public App()
+        {
+            string azureApiKey = "<MENTION-YOUR-KEY>";
+            Uri azureEndpoint = new Uri("<MENTION-YOUR-URL>");
+            string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
 
-AzureOpenAIClient azureClient = new AzureOpenAIClient(azureEndpoint, new ApiKeyCredential(azureApiKey));
-IChatClient azureChatClient = azureClient.GetChatClient(deploymentName).AsIChatClient();
-SyncfusionAIExtension.Services.AddChatClient(azureChatClient);
-SyncfusionAIExtension.ConfigureSyncfusionAIServices();
+            AzureOpenAIClient azureClient = new AzureOpenAIClient(azureEndpoint, new ApiKeyCredential(azureApiKey));
+            IChatClient azureChatClient = azureClient.GetChatClient(deploymentName).AsIChatClient();
+            SyncfusionAIExtension.Services.AddSingleton<IChatClient>(azureChatClient);
+            SyncfusionAIExtension.ConfigureSyncfusionAIServices();
+        }
+	}
+}
 ```
 
 ### Running the Application

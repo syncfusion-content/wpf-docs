@@ -95,7 +95,7 @@ SmartGrid.HighlightBrush = new SolidColorBrush(Colors.Orange);
 
 ## Apply Smart Actions Programmatically
 
-The `ExecutePrompt` method in `SfSmartDataGrid` is used to fetch a response programmatically without opening the AssistView popup. By passing a prompt to this method, the required action is applied directly to the DataGrid. 
+The `ExecutePrompt` method in `SfSmartDataGrid` is used to fetch a response programmatically without opening the AssistView. By passing a prompt to this method, the required action is applied directly to the DataGrid. 
 
 {% tabs %}
 {% highlight c# %}
