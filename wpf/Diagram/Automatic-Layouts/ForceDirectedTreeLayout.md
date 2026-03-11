@@ -33,7 +33,7 @@ The below mentioned properties are used to configure the force-directed tree lay
 
 ## Create a layout using Nodes and Connectors 
 
-Define nodes and connectors directly in XAML, then let the `ForceDirectedTree` layout arrange them.
+Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLayout` arrange them.
 
 {% tabs %}
 {% highlight xaml %}
@@ -435,7 +435,7 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTree` l
     <syncfusion:SfDiagram.LayoutManager>
         <syncfusion:LayoutManager>
             <syncfusion:LayoutManager.Layout>
-                <syncfusion:ForceDirectedTree
+                <syncfusion:ForceDirectedTreeLayout
                                   AttractionStrength="0.6"
                                   RepulsionStrength="25000"
                                   MaximumIteration="2500" />
@@ -451,7 +451,7 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTree` l
 CreatedNode();
 Diagram.LayoutManager = new LayoutManager()
 {
-    Layout = new ForceDirectedTree()
+    Layout = new ForceDirectedTreeLayout()
     {
         AttractionStrength = 0.6,
         RepulsionStrength = 25000,
@@ -601,7 +601,7 @@ private ConnectorViewModel Edge(string sourceId, string targetId)
 
 ## Create a Force-Directed Tree from a data source
 
-Bind a collection to `DataSourceSettings`. At least one item should have a null/empty `Manager` to act as a root. Configure the `LayoutManager` with `ForceDirectedTree`.
+Bind a collection to `DataSourceSettings`. At least one item should have a null/empty `Manager` to act as a root. Configure the `LayoutManager` with `ForceDirectedTreeLayout`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -647,7 +647,7 @@ Bind a collection to `DataSourceSettings`. At least one item should have a null/
                               ParentId="Manager"
                               Id="Id"/>
 
-<Syncfusion:ForceDirectedTree x:Key="layout" x:Name="DirectedTreeLayout"
+<Syncfusion:ForceDirectedTreeLayout x:Key="layout" x:Name="DirectedTreeLayout"
                               AttractionStrength = "0.7"
                               RepulsionStrength = "25000"
                               MaximumIteration = "500" />
@@ -716,7 +716,7 @@ Diagram.DataSourceSettings = new DataSourceSettings()
 
 Diagram.LayoutManager = new LayoutManager()
 {
-    Layout = new ForceDirectedTree()
+    Layout = new ForceDirectedTreeLayout()
     {
         AttractionStrength = 0.7,
         RepulsionStrength = 25000,
