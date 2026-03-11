@@ -195,19 +195,19 @@ SfTreeGrid allows you to customize the serialization and deserialization operati
 
 By default, the unknown(custom) column types are serialized as `TreeGridTextColumn` type. If you want to serialize the custom column, you have to add custom column type into predefined types. 
 
-In the below code snippet, DatePickerColumn is created . For more information about creating custom column refer [here](https://help.syncfusion.com/wpf/treegrid/column-type#custom-column-support).
+In the below code snippet, TreeGridDatePickerColumn is created . For more information about creating custom column refer [here](https://help.syncfusion.com/wpf/treegrid/column-type#custom-column-support).
 
 {% tabs %}
 {% highlight c# %}
-public class DatePickerColumn : TreeGridColumn
+public class TreeGridDatePickerColumn : TreeGridColumn
 {        
-    public DatePickerColumn()
+    public TreeGridDatePickerColumn()
     {
         SetCellType("DatePickerRenderer");
     }
 
     public static readonly DependencyProperty DateMappingNameProperty = DependencyProperty.Register("DateMappingName",
-typeof(string), typeof(DatePickerColumn));
+typeof(string), typeof(TreeGridDatePickerColumn));
 
     public string DateMappingName
     {
@@ -217,7 +217,7 @@ typeof(string), typeof(DatePickerColumn));
 
     protected override Freezable CreateInstanceCore()
     {
-        return new DatePickerColumn();
+        return new TreeGridDatePickerColumn();
     }
 
     protected override void SetDisplayBindingConverter()
@@ -228,7 +228,7 @@ typeof(string), typeof(DatePickerColumn));
 {% endhighlight %}
 {% endtabs %}
 
-In the below code snippet, the DatePickerColumn is defined in SfTreeGrid.
+In the below code snippet, the TreeGridDatePickerColumn is defined in SfTreeGrid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -240,14 +240,14 @@ In the below code snippet, the DatePickerColumn is defined in SfTreeGrid.
               AllowEditing="True">
 
     <syncfusion:SfTreeGrid.Columns>
-        <local:DatePickerColumn HeaderText="DOJ" MappingName="DOJ" DateMappingName="JoiningDate"/>
+        <local:TreeGridDatePickerColumn HeaderText="DOJ" MappingName="DOJ" DateMappingName="JoiningDate"/>
     </syncfusion:SfTreeGrid.Columns>
 
 </syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
-To serialize the above DatePickerColumn, follow the below steps.
+To serialize the above TreeGridDatePickerColumn, follow the below steps.
  
 1. Create a class derived from `SerializableTreeGridColumn`and define the custom column properties in `SerializableCustomTreeGridColumn` class.
 
@@ -264,16 +264,16 @@ public class SerializableCustomTreeGridColumn : SerializableTreeGridColumn
 {% endhighlight %}
 {% endtabs %}
 
-2. Create a new class named as SerializationControllerExt by overriding `TreeGridSerializationController` class.
+2. Create a new class named as TreeGridSerializationControllerExt by overriding `TreeGridSerializationController` class.
 
 {% tabs %}
 {% highlight c# %}
-treeGrid.SerializationController = new SerializationControllerExt(treeGrid);
+treeGrid.SerializationController = new TreeGridSerializationControllerExt(treeGrid);
 
-public class SerializationControllerExt : TreeGridSerializationController
+public class TreeGridSerializationControllerExt : TreeGridSerializationController
 {
  
-    public SerializationControllerExt(SfTreeGrid treeGrid)
+    public TreeGridSerializationControllerExt(SfTreeGrid treeGrid)
         : base(treeGrid)
     {
     }
@@ -285,10 +285,10 @@ public class SerializationControllerExt : TreeGridSerializationController
 
 {% tabs %}
 {% highlight c# %}
-public class SerializationControllerExt : TreeGridSerializationController
+public class TreeGridSerializationControllerExt : TreeGridSerializationController
 {
 
-    public SerializationControllerExt(SfTreeGrid treeGrid)
+    public TreeGridSerializationControllerExt(SfTreeGrid treeGrid)
         : base(treeGrid)
     {
     }
@@ -310,10 +310,10 @@ public class SerializationControllerExt : TreeGridSerializationController
  
 {% tabs %}
 {% highlight c# %}
-public class SerializationControllerExt : TreeGridSerializationController
+public class TreeGridSerializationControllerExt : TreeGridSerializationController
 {
 
-    public SerializationControllerExt(SfTreeGrid treeGrid)
+    public TreeGridSerializationControllerExt(SfTreeGrid treeGrid)
             : base(treeGrid)
     {
     }
@@ -322,8 +322,8 @@ public class SerializationControllerExt : TreeGridSerializationController
     {
         base.StoreTreeGridColumnProperties(column, serializableColumn);
 
-        if (column is DatePickerColumn)
-            (serializableColumn as SerializableCustomTreeGridColumn).DateMappingName = (column as DatePickerColumn).DateMappingName;
+        if (column is TreeGridDatePickerColumn)
+            (serializableColumn as SerializableCustomTreeGridColumn).DateMappingName = (column as TreeGridDatePickerColumn).DateMappingName;
     }
 }
 {% endhighlight %}
@@ -333,9 +333,9 @@ public class SerializationControllerExt : TreeGridSerializationController
 
 {% tabs %}
 {% highlight c# %}
-public class SerializationControllerExt : TreeGridSerializationController
+public class TreeGridSerializationControllerExt : TreeGridSerializationController
 {
-    public SerializationControllerExt(SfTreeGrid treeGrid)
+    public TreeGridSerializationControllerExt(SfTreeGrid treeGrid)
             : base(treeGrid)
     {
     }
@@ -355,9 +355,9 @@ public class SerializationControllerExt : TreeGridSerializationController
  
 {% tabs %}
 {% highlight c# %}
-public class SerializationControllerExt : TreeGridSerializationController
+public class TreeGridSerializationControllerExt : TreeGridSerializationController
 {
-    public SerializationControllerExt(SfDataGrid dataGrid)
+    public TreeGridSerializationControllerExt(SfDataGrid dataGrid)
             : base(dataGrid)
     {
     }
@@ -366,7 +366,7 @@ public class SerializationControllerExt : TreeGridSerializationController
     {
 
         if (serializableColumn is SerializableCustomTreeGridColumn)
-            return new DatePickerColumn();
+            return new TreeGridDatePickerColumn();
             return base.GetTreeGridColumn(serializableColumn);
     }
 }
@@ -377,10 +377,10 @@ public class SerializationControllerExt : TreeGridSerializationController
 
 {% tabs %}
 {% highlight c# %}
-public class SerializationControllerExt : TreeGridSerializationController
+public class TreeGridSerializationControllerExt : TreeGridSerializationController
 {
 
-    public SerializationControllerExt(SfTreeGrid treeGrid)
+    public TreeGridSerializationControllerExt(SfTreeGrid treeGrid)
         : base(treeGrid)
     {
     }
@@ -389,8 +389,8 @@ public class SerializationControllerExt : TreeGridSerializationController
     {
         base.RestoreColumnProperties(serializableColumn, column);
         
-        if (column is DatePickerColumn)
-            (column as DatePickerColumn).DateMappingName = (serializableColumn as SerializableCustomTreeGridColumn).DateMappingName;
+        if (column is TreeGridDatePickerColumn)
+            (column as TreeGridDatePickerColumn).DateMappingName = (serializableColumn as SerializableCustomTreeGridColumn).DateMappingName;
     }
 
 }
@@ -433,12 +433,12 @@ If you want to serialize and deserialize the template content, you have to recon
 
 {% tabs %}
 {% highlight c# %}
-this.treeGrid.SerializationController = new SerializationControllerExt(this.treeGrid);
+this.treeGrid.SerializationController = new TreeGridSerializationControllerExt(this.treeGrid);
 
-public class SerializationControllerExt : TreeGridSerializationController
+public class TreeGridSerializationControllerExt : TreeGridSerializationController
 {
 
-    public SerializationControllerExt(SfTreeGrid treeGrid)
+    public TreeGridSerializationControllerExt(SfTreeGrid treeGrid)
         : base(treeGrid)
     {
 
