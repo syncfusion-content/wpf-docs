@@ -11,11 +11,11 @@ documentation: ug
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) as [Row](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) or [Any](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html). In [SelectionUnit.Any](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) option you can select the row by clicking on row header.
 
-### Current Cell Navigation
+## Current Cell Navigation
 
 Keyboard navigation through the cells and rows is determined based on the [NavigationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_NavigationMode) property. [NavigationMode.Cell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.NavigationMode.html) allows you to navigate between the cells in a row as well as between rows. [NavigationMode.Row](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.NavigationMode.html) allows you to navigate only between rows. It is not possible to set `NavigationMode.Row` when cell selection is enabled (`SelectionUnit` is Cell or Any). 
 
-### Selection Modes
+## Selection Modes
 
 The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) properties together define the behavior of selection in SfDataGrid. If the `SelectionMode` is [Single](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can able to select single row or cell, and if the `SelectionMode` is `Extended` or `Multiple`, you can able to select multiple rows or cell, and if you want to disable the selection you need to set `SelectionMode` as `None`,
 
@@ -32,7 +32,7 @@ The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncf
 ![Single Row Selection in WPF DataGrid](Selection_images/wpf-datagrid-single-row-selection.png)
 
 
-### Disable selection for rows and columns
+## Disable selection for rows and columns
 
 You can disable selection and navigation on particular column by setting [GridColumn.AllowFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowFocus) property. You can disable selection on particular row or cell or column by handling [CurrentCellActivating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellActivating)  event. 
 
@@ -75,17 +75,116 @@ N> When the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 `SfDataGrid` allows you to select or deselect rows by interacting with the check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in the column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/wpf/datagrid/column-types#gridcheckboxselectorcolumn) documentation for more information.
 
+## Excel Like Selection
+`SfDataGrid` provides built‑in support for **Excel‑Like Selection**, which can be enabled through the `EnableExcelLikeSelection` property. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       SelectionUnit="Cell"
+                       SelectionMode="Extended"
+                       ShowRowHeader="True"
+                       EnableExcelLikeSelection="True"
+                       ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% endtabs %}
+
+When this feature is enabled, the following selection behaviors are supported:
+
+### Cell Selection Header Highlights: 
+Selecting a cell highlights both its corresponding row header and column header.
+
+![Cell Selection Header Highlights](Selection_images/wpf_datagrid_header_highlights.png)
+
+### Excel Like Selection Frame
+When `ShowSelectionFrame` is enabled, a single border is rendered around all selected cell ranges during Drag or Shift‑based selection, and the Excel‑like current cell indicator is displayed. 
+
+Additionally, a unified border is applied to all selected cells when selections are made through column or row header interactions.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       SelectionUnit="Cell"
+                       SelectionMode="Extended"
+                       ShowRowHeader="True"
+                       ColumnHeaderClickAction="Select"
+                       EnableExcelLikeSelection="True"
+                       ShowSelectionFrame="True"
+                       ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% endtabs %}
+
+![SelectionFrame](Selection_images/wpf_dataGrid_selection_border.png)
+
+#### Customizing Selection Frame
+You can customize the SelectionFrame `BorderThickness` and `BorderBrush` by modifying the control template of the SelectionFrameControl.
+
+{% tabs %}
+{% highlight xaml %}
+
+ <Style TargetType="syncfusion:SelectionFrameControl">
+     <Setter Property="BorderBrush" Value="Red"/>
+     <Setter Property="BorderThickness" Value="2"/>
+ </Style>
+
+{% endhighlight %}
+{% endtabs %}
+
+![SelectionFrame Customization](Selection_images/wpf_dataGrid_selectionFrame_customization.png)
+
+### Column Selection: 
+Clicking a column header selects all cells within that column and highlights the column header. 
+
+By default, clicking a column header performs a sorting operation. You can disable sorting and enable column selection by setting the `ColumnHeaderClickAction` property to `Select`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       SelectionUnit="Cell"
+                       SelectionMode="Extended"
+                       ShowRowHeader="True"
+                       ColumnHeaderClickAction="Select"
+                       EnableExcelLikeSelection="True"
+                       ShowSelectionFrame = "True"
+                       ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% endtabs %}
+
+![Column Selection](Selection_images/wpf_dataGrid_column_header_Selection.png)
+
+#### Column Header Click Action
+
+The ColumnHeaderClickAction supports the following options:
+* Sort - Sorting is performed when the column header is clicked.
+* Select - Clicking the column header selects all cells in that column instead of sorting.
+* Auto – When AllowSorting is disabled, clicking the column header selects the column. When AllowSorting is enabled, the header click performs a sorting operation.
+
+This allows you to configure whether clicking a column header sorts the data or selects the entire column, based on your application requirements.
+
+### Row Selection: 
+Clicking a row header selects all cells within that row and highlights the row header.
+
+![Row Selection](Selection_images/wpf_dataGrid_row_header_selectoin.png)
+
+N>When EnableExcelLikeSelection is set to true, the `SelectionUnit` must be set to `Any`, the `SelectionMode` must be set to `Extended`, and `ShowRowHeader` must be enabled
+
+### Limitations
+* Excel‑like selection is not supported when using any SelectionUnit or SelectionMode values other than the required configuration.
+* When grouping is enabled, clicking a column header does not select all cells in that column.
+* When selecting a CaptionSummaryRow, the corresponding row and column headers are not highlighted, as header highlighting is not supported for summary rows.
+* When performing drag or shift selection after grouping is applied, the selection border is rendered only if the selected cells belong to data rows.
+
 ## Get Selected Rows and Cells
 
 The [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property returns the data object of the selected row and the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedIndex) property returns the index of the `SelectedItem` in SfDataGrid. `SelectedItem` denotes the first selected row in multiple selection. 
 
 The [CurrentItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentItem) returns the data object that currently has the focus and the [CurrentColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentColumn) denotes the [GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html) that currently has the focus. The [CurrentCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellInfo) returns an instance [GridCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCellInfo.html) which contains the information about the cell that currently has the focus. 
 
-### Row Selection
+## Row Selection
 
 You can gets all the selected records through [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItems) property and you can also get all selected rows information through [SfDataGrid.SelectionController.SelectedRows](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IGridSelectionController.html#Syncfusion_UI_Xaml_Grid_IGridSelectionController_SelectedRows) which is the collection of [GridRowInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowInfo.html). 
 
-### Cell Selection
+## Cell Selection
 
 You can get all selected cells information through [SfDataGrid.SelectionController.SelectedCells](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IGridSelectionController.html#Syncfusion_UI_Xaml_Grid_IGridSelectionController_SelectedCells) property which is the collection of [GridSelectedCellsInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectedCellsInfo.html).
 
@@ -99,7 +198,7 @@ List<GridCellInfo> selectedCells = this.dataGrid.GetSelectedCells();
 {% endhighlight %}
 {% endtabs %}
 
-### CurrentItem vs SelectedItem
+## CurrentItem vs SelectedItem
 
 Both [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) and [CurrentItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentItem) returns the same data object when there is single cell or row is selected in SfDataGrid. When you have selected more than one rows or cells, the record that had been selected initially is maintained in `SelectedItem` and the record that currently have focus is maintained in `CurrentItem`. 
 
