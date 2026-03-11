@@ -166,7 +166,7 @@ Clicking a row header selects all cells within that row and highlights the row h
 
 ![Row Selection](Selection_images/wpf_dataGrid_row_header_selectoin.png)
 
-N>When EnableExcelLikeSelection is set to true, the `SelectionUnit` must be set to `Any`, the `SelectionMode` must be set to `Extended`, and `ShowRowHeader` must be enabled
+N> When EnableExcelLikeSelection is set to true, the `SelectionUnit` must be set to `Any`, the `SelectionMode` must be set to `Extended`, and `ShowRowHeader` must be enabled
 
 ### Limitations
 * Excel‑like selection is not supported when using any SelectionUnit or SelectionMode values other than the required configuration.
