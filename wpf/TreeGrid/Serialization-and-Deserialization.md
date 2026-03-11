@@ -397,8 +397,6 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample demo `here`.
-
 ### Serializing template column content
 
 By default, you cannot serialize the template content in SfTreeGrid. This is the default behavior during  Serialization and Deserialization operation.
@@ -460,5 +458,3 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
-
-You can download the sample demo `here`.
