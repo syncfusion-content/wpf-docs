@@ -17,7 +17,56 @@ Keyboard navigation through the cells and rows is determined based on the [Navig
 
 ## Selection modes
 
-The [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionUnit) and [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) properties together define the behavior of selection in SfTreeGrid. If the `SelectionMode` is [Single](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can able to select single row or cell, and if the `SelectionMode` is `Extended` or `Multiple`, you can able to select multiple rows or cells. If you want to disable the selection you need to set `SelectionMode` as `None`.
+<table>
+<tr>
+<th>
+Modes
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+{{'[None](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html)'|markdownify }}
+</td>
+<td>
+Disables selection, and no rows or cells can be selected.
+</td>
+</tr>
+<tr>
+<td>
+{{'[Single](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html)'|markdownify }}
+</td>
+<td>
+Allows selection of a single row or cell. Upon selecting the next row or cell, the selection in the previous row or cell is cleared. This is the default value.
+</td>
+</tr>
+<tr>
+<td>
+{{'[SingleDeselect](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html)'|markdownify }}
+</td>
+<td>
+Allows selection of a single row or cell only. However, upon tapping the row or cell again, the selection is cleared. Similar to single mode, upon selecting the next row or cell, the selection in the previous row or cell is cleared. Also, single row or cell can be selected or deselected by pressing <kbd>space</kbd> key.
+</td>
+</tr>
+<tr>
+<td>
+{{'[Multiple](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html)'|markdownify }}
+</td>
+<td>
+Allows selection of more than one row or cell. Selection is not cleared when selecting more than one row or cell. When you click on an already selected row or cell for the second time, the selection is cleared.
+</td>
+</tr>
+<tr>
+<td>
+{{'[Extended](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html)'|markdownify }}
+</td>
+<td>
+Allows selecting multiple rows or cells. You can select multiple rows or cells in the SfTreeGrid by dragging the mouse or by using the key modifiers <kbd>Ctrl</kbd> and <kbd>Shift</kbd>.
+</td>
+</tr>
+</table>
 
 {% tabs %}
 {% highlight xaml %}
@@ -34,26 +83,6 @@ The [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.S
 {% endtabs %}
 
 ![Row Selection in WPF TreeGrid](Selection_images/wpf-treegrid-row-selection.jpeg)
-
-### SingleDeselect mode for Selection and Deselection
-
-SfTreeGrid allows you to select or deselect a single row or cell, when the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is `SingleDeselect`
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"
-                       AutoExpandMode="RootNodesExpanded"
-                       AutoGenerateColumns="False" 
-                       NavigationMode="Row"
-                       ChildPropertyName="Children"
-                       SelectionMode="SingleDeselect"
-                       ColumnSizer="Star" 
-                       ExpanderColumn="FirstName"
-                       ItemsSource="{Binding PersonDetails}">
-{% endhighlight %}
-{% endtabs %}
-
-N> When the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is `SingleDeselect`, a single row or cell can be selected or deselected by clicking the respective row and cell or by pressing <kbd>space</kbd> key.
 
 ## Disable selection for rows and columns
 
