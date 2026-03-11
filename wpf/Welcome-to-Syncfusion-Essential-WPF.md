@@ -35,6 +35,14 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 		</th>
 	</tr>
 	<tr>
+		<td rowspan="1" valign="top">
+			SMART COMPONENTS<br/>
+		</td>
+		<td>
+			<a href="https://help.syncfusion.com/wpf/smart-datagrid/getting-started">SmartDataGrid </a><br/>
+		</td>
+	</tr>
+	<tr>
 		<td rowspan="5" valign="top">
 			GRID<br/>
 		</td>
