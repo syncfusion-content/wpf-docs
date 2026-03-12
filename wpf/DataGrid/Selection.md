@@ -82,7 +82,6 @@ Allows selecting multiple rows or cells. You can select multiple rows or cells i
 
 ![Single Row Selection in WPF DataGrid](Selection_images/wpf-datagrid-single-row-selection.png)
 
-
 ## Disable selection for rows and columns
 
 You can disable selection and navigation on particular column by setting [GridColumn.AllowFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowFocus) property. You can disable selection on particular row or cell or column by handling [CurrentCellActivating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellActivating)  event. 
