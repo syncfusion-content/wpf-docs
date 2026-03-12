@@ -8,6 +8,7 @@ documentation: ug
 ---
 
 
+
 # Force-Directed Tree Layout in WPF Diagram (SfDiagram)
 
 ## Prerequisites
@@ -36,22 +37,26 @@ The **Force-Directed Tree Layout** arranges nodes using a physics simulation: no
 The following properties are used to configure the Force-Directed Tree Layout:
 
 - **MaximumIteration** (integer, recommended range: 100–5000)
+
     - Number of simulation cycles the algorithm runs to stabilize node positions.
-    - **Tradeoff:** Higher values produce more stable layouts but increase CPU time. Start with 500–2500 for typical diagrams.
+    - **Trade-off:** Higher values produce more stable layouts but increase CPU time. Start with 500–2500 for typical diagrams.
 
 - **RepulsionStrength** (double, unitless, typical range: 3000–50000)
+
     - Magnitude of the repulsive force between nodes, preventing overlap and crowding.
-    - **Tradeoff:** Increase for more separation; decrease for denser layouts. Large values may slow layout.
+    - **Trade-off:** Increase for more separation; decrease for denser layouts. Large values may slow layout.
 
 - **AttractionStrength** (double, range: 0..1)
+
     - How strongly connected nodes are pulled toward each other.
-    - **Tradeoff:** Values closer to 1 create tighter clusters; lower values allow connected nodes to spread out and ease congestion.
+    - **Trade-off:** Values closer to 1 create tighter clusters; lower values allow connected nodes to spread out and ease congestion.
 
 ---
 
 ---
 
 ## Create a layout using Nodes and Connectors 
+
 
 
 Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLayout` arrange them.
@@ -489,7 +494,7 @@ Diagram.LayoutManager = new LayoutManager()
 
 private void CreatedNode()
 {
-    // create nodes first
+    // Create nodes first
     string[] labels = new[]
     {
         "Team",    // 1 root
@@ -577,7 +582,7 @@ private void CreatedNode()
     cons.Add(Edge("Node14", "Node30"));
 }
 
-// Determine role by index (adjust ranges as desired)
+// Determine role by index (adjust ranges as needed)
 private string GetRoleForIndex(int index)
 {
     if (index == 1) return "Root";
@@ -623,11 +628,11 @@ private ConnectorViewModel Edge(string sourceId, string targetId)
 // 1. Update properties on Diagram.LayoutManager.Layout as needed.
 // 2. Then call:
 //    Diagram.LayoutManager.Layout = Diagram.LayoutManager.Layout;
-//    // Or, re-assign the LayoutManager if needed.
+//    // Or, reassign the LayoutManager if needed.
 
 // To fit the diagram to the viewport after layout completes:
 //    (Diagram.Info as IGraphInfo).Commands.FitToPage.Execute(null);
-// If layout is long-running, consider using Dispatcher/async to avoid UI blocking.
+// If layout is long-running, consider using Dispatcher or async to avoid UI blocking.
 ```
 {% endtabs %}
 
@@ -717,7 +722,7 @@ public class ForceDirectedDetails
 
 private List<ForceDirectedDetails> GetForceDirectedData()
 {
-    // If using C# 9.0+ and .NET 5+, you may use new() initializers. Otherwise, use explicit type names as below:
+    // If using C# 9.0+ and .NET 5.0+, you may use new() initializers. Otherwise, use explicit type names as below:
     return new List<ForceDirectedDetails>
     {
         new ForceDirectedDetails { Id = "Dev", Role = "Team", Color = "Orange", Width = 140, Height = 140 },
@@ -754,7 +759,7 @@ private List<ForceDirectedDetails> GetForceDirectedData()
     };
 }
 
-// Apply binding and layout (e.g., in Window Loaded)
+// Apply binding and layout (e.g., in Window's Loaded event)
 Diagram.DataSourceSettings = new DataSourceSettings()
 {
     Id = "Id",
@@ -777,7 +782,7 @@ Diagram.LayoutManager = new LayoutManager()
 
 // Fit the entire diagram to the viewport after layout completes:
 //   (Diagram.Info as IGraphInfo).Commands.FitToPage.Execute(null);
-// If layout is long-running, consider using Dispatcher/async to avoid UI blocking.
+// If layout is long-running, consider using Dispatcher or async to avoid UI blocking.
 ```
 {% endtabs %}
 
@@ -794,7 +799,7 @@ Diagram.LayoutManager = new LayoutManager()
 - **Nodes overlap or layout is crowded:** Increase `RepulsionStrength` or decrease `AttractionStrength`.
 - **Layout is slow or freezes:** Lower `MaximumIteration` and/or `RepulsionStrength`. For large graphs, run layout on a background thread and provide a cancel option.
 - **No root detected:** Ensure at least one data item has a null or empty `Manager` property.
-- **Layout does not update after property changes:** Re-assign the `LayoutManager.Layout` property to trigger a re-layout.
+- **Layout does not update after property changes:** Reassign the `LayoutManager.Layout` property to trigger a re-layout.
 
 ---
 
