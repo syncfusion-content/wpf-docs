@@ -7,39 +7,62 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Force-Directed Tree layout in WPF Diagram (SfDiagram)
 
-The Force-Directed Tree layout arranges nodes using a physics simulation: nodes repel each other to reduce overlap while connectors behave like springs that pull related nodes together. This produces organic, visually balanced diagrams that work well for social graphs, dependency maps, and knowledge networks.
+# Force-Directed Tree Layout in WPF Diagram (SfDiagram)
 
-## Properties for Configure force-directed tree layout (WPF)
-The below mentioned properties are used to configure the force-directed tree layout:
+## Prerequisites
 
- **MaximumIteration**
+- **NuGet Package:** Install [Syncfusion.SfDiagram.Wpf](https://www.nuget.org/packages/Syncfusion.SfDiagram.Wpf) (version 23.1.36 or later recommended).
+- **.NET/C# Version:** If using terse `new()` object initializers, your project must target **C# 9.0** and **.NET 5.0** or later. Otherwise, use explicit type names in object initializers for compatibility with earlier versions.
+- **Required Namespaces:**
+    ```csharp
+    using Syncfusion.UI.Xaml.Diagram;
+    using Syncfusion.UI.Xaml.Diagram.Controls;
+    ```
+- **Assembly Reference:** Ensure your project references `Syncfusion.SfDiagram.Wpf.dll`.
 
-  Number of simulation cycles the algorithm runs to stabilize node positions.
-  > Note: Minimum recommended: 100. Higher values often produce more stable layouts but increase CPU time.
+---
 
- **RepulsionStrength**
-  
-  Magnitude of the repulsive force between nodes, preventing overlap and crowding.
-  > Note: Typical minimum: 3000. Increase for more separation; decrease for denser layouts.
 
-**AttractionStrength**
-  
-   How strongly connected nodes are pulled toward each other (range 0..1).
-  > Note: Values closer to 1 create tighter clusters; lower values allow connected nodes to spread out to ease congestion.
+The **Force-Directed Tree Layout** arranges nodes using a physics simulation: nodes repel each other to reduce overlap, while connectors behave like springs that pull related nodes together. This produces organic, visually balanced diagrams that work well for social graphs, dependency maps, and knowledge networks.
+
+> **Performance Note:**
+> High values for `MaximumIteration` or `RepulsionStrength` can significantly increase CPU usage, especially for large graphs. Test with smaller graphs first. For very large layouts, consider providing a progress indicator, running layout on a background thread, or allowing users to cancel/re-run the layout.
+
+---
+
+
+## Properties for Configuring Force-Directed Tree Layout (WPF)
+The following properties are used to configure the Force-Directed Tree Layout:
+
+- **MaximumIteration** (integer, recommended range: 100–5000)
+    - Number of simulation cycles the algorithm runs to stabilize node positions.
+    - **Tradeoff:** Higher values produce more stable layouts but increase CPU time. Start with 500–2500 for typical diagrams.
+
+- **RepulsionStrength** (double, unitless, typical range: 3000–50000)
+    - Magnitude of the repulsive force between nodes, preventing overlap and crowding.
+    - **Tradeoff:** Increase for more separation; decrease for denser layouts. Large values may slow layout.
+
+- **AttractionStrength** (double, range: 0..1)
+    - How strongly connected nodes are pulled toward each other.
+    - **Tradeoff:** Values closer to 1 create tighter clusters; lower values allow connected nodes to spread out and ease congestion.
+
+---
 
 ---
 
 ## Create a layout using Nodes and Connectors 
 
+
 Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLayout` arrange them.
 
-{% tabs %}
-{% highlight xaml %}
-<!-- Add the diagram namespace in your Window/UserControl root: -->
-<!-- xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Diagram;assembly=Syncfusion.SfDiagram.Wpf" -->
+> **XAML Namespace Declaration:**
+> Add the following to your Window/UserControl root:
+> ```xml
+> xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Diagram;assembly=Syncfusion.SfDiagram.Wpf"
+> ```
 
+```xml
 <syncfusion:SfDiagram x:Name="Diagram"
                       DefaultConnectorType="Line"
                       HorizontalAlignment="Stretch"
@@ -429,6 +452,7 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
             <syncfusion:ConnectorViewModel ID="Node14->Node29" SourceNodeID="Node14" TargetNodeID="Node29" />
             <syncfusion:ConnectorViewModel ID="Node14->Node30" SourceNodeID="Node14" TargetNodeID="Node30" />
         </syncfusion:ConnectorCollection>
+
     </syncfusion:SfDiagram.Connectors>
 
     <!-- Layout manager -->
@@ -436,18 +460,22 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
         <syncfusion:LayoutManager>
             <syncfusion:LayoutManager.Layout>
                 <syncfusion:ForceDirectedTreeLayout
-                                  AttractionStrength="0.6"
-                                  RepulsionStrength="25000"
-                                  MaximumIteration="2500" />
+                    AttractionStrength="0.6"
+                    RepulsionStrength="25000"
+                    MaximumIteration="2500" />
             </syncfusion:LayoutManager.Layout>
         </syncfusion:LayoutManager>
     </syncfusion:SfDiagram.LayoutManager>
 </syncfusion:SfDiagram>
-{% endhighlight %}
+```
 
-{% highlight c# %}
+
+```csharp
+// Required using directives:
+using Syncfusion.UI.Xaml.Diagram;
+using Syncfusion.UI.Xaml.Diagram.Controls;
+
 // Configure the layout and create nodes/connectors in code-behind
-
 CreatedNode();
 Diagram.LayoutManager = new LayoutManager()
 {
@@ -498,9 +526,9 @@ private void CreatedNode()
 
     for (int i = 1; i <= 30; i++)
     {
-        var role = GetRoleForIndex(i); // "Root","Parent","Child"
-        var id = $"Node{i}";
-        var label = labels[i - 1];
+        string role = GetRoleForIndex(i); // "Root","Parent","Child"
+        string id = $"Node{i}";
+        string label = labels[i - 1];
         (Diagram.Nodes as NodeCollection).Add(CreateNode(id, role, label));
     }
 
@@ -560,9 +588,9 @@ private string GetRoleForIndex(int index)
 private CustomNodeViewModel CreateNode(string id, string role, string label)
 {
     double size = role == "Root" ? 140 : role == "Parent" ? 100 : 60;
-    var geom = new EllipseGeometry(new Point(size / 2, size / 2), size / 2, size / 2);
+    EllipseGeometry geom = new EllipseGeometry(new Point(size / 2, size / 2), size / 2, size / 2);
 
-    var node = new CustomNodeViewModel
+    CustomNodeViewModel node = new CustomNodeViewModel
     {
         ID = id,
         UnitWidth = size,
@@ -590,10 +618,24 @@ private ConnectorViewModel Edge(string sourceId, string targetId)
         TargetNodeID = targetId
     };
 }
-{% endhighlight %}
+
+// To re-run or update the layout at runtime:
+// 1. Update properties on Diagram.LayoutManager.Layout as needed.
+// 2. Then call:
+//    Diagram.LayoutManager.Layout = Diagram.LayoutManager.Layout;
+//    // Or, re-assign the LayoutManager if needed.
+
+// To fit the diagram to the viewport after layout completes:
+//    (Diagram.Info as IGraphInfo).Commands.FitToPage.Execute(null);
+// If layout is long-running, consider using Dispatcher/async to avoid UI blocking.
+```
 {% endtabs %}
 
+
 ![WPF Diagram with Force-Directed Layout](Automatic-Layouts_images/wpf-diagram-force-directed-tree-layout-nodes-connectors.png)
+
+> **Accessibility Note:**
+> Ensure that node annotations include accessible text for screen readers. Use the `Content` property of `AnnotationEditorViewModel` to provide meaningful labels.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/)
 
@@ -601,10 +643,10 @@ private ConnectorViewModel Edge(string sourceId, string targetId)
 
 ## Create a Force-Directed Tree from a data source
 
-Bind a collection to `DataSourceSettings`. At least one item should have a null/empty `Manager` to act as a root. Configure the `LayoutManager` with `ForceDirectedTreeLayout`.
 
-{% tabs %}
-{% highlight xaml %}
+Bind a collection to `DataSourceSettings`. **At least one item must have a null or empty `Manager` property to act as the root node.** Configure the `LayoutManager` with `ForceDirectedTreeLayout`.
+
+```xml
 <!-- Define items and wire DataSourceSettings, Layout, and LayoutManager in XAML -->
 
 <local:ForceDirectedDataItems x:Key="ForceDirectedSource">
@@ -642,22 +684,27 @@ Bind a collection to `DataSourceSettings`. At least one item should have a null/
 </local:ForceDirectedDataItems>
 
 <!--Initializes the DataSourceSettings -->
-<Syncfusion:DataSourceSettings x:Key="DataSources"
+
+<syncfusion:DataSourceSettings x:Key="DataSources"
                               DataSource="{StaticResource ForceDirectedSource}"
                               ParentId="Manager"
                               Id="Id"/>
 
-<Syncfusion:ForceDirectedTreeLayout x:Key="layout" x:Name="DirectedTreeLayout"
+<syncfusion:ForceDirectedTreeLayout x:Key="layout" x:Name="DirectedTreeLayout"
                               AttractionStrength = "0.7"
                               RepulsionStrength = "25000"
                               MaximumIteration = "500" />
 
-<Syncfusion:LayoutManager x:Key="Layoutmanager"  Layout="{StaticResource layout}"/>
-{% endhighlight %}
+<syncfusion:LayoutManager x:Key="Layoutmanager"  Layout="{StaticResource layout}"/>
+```
 
-{% highlight c# %}
+
+```csharp
+// Required using directives:
+using Syncfusion.UI.Xaml.Diagram;
+using Syncfusion.UI.Xaml.Diagram.Controls;
+
 // C#: Create the layout using a data source in code-behind
-
 public class ForceDirectedDetails
 {
     public string Id { get; set; }
@@ -670,39 +717,40 @@ public class ForceDirectedDetails
 
 private List<ForceDirectedDetails> GetForceDirectedData()
 {
+    // If using C# 9.0+ and .NET 5+, you may use new() initializers. Otherwise, use explicit type names as below:
     return new List<ForceDirectedDetails>
     {
-        new() { Id = "Dev", Role = "Team", Color = "Orange", Width = 140, Height = 140 },
+        new ForceDirectedDetails { Id = "Dev", Role = "Team", Color = "Orange", Width = 140, Height = 140 },
 
-        new() { Id = "Dept", Role = "PO-5", Manager = "Dev", Color = "Blue", Width = 100, Height = 100 },
-        new() { Id = "PO1", Role = "PO-1", Manager = "Dev", Color = "Blue", Width = 100, Height = 100 },
-        new() { Id = "PO2", Role = "PO-2", Manager = "Dev", Color = "Blue", Width = 100, Height = 100 },
-        new() { Id = "PO3", Role = "PO-3", Manager = "Dev", Color = "Blue", Width = 100, Height = 100 },
-        new() { Id = "PO4", Role = "PO-4", Manager = "Dev", Color = "Blue", Width = 100, Height = 100 },
+        new ForceDirectedDetails { Id = "Dept", Role = "PO-5", Manager = "Dev", Color = "Blue", Width = 100, Height = 100 },
+        new ForceDirectedDetails { Id = "PO1", Role = "PO-1", Manager = "Dev", Color = "Blue", Width = 100, Height = 100 },
+        new ForceDirectedDetails { Id = "PO2", Role = "PO-2", Manager = "Dev", Color = "Blue", Width = 100, Height = 100 },
+        new ForceDirectedDetails { Id = "PO3", Role = "PO-3", Manager = "Dev", Color = "Blue", Width = 100, Height = 100 },
+        new ForceDirectedDetails { Id = "PO4", Role = "PO-4", Manager = "Dev", Color = "Blue", Width = 100, Height = 100 },
 
-        new() { Id = "PO1_T1", Role = "Team-1", Manager = "PO1", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO1_T2", Role = "Team-2", Manager = "PO1", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO1_T3", Role = "Team-3", Manager = "PO1", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO1_T4", Role = "Team-4", Manager = "PO1", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO1_T1", Role = "Team-1", Manager = "PO1", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO1_T2", Role = "Team-2", Manager = "PO1", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO1_T3", Role = "Team-3", Manager = "PO1", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO1_T4", Role = "Team-4", Manager = "PO1", Color = "Green", Width = 80, Height = 80 },
 
-        new() { Id = "PO2_T1", Role = "Team-1", Manager = "PO2", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO2_T2", Role = "Team-2", Manager = "PO2", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO2_T3", Role = "Team-3", Manager = "PO2", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO2_T4", Role = "Team-4", Manager = "PO2", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO2_T1", Role = "Team-1", Manager = "PO2", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO2_T2", Role = "Team-2", Manager = "PO2", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO2_T3", Role = "Team-3", Manager = "PO2", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO2_T4", Role = "Team-4", Manager = "PO2", Color = "Green", Width = 80, Height = 80 },
 
-        new() { Id = "PO3_T1", Role = "Team-1", Manager = "PO3", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO3_T2", Role = "Team-2", Manager = "PO3", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO3_T3", Role = "Team-3", Manager = "PO3", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO3_T4", Role = "Team-4", Manager = "PO3", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO3_T1", Role = "Team-1", Manager = "PO3", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO3_T2", Role = "Team-2", Manager = "PO3", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO3_T3", Role = "Team-3", Manager = "PO3", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO3_T4", Role = "Team-4", Manager = "PO3", Color = "Green", Width = 80, Height = 80 },
 
-        new() { Id = "PO4_T1", Role = "Team-1", Manager = "PO4", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO4_T2", Role = "Team-2", Manager = "PO4", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO4_T3", Role = "Team-3", Manager = "PO4", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "PO4_T4", Role = "Team-4", Manager = "PO4", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO4_T1", Role = "Team-1", Manager = "PO4", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO4_T2", Role = "Team-2", Manager = "PO4", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO4_T3", Role = "Team-3", Manager = "PO4", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "PO4_T4", Role = "Team-4", Manager = "PO4", Color = "Green", Width = 80, Height = 80 },
 
-        new() { Id = "Sales", Role = "Sales Team", Manager = "Dept", Color = "Green", Width = 80, Height = 80 },
-        new() { Id = "AGM1", Role = "AGM-1", Manager = "Sales", Color = "Red", Width = 60, Height = 60 },
-        new() { Id = "AGM2", Role = "AGM-2", Manager = "Sales", Color = "Red", Width = 60, Height = 60 }
+        new ForceDirectedDetails { Id = "Sales", Role = "Sales Team", Manager = "Dept", Color = "Green", Width = 80, Height = 80 },
+        new ForceDirectedDetails { Id = "AGM1", Role = "AGM-1", Manager = "Sales", Color = "Red", Width = 60, Height = 60 },
+        new ForceDirectedDetails { Id = "AGM2", Role = "AGM-2", Manager = "Sales", Color = "Red", Width = 60, Height = 60 }
     };
 }
 
@@ -724,13 +772,32 @@ Diagram.LayoutManager = new LayoutManager()
     }
 };
 
-// Optional: Fit the entire diagram to the viewport
- (Diagram.Info as IGraphInfo).Commands.FitToPage.Execute(null);
-{% endhighlight %}
+// To re-run or update the layout at runtime:
+//   Diagram.LayoutManager.Layout = Diagram.LayoutManager.Layout;
+
+// Fit the entire diagram to the viewport after layout completes:
+//   (Diagram.Info as IGraphInfo).Commands.FitToPage.Execute(null);
+// If layout is long-running, consider using Dispatcher/async to avoid UI blocking.
+```
 {% endtabs %}
+
 
 ![WPF Diagram with Force-Directed Layout](Automatic-Layouts_images/wpf-diagram-force-directed-tree-layout.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Force%20Directed%20Tree%20layout/ForceDirectedTreeDataSource)
 
-## See also
+
+---
+
+## Troubleshooting
+
+- **Nodes overlap or layout is crowded:** Increase `RepulsionStrength` or decrease `AttractionStrength`.
+- **Layout is slow or freezes:** Lower `MaximumIteration` and/or `RepulsionStrength`. For large graphs, run layout on a background thread and provide a cancel option.
+- **No root detected:** Ensure at least one data item has a null or empty `Manager` property.
+- **Layout does not update after property changes:** Re-assign the `LayoutManager.Layout` property to trigger a re-layout.
+
+---
+
+For more details and advanced scenarios, see the [Syncfusion WPF Diagram documentation](https://help.syncfusion.com/wpf/diagram/overview).
+
+---
