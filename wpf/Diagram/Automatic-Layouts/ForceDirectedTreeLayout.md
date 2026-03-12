@@ -41,7 +41,7 @@ The following properties are used to configure the Force-Directed Tree Layout:
     - Number of simulation cycles the algorithm runs to stabilize node positions.
     - **Trade-off:** Higher values produce more stable layouts but increase CPU time. Start with 500–2500 for typical diagrams.
 
-- **RepulsionStrength** (double, unitless, typical range: 3000–50000)
+- **RepulsionStrength** (double, typical range: 3000–50000)
 
     - Magnitude of the repulsive force between nodes, preventing overlap and crowding.
     - **Trade-off:** Increase for more separation; decrease for denser layouts. Large values may slow layout.
@@ -633,8 +633,7 @@ private ConnectorViewModel Edge(string sourceId, string targetId)
 // To fit the diagram to the viewport after layout completes:
 //    (Diagram.Info as IGraphInfo).Commands.FitToPage.Execute(null);
 // If layout is long-running, consider using Dispatcher or async to avoid UI blocking.
-```
-{% endtabs %}
+
 
 
 ![WPF Diagram with Force-Directed Layout](Automatic-Layouts_images/wpf-diagram-force-directed-tree-layout-nodes-connectors.png)
@@ -783,8 +782,7 @@ Diagram.LayoutManager = new LayoutManager()
 // Fit the entire diagram to the viewport after layout completes:
 //   (Diagram.Info as IGraphInfo).Commands.FitToPage.Execute(null);
 // If layout is long-running, consider using Dispatcher or async to avoid UI blocking.
-```
-{% endtabs %}
+
 
 
 ![WPF Diagram with Force-Directed Layout](Automatic-Layouts_images/wpf-diagram-force-directed-tree-layout.png)
