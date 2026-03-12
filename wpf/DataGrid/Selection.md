@@ -76,7 +76,12 @@ N> When the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 `SfDataGrid` allows you to select or deselect rows by interacting with the check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in the column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/wpf/datagrid/column-types#gridcheckboxselectorcolumn) documentation for more information.
 
 ## Excel Like Selection
-`SfDataGrid` provides built‑in support for **Excel‑Like Selection**, which can be enabled through the `EnableExcelLikeSelection` property. 
+The `SfDataGrid` provides built‑in support for **Excel‑Like Selection** , which can be enabled by setting the `EnableExcelLikeSelection` property to true.
+
+When Excel‑Like Selection is enabled, the following settings are required for proper functionality:
+* [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) must be set to `Any`.
+* [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) must be set to `Extended`.
+* [ShowRowHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowRowHeader) must be enabled to allow selection through the row header.
 
 {% tabs %}
 {% highlight xaml %}
@@ -165,8 +170,6 @@ This allows you to configure whether clicking a column header sorts the data or 
 Clicking a row header selects all cells within that row and highlights the row header.
 
 ![Row Selection](Selection_images/wpf_dataGrid_row_header_selectoin.png)
-
-N> When EnableExcelLikeSelection is set to true, the `SelectionUnit` must be set to `Any`, the `SelectionMode` must be set to `Extended`, and `ShowRowHeader` must be enabled
 
 ### Limitations
 * Excel‑like selection is not supported when using any SelectionUnit or SelectionMode values other than the required configuration.
