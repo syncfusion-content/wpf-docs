@@ -147,12 +147,12 @@ When Excel‑Like Selection is enabled, the following settings are required for 
 When this feature is enabled, the following selection behaviors are supported:
 
 ### Cell Selection Header Highlights: 
-Selecting a cell highlights both its corresponding row header and column header.
+Selecting a cell highlights both its corresponding row and column header.
 
 ![Cell Selection Header Highlights](Selection_images/wpf_datagrid_header_highlights.png)
 
 ### Excel Like Selection Frame
-When `ShowSelectionFrame` is enabled, a single border is rendered around all selected cell ranges during drag‑based or Shift‑based selection, and the current cell appearance is displayed similar to Excel.
+When `ShowSelectionFrame` is enabled, a single border is rendered around all selected cell ranges during drag‑based or Shift‑based selection, and the current cell appearance is displayed as in Excel.
 
 {% tabs %}
 {% highlight xaml %}
@@ -170,7 +170,7 @@ When `ShowSelectionFrame` is enabled, a single border is rendered around all sel
 ![SelectionFrame](Selection_images/wpf_dataGrid_selection_border.png)
 
 #### Customizing Selection Frame
-You can customize the SelectionFrame `BorderThickness` and `BorderBrush` by modifying the control template of the SelectionFrameControl.
+SelectionFrame `BorderThickness` and `BorderBrush` can be customized by modifying the control template of the SelectionFrameControl.
 
 {% tabs %}
 {% highlight xaml %}
@@ -186,9 +186,9 @@ You can customize the SelectionFrame `BorderThickness` and `BorderBrush` by modi
 ![SelectionFrame Customization](Selection_images/wpf_dataGrid_selectionFrame_customization.png)
 
 ### Column Selection: 
-Clicking a column header selects all cells within that column and highlights the column and row header. 
+When a column header is clicked, all cells in that column are selected, and the row and column headers are highlighted.
 
-By default, clicking a column header performs a sorting operation. You can disable sorting and enable column selection by setting the `ColumnHeaderClickAction` property to `Select`.
+By default, clicking a column header performs a sorting operation. Sorting can be disabled and column selection enabled by setting the `ColumnHeaderClickAction` property to `Select`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -215,7 +215,7 @@ The ColumnHeaderClickAction supports the following options:
 This allows you to configure whether clicking a column header sorts the data or selects the entire column.
 
 ### Row Selection: 
-Clicking a row header selects all cells within that row and highlights the row and column header.
+When Row header is clicked, all cells in that row are selected, and the row and column headers are highlighted.
 
 ![Row Selection](Selection_images/wpf_dataGrid_row_header_selectoin.png)
 
