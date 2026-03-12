@@ -222,7 +222,7 @@ Clicking a row header selects all cells within that row and highlights the row a
 N> The `SelectionFrame` is displayed only when `ShowSelectionFrame` is enabled. Otherwise, when clicking on the row and column headers, the cells are selected, but the border is shown only around the current cell.
 
 ### Limitations
-* Excel‑like selection is not supported when using any SelectionUnit or SelectionMode values other than the mentionedsettings.
+* Excel‑like selection is not supported when using any SelectionUnit or SelectionMode values other than the mentioned settings.
 * When grouping is enabled, clicking a column header does not select all cells in that column.
 * When selecting a Summary Rows, the corresponding row and column headers are not highlighted.
 * When performing drag or shift selection after grouping is applied, the selection border is rendered only if the selected cells belong to data rows.
