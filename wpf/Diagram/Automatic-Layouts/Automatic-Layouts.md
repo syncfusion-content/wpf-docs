@@ -15,8 +15,8 @@ SfDiagram provides a set of built-in automatic layout algorithms, which is used 
 * Flowchart layout
 * MindMap tree layout
 * Hierarchical tree layout
-* Radial tree layout
 * Force directed tree layout
+* Radial tree layout
 
 Automatic layout algorithm uses the nodes and connectors defined in NodeCollection and ConnectorCollection or business objects defined in DataSource as input to generate the layout. To generate layout from NodeCollection and ConnectorCollection, you have to create all the nodes and connectors required for layout and add those items in NodeCollection and ConnectorCollection as defined in the following code snippet.
 
@@ -272,6 +272,8 @@ diagram.LayoutManager = new LayoutManager()
 
 ![WPF Diagram displays Spacing between Nodes](Automatic-Layouts_images/wpf-diagram-spacing.png)
 
+N> `HorizontalSpacing` and `VerticalSpacing` is not valid for `ForceDirectedTreeLayout`.
+
 ## Customize tree orientation in layout
 
 [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_Orientation) of [`DirectedTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html) is used to arrange the tree layout based on the direction. Orientation is only valid for hierarchical and organization layout. The default value for orientation is TopToBottom. The different orientation types are defined in the following table:
@@ -300,7 +302,8 @@ diagram.LayoutManager = new LayoutManager()
 
 ![Customizing Tree Orientation in WPF Diagram](Automatic-Layouts_images/wpf-diagram-tree-orientation.png)
 
-N> `Orientation` is not valid for [`RadialTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout.html).
+N> `Orientation` is not valid for [`RadialTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout.html) and [`ForceDirectedTreeLayout`]().
+
 
 ## Avoiding connector segment overlapping in layout
 
@@ -324,7 +327,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ![WPF Diagram without Overlapping Segment in Tree Layout](Automatic-Layouts_images/wpf-diagram-without-overlapping-segment.png)
 
-N> `AvoidSegmentOverlapping` is not valid for `RadialTreeLayout`.
+N> `AvoidSegmentOverlapping` is not valid for `RadialTreeLayout`and `ForceDirectedTreeLayout`.
 
 ## Customize margin in layout
 
