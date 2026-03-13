@@ -8,73 +8,41 @@ documentation: ug
 ---
 
 
-
 # Force-Directed Tree Layout in WPF Diagram (SfDiagram)
 
-## Prerequisites
-
-- **NuGet Package:** Install [Syncfusion.SfDiagram.Wpf](https://www.nuget.org/packages/Syncfusion.SfDiagram.Wpf) (version 23.1.36 or later recommended).
-- **.NET/C# Version:** If using terse `new()` object initializers, your project must target **C# 9.0** and **.NET 5.0** or later. Otherwise, use explicit type names in object initializers for compatibility with earlier versions.
-- **Required Namespaces:**
-    ```csharp
-    using Syncfusion.UI.Xaml.Diagram;
-    using Syncfusion.UI.Xaml.Diagram.Controls;
-    ```
-- **Assembly Reference:** Ensure your project references `Syncfusion.SfDiagram.Wpf.dll`.
-
----
-
-
 The **Force-Directed Tree Layout** arranges nodes using a physics simulation: nodes repel each other to reduce overlap, while connectors behave like springs that pull related nodes together. This produces organic, visually balanced diagrams that work well for social graphs, dependency maps, and knowledge networks.
-
-> **Performance Note:**
-> High values for `MaximumIteration` or `RepulsionStrength` can significantly increase CPU usage, especially for large graphs. Test with smaller graphs first. For very large layouts, consider providing a progress indicator, running layout on a background thread, or allowing users to cancel/re-run the layout.
-
----
-
 
 ## Properties for Configuring Force-Directed Tree Layout (WPF)
 The following properties are used to configure the Force-Directed Tree Layout:
 
 - **MaximumIteration** (integer, recommended range: 100–5000)
-
     - Number of simulation cycles the algorithm runs to stabilize node positions.
     - **Trade-off:** Higher values produce more stable layouts but increase CPU time. Start with 500–2500 for typical diagrams.
 
 - **RepulsionStrength** (double, typical range: 3000–50000)
-
     - Magnitude of the repulsive force between nodes, preventing overlap and crowding.
     - **Trade-off:** Increase for more separation; decrease for denser layouts. Large values may slow layout.
 
 - **AttractionStrength** (double, range: 0..1)
-
     - How strongly connected nodes are pulled toward each other.
     - **Trade-off:** Values closer to 1 create tighter clusters; lower values allow connected nodes to spread out and ease congestion.
 
----
-
----
-
 ## Create a layout using Nodes and Connectors 
-
-
 
 Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLayout` arrange them.
 
-> **XAML Namespace Declaration:**
-> Add the following to your Window/UserControl root:
-> ```xml
-> xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Diagram;assembly=Syncfusion.SfDiagram.Wpf"
-> ```
+{% tabs %}
+{% highlight xaml %}
+<!-- Add the diagram namespace in your Window/UserControl root: -->
+<!-- xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Diagram;assembly=Syncfusion.SfDiagram.Wpf" -->
 
-```xml
-<syncfusion:SfDiagram x:Name="Diagram"
+<Syncfusion:SfDiagram x:Name="Diagram"
                       DefaultConnectorType="Line"
                       HorizontalAlignment="Stretch"
                       VerticalAlignment="Stretch">
 
-    <syncfusion:SfDiagram.Nodes>
-        <syncfusion:NodeCollection>
+    <Syncfusion:SfDiagram.Nodes>
+        <Syncfusion:NodeCollection>
 
             <!-- Root -->
             <local:CustomNodeViewModel ID="Node1" UnitWidth="140" UnitHeight="140" Tag="Root">
@@ -82,9 +50,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="70" RadiusY="70" Center="70,70" />
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team" />
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team" />
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -94,9 +62,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="50" RadiusY="50" Center="50,50"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="PO-1"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="PO-1"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -105,9 +73,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="50" RadiusY="50" Center="50,50"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="PO-2"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="PO-2"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -116,9 +84,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="50" RadiusY="50" Center="50,50"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="PO-3"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="PO-3"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -127,9 +95,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="50" RadiusY="50" Center="50,50"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="PO-4"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="PO-4"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -138,9 +106,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="50" RadiusY="50" Center="50,50"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="PO-5"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="PO-5"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -150,9 +118,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-1"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-1"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -161,9 +129,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-2"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-2"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -172,9 +140,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-3"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-3"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -183,9 +151,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-4"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-4"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -195,9 +163,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-1"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-1"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -206,9 +174,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-2"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-2"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -217,9 +185,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-3"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-3"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -228,9 +196,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-4"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-4"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -239,9 +207,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-1"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-1"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -250,9 +218,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-2"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-2"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -261,9 +229,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-3"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-3"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -272,9 +240,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-4"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-4"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -283,9 +251,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-1"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-1"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -294,9 +262,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-2"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-2"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -305,9 +273,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-3"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-3"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -316,9 +284,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-4"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-4"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -327,9 +295,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-1"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-1"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -338,9 +306,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-2"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-2"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -349,9 +317,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Sales Team"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Sales Team"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -360,9 +328,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="20" RadiusY="20" Center="20,20"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="AGM-1"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="AGM-1"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -371,9 +339,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="20" RadiusY="20" Center="20,20"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="AGM-2"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="AGM-2"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -382,9 +350,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-4"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-4"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -393,9 +361,9 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-3"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-3"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
@@ -404,83 +372,78 @@ Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLay
                     <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,30"/>
                 </local:CustomNodeViewModel.Shape>
                 <local:CustomNodeViewModel.Annotations>
-                    <syncfusion:AnnotationCollection>
-                        <syncfusion:AnnotationEditorViewModel Content="Team-2"/>
-                    </syncfusion:AnnotationCollection>
+                    <Syncfusion:AnnotationCollection>
+                        <Syncfusion:AnnotationEditorViewModel Content="Team-2"/>
+                    </Syncfusion:AnnotationCollection>
                 </local:CustomNodeViewModel.Annotations>
             </local:CustomNodeViewModel>
 
-        </syncfusion:NodeCollection>
-    </syncfusion:SfDiagram.Nodes>
+        </Syncfusion:NodeCollection>
+    </Syncfusion:SfDiagram.Nodes>
 
     <!-- Connectors -->
-    <syncfusion:SfDiagram.Connectors>
-        <syncfusion:ConnectorCollection>
+    <Syncfusion:SfDiagram.Connectors>
+        <Syncfusion:ConnectorCollection>
             <!-- Level 0 -> Level 1 -->
-            <syncfusion:ConnectorViewModel ID="Node1->Node2" SourceNodeID="Node1" TargetNodeID="Node2" />
-            <syncfusion:ConnectorViewModel ID="Node1->Node3" SourceNodeID="Node1" TargetNodeID="Node3" />
-            <syncfusion:ConnectorViewModel ID="Node1->Node4" SourceNodeID="Node1" TargetNodeID="Node4" />
-            <syncfusion:ConnectorViewModel ID="Node1->Node5" SourceNodeID="Node1" TargetNodeID="Node5" />
+            <Syncfusion:ConnectorViewModel ID="Node1->Node2" SourceNodeID="Node1" TargetNodeID="Node2" />
+            <Syncfusion:ConnectorViewModel ID="Node1->Node3" SourceNodeID="Node1" TargetNodeID="Node3" />
+            <Syncfusion:ConnectorViewModel ID="Node1->Node4" SourceNodeID="Node1" TargetNodeID="Node4" />
+            <Syncfusion:ConnectorViewModel ID="Node1->Node5" SourceNodeID="Node1" TargetNodeID="Node5" />
 
             <!-- Level 1 -> Level 2 -->
-            <syncfusion:ConnectorViewModel ID="Node2->Node6" SourceNodeID="Node2" TargetNodeID="Node6" />
-            <syncfusion:ConnectorViewModel ID="Node2->Node7" SourceNodeID="Node2" TargetNodeID="Node7" />
-            <syncfusion:ConnectorViewModel ID="Node2->Node8" SourceNodeID="Node2" TargetNodeID="Node8" />
+            <Syncfusion:ConnectorViewModel ID="Node2->Node6" SourceNodeID="Node2" TargetNodeID="Node6" />
+            <Syncfusion:ConnectorViewModel ID="Node2->Node7" SourceNodeID="Node2" TargetNodeID="Node7" />
+            <Syncfusion:ConnectorViewModel ID="Node2->Node8" SourceNodeID="Node2" TargetNodeID="Node8" />
 
-            <syncfusion:ConnectorViewModel ID="Node3->Node9" SourceNodeID="Node3" TargetNodeID="Node9" />
-            <syncfusion:ConnectorViewModel ID="Node3->Node10" SourceNodeID="Node3" TargetNodeID="Node10" />
-            <syncfusion:ConnectorViewModel ID="Node3->Node11" SourceNodeID="Node3" TargetNodeID="Node11" />
+            <Syncfusion:ConnectorViewModel ID="Node3->Node9" SourceNodeID="Node3" TargetNodeID="Node9" />
+            <Syncfusion:ConnectorViewModel ID="Node3->Node10" SourceNodeID="Node3" TargetNodeID="Node10" />
+            <Syncfusion:ConnectorViewModel ID="Node3->Node11" SourceNodeID="Node3" TargetNodeID="Node11" />
 
-            <syncfusion:ConnectorViewModel ID="Node4->Node12" SourceNodeID="Node4" TargetNodeID="Node12" />
-            <syncfusion:ConnectorViewModel ID="Node4->Node13" SourceNodeID="Node4" TargetNodeID="Node13" />
-            <syncfusion:ConnectorViewModel ID="Node4->Node14" SourceNodeID="Node4" TargetNodeID="Node14" />
+            <Syncfusion:ConnectorViewModel ID="Node4->Node12" SourceNodeID="Node4" TargetNodeID="Node12" />
+            <Syncfusion:ConnectorViewModel ID="Node4->Node13" SourceNodeID="Node4" TargetNodeID="Node13" />
+            <Syncfusion:ConnectorViewModel ID="Node4->Node14" SourceNodeID="Node4" TargetNodeID="Node14" />
 
-            <syncfusion:ConnectorViewModel ID="Node5->Node15" SourceNodeID="Node5" TargetNodeID="Node15" />
-            <syncfusion:ConnectorViewModel ID="Node5->Node16" SourceNodeID="Node5" TargetNodeID="Node16" />
-            <syncfusion:ConnectorViewModel ID="Node5->Node17" SourceNodeID="Node5" TargetNodeID="Node17" />
+            <Syncfusion:ConnectorViewModel ID="Node5->Node15" SourceNodeID="Node5" TargetNodeID="Node15" />
+            <Syncfusion:ConnectorViewModel ID="Node5->Node16" SourceNodeID="Node5" TargetNodeID="Node16" />
+            <Syncfusion:ConnectorViewModel ID="Node5->Node17" SourceNodeID="Node5" TargetNodeID="Node17" />
 
             <!-- Leaves and deeper children -->
-            <syncfusion:ConnectorViewModel ID="Node7->Node18" SourceNodeID="Node7" TargetNodeID="Node18" />
-            <syncfusion:ConnectorViewModel ID="Node10->Node19" SourceNodeID="Node10" TargetNodeID="Node19" />
-            <syncfusion:ConnectorViewModel ID="Node14->Node20" SourceNodeID="Node14" TargetNodeID="Node20" />
-            <syncfusion:ConnectorViewModel ID="Node11->Node21" SourceNodeID="Node11" TargetNodeID="Node21" />
+            <Syncfusion:ConnectorViewModel ID="Node7->Node18" SourceNodeID="Node7" TargetNodeID="Node18" />
+            <Syncfusion:ConnectorViewModel ID="Node10->Node19" SourceNodeID="Node10" TargetNodeID="Node19" />
+            <Syncfusion:ConnectorViewModel ID="Node14->Node20" SourceNodeID="Node14" TargetNodeID="Node20" />
+            <Syncfusion:ConnectorViewModel ID="Node11->Node21" SourceNodeID="Node11" TargetNodeID="Node21" />
 
-            <syncfusion:ConnectorViewModel ID="Node12->Node22" SourceNodeID="Node12" TargetNodeID="Node22" />
-            <syncfusion:ConnectorViewModel ID="Node12->Node23" SourceNodeID="Node12" TargetNodeID="Node23" />
-            <syncfusion:ConnectorViewModel ID="Node12->Node24" SourceNodeID="Node12" TargetNodeID="Node24" />
+            <Syncfusion:ConnectorViewModel ID="Node12->Node22" SourceNodeID="Node12" TargetNodeID="Node22" />
+            <Syncfusion:ConnectorViewModel ID="Node12->Node23" SourceNodeID="Node12" TargetNodeID="Node23" />
+            <Syncfusion:ConnectorViewModel ID="Node12->Node24" SourceNodeID="Node12" TargetNodeID="Node24" />
 
-            <syncfusion:ConnectorViewModel ID="Node13->Node25" SourceNodeID="Node13" TargetNodeID="Node25" />
-            <syncfusion:ConnectorViewModel ID="Node13->Node26" SourceNodeID="Node13" TargetNodeID="Node26" />
-            <syncfusion:ConnectorViewModel ID="Node13->Node27" SourceNodeID="Node13" TargetNodeID="Node27" />
+            <Syncfusion:ConnectorViewModel ID="Node13->Node25" SourceNodeID="Node13" TargetNodeID="Node25" />
+            <Syncfusion:ConnectorViewModel ID="Node13->Node26" SourceNodeID="Node13" TargetNodeID="Node26" />
+            <Syncfusion:ConnectorViewModel ID="Node13->Node27" SourceNodeID="Node13" TargetNodeID="Node27" />
 
-            <syncfusion:ConnectorViewModel ID="Node14->Node28" SourceNodeID="Node14" TargetNodeID="Node28" />
-            <syncfusion:ConnectorViewModel ID="Node14->Node29" SourceNodeID="Node14" TargetNodeID="Node29" />
-            <syncfusion:ConnectorViewModel ID="Node14->Node30" SourceNodeID="Node14" TargetNodeID="Node30" />
-        </syncfusion:ConnectorCollection>
-
-    </syncfusion:SfDiagram.Connectors>
+            <Syncfusion:ConnectorViewModel ID="Node14->Node28" SourceNodeID="Node14" TargetNodeID="Node28" />
+            <Syncfusion:ConnectorViewModel ID="Node14->Node29" SourceNodeID="Node14" TargetNodeID="Node29" />
+            <Syncfusion:ConnectorViewModel ID="Node14->Node30" SourceNodeID="Node14" TargetNodeID="Node30" />
+        </Syncfusion:ConnectorCollection>
+    </Syncfusion:SfDiagram.Connectors>
 
     <!-- Layout manager -->
-    <syncfusion:SfDiagram.LayoutManager>
-        <syncfusion:LayoutManager>
-            <syncfusion:LayoutManager.Layout>
-                <syncfusion:ForceDirectedTreeLayout
-                    AttractionStrength="0.6"
-                    RepulsionStrength="25000"
-                    MaximumIteration="2500" />
-            </syncfusion:LayoutManager.Layout>
-        </syncfusion:LayoutManager>
-    </syncfusion:SfDiagram.LayoutManager>
-</syncfusion:SfDiagram>
-```
+    <Syncfusion:SfDiagram.LayoutManager>
+        <Syncfusion:LayoutManager>
+            <Syncfusion:LayoutManager.Layout>
+                <Syncfusion:ForceDirectedTreeLayout
+                                  AttractionStrength="0.6"
+                                  RepulsionStrength="25000"
+                                  MaximumIteration="2500" />
+            </Syncfusion:LayoutManager.Layout>
+        </Syncfusion:LayoutManager>
+    </Syncfusion:SfDiagram.LayoutManager>
+</Syncfusion:SfDiagram>
+{% endhighlight %}
 
-
-```csharp
-// Required using directives:
-using Syncfusion.UI.Xaml.Diagram;
-using Syncfusion.UI.Xaml.Diagram.Controls;
-
+{% highlight c# %}
 // Configure the layout and create nodes/connectors in code-behind
+
 CreatedNode();
 Diagram.LayoutManager = new LayoutManager()
 {
@@ -623,34 +586,21 @@ private ConnectorViewModel Edge(string sourceId, string targetId)
         TargetNodeID = targetId
     };
 }
-
-// To re-run or update the layout at runtime:
-// 1. Update properties on Diagram.LayoutManager.Layout as needed.
-// 2. Then call:
-//    Diagram.LayoutManager.Layout = Diagram.LayoutManager.Layout;
-//    // Or, reassign the LayoutManager if needed.
-
-// To fit the diagram to the viewport after layout completes:
-//    (Diagram.Info as IGraphInfo).Commands.FitToPage.Execute(null);
-// If layout is long-running, consider using Dispatcher or async to avoid UI blocking.
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ![WPF Diagram with Force-Directed Layout](Automatic-Layouts_images/wpf-diagram-force-directed-tree-layout-nodes-connectors.png)
 
-> **Accessibility Note:**
-> Ensure that node annotations include accessible text for screen readers. Use the `Content` property of `AnnotationEditorViewModel` to provide meaningful labels.
-
-[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/)
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Force%20Directed%20Tree%20layout)
 
 ---
 
 ## Create a Force-Directed Tree from a data source
 
-
 Bind a collection to `DataSourceSettings`. **At least one item must have a null or empty `Manager` property to act as the root node.** Configure the `LayoutManager` with `ForceDirectedTreeLayout`.
 
-```xml
+{% tabs %}
+{% highlight xaml %}
 <!-- Define items and wire DataSourceSettings, Layout, and LayoutManager in XAML -->
 
 <local:ForceDirectedDataItems x:Key="ForceDirectedSource">
@@ -688,27 +638,22 @@ Bind a collection to `DataSourceSettings`. **At least one item must have a null 
 </local:ForceDirectedDataItems>
 
 <!--Initializes the DataSourceSettings -->
-
-<syncfusion:DataSourceSettings x:Key="DataSources"
+<Syncfusion:DataSourceSettings x:Key="DataSources"
                               DataSource="{StaticResource ForceDirectedSource}"
                               ParentId="Manager"
                               Id="Id"/>
 
-<syncfusion:ForceDirectedTreeLayout x:Key="layout" x:Name="DirectedTreeLayout"
+<Syncfusion:ForceDirectedTreeLayout x:Key="layout" x:Name="DirectedTreeLayout"
                               AttractionStrength = "0.7"
                               RepulsionStrength = "25000"
                               MaximumIteration = "500" />
 
-<syncfusion:LayoutManager x:Key="Layoutmanager"  Layout="{StaticResource layout}"/>
-```
+<Syncfusion:LayoutManager x:Key="Layoutmanager"  Layout="{StaticResource layout}"/>
+{% endhighlight %}
 
-
-```csharp
-// Required using directives:
-using Syncfusion.UI.Xaml.Diagram;
-using Syncfusion.UI.Xaml.Diagram.Controls;
-
+{% highlight c# %}
 // C#: Create the layout using a data source in code-behind
+
 public class ForceDirectedDetails
 {
     public string Id { get; set; }
@@ -721,7 +666,6 @@ public class ForceDirectedDetails
 
 private List<ForceDirectedDetails> GetForceDirectedData()
 {
-    // If using C# 9.0+ and .NET 5.0+, you may use new() initializers. Otherwise, use explicit type names as below:
     return new List<ForceDirectedDetails>
     {
         new ForceDirectedDetails { Id = "Dev", Role = "Team", Color = "Orange", Width = 140, Height = 140 },
@@ -758,7 +702,8 @@ private List<ForceDirectedDetails> GetForceDirectedData()
     };
 }
 
-// Apply binding and layout (e.g., in Window's Loaded event)
+// Apply binding and layout (e.g., in Window Loaded).Here Diagram is the instance of the SfDiagram.
+
 Diagram.DataSourceSettings = new DataSourceSettings()
 {
     Id = "Id",
@@ -776,13 +721,12 @@ Diagram.LayoutManager = new LayoutManager()
     }
 };
 
-// To re-run or update the layout at runtime:
-//   Diagram.LayoutManager.Layout = Diagram.LayoutManager.Layout;
+// Optional: Fit the entire diagram to the viewport.
 
-// Fit the entire diagram to the viewport after layout completes:
-//   (Diagram.Info as IGraphInfo).Commands.FitToPage.Execute(null);
-// If layout is long-running, consider using Dispatcher or async to avoid UI blocking.
+ (Diagram.Info as IGraphInfo).Commands.FitToPage.Execute(null);
 
+{% endhighlight %}
+{% endtabs %}
 
 
 ![WPF Diagram with Force-Directed Layout](Automatic-Layouts_images/wpf-diagram-force-directed-tree-layout.png)
@@ -796,11 +740,5 @@ Diagram.LayoutManager = new LayoutManager()
 
 - **Nodes overlap or layout is crowded:** Increase `RepulsionStrength` or decrease `AttractionStrength`.
 - **Layout is slow or freezes:** Lower `MaximumIteration` and/or `RepulsionStrength`. For large graphs, run layout on a background thread and provide a cancel option.
-- **No root detected:** Ensure at least one data item has a null or empty `Manager` property.
-- **Layout does not update after property changes:** Reassign the `LayoutManager.Layout` property to trigger a re-layout.
 
----
-
-For more details and advanced scenarios, see the [Syncfusion WPF Diagram documentation](https://help.syncfusion.com/wpf/diagram/overview).
-
----
+## See also
