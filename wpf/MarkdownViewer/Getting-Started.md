@@ -88,8 +88,6 @@ Used for the main title or top-level heading in a Markdown document.
 
 ## Header 2  
 Used to define major sections within your Markdown content.
-
-![Syncfusion](Images/syncfusion.png)
             ]]>
         </system:String>
     </markdown:SfMarkdownViewer.Source>
@@ -109,10 +107,7 @@ The MarkdownViewer control is used to render and preview Markdown files. It conv
 Used for the main title or top-level heading in a Markdown document. 
 
 ## Header 2  
-Used to define major sections within your Markdown content.
-
-![Syncfusion](Images/syncfusion.png)
-";
+Used to define major sections within your Markdown content.";
 
     public MainWindow()
     {
