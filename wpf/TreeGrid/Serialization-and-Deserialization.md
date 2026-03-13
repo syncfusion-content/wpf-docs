@@ -249,16 +249,14 @@ In the below code snippet, the TreeGridDatePickerColumn is defined in SfTreeGrid
 
 To serialize the above TreeGridDatePickerColumn, follow the below steps.
  
-1. Create a class derived from `SerializableTreeGridColumn`and define the custom column properties in `SerializableCustomTreeGridColumn` class.
+1. Create a class derived from `SerializableTreeGridColumn` and define the custom column properties in `SerializableCustomTreeGridColumn` class.
 
 {% tabs %}
 {% highlight c# %}
 [DataContract(Name="SerializableCustomTreeGridColumn")]
-
 public class SerializableCustomTreeGridColumn : SerializableTreeGridColumn
 {
     [DataMember]
-
     public string DateMappingName { get; set; }
 }
 {% endhighlight %}
@@ -351,14 +349,14 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 {% endhighlight %}
 {% endtabs %}
 
-6. During deserialization, you can get the custom column settings from `SerializableTreeGridColumn` by overriding `GetTreeGridColumn`virtual method.
+6. During deserialization, you can get the custom column settings from `SerializableTreeGridColumn` by overriding `GetTreeGridColumn` virtual method.
  
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
 {
-    public TreeGridSerializationControllerExt(SfDataGrid dataGrid)
-            : base(dataGrid)
+    public TreeGridSerializationControllerExt(SfTreeGrid treeGrid)
+            : base(treeGrid)
     {
     }
 
