@@ -74,6 +74,7 @@ Add a helpful placeholder to guide users and use `PlaceholderStyle` to make the 
 </smartTextEditor:SfSmartTextEditor>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![Placeholder in WPF Smart Text Editor.](images/customization/wpf-smarttexteditor-placeholdercolor.gif)
 
