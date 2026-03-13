@@ -16,9 +16,9 @@ The `SfSmartDataGrid` provides AI-powered capabilities that enable grid operatio
 
 Sorting organizes data by one or more columns in ascending or descending order. Multi-column sorting can be applied in a single command, and previously applied sorting can be removed using a clear command.
 
-### Example Prompts
-
 ```
+// Example Prompts
+
 // Applies sort to the City column in Descending direction
 sort by city in descending
 
@@ -35,9 +35,9 @@ clear sorting
 
 Grouping organizes data by one or more columns as specified in the command. Multiple commands can be combined to create multi-level grouping, and grouping can be removed using a clear command.
 
-### Example Prompts
-
 ```
+// Example Prompts
+
 // Groups data by Country column
 group by Country
 
@@ -54,9 +54,9 @@ clear grouping
 
 Filtering uses natural language conditions like *equals*, *contains*, *greaterThan*, or *between* to build predicates internally and apply them to the grid. Multi step filters using **AND/OR** can be expressed in a single prompt and filters can be cleared with a single command.
 
-### Example Prompts
-
 ```
+// Example Prompts
+
 // Filters rows where Country equals Germany
 filter Country equals Germany
 
@@ -73,9 +73,9 @@ clear filters
 
 Highlighting applies styles to rows or cells that meet specified conditions. A color can be included in the command (for example, Red, LightPink, hex, or RGB); if no color is specified, the default highlight color is used. Multiple highlight rules can be combined, and highlights can be cleared individually or all at once.
 
-### Example Prompts
-
 ```
+// Example Prompts
+
 // Highlights rows where Total is greater than 1000 with LightPink color
 highlight rows where Total > 1000 color LightPink
 

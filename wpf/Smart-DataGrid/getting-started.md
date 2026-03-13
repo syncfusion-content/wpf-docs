@@ -37,7 +37,7 @@ Syncfusion.Data.WPF assembly contains fundamental and base classes for {{'[Colle
 Syncfusion.SfGrid.WPF
 </td>
 <td>
-Syncfusion.SfGrid.WPF assembly contains the core grid engine and UI components for the WPF data grid. It provides the `Syncfusion.UI.Xaml.Grid` namespace and implements essential features such as virtualization, row/column generation, selection, editing, sorting, filtering, grouping, and performance optimizations for large data sets. Use this assembly when you need fine-grained control over grid behavior, column types, cell templates, and advanced grid interactions.
+Syncfusion.SfGrid.WPF assembly contains the core grid engine and UI components for the WPF data grid. It provides the <b>Syncfusion.UI.Xaml.Grid</b> namespace and implements essential features such as virtualization, row/column generation, selection, editing, sorting, filtering, grouping, and performance optimizations for large data sets. Use this assembly when you need fine-grained control over grid behavior, column types, cell templates, and advanced grid interactions.
 </td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ Syncfusion.SfGrid.WPF assembly contains the core grid engine and UI components f
 Syncfusion.SfSmartComponents.WPF
 </td>
 <td>
-Syncfusion.SfSmartComponents.WPF assembly contains the Smart extensions and higher-level controls that enable AI-assisted and smart behaviors for data grids and related components. It exposes the `Syncfusion.UI.Xaml.SmartComponents` namespace and includes `SfSmartDataGrid` (smart features on top of the core grid), suggestions and natural-language action hooks, and helper services for integrating AI-driven sorting, filtering, grouping, and highlighting. Include this assembly when you want Smart/AI capabilities (for example, `EnableSmartActions`, `Suggestions`, or integration with Syncfusion® AI services).
+Syncfusion.SfSmartComponents.WPF assembly contains the Smart extensions and higher-level controls that enable AI-assisted and smart behaviors for data grids and related components. It exposes the <b>Syncfusion.UI.Xaml.SmartComponents</b> namespace and includes <b>SfSmartDataGrid</b> (smart features on top of the core grid), suggestions and natural-language action hooks, and helper services for integrating AI-driven sorting, filtering, grouping, and highlighting. Include this assembly when you want Smart/AI capabilities (for example, <b>EnableSmartActions</b>, <b>Suggestions</b>, or integration with Syncfusion® AI services).
 </td>
 </tr>
 <tr>
@@ -78,6 +78,7 @@ In this walk-through you will create a WPF application that uses the Syncfusion�
 7. [Bind data](#binding-to-data)
 8. [Register the AI Service](#register-the-ai-service)
 9. [Running the Application](#running-the-application)
+
 ### Create a new WPF project
 
 Create new WPF Project in Visual Studio to display SfSmartDataGrid with data objects.
@@ -402,6 +403,8 @@ To bind the SfSmartDataGrid to data, set the [SfSmartDataGrid.ItemsSource](https
  
 Bind the collection created in previous step to `SfSmartDataGrid.ItemsSource` property in XAML by setting ViewModel as `DataContext`.
 
+N>Bind the **CurrentUser** property to differentiate outgoing requests (from the user) and incoming responses (from AI) in the AssistView layout. If **CurrentUser** is not set, the control cannot distinguish between outgoing and incoming messages, and all messages will appear with the same alignment and style.
+
 {% tabs %}
 {% highlight xaml %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -416,7 +419,12 @@ Bind the collection created in previous step to `SfSmartDataGrid.ItemsSource` pr
     </Window.DataContext>
 
     <Grid x:Name="Root_Grid">
-        <syncfusion:SfSmartDataGrid x:Name="SmartGrid" ItemsSource="{Binding OrderInfoCollection}" AutoGenerateColumns="False" CurrentUser="{Binding CurrentUser}" Suggestions="{Binding AiSuggestions}" ColumnSizer="Star">
+        <syncfusion:SfSmartDataGrid x:Name="SmartGrid" 
+                                    ItemsSource="{Binding OrderInfoCollection}" 
+                                    AutoGenerateColumns="False" 
+                                    CurrentUser="{Binding CurrentUser}" 
+                                    Suggestions="{Binding AiSuggestions}" 
+                                    ColumnSizer="Star">
             <syncfusion:SfSmartDataGrid.Columns>
                 <syncfusion:GridNumericColumn MappingName="OrderID" HeaderText="Order ID" NumberDecimalDigits="0" TextAlignment="Center"/>
                 <syncfusion:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" TextAlignment="Center"/>
@@ -473,12 +481,19 @@ namespace WpfApplication1
             Uri azureEndpoint = new Uri("<MENTION-YOUR-URL>");
             string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
 
-            AzureOpenAIClient azureClient = new AzureOpenAIClient(azureEndpoint, new ApiKeyCredential(azureApiKey));
-            IChatClient azureChatClient = azureClient.GetChatClient(deploymentName).AsIChatClient();
+            AzureOpenAIClient azureClient = new AzureOpenAIClient(
+                azureEndpoint,
+                new ApiKeyCredential(azureApiKey)
+            );
+
+            IChatClient azureChatClient = azureClient
+                .GetChatClient(deploymentName)
+                .AsIChatClient();
+
             SyncfusionAIExtension.Services.AddSingleton<IChatClient>(azureChatClient);
             SyncfusionAIExtension.ConfigureSyncfusionAIServices();
         }
-	}
+    }
 }
 ```
 
