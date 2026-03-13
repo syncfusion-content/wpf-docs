@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with .NET WPF MarkdownViewer control | Syncfusion
+title: Getting started with .NET WPF Markdown Viewer control | Syncfusion
 description: Learn how to get started with Syncfusion® .NET WPF SfMarkdownViewer control and explore its capabilities for rendering Markdown content.
 platform: wpf
 control: SfMarkdownViewer
@@ -8,9 +8,9 @@ documentation: ug
 keywords: .net wpf markdownviewer, syncfusion markdownviewer wpf, markdown viewer .net wpf, .net wpf markdown rendering, sfmarkdownviewer example wpf, .net wpf markdown control, markdown content .net wpf, markdown rendering .net wpf
 ---
 
-# Getting Started with .NET WPF MarkdownViewer (SfMarkdownViewer)
+# Getting Started with WPF Markdown Viewer (SfMarkdownViewer)
 
-This guide details the initial setup and basic usage of the SfMarkdownViewer control, offering insight into its ability to render Markdown content with various formatting capabilities across mobile and desktop platforms.
+This guide details the initial setup and basic usage of the SfMarkdownViewer control, offering insight into its ability to render Markdown content with various formatting capabilities.
 
 ## Prerequisites
 
@@ -24,13 +24,13 @@ Before proceeding, ensure the following are in place:
 2. Name the project and choose a location. Then, click **Next**.
 3. Select the .NET version and click **Create**.
 
-## Step 2: Install the Syncfusion<sup>®</sup> .NET WPF MarkdownViewer NuGet Package
+## Step 2: Install the Syncfusion<sup>®</sup> .NET WPF Markdown Viewer NuGet Package
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
 2. Search for `Syncfusion.SfMarkdownViewer.WPF` and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Initialize the MarkdownViewer Control
+## Step 3: Initialize the Markdown Viewer Control
 
 1. To initialize the control, import the `Syncfusion.UI.Xaml.Markdown` namespace.
 2. Add an SfMarkdownViewer instance to your window.

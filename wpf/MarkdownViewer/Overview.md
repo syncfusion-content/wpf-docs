@@ -18,17 +18,3 @@ The .NET WPF SfMarkdownViewer is a lightweight and efficient UI control that ena
 * **Flexible Input Sources** – Accepts Markdown from local `.md` files, embedded resources, or direct strings.
 
 * **Smooth Scrolling** – Provides fluid scrolling for large Markdown documents.
-
-## Use Case
-
-* **In-app Documentation**  
-  Display user guides, feature tours, and getting started materials directly within the app using Markdown.
-
-* **Release Notes & Feature Updates**  
-  Present version updates and feature changes in a consistent, scrollable format.
-
-* **Help & Support Sections**  
-  Provide FAQs, troubleshooting steps, and support articles with styled Markdown content.
-
-* **Interactive Links**  
-  Seamlessly integrate external URLs or internal navigation using automatic link rendering.
