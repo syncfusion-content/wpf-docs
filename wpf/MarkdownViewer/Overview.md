@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About .NET WPF MarkdownViewer control | Syncfusion
+title: About .NET WPF Markdown Viewer control | Syncfusion
 description: Learn about the Syncfusion® .NET WPF SfMarkdownViewer control, its rendering capabilities, and key features.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Overview of WPF MarkdownViewer (SfMarkdownViewer)
+# Overview of WPF Markdown Viewer (SfMarkdownViewer)
 
 The .NET WPF SfMarkdownViewer is a lightweight and efficient UI control that enables developers to render Markdown content with full formatting support. It provides a seamless way to display documentation, help content, release notes, and other rich text formats in both mobile and desktop applications.
 
