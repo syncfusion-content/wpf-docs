@@ -11,7 +11,7 @@ documentation: ug
 
 The SfMarkdownViewer control provides flexible options for loading Markdown content from multiple sources. The `Source` property intelligently detects the input type and handles content loading automatically, supporting raw Markdown strings, local file paths, and HTTP/HTTPS URLs.
 
-## From String
+## Loading from Raw Markdown String
 
 Assign a Markdown-formatted string to the Source property of the SfMarkdownViewer control to render markdown content directly within your application.
 
@@ -62,7 +62,7 @@ Used to define major sections within your Markdown content.";
             InitializeComponent();  
             SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
             markdownViewer.Source = markdownContent;
-            HomeGrid.Children.Add(markdownViewer);      
+            this.Content = markdownViewer;      
         }
     }   
 }
@@ -70,11 +70,9 @@ Used to define major sections within your Markdown content.";
 {% endhighlight %}
 {% endtabs %}
 
-## From Local File
+## Loading from Local File
 
-To load Markdown content from a local `.md` file, you can directly specify the file path and read its contents using standard file I/O and assign its content to the Source property of the SfMarkdownViewer.
-
-Use the following code-behind to read the file and assign its content to the Markdown Viewer:
+To load Markdown content from a local .md file, simply assign the file path to the Source property. The control automatically detects valid file paths and reads the file contents.
 
 **C#**
 
@@ -89,76 +87,22 @@ public partial class MainWindow : Window
         string filePath = @"D:\MAUI\MarkdownViewer\Files\MarkdownContent.md";
         string markdownContent = File.ReadAllText(filePath);
         markdownViewer.Source = markdownContent;
-        HomeGrid.Children.Add(markdownViewer);  
+        this.Content = markdownViewer;  
     }
 }
 
 {% endhighlight %}
 
-## From Embedded Resource
+## Loading from URL
 
-1. To load Markdown content from an embedded resource, place the `.md` file inside the `Resources` folder of your .NET MAUI project. 
-2. Use asynchronous file access to read and assign the content to the [Source](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.MarkdownViewer.SfMarkdownViewer.html#Syncfusion_Maui_MarkdownViewer_SfMarkdownViewer_Source) property of the [SfMarkdownViewer](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.MarkdownViewer.SfMarkdownViewer.html) control.
-
-Refer to the following code-behind to read the embedded resource and assign its content to the Markdown Viewer:
-
-**C#**
-
-{% highlight C# %}
-
-public partial class MainWindow : Window
-{
-    SfMarkdownViewer markdownViewer;
-    public MainWindow()
-    {
-        InitializeComponent();
-        markdownViewer = new SfMarkdownViewer();
-        _ = LoadMarkdownAsync();
-        HomeGrid.Children.Add(markdownViewer);
-    }
-    private async Task LoadMarkdownAsync()
-    {
-        Stream stream = null;
-        StreamReader reader = null;
-        try
-        {
-            // Adjust the path as needed (see loading options below)
-            // or for file on disk:
-            stream = File.OpenRead("D:\\SB\\markdownViewer Sample\\MarkdownContent.md");
-
-            if (stream == null)
-            {
-                // Handle missing file
-                return;
-            }
-
-            reader = new StreamReader(stream, Encoding.UTF8);
-            string markdownContent = await reader.ReadToEndAsync();
-
-            markdownViewer.Source = markdownContent;
-        }
-        finally
-        {
-            reader?.Dispose();
-            stream?.Dispose();
-        }
-    }
-}
-
-{% endhighlight %}
-
-## From URL
-
-Markdown content can be loaded directly from a publicly accessible URL. This is useful for displaying remote documentation, release notes, or any Markdown file hosted online.
+The `SfMarkdownViewer` can load Markdown content directly from publicly accessible URLs. This is particularly useful for displaying remote documentation, release notes, or any Markdown content hosted online.
 
 {% tabs %}
 {% highlight xaml %}
 
 <Window>
-
     <markdown:SfMarkdownViewer Source="https://raw.githubusercontent.com/SyncfusionExamples/wpf-tabsplitter-example/refs/heads/master/README.md">
     </markdown:SfMarkdownViewer>
-
 </Window>
 
 {% endhighlight %}

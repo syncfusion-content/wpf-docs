@@ -89,6 +89,7 @@ Used for the main title or top-level heading in a Markdown document.
 ## Header 2  
 Used to define major sections within your Markdown content.
 
+![Syncfusion](Images/syncfusion.png)
             ]]>
         </system:String>
     </markdown:SfMarkdownViewer.Source>
@@ -110,6 +111,7 @@ Used for the main title or top-level heading in a Markdown document.
 ## Header 2  
 Used to define major sections within your Markdown content.
 
+![Syncfusion](Images/syncfusion.png)
 ";
 
     public MainWindow()

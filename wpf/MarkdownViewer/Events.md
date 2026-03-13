@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event in WPF Markdown Viewer (SfMarkdownViewer) | Syncfusion
-description: Learn here all about Events support in Syncfusion MarkdownViewer control, its elements and more details.
+description: Learn here all about events support in Syncfusion MarkdownViewer control, its elements and more details.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
@@ -9,16 +9,18 @@ documentation: ug
 
 # Event in WPF Markdown Viewer (SfMarkdownViewer)
 
-## Hyperlink Clicked event
+## HyperlinkClicked Event
 
-This event is triggered when the hyperlink in the control is clicked.
+The HyperlinkClicked event is triggered whenever a hyperlink in the Markdown content is clicked. This event provides access to the URL being navigated to and allows developers to cancel the default navigation behavior.
+The URL link and its details are passed through the MarkdownHyperlinkClickedEventArgs. This argument provides the following details:
+
+URL : Gets the URL of the clicked hyperlink.
+Cancel : Gets or sets whether to cancel the default navigation behavior.
 
 ## How to disable hyperlink navigation in Markdown viewer control
 
-You can disable the hyperlink navigation in Markdown viewer control by setting the value of `Cancel` in the `MarkdownHyperlinkClickedEventArgs` parameter as true in the `HyperlinkClicked` event which is available in the PdfViewerControl and PdfDocumentView class. 
+You can disable the hyperlink navigation in Markdown viewer control by setting the value of `Cancel` in the `MarkdownHyperlinkClickedEventArgs` parameter as true in the `HyperlinkClicked` event.
 Please refer to the following example for more details.
-
-we have introduced `Cancel` property in the event arguments to disable the hyperlink navigation based on the standards. You need to change its value to `true` to disable the navigation.
 
 {% highlight c# %}
 
@@ -36,7 +38,7 @@ private void MarkdownViewer_HyperlinkClicked(object? sender, MarkdownHyperlinkCl
 
 ## How to retrieve the clicked URI from Markdown viewer
 
-You can acquire the details of the hyperlink, which is clicked in the Markdown viewer control using the `MarkdownHyperlinkClickedEventArgs` in the `HyperlinkClicked` event. 
+You can acquire the details of the hyperlink, which is clicked in the Markdown viewer control using the arguments of `HyperlinkClicked` event. 
 Please refer to the following example for more details.
 
 {% highlight c# %}
