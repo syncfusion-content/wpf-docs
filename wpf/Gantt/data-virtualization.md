@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Virtualization in WPF Gantt control | Syncfusion
-description: Learn about Data Virtualization support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: Data Virtualization in WPF Gantt control | Syncfusion®
+description: Learn about Data Virtualization support in Syncfusion Essential Studio® WPF Gantt control, its elements and more.
 platform: wpf
 control: Gantt
 documentation: ug
@@ -9,32 +9,32 @@ documentation: ug
 
 # Data Virtualization in WPF Gantt
 
-The WPF Gantt control supports data virtualization to enhance performance when working with large datasets. With virtualization enabled, the control renders only the nodes that are currently visible in the viewport, reducing memory usage and improving scrolling responsiveness.
+The WPF Gantt control supports data virtualization to improve performance when working with large datasets. When virtualization is enabled, the control renders only the nodes that are currently visible in the viewport, reducing memory usage and improving scrolling responsiveness.
 
 ## How virtualization Works
 
-Data virtualization in the Gantt control includes:
+Data virtualization in the Gantt control includes the following:
 
-* Row virtualization – Only visible task rows (including inline/child tasks) are created during vertical scrolling.
-* Timeline virtualization – Only the timeline range intersecting the viewport is rendered during horizontal scrolling.
+* **Row virtualization** – Only visible task rows (including inline/child tasks) are created during vertical scrolling.
+* **Timeline virtualization** – Only the tasks within the visible timeline viewport are rendered during horizontal scrolling.
 
-This ensures optimal performance even with thousands of tasks or long-duration schedules.
+This approach ensures optimal performance even when working with thousands of tasks or long‑duration schedules.
 
-## Enabling Timeline Virtualization
+## Enable Timeline Virtualization
 
-You can enable timeline virtualization by setting the `EnableTimelineVirtualization` property in WPF GanttControl. 
+You can enable timeline virtualization by setting the `EnableTimelineVirtualization` property to `true` in WPF `GanttControl`. 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml hl_lines="3" %}
 
  <syncfusion:GanttControl x:Name="Gantt"
                           ItemsSource="{Binding Tasks}"
                           EnableTimelineVirtualization="True">
     <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping ChildMapping="SubItems"
-                                         TaskNameMapping="Name"
+        <syncfusion:TaskAttributeMapping TaskNameMapping="Name"
                                          StartDateMapping="StartDate"
                                          FinishDateMapping="FinishDate"
+                                         ChildMapping="SubItems"
                                          ProgressMapping="Progress"
                                          InLineTaskMapping="InLineItems">
         </syncfusion:TaskAttributeMapping>
@@ -44,7 +44,7 @@ You can enable timeline virtualization by setting the `EnableTimelineVirtualizat
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type syncfusion:GanttNode}">
-                        <Border Name="PART_Border" Height="22" Background="Pink" VerticalAlignment="Center"
+                        <Border Name="PART_Border" Height="22" Background="Green" VerticalAlignment="Center"
                                 BorderThickness="0" ClipToBounds="True" CornerRadius="5" Opacity="0.8">
                             <Grid>
                                 <Border HorizontalAlignment="Left" VerticalAlignment="Center">
@@ -66,227 +66,208 @@ You can enable timeline virtualization by setting the `EnableTimelineVirtualizat
 </syncfusion:GanttControl>
 
 {% endhighlight  %}
-
-{% highlight c# %}
+{% highlight c# hl_lines="2" %}
 
     this.Gantt.ItemsSource = new ViewModel().Tasks;
+    this.Gantt.EnableTimelineVirtualization = true;
 
     // Task attribute mapping
     TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
     taskAttributeMapping.TaskNameMapping = "Name";
-    taskAttributeMapping.StartPointMapping = "StartDate";
+    taskAttributeMapping.StartDateMapping = "StartDate";
     taskAttributeMapping.ChildMapping = "SubItems";
-    taskAttributeMapping.FinishPointMapping = "End";
+    taskAttributeMapping.FinishDateMapping = "FinishDate";
+    taskAttributeMapping.ProgressMapping="Progress";
     taskAttributeMapping.InLineTaskMapping = "InLineItems";
     this.Gantt.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight  %}
-
 {% highlight c# tabtitle="Task.cs" %}
 
  public class Task : NotificationObject
  {
-    string _Name;
-    DateTime _StartDate;
-    DateTime _FinishDate;
-    double _progress;
+    private string _name;
+    private DateTime _startDate;
+    private DateTime _finishDate;
+    private double _progress;
     ObservableCollection<Task> _subItems = new ObservableCollection<Task>();
     ObservableCollection<Task> _inLineItems = new ObservableCollection<Task>();
 
-     /// <summary>
-     /// Initializes a new instance of the <see cref="Task"/> class.
-     /// </summary>
-     public Task()
-     {
-        _subItems.CollectionChanged += ItemsCollectionChanged;
-        _inLineItems.CollectionChanged += ItemsCollectionChanged;
-     }
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Task"/> class.
+    /// </summary>
+    public Task()
+    {
+        _subItems.CollectionChanged += this.OnItemsCollectionChanged;
+        _inLineItems.CollectionChanged += this.OnItemsCollectionChanged;
+    }
 
-     /// <summary>
-     /// Gets or sets the name.
-     /// </summary>
-     public string Name
-     {
-         get
-         {
-             return this._name;
-         }
-         set
-         {
-             this._name = value;
-             RaisePropertyChanged("Name");
-         }
-     }
+    /// <summary>
+    /// Gets or sets the name.
+    /// </summary>
+    public string Name
+    {
+        get
+        {
+            return _name;
+        }
+        set
+        {
+            _name = value;
+            this.RaisePropertyChanged(nameof(Name));
+        }
+    }
 
-     /// <summary>
-     /// Gets or sets the start date.
-     /// </summary>
-     public DateTime StartDate
-     {
-         get
-         {
-             return this._startDate;
-         }
-         set
-         {
-             this._startDate = value;
-             RaisePropertyChanged("StartDate");
-         }
-     }
+    /// <summary>
+    /// Gets or sets the start date.
+    /// </summary>
+    public DateTime StartDate
+    {
+        get
+        {
+            return _startDate;
+        }
+        set
+        {
+            _startDate = value;
+            this.RaisePropertyChanged(nameof(StartDate));
+        }
+    }
 
-     /// <summary>
-     /// Gets or sets the finish date.
-     /// </summary>
-     public DateTime FinishDate
-     {
-         get
-         {
-             return this._finishDate;
-         }
-         set
-         {
-             this._finishDate = value;
-             RaisePropertyChanged("FinishDate");
-         }
-     }
+    /// <summary>
+    /// Gets or sets the finish date.
+    /// </summary>
+    public DateTime FinishDate
+    {
+        get
+        {
+            return _finishDate;
+        }
+        set
+        {
+            _finishDate = value;
+            this.RaisePropertyChanged(nameof(FinishDate));
+        }
+    }
 
-     /// <summary>
-     /// Gets or sets the progress.
-     /// </summary>
-     public double Progress
-     {
-         get
-         {
-             return Math.Round(this._progress, 2);
-         }
-         set
-         {
-             this._progress = value;
-             RaisePropertyChanged("Progress");
-         }
-     }
+    /// <summary>
+    /// Gets or sets the progress.
+    /// </summary>
+    public double Progress
+    {
+        get
+        {
+            return Math.Round(_progress, 2);
+        }
+        set
+        {
+            _progress = value;
+            this.RaisePropertyChanged(nameof(Progress));
+        }
+    }
 
-     /// <summary>
-     /// Gets or sets the sub items.
-     /// </summary>
-     public ObservableCollection<Task> SubItems
-     {
-         get
-         {
-             return this._subItems;
-         }
-         set
-         {
-             this._subItems = value;
+    /// <summary>
+    /// Gets or sets the sub items.
+    /// </summary>
+    public ObservableCollection<Task> SubItems
+    {
+        get
+        {
+            return _subItems;
+        }
+        set
+        {
+            _subItems = value;
+            _subItems.CollectionChanged += OnItemsCollectionChanged;
+            if (value.Count > 0)
+            {
+                _subItems.ToList().ForEach(n =>
+                {
+                    /// To listen the changes occuring in child task.
+                    n.PropertyChanged += this.OnItemPropertyChanged;
+                });
 
-             this._subItems.CollectionChanged += ItemsCollectionChanged;
+                this.UpdateDates();
+            }
 
-             if (value.Count > 0)
-             {
-                 this._subItems.ToList().ForEach(n =>
-                 {
-                     /// To listen the changes occuring in child task.
-                     n.PropertyChanged += ItemPropertyChanged;
-                 });
-                 UpdateDates();
-             }
+            this.RaisePropertyChanged(nameof(SubItems));
+        }
+    }
 
-             this.RaisePropertyChanged("SubItems");
-         }
-     }
+    /// <summary>
+    /// Gets or sets the in line items.
+    /// </summary>
+    public ObservableCollection<Task> InLineItems
+    {
+        get
+        {
+            return _inLineItems;
+        }
+        set
+        {
+            _inLineItems = value;
+            _inLineItems.CollectionChanged += OnItemsCollectionChanged;
+            if (value.Count > 0)
+            {
+                _inLineItems.ToList().ForEach(n =>
+                {
+                    /// To listen the changes occuring in child task.
+                    n.PropertyChanged += this.OnItemPropertyChanged;
+                });
 
-     /// <summary>
-     /// Gets or sets the in line items.
-     /// </summary>
-     public ObservableCollection<Task> InLineItems
-     {
-         get
-         {
-             return this._inLineItems;
-         }
-         set
-         {
-             this._inLineItems = value;
+                this.UpdateDates();
+            }
 
-             this._inLineItems.CollectionChanged += ItemsCollectionChanged;
+            this.RaisePropertyChanged(nameof(InLineItems));
+        }
+    }
 
-             if (value.Count > 0)
-             {
-                 this._inLineItems.ToList().ForEach(n =>
-                 {
-                     n.PropertyChanged += ItemPropertyChanged;
-                 });
-                 UpdateDates();
-             }
+    public void OnItemsCollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+    {
+        if (e.Action == NotifyCollectionChangedAction.Add)
+        {
+            foreach (Task item in e.NewItems)
+                item.PropertyChanged += this.OnItemPropertyChanged;
+        }
+        else
+        {
+            foreach (Task item in e.OldItems)
+                item.PropertyChanged -= this.OnItemPropertyChanged;
+        }
 
-             this.RaisePropertyChanged("InLineItems");
-         }
-     }
+        this.UpdateDates();
+    }
+        
+    public void OnItemPropertyChanged(object sender, PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName != null && (e.PropertyName == "StartDate" || e.PropertyName == "FinishDate" || e.PropertyName == "Progress"))
+        {
+            this.UpdateDates();
+        }
+    }
 
-     /// <summary>
-     /// Itemses the collection changed.
-     /// </summary>
-     /// <param name="sender">The sender.</param>
-     /// <param name="e">The <see cref="System.Collections.Specialized.NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
-     void ItemsCollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-     {
-         if (e.Action == NotifyCollectionChangedAction.Add)
-         {
-             foreach (Task item in e.NewItems)
-             {
-                 item.PropertyChanged += ItemPropertyChanged;
-             }
-         }
-         else
-         {
-             foreach (Task item in e.OldItems)
-             {
-                 item.PropertyChanged -= ItemPropertyChanged;
-             }
-         }
+    private void UpdateDates()
+    {
+        var tempCal = 0d;
+        if (_subItems.Count > 0)
+        {
+            /// Updating the start and end date based on the chagne occur in the date of child task
+            StartDate = _subItems.Select(c => c.StartDate).Min();
+            FinishDate = _subItems.Select(c => c.FinishDate).Max();
+            Progress = (_subItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _subItems.Count;
+        }
 
-         this.UpdateDates();
-     }
-
-     /// <summary>
-     /// Items the property changed.
-     /// </summary>
-     /// <param name="sender">The sender.</param>
-     /// <param name="e">The <see cref="System.ComponentModel.PropertyChangedEventArgs"/> instance containing the event data.</param>
-     void ItemPropertyChanged(object sender, PropertyChangedEventArgs e)
-     {
-         if (e.PropertyName != null)
-             if (e.PropertyName == "StartDate" || e.PropertyName == "FinishDate" || e.PropertyName == "Progress")
-             {
-                 UpdateDates();
-             }
-     }
-
-     /// <summary>
-     /// Updates the dates.
-     /// </summary>
-     private void UpdateDates()
-     {
-         var tempCal = 0d;
-
-         if (_subItems.Count > 0)
-         {
-             StartDate = _subItems.Select(c => c.StartDate).Min();
-             FinishDate = _subItems.Select(c => c.FinishDate).Max();
-             Progress = (_subItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _subItems.Count;
-         }
-
-         if (_inLineItems.Count > 0)
-         {
-             StartDate = _inLineItems.Select(c => c.StartDate).Min();
-             FinishDate = _inLineItems.Select(c => c.FinishDate).Max();
-             Progress = (_inLineItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _inLineItems.Count;
-         }
-     }
+        if (_inLineItems.Count > 0)
+        {
+            /// Updating the start and end date based on the chagne occur in the date of child task
+            StartDate = _inLineItems.Select(c => c.StartDate).Min();
+            FinishDate = _inLineItems.Select(c => c.FinishDate).Max();
+            Progress = (_inLineItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _inLineItems.Count;
+        }
+    }
  }
 
 {% endhighlight  %}
-
 {% highlight c# tabtitle="ViewModel.cs" %}
 
 public class ViewModel
@@ -316,15 +297,12 @@ public class ViewModel
         }
     }
 
-    /// <summary>
-    /// Method to get the task details for Gantt resource view
-    /// </summary>
     public ObservableCollection<Task> GetTaskDetails()
     {
         ObservableCollection<Task> teams = new ObservableCollection<Task>();
 
         teams.Add(new Task() { Name = "RDU Team" });
-        Item Person = new Task() { Name = "Robert" };
+        Task Person = new Task() { Name = "Robert" };
         Person.InLineItems.Add(new Task() { StartDate = new DateTime(2026, 1, 3), FinishDate = new DateTime(2026, 1, 7), Name = "Market Analysis", Progress = 10d }); 
         Person.InLineItems.Add(new Task() { StartDate = new DateTime(2026, 1, 8), FinishDate = new DateTime(2026, 1, 13), Name = "Competitor Analysis", Progress = 20d }); 
         Person.InLineItems.Add(new Task() { StartDate = new DateTime(2026, 1, 14), FinishDate = new DateTime(2026, 1, 18), Name = "Design Spec", Progress = 15d }); 
@@ -894,7 +872,6 @@ public class ViewModel
 }
 
 {% endhighlight  %}
-
 {% endtabs %}
 
 ![gantt-control-data-virtualization](Data-Virtualization-Images/data-virtualizaton-for-gantt-control.gif){:width="725" height="325"}
