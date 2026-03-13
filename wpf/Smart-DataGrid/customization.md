@@ -14,6 +14,8 @@ The `SfSmartDataGrid` provides options to customize its behavior and appearance,
 
 ## CurrentUser
 
+N>Bind the **CurrentUser** property to differentiate outgoing requests (from the user) and incoming responses (from AI) in the AssistView layout. If **CurrentUser** is not set, the control cannot distinguish between outgoing and incoming messages, and all messages will appear with the same alignment and style.
+
 The `CurrentUser` property of `SfSmartDataGrid` provides the current author or user context. This can be used by the AssistView and smart actions for personalization, audit information, or to tailor suggestions based on the active user.
 
 {% tabs %}
@@ -29,7 +31,8 @@ The `Suggestions` property in `SfSmartDataGrid` is used to provide a predefined 
 
 {% tabs %}
 {% highlight xaml %}
-    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" Suggestions="{Binding AiSuggestions}"/>
+    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" 
+                                Suggestions="{Binding AiSuggestions}"/>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -54,7 +57,8 @@ The `Prompt` property in `SfSmartDataGrid` defines an initial prompt that is aut
 
 {% tabs %}
 {% highlight xaml %}
-    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" Prompt="Sort the Quantity column"/>
+    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" 
+                                Prompt="Sort the Quantity column"/>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -70,7 +74,9 @@ When the property is set to true, these actions are enabled and can be applied t
 
 {% tabs %}
 {% highlight xaml %}
-    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" ItemsSource="{Binding OrderInfoCollection}" EnableSmartActions="True"/>
+    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" 
+                                ItemsSource="{Binding OrderInfoCollection}" 
+                                EnableSmartActions="True"/>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -84,7 +90,8 @@ The `HighlightBrush` property is of type `SolidColorBrush` and controls the brus
 
 {% tabs %}
 {% highlight xaml %}
-    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" HighlightBrush="Orange"/>
+    <syncfusion:SfSmartDataGrid x:Name="SmartGrid" 
+                                HighlightBrush="Orange"/>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -113,7 +120,7 @@ The `SfSmartDataGrid.AssistViewRequest` event is triggered whenever a user reque
 {% tabs %}
 {% highlight xaml %}
     <syncfusion:SfSmartDataGrid ItemsSource="{Binding OrderInfoCollection}" 
-                           AssistViewRequest="OnAssistRequest">
+                                AssistViewRequest="OnAssistRequest">
     </syncfusion:SfSmartDataGrid>
 {% endhighlight %}
 
