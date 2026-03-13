@@ -9,12 +9,14 @@ documentation: ug
 
 # Overview of WPF Markdown Viewer (SfMarkdownViewer)
 
-The .NET WPF SfMarkdownViewer is a lightweight and efficient UI control that enables developers to render Markdown content with full formatting support. It provides a seamless way to display documentation, help content, release notes, and other rich text formats in both mobile and desktop applications.
+The WPF Markdown Viewer is a UI control that converts Markdown input into a fully formatted visual representation without requiring external rendering engines or manual formatting. It provides a flexible way to display rich Markdown content within WPF applications, making it ideal for presenting documentation, release notes, help content, and other Markdown‑based information.
 
 ## Key Features
 
-* **Standard Markdown Support** – Renders headings, bold and italic text, lists, tables, images, code blocks, etc.
+* **Markdown rendering** – Converts Markdown syntax such as headings, lists, links, images, tables, code blocks, block quotes, and more into styled, readable content.
 
-* **Flexible Input Sources** – Accepts Markdown from local `.md` files, embedded resources, or direct strings.
+* **Multiple content sources** – Supports loading Markdown from a string, file, or URL.
 
-* **Smooth Scrolling** – Provides fluid scrolling for large Markdown documents.
+* **Hyperlink navigation** – Supports clickable links that open external URLs or trigger in-app navigation.
+
+![Syncfusion WPF Markdown Viewer](Images/wpf-markdown-viewer-overview.png)

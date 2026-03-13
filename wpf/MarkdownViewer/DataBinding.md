@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Markdown Content Sources in .NET WPF MarkdownViewer | Syncfusion
-description: Learn how to load Markdown content from strings, local files, embedded resources, and URLs in the Syncfusion .NET WPF MarkdownViewer control.
+title: Load Markdown Content in WPF Markdown Viewer | Syncfusion
+description: Learn how to load Markdown content from various sources including strings, local files, URLs, and embedded resources in the Syncfusion WPF SfMarkdownViewer control.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Loading Markdown Content in .NET WPF MarkdownViewer
+# Loading Markdown Content in WPF Markdown Viewer
 
-The SfMarkdownViewer control supports flexible input sources, allowing developers to load Markdown content from strings, local files, embedded resources, and external URLs.
+The SfMarkdownViewer control provides flexible options for loading Markdown content from multiple sources. The `Source` property intelligently detects the input type and handles content loading automatically, supporting raw Markdown strings, local file paths, and HTTP/HTTPS URLs.
 
 ## From String
 
@@ -24,7 +24,7 @@ Assign a Markdown-formatted string to the Source property of the SfMarkdownViewe
             <system:String xml:space="preserve">
                 <![CDATA[
     # What is the Markdown Viewer?  
-    The MarkdownViewer control is used to render and preview Markdown files. It converts markdown syntax into a clean, readable format and supports elements such as headings, lists, code blocks, tables, and other common markdown structures.
+    The Markdown Viewer control is used to render and preview Markdown files. It converts markdown syntax into a clean, readable format and supports elements such as headings, lists, code blocks, tables, and other common markdown structures.
 
     # Header 1  
     Used for the main title or top-level heading in a Markdown document. 
@@ -49,7 +49,7 @@ namespace MarkdownViewerGettingStarted
     {
         private const string markdownContent = @"
 # What is the Markdown Viewer?  
-The MarkdownViewer control is used to render and preview Markdown files. It converts markdown syntax into a clean, readable format and supports elements such as headings, lists, code blocks, tables, and other common markdown structures.
+The Markdown Viewer control is used to render and preview Markdown files. It converts markdown syntax into a clean, readable format and supports elements such as headings, lists, code blocks, tables, and other common markdown structures.
 
 # Header 1  
 Used for the main title or top-level heading in a Markdown document. 
@@ -172,7 +172,7 @@ public partial class MainWindow : Window
         InitializeComponent();  
         SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
         markdownViewer.Source = "https://raw.githubusercontent.com/SyncfusionExamples/wpf-tabsplitter-example/refs/heads/master/README.md";
-        HomeGrid.Children.Add(markdownViewer);       
+        this.Content = markdownViewer;       
     }
 } 
 

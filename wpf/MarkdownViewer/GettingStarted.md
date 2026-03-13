@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with .NET WPF Markdown Viewer control | Syncfusion
-description: Learn how to get started with Syncfusion® .NET WPF SfMarkdownViewer control and explore its capabilities for rendering Markdown content.
+title: Getting started with WPF Markdown Viewer control | Syncfusion
+description: Learn how to get started with Syncfusion® WPF SfMarkdownViewer control and explore its capabilities for rendering Markdown content.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
-keywords: .net wpf markdownviewer, syncfusion markdownviewer wpf, markdown viewer .net wpf, .net wpf markdown rendering, sfmarkdownviewer example wpf, .net wpf markdown control, markdown content .net wpf, markdown rendering .net wpf
+keywords: wpf markdownviewer, syncfusion markdownviewer wpf, markdown viewer wpf, wpf markdown rendering, sfmarkdownviewer wpf, wpf markdown control, markdown rendering wpf, wpf markdown getting started
 ---
 
 # Getting Started with WPF Markdown Viewer (SfMarkdownViewer)
 
-This guide details the initial setup and basic usage of the SfMarkdownViewer control, offering insight into its ability to render Markdown content with various formatting capabilities.
+This section provides a step-by-step guide to integrate and use the SfMarkdownViewer control in your WPF applications.
 
 ## Prerequisites
 
@@ -62,7 +62,6 @@ namespace MarkdownViewerGettingStarted
         {
             InitializeComponent();
             SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
-            HomeGrid.Children.Add(markdownViewer);
         }
     }
 }
@@ -72,7 +71,7 @@ namespace MarkdownViewerGettingStarted
 
 ## Step 4: Add Source to the SfMarkdownViewer
 
-To display Markdown content, assign a string to the Source property of the SfMarkdownViewer control. This string can contain standard Markdown syntax such as headings, bold text, lists, and images.
+The `Source` property is used to provide Markdown content to the control. The Source accepts raw Markdown text, file paths, or HTTP/HTTPS URLs.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -90,13 +89,6 @@ Used for the main title or top-level heading in a Markdown document.
 ## Header 2  
 Used to define major sections within your Markdown content.
 
-### Table 
-
-|              | Column 1 | Column 2 | Column 3 |
-|--------------|----------|----------|----------|
-| Row 1        | Content  | Content  | Content  |
-| Row 2        | Content  | Content  | Content  |
-| Row 3        | Content  | Content  | Content  |
             ]]>
         </system:String>
     </markdown:SfMarkdownViewer.Source>
@@ -118,20 +110,14 @@ Used for the main title or top-level heading in a Markdown document.
 ## Header 2  
 Used to define major sections within your Markdown content.
 
-### Table 
-
-|              | Column 1 | Column 2 | Column 3 |
-|--------------|----------|----------|----------|
-| Row 1        | Content  | Content  | Content  |
-| Row 2        | Content  | Content  | Content  |
-| Row 3        | Content  | Content  | Content  |";
+";
 
     public MainWindow()
     {
         InitializeComponent();  
         SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
         markdownViewer.Source = markdownContent;
-        HomeGrid.Children.Add(markdownViewer);
+        this.Content = markdownViewer;
     }
 }  
 
