@@ -25,8 +25,8 @@ Inline mode displays the suggested text directly within the editor, seamlessly c
 {% highlight C# tabtitle="XAML" hl_lines="9" %}
 
 <Window  
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:smarttexteditor="clr-namespace:Syncfusion.UI.Xaml.SmartComponents;assembly=Syncfusion.SfSmartComponents.Wpf">
 
     <smarttexteditor:SfSmartTextEditor
@@ -59,8 +59,8 @@ Popup mode displays the suggested text in a small overlay near the caret, making
 {% highlight C# tabtitle="XAML" hl_lines="9" %}
 
 <Window  
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:smarttexteditor="clr-namespace:Syncfusion.UI.Xaml.SmartComponents;assembly=Syncfusion.SfSmartComponents.Wpf">
 
     <smarttexteditor:SfSmartTextEditor

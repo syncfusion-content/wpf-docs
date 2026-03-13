@@ -37,8 +37,8 @@ You can change the text style and font using the `Style` property to make the ed
 {% highlight xaml tabtitle="XAML" %}
 
 <Window
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:smarttexteditor="clr-namespace:Syncfusion.UI.Xaml.SmartComponents;assembly=Syncfusion.SfSmartComponents.Wpf">
 
     <smarttexteditor:SfSmartTextEditor>
