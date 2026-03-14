@@ -295,7 +295,7 @@ this.Content = map;
 {% endhighlight %}
 {% endtabs %}
 
-![Azure Maps tiles](Map-Providers_images/wpf-auzure-maps.webp){:width="1000" height="488"}
+![Azure Maps tiles](Map-Providers_images/wpf-azure-maps.webp){:width="1000" height="488"}
 
 N>
 * Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
@@ -319,7 +319,7 @@ The following code example demonstrates how to add multiple layers to an `Imager
             <syncfusion:ImageryLayer.SubShapeFileLayers>                   
                 <syncfusion:SubShapeFileLayer  Uri="DataMarkers.ShapeFiles.Africa.shp">                            
                     <syncfusion:SubShapeFileLayer.ShapeSettings>                               
-                        <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Blue"/>                           
+                        <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate"/>                           
                     </syncfusion:SubShapeFileLayer.ShapeSettings>                       
                 </syncfusion:SubShapeFileLayer>                   
             </syncfusion:ImageryLayer.SubShapeFileLayers>               
@@ -328,7 +328,8 @@ The following code example demonstrates how to add multiple layers to an `Imager
 </syncfusion:SfMap>
 
 {% endhighlight %}
-{% endtabs %}
+
+![Azure Maps SubShapeFileLayer](Map-Providers_images/wpf-azure-map-with-subshapefilelayer.png){:width="1000" height="488"}
 
 N>
 
