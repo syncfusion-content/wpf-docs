@@ -133,7 +133,7 @@ The following code example demonstrates how to add multiple layers to an `Imager
             <syncfusion:ImageryLayer.SubShapeFileLayers>                   
                 <syncfusion:SubShapeFileLayer  Uri="DataMarkers.ShapeFiles.Africa.shp">                            
                     <syncfusion:SubShapeFileLayer.ShapeSettings>                               
-                        <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate">                           
+                        <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate"/>                           
                     </syncfusion:SubShapeFileLayer.ShapeSettings>                       
                 </syncfusion:SubShapeFileLayer>                   
             </syncfusion:ImageryLayer.SubShapeFileLayers>               
@@ -148,7 +148,7 @@ The following code example demonstrates how to add multiple layers to an `Imager
 
 ## Bing Map
 
-The `Bing Map`s is a global mapping service provided by Microsoft. Similar to `OpenStreetMap` (OSM), it delivers map tile images based on user requests and combines them to render the required map area.
+The `Bing Maps` is a global mapping service provided by Microsoft. Similar to `OpenStreetMap` (OSM), it delivers map tile images based on user requests and combines them to render the required map area.
 
 ### Enable a Bing Map 
 
@@ -158,8 +158,6 @@ You can enable Bing Maps by setting the `LayerType` property to `Bing.`
 
 The [`BingMapKey`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapKey) is provided as input to this key property. The Bing Map key can be obtained from 
 [https://www.microsoft.com/en-us/maps/create-a-bing-maps-key](https://www.microsoft.com/en-us/maps/bing-maps/create-a-bing-maps-key).
-
-Maps supports three types of Bing map viewing style options.
 
 The `Maps` control supports the following `Bing Maps` view styles:
 
@@ -263,6 +261,81 @@ The following screenshot illustrates the AerialWithLabel view.
 ![Bing map Aerial With Label_View_image](Map-Providers_images/Bing_map_Aerial_With_Label_View_image.jpg)
 
 N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
+
+## Azure Maps
+
+`Azure Maps` is an online map tile provider from Microsoft. Similar to `OSM` and `Bing Maps,` it serves map tile images on request and composites them to display the map area.
+
+### Adding Azure Maps
+
+`Azure Maps` can be rendered by setting the `UrlTemplate` property with the tile server URL provided by the online map provider. A subscription key is required for `Azure Maps.`
+
+Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then add the key to the URL.
+
+N>
+* Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
+
+{% tabs %}
+{% highlight xaml hl_lines="2 3 4" %}
+
+<syncfusion:SfMap>
+    <syncfusion:SfMap.Layers>
+        <syncfusion:ImageryLayer UrlTemplate="https://atlas.microsoft.com/map/tile?api-version=2024-04-01&amp;tilesetId=microsoft.base.road&amp;zoom={z}&amp;x={x}&amp;y={y}&amp;subscription-key=your-azure-maps-key"/>
+    </syncfusion:SfMap.Layers>
+</syncfusion:SfMap>
+
+{% endhighlight %}
+{% highlight c# hl_lines="3 4 5" %}
+
+// Azure Maps via UrlTemplate (XYZ tiles)
+SfMap map = new SfMap();
+ImageryLayer layer = new ImageryLayer();
+layer.UrlTemplate = "https://atlas.microsoft.com/map/tile?api-version=2024-04-01&tilesetId=microsoft.base.road&zoom={z}&x={x}&y={y}&subscription-key=your-azure-maps-key";
+map.Layers.Add(layer);
+this.Content = map;
+    
+{% endhighlight %}
+{% endtabs %}
+
+![Azure Maps tiles](Map-Providers_images/wpf-azure-maps.webp){:width="1000" height="488"}
+
+### Adding sublayer in Azure map
+
+Multiple layers can be added within a single `ImageryLayer`. To achieve this, add the required layers to the `SubShapeFileLayers` property of the `ImageryLayer`.
+
+### SubShapeFileLayers
+
+The `SubShapeFileLayers` allows you to group multiple `SubShapeFileLayer` instances within an `ImageryLayer.` Each SubShapeFileLayer functions as an independent shapefile layer, enabling you to display multiple shape data sources on the same map imagery.
+
+The following code example demonstrates how to add multiple layers to an `ImageryLayer.`
+
+{% tabs %}
+{% highlight xaml hl_lines="2 3 4 5 6 7 8 9 10 11" %}
+
+<syncfusion:SfMap>
+    <syncfusion:SfMap.Layers>
+        <syncfusion:ImageryLayer UrlTemplate="https://atlas.microsoft.com/map/tile?api-version=2024-04-01&amp;tilesetId=microsoft.base.road&amp;zoom={z}&amp;x={x}&amp;y={y}&amp;subscription-key=your-azure-maps-key" >
+            <syncfusion:ImageryLayer.SubShapeFileLayers>                   
+                <syncfusion:SubShapeFileLayer  Uri="DataMarkers.ShapeFiles.Africa.shp">                            
+                    <syncfusion:SubShapeFileLayer.ShapeSettings>                               
+                        <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate"/>                           
+                    </syncfusion:SubShapeFileLayer.ShapeSettings>                       
+                </syncfusion:SubShapeFileLayer>                   
+            </syncfusion:ImageryLayer.SubShapeFileLayers>               
+        </syncfusion:ImageryLayer>     
+    </syncfusion:SfMap.Layers>
+</syncfusion:SfMap>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Azure Maps SubShapeFileLayer](Map-Providers_images/wpf-azure-map-with-subshapefilelayer.jpg){:width="1000" height="488"}
+
+N>
+
+ * When `UrlTemplate` is set, the `ImageryLayer` gives first preference to loading map tiles from the specified URL and ignores `LayerType` and `BingMapKey` properties.
+
+ * If `UrlTemplate` is not set, the layer continues to use the configured `LayerType` (such as Bing Maps or OpenStreetMap), ensuring full backward compatibility.
 
 ## See also
 
