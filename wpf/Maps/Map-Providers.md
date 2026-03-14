@@ -329,7 +329,7 @@ The following code example demonstrates how to add multiple layers to an `Imager
 {% endhighlight %}
 {% endtabs %}
 
-![Azure Maps SubShapeFileLayer](Map-Providers_images/wpf-azure-map-with-subshapefilelayer.png){:width="1000" height="488"}
+![Azure Maps SubShapeFileLayer](Map-Providers_images/wpf-azure-map-with-subshapefilelayer.jpg){:width="1000" height="488"}
 
 N>
 
