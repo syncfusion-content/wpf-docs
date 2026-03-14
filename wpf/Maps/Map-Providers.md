@@ -133,7 +133,7 @@ The following code example demonstrates how to add multiple layers to an `Imager
             <syncfusion:ImageryLayer.SubShapeFileLayers>                   
                 <syncfusion:SubShapeFileLayer  Uri="DataMarkers.ShapeFiles.Africa.shp">                            
                     <syncfusion:SubShapeFileLayer.ShapeSettings>                               
-                        <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate">                           
+                        <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate"/>                           
                     </syncfusion:SubShapeFileLayer.ShapeSettings>                       
                 </syncfusion:SubShapeFileLayer>                   
             </syncfusion:ImageryLayer.SubShapeFileLayers>               
@@ -158,8 +158,6 @@ You can enable Bing Maps by setting the `LayerType` property to `Bing.`
 
 The [`BingMapKey`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapKey) is provided as input to this key property. The Bing Map key can be obtained from 
 [https://www.microsoft.com/en-us/maps/create-a-bing-maps-key](https://www.microsoft.com/en-us/maps/bing-maps/create-a-bing-maps-key).
-
-Maps supports three types of Bing map viewing style options.
 
 The `Maps` control supports the following `Bing Maps` view styles:
 
@@ -274,10 +272,63 @@ Azure Maps can be rendered by setting the `UrlTemplate` property with the tile s
 
 Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then add the key to the URL.
 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfMap>
+    <syncfusion:SfMap.Layers>
+        <syncfusion:ImageryLayer UrlTemplate="https://atlas.microsoft.com/map/tile?api-version=2024-04-01&amp;tilesetId=microsoft.base.road&amp;zoom={z}&amp;x={x}&amp;y={y}&amp;subscription-key=your-azure-maps-key"/>
+    </syncfusion:SfMap.Layers>
+</syncfusion:SfMap>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+// Azure Maps via UrlTemplate (XYZ tiles)
+SfMap map = new SfMap();
+ImageryLayer layer = new ImageryLayer();
+layer.UrlTemplate = "https://atlas.microsoft.com/map/tile?api-version=2024-04-01&tilesetId=microsoft.base.road&zoom={z}&x={x}&y={y}&subscription-key=your-azure-maps-key";
+map.Layers.Add(layer);
+this.Content = map;
+    
+{% endhighlight %}
+{% endtabs %}
+
+![Azure Maps tiles](Map-Providers_images/wpf-auzure-maps.webp){:width="1000" height="488"}
+
 N>
 * Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
 
-### Adding sublayer
+### Adding sublayer in Azure map
+
+Multiple layers can be added within a single `ImageryLayer`. To achieve this, add the required layers to the `SubShapeFileLayers` property of the `ImageryLayer`.
+
+### SubShapeFileLayers
+
+The `SubShapeFileLayers` allows you to group multiple `SubShapeFileLayer` instances within an `ImageryLayer.` Each SubShapeFileLayer functions as an independent shapefile layer, enabling you to display multiple shape data sources on the same map imagery.
+
+The following code example demonstrates how to add multiple layers to an `ImageryLayer.`
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfMap>
+    <syncfusion:SfMap.Layers>
+        <syncfusion:ImageryLayer UrlTemplate="https://atlas.microsoft.com/map/tile?api-version=2024-04-01&amp;tilesetId=microsoft.base.road&amp;zoom={z}&amp;x={x}&amp;y={y}&amp;subscription-key=your-azure-maps-key" >
+            <syncfusion:ImageryLayer.SubShapeFileLayers>                   
+                <syncfusion:SubShapeFileLayer  Uri="DataMarkers.ShapeFiles.Africa.shp">                            
+                    <syncfusion:SubShapeFileLayer.ShapeSettings>                               
+                        <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Blue"/>                           
+                    </syncfusion:SubShapeFileLayer.ShapeSettings>                       
+                </syncfusion:SubShapeFileLayer>                   
+            </syncfusion:ImageryLayer.SubShapeFileLayers>               
+        </syncfusion:ImageryLayer>     
+    </syncfusion:SfMap.Layers>
+</syncfusion:SfMap>
+
+{% endhighlight %}
+{% endtabs %}
 
 N>
 
