@@ -268,12 +268,12 @@ N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) f
 
 ### Adding Azure Maps
 
-Azure Maps can be rendered by setting the `UrlTemplate` property with the tile server URL provided by the online map provider. A subscription key is required for Azure Maps.
+`Azure Maps` can be rendered by setting the `UrlTemplate` property with the tile server URL provided by the online map provider. A subscription key is required for `Azure Maps.`
 
 Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then add the key to the URL.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml hl_lines="2 3 4" %}
 
 <syncfusion:SfMap>
     <syncfusion:SfMap.Layers>
@@ -282,8 +282,7 @@ Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/se
 </syncfusion:SfMap>
 
 {% endhighlight %}
-
-{% highlight c# %}
+{% highlight c# hl_lines="3 4 5" %}
 
 // Azure Maps via UrlTemplate (XYZ tiles)
 SfMap map = new SfMap();
@@ -311,7 +310,7 @@ The `SubShapeFileLayers` allows you to group multiple `SubShapeFileLayer` instan
 The following code example demonstrates how to add multiple layers to an `ImageryLayer.`
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml hl_lines="2 3 4 5 6 7 8 9 10 11" %}
 
 <syncfusion:SfMap>
     <syncfusion:SfMap.Layers>
@@ -328,6 +327,7 @@ The following code example demonstrates how to add multiple layers to an `Imager
 </syncfusion:SfMap>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![Azure Maps SubShapeFileLayer](Map-Providers_images/wpf-azure-map-with-subshapefilelayer.png){:width="1000" height="488"}
 
@@ -335,8 +335,7 @@ N>
 
  * When `UrlTemplate` is set, the `ImageryLayer` gives first preference to loading map tiles from the specified URL and ignores `LayerType` and `BingMapKey` properties.
 
- * If UrlTemplate is not set, the layer continues to use the configured `LayerType` (such as Bing Maps or OpenStreetMap), ensuring full backward compatibility.
-
+ * If `UrlTemplate` is not set, the layer continues to use the configured `LayerType` (such as Bing Maps or OpenStreetMap), ensuring full backward compatibility.
 
 ## See also
 
