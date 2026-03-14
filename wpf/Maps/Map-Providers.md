@@ -272,6 +272,9 @@ N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) f
 
 Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then add the key to the URL.
 
+N>
+* Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
+
 {% tabs %}
 {% highlight xaml hl_lines="2 3 4" %}
 
@@ -295,9 +298,6 @@ this.Content = map;
 {% endtabs %}
 
 ![Azure Maps tiles](Map-Providers_images/wpf-azure-maps.webp){:width="1000" height="488"}
-
-N>
-* Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
 
 ### Adding sublayer in Azure map
 
