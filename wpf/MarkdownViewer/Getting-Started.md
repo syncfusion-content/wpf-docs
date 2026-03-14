@@ -10,46 +10,74 @@ keywords: wpf markdownviewer, syncfusion markdownviewer wpf, markdown viewer wpf
 
 # Getting Started with WPF Markdown Viewer (SfMarkdownViewer)
 
-This section provides a step-by-step guide to integrate and use the SfMarkdownViewer control in your WPF applications.
+This section provides a step-by-step guide to integrate and use the [SfMarkdownViewer] (https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control in your WPF applications.
 
-## Prerequisites
+## Assembly deployment
 
-Before proceeding, ensure the following are in place:
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfbadge) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
+Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-## Step 1: Create a new .NET WPF project
+## Step 1: Create a New WPF Project
 
-1. Go to **File > New > Project** and choose the **.NET WPF App** template.
-2. Name the project and choose a location. Then, click **Next**.
-3. Select the .NET version and click **Create**.
+1. Go to **File > New > Project** and choose the **WPF App** template.
+2. Name the project and choose a location. Then click **Next**.
+3. Select the .NET framework version and click **Create**.
 
-## Step 2: Install the Syncfusion<sup>®</sup> .NET WPF Markdown Viewer NuGet Package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> WPF MarkdownViewer NuGet Package
 
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for `Syncfusion.SfMarkdownViewer.WPF` and install the latest version.
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+2. Search for [Syncfusion.SfMarkdownViewer.Wpf](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMarkdownViewer.Wpf.html) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Initialize the Markdown Viewer Control
+## Adding WPF SfMarkdownViewer via XAML
 
-1. To initialize the control, import the `Syncfusion.UI.Xaml.Markdown` namespace.
-2. Add an SfMarkdownViewer instance to your window.
+To add the `SfMarkdownViewer` manually in XAML, follow these steps:
 
-{% tabs %} 
+1. Create a new WPF project in Visual Studio.
 
+2. Add the following required assembly references to the project:
+
+    * Syncfusion.SfMarkdownViewer.WPF
+    * Syncfusion.Markdown
+    * Syncfusion.Shared.WPF
+
+3. Import the control namespace `Syncfusion.UI.Xaml.Markdown` in XAML, and declare the `SfMarkdownViewer` in XAML page.
+
+{% tabs %}
 {% highlight xaml %}
 
 <Window
-    . . .    
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
     xmlns:markdown="clr-namespace:Syncfusion.UI.Xaml.Markdown;assembly=Syncfusion.SfMarkdownViewer.WPF"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-
-    <markdown:SfMarkdownViewer />
-    
+    <Grid>
+        <markdown:SfMarkdownViewer />
+    </Grid>
 </Window>
  
 {% endhighlight %}
+{% endtabs %}
 
+## Adding WPF SfMarkdownViewer via C#
+
+To add the `SfMarkdownViewer` manually in C#, follow these steps:
+
+1. Create a new WPF project in Visual Studio.
+
+2. Add the following required assembly references to the project:
+
+    * Syncfusion.SfMarkdownViewer.WPF
+    * Syncfusion.Markdown
+    * Syncfusion.Shared.WPF
+
+3. Import the control namespace `Syncfusion.UI.Xaml.Markdown` in C#, and add the `SfMarkdownViewer` in C# page.
+
+{% tabs %}
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Markdown;
@@ -61,7 +89,10 @@ namespace MarkdownViewerGettingStarted
         public MainWindow()
         {
             InitializeComponent();
+            // Creating an instance of the SfMarkdownViewer control
             SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
+            this.Content = markdownViewer;
+
         }
     }
 }
@@ -69,7 +100,7 @@ namespace MarkdownViewerGettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## Step 4: Add Source to the SfMarkdownViewer
+## Add Source to the SfMarkdownViewer
 
 The `Source` property is used to provide Markdown content to the control. The Source accepts raw Markdown text, file paths, or HTTP/HTTPS URLs.
 
@@ -88,6 +119,8 @@ Used for the main title or top-level heading in a Markdown document.
 
 ## Header 2  
 Used to define major sections within your Markdown content.
+
+![WPF SfMarkdownViewer](Images/wpf-markdown-viewer-gettingstarted.png)
             ]]>
         </system:String>
     </markdown:SfMarkdownViewer.Source>
@@ -107,7 +140,9 @@ The MarkdownViewer control is used to render and preview Markdown files. It conv
 Used for the main title or top-level heading in a Markdown document. 
 
 ## Header 2  
-Used to define major sections within your Markdown content.";
+Used to define major sections within your Markdown content.
+
+![WPF SfMarkdownViewer](Images/wpf-markdown-viewer-gettingstarted.png)";
 
     public MainWindow()
     {
@@ -121,4 +156,4 @@ Used to define major sections within your Markdown content.";
 {% endhighlight %}
 {% endtabs %}
 
-![Output of Markdown Viewer](Images/wpf-markdown-viewer-gettingstarted.png)
+![WPF SfMarkdownViewer](Images/wpf-markdown-viewer-gettingstarted.png)
