@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load Markdown Content in WPF Markdown Viewer | Syncfusion
-description: Learn how to load Markdown content from various sources including strings, local files, URLs, and embedded resources in the Syncfusion WPF SfMarkdownViewer control.
+description: Learn how to load Markdown content from various sources (strings, local files, URLs) in the Syncfusion WPF SfMarkdownViewer control.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
@@ -72,7 +72,7 @@ Used to define major sections within your Markdown content.";
 
 ## Loading from Local File
 
-To load Markdown content from a local .md file, simply assign the file path to the Source property. The control automatically detects valid file paths and reads the file contents.
+To load Markdown content from a local markdown file, simply assign the file path to the Source property. The control automatically detects valid file paths and reads the file contents.
 
 **C#**
 

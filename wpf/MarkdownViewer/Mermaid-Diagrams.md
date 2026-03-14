@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Mermaid Diagrams in WPF Markdown Viewer (SfMarkdownViewer) | Syncfusion
+title: Mermaid Support in WPF Markdown Viewer | Syncfusion
 description: Learn here all about Mermaid Diagrams in Syncfusion MarkdownViewer control, its elements and more details.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
 ---
 
-## Mermaid Diagrams in WPF Markdown Viewer
+# Mermaid Support in WPF Markdown Viewer
  
 The [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMarkdownViewer.Wpf.html) control provides built-in support for rendering Mermaid diagrams and flowcharts within Markdown content. Mermaid is a JavaScript-based diagramming and charting tool that uses text-based definitions to create and modify diagrams dynamically.
  
@@ -22,14 +22,12 @@ The [MermaidBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
         <syncfusion:SfMarkdownViewer>
             <syncfusion:SfMarkdownViewer.MermaidBlockTemplate>
                 <DataTemplate x:Key="MermaidBlockTemplate">
-                <StackPanel>
                     <diagram:SfDiagram x:Name="mermaidDiagram" Foreground="Black"
                                  Height="600" Width="1000" Focusable="False"
                                  HorizontalAlignment="Left" 
                                  HorizontalContentAlignment="Left"
                                  Loaded="mermaidDiagram_Loaded">
                     </diagram:SfDiagram>
-                </StackPanel>
             </DataTemplate>
             </syncfusion:SfMarkdownViewer.MermaidBlockTemplate>
             <syncfusion:SfMarkdownViewer.Source>
