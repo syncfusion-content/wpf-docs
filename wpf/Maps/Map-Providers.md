@@ -148,7 +148,7 @@ The following code example demonstrates how to add multiple layers to an `Imager
 
 ## Bing Map
 
-The `Bing Map`s is a global mapping service provided by Microsoft. Similar to `OpenStreetMap` (OSM), it delivers map tile images based on user requests and combines them to render the required map area.
+The `Bing Maps` is a global mapping service provided by Microsoft. Similar to `OpenStreetMap` (OSM), it delivers map tile images based on user requests and combines them to render the required map area.
 
 ### Enable a Bing Map 
 
