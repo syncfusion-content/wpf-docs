@@ -264,6 +264,28 @@ The following screenshot illustrates the AerialWithLabel view.
 
 N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
 
+## Azure Maps
+
+`Azure Maps` is an online map tile provider from Microsoft. Similar to `OSM` and `Bing Maps,` it serves map tile images on request and composites them to display the map area.
+
+### Adding Azure Maps
+
+Azure Maps can be rendered by setting the `UrlTemplate` property with the tile server URL provided by the online map provider. A subscription key is required for Azure Maps.
+
+Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then add the key to the URL.
+
+N>
+* Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
+
+### Adding sublayer
+
+N>
+
+ * When `UrlTemplate` is set, the `ImageryLayer` gives first preference to loading map tiles from the specified URL and ignores `LayerType` and `BingMapKey` properties.
+
+ * If UrlTemplate is not set, the layer continues to use the configured `LayerType` (such as Bing Maps or OpenStreetMap), ensuring full backward compatibility.
+
+
 ## See also
 
 [How to show google map in WPF SfMap](https://support.syncfusion.com/kb/article/10441/how-to-show-google-map-in-wpf-map-sfmap)
