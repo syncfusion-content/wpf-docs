@@ -15,6 +15,10 @@ The [SfToastNotification](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 SfToastNotification is a **non-UI control**, meaning it doesn't require any XAML markup to be added to your UI. Instead, you can create and display toasts entirely through C# code in your application. This makes it lightweight and easy to integrate into any WPF application without modifying your UI layer.
 
+## Control structure
+
+![SfToastNotification control structure](Images/Control_Structure.png)
+
 ## Key features
 
 * **Multiple Display Modes** - Display toasts as native OS notifications, overlay notifications, or window-relative notifications.
@@ -27,27 +31,6 @@ SfToastNotification is a **non-UI control**, meaning it doesn't require any XAML
 * **Auto-Close Control** - Configurable duration with option to prevent automatic closing.
 * **Multiple Identification** - Support for custom toast IDs to track and manage specific notifications.
 * **Template Selectors** - DataTemplateSelector support for dynamic action button rendering.
-
-## How It Works
-
-Since SfToastNotification is a non-UI control, you initialize it once during application startup using the `WindowsToastBootstrapper` class:
-
-```csharp
-// In App.xaml.cs ApplicationStartup event
-WindowsToastBootstrapper.RemoveShortcutOnUnload = true;
-WindowsToastBootstrapper.Initialize("AppName", "AppVersion");
-```
-
-After initialization, you can display toasts from anywhere in your application using simple C# code:
-
-```csharp
-SfToastNotification.Show(this, new ToastOptions
-{
-    Title = "Success",
-    Message = "Operation completed!",
-    Duration = TimeSpan.FromSeconds(3)
-});
-```
 
 ## Architecture Overview
 
