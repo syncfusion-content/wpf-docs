@@ -9,15 +9,66 @@ documentation: ug
 
 # Selection in WPF DataGrid (SfDataGrid)
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) as [Row](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) or [Any](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html). In [SelectionUnit.Any](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) option you can select the row by clicking on row header.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionUnit) as [Row](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) or [Any](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html). In [SelectionUnit.Any](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) option you can select the row by clicking on row header.
 
-### Current Cell Navigation
+## Current Cell Navigation
 
 Keyboard navigation through the cells and rows is determined based on the [NavigationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_NavigationMode) property. [NavigationMode.Cell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.NavigationMode.html) allows you to navigate between the cells in a row as well as between rows. [NavigationMode.Row](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.NavigationMode.html) allows you to navigate only between rows. It is not possible to set `NavigationMode.Row` when cell selection is enabled (`SelectionUnit` is Cell or Any). 
 
-### Selection Modes
+## Selection Modes
 
-The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) properties together define the behavior of selection in SfDataGrid. If the `SelectionMode` is [Single](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can able to select single row or cell, and if the `SelectionMode` is `Extended` or `Multiple`, you can able to select multiple rows or cell, and if you want to disable the selection you need to set `SelectionMode` as `None`,
+The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) properties together define the behavior of selection in SfDataGrid.
+
+<table>
+<tr>
+<th>
+Modes
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+None
+</td>
+<td>
+Disables selection, and no rows or cells can be selected.
+</td>
+</tr>
+<tr>
+<td>
+Single
+</td>
+<td>
+Allows selection of a single row or cell. Upon selecting the next row or cell, the selection in the previous row or cell is cleared. This is the default value.
+</td>
+</tr>
+<tr>
+<td>
+SingleDeselect
+</td>
+<td>
+Allows selection of a single row or cell only. However, upon tapping the row or cell again, the selection is cleared. Similar to single mode, upon selecting the next row or cell, the selection in the previous row or cell is cleared. Also, single row or cell can be selected or deselected by pressing <kbd>space</kbd> key.
+</td>
+</tr>
+<tr>
+<td>
+Multiple
+</td>
+<td>
+Allows selection of more than one row or cell. Selection is not cleared when selecting more than one row or cell. When you click on an already selected row or cell for the second time, the selection is cleared.
+</td>
+</tr>
+<tr>
+<td>
+Extended
+</td>
+<td>
+Allows selecting multiple rows or cells. You can select multiple rows or cells in the SfDataGrid by dragging the mouse or by using the key modifiers <kbd>Ctrl</kbd> and <kbd>Shift</kbd>.
+</td>
+</tr>
+</table>
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,8 +82,7 @@ The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncf
 
 ![Single Row Selection in WPF DataGrid](Selection_images/wpf-datagrid-single-row-selection.png)
 
-
-### Disable selection for rows and columns
+## Disable selection for rows and columns
 
 You can disable selection and navigation on particular column by setting [GridColumn.AllowFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowFocus) property. You can disable selection on particular row or cell or column by handling [CurrentCellActivating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellActivating)  event. 
 
@@ -74,6 +124,109 @@ N> When the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 ## CheckBox column selection
 
 `SfDataGrid` allows you to select or deselect rows by interacting with the check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in the column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/wpf/datagrid/column-types#gridcheckboxselectorcolumn) documentation for more information.
+
+## Excel Like Selection
+The `SfDataGrid` provides built‑in support for **Excel‑Like Selection**, which can be enabled by setting the `EnableExcelLikeSelection` property to true.
+
+When Excel‑Like Selection is enabled, the following settings are required for proper functionality:
+* [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionUnit) must be set to `Any`.
+* [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) must be set to `Extended`.
+* [ShowRowHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowRowHeader) must be enabled.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       SelectionUnit="Any"
+                       SelectionMode="Extended"
+                       ShowRowHeader="True"
+                       EnableExcelLikeSelection="True"
+                       ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% endtabs %}
+
+When this feature is enabled, the following selection behaviors are supported:
+
+### Highlighting Header
+Selecting a cell highlights both its corresponding row and column header.
+
+![Cell Selection Header Highlights](Selection_images/wpf_datagrid_header_highlights.png)
+
+### Display Selection Frame
+If a cell or row is selected, a single border displayed around all selected cells. To display the selection frame, set the `ShowSelectionFrame` property to `true`. Default value is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       SelectionUnit="Any"
+                       SelectionMode="Extended"
+                       ShowRowHeader="True"
+                       ColumnHeaderClickAction="Select"
+                       EnableExcelLikeSelection="True"
+                       ShowSelectionFrame="True"
+                       ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% endtabs %}
+
+![SelectionFrame](Selection_images/wpf_dataGrid_selection_border.png)
+
+#### Customizing Selection Frame
+SelectionFrame `BorderThickness` and `BorderBrush` can be customized by modifying the control template of the SelectionFrameControl.
+
+{% tabs %}
+{% highlight xaml %}
+
+ <Style TargetType="syncfusion:SelectionFrameControl">
+     <Setter Property="BorderBrush" Value="Red"/>
+     <Setter Property="BorderThickness" Value="2"/>
+ </Style>
+
+{% endhighlight %}
+{% endtabs %}
+
+![SelectionFrame Customization](Selection_images/wpf_dataGrid_selectionFrame_customization.png)
+
+### Column Selection
+When a column header is clicked, all cells in that column are selected, and the row and column headers are highlighted.
+
+By default, clicking a column header performs a sorting operation. Sorting can be disabled and column selection enabled by setting the `ColumnHeaderClickAction` property to `Select`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       SelectionUnit="Any"
+                       SelectionMode="Extended"
+                       ShowRowHeader="True"
+                       ColumnHeaderClickAction="Select"
+                       EnableExcelLikeSelection="True"
+                       ShowSelectionFrame = "True"
+                       ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% endtabs %}
+
+![Column Selection](Selection_images/wpf_dataGrid_column_header_Selection.png)
+
+#### Column Header Click Action
+
+The ColumnHeaderClickAction supports the following options:
+* Sort - Sorting is performed when the column header is clicked.
+* Select - Clicking the column header selects all cells in that column.
+* Auto – When AllowSorting is disabled, clicking the column header selects the column. When AllowSorting is enabled, the header click performs a sorting operation.
+
+This allows you to configure whether clicking a column header sorts the data or selects the entire column.
+
+### Row Selection
+When Row header is clicked, all cells in that row are selected, and the row and column headers are highlighted.
+
+![Row Selection](Selection_images/wpf_dataGrid_row_header_selectoin.png)
+
+N> The `SelectionFrame` is displayed only when `ShowSelectionFrame` is enabled. Otherwise, when clicking on the row and column headers, the cells are selected, but the border is shown only around the current cell.
+
+### Limitations
+* Excel‑like selection is not supported when using any SelectionUnit or SelectionMode values other than the mentioned settings.
+* When grouping is enabled, clicking a column header does not select all cells in that column.
+* When selecting a Summary Rows, the corresponding row and column headers are not highlighted.
+* When performing drag or shift selection after grouping is applied, the selection border is rendered only if the selected cells belong to data rows.
+* If drag selection or Shift selection is performed after applying data operations such as sorting, filtering, or grouping, the selection border is shown only around the current cell.
 
 ## Get Selected Rows and Cells
 
