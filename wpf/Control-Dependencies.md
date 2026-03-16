@@ -9,7 +9,7 @@ documentation: ug
 
 # Control Dependencies in Syncfusion<sup>&reg;</sup>'s WPF Controls
 
-This section contains a list of assembly or NuGet references required to use any control in the  application. You can refer to the [installation and deployment section](https://help.syncfusion.com/wpf/installation-and-upgrade/system-requirements) to know about assembly installation location and [NuGet packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) section to know how to add NuGet reference.
+This section contains a list of assembly or NuGet references required to use any control in the  application. You can refer to the [installation and deployment section](https://help.syncfusion.com/wpf/installation-and-upgrade/system-requirements) to know about assembly installation location and [NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages) section to know how to add NuGet reference.
 
 You can refer to the [syncfusion controls section](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add syncfusion<sup>&reg;</sup> control.
 
@@ -1418,6 +1418,25 @@ Syncfusion.SfMaps.WPF
 </tr>
 </table>
 
+## SfMarkdownViewer
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfMarkdownViewer.WPF <br/>
+Syncfusion.Markdown <br/>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.SfMarkdownViewer.WPF
+</td>
+</tr>
+</table>
+
 ## SfMaskedEdit
 
 <table>
@@ -1732,6 +1751,23 @@ Syncfusion.SfSunburstChart.WPF
 </tr>
 </table>
 
+## SfTabControl
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChromelessWindow.WPF
+</td>
+<td> 
+Syncfusion.SfChromelessWindow.WPF
+</td>
+</tr>
+</table>
+
 ## SfTextboxExt
 
 <table>
@@ -1781,6 +1817,24 @@ Syncfusion.SfShared.WPF
 </td>
 <td> 
 Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SfToastNotification
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfToastNotification.WPF <br/>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.SfToastNotification.WPF
 </td>
 </tr>
 </table>
