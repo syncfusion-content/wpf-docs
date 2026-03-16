@@ -32,8 +32,6 @@ SfToastNotification.Show(this, new ToastOptions
 - Limited customization options
 - Best for critical system messages
 
-N> When `ToastMode = Default`, **NO customizations are applicable**. The toast uses native OS styling and behavior. Default mode does not accept any customization.
-
 ### 2. Window Mode
 
 Displays toast notifications within the owning window. Perfect for applications where you want toasts to stay within the application boundaries.
@@ -74,72 +72,117 @@ SfToastNotification.Show(this, new ToastOptions
 - Visible regardless of window state
 - Best for important application-wide events
 
-## Toast Variants and Severity
+## Severity Levels
 
-Toast notifications provide multiple severity levels with built‑in visual styling and offer three visual variants to suit different design preferences.
+Toast notifications support multiple severity levels that automatically apply appropriate visual styling.
 
-```
-xaml
+### Severity Levels Available
 
+| Level | Usage | Visual Style |
+|-------|-------|--------------|
+| **None** | Default state | Neutral colors |
+| **Info** | Informational messages | Blue/Neutral tones |
+| **Success** | Successful operations | Green colors |
+| **Warning** | Warning messages | Yellow/Orange colors |
+| **Error** | Error/failure messages | Red colors |
+
+### Example Usage
+
+```csharp
+// Info notification
+SfToastNotification.Show(this, new ToastOptions
+{
+    Title = "Information",
+    Message = "Your profile has been updated.",
+    Severity = ToastSeverity.Info
+});
+
+// Success notification
 SfToastNotification.Show(this, new ToastOptions
 {
     Title = "Success",
-    Message = "Variant applies filled style",
-    Severity = ToastSeverity.Success,
-    Variant = ToastVariant.Filled  
+    Message = "File saved successfully!",
+    Severity = ToastSeverity.Success
 });
 
-```
+// Warning notification
+SfToastNotification.Show(this, new ToastOptions
+{
+    Title = "Warning",
+    Message = "You have unsaved changes.",
+    Severity = ToastSeverity.Warning
+});
 
-### Variant Behavior with Severity
-
-| **Severity ↓ / Variant →** | **Text** | **Fill** | **Outlined** |
-|----------------------------|-----------|-----------|---------------|
-| **Info**                   | *Image Reference* | *Image Reference* | *Image Reference* |
-| **Success**                | *Image Reference* | *Image Reference* | *Image Reference* |
-| **Warning**                | *Image Reference* | *Image Reference* | *Image Reference* |
-| **Error**                  | *Image Reference* | *Image Reference* | *Image Reference* |
-
-## Accent Brush
-
-The AccentBrush property enables you to fine‑tune the appearance of toast notifications. After severity and variant are applied, you can use this property to customize the color accents and overall visual styling.
-
-### Accent Brush Behavior with Severity
-
-```
-// Accent brush IS applied (Severity = Error)
-// Customizes the error color styling
+// Error notification
 SfToastNotification.Show(this, new ToastOptions
 {
     Title = "Error",
-    Message = "Accent brush customizes error styling",
-    Severity = ToastSeverity.Error,
-    AccentBrush = new SolidColorBrush(Colors.Crimson)  // Applied
+    Message = "Operation failed. Please try again.",
+    Severity = ToastSeverity.Error
 });
 ```
 
-## Toast Placement Options
+## Toast Variants
 
-The Toast control supports multiple screen placement options, allowing notifications to appear at specific positions within the application window / screen. 
+The toast control supports three visual variants for different design preferences.
 
+### 1. Text Variant
 
-TopLeft – Displays the toast in the top‑left corner.
+Minimal, text-only appearance without background fill.
 
-TopCenter – Displays the toast centered at the top.
+```csharp
+SfToastNotification.Show(this, new ToastOptions
+{
+    Title = "Text Variant",
+    Message = "Simple text-only notification",
+    Variant = ToastVariant.Text
+});
+```
 
-TopRight – Displays the toast in the top‑right corner.
+### 2. Outlined Variant
 
-LeftCenter – Displays the toast vertically centered on the left edge.
+Border-based design with emphasis on outline styling.
 
-RightCenter – Displays the toast vertically centered on the right edge.
+```csharp
+SfToastNotification.Show(this, new ToastOptions
+{
+    Title = "Outlined Variant",
+    Message = "Toast with outlined border",
+    Variant = ToastVariant.Outlined
+});
+```
 
-BottomLeft – Displays the toast in the bottom‑left corner.
+### 3. Filled Variant
 
-BottomCenter – Displays the toast centered at the bottom.
+Full-colored background using the accent brush.
 
-BottomRight – Displays the toast in the bottom‑right corner.
+```csharp
+SfToastNotification.Show(this, new ToastOptions
+{
+    Title = "Filled Variant",
+    Message = "Toast with filled background",
+    Variant = ToastVariant.Filled,
+    AccentBrush = new SolidColorBrush(Colors.Blue)
+});
+```
 
-These placement options give you full control over where toast notifications appear in the UI, enabling you to tailor the experience to your app layout or user preferences.
+## Toast Placement
+
+The control supports nine different placement positions for displaying toasts on screen.
+
+### Available Positions
+
+```
+┌─────────────────────────────────────┐
+│ TopLeft    TopCenter    TopRight    │
+│                                     │
+│ LeftCenter                 RightCenter
+│                                     │
+│ BottomLeft BottomCenter BottomRight │
+└─────────────────────────────────────┘
+```
+
+### Placement Examples
 
 ```csharp
 // Top-Left corner
@@ -147,6 +190,22 @@ SfToastNotification.Show(this, new ToastOptions
 {
     Message = "Top-Left Position",
     Placement = ToastPlacement.TopLeft,
+    Mode = ToastMode.Screen
+});
+
+// Top-Center
+SfToastNotification.Show(this, new ToastOptions
+{
+    Message = "Top-Center Position",
+    Placement = ToastPlacement.TopCenter,
+    Mode = ToastMode.Screen
+});
+
+// Bottom-Right corner
+SfToastNotification.Show(this, new ToastOptions
+{
+    Message = "Bottom-Right Position",
+    Placement = ToastPlacement.BottomRight,
     Mode = ToastMode.Screen
 });
 ```
@@ -166,15 +225,21 @@ SfToastNotification.Show(this, new ToastOptions
     {
         new ToastAction
         {
-            Label = "Undo"
+            Label = "Undo",
+            Callback = () => UndoLastSave()
         },
         new ToastAction
         {
             Label = "OK",
+            CloseOnClick = true
         }
     }
 });
 
+private void UndoLastSave()
+{
+    // Implement undo logic
+}
 ```
 
 ### Action Button with Callback
@@ -240,7 +305,51 @@ SfToastNotification.CloseAll();
 
 ## Animation Types
 
-Toast notifications support 14+ built-in animations.
+Toast notifications support 14+ built-in animations:
+
+```csharp
+// Fade animations
+SfToastNotification.Show(this, new ToastOptions
+{
+    Message = "Fade effect",
+    ShowAnimationType = ToastAnimation.FadeIn,
+    CloseAnimationType = ToastAnimation.FadeOut
+});
+
+// Zoom animations
+SfToastNotification.Show(this, new ToastOptions
+{
+    Message = "Zoom effect",
+    ShowAnimationType = ToastAnimation.FadeZoomIn,
+    CloseAnimationType = ToastAnimation.FadeZoomOut
+});
+
+// Slide animations
+SfToastNotification.Show(this, new ToastOptions
+{
+    Message = "Slide effect",
+    ShowAnimationType = ToastAnimation.SlideBottomIn,
+    CloseAnimationType = ToastAnimation.SlideBottomOut
+});
+
+// Flip animations
+SfToastNotification.Show(this, new ToastOptions
+{
+    Message = "Flip effect",
+    ShowAnimationType = ToastAnimation.FlipLeftDownIn,
+    CloseAnimationType = ToastAnimation.FlipLeftDownOut
+});
+
+// No animation
+SfToastNotification.Show(this, new ToastOptions
+{
+    Message = "No animation",
+    ShowAnimationType = ToastAnimation.None,
+    CloseAnimationType = ToastAnimation.None
+});
+```
+
+### Available Animations
 
 | Animation | In | Out |
 |-----------|----|----|
@@ -252,28 +361,6 @@ Toast notifications support 14+ built-in animations.
 | **Flip Right Down** | FlipRightDownIn | FlipRightDownOut |
 | **None** | None | None |
 
-## Customization Reference
-
-This section provides a **complete reference** for all customization applicability rules.
-
-| Feature | Default Mode | Window/Screen + Severity=None | Window/Screen + Severity Levels |
-|---|---|---|---|
-| **Severity** (Info/Success/Warning/Error) | ❌ NO (OS controlled) | ✅ YES | ✅ YES |
-| **Variant** (Text/Outlined/Filled) | ❌ NO | ❌ NO (not applicable for None) | ✅ YES |
-| **AccentBrush** (Custom colors) | ❌ NO | ❌ NO (not applicable for None) | ✅ YES |
-| **Placement** (8 positions) | ❌ NO (OS managed) | ✅ YES | ✅ YES |
-| **Animations** (14+ types) | ❌ NO | ✅ YES | ✅ YES |
-| **Actions** (Interactive buttons) | ⚠️ LIMITED | ✅ YES | ✅ YES |
-| **Duration** (Auto-close timing) | ❌ NO | ✅ YES | ✅ YES |
-| **Title/Message** (Text content) | ✅ YES | ✅ YES | ✅ YES |
-
-**Key Points:**
-- ✅ Features marked **YES** are fully supported
-- ❌ Features marked **NO** are not supported
-- ⚠️ **LIMITED** means basic support only
-- **Variant** and **AccentBrush** require severity levels (not applicable when Severity = None)
-- **Placement**, **Animations**, **Actions** require Window/Screen modes (not available in Default mode)
-
 ## Summary
 
 | Concept | Purpose | Key Options |
@@ -281,9 +368,8 @@ This section provides a **complete reference** for all customization applicabili
 | **Modes** | Where toast appears | Default, Screen, Window |
 | **Severity** | Toast importance level | None, Info, Success, Warning, Error |
 | **Variants** | Visual styling | Text, Outlined, Filled |
-| **Accent Brush** | Custom color scheme | RGB colors |
-| **Placement** | Screen position | 8 positions |
+| **Placement** | Screen position | 9 positions available |
 | **Actions** | Interactive buttons | Custom labels and callbacks |
 | **Animations** | Show/hide effects | 14+ animation types |
-| **Duration** | Auto-close timing | Timespan in seconds |
 
+Master these core concepts to effectively use Toast Notifications in your applications!
