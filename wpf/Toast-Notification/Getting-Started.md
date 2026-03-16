@@ -22,6 +22,50 @@ There are several ways to add Syncfusion® control in to Visual Studio WPF proje
 
 Alternatively, you can install the **Syncfusion.SfToastNotification.WPF** NuGet package. This will automatically install all the required dependent assemblies.
 
+
+## Application Startup Configuration
+
+Import the control namespace **Syncfusion.UI.Xaml.SfToastNotification** in `App.xaml.cs` and initialize the WindowsToastBootstrapper in the `Application_Startup` event, as the SfToastNotification is a non-UI control that must be initialized during application startup.
+
+{% tabs %}
+{% highlight C# %}
+
+using System.Windows;
+using Syncfusion.UI.Xaml.SfToastNotification;
+
+namespace ToastNotificationDemo
+{
+    public partial class App : Application
+    {
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            // Initialize the Toast Notification bootstrapper
+            WindowsToastBootstrapper.RemoveShortcutOnUnload = true;
+            WindowsToastBootstrapper.Initialize("ToastNotificationDemo.App", "ToastNotificationDemo");
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+Configure the `Application_Startup` event in `App.xaml`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Application x:Class="ToastNotificationDemo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml"
+             Startup="Application_Startup">
+    <Application.Resources>
+    </Application.Resources>
+</Application>
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Adding WPF SfToastNotification 
 
 Since SfToastNotification is a non-UI control, you can create and display toasts entirely through only the C# code, it does not require any XAML configuration.
@@ -29,7 +73,6 @@ Since SfToastNotification is a non-UI control, you can create and display toasts
 You can display a basic toast notification with a title and message using the Show method.
 
 {% tabs %}
-
 {% highlight C# %}
 
 using System;
@@ -76,45 +119,6 @@ The SfToastNotification control supports three different display modes to suit v
 ### 1. Default Mode
 
 Uses the native operating system toast notifications. Ideal for applications that want to integrate with the OS notification system.
-
-#### Application Startup Configuration
-
-Import the control namespace **Syncfusion.UI.Xaml.SfToastNotification** in `App.xaml.cs` and initialize the WindowsToastBootstrapper in the `Application_Startup` event, as the SfToastNotification is a non‑UI control that must be initialized during application startup.
-
-{% tabs %}
-{% highlight XAML %}
-
-using System.Windows;
-using Syncfusion.UI.Xaml.SfToastNotification;
-
-namespace ToastNotificationDemo
-{
-    public partial class App : Application
-    {
-        private void Application_Startup(object sender, StartupEventArgs e)
-        {
-            // Initialize the Toast Notification bootstrapper
-            WindowsToastBootstrapper.RemoveShortcutOnUnload = true;
-            WindowsToastBootstrapper.Initialize("ToastNotificationDemo.App", "ToastNotificationDemo");
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight C# %}
-
-SfToastNotification.Show(this, new ToastOptions
-{
-    Title = "System Notification",
-    Message = "Using native OS toast",
-    Mode = ToastMode.Default
-});
-
-{% endhighlight %}
-{% endtabs %}
 
 **Characteristics:**
 - Native OS appearance and behavior
@@ -246,7 +250,7 @@ SfToastNotification.Show(this, new ToastOptions
     Message = "This toast has its close button disabled.",
     Mode = ToastMode.Screen,
     ShowCloseButton = false
-});
+}); 
 
 {% endhighlight %}
 {% endtabs %}

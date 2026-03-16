@@ -12,7 +12,7 @@ documentation: ug
 
 ## Toast Variants and Severity
 
-Toast notifications provide multiple severity levels with built‑in visual styling and offer three visual variants to suit different design preferences.
+Toast notifications provide multiple severity levels with built-in visual styling and offer three visual variants to suit different design preferences.
 
 {% tabs %}
 {% highlight C# %}
@@ -21,6 +21,7 @@ SfToastNotification.Show(this, new ToastOptions
 {
     Title = "Updates",
     Message = "Your project has been syncronized successfully",
+    Mode = ToastMode.Screen,
     Severity = ToastSeverity.Success,
     Variant = ToastVariant.Filled  
 });
@@ -34,14 +35,14 @@ SfToastNotification.Show(this, new ToastOptions
 
 | **Severity ↓ / Variant →** | **Text** | **Fill** | **Outlined** |
 |----------------------------|-----------|-----------|---------------|
-| **Info** | ![SfToastNotification Text Variant image](Images/TextVariant-image.png)  |  | ![SfToastNotification Outlined Variant image](Images/OutlineVariant-image.png) |
-| **Success**                | *Image Reference* | *Image Reference* | *Image Reference* |
-| **Warning**                | *Image Reference* | *Image Reference* | *Image Reference* |
-| **Error**                  | *Image Reference* | *Image Reference* | *Image Reference* |
+| **Info** | ![SfToastNotification Text Info image](Images/text-info-image.png)  | ![SfToastNotification Text Fill image](Images/fill-info-image.png) | ![SfToastNotification Outlined Info image](Images/outline-info-image.png) |
+| **Success**                | ![SfToastNotification Text Success image](Images/text-success-image.png) | ![SfToastNotification Filled Success image](Images/filled-success-image.png)  | ![SfToastNotification Outline Success image](Images/outline-success-image.png) |
+| **Warning**                | ![SfToastNotification Text Warning image](Images/text-warning-image.png) | ![SfToastNotification Fill Warning image](Images/fill-warning-image.png) | ![SfToastNotification Outline Warning image](Images/outline-warning-image.png)  |
+| **Error**                  | ![SfToastNotification Text Error image](Images/text-error-image.png) | ![SfToastNotification Fill Error image](Images/fill-error-image.png) | ![SfToastNotification Text Error image](Images/outline-error-image.png) |
 
 ## Accent Brush
 
-The AccentBrush property enables you to fine‑tune the appearance of toast notifications. After severity and variant are applied, you can use this property to customize the color accents and overall visual styling.
+The AccentBrush property enables you to fine-tune the appearance of toast notifications. After severity and variant are applied, you can use this property to customize the color accents and overall visual styling.
 
 ### Accent Brush Behavior with Severity
 
@@ -53,6 +54,7 @@ SfToastNotification.Show(this, new ToastOptions
 {
     Title = "Error",
     Message = "Accent brush customizes error styling",
+    Mode = ToastMode.Screen,
     Severity = ToastSeverity.Error,
     AccentBrush = new SolidColorBrush(Colors.Crimson)  // Applied
 });
@@ -60,25 +62,27 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
+![SfToastNotification Accent brush image](Images/accent-brush-image.png)
+
 ## Toast Placement Options
 
 The Toast control supports multiple screen placement options, allowing notifications to appear at specific positions within the application window / screen. 
 
-TopLeft – Displays the toast in the top‑left corner.
+TopLeft - Displays the toast in the top-left corner.
 
-TopCenter – Displays the toast centered at the top.
+TopCenter - Displays the toast centered at the top.
 
-TopRight – Displays the toast in the top‑right corner.
+TopRight - Displays the toast in the top-right corner.
 
-LeftCenter – Displays the toast vertically centered on the left edge.
+LeftCenter - Displays the toast vertically centered on the left edge.
 
-RightCenter – Displays the toast vertically centered on the right edge.
+RightCenter - Displays the toast vertically centered on the right edge.
 
-BottomLeft – Displays the toast in the bottom‑left corner.
+BottomLeft - Displays the toast in the bottom-left corner.
 
-BottomCenter – Displays the toast centered at the bottom.
+BottomCenter - Displays the toast centered at the bottom.
 
-BottomRight – Displays the toast in the bottom‑right corner.
+BottomRight - Displays the toast in the bottom-right corner.
 
 These placement options give you full control over where toast notifications appear in the UI, enabling you to tailor the experience to your app layout or user preferences.
 
@@ -160,5 +164,5 @@ This section provides a **complete reference** for all customization applicabili
 |---------|---------|------------|
 | **Severity** | Toast importance level | None, Info, Success, Warning, Error |
 | **Variants** | Visual styling | Text, Outlined, Filled |
-| **Placement** | Screen position | 9 positions available |
+| **Placement** | Screen position | 8 positions available |
 | **Animations** | Show/hide effects | 14+ animation types |

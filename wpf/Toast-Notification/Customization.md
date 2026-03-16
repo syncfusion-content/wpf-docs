@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Core Concepts of WPF Toast Notification | Syncfusion®
-description: Learn about core concepts of Syncfusion® WPF Toast Notification control including modes, severity levels, variants, and placement.
+title: Customization of WPF Toast Notification | Syncfusion®
+description: Learn about the various customization in Syncfusion Essential WPF Toast Notification control, its elements, and more.
 platform: wpf
 control: SfToastNotification
 documentation: ug
 ---
 
-# Dealing with ActionButtons
 
-## Action Buttons
+# Customization in WPF Toast Notification
+
+## Dealing with ActionButtons
 
 Toast notifications can include interactive action buttons:
 
