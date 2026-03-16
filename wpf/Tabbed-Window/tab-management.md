@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tab Management in WPF Tabbed Window | Syncfusion
-description: Manage tabs dynamically with close buttons, new tab creation, and tab selection.
+description: Manage tabs dynamically by supporting close buttons, creating new tabs, and updating the selected tab during interactions.
 platform: wpf
 control: TabbedWindow
 documentation: ug
