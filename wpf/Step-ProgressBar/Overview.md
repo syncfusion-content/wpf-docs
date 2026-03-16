@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About WPF Step ProgressBar control | Syncfusion<sup>&reg;</sup>;
+title: About WPF Step ProgressBar control | Syncfusion
 description: Learn here all about introduction of Syncfusion<sup>&reg;</sup>; WPF Step ProgressBar (SfStepProgressBar) control, its elements and more.
 platform: WPF
 control: SfStepProgressBar
