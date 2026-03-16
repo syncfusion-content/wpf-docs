@@ -56,7 +56,7 @@ SfToastNotification.Show(this, new ToastOptions
     Message = "Accent brush customizes error styling",
     Mode = ToastMode.Screen,
     Severity = ToastSeverity.Error,
-    AccentBrush = new SolidColorBrush(Colors.Crimson)  // Applied
+    AccentBrush = new SolidColorBrush(Colors.Violet)  // Applied
 });
 
 {% endhighlight %}
