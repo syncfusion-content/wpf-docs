@@ -15,8 +15,6 @@ The [SfToastNotification](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 SfToastNotification is a **non-UI control**, meaning it doesn't require any XAML markup to be added to your UI. Instead, you can create and display toasts entirely through C# code in your application. This makes it lightweight and easy to integrate into any WPF application without modifying your UI layer.
 
-## Control structure
-
 ![SfToastNotification control structure](Images/Control_Structure.png)
 
 ## Key features
