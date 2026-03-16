@@ -105,7 +105,7 @@ SfToastNotification.Show(this, new ToastOptions
 
 ## Animation Types
 
-Toast notifications support 14+ built-in animations:
+Toast notifications support 14 built-in animations:
 
 {% tabs %}
 {% highlight C# %}
@@ -165,4 +165,4 @@ This section provides a **complete reference** for all customization applicabili
 | **Severity** | Toast importance level | None, Info, Success, Warning, Error |
 | **Variants** | Visual styling | Text, Outlined, Filled |
 | **Placement** | Screen position | 8 positions available |
-| **Animations** | Show/hide effects | 14+ animation types |
+| **Animations** | Show/hide effects | 14 animation types |

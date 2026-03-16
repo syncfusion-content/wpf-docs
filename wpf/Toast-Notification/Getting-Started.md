@@ -22,8 +22,62 @@ There are several ways to add Syncfusion® control in to Visual Studio WPF proje
 
 Alternatively, you can install the **Syncfusion.SfToastNotification.WPF** NuGet package. This will automatically install all the required dependent assemblies.
 
+## Adding WPF SfToastNotification 
 
-## Application Startup Configuration
+Since SfToastNotification is a non-UI control, you can create and display toasts entirely through only the C# code, it does not require any XAML configuration.
+
+You can display a basic toast notification with a title and message using the Show method.
+
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.Windows;
+using Syncfusion.UI.Xaml.SfToastNotification;
+
+namespace ToastNotificationDemo
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // Show a simple information toast from any location in your application
+            SfToastNotification.Show(this, new ToastOptions
+            {
+                Title = "Welcome",
+                Message = "Hello! This is your first toast notification."
+            });
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfToastNotification image](Images/SimpleToast.png)
+
+N> For displaying default/native toast notifications, you must initialize the **WindowsToastBootstrapper** for your application in `App.xaml.cs`. This initialization is required for the OS level toast to work. Please refer to the [Application Startup Configuration](https://help.syncfusion.com/wpf/Toast-Notification/getting-started#application-startup-configuration) section to know more.
+
+The following properties allow you to set the textual content of the toast notification.
+- **Title**: Represents the bold text displayed at the top of the toast. This is typically used to summarize the purpose of the notification.
+- **Message**: Defines the main body text of the toast. This is the primary content that conveys the notification's information.
+- **Header**: Specifies an additional header displayed above or beside the message.
+This property applies only to in-app toast modes (Window and Screen) and is ignored in native (Default) mode.
+
+## Toast Modes
+
+The SfToastNotification control supports three different display modes to suit various application scenarios.
+
+### 1. Default Mode
+
+Uses the native operating system toast notifications. Ideal for applications that want to integrate with the OS notification system.
+
+#### Application Startup Configuration
 
 Import the control namespace **Syncfusion.UI.Xaml.SfToastNotification** in `App.xaml.cs` and initialize the WindowsToastBootstrapper in the `Application_Startup` event, as the SfToastNotification is a non-UI control that must be initialized during application startup.
 
@@ -66,67 +120,13 @@ Configure the `Application_Startup` event in `App.xaml`.
 {% endhighlight %}
 {% endtabs %}
 
-## Adding WPF SfToastNotification 
-
-Since SfToastNotification is a non-UI control, you can create and display toasts entirely through only the C# code, it does not require any XAML configuration.
-
-You can display a basic toast notification with a title and message using the Show method.
-
-{% tabs %}
-{% highlight C# %}
-
-using System;
-using System.Windows;
-using Syncfusion.UI.Xaml.SfToastNotification;
-
-namespace ToastNotificationDemo
-{
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            // Show a simple information toast from any location in your application
-            SfToastNotification.Show(this, new ToastOptions
-            {
-                Title = "Welcome",
-                Message = "Hello! This is your first toast notification."
-            });
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-
-![SfToastNotification image](Images/SimpleToast.png)
-
-The following properties allow you to set the textual content of the toast notification.
-- **Title**: Represents the bold text displayed at the top of the toast. This is typically used to summarize the purpose of the notification.
-- **Message**: Defines the main body text of the toast. This is the primary content that conveys the notification's information.
-- **Header**: Specifies an additional header displayed above or beside the message.
-This property applies only to in‑app toast modes (Window and Screen) and is ignored in native (Default) mode.
-
-## Toast Modes
-
-The SfToastNotification control supports three different display modes to suit various application scenarios.
-
-### 1. Default Mode
-
-Uses the native operating system toast notifications. Ideal for applications that want to integrate with the OS notification system.
-
 **Characteristics:**
 - Native OS appearance and behavior
 - System-level notifications
 - Limited customization options
 - Best for critical system messages
 
-N> When `ToastMode = Default`, **NO customizations are applicable**. The toast uses native OS styling and behavior. Default mode does not accept any customization.
+N> When `ToastMode = Default`, **No customizations are applicable**. The toast uses native OS styling and behavior. Default mode does not accept any customization.
 
 ### 2. Window Mode
 
