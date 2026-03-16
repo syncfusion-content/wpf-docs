@@ -24,14 +24,14 @@ To tear off a tab and create a floating window:
 1. Drag a tab outside the boundary of the tab control
 2. A new floating window is automatically created
 3. The tab is now contained in the new floating window
-4. The floating window can be positioned anywhere on screen
+4. The floating window can be a new tabbed window
 
 ### Enable Tear-Off
 
 Ensure `AllowDragDrop` is enabled, which is the prerequisite for tear-off functionality:
 
 ```xaml
-<syncfusion:TabbedWindow Title="Main Window" WindowType="Tabbed">
+<syncfusion:SfChromeslessWindow Title="Main Window" WindowType="Tabbed">
     <syncfusion:SfTabControl AllowDragDrop="True">
         <syncfusion:SfTabItem Header="Document 1" CloseButtonVisibility="Visible">
             <TextBlock Text="Drag this tab outside to tear it off" />
@@ -40,7 +40,7 @@ Ensure `AllowDragDrop` is enabled, which is the prerequisite for tear-off functi
             <TextBlock Text="Each tab can be independently floated" />
         </syncfusion:SfTabItem>
     </syncfusion:SfTabControl>
-</syncfusion:TabbedWindow>
+</syncfusion:SfChromeslessWindow>
 ```
 
 ### Reattaching Floating Tabs
@@ -68,7 +68,6 @@ The `PreviewTabMerge` event fires before a tab is moved between windows, allowin
 ```xaml
 <syncfusion:SfTabControl 
     AllowDragDrop="True"
-    TearOffGroupId="DocumentGroup"
     PreviewTabMerge="OnPreviewTabMerge">
     <!-- Tab items -->
 </syncfusion:SfTabControl>

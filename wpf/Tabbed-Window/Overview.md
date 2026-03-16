@@ -3,22 +3,13 @@ layout: post
 title: About WPF Tabbed Window | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Tabbed Window control, combining SfChromelessWindow with SfTabControl for document management.
 platform: wpf
-control: TabbedWindow
+control: SfTabControl
 documentation: ug
 ---
 
 # WPF Tabbed Window Overview
 
 The Tabbed Window is a powerful combination of SfChromelessWindow and SfTabControl that enables you to create professional document-based applications with advanced tab management. It provides a modern, browser-style interface with features like drag-drop reordering, tear-off floating windows, and cross-window tab merging.
-
-## Control Structure
-
-The Tabbed Window architecture combines the customizable window frame of SfChromelessWindow with the comprehensive tab management capabilities of SfTabControl:
-
-- **Window Frame** - Chromeless window providing custom title bar and window chrome
-- **Tab Bar** - Contains individual tabs with close buttons, new tab button, and overflow handling
-- **Content Area** - Displays content for the selected tab
-- **Tab Items** - Individual tab items with headers, icons, and content templates
 
 ## Key Features
 
@@ -41,14 +32,4 @@ The Tabbed Window architecture combines the customizable window frame of SfChrom
 * **Modern Styling** - Built-in Syncfusion themes and comprehensive styling support.
 
 * **Event-Driven Architecture** - Comprehensive events for tab operations, merging, selection changes, and adding new tabs.
-
-## Typical Use Cases
-
-Tabbed Window is ideal for:
-- **Document Management** - IDE-style applications with multiple open documents
-- **Multi-Tab Browsers** - Web browser-like applications with tab reordering
-- **Project Explorers** - Development tools with flexible tab organization
-- **Dashboard Applications** - Analytics platforms with customizable dashboard tabs
-- **Content Managers** - Applications managing multiple content streams
-- **Research Tools** - Applications requiring flexible data organization across windows
 
