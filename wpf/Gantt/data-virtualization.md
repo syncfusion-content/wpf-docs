@@ -22,7 +22,7 @@ This approach ensures optimal performance even when working with thousands of ta
 
 ## Enable Timeline Virtualization
 
-You can enable timeline virtualization by setting the `EnableTimelineVirtualization` property to `true` in WPF `GanttControl`. 
+You can enable timeline virtualization by setting the [`EnableTimelineVirtualization`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_EnableTimelineVirtualization) property to `true` in WPF [`GanttControl`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html). 
 
 {% tabs %}
 {% highlight xaml hl_lines="3" %}
