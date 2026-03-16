@@ -37,8 +37,6 @@ public class MainViewModel : NotificationObject {
 }
 {% endhighlight %}
 
-{% tabs %}
-
 {% highlight XAML %}
 <Window.DataContext>
   <local:MainViewModel />
