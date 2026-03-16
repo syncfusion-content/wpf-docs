@@ -478,6 +478,25 @@ Syncfusion.SfImageEditor.WPF
 </tr>
 </table>
 
+## MarkdownViewer
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfMarkdownViewer.WPF <br/>
+Syncfusion.Markdown <br/>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.SfMarkdownViewer.WPF
+</td>
+</tr>
+</table>
+
 ## MaskedTextBox
 
 <table>
