@@ -2,14 +2,14 @@
 layout: post
 title: DeepSeek AI for AI-Powered Components | Syncfusion®
 description: Learn how to integrate the DeepSeek AI services with Syncfusion<sup>&reg;</sup> AI-Powered Components.
-platform: maui
+platform: wpf
 control: SmartComponents
 documentation: ug
 ---
 
-# DeepSeek AI Integration with .NET MAUI Smart Components
+# DeepSeek AI Integration with WPF Smart Components
 
-The Syncfusion .NET MAUI AI-powered components can enhance applications with intelligent capabilities. You can integrate DeepSeek using the `IChatInferenceService` interface, which standardizes communication between the editor and your custom AI service.
+The Syncfusion WPF AI-powered components can enhance applications with intelligent capabilities. You can integrate DeepSeek using the `IChatInferenceService` interface, which standardizes communication between the editor and your custom AI service.
 
 ## Setting Up DeepSeek
 
@@ -155,7 +155,7 @@ public class DeepSeekInferenceService : IChatInferenceService
 {% endhighlight %}
 {% endtabs %}
 
-## Register Services in MAUI
+## Register Services in WPF
 
 Update `App.xaml.cs`:
 

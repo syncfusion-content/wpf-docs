@@ -68,7 +68,7 @@ public class GeminiChatParameters
 
 Create a service class to handle `Gemini API` calls, including authentication, request/response handling, and safety settings.
 
-1. Create a `Services` folder in your MAUI project.
+1. Create a `Services` folder in your WPF project.
 2. Add a new file named `GeminiService.cs` in the Services folder.
 3. Implement the service as shown below:
 
@@ -179,7 +179,7 @@ public class GeminiInferenceService : IChatInferenceService
 {% endhighlight %}
 {% endtabs %}
 
-## Register Services in MAUI
+## Register Services in WPF
 
 Update `App.xaml.cs`:
 

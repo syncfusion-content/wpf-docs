@@ -81,10 +81,10 @@ Here are examples of AI services integrated using the `IChatInferenceService` in
 
 | Service | Documentation |
 |---------|---------------|
-| Claude | [Claude Integration](https://help.syncfusion.com/maui/common/claude-service) |
-| DeepSeek | [DeepSeek Integration](https://help.syncfusion.com/maui/common/deepseek-service) |
-| Groq | [Groq Integration](https://help.syncfusion.com/maui/common/groq-service) |
-| Gemini | [Gemini Integration](https://help.syncfusion.com/maui/common/gemini-service) |
+| Claude | [Claude Integration](https://help.syncfusion.com/wpf/common/claude-service) |
+| DeepSeek | [DeepSeek Integration](https://help.syncfusion.com/wpf/common/deepseek-service) |
+| Groq | [Groq Integration](https://help.syncfusion.com/wpf/common/groq-service) |
+| Gemini | [Gemini Integration](https://help.syncfusion.com/wpf/common/gemini-service) |
 
 ## Troubleshooting
 

@@ -95,7 +95,6 @@ using Microsoft.Extensions.AI;
 using OpenAI;
 using Syncfusion.UI.Xaml.SmartComponents;
 
-var builder = MauiApp.CreateBuilder();
 
 ....
 
@@ -111,9 +110,9 @@ var openAIClient = new OpenAIClient(
     });
 
 IChatClient openAIChatClient = openAIClient.GetChatClient(openAIModel).AsIChatClient();
-builder.Services.AddChatClient(openAIClient);
+SyncfusionAIExtension.Services.AddChatClient(openAIClient);
 
-builder.ConfigureSyncfusionAIServices();
+SyncfusionAIExtension.ConfigureSyncfusionAIServices();
 
 {% endhighlight %}
 {% endtabs %}
