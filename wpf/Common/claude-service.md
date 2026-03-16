@@ -139,7 +139,7 @@ Create `ClaudeInferenceService.cs`:
 {% tabs %}
 {% highlight c# tabtitle="ClaudeInferenceService.cs" %}
 
-using Syncfusion.Maui.SmartComponents;
+using Syncfusion.UI.Xaml.SmartComponents;
 
 public class ClaudeInferenceService : IChatInferenceService
 {
@@ -159,23 +159,17 @@ public class ClaudeInferenceService : IChatInferenceService
 {% endhighlight %}
 {% endtabs %}
 
-## Register Services in MAUI
+## Register Services in WPF
 
-Update `MauiProgram.cs`:
+Update `App.xaml.cs`:
 
 {% tabs %}
-{% highlight c# tabtitle="MauiProgram.cs" hl_lines="9 10" %}
+{% highlight c# tabtitle="App.xaml.cs" hl_lines="9 10" %}
 
-using Syncfusion.Maui.Core.Hosting;
-using Syncfusion.Maui.SmartComponents;
+using Syncfusion.UI.Xaml.SmartComponents;
 
-var builder = MauiApp.CreateBuilder();
-builder
-    .UseMauiApp<App>()
-    .ConfigureSyncfusionCore();
-
-builder.Services.AddSingleton<ClaudeAIService>();
-builder.Services.AddSingleton<IChatInferenceService, ClaudeInferenceService>();
+SyncfusionAIExtension.Services.AddSingleton<ClaudeAIService>();
+SyncfusionAIExtension.Services.AddSingleton<IChatInferenceService, ClaudeInferenceService>();
 
 
 {% endhighlight %}
