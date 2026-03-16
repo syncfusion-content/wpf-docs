@@ -105,7 +105,9 @@ SfToastNotification.Show(this, new ToastOptions
 
 ## Animation Types
 
-Toast notifications support 14 built-in animations:
+The Toast notification control supports a variety of built-in animations that define how notifications appear and disappear on the screen. These animations enhance the user experience by providing smooth transition effects when showing or hiding toast notifications. You can choose from multiple animation types, such as fade, slide, flip, and zoom to match the interaction style of your application.
+ 
+You can configure the show and hide animations individually, allowing full control over the visual behavior of toast notifications.
 
 {% tabs %}
 {% highlight C# %}
@@ -146,7 +148,7 @@ This section provides a **complete reference** for all customization applicabili
 | **Variant** (Text/Outlined/Filled) | ❌ NO | ❌ NO (not applicable for None) | ✅ YES |
 | **AccentBrush** (Custom colors) | ❌ NO | ❌ NO (not applicable for None) | ✅ YES |
 | **Placement** (8 positions) | ❌ NO (OS managed) | ✅ YES | ✅ YES |
-| **Animations** (14+ types) | ❌ NO | ✅ YES | ✅ YES |
+| **Animations** (Show/Hide toast effects) | ❌ NO | ✅ YES | ✅ YES |
 | **Actions** (Interactive buttons) | ⚠️ LIMITED | ✅ YES | ✅ YES |
 | **Duration** (Auto-close timing) | ❌ NO | ✅ YES | ✅ YES |
 | **Title/Message** (Text content) | ✅ YES | ✅ YES | ✅ YES |
@@ -165,4 +167,4 @@ This section provides a **complete reference** for all customization applicabili
 | **Severity** | Toast importance level | None, Info, Success, Warning, Error |
 | **Variants** | Visual styling | Text, Outlined, Filled |
 | **Placement** | Screen position | 8 positions available |
-| **Animations** | Show/hide effects | 14 animation types |
+| **Animations** | Show/hide effects | Built-in animation types |

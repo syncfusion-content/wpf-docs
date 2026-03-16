@@ -126,7 +126,7 @@ Configure the `Application_Startup` event in `App.xaml`.
 - Limited customization options
 - Best for critical system messages
 
-N> When `ToastMode = Default`, **No customizations are applicable**. The toast uses native OS styling and behavior. Default mode does not accept any customization.
+N> When `ToastMode = Default`, **No customizations are applicable**. The toast uses native OS styling and behavior. Default mode does not accept any customization. This native toast supports only for windows 10 or higher versions.
 
 ### 2. Window Mode
 

@@ -24,8 +24,8 @@ SfToastNotification is a **non-UI control**, meaning it doesn't require any XAML
 * **Multiple Display Modes** - Display toasts as native OS notifications, overlay notifications, or window-relative notifications.
 * **Severity Levels** - Support for Info, Success, Warning, and Error severity levels with corresponding visual indicators.
 * **Rich Styling** - Multiple visual variants (Text, Outlined, Filled) and customizable accent colors.
-* **Flexible Positioning** - Display toasts at 9 different screen positions (Top-Left, Top-Center, Top-Right, Left-Center, Right-Center, Bottom-Left, Bottom-Center, Bottom-Right, Center).
-* **Animation Support** - 14+ built-in animations for toast show/hide effects (Fade, Slide, Flip, Zoom).
+* **Flexible Positioning** - Display toasts at 8 different screen positions (Top-Left, Top-Center, Top-Right, Left-Center, Right-Center, Bottom-Left, Bottom-Center, Bottom-Right, Center).
+* **Animation Support** - Built-in animations for toast show/hide effects (Fade, Slide, Flip, Zoom).
 * **Custom Actions** - Add interactive action buttons with custom callbacks for user interactions.
 * **Custom Templates** - Fully customizable content, title, close button, and action button templates.
 * **Auto-Close Control** - Configurable duration with option to prevent automatic closing.
