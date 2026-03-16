@@ -478,25 +478,6 @@ Syncfusion.SfImageEditor.WPF
 </tr>
 </table>
 
-## MarkdownViewer
-
-<table>
-<tr>
-<th>Assembly references </th>
-<th>NuGet package </th>
-</tr>
-<tr>
-<td> 
-Syncfusion.SfMarkdownViewer.WPF <br/>
-Syncfusion.Markdown <br/>
-Syncfusion.Shared.WPF
-</td>
-<td> 
-Syncfusion.SfMarkdownViewer.WPF
-</td>
-</tr>
-</table>
-
 ## MaskedTextBox
 
 <table>
@@ -1437,6 +1418,25 @@ Syncfusion.SfMaps.WPF
 </tr>
 </table>
 
+## SfMarkdownViewer
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfMarkdownViewer.WPF <br/>
+Syncfusion.Markdown <br/>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.SfMarkdownViewer.WPF
+</td>
+</tr>
+</table>
+
 ## SfMaskedEdit
 
 <table>
@@ -1751,6 +1751,23 @@ Syncfusion.SfSunburstChart.WPF
 </tr>
 </table>
 
+## SfTabControl
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChromelessWindow.WPF
+</td>
+<td> 
+Syncfusion.SfChromelessWindow.WPF
+</td>
+</tr>
+</table>
+
 ## SfTextboxExt
 
 <table>
@@ -1800,6 +1817,24 @@ Syncfusion.SfShared.WPF
 </td>
 <td> 
 Syncfusion.SfInput.WPF
+</td>
+</tr>
+</table>
+
+## SfToastNotification
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfToastNotification.WPF <br/>
+Syncfusion.Shared.WPF 
+</td>
+<td> 
+Syncfusion.SfToastNotification.WPF
 </td>
 </tr>
 </table>
