@@ -22,50 +22,16 @@ There are several ways to add Syncfusion® control in to Visual Studio WPF proje
 
 Alternatively, you can install the **Syncfusion.SfToastNotification.WPF** NuGet package. This will automatically install all the required dependent assemblies.
 
-## Initializing the Toast Notification
-
-### Application Startup Configuration
-
-Import the control namespace **Syncfusion.UI.Xaml.SfToastNotification** in `App.xaml.cs` and initialize the WindowsToastBootstrapper in the `Application_Startup` event, as the SfToastNotification is a non‑UI control that must be initialized during application startup.
-
-```csharp
-using System.Windows;
-using Syncfusion.UI.Xaml.SfToastNotification;
-
-namespace ToastNotificationDemo
-{
-    public partial class App : Application
-    {
-        private void Application_Startup(object sender, StartupEventArgs e)
-        {
-            // Initialize the Toast Notification bootstrapper
-            WindowsToastBootstrapper.RemoveShortcutOnUnload = true;
-            WindowsToastBootstrapper.Initialize("ToastNotificationDemo.App", "ToastNotificationDemo");
-        }
-    }
-}
-```
-
-Configure the `Application_Startup` event in `App.xaml`.
-
-```xaml
-<Application x:Class="ToastNotificationDemo.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="MainWindow.xaml"
-             Startup="Application_Startup">
-    <Application.Resources>
-    </Application.Resources>
-</Application>
-```
-
-## Adding WPF SfToastNotification - Code behind only
+## Adding WPF SfToastNotification 
 
 Since SfToastNotification is a non-UI control, you can create and display toasts entirely through only the C# code, it does not require any XAML configuration.
 
 You can display a basic toast notification with a title and message using the Show method.
 
-```csharp
+{% tabs %}
+
+{% highlight C# %}
+
 using System;
 using System.Windows;
 using Syncfusion.UI.Xaml.SfToastNotification;
@@ -90,7 +56,10 @@ namespace ToastNotificationDemo
         }
     }
 }
-```
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ![SfToastNotification image](Images/SimpleToast.png)
 
@@ -108,14 +77,44 @@ The SfToastNotification control supports three different display modes to suit v
 
 Uses the native operating system toast notifications. Ideal for applications that want to integrate with the OS notification system.
 
-```csharp
+#### Application Startup Configuration
+
+Import the control namespace **Syncfusion.UI.Xaml.SfToastNotification** in `App.xaml.cs` and initialize the WindowsToastBootstrapper in the `Application_Startup` event, as the SfToastNotification is a non‑UI control that must be initialized during application startup.
+
+{% tabs %}
+{% highlight XAML %}
+
+using System.Windows;
+using Syncfusion.UI.Xaml.SfToastNotification;
+
+namespace ToastNotificationDemo
+{
+    public partial class App : Application
+    {
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            // Initialize the Toast Notification bootstrapper
+            WindowsToastBootstrapper.RemoveShortcutOnUnload = true;
+            WindowsToastBootstrapper.Initialize("ToastNotificationDemo.App", "ToastNotificationDemo");
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
 SfToastNotification.Show(this, new ToastOptions
 {
     Title = "System Notification",
     Message = "Using native OS toast",
     Mode = ToastMode.Default
 });
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Characteristics:**
 - Native OS appearance and behavior
@@ -123,18 +122,24 @@ SfToastNotification.Show(this, new ToastOptions
 - Limited customization options
 - Best for critical system messages
 
+N> When `ToastMode = Default`, **NO customizations are applicable**. The toast uses native OS styling and behavior. Default mode does not accept any customization.
+
 ### 2. Window Mode
 
 Displays toast notifications within the owning window. Perfect for applications where you want toasts to stay within the application boundaries.
 
-```csharp
+{% tabs %}
+{% highlight C# %}
+
 SfToastNotification.Show(this, new ToastOptions
 {
     Title = "Window Toast",
     Message = "This notification appears within the window",
     Mode = ToastMode.Window
 });
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Characteristics:**
 - Constrained to window boundaries
@@ -146,14 +151,18 @@ SfToastNotification.Show(this, new ToastOptions
 
 Displays custom toast overlay globally across the screen. Useful for application-wide notifications that should be visible regardless of window focus.
 
-```csharp
+{% tabs %}
+{% highlight C# %}
+
 SfToastNotification.Show(this, new ToastOptions
 {
     Title = "Global Notification",
     Message = "This notification appears globally on screen",
     Mode = ToastMode.Screen
 });
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Characteristics:**
 - Global screen-level display
@@ -167,7 +176,9 @@ N> The Window and Screen modes are in-app modes and support extensive customizat
 
 You can use the Duration property to specify how long the toast remains visible. The default display duration is 6 seconds.
 
-```csharp
+{% tabs %}
+{% highlight C# %}
+
 // Toast with 10 second duration
 SfToastNotification.Show(this, new ToastOptions
 {
@@ -176,13 +187,17 @@ SfToastNotification.Show(this, new ToastOptions
     Mode = ToastMode.Screen,
     Duration = TimeSpan.FromSeconds(10)
 });
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Toast without Auto-Close
 
 You can control whether a toast closes automatically by using the **PreventAutoClose** property.
 
-```csharp
+{% tabs %}
+{% highlight C# %}
+
 // Toast remains until user closes it manually
 SfToastNotification.Show(this, new ToastOptions
 {
@@ -191,13 +206,17 @@ SfToastNotification.Show(this, new ToastOptions
     Mode = ToastMode.Screen,
     PreventAutoClose = true  
 });
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Action Button
 
 You can set whether the action button row is visible in the toast by using the **ShowActionButtons** property. The default value is true, which displays the action buttons for in-app toasts modes (Window and Screen).
 
-```csharp
+{% tabs %}
+{% highlight C# %}
+
 // Toast with-out action buttons
 SfToastNotification.Show(this, new ToastOptions
 {
@@ -207,7 +226,9 @@ SfToastNotification.Show(this, new ToastOptions
     Mode = ToastMode.Screen,
     ShowActionButtons = false
 });
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ![SfToastNotification Action Button](Images/ActionButton-image.png)
 
@@ -215,7 +236,9 @@ SfToastNotification.Show(this, new ToastOptions
 
 You can use the **ShowCloseButton** property to specify whether the close button is visible for the toast. The close button is available only in in-app toasts (Window and Screen modes). The default value is true.
 
-```csharp
+{% tabs %}
+{% highlight C# %}
+
 // Toast with the close button hidden
 SfToastNotification.Show(this, new ToastOptions
 {
@@ -224,7 +247,9 @@ SfToastNotification.Show(this, new ToastOptions
     Mode = ToastMode.Screen,
     ShowCloseButton = false
 });
-```
+
+{% endhighlight C# %}
+{% endtabs %}
 
 ![SfToastNotification Close Button](Images/CloseButton-image.png)
 
@@ -241,7 +266,9 @@ Understanding the lifecycle of a toast helps in managing notifications effective
 
 ### Managing Toast Lifecycle
 
-```csharp
+{% tabs %}
+{% highlight C# %}
+
 // Create a toast with custom ID
 var options = new ToastOptions
 {
@@ -259,7 +286,9 @@ SfToastNotification.Close("unique-toast-id");
 
 // Close all toasts
 SfToastNotification.CloseAll();
-```
+
+{% endhighlight%}
+{% endtabs %}
 
 ## Theme
 
