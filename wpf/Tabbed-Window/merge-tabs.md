@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merge Tabs Between Windows in WPF Tabbed Window | Syncfusion
-description: Move tabs between multiple tabbed windows and control merge operations with validation.
+description: Move tabs between multiple tabbed windows and manage merge operations with validation to ensure correct behavior.
 platform: wpf
 control: TabbedWindow
 documentation: ug

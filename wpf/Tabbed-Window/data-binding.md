@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WPF Tabbed Window | Syncfusion
-description: Bind tabs to collections using ItemsSource for MVVM-based tabbed window scenarios.
+description: Bind tabs to a collections using the ItemsSource property to support for MVVM-based tabbed window scenarios.
 platform: wpf
 control: TabbedWindow
 documentation: ug
