@@ -248,14 +248,14 @@ SfToastNotification.Show(this, new ToastOptions
     ShowCloseButton = false
 });
 
-{% endhighlight C# %}
+{% endhighlight %}
 {% endtabs %}
 
 ![SfToastNotification Close Button](Images/CloseButton-image.png)
 
-## Toast Lifecycle
+## Toast Life cycle
 
-Understanding the lifecycle of a toast helps in managing notifications effectively.
+Understanding the life cycle of a toast helps in managing notifications effectively.
 
 ### States
 
@@ -264,7 +264,7 @@ Understanding the lifecycle of a toast helps in managing notifications effective
 3. **Duration** - Toast remains visible for specified duration
 4. **Dismissal** - Toast closes via auto-close timeout, close button, or programmatic close
 
-### Managing Toast Lifecycle
+### Managing Toast Life cycle
 
 {% tabs %}
 {% highlight C# %}
@@ -287,7 +287,7 @@ SfToastNotification.Close("unique-toast-id");
 // Close all toasts
 SfToastNotification.CloseAll();
 
-{% endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 ## Theme

@@ -41,7 +41,7 @@ The SfToastNotification control uses a service-based architecture:
 - **ToastOptions** - Configuration class defining toast appearance and behavior
 - **ToastItem** - Visual representation of a single toast instance
 - **ToastAction** - Interactive action button definition
-- **ToastService** - Internal service managing toast lifecycle
+- **ToastService** - Internal service managing toast life cycle
 
 ## When to use Toast Notifications
 

@@ -7,7 +7,7 @@ control: SfToastNotification
 documentation: ug
 ---
 
-# Core Concepts
+# Dealing with ActionButtons
 
 ## Action Buttons
 

@@ -2,7 +2,7 @@
 layout: post
 title: Appearance and Styling in WPF Toast Notification control | Syncfusion®
 description: Learn here all about Appearance and Styling support in Syncfusion® WPF Toast Notification (SfToastNotification) control and more.
-platform: WPF
+platform: wpf
 control: SfToastNotification
 documentation: ug
 
