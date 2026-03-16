@@ -2,7 +2,7 @@
 layout: post
 title: Tab Management in WPF Tabbed Window | Syncfusion
 description: Manage tabs dynamically with close buttons, new tab creation, and tab selection.
-platform: WPF
+platform: wpf
 control: TabbedWindow
 documentation: ug
 ---
@@ -100,7 +100,7 @@ private void OnNewTabRequested(object sender, NewTabRequestedEventArgs e)
 
 ### Customization of New tab button
 
-`NewTabButtonStyle` targets the internal `Button` used for the new‑tab affordance and controls visual properties such as size, background, border and padding without replacing the element tree. 
+`NewTabButtonStyle` targets the internal `Button` used for the new‑tab afford and controls visual properties such as size, background, border and padding without replacing the element tree. 
 
 {% tabs %}
 

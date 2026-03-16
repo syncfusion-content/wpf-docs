@@ -2,7 +2,7 @@
 layout: post
 title: Merge Tabs Between Windows in WPF Tabbed Window | Syncfusion
 description: Move tabs between multiple tabbed windows and control merge operations with validation.
-platform: WPF
+platform: wpf
 control: TabbedWindow
 documentation: ug
 ---
@@ -49,8 +49,6 @@ Ensure `AllowDragDrop` is enabled, which is the prerequisite for tear-off functi
 {% endhighlight %}
 
 {% endtabs %}
-
-![WPF Tear-Off TabbedWindow](merge-tabs_images/tear-off-tabbedwindow.gif)
 
 ### Reattaching Floating Tabs
 
@@ -122,8 +120,6 @@ private void OnPreviewTabMerge(object sender, TabMergePreviewEventArgs e)
 {% endhighlight %}
 
 {% endtabs %}
-
-![WPF PreviewTabMerge](merge-tabs_images/tabbedwindow-merging.gif)
 
 ## PreviewTabMergeEventArgs Properties
 
