@@ -324,3 +324,4 @@ badge.Content = "99+";
 ![WPF Badge Content Alignment](Getting-Started_images/wpf-badge-content-alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
+
