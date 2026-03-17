@@ -100,7 +100,7 @@ private void OnNewTabRequested(object sender, NewTabRequestedEventArgs e)
 
 {% endtabs %}
 
-![WPF TabbedWindow New Tab Button](tab-management_images/tabbedwindow_closebutton.gif)
+![WPF TabbedWindow New Tab Button](tab-management_images/tabbedwindow_newbutton.gif)
 
 ### Customization of New tab button
 
