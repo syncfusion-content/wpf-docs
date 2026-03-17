@@ -19,6 +19,7 @@ The `OpenStreetMap` (OSM) is a map of the world built by a community of mappers 
 
 You can enable this feature by setting the [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_LayerType) property value as [`OSM`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.LayerType.html#fields).
 
+{% tabs %}
 {% highlight xaml hl_lines="2 3 4" %}
  
 <syncfusion:SfMap ZoomLevel="3">
@@ -28,6 +29,17 @@ You can enable this feature by setting the [`LayerType`](https://help.syncfusio
 </syncfusion:SfMap>
        
 {% endhighlight %}
+{% highlight c# hl_lines="3 4 5" %}
+
+SfMap map = new SfMap();
+map.ZoomLevel = 3;
+ImageryLayer layer = new ImageryLayer();
+layer.LayerType = LayerType.OSM;
+map.Layers.Add(layer);             
+this.Content = map;
+
+{% endhighlight %}
+{% endtabs %}
 
 ![OSM map image](Map-Providers_images/OSM_Map_image.png)
 
@@ -36,7 +48,7 @@ You can enable this feature by setting the [`LayerType`](https://help.syncfusio
 The [`Markers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_Markers) are used to mark important locations on the map and provide contextual information through icons, labels, or messages.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml hl_lines="3" %}
 
 <syncfusion:SfMap x:Name="map">
     <syncfusion:SfMap.Layers>
@@ -50,26 +62,26 @@ The [`Markers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.Image
 {% endhighlight %}
 {% highlight c# %}
 
-    public class Model
-    {
-        public string Name { get; set; }
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
-    }
+public class Model
+{
+    public string Name { get; set; }
+    public string Longitude { get; set; }
+    public string Latitude { get; set; }
+}
 
-    public class MapViewModel
+public class MapViewModel
+{
+    public ObservableCollection<Model> Markers { get; set; }
+    public MapViewModel()
     {
-        public ObservableCollection<Model> Markers { get; set; }
-        public MapViewModel()
-        {
-            this.Markers = new ObservableCollection<Model>();
-            this.Markers.Add(new Model() { Name = "USA ", Latitude = "38.8833N", Longitude = "77.0167W" });
-            this.Markers.Add(new Model() { Name = "Brazil ", Latitude = "15.7833S", Longitude = "47.8667W" });
-            this.Markers.Add(new Model() { Name = "India ", Latitude = "21.0000N", Longitude = "78.0000E" });
-            this.Markers.Add(new Model() { Name = "China ", Latitude = "35.0000N", Longitude = "103.0000E" });
-            this.Markers.Add(new Model() { Name = "Indonesia ", Latitude = "6.1750S", Longitude = "106.8283E" });
-        }
+        this.Markers = new ObservableCollection<Model>();
+        this.Markers.Add(new Model() { Name = "USA ", Latitude = "38.8833N", Longitude = "77.0167W" });
+        this.Markers.Add(new Model() { Name = "Brazil ", Latitude = "15.7833S", Longitude = "47.8667W" });
+        this.Markers.Add(new Model() { Name = "India ", Latitude = "21.0000N", Longitude = "78.0000E" });
+        this.Markers.Add(new Model() { Name = "China ", Latitude = "35.0000N", Longitude = "103.0000E" });
+        this.Markers.Add(new Model() { Name = "Indonesia ", Latitude = "6.1750S", Longitude = "106.8283E" });
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -78,11 +90,12 @@ The [`Markers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.Image
 
 The default appearance of the Marker can be customized by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_MarkerTemplate) property.
 
-{% highlight xaml %}
+{% tabs %}
+{% highlight xaml hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24" %}
 
 <syncfusion:SfMap x:Name="map">
     <syncfusion:SfMap.Layers>
-        <syncfusion:ImageryLayer Markers="{Binding Models}"   LayerType="OSM">
+        <syncfusion:ImageryLayer Markers="{Binding Models}" LayerType="OSM">
             <syncfusion:ImageryLayer.MarkerTemplate>
                 <DataTemplate>
                     <Grid Margin="-12,-30,0,0">
@@ -109,6 +122,7 @@ The default appearance of the Marker can be customized by using the [`MarkerTemp
 </syncfusion:SfMap>  
 
 {% endhighlight %}
+{% endtabs %}
 
 ![Marker Template image](Map-Providers_images/Marker_Template_image.png)
 
@@ -125,15 +139,15 @@ The [`SubShapeFileLayers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 The following code example demonstrates how to add multiple layers to an [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html).
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml hl_lines="3 4 5 6 7 8 9 10 11" %}
 
 <syncfusion:SfMap>
     <syncfusion:SfMap.Layers>
         <syncfusion:ImageryLayer LayerType="OSM" >
             <syncfusion:ImageryLayer.SubShapeFileLayers>                   
-                <syncfusion:SubShapeFileLayer  Uri="DataMarkers.ShapeFiles.Africa.shp">                            
+                <syncfusion:SubShapeFileLayer Uri="DataMarkers.ShapeFiles.Africa.shp">                            
                     <syncfusion:SubShapeFileLayer.ShapeSettings>                               
-                        <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate"/>                           
+                        <syncfusion:ShapeSetting ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeFill="Chocolate"/>                           
                     </syncfusion:SubShapeFileLayer.ShapeSettings>                       
                 </syncfusion:SubShapeFileLayer>                   
             </syncfusion:ImageryLayer.SubShapeFileLayers>               
@@ -169,7 +183,7 @@ By default, the Bing Maps view style is set to [`Road`](https://help.syncfusion.
 
 ### Aerial View
 
-The Aerial view shows satellite images with clearly visible roads and landmarks. This view is useful for visually exploring real‑world locations. You can apply this view by setting [`BingMapStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapStyle) to [`Aerial.`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BingMapStyle.html#fields)
+The Aerial view shows satellite images with clearly visible roads and landmarks. This view is useful for visually exploring real‑world locations. You can apply this view by setting [`BingMapStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapStyle) to [`Aerial`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BingMapStyle.html#fields).
 
 {% tabs %}
 {% highlight xaml %}
@@ -260,8 +274,6 @@ The following screenshot illustrates the AerialWithLabel view.
 
 ![Bing map Aerial With Label_View_image](Map-Providers_images/Bing_map_Aerial_With_Label_View_image.jpg)
 
-N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
-
 ## Azure Maps
 
 `Azure Maps` is an online map tile provider from Microsoft. Similar to `OSM` and `Bing Maps,` it serves map tile images on request and composites them to display the map area.
@@ -310,7 +322,7 @@ The [`SubShapeFileLayers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 The following code example demonstrates how to add multiple layers to an [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html).
 
 {% tabs %}
-{% highlight xaml hl_lines="2 3 4 5 6 7 8 9 10 11" %}
+{% highlight xaml hl_lines="2 3 4 5 6 7 8 9 10 11 12" %}
 
 <syncfusion:SfMap>
     <syncfusion:SfMap.Layers>
@@ -332,10 +344,10 @@ The following code example demonstrates how to add multiple layers to an [`Image
 ![Azure Maps SubShapeFileLayer](Map-Providers_images/wpf-azure-map-with-subshapefilelayer.jpg){:width="1000" height="488"}
 
 N>
-
- * When [`UrlTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_UrlTemplate) is set, the [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) gives first preference to loading map tiles from the specified URL and ignores [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_LayerType) and `BingMapKey` properties.
-
+* When [`UrlTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_UrlTemplate) is set, the [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) gives first preference to loading map tiles from the specified URL and ignores [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_LayerType) and `BingMapKey` properties.
  * If [`UrlTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_UrlTemplate) is not set, the layer continues to use the configured [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_LayerType) (such as Bing Maps or OpenStreetMap), ensuring full backward compatibility.
+
+ N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
 
 ## See also
 
