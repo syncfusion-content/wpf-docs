@@ -56,6 +56,8 @@ tabControl.Items.Add(tabItem);
 
 When a user clicks the close button, the tab is automatically removed and the control selects the next available tab.
 
+![WPF TabbedWindow CloseButton](tab-management_images/tabbedwindow_closebutton.gif)
+
 ## New Tab Button
 
 Enable the new tab button to allow users to dynamically add tabs:
@@ -98,6 +100,8 @@ private void OnNewTabRequested(object sender, NewTabRequestedEventArgs e)
 
 {% endtabs %}
 
+![WPF TabbedWindow New Tab Button](tab-management_images/tabbedwindow_closebutton.gif)
+
 ### Customization of New tab button
 
 `NewTabButtonStyle` targets the internal `Button` used for the new‑tab afford and controls visual properties such as size, background, border and padding without replacing the element tree. 
@@ -125,7 +129,7 @@ private void OnNewTabRequested(object sender, NewTabRequestedEventArgs e)
 
 {% endtabs %}
 
-![WPF NewButton style](data-binding_images/wpf_newbuttonstyle.png)
+![WPF NewButton style](tab-management_images/wpf_newbuttonstyle.png)
 
 ## Keyboard shortcuts
 
