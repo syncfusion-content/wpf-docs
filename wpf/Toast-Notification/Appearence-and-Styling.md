@@ -121,8 +121,8 @@ SfToastNotification.Show(this, new ToastOptions
     CloseAnimationType = ToastAnimation.FadeOut
 });
 
-{% endtabs %}
 {% endhighlight %}
+{% endtabs %}
 
 ![SfToastNotification Animation image](Images/wpf_toastnotification_animation.gif)
 
