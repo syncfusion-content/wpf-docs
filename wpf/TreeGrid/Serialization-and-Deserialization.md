@@ -71,7 +71,7 @@ using (var file = File.Create("TreeGrid.xml"))
 
 ### Serialize columns
 
-By default, SfTreeGrid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the[TreeGridSerializationOptions.SerializeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationOptions.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationOptions_SerializeColumns) to `false`.
+By default, SfTreeGrid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the [TreeGridSerializationOptions.SerializeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationOptions.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationOptions_SerializeColumns) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -285,7 +285,7 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 {% endcapture %}
 {{ codesnippet2 | EmployeeList_Indent_Level_1 }}
 
-3. You can get the custom column property settings for serialization by overriding the [GetSerializableTreeGridColumn](Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_GetSerializableTreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_) virtual method.
+3. You can get the custom column property settings for serialization by overriding the [GetSerializableTreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_GetSerializableTreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_) virtual method.
 
 {% capture codesnippet3 %}
 {% tabs %}
