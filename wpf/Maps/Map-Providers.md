@@ -9,11 +9,11 @@ documentation: ug
 
 # Map Providers in WPF Maps (SfMap)
 
-The [`SfMap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) control provides support for various map providers, including `OpenStreetMap`, `Google Maps`, `Azure Maps`, and `Bing Maps.` You can also integrate other map providers by adding them as layers.
+The [`SfMap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) control provides support for various map providers, including [`OpenStreetMap`](https://www.openstreetmap.org), [`Google Maps`](https://developers.google.com/maps/documentation), [`Azure Maps`](https://learn.microsoft.com/en-us/azure/azure-maps/), and [`Bing Maps`](https://www.microsoft.com/en-in/bing/features/maps/?msockid=3b94155aeb2660df1b7f03a4ea7b61d3&form=MA13FV). You can also integrate other map providers by adding them as layers.
 
 ## Open Street Map
 
-The `OpenStreetMap` (OSM) is a map of the world built by a community of mappers that is free to use under an open license. It allows you to view geographical data in a collaborative way from anywhere on the Earth. It provides small tile images based on our requests and combines those images into a single one to display the map area in our maps control.
+The [`OpenStreetMap`](https://www.openstreetmap.org) (OSM) is a map of the world built by a community of mappers that is free to use under an open license. It allows you to view geographical data in a collaborative way from anywhere on the Earth. It provides small tile images based on our requests and combines those images into a single one to display the map area in our maps control.
 
 ### Enable an OSM
 
@@ -86,7 +86,7 @@ public class MapViewModel
 {% endhighlight %}
 {% endtabs %}
 
-### Customizing the Marker Template
+### Customizing the marker template
 
 The default appearance of the Marker can be customized by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_MarkerTemplate) property.
 
@@ -139,7 +139,7 @@ The [`SubShapeFileLayers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 The following code example demonstrates how to add multiple layers to an [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html).
 
 {% tabs %}
-{% highlight xaml hl_lines="3 4 5 6 7 8 9 10 11" %}
+{% highlight xaml hl_lines="4 5 6 7 8 9 10" %}
 
 <syncfusion:SfMap>
     <syncfusion:SfMap.Layers>
@@ -162,7 +162,7 @@ The following code example demonstrates how to add multiple layers to an [`Image
 
 ## Bing Map
 
-The `Bing Maps` is a global mapping service provided by Microsoft. Similar to `OpenStreetMap` (OSM), it delivers map tile images based on user requests and combines them to render the required map area.
+The [`Bing Maps`](https://www.microsoft.com/en-in/bing/features/maps/?msockid=3b94155aeb2660df1b7f03a4ea7b61d3&form=MA13FV) is a global mapping service provided by Microsoft. Similar to [`OpenStreetMap`](https://www.openstreetmap.org) (OSM), it delivers map tile images based on user requests and combines them to render the required map area.
 
 ### Enable a Bing Map 
 
@@ -173,7 +173,7 @@ You can enable Bing Maps by setting the [`LayerType`](https://help.syncfusion.co
 The [`BingMapKey`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapKey) is provided as input to this key property. The Bing Map key can be obtained from 
 [https://www.microsoft.com/en-us/maps/create-a-bing-maps-key](https://www.microsoft.com/en-us/maps/bing-maps/create-a-bing-maps-key).
 
-The [`Maps`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) control supports the following `Bing Maps` view styles:
+The [`Maps`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) control supports the following [`Bing Maps`](https://www.microsoft.com/en-in/bing/features/maps/?msockid=3b94155aeb2660df1b7f03a4ea7b61d3&form=MA13FV) view styles:
 
 1. Aerial
 2. AerialWithLabel
@@ -276,11 +276,11 @@ The following screenshot illustrates the AerialWithLabel view.
 
 ## Azure Maps
 
-`Azure Maps` is an online map tile provider from Microsoft. Similar to `OSM` and `Bing Maps,` it serves map tile images on request and composites them to display the map area.
+[`Azure Maps`](https://learn.microsoft.com/en-us/azure/azure-maps/) is an online map tile provider from Microsoft. Similar to [`OSM`](https://www.openstreetmap.org) and [`Bing Maps`](https://www.microsoft.com/en-in/bing/features/maps/?msockid=3b94155aeb2660df1b7f03a4ea7b61d3&form=MA13FV), it serves map tile images on request and composites them to display the map area.
 
 ### Adding Azure Maps
 
-`Azure Maps` can be rendered by setting the [`UrlTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_UrlTemplate) property with the tile server URL provided by the online map provider. A subscription key is required for `Azure Maps`.
+[`Azure Maps`](https://learn.microsoft.com/en-us/azure/azure-maps/) can be rendered by setting the [`UrlTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_UrlTemplate) property with the tile server URL provided by the online map provider. A subscription key is required for [`Azure Maps`](https://learn.microsoft.com/en-us/azure/azure-maps/).
 
 Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then add the key to the URL.
 
