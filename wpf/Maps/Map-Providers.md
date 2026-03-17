@@ -341,7 +341,7 @@ The following code example demonstrates how to add multiple layers to an [`Image
 {% endhighlight %}
 {% endtabs %}
 
-![Azure Maps SubShapeFileLayer](Map-Providers_images/wpf-azure-map-with-subshapefilelayer.jpg)
+![Azure Maps SubShapeFileLayer](Map-Providers_images/wpf-azure-map-with-subshapefilelayer.png)
 
 N>
 * When [`UrlTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_UrlTemplate) is set, the [`ImageryLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) gives first preference to loading map tiles from the specified URL and ignores [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_LayerType) and `BingMapKey` properties.
