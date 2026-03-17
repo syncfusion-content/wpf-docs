@@ -1313,7 +1313,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 * [HorizontalAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html#Syncfusion_UI_Xaml_Grid_GridCheckBoxColumn_HorizontalAlignment) - You can change the horizontal alignment of CheckBox using `HorizontalAlignment` property. 
 
 ### Canceling the check box state change
-The checkbox state change can be canceled by setting `CellCheckBoxClickEventArgs.Cancel` to true in the `SfDataGrid.CellCheckBoxClick` event. Additionally, the checkbox value can be modified by setting `CellCheckBoxClickEventArgs.NewValue` within the event.
+The checkbox state change can be canceled by setting `CellCheckBoxClickEventArgs.Cancel` to true in the [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellCheckBoxClick) event. Additionally, the checkbox value can be modified by setting `CellCheckBoxClickEventArgs.NewValue` within the event.
 
 {% tabs %}
 {% highlight c# %}
@@ -2388,7 +2388,7 @@ As above, style of the header check box can be customized using the `HeaderCellS
 ![WPF DataGrid Column with CheckBox Style in header](Column-Types_images/wpf-datagrid-checkbox-style-in-header.png)
 
 ### Canceling the check box state change
-The checkbox state change in the `GridCheckBoxSelectorColumn` can be canceled by setting `CellCheckBoxClickEventArgs.Cancel` to true in the `SfDataGrid.CellCheckBoxClick` event. Additionally, the checkbox value can be modified by setting `CellCheckBoxClickEventArgs.NewValue` within the same event.
+The checkbox state change in the `GridCheckBoxSelectorColumn` can be canceled by setting `CellCheckBoxClickEventArgs.Cancel` to true in the [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellCheckBoxClick) event. Additionally, the checkbox value can be modified by setting `CellCheckBoxClickEventArgs.NewValue` within the same event.
 
 Based on this, the selection state is not changed when `e.Cancel` is set to true, and the selection is applied according to the value specified in `e.NewValue`.
 
