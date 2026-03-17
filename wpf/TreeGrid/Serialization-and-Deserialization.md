@@ -251,6 +251,7 @@ To serialize the above TreeGridDatePickerColumn, follow the below steps.
  
 1. Create a class derived from [SerializableTreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SerializableTreeGridColumn.html) and define the custom column properties in `SerializableCustomTreeGridColumn` class.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 [DataContract(Name="SerializableCustomTreeGridColumn")]
@@ -261,9 +262,12 @@ public class SerializableCustomTreeGridColumn : SerializableTreeGridColumn
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | EmployeeList_Indent_Level_1 }}
 
 2. Create a new class named as TreeGridSerializationControllerExt by overriding [TreeGridSerializationController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html) class.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 treeGrid.SerializationController = new TreeGridSerializationControllerExt(treeGrid);
@@ -278,9 +282,12 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | EmployeeList_Indent_Level_1 }}
 
 3. You can get the custom column property settings for serialization by overriding the [GetSerializableTreeGridColumn](Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_GetSerializableTreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_) virtual method.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
@@ -303,9 +310,12 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | EmployeeList_Indent_Level_1 }}
 
 4. Store the custom column property settings during serialization by overriding the [StoreTreeGridColumnProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_StoreTreeGridColumnProperties_Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_SerializableTreeGridColumn_) virtual method.
- 
+
+{% capture codesnippet4 %} 
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
@@ -326,9 +336,12 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | EmployeeList_Indent_Level_1 }}
 
 5. Add the custom column into known column types by overriding the [KnownTypes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_KnownTypes) virtual method.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
@@ -348,9 +361,12 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | EmployeeList_Indent_Level_1 }}
 
 6. During deserialization, you can get the custom column settings from [SerializableTreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SerializableTreeGridColumn.html) by overriding [GetTreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_GetTreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_SerializableTreeGridColumn_) virtual method.
- 
+
+{% capture codesnippet6 %} 
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
@@ -370,9 +386,12 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | EmployeeList_Indent_Level_1 }}
 
 7. Now restore the custom column settings from SerializableTreeGridColumn by overriding the [RestoreColumnProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_RestoreColumnProperties_Syncfusion_UI_Xaml_TreeGrid_SerializableTreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_) virtual method.
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
@@ -394,6 +413,8 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | EmloyeeList_Indent_Level_1 }}
 
 ### Serializing template column content
 
