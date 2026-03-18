@@ -188,7 +188,7 @@ SelectionFrame `BorderThickness` and `BorderBrush` can be customized by modifyin
 ### Column Selection
 When a column header is clicked, all cells in that column are selected, and the row and column headers are highlighted.
 
-By default, clicking a column header performs a sorting operation. Sorting can be disabled and column selection enabled by setting the [ColumnHeaderClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ColumnHeaderClickAction) property to [Select](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnHeaderClickAction.html).
+By default, clicking a column header performs a sorting operation. Sorting can be disabled and column selection enabled by setting the [ColumnHeaderClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ColumnHeaderClickAction) property to [Select](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnHeaderClickAction.html#fields).
 
 {% tabs %}
 {% highlight xaml %}
@@ -207,10 +207,10 @@ By default, clicking a column header performs a sorting operation. Sorting can b
 
 #### Column Header Click Action
 
-The [ColumnHeaderClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnHeaderClickAction.html) supports the following options:
-* [Sort](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnHeaderClickAction.html) - Sorting is performed when the column header is clicked.
-* [Select](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnHeaderClickAction.html) - Clicking the column header selects all cells in that column.
-* [Auto](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnHeaderClickAction.html) – When AllowSorting is disabled, clicking the column header selects the column. When AllowSorting is enabled, the header click performs a sorting operation.
+The [ColumnHeaderClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnHeaderClickAction.html) enum supports the following options:
+* [Sort](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnHeaderClickAction.html#fields) - Sorting is performed when the column header is clicked.
+* [Select](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnHeaderClickAction.html#fields) - Clicking the column header selects all cells in that column.
+* [Auto](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnHeaderClickAction.html#fields) – When AllowSorting is disabled, clicking the column header selects the column. When AllowSorting is enabled, the header click performs a sorting operation.
 
 This allows you to configure whether clicking a column header sorts the data or selects the entire column.
 
