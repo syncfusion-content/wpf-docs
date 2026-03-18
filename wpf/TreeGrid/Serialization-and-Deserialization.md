@@ -13,7 +13,7 @@ SfTreeGrid allows you to serialize and deserialize the SfTreeGrid settings using
  
 ## Serialization
 
-You can serialize the SfTreeGrid by using `SfTreeGrid.Serialize` method which exports the current TreeGrid control properties to an XML file.
+You can serialize the SfTreeGrid by using [SfTreeGrid.Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Serialize_System_IO_Stream_) method which exports the current TreeGrid control properties to an XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ using (var file = File.Create("TreeGrid.xml"))
 
 ### Serialize as Stream
 
-You can store the SfTreeGrid settings as [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) using `Serialize` method by passing the stream.
+You can store the SfTreeGrid settings as [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) using [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Serialize_System_IO_Stream_) method by passing the stream.
 
 {% tabs %}
 {% highlight c# %}
@@ -37,11 +37,11 @@ this.treeGrid.Serialize(stream);
 
 ## Serialization options 
 
-SfTreeGrid serialization operation can be customized by passing `TreeGridSerializationOptions` instance as an argument to `Serialize` method.
+SfTreeGrid serialization operation can be customized by passing [TreeGridSerializationOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationOptions.html) instance as an argument to [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Serialize_System_IO_Stream_Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationOptions_) method.
 
 ### Serialize sorting
 
-By default, SfTreeGrid allows you to serialize the sorting operation. You can disable the sorting serialization by setting the `TreeGridSerializationOptions.SerializeSorting` to `false`.
+By default, SfTreeGrid allows you to serialize the sorting operation. You can disable the sorting serialization by setting the [TreeGridSerializationOptions.SerializeSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationOptions.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationOptions_SerializeSorting) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -56,7 +56,7 @@ using (var file = File.Create("TreeGrid.xml"))
 
 ### Serialize filtering
 
-By default, SfTreeGrid allows you to serialize the filtering operation. You can disable the filtering serialization by setting the `TreeGridSerializationOptions.SerializeFiltering` to `false`.
+By default, SfTreeGrid allows you to serialize the filtering operation. You can disable the filtering serialization by setting the [TreeGridSerializationOptions.SerializeFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationOptions.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationOptions_SerializeFiltering) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +71,7 @@ using (var file = File.Create("TreeGrid.xml"))
 
 ### Serialize columns
 
-By default, SfTreeGrid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the `TreeGridSerializationOptions.SerializeColumns` to `false`.
+By default, SfTreeGrid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the [TreeGridSerializationOptions.SerializeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationOptions.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationOptions_SerializeColumns) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +86,7 @@ using (var file = File.Create("TreeGrid.xml"))
 
 ### Serialize stacked headers
 
-By default, SfTreeGrid allows you to serialize the stack headers operation. You can disable the stack headers serialization by setting the `TreeGridSerializationOptions.SerializeStackedHeaders` to `false`.
+By default, SfTreeGrid allows you to serialize the stack headers operation. You can disable the stack headers serialization by setting the [TreeGridSerializationOptions.SerializeStackedHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationOptions.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationOptions_SerializeStackedHeaders) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -101,7 +101,7 @@ using (var file = File.Create("TreeGrid.xml"))
 
 ## Deserialization
 
-You can deserialize the SfTreeGrid setting by using `SfTreeGrid.Deserialize` method which reconstructs the SfTreeGrid based on the setting in the stored XML file.
+You can deserialize the SfTreeGrid setting by using [SfTreeGrid.Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Deserialize_System_IO_Stream_) method which reconstructs the SfTreeGrid based on the setting in the stored XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -114,7 +114,7 @@ using (var file = File.Open("TreeGrid.xml", FileMode.Open))
 
 ### Deserialize from Stream
 
-You can deserialize the SfTreeGrid settings from [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) using `Deserialize` method.
+You can deserialize the SfTreeGrid settings from [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) using [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Deserialize_System_IO_Stream_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -125,11 +125,11 @@ this.treeGrid.Deserialize(fileStream);
 
 ## Deserialization options
  
-Deserialization operation can be customized by passing `TreeGridDeserializationOptions` instance as an argument to `Deserialize` method.
+Deserialization operation can be customized by passing [TreeGridDeserializationOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDeserializationOptions.html) instance as an argument to [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Deserialize_System_IO_Stream_Syncfusion_UI_Xaml_TreeGrid_TreeGridDeserializationOptions_) method.
 
 ### Deserialize sorting
 
-By default, SfTreeGrid allows you to deserialize the sorting operation. You can disable the sorting  deserialization by setting the `TreeGridDeserializationOptions.DeserializeSorting` to `false`.
+By default, SfTreeGrid allows you to deserialize the sorting operation. You can disable the sorting  deserialization by setting the [TreeGridDeserializationOptions.DeserializeSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDeserializationOptions.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDeserializationOptions_DeserializeSorting) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -144,7 +144,7 @@ using (var file = File.Open("TreeGrid.xml", FileMode.Open))
 
 ### Deserialize filtering
 
-By default, SfTreeGrid allows you to deserialize the filtering. you can disable the filtering deserialization by setting `TreeGridDeserializationOptions.DeserializeFiltering` to `false`.
+By default, SfTreeGrid allows you to deserialize the filtering. you can disable the filtering deserialization by setting [TreeGridDeserializationOptions.DeserializeFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDeserializationOptions.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDeserializationOptions_DeserializeFiltering) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -159,7 +159,7 @@ using (var file = File.Open("TreeGrid.xml", FileMode.Open))
 
 ### Deserialize columns
 
-By default, SfTreeGrid allows you to deserialize the columns manipulation operations. You can disable the columns deserialization by setting the `TreeGridDeserializationOptions.DeserializeColumns` to `false`.
+By default, SfTreeGrid allows you to deserialize the columns manipulation operations. You can disable the columns deserialization by setting the [TreeGridDeserializationOptions.DeserializeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDeserializationOptions.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDeserializationOptions_DeserializeColumns) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -174,7 +174,7 @@ using (var file = File.Open("TreeGrid.xml", FileMode.Open))
 
 ### Deserialize stacked headers
 
-By default, SfTreeGrid allows you to deserialize the stack headers. You can disable the stacked headers deserialization by setting the `TreeGridDeserializationOptions.DeserializeStackedHeaders` to `false`.
+By default, SfTreeGrid allows you to deserialize the stack headers. You can disable the stacked headers deserialization by setting the [TreeGridDeserializationOptions.DeserializeStackedHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDeserializationOptions.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDeserializationOptions_DeserializeStackedHeaders) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -189,7 +189,7 @@ using (var file = File.Open("TreeGrid.xml", FileMode.Open))
 
 ## Customizing Serialization and Deserialization Operations
 
-SfTreeGrid allows you to customize the serialization and deserialization operations by deriving `TreeGridSerializationController` class and override the necessary virtual methods.
+SfTreeGrid allows you to customize the serialization and deserialization operations by deriving [TreeGridSerializationController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html) class and override the necessary virtual methods.
 
 ### Serialize custom column 
 
@@ -249,8 +249,9 @@ In the below code snippet, the TreeGridDatePickerColumn is defined in SfTreeGrid
 
 To serialize the above TreeGridDatePickerColumn, follow the below steps.
  
-1. Create a class derived from `SerializableTreeGridColumn` and define the custom column properties in `SerializableCustomTreeGridColumn` class.
+1. Create a class derived from [SerializableTreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SerializableTreeGridColumn.html) and define the custom column properties in `SerializableCustomTreeGridColumn` class.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 [DataContract(Name="SerializableCustomTreeGridColumn")]
@@ -261,9 +262,12 @@ public class SerializableCustomTreeGridColumn : SerializableTreeGridColumn
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | EmployeeList_Indent_Level_1 }}
 
-2. Create a new class named as TreeGridSerializationControllerExt by overriding `TreeGridSerializationController` class.
+2. Create a new class named as TreeGridSerializationControllerExt by overriding [TreeGridSerializationController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html) class.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 treeGrid.SerializationController = new TreeGridSerializationControllerExt(treeGrid);
@@ -278,9 +282,12 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | EmployeeList_Indent_Level_1 }}
 
-3. You can get the custom column property settings for serialization by overriding the `GetSerializableTreeGridColumn` virtual method.
+3. You can get the custom column property settings for serialization by overriding the [GetSerializableTreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_GetSerializableTreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_) virtual method.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
@@ -303,9 +310,12 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | EmployeeList_Indent_Level_1 }}
 
-4. Store the custom column property settings during serialization by overriding the `StoreTreeGridColumnProperties` virtual method.
- 
+4. Store the custom column property settings during serialization by overriding the [StoreTreeGridColumnProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_StoreTreeGridColumnProperties_Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_SerializableTreeGridColumn_) virtual method.
+
+{% capture codesnippet4 %} 
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
@@ -326,9 +336,12 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | EmployeeList_Indent_Level_1 }}
 
-5. Add the custom column into known column types by overriding the `KnownTypes` virtual method.
+5. Add the custom column into known column types by overriding the [KnownTypes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_KnownTypes) virtual method.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
@@ -348,9 +361,12 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | EmployeeList_Indent_Level_1 }}
 
-6. During deserialization, you can get the custom column settings from `SerializableTreeGridColumn` by overriding `GetTreeGridColumn` virtual method.
- 
+6. During deserialization, you can get the custom column settings from [SerializableTreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SerializableTreeGridColumn.html) by overriding [GetTreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_GetTreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_SerializableTreeGridColumn_) virtual method.
+
+{% capture codesnippet6 %} 
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
@@ -370,9 +386,12 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | EmployeeList_Indent_Level_1 }}
 
-7. Now restore the custom column settings from SerializableTreeGridColumn by overriding the `RestoreColumnProperties` virtual method.
+7. Now restore the custom column settings from SerializableTreeGridColumn by overriding the [RestoreColumnProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_RestoreColumnProperties_Syncfusion_UI_Xaml_TreeGrid_SerializableTreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_) virtual method.
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 public class TreeGridSerializationControllerExt : TreeGridSerializationController
@@ -394,6 +413,8 @@ public class TreeGridSerializationControllerExt : TreeGridSerializationControlle
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | EmloyeeList_Indent_Level_1 }}
 
 ### Serializing template column content
 
@@ -425,7 +446,7 @@ By default, you cannot serialize the template content in SfTreeGrid. This is the
 {% endhighlight %}
 {% endtabs %}
 
-If you want to serialize and deserialize the template content, you have to reconstruct the same template during deserialization in `RestoreColumnProperties` method.
+If you want to serialize and deserialize the template content, you have to reconstruct the same template during deserialization in [RestoreColumnProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSerializationController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSerializationController_RestoreColumnProperties_Syncfusion_UI_Xaml_TreeGrid_SerializableTreeGridColumn_Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_) method.
 
 {% tabs %}
 {% highlight c# %}
