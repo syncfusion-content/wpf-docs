@@ -50,6 +50,8 @@ Ensure `AllowDragDrop` is enabled, which is the prerequisite for tear-off functi
 
 {% endtabs %}
 
+![WPF TabbedWindow Tear-Off](merge-tabs_images/tear-off-tabbedwindow.gif)
+
 ### Reattaching Floating Tabs
 
 To reattach a tab from a floating window back to the main window:
@@ -120,6 +122,8 @@ private void OnPreviewTabMerge(object sender, TabMergePreviewEventArgs e)
 {% endhighlight %}
 
 {% endtabs %}
+
+![WPF TabbedWindow Merging](merge-tabs_images/tabbedwindow-merging.gif)
 
 ## PreviewTabMergeEventArgs Properties
 
