@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Suggestion Mode in AI-Powered Text Editor | Syncfusion®
-description: Discover the basic features of Syncfusion<sup>&reg;</sup> WPF AI-Powered Text Editor (SfSmartTextEditor) control.
+description: Learn about suggestion mode with Syncfusion® WPF AI-Powered Text Editor (SfSmartTextEditor) control.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
