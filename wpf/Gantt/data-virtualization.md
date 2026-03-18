@@ -44,7 +44,7 @@ You can enable timeline virtualization by setting the [`EnableTimelineVirtualiza
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type syncfusion:GanttNode}">
-                        <Border Name="PART_Border" Height="22" Background="Green" VerticalAlignment="Center"
+                        <Border Name="PART_Border" Height="22" Background="#FF8CBE21" VerticalAlignment="Center"
                                 BorderThickness="0" ClipToBounds="True" CornerRadius="5" Opacity="0.8">
                             <Grid>
                                 <Border HorizontalAlignment="Left" VerticalAlignment="Center">
@@ -251,7 +251,7 @@ this.Gantt.TaskAttributeMapping = taskAttributeMapping;
         var tempCal = 0d;
         if (_subItems.Count > 0)
         {
-            /// Updating the start and end date based on the chagne occur in the date of child task
+            /// Updating the start and end date based on the changes occur in the date of child task
             StartDate = _subItems.Select(c => c.StartDate).Min();
             FinishDate = _subItems.Select(c => c.FinishDate).Max();
             Progress = (_subItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _subItems.Count;
@@ -259,7 +259,7 @@ this.Gantt.TaskAttributeMapping = taskAttributeMapping;
 
         if (_inLineItems.Count > 0)
         {
-            /// Updating the start and end date based on the chagne occur in the date of child task
+            /// Updating the start and end date based on the changes occur in the date of child task
             StartDate = _inLineItems.Select(c => c.StartDate).Min();
             FinishDate = _inLineItems.Select(c => c.FinishDate).Max();
             Progress = (_inLineItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _inLineItems.Count;
