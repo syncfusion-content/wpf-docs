@@ -84,8 +84,8 @@ this.Gantt.TaskAttributeMapping = taskAttributeMapping;
 {% endhighlight  %}
 {% highlight c# tabtitle="Task.cs" %}
 
- public class Task : NotificationObject
- {
+public class Task : NotificationObject
+{
     private string _name;
     private DateTime _startDate;
     private DateTime _finishDate;
@@ -265,7 +265,7 @@ this.Gantt.TaskAttributeMapping = taskAttributeMapping;
             Progress = (_inLineItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _inLineItems.Count;
         }
     }
- }
+}
 
 {% endhighlight  %}
 {% highlight c# tabtitle="ViewModel.cs" %}
