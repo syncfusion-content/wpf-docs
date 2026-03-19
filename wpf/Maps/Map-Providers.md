@@ -149,7 +149,7 @@ The following code example demonstrates how to add multiple layers to an [Imager
                     <syncfusion:SubShapeFileLayer.ShapeSettings>
                         <syncfusion:ShapeSetting ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeFill="Chocolate"/>
                     </syncfusion:SubShapeFileLayer.ShapeSettings>
-                </syncfusion:SubShapeFileLayer>                   
+                </syncfusion:SubShapeFileLayer>
             </syncfusion:ImageryLayer.SubShapeFileLayers>
         </syncfusion:ImageryLayer>
     </syncfusion:SfMap.Layers>
