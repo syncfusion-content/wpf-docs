@@ -134,7 +134,7 @@ sfMaskedEdit.Mask = @"-?\d+\.?\d*";
 
 Here, the `SfMaskedEdit` accept the positive and negative whole or float type numbers.
 
-N> Please refer the [Restrict the user to enter valid data](https://help.syncfusion.com/wpf/maskedtextbox/working-with-sfmaskededit#restrict-the-user-to-enter-valid-data) page to know more about the various mask pattern with examples.
+N> Please refer the [Restrict the user to enter valid data](https://help.syncfusion.com/wpf/maskedtextbox/input-restriction#restrict-the-user-to-enter-valid-data) page to know more about the various mask pattern with examples.
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
