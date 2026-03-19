@@ -13,9 +13,6 @@ This section explains how to add the [WPF SmartTextEditor](https://www.syncfusio
 
 N> The Smart Text Editor is distributed as part of the `Syncfusion.SfSmartComponents.WPF` package provides advanced AI-assisted features to enhance text editing and content management. Ensure your application has the required AI service configuration to enable these features.
 
-{% tabcontents %}
-{% tabcontent Visual Studio %}
-
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
