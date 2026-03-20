@@ -105,15 +105,16 @@ Set the writing context and preferred expressions to guide completions:
 
 <Window
     .....
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
     xmlns:smarttexteditor="clr-namespace:Syncfusion.UI.Xaml.SmartComponents;assembly=Syncfusion.SfSmartComponents.Wpf">
 
     <smarttexteditor:SfSmartTextEditor
         Placeholder="Type your reply..."
         UserRole="Support engineer responding to customer tickets">
         <smarttexteditor:SfSmartTextEditor.UserPhrases>
-            <x:String>Thanks for reaching out.</x:String>
-            <x:String>Please share a minimal reproducible sample.</x:String>
-            <x:String>We’ll update you as soon as we have more details.</x:String>
+            <sys:String>Thanks for reaching out.</sys:String>
+            <sys:String>Please share a minimal reproducible sample.</sys:String>
+            <sys:String>We’ll update you as soon as we have more details.</sys:String>
         </smarttexteditor:SfSmartTextEditor.UserPhrases>
     </smarttexteditor:SfSmartTextEditor>
 </Window>
@@ -125,7 +126,15 @@ N> If no AI inference service is configured, the editor generates offline sugges
 
 ## Step 5: Register the AI Service
 
-To configure the AI services, you must give the `azureApiKey` in the `App.xaml.cs` file.
+To configure the AI services, you must provide the **`azureApiKey`** in the **`App.xaml.cs`** file.
+
+Follow the steps below to set up the AI services:
+
+1.  Open **NuGet Package Manager** and search for the following packages.
+2.  Install the **latest versions** of each package:
+    *   **Azure.AI.OpenAI**
+    *   **Microsoft.Extensions.AI**
+    *   **Microsoft.Extensions.AI.OpenAI**
 
 ```csharp
 using Azure.AI.OpenAI;
@@ -141,8 +150,10 @@ namespace WpfApplication1
     /// </summary>
     public partial class App : Application
     {
-        public App()
+        protected override void OnStartup(StartupEventArgs e)
         {
+            base.OnStartup(e);
+            
             string azureApiKey = "<MENTION-YOUR-KEY>";
             Uri azureEndpoint = new Uri("<MENTION-YOUR-URL>");
             string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
