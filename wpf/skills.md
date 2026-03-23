@@ -3,7 +3,7 @@ layout: post
 title: Syncfusion WPF Agent Skills for AI Assistants | Syncfusion
 description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion WPF component guidance.
 control: Skills
-platform: WPF
+platform: wpf
 documentation: ug
 domainurl: ##DomainURL##
 ---
