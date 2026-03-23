@@ -14,7 +14,7 @@ documentation: ug
 
 ![TimeSpanEdit control structure](Getting-Started_images/Control_Structure.png)
 
-## Overview
+## Main Capabilities
 
 `TimeSpanEdit` is intended for scenarios that need precise interval input, scheduling values, or duration display. Key built-in capabilities include:
 
