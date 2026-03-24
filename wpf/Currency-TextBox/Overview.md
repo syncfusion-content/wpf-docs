@@ -2,7 +2,7 @@
 layout: post
 title: About WPF Currency TextBox control | Syncfusion®
 description: Learn here all about introduction of Syncfusion® WPF Currency TextBox control, its elements and more.
-platform: WPF
+platform: wpf
 control: CurrencyTextBox
 documentation: ug
 ---
@@ -12,7 +12,7 @@ The `CurrencyTextBox` is a specialized input control designed to accept, format,
 
 ## Control structure
 
-The `CurrencyTextBox` combines a text-editing area with a number-formatting layer and optional adorners for visual feedback. Typical visual elements include a watermark (placeholder text) when the control is empty, the formatted currency text, and an optional range adorner that can act like a progress indicator based on `MinValue`/`MaxValue`.
+The `CurrencyTextBox` combines a text-editing area with a number-formatting layer and optional adorner for visual feedback. Typical visual elements include a watermark (placeholder text) when the control is empty, the formatted currency text, and an optional range adorner that can act like a progress indicator based on `MinValue`/`MaxValue`.
 
 ![WPF Currency TextBox](getting-started_images/wpf-currency-textbox-control-structure.png)
 
