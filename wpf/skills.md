@@ -18,6 +18,7 @@ These skills eliminate common issues with generic AI suggestions by grounding th
 
 Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> WPF Agent Skills, ensure the following:
 
+- Required [Node.js](https://nodejs.org/en/) version >= 16
 - WPF application (existing or new); see [Overview](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
 - A supported AI agent or IDE that integrates with the Skills CLI (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
 
