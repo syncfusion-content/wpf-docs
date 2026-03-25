@@ -74,6 +74,8 @@ The `SfTreeView` control allows you to fully customize how empty content is disp
 
 ![EmptyContent in WPF TreeView](EmptyContent_images/wpf-treeview-emptycontent.gif)
 
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-display-and-customize-empty-content-when-no-data-is-available-in-WPF-TreeView-SfTreeView)
+
 ## Binding Empty Content from ViewModel
 `SfTreeView` supports data binding of [EmptyContent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EmptyContent), allowing you to update the empty content dynamically from the ViewModel.
 
