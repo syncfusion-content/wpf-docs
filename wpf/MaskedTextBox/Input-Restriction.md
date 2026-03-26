@@ -2,7 +2,7 @@
 layout: post
 title: Input Restriction in WPF MaskedTextBox control | Syncfusion®
 description: Learn here all about Input Restriction support in Syncfusion® WPF MaskedTextBox (SfMaskedEdit) control and more.
-platform: WPF
+platform: wpf
 control: SfMaskedEdit
 documentation: ug
 ---
@@ -644,7 +644,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 you can notified when changing the value of `SfMaskedEdit.Value` property by using the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) event.
 
 N> Your valid input character is updated to the `Value` property based on the `ValidationMode` property.
-Refer  [Input Validation](https://help.syncfusion.com/wpf/maskedtextbox/working-with-sfmaskededit#input-validation) to know more about the `ValidationMode`.
+Refer  [Input Validation](https://help.syncfusion.com/wpf/maskedtextbox/input-restriction#input-validation) to know more about the `ValidationMode`.
 
 {% tabs %}
 {% highlight xaml %}
