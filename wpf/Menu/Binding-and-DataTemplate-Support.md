@@ -148,6 +148,7 @@ public class CustomItemSource : ObservableCollection<ObjectModel>
             new ObjectModel("Essential BI Gauge")));
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
