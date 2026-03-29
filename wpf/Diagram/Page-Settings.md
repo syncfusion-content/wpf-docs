@@ -328,9 +328,9 @@ Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagra
 
 [How to interact with diagram page?](/wpf/diagram/interaction)
 
-[How to add multiple diagram pages?](https://www.syncfusion.com/kb/11463/how-to-add-multiple-diagram-pages-in-the-wpf-diagram-sfdiagram)
+[How to add multiple diagram pages?](https://support.syncfusion.com/kb/article/9956/how-to-add-multiple-diagram-pages-in-the-wpf-diagram-sfdiagram)
 
-[How to use the property grid for diagram?](https://www.syncfusion.com/kb/11482/how-to-use-the-property-grid-in-the-wpf-diagram-sfdiagram)
+[How to use the property grid for diagram?](https://support.syncfusion.com/kb/article/9861/how-to-use-the-property-grid-in-the-wpf-diagram-sfdiagram)
 
 [How to show or hide the background image?](https://support.syncfusion.com/kb/article/8243/how-to-show-or-hide-background-image-of-wpf-diagram-sfdiagram)
 
