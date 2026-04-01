@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with AI-Powered Text Editor control | Syncfusion®
-description: Discover the basic features of Syncfusion<sup>&reg;</sup> WPF AI-Powered Text Editor (SfSmartTextEditor) control.
+description: Learn here about getting started with Syncfusion® WPF AI-Powered Text Editor (SfSmartTextEditor) control, its elements and more.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
@@ -9,12 +9,9 @@ documentation: ug
 
 # Getting started with WPF Smart Text Editor
 
-This section describes how to integrate the [WPF SmartTextEditor](https://www.syncfusion.com/wpf-controls/smart-text-editor) control. It simply covers the fundamental capabilities required to get started with the Syncfusion AI-Powered Text Editor. To add a WPF AI-Powered Text Editor control to your project, follow the procedures outlined below.
+This section explains how to add the [WPF SmartTextEditor](https://www.syncfusion.com/wpf-controls/smart-text-editor) control. It covers only the basic features needed to get started with the Syncfusion AI-Powered Text Editor. Follow the steps below to add a WPF AI-Powered Text Editor control to your project.
 
-N> The SmartTextEditor, which is included in the `Syncfusion.SfSmartComponents.Wpf` package, provides powerful AI-assisted functionality for text editing and content management. To enable these functionalities, make sure your application has the necessary AI service settings.
-
-{% tabcontents %}
-{% tabcontent Visual Studio %}
+N> The Smart Text Editor is distributed as part of the `Syncfusion.SfSmartComponents.WPF` package provides advanced AI-assisted features to enhance text editing and content management. Ensure your application has the required AI service configuration to enable these features.
 
 ## Prerequisites
 
@@ -34,10 +31,10 @@ Before proceeding, ensure the following are set up:
 ## Step 2: Install the Syncfusion<sup>&reg;</sup> WPF SmartComponents NuGet Package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
-2. Search for [Syncfusion.SfSmartComponents.Wpf](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSmartComponents.Wpf.html) and install the latest version.
+2. Search for [Syncfusion.SfSmartComponents.WPF](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmartComponents.html) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-### Adding control via Designer
+## Step 3: Adding control via Designer
 
 SfSmartTextEditor control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
@@ -97,7 +94,7 @@ namespace WpfApplication1
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-### Configure user role and phrases for suggestions
+## Step 4: Configure user role and phrases for suggestions
 
 Set the writing context and preferred expressions to guide completions:
 - **UserRole** (required): Describes who is typing and the intent, shaping the tone and relevance of suggestions.
@@ -108,15 +105,16 @@ Set the writing context and preferred expressions to guide completions:
 
 <Window
     .....
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
     xmlns:smarttexteditor="clr-namespace:Syncfusion.UI.Xaml.SmartComponents;assembly=Syncfusion.SfSmartComponents.Wpf">
 
     <smarttexteditor:SfSmartTextEditor
         Placeholder="Type your reply..."
         UserRole="Support engineer responding to customer tickets">
         <smarttexteditor:SfSmartTextEditor.UserPhrases>
-            <x:String>Thanks for reaching out.</x:String>
-            <x:String>Please share a minimal reproducible sample.</x:String>
-            <x:String>We’ll update you as soon as we have more details.</x:String>
+            <sys:String>Thanks for reaching out.</sys:String>
+            <sys:String>Please share a minimal reproducible sample.</sys:String>
+            <sys:String>We’ll update you as soon as we have more details.</sys:String>
         </smarttexteditor:SfSmartTextEditor.UserPhrases>
     </smarttexteditor:SfSmartTextEditor>
 </Window>
@@ -126,9 +124,17 @@ Set the writing context and preferred expressions to guide completions:
 
 N> If no AI inference service is configured, the editor generates offline suggestions from your UserPhrases.
 
-### Register the AI Service
+## Step 5: Register the AI Service
 
-To configure the AI services, you must give the `azureApiKey` in the `App.xaml.cs` file.
+To configure the AI services, you must provide the **`azureApiKey`** in the **`App.xaml.cs`** file.
+
+Follow the steps below to set up the AI services:
+
+1.  Open **NuGet Package Manager** and search for the following packages.
+2.  Install the **latest versions** of each package:
+    *   **Azure.AI.OpenAI**
+    *   **Microsoft.Extensions.AI**
+    *   **Microsoft.Extensions.AI.OpenAI**
 
 ```csharp
 using Azure.AI.OpenAI;
@@ -144,8 +150,10 @@ namespace WpfApplication1
     /// </summary>
     public partial class App : Application
     {
-        public App()
+        protected override void OnStartup(StartupEventArgs e)
         {
+            base.OnStartup(e);
+            
             string azureApiKey = "<MENTION-YOUR-KEY>";
             Uri azureEndpoint = new Uri("<MENTION-YOUR-URL>");
             string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
@@ -159,12 +167,12 @@ namespace WpfApplication1
 }
 ```
 
-### Running the Application
+## Step 6: Running the Application
 
 Press **F5** to build and run the application. Once compiled, the smart text editor will be displayed with the data provided, and AI features will be available after configuration.
 
 Here is the result of the previous codes,
 
-![Getting Started in WPF Smart Text Editor.](images\getting-started\wpf-smarttexteditor-getting-started.gif)
+![Getting Started in WPF Smart Text Editor.](images/getting-started/wpf-smarttexteditor-getting-started.gif)
 
 N> You can refer to our [WPF Smart Text Editor](https://www.syncfusion.com/wpf-controls/smart-text-editor) feature tour page for its groundbreaking feature representations.
