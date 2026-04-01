@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in AI-Powered Text Editor control | Syncfusion®
-description: Discover the basic features of Syncfusion<sup>&reg;</sup> WPF AI-Powered Text Editor (SfSmartTextEditor) control.
+description: Learn here all about how to customize behavior and features of Syncfusion® WPF AI-Powered Text Editor (SfSmartTextEditor) control and more.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
