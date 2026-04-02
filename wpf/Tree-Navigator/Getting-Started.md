@@ -7,7 +7,7 @@ control: SfTreeNavigator
 documentation: ug
 ---
 
-## Getting Started with WPF Tree Navigator (SfTreeNavigator)
+# Getting Started with WPF Tree Navigator (SfTreeNavigator)
 
 Namespace: `Syncfusion.Windows.Controls.Navigation`
 
