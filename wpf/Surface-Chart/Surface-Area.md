@@ -9,7 +9,7 @@ documentation: ug
 
 # Surface Area in WPF Surface Chart (SfSurfaceChart)
 
-Surface area represents the entire surface chart and all its elements. It's a virtual rectangle area that includes all the surface elements like axis, color bar, wall etc. 
+Surface area represents the entire surface chart and all its elements, such as the axis, color bar and walls.It is a virtual rectangular space that contains these elements.
 
 The surface chart can be customized to enrich your application’s look and feel. SfSurfaceChat provides API’s to customize surface area based on your requirement. This section explains about the elements and API for common customization of surface area.
 
@@ -126,17 +126,27 @@ Gets or sets the bool value that represents a value whether to show the contour 
 Gets or sets the double value that represents a value of brush count in surface chart.  <br/><br/></td></tr>
 </table>
 
-The following code sample explains the customization of surface area.
+The following code sample explains the customization of the surface area. This customization of the SfSurfaceChart sets up a wireframe 3D surface chart that dynamically binds to data from the view model. It enhances the visual appearance with custom colors, rotation, tilt, and a perspective projection
 
 {% tabs %}
 
 {% highlight xaml %}
 
-            <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"  Type="WireframeSurface"
-                              YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}"
-                              ColumnSize="{Binding ColumnSize}" ApplyGradientBrush="True" BrushCount="4"
-                              LeftWallBrush="BlanchedAlmond" WireframeStroke="Green" WireframeStrokeThickness="1"
-                              CameraProjection="Perspective" Tilt="10" Rotate="20">
+            <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"            
+                                  Type="WireframeSurface"
+                                  XBindingPath="X" 
+                                  YBindingPath="Y" 
+                                  ZBindingPath="Z" 
+                                  RowSize="{Binding RowSize}"
+                                  ColumnSize="{Binding ColumnSize}" 
+                                  ApplyGradientBrush="True" 
+                                  BrushCount="4"
+                                  LeftWallBrush="BlanchedAlmond" 
+                                  WireframeStroke="Green" 
+                                  WireframeStrokeThickness="1"
+                                  CameraProjection="Perspective" 
+                                  Tilt="10" 
+                                  Rotate="20">
             </chart:SfSurfaceChart>
 
 {% endhighlight %}
