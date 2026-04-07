@@ -513,3 +513,5 @@ Click **Finish** and run the application.
 
 ![WPF OLAP Chart Getting-Started Image10](Getting-Started_images/Getting-Started_img10.png)
 
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-OlapChart)
+
