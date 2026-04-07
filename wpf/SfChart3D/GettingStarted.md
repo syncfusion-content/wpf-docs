@@ -463,7 +463,7 @@ The following code example gives you the complete code of above configurations.
 
 ![Chart 3D support in WPF](3D-Charts_images/Chart-3D-GettingStarted.png)
 
-You can find the complete getting started sample : [`GettingStarted`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-3DCharts1840393114)
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-SfChart3D)
 
 ## Theme
 

@@ -555,11 +555,11 @@ Below is the complete code to replicate the following output.
     
 {% endtabs %}
 
-You can get the complete getting started sample [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SunburstChartDemo-1795261164).
-
 Following is the final output screenshot,
 
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted5.png)
+
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-SunburstChart)
 
 ## Theme
 
