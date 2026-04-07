@@ -318,6 +318,8 @@ The following screenshot illustrates the result of the above code sample.
 
 ![Content in WPF Range Selector](getting-started_images/wpf-range-selector-content.png)
 
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-DataTimeRangeNavigator)
+
 N> The [`SelectedData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_SelectedData) property of the date-time range navigator control returns the collection that represents the data between the selected ranges.
 
 ## Theme

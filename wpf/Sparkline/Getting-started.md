@@ -159,6 +159,8 @@ The following illustrates the result of the above code sample,
 
 ![Binding Data to WPF sparkline](Getting-started_images/Getting-started_img1.png)
 
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-Sparkline)
+
 ## Theme
 
 SfSparkline supports various built-in themes. Refer to the below links to apply themes for the SfSparkline,
