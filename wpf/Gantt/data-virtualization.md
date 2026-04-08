@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Virtualization in WPF Gantt
 
-The WPF Gantt control supports data virtualization to improve performance when working with large datasets. When virtualization is enabled, the control renders only the nodes that are currently visible in the viewport, reducing memory usage and improving scrolling responsiveness.
+The WPF [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) supports data virtualization to improve performance when working with large datasets. When virtualization is enabled, the control renders only the nodes that are currently visible in the viewport, reducing memory usage and improving scrolling responsiveness.
 
 ## How virtualization Works
 
@@ -22,7 +22,7 @@ This approach ensures optimal performance even when working with thousands of ta
 
 ## Enable Timeline Virtualization
 
-You can enable timeline virtualization by setting the `EnableTimelineVirtualization` property to `true` in WPF `GanttControl`. 
+You can enable timeline virtualization by setting the `EnableTimelineVirtualization` property to `true` in WPF [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html). 
 
 {% tabs %}
 {% highlight xaml hl_lines="3" %}
@@ -251,7 +251,7 @@ You can enable timeline virtualization by setting the `EnableTimelineVirtualizat
         var tempCal = 0d;
         if (_subItems.Count > 0)
         {
-            /// Updating the start and end date based on the chagne occur in the date of child task
+            /// Updating the start and end date based on the changes occur in the date of child task
             StartDate = _subItems.Select(c => c.StartDate).Min();
             FinishDate = _subItems.Select(c => c.FinishDate).Max();
             Progress = (_subItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _subItems.Count;
