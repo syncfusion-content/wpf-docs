@@ -190,7 +190,7 @@ The Aerial view shows satellite images with clearly visible roads and landmarks.
        
 <syncfusion:SfMap>
     <syncfusion:SfMap.Layers>
-       <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="Aerial" />  
+       <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="Aerial" />
     </syncfusion:SfMap.Layers>
 </syncfusion:SfMap >
 
@@ -221,7 +221,7 @@ Road view displays the default map view of roads, buildings, and geography. To a
 
 <syncfusion:SfMap>
     <syncfusion:SfMap.Layers>
-        <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="Road" />     
+        <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="Road" />
     </syncfusion:SfMap.Layers>
 </syncfusion:SfMap >
 
@@ -252,7 +252,7 @@ The [AerialWithLabel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps
 
 <syncfusion:SfMap>
     <syncfusion:SfMap.Layers>
-        <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="AerialWithLabels" />    
+        <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="AerialWithLabels" />
     </syncfusion:SfMap.Layers>
 </syncfusion:SfMap>
 
