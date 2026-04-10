@@ -51,7 +51,7 @@ N> The [GridColumn.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-N> Sorting is not supported for `GridHyperLinkColumn` when the bound property type is `Uri`, since [`System.Uri`](https://learn.microsoft.com/dotnet/api/system.uri) does not implement [`IComparable`](https://learn.microsoft.com/dotnet/api/system.icomparable). If sorting is required, a custom comparison logic based on a comparable value should be used.
+N> Sorting is not supported for `GridHyperLinkColumn` when the bound property type is `Uri`, since [`System.Uri`](https://learn.microsoft.com/en-us/dotnet/api/system.uri?view=net-10.0) does not implement [`IComparable`](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable?view=net-10.0). If sorting is required, a custom comparison logic based on a comparable value should be used.
 
 ![Sorting in WPF DataGrid](Sorting_images/wpf-datagrid-sorting.png)
 
