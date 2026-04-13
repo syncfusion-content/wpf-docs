@@ -14,8 +14,8 @@ documentation: ug
 The HyperlinkClicked event is triggered whenever a hyperlink in the Markdown content is clicked. This event provides access to the URL being navigated to and allows developers to cancel the default navigation behavior.
 The URL link and its details are passed through the MarkdownHyperlinkClickedEventArgs. This argument provides the following details:
 
-URL : Gets the URL of the clicked hyperlink.
-Cancel : Gets or sets whether to cancel the default navigation behavior.
+**URL** : Gets the URL of the clicked hyperlink.
+**Cancel** : Gets or sets whether to cancel the default navigation behavior.
 
 ## How to disable hyperlink navigation in Markdown viewer control
 

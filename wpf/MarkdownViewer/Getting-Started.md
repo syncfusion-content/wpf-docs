@@ -10,7 +10,7 @@ keywords: wpf markdownviewer, syncfusion markdownviewer wpf, markdown viewer wpf
 
 # Getting Started with WPF Markdown Viewer (SfMarkdownViewer)
 
-This section provides a step-by-step guide to integrate and use the [SfMarkdownViewer] (https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control in your WPF applications.
+This section provides a step-by-step guide to integrate and use the [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control in your WPF applications.
 
 ## Assembly deployment
 
