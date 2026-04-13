@@ -116,3 +116,52 @@ SyncfusionAIExtension.ConfigureSyncfusionAIServices();
 
 {% endhighlight %}
 {% endtabs %}
+
+### Ollama
+
+To use Ollama for running self hosted models:
+
+1. **Download and install Ollama**  
+   Visit [Ollama's official website](https://ollama.com) and install the application appropriate for your operating system.
+
+2. **Install the desired model from the Ollama library**  
+   You can browse and install models from the [Ollama Library](https://ollama.com/library) (e.g., `llama2:13b`, `mistral:7b`, etc.).
+
+3. **Configure your application**
+
+   - Provide the `Endpoint` URL where the model is hosted (e.g., `http://localhost:11434`).
+   - Set `ModelName` to the specific model you installed (e.g., `llama2:13b`).
+
+* Install the following NuGet packages to your project:
+
+{% tabs %}
+
+{% highlight c# tabtitle="Package Manager" %}
+
+Install-Package Microsoft.Extensions.AI
+Install-Package OllamaSharp
+
+{% endhighlight %}
+
+{% endtabs %}
+
+* Add the following settings to the **App.xaml.cs** file in your application.
+
+{% tabs %}
+{% highlight C# tabtitle="App.xaml.cs" hl_lines="3 13" %}
+
+using Microsoft.Extensions.AI;
+using OllamaSharp;
+using Syncfusion.UI.Xaml.SmartComponents;
+
+
+....
+
+string ModelName = "MODEL_NAME";
+IChatClient chatClient = new OllamaApiClient("http://localhost:11434", ModelName);
+SyncfusionAIExtension.Services.AddChatClient(chatClient);
+
+SyncfusionAIExtension.ConfigureSyncfusionAIServices();
+
+{% endhighlight %}
+{% endtabs %}
