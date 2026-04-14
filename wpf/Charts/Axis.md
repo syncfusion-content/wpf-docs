@@ -88,26 +88,20 @@ In [`ChartAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Ch
 
 {% highlight xaml %}
 
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis Header="Metals"/>
-
-</syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis Header="Values(In Tonnes)"/>
-
-</syncfusion:NumericalAxis>
-
-</syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart>
+    <syncfusion:SfChart.PrimaryAxis>
+        <syncfusion:CategoryAxis Header="Metals"/>
+    </syncfusion:SfChart.PrimaryAxis>
+    <syncfusion:SfChart.SecondaryAxis>
+        <syncfusion:NumericalAxis Header="Values(In Tonnes)"/>
+    </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 chart.PrimaryAxis = new CategoryAxis() { Header = "Medals" };
-
 chart.SecondaryAxis = new NumericalAxis() { Header = "Values(In Tonnes)" };
 
 {% endhighlight %}
@@ -125,52 +119,28 @@ Default appearance of the header can be customized using [`HeaderTemplate`](http
 
 {% highlight xaml %}
 
- <syncfusion:SfChart x:Name="chart">
-
+<syncfusion:SfChart x:Name="chart">
     <syncfusion:SfChart.Resources>
-
         <DataTemplate x:Key="headerTemplate1">
-
             <Border BorderBrush="Black" CornerRadius="5" BorderThickness="1">
-
-                    <TextBlock Text="Demands" FontSize="12" 
-                                   
-                               FontStyle="Italic" 
-                                   
-                               FontWeight="Bold" Margin="3"/>
-
+                <TextBlock Text="Demands" FontSize="12" FontStyle="Italic" FontWeight="Bold" Margin="3"/>
             </Border>
-
         </DataTemplate>
 
         <DataTemplate x:Key="headerTemplate2">
-
             <Border BorderBrush="Black" CornerRadius="5" BorderThickness="1">
-
-                    <TextBlock FontSize="12" Margin="3"
-                                   
-                               FontStyle="Italic" FontWeight="Bold"/>
-
+                <TextBlock FontSize="12" Margin="3" FontStyle="Italic" FontWeight="Bold"/>
             </Border>
-
         </DataTemplate>
-
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.PrimaryAxis>
-
         <syncfusion:CategoryAxis HeaderTemplate="{StaticResource headerTemplate1}"/>
-
     </syncfusion:SfChart.PrimaryAxis>
 
     <syncfusion:SfChart.SecondaryAxis>
-
-        <syncfusion:NumericalAxis Header="Values(In Tonnes)"
-                                          
-                                  HeaderTemplate="{StaticResource headerTemplate2}"/>
-
+        <syncfusion:NumericalAxis Header="Values(In Tonnes)" HeaderTemplate="{StaticResource headerTemplate2}"/>
     </syncfusion:SfChart.SecondaryAxis>
-        
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -179,16 +149,12 @@ Default appearance of the header can be customized using [`HeaderTemplate`](http
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     HeaderTemplate = chart.Resources["headerTemplate1"] as DataTemplate
-
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-
     HeaderTemplate = chart.Resources["headerTemplate2"] as DataTemplate
-
 };
 
 {% endhighlight %}
@@ -207,35 +173,21 @@ chart.SecondaryAxis = new NumericalAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis Header="Metals" >
-
-<syncfusion:CategoryAxis.HeaderStyle>
-
-<syncfusion:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Black"> 
-
-</syncfusion:LabelStyle>
-
-</syncfusion:CategoryAxis.HeaderStyle>
-
-</syncfusion:CategoryAxis>
-
+    <syncfusion:CategoryAxis Header="Metals" >
+        <syncfusion:CategoryAxis.HeaderStyle>
+            <syncfusion:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Black">
+            </syncfusion:LabelStyle>
+        </syncfusion:CategoryAxis.HeaderStyle>
+    </syncfusion:CategoryAxis>
 </syncfusion:SfChart.PrimaryAxis>
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis Header="Values(In Tonnes)"/>
-
-<syncfusion:NumericalAxis.HeaderStyle>
-
-<syncfusion:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Black"> 
-
-</syncfusion:LabelStyle>
-
-</syncfusion:NumericalAxis.HeaderStyle>
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis Header="Values(In Tonnes)">
+        <syncfusion:NumericalAxis.HeaderStyle>
+            <syncfusion:LabelStyle FontFamily="Algerian" FontSize="13" Foreground="Black">
+            </syncfusion:LabelStyle>
+        </syncfusion:NumericalAxis.HeaderStyle>
+    </syncfusion:NumericalAxis>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -244,31 +196,21 @@ chart.SecondaryAxis = new NumericalAxis()
 
 LabelStyle style = new LabelStyle()
 {
-
     FontFamily = new FontFamily("Algerian"),
-
     FontSize = 13,
-
     Foreground = new SolidColorBrush(Colors.Black)
-
 };
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     Header = "Medals",
-
     LabelStyle = style
-
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-
     Header = "Values(In Tonnes)",
-
     LabelStyle = style
-
 };
 
 {% endhighlight %}
@@ -294,11 +236,8 @@ The [`LabelsPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Cha
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:NumericalAxis  LabelsPosition="Inside">
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis  LabelsPosition="Inside">
+    </syncfusion:NumericalAxis>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -307,9 +246,7 @@ The [`LabelsPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Cha
 
 chart.PrimaryAxis = new NumericalAxis()
 {
-
     LabelsPosition = AxisElementPosition.Inside
-
 };
 
 {% endhighlight %}

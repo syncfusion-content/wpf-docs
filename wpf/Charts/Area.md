@@ -32,31 +32,21 @@ The following code examples illustrates the usage of these properties:
 {% highlight xaml %}
 
 <chart:SfChart Height="250" Width="350" 
-
-Header="Chart Area Header" 
-
-AreaBackground="Cyan" 
-
-Background="LightGray" 
-
-AreaBorderBrush="Gray" 
-
-AreaBorderThickness="3" >
+               Header="Chart Area Header" 
+               AreaBackground="Cyan" 
+               Background="LightGray" 
+               AreaBorderBrush="Gray" 
+               AreaBorderThickness="3" >
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfChart chart = new SfChart();
-
 chart.Header = "Chart Area Header";
-
 chart.AreaBackground = new SolidColorBrush(Colors.Cyan);
-
 chart.Background = new SolidColorBrush(Colors.LightGray);
-
 chart.AreaBorderBrush = new SolidColorBrush(Colors.Gray);
-
 chart.AreaBorderThickness = new Thickness(3);
 
 {% endhighlight %}
@@ -78,68 +68,39 @@ The following code example demonstrates, how you can create multiple panes in th
 
 <chart:SfChart >
 
-<!--Adding row definition to the chart-->
+    <!--Adding row definition to the chart-->
+    <chart:SfChart.RowDefinitions>
+        <chart:ChartRowDefinition/>
+        <chart:ChartRowDefinition/>
+    </chart:SfChart.RowDefinitions>
 
-<chart:SfChart.RowDefinitions>
+    <!--Adding column definition to the chart-->
+    <chart:SfChart.ColumnDefinitions>
+        <chart:ChartColumnDefinition/>
+        <chart:ChartColumnDefinition/>
+    </chart:SfChart.ColumnDefinitions>
 
-<chart:ChartRowDefinition/>
+    <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis chart:ChartBase.ColumnSpan="2"/>
+    </chart:SfChart.PrimaryAxis>
 
-<chart:ChartRowDefinition/>
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis  PlotOffset="13" chart:ChartBase.ColumnSpan="2" />
+    </chart:SfChart.SecondaryAxis>
 
-</chart:SfChart.RowDefinitions>
+    <chart:ColumnSeries Palette="LightCandy"
+                        ItemsSource="{Binding SneakersDetail}"         
+                        XBindingPath="Brand" 
+                        YBindingPath="ItemsCount1" />
 
-<!--Adding column definition to the chart-->
-
-<chart:SfChart.ColumnDefinitions>
-
-<chart:ChartColumnDefinition/>
-
-<chart:ChartColumnDefinition/>
-
-</chart:SfChart.ColumnDefinitions>
-
-<chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis chart:ChartBase.ColumnSpan="2"/>
-
-</chart:SfChart.PrimaryAxis>
-
-
-
-<chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis  PlotOffset="13" chart:ChartBase.ColumnSpan="2" />
-
-</chart:SfChart.SecondaryAxis>
-
-
-<chart:ColumnSeries Palette="LightCandy"
-
-ItemsSource="{Binding SneakersDetail}"         
-
-XBindingPath="Brand" 
-
-YBindingPath="ItemsCount1" />
-
-<chart:ColumnSeries Palette="Metro"
-
-ItemsSource="{Binding SneakersDetail}"  
-
-XBindingPath="Brand" 
-
-YBindingPath="ItemsCount" >
-
-<chart:ColumnSeries.YAxis>
-
-<chart:NumericalAxis  PlotOffset="10"
-
-chart:SfChart.Row="1" >
-
-</chart:NumericalAxis>
-
-</chart:ColumnSeries.YAxis>
-
-</chart:ColumnSeries>
+    <chart:ColumnSeries Palette="Metro" 
+                        ItemsSource="{Binding SneakersDetail}" 
+                        XBindingPath="Brand" 
+                        YBindingPath="ItemsCount" >
+        <chart:ColumnSeries.YAxis>
+            <chart:NumericalAxis  PlotOffset="10" chart:SfChart.Row="1" />
+        </chart:ColumnSeries.YAxis>
+    </chart:ColumnSeries>
 
 </chart:SfChart>
 
@@ -148,65 +109,43 @@ chart:SfChart.Row="1" >
 {% highlight c# %}
 
 SfChart chart = new SfChart();
-
 chart.RowDefinitions.Add(new ChartRowDefinition());
-
 chart.RowDefinitions.Add(new ChartRowDefinition());
-
 chart.ColumnDefinitions.Add(new ChartColumnDefinition());
-
 chart.ColumnDefinitions.Add(new ChartColumnDefinition());
 
 CategoryAxis xAxis = new CategoryAxis();
-
 ChartBase.SetColumnSpan(xAxis, 2);
-
 chart.PrimaryAxis = xAxis;
 
 NumericalAxis yAxis = new NumericalAxis();
-
 yAxis.PlotOffset = 13;
 
 ChartBase.SetColumnSpan(yAxis, 2);
-
 chart.SecondaryAxis = yAxis;
 
 ColumnSeries columnSeries1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount",
-
     Palette = ChartColorPalette.LightCandy,
-
 };
 
 NumericalAxis axis = new NumericalAxis();
-
 axis.PlotOffset = 10;
-
 SfChart.SetRow(axis, 1);
 
 ColumnSeries columnSeries2 = new ColumnSeries()
 {
-    
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount1",
-
     Palette = ChartColorPalette.Metro,
-
     YAxis = axis
-
 };
 
 chart.Series.Add(columnSeries1);
-
 chart.Series.Add(columnSeries2);
 
 {% endhighlight %}
@@ -228,60 +167,36 @@ You can set the row span in chart like the following code example.
 
 <chart:SfChart>
 
-<!--Adding row definition to the chart-->
+    <!--Adding row definition to the chart-->
+    <chart:SfChart.RowDefinitions>
+        <chart:ChartRowDefinition/>
+        <chart:ChartRowDefinition/>
+    </chart:SfChart.RowDefinitions>
 
-<chart:SfChart.RowDefinitions>
+    <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis chart:ChartBase.RowSpan="2" 
+                            chart:SfChart.Row="0"
+                            TickLinesPosition="Outside">
+        </chart:CategoryAxis>
+    </chart:SfChart.PrimaryAxis>
 
-<chart:ChartRowDefinition/>
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfChart.SecondaryAxis>
 
-<chart:ChartRowDefinition/>
+    <chart:ColumnSeries XBindingPath="Brand"
+                        ItemsSource="{Binding SneakersDetail}"  
+                        YBindingPath="ItemsCount1"/>
 
-</chart:SfChart.RowDefinitions>
-
-<chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis   chart:ChartBase.RowSpan="2" 
-
-chart:SfChart.Row="0"
-
-TickLinesPosition="Outside">                                                              
-
-</chart:CategoryAxis>
-
-</chart:SfChart.PrimaryAxis>
-
-<chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis />
-
-</chart:SfChart.SecondaryAxis>
-
-<chart:ColumnSeries XBindingPath="Brand"
-
-ItemsSource="{Binding SneakersDetail}"  
-
-YBindingPath="ItemsCount1" 
-
-/>
-
-
-
-<chart:LineSeries Interior="CadetBlue" XBindingPath="Brand"
-
-ItemsSource="{Binding SneakersDetail}"   
-
-YBindingPath="ItemsCount">
-
-<chart:LineSeries.YAxis>
-
-<chart:NumericalAxis chart:ChartBase.RowSpan="2">
-
-</chart:NumericalAxis>
-
-</chart:LineSeries.YAxis>              
-
-</chart:LineSeries>
-
+    <chart:LineSeries Interior="CadetBlue" 
+                      XBindingPath="Brand"
+                      ItemsSource="{Binding SneakersDetail}"   
+                      YBindingPath="ItemsCount">
+        <chart:LineSeries.YAxis>
+            <chart:NumericalAxis chart:ChartBase.RowSpan="2">
+            </chart:NumericalAxis>
+        </chart:LineSeries.YAxis>
+    </chart:LineSeries>
 </chart:SfChart>
 
 {% endhighlight %}
@@ -289,65 +204,42 @@ YBindingPath="ItemsCount">
 {% highlight c# %}
 
 SfChart chart = new SfChart();
-
 chart.RowDefinitions.Add(new ChartRowDefinition());
-
 chart.RowDefinitions.Add(new ChartRowDefinition());
-
 chart.ColumnDefinitions.Add(new ChartColumnDefinition());
-
 chart.ColumnDefinitions.Add(new ChartColumnDefinition());
 
 CategoryAxis xAxis = new CategoryAxis();
-
 xAxis.TickLinesPosition = AxisElementPosition.Outside;
-
 ChartBase.SetColumnSpan(xAxis, 2);
-
-SfChart.SetRow(xAxis, 0);
-
+SfChart.SetRow(xAxis, 0);            
 chart.PrimaryAxis = xAxis;
 
 NumericalAxis yAxis = new NumericalAxis();
-
 ChartBase.SetColumnSpan(yAxis, 2);
-
 chart.SecondaryAxis = yAxis;
 
 ColumnSeries columnSeries1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount1",
-
 };
 
 NumericalAxis axis = new NumericalAxis();
-
 axis.PlotOffset = 10;
-
 ChartBase.SetColumnSpan(axis, 2);
 
 LineSeries lineSeries = new LineSeries()
 {
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount",
-
     Interior = new SolidColorBrush(Colors.CadetBlue),
-
     YAxis = axis
-
 };
 
 chart.Series.Add(columnSeries1);
-
 chart.Series.Add(lineSeries);
 
 {% endhighlight %}
@@ -363,7 +255,6 @@ More like serialization, you can use [`Clone`](https://help.syncfusion.com/cr/wp
 {% highlight C# %}
 
 var chartCopy = chart.Clone() as SfChart;
-
 grid.Children.Add(chartCopy as SfChart);
 
 //Here, 'grid' is an empty container in the application to hold the chart. 
