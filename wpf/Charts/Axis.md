@@ -265,11 +265,7 @@ chart.PrimaryAxis = new NumericalAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis  LabelRotationAngle="90" >
-
-</syncfusion:DateTimeAxis>
-
+    <syncfusion:DateTimeAxis  LabelRotationAngle="90"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -278,9 +274,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 chart.PrimaryAxis = new DateTimeAxis()
 {
-
-     LabelRotationAngle = 90
-
+    LabelRotationAngle = 90
 };
 
 {% endhighlight %}
@@ -298,27 +292,16 @@ SfChart allows user to define the labels for the axis. For defining the axis lab
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis >
-
-<syncfusion:CategoryAxis.CustomLabels>
-
-<syncfusion:ChartAxisLabel Position="0" LabelContent="0-1"/>
-
-<syncfusion:ChartAxisLabel Position="1" LabelContent="1-2"/>
-
-<syncfusion:ChartAxisLabel Position="2" LabelContent="2-3"/>
-
-<syncfusion:ChartAxisLabel Position="3" LabelContent="3-4"/>
-
-<syncfusion:ChartAxisLabel Position="4" LabelContent="4-5"/>
-
-<syncfusion:ChartAxisLabel Position="5" LabelContent="5-5"/>
-
-</syncfusion:CategoryAxis.CustomLabels>
-
-</syncfusion:CategoryAxis>
-
+    <syncfusion:CategoryAxis>
+        <syncfusion:CategoryAxis.CustomLabels>
+            <syncfusion:ChartAxisLabel Position="0" LabelContent="0-1"/>
+            <syncfusion:ChartAxisLabel Position="1" LabelContent="1-2"/>
+            <syncfusion:ChartAxisLabel Position="2" LabelContent="2-3"/>
+            <syncfusion:ChartAxisLabel Position="3" LabelContent="3-4"/>
+            <syncfusion:ChartAxisLabel Position="4" LabelContent="4-5"/>
+            <syncfusion:ChartAxisLabel Position="5" LabelContent="5-5"/>
+        </syncfusion:CategoryAxis.CustomLabels>
+    </syncfusion:CategoryAxis>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -326,19 +309,12 @@ SfChart allows user to define the labels for the axis. For defining the axis lab
 {% highlight c# %}
 
 CategoryAxis axis = new CategoryAxis();
-
 axis.CustomLabels.Add(new ChartAxisLabel() { Position = 0, LabelContent = "0-1" });
-
 axis.CustomLabels.Add(new ChartAxisLabel() { Position = 1, LabelContent = "1-2" });
-
 axis.CustomLabels.Add(new ChartAxisLabel() { Position = 2, LabelContent = "2-3" });
-
 axis.CustomLabels.Add(new ChartAxisLabel() { Position = 3, LabelContent = "3-4" });
-
 axis.CustomLabels.Add(new ChartAxisLabel() { Position = 4, LabelContent = "4-5" });
-
 axis.CustomLabels.Add(new ChartAxisLabel() { Position = 5, LabelContent = "5-5" });
-
 chart.PrimaryAxis = axis;
 
 {% endhighlight %}
@@ -355,11 +331,7 @@ You can also directly bind the collection of labels to the [`LabelsSource`](http
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis LabelsSource="{Binding Labels}" ContentPath="Content" PositionPath="Position">
-
-</syncfusion:CategoryAxis>
-
+    <syncfusion:CategoryAxis LabelsSource="{Binding Labels}" ContentPath="Content" PositionPath="Position"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -368,48 +340,29 @@ You can also directly bind the collection of labels to the [`LabelsSource`](http
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
-    ContentPath ="Content",
-
+    ContentPath = "Content",
     PositionPath = "Position",
-
     LabelsSource = Labels
-
 };
-
 
 public List<LabelItem> Labels { get; set; }
 
 Labels = new List<LabelItem>
-
 {
-
-    new LabelItem() {Position=0, Content = "0-1"},
-
-    new LabelItem() {Position=1, Content = "1-2"},
-
-    new LabelItem() {Position=2, Content = "2-3"},
-
-    new LabelItem() {Position=3, Content = "3-4"},
-
-    new LabelItem() {Position=4, Content = "4-5"},
-
-    new LabelItem() {Position=5, Content = "5-6"},
-
-    new LabelItem() {Position=6, Content = "6-7"},
-
-    new LabelItem() {Position=7, Content = "7-8"},
-
+    new LabelItem() { Position = 0, Content = "0-1"},
+    new LabelItem() { Position = 1, Content = "1-2"},
+    new LabelItem() { Position = 2, Content = "2-3"},        
+    new LabelItem() { Position = 3, Content = "3-4"},
+    new LabelItem() { Position = 4, Content = "4-5"},
+    new LabelItem() { Position = 5, Content = "5-6"},
+    new LabelItem() { Position = 6, Content = "6-7"},
+    new LabelItem() { Position = 7, Content = "7-8"},
 };
 
 public class LabelItem
-
 {
-
     public string Content { get; set; }
-
     public int Position { get; set; }
-
 }
 
 {% endhighlight %}
@@ -430,11 +383,7 @@ Axis labels can be formatting by predefined formatting types based on the axis t
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis LabelFormat="MMM/dd" FontSize="12" >
-
-</syncfusion:DateTimeAxis>
-
+    <syncfusion:DateTimeAxis LabelFormat="MMM/dd" FontSize="12"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -443,11 +392,8 @@ Axis labels can be formatting by predefined formatting types based on the axis t
 
 chart.PrimaryAxis = new DateTimeAxis()
 {
-
     LabelFormat = "MM/dd",
-
     FontSize = 12
-
 };
 
 {% endhighlight %}
@@ -464,9 +410,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:TimeSpanAxis LabelFormat="g" ></syncfusion:TimeSpanAxis>
-
+    <syncfusion:TimeSpanAxis LabelFormat="g" ></syncfusion:TimeSpanAxis>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -475,9 +419,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 chart.PrimaryAxis = new TimeSpanAxis()
 {
-
     LabelFormat = "g",
-
 };
 
 {% endhighlight %}
@@ -494,9 +436,7 @@ chart.PrimaryAxis = new TimeSpanAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis LabelFormat="0.00" />
-
+    <syncfusion:NumericalAxis LabelFormat="0.00" />
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -505,9 +445,7 @@ chart.PrimaryAxis = new TimeSpanAxis()
 
 chart.PrimaryAxis = new NumericalAxis()
 {
-
     LabelFormat = "0.00",
-
 };
 
 {% endhighlight %}
@@ -528,28 +466,18 @@ To display the measuring units, it can be added as a prefix or suffix to the axi
 {% highlight xaml %}
 
 <syncfusion:SfChart x:Name="chart">
-
     <syncfusion:SfChart.Resources>
-
         <DataTemplate x:Key="prefixLabelTemplate">
-
-             <TextBlock FontSize="10" VerticalAlignment="Center" 
-                               
-                               Text="$"/>
-
+            <TextBlock FontSize="10" VerticalAlignment="Center" Text="$"/>
         </DataTemplate>
-                
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.SecondaryAxis>
-
-         <syncfusion:NumericalAxis FontSize="10" 
-                                          
-                                   PrefixLabelTemplate="{StaticResource prefixLabelTemplate}"/>
-
+        <syncfusion:NumericalAxis 
+            FontSize="10" 
+            PrefixLabelTemplate="{StaticResource prefixLabelTemplate}"/>
     </syncfusion:SfChart.SecondaryAxis>
-
- </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -557,9 +485,7 @@ To display the measuring units, it can be added as a prefix or suffix to the axi
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-
     PrefixLabelTemplate = chart.Resources["prefixLabelTemplate"] as DataTemplate
-
 };
 
 {% endhighlight %}
@@ -575,26 +501,18 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% highlight xaml %}
 
-  <syncfusion:SfChart x:Name="chart">
-
+<syncfusion:SfChart x:Name="chart">
     <syncfusion:SfChart.Resources>
-
         <DataTemplate x:Key="postfixLabelTemplate">
-
-             TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
-
+            <TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
         </DataTemplate>
-
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.SecondaryAxis>
-
-        <syncfusion:NumericalAxis FontSize="10" 
-                                          
-                                  PostfixLabelTemplate="{StaticResource postfixLabelTemplate}"/>
-
+        <syncfusion:NumericalAxis 
+            FontSize="10" 
+            PostfixLabelTemplate="{StaticResource postfixLabelTemplate}"/>
     </syncfusion:SfChart.SecondaryAxis>
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -603,9 +521,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-
     PostfixLabelTemplate = chart.Resources["postfixLabelTemplate"] as DataTemplate
-
 };
 
 {% endhighlight %}
@@ -624,41 +540,29 @@ chart.SecondaryAxis = new NumericalAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart x:Name="chart">
-
     <syncfusion:SfChart.Resources>
-
         <DataTemplate x:Key="labelTemplate">
-
-            <Border Background="Gray" CornerRadius="5" >
-
-                    <TextBlock Text="{Binding LabelContent}" Foreground="White"
-                                   
-                                FontStyle="Normal" FontSize="10" 
-                                   
-                                FontWeight="Bold" Margin="3"/>
-
-                    <Border.Effect>
-
-                        <DropShadowEffect ShadowDepth="6" Direction="315"
-                                              
-                                          Color="LightGray" Opacity="0.25"
-                                              
-                                          BlurRadius="0.8" />
-
-                    </Border.Effect>
-
+            <Border Background="Gray" CornerRadius="5">
+                <TextBlock Text="{Binding LabelContent}" 
+                        Foreground="White"                                  
+                        FontStyle="Normal" 
+                        FontSize="10"                                    
+                        FontWeight="Bold" 
+                        Margin="3"/>
+                <Border.Effect>
+                    <DropShadowEffect 
+                        ShadowDepth="6" 
+                        Direction="315"                                           Color="LightGray" 
+                        Opacity="0.25"                                              
+                        BlurRadius="0.8" />
+                </Border.Effect>
             </Border>
-
-       </DataTemplate>
-
+        </DataTemplate>
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.PrimaryAxis>
-
         <syncfusion:CategoryAxis LabelTemplate="{StaticResource labelTemplate}"/>
-
     </syncfusion:SfChart.PrimaryAxis>
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -667,9 +571,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     LabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
-
 };
 
 {% endhighlight %}
@@ -688,10 +590,8 @@ This property allows us to set the distance between the axis header and the axis
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis Header="Demand" LabelExtent="50" >
-
-</syncfusion:CategoryAxis>
+    <syncfusion:CategoryAxis Header="Demand" LabelExtent="50"/>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -699,11 +599,8 @@ This property allows us to set the distance between the axis header and the axis
 
 chart.PrimaryAxis = new NumericalAxis()
 {
-
     Header = "Demand",
-
     LabelExtent = 50
-
 };
 
 {% endhighlight %}
@@ -733,9 +630,7 @@ None option is used to display all the label even if it intersects. The followin
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis LabelsIntersectAction="None"/>
-
+    <syncfusion:CategoryAxis LabelsIntersectAction="None"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -744,9 +639,7 @@ None option is used to display all the label even if it intersects. The followin
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     LabelsIntersectAction = AxisLabelsIntersectAction.None
-
 };
 
 {% endhighlight %}
@@ -765,9 +658,7 @@ Hide option is used to hide the labels if it intersects .You can define the hide
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis  LabelsIntersectAction="Hide"/>
-
+    <syncfusion:DateTimeAxis  LabelsIntersectAction="Hide"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -776,9 +667,7 @@ Hide option is used to hide the labels if it intersects .You can define the hide
 
 chart.PrimaryAxis = new DateTimeAxis()
 {
-
     LabelsIntersectAction = AxisLabelsIntersectAction.Hide
-
 };
 
 {% endhighlight %}
@@ -797,11 +686,7 @@ This option is used to move the labels to next row if it intersects .The followi
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis  LabelsIntersectAction="MultipleRows">
-
-</syncfusion:DateTimeAxis>
-
+    <syncfusion:DateTimeAxis LabelsIntersectAction="MultipleRows"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -810,9 +695,7 @@ This option is used to move the labels to next row if it intersects .The followi
 
 chart.PrimaryAxis = new DateTimeAxis()
 {
-
     LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows
-
 };
 
 {% endhighlight %}
@@ -830,9 +713,7 @@ This option in [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Sync
 
 {% highlight xml %}
 
-<syncfusion:CategoryAxis LabelsIntersectAction="Auto">
-
-</syncfusion:CategoryAxis>
+<syncfusion:CategoryAxis LabelsIntersectAction="Auto"></syncfusion:CategoryAxis>
 
 {% endhighlight %}
 
@@ -840,9 +721,7 @@ This option in [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Sync
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     LabelsIntersectAction = AxisLabelsIntersectAction.Auto
-
 };
 
 {% endhighlight %}
@@ -870,11 +749,7 @@ The following are the customizing options in [`EdgeLabelsDrawingMode`](https://h
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Center" >
-
-</syncfusion:DateTimeAxis>
-
+    <syncfusion:DateTimeAxis EdgeLabelsDrawingMode="Center"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -883,9 +758,7 @@ The following are the customizing options in [`EdgeLabelsDrawingMode`](https://h
 
 chart.PrimaryAxis = new DateTimeAxis()
 {
-
     EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Center
-
 };
 
 {% endhighlight %}
@@ -901,9 +774,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Shift" ></syncfusion:DateTimeAxis>
-
+    <syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Shift" />
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -912,9 +783,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 chart.PrimaryAxis = new DateTimeAxis()
 {
-
     EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift
-
 };
 
 {% endhighlight %}
@@ -963,11 +832,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Fit">
-
-</syncfusion:DateTimeAxis>
-
+    <syncfusion:DateTimeAxis EdgeLabelsDrawingMode="Fit"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -976,9 +841,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 chart.PrimaryAxis = new DateTimeAxis()
 {
-
     EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Fit
-
 };
 
 {% endhighlight %}
@@ -1006,13 +869,7 @@ The following code example and image demonstrates the AlwaysVisible option while
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:NumericalAxis EdgeLabelsVisibilityMode="AlwaysVisible" 
-
-EnableScrollBar="True">
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis EdgeLabelsVisibilityMode="AlwaysVisible" EnableScrollBar="True"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -1021,9 +878,7 @@ EnableScrollBar="True">
 
 chart.PrimaryAxis = new NumericalAxis()
 {
-
     EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVisible
-
 };
 
 {% endhighlight %}
@@ -1042,11 +897,7 @@ Visible option is used to display the edge labels (first and last label) irrespe
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:NumericalAxis EdgeLabelsVisibilityMode="Visible" EnableScrollBar="True" >
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis EdgeLabelsVisibilityMode="Visible" EnableScrollBar="True"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -1055,9 +906,7 @@ Visible option is used to display the edge labels (first and last label) irrespe
 
 chart.PrimaryAxis = new NumericalAxis()
 {
-
     EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.Visible
-
 };
 
 {% endhighlight %}
@@ -1076,15 +925,11 @@ chart.PrimaryAxis = new NumericalAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis ShowLabelBorder="True"/>
-
+    <syncfusion:CategoryAxis ShowLabelBorder="True"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 <syncfusion:SfChart.SecondaryAxis>
-
-</syncfusion:NumericalAxis ShowLabelBorder="True"  />       
-
+    <syncfusion:NumericalAxis ShowLabelBorder="True"/>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -1092,13 +937,11 @@ chart.PrimaryAxis = new NumericalAxis()
 {% highlight c# %}
 
 chart.PrimaryAxis = new CategoryAxis()
-            
 {
-     ShowLabelBorder = true,                
+    ShowLabelBorder = true,
 };
 
 chart.SecondaryAxis = new NumericalAxis()
-
 {
     ShowLabelBorder = true
 };
@@ -1116,15 +959,11 @@ The border color and width can be customized with [`LabelBorderBrush`](https://h
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis LabelBorderWidth="3" ShowLabelBorder="True" LabelBorderBrush="Red"/>
-
+    <syncfusion:CategoryAxis LabelBorderWidth="3" ShowLabelBorder="True" LabelBorderBrush="Red"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 <syncfusion:SfChart.SecondaryAxis>
-
-</syncfusion:NumericalAxis ShowLabelBorder="True"  LabelBorderWidth="3" LabelBorderBrush="Red"/>       
-
+    <syncfusion:NumericalAxis ShowLabelBorder="True"  LabelBorderWidth="3" LabelBorderBrush="Red"/>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -1132,25 +971,17 @@ The border color and width can be customized with [`LabelBorderBrush`](https://h
 {% highlight c# %}
 
 chart.PrimaryAxis = new CategoryAxis()
-            
 {
-    ShowLabelBorder = true,  
-
+    ShowLabelBorder = true,
     LabelBorderWidth = 3,
-
     LabelBorderBrush = new SolidColorBrush(Colors.Red)
-           
 };
 
 chart.SecondaryAxis = new NumericalAxis()
-
 {
-       ShowLabelBorder = true,
-
-       LabelBorderWidth = 3,
-
-       LabelBorderBrush = new SolidColorBrush(Colors.Red),
-               
+    ShowLabelBorder = true,
+    LabelBorderWidth = 3,
+    LabelBorderBrush = new SolidColorBrush(Colors.Red),
 };
 
 {% endhighlight %}
@@ -1171,11 +1002,7 @@ The following code example illustrates the [`ShowGridLines`](https://help.syncfu
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:NumericalAxis  ShowGridLines="False"  >
-
-</syncfusion:NumericalAxis>
-
+    <syncfusion:NumericalAxis ShowGridLines="False"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -1184,9 +1011,7 @@ The following code example illustrates the [`ShowGridLines`](https://help.syncfu
 
 chart.PrimaryAxis = new NumericalAxis()
 {
-
     ShowGridLines = false
-    
 };
 
 {% endhighlight %}
