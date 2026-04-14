@@ -9,10 +9,10 @@ documentation: ug
 
 # Empty Content in WPF TreeView (SfTreeView)
 
-The [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) control allows you to display and customize **empty content** when no data is available. The `EmptyContent` property can be set to either a string or any object, and it will be displayed when the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) is **null** or **empty**, or when the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection is **empty**. Use `EmptyContentTemplate` to customize the appearance of `EmptyContent`.
+The [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) control allows you to display and customize **empty content** when no data is available. The [EmptyContent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EmptyContent) property can be set to either a string or any object, and it will be displayed when the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) is **null** or **empty**, or when the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection is **empty**. Use [EmptyContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EmptyContentTemplate) to customize the appearance of [EmptyContent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EmptyContent).
 
 ## Display text when TreeView has no items
-The `EmptyContent` property in `SfTreeView` can be set to a string, which will be displayed when no items are present in the TreeView.
+The [EmptyContent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EmptyContent) property in `SfTreeView` can be set to a string, which will be displayed when no items are present in the TreeView.
 
 {% tabs %}
 {% highlight xaml %}
@@ -35,7 +35,7 @@ treeView.EmptyContent = "No Items";
 
 ## Display custom UI when TreeView has no items
 
-The `SfTreeView` control allows you to fully customize how empty content is displayed by using the `EmptyContentTemplate` property. This property lets you define a custom UI layout using a `DataTemplate`.
+The `SfTreeView` control allows you to fully customize how empty content is displayed by using the [EmptyContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EmptyContentTemplate) property. This property lets you define a custom UI layout using a `DataTemplate`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,8 +74,10 @@ The `SfTreeView` control allows you to fully customize how empty content is disp
 
 ![EmptyContent in WPF TreeView](EmptyContent_images/wpf-treeview-emptycontent.gif)
 
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-display-and-customize-empty-content-when-no-data-is-available-in-WPF-TreeView-SfTreeView)
+
 ## Binding Empty Content from ViewModel
-`SfTreeView` supports data binding of `EmptyContent`, allowing you to update the empty content dynamically from the ViewModel.
+`SfTreeView` supports data binding of [EmptyContent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EmptyContent), allowing you to update the empty content dynamically from the ViewModel.
 
 {% tabs %}
 {% highlight xaml %}

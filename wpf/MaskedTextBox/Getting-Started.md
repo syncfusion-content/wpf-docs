@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF MaskedTextBox control | Syncfusion®
 description: Learn here about getting started with Syncfusion® WPF MaskedTextBox (SfMaskedEdit) control, its elements and more details.
-platform: WPF
+platform: wpf
 control: SfMaskedEdit
 documentation: ug
 ---
@@ -21,7 +21,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Adding WPF SfMaskedEdit via designer
 
@@ -134,7 +134,7 @@ sfMaskedEdit.Mask = @"-?\d+\.?\d*";
 
 Here, the `SfMaskedEdit` accept the positive and negative whole or float type numbers.
 
-N> Please refer the [Restrict the user to enter valid data](https://help.syncfusion.com/wpf/maskedtextbox/working-with-sfmaskededit#restrict-the-user-to-enter-valid-data) page to know more about the various mask pattern with examples.
+N> Please refer the [Restrict the user to enter valid data](https://help.syncfusion.com/wpf/maskedtextbox/input-restriction#restrict-the-user-to-enter-valid-data) page to know more about the various mask pattern with examples.
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -252,7 +252,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 you can notified when changing the value of `SfMaskedEdit.Value` property by using the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) event.
 
 N> Your valid input character is updated to the `Value` property based on the `ValidationMode` property.
-Refer  [Input Validation](https://help.syncfusion.com/wpf/maskedtextbox/working-with-sfmaskededit#input-validation) to know more about the `ValidationMode`.
+Refer  [Input Validation](https://help.syncfusion.com/wpf/maskedtextbox/input-restriction#input-validation) to know more about the `ValidationMode`.
 
 {% tabs %}
 {% highlight xaml %}

@@ -11,7 +11,7 @@ documentation: ug
 
 The WPF Gantt control supports data virtualization to improve performance when working with large datasets. When virtualization is enabled, the control renders only the nodes that are currently visible in the viewport, reducing memory usage and improving scrolling responsiveness.
 
-## How virtualization Works
+## How virtualization works
 
 Data virtualization in the Gantt control includes the following:
 
@@ -20,9 +20,9 @@ Data virtualization in the Gantt control includes the following:
 
 This approach ensures optimal performance even when working with thousands of tasks or long‑duration schedules.
 
-## Enable Timeline Virtualization
+## Enable timeline virtualization
 
-You can enable timeline virtualization by setting the `EnableTimelineVirtualization` property to `true` in WPF `GanttControl`. 
+You can enable timeline virtualization by setting the [`EnableTimelineVirtualization`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_EnableTimelineVirtualization) property to `true` in WPF [`GanttControl`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html). 
 
 {% tabs %}
 {% highlight xaml hl_lines="3" %}
@@ -44,7 +44,7 @@ You can enable timeline virtualization by setting the `EnableTimelineVirtualizat
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type syncfusion:GanttNode}">
-                        <Border Name="PART_Border" Height="22" Background="Green" VerticalAlignment="Center"
+                        <Border Name="PART_Border" Height="22" Background="#FF8CBE21" VerticalAlignment="Center"
                                 BorderThickness="0" ClipToBounds="True" CornerRadius="5" Opacity="0.8">
                             <Grid>
                                 <Border HorizontalAlignment="Left" VerticalAlignment="Center">
@@ -68,24 +68,24 @@ You can enable timeline virtualization by setting the `EnableTimelineVirtualizat
 {% endhighlight  %}
 {% highlight c# hl_lines="2" %}
 
-    this.Gantt.ItemsSource = new ViewModel().Tasks;
-    this.Gantt.EnableTimelineVirtualization = true;
+this.Gantt.ItemsSource = new ViewModel().Tasks;
+this.Gantt.EnableTimelineVirtualization = true;
 
-    // Task attribute mapping
-    TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
-    taskAttributeMapping.TaskNameMapping = "Name";
-    taskAttributeMapping.StartDateMapping = "StartDate";
-    taskAttributeMapping.ChildMapping = "SubItems";
-    taskAttributeMapping.FinishDateMapping = "FinishDate";
-    taskAttributeMapping.ProgressMapping="Progress";
-    taskAttributeMapping.InLineTaskMapping = "InLineItems";
-    this.Gantt.TaskAttributeMapping = taskAttributeMapping;
+// Task attribute mapping
+TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
+taskAttributeMapping.TaskNameMapping = "Name";
+taskAttributeMapping.StartDateMapping = "StartDate";
+taskAttributeMapping.ChildMapping = "SubItems";
+taskAttributeMapping.FinishDateMapping = "FinishDate";
+taskAttributeMapping.ProgressMapping="Progress";
+taskAttributeMapping.InLineTaskMapping = "InLineItems";
+this.Gantt.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight  %}
 {% highlight c# tabtitle="Task.cs" %}
 
- public class Task : NotificationObject
- {
+public class Task : NotificationObject
+{
     private string _name;
     private DateTime _startDate;
     private DateTime _finishDate;
@@ -251,7 +251,7 @@ You can enable timeline virtualization by setting the `EnableTimelineVirtualizat
         var tempCal = 0d;
         if (_subItems.Count > 0)
         {
-            /// Updating the start and end date based on the chagne occur in the date of child task
+            /// Updating the start and end date based on the changes occur in the date of child task
             StartDate = _subItems.Select(c => c.StartDate).Min();
             FinishDate = _subItems.Select(c => c.FinishDate).Max();
             Progress = (_subItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _subItems.Count;
@@ -259,13 +259,13 @@ You can enable timeline virtualization by setting the `EnableTimelineVirtualizat
 
         if (_inLineItems.Count > 0)
         {
-            /// Updating the start and end date based on the chagne occur in the date of child task
+            /// Updating the start and end date based on the changes occur in the date of child task
             StartDate = _inLineItems.Select(c => c.StartDate).Min();
             FinishDate = _inLineItems.Select(c => c.FinishDate).Max();
             Progress = (_inLineItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _inLineItems.Count;
         }
     }
- }
+}
 
 {% endhighlight  %}
 {% highlight c# tabtitle="ViewModel.cs" %}
