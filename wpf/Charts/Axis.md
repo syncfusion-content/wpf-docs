@@ -4013,7 +4013,7 @@ chart.SecondaryAxis = new NumericalAxis()
     ShowLabelBorder = true,
 };
 
-ChartMultiLevelLabel label5 = new ChartMultiLevelLabel()            
+ChartMultiLevelLabel label5 = new ChartMultiLevelLabel()
 {
 
     Start = 32,
