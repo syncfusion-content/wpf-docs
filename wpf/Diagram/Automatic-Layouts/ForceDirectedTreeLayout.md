@@ -15,21 +15,21 @@ The **Force-Directed Tree Layout** arranges nodes using a physics simulation: no
 ## Properties for Configuring Force-Directed Tree Layout (WPF)
 The following properties are used to configure the Force-Directed Tree Layout:
 
-- **MaximumIteration** (integer, recommended range: 100–5000)
+- **[MaximumIteration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_ForceDirectedTreeLayout_MaximumIteration)** (integer, recommended range: 100–5000)
     - Number of simulation cycles the algorithm runs to stabilize node positions.
     - **Trade-off:** Higher values produce more stable layouts but increase CPU time. Start with 500–2500 for typical diagrams.
 
-- **RepulsionStrength** (double, typical range: 3000–50000)
+- **[RepulsionStrength](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_ForceDirectedTreeLayout_RepulsionStrength)** (double, typical range: 3000–50000)
     - Magnitude of the repulsive force between nodes, preventing overlap and crowding.
     - **Trade-off:** Increase for more separation; decrease for denser layouts. Large values may slow layout.
 
-- **AttractionStrength** (double, range: 0..1)
+- **[AttractionStrength](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_ForceDirectedTreeLayout_AttractionStrength)** (double, range: 0..1)
     - How strongly connected nodes are pulled toward each other.
     - **Trade-off:** Values closer to 1 create tighter clusters; lower values allow connected nodes to spread out and ease congestion.
 
 ## Create a layout using Nodes and Connectors 
 
-Define nodes and connectors directly in XAML, then let the `ForceDirectedTreeLayout` arrange them.
+Define nodes and connectors directly in XAML, then let the [ForceDirectedTreeLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html?tabs=tabid-1) arrange them.
 
 {% tabs %}
 {% highlight xaml %}
@@ -597,7 +597,7 @@ private ConnectorViewModel Edge(string sourceId, string targetId)
 
 ## Create a Force-Directed Tree from a data source
 
-Bind a collection to `DataSourceSettings`. **At least one item must have a null or empty `Manager` property to act as the root node.** Configure the `LayoutManager` with `ForceDirectedTreeLayout`.
+Bind a collection to [DataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html). At least one item must have a null or empty `Manager` property to act as the root node. Configure the `LayoutManager` with [ForceDirectedTreeLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html?tabs=tabid-1).
 
 {% tabs %}
 {% highlight xaml %}
