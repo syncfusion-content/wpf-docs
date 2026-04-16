@@ -38,53 +38,39 @@ The following code example illustrates the use of [`CustomTemplate`](https://hel
 
 {% highlight xaml %}
 
- <syncfusion:SfChart x:Name="chart">
-
+  <syncfusion:SfChart x:Name="chart">
      <syncfusion:SfChart.Resources>
+         <local:ScatterInteriorConverter x:Key="scatterInteriorConverter"/>
+         <local:ScatterAngleConverter x:Key="scatterAngleConverter"/>         
+         <DataTemplate x:Key="seriesTemplate">
+             <Canvas>
+                 <Path 
+                     Fill="{Binding Converter={StaticResource scatterInteriorConverter}}"
+                     Stretch="Fill" 
+                     Height="{Binding ScatterHeight}"
+                     Width="{Binding ScatterWidth}" 
+                     RenderTransformOrigin="0.5,0.5" 
+                     Canvas.Left="{Binding RectX}" 
+                     Canvas.Top="{Binding RectY}" 
+                     Data="M20.125,32L0.5,12.375L10.3125,12.375L10.3125, 
+                         0.5L29.9375,0.5L29.9375,12.375L39.75,12.375z">
+                     <Path.RenderTransform>
+                         <RotateTransform Angle="{Binding Converter={StaticResource scatterAngleConverter}}"/>
+                     </Path.RenderTransform>
+                 </Path>
+             </Canvas>
+         </DataTemplate>
+     </syncfusion:SfChart.Resources>
 
-            <local:ScatterInteriorConverter x:Key="scatterInteriorConverter"/>
-
-            <local:ScatterAngleConverter x:Key="scatterAngleConverter"/>
-
-            <DataTemplate x:Key="seriesTemplate">
-
-                <Canvas>
-
-                    <Path Fill="{Binding Converter={StaticResource scatterInteriorConverter}}"
-                              
-                          Stretch="Fill" Height="{Binding ScatterHeight}"
-                              
-                          Width="{Binding ScatterWidth}" RenderTransformOrigin="0.5,0.5"
-                              
-                          Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
-                              
-                          Data="M20.125,32L0.5,12.375L10.3125,12.375L10.3125,
-                              
-                              0.5L29.9375,0.5L29.9375,12.375L39.75,12.375z">
-
-                          <Path.RenderTransform>
-
-                                <RotateTransform Angle="{Binding Converter={StaticResource scatterAngleConverter}}"/>
-
-                          </Path.RenderTransform>
-
-                        </Path>
-
-                    </Canvas>
-
-                </DataTemplate>
-
-    </syncfusion:SfChart.Resources>
-
-    <syncfusion:ScatterSeries  ScatterHeight="20" ScatterWidth="20" Interior="Gray"
-                                       
-                                XBindingPath="Year" YBindingPath="Count" 
-                                       
-                                ItemsSource="{Binding Data}"
-                                
-                                CustomTemplate="{StaticResource seriesTemplate}"/>
-
-</syncfusion:SfChart>
+     <syncfusion:ScatterSeries  
+         ScatterHeight="20" 
+         ScatterWidth="20" 
+         Interior="Gray"    
+         XBindingPath="Year" 
+         YBindingPath="Count" 
+         ItemsSource="{Binding Data}"
+         CustomTemplate="{StaticResource seriesTemplate}"/>
+ </syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -92,21 +78,13 @@ The following code example illustrates the use of [`CustomTemplate`](https://hel
 
 ScatterSeries series = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Year",
-
     YBindingPath = "Count",
-
     ScatterHeight = 20,
-
     ScatterWidth = 20,
-
     Interior = new SolidColorBrush(Colors.DarkGray),
-
     CustomTemplate = chart.Resources["seriesTemplate"] as DataTemplate
-
 };
 
 chart.Series.Add(series);

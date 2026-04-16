@@ -19,17 +19,13 @@ The following code example shows how to add the HistogramSeries:
 
 {% highlight xaml %}
 
-<chart:HistogramSeries x:Name="histogramSeries" 
-
-HistogramInterval="5" 
-
-Interior="#BCBCBC"
-
-ItemsSource="{Binding Product}"
-
-XBindingPath="Price" 
-
-YBindingPath="Value"/>
+<chart:HistogramSeries 
+    x:Name="histogramSeries" 
+    HistogramInterval="5" 
+    Interior="#BCBCBC"
+    ItemsSource="{Binding Product}"
+    XBindingPath="Price" 
+    YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -37,17 +33,11 @@ YBindingPath="Value"/>
 
 HistogramSeries series = new HistogramSeries()
 {
-
     ItemsSource = new ViewModel().Product,
-
     XBindingPath = "Price",
-
     YBindingPath = "Value",
-
     HistogramInterval = 5,
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
@@ -65,19 +55,14 @@ You can customize interval using [`HistogramInterval`](https://help.syncfusion.c
 
 {% highlight xaml %}
 
-<chart:HistogramSeries x:Name="histogramSeries" 
-
-HistogramInterval="5"
-
-ShowNormalDistributionCurve="False"
-
-Interior="#BCBCBC"
-
-ItemsSource="{Binding Product}"
-
-XBindingPath="Price" 
-
-YBindingPath="Value"/>
+<chart:HistogramSeries 
+    x:Name="histogramSeries" 
+    HistogramInterval="5"
+    ShowNormalDistributionCurve="False"
+    Interior="#BCBCBC"
+    ItemsSource="{Binding Product}"
+    XBindingPath="Price" 
+    YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -85,19 +70,12 @@ YBindingPath="Value"/>
 
 HistogramSeries series = new HistogramSeries()
 {
-
     ItemsSource = new ViewModel().Product,
-
     XBindingPath = "Price",
-
     YBindingPath = "Value",
-
     HistogramInterval = 5,
-
     ShowNormalDistributionCurve = false,
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
@@ -123,21 +101,15 @@ You can customize the normal distribution curve by using the [`CurveLineStyle`](
 </Style>
 ...
 
-<chart:HistogramSeries x:Name="histogramSeries" 
-
-HistogramInterval="5"
-
-ShowNormalDistributionCurve="True"
-
-CurveLineStyle="{StaticResource CurveColorStyle}"
-
-Interior="LightSkyBlue"
-
-ItemsSource="{Binding Product}"
-
-XBindingPath="Price" 
-
-YBindingPath="Value"/>
+<chart:HistogramSeries 
+    x:Name="histogramSeries" 
+    HistogramInterval="5"
+    ShowNormalDistributionCurve="True"
+    CurveLineStyle="{StaticResource CurveColorStyle}"
+    Interior="LightSkyBlue"
+    ItemsSource="{Binding Product}"
+    XBindingPath="Price" 
+    YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -146,21 +118,13 @@ YBindingPath="Value"/>
 ...
 HistogramSeries series = new HistogramSeries()
 {
-
     ItemsSource = new ViewModel().Product,
-
     XBindingPath = "Price",
-
     YBindingPath = "Value",
-
     HistogramInterval = 5,
-
     ShowNormalDistributionCurve = True,
-
     CurveLineStyle = histogramChart.Resources["CurveColorStyle"] as Style,
-
     Interior = new SolidColorBrush(new SolidColorBrush(Colors.LightSkyBlue))
-
 };
 
 chart.Series.Add(series);
