@@ -17,11 +17,7 @@ PyramidSeries has the form of a triangle with lines dividing it into sections an
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" 
-
-ItemsSource="{Binding Tax}"       
-
-YBindingPath="Percentage"/>
+<chart:PyramidSeries XBindingPath="Category" ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -29,13 +25,9 @@ YBindingPath="Percentage"/>
 
 PyramidSeries series = new PyramidSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage"
-
 };
 
 chart.Series.Add(series);
@@ -55,13 +47,11 @@ The [`PyramidMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" 
-
-PyramidMode="Surface"
-
-ItemsSource="{Binding Tax}"        
-
-YBindingPath="Percentage"/>
+<chart:PyramidSeries 
+    XBindingPath="Category" 
+    PyramidMode="Surface"
+    ItemsSource="{Binding Tax}"
+    YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -69,15 +59,10 @@ YBindingPath="Percentage"/>
 
 PyramidSeries series = new PyramidSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     PyramidMode = ChartPyramidMode.Surface
-
 };
 
 chart.Series.Add(series);
@@ -95,13 +80,11 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" 
-
-PyramidMode="Linear"
-
-ItemsSource="{Binding Tax}"          
-
-YBindingPath="Percentage"/>
+<chart:PyramidSeries 
+    PyramidMode="Linear"
+    ItemsSource="{Binding Tax}"
+    XBindingPath="Category" 
+    YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -109,15 +92,10 @@ YBindingPath="Percentage"/>
 
 PyramidSeries series = new PyramidSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     PyramidMode = ChartPyramidMode.Linear
-
 };
 
 chart.Series.Add(series);
@@ -140,9 +118,7 @@ The following code example shows how to use the funnel series:
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"  
-
-YBindingPath="Percentage" />
+<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding List}" YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -150,13 +126,9 @@ YBindingPath="Percentage" />
 
 FunnelSeries series = new FunnelSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
 };
 
 chart.Series.Add(series);
@@ -178,11 +150,11 @@ The [`FunnelMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"    
-
-FunnelMode="ValueIsHeight" 
-
-YBindingPath="Percentage"/>
+<chart:FunnelSeries 
+    ItemsSource="{Binding List}"
+    FunnelMode="ValueIsHeight" 
+    XBindingPath="Category"
+    YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -190,15 +162,10 @@ YBindingPath="Percentage"/>
 
 FunnelSeries series = new FunnelSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     FunnelMode = ChartFunnelMode.ValueIsHeight
-
 };
 
 chart.Series.Add(series);
@@ -215,11 +182,11 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"    
-
-FunnelMode="ValueIsWidth" 
-
-YBindingPath="Percentage" />
+<chart:FunnelSeries
+    ItemsSource="{Binding List}"
+    FunnelMode="ValueIsWidth"
+    XBindingPath="Category"
+    YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -227,15 +194,10 @@ YBindingPath="Percentage" />
 
 FunnelSeries series = new FunnelSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     FunnelMode = ChartFunnelMode.ValueIsWidth
-
 };
 
 chart.Series.Add(series);
@@ -261,11 +223,12 @@ The following properties are used to explode the individual segments in Funnel a
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"   
-
-ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage">
-
-</chart:FunnelSeries>
+<chart:FunnelSeries
+    XBindingPath="Category"
+    ItemsSource="{Binding List}"
+    ExplodeIndex="4"
+    ExplodeOffset="70"
+    YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -273,17 +236,11 @@ ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage">
 
 FunnelSeries series = new FunnelSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     ExplodeIndex = 4,
-
     ExplodeOffset = 70
-
 };
 
 chart.Series.Add(series);
@@ -302,11 +259,11 @@ The gap between each segment using [`GapRatio`](https://help.syncfusion.com/cr/w
 
 {% highlight xaml %}
 
-<chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"     
-
-GapRatio="0.5" YBindingPath="Percentage">
-
-</chart:FunnelSeries>
+<chart:FunnelSeries 
+    XBindingPath="Category" 
+    ItemsSource="{Binding List}"     
+    GapRatio="0.5" 
+    YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -314,15 +271,10 @@ GapRatio="0.5" YBindingPath="Percentage">
 
 FunnelSeries series = new FunnelSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     GapRatio = 0.5
-
 };
 
 chart.Series.Add(series);

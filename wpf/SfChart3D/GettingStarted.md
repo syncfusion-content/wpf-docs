@@ -159,7 +159,7 @@ As we are going to visualize the comparison of heights in the data model, add [`
 {% highlight xaml %}
 
   <chart:SfChart3D x:Name="Chart3D" Width="500" Height="500">
-            
+     
         <!--PrimaryAxis-->
         <chart:SfChart3D.PrimaryAxis>
             <chart:DateTimeAxis3D/>

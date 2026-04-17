@@ -19,13 +19,15 @@ The size of the bubble series is relative proportional to the value bind with th
 
 {% highlight xaml %}
 
-<chart:BubbleSeries  ItemsSource="{Binding Fruits}"  XBindingPath="FruitName" 
-
-YBindingPath="People"   Size="Size" MinimumRadius="5" 
-
-MaximumRadius="10"
-
-Interior="#BCBCBC" />
+<chart:BubbleSeries  
+    ItemsSource="{Binding Fruits}"  
+    XBindingPath="FruitName" 
+    YBindingPath="People"   
+    Size="Size" 
+    MinimumRadius="5" 
+    MaximumRadius="10"
+    Interior="#BCBCBC">
+</chart:BubbleSeries>
 
 {% endhighlight %}
 
@@ -33,21 +35,13 @@ Interior="#BCBCBC" />
 
 BubbleSeries series = new BubbleSeries()
 {
-
     ItemsSource = new ViewModel().Fruits,
-
     XBindingPath = "FruitName",
-
     YBindingPath = "People",
-
     Size = "Size",
-
     MinimumRadius = 5,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
-
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -67,16 +61,13 @@ The following code illustrates how to set the value to the property.
 
 {% highlight xaml %}
 
-<chart:BubbleSeries ShowZeroBubbles="True" >
-
-</chart:BubbleSeries>
+<chart:BubbleSeries ShowZeroBubbles="True"></chart:BubbleSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 BubbleSeries series = new BubbleSeries();
-
 series.ShowZeroBubbles = true;
 
 {% endhighlight %}
@@ -91,16 +82,13 @@ The following code example and screenshots describes when [`ShowZeroBubbles`](ht
 
 {% highlight xaml %}
 
-<chart:BubbleSeries ShowZeroBubbles="False" >
-
-</chart:BubbleSeries>
+<chart:BubbleSeries ShowZeroBubbles="False"></chart:BubbleSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 BubbleSeries series = new BubbleSeries();
-
 series.ShowZeroBubbles = false;
 
 {% endhighlight %}
@@ -117,11 +105,14 @@ series.ShowZeroBubbles = false;
 
 {% highlight xaml %}
 
-<chart:ScatterSeries Interior="#4A4A4A" ScatterHeight="4" ScatterWidth="4" 
-
-ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions" 
-
-YBindingPath="WaitingTime"/>
+<chart:ScatterSeries 
+    Interior="#4A4A4A" 
+    ScatterHeight="4" 
+    ScatterWidth="4" 
+    ItemsSource="{Binding DataPoints}" 
+    XBindingPath="Eruptions"
+    YBindingPath="WaitingTime">
+</chart:ScatterSeries>
 
 {% endhighlight %}
 
@@ -129,21 +120,13 @@ YBindingPath="WaitingTime"/>
 
 ScatterSeries series = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().DataPoints,
-
     XBindingPath = "Eruptions",
-
     YBindingPath = "WaitingTime",
-
     ScatterHeight = 4,
-
     ScatterWidth = 4,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
-
 chart.Series.Add(series);
 
 {% endhighlight %}

@@ -19,15 +19,11 @@ The following code example illustrates the use of radar series:
 
 {% highlight xaml %}
 
-<chart:RadarSeries ItemsSource="{Binding PlantDetails}" 
-
-Interior="#BCBCBC"
-
-XBindingPath="Direction"
-
-YBindingPath="Tree" >
-
-</chart:RadarSeries>        
+<chart:RadarSeries 
+    ItemsSource="{Binding PlantDetails}" 
+    Interior="#BCBCBC"
+    XBindingPath="Direction"
+    YBindingPath="Tree"/>
 
 {% endhighlight %}
 
@@ -35,15 +31,10 @@ YBindingPath="Tree" >
 
 RadarSeries series = new RadarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 chart.Series.Add(series);
@@ -64,13 +55,11 @@ N> You can explore our [WPF Radar Chart](https://www.syncfusion.com/wpf-controls
 
 {% highlight xaml %}
 
-<chart:PolarSeries Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-XBindingPath="Direction"
-
-YBindingPath="Tree" />                 
+<chart:PolarSeries 
+    Interior="#4A4A4A" 
+    ItemsSource="{Binding PlantDetails}"  
+    XBindingPath="Direction"
+    YBindingPath="Tree"/>
 
 {% endhighlight %}
 
@@ -78,15 +67,10 @@ YBindingPath="Tree" />
 
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -112,15 +96,16 @@ This property used to draw the closed path as below.
 
 {% highlight xaml %}
 
-<chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-Label="Amount Spent" DrawType="Line" IsClosed="False" 
-
-XBindingPath="Direction" YBindingPath="Tree" 
-
-StrokeThickness="2" />
+<chart:PolarSeries 
+    x:Name="series1" 
+    Interior="#4A4A4A" 
+    ItemsSource="{Binding PlantDetails}"  
+    Label="Amount Spent" 
+    DrawType="Line" 
+    IsClosed="False" 
+    XBindingPath="Direction" 
+    YBindingPath="Tree" 
+    StrokeThickness="2"/>
 
 {% endhighlight %}
 
@@ -128,23 +113,14 @@ StrokeThickness="2" />
 
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     IsClosed = false,
-
     DrawType = ChartSeriesDrawType.Line,
-
     Label = "Amount Spent",
-
     StrokeThickness = 2,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -165,13 +141,14 @@ This property defines type of curve, whether its [`Line`](https://help.syncfusio
 
 {% highlight xaml %}
 
-<chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-DrawType="Area" IsClosed="True" 
-
-XBindingPath="Direction" YBindingPath="Tree" />
+<chart:PolarSeries 
+    x:Name="series1" 
+    Interior="#4A4A4A" 
+    ItemsSource="{Binding PlantDetails}"
+    DrawType="Area"
+    IsClosed="True" 
+    XBindingPath="Direction" 
+    YBindingPath="Tree"/>
 
 {% endhighlight %}
 
@@ -179,19 +156,12 @@ XBindingPath="Direction" YBindingPath="Tree" />
 
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     IsClosed = True,
-
     DrawType = ChartSeriesDrawType.Area,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -208,15 +178,15 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-DrawType="Line" IsClosed="True" 
-
-XBindingPath="Direction" YBindingPath="Tree" 
-
-StrokeThickness="2" />
+<chart:PolarSeries 
+    x:Name="series1" 
+    Interior="#4A4A4A" 
+    ItemsSource="{Binding PlantDetails}"
+    DrawType="Line" 
+    IsClosed="True" 
+    XBindingPath="Direction" 
+    YBindingPath="Tree" 
+    StrokeThickness="2"/>
 
 {% endhighlight %}
 
@@ -224,21 +194,13 @@ StrokeThickness="2" />
 
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     IsClosed = True,
-
     DrawType = ChartSeriesDrawType.Line,
-
     StrokeThickness = 2,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -262,35 +224,25 @@ The below snippet explains how the axes of series has been rotated when [`PolarA
 {% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  PolarAngle="Rotate0"/>
-
+    <chart:CategoryAxis  PolarAngle="Rotate0"/>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis PolarAngle="Rotate0"/>
-
+    <chart:NumericalAxis PolarAngle="Rotate0"/>
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- chart.PrimaryAxis = new CategoryAxis()
-
- {
-
+chart.PrimaryAxis = new CategoryAxis()
+{
     PolarAngle = ChartPolarAngle.Rotate0
-
- };
+};
 
 chart.SecondaryAxis = new NumericalAxis()
-
 {
-
     PolarAngle = ChartPolarAngle.Rotate0
-            
 };
 
 {% endhighlight %}
@@ -309,35 +261,25 @@ The below snippet explains how the axes of series has been rotated when [`PolarA
 {% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  PolarAngle="Rotate90"/>
-
+    <chart:CategoryAxis PolarAngle="Rotate90"/>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis PolarAngle="Rotate90"/>
-
+    <chart:NumericalAxis PolarAngle="Rotate90"/>
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- chart.PrimaryAxis = new CategoryAxis()
-
- {
-
+chart.PrimaryAxis = new CategoryAxis()
+{
     PolarAngle = ChartPolarAngle.Rotate90
-
- };
+};
 
 chart.SecondaryAxis = new NumericalAxis()
-
 {
-
     PolarAngle = ChartPolarAngle.Rotate90
-            
 };
 
 {% endhighlight %}
@@ -356,35 +298,25 @@ The below snippet explains how the axes of series has been rotated when [`PolarA
 {% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  PolarAngle="Rotate180"/>
-
+    <chart:CategoryAxis PolarAngle="Rotate180"/>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis PolarAngle="Rotate180"/>
-
+    <chart:NumericalAxis PolarAngle="Rotate180"/>
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- chart.PrimaryAxis = new CategoryAxis()
-
- {
-
+chart.PrimaryAxis = new CategoryAxis()
+{
     PolarAngle = ChartPolarAngle.Rotate180
-
- };
+};
 
 chart.SecondaryAxis = new NumericalAxis()
-
 {
-
     PolarAngle = ChartPolarAngle.Rotate180
-            
 };
 
 {% endhighlight %}
@@ -403,35 +335,25 @@ The below snippet explains how the axes of series has been rotated, when [`Polar
 {% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  PolarAngle="Rotate270"/>
-
+    <chart:CategoryAxis PolarAngle="Rotate270"/>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis PolarAngle="Rotate270"/>
-
+    <chart:NumericalAxis PolarAngle="Rotate270"/>
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- chart.PrimaryAxis = new CategoryAxis()
-
- {
-
+chart.PrimaryAxis = new CategoryAxis()
+{                
     PolarAngle = ChartPolarAngle.Rotate270
-
- };
+};
 
 chart.SecondaryAxis = new NumericalAxis()
-
 {
-
     PolarAngle = ChartPolarAngle.Rotate270
-            
 };
 
 {% endhighlight %}

@@ -17,11 +17,7 @@ documentation: ug
 
 {% highlight xaml %}
 
-<chart:PieSeries  XBindingPath="Category" 
-
-                 ItemsSource="{Binding Tax}" 
-
-                  YBindingPath="Percentage"/>
+<chart:PieSeries XBindingPath="Category" ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -29,13 +25,9 @@ documentation: ug
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage"
-
 };
 
 chart.Series.Add(series);
@@ -52,13 +44,12 @@ The rendering size of the PieSeries can be controlled using [`PieCoefficient`](h
 
 {% highlight xaml %}
 
-<chart:PieSeries PieCoefficient="0.9" 
-
-XBindingPath="Category" 
-
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage"/>
+<chart:PieSeries 
+    PieCoefficient="0.9"
+    XBindingPath="Category" 
+    ItemsSource="{Binding Tax}" 
+    YBindingPath="Percentage">
+</chart:PieSeries>
 
 {% endhighlight %}
 
@@ -66,15 +57,10 @@ YBindingPath="Percentage"/>
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     PieCoefficient = 0.9
-
 };
 
 chart.Series.Add(series);
@@ -100,48 +86,54 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% highlight xaml %}
 
-        <Window.Resources>
-            <local:DataLabelTemplateConverter x:Key="DataLabelConverter"/>
+<Window.Resources>
+    <local:DataLabelTemplateConverter x:Key="DataLabelConverter"/>
 
-            <DataTemplate x:Key="DataLabelTemplate">
-                <StackPanel Orientation="Vertical" Margin="5">
-                    <TextBlock Text="{Binding Converter={StaticResource DataLabelConverter}}"                          
-                               Margin="3" Foreground="White">
-                    </TextBlock>
-                </StackPanel>
-            </DataTemplate>
-        </Window.Resources>
+    <DataTemplate x:Key="DataLabelTemplate">
+        <StackPanel Orientation="Vertical" Margin="5">
+            <TextBlock 
+                Text="{Binding Converter={StaticResource DataLabelConverter}}" 
+                Margin="3" 
+                Foreground="White">
+            </TextBlock>
+        </StackPanel>
+    </DataTemplate>
+</Window.Resources>
 
-            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"
-				   GroupMode="Value" GroupTo="1000" >
-
-                <chart:PieSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowConnectorLine="True" 
-                                              ConnectorHeight="80" 
-                                              ShowLabel="True" 
-                                              LabelTemplate="{StaticResource DataLabelTemplate}"  
-                                              SegmentLabelContent="LabelContentPath">
-                    </chart:ChartAdornmentInfo>
-                </chart:PieSeries.AdornmentsInfo>
-            </chart:PieSeries>
+<chart:PieSeries 
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Country" 
+    YBindingPath="Count"
+    GroupMode="Value" 
+    GroupTo="1000">
+    <chart:PieSeries.AdornmentsInfo>
+        <chart:ChartAdornmentInfo 
+            ShowConnectorLine="True"
+            ConnectorHeight="80"
+            ShowLabel="True"
+            LabelTemplate="{StaticResource DataLabelTemplate}"
+            SegmentLabelContent="LabelContentPath">
+        </chart:ChartAdornmentInfo>
+    </chart:PieSeries.AdornmentsInfo>
+</chart:PieSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            pieSeries.GroupMode = PieGroupMode.Value;
-            pieSeries.GroupTo = 1000;
+pieSeries.GroupMode = PieGroupMode.Angle;
+pieSeries.GroupTo = 30;
 
-            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowConnectorLine = true,
-                ShowLabel = true,
-                ConnectorHeight = 80,
-                LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
-                SegmentLabelContent = LabelContent.LabelContentPath,
-            };
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+    ShowConnectorLine = true,
+    ShowLabel = true,
+    ConnectorHeight = 80,
+    LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+    SegmentLabelContent = LabelContent.LabelContentPath,
+};
 
-            pieSeries.AdornmentsInfo = adornmentInfo;
+pieSeries.AdornmentsInfo = adornmentInfo;
 
 {% endhighlight %}
 
@@ -157,15 +149,19 @@ You can explore our KB article on showing adornment labels for grouped values in
 
 {% highlight xaml %}
 
-<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" 
-                 GroupMode="Angle" GroupTo="30">
-                 
+<chart:PieSeries 
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Country"
+    YBindingPath="Count"
+    GroupMode="Angle" 
+    GroupTo="30">
     <chart:PieSeries.AdornmentsInfo>
-        <chart:ChartAdornmentInfo ShowConnectorLine="True" 
-                                  ConnectorHeight="80" 
-                                  ShowLabel="True" 
-                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
-                                  SegmentLabelContent="LabelContentPath">
+        <chart:ChartAdornmentInfo 
+            ShowConnectorLine="True"   
+            ConnectorHeight="80" 
+            ShowLabel="True" 
+            LabelTemplate="{StaticResource DataLabelTemplate}"
+            SegmentLabelContent="LabelContentPath">
         </chart:ChartAdornmentInfo>
     </chart:PieSeries.AdornmentsInfo>
 </chart:PieSeries>
@@ -178,13 +174,13 @@ pieSeries.GroupMode = PieGroupMode.Angle;
 pieSeries.GroupTo = 30;
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-    {
-        ShowConnectorLine = true,
-        ShowLabel = true,
-        ConnectorHeight = 80,
-        LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
-        SegmentLabelContent = LabelContent.LabelContentPath,
-    };
+{
+    ShowConnectorLine = true,
+    ShowLabel = true,
+    ConnectorHeight = 80,
+    LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+    SegmentLabelContent = LabelContent.LabelContentPath,
+};
 
 pieSeries.AdornmentsInfo = adornmentInfo;
 
@@ -200,15 +196,19 @@ pieSeries.AdornmentsInfo = adornmentInfo;
 
 {% highlight xaml %}
 
-<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"                
-                 GroupMode="Percentage" GroupTo="10" >
-
+<chart:PieSeries 
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Country" 
+    YBindingPath="Count"
+    GroupMode="Percentage"
+    GroupTo="10" >
     <chart:PieSeries.AdornmentsInfo>
-        <chart:ChartAdornmentInfo ShowConnectorLine="True" 
-                                  ConnectorHeight="80" 
-                                  ShowLabel="True" 
-                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
-                                  SegmentLabelContent="LabelContentPath">
+        <chart:ChartAdornmentInfo 
+            ShowConnectorLine="True" 
+            ConnectorHeight="80" 
+            ShowLabel="True"
+            LabelTemplate="{StaticResource DataLabelTemplate}"  
+            SegmentLabelContent="LabelContentPath">
         </chart:ChartAdornmentInfo>
     </chart:PieSeries.AdornmentsInfo>
 </chart:PieSeries>
@@ -222,13 +222,13 @@ pieSeries.GroupMode = PieGroupMode.Percentage;
 pieSeries.GroupTo = 10;
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-    {
-        ShowConnectorLine = true,
-        ShowLabel = true,
-        ConnectorHeight = 80,
-        LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
-        SegmentLabelContent = LabelContent.LabelContentPath,
-    };
+{
+    ShowConnectorLine = true,
+    ShowLabel = true,
+    ConnectorHeight = 80,
+    LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+    SegmentLabelContent = LabelContent.LabelContentPath,
+};
 
 pieSeries.AdornmentsInfo = adornmentInfo;
 
@@ -250,11 +250,8 @@ The DoughnutSeries can be added to chart as in below code example:
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries XBindingPath="Category"
+<chart:DoughnutSeries XBindingPath="Category" ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
 
-                      ItemsSource="{Binding Tax}" 
-
-                      YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -262,11 +259,8 @@ The DoughnutSeries can be added to chart as in below code example:
 
 DoughnutSeries series = new DoughnutSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage"
 };
 
@@ -284,11 +278,12 @@ The Doughnut also having coefficient property, [`DoughnutCoefficient`](https://h
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries DoughnutCoefficient="0.7"                    
-
-XBindingPath="Category" ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage" />
+<chart:DoughnutSeries 
+    DoughnutCoefficient="0.7"                    
+    XBindingPath="Category" 
+    ItemsSource="{Binding Tax}" 
+    YBindingPath="Percentage">
+</chart:DoughnutSeries>
 
 {% endhighlight %}
 
@@ -296,13 +291,9 @@ YBindingPath="Percentage" />
 
 DoughnutSeries series = new DoughnutSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     DoughnutCoefficient = 0.9
 };
 
@@ -323,28 +314,20 @@ The size of doughnut series can be customized by using its [`DoughnutSize`](http
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-
-<syncfusion:DoughnutSeries DoughnutSize="0.8"/>
-       
-<syncfusion:DoughnutSeries DoughnutSize="0.8"/ >
-
+    <syncfusion:DoughnutSeries DoughnutSize="0.8"/>
+    <syncfusion:DoughnutSeries DoughnutSize="0.8"/>
 </syncfusion:SfChart>
-
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 DoughnutSeries doughnut = new DoughnutSeries();
-
 doughnut.DoughnutSize = 0.8;
-
 chart.Series.Add(doughnut);
 
 DoughnutSeries doughnut1 = new DoughnutSeries();
-
 doughnut1.DoughnutSize = 0.8;
-
 chart.Series.Add(doughnut1);
 
 {% endhighlight %}
@@ -361,16 +344,13 @@ chart.Series.Add(doughnut1);
 
 {% highlight xaml %}
 
-<Chart:SfChart Chart:DoughnutSeries.DoughnutHoleSize="0.2">
-    
-</chart:SfChart>
+<Chart:SfChart Chart:DoughnutSeries.DoughnutHoleSize="0.2"></chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfChart chart = new SfChart();
-
 DoughnutSeries.SetDoughnutHoleSize(chart, 0.2);
 
 {% endhighlight %}
@@ -388,13 +368,14 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries x:Name="PieSeries" StartAngle="180" EndAngle="360"    
-
-XBindingPath="Utilization" 
-
-YBindingPath="ResponseTime"
-
-ItemsSource="{Binding}"/>
+<syncfusion:PieSeries 
+    x:Name="PieSeries" 
+    StartAngle="180" 
+    EndAngle="360"
+    XBindingPath="Utilization" 
+    YBindingPath="ResponseTime"
+    ItemsSource="{Binding Value}">
+</syncfusion:PieSeries>
 
 {% endhighlight %}
 
@@ -402,17 +383,11 @@ ItemsSource="{Binding}"/>
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Value,
-
     XBindingPath = "Utilization",
-
     YBindingPath = "ResponseTime",
-
     StartAngle = 180,
-
     EndAngle = 360
-
 };
 
 chart.Series.Add(series);
@@ -429,11 +404,13 @@ chart.Series.Add(series);
 
 <syncfusion:DoughnutSeries StartAngle="180" EndAngle="360" 
 
-XBindingPath="Utilization"
-
-YBindingPath="ResponseTime" 
-
-ItemsSource="{Binding}"/>
+<syncfusion:DoughnutSeries 
+    StartAngle="180" 
+    EndAngle="360" 
+    XBindingPath="Utilization"
+    YBindingPath="ResponseTime" 
+    ItemsSource="{Binding Value}">
+</syncfusion:DoughnutSeries>
 
 {% endhighlight %}
 
@@ -441,17 +418,11 @@ ItemsSource="{Binding}"/>
 
 DoughnutSeries series = new DoughnutSeries()
 {
-
     ItemsSource = new ViewModel().Value,
-
     XBindingPath = "Utilization",
-
     YBindingPath = "ResponseTime",
-
     StartAngle = 180,
-
     EndAngle = 360
-
 };
 
 chart.Series.Add(series);
@@ -573,15 +544,14 @@ The following properties are used to explode the individual segments in Pie and 
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries x:Name="PieSeries" ItemsSource="{Binding}"          
-
-ExplodeIndex="2"
-
-ExplodeRadius="10"
-
-XBindingPath="Utilization" 
-
-YBindingPath="ResponseTime" />
+<syncfusion:PieSeries 
+    x:Name="PieSeries" 
+    ItemsSource="{Binding Data}"
+    ExplodeIndex="2"
+    ExplodeRadius="10"
+    XBindingPath="Utilization" 
+    YBindingPath="ResponseTime">
+</syncfusion:PieSeries>
 
 {% endhighlight %}
 
@@ -589,17 +559,11 @@ YBindingPath="ResponseTime" />
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Utilization",
-
     YBindingPath = "ResponseTime",
-
     ExplodeIndex = 2,
-
     ExplodeRadius = 10
-
 };
 
 chart.Series.Add(series);
@@ -618,15 +582,13 @@ N> We have defined ExplodeRadius as 30, by default its value is zero. So you nee
 
 {% highlight xaml %}
 
-<chart:PieSeries  ExplodeAll="True"
-
-ExplodeRadius="15"
-
-XBindingPath="Category" 
-
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage">
+<chart:PieSeries  
+    ExplodeAll="True"
+    ExplodeRadius="15"
+    XBindingPath="Category" 
+    ItemsSource="{Binding Tax}"
+    YBindingPath="Percentage">
+</chart:PieSeries>
 
 {% endhighlight %}
 
@@ -634,17 +596,11 @@ YBindingPath="Percentage">
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     ExplodeAll = true,
-
     ExplodeRadius = 15
-
 };
 
 chart.Series.Add(series);

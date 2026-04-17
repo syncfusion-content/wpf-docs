@@ -17,17 +17,16 @@ Line series join points on a plot by straight lines, showing data trends at equa
 
 {% highlight xaml %}
 
-<chart:LineSeries  XBindingPath="Year
-
-ItemsSource="{Binding List}" YBindingPath="India"               
-
-Interior="#4A4A4A"/>
-
-<chart:LineSeries  XBindingPath="Year"     
-
-ItemsSource="{Binding List}" YBindingPath="America"               
-
-Interior="#4A4A4A"/>
+<chart:LineSeries  
+    XBindingPath="Year"
+    ItemsSource="{Binding List}" 
+    YBindingPath="India"               
+    Interior="#4A4A4A"/>
+<chart:LineSeries                     
+    XBindingPath="Year"     
+    ItemsSource="{Binding List}" 
+    YBindingPath="America"               
+    Interior="#4A4A4A"/>
 
 {% endhighlight %}
 
@@ -35,32 +34,21 @@ Interior="#4A4A4A"/>
 
 LineSeries series1 = new LineSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "India",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 LineSeries series2 = new LineSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "America",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series1);
-
 chart.Series.Add(series2);
 
 {% endhighlight %}
@@ -79,24 +67,19 @@ N> You can explore our [WPF Line Chart](https://www.syncfusion.com/wpf-controls/
 
 {% highlight xaml %}
 
-<chart:StepLineSeries ItemsSource="{Binding Data}"  
-                      
-                      XBindingPath="XValue" 
-                      
-                      YBindingPath="YValue">
-            
- </chart:StepLineSeries>
+<chart:StepLineSeries
+    ItemsSource="{Binding Data}" 
+    XBindingPath="XValue"
+    YBindingPath="YValue">
+</chart:StepLineSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 StepLineSeries stepLine = new StepLineSeries();
-
 stepLine.ItemsSource = new ViewModel().Data;
-
 stepLine.XBindingPath = "XValue";
-
 stepLine.YBindingPath = "YValue";
 
 SteplineChart.Series.Add(stepLine);

@@ -67,11 +67,9 @@ Then initialize an empty chart with two axes as shown below,
 SfChart chart = new SfChart();
 
 CategoryAxis primaryAxis = new CategoryAxis();
-
 chart.PrimaryAxis = primaryAxis; 
-   
-NumericalAxis secondaryAxis = new NumericalAxis();
 
+NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
 
 {% endhighlight %}
@@ -81,11 +79,9 @@ chart.SecondaryAxis = secondaryAxis;
 Dim chart As New SfChart()
 
 Dim primaryAxis As New CategoryAxis () 
-
 chart.PrimaryAxis = primaryAxis 
 
 Dim secondaryAxis As New NumericalAxis ()  
-
 chart.SecondaryAxis = secondaryAxis
 
 {% endhighlight %}
@@ -109,7 +105,6 @@ Now, let us define a simple data model that represents a data point in [WPF Char
 public class Person   
 {   
     public string Name { get; set; }
-
     public double Height { get; set; }
 }
 
@@ -120,7 +115,6 @@ public class Person
 Public Class Person
 
     Public Property Name As String
-
     Public Property Height As Double
 
 End Class
@@ -138,19 +132,19 @@ Next, create a view model class and initialize a list of `Person` objects as fol
 
 public class ViewModel  
 {
-      public List<Person> Data { get; set; }      
+    public List<Person> Data { get; set; }      
 
-      public ViewModel()       
-      {
-            Data = new List<Person>()
-            {
-                new Person { Name = "David", Height = 180 },
-                new Person { Name = "Michael", Height = 170 },
-                new Person { Name = "Steve", Height = 160 },
-                new Person { Name = "Joel", Height = 182 }
-            }; 
-       }
- }
+    public ViewModel()       
+    {
+        Data = new List<Person>()
+        {
+            new Person { Name = "David", Height = 180 },
+            new Person { Name = "Michael", Height = 170 },
+            new Person { Name = "Steve", Height = 160 },
+            new Person { Name = "Joel", Height = 182 }
+        }; 
+    }
+}
 
 {% endhighlight %} 
 
@@ -197,9 +191,7 @@ N> Add namespace of `ViewModel` class to your XAML window if you prefer to set `
     <Window.DataContext>
         <local:ViewModel/>
     </Window.DataContext>
-
 </Window>
-
 
 {% endhighlight %}
 
@@ -228,23 +220,17 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusio
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-   
-  <syncfusion:SfChart.PrimaryAxis>
-    
-      <syncfusion:CategoryAxis Header="Name" />             
-   
-  </syncfusion:SfChart.PrimaryAxis>
+    <syncfusion:SfChart.PrimaryAxis>
+        <syncfusion:CategoryAxis Header="Name" />
+    </syncfusion:SfChart.PrimaryAxis>
 
-  <syncfusion:SfChart.SecondaryAxis>
-  
-      <syncfusion:NumericalAxis Header="Height(in cm)" />                        
+    <syncfusion:SfChart.SecondaryAxis>
+        <syncfusion:NumericalAxis Header="Height(in cm)" />
+    </syncfusion:SfChart.SecondaryAxis>
 
-  </syncfusion:SfChart.SecondaryAxis>
-    
-   <syncfusion:ColumnSeries  ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height" >
-  </syncfusion:ColumnSeries>
-
- </syncfusion:SfChart> 
+    <syncfusion:ColumnSeries  ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height" >
+    </syncfusion:ColumnSeries>
+</syncfusion:SfChart> 
 
 {% endhighlight %}
 
@@ -253,26 +239,17 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusio
 SfChart chart = new SfChart();
 
 //Adding horizontal axis to the chart 
-
 CategoryAxis primaryAxis = new CategoryAxis();
-
 primaryAxis.Header = "Name";      
-
 chart.PrimaryAxis = primaryAxis;
 
-
 //Adding vertical axis to the chart 
-
 NumericalAxis secondaryAxis = new NumericalAxis();
-
 secondaryAxis.Header = "Height(in cm)";          
-
 chart.SecondaryAxis = secondaryAxis;
-
 
 //Initialize the two series for SfChart
 ColumnSeries series = new ColumnSeries();
-
 series.ItemsSource = (new ViewModel()).Data;
 series.XBindingPath = "Name";            
 series.YBindingPath = "Height";         
@@ -287,19 +264,13 @@ chart.Series.Add(series);
 Dim chart As New SfChart()
 
 'Adding horizontal axis to the chart 
-
 Dim primaryAxis As New CategoryAxis()
-
 primaryAxis.Header = "Name"
 chart.PrimaryAxis = primaryAxis
 
-
 'Adding vertical axis to the chart  
-
 Dim secondaryAxis As New NumericalAxis()
-
 secondaryAxis.Header = "Height(in cm)"
-
 chart.SecondaryAxis = secondaryAxis        
 
 'Initialize the two series for SfChart
@@ -310,7 +281,6 @@ series.XBindingPath = "Name"
 series.YBindingPath = "Height"
         
 'Adding Series to the Chart Series Collection
-
 chart.Series.Add(series)
 
 {% endhighlight %}
@@ -328,10 +298,8 @@ The header of the chart acts as the title to provide quick information to the us
 {% highlight xaml %}
 
 <Grid>
-
    <syncfusion:SfChart Header="Chart"> 
    </syncfusion:SfChart> 
-
 </Grid>
 
 {% endhighlight %}
@@ -362,17 +330,13 @@ You can add data labels to improve the readability of the chart and it can be en
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-
 	...
-
   <syncfusion:ColumnSeries > 
      <syncfusion:ColumnSeries.AdornmentsInfo>
           <syncfusion:ChartAdornmentInfo ShowLabel="True"/> 
      </syncfusion:ColumnSeries.AdornmentsInfo> 
   </syncfusion:ColumnSeries>     
-
 	...
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -402,17 +366,11 @@ You can enable legend using the [`SfChart.Legend`](https://help.syncfusion.com/c
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-
-	...
-
-    <syncfusion:SfChart.Legend>
-
-        <syncfusion:ChartLegend/>
-
-    </syncfusion:SfChart.Legend>
-
     ...
-
+    <syncfusion:SfChart.Legend>
+        <syncfusion:ChartLegend/>
+    </syncfusion:SfChart.Legend>
+    ...
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -537,9 +495,8 @@ The following code example gives you the complete code of above configurations.
     <Window.DataContext>
         <local:ViewModel/>
     </Window.DataContext>
-    
-    <Grid>
 
+    <Grid>
         <syncfusion:SfChart Header="Chart" Height="300" Width="500">
             <!--Initialize the horizontal axis for SfChart-->
             <syncfusion:SfChart.PrimaryAxis>
@@ -563,27 +520,23 @@ The following code example gives you the complete code of above configurations.
                     </syncfusion:ChartAdornmentInfo>
                 </syncfusion:ColumnSeries.AdornmentsInfo>
             </syncfusion:ColumnSeries>
-                      
         </syncfusion:SfChart>
-
     </Grid>
 </Window>
- 
+
 {% endhighlight %}
 
 {% highlight C# %} 
 
 using Syncfusion.UI.Xaml.Charts;
-
 namespace ChartDemo
 {
-    
-    public sealed partial class  MainWindow : Window
+    public sealed partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-            
+
             SfChart chart = new SfChart() { Header = "Chart", Height = 300, Width = 500 };
 
             //Adding horizontal axis to the chart 
@@ -605,10 +558,10 @@ namespace ChartDemo
             //Initializing column series
             ColumnSeries series = new ColumnSeries();
             series.ItemsSource = (new ViewModel()).Data;
-            series.XBindingPath = "Name";            
+            series.XBindingPath = "Name";
             series.YBindingPath = "Height";
             series.ShowTooltip = true;
-            series.Label = "Heights";      
+            series.Label = "Heights";
 
             //Setting adornment to the chart series
             series.AdornmentsInfo = new ChartAdornmentInfo() { ShowLabel = true };
@@ -616,9 +569,8 @@ namespace ChartDemo
             //Adding Series to the Chart Series Collection
             chart.Series.Add(series);
             this.Content = chart;
-                      
         }
-    }   
+    }
 }
 
 {% endhighlight %}
@@ -627,8 +579,9 @@ namespace ChartDemo
 
 Imports Syncfusion.UI.Xaml.Charts
 Partial Public Class MainWindow
-    Inherits Window   
+    Inherits Window
     Public Sub New()
+
         InitializeComponent()
 
         Dim chart As New SfChart()
@@ -663,10 +616,9 @@ Partial Public Class MainWindow
         series.ShowTooltip = True
 
         'Setting adornment to the chart series
-        series.AdornmentsInfo = New ChartAdornmentInfo() With {.ShowLabel = True}       
+        series.AdornmentsInfo = New ChartAdornmentInfo() With {.ShowLabel = True}
 
         'Adding Series to the Chart Series Collection
-
         chart.Series.Add(series)
 
         Me.Content = chart

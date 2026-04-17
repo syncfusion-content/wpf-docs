@@ -17,12 +17,9 @@ documentation: ug
 
 {% highlight xaml %}
 
-<chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"  
-                          
-                            XBindingPath="Department" 
-                          
-                            YBindingPath="Age">
-
+<chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
+    XBindingPath="Department"  
+    YBindingPath="Age">
 </chart:BoxAndWhiskerSeries>
 
 {% endhighlight %}
@@ -30,11 +27,8 @@ documentation: ug
 {% highlight c# %}
 
 BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
-
 boxAndWhisker.ItemsSource = new BoxWhiskerViewModel().BoxWhiskerData;
-
 boxAndWhisker.XBindingPath = "Department";
-
 boxAndWhisker.YBindingPath = "Age";
 
 boxWhiskerChart.Series.Add(boxAndWhisker);
@@ -65,16 +59,13 @@ The following code illustrates how to define the [`BoxPlotMode`](https://help.sy
 
 {% highlight xaml %}
 
-<chart:BoxAndWhiskerSeries  BoxPlotMode="Normal">
-
-</chart:BoxAndWhiskerSeries>
+<chart:BoxAndWhiskerSeries BoxPlotMode="Normal"></chart:BoxAndWhiskerSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
-
 boxAndWhisker.BoxPlotMode = BoxPlotMode.Normal;
 
 {% endhighlight %}
@@ -91,16 +82,13 @@ The following code illustrates how to define the [`BoxPlotMode`](https://help.sy
 
 {% highlight xaml %}
 
-<chart:BoxAndWhiskerSeries  BoxPlotMode="Inclusive">
-
-</chart:BoxAndWhiskerSeries>
+<chart:BoxAndWhiskerSeries BoxPlotMode="Inclusive"></chart:BoxAndWhiskerSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
-
 boxAndWhisker.BoxPlotMode = BoxPlotMode.Inclusive;
 
 {% endhighlight %}
@@ -117,16 +105,13 @@ The Median values of given dataset is viewed by enabling the [`ShowMedian`](http
 
 {% highlight xaml %}
 
-<chart:BoxAndWhiskerSeries ShowMedian="True">
-
-</chart:BoxAndWhiskerSeries>
+<chart:BoxAndWhiskerSeries ShowMedian="True"></chart:BoxAndWhiskerSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
-
 boxAndWhisker.ShowMedian = true;
 
 {% endhighlight %}
@@ -152,16 +137,13 @@ The outlier value in the box plot can be viewed by enabling the [`ShowOutlier`](
 
 {% highlight xaml %}
 
-<chart:BoxAndWhiskerSeries ShowOutlier="False">
-
-</chart:BoxAndWhiskerSeries>
+<chart:BoxAndWhiskerSeries ShowOutlier="False"></chart:BoxAndWhiskerSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
-
 boxAndWhisker.ShowOutlier = false;
 
 {% endhighlight %}
@@ -179,29 +161,22 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 {% highlight xaml %}
 
 <chart:BoxAndWhiskerSeries.OutlierTemplate>
-
     <DataTemplate>
-
         <Canvas>
-
-                 <Path Stretch="Fill" Height="10" Width="10"  Fill="{Binding Interior}" 
-                              
-                         Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
-      
-                            Data="F1 M 145.193,54.8249L 169.315,54.8249L 169.315,
-            
-                                    78.9463L 145.193,78.9463L 145.193,103.074L 121.071,
-            
-                                    103.074L 121.071,78.9463L 96.946,78.9463L 96.946,
-           
-                                    54.8249L 121.071,54.8249L 121.071,
-            
-                                    30.6983L 145.193,30.6983L 145.193,54.8249 Z"/>
-
-          </Canvas>
-
+            <Path 
+                Stretch="Fill" 
+                Height="10" 
+                Width="10"  
+                Fill="{Binding Interior}"
+                Canvas.Left="{Binding RectX}" 
+                Canvas.Top="{Binding RectY}"
+                Data="F1 M 145.193,54.8249L 169.315,54.8249L 169.315,
+                    78.9463L 145.193,78.9463L 145.193,103.074L 121.071,
+                    103.074L 121.071,78.9463L 96.946,78.9463L 96.946,
+                    54.8249L 121.071,54.8249L 121.071,
+                    30.6983L 145.193,30.6983L 145.193,54.8249 Z"/>
+        </Canvas>
     </DataTemplate>
-
 </chart:BoxAndWhiskerSeries.OutlierTemplate>
 
 {% endhighlight %}
@@ -220,12 +195,10 @@ The following code illustrates how to use the series in chart.
 
 {% highlight xaml %}
 
-<chart:WaterfallSeries ItemsSource="{Binding RevenueDetails}"  
-                      
-                       XBindingPath="Category" 
-                      
-                       YBindingPath="Value">
-
+<chart:WaterfallSeries 
+    ItemsSource="{Binding RevenueDetails}"
+    XBindingPath="Category"                      
+    YBindingPath="Value">
 </chart:WaterfallSeries>
 
 {% endhighlight %}
@@ -233,11 +206,8 @@ The following code illustrates how to use the series in chart.
 {% highlight c# %}
 
 WaterfallSeries waterfallSeries = new WaterfallSeries();
-
 waterfallSeries.ItemsSource = new ViewModel().RevenueDetails;
-
 waterfallSeries.XBindingPath = "Category";
-
 waterfallSeries.YBindingPath = "Value";
 
 chart.Series.Add(waterfallSeries);
@@ -259,16 +229,12 @@ The summary segment can be differentiated by applying the [`SummarySegmentBrush`
 
 {% highlight xaml %}
 
-<chart:WaterfallSeries ItemsSource="{Binding RevenueDetails}"  
-                                  
-                                   XBindingPath="Category"
-                                  
-                                   YBindingPath="Value" Interior="Gray"
-                                  
-                                   SummaryBindingPath="IsSummary"
-                                  
-                                   SummarySegmentBrush="RoyalBlue">
-
+<chart:WaterfallSeries 
+    ItemsSource="{Binding RevenueDetails}"
+    XBindingPath="Category"
+    YBindingPath="Value" Interior="Gray" 
+    SummaryBindingPath="IsSummary"
+    SummarySegmentBrush="RoyalBlue">
 </chart:WaterfallSeries>
 
 {% endhighlight %}
@@ -276,15 +242,10 @@ The summary segment can be differentiated by applying the [`SummarySegmentBrush`
 {% highlight c# %}
 
 WaterfallSeries waterfallSeries = new WaterfallSeries();
-
 waterfallSeries.ItemsSource = new ViewModel().RevenueDetails;
-
 waterfallSeries.XBindingPath = "Category";
-
 waterfallSeries.YBindingPath = "Value";
-
 waterfallSeries.SummaryBindingPath = "IsSummary";
-
 waterfallSeries.SummarySegmentBrush = new SolidColorBrush(Colors.RoyalBlue);
 
 chart.Series.Add(waterfallSeries);
@@ -305,9 +266,7 @@ The following code illustrates how to change the appearance of the negative segm
 
 {% highlight xaml %}
 
-<chart:WaterfallSeries NegativeSegmentBrush="Red">
-
-</chart:WaterfallSeries>
+<chart:WaterfallSeries NegativeSegmentBrush="Red"></chart:WaterfallSeries>
 
 {% endhighlight %}
 
@@ -315,7 +274,6 @@ The following code illustrates how to change the appearance of the negative segm
 
 
 WaterfallSeries waterfallSeries = new WaterfallSeries();
-
 waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
 
 {% endhighlight %}
@@ -334,24 +292,19 @@ The following code example illustrates how the AllowAutoSum property value can b
 
 {% highlight xaml %}
 
-<chart:WaterfallSeries AllowAutoSum="False"
-                       
-                       SummaryBindingPath="IsSummary"
-                       
-                       SummarySegmentBrush="RoyalBlue">
- 
- </chart:WaterfallSeries>
+<chart:WaterfallSeries 
+    AllowAutoSum="False" 
+    SummaryBindingPath="IsSummary" 
+    SummarySegmentBrush="RoyalBlue">
+</chart:WaterfallSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 WaterfallSeries waterfallSeries = new WaterfallSeries();
-
 waterfallSeries.AllowAutoSum = true;
-
 waterfallSeries.SummaryBindingPath = "IsSummary";
-
 waterfallSeries.SummarySegmentBrush = new SolidColorBrush(Colors.RoyalBlue);
 
 chart.Series.Add(waterfallSeries);
@@ -370,16 +323,13 @@ The connector line of series can be enabled or disabled by using its [`ShowConne
 
 {% highlight xaml %}
 
-<chart:WaterfallSeries ShowConnector="False">
-
-</chart:WaterfallSeries>
+<chart:WaterfallSeries ShowConnector="False"></chart:WaterfallSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 WaterfallSeries waterfallSeries = new WaterfallSeries();
-
 waterfallSeries.ShowConnector = false;
 
 {% endhighlight %}
@@ -397,17 +347,11 @@ The connector line can be customized by applying [`ConnectorLineStyle`](https://
 {% highlight xaml %}
 
 <chart:WaterfallSeries.ConnectorLineStyle>
-
-<Style TargetType="Line">
-
-<Setter Property="Stroke" Value="Red"/>
-
-<Setter Property="StrokeDashArray" Value="1"/>
-
-<Setter Property="StrokeThickness" Value="2"/>
-
-</Style>
-
+    <Style TargetType="Line">
+        <Setter Property="Stroke" Value="Red"/>
+        <Setter Property="StrokeDashArray" Value="1"/>
+        <Setter Property="StrokeThickness" Value="2"/>
+    </Style>
 </chart:WaterfallSeries.ConnectorLineStyle>
 
 {% endhighlight %}
@@ -415,15 +359,11 @@ The connector line can be customized by applying [`ConnectorLineStyle`](https://
 {% highlight c# %}
 
 Style style = new Style(typeof(Line));
-
 style.Setters.Add(new Setter(Line.StrokeProperty, new SolidColorBrush(Colors.Red)));
-
 style.Setters.Add(new Setter(Line.StrokeDashArrayProperty, new DoubleCollection() { 1 }));
-
 style.Setters.Add(new Setter(Line.StrokeThicknessProperty, 2));
 
 WaterfallSeries series = new WaterfallSeries();
-
 series.ConnectorLineStyle = style;
 
 {% endhighlight %}
