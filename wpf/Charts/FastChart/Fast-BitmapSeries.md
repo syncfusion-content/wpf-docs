@@ -21,11 +21,12 @@ The following code example shows how to use the fast line bitmap series:
 
 {% highlight xaml %}
 
-<chart:FastLineBitmapSeries x:Name="FastLineSeries" ItemsSource="{Binding Data}"
-
-XBindingPath="Date" Interior="#7F7F7F" 
-
-YBindingPath="Value" />
+<chart:FastLineBitmapSeries 
+    x:Name="FastLineSeries" 
+    ItemsSource="{Binding Data}"
+    XBindingPath="Date"
+    Interior="#7F7F7F"
+    YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -33,15 +34,10 @@ YBindingPath="Value" />
 
 FastLineBitmapSeries series = new FastLineBitmapSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -60,13 +56,12 @@ N> As it was rendered using bitmap, there might be some jagged lines at edges. T
 
 {% highlight xaml %}
 
-<chart:FastLineBitmapSeries x:Name="FastLineSeries" 
-
-XBindingPath="Date" Interior="#7F7F7F" 
-
-StrokeDashArray="5,5"
-
-YBindingPath="Value" EnableAntiAliasing="True"/>
+<chart:FastLineBitmapSeries 
+    x:Name="FastLineSeries" 
+    XBindingPath="Date" Interior="#7F7F7F" 
+    StrokeDashArray="5,5"
+    YBindingPath="Value" 
+    EnableAntiAliasing="True"/>
 
 {% endhighlight %}
 
@@ -74,19 +69,12 @@ YBindingPath="Value" EnableAntiAliasing="True"/>
 
 FastLineBitmapSeries series = new FastLineBitmapSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     EnableAntiAliasing =true,
-
     StrokeDashArray =new DoubleCollection() { 5,5},
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -106,11 +94,11 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastColumnBitmapSeries Interior="#7F7F7F"
-
-ItemsSource="{Binding List}" 
-
-XBindingPath="Date" YBindingPath="Price" />
+<chart:FastColumnBitmapSeries                
+    Interior="#7F7F7F"
+    ItemsSource="{Binding List}" 
+    XBindingPath="Date"                
+    YBindingPath="Price"/>
 
 {% endhighlight %}
 
@@ -118,15 +106,10 @@ XBindingPath="Date" YBindingPath="Price" />
 
 FastColumnBitmapSeries series = new FastColumnBitmapSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -145,11 +128,12 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastBarBitmapSeries x:Name="FastBarBitmapSeries" ItemsSource="{Binding List}" 
-
-XBindingPath="Date" YBindingPath="Price" 
-
-Interior="#7F7F7F"/>
+<chart:FastBarBitmapSeries 
+    x:Name="FastBarBitmapSeries" 
+    ItemsSource="{Binding List}" 
+    XBindingPath="Date" 
+    YBindingPath="Price" 
+    Interior="#7F7F7F"/>
 
 {% endhighlight %}
 
@@ -157,15 +141,10 @@ Interior="#7F7F7F"/>
 
 FastBarBitmapSeries series = new FastBarBitmapSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -185,15 +164,15 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastCandleBitmapSeries ItemsSource="{Binding TestingModel}" 
-
-XBindingPath="X" High="Y" 
-
-Low="Y1" Open="Y2" Close="Y3" 
-
-BullFillColor="#BCBCBC" 
-
-BearFillColor="#4A4A4A"  />
+<chart:FastCandleBitmapSeries 
+    ItemsSource="{Binding TestingModel}" 
+    XBindingPath="X" 
+    High="Y" 
+    Low="Y1" 
+    Open="Y2" 
+    Close="Y3" 
+    BullFillColor="#BCBCBC" 
+    BearFillColor="#4A4A4A"/>
 
 {% endhighlight %}
 
@@ -201,19 +180,12 @@ BearFillColor="#4A4A4A"  />
 
 FastCandleBitmapSeries series = new FastCandleBitmapSeries()
 {
-
     ItemsSource = new ViewModel().TestingModel,
-
     XBindingPath = "X",
-
     High="Y", Low="Y1",
-
     Open="Y2", Close="Y3",
-
     BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
-
     BearFillColor = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -233,11 +205,13 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastHiLoBitmapSeries StrokeThickness="5" ItemsSource="{Binding List}"          
-
-Interior="#7F7F7F" XBindingPath="Date" High="Stock"     
-
-Low="Price"/>
+<chart:FastHiLoBitmapSeries 
+    StrokeThickness="5" 
+    ItemsSource="{Binding List}" 
+    Interior="#7F7F7F" 
+    XBindingPath="Date" 
+    High="Stock" 
+    Low="Price"/>
 
 {% endhighlight %}
 
@@ -245,17 +219,11 @@ Low="Price"/>
 
 FastHiLoBitmapSeries series = new FastHiLoBitmapSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Date",
-
     High = "Stock",Low = "Price",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F)),
-
     StrokeThickness = 5
-
 };
 
 chart.Series.Add(series);
@@ -274,13 +242,15 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastHiLoOpenCloseBitmapSeries ItemsSource="{Binding TestingModel}" 
-
-XBindingPath="X" High="Y" Low="Y1" Open="Y2"        
-
-Close="Y3"   BullFillColor="#7F7F7F"      
-
-BearFillColor="#4A4A4A"/>
+<chart:FastHiLoOpenCloseBitmapSeries 
+    ItemsSource="{Binding TestingModel}"
+    XBindingPath="X" 
+    High="Y" 
+    Low="Y1" 
+    Open="Y2"        
+    Close="Y3"  
+    BullFillColor="#7F7F7F"
+    BearFillColor="#4A4A4A"/>
 
 {% endhighlight %}
 
@@ -288,20 +258,14 @@ BearFillColor="#4A4A4A"/>
 
 FastHiLoOpenCloseBitmapSeries series = new FastHiLoOpenCloseBitmapSeries()
 {
-
     ItemsSource = new ViewModel().TestingModel,
-
     XBindingPath = "X",
-
-    High="Y", Low="Y1",
-
-    Open="Y2", Close="Y3",
-
+    High="Y", 
+    Low="Y1",
+    Open="Y2",
+    Close="Y3",
     BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
-
-    BearFillColor = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
-};
+    BearFillColor = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))};
 
 chart.Series.Add(series);
 
@@ -319,15 +283,14 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastScatterBitmapSeries Interior="#7F7F7F"   
-
-ItemsSource="{Binding Data}"                         
-
-x:Name="FastScatterSeries"  XBindingPath="Date" 
-
-YBindingPath="Value" ScatterHeight="4"  
-
-ScatterWidth="4"/>
+<chart:FastScatterBitmapSeries
+    Interior="#7F7F7F"
+    ItemsSource="{Binding Data}"
+    x:Name="FastScatterSeries"
+    XBindingPath="Date"
+    YBindingPath="Value"
+    ScatterHeight="4"
+    ScatterWidth="4"/>
 
 {% endhighlight %}
 
@@ -335,19 +298,12 @@ ScatterWidth="4"/>
 
 FastScatterBitmapSeries series = new FastScatterBitmapSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     ScatterHeight = 4,
-
     ScatterWidth = 4,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series);
@@ -367,11 +323,11 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}"
-
-XBindingPath="Date"                                 
-
-YBindingPath="Value" Interior="#4A4A4A" />
+<chart:FastStepLineBitmapSeries
+    ItemsSource="{Binding Data}"
+    XBindingPath="Date"
+    YBindingPath="Value"
+    Interior="#4A4A4A"/>
 
 {% endhighlight %}
 
@@ -379,15 +335,10 @@ YBindingPath="Value" Interior="#4A4A4A" />
 
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -404,11 +355,13 @@ The anti aliasing mode can be enabled using [`EnableAntiAliasing`](https://help.
 
 {% highlight xaml %}
 
-<chart:FastStepLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}"
-
-x:Name="FastStepLineSeries" XBindingPath="Date" 
-
-YBindingPath="Value" Interior="#4A4A4A"/>
+<chart:FastStepLineBitmapSeries
+    EnableAntiAliasing="True"
+    ItemsSource="{Binding Data}"
+    x:Name="FastStepLineSeries"
+    XBindingPath="Date"
+    YBindingPath="Value"
+    Interior="#4A4A4A"/>
 
 {% endhighlight %}
 
@@ -416,17 +369,11 @@ YBindingPath="Value" Interior="#4A4A4A"/>
 
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     EnableAntiAliasing = true ,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -446,34 +393,29 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastRangeAreaBitmapSeries ItemsSource = "{Binding Data}"
 
-                             XBindingPath="Date" 
-					 
-                             High="HighTemperature" 
-					 
-                             Low="LowTemperature"        
-					                                      
-                             Interior="#7F7F7F" />
+<chart:FastRangeAreaBitmapSeries
+    ItemsSource="{Binding Data}"
+    XBindingPath="Date"
+    High="HighTemperature"
+    Low="LowTemperature"
+    Interior="#7F7F7F"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+
 FastRangeAreaBitmapSeries fastRangeAreaBitmapSeries = new FastRangeAreaBitmapSeries();
 
 fastRangeAreaBitmapSeries.ItemsSource = new ViewModel().Data;
-
 fastRangeAreaBitmapSeries.XBindingPath = "Date";
-
 fastRangeAreaBitmapSeries.High = "HighTemperature";
-
 fastRangeAreaBitmapSeries.Low = "LowTemperature";
-
 fastRangeAreaBitmapSeries.Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x75));
 
+chart.Series.Add(fastRangeAreaBitmapSeries)
 
-chart.Series.Add(fastRangeAreaBitmapSeries);
 
 {% endhighlight %}
 
@@ -487,17 +429,14 @@ The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help
 
 {% highlight xaml %}
 
-<chart:FastRangeAreaBitmapSeries ItemsSource = "{Binding Data}"
 
-                                 XBindingPath="Date" 
-
-                                 High="HighTemperature" 
-
-                                 Low="LowTemperature" 
-
-                                 EnableAntiAliasing="True" 
-
-                                 Interior="#7F7F7F" />
+<chart:FastRangeAreaBitmapSeries
+    ItemsSource="{Binding Data}"
+    XBindingPath="Date"
+    High="HighTemperature"
+    Low="LowTemperature"
+    EnableAntiAliasing="True"
+    Interior="#7F7F7F"/>
 
 {% endhighlight %}
 
@@ -506,17 +445,11 @@ The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help
 FastRangeAreaBitmapSeries fastRangeAreaBitmapSeries = new FastRangeAreaBitmapSeries();
 
 fastRangeAreaBitmapSeries.ItemsSource = new ViewModel().Data;
-
 fastRangeAreaBitmapSeries.XBindingPath = "Date";
-
 fastRangeAreaBitmapSeries.High = "HighTemperature";
-
 fastRangeAreaBitmapSeries.Low = "LowTemperature";
-
 fastRangeAreaBitmapSeries.EnableAntiAliasing = true;
-
 fastRangeAreaBitmapSeries.Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x75));
-
 
 chart.Series.Add(fastRangeAreaBitmapSeries);
 
