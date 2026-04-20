@@ -20,20 +20,18 @@ Allows to position the axis in the opposite direction to the default position. T
 {% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis   OpposedPosition="True" >
-
-</chart:CategoryAxis>
-
+    <chart:CategoryAxis OpposedPosition="True">
+    </chart:CategoryAxis>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis Minimum="0" Maximum="40" Interval="10"                                   
-
-OpposedPosition="True"/>
-
+    <chart:NumericalAxis
+        Minimum="0"
+        Maximum="40"
+        Interval="10"
+        OpposedPosition="True"/>
 </chart:SfChart.SecondaryAxis>
+
 
 {% endhighlight %}
 
@@ -41,21 +39,15 @@ OpposedPosition="True"/>
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
-     OpposedPosition = true
-
+    OpposedPosition = true
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-     Minimum = 0,
-
-     Maximum = 40,
-
-     Interval = 10,
-
-     OpposedPosition = true
-
+    Minimum = 0,
+    Maximum = 40,
+    Interval = 10,
+    OpposedPosition = true
 };
 
 {% endhighlight %}
@@ -73,11 +65,12 @@ This property used to switch the plotting of the series to vertical.
 
 {% highlight xaml %}
 
-<chart:LineSeries  IsTransposed="True"
-
-ItemsSource="{Binding SneakersDetail}"  XBindingPath="Brand" 
-
-YBindingPath="ItemsCount" >
+<chart:LineSeries
+    IsTransposed="True"
+    ItemsSource="{Binding SneakersDetail}"
+    XBindingPath="Brand"
+    YBindingPath="ItemsCount">
+</chart:LineSeries>
 
 {% endhighlight %}
 
@@ -85,15 +78,10 @@ YBindingPath="ItemsCount" >
 
 LineSeries series = new LineSeries()
 {
-
-     IsTransposed = true,
-
-     ItemsSource = new ViewModel().SneakersDetail,
-
-     XBindingPath = "Brand",
-
-     YBindingPath = "ItemsCount"
-
+    IsTransposed = true,
+    ItemsSource  = new ViewModel().SneakersDetail,
+    XBindingPath = "Brand",
+    YBindingPath = "ItemsCount"
 };
 
 {% endhighlight %}
@@ -109,70 +97,61 @@ The following example demonstrates the vertical charts.
 
 {% highlight xaml %}
 
+
 <chart:SfChart>
+    <chart:SfChart.ColumnDefinitions>
+        <chart:ChartColumnDefinition />
+        <chart:ChartColumnDefinition />
+    </chart:SfChart.ColumnDefinitions>
 
-<chart:SfChart.ColumnDefinitions>
+    <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis ShowGridLines="False">
+        </chart:CategoryAxis>
+    </chart:SfChart.PrimaryAxis>
 
-<chart:ChartColumnDefinition />
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfChart.SecondaryAxis>
 
-<chart:ChartColumnDefinition/>
+    <chart:LineSeries
+        IsTransposed="True"
+        ItemsSource="{Binding SneakersDetail}"
+        XBindingPath="Brand"
+        YBindingPath="ItemsCount">
 
-</chart:SfChart.ColumnDefinitions>
+        <chart:LineSeries.AdornmentsInfo>
+            <chart:ChartAdornmentInfo
+                ShowMarker="True"
+                Symbol="Ellipse"
+                SymbolHeight="10"
+                SymbolWidth="10"
+                SymbolInterior="#7f7f7f">
+            </chart:ChartAdornmentInfo>
+        </chart:LineSeries.AdornmentsInfo>
+    </chart:LineSeries>
 
-<chart:SfChart.PrimaryAxis>
+    <chart:LineSeries
+        IsTransposed="True"
+        Interior="DarkGray"
+        ItemsSource="{Binding SneakersDetail}"
+        XBindingPath="Brand"
+        YBindingPath="position">
 
-<chart:CategoryAxis  ShowGridLines="False“ >
+        <chart:LineSeries.AdornmentsInfo>
+            <chart:ChartAdornmentInfo
+                ShowLabel="False"
+                ShowMarker="True"
+                Symbol="Ellipse"
+                SymbolHeight="10"
+                SymbolWidth="10"
+                SymbolInterior="DarkGray">
+            </chart:ChartAdornmentInfo>
+        </chart:LineSeries.AdornmentsInfo>
 
-</chart:CategoryAxis>
-
-</chart:SfChart.PrimaryAxis>
-
-<chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis/>
-
-</chart:SfChart.SecondaryAxis>          
-
-<chart:LineSeries   IsTransposed="True"  
-
-ItemsSource="{Binding SneakersDetail}"  XBindingPath="Brand" 
-
-YBindingPath="ItemsCount" >
-
-<chart:LineSeries.AdornmentsInfo>
-
-<chart:ChartAdornmentInfo  ShowMarker="True" Symbol="Ellipse" 
-
-SymbolHeight="10" SymbolInterior="#7f7f7f" SymbolWidth="10">                        
-
-</chart:ChartAdornmentInfo>                        
-
-</chart:LineSeries.AdornmentsInfo>
-
-</chart:LineSeries>
-
-<chart:LineSeries  Interior="DarkGray" IsTransposed="True"
-
-ItemsSource="{Binding SneakersDetail}"  XBindingPath="Brand" 
-
-YBindingPath="postion" >
-
-<chart:LineSeries.AdornmentsInfo>
-
-<chart:ChartAdornmentInfo ShowLabel="False" ShowMarker="True" Symbol="Ellipse" SymbolHeight="10" 
-
-SymbolInterior="DarkGray" SymbolWidth="10"></chart:ChartAdornmentInfo>
-
-</chart:LineSeries.AdornmentsInfo>
-
-<chart:LineSeries.YAxis>
-
-<chart:NumericalAxis />
-
-</chart:LineSeries.YAxis>
-
-</chart:LineSeries>
-
+        <chart:LineSeries.YAxis>
+            <chart:NumericalAxis/>
+        </chart:LineSeries.YAxis>
+    </chart:LineSeries>
 </chart:SfChart>
 
 {% endhighlight %}
@@ -182,94 +161,61 @@ SymbolInterior="DarkGray" SymbolWidth="10"></chart:ChartAdornmentInfo>
 SfChart chart = new SfChart();
 
 chart.ColumnDefinitions.Add(new ChartColumnDefinition());
-
 chart.ColumnDefinitions.Add(new ChartColumnDefinition());
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     ShowGridLines = true
-
 };
 
 NumericalAxis axis = new NumericalAxis();
-
 chart.SecondaryAxis = axis;
-
 ChartBase.SetColumn(axis, 1);
 
 LineSeries series1 = new LineSeries()
 {
-
     IsTransposed = true,
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount"
-
 };
 
 ChartAdornmentInfo adornmentInfo1 = new ChartAdornmentInfo()
 {
-
     ShowMarker = true,
-
     Symbol = ChartSymbol.Ellipse,
-
     SymbolHeight = 10,
-
     SymbolWidth = 10,
-
     SymbolInterior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
 };
 
 LineSeries series2 = new LineSeries()
 {
-
     IsTransposed = true,
-
     Interior = new SolidColorBrush(Colors.DarkGray),
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "position",
-
     YAxis = new NumericalAxis()
-
 };
 
 ChartAdornmentInfo adornmentInfo2 = new ChartAdornmentInfo()
 {
-
     ShowLabel = false,
-
     ShowMarker = true,
-
     Symbol = ChartSymbol.Ellipse,
-
     SymbolHeight = 10,
-
     SymbolWidth = 10,
-
     SymbolInterior = new SolidColorBrush(Colors.DarkGray),
-
 };
 
 series1.AdornmentsInfo = adornmentInfo1;
-
 series2.AdornmentsInfo = adornmentInfo2;
 
 ChartBase.SetColumn(series1, 0);
-
 ChartBase.SetColumn(series2, 1);
 
 chart.Series.Add(series1);
-
 chart.Series.Add(series2);
 
 {% endhighlight %}

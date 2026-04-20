@@ -29,15 +29,16 @@ The following code example shows how to use OHLC series:
 
 {% highlight xaml %}
 
-<chart:HiLoOpenCloseSeries Name="series" ItemsSource="{Binding StockPriceDetails}" 
-
-XBindingPath="Date"  High="High" Low="Low"                         
-
-Interior="#4A4A4A"
-
-Open="Open" Close="Close" 
-
-Label="HiloOpenClose" />
+<chart:HiLoOpenCloseSeries 
+    Name="series" 
+    ItemsSource="{Binding StockPriceDetails}" 
+    XBindingPath="Date"  
+    High="High" 
+    Low="Low"
+    Interior="#4A4A4A"
+    Open="Open" 
+    Close="Close"
+    Label="HiloOpenClose"/>
 
 {% endhighlight %}
 
@@ -45,17 +46,13 @@ Label="HiloOpenClose" />
 
 HiLoOpenCloseSeries series = new HiLoOpenCloseSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
-    High = "High", Low = "Low",
-
-    Open = "Open", Close = "Close",
-
+    High = "High",
+    Low = "Low",
+    Open = "Open",
+    Close = "Close",
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -78,13 +75,15 @@ The values for this series can be bind using [`High`](https://help.syncfusion.co
 
 {% highlight xaml %}
 
-<chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" 
-
-XBindingPath="Date"  High="High" Open="Open"  
-
-Close="Close" Low="Low"  
-
-Interior="#4A4A4A"/>
+<chart:CandleSeries
+    Name="series"
+    ItemsSource="{Binding StockPriceDetails}"
+    XBindingPath="Date"
+    High="High"
+    Low="Low"
+    Open="Open"
+    Close="Close"
+    Interior="#4A4A4A"/>
 
 {% endhighlight %}
 
@@ -92,17 +91,13 @@ Interior="#4A4A4A"/>
 
 CandleSeries series = new CandleSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
-    High = "High", Low = "Low",
-
-    Open = "Open", Close = "Close",
-
+    High = "High",
+    Low = "Low",
+    Open = "Open",
+    Close = "Close",
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -117,28 +112,29 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date"   
-                    High="High" Open="Open"  Close="Close" Low="Low"  BearFillColor="Black"
-                    BullFillColor="#BCBCBC"/>
+<chart:CandleSeries 
+    Name="series" 
+    ItemsSource="{Binding StockPriceDetails}" 
+    XBindingPath="Date"
+    Open="Open" 
+    Close="Close"
+    High="High"
+    Low="Low"
+    BearFillColor="Black" 
+    BullFillColor="#BCBCBC"/>
+
 {% endhighlight %}   
 
 {% highlight c# %}
 
 CandleSeries series = new CandleSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     High = "High", Low = "Low",
-
     Open = "Open", Close = "Close",
-
     BearFillColor = new SolidColorBrush(Colors.Black),
-
     BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 chart.Series.Add(series);
@@ -165,16 +161,13 @@ While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/wpf/Syncfusi
 
 {% highlight xaml %}
 
-<syncfusion:CandleSeries ComparisonMode="Open">
-
-</syncfusion:CandleSeries>
+<syncfusion:CandleSeries ComparisonMode="Open"></syncfusion:CandleSeries>
 
 {% endhighlight %}   
 
 {% highlight c# %}
 
 CandleSeries series = new CandleSeries();
-
 series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Open;
 
 {% endhighlight %}
@@ -193,16 +186,13 @@ While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/wpf/Syncfusi
 
 {% highlight xaml %}
 
-<syncfusion:CandleSeries ComparisonMode="Close">
-
-</syncfusion:CandleSeries>
+<syncfusion:CandleSeries ComparisonMode="Close"></syncfusion:CandleSeries>
 
 {% endhighlight %}   
 
 {% highlight c# %}
 
 CandleSeries series = new CandleSeries();
-
 series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Close;
 
 {% endhighlight %}
@@ -221,16 +211,13 @@ While setting the [`ComparisonMode`](https://help.syncfusion.com/cr/wpf/Syncfusi
 
 {% highlight xaml %}
 
-<syncfusion:CandleSeries ComparisonMode="High">
-
-</syncfusion:CandleSeries>
+<syncfusion:CandleSeries ComparisonMode="High"></syncfusion:CandleSeries>
 
 {% endhighlight %}   
 
 {% highlight c# %}
 
 CandleSeries series = new CandleSeries();
-
 series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
 
 {% endhighlight %}
@@ -249,16 +236,13 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
 
 {% highlight xaml %}
 
-<syncfusion:CandleSeries ComparisonMode="Low">
-
-</syncfusion:CandleSeries>
+<syncfusion:CandleSeries ComparisonMode="Low"></syncfusion:CandleSeries>
 
 {% endhighlight %}   
 
 {% highlight c# %}
 
 CandleSeries series = new CandleSeries();
-
 series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Low;
 
 {% endhighlight %}
