@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Touch Support in WPF Range Slider control | Syncfusion®
-description: Learn here all about Touch Support in Syncfusion® WPF Range Slider (SfRangeSlider) control, its elements and more.
-platform: wpf
+title: Touch Support in WPF Range Slider Control | Syncfusion®
+description: Explore how to implement touch support in the Syncfusion® WPF Range Slider (SfRangeSlider) control using the MoveToPoint API for flexible thumb movement.
+platform: WPF
 control: SfRangeSlider 
 documentation: ug
 ---
 
 # Touch Support in WPF Range Slider (SfRangeSlider)
 
-[MoveToPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) API allows the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) to move the thumb by tapping or clicking the track of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html). This property provides the following options:
+The [`MoveToPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) API enables the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) to reposition the thumb by tapping or clicking on the track. Available options include:
 
-* MoveToTapPosition
-* IncrementBySmallChange
-* IncrementByLargeChange
-* None
+- MoveToTapPosition
+- IncrementBySmallChange
+- IncrementByLargeChange
+- None
 
 ### MoveToTapPosition
 

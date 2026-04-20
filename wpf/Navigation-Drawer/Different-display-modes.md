@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Different display modes in WPF Navigation Drawer control | Syncfusion®
-description: Learn here all about Different display modes support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
-platform: wpf
+title: Different Display Modes in WPF Navigation Drawer Control | Syncfusion®
+description: Learn about different display modes supported by the Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control.
+platform: WPF
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Different display modes in WPF Navigation Drawer (SfNavigationDrawer)
+# Different Display Modes in WPF Navigation Drawer (SfNavigationDrawer)
 
-The WPF Navigation drawer provides default, compact and extended [display modes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMode) to create navigation menu for an application. Compact and Extended display modes support to populate the navigation menu using built items with different types. 
+The WPF Navigation Drawer provides default, compact, and expanded [display modes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMode) to create a navigation menu for applications. Compact and expanded display modes support the population of the navigation menu using built-in items with various types.
 
-See also [different item types](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#different-item-types) topic in Navigation Drawer. 
+See also [different item types](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#different-item-types) in Navigation Drawer.
 
-## Compact display mode
+## Compact Display Mode
 
-A navigation sidebar is shown as a narrow bar to the width set to the [CompactModeWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_CompactModeWidth) property. The navigation menu gets expanded on clicking the built-in toggle button and appears as an overlay above the main content to the width set to the [ExpandedModeWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ExpandedModeWidth) property.
+The navigation sidebar is shown as a narrow bar with width set by the [CompactModeWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_CompactModeWidth) property. The navigation menu expands on clicking the built-in toggle button and appears as an overlay above the main content to the width set by the [ExpandedModeWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ExpandedModeWidth) property.
 
-N> The navigation menu will get toggled back to compact width when any interaction performed on the main content area.
+> **Note:** The navigation menu will toggle back to compact width when any interaction is performed on the main content area.
 
 {% tabs %}
 {% highlight xaml %}
@@ -92,12 +92,11 @@ N> The navigation menu will get toggled back to compact width when any interacti
 
 ![WPF NavigationDrawer with Compact Mode](different-displaymode_images/wpf-navigation-drawer-compact.png)
 
+## Expanded Display Mode
 
-## Expanded display mode
+The navigation sidebar stays open to the left or right of the window, based on the [Position](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Position) property, and pushes the main content alongside. The width of the drawer is defined by the [ExpandedModeWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ExpandedModeWidth) property.
 
-The navigation sidebar stays open to the left or right of the window based on the [Position](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Position) property pushing the main content alongside. The [ExpandedModeWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ExpandedModeWidth) property defines the width of the drawer.
-
-When the drawer menu is toggled using the built-in toggle button, the drawer menu gets collapsed and shown as a narrow bar to the width set to the [CompactModeWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_CompactModeWidth) property.
+When toggled using the built-in toggle button, the drawer menu collapses and displays as a narrow bar with width set by the [CompactModeWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_CompactModeWidth) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -172,12 +171,11 @@ When the drawer menu is toggled using the built-in toggle button, the drawer men
 
 ![WPF NavigationDrawer with Expanded Mode](different-displaymode_images/wpf-navigation-drawer-expand.png)
 
-## Auto display mode change
+## Auto Display Mode Change
 
-The Navigation Drawer handles its display mode based on the values set to the [ExpandedModeThresholdWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ExpandedModeThresholdWidth) property. This can be enabled by setting the [AutoChangeDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_AutoChangeDisplayMode) property to `True`.
+The Navigation Drawer automatically changes its display mode according to the size of the application window. This behavior is controlled by setting the [AutoChangeDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_AutoChangeDisplayMode) property to `True`, and is based on the values set for the [ExpandedModeThresholdWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ExpandedModeThresholdWidth) property.
 
-This switches the display mode to compact when the application window size is less than the [ExpandedModeThresholdWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ExpandedModeThresholdWidth) and switches to expanded mode when the application window size is larger.
-
+The display mode switches to compact when the application window size is less than `ExpandedModeThresholdWidth`, and switches to expanded mode when the window size exceeds this threshold.
 {% tabs %}
 {% highlight xaml %}
 
@@ -255,14 +253,13 @@ This switches the display mode to compact when the application window size is le
 
 ![WPF NavigationDrawer with Auto Mode](different-displaymode_images/wpf-navigation-drawer-auto-mode.gif)
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Display_Mode) in GitHub
+> **Note:** View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Display_Mode) in GitHub.
 
+## Collapsible Drawer Mode
 
-## Collapsible drawer mode
+A collapsible drawer can be achieved by setting the display mode to [Default mode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.DisplayMode.html). In this display mode, the drawer menu is populated using [custom views](https://help.syncfusion.com/wpf/navigation-drawer/custom-views).
 
-A collapsible drawer can be achieved using the Navigation Drawer by setting the display mode to [Default mode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.DisplayMode.html). In this display mode, the drawer menu is populated using [custom views](https://help.syncfusion.com/wpf/navigation-drawer/custom-views).
-
-See also [Custom Views](https://help.syncfusion.com/wpf/navigation-drawer/custom-views) topic in Navigation Drawer.
+See also the [Custom Views](https://help.syncfusion.com/wpf/navigation-drawer/custom-views) topic in Navigation Drawer.
 
 {% tabs %}
 {% highlight xml %}

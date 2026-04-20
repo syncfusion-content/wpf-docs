@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Header in WPF Busy Indicator control | Syncfusion®
-description: Learn here all about Header support in Syncfusion® WPF Busy Indicator (SfBusyIndicator) control and more.
-platform: wpf
+title: Header in WPF Busy Indicator Control | Syncfusion®
+description: Learn all about Header support in the Syncfusion® WPF Busy Indicator (SfBusyIndicator) control and more.
+platform: WPF
 control: Busy Indicator
 documentation: ug
 ---
@@ -11,13 +11,13 @@ documentation: ug
 
 ## Header
 
-The Header is displayed below the animation. The Header property can be used to get or set the content which indicates the information related to loading. 
+The Header is displayed below the animation. The `Header` property can be used to get or set the content that indicates information related to the loading process.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<!--To set the header for SfBusyIndicator-->
+<!-- To set the header for SfBusyIndicator -->
 
 <Grid  Background="CornflowerBlue">
 <Notification:SfBusyIndicator Header="Loading..." Foreground="White" />
@@ -48,19 +48,19 @@ grid1.Children.Add(SfBusyIndicator)
 
 ![Header](Header_images/Header_img1.png)
 
-Busy Indicator with header
+Busy Indicator with a header
 {:.caption}
 
 
 ## Header Template
 
-Header template can be used to get or set the template that defines how the header section of the SfBusyIndicator control is displayed.
+The `HeaderTemplate` property is used to get or set the template that defines the appearance of the header section of the `SfBusyIndicator` control.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<!--To set the HeaderTemplate for SfBusyIndicator-->
+<!-- To set the HeaderTemplate for SfBusyIndicator -->
 
 <Notification:SfBusyIndicator Grid.Row="0" Foreground="White" Background="CornflowerBlue" >
 <Notification:SfBusyIndicator.HeaderTemplate>
@@ -76,8 +76,7 @@ Header template can be used to get or set the template that defines how the head
 
 ![Header_Template](Header_images/Header_img2.png)
 
-Busy Indicator with header template
+Busy Indicator with a header template
 {:.caption}
 
-
-N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Header) in GitHub
+> **Note:** View the [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Header) on GitHub.

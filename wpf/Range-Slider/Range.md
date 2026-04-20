@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Range in WPF Range Slider control | Syncfusion®
-description: Learn here all about Range support in Syncfusion® WPF Range Slider (SfRangeSlider) control, its elements and more.
-platform: wpf
+title: Range Management in WPF Range Slider Control | Syncfusion®
+description: Discover how to manage ranges in the Syncfusion® WPF Range Slider (SfRangeSlider) control, including configuration and draggable range features.
+platform: WPF
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Range in WPF Range Slider (SfRangeSlider)
+# Range Management in WPF Range Slider (SfRangeSlider)
 
-The [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control provides support to select the range of value using two thumbs.  
+The [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control supports selecting a range of values using two thumbs for precision.
 
 ## ShowRange  
 
-When ShowRange property is set to true, two thumbs are placed in the track. One thumb is used to update the start of the range selection and another thumb is used to update the end of the range selection.  
-
+When the `ShowRange` property is set to `true`, the SfRangeSlider displays two thumbs on the track, allowing users to define both the start and end of the range.
 {% tabs %}
 
 {% highlight XAML %}
@@ -51,7 +50,7 @@ When ShowRange property is set to true, two thumbs are placed in the track. One 
 
 ![ShowRange](Range_images/Range_img1.png)
 
-N> When the `ShowRange` property is set to true, both ToolTip will display RangeStart and RangeEnd. 
+> **Note**: When `ShowRange` is enabled, tooltips will display both `RangeStart` and `RangeEnd`.
 
 ## RangeStart  
 
@@ -135,7 +134,7 @@ Gets or sets the end value of the range end.
 
 ## Drag Selected Range
 
-The `AllowRangeDrag` API allows the range in the Range Slider to be adjusted and the range to be dragged without changing the start and end ranges individually. The default value of `AllowRangeDrag` is false.
+The `AllowRangeDrag` property enables dragging the range as a whole, without changing the start and end values individually. Its default value is `false`.
 
 {% tabs %}
 

@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Textbox customization in WPF Autocomplete control | Syncfusion®
-description: Learn here all about Textbox customization support in Syncfusion® WPF Autocomplete (SfTextBoxExt) control and more.
-platform: wpf
+title: Textbox Customization in WPF Autocomplete Control | Syncfusion®
+description: Discover how to customize text box support in Syncfusion® WPF Autocomplete (SfTextBoxExt) control, and more.
+platform: WPF
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Textbox customization in WPF Autocomplete (SfTextBoxExt)
+# Textbox Customization in WPF Autocomplete (SfTextBoxExt)
 
-AutoComplete provides the user-friendly customizing options for text box. This section explains how to customize the entire AutoComplete control.
+AutoComplete offers user-friendly options for customizing the text box. This section explains how to customize the entire AutoComplete control.
 
+## Watermark
 
-## Water mark 
-
-[Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Watermark) property, allows to specify some information when the text is empty. For illustration, let us create a simple textbox and indicate enter names separated by a comma.
+The [Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Watermark) property allows specifying information when the text is empty. For illustration, let's create a simple textbox with a placeholder to enter names separated by commas.
 
 {% tabs %}
 {% highlight xaml %}
@@ -35,7 +34,7 @@ textBoxExt.Watermark= "Enter names separated by comma (Ex : John, Kate)";
 
 ![Watermark_Text](Textbox_customization_images/Watermark.png)
 
-N> The Watermark property is of the object type. So, any framework elements can be hosted as Watermark content. The following example shows how to host an image and text as Watermark content.
+> Note: The Watermark property is of object type, allowing any framework elements to be hosted as Watermark content. The following example demonstrates hosting an image and text as Watermark content.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,9 +60,9 @@ N> The Watermark property is of the object type. So, any framework elements can 
 
 ![Watermark_View](Textbox_customization_images/Watermark_img.png)
 
-### Water mark template 
+### Watermark Template
 
-Any business object can be bound to the Watermark property and that object can be decorated by applying the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_WatermarkTemplate)  property.
+Any business object can be bound to the Watermark property and decorated using the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_WatermarkTemplate) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -90,12 +89,12 @@ Any business object can be bound to the Watermark property and that object can b
 {% endhighlight %}
 {% endtabs %}
 
-![Watermark_View](Textbox_customization_images/WatermarkTemplate.png)
+![Watermark_Template](Textbox_customization_images/WatermarkTemplate.png)
 
 
 ## Customizing the TextBox
 
-The [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), and [FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase) properties are used to customize the text in the AutoComplete control.
+Use the [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Text), [FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_FontSize), [FontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_FontWeight), and [FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_FontFamily) properties to customize the text in the AutoComplete control.
 
 {% tabs %}
 
@@ -123,13 +122,13 @@ textBoxExt.FontFamily = new FontFamily("Times New Roman");
 
 {% endtabs %}
 
-![AutoComplete Customization](Textbox_customization_images/Customization.png)
+![AutoComplete_Customization](Textbox_customization_images/Customization.png)
 
 
 
 ## Setting the Dropdown Icon 
 
-This feature allows to set the drop-down icon for the TextBox control using the [ShowDropDownButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowDropDownButton).
+You can set the drop-down icon for the TextBox control using the [ShowDropDownButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowDropDownButton) property.
 
 {% tabs %}
 
@@ -152,11 +151,11 @@ textBoxExt.ShowDropDownButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![DropdownIcon](Textbox_customization_images/DropDownIcon.png)
+![Dropdown_Icon](Textbox_customization_images/DropDownIcon.png)
 
 ## Setting the ClearButton 
 
-This feature allows to set the ClearButton for the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control using the [ShowClearButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton).
+To set the ClearButton for the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control, use the [ShowClearButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
 
 {% tabs %}
 
@@ -183,6 +182,4 @@ textBoxExt.ShowClearButton = true;
 
 ![ClearButton](Textbox_customization_images/ClearButton.png)
 
-
-
-N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Textbox-customization) in GitHub
+> Note: View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Textbox-customization) on GitHub.

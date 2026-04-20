@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Populating Items in WPF Radial Menu control | Syncfusion®
-description: Learn here all about Populating Items support in Syncfusion® WPF Radial Menu (SfRadialMenu) control and more.
-platform: wpf
+title: Populating Items in WPF Radial Menu Control | Syncfusion®
+description: Learn about populating items support in the Syncfusion® WPF Radial Menu (SfRadialMenu) control.
+platform: WPF
 control: SfRadialMenu 
 documentation: ug
 ---
@@ -11,9 +11,9 @@ documentation: ug
 
 ## Items Source  
 
-Radial menu items can be populated with the business object collection. Let us create a RadialMenu which will show the list of Application commands.   
+Radial menu items can be populated from a collection of business objects. Let's create a RadialMenu that displays a list of application commands.
 
-The Application command model look likes below.  
+The Application command model is defined as follows:
 
 
 
@@ -41,7 +41,7 @@ The Application command model look likes below.
 
 {%endhighlight%}
 
-Create the Application command collection as follows. 
+Create the Application command collection as follows:
 
 
 {%highlight c#%}
@@ -96,21 +96,12 @@ Bind the Application command collection to the ItemsSource property of the Radia
 
 {%endhighlight%}
 
-This will populate the RadialMenu as shown in the image below. 
-
-
-
-
-
-![Concepts_img1](Concepts_images/Concepts_img1.png)
-
-
-
+This setup will populate the RadialMenu as shown in the image below.
 
 
 ## Display Member Path 
 
-DisplayMemberPath property of the Radial Menu used to define which business model property needs to be displayed inside the header of the Radial Menu items.
+The `DisplayMemberPath` property of the Radial Menu specifies which property of the business model is displayed in the header of the Radial Menu items.
 
 {%highlight xaml%}
 
@@ -135,7 +126,7 @@ Displaying member path
 
 ## Command Path
 
-CommandPath property of the Radial Menu can be used to bind the command in the business object to the radial menu item when items are populated using data binding. 
+The `CommandPath` property of the Radial Menu binds the command in the business object to the radial menu item when items are populated using data binding.
 
 {%highlight xaml%}
 
@@ -152,7 +143,7 @@ CommandPath property of the Radial Menu can be used to bind the command in the b
 
 ## Item Template 
 
-ItemTemplate property of the RadialMenu can be used to customize the header part of the radial menu items.  
+The `ItemTemplate` property of the RadialMenu customizes the header part of the radial menu items.
 
 {%highlight xaml%}
 
@@ -182,7 +173,4 @@ ItemTemplate property of the RadialMenu can be used to customize the header part
 
 {%endhighlight%}
 
-![Concepts_img3](Concepts_images/Concepts_img3.png)
-
-
-
+![Item Template Customization](Concepts_images/Concepts_img3.png)

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: AnimationTypes in WPF Busy Indicator control | Syncfusion®
-description: Learn here all about AnimationTypes support in Syncfusion® WPF Busy Indicator (SfBusyIndicator) control and more.
-platform: wpf
+title: Animation Types in WPF Busy Indicator Control | Syncfusion®
+description: Learn about animation types supported in the Syncfusion® WPF Busy Indicator (SfBusyIndicator) control.
+platform: WPF
 control: Busy Indicator
 documentation: ug
 ---
 
-# AnimationTypes in WPF Busy Indicator (SfBusyIndicator)
+# Animation Types in WPF Busy Indicator (SfBusyIndicator)
 
-The AnimationTypes property for the SfBusyIndicator allows the user to set one of the animations from the built-in animations as the busy indicator.
+The `AnimationType` property for the SfBusyIndicator allows the user to select one of the built-in animations as the busy indicator.
 
-N> `AnimationSpeed` property is not applicable for `Fluent` animation type.
+> **Note:** The `AnimationSpeed` property is not applicable for the `Fluent` animation type.
 
 {% tabs %}
 
@@ -35,9 +35,8 @@ busyIndicator.AnimationType = AnimationTypes.Flight;
 
 {% endtabs %}
 
+The following gif image showcases the types of animations available in BusyIndicator.
 
-The following gif image contains the types of animation in BusyIndicator.
+![Animation Types](AnimationTypes_images/BusyIndicator-animation-video.gif)
 
-![AnimationTypes](AnimationTypes_images/BusyIndicator-animation-video.gif)
-
-N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/AnimationType) in GitHub
+> **Note:** View the [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-Sample) on GitHub.
