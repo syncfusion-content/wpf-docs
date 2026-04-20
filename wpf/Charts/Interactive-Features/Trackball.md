@@ -20,11 +20,8 @@ You can create an instance [`ChartTrackBallBehavior`](https://help.syncfusion.co
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartTrackBallBehavior>                                                  
-
-</syncfusion:ChartTrackBallBehavior>
-
+    <syncfusion:ChartTrackBallBehavior>                                                  
+    </syncfusion:ChartTrackBallBehavior>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -48,9 +45,7 @@ To view the TrackBall in the particular Axis, you have to enable the ShowTrackBa
 {% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis  ShowTrackBallInfo="True" />
-
+    <syncfusion:CategoryAxis ShowTrackBallInfo="True"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -63,9 +58,7 @@ chart.Behaviors.Add(behavior);
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     ShowTrackBallInfo = true
-
 };
 
 {% endhighlight %}
@@ -98,9 +91,7 @@ The following code snippet explains how to collapse the visibility of trackball 
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartTrackBallBehavior ShowLine="False" />
-
+    <syncfusion:ChartTrackBallBehavior ShowLine="False"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -109,9 +100,7 @@ The following code snippet explains how to collapse the visibility of trackball 
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     ShowLine = false
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -134,27 +123,17 @@ The following code snippet explains the customization of trackball line.
 {% highlight xaml %}
 
 <syncfusion:SfChart x:Name="chart">
-
     <syncfusion:SfChart.Resources>
-
         <Style TargetType="Line" x:Key="lineStyle">
-
             <Setter Property="StrokeDashArray" Value="5,1,2"/>
-
             <Setter Property="Stroke" Value="Red"/>
-
             <Setter Property="StrokeThickness" Value="1.2"/>
-
         </Style>
-
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.Behaviors>
-
         <syncfusion:ChartTrackBallBehavior LineStyle="{StaticResource lineStyle}"/>
-
     </syncfusion:SfChart.Behaviors>
-            
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -163,9 +142,7 @@ The following code snippet explains the customization of trackball line.
 
 ChartTrackBallBehavior trackball = new ChartTrackBallBehavior()
 {
-
     LineStyle = chart.Resources["lineStyle"] as Style
-
 };
 
 chart.Behaviors.Add(trackball);
@@ -186,23 +163,15 @@ By default, the trackball symbol is displayed as ellipse to change the default s
 {% highlight xaml %}
 
 <syncfusion:SfChart x:Name="chart">
-
     <syncfusion:SfChart.Resources>
-
         <Style TargetType="syncfusion:ChartTrackBallControl" x:Key="trackballStyle">
-
             <Setter Property="Background" Value="red"></Setter>
-
         </Style>
-
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.Behaviors>
-
         <syncfusion:ChartTrackBallBehavior ChartTrackBallStyle="{StaticResource trackballStyle}"/>
-
     </syncfusion:SfChart.Behaviors>
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -213,9 +182,7 @@ SfChart chart = new SfChart();
 
 ChartTrackBallBehavior trackball = new ChartTrackBallBehavior()
 {
-
     ChartTrackBallStyle = chart.Resources["trackballStyle"] as Style
-
 };
 
 chart.Behaviors.Add(trackball);
@@ -251,13 +218,9 @@ Center-Axis label is aligned to the center of the trackball. By default, the axi
 
 {% highlight xaml %}
 
-<syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartTrackBallBehavior AxisLabelAlignment="Far">
-
-</syncfusion:ChartTrackBallBehavior>
-
-</syncfusion:SfChart.Behaviors>
+ <syncfusion:SfChart.Behaviors>
+     <syncfusion:ChartTrackBallBehavior AxisLabelAlignment="Far"/>
+ </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
 
@@ -265,9 +228,7 @@ Center-Axis label is aligned to the center of the trackball. By default, the axi
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     AxisLabelAlignment = ChartAlignment.Far
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -286,11 +247,7 @@ chart.Behaviors.Add(behavior);
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartTrackBallBehavior AxisLabelAlignment="Near"  >       
-
-</syncfusion:ChartTrackBallBehavior>
-
+    <syncfusion:ChartTrackBallBehavior AxisLabelAlignment="Near"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -299,9 +256,7 @@ chart.Behaviors.Add(behavior);
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     AxisLabelAlignment = ChartAlignment.Near
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -321,36 +276,27 @@ You can change the default appearance of the axis label in trackball using [`Tra
 
 {% highlight xaml %}
 
- <syncfusion:SfChart x:Name="chart">
-
+<syncfusion:SfChart x:Name="chart">
+    
     <syncfusion:SfChart.Resources>
-
         <DataTemplate x:Key="labelTemplate">
-
-            <Border CornerRadius="4" BorderThickness="1" BorderBrush="Black"
-                            
-                    Background="BlueViolet" Margin="8">
-
-                    <TextBlock Foreground="White" Text="{Binding ValueX}"/>
-
+            <Border 
+                CornerRadius="4" 
+                BorderThickness="1" 
+                BorderBrush="Black"                            
+                Background="BlueViolet" 
+                Margin="8">
+                <TextBlock Foreground="White" Text="{Binding ValueX}"/>
             </Border>
-
         </DataTemplate>
-
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.Behaviors>
-
-            <syncfusion:ChartTrackBallBehavior />
-
+        <syncfusion:ChartTrackBallBehavior/>
     </syncfusion:SfChart.Behaviors>
 
     <syncfusion:SfChart.PrimaryAxis>
-
-            <syncfusion:CategoryAxis ShowTrackBallInfo="True" 
-                                         
-                                     LabelTemplate="{StaticResource labelTemplate}"/>
-
+        <syncfusion:CategoryAxis ShowTrackBallInfo="True" LabelTemplate="{StaticResource labelTemplate}"/>
     </syncfusion:SfChart.PrimaryAxis>
 
 </syncfusion:SfChart>
@@ -363,11 +309,8 @@ SfChart chart = new SfChart();
 
 chart.PrimaryAxis = new NumericalAxis()
 {
-
     ShowTrackBallInfo = true,
-
     TrackBallLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
-
 };
 
 {% endhighlight %}
@@ -389,7 +332,7 @@ The [`ShowTrackballInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 {% highlight xaml %}
 
- <syncfusion:SfChart >
+ <syncfusion:SfChart>
             <syncfusion:SplineSeries Interior="#4a4a4a"/>    
             <syncfusion:SplineSeries Interior="#7f7f7f" ShowTrackballInfo="False"/>
             <syncfusion:SplineSeries Interior="#bcbcbc"/>
@@ -399,22 +342,27 @@ The [`ShowTrackballInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 {% highlight c# %}
 
-  SplineSeries series1 = new SplineSeries()
-  {
-      Interior = new SolidColorBrush(Color.FromArgb(0, 0x4a, 0x4a, 0x4a))
-  };
-  chart.Series.Add(series1);
-  SplineSeries series2 = new SplineSeries()
-  {
-      Interior = new SolidColorBrush(Color.FromArgb(0, 0x7f, 0x7f, 0x7f)),
-      ShowTrackballInfo = false
-  };
-  chart.Series.Add(series2);
-  SplineSeries series3 = new SplineSeries()
-  {
-      Interior = new SolidColorBrush(Color.FromArgb(0, 0xbc, 0xbc, 0xbc))
-  };
-  chart.Series.Add(series3);
+SplineSeries series1 = new SplineSeries()
+{
+    Interior = new SolidColorBrush(Color.FromArgb(0, 0x4a, 0x4a, 0x4a))
+};
+
+chart.Series.Add(series1);
+
+SplineSeries series2 = new SplineSeries()
+{
+    Interior = new SolidColorBrush(Color.FromArgb(0, 0x7f, 0x7f, 0x7f)),
+    ShowTrackballInfo = false
+};
+
+chart.Series.Add(series2);
+
+SplineSeries series3 = new SplineSeries()
+{
+    Interior = new SolidColorBrush(Color.FromArgb(0, 0xbc, 0xbc, 0xbc))
+};
+
+chart.Series.Add(series3);
 
 {% endhighlight %}
 
@@ -435,13 +383,7 @@ The following code snippet explains how to align the series label to the center 
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartTrackBallBehavior LabelHorizontalAlignment="Center" 
-
-LabelVerticalAlignment="Center">
-
-</syncfusion:ChartTrackBallBehavior>
-
+    <syncfusion:ChartTrackBallBehavior LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -450,11 +392,8 @@ LabelVerticalAlignment="Center">
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     LabelHorizontalAlignment = ChartAlignment.Center,
-
     LabelVerticalAlignment = ChartAlignment.Center
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -477,11 +416,7 @@ When there is a multiple series, by default, the trackball series label will be 
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartTrackBallBehavior LabelDisplayMode="FloatAllPoints" >
-
-</syncfusion:ChartTrackBallBehavior>
-
+    <syncfusion:ChartTrackBallBehavior LabelDisplayMode="FloatAllPoints"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -490,9 +425,7 @@ When there is a multiple series, by default, the trackball series label will be 
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     LabelDisplayMode = TrackballLabelDisplayMode.FloatAllPoints
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -511,11 +444,7 @@ chart.Behaviors.Add(behavior);
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartTrackBallBehavior LabelDisplayMode="NearestPoint" >
-
-</syncfusion:ChartTrackBallBehavior>
-
+    <syncfusion:ChartTrackBallBehavior LabelDisplayMode="NearestPoint"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -524,9 +453,7 @@ chart.Behaviors.Add(behavior);
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -546,11 +473,7 @@ chart.Behaviors.Add(behavior);
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartTrackBallBehavior LabelDisplayMode="GroupAllPoints" >
-
-</syncfusion:ChartTrackBallBehavior>
-
+    <syncfusion:ChartTrackBallBehavior LabelDisplayMode="GroupAllPoints"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -559,9 +482,7 @@ chart.Behaviors.Add(behavior);
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     LabelDisplayMode = TrackballLabelDisplayMode.GroupAllPoints
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -587,30 +508,22 @@ In trackball label, the data point value of the technical indicator also can be 
 
 {% highlight xaml %}
 
- <chart:SfChart.Behaviors>
-
-                <chart:ChartTrackBallBehavior />
-
- </chart:SfChart.Behaviors>  
+<chart:SfChart.Behaviors>
+    <chart:ChartTrackBallBehavior/>
+</chart:SfChart.Behaviors>
 
 <chart:SfChart.TechnicalIndicators>
-
-                <chart:AverageTrueRangeIndicator ShowTrackballInfo="True" >
-
-                </chart:AverageTrueRangeIndicator>
-
- </chart:SfChart.TechnicalIndicators>
+    <chart:AverageTrueRangeIndicator ShowTrackballInfo="True"/>
+</chart:SfChart.TechnicalIndicators>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior();
-
 chart.Behaviors.Add(behavior);
 
 AverageTrueRangeIndicator average = new AverageTrueRangeIndicator();
-
 average.ShowTrackballInfo = true;
 
 chart.TechnicalIndicators.Add(average);
@@ -631,42 +544,31 @@ N> By default, [`ShowTrackballInfo`](https://help.syncfusion.com/cr/wpf/Syncfusi
 
 {% highlight xaml %}
 
-  <syncfusion:SfChart x:Name="chart">
+<syncfusion:SfChart x:Name="chart">
+    <syncfusion:SfChart.Resources>
+        <DataTemplate x:Key="labelTemplate">
+            <Border CornerRadius="5" 
+                    BorderThickness="1"
+                    BorderBrush="Black" 
+                    Background="BlueViolet" 
+                    Margin="8">
+                <TextBlock Foreground="White" Text="{Binding ValueY}"/>
+            </Border>
+        </DataTemplate>
+    </syncfusion:SfChart.Resources>
 
-        <syncfusion:SfChart.Resources>
+    <syncfusion:SfChart.Behaviors>
+        <syncfusion:ChartTrackBallBehavior/>
+    </syncfusion:SfChart.Behaviors>
 
-            <DataTemplate x:Key="labelTemplate">
-
-                <Border CornerRadius="5" BorderThickness="1" 
-                            
-                        BorderBrush="Black" Background="BlueViolet" Margin="8">
-
-                    <TextBlock Foreground="White" Text="{Binding ValueY}"/>
-
-                </Border>
-
-            </DataTemplate>
-
-         </syncfusion:SfChart.Resources>
-
-        <syncfusion:SfChart.Behaviors>
-
-                <syncfusion:ChartTrackBallBehavior />
-
-        </syncfusion:SfChart.Behaviors>
-
-        <syncfusion:ColumnSeries Label="2010"  Interior="#4A4A4A"     
-
-                                 ItemsSource="{Binding Demands}" 
-
-                                 XBindingPath="Demand" 
-                                     
-                                 YBindingPath="Year2010"
-                                 
-                                 TrackBallLabelTemplate="{StaticResource labelTemplate}"/>
-          
+    <syncfusion:ColumnSeries 
+        Label="2010"  
+        Interior="#4A4A4A"     
+        ItemsSource="{Binding Demands}" 
+        XBindingPath="Demand"  
+        YBindingPath="Year2010"  
+        TrackBallLabelTemplate="{StaticResource labelTemplate}"/>
 </syncfusion:SfChart>
-
 
 {% endhighlight %}
 
@@ -680,17 +582,11 @@ chart.Behaviors.Add(trackball);
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     TrackBallLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -711,11 +607,8 @@ Palette or interior color of the Series is applied to the series label by settin
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartTrackBallBehavior UseSeriesPalette="True" >
-
-</syncfusion:ChartTrackBallBehavior>
-
+    <syncfusion:ChartTrackBallBehavior UseSeriesPalette="True">
+    </syncfusion:ChartTrackBallBehavior>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -724,9 +617,7 @@ Palette or interior color of the Series is applied to the series label by settin
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
-     UseSeriesPalette = true
-
+    UseSeriesPalette = true
 };
 
 chart.Behaviors.Add(behavior);

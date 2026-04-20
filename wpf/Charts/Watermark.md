@@ -24,25 +24,16 @@ The following code example explains how to set your custom text as Watermark.
 {% highlight xaml %}
 
 <chart:SfChart.Watermark>
-
-<chart:Watermark VerticalAlignment="Center"         
-
-HorizontalAlignment="Center" >
-
-<chart:Watermark.Content>
-
-<TextBlock Text="Metals"  
-
-FontSize="70"
-
-Foreground="Black" >
-
-</TextBlock>
-
-</chart:Watermark.Content>
-
-</chart:Watermark>
-
+    <chart:Watermark
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center">
+        <chart:Watermark.Content>
+            <TextBlock
+                Text="Metals"
+                FontSize="70"
+                Foreground="Black"/>
+        </chart:Watermark.Content>
+    </chart:Watermark>
 </chart:SfChart.Watermark>
 
 {% endhighlight %}
@@ -51,22 +42,15 @@ Foreground="Black" >
 
 chart.Watermark = new Watermark()
 {
-
-       HorizontalAlignment = HorizontalAlignment.Center,
-
-       VerticalAlignment = VerticalAlignment.Center
-
+    HorizontalAlignment = HorizontalAlignment.Center,
+    VerticalAlignment = VerticalAlignment.Center
 };
 
 chart.Watermark.Content = new TextBlock()
 {
-
-       Text = "Metals",
-
-       FontSize = 70,
-
-       Foreground = new SolidColorBrush(Colors.Black)
-
+    Text = "Metals",
+    FontSize = 70,
+    Foreground = new SolidColorBrush(Colors.Black)
 };
 
 {% endhighlight %}
@@ -84,19 +68,16 @@ You can also set images as Watermark as in below code snippet.
 {% highlight xaml %}
 
 <chart:SfChart.Watermark>
-
-<chart:Watermark VerticalAlignment="Center"               
-
-HorizontalAlignment="Center" >
-
-<chart:Watermark.Content>
-
-<Image Source="demands.png" Height="175" Width="175"/>
-
-</chart:Watermark.Content>
-
-</chart:Watermark>
-
+    <chart:Watermark
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center">
+        <chart:Watermark.Content>
+            <Image
+                Source="demands.png"
+                Height="175"
+                Width="175"/>
+        </chart:Watermark.Content>
+    </chart:Watermark>
 </chart:SfChart.Watermark>
 
 {% endhighlight %}
@@ -105,22 +86,16 @@ HorizontalAlignment="Center" >
 
 chart.Watermark = new Watermark()
 {
-
-       HorizontalAlignment = HorizontalAlignment.Center,
-
-       VerticalAlignment = VerticalAlignment.Center
-
+    HorizontalAlignment = HorizontalAlignment.Center,
+    VerticalAlignment = VerticalAlignment.Center
 };
 
 chart.Watermark.Content = new Image()
 {
-
-       Height = 175,
-
-       Width = 175,
-
-       Source = new BitmapImage(new Uri(@"demands.png", UriKind.RelativeOrAbsolute))
-
+    Height = 175,
+    Width = 175,
+    Source = new BitmapImage(
+        new Uri(@"demands.png", UriKind.RelativeOrAbsolute))
 };
 
 {% endhighlight %}

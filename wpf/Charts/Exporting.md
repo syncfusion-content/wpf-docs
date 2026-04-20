@@ -54,19 +54,15 @@ This helps to export the chart to any stream as in below code example.
 private void SaveImageEncoder_Click(object sender, RoutedEventArgs e)
 {
     SaveFileDialog sfd = new SaveFileDialog();
-    
-	sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|PNG(*.png)|*.png|TIFF(*.tif,*.tiff)|*.tif|All files (*.*)|*.*";
+
+    sfd.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg,*.jpeg)|*.jpg;*.jpeg|Gif (*.gif)|*.gif|PNG(*.png)|*.png|TIFF(*.tif,*.tiff)|*.tif|All files (*.*)|*.*";
 
     if (sfd.ShowDialog() == true)
     {
-	
         using (Stream fs = sfd.OpenFile())
         {
-		
             SampleChart.Save(fs, new PngBitmapEncoder());
-			
         }
-		
     }
 }
 
@@ -89,13 +85,11 @@ static IntPtr ApplicationMessageFilter(IntPtr hwnd, int message, IntPtr wParam, 
     return IntPtr.Zero;
 }
 
-
 HwndSourceParameters sourceParameters = new HwndSourceParameters();
 
 sourceParameters.HwndSourceHook = ApplicationMessageFilter;
 
 HwndSource source = new HwndSource(sourceParameters);
-
 source.RootVisual = chart;
 
 //Save chart

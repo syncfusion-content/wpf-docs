@@ -21,13 +21,9 @@ You can create an instance ChartZoomPanBehavior and add it to the Behaviors coll
 
 {% highlight xml %}
 
-<syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior >                                             
-
-</syncfusion:ChartZoomPanBehavior>
-
-</syncfusion:SfChart.Behaviors>
+ <syncfusion:SfChart.Behaviors>
+     <syncfusion:ChartZoomPanBehavior/>
+ </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
 
@@ -55,13 +51,10 @@ The following code example demonstrates the zooming the chart axis by setting zo
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis 
-
-ShowGridLines="False"
-
-ZoomFactor="0.3" ZoomPosition="0.1" />
-
+    <syncfusion:CategoryAxis 
+        ShowGridLines="False"
+        ZoomFactor="0.3"
+        ZoomPosition="0.1"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -70,13 +63,9 @@ ZoomFactor="0.3" ZoomPosition="0.1" />
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     ShowGridLines = false,
-
     ZoomFactor = 0.1,
-
     ZoomPosition = 0.3
-
 };
 
 {% endhighlight %}
@@ -94,11 +83,7 @@ Zooming can be performed by mouse wheel action by setting [`EnableMouseWheelZoom
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True" >                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -107,9 +92,7 @@ Zooming can be performed by mouse wheel action by setting [`EnableMouseWheelZoom
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableMouseWheelZooming = true
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -126,13 +109,9 @@ If you want to zoom using fingers by touch, then you have to set [`EnablePinchZo
 
 {% highlight xml %}
 
-<syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnablePinchZooming="True" >                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
-</syncfusion:SfChart.Behaviors>
+ <syncfusion:SfChart.Behaviors>
+     <syncfusion:ChartZoomPanBehavior EnablePinchZooming="True"/>
+ </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
 
@@ -140,9 +119,7 @@ If you want to zoom using fingers by touch, then you have to set [`EnablePinchZo
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnablePinchZooming = true
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -160,11 +137,7 @@ To enable the zooming relative to cursor position you can set [`ZoomRelativeToCu
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior ZoomRelativeToCursor="True" >                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior ZoomRelativeToCursor="True"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -173,9 +146,7 @@ To enable the zooming relative to cursor position you can set [`ZoomRelativeToCu
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     ZoomRelativeToCursor = true
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -195,11 +166,7 @@ The following code snippet demonstrated selection zooming.
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" >                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -208,9 +175,7 @@ The following code snippet demonstrated selection zooming.
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableSelectionZooming = true
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -237,13 +202,12 @@ The following code example demonstrates the customization of selection rectangle
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" 
-
-Fill="LightBlue" Stroke="Blue" StrokeThickness="2" >                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior 
+        EnableSelectionZooming="True" 
+        Fill="LightBlue" 
+        Stroke="Blue" 
+        StrokeThickness="2">
+    </syncfusion:ChartZoomPanBehavior>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -252,15 +216,10 @@ Fill="LightBlue" Stroke="Blue" StrokeThickness="2" >
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableSelectionZooming = true,
-
     Fill = new SolidColorBrush(Colors.LightBlue),
-
     Stroke = new SolidColorBrush(Colors.Blue),
-
     StrokeThickness = 2
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -283,11 +242,7 @@ Zooming along [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="X">                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="X"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -319,11 +274,7 @@ Zooming along Y axis
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="Y">                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="Y"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -332,11 +283,8 @@ Zooming along Y axis
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableSelectionZooming = true,
-
     ZoomMode = ZoomMode.Y
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -356,11 +304,7 @@ You can also limit the zooming by setting [`MaximumZoomLevel`](https://help.sync
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" MaximumZoomLevel="100">                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" MaximumZoomLevel="100"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -369,11 +313,8 @@ You can also limit the zooming by setting [`MaximumZoomLevel`](https://help.sync
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableSelectionZooming = true,
-
     MaximumZoomLevel = 100
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -391,11 +332,7 @@ Zooming Toolbar encompassed with buttons for performing actions like Zoom In/Out
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True">                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -404,9 +341,7 @@ Zooming Toolbar encompassed with buttons for performing actions like Zoom In/Out
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableZoomingToolBar = true
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -429,11 +364,7 @@ Zooming Toolbar can be positioned using the [`HorizontalPosition`](https://help.
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" HorizontalPosition="Left" VerticalPosition="Bottom">                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" HorizontalPosition="Left" VerticalPosition="Bottom"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -442,13 +373,9 @@ Zooming Toolbar can be positioned using the [`HorizontalPosition`](https://help.
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableZoomingToolBar = true,
-
     HorizontalPosition = HorizontalAlignment.Left,
-
     VerticalPosition = VerticalAlignment.Bottom
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -475,15 +402,14 @@ Zooming Toolbar can be customized using the following APIs:
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarItemHeight="20" 
-
-ToolBarItemWidth="20" ToolBarBackground="AliceBlue" 
-
-ToolBarItems="All" ToolBarItemMargin="2">                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior 
+        EnableZoomingToolBar="True" 
+        ToolBarItemHeight="20" 
+        ToolBarItemWidth="20" 
+        ToolBarBackground="AliceBlue" 
+        ToolBarItems="All" 
+        ToolBarItemMargin="2">
+    </syncfusion:ChartZoomPanBehavior>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -492,19 +418,12 @@ ToolBarItems="All" ToolBarItemMargin="2">
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableZoomingToolBar = true,
-
     ToolBarBackground = new SolidColorBrush(Colors.AliceBlue),
-
     ToolBarItemHeight = 20,
-
     ToolBarItemWidth = 20,
-
     ToolBarItemMargin = new Thickness(2),
-
     ToolBarItems = ZoomToolBarItems.All
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -527,13 +446,7 @@ Zooming toolbar orientation is horizontal by default.You can change the orientat
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" 
-
-ToolBarOrientation="Vertical">                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarOrientation="Vertical"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -542,11 +455,8 @@ ToolBarOrientation="Vertical">
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableZoomingToolBar = true,
-
     ToolBarOrientation = Orientation.Vertical
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -565,12 +475,9 @@ Panning feature allows moving the visible area of the chart when it is zoomed in
 {% tabs %}
 
 {% highlight xml %}
+
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True" EnablePanning="True">                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True" EnablePanning="True"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -579,11 +486,8 @@ Panning feature allows moving the visible area of the chart when it is zoomed in
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableMouseWheelZooming = true,
-
-    EnablePanning = true
-     
+    EnablePanning = true    
 };
 
 chart.Behaviors.Add(zooming);
@@ -606,11 +510,7 @@ SfChart provides support to reset to the default view when you double tap the ch
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartZoomPanBehavior  ResetOnDoubleTap="True">                                              
-
-</syncfusion:ChartZoomPanBehavior>
-
+    <syncfusion:ChartZoomPanBehavior  ResetOnDoubleTap="True"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -619,9 +519,7 @@ SfChart provides support to reset to the default view when you double tap the ch
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
-    ResetOnDoubleTap = true
-     
+    ResetOnDoubleTap = true    
 };
 
 chart.Behaviors.Add(zooming);
