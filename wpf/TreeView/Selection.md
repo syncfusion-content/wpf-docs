@@ -215,7 +215,31 @@ The TreeView allows changing the selection background color for the selected ite
 
 The TreeView allows changing the selection foreground color for the selected items by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionForegroundColor) property. You can also change the selection foreground color at runtime.
 
-N> `SelectionForegroundColor` is applicable only for unbound mode.
+In Bound Mode, by default, the [SelectionForegroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionForegroundColor) will work when you bind the TextBlock inside the [SfTreeView.ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate). When you bind the other controls inside the [SfTreeView.ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate), you should manually update the Foreground of the bound controls based on the [TreeNodeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeNodeView.html) Foreground. Please refer to the following code samples for your reference.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeView
+               SelectionForegroundColor="DeepPink"
+               FullRowSelect="True"
+               SelectionMode="Multiple"  
+               ItemsSource="{Binding Items}" >
+    <syncfusion:SfTreeView.ItemTemplate>
+        <DataTemplate >
+            <CheckBox Content="{Binding Content.Header}" VerticalAlignment="Center" 
+                  IsChecked="{Binding IsChecked}"
+                  Foreground="{Binding Path=Foreground, Mode=TwoWay,
+                            RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeNodeView}}}">
+            </CheckBox>
+        </DataTemplate>
+    </syncfusion:SfTreeView.ItemTemplate>
+</syncfusion:SfTreeView>
+
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Selection_images/wpf-treeview-selectionforegroundcolor-for-bound-mode.png" alt="WPF TreeView Bound Mode Selection with SelectionForeGroundColor" width="100%" Height="Auto"/>
 
 ## Events
 
