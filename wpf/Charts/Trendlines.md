@@ -17,19 +17,21 @@ The following code examples illustrate how to add trend lines to the chart.
 
 {% highlight xaml %}
 
-<syncfusion:ScatterSeries Interior="#4A4A4A" XBindingPath="Year" Label="Series"
+<syncfusion:ScatterSeries
+    Interior="#4A4A4A"
+    ItemsSource="{Binding List}"
+    XBindingPath="Year"
+    YBindingPath="India"
+    Label="Series"
+    ScatterHeight="15"
+    ScatterWidth="15">
 
-ItemsSource="{Binding List}" YBindingPath="India"
-
-ScatterHeight="15" ScatterWidth="15">
-
-<syncfusion:ScatterSeries.Trendlines>
-
-<syncfusion:Trendline Label="Trend" />
-
-</syncfusion:ScatterSeries.Trendlines>
+    <syncfusion:ScatterSeries.Trendlines>
+        <syncfusion:Trendline Label="Trend"/>
+    </syncfusion:ScatterSeries.Trendlines>
 
 </syncfusion:ScatterSeries>
+
 
 {% endhighlight %}
 
@@ -37,29 +39,20 @@ ScatterHeight="15" ScatterWidth="15">
 
 ScatterSeries scatterSeries = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "India",
-
     ScatterHeight = 15,
-
     ScatterWidth = 15,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A)),
-
     Label = "Series"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
     Label ="Trend"
-
 };
+
 scatterSeries.Trendlines.Add(trendline);
 
 chart.Series.Add(scatterSeries);
@@ -79,17 +72,20 @@ The visibility of the trend line is defined using [`IsTrendlineVisible`](https:/
 
 {% highlight xaml %}
 
-<syncfusion:ScatterSeries Interior="#4A4A4A" XBindingPath="Year" Label="Series"
+<syncfusion:ScatterSeries
+    Interior="#4A4A4A"
+    ItemsSource="{Binding List}"
+    XBindingPath="Year"
+    YBindingPath="India"
+    Label="Series"
+    ScatterHeight="15"
+    ScatterWidth="15">
 
-ItemsSource="{Binding List}" YBindingPath="India"
-
-ScatterHeight="15" ScatterWidth="15">
-
-<syncfusion:ScatterSeries.Trendlines>
-
-<syncfusion:Trendline Label="Trend" IsTrendlineVisible="False"/>
-
-</syncfusion:ScatterSeries.Trendlines>
+    <syncfusion:ScatterSeries.Trendlines>
+        <syncfusion:Trendline
+            Label="Trend"
+            IsTrendlineVisible="False"/>
+    </syncfusion:ScatterSeries.Trendlines>
 
 </syncfusion:ScatterSeries>
 
@@ -99,34 +95,22 @@ ScatterHeight="15" ScatterWidth="15">
 
 ScatterSeries scatterSeries = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "India",
-
     ScatterHeight = 15,
-
     ScatterWidth = 15,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A)),
-
     Label = "Series"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
-    Label ="Trend",
-
+    Label = "Trend",
     IsTrendlineVisible = true
-
 };
 
 scatterSeries.Trendlines.Add(trendline);
-
 chart.Series.Add(scatterSeries);
 
 {% endhighlight %}
@@ -162,55 +146,40 @@ The following is the code example of this trend line.
 
 {% highlight xaml %}
 
-<syncfusion:FatLineSeries XBindingPath="Date"
+<syncfusion:FastLineSeries
+    XBindingPath="Date"
+    YBindingPath="Value"
+    Interior="#7F7F7F"
+    ItemsSource="{Binding StockPriceDetails}">
 
-YBindingPath="Value" 
+    <syncfusion:FastLineSeries.Trendlines>
+        <syncfusion:Trendline  Stroke="Black" Type="Linear"/>
+    </syncfusion:FastLineSeries.Trendlines>
 
-Interior="#7F7F7F"
-
-ItemsSource="{Binding StockPriceDetails}">
-
-<syncfusion:FastLineSeries.Trendlines>
-
-<syncfusion:Trendline Stroke="Black" Type="Linear"/>
-
-</syncfusion:FastLineSeries.Trendlines>
-
-</syncfusion:FastLineSeries>
+ </syncfusion:FastLineSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastLineSeries fastSeries = new FastLineSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
     Label = "Stock Price"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
     Label = "Trend",
-
-    Stroke =new SolidColorBrush(Colors.Black),
-
+    Stroke = new SolidColorBrush(Colors.Black),
     Type = TrendlineType.Linear
-
 };
 
 fastSeries.Trendlines.Add(trendline);
 
-chart.Series.Add(fastS
+chart.Series.Add(fastSeries);
 
 {% endhighlight %}
 
@@ -242,12 +211,8 @@ Interior="#7F7F7F"
 ItemsSource="{Binding StockPriceDetails}">
 
 <syncfusion:FastLineSeries.Trendlines>
-
-<syncfusion:Trendline Stroke="Black" Type="Exponential"/>
-
+    <syncfusion:Trendline  Stroke="Black" Type="Exponential"/>
 </syncfusion:FastLineSeries.Trendlines>
-
-</syncfusion:FastLineSeries>
 
 {% endhighlight %}
 
@@ -255,33 +220,23 @@ ItemsSource="{Binding StockPriceDetails}">
 
 FastLineSeries fastSeries = new FastLineSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
     Label = "Stock Price"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
     Label = "Trend",
-
     Stroke =new SolidColorBrush(Colors.Black),
-
     Type = TrendlineType.Exponential
-
 };
 
 fastSeries.Trendlines.Add(trendline);
 
-chart.Series.Add(fastS
+chart.Series.Add(fastSeries);
 
 {% endhighlight %}
 
@@ -306,19 +261,15 @@ The following code example explains how to define the power trendline.
 
 {% highlight xaml %}
 
-<syncfusion:FastLineSeries XBindingPath="Date"
+<<syncfusion:FastLineSeries
+    XBindingPath="Date"
+    YBindingPath="Value"
+    Interior="#7F7F7F"
+    ItemsSource="{Binding StockPriceDetails}">
 
-YBindingPath="Value" 
-
-Interior="#7F7F7F"
-
-ItemsSource="{Binding StockPriceDetails}">
-
-<syncfusion:FastLineSeries.Trendlines>
-
-<syncfusion:Trendline Stroke="Black" Type="Power"/>
-
-</syncfusion:FastLineSeries.Trendlines>
+    <syncfusion:FastLineSeries.Trendlines>
+        <syncfusion:Trendline  Stroke="Black" Type="Power"/>
+    </syncfusion:FastLineSeries.Trendlines>
 
 </syncfusion:FastLineSeries>
 
@@ -330,31 +281,22 @@ FastLineSeries fastSeries = new FastLineSeries()
 {
 
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
     Label = "Stock Price"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
     Label = "Trend",
-
     Stroke =new SolidColorBrush(Colors.Black),
-
     Type = TrendlineType.Power
-
 };
 
 fastSeries.Trendlines.Add(trendline);
 
-chart.Series.Add(fastS
+chart.Series.Add(fastSeries);
 
 {% endhighlight %}
 
@@ -376,19 +318,15 @@ The following code example illustrates the use of logarithmic trend line.
 
 {% highlight xaml %}
 
-<syncfusion:FastLineSeries XBindingPath="Date"
+<syncfusion:FastLineSeries
+    XBindingPath="Date"
+    YBindingPath="Value"
+    Interior="#7F7F7F"
+    ItemsSource="{Binding StockPriceDetails}">
 
-YBindingPath="Value" 
-
-Interior="#7F7F7F"
-
-ItemsSource="{Binding StockPriceDetails}">
-
-<syncfusion:FastLineSeries.Trendlines>
-
-<syncfusion:Trendline Stroke="Black" Type="Logarithmic"/>
-
-</syncfusion:FastLineSeries.Trendlines>
+    <syncfusion:FastLineSeries.Trendlines>
+        <syncfusion:Trendline  Stroke="Black" Type="Logarithmic"/>
+    </syncfusion:FastLineSeries.Trendlines>
 
 </syncfusion:FastLineSeries>
 
@@ -398,33 +336,23 @@ ItemsSource="{Binding StockPriceDetails}">
 
 FastLineSeries fastSeries = new FastLineSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
     Label = "Stock Price"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
     Label = "Trend",
-
     Stroke =new SolidColorBrush(Colors.Black),
-
     Type = TrendlineType.Logarithmic
-
 };
 
 fastSeries.Trendlines.Add(trendline);
 
-chart.Series.Add(fastS
+chart.Series.Add(fastSeries);
 
 {% endhighlight %}
 
@@ -446,19 +374,15 @@ To define the polynomial trendline, you can use the following code example.
 
 {% highlight xaml %}
 
-<syncfusion:FastLineSeries XBindingPath="Date"
+<syncfusion:FastLineSeries
+    XBindingPath="Date"
+    YBindingPath="Value"
+    Interior="#7F7F7F"
+    ItemsSource="{Binding StockPriceDetails}">
 
-YBindingPath="Value" 
-
-Interior="#7F7F7F"
-
-ItemsSource="{Binding StockPriceDetails}">
-
-<syncfusion:FastLineSeries.Trendlines>
-
-<syncfusion:Trendline Stroke="Black" Type="Polynomial"/>
-
-</syncfusion:FastLineSeries.Trendlines>
+    <syncfusion:FastLineSeries.Trendlines>
+        <syncfusion:Trendline  Stroke="Black" Type="Polynomial"/>
+    </syncfusion:FastLineSeries.Trendlines>
 
 </syncfusion:FastLineSeries>
 
@@ -468,33 +392,23 @@ ItemsSource="{Binding StockPriceDetails}">
 
 FastLineSeries fastSeries = new FastLineSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
     Label = "Stock Price"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
     Label = "Trend",
-
     Stroke =new SolidColorBrush(Colors.Black),
-
     Type = TrendlineType.Polynomial
-
 };
 
 fastSeries.Trendlines.Add(trendline);
 
-chart.Series.Add(fastS
+chart.Series.Add(fastSeries);
 
 {% endhighlight %}
 
@@ -510,21 +424,18 @@ You can set the Polynomial order for this trendline. Polynomial order calculates
 
 {% highlight xaml %}
 
-<syncfusion:FastLineSeries XBindingPath="Date"
+<syncfusion:FastLineSeries
+    XBindingPath="Date"
+    YBindingPath="Value"
+    Interior="#7F7F7F"
+    ItemsSource="{Binding StockPriceDetails}">
 
-YBindingPath="Value" 
-
-Interior="#7F7F7F"
-
-ItemsSource="{Binding StockPriceDetails}">
-
-<syncfusion:FastLineSeries.Trendlines>
-
-<syncfusion:Trendline Stroke="Black" Type="Polynomial"
-
-PolynomialOrder="5"/>
-
-</syncfusion:FastLineSeries.Trendlines>
+    <syncfusion:FastLineSeries.Trendlines>
+        <syncfusion:Trendline
+            Stroke="Black"
+            Type="Polynomial"
+            PolynomialOrder="5"/>
+    </syncfusion:FastLineSeries.Trendlines>
 
 </syncfusion:FastLineSeries>
 
@@ -534,30 +445,19 @@ PolynomialOrder="5"/>
 
 FastLineSeries fastSeries = new FastLineSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
     Label = "Stock Price"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
     Label = "Trend",
-
     Stroke =new SolidColorBrush(Colors.Black),
-
     Type = TrendlineType.Polynomial,
-
     PolynomialOrder = 5
-
 };
 
 fastSeries.Trendlines.Add(trendline);
@@ -587,19 +487,20 @@ For determining the future trends (in forward direction). The following code exa
 
 {% highlight xaml %}
 
-<syncfusion:FastLineSeries XBindingPath="Date" YBindingPath="Value" 
+<syncfusion:FastLineSeries
+    XBindingPath="Date"
+    YBindingPath="Value"
+    Label="Stock Price"
+    Interior="#7F7F7F"
+    ItemsSource="{Binding StockPriceDetails}">
 
-Label="Stock Price"   Interior="#7F7F7F"
-
-ItemsSource="{Binding StockPriceDetails}">
-
-<syncfusion:FastLineSeries.Trendlines>
-
-<syncfusion:Trendline Stroke="Black"
-
-Type="Polynomial" PolynomialOrder="3" ForwardForecast="5" />
-
-</syncfusion:FastLineSeries.Trendlines>
+    <syncfusion:FastLineSeries.Trendlines>
+        <syncfusion:Trendline
+            Stroke="Black"
+            Type="Polynomial"
+            PolynomialOrder="3"
+            ForwardForecast="5"/>
+    </syncfusion:FastLineSeries.Trendlines>
 
 </syncfusion:FastLineSeries>
 
@@ -609,32 +510,20 @@ Type="Polynomial" PolynomialOrder="3" ForwardForecast="5" />
 
 FastLineSeries fastSeries = new FastLineSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
     Label = "Stock Price"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
     Label = "Trend",
-
     Stroke =new SolidColorBrush(Colors.Black),
-
     Type = TrendlineType.Polynomial,
-
     PolynomialOrder = 3,
-
     ForwardForecast = 5
-
 };
 
 fastSeries.Trendlines.Add(trendline);
@@ -655,20 +544,20 @@ For determining the past trends (in backward direction). The following code exam
 
 {% highlight xaml %}
 
-<syncfusion:FastLineSeries XBindingPath="Date" YBindingPath="Value" 
+<syncfusion:FastLineSeries
+    XBindingPath="Date"
+    YBindingPath="Value"
+    Label="Stock Price"
+    Interior="#7F7F7F"
+    ItemsSource="{Binding StockPriceDetails}">
 
-Label="Stock Price"   Interior="#7F7F7F"
-
-ItemsSource="{Binding StockPriceDetails}">
-
-<syncfusion:FastLineSeries.Trendlines>
-
-<syncfusion:Trendline Stroke="Black"
-
-Type="Polynomial" PolynomialOrder="3"  BackwardForecast="5"  />
-
-</syncfusion:FastLineSeries.Trendlines>
-
+    <syncfusion:FastLineSeries.Trendlines>
+        <syncfusion:Trendline
+            Stroke="Black"
+            Type="Polynomial"
+            PolynomialOrder="3"
+            BackwardForecast="5"/>
+    </syncfusion:FastLineSeries.Trendlines>
 </syncfusion:FastLineSeries>
 
 {% endhighlight %}
@@ -677,32 +566,20 @@ Type="Polynomial" PolynomialOrder="3"  BackwardForecast="5"  />
 
 FastLineSeries fastSeries = new FastLineSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
     Label = "Stock Price"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
     Label = "Trend",
-
     Stroke =new SolidColorBrush(Colors.Black),
-
     Type = TrendlineType.Polynomial,
-
     PolynomialOrder = 3,
-
     BackwardForecast = 5
-
 };
 
 fastSeries.Trendlines.Add(trendline);
@@ -724,19 +601,20 @@ You can customize the trendline [`Stroke`](https://help.syncfusion.com/cr/wpf/Sy
 
 {% highlight xaml %}
 
-<syncfusion:FastLineSeries XBindingPath="Date" YBindingPath="Value" 
+<syncfusion:FastLineSeries
+    XBindingPath="Date"
+    YBindingPath="Value"
+    Label="Stock Price"
+    Interior="#7F7F7F"
+    ItemsSource="{Binding StockPriceDetails}">
 
-Label="Stock Price"   Interior="#7F7F7F"
-
-ItemsSource="{Binding StockPriceDetails}">
-
-<syncfusion:FastLineSeries.Trendlines>
-
-<syncfusion:Trendline Stroke="Black" Type="Linear"  
-
-StrokeDashArray="4,4" StrokeThickness="2" />
-
-</syncfusion:FastLineSeries.Trendlines>
+    <syncfusion:FastLineSeries.Trendlines>
+        <syncfusion:Trendline
+            Stroke="Black"
+            Type="Linear"
+            StrokeDashArray="4,4"
+            StrokeThickness="2" />  
+    </syncfusion:FastLineSeries.Trendlines>
 
 </syncfusion:FastLineSeries>
 
@@ -746,36 +624,23 @@ StrokeDashArray="4,4" StrokeThickness="2" />
 
 FastLineSeries fastSeries = new FastLineSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
     Label = "Stock Price"
-
 };
 
 Trendline trendline = new Trendline()
 {
-
     Label = "Trend",
-
     Stroke = new SolidColorBrush(Colors.Black),
-
     Type = TrendlineType.Linear,
-
     StrokeThickness = 2,
-
     StrokeDashArray = new DoubleCollection() { 4, 4 }
-
 };
 
 fastSeries.Trendlines.Add(trendline);
-
 chart.Series.Add(fastSeries);
 
 {% endhighlight %}

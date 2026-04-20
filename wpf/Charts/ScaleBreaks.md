@@ -26,36 +26,32 @@ Applying scale breaks helps in proper visualization of all the data points.
 {% highlight xaml %}
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis>                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="300"
-
-End="8500">
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis>
+        <chart:NumericalAxis.AxisScaleBreaks>
+            <chart:ChartAxisScaleBreak
+                Start="300"
+                End="8500">
+            </chart:ChartAxisScaleBreak>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+
 NumericalAxis axis = new NumericalAxis();
 
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
 
 scaleBreak.Start = 300;
-
 scaleBreak.End = 8500;
 
 axis.AxisScaleBreaks.Add(scaleBreak);
 
 chart.SecondaryAxis = axis;
+
 
 {% endhighlight %}
 
@@ -85,19 +81,11 @@ Range [0,350] takes nearly 4/5th of the axis height and the range [8000,10000] t
 {% highlight xaml %}
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis x:Name="axis" BreakPosition="DataCount">                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="350"
-
-End="8000">  
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis x:Name="axis" BreakPosition="DataCount">
+        <chart:NumericalAxis.AxisScaleBreaks>
+            <chart:ChartAxisScaleBreak  Start="350" End="8000"/>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -111,7 +99,6 @@ axis.BreakPosition = ScaleBreakPosition.DataCount;
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
 
 scaleBreak.Start = 350;
-
 scaleBreak.End = 8000;
 
 axis.AxisScaleBreaks.Add(scaleBreak);
@@ -134,19 +121,11 @@ chart.SecondaryAxis = axis;
 {% highlight xaml %}
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis x:Name="axis" BreakPosition="Scale">                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="350"
-
-End="8000">  
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis x:Name="axis" BreakPosition="Scale">
+        <chart:NumericalAxis.AxisScaleBreaks>
+            <chart:ChartAxisScaleBreak  Start="350" End="8000"/>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -154,13 +133,11 @@ End="8000">
 {% highlight c# %}
 
 NumericalAxis axis = new NumericalAxis();
-
 axis.BreakPosition = ScaleBreakPosition.Scale;
 
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
 
 scaleBreak.Start = 350;
-
 scaleBreak.End = 8000;
 
 axis.AxisScaleBreaks.Add(scaleBreak);
@@ -187,27 +164,23 @@ In the below image, each break is given percent value as 50. First break is posi
 {% highlight xaml %}
 
 <chart:SfChart.SecondaryAxis>
+    <chart:NumericalAxis
+        x:Name="axis"
+        BreakPosition="Percent">
+        <chart:NumericalAxis.AxisScaleBreaks>
+            <chart:ChartAxisScaleBreak
+                Start="300"
+                End="8000"
+                BreakPercent="50">
+            </chart:ChartAxisScaleBreak>
 
-<chart:NumericalAxis x:Name="axis" BreakPosition="Percent ">                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="300"
-
-End="8000" BreakPercent="50"> 
-
-</chart:ChartAxisScaleBreak>                     
-
-<chart:ChartAxisScaleBreak Start="12500"
-
-End="19000" BreakPercent="50"> 
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis.AxisScaleBreaks>
-
-</chart:NumericalAxis>
-
+            <chart:ChartAxisScaleBreak
+                Start="12500"
+                End="19000"
+                BreakPercent="50">
+            </chart:ChartAxisScaleBreak>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -219,23 +192,15 @@ NumericalAxis axis = new NumericalAxis();
 axis.BreakPosition = ScaleBreakPosition.Percent;
 
 ChartAxisScaleBreak scaleBreak1 = new ChartAxisScaleBreak();
-
 scaleBreak1.Start = 300;
-
 scaleBreak1.End = 8000;
-
 scaleBreak1.BreakPercent = 50;
-
 axis.AxisScaleBreaks.Add(scaleBreak1);
 
 ChartAxisScaleBreak scaleBreak2 = new ChartAxisScaleBreak();
-
 scaleBreak2.Start = 12500;
-
 scaleBreak2.End = 19000;
-
 scaleBreak2.BreakPercent = 50;
-
 axis.AxisScaleBreaks.Add(scaleBreak2);
 
 chart.SecondaryAxis = axis;
@@ -256,27 +221,12 @@ Multiple breaks can be included in the chart.
 {% highlight xaml %}
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis>                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="300"
-
-End="8000"> 
-
-</chart:ChartAxisScaleBreak>                   
-
-<chart:ChartAxisScaleBreak Start="12500"
-
-End="19000"> 
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis.AxisScaleBreaks>
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis>
+        <chart:NumericalAxis.AxisScaleBreaks>
+            <chart:ChartAxisScaleBreak Start="300" End="8000"/>
+            <chart:ChartAxisScaleBreak Start="12500" End="19000"/>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -286,19 +236,13 @@ End="19000">
 NumericalAxis axis = new NumericalAxis();
 
 ChartAxisScaleBreak scaleBreak1 = new ChartAxisScaleBreak();
-
 scaleBreak1.Start = 300;
-
 scaleBreak1.End = 8000;
-
 axis.AxisScaleBreaks.Add(scaleBreak1);
 
 ChartAxisScaleBreak scaleBreak2 = new ChartAxisScaleBreak();
-
 scaleBreak2.Start = 12500;
-
 scaleBreak2.End = 19000;
-
 axis.AxisScaleBreaks.Add(scaleBreak2);
 
 chart.SecondaryAxis = axis;
@@ -321,25 +265,19 @@ Line type such as [`Wave`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 {% highlight xaml %}
 
 <chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis>                                
-
-<chart:NumericalAxis.AxisScaleBreaks>                     
-
-<chart:ChartAxisScaleBreak Start="300"  BreakSpacing="12"
-
-End="8500" LineType="Wave" 
-
-Fill="PaleTurquoise"
-
-Stroke="Black" StrokeThickness="1.2" >  
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis.AxisScaleBreaks> 
-
-</chart:NumericalAxis>
-
+    <chart:NumericalAxis>
+        <chart:NumericalAxis.AxisScaleBreaks>
+            <chart:ChartAxisScaleBreak
+                Start="300"
+                End="8500"
+                BreakSpacing="12"
+                LineType="Wave"
+                Fill="PaleTurquoise"
+                Stroke="Black"
+                StrokeThickness="1.2">
+            </chart:ChartAxisScaleBreak>
+        </chart:NumericalAxis.AxisScaleBreaks>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -351,17 +289,11 @@ NumericalAxis axis = new NumericalAxis();
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
 
 scaleBreak.Start = 300;
-
 scaleBreak.End = 8500;
-
 scaleBreak.LineType = BreakLineType.Wave;
-
 scaleBreak.BreakSpacing = 12;
-
 scaleBreak.Fill = new SolidColorBrush(Colors.PaleTurquoise);
-
 scaleBreak.Stroke = new SolidColorBrush(Colors.Black);
-
 scaleBreak.StrokeThickness = 1.2;
 
 axis.AxisScaleBreaks.Add(scaleBreak);

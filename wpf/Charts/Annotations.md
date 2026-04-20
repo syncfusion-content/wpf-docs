@@ -1202,11 +1202,11 @@ The corresponding DateTime value will be given as values for X1 and X2 propertie
 {% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
-    <chart:DateTimeAxis />
+    <chart:DateTimeAxis/>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-    <chart:NumericalAxis />
+    <chart:NumericalAxis/>
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Annotations>
@@ -1223,6 +1223,7 @@ The corresponding DateTime value will be given as values for X1 and X2 propertie
 {% highlight c# %}
 
 SfChart chart = new SfChart();
+
 chart.PrimaryAxis = new DateTimeAxis();
 chart.SecondaryAxis = new NumericalAxis();
 
