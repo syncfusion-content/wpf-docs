@@ -121,8 +121,8 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% highlight c# %}
 
-pieSeries.GroupMode = PieGroupMode.Angle;
-pieSeries.GroupTo = 30;
+pieSeries.GroupMode = PieGroupMode.Value;
+pieSeries.GroupTo = 1000;
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
