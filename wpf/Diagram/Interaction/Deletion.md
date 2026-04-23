@@ -36,4 +36,4 @@ private void MainWindow_ItemDeletingEvent(object sender, DiagramPreviewEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Deletion](Interaction_images/Delete.gif)
+![WPF Diagram Deletion](Interaction_images/Delete.gif)
