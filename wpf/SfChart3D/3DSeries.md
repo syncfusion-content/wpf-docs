@@ -288,7 +288,6 @@ chart3D.Series.Add(series);
 
 
 ## Stacking Charts
-
 ### Stacking Column
 [`StackingColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumnSeries3D.html#) resembles multiple types of ColumnSeries3D. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
 
