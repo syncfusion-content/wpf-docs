@@ -23,26 +23,34 @@ The following code example illustrates how to initialize the adornment.
 
 {% highlight xaml %}
 
-        <syncfusion:ColumnSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
-                <syncfusion:ColumnSeries.AdornmentsInfo>
-                    <syncfusion:ChartAdornmentInfo></syncfusion:ChartAdornmentInfo>
-                </syncfusion:ColumnSeries.AdornmentsInfo>
-        </syncfusion:ColumnSeries> 
+<syncfusion:ColumnSeries 
+    Interior="#777777" 
+    ItemsSource="{Binding Demands}" 
+    XBindingPath="Category" 
+    YBindingPath="Value">
+    
+    <syncfusion:ColumnSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo/>
+    </syncfusion:ColumnSeries.AdornmentsInfo>
+</syncfusion:ColumnSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries series = new ColumnSeries()
-            {
-                ItemsSource = ViewModel().Demands,
-                XBindingPath = "Demands",
-                YBindingPath = "Value",
-                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-            };
-        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo();
-        series.AdornmentsInfo = adornmentInfo;
-        chart.Series.Add(series);
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = ViewModel().Demands,
+    XBindingPath = "Category",
+    YBindingPath = "Value",
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+};
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo();
+
+series.AdornmentsInfo = adornmentInfo;
+
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -53,13 +61,8 @@ The following code example illustrates how to initialize the adornment.
 ## See also
 
 [`How to show different data marker based on the value in the WPF Chart`](https://support.syncfusion.com/kb/article/9396/how-to-show-different-data-marker-based-on-the-value-in-the-wpf-chart)
-
 [`How to show custom data marker in the WPF Chart`](https://support.syncfusion.com/kb/article/9620/how-to-show-custom-data-marker-in-the-wpf-chart)
-
 [`How to rotate text in adornment`](https://support.syncfusion.com/kb/article/3135/how-to-rotate-text-in-adornment-of-wpf-chart-sfchart)
-
 [`How to display the labels inside segments`](https://support.syncfusion.com/kb/article/2773/how-to-display-the-labels-inside-segments-in-wpf-chart-sfchart)
-
 [`How to bind the underlying DataTable model to the DataMarker Template in WPF Charts`](https://support.syncfusion.com/kb/article/10047/how-to-bind-the-underlying-datatable-model-to-the-datamarker-template-in-wpf-charts)
-
 
