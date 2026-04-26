@@ -603,9 +603,6 @@ The [`ResetZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 ## See also
 
 [`How to improve performance while zooming by using scrollbar`](https://www.syncfusion.com/kb/5489/how-to-improve-performance-while-zooming-by-using-scrollbar)
-
 [`How to set default zoom/pan position for charts`](https://www.syncfusion.com/kb/2904/how-to-set-default-zoom-pan-position-for-charts)
-
 [`How to display the visible range of labels while zooming`](https://www.syncfusion.com/kb/2712/how-to-display-the-visible-range-of-labels-while-zooming )
-
 [`How to reset zooming `](https://www.syncfusion.com/kb/2562/how-to-reset-zooming)

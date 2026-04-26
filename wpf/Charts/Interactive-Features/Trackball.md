@@ -675,7 +675,5 @@ The [`ChartPointInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Cha
 ## See also
 
 [`How to disable a trackball for a specific series`](https://www.syncfusion.com/kb/11291/how-to-disable-a-trackball-for-a-specific-series)
-
 [`How to customize the trackball appearance in WPF Chart`](https://www.syncfusion.com/kb/11020/how-to-customize-the-trackball-appearance-in-wpf-chart)
-
 [`How to apply label formatting to the trackball labels`](https://www.syncfusion.com/kb/5362/how-to-apply-label-formatting-to-the-trackball-labels)

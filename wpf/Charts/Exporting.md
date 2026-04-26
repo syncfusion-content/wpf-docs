@@ -102,7 +102,5 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 ## See also
 
 [`How to export chart as Image`](https://help.syncfusion.com/wpf/charts/exporting)
-
 [`How to print the chart`](https://help.syncfusion.com/wpf/charts/printing)
-
 [`How to read image byte while rendering chart`](https://www.syncfusion.com/kb/2584/how-to-read-image-byte-while-rendering-chart)
