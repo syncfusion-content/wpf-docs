@@ -108,7 +108,7 @@ chart.SecondaryAxis = new NumericalAxis() { Header = "Values(In Tonnes)" };
 
 {% endtabs %}
 
-![WPF ChartAxis with Header](Axis_images/wpf-chart-axis-header.jpeg)
+![WPF ChartAxis with Header](Axis_images/wpf-chart-axis-header1.jpg)
 
 
 **Header** **Customization**
@@ -161,7 +161,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Customizing Header of WPF ChartAxis](Axis_images/wpf-chart-axis-header-customization.jpeg)
+![Customizing Header of WPF ChartAxis](Axis_images/wpf-chart-axis-header-customization1.jpg)
 
 
 **HeaderStyle**
@@ -217,7 +217,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Changing Header Style in WPF ChartAxis](Axis_images/wpf-chart-axis-header-style.jpeg)
+![Changing Header Style in WPF ChartAxis](Axis_images/wpf-chart-axis-header-style1.jpg)
 
 ## Axis Labels
 
@@ -253,7 +253,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Changing Axis Label Position in WPF Chart](Axis_images/wpf-chart-axis-label-position.jpeg)
+![Changing Axis Label Position in WPF Chart](Axis_images/wpf-chart-axis-label-position1.jpg)
 
 
 **LabelRotationAngle**
@@ -281,7 +281,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![WPF Chart displays Axis Rotation Angle](Axis_images/wpf-chart-axis-rotation-angle.jpeg)
+![WPF Chart displays Axis Rotation Angle](Axis_images/wpf-chart-axis-rotation-angle1.jpg)
 
 **Custom** **Labels**
 
@@ -299,7 +299,7 @@ SfChart allows user to define the labels for the axis. For defining the axis lab
             <syncfusion:ChartAxisLabel Position="2" LabelContent="2-3"/>
             <syncfusion:ChartAxisLabel Position="3" LabelContent="3-4"/>
             <syncfusion:ChartAxisLabel Position="4" LabelContent="4-5"/>
-            <syncfusion:ChartAxisLabel Position="5" LabelContent="5-5"/>
+            <syncfusion:ChartAxisLabel Position="5" LabelContent="5-6"/>
         </syncfusion:CategoryAxis.CustomLabels>
     </syncfusion:CategoryAxis>
 </syncfusion:SfChart.PrimaryAxis>
@@ -314,14 +314,14 @@ axis.CustomLabels.Add(new ChartAxisLabel() { Position = 1, LabelContent = "1-2" 
 axis.CustomLabels.Add(new ChartAxisLabel() { Position = 2, LabelContent = "2-3" });
 axis.CustomLabels.Add(new ChartAxisLabel() { Position = 3, LabelContent = "3-4" });
 axis.CustomLabels.Add(new ChartAxisLabel() { Position = 4, LabelContent = "4-5" });
-axis.CustomLabels.Add(new ChartAxisLabel() { Position = 5, LabelContent = "5-5" });
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 5, LabelContent = "5-6" });
 chart.PrimaryAxis = axis;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![WPF Chart with Custom Axis Label](Axis_images/wpf-chart-custom-axis-label.jpeg)
+![WPF Chart with Custom Axis Label](Axis_images/wpf-chart-custom-axis-label1.jpg)
 
 
 You can also directly bind the collection of labels to the [`LabelsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsSource) property for defining custom labels. The following code example demonstrates the defining the label collection in code behind and binding the property in XAML page.
@@ -369,7 +369,7 @@ public class LabelItem
 
 {% endtabs %}
 
-![Customizing Axis Label in WPF Chart](Axis_images/wpf-chart-axis-label-customization.jpeg)
+![Customizing Axis Label in WPF Chart](Axis_images/wpf-chart-custom-axis-label1.jpg)
 
 
 **Label** **Formatting**
@@ -400,7 +400,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![WPF Chart with DateTimeAxis Label](Axis_images/wpf-chart-axis-label-formatting.jpeg)
+![WPF Chart with DateTimeAxis Label](Axis_images/wpf-chart-axis-label-formatting1.jpg)
 
 
 **TimeSpanAxis**
@@ -426,7 +426,7 @@ chart.PrimaryAxis = new TimeSpanAxis()
 
 {% endtabs %}
 
-![WPF Chart with TimeSpanAxis Label](Axis_images/wpf-chart-time-span-axis-label.jpeg)
+![WPF Chart with TimeSpanAxis Label](Axis_images/wpf-chart-time-span-axis-label1.jpg)
 
 
 **NumericalAxis**
@@ -436,7 +436,7 @@ chart.PrimaryAxis = new TimeSpanAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart.SecondaryAxis>
-    <syncfusion:NumericalAxis LabelFormat="0.00" />
+    <syncfusion:NumericalAxis LabelFormat="0.00"/>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -502,17 +502,17 @@ chart.SecondaryAxis = new NumericalAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart x:Name="chart">
-    <syncfusion:SfChart.Resources>
-        <DataTemplate x:Key="postfixLabelTemplate">
-            <TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
-        </DataTemplate>
-    </syncfusion:SfChart.Resources>
+        <syncfusion:SfChart.Resources>
+            <DataTemplate x:Key="postfixLabelTemplate">
+                <TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
+            </DataTemplate>
+        </syncfusion:SfChart.Resources>
 
-    <syncfusion:SfChart.SecondaryAxis>
-        <syncfusion:NumericalAxis 
-            FontSize="10" 
-            PostfixLabelTemplate="{StaticResource postfixLabelTemplate}"/>
-    </syncfusion:SfChart.SecondaryAxis>
+        <syncfusion:SfChart.SecondaryAxis>
+            <syncfusion:NumericalAxis 
+                FontSize="10" 
+                PostfixLabelTemplate="{StaticResource postfixLabelTemplate}"/>
+        </syncfusion:SfChart.SecondaryAxis>
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -630,14 +630,14 @@ None option is used to display all the label even if it intersects. The followin
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-    <syncfusion:CategoryAxis LabelsIntersectAction="None"/>
+    <syncfusion:DateTimeAxis  LabelsIntersectAction="None"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-chart.PrimaryAxis = new CategoryAxis()
+chart.PrimaryAxis = new DateTimeAxis()
 {
     LabelsIntersectAction = AxisLabelsIntersectAction.None
 };
@@ -713,13 +713,13 @@ This option in [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Sync
 
 {% highlight xml %}
 
-<syncfusion:CategoryAxis LabelsIntersectAction="Auto"></syncfusion:CategoryAxis>
+<syncfusion:DateTimeAxis LabelsIntersectAction="Auto"></syncfusion:DateTimeAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-chart.PrimaryAxis = new CategoryAxis()
+chart.PrimaryAxis = new DateTimeAxis()
 {
     LabelsIntersectAction = AxisLabelsIntersectAction.Auto
 };
@@ -774,7 +774,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-    <syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Shift" />
+    <syncfusion:DateTimeAxis DateTimeAxis LabelFormat="MMM-dd" EdgeLabelsDrawingMode="Shift"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -790,7 +790,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![WPF Chart displays Axis Edge Label from Left to Right Position](Axis_images/wpf-chart-shift-axis-edge-label.jpeg)
+![WPF Chart displays Axis Edge Label from Left to Right Position](Axis_images/wpf-chart-shift-axis-edge-label.jpg)
 
 
 **Hide**
@@ -800,11 +800,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Hide">
-
-</syncfusion:DateTimeAxis>
-
+    <syncfusion:DateTimeAxis  EdgeLabelsDrawingMode="Hide"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -813,9 +809,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 chart.PrimaryAxis = new DateTimeAxis()
 {
-
     EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Hide
-
 };
 
 {% endhighlight %}
