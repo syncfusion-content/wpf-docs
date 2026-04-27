@@ -289,4 +289,4 @@ N> You can refer to our [WPF Funnel Chart](https://www.syncfusion.com/wpf-contro
 
 ## See also
 
-[`How to add gaps between segments in a pyramid or funnel series`](https://www.syncfusion.com/kb/2708/how-to-add-gaps-between-segments-in-a-pyramid-or-funnel-series)
+[`How to add gaps between segments in a pyramid or funnel series?`](https://www.syncfusion.com/kb/2708/how-to-add-gaps-between-segments-in-a-pyramid-or-funnel-series)

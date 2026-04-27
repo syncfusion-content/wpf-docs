@@ -137,4 +137,4 @@ chart.Series.Add(series);
 
 ## See also
 
-[`How to change the size and color of scatter series`](https://www.syncfusion.com/kb/3857/how-to-change-the-size-and-color-of-scatter-series)
+[`How to change the size and color of scatter series?`](https://www.syncfusion.com/kb/3857/how-to-change-the-size-and-color-of-scatter-series)

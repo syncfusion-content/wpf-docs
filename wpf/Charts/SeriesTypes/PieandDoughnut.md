@@ -615,4 +615,4 @@ N> You can refer to our [WPF Doughnut Chart](https://www.syncfusion.com/wpf-cont
 
 ## See also
 
-[`How to create Pie Chart in C# WPF`](https://www.syncfusion.com/kb/10789/how-to-create-pie-chart-in-c-wpf)
+[`How to create Pie Chart in C# WPF?`](https://www.syncfusion.com/kb/10789/how-to-create-pie-chart-in-c-wpf)

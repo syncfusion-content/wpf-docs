@@ -161,7 +161,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Customizing Header of WPF ChartAxis](Axis_images/wpf-chart-axis-header-customization1.jpg)
+![Customizing Header of WPF ChartAxis](Axis_images/wpf-chart-axis-header-customization.jpg)
 
 
 **HeaderStyle**
@@ -4378,16 +4378,16 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`How to get axis range in chart`](https://support.syncfusion.com/kb/article/9439/how-can-i-retrieve-the-charts-axis-range-in-wpf)
-[`How to wrap the multi-level axis label's text in WPF Chart`](https://support.syncfusion.com/kb/article/8937/how-to-wrap-the-multi-level-axis-labels-text-in-wpf-charts)
-[`How to use the DateTimeAxis as SecondaryAxis in WPF Chart`](https://support.syncfusion.com/kb/article/8435/how-to-use-the-datetimeaxis-as-secondaryaxis-in-wpf-sfchart)
-[`How to apply the custom labels in WPF Logarithmic Axis`](https://support.syncfusion.com/kb/article/8370/how-to-apply-the-custom-labels-in-wpf-charts-logarithmicaxis)
-[`How to customize label formats of date-time axis during the interval transitions`](https://support.syncfusion.com/kb/article/6378/how-to-customize-the-label-formats-of-date-time-axis-during-interval-transitions-in-wpf)
-[`How to rotate axis label in the Chart`](https://support.syncfusion.com/kb/article/4968/how-to-rotate-axis-label-in-the-wpf-chart-sfchart)
-[`How to hide axis in chart`](https://support.syncfusion.com/kb/article/4919/how-to-hide-axis-in-wpf-chart-sfchart)
-[`How to position the primary and secondary axes as the center of chart`](https://support.syncfusion.com/kb/article/3829/how-to-set-the-position-of-primary-and-secondary-axes-of-wpf-sfchart-)
-[`How to display the axis labels in a particular format`](https://support.syncfusion.com/kb/article/3503/how-to-display-axis-labels-in-a-particular-format-of-wpf-chart)
-[`How to display the axis labels for all datapoints`](https://support.syncfusion.com/kb/article/3172/how-to-display-the-axis-labels-for-all-datapoints-in-wpf-chart-sfchart)
-[`How to define ticker labels of custom axis`](https://support.syncfusion.com/kb/article/2776/how-to-define-ticker-labels-of-custom-axis-in-wpf-chart-sfchart)
-[`How to display striplines in DateTimeAxis of WPF Chart`](https://support.syncfusion.com/kb/article/9199/how-to-display-striplines-in-datetimeaxis-of-wpf-chart)
-[`How to set the custom labels with auto range for axis`](https://support.syncfusion.com/kb/article/5497/how-to-set-the-custom-labels-with-auto-range-for-axis-in-wpf-chart-sfchart)
+[`How to get axis range in chart?`](https://support.syncfusion.com/kb/article/9439/how-can-i-retrieve-the-charts-axis-range-in-wpf)
+[`How to wrap the multi-level axis label's text in WPF Chart?`](https://support.syncfusion.com/kb/article/8937/how-to-wrap-the-multi-level-axis-labels-text-in-wpf-charts)
+[`How to use the DateTimeAxis as SecondaryAxis in WPF Chart?`](https://support.syncfusion.com/kb/article/8435/how-to-use-the-datetimeaxis-as-secondaryaxis-in-wpf-sfchart)
+[`How to apply the custom labels in WPF Logarithmic Axis?`](https://support.syncfusion.com/kb/article/8370/how-to-apply-the-custom-labels-in-wpf-charts-logarithmicaxis)
+[`How to customize label formats of date-time axis during the interval transitions?`](https://support.syncfusion.com/kb/article/6378/how-to-customize-the-label-formats-of-date-time-axis-during-interval-transitions-in-wpf)
+[`How to rotate axis label in the Chart?`](https://support.syncfusion.com/kb/article/4968/how-to-rotate-axis-label-in-the-wpf-chart-sfchart)
+[`How to hide axis in chart?`](https://support.syncfusion.com/kb/article/4919/how-to-hide-axis-in-wpf-chart-sfchart)
+[`How to position the primary and secondary axes as the center of chart?`](https://support.syncfusion.com/kb/article/3829/how-to-set-the-position-of-primary-and-secondary-axes-of-wpf-sfchart-)
+[`How to display the axis labels in a particular format?`](https://support.syncfusion.com/kb/article/3503/how-to-display-axis-labels-in-a-particular-format-of-wpf-chart)
+[`How to display the axis labels for all datapoints?`](https://support.syncfusion.com/kb/article/3172/how-to-display-the-axis-labels-for-all-datapoints-in-wpf-chart-sfchart)
+[`How to define ticker labels of custom axis?`](https://support.syncfusion.com/kb/article/2776/how-to-define-ticker-labels-of-custom-axis-in-wpf-chart-sfchart)
+[`How to display striplines in DateTimeAxis of WPF Chart?`](https://support.syncfusion.com/kb/article/9199/how-to-display-striplines-in-datetimeaxis-of-wpf-chart)
+[`How to set the custom labels with auto range for axis?`](https://support.syncfusion.com/kb/article/5497/how-to-set-the-custom-labels-with-auto-range-for-axis-in-wpf-chart-sfchart)

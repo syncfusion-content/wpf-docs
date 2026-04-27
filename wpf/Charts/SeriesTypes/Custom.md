@@ -101,6 +101,5 @@ The BarSeries, BubbleSeries, ColumnSeries, LineSeries, ScatterSeries and StepLin
 
 ## See also
 
-[`How to customize the default shape of any series with the required shapes`](https://www.syncfusion.com/kb/3853/how-to-customize-the-default-shape-of-any-series-with-the-required-shapes)
-
-[`How to create the Tornado Chart in WPF Charts`](https://www.syncfusion.com/kb/11657/how-to-create-the-tornado-chart-in-wpf-charts)
+[`How to customize the default shape of any series with the required shapes?`](https://www.syncfusion.com/kb/3853/how-to-customize-the-default-shape-of-any-series-with-the-required-shapes)
+[`How to create the Tornado Chart in WPF Charts?`](https://www.syncfusion.com/kb/11657/how-to-create-the-tornado-chart-in-wpf-charts)
