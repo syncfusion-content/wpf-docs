@@ -1263,8 +1263,8 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`How to display trackball label or tooltip over chart annotation`](https://support.syncfusion.com/kb/article/9592/how-to-display-trackball-label-or-tooltip-over-chart-annotation)
-[`How to add annotations by using MVVM binding`](https://support.syncfusion.com/kb/article/4632/how-to-add-annotations-by-using-mvvm-binding-in-wpf-chart-sfchart)
-[`How to change the cursor of the annotation`](https://support.syncfusion.com/kb/article/4574/how-to-change-the-cursor-of-annotation-in-wpf-chart-sfchart)
-[`How to bind the ViewModel property to content template of a TextAnnotation`](https://support.syncfusion.com/kb/article/3009/how-to-bind-the-content-template-of-text-annotation-in-wpf-chart)
-[`How to draw horizontal line in chart`](https://support.syncfusion.com/kb/article/3020/how-to-draw-horizontal-line-in-wpf-chart-sfchart)
+[`How to display trackball label or tooltip over chart annotation?`](https://support.syncfusion.com/kb/article/9592/how-to-display-trackball-label-or-tooltip-over-chart-annotation)
+[`How to add annotations by using MVVM binding?`](https://support.syncfusion.com/kb/article/4632/how-to-add-annotations-by-using-mvvm-binding-in-wpf-chart-sfchart)
+[`How to change the cursor of the annotation?`](https://support.syncfusion.com/kb/article/4574/how-to-change-the-cursor-of-annotation-in-wpf-chart-sfchart)
+[`How to bind the ViewModel property to content template of a TextAnnotation?`](https://support.syncfusion.com/kb/article/3009/how-to-bind-the-content-template-of-text-annotation-in-wpf-chart)
+[`How to draw horizontal line in chart?`](https://support.syncfusion.com/kb/article/3020/how-to-draw-horizontal-line-in-wpf-chart-sfchart)

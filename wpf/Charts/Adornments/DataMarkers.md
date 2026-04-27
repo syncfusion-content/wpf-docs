@@ -60,9 +60,9 @@ chart.Series.Add(series);
 
 ## See also
 
-[`How to show different data marker based on the value in the WPF Chart`](https://support.syncfusion.com/kb/article/9396/how-to-show-different-data-marker-based-on-the-value-in-the-wpf-chart)
-[`How to show custom data marker in the WPF Chart`](https://support.syncfusion.com/kb/article/9620/how-to-show-custom-data-marker-in-the-wpf-chart)
-[`How to rotate text in adornment`](https://support.syncfusion.com/kb/article/3135/how-to-rotate-text-in-adornment-of-wpf-chart-sfchart)
-[`How to display the labels inside segments`](https://support.syncfusion.com/kb/article/2773/how-to-display-the-labels-inside-segments-in-wpf-chart-sfchart)
-[`How to bind the underlying DataTable model to the DataMarker Template in WPF Charts`](https://support.syncfusion.com/kb/article/10047/how-to-bind-the-underlying-datatable-model-to-the-datamarker-template-in-wpf-charts)
+[`How to show different data marker based on the value in the WPF Chart?`](https://support.syncfusion.com/kb/article/9396/how-to-show-different-data-marker-based-on-the-value-in-the-wpf-chart)
+[`How to show custom data marker in the WPF Chart?`](https://support.syncfusion.com/kb/article/9620/how-to-show-custom-data-marker-in-the-wpf-chart)
+[`How to rotate text in adornment?`](https://support.syncfusion.com/kb/article/3135/how-to-rotate-text-in-adornment-of-wpf-chart-sfchart)
+[`How to display the labels inside segments?`](https://support.syncfusion.com/kb/article/2773/how-to-display-the-labels-inside-segments-in-wpf-chart-sfchart)
+[`How to bind the underlying DataTable model to the DataMarker Template in WPF Charts?`](https://support.syncfusion.com/kb/article/10047/how-to-bind-the-underlying-datatable-model-to-the-datamarker-template-in-wpf-charts)
 

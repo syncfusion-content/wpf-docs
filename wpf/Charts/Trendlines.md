@@ -653,4 +653,4 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`Chart with average line`](https://support.syncfusion.com/kb/article/2804/how-to-get-line-graph-average-for-wpf-chart-sfchart)
+[`How to show the average line in a WPF Chart (SfChart) using Trendlines?`](https://support.syncfusion.com/kb/article/2804/how-to-get-line-graph-average-for-wpf-chart-sfchart)
