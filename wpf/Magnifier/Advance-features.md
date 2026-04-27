@@ -6,7 +6,7 @@ platform: wpf
 control: Magnifier
 documentation: ug
 ---
-## Zooming
+# Zooming
 
 The Magnifier control provides flexible zooming through the [`ZoomFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Magnifier.html#Syncfusion_Windows_Shared_Magnifier_ZoomFactor) property and programmatic methods. You can configure zoom levels declaratively or adjust them dynamically at runtime.
 

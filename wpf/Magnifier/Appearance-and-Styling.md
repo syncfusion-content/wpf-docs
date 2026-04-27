@@ -7,7 +7,7 @@ control: Magnifier
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and styling
 
 The Magnifier control provides extensive customization options to match your application's visual design. You can configure the frame shape, size, colors, and other visual properties to create the desired appearance.
 
