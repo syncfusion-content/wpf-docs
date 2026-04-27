@@ -61,7 +61,6 @@ N> Syncfusion.SfChart.CUITExtension.WPF.dll need to be installed in GAC location
 
 ## Getting Started
 
-
 ### Coded UI Project Creation
 
 Run Visual Studio in administrator mode

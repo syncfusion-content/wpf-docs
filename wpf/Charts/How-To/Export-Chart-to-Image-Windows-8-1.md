@@ -20,10 +20,7 @@ The export chart to image feature in the SfChart control enables the user to exp
 * PNG
 * BMP
 
-
-
 ### Method Table
-
 <table>
 <tr>
 <th>

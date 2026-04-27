@@ -12,7 +12,6 @@ documentation: ug
 SfChart provides the support for serializing and deserializing control. This section explains on how to serialize and deserialize SfChart.
 
 ## Methods:
-
 <table>
 <tr>
 <th>
@@ -43,9 +42,8 @@ Deserialize the XML file from the given file path and returns the SfChart contro
 Deserialize(Stream stream)</td><td>
 Deserialize the XML file from the given stream and returns the SfChart control object.</td></tr>
 </table>
-{% tabs %}
 
-XAML
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -63,8 +61,6 @@ XAML
 </StackPanel>
 
 {% endhighlight %}
-
-C#
 
 {% highlight c# %}
 

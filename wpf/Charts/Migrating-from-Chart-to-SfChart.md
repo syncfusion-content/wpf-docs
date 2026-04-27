@@ -1721,7 +1721,7 @@ columnSeries.Annotations = annoCollection;
 
 In SfChart, you can position Annotations in pixel unit or axis. Units are specified using CoordinateUnit property. Unlike Chart, shape is represented by class name itself in SfChart.
 
-###SfChart having the following Annotations
+### SfChart having the following Annotations
 
 * Image Annotation
 
@@ -2091,7 +2091,7 @@ columnSeries.Indicators = indiCollection;
 {% endhighlight %}
 {% endtabs %}
 
-##SfChart
+### SfChart
 
 {% tabs %}
 {% highlight xaml %}
@@ -2239,7 +2239,7 @@ areas.Areas.Add(area2);
 
 ### SfChart
 
-##Column Row Definition
+## Column Row Definition
 
 {% tabs %}
 {% highlight xaml %}
@@ -2351,7 +2351,6 @@ chart.Series.Add(lineSeries2);
 {% endtabs %}
 
 ## Exporting and Printing
-
 ### Export to Image
 
 ### Chart
@@ -2393,7 +2392,7 @@ if (sfd.ShowDialog() == true)
 
 {% endhighlight %}
 
-##Printing Chart
+## Printing Chart
 
 ### Chart
 
