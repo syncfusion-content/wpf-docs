@@ -274,7 +274,7 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 [`How to allot space between the segments?`](https://support.syncfusion.com/kb/article/5110/how-to-customize-the-space-between-segments-in-wpf-chart-sfchart)
 [`How to display the chart area alone in Chart?`](https://support.syncfusion.com/kb/article/5116/how-to-display-the-chart-area-alone-in-wpf-chart-sfchart)
 [`How to redraw the chart while dragging the series out of the range?`](https://support.syncfusion.com/kb/article/5173/how-to-redraw-wpf-chart-sfchart-while-dragging-the-series-out-of-the-range)
-[`How to set the Z Index to the series?`](https://support.syncfusion.com/kb/article/3014/how-to-set-the-z-index-to-scatter-series-of-wpf-chart-sfchart)
+[`How to set the Z Index to the series?`](https://support.syncfusion.com/kb/article/3014/how-to-set-the-z-index-for-a-scatter-series-in-a-wpf-chart-sfchart)
 [`How to get coordinates of x and y in MouseDown event?`](https://support.syncfusion.com/kb/article/2786/how-to-get-coordinates-of-x-and-y-in-wpf-chart-sfchart)
 [`How to set ItemWidthPercent before drawing chart?`](https://support.syncfusion.com/kb/article/2805/how-to-set-spacing-between-each-columns-in-wpf-chart-sfchart)
 [`How to view corner segments without cutting in edge of WPF Chart?`](https://support.syncfusion.com/kb/article/9372/how-to-view-corner-segments-without-cutting-in-edge-of-wpf-chart)
