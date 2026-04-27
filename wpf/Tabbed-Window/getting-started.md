@@ -9,33 +9,51 @@ documentation: ug
 
 # Getting Started with WPF TabbedWindow
 
-This section explains how to create a TabbedWindow in a WPF application and provides an overview of its basic functionalities.
+This section explains how to create a tabbed window interface using the SfChromelessWindow and SfTabControl controls. The TabbedWindow provides a browser-style, document-based user interface that integrates tabs directly into the window chrome, similar to modern IDEs and web browsers.
 
 ## Assembly Deployment
 
-Add the following required Syncfusion assemblies to your project:
+To integrate the TabbedWindow in you WPF application, add the following required assemblies or NuGet packages:
 
 - Syncfusion.SfChromelessWindow.WPF
 - Syncfusion.Shared.WPF
 
-## Adding WPF TabbedWindow via XAML
+## Adding TabbedWindow via XAML
 
-Create a window that inherits from `SfChromelessWindow` and set the `WindowType` as `Tabbed`.
+To add the TabbedWindow manually in XAML, follow these steps:
+
+1. Create a new WPF project in Visual Studio  with required .NET Framework or .NET Core version.
+
+2. Add the required assembly references or NuGet packages mentioned in the Assembly Deployment section.
+
+3. Import the Syncfusion WPF schema in your XAML file:
+
+```XML
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+```
+
+4. Create a window that uses `SfChromelessWindow` and set its `WindowType` property to `Tabbed`, and include an `SfTabControl` with the required tab items.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:SfChromelessWindow xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-                               WindowType="Tabbed"
-                               Height="450"
-                               Width="800">
-    <syncfusion:SfTabControl x:Name="MainTabControl">
+<syncfusion:SfChromelessWindow
+    x:Class="TabbedWindowDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    WindowType="Tabbed"
+    Height="450"
+    Width="800">
+
+    <syncfusion:SfTabControl>
         <syncfusion:SfTabItem Header="Home" Content="Welcome to Home Tab"/>
         <syncfusion:SfTabItem Header="File" Content="Welcome to File Tab"/>
         <syncfusion:SfTabItem Header="Edit" Content="Welcome to Edit Tab"/>
         <syncfusion:SfTabItem Header="Tools" Content="Welcome to Tools Tab"/>
     </syncfusion:SfTabControl>
+
 </syncfusion:SfChromelessWindow>
 
 {% endhighlight %}
@@ -44,7 +62,13 @@ Create a window that inherits from `SfChromelessWindow` and set the `WindowType`
 
 ## Adding WPF TabbedWindow via C#
 
-Create the code-behind file as shown below.
+To add the TabbedWindow control manually in C#, follow these steps:
+
+1. Create a new WPF project in Visual Studio with the required .NET Framework or .NET Core version.
+
+2. Add the required assembly references or NuGet packages mentioned in the Assembly Deployment section.
+
+3. Include the required namespace, create a window that inherits from `SfChromelessWindow`, set its `WindowType` to `Tabbed`, and include an `SfTabControl` with the required tab items.
 
 {% tabs %}
 
@@ -57,18 +81,23 @@ public partial class MainWindow : SfChromelessWindow
     public MainWindow()
     {
         InitializeComponent();
-
-        this.WindowType = WindowType.Tabbed;
+        WindowType = WindowType.Tabbed;
 
         var tabControl = new SfTabControl();
-        var tab = new SfTabItem
+
+        tabControl.Items.Add(new SfTabItem
         {
             Header = "Document 1",
-            Content = new TextBlock { Text = "Doc 1" }
-        };
+            Content = new TextBlock { Text = "Document 1 Content" }
+        });
 
-        tabControl.Items.Add(tab);
-        this.Content = tabControl;
+        tabControl.Items.Add(new SfTabItem
+        {
+            Header = "Document 2",
+            Content = new TextBlock { Text = "Document 2 Content" }
+        });
+
+        Content = tabControl;
     }
 }
 
@@ -76,91 +105,4 @@ public partial class MainWindow : SfChromelessWindow
 
 {% endtabs %}
 
-## Populating tabs using SfTabItem
-
-You can populate tabs by adding `SfTabItem` elements inside the `SfTabControl`.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:SfChromelessWindow xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-                               WindowType="Tabbed"
-                               Height="450"
-                               Width="800">
-    <syncfusion:SfTabControl x:Name="MainTabControl">
-        <syncfusion:SfTabItem Header="Home" Content="Welcome to Home Tab"/>
-        <syncfusion:SfTabItem Header="File" Content="Welcome to File Tab"/>
-        <syncfusion:SfTabItem Header="Edit" Content="Welcome to Edit Tab"/>
-        <syncfusion:SfTabItem Header="Tools" Content="Welcome to Tools Tab"/>
-    </syncfusion:SfTabControl>
-</syncfusion:SfChromelessWindow>
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ![WPF Tabbed Window](getting-started_images/wpf_tabbedwindow.png)
-
-## Configuring the Window Types
-
-The SfTabControl supports two distinct window modes that control how tabs are displayed in the application.
-
-### Tabbed Mode
-
-In Tabbed mode, tabs are integrated into the window chrome area, similar to modern web browsers. This creates a unified interface where the title bar and tab strip appear together.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:SfChromelessWindow
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-    x:Class="TabbedWindowApp.MainWindow"
-    WindowType="Tabbed"
-    Height="600"
-    Width="900">
-    <syncfusion:SfTabControl AllowDragDrop="True" EnableNewTabButton="True">
-        <syncfusion:SfTabItem Header="Document 1"
-                              CloseButtonVisibility="Visible"
-                              Content="Tabs are integrated into window chrome"/>
-        <syncfusion:SfTabItem Header="Document 2"
-                              CloseButtonVisibility="Visible"
-                              Content="Similar to browser interface"/>
-    </syncfusion:SfTabControl>
-</syncfusion:SfChromelessWindow>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WPF Tabbed Window](getting-started_images/tabbedwindow.png)
-
-### Normal Mode
-
-In Normal mode, the `SfTabControl` is displayed as regular content within the window. This provides a traditional tabbed layout where the tabs are shown inside the content area instead of the chrome area.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:SfChromelessWindow
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-    x:Class="TabbedWindowApp.MainWindow"
-    Title="View Manager"
-    WindowType="Normal"
-    Height="600"
-    Width="900">
-    <Grid>
-        <syncfusion:SfTabControl AllowDragDrop="True">
-            <syncfusion:SfTabItem Header="View 1" Content="Tab control is regular content"/>
-            <syncfusion:SfTabItem Header="View 2" Content="Not integrated into chrome"/>
-        </syncfusion:SfTabControl>
-    </Grid>
-</syncfusion:SfChromelessWindow>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Normal mode](getting-started_images/wpf_normalwindow.png)
