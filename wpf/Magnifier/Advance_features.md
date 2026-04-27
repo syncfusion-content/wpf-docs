@@ -298,7 +298,8 @@ private void SetZoomForContent(string contentType)
 ```
 ### **Zooming demo**
 
-![Zooming features](videos/zooming_features.gif)
+![Zooming features](resources\zooming-features.gif)
+
 
 ## ZoomFactor and Magnification Relationship
 

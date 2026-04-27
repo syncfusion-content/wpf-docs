@@ -109,7 +109,7 @@ var magnifier = new Magnifier
 Magnifier.SetCurrent(targetElement, magnifier);
 ```
 
-![Frame types comparison](videos/FrameTypes_Demo.gif)
+![Frame types comparison](resources/FrameTypes_Demo.gif)
 
 ## Frame Background
 
@@ -165,6 +165,8 @@ gradientBrush.GradientStops.Add(new GradientStop(Colors.White, 0));
 gradientBrush.GradientStops.Add(new GradientStop(Colors.LightBlue, 1));
 magnifier.FrameBackground = gradientBrush;
 ```
+
+![Frame background styles](resources/FrameBackground_Styles.gif)
 
 ## Size Configuration
 
@@ -229,6 +231,8 @@ A contemporary design with soft edges:
                       FrameBackground="#F0F0F0"
                       ZoomFactor="0.3"/>
 ```
+
+![Common styling scenarios](resources/CommonStylingScenarios.gif)
 
 ## Best Practices
 

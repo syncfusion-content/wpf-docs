@@ -37,6 +37,11 @@ dotnet add package Syncfusion.Shared.WPF
 
 Add a direct reference to `Syncfusion.Shared.WPF.dll` from the installed location in your WPF project.
 
+
+**Option 2: Adding control via Designer**
+
+`Magnifier` control can be added to the application by dragging it from `Toolbox` and dropping it in Designer view. The required assembly references will be added automatically.
+
 ### Namespace declaration
 
 Import the Syncfusion namespace in your XAML or code files.
@@ -111,7 +116,9 @@ Magnifier.SetCurrent(SetCurrentExample, setCurrentMagnifier);
 
 **Note:** Both methods achieve the same result. Use `TargetElement` property when you want to set the target as part of property initialization, or use `SetCurrent` method when you prefer a static helper approach.
 
-![Magnifier demonstration](videos/Magnifier_Demonstration.gif)
+**Magnifier Demo**
+
+![Magnifier demonstration](resources/Magnifier_Demonstration.gif)
 
 ## Key properties and behavior
 

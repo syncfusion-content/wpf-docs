@@ -20,7 +20,9 @@ The Magnifier control displays a zoomed view of UI content in a movable frame th
 * **Customizable appearance** - Set frame size, background color, corner radius, and other visual properties.
 * **Export capabilities** - Save magnified content to image files or copy to clipboard.
 
-![Magnifier in action](videos/Magnifier_Demonstration.gif)
+## Magnifier Demo
+
+![Magnifier in action](resources/Magnifier_Demonstration.gif)
 
 ## Use Cases
 

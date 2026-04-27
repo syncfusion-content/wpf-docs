@@ -169,9 +169,13 @@ public partial class MainWindow : Window
 * **Magnifier must be active**: The magnifier must be in an active state (visible and positioned over the target element) to properly export the magnified content.
 * **Inactive magnifier exports**: If the mouse leaves the target element, the magnifier hides. Attempting to export while the magnifier is hidden will only capture the frame background or the configured magnifier properties, not the actual content.
 
-![Exported images](images/exported_images.png)
+**Sample View**
 
-![Active vs inactive](images/magnifier_active_vs_inactive_comparison.png)
+![Active vs inactive](resources/magnifier_active_vs_inactive_comparison.png)
+
+**Exported images**
+
+![Exported images](resources/exported_images.png)
 
 ### EnableExport Property
 
