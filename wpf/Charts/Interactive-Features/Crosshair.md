@@ -20,9 +20,7 @@ You can create an instance [`ChartCrossHairBehavior`](https://help.syncfusion.co
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartCrossHairBehavior />
-
+    <syncfusion:ChartCrossHairBehavior/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -44,15 +42,11 @@ To view the axis labels then set the [`ShowTrackBallInfo`](https://help.syncfusi
 {% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis  ShowTrackBallInfo="True"/>
-
+    <syncfusion:CategoryAxis ShowTrackBallInfo="True"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 <syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis  ShowTrackBallInfo="True"/>
-
+    <syncfusion:NumericalAxis ShowTrackBallInfo="True"/>
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
@@ -65,16 +59,12 @@ chart.Behaviors.Add(behavior);
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     ShowTrackBallInfo = true
-
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-
     ShowTrackBallInfo = true
-
 };
 
 {% endhighlight %}
@@ -102,27 +92,18 @@ The following code snippet demonstrates the line style for horizontal line in cr
 
 {% highlight xaml %}
 
-<syncfusion:SfChart x:Name="chart">
+ <syncfusion:SfChart x:Name="chart">
+     <syncfusion:SfChart.Resources>
+         <Style TargetType="Line" x:Key="lineStyle">
+             <Setter Property="Stroke" Value="Green"></Setter>
+             <Setter Property="StrokeThickness" Value="1"></Setter>
+         </Style>
+     </syncfusion:SfChart.Resources>
 
-    <syncfusion:SfChart.Resources>
-
-        <Style TargetType="Line" x:Key="lineStyle">
-
-            <Setter Property="Stroke" Value="Green"></Setter>
-
-            <Setter Property="StrokeThickness" Value="1"></Setter>
-
-        </Style>
-                
-    </syncfusion:SfChart.Resources>
-
-    <syncfusion:SfChart.Behaviors>
-
-        <syncfusion:ChartCrossHairBehavior HorizontalLineStyle="{StaticResource lineStyle}"/>
-
-    </syncfusion:SfChart.Behaviors>
-
-</syncfusion:SfChart>
+     <syncfusion:SfChart.Behaviors>
+         <syncfusion:ChartCrossHairBehavior HorizontalLineStyle="{StaticResource lineStyle}"/>
+     </syncfusion:SfChart.Behaviors>
+ </syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -130,9 +111,7 @@ The following code snippet demonstrates the line style for horizontal line in cr
 
 ChartCrossHairBehavior crosshair = new ChartCrossHairBehavior()
 {
-
     HorizontalLineStyle = chart.Resources["lineStyle"] as Style
-
 };
 
 chart.Behaviors.Add(crosshair);
@@ -151,27 +130,18 @@ chart.Behaviors.Add(crosshair);
 {% highlight xaml %}
 
 <syncfusion:SfChart x:Name="chart">
-
     <syncfusion:SfChart.Resources>
-
         <Style TargetType="Line" x:Key="lineStyle">
-
             <Setter Property="StrokeDashArray" Value="10,5"/>
-
             <Setter Property="Stroke" Value="Red"/>
-
-             <Setter Property="StrokeThickness" Value="1"/>
-
+            <Setter Property="StrokeThickness" Value="1"/>
         </Style>
-                
+
     </syncfusion:SfChart.Resources>
 
-     <syncfusion:SfChart.Behaviors>
-
-                <syncfusion:ChartCrossHairBehavior VerticalLineStyle="{StaticResource lineStyle}"/>
-
+    <syncfusion:SfChart.Behaviors>
+        <syncfusion:ChartCrossHairBehavior VerticalLineStyle="{StaticResource lineStyle}"/>
     </syncfusion:SfChart.Behaviors>
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -180,9 +150,7 @@ chart.Behaviors.Add(crosshair);
 
 ChartCrossHairBehavior crosshair = new ChartCrossHairBehavior()
 {
-
     VerticalLineStyle = chart.Resources["lineStyle"] as Style
-
 };
 
 chart.Behaviors.Add(crosshair);
@@ -220,11 +188,7 @@ The following image demonstrates the horizontal axis label positioned center to 
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Far ">
-
-</syncfusion:ChartCrossHairBehavior>
-
+    <syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Far"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -233,9 +197,7 @@ The following image demonstrates the horizontal axis label positioned center to 
 
 ChartCrossHairBehavior behavior = new ChartCrossHairBehavior()
 {
-
     HorizontalAxisLabelAlignment = ChartAlignment.Far
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -254,11 +216,7 @@ chart.Behaviors.Add(behavior);
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Near ">
-
-</syncfusion:ChartCrossHairBehavior>
-
+    <syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Near"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -267,9 +225,7 @@ chart.Behaviors.Add(behavior);
 
 ChartCrossHairBehavior behavior = new ChartCrossHairBehavior()
 {
-
     HorizontalAxisLabelAlignment = ChartAlignment.Near
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -299,11 +255,7 @@ The following image demonstrates the horizontal axis label positioned center to 
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartCrossHairBehavior VerticalAxisLabelAlignment="Near">
-
-</syncfusion:ChartCrossHairBehavior>
-
+    <syncfusion:ChartCrossHairBehavior VerticalAxisLabelAlignment="Near"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -312,9 +264,7 @@ The following image demonstrates the horizontal axis label positioned center to 
 
 ChartCrossHairBehavior behavior = new ChartCrossHairBehavior()
 {
-
     VerticalAxisLabelAlignment = ChartAlignment.Near
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -332,11 +282,7 @@ chart.Behaviors.Add(behavior);
 {% highlight xaml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartCrossHairBehavior VerticalAxisLabelAlignment="Far"  >
-
-</syncfusion:ChartCrossHairBehavior>
-
+    <syncfusion:ChartCrossHairBehavior VerticalAxisLabelAlignment="Far"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -345,9 +291,7 @@ chart.Behaviors.Add(behavior);
 
 ChartCrossHairBehavior behavior = new ChartCrossHairBehavior()
 {
-
     VerticalAxisLabelAlignment = ChartAlignment.Far
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -367,63 +311,43 @@ The default appearance of the crosshair axis labels can be customized by using t
 {% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
-    
     <chart:CategoryAxis ShowTrackBallInfo="True">
-        
         <chart:CategoryAxis.CrosshairLabelTemplate>
-                
             <DataTemplate>
-                            
-                 <Border Background="Orange" 
-                                   
-                         CornerRadius="4" 
-                                    
-                          BorderThickness="1" BorderBrush="Black">
-
-                 <TextBlock Margin="2" Text="{Binding ValueX}"/>
-                            
+                <Border
+                    Background="Orange"
+                    CornerRadius="4"
+                    BorderThickness="1"
+                    BorderBrush="Black">
+                    <TextBlock
+                        Margin="2"
+                        Text="{Binding ValueX}"/>
                 </Border>
-                
             </DataTemplate>
-             
         </chart:CategoryAxis.CrosshairLabelTemplate>
-                
     </chart:CategoryAxis>
-
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-                
-       <chart:NumericalAxis ShowTrackBallInfo="True">
-                    
-            <chart:NumericalAxis.CrosshairLabelTemplate>
-                        
-                <DataTemplate>
-                            
-                    <Border Background="Orange" 
-                                   
-                            CornerRadius="4" 
-                            
-                             BorderThickness="1" 
-                             
-                             BorderBrush="Black">
-
-                    <TextBlock  Margin="2" Text="{Binding ValueY}"/>
-                   
-                    </Border>
-                        
-                </DataTemplate>
-            
-            </chart:NumericalAxis.CrosshairLabelTemplate>
-       
-       </chart:NumericalAxis>
-
+    <chart:NumericalAxis ShowTrackBallInfo="True">
+        <chart:NumericalAxis.CrosshairLabelTemplate>
+            <DataTemplate>
+                <Border
+                    Background="Orange"
+                    CornerRadius="4"
+                    BorderThickness="1"
+                    BorderBrush="Black">
+                    <TextBlock
+                        Margin="2"
+                        Text="{Binding ValueY}"/>
+                </Border>
+            </DataTemplate>
+        </chart:NumericalAxis.CrosshairLabelTemplate>
+    </chart:NumericalAxis>
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Behaviors>
-       
-    <chart:ChartCrossHairBehavior />
-    
+    <chart:ChartCrossHairBehavior/>
 </chart:SfChart.Behaviors>
 
 {% endhighlight %}
