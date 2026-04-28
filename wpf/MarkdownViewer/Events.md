@@ -9,7 +9,9 @@ documentation: ug
 
 # Event in WPF Markdown Viewer (SfMarkdownViewer)
 
-## HyperlinkClicked Event
+HyperlinkClicked is triggered when a Markdown link is clicked, providing the URL via MarkdownHyperlinkClickedEventArgs and allowing navigation to be canceled.
+
+## HyperlinkClicked
 
 The HyperlinkClicked event is triggered whenever a hyperlink in the Markdown content is clicked. This event provides access to the URL being navigated to and allows developers to cancel the default navigation behavior.
 The URL link and its details are passed through the MarkdownHyperlinkClickedEventArgs. This argument provides the following details:
@@ -17,7 +19,7 @@ The URL link and its details are passed through the MarkdownHyperlinkClickedEven
 **URL** : Gets the URL of the clicked hyperlink.
 **Cancel** : Gets or sets whether to cancel the default navigation behavior.
 
-## How to disable hyperlink navigation in Markdown viewer control
+## Disable hyperlink navigation
 
 You can disable the hyperlink navigation in Markdown viewer control by setting the value of `Cancel` in the `MarkdownHyperlinkClickedEventArgs` parameter as true in the `HyperlinkClicked` event.
 Please refer to the following example for more details.
@@ -36,7 +38,7 @@ private void MarkdownViewer_HyperlinkClicked(object? sender, MarkdownHyperlinkCl
 {% endhighlight %}
 
 
-## How to retrieve the clicked URI from Markdown viewer
+## Retrieve the clicked URI
 
 You can acquire the details of the hyperlink, which is clicked in the Markdown viewer control using the arguments of `HyperlinkClicked` event. 
 Please refer to the following example for more details.

@@ -7,7 +7,7 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Mermaid Support in WPF Markdown Viewer
+# Mermaid Diagram Support
  
 The [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMarkdownViewer.Wpf.html) control provides built-in support for rendering Mermaid diagrams and flowcharts within Markdown content. Mermaid is a JavaScript-based diagramming and charting tool that uses text-based definitions to create and modify diagrams dynamically.
  
@@ -18,21 +18,21 @@ The [MermaidBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 {% tabs %} 
 {% highlight xaml %}
 
-    <Grid>
-        <syncfusion:SfMarkdownViewer>
-            <syncfusion:SfMarkdownViewer.MermaidBlockTemplate>
-                <DataTemplate x:Key="MermaidBlockTemplate">
-                    <diagram:SfDiagram x:Name="mermaidDiagram" Foreground="Black"
-                                 Height="600" Width="1000" Focusable="False"
-                                 HorizontalAlignment="Left" 
-                                 HorizontalContentAlignment="Left"
-                                 Loaded="mermaidDiagram_Loaded">
-                    </diagram:SfDiagram>
+<Grid>
+    <syncfusion:SfMarkdownViewer>
+        <syncfusion:SfMarkdownViewer.MermaidBlockTemplate>
+            <DataTemplate x:Key="MermaidBlockTemplate">
+                <diagram:SfDiagram x:Name="mermaidDiagram" Foreground="Black"
+                    Height="600" Width="1000" Focusable="False"
+                    HorizontalAlignment="Left" 
+                    HorizontalContentAlignment="Left"
+                    Loaded="mermaidDiagram_Loaded">
+                </diagram:SfDiagram>
             </DataTemplate>
-            </syncfusion:SfMarkdownViewer.MermaidBlockTemplate>
-            <syncfusion:SfMarkdownViewer.Source>
-                <system:String xml:space="preserve">
-                    <![CDATA[
+        </syncfusion:SfMarkdownViewer.MermaidBlockTemplate>
+        <syncfusion:SfMarkdownViewer.Source>
+            <system:String xml:space="preserve">
+                <![CDATA[
 
 # Mermaid Flowchart
 
@@ -40,7 +40,7 @@ Mermaid flowcharts let you describe processes and decision trees in plain text, 
 
 ---
 
-```mermaid
+mermaid
 flowchart TD
     A[User Opens App] --> B[MarkdownViewer Loads]
     B --> C{Contains Mermaid?}
@@ -48,12 +48,11 @@ flowchart TD
     C -->|No| E[Render Plain Markdown]
     D --> F[Display Enhanced Output]
     E --> F
-            ]]>
-                </system:String>
-            </syncfusion:SfMarkdownViewer.Source>
-        </syncfusion:SfMarkdownViewer>
-
-    </Grid>
+                ]]>
+            </system:String>
+        </syncfusion:SfMarkdownViewer.Source>
+    </syncfusion:SfMarkdownViewer>
+</Grid>
 
 {% endhighlight %}
 
