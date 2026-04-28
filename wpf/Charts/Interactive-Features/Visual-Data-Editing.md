@@ -21,14 +21,13 @@ Segment Dragging defines the dragging a particular point or segment based on the
 
 {% highlight xml %}
 
-<syncfusion:LineSeries Label="2010" EnableSegmentDragging="True"
-
-XBindingPath="Demand"   Interior="#777777"
-
-ItemsSource="{Binding Demands}"                                   
-
-YBindingPath="Year2010">
-
+<syncfusion:LineSeries
+    Label="2010"
+    EnableSegmentDragging="True"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010"
+    Interior="#777777">
 </syncfusion:LineSeries>
 
 {% endhighlight %}
@@ -37,22 +36,15 @@ YBindingPath="Year2010">
 
 LineSeries series = new LineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSegmentDragging = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
-chart.Series.Add(series)
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -67,14 +59,14 @@ chart.Series.Add(series)
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries Label="2010" EnableDragTooltip="True" EnableSegmentDragging="True"
-
-XBindingPath="Demand"   Interior="#777777"
-
-ItemsSource="{Binding Demands}"                                   
-
-YBindingPath="Year2010">
-
+<syncfusion:ColumnSeries
+    Label="2011"
+    EnableDragTooltip="True"
+    EnableSegmentDragging="True"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010"
+    Interior="#777777">
 </syncfusion:ColumnSeries>
 
 {% endhighlight %}
@@ -83,24 +75,16 @@ YBindingPath="Year2010">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSegmentDragging = true,
-
     EnableDragTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
-chart.Series.Add(series)
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -116,37 +100,30 @@ This series supports dragging in both the x and y co-ordinates. The dragging co-
 
 {% highlight xml %}
 
-<syncfusion:ScatterSeries ItemsSource="{Binding Data}" XBindingPath="Index" 
-
-                          YBindingPath="Value"  Interior="#777777"
-
-                          EnableSegmentDragging="True" DragDirection="XY" >
-
- </syncfusion:ScatterSeries>
+<syncfusion:ScatterSeries
+    ItemsSource="{Binding Data}"
+    XBindingPath="Index"
+    YBindingPath="Value"
+    Interior="#777777"
+    EnableSegmentDragging="True"
+    DragDirection="XY">
+</syncfusion:ScatterSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 ScatterSeries series = new ScatterSeries()
-            
 {
-                
-ItemsSource = new ViewModel().Data,
-                
-XBindingPath = "Index",
-                
-YBindingPath = "Value",
-                
-Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-                
-EnableSegmentDragging = true,
-
-DragDirection = DragType.XY
-            
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Index",
+    YBindingPath = "Value",
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
+    EnableSegmentDragging = true,
+    DragDirection = DragType.XY
 };
 
-chart.Series.Add(series)
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -166,11 +143,15 @@ The following code snippet explains the series dragging feature in LineSeries.
 
 {% highlight xaml %}
 
-<syncfusion:LineSeries Label="2010" EnableDragTooltip="True" EnableSeriesDragging="True"
-
-XBindingPath="Demand"   Interior="#777777" ItemsSource="{Binding Demands}"
-
-YBindingPath="Year2010"/>
+<syncfusion:LineSeries
+    Label="2010"
+    EnableDragTooltip="True"
+    EnableSeriesDragging="True"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010"
+    Interior="#777777">
+</syncfusion:LineSeries>
 
 {% endhighlight %}
 
@@ -178,21 +159,13 @@ YBindingPath="Year2010"/>
 
 LineSeries series = new LineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSeriesDragging = true,
-
-    EnableDragTooltip = true ,
-
+    EnableDragTooltip = true,
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 chart.Series.Add(series);
@@ -214,14 +187,15 @@ While the series or segment is dragged by default you can view the tooltip showi
 
 {% highlight xml %}
 
-<syncfusion:LineSeries Label="2010"  EnableSegmentDragging="True" EnableDragTooltip="False"
-
-XBindingPath="Demand"   Interior="#777777"
-
-Focusable="False"
-
-ItemsSource="{Binding Demands}"                                   
-
+<syncfusion:LineSeries
+    Label="2010"
+    EnableSegmentDragging="True"
+    EnableDragTooltip="False"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010"
+    Interior="#777777"
+    Focusable="False">
 </syncfusion:LineSeries>
 
 {% endhighlight %}
@@ -230,23 +204,14 @@ ItemsSource="{Binding Demands}"
 
 LineSeries series = new LineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSeriesDragging = true,
-
-    EnableDragTooltip = true ,
-
+    EnableDragTooltip = false,
     Focusable = false,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 chart.Series.Add(series);
@@ -268,45 +233,35 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <syncfusion:SfChart x:Name="chart">
-
     <syncfusion:SfChart.Resources>
-
         <DataTemplate x:Key="tooltipTemplate">
-
-            <Border CornerRadius="4" BorderBrush="Black"
-                            
-                    BorderThickness="1" Background="CadetBlue" 
-                    
-                    Margin="0,0,0,15">
-
-                <TextBlock  FontSize="12" Text="{Binding NewValue}" 
-                                    
-                            Width="35" Foreground="White" Margin="2">
-                
-                </TextBlock>
-
+            <Border
+                CornerRadius="4"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Background="CadetBlue"
+                Margin="0,0,0,15">        
+                <TextBlock
+                    Text="{Binding NewValue}"
+                    FontSize="12"
+                    Width="35"
+                    Foreground="White"
+                    Margin="2"/>
             </Border>
-
         </DataTemplate>
-
     </syncfusion:SfChart.Resources>
 
-    <syncfusion:LineSeries Label="2010" EnableSegmentDragging="True" 
-                                   
-                           Interior="#777777"
-                                   
-                           Focusable="False" 
-
-                           XBindingPath="Demand" 
-                                   
-                           ItemsSource="{Binding Demands}"          
-                                   
-                           YBindingPath="Year2010"
-                                   
-                           DragTooltipTemplate="{StaticResource tooltipTemplate }">
-
+    <syncfusion:LineSeries
+        Label="2010"
+        EnableSegmentDragging="True"
+        EnableDragTooltip="False"
+        Focusable="False"
+        ItemsSource="{Binding Demands}"
+        XBindingPath="Demand"
+        YBindingPath="Year2010"
+        Interior="#777777"
+        DragTooltipTemplate="{StaticResource tooltipTemplate}">
     </syncfusion:LineSeries>
-            
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -315,21 +270,13 @@ chart.Series.Add(series);
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     Focusable = false,
-
     EnableSegmentDragging = true,
-
     DragTooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);
@@ -361,13 +308,12 @@ The following are the API’s in `ChartDragTooltipStyle`.
 {% highlight xml %}
 
 <syncfusion:LineSeries.DragTooltipStyle>
-                    
-<syncfusion:ChartDragTooltipStyle FontFamily="Calibri" FontSize="14" 
-                                                     
-                                  FontStyle="Italic" Background="DarkGray" 
-                                                      
-                                  Foreground="Black" />
-
+    <syncfusion:ChartDragTooltipStyle
+        FontFamily="Calibri"
+        FontSize="14"
+        FontStyle="Italic"
+        Background="DarkGray"
+        Foreground="Black"/>
 </syncfusion:LineSeries.DragTooltipStyle>
 
 {% endhighlight %}
@@ -375,19 +321,12 @@ The following are the API’s in `ChartDragTooltipStyle`.
 {% highlight c# %}
 
 series.DragTooltipStyle = new ChartDragTooltipStyle()
-            
 {
-                
     FontFamily = new FontFamily("Calibri"),
-                
-    FontSize = 14,
-                
-    FontStyle = FontStyles.Italic,
-                
+    FontSize   = 14,
+    FontStyle  = FontStyles.Italic,
     Background = new SolidColorBrush(Colors.DarkGray),
-                
     Foreground = new SolidColorBrush(Colors.Black)
-            
 };
 
 {% endhighlight %}
@@ -404,14 +343,15 @@ To round off the dragged values, you have to set the [`SnapToPoint`](https://hel
 
 {% highlight xml %}
 
-<syncfusion:SplineSeries   EnableSegmentDragging="True"
-
-SnapToPoint="Round" RoundToDecimal="2" YBindingPath = "Year2010"
-
-UpdateSource="True" XBindingPath="Demand"   Interior="#777777"
-
-ItemsSource="{Binding Demands}"                                   
-
+<syncfusion:SplineSeries
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010"
+    Interior="#777777"
+    EnableSegmentDragging="True"
+    UpdateSource="True"
+    SnapToPoint="Round"
+    RoundToDecimal="2">
 </syncfusion:SplineSeries>
 
 {% endhighlight %}
@@ -420,23 +360,14 @@ ItemsSource="{Binding Demands}"
 
 SplineSeries series = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSegmentDragging = true,
-
-    UpdateSource = true ,
-
+    UpdateSource = true,
     RoundToDecimal = 2,
-
     SnapToPoint = SnapToPoint.Round,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);
@@ -453,14 +384,13 @@ When dragging the series or segment at run time, to update the underlying data b
 
 {% highlight xml %}
 
-<syncfusion:SplineSeries   EnableSegmentDragging="True" UpdateSource="True"
-
-XBindingPath="Demand"   Interior="#777777"
-
-ItemsSource="{Binding Demands}"                                   
-
-YBindingPath="Year2010">
-
+<syncfusion:SplineSeries
+    EnableSegmentDragging="True"
+    UpdateSource="True"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010"
+    Interior="#777777">
 </syncfusion:SplineSeries>
 
 {% endhighlight %}
@@ -469,19 +399,12 @@ YBindingPath="Year2010">
 
 SplineSeries series = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSegmentDragging = true,
-
-    UpdateSource = true ,
-
+    UpdateSource = true,
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);
@@ -498,20 +421,13 @@ While you are dragging you can set the KeyModifiers to cancel the drag by settin
 
 {% highlight xml %}
 
-<syncfusion:SplineSeries  
-
-EnableSegmentDragging="True" 
-
-DragCancelKeyModifiers="Alt"  
-
-UpdateSource="True"
-
-XBindingPath="Demand"                                   
-
-ItemsSource="{Binding Demands}"                                   
-
-YBindingPath="Year2010">
-
+<syncfusion:SplineSeries
+    EnableSegmentDragging="True"
+    DragCancelKeyModifiers="Alt"
+    UpdateSource="True"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010">
 </syncfusion:SplineSeries>
 
 {% endhighlight %}
@@ -520,21 +436,13 @@ YBindingPath="Year2010">
 
 SplineSeries series = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSegmentDragging = true,
-
     DragCancelKeyModifiers = ModifierKeys.Alt,
-
     UpdateSource = true ,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);

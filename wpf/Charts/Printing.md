@@ -21,51 +21,38 @@ The following code example demonstrates the printing of chart in button click ev
 
 {% highlight xaml %}
 
-<chart:SfChart x:Name="ExportDemoChart" >
+<chart:SfChart x:Name="ExportDemoChart">
+    <chart:SfChart.Watermark>
+        <chart:Watermark Canvas.ZIndex="-1"  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <chart:Watermark.Content>
+                <TextBlock 
+                    Text="Climate Report" 
+                    FontSize="60" 
+                    Foreground="Gray" 
+                    Opacity="0.5">
+                </TextBlock>
+            </chart:Watermark.Content>
+        </chart:Watermark>
+    </chart:SfChart.Watermark>
 
-<chart:SfChart.Watermark>
+    <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis PlotOffset="20" Header="Month"/>
+    </chart:SfChart.PrimaryAxis>
 
-<chart:Watermark Canvas.ZIndex="-1"  HorizontalAlignment="Center" VerticalAlignment="Center">
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis Header="Degree ( In Celsius )" RangePadding="Round"/>
+    </chart:SfChart.SecondaryAxis>
 
-<chart:Watermark.Content>
-
-<TextBlock Text="Climate Report" FontSize="60" Foreground="Gray" Opacity="0.5"></TextBlock>
-
-</chart:Watermark.Content>
-
-</chart:Watermark>
-
-</chart:SfChart.Watermark>
-
-<chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  PlotOffset="20" Header="Month" />
-
-</chart:SfChart.PrimaryAxis>
-
-<chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis Header="Degree ( In Celsius )" 
-
-RangePadding="Round"/>
-
-</chart:SfChart.SecondaryAxis>
-
-<!-- Add Series to the Chart-->
-
-<chart:SplineSeries Label="Sports" ItemsSource="{Binding ClimateData}"         
-
-XBindingPath="Month" YBindingPath="Temperature">
-
-<chart:SplineSeries.AdornmentsInfo>
-
-<chart:ChartAdornmentInfo  ShowMarker="True" Symbol="Ellipse" 
-
-ShowLabel="True"/>
-
-</chart:SplineSeries.AdornmentsInfo>
-
-</chart:SplineSeries>
+    <!-- Add Series to the Chart-->
+    <chart:SplineSeries 
+        Label="Sports" 
+        ItemsSource="{Binding ClimateData}"
+        XBindingPath="Month" 
+        YBindingPath="Temperature">
+        <chart:SplineSeries.AdornmentsInfo>
+            <chart:ChartAdornmentInfo ShowMarker="True" Symbol="Ellipse" ShowLabel="True"/>
+        </chart:SplineSeries.AdornmentsInfo>
+    </chart:SplineSeries>
 
 </chart:SfChart>
 
@@ -74,11 +61,8 @@ ShowLabel="True"/>
 {% highlight C# %}
 
 private void Button_Click_1(object sender, RoutedEventArgs e)
-
 {
-
     ExportDemoChart.Print();
-
 }
 
 {% endhighlight %}
