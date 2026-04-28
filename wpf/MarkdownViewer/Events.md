@@ -37,7 +37,6 @@ private void MarkdownViewer_HyperlinkClicked(object? sender, MarkdownHyperlinkCl
 
 {% endhighlight %}
 
-
 ## Retrieve the clicked URI
 
 You can acquire the details of the hyperlink, which is clicked in the Markdown viewer control using the arguments of `HyperlinkClicked` event. 
