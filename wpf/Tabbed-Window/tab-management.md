@@ -7,19 +7,19 @@ control: TabbedWindow
 documentation: ug
 ---
 
-# WPF Tabbed Window - Tab Management
+# Tab Management in WPF Tabbed Window
 
-This section explains how to manage tabs in a tabbed window interface and provides an overview of the available tab management features.
+This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, and navigating tabs using keyboard shortcuts.
 
 ## Closing Tabs
 
-You can display close buttons on individual tabs using the `CloseButtonVisibility` property on `SfTabItem`.
+You can display close buttons on individual tabs using the [CloseButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabItem.html#Syncfusion_Windows_Controls_SfTabItem_CloseButtonVisibility) property on [SfTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabItem.html).
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:SfTabControl>
+<syncfusion:SfTabControl x:Name="maintabcontrol">
     <syncfusion:SfTabItem
         Header="Document 1"
         CloseButtonVisibility="Visible">
@@ -33,10 +33,6 @@ You can display close buttons on individual tabs using the `CloseButtonVisibilit
 </syncfusion:SfTabControl>
 
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -52,13 +48,13 @@ tabControl.Items.Add(tabItem);
 
 {% endtabs %}
 
-When a user clicks the close button, the tab is automatically removed and the control selects the next available tab.
+When the user clicks the close button, the corresponding tab is automatically removed from the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html), and the next available tab is selected.
 
 ![WPF TabbedWindow CloseButton](tab-management_images/tabbedwindow_closebutton.gif)
 
 ## Adding New Tabs
 
-You can use the `EnableNewTabButton` property to display a new tab button in the SfTabControl. Clicking this button raises the NewTabRequested event, which can be used to add a new SfTabItem dynamically.
+The [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) provides a built‑in new tab button that allows users to add tabs dynamically at runtime. Set the [EnableNewTabButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_EnableNewTabButton) property to True to display this button. Clicking it raises the [NewTabRequested](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_NewTabRequested) event, where a new [SfTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabItem.html) can be created.
 
 {% tabs %}
 
@@ -99,9 +95,9 @@ private void OnNewTabRequested(object sender, NewTabRequestedEventArgs e)
 
 ![WPF TabbedWindow New Tab Button](tab-management_images/tabbedwindow_newbutton.gif)
 
-## Customization of New Tab Button
+## Customizing the New Tab Button
 
-You can customize the appearance of the new tab button by using the `NewTabButtonStyle` property. This allows you to modify visual properties such as background, border, width, and height.
+You can customize the appearance of the new tab button using the [NewTabButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_NewTabButtonStyle) property. This allows you to modify visual properties such as background, border, width, and height.
 
 {% tabs %}
 
@@ -128,7 +124,9 @@ You can customize the appearance of the new tab button by using the `NewTabButto
 
 ![WPF NewButton style](tab-management_images/wpf_newbuttonstyle.png)
 
-You can also customize the visual presentation of generated tab items by defining templates for the tab header and tab content.
+## Customizing Tab Header and Content
+
+You can customize the visual presentation of tab headers and tab content by defining data templates and applying them to the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
 
 {% tabs %}
 
@@ -157,7 +155,9 @@ You can also customize the visual presentation of generated tab items by definin
 
 ## Keyboard Shortcuts
 
-- `Ctrl + Tab` — move to the next tab.
-- `Ctrl + Shift + Tab` — move to the previous tab.
-- `Ctrl + T` — create a new `SfTabItem`.
-- Mouse middle-click on a `SfTabItem` header — close that tab.
+The Tabbed Window provides built‑in keyboard and mouse shortcuts for efficient tab navigation and management:
+
+- Ctrl + Tab - Switch to the next tab.
+- Ctrl + Shift + Tab - Switch to the previous tab.
+- Ctrl + T - Create a new tab.
+- Middle mouse click on a tab header - Close the tab.
