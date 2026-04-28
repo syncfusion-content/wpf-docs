@@ -39,19 +39,22 @@ Eight types of chart [`Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}"  
-        XBindingPath="Year" YBindingPath="Metal"></chart:ColumnSeries3D>
+<chart:ColumnSeries3D 
+    ItemsSource="{Binding CategoricalData}"         
+    XBindingPath="Year" 
+    YBindingPath="Metal">
+</chart:ColumnSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    ColumnSeries3D series = new ColumnSeries3D()
-        {
-            ItemsSource = new CategoryDataViewModel().CategoricalData,
-            XBindingPath = "Year",
-            YBindingPath = "Metal"
-        };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Metal"
+};
 
 chart3D.Series.Add(series);
 
@@ -69,19 +72,22 @@ chart3D.Series.Add(series);
 
 {% highlight xaml %}
 
-        <chart:BarSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-        YBindingPath="Plastic"></chart:BarSeries3D>
+<chart:BarSeries3D 
+    ItemsSource="{Binding CategoricalData}" 
+    XBindingPath="Year"       
+    YBindingPath="Plastic">
+</chart:BarSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    BarSeries3D series = new BarSeries3D()
-        {
-            ItemsSource = new CategoryDataViewModel().CategoricalData,
-            XBindingPath = "Year",
-            YBindingPath = "Plastic"
-        };
+BarSeries3D series = new BarSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic"
+};
 
 chart3D.Series.Add(series);
 
@@ -99,20 +105,25 @@ chart3D.Series.Add(series);
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries3D chart:ChartSeriesBase.Spacing="0.6" ItemsSource="{Binding CategoricalData}"  
-        XBindingPath="Year" YBindingPath="Plastic"></chart:ColumnSeries3D>
+<chart:ColumnSeries3D 
+    chart:ChartSeriesBase.Spacing="0.6" 
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year" 
+    YBindingPath="Plastic">
+</chart:ColumnSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    ColumnSeries3D series = new ColumnSeries3D()
-        {
-            ItemsSource = new CategoryDataViewModel().CategoricalData,
-            XBindingPath = "Year",
-            YBindingPath = "Plastic"
-        };
-    ChartSeriesBase.SetSpacing(series, 0.6);
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic"
+};
+
+ChartSeriesBase.SetSpacing(series, 0.6);
 
 chart3D.Series.Add(series);
 
@@ -130,35 +141,41 @@ chart3D.Series.Add(series);
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries3D SegmentSpacing="0.6" ItemsSource="{Binding CategoricalData}"  
-        XBindingPath="Year" YBindingPath="Plastic"></chart:ColumnSeries3D>
+<chart:ColumnSeries3D
+    SegmentSpacing="0.6"
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Plastic"/>
 
-        <chart:ColumnSeries3D SegmentSpacing="0.6" ItemsSource="{Binding CategoricalData}"  
-        XBindingPath="Year" YBindingPath="Iron"></chart:ColumnSeries3D>
+<chart:ColumnSeries3D
+    SegmentSpacing="0.6"
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Iron"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 
-    ColumnSeries3D series = new ColumnSeries3D()
-        {
-            ItemsSource = new CategoryDataViewModel().CategoricalData,
-            XBindingPath = "Year",
-            YBindingPath = "Plastic"
-            SegmentSpacing = 0.6,
-        };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic"
+    SegmentSpacing = 0.6,
+};
 
-    ColumnSeries3D series1 = new ColumnSeries3D()
-        {
-            ItemsSource = new CategoryDataViewModel().CategoricalData,
-            XBindingPath = "Year",
-            YBindingPath = "Iron"
-            SegmentSpacing = 0.6,
-        };
-       
-    chart3D.Series.Add(series);
-    chart3D.Series.Add(series1);
+ColumnSeries3D series1 = new ColumnSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Iron",
+    SegmentSpacing = 0.6,
+};
+
+chart3D.Series.Add(series);
+chart3D.Series.Add(series1);
 
 {% endhighlight %}
 
@@ -173,19 +190,22 @@ chart3D.Series.Add(series);
 
 {% highlight xaml %}
 
-        <chart:LineSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-        YBindingPath="Metal"></chart:LineSeries3D>
+<chart:LineSeries3D 
+    ItemsSource="{Binding CategoricalData}" 
+    XBindingPath="Year"
+    YBindingPath="Metal">
+</chart:LineSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        LineSeries3D line = new LineSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Metal"
-            };
+LineSeries3D line = new LineSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Metal"
+};
 
 chart3D.Series.Add(series);
 
@@ -208,22 +228,25 @@ This size can be defined by using below properties.
 
 {% highlight xaml %}
 
-      <chart:ScatterSeries3D  ItemsSource="{Binding DataPoints}"  
-            XBindingPath="Year" YBindingPath="Germany"></chart:ScatterSeries3D>
+<chart:ScatterSeries3D  
+    ItemsSource="{Binding DataPoints}"  
+    XBindingPath="Year" 
+    YBindingPath="Germany">
+</chart:ScatterSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 
-        ScatterSeries3D series = new ScatterSeries3D()
-            {
-                ItemsSource = new ViewModel().DataPoints,
-                XBindingPath = "Year",
-                YBindingPath = "Germany"
-            };
+ScatterSeries3D series = new ScatterSeries3D()
+{
+    ItemsSource = new ViewModel().DataPoints,
+    XBindingPath = "Year",
+    YBindingPath = "Germany"
+};
 
-        chart3D.Series.Add(series);
+chart3D.Series.Add(series);
 
 {% endhighlight %}
 
@@ -238,22 +261,24 @@ This size can be defined by using below properties.
 
 {% highlight xaml %}
 
-        <chart:AreaSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-        YBindingPath="Plastic"></chart:AreaSeries3D>
+<chart:AreaSeries3D 
+    ItemsSource="{Binding CategoricalData}"  
+    XBindingPath="Year"        
+    YBindingPath="Plastic">
+</chart:AreaSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+AreaSeries3D series = new AreaSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic"
+};
 
-        AreaSeries3D series = new AreaSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic"
-            };
-
-        chart3D.Series.Add(series);
+chart3D.Series.Add(series);
 
 {% endhighlight %}
 
@@ -263,7 +288,6 @@ This size can be defined by using below properties.
 
 
 ## Stacking Charts
-
 ### Stacking Column
 [`StackingColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumnSeries3D.html#) resembles multiple types of ColumnSeries3D. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
 
@@ -273,43 +297,49 @@ The following code example illustrates how to use StackingColumnSeries3D:
 
 {% highlight xaml %}
 
-        <chart:StackingColumnSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-                YBindingPath="Plastic"></chart:StackingColumnSeries3D>
+<chart:StackingColumnSeries3D
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Plastic"/>
 
-        <chart:StackingColumnSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-                YBindingPath="Iron"></chart:StackingColumnSeries3D>
+<chart:StackingColumnSeries3D
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Iron"/>
 
-        <chart:StackingColumnSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-                YBindingPath="Metal"></chart:StackingColumnSeries3D>
+<chart:StackingColumnSeries3D
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Metal"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        StackingColumnSeries3D stack1 = new StackingColumnSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic"
-            };
+StackingColumnSeries3D stack1 = new StackingColumnSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic"
+};
 
-        StackingColumnSeries3D stack2 = new StackingColumnSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Iron"
-            };
+StackingColumnSeries3D stack2 = new StackingColumnSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Iron"
+};
 
-        StackingColumnSeries3D stack3 = new StackingColumnSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Metal"
-            };
+StackingColumnSeries3D stack3 = new StackingColumnSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Metal"
+};
 
-        chart3D.Series.Add(stack1);
-        chart3D.Series.Add(stack2);
-        chart3D.Series.Add(stack3);
+chart3D.Series.Add(stack1);
+chart3D.Series.Add(stack2);
+chart3D.Series.Add(stack3);
 
 {% endhighlight %}
 
@@ -327,32 +357,40 @@ The following code example illustrates how to use StackingColumn100Series3D:
 
 {% highlight xaml %}
 
-        <chart:StackingColumn100Series3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-        YBindingPath="Plastic"></chart:StackingColumn100Series3D>
-            
-        <chart:StackingColumn100Series3D Interior="Brown" ItemsSource="{Binding CategoricalData}"  XBindingPath="Year" YBindingPath="Iron"></chart:StackingColumn100Series3D>
+<chart:StackingColumn100Series3D
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Plastic">
+</chart:StackingColumn100Series3D>
+
+<chart:StackingColumn100Series3D
+    Interior="Brown"
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Iron">
+</chart:StackingColumn100Series3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        StackingColumn100Series3D stack1 = new StackingColumn100Series3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic"
-            };
+StackingColumn100Series3D stack1 = new StackingColumn100Series3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic"
+};
 
-        StackingColumn100Series3D stack2 = new StackingColumn100Series3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Iron",
-                Interior=new SolidColorBrush(Colors.Brown)
-            };
+StackingColumn100Series3D stack2 = new StackingColumn100Series3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Iron",
+    Interior = new SolidColorBrush(Colors.Brown)
+};
 
-        chart3D.Series.Add(stack1);
-        chart3D.Series.Add(stack2);
+chart3D.Series.Add(stack1);
+chart3D.Series.Add(stack2);
 
 {% endhighlight %}
 
@@ -370,43 +408,49 @@ The following code example illustrates how to use StackingBarSeries3D:
 
 {% highlight xaml %}
 
-            <chart:StackingBarSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-                YBindingPath="Plastic"></chart:StackingBarSeries3D>
+<chart:StackingBarSeries3D
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Plastic"/>
 
-            <chart:StackingBarSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-                YBindingPath="Iron"></chart:StackingBarSeries3D>
+<chart:StackingBarSeries3D
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Iron"/>
 
-            <chart:StackingBarSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-                YBindingPath="Metal"></chart:StackingBarSeries3D>
+<chart:StackingBarSeries3D
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Metal"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-         StackingBarSeries3D stack1 = new StackingBarSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic"
-            };
+StackingBarSeries3D stack1 = new StackingBarSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic"
+};
 
-        StackingBarSeries3D stack2 = new StackingBarSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Iron"
-            };
+StackingBarSeries3D stack2 = new StackingBarSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Iron"
+};
 
-        StackingBarSeries3D stack3 = new StackingBarSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Metal"
-            };
+StackingBarSeries3D stack3 = new StackingBarSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Metal"
+};
 
-        chart3D.Series.Add(stack1);
-        chart3D.Series.Add(stack2);
-        chart3D.Series.Add(stack3);
+chart3D.Series.Add(stack1);
+chart3D.Series.Add(stack2);
+chart3D.Series.Add(stack3);
 
 {% endhighlight %}
 
@@ -424,32 +468,36 @@ The following code example illustrates how to use StackingBar100Series3D:
 
 {% highlight xaml %}
 
-            <chart:StackingBar100Series3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-            YBindingPath="Plastic"></chart:StackingBar100Series3D>
+<chart:StackingBar100Series3D
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Plastic"/>
 
-            <chart:StackingBar100Series3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-            YBindingPath="Iron"></chart:StackingBar100Series3D>
+<chart:StackingBar100Series3D
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Iron"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        StackingBar100Series3D stack1 = new StackingBar100Series3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic"
-            };
+StackingBar100Series3D stack1 = new StackingBar100Series3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic"
+};
 
-        StackingBar100Series3D stack2 = new StackingBar100Series3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Iron"
-            };
+StackingBar100Series3D stack2 = new StackingBar100Series3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Iron"
+};
 
-        chart3D.Series.Add(stack1);
-        chart3D.Series.Add(stack2);
+chart3D.Series.Add(stack1);
+chart3D.Series.Add(stack2);
 
 {% endhighlight %}
 
@@ -467,22 +515,25 @@ The following code example illustrates the PieSeries3D.
 
 {% highlight xaml %}
 
-        <chart:PieSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-        YBindingPath="Iron"></chart:PieSeries3D>
+<chart:PieSeries3D 
+    ItemsSource="{Binding CategoricalData}"  
+    XBindingPath="Year"        
+    YBindingPath="Iron">
+</chart:PieSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 
-        PieSeries3D series = new PieSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Iron"
-            };
+PieSeries3D series = new PieSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Iron"
+};
 
-        chart3D.Series.Add(series);
+chart3D.Series.Add(series);
 
 {% endhighlight %}
 
@@ -501,20 +552,24 @@ The DoughnutSeries3D can be added to chart as in below code example:
 
 {% highlight xaml %}
 
-        <chart:DoughnutSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"                        YBindingPath="Iron"> </chart:DoughnutSeries3D>
+<chart:DoughnutSeries3D 
+    ItemsSource="{Binding CategoricalData}"  
+    XBindingPath="Year" 
+    YBindingPath="Iron">
+</chart:DoughnutSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        DoughnutSeries3D series = new DoughnutSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Iron"
-            };
+DoughnutSeries3D series = new DoughnutSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Iron"
+};
 
-        chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -530,22 +585,26 @@ The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 {% highlight xaml %}
 
-        <chart:DoughnutSeries3D ItemsSource="{Binding CategoricalData}" DoughnutCoefficient="0.5"   
-        XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
+<chart:DoughnutSeries3D 
+    ItemsSource="{Binding CategoricalData}" 
+    DoughnutCoefficient="0.5"         
+    XBindingPath="Year" 
+    YBindingPath="Iron">
+</chart:DoughnutSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        DoughnutSeries3D series = new DoughnutSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Iron",
-                DoughnutCoefficient=0.5
-            };
+DoughnutSeries3D series = new DoughnutSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Iron",
+    DoughnutCoefficient=0.5
+};
 
-        chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -561,24 +620,30 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 {% highlight xaml %}
 
-        <chart:DoughnutSeries3D StartAngle="180" EndAngle="360" ItemsSource="{Binding CategoricalData}" 
-        DoughnutCoefficient="0.7" XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
+<chart:DoughnutSeries3D 
+    StartAngle="180" 
+    EndAngle="360" 
+    ItemsSource="{Binding CategoricalData}"
+    DoughnutCoefficient="0.7" 
+    XBindingPath="Year" 
+    YBindingPath="Iron">
+</chart:DoughnutSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        DoughnutSeries3D series = new DoughnutSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Iron",
-                DoughnutCoefficient=0.7,
-                StartAngle=180,
-                EndAngle=360
-            };
+DoughnutSeries3D series = new DoughnutSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Iron",
+    DoughnutCoefficient=0.7,
+    StartAngle=180,
+    EndAngle=360
+};
 
-        chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -591,24 +656,28 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 {% highlight xaml %}
 
-        <chart:PieSeries3D StartAngle="180" EndAngle="360" ItemsSource="{Binding CategoricalData}" 
-        CircleCoefficient="0.7" XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
+<chart:PieSeries3D
+    StartAngle="180"
+    EndAngle="360"
+    ItemsSource="{Binding CategoricalData}"
+    CircleCoefficient="0.7"
+    XBindingPath="Year"
+    YBindingPath="Iron">
+</chart:PieSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        PieSeries3D series = new PieSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Iron",
-                CircleCoefficient=0.7,
-                StartAngle=180,
-                EndAngle=360
-            };
+DoughnutSeries3D series = new DoughnutSeries3D()
+{
+    ItemsSource = new UsersViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Iron",
+    DoughnutCoefficient = 0.5
+};
 
-        chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -627,22 +696,32 @@ The following code example illustrates how to enable dynamic explode for circula
 
 {% highlight xaml %}
 
-    <chart:SfChart3D EnableRotation="True"  Tilt="-30" Rotation="45"
-            Depth="30" PerspectiveAngle="90" Width="500" Height="500">
+<chart:SfChart3D
+    EnableRotation="True"
+    Tilt="-30"
+    Rotation="45"
+    Depth="30"
+    PerspectiveAngle="90"
+    Width="500"
+    Height="500">
 
-            <!--PrimaryAxis-->
-            <chart:SfChart3D.PrimaryAxis>
-                <chart:CategoryAxis3D Header="Year"/>
-            </chart:SfChart3D.PrimaryAxis>
-            <!--SecondaryAxis-->
-            <chart:SfChart3D.SecondaryAxis>
-                <chart:NumericalAxis3D Header="Metal"/>
-            </chart:SfChart3D.SecondaryAxis>           
+    <!-- PrimaryAxis -->
+    <chart:SfChart3D.PrimaryAxis>
+        <chart:CategoryAxis3D Header="Year"/>
+    </chart:SfChart3D.PrimaryAxis>
 
-            <!--PieSeries3D - Dynamic explode-->
-            <chart:PieSeries3D  ExplodeOnMouseClick="True" ItemsSource="{Binding CategoricalData}"  XBindingPath="Year" YBindingPath="Iron"></chart:PieSeries3D>
+    <!-- SecondaryAxis -->
+    <chart:SfChart3D.SecondaryAxis>
+        <chart:NumericalAxis3D Header="Metal"/>
+    </chart:SfChart3D.SecondaryAxis>
 
-    </chart:SfChart3D>
+    <!-- PieSeries3D - Dynamic explode -->
+    <chart:PieSeries3D
+        ExplodeOnMouseClick="True"
+        ItemsSource="{Binding CategoricalData}"
+        XBindingPath="Year"
+        YBindingPath="Iron"/>   
+</chart:SfChart3D>
 
 {% endhighlight %}
 
