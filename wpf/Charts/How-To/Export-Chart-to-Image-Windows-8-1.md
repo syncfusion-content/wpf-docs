@@ -20,10 +20,7 @@ The export chart to image feature in the SfChart control enables the user to exp
 * PNG
 * BMP
 
-
-
 ### Method Table
-
 <table>
 <tr>
 <th>
@@ -54,25 +51,16 @@ chart.Save("sfchart.jpg", KnownFolders.PicturesLibrary);
 {% highlight c# %}
 var memoryStream = new InMemoryRandomAccessStream();
 
-            chart.Save(memoryStream, BitmapEncoder.BmpEncoderId);
+chart.Save(memoryStream, BitmapEncoder.BmpEncoderId);
 
+StorageFolder storageFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
 
+var file = await storageFolder.CreateFileAsync("chartwithstream.jpg", CreationCollisionOption.GenerateUniqueName);
 
-            StorageFolder storageFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-
-
-
-            var file = await storageFolder.CreateFileAsync("chartwithstream.jpg", CreationCollisionOption.GenerateUniqueName);
-
-
-
-            var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
-
-            {
-
-                chart.Save(stream, BitmapEncoder.BmpEncoderId);
-
-            }    
+var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite);
+{
+    chart.Save(stream, BitmapEncoder.BmpEncoderId);
+}   
 
 {% endhighlight  %}
 
