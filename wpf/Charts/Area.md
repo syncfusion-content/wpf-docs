@@ -98,7 +98,7 @@ The following code example demonstrates, how you can create multiple panes in th
                         XBindingPath="Brand" 
                         YBindingPath="ItemsCount" >
         <chart:ColumnSeries.YAxis>
-            <chart:NumericalAxis  PlotOffset="10" chart:SfChart.Row="1" />
+            <chart:NumericalAxis PlotOffset="10" chart:SfChart.Row="1" />
         </chart:ColumnSeries.YAxis>
     </chart:ColumnSeries>
 
