@@ -47,51 +47,58 @@ Deserialize the XML file from the given stream and returns the SfChart control o
 
 {% highlight xaml %}
 
- <Grid >
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="350" />
-            <ColumnDefinition Width="350" />
-        </Grid.ColumnDefinitions>
-        
-        <!--Serialize-->
-        <chart:SfChart Grid.Column="0" Margin="10" x:Name="chart">
+<Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="350"/>
+        <ColumnDefinition Width="350"/>
+    </Grid.ColumnDefinitions>
 
-            <chart:SfChart.PrimaryAxis>
-                <chart:CategoryAxis />
-            </chart:SfChart.PrimaryAxis>
-            
-            <chart:SfChart.SecondaryAxis>
-                <chart:NumericalAxis />
-            </chart:SfChart.SecondaryAxis>
-            
-            <chart:ColumnSeries ItemsSource="{Binding CategoricalDatas}" XBindingPath="Category"
-                                YBindingPath="Value"  EnableAnimation="True">
-                <chart:ColumnSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowLabel="True" ShowMarker="True" Symbol="Ellipse" Foreground="White"/>
-                </chart:ColumnSeries.AdornmentsInfo>
-            </chart:ColumnSeries>
-        </chart:SfChart>
+    <!--Serialize-->
+    <chart:SfChart Grid.Column="0" Margin="10" x:Name="chart">
 
-         <!--Assign the DeSerialize Chart-->
-        <chart:SfChart Grid.Column="1" x:Name="deserializedChart"/>
- 
-    </Grid>
+        <chart:SfChart.PrimaryAxis>
+            <chart:CategoryAxis/>
+        </chart:SfChart.PrimaryAxis>
+
+        <chart:SfChart.SecondaryAxis>
+            <chart:NumericalAxis />
+        </chart:SfChart.SecondaryAxis>
+
+        <chart:ColumnSeries 
+            ItemsSource="{Binding CategoricalDatas}" 
+            XBindingPath="Category"                               
+            YBindingPath="Value"  
+            EnableAnimation="True">
+            <chart:ColumnSeries.AdornmentsInfo>
+                <chart:ChartAdornmentInfo 
+                    ShowLabel="True" 
+                    ShowMarker="True" 
+                    Symbol="Ellipse" 
+                    Foreground="White">
+                </chart:ChartAdornmentInfo>
+            </chart:ColumnSeries.AdornmentsInfo>
+        </chart:ColumnSeries>
+    </chart:SfChart>
+
+    <!--Assign the DeSerialize Chart-->
+    <chart:SfChart Grid.Column="1" x:Name="deserializedChart"/>
+</Grid>
 
     {% endhighlight %}
 
 {% highlight c# %}
 
-        //Action to Serialize the Chart
-       private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            chart.Serialize();         
-        }
+//Action to Serialize the Chart
+private void Button_Click(object sender, RoutedEventArgs e)
+{
+    chart.Serialize();         
+}
 
-        //Action to Deserialize the Chart
-        private void Load_Click(object sender, RoutedEventArgs e)
-        {
-            deserializedChart = (SfChart)chart.Deserialize();
-        }        
+//Action to Deserialize the Chart
+private void Load_Click(object sender, RoutedEventArgs e)
+{
+    deserializedChart = (SfChart)chart.Deserialize();
+}        
 
 {% endhighlight %}
 
