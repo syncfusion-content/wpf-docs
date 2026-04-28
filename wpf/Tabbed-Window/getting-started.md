@@ -7,30 +7,26 @@ control: TabbedWindow
 documentation: ug
 ---
 
-# Getting Started with WPF TabbedWindow
+# Getting Started with WPF Tabbed Window
 
-This section explains how to create a tabbed window interface using the [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) and [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) controls. The TabbedWindow provides a browser-style, document-based user interface that integrates tabs directly into the window chrome, similar to modern IDEs and web browsers.
+This section explains how to create a tabbed window interface using the [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) and [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) controls. The Tabbed Window provides a browser-style, document-based user interface that integrates tabs directly into the window chrome, similar to modern IDEs and web browsers.
 
 ## Assembly Deployment
 
-To integrate the TabbedWindow in you WPF application, add the following required assemblies or NuGet packages:
+To integrate the Tabbed Window in you WPF application, add the following required assemblies or NuGet packages:
 
 - Syncfusion.SfChromelessWindow.WPF
 - Syncfusion.Shared.WPF
 
-## Adding TabbedWindow via XAML
+## Adding Tabbed Window via XAML
 
-To add the TabbedWindow manually in XAML, follow these steps:
+To add the Tabbed Window manually in XAML, follow these steps:
 
 1. Create a new WPF project in Visual Studio  with required .NET Framework or .NET Core version.
 
 2. Add the required assembly references or NuGet packages mentioned in the Assembly Deployment section.
 
-3. Import the Syncfusion WPF schema in your XAML file:
-
-```XML
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-```
+3. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in your XAML file.
 
 4. Create a window that uses [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) and set its [WindowType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html#Syncfusion_Windows_Controls_SfChromelessWindow_WindowType) property to `Tabbed`, and include an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) with the required tab items.
 
@@ -62,9 +58,9 @@ To add the TabbedWindow manually in XAML, follow these steps:
 
 ![WPF Tabbed Window](getting-started_images/tabbedwindow_xaml.png)
 
-## Adding WPF TabbedWindow via C#
+## Adding WPF Tabbed Window via C#
 
-To add the TabbedWindow control manually in C#, follow these steps:
+To add the Tabbed Window control manually in C#, follow these steps:
 
 1. Create a new WPF project in Visual Studio with the required .NET Framework or .NET Core version.
 
