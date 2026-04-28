@@ -471,7 +471,7 @@ this.Content = chart;
 
 ![Chart 3D support in WPF](3D-Charts_images/Chart-3D-GettingStarted.png)
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-SfChart3D)
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-SfChart3D).
 
 ## Theme
 
