@@ -24,29 +24,38 @@ The following code example illustrates how to initialize the adornment.
 
 {% highlight xaml %}
 
-    <chart:ColumnSeries3D ItemsSource="{Binding CategoricalDatas}" XBindingPath="Year" YBindingPath="Plastic">
-                <!--AdornmentsInfo-->
-        <chart:ColumnSeries3D.AdornmentsInfo>
-            <chart:ChartAdornmentInfo3D UseSeriesPalette="True" BorderBrush="White" BorderThickness="1" ShowLabel="True" ></chart:ChartAdornmentInfo3D>
-        </chart:ColumnSeries3D.AdornmentsInfo>
-    </chart:ColumnSeries3D>
+<chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year" YBindingPath="Plastic">
+
+    <!--AdornmentsInfo-->
+    <chart:ColumnSeries3D.AdornmentsInfo>
+        <chart:ChartAdornmentInfo3D 
+            UseSeriesPalette="True" 
+            BorderBrush="White" 
+            BorderThickness="1" 
+            ShowLabel="True">
+        </chart:ChartAdornmentInfo3D>
+    </chart:ColumnSeries3D.AdornmentsInfo>
+</chart:ColumnSeries3D>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-        ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new ViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic"                
-            };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new ViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic"
+};
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D() { ShowLabel = true };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D() 
+{ 
+    ShowLabel = true 
+};
 
-        series.AdornmentsInfo = adornmentInfo;
+series.AdornmentsInfo = adornmentInfo;
 
-        chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
