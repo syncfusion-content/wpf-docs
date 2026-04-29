@@ -369,7 +369,7 @@ public class LabelItem
 
 {% endtabs %}
 
-![Customizing Axis Label in WPF Chart](Axis_images/wpf-chart-custom-axis-label.jpg)
+![Customizing Axis Label in WPF Chart](Axis_images/wpf-chart-axis-label-customization.jpeg)
 
 
 **Label** **Formatting**
@@ -400,7 +400,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![WPF Chart with DateTimeAxis Label](Axis_images/wpf-chart-axis-label-customization.jpeg)
+![WPF Chart with DateTimeAxis Label](Axis_images/wpf-chart-axis-label-formatting.jpg)
 
 
 **TimeSpanAxis**
