@@ -108,7 +108,7 @@ chart.SecondaryAxis = new NumericalAxis() { Header = "Values(In Tonnes)" };
 
 {% endtabs %}
 
-![WPF ChartAxis with Header](Axis_images/wpf-chart-axis-header1.jpg)
+![WPF ChartAxis with Header](Axis_images/wpf-chart-axis-header.jpg)
 
 
 **Header** **Customization**
@@ -217,7 +217,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Changing Header Style in WPF ChartAxis](Axis_images/wpf-chart-axis-header-style1.jpg)
+![Changing Header Style in WPF ChartAxis](Axis_images/wpf-chart-axis-header-style.jpg)
 
 ## Axis Labels
 
@@ -253,7 +253,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Changing Axis Label Position in WPF Chart](Axis_images/wpf-chart-axis-label-position1.jpg)
+![Changing Axis Label Position in WPF Chart](Axis_images/wpf-chart-axis-label-position.jpg)
 
 
 **LabelRotationAngle**
@@ -281,7 +281,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![WPF Chart displays Axis Rotation Angle](Axis_images/wpf-chart-axis-rotation-angle1.jpg)
+![WPF Chart displays Axis Rotation Angle](Axis_images/wpf-chart-axis-rotation-angle.jpg)
 
 **Custom** **Labels**
 
@@ -321,7 +321,7 @@ chart.PrimaryAxis = axis;
 
 {% endtabs %}
 
-![WPF Chart with Custom Axis Label](Axis_images/wpf-chart-custom-axis-label1.jpg)
+![WPF Chart with Custom Axis Label](Axis_images/wpf-chart-custom-axis-label.jpg)
 
 
 You can also directly bind the collection of labels to the [`LabelsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsSource) property for defining custom labels. The following code example demonstrates the defining the label collection in code behind and binding the property in XAML page.
@@ -369,7 +369,7 @@ public class LabelItem
 
 {% endtabs %}
 
-![Customizing Axis Label in WPF Chart](Axis_images/wpf-chart-custom-axis-label1.jpg)
+![Customizing Axis Label in WPF Chart](Axis_images/wpf-chart-custom-axis-label.jpg)
 
 
 **Label** **Formatting**
@@ -400,7 +400,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![WPF Chart with DateTimeAxis Label](Axis_images/wpf-chart-axis-label-formatting1.jpg)
+![WPF Chart with DateTimeAxis Label](Axis_images/wpf-chart-axis-label-customization.jpeg)
 
 
 **TimeSpanAxis**
@@ -426,7 +426,7 @@ chart.PrimaryAxis = new TimeSpanAxis()
 
 {% endtabs %}
 
-![WPF Chart with TimeSpanAxis Label](Axis_images/wpf-chart-time-span-axis-label1.jpg)
+![WPF Chart with TimeSpanAxis Label](Axis_images/wpf-chart-time-span-axis-label.jpg)
 
 
 **NumericalAxis**
