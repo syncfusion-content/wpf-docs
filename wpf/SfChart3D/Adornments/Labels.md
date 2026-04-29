@@ -20,34 +20,36 @@ To enable the marker in adornments you have to set the [`ShowLabel`](https://hel
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-            YBindingPath="Plastic">
-                <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowLabel="True" SegmentLabelContent="DateTime" AdornmentsPosition="Top"></chart:ChartAdornmentInfo3D>
-                </chart:ColumnSeries3D.AdornmentsInfo>
-        </chart:ColumnSeries3D>  
+<chart:ColumnSeries3D 
+    ItemsSource="{Binding CategoricalData}" 
+    XBindingPath="Year"
+    YBindingPath="Plastic">
+    <chart:ColumnSeries3D.AdornmentsInfo>
+        <chart:ChartAdornmentInfo3D ShowLabel="True" SegmentLabelContent="DateTime" AdornmentsPosition="Top"/>
+    </chart:ColumnSeries3D.AdornmentsInfo>
+</chart:ColumnSeries3D> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic"
-            };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic"
+};
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowLabel = true,
-                SegmentLabelContent=LabelContent.DateTime,
-                AdornmentsPosition=AdornmentsPosition.Top
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    SegmentLabelContent=LabelContent.DateTime,
+    AdornmentsPosition=AdornmentsPosition.Top
+};
 
-        series.AdornmentsInfo = adornmentInfo;
+series.AdornmentsInfo = adornmentInfo;
 
-        chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -81,40 +83,49 @@ The following code example demonstrates the customization of label using the abo
 
 {% highlight xaml %}
 
-            <chart:ColumnSeries3D  ItemsSource="{Binding Demands}" XBindingPath="Category"
-            YBindingPath="Value">                 
-                    <chart:ColumnSeries3D.AdornmentsInfo>
-                        <chart:ChartAdornmentInfo3D  ShowLabel="True" FontStyle="Italic" FontFamily="Segoe UI" Background="DarkGray" BorderBrush="LightGray" Foreground="White" BorderThickness="1">                   
-                    </chart:ChartAdornmentInfo3D>
-                    </chart:ColumnSeries3D.AdornmentsInfo>
-            </chart:ColumnSeries3D>
+<chart:ColumnSeries3D  
+    ItemsSource="{Binding Demands}" 
+    XBindingPath="Category"
+    YBindingPath="Value">
+    <chart:ColumnSeries3D.AdornmentsInfo>
+        <chart:ChartAdornmentInfo3D  
+            ShowLabel="True" 
+            FontStyle="Italic" 
+            FontFamily="Segoe UI" 
+            Background="DarkGray" 
+            BorderBrush="LightGray" 
+            Foreground="White" 
+            BorderThickness="1">
+        </chart:ChartAdornmentInfo3D>
+    </chart:ColumnSeries3D.AdornmentsInfo>
+</chart:ColumnSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new StockViewModel().Demands,
-                XBindingPath = "Category",
-                YBindingPath = "Value",
-            };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new StockViewModel().Demands,
+    XBindingPath = "Category",
+    YBindingPath = "Value",
+};
 
-           ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowLabel = true,
-                LabelPosition = AdornmentsLabelPosition.Outer,
-                Foreground = new SolidColorBrush(Colors.White),
-                BorderBrush = new SolidColorBrush(Colors.LightGray),
-                Background = new SolidColorBrush(Colors.DarkGray),
-                BorderThickness = new Thickness(1),
-                FontStyle = FontStyles.Italic,
-                FontFamily = new FontFamily("Segoe UI"),
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    LabelPosition = AdornmentsLabelPosition.Outer,
+    Foreground = new SolidColorBrush(Colors.White),
+    BorderBrush = new SolidColorBrush(Colors.LightGray),
+    Background = new SolidColorBrush(Colors.DarkGray),
+    BorderThickness = new Thickness(1),
+    FontStyle = FontStyles.Italic,
+    FontFamily = new FontFamily("Segoe UI"),
+};
 
-        series.AdornmentsInfo = adornmentInfo;
+series.AdornmentsInfo = adornmentInfo;
 
-        chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -130,37 +141,44 @@ The following code example demonstrates the customization of label using the abo
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries3D  ItemsSource="{Binding Demands}" XBindingPath="Category"
-        YBindingPath="Value">                
-                <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D LabelRotationAngle="45" UseSeriesPalette="True" ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
-                </chart:ColumnSeries3D.AdornmentsInfo>
-        </chart:ColumnSeries3D>
+<chart:ColumnSeries3D
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Category"
+    YBindingPath="Value">
+    <chart:ColumnSeries3D.AdornmentsInfo>
+        <chart:ChartAdornmentInfo3D
+            LabelRotationAngle="45"
+            UseSeriesPalette="True"
+            ShowLabel="True"
+            BorderBrush="White"
+            BorderThickness="1"/>
+    </chart:ColumnSeries3D.AdornmentsInfo>
+</chart:ColumnSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new StockViewModel().Demands,
-                XBindingPath = "Category",
-                YBindingPath = "Value",
-            };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new StockViewModel().Demands,
+    XBindingPath = "Category",
+    YBindingPath = "Value",
+};
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowLabel = true,
-                LabelRotationAngle=45,
-                LabelPosition=AdornmentsLabelPosition.Outer,
-                UseSeriesPalette=true,
-                BorderBrush = new SolidColorBrush(Colors.White),
-                BorderThickness = new Thickness(1),
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    LabelRotationAngle=45,
+    LabelPosition=AdornmentsLabelPosition.Outer,
+    UseSeriesPalette=true,
+    BorderBrush = new SolidColorBrush(Colors.White),
+    BorderThickness = new Thickness(1),
+};
 
-        series.AdornmentsInfo = adornmentInfo;
+series.AdornmentsInfo = adornmentInfo;
 
-        chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -179,35 +197,42 @@ The following code example demonstrates the label having three decimal digits:
 
 {% highlight xaml %}
 
-<chart:ColumnSeries3D  ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-            YBindingPath="Plastic">                
-                    <chart:ColumnSeries3D.AdornmentsInfo>
-                        <chart:ChartAdornmentInfo3D ShowLabel="True" LabelPosition="Outer"
-                        SegmentLabelFormat="#.###" ></chart:ChartAdornmentInfo3D>
-                    </chart:ColumnSeries3D.AdornmentsInfo>
-        </chart:ColumnSeries3D>
+<chart:ColumnSeries3D
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year"
+    YBindingPath="Plastic">
+
+    <chart:ColumnSeries3D.AdornmentsInfo>
+        <chart:ChartAdornmentInfo3D
+            ShowLabel="True"
+            LabelPosition="Outer"
+            SegmentLabelFormat="#.###"/>
+    </chart:ColumnSeries3D.AdornmentsInfo>
+
+</chart:ColumnSeries3D>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic",
-            };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic",
+};
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowLabel = true,
-                AdornmentsPosition = AdornmentsPosition.Top,
-                SegmentLabelFormat = "#.###"
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    AdornmentsPosition = AdornmentsPosition.Top,
+    SegmentLabelFormat = "#.###"
+};
 
-        series.AdornmentsInfo = adornmentInfo;
+series.AdornmentsInfo = adornmentInfo;
 
-        chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -227,38 +252,49 @@ The following code example shows the how to add connector line:
 
 {% highlight xaml %}
 
-        <chart:PieSeries3D ItemsSource="{Binding Demands}" XBindingPath="Category"
-            YBindingPath="Value" LabelPosition="OutsideExtended">
-                <chart:PieSeries3D.AdornmentsInfo>
-                   <chart:ChartAdornmentInfo3D ShowConnectorLine="True" ConnectorHeight="15" UseSeriesPalette="True" ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
-                </chart:PieSeries3D.AdornmentsInfo>
-        </chart:PieSeries3D>  
+<chart:PieSeries3D
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Category"
+    YBindingPath="Value"
+    LabelPosition="OutsideExtended">
+
+    <chart:PieSeries3D.AdornmentsInfo>
+        <chart:ChartAdornmentInfo3D
+            ShowConnectorLine="True"
+            ConnectorHeight="15"
+            UseSeriesPalette="True"
+            ShowLabel="True"
+            BorderBrush="White"
+            BorderThickness="1"/>
+    </chart:PieSeries3D.AdornmentsInfo>
+
+</chart:PieSeries3D> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic",
-                pie.LabelPosition=CircularSeriesLabelPosition.OutsideExtended
-            };
+PieSeries3D series = new PieSeries3D()
+{
+    ItemsSource = new StockViewModel().Demands,
+    XBindingPath = "Category",
+    YBindingPath = "Value",
+    LabelPosition = CircularSeriesLabelPosition.OutsideExtended
+};
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowLabel = true,              
-                ShowConnectorLine = true,
-                ConnectorHeight = 15,
-                UseSeriesPalette=true,
-                BorderBrush = new SolidColorBrush(Colors.White),
-                BorderThickness = new Thickness(1)
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    ShowConnectorLine = true,
+    ConnectorHeight = 15,
+    UseSeriesPalette = true,
+    BorderBrush = new SolidColorBrush(Colors.White),
+    BorderThickness = new Thickness(1)
+};
 
-        series.AdornmentsInfo = adornmentInfo;
+series.AdornmentsInfo = adornmentInfo;
 
-        chart.Series.Add(series);
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -276,35 +312,39 @@ The following code example shows the how to specify connector type:
 
 {% highlight xaml %}
 
-         <chart:PieSeries3D Palette="BlueChrome" ItemsSource="{Binding DataPoints}"  
-            XBindingPath="Year" ConnectorType="Line" LabelPosition="OutsideExtended" YBindingPath="India">
-                <chart:PieSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowConnectorLine="True"
-                                                UseSeriesPalette="True" ShowLabel="True" ></chart:ChartAdornmentInfo3D>
-                </chart:PieSeries3D.AdornmentsInfo>
-            </chart:PieSeries3D>
+<chart:PieSeries3D 
+    Palette="BlueChrome" 
+    ItemsSource="{Binding CategoricalData}"
+    XBindingPath="Year" 
+    ConnectorType="Line" 
+    LabelPosition="OutsideExtended" 
+    YBindingPath="Plastic">
+    <chart:PieSeries3D.AdornmentsInfo>
+        <chart:ChartAdornmentInfo3D ShowConnectorLine="True" UseSeriesPalette="True" ShowLabel="True"/>
+    </chart:PieSeries3D.AdornmentsInfo>
+</chart:PieSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        PieSeries3D series = new PieSeries3D()
-            {
-                ItemsSource = new ViewModel().DataPoints,
-                XBindingPath = "Year",
-                YBindingPath = "India",
-                LabelPosition=CircularSeriesLabelPosition.OutsideExtended,
-                ConnectorType=ConnectorMode.Line
-            };
+PieSeries3D series = new PieSeries3D()
+{
+    ItemsSource = new ViewModel().DataPoints,
+    XBindingPath = "Year",
+    YBindingPath = "India",
+    LabelPosition=CircularSeriesLabelPosition.OutsideExtended,
+    ConnectorType=ConnectorMode.Line
+};
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowLabel = true,
-                ShowConnectorLine = true
-             };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    ShowConnectorLine = true
+    };
 
-        series.AdornmentsInfo = adornmentInfo;
-        chart.Series.Add(series);
+series.AdornmentsInfo = adornmentInfo;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -324,22 +364,30 @@ You can define the style for the connector line using [`ConnectorLineStyle`](htt
 
 {% highlight xaml %}
 
-        <Window.Resources>
+<Window.Resources>
+    <Style x:Key="lineStyle" TargetType="Path">  
+        <Setter Property="StrokeDashArray" Value="10,7,5"/>
+        <Setter Property="Stroke" Value="Black"/>
+    </Style>
+</Window.Resources>
 
-            <Style TargetType="Path" x:Key="lineStyle">
-                <Setter Property="StrokeDashArray" Value="10,7,5"/>
-                <Setter Property="Stroke" Value="Black"/>
-            </Style>
-        
-        </Window.Resources>
+<chart:PieSeries3D
+    ItemsSource="{Binding CategoricalData}"
+    ConnectorType="Line"
+    LabelPosition="Outside"
+    XBindingPath="Year"
+    YBindingPath="Plastic">
 
-        <chart:PieSeries3D ItemsSource="{Binding CategoricalData}" ConnectorType="Line" LabelPosition="Outside" XBindingPath="Year"
-            YBindingPath="Plastic">
-                <chart:PieSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowLabel="True" ConnectorLineStyle="{StaticResource lineStyle}" 
-                           ConnectorHeight="60" ShowConnectorLine="True" LabelPosition="Outer"></chart:ChartAdornmentInfo3D>
-                </chart:PieSeries3D.AdornmentsInfo>
-        </chart:PieSeries3D>
+    <chart:PieSeries3D.AdornmentsInfo>
+        <chart:ChartAdornmentInfo3D
+            ShowLabel="True"
+            ShowConnectorLine="True"
+            ConnectorHeight="60"
+            LabelPosition="Outer"
+            ConnectorLineStyle="{StaticResource lineStyle}"/>
+    </chart:PieSeries3D.AdornmentsInfo>
+
+</chart:PieSeries3D>
   
 {% endhighlight %}
 
@@ -357,19 +405,22 @@ For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior col
 
 {% highlight xaml %}
       
-        <chart:ChartAdornmentInfo3D ShowLabel="True" LabelPosition="Outer"
-                UseSeriesPalette="True" ></chart:ChartAdornmentInfo3D>
+<chart:ChartAdornmentInfo3D 
+    ShowLabel="True" 
+    LabelPosition="Outer"
+    UseSeriesPalette="True">
+</chart:ChartAdornmentInfo3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowLabel = true,
-                LabelPosition = AdornmentsLabelPosition.Outer,
-                UseSeriesPalette=true
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    LabelPosition = AdornmentsLabelPosition.Outer,
+    UseSeriesPalette=true
+};
 
 {% endhighlight %}
 
@@ -385,39 +436,53 @@ The following code example demonstrates the EnableSmartLabels property:
 
 {% highlight xaml %}
 
-        <chart:PieSeries3D  ItemsSource="{Binding CategoricalData}" ConnectorType="Bezier" XBindingPath="Year"
-            YBindingPath="Plastic" EnableSmartLabels="True" LabelPosition="OutsideExtended" ExplodeAll="True" ExplodeRadius="3">
-                <chart:PieSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowLabel="True" HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True"></chart:ChartAdornmentInfo3D>
-                </chart:PieSeries3D.AdornmentsInfo>
-        </chart:PieSeries3D>
+<chart:PieSeries3D
+    ItemsSource="{Binding CategoricalData}"
+    ConnectorType="Bezier"
+    XBindingPath="Year"
+    YBindingPath="Plastic"
+    EnableSmartLabels="True"
+    LabelPosition="OutsideExtended"
+    ExplodeAll="True"
+    ExplodeRadius="3">
+
+    <chart:PieSeries3D.AdornmentsInfo>
+        <chart:ChartAdornmentInfo3D
+            ShowLabel="True"
+            ShowConnectorLine="True"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+    </chart:PieSeries3D.AdornmentsInfo>
+
+</chart:PieSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        PieSeries3D series = new PieSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic",
-                LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
-                ConnectorType = ConnectorMode.StraightLine,                
-                EnableSmartLabels = true,
-                ExplodeAll=true,
-                ExplodeRadius=3
-            };
+PieSeries3D series = new PieSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic",
+    LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
+    ConnectorType = ConnectorMode.StraightLine,
+    EnableSmartLabels = true,
+    ExplodeAll=true,
+    ExplodeRadius=3
+};
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowLabel = true,
-                ShowConnectorLine = true,
-                HorizontalAlignment=HorizontalAlignment.Center,
-                VerticalAlignment=VerticalAlignment.Center
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    ShowConnectorLine = true,
+    HorizontalAlignment=HorizontalAlignment.Center,
+    VerticalAlignment=VerticalAlignment.Center
+};
 
-        series.AdornmentsInfo = adornmentInfo;
-        chart.Series.Add(series);
+series.AdornmentsInfo = adornmentInfo;
+
+chart.Series.Add(series);
 
 {% endhighlight %}
 
