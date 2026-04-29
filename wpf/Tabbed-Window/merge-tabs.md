@@ -13,11 +13,11 @@ This section explains how to move tabs between tabbed windows and provides an ov
 
 ## Tear-Off Windows
 
-The tabbed window interface supports tear-off functionality that allows tabs to be detached from an `SfTabControl` and displayed in independent floating windows. These floating windows can later be merged back into another tabbed window.
+The tabbed window interface supports tear-off functionality that allows tabs to be detached from an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) and displayed in independent floating windows. These floating windows can later be merged back into another tabbed window.
 
 ### Enable Tear-Off
 
-You can use the `AllowDragDrop` property to enable tear-off support in `SfTabControl`. When drag-and-drop is enabled, a tab can be dragged outside the tab control boundary to create a floating window. The detached tab is moved into the new window automatically, and it can be reattached later by dragging it back into the tab area of another tabbed window. If a floating window becomes empty after a tab is moved out, it is closed automatically.
+You can use the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_AllowDragDrop) property to enable tear-off support in [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html). When drag-and-drop is enabled, a tab can be dragged outside the tab control boundary to create a floating window. The detached tab is moved into the new window automatically, and it can be reattached later by dragging it back into the tab area of another tabbed window. If a floating window becomes empty after a tab is moved out, it is closed automatically.
 
 The floating window created through tear-off behaves like a regular tabbed window. It can be moved, resized, and minimized, and it supports the same tab features as the original window.
 
@@ -44,7 +44,7 @@ The floating window created through tear-off behaves like a regular tabbed windo
 
 ## Control Tab Movement with PreviewTabMerge
 
-You can use the `PreviewTabMerge` event to validate or cancel a tab merge operation before a tab is moved between tabbed windows. This event also allows you to modify the item that will be inserted into the target `SfTabControl`.
+You can use the [PreviewTabMerge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_PreviewTabMerge) event to validate or cancel a tab merge operation before a tab is moved between tabbed windows. This event also allows you to modify the item that will be inserted into the target [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
 
 {% tabs %}
 
