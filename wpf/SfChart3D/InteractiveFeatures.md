@@ -37,39 +37,50 @@ The following code example illustrates how to set the selection brush for indivi
 
 {% highlight xaml %}
 
-   <chart:SfChart3D EnableRotation="True"  PerspectiveAngle="50"   Rotation="29" Depth="100" Palette="BlueChrome" Width="300" Height="280">            
-            <chart:ColumnSeries3D SegmentSelectionBrush="SkyBlue" ItemsSource="{Binding DataPoints}"  
-            XBindingPath="Year" YBindingPath="India">               
-            </chart:ColumnSeries3D>
- </chart:SfChart3D>
+<chart:SfChart3D
+    EnableRotation="True"
+    PerspectiveAngle="50"
+    Rotation="29"
+    Depth="100"
+    Palette="BlueChrome"
+    Width="300"
+    Height="280">
+
+    <chart:ColumnSeries3D
+        SegmentSelectionBrush="SkyBlue"
+        ItemsSource="{Binding DataPoints}"
+        XBindingPath="Year"
+        YBindingPath="India">
+    </chart:ColumnSeries3D>
+</chart:SfChart3D>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-        SfChart3D chart3D = new SfChart3D()
-            {
-                EnableSeriesSelection=true,
-                EnableRotation=true,
-                PerspectiveAngle=50,
-                SeriesSelectedIndex=0,
-                Rotation=29,
-                Depth=100,
-                Palette=ChartColorPalette.BlueChrome,
-                Width=300,
-                Height=280
-            };
+SfChart3D chart3D = new SfChart3D()
+{
+    EnableSegmentSelection = true,
+    EnableRotation = true,
+    PerspectiveAngle = 50,
+    SeriesSelectedIndex = 0,
+    Rotation = 29,
+    Depth = 100,
+    Palette = ChartColorPalette.BlueChrome,
+    Width = 300,
+    Height = 280
+};
 
-            ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new StockViewModel().DataPoints,
-                XBindingPath = "Year",
-                YBindingPath = "India",
-                SegmentSelectionBrush = new SolidColorBrush(Colors.SkyBlue),
-                SegmentSpacing = 0.5
-            };
-            
-            chart3D.Series.Add(series);
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new StockViewModel().DataPoints,
+    XBindingPath = "Year",
+    YBindingPath = "India",
+    SegmentSelectionBrush = new SolidColorBrush(Colors.SkyBlue),
+    SegmentSpacing = 0.5
+};
+
+chart3D.Series.Add(series);
 
 {% endhighlight %}
 
@@ -89,56 +100,71 @@ The following code example can be used to set series selection in a SfChart3D.
 
 {% highlight xaml %}
 
-            <chart:SfChart3D EnableRotation="True"  PerspectiveAngle="50" 
-                                EnableSeriesSelection="True" SeriesSelectedIndex="0"
-                                 Rotation="29" Depth="100" Palette="BlueChrome" Width="300" Height="280">
-          
-            <chart:ColumnSeries3D SeriesSelectionBrush="LightGreen" SegmentSpacing="0.5" ItemsSource="{Binding Demands}"  XBindingPath="Category" YBindingPath="Value">
-            </chart:ColumnSeries3D>
+<chart:SfChart3D
+    EnableRotation="True"
+    PerspectiveAngle="50"
+    EnableSeriesSelection="True"
+    SeriesSelectedIndex="0"
+    Rotation="29"
+    Depth="100"
+    Palette="BlueChrome"
+    Width="300"
+    Height="280">
 
-            <chart:ColumnSeries3D SegmentSpacing="0.5" SeriesSelectionBrush="SkyBlue" 
-            ItemsSource="{Binding Demands}"  XBindingPath="Category" YBindingPath="Value">
-            </chart:ColumnSeries3D>
+    <chart:ColumnSeries3D
+        ItemsSource="{Binding Demands}"
+        XBindingPath="Category"
+        YBindingPath="Value"
+        SegmentSpacing="0.5"
+        SeriesSelectionBrush="LightGreen">
+    </chart:ColumnSeries3D>
 
-     </chart:SfChart3D>
+    <chart:ColumnSeries3D
+        ItemsSource="{Binding Demands}"
+        XBindingPath="Category"
+        YBindingPath="Value"
+        SegmentSpacing="0.5"
+        SeriesSelectionBrush="SkyBlue">
+    </chart:ColumnSeries3D>
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
         SfChart3D chart3D = new SfChart3D()
-            {
-                EnableSeriesSelection=true,
-                EnableRotation=true,
-                PerspectiveAngle=50,
-                SeriesSelectedIndex=0,
-                Rotation=29,
-                Depth=100,
-                Palette=ChartColorPalette.BlueChrome,
-                Width=300,
-                Height=280
-            };
+{
+    EnableSeriesSelection = true,
+    EnableRotation = true,
+    PerspectiveAngle = 50,
+    SeriesSelectedIndex = 0,
+    Rotation = 29,
+    Depth = 100,
+    Palette = ChartColorPalette.BlueChrome,
+    Width = 300,
+    Height = 280
+};
 
-        ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new StockViewModel().Demands,
-                XBindingPath = "Category",
-                YBindingPath = "Value",
-                SeriesSelectionBrush = new SolidColorBrush(Colors.LightGreen),
-                SegmentSpacing = 0.5
-            };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new StockViewModel().Demands,
+    XBindingPath = "Category",
+    YBindingPath = "Value",
+    SeriesSelectionBrush = new SolidColorBrush(Colors.LightGreen),
+    SegmentSpacing = 0.5
+};
 
-        ColumnSeries3D series1 = new ColumnSeries3D()
-            {
-                ItemsSource = new StockViewModel().Demands,
-                XBindingPath = "Category",
-                YBindingPath = "Value",
-                SeriesSelectionBrush = new SolidColorBrush(Colors.SkyBlue),
-                SegmentSpacing = 0.5
-            };
+ColumnSeries3D series1 = new ColumnSeries3D()
+{
+    ItemsSource = new StockViewModel().Demands,
+    XBindingPath = "Category",
+    YBindingPath = "Value",
+    SeriesSelectionBrush = new SolidColorBrush(Colors.SkyBlue),
+    SegmentSpacing = 0.5
+};
 
-        chart3D.Series.Add(series);
-        chart3D.Series.Add(series1);
+chart3D.Series.Add(series);
+chart3D.Series.Add(series1);
 
 {% endhighlight %}
 

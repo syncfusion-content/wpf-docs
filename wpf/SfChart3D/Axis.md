@@ -38,28 +38,27 @@ ChartAxis supports the following types.
 
 {% highlight xaml %}
 
-    <chart:SfChart3D>
-            <!--PrimaryAxis-->
-            <chart:SfChart3D.PrimaryAxis>
-                <chart:NumericalAxis3D/>
-            </chart:SfChart3D.PrimaryAxis>
+<chart:SfChart3D>
+    <!--PrimaryAxis-->
+    <chart:SfChart3D.PrimaryAxis>
+        <chart:NumericalAxis3D/>
+    </chart:SfChart3D.PrimaryAxis>
 
-            <!--SecondaryAxis-->
-            <chart:SfChart3D.SecondaryAxis>
-                <chart:NumericalAxis3D />
-            </chart:SfChart3D.SecondaryAxis>
-    </chart:SfChart3D>
+    <!--SecondaryAxis-->
+    <chart:SfChart3D.SecondaryAxis>
+        <chart:NumericalAxis3D/>
+    </chart:SfChart3D.SecondaryAxis>
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-        SfChart3D Chart3D = new SfChart3D()
-            {
-                PrimaryAxis = new NumericalAxis3D(),
-
-                SecondaryAxis = new NumericalAxis3D()               
-            };
+SfChart3D Chart3D = new SfChart3D()
+{
+    PrimaryAxis = new NumericalAxis3D(),
+    SecondaryAxis = new NumericalAxis3D()
+};
 
 {% endhighlight %}
 
@@ -73,21 +72,21 @@ ChartAxis supports the following types.
 
 {% highlight xaml %}
 
-    <chart:SfChart3D>
-            <!--PrimaryAxis-->
-            <chart:SfChart3D.PrimaryAxis>
-                <chart:CategoryAxis3D/>
-            </chart:SfChart3D.PrimaryAxis>
-    </chart:SfChart3D>
+<chart:SfChart3D>
+    <!--PrimaryAxis-->
+    <chart:SfChart3D.PrimaryAxis>
+        <chart:CategoryAxis3D/>
+    </chart:SfChart3D.PrimaryAxis>
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-        SfChart3D Chart3D = new SfChart3D()
-            {
-                PrimaryAxis = new CategoryAxis3D()               
-            };
+SfChart3D Chart3D = new SfChart3D()
+{
+    PrimaryAxis = new CategoryAxis3D()
+};
 
 {% endhighlight %}
 
@@ -101,21 +100,21 @@ ChartAxis supports the following types.
 
 {% highlight xaml %}
 
-    <chart:SfChart3D>
-            <!--PrimaryAxis-->
-            <chart:SfChart3D.PrimaryAxis>
-                <chart:DateTimeAxis3D/>
-            </chart:SfChart3D.PrimaryAxis>
-    </chart:SfChart3D>
+<chart:SfChart3D>
+    <!--PrimaryAxis-->
+    <chart:SfChart3D.PrimaryAxis>
+        <chart:DateTimeAxis3D/>
+    </chart:SfChart3D.PrimaryAxis>
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-        SfChart3D Chart3D = new SfChart3D()
-            {
-                PrimaryAxis = new DateTimeAxis3D()               
-            };
+SfChart3D Chart3D = new SfChart3D()
+{
+    PrimaryAxis = new DateTimeAxis3D()
+};
 
 {% endhighlight %}
 
@@ -129,21 +128,21 @@ ChartAxis supports the following types.
 
 {% highlight xaml %}
 
-    <chart:SfChart3D>
-            <!--SecondaryAxis-->
-            <chart:SfChart3D.SecondaryAxis>
-                <chart:LogarithmicAxis3D />
-            </chart:SfChart3D.SecondaryAxis>
-    </chart:SfChart3D>
+<chart:SfChart3D>
+    <!--SecondaryAxis-->
+    <chart:SfChart3D.SecondaryAxis>
+        <chart:LogarithmicAxis3D />
+    </chart:SfChart3D.SecondaryAxis>
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-       SfChart3D Chart3D = new SfChart3D()
-            {
-                SecondaryAxis = new LogarithmicAxis3D()               
-            };
+SfChart3D Chart3D = new SfChart3D()
+{
+    SecondaryAxis = new LogarithmicAxis3D()
+}
 
 {% endhighlight %}
 
@@ -157,21 +156,21 @@ ChartAxis supports the following types.
 
 {% highlight xaml %}
 
-    <chart:SfChart3D>
-            <!--PrimaryAxis-->
-            <chart:SfChart3D.PrimaryAxis>
-                <chart:TimeSpanAxis3D/>
-            </chart:SfChart3D.PrimaryAxis>
-    </chart:SfChart3D>
+<chart:SfChart3D>
+    <!--PrimaryAxis-->
+    <chart:SfChart3D.PrimaryAxis>
+        <chart:TimeSpanAxis3D/>
+    </chart:SfChart3D.PrimaryAxis>
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-        SfChart3D Chart3D = new SfChart3D()
-            {
-                PrimaryAxis = new TimeSpanAxis3D()               
-            };
+SfChart3D Chart3D = new SfChart3D()
+{
+    PrimaryAxis = new TimeSpanAxis3D()
+};
 
 {% endhighlight %}
 
@@ -189,40 +188,48 @@ The following code example illustrates how to create Depth Axis.
 
 {% highlight xaml %}
 
-        <chart:SfChart3D Margin="120,20,120,30" x:Name="chart" Rotation="43" Tilt="10"
-                         EnableRotation="True" PerspectiveAngle="100">
-                . . .
-            <chart:SfChart3D.DepthAxis>
-                <chart:NumericalAxis3D Interval="1"/>
-            </chart:SfChart3D.DepthAxis>
-            <chart:ColumnSeries3D XBindingPath="XValue"                                
-                                  YBindingPath="YValue"
-                                  ZBindingPath="ZValue"
-                                  ItemsSource="{Binding Data}"/>
-        </chart:SfChart3D>
+<chart:SfChart3D 
+    Margin="120,20,120,30"
+    Rotation="43"
+    Tilt="10"
+    EnableRotation="True"
+    PerspectiveAngle="100">
+    ...
+    <chart:SfChart3D.DepthAxis>
+        <chart:NumericalAxis3D 
+            Interval="1"
+            Header="Depth (Z)"/>
+    </chart:SfChart3D.DepthAxis>
+
+    <chart:ColumnSeries3D 
+        XBindingPath="XValue"
+        YBindingPath="YValue"
+        ZBindingPath="ZValue"
+        ItemsSource="{Binding Data}"/>
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            SfChart3D chart = new SfChart3D();
-            chart.Rotation = 43;
-            chart.Tilt = 10;
-            chart.Margin = new Thickness(120, 20, 120, 30);
-            chart.PerspectiveAngle = 100;
-            chart.EnableRotation = true;
+SfChart3D chart = new SfChart3D();
+chart.Rotation = 43;
+chart.Tilt = 10;
+chart.Margin = new Thickness(120, 20, 120, 30);
+chart.PerspectiveAngle = 100;
+chart.EnableRotation = true;
 
-            NumericalAxis3D depthAxis = new NumericalAxis3D();
-            depthAxis.Interval = 1;
-            chart.DepthAxis = depthAxis;
+NumericalAxis3D depthAxis = new NumericalAxis3D();
+depthAxis.Interval = 1;
+chart.DepthAxis = depthAxis;
 
-            ColumnSeries3D series1 = new ColumnSeries3D();
-            series1.ItemsSource = (new ViewModel()).Data;
-            series1.XBindingPath = "XValue";
-            series1.YBindingPath = "YValue";
-            series1.ZBindingPath = "ZValue";
-            chart.Series.Add(series1);
-            this.Content = chart;
+ColumnSeries3D series1 = new ColumnSeries3D();
+series1.ItemsSource = (new ViewModel()).Data;
+series1.XBindingPath = "XValue";
+series1.YBindingPath = "YValue";
+series1.ZBindingPath = "ZValue";
+chart.Series.Add(series1);
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -238,54 +245,67 @@ In this type of chart, multiple series can be plotted in [`DepthAxis`](https://h
 
 {% highlight xaml %}
 
-<chart:SfChart3D x:Name="chart" Rotation="43" >
-          . . . 
-            <chart:SfChart3D.DepthAxis>
-                <chart:NumericalAxis3D Interval="1"/>
-            </chart:SfChart3D.DepthAxis>
+<chart:SfChart3D
+    x:Name="chart"
+    Rotation="43">
+    ...
+    <chart:SfChart3D.DepthAxis>
+        <chart:NumericalAxis3D Interval="1"/>
+    </chart:SfChart3D.DepthAxis>
 
-            <chart:LineSeries3D XBindingPath="XValue"                                
-                                YBindingPath="YValue"                         
-                                ItemsSource="{Binding Data1}" 
-                                Label="First"/>
+    <chart:LineSeries3D
+        XBindingPath="XValue"
+        YBindingPath="YValue"
+        ItemsSource="{Binding Data1}"
+        Label="First"/>
 
-            <chart:LineSeries3D XBindingPath="XValue"                                
-                                YBindingPath="YValue"                         
-                                ItemsSource="{Binding Data2}" 
-                                Label="Second"/>
-        </chart:SfChart3D>
+    <chart:LineSeries3D
+        XBindingPath="XValue"
+        YBindingPath="YValue"
+        ItemsSource="{Binding Data2}"
+        Label="Second"/>
+
+</chart:SfChart3D>
 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChart3D chart = new SfChart3D() { Header = "Chart", Height = 300, Width = 500  };
+SfChart3D chart = new SfChart3D()
+{
+    Header = "Chart",
+    Height = 300,
+    Width  = 500
+};
 
-            chart.Rotation = 43;
-            . . . 
+chart.Rotation = 43;
 
-            NumericalAxis3D depthAxis = new NumericalAxis3D();
-            depthAxis.Interval = 1;
-            chart.DepthAxis = depthAxis;
+NumericalAxis3D depthAxis = new NumericalAxis3D();
+depthAxis.Interval = 1;
 
+chart.DepthAxis = depthAxis;
 
-            LineSeries3D series1 = new LineSeries3D();
-            series1.ItemsSource = (new ViewModel()).Data1;
-            series1.XBindingPath = "XValue";
-            series1.YBindingPath = "YValue";
-            series1.Label = "First";
+LineSeries3D series1 = new LineSeries3D()
+{
+    ItemsSource  = (new ViewModel()).Data1,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    Label        = "First"
+};
 
+LineSeries3D series2 = new LineSeries3D()
+{
+    ItemsSource  = (new ViewModel()).Data2,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    Label        = "Second"
+};
 
-            LineSeries3D series2 = new LineSeries3D();
-            series2.ItemsSource = (new ViewModel()).Data2;
-            series2.XBindingPath = "XValue";
-            series2.YBindingPath = "YValue";
-            series2.Label = "Second";
+chart.Series.Add(series1);
+chart.Series.Add(series2);
 
-            chart.Series.Add(series1);
-            chart.Series.Add(series2);
-            this.Content = chart;
+this.Content = chart;
 
 {% endhighlight %}
 
