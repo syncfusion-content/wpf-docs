@@ -41,29 +41,28 @@ Then initialize an empty chart with [PrimaryAxis](https://help.syncfusion.com/cr
 
 {% highlight xaml %}
 
-    <chart:SfChart3D >
-            
-        <!--PrimaryAxis-->
-        <chart:SfChart3D.PrimaryAxis>
-            <chart:DateTimeAxis3D/>
-        </chart:SfChart3D.PrimaryAxis>
-        <!--SecondaryAxis-->
-        <chart:SfChart3D.SecondaryAxis>
-            <chart:NumericalAxis3D/>
-        </chart:SfChart3D.SecondaryAxis>
-
-    </chart:SfChart3D>
+<chart:SfChart3D>
+    <!--PrimaryAxis-->
+    <chart:SfChart3D.PrimaryAxis>
+        <chart:DateTimeAxis3D/>
+    </chart:SfChart3D.PrimaryAxis>
+    
+    <!--SecondaryAxis-->
+    <chart:SfChart3D.SecondaryAxis>
+        <chart:NumericalAxis3D/>
+    </chart:SfChart3D.SecondaryAxis>
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-     SfChart3D Chart3D = new SfChart3D()
-        {
-            PrimaryAxis = new DateTimeAxis3D(),
+SfChart3D Chart3D = new SfChart3D()
+{
+    PrimaryAxis = new DateTimeAxis3D(),
 
-            SecondaryAxis = new NumericalAxis3D(),
-        };
+    SecondaryAxis = new NumericalAxis3D(),
+};
 
 {% endhighlight %}
 
@@ -78,11 +77,11 @@ Since, the above step will produce only an empty column 3D chart, plotting data 
 
 {% highlight C# %}
 
-    public class UserProfile
-    {
-        public DateTime TimeStamp { get; set; }
-        public double NoOfUsers { get; set; }
-    }
+public class UserProfile
+{
+    public DateTime TimeStamp { get; set; }
+    public double NoOfUsers { get; set; }
+}
 
 {% endhighlight %}
 
@@ -90,24 +89,23 @@ Next, create a view model class and initialize a list of `UserProfile` objects a
 
 {% highlight C# %}
 
-    public class UsersViewModel
+public class UsersViewModel
+{
+    public ObservableCollection<UserProfile> UsersList { get; set; }
+    public UsersViewModel()
     {
-        public UsersViewModel()
-        {
-            this.UsersList = new ObservableCollection<UserProfile>();
+        UsersList = new ObservableCollection<UserProfile>();
 
-            DateTime date = DateTime.Today;
+        DateTime date = DateTime.Today;
 
-            UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 1000 });
-            UsersList.Add(new UserProfile { TimeStamp = date.AddHours(1), NoOfUsers = 5000 });
-            UsersList.Add(new UserProfile { TimeStamp = date.AddHours(1.5), NoOfUsers = 3000 });
-            UsersList.Add(new UserProfile { TimeStamp = date.AddHours(2), NoOfUsers = 4000 });
-            UsersList.Add(new UserProfile { TimeStamp = date.AddHours(2.5), NoOfUsers = 2000 });
-            UsersList.Add(new UserProfile { TimeStamp = date.AddHours(3), NoOfUsers = 1000 });
-        }
-        public ObservableCollection<UserProfile> UsersList { get; set; }
-
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 1000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(1), NoOfUsers = 5000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(1.5), NoOfUsers = 3000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(2), NoOfUsers = 4000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(2.5), NoOfUsers = 2000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(3), NoOfUsers = 1000 });
     }
+}
 
 {% endhighlight %}
 
@@ -158,40 +156,47 @@ As we are going to visualize the comparison of heights in the data model, add [`
 
 {% highlight xaml %}
 
-  <chart:SfChart3D x:Name="Chart3D" Width="500" Height="500">
-            
-        <!--PrimaryAxis-->
-        <chart:SfChart3D.PrimaryAxis>
-            <chart:DateTimeAxis3D/>
-        </chart:SfChart3D.PrimaryAxis>
-        <!--SecondaryAxis-->
-        <chart:SfChart3D.SecondaryAxis>
-            <chart:NumericalAxis3D/>
-        </chart:SfChart3D.SecondaryAxis>
+ <chart:SfChart3D
+     x:Name="Chart3D"
+     Width="500"
+     Height="500">
 
-        <chart:ColumnSeries3D ItemsSource="{Binding UsersList}" XBindingPath="TimeStamp"
-            YBindingPath="NoOfUsers"></chart:ColumnSeries3D>
-            
-    </chart:SfChart3D>
+     <!-- PrimaryAxis -->
+     <chart:SfChart3D.PrimaryAxis>
+         <chart:DateTimeAxis3D />
+     </chart:SfChart3D.PrimaryAxis>
+
+     <!-- SecondaryAxis -->
+     <chart:SfChart3D.SecondaryAxis>
+         <chart:NumericalAxis3D />
+     </chart:SfChart3D.SecondaryAxis>
+
+     <chart:ColumnSeries3D
+         ItemsSource="{Binding UsersList}"
+         XBindingPath="TimeStamp"
+         YBindingPath="NoOfUsers">   
+     </chart:ColumnSeries3D>
+
+ </chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfChart3D chart3D = new SfChart3D();
+SfChart3D chart3D = new SfChart3D();
 
-    chart3D.PrimaryAxis = new CategoryAxis3D();
+chart3D.PrimaryAxis = new DateTimeAxis3D();
 
-    chart3D.SecondaryAxis = new NumericalAxis3D();
+chart3D.SecondaryAxis = new NumericalAxis3D();
 
-    ColumnSeries3D series = new ColumnSeries3D()
-        {
-            ItemsSource = new UsersViewModel().UsersList,
-            XBindingPath = "TimeStamp",
-            YBindingPath = "NoOfUsers"
-        };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new UsersViewModel().UsersList,
+    XBindingPath = "TimeStamp",
+    YBindingPath = "NoOfUsers"
+};
 
-    Chart3D.Series.Add(series);
+chart3D.Series.Add(series);
 
 {% endhighlight %}
 
@@ -206,18 +211,16 @@ The header of the chart acts as the title to provide quick information to the us
 {% highlight xaml %}
 
 <Grid>
-
-   <chart:SfChart3D Header="Chart"> 
-   </chart:SfChart3D> 
-
+    <chart:SfChart3D Header="Chart"></chart:SfChart3D>
 </Grid>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-    SfChart3D chart3D = new SfChart3D();
-    chart3D.Header = "Chart";
+SfChart3D chart3D = new SfChart3D();
+
+chart3D.Header = "Chart";
 
 {% endhighlight %}
 
@@ -231,28 +234,29 @@ You can add data labels to improve the readability of the chart and it can be en
 
 {% highlight xaml %}
 
-    <Grid>
-        <chart:SfChart3D >
-
+<Grid>
+    <chart:SfChart3D>
         ...
-        
-            <chart:ColumnSeries3D ItemsSource="{Binding UsersList}" XBindingPath="TimeStamp"
+        <chart:ColumnSeries3D 
+            ItemsSource="{Binding UsersList}" 
+            XBindingPath="TimeStamp"
             YBindingPath="NoOfUsers">
-                <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D></chart:ChartAdornmentInfo3D>
-                </chart:ColumnSeries3D.AdornmentsInfo>
-            </chart:ColumnSeries3D>
+            <chart:ColumnSeries3D.AdornmentsInfo>
+                <chart:ChartAdornmentInfo3D></chart:ChartAdornmentInfo3D>
+            </chart:ColumnSeries3D.AdornmentsInfo>
+        </chart:ColumnSeries3D>    
         ...
-
-        </chart:SfChart3D>
-
-    </Grid>
+    </chart:SfChart3D>
+</Grid>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-series.AdornmentsInfo = new ChartAdornmentInfo3D (){ ShowLabel = true }; 
+series.AdornmentsInfo = new ChartAdornmentInfo3D() 
+{ 
+    ShowLabel = true 
+};
 
 {% endhighlight %}
 
@@ -268,20 +272,16 @@ You can enable legend using the [`Legend`](https://help.syncfusion.com/cr/wpf/Sy
 
 {% highlight xaml %}
 
- <Grid>
-        <chart:SfChart3D >
-
+<Grid>
+    <chart:SfChart3D>
         ...
-        
         <!--Legend-->
         <chart:SfChart3D.Legend>
             <chart:ChartLegend></chart:ChartLegend>
         </chart:SfChart3D.Legend>
         ...
-
-        </chart:SfChart3D>
-
-    </Grid>
+    </chart:SfChart3D>
+</Grid>
 
 {% endhighlight %}
 
@@ -299,30 +299,28 @@ Additionally, you need to set label for each series using the [`Label`](https://
 
 {% highlight xaml %}
 
-    <chart:SfChart3D >
-
-	...
-
-        <chart:ColumnSeries3D Label="UserProfile" ItemsSource="{Binding UsersList}" XBindingPath="TimeStamp"
-            YBindingPath="NoOfUsers" >
-
-        </chart:ColumnSeries3D>
-
-	...
-
-    </chart:SfChart3D>
+<chart:SfChart3D>
+    ...
+    <chart:ColumnSeries3D 
+        Label="UserProfile" 
+        ItemsSource="{Binding UsersList}" 
+        XBindingPath="TimeStamp"           
+        YBindingPath="NoOfUsers">
+    </chart:ColumnSeries3D>
+    ...
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-    ColumnSeries3D series = new ColumnSeries3D()
-        {
-            ItemsSource = new UsersViewModel().UsersList,
-            XBindingPath = "TimeStamp",
-            YBindingPath = "NoOfUsers",
-            Label = "UserProfile"
-        };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new UsersViewModel().UsersList,
+    XBindingPath = "TimeStamp",
+    YBindingPath = "NoOfUsers",
+    Label = "UserProfile"
+};
 
 {% endhighlight %}
 
@@ -336,31 +334,30 @@ Tooltips are used to show information about the segment, when you click the segm
 
 {% highlight xaml %}
 
-    <chart:SfChart3D >
-
-	...
-
-        <chart:ColumnSeries3D Label="UserProfile" ItemsSource="{Binding UsersList}" XBindingPath="TimeStamp"
-            YBindingPath="NoOfUsers" ShowTooltip="True" >
-
-        </chart:ColumnSeries3D>
-
-	...
-
-    </chart:SfChart3D> 
+<chart:SfChart3D>
+    ...
+    <chart:ColumnSeries3D 
+        Label="UserProfile" 
+        ItemsSource="{Binding UsersList}" 
+        XBindingPath="TimeStamp"            
+        YBindingPath="NoOfUsers" 
+        ShowTooltip="True">
+    </chart:ColumnSeries3D>
+    ...
+</chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-    ColumnSeries3D series = new ColumnSeries3D()
-        {
-            ItemsSource = new UsersViewModel().UsersList,
-            XBindingPath = "TimeStamp",
-            YBindingPath = "NoOfUsers",
-            Label = "UserProfile",
-            ShowTooltip = true,            
-        };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new UsersViewModel().UsersList,
+    XBindingPath = "TimeStamp",
+    YBindingPath = "NoOfUsers",
+    Label = "UserProfile",
+    ShowTooltip = true,            
+};
 
 
 {% endhighlight %}
@@ -374,21 +371,25 @@ The following code example gives you the complete code of above configurations.
 {% highlight xaml %}
 
 <Window x:Class="GettingStarted_3DCharts.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:chart="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
-        xmlns:local="clr-namespace:GettingStarted_3DCharts"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:chart="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
+    xmlns:local="clr-namespace:GettingStarted_3DCharts"
+    mc:Ignorable="d"
+    Title="MainWindow" Height="450" Width="800">
     
     <Window.DataContext>
         <local:UsersViewModel/>
     </Window.DataContext>
     
     <Grid>
-        <chart:SfChart3D x:Name="Chart3D" Width="500" Height="500" Header="Chart">
+        <chart:SfChart3D 
+            x:Name="Chart3D" 
+            Width="500" 
+            Height="500" 
+            Header="Chart">
 
             <!--PrimaryAxis-->
             <chart:SfChart3D.PrimaryAxis>
@@ -398,23 +399,25 @@ The following code example gives you the complete code of above configurations.
             <chart:SfChart3D.SecondaryAxis>
                 <chart:NumericalAxis3D/>
             </chart:SfChart3D.SecondaryAxis>
-            
+
             <!--Legend-->
             <chart:SfChart3D.Legend>
-                <chart:ChartLegend></chart:ChartLegend>
+                <chart:ChartLegend/>
             </chart:SfChart3D.Legend>
 
-            <chart:ColumnSeries3D Label="UserProfile" ItemsSource="{Binding UsersList}" XBindingPath="TimeStamp"
-            YBindingPath="NoOfUsers" ShowTooltip="True">
+            <chart:ColumnSeries3D 
+                Label="UserProfile" 
+                ItemsSource="{Binding UsersList}" 
+                XBindingPath="TimeStamp"            
+                YBindingPath="NoOfUsers"
+                ShowTooltip="True">
 
                 <!--Adornments-->
                 <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowLabel="True"></chart:ChartAdornmentInfo3D>
+                    <chart:ChartAdornmentInfo3D ShowLabel="True"/>
                 </chart:ColumnSeries3D.AdornmentsInfo>
-            </chart:ColumnSeries3D>           
-
+            </chart:ColumnSeries3D>
         </chart:SfChart3D>
-
     </Grid>
 </Window>
 
@@ -422,40 +425,45 @@ The following code example gives you the complete code of above configurations.
 
 {% highlight C# %}
 
-        SfChart3D chart = new SfChart3D() { Header = "Chart", Height = 500, Width = 500 };
+SfChart3D chart = new SfChart3D() 
+{ 
+    Header = "Chart", 
+    Height = 500, 
+    Width = 500 
+};
 
-            //Adding horizontal axis to the chart 
-            CategoryAxis3D primaryAxis = new CategoryAxis3D();
-            primaryAxis.Header = "Time";
-            primaryAxis.FontSize = 14;
-            chart.PrimaryAxis = primaryAxis;
+//Adding horizontal axis to the chart 
+DateTimeAxis3D primaryAxis = new DateTimeAxis3D();
+primaryAxis.Header = "Time";
+primaryAxis.FontSize = 14;
+chart.PrimaryAxis = primaryAxis;
 
-            //Adding vertical axis to the chart 
-            NumericalAxis3D secondaryAxis = new NumericalAxis3D();
-            secondaryAxis.Header = "Users";
-            secondaryAxis.FontSize = 14;
-            chart.SecondaryAxis = secondaryAxis;
+//Adding vertical axis to the chart 
+NumericalAxis3D secondaryAxis = new NumericalAxis3D();
+secondaryAxis.Header = "Users";
+secondaryAxis.FontSize = 14;
+chart.SecondaryAxis = secondaryAxis;
 
-            //Adding Legends for the chart
-            ChartLegend legend = new ChartLegend();
-            chart.Legend = legend;
+//Adding Legends for the chart
+ChartLegend legend = new ChartLegend();
+chart.Legend = legend;
 
-            //Initializing column series
-            ColumnSeries3D series = new ColumnSeries3D();
-            series.ItemsSource = new UsersViewModel().UsersList;
-            series.XBindingPath = "TimeStamp";
-            series.YBindingPath = "NoOfUsers";
-            series.Label = "UserProfile";
-            //Enable Tooltip
-            series.ShowTooltip = true;
-                       
+//Initializing column series
+ColumnSeries3D series = new ColumnSeries3D();
+series.ItemsSource = new UsersViewModel().UsersList;
+series.XBindingPath = "TimeStamp";
+series.YBindingPath = "NoOfUsers";
+series.Label = "UserProfile";
+//Enable Tooltip
+series.ShowTooltip = true;
+            
 
-            //Setting adornment to the chart series
-            series.AdornmentsInfo = new ChartAdornmentInfo3D() { ShowLabel = true };
+//Setting adornment to the chart series
+series.AdornmentsInfo = new ChartAdornmentInfo3D() { ShowLabel = true };
 
-            //Adding Series to the Chart Series Collection
-            chart.Series.Add(series);
-            this.Content = chart;
+//Adding Series to the Chart Series Collection
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -463,7 +471,7 @@ The following code example gives you the complete code of above configurations.
 
 ![Chart 3D support in WPF](3D-Charts_images/Chart-3D-GettingStarted.png)
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-SfChart3D)
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-SfChart3D).
 
 ## Theme
 
