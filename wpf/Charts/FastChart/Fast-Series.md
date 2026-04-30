@@ -19,11 +19,12 @@ The [`FastLineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Cha
 
 {% highlight xaml %}
 
-<chart:FastLineSeries x:Name="FastLineSeries" ItemsSource="{Binding Data}"
-
-XBindingPath="Date" Interior="#7F7F7F"
-
-YBindingPath="Value"/>
+<chart:FastLineSeries 
+    x:Name="FastLineSeries" 
+    ItemsSource="{Binding Data}"
+    XBindingPath="Date" 
+    Interior="#7F7F7F"
+    YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -31,15 +32,10 @@ YBindingPath="Value"/>
 
 FastLineSeries series = new FastLineSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -66,13 +62,12 @@ The following line properties are available for FastLineSeries:
 
 {% highlight xaml %}
 
-<chart:FastStackingColumnBitmapSeries StrokeThickness="5"
-
-ItemsSource="{Binding MedalDetails}”       
-
-XBindingPath="CountryName" YBindingPath="GoldMedals"  
-
-Interior="#4A4A4A" />
+<chart:FastStackingColumnBitmapSeries 
+    StrokeThickness="5"
+    ItemsSource="{Binding MedalDetails}"    
+    XBindingPath="CountryName" 
+    YBindingPath="GoldMedals"  
+    Interior="#4A4A4A"/>
 
 {% endhighlight %}
 
@@ -80,15 +75,10 @@ Interior="#4A4A4A" />
 
 FastStackingColumnBitmapSeries series = new FastStackingColumnBitmapSeries()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "GoldMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);

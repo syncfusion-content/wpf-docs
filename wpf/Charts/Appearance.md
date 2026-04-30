@@ -40,7 +40,7 @@ Each palette applies a set of predefined brushes to the series in a predefined o
 
 {% highlight xaml %}
 
-<chart:SfChart Height="250" Width="350" Palette="Metro"  >
+<chart:SfChart Height="250" Width="350" Palette="Metro">
 
 {% endhighlight %}
 
@@ -84,26 +84,22 @@ Each palette applies a set of predefined brushes to the segment in a predefined 
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries YBindingPath="Percentage" Palette="Metro"
-
-XBindingPath="Category" ItemsSource="{Binding Tax}" />
+<chart:DoughnutSeries 
+    YBindingPath="Percentage" 
+    Palette="Metro"
+    XBindingPath="Category" 
+    ItemsSource="{Binding Tax}"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 DoughnutSeries series = new DoughnutSeries()
-
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     Palette = ChartColorPalette.Metro
-
 };
 
 chart.Series.Add(series);
@@ -120,26 +116,22 @@ The following code example defined Palette as **AutumnBrights**.
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries   YBindingPath="Percentage" Palette="AutumnBrights"
-
-XBindingPath="Category" ItemsSource="{Binding Tax}" />
+<chart:DoughnutSeries 
+    YBindingPath="Percentage" 
+    Palette="AutumnBrights"
+    XBindingPath="Category" 
+    ItemsSource="{Binding Tax}"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 DoughnutSeries series = new DoughnutSeries()
-
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     Palette = ChartColorPalette.AutumnBrights
-
 };
 
 chart.Series.Add(series);
@@ -161,26 +153,19 @@ SfChart provides option which enables you to define your own color brushes with 
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries  YBindingPath="Percentage" Palette="Custom"
-
-XBindingPath="Category" ItemsSource="{Binding Tax}" >   
-
-<chart:DoughnutSeries.ColorModel>
-
-<chart:ChartColorModel>
-
-<chart:ChartColorModel.CustomBrushes>
-
-<SolidColorBrush Color="Cyan"/>
-
-<SolidColorBrush Color="DarkCyan"/>                                                
-
-</chart:ChartColorModel.CustomBrushes>
-
-</chart:ChartColorModel>
-
-</chart:DoughnutSeries.ColorModel>
-
+<chart:DoughnutSeries
+    ItemsSource="{Binding Tax}"
+    XBindingPath="Category"
+    YBindingPath="Percentage"
+    Palette="Custom">
+    <chart:DoughnutSeries.ColorModel>
+        <chart:ChartColorModel>
+            <chart:ChartColorModel.CustomBrushes>
+                <SolidColorBrush Color="Cyan"/>
+                <SolidColorBrush Color="DarkCyan"/>
+            </chart:ChartColorModel.CustomBrushes>
+        </chart:ChartColorModel>
+    </chart:DoughnutSeries.ColorModel>
 </chart:DoughnutSeries>
 
 {% endhighlight %}
@@ -188,24 +173,16 @@ XBindingPath="Category" ItemsSource="{Binding Tax}" >
 {% highlight c# %}
 
 ChartColorModel colorModel = new ChartColorModel();
-
 colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Cyan));
-
 colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.DarkCyan));
 
 DoughnutSeries series = new DoughnutSeries()
 {
-
-    ItemsSource = new ViewModel().Tax,
-
+    ItemsSource  = new ViewModel().Tax,
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
-    Palette = ChartColorPalette.Custom,
-
-    ColorModel = colorModel
-
+    Palette      = ChartColorPalette.Custom,
+    ColorModel   = colorModel
 };
 
 chart.Series.Add(series);
@@ -223,25 +200,20 @@ You can define the custom palette for series as in the below code example:
 
 {% highlight xaml %}
 
-<chart:SfChart Height="250" Width="350" Palette="Custom">
+<chart:SfChart
+    Height="250"
+    Width="350"
+    Palette="Custom">
 
-<chart:SfChart.ColorModel>
-
-<chart:ChartColorModel>
-
-<chart:ChartColorModel.CustomBrushes>
-
-<SolidColorBrush Color="BlueViolet"/>
-
-<SolidColorBrush Color="PeachPuff"/>
-
-<SolidColorBrush Color="Purple"/>
-
-</chart:ChartColorModel.CustomBrushes>
-
-</chart:ChartColorModel>
-
-</chart:SfChart.ColorModel>
+    <chart:SfChart.ColorModel>
+        <chart:ChartColorModel>
+            <chart:ChartColorModel.CustomBrushes>
+                <SolidColorBrush Color="BlueViolet"/>
+                <SolidColorBrush Color="PeachPuff"/>
+                <SolidColorBrush Color="Purple"/>
+            </chart:ChartColorModel.CustomBrushes>
+        </chart:ChartColorModel>
+    </chart:SfChart.ColorModel>
 
 </chart:SfChart>
 
@@ -250,13 +222,10 @@ You can define the custom palette for series as in the below code example:
 {% highlight c# %}
 
 chart.Palette = ChartColorPalette.Custom;
-
 ChartColorModel colorModel = new ChartColorModel();
 
 colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.BlueViolet));
-
 colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.PeachPuff));
-
 colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Purple));
 
 chart.ColorModel = colorModel;
@@ -323,46 +292,52 @@ ChartColorModel colorModel = new ChartColorModel();
 
 LinearGradientBrush gradientColor1 = new LinearGradientBrush();
 
-GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(255, 231, 199) };
+GradientStop stop1 = new GradientStop()
+{
+    Offset = 1,
+    Color = Color.FromRgb(255, 231, 199)
+};
 
-GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) };
+GradientStop stop2 = new GradientStop()
+{
+    Offset = 0,
+    Color = Color.FromRgb(252, 182, 159)
+};
 
 gradientColor1.GradientStops.Add(stop1);
-
 gradientColor1.GradientStops.Add(stop2);
 
 LinearGradientBrush gradientColor2 = new LinearGradientBrush();
 
-stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(250, 221, 125) };
+stop1 = new GradientStop()
+{
+    Offset = 1,
+    Color = Color.FromRgb(250, 221, 125)
+};
 
-stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 204, 45) };
+stop2 = new GradientStop()
+{
+    Offset = 0,
+    Color = Color.FromRgb(252, 204, 45)
+};
 
 gradientColor2.GradientStops.Add(stop1);
-
 gradientColor2.GradientStops.Add(stop2);
 
 ...
 
 colorModel.CustomBrushes.Add(gradientColor1);
-
 colorModel.CustomBrushes.Add(gradientColor2);
 
 ...
 
 ColumnSeries series = new ColumnSeries()
-
 {
-
-    ItemsSource = new ViewModel().Data,
-
+    ItemsSource  = new ViewModel().Data,
     XBindingPath = "Element",
-
     YBindingPath = "YValue",
-
-    Palette = ChartColorPalette.Custom,
-
-    ColorModel = colorModel
-
+    Palette      = ChartColorPalette.Custom,
+    ColorModel   = colorModel
 };
 
 chart.Series.Add(series);
@@ -379,14 +354,15 @@ The following code sample and screenshot illustrates how to apply the gradient c
 
 {% highlight xaml %}
 
-<chart:ColumnSeries XBindingPath="XValue" 
-                    YBindingPath="YValue"
-                    ItemsSource="{Binding Data}">
+<chart:ColumnSeries 
+    XBindingPath="XValue" 
+    YBindingPath="YValue"
+    ItemsSource="{Binding Data}">
                 
     <chart:ColumnSeries.Interior>
         <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#A8EAEE" />
-            <GradientStop Offset="0" Color="#7BB0F9" />
+            <GradientStop Offset="1" Color="#A8EAEE"/>
+            <GradientStop Offset="0" Color="#7BB0F9"/>
         </LinearGradientBrush>
     </chart:ColumnSeries.Interior>
 
@@ -402,28 +378,29 @@ SfChart chart = new SfChart();
 
 LinearGradientBrush gradientColor = new LinearGradientBrush();
 
-GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(168, 234, 238) };
+GradientStop stop1 = new GradientStop()
+{
+    Offset = 1,
+    Color = Color.FromRgb(168, 234, 238)
+};
 
-GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(123, 176, 249) };
+GradientStop stop2 = new GradientStop()
+{
+    Offset = 0,
+    Color = Color.FromRgb(123, 176, 249)
+};
 
 gradientColor.GradientStops.Add(stop1);
-
 gradientColor.GradientStops.Add(stop2);
 
 ...
 
 ColumnSeries series = new ColumnSeries()
-
 {
-
-    ItemsSource = new ViewModel().Data,
-
+    ItemsSource  = new ViewModel().Data,
     XBindingPath = "Element",
-
     YBindingPath = "YValue",
-
-    Interior = gradientColor,
-
+    Interior     = gradientColor
 };
 
 chart.Series.Add(series);
@@ -443,20 +420,15 @@ The color for the chart segments can be bound from its items source collection b
 
 {% highlight xaml %}
 
-<chart:ColumnSeries  SegmentColorPath="ColorPath">
-
-</chart:ColumnSeries>
+<chart:ColumnSeries SegmentColorPath="ColorPath"></chart:ColumnSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 ColumnSeries series = new ColumnSeries()
- 
 {
-        
    SegmentColorPath = "SegmentColor"
-            
 };
 
 {% endhighlight %}
@@ -479,63 +451,38 @@ The following code example demonstrates applying the palette color to the legend
 {% highlight xaml %}
 
 <chart:SfChart.Legend>
+    <chart:ChartLegend DockPosition="Left">
+        <chart:ChartLegend.ItemTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                    <Grid Margin="20,0,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
 
-<chart:ChartLegend DockPosition="Left" >
+                        <Ellipse Width="10" Height="10" Fill="{Binding Interior}">
+                            <Ellipse.Effect>
+                                <DropShadowEffect
+                                    Direction="315"
+                                    BlurRadius="0.8"
+                                    ShadowDepth="3"
+                                    Color="Black"/>
+                            </Ellipse.Effect>
+                        </Ellipse>
 
-<chart:ChartLegend.ItemTemplate>
-
-<DataTemplate>
-
-<StackPanel Orientation="Horizontal">
-
-<Grid Margin="20,0,0,0">
-
-<Grid.ColumnDefinitions>
-
-<ColumnDefinition/>
-
-<ColumnDefinition/>
-
-</Grid.ColumnDefinitions>
-
-<Ellipse Width="10" Height="10" 
-
-Fill="{Binding Interior}">
-
-<Ellipse.Effect>
-
-<DropShadowEffect Direction="315" 
-
-BlurRadius="0.8"   
-
-ShadowDepth="3" 
-
-Color="Black"/>
-
-</Ellipse.Effect>
-
-</Ellipse>
-
-<TextBlock Margin="5,0,0,0" 
-
-FontSize="10"  
-
-Grid.Column="1" 
-
-Foreground="Black" 
-
-Text="{Binding Label}"></TextBlock>
-
-</Grid>
-
-</StackPanel>
-
-</DataTemplate>
-
-</chart:ChartLegend.ItemTemplate>
-
-</chart:ChartLegend>
-
+                        <TextBlock
+                            Grid.Column="1"
+                            Margin="5,0,0,0"
+                            FontSize="10"
+                            Foreground="Black"
+                            Text="{Binding Demand}">
+                        </TextBlock>
+                    </Grid>
+                </StackPanel>
+            </DataTemplate>
+        </chart:ChartLegend.ItemTemplate>
+    </chart:ChartLegend>
 </chart:SfChart.Legend>
 
 {% endhighlight %}
@@ -544,11 +491,8 @@ Text="{Binding Label}"></TextBlock>
 
 chart.Legend = new ChartLegend()
 {
-
    DockPosition = ChartDock.Left,
-
    ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
-
 };
 
 {% endhighlight %}
@@ -567,90 +511,77 @@ SfChart provides the option to define your own template for Tooltip. The followi
 
 {% highlight xaml %}
 
-<chart:BarSeries ItemsSource="{Binding CategoricalDatas}"  
+<chart:BarSeries
+    ItemsSource="{Binding CategoricalDatas}"
+    XBindingPath="Category"
+    YBindingPath="Value"
+    ShowTooltip="True"
+    Palette="FloraHues"
+    chart:ChartTooltip.ShowDuration="5000">
 
-chart:ChartTooltip.ShowDuration="5000"
+    <chart:BarSeries.TooltipTemplate>
+        <DataTemplate>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Grid Height="40">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="0.5*"/>
+                    </Grid.RowDefinitions>
 
-XBindingPath="Category" YBindingPath="Value" 
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
 
-ShowTooltip="True"  Palette="FloraHues" >
+                    <Rectangle
+                        Fill="White"
+                        Grid.RowSpan="2"
+                        Grid.ColumnSpan="3"/>
 
-<chart:BarSeries.TooltipTemplate>
+                    <Image
+                        Grid.RowSpan="2"
+                        Grid.Column="0"
+                        HorizontalAlignment="Left"
+                        Margin="3"
+                        Source="{Binding Item.ImagePath}"/>
 
-<DataTemplate >
+                    <TextBlock
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        Margin="3,3,6,3"
+                        FontSize="10"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextAlignment="Center"
+                        Foreground="Black"
+                        Text="{Binding Item.Category}"/>
 
-<Border BorderBrush="Black" BorderThickness="1">
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Margin="3,3,6,3"
+                        FontSize="10"
+                        Foreground="Black"
+                        Text="Value:"
+                        TextAlignment="Left"/>
 
-<Grid  Height="40">
-
-<Grid.RowDefinitions>
-
-<RowDefinition Height="0.5*"/>
-
-<RowDefinition Height="0.5*"/>
-
-</Grid.RowDefinitions>
-
-<Grid.ColumnDefinitions>
-
-<ColumnDefinition/>
-
-<ColumnDefinition/>
-
-<ColumnDefinition/>
-
-</Grid.ColumnDefinitions>
-
-<Rectangle Fill="White" Grid.RowSpan="2" 
-
-Grid.ColumnSpan="3" ></Rectangle>
-
-<Image Grid.RowSpan="2" Grid.Column="0" 
-
-HorizontalAlignment="Left" Margin="3" 
-
-Source="{Binding Item.ImagePath}" ></Image>
-
-<TextBlock Margin="3,3,6,3" Text="{Binding Item.Category }" 
-
-FontSize="10" Grid.Column="1" 
-
-Grid.ColumnSpan="2" 
-
-HorizontalAlignment="Left"
-
-VerticalAlignment="Center" TextAlignment="Center" 
-
-Foreground="Black" />
-
-<TextBlock VerticalAlignment="Center" Margin="3,3,6,3" 
-
-Grid.Column="2" Grid.Row="1" 
-
-TextAlignment="Left" Text="{Binding Item.Value}" 
-
-HorizontalAlignment="Left" 
-
-Foreground="Black" FontSize="10"/>
-
-<TextBlock VerticalAlignment="Center" 
-
-Grid.Column="1" Grid.Row="1" 
-
-TextAlignment="Left" Text="Value:"
-
-HorizontalAlignment="Left" 
-
-Foreground="Black" FontSize="10"/>
-
-</Grid>
-
-</Border>
-
-</DataTemplate>
-
-</chart:BarSeries.TooltipTemplate>
-
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Margin="3,3,6,3"
+                        FontSize="10"
+                        Foreground="Black"
+                        Text="{Binding Item.Value}"
+                        TextAlignment="Left"/>
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </chart:BarSeries.TooltipTemplate>
 </chart:BarSeries>
 
 {% endhighlight %}
@@ -659,19 +590,12 @@ Foreground="Black" FontSize="10"/>
 
 BarSeries series = new BarSeries()
 {
-
     ItemsSource = new ViewModel().CategoricalDatas,
-
     XBindingPath = "Category",
-
     YBindingPath = "Value",
-
     Palette = ChartColorPalette.FloraHues,
-
     ShowTooltip = true,
-
     TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate
-
 };
 
 ChartTooltip.SetShowDuration(series, 5000);
@@ -688,13 +612,9 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`How to apply gradient colors for each series in WPF Chart`](https://www.syncfusion.com/kb/11849/how-to-apply-gradient-colors-for-each-series-in-wpf-chart)
-
-[`How to change colors of specific data points in the chart`](https://www.syncfusion.com/kb/10928/how-to-change-colors-of-specific-data-points-in-the-chart)
-
-[`How to set color for the series ColorModel property`](https://www.syncfusion.com/kb/5496/how-to-set-color-for-the-series-colormodel-property)
-
-[`How to add custom color model to series`](https://www.syncfusion.com/kb/5480/how-to-add-custom-color-model-to-series)
-
-[`How to define the fill color for each datapoint from ItemsSource`](https://www.syncfusion.com/kb/5124/how-to-define-the-fill-color-for-each-datapoint-from-itemssource)
+[`How to apply gradient colors for each series in WPF Chart?`](https://www.syncfusion.com/kb/11849/how-to-apply-gradient-colors-for-each-series-in-wpf-chart)
+[`How to change colors of specific data points in the chart?`](https://www.syncfusion.com/kb/10928/how-to-change-colors-of-specific-data-points-in-the-chart)
+[`How to set color for the series ColorModel property?`](https://www.syncfusion.com/kb/5496/how-to-set-color-for-the-series-colormodel-property)
+[`How to add custom color model to series?`](https://www.syncfusion.com/kb/5480/how-to-add-custom-color-model-to-series)
+[`How to define the fill color for each datapoint from ItemsSource?`](https://www.syncfusion.com/kb/5124/how-to-define-the-fill-color-for-each-datapoint-from-itemssource)
 
