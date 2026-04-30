@@ -24,8 +24,8 @@ The following code example illustrates how to initialize the adornment.
 {% highlight xaml %}
 
 <syncfusion:ColumnSeries 
-    Interior="#777777"
-    ItemsSource="{Binding Demands}"
+    Interior="#777777" 
+    ItemsSource="{Binding Demands}" 
     XBindingPath="Category" 
     YBindingPath="Value">
     
