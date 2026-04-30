@@ -46,13 +46,13 @@ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 <Syncfusion:SfDateTimeRangeNavigator>
 
-</Syncfusion:SfDateTimeRangeNavigator >
+</Syncfusion:SfDateTimeRangeNavigator>
 
 {% endhighlight  %}
 
 {% highlight c# %}
 
- SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
 
 {% endhighlight %}
 
@@ -66,21 +66,21 @@ Since the above steps are enough to create only empty date-time range navigator,
 
 {% highlight xaml %}
 
-<Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding UsersList}" XBindingPath="Date"  >
 
-</Syncfusion:SfDateTimeRangeNavigator >
+<Syncfusion:SfDateTimeRangeNavigator
+    ItemsSource="{Binding UsersList}"
+    XBindingPath="Date">
+</Syncfusion:SfDateTimeRangeNavigator>
+
 
 {% endhighlight  %}
 
 {% highlight c# %}
 
-SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator
 {
-
-        ItemsSource = new ViewModel().UsersList,
-
-        XBindingPath ="Date"
-
+    ItemsSource = new ViewModel().UsersList,
+    XBindingPath = "Date"
 };
 
 {% endhighlight %}
@@ -116,73 +116,57 @@ Adds any UI content inside the date-time range navigator.</td></tr>
 
 {% highlight xaml %}
 
-<Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding UsersList}" XBindingPath="Date"  >
+<Syncfusion:SfDateTimeRangeNavigator
+    ItemsSource="{Binding UsersList}"
+    XBindingPath="Date">
 
-	<Syncfusion:SfDateTimeRangeNavigator.Content>
+    <Syncfusion:SfDateTimeRangeNavigator.Content>
+        <Syncfusion:SfChart x:Name="Chart">
 
-		<Syncfusion:SfChart x:Name="Chart">
+            <Syncfusion:SfChart.PrimaryAxis>
+                <Syncfusion:DateTimeAxis/>
+            </Syncfusion:SfChart.PrimaryAxis>
 
-			<Syncfusion:SfChart.PrimaryAxis>
+            <Syncfusion:SfChart.SecondaryAxis>
+                <Syncfusion:NumericalAxis/>
+            </Syncfusion:SfChart.SecondaryAxis>
 
-				<Syncfusion:DateTimeAxis/>
+            <Syncfusion:LineSeries
+                ItemsSource="{Binding UsersList}"
+                XBindingPath="Date"
+                YBindingPath="NoOfUsers"/>
 
-			</Syncfusion:SfChart.PrimaryAxis>
+        </Syncfusion:SfChart>
+    </Syncfusion:SfDateTimeRangeNavigator.Content>
 
-		<Syncfusion:SfChart.SecondaryAxis>
-
-    <Syncfusion:NumericalAxis/>
-
-</Syncfusion:SfChart.SecondaryAxis>
-
-<Syncfusion:LineSeries 
-
-        ItemsSource="{Binding UsersList}" 
-
-        XBindingPath="Date”
-
-        YBindingPath="NoOfUsers">
-
-</Syncfusion:LineSeries>
-
-</Syncfusion:SfChart>
-
-</Syncfusion:SfDateTimeRangeNavigator.Content >
-
-</Syncfusion:SfDateTimeRangeNavigator >
+</Syncfusion:SfDateTimeRangeNavigator>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChart chart = new SfChart();
-
-chart.PrimaryAxis = new DateTimeAxis();
-
-chart.SecondaryAxis = new NumericalAxis();
-
-LineSeries series = new LineSeries()
+SfChart chart = new SfChart
 {
+    PrimaryAxis = new DateTimeAxis(),
+    SecondaryAxis = new NumericalAxis()
+};
 
-        ItemsSource = new ViewModel().UsersList,
-
-        XBindingPath = "Date",
-
-        YBindingPath = "NoOfUsers"
-
+LineSeries series = new LineSeries
+{
+    ItemsSource = new ViewModel().UsersList,
+    XBindingPath = "Date",
+    YBindingPath = "NoOfUsers"
 };
 
 chart.Series.Add(series);
 
-SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator
 {
-
-        ItemsSource = new ViewModel().StockPriceDetails,
-
-        XBindingPath ="Date"
-
+    ItemsSource = new ViewModel().UsersList,
+    XBindingPath = "Date",
+    Content = chart
 };
 
-rangeNavigator.Content = chart;
 
 {% endhighlight %}
 
@@ -223,48 +207,30 @@ SfDateTimeRangNavigator rangenavigator = new SfDateTimeRangNavigator ();
 
 {% highlight c# %}
 
-public class ItemsSource
- {
+public class ItemsSource
+{
+    public DateTime Date { get; set; }
+    public double NoOfUsers { get; set; }
+}
 
-   public DateTime Date { get; set; }
+public class UsersViewModel
+{
+    public ObservableCollection<ItemsSource> UsersList { get; set; }
 
-   public double NoOfUsers { get; set; }
+    public UsersViewModel()
+    {
+        this.UsersList = new ObservableCollection<ItemsSource>();
 
- }
+        DateTime date = DateTime.Today;
 
-public class UsersViewModel
-
- {
-
- public UsersViewModel()
-
-  {
-
-   this.UsersList = new ObservableCollection<ItemsSource>();
-
-   DateTime date = DateTime.Today;
-
-   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });
-
-   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 5000 });
-
-   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 2000 });
-
-   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 7000 });
-
-   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 6000 });
-
-   UsersList.Add(new ItemsSource { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });  }
-
- public ObservableCollection<ItemsSource> UsersList
-
-  {
-
-    get; set;
-
-  }
-
- }
+        UsersList.Add(new ItemsSource { Date = date.AddHours(1), NoOfUsers = 3000 });
+        UsersList.Add(new ItemsSource { Date = date.AddHours(2), NoOfUsers = 5000 });
+        UsersList.Add(new ItemsSource { Date = date.AddHours(3), NoOfUsers = 2000 });
+        UsersList.Add(new ItemsSource { Date = date.AddHours(4), NoOfUsers = 7000 });
+        UsersList.Add(new ItemsSource { Date = date.AddHours(5), NoOfUsers = 6000 });
+        UsersList.Add(new ItemsSource { Date = date.AddHours(6), NoOfUsers = 3000 });
+    }
+}
 
 {% endhighlight  %}
 
@@ -277,12 +243,11 @@ N> You can set any IEnumerable collection as ItemsSource.
 {% highlight c# %}
 
 //Intialize the SfDateTimeRangNavigator.
-
-SfDateTimeRangNavigator rangenavigator = new SfDateTimeRangNavigator ();
-
-rangenavigator.ItemsSource = UsersList;
-
-rangenavigator.XBindingPath = "Date";
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator
+{
+    ItemsSource  = UsersList,
+    XBindingPath = "Date"
+};
 
 {% endhighlight %}
 
@@ -293,23 +258,22 @@ Add the content that needs to be displayed inside the date-time range navigator 
 
 {% highlight c# %}
 
-//Intialize the SfChart
+// Initialize the SfChart
+SfChart chart = new SfChart();
 
-SfChart chart = new SfChart();
+LineSeries series = new LineSeries
+{
+    ItemsSource  = UsersList,
+    XBindingPath = "Date",
+    YBindingPath = "NoOfUsers"
+};
 
-LineSeries series = new LineSeries();
+// Add series to chart
+chart.Series.Add(series);
 
-series.ItemsSource = UsersList;
+// Add chart as content to the RangeNavigator
+rangeNavigator.Content = chart;
 
-series.XBindingPath = "Date";
-
-series.YBindingPath = "NoOfUsers";
-
-var content = chart.Series.add(series);
-
-//Add content to navigator
-
-rangenavigator.Content = content;
 
 {% endhighlight  %}
 

@@ -62,7 +62,6 @@ Enables deferred scrolling and panning.</td></tr>
 Gets or sets the delay value when the EnableDeferredUpdate is enabled.</td></tr>
 </table>
 
-
 ## Events
 
 <table>
@@ -78,12 +77,12 @@ ValueChanged (Object sender, EventArgs e)</td><td>
 This event is triggered when the position of the scrollbar is changed</td></tr>
 <tr>
 <td>
-`LowerBarLabelsCreated`<br/><br/></td><td>
+LowerBarLabelsCreated<br/><br/></td><td>
 LowerBarLabelsCreated(Object sender, LowerBarLabelsCreatedEventArgs e)<br/><br/></td><td>
 This event is triggered when the lower bar labels gets created.<br/><br/></td></tr>
 <tr>
 <td>
-`UpperBarLabelsCreated`<br/><br/></td><td>
+UpperBarLabelsCreated<br/><br/></td><td>
 UpperBarLabelsCreated(Object sender, UpperBarLabelsCreatedEventArgs e)<br/><br/></td><td>
 This event is triggered when the upper bar labels gets created.<br/><br/></td></tr>
 </table>
@@ -92,66 +91,63 @@ This event is triggered when the upper bar labels gets created.<br/><br/></td></
 
 {% highlight xaml %}
 
-<chart:SfChart x:Name="financialChart">            
+<chart:SfChart x:Name="financialChart">
 
-  <chart:SfChart.PrimaryAxis>
+    <chart:SfChart.PrimaryAxis>
+        <chart:DateTimeAxis
+            Name="axis1"
+            ZoomPosition="{Binding ElementName=RangeNavigator, Path=ZoomPosition, Mode=TwoWay}"
+            ZoomFactor="{Binding ElementName=RangeNavigator, Path=ZoomFactor, Mode=TwoWay}"
+            Header="Date"
+            LabelFormat="MMM/dd"
+            LabelTemplate="{StaticResource labelTemplate}"/>
+    </chart:SfChart.PrimaryAxis>
 
-         <chart:CategoryAxis Name="axis1" ZoomPosition="{Binding ElementName=RangeNavigator, Path=ZoomPosition, Mode=TwoWay}" 
-         
-                             ZoomFactor="{Binding ElementName=RangeNavigator, Path=ZoomFactor, Mode=TwoWay}"
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis/>
+    </chart:SfChart.SecondaryAxis>
 
-                             Header="Date" LabelFormat="MMM/dd" 
+    <chart:CandleSeries
+        Name="series"
+        ItemsSource="{Binding StockPriceDetails}"
+        XBindingPath="_Date"
+        High="High"
+        Open="Open"
+        Close="Close"
+        Low="Low"
+        Label="Candleseries">
+    </chart:CandleSeries>
 
-                             LabelTemplate="{StaticResource labelTemplate}" />                
+</chart:SfChart>
 
-  </chart:SfChart.PrimaryAxis>            
+<chart:SfDateTimeRangeNavigator
+    x:Name="RangeNavigator"
+    ItemsSource="{Binding StockPriceDetails}"
+    XBindingPath="_Date">
 
-  <chart:SfChart.SecondaryAxis>                
-
-                  <chart:NumericalAxis  />  
-
-</chart:SfChart.SecondaryAxis>            
-
-<chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date"  High="High" Open="Open" Close="Close" Low="Low"  Label="Candleseries">            
-
-</chart:CandleSeries>        
-
-</chart:SfChart>        
-
-<chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date" >                
-
-	<chart:SfDateTimeRangeNavigator.Content>                   
-
-		<chart:SfLineSparkline ItemsSource="{Binding StockPriceDetails}"   YBindingPath="High" > 
-
-        </chart:SfLineSparkline>                
-
-	</chart:SfDateTimeRangeNavigator.Content>            
-
+    <chart:SfDateTimeRangeNavigator.Content>
+        <chart:SfLineSparkline
+            ItemsSource="{Binding StockPriceDetails}"
+            YBindingPath="High">
+        </chart:SfLineSparkline>
+    </chart:SfDateTimeRangeNavigator.Content>
 </chart:SfDateTimeRangeNavigator>
 
 {% endhighlight  %}
 
 {% highlight c# %}
 
-SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator
 {
-
-    ItemsSource = new ViewModel().StockPriceDetails,
-
-    XBindingPath = "Date",
-
+    ItemsSource       = new ViewModel().StockPriceDetails,
+    XBindingPath      = "_Date",
     VerticalAlignment = VerticalAlignment.Top
-
 };
 
-SfLineSparkline sparkline = new SfLineSparkline()
+SfLineSparkline sparkline = new SfLineSparkline
 {
-
-    ItemsSource = new ViewModel().StockPriceDetails,
-
+    ItemsSource  = new ViewModel().StockPriceDetails,
     YBindingPath = "High"
-
 };
 
 rangeNavigator.Content = sparkline;
@@ -160,39 +156,30 @@ Grid.SetColumn(rangeNavigator, 1);
 
 SfChart chart = new SfChart();
 
-chart.PrimaryAxis = new CategoryAxis()
+chart.PrimaryAxis = new CategoryAxis
 {
-
-    PlotOffset = 25,
-
-    Header = "Date",
-
-    LabelFormat = "MMM/dd",
-
+    PlotOffset   = 25,
+    Header       = "Date",
+    LabelFormat  = "MMM/dd",
     ZoomPosition = rangeNavigator.ZoomPosition,
-
-    ZoomFactor = rangeNavigator.ZoomFactor
-
+    ZoomFactor   = rangeNavigator.ZoomFactor
 };
 
 chart.SecondaryAxis = new NumericalAxis();
 
-CandleSeries candleSeries=new CandleSeries ()
+CandleSeries candleSeries = new CandleSeries
 {
-
-    ItemsSource = new ViewModel().StockPriceDetails,
-
-    High ="High", Low = "Low",
-
-    Open ="Open", Close ="Close",
-
-    XBindingPath ="Date",
-
-    Label ="CandleSeries"
-
+    ItemsSource  = new ViewModel().StockPriceDetails,
+    XBindingPath = "_Date",
+    High         = "High",
+    Low          = "Low",
+    Open         = "Open",
+    Close        = "Close",
+    Label        = "CandleSeries"
 };
 
 chart.Series.Add(candleSeries);
+
 
 {% endhighlight %}
 
@@ -220,33 +207,29 @@ SfDateTimeRangeNavigator [LeftThumbStyle](https://help.syncfusion.com/cr/wpf/Syn
 {% highlight xaml %}
 
 <syncfusion:SfDateTimeRangeNavigator x:Name="navigator">
-
     <syncfusion:SfRangeNavigator.Resources>
-
         <DataTemplate x:Key="symbolTemplate">
-
             <Grid>
+                <Rectangle
+                    Height="30"
+                    Width="40"
+                    Fill="Green"
+                    Stroke="Black"
+                    StrokeThickness="2"
+                    VerticalAlignment="Center"/>
 
-                <Ellipse Height="40" Width="40"  Fill="Green" Stroke="Black"
-                                 
-                                 VerticalAlignment="Center" StrokeThickness="2"/>
-
-                <Ellipse Height="7" Width="7" Fill="White" 
-
-                         VerticalAlignment="Center"/>
-                        
+                <Ellipse
+                    Height="7"
+                    Width="7"
+                    Fill="White"
+                    VerticalAlignment="Center"/>
             </Grid>
-
         </DataTemplate>
-
     </syncfusion:SfRangeNavigator.Resources>
 
     <syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
-
         <syncfusion:ThumbStyle SymbolTemplate="{StaticResource symbolTemplate}"/>
-
     </syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
-
 </syncfusion:SfDateTimeRangeNavigator>
 
 {% endhighlight %}
@@ -255,20 +238,14 @@ SfDateTimeRangeNavigator [LeftThumbStyle](https://help.syncfusion.com/cr/wpf/Syn
 
 ThumbStyle thumbStyle = new ThumbStyle()
 {
-
     SymbolTemplate = grid.Resources["symbolTemplate"] as DataTemplate
-
 };
 
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     RightThumbStyle = thumbStyle
-
 };
 
 {% endhighlight %}
@@ -288,47 +265,29 @@ The following screenshot illustrates the control after customizing the right thu
 {% highlight xaml %}
 
 <Grid x:Name="grid">
+    <Grid.Resources>
+        <Style TargetType="Line" x:Key="lineStyle1">
+            <Setter Property="Stroke" Value="Red"></Setter>
+            <Setter Property="StrokeThickness" Value="3"></Setter>
+            <Setter Property="StrokeDashArray" Value="2,1"></Setter>
+        </Style>
 
-<Grid.Resources>
+        <Style TargetType="Line" x:Key="lineStyle2">
+            <Setter Property="Stroke" Value="Red"></Setter>
+            <Setter Property="StrokeThickness" Value="3"></Setter>
+            <Setter Property="StrokeDashArray" Value="2,1"></Setter>
+        </Style>
+    </Grid.Resources>
+    
+    <syncfusion:SfDateTimeRangeNavigator>
+        <syncfusion:SfDateTimeRangeNavigator.LeftThumbStyle>
+            <syncfusion:ThumbStyle LineStyle="{StaticResource lineStyle1}"/>
+        </syncfusion:SfDateTimeRangeNavigator.LeftThumbStyle>
 
-    <Style TargetType="Line" x:Key="lineStyle1">
-
-        <Setter Property="Stroke" Value="Red"></Setter>
-
-        <Setter Property="StrokeThickness" Value="3"></Setter>
-
-        <Setter Property="StrokeDashArray" Value="2,1"></Setter>
-
-    </Style>
-
-    <Style TargetType="Line" x:Key="lineStyle2">
-
-        <Setter Property="Stroke" Value="Red"></Setter>
-
-        <Setter Property="StrokeThickness" Value="3"></Setter>
-
-        <Setter Property="StrokeDashArray" Value="2,1"></Setter>
-
-    </Style>
-
-</Grid.Resources>
-
-<syncfusion:SfDateTimeRangeNavigator>
-
-    <syncfusion:SfDateTimeRangeNavigator.LeftThumbStyle>
-
-        <syncfusion:ThumbStyle LineStyle="{StaticResource lineStyle1}"/>
-
-     </syncfusion:SfDateTimeRangeNavigator.LeftThumbStyle>
-
-    <syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
-
-        <syncfusion:ThumbStyle LineStyle="{StaticResource lineStyle2}"/>
-
-    </syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
-
-</syncfusion:SfDateTimeRangeNavigator>
-
+        <syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
+            <syncfusion:ThumbStyle LineStyle="{StaticResource lineStyle2}"/>
+        </syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
+    </syncfusion:SfDateTimeRangeNavigator>
 </Grid>
 
 {% endhighlight %}
@@ -337,25 +296,18 @@ The following screenshot illustrates the control after customizing the right thu
 
 ThumbStyle thumbLineStyle1 = new ThumbStyle()
 {
-
     LineStyle = grid.Resources["lineStyle1"] as DataTemplate
-
 };
 
 ThumbStyle thumbLineStyle2 = new ThumbStyle()
 {
-
     LineStyle = grid.Resources["lineStyle2"] as DataTemplate
-
 };
 
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {
-
     LineStyle = thumbLineStyle1,
-
     LineStyle = thumbLineStyle2
-
 };
 
 {% endhighlight %}
