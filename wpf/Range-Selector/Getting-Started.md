@@ -26,7 +26,7 @@ The following section explains how to create SfDateTimeRangeNavigator.
 
 ### Add the assembly reference
 
-1. Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls to Visual Studio projects in various ways. You can also refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to learn about the assemblies required for adding Chart to your project.
+1. Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls to Visual Studio projects in various ways. You can also refer to this [link](https://help.syncfusion.com/wpf/control-dependencies) to learn about the assemblies required for adding Chart to your project.
 2. Add the following namespace in your XAML page:
 
 {% capture codesnippet1 %}
@@ -282,7 +282,7 @@ The following screenshot illustrates the result of the above code sample.
 
 ![Content in WPF Range Selector](getting-started_images/wpf-range-selector-content.png)
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-DataTimeRangeNavigator)
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-DataTimeRangeNavigator).
 
 N> The [`SelectedData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_SelectedData) property of the date-time range navigator control returns the collection that represents the data between the selected ranges.
 

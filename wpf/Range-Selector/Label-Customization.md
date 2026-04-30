@@ -166,7 +166,7 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-LabelBarStyle</td><td>
+{{'[`LabelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LabelBarStyle.html)'| markdownify }}</td><td>
 Allows to customize the label style using the LabelBarStyle property, and this property can be applied to the {{'[`HigherLevelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherLevelBarStyle)'| markdownify }} or {{'[`LowerLevelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerLevelBarStyle)'| markdownify }}.</td></tr>
 <tr>
 <td>
