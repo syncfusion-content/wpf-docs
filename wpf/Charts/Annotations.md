@@ -25,7 +25,7 @@ You can create an instance for any type of Annotation and add it to [`Annotation
 {% highlight xml %}
 
 <chart:SfChart.Annotations>
-    <chart:EllipseAnnotation  
+    <chart:EllipseAnnotation
         X1="1.5" 
         Y1="20" 
         Text="Ellipse" 
