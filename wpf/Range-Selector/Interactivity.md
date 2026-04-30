@@ -72,17 +72,17 @@ Parameters</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[`ValueChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html)'| markdownify }}</td><td>
+{{'[`ValueChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ValueChanged)'| markdownify }}</td><td>
 ValueChanged (Object sender, EventArgs e)</td><td>
 This event is triggered when the position of the scrollbar is changed</td></tr>
 <tr>
 <td>
-{{'[`LowerBarLabelsCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LowerBarLabelsCreatedEventArgs.html)'| markdownify }}<br/><br/></td><td>
+{{'[`LowerBarLabelsCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerBarLabelsCreated)'| markdownify }}<br/><br/></td><td>
 LowerBarLabelsCreated(Object sender, LowerBarLabelsCreatedEventArgs e)<br/><br/></td><td>
 This event is triggered when the lower bar labels gets created.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[`HigherBarLabelsCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HigherBarLabelsCreatedEventArgs.html)'| markdownify }}<br/><br/></td><td>
+{{'[`HigherBarLabelsCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherBarLabelsCreated)'| markdownify }}<br/><br/></td><td>
 HigherBarLabelsCreated(Object sender, HigherBarLabelsCreatedEventArgs e)<br/><br/></td><td>
 This event is triggered when the upper bar labels gets created.<br/><br/></td></tr>
 </table>
