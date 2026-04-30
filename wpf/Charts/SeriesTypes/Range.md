@@ -19,13 +19,14 @@ The following code example shows the use of HiLo series:
 
 {% highlight xaml %}
 
-<chart:HiLoSeries Name="series" Interior="#4A4A4A" 
-
-ItemsSource="{Binding StockPriceDetails}" 
-
-XBindingPath="Date" StrokeThickness="3" 
-
-High="High" Low="Low" />
+<chart:HiLoSeries 
+    Name="series" 
+    Interior="#4A4A4A" 
+    ItemsSource="{Binding StockPriceDetails}" 
+    XBindingPath="Date" 
+    StrokeThickness="3" 
+    High="High"
+    Low="Low"/>
 
 {% endhighlight %}
 
@@ -33,17 +34,12 @@ High="High" Low="Low" />
 
 HiLoSeries series = new HiLoSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
-    High = "High", Low = "Low",
-
+    High = "High",
+    Low = "Low",
     StrokeThickness = 3,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -64,11 +60,12 @@ N> You can explore our [WPF HiLo Chart](https://www.syncfusion.com/wpf-controls/
 
 {% highlight xaml %}
 
-<chart:RangeColumnSeries ItemsSource="{Binding FinancialDatas}" 
-
-XBindingPath="Time" Interior="#4A4A4A"
-
-High="High" Low="Low"  />
+<chart:RangeColumnSeries 
+    ItemsSource="{Binding FinancialDatas}" 
+    XBindingPath="Time" 
+    Interior="#4A4A4A"
+    High="High" 
+    Low="Low"/>
 
 {% endhighlight %}
 
@@ -76,15 +73,11 @@ High="High" Low="Low"  />
 
 RangeColumnSeries series = new RangeColumnSeries()
 {
-
     ItemsSource = new ViewModel().FinancialDatas,
-
     XBindingPath = "Time",
-
-    High = "High", Low = "Low",
-
+    High = "High", 
+    Low = "Low",
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -106,13 +99,12 @@ N> You can explore our [WPF Range Column Chart](https://www.syncfusion.com/wpf-c
 
 {% highlight xaml %}
 
-<chart:RangeAreaSeries  XBindingPath="ProdName" 
-
-High="Stock" Low="Price"   
-
-Interior="#BCBCBC"        
-
-ItemsSource="{Binding Products}" />
+<chart:RangeAreaSeries  
+    ItemsSource="{Binding Products}"
+    XBindingPath="ProdName" 
+    High="Stock" 
+    Low="Price"
+    Interior="#BCBCBC"/>
 
 {% endhighlight %}
 
@@ -120,15 +112,11 @@ ItemsSource="{Binding Products}" />
 
 RangeAreaSeries series = new RangeAreaSeries()
 {
-
     ItemsSource = new ViewModel().Products,
-
     XBindingPath = "ProdName",
-
-    High = "Stock", Low = "Price",
-
+    High = "Stock", 
+    Low = "Price",
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
@@ -149,15 +137,14 @@ The APIs present in the RangeArea series are,
 
 {% highlight xaml %}
 
-<chart:RangeAreaSeries x:Name="RangeAreaSeries" XBindingPath="ProdName" 
-
-High="Stock" Low="Price"   
-
-LowValueInterior="#4A4A4A"
-
-HighValueInterior="#777777"
-
-ItemsSource="{Binding Products}" />
+<chart:RangeAreaSeries 
+    x:Name="RangeAreaSeries" 
+    XBindingPath="ProdName" 
+    High="Stock" 
+    Low="Price"   
+    LowValueInterior="#4A4A4A"
+    HighValueInterior="#777777"
+    ItemsSource="{Binding Products}"/> 
 
 {% endhighlight %}
 
@@ -165,17 +152,12 @@ ItemsSource="{Binding Products}" />
 
 RangeAreaSeries series = new RangeAreaSeries()
 {
-
     ItemsSource = new ViewModel().Products,
-
     XBindingPath = "ProdName",
-
-    High = "Stock", Low = "Price",
-
+    High = "Stock", 
+    Low = "Price",
     HighValueInterior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     LowValueInterior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -196,32 +178,23 @@ N> You can explore our [WPF Range Area Chart](https://www.syncfusion.com/wpf-con
 
 {% highlight xaml %}
 
-<chart:SplineRangeAreaSeries ItemsSource = "{Binding Products}"
-
-                             XBindingPath="ProdName" 
-
-                             High="Stock" 
-
-                             Low="Price"
-
-                             Interior="#BCBCBC" />
+<chart:SplineRangeAreaSeries 
+    ItemsSource = "{Binding Products}"
+    XBindingPath="ProdName"
+    High="Stock"
+    Low="Price" 
+    Interior="#BCBCBC"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries();
-
 splineRangeAreaSeries.ItemsSource = new ViewModel().Products;
-
 splineRangeAreaSeries.XBindingPath = "ProdName";
-
 splineRangeAreaSeries.High = "Stock";
-
 splineRangeAreaSeries.Low = "Price";
-
 splineRangeAreaSeries.Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC));
-
 
 chart.Series.Add(splineRangeAreaSeries);
 
