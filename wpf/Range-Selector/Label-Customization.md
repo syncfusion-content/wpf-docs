@@ -36,40 +36,33 @@ Gets or sets string collection to set the label format for the navigator labels.
 
 {% highlight xaml %}
 
-<syncfusion:SfDateTimeRangeNavigator x:Name="rangepicker" ItemsSource="{Binding power}"  XBindingPath="Date" >
+<syncfusion:SfDateTimeRangeNavigator
+    x:Name="rangepicker"
+    ItemsSource="{Binding Power}"
+    XBindingPath="Date">
 
-	<syncfusion:SfDateTimeRangeNavigator.Intervals> 
+    <syncfusion:SfDateTimeRangeNavigator.Intervals>
+        <syncfusion:Interval IntervalType="Quarter"/>
+        <syncfusion:Interval IntervalType="Month"/>
+    </syncfusion:SfDateTimeRangeNavigator.Intervals>
 
-		<syncfusion:Interval IntervalType="Quarter"/>
+    <syncfusion:SfDateTimeRangeNavigator.Content>
+        <syncfusion:SfChart>
+            <syncfusion:SfChart.PrimaryAxis>
+                <syncfusion:CategoryAxis Visibility="Collapsed"/>
+            </syncfusion:SfChart.PrimaryAxis>
 
-		<syncfusion:Interval IntervalType="Month"/>
+            <syncfusion:SfChart.SecondaryAxis>
+                <syncfusion:NumericalAxis Visibility="Collapsed"/>
+            </syncfusion:SfChart.SecondaryAxis>
 
-	</syncfusion:SfDateTimeRangeNavigator.Intervals>
-
-	<syncfusion:SfDateTimeRangeNavigator.Content>
-
-		<syncfusion:SfChart>
-
-			<syncfusion:SfChart.PrimaryAxis>
-
-				<syncfusion:CategoryAxis Visibility="Collapsed" />
-
-			</syncfusion:SfChart.PrimaryAxis>
-
-			<syncfusion:SfChart.SecondaryAxis>
-
-				<syncfusion:NumericalAxis Visibility="Collapsed" />
-
-			</syncfusion:SfChart.SecondaryAxis>
-
-			<syncfusion:FastLineBitmapSeries XBindingPath="Date" ItemsSource="{Binding power}" YBindingPath="Value">
-
-				</syncfusion:FastLineBitmapSeries>
-
-		</syncfusion:SfChart>
-
-		</syncfusion:SfDateTimeRangeNavigator.Content>
-
+            <syncfusion:FastLineBitmapSeries
+                ItemsSource="{Binding Power}"
+                XBindingPath="Date"
+                YBindingPath="Value">
+            </syncfusion:FastLineBitmapSeries>
+        </syncfusion:SfChart>
+    </syncfusion:SfDateTimeRangeNavigator.Content>
 </syncfusion:SfDateTimeRangeNavigator>
 
 {% endhighlight  %}
@@ -78,35 +71,36 @@ Gets or sets string collection to set the label format for the navigator labels.
 
 SfChart chart = new SfChart();
 
-chart.PrimaryAxis = new CategoryAxis() { Visibility = Visibility.Collapsed };
-
-chart.SecondaryAxis = new NumericalAxis() { Visibility = Visibility.Collapsed };
-
-FastLineBitmapSeries candleSeries = new FastLineBitmapSeries()
+chart.PrimaryAxis = new CategoryAxis
 {
+    Visibility = Visibility.Collapsed
+};
 
-	ItemsSource = new ViewModel().Power,
+chart.SecondaryAxis = new NumericalAxis
+{
+    Visibility = Visibility.Collapsed
+};
 
-	XBindingPath = "Date",
-
-	YBindingPath = "Value"
-
+FastLineBitmapSeries candleSeries = new FastLineBitmapSeries
+{
+    ItemsSource = new ViewModel().Power,
+    XBindingPath = "Date",
+    YBindingPath = "Value"
 };
 
 chart.Series.Add(candleSeries);
 
-SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator
 {
-
-	ItemsSource = new ViewModel().Power,
-
-	XBindingPath = "Date"
-
+    ItemsSource = new ViewModel().Power,
+    XBindingPath = "Date"
 };
 
-rangeNavigator.Intervals.Add(new Interval() { IntervalType = NavigatorIntervalType.Quarter });
+rangeNavigator.Intervals.Add(
+    new Interval { IntervalType = NavigatorIntervalType.Quarter });
 
-rangeNavigator.Intervals.Add(new Interval() { IntervalType = NavigatorIntervalType.Month });
+rangeNavigator.Intervals.Add(
+    new Interval { IntervalType = NavigatorIntervalType.Month });
 
 rangeNavigator.Content = chart;
 
@@ -189,27 +183,18 @@ Positions the upper and lower labels inside or outside the label bar.</td></tr>
 {% highlight xaml %}
 
 <syncfusion:SfDateTimeRangeNavigator x:Name="navigator">
+	<syncfusion:SfRangeNavigator.Resources>
+		<Style TargetType="TextBlock" x:Key="labelStyle">
+			<Setter Property="FontSize" Value="10"/>
+		</Style>
+	</syncfusion:SfRangeNavigator.Resources>
 
-    <syncfusion:SfRangeNavigator.Resources>
-
-        <Style TargetType="TextBlock" x:Key="labelStyle">
-
-            <Setter Property="FontSize" Value="10"/>
-
-        </Style>
-                
-    </syncfusion:SfRangeNavigator.Resources>
-
-    <syncfusion:SfDateTimeRangeNavigator.HigherLevelBarStyle>
-
-            <syncfusion:LabelBarStyle Background="Red" 
-                                          
-                                      LabelHorizontalAlignment="Left"  
-                                          
-                                      SelectedLabelStyle="{StaticResource labelStyle}"/>
-
-    </syncfusion:SfDateTimeRangeNavigator.HigherLevelBarStyle>
-
+	<syncfusion:SfDateTimeRangeNavigator.HigherLevelBarStyle>
+		<syncfusion:LabelBarStyle 
+			Background="Red" 
+			LabelHorizontalAlignment="Left" 
+			SelectedLabelStyle="{StaticResource labelStyle}"/>
+	</syncfusion:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 </syncfusion:SfDateTimeRangeNavigator>
 
 {% endhighlight %}
@@ -218,21 +203,14 @@ Positions the upper and lower labels inside or outside the label bar.</td></tr>
 
 LabelBarStyle barStyle = new LabelBarStyle()
 {
-
 	LabelHorizontalAlignment = HorizontalAlignment.Left,
-
 	Background = new SolidColorBrush(Colors.Red),
-
 	SelectedLabelStyle = grid.Resources["labelStyle"] as Style
-
 };
-
 
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {
-
 	HigherLevelBarStyle = barStyle
-
 };
 
 {% endhighlight %}
@@ -264,17 +242,15 @@ The following screenshot demonstrates a [`RangePadding`](https://help.syncfusion
 
 {% highlight xaml %}
 
-<Syncfusion:SfDateTimeRangeNavigator RangePadding="None">
-
-</Syncfusion:SfDateTimeRangeNavigator >
+<Syncfusion:SfDateTimeRangeNavigator RangePadding="None"></Syncfusion:SfDateTimeRangeNavigator >
 
 {% endhighlight  %}
 
 {% highlight c# %}
 
- SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator
 {
-    RangePadding = NavigatorRangePadding.None
+	RangePadding = NavigatorRangePadding.None
 };
 
 {% endhighlight %}
@@ -291,17 +267,15 @@ When the value of [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion
 
 {% highlight xaml %}
 
-<Syncfusion:SfDateTimeRangeNavigator RangePadding="Round">
-
-</Syncfusion:SfDateTimeRangeNavigator >
+<Syncfusion:SfDateTimeRangeNavigator RangePadding="Round"></Syncfusion:SfDateTimeRangeNavigator>
 
 {% endhighlight  %}
 
 {% highlight c# %}
 
- SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator
 {
-    RangePadding = NavigatorRangePadding.Round
+	RangePadding = NavigatorRangePadding.Round
 };
 
 {% endhighlight %}
