@@ -20,9 +20,7 @@ The resizable scrollbar is a type of scrollbar that can be resized within the tr
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis EnableScrollBar="True" />
-
+    <syncfusion:CategoryAxis EnableScrollBar="True"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -31,9 +29,7 @@ The resizable scrollbar is a type of scrollbar that can be resized within the tr
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableScrollBar = true
-
 };
 
 {% endhighlight %}
@@ -51,9 +47,7 @@ SfChart provides support to suspend the value updates for every thumb values. Th
 {% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis EnableScrollBar="True" DeferredScrolling="True"/>
-
+    <syncfusion:CategoryAxis EnableScrollBar="True" DeferredScrolling="True"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -62,11 +56,8 @@ SfChart provides support to suspend the value updates for every thumb values. Th
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableScrollBar = true,
-
     DeferredScrolling = true,
-
 };
 
 {% endhighlight %}
@@ -82,9 +73,7 @@ SfChart allows you to resize the scrollbar using [`EnableScrollBarResizing`](htt
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis EnableScrollBar="True" EnableScrollBarResizing="False"/>
-
+    <syncfusion:CategoryAxis EnableScrollBar="True" DeferredScrolling="False"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -93,11 +82,8 @@ SfChart allows you to resize the scrollbar using [`EnableScrollBarResizing`](htt
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableScrollBar = true,
-
     EnableScrollBarResizing = false,
-
 };
 
 {% endhighlight %}
@@ -116,9 +102,7 @@ Scrollbar provides a touch mode style by enabling [`EnableTouchMode`](https://he
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis EnableScrollBar="True" EnableTouchMode="True"/>
-
+    <syncfusion:CategoryAxis EnableScrollBar="True" EnableTouchMode="True"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -127,11 +111,8 @@ Scrollbar provides a touch mode style by enabling [`EnableTouchMode`](https://he
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableScrollBar = true,
-
     EnableTouchMode = true
-
 };
 
 {% endhighlight %}
@@ -152,9 +133,7 @@ The following code example demonstrates the thumb labels in scrollbar.
 {% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis EnableScrollBar="True" ThumbLabelVisibility="Visible" EnableTouchMode="True"/>
-
+    <syncfusion:CategoryAxis EnableScrollBar="True" ThumbLabelVisibility="Visible" EnableTouchMode="True"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -163,13 +142,9 @@ The following code example demonstrates the thumb labels in scrollbar.
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableScrollBar = true,
-
     EnableTouchMode = true,
-
     ThumbLabelVisibility = Visibility.Visible
-
 };
 
 {% endhighlight %}
@@ -188,37 +163,28 @@ chart.PrimaryAxis = new CategoryAxis()
 {% highlight xaml %}
 
 <syncfusion:SfChart x:Name="chart">
-
     <syncfusion:SfChart.Resources>
-
         <DataTemplate x:Key="labelTemplate">
-
             <Grid>
-
-                <Border BorderBrush="Black" Background="Pink" 
-                                
-                        BorderThickness="2">
-
-                    <TextBlock Text="{Binding}" FontSize="15"/>
-
+                <Border
+                    Background="Pink"
+                    BorderBrush="Black"
+                    BorderThickness="2">
+                    <TextBlock
+                        Text="{Binding}"
+                        FontSize="15" />
                 </Border>
-
             </Grid>
-
         </DataTemplate>
-
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.PrimaryAxis>
-
-        <syncfusion:CategoryAxis EnableTouchMode="True" EnableScrollBar="True"
-                                         
-                                 ThumbLabelVisibility="Visible"
-                                         
-                                 ThumbLabelTemplate="{StaticResource labelTemplate}"/>
-
+        <syncfusion:CategoryAxis
+            EnableTouchMode="True"
+            EnableScrollBar="True"
+            ThumbLabelVisibility="Visible"
+            ThumbLabelTemplate="{StaticResource labelTemplate}" />
     </syncfusion:SfChart.PrimaryAxis>
-
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -227,15 +193,10 @@ chart.PrimaryAxis = new CategoryAxis()
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableTouchMode = true,
-
     EnableScrollBar = true,
-
     ThumbLabelVisibility = Visibility.Visible,
-
     ThumbLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
-
 };
 
 {% endhighlight %}

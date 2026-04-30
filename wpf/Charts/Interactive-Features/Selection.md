@@ -20,11 +20,8 @@ You can create an instance [`ChartSelectionBehavior`](https://help.syncfusion.co
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartSelectionBehavior >
-
-</syncfusion:ChartSelectionBehavior>
-
+    <syncfusion:ChartSelectionBehavior>
+    </syncfusion:ChartSelectionBehavior>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -49,17 +46,19 @@ Segment Selection allows you to highlight a segment in a chart series. To enable
 
 {% highlight xaml %}
 
+<syncfusion:ColumnSeries
+    Label="2011"
+    SegmentSelectionBrush="Green"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011"/>
+
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartSelectionBehavior   EnableSegmentSelection="True" >
-
-</syncfusion:ChartSelectionBehavior>
-
+    <syncfusion:ChartSelectionBehavior
+        EnableSegmentSelection="True">
+    </syncfusion:ChartSelectionBehavior>
 </syncfusion:SfChart.Behaviors>
-
-<syncfusion:ColumnSeries Label="2011" SegmentSelectionBrush="Green" Interior="#777777"
-
-ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -67,28 +66,19 @@ ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011"/>
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     EnableSegmentSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
-    YBindingPath = "Year2010",
-
+    YBindingPath = "Year2011",
     Label ="2011",
-
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);
@@ -109,19 +99,20 @@ The following code example demonstrates the spline series segment selection by c
 
 {% highlight xml %}
 
-<syncfusion:SplineSeries SegmentSelectionBrush="Red"
+<syncfusion:SplineSeries
+    SegmentSelectionBrush="Red"
+    ItemsSource="{Binding Demands}"
+    Interior="#4A4A4A"
+    XBindingPath="Demand"
+    YBindingPath="Year2010">
 
-ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2010">
-
-<syncfusion:SplineSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo ShowMarker="True" Symbol="Ellipse" HighlightOnSelection="True"></syncfusion:ChartAdornmentInfo>
-
-</syncfusion:SplineSeries.AdornmentsInfo>
+    <syncfusion:SplineSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo
+            ShowMarker="True"
+            Symbol="Ellipse"
+            HighlightOnSelection="True">
+        </syncfusion:ChartAdornmentInfo>
+    </syncfusion:SplineSeries.AdornmentsInfo>
 
 </syncfusion:SplineSeries>
 
@@ -131,41 +122,28 @@ YBindingPath="Year2010">
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     EnableSegmentSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
 
 SplineSeries series = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     SegmentSelectionBrush = new SolidColorBrush(Colors.Red),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowMarker = true,
-
     HighlightOnSelection = true,
-
     Symbol = ChartSymbol.Ellipse
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
-
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -184,27 +162,27 @@ The following code example demonstrates highlighting a series.
 
 {% highlight xml %}
 
-<syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartSelectionBehavior EnableSegmentSelection="False" EnableSeriesSelection="True"/>
-
-</syncfusion:SfChart.Behaviors>   
-
-<syncfusion:ScatterSeries Label="2010"  SeriesSelectionBrush="Green"
-
-ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2010">
-
+<syncfusion:ScatterSeries
+    Label="2010"
+    SeriesSelectionBrush="Green"
+    ItemsSource="{Binding Demands}"
+    Interior="#4A4A4A"
+    XBindingPath="Demand"
+    YBindingPath="Year2010">
 </syncfusion:ScatterSeries>
 
-<syncfusion:ScatterSeries Label="2011" SeriesSelectionBrush="Green" Interior="#777777"
+<syncfusion:ScatterSeries
+    Label="2011"
+    SeriesSelectionBrush="Green"
+    ItemsSource="{Binding Demands}"
+    Interior="#777777"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
+</syncfusion:ScatterSeries>
 
-ItemsSource="{Binding Demands}" XBindingPath="Demand" 
-
-YBindingPath="Year2011"/>    
+<syncfusion:SfChart.Behaviors>
+    <syncfusion:ChartSelectionBehavior EnableSegmentSelection="False" EnableSeriesSelection="True"/>
+</syncfusion:SfChart.Behaviors>   
 
 {% endhighlight %}
 
@@ -212,51 +190,33 @@ YBindingPath="Year2011"/>
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     EnableSegmentSelection = true,
-
     EnableSeriesSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
 
 ScatterSeries series1 = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     Label = "2010",
-
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 ScatterSeries series2 = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Label = "2011",
-
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series1);
-
 chart.Series.Add(series2);
 
 {% endhighlight %}
@@ -281,23 +241,23 @@ The following code example demonstrates the segment selection with adornments
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries Interior="#4A4A4A"
+<syncfusion:ColumnSeries
+    Interior="#4A4A4A"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year20110"
+    SegmentSelectionBrush="Green">
 
-ItemsSource="{Binding Demands}" XBindingPath="Demand"
-
-SegmentSelectionBrush="Green"
-
-YBindingPath="Year2010">
-
-<syncfusion:ColumnSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo UseSeriesPalette="True" ShowConnectorLine="True"
-
-ConnectorHeight="30" ShowLabel="True" HighlightOnSelection="True">
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+    <syncfusion:ColumnSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo
+            UseSeriesPalette="True"                        
+            ShowConnectorLine="True"            
+            ConnectorHeight="30"
+            ShowLabel="True"
+            HighlightOnSelection="True">
+        </syncfusion:ChartAdornmentInfo>
+    </syncfusion:ColumnSeries.AdornmentsInfo>
+</syncfusion:ColumnSeries>
 
 {% endhighlight %}
 
@@ -305,41 +265,27 @@ ConnectorHeight="30" ShowLabel="True" HighlightOnSelection="True">
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     EnableSegmentSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     ShowConnectorLine = true,
-
+    ConnectorHeight = 30,
     HighlightOnSelection = true,
-
-    UseSeriesPalette = true,
-
-    ConnectorHeight = 30
-
+    UseSeriesPalette = true
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -361,53 +307,39 @@ The following code example demonstrates the series selection with adornments.
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartSelectionBehavior EnableSegmentSelection="False" 
-
-EnableSeriesSelection="True"/>
-
+    <syncfusion:ChartSelectionBehavior  EnableSegmentSelection="False" EnableSeriesSelection="True"/>
 </syncfusion:SfChart.Behaviors>
 
-<syncfusion:SplineSeries ItemsSource="{Binding Demands}" SeriesSelectionBrush="Green"
+<syncfusion:SplineSeries
+    ItemsSource="{Binding Demands}"
+    SeriesSelectionBrush="Green"
+    XBindingPath="Demand"
+    YBindingPath="Year2010">
 
-XBindingPath="Demand" 
-
-YBindingPath="Year2010">
-
-<syncfusion:SplineSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo Symbol="Ellipse"
-
-ShowMarker="True"
-
-HighlightOnSelection="True">                                            
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:SplineSeries.AdornmentsInfo>
-
+    <syncfusion:SplineSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo
+            Symbol="Ellipse"
+            ShowMarker="True"
+            HighlightOnSelection="True">
+        </syncfusion:ChartAdornmentInfo>
+    </syncfusion:SplineSeries.AdornmentsInfo>
 </syncfusion:SplineSeries>
 
-<syncfusion:SplineSeries Label="2010" Interior="#4A4A4A" 
+<syncfusion:SplineSeries
+    Label="2010"
+    ItemsSource="{Binding Demands}"
+    SeriesSelectionBrush="Green"
+    Interior="#4A4A4A"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-ItemsSource="{Binding Demands}" SeriesSelectionBrush="Green"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2011">
-
-<syncfusion:SplineSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo Symbol="Ellipse"
-
-ShowMarker="True"
-
-HighlightOnSelection="True">
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:SplineSeries.AdornmentsInfo>
-
+    <syncfusion:SplineSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo
+            Symbol="Ellipse"
+            ShowMarker="True"
+            HighlightOnSelection="True">
+        </syncfusion:ChartAdornmentInfo>
+    </syncfusion:SplineSeries.AdornmentsInfo>
 </syncfusion:SplineSeries>
 
 {% endhighlight %}
@@ -416,69 +348,47 @@ HighlightOnSelection="True">
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     EnableSegmentSelection = false,
-
     EnableSeriesSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
 
 SplineSeries series1 = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     SeriesSelectionBrush = new SolidColorBrush(Colors.Green)
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowMarker = true,
-
     Symbol = ChartSymbol.Ellipse
-
 };
 
 series1.AdornmentsInfo = adornmentInfo;
 
 SplineSeries series2 = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     SeriesSelectionBrush = new SolidColorBrush(Colors.Green),
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A,0x4A,0x4A))
-
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
 };
 
 ChartAdornmentInfo adornmentInfo1 = new ChartAdornmentInfo()
 {
-
     ShowMarker = true,
-
     Symbol = ChartSymbol.Ellipse,
-
     HighlightOnSelection = true
-
 };
 
 series2.AdornmentsInfo = adornmentInfo1;
 
 chart.Series.Add(series1);
-
 chart.Series.Add(series2);
 
 {% endhighlight %}
@@ -511,11 +421,8 @@ The following code snippet demonstrates the selection mode using [`MouseMove`](h
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     SelectionMode = Syncfusion.UI.Xaml.Charts.SelectionMode.MouseMove,
-
     EnableSeriesSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
@@ -535,11 +442,7 @@ The following code snippet demonstrates multiple segment selection.
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartSelectionBehavior SelectionStyle="Multiple" EnableSegmentSelection="True">
-
-</syncfusion:ChartSelectionBehavior>
-
+    <syncfusion:ChartSelectionBehavior SelectionStyle="Multiple" EnableSegmentSelection="True"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -548,11 +451,8 @@ The following code snippet demonstrates multiple segment selection.
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     SelectionStyle = SelectionStyle.Multiple,
-
     EnableSegmentSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
@@ -575,11 +475,7 @@ The following code snippet demonstrates hand cursor in segment selection.
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartSelectionBehavior SelectionCursor="Hand"  EnableSegmentSelection="True">
-
-</syncfusion:ChartSelectionBehavior>
-
+    <syncfusion:ChartSelectionBehavior SelectionCursor="Hand" EnableSegmentSelection="True"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -588,11 +484,8 @@ The following code snippet demonstrates hand cursor in segment selection.
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     SelectionCursor = Cursors.Hand,
-
     EnableSegmentSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
@@ -640,7 +533,6 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.C
 
 ## See also
 
-[`How to change the series selection when clicking the legend items in WPF Chart`](https://www.syncfusion.com/kb/10461/how-to-change-the-series-selection-when-clicking-the-legend-items-in-wpf-chart)
-
-[`How to deselect the chart segment by using code behind`](https://www.syncfusion.com/kb/5473/how-to-deselect-the-chart-segment-by-using-code-behind)
+[`How to change the series selection when clicking the legend items in WPF Chart?`](https://www.syncfusion.com/kb/10461/how-to-change-the-series-selection-when-clicking-the-legend-items-in-wpf-chart)
+[`How to deselect the chart segment by using code behind?`](https://www.syncfusion.com/kb/5473/how-to-deselect-the-chart-segment-by-using-code-behind)
 

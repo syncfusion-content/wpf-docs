@@ -17,9 +17,12 @@ documentation: ug
 
 {% highlight xaml %}
 
-<chart:ColumnSeries Interior="#7F7F7F" ItemsSource="{Binding SneakersDetail}"           
-
-XBindingPath="Brand" YBindingPath="ItemsCount1"   />
+<chart:ColumnSeries 
+    Interior="#7F7F7F" 
+    ItemsSource="{Binding SneakersDetail}"
+    XBindingPath="Brand" 
+    YBindingPath="ItemsCount1">
+</chart:ColumnSeries>
 
 {% endhighlight %}
 
@@ -27,15 +30,10 @@ XBindingPath="Brand" YBindingPath="ItemsCount1"   />
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount1",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -56,9 +54,11 @@ N> You can explore our [WPF Column Chart](https://www.syncfusion.com/wpf-control
 
 {% highlight xaml %}
 
-<chart:BarSeries ItemsSource="{Binding CategoricalDatas}" XBindingPath="Category" 
-
-YBindingPath="Value" Interior="#7F7F7F" />
+<chart:BarSeries 
+    ItemsSource="{Binding CategoricalDatas}" 
+    XBindingPath="Category" 
+    YBindingPath="Value" Interior="#7F7F7F">
+</chart:BarSeries>
 
 {% endhighlight %}
 
@@ -66,15 +66,10 @@ YBindingPath="Value" Interior="#7F7F7F" />
 
 BarSeries series = new BarSeries()
 {
-
     ItemsSource = new ViewModel().CategoricalDatas,
-
     XBindingPath = "Category",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 {% endhighlight %}
@@ -100,7 +95,6 @@ N> You can explore our [WPF Bar Chart](https://www.syncfusion.com/wpf-controls/c
 {% highlight c# %}
 
 ColumnSeries series = new ColumnSeries()
-
 ChartSeriesBase.SetSpacing(series, 0.8);
 
 {% endhighlight %}
@@ -118,11 +112,8 @@ ChartSeriesBase.SetSpacing(series, 0.8);
 {% highlight xaml %}
 
 <Chart:SfChart >
-
-<Chart:ColumnSeries SegmentSpacing="0.6"/>
-
-<Chart:ColumnSeries SegmentSpacing="0.6"/>
-
+    <Chart:ColumnSeries SegmentSpacing="0.6"/>
+    <Chart:ColumnSeries SegmentSpacing="0.6"/>
 </Chart:SfChart>
 
 {% endhighlight %}
@@ -132,23 +123,15 @@ ChartSeriesBase.SetSpacing(series, 0.8);
 SfChart chart = new SfChart();
 
 ColumnSeries series1 = new ColumnSeries()
-
 {
-
     SegmentSpacing = 0.6,
-
 };
-
 chart.Series.Add(series1);
 
 ColumnSeries series2 = new ColumnSeries()
-
 {
-
     SegmentSpacing = 0.6
-
 };
-
 chart.Series.Add(series2);
 
 {% endhighlight %}

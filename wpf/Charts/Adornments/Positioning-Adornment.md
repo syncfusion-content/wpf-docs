@@ -23,22 +23,30 @@ The following code example explains the positioning of adornments in the middle 
 
 {% highlight xaml %}
 
-        <syncfusion:ChartAdornmentInfo ShowMarker="True" AdornmentsPosition="TopAndBottom" SymbolInterior="DarkGray"  Symbol="Ellipse">
-        </syncfusion:ChartAdornmentInfo>
+
+<syncfusion:ChartAdornmentInfo
+    ShowMarker="True"
+    AdornmentsPosition="TopAndBottom"
+    SymbolInterior="DarkGray"
+    Symbol="Ellipse">
+</syncfusion:ChartAdornmentInfo>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries series = new ColumnSeries();
-            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowMarker = true,
-                Symbol = ChartSymbol.Ellipse,
-                SymbolInterior = new SolidColorBrush(Colors.DarkGray),
-                AdornmentsPosition=AdornmentsPosition.TopAndBottom
-            };
-        series.AdornmentsInfo = adornmentInfo;
+ColumnSeries series = new ColumnSeries();
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+    ShowMarker = true,
+    Symbol = ChartSymbol.Ellipse,
+    SymbolInterior = new SolidColorBrush(Colors.DarkGray),
+    AdornmentsPosition = AdornmentsPosition.TopAndBottom
+};
+
+series.AdornmentsInfo = adornmentInfo;
 
 {% endhighlight %}
 
@@ -67,17 +75,17 @@ The following code sample illustrates the center position of data marker labels,
 
 {% highlight xaml %}
 
-        <chart:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Center"/>
+<chart:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Center"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowLabel = true,
-                LabelPosition =AdornmentsLabelPosition.Center
-            };      
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+    ShowLabel = true,
+    LabelPosition =AdornmentsLabelPosition.Center
+};  
 
 {% endhighlight %}
 
@@ -93,17 +101,17 @@ The following code sample illustrates the inner position of data marker labels,
 
 {% highlight xaml %}
 
-        <chart:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Inner"/>
+<chart:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Inner"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowLabel = true,
-                LabelPosition =AdornmentsLabelPosition.Inner
-            };      
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+    ShowLabel = true,
+    LabelPosition =AdornmentsLabelPosition.Inner
+};      
 
 {% endhighlight %}
 
@@ -120,17 +128,17 @@ The following code sample illustrates the outer position of data marker labels,
 
 {% highlight xaml %}
 
-        <chart:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Outer"/>
+<chart:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Outer"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowLabel = true,
-                LabelPosition =AdornmentsLabelPosition.Outer
-            };      
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+    ShowLabel = true,
+    LabelPosition =AdornmentsLabelPosition.Outer
+};      
 
 {% endhighlight %}
 
