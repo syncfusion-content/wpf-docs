@@ -12,7 +12,6 @@ documentation: ug
 SfChart provides the support for serializing and deserializing control. This section explains on how to serialize and deserialize SfChart.
 
 ## Methods:
-
 <table>
 <tr>
 <th>
@@ -43,50 +42,38 @@ Deserialize the XML file from the given file path and returns the SfChart contro
 Deserialize(Stream stream)</td><td>
 Deserialize the XML file from the given stream and returns the SfChart control object.</td></tr>
 </table>
-{% tabs %}
 
-XAML
+{% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfChart x:Name=chart>
-
-	<chart:ColumnSeries ItemsSource="{Binding CategoricalDatas}" XBindingPath="Category" YBindingPath="Value" Palette="RedChrome"/>
-
+    <chart:ColumnSeries 
+        ItemsSource="{Binding CategoricalDatas}" 
+        XBindingPath="Category" 
+        YBindingPath="Value" 
+        Palette="RedChrome"/>
 </chart:SfChart>
 
 <StackPanel>
-
-	<Button x:Name="Serialize" Content="Serialize" Height="50" Width="100" Margin="10" Click="Serialize_Click"/>
-
-	<Button x:Name="Deserialize" Content="Deserialize" Height="50" Width="100" Margin="10" Click="Deserialize_Click"/>
-
+    <Button x:Name="Serialize" Content="Serialize" Height="50" Width="100" Margin="10" Click="Serialize_Click"/>
+    <Button x:Name="Deserialize" Content="Deserialize" Height="50" Width="100" Margin="10" Click="Deserialize_Click"/>
 </StackPanel>
 
 {% endhighlight %}
 
-C#
-
 {% highlight c# %}
 
 private void Serialize_Click(object sender, RoutedEventArgs e)
-
 {
-
-string filePath = @"E:/Documents/chart.xml";
-
-chart.Serialize(filePath); 
-
+    string filePath = @"E:/Documents/chart.xml";
+    chart.Serialize(filePath);
 }
 
 private void Deserialize_Click(object sender, RoutedEventArgs e)
-
 {
-
-string filePath = @"E:/Documents/chart.xml";
-
-var deserializedChart = (SfChart)chart.Deserialize();
-
+    string filePath = @"E:/Documents/chart.xml";
+    var deserializedChart = (SfChart)chart.Deserialize();
 }
 
 {% endhighlight %}

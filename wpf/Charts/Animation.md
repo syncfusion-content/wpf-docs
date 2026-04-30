@@ -40,11 +40,12 @@ The following example shows the Animation feature for chart series.
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-
-<syncfusion:ColumnSeries EnableAnimation="True" AnimationDuration="00:00:03" 
-
-XBindingPath="Category" YBindingPath="Count" ItemsSource="{Binding}"/>
-
+    <syncfusion:ColumnSeries 
+        EnableAnimation="True" 
+        AnimationDuration="00:00:03"
+        XBindingPath="Category"
+        YBindingPath="Count"
+        ItemsSource="{Binding Data}"/>
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -53,17 +54,11 @@ XBindingPath="Category" YBindingPath="Count" ItemsSource="{Binding}"/>
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
-        ItemsSource = new ViewModel().Data,
-
-        XBindingPath = "Category",
-
-        YBindingPath = "Count",
-
-        EnableAnimation = true,
-
-        AnimationDuration = new TimeSpan(00, 00, 03)
-
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Category",
+    YBindingPath = "Count",
+    EnableAnimation = true,
+    AnimationDuration = new TimeSpan(00, 00, 03)
 };
 
 chart.Series.Add(columnSeries);
