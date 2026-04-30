@@ -44,45 +44,36 @@ Sets the data template for the right tooltip.</td></tr>
 
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" 
+<chart:SfDateTimeRangeNavigator
+    x:Name="RangeNavigator"
+    ItemsSource="{Binding StockPriceDetails}"
+    XBindingPath="Date"
+    ShowToolTip="true"
+    ToolTipLabelFormat="MMM/dd/yyyy">
 
-ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date" 
+    <chart:SfDateTimeRangeNavigator.LeftToolTipTemplate>
+        <DataTemplate>
 
-ShowToolTip="true" ToolTipLabelFormat ="MMM/dd/yyyy">
+            -----------------------
 
-<chart:SfDateTimeRangeNavigator.LeftToolTipTemplate>
+        </DataTemplate>
+    </chart:SfDateTimeRangeNavigator.LeftToolTipTemplate>
 
-<DataTemplate>
+    <chart:SfDateTimeRangeNavigator.Content>
 
------------------------
-
-</DataTemplate>
-
-</chart:SfDateTimeRangeNavigator.LeftToolTipTemplate>
-
-<chart:SfDateTimeRangeNavigator.Content>
-
-</chart:SfDateTimeRangeNavigator.Content>
-
+    </chart:SfDateTimeRangeNavigator.Content>
 </chart:SfDateTimeRangeNavigator>
-
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     ShowToolTip = true,
-
     ToolTipLabelFormat = "yyyy/MMM/dd",
-
     LeftToolTipTemplate = grid.Resources["tooltipTemplate"] as DataTemplate
-
 };
 
 {% endhighlight %}
