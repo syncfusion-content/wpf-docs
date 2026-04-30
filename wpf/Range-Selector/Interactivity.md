@@ -77,13 +77,13 @@ ValueChanged (Object sender, EventArgs e)</td><td>
 This event is triggered when the position of the scrollbar is changed</td></tr>
 <tr>
 <td>
-LowerBarLabelsCreated<br/><br/></td><td>
+{{'[`LowerBarLabelsCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LowerBarLabelsCreatedEventArgs.html)'| markdownify }}<br/><br/></td><td>
 LowerBarLabelsCreated(Object sender, LowerBarLabelsCreatedEventArgs e)<br/><br/></td><td>
 This event is triggered when the lower bar labels gets created.<br/><br/></td></tr>
 <tr>
 <td>
-UpperBarLabelsCreated<br/><br/></td><td>
-UpperBarLabelsCreated(Object sender, UpperBarLabelsCreatedEventArgs e)<br/><br/></td><td>
+{{'[`HigherBarLabelsCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HigherBarLabelsCreatedEventArgs.html)'| markdownify }}<br/><br/></td><td>
+HigherBarLabelsCreated(Object sender, HigherBarLabelsCreatedEventArgs e)<br/><br/></td><td>
 This event is triggered when the upper bar labels gets created.<br/><br/></td></tr>
 </table>
 
