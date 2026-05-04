@@ -15,15 +15,18 @@ We can able to customize the first, last, negative, high and low point brushes a
 
 {% highlight xaml %}
 
-<Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
+ <Syncfusion:SfColumnSparkline
+     ItemsSource="{Binding UsersList}"
+     YBindingPath="NoOfUsers">
+     
+     <Syncfusion:SfColumnSparkline.SegmentTemplateSelector>
+         <Syncfusion:SegmentTemplateSelector
+             FirstPointBrush="Yellow"
+             LastPointBrush="Yellow"
+             HighPointBrush="Red"/>
+     </Syncfusion:SfColumnSparkline.SegmentTemplateSelector>
 
-            <Syncfusion:SfColumnSparkline.SegmentTemplateSelector>
-
-                <Syncfusion:SegmentTemplateSelector FirstPointBrush="Yellow" LastPointBrush="Yellow" HighPointBrush="Red"/>
-
-            </Syncfusion:SfColumnSparkline.SegmentTemplateSelector>
-
-        </Syncfusion:SfColumnSparkline>
+ </Syncfusion:SfColumnSparkline>
 		
 {% endhighlight  %}
 
@@ -31,22 +34,15 @@ We can able to customize the first, last, negative, high and low point brushes a
 
 SfColumnSparkline sparkline = new SfColumnSparkline()
 {
-
     ItemsSource = new SparkViewModel().UsersList,
-
     YBindingPath = "NoOfUsers"
-
 };
 
 SegmentTemplateSelector selector = new SegmentTemplateSelector()
 {
-
     FirstPointBrush = new SolidColorBrush(Colors.Yellow),
-
     LastPointBrush = new SolidColorBrush(Colors.Yellow),
-
     HighPointBrush = new SolidColorBrush(Colors.Red)
-
 };
 
 sparkline.SegmentTemplateSelector = selector;
@@ -55,6 +51,6 @@ sparkline.SegmentTemplateSelector = selector;
 
 {% endtabs %}
 
-Following is the snapshot for customize segment,
+The following is a snapshot of the customize segment.
 
 ![Customize-segment-brush_img1](Customize-segment-brush_images/Customize-segment-brush_img1.png)

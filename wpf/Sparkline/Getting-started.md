@@ -66,48 +66,26 @@ Since the above step will produce only an empty sparkline, we need to add some d
 {% highlight c# %}
 
 public class UserProfile
-
- {
-
-   public DateTime TimeStamp { get; set; }
-
-   public double NoOfUsers { get; set; }
-
- } 
+{
+    public DateTime TimeStamp { get; set; }
+    public double NoOfUsers { get; set; }
+}
 
 public class UsersViewModel
-
- {
-
- public UsersViewModel()
-
-  {
-
-   this.UsersList = new ObservableCollection<UserProfile>();
-
-   DateTime date = DateTime.Today;
-
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });
-
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 5000 });
-
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = -3000 });
-
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = -4000 });
-
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 2000 });
-
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });  }
-
- public ObservableCollection<UserProfile> UsersList
-
-  {
-
-    get; set;
-
-  }
-
- }
+{
+    public ObservableCollection<UserProfile> UsersList { get; set; }
+    public UsersViewModel()
+    {
+        this.UsersList = new ObservableCollection<UserProfile>();
+        DateTime date = DateTime.Today;
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 5000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = -3000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = -4000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 2000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });
+    }
+}
 
 {% endhighlight  %}
 
@@ -123,18 +101,13 @@ We need to add the above UsersViewModel to the DataContext of the sparkline, bin
 {% highlight xaml %}
 
 <Grid.DataContext>
-
-	<local:UsersViewModel/>
-
+    <local:UsersViewModel/>
 </Grid.DataContext>
 
-<Syncfusion:SfLineSparkline 
-
-		ItemsSource="{Binding UsersList}" 
-
-		YBindingPath="NoOfUsers">
-
-</Syncfusion:SfLineSparkline >
+<Syncfusion:SfLineSparkline
+    ItemsSource="{Binding UsersList}"
+    YBindingPath="NoOfUsers">
+</Syncfusion:SfLineSparkline>
 
 {% endhighlight  %}
 
@@ -142,11 +115,8 @@ We need to add the above UsersViewModel to the DataContext of the sparkline, bin
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-
   ItemsSource = new SparkViewModel().UsersList,
-
   YBindingPath = "NoOfUsers"
-
 };
 
 {% endhighlight %}
@@ -159,7 +129,7 @@ The following illustrates the result of the above code sample,
 
 ![Binding Data to WPF sparkline](Getting-started_images/Getting-started_img1.png)
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-Sparkline)
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-Sparkline).
 
 ## Theme
 

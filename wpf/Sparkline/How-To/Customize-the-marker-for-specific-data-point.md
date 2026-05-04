@@ -15,13 +15,15 @@ We can customize the marker for specific data point with custom template for Lin
 
 {% highlight xaml %}
 
-<Syncfusion:SfLineSparkline x:Name="sparkline" MarkerVisibility="Visible" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
+<Syncfusion:SfLineSparkline
+    x:Name="sparkline"
+    MarkerVisibility="Visible"
+    ItemsSource="{Binding UsersList}"
+    YBindingPath="NoOfUsers">
 
-	<Syncfusion:SfLineSparkline.MarkerTemplateSelector>
-
-		<local:CustomMarkersTemplateSelector MarkerHeight="10" MarkerWidth="10"/>
-
-	</Syncfusion:SfLineSparkline.MarkerTemplateSelector>
+    <Syncfusion:SfLineSparkline.MarkerTemplateSelector>
+        <local:CustomMarkersTemplateSelector MarkerHeight="10" MarkerWidth="10"/>
+    </Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
 </Syncfusion:SfLineSparkline>
 		
@@ -30,30 +32,20 @@ We can customize the marker for specific data point with custom template for Lin
 
 {% highlight c# %}
 
- public class CustomMarkersTemplateSelector : MarkerTemplateSelector
-
+public class CustomMarkersTemplateSelector : MarkerTemplateSelector
 {
-
-	protected override DataTemplate SelectTemplate(double x, double y)
-
-	{
-
-		if (y == MaximumY)    
-
-	{
-
-			DataTemplate markerTemplate = Application.Current.Resources["markerTemplate"] as DataTemplate;
-
-			return markerTemplate;
-
-		}
-
-		else
-
-			return base.SelectTemplate(x, y);
-
-	}
-
+    protected override DataTemplate SelectTemplate(double x, double y)
+    {
+        if (y == MaximumY)
+        {
+            DataTemplate markerTemplate = Application.Current.Resources["markerTemplate"] as DataTemplate;
+            return markerTemplate;
+        }
+        else
+        {
+            return base.SelectTemplate(x, y);
+        }
+    }
 }
 
 {% endhighlight %}
@@ -62,6 +54,6 @@ We can customize the marker for specific data point with custom template for Lin
 
 
 
-Following is the snapshot for custom marker position,
+The following is a snapshot of the custom marker position.
 
 ![Customize-the-marker-for-specific-data-point_img1](Customize-the-marker-for-specific-data-point_images/Customize-the-marker-for-specific-data-point_img1.png)
