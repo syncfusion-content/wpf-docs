@@ -16,14 +16,10 @@ Markers are used to indicate the value point for line and area series, and we ca
 {% highlight xaml %}
 
 <Syncfusion:SfLineSparkline 
-
-		    ItemsSource="{Binding UsersList}" 
-
-			MarkerVisibility="Visible"
-
-		    YBindingPath="NoOfUsers">
-
-</Syncfusion:SfLineSparkline >
+	ItemsSource="{Binding UsersList}" 
+	MarkerVisibility="Visible"
+	YBindingPath="NoOfUsers">
+</Syncfusion:SfLineSparkline>
 
 {% endhighlight  %}
 
@@ -31,19 +27,15 @@ Markers are used to indicate the value point for line and area series, and we ca
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-
 	ItemsSource = new SparkViewModel().UsersList,
-
 	YBindingPath = "NoOfUsers",
-
 	MarkerVisibility = Visibility.Visible
-
 };
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Following is the snapshot for markers,
+The following is a snapshot of the markers.
 
 ![Markers_img1](Markers_images/Markers_img1.png)

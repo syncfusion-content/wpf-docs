@@ -15,49 +15,42 @@ We can add labels for track ball to show the corresponding values. In order to a
 
 {% highlight xaml %}
 
-<Page.DataContext>
+<Window.DataContext>
+    <local:UsersViewModel/>
+</Window.DataContext>
 
-	<local:UsersViewModel/>
-
-</Page.DataContext>
-
-<Syncfusion:SfLineSparkline ShowTrackBall="True" OnSparklineMouseMove="SfLineSparkline_OnSparklineMouseMove" x:Name="sparkline" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
-
+<Syncfusion:SfLineSparkline 
+    ShowTrackBall="True" 
+    OnSparklineMouseMove="SfLineSparkline_OnSparklineMouseMove" 
+    x:Name="sparkline" 
+    ItemsSource="{Binding UsersList}" 
+    YBindingPath="NoOfUsers">
 </Syncfusion:SfLineSparkline>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    ContentPresenter info;
+ContentPresenter info;
+private void SfLineSparkline_OnSparklineMouseMove(object src, SparklineMouseMoveEventArgs args)
+{
+    if(!args.RootPanel.Children.Contains(info))
+    {
+        info = new ContentPresenter();
+        args.RootPanel.Children.Add(info);
+        TextBlock.SetForeground(info, new SolidColorBrush(Colors.Red));
+        TextBlock.SetFontSize(info, 25);
+    }
 
-        private void SfLineSparkline_OnSparklineMouseMove(object src, SparklineMouseMoveEventArgs args)
+    info.Content = args.Value.Y;
 
-        {
-
-            if (!args.RootPanel.Children.Contains(info))
-
-            {
-
-                info=new ContentPresenter();
-
-                args.RootPanel.Children.Add(info);
-
-                TextBlock.SetForeground(info, new SolidColorBrush(Colors.Red)); 
-                
-                TextBlock.SetFontSize(info, 25); 
-            }
-
-            info.Content = args.Value.Y;
-
-            info.Arrange(new Rect(args.Coordinate.X,args.Coordinate.Y,info.ActualWidth,info.ActualHeight));
-
-        }
+    info.Arrange(new Rect(args.Coordinate.X, args.Coordinate.Y, info.ActualWidth, info.ActualHeight));
+}
 		
 {% endhighlight %}
 
 {% endtabs %}
 
-Following is the snapshot for track ball labels,
+The following is a snapshot of the track ball labels.
 
 ![custom label in Sparkline track ball](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)
