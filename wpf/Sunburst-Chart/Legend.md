@@ -19,11 +19,9 @@ You can initialize the legend as in the below code snippet:
 
 {% highlight xaml %}
 
-       <sunburst:SfSunburstChart.Legend>
-
-            <sunburst:SunburstLegend/>
-
-      </sunburst:SfSunburstChart.Legend>
+<sunburst:SfSunburstChart.Legend>
+    <sunburst:SunburstLegend/>
+</sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
@@ -54,11 +52,9 @@ You can specify different shapes of legend icon by using the [`LegendIcon`](http
 
 {% highlight xaml %}
 
-     <sunburst:SfSunburstChart.Legend>
-
-           <sunburst:SunburstLegend LegendIcon="Pentagon"/>
-
-     </sunburst:SfSunburstChart.Legend>
+<sunburst:SfSunburstChart.Legend>
+    <sunburst:SunburstLegend LegendIcon="Pentagon"/>
+</sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
@@ -66,8 +62,9 @@ You can specify different shapes of legend icon by using the [`LegendIcon`](http
 
 SunburstLegend legend = new SunburstLegend()
 {
-       LegendIcon = SunburstLegendIcon.Pentagon
+    LegendIcon = SunburstLegendIcon.Pentagon
 };
+
 chart.Legend = legend;
 
 {% endhighlight %}
@@ -88,39 +85,61 @@ You can customize your own legend shape by applying custom template using [`Lege
 
 {% highlight xaml %}
 
-        <Grid.Resources>
-            <DataTemplate x:Key="legendTemplate">
-                <Path  Stroke="{Binding Stroke}" Stretch="Fill" Fill="{Binding Interior}"  
-                            StrokeThickness="{Binding StrokeThickness}"
-                            Data="F1 M 133.133,45.7109L 154.307,24.5363L 175.482,45.7109L 154.307,66.8856L 175.482,88.0603L 154.307,109.235L 133.133,88.0603L 111.958,109.235L 90.7835,88.0603L 111.958,66.8856L 90.7835,45.7109L 111.958,24.5363L 133.133,45.7109 Z " />
+<Grid.Resources>
+    <DataTemplate x:Key="legendTemplate">
+        <Path
+            Stroke="{Binding Stroke}"
+            Stretch="Fill"
+            Fill="{Binding Interior}"
+            StrokeThickness="{Binding StrokeThickness}"
+            Data="F1 M 133.133,45.7109L 154.307,24.5363L 175.482,45.7109L 154.307,66.8856L 175.482,88.0603L 154.307,109.235L 133.133,88.0603L 111.958,109.235L 90.7835,88.0603L 111.958,66.8856L 90.7835,45.7109L 111.958,24.5363L 133.133,45.7109 Z"/>
+    </DataTemplate>
+</Grid.Resources>
 
-            </DataTemplate>
-        </Grid.Resources>
-
-      <sunburst:SfSunburstChart.Legend>
-                <sunburst:SunburstLegend LegendIcon="Custom" 
-                                         LegendIconTemplate="{StaticResource legendTemplate}"/>
-      </sunburst:SfSunburstChart.Legend>
+<sunburst:SfSunburstChart.Legend>
+    <sunburst:SunburstLegend LegendIcon="Custom" LegendIconTemplate="{StaticResource legendTemplate}"/>
+</sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfSunburstChart sunburst = new SfSunburstChart();
-            sunburst.ValueMemberPath = "EmployeesCount";
-            sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+this.DataContext = new ViewModel();
 
-            SunburstLegend legend = new SunburstLegend()
-            {
-                LegendIcon = SunburstLegendIcon.Custom,
-                LegendIconTemplate = grid.Resources["legendTemplate"] as DataTemplate
-            };
-            sunburst.Legend = legend;           
-            grid.Children.Add(sunburst);
+SfSunburstChart sunburst = new SfSunburstChart();
+
+sunburst.ValueMemberPath = "EmployeesCount";
+sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
+
+sunburst.Levels.Add(new SunburstHierarchicalLevel()
+{
+    GroupMemberPath = "Country"
+});
+
+sunburst.Levels.Add(new SunburstHierarchicalLevel()
+{
+    GroupMemberPath = "JobDescription"
+});
+
+sunburst.Levels.Add(new SunburstHierarchicalLevel()
+{
+    GroupMemberPath = "JobGroup"
+});
+
+sunburst.Levels.Add(new SunburstHierarchicalLevel()
+{
+    GroupMemberPath = "JobRole"
+});
+
+SunburstLegend legend = new SunburstLegend()
+{
+    LegendIcon = SunburstLegendIcon.Custom,
+    LegendIconTemplate = this.Resources["legendTemplate"] as DataTemplate
+};
+
+sunburst.Legend = legend;
+
+grid.Children.Add(sunburst);
 
 {% endhighlight %}
 
@@ -139,11 +158,9 @@ You can customize the position to left, right, top, bottom for the legend using 
 
 {% highlight xaml %}
 
-       <sunburst:SfSunburstChart.Legend>
-                
-          <sunburst:SunburstLegend DockPosition="Top" />
-                
-       </sunburst:SfSunburstChart.Legend>
+<sunburst:SfSunburstChart.Legend>
+    <sunburst:SunburstLegend DockPosition="Top"/>
+</sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
@@ -151,8 +168,9 @@ You can customize the position to left, right, top, bottom for the legend using 
 
 SunburstLegend legend = new SunburstLegend()
 {
-       DockPosition =ChartDock.Top
+    DockPosition = ChartDock.Top
 };
+
 chart.Legend = legend;
 
 {% endhighlight %}
@@ -170,31 +188,40 @@ You can arrange the legend items smartly by using ItemPanelTemplate and ItemTemp
 {% highlight xaml %}
 
     <sunburst:SfSunburstChart.Legend>
+    <sunburst:SunburstLegend DockPosition="Top" Margin="0,25,0,0">
+        <sunburst:SunburstLegend.ItemsPanel>
+            <ItemsPanelTemplate>
+                <WrapPanel Height="100" Width="250"/>
+            </ItemsPanelTemplate>
+        </sunburst:SunburstLegend.ItemsPanel>
 
-         <sunburst:SunburstLegend  DockPosition="Top" Margin="0,25,0,0" >
-                    
-                  <sunburst:SunburstLegend.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapPanel Height="100" Width="250" />
-                        </ItemsPanelTemplate>
-                   </sunburst:SunburstLegend.ItemsPanel>
+        <sunburst:SunburstLegend.ItemTemplate>
+            <ItemContainerTemplate>
+                <StackPanel
+                    Width="75"
+                    Height="30"
+                    Orientation="Horizontal">
 
-                    <sunburst:SunburstLegend.ItemTemplate>
+                    <Ellipse
+                        Stroke="{Binding Interior}"
+                        StrokeThickness="2"
+                        Fill="White"
+                        Height="10"
+                        Width="10"
+                        Margin="5">
+                    </Ellipse>
 
-                        <ItemContainerTemplate>
-
-                            <StackPanel Width="75" Height="30" Orientation="Horizontal">
-                                <Ellipse Stroke="{Binding Interior}" StrokeThickness="2" Fill="White"
-                                     Height="10" Width="10" Margin="5"/>
-                                <TextBlock Text="{Binding Label}" HorizontalAlignment="Center"   VerticalAlignment="Center"/>
-                            </StackPanel>
-                        </ItemContainerTemplate>
-
-                  </sunburst:SunburstLegend.ItemTemplate>
-                    
-                </sunburst:SunburstLegend>
-
-            </sunburst:SfSunburstChart.Legend>
+                    <TextBlock
+                        Text="{Binding Label}"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                    </TextBlock>
+                </StackPanel>
+            </ItemContainerTemplate>
+        </sunburst:SunburstLegend.ItemTemplate>
+        
+    </sunburst:SunburstLegend>
+</sunburst:SfSunburstChart.Legend>
 
 
 {% endhighlight %}
@@ -218,11 +245,9 @@ Used to highlight specific category while clicking on legend item.
 
 {% highlight xaml %}
 
-    <sunburst:SfSunburstChart.Legend>
-                
-           <sunburst:SunburstLegend ClickAction="ToggleSegmentSelection"/>
-
-    </sunburst:SfSunburstChart.Legend>
+<sunburst:SfSunburstChart.Legend>
+    <sunburst:SunburstLegend ClickAction="ToggleSegmentSelection"/>
+</sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
@@ -230,8 +255,9 @@ Used to highlight specific category while clicking on legend item.
 
 SunburstLegend legend = new SunburstLegend()
 {
-          ClickAction =LegendClickAction.ToggleSegmentSelection
+    ClickAction =LegendClickAction.ToggleSegmentSelection
 };
+
 chart.Legend = legend;
 
 {% endhighlight %}
@@ -249,11 +275,9 @@ Used to disable the specific category while clicking on legend item.
 
 {% highlight xaml %}
 
-     <sunburst:SfSunburstChart.Legend>
-                
-              <sunburst:SunburstLegend ClickAction ="ToggleSegmentVisibility"/>
-
-     </sunburst:SfSunburstChart.Legend>
+<sunburst:SfSunburstChart.Legend>
+    <sunburst:SunburstLegend ClickAction ="ToggleSegmentVisibility"/>
+</sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
@@ -261,8 +285,9 @@ Used to disable the specific category while clicking on legend item.
 
 SunburstLegend legend = new SunburstLegend()
 {
-          ClickAction = LegendClickAction.ToggleSegmentVisibility
+    ClickAction = LegendClickAction.ToggleSegmentVisibility
 };
+
 chart.Legend = legend;
 
 {% endhighlight %}
