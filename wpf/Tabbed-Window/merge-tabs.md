@@ -9,17 +9,26 @@ documentation: ug
 
 # Merge Tabs Between Windows in WPF Tabbed Window
 
-This section explains how to move tabs between tabbed windows and provides an overview of the supported tear-off and merge validation features.
+This section explains how to move tabs between WPF Tabbed Window instances. It covers supported tear‑off functionality and tab merge validation using built‑in drag‑and‑drop capabilities.
 
-## Tear-Off Windows
+These features allow users to detach tabs into floating windows and merge them back into the same or another tabbed window.
 
-The tabbed window interface supports tear-off functionality that allows tabs to be detached from an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) and displayed in independent floating windows. These floating windows can later be merged back into another tabbed window.
+## Tear‑Off Windows
 
-### Enable Tear-Off
+The Tabbed Window supports tear‑off functionality, allowing tabs to be detached from an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) and displayed in independent floating windows. These floating windows can later be merged back into another tabbed window.
 
-You can use the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_AllowDragDrop) property to enable tear-off support in [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html). When drag-and-drop is enabled, a tab can be dragged outside the tab control boundary to create a floating window. The detached tab is moved into the new window automatically, and it can be reattached later by dragging it back into the tab area of another tabbed window. If a floating window becomes empty after a tab is moved out, it is closed automatically.
+### Enabling Tear‑Off Support
 
-The floating window created through tear-off behaves like a regular tabbed window. It can be moved, resized, and minimized, and it supports the same tab features as the original window.
+You can enable tear‑off support by setting the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_AllowDragDrop) property of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) to True.
+
+When drag‑and‑drop is enabled:
+
+- A tab can be dragged outside the tab control boundary to create a floating window
+- The dragged tab is automatically moved into the new window
+- The floating window behaves like a regular tabbed window
+- If all tabs are removed from a floating window, the window closes automatically
+
+The floating window supports resizing, minimizing, and all standard tab features.
 
 {% tabs %}
 
@@ -42,9 +51,15 @@ The floating window created through tear-off behaves like a regular tabbed windo
 
 ![WPF TabbedWindow Tear-Off](merge-tabs_images/tear-off-tabbedwindow.gif)
 
-## Control Tab Movement with PreviewTabMerge
+## Controlling Tab Movement with PreviewTabMerge event
 
-You can use the [PreviewTabMerge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_PreviewTabMerge) event to validate or cancel a tab merge operation before a tab is moved between tabbed windows. This event also allows you to modify the item that will be inserted into the target [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
+You can control and validate tab movement between tabbed windows using the [PreviewTabMerge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_PreviewTabMerge) event of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
+
+This event is raised before a tab is merged into the target tab control and allows you to:
+
+- Cancel the merge operation
+- Validate business rules before allowing a merge
+- Modify or replace the item being merged
 
 {% tabs %}
 
@@ -95,14 +110,14 @@ private void OnPreviewTabMerge(object sender, TabMergePreviewEventArgs e)
 
 {% endtabs %}
 
-![WPF TabbedWindow Merging](merge-tabs_images/tabbedwindow-merging.gif)
+![WPF TabbedWindow Preview Merging](merge-tabs_images/tabbedwindow-merging.gif)
 
 ## PreviewTabMergeEventArgs Properties
 
-| Property | Type | Description |
-|----------|------|-------------|
-| `DraggedItem` | object | The item being dragged. |
-| `SourceControl` | SfTabControl | The tab control where the drag operation started. |
-| `TargetControl` | SfTabControl | The tab control that receives the dragged item. |
-| `Allow` | bool | Specifies whether the merge operation is allowed. Set this to `false` to cancel the merge. |
-| `ResultingItem` | object | The item to be inserted into the target control. By default, this is the same as `DraggedItem`. |
+| Property        |Description                                                       |
+|-----------------|------------------------------------------------------------------|
+| DraggedItem     | Gets the item being dragged from the source tab control             |
+| SourceControl   | Gets the `SfTabControl` where the drag operation originated          |
+| TargetControl   | Gets the `SfTabControl` that receives the dragged item              |
+| Allow           | Specifies whether the merge operation is allowed                    |
+| ResultingItem   | Specifies the item inserted into the target control                 |
