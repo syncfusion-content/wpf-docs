@@ -19,17 +19,16 @@ The following code shows how to add the hierarchical level in Levels collection.
 
 {% highlight xaml %}
 
-      <sunburst:SfSunburstChart.Levels>
-
-           <sunburst:SunburstHierarchicalLevel/>
-           
-      </sunburst:SfSunburstChart.Levels>
+<sunburst:SfSunburstChart.Levels>
+    <sunburst:SunburstHierarchicalLevel/>
+</sunburst:SfSunburstChart.Levels>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SunburstHierarchicalLevel level = new SunburstHierarchicalLevel();
+
 sunburstChart.Levels.Add(level);
 
 {% endhighlight %}
@@ -46,13 +45,11 @@ You can define the Levels as shown in the code sample.
 
 {% highlight xaml %}
 
-      <sunburst:SfSunburstChart.Levels>
-
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level1"/>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath=" Level2"/>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath=" Level3"/>
-
-      </sunburst:SfSunburstChart.Levels>
+<sunburst:SfSunburstChart.Levels>
+    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level1"/>
+    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level2"/>
+    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level3"/>
+</sunburst:SfSunburstChart.Levels>
 
 {% endhighlight %}
 
