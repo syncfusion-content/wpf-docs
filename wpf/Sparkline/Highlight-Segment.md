@@ -15,8 +15,10 @@ This feature enable to highlight the column segments on mouse move and this is a
 
 {% highlight xaml %}
 
-<Syncfusion:SfColumnSparkline HighlightSegment="True" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
-
+<Syncfusion:SfColumnSparkline
+    HighlightSegment="True"
+    ItemsSource="{Binding UsersList}"
+    YBindingPath="NoOfUsers">
 </Syncfusion:SfColumnSparkline>
 		
 {% endhighlight %}  
@@ -25,19 +27,15 @@ This feature enable to highlight the column segments on mouse move and this is a
 
 SfColumnSparkline sparkline = new SfColumnSparkline()
 {
-
     ItemsSource = new SparkViewModel().UsersList,
-
     YBindingPath = "NoOfUsers",
-
     HighlightSegment = true
-
 };
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Following is the snapshot for highlight segment,
+The following is a snapshot of the highlight segment.
 
 ![Highlight-Segment_img1](Highlight-Segment_images/Highlight-Segment_img1.png)

@@ -124,35 +124,6 @@ You can customize the appearance of the new tab button using the [NewTabButtonSt
 
 ![WPF NewButton style](tab-management_images/wpf_newbuttonstyle.png)
 
-## Customizing Tab Header and Content
-
-You can customize the visual presentation of tab headers and tab content by defining data templates and applying them to the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<DataTemplate x:Key="TabHeaderTemplate">
-  <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-    <Image Source="/Images/doc.png" Width="16" Height="16"/>
-    <TextBlock Text="{Binding Title}" Margin="6,0,0,0"/>
-  </StackPanel>
-</DataTemplate>
-
-<DataTemplate x:Key="TabContentTemplate">
-  <ContentPresenter Content="{Binding Content}" />
-</DataTemplate>
-
-<syncfusion:SfTabControl ItemsSource="{Binding OpenTabs}"
-                         ItemTemplate="{StaticResource TabHeaderTemplate}"
-                         ContentTemplate="{StaticResource TabContentTemplate}" />
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WPF TabbedWindow customization](tab-management_images/wpf_customization.png)
-
 ## Keyboard Shortcuts
 
 The Tabbed Window provides built‑in keyboard and mouse shortcuts for efficient tab navigation and management:
