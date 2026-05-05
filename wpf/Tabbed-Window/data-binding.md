@@ -100,4 +100,4 @@ You can customize the visual presentation of tab headers and tab content by defi
 
 {% endtabs %}
 
-![WPF TabbedWindow customization](tab-management_images/wpf_customization.png)
+![WPF TabbedWindow customization](data-binding_images/wpf_customization.png)
