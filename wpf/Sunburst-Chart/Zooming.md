@@ -19,17 +19,16 @@ The following code shows how to initialize the zooming behavior.
 
 {% highlight xaml %}
 
-    <sunburst:SfSunburstChart.Behaviors>
-
-              <sunburst:SunburstZoomingBehavior/>
-
-    </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstZoomingBehavior/>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SunburstZoomingBehavior zoom = new SunburstZoomingBehavior();
+
 chart.Behaviors.Add(zoom);
 
 {% endhighlight %}
@@ -49,12 +48,13 @@ You can align the zooming toolbar position by using [`ToolBarHorizontalAlignment
 
 {% highlight xaml %}
 
-             <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstZoomingBehavior EnableZooming="True"
-                                                    ToolBarHorizontalAlignment="Center"
-                                                  ToolBarVerticalAlignment="Center"/>
-            </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstZoomingBehavior 
+        EnableZooming="True"
+        ToolBarHorizontalAlignment="Center"
+        ToolBarVerticalAlignment="Center">
+    </sunburst:SunburstZoomingBehavior>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -66,15 +66,15 @@ You can customize the zooming toolbar using the following properties.
 
 {% highlight xaml %}
 
-          <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstZoomingBehavior EnableZooming="True"
-                                                  ToolBarHorizontalAlignment="Center"
-                                                  ToolBarVerticalAlignment="Center"
-                                                  ToolBarItemHeight="30"
-                                                  ToolBarItemWidth="50"
-                                                  ToolBarItemMargin="5"/>
-            </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstZoomingBehavior 
+        EnableZooming="True"
+        ToolBarHorizontalAlignment="Center"
+        ToolBarVerticalAlignment="Center"
+        ToolBarItemHeight="30"
+        ToolBarItemWidth="50"
+        ToolBarItemMargin="5"/>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -84,11 +84,12 @@ Toolbar position can also be moved using the [`ToolbarOffsetX`](https://help.syn
 
 {% highlight xaml %}
 
-          <sunburst:SfSunburstChart.Behaviors>
-
-              <sunburst:SunburstZoomingBehavior EnableZooming="True"
-                                                  ToolbarOffsetX="0.1" ToolbarOffsetY="0.5"/>
-            </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstZoomingBehavior 
+        EnableZooming="True" 
+        ToolbarOffsetX="0.1" 
+        ToolbarOffsetY="0.5"/>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
