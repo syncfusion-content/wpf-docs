@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WPF Tabbed Window | Syncfusion
-description: Learn how to bind tabs to a collection in a WPF tabbed window by using the ItemsSource property and templates for tab headers and content.
+description: Learn how to bind tabs to a collection in Syncfusion® WPF Tabbed Window by using the ItemsSource property and templates for tab headers and content.
 platform: wpf
 control: TabbedWindow
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to bind tabs to a collection in a WPF tabbed window by using the `ItemsSource` property of [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) and defining templates for tab headers and content.
 
-## Adding Tab Items using Data Binding
+## Populating Tab Items using ItemsSource
 
 You can bind the `ItemsSource` property of [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) to a collection in the ViewModel to generate tabs automatically. Each item in the bound collection creates a corresponding tab.
 
@@ -46,9 +46,10 @@ public class MainViewModel : NotificationObject
     <local:MainViewModel />
 </Window.DataContext>
 
-<syncfusion:SfTabControl ItemsSource="{Binding TabItems}" x:Name="MainTabControl">
+<syncfusion:SfTabControl ItemsSource="{Binding TabItems}"
+                         x:Name="MainTabControl">
     <syncfusion:SfTabControl.ItemContainerStyle>
-        <Style TargetType="syncfusion:SfTabItem">
+        <Style TargetType="{x:Type syncfusion:SfTabItem}">
             <Setter Property="HeaderTemplate">
                 <Setter.Value>
                     <DataTemplate>
@@ -72,60 +73,31 @@ public class MainViewModel : NotificationObject
 
 ![WPF TabbedWindow](data-binding_images/wpf_tabbedwindow.png)
 
-## Tab Item Header
+## Customizing Tab Header and Content
 
-You can define the tab item header by using the `HeaderTemplate` property in `ItemContainerStyle` or by using the `ItemTemplate` property. This keeps the header content bound to the underlying data object for each generated tab.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<Window.DataContext>
-    <local:MainViewModel />
-</Window.DataContext>
-
-<syncfusion:SfTabControl ItemsSource="{Binding TabItems}" x:Name="MainTabControl">
-    <syncfusion:SfTabControl.ItemContainerStyle>
-        <Style TargetType="syncfusion:SfTabItem">
-            <Setter Property="HeaderTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding Header}" />
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </syncfusion:SfTabControl.ItemContainerStyle>
-</syncfusion:SfTabControl>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WPF TabbedWindow](data-binding_images/wpf_tabbedwindow_header.png)
-
-## Tab Item Content
-
-You can define the tab item content by using the `ContentTemplate` property of [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html). This allows the content area of each generated tab to display bound values from the data object.
+You can customize the visual presentation of tab headers and tab content by defining data templates and applying them to the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<Window.DataContext>
-    <local:MainViewModel />
-</Window.DataContext>
+<DataTemplate x:Key="TabHeaderTemplate">
+  <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+    <Image Source="/Images/doc.png" Width="16" Height="16"/>
+    <TextBlock Text="{Binding Title}" Margin="6,0,0,0"/>
+  </StackPanel>
+</DataTemplate>
 
-<syncfusion:SfTabControl ItemsSource="{Binding TabItems}" x:Name="MainTabControl">
-    <syncfusion:SfTabControl.ContentTemplate>
-        <DataTemplate>
-            <TextBlock Text="{Binding Content}" />
-        </DataTemplate>
-    </syncfusion:SfTabControl.ContentTemplate>
-</syncfusion:SfTabControl>
+<DataTemplate x:Key="TabContentTemplate">
+  <ContentPresenter Content="{Binding Content}" />
+</DataTemplate>
+
+<syncfusion:SfTabControl ItemsSource="{Binding OpenTabs}"
+                         ItemTemplate="{StaticResource TabHeaderTemplate}"
+                         ContentTemplate="{StaticResource TabContentTemplate}" />
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![WPF TabbedWindow](data-binding_images/wpf_tabbedwindow_contenttemplate.png)
+![WPF TabbedWindow customization](tab-management_images/wpf_customization.png)
