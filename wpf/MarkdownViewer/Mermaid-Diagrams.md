@@ -36,7 +36,7 @@ The [MermaidBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 
 # Mermaid Flowchart
 
-Mermaid flowcharts let you describe processes and decision trees in plain texts, and the viewer renders them into clear, interactive diagrams. This makes it simple to illustrate workflows, logic paths, or system flows directly inside Markdown without external tools.  
+Mermaid flowchart let you describe processes and decision trees in plain texts, and the viewer renders them into clear, interactive diagrams. This makes it simple to illustrate workflows, logic paths, or system flows directly inside Markdown without external tools.  
 
 ---
 
