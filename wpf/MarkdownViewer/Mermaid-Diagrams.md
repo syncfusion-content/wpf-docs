@@ -40,7 +40,7 @@ Mermaid flowcharts let you describe processes and decision trees in plain text, 
 
 ---
 
-mermaid
+```mermaid```   
 flowchart TD
     A[User Opens App] --> B[MarkdownViewer Loads]
     B --> C{Contains Mermaid?}
