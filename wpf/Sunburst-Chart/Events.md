@@ -21,44 +21,47 @@ The following example shows how to set the color for each level after creating t
 
 {% highlight xaml %}
 
-
-     <sunburst:SfSunburstChart ItemsSource="{Binding Data}"               ValueMemberPath="EmployeesCount" 
-                SegmentCreated="chart_SegmentCreated">
-          
-            <sunburst:SfSunburstChart.Levels>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-            </sunburst:SfSunburstChart.Levels>
-           
-        </sunburst:SfSunburstChart>
-
+<sunburst:SfSunburstChart 
+    ItemsSource="{Binding Data}"               
+    ValueMemberPath="EmployeesCount" 
+    SegmentCreated="chart_SegmentCreated">
+    <sunburst:SfSunburstChart.Levels>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+    </sunburst:SfSunburstChart.Levels>
+</sunburst:SfSunburstChart>
      
 {% endhighlight %}
 
 {% highlight c# %}
 
 private void chart_SegmentCreated(object sender, SunburstSegmentCreatedEventArgs e)
-
 {
+    byte r = 180, g = 0, b = 96;
+    byte r1 = 255, g1 = 153, b1 = 0;
+    byte r2 = 102, g2 = 153, b2 = 0;
+    byte r3 = 102, g3 = 204, b3 = 255;
 
-                byte r = 180, g = 0, b = 96;
-                byte r1 = 255, g1 = 153, b1 = 0;
-                byte r2 = 102, g2 = 153, b2 = 0;
-                byte r3 = 102, g3 = 204, b3 = 255;
-                 if (e.Segment.CurrentLevel == 0)
-                    e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r3,g3,b3));
+    if (e.Segment.CurrentLevel == 0)
+    {
+        e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r3, g3, b3));
+    }
+    else if (e.Segment.CurrentLevel == 1)
+    {
+        e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r1, g1, b1));
+    }
 
-                else if (e.Segment.CurrentLevel == 1)
-                    e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r1, g1, b1));
+    else if (e.Segment.CurrentLevel == 2)
+    {
+        e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r, g, b));
+    }
 
-                else if (e.Segment.CurrentLevel == 2)
-                    e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r, g, b));
-
-                else if (e.Segment.CurrentLevel == 3)
-                    e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r2, g2, b2));
-
+    else if (e.Segment.CurrentLevel == 3)
+    {
+        e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r2, g2, b2));
+    }
 }
 
 {% endhighlight %}
@@ -78,50 +81,51 @@ The following examples shows how to set the selected segment information.
 
 {% highlight xaml %}
 
-     <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount" 
-                                  SelectionChanged="chart_SelectionChanged">
+<sunburst:SfSunburstChart
+    ItemsSource="{Binding Data}"
+    ValueMemberPath="EmployeesCount"
+    SelectionChanged="chart_SelectionChanged">
 
-          <sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SfSunburstChart.Behaviors>
+        <sunburst:SunburstSelectionBehavior
+            EnableSelection="True"
+            SelectionCursor="Hand"/>
+    </sunburst:SfSunburstChart.Behaviors>
+</sunburst:SfSunburstChart>
 
-        <sunburst:SunburstSelectionBehavior EnableSelection="True" 
-                                            SelectionCursor="Hand"/>               
-          </sunburst:SfSunburstChart.Behaviors>
+<Popup
+    x:Name="popup"
+    Placement="MousePoint"
+    Height="180"
+    Width="180">
+    <Border
+        Background="White"
+        BorderBrush="Black"
+        BorderThickness="3">
+        <Grid Margin="20,5,5,5">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
 
-     </sunburst:SfSunburstChart>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
 
-<Popup x:Name="popup" Placement="MousePoint" Height="180" Width="180" >
-
-            <Border Background="White" BorderBrush="Black" BorderThickness="3" >
-
-                <Grid Margin="20,5,5,5">
-
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-
-                    <TextBlock Text="Category : " FontWeight="Bold" Grid.Row="0" Grid.Column="0"/>
-                    <TextBlock x:Name="category"   FontWeight="Bold" Grid.Row="0" Grid.Column="1"/>
-                    <TextBlock Text="Value : " FontWeight="Bold" Grid.Row="1" Grid.Column="0"/>
-                    <TextBlock  x:Name="value" FontWeight="Bold" Grid.Row="1" Grid.Column="1"/>
-                    <TextBlock Text="Level : " FontWeight="Bold" Grid.Row="2" Grid.Column="0"/>
-                    <TextBlock x:Name="level" FontWeight="Bold" Grid.Row="2" Grid.Column="1"/>
-                    <TextBlock Text="SliceIndex : " FontWeight="Bold" Grid.Row="3" Grid.Column="0"/>
-                    <TextBlock x:Name="sliceIndex" FontWeight="Bold" Grid.Row="3" Grid.Column="1"/>
-
-                </Grid>
-                
-            </Border>
-            
-        </Popup>
-
+            <TextBlock Text="Category : " FontWeight="Bold" Grid.Row="0" Grid.Column="0"/>
+            <TextBlock x:Name="category"  FontWeight="Bold" Grid.Row="0" Grid.Column="1"/>
+            <TextBlock Text="Value : " FontWeight="Bold" Grid.Row="1" Grid.Column="0"/>
+            <TextBlock x:Name="value" FontWeight="Bold" Grid.Row="1" Grid.Column="1"/>
+            <TextBlock Text="Level : " FontWeight="Bold" Grid.Row="2" Grid.Column="0"/>
+            <TextBlock x:Name="level" FontWeight="Bold" Grid.Row="2" Grid.Column="1"/>
+            <TextBlock Text="SliceIndex : " FontWeight="Bold" Grid.Row="3" Grid.Column="0"/>
+            <TextBlock x:Name="sliceIndex" FontWeight="Bold" Grid.Row="3" Grid.Column="1"/>
+        </Grid>
+    </Border>
+</Popup>
 
 {% endhighlight %}
 
@@ -129,12 +133,11 @@ The following examples shows how to set the selected segment information.
 
 private void chart_SelectionChanged(object sender, SunburstSelectionChangedEventArgs e)
 {
-
-      popup.IsOpen = true;
-      category.Text = e.SelectedSegment.Category.ToString();
-      value.Text = e.SelectedSegment.Value.ToString();
-      level.Text = e.SelectedSegment.CurrentLevel.ToString();
-      sliceIndex.Text = e.SelectedSegment.SliceIndex.ToString();
+    popup.IsOpen = true;
+    category.Text = e.SelectedSegment.Category.ToString();
+    value.Text = e.SelectedSegment.Value.ToString();
+    level.Text = e.SelectedSegment.CurrentLevel.ToString();
+    sliceIndex.Text = e.SelectedSegment.SliceIndex.ToString();
 }
 
 {% endhighlight %}

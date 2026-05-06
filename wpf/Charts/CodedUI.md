@@ -61,7 +61,6 @@ N> Syncfusion.SfChart.CUITExtension.WPF.dll need to be installed in GAC location
 
 ## Getting Started
 
-
 ### Coded UI Project Creation
 
 Run Visual Studio in administrator mode
@@ -106,35 +105,32 @@ Once the record is completed, click the GenerateCode icon in CodedUITestBuilder 
 {% highlight c# %}
 
 
-			public void RecordedMethod1()
+public void RecordedMethod1()            
+{
+    #region Variable Declarations
 
-			  {
+    WpfSfChart uISfChartCustom = this.UICUITestSampleDemoWindow.UISfChartCustom;
 
-				 #region Variable Declarations
+    WpfChartSeries uIColumnSeriesCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIColumnSeriesCustom;
 
-				 WpfSfChart uISfChartCustom = this.UICUITestSampleDemoWindow.UISfChartCustom;
+    WpfLegend uIChartLegendCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIChartLegendCustom;
 
-                 WpfChartSeries uIColumnSeriesCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIColumnSeriesCustom;
+    WpfChartAxis uINumericalAxisCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UINumericalAxisCustom;
 
-                 WpfLegend uIChartLegendCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIChartLegendCustom;
+    WpfChartAxis uICategoryAxisCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UICategoryAxisCustom;
 
-                 WpfChartAxis uINumericalAxisCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UINumericalAxisCustom;
+    WpfZoomingBehavior uIZoomInCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIZoomInCustom;
 
-                 WpfChartAxis uICategoryAxisCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UICategoryAxisCustom;
+    WpfZoomingBehavior uIZoomOutCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIZoomOutCustom;
 
-                 WpfZoomingBehavior uIZoomInCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIZoomInCustom;
+    WpfZoomingBehavior uIZoomResetCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIZoomResetCustom;
 
-                 WpfZoomingBehavior uIZoomOutCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIZoomOutCustom;
+    WpfZoomingBehavior uIZoomPanCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIZoomPanCustom;
 
-                 WpfZoomingBehavior uIZoomResetCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIZoomResetCustom;
+    WpfZoomingBehavior uISelectionZoomCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UISelectionZoomCustom;
 
-                 WpfZoomingBehavior uIZoomPanCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIZoomPanCustom;
-
-                 WpfZoomingBehavior uISelectionZoomCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UISelectionZoomCustom;
-
-				 #endregion
-
-			 }
+    #endregion
+}
 
 {% endhighlight %}
 
@@ -164,21 +160,14 @@ Click Generate code icon to generate assertion code then close the builder if va
 {% highlight c# %}
 
 public void AssertMethod1()
-
 {
-
-           #region Variable Declarations
-
-           WpfChartSeries uIColumnSeriesCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIColumnSeriesCustom;
-
-           #endregion
-
-          // Verify that the 'SegmentsCount' property of 'ColumnSeries' custom control equals '10'
-
-          Assert.AreEqual(this.AssertMethod1ExpectedValues.UIColumnSeriesCustomSegmentsCount, uIColumnSeriesCustom.SegmentsCount, "Segemnts Count Mismatched...");
-
+    #region Variable Declarations
+    WpfChartSeries uIColumnSeriesCustom = this.UICUITestSampleDemoWindow.UISfChartCustom.UIColumnSeriesCustom;
+    #endregion
+    
+    // Verify that the 'SegmentsCount' property of 'ColumnSeries' custom control equals '10'
+    Assert.AreEqual(this.AssertMethod1ExpectedValues.UIColumnSeriesCustomSegmentsCount, uIColumnSeriesCustom.SegmentsCount, "Segemnts Count Mismatched...");
 }
-
 {% endhighlight %}
 
 ## Run Tests

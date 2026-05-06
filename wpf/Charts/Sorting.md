@@ -35,13 +35,14 @@ The following example illustrates a simple chart (without apply sorting):
 {% tabs %}
 
 {% highlight xml %}
-<syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
-	
-	                     SortDirection="Ascending"
-
-                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
-                         XBindingPath="Demand"  YBindingPath="Year2011"/>
+<syncfusion:ColumnSeries 
+    IsSortData="True"
+    SortBy="X"
+    SortDirection="Ascending"
+    ItemsSource="{Binding Demands}"
+    Interior="#4A4A4A"
+    XBindingPath="Demand"
+    YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -49,21 +50,13 @@ The following example illustrates a simple chart (without apply sorting):
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.X,
-
     SortDirection = Direction.Ascending,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
@@ -81,13 +74,14 @@ chart.Series.Add(columnSeries);
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries IsSortData="True" SortBy="X"  
-	 
-	                     SortDirection="Descending"
-
-                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
-                         XBindingPath="Demand"  YBindingPath="Year2011"/>
+<syncfusion:ColumnSeries
+    IsSortData="True"
+    SortBy="X"
+    SortDirection="Descending"
+    ItemsSource="{Binding Demands}"
+    Interior="#4A4A4A"
+    XBindingPath="Demand"
+    YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -95,21 +89,13 @@ chart.Series.Add(columnSeries);
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.X,
-
     SortDirection = Direction.Descending,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
@@ -127,13 +113,14 @@ chart.Series.Add(columnSeries);
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
-	                   
-					     SortDirection="Ascending"
-
-                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
-                         XBindingPath="Demand"  YBindingPath="Year2011"/>
+<syncfusion:ColumnSeries
+    IsSortData="True"
+    SortBy="Y"
+    SortDirection="Ascending"
+    ItemsSource="{Binding Demands}"
+    Interior="#4A4A4A"
+    XBindingPath="Demand"
+    YBindingPath="Year2011"/>
 
 
 {% endhighlight %}
@@ -142,21 +129,13 @@ chart.Series.Add(columnSeries);
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.Y,
-
     SortDirection = Direction.Ascending,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
@@ -174,13 +153,14 @@ chart.Series.Add(columnSeries);
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries IsSortData="True" SortBy="Y"  
-	
-	                     SortDirection="Descending"
-
-                         ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
-                         XBindingPath="Demand"  YBindingPath="Year2011"/>
+<syncfusion:ColumnSeries
+    IsSortData="True"
+    SortBy="Y"
+    SortDirection="Descending"
+    ItemsSource="{Binding Demands}"
+    Interior="#4A4A4A"
+    XBindingPath="Demand"
+    YBindingPath="Year2011"/>
 
 
 {% endhighlight %}
@@ -189,21 +169,13 @@ chart.Series.Add(columnSeries);
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.X,
-
     SortDirection = Direction.Descending,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
@@ -233,13 +205,14 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries IsSortData="True" SortBy="X" Palette="AutumnBrights"
-
-                         SortDirection="Ascending"
-
-                         ItemsSource="{Binding Demands}" 
-
-                         XBindingPath="Position"  YBindingPath="Year2011"/>
+<syncfusion:ColumnSeries
+    IsSortData="True"
+    SortBy="X"
+    Palette="AutumnBrights"
+    SortDirection="Ascending"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Position"
+    YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -247,23 +220,14 @@ The following example illustrates a simple chart having AutumnBrights palette (w
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.X,
-
     SortDirection = Direction.Ascending,
-
     Palette = ChartColorPalette.AutumnBrights,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Position",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
@@ -280,15 +244,14 @@ chart.Series.Add(columnSeries);
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries IsSortData="True" SortBy="X" 
-	
-	                     Palette="AutumnBrights"
-
-                         SortDirection="Descending"
-
-                         ItemsSource="{Binding Demands}" 
-
-                         XBindingPath="Position"  YBindingPath="Year2011"/>
+<syncfusion:ColumnSeries
+    IsSortData="True"
+    SortBy="X"
+    Palette="AutumnBrights"
+    SortDirection="Descending"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Position"
+    YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -296,23 +259,14 @@ chart.Series.Add(columnSeries);
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.X,
-
     SortDirection = Direction.Descending,
-
     Palette = ChartColorPalette.AutumnBrights,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Position",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
@@ -328,15 +282,15 @@ chart.Series.Add(columnSeries);
 {% tabs %}
 
 {% highlight xml %}
-<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
-	
-	                     Palette="AutumnBrights"
 
-                         SortDirection="Ascending"
-
-                         ItemsSource="{Binding Demands}" 
-
-                         XBindingPath="Position"  YBindingPath="Year2011"/>
+<syncfusion:ColumnSeries
+    IsSortData="True"
+    SortBy="Y"
+    Palette="AutumnBrights"
+    SortDirection="Ascending"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Position"
+    YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -344,23 +298,14 @@ chart.Series.Add(columnSeries);
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.Y,
-
     SortDirection = Direction.Ascending,
-
     Palette = ChartColorPalette.AutumnBrights,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Position",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);
@@ -376,15 +321,15 @@ chart.Series.Add(columnSeries);
 {% tabs %}
 
 {% highlight xml %}
-<syncfusion:ColumnSeries IsSortData="True" SortBy="Y" 
-	
-	                     Palette="AutumnBrights"
 
-                         SortDirection="Descending"
-
-                         ItemsSource="{Binding Demands}" 
-
-                         XBindingPath="Position"  YBindingPath="Year2011"/>
+<syncfusion:ColumnSeries
+    IsSortData="True"
+    SortBy="Y"
+    Palette="AutumnBrights"
+    SortDirection="Descending"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -392,23 +337,14 @@ chart.Series.Add(columnSeries);
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     IsSortData = true,
-
     SortBy = SortingAxis.Y,
-
     SortDirection = Direction.Descending,
-
     Palette = ChartColorPalette.AutumnBrights,
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Position",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(columnSeries);

@@ -23,33 +23,43 @@ The following code example shows the how to specify connector type:
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries3D  ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-            YBindingPath="Plastic">
-                <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowMarker="True" SymbolHeight="10" SymbolWidth="10" Symbol="Diamond" AdornmentsPosition="TopAndBottom" SymbolInterior="#FF64B5F6"></chart:ChartAdornmentInfo3D>
-                </chart:ColumnSeries3D.AdornmentsInfo>
-        </chart:ColumnSeries3D>
+<chart:ColumnSeries3D  
+    ItemsSource="{Binding CategoricalData}" 
+    XBindingPath="Year"
+    YBindingPath="Plastic">
+    <chart:ColumnSeries3D.AdornmentsInfo>
+        <chart:ChartAdornmentInfo3D 
+            ShowMarker="True" 
+            SymbolHeight="10" 
+            SymbolWidth="10" 
+            Symbol="Diamond" 
+            AdornmentsPosition="TopAndBottom" 
+            SymbolInterior="#FF64B5F6">
+        </chart:ChartAdornmentInfo3D>
+    </chart:ColumnSeries3D.AdornmentsInfo>
+</chart:ColumnSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic",
-            };
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowMarker = true,
-                AdornmentsPosition=AdornmentsPosition.TopAndBottom,
-                SymbolHeight=10,
-                SymbolWidth=10
-            };
+ColumnSeries3D series = new ColumnSeries3D()
+{
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
+    XBindingPath = "Year",
+    YBindingPath = "Plastic",
+};
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    ShowMarker = true,
+    AdornmentsPosition=AdornmentsPosition.TopAndBottom,
+    SymbolHeight=10,
+    SymbolWidth=10
+};
 
-        series.AdornmentsInfo = adornmentInfo;
-        chart.Series.Add(series);
+series.AdornmentsInfo = adornmentInfo;
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -71,21 +81,26 @@ The [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Adornm
 
 {% highlight xaml %}
 
-         <chart:ChartAdornmentInfo3D  UseSeriesPalette="True" LabelPosition="Auto"
-            ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
+<chart:ChartAdornmentInfo3D  
+    UseSeriesPalette="True" 
+    LabelPosition="Auto"
+    ShowLabel="True" 
+    BorderBrush="White" BorderThickness="1">
+</chart:ChartAdornmentInfo3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowMarker = true,
-                BorderBrush = new SolidColorBrush(Colors.White),
-                LabelPosition=AdornmentsLabelPosition.Auto,
-                UseSeriesPalette=true,              
-                BorderThickness = new Thickness(1),
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    ShowMarker = true,
+    BorderBrush = new SolidColorBrush(Colors.White),
+    LabelPosition=AdornmentsLabelPosition.Auto,
+    UseSeriesPalette=true,
+    BorderThickness = new Thickness(1),
+};
 
 {% endhighlight %}
 
@@ -103,21 +118,26 @@ The [`Inner`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Adorn
 
 {% highlight xaml %}
 
-         <chart:ChartAdornmentInfo3D  UseSeriesPalette="True" LabelPosition="Inner"
-            ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
+<chart:ChartAdornmentInfo3D  
+    UseSeriesPalette="True" 
+    LabelPosition="Inner"
+    ShowLabel="True" 
+    BorderBrush="White" BorderThickness="1">
+</chart:ChartAdornmentInfo3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowMarker = true,
-                BorderBrush = new SolidColorBrush(Colors.White),
-                LabelPosition=AdornmentsLabelPosition.Inner,
-                UseSeriesPalette=true,              
-                BorderThickness = new Thickness(1),
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    ShowMarker = true,
+    BorderBrush = new SolidColorBrush(Colors.White),
+    LabelPosition=AdornmentsLabelPosition.Inner,
+    UseSeriesPalette=true,              
+    BorderThickness = new Thickness(1),
+};
 
 {% endhighlight %}
 
@@ -135,21 +155,26 @@ The [`Outer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Adorn
 
 {% highlight xaml %}
 
-         <chart:ChartAdornmentInfo3D  UseSeriesPalette="True" LabelPosition="Outer"
-            ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
+<chart:ChartAdornmentInfo3D  
+    UseSeriesPalette="True" 
+    LabelPosition="Outer"
+    ShowLabel="True" 
+    BorderBrush="White" BorderThickness="1">
+</chart:ChartAdornmentInfo3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowMarker = true,
-                BorderBrush = new SolidColorBrush(Colors.White),
-                LabelPosition=AdornmentsLabelPosition.Outer,
-                UseSeriesPalette=true,              
-                BorderThickness = new Thickness(1),
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    ShowMarker = true,
+    BorderBrush = new SolidColorBrush(Colors.White),
+    LabelPosition=AdornmentsLabelPosition.Outer,
+    UseSeriesPalette=true,              
+    BorderThickness = new Thickness(1),
+};
 
 {% endhighlight %}
 
@@ -167,21 +192,26 @@ The [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Ador
 
 {% highlight xaml %}
 
-         <chart:ChartAdornmentInfo3D  UseSeriesPalette="True" LabelPosition="Center"
-            ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
+<chart:ChartAdornmentInfo3D  
+    UseSeriesPalette="True" 
+    LabelPosition="Center"
+    ShowLabel="True" 
+    BorderBrush="White" BorderThickness="1">
+</chart:ChartAdornmentInfo3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowMarker = true,
-                BorderBrush = new SolidColorBrush(Colors.White),
-                LabelPosition=AdornmentsLabelPosition.Center,
-                UseSeriesPalette=true,              
-                BorderThickness = new Thickness(1),
-            };
+ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+{
+    ShowLabel = true,
+    ShowMarker = true,
+    BorderBrush = new SolidColorBrush(Colors.White),
+    LabelPosition=AdornmentsLabelPosition.Center,
+    UseSeriesPalette=true,              
+    BorderThickness = new Thickness(1),
+};
 
 {% endhighlight %}
 

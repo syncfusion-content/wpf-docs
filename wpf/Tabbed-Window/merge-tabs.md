@@ -1,34 +1,34 @@
 ---
 layout: post
 title: Merge Tabs Between Windows in WPF Tabbed Window | Syncfusion
-description: Move tabs between multiple tabbed windows and manage merge operations with validation to ensure correct behavior.
+description: Learn how to detach tabs into floating windows and validate tab movement between tabbed windows by using tear-off support and the PreviewTabMerge event.
 platform: wpf
 control: TabbedWindow
 documentation: ug
 ---
 
-# WPF Tabbed Window - Merge Tabs Between Windows
+# Merge Tabs Between Windows in WPF Tabbed Window
 
-## Overview
+This section explains how to move tabs between WPF Tabbed Window instances. It covers supported tear‑off functionality and tab merge validation using built‑in drag‑and‑drop capabilities.
 
-The Tabbed Window supports merging tabs between multiple windows through drag-and-drop operations. This enables users to reorganize content across multiple windows and create flexible workspace configurations.
+These features allow users to detach tabs into floating windows and merge them back into the same or another tabbed window.
 
-## Tear-Off Windows
+## Tear‑Off Windows
 
-The Tabbed Window supports tear-off functionality that allows users to detach tabs and create independent floating windows. These floating windows operate as separate TabbedWindow instances and can be reattached to the main window later.
+The Tabbed Window supports tear‑off functionality, allowing tabs to be detached from an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) and displayed in independent floating windows. These floating windows can later be merged back into another tabbed window.
 
-### Creating Floating Windows
+### Enabling Tear‑Off Support
 
-To tear off a tab and create a floating window:
+You can enable tear‑off support by setting the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_AllowDragDrop) property of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) to True.
 
-1. Drag a tab outside the boundary of the tab control
-2. A new floating window is automatically created
-3. The tab is now contained in the new floating window
-4. The floating window can be a new tabbed window
+When drag‑and‑drop is enabled:
 
-### Enable Tear-Off
+- A tab can be dragged outside the tab control boundary to create a floating window
+- The dragged tab is automatically moved into the new window
+- The floating window behaves like a regular tabbed window
+- If all tabs are removed from a floating window, the window closes automatically
 
-Ensure `AllowDragDrop` is enabled, which is the prerequisite for tear-off functionality:
+The floating window supports resizing, minimizing, and all standard tab features.
 
 {% tabs %}
 
@@ -45,34 +45,21 @@ Ensure `AllowDragDrop` is enabled, which is the prerequisite for tear-off functi
     </syncfusion:SfTabControl>
 </syncfusion:SfChromeslessWindow>
 
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WPF TabbedWindow Tear-Off](merge-tabs_images/tear-off-tabbedwindow.gif)
 
-### Reattaching Floating Tabs
+## Controlling Tab Movement with PreviewTabMerge event
 
-To reattach a tab from a floating window back to the main window:
+You can control and validate tab movement between tabbed windows using the [PreviewTabMerge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_PreviewTabMerge) event of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
 
-1. Drag the tab from the floating window
-2. Drop it inside the main window's tab area
-3. The tab is automatically integrated back into the main window
-4. The floating window is closed if it becomes empty
+This event is raised before a tab is merged into the target tab control and allows you to:
 
-### Floating Window Behavior
-
-Each floating window created by tearing off a tab:
-- Is a fully functional TabbedWindow instance
-- Inherits SfChromelessWindow properties
-- Can be resized, moved, and minimized
-- Supports the same tab features as the main window (drag-drop, new tabs, close buttons)
-- Can have additional tabs dragged into it
-
-## Control Tab Movement with PreviewTabMerge
-
-The `PreviewTabMerge` event fires before a tab is moved between windows, allowing you to validate or cancel the merge operation:
+- Cancel the merge operation
+- Validate business rules before allowing a merge
+- Modify or replace the item being merged
 
 {% tabs %}
 
@@ -94,7 +81,7 @@ private void OnPreviewTabMerge(object sender, TabMergePreviewEventArgs e)
     var draggedItem = e.DraggedItem;
     var sourceControl = e.SourceControl;
     var targetControl = e.TargetControl;
-    
+
     // Validate the merge
     if (draggedItem is Document doc && doc.IsLocked)
     {
@@ -103,18 +90,18 @@ private void OnPreviewTabMerge(object sender, TabMergePreviewEventArgs e)
         MessageBox.Show("Cannot move locked documents");
         return;
     }
-    
+
     // Optional: Transform the item before merge
     if (draggedItem is Document docItem)
     {
-        e.ResultingItem = new Document 
-        { 
+        e.ResultingItem = new Document
+        {
             Title = docItem.Title,
             Content = docItem.Content,
             CreatedAt = DateTime.Now
         };
     }
-    
+
     // Allow the merge
     e.Allow = true;
 }
@@ -123,16 +110,14 @@ private void OnPreviewTabMerge(object sender, TabMergePreviewEventArgs e)
 
 {% endtabs %}
 
-![WPF TabbedWindow Merging](merge-tabs_images/tabbedwindow-merging.gif)
+![WPF TabbedWindow Preview Merging](merge-tabs_images/tabbedwindow-merging.gif)
 
 ## PreviewTabMergeEventArgs Properties
 
-| Property | Type | Description |
-|----------|------|-------------|
-| `DraggedItem` | object | The item being dragged |
-| `SourceControl` | SfTabControl | The control where drag originated |
-| `TargetControl` | SfTabControl | The control receiving the item |
-| `Allow` | bool | Set to false to cancel merge (default: true) |
-| `ResultingItem` | object | The item to be inserted (default: DraggedItem) |
-
-
+| Property        |Description                                                       |
+|-----------------|------------------------------------------------------------------|
+| DraggedItem     | Gets the item being dragged from the source tab control             |
+| SourceControl   | Gets the `SfTabControl` where the drag operation originated          |
+| TargetControl   | Gets the `SfTabControl` that receives the dragged item              |
+| Allow           | Specifies whether the merge operation is allowed                    |
+| ResultingItem   | Specifies the item inserted into the target control                 |

@@ -21,7 +21,6 @@ N> Stopped to provide support for the DirectX series. Instead of that, use FastL
 You can hold and resume the series updates in dynamic update scenarios using the below methods.
 
 [`SuspendSeriesNotification`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SuspendSeriesNotification)
-
 [`ResumeSeriesNotification`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ResumeSeriesNotification)
 
 
@@ -29,6 +28,6 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`How to create a real time Chart using MVVM in WPF`](https://support.syncfusion.com/kb/article/10039/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
+[`How to create a real time Chart using MVVM in WPF?`](https://support.syncfusion.com/kb/article/10039/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
 
 

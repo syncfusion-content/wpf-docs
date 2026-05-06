@@ -17,18 +17,18 @@ ToolTip allows you to display any information over a sunburst segment. It appear
 
 {% highlight xaml %}
 
-      <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstToolTipBehavior ShowToolTip="True"/>
-
-            </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstToolTipBehavior ShowToolTip="True"/>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
+
 tooltip.ShowToolTip = true;
+
 chart.Behaviors.Add(tooltip);
 
 {% endhighlight %}
@@ -51,18 +51,18 @@ The following code shows, how to position the tooltip to right of the cursor.
 
 {% highlight xaml %}
 
-      <sunburst:SfSunburstChart.Behaviors>
-
-         <sunburst:SunburstToolTipBehavior HorizontalAlignment="Right"/>
-
-    </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstToolTipBehavior HorizontalAlignment="Right"/>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
+
 tooltip.HorizontalAlignment = HorizontalAlignment.Right;
+
 sunburstChart.Behaviors.Add(tooltip);
 
 {% endhighlight %}
@@ -78,11 +78,9 @@ The following code shows, how to position the tooltip to bottom of the cursor.
 
 {% highlight xaml %}
 
-    <sunburst:SfSunburstChart.Behaviors>
-
-     <sunburst:SunburstToolTipBehavior VerticalAlignment="Bottom"  />
-
-    </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstToolTipBehavior VerticalAlignment="Bottom"/>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -97,20 +95,19 @@ The tooltip position can be customized to a custom position from the cursor usin
 
 {% highlight xaml %}
 
-         <sunburst:SfSunburstChart.Behaviors>
-
-       <sunburst:SunburstToolTipBehavior HorizontalOffset="50"
-                                         VerticalOffset="50"/>
-
-        </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstToolTipBehavior HorizontalOffset="50" VerticalOffset="50"/>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
+
 tooltip.HorizontalOffset = 50;
 tooltip.VerticalOffset = 50;
+
 sunburstChart.Behaviors.Add(tooltip);
 
 {% endhighlight %}
@@ -129,18 +126,18 @@ You can set display duration for tooltip by using the [`ShowDuration`](https://h
 
 {% highlight xaml %}
 
-         <sunburst:SfSunburstChart.Behaviors>
-
-            <sunburst:SunburstToolTipBehavior ShowDuration="6000"/>
-
-          </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstToolTipBehavior ShowDuration="6000"/>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
+
 tooltip.ShowDuration = 6000;
+
 chart.Behaviors.Add(tooltip);
 
 {% endhighlight %}
@@ -155,18 +152,18 @@ We can set the initial display delay for Tooltip by using [`InitialShowDelay`](h
 
 {% highlight xaml %}
 
-           <sunburst:SfSunburstChart.Behaviors>
-
-            <sunburst:SunburstToolTipBehavior InitialShowDelay="500"/>
-                
-    </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstToolTipBehavior InitialShowDelay="500"/>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
+
 tooltip.InitialShowDelay = 500;
+
 sunburstChart.Behaviors.Add(tooltip);
 
 {% endhighlight %}
@@ -181,20 +178,19 @@ You can enable the translate animation for Tooltip by using [`EnableAnimation`](
 
 {% highlight xaml %}
 
-    <sunburst:SfSunburstChart.Behaviors>
-
-     <sunburst:SunburstToolTipBehavior EnableAnimation="True" 
-                                       AnimationDuration="5000"/>
-
-    </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SunburstToolTipBehavior EnableAnimation="True" AnimationDuration="5000"/>
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
+
 tooltip.EnableAnimation = true;
 tooltip.AnimationDuration = 5000;
+
 sunburstChart.Behaviors.Add(tooltip);
 
 {% endhighlight %}
@@ -207,28 +203,25 @@ You can customize the default appearance of the tooltip by applying the [`Toolti
 
 {% highlight xaml %}
 
-    <sunburst:SunburstToolTipBehavior.ToolTipTemplate>
-                        
-        <DataTemplate>
-                            
-               <Border Background="{Binding Interior}"
-                       BorderBrush="{Binding Interior}"
-                       BorderThickness="4">
-                       <StackPanel>
-                           <StackPanel Orientation="Horizontal">
-                               <TextBlock Text="Category : "/>
-                               <TextBlock Text="{Binding Category}"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Value : "/>
-                                <TextBlock Text="{Binding Value}"/>
-                            </StackPanel>
-                        </StackPanel>
-               </Border>
-                            
-       </DataTemplate>
-                        
-    </sunburst:SunburstToolTipBehavior.ToolTipTemplate>
+<sunburst:SunburstToolTipBehavior.ToolTipTemplate>
+    <DataTemplate>
+        <Border 
+            Background="{Binding Interior}"
+            BorderBrush="{Binding Interior}"
+            BorderThickness="4">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Category : "/>
+                    <TextBlock Text="{Binding Category}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Value : "/>
+                    <TextBlock Text="{Binding Value}"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </DataTemplate>
+</sunburst:SunburstToolTipBehavior.ToolTipTemplate>
 
 {% endhighlight %}
 

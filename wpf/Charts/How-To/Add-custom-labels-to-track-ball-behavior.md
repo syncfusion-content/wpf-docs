@@ -43,7 +43,7 @@ public class CustomTrackBallBehavior : ChartTrackBallBehavior
         Rect rect = this.ChartArea.SecondaryAxis.ArrangeRect;
 
         //Custom label.
-        AddLabel(label, LabelVerticalAlignment, LabelHorizontalAlignment, CustomLabelTemplate, pointInfo1.X, rect.Top);
+        AddLabel(label, LabelVerticalAlignment,LabelHorizontalAlignment, CustomLabelTemplate, pointInfo1.X, rect.Top);
     }
 }
 

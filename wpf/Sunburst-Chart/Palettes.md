@@ -36,32 +36,47 @@ Each palette applies a set of predefined brushes to the sunburst chart in a pred
 
 {% highlight xaml %}
 
-        <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount" 
-                                 Palette="SandyBeach" >
-
-            <sunburst:SfSunburstChart.Levels>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-            </sunburst:SfSunburstChart.Levels>
-
-        </sunburst:SfSunburstChart>
+<sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount" Palette="SandyBeach">
+    <sunburst:SfSunburstChart.Levels>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+    </sunburst:SfSunburstChart.Levels>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfSunburstChart sunburst = new SfSunburstChart();
-            sunburst.ValueMemberPath = "EmployeesCount";
-            sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+SfSunburstChart sunburst = new SfSunburstChart();
 
-            sunburst.Palette = SunburstColorPalette.SandyBeach;           
-            grid.Children.Add(sunburst);
+sunburst.ValueMemberPath = "EmployeesCount";
+sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
+
+sunburst.Levels.Add(new SunburstHierarchicalLevel()
+{
+    GroupMemberPath = "Country"
+});
+
+sunburst.Levels.Add(new SunburstHierarchicalLevel()
+{
+    GroupMemberPath = "JobDescription"
+});
+
+sunburst.Levels.Add(new SunburstHierarchicalLevel()
+{
+    GroupMemberPath = "JobGroup"
+});
+
+sunburst.Levels.Add(new SunburstHierarchicalLevel()
+{
+    GroupMemberPath = "JobRole"
+});
+
+sunburst.Palette = SunburstColorPalette.SandyBeach;
+
+grid.Children.Add(sunburst);
 
 {% endhighlight %}
 
@@ -78,84 +93,93 @@ Sunburst chart provides option which enables you to define your own color brushe
 
 {% highlight xaml %}
 
-     <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount" 
-                               Palette="Custom"   >
+<sunburst:SfSunburstChart
+    ItemsSource="{Binding Data}"
+    ValueMemberPath="EmployeesCount"
+    Palette="Custom">
+    <sunburst:SfSunburstChart.Levels>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+    </sunburst:SfSunburstChart.Levels>
 
-            <sunburst:SfSunburstChart.Levels>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-            </sunburst:SfSunburstChart.Levels>
+    <sunburst:SfSunburstChart.ColorModel>
+        <sunburst:SunburstColorModel>
+            <sunburst:SunburstColorModel.CustomBrushes>
 
-      <sunburst:SfSunburstChart.ColorModel>
-                <sunburst:SunburstColorModel>                    
-                    <sunburst:SunburstColorModel.CustomBrushes>
-                        
-                        <LinearGradientBrush>
-                            <GradientStop Color="DeepPink" Offset="0"/>
-                            <GradientStop Color="Gray" Offset="1"/>
-                        </LinearGradientBrush>
-                        
-                        <LinearGradientBrush>
-                            <GradientStop Color="Green" Offset="0"/>
-                            <GradientStop Color="Yellow" Offset="1"/>
-                        </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Color="DeepPink" Offset="0"/>
+                    <GradientStop Color="Gray" Offset="1"/>
+                </LinearGradientBrush>
 
-                        <LinearGradientBrush>
-                            <GradientStop Color="Orange" Offset="0"/>
-                            <GradientStop Color="Brown" Offset="1"/>
-                        </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Color="Green" Offset="0"/>
+                    <GradientStop Color="Yellow" Offset="1"/>
+                </LinearGradientBrush>
 
-                        <LinearGradientBrush>
-                            <GradientStop Color="DarkViolet" Offset="0"/>
-                            <GradientStop Color="White" Offset="1"/>
-                        </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Color="Orange" Offset="0"/>
+                    <GradientStop Color="Brown" Offset="1"/>
+                </LinearGradientBrush>
 
-                    </sunburst:SunburstColorModel.CustomBrushes>
-                    
-                </sunburst:SunburstColorModel>                
-            </sunburst:SfSunburstChart.ColorModel>
-        </sunburst:SfSunburstChart>
+                <LinearGradientBrush>
+                    <GradientStop Color="DarkViolet" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+
+            </sunburst:SunburstColorModel.CustomBrushes>
+        </sunburst:SunburstColorModel>
+    </sunburst:SfSunburstChart.ColorModel>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfSunburstChart sunburst = new SfSunburstChart();
-            sunburst.ValueMemberPath = "EmployeesCount";
-            sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+SfSunburstChart sunburst = new SfSunburstChart();
 
-            sunburst.Palette = SunburstColorPalette.Custom;
+sunburst.ValueMemberPath = "EmployeesCount";
 
-            SunburstColorModel colorModel = new SunburstColorModel();
-            LinearGradientBrush brush1 = new LinearGradientBrush();
-            brush1.GradientStops.Add(new GradientStop() { Color = Colors.DeepPink, Offset = 0 });
-            brush1.GradientStops.Add(new GradientStop() { Color = Colors.Gray, Offset = 1 });
+sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
 
-            LinearGradientBrush brush2 = new LinearGradientBrush();
-            brush2.GradientStops.Add(new GradientStop() { Color = Colors.Green, Offset = 0 });
-            brush2.GradientStops.Add(new GradientStop() { Color = Colors.Yellow, Offset = 1 });
+sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
 
-            LinearGradientBrush brush3 = new LinearGradientBrush();
-            brush3.GradientStops.Add(new GradientStop() { Color = Colors.Orange, Offset = 0 });
-            brush3.GradientStops.Add(new GradientStop() { Color = Colors.Brown, Offset = 1 });
+sunburst.Palette = SunburstColorPalette.Custom;
 
-            LinearGradientBrush brush4 = new LinearGradientBrush();
-            brush4.GradientStops.Add(new GradientStop() { Color = Colors.DarkViolet, Offset = 0 });
-            brush4.GradientStops.Add(new GradientStop() { Color = Colors.White, Offset = 1 });
+SunburstColorModel colorModel = new SunburstColorModel();
 
-            colorModel.CustomBrushes.Add(brush1);
-            colorModel.CustomBrushes.Add(brush2);
-            colorModel.CustomBrushes.Add(brush3);
-            colorModel.CustomBrushes.Add(brush4);
+LinearGradientBrush brush1 = new LinearGradientBrush();
 
-            sunburst.ColorModel = colorModel;
-            grid.Children.Add(sunburst);
+brush1.GradientStops.Add(new GradientStop() { Color = Colors.DeepPink, Offset = 0 });
+brush1.GradientStops.Add(new GradientStop() { Color = Colors.Gray, Offset = 1 });
+
+LinearGradientBrush brush2 = new LinearGradientBrush();
+
+brush2.GradientStops.Add(new GradientStop() { Color = Colors.Green, Offset = 0 });
+brush2.GradientStops.Add(new GradientStop() { Color = Colors.Yellow, Offset = 1 });
+
+LinearGradientBrush brush3 = new LinearGradientBrush();
+
+brush3.GradientStops.Add(new GradientStop() { Color = Colors.Orange, Offset = 0 });
+brush3.GradientStops.Add(new GradientStop() { Color = Colors.Brown, Offset = 1 });
+
+LinearGradientBrush brush4 = new LinearGradientBrush();
+
+brush4.GradientStops.Add(new GradientStop() { Color = Colors.DarkViolet, Offset = 0 });
+brush4.GradientStops.Add(new GradientStop() { Color = Colors.White, Offset = 1 });
+
+colorModel.CustomBrushes.Add(brush1);
+colorModel.CustomBrushes.Add(brush2);
+colorModel.CustomBrushes.Add(brush3);
+colorModel.CustomBrushes.Add(brush4);
+
+sunburst.ColorModel = colorModel;
+
+grid.Children.Add(sunburst);
           
 {% endhighlight %}
 

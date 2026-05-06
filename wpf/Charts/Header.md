@@ -22,7 +22,6 @@ documentation: ug
 {% highlight c# %}
 
 SfChart chart = new SfChart();
-
 chart.Header = "Usage of Metals";
 
 {% endhighlight %}
@@ -43,7 +42,6 @@ Also you can add more customization for the header as below:
 <chart:SfChart.Header>
 
 <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
-
 <TextBlock FontSize="14" Text="Chart Area Header" Margin="5">
 
 <TextBlock.Effect>
@@ -68,39 +66,26 @@ SfChart chart = new SfChart();
 
 Border border = new Border()
 {
-
-BorderThickness = new Thickness(0.5),
-
-BorderBrush = new SolidColorBrush(Colors.Black),
-
-Margin = new Thickness(10),
-
-CornerRadius = new CornerRadius(5)
-
+    BorderThickness = new Thickness(0.5),
+    BorderBrush = new SolidColorBrush(Colors.Black),
+    Margin = new Thickness(10),
+    CornerRadius = new CornerRadius(5)
 };
 
 TextBlock textBlock = new TextBlock()
-{
-
-Text = "Chart Area Header",
-
-Margin = new Thickness(5),
-
-FontSize = 14
-
+{                
+    Text = "Chart Area Header",
+    Margin = new Thickness(5),
+    FontSize = 14
 };
 
 textBlock.Effect = new DropShadowEffect()
 {
-
-Color = Colors.Black,
-
-Opacity = 0.5
-
+    Color = Colors.Black,
+    Opacity = 0.5
 };
 
 border.Child = textBlock;
-
 chart.Header = border;
 
 {% endhighlight %}
