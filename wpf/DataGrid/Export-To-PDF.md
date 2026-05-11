@@ -289,7 +289,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/open-and-save-pdf-file-in-c-sharp-vb-net#saving-a-pdf-document-to-file-system). 
+You can refer [PDF documentation](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/open-and-save-pdf-file-in-c-sharp-vb-net#saving-a-pdf-document-to-file-system). 
 
 ### Save as stream
 
@@ -304,7 +304,7 @@ fileStream.Close();
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/open-and-save-pdf-file-in-c-sharp-vb-net#saving-a-pdf-document-to-stream). 
+You can refer [PDF documentation](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/open-and-save-pdf-file-in-c-sharp-vb-net#saving-a-pdf-document-to-stream). 
 
 ### Save using File dialog
 
@@ -340,7 +340,7 @@ if (sfd.ShowDialog() == true)
 
 ## Opening exported PDF without saving
 
-You can view exported PDF document without saving by using [PDFViewerControl](https://help.syncfusion.com/wpf/pdf-viewer/overview).
+You can view exported PDF document without saving by using [PDFViewerControl](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/wpf/overview).
 
 {% tabs %}
 {% highlight c# %}
