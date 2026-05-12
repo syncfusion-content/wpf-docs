@@ -171,7 +171,7 @@ Scheduler supports to resize the appointment using the option `Resize`option fro
 #### AppointmentStartResizing event
 Scheduler notifies by [AppointmentStartResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event when user start to resize the appointment.
 
-[AppointmentStartResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs.html) has following members which provides information for `AppointmentStartResizing` event.
+[AppointmentStartResizingEventArgs](https://help.syncfusion.com/wpf/schedule/appointment-editing#appointmentstartresizing-event) has following members which provides information for `AppointmentStartResizing` event.
 
 [Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentStartResizingEventArgs_Appointment) - Get the appointment details that is start to resize.
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - Setting value to true, cancels the triggered action.
@@ -244,7 +244,7 @@ Scheduler supports to reschedule the appointment by performing the drag and drop
 Scheduler notifies by [DragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when start to drag the appointment.
 [DragStartingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.DragStartingEventArgs.html) has following members which provides information for `DragStarting` event.
 
-[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.DragStartingEventArgs.html#Syncfusion_UI_Xaml_Schedule_DragStartingEventArgs_Appointment) - Get the selected appointment.
+[Appointment](https://help.syncfusion.com/wpf/schedule/appointment-editing#appointmentstartdragging-event) - Get the selected appointment.
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - Setting the value as `true` to prevent the drag and drop operation.
 
 {% tabs %}
@@ -259,7 +259,7 @@ private void Schedule_DragStarting(object sender, DragStartingEventArgs e)
 
 #### AppointmentDragging event
 Scheduler notifies by [AppointmentDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when drag the appointment.
-[AppointmentDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html) has following members which provides information for `AppointmentDragging` event.
+[AppointmentDraggingEventArgs](https://help.syncfusion.com/wpf/schedule/appointment-editing#appointmentdragging-event) has following members which provides information for `AppointmentDragging` event.
 
 [Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentDraggingEventArgs_Appointment) - Gets the selected appointment.
 [From](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentDraggingEventArgs_From) - Gets the selected appointment start time.
