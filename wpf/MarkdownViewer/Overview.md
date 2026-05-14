@@ -11,8 +11,6 @@ documentation: ug
 
 The [WPF Markdown Viewer](https://www.syncfusion.com/wpf-controls) is a UI control that converts Markdown input into a fully formatted visual representation without requiring external rendering engines or manual formatting. It provides a flexible way to display rich Markdown content within WPF applications, making it ideal for presenting documentation, release notes, help content, and other Markdown‑based information.
 
-![Syncfusion WPF Markdown Viewer](Images/wpf-markdown-viewer-img-overview.png)
-
 ## Key Features
 
 * **Markdown rendering** – Converts Markdown syntax such as headings, lists, links, images, tables, code blocks, block quotes, and more into styled, readable content.
