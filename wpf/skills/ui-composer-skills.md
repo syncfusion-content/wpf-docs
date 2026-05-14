@@ -20,8 +20,8 @@ By combining intelligent code generation with best practices, accessibility stan
 Before installing WPF UI Composer, ensure the following:
 
 - Install [APM (Agent Package Manager)](https://microsoft.github.io/apm/getting-started/installation/#quick-install-recommended)
-- Required [.NET SDK](https://dotnet.microsoft.com/download) version ≥ 6
-- WPF application (existing or new); see [Quick Start](https://help.syncfusion.com/wpf/getting-started)
+- Required [.NET SDK](https://dotnet.microsoft.com/en-us/download) version ≥ 6
+- WPF application (existing or new); see [Overview](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
 - A supported AI agent or IDE that integrates with the Skills (VS Code, Cursor, Syncfusion® Code Studio, etc.)
 - Active Syncfusion<sup style="font-size:70%">&reg;</sup> license(any of the following):  
   - [Commercial](https://www.syncfusion.com/sales/unlimitedlicense)  
