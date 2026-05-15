@@ -98,9 +98,9 @@ After installation, the following artifacts are added to your project for the Gi
 - `.agent/skills/` – contains the skill files
 - `.github/agents/` – contains the agent configuration
 
-For details on supported deployment targets, refer to the [documentation](https://microsoft.github.io/apm/reference/cli-commands/#apm-targets---show-resolved-deployment-targets).
+Refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targets/#detection-signals) for details about supported deployment targets.
 
-> For Syncfusion® Code Studio, users must explicitly configure the agent location to use it in the chat. Refer to the [documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/usersettings#agent-file-locations).
+> For Syncfusion® Code Studio, use the Copilot command above to install the WPF UI Composer.
 
 ## How the Syncfusion® WPF UI Composer Skill Works
 
@@ -135,7 +135,7 @@ After installing WPF UI Composer with APM, the relevant agent and skill files ar
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the `syncfusion-wpf-ui-composer` agent from the **Agent dropdown**.
+2. In the chat panel, select the `wpf-ui-composer` agent from the **Agent dropdown**.
 
 3. Start prompting the agent with a clear description of your UI requirements.
 
