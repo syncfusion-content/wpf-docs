@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion® WPF UI Composer Skill for AI Assistants | Syncfusion®
-description: Install Syncfusion® WPF UI Composer to generate production-ready WPF components from natural-language prompts.
+description: Install Syncfusion® WPF UI Composer to generate production-ready WPF controls from natural-language prompts.
 control: Skills
 platform: wpf
 documentation: ug
@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Syncfusion® WPF UI Composer Skill for AI Assistants
 
-**Syncfusion® WPF UI Composer** is an AI-powered skill and companion agent that accelerates WPF application development by transforming natural-language UI requirements into production-ready components using Syncfusion® WPF libraries. 
+**Syncfusion® WPF UI Composer** is an AI-powered skill and companion agent that accelerates WPF application development by transforming natural-language UI requirements into production-ready controls using Syncfusion® WPF libraries. 
 
-Integrated with your AI-powered IDE, it leverages deep knowledge of **Syncfusion® components** to deliver accurate and ready-to-use code.
+Integrated with your AI-powered IDE, it leverages deep knowledge of **Syncfusion® controls** to deliver accurate and ready-to-use code.
 By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, WPF UI Composer helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
 
 ## Prerequisites
@@ -32,27 +32,27 @@ Before installing WPF UI Composer, ensure the following:
 
 ### **AI-Driven UI Generation**
 - Converts prompts into complete WPF components—not just snippets
-- Automatically selects appropriate Syncfusion® components and features
+- Automatically selects appropriate Syncfusion® controls and features
 - Produces structured, maintainable code
 
-### **Component Usage & API Accuracy**
-- Uses correct Syncfusion® component APIs
+### **Control Usage & API Accuracy**
+- Uses correct Syncfusion® control APIs
 - Injects required feature modules (paging, sorting, filtering, etc.)
 - Avoids unsupported or deprecated patterns
 
 ### **Patterns & Best Practices**
-- Recommended component composition and state management
+- Recommended control composition and state management
 - Event handling aligned with WPF standards
 - Secure and scalable coding patterns
 
 ### **Accessibility & Responsiveness**
-- WCAG 2.1 AA–aligned output
-- Semantic markup with accessibility support
-- Responsive layouts for desktop applications
+- Windows accessibility guidelines (UIA) and narrator support
+- Well-structured XAML markup with proper control hierarchy
+- DPI awareness and high-resolution display support
 
 ### **Design-System Integration**
-- Supports built-in Syncfusion® WPF themes
-- Ensures consistent Syncfusion® styling and theme usage
+- Supports Syncfusion® WPF themes including FluentLight/Dark, Material3Light/Dark, Windows11Light/Dark, and Office2019 variants
+- Ensures consistent Syncfusion® styling, theme usage, and ResourceDictionary configuration
 
 ## Installation
 
@@ -73,27 +73,22 @@ Use the APM CLI to install the WPF UI Composer skill for your preferred environm
 {% tabs %}
 {% highlight bash tabtitle="Copilot" %}
 
-// By default, it installs to the GitHub Copilot target
-
-apm install Syncfusion/wpf-ui-composer
+apm install syncfusion/wpf-ui-composer -t copilot
 
 {% endhighlight %}
 {% highlight bash tabtitle="Cursor" %}
 
-apm install Syncfusion/wpf-ui-composer -t cursor
+apm install syncfusion/wpf-ui-composer -t cursor
 
 {% endhighlight %}
 {% highlight bash tabtitle="Code Studio" %}
 
-// For Code Studio, refer to the note below to configure the agent location explicitly to use it in the chat.
-
-apm install Syncfusion/wpf-ui-composer
-
+apm install syncfusion/wpf-ui-composer -t copilot
 
 {% endhighlight %}
 {% highlight bash tabtitle="Claude" %}
 
-apm install Syncfusion/wpf-ui-composer -t claude
+apm install syncfusion/wpf-ui-composer -t claude
 
 {% endhighlight %}
 {% endtabs %}
@@ -109,24 +104,24 @@ For details on supported deployment targets, refer to the [documentation](https:
 
 ## How the Syncfusion® WPF UI Composer Skill Works
 
-1. **Intent Analysis** — Parse the user's prompt to identify component types and high-level layout intent.
+1. **Intent Analysis** — Parse the user's prompt to identify control types and high-level layout intent.
 2. **Project Detection** — Automatically detects project framework and existing themes.
-3. **Component Mapping** — Map intent to Syncfusion® components and required feature modules.
+3. **Control Mapping** — Map intent to Syncfusion® controls and required feature modules.
 4. **Theming & Design System**  
    Load required theming guidelines and confirm key design choices:
-   - Syncfusion theme (Fluent, Material3, etc.)
+   - Syncfusion® WPF theme (FluentLight, FluentDark, Material3Light, Material3Dark, Windows11Light, Windows11Dark, Office2019 variants)
    - Core design basics (colors, spacing, typography, accessibility)
-5. **Code Generation** — Produce WPF XAML components, data bindings, and styling.
+5. **Code Generation** — Produce WPF XAML controls, data bindings, and styling.
 6. **Dependency Management** — Recommend or install required Syncfusion® packages and peer dependencies.
 7. **Validation** — Run accessibility and basic security checks, request confirmation for changes.
 8. **Code Insertion** — Create files or patch existing files following project structure and conventions.
 
 Key enforcement points:
 
-- Adds correct theme and styles for chosen Syncfusion® themes
-- Injects only the feature modules required by generated components
-- Generates semantic markup with accessibility support
-- Avoids unsupported or deprecated API usages for Syncfusion® components
+- Adds correct theme resources and ResourceDictionary configuration for chosen Syncfusion® themes
+- Injects only the feature modules required by generated controls
+- Generates well-structured XAML with proper accessibility support (UIA and narrator)
+- Avoids unsupported or deprecated API usages for Syncfusion® controls
 
 > The assistant handles most stages automatically and may request confirmation where required.
 
@@ -148,14 +143,25 @@ Examples Prompts:
 
 {% promptcards %}
 {% promptcard Authentication %}
-Create a login page with the Tailwind 3 theme using a centered card layout containing email and password input fields with validation. Include a "Remember Me" checkbox, a forgot password link, and a primary login button. Add a secondary "Create Account" button below. Ensure the layout is responsive and works on mobile, tablet, and desktop.
+Create a login window with the FluentLight theme using a centered StackPanel containing TextBox controls for email and password with validation. Include a CheckBox for "Remember Me", a Hyperlink for "Forgot Password?", and a primary Button for login. Add a secondary Button for "Create Account" below. Use proper XAML binding and command patterns.
 {% endpromptcard %}
 {% promptcard Admin Dashboard %}
-Create a CMS Admin Dashboard UI featuring a collapsible sidebar with navigation items for Dashboard, Content, Users, Analytics, and Settings; a top header (AppBar) showing the title “CMS Admin Dashboard” on the left and a user name with profile icon on the right; and a main content area that includes three compact summary cards in a single row displaying Total Content, Total Users, and Active Sessions (each card showing a label, relevant icon, prominent count value, and percentage change from last month), followed by a “Content Management” section with a filterable and data grid containing columns for Title, Author, Status, Date, and Actions (with edit and delete buttons), and finally two charts displayed side by side—a bar chart titled “Content Over Time” and a donut chart titled “Content by Category”—using realistic sample data for both the grid (10–12 rows) and the charts.
+Create a CMS Admin Dashboard UI featuring a collapsible NavigationView with items for Dashboard, Content, Users, Analytics, and Settings; a CommandBar header showing the title "CMS Admin Dashboard" with a user profile section; and a main content area with a Grid layout including three compact summary cards displaying Total Content, Total Users, and Active Sessions (each with label, icon, count value, and percentage change), followed by a "Content Management" section with a DataGrid with columns for Title, Author, Status, Date, and Actions (with Edit and Delete buttons), and finally two charts displayed side by side—a Bar chart titled "Content Over Time" and a Pie chart titled "Content by Category"—using realistic sample data.
 {% endpromptcard %}
 {% endpromptcards %}
 
-Generated code follows best practices with accessible, semantic HTML, responsive mobile-first layouts, strong TypeScript typing, and built-in security measures such as input validation and avoidance of hardcoded secrets.
+Generated code follows best practices with well-structured XAML markup, proper event wiring and binding setup, strong C# typing, DPI awareness, and built-in security measures such as input validation and safe data handling.
+
+## Best Practices
+
+Follow these guidelines to get the most out of UI Composer and ensure high-quality production-ready result:
+
+- **Stay consistent** — Maintain consistent naming conventions (PascalCase for classes, camelCase for variables), control hierarchies, and XAML patterns throughout your project.
+- **Use advanced AI models** — For best results, use **Claude Sonnet 4.6 or higher** capability models to produce better code quality and more accurate implementations.
+- **Visual Studio designer testing** — Generated XAML code should be compatible with Visual Studio designer; validate layouts visually and ensure proper control initialization.
+- **Accessibility validation** — Test generated controls with Windows Narrator and Inspect tool (UIA) to ensure full accessibility support for keyboard navigation and screen readers.
+- **DPI awareness** — Test on high-resolution displays and ensure all controls scale properly and maintain visual fidelity.
+- **Review all content and assets before production** — Validate the logic, security, and compatibility with your existing code and Syncfusion® licensing before deployment.
 
 ## Troubleshooting
 
@@ -163,7 +169,7 @@ Generated code follows best practices with accessible, semantic HTML, responsive
 
 - **Skills not loading**: Ensure the **.agent/** and **.github/agents/** folders exist in your project and that the skill was installed successfully using APM. Verify that the correct agent is selected from the Agent dropdown in your IDE.
 
-- **Component not rendering**: Retry generation using the specific component skill to resolve the issue, and ensure required Syncfusion® packages and themes are properly configured.
+- **Control not rendering**: Retry generation using the specific control skill to resolve the issue, and ensure required Syncfusion® packages and themes are properly configured.
 
 - **Syncfusion license banner appears**: Use the licensing skill to correctly register and validate your Syncfusion® license key in the application.
 
@@ -177,7 +183,7 @@ Any Skills-compatible agent that reads local skill files (Code Studio, VS Code, 
 Yes. Supported agents automatically load relevant skills based on your query.
 
 **Can I customize the generated styles?**
-Yes — the generated WPF components include clear integration points for style adjustments.
+Yes — the generated WPF controls include clear integration points for style adjustments.
 
 **Does it modify files automatically?**
 The skill proposes changes and requires confirmation for insertion; automatic dependency installation may be offered depending on agent permissions.

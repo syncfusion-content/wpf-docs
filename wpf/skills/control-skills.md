@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion WPF Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion WPF component guidance.
+description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion WPF control guidance.
 control: Skills
 platform: wpf
 documentation: ug
@@ -12,41 +12,41 @@ domainurl: ##DomainURL##
 
 This guide introduces **Syncfusion WPF Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate WPF code using official APIs, patterns, and theming guidelines.
 
-These skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate component usage patterns, API structures, supported features, and project‑specific configuration.
+These skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate control usage patterns, API structures, supported features, and project‑specific configuration.
 
 ## Prerequisites
 
 Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> WPF Agent Skills, ensure the following:
 
-- Required [Node.js](https://nodejs.org/en/) version >= 16
+- Required [.NET SDK](https://dotnet.microsoft.com/en-us/download) version >= 6
 - WPF application (existing or new); see [Overview](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
 - A supported AI agent or IDE that integrates with the Skills CLI (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
 
 ## Key Benefits
 
-**Component Usage & API Knowledge**
-- Accurate guidance for adding and configuring Syncfusion<sup style="font-size:70%">&reg;</sup> WPF components
+**Control Usage & API Knowledge**
+- Accurate guidance for adding and configuring Syncfusion<sup style="font-size:70%">&reg;</sup> WPF controls
 - Component‑specific props, events, and required feature modules
 - Guidance for injecting services/modules (where applicable)
 
 **Patterns & Best Practices**
 - Recommended API structures and composition patterns
-- State‑handling approaches for common scenarios
+- Event handling and XAML binding approaches for common scenarios
 - Feature‑injection workflows (for example, paging, sorting, filtering)
 - All guidance is authored directly in Skill files and does not rely on external documentation fetches
 
 **Design‑System Guidance**
-- Theme usage, including light and dark variants
-- Styling and icon usage patterns
-- Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> WPF components
+- WPF theme support including modern themes (FluentLight, FluentDark, Material3Light, Material3Dark, Windows11Light, Windows11Dark) and classic themes (Office2019Colorful, Office2019Black, Office2019White)
+- Styling and ResourceDictionary usage patterns for theme integration
+- Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> WPF controls
 
 ## Installation
 
-Install [Syncfusion<sup style="font-size:70%">&reg;</sup> WPF components skills](https://github.com/syncfusion/wpf-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion/).
+Install [Syncfusion<sup style="font-size:70%">&reg;</sup> WPF controls skills](https://github.com/syncfusion/wpf-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion/).
 
 ### Install all skills
 
-Use the following command to install all component skills at once in the `.agents/skills` directory:
+Use the following command to install all control skills at once in the `.agents/skills` directory:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -124,11 +124,11 @@ To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs).
 
 ## How Syncfusion<sup style="font-size:70%">&reg;</sup> Agent Skills Work
 
-1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
+1. **Reads relevant Skill files based on queries**, retrieving control usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
 2. **Enforces Syncfusion<sup style="font-size:70%">&reg;</sup> best practices**, including:
 
-   - Using the required feature modules for each component.
-   - Injecting applicable component modules (for example, paging, sorting, filtering, and other feature modules).
+   - Using the required feature modules for each control.
+   - Injecting applicable control modules (for example, paging, sorting, filtering, and other feature modules).
    - Adding the correct theme and style imports.
 3. **Generates component‑accurate code**, avoiding invalid props or unsupported patterns.
 
@@ -136,9 +136,9 @@ To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs).
 
 Once skills are installed, the assistant can be used to generate and update Syncfusion<sup style="font-size:70%">&reg;</sup> WPF code for tasks such as:
 
-- “Add a DataGrid with paging, sorting, and filtering.”
-- “Create a chart with 3 line series and enable data labels and legends.”
-- “Apply Windows 11 light theme."
+- "Add a DataGrid with paging, sorting, and filtering features."
+- "Create a Bar chart with multiple series and enable data labels."
+- "Apply the FluentLight theme to all Syncfusion controls using SfSkinManager."
 
 ## Skills CLI Commands
 
