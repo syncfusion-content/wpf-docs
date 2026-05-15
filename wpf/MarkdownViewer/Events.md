@@ -9,25 +9,25 @@ documentation: ug
 
 # Event in WPF Markdown Viewer (SfMarkdownViewer)
 
-This section explains how to handle hyperlink interactions in the SfMarkdownViewer using the HyperlinkClicked event.
-The HyperlinkClicked event is triggered when a hyperlink in the Markdown content is clicked. It provides access to the clicked URL and allows you to control or cancel the default navigation behavior.
+This section explains how to handle hyperlink interactions in the [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) using the [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event.
+The [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event is triggered when a hyperlink in the Markdown content is clicked. It provides access to the clicked URL and allows you to control or cancel the default navigation behavior.
 
 ## HyperlinkClicked Event
 
-The HyperlinkClicked event provides details about the clicked hyperlink through the MarkdownHyperlinkClickedEventArgs.
+The [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event provides details about the clicked hyperlink through the [MarkdownHyperlinkClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.MarkdownHyperlinkClickedEventArgs.html).
 
 This event argument exposes the following properties:
 
-**URL** : Gets the URL of the clicked hyperlink.
-**Cancel** : Gets or sets a value indicating whether to cancel the default navigation behavior
+- Url  : Gets the URL of the clicked hyperlink.
+- Cancel  : Gets or sets a value indicating whether to cancel the default navigation behavior
 
 ## Disable hyperlink navigation
 
-You can disable hyperlink navigation by setting the Cancel property of the `MarkdownHyperlinkClickedEventArgs` to true in the `HyperlinkClicked` event handler. 
+You can disable hyperlink navigation by setting the Cancel property of the [MarkdownHyperlinkClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.MarkdownHyperlinkClickedEventArgs.html) to true in the [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event handler. 
 
 {% highlight c# %}
 
-// Wires the event handler for `HyperlinkClicked` event.    
+// Wires the event handler for HyperlinkClicked event.    
 markdownViewer.HyperlinkClicked += MarkdownViewer_HyperlinkClicked;
 
 private void MarkdownViewer_HyperlinkClicked(object? sender, MarkdownHyperlinkClickedEventArgs args)
@@ -44,7 +44,7 @@ You can retrieve the URL of the clicked hyperlink by accessing the Url property 
 
 {% highlight c# %}
 
-// Wires the event handler for `HyperlinkClicked` event.    
+// Wires the event handler for HyperlinkClicked event.    
 markdownViewer.HyperlinkClicked += MarkdownViewer_HyperlinkClicked;
 
 private void MarkdownViewer_HyperlinkClicked(object? sender, MarkdownHyperlinkClickedEventArgs args)
