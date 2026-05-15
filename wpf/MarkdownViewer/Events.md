@@ -7,9 +7,10 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Event in WPF Markdown Viewer (SfMarkdownViewer)
+# Events in WPF Markdown Viewer (SfMarkdownViewer)
 
 This section explains how to handle hyperlink interactions in the [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) using the [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event.
+
 The [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event is triggered when a hyperlink in the Markdown content is clicked. It provides access to the clicked URL and allows you to control or cancel the default navigation behavior.
 
 ## HyperlinkClicked Event
@@ -18,13 +19,14 @@ The [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Mar
 
 This event argument exposes the following properties:
 
-- Url  : Gets the URL of the clicked hyperlink.
-- Cancel  : Gets or sets a value indicating whether to cancel the default navigation behavior
+- **Url**: Gets the URL of the clicked hyperlink.
+- **Cancel**: Gets or sets a value indicating whether to cancel the default navigation behavior
 
-## Disable hyperlink navigation
+## Disable Hyperlink Navigation
 
 You can disable hyperlink navigation by setting the Cancel property of the [MarkdownHyperlinkClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.MarkdownHyperlinkClickedEventArgs.html) to true in the [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event handler. 
 
+{% tabs %}
 {% highlight c# %}
 
 // Wires the event handler for `HyperlinkClicked` event.    
@@ -37,11 +39,13 @@ private void MarkdownViewer_HyperlinkClicked(object? sender, MarkdownHyperlinkCl
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-## Retrieve the clicked URI
+## Retrieve the Clicked URL
 
 You can retrieve the URL of the clicked hyperlink by accessing the Url property of the event arguments.
 
+{% tabs %}
 {% highlight c# %}
 
 // Wires the event handler for `HyperlinkClicked` event.    
@@ -54,3 +58,4 @@ private void MarkdownViewer_HyperlinkClicked(object? sender, MarkdownHyperlinkCl
 }
 
 {% endhighlight %}
+{% endtabs %}
