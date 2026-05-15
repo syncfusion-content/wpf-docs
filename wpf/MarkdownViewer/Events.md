@@ -27,7 +27,7 @@ You can disable hyperlink navigation by setting the Cancel property of the [Mark
 
 {% highlight c# %}
 
-// Wires the event handler for HyperlinkClicked event.    
+// Wires the event handler for `HyperlinkClicked` event.    
 markdownViewer.HyperlinkClicked += MarkdownViewer_HyperlinkClicked;
 
 private void MarkdownViewer_HyperlinkClicked(object? sender, MarkdownHyperlinkClickedEventArgs args)
@@ -44,7 +44,7 @@ You can retrieve the URL of the clicked hyperlink by accessing the Url property 
 
 {% highlight c# %}
 
-// Wires the event handler for HyperlinkClicked event.    
+// Wires the event handler for `HyperlinkClicked` event.    
 markdownViewer.HyperlinkClicked += MarkdownViewer_HyperlinkClicked;
 
 private void MarkdownViewer_HyperlinkClicked(object? sender, MarkdownHyperlinkClickedEventArgs args)
