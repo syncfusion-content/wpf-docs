@@ -12,7 +12,7 @@ documentation: ug
 This section explains how to handle hyperlink interactions in the SfMarkdownViewer using the HyperlinkClicked event.
 The HyperlinkClicked event is triggered when a hyperlink in the Markdown content is clicked. It provides access to the clicked URL and allows you to control or cancel the default navigation behavior.
 
-## HyperlinkClicked
+## HyperlinkClicked Event
 
 The HyperlinkClicked event provides details about the clicked hyperlink through the MarkdownHyperlinkClickedEventArgs.
 
