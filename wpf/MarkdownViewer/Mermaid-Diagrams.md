@@ -39,9 +39,9 @@ The following example demonstrates how to render Mermaid flowcharts using [SfDia
             <system:String xml:space="preserve">
                 <![CDATA[
 
-# Mermaid Flowchart
+## Mermaid Flowchart
 
-Mermaid flowchart let you describe processes and decision trees in plain texts, and the viewer renders them into clear, interactive diagrams. This makes it simple to illustrate workflows, logic paths, or system flows directly inside Markdown without external tools.  
+Mermaid flowcharts let you describe processes and decision trees in plain text. The viewer renders them into clear, interactive diagrams. 
 
 ---
 
