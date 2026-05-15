@@ -9,20 +9,21 @@ documentation: ug
 
 # Event in WPF Markdown Viewer (SfMarkdownViewer)
 
-HyperlinkClicked is triggered when a Markdown link is clicked, providing the URL via MarkdownHyperlinkClickedEventArgs and allowing navigation to be canceled.
+This section explains how to handle hyperlink interactions in the SfMarkdownViewer using the HyperlinkClicked event.
+The HyperlinkClicked event is triggered when a hyperlink in the Markdown content is clicked. It provides access to the clicked URL and allows you to control or cancel the default navigation behavior.
 
 ## HyperlinkClicked
 
-The HyperlinkClicked event is triggered whenever a hyperlink in the Markdown content is clicked. This event provides access to the URL being navigated to and allows developers to cancel the default navigation behavior.
-The URL link and its details are passed through the MarkdownHyperlinkClickedEventArgs. This argument provides the following details:
+The HyperlinkClicked event provides details about the clicked hyperlink through the MarkdownHyperlinkClickedEventArgs.
+
+This event argument exposes the following properties:
 
 **URL** : Gets the URL of the clicked hyperlink.
-**Cancel** : Gets or sets whether to cancel the default navigation behavior.
+**Cancel** : Gets or sets a value indicating whether to cancel the default navigation behavior
 
 ## Disable hyperlink navigation
 
-You can disable the hyperlink navigation in Markdown viewer control by setting the value of `Cancel` in the `MarkdownHyperlinkClickedEventArgs` parameter as true in the `HyperlinkClicked` event.
-Please refer to the following example for more details.
+You can disable hyperlink navigation by setting the Cancel property of the `MarkdownHyperlinkClickedEventArgs` to true in the `HyperlinkClicked` event handler. 
 
 {% highlight c# %}
 
@@ -39,8 +40,7 @@ private void MarkdownViewer_HyperlinkClicked(object? sender, MarkdownHyperlinkCl
 
 ## Retrieve the clicked URI
 
-You can acquire the details of the hyperlink, which is clicked in the Markdown viewer control using the arguments of `HyperlinkClicked` event. 
-Please refer to the following example for more details.
+You can retrieve the URL of the clicked hyperlink by accessing the Url property of the event arguments.
 
 {% highlight c# %}
 

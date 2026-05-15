@@ -37,8 +37,10 @@ To add the `SfMarkdownViewer` manually in Designer, follow these steps:
 1. Create a new WPF project in Visual Studio.
 2. Add the following required nuget package to the project:
     * Syncfusion.SfMarkdownViewer.WPF
+    * Syncfusion.Markdown
+    * Syncfusion.Shared.WPF
 
-The SfMarkdownViewer control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assemblies will be added automatically.
+The SfMarkdownViewer control can be added to the application by dragging it from Toolbox and dropping it in designer.
 
 ![WPF SfMarkdownViewer](Images/wpf-markdown-viewer-designer.png)
 
