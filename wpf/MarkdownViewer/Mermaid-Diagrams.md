@@ -9,7 +9,9 @@ documentation: ug
 
 # Mermaid Diagram Support in WPF Markdown Viewer
  
-The [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control provides built-in support for rendering Mermaid diagrams and flowcharts within Markdown content, Mermaid is a text-based diagramming tool that allows you to define diagrams using simple syntax. The viewer parses Mermaid code blocks and renders them as visual diagrams directly within the Markdown content.
+The [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control provides built-in support for rendering Mermaid diagrams and flowcharts within Markdown content.
+
+Mermaid is a text-based diagramming tool that allows you to define diagrams using simple syntax. The viewer parses Mermaid code blocks and renders them as visual diagrams directly within the Markdown content.
  
 ## Rendering Mermaid Diagrams
  
@@ -18,6 +20,7 @@ The [MermaidBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 When a Markdown code block marked as mermaid is encountered, the specified template is used to render the diagram.
 
 **Example:**
+
 The following example demonstrates how to render Mermaid flowcharts using [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) within the [MermaidBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_MermaidBlockTemplate).
 
 {% tabs %} 
@@ -39,7 +42,7 @@ The following example demonstrates how to render Mermaid flowcharts using [SfDia
             <system:String xml:space="preserve">
                 <![CDATA[
 
-## Mermaid Flowchart
+# Mermaid Flowchart
 
 Mermaid flowcharts let you describe processes and decision trees in plain text. The viewer renders them into clear, interactive diagrams. 
 
@@ -98,5 +101,7 @@ namespace MarkdownViewerGettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+
+**Output:**
 
 ![Mermaid Diagrams in WPF Markdown Viewer](Images/wpf-markdown-mermaid-block.gif)
