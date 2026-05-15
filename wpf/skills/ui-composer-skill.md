@@ -135,7 +135,7 @@ After installing WPF UI Composer with APM, the relevant agent and skill files ar
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the `wpf-ui-composer` agent from the **Agent dropdown**.
+2. In the chat panel, select the `syncfusion-wpf-ui-composer` agent from the **Agent dropdown**.
 
 3. Start prompting the agent with a clear description of your UI requirements.
 
