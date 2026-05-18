@@ -137,6 +137,8 @@ To start using the skill:
 1. Open your supported IDE.
 2. In the chat panel, select the `syncfusion-wpf-ui-composer` agent from the **Agent dropdown**.
 
+![Set Agent](images/UI-Composer-Agent.png)
+
 3. Start prompting the agent with a clear description of your UI requirements.
 
 Examples Prompts:
