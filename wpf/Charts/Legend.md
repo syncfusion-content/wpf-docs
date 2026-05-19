@@ -271,7 +271,7 @@ chart.Series.Add(splineSeries);
 
 ## Checkbox 
 
-Used to view or collapse the associated series. By default, the CheckboxVisibility is *Collapsed*. 
+Used to view or collapse the associated series. By default, the CheckboxVisibility is **Collapsed**. 
 
 We can enable it by using the [`CheckBoxVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) property as in below code example:
 
@@ -610,7 +610,7 @@ chart.Series.Add(pieSeries);
 ![Legends for Accumulation Series in WPF Chart](Legend_images/wpf-chart-legend-series.png)
 
 
-N> Here Legend ‘Label’ will be the x value of the Pie chart.
+N> Here Legend `Label` will be the x value of the Pie chart.
 
 ## Series visibility on legend
 
@@ -830,7 +830,7 @@ chartWindow.DataContext = measurementChart;
 chartWindow.Content = new AutoChart();
 chartWindow.Content = new SfChart()
 {    
-s    . . .
+    . . .
 }
 
 Action action = chartWindow.Show;

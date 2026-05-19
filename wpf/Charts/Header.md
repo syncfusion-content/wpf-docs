@@ -15,7 +15,7 @@ documentation: ug
 
 {% highlight xaml %}
 
-<syncfusion:SfChart  Header="Chart Area Header" />
+<syncfusion:SfChart Header="Chart Area Header"/>
 
 {% endhighlight %}
 
@@ -40,22 +40,13 @@ Also you can add more customization for the header as below:
 {% highlight xaml %}
 
 <chart:SfChart.Header>
-
-<Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
-<TextBlock FontSize="14" Text="Chart Area Header" Margin="5">
-
-<TextBlock.Effect>
-
-<DropShadowEffect Color="Black" 
-
-Opacity="0.5" />
-
-</TextBlock.Effect>
-
-</TextBlock>
-
-</Border>
-
+    <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
+        <TextBlock FontSize="14" Text="Chart Area Header" Margin="5">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" Opacity="0.5"/>
+            </TextBlock.Effect>
+        </TextBlock>
+    </Border>
 </chart:SfChart.Header>
 
 {% endhighlight %}

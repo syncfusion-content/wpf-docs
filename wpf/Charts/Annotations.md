@@ -60,7 +60,7 @@ Annotations can be positioned in plot area based on [`X1`](https://help.syncfusi
 
 **Positioning** **based** **on** **CoordinateUnit** **as** **Axis**
 
-To position the annotation based on axis, set the X1 and Y1, X2 and Y2 properties based on axis range values, if needed, set the CoordinateUnit value as [`Axis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html)..
+To position the annotation based on axis, set the X1 and Y1, X2 and Y2 properties based on axis range values, if needed, set the CoordinateUnit value as [`Axis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html).
 
 {% tabs %}
 
@@ -981,13 +981,13 @@ The default appearance of the Tooltip can be changed using [`TooltipTemplate`](h
     <syncfusion:SfChart.Resources>
         <DataTemplate x:Key="tooltipTemplate">
             <Border
-        CornerRadius="5"
-        BorderBrush="DarkGray"
-        BorderThickness="1">
+                CornerRadius="5"
+                BorderBrush="DarkGray"
+                BorderThickness="1">
                 <TextBlock
-            FontSize="11"
-            Text="Annotation"
-            Foreground="Black" />
+                    FontSize="11"
+                    Text="Annotation"
+                    Foreground="Black"/>
             </Border>
         </DataTemplate>
     </syncfusion:SfChart.Resources>
@@ -1084,112 +1084,52 @@ The value of X1, X2, Y1, and Y2 properties of annotation will differ based on th
 
 <table>
 <tr>
-<th>
-SI.No
-</th>
-<th>
-Axis Type
-</th>
-<th>
-X1 and X2 values
-</th>
-<th>
-Example
-</th>
-</tr>
-<tr>
-<td>
-1
-</td>
-<td>
-CategoryAxis
-</td>
-<td>
-Index based
-</td>
-<td>
-X1 = 2, X2 = 3 (start point = 2nd index’s value and end point 3rd index value) 
-</td>
+<th>SI.No</th>
+<th>Axis Type</th>
+<th>X1 and X2 values</th>
+<th>Example</th>
 </tr>
 
-</tr>
 <tr>
-<td>
-2
-</td>
-<td>
-DateTimeCategoryAxis 
-</td>
-<td>
-Index based 
-</td>
-<td>
-X1 = 2, X2 = 3 (start point = 2nd index’s value and end point 3rd index value) 
-</td>
+<td>1</td>
+<td>CategoryAxis</td>
+<td>Index based</td>
+<td>X1 = 2, X2 = 3 (start point = 2nd index’s value and end point 3rd index value)</td>
 </tr>
 
-</tr>
 <tr>
-<td>
-3
-</td>
-<td>
-DateTimeAxis 
-</td>
-<td>
-Value based 
-</td>
-<td>
-X1 = “2015/01/31”, X2 = “2015/02/01” 
-</td>
+<td>2</td>
+<td>DateTimeCategoryAxis</td>
+<td>Index based</td>
+<td>X1 = 2, X2 = 3 (start point = 2nd index’s value and end point 3rd index value)</td>
 </tr>
 
-</tr>
 <tr>
-<td>
-4
-</td>
-<td>
-TimeSpanAxis
-</td>
-<td>
-Value based 
-</td>
-<td>
-X1= 00:00:40 X2=00:00:50  
-</td>
+<td>3</td>
+<td>DateTimeAxis</td>
+<td>Value based</td>
+<td>X1 = “2015/01/31”, X2 = “2015/02/01”</td>
 </tr>
 
-</tr>
 <tr>
-<td>
-5
-</td>
-<td>
-Logarithmic Axis 
-</td>
-<td>
-Value based 
-</td>
-<td>
-X1= 50(XValue) X2=50(XValue) 
-</td>
+<td>4</td>
+<td>TimeSpanAxis</td>
+<td>Value based</td>
+<td>X1 = 00:00:40 X2 = 00:00:50</td>
 </tr>
 
-</tr>
 <tr>
-<td>
-6
-</td>
-<td>
-Numerical Axis 
-</td>
-<td>
-Value based 
-</td>
-<td>
-X1= 10(XValue) X2=15(XValue)
-</td>
+<td>5</td>
+<td>Logarithmic Axis</td>
+<td>Value based</td>
+<td>X1 = 50(XValue) X2 = 50(XValue)</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Numerical Axis</td>
+<td>Value based</td>
+<td>X1 = 10(XValue) X2 = 15(XValue)</td>
 </tr>
 </table>
 

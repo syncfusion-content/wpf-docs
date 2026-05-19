@@ -293,7 +293,7 @@ The [`MomentumLineColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
         Low="Low"
         Open="Open"
         Close="Close"/>
-</chart:SfChart.TechnicalIndicators
+</chart:SfChart.TechnicalIndicators>
 
 
 {% endhighlight %}

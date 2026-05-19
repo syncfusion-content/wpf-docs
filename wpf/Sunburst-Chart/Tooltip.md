@@ -26,7 +26,6 @@ ToolTip allows you to display any information over a sunburst segment. It appear
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
-
 tooltip.ShowToolTip = true;
 
 chart.Behaviors.Add(tooltip);
@@ -60,7 +59,6 @@ The following code shows, how to position the tooltip to right of the cursor.
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
-
 tooltip.HorizontalAlignment = HorizontalAlignment.Right;
 
 sunburstChart.Behaviors.Add(tooltip);
@@ -104,7 +102,6 @@ The tooltip position can be customized to a custom position from the cursor usin
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
-
 tooltip.HorizontalOffset = 50;
 tooltip.VerticalOffset = 50;
 
@@ -135,7 +132,6 @@ You can set display duration for tooltip by using the [`ShowDuration`](https://h
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
-
 tooltip.ShowDuration = 6000;
 
 chart.Behaviors.Add(tooltip);
@@ -161,7 +157,6 @@ We can set the initial display delay for Tooltip by using [`InitialShowDelay`](h
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
-
 tooltip.InitialShowDelay = 500;
 
 sunburstChart.Behaviors.Add(tooltip);
@@ -187,7 +182,6 @@ You can enable the translate animation for Tooltip by using [`EnableAnimation`](
 {% highlight c# %}
 
 SunburstToolTipBehavior tooltip = new SunburstToolTipBehavior();
-
 tooltip.EnableAnimation = true;
 tooltip.AnimationDuration = 5000;
 

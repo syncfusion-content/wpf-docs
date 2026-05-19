@@ -235,7 +235,7 @@ chart.Behaviors.Add(zooming);
 
 The zooming can be done both horizontally and vertically. The zooming direction is defined using [`ZoomMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ZoomMode) property.
 
-Zooming along [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ZoomMode.html) axis
+Zooming along [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ZoomMode.html) axis.
 
 {% tabs %}
 
@@ -267,7 +267,7 @@ chart.Behaviors.Add(zooming);
 ![Zoom mode support in WPF Chart](Interactive-Features_images/Interactive-Features_img27.jpeg)
 
 
-Zooming along Y axis
+Zooming along Y axis.
 
 {% tabs %}
 
@@ -394,8 +394,8 @@ Zooming Toolbar can be customized using the following APIs:
 * [`ToolBarBackground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarBackground)- Represents the zooming toolkit background.
 * [`ToolBarItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItems)- Collection value that contains zooming toolkit items. 
 * [`ToolBarItemMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemMargin)-Represents the margin for the toolbar item.
-* [`ToolBarItemWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemWidth) -Represents the width of the toolbar item
-* [`ToolBarItemHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemHeight)-Represents the height of the toolbar item
+* [`ToolBarItemWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemWidth) -Represents the width of the toolbar item.
+* [`ToolBarItemHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemHeight)-Represents the height of the toolbar item.
 
 {% tabs %}
 

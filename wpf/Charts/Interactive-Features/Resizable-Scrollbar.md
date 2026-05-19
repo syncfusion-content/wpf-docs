@@ -172,7 +172,7 @@ chart.PrimaryAxis = new CategoryAxis()
                     BorderThickness="2">
                     <TextBlock
                         Text="{Binding}"
-                        FontSize="15" />
+                        FontSize="15"/>
                 </Border>
             </Grid>
         </DataTemplate>
@@ -183,7 +183,7 @@ chart.PrimaryAxis = new CategoryAxis()
             EnableTouchMode="True"
             EnableScrollBar="True"
             ThumbLabelVisibility="Visible"
-            ThumbLabelTemplate="{StaticResource labelTemplate}" />
+            ThumbLabelTemplate="{StaticResource labelTemplate}"/>
     </syncfusion:SfChart.PrimaryAxis>
 </syncfusion:SfChart>
 
