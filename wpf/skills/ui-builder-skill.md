@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Syncfusion® WPF UI Composer Skill for AI Assistants | Syncfusion®
-description: Install Syncfusion® WPF UI Composer to generate production-ready WPF controls from natural-language prompts.
+title: Syncfusion® WPF UI Builder Skill for AI Assistants | Syncfusion®
+description: Install Syncfusion® WPF UI Builder to generate production-ready WPF controls from natural-language prompts.
 control: Skills
 platform: wpf
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion® WPF UI Composer Skill for AI Assistants
+# Syncfusion® WPF UI Builder Skill for AI Assistants
 
-**Syncfusion® WPF UI Composer** is an AI-powered skill and companion agent that accelerates WPF application development by transforming natural-language UI requirements into production-ready controls using Syncfusion® WPF libraries. 
+**Syncfusion® WPF UI Builder** is an AI-powered skill and companion agent that accelerates WPF application development by transforming natural-language UI requirements into production-ready controls using Syncfusion® WPF libraries. 
 
 Integrated with your AI-powered IDE, it leverages deep knowledge of **Syncfusion® controls** to deliver accurate and ready-to-use code.
-By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, WPF UI Composer helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
+By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, WPF UI Builder helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
 
 ## Prerequisites
 
-Before installing WPF UI Composer, ensure the following:
+Before installing WPF UI Builder, ensure the following:
 
 - Install [APM (Agent Package Manager)](https://microsoft.github.io/apm/getting-started/installation/#quick-install-recommended)
 - Required [.NET SDK](https://dotnet.microsoft.com/en-us/download) version ≥ 6
@@ -56,7 +56,7 @@ Before installing WPF UI Composer, ensure the following:
 
 ## Installation
 
-Before installing WPF UI Composer, ensure that APM (Agent Package Manager) is installed and available in your environment.
+Before installing WPF UI Builder, ensure that APM (Agent Package Manager) is installed and available in your environment.
 
 ### Verify APM Installation
 
@@ -66,29 +66,29 @@ Run the following command to confirm APM is installed:
 apm --version
 ```
 
-### Install the Syncfusion® WPF UI Composer package using APM
+### Install the Syncfusion® WPF UI Builder package using APM
 
-Use the APM CLI to install the WPF UI Composer skill for your preferred environment:
+Use the APM CLI to install the WPF UI Builder skill for your preferred environment:
 
 {% tabs %}
 {% highlight bash tabtitle="Copilot" %}
 
-apm install syncfusion/wpf-ui-composer -t copilot
+apm install syncfusion/wpf-ui-builder -t copilot
 
 {% endhighlight %}
 {% highlight bash tabtitle="Cursor" %}
 
-apm install syncfusion/wpf-ui-composer -t cursor
+apm install syncfusion/wpf-ui-builder -t cursor
 
 {% endhighlight %}
 {% highlight bash tabtitle="Code Studio" %}
 
-apm install syncfusion/wpf-ui-composer -t copilot
+apm install syncfusion/wpf-ui-builder -t copilot
 
 {% endhighlight %}
 {% highlight bash tabtitle="Claude" %}
 
-apm install syncfusion/wpf-ui-composer -t claude
+apm install syncfusion/wpf-ui-builder -t claude
 
 {% endhighlight %}
 {% endtabs %}
@@ -100,9 +100,9 @@ After installation, the following artifacts are added to your project for the Gi
 
 Refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targets/#detection-signals) for details about supported deployment targets.
 
-> For Syncfusion® Code Studio, use the Copilot command above to install the WPF UI Composer.
+> For Syncfusion® Code Studio, use the Copilot command above to install the WPF UI Builder.
 
-## How the Syncfusion® WPF UI Composer Skill Works
+## How the Syncfusion® WPF UI Builder Skill Works
 
 1. **Intent Analysis** — Parse the user's prompt to identify control types and high-level layout intent.
 2. **Project Detection** — Automatically detects project framework and existing themes.
@@ -127,17 +127,17 @@ Key enforcement points:
 
 ## Using the AI Assistant
 
-After installing WPF UI Composer with APM, the relevant agent and skill files are added to your project under:
+After installing WPF UI Builder with APM, the relevant agent and skill files are added to your project under:
 
 - `.agent/skills/` (skill files)
-- `.github/agents/` (WPF UI composer agent configuration, based on the selected target)
+- `.github/agents/` (WPF UI builder agent configuration, based on the selected target)
 
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the `syncfusion-wpf-ui-composer` agent from the **Agent dropdown**.
+2. In the chat panel, select the `syncfusion-wpf-ui-builder` agent from the **Agent dropdown**.
 
-![Set Agent](images/UI-Composer-Agent.png)
+![Set Agent](images/UI-Builder-Agent.png)
 
 3. Start prompting the agent with a clear description of your UI requirements.
 
@@ -156,7 +156,7 @@ Generated code follows best practices with well-structured XAML markup, proper e
 
 ## Best Practices
 
-Follow these guidelines to get the most out of UI Composer and ensure high-quality production-ready result:
+Follow these guidelines to get the most out of UI Builder and ensure high-quality production-ready result:
 
 - **Stay consistent** — Maintain consistent naming conventions (PascalCase for classes, camelCase for variables), control hierarchies, and XAML patterns throughout your project.
 - **Use advanced AI models** — For best results, use **Claude Sonnet 4.6 or higher** capability models to produce better code quality and more accurate implementations.
