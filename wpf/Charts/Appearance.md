@@ -15,7 +15,7 @@ SfChart supports various customizing and styling options that allows you to enri
 
 SfChart provides options to apply different kinds of themes or palettes to your chart. You can define [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) either for the entire chart or for an individual series.
 
-We have some predefined palette such as
+We have some predefined palette such as:
 
 * Metro
 * AutumnBrights

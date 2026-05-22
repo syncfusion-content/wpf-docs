@@ -44,10 +44,8 @@ Applying scale breaks helps in proper visualization of all the data points.
 NumericalAxis axis = new NumericalAxis();
 
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
-
 scaleBreak.Start = 300;
 scaleBreak.End = 8500;
-
 axis.AxisScaleBreaks.Add(scaleBreak);
 
 chart.SecondaryAxis = axis;
@@ -93,14 +91,11 @@ Range [0,350] takes nearly 4/5th of the axis height and the range [8000,10000] t
 {% highlight c# %}
 
 NumericalAxis axis = new NumericalAxis();
-
 axis.BreakPosition = ScaleBreakPosition.DataCount;
 
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
-
 scaleBreak.Start = 350;
 scaleBreak.End = 8000;
-
 axis.AxisScaleBreaks.Add(scaleBreak);
 
 chart.SecondaryAxis = axis;
@@ -136,7 +131,6 @@ NumericalAxis axis = new NumericalAxis();
 axis.BreakPosition = ScaleBreakPosition.Scale;
 
 ChartAxisScaleBreak scaleBreak = new ChartAxisScaleBreak();
-
 scaleBreak.Start = 350;
 scaleBreak.End = 8000;
 

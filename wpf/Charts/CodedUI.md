@@ -40,7 +40,7 @@ Coded UI provides support only in,
 * Visual Studio Enterprise
 * Visual Studio Ultimate
 
-For more info about the platforms and configurations refer [here](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings?view=vs-2015)
+For more info about the platforms and configurations refer [here](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings?view=vs-2015).
 
 ## Configuration
 
