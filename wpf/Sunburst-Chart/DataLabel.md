@@ -13,7 +13,7 @@ documentation: ug
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users. 
 
-You can enable or disable the data labels by using [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_ShowLabel) property as shown in the below code 
+You can enable or disable the data labels by using [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_ShowLabel) property as shown in the below code. 
 
 {% tabs %}
 
@@ -177,9 +177,7 @@ Font color of the label can be customized using the [`Foreground`](https://help.
 {% highlight c# %}
 
 SfSunburstChart sunburst = new SfSunburstChart();
-
 sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
-
 sunburst.ValueMemberPath = "EmployeesCount";
 
 sunburst.Levels.Add(new SunburstHierarchicalLevel()
@@ -203,7 +201,6 @@ sunburst.Levels.Add(new SunburstHierarchicalLevel()
 });
 
 SunburstDataLabelInfo info = new SunburstDataLabelInfo();
-
 info.FontSize = 12;
 info.FontStyle = FontStyles.Italic;
 info.FontWeight = FontWeights.SemiBold;
@@ -211,7 +208,6 @@ info.Foreground = new SolidColorBrush(Colors.White);
 info.FontFamily = new FontFamily("Comic Sans MS");
 
 sunburst.DataLabelInfo = info;
-
 grid.Children.Add(sunburst);
 
 {% endhighlight %}

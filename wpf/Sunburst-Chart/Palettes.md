@@ -13,7 +13,7 @@ documentation: ug
 
 Sunburst chart provides support to apply different types of palettes. You can define the palettes by using [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Palette) property.
 
-We have some predefined palette such as
+We have some predefined palette such as:
 
 * Metro
 * AutumnBrights

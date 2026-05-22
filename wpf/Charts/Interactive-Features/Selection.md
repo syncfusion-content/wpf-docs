@@ -408,11 +408,7 @@ The following code snippet demonstrates the selection mode using [`MouseMove`](h
 {% highlight xml %}
 
 <syncfusion:SfChart.Behaviors>
-
-<syncfusion:ChartSelectionBehavior SelectionMode="MouseMove" EnableSeriesSelection="True">
-
-</syncfusion:ChartSelectionBehavior>
-
+    <syncfusion:ChartSelectionBehavior SelectionMode="MouseMove" EnableSeriesSelection="True"/>
 </syncfusion:SfChart.Behaviors>
 
 {% endhighlight %}

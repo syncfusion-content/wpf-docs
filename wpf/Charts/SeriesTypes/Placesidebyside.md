@@ -46,7 +46,7 @@ The following code example and image illustrates the placement of series while s
         ItemsSource="{Binding SneakersDetail}" 
         Label="2015"
         XBindingPath="Brand"
-       YBindingPath="ItemsCount" />
+       YBindingPath="ItemsCount"/>
 
     <chart:ColumnSeries 
         ItemsSource="{Binding SneakersDetail}"  
@@ -55,7 +55,6 @@ The following code example and image illustrates the placement of series while s
         XBindingPath="Brand"
         Label="2014" 
         YBindingPath="postion"/>
-
 </chart:SfChart>
 
 {% endhighlight %}

@@ -91,7 +91,7 @@ The complex property binding feature enables you to access nested object referen
 <syncfusion:LineSeries
     ItemsSource="{Binding DataWithMulData}"
     XBindingPath="StadiumObject.CupDetailsObj.CupName"
-    YBindingPath="StadiumObject.NumSeats" />
+    YBindingPath="StadiumObject.NumSeats"/>
 
 {% endhighlight %}
 

@@ -52,12 +52,10 @@ private void chart_SegmentCreated(object sender, SunburstSegmentCreatedEventArgs
     {
         e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r1, g1, b1));
     }
-
     else if (e.Segment.CurrentLevel == 2)
     {
         e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r, g, b));
     }
-
     else if (e.Segment.CurrentLevel == 3)
     {
         e.Segment.Interior = new SolidColorBrush(Color.FromRgb(r2, g2, b2));

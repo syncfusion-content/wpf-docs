@@ -412,7 +412,7 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 [`UseSeriesPalette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_UseSeriesPalette) property is used to set the interior of the series to the adornment background. 
 
->N For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior color will be reflected in adornment background.
+N> For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior color will be reflected in adornment background.
 
 {% tabs %}
 
