@@ -251,6 +251,8 @@ sfTreeView.CheckedItems.Add(viewModel.Items[3]);
 {% endhighlight %}
 {% endtabs %}
 
+N> Set [NodePopulationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodePopulationMode) as `Instant` when programmatically adding items to the [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) to enable the `Recursive` checkbox mode.
+
 ## Events
 
 ### NodeChecked event

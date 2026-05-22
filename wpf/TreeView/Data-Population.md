@@ -25,10 +25,16 @@ To update the collection changes in UI, it is necessary to define [NotificationS
    * None - It is a default mode and it doesn’t reflect collection/property changes in UI.
 To decide how to populate the nodes, it is necessary to set this `NodePopulationMode` API to Treeview.
 
+### NodePopulationMode
+
 The [NodePopulationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodePopulationMode) API has following enum values:
 
    * OnDemand - Populate the child nodes only when parent nodes is expanded. It is the default value.
    * Instant - Populates all the child nodes when Treeview control is initially loaded.
+
+### Limitations when CheckBoxMode is Recursive
+
+When [CheckBoxMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) is set to `Recursive` and [NodePopulationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodePopulationMode) is set to `OnDemand` (default), programmatically adding items to the [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) collection will not correctly update parent checkbox states (tri-state: intermediate/checked/unchecked). This is because child nodes are not created until parent nodes are expanded, so the control cannot locate the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) to propagate the checkbox state. To use recursive checkbox propagation correctly, `NodePopulationMode` must be set to `Instant`. 
 
 ### Create Data Model for treeview
 
