@@ -114,3 +114,5 @@ SfToastNotification.Show(this, new ToastOptions
 | **Flip Left Up** | `FlipLeftUpIn` | `FlipLeftUpOut` |
 | **Flip Right Down** | `FlipRightDownIn` | `FlipRightDownOut` |
 | **None** | `None` | `None` |
+
+N> Appearance customization features such as `Severity`, `Variant`, `AccentBrush`, `Placement`, `ShowAnimationType`, `CloseAnimationType`, and `Duration` are not supported in `Default` mode because OS-level toast appearance and behavior are controlled by the operating system. These features are supported for custom toast notifications displayed in `Window` or `Screen` mode. The `Variant` and `AccentBrush` properties are applicable only when `Severity` is set to `Info`, `Success`, `Warning`, or `Error`. They are not applicable when `Severity` is set to `None`.

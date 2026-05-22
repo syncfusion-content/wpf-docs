@@ -56,7 +56,7 @@ namespace ToastNotificationDemo
 
 ![SfToastNotification image](Images/SimpleToast.png)
 
-> For displaying default or native toast notifications, you must initialize the `WindowsToastBootstrapper` for your application in `App.xaml.cs`. This initialization is required for OS-level toast notifications.
+N> For displaying default or native toast notifications, you must initialize the `WindowsToastBootstrapper` for your application in `App.xaml.cs`. This initialization is required for OS-level toast notifications.
 
 ## Toast Content
 
@@ -152,4 +152,4 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-> `Window` and `Screen` are in-app toast modes and support customization, while `Default` mode uses native OS behavior and has limited customization.
+N> `Window` and `Screen` are in-app toast modes and support customization, while `Default` mode uses native OS behavior and has limited customization.
