@@ -19,7 +19,7 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 * Date time
 * Logarithmic Axis
 
-The following are the API’s in ChartAxis
+The following are the API’s in ChartAxis:
 
 * [`ArrangeRect`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ArrangeRect) – Represents the bounds of chart axis size. 
 
@@ -78,7 +78,7 @@ Gets the median value of the visible range.
 
 * [`VisibleLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleLabels) – Represents the axis label collection which are visible in axis.
 
-The following topics explains in detail about the axis and its parts
+The following topics explains in detail about the axis and its parts.
 
 ## Header
 
@@ -543,18 +543,20 @@ chart.SecondaryAxis = new NumericalAxis()
     <syncfusion:SfChart.Resources>
         <DataTemplate x:Key="labelTemplate">
             <Border Background="Gray" CornerRadius="5">
-                <TextBlock Text="{Binding LabelContent}" 
-                        Foreground="White"                                  
-                        FontStyle="Normal" 
-                        FontSize="10"                                    
-                        FontWeight="Bold" 
-                        Margin="3"/>
+                <TextBlock
+                    Text="{Binding LabelContent}" 
+                    Foreground="White"
+                    FontStyle="Normal" 
+                    FontSize="10"         
+                    FontWeight="Bold" 
+                    Margin="3"/>
                 <Border.Effect>
                     <DropShadowEffect 
                         ShadowDepth="6" 
-                        Direction="315"                                           Color="LightGray" 
+                        Direction="315"                                           
+                        Color="LightGray" 
                         Opacity="0.25"                                              
-                        BlurRadius="0.8" />
+                        BlurRadius="0.8"/>
                 </Border.Effect>
             </Border>
         </DataTemplate>
@@ -630,7 +632,7 @@ None option is used to display all the label even if it intersects. The followin
 {% highlight xaml %}
 
 <syncfusion:SfChart.PrimaryAxis>
-    <syncfusion:DateTimeAxis  LabelsIntersectAction="None"/>
+    <syncfusion:DateTimeAxis LabelsIntersectAction="None"/>
 </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
@@ -1762,7 +1764,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 **LabelPlacement**
 
-In [`CategoryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html), labels is placed based on tick lines using [`LabelPlacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) property. By default the labels is placed [`OnTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LabelPlacement.html). The following code example demonstrates placing the label between ticks in [`CategoryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html)
+In [`CategoryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html), labels is placed based on tick lines using [`LabelPlacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) property. By default the labels is placed [`OnTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LabelPlacement.html). The following code example demonstrates placing the label between ticks in [`CategoryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html).
 
 {% tabs %}
 
@@ -1863,7 +1865,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Average**
 
-The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is Average,
+The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is Average.
 
 {% tabs %}
 
@@ -1891,7 +1893,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Count**
 
-The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is Count,
+The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is Count.
 
 {% tabs %}
 
@@ -1919,7 +1921,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Max**
 
-The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is Max,
+The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is Max.
 
 {% tabs %}
 
@@ -1947,7 +1949,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Min**
 
-The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is Min,
+The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is Min.
 
 {% tabs %}
 
@@ -1975,7 +1977,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Sum**
 
-The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is Sum,
+The following code example illustrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_AggregateFunctions) is Sum.
 
 {% tabs %}
 
@@ -2077,7 +2079,7 @@ The following properties are used for business hour range calculation
 * [`CloseTime`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_CloseTime)- Represents the close working time of a day.
 * [`WorkingDays`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_WorkingDays)- Represents the working [`days`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Day.html) of a week.
 
-The following code snippet demonstrates the business hours support in DateTimeAxis
+The following code snippet demonstrates the business hours support in DateTimeAxis.
 
 {% tabs %}
 
@@ -2333,11 +2335,11 @@ The property is applicable only for linear axes, and it can be set as shown in t
 {% highlight xaml %}
 
 <Chart:SfChart.SecondaryAxis>
-    <Chart:NumericalAxis IncludeAnnotationRange="True" />
+    <Chart:NumericalAxis IncludeAnnotationRange="True"/>
 </Chart:SfChart.SecondaryAxis>
 
 <Chart:SfChart.Annotations>
-    <Chart:LineAnnotation X1="0" X2="4" Y1="0" Y2="3000" />
+    <Chart:LineAnnotation X1="0" X2="4" Y1="0" Y2="3000"/>
 </Chart:SfChart.Annotations>
 
 {% endhighlight %}
@@ -2450,9 +2452,9 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The DateTimeAxis [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) value corresponds to the type specified in the [`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) property.
 
-For instance, if the [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) is set as 2 and [`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) is set as [`Days`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), the labels are plotted for every two days. The following are the options for [`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) property
+For instance, if the [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) is set as 2 and [`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) is set as [`Days`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), the labels are plotted for every two days. The following are the options for [`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) property.
 
-Auto
+* Auto
 * Days
 * Hours
 * Milliseconds
@@ -2909,9 +2911,9 @@ The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](h
 
 {% highlight xaml %}
 
- <syncfusion:SfChart.PrimaryAxis>
-     <syncfusion:NumericalAxis  RangePadding="RoundStart"/>
- </syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
+    <syncfusion:NumericalAxis RangePadding="RoundStart"/>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -3240,7 +3242,7 @@ By default, all the series are plotted based on primary and secondary axis. You 
     XBindingPath="Date"  
     YBindingPath="Year2011">
     <syncfusion:LineSeries.XAxis>
-        <syncfusion:DateTimeAxis />
+        <syncfusion:DateTimeAxis/>
     </syncfusion:LineSeries.XAxis>
 
     <syncfusion:LineSeries.YAxis>

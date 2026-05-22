@@ -601,9 +601,9 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 
 <chart:SfChart.Resources>
     <Style TargetType="Path" x:Key="style">
-        <Setter Property="Stroke" Value="Black" />
-        <Setter Property="Fill" Value="LightGreen" />
-        <Setter Property="StrokeThickness" Value="2" />
+        <Setter Property="Stroke" Value="Black"/>
+        <Setter Property="Fill" Value="LightGreen"/>
+        <Setter Property="StrokeThickness" Value="2"/>
     </Style>
 </chart:SfChart.Resources>
 
@@ -660,21 +660,21 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
                     FontWeight="Medium"
                     FontSize="12"
                     HorizontalAlignment="Center"
-                    VerticalAlignment="Center" />
+                    VerticalAlignment="Center"/>
                 <TextBlock
                     Text=" : "
                     Foreground="Black"
                     FontWeight="Medium"
                     FontSize="12"
                     HorizontalAlignment="Center"
-                    VerticalAlignment="Center" />
+                    VerticalAlignment="Center"/>
                 <TextBlock
                     Text="{Binding Item.Year2011}"
                     Foreground="Black"
                     FontWeight="Medium"
                     FontSize="12"
                     HorizontalAlignment="Center"
-                    VerticalAlignment="Center" />
+                    VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
     </chart:ColumnSeries.TooltipTemplate>

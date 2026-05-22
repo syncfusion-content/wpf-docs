@@ -202,17 +202,17 @@ The following code example defines the exponential trendline.
 
 {% highlight xaml %}
 
-<syncfusion:FastLineSeries XBindingPath="Date"
+<syncfusion:FastLineSeries 
+    XBindingPath="Date"
+    YBindingPath="Value" 
+    Interior="#7F7F7F"
+    ItemsSource="{Binding StockPriceDetails}">
 
-YBindingPath="Value" 
-
-Interior="#7F7F7F"
-
-ItemsSource="{Binding StockPriceDetails}">
-
-<syncfusion:FastLineSeries.Trendlines>
-    <syncfusion:Trendline  Stroke="Black" Type="Exponential"/>
-</syncfusion:FastLineSeries.Trendlines>
+    <syncfusion:FastLineSeries.Trendlines>
+        <syncfusion:Trendline  Stroke="Black" Type="Exponential"/>
+    </syncfusion:FastLineSeries.Trendlines>
+    
+ </syncfusion:FastLineSeries>
 
 {% endhighlight %}
 

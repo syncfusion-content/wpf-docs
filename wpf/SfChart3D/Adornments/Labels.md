@@ -341,9 +341,10 @@ ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
 {
     ShowLabel = true,
     ShowConnectorLine = true
-    };
+};
 
 series.AdornmentsInfo = adornmentInfo;
+
 chart.Series.Add(series);
 
 {% endhighlight %}
