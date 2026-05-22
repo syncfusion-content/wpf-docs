@@ -36,7 +36,7 @@ The following code examples illustrates the usage of these properties:
                AreaBackground="Cyan" 
                Background="LightGray" 
                AreaBorderBrush="Gray" 
-               AreaBorderThickness="3" >
+               AreaBorderThickness="3">
 
 {% endhighlight %}
 
@@ -85,20 +85,20 @@ The following code example demonstrates, how you can create multiple panes in th
     </chart:SfChart.PrimaryAxis>
 
     <chart:SfChart.SecondaryAxis>
-        <chart:NumericalAxis  PlotOffset="13" chart:ChartBase.ColumnSpan="2" />
+        <chart:NumericalAxis PlotOffset="13" chart:ChartBase.ColumnSpan="2"/>
     </chart:SfChart.SecondaryAxis>
 
     <chart:ColumnSeries Palette="LightCandy"
                         ItemsSource="{Binding SneakersDetail}"         
                         XBindingPath="Brand" 
-                        YBindingPath="ItemsCount1" />
+                        YBindingPath="ItemsCount1"/>
 
     <chart:ColumnSeries Palette="Metro" 
                         ItemsSource="{Binding SneakersDetail}" 
                         XBindingPath="Brand" 
-                        YBindingPath="ItemsCount" >
+                        YBindingPath="ItemsCount">
         <chart:ColumnSeries.YAxis>
-            <chart:NumericalAxis PlotOffset="10" chart:SfChart.Row="1" />
+            <chart:NumericalAxis PlotOffset="10" chart:SfChart.Row="1"/>
         </chart:ColumnSeries.YAxis>
     </chart:ColumnSeries>
 
@@ -181,7 +181,7 @@ You can set the row span in chart like the following code example.
     </chart:SfChart.PrimaryAxis>
 
     <chart:SfChart.SecondaryAxis>
-        <chart:NumericalAxis />
+        <chart:NumericalAxis/>
     </chart:SfChart.SecondaryAxis>
 
     <chart:ColumnSeries XBindingPath="Brand"

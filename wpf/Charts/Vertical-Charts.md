@@ -100,8 +100,8 @@ The following example demonstrates the vertical charts.
 
 <chart:SfChart>
     <chart:SfChart.ColumnDefinitions>
-        <chart:ChartColumnDefinition />
-        <chart:ChartColumnDefinition />
+        <chart:ChartColumnDefinition/>
+        <chart:ChartColumnDefinition/>
     </chart:SfChart.ColumnDefinitions>
 
     <chart:SfChart.PrimaryAxis>
@@ -110,7 +110,7 @@ The following example demonstrates the vertical charts.
     </chart:SfChart.PrimaryAxis>
 
     <chart:SfChart.SecondaryAxis>
-        <chart:NumericalAxis />
+        <chart:NumericalAxis/>
     </chart:SfChart.SecondaryAxis>
 
     <chart:LineSeries

@@ -64,7 +64,6 @@ The following code shows, how to set the display mode using brush.
 {% highlight c# %}
 
 SunburstSelectionBehavior selection = new SunburstSelectionBehavior();
-
 selection.EnableSelection = true;
 selection.SelectionBrush = new SolidColorBrush(Colors.Black);
 selection.SelectionDisplayMode = SelectionDisplayMode.HighlightByColor;
@@ -101,7 +100,6 @@ Sunburst chart provides support to select or highlight the segment by clicking o
 {% highlight c# %}
 
 SunburstSelectionBehavior selection = new SunburstSelectionBehavior();
-
 selection.EnableSelection = true;
 selection.SelectionMode = Syncfusion.UI.Xaml.SunburstChart.SelectionMode.MouseClick;
 
@@ -137,7 +135,6 @@ The following code shows, how to set the selection type as child.
 {% highlight c# %}
 
 SunburstSelectionBehavior selection = new SunburstSelectionBehavior();
-
 selection.EnableSelection = true;
 selection.SelectionType = SelectionType.Child;
 
@@ -167,7 +164,6 @@ The following code shows, how to set the selection type as group.
 {% highlight c# %}
 
 SunburstSelectionBehavior selection = new SunburstSelectionBehavior();
-
 selection.EnableSelection = true;
 selection.SelectionType = SelectionType.Group;
 
@@ -197,7 +193,6 @@ The following code shows, how to set the selection type as parent.
 {% highlight c# %}
 
 SunburstSelectionBehavior selection = new SunburstSelectionBehavior();
-
 selection.EnableSelection = true;
 selection.SelectionType = SelectionType.Parent;
 
@@ -226,7 +221,6 @@ The following code shows, how to set the selection type as single.
 {% highlight c# %}
 
 SunburstSelectionBehavior selection = new SunburstSelectionBehavior();
-
 selection.EnableSelection = true;
 selection.SelectionType = SelectionType.Single;
 
@@ -257,7 +251,6 @@ The following code shows, how to set the selection cursor as hand.
 {% highlight c# %}
 
 SunburstSelectionBehavior selection = new SunburstSelectionBehavior();
-
 selection.EnableSelection = true;
 selection.SelectionCursor = Cursors.Hand;
 

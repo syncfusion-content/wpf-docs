@@ -204,13 +204,13 @@ N>By default the value of ShowTrackBallInfo is false.
 
 The alignment of the axis label while moving trackball can be defined using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_AxisLabelAlignment) property.
 
-Auto –Axis label is aligned in Near/Far positions based on the trackball movement.
+    Auto – Axis label is aligned in Near/Far positions based on the trackball movement.
 
-Far-Axis label is positioned far from the position of trackball.
+    Far - Axis label is positioned far from the position of trackball.
 
-Near- Axis label is near to the position of trackball.
+    Near - Axis label is near to the position of trackball.
 
-Center-Axis label is aligned to the center of the trackball. By default, the axis label will positioned in center.
+    Center - Axis label is aligned to the center of the trackball. By default, the axis label will positioned in center.
 
 **Far**
 
