@@ -49,7 +49,6 @@ ColumnSeries series = new ColumnSeries()
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo();
 
 series.AdornmentsInfo = adornmentInfo;
-
 chart.Series.Add(series);
 
 {% endhighlight %}
