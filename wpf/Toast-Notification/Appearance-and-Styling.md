@@ -115,6 +115,4 @@ SfToastNotification.Show(this, new ToastOptions
 | **Flip Right Down** | `FlipRightDownIn` | `FlipRightDownOut` |
 | **None** | `None` | `None` |
 
-N> Appearance customization features such as `Severity`, `Variant`, and `AccentBrush` are supported for custom toast notifications displayed in `Window` or `Screen` mode. These features are not supported in `Default` mode because OS-level toast appearance is controlled by the operating system. The `Variant` and `AccentBrush` properties are applicable only when `Severity` is set to `Info`, `Success`, `Warning`, or `Error`. They are not applicable when `Severity` is set to `None`.
-
-N> Options such as `Placement`, `ShowAnimationType`, `CloseAnimationType`, and `Duration` control the display behavior of custom toast notifications. These options are supported in `Window` or `Screen` mode, but are not supported in `Default` mode because OS-level toast placement, animation, and timing are managed by the operating system.
+N> Appearance customization features such as Severity, Variant, and AccentBrush, as well as behavior-related options like Placement, ShowAnimationType, CloseAnimationType, and Duration, are supported only for custom toast notifications displayed in Window or Screen mode. These are not supported in Default mode, as OS-level toast appearance, placement, animation, and timing are controlled by the operating system. Additionally, Variant and AccentBrush are applicable only when Severity is set to Info, Success, Warning, or Error, and not when it is set to None.
