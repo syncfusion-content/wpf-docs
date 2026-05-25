@@ -167,7 +167,6 @@ SfChart3D provides an option that enables you to define your own color brushes w
             </chart:ChartColorModel.CustomBrushes>
         </chart:ChartColorModel>
     </chart:DoughnutSeries3D.ColorModel>
-    
 </chart:DoughnutSeries3D>
 
 {% endhighlight %}

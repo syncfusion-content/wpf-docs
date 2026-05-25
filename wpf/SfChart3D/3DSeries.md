@@ -124,7 +124,6 @@ ColumnSeries3D series = new ColumnSeries3D()
 };
 
 ChartSeriesBase.SetSpacing(series, 0.6);
-
 chart3D.Series.Add(series);
 
 {% endhighlight %}

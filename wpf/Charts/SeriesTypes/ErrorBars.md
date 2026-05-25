@@ -36,7 +36,7 @@ The following code examples illustrates how to create error bar series:
     XBindingPath="ID" 
     YBindingPath="Coal" 
     VerticalErrorValue="50" 
-    HorizontalErrorValue="1"    >
+    HorizontalErrorValue="1">
 </chart:ErrorBarSeries>
 
 {% endhighlight %}

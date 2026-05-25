@@ -53,7 +53,7 @@ Then initialize an empty chart with two axes as shown below,
 
  <syncfusion:SfChart> 
       <syncfusion:SfChart.PrimaryAxis> 
-           <syncfusion:CategoryAxis /> 
+           <syncfusion:CategoryAxis/> 
       </syncfusion:SfChart.PrimaryAxis> 
       <syncfusion:SfChart.SecondaryAxis> 
            <syncfusion:NumericalAxis/> 
@@ -293,7 +293,8 @@ N> Syncfusion® Chart also supports rendering combination of multiple series. Re
 
 The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of chart as follows.
 
-{% tabs %} 
+{% tabs %}   
+
 {% highlight xaml %}
 
 <Grid>
@@ -303,14 +304,21 @@ The header of the chart acts as the title to provide quick information to the us
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
 chart.Header = "Chart";
+
 {% endhighlight %}
 
 {% highlight VB %}
+
+Dim chart As New SfChart()
+
 chart.Header = "Chart"
+
 {% endhighlight %}
-{% endtabs %}  
+
+{% endtabs %}
 
 Refer to [`this`](https://help.syncfusion.com/wpf/charts/header) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart header.
 
@@ -319,7 +327,8 @@ Refer to [`this`](https://help.syncfusion.com/wpf/charts/header) link to learn m
 
 You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentSeries.html#Syncfusion_UI_Xaml_Charts_AdornmentSeries_AdornmentsInfo) property of [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property of [`ChartAdornmentInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html) to True.
 
-{% tabs %} 
+{% tabs %}   
+
 {% highlight xaml %}
 
 <syncfusion:SfChart>
@@ -334,15 +343,19 @@ You can add data labels to improve the readability of the chart and it can be en
 
 {% endhighlight %}
 
-{% highlight C# %} 
-series.AdornmentsInfo = new ChartAdornmentInfo(){ ShowLabel = true }; 
+{% highlight C# %}
+
+series.AdornmentsInfo = new ChartAdornmentInfo(){ ShowLabel = true };
+
 {% endhighlight %}
 
-{% highlight VB %} 
-series.AdornmentsInfo = New ChartAdornmentInfo() With { ShowLabel = True} 
+{% highlight VB %}
+
+series.AdornmentsInfo = New ChartAdornmentInfo() With { ShowLabel = True}
+
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}
 
 Refer to [`this`](https://help.syncfusion.com/uwp/charts/adornments) link  to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart adornments.
 
@@ -350,30 +363,40 @@ Refer to [`this`](https://help.syncfusion.com/uwp/charts/adornments) link  to le
 
 You can enable legend using the [`SfChart.Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property as follows.
 
-{% tabs %} 
+{% tabs %}   
+
 {% highlight xaml %}
+
 <syncfusion:SfChart>
     ...
     <syncfusion:SfChart.Legend>
         <syncfusion:ChartLegend/>
     </syncfusion:SfChart.Legend>
     ...
-</syncfusion:SfChart>
+</syncfusion:SfChart> 
+
 {% endhighlight %}
 
-{% highlight C# %} 
-chart.Legend = new ChartLegend(); 
+{% highlight C# %}
+
+chart.Legend = new ChartLegend();
+
 {% endhighlight %}
 
-{% highlight VB %} 
-chart.Legend = New ChartLegend() 
+{% highlight VB %}
+
+chart.Legend = New ChartLegend()
+
 {% endhighlight %}
-{% endtabs %}  
+
+{% endtabs %} 
 
 Additionally, you need to set label for each series using the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of ChartSeries, which will be displayed in corresponding legend.
 
-{% tabs %} 
+{% tabs %}   
+
 {% highlight xaml %}
+
 <syncfusion:SfChart>
     ...
     <syncfusion:ColumnSeries 
@@ -383,25 +406,30 @@ Additionally, you need to set label for each series using the [`Label`](https://
         YBindingPath="Height"/>
     ...
 </syncfusion:SfChart>
+
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
 ColumnSeries series = new ColumnSeries(); 
 series.ItemsSource = (new ViewModel()).Data;
 series.XBindingPath = "Name"; 
 series.YBindingPath = "Height"; 
 series.Label = "Heights";
+
 {% endhighlight %}
 
-{% highlight VB %} 
+{% highlight VB %}
+
 Dim series As New ColumnSeries() 
 series.ItemsSource = New ViewModel().Data
 series.XBindingPath = "Name" 
 series.YBindingPath = "Height" 
 series.Label = "Heights"
+
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %} 
 
 Refer to this [`link`](https://help.syncfusion.com/uwp/charts/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize legend.
 
@@ -409,8 +437,10 @@ Refer to this [`link`](https://help.syncfusion.com/uwp/charts/legend) to learn m
 
 Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip)  property to true.
 
-{% tabs %} 
+{% tabs %}   
+
 {% highlight xaml %}
+
 <syncfusion:SfChart>
     ...
     <syncfusion:ColumnSeries 
@@ -420,31 +450,39 @@ Tooltips are used to show information about the segment, when you click the segm
         YBindingPath="Height"/>
     ...
 </syncfusion:SfChart>
+
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).Data;
-series.XBindingPath = "Name";          
+series.XBindingPath = "Name";
 series.YBindingPath = "Height";
 series.ShowTooltip = true;
+
 {% endhighlight %}
 
-{% highlight VB %} 
+{% highlight VB %}
+
 Dim series As New ColumnSeries () 
 series.ItemsSource = New ViewModel().Data
 series.XBindingPath = "Name" 
 series.YBindingPath = "Height" 
 series.ShowTooltip = True
-{% endhighlight %}
-{% endtabs %}
 
-Refer to [`this`](https://help.syncfusion.com/uwp/charts/interactive-features#tooltip) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize tooltip.
+{% endhighlight %}
+
+{% endtabs %} 
+
+Refer to this [`link`](https://help.syncfusion.com/uwp/charts/interactive-features#tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize tooltip.
 
 The following code example gives you the complete code of above configurations.
 
-{% tabs %} 
+{% tabs %}   
+
 {% highlight xaml %}
+
 <Window x:Class="Sample_WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -487,9 +525,11 @@ The following code example gives you the complete code of above configurations.
         </syncfusion:SfChart>
     </Grid>
 </Window>
+
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
 using Syncfusion.UI.Xaml.Charts;
 namespace ChartDemo
 {
@@ -534,9 +574,11 @@ namespace ChartDemo
         }
     }
 }
+
 {% endhighlight %}
 
 {% highlight VB %}
+
 Imports Syncfusion.UI.Xaml.Charts
 Partial Public Class MainWindow
     Inherits Window
@@ -582,7 +624,9 @@ Partial Public Class MainWindow
 
     End Sub
 End Class
+
 {% endhighlight %}
+
 {% endtabs %}
 
 The following chart is created as a result of the previous codes.
