@@ -1,34 +1,32 @@
 ---
 layout: post
-title: Tab Management in WPF Tabbed Window | Syncfusion
-description: Manage tabs dynamically by supporting close buttons, creating new tabs, and updating the selected tab during interactions.
+title: Tab Management in WPF Tabbed Window| Syncfusion
+description: Learn how to manage tabs in a WPF tabbed window by using close buttons, adding new tabs, customizing tab appearance, and using keyboard shortcuts.
 platform: wpf
 control: TabbedWindow
 documentation: ug
 ---
 
-# WPF Tabbed Window - Tab Management
+# Tab Management in WPF Tabbed Window
 
-## Overview
+This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, and navigating tabs using keyboard shortcuts.
 
-The Tabbed Window provides comprehensive tab management capabilities including dynamic tab creation, tab closing, and tab selection. These features enable flexible and responsive tab-based interfaces.
+## Closing Tabs
 
-## Close Button Support
-
-Display close buttons on individual tabs using the `CloseButtonVisibility` property on `SfTabItem`:
+You can display close buttons on individual tabs using the [CloseButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabItem.html#Syncfusion_Windows_Controls_SfTabItem_CloseButtonVisibility) property on [SfTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabItem.html).
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:SfTabControl>
-    <syncfusion:SfTabItem 
-        Header="Document 1" 
+<syncfusion:SfTabControl x:Name="maintabcontrol">
+    <syncfusion:SfTabItem
+        Header="Document 1"
         CloseButtonVisibility="Visible">
         <TextBlock Text="Click the X button to close this tab" />
     </syncfusion:SfTabItem>
-    <syncfusion:SfTabItem 
-        Header="Document 2" 
+    <syncfusion:SfTabItem
+        Header="Document 2"
         CloseButtonVisibility="Visible">
         <TextBlock Text="Each tab has its own close button" />
     </syncfusion:SfTabItem>
@@ -36,15 +34,11 @@ Display close buttons on individual tabs using the `CloseButtonVisibility` prope
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
-var tabItem = new SfTabItem 
-{ 
-    Header = "Document", 
+var tabItem = new SfTabItem
+{
+    Header = "Document",
     CloseButtonVisibility = Visibility.Visible,
     Content = new TextBlock { Text = "Tab Content" }
 };
@@ -54,19 +48,19 @@ tabControl.Items.Add(tabItem);
 
 {% endtabs %}
 
-When a user clicks the close button, the tab is automatically removed and the control selects the next available tab.
+When the user clicks the close button, the corresponding tab is automatically removed from the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html), and the next available tab is selected.
 
 ![WPF TabbedWindow CloseButton](tab-management_images/tabbedwindow_closebutton.gif)
 
-## New Tab Button
+## Adding New Tabs
 
-Enable the new tab button to allow users to dynamically add tabs:
+The [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) provides a built‑in new tab button that allows users to add tabs dynamically at runtime. Set the [EnableNewTabButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_EnableNewTabButton) property to True to display this button. Clicking it raises the [NewTabRequested](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_NewTabRequested) event, where a new [SfTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabItem.html) can be created.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:SfTabControl 
+<syncfusion:SfTabControl
     EnableNewTabButton="True"
     NewTabRequested="OnNewTabRequested">
     <syncfusion:SfTabItem Header="Tab 1">
@@ -80,19 +74,18 @@ Enable the new tab button to allow users to dynamically add tabs:
 
 private void OnNewTabRequested(object sender, NewTabRequestedEventArgs e)
 {
-    // Create a new tab item when user clicks the + button
-    var newTabContent = new TextBlock 
-    { 
-        Text = $"New Document {DateTime.Now:g}" 
+    var newTabContent = new TextBlock
+    {
+        Text = $"New Document {DateTime.Now:g}"
     };
-    
-    var newTabItem = new SfTabItem 
-    { 
+
+    var newTabItem = new SfTabItem
+    {
         Header = $"Document {tabControl.Items.Count + 1}",
         Content = newTabContent,
         CloseButtonVisibility = Visibility.Visible
     };
-    
+
     e.Item = newTabItem;
 }
 
@@ -102,9 +95,9 @@ private void OnNewTabRequested(object sender, NewTabRequestedEventArgs e)
 
 ![WPF TabbedWindow New Tab Button](tab-management_images/tabbedwindow_newbutton.gif)
 
-### Customization of New tab button
+## Customizing the New Tab Button
 
-`NewTabButtonStyle` targets the internal `Button` used for the new‑tab afford and controls visual properties such as size, background, border and padding without replacing the element tree. 
+You can customize the appearance of the new tab button using the [NewTabButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_NewTabButtonStyle) property. This allows you to modify visual properties such as background, border, width, and height.
 
 {% tabs %}
 
@@ -131,10 +124,11 @@ private void OnNewTabRequested(object sender, NewTabRequestedEventArgs e)
 
 ![WPF NewButton style](tab-management_images/wpf_newbuttonstyle.png)
 
-## Keyboard shortcuts
+## Keyboard Shortcuts
 
-- `Ctrl + Tab` — move to the next tab.
-- `Ctrl + Shift + Tab` — move to the previous tab.
-- `Ctrl + T` — create a new `SfTabItem` (programmatic shortcut).
-- Mouse middle‑click on a `SfTabItem` header — close that tab.
+The Tabbed Window provides built‑in keyboard and mouse shortcuts for efficient tab navigation and management:
 
+- Ctrl + Tab - Switch to the next tab.
+- Ctrl + Shift + Tab - Switch to the previous tab.
+- Ctrl + T - Create a new tab.
+- Middle mouse click on a tab header - Close the tab.

@@ -7,40 +7,48 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Mermaid Support in WPF Markdown Viewer
+# Mermaid Diagram Support in WPF Markdown Viewer
  
-The [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMarkdownViewer.Wpf.html) control provides built-in support for rendering Mermaid diagrams and flowcharts within Markdown content. Mermaid is a JavaScript-based diagramming and charting tool that uses text-based definitions to create and modify diagrams dynamically.
+The [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control provides built-in support for rendering Mermaid diagrams and flowcharts within Markdown content.
+
+Mermaid is a text-based diagramming tool that allows you to define diagrams using simple syntax. The viewer parses Mermaid code blocks and renders them as visual diagrams directly within the Markdown content.
  
-## MermaidBlockTemplate Property
+## Rendering Mermaid Diagrams
  
-The [MermaidBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_MermaidBlockTemplate) property accepts a `DataTemplate` that defines how Mermaid code blocks should be rendered. When a code block with the language identifier `mermaid` is encountered, the control uses this template instead of the default code block rendering.
+The [MermaidBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_MermaidBlockTemplate) property allows you to define how Mermaid code blocks are rendered. It accepts a DataTemplate that replaces the default rendering for code blocks with the mermaid language identifier.
+
+When a Markdown code block marked as mermaid is encountered, the specified template is used to render the diagram.
+
+**Example:**
+
+The following example demonstrates how to render Mermaid flowcharts using [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) within the [MermaidBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_MermaidBlockTemplate).
 
 {% tabs %} 
 {% highlight xaml %}
 
-    <Grid>
-        <syncfusion:SfMarkdownViewer>
-            <syncfusion:SfMarkdownViewer.MermaidBlockTemplate>
-                <DataTemplate x:Key="MermaidBlockTemplate">
-                    <diagram:SfDiagram x:Name="mermaidDiagram" Foreground="Black"
-                                 Height="600" Width="1000" Focusable="False"
-                                 HorizontalAlignment="Left" 
-                                 HorizontalContentAlignment="Left"
-                                 Loaded="mermaidDiagram_Loaded">
-                    </diagram:SfDiagram>
+<Grid>
+    <syncfusion:SfMarkdownViewer>
+        <syncfusion:SfMarkdownViewer.MermaidBlockTemplate>
+            <DataTemplate x:Key="MermaidBlockTemplate">
+                <diagram:SfDiagram x:Name="mermaidDiagram" Foreground="Black"
+                    Height="600" Width="1000" Focusable="False"
+                    HorizontalAlignment="Left" 
+                    HorizontalContentAlignment="Left"
+                    Loaded="mermaidDiagram_Loaded">
+                </diagram:SfDiagram>
             </DataTemplate>
-            </syncfusion:SfMarkdownViewer.MermaidBlockTemplate>
-            <syncfusion:SfMarkdownViewer.Source>
-                <system:String xml:space="preserve">
-                    <![CDATA[
+        </syncfusion:SfMarkdownViewer.MermaidBlockTemplate>
+        <syncfusion:SfMarkdownViewer.Source>
+            <system:String xml:space="preserve">
+                <![CDATA[
 
 # Mermaid Flowchart
 
-Mermaid flowcharts let you describe processes and decision trees in plain text, and the viewer renders them into clear, interactive diagrams. This makes it simple to illustrate workflows, logic paths, or system flows directly inside Markdown without external tools.  
+Mermaid flowcharts let you describe processes and decision trees in plain text. The viewer renders them into clear, interactive diagrams. 
 
 ---
 
-```mermaid
+```mermaid  
 flowchart TD
     A[User Opens App] --> B[MarkdownViewer Loads]
     B --> C{Contains Mermaid?}
@@ -48,12 +56,11 @@ flowchart TD
     C -->|No| E[Render Plain Markdown]
     D --> F[Display Enhanced Output]
     E --> F
-            ]]>
-                </system:String>
-            </syncfusion:SfMarkdownViewer.Source>
-        </syncfusion:SfMarkdownViewer>
-
-    </Grid>
+                ]]>
+            </system:String>
+        </syncfusion:SfMarkdownViewer.Source>
+    </syncfusion:SfMarkdownViewer>
+</Grid>
 
 {% endhighlight %}
 
@@ -94,5 +101,7 @@ namespace MarkdownViewerGettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+
+**Output:**
 
 ![Mermaid Diagrams in WPF Markdown Viewer](Images/wpf-markdown-mermaid-block.gif)
