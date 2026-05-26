@@ -449,9 +449,10 @@ N> Add namespace of ViewModel class in your XAML page if you prefer to set DataC
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:GettingStarted">
-<Window.DataContext>
-        <local:ViewModel/>
-</Window.DataContext>
+    <Window.DataContext>
+            <local:ViewModel/>
+    </Window.DataContext>
+</Window>
 
 {% endhighlight %}
 
