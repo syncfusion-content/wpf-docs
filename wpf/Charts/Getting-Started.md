@@ -51,9 +51,9 @@ Then initialize an empty chart with two axes as shown below,
 
 {% highlight xaml %} 
 
- <syncfusion:SfChart> 
-      <syncfusion:SfChart.PrimaryAxis> 
-           <syncfusion:CategoryAxis/> 
+ <syncfusion:SfChart>
+      <syncfusion:SfChart.PrimaryAxis>
+           <syncfusion:CategoryAxis/>
       </syncfusion:SfChart.PrimaryAxis> 
       <syncfusion:SfChart.SecondaryAxis> 
            <syncfusion:NumericalAxis/> 
