@@ -31,7 +31,7 @@ The [NodePopulationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.T
    * OnDemand - Populate the child nodes only when parent nodes is expanded. It is the default value.
    * Instant - Populates all the child nodes when Treeview control is initially loaded.
 
-### Limitations when CheckBoxMode is Recursive
+### Limitations
 
    * When [CheckBoxMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) is `Recursive` and [NodePopulationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodePopulationMode) is `OnDemand`(default), programmatically adding items to the [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) collection does not correctly update parent checkbox states (checked, unchecked, or intermediate).
    * In `OnDemand` mode, child nodes are created only when their parent nodes are expanded. As a result, for items under collapsed parents, the control cannot locate the corresponding [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html), which prevents `Recursive` checkbox state propagation to parent nodes.
