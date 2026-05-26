@@ -27,7 +27,6 @@ Sunburst chart allows you to animate the chart segments. You can enable animatio
 {% highlight c# %}
 
 sunburstChart.EnableAnimation = true;
-
 sunburstChart.AnimationDuration = 5000;
 
 {% endhighlight %}

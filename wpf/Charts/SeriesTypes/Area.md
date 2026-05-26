@@ -18,7 +18,12 @@ The following code example initializes the AreaSeries:
 
 {% highlight xaml %}
 
-<chart:AreaSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" ItemsSource="{Binding Fruits}" >   
+<chart:AreaSeries 
+    XBindingPath="FruitName" 
+    Interior="#BCBCBC" 
+    YBindingPath="People" 
+    ItemsSource="{Binding Fruits}">
+</chart:StepAreaSeries>  
 
 {% endhighlight %}
 
