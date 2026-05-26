@@ -29,7 +29,7 @@ The [NodePopulationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.T
 
    * OnDemand - Populate the child nodes only when parent nodes is expanded. It is the default value.
    * Instant - Populates all the child nodes when Treeview control is initially loaded.
-
+   
 ### Create Data Model for treeview
 
 Create a simple data source as shown in the following code example in a new class file, and save it as FileManager.cs file:
