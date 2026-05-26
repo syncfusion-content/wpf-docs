@@ -402,8 +402,6 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<syncfusion:DoughnutSeries StartAngle="180" EndAngle="360" 
-
 <syncfusion:DoughnutSeries 
     StartAngle="180" 
     EndAngle="360" 

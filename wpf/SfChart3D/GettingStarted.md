@@ -13,7 +13,7 @@ This section explains you the steps required to populate the Chart with data, he
 
 ## Adding chart reference
 
-Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion® controls to Visual Studio projects in various ways. You can also refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to learn about the assemblies required for adding Chart to your project. 
+Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion® controls to Visual Studio projects in various ways. You can also refer to this [link](https://help.syncfusion.com/wpf/control-dependencies) to learn about the assemblies required for adding Chart to your project. 
 
 ## Initialize chart
 
@@ -163,12 +163,12 @@ As we are going to visualize the comparison of heights in the data model, add [`
 
      <!-- PrimaryAxis -->
      <chart:SfChart3D.PrimaryAxis>
-         <chart:DateTimeAxis3D />
+         <chart:DateTimeAxis3D/>
      </chart:SfChart3D.PrimaryAxis>
 
      <!-- SecondaryAxis -->
      <chart:SfChart3D.SecondaryAxis>
-         <chart:NumericalAxis3D />
+         <chart:NumericalAxis3D/>
      </chart:SfChart3D.SecondaryAxis>
 
      <chart:ColumnSeries3D
@@ -206,7 +206,8 @@ chart3D.Series.Add(series);
 
 The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property of chart as follows.
 
-{% tabs %} 
+{% tabs %}
+  
 {% highlight xaml %}
 
 <Grid>
@@ -215,18 +216,23 @@ The header of the chart acts as the title to provide quick information to the us
 
 {% endhighlight %}
 
-{% highlight C# %} 
-SfChart3D chart3D = new SfChart3D();
+{% highlight c# %}
 
-chart3D.Header = "Chart";
+series.AdornmentsInfo = new ChartAdornmentInfo3D() 
+{ 
+    ShowLabel = true 
+};
+
 {% endhighlight %}
-{% endtabs %}  
+
+{% endtabs %}
 
 ## Enable data labels
 
 You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentsInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries3D.html#Syncfusion_UI_Xaml_Charts_ChartSeries3D_AdornmentsInfo) property of [`ChartSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries3D.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property of [`ChartAdornmentInfo3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo3D.html) to True.
 
-{% tabs %} 
+{% tabs %}
+  
 {% highlight xaml %}
 
 <Grid>
@@ -246,13 +252,16 @@ You can add data labels to improve the readability of the chart and it can be en
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
+
 series.AdornmentsInfo = new ChartAdornmentInfo3D() 
 { 
     ShowLabel = true 
 };
+
 {% endhighlight %}
-{% endtabs %}  
+
+{% endtabs %}
 
 Refer to [`Adornments`](https://help.syncfusion.com/wpf/SfChart3D/Adornments) to learn more about the options to customize chart adornments.
 
@@ -260,7 +269,8 @@ Refer to [`Adornments`](https://help.syncfusion.com/wpf/SfChart3D/Adornments) to
 
 You can enable legend using the [`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property as follows.
 
-{% tabs %} 
+{% tabs %}
+  
 {% highlight xaml %}
 
 <Grid>
@@ -276,14 +286,18 @@ You can enable legend using the [`Legend`](https://help.syncfusion.com/cr/wpf/Sy
 
 {% endhighlight %}
 
-{% highlight C# %} 
-chart.Legend = new ChartLegend(); 
+{% highlight c# %}
+
+chart.Legend = new ChartLegend();
+
 {% endhighlight %}
-{% endtabs %}  
+
+{% endtabs %}
 
 Additionally, you need to set label for each series using the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of ChartSeries, which will be displayed in corresponding legend.
 
-{% tabs %} 
+{% tabs %}
+  
 {% highlight xaml %}
 
 <chart:SfChart3D>
@@ -291,7 +305,7 @@ Additionally, you need to set label for each series using the [`Label`](https://
     <chart:ColumnSeries3D 
         Label="UserProfile" 
         ItemsSource="{Binding UsersList}" 
-        XBindingPath="TimeStamp"           
+        XBindingPath="TimeStamp"
         YBindingPath="NoOfUsers">
     </chart:ColumnSeries3D>
     ...
@@ -299,7 +313,8 @@ Additionally, you need to set label for each series using the [`Label`](https://
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
+
 ColumnSeries3D series = new ColumnSeries3D()
 {
     ItemsSource = new UsersViewModel().UsersList,
@@ -307,23 +322,26 @@ ColumnSeries3D series = new ColumnSeries3D()
     YBindingPath = "NoOfUsers",
     Label = "UserProfile"
 };
+
 {% endhighlight %}
-{% endtabs %}  
+
+{% endtabs %}
 
 ## Enable tooltip
 
 Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip)  property to true.
 
-{% tabs %} 
+{% tabs %}
+  
 {% highlight xaml %}
 
 <chart:SfChart3D>
     ...
     <chart:ColumnSeries3D 
-        Label="UserProfile" 
+        Label="UserProfile"
         ItemsSource="{Binding UsersList}" 
-        XBindingPath="TimeStamp"            
-        YBindingPath="NoOfUsers" 
+        XBindingPath="TimeStamp"
+        YBindingPath="NoOfUsers"
         ShowTooltip="True">
     </chart:ColumnSeries3D>
     ...
@@ -331,7 +349,8 @@ Tooltips are used to show information about the segment, when you click the segm
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
+
 ColumnSeries3D series = new ColumnSeries3D()
 {
     ItemsSource = new UsersViewModel().UsersList,
@@ -340,7 +359,9 @@ ColumnSeries3D series = new ColumnSeries3D()
     Label = "UserProfile",
     ShowTooltip = true,            
 };
+
 {% endhighlight %}
+
 {% endtabs %}
 
 The following code example gives you the complete code of above configurations.
