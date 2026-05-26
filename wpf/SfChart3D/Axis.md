@@ -184,8 +184,8 @@ The depth axis is implemented by defining the required axis type to the [`DepthA
 
 The following code example illustrates how to create Depth Axis.
 
-{% tabs %} 
-
+{% tabs %}
+  
 {% highlight xaml %}
 
 <chart:SfChart3D 
@@ -210,7 +210,7 @@ The following code example illustrates how to create Depth Axis.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SfChart3D chart = new SfChart3D();
 chart.Rotation = 43;
@@ -228,6 +228,7 @@ series1.ItemsSource = (new ViewModel()).Data;
 series1.XBindingPath = "XValue";
 series1.YBindingPath = "YValue";
 series1.ZBindingPath = "ZValue";
+
 chart.Series.Add(series1);
 this.Content = chart;
 
