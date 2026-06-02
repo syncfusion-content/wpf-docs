@@ -536,6 +536,43 @@ Dark Theme:
 
 ![Customizing using ThemeResource Dark](Skin-Manager_images/Customizing-using-ThemeResource-Dark.png)
 
+### Applying a Centralized Custom Style with ThemeKey
+
+The `StyleVariant` attached property is used to apply **theme styles automatically** based on the active theme.
+
+#### Basic usage
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Button
+    Content="Submit"
+    sfskinmanager:SfSkinManager.StyleVariant="WPFFlatButtonStyle" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+The control style is resolved automatically from the active theme.
+
+### Apply StyleVariant with custom style
+
+You can also combine `StyleVariant` with a custom `Style` to override or extend properties.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Button
+    Content="Cancel" Margin="10"
+    sfskinmanager:SfSkinManager.StyleVariant="WPFFlatButtonStyle"
+    Style="{StaticResource ButtonStyles}" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Accessing Theme Resources Using TryFindResource 
 
 To access specific theme resources in your WPF application, you can use the `TryFindResource(key)` method to retrieve a resource by its key and apply it in the code-behind. 
