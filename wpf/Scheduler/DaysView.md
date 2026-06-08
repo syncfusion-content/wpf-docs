@@ -82,7 +82,7 @@ The `AllowSpannedAppointmentsInTimeSlots` property determines whether appointmen
                        ViewType="Day">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings  AllowSpannedAppointmentsInTimeSlots="True"/>
-    </scheduler:SfScheduler.DaysView>
+    </scheduler:SfScheduler.DaysViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight C# tabtitle="C#" hl_lines="3" %}
