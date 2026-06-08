@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About .NET WPF Markdown Viewer control | Syncfusion
-description: Learn how to customize the appearance and behavior of the Syncfusion® Wpf SfMarkdownViewer control, including styling elements and modifying themes.
+title: Customize WPF MarkdownViewer Appearance | Syncfusion
+description: Learn how to customize the appearance and behavior of the Syncfusion® WPF SfMarkdownViewer control, including styling elements and modifying themes.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Customize Appearance in Wpf SfMarkdownViewer
+# Customize Appearance in WPF SfMarkdownViewer
 
-The [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.html) control in Wpf provides a powerful styling system through the [MarkdownStyleSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.html) class. This allows developers to customize the visual presentation of Markdown content with precision and flexibility.
+The [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.html) control in WPF provides a powerful styling system through the [MarkdownStyleSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.html) class. This allows developers to customize the visual presentation of Markdown content with precision and flexibility.
 
 ## Customization with MarkdownStyleSettings
 
@@ -167,3 +167,5 @@ Used to define major sections within your Markdown content.
 The following output shows how these style settings enhance the appearance of rendered Markdown content:
 
 ![Syncfusion Wpf Markdown Viewer](Images/wpf-markdown-viewer-customization.png)
+
+N> Changing values dynamically in Themestudio settings isn't supported.
