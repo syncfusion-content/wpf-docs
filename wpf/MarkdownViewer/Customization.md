@@ -168,4 +168,4 @@ The following output shows how these style settings enhance the appearance of re
 
 ![Syncfusion Wpf Markdown Viewer](Images/wpf-markdown-viewer-customization.png)
 
-N> Changing values dynamically in Themestudio settings isn't supported.
+N> Changing values dynamically in Theme studio settings isn't supported.
