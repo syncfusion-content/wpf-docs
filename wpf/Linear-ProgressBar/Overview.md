@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About WPF Linear ProgressBar control  | Syncfusion<sup>&reg;</sup>;
+title: About WPF Linear ProgressBar control  | Syncfusion
 description: Learn here all about introduction of Syncfusion<sup>&reg;</sup>; WPF Linear ProgressBar control, its feature and more details.
 platform: wpf
 control: SfLinearProgressBar
