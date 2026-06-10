@@ -45,6 +45,7 @@ I need a Syncfusion WPF [control name] with the following specifications:
 - [feature list]
 - Target: WPF with .NET Framework or .NET Core
 - Implementation language: C#
+- Dependencies: Identify and use the correct from https://help.syncfusion.com/wpf/control-dependencies
 
 Reference: https://help.syncfusion.com/wpf/[control]/getting-started
 ```
@@ -68,6 +69,7 @@ I need a Syncfusion WPF DataGrid component with the following specifications:
 - Implement row virtualization for performance
 - Target: WPF with .NET Framework 4.7+
 - Implementation language: C# with XAML
+- Dependencies: Identify and use the correct from https://help.syncfusion.com/wpf/control-dependencies
 
 Reference: https://help.syncfusion.com/wpf/datagrid/getting-started
 ```
@@ -130,7 +132,7 @@ If you're building tools or applications that use AI APIs (Claude API, OpenAI, G
 
 ```
 You are an expert in Syncfusion WPF controls written in C#.
-- Always use Syncfusion.*.WPF NuGet packages
+- Always use Syncfusion NuGet packages, and ensure you identify and include the correct dependencies listed at: https://help.syncfusion.com/wpf/control-dependencies
 - Use XAML for UI definitions and C# for code-behind logic
 - Import namespaces from Syncfusion Nuget Packages.
 - Register controls in XAML with appropriate XML namespaces
@@ -229,7 +231,7 @@ AI models are trained on historical data and may suggest APIs from older Syncfus
 ```
 Use Syncfusion WPF latest APIs only.
 Target: WPF with .NET Framework 4.7+ or .NET Core 3.1+
-Use current Syncfusion.*.WPF packages.
+Use current NuGet packages:Ensure you identify and include the correct dependencies listed at: https://help.syncfusion.com/wpf/control-dependencies
 
 Find any Syncfusion WPF component's API reference at https://help.syncfusion.com/wpf/
 ```
