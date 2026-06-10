@@ -79,15 +79,15 @@ The `AllowSpannedAppointmentsInTimeSlots` property determines whether appointmen
 {% tabs %}
 {% highlight XAML tabtitle="XAML" hl_lines="4" %}
 <scheduler:SfScheduler x:Name="Scheduler" 
-                       ViewType="Day">
+                       ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
-        <scheduler:DaysViewSettings  AllowSpannedAppointmentsInTimeSlots="True"/>
+        <scheduler:DaysViewSettings AllowSpannedAppointmentsInTimeSlots="True"/>
     </scheduler:SfScheduler.DaysViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight C# tabtitle="C#" hl_lines="3" %}
 SfScheduler scheduler = new SfScheduler();
-scheduler.ViewType = SchedulerView.Day;
+scheduler.ViewType = SchedulerView.Week;
 scheduler.DaysViewSettings.AllowSpannedAppointmentsInTimeSlots = true;
 this.Content = scheduler;
 {% endhighlight %}
