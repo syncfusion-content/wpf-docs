@@ -184,3 +184,4 @@ public class EmployeeInfo
 3. **Child nodes** are not considered in page size calculation.
 4. Selection should not be maintained when moving from one page to another.
 5. **Sorting and Filtering** are applied across all pages. However, node reordering occurs only within each individual page.
+6. The **data operations** such as Add, Replace, Remove, Insert, and Move are not supported.
