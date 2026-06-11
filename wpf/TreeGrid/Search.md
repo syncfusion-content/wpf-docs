@@ -77,7 +77,7 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Fore Color of Search Text in WPF TreeGrid](Search_images/wpf-treegrid-search-text-fore-color.png)
+![Changing Foreground Color of Search Text in WPF TreeGrid](Search_images/wpf-treegrid-search-text-fore-color.png)
 
 ## Navigating cells based on search text
 
