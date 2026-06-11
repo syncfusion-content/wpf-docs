@@ -22,7 +22,7 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 ![WPF TreeGrid with Search Panel](Search_images/wpf-treegrid-search-panel.png)
 
 
-### Filtering
+## Filtering
 
 You can enable filter based on search by setting `SearchController.AllowFiltering` property to true.
 
@@ -49,7 +49,7 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
-### Changing Search Highlight Background
+## Changing Search Highlight Background
 
 In WPF TreeGrid (SfTreeGrid), you can change the search text highlighting color by setting `SearchController.MatchedCellBackground` property. 
 
@@ -64,7 +64,7 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 ![Changing Search Text Highlighting Color in WPF TreeGrid](Search_images/wpf-treegrid-highlight-search-color.png)
 
-### Changing foreground for search highlight
+## Changing foreground for search highlight
 
 In WPF TreeGrid (SfTreeGrid), you can change the foreground color for search text by setting the `SearchController.MatchedCellForeground` property. 
 
