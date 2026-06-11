@@ -9,7 +9,7 @@ documentation: ug
 
 # Search in WPF TreeGrid (SfTreeGrid)
 
-[WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) control allows you to search the data displayed in the SfTreeGrid. You can search the data by using `SearchControlller.Search` method.
+[WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) control allows you to search the data displayed in the SfTreeGrid. You can search the data by using `SearchController.Search` method.
 
 {% tabs %}
 {% highlight c# %}
