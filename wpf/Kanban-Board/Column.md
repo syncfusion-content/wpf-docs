@@ -161,7 +161,7 @@ kanbanColumn.AllowDrag = false;
 
 ### Column Drag and Drop
 
-The Kanban control also supports column reordering through drag-and-drop. which can be enabled by setting the AllowColumnDrag property in the SfKanban class.
+The Kanban control also supports column reordering through drag-and-drop. which can be enabled by setting the `AllowColumnDrag` property in the SfKanban class.
 
 {% tabs %}
 
