@@ -54,19 +54,19 @@ Used to define major sections within your Markdown content.
               ]]>
             </x:String>
         </syncfusion:SfMarkdownViewer.Source>
-        <markdown:SfMarkdownViewer.Settings>
-            <markdown:MarkdownStyleSettings>
-                <markdown:MarkdownStyleSettings.H1Style>
-                    <markdown:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
-                </markdown:MarkdownStyleSettings.H1Style>
-                <markdown:MarkdownStyleSettings.H2Style>
-                    <markdown:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
-                </markdown:MarkdownStyleSettings.H2Style>
-                <markdown:MarkdownStyleSettings.ParagraphStyle>
-                    <markdown:ParagraphSettings FontStyle="Italic" FontSize="15" />
-                </markdown:MarkdownStyleSettings.ParagraphStyle>
-            </markdown:MarkdownStyleSettings>
-        </markdown:SfMarkdownViewer.Settings>
+        <syncfusion:SfMarkdownViewer.Settings>
+            <syncfusion:MarkdownStyleSettings>
+                <syncfusion:MarkdownStyleSettings.H1Style>
+                    <syncfusion:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
+                </syncfusion:MarkdownStyleSettings.H1Style>
+                <syncfusion:MarkdownStyleSettings.H2Style>
+                    <syncfusion:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
+                </syncfusion:MarkdownStyleSettings.H2Style>
+                <syncfusion:MarkdownStyleSettings.ParagraphStyle>
+                    <syncfusion:ParagraphSettings FontStyle="Italic" FontSize="15" />
+                </syncfusion:MarkdownStyleSettings.ParagraphStyle>
+            </syncfusion:MarkdownStyleSettings>
+        </syncfusion:SfMarkdownViewer.Settings>
     </syncfusion:SfMarkdownViewer>
 </Grid>
 
@@ -126,4 +126,4 @@ Used to define major sections within your Markdown content.
 The following image shows the rendered output with customized heading and paragraph styles:
 ![Syncfusion Wpf Markdown Viewer](Images/wpf-markdown-viewer-customization.WEBP)
 
-N> Changing values dynamically in Theme studio settings isn't supported.
+N> ThemeSettings in WPF ThemeStudio are not supported for customization within the MarkdownViewer.
