@@ -10,7 +10,7 @@ documentation: ug
 
 # Summaries in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
 
 * **Table Summary** – Used to display summary information of table either at top or bottom of SfDataGrid. 
 

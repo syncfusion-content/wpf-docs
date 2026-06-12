@@ -433,7 +433,7 @@ void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.Curren
 
 ## Cell click events
 
-WPF DataGrid provides `CellTapped` and `CellDoubleTapped` events to handle cell click actions. 
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides `CellTapped` and `CellDoubleTapped` events to handle cell click actions. 
 
 ### Cell tapped event
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes in WPF DataGrid (SfDataGrid)
 
-SfDataGrid supports various built-in themes. Refer to the below links to apply themes for the SfDataGrid,
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) supports various built-in themes. Refer to the below links to apply themes for the SfDataGrid,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
