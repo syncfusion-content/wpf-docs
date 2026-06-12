@@ -613,3 +613,5 @@ SfDataGrid supports various built-in themes. Refer to the below links to apply t
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Applying Theme to WPF DataGrid](getting-started_images/wpf-datagrid-theme.png)
+
+N> Looking for the full WPF Data Grid component overview, features, pricing, and documentation? Visit the [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) page.

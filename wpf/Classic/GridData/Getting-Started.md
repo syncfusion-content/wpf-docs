@@ -1227,3 +1227,5 @@ To view samples:
 3. Select GridTreeControl.
 4. Expand the Data Population Features item in the Sample Browser.
 5. Select Data View Binding Demo to launch the sample.
+
+N> Looking for the full WPF Data Grid component overview, features, pricing, and documentation? Visit the [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) page.

@@ -35,3 +35,4 @@ The following sections elaborate the properties of the GridData control:
 * Performance-High performance of the Grid with large amount of data is discussed in this section
 * Real Time Application-Illustrates how to employ the grid in portfolio applications
 
+N> Looking for the full WPF Data Grid component overview, features, pricing, and documentation? Visit the [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) page.
