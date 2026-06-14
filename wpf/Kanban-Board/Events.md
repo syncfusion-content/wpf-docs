@@ -38,6 +38,207 @@ The [`CardDoubleTapped`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.K
 * [`SelectedCardIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDoubleTappedEventArgs_SelectedCardIndex) - Used to get the index of dragging card in a column.
 * [`SelectedColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDoubleTappedEventArgs_SelectedColumn) - Used to get the column of the selected card.
 
+## ColumnDragStarting
+
+The `ColumnDragStarting` event occurs when a column begins to be dragged. We can get the following details from the ColumnDragStarting event.
+
+`Column` - Returns the source column where the column is being dragged.
+`ColumnIndex` - Returns the index of the dragged column within the Kanban column collection.
+`Cancel` - Determines whether the column drag operation should be canceled
+
+{% tabs %}
+{% highlight XAML hl_lines="5" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 ItemsSource="{Binding TaskDetails}"
+                 AutoGenerateColumns="False" 
+                 AllowColumnDrag="True"
+                 ColumnDragStarting="OnKanbanColumnDragStarting">
+    <kanban:KanbanColumn Title="To Do" Categories="Open" />
+    <kanban:KanbanColumn Title="In Progress" Categories="In Progress" />
+    <kanban:KanbanColumn Title="Done" Categories="Done" />
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# hl_lines="3" %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+this.kanban.AutoGenerateColumns = false;
+this.kanban.ColumnDragStarting += this.OnKanbanColumnDragStarting;
+this.kanban.AllowColumnDrag = true;
+this.kanban.Columns.Add(new KanbanColumn() { Title = "To Do", Categories = "Open", AllowDrag = false, AllowDrop = false });
+this.kanban.Columns.Add(new KanbanColumn() { Title = "In Progress", Categories = "In Progress" });
+this.kanban.Columns.Add(new KanbanColumn() { Title = "Done", Categories = "Done" });
+
+private void OnKanbanColumnDragStarting(object sender, KanbanColumnDragStartingEventArgs e)
+{
+    var column = e.Column;
+    var columnIndex = e.ColumnIndex;
+}
+
+{% endhighlight %}
+{% highlight c# tabtitle="ViewModel.cs" %}
+ 
+public class ViewModel
+{
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    public ViewModel()
+    {
+        this.TaskDetails = new ObservableCollection<KanbanModel>();
+        this.GetTaskDetails();
+    }
+
+    private void GetTaskDetails()
+    { 
+        this.TaskDetails.Add(new KanbanModel() { Title = "UWP Issue", Description = "Crosshair label template not visible in UWP", Category = "Open", ColorKey = "High", Tags = new [] { "Bug Fixing" } });
+        this.TaskDetails.Add(new KanbanModel() { Title = "Kanban Feature", Description = "Provide drag and drop support", Category = "In Progress", ColorKey = "Low", Tags = new [] { "New control" } });
+        this.TaskDetails.Add(new KanbanModel() { Title = "WF Issue", Description = "HorizontalAlignment for tooltip is not working", Category = "Done", ColorKey = "High", Tags = new [] { "Bug fixing" } });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## ColumnDragOver
+
+The `ColumnDragOver` event occurs when a column is being dragged over another column. We can get the following details from the `ColumnDragOver` event.
+
+`SourceColumn` - Returns the column where the drag operation originated.
+`CurrentColumn` - Returns the current column over which the dragged column is positioned.
+`PreviousColumnIndex` - Returns the previous column index before entering the current column.
+`CurrentColumnIndex` - Returns the current column index over which the dragged column is positioned
+
+{% tabs %}
+{% highlight XAML hl_lines="5" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 ItemsSource="{Binding TaskDetails}"
+                 AutoGenerateColumns="False" 
+                 AllowColumnDrag="True"
+                 ColumnDragOver="OnKanbanColumnDragOver">
+    <kanban:KanbanColumn Title="To Do" Categories="Open" />
+    <kanban:KanbanColumn Title="In Progress" Categories="In Progress" />
+    <kanban:KanbanColumn Title="Done" Categories="Done" />
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# hl_lines="3" %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+this.kanban.AutoGenerateColumns = false;
+this.kanban.ColumnDragOver += this.OnKanbanColumnDragOver;
+this.kanban.AllowColumnDrag = true;
+this.kanban.Columns.Add(new KanbanColumn() { Title = "To Do", Categories = "Open", AllowDrag = false, AllowDrop = false });
+this.kanban.Columns.Add(new KanbanColumn() { Title = "In Progress", Categories = "In Progress" });
+this.kanban.Columns.Add(new KanbanColumn() { Title = "Done", Categories = "Done" });
+
+private void OnKanbanColumnDragOver(object sender, KanbanColumnDragOverEventArgs e)
+{
+    var sourceColumn = e.SourceColumn;
+    var currentColumn = e.CurrentColumn;
+    var previousColumnIndex = e.PreviousColumnIndex;
+    var currentColumnIndex = e.CurrentColumnIndex
+}
+
+{% endhighlight %}
+{% highlight c# tabtitle="ViewModel.cs" %}
+ 
+public class ViewModel
+{
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    public ViewModel()
+    {
+        this.TaskDetails = new ObservableCollection<KanbanModel>();
+        this.GetTaskDetails();
+    }
+
+    private void GetTaskDetails()
+    { 
+        this.TaskDetails.Add(new KanbanModel() { Title = "UWP Issue", Description = "Crosshair label template not visible in UWP", Category = "Open", ColorKey = "High", Tags = new [] { "Bug Fixing" } });
+        this.TaskDetails.Add(new KanbanModel() { Title = "Kanban Feature", Description = "Provide drag and drop support", Category = "In Progress", ColorKey = "Low", Tags = new [] { "New control" } });
+        this.TaskDetails.Add(new KanbanModel() { Title = "WF Issue", Description = "HorizontalAlignment for tooltip is not working", Category = "Done", ColorKey = "High", Tags = new [] { "Bug fixing" } });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## ColumnDrop
+
+The `ColumnDrop` event occurs when a dragged column is dropped into a new position. We can get the following details from the `ColumnDrop` event.
+
+`SourceColumn` - Returns the column from which the drag operation originated.
+`PreviousColumnIndex` - Returns the column index before the drop.
+`TargetColumnIndex` - Returns the index where the column is dropped.
+`TargetColumn` - Returns the column from which the dragged column is dropped.
+
+{% tabs %}
+{% highlight XAML hl_lines="5" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 ItemsSource="{Binding TaskDetails}"
+                 AutoGenerateColumns="False" 
+                 AllowColumnDrag="True"
+                 ColumnDrop="OnKanbanColumnDrop">
+    <kanban:KanbanColumn Title="To Do" Categories="Open" />
+    <kanban:KanbanColumn Title="In Progress" Categories="In Progress" />
+    <kanban:KanbanColumn Title="Done" Categories="Done" />
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# hl_lines="3" %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+this.kanban.AutoGenerateColumns = false;
+this.kanban.ColumnDrop += this.OnKanbanColumnDrop;
+this.kanban.AllowColumnDrag = true;
+this.kanban.Columns.Add(new KanbanColumn() { Title = "To Do", Categories = "Open", AllowDrag = false, AllowDrop = false });
+this.kanban.Columns.Add(new KanbanColumn() { Title = "In Progress", Categories = "In Progress" });
+this.kanban.Columns.Add(new KanbanColumn() { Title = "Done", Categories = "Done" });
+
+private void OnKanbanColumnDrop(object sender, KanbanColumnDropEventArgs e)
+{
+    var sourceColumn = e.SourceColumn;
+    var previousColumnIndex = e.PreviousColumnIndex;
+    var targetColumnIndex = e.TargetColumnIndex;
+    var targetColumn = e.TargetColumn;
+}
+
+{% endhighlight %}
+{% highlight c# tabtitle="ViewModel.cs" %}
+ 
+public class ViewModel
+{
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    public ViewModel()
+    {
+        this.TaskDetails = new ObservableCollection<KanbanModel>();
+        this.GetTaskDetails();
+    }
+
+    private void GetTaskDetails()
+    { 
+        this.TaskDetails.Add(new KanbanModel() { Title = "UWP Issue", Description = "Crosshair label template not visible in UWP", Category = "Open", ColorKey = "High", Tags = new [] { "Bug Fixing" } });
+        this.TaskDetails.Add(new KanbanModel() { Title = "Kanban Feature", Description = "Provide drag and drop support", Category = "In Progress", ColorKey = "Low", Tags = new [] { "New control" } });
+        this.TaskDetails.Add(new KanbanModel() { Title = "WF Issue", Description = "HorizontalAlignment for tooltip is not working", Category = "Done", ColorKey = "High", Tags = new [] { "Bug fixing" } });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## CardDragStart
 
 This event is triggered when you start to drag a card. The argument contains the following information.
