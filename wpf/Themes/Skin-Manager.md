@@ -536,6 +536,79 @@ Dark Theme:
 
 ![Customizing using ThemeResource Dark](Skin-Manager_images/Customizing-using-ThemeResource-Dark.png)
 
+### Apply Centralized Styling with ThemeKey
+
+The StyleVariant attached property is used to apply theme styles automatically based on the active theme.
+
+#### Basic usage
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Button
+    Content="Submit"
+    sfskinmanager:SfSkinManager.StyleVariant="WPFPrimaryButtonStyle" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfSkinManager.ApplyThemeAsDefaultStyle = true;
+SfSkinManager.SetTheme(this, new Theme("Windows11Dark"));
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+The control style is resolved automatically from the active theme.
+
+**Output Screenshot**
+
+![Basic StyleVariant output](Skin-Manager_images/StyleVariant-Basic.png)
+
+### Apply StyleVariant with custom style
+
+You can also combine StyleVariant with a custom Style to override or extend properties.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Style TargetType="Button" x:Key="CustomButtonStyle" >
+    <Setter Property="Foreground" Value="Black"/>
+    <Setter Property="FontWeight" Value="Bold"/>
+    <Setter Property="FontSize" Value="20"/>
+</Style>
+
+<Button
+    Content="Submit"
+    sfskinmanager:SfSkinManager.StyleVariant="WPFPrimaryButtonStyle"
+    Style="{StaticResource CustomButtonStyle}" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfSkinManager.ApplyThemeAsDefaultStyle = true;
+SfSkinManager.SetTheme(this, new Theme("Windows11Dark"));
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+**Output Screenshot**
+
+![StyleVariant with custom style output](Skin-Manager_images/StyleVariant-Custom.png)
+
 ### Accessing Theme Resources Using TryFindResource 
 
 To access specific theme resources in your WPF application, you can use the `TryFindResource(key)` method to retrieve a resource by its key and apply it in the code-behind. 
