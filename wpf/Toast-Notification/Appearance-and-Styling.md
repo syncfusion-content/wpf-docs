@@ -115,7 +115,7 @@ SfToastNotification.Show(this, new ToastOptions
 | **Flip Right Down** | `FlipRightDownIn` | `FlipRightDownOut` |
 | **None** | `None` | `None` |
 
-## ToastSound
+## Toast Sound Configuration
 
 Toast notification supports multiple sound options when displaying notifications, helping to improve user awareness and ensuring important messages are not easily missed.
 
@@ -153,7 +153,7 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-## ToastSoundPath
+## Custom Audio Path Configuration
 
 Toast notification allows you to play a custom audio file for custom toasts using the ToastSoundPath property. This enables developers to provide a more personalized notification experience by using their own sound files.
 
@@ -172,10 +172,7 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-N> Supported audio formats include:
-.mp3, .wav, .flac, .m4a, .aac, and .wma.
-
-## MaxToastVisibleCount
+## Control Maximum Toast Display Count
 
 Toast notification supports the MaxToastVisibleCount property to control how many toast notifications are displayed at the same time. This helps manage multiple notifications efficiently and prevents clutter in the user interface.
 
@@ -195,10 +192,5 @@ SfToastNotification.Show(this, new ToastOptions
 
 {% endhighlight %}
 {% endtabs %}
-
-![MaxToastVisibleCount video](Images/MaxToastVisibleCount.gif)
-
-N> Supported audio formats include:
-.mp3, .wav, .flac, .m4a, .aac, and .wma.
 
 N> Appearance customization features such as Severity, Variant, and AccentBrush, as well as behavior-related options like Placement, ShowAnimationType, CloseAnimationType, MaxToastVisibleCount and Duration, are supported only for custom toast notifications displayed in Window or Screen mode. These are not supported in Default mode, as OS-level toast appearance, placement, animation, and timing are controlled by the operating system. Additionally, Variant and AccentBrush are applicable only when Severity is set to Info, Success, Warning, or Error, and not when it is set to None.
