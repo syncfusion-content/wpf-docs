@@ -63,7 +63,7 @@ Used to define major sections within your Markdown content.
                     <syncfusion:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
                 </syncfusion:MarkdownStyleSettings.H2Style>
                 <syncfusion:MarkdownStyleSettings.ParagraphStyle>
-                    <syncfusion:ParagraphSettings FontStyle="Italic" FontSize="15" />
+                    <syncfusion:ParagraphSettings FontSize="15" />
                 </syncfusion:MarkdownStyleSettings.ParagraphStyle>
             </syncfusion:MarkdownStyleSettings>
         </syncfusion:SfMarkdownViewer.Settings>
@@ -112,8 +112,7 @@ Used to define major sections within your Markdown content.
                 },
                 ParagraphStyle = new ParagraphSettings
                 {
-                    FontStyle = FontStyle.Italic,
-                    FontSize = 15,
+                    FontSize = 15
                 },
             };
             Content = markdownViewer;
