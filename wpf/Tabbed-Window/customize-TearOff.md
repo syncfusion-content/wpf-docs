@@ -11,20 +11,7 @@ documentation: ug
 
 This section explains how to customize the window created during tear‑off operations in the Tabbed Window. It covers the `NewWindowCreating` event support that allows users to control and customize window creation at runtime.
 
-This feature allows users to replace the default tear‑off window with a custom window by providing their own window instance and modifying its properties before the floating window is displayed.
-
-## Comparison with Default Tear-Off Behavior
-
-### Default Behavior (without NewWindowCreating event)
-- The SfTabControl creates a default [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html)
-- Window uses standard styling and properties of [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html)
-
-### With NewWindowCreating Event:
-- Provides full control over window creation
-- Allow use of custom window type (regular Window, custom Window subclass, etc.)
-- Enables to apply custom styling, properties, and behaviors
-- Provide access information about the source tab item
-- Provide advanced scenarios like specialized window types, or window management strategies
+This feature allows users to replace the default tear‑off window with a custom window by providing their own window instance and modifying its properties before the tear-off window is displayed.
 
 ## Customizing the Tear-Off Window using NewWindowCreating Event
 
@@ -77,40 +64,6 @@ private void CustomTab_NewWindowCreating(object sender, NewWindowCreatingEventAr
 ## Advanced Customization Example
 
 You can perform more complex customization by accessing hostWindow properties and applying custom configurations:
-
-{% tabs %}
-
-{% highlight C# %}
-
-private void CustomTab_NewWindowCreating(object sender, NewWindowCreatingEventArgs e)
-{
-    // Access the source tab item
-    var sourceTabItem = e.SourceTabItem as SfTabItem;
-    var tabHeader = sourceTabItem?.Header?.ToString() ?? "Custom Window";
-
-    // Create a custom window with specific properties
-    var customWindow = new CustomWindow(tabHeader, true, WindowStyle.ToolWindow)
-    {
-        Width = 800,
-        Height = 600,
-        WindowStartupLocation = WindowStartupLocation.CenterScreen
-    };
-
-    // You can also access the default window to retrieve its state
-    var defaultWindow = e.NewWindow;
-    if (defaultWindow != null)
-    {
-        // Copy properties from default window if needed
-        customWindow.Background = defaultWindow.Background;
-    }
-
-    // Assign the custom window
-    e.NewWindow = customWindow;
-}
-
-{% endhighlight %}
-
-{% endtabs %}
 
 ![WPF TabbedWindow Customizing TearOff Window](customize-tearOff-images/customized-tearOff-Window.gif)
 
