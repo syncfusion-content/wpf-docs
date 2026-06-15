@@ -571,7 +571,6 @@ The control style is resolved automatically from the active theme.
 
 ![Basic StyleVariant output](Skin-Manager_images/StyleVariant-Basic.png)
 
-
 ### Apply StyleVariant with custom style
 
 You can also combine StyleVariant with a custom Style to override or extend properties.
@@ -581,13 +580,13 @@ You can also combine StyleVariant with a custom Style to override or extend prop
 {% highlight XAML %}
 
 <Style TargetType="Button" x:Key="CustomButtonStyle" >
-    <Setter Property="Foreground" Value="Red"/>
+    <Setter Property="Foreground" Value="Black"/>
     <Setter Property="FontWeight" Value="Bold"/>
     <Setter Property="FontSize" Value="20"/>
 </Style>
 
 <Button
-    Content="Cancel" Margin="10"
+    Content="Submit"
     sfskinmanager:SfSkinManager.StyleVariant="WPFPrimaryButtonStyle"
     Style="{StaticResource CustomButtonStyle}" />
 
