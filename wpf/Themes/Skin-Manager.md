@@ -538,19 +538,6 @@ Dark Theme:
 
 ### Apply Centralized Styling with ThemeKey
 
-Set the ApplyThemeAsDefaultStyle property in the MainWindow constructor before applying the theme.
-
-{% tabs %}
-
-{% highlight C# %}
-
-SfSkinManager.ApplyThemeAsDefaultStyle = true;
-SfSkinManager.SetTheme(this, new Theme("Windows11Dark"));
-	
-{% endhighlight %}
-
-{% endtabs %}
-
 The StyleVariant attached property is used to apply theme styles automatically based on the active theme.
 
 #### Basic usage
@@ -561,7 +548,18 @@ The StyleVariant attached property is used to apply theme styles automatically b
 
 <Button
     Content="Submit"
-    sfskinmanager:SfSkinManager.StyleVariant="WPFFlatButtonStyle" />
+    sfskinmanager:SfSkinManager.StyleVariant="WPFPrimaryButtonStyle" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfSkinManager.ApplyThemeAsDefaultStyle = true;
+SfSkinManager.SetTheme(this, new Theme("Windows11Dark"));
 	
 {% endhighlight %}
 
@@ -590,9 +588,20 @@ You can also combine StyleVariant with a custom Style to override or extend prop
 
 <Button
     Content="Cancel" Margin="10"
-    sfskinmanager:SfSkinManager.StyleVariant="WPFFlatButtonStyle"
+    sfskinmanager:SfSkinManager.StyleVariant="WPFPrimaryButtonStyle"
     Style="{StaticResource CustomButtonStyle}" />
 
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfSkinManager.ApplyThemeAsDefaultStyle = true;
+SfSkinManager.SetTheme(this, new Theme("Windows11Dark"));
+	
 {% endhighlight %}
 
 {% endtabs %}
