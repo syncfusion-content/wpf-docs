@@ -536,9 +536,9 @@ Dark Theme:
 
 ![Customizing using ThemeResource Dark](Skin-Manager_images/Customizing-using-ThemeResource-Dark.png)
 
-### Applying a Centralized Custom Style with ThemeKey
+### Apply Centralized Styling with ThemeKey
 
-The `StyleVariant` attached property is used to apply **theme styles automatically** based on the active theme.
+The StyleVariant attached property is used to apply theme styles automatically based on the active theme.
 
 #### Basic usage
 
@@ -554,21 +554,51 @@ The `StyleVariant` attached property is used to apply **theme styles automatical
 
 {% endtabs %}
 
+Also, in your MainWindow constructor, set the ApplyThemeAsDefaultStyle API to true
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfSkinManager.ApplyThemeAsDefaultStyle = true;
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 The control style is resolved automatically from the active theme.
 
 ### Apply StyleVariant with custom style
 
-You can also combine `StyleVariant` with a custom `Style` to override or extend properties.
+You can also combine StyleVariant with a custom Style to override or extend properties.
 
 {% tabs %}
 
 {% highlight XAML %}
 
+<Style TargetType="Button" x:Key="CustomButtonStyle" >
+    <Setter Property="Foreground" Value="Red"/>
+    <Setter Property="FontWeight" Value="Bold"/>
+    <Setter Property="FontSize" Value="20"/>
+</Style>
+
 <Button
     Content="Cancel" Margin="10"
     sfskinmanager:SfSkinManager.StyleVariant="WPFFlatButtonStyle"
-    Style="{StaticResource ButtonStyles}" />
+    Style="{StaticResource CustomButtonStyle}" />
 
+{% endhighlight %}
+
+{% endtabs %}
+
+Also, in your MainWindow constructor, set the ApplyThemeAsDefaultStyle API to true
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfSkinManager.ApplyThemeAsDefaultStyle = true;
+	
 {% endhighlight %}
 
 {% endtabs %}
