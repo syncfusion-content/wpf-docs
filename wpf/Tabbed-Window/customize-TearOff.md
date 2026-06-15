@@ -3,7 +3,7 @@ layout: post
 title: Customize the TearOffWindow | Syncfusion
 description: Learn how to customize the window created during tear‑off operations by providing a custom window type and modifying its properties at runtime.
 platform: wpf
-control: TabbedWindow
+control: SfTabControl
 documentation: ug
 ---
 
