@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tab Management in WPF Tabbed Window| Syncfusion
-description: Learn how to manage tabs in a WPF tabbed window by using close buttons, adding new tabs, customizing tab appearance, and using keyboard shortcuts.
+description: Learn how to manage tabs in a WPF tabbed window by using close buttons, adding new tabs, customizing tab appearance, vertical tabs, pin/unpin tabs, and navigating with keyboard shortcuts.
 platform: wpf
 control: TabbedWindow
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Tab Management in WPF Tabbed Window
 
-This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, and navigating tabs using keyboard shortcuts.
+This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, vertical tabs, pin/unpin tabs, and navigating tabs using keyboard shortcuts.
 
 ## Closing Tabs
 
@@ -123,6 +123,103 @@ You can customize the appearance of the new tab button using the [NewTabButtonSt
 {% endtabs %}
 
 ![WPF NewButton style](tab-management_images/wpf_newbuttonstyle.png)
+
+## Vertical Tabs
+
+The SfTabControl supports vertical tab arrangement, where tabs are displayed on the left side of the window instead of the top. This is useful for wide screens or when maximizing vertical content space is desired.
+
+Set the [TabArrangement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_TabArrangement) property to `Vertical` on [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) to display tabs vertically on the left side of the window.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfTabControl x:Name="tabControl" TabArrangement="Vertical">
+    <syncfusion:SfTabItem Header="Document 1">
+        <TextBlock Text="Content 1" />
+    </syncfusion:SfTabItem>
+    <syncfusion:SfTabItem Header="Document 2">
+        <TextBlock Text="Content 2" />
+    </syncfusion:SfTabItem>
+    <syncfusion:SfTabItem Header="Document 3">
+        <TextBlock Text="Content 3" />
+    </syncfusion:SfTabItem>
+</syncfusion:SfTabControl>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+tabControl.TabArrangement = TabArrangement.Vertical;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF TabbedWindow Vertical Tabs](tab-management_images/tabbedwindow_vertical_tabs.png)
+
+### Vertical Tab Collapse Behavior
+
+When using vertical tab arrangement, the tab header area can be collapsed to show only icons, helping maximize the content area.
+
+**Collapse Behavior:**
+
+- **Mouse Enter** - When the mouse enters the collapsed vertical tab area, it expands to show the full tab headers.
+- **Mouse Leave** - When the mouse leaves the expanded tab area, it collapses back to icon-only view.
+- **Pin Toggle Button** - Click the pin button in the vertical tab header to maintain the expanded state. This keeps the vertical tabs expanded until the pin is toggled off again.
+
+
+![WPF TabbedWindow Collapse](tab-management_images/tabbedwindow_collapse.gif)
+
+
+## Pin and Unpin Tabs
+
+The SfTabControl supports pin and unpin tabs. Pin tabs to keep them always visible and prevent them from being closed accidentally. Pinned tabs appear first in the tab order and remain in place when other tabs are reordered.
+
+### Showing Pin Button
+
+Display a pin button on individual tabs using the [ShowPinButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabItem.html#Syncfusion_Windows_Controls_SfTabItem_ShowPinButton) property on [SfTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabItem.html).
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfTabControl x:Name="tabControl">
+    <syncfusion:SfTabItem Header="Document 1"
+                          ShowPinButton="True">
+        <TextBlock Text="Content 1" />
+    </syncfusion:SfTabItem>
+    <syncfusion:SfTabItem Header="Document 2"
+                          ShowPinButton="True">
+        <TextBlock Text="Content 2" />
+    </syncfusion:SfTabItem>
+</syncfusion:SfTabControl>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+var tabItem = new SfTabItem
+{
+    Header = "Document",
+    ShowPinButton = true,
+    Content = new TextBlock { Text = "Tab Content" }
+};
+tabControl.Items.Add(tabItem);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF TabbedWindow Pin Button](tab-management_images/tabbedwindow_pin_button.gif)
+
+### Pinning a Tab
+
+When the pin button is clicked, the tab becomes pinned. Pinned tabs are automatically reordered to appear first in the tab strip.
+
+### Context Menu Pinning
+
+Use the context menu to pin or unpin tabs. Right-click on a tab header to access the pin option.
 
 ## Keyboard Shortcuts
 
