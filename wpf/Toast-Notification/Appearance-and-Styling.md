@@ -115,4 +115,90 @@ SfToastNotification.Show(this, new ToastOptions
 | **Flip Right Down** | `FlipRightDownIn` | `FlipRightDownOut` |
 | **None** | `None` | `None` |
 
-N> Appearance customization features such as Severity, Variant, and AccentBrush, as well as behavior-related options like Placement, ShowAnimationType, CloseAnimationType, and Duration, are supported only for custom toast notifications displayed in Window or Screen mode. These are not supported in Default mode, as OS-level toast appearance, placement, animation, and timing are controlled by the operating system. Additionally, Variant and AccentBrush are applicable only when Severity is set to Info, Success, Warning, or Error, and not when it is set to None.
+## ToastSound
+
+Toast notification supports multiple sound options when displaying notifications, helping to improve user awareness and ensuring important messages are not easily missed.
+
+Custom toasts support three predefined sound values (Silent, Beep, and Hand) from the ToastSound enum, allowing developers to enhance notifications with simple audio cues.
+
+{% tabs %}
+{% highlight C# %}
+
+SfToastNotification.Show(this, new ToastOptions
+{  
+    Title = "Notification",
+    Header = "Custom Toast",
+    Message = "Notification with Beep sound",
+    Mode = ToastMode.Screen,
+    ToastSound = ToastSound.Beep
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+System toast notifications support the remaining 26 predefined sounds from the ToastSound enum (excluding Beep and Hand), enabling developers to choose from a wide range of standard notification tones that align with the operating system’s native look and feel.
+
+{% tabs %}
+{% highlight C# %}
+
+SfToastNotification.Show(this, new ToastOptions
+{ 
+    Title = "Notification",
+    Header = "System Toast",
+    Message = "New messages were received", 
+    Mode = ToastMode.Default,
+    ToastSound = ToastSound.LoopingAlarm
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+## ToastSoundPath
+
+Toast notification allows you to play a custom audio file for custom toasts using the ToastSoundPath property. This enables developers to provide a more personalized notification experience by using their own sound files.
+
+{% tabs %}
+{% highlight C# %}
+
+SfToastNotification.Show(this, new ToastOptions
+{  
+    Title = "Notification",
+    Header = "Custom Toast",
+    Message = "Notification with Beep sound",
+    Mode = ToastMode.Screen,
+    ToastSoundPath = new Uri(@"C:\Windows\Media\chimes.wav")
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Supported audio formats include:
+.mp3, .wav, .flac, .m4a, .aac, and .wma.
+
+## MaxToastVisibleCount
+
+Toast notification supports the MaxToastVisibleCount property to control how many toast notifications are displayed at the same time. This helps manage multiple notifications efficiently and prevents clutter in the user interface.
+
+By default, the value is set to 2, allowing only two notifications to be visible simultaneously.
+
+{% tabs %}
+{% highlight C# %}
+
+SfToastNotification.Show(this, new ToastOptions
+{   
+    Title = "Notification",
+    Header = "Custom Toast",
+    Message = "New messages arrived",
+    Mode = ToastMode.Screen,
+    MaxToastVisibleCount = 4
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+![MaxToastVisibleCount video](Images/MaxToastVisibleCount.gif)
+
+N> Supported audio formats include:
+.mp3, .wav, .flac, .m4a, .aac, and .wma.
+
+N> Appearance customization features such as Severity, Variant, and AccentBrush, as well as behavior-related options like Placement, ShowAnimationType, CloseAnimationType, MaxToastVisibleCount and Duration, are supported only for custom toast notifications displayed in Window or Screen mode. These are not supported in Default mode, as OS-level toast appearance, placement, animation, and timing are controlled by the operating system. Additionally, Variant and AccentBrush are applicable only when Severity is set to Info, Success, Warning, or Error, and not when it is set to None.
