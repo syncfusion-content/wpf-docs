@@ -538,6 +538,19 @@ Dark Theme:
 
 ### Apply Centralized Styling with ThemeKey
 
+Set the ApplyThemeAsDefaultStyle property in the MainWindow constructor before applying the theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfSkinManager.ApplyThemeAsDefaultStyle = true;
+SfSkinManager.SetTheme(this, new Theme("Windows11Dark"));
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 The StyleVariant attached property is used to apply theme styles automatically based on the active theme.
 
 #### Basic usage
@@ -554,19 +567,12 @@ The StyleVariant attached property is used to apply theme styles automatically b
 
 {% endtabs %}
 
-Also, in your MainWindow constructor, set the ApplyThemeAsDefaultStyle API to true
-
-{% tabs %}
-
-{% highlight C# %}
-
-SfSkinManager.ApplyThemeAsDefaultStyle = true;
-	
-{% endhighlight %}
-
-{% endtabs %}
-
 The control style is resolved automatically from the active theme.
+
+**Output Screenshot**
+
+![Basic StyleVariant output](Skin-Manager_images/StyleVariant-Basic.png)
+
 
 ### Apply StyleVariant with custom style
 
@@ -591,17 +597,9 @@ You can also combine StyleVariant with a custom Style to override or extend prop
 
 {% endtabs %}
 
-Also, in your MainWindow constructor, set the ApplyThemeAsDefaultStyle API to true
+**Output Screenshot**
 
-{% tabs %}
-
-{% highlight C# %}
-
-SfSkinManager.ApplyThemeAsDefaultStyle = true;
-	
-{% endhighlight %}
-
-{% endtabs %}
+![StyleVariant with custom style output](Skin-Manager_images/StyleVariant-Custom.png)
 
 ### Accessing Theme Resources Using TryFindResource 
 
