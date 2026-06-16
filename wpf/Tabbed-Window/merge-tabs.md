@@ -64,6 +64,8 @@ This feature is helpful in scenarios such as:
 
 The detached window supports the same tab content interaction as the main tabbed window. Users can also dock the tab back into the original tab container when required.
 
+![WPF TabbedWindow Detach](merge-tabs_images/movetabtonew-window.gif)
+
 ## Controlling Tab Movement with PreviewTabMerge event
 
 You can control and validate tab movement between tabbed windows using the [PreviewTabMerge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_PreviewTabMerge) event of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
