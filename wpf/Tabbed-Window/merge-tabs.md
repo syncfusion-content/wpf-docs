@@ -53,7 +53,7 @@ The floating window supports resizing, minimizing, and all standard tab features
 
 ## Detaching a Selected Tab
 
-The Tabbed Window allows users to detach a selected tab from an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) and open it in a separate WPF window. The detached window preserves the tab state and content context, so users can continue working without losing their place in the workflow.
+The Tabbed Window allows users to detach a selected tab from an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) and open it in a separate window. The detached window preserves the tab state and content context, so users can continue working without losing their place in the workflow.
 
 This feature is helpful in scenarios such as:
 
