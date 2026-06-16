@@ -3,7 +3,7 @@ layout: post
 title: Merge Tabs Between Windows in WPF Tabbed Window | Syncfusion
 description: Learn how to detach tabs into floating windows and validate tab movement between tabbed windows by using tear-off support and the PreviewTabMerge event.
 platform: wpf
-control: TabbedWindow
+control: SfTabControl
 documentation: ug
 ---
 

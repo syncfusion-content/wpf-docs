@@ -3,7 +3,7 @@ layout: post
 title: Tab Management in WPF Tabbed Window| Syncfusion
 description: Learn to manage tabs in WPF TabbedWindow by using close buttons, adding new tabs, customizing appearance, vertical tabs, pin/unpin tabs, and keyboard shortcuts.
 platform: wpf
-control: TabbedWindow
+control: SfTabControl
 documentation: ug
 ---
 
