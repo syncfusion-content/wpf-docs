@@ -51,6 +51,21 @@ The floating window supports resizing, minimizing, and all standard tab features
 
 ![WPF TabbedWindow Tear-Off](merge-tabs_images/tear-off-tabbedwindow.gif)
 
+## Detaching a Selected Tab
+
+The Tabbed Window allows users to detach a selected tab from an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) and open it in a separate window. The detached window preserves the tab state and content context, so users can continue working without losing their place in the workflow.
+
+This feature is helpful in scenarios such as:
+
+- Comparing data side by side
+- Moving frequently used tabs to another monitor
+- Creating a focused workspace for a specific task
+- Working with applications that contain many tabs
+
+The detached window supports the same tab content interaction as the main tabbed window. Users can also dock the tab back into the original tab container when required.
+
+![WPF TabbedWindow Detach](merge-tabs_images/movetabtonew-window.gif)
+
 ## Controlling Tab Movement with PreviewTabMerge event
 
 You can control and validate tab movement between tabbed windows using the [PreviewTabMerge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_PreviewTabMerge) event of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html).
