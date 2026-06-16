@@ -141,13 +141,13 @@ You can control drag-and-drop behavior in the Kanban board at both the card leve
 ### Column Drag and Drop
 
 Columns can be reordered in the .NET WPF Kanban control using built-in drag-and-drop.
-Enable this by setting the `AllowColumnDrag` property of SfKanban to true. The default value is false.
+Enable this by setting the `AllowColumnReorder ` property of SfKanban to true. The default value is false.
 
 {% tabs %}
 
 {% highlight xaml hl_lines="1" %}
 
-<syncfusion:SfKanban AllowColumnDrag="True">
+<syncfusion:SfKanban AllowColumnReorder ="True">
 </syncfusion:SfKanban>
 
 {% endhighlight %}
@@ -155,7 +155,7 @@ Enable this by setting the `AllowColumnDrag` property of SfKanban to true. The d
 {% highlight C#  hl_lines="2" %} 
 
 SfKanban kanban = new SfKanban();
-kanban.AllowColumnDrag = true;
+kanban.AllowColumnReorder  = true;
 
 {% endhighlight %}
 
