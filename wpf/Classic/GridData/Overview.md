@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About WPF GridData Control | Syncfusion
+canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
 description: Learn here all about introduction of Syncfusion WPF GridDataControl (Classic) control, its elements and more details.
 platform: wpf
 control: GridData (Classic)

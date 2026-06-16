@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GridDataControl  in WPF Wizard Control control | Syncfusion
+canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
 description: Learn here all about GridDataControl  support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
