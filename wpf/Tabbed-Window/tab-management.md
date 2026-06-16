@@ -9,7 +9,7 @@ documentation: ug
 
 # Tab Management in WPF Tabbed Window
 
-This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, and navigating tabs using keyboard shortcuts, and customizing tear‑off behavior including creating and modifying tear‑off windows using the NewWindowCreating event for enhanced control over window creation and appearance.
+This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, vertical tabs, pin/unpin tabs, and navigating tabs using keyboard shortcuts, and customizing tear‑off behavior including creating and modifying tear‑off windows using the NewWindowCreating event for enhanced control over window creation and appearance.
 
 ## Closing Tabs
 
@@ -127,7 +127,7 @@ You can customize the appearance of the new tab button using the [NewTabButtonSt
 ## Customizing the Tear‑Off Windows
 The tear‑off window created during the tear‑off operation can be customized by handling the `NewWindowCreating` event of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html). This event is triggered when a tab is dragged outside the tab control and a new window is created.
 
-This feature allows replacing the default tear‑off window with a custom window by providing a user‑defined window instance and modifying its properties before it is displayed, enabling control over window creation and appearance at runtime.
+This feature allows replacing the default tear‑off window with a custom window by supplying a user‑defined instance and modifying its properties before it is displayed, enabling full control over window creation and appearance at runtime. Additional customization can be achieved by accessing hostWindow properties and applying the required configurations for tear‑off window to meet specific requirements.
 
 By handling the `NewWindowCreating` event:
 
@@ -172,10 +172,6 @@ private void CustomTab_NewWindowCreating(object sender, NewWindowCreatingEventAr
 {% endhighlight %}
 
 {% endtabs %} 
-
-## Advanced Customization Example
-
-Further customization can be achieved by accessing the hostWindow properties and applying the required configurations for the tear‑off window to meet specific requirements.
 
 ![WPF TabbedWindow Customizing TearOff Window](customize-tearOff-images/customized-tearOff-Window.gif)
 
