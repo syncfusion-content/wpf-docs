@@ -3,7 +3,7 @@ layout: post
 title: Data Binding in WPF Tabbed Window | Syncfusion
 description: Learn how to bind tabs to a collection in Syncfusion® WPF Tabbed Window by using the ItemsSource property and templates for tab headers and content.
 platform: wpf
-control: TabbedWindow
+control: SfTabControl
 documentation: ug
 ---
 
