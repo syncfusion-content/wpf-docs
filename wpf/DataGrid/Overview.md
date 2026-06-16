@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About WPF DataGrid control | Syncfusion®
+canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
 description: Learn here all about introduction of Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more.
 platform: wpf
 control: SfDataGrid
