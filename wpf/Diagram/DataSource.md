@@ -9,7 +9,7 @@ documentation: ug
 
 # DataSource in WPF Diagram (SfDiagram)
 
-Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
+[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) can be populated with the nodes and connectors based on the information provided from an external data source.
 
 * The DataSourceSettings [`DataSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_DataSource) property is used to define the data source as a collection of objects, which needs to be populated as diagram.
 

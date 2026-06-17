@@ -9,7 +9,7 @@ documentation: ug
 
 # Expanded SubProcess in WPF Diagram (SfDiagram)
 
-A ExpandedSubProcess is used to frame a part of the diagram, shows that elements included in it are logically belong together and does not have any other semantics other than organizing elements. It is represented by a rounded rectangle.
+A ExpandedSubProcess is used to frame a part of the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram), shows that elements included in it are logically belong together and does not have any other semantics other than organizing elements. It is represented by a rounded rectangle.
 
 ExpandedSubProcess is the extended version of Group.
 

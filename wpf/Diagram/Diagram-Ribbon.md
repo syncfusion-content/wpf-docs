@@ -9,7 +9,7 @@ documentation: ug
 
 # Diagram Ribbon in WPF Diagram (SfDiagram)
 
-The diagram ribbon control is a user interface that hosts a Quick Access Toolbar, Application Menu, and Tabs to provide the most common features and settings for the WPF Diagram. The diagram ribbon control contains the UI elements that allow end-users to load and save diagrams, add diagram items to the canvas, format text within the diagram items, rearrange and recolor shapes, change the canvas size and orientation, and perform a copy and paste operations.
+The [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) ribbon control is a user interface that hosts a Quick Access Toolbar, Application Menu, and Tabs to provide the most common features and settings for the WPF Diagram. The diagram ribbon control contains the UI elements that allow end-users to load and save diagrams, add diagram items to the canvas, format text within the diagram items, rearrange and recolor shapes, change the canvas size and orientation, and perform a copy and paste operations.
 
 ![DiagramRibbon](Diagram-Ribbon_images/DiagramRibbon.png)
 

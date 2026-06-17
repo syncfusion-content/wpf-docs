@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Duplicate the Nodes and Connectors in WPF Diagram (SfDiagram)
 
-The SfDiagram simplifies the process of duplicating nodes and connectors. You can easily drag to create duplicates of selected nodes or connectors by simply holding down the Ctrl key, providing an improved experience for editing your diagrams.
+The [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) simplifies the process of duplicating nodes and connectors. You can easily drag to create duplicates of selected nodes or connectors by simply holding down the Ctrl key, providing an improved experience for editing your diagrams.
 
 ![DuplicateNodesandConnectors](Drag_images/DuplicateNodeandConnectors.gif)
 

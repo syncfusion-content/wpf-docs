@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu in WPF Diagram (SfDiagram)
 
-In graphical user interface (GUI), a ContextMenu is a type of Menu that appears when you perform right-click operation. Nested level of Context Menu items can be created. Diagram provided some in-built ContextMenu items and allows to define custom menu items.
+In graphical user interface (GUI), a ContextMenu is a type of Menu that appears when you perform right-click operation. Nested level of Context Menu items can be created. [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) provided some in-built ContextMenu items and allows to define custom menu items.
 
 ## Default Context Menu
 

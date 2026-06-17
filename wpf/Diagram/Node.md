@@ -15,7 +15,7 @@ The nodes are graphical objects used to visually represent the geometrical infor
 
 ## Create node
 
-A node can be created and added to the Diagram, either programmatically or interactively. Nodes are stacked on the Diagram area from bottom to top in the order they are added.
+A node can be created and added to the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram), either programmatically or interactively. Nodes are stacked on the Diagram area from bottom to top in the order they are added.
 
 ### Add Node through Nodes collection 
 

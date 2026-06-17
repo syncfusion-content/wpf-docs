@@ -9,7 +9,7 @@ documentation: ug
 
 # Undo and Redo in WPF Diagram (SfDiagram)
 
-Diagram provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
+[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
 
 ## Undo and Redo actions
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip in WPF Diagram (SfDiagram)
 
-In Graphical User Interface (GUI), the tooltip is a message that is displayed when mouse hovers over an element. In SfDiagram, Tooltip is used to provide information about the position, size, and rotation angle while dragging, resizing, and rotating the diagram elements.
+In Graphical User Interface (GUI), the tooltip is a message that is displayed when mouse hovers over an element. In [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram), Tooltip is used to provide information about the position, size, and rotation angle while dragging, resizing, and rotating the diagram elements.
 
 ## Static Tooltip
 
