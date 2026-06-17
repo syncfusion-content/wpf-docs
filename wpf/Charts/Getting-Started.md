@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF Charts control | Syncfusion
-description: Learn here about getting started with Syncfusion® WPF Charts (SfChart) control, its elements and more.
+description: Learn here about getting started with WPF Charts (SfChart) control, its elements and more.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -663,3 +663,5 @@ SfChart supports various built-in themes. Refer to the below links to apply them
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Applying Theme to WPF Chart](Getting-Started_images/wpf-chart-theme.png)
+
+  N> Looking for the full WPF Charts component overview, features, pricing, and documentation? Visit the [WPF Charts](https://help.syncfusion.com/wpf/charts/getting-started) page.
