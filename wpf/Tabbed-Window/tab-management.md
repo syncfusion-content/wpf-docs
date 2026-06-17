@@ -9,7 +9,7 @@ documentation: ug
 
 # Tab Management in WPF Tabbed Window
 
-This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, vertical tabs, pin/unpin tabs, and navigating tabs using keyboard shortcuts.
+This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, vertical tabs, pin/unpin tabs, and navigating tabs using keyboard shortcuts, and customizing tear‑off behavior including creating and modifying tear‑off windows using the NewWindowCreating event for enhanced control over window creation and appearance.
 
 ## Closing Tabs
 
@@ -220,6 +220,64 @@ When the pin button is clicked, the tab becomes pinned. Pinned tabs are automati
 ### Context Menu Pinning
 
 Use the context menu to pin or unpin tabs. Right-click on a tab header to access the pin option.
+
+## Customizing the Tear‑Off Windows
+The tear‑off window created during the tear‑off operation can be customized by handling the `NewWindowCreating` event of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html). This event is triggered when a tab is dragged outside the tab control and a new window is created.
+
+This feature allows replacing the default tear‑off window with a custom window by supplying a user‑defined instance and modifying its properties before it is displayed, enabling full control over window creation and appearance at runtime. Additional customization can be achieved by accessing hostWindow properties and applying the required configurations for tear‑off window to meet specific requirements.
+
+By handling the `NewWindowCreating` event:
+
+- Replace the default [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) with a custom window
+- Modify window properties such as style, appearance, and behavior
+- Access details about the tab item that initiated the tear‑off
+- Apply custom configurations or styling the window
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfChromelessWindow Title="Main Window" WindowType="Tabbed">
+    <syncfusion:SfTabControl 
+        NewWindowCreating="CustomTab_NewWindowCreating">
+        <syncfusion:SfTabItem Header="Document 1" CloseButtonVisibility="Visible">
+            <TextBlock Text="Drag this tab outside to tear it off" />
+        </syncfusion:SfTabItem>
+        <syncfusion:SfTabItem Header="Document 2" CloseButtonVisibility="Visible">
+            <TextBlock Text="Each tab can be customized" />
+        </syncfusion:SfTabItem>
+    </syncfusion:SfTabControl>
+</syncfusion:SfChromelessWindow>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+private void CustomTab_NewWindowCreating(object sender, NewWindowCreatingEventArgs e)
+{
+    var tabControl = sender as SfTabControl;
+    var defaultWindow = e.NewWindow;
+    var sourceTabItem = e.SourceTabItem;
+
+    // Create a custom window
+    var customWindow = new CustomWindow("Custom Tear‑Off Window", true, WindowStyle.ToolWindow);
+
+    // Replace the default window with the custom window
+    e.NewWindow = customWindow;
+}
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![WPF TabbedWindow Customizing TearOff Window](customize-tearOff-images/customized-tearOff-Window.gif)
+
+## NewWindowCreatingEventArgs Properties
+
+| Property       | Type                | Description                                              |
+|----------------|---------------------|----------------------------------------------------------|
+| NewWindow      | Window              | Gets or sets the window to be created for tear‑off       |
+| SourceTabItem  | object              | Gets the tab item that initiated the tear‑off operation  |
 
 ## Keyboard Shortcuts
 
