@@ -46,4 +46,4 @@ The [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) control i
 **LoadOnDemand** - The SfScheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when there are appointments range for multiple years.
 
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. Looking for the full WPF Scheduler component overview, features, pricing, and documentation? Visit the [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) page.
