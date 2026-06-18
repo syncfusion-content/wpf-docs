@@ -117,6 +117,8 @@ SfToastNotification.Show(this, new ToastOptions
 
 ## Toast Sound Configuration
 
+### Predefined Sound Options
+
 Toast notification supports multiple sound options when displaying notifications, helping to improve user awareness and ensuring important messages are not easily missed.
 
 Custom toasts support three predefined sound values (Silent, Beep, and Hand) from the ToastSound enum, allowing developers to enhance notifications with simple audio cues.
@@ -153,7 +155,7 @@ SfToastNotification.Show(this, new ToastOptions
 {% endhighlight %}
 {% endtabs %}
 
-## Custom Audio Path Configuration
+### Custom Audio File Path
 
 Toast notification allows you to play a custom audio file for custom toasts using the ToastSoundPath property. This enables developers to provide a more personalized notification experience by using their own sound files.
 
@@ -176,7 +178,7 @@ SfToastNotification.Show(this, new ToastOptions
 
 Toast notification supports the MaxToastVisibleCount property to control how many toast notifications are displayed at the same time. This helps manage multiple notifications efficiently and prevents clutter in the user interface.
 
-By default, the value is set to 2, allowing only two notifications to be visible simultaneously.
+By default, the number of notifications displayed depends on the available space within the host.
 
 {% tabs %}
 {% highlight C# %}
