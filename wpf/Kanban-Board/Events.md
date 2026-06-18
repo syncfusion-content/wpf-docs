@@ -40,7 +40,7 @@ The [`CardDoubleTapped`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.K
 
 ## ColumnDragStarting
 
-The `ColumnDragStarting` event occurs when a column begins to be dragged. We can get the following details from the ColumnDragStarting event.
+The `ColumnDragStarting` event occurs when a column begins to be dragged. We can get the following details from the `ColumnDragStarting` event.
 
 `Column` - Returns the source column where the column is being dragged.
 `ColumnIndex` - Returns the index of the dragged column within the Kanban column collection.
@@ -52,7 +52,7 @@ The `ColumnDragStarting` event occurs when a column begins to be dragged. We can
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
                  AutoGenerateColumns="False" 
-                 AllowColumnDrag="True"
+                 AllowColumnReorder="True"
                  ColumnDragStarting="OnKanbanColumnDragStarting">
     <kanban:KanbanColumn Title="To Do" Categories="Open" />
     <kanban:KanbanColumn Title="In Progress" Categories="In Progress" />
@@ -68,15 +68,15 @@ The `ColumnDragStarting` event occurs when a column begins to be dragged. We can
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.AutoGenerateColumns = false;
 this.kanban.ColumnDragStarting += this.OnKanbanColumnDragStarting;
-this.kanban.AllowColumnDrag = true;
-this.kanban.Columns.Add(new KanbanColumn() { Title = "To Do", Categories = "Open", AllowDrag = false, AllowDrop = false });
+this.kanban.AllowColumnReorder = true;
+this.kanban.Columns.Add(new KanbanColumn() { Title = "To Do", Categories = "Open" });
 this.kanban.Columns.Add(new KanbanColumn() { Title = "In Progress", Categories = "In Progress" });
 this.kanban.Columns.Add(new KanbanColumn() { Title = "Done", Categories = "Done" });
 
 private void OnKanbanColumnDragStarting(object sender, KanbanColumnDragStartingEventArgs e)
 {
     var column = e.Column;
-    var columnIndex = e.ColumnIndex;
+    int columnIndex = e.ColumnIndex;
 }
 
 {% endhighlight %}
@@ -118,7 +118,7 @@ The `ColumnDragOver` event occurs when a column is being dragged over another co
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
                  AutoGenerateColumns="False" 
-                 AllowColumnDrag="True"
+                 AllowColumnReorder="True"
                  ColumnDragOver="OnKanbanColumnDragOver">
     <kanban:KanbanColumn Title="To Do" Categories="Open" />
     <kanban:KanbanColumn Title="In Progress" Categories="In Progress" />
@@ -134,8 +134,8 @@ The `ColumnDragOver` event occurs when a column is being dragged over another co
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.AutoGenerateColumns = false;
 this.kanban.ColumnDragOver += this.OnKanbanColumnDragOver;
-this.kanban.AllowColumnDrag = true;
-this.kanban.Columns.Add(new KanbanColumn() { Title = "To Do", Categories = "Open", AllowDrag = false, AllowDrop = false });
+this.kanban.AllowColumnReorder = true;
+this.kanban.Columns.Add(new KanbanColumn() { Title = "To Do", Categories = "Open" });
 this.kanban.Columns.Add(new KanbanColumn() { Title = "In Progress", Categories = "In Progress" });
 this.kanban.Columns.Add(new KanbanColumn() { Title = "Done", Categories = "Done" });
 
@@ -143,8 +143,8 @@ private void OnKanbanColumnDragOver(object sender, KanbanColumnDragOverEventArgs
 {
     var sourceColumn = e.SourceColumn;
     var currentColumn = e.CurrentColumn;
-    var previousColumnIndex = e.PreviousColumnIndex;
-    var currentColumnIndex = e.CurrentColumnIndex
+    int previousColumnIndex = e.PreviousColumnIndex;
+    int currentColumnIndex = e.CurrentColumnIndex
 }
 
 {% endhighlight %}
@@ -186,7 +186,7 @@ The `ColumnDrop` event occurs when a dragged column is dropped into a new positi
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
                  AutoGenerateColumns="False" 
-                 AllowColumnDrag="True"
+                 AllowColumnReorder="True"
                  ColumnDrop="OnKanbanColumnDrop">
     <kanban:KanbanColumn Title="To Do" Categories="Open" />
     <kanban:KanbanColumn Title="In Progress" Categories="In Progress" />
@@ -202,8 +202,8 @@ The `ColumnDrop` event occurs when a dragged column is dropped into a new positi
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.AutoGenerateColumns = false;
 this.kanban.ColumnDrop += this.OnKanbanColumnDrop;
-this.kanban.AllowColumnDrag = true;
-this.kanban.Columns.Add(new KanbanColumn() { Title = "To Do", Categories = "Open", AllowDrag = false, AllowDrop = false });
+this.kanban.AllowColumnReorder = true;
+this.kanban.Columns.Add(new KanbanColumn() { Title = "To Do", Categories = "Open" });
 this.kanban.Columns.Add(new KanbanColumn() { Title = "In Progress", Categories = "In Progress" });
 this.kanban.Columns.Add(new KanbanColumn() { Title = "Done", Categories = "Done" });
 
@@ -211,8 +211,8 @@ private void OnKanbanColumnDrop(object sender, KanbanColumnDropEventArgs e)
 {
     var sourceColumn = e.SourceColumn;
     var previousColumnIndex = e.PreviousColumnIndex;
-    var targetColumnIndex = e.TargetColumnIndex;
-    var targetColumn = e.TargetColumn;
+    int targetColumnIndex = e.TargetColumnIndex;
+    int targetColumn = e.TargetColumn;
 }
 
 {% endhighlight %}
