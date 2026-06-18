@@ -11,7 +11,7 @@ documentation: ug
 
 ## Appearance and structure of Gantt
 
-Gantt control is composed of three controls. They are:
+[WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) control is composed of three controls. They are:
 
 * GanttGrid
 * ScheduleHeader  
@@ -361,6 +361,8 @@ The WPF GanttControl supports various built-in themes. Refer to the below links 
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![theming-in-wpf-gantt-control](Getting-Started_images/theming-in-wpf-gantt-control.png)
+
+N> Looking for the full WPF Gantt Chart component overview, features, pricing, and documentation? Visit the [WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) page.
 
 ## see also
 

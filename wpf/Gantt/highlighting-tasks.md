@@ -9,7 +9,7 @@ documentation: ug
 
 # Highlighting Tasks in WPF Gantt
 
-Highlighting tasks allows you to highlight a specific set of tasks in the Gantt chart region. This feature will get the set of tasks as input and highlight those tasks with the specified color in the Gantt chart region. It will accept a linear set of tasks of type IList as input. You can also specify the highlighting brush through the provided API.
+Highlighting tasks allows you to highlight a specific set of tasks in the [WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) region. This feature will get the set of tasks as input and highlight those tasks with the specified color in the Gantt chart region. It will accept a linear set of tasks of type IList as input. You can also specify the highlighting brush through the provided API.
 
 ## Use Case Scenario
 
