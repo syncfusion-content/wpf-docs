@@ -5,6 +5,7 @@ description: Learn here all about introduction of Syncfusion® WPF Diagram (SfDi
 platform: wpf
 control: SfDiagram
 documentation: ug
+canonical_url: "https://www.syncfusion.com/wpf-controls/diagram"
 ---
 
 # WPF Diagram (SfDiagram) Overview
