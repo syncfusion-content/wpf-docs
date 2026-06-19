@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Migrating from SfSchedule to SfScheduler in WPF Scheduler | Syncfusion
+canonical_url: "https://www.syncfusion.com/wpf-controls/scheduler"
 description: Learn here all about Migrating from SfSchedule to SfScheduler support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
@@ -41,7 +42,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Scheduler;assembly=Syncfusion
 
 ## Initialization
 
-Both [SfSchedule](https://help.syncfusion.com/wpf/schedule/overview) and [SfScheduler](https://help.syncfusion.com/wpf/scheduler/getting-started) almost have the same set of features. But the SfScheduler control offers a rich set of features over SfSchedule. 
+Both [SfSchedule](https://help.syncfusion.com/wpf/scheduler/overview) and [SfScheduler](https://help.syncfusion.com/wpf/scheduler/getting-started) almost have the same set of features. But the SfScheduler control offers a rich set of features over SfSchedule. 
 
 ## Major improvements of SfScheduler
 
