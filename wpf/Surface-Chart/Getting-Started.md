@@ -18,8 +18,8 @@ The following image helps you understand various elements in SfSurfaceChart when
 ![Visual Structure](surface_chart_images/surface_chart_img2.jpeg)
 
 
-* Surface Header – Represents the title of surface chart
-* Wall – Represents the wall that bounds the surface chart. 
+* Surface Header – Represents the title of surface chart.
+* Wall – Represents the sides that enclose the surface chart.
 * Major Gridlines- Represents the surface axis gridline for surface chart.
 * Color Bar- Displays the value range in color for surface chart. 
 * Axis Label- Displays the label for surface axis. 
@@ -53,11 +53,21 @@ You need to initialize the surface chart from the following namespace Syncfusion
 {% tabs %}
 
 {% highlight xaml %}
+<Window x:Class="GettingStarted.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GettingStarted"
+        xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"  
+    WindowStartupLocation="CenterScreen">
+    <Grid>
+        <syncfusion:SfSurfaceChart>
 
-       <syncfusion:SfSurfaceChart>
-
-       </syncfusion:SfSurfaceChart>
- 
+        </syncfusion:SfSurfaceChart>
+    </Grid>
+</Window>
 {% endhighlight %}
 
 {% endtabs %}
@@ -178,13 +188,17 @@ After you populate the data to the chart, you can bind the properties as shown i
 
 {% highlight xaml %}
 
-       <syncfusion:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"   
-                           
-                 YBindingPath="Y" ZBindingPath="Z" 
+       <syncfusion:SfSurfaceChart ItemsSource="{Binding DataValues}"  
+                                  
+                                  XBindingPath="X"   
+                          
+                                  YBindingPath="Y" 
+                                  
+                                  ZBindingPath="Z" 
 				 
-                 RowSize="{Binding RowSize}" 
+                                  RowSize="{Binding RowSize}" 
 				 
-                 ColumnSize="{Binding ColumnSize}" >
+                                  ColumnSize="{Binding ColumnSize}" >
 
 {% endhighlight %}
 
@@ -212,9 +226,12 @@ The following code example illustrates how to add XAxis, YAxis and ZAxis to the 
 
 {% highlight xaml %}
 
-       <syncfusion:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"  
-                              YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}"
-                              ColumnSize="{Binding ColumnSize}">
+       <syncfusion:SfSurfaceChart ItemsSource="{Binding DataValues}"  
+                                  XBindingPath="X"  
+                                  YBindingPath="Y" 
+                                  ZBindingPath="Z" 
+                                  RowSize="{Binding RowSize}"
+                                  ColumnSize="{Binding ColumnSize}">
 
             <syncfusion:SfSurfaceChart.XAxis>
 
@@ -235,6 +252,41 @@ The following code example illustrates how to add XAxis, YAxis and ZAxis to the 
             </syncfusion:SfSurfaceChart.ZAxis>
 
         </syncfusion:SfSurfaceChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+public class SurfaceChartViewModel
+{
+    
+    public ObservableCollection<Data> DataValues { get; set; }
+
+    public int RowSize { get; set; }
+
+    public int ColumnSize { get; set; }
+
+    public SurfaceChartViewModel()
+    {
+        DataValues = new ObservableCollection<Data>();
+
+        // Adding data points
+        DataValues.Add(new Data() { X = 0, Y = 3, Z = 0 });
+        DataValues.Add(new Data() { X = 0, Y = 2, Z = 1 });
+        DataValues.Add(new Data() { X = 0, Y = 1, Z = 2 });
+
+        DataValues.Add(new Data() { X = 1, Y = 2, Z = 0 });
+        DataValues.Add(new Data() { X = 1, Y = 1, Z = 1 });
+        DataValues.Add(new Data() { X = 1, Y = 2, Z = 2 });
+
+        DataValues.Add(new Data() { X = 2, Y = 1, Z = 0 });
+        DataValues.Add(new Data() { X = 2, Y = 2, Z = 1 });
+        DataValues.Add(new Data() { X = 2, Y = 3, Z = 2 });
+
+        // Set row and column size
+        RowSize = 3;
+        ColumnSize = 3;
+    }
+}
 
 {% endhighlight %}
 
@@ -278,13 +330,17 @@ Now you have created a simple surface chart. The following code example is for X
 
        <syncfusion:SfSurfaceChart Type="Surface"  Tilt="15" Rotate="30"
 
-                           ItemsSource="{Binding DataValues}"  XBindingPath="X"    
+                                  ItemsSource="{Binding DataValues}"  
+                                  
+                                  XBindingPath="X"    
 						   
-                           YBindingPath="Y" ZBindingPath="Z" 
+                                  YBindingPath="Y"
+                           
+                                  ZBindingPath="Z" 
 						   
-                           RowSize="{Binding RowSize}" 
+                                  RowSize="{Binding RowSize}" 
 						   
-                           ColumnSize="{Binding ColumnSize}">
+                                  ColumnSize="{Binding ColumnSize}">
 
             <syncfusion:SfSurfaceChart.XAxis>
 
@@ -349,7 +405,7 @@ SfSurfaceChart surface = new SfSurfaceChart();
 
 ### Add Data to surface chart
 
-You can set the surface chart data in code behind, by directly adding data points to the Data property of surface chart using **AddPoints****(****x****,****y****,****z****)** method as shown in the following code example.
+To add data to the surface chart in the code-behind, use the  **AddPoints****(****x****,****y****,****z****)** method to insert data into the Data property. After setting the data points, specify the chart's row and column sizes,
 
 {% highlight c# %}
 
