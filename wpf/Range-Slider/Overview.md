@@ -1,26 +1,26 @@
 ---
 layout: post
-title: About WPF Range Slider control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF Range Slider (SfRangeSlider) control, its elements and more.
-platform: wpf
+title: Introduction to WPF Range Slider Control | Syncfusion®
+description: Explore the features and capabilities of the Syncfusion® WPF Range Slider (SfRangeSlider) control, including customization and interactions.
+platform: WPF
 control: SfRangeSlider 
 documentation: ug
 ---
 
 # WPF Range Slider (SfRangeSlider) Overview
 
-[SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control allows the value range to be selected within the defined minimum and maximum limit. The range can be selected by moving the Thumb control along a track. In terms of appearance, this control is highly customizable and offers many options such as orientation, selection range, custom label support, touch support, snap to tick, tick placement, tooltip support etc.
+The [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control enables the selection of a value range within specified minimum and maximum limits. Users can select the range by moving the thumb controls along a track. This control is highly customizable, offering options such as orientation, selection range, custom label support, touch interaction, snap-to-tick functionality, tick placement, and tooltip support.
 
-![Overview in WPF Range Slider](overview_images/wpf-range-slider-overview.png)
+![Overview of WPF Range Slider](overview_images/wpf-range-slider-overview.png)
 
-Key Features:
+## Key Features
 
-* **Orientation** —  Set the orientation of the RangeSlider either horizontally or vertically.
-* **SelectionRange** — Select the range of values using two thumbs.  
-* **Move the Thumb to the Tapped Position** — Allow the thumb of RangeSlider to tapped position of the track.
-* **Styling and Appearance** — The control is completely customizable in terms of the UI. Change the appearance of the control as required.
-* **ToolTip Support** — Shows the value of the RangeSlider. It is fully customizable.
-* **Gestures** — Provides both KeyGesture and MouseGesture.
+- **Orientation**: Configure the RangeSlider orientation to be either horizontal or vertical.
+- **Selection Range**: Define a range of values using two thumbs for precise selection.
 
+- **Thumb Positioning**: Allow the RangeSlider thumb to move to the tapped track position.
 
+- **Styling and Appearance**: Customize the UI and appearance of the control to fit application requirements.
 
+- **ToolTip Support**: Display the RangeSlider value with customizable tooltips.
+- **Gestures**: Support for both KeyGesture and MouseGesture inputs.

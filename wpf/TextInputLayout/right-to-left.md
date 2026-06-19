@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Right to Left in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Right to Left support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
-platform: wpf
+title: Right-to-Left in WPF TextInputLayout Control | Syncfusion
+description: Learn about right-to-left support in the Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+platform: WPF
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Right to Left in WPF TextInputLayout (SfTextInputLayout)
+# Right-to-Left in WPF TextInputLayout (SfTextInputLayout)
 
-The TextInputLayout supports to change the flow of text to the right-to-left direction by setting the `FlowDirection` to `RightToLeft`.
+The TextInputLayout supports changing the flow of text to the right-to-left direction by setting the `FlowDirection` property to `RightToLeft`.
 
 {% tabs %}
 {% highlight xaml %}

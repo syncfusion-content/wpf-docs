@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Assistive Labels in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Assistive Labels support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
-platform: wpf
+title: Assistive Labels in WPF TextInputLayout Control | Syncfusion
+description: Learn all about assistive labels support in the Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+platform: WPF
 control: SfTextInputLayout
 documentation: ug
 ---
 
 # Assistive Labels in WPF TextInputLayout (SfTextInputLayout)
 
-Assistive labels provide additional information about the text entered in the control of the input view.
+Assistive labels provide additional information about the text entered in the input view control.
 
-## Helper text
+## Helper Text
 
-Helper text provides additional guidance on the `Input` field, such as `How to use it?` and can be set using the `HelperText` property.
+Helper text provides additional guidance on the `Input` field, such as instructions on how to use it. This can be set using the `HelperText` property.
 
 {% tabs %} 
 
@@ -40,13 +40,13 @@ inputLayout.InputView = new TextBox();
 
 ![Helper text](Images/helpertext.png)
 
-### Helper text visibility
+### Helper Text Visibility
 
-We can specify the display state of the helper text using the `HelperTextVisibility` property, the type of which is [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
+The display state of the helper text can be specified using the `HelperTextVisibility` property, which is of type [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
 
-## Error message
+## Error Message
 
-If the text `Input` is not acknowledged, the troubleshooting instructions will be shown in the error message. Error messages are shown below the input line until the correct text has been entered. It can be set using the `ErrorText` property, but it will only be shown when the `HasError` property is set to `true`.
+If the text input is not valid, troubleshooting instructions are displayed in the error message. Error messages are shown below the input line until the correct text is entered. They can be set using the `ErrorText` property, and will only appear when the `HasError` property is set to `true`.
 
 {% tabs %} 
 
@@ -78,10 +78,10 @@ inputLayout.InputView = new TextBox();
 
 ![Error text](Images/errortext.png)
 
-N> Error validations should be done in the application level.
+> **Note:** Error validations should be implemented at the application level.
 
-## Character counter
-Character counter is used when characters need to be limited. Use the `CharMaxLength` property to set the limit for characters. We can specify the display state of the character count using the `CharCountVisibility` property, the type of which is [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
+## Character Counter
+A character counter is used when character input needs to be limited. Use the `CharMaxLength` property to set the character limit. The display state of the character count can be specified using the `CharCountVisibility` property, which is of type [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
 
 
 {% tabs %} 
@@ -114,5 +114,4 @@ inputLayout.InputView = new TextBox();
 
 ![Character count](Images/charactercount.png)
 
-N> When the number of characters to be entered in the input view exceeds the `CharMaxLength`, the `ErrorForeground` value will be applied to the hint label, base line, border and counter label.
-
+> **Note:** When the number of characters entered in the input view exceeds the `CharMaxLength`, the `ErrorForeground` value will be applied to the hint label, baseline, border, and counter label.

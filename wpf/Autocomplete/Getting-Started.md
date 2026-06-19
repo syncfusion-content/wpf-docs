@@ -1,45 +1,45 @@
 ---
 layout: post
-title: Getting Started with WPF Autocomplete control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Autocomplete (SfTextBoxExt) control, its elements and more details.
-platform: wpf
+title: Getting Started with WPF Autocomplete Control | Syncfusion®
+description: Learn about getting started with the Syncfusion® WPF Autocomplete (SfTextBoxExt) control, its elements, and more details.
+platform: WPF
 control: SfTextBoxExt
 documentation: ug
 ---
 
 # Getting Started with WPF Autocomplete (SfTextBoxExt)
 
-## Assembly deployment
+## Assembly Deployment
 
-Refer to this [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftextboxext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftextboxext) section to get the list of assemblies or NuGet packages required to use the control in any application.
 
-Refer to this [How to install nuget packages](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf) documentation to find more details about installing the NuGet package in a WPF application.
+Refer to the [How to Install NuGet Packages](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf) documentation for more details about installing the NuGet package in a WPF application.
 
-## Creating a simple application
+## Creating a Simple Application
 
-Create a WPF application with [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control using the following steps:
+Create a WPF application with the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control using the following steps:
 
-### Create a project
+### Create a Project
 
-Create a new WPF project in Visual Studio to display the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control with their functionalities.
+Create a new WPF project in Visual Studio to display the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control with its functionalities.
 
-### Add a control using the designer
+### Add a Control Using the Designer
 
 The [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
-* Syncfusion.SfInput.WPF
-* Syncfusion.SfShared.WPF
+- Syncfusion.SfInput.WPF
+- Syncfusion.SfShared.WPF
 
 ![DesignerView](GettingStarted_images/Designer.png)
 
-### Adding control manually in XAML
+### Adding Control Manually in XAML
 
-To add the control manually in XAML, follow the given steps:
+To add the control manually in XAML, follow these steps:
 
 1. Add the following required assembly references to the project:
-    * Syncfusion.SfInput.WPF
-    * Syncfusion.SfShared.WPF
-2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+   - Syncfusion.SfInput.WPF
+   - Syncfusion.SfShared.WPF
+2. Import the Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3. Declare the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control in the XAML page.
 
 {% capture codesnippet1 %}

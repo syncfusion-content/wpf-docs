@@ -1,26 +1,21 @@
 ---
 layout: post
-title: Custom views in WPF Navigation Drawer control | Syncfusion®
-description: Learn here all about Custom views support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
-platform: wpf
+title: Custom Views in WPF Navigation Drawer Control | Syncfusion®
+description: Learn about custom view support in the Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control.
+platform: WPF
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Custom views in WPF Navigation Drawer (SfNavigationDrawer)
+# Custom Views in WPF Navigation Drawer (SfNavigationDrawer)
 
-## Populating the with custom views
+## Populating with Custom Views
 
-The WPF Navigation Drawer sidebar can be populated with custom views by setting the [DisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMode) as [Default](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.DisplayMode.html). In this mode the sidebar can be customized as three parts.
+The WPF Navigation Drawer sidebar can be populated with custom views by setting the [DisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMode) to [Default](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.DisplayMode.html). In this mode, the sidebar can be customized into three parts:
 
-Basically the sidebar will be in hidden state and can be displayed by swipe gestures.
-
-   * DrawerHeaderView - A custom view can be provided to be displayed as a header part of the navigation menu. This can be set to the [DrawerHeaderView]() property.
-   
-   * DrawerContentView - A custom view can be provided to be displayed in the body of the navigation menu. This can be set to the [DrawerContentView]() property.
-   
-   * DrawerFooterView - A custom view can be provided to be displayed as a footer part of the navigation menu. This can be set to the [DrawerFooterView]() property. 
-
+* **DrawerHeaderView**: A custom view for the header of the navigation menu, set using the `DrawerHeaderView` property.
+* **DrawerContentView**: A custom view for the body of the navigation menu, set using the `DrawerContentView` property.
+* **DrawerFooterView**: A custom view for the footer of the navigation menu, set using the `DrawerFooterView` property.
 {% tabs %}
 {% highlight xml %}
 

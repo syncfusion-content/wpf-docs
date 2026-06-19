@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Header and Footer in WPF Navigation Drawer control | Syncfusion®
-description: Learn here all about Header and Footer support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
-platform: wpf
+title: Header and Footer in WPF Navigation Drawer Control | Syncfusion®
+description: Learn about header and footer support in the Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control.
+platform: WPF
 control: NavigationDrawer
 documentation: ug
 ---
 
 # Header and Footer in WPF Navigation Drawer (SfNavigationDrawer)
 
-The Navigation menu's header and footer parts are fully customizable. This section explains the customization of header and footer. 
+The navigation menu's header and footer parts are fully customizable. This section explains how to customize the header and footer.
 
-## Customizing the Toggle button and Header
+## Customizing the Toggle Button and Header
 
-The Navigation Drawer built-in toggle button and header can be customized using the [ToggleButtonContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ToggleButtonContentTemplate), [ToggleButtonIconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ToggleButtonIconTemplate), [IsToggleButtonVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IsToggleButtonVisible) properties.
+The Navigation Drawer’s built-in toggle button and header can be customized using the [ToggleButtonContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ToggleButtonContentTemplate), [ToggleButtonIconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ToggleButtonIconTemplate), and [IsToggleButtonVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IsToggleButtonVisible) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -101,7 +101,7 @@ The Navigation Drawer built-in toggle button and header can be customized using 
 
 ## Customizing the Footer
 
-The Navigation Drawer's Footer can be customized using the [FooterItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_FooterItems) property. `FooterItems` can be loaded with NavigationItem collection. 
+The Navigation Drawer’s footer can be customized using the [FooterItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_FooterItems) property. `FooterItems` can be populated with a collection of `NavigationItem`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -198,12 +198,9 @@ The Navigation Drawer's Footer can be customized using the [FooterItems](https:/
 
 ![Customizing Footer in WPF NavigationDrawer](Header_and_Footer_images/wpf-navigation-drawer-footer-customization.png)
 
-## Creating a custom header and footer
+## Creating a Custom Header and Footer
 
-The header and footer part can also be customized by loading a custom view. This can be achieved in `Default` display mode. Using the [DrawerFooterView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerHeaderView) and [DrawerFooterView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerFooterView) properties, custom views can be loaded to the header and footer.
+The header and footer can also be customized by loading a custom view. This can be achieved in `Default` display mode using the [DrawerHeaderView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerHeaderView) and [DrawerFooterView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerFooterView) properties to load custom views into the header and footer.
 
-See also [Custom views](https://help.syncfusion.com/wpf/navigation-drawer/custom-views) section for creating a custom navigation menu.
-
-
-N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Header_and_Footer) in GitHub
-
+For more information on creating a custom navigation menu, see [Custom Views](https://help.syncfusion.com/wpf/navigation-drawer/custom-views).
+> **Note:** View the [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Header_and_Footer) on GitHub.

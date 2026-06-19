@@ -1,40 +1,38 @@
 ---
 layout: post
-title: Single and multiple selection in WPF Autocomplete | Syncfusion®
-description: Learn here all about Single and multiple selection support in Syncfusion® WPF Autocomplete (SfTextBoxExt) control and more.
-platform: wpf
+title: Single and Multiple Selection in WPF Autocomplete | Syncfusion®
+description: Explore support for single and multiple selection in Syncfusion® WPF Autocomplete (SfTextBoxExt) control, and more.
+platform: WPF
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Single and multiple selection in WPF Autocomplete (SfTextBoxExt)
+# Single and Multiple Selection in WPF Autocomplete (SfTextBoxExt)
 
-In AutoComplete selection can be performed using single selection or multi-selection. This can be handled by [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property. The default value of `MultiSelectMode` is `None` which performs single selection.
+In AutoComplete, selection can be managed using either single or multi-selection modes. This is controlled by the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property. The default value of `MultiSelectMode` is `None`, which enables single selection.
 
-## Single selection
+## Single Selection
 
-The single selection can be performed by setting the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to None. In this mode we can set and retrieve the selected item using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property.
+Single selection is achieved by setting the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to `None`. In this mode, you can set and retrieve the selected item using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property.
 
-## Multi selection
+## Multi-selection
 
-The multi-selection, there are two ways to display the selection in the control. 
+For multi-selection, there are two ways to represent selections within the control:
 
 * Token 
 
 * Delimiter
 
-## Multiple selection using tokens 
+## Multiple Selection Using Tokens
 
-Each selected items can be displayed as a token representation having a close button for each token. 
+Each selected item can be displayed as a token, with a close button for each token.
 
-In token representation the control behavior of arranging the items can be done in two ways which is handled by the property [TokensWrapMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokensWrapMode).
+In token representation, the arrangement of items is determined by the [TokensWrapMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokensWrapMode) property:
 
-* `Wrap` - The selected items will be wrapped to the next line of the AutoComplete.
+* `Wrap` - Selected items wrap to the next line.
+* `None` - Selected items display in a single horizontal line.
 
-* `None` - The selected items will be arranged in horizontal layout in single line.
-
-The [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) property can be used to set and retrieve the items in `MultiSelectMode`.
-
+Use the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) property to set and retrieve items in `MultiSelectMode`.
 
 {% tabs %}
 
@@ -63,7 +61,7 @@ textBoxExt.MultiSelectMode = MultiSelectMode.Token;
 
 ### Customization of Tokens
 
-The token can be customized by overriding the default style targeting the `TokenItem` class.
+Customize tokens by overriding the default style, targeting the `TokenItem` class.
 
 
 {% tabs %}
@@ -115,12 +113,11 @@ The token can be customized by overriding the default style targeting the `Token
 
 ![Token_Customization](Single_and_multiple_selection_images/Token_Customization.png)
 
+### Enable Auto-size in Token Mode
 
-### Enable autosize in token mode 
+When using `Wrap` mode, enabling the [EnableAutoSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_EnableAutoSize) property re-renders the control height based on the number of lines tokens wrap inside the control.
 
-In token representation when we have set `Wrap` mode enabling the [EnableAutoSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_EnableAutoSize) property re-renders the control height based on the number of lines the tokens are wrapped inside the control. 
-
-To use this feature, it is need to set the `MultiSelectMode` as `Token` and `TokensWrapMode` as `Wrap`. By default this feature is disabled.
+To use this feature, set the `MultiSelectMode` as `Token` and `TokensWrapMode` as `Wrap`. By default, this feature is disabled.
 
 {% tabs %}
 
@@ -149,10 +146,9 @@ textBoxExt.EnableAutoSize = true;
 
 ![EnableAutoSize](Single_and_multiple_selection_images/EnableAutoSize.png)
 
+### ShowClearButton
 
-### ShowClearButton:
-
-This feature allows to show or hide the clear button in Token mode for the AutoComplete control using the [ShowClearButton]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
+This feature allows showing or hiding the clear button in Token mode for the AutoComplete control using the [ShowClearButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
 
 {% tabs %}
 
@@ -181,14 +177,13 @@ textBoxExt.ShowClearButton = true;
 
 ![ShowClearButton](Single_and_multiple_selection_images/ShowClearButton.png)
 
-N> The default `ShowClearButton` property value is false. It will be only applicable for `MultiSelectMode` is `Token`.  
+> Note: The default `ShowClearButton` property value is false. It applies only when `MultiSelectMode` is `Token`.
 
-See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in AutoComplete.
+See also the [Multiple selection using tokens](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in AutoComplete.
 
+## Multiple Selection Using Delimiter
 
-## Multiple selection using delimiter 
-
-In `Delimiter` mode, each item is separated by a character that is set to the [Delimiter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Delimiter) property. By default the items are separated by `,`(Comma).
+In `Delimiter` mode, each item is separated by a character specified in the [Delimiter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Delimiter) property. By default, items are separated by a comma (`,`).
 
 {% tabs %}
 
@@ -214,15 +209,12 @@ textBoxExt.MultiSelectMode = MultiSelectMode.Delimiter;
 
 ![Delimiter](Single_and_multiple_selection_images/Delimiter.png)
 
+## Setting and Retrieving SelectedItem
 
-## Setting and retrieving SelectedItem 
+The [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property selects or retrieves a particular item from the suggestion list. It is used for single selection when `MultiSelectMode` is `None`. For multi-selection, where `MultiSelectMode` is set to either `Token` or `Delimiter`, use the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) property.
 
-The [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property is used to select a particular item from the suggestion list or to retrieve the item that is selected. The SelectedItem property can be used in single selection where the `MultiSelectMode` as `None`. For multi-selection where the `MultiSelectMode` is set either as `Token` or `Delimiter` the selected items can be set or retrieved using the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) property.
-
-The `SelectedItem` and `SelectedItems` contains the object of the custom data and using the 
-`SearchItemPath` property the value displayed in the text field can be retrieved.
-
-Model Class:
+The `SelectedItem` and `SelectedItems` contain custom data objects, and the item displayed in the text field can be retrieved using the `SearchItemPath` property.
+### Model Class:
 
 {% tabs %}
 {% highlight c# %}
@@ -249,7 +241,7 @@ public class Employee
 {% endhighlight %}
 {% endtabs %}
 
-In EmployeeViewModel class the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) updated initially from the Employees collection. 
+In the `EmployeeViewModel` class, the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) is initially updated from the Employees collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -334,9 +326,7 @@ private void TextBoxExt_SelectedItemChanged(DependencyObject d, DependencyProper
 
 {% endtabs %}
 
-
-
-Model Class:
+### Model Class:
 
 {% tabs %}
 {% highlight c# %}
@@ -362,8 +352,7 @@ public class Employee
 {% endhighlight %}
 {% endtabs %}
 
-
-In EmployeeViewModel class the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) updated initially from the Employees collection. 
+In the `EmployeeViewModel` class, the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) is initially updated from the Employees collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -431,7 +420,7 @@ public class EmployeeViewModel
 
 ## Retrieving SelectedValue 
 
-The [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedValue) property is used to retrieve the selected values from the suggestion list. We have to set the [ValueMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ValueMemberPathProperty) property when using custom data for the value we want to retrieve from `SelectedValue` based on the `SelectedItem` object.
+The [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedValue) property is used to retrieve selected values from the suggestion list. Set the [ValueMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ValueMemberPathProperty) property to define which data to retrieve from `SelectedValue` based on the `SelectedItem` object.
 
 
 {% tabs %}
@@ -472,7 +461,7 @@ private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyProp
 
 ### Retrieving SuggestionIndex
 
-When an item is selected from suggestion list, their index can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionIndex) property.
+When an item is selected from the suggestion list, its index can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionIndex) property.
 
 
 {% tabs %}
@@ -508,14 +497,12 @@ private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyProp
 
 {% endtabs %}
 
+## Displaying Images
 
-## Displaying images 
+This feature allows setting a path for images to be displayed in the text box control using the [ImageMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ImageMemberPath) property.
 
-This feature allows to provide the path for the image to be displayed in the text box control using the [ImageMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ImageMemberPath) property.
+> Note: This feature is applicable only with `MultiSelectMode` set to Token mode.
 
-N> This feature is applicable only for MultiSelectMode with Token mode.
+For more details, refer to [Showing image in token and dropdown](https://help.syncfusion.com/wpf/autocomplete/autocomplete-and-filtering#showing-image-in-token-and-drop-down).
 
-For further details, refer to [Showing image in token and dropdown](https://help.syncfusion.com/wpf/autocomplete/autocomplete-and-filtering#showing-image-in-token-and-drop-down).
-
-
-N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Single-and-multiple-selection) in GitHub
+> Note: View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Single-and-multiple-selection) on GitHub.
