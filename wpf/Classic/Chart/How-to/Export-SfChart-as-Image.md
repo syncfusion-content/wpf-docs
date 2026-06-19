@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting Chart as image | Syncfusion
-description: Learn here all about Export SfChart as Image support in Syncfusion WPF Chart (Classic) control and more.
+title: Exporting Chart as image in WPF Chart | Syncfusion
+description: Learn here about getting started with Syncfusion WPF classic Chart control function, its elements and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
 
-# Export Chart as Image in WPF Chart
+# Getting started with WPF Chart
 
 In order to export the Chart control as an image, the Save method needs to be called. Two overload methods are available to export the Chart:
 
