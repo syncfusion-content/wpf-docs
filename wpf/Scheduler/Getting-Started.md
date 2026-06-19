@@ -3,17 +3,17 @@ layout: post
 title: Getting Started with WPF Scheduler control | Syncfusion
 canonical_url: "https://www.syncfusion.com/wpf-controls/scheduler"
 description: Learn here about getting started with Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
-platform: WPF   
-control: SfScheduler   
-documentation: ug   
----   
-    
+platform: wpf
+control: SfScheduler
+documentation: ug
+---
+
 # Getting Started with WPF Scheduler (SfScheduler)
     
 This section provides an overview for working with SfScheduler for WPF and also provides a walk through to configure [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) (SfScheduler) control in the real time scenario.   
 
 ## Assembly deployment
-Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfscheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) . Use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
+Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfscheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages) . Use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
 
 ## Create simple application with SfScheduler
 
