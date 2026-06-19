@@ -1,5 +1,6 @@
 ---
 title: About WPF Scheduler control | Syncfusion
+canonical_url: "https://www.syncfusion.com/wpf-controls/scheduler"
 description: Learn here all about introduction of Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
 platform: WPF
 control: SfScheduler
