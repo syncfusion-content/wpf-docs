@@ -21,6 +21,26 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 ![WPF TreeGrid with Search Panel](Search_images/wpf-treegrid-search-panel.png)
 
+## SearchScope
+
+You can control where the search is applied in the SfTreeGrid using the `SearchController.SearchScope` property. By default SearchScope value set as Both.
+
+* Both – Search will be applied to both RootNodes and ChildNodes in the SfTreeGrid.
+
+* RootNodes – Search will be applied only to the RootNodes in the SfTreeGrid.
+
+* ChildNodes – Search will be applied only to the ChildNodes in the SfTreeGrid.
+
+{% tabs %}
+{% highlight c# %}
+
+this.treeGrid.SearchController.SearchScope = SearchScope.ChildNodes;
+this.treeGrid.SearchController.Search(TextBox.Text);
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF TreeGrid displays Search Text only in ChildNodes](Search_images/wpf-treegrid-search-text-in-childnodes.png)
 
 ## Filtering
 
@@ -37,6 +57,7 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 ![Enabling Filter based on Search in WPF TreeGrid](Search_images/wpf-treegrid-filter-based-on-search.png)
 
+N> In Search, filtering is applied based on the `FilterLevel`.
 
 You can search the data with the case-sensitivity by setting `SearchController.AllowCaseSensitiveSearch` property to true.
 
