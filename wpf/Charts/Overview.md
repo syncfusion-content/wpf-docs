@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF Charts control | Syncfusion
-description: Learn here all about introduction of WPF Charts (SfChart) control, its elements and more details.
+description: Learn here all about introduction of Syncfusion® WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -27,6 +27,4 @@ SfChart provides a perfect way to visualize data with a high level of user inter
 * SfChart provides support for rendering multiple series at same time, with options to compare and visualize two different chart series simultaneously.
 * User friendly and provides various options for you to customize chart features like [axis](https://help.syncfusion.com/wpf/charts/axis), [labels](https://help.syncfusion.com/wpf/charts/adornments/label), [legends](https://help.syncfusion.com/wpf/charts/legend), [series](https://help.syncfusion.com/wpf/charts/seriestypes/series) etc and visualize them accordingly. 
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
-
-N> Looking for the full WPF Charts component overview, features, pricing, and documentation? Visit the [WPF Charts](https://help.syncfusion.com/wpf/charts/overview) page.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects. Looking for the full WPF Charts component overview, features, pricing, and documentation? Visit the [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) page.
