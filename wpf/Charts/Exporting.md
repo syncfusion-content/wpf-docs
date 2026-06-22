@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting in WPF Charts (SfChart)
 
-Chart can be exported into image format. The following are the supported image formats:
+[WPF Charts](https://www.syncfusion.com/wpf-controls/charts) can be exported into image format. The following are the supported image formats:
 
 * JPEG or JPG
 * JPG-XR
