@@ -155,7 +155,7 @@ Here, row heights are customized based on the large text content.
 
 ![AutoFit RowHeight in WPF TreeGrid](Row-Height-Customization_images/wpf-treegrid-auto-fit-row-height.png)
 
-#### GridRowSizingOptions
+### GridRowSizingOptions
 
 **GridRowSizingOptions** have the following properties,
 
