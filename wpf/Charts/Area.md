@@ -9,7 +9,7 @@ documentation: ug
 
 # Area in WPF Charts (SfChart)
 
-[WPF Charts](https://www.syncfusion.com/wpf-controls/charts) area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
+Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
 
 The following are the major properties of chart(SfChart):
 
