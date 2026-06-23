@@ -19,11 +19,10 @@ Follow the below steps to bind SfTreeGrid with SfDataPager.
 
 2. Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property to specify the number of `RootNodes` to be displayed per page.
 
-3. Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) to [SfTreeGrid.ItemsSource]
-(https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property. So whenever the page is changed, `PagedSource` will be update based on current page.
+3. Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property. So whenever the page is changed, `PagedSource` will be update based on current page.
 
 N> Paging supports all types of [TreeGridView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html), except when using `SfTreeGrid` in unbound mode ([TreeGridUnBoundView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridUnboundView.html)). The following code snippet demonstrates the [TreeGridSelfRelationalView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSelfRelationalView.html) type.
-Similarly, paging support can be implemented for [TreeGridNestedView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNestedView.html) and [TreeGridQueryableView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryableView.html).
+Similarly, paging support can be implemented for [TreeGridNestedView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNestedView.html).
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -177,7 +176,7 @@ public class EmployeeInfo
 
 ![WPF TreeGrid diplays Multiple Pages using SfDataPager](paging_images/wpf-treeGrid-multiple-page.png)
 
-#### Limitations
+### Limitations
 
 1. Paging is not supported when using `SfTreeGrid` in unbound mode (TreeGridUnBoundView).
 2. `SfDataPager`’s on‑demand loading functionality is not supported.
