@@ -25,7 +25,7 @@ Create new WPF project using Visual Studio. For more [details](https://learn.mic
 
 ### Adding control via Designer
 
-[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) (SfDiagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) (SfDiagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![WPF Diagram from Designer](getting-started_images\wpf-diagram-designer.png)
 
