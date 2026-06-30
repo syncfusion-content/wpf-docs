@@ -9,7 +9,7 @@ documentation: ug
 
 # Auto Update Hierarchy in WPF Gantt
 
-Essential Gantt provides support for auto updating hierarchy, in which the [WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) control will listen to the change in child tasks/activities and automatically update them in the parent task/activity accordingly. There is no need to have any custom logics in business objects to update the hierarchy. You can enable or disable this functionality by using the [UseAutoUpdateHierarchy](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseAutoUpdateHierarchy) property. 
+Essential Gantt provides support for auto updating hierarchy, in which the Gantt control will listen to the change in child tasks/activities and automatically update them in the parent task/activity accordingly. There is no need to have any custom logics in business objects to update the hierarchy. You can enable or disable this functionality by using the [UseAutoUpdateHierarchy](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseAutoUpdateHierarchy) property. 
 
 ## Use Case Scenario
 

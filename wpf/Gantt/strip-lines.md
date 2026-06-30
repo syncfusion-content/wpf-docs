@@ -9,7 +9,7 @@ documentation: ug
 
 # Strip Lines in WPF Gantt
 
-The [WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) provides support to add strip lines in the Gantt chart region that denotes an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
+The Gantt provides support to add strip lines in the Gantt chart region that denotes an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
 
 ## Strip lines in Essential Gantt support the following features:
 

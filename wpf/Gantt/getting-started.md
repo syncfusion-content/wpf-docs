@@ -11,7 +11,7 @@ documentation: ug
 
 ## Appearance and structure of Gantt
 
-[WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) control is composed of three controls. They are:
+Gantt control is composed of three controls. They are:
 
 * GanttGrid
 * ScheduleHeader  

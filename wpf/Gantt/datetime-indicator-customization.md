@@ -9,7 +9,7 @@ documentation: ug
 
 # DateTime Indicator Customization in WPF Gantt
 
-Essential Gantt provides support for indicating the current date or time in the [WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) region. You can choose the following positions in the Gantt chart region for the DateTime indicator:
+Essential Gantt provides support for indicating the current date or time in the Gantt region. You can choose the following positions in the Gantt chart region for the DateTime indicator:
 
 * Today
 * Loaded Time
