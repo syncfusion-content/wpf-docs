@@ -150,7 +150,7 @@ Columns can be reordered in the .NET WPF Kanban control using built-in drag-and-
 
 {% endhighlight %}
 
-{% highlight C#  hl_lines="2" %} 
+{% highlight C# hl_lines="2" %} 
 
 SfKanban kanban = new SfKanban();
 kanban.AllowColumnReorder  = true;
