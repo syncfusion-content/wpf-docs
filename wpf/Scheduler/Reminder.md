@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 # Reminder in WPF Scheduler (SfScheduler)
-[WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) alerts you for a particular appointment with a reminder window when enabling the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for the reminder appointments.
+[WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) alerts you for a particular appointment with a reminder window when enabling the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for the reminder appointments.
 
 ## Enable reminder
 Reminder can be set by setting the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property to `true.` The reminder time can be set using the [Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders) property of [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html).

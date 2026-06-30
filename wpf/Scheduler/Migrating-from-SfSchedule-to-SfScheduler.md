@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migrating from SfSchedule to SfScheduler in WPF Scheduler | Syncfusion
-canonical_url: "https://www.syncfusion.com/wpf-controls/scheduler"
+canonical_url: "https://www.syncfusion.com/scheduler-sdk/wpf-scheduler"
 description: Learn here all about Migrating from SfSchedule to SfScheduler support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
@@ -406,4 +406,4 @@ Easily configure recurring events on a daily, weekly, monthly, or yearly basis. 
 </table>
 
 
-N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
