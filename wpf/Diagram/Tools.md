@@ -11,7 +11,7 @@ documentation: ug
 
 ## Tool Selection
 
-There are some functionalities that can be achieved by clicking and dragging on the Diagram surface. They are as follows.
+There are some functionalities that can be achieved by clicking and dragging on the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) surface. They are as follows.
 
 * Draw selection rectangle – MultipleSelect tool
 * Pan the Diagram – Zoom pan

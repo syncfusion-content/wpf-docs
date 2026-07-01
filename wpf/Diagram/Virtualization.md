@@ -9,7 +9,7 @@ documentation: ug
 
 # Virtualization in WPF Diagram (SfDiagram)
 
-Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded and remaining objects will be loaded only when they come into view. 
+Virtualization is the process of loading the diagramming objects available in the visible area of the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded and remaining objects will be loaded only when they come into view. 
 
 This feature gives optimized performance and low memory consumption while loading and dragging items to the `SfDiagram` that consists of large diagram objects.
 

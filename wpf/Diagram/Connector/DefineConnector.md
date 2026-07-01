@@ -496,3 +496,5 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 [How to change the connector style based on its SourcePort style in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)
 
 [How to identify the dragging state of connectors in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
+
+N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) page.

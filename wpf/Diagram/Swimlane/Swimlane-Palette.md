@@ -13,7 +13,7 @@ Diagram provides support to add lanes and phases to Stencil.
 
 ## Add lanes and phases into stencil
 
-Diagram elements such as [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html), and [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) can be used to visualize the Symbol.
+[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) elements such as [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html), and [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) can be used to visualize the Symbol.
 
  The following code sample shows how to add the lanes and phases to palette.
 

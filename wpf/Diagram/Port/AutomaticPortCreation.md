@@ -9,7 +9,7 @@ documentation: ug
 
 # AutomaticPortCreation in WPF Diagram (SfDiagram)
 
-Diagram provides an option to create a port dynamically by clicking and dragging the mouse over any node or connector. This behavior is disabled by default and can be enabled by using `GraphConstraints.AutomaticPortCreation`. To draw connector, you need to set the `Tool` and `DrawingTool` properties of diagram.
+[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) provides an option to create a port dynamically by clicking and dragging the mouse over any node or connector. This behavior is disabled by default and can be enabled by using `GraphConstraints.AutomaticPortCreation`. To draw connector, you need to set the `Tool` and `DrawingTool` properties of diagram.
 
 {% tabs %}
 {% highlight xaml %}

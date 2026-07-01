@@ -9,7 +9,7 @@ documentation: ug
 
 # Zoom Pan in WPF Diagram
 
-* We can Zoom in or Zoom out the diagram view. Diagram can be zoomed in or out by simply holding down the Ctrl key and scrolling with your mouse wheel.
+* We can Zoom in or Zoom out the diagram view. [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) can be zoomed in or out by simply holding down the Ctrl key and scrolling with your mouse wheel.
 
 * When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
 
