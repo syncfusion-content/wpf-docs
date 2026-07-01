@@ -11,7 +11,7 @@ documentation: ug
 
 We have provided some basic built-in shapes as ResourceDictionary.
 
-The following code example illustrates how to merge shapes into diagram.
+The following code example illustrates how to merge shapes into [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram).
 
 {% tabs %}
 {% highlight xaml %}
@@ -208,3 +208,5 @@ The list of shapes are available in the resource dictionary as follows
 |  | ThermoCouple| ![ThermoCouple](Shapes_images\ElectricalThermoCouple.PNG)|
 
 Find the [Shapes sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Shapes) to depict the shapes.
+
+N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) page.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Clipboard Commands in WPF Diagram (SfDiagram)
 
-Clipboard commands are used to cut or copy the selected diagram objects to the clipboard and paste the valid clipboard content into the diagram page.
+Clipboard commands are used to cut or copy the selected diagram objects to the clipboard and paste the valid clipboard content into the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) page.
 
 ## Cut command
 

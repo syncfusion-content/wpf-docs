@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF Diagram (SfDiagram) Overview
 
-**Essential® Diagram WPF** is a powerful, extensible, and feature-rich library for visualizing, creating, and editing interactive diagrams. It supports creating flowcharts, organizational charts, mind maps, floor plans, UML diagrams, and BPMN charts either through code or a visual interface.
+[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) is a powerful, extensible, and feature-rich library for visualizing, creating, and editing interactive diagrams. It supports creating flowcharts, organizational charts, mind maps, floor plans, UML diagrams, and BPMN charts either through code or a visual interface.
 
 ![WPF Diagram Overview](Overview_images/wpf-diagram-overview.png)
 
@@ -33,3 +33,5 @@ documentation: ug
 * **Stencil**: Gallery of reusable symbols and nodes, which can be dragged and dropped onto the diagram surface at any number of times.
 * **Overview control**: Displays a small preview of the full diagram page, which allows you to improve the navigation.
 * **Localization**: Localizes every static text in the control to any supported language.
+
+N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) page.

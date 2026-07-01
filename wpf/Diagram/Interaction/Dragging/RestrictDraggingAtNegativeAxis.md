@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Restrict objects dragging at negative axis in WPF Diagram (SfDiagram)
 
-SfDiagram allows you to restrict diagram elements from dragging behind the negative axis. When `RestrictNegativeAxisDragDrop` is enabled, diagram elements such as Node, Connector, Connector end thumbs, Groups, Swim lane objects, and stencil symbols can be restricted from dragging when drag enters into negative zone.
+[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) allows you to restrict diagram elements from dragging behind the negative axis. When `RestrictNegativeAxisDragDrop` is enabled, diagram elements such as Node, Connector, Connector end thumbs, Groups, Swim lane objects, and stencil symbols can be restricted from dragging when drag enters into negative zone.
 
 ![Find and position the node without overlapping](Drag_images/RestrictDragObjects.gif)
 
