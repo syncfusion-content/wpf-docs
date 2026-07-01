@@ -13,7 +13,7 @@ Serialization is the process of converting the state of SfDiagram's objects into
 
 ## Save
 
-In SfDiagram, DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram serialization. It supports saving the SfDiagram into stream. The SfDiagram gets saved with all its properties. 
+In [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram), DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram serialization. It supports saving the SfDiagram into stream. The SfDiagram gets saved with all its properties. 
 
 {% tabs %}
 

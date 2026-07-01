@@ -15,7 +15,7 @@ A [Swimlane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Swiml
 
 ## Create a swimlane
 
-A swimlane can be created and added to the diagram, either programmatically or interactively. 
+A swimlane can be created and added to the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram), either programmatically or interactively. 
 
 ### Add Swimlane through the Swimlanes collection 
 

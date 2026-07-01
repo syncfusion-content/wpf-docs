@@ -9,7 +9,7 @@ documentation: ug
 
 # Interactions in WPF Diagram (SfDiagram)
 
-Connectors can be selected, dragged and routed over the diagram page. 
+Connectors can be selected, dragged and routed over the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) page. 
 
 ## How to select and edit the connector
 

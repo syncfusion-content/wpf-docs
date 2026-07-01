@@ -11,7 +11,7 @@ documentation: ug
 
 A [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html) is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
 
-The number of lanes can be added to swimlane and rendered in the diagram. The lanes are automatically stacked inside swimlane based on the order they are added.
+The number of lanes can be added to swimlane and rendered in the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram). The lanes are automatically stacked inside swimlane based on the order they are added.
 
 ## Create an empty lane
 

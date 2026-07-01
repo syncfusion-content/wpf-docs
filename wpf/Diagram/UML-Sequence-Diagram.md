@@ -9,7 +9,7 @@ documentation: ug
 
 # UML Sequence Diagram Model in WPF Diagram (SfDiagram)
 
-A UML Sequence Diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The `SfDiagram` control provides comprehensive support for creating and visualizing UML Sequence Diagrams through the [UMLSequenceDiagramModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceDiagramModel.html) class. You need to assign the `UMLSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Model) property of the `SfDiagram` control to enable this functionality.
+A UML Sequence Diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) control provides comprehensive support for creating and visualizing UML Sequence Diagrams through the [UMLSequenceDiagramModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceDiagramModel.html) class. You need to assign the `UMLSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Model) property of the `SfDiagram` control to enable this functionality.
 
 ## UML Sequence Diagram Elements
 

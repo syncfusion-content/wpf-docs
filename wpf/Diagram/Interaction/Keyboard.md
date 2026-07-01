@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard support in WPF Diagram
 
-Diagram provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
+[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
 
 The following table illustrates list of Commands with key Gesture.
 
