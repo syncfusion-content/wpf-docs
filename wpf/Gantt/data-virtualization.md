@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Virtualization in WPF Gantt
 
-The WPF Gantt control supports data virtualization to improve performance when working with large datasets. When virtualization is enabled, the control renders only the nodes that are currently visible in the viewport, reducing memory usage and improving scrolling responsiveness.
+The [WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) control supports data virtualization to improve performance when working with large datasets. When virtualization is enabled, the control renders only the nodes that are currently visible in the viewport, reducing memory usage and improving scrolling responsiveness.
 
 ## How virtualization works
 
