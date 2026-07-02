@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Tab Management in WPF Tabbed Window| Syncfusion
-description: Learn how to manage tabs in a WPF tabbed window by using close buttons, adding new tabs, customizing tab appearance, and using keyboard shortcuts.
+description: Learn to manage tabs in WPF TabbedWindow by using close buttons, adding new tabs, customizing appearance, vertical tabs, pin/unpin tabs, and keyboard shortcuts.
 platform: wpf
-control: TabbedWindow
+control: SfTabControl
 documentation: ug
 ---
 
 # Tab Management in WPF Tabbed Window
 
-This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, and navigating tabs using keyboard shortcuts.
+This section explains how to manage tabs in a WPF Tabbed Window interface. It provides an overview of common tab management operations such as closing tabs, creating new tabs, customizing tab buttons, vertical tabs, pin/unpin tabs, and navigating tabs using keyboard shortcuts, and customizing tear‑off behavior including creating and modifying tear‑off windows using the NewWindowCreating event for enhanced control over window creation and appearance.
 
 ## Closing Tabs
 
@@ -123,6 +123,161 @@ You can customize the appearance of the new tab button using the [NewTabButtonSt
 {% endtabs %}
 
 ![WPF NewButton style](tab-management_images/wpf_newbuttonstyle.png)
+
+## Vertical Tabs
+
+The SfTabControl supports vertical tab arrangement, where tabs are displayed on the left side of the window instead of the top. This is useful for wide screens or when maximizing vertical content space is desired.
+
+Set the [TabArrangement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html#Syncfusion_Windows_Controls_SfTabControl_TabArrangement) property to `Vertical` on [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) to display tabs vertically on the left side of the window.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfTabControl x:Name="tabControl" TabArrangement="Vertical">
+    <syncfusion:SfTabItem Header="Document 1">
+        <TextBlock Text="Content 1" />
+    </syncfusion:SfTabItem>
+    <syncfusion:SfTabItem Header="Document 2">
+        <TextBlock Text="Content 2" />
+    </syncfusion:SfTabItem>
+    <syncfusion:SfTabItem Header="Document 3">
+        <TextBlock Text="Content 3" />
+    </syncfusion:SfTabItem>
+</syncfusion:SfTabControl>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+tabControl.TabArrangement = TabArrangement.Vertical;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF TabbedWindow Vertical Tabs](tab-management_images/tabbedwindow_vertical_tabs.png)
+
+### Vertical Tab Collapse Behavior
+
+When using vertical tab arrangement, the tab header area can be collapsed to show only icons, helping maximize the content area.
+
+**Collapse Behavior:**
+
+- **Mouse Enter** - When the mouse enters the collapsed vertical tab area, it expands to show the full tab headers.
+- **Mouse Leave** - When the mouse leaves the expanded tab area, it collapses back to icon-only view.
+- **Pin Toggle Button** - Click the pin button in the vertical tab header to maintain the expanded state. This keeps the vertical tabs expanded until the pin is toggled off again.
+
+
+![WPF TabbedWindow Collapse](tab-management_images/tabbedwindow_collapse.gif)
+
+
+## Pin and Unpin Tabs
+
+The SfTabControl supports pin and unpin tabs. Pin tabs to keep them always visible and prevent them from being closed accidentally. Pinned tabs appear first in the tab order and remain in place when other tabs are reordered.
+
+### Showing Pin Button
+
+Display a pin button on individual tabs using the [ShowPinButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabItem.html#Syncfusion_Windows_Controls_SfTabItem_ShowPinButton) property on [SfTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabItem.html).
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfTabControl x:Name="tabControl">
+    <syncfusion:SfTabItem Header="Document 1"
+                          ShowPinButton="True">
+        <TextBlock Text="Content 1" />
+    </syncfusion:SfTabItem>
+    <syncfusion:SfTabItem Header="Document 2"
+                          ShowPinButton="True">
+        <TextBlock Text="Content 2" />
+    </syncfusion:SfTabItem>
+</syncfusion:SfTabControl>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+var tabItem = new SfTabItem
+{
+    Header = "Document",
+    ShowPinButton = true,
+    Content = new TextBlock { Text = "Tab Content" }
+};
+tabControl.Items.Add(tabItem);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF TabbedWindow Pin Button](tab-management_images/tabbedwindow_pin_button.gif)
+
+### Pinning a Tab
+
+When the pin button is clicked, the tab becomes pinned. Pinned tabs are automatically reordered to appear first in the tab strip.
+
+### Context Menu Pinning
+
+Use the context menu to pin or unpin tabs. Right-click on a tab header to access the pin option.
+
+## Customizing the Tear‑Off Windows
+The tear‑off window created during the tear‑off operation can be customized by handling the `NewWindowCreating` event of the [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html). This event is triggered when a tab is dragged outside the tab control and a new window is created.
+
+This feature allows replacing the default tear‑off window with a custom window by supplying a user‑defined instance and modifying its properties before it is displayed, enabling full control over window creation and appearance at runtime. Additional customization can be achieved by accessing hostWindow properties and applying the required configurations for tear‑off window to meet specific requirements.
+
+By handling the `NewWindowCreating` event:
+
+- Replace the default [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) with a custom window
+- Modify window properties such as style, appearance, and behavior
+- Access details about the tab item that initiated the tear‑off
+- Apply custom configurations or styling the window
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfChromelessWindow Title="Main Window" WindowType="Tabbed">
+    <syncfusion:SfTabControl 
+        NewWindowCreating="CustomTab_NewWindowCreating">
+        <syncfusion:SfTabItem Header="Document 1" CloseButtonVisibility="Visible">
+            <TextBlock Text="Drag this tab outside to tear it off" />
+        </syncfusion:SfTabItem>
+        <syncfusion:SfTabItem Header="Document 2" CloseButtonVisibility="Visible">
+            <TextBlock Text="Each tab can be customized" />
+        </syncfusion:SfTabItem>
+    </syncfusion:SfTabControl>
+</syncfusion:SfChromelessWindow>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+private void CustomTab_NewWindowCreating(object sender, NewWindowCreatingEventArgs e)
+{
+    var tabControl = sender as SfTabControl;
+    var defaultWindow = e.NewWindow;
+    var sourceTabItem = e.SourceTabItem;
+
+    // Create a custom window
+    var customWindow = new CustomWindow("Custom Tear‑Off Window", true, WindowStyle.ToolWindow);
+
+    // Replace the default window with the custom window
+    e.NewWindow = customWindow;
+}
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![WPF TabbedWindow Customizing TearOff Window](customize-tearOff-images/customized-tearOff-Window.gif)
+
+## NewWindowCreatingEventArgs Properties
+
+| Property       | Type                | Description                                              |
+|----------------|---------------------|----------------------------------------------------------|
+| NewWindow      | Window              | Gets or sets the window to be created for tear‑off       |
+| SourceTabItem  | object              | Gets the tab item that initiated the tear‑off operation  |
 
 ## Keyboard Shortcuts
 
