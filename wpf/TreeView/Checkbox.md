@@ -251,6 +251,8 @@ sfTreeView.CheckedItems.Add(viewModel.Items[3]);
 {% endhighlight %}
 {% endtabs %}
 
+N> To ensure correct `Recursive` checkbox behavior when updating [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) programmatically, set [NodePopulationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodePopulationMode) to `Instant`.
+
 ## Events
 
 ### NodeChecked event
@@ -272,3 +274,8 @@ private void SfTreeView_NodeChecked(object sender, NodeCheckedEventArgs e)
 {% endtabs %}
 
 N> `NodeChecked` event occurs only in UI interactions. You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
+
+### Limitations
+
+   * When [CheckBoxMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) is `Recursive` and [NodePopulationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodePopulationMode) is `OnDemand`(default), programmatically adding items to the [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) collection does not correctly update parent checkbox states (checked, unchecked, or intermediate).
+   * In `OnDemand` mode, child nodes are created only when their parent nodes are expanded. As a result, for items under collapsed parents, the control cannot locate the corresponding [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html), which prevents `Recursive` checkbox state propagation to parent nodes.
