@@ -2,7 +2,7 @@
 layout: post
 title: Resource Grouping in WPF Scheduler control | Syncfusion
 description: Learn here all about Resource Grouping support in Syncfusion WPF Scheduler (SfScheduler) control and more.
-platform: WPF
+platform: wpf
 control: SfScheduler
 documentation: ug
 ---
