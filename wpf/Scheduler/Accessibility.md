@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in WPF SfScheduler control | Syncfusion
 description: Learn here about Accessibility support with the Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
-platform: WPF
+platform: wpf
 control: SfScheduler
 documentation: ug
 ---
