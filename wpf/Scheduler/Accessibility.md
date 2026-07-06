@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in WPF SfScheduler control | Syncfusion
 description: Learn here about Accessibility support with the Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
-platform: WPF
+platform: wpf
 control: SfScheduler
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Screen reader support
 
-The `[WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler)` can easily be accessed by the screen readers. Please find the following table to get the spoken feedback about the inner element contents of the screen.
+The `[WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler)` can easily be accessed by the screen readers. Please find the following table to get the spoken feedback about the inner element contents of the screen.
 
 #### Month view
 
