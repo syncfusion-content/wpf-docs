@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 # Appointment drag and drop in WPF Scheduler (SfScheduler)
-The [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) supports to reschedule the appointment by performing the drag and drop operation. 
+The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) supports to reschedule the appointment by performing the drag and drop operation. 
 
 ## Disable drag and drop
 The Scheduler supports to disable the appointment drag and drop by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property except `DragDrop`. In this case, appointment drag & drop will not be able to perform. 
