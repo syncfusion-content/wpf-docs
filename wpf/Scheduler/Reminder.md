@@ -2,7 +2,7 @@
 layout: post
 title: Reminder in WPF Scheduler control | Syncfusion
 description: Learn here all about Reminder support in Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
-platform: WPF
+platform: wpf
 control: SfScheduler
 documentation: ug
 ---
