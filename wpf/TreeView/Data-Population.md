@@ -8,28 +8,31 @@ documentation: ug
 ---
 # Data Population in WPF TreeView (SfTreeView)
 
-TreeView can be populated either with the data source by using a [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property or by creating and adding the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) in hierarchical structure to [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) property.
+TreeView can be populated either with a data source by using the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property, or by creating and adding the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) in a hierarchical structure to the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) property.
 
-## Populating Nodes by data binding - Bound Mode
+## Populating Nodes by data binding – Bound Mode
 
 [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) can be populated in bound mode includes following steps.
 
    * Create hierarchical data model
-   * Bind data model to treeview
+   * Bind data model to TreeView
 
-To update the collection changes in UI, it is necessary to define [NotificationSubscriptionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NotificationSubscriptionMode) to Treeview as CollectionChanged /PropertyChanged.
-`NotificationSubscriptionMode` enum has following members:
+To update the collection changes in the UI, it is necessary to set the [NotificationSubscriptionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NotificationSubscriptionMode) on the TreeView to either `CollectionChange` or `PropertyChange`.
 
-   * CollectionChange - Updates its tree structure when child items collection gets changed.
-   * PropertyChange - Updates its ChildItems when associated collection property gets changed.
-   * None - It is a default mode and it doesn’t reflect collection/property changes in UI.
-To decide how to populate the nodes, it is necessary to set this `NodePopulationMode` API to Treeview.
+`NotificationSubscriptionMode` has the following enum values:
 
-The [NodePopulationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodePopulationMode) API has following enum values:
+   * `CollectionChange` — Updates its tree structure when a child items collection is changed.
+   * `PropertyChange` — Updates its child items when the associated collection property is changed.
+   * `None` — The default mode. It does not reflect collection/property changes in the UI.
 
-   * OnDemand - Populate the child nodes only when parent nodes is expanded. It is the default value.
-   * Instant - Populates all the child nodes when Treeview control is initially loaded.
-   
+To decide how to populate the nodes, it is necessary to set the `NodePopulationMode` API on the TreeView.
+
+The [NodePopulationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodePopulationMode) API has the following enum values:
+
+   * `OnDemand` — Populates child nodes only when the parent node is expanded. This is the default value.
+   * `Instant` — Populates all child nodes when the TreeView control is initially loaded.
+
+  
 ### Create Data Model for treeview
 
 Create a simple data source as shown in the following code example in a new class file, and save it as FileManager.cs file:
@@ -258,7 +261,7 @@ To create a tree view using data binding, set a hierarchical data collection to 
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-populate-nodes-with-binding-to-a-data-in-wpf-treeview).
 
-## Populating Nodes without data source - Unbound Mode
+## Populating Nodes without data source – Unbound Mode
 
 You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. To create a tree view, you use a `SfTreeView` control and a hierarchy of `TreeViewNode` objects. You create the node hierarchy by adding one or more root nodes to the [SfTreeView.Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection. Each `TreeViewNode` can have more nodes added to its Children collection. You can nest tree view nodes to whatever depth you require.
 
@@ -324,4 +327,4 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-populate-nodes-without-binding-data-as-unbound-mode-in-wpf-treeview).
 
-N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its key feature highlights. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.
