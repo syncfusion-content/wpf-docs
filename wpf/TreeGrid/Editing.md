@@ -103,7 +103,7 @@ this.treeGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 
 ## Support for IEditableObject
 
-SfTreeGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
+`SfTreeGrid` supports committing and rolling back the changes in row level when underlying data object implements the [IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
 
 The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_EndEdit). Also when user press <kbd>Esc</kbd> key, then the changes made in a row will be reverted in [CancelEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit). 
 
