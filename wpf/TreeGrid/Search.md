@@ -188,7 +188,7 @@ public class SearchControllerExt : SearchController
 
 ### Search only selected columns
 
-You can search only selected columns by overriding [SearchCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_SearchCell_Syncfusion_UI_Xaml_TreeGrid_TreeDataColumnBase_System_Object_System_Boolean_) method of `SearchController`. In the [SearchCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_SearchCell_Syncfusion_UI_Xaml_TreeGrid_TreeDataColumnBase_System_Object_System_Boolean_) method, based on `MappingName` you can skip the columns that you don’t want to search. 
+You can search only selected columns by overriding [SearchCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_SearchCell_Syncfusion_UI_Xaml_TreeGrid_TreeDataColumnBase_System_Object_System_Boolean_) method of `SearchController`. In the [SearchCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_SearchCell_Syncfusion_UI_Xaml_TreeGrid_TreeDataColumnBase_System_Object_System_Boolean_) method, based on [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName) you can skip the columns that you don’t want to search. 
 
 In the below code, except `DOJ` column other columns are gets excluded from search. 
 
