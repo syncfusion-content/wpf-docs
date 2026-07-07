@@ -13,7 +13,7 @@ In this section, we will see available keyboard shortcuts and how to override th
 
 ## Keyboard Navigation between property items
 
-The following table explains how the navigation performed between properties,
+The following table explains how navigation is performed between properties,
 
 <table>
 <th> S.No </th>

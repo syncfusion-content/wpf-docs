@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Property Definition in WPF PropertyGrid
 
-In this section, let us see how to configure properties manually in (`xaml` or `C#`) instead of event or attributes.
+In this section, you will learn how to configure properties manually (in `xaml` or `C#`) instead of using events or attributes.
 
 ## Define PropertyItem manually 
 
