@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 
-#  Accessibility Support in WPF Scheduler (SfScheduler)
+# Accessibility Support in WPF Scheduler (SfScheduler)
 
 ## Screen reader support
 
@@ -55,7 +55,7 @@ Month Agenda view with No events<br/><br/></td><td>dddd, MMMM d, yyyy No Events<
 <td>Wednesday, June 2, 2021 No Events<br/><br></td></tr>
 <tr>
 <td>
-Month Agenda view list appointment<br/><br/></td><td>dddd, dddd, MMMM d, yyyy<br/><br/></td>
+Month Agenda view list appointment<br/><br/></td><td>dddd, MMMM d, yyyy<br/><br/></td>
 <td>Thursday, June 24, 2021<br/><br></td></tr>
 <tr>
 <td>
@@ -213,7 +213,7 @@ Delete button<br/><br/></td><td>Delete button<br/><br/></td>
 <td>Delete button<br/><br></td></tr>
 <tr>
 <td>
-Timezone/All-day check box<br/><br/></td><td>All day  checkbox<br/><br/></td>
+Time zone/All-day check box<br/><br/></td><td>All day  checkbox<br/><br/></td>
 <td>All day checkbox checked/Unchecked<br/><br></td></tr>
 <tr>
 <td>
@@ -235,7 +235,7 @@ Combo box<br/><br/></td><td>Combobox content<br/><br/></td>
 <td> <b> Example </b><br/><br/></td></tr>
 <tr>
 <td>
-Editing or Deleting an recurrence appointment <br/><br/></td><td>Title<br/><br/></td>
+Editing or Deleting a recurrence appointment <br/><br/></td><td>Title<br/><br/></td>
 <td>Open Recurring Item / Confirm Delete <br/><br></td></tr>
 <tr>
 <td>
@@ -401,4 +401,4 @@ Ctrl + Alt + 8 => TimelineMonthView<br/><br/></td><td>
 Moves the view to Timeline month view.<br/><br/></td></tr>
 </table>
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.

@@ -11,14 +11,14 @@ documentation: ug
 This section explains how to handle appointment editing in [WPF scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) and also explains about the appointment resizing.
 
 ## Adding appointments
-Scheduler supports to add a new appointment by using the [Appointment Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html) UI window. Open this window by double-clicking on a time cell or month cell or view header.
+Scheduler supports adding a new appointment by using the [Appointment Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html) UI window. Open this window by double-clicking on a time cell or month cell or view header.
 
 N>
 * If [AllowViewNavigation](https://help.syncfusion.com/wpf/scheduler/date-navigations#allow-view-navigation) is true, the current view should be navigated to the respective day or timeline day views by single-clicking on the date in the view header. Other than the date by double-clicking on the view header cell, the appointment editor window will be opened, and by default, the `AllDay` checkbox will be checked in the appointment editor window.
 * All-day appointments can be created by double-clicking on the view header and not applicable for the month view header.
 
 ## Editing appointment
-Scheduler supports to edit the appointment by using `Appointment Editor` UI window. Open this window by double clicking on the appointment.
+Scheduler supports editing the appointment by using the `Appointment Editor` UI window. Open this window by double-clicking on the appointment.
 
 Appointment editor window
 
@@ -27,7 +27,7 @@ Appointment editor window
 Edit the appointments in appointment editor window. This changes will be saved back in appointment and mapped data object when using data binding. 
 
 #### Edit recurring appointment
-Scheduler supports to edit the recurrence appointment. The following window will appear when the recurrence appointment is edited to select, whether to edit only the particular occurrence or appointment series.
+Scheduler supports editing the recurrence appointment. The following window will appear when the recurrence appointment is edited to select, whether to edit only the particular occurrence or appointment series.
 
 ![WPF Scheduler editing recurrence appointment](Appointment-Editing_Images/Editing-Recurrence-Appointment.png)
 
@@ -74,7 +74,7 @@ For example, to use a custom appointment editor window instead of the default ap
 
  private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
         {
-            //To handle the default appointment editior window by setting the e.Cancel value as true.
+            //To handle the default appointment editor window by setting the e.Cancel value as true.
             e.Cancel = true;
             if (e.Appointment != null)
             {
@@ -148,7 +148,7 @@ private void Schedule_AppointmentEditorClosing(object sender, AppointmentEditorC
 * `Resource` - gets the resource collection of edited appointment.
 
 ## Disable appointment editing
-To disable appointment editing functionality, Set [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property to `None`. In this case, add, edit, resize and drag & drop the appointments cannot be able performed. 
+To disable appointment editing functionality, set [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property to `None`. In this case, add, edit, resize and drag & drop the appointments cannot be able performed. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -160,13 +160,13 @@ To disable appointment editing functionality, Set [AppointmentEditFlag](https://
 {% endtabs %}
 
 ## Delete appointments
-Scheduler supports two ways to remove the selected appointment.
+Scheduler supports two ways to remove an appointment.
 
 1. Pressing <kbd>delete</kbd> key.
 2. Using appointment editor window.
 
 #### Delete recurring appointment
-Scheduler supports to delete the recurrence appointment. The following window will appear when the user deletes the recurrence appointment. Select the delete option to make the changes for occurrence or appointment series.
+Scheduler supports deleting the recurrence appointment. The following window will appear when the user deletes the recurrence appointment. Select the delete option to make the changes for occurrence or appointment series.
 
 ![WPF Scheduler deleting recurrence appointment](Appointment-Editing_Images/Deleting-Recurrence-Appointment.png)
 
@@ -192,10 +192,10 @@ private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEven
 {% endtabs %}
 
 ## Appointment Resizing
-Scheduler has support to resize the selected appointment. This support is available for all views except 'Month' view.
+Scheduler supports resizing the selected appointment. This support is available for all views except the 'Month' view.
 
 #### Disable appointment resize
-Scheduler supports to disable the appointment resizing by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property except `Resize`. In this case, appointment resizing cannot be performed.
+Scheduler supports disabling the appointment resizing by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property except `Resize`. In this case, appointment resizing cannot be performed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -242,4 +242,4 @@ this.Schedule.AppointmentResizing += Schedule_AppointmentResizing;
 {% endtabs %}
 * `Resource` - gets the resource of an appointment under which the appointment is located.
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.

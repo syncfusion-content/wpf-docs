@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in WPF Scheduler (SfScheduler)
 
-Localization is the process of customizing the user interface, based on a culture specific to a particular country or region in order to display the regional data. The culture is represented by a unique string, for example, ―en-US ‖ for U.S. English and ― fr-FR ‖ for French (common).
+Localization is the process of customizing the user interface, based on a culture specific to a particular country or region in order to display the regional data. The culture is represented by a unique string, for example, "en-US" for U.S. English and "fr-FR" for French (common).
 
 Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by the control. The Scheduler supports localization, and creates a resource file for any culture to be applied in the scheduler.
 
@@ -42,7 +42,7 @@ N> [View **Syncfusion.SfScheduler.WPF.resx** in GitHub](https://github.com/syncf
 
 3. Right-click on the Resources folder, select **Add** and then **NewItem**.
 
-4. In `Add New Item` wizard, select the **Resource File** option and name the filename as **Syncfusion.SfScheduler.WPF.&lt;culture name&gt;.resx**. For example, give the name as **Syncfusion.SfScheduler.WPF.de.resx** for German culture.
+4. In `Add New Item` wizard, select the **Resource File** option and name the file as **Syncfusion.SfScheduler.WPF.&lt;culture name&gt;.resx**. For example, give the name as **Syncfusion.SfScheduler.WPF.de.resx** for German culture.
  
 5. The culture name that indicates the name of language and country. 
 

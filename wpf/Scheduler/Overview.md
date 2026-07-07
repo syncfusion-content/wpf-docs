@@ -26,7 +26,7 @@ The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) cont
 
 ![WPF Scheduler Recurrence Events](Overview_Images/wpf-scheduler-recurrence-events.png)
 
-**Appointment Mapping** - SfScheduler control supports to map any collection that implements the IEnumerable interface to populate appointments.
+**Appointment Mapping** - SfScheduler control supports mapping any collection that implements the IEnumerable interface to populate appointments.
 
 **Appointment Editor** - Create, edit, or delete appointments using the built-in appointment editor.
 
@@ -44,7 +44,7 @@ The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) cont
 
 **Reminder** - Use the reminders to organize the appointments in the scheduler. The Scheduler reminds about the appointment at the specified time.
 
-**LoadOnDemand** - The SfScheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when there are appointments range for multiple years.
+**LoadOnDemand** - The SfScheduler supports loading appointments on-demand with a loading indicator and improves the loading performance when there are appointments ranging over multiple years.
 
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. Looking for the full WPF Scheduler component overview, features, pricing, and documentation? Visit the [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) page.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. Looking for the full WPF Scheduler component overview, features, pricing, and documentation? Visit the [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) page.

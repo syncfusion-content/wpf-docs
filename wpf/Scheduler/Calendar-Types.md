@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Calendar Types in WPF Scheduler (SfScheduler)
-This section describes how to change the calendar types of scheduler control using the [CalendarIdentifier.](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier)
+This section describes how to change the calendar types of the scheduler control using the [CalendarIdentifier.](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier)
 
 ## Types of Calendar
 The scheduler control supports the different types of calendars such as Gregorian, Korean, Hebrew, and more. You can change the calendar types by using the [CalendarIdentifier](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier) property in [Scheduler.](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) The default value of the `CalendarIdentifier` property is [GregorianCalendar.](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.gregoriancalendar?view=net-5.0)
@@ -94,7 +94,7 @@ var appointments = new ScheduleAppointmentCollection();
 appointments.Add(new ScheduleAppointment()
 {
    Subject = "Meeting",
-  // StartTime and EndTime values specified with local system date will be converted to the Hijiri calendar mentioned.
+   // StartTime and EndTime values specified with local system date will be converted to the Hijri calendar mentioned.
    StartTime = new DateTime(2021, 09, 29, 10, 0, 0, 0),
    EndTime = new DateTime(2021, 09, 29, 11, 0, 0, 0),
 });
