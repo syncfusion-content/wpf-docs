@@ -168,7 +168,7 @@ this.treeGrid.SearchController.Clear();
 
 ## Search customization
 
-WPF TreeGrid (SfTreeGrid) process the search operations in `SearchController` class. You can change the default search behaviors by overriding `SearchController` class and set to `SfTreeGrid.SearchController`.
+WPF TreeGrid (SfTreeGrid) process the search operations in [SearchController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html) class. You can change the default search behaviors by overriding `SearchController` class and set to `SfTreeGrid.SearchController`.
 
 {% tabs %}
 {% highlight c# %}
