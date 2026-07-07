@@ -106,7 +106,7 @@ Use to display the custom template-specified content.
 
 ## Defining Columns
 
-You can let the SfTreeGrid to create columns or you can manually defined columns to de displayed. Below sections explains both ways, 
+You can let the SfTreeGrid create columns or you can manually define columns to be displayed. Below sections explains both ways,
 
 1. Automatically generating columns
 2. Manually define columns
@@ -169,7 +169,7 @@ TreeGridCheckBoxColumn
 </table>
 
 
-N> The order of columns in the collection will determine the order of that they will appear in SfTreeGrid.
+N> The order of columns in the collection will determine the order in which they will appear in SfTreeGrid.
 
 #### AutoGenerateColumns with different modes
 
@@ -360,7 +360,7 @@ Below screenshot shows the customized header template loaded on the header of Fi
 
 ### Data Annotations with AutoGenerateColumns
 
-SfTreeGrid support to generate the columns based on built-in [Data Annotation Attributes](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel?view=dotnet-uwp-10.0&redirectedfrom=MSDN). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
+SfTreeGrid supports generating the columns based on built-in [Data Annotation Attributes](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel?view=dotnet-uwp-10.0&redirectedfrom=MSDN). Data Annotations are ignored, when the `AutoGenerateColumns` is set to False.
 
 #### Exclude column
 
@@ -577,7 +577,7 @@ this.treeGrid.Columns.Clear();
 {% endhighlight %}
 {% endtabs %}
 
-You can remove a column using Remove and RemoveAt methods.
+You can remove a column using the `Remove` and `RemoveAt` methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -591,7 +591,7 @@ treeGrid.Columns.RemoveAt(1);
 
 ## Resizing Columns
 
-SfTreeGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfTreeGrid.AllowResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingColumns) or [TreeGridColumn.AllowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_AllowResizing) property.
+SfTreeGrid allows to resize the columns like in Excel by resizing column header. This can be enabled or disabled by setting the [SfTreeGrid.AllowResizingColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingColumns) or [TreeGridColumn.AllowResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_AllowResizing) property.
 
 N> Resizing considers MinWidth and MaxWidth of column.
 
@@ -609,7 +609,7 @@ N> Resizing considers MinWidth and MaxWidth of column.
 {% endhighlight %}
 {% endtabs %}
 
-You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
+You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line that exists between two columns.
 
 ![Resizing Columns in WPF TreeGrid](Columns_images/wpf-treegrid-column-resizing.jpeg)
 
