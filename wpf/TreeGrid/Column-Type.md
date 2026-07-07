@@ -218,7 +218,7 @@ In the below code snippet, `TreeGridCurrencyColumn` is loaded with `ProgressBar`
 ![WPF TreeGrid Column with ProgressBar](ColumnTypes_images/wpf-treegrid-with-progressbar.png)
 
 
-`CellTemplate` is not support by [TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) and [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) columns.
+`CellTemplate` is not support by [TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) and[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) columns.
 
 #### Reusing same DataTemplate for multiple columns
 
@@ -264,7 +264,7 @@ You can use the same [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/Win
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
-`TreeGridColumn` provides support to choose different [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.DataTemplate?redirectedfrom=MSDN&view=winrt-20348) based on underlying data object using [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplateSelector) property.  
+`TreeGridColumn` provides support to choose different[DataTemplate](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.DataTemplate?redirectedfrom=MSDN&view=winrt-20348) based on underlying data object using [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplateSelector) property.  
 
 For example, two different templates loaded alternatively in `Salary` column. 
 
@@ -492,7 +492,7 @@ You can apply format for the column using [StringFormat](https://docs.microsoft.
 {% endhighlight %}
 {% endtabs %}
 
-When column is auto-generated, you can set the `StringFormat` by handling `AutoGeneratingColumn` event.
+When column is auto-generated, you can set the 'StringFormat' by handling 'AutoGeneratingColumn' event.
 
 {% tabs %}
 {% highlight c# %}
@@ -561,7 +561,7 @@ public class CurrencyFormatConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-When column is auto-generated, you can set the `Converter` by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoGeneratingColumn) event
+When column is auto-generated, you can set the `Converter` by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event
 
 {% tabs %}
 {% highlight c# %}
@@ -784,7 +784,7 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 
 * Text decorations - You can [decorate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.textdecorations?redirectedfrom=MSDN&view=net-5.0) column? data using [TextDecorations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextDecorations) property.
 
-* Text trimming - You can [trim](https://learn.microsoft.com/en-us/dotnet/api/system.windows.texttrimming?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) the column? data using [TextTrimming](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextTrimming) property.
+* Text trimming - You can [trim]() the column? data using [TextTrimming](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextTrimming) property.
 
 * Text wrapping - You can [wrap](https://docs.microsoft.com/en-us/dotnet/api/system.windows.textwrapping?redirectedfrom=MSDN&view=net-5.0) the column? data using [TextWrapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextWrapping) property. 
 

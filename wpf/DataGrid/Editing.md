@@ -704,7 +704,7 @@ public class SfDataGridExt : SfDataGrid
 
 [How to use the editing related events in GridCheckBoxColumn?](https://support.syncfusion.com/kb/article/6022/how-to-use-the-editing-related-events-in-gridcheckboxcolumn-of-wpf-datagrid-sfdatagrid)
 
-[How to skip editing for Read-Only columns in AddNewRow?](https://support.syncfusion.com/kb/article/6133/how-to-skip-editing-for-read-only-columns-in-addnewrow-of-wpf-datagrid-sfdatagrid)
+[How to skip editing for Read-Only columns in AddNewRow?](https://support.syncfusion.com/kb/article/6133/how-to-skip-editing-for-read-only-colums-in-addnewrow-of-wpf-datagrid-sfdatagrid)
 
 [How to change the cell value of selectedcells when end edit?](https://support.syncfusion.com/kb/article/6186/how-to-change-the-cell-value-of-selected-cells-in-wpf-datagrid-sfdatagrid)
 

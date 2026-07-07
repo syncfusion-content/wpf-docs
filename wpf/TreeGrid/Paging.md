@@ -174,7 +174,7 @@ public class EmployeeInfo
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![WPF TreeGrid displays Multiple Pages using SfDataPager](paging_images/wpf-treeGrid-multiple-page.png)
+![WPF TreeGrid diplays Multiple Pages using SfDataPager](paging_images/wpf-treeGrid-multiple-page.png)
 
 ### Limitations
 
