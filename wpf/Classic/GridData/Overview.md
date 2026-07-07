@@ -156,3 +156,5 @@ The GridData control contains a number of features for managing data effectively
 The GridData control has a rich selection of over 14 built-in styles that provide an attractive look and feel for the grid. The GridData control also allows you to customize all aspects of grid appearance by using Microsoft Expression Blend. 
 
 ![WPF Overview of expression blend in GridData control](overview_images/wpf-classic-grid-data-expression-blend.png)
+
+N> Looking for the full WPF Data Grid component overview, features, pricing, and documentation? Visit the [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) page.

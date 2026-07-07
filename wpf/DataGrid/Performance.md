@@ -9,7 +9,7 @@ documentation: ug
 
 # Performance in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
  
 ## Improving scrolling performance
 

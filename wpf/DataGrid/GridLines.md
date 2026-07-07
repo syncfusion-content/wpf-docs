@@ -9,7 +9,7 @@ documentation: ug
 
 # Grid Lines customization in WPF DataGrid (SfDataGrid)
 
-SfDataGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 
 [SfDataGrid.GridLinesVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridLinesVisibility): To set the border lines for the cells other than header and stacked header cells.
 [SfDataGrid.HeaderLinesVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderLinesVisibility): To set the border lines only for header and stacked header cells.

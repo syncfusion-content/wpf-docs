@@ -9,7 +9,7 @@ documentation: ug
 
 # Column Types in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
 
 You can also add or override existing columns and renderers as you need.
 

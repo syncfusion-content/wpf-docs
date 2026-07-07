@@ -9,7 +9,7 @@ documentation: ug
 
 # Paging in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
 
 ## Getting started
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip in WPF DataGrid (SfDataGrid)
 
-ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid. 
+ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid). 
 
 ## Record cell tooltip
 

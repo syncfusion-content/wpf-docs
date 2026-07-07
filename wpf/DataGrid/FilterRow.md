@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Filter Row in WPF DataGrid (SfDataGrid)
-SfDataGrid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterRowPosition.html) property.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterRowPosition.html) property.
 
 {% tabs %}
 {% highlight xaml %}

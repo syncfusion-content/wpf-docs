@@ -9,7 +9,7 @@ documentation: ug
 
 # Conditional Styling in WPF DataGrid (SfDataGrid)
 
-You can style the DataGrid and its inner elements (cells, rows and columns) conditionally based on data in three ways,
+You can style the [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) and its inner elements (cells, rows and columns) conditionally based on data in three ways,
 
 1. Using Converter
 2. Using Data Triggers
