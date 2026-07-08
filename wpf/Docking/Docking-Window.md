@@ -198,7 +198,7 @@ DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow1, 200);
 
 DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow2, 300);
 
-DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow3, 200);
+DockingManager.SetDesiredMaxHeightInDockedMode(dockWindow3, 200);
 
 {% endhighlight %}
 
@@ -434,8 +434,8 @@ menu2.Items.Add(customMenuItem2);
 menu2.Items.Add(customMenuItem3);
 
 //Adding custom context menu items with sub menu items
-dockingManager.FloatWindowContextMenuItems.Add(menu1);
-dockingManager.FloatWindowContextMenuItems.Add(menu2);
+dockingManager.DockWindowContextMenuItems.Add(menu1);
+dockingManager.DockWindowContextMenuItems.Add(menu2);
 
 {% endhighlight %}
 {% endtabs %}

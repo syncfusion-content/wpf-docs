@@ -150,13 +150,13 @@ Maximized state of the MDI Container can get by [IsInMDIMaximizedState](https://
 
 {% highlight C# %}
 
-(DockingManager1.DocContainer as DocumentContainer).IsInMDIMaximizedState = true;
+bool isMdiMaximized = (DockingManager1.DocContainer as DocumentContainer).IsInMDIMaximizedState;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-TryCast(DockingManager1.DocContainer, DocumentContainer).IsInMDIMaximizedState = True 
+Dim isMdiMaximized As Boolean = TryCast(DockingManager1.DocContainer, DocumentContainer).IsInMDIMaximizedState
 
 {% endhighlight %}
 
@@ -394,7 +394,7 @@ End Sub
 
 void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
 {
-	(DockingManager1.DocContainer as DocumentContainer).SetLayout(MDILayout.Vertical);
+	(DockingManager1.DocContainer as DocumentContainer).SetLayout(MDILayout.Cascade);
 }
 
 {%endhighlight%}
@@ -402,7 +402,7 @@ void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub DocumentContainer_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	TryCast(DockingManager1.DocContainer, DocumentContainer).SetLayout(MDILayout.Vertical)
+	TryCast(DockingManager1.DocContainer, DocumentContainer).SetLayout(MDILayout.Cascade)
 End Sub 
 
 {% endhighlight %}
@@ -414,9 +414,9 @@ End Sub
 
 
 
-## Closing a MDI Windows
+## Closing MDI Windows
 
-To enable or disable closing functionality of the MDI windows, set [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanClose) an attached property of DockingManager with its respective values. By default, its value is `True`
+To enable or disable closing functionality of the MDI windows, set [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanClose), an attached property of DockingManager, to its respective value. By default, its value is `True`.
 
 {% tabs %}
 
@@ -541,7 +541,7 @@ dockingManager.EnableAutoScroll = true;
 
 ## TDI window's order changed notification
 
-You will be notified when the TDI item's order is changed by using the [DocumentTabOrderChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanged) event. You can get the order changed TDI window with its old and new index values by using the [SourceTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabItem), [OldIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_OldIndex) and [NewIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_NewIndex) properties. You can also get old and new tab group of the order changed item by using the the [SourceTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabGroup) and [TargetTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_TargetTabGroup) properties. 
+You will be notified when the TDI item's order is changed by using the [DocumentTabOrderChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanged) event. You can get the order changed TDI window with its old and new index values by using the [SourceTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabItem), [OldIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_OldIndex) and [NewIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_NewIndex) properties. You can also get old and new tab group of the order changed item by using the [SourceTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabGroup) and [TargetTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_TargetTabGroup) properties.
 
 N> You will also be notified when creating a horizontal or vertical tab groups using `ContextMenu` or move the tab document to previous  or next tab groups and when tab the float window to Document Window or create new tabgroup using DragProviders.
 
@@ -549,7 +549,7 @@ N> You will also be notified when creating a horizontal or vertical tab groups u
 {% highlight XAML %}
 
 <syncfusion:DockingManager DocumentTabOrderChanged="DockingManager_DocumentTabOrderChanged"
-                           UseDocumentContainer="UseDocumentContainer"
+                           UseDocumentContainer="True"
                            Name="dockingManager">
     <ContentControl syncfusion:DockingManager.Header="Document1" 
                     syncfusion:DockingManager.State="Document"/>
@@ -564,7 +564,7 @@ N> You will also be notified when creating a horizontal or vertical tab groups u
 {% endhighlight %}
 {% highlight C# %}
 
-documentcontainer1.UseDocumentContainer = true;
+dockingManager.UseDocumentContainer = true;
 dockingManager.DocumentTabOrderChanged += DockingManager_DocumentTabOrderChanged;
 
 {% endhighlight %}
@@ -600,7 +600,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 If you want to restrict the user to reordering the TDI window by drag and drop operation, use the [DocumentTabOrderChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanging) event and set `Cancel` property value as `true`.
 
-N> You can handle the document window will be floated or not by `DockStateChangingEvent` instead of `DocumentTabOrderChanging`. 
+N> You can handle whether the document window will be floated or not by using the `DockStateChanging` event instead of `DocumentTabOrderChanging`.
 
 {% tabs %}
 {% highlight XAML %}

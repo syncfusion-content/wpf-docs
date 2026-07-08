@@ -132,57 +132,57 @@ DockingManager.SetCanAutoHide(grid1, false);
 
 ![Auto hide visibility](Other-Features_images/Other-Features_img1.jpeg)
 
-## Enabling/Disabling Animation on mouse over for auto hide
+## Enabling/Disabling Animation on Mouse Hover for Auto Hide
 
-By default, whenever you move your mouse over the AutoHidden tab, the auto hide animation will start. You can disable this behavior by setting the [IsAutoHideAnimationOnMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsAnimationEnabledOnMouseOver)=true so that when you move the mouse over the auto hide tab it does not start the AutoHide animation.  But it will make you click the auto hide tab to start auto hide animation.
+By default, the auto-hide animation does not start when you hover the mouse over the AutoHidden tab. You can enable this behavior by setting the [IsAnimationEnabledOnMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsAnimationEnabledOnMouseOver) property to `True`; when `False`, you will need to click the auto-hide tab to start the auto-hide animation.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:DockingManager Name="DockingManager" IsAnimationEnabledOnMouseOver="True" >   
+<syncfusion:DockingManager Name="DockingManager" IsAnimationEnabledOnMouseOver="True" >
 
 <Grid/>
 
 </syncfusion:DockingManager>
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight c# %}
 
 DockingManager.IsAnimationEnabledOnMouseOver = true;
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 
 
 ## AutoHide Animation Delay
 
-You can control the animation speed of auto hide by using the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_AnimationDelay) property as given below :
+You can control the animation speed of auto-hide by using the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_AnimationDelay) property. Note that `AnimationDelay` expects a `System.Windows.Duration`; `new TimeSpan(100)` represents 100 ticks, so use `TimeSpan.FromMilliseconds(...)` to get a meaningful delay.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:DockingManager Name="DockingManager" IsAnimationEnabledOnMouseOver="True" >  
+<syncfusion:DockingManager Name="DockingManager" IsAnimationEnabledOnMouseOver="True" >
 
 <Grid syncfusion:DockingManager.AnimationDelay="100"/>
 
 </syncfusion:DockingManager>
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight c# %}
 
-Duration dur = new Duration(new TimeSpan(100));
+Duration dur = new Duration(TimeSpan.FromMilliseconds(100));
 
 DockingManager.SetAnimationDelay(element, dur);
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 
 ## Events for ContextMenu and BeforeOpen
@@ -300,7 +300,7 @@ DockingManager.SetNoHeader(grid1, true);
 
 
 
-## Detecting the maximized state of the MDI window
+## Detecting the Maximized State of the MDI Window
 
 [IsInMDIMaximizedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsInMDIMaximizedState) property indicates whether any of the MDI children is in a maximized state.
 
@@ -453,9 +453,7 @@ DockingManager.IsRollupFloatWindow = true;
 
 ### VS2005:
 
-
-
-![VS2005 ode](Other-Features_images/Other-Features_img12.jpeg)
+![VS2005 mode](Other-Features_images/Other-Features_img12.jpeg)
 
 
 
@@ -784,8 +782,6 @@ By enabling the [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfu
 
 </Syncfusion:DockingManager>
 
-</td></tr>
-
 {% endhighlight %}
 
 {% endtabs %} 
@@ -819,7 +815,7 @@ By enabling the [CanFloatMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion
            
 <ContentControl x:Name="Item1" Syncfusion:DockingManager.Header="Item1" Syncfusion:DockingManager.CanFloatMaximize="True"/>
 
-</Syncfusion:DockingManager></td></tr>
+</Syncfusion:DockingManager>
 
 {% endhighlight  %}
 

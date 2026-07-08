@@ -125,7 +125,7 @@ You can also iterate through all the child elements of the DockingManager contro
 
                 //Checking the active window
 
-                if (ffelement == DockingManager1.ActiveWindow)
+                if (felement == DockingManager1.ActiveWindow)
 
                 {
 
@@ -505,11 +505,11 @@ The following code illustrates changing the tab strip placement.
 
 <!-- To set the Tab strip to the Bottom -->       
 
-<sftools:DockingManager Name="DocManager1" DockTabAlignment="Bottom"/>        
+<syncfusion:DockingManager Name="DocManager1" DockTabAlignment="Bottom"/>        
 
 <!-- To set the Tab strip to the Right -->        
 
-<sftools:DockingManager Name="DocManager1" DockTabAlignment="Right"/>
+<syncfusion:DockingManager Name="DocManager1" DockTabAlignment="Right"/>
 
 {% endhighlight  %}
 {% highlight c# %}
@@ -637,7 +637,7 @@ For settings, [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.To
 
 {% highlight xaml %}
 
-<Grid Name="Properties" sftools:DockingManager.CanDock="True"/>
+<Grid Name="Properties" syncfusion:DockingManager.CanDock="True"/>
 
 {% endhighlight  %}
 
@@ -660,7 +660,7 @@ To enable the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.T
 
 {% highlight xaml %}
 
-<Grid Name="Properties" sftools:DockingManager.CanFloat="True"/>
+<Grid Name="Properties" syncfusion:DockingManager.CanFloat="True"/>
 
 {% endhighlight  %}
 
@@ -693,7 +693,7 @@ To set this property, refer the following code.
 
 {% highlight xaml %}
 
-<Grid Name="Properties" sftools:DockingManager.CanClose="True">
+<Grid Name="Properties" syncfusion:DockingManager.CanClose="True" />
 
 {% endhighlight %}
 
@@ -836,7 +836,7 @@ To apply different animation styles to the docking windows, use the following co
 
 <!--To set the Fade animation mode-->        
 
-<sftools:DockingManager Name="DocManager1" AutoHideAnimationMode="Fade"/>
+<syncfusion:DockingManager Name="DocManager1" AutoHideAnimationMode="Fade"/>
 
 {% endhighlight %}
 
@@ -879,7 +879,7 @@ To set CloseTabs as CloseActive mode, use the following code:
 
 {% highlight xaml %}
 
-<sftools:DockingManager Name="DocManager1" CloseTabs="CloseActive"/>
+<syncfusion:DockingManager Name="DocManager1" CloseTabs="CloseActive"/>
 
 {% endhighlight %}
 
@@ -902,7 +902,7 @@ The following code is used to enable the [CanDrag](https://help.syncfusion.com/c
 
 {% highlight xaml %}
 
-<Grid Name="Properties" sftools:DockingManager.CanDrag="True"/>
+<Grid Name="Properties" syncfusion:DockingManager.CanDrag="True"/>
 
 {% endhighlight  %}
 
@@ -1044,15 +1044,15 @@ The following code snippet is used to change the Drag mode of the DockingManager
 
 <!--Setting the Normal Drag Mode-->        
 
-<sftools:DockingManager Name="DocManager1" DraggingType="NormalDragging"/>
+<syncfusion:DockingManager Name="DocManager1" DraggingType="NormalDragging"/>
         
 <!--Setting the Border Drag Mode-->        
 
-<sftools:DockingManager Name="DocManager1" DraggingType="BorderDragging"/>
+<syncfusion:DockingManager Name="DocManager1" DraggingType="BorderDragging"/>
         
 <!--Setting the Shadow Drag Mode-->        
 
-<sftools:DockingManager Name="DocManager1" DraggingType="ShadowDragging"/>
+<syncfusion:DockingManager Name="DocManager1" DraggingType="ShadowDragging"/>
 
 {% endhighlight  %}
 
@@ -1398,7 +1398,7 @@ The following code illustrates the same.
 
 {% highlight c# %}
 
-DockingManager.IsContextMenuButton="False";
+DockingManager.IsContextMenuButtonVisible=false;
 
 {% endhighlight  %}
 
@@ -1457,7 +1457,7 @@ To set the height and width for the DockingManager elements in the docked state,
 
 <!--To set the width and height of the element in Docked Mode-->        
 
-<Grid Name="Properties" sftools:DockingManager.DesiredWidthInDockedMode="400" sftools:DockingManager.DesiredHeightInDockedMode="400"/ >
+<Grid Name="Properties" syncfusion:DockingManager.DesiredWidthInDockedMode="400" syncfusion:DockingManager.DesiredHeightInDockedMode="400"/ >
 
 {% endhighlight  %}
 
@@ -1486,7 +1486,7 @@ Use the following code to set the above properties.
         
 <!--To set the width and height of the element in the Docked Mode-->        
 
-<Grid Name="Properties" sftools:DockingManager.DesiredWidthInFloatingMode="400" sftools:DockingManager.DesiredHeightInFloatingMode="400"/>
+<Grid Name="Properties" syncfusion:DockingManager.DesiredWidthInFloatingMode="400" syncfusion:DockingManager.DesiredHeightInFloatingMode="400"/>
 
 {% endhighlight %}
 
@@ -1517,11 +1517,11 @@ To enable / disable hot tracking feature in DockingManager, use the following co
         
 <!-- To enable HotTracking in Docking Manager -->        
 
-<sftools:DockingManager Name="DocManager1" IsEnableHotTracking="True"/>        
+<syncfusion:DockingManager Name="DocManager1" IsEnableHotTracking="True"/>        
 
 <!-- To disable HotTracking in Docking Manager -->        
 
-<sftools:DockingManager Name="DocManager1" IsEnableHotTracking="False"/>
+<syncfusion:DockingManager Name="DocManager1" IsEnableHotTracking="False"/>
 
 {% endhighlight  %}
 
@@ -1663,8 +1663,6 @@ This property is used to specify the customized style for the MDI window header,
 			<Setter Property="Background" Value="Green"/>
 
 			<Setter Property="Height" Value="50"/>
-
-			<Setter Property="Header" Value="Document"/>
 
 		</Style>
 

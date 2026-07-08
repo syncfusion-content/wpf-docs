@@ -108,7 +108,7 @@ This section explains how to create MVVMLight sample with DockingManager. Since 
 
 The following steps explains how to create sample project with MVVMLight templates.
 
-1.Download MVVMLight toolkit and install it to avail the predefined MVVMLight templates for all platforms MMVMLight extension can be install from Tools and Extension.
+1.Download MVVMLight toolkit and install it to avail the predefined MVVMLight templates for all platforms. The MVVMLight extension can be installed from Extensions and Updates.
 
 2.Create a new WPF project and select MVVMLight WPF template.
 
@@ -226,13 +226,13 @@ End Class
 
 {% highlight XAML %}
 
-xmlns:prsm="http://www.codeplex.com/prism"
+xmlns:prsm="http://prismlibrary.com/"
 
 {% endhighlight %}
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-In the following code example, a region called “MainRegion” has been created to load DockingManager Module views.
+In the following code example, a region called "MainRegion" has been created to load DockingManager Module views.
 
 {% capture codesnippet4 %}
 
@@ -244,7 +244,7 @@ In the following code example, a region called “MainRegion” has been created
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:prsm="http://www.codeplex.com/prism"
+        xmlns:prsm="http://prismlibrary.com/"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <syncfusion:DockingManager prsm:RegionManager.RegionName="MainRegion"  DockFill="True">

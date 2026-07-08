@@ -12,7 +12,7 @@ To invoke any command using KeyBoard, Ribbon control provides KeyTip support to 
 
 ## Adding KeyTip to the ribbon items
 
-RibbonControl provides with an attached property called `KeyTip` that helps to set the Key tip for the RibbonItem. It also let to set the Key tip for the RibbonTab,Launcher Button,and for the controls that are needed to add in the Ribbon like RibbonButton,SplitButton…etc
+RibbonControl provides with an attached property called `KeyTip` that helps to set the Key tip for the RibbonItem. It also allows you to set the Key tip for the RibbonTab,Launcher Button,and for the controls that are needed to add in the Ribbon like RibbonButton,SplitButton…etc
 
 {% tabs %}
 

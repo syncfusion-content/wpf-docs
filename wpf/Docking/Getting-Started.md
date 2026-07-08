@@ -17,7 +17,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Creating Application with DockingManager control
-In this walk through, user will create a WPF application with [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control.
+In this walkthrough, you will create a WPF application with [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control.
 
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
@@ -54,8 +54,8 @@ In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.W
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GettingStartedComboBox"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="GettingStartedComboBox.MainWindow"
+        xmlns:local="clr-namespace:DockingManager_Sample"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="DockingManager_Sample.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -111,6 +111,13 @@ namespace DockingManager_Sample
             ContentControl Properties = new ContentControl();
             ContentControl Output = new ContentControl();
             ContentControl StartPage = new ContentControl();
+
+            //Set header for the content controls
+            DockingManager.SetHeader(SolutionExplorer, "Solution Explorer");
+            DockingManager.SetHeader(ToolBox, "Toolbox");
+            DockingManager.SetHeader(Properties, "Properties");
+            DockingManager.SetHeader(Output, "Output");
+            DockingManager.SetHeader(StartPage, "Start Page");
 
             //Add content controls as child of DockingManager
 
@@ -298,8 +305,8 @@ You can automatically save the current layout of [DockingManager](https://help.s
 {% endhighlight %}
 
 {% highlight C# %}
-			
-SyncDockingManager.PersistState = true;
+
+dockingManager.PersistState = true;
 
 {% endhighlight %}
  
@@ -311,13 +318,13 @@ The saved state can be reload by calling the [LoadDockState](https://help.syncfu
 
 {% highlight C# %}
 
-this.SyncDockingManager.LoadDockState();
+this.dockingManager.LoadDockState();
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Me.SyncDockingManager.LoadDockState() 
+Me.dockingManager.LoadDockState()
 
 {% endhighlight %}
 
@@ -389,8 +396,8 @@ using Syncfusion.SfSkinManager;
 {% highlight C# %}
 
 //Set VisualStyle
-			
-SfSkinManager.SetVisualStyle(SyncDockingManager,VisualStyles.VisualStudio2013);
+
+SfSkinManager.SetVisualStyle(dockingManager, VisualStyles.VisualStudio2013);
 
 {% endhighlight %}
 

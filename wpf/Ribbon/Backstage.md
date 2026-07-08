@@ -2,7 +2,7 @@
 layout: post
 title: Backstage in WPF Ribbon control | Syncfusion®
 description: Learn about Backstage support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: wpf
+platform: WPF
 control: Ribbon
 documentation: ug
 ---
@@ -15,7 +15,7 @@ N> The BackStage feature is not available when using the default Ribbon style. I
 
 ## BackStage settings in Ribbon
 
-The BackStage can be added by using [BackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_BackStage) property of Ribbon. To show the BackStage by, click the `FILE` Menu in Ribbon like in Microsoft Outlook. 
+The BackStage can be added by using [BackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_BackStage) property of Ribbon. To show the BackStage, click the `FILE` Menu in Ribbon like in Microsoft Outlook. 
 
 {% tabs %}
 

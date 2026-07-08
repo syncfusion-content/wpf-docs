@@ -35,9 +35,9 @@ SyncDockingManager.UseNativeFloatWindow = true;
 ![WPF Docking Floating Window](FloatingWindow_images/wpf-docking-floating-window.jpeg)
 
 
-## Rolling Up support
+## Rolling Up Support
 
-The float window is rolled up to top using the property [IsRollUpTopProperty](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsRollupFloatWindow). To enable this functionality set its value as `True`, by default its value is `False`.        
+The float window is rolled up to the top using the property [IsRollupFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsRollupFloatWindow). To enable this functionality set its value to `True`; by default its value is `False`.
 
 {% tabs %}
 
@@ -93,9 +93,9 @@ SyncDockingManager.ShowFloatWindowInTaskbar = true;
 
 {% endtabs %}
 
-### Show or Hide the Taskbar support for Selective Windows
+### Show or Hide the Taskbar Support for Selective Windows
 
-To enable or disable the taskbar support for particular window, use the attached property [ShowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowInTaskbar) of `DockingManager` and the default is true. It is necessary to set [ShowFloatWindowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ShowFloatWindowInTaskbar) property of `DockingManager` to true for displaying even a single `NativeFloatWindow` in taskbar.
+To enable or disable the taskbar support for a particular window, use the attached property [ShowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowInTaskbar) of `DockingManager`. The default value is `true`. It is necessary to set the [ShowFloatWindowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ShowFloatWindowInTaskbar) property of `DockingManager` to `true` for displaying even a single `NativeFloatWindow` in the taskbar.
 
 {% tabs %}
 
@@ -176,9 +176,9 @@ DockingManager.SetCanFloat(Item2, false);
 ![WPF Docking Float Functionality](FloatingWindow_images/wpf-docking-float-functionality.jpeg)
 
 
-## Enabling and Disabling the float functionality Operation on Double Click
+## Disable Dock on Double-Click
 
-The float window changes its state to `Dock` when double click its header by default. To disable this functionality for the specific child, set [NoDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_NoDock) property as `True`.       
+The float window changes its state to `Dock` when double-clicking its header by default. To disable this functionality for a specific child, set the [NoDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_NoDock) property to `True`.
 
 {% tabs %}
 

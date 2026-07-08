@@ -49,9 +49,22 @@ Float State displays the child in FloatWindow as shown below:
 
 {% tabs %}
 
+{% highlight xaml %}
 
+<syncfusion:DockingManager>
+    <Grid Name="grid1" syncfusion:DockingManager.State="Float" syncfusion:DockingManager.Header="Float Window"/>
+</syncfusion:DockingManager>
 
-{% endtabs %} 
+{% endhighlight %}
+
+{% highlight c# %}
+
+DockingManager.SetHeader(grid1, "Float Window");
+DockingManager.SetState(grid1, DockState.Float);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![Float State](Basic-Features_images/Basic-Features_img2.jpeg)
@@ -104,16 +117,16 @@ DockingManager.SetState(grid1, DockState.AutoHidden);
 
 ![Auto hidden state](Basic-Features_images/Basic-Features_img3.jpeg)
 
-### Document State Child
+### Document State Children
 
 The Document state is the child’s children, which can be displayed as a Tabbed document or (Multiple Document Interface) MDI.
 
-Document State Child can be of two types.
+Document State Children can be of two types.
 
 * TDI (Tabbed Document Interface)
 * MDI (Multiple Document Interface)
 
-You can create MDI Documents by specifying [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ContainerMode) to MDI as a child state,and as Document , as shown below.
+You can create MDI Documents by specifying [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ContainerMode) to MDI as a child state, and as Document, as shown below.
 
 {% tabs %}
 
@@ -185,10 +198,6 @@ Similarly you can create a TDI Document by specifying [ContainerMode](https://he
 
 ![Document state](Basic-Features_images/Basic-Features_img5.jpeg)
 
-#### Refer Also:
-
-How to Create Docking Manager?
-
 ## Layout of the child
 
 We can achieve the layout that we want using TargetName attached property.  Target names are generally used to specify where the child needs to be docked or floated. The following code shows the usage of [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_TargetNameInDockedMode).
@@ -217,11 +226,7 @@ DockingManager.SetTargetNameInDockedMode(grid2, "grid1");
 
 ![Layout of the child](Basic-Features_images/Basic-Features_img6.jpeg)
 
-#### Refer Also:
-
-How to Create Docking Manager?
-
-## DockSide for Docked State child’s
+## DockSide for Docked State
 
 [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode) and [SideInFloatMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInFloatMode) are used to decide the dock side of child with respect to their target names in dock mode and float mode.
 
@@ -252,15 +257,6 @@ DockingManager.SetSideInDockedMode(grid1, DockSide.Left);
 ![DockSide for docked state](Basic-Features_images/Basic-Features_img7.jpeg)
 
 The following code represents child in a Dock right position.
-
-{% tabs %}
-
-
-
-{% endtabs %} 
-
-
-![DockSide for docked state](Basic-Features_images/Basic-Features_img8.jpeg)
 
 {% tabs %}
 
@@ -355,7 +351,3 @@ DockingManager.SetSideInDockedMode(grid2, DockSide.Tabbed);
 
 
 ![DockSide for docked state](Basic-Features_images/Basic-Features_img11.jpeg)
-
-#### Refer Also:
-
-How to Create Docking Manager?

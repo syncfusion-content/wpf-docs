@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonSplitButton in WPF Ribbon
 
-SplitButton can perform like both normal Button as well as DropDownButton. It allow to click the button directly by clicking the upper part of the button and also it display list of items while click on the arrow.
+SplitButton can perform like both normal Button as well as DropDownButton. It allows you to click the button directly by clicking the upper part of the button and also it display list of items while click on the arrow.
 
 
 ## Add DropDownMenuItem

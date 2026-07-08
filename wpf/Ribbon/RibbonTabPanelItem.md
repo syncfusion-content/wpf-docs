@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonTabPanelItem in WPF Ribbon
 
-`RibbonTabPanelItem` is used to display items below application Close button and above the `RibbonBar` content area. It is usually aligned in the right side of the Ribbon and we can place desire items like emoji's, help button etc., in this Tab panel. 
+`RibbonTabPanelItem` is used to display items below application Close button and above the `RibbonBar` content area. It is usually aligned in the right side of the Ribbon and we can place desired items like emojis, help button etc., in this Tab panel. 
 
 {% tabs %}
 

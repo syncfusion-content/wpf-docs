@@ -63,12 +63,12 @@ DockingManager1.DockTabAlignment = Dock.Left;
 
 <syncfusion:DockingManager x:Name="DockingManager1" DockTabAlignment="Right">
 
-<ContentControl syncfusion:DockingManager.Header="Item1"  x:Name="TabbedWindow1"/>  
+<ContentControl syncfusion:DockingManager.Header="Item1"  x:Name="TabbedWindow1"/>
 
 <ContentControl syncfusion:DockingManager.Header="Item2" x:Name="TabbedWindow2"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
 				syncfusion:DockingManager.TargetNameInDockedMode="TabbedWindow1"/>
-				
+
 </syncfusion:DockingManager>
 
 {% endhighlight %}
@@ -120,7 +120,7 @@ SyncDockingManager.DockTabAlignment = Dock.Top;
 ![WPF Docking Top TabAlignment](TabbedWindow_images/wpf-docking-top-tab-alignment.jpeg)
 
 
-## Closing a Tabbed window
+## Closing a Tabbed Window
 
 Tabbed window provides two different closing behaviors. They are CloseActive and CloseAll modes of [CloseTabs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CloseTabs) property.
 
@@ -272,7 +272,7 @@ You can handle the event as follows,
 {% tabs %}
 {% highlight c# %}
 
-private void DockingManager1_TabOrderChanging(object sender, Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs e)
+private void DockingManager1_TabOrderChanging(object sender, Syncfusion.Windows.Tools.Controls.TabOrderChangingEventArgs e)
 {
     // Restrict the Tab item order changing
     e.Cancel = true;

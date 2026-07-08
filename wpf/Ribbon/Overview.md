@@ -24,7 +24,7 @@ The [WPF Ribbon](https://www.syncfusion.com/wpf-controls/ribbon) illustrates the
 
 * Provides a ribbon window that overrides the default window and can set visual styles of ribbon window to different theme styles.
 * The Ribbon control is available in both normal and simplified layout.
-* QuickAccessToolbar provides placing of frequently used items. 
+* The QuickAccessToolbar provides a way to place frequently used items. 
 * RibbonTab is available to add different Tabs like in Microsoft Outlook.
 * RibbonBar is available to structure the layouts.
 * Ribbon has a custom implementation of button control as RibbonButton.
