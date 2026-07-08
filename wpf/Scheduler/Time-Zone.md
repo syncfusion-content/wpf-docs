@@ -1192,11 +1192,31 @@ Set the specific time zone to schedule using the [TimeZone](https://help.syncfus
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         TimeZone="Central America Standard Time"/>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
-this.Schedule.TimeZone = "Central America Standard Time";
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.TimeZone = "Central America Standard Time";
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1212,4 +1232,4 @@ If you set scheduler’s `TimeZone` as `AUS Central Standard Time (Darwin)` and 
 If you set scheduler’s `TimeZone` as `AUS Central Standard Time (Darwin)` and appointment’s time zone was not set then the appointment’s start time and end time value converted from scheduler time zone to `UTC time zone` and the appointment’s start time will be saved at 10.30 PM.
 
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For information on appointments, see [Appointments](appointments.md).

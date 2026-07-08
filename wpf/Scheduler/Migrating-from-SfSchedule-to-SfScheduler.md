@@ -21,7 +21,7 @@ SfScheduler Assembly Name: Syncfusion.SfScheduler.WPF
 SfScheduler Namespace Name: Syncfusion.UI.Xaml.Scheduler
 
 
-The following code example shows xmlns namespace for SfScheduler control. Include the Syncfusion schema in WPF and both the charts are available in the WPF schema.
+The following code example shows the xmlns namespace for the SfScheduler control. Include the Syncfusion schema in WPF; both scheduler controls are available in the WPF schema.
 
 ### SfSchedule
 
@@ -91,11 +91,11 @@ Description</th></tr>
 <tr>
 <td>{{'[Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource)'| markdownify }}</td>
 <td>{{'[ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection)'| markdownify }}</td>
-<td>Gets or sets the Resource grouping for schedule.</td></tr>
+<td>Gets or sets the resource collection for schedule.</td></tr>
 <tr>
-<td>{{'[EnableReminderTimer]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_EnableReminderTimer/Syncfusion.html)'| markdownify }}</td>
-<td>{{'[EnableReminder]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder)'| markdownify }}</td>
-<td>Gets or sets the Resource grouping for schedule.</td></tr>
+<td>{{'[EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_EnableReminderTimer)'| markdownify }}</td>
+<td>{{'[EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder)'| markdownify }}</td>
+<td>Gets or sets whether the reminder is enabled.</td></tr>
 </table>
 
 The following table compares the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) APIs,

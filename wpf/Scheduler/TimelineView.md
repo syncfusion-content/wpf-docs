@@ -99,11 +99,23 @@ Disable the interaction for certain dates in the scheduler `TimelineMonth` view 
 
 {% tabs %}
 {% highlight c#%}
-this.Schedule.ViewType = SchedulerViewType.Month;
+using Syncfusion.UI.Xaml.Scheduler;
+using System;
+using System.Collections.ObjectModel;
 
-this.Schedule.BlackoutDates = GetBlackoutDates();
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.ViewType = SchedulerViewType.TimelineMonth;
 
-private ObservableCollection<DateTime> GetBlackoutDates()
+            this.Schedule.BlackoutDates = GetBlackoutDates();
+        }
+
+        private ObservableCollection<DateTime> GetBlackoutDates()
         {
             var blackoutDateCollection = new ObservableCollection<DateTime>()
             {
@@ -115,6 +127,8 @@ private ObservableCollection<DateTime> GetBlackoutDates()
             };
             return blackoutDateCollection;
         }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 

@@ -19,10 +19,16 @@ Application culture can be changed by setting [CurrentUICulture](https://learn.m
 {% tabs %}
 {% highlight c# %}
 
-public MainWindow()
+namespace GettingStarted
 {
-    this.InitializeComponent();
-    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            this.InitializeComponent();
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+        }
+    }
 }
 
 {% endhighlight  %}
@@ -58,4 +64,4 @@ N> [View **Syncfusion.SfScheduler.WPF.resx** in GitHub](https://github.com/syncf
 
 ![Shows the localized strings in French for WPF Scheduler](Localization_images/Localized_Scheduler.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-localization). You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations.
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-localization). You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations. For calendar types support, see [Calendar types](calendar-types.md).

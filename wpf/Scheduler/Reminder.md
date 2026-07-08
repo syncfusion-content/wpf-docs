@@ -14,10 +14,18 @@ Reminder can be set by setting the [EnableReminder](https://help.syncfusion.com/
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Scheduler"
-                        ViewType="Week"
-                         EnableReminder="True" >
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Scheduler"
+                                ViewType="Week"
+                                EnableReminder="True" >
+        </syncfusion:SfScheduler>
+   </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,31 +65,44 @@ Configure the appointment reminders with [SchedulerReminder](https://help.syncfu
 
 {% tabs %}
 {% highlight xaml %}
- <Grid.DataContext>
-    <local:ReminderViewModel/>
- </Grid.DataContext>
- <syncfusion:SfScheduler x:Name="Schedule" 
-                ItemsSource="{Binding Events}"
-                EnableReminder="True">
-  </syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <Grid.DataContext>
+            <local:ReminderViewModel/>
+        </Grid.DataContext>
+        <syncfusion:SfScheduler x:Name="Schedule" 
+                        ItemsSource="{Binding Events}"
+                        EnableReminder="True">
+        </syncfusion:SfScheduler>
+     </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
- public class ReminderViewModel 
- {
-    ...
-    public ScheduleAppointmentCollection Events { get; set; } = new ScheduleAppointmentCollection();
-    this.Events.Add(new ScheduleAppointment()
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public class ReminderViewModel 
     {
-        StartTime = DateTime.Now,
-        EndTime = DateTime.Now.AddHours(1),
-        AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")),
-        Subject = "Conference",
-        Reminders = new ObservableCollection<SchedulerReminder>
+        ...
+        public ScheduleAppointmentCollection Events { get; set; } = new ScheduleAppointmentCollection();
+        this.Events.Add(new ScheduleAppointment()
         {
-            new SchedulerReminder { ReminderTimeInterval = new TimeSpan(0)},
-        }
-    });
- }
+            StartTime = DateTime.Now,
+            EndTime = DateTime.Now.AddHours(1),
+            AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")),
+            Subject = "Conference",
+            Reminders = new ObservableCollection<SchedulerReminder>
+            {
+                new SchedulerReminder { ReminderTimeInterval = new TimeSpan(0)},
+            }
+        });
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,10 +113,16 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/appointment-rem
 
 {% tabs %}
 {% highlight c#%}
-/// <summary>
-/// Represents custom data properties.
-/// </summary>
- public class Event
+using System;
+using System.Collections.ObjectModel;
+using System.Windows.Media;
+
+namespace GettingStarted
+{
+    /// <summary>
+    /// Represents custom data properties.
+    /// </summary>
+    public class Event
     {
         public Event()
         {
@@ -115,6 +142,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/appointment-rem
         public ObservableCollection<DateTime> RecurrenceExceptions { get; set; }
         public ObservableCollection<Reminder> Reminders { get; set; }
     }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,23 +153,27 @@ The [ReminderMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sche
 
 {% tabs %}
 {% highlight c#%}
-/// <summary>
-/// Represents custom data properties.
-/// </summary>
-public class Reminder
+using System;
+
+namespace GettingStarted
 {
     /// <summary>
-    /// Gets or sets the value indicating whether the reminder is dismissed or not. 
+    /// Represents custom data properties.
     /// </summary>
-    public bool Dismissed { get; set; }
+    public class Reminder
+    {
+        /// <summary>
+        /// Gets or sets the value indicating whether the reminder is dismissed or not. 
+        /// </summary>
+        public bool Dismissed { get; set; }
 
-    /// <summary>
-    /// Gets or sets the value to display reminder alert before appointment start time.
-    /// </summary>
-    public TimeSpan TimeInterval { get; set; }
+        /// <summary>
+        /// Gets or sets the value to display reminder alert before appointment start time.
+        /// </summary>
+        public TimeSpan TimeInterval { get; set; }
 
+    }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -149,7 +181,13 @@ Map those properties of the `Meeting` class with the [SfScheduler](https://help.
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:SfScheduler x:Name="Schedule" 
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
                 ItemsSource="{Binding Events}"
                 EnableReminder="True">
             <syncfusion:SfScheduler.AppointmentMapping>
@@ -172,23 +210,33 @@ Map those properties of the `Meeting` class with the [SfScheduler](https://help.
                 </syncfusion:AppointmentMapping>
             </syncfusion:SfScheduler.AppointmentMapping>
         </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
-public class ReminderViewModel 
+using System;
+using System.Collections.ObjectModel;
+
+namespace GettingStarted
 {
-  ...
-  public ObservableCollection<Event> Events { get; set; } = new ObservableCollection<Event>();
-  this.Events.Add(new Event()
-  {
-    From = DateTime.Now,
-    To = DateTime.Now.AddHours(1),
-    Color = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")),
-    EventName = "Conference",
-    Reminders = new ObservableCollection<Reminder>
+    public class ReminderViewModel 
     {
-        new Reminder { TimeInterval = new TimeSpan(0)},
+        public ObservableCollection<Event> Events { get; set; } = new ObservableCollection<Event>();
+        public ReminderViewModel()
+        {
+            this.Events.Add(new Event()
+            {
+                From = DateTime.Now,
+                To = DateTime.Now.AddHours(1),
+                Color = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")),
+                EventName = "Conference",
+                Reminders = new ObservableCollection<Reminder>
+                {
+                    new Reminder { TimeInterval = new TimeSpan(0)},
+                }
+            });
+        }  
     }
-    });
 }
 {% endhighlight %}
 {% endtabs %}
@@ -202,16 +250,27 @@ Scheduler notifies by the [ReminderAlertOpening](https://help.syncfusion.com/cr/
 
 {% tabs %}
 {% highlight c#%}
-scheduler.ReminderAlertOpening += Scheduler_ReminderAlertOpening;
+using Syncfusion.UI.Xaml.Scheduler;
 
-private void Scheduler_ReminderAlertOpening(object sender, ReminderAlertOpeningEventArgs e)
+namespace GettingStarted
 {
-    var reminders = e.Reminders;
-    var appointment = e.Reminders[0].Appointment;
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.scheduler.ReminderAlertOpening += Scheduler_ReminderAlertOpening;
+        }
+
+        private void Scheduler_ReminderAlertOpening(object sender, ReminderAlertOpeningEventArgs e)
+        {
+            var reminders = e.Reminders;
+            var appointment = e.Reminders[0].Appointment;
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}
-
 
 ## ReminderAlertActionChanged events
 
@@ -226,25 +285,37 @@ The [ReminderAlertActionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syn
 
 {% tabs %}
 {% highlight c#%}
-this.Schedule.ReminderAlertActionChanged += OnScheduleReminderAlertActionChanged;
+using Syncfusion.UI.Xaml.Scheduler;
 
-private void OnScheduleReminderAlertActionChanged(object sender, Syncfusion.UI.Xaml.Scheduler.ReminderAlertActionChangedEventArgs e)
+namespace GettingStarted
 {
-    if (e.ReminderAction == ReminderAction.Dismiss)
+    public partial class MainWindow : Window
     {
-        var reminder = e.Reminders[0];
-    }
-    else if (e.ReminderAction == ReminderAction.DismissAll)
-    {
-        var reminders = e.Reminders;
-    }
-    else if (e.ReminderAction == ReminderAction.Snooze)
-    {
-        var reminder = e.Reminders[0];
-        var snoozeTime = e.SnoozeTime;
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.ReminderAlertActionChanged += OnScheduleReminderAlertActionChanged;
+        }
+        
+        private void OnScheduleReminderAlertActionChanged(object sender, Syncfusion.UI.Xaml.Scheduler.ReminderAlertActionChangedEventArgs e)
+        {
+            if (e.ReminderAction == ReminderAction.Dismiss)
+            {
+                var reminder = e.Reminders[0];
+            }
+            else if (e.ReminderAction == ReminderAction.DismissAll)
+            {
+                var reminders = e.Reminders;
+            }
+            else if (e.ReminderAction == ReminderAction.Snooze)
+            {
+                var reminder = e.Reminders[0];
+                var snoozeTime = e.SnoozeTime;
+            }
+        }
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For information on appointment data binding, see [Appointments](appointments.md).

@@ -31,8 +31,6 @@ Scheduler supports to edit the recurrence appointment. The following window will
 
 ![WPF Scheduler editing recurrence appointment](Appointment-Editing_Images/Editing-Recurrence-Appointment.png)
 
-Handle the opening of the recurrence popup window using the `EditMode` property in the `RecurringAppointmentBeginningEditEventArgs` by handling the `RecurringAppointmentBeginningEdit` event.
-
 #### RecurringAppointmentBeginningEdit Event
 
 The opening of the recurrence popup editor dialog can be handled using the `EditMode` property in the `RecurringAppointmentBeginningEditEventArgs` by handling the `RecurringAppointmentBeginningEdit` event.
@@ -45,12 +43,24 @@ The opening of the recurrence popup editor dialog can be handled using the `Edit
 
 {% tabs %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
-this.scheduler.RecurringAppointmentBeginningEdit += scheduler_RecurringAppointmentBeginningEdit;
+using Syncfusion.UI.Xaml.Scheduler;
 
-private void scheduler_RecurringAppointmentBeginningEdit(object sender, RecurringAppointmentBeginningEditEventArgs e)
+namespace GettingStarted
 {
-	// Get or set the edit mode to perform the edit option.
-	e.EditMode = RecurringAppointmentEditMode.Occurrence;
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.scheduler.RecurringAppointmentBeginningEdit += scheduler_RecurringAppointmentBeginningEdit;
+        }
+
+        private void scheduler_RecurringAppointmentBeginningEdit(object sender, RecurringAppointmentBeginningEditEventArgs e)
+        {
+            // Get or set the edit mode to perform the edit option.
+            e.EditMode = RecurringAppointmentEditMode.Occurrence;
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs%}
@@ -70,9 +80,19 @@ For example, to use a custom appointment editor window instead of the default ap
 
 {% tabs %}
 {% highlight c# %}
- this.Schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
+using Syncfusion.UI.Xaml.Scheduler;
 
- private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
+        }
+
+        private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
         {
             //To handle the default appointment editior window by setting the e.Cancel value as true.
             e.Cancel = true;
@@ -84,7 +104,9 @@ For example, to use a custom appointment editor window instead of the default ap
             {
                 //Display the custom appointment editor window to add new appointment
             }
-        }    
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,11 +117,23 @@ Programmatically visible or collapse the editors by setting the [AppointmentEdit
 
 {% tabs %}
 {% highlight c# %}
-this.Schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
+using Syncfusion.UI.Xaml.Scheduler;
 
-private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
+namespace GettingStarted
 {
-    e.AppointmentEditorOptions = AppointmentEditorOptions.All | (~AppointmentEditorOptions.Background & ~AppointmentEditorOptions.Foreground & ~AppointmentEditorOptions.Reminder & ~AppointmentEditorOptions.Resource);
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
+        }
+
+        private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
+        {
+            e.AppointmentEditorOptions = AppointmentEditorOptions.All | (~AppointmentEditorOptions.Background & ~AppointmentEditorOptions.Foreground & ~AppointmentEditorOptions.Reminder & ~AppointmentEditorOptions.Resource);
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -131,9 +165,19 @@ For example, to handle the appointment adding for today's date, user can handle 
 
 {% tabs %}
 {% highlight c# %}
-this.Schedule.AppointmentEditorClosing += Schedule_AppointmentEditorClosing;
+using Syncfusion.UI.Xaml.Scheduler;
 
-private void Schedule_AppointmentEditorClosing(object sender, AppointmentEditorClosingEventArgs e)
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.AppointmentEditorClosing += Schedule_AppointmentEditorClosing;
+        }
+
+        private void Schedule_AppointmentEditorClosing(object sender, AppointmentEditorClosingEventArgs e)
         {
             var appointment = e.Appointment as ScheduleAppointment;
             if (appointment != null)
@@ -141,7 +185,9 @@ private void Schedule_AppointmentEditorClosing(object sender, AppointmentEditorC
                 if (appointment.StartTime.Day == DateTime.Now.Day)
                     e.Handled = true;
             }
-        } 
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -151,11 +197,18 @@ private void Schedule_AppointmentEditorClosing(object sender, AppointmentEditorC
 To disable appointment editing functionality, Set [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property to `None`. In this case, add, edit, resize and drag & drop the appointments cannot be able performed. 
 
 {% tabs %}
-{% highlight XAML %}
- <syncfusion:SfScheduler
-            x:Name="Schedule"
-           AppointmentEditFlag="None">
+{% highlight xaml %}
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                AppointmentEditFlag="None">
         </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -181,12 +234,24 @@ Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/wpf/S
 
 {% tabs %}
 {% highlight c# %}
-Schedule.AppointmentDeleting += Schedule_AppointmentDeleting;
+using Syncfusion.UI.Xaml.Scheduler;
 
-private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEventArgs e)
+namespace GettingStarted
 {
-  //To notify when restrict appointment delete
-  e.Cancel = true;
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            Schedule.AppointmentDeleting += Schedule_AppointmentDeleting;
+        }
+
+        private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEventArgs e)
+        {
+          //To notify when restrict appointment delete
+          e.Cancel = true;
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -199,12 +264,32 @@ Scheduler supports to disable the appointment resizing by setting [AppointmentEd
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        AppointmentEditFlag="Add,DragDrop,Edit">
- </syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                AppointmentEditFlag="Add,DragDrop,Edit">
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
- this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.DragDrop | AppointmentEditFlag.Edit;
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.DragDrop | AppointmentEditFlag.Edit;
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -232,14 +317,26 @@ Scheduler notifies by [AppointmentResizing](https://help.syncfusion.com/cr/wpf/S
 
 {% tabs %}
 {% highlight c# %}
-this.Schedule.AppointmentResizing += Schedule_AppointmentResizing;
+using Syncfusion.UI.Xaml.Scheduler;
 
- private void Schedule_AppointmentResizing(object sender, AppointmentResizingEventArgs e)
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.AppointmentResizing += Schedule_AppointmentResizing;
+        }
+
+        private void Schedule_AppointmentResizing(object sender, AppointmentResizingEventArgs e)
         {
             //To notify when resizing the appointment. 
         }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 * `Resource` - gets the resource of an appointment under which the appointment is located.
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For details on the appointment editor window, see [Appointments](appointments.md).

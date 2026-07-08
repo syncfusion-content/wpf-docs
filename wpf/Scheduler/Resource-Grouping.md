@@ -32,7 +32,7 @@ var ResourceCollection = new ObservableCollection<SchedulerResource>()
 schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="resource" ResourceCollection="{Binding ResourceCollection}">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="Resource" ResourceCollection="{Binding ResourceCollection}">
 {% endhighlight %}
 {% endtabs %}
 

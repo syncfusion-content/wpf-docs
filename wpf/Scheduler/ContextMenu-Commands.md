@@ -29,14 +29,25 @@ that contains the Appointment or DateTime of the corresponding cell.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-<syncfusion:SfScheduler.CellContextMenu>
-<ContextMenu>
-<MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Add}}" CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}" Header="Add">
-</MenuItem>
-</ContextMenu>
-</syncfusion:SfScheduler.CellContextMenu>
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+            <syncfusion:SfScheduler.CellContextMenu>
+                <ContextMenu>
+                    <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Add}}"
+                              CommandParameter="{Binding}"
+                              CommandTarget="{Binding ElementName=Schedule}"
+                              Header="Add">
+                    </MenuItem>
+                </ContextMenu>
+            </syncfusion:SfScheduler.CellContextMenu>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -58,20 +69,29 @@ that contains the Appointment or DateTime of the corresponding cell.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-<syncfusion:SfScheduler.AppointmentContextMenu>
-<ContextMenu>
-<MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Edit}}"
-                    CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}"
-                    Header="Edit">
-</MenuItem>
-<MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Delete}}"
-CommandParameter ="{Binding}"
-Header="Delete">
-</MenuItem>
-</ContextMenu>
-</syncfusion:SfScheduler.AppointmentContextMenu>
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+            <syncfusion:SfScheduler.AppointmentContextMenu>
+                <ContextMenu>
+                    <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Edit}}"
+                              CommandParameter="{Binding}"
+                              CommandTarget="{Binding ElementName=Schedule}"
+                              Header="Edit">
+                    </MenuItem>
+                    <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Delete}}"
+                              CommandParameter="{Binding}"
+                              Header="Delete">
+                    </MenuItem>
+                </ContextMenu>
+            </syncfusion:SfScheduler.AppointmentContextMenu>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -90,4 +110,4 @@ The [SchedulerContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 * `ContextMenu` – It represents a shortcut context menu that is being opened.
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For more information on appointment editing, see [Appointment editing](appointment-editing.md).

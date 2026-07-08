@@ -45,11 +45,31 @@ N>
 
 {% tabs %}
 {% highlight xaml %}
-<scheduler:SfScheduler x:Name="Schedule"
-                       CalendarIdentifier="HijriCalendar" />
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                CalendarIdentifier="HijriCalendar" />
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
-this.Schedule.CalendarIdentifier = "HijriCalendar";
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.CalendarIdentifier = "HijriCalendar";
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,20 +83,34 @@ All the DateTime values can be given such as [DisplayDate,](https://help.syncfus
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
-// Creating an instance for the schedule appointment collection.
-var appointments = new ScheduleAppointmentCollection();
+using Syncfusion.UI.Xaml.Scheduler;
+using System.Globalization;
 
-// Adding schedule appointment in the schedule appointment collection.
-appointments.Add(new ScheduleAppointment()
+namespace GettingStarted
 {
-   Subject = "Meeting",
-   // StartTime and EndTime value specified with calendar type and respective calendar date.
-   StartTime = new DateTime (1443, 02, 22, 10, 0, 0, new HijriCalendar()),
-   EndTime = new DateTime(1443, 02, 22, 11, 0, 0, new HijriCalendar()),
-});
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
 
-// Adding the schedule appointment collection to the ItemsSource.
-this.scheduler.ItemsSource = appointments;
+            // Creating an instance for the schedule appointment collection.
+            var appointments = new ScheduleAppointmentCollection();
+
+            // Adding schedule appointment in the schedule appointment collection.
+            appointments.Add(new ScheduleAppointment()
+            {
+               Subject = "Meeting",
+               // StartTime and EndTime value specified with calendar type and respective calendar date.
+               StartTime = new DateTime (1443, 02, 22, 10, 0, 0, new HijriCalendar()),
+               EndTime = new DateTime(1443, 02, 22, 11, 0, 0, new HijriCalendar()),
+            });
+
+            // Adding the schedule appointment collection to the ItemsSource.
+            this.scheduler.ItemsSource = appointments;
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
@@ -87,23 +121,36 @@ this.scheduler.ItemsSource = appointments;
 {% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
-// Creating an instance for the schedule appointment collection.
-var appointments = new ScheduleAppointmentCollection();
+using Syncfusion.UI.Xaml.Scheduler;
 
-// Adding schedule appointment in the schedule appointment collection.
-appointments.Add(new ScheduleAppointment()
+namespace GettingStarted
 {
-   Subject = "Meeting",
-  // StartTime and EndTime values specified with local system date will be converted to the Hijiri calendar mentioned.
-   StartTime = new DateTime(2021, 09, 29, 10, 0, 0, 0),
-   EndTime = new DateTime(2021, 09, 29, 11, 0, 0, 0),
-});
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
 
-// Adding the schedule appointment collection to the ItemsSource.
-this.scheduler.ItemsSource = appointments;
+            // Creating an instance for the schedule appointment collection.
+            var appointments = new ScheduleAppointmentCollection();
+
+            // Adding schedule appointment in the schedule appointment collection.
+            appointments.Add(new ScheduleAppointment()
+            {
+               Subject = "Meeting",
+               // StartTime and EndTime values specified with local system date will be converted to the Hijri calendar mentioned.
+               StartTime = new DateTime(2021, 09, 29, 10, 0, 0, 0),
+               EndTime = new DateTime(2021, 09, 29, 11, 0, 0, 0),
+            });
+
+            // Adding the schedule appointment collection to the ItemsSource.
+            this.scheduler.ItemsSource = appointments;
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/CalendarTypes)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/CalendarTypes). For more information on appointments, see [Appointments](appointments.md).

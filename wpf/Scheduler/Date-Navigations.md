@@ -17,12 +17,32 @@ Visible dates can be restricted between certain range of dates, using [MaximumDa
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        MinimumDate="2020-05-05 10:0:0">
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                MinimumDate="2020-05-05 10:0:0">
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-this.Schedule.MinimumDate = new DateTime(2020, 05, 05, 10, 0, 0);
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.MinimumDate = new DateTime(2020, 05, 05, 10, 0, 0);
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,12 +51,32 @@ this.Schedule.MinimumDate = new DateTime(2020, 05, 05, 10, 0, 0);
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        MaximumDate="2020-10-05 10:0:0">
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                MaximumDate="2020-10-05 10:0:0">
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-this.Schedule.MaximumDate = new DateTime(2020, 10, 05, 10, 0, 0);
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.MaximumDate = new DateTime(2020, 10, 05, 10, 0, 0);
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -45,12 +85,32 @@ Programmatically navigate the dates in scheduler by using the [DisplayDate](http
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        DisplayDate="2020-07-05 10:0:0">
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                DisplayDate="2020-07-05 10:0:0">
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-this.Schedule.DisplayDate = new DateTime(2020, 07, 05, 10, 0, 0);
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.DisplayDate = new DateTime(2020, 07, 05, 10, 0, 0);
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,12 +121,32 @@ Programmatically select the dates in scheduler by using the [SelectedDate](https
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        SelectedDate="2020-07-10 10:0:0">
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                SelectedDate="2020-07-10 10:0:0">
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-this.Schedule.SelectedDate = new DateTime(2020, 07, 10, 10, 0, 0);
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.SelectedDate = new DateTime(2020, 07, 10, 10, 0, 0);
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -80,19 +160,39 @@ Use the `Forward` method of SfScheduler for viewing the next immediate visible d
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        MaximumDate="2020-10-05 10:0:0">
-</syncfusion:SfScheduler>
-
-<Button x:Name="Forward"
-        Content="fwd" 
-        Click="Forward_Click">
-</Button>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <StackPanel>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                MaximumDate="2020-10-05 10:0:0">
+        </syncfusion:SfScheduler>
+        <Button x:Name="Forward"
+                Content="fwd" 
+                Click="Forward_Click">
+        </Button>
+    </StackPanel>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-private void Forward_Click(object sender, RoutedEventArgs e)
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
 {
-    Schedule.Forward();
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Forward_Click(object sender, RoutedEventArgs e)
+        {
+            this.Schedule.Forward();
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -102,19 +202,39 @@ Use the `Backward` method of SfScheduler for viewing the previous immediate visi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        MinimumDate="2020-05-05 10:0:0">
-</syncfusion:SfScheduler>
-
-<Button x:Name="Backward"
-        Content="bwd" 
-        Click="Backward_Click">
-</Button>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <StackPanel>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                MinimumDate="2020-05-05 10:0:0">
+        </syncfusion:SfScheduler>
+        <Button x:Name="Backward"
+                Content="bwd" 
+                Click="Backward_Click">
+        </Button>
+    </StackPanel>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-private void Backward_Click(object sender, RoutedEventArgs e)
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
 {
-    Schedule.Backward();
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Backward_Click(object sender, RoutedEventArgs e)
+        {
+            this.Schedule.Backward();
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -125,14 +245,34 @@ You can quickly navigate to the respective day or timeline day view by single-cl
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Week"
-                        AllowViewNavigation="True">
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
+                                ViewType="Week"
+                                AllowViewNavigation="True">
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-this.Schedule.ViewType = SchedulerViewType.Week;
-this.Schedule.AllowViewNavigation = true;
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.ViewType = SchedulerViewType.Week;
+            this.Schedule.AllowViewNavigation = true;
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,14 +285,34 @@ You can enable the date picker for the scheduler by using the [ShowDatePickerBut
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Week"
-                        ShowDatePickerButton="True">
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
+                                ViewType="Week"
+                                ShowDatePickerButton="True">
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-this.Schedule.ViewType = SchedulerViewType.Week;
-this.Schedule.ShowDatePickerButton = true;
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.ViewType = SchedulerViewType.Week;
+            this.Schedule.ShowDatePickerButton = true;
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -165,14 +325,35 @@ You can quickly navigate to the different scheduler views by using the [AllowedV
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Week"
-                        AllowedViewTypes="Month,Week,WorkWeek,Day,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth" >
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
+                                ViewType="Week"
+                                AllowedViewTypes="Month,Week,WorkWeek,Day,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth" >
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-this.Schedule.ViewType = SchedulerViewType.Week;
-this.Schedule.AllowedViewTypes = AllowedSchedulerViewTypes.Week | AllowedSchedulerViewTypes.WorkWeek | AllowedSchedulerViewTypes.Day | AllowedSchedulerViewTypes.Month | AllowedSchedulerViewTypes.TimelineDay | AllowedSchedulerViewTypes.TimelineMonth | AllowedSchedulerViewTypes.TimelineWeek | AllowedSchedulerViewTypes.TimelineWorkWeek;
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.ViewType = SchedulerViewType.Week;
+            this.Schedule.AllowedViewTypes = AllowedSchedulerViewTypes.Week | AllowedSchedulerViewTypes.WorkWeek | AllowedSchedulerViewTypes.Day | AllowedSchedulerViewTypes.Month | AllowedSchedulerViewTypes.TimelineDay | AllowedSchedulerViewTypes.TimelineMonth | AllowedSchedulerViewTypes.TimelineWeek | AllowedSchedulerViewTypes.TimelineWorkWeek;
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/AllowedViews)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/AllowedViews). For week number configuration, see [Month view](month-view.md).

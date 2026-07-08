@@ -14,12 +14,32 @@ The Scheduler supports to disable the appointment drag and drop by setting [Appo
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        AppointmentEditFlag="Add,Edit,Resize">
- </syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                AppointmentEditFlag="Add,Edit,Resize">
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
-this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.Edit | AppointmentEditFlag.Resize;
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.Edit | AppointmentEditFlag.Resize;
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,8 +48,20 @@ Show or hide the time indicator at a specific time when to drag the appointment 
 
 {% tabs %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Week;
-Schedule.DragDropSettings.ShowTimeIndicator = true;
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.ViewType = SchedulerViewType.Week;
+            this.Schedule.DragDropSettings.ShowTimeIndicator = true;
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,8 +76,20 @@ Customize the format for the appointment dragging time indicator format by setti
 
 {% tabs %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Week;
-Schedule.DragDropSettings.TimeIndicatorFormat = "HH mm tt";
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.ViewType = SchedulerViewType.Week;
+            this.Schedule.DragDropSettings.TimeIndicatorFormat = "HH mm tt";
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 ![customize-appointment-dragging-time-indicator-format-wpf-scheduler](DaysView_Images/adding-customize-appointment-dragging-time-indicator-format-wpf-scheduler.png)
@@ -68,11 +112,23 @@ Scheduler notifies by [AppointmentDragOver](https://help.syncfusion.com/cr/wpf/S
 
 {% tabs %}
 {% highlight c# %}
-this.Schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
+using Syncfusion.UI.Xaml.Scheduler;
 
-private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
+namespace GettingStarted
 {
-   //To notify when dragging the appointment.
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
+        }
+
+        private void Schedule_AppointmentDragOver(object sender, AppointmentDragOverEventArgs e)
+        {
+           //To notify when dragging the appointment.
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}  
@@ -89,11 +145,23 @@ Scheduler notifies by [AppointmentDragStarting](https://help.syncfusion.com/cr/w
 
 {% tabs %}
 {% highlight c# %}
-this.Schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
+using Syncfusion.UI.Xaml.Scheduler;
 
-private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
+namespace GettingStarted
 {
-   //To notify when start to drag the appointment.
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
+        }
+
+        private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
+        {
+           //To notify when start to drag the appointment.
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -114,13 +182,25 @@ Scheduler is notified by [AppointmentDropping](https://help.syncfusion.com/cr/wp
 
 {% tabs %}
 {% highlight c# %}
-this.Schedule.AppointmentDropping += Schedule_AppointmentDropping;
+using Syncfusion.UI.Xaml.Scheduler;
 
-private void Schedule_AppointmentDropping(object sender, AppointmentDroppingEventArgs e)
+namespace GettingStarted
 {
-  //To notify when the appointment is dropping.
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.AppointmentDropping += Schedule_AppointmentDropping;
+        }
+
+        private void Schedule_AppointmentDropping(object sender, AppointmentDroppingEventArgs e)
+        {
+          //To notify when the appointment is dropping.
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %} 
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For more information on appointment editing flags, see [Appointment editing](appointment-editing.md).

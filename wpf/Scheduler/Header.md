@@ -15,12 +15,32 @@ Change the scheduler header height by using [HeaderHeight](https://help.syncfusi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        HeaderHeight="100" >
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                HeaderHeight="100">
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-this.Schedule.HeaderHeight = 100;
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.HeaderHeight = 100;
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,12 +51,32 @@ Change the Scheduler header date format of scheduler by using the  [HeaderDateFo
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        HeaderDateFormat="MMM/yyyy">   
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                HeaderDateFormat="MMM/yyyy">   
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c#%}
-this.Schedule.HeaderDateFormat = "MMM/yyyy";
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Schedule.HeaderDateFormat = "MMM/yyyy";
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -49,13 +89,24 @@ Style the Scheduler header appearance using [SchedulerHeaderControl](https://hel
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="syncfusion:SchedulerHeaderControl">
-    <Setter Property="Background" Value="LightCyan"/>
-    <Setter Property="Foreground" Value="Red"/>
-    <Setter Property="FontStyle" Value="Italic"/>
-    <Setter Property="BorderBrush" Value="LightCoral"/>
-    <Setter Property="BorderThickness" Value="2"/>
-</Style>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Window.Resources>
+        <Style TargetType="syncfusion:SchedulerHeaderControl">
+            <Setter Property="Background" Value="LightCyan"/>
+            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="BorderBrush" Value="LightCoral"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"/>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,19 +117,27 @@ Customize header appearance of scheduler by using [HeaderTemplate](https://help.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule">
-    <syncfusion:SfScheduler.HeaderTemplate>
-        <DataTemplate >
-                <TextBlock FontStyle="Italic"
-                           Foreground="Blue"
-                           FontSize="25"
-                           Text="{Binding}"/>
-        </DataTemplate>
-    </syncfusion:SfScheduler.HeaderTemplate>
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule">
+            <syncfusion:SfScheduler.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock FontStyle="Italic"
+                               Foreground="Blue"
+                               FontSize="25"
+                               Text="{Binding}"/>
+                </DataTemplate>
+            </syncfusion:SfScheduler.HeaderTemplate>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
 ![WPF Scheduler header HeaderTemplate](Header_Images/HeaderTemplate.png)
 
-N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For an overview of scheduler features, see [Overview](overview.md).

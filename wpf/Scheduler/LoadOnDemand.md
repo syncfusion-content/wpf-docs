@@ -19,37 +19,58 @@ The [QueryAppointmentsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Scheduler"
-                        ViewType="Month" QueryAppointments="Scheduler_QueryAppointments">
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+      <syncfusion:SfScheduler x:Name="Scheduler"
+                              ViewType="Month" QueryAppointments="Scheduler_QueryAppointments">
+      </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
-Scheduler.QueryAppointments += Scheduler_QueryAppointments;
-private void Scheduler_QueryAppointments(object sender, QueryAppointmentsEventArgs e)
-{
- Scheduler.ShowBusyIndicator = true;
- Scheduler.ItemsSource = this.GenerateSchedulerAppointments(e.VisibleDateRange);
- Scheduler.ShowBusyIndicator = false;
-}
+using Syncfusion.UI.Xaml.Scheduler;
 
-private IEnumerable GenerateSchedulerAppointments(DateRange dateRange)
+namespace GettingStarted
 {
-  Random ran = new Random();
-  int daysCount = (dateRange.ActualEndDate - dateRange.ActualStartDate).Days;
-  var appointments = new ObservableCollection<SchedulerModel>();
-      
-  for (int i = 0; i < 50; i++)
-  {
-    var startTime = dateRange.ActualStartDate.AddDays(ran.Next(0, daysCount + 1)).AddHours(ran.Next(0, 24));
-    appointments.Add(new SchedulerModel
+    public partial class MainWindow : Window
     {
-    From = startTime,
-    To = startTime.AddHours(1),
-    EventName = subjectCollection[ran.Next(0, subjectCollection.Count)],
-    Color = brush[ran.Next(0, brush.Count)],
-    });
-  }
-  return appointments;
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.Scheduler.QueryAppointments += Scheduler_QueryAppointments;
+        }
+
+        private void Scheduler_QueryAppointments(object sender, QueryAppointmentsEventArgs e)
+        {
+        this.Scheduler.ShowBusyIndicator = true;
+        this.Scheduler.ItemsSource = this.GenerateSchedulerAppointments(e.VisibleDateRange);
+        this.Scheduler.ShowBusyIndicator = false;
+        }
+
+        private IEnumerable GenerateSchedulerAppointments(DateRange dateRange)
+        {
+          Random ran = new Random();
+          int daysCount = (dateRange.ActualEndDate - dateRange.ActualStartDate).Days;
+          var appointments = new ObservableCollection<SchedulerModel>();
+              
+          for (int i = 0; i < 50; i++)
+          {
+            var startTime = dateRange.ActualStartDate.AddDays(ran.Next(0, daysCount + 1)).AddHours(ran.Next(0, 24));
+            appointments.Add(new SchedulerModel
+            {
+            From = startTime,
+            To = startTime.AddHours(1),
+            EventName = subjectCollection[ran.Next(0, subjectCollection.Count)],
+            Color = brush[ran.Next(0, brush.Count)],
+            });
+          }
+          return appointments;
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -73,79 +94,93 @@ Define a ViewModel class that implements command and handle it by the CanExecute
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Scheduler"
-                        ViewType="Month" 
-                        ShowBusyIndicator="{Binding ShowBusyIndicator}"
-                        LoadOnDemandCommand="{Binding LoadOnDemandCommand}"
-                        ItemsSource="{Binding Events}">
-</syncfusion:SfScheduler>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+      <syncfusion:SfScheduler x:Name="Scheduler"
+                              ViewType="Month" 
+                              ShowBusyIndicator="{Binding ShowBusyIndicator}"
+                              LoadOnDemandCommand="{Binding LoadOnDemandCommand}"
+                              ItemsSource="{Binding Events}">
+      </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using System;
+using System.Collections;
+using System.ComponentModel;
 
-public class LoadOnDemandViewModel : NotificationObject
-  {
-    public ICommand LoadOnDemandCommand { get; set; }
-    private IEnumerable events;
-    public IEnumerable Events
+namespace GettingStarted
+{
+    public class LoadOnDemandViewModel : NotificationObject
       {
-        get { return events; }
-        set
+        public ICommand LoadOnDemandCommand { get; set; }
+        private IEnumerable events;
+        public IEnumerable Events
           {
-            events = value;
-            this.RaisePropertyChanged("Events");
+            get { return events; }
+            set
+              {
+                events = value;
+                this.RaisePropertyChanged("Events");
+              }
           }
-      }
 
-    private bool showBusyIndicator;
-    public bool ShowBusyIndicator
-    {
-      get { return showBusyIndicator; }
-      set
-          {
-            showBusyIndicator = value;
-            this.RaisePropertyChanged("ShowBusyIndicator");
-          }
-    }
-    public SchedulerViewModel()
-    {
-       this.LoadOnDemandCommand = new DelegateCommand(ExecuteOnDemandLoading, CanExecuteOnDemandLoading);
-    }
-       
-    public event PropertyChangedEventHandler PropertyChanged;
-    public async void ExecuteOnDemandLoading(object parameter)
-    {
-      this.ShowBusyIndicator = true;
-      await Task.Delay(1000);
-      await Application.Current.MainWindow.Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle, new Action(() =>
-            {
-                this.Events = this.GenerateSchedulerAppointments((parameter as QueryAppointmentsEventArgs).VisibleDateRange);
-            }));
-      this.ShowBusyIndicator = false;
-    }
-
-    private bool CanExecuteOnDemandLoading(object sender)
-    {
-      return true;
-    }
-
-    private IEnumerable GenerateSchedulerAppointments(DateRange dateRange)
-    {
-      Random ran = new Random();
-      int daysCount = (dateRange.ActualEndDate - dateRange.ActualStartDate).Days;
-      var appointments = new ObservableCollection<SchedulerModel>();
-      for (int i = 0; i < 50; i++)
-      {
-        var startTime = dateRange.ActualStartDate.AddDays(ran.Next(0, daysCount + 1)).AddHours(ran.Next(0, 24));appointments.Add(new SchedulerModel
+        private bool showBusyIndicator;
+        public bool ShowBusyIndicator
         {
-          From = startTime,
-          To = startTime.AddHours(1),
-          EventName = subjectCollection[ran.Next(0, subjectCollection.Count)],
-          Color = brush[ran.Next(0, brush.Count)],
-        });
+          get { return showBusyIndicator; }
+          set
+              {
+                showBusyIndicator = value;
+                this.RaisePropertyChanged("ShowBusyIndicator");
+              }
+        }
+        public LoadOnDemandViewModel()
+        {
+          this.LoadOnDemandCommand = new DelegateCommand(ExecuteOnDemandLoading, CanExecuteOnDemandLoading);
+        }
+          
+        public event PropertyChangedEventHandler PropertyChanged;
+        public async void ExecuteOnDemandLoading(object parameter)
+        {
+          this.ShowBusyIndicator = true;
+          await Task.Delay(1000);
+          await Application.Current.MainWindow.Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle, new Action(() =>
+                {
+                    this.Events = this.GenerateSchedulerAppointments((parameter as QueryAppointmentsEventArgs).VisibleDateRange);
+                }));
+          this.ShowBusyIndicator = false;
+        }
+
+        private bool CanExecuteOnDemandLoading(object sender)
+        {
+          return true;
+        }
+
+        private IEnumerable GenerateSchedulerAppointments(DateRange dateRange)
+        {
+          Random ran = new Random();
+          int daysCount = (dateRange.ActualEndDate - dateRange.ActualStartDate).Days;
+          var appointments = new ObservableCollection<SchedulerModel>();
+          for (int i = 0; i < 50; i++)
+          {
+            var startTime = dateRange.ActualStartDate.AddDays(ran.Next(0, daysCount + 1)).AddHours(ran.Next(0, 24));appointments.Add(new SchedulerModel
+            {
+              From = startTime,
+              To = startTime.AddHours(1),
+              EventName = subjectCollection[ran.Next(0, subjectCollection.Count)],
+              Color = brush[ran.Next(0, brush.Count)],
+            });
+          }
+          return appointments;
+        }
       }
-      return appointments;
-    }
-  }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -168,4 +203,4 @@ The scheduler will add the occurrences of recurrence series based on the visible
 
 * If the `RecurrenceRule` is added without an end date, then the recurrence appointment should be added in the scheduler `ItemsSource` when all the visible dates changed from the recurrence start date.
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/load-on-demand-appointments-wpf-scheduler)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/load-on-demand-appointments-wpf-scheduler). For more information on appointments, see [Appointments](appointments.md).
