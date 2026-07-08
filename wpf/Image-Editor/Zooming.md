@@ -69,6 +69,8 @@ A zoomed image can be panned to view the hidden portion. By default, panning is 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### With toolbar
 
 To enable pan, click the pan icon in the top toolbar. This enables the panning operation on the image. When panning is enabled, shapes or text added in the image cannot be resized or repositioned. To resize the shape, enable the Select icon in the toolbar; it will disable the pan operation.
