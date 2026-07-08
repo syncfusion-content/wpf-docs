@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging in WPF DataGrid control | Syncfusion®
-description: Learn all about paging support in the Syncfusion® WPF DataGrid (SfDataGrid) control, its elements, and more details.
+description: Learn here all about Paging support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -9,17 +9,17 @@ documentation: ug
 
 # Paging in WPF DataGrid (SfDataGrid)
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to manipulate the data using the SfDataPager control. You can refer to the [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
 
 ## Getting started
 
-Follow the steps below to bind SfDataGrid with SfDataPager.
+Follow the below steps to bind SfDataGrid with SfDataPager.
  
-1. Create an `IEnumerable` collection that you want to bind and set it to the [SfDataPager.Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_Source) property.
+1. Create `IEnumerable` collection that you want to bind and set it to [SfDataPager.Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_Source) property.
 
-2. Set the [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property to specify the number of records to be displayed per page.
+2. Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property to specify the number of records to be displayed per page.
 
-3.  Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) to the [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property. So whenever the page is changed, `PagedSource` will be updated based on the current page.
+3.  Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property. So whenever the page is changed, `PagedSource` will be updated based on the current page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -127,26 +127,26 @@ public class OrderInfo
 
 #### Limitations
 
-1. SfDataPager doesn’t accept `DataTable` as Source. 
+1. SfDataPager doesn’t accepts `DataTable` as Source. 
 2. `AddNewRow` is not supported in SfDataPager.
 3. `FilterRow` is not supported in SfDataPager.
 
 
 ## Load data in on-demand
 
-SfDataPager allows you to load data for the current page alone using `OnDemandPaging` instead of loading data for all pages.
+SfDataPager allows you to load data for current page alone using `OnDemandPaging` instead of loading data for all pages.
 
-Follow the steps below to load the `ItemsSource` for a page in on-demand:
+Follow the below steps to load the `ItemsSource` for page in on-demand,
 
-1. Set [SfDataPager.UseOnDemandPaging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_UseOnDemandPaging) to `true`.
+1. Set [SfDataPager.UseOnDemandPaging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_UseOnDemandPaging) as `true`.
  
-2. Set [SfDataPager.PageCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageCount) based on the total number of records and the [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property.
+2. Set [SfDataPager.PageCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageCount) based on total number of records and [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property.
 
-3. Use the [OnDemandLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_OnDemandLoading) event to load the `ItemsSource` for the current page using the [LoadDynamicItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_LoadDynamicItems_System_Int32_System_Collections_IEnumerable_) method.
+3. Use [OnDemandLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_OnDemandLoading) event to load the `ItemsSource` for current page using [LoadDynamicItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_LoadDynamicItems_System_Int32_System_Collections_IEnumerable_) method.
 
-The [OnDemandLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_OnDemandLoading) event is raised when SfDataPager moves to another page, and you can load the `ItemsSource` for the corresponding page through the `OnDemandLoading` event. 
+[OnDemandLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_OnDemandLoading) event is raised when SfDataPager moves to another page and you can load the `ItemsSource` for corresponding page through `OnDemandLoading` event. 
 
-[OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs.html) has the following members:
+[OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs.html) has the following members,
 
 1. `StartIndex` - returns the start index based on `PageIndex` (Number of previous pages * PageSize).
 
@@ -196,7 +196,7 @@ private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Control
 
 ### Resetting cache
 
-While navigating between the pages, records are loaded through the `OnDemandLoading` event, and the records of the navigated pages will be maintained in the cache. If you navigate to an already navigated page, the records are loaded from the cache instead of loading from the `OnDemandLoading` event. You can clear the cache by using the [PageCollectionView.ResetCache](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_ResetCache) method. Once this method is invoked, the `OnDemandLoading` event will be raised while navigating multiple times to the same page.
+While navigating between the pages, records are loaded through `OnDemandLoading` event and the records of navigated pages will be maintained in cache. If you navigate to already navigated page, the records are loaded from cache instead of loading from `OnDemandLoading` event. You can clear the cache by using [PageCollectionView.ResetCache](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_ResetCache) method. Once this method is invoked, the `OnDemandLoading` event will be raised while navigating multiple times to the same page.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataPager x:Name="dataPager" 
@@ -226,7 +226,7 @@ private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Control
 {% endtabs %}
 
 
-You can also clear the cache for a particular page by specifying the `PageIndex` in the [PageCollectionView.ResetCacheForPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_ResetCacheForPage_System_Int32_) method.
+You can also clear the cache to particular page by specifying the `PageIndex` in [PageCollectionView.ResetCacheForPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.PagedCollectionView.html#Syncfusion_Data_PagedCollectionView_ResetCacheForPage_System_Int32_) method.
 
 
 {% tabs %}
@@ -237,7 +237,7 @@ You can also clear the cache for a particular page by specifying the `PageIndex`
 
 
 ### Loading data from database in on-demand
-You can read the data from a database on-demand (here, records are retrieved from the `Northwind` data provider) in the `OnDemandLoading` event handler.
+You can read the data from database in on-demand (here, records are retrieved from `Northwind` data provider) in `OnDemandLoading` event handler.
 
 
 {% tabs %}
@@ -294,7 +294,7 @@ public partial class MainWindow : Window
 
 ### Changing PageCount at run time while filtering
 You can change the [SfDataPager.PageCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageCount) at runtime based on the records count in `OnDemandPaging`. 
-Here, PageCount is modified by filtering the records at runtime.
+Here, PageCount are modified by filtering the records in run time.
 
 
 {% tabs %}
@@ -401,13 +401,13 @@ private void FilterBtn_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-Here, records are filtered based on the textbox text in the click event of the Filter button. Initially `PageCount` is 5, and it is changed to 3 once the records are filtered.
+Here, records are filtered based on the textbox text in clicking event of Filter button. Initially `PageCount` is 5 and it is changed as 3 once the records are filtered.
 ![WPF DataGrid displays Altering Page Count for DataPager while Filtering](paging_images/wpf-datagrid-datapager.png)
 
 ### Sorting complete collection
 
-You can sort the complete collection with `OnDemandPaging` by using the [SfDataGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortColumnsChanging) event.
-In this event, you can sort the complete underlying collection instead of sorting the current page alone by resetting the caches.
+You can sort the complete collection with ‘OnDemandPaging’ by using [SfDataGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortColumnsChanging) event.
+In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
 
 
 {% tabs %}
@@ -487,8 +487,8 @@ private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Control
 
 ### Loading ItemsSource for page using async and await
 
-When you fetch the data from an external server, it takes some time to load the data. In this case, you can delay the loading in the `SfDataPager.OnDemandLoading` event using `async` and `await`. 
-Here, the `dataPager_OnDemandLoading` event is defined with the `async` keyword to load the data with a time delay. The `GetEmployeesDetailsListAsync` method is invoked in `dataPager_OnDemandLoading` with the `await` keyword, which holds the execution until the data is returned. 
+When you fetch the data from external server, it takes some time to load the data. In this case, you can delay the loading in `SfDataPager.OnDemandLoading` event using `async` and `await`. 
+Here `dataPager_OnDemandLoading` event is defined with `async` keyword to load the data by time delay. `GetEmployeesDetailsListAsync` method is invoked in `dataPager_OnDemandLoading` with `await` keyword which holds the execution until returning the data. 
 
 
 {% tabs %}
@@ -535,7 +535,7 @@ private async void dataPager_OnDemandLoading(object sender, OnDemandLoadingEvent
 {% endhighlight %}
 {% endtabs %}
 
-The `GetEmployees` method in `EmployeeInfoRepository` returns the record to SfDataPager.
+`GetEmployees` method in `EmployeeInfoRepository` returns the record to SfDataPager.
 
 {% tabs %}
 {% highlight c# %}
@@ -565,7 +565,7 @@ public class EmployeeInfoRepository
 
 
 ### Limitations
-1. UI Filtering is not supported. You can code at the application level to filter the data.
-2. Data processing operations (Sorting, Grouping) are done only on the current page. 
-3. Deleting is not supported. You can code to delete a row at the application level. 
-4. Only the navigated pages are exported when `OnDemandPaging` is enabled. If the navigated page cache is cleared, then the corresponding page will not be exported.
+1. UI Filtering is not supported. You can code in application level to filter the data.
+2. Data processing operations (Sorting, Grouping) are done only in the current page. 
+3. Deleting is not supported. You can code to delete row in application level. 
+4. Only the navigated pages are exported when `OnDemandPaging’ is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
