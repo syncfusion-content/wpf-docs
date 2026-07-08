@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization support in Syncfusion SfImageEditor for WPF
-description: This section describes how to localize the SfImageEditor resources for their corresponding culture.
+description: This section describes how to localize the SfImageEditor resources for their corresponding culture in WPF applications.
 platform: wpf
 control: SfImageEditor
 documentation: ug
