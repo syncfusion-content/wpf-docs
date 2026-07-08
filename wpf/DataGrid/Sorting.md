@@ -190,7 +190,7 @@ In the below code snippet, `CustomerName` property is compared based on its stri
 
 {% tabs %}
 {% highlight c# %}
-Public class CustomComparer:IComparer<object>,ISortDirection
+public class CustomComparer : IComparer<object>, ISortDirection
 {
     public int Compare(object x, object y)
     {

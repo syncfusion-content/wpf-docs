@@ -1,7 +1,8 @@
----
+﻿---
 layout: post
 title: Rows in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Rows support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
+description: Learn here all about Rows support in the Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements, and more.
+
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -67,7 +68,7 @@ Denotes the row has errors.
 <img src="Rows_images/Rows_img4.jpeg" alt="WPF TreeGrid row has errors"/>
 </td>
 <td>
-Denotes that the current row which has errors.
+Denotes that the current row has errors.
 </td>
 </tr>
 </table>
@@ -397,4 +398,4 @@ You can change the style of the particular column header by using the [HeaderSty
 
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.

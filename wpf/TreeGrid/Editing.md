@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Editing in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Editing support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
+description: Learn here all about Editing support in the Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements, and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -27,7 +27,7 @@ SfTreeGrid provides support for editing and it can be enabled or disabled by set
 {% endhighlight %}
 {% endtabs %}
 
-You can enable or disable editing for particular column by setting [TreeGridColumn.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowEditing) property.
+You can enable or disable editing for a particular column by setting the [TreeGridColumn.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowEditing) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -48,7 +48,7 @@ N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEdi
 
 ![Editing in WPF TreeGrid](Editing_images/wpf-treegrid-editing.png)
 
-N> It is mandatory to set the NavigationMode to Cell to enable CurrentCell navigation and editing.
+N> It is mandatory to set the `NavigationMode` to `Cell` to enable `CurrentCell` navigation and editing.
 
 ## Entering into edit mode
 
@@ -77,9 +77,9 @@ this.treeGrid.EditTrigger = EditTrigger.OnTap;
 
 When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_EditorSelectionBehavior) property.
 
-SelectAll ֠selects the text of edit element loaded inside cell.
+`SelectAll` — selects the text of the edit element loaded inside the cell.
 
-MoveLast ֠places the cursor at the last of edit element loaded inside cell.  
+`MoveLast` — places the cursor at the last position of the edit element loaded inside the cell.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -569,4 +569,4 @@ You can allow `UIElement` loaded inside template to handle mouse interaction in 
 {% endtabs %}
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.

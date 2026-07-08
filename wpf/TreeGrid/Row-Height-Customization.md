@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Height Customization in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Row Height Customization support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
+description: Learn here all about Row Height Customization support in the Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -27,7 +27,7 @@ this.treeGrid.RowHeight = 30;
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the particular row height using **TreeGridPanel.RowHeights** property.
+You can also change a particular row height using the **TreeGridPanel.RowHeights** property.
 
 
 {% tabs %}
@@ -47,7 +47,7 @@ void treeGrid_Loaded(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-You can also change the row height of particular row using **QueryRowHeight** event.
+You can also change the row height of a particular row using the **QueryRowHeight** event.
 
 
 {% tabs %}
@@ -71,13 +71,13 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 
 You can change the row height in on-demand based on the row index or row data using **SfTreeGrid.QueryRowHeight** event.
 
-**QueryRowHeight** event triggered for each row when it becomes visible. **TreeGridQueryRowHeightEventArgs** provides information to **QueryRowHeight** event with following members,
+The **QueryRowHeight** event is triggered for each row when it becomes visible. **TreeGridQueryRowHeightEventArgs** provides information to the **QueryRowHeight** event with the following members:
 
 * **RowIndex** – denotes index of the row in SfTreeGrid.
 
 * **Height** – Gets or sets the height of the row.
 
-* **Handled** – Gets or sets a value indicating whether the **QueryRowHeight** event handled to change height of the row. Its default value is `false`.
+* **Handled** – Gets or sets a value indicating whether the **QueryRowHeight** event is handled to change the height of the row. Its default value is `false`.
 
 
 

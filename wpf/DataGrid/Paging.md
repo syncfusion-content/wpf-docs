@@ -565,7 +565,7 @@ public class EmployeeInfoRepository
 
 
 ### Limitations
-1. UI Filtering is not supported. You can code in application level to filter the data.
-2. Data processing operations (Sorting, Grouping) are done only in the current page. 
-3. Deleting is not supported. You can code to delete row in application level. 
-4. Only the navigated pages are exported when `OnDemandPaging’ is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
+1. UI Filtering is not supported. You can code at the application level to filter the data.
+2. Data processing operations (Sorting, Grouping) are done only on the current page. 
+3. Deleting is not supported. You can code to delete a row at the application level. 
+4. Only the navigated pages are exported when `OnDemandPaging` is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.

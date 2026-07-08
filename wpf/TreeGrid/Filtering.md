@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Filtering in WPF TreeGrid control | Syncfusion®
 description: Learn here all about Filtering support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
@@ -58,7 +58,7 @@ View filtering can be achieved by setting the [SfTreeGrid.View.Filter](https://h
 {% tabs %}
 {% highlight c# %}
 
-public bool FilerNodes(object o)
+public bool FilterNodes(object o)
 {
     var data = o as Employee;
 
@@ -69,7 +69,7 @@ public bool FilerNodes(object o)
 
 private void Button_Click(object sender, RoutedEventArgs e)
 {
-    treeGrid.View.Filter = FilerNodes;
+    treeGrid.View.Filter = FilterNodes;
     treeGrid.View.RefreshFilter();
 }
 
@@ -334,7 +334,7 @@ When the DateTime type value is bound to the {{'[TreeGridColumn](https://help.sy
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/wpf-treegrid-text-filter.png" alt="Displays Text Filter in WPF TreeGrid/>
+<img src="Filtering_images/wpf-treegrid-text-filter.png" alt="Displays Text Filter in WPF TreeGrid"/>
 </td>
 <td>
 <img src="Filtering_images/wpf-treegrid-number-filter.png" alt="Displays Number Filter in WPF TreeGrid"/>
@@ -722,4 +722,4 @@ The filter icon style can be changed by writing style with TargetType as [Filter
 ![Customizing Filter Icon in WPF TreeGrid](Filtering_images/wpf-treegrid-filter-icon.png)
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.
