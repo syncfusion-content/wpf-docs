@@ -233,7 +233,7 @@ SfChart provides selection for adornments by defining [`HighlightOnSelection`](h
 
 **HighlightOnSelection**
 
-**Segment** **Selection**
+**Segment Selection**
 
 The following code example demonstrates the segment selection with adornments 
 
@@ -298,7 +298,7 @@ chart.Series.Add(series);
 
 ![Segments selection with adornments in WPF Chart](Interactive-Features_images/Interactive-Features_img39.jpeg)
 
-**Series** **Selection**
+**Series Selection**
 
 The following code example demonstrates the series selection with adornments. 
 
@@ -529,6 +529,8 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.C
 
 ## See also
 
-[`How to change the series selection when clicking the legend items in WPF Chart?`](https://www.syncfusion.com/kb/10461/how-to-change-the-series-selection-when-clicking-the-legend-items-in-wpf-chart)
-[`How to deselect the chart segment by using code behind?`](https://www.syncfusion.com/kb/5473/how-to-deselect-the-chart-segment-by-using-code-behind)
+* [`How to select multiple scatter data points with mouse drag in WPF Chart`](https://support.syncfusion.com/kb/article/14773/how-to-select-multiple-scatter-data-points-with-mouse-drag-in-wpf-chart)
+* [`How to deselect a chart segment by using code behind in WPF Chart`](https://support.syncfusion.com/kb/article/5119/how-to-deselect-a-chart-segment-by-using-code-behind-in-wpf-chart)
+* [`How to change the series selection when clicking the legend items in WPF Chart`](https://support.syncfusion.com/kb/article/9245/how-to-change-the-series-selection-when-clicking-the-legend-items-in-wpf-chart)
+* [`How to synchronize the selection between WPF Chart (SfChart) and DataGrid`](https://support.syncfusion.com/kb/article/3753/how-to-synchronize-the-selection-between-wpf-chart-sfchart-and-datagrid)
 

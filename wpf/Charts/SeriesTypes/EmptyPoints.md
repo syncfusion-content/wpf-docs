@@ -372,16 +372,16 @@ chart.Series.Add(series);
 
 The following section illustrates few chart types and its behavior with EmptyPoints.
 
-**ColumnSeries** **with** **EmptyPoint** **as** **Average**
+**ColumnSeries with** **EmptyPoint as** **Average**
 
 ![Customizing Empty Point Column in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-with-column.png)
 
 
-**SplineSeries** **with** **EmptyPoint** **as** **Average**
+**SplineSeries with** **EmptyPoint as** **Average**
 
 ![Spline with Empty Point in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-with-spline.png)
 
 
-**Accumulation** **Series** **with** **EmptyPoint** **as** **Average**
+**Accumulation Series** **with EmptyPoint** **as Average**
 
 ![Accumulation with Empty Point in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-accumulation.png)

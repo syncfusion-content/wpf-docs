@@ -23,7 +23,7 @@ The following code example initializes the AreaSeries:
     Interior="#BCBCBC" 
     YBindingPath="People" 
     ItemsSource="{Binding Fruits}">
-</chart:StepAreaSeries>  
+</chart:AreaSeries>  
 
 {% endhighlight %}
 

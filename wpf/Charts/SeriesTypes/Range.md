@@ -88,7 +88,7 @@ chart.Series.Add(series);
 
 ![WPF Range Column Chart](Series_images/wpf-range-column-chart.png)
 
-N> You can explore our [WPF Range Column Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-range-column-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Range Column Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Range%20Column) to know how to displays multiple series of data as range column.
+N> You can explore our [WPF Range Column Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-range-column-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Range Column Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Range%20Column) to know how to display multiple series of data as range column.
 
 
 ## Range Area Chart
@@ -168,7 +168,7 @@ chart.Series.Add(series);
 
 ![Displaying Closed Range Area in WPF Chart](Series_images/wpf-chart-closed-range-area.png)
 
-N> You can explore our [WPF Range Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-range-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Range Area Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Range%20Area) to know how to displays multiple series of data as range area.
+N> You can explore our [WPF Range Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-range-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Range Area Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Range%20Area) to know how to display multiple series of data as range area.
 
 ## Spline Range Area Chart
 
@@ -204,4 +204,4 @@ chart.Series.Add(splineRangeAreaSeries);
 
 ![WPF Spline Range Area Chart](Series_images/wpf-spline-range-area-chart.png)
 
-N> You can explore our [WPF Spline Range Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-range-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Range Area Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Spline%20Range%20Area) to know how to displays multiple series of data as spline range area.
+N> You can explore our [WPF Spline Range Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-range-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Range Area Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Spline%20Range%20Area) to know how to display multiple series of data as spline range area.

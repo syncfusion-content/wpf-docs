@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping Stacked Chart in WPF Charts control | Syncfusion
-description: Learn here all about Grouping Stacked Chart support in Syncfusion® WPF Charts (SfChart) control and more.
+description: Learn here all about Grouping Stacked Chart support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -100,5 +100,4 @@ chart.Series.Add(series4);
 
 ## See also
 
-[`How to render the stacked step line series in WPF Chart?`](https://www.syncfusion.com/kb/10155/how-to-render-the-stacked-step-line-series-in-wpf-chart)
-[`How to create separate columns StackedGroup in stacking series?`](https://www.syncfusion.com/kb/4730/how-to-create-separate-columns-stackedgroup-in-stacking-series)
+* [`How to create separate columns in stacking series of WPF Chart`](https://support.syncfusion.com/kb/article/4581/how-to-create-separate-columns-in-stacking-series-of-wpf-chart)

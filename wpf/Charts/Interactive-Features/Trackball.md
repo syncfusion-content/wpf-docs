@@ -200,7 +200,7 @@ The axis label will be viewed when the ShowTrackBallInfo property is set to true
 
 N>By default the value of ShowTrackBallInfo is false.
 
-**Alignment** **of** **Axis** **Label**
+**Alignment of** **Axis Label**
 
 The alignment of the axis label while moving trackball can be defined using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_AxisLabelAlignment) property.
 
@@ -372,7 +372,7 @@ chart.Series.Add(series3);
 
 
 
-**Alignment** **of** **Series** **Label**
+**Alignment of** **Series Label**
 
 The trackball label displayed over the series can be aligned using the [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelHorizontalAlignment) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelVerticalAlignment) properties. By default, the series label will be horizontally aligned to the left and vertically to the top.
 
@@ -466,7 +466,7 @@ chart.Behaviors.Add(behavior);
 
 **GroupAllPoints**
 
-[`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) supports to group the multiple selected trackball points, and allows to display the trackball points in a single trackball label. It can be achieved by setting the [`LabelDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelDisplayMode) property of [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) as GroupAllPoints.
+[`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) supports grouping the multiple selected trackball points, and allows displaying the trackball points in a single trackball label. It can be achieved by setting the [`LabelDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelDisplayMode) property of [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) to `GroupAllPoints`.
 
 {% tabs %}
 
@@ -598,7 +598,7 @@ chart.Series.Add(series);
 ![Trackball templte support for trackball in WPF Chart](Interactive-Features_images/Interactive-Features_img17.jpeg)
 
 
-**Applying** **Palette** **to** **the** **Series** **Label**
+**Applying Palette** **to the** **Series Label**
 
 Palette or interior color of the Series is applied to the series label by setting [`UseSeriesPalette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_UseSeriesPalette) to True as shown in the following code snippet.
 
@@ -674,6 +674,10 @@ The [`ChartPointInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Cha
 
 ## See also
 
-[`How to disable a trackball for a specific series?`](https://www.syncfusion.com/kb/11291/how-to-disable-a-trackball-for-a-specific-series)
-[`How to customize the trackball appearance in WPF Chart?`](https://www.syncfusion.com/kb/11020/how-to-customize-the-trackball-appearance-in-wpf-chart)
-[`How to apply label formatting to the trackball labels?`](https://www.syncfusion.com/kb/5362/how-to-apply-label-formatting-to-the-trackball-labels)
+* [`How to synchronize the trackball in multiple WPF Charts`](https://support.syncfusion.com/kb/article/18530/how-to-synchronize-the-trackball-in-multiple-wpf-charts)
+* [`How to add and customize multiple trackballs in WPF Chart`](https://support.syncfusion.com/kb/article/17741/how-to-add-and-customize-multiple-trackballs-in-wpf-chart)
+* [`How to disable the trackball for a specific series in WPF SfChart`](https://support.syncfusion.com/kb/article/9816/how-to-disable-the-trackball-for-a-specific-series-in-wpf-sfchart)
+* [`How to customize the trackball appearance in WPF Chart`](https://support.syncfusion.com/kb/article/9587/how-to-customize-the-trackball-appearance-in-wpf-chart)
+* [`How to show the trackball programmatically in WPF Chart`](https://support.syncfusion.com/kb/article/11324/how-to-show-the-trackball-programmatically-in-wpf-chart)
+* [`How to display trackball label or tooltip over chart annotation`](https://support.syncfusion.com/kb/article/9592/how-to-display-trackball-label-or-tooltip-over-chart-annotation)
+* [`How to apply label formatting to trackball labels in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/5179/how-to-apply-label-formatting-to-trackball-labels-in-wpf-chart-sfchart)

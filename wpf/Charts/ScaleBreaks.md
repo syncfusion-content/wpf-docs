@@ -8,18 +8,18 @@ documentation: ug
 ---
 # Scale Breaks in WPF Charts (SfChart)
 
-Scale break is a stripe drawn in the chart area to denote the break in the continuity of data points. Scale breaks are useful when there is a large difference in the data points. Scale break allows you to have different ranges on the same axis to visualize the data effectively.
+Scale break is a stripe drawn in the chart area to denote the break in the continuity of data points. Scale breaks are useful when there is a large difference in the data points. Scale break allows you to have different ranges on the same axis to visualize data effectively.
 
 ## Positioning the Breaks
 
-SfChart provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Start) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_End) properties for defining the scale break range (ranges that needs to be skipped). These values are based on axis values. 
+SfChart provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Start) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_End) properties for defining the scale break range (ranges that need to be skipped). These values are based on axis values.
 
 The following image has data points with both greater and smaller magnitude, but the segments with smaller values is not visualized properly.
 
 ![WPF Chart displays ScaleBreaks Position](ScaleBreak_images/wpf-chart-scalebreak-position.jpeg)
 
 
-Applying scale breaks helps in proper visualization of all the data points.
+Applying scale breaks helps in the proper visualization of all the data points.
 
 {% tabs %}
 
@@ -60,17 +60,17 @@ chart.SecondaryAxis = axis;
 
 ## Break Position Customization
 
-For the defined break range, its position in the chart area can be customized using the [`BreakPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_BreakPosition) property in numerical axis.
+For the defined break range, its position in the chart area can be customized using the [`BreakPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_BreakPosition) property in the numerical axis.
 
 Break position is determined based on the following factors:
 
 ### Data Count
 
-Based on the number of data points that fall in axis ranges (other than break range) scale break will be positioned.
+Based on the number of data points that fall in axis ranges (other than the break range), the scale break will be positioned.
 
-In the below image the range [0,350] contains maximum number of data compared to the range 
+In the below image, the range [0,350] contains more data compared to the range
 
-[8000, 10000] hence the break is positioned in such a way that allocates more space to the range [0,350].
+[8000, 10000], hence the break is positioned in such a way that it allocates more space to the range [0,350].
 
 Range [0,350] takes nearly 4/5th of the axis height and the range [8000,10000] takes 1/5th.
 
@@ -147,11 +147,11 @@ chart.SecondaryAxis = axis;
 
 ### Percent
 
-Percent option allows to position the breaks at the specified percentage of the axis available height.
+Percent option allows you to position the breaks at the specified percentage of the axis's available height.
 
-Percentage can be specified using [`BreakPercent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_BreakPercent) property. Default BreakPercent value is 50.
+Percentage can be specified using the [`BreakPercent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_BreakPercent) property. The default `BreakPercent` value is `50`.
 
-In the below image, each break is given percent value as 50. First break is positioned at the 50% of the axis, and the next break is positioned at 50% of the remaining space and so on.
+In the below image, each break is given a percent value of `50`. The first break is positioned at 50% of the axis, and the next break is positioned at 50% of the remaining space, and so on.
 
 {% tabs %}
 
@@ -301,4 +301,4 @@ chart.SecondaryAxis = axis;
 ![Customization of ScaleBreaks in WPF Chart](ScaleBreak_images/wpf-chart-scalebreak-customization.jpeg)
 
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to know various chart types and how they can be easily configured with built-in support for creating stunning visual effects.
