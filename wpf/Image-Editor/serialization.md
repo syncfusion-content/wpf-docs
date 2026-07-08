@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in Syncfusion SfImageEditor WPF.
-description: This section describes how to serialize and deserialize the annotations in Syncfusion Essential Studio WPF ImageEditor (SfImageEditor) control
+title: Serialization in Syncfusion SfImageEditor for WPF
+description: This section describes how to serialize and deserialize the annotations in the Syncfusion Essential Studio WPF ImageEditor (SfImageEditor) control.
 platform: wpf
 control: SfImageEditor
 documentation: ug
@@ -9,48 +9,55 @@ documentation: ug
 
 # Serialization in Image Editor (SfImageEditor)
 
-The Image Editor control provides support to serialize and deserialize the shape, text, pen annotations, and custom view along with their settings. You can save the current state of the image editor annotations and load it back when it is needed.
+The Image Editor control supports serializing and deserializing the shape, text, pen, and custom view annotations along with their settings. You can save the current state of the image editor annotations and restore it when needed.
 
 ## Serialization
 
-The [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Serialize_System_IO_Stream_) method is used to serialize the current edits of annotations. It allows you to store the [SfImageEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html) annotations to the stream by passing the stream as a parameter to the [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Serialize_System_IO_Stream_) method.
+The [`Serialize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Serialize_System_IO_Stream_) method is used to serialize the current edits of the annotations. It allows you to store the [`SfImageEditor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html) annotations to a stream by passing the stream as a parameter to the `Serialize` method.
 
 {% tabs %}
 
 {% highlight C# %}
-    
-    SaveFileDialog dialog = new SaveFileDialog();
-    dialog.Title = "Save XML";
-    dialog.Filter = "XML File (*.xml)|*.xml";
-    if (dialog.ShowDialog() == true)
+
+using System.IO;
+using Microsoft.Win32;
+using Syncfusion.UI.Xaml.ImageEditor;
+
+SaveFileDialog dialog = new SaveFileDialog();
+dialog.Title = "Save XML";
+dialog.Filter = "XML File (*.xml)|*.xml";
+if (dialog.ShowDialog() == true)
+{
+    using (Stream stream = File.Open(dialog.FileName, FileMode.CreateNew))
     {
-        using (Stream stream = File.Open(dialog.FileName, FileMode.CreateNew))
-        {
-            imageEditor.Serialize(stream);
-        }
+        editor.Serialize(stream);
     }
-    
-	
+}
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Deserialization
 
-The [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Deserialize_System_IO_Stream_) method is used to deserialize the annotations over an image. It allows you to reload the [SfImageEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html) control with the annotations available in the stream.
+The [`Deserialize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Deserialize_System_IO_Stream_) method is used to deserialize the annotations over an image. It allows you to reload the [`SfImageEditor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html) control with the annotations available in the stream.
 
 {% tabs %}
 
 {% highlight C# %}
-       
-    OpenFileDialog dialog = new OpenFileDialog();
-    if (dialog.ShowDialog() == true)
+
+using System.IO;
+using Microsoft.Win32;
+using Syncfusion.UI.Xaml.ImageEditor;
+
+OpenFileDialog dialog = new OpenFileDialog();
+if (dialog.ShowDialog() == true)
+{
+    using (Stream myStream = dialog.OpenFile())
     {
-        using (Stream myStream = dialog.OpenFile())
-        {
-            imageEditor.Deserialize(myStream);
-        }
+        editor.Deserialize(myStream);
     }
+}
 
 {% endhighlight %}
 
@@ -58,21 +65,27 @@ The [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEdi
 
 ## Annotations collection
 
-The Image Editor provides the read-only collection of annotations using the [Annotations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) property. The [Annotations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) property contains all the annotations currently visible in image editor.
+The Image Editor exposes a read-only collection of annotations through the [`Annotations`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) property. This property contains all the annotations currently visible in the image editor.
 
-N> This collection will be reset if the background image has been changed.
+N> This collection is reset if the background image is changed.
 
-The following code sample only adds a rectangle shape from the [Annotations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) collection.
+The following code sample filters the rectangle shapes from the `Annotations` collection and re-adds them to the image editor.
 
 {% tabs %}
 
 {% highlight C# %}
-       
-    var rectangleAnnotations = this.imageEditor.Annotations.ToList().Where(item => item.Type == ShapeType.Rectangle);
-    foreach (var item in rectangleAnnotations)
-    {
-        this.imageEditor.AddShape(item.Type, item.PenSettings);
-    }
+
+using System.Linq;
+using Syncfusion.UI.Xaml.ImageEditor;
+using Syncfusion.UI.Xaml.ImageEditor.Enums;
+
+var rectangleAnnotations = editor.Annotations
+    .Where(item => item.Type == ShapeType.Rectangle)
+    .ToList();
+foreach (var item in rectangleAnnotations)
+{
+    editor.AddShape(item.Type, item.PenSettings);
+}
 
 {% endhighlight %}
 
