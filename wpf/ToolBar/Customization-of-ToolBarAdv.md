@@ -9,9 +9,9 @@ documentation: ug
 
 # Customization in WPF ToolBar (ToolBarAdv)
 
-## Customizing Floating ToolBarAdv
+This section describes how to customize the appearance of a ToolBarAdv.
 
-The floating ToolBarAdv can be customized using the FloatingToolBarAdvStyle property of ToolBarManager.
+## Customizing the floating ToolBarAdv
 
 {% tabs %}
 
@@ -58,7 +58,9 @@ The floating ToolBarAdv can be customized using the FloatingToolBarAdvStyle prop
 
 </syncfusion:ToolBarManager>
 
+## Customizing the foreground
 
+The [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground) property of [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) can be used to customize the toolbar text foreground.
 
 {% endhighlight %}
 
@@ -103,11 +105,11 @@ The following code illustrates how to set the value of the foreground property:
 
 {% endtabs %}
 
-![Setting floaitng toolbar text forecolor](Getting-Started-images/Floating-ToolBar-Forecolor.png)
+![Setting the toolbar text foreground](Getting-Started-images/Floating-ToolBar-Forecolor.png)
 
-## Customize FrameworkElement’s Style
+> To preview the foreground on a *floating* toolbar, you must first detach the toolbar by clicking its gripper. See [ToolBarAdv state](ToolBarAdv-state.md) for instructions.
 
-In ToolBarAdv, style for FrameworkElement will be picked from a ResourceDictionary assigned in the ControlsResourceDictionary property of ToolBarAdv.
+## Customizing a FrameworkElement's style
 
 {% tabs %}
 
@@ -133,11 +135,9 @@ Source = new Uri("ControlsResouce.xaml", UriKind.RelativeOrAbsolute)
 
 ## Theme
 
-ToolBarAdv supports various built-in themes. Refer to the below links to apply themes for the ToolBarAdv,
+ToolBarAdv supports various built-in themes. Apply a theme to the ToolBarAdv using the links below.
 
-  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
-  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+* [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+* [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF ToolBarAdv](Getting-Started-images/Theme.png)
-
+![Setting theme to WPF ToolBarAdv](Getting-Started-images/Theme.png)

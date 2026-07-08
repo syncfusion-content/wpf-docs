@@ -11,7 +11,7 @@ documentation: ug
 
 ## IsEditable
 
-It allows user to edit the text in the ComboBoxAdv.
+The `IsEditable` property allows the user to edit the text in the ComboBoxAdv. The default value is `false`.
 
 <table>
 <tr>
@@ -30,9 +30,9 @@ Boolean</td><td>
 NA</td></tr>
 </table>
 
-## Adding IsEditable property to an application 
+### Adding IsEditable to an application
 
-IsEditable property can be added directly to an application in the following way: 
+The `IsEditable` property can be added directly to an application in the following way.
 
 {% tabs %}
 {% highlight xaml %}
@@ -52,19 +52,17 @@ comboBox.IsEditable = true;
 
 ## Auto Complete Support in WPF ComboBox
 
-You can able to find the expected item from the dropdown of the [`ComboBoxAdv`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) and it can be enabled by using the [`AutoCompleteMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AutoCompleteMode) property. It can be used for both single and multiple selections on editable mode. 
+You can find the expected item from the drop-down of the [`ComboBoxAdv`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) by using the [`AutoCompleteMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AutoCompleteMode) property. It can be used for both single and multiple selections in editable mode.
 
- There are three different AutoComplete modes: 
+There are three different `AutoCompleteMode` values.
 
-•	`Suggest`: Suggestions are displayed in a drop-down menu.
-
-•	`None`: No suggestion is made.
-
-Default value is *None*.
+* `None` – No suggestion is made. This is the default value.
+* `Suggest` – Suggestions are displayed in a drop-down menu based on the typed text.
+* `Append` – The first matching item is appended to the text in the editor.
 
 ### Suggest
 
-By setting the `AutoCompleteMode` property to `Suggest`, a list of possible matches will be suggested and displayed in the drop-down list. The search text are included or start with the suggested items.
+By setting the `AutoCompleteMode` property to `Suggest`, a list of possible matches is suggested and displayed in the drop-down list. The search text is included at the start of the suggested items.
 
 {% tabs %}
 {% highlight XAML %}
@@ -83,6 +81,6 @@ combobox.AutoCompleteMode = AutoCompleModes.Suggest;
 
 ![WPF ComboBoxAdv AutoComplete suggest mode](ComboBoxAdv_images/wpf-comboboxadv-autocomplete-suggest-mode.gif)
 
-N> Suggest mode will be applicable only when the `ComboBoxAdv` is populated with `ItemSource` collection. When `AutoCompleteMode` is set to `Suggest` and `IsTextSearchEnabled` is set to `True` in editable mode, `AutoCompleteMode` will take precedence.
+N> Suggest mode applies only when the `ComboBoxAdv` is populated with an `ItemsSource` collection. When `AutoCompleteMode` is set to `Suggest` and `IsTextSearchEnabled` is set to `True` in editable mode, `AutoCompleteMode` takes precedence.
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-combobox-examples/tree/main/Samples/Autocomplete)

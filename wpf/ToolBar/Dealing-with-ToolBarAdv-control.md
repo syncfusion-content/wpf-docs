@@ -9,9 +9,11 @@ documentation: ug
 
 # Dealing with ToolBarAdv control in WPF ToolBar (ToolBarAdv)
 
-## Specifying the Position of ToolBarAdv's in a ToolBarTrayAdv
+The following sections describe how to position, customize, and populate the items in a `ToolBarAdv`.
 
-The position of the ToolBarAdv in the ToolBarTrayAdv can be specified using the `Band` and the `BandIndex` properties. Band indicates the band in ToolBarTrayAdv, where ToolBarAdv has to be placed. BandIndex indicates the order in which the ToolBarAdv has to be placed within the band.
+## Specifying the position of ToolBarAdv in a ToolBarTrayAdv
+
+The position of the ToolBarAdv in the ToolBarTrayAdv can be specified using the `Band` and `BandIndex` properties. `Band` indicates the band in the ToolBarTrayAdv where the ToolBarAdv has to be placed. `BandIndex` indicates the order in which the ToolBarAdv is placed within the band.
 
 {% tabs %}
 
@@ -134,14 +136,17 @@ Grid1.Children.Add(tray);
 
 {% endtabs %}
 
-![Dealing-with-ToolBarAdv-control-img1](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img1.jpeg)
+![Specifying the position of ToolBarAdv in a ToolBarTrayAdv](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img1.jpeg)
 
+## ToolBarAdv with overflow items
 
-## ToolBarAdv with Overflow items
+When a ToolBarAdv control contains more items than can be displayed within its size, the additional items are listed in the overflow popup. On clicking the overflow button, the items are listed.
 
-When ToolBarAdv control contains more items, it cannot be displayed within the toolbar’s size. So they are listed in the Overflow popup. On clicking the Overflow button, the items will be list out.
+ToolBarAdv allows you to set the overflow mode for each item.
 
-ToolBarAdv enables to set the overflow mode for each item.
+* `OverflowMode.Always` – the specified item will always be listed in the overflow popup.
+* `OverflowMode.Never` – the specified item will never be moved to the overflow popup.
+* `OverflowMode.AsNeeded` – the specified item will be listed in the overflow popup if required. This is the default value.
 
 * OverflowMode.Always – Specified item will always be listed in the Overflow popup.
 * OverflowMode.Never - Specified item will never be moved to the Overflow popup.
@@ -276,11 +281,9 @@ Grid1.Children.Add(tray);
 
 ## Add or Remove buttons
 
-ToolBarAdv provides option to show or hide an item using the Add or Remove button. To enable the Add or Remove Button, `EnableAddRemoveButton` property of ToolBarAdv need to set as True. By default its value is false. Unselect the respective checkboxes of the items to hide.
+ToolBarAdv provides the option to show or hide an item at runtime using the **Add or Remove** button. To enable it, set the `EnableAddRemoveButton` property of ToolBarAdv to `True`. The default value is `false`. Users can unselect the checkboxes of items to hide them from the toolbar.
 
-### Adding an Item to Add or Remove Button
-
-An item can be added to Add or Remove Buttons by setting the ToolBarAdv.Icon and ToolBarAdv.Label properties.
+### Adding an item to the Add or Remove button
 
 Following code illustrates how to add an item in Add or Remove Buttons:
 
@@ -363,7 +366,7 @@ Grid1.Children.Add(tray);
 
 ## Hiding the ToolBarItem
 
-To hide the particular ToolBarItem, the `IsAvailable` an attached property of the ToolBarAdv need to set as False. By default its value is True.
+To hide a particular ToolBarItem, set the `IsAvailable` attached property of the ToolBarAdv to `False`. The default value is `True`.
 
 {% tabs %}
 

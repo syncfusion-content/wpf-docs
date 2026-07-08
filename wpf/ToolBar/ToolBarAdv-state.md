@@ -166,11 +166,12 @@ Following code restricts docking at the top:
 
 ## ToolBarStateChanged event
 
-The [ToolBarStateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_ToolBarStateChanged) event is triggered when the state of a ToolBarAdv changes, such as when it is hidden, floated, or docked. This event passes an instance of [ToolBarStateChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarStateChangedEventArgs.html), which contains information about the state change, including the old state and the new state of the toolbar.
+The [`ToolBarStateChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_ToolBarStateChanged) event is triggered when the state of a ToolBarAdv changes, such as when it is hidden, floated, or docked. The handler receives an instance of [`ToolBarStateChangedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarStateChangedEventArgs.html), which contains information about the state change.
 
-NewState: Gets the current state of the ToolBarAdv control.
+* `NewState` — gets the current state of the ToolBarAdv control.
+* `OldState` — gets the previous state of the ToolBarAdv control.
 
-OldState: Gets the previous state of the ToolBarAdv control.
+### Wiring the event in XAML
 
 {% tabs %}
 
