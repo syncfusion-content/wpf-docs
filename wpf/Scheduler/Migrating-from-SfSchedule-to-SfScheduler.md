@@ -54,7 +54,7 @@ Both [SfSchedule](https://help.syncfusion.com/wpf/scheduler/overview) and [SfSch
 * Support Recurrence pattern exception dates and exception appointments.
 * Support special time region for Timeslot views.
 
-N>  In the future, new features & enhancements will be added only in `SfScheduler`. It is recommended to use the  ` SfScheduler`.
+N>  In the future, new features & enhancements will be added only in `SfScheduler`. It is recommended to use the `SfScheduler`.
 
 The following table shows the API comparison between SfSchedule and SfScheduler.
 
@@ -406,4 +406,4 @@ Easily configure recurring events on a daily, weekly, monthly, or yearly basis. 
 </table>
 
 
-N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
