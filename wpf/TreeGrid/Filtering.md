@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Filtering support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
+description: Learn all about filtering support in the Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements, and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Filtering in WPF TreeGrid (SfTreeGrid)
 
-Filtering is the process of retrieving the values from a collection that satisfies the specified condition. In SfTreeGrid, filtering can be applied through the UI as well as the programmatic filters.
+Filtering is the process of retrieving values from a collection that satisfy the specified condition. In SfTreeGrid, filtering can be applied through the UI as well as through programmatic filters.
 
 ## FilterLevel
 
@@ -35,7 +35,7 @@ Filter will be applied to root nodes only in SfTreeGrid. For other nodes, `IsFil
 
 **All**
 
-Filter will be applied to all the nodes in SfTreeGrid. If a parent node does not match the filter condition, filter will not be applied for child nodes. Else, filter will be applied to its child nodes also.
+Filter will be applied to all the nodes in SfTreeGrid. If a parent node does not match the filter condition, the filter will not be applied to its child nodes. Otherwise, the filter will also be applied to its child nodes.
 
 **Extended**
 
@@ -76,13 +76,13 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-Here, `FilterNodes` delegate filters the data based on Salary. `FilterNodes` delegate is assigned to [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) predicate to filter the tree grid. After that, [SfTreeGrid.View.RefreshFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_RefreshFilter) method is called to refresh the nodes. If the node satisfies the filter conditions, true will be returned. Else false will be returned.
+Here, the `FilterNodes` delegate filters the data based on the `Salary` property. The `FilterNodes` delegate is assigned to the [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) predicate to filter the tree grid. After that, the [SfTreeGrid.View.RefreshFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_RefreshFilter) method is called to refresh the nodes. If the node satisfies the filter conditions, `true` is returned. Otherwise, `false` is returned.
 
 ![WPF TreeGrid with Filtering](Filtering_images/wpf-treegrid-filtering.png)
 
-While filtering, if the node satisfies filter condition, [IsFiltered](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_IsFiltered) property of [TreeNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html) will be set as false. Else, it will be true. If `IsFiltered` value is True, the node will not be displayed in view, else it will be displayed in view.
+While filtering, if the node satisfies the filter condition, the [IsFiltered](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_IsFiltered) property of [TreeNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html) will be set to `false`. Otherwise, it will be set to `true`. If the `IsFiltered` value is `true`, the node will not be displayed in the view; otherwise, it will be displayed in the view.
 
-N> SfTreeGrid refreshes the filtering on property change if [SfTreeGrid.LiveNodeUpdateMode ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode)property is set as `AllowDataShaping`.
+N> SfTreeGrid refreshes the filtering on property change if the [SfTreeGrid.LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) property is set to `AllowDataShaping`.
 
 You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/FilteringDemo-587565594).
 
@@ -130,10 +130,10 @@ this.sfTreeGrid.Columns["FirstName"].FilterPredicates.Add(
 {% endtabs %}
 
 #### Filter behavior
-The [FilterBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterBehavior) property is used to specify whether to consider the [FilterValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) as string or specific data type.
+The [FilterBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterBehavior) property is used to specify whether to consider the [FilterValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) as a string or as a specific data type.
 
-* StringTyped - Records are filtered without considering the type and it takes FilterValue type as string.
-* StronglyTyped - Records are filtered by considering the FilterValue underlying type.
+* StringTyped - Records are filtered without considering the type, and the FilterValue type is treated as a string.
+* StronglyTyped - Records are filtered by considering the underlying type of the FilterValue.
 
 #### Clear filtering
 
@@ -158,10 +158,10 @@ this.sfTreeGrid.ClearFilter(this.sfTreeGrid.Columns["FirstName"]);
 
 The [PredicateType](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_PredicateType) property is used to apply multiple FilterPredicates for a column.
 
-* And: Performs And operation in filters.
-* AndAlso: Performs AndAlso operation in filters.
-* Or: Performs Or operation in filters.
-* OrElse: Performs OrElse operation in filters.
+* And: Performs an And operation in filters.
+* AndAlso: Performs an AndAlso operation in filters.
+* Or: Performs an Or operation in filters.
+* OrElse: Performs an OrElse operation in filters.
 
 {% tabs %}
 {% highlight c# %}
@@ -189,11 +189,11 @@ this.sfTreeGrid.Columns["FirstName"].FilterPredicates.Add(
 
 #### Filter DateColumn with range between two dates
 
-A [TreeGridDateTimeColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html) can be filtered with a range between two dates by applying two FilterPredicate for the same column. The [FilterType](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterType) for the FilterPredicate with start date should be `GreaterThanOrEqual` and end date should be `LessThanOrEqual`.
+A [TreeGridDateTimeColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html) can be filtered with a range between two dates by applying two FilterPredicates for the same column. The [FilterType](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterType) for the FilterPredicate with the start date should be `GreaterThanOrEqual`, and the end date should be `LessThanOrEqual`.
 
 ## UI filtering
 
-SfTreeGrid provides Excel-like filtering UI and advanced filter UI to filter the data easily. UI filtering can be enabled by setting the [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering) property to `true`. This allows to open the filter UI by clicking the filter icon on the column header to filter the nodes.
+SfTreeGrid provides Excel-like filtering UI and an advanced filter UI to filter the data easily. UI filtering can be enabled by setting the [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering) property to `true`. This allows you to open the filter UI by clicking the filter icon on the column header to filter the nodes.
 
 The filtering can be enabled or disabled for a specific column by setting the [TreeGridColumn.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_AllowFiltering) property.
 
@@ -214,15 +214,15 @@ N> `TreeGridColumn.AllowFiltering` has higher priority than the `SfTreeGrid.Allo
 
 ### Built-in UI views
 
-The SfTreeGrid provides the following types of filter pop-up modes:
+SfTreeGrid provides the following types of filter pop-up modes:
 
-* Check box filter: Provides Excel-like filter interface with a list of check boxes.
+* Check box filter: Provides an Excel-like filter interface with a list of check boxes.
 
 * Advanced filter: Provides advanced filter options to filter the data.
 
-* Both: Both check box filter and advanced filter are loaded while opening the filter pop-up.
+* Both: Both the check box filter and the advanced filter are loaded when the filter pop-up is opened.
 
-By default, the filter pop-up mode of the column is set to Both. The check box and the advanced filters can be switched using the Advanced Filter button.
+By default, the filter pop-up mode of the column is set to `Both`. The check box and the advanced filters can be switched using the Advanced Filter button.
 
 #### Checkbox filtering UI
 
@@ -234,7 +234,7 @@ By default, the filter pop-up mode of the column is set to Both. The check box a
 
 ## Changing filter UI for grid
 
-Filter UI view can be changed for all the columns in grid by changing the [FilterMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterMode) in [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) by writing style and assign it to [SfTreeGrid.FilterPopupStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterPopupStyle).
+The filter UI view can be changed for all the columns in the grid by changing the [FilterMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterMode) in [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) by writing a style and assigning it to [SfTreeGrid.FilterPopupStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterPopupStyle).
 
 {% tabs %}
 {% highlight xaml %}
@@ -253,7 +253,7 @@ Filter UI view can be changed for all the columns in grid by changing the [Filte
 
 ## Changing filter UI for a column
 
-Filter UI view can be changed for a specific column by changing the [FilterMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterMode) in [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) by writing style and assigning it to [TreeGridColumn.FilterPopupStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_FilterPopupStyle).
+The filter UI view can be changed for a specific column by changing the [FilterMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterMode) in [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) by writing a style and assigning it to [TreeGridColumn.FilterPopupStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_FilterPopupStyle).
 
 {% tabs %}
 {% highlight xaml %}
@@ -291,23 +291,23 @@ You can skip the [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Sync
 
 ## Check box filtering
 
-The check box filtering is the same as Excel-like filter popup, which displays a search text box and a list of check boxes with unique items from the expanded tree nodes.
+The check box filtering is the same as the Excel-like filter popup, which displays a search text box and a list of check boxes with unique items from the expanded tree nodes.
 
 The items in the checked state will be visible in the view, and the other items will be filtered out of the view.
 
-This filtering operation is performed based on the value of [SfTreeGrid.FilterLevel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterLevel) property.
+This filtering operation is performed based on the value of the [SfTreeGrid.FilterLevel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterLevel) property.
 
 ## Advanced filtering
 
-Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on advanced filter type by automatically detecting the underlying date type.
+The advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on the advanced filter type by automatically detecting the underlying data type.
 
 The following built-in filter types are supported in SfTreeGrid:
 
 * Text filter: Loads various menu options to filter the display text effectively.
 
-* Number filter: Loads various menu options to filter the numeric data.
+* Number filter: Loads various menu options to filter numeric data.
 
-* Date filter: Loads various menu options and [DatePicker](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datepicker?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&redirectedfrom=MSDN) to filter date-time type columns.
+* Date filter: Loads various menu options and a [DatePicker](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datepicker?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&redirectedfrom=MSDN) to filter date-time type columns.
 
 <table>
 <tr>
@@ -334,7 +334,7 @@ When the DateTime type value is bound to the {{'[TreeGridColumn](https://help.sy
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/wpf-treegrid-text-filter.png" alt="Displays Text Filter in WPF TreeGrid/>
+<img src="Filtering_images/wpf-treegrid-text-filter.png" alt="Displays Text Filter in WPF TreeGrid"/>
 </td>
 <td>
 <img src="Filtering_images/wpf-treegrid-number-filter.png" alt="Displays Number Filter in WPF TreeGrid"/>
@@ -393,7 +393,7 @@ N> The `Null` and `Not Null` options are available only when `AllowBlankFilters`
 
 ## Instant filtering
 
-By default, filters are applied to the columns when OK button is clicked in UI filtering. To update the filters immediately whenever update in filter popup, set [TreeGridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ImmediateUpdateColumnFilter) to `true`.
+By default, filters are applied to the columns when the OK button is clicked in UI filtering. To update the filters immediately whenever there is an update in the filter pop-up, set [TreeGridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ImmediateUpdateColumnFilter) to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -409,7 +409,7 @@ this.sfTreeGrid.Columns["EmployeeID"].ImmediateUpdateColumnFilter = true;
 {% endhighlight %}
 {% endtabs %}
 
-Here, the OK and Cancel buttons are unavailable and Done button is available to just close the popup.
+Here, the OK and Cancel buttons are unavailable, and the Done button is available to just close the popup.
 
 The following screenshot illustrates the check box filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
@@ -419,7 +419,7 @@ The following screenshot illustrates the advanced filter when `ImmediateUpdateCo
 
 ![Advanced Filter with Immediate Filter in WPF TreeGrid](Filtering_images/wpf-treegrid-immediate-advanced-filter.png)
 
-N> In check box filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ImmediateUpdateColumnFilter) is true.
+N> In the check box filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ImmediateUpdateColumnFilter) is `true`.
 
 ## Filtering null values
 
@@ -442,13 +442,13 @@ The following screenshot illustrates the check box filter when `AllowBlankFilter
 
 ![Filter Null Values using CheckBox Filter in WPF TreeGrid](Filtering_images/wpf-treegrid-filter-null-values.png)
 
-The following screenshot illustrates advanced filter when `AllowBlankFilters` is set to `true`.
+The following screenshot illustrates the advanced filter when `AllowBlankFilters` is set to `true`.
 
 ![Filter Null Values using Advanced Filter in WPF TreeGrid](Filtering_images/wpf-treegrid-null-values.png)
 
 ## Changing AdvancedFilter type when loading dynamic ItemsSource
 
-By default, the text filters will be loaded for the columns if `ItemsSource` is [dynamic](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types#the-dynamic-type). The [TreeGridColumn.ColumnMemberType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnMemberType) property loads number filters or date filters based on the column values.
+By default, the text filters will be loaded for the columns if the `ItemsSource` is [dynamic](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types#the-dynamic-type). The [TreeGridColumn.ColumnMemberType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnMemberType) property loads number filters or date filters based on the column values.
 
 {% tabs %}
 {% highlight c# %}
@@ -462,7 +462,7 @@ this.sfTreeGrid.Columns["EmployeeID"].ColumnMemberType = typeof(double);
 
 ### Loading text filter for number or date column
 
-The [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulating) event is used to load text filters for the columns that have number or date value as underlying type by setting value of the `TreeGridFilterItemsPopulatingEventArgs.FilterControl.AdvancedFilterType` property to `AdvancedFilterType.TextFilter`.
+The [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulating) event is used to load text filters for the columns that have a number or date value as the underlying type by setting the value of the `TreeGridFilterItemsPopulatingEventArgs.FilterControl.AdvancedFilterType` property to `AdvancedFilterType.TextFilter`.
 
 {% tabs %}
 {% highlight c# %}
@@ -480,7 +480,7 @@ private void OnSfTreeGridFilterItemsPopulating(object sender, TreeGridFilterItem
 
 ### Customizing filter predicates
 
-The filter predicates can be customized using the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanging) event. This event occurs when applying filter using the filter control. Here, [FilterValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) is changed based on some conditions.
+The filter predicates can be customized using the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanging) event. This event occurs when applying a filter using the filter control. Here, the [FilterValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) is changed based on certain conditions.
 
 {% tabs %}
 {% highlight c# %}
@@ -501,7 +501,7 @@ private void OnSfTreeGridFilterChanging(object sender, TreeGridFilterChangingEve
 
 ### Customizing Excel-like filter ItemsSource
 
-The [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) `ItemsSource` can be customized to restrict some data from filtering using the [SfTreeGrid.FilterItemsPopulated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulated) event. Here, the [FilterElement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterElement.html) that has actual value as 0 is removed from `ItemsSource`.
+The `ItemsSource` of [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) can be customized to restrict some data from filtering using the [SfTreeGrid.FilterItemsPopulated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulated) event. Here, the [FilterElement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterElement.html) that has an actual value of 0 is removed from the `ItemsSource`.
 
 {% tabs %}
 {% highlight c# %}
@@ -547,7 +547,7 @@ private void SfTreeGrid_FilterItemsPopulating(object sender, TreeGridFilterItems
 
 ### Customizing sort options text
 
-Sort options text can be customized by changing the value of [AscendingSortString](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_AscendingSortString) and [DescendingSortString](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_DescendingSortString) properties in the [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) using the [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulating) event.
+The sort options text can be customized by changing the value of the [AscendingSortString](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_AscendingSortString) and [DescendingSortString](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_DescendingSortString) properties in the [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html) using the [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulating) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -593,7 +593,7 @@ Sort options can be collapsed by setting the [SortOptionVisibility](https://help
 
 ### Customizing the filter popup size 
 
-The size of the filter popup can be changed using the [FilterPopupHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterPopupHeight) and [FilterPopupWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterPopupWidth) properties in [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html).
+The size of the filter popup can be changed using the [FilterPopupHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterPopupHeight) and [FilterPopupWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterPopupWidth) properties in the [TreeGridFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -612,7 +612,7 @@ The size of the filter popup can be changed using the [FilterPopupHeight](https:
 
 ### Changing filter icon style after applying filters
 
-The filter icon style can be changed by writing style with TargetType as [FilterToggleButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterToggleButton.html).
+The filter icon style can be changed by writing a style with the `TargetType` set to [FilterToggleButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterToggleButton.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -722,4 +722,4 @@ The filter icon style can be changed by writing style with TargetType as [Filter
 ![Customizing Filter Icon in WPF TreeGrid](Filtering_images/wpf-treegrid-filter-icon.png)
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Paging support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more details.
+description: Learn all about paging support in the Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements, and more details.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -9,17 +9,17 @@ documentation: ug
 
 # Paging in WPF TreeGrid (SfTreeGrid)
 
-SfTreeGrid provides support to manipulate the nodes using SfDataPager control. You can refer [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
+SfTreeGrid provides support to manipulate the nodes using the SfDataPager control. You can refer to the [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
 
 ## Getting started
 
-Follow the below steps to bind SfTreeGrid with SfDataPager.
+Follow the steps below to bind SfTreeGrid with SfDataPager.
  
-1. Create `IEnumerable` collection that you want to bind and set it to [SfDataPager.Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_Source) property.
+1. Create an `IEnumerable` collection that you want to bind and set it to the [SfDataPager.Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_Source) property.
 
-2. Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property to specify the number of `RootNodes` to be displayed per page.
+2. Set the [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property to specify the number of `RootNodes` to be displayed per page.
 
-3. Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property. So whenever the page is changed, `PagedSource` will be update based on current page.
+3. Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) to the [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property. So whenever the page is changed, `PagedSource` will be updated based on the current page.
 
 N> Paging supports all types of [TreeGridView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html), except when using `SfTreeGrid` in unbound mode ([TreeGridUnBoundView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridUnboundView.html)). The following code snippet demonstrates the [TreeGridSelfRelationalView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSelfRelationalView.html) type.
 Similarly, paging support can be implemented for [TreeGridNestedView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNestedView.html).
@@ -178,9 +178,9 @@ public class EmployeeInfo
 
 ### Limitations
 
-1. Paging is not supported when using `SfTreeGrid` in unbound mode (TreeGridUnBoundView).
-2. `SfDataPager`’s on‑demand loading functionality is not supported.
+1. Paging is not supported when using `SfTreeGrid` in unbound mode (`TreeGridUnBoundView`).
+2. The on-demand loading functionality of `SfDataPager` is not supported.
 3. **Child nodes** are not considered in page size calculation.
 4. Selection should not be maintained when moving from one page to another.
 5. **Sorting and Filtering** are applied across all pages. However, node reordering occurs only within each individual page.
-6. The **data operations** such as Add, Replace, Remove, Insert, and Move are not supported.
+6. **Data operations** such as Add, Replace, Remove, Insert, and Move are not supported.
