@@ -426,7 +426,7 @@ dockingManager.AutoHideVisibility = false;
 ![Auto hide visibility](Auto-Hide-Window_images/Auto-Hide-Window_img9.jpeg)
 
 
-To enable or disable the AutoHide functionality for a specific child in the DockingManager, [CanAutoHide](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanAutoHide) can be used. By default its value is `true`; this functionality can be disabled by setting its value to `false`. Note that `CanAutoHide` only affects the pin/unpin affordance; the AutoHide button on the caption bar of a Float window is controlled separately by `AutoHideVisibility` on the DockingManager.
+To enable or disable the AutoHide functionality for a specific child in the DockingManager, [CanAutoHide](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanAutoHide) can be used. By default its value is `true`; this functionality can be disabled by setting its value to `false`. Note that `CanAutoHide` only affects the pin/unpin; the AutoHide button on the caption bar of a Float window is controlled separately by `AutoHideVisibility` on the DockingManager.
 
 {% tabs %}
 

@@ -70,7 +70,7 @@ The Ribbon can be changed into three different states: `Normal`, `Hide`, and `Ad
 
 {% endtabs %}
 
-![WPF Ribbon with Hide RibbonState](ThreetypesofRibbonState_images/wpf-ribbon-with-hide-state.jpeg)
+![WPF Ribbon with Hide RibbonState](ThreetypesofRibbonState_images/wpf-ribbon-wth-hide-state.jpeg)
 
 
 **Adorner** – In this state, RibbonTab content is adorned above the window content

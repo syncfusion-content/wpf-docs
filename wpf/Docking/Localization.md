@@ -31,7 +31,7 @@ FloatButtonTooltipText </td><td>
 Sets the string for the ToolTip of Float button in the DockingManager.</td></tr>
 <tr>
 <td colspan = "2">
-Float(en-US)                                           Flottant(fr-FR)</td></tr>
+Float(en-US)                                           Flotteur(fr-FR)</td></tr>
 <tr>
 <td>
 AwlButtonTooltipText</td><td>
