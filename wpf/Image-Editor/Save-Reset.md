@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Saving edited image in syncfusion SfImageEditor WPF.
-description: This section describes how to save the image using toolbar and programmatically, reset the image, and saving events in SfImageEditor control for WPF platform.
+title: Saving edited image in Syncfusion SfImageEditor for WPF
+description: This section describes how to save an image using the toolbar and programmatically, reset the image, and handle saving events in the SfImageEditor control for the WPF platform.
 platform: wpf
 control: SfImageEditor
 documentation: ug
@@ -9,194 +9,220 @@ documentation: ug
 
 # Save and Reset functionality in Image Editor
 
-Image can be saved along with the changes. An image can be saved in the following two ways:
+An image can be saved along with the changes. An image can be saved in the following two ways:
 
 * Saving an image using the toolbar.
 * Saving an image programmatically.
 
 ## Saving an image using the toolbar
 
-To save an image, click the save icon in the toolbar. You can choose the desired location from the save file dialog to save the edited image.
+To save an image, click the save icon in the toolbar. You can choose the desired location from the **Save As** dialog to save the edited image.
 
 ## Saving an image programmatically
 
-An image can be saved programmatically using the Save method in image editor as follows. The save method takes the following three parameters:
+An image can be saved programmatically using the [`Save`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Save_System_String_System_Windows_Size_System_String_) method in the image editor, as shown in the following code sample. The `Save` method accepts the following three parameters:
 
-* ImageFormat - Specifies the format in which image has to be saved.
+* `ImageFormat` - Specifies the format in which the image has to be saved.
+* `Size` - Saves the image in the specified size.
+* `FilePath` - Specifies the location in which the image has to be saved.
 
-* Size - Saves the image in the specified size.
+{% tabs %}
 
-* FilePath - Specifies the location in which image has to be saved.
+{% highlight C# %}
 
-{% tabs %} 
-
-{% highlight C# %} 
+using Syncfusion.UI.Xaml.ImageEditor;
 
 editor.Save();
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ### Image size specification
 
-You can save an image with the required size by specifying the size parameter in the save method as follows.
+You can save an image with the required size by specifying the size parameter in the `Save` method, as shown in the following code sample.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
-editor.Save(null, new Size(750,500), null);
+using System.Windows;
+using Syncfusion.UI.Xaml.ImageEditor;
+
+editor.Save(null, new Size(750, 500), null);
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ### Image location
 
-Image can be saved at the specified location as demonstrated in the following code.
+An image can be saved at the specified location, as demonstrated in the following code sample.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
+using System.Windows;
+using Syncfusion.UI.Xaml.ImageEditor;
 
 editor.Save(null, default(Size), @"E:\Images\");
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ### Image format
 
-You can specify the format, in which image has to be saved as the parameter in Save method as follows.
+You can specify the format in which the image has to be saved by passing the format as a parameter in the `Save` method, as shown in the following code sample.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
- editor.Save("png", default(Size), null);
+using System.Windows;
+using Syncfusion.UI.Xaml.ImageEditor;
+
+editor.Save("png", default(Size), null);
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ## Reset
 
-To reset the changes made, click the Reset icon in the toolbar. To programmatically reset, use the following code.
+To reset the changes, click the **Reset** icon in the toolbar. To reset programmatically, use the following code.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight C# %} 
+{% highlight C# %}
+
+using Syncfusion.UI.Xaml.ImageEditor;
 
 editor.Reset();
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ## Events
 
-### Saving an events
+### Saving events
 
-Image editor has the following two events:
+The image editor has the following two events:
 
-* [`ImageSaving`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html)
-* [`ImageSaved`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html)
+* [`ImageSaving`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageSaving)
+* [`ImageSaved`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageSaved)
 
 ### Image saving
 
-This event occurs before the image is saved to the destination location. [`ImageSavingEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs.html) is the parameter. This argument contains the following two properties:
+This event occurs before the image is saved to the destination location. [`ImageSavingEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs.html) is the parameter. This argument contains the following three properties:
 
 * `Cancel` - Cancels the saving functionality.
 * [`Stream`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs.html#Syncfusion_UI_Xaml_ImageEditor_ImageSavingEventArgs__ctor_System_IO_Stream_) - Stream of the image that is going to be saved.
-* `FileName` - You can save the image in the specified name using the `ImageSaving` event. 
+* `FileName` - Specifies the name with which the image will be saved. You can override the file name in the `ImageSaving` event.
 
-Hence, you can control the saving using the `Cancel` property, and you can also access the stream as needed.
+You can control the saving operation using the `Cancel` property, and you can also access the stream as needed.
 
-The following code cancels the default saving and saves the stream in the specified location.
+The following code sample cancels the default saving and saves the stream to the specified location.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 
-        <editor:SfImageEditor x:Name="editor" ImageSaving="editor_ImageSaving" ImageSource="Assets\Buldingimage.jpeg">
-        </editor:SfImageEditor>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:editor="clr-namespace:Syncfusion.UI.Xaml.ImageEditor;assembly=Syncfusion.SfImageEditor.WPF">
+    <Grid>
+        <editor:SfImageEditor x:Name="editor"
+                              ImageSaving="Editor_ImageSaving"
+                              ImageSource="Assets\Buldingimage.jpeg" />
+    </Grid>
+</Window>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
-        private void Editor_ImageSaving(object sender, ImageSavingEventArgs args)
-        {
-            args.Cancel = true; 
-            FileStream stream = new FileStream(@"E:\Images\Resized.jpg", FileMode.Create);
-            args.Stream.CopyTo(stream);
-            stream.Seek(0, 0);
-            args.FileName = "SavedImage";
-        }
+using System.IO;
+using Syncfusion.UI.Xaml.ImageEditor;
+
+private void Editor_ImageSaving(object sender, ImageSavingEventArgs args)
+{
+    args.Cancel = true;
+    FileStream stream = new FileStream(@"E:\Images\Resized.jpg", FileMode.Create);
+    args.Stream.CopyTo(stream);
+    stream.Seek(0, 0);
+    args.FileName = "SavedImage";
+}
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ### Image saved
 
-This event occurs after the image has been saved to the destination location. The [`ImageSavedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavedEventArgs.html) will be the parameter. This parameter contains the [`Location`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavedEventArgs.html#Syncfusion_UI_Xaml_ImageEditor_ImageSavedEventArgs_Location) property, which specifies the location in which image is saved.
+This event occurs after the image has been saved to the destination location. [`ImageSavedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavedEventArgs.html) is the parameter. It contains the [`Location`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavedEventArgs.html#Syncfusion_UI_Xaml_ImageEditor_ImageSavedEventArgs_Location) property, which specifies the location in which the image is saved.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
-  private void Editor_ImageSaved(object sender, ImageSavedEventArgs args)
-        {
-            string filePath = args.Location;
-        }
+using Syncfusion.UI.Xaml.ImageEditor;
+
+private void Editor_ImageSaved(object sender, ImageSavedEventArgs args)
+{
+    string filePath = args.Location;
+}
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ### Reset events
 
 The Reset functionality has the following two events:
 
-* [`BeginReset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html)
-* [`EndReset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html)
+* [`BeginReset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_BeginReset)
+* [`EndReset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_EndReset)
 
 ### Begin reset
 
-This event occurs before resetting the changes. Hence, you can control the reset operation using the Cancel property in the [`BeginResetEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.BeginResetEventArgs.html).
+This event occurs before the changes are reset. You can cancel the reset operation using the `Cancel` property in [`BeginResetEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.BeginResetEventArgs.html).
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
-  private void Editor_BeginReset(object sender, BeginResetEventArgs e)
-        {
-            e.Cancel = true;
-        }
+using Syncfusion.UI.Xaml.ImageEditor;
+
+private void Editor_BeginReset(object sender, BeginResetEventArgs e)
+{
+    e.Cancel = true;
+}
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ### End reset
 
 This event occurs after the reset function has been completed.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
-  private void Editor_EndReset(object sender, EndResetEventArgs e)
-        {
+using Syncfusion.UI.Xaml.ImageEditor;
 
-        }
+private void Editor_EndReset(object sender, EndResetEventArgs e)
+{
+}
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ## See also
 
-[How to capture and save signature using the image editor](https://support.syncfusion.com/kb/article/9774/how-to-capture-and-save-signature-using-the-image-editor)
+[How to capture and save a signature using the image editor](https://support.syncfusion.com/kb/article/9774/how-to-capture-and-save-signature-using-the-image-editor)
