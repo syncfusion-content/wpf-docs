@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 # Month View in WPF Scheduler (SfScheduler)
-The month view of the scheduler displays the days of a specific month and current month, by default initially. The current date color is differentiated from other dates of the current month.
+The month view of the scheduler displays the days of a specific month; the current month is shown by default initially. The current date is highlighted differently from other dates of the current month.
 
 ## Month agenda view
 The scheduler month view displays a divided agenda view that is used to show the selected date’s appointments below the month. Show the agenda view by setting the [ShowAgendaView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_ShowAgendaView) property to `true` in the [MonthViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).

@@ -7,10 +7,10 @@ control: SfScheduler
 documentation: ug
 ---
 # Reminder in WPF Scheduler (SfScheduler)
-[WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) alerts you for a particular appointment with a reminder window when enabling the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for the reminder appointments.
+[WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) alerts you for a particular appointment with a reminder window when enabling the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property. The reminder window supports `Dismiss`, `DismissAll`, or setting the `SnoozeTime` for the reminder appointments.
 
 ## Enable reminder
-Reminder can be set by setting the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property to `true.` The reminder time can be set using the [Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders) property of [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html).
+Reminder can be set by setting the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property to `true`. The reminder time can be set using the [Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders) property of [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -109,7 +109,7 @@ namespace GettingStarted
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/appointment-reminders-wpf-scheduler)
 
 ## Creating business object for reminder  
-`Reminders` supports to map the custom object with the [ScheduleAppointment.Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders).
+`Reminders` supports mapping the custom object with the [ScheduleAppointment.Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders).
 
 {% tabs %}
 {% highlight c#%}
@@ -177,7 +177,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-Map those properties of the `Meeting` class with the [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control by using the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) and map `CustomReminder` properties with `SchedulerReminder` by using the `ReminderMapping.`
+Map the properties of the `Meeting` class with the [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control by using the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) and map `CustomReminder` properties with `SchedulerReminder` by using the `ReminderMapping`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -272,7 +272,8 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## ReminderAlertActionChanged events
+
+## ReminderAlertActionChanged event
 
 The Scheduler notifies by the [ReminderAlertActionChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ReminderAlertActionChanged) when appointment reminders' dismiss, dismiss all, or snooze action is changed in the Scheduler reminder alert window.
 The [ReminderAlertActionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ReminderAlertActionChangedEventArgs.html) has following properties which provides information for the `ReminderAlertActionChanged` event.
@@ -318,4 +319,4 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For information on appointment data binding, see [Appointments](appointments.md).
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For information on appointment data binding, see [Appointments](appointments.md).

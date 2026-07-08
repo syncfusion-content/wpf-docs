@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Header in WPF Scheduler (SfScheduler)
-Change the header height, date format and appearance of [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
+Change the header height, date format, and appearance of the [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
 ## Header height
 Change the scheduler header height by using [HeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_HeaderHeight) property of SfScheduler. By default, the header height is 50.
@@ -47,7 +47,7 @@ namespace GettingStarted
 ![WPF Scheduler header ViewHeaderHeight](Header_Images/HeaderHeight.png)
 
 ## Header date format
-Change the Scheduler header date format of scheduler by using the  [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_HeaderDateFormat) property of SfScheduler. By default, the header date format is `MMMM yyyy`.
+Change the Scheduler header date format by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_HeaderDateFormat) property of SfScheduler. By default, the header date format is `MMMM yyyy`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -140,4 +140,4 @@ Customize header appearance of scheduler by using [HeaderTemplate](https://help.
 
 ![WPF Scheduler header HeaderTemplate](Header_Images/HeaderTemplate.png)
 
-N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For an overview of scheduler features, see [Overview](overview.md).
+N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For an overview of scheduler features, see [Overview](overview.md).

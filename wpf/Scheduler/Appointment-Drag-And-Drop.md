@@ -7,10 +7,10 @@ control: SfScheduler
 documentation: ug
 ---
 # Appointment drag and drop in WPF Scheduler (SfScheduler)
-The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) supports to reschedule the appointment by performing the drag and drop operation. 
+The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) supports rescheduling an appointment by performing the drag and drop operation. 
 
 ## Disable drag and drop
-The Scheduler supports to disable the appointment drag and drop by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property except `DragDrop`. In this case, appointment drag & drop will not be able to perform. 
+The Scheduler supports disabling the appointment drag and drop by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property except `DragDrop`. In this case, appointment drag & drop cannot be performed. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -44,7 +44,7 @@ namespace GettingStarted
 {% endtabs %}
 
 ## Show/Hide the time indicator on appointment dragging
-Show or hide the time indicator at a specific time when to drag the appointment by using the [ShowTimeIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_ShowTimeIndicator) property of [DragDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) is set to true. 
+Show or hide the time indicator at a specific time when dragging the appointment by using the [ShowTimeIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_ShowTimeIndicator) property of [DragDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) is set to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -203,4 +203,4 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %} 
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For more information on appointment editing flags, see [Appointment editing](appointment-editing.md).
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For more information on appointment editing flags, see [Appointment editing](appointment-editing.md).

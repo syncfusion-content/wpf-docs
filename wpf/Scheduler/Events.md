@@ -11,12 +11,12 @@ documentation: ug
 
 ## CellTapped
 
-The [CellTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs when the user clicks or touches the cell in Scheduler.
+The [CellTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs when the user clicks or touches a cell in Scheduler.
 This event receives two arguments namely `this` that handles `SfScheduler` and [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html) as objects.
 
 The [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html) object contains the following properties:
 
-* [Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_Appointment) - returns Tapped appointment values.
+* [Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_Appointment) - returns the tapped appointment values.
 
     1. If [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSourceProperty) added with custom business object then tapped custom Appointment details can get by using Appointment [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Data) property in Cell tapped arguments. 
 
@@ -24,7 +24,7 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 
     3. The appointment details get for month view if [AppointmentDisplaymode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayMode) as [Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_Appointment), or else it will be null for month view.
 * [Appointments](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_Appointments)- returns Tapped Month cell appointments values if AppointmentDisplayMode as indicator. Tapped Month Cell has a Recurrence appointment it will return the parent recurrence appointment values. It will be null for Day or Week or WorkWeek views.
-* [IsMoreAppointments](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_IsMoreAppointments)- specifies whether more appointments are tapped or not in month view. It will be applicable only for Month view which has AppointmentDisplaymode as Appointment.
+* [IsMoreAppointments](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_IsMoreAppointments)- specifies whether more appointments are tapped in month view. It will be applicable only for Month view which has AppointmentDisplaymode as Appointment.
 * [CancelNavigation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_CancelNavigation)- specifies whether day view navigation should be disabled when clicking more appointments in month view. It will be applicable for month view which has AppointmentDisplaymode as Appointment and click the More appointments in month cell.
 * [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_DateTime)- gets the date-time of the tapped cell.
 * [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_TimeInterval)- gets the date-time interval of the tapped cell. It is not applicable for month view.
@@ -193,8 +193,8 @@ The [SelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 * [OldValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_SelectionChangedEventArgs_OldValue) - gets an old selected date.
 * [NewValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_SelectionChangedEventArgs_NewValue)- gets a new selected date.
-* `OldResource` - gets a old selected resource details.
-* `newResource` - gets a new selected resource details.
+* `OldResource` - gets the old selected resource details.
+* `newResource` - gets the new selected resource details.
 
 ## SelectionChanging 
 
@@ -204,8 +204,8 @@ The [SelectionChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.S
 
 * [OldValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_SelectionChangingEventArgs_OldValue) - gets an old selected date.
 * [NewValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_SelectionChangingEventArgs_NewValue)- gets a new selected date.
-* `OldResource` - gets a old selected resource details.
-* `newResource` - gets a new selected resource details.
+* `OldResource` - gets the old selected resource details.
+* `newResource` - gets the new selected resource details.
 
 {% tabs %}
 {% highlight xaml %}
@@ -434,7 +434,7 @@ namespace GettingStarted
 
 ## AppointmentTapped
 
-The [AppointmentTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs when schedule appointments get tapped in all views. This event receives two arguments namely `this` that handles `SfScheduler` and [AppointmentTappedArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html) as objects.
+The [AppointmentTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs when an appointment is tapped in any view. This event receives two arguments namely `this` that handles `SfScheduler` and [AppointmentTappedArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html) as objects.
 
 The [AppointmentTappedArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html) object contains the following properties:
 
@@ -478,4 +478,4 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
