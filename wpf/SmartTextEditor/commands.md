@@ -34,7 +34,7 @@ The command infrastructure described in this page is available in the `Syncfusio
 Before you wire up `TextChangedCommand` in your view, complete the following steps:
 
 1. Add a reference to the `Syncfusion.SfSmartComponents.WPF` assembly in your WPF project (the same NuGet package installed in the Getting Started walkthrough).
-2. In your XAML page, declare the `Syncfusion.UI.Xaml.SmartComponents` namespace (for example, as `xmlns:smarttexteditor`) so the `SfSmartTextEditor` element and its `TextChangedCommand` property resolve.
+2. In your XAML page, declare the `Syncfusion.UI.Xaml.SmartComponents` namespace.so the `SfSmartTextEditor` element and its `TextChangedCommand` property resolve.
 3. If you bind `TextChangedCommand` to a property on a view model or code-behind class, make sure the binding source (the `DataContext`) exposes a property of type `System.Windows.Input.ICommand` named `TextChangedCommand` (or matching the binding path you use in XAML). Add the `using System.Windows.Input;` directive in the C# file that defines the command property.
 4. If you are using a third-party `ICommand` implementation such as `RelayCommand` or `DelegateCommand`, install the corresponding NuGet package (for example, `CommunityToolkit.Mvvm`) and add the required `using` directive for that namespace. The `Command` type referenced in the sample below is a placeholder — substitute it with the `ICommand` implementation available in your project.
 
