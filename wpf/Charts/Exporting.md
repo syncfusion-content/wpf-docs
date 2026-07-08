@@ -97,10 +97,10 @@ chart.Save("Chart.png");
 
 {% endhighlight  %}
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Exporting) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Exporting) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.
 
 ## See also
 
-[`How to export chart as Image?`](https://help.syncfusion.com/wpf/charts/exporting)
-[`How to print the chart?`](https://help.syncfusion.com/wpf/charts/printing)
-[`How to read image byte while rendering chart?`](https://www.syncfusion.com/kb/2584/how-to-read-image-byte-while-rendering-chart)
+* [`How to export the multiple WPF Charts`](https://support.syncfusion.com/kb/article/10686/how-to-export-the-multiple-wpf-charts)
+* [`How to export multiple WPF Charts using MVVM-Compatible`](https://support.syncfusion.com/kb/article/11481/how-to-export-multiple-wpf-charts-using-mvvm-compatible)
+* [`How to read image byte while rendering a WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/2774/how-to-read-image-byte-while-rendering-a-wpf-chart-sfchart)

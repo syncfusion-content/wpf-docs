@@ -24,10 +24,12 @@ You can hold and resume the series updates in dynamic update scenarios using the
 [`ResumeSeriesNotification`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ResumeSeriesNotification)
 
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Performance) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Performance) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.
 
 ## See also
 
-[`How to create a real time Chart using MVVM in WPF?`](https://support.syncfusion.com/kb/article/10039/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
+* [`How to improve the performance while resizing the WPF chart window`](https://support.syncfusion.com/kb/article/12224/how-to-improve-the-performance-while-resizing-the-wpf-chart-window)
+* [`How to perform lazy loading in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/14567/how-to-perform-lazy-loading-in-wpf-chart-sfchart)
+* [`Comparison of line series, fast line series, and fast line bitmap series in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/6191/comparison-of-line-series-fast-line-series-and-fast-line-bitmap-series-in-wpf-chart-sfchart)
 
 

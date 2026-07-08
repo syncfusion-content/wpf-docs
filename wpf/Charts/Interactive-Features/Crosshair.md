@@ -35,7 +35,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-To view the axis labels then set the [`ShowTrackBallInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackBallInfo) property to true as in the below code snippet.
+To view the axis labels, set the [`ShowTrackBallInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackBallInfo) property to `true` as in the below code snippet.
 
 {% tabs %}
 

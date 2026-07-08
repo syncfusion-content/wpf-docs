@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zooming and Panning in WPF Charts control | Syncfusion
-description: Learn here all about Zooming and Panning support in Syncfusion® WPF Charts (SfChart) control and more.
+description: Learn here all about Zooming and Panning support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -40,7 +40,7 @@ chart.Behaviors.Add(zooming);
 
 ## Zooming the ChartArea
 
-**Zooming** **by** **setting** **ZoomFactor** **and** **ZoomPosition**
+**Zooming by** **setting ZoomFactor** **and ZoomPosition**
 
 [`ZoomFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_ZoomFactor) defines the percentage of visible range from the total range of axis values. [`ZoomPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_ZoomPosition) defines the ranges of values that need to be displayed as a result of [`ZoomFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_ZoomFactor). 
 
@@ -74,7 +74,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Zooming support in WPF Chart](Interactive-Features_images/Interactive-Features_img24.jpeg)
 
-**Mouse** **Wheel** **Zooming**
+**Mouse Wheel** **Zooming**
 
 Zooming can be performed by mouse wheel action by setting [`EnableMouseWheelZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableMouseWheelZooming) property to true.
 
@@ -101,7 +101,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-**Pinch** **Zooming**
+**Pinch Zooming**
 
 If you want to zoom using fingers by touch, then you have to set [`EnablePinchZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnablePinchZooming) property to true as shown in the below code snippet.
 
@@ -128,7 +128,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-**Zooming** **Relative** **to** **Cursor**
+**Zooming Relative** **to Cursor**
 
 To enable the zooming relative to cursor position you can set [`ZoomRelativeToCursor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ZoomRelativeToCursor) property to true. This support is applicable only for mouse wheel zooming.
 
@@ -187,11 +187,11 @@ chart.Behaviors.Add(zooming);
 ![Selection zooming support in WPF Chart](Interactive-Features_images/Interactive-Features_img25.jpeg)
 
 
-**Customization** **of** **Selection** **Rectangle**
+**Customization of** **Selection Rectangle**
 
 Selection Rectangle can be customized by setting the following properties 
 
-* [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Fill)-Represents the brush filled in selection rectangle. 
+* [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Fill) -Represents the brush filled in selection rectangle. 
 * [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Stroke)- Represents the outer line color of selection rectangle.
 * [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_StrokeThickness)- Represents the selection rectangle outer line thickness. 
 
@@ -231,7 +231,7 @@ chart.Behaviors.Add(zooming);
 ![Customizing selection rectangle support in WPF Chart](Interactive-Features_images/Interactive-Features_img26.jpeg)
 
 
-**Zooming** **Mode**
+**Zooming Mode**
 
 The zooming can be done both horizontally and vertically. The zooming direction is defined using [`ZoomMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ZoomMode) property.
 
@@ -295,7 +295,7 @@ chart.Behaviors.Add(zooming);
 
 ![Zoom mode support in WPF Chart](Interactive-Features_images/Interactive-Features_img28.jpeg)
 
-**Maximum** **Zoom** **Level**
+**Maximum Zoom** **Level**
 
 You can also limit the zooming by setting [`MaximumZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_MaximumZoomLevel) property as shown in the following code snippet.
 
@@ -355,7 +355,7 @@ The following image depicts the default view of the zooming toolbar.
 ![Zooming toolbar in WPF Chart](Interactive-Features_images/zooming_toolbar.png)
 
 
-**Positioning** **the** **zooming** **toolbar**
+**Positioning the** **zooming toolbar**
 
 Zooming Toolbar can be positioned using the [`HorizontalPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_HorizontalPosition) and [`VerticalPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_VerticalPosition) properties.The following code demonstrates the positioning of the toolbar.
 
@@ -387,15 +387,15 @@ chart.Behaviors.Add(zooming);
 ![Positioning the zooming toolbar in WPF Chart](Interactive-Features_images/positioning_zooming_toolbar.png)
 
 
-**Customization** **of** **Zooming** **Toolbar**
+**Customization of** **Zooming Toolbar**
 
 Zooming Toolbar can be customized using the following APIs:
 
 * [`ToolBarBackground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarBackground)- Represents the zooming toolkit background.
 * [`ToolBarItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItems)- Collection value that contains zooming toolkit items. 
-* [`ToolBarItemMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemMargin)-Represents the margin for the toolbar item.
+* [`ToolBarItemMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemMargin) -Represents the margin for the toolbar item.
 * [`ToolBarItemWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemWidth) -Represents the width of the toolbar item.
-* [`ToolBarItemHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemHeight)-Represents the height of the toolbar item.
+* [`ToolBarItemHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemHeight) -Represents the height of the toolbar item.
 
 {% tabs %}
 
@@ -435,7 +435,7 @@ chart.Behaviors.Add(zooming);
 ![Customization of zooming toolbar in WPF Chart](Interactive-Features_images/customization_zooming_toolbar.png)
 
 
-**Orientation** **of** **Zooming** **Toolbar**
+**Orientation of** **Zooming Toolbar**
 
 Zooming toolbar orientation is horizontal by default.You can change the orientation to vertical by setting 
 
@@ -602,7 +602,11 @@ The [`ResetZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 
 ## See also
 
-[`How to improve performance while zooming by using scrollbar?`](https://www.syncfusion.com/kb/5489/how-to-improve-performance-while-zooming-by-using-scrollbar)
-[`How to set default zoom/pan position for charts?`](https://www.syncfusion.com/kb/2904/how-to-set-default-zoom-pan-position-for-charts)
-[`How to display the visible range of labels while zooming?`](https://www.syncfusion.com/kb/2712/how-to-display-the-visible-range-of-labels-while-zooming )
-[`How to reset zooming?`](https://www.syncfusion.com/kb/2562/how-to-reset-zooming)
+* [`How to synchronize panning in WPF Charts`](https://support.syncfusion.com/kb/article/18329/how-to-synchronize-panning-in-wpf-charts)
+* [`How to set zoom and pan position for WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/3138/how-to-set-zoom-and-pan-position-for-wpf-chart-sfchart)
+* [`How to zoom in and out of a WPF Chart in the scroll viewer`](https://support.syncfusion.com/kb/article/12380/how-to-zoom-in-and-out-of-a-wpf-chart-in-the-scroll-viewer)
+* [`How to keep the axis interval constant while zooming in WPF Chart`](https://support.syncfusion.com/kb/article/12238/how-to-keep-the-axis-interval-constant-while-zooming-in-wpf-chart)
+* [`How to display the visible range of axis labels while zooming in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/2973/how-to-display-the-visible-range-of-axis-labels-while-zooming-in-wpf-chart-sfchart)
+* [`How to improve performance while zooming by using scrollbar in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/5107/how-to-improve-performance-while-zooming-by-using-scrollbar-in-wpf-chart-sfchart)
+* [`How to apply zooming in 3D Charts using scrollbar`](https://support.syncfusion.com/kb/article/10229/how-to-apply-zooming-in-3d-charts-using-scrollbar)
+* [`How to reset zooming in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/2787/how-to-reset-zooming-in-wpf-chart-sfchart)

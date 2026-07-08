@@ -58,7 +58,7 @@ chart.Annotations.Add(annotation);
 
 Annotations can be positioned in plot area based on [`X1`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_X1) and [`Y1`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Y1)  properties and for image and shape annotations you need to specify [`X2`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Y2) properties. These X and Y values can be specified with axis units or pixel units and this can be identified using [`CoordinateUnit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) property.
 
-**Positioning** **based** **on** **CoordinateUnit** **as** **Axis**
+**Positioning based** **on CoordinateUnit** **as Axis**
 
 To position the annotation based on axis, set the X1 and Y1, X2 and Y2 properties based on axis range values, if needed, set the CoordinateUnit value as [`Axis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html).
 
@@ -97,7 +97,7 @@ RectangleAnnotation annotation = new RectangleAnnotation()
 
 ![Changing Annotation Position based on CoordinateUnit as Axis in WPF Chart](Annotation_images/wpf-chart-annotation-based-on-coordinates.jpg)
 
-**Positioning** **based** **on** **CoordinateUnit** **as** **Pixels**
+**Positioning based** **on CoordinateUnit** **as Pixels**
 
 To position based on the pixel values you have to set the CoordinateUnit as Pixels and the pixel values in X1 and Y1, X2 and Y2 properties in Annotation.
 
@@ -140,7 +140,7 @@ chart.Annotations.Add(annotation);
 
 ![Changing Annotation Position based on CoordinateUnit as Pixel in WPF Chart](Annotation_images/wpf-chart-axis-based-on-coordinate-pixel.jpg)
 
-**Adding** **Annotation** **for** **MultipleAxes**
+**Adding Annotation** **for MultipleAxes**
 
 You can also add annotation for a particular axis when there is multiple axes using [`XAxisName`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_XAxisName) and [`YAxisName`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_YAxisName) properties as in the below code snippet.
 
@@ -612,9 +612,9 @@ LineAnnotation ellipse = new LineAnnotation()
 
 ![WPF Chart displays Arrow in Line Annotation](Annotation_images/wpf-chart-line-annotation-with-arrow.jpg)
 
-**Displaying** **Axis** **Labels** **for** **LineAnnotation**
+**Displaying Axis** **Labels for** **LineAnnotation**
 
-[`VerticalLineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.VerticalLineAnnotation.html#) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HorizontalLineAnnotation.html#) also displays the axis labels in which the line is placed. This feature can be enabled by setting [`ShowAxisLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html#Syncfusion_UI_Xaml_Charts_StraightLineAnnotation_ShowAxisLabel) property to true as in the below code snippet.
+[`VerticalLineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.VerticalLineAnnotation.html#) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HorizontalLineAnnotation.html#) also displays the axis labels in which the line is placed. This feature can be enabled by setting [`ShowAxisLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html#Syncfusion_UI_Xaml_Charts_StraightLineAnnotation_ShowAxisLabel) property to `true` as in the below code snippet.
 
 
 {% tabs %}
@@ -831,7 +831,7 @@ The following API’s are used for dragging and resizing the annotation
 
 * [`ResizingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SolidShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_SolidShapeAnnotation_ResizingMode)- Represents the resizing direction for the annotation. 
 
-**Dragging** **the** **Annotation**
+**Dragging the** **Annotation**
 
 The following code example demonstrates the dragging the rectangle annotation.
 
@@ -875,9 +875,9 @@ RectangleAnnotation an = new RectangleAnnotation()
 
 Also, the direction of dragging can be customized by using [`DraggingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_DraggingMode) property.
 
-**Resizing** **the** **Annotation**
+**Resizing the** **Annotation**
 
-You can resize the annotation by enabling [`CanResize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_CanResize) property to True as in the below code snippet.
+You can resize the annotation by enabling [`CanResize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_CanResize) property to `true` as in the below code snippet.
 
 {% tabs %}
 
@@ -1035,7 +1035,7 @@ chart.Annotations.Add(annotation);
 
 ## Annotation Clipping
 
-SfChart allows you to clip the annotation if the annotation crosses the boundary by setting [`EnableClipping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_EnableClipping) property to True as in the below code snippet.
+SfChart allows you to clip the annotation if the annotation crosses the boundary by setting [`EnableClipping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_EnableClipping) property to `true` as in the below code snippet.
 
 {% tabs %}
 
@@ -1199,12 +1199,17 @@ SfChart provides the following events in [`Annotation`](https://help.syncfusion.
 * [`MouseMove`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_MouseMove) - Occurs when the mouse pointer moves while over the annotation.
 * [`MouseLeave`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_MouseLeave) - Occurs when the mouse pointer leaves the bounds of the annotation.
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Annotations) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Annotations) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.
 
 ## See also
 
-[`How to display trackball label or tooltip over chart annotation?`](https://support.syncfusion.com/kb/article/9592/how-to-display-trackball-label-or-tooltip-over-chart-annotation)
-[`How to add annotations by using MVVM binding?`](https://support.syncfusion.com/kb/article/4632/how-to-add-annotations-by-using-mvvm-binding-in-wpf-chart-sfchart)
-[`How to change the cursor of the annotation?`](https://support.syncfusion.com/kb/article/4574/how-to-change-the-cursor-of-annotation-in-wpf-chart-sfchart)
-[`How to bind the ViewModel property to content template of a TextAnnotation?`](https://support.syncfusion.com/kb/article/3009/how-to-bind-the-content-template-of-text-annotation-in-wpf-chart)
-[`How to draw horizontal line in chart?`](https://support.syncfusion.com/kb/article/3020/how-to-draw-horizontal-line-in-wpf-chart-sfchart)
+* [`How to create and dynamically update target line for WPF Chart`](https://support.syncfusion.com/kb/article/18542/how-to-create-and-dynamically-update-target-line-for-wpf-chart)
+* [`How to add annotation in axis label click in WPF SfChart`](https://support.syncfusion.com/kb/article/18485/how-to-add-annotation-in-axis-label-click-in-wpf-sfchart)
+* [`How to bind content template of text annotation in WPF Chart`](https://support.syncfusion.com/kb/article/3009/how-to-bind-content-template-of-text-annotation-in-wpf-chart)
+* [`How to change the cursor of annotation in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/4574/how-to-change-the-cursor-of-annotation-in-wpf-chart-sfchart)
+* [`How to create a custom annotation in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/12315/how-to-create-a-custom-annotation-in-wpf-chart-sfchart)
+* [`How to fit the rectangle text annotation in WPF Charts`](https://support.syncfusion.com/kb/article/10602/how-to-fit-the-rectangle-text-annotation-in-wpf-charts)
+* [`How to display trackball label or tooltip over chart annotation`](https://support.syncfusion.com/kb/article/9592/how-to-display-trackball-label-or-tooltip-over-chart-annotation)
+* [`How to add watermark in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/4952/how-to-add-watermark-in-wpf-chart-sfchart-)
+* [`How to add annotations by using mvvm binding in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/4632/how-to-add-annotations-by-using-mvvm-binding-in-wpf-chart-sfchart)
+* [`How to draw horizontal line in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/3020/how-to-draw-horizontal-line-in-wpf-chart-sfchart)
