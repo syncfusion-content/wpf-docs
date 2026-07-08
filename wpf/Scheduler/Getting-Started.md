@@ -23,7 +23,7 @@ Before getting started with the `SfScheduler` control, ensure the following prer
 5. The Syncfusion WPF NuGet package `Syncfusion.SfScheduler.WPF` (version **18.2.0.45** or later) is installed in the project.
 6. To enable visual design-time support, the Syncfusion WPF Visual Studio extension ([Visual Studio extensions](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/overview)) is installed.
 
-N> For step-by-step instructions on creating a WPF project, adding assembly references, and configuring the application for Syncfusion controls, refer to the [Getting Started with WPF](https://help.syncfusion.com/wpf/overview) and [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfscheduler) documentation.
+N> For step-by-step instructions on creating a WPF project, adding assembly references, and configuring the application for Syncfusion controls, refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfscheduler) documentation.
 
 ## Assembly deployment
 Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfscheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages) . Use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.

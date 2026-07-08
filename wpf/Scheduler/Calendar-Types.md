@@ -2,7 +2,7 @@
 layout: post
 title: Calendar Types in WPF Scheduler control | Syncfusion
 description: Learn here all about how to change the calendar types in the scheduler (SfScheduler) control, its elements, and more.
-platform: WPF
+platform: wpf
 control: SfScheduler
 documentation: ug
 ---
