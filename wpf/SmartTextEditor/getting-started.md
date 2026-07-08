@@ -205,7 +205,7 @@ The following are common issues when setting up the WPF Smart Text Editor. Refer
 - **Offline-only behavior is used unexpectedly**:
   - This indicates that the AI service is not configured, or the registration in `App.xaml.cs` failed silently. Confirm the packages in **Step 5** are installed and the call to `ConfigureSyncfusionAIServices()` runs.
 - **The control does not appear or throws a `XamlParseException`**:
-  - Verify that the `Syncfusion.SfSmartComponents.WPF` assembly is referenced and the `xmlns:smarttexteditor` (or equivalent) namespace matches the installed assembly's casing.
+  - Verify that the `Syncfusion.SfSmartComponents.WPF` assembly is referenced and the namespace matches the installed assembly's casing.
 - **Suggestions are generated but never accepted**:
   - Confirm the focus is on the editor when pressing **Tab** or **Right Arrow**.
 
