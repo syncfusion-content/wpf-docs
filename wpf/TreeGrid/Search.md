@@ -9,7 +9,7 @@ documentation: ug
 
 # Search in WPF TreeGrid (SfTreeGrid)
 
-[WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) control allows you to search the data displayed in the SfTreeGrid. You can search the data by using `SearchController.Search` method.
+[WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) control allows you to search the data displayed in the SfTreeGrid. You can search the data by using [SearchController.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_Search_System_String_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -23,7 +23,11 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 ## SearchScope
 
+<<<<<<< Wpf_Grid_UG_Updates
 You can control where the search is applied in the SfTreeGrid using the `SearchController.SearchScope` property. By default, the `SearchScope` value is set to `Both`.
+=======
+You can control where the search is applied in the SfTreeGrid using the [SearchController.SearchScope](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_SearchScope) property. By default SearchScope value set as Both.
+>>>>>>> hotfix/hotfix-v34.1.29
 
 * `Both` – Search will be applied to both RootNodes and ChildNodes in the SfTreeGrid.
 
@@ -44,7 +48,7 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 ## Filtering
 
-You can enable filter based on search by setting `SearchController.AllowFiltering` property to true.
+You can enable filter based on search by setting [SearchController.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_AllowFiltering) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,9 +61,9 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 ![Enabling Filter based on Search in WPF TreeGrid](Search_images/wpf-treegrid-filter-based-on-search.png)
 
-N> In Search, filtering is applied based on the `FilterLevel`.
+N> In Search, filtering is applied based on the [FilterLevel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.FilterLevel.html).
 
-You can search the data with the case-sensitivity by setting `SearchController.AllowCaseSensitiveSearch` property to true.
+You can search the data with the case-sensitivity by setting [SearchController.AllowCaseSensitiveSearch](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_AllowCaseSensitiveSearch) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -72,7 +76,7 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 ## Changing Search Highlight Background
 
-In WPF TreeGrid (SfTreeGrid), you can change the search text highlighting color by setting `SearchController.MatchedCellBackground` property. 
+In WPF TreeGrid (SfTreeGrid), you can change the search text highlighting color by setting [SearchController.MatchedCellBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_MatchedCellBackground) property
 
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +91,7 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 ## Changing foreground for search highlight
 
-In WPF TreeGrid (SfTreeGrid), you can change the foreground color for search text by setting the `SearchController.MatchedCellForeground` property. 
+In WPF TreeGrid (SfTreeGrid), you can change the foreground color for search text by setting the [SearchController.MatchedCellForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_MatchedCellForeground) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -102,7 +106,7 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 ## Navigating cells based on search text
 
-You can navigate to the cells contains the SearchText using `SearchController.FindNext` and `SearchController.FindPrevious` methods.
+You can navigate to the cells contains the SearchText using [SearchController.FindNext](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_FindNext_System_String_) and [SearchController.FindPrevious](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_FindPrevious_System_String_) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -113,7 +117,7 @@ this.treeGrid.SearchController.FindPrevious(TextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
-You can highlight the currently navigated search text using `SearchController.CurrentMatchedCellBackground` property.
+You can highlight the currently navigated search text using [SearchController.CurrentMatchedCellBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_CurrentMatchedCellBackground) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -126,7 +130,7 @@ this.treeGrid.SearchController.FindNext(TextBox.Text);
 
 ![Highlighting Navigated Search Text in WPF TreeGrid](Search_images/wpf-treegrid-highlight-navigate-search-text.png)
 
-You can highlight the foreground color of current navigated search text by using the `SearchController.CurrentMatchedCellForeground` property.
+You can highlight the foreground color of current navigated search text by using the [SearchController.CurrentMatchedCellForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_CurrentMatchedCellForeground) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -156,7 +160,7 @@ this.treeGrid.SelectionController.MoveCurrentCell(this.treeGrid.SearchController
 
 ## Clear Search
 
-You can clear the search by calling the `SearchController.Clear` method. 
+You can clear the search by calling the [SearchController.Clear](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_Clear) method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -168,7 +172,7 @@ this.treeGrid.SearchController.Clear();
 
 ## Search customization
 
-WPF TreeGrid (SfTreeGrid) process the search operations in `SearchController` class. You can change the default search behaviors by overriding `SearchController` class and set to `SfTreeGrid.SearchController`.
+WPF TreeGrid (SfTreeGrid) process the search operations in [SearchController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html) class. You can change the default search behaviors by overriding `SearchController` class and set to `SfTreeGrid.SearchController`.
 
 {% tabs %}
 {% highlight c# %}
@@ -188,7 +192,7 @@ public class SearchControllerExt : SearchController
 
 ### Search only selected columns
 
-You can search only selected columns by overriding `SearchCell` method of `SearchController`. In the `SearchCell` method, based on `MappingName` you can skip the columns that you don’t want to search. 
+You can search only selected columns by overriding [SearchCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_SearchCell_Syncfusion_UI_Xaml_TreeGrid_TreeDataColumnBase_System_Object_System_Boolean_) method of `SearchController`. In the [SearchCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_SearchCell_Syncfusion_UI_Xaml_TreeGrid_TreeDataColumnBase_System_Object_System_Boolean_) method, based on [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName) you can skip the columns that you don’t want to search. 
 
 In the below code, except `DOJ` column other columns are gets excluded from search. 
 
@@ -223,7 +227,7 @@ public class SearchControllerExt : TreeGridSearchController
 
 ### Select the record based on the SearchText
 
-You can select the records which contains the search text by using `GetRecords` method. 
+You can select the records which contains the search text by using [GetRecords](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_GetRecords) method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -242,7 +246,7 @@ this.treeGrid.SelectedIndex = recordIndex;
 
 ### Search with the TreeGridComboBoxColumn
 
-You can search the data in SfTreeGrid with all the TreeGridColumns which loads TextBlock as display element. To perform the search operation in the [TreeGridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html) you need to customize the `TreeGridComboBoxColumn`.  As it loads the ContentControl in display mode. 
+You can search the data in SfTreeGrid with all the TreeGridColumns which loads TextBlock as display element. To perform the search operation in the [TreeGridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html) you need to customize the [TreeGridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html).  As it loads the ContentControl in display mode. 
 
 {% tabs %}
 {% highlight c# %}
