@@ -9,7 +9,7 @@ documentation: ug
 
 # Map Shape Labels in WPF Maps (SfMap)
 
-Labels for map shapes can be displayed by using the [`LabelPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_LabelPath) of ShapeFileLayer. The value of LabelPath must be a field name specified in the .dbf file corresponding to the shapefile. 
+Labels for map shapes can be displayed by using the [`LabelPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_LabelPath) of the ShapeFileLayer. The value of LabelPath must be a field name specified in the .dbf file corresponding to the shapefile. 
 
 
 <table>
@@ -54,14 +54,14 @@ Gets or sets the field name in the database (.dbf) file.</td></tr>
 
 {% endtabs %}
 
-The labels can also be customized by modifying the [`ItemsTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ItemsTemplate) of ShapeFileLayer. The labels can be accessed by using DBFData as follows:
+The labels can also be customized by modifying the [`ItemsTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ItemsTemplate) of the ShapeFileLayer. The labels can be accessed by using `DbfData` as follows:
 
 {% tabs %}
 
 {% highlight xaml %}
 
       <Grid.Resources>
-            <DataTemplate x:Key="itemtemplate">
+            <DataTemplate x:Key="itemTemplate">
                 <Grid >
                     <TextBlock Text="{Binding DbfData[NAME]}"
                                        FontSize="14" Margin="10 5"/>
@@ -72,7 +72,7 @@ The labels can also be customized by modifying the [`ItemsTemplate`](https://hel
          <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
                 <syncfusion:ShapeFileLayer Uri="DataMarkers.ShapeFiles.world1.shp"
-                                       LabelPath="NAME" ItemsTemplate="{StaticResource itemtemplate}">
+                                       LabelPath="NAME" ItemsTemplate="{StaticResource itemTemplate}">
                    
                 </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>

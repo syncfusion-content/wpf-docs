@@ -9,7 +9,7 @@ documentation: ug
 
 # Populate Data in WPF Maps (SfMap)
 
-This section explains how to populate shape data for providing data input to the maps control and usage of the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ItemsSource) property.
+This section explains how to populate shape data for providing data input to the maps control and the usage of the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ItemsSource) property.
 
 ## Data binding
 
@@ -23,11 +23,11 @@ The following properties in shape layers are used for binding data in the maps c
 
 ### ItemsSource
 
-This is the basic property that exposes data binding for Maps. [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ItemsSource) is the property that accepts the collection type values. For example, the ItemsSource property accepts the ObservableCollections, Lists, and LinqResult values.
+This is the basic property that exposes data binding for Maps. [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ItemsSource) is the property that accepts the collection type values. For example, the ItemsSource property accepts the ObservableCollection, List, and LinqResult values.
 
 ### ShapeIDPath
 
-[`ShapeIDPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeIDPath) is the string type property used to refer to the ID of a shape from the ItemsSource. The ItemsSource property must have a property with name of the ShapeIDPath. The ShapeIDPath and the ShapeIDTableField properties are related to each other (refer to ShapeIDTableField for more details).
+[`ShapeIDPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeIDPath) is the string type property used to refer to the ID of a shape from the ItemsSource. The ItemsSource property must have a property with the name of the ShapeIDPath. The ShapeIDPath and the ShapeIDTableField properties are related to each other (refer to ShapeIDTableField for more details).
 
 ### ShapeIDTableField
 
@@ -39,7 +39,7 @@ The [`ShapeIDTableField`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 ### Role of DBF file in Data Binding
 
-The .dbf file that is included in the main shape file, is required to work with data binding. The .dbf file contains the information about the shapes in the main shape file. Each record in the .dbf file is associated with the each shape in the main file. Shapes in the main file and records in the .dbf file are organized in the same sequence. Therefore, the Nth shape in the main file is associated with Nth record in the .dbf file. A record of the .dbf file can contain the name of the shape or population data or some other statistical data of a geographic shape.
+The .dbf file that is included in the main shape file is required to work with data binding. The .dbf file contains the information about the shapes in the main shape file. Each record in the .dbf file is associated with each shape in the main file. Shapes in the main file and records in the .dbf file are organized in the same sequence. Therefore, the Nth shape in the main file is associated with the Nth record in the .dbf file. A record of the .dbf file can contain the name of the shape or population data or some other statistical data of a geographic shape.
 
 {% tabs %}
 
@@ -90,7 +90,7 @@ The .dbf file that is included in the main shape file, is required to work with 
 
 {% endtabs %}
 
-The following code sample demonstrates referring the United States election data as items source.
+The following code sample demonstrates referring the United States election data as the items source.
 
 {% highlight c# %}
 
@@ -103,7 +103,7 @@ The following code sample demonstrates referring the United States election data
             set { state = value; }
         }
 
-        public string candidate;
+        private string candidate;
         public string Candidate
         {
             get { return candidate; }

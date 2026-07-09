@@ -9,7 +9,7 @@ documentation: ug
 
 # Map Points in WPF Maps (SfMap)
 
-Points are one of the record type in shape file layer. Points are used to specify the specific point in the map. For example, used to specify the capital of countries. Points in the shape file is given as latitude and longitude coordinates in the shapes file. Those points should be converted as MapPoints.
+Points are one of the record types in the shape file layer. Points are used to specify a specific point in the map. For example, used to specify the capital of countries. Points in the shape file are given as latitude and longitude coordinates in the shapes file. Those points should be converted as MapPoints.
 
 ## Customizing the MapPoint
 
@@ -61,7 +61,7 @@ SfMap map = new SfMap();
 
 ## MapPointIcon
 
-[`MapPointIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIcon) is used for customizing points shapes.It can be customized by following shapes:
+[`MapPointIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIcon) is used for customizing point shapes. It can be customized by the following shapes:
 
 * Rectangle
 
@@ -141,7 +141,7 @@ SfMap map = new SfMap();
 
 ## MapPointPopup
 
-MapPointPopup is a popup, displayed when the point is moved to MapPoint. It shows additional information from the object bounded with the MapPoint. You can get the object from dbf file.
+MapPointPopup is a popup, displayed when the point is hovered over the MapPoint. It shows additional information from the object bound with the MapPoint. You can get the object from the dbf file.
 
 ### MapPointPopupTemplate
 

@@ -128,7 +128,7 @@ The default appearance of the Marker can be customized by using the [MarkerTempl
 
 Refer to this [link](https://help.syncfusion.com/wpf/maps/markers) for customizing marker icons, labels, marker alignment, marker selection and events. 
 
-### Adding a multiple layers in OSM
+### Adding multiple layers in OSM
 
 Multiple layers can be added within a single [ImageryLayer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html). To achieve this, add the required layers to the [SubShapeFileLayers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_SubShapeFileLayers) property of the [ImageryLayer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html).
 
@@ -170,8 +170,7 @@ You can enable Bing Maps by setting the [LayerType](https://help.syncfusion.com/
 
 ### Bing Map Key
 
-The [BingMapKey](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapKey) is provided as input to this key property. The Bing Map key can be obtained from 
-[https://www.microsoft.com/en-us/maps/create-a-bing-maps-key](https://www.microsoft.com/en-us/maps/bing-maps/create-a-bing-maps-key).
+The [BingMapKey](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapKey) is provided as input to this key property. The Bing Map key can be obtained from [https://www.microsoft.com/en-us/maps/create-a-bing-maps-key](https://www.microsoft.com/en-us/maps/bing-maps/create-a-bing-maps-key).
 
 The [Maps](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) control supports the following [Bing Maps](https://www.microsoft.com/en-in/bing/features/maps/?msockid=3b94155aeb2660df1b7f03a4ea7b61d3&form=MA13FV) view styles:
 
@@ -241,7 +240,7 @@ this.Content = map;
 
 The following screenshot illustrates the Road view.
 
-'![Bing map Road View image](Map-Providers_images/Bing_map_Road_View_image.jpg)
+![Bing map Road View image](Map-Providers_images/Bing_map_Road_View_image.jpg)
 
 ### AerialWithLabelView
 
