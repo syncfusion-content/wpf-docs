@@ -9,11 +9,11 @@ documentation: ug
 
 # WPF Range Selector (SfDateTimeRangeNavigator) Overview
 
-The date-time range navigator control is a time bound data visualization control. Its purpose is to allow scrolling and navigation through large periods of time. This control can be easily combined with other controls such as chart and grid view to create rich and powerful dashboards.
+The date-time range navigator control is a time-bound data visualization control. Its purpose is to allow scrolling and navigation through large periods of time. This control can be easily combined with other controls such as chart and grid view to create rich and powerful dashboards.
 
 ## Key features
 
 * Supports interactive features such as zooming and scrolling through large data.
 * Calculates smart labels when zooming.
-* Allows users to select a particular region in large period of time.
+* Allows users to select a particular region in a large period of time.
 * Gets the data from a selected region. 

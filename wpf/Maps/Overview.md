@@ -13,7 +13,7 @@ A map is a graphical representation of geographical data. It is used to represen
 
 ## Use case scenario
 
-The Maps control can be used in following cases:
+The Maps control can be used in the following cases:
 
 1. To visualize weather data.
 2. To visualize geographical statistics information.
@@ -24,9 +24,9 @@ The Maps control can be used in following cases:
 ## Key Concepts of Map
 
 
-A map contains a set of elements, including shapes, bubbles, annotations, and data items, that is maintained in layers. ShapeFileLayer is one of the layers that can be used to generate map shapes and bind business objects with them. Bubbles and MapItems enhance the data visualization capabilities of the map with data binding.
+A map contains a set of elements, including shapes, bubbles, annotations, and data items, that are maintained in layers. ShapeFileLayer is one of the layers that can be used to generate map shapes and bind business objects with them. Bubbles and MapItems enhance the data visualization capabilities of the map with data binding.
 
-Tree map-like support provides rich UI for shapes and bubbles. Annotation and CustomDataBinding items shows additional information on the map.
+Tree map-like support provides rich UI for shapes and bubbles. Annotation and CustomDataBinding items show additional information on the map.
 
 Maps also provide multilayer support, which can be added as a sublayer, and shapes such as polygons, polylines, and points can be added to them.
 

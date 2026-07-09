@@ -53,13 +53,13 @@ A KML file can be rendered with the help of the ShapeFileLayer in SfMap. The KML
 
 ## KML Shapes Support in SubShapeFileLayer
 
-A KML file can be rendered with the help of the SubShapeFileLayer in SfMap.The URI of the KML file given in SubShapeFileLayer as follows. 
+A KML file can be rendered with the help of the SubShapeFileLayer in SfMap. The URI of the KML file is given in the SubShapeFileLayer as follows. 
 
 {% highlight xaml %}
 
         <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Uri="KmlImportDemo. ShapeFiles.world1.shp">
+                <syncfusion:ShapeFileLayer Uri="KmlImportDemo.ShapeFiles.world1.shp">
                     <syncfusion:ShapeFileLayer.SubShapeFileLayers>
                         <syncfusion:SubShapeFileLayer Uri="KmlImportDemo.KmlFiles.Eu.kml"/>
                     </syncfusion:ShapeFileLayer.SubShapeFileLayers>

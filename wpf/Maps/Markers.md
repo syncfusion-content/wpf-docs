@@ -15,13 +15,13 @@ Markers are used to show some messages on maps.
 
 Any number of markers can be added to the shape file layer or the imagery layer using the [`Markers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_Markers) property. Each marker contains the following properties:
 
-N> You must create a model that contains properties such as Latitude and Longitude to add a marker in maps. If you want to add text with default marker, add Label property with your model.
+N> You must create a model that contains properties such as Latitude and Longitude to add a marker in maps. If you want to add text with the default marker, add the Label property to your model.
 
 `Label`: Displays some messages on maps.
 
-`Latitude`: Specifies y-axis position of the marker.
+`Latitude`: Specifies the y-axis position of the marker.
 
-`Longitude`: Specifies x-axis position of the marker.
+`Longitude`: Specifies the x-axis position of the marker.
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ N> You must create a model that contains properties such as Latitude and Longitu
         {
             InitializeComponent();
             ViewModel view = new ViewModel();
-            this.DataContext =view;
+            this.DataContext = view;
             SfMap maps = new SfMap();
             ShapeFileLayer shape = new ShapeFileLayer();
             shape.Uri = "Maps.ShapeFiles.world1.shp";
@@ -61,10 +61,10 @@ N> You must create a model that contains properties such as Latitude and Longitu
         {
             this.Models = new ObservableCollection<Model>();
             this.Models.Add(new Model() { Label = "USA", Latitude = "38.8833N", Longitude = "77.0167W" });
-            this.Models.Add(new Model() { Label = "Brazil ", Latitude = "15.7833S", Longitude = "47.8667W" });
-            this.Models.Add(new Model() { Label = "India ", Latitude = "21.0000N", Longitude = "78.0000E" });
-            this.Models.Add(new Model() { Label = "China ", Latitude = "35.0000N", Longitude = "103.0000E" });
-            this.Models.Add(new Model() { Label = "Indonesia ", Latitude = "6.1750S", Longitude = "106.8283E" });
+            this.Models.Add(new Model() { Label = "Brazil", Latitude = "15.7833S", Longitude = "47.8667W" });
+            this.Models.Add(new Model() { Label = "India", Latitude = "21.0000N", Longitude = "78.0000E" });
+            this.Models.Add(new Model() { Label = "China", Latitude = "35.0000N", Longitude = "103.0000E" });
+            this.Models.Add(new Model() { Label = "Indonesia", Latitude = "6.1750S", Longitude = "106.8283E" });
         }
     }
 
@@ -258,7 +258,7 @@ The size and color of marker icons can be customized using the [`MarkerIconSize`
 
 ### Icon types
 
-The shape of a marker icons can be customized using the [`MarkerIconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerIconType) property. The maps control supports the following types of marker icons:
+The shape of a marker icon can be customized using the [`MarkerIconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerIconType) property. The maps control supports the following types of marker icons:
 
 * Circle
 * Diamond
@@ -299,7 +299,7 @@ The shape of a marker icons can be customized using the [`MarkerIconType`](https
 
 ### Setting an image marker icon
 
-You can set the image as marker icon by setting the icon type as an Image and set [`MarkerIconSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerIconSource) to get the image from local path.
+You can set an image as the marker icon by setting the icon type as Image and set [`MarkerIconSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerIconSource) to get the image from a local path.
 
 {% tabs %}
 
@@ -338,7 +338,7 @@ You can set the image as marker icon by setting the icon type as an Image and se
 
 ## Customizing labels
 
-You can customize the marker labels using the [`MarkerLabelFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontSize), [`MarkerLabelForeground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelForeground), [`MarkerLabelFontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontStyle), and [`MarkerLabelFontWeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontWeight) and [`MarkerLabelFontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontFamily) properties.
+You can customize the marker labels using the [`MarkerLabelFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontSize), [`MarkerLabelForeground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelForeground), [`MarkerLabelFontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontStyle), [`MarkerLabelFontWeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontWeight), and [`MarkerLabelFontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontFamily) properties.
 
 {% tabs %}
 
@@ -378,7 +378,7 @@ You can align the maps marker horizontally and vertically using the [`MarkerHori
 
 ### Setting a horizontal alignment
 
-The [`MarkerHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerHorizontalAlignment) property is used to position the marker icon horizontally. The marker icon can be positioned using the following ways:
+The [`MarkerHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerHorizontalAlignment) property is used to position the marker icon horizontally. The marker icon can be positioned in the following ways:
 
 * `Near`: Specifies the near position of the marker icon for the given latitude and longitude values.
 * `Center`: Specifies the center position of the marker icon for the given latitude and longitude values.
@@ -434,7 +434,7 @@ The [`MarkerHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.
 
 ### Setting a vertical alignment
 
-The [`MarkerVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerVerticalAlignment) property is used to position the marker icon vertically. The marker icon can be positioned using the following ways:
+The [`MarkerVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerVerticalAlignment) property is used to position the marker icon vertically. The marker icon can be positioned in the following ways:
 
 * `Near`: Specifies the near position of the marker icon for the given latitude and longitude values.
 * `Center`: Specifies the center position of the marker icon for the given latitude and longitude values.
@@ -493,7 +493,7 @@ N> The default marker icon position for VerticalAlignment and HorizontalAlignmen
 
 ## Selection Mode
 
-If you add any view for marker using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) property from [`MarkerSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html) event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but do not have option to reset the old one. Now, you can achieve this using the [`MarkerSelectionMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerSelectionMode) property. If set selection mode as `Single`, then it will be removed the old view of marker and load the initially rendered marker. If set selection mode as `Multiple`, then the marker template does not reset.
+If you add any view for a marker using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) property from [`MarkerSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html) event, then the corresponding view will be applied to the selected marker. A custom view will be added continuously for all the selected markers, but there is no option to reset the old one. Now, you can achieve this using the [`MarkerSelectionMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerSelectionMode) property. If the selection mode is set to `Single`, then the old view of the marker will be removed and the initially rendered marker will be loaded. If the selection mode is set to `Multiple`, then the marker template will not reset.
 
 {% tabs %}
 
@@ -545,7 +545,7 @@ If you add any view for marker using the [`MarkerTemplate`](https://help.syncfus
 
 ## Events
 
-The [`MarkerSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html) event is fired when a marker is selected. The `MarkerTemplate`, `SelectedMarker`, and `IsSelected` will be passed to MarkerSelectedEventArgs.
+The [`MarkerSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html) event is fired when a marker is selected. The `MarkerTemplate`, `SelectedMarker`, and `IsSelected` will be passed to the MarkerSelectedEventArgs.
 
 If you set any view for the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs.html#Syncfusion_UI_Xaml_Maps_MarkerSelectedEventArgs_MarkerTemplate) property of MarkerSelectedEventArgs, the corresponding view will be applied to the selected marker.
 
@@ -597,7 +597,7 @@ If you set any view for the [`MarkerTemplate`](https://help.syncfusion.com/cr/wp
             {
                 e.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
                 object selectedMarker = e.SelectedMarker;
-                bool MarkerSelected = e.IsSelected;
+                bool isSelected = e.IsSelected;
             }
 
 {% endhighlight %}

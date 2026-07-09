@@ -19,11 +19,11 @@ The [WPF Map](https://www.syncfusion.com/wpf-controls/map) control contains the 
 
 ## ZoomIn Command
 
-[`ZoomIn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomInCommand) command zooms in the map.
+The [`ZoomIn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomInCommand) command zooms in the map.
 
 ## ZoomOut Command
 
-[`ZoomOut`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomOutCommand) command zooms out the map.
+The [`ZoomOut`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomOutCommand) command zooms out the map.
 
 ## Pan Command
 
@@ -59,17 +59,17 @@ The [`PanResetCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ma
                 </Style>
             </StackPanel.Resources>
             
-            <Button Content="ZoomIn" Command="{Binding ElementName=Map,Path=ZoomInCommand}"/>
-            <Button Content="ZoomOut" Command="{Binding ElementName=Map,Path=ZoomOutCommand}"/>
+            <Button Content="ZoomIn" Command="{Binding ElementName=Map, Path=ZoomInCommand}"/>
+            <Button Content="ZoomOut" Command="{Binding ElementName=Map, Path=ZoomOutCommand}"/>
             
             <!--Panning commands-->
-            <Button Content="LeftPan" Command="{Binding ElementName=Map,Path=PanCommand}" CommandParameter="left"/>
-            <Button Content="RightPan" Command="{Binding ElementName=Map,Path=PanCommand}" CommandParameter="right"/>
-            <Button Content="TopPan" Command="{Binding ElementName=Map,Path=PanCommand}" CommandParameter="top"/>
-            <Button Content="BottomPan" Command="{Binding ElementName=Map,Path=PanCommand}" CommandParameter="bottom"/>
+            <Button Content="LeftPan" Command="{Binding ElementName=Map, Path=PanCommand}" CommandParameter="left"/>
+            <Button Content="RightPan" Command="{Binding ElementName=Map, Path=PanCommand}" CommandParameter="right"/>
+            <Button Content="TopPan" Command="{Binding ElementName=Map, Path=PanCommand}" CommandParameter="top"/>
+            <Button Content="BottomPan" Command="{Binding ElementName=Map, Path=PanCommand}" CommandParameter="bottom"/>
 
-            <Button Content="ZoomReset" Command="{Binding ElementName=Map,Path=ZoomResetCommand}"/>
-            <Button Content="PanReset" Command="{Binding ElementName=Map,Path=PanResetCommand}"/>
+            <Button Content="ZoomReset" Command="{Binding ElementName=Map, Path=ZoomResetCommand}"/>
+            <Button Content="PanReset" Command="{Binding ElementName=Map, Path=PanResetCommand}"/>
             
         </StackPanel>
 
