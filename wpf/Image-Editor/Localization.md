@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization support in syncfusion SfImageEditor WPF.
-description: This section describes on how to localize the SfImageEditor resources with their corresponding culture.
+title: Localization support in Syncfusion SfImageEditor for WPF
+description: This section describes how to localize the SfImageEditor resources for their corresponding culture in WPF applications.
 platform: wpf
 control: SfImageEditor
 documentation: ug
@@ -9,45 +9,48 @@ documentation: ug
 
 # Localization in WPF ImageEditor (SfImageEditor)
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfImageEditor by adding resource file. Application culture can be changed by setting `CurrentUICulture` before `InitializeComponent()` method.
+Localization is the process of translating the application resources into different languages for specific cultures. You can localize the SfImageEditor by adding a resource file. The application culture can be changed by setting `CurrentUICulture` before the `InitializeComponent()` method.
 
-Use the below code to change the application culture to French.
+Use the following code to change the application culture to French.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
-        public MainWindow()
-        {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
-            InitializeComponent();           
-        }  
+using System.Globalization;
+using System.Threading;
+
+public MainWindow()
+{
+    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+    InitializeComponent();
+}
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
-To localize SfImageEditor based on `CurrentUICulture` using resource files, follow the below steps.
+To localize SfImageEditor based on `CurrentUICulture` using resource files, follow these steps.
 
-1.Create new folder and name it as **Resources** in your application.
-2.Add the default resource file of SfImageEditor into **Resources** folder. You can download the Syncfusion.SfImageEditor.WPF.resx [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfImageEditor.WPF-240771729).
+1. Create a new folder and name it **Resources** in your application.
+2. Add the default resource file of SfImageEditor into the **Resources** folder. You can download the `Syncfusion.SfImageEditor.WPF.resx` file [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfImageEditor.WPF-240771729).
 
-![Shapes](Images/Localization_img1.png) 
+   ![Resources folder with default resx file](Images/Localization_img1.png)
 
-3.Right-click on the Resources folder, select Add and then NewItem.
+3. Right-click the **Resources** folder, select **Add**, and then choose **New Item**.
 
-4.In Add New Item wizard, select the Resource File option and name it as Syncfusion.SfImageEditor.WPF.<culture name>.resx. For example, you have to give name as Syncfusion.SfImageEditor.WPF.fr.resx for French culture.
+4. In the **Add New Item** wizard, select the **Resource File** option and name the file `Syncfusion.SfImageEditor.WPF.<culture name>.resx`. For example, name the file `Syncfusion.SfImageEditor.WPF.fr.resx` for the French culture.
 
-![Shapes](Images/Localization_img2.png) 
+   ![Add New Item wizard with Resource File selected](Images/Localization_img2.png)
 
-5.Now, select Add option to add the resource file in the Resources folder.
+5. Select **Add** to add the resource file to the **Resources** folder.
 
-![Shapes](Images/Localization_img3.png) 
+   ![New resx file added to the Resources folder](Images/Localization_img3.png)
 
-6.Add the Name/Value pair in Resource Designer of Syncfusion.SfImageEditor.WPF.fr.resx file and change its corresponding value to the corresponding culture.
+6. Add the Name/Value pairs in the Resource Designer of the `Syncfusion.SfImageEditor.WPF.fr.resx` file and change the corresponding values to the localized culture.
 
-![Shapes](Images/Localization_img4.png) 
+   ![Resource Designer with localized Name/Value pairs](Images/Localization_img4.png)
 
-Below image depicts the application translated into French culture.
+The following image depicts the application translated into the French culture.
 
-![Shapes](Images/Localization_img5.png)   
+![SfImageEditor localized to French culture](Images/Localization_img5.png)   
