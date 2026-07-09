@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ranges in WPF Bullet Graph control | Syncfusion
-description: Learn here all about Ranges support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
+description: Learn about range support in the Syncfusion WPF SfBulletGraph control, including range customization, styling, and value visualization.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Ranges in WPF Bullet Graph (SfBulletGraph)
 
-Ranges for a bullet graph are a collection of qualitative ranges. A qualitative range is a visual element that begins at [`RangeStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeStart) and ends at a specified [`RangeEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeEnd) at the beginning of the previous range’s RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
+Ranges for a bullet graph are a collection of qualitative ranges. A qualitative range is a visual element that begins at [`RangeStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeStart) and ends at a specified [`RangeEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeEnd), continuing from the previous range's RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
 
-## Customizing Range
+## Customizing Ranges
 
-The width of the ranges can be customized by setting the [`QualitativeRangesSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QualitativeRangesSize) property. By changing [`RangeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeStroke) of the qualitative range, the stroke of the range can be personalized. By setting the [`RangeOpacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeOpacity) of the qualitative range, the opacity of the range is modified.
+The width of the ranges can be customized by setting the [`QualitativeRangesSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QualitativeRangesSize) property. By changing the [`RangeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeStroke) of the qualitative range, the stroke of the range can be personalized. By setting the [`RangeOpacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeOpacity) of the qualitative range, the opacity of the range is modified.
 
 {% tabs %}
 {% highlight xaml %}
@@ -78,7 +78,7 @@ The width of the ranges can be customized by setting the [`QualitativeRangesSize
 
 ## Binding RangeStroke to Ticks and Labels
 
-By setting [`BindWithRangeStrokeToLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_BindRangeStrokeToLabels), the stroke of the labels is set related to the stroke of the specified ranges. Similarly, by setting [`BindWithRangeStrokeToTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_BindRangeStrokeToTicks), the stroke of the ticks is set related to the stroke of the specified ranges.
+By setting the [`BindRangeStrokeToLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_BindRangeStrokeToLabels) property, the stroke of the labels is set to match the stroke of the specified ranges. Similarly, by setting the [`BindRangeStrokeToTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_BindRangeStrokeToTicks) property, the stroke of the ticks is set to match the stroke of the specified ranges.
 
 {% tabs %}
 {% highlight xaml %}

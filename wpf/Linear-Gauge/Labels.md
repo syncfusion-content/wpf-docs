@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Labels | SfLinearGauge | Wpf | Syncfusion
-description: This section describes Labels support with its customization by using LabelStroke, LabelSize and other properties in WPF SfLinearGauge control.
+title: Labels | SfLinearGauge | WPF | Syncfusion
+description: This section describes the Labels support with its customization by using LabelStroke, LabelSize, and other properties in the WPF SfLinearGauge control.
 platform: wpf
 control: SfLinearGauge
 documentation: ug
@@ -9,13 +9,11 @@ documentation: ug
 
 # Labels support in WPF Linear Gauge (SfLinearGauge)
 
-`Labels` of the linear scale provide a numeric value to the major ticks that will be specified according to the range of the scale.
+The `Labels` of the linear scale provide a numeric value to the major ticks that will be specified according to the range of the scale.
 
 ## Label color customization
 
-The foreground of the label is customized by setting the [`LabelStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelStroke) of the linear scale.
-
-{% tabs %}
+The foreground of the label is customized by setting the [`LabelStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelStroke) of the linear scale.{% tabs %}
 
 {% highlight xml %}
 
@@ -120,7 +118,7 @@ The label font can be customized using the [`LabelSize`](https://help.syncfusion
 
 ## Setting position for labels
 
-The labels in the scale can be placed above or below the linear scale by choosing the following options available in the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPosition) property. The default value of `LabelPosition` property is below.
+The labels in the scale can be placed above or below the linear scale by choosing the following options available in the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPosition) property. The default value of the `LabelPosition` property is below.
 
 1. Above
 
@@ -180,7 +178,7 @@ You can postfix and prefix values to the scale labels using the [`LabelPostfix`]
 
 ### Setting label postfix
 
-The `LabelPostfix` property allows to postfix the values to scale labels.
+The `LabelPostfix` property allows you to postfix the values to scale labels.
 
 {% tabs %}
 
@@ -237,7 +235,7 @@ The `LabelPostfix` property allows to postfix the values to scale labels.
 
 ### Setting label prefix
 
-The `LabelPrefix` property allows to prefix the values to scale labels.
+The `LabelPrefix` property allows you to prefix the values to scale labels.
 
 {% tabs %}
 
@@ -296,7 +294,7 @@ The `LabelPrefix` property allows to prefix the values to scale labels.
 
 ## Labels visibility
 
-Labels visibility can be customized using the [`LabelVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelVisibility) property of linear scale.
+Labels visibility can be customized using the [`LabelVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelVisibility) property of the linear scale.
 
 {% tabs %}
 
