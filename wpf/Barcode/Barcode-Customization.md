@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Barcode Customization in WPF Barcode control | Syncfusion
-description: Learn about Barcode Customization support in Syncfusion WPF Barcode (SfBarcode) control.
+description: Learn how to customize barcodes in the Syncfusion WPF SfBarcode control, including appearance, styling, and configuration options.
 platform: wpf
 control: SfBarcode
 documentation: ug

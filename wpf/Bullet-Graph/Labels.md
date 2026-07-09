@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Labels in WPF Bullet Graph control | Syncfusion
-description: Learn all about the Labels support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
+description: Learn about label support in the Syncfusion WPF SfBulletGraph control, including label customization, positioning, and formatting options.
 platform: wpf
 control: SfBulletGraph
 documentation: ug

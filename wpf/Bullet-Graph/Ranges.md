@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ranges in WPF Bullet Graph control | Syncfusion
-description: Learn all about the Ranges support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
+description: Learn about range support in the Syncfusion WPF SfBulletGraph control, including range customization, styling, and value visualization.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
