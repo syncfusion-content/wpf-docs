@@ -23,11 +23,7 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 ## SearchScope
 
-<<<<<<< Wpf_Grid_UG_Updates
-You can control where the search is applied in the SfTreeGrid using the `SearchController.SearchScope` property. By default, the `SearchScope` value is set to `Both`.
-=======
 You can control where the search is applied in the SfTreeGrid using the [SearchController.SearchScope](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_SearchScope) property. By default SearchScope value set as Both.
->>>>>>> hotfix/hotfix-v34.1.29
 
 * `Both` – Search will be applied to both RootNodes and ChildNodes in the SfTreeGrid.
 
