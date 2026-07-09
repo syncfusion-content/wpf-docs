@@ -27,11 +27,7 @@ this.treeGrid.RowHeight = 30;
 {% endhighlight %}
 {% endtabs %}
 
-<<<<<<< Wpf_Grid_UG_Updates
-You can also change a particular row height using the **TreeGridPanel.RowHeights** property.
-=======
 You can also change the particular row height using [TreeGridPanel.RowHeights](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPanel.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPanel_RowHeights) property.
->>>>>>> hotfix/hotfix-v34.1.29
 
 
 {% tabs %}
@@ -51,11 +47,7 @@ void treeGrid_Loaded(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-<<<<<<< Wpf_Grid_UG_Updates
-You can also change the row height of a particular row using the **QueryRowHeight** event.
-=======
 You can also change the row height of particular row using [QueryRowHeight](#_QueryRowHeight) event.
->>>>>>> hotfix/hotfix-v34.1.29
 
 
 {% tabs %}
@@ -79,21 +71,13 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 
 You can change the row height in on-demand based on the row index or row data using [SfTreeGrid.QueryRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_QueryRowHeight) event.
 
-<<<<<<< Wpf_Grid_UG_Updates
-The **QueryRowHeight** event is triggered for each row when it becomes visible. **TreeGridQueryRowHeightEventArgs** provides information to the **QueryRowHeight** event with the following members:
-=======
 `QueryRowHeight` event triggered for each row when it becomes visible. [TreeGridQueryRowHeightEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryRowHeightEventArgs.html) provides information to `QueryRowHeight` event with following members,
->>>>>>> hotfix/hotfix-v34.1.29
 
 * `RowIndex` – denotes index of the row in SfTreeGrid.
 
 * `Height` – Gets or sets the height of the row.
 
-<<<<<<< Wpf_Grid_UG_Updates
-* **Handled** – Gets or sets a value indicating whether the **QueryRowHeight** event is handled to change the height of the row. Its default value is `false`.
-=======
 * `Handled` – Gets or sets a value indicating whether the `QueryRowHeight` event handled to change height of the row. Its default value is `false`.
->>>>>>> hotfix/hotfix-v34.1.29
 
 
 
