@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF DateTimePicker control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF DateTimePicker (DateTimeEdit) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---
@@ -23,7 +23,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Creating an application with the DateTimeEdit control
 
-In this walkthrough, you will create a WPF application that contains the [DateTimEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) control.
+In this walkthrough, you will create a WPF application that contains the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) control.
 
 ## Creating a project
 
@@ -90,6 +90,7 @@ To add the control manually in C#, follow the given steps:
 {% tabs %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 // Creating an instance of the DateTimeEdit
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
@@ -115,19 +116,22 @@ You can set the date using the [DateTime](https://help.syncfusion.com/cr/wpf/Syn
 
 {% tabs %}
 {% highlight XAML %}
-
-<!--Setting date -->
-<syncfusion:DateTimeEdit DateTime="07/05/2010"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit DateTime="07/05/2010"
                          Name="dateTimeEdit" 
                          Height="25"
                          Width="120" />
+</Window>
 
 {% endhighlight %}
 
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 //Setting date
-dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
+this.dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
 
 {% endhighlight %}
 {% endtabs %}
@@ -144,6 +148,8 @@ The following code snippets illustrate the value binding from one `DateTimeEdit`
 
 {% tabs %}
 {% highlight C# %}
+using System;
+using Syncfusion.Windows.Shared;
 
 //ViewModel.cs
 class ViewModel : NotificationObject {
@@ -165,23 +171,26 @@ class ViewModel : NotificationObject {
 
 {% tabs %}
 {% highlight XAML %}
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   <Window.DataContext>
+        <local:ViewModel/>
+   </Window.DataContext>
 
-<Window.DataContext>
-    <local:ViewModel/>
-</Window.DataContext>
-
-<StackPanel HorizontalAlignment="Center" 
-            VerticalAlignment="Center">
-    <syncfusion:DateTimeEdit Name="dateTimeEdit1"
-                             Height="25" 
-                             Width="200" 
-                             DateTime="{Binding SelectedDate, Mode=TwoWay}"/>
-    <syncfusion:DateTimeEdit Name="dateTimeEdit2"
-                             Height="25" 
-                             Width="200" 
-                             DateTime="{Binding SelectedDate, Mode=TwoWay}"
-                             Margin="10"/>
-</StackPanel>
+    <StackPanel HorizontalAlignment="Center" 
+                VerticalAlignment="Center">
+        <syncfusion:DateTimeEdit Name="dateTimeEdit1"
+                                Height="25" 
+                                Width="200" 
+                                DateTime="{Binding SelectedDate, Mode=TwoWay}"/>
+        <syncfusion:DateTimeEdit Name="dateTimeEdit2"
+                                Height="25" 
+                                Width="200" 
+                                DateTime="{Binding SelectedDate, Mode=TwoWay}"
+                                Margin="10"/>
+    </StackPanel>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -196,12 +205,16 @@ The [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Date
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit DateTimeChanged="dateTimeEdit_DateTimeChanged" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit DateTimeChanged="dateTimeEdit_DateTimeChanged" 
                           Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.DateTimeChanged += dateTimeEdit_DateTimeChanged;
@@ -241,14 +254,17 @@ You can change the date-time pattern using the [Pattern](https://help.syncfusion
 
 {% tabs %}
 {% highlight XAML %}
-
-<!--Setting ShortDate Pattern-->
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit x:Name="dateTimeEdit" 
                          DateTime="07/15/2010" 
                          Pattern="ShortDate"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 //Setting predefined ShortDate pattern
 dateTimeEdit.Pattern = DateTimePattern.ShortDate;
@@ -266,15 +282,18 @@ You can display the date and time in any format in the DateTimeEdit control by u
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit CustomPattern="MM**dd**yy hh:mm:ss"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   <syncfusion:DateTimeEdit CustomPattern="MM**dd**yy hh:mm:ss"
                          Pattern="CustomPattern" 
                          DateTime="07/15/2010" 
                          Name="dateTimeEdit"/>
-                      
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.CustomPattern = "MM**dd**yy hh:mm:ss";
@@ -295,13 +314,17 @@ The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit CanEdit="True"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   <syncfusion:DateTimeEdit CanEdit="True"
                          DateTime="07/15/2010" 
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.CanEdit = true;
@@ -319,15 +342,17 @@ You can restrict the users from selecting a date and time in a particular range 
 
 {% tabs %}
 {% highlight xaml %}
-
-<!--Setting date range -->
-<syncfusion:DateTimeEdit MinDateTime="06/1/2020" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   <syncfusion:DateTimeEdit MinDateTime="06/1/2020" 
                          MaxDateTime="06/10/2020"
                          Name="dateTimeEdit"/>
-
+</Window>
 
 {% endhighlight  %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.MinDateTime = new DateTime(2020, 06, 01);
@@ -346,15 +371,19 @@ If you want to display the watermark text instead of null value, use the [NoneDa
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:DateTimeEdit NoneDateText="Select the date"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit NoneDateText="Select the date"
                          ShowMaskOnNullValue="True"
                          NullValue="{x:Null}"
                          IsEmptyDateEnabled="True" 
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.NoneDateText= "Select the date";
@@ -375,29 +404,33 @@ You can change the popup calendar month names in the `DateTimeEdit` control by a
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit Name="dateTimeEdit" >
-    <syncfusion:DateTimeEdit.AbbreviatedMonthNames>
-        <x:Array Type="sys:String" 
-                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
-            <sys:String>[1]Jan</sys:String>
-            <sys:String>[2]Feb</sys:String>
-            <sys:String>[3]Mar</sys:String>
-            <sys:String>[4]Apr</sys:String>
-            <sys:String>[5]May</sys:String>
-            <sys:String>[6]Jun</sys:String>
-            <sys:String>[7]Jul</sys:String>
-            <sys:String>[8]Aug</sys:String>
-            <sys:String>[9]Sep</sys:String>
-            <sys:String>[10]Oct</sys:String>
-            <sys:String>[11]Nov</sys:String>
-            <sys:String>[12]Dec</sys:String>
-        </x:Array>
-    </syncfusion:DateTimeEdit.AbbreviatedMonthNames>    
-</syncfusion:DateTimeEdit>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Name="dateTimeEdit" >
+        <syncfusion:DateTimeEdit.AbbreviatedMonthNames>
+            <x:Array Type="sys:String" 
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                <sys:String>[1]Jan</sys:String>
+                <sys:String>[2]Feb</sys:String>
+                <sys:String>[3]Mar</sys:String>
+                <sys:String>[4]Apr</sys:String>
+                <sys:String>[5]May</sys:String>
+                <sys:String>[6]Jun</sys:String>
+                <sys:String>[7]Jul</sys:String>
+                <sys:String>[8]Aug</sys:String>
+                <sys:String>[9]Sep</sys:String>
+                <sys:String>[10]Oct</sys:String>
+                <sys:String>[11]Nov</sys:String>
+                <sys:String>[12]Dec</sys:String>
+            </x:Array>
+        </syncfusion:DateTimeEdit.AbbreviatedMonthNames>    
+    </syncfusion:DateTimeEdit>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.AbbreviatedMonthNames = new string[]
@@ -429,24 +462,28 @@ You can change the popup calendar week day names in DateTimeEdit control by addi
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit Name="dateTimeEdit" >
-    <syncfusion:DateTimeEdit.ShortestDayNames>
-        <x:Array Type="sys:String" 
-                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
-            <sys:String>Sunday</sys:String>
-            <sys:String>Monday</sys:String>
-            <sys:String>Tuesday</sys:String>
-            <sys:String>Wednesday</sys:String>
-            <sys:String>Thursday</sys:String>
-            <sys:String>Friday</sys:String>
-            <sys:String>Saturday</sys:String>
-        </x:Array>
-    </syncfusion:DateTimeEdit.ShortestDayNames>    
-</syncfusion:DateTimeEdit>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Name="dateTimeEdit" >
+            <syncfusion:DateTimeEdit.ShortestDayNames>
+                <x:Array Type="sys:String" 
+                        xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                    <sys:String>Sunday</sys:String>
+                    <sys:String>Monday</sys:String>
+                    <sys:String>Tuesday</sys:String>
+                    <sys:String>Wednesday</sys:String>
+                    <sys:String>Thursday</sys:String>
+                    <sys:String>Friday</sys:String>
+                    <sys:String>Saturday</sys:String>
+                </x:Array>
+            </syncfusion:DateTimeEdit.ShortestDayNames>    
+    </syncfusion:DateTimeEdit>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.ShortestDayNames= new string[]
@@ -475,11 +512,16 @@ N> If you try to set the `DateTime` value which contained in blackout dates coll
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:DateTimeEdit Loaded="DateTimeEdit_Loaded" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Loaded="DateTimeEdit_Loaded" 
                          Name="dateTimeEdit"/>
+</Window>
+
 {% endhighlight  %}
 {% highlight xaml %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new  DateTimeEdit();
 dateTimeEdit.Loaded += DateTimeEdit_Loaded; 

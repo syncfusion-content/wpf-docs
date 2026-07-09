@@ -43,16 +43,16 @@ The following table explains how the navigation performed between datetime field
 <tr>
 <td>3</td>
 <td>Right</td>
-<td>Navigate to the previous field from the currently selected field.</td>
+<td>Navigate to the next field from the currently selected field.</td>
 <td>
-<img src="Keyboard_navigation_images/Right.png" alt="Navigate to the previous field from the currently selected field"/></td>
+<img src="Keyboard_navigation_images/Right.png" alt="Navigate to the next field from the currently selected field"/></td>
 </tr>
 <tr>
 <td>4</td>
 <td>Left</td>
-<td>Navigate to the next field from the currently selected field.</td>
+<td>Navigate to the previous field from the currently selected field.</td>
 <td>
-<img src="Keyboard_navigation_images/Left.png" alt="Navigate to the next field from the currently selected field"/></td>
+<img src="Keyboard_navigation_images/Left.png" alt="Navigate to the previous field from the currently selected field"/></td>
 </tr>
 <tr>
 <td>5</td>

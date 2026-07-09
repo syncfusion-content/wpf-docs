@@ -17,12 +17,16 @@ You can change the foreground color for `dateTimeEdit` by setting the `Foregroun
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:DateTimeEdit Foreground="Red"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Foreground="Red"
                            Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.Foreground = Brushes.Red;
@@ -36,17 +40,21 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Setting the Background
 
-You can change the background color and selection color of `DateTimeEdit` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `White` and `SelectionBrush` property is `Royal Blue`.
+You can change the background color and selection color of `DateTimeEdit` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `White` and `SelectionBrush` property is `RoyalBlue`.
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit Background="Yellow"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Background="Yellow"
                          SelectionBrush="Red"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.Background = Brushes.Yellow;
@@ -61,16 +69,20 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change focus border color
 
-You can change the focus border color of the `DateTimeEdit` by setting the [FocusedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_FocusedBorderBrush) property. The default value of `FocusedBorderBrush` property is `Medium Aquamarine`.
+You can change the focus border color of the `DateTimeEdit` by setting the [FocusedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_FocusedBorderBrush) property. The default value of `FocusedBorderBrush` property is `MediumAquamarine`.
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:DateTimeEdit FocusedBorderBrush="Red"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit FocusedBorderBrush="Red"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.FocusedBorderBrush = Brushes.Red;
@@ -88,12 +100,16 @@ You can change the flow direction of the `DateTimeEdit` layout from right to lef
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:DateTimeEdit FlowDirection="RightToLeft"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit FlowDirection="RightToLeft"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.FlowDirection = FlowDirection.RightToLeft;
