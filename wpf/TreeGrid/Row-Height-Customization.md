@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Height Customization in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Row Height Customization support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
+description: Learn here all about Row Height Customization support in the Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

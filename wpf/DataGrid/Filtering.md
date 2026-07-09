@@ -710,7 +710,7 @@ void dataGrid_FilterItemsPopulated(object sender, GridFilterItemsPopulatedEventA
 
     if (e.Column.MappingName == "OrderID")
     {
-        var itemsSource = e.ItemsSource as List&lt;FilterElement&gt;;
+        var itemsSource = e.ItemsSource as List<FilterElement>;
 
         //Get the FilterElement to Remove from itemsSource.
         var filterElement = itemsSource.FirstOrDefault(items => items.ActualValue.Equals(1005));

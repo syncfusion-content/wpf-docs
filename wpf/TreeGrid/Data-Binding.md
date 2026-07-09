@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Data Binding in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Data Binding support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
+description: Learn here all about Data Binding support in the Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements, and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -76,7 +76,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() {MappingName="Marks[0]"});
 {% endhighlight %}
 {% endtabs %}
 
-**Limitations when binding complex property:**
+**Limitations when binding indexer property:**
 
 SfTreeGrid doesn’t support  [LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) - `AllowDataShaping`.
 
@@ -111,7 +111,7 @@ None defines the node is not expanded when loading. By default, root nodes only 
 </tr>
 <tr>
 <td>
-RootNodeExpanded
+RootNodesExpanded
 </td>
 <td>
 Root nodes only will be expanded at the time of loading.
@@ -239,7 +239,7 @@ treeGrid.ExpandNode(node);
 {% endhighlight %}
 {% endtabs %}
 
-### Expand all the nodes
+### Expand the specific node and all its child nodes
 
 You can expand the specific node and all its child nodes by using [SfTreeGrid.ExpandAllNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ExpandAllNodes_Syncfusion_UI_Xaml_TreeGrid_TreeNode_) methods.
 
@@ -569,4 +569,4 @@ treeGrid.View.EndInit();
 N> View has properties (`EnableRecursiveChecking`, `LiveNodeUpdateMode` , `RecursiveCheckingMode`,..)that already defined in SfTreeGrid. It is recommended to set those properties via SfTreeGrid.
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.
