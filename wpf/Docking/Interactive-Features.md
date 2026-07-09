@@ -2,7 +2,7 @@
 layout: post
 title: Interactive Features | DockingManager | WPF | Syncfusion®
 description: Interactive features of Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

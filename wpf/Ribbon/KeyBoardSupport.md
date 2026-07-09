@@ -2,7 +2,7 @@
 layout: post
 title: KeyBoard Support in WPF Ribbon control | Syncfusion®
 description: Learn about KeyBoard Support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+platform: wpf
 control: Ribbon
 documentation: ug
 ---

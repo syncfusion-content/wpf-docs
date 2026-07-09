@@ -2,7 +2,7 @@
 layout: post
 title: Tabbed Window in WPF Docking control | Syncfusion®
 description: Learn here all about Tabbed Window support in Syncfusion® WPF Docking (DockingManager) control and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

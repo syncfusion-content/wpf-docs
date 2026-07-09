@@ -2,7 +2,7 @@
 layout: post
 title: Patterns and Practices in WPF Docking control | Syncfusion®
 description: Learn here all about Patterns and Practices support in Syncfusion® WPF Docking (DockingManager) control and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

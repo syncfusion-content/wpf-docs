@@ -2,7 +2,7 @@
 layout: post
 title: Localization | DockingManager | WPF | Syncfusion®
 description: Learn here about Localization in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

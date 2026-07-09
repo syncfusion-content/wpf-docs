@@ -2,7 +2,7 @@
 layout: post
 title: Patterns and Practices in WPF Ribbon control | Syncfusion®
 description: Learn about Patterns and Practices support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
