@@ -164,7 +164,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Select multiple dates
 
-You can select a multiple dates by drag and move the mouse from required start date to end date.
+You can select multiple dates by drag and move the mouse from required start date to end date.
  You can get the selected dates from the [SelectedDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_SelectedDates) property. You can restrict the multiple date selection by setting [AllowMultiplySelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_AllowMultiplySelection) property as `false`. The default value of `AllowMultiplySelection` property is `true`.
 
 {% tabs %}
@@ -262,11 +262,11 @@ If you want to block particular dates from the date selection, add that date ran
 {% highlight c# %}
 
 calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
-    StartDate = new DateTime(2020, 08, 03),
-    EndDate = new DateTime(2020, 08, 07)});
+    StartDate = new DateTime(2020, 07, 03),
+    EndDate = new DateTime(2020, 07, 07)});
 calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
-    StartDate = new DateTime(2020, 08, 22), 
-    EndDate = new DateTime(2020, 08, 25)});
+    StartDate = new DateTime(2020, 07, 22), 
+    EndDate = new DateTime(2020, 07, 25)});
 
 {% endhighlight %}
 {% endtabs %}
