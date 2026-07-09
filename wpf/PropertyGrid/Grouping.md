@@ -75,7 +75,7 @@ propertyGrid1.EnableGrouping = true;
 
 ![Properties are grouped based on the value specified in the Category attribute and Display.GroupName field](Grouping-and-sorting-Images\Category-Attribute.png)
 
-Here, `ID`, `Name` properties are grouped under the 'Basic Info' category and `Experience` property is grouped under 'Additional Info' category by using `Category` attribute or `Display.GroupName` field.
+Here, the `ID` and `Name` properties are grouped under the 'Basic Info' category and the `Experience` property is grouped under the 'Additional Info' category by using the `Category` attribute or the `Display.GroupName` field.
 The `Age` and `DOB` properties do not contain any group name, so they are grouped under the `Misc` category.
 
 N> If we use both the `Category` attribute and `GroupName` field of the `Display` attribute, the `Category` attribute will have higher priority.
@@ -107,7 +107,7 @@ public class ViewModel {
             Name = "John",
             ID = "381",
             DOB = new DateTime(1995, 12, 24),
-            Experience = 5;
+            Experience = 5,
         };
     }
 }

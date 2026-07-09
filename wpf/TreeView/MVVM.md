@@ -9,13 +9,13 @@ documentation: ug
 
 # MVVM in WPF TreeView (SfTreeView)
 
-This section explains about how to work with MVVM pattern in TreeView.
+This section explains how to work with the MVVM pattern in TreeView.
 
 ## Binding properties in MVVM pattern
 
 ### Binding SelectedItem
 
-TreeView support to select the items through binding the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property from view model by implementing the `INotifyPropertyChanged` interface that gives the call back notification to UI.
+The TreeView supports selecting items by binding the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property to a property on the view model. Implement the `INotifyPropertyChanged` interface on the view model so that changes are propagated back to the UI.
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,7 +103,7 @@ sfTreeView.SetBinding(SfTreeView.SelectedItemProperty, new Binding("SelectedNode
 
 ### Binding SelectedItems
 
-TreeView support to select multiple items through binding the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property from view model with `ObservableCollection<object>` type. 
+The TreeView supports selecting multiple items by binding the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property to a view-model property of type `ObservableCollection<object>`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -308,5 +308,5 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-convert-event-to-command-in-MVVM-pattern-in-wpf-treeview). You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-convert-event-to-command-in-MVVM-pattern-in-wpf-treeview). You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its key feature highlights. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.
 

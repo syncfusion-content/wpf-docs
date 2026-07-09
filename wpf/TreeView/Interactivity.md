@@ -9,17 +9,17 @@ documentation: ug
 
 # Interactivity in WPF TreeView (SfTreeView)
 
- This section explains about how to interact with `TreeView` and its items.
+This section explains how to interact with the TreeView and its items.
 
 ## Interacting with TreeView items
 
 ### ItemTapped event
 
-The [ItemTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event will be triggered whenever tapping the item.  [ItemTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemTappedEventArgs.html) has the following members which provides the information for `ItemTapped` event:
+The [ItemTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event is triggered whenever an item is tapped. [ItemTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemTappedEventArgs.html) has the following members, which provide information for the `ItemTapped` event:
 
- * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and data associated with the tapped item as its arguments.
+ * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and the data associated with the tapped item.
  * `Position`: Gets the touch position in the tapped item.
- * `Handled`: Gets or sets whether the event is handled or not.
+ * `Handled`: Gets or sets whether the event is handled.
 
 {% tabs %}
 {% highlight c# %}
@@ -36,11 +36,11 @@ private void SfTreeView_ItemTapped(object sender, ItemTappedEventArgs e)
 
 ### ItemDoubleTapped event
 
-The [ItemDoubleTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event will be triggered whenever double tapping the item. The [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemDoubleTappedEventArgs.html) has the following members providing information for the `ItemDoubleTapped` event:
+The [ItemDoubleTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event is triggered whenever an item is double-tapped. The [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemDoubleTappedEventArgs.html) has the following members, which provide information for the `ItemDoubleTapped` event:
 
- * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and data associated with the double tapped item as its arguments.
- * `Position`: Gets the touch position in the double tapped item.
- * `Handled`: Gets or sets whether the event is handled or not.
+ * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and the data associated with the double-tapped item.
+ * `Position`: Gets the touch position in the double-tapped item.
+ * `Handled`: Gets or sets whether the event is handled.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,11 +57,10 @@ private void SfTreeView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArg
 
 ### ItemHolding event
 
-The [ItemHolding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event will be triggered whenever the item is long pressed.
- [ItemHoldingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event:
+The [ItemHolding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event is triggered whenever an item is long-pressed (held). [ItemHoldingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemHoldingEventArgs.html) has the following members, which provide information for the `ItemHolding` event:
 
- * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and data associated with the hold item as its arguments.
- * `Position`: Gets the touch position in the hold item.
+ * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and the data associated with the held item.
+ * `Position`: Gets the touch position in the held item.
  
 {% tabs %}
 {% highlight c# %}
@@ -75,4 +74,4 @@ private void SfTreeView_ItemHolding(object sender, ItemHoldingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its key feature highlights. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.
