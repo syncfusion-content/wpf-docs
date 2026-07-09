@@ -9,11 +9,11 @@ documentation: ug
 
 # WPF Digital Gauge (SfDigitalGauge) Overview
 
-The Digital Gauge control is used to display alphanumeric characters in digital (LED Display) mode. Digital gauge is used to display a range of values that uses character in combination with numbers. 
+The Digital Gauge control is used to display alphanumeric characters in digital (LED Display) mode. A digital gauge is used to display a range of values that use characters in combination with numbers. 
 
 **Use Cases**
 
 * Displays alpha-numeric values as a virtual digital display. 
 * Displays the current time in a virtual digital clock.
-* Displays the speed and distance in a digital speedometers.
+* Displays the speed and distance in a digital speedometer.
 

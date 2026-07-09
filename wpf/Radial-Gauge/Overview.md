@@ -8,7 +8,7 @@ documentation: ug
 ---
 # WPF Radial Gauge (SfCircularGauge) Overview
 
-The circular gauge helps to visualize numeric values on a circular scale. The appearance of the gauge is fully customized to integrate your applications without fault.
+The circular gauge helps to visualize numeric values on a circular scale. The appearance of the gauge is fully customizable to integrate with your applications without fault.
 
 ## Key features
 
@@ -24,7 +24,7 @@ The [`CircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gaug
 
 * Header
 
-The circular gauge control is highly customizable with variety of simple APIs to modify its basic look and feel. You can position the ranges, ticks, labels, and range pointers as needed.
+The circular gauge control is highly customizable with a variety of simple APIs to modify its basic look and feel. You can position the ranges, ticks, labels, and range pointers as needed.
 
 ### Scales
 
@@ -32,7 +32,7 @@ The [`Scales`](https://help.syncfusion.com/wpf/radial-gauge/scales) contain labe
 
 ### Ranges
 
-The [`Ranges`](https://help.syncfusion.com/wpf/radial-gauge/ranges) are visual elements that depict the start and end values of inner divisions within the scale’s range. Each scale is capable of displaying one or more ranges, and each range can depict different zones or regions of same metrics, such as high, low, and average temperatures.
+The [`Ranges`](https://help.syncfusion.com/wpf/radial-gauge/ranges) are visual elements that depict the start and end values of inner divisions within the scale's range. Each scale is capable of displaying one or more ranges, and each range can depict different zones or regions of the same metrics, such as high, low, and average temperatures.
 
 ### Pointers
 
@@ -43,5 +43,11 @@ The [`Pointers`](https://help.syncfusion.com/wpf/radial-gauge/pointers) are elem
 The [`Header`](https://help.syncfusion.com/wpf/radial-gauge/header) can be used to set a unique header for the circular gauge. You can add text as the header in the circular gauge.
 
 ![Circular Gauge - Overview](Overview_images/Overview_img1.jpeg)
+
+## See also
+
+[How to apply themes for SfCircularGauge](https://support.syncfusion.com/kb/article/2832/how-to-apply-themes-for-sfcirculargauge)
+
+[How to prepare car dashboard demo using SfCircularGauge](https://support.syncfusion.com/kb/article/2720/how-to-prepare-car-dashboard-demo-using-sfcirculargauge)
 
 

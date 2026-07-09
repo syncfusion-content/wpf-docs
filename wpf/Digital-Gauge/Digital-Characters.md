@@ -9,7 +9,7 @@ documentation: ug
 
 # Digital Characters in WPF Digital Gauge (SfDigitalGauge)
 
-The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are set to the digital gauge through the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property of type string.
+The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are set to the digital gauge through the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property of type string. The type of segment used to display the characters is determined by the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -32,7 +32,7 @@ The digital characters in the digital gauge can be viewed in different types of 
 
 ## 7-Segments
 
-The digital characters which are set as the value property of the digital gauge are displayed by default 7-segments. Rather than using the alphabets, these are mainly used to display numbers. The type of segments can be set by the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property.
+By default, the digital characters set as the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property are displayed using 7-segments. These are mainly used to display numbers rather than letters. The type of segments can be set by the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,7 +55,7 @@ The digital characters which are set as the value property of the digital gauge 
 
 ## 14-Segments
 
-The digital characters which are set as the value property of the digital gauge are displayed by 14 segments. These type of characters are used to display both alphabets and numbers. 
+The digital characters set as the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property can be displayed using 14 segments. This type of character is used to display both alphabets and numbers. Set the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property to `SegmentFourteen` to display characters in this format.
 
 {% tabs %}
 {% highlight xaml %}
@@ -78,7 +78,7 @@ The digital characters which are set as the value property of the digital gauge 
 
 ## 16-Segments
 
-The digital characters which are set as the value property of the digital gauge are displayed by 16 segments. These type of characters are also used to display both alphabets and numbers. 
+The digital characters set as the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property can be displayed using 16 segments. Like 14-segment characters, this type is also used to display both alphabets and numbers, with finer segment detail. Set the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property to `SegmentSixteen` to display characters in this format.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,9 +99,9 @@ The digital characters which are set as the value property of the digital gauge 
 
 ![Digital Gauge with SegmentSixteen CharacterType](Digital-Characters_images/Digital-Characters_img4.png)
 
-## 8*8 Dot Matrix Segments
+## 8×8 Dot Matrix Segments
 
-The digital characters which are set as the value property of the digital gauge are displayed by eight cross eight dot matrix segments. These type of characters are used to display special characters along with the alphabets and numbers. 
+The digital characters set as the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property can be displayed using 8×8 dot matrix segments. This type of character is used to display special characters along with alphabets and numbers. Set the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property to `EightCrossEightDotMatrix` to display characters in this format.
 
 {% tabs %}
 {% highlight xaml %}
@@ -118,7 +118,7 @@ The digital characters which are set as the value property of the digital gauge 
     this.Grid.Children.Add(digitalgauge);
 
 {% endhighlight %}
-{% endtabs%}
+{% endtabs %}
 
 ![Digital Gauge with EightCrossEightDotMatrix CharacterType](Digital-Characters_images/Digital-Characters_img5.png)
 

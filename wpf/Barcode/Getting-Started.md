@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF Barcode control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Barcode (SfBarcode) control, its elements and more details.
+description: Learn about getting started with the Syncfusion WPF Barcode (SfBarcode) control and its elements.
 platform: wpf
 control: SfBarcode
 documentation: ug
@@ -9,30 +9,25 @@ documentation: ug
 
 # Getting Started with WPF Barcode (SfBarcode)
 
-## Add Barcode control to an Application 
+## Add the Barcode control to an application
 
-The following assembly reference is required for deploying Barcode.
+The following assembly reference is required for deploying the Barcode control.
 
-{% highlight c# %}
+* **Namespace**: `Syncfusion.UI.Xaml.Controls.Barcode`
+* **Assembly**: `Syncfusion.SfBarcode.WPF`
 
-Namespace: Syncfusion.UI.Xaml.Controls.Barcode
+To create the `SfBarcode` control in Visual Studio:
 
-Assembly: Syncfusion.SfBarcode.WPF
+1. Create a new WPF project.
 
-{% endhighlight  %}
+2. Drag the `SfBarcode` control from the **Toolbox** window to the Design view to create an instance of the control.
 
-To create the SfBarcode control in Visual Studio:
+![WPF Barcode Control](Getting-Started_images/wpf-barcode-control.png)
 
-1. Create a new WPF project. 
+The SfBarcode control after being dragged to the Design view
+{:.caption}
 
-2. Drag the SfBarcode control from the Toolbox window to the Design View. An instance of the SfBarcode control is created in the Design view.
-
-   ![WPF Barcode Control](Getting-Started_images/wpf-barcode-control.png)
-
-   SfBarcode Control after Dragging to Design View
-   {:.caption}
-
-The following code example shows how to create the Barcode control from XAML:
+The following code example shows how to create the Barcode control using XAML:
 
 {% highlight xaml %}
 
@@ -58,14 +53,14 @@ The following code example shows how to create the Barcode control from XAML:
 
 ## Text
 
-The text to be encoded can be set using the Text property. By default, this original text will be displayed at the bottom of the bar code. The location of the text can be toggled between top and bottom using TextLocation property. The horizontal alignment of the text can be set using TextAlignment. The text brush and other various font customization can also be done using the built-in font properties. Optionally, the user can hide the barcode text by setting the DisplayText property to false.
+The text to be encoded can be set using the `Text` property. By default, this text is displayed at the bottom of the barcode. The location of the text can be toggled between **Top** and **Bottom** using the `TextLocation` property, and its horizontal alignment can be set using the `TextAlignment` property. The text color and font can also be customized using the built-in font properties. To hide the barcode text, set the `DisplayText` property to `false`.
 
 {% highlight xaml %}
 
-<sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" DisplayText="False” Symbology="QRBarcode"/>
+<sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" DisplayText="False" Symbology="QRBarcode"/>
 
 {% endhighlight %}
 
 ## Rotation
 
-Barcode control can be rotated to save space by using the Rotation property. The barcode can be rotated to 90, 180 and 270 degrees.
+The Barcode control can be rotated to save space using the `Rotation` property. The barcode can be rotated to 90, 180, and 270 degrees.
