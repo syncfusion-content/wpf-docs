@@ -18,17 +18,21 @@ Essential Surface Chart provides the following types to plot three dimensional d
 
 ### Surface
 
-Surface charts are used to explore the relationship between three dimensional data. 
+Surface charts are used to visualize the relationship between three-dimensional data.
 
-The following code shows how to set the type of surface.
+The following code demonstrates how to set the surface type.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"  Type="Surface"
-                              YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}"
-                              ColumnSize="{Binding ColumnSize}" >
+    <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"                              
+                          Type="Surface" 
+                          XBindingPath="X"
+                          YBindingPath="Y" 
+                          ZBindingPath="Z" 
+                          RowSize="{Binding RowSize}"
+                          ColumnSize="{Binding ColumnSize}" >
     </chart:SfSurfaceChart>
 
 {% endhighlight %}
@@ -49,7 +53,7 @@ The following code shows how to set the type of surface.
 
 {% endtabs %}
 
-The following code specifies the view model data bound to the chart for surface type.
+The following code specifies the view model data bound to the chart for defining the surface type.
 
 {% highlight c# %}
 
@@ -99,9 +103,13 @@ You can draw the wireframe or mesh, for the surface chart.
 
 {% highlight xaml %}
 
-    <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"  Type="WireframeSurface"
-                              YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}"
-                              ColumnSize="{Binding ColumnSize}" >
+    <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"  
+                          XBindingPath="X"  
+                          Type="WireframeSurface"
+                          YBindingPath="Y" 
+                          ZBindingPath="Z" 
+                          RowSize="{Binding RowSize}"
+                          ColumnSize="{Binding ColumnSize}" >
     </chart:SfSurfaceChart>
 
 {% endhighlight %}
@@ -132,8 +140,13 @@ Viewing the surface chart from the top is called contour. It is a graphical tech
 
 {% highlight xaml %}
 
-        <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"  Type="Contour" Rotate="0"
-                              YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}"
+        <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"                                 
+                              Type="Contour" 
+                              Rotate="0"
+                              YBindingPath="Y" 
+                              XBindingPath="X"
+                              ZBindingPath="Z" 
+                              RowSize="{Binding RowSize}"
                               ColumnSize="{Binding ColumnSize}" >
 
             <chart:SfSurfaceChart.ColorBar>
@@ -195,8 +208,13 @@ You can draw the wireframe or mesh for the contour chart
 
 {% highlight xaml %}
 
-        <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"  Type="WireframeContour"
-                              YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}" Rotate="0"
+        <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"                                 
+                              Type="WireframeContour"
+                              XBindingPath="X"
+                              YBindingPath="Y" 
+                              ZBindingPath="Z" 
+                              RowSize="{Binding RowSize}" 
+                              Rotate="0"
                               ColumnSize="{Binding ColumnSize}" > 
 
             <chart:SfSurfaceChart.ColorBar>

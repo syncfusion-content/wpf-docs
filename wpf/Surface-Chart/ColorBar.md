@@ -18,9 +18,12 @@ Color bar can either show or hide the labels and this can be done using the [`Sh
 
 {% highlight xaml %}
 
-    <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"  
-                              YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}"
-                              ColumnSize="{Binding ColumnSize}">
+    <chart:SfSurfaceChart ItemsSource="{Binding DataValues}"  
+                          XBindingPath="X"  
+                          YBindingPath="Y" 
+                          ZBindingPath="Z" 
+                          RowSize="{Binding RowSize}"
+                          ColumnSize="{Binding ColumnSize}">
             
             <chart:SfSurfaceChart.ColorBar>
                 <chart:ChartColorBar ShowLabel="True" DockPosition="Right"></chart:ChartColorBar>
