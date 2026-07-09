@@ -23,11 +23,11 @@ Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/)
 
 **Method 2: Adding SfMap reference from toolbox**
 
-You can drag the SfMap control from the  toolbox and drop it to the designer. It will automatically reference the required assemblies and add the namespace to the page. 
+You can drag the SfMap control from the toolbox and drop it on the designer. It will automatically reference the required assemblies and add the namespace to the page. 
 
 **Method 3: Adding SfMap assemblies manually from the installed location**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of referencing from NuGet, add the following assemblies in respective projects.
 
 Location: {Installed location}/{version}/WPF/Assemblies
 
@@ -39,9 +39,9 @@ There are three possible ways to create a simple SfMap control.
 
 ### Through Visual Studio
 
-To create the SfMap control through Visual Studio, drag SfMap from Toolbox and drop it to the designer. 
+To create the SfMap control through Visual Studio, drag SfMap from Toolbox and drop it on the designer. 
 
-It generates the following the SfMap control.
+It generates the following SfMap control.
 
 ![Getting started image](Getting-Started_images/Getting-Started_img1.png)
 
@@ -51,9 +51,9 @@ It generates the following the SfMap control.
 
 The SfMap control can also be created and configured by using Expression Blend. Follow these steps to do so.
 
-1. Create a WPF project in Expression Blend and reference the following assemblies.
-1. Syncfusion.SfMaps.Wpf
-2. Syncfusion.Shared.Wpf     
+1. Create a WPF project in Expression Blend and reference the following assemblies:
+   1. Syncfusion.SfMaps.Wpf
+   2. Syncfusion.Shared.Wpf
 2. Search for SfMap in the Toolbox.
 3. Drag SfMap to the designer. It generates the SfMap control with one child element.
 
@@ -87,9 +87,9 @@ using Syncfusion.UI.Xaml.Maps;
 
 ## Initializing maps
 
-You can create the SfMap control programmatically through XAML and C#. In the following code example. 
+You can create the SfMap control programmatically through XAML and C#. The following code example shows how to initialize the SfMap control.
 
-{%tabs%}
+{% tabs %}
 
 {% highlight xaml %}
        
@@ -104,13 +104,13 @@ SfMap syncMap = new SfMap();
            
 {% endhighlight %}
 
-{%endtabs%}
+{% endtabs %}
 
 ## Adding layers
 
-The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html). It can be either ShapeFileLayer or ImageryLayer. The following example will show to add ShapeFileLayer on map. 
+The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html). It can be either ShapeFileLayer or ImageryLayer. The following example shows how to add ShapeFileLayer on map. 
 
-{%tabs%}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -126,17 +126,17 @@ The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr
 
 SfMap maps = new SfMap();
 ShapeFileLayer shapeLayer = new ShapeFileLayer();
-syncMap.Layers.Add(shapeLayer);
+maps.Layers.Add(shapeLayer);
          
 {% endhighlight %}
 
-{%endtabs%}
+{% endtabs %}
 
 ## Configure the SfMap Control
 
 ### Read and Load the Shapes
 
-The Maps control supports reading and loading shape files. A shape file is a set of files that are stored in a non-topological geometry and the attribute information for the spatial features and records in a data set. Spatial features and records are stored as shapes that consist of set vector coordinates.  A computer program can read the content of the shape files and parse them as vector elements. The Maps control also reads and parses the spatial information of a shape file into the graphical elements. 
+The Maps control supports reading and loading shape files. A shape file is a set of files that are stored in a non-topological geometry and the attribute information for the spatial features and records in a data set. Spatial features and records are stored as shapes that consist of set vector coordinates.  A computer program can read the content of the shape files and parse them as vector elements. The Maps control also reads and parses the spatial information of a shape file into graphical elements. 
 
 As mentioned earlier, a shape file can be a set of files or a single file. Generally, the shape file contains the following files:
 
@@ -148,7 +148,7 @@ All files must adhere to the 8.3 naming conventions. The Main file and dBase fil
 
 The main file (.shp) contains a fixed-length file header followed by the variable-length records. Each variable-length record is made up of a fixed-length record header followed by the variable-length record contents.  
 
-The dBase file (.dbf) contains any desired feature attributes or attributes keys, where other tables can be joined. Its format is a standard .dbf file used by many table-based applications in Windows™ and DOS.  Any set of fields can be present in the table.
+The dBase file (.dbf) contains any desired feature attributes or attribute keys, where other tables can be joined. Its format is a standard .dbf file used by many table-based applications in Windows™ and DOS.  Any set of fields can be present in the table.
 
 For more information about the 8.3 naming convention, shape files and their descriptions, visit the following link:
 
@@ -174,7 +174,7 @@ Subfolder names
 
 ShapeFilename.shp
 
-{%tabs%}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -191,17 +191,17 @@ ShapeFilename.shp
 
 SfMap maps = new SfMap();
 ShapeFileLayer shapeLayer = new ShapeFileLayer();
-shape.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
+shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
 maps.Layers.Add(shapeLayer);
 this.Content = maps;
          
 {% endhighlight %}
 
-{%endtabs%}
+{% endtabs %}
 
 In the above code sample, GettingStarted is the namespace, ShapeFile is the subfolder name, and usa_state.shp is the name of the shape file. 
 
-The above code example results in the following output
+The above code example results in the following output:
 
 ![ShapeFileLayer image](Getting-Started_images/Getting-Started_img3.png)
 
@@ -212,7 +212,7 @@ Data can be bound to the shape file layer using the [`ItemsSource`](https://help
 
 The [`Populate data`](https://help.syncfusion.com/wpf/maps/populatedata) section gives the detailed explanation of data binding.
 
-{%tabs%}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -249,7 +249,7 @@ public partial class MainWindow : Window
         SfMap maps = new SfMap();
         ShapeFileLayer shapeLayer = new ShapeFileLayer();
         shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
-        shapeLayer.ItemsSource = ViewModel.ElectionResults;
+        shapeLayer.ItemsSource = viewModel.ElectionResults;
         shapeLayer.ShapeIDTableField = "STATE_NAME";
         shapeLayer.ShapeIDPath = "State";
         ShapeSetting shapeSetting = new ShapeSetting();
@@ -262,13 +262,44 @@ public partial class MainWindow : Window
 
 {% endhighlight %}
 
-{%endtabs%}
+{% endtabs %}
 
 ## Adding markers
 
 Markers are used to identify the shapes. They can be added to the shape file layers as demonstrated in the following code sample. Markers can be customized using the customization properties in the shape file layer.
 
-The detailed explanation of marker and its customization are provided under [`Markers`](https://help.syncfusion.com/wpf/maps/markers) section.
+The detailed explanation of markers and their customization is provided under [`Markers`](https://help.syncfusion.com/wpf/maps/markers) section.
+
+The following code sample shows how to define a marker class and add markers.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public class Model
+{
+    public string Label { get; set; }
+    public string Longitude { get; set; }
+    public string Latitude { get; set; }
+}
+
+public class ViewModel
+{
+    public ObservableCollection<Model> Models { get; set; }
+    public ViewModel()
+    {
+        this.Models = new ObservableCollection<Model>
+        {
+            new Model() { Label = "California", Latitude = "37", Longitude = "-120" }
+        };
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following code sample shows how to add markers to the shape file layer using the `Markers` property.
 
 {% tabs %}
 
@@ -336,7 +367,7 @@ public class ViewModel
 
 ## Color mapping
 
-The color mapping support allows you customize the shape colors based on the underlying value of shape received from the bound data. Both the range color mapping and equal color mapping are supported in maps.
+The color mapping support allows you to customize the shape colors based on the underlying value of shape received from the bound data. Both the range color mapping and equal color mapping are supported in maps.
 
 The detailed explanation of color mapping is provided in [`Shapes Color Customization`](https://help.syncfusion.com/wpf/maps/shapes-color-customization) section.
 
@@ -363,26 +394,27 @@ The detailed explanation of color mapping is provided in [`Shapes Color Customiz
 ShapeFillSetting shapeFillSetting = new ShapeFillSetting
 {
     AutoFillColors = false
-}
+};
 
 // EqualColorMapping
-EqualsColorMapping romeyColorMapping = new EqualsColorMapping
+EqualsColorMapping romneyColorMapping = new EqualsColorMapping
 {
     Color = (Color)new ColorConverter().ConvertFrom("#D84444"),
     LegendLabel = "Romney",
     Value = "Romney"
-}
+};
+
 EqualsColorMapping obamaColorMapping = new EqualsColorMapping
 {
     Color = (Color)new ColorConverter().ConvertFrom("#316DB5"),
     LegendLabel = "Obama",
     Value = "Obama"
-}
+};
 
 // Adding EqualColorMapping to ColorMappings.
-shapeFillSetting.ColorMappings.Add(romeyColorMapping);
-shapeFillSetting.ColorMappings.Add(obamaColorMapping)
-shapeSetting.FillSetting = shapeFillSetting
+shapeFillSetting.ColorMappings.Add(romneyColorMapping);
+shapeFillSetting.ColorMappings.Add(obamaColorMapping);
+shapeSetting.FillSetting = shapeFillSetting;
 shapeLayer.ShapeSettings = shapeSetting;
 
 {% endhighlight %}
@@ -527,7 +559,7 @@ ShapeFillSetting shapeFillSetting = new ShapeFillSetting
 };
     
 // EqualColorMapping
-EqualsColorMapping romeyColorMapping = new EqualsColorMapping
+EqualsColorMapping romneyColorMapping = new EqualsColorMapping
 {
     Color = (Color)new ColorConverter().ConvertFrom("#D84444"),
     LegendLabel = "Romney",
@@ -542,7 +574,7 @@ EqualsColorMapping obamaColorMapping = new EqualsColorMapping
 };
 
 // Adding EqualColorMapping to ColorMappings.
-shapeFillSetting.ColorMappings.Add(romeyColorMapping);
+shapeFillSetting.ColorMappings.Add(romneyColorMapping);
 shapeFillSetting.ColorMappings.Add(obamaColorMapping);
 
 shapeSetting.FillSetting = shapeFillSetting;
@@ -561,7 +593,7 @@ this.Content = maps;
 
 The following screenshot illustrates the result of the above code sample.
 
-![Getting started imgage](Getting-Started_images/Getting_Started_image.png)
+![Getting started image](Getting-Started_images/Getting_Started_image.png)
 
 You can download the complete [`Getting started`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedMap) sample.
 

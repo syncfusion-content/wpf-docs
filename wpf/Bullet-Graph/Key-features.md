@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Key Features in WPF Bullet Graph control | Syncfusion
-description: Learn here all about Key Features support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
+description: Learn all about the Key Features in the Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
@@ -9,31 +9,31 @@ documentation: ug
 
 # Key Features in WPF Bullet Graph (SfBulletGraph)
 
-[`SfBulletGraph`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html) is Composite UI element with following sub-parts:
+[`SfBulletGraph`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html) is a composite UI element with the following sub-parts:
 
 * Ticks
-* Label
+* Labels
 * Caption
-* Range
-* Feature Measure
+* Ranges
+* Featured Measure
 
 ## Ticks
 
-Ticks are scale indicator which is used to specify the values on quantitative scale.
+Ticks are scale indicators used to specify the values on the quantitative scale.
 
-## Label
+## Labels
 
 A quantitative scale label specifies the numeric value according to the major ticks in the range of the scale.
 
 ## Caption
 
-The [`Caption`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_Caption) for a bullet graph is used to specify a unique label describing the value represented in the bullet graph. 
+The [`Caption`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_Caption) property of the bullet graph is used to specify a unique label describing the value represented in the bullet graph. 
 
-## Range
+## Ranges
 
-A qualitative range is a visual element that ends at a specified RangeEnd at the beginning of the previous range’s RangeEnd. The qualitative ranges are arranged according to each [`RangeEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeEnd) value.
+A qualitative range is a visual element that ends at a specified RangeEnd at the beginning of the previous range's RangeEnd. The qualitative ranges are arranged according to each [`RangeEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeEnd) value.
 
-## Performance measure
+## Performance measures
 
 ### Featured measure
 
@@ -43,22 +43,22 @@ A qualitative range is a visual element that ends at a specified RangeEnd at the
 
 [`ComparativeMeasure`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ComparativeMeasure) should be less visually dominant than the featured measure. It should always be encoded as a short line that runs perpendicular to the orientation of the graph. A good example would be a target for YTD revenue. Whenever the featured measure intersects a comparative measure, the comparative measure should appear behind the featured measure.
 
-## Bullet graphs type
+## Bullet graph types
 
-The Bullet Graph types can be differed by its orientation of the control, the control direction may be **horizontal** or **vertical**.
+The bullet graph types can be differentiated by their orientation. The control direction may be **horizontal** or **vertical**.
 
-### Easy to use ###
+### Easy to use
 
-SfBulletGraph is available in Visual Studio toolbox itself, you can easily drag and drop the control from toolbox.
+SfBulletGraph is available in the Visual Studio toolbox itself, so you can easily drag and drop the control from the toolbox.
 
-## Data Binding Support ##
+## Data Binding Support
 
-The control can be bound to your application data from a variety of data sources in the form of binding declaration or by setting its properties directly.
+The control can be bound to your application data from a variety of data sources in the form of a binding declaration or by setting its properties directly.
 
-## MVVM support ##
+## MVVM support
 
-The Model-View-ViewModel (MVVM) pattern is to be followed to get better control customization.
+The Model-View-ViewModel (MVVM) pattern should be followed to get better control customization.
 
-## SfBulletGraph Elements ##
+## SfBulletGraph Elements
 
 ![Key-features_img1](Key-features_images/Key-features_img1.jpeg)

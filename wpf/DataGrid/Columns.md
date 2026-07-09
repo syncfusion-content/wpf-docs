@@ -597,8 +597,8 @@ public string Country
 [DisplayFormat(DataFormatString = "yyyy")]
 public DateTime OrderDate
 {
-    get {  return _orderDate; }
-    set {  orderDate = value; }
+    get { return _orderDate; }
+    set { _orderDate = value; }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -928,7 +928,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endhighlight %}
 {% endtabs %}
 
-![Frezzing Columns in WPF DataGrid](columns_images/wpf-datagrid-freezing.png)
+![Freezing Columns in WPF DataGrid](columns_images/wpf-datagrid-freezing.png)
 
 ### Limitations
 

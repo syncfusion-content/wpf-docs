@@ -11,7 +11,7 @@ documentation: ug
 
 The [WPF Maps](https://www.syncfusion.com/wpf-controls/map) control is maintained through [`Layers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html), a map can accommodate one or more layers.
 
-The maps control consists the following two layers:
+The maps control consists of the following two layers:
 
 * Imagery layer
 
@@ -29,7 +29,7 @@ Using shape file layer, custom shape files can be rendered and the shapes can be
 
 This section defines how to customize the shapes in a map.
 
-You can customize a shape's fill, stroke, and stroke thickness using the [`ShapeFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeFill), [`ShapeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStroke),[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStrokeThickness) properties.
+You can customize a shape's fill, stroke, and stroke thickness using the [`ShapeFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeFill), [`ShapeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStroke), and [`ShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStrokeThickness) properties.
 
 Refer to the following code sample for customizing shapes.
 
@@ -253,7 +253,7 @@ In the ShapeSelected event, the BaseMapIndex property has been used to change th
         </maps:SfMap>
         <Label x:Name="label" Grid.Row="1"
                HorizontalAlignment="Center" Background="LightGray" Margin="10"
-               Content="Click on a Australia shape to drill down"/>
+               Content="Click on an Australia shape to drill down"/>
     </Grid>
 		
 {% endhighlight %}
@@ -327,7 +327,7 @@ In the ShapeSelected event, the BaseMapIndex property has been used to change th
 
 The [`ShapeSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) event will be triggered when a map shape is selected. A corresponding model data is passed as an argument.
 
-The [`ShapesUnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) event will be triggered when a map shape is un selected. A corresponding model data is passed as an argument.
+The [`ShapesUnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) event will be triggered when a map shape is unselected. A corresponding model data is passed as an argument.
 {% tabs %}
 
 {% highlight xml %}
@@ -374,13 +374,13 @@ The [`ShapesUnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.M
 
 N> You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
 
-## see also
+## See also
 
 [How to customize the markers in maps](https://www.syncfusion.com/kb/7656/how-to-customize-the-markers-in-maps)
 
 [How to drilldown map layers](https://www.syncfusion.com/kb/7647/how-to-drilldown-map-layers)
 
-[How to specify ItemTemplate to shape file layer]( https://www.syncfusion.com/kb/10001/how-to-specify-itemtemplate-to-shape-file-layer) 
+[How to specify ItemTemplate to shape file layer](https://www.syncfusion.com/kb/10001/how-to-specify-itemtemplate-to-shape-file-layer) 
 
 [How to render custom data source in SfMap](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)
 

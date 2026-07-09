@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Orientation in WPF Bullet Graph control | Syncfusion
-description: Learn here all about Orientation support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
+description: Learn all about the Orientation support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation in WPF Bullet Graph (SfBulletGraph)
 
-By default, orientation of SfBulletGraph is horizontal. It can be customized by using [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_Orientation) property, respectively.
+By default, the orientation of SfBulletGraph is horizontal. It can be customized by using the [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_Orientation) property.
 
 {% tabs %}
 {% highlight xaml %}
