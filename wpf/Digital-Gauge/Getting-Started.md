@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WPF Digital Gauge (SfDigitalGauge)
 
-This section explains you the steps required to configure the **SfDigitalGauge** and also explains the steps to add basic elements of **SfDigitalGauge** through various API’s available within it.
+This section explains the steps required to configure the **SfDigitalGauge** and also explains how to add basic elements of **SfDigitalGauge** through various APIs available within it.
 
 ## Adding gauge references
 
-You can add gauge reference using one of the following methods:
+You can add gauge references using one of the following methods:
 
 **Method 1: Adding gauge reference from nuget.org**
 
@@ -23,11 +23,11 @@ Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/)
 
 **Method 2: Adding gauge reference from toolbox**
 
-You can drag the digital gauge control from the  toolbox and drop it to the designer. It will add the required assembly references automatically, and add the namespace to the page.  
+You can drag the digital gauge control from the toolbox and drop it onto the designer. It will add the required assembly references automatically and add the namespace to the page.  
 
 **Method 3: Adding gauge assemblies manually from the installed location**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of referencing them from NuGet, add the following assemblies to the respective projects.
 
 Location: {Installed location}/{version}/WPF/Assemblies
 
@@ -41,7 +41,7 @@ You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/wpf/Syn
 
 {% highlight xaml %}
 
-	xmlns:gauge ="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf"
+	xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf"
 
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/wpf/Syn
 
 {% endtabs %}
 
-initialize digital gauge control.
+Initialize the digital gauge control.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ initialize digital gauge control.
 
 {% endtabs %}
 
-Run the above code and now the default **SfDigitalGauge** can be displayed as follows. UI component of the digital gauge can be customized by adding segments and passing Values which will be explained in the next section.
+Run the above code, and the default **SfDigitalGauge** will be displayed as follows. The UI of the digital gauge can be customized by adding segments and passing values, which will be explained in the next section.
 
 ## Displaying Values 
 
@@ -96,7 +96,7 @@ this.Content = digitalgauge;
 
 ## Setting character type
 
-By using the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property, you can set the segments for digital gauge. The digital characters can be drawn in the following four different segments:
+By using the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property, you can set the segments for the digital gauge. The digital characters can be drawn in the following four different segment types:
 
 •	EightCrossEightDotMatrix
 
@@ -109,7 +109,7 @@ By using the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 {% tabs %}
 {% highlight xaml %}
 
-<gauge:SfDigitalGauge Value="1 2 3 4" CharacterType="EightCrossEightDotMatrix"/>
+<syncfusion:SfDigitalGauge Value="1 2 3 4" CharacterType="EightCrossEightDotMatrix"/>
 
 {% endhighlight %}
 
@@ -124,13 +124,13 @@ this.Content = digitalgauge;
 
 ## Configuring properties
 
-The [`CharacterHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterHeight), [`CharacterWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterWidth), and [`CharacterStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterStroke) properties are used to display characters, which can be customized as shown in the following code snippets
+The [`CharacterHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterHeight), [`CharacterWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterWidth), and [`CharacterStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterStroke) properties are used to display characters, which can be customized as shown in the following code snippets.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<gauge:SfDigitalGauge CharacterHeight="60" CharacterWidth="25" 
+<syncfusion:SfDigitalGauge CharacterHeight="60" CharacterWidth="25" 
                       CharacterStroke="#146CED"/>
 
 {% endhighlight %}
@@ -153,7 +153,7 @@ The following code example is the complete code of the previous configurations.
 
 {% highlight xaml %}
 
-<gauge:SfDigitalGauge Value="11:59:50 PM"
+<syncfusion:SfDigitalGauge Value="11:59:50 PM"
                       Height="100"
                       Width="375"
                       DimmedBrush="#F2F2F2"

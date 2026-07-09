@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Sorting in WPF TreeGrid control | Syncfusion®
 description: Learn here all about Sorting support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
@@ -143,8 +143,8 @@ N> [SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion
 						ChildPropertyName="Children"                  
 						ItemsSource="{Binding EmployeeDetails}">
 			<syncfusion:SfTreeGrid.SortColumnDescriptions>
-				<sync:SortColumnDescription ColumnName="FirstName" SortDirection="Ascending" />
-				<sync:SortColumnDescription ColumnName="Id" SortDirection="Descending"/>
+			<syncfusion:SortColumnDescription ColumnName="FirstName" SortDirection="Ascending" />
+			<syncfusion:SortColumnDescription ColumnName="Id" SortDirection="Descending"/>
 			</syncfusion:SfTreeGrid.SortColumnDescriptions>
 </syncfusion:SfTreeGrid>
 
@@ -311,4 +311,4 @@ private void TreeGrid_SortColumnsChanging(object sender, GridSortColumnsChanging
 [SfTreeGrid.SortColumnsChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortColumnsChanged) event occurs when the sorting is applied to the column. [GridSortColumnsChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangedEventArgs.html) provides information for `SortColumnsChanged` event. 
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.

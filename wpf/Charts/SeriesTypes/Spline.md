@@ -89,7 +89,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-N> You can explore our [WPF Spline Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Spline) to know how to displays multiple series of data as spline.
+N> You can explore our [WPF Spline Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Spline) to know how to display multiple series of data as spline.
 
 ## Spline Area Chart
 
@@ -120,7 +120,7 @@ chart.Series.Add(series);
 
 ![WPF SplineArea Chart](Series_images/wpf-spline-area-chart.png)
 
-N> You can explore our [WPF Spline Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Area Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Spline%20Area) to know how to displays multiple series of data as spline area.
+N> You can explore our [WPF Spline Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Area Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Spline%20Area) to know how to display multiple series of data as a spline area.
 
 ## Spline Type
 

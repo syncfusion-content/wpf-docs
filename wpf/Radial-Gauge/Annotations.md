@@ -9,15 +9,15 @@ documentation: ug
 
 # Annotations in WPF Radial Gauge (SfCircularGauge)
 
-SfCircularGauge supports annotations, which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images can also be added by using `Annotations` property.
+SfCircularGauge supports annotations, which allow you to mark a specific area of interest in the circular gauge. You can place custom views as annotations. Text and images can also be added by using the `Annotations` property.
 
 ## Setting a view annotation
 
-When the annotation allows you to place the custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The Following properties are used to customize the Annotations:
+When the annotation allows you to place custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The following properties are used to customize the annotations:
 
 * [`Angle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_Angle) : Used to place the view at the given angle.
-* [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_Offset) : Used to move the view from the center to edge of the circular gauge. The value should be ranges from 0 to 1.
-* [`ViewMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_ViewMargin) : Used to customize the Annotation x and y position by using the pixel values.
+* [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_Offset) : Used to move the view from the center to the edge of the circular gauge. The value should range from 0 to 1.
+* [`ViewMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_ViewMargin) : Used to customize the annotation's x and y position by using pixel values.
 
 The following code is used to create the Annotations.
 

@@ -15,18 +15,18 @@ Multilayer support allows you to load multiple shapefiles in a single container,
 
 This feature enables the map to load multiple types of shapefiles in a single container. Basically, shape files contain point shapes in a single container.
 
-Situations arise where, any combination of available shapefiles needs to be loaded in a single container. In such situations this feature enables the map to load multiple shape layers in a single container. 
+Situations arise where any combination of available shapefiles needs to be loaded in a single container. In such situations, this feature enables the map to load multiple shape layers in a single container. 
 
 ## Adding Multiple Layers in the Map
 
-ShapeFileLayer is the core layer for the map. Multiple layers can be added in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) itself. They have to be added in SubShapeFileLayers within the ShapeFileLayer.
+ShapeFileLayer is the core layer for the map. Multiple layers can be added in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) itself. They have to be added in the SubShapeFileLayers within the ShapeFileLayer.
 
 ## SubShapeFileLayers
 
 SubShapeFileLayers is the collection of [`SubShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SubShapeFileLayer.html). SubShapeFileLayer is also a type of shapefile layer. The following code adds multiple layers in the ShapeFileLayer.
 
 
-{%tabs%}
+{% tabs %}
 {% highlight xaml %}
 
         <syncfusion:SfMap >
@@ -252,7 +252,7 @@ SubShapeFileLayers is the collection of [`SubShapeFileLayer`](https://help.syncf
 {% endhighlight %}
  
 
-{%endtabs%}
+{% endtabs %}
 
 ![Maps control multi layer support](Multilayer-Support_images/Multilayer-Support_img1.png)
 

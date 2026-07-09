@@ -286,8 +286,7 @@ The following code sample and screenshot illustrates how to apply the custom gra
 
 SfChart chart = new SfChart();
 
-...
-
+// code omitted for brevity
 ChartColorModel colorModel = new ChartColorModel();
 
 LinearGradientBrush gradientColor1 = new LinearGradientBrush();
@@ -324,13 +323,11 @@ stop2 = new GradientStop()
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
 
-...
-
+// code omitted for brevity
 colorModel.CustomBrushes.Add(gradientColor1);
 colorModel.CustomBrushes.Add(gradientColor2);
 
-...
-
+// code omitted for brevity
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource  = new ViewModel().Data,
@@ -374,8 +371,7 @@ The following code sample and screenshot illustrates how to apply the gradient c
 
 SfChart chart = new SfChart();
 
-...
-
+// code omitted for brevity
 LinearGradientBrush gradientColor = new LinearGradientBrush();
 
 GradientStop stop1 = new GradientStop()
@@ -393,8 +389,7 @@ GradientStop stop2 = new GradientStop()
 gradientColor.GradientStops.Add(stop1);
 gradientColor.GradientStops.Add(stop2);
 
-...
-
+// code omitted for brevity
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource  = new ViewModel().Data,
@@ -608,13 +603,13 @@ chart.Series.Add(series);
 
 ![WPF Chart Customizing ToolTip](Styling-and-Customization_images/wpf-chart-customizing-tooltip.png)
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.
 
 ## See also
 
-[`How to apply gradient colors for each series in WPF Chart?`](https://www.syncfusion.com/kb/11849/how-to-apply-gradient-colors-for-each-series-in-wpf-chart)
-[`How to change colors of specific data points in the chart?`](https://www.syncfusion.com/kb/10928/how-to-change-colors-of-specific-data-points-in-the-chart)
-[`How to set color for the series ColorModel property?`](https://www.syncfusion.com/kb/5496/how-to-set-color-for-the-series-colormodel-property)
-[`How to add custom color model to series?`](https://www.syncfusion.com/kb/5480/how-to-add-custom-color-model-to-series)
-[`How to define the fill color for each datapoint from ItemsSource?`](https://www.syncfusion.com/kb/5124/how-to-define-the-fill-color-for-each-datapoint-from-itemssource)
+* [`How to apply gradient colors for each series in WPF Chart`](https://support.syncfusion.com/kb/article/10293/how-to-apply-gradient-colors-for-each-series-in-wpf-chart)
+* [`How to change colors of specific data points in the chart`](https://support.syncfusion.com/kb/article/9416/how-to-change-colors-of-specific-data-points-in-the-chart)
+* [`How to define the fill color for each datapoint in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/4787/how-to-define-the-fill-color-for-each-datapoint-in-wpf-chart-sfchart)
+* [`How to set the color for WPF Chart (SfChart) series`](https://support.syncfusion.com/kb/article/5117/how-to-set-the-color-for-wpf-chart-sfchart-series)
+* [`How to add custom color model to WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/5115/how-to-add-custom-color-model-to-wpf-chart-sfchart)
 

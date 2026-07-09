@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Search in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Search support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more details.
+description: Learn here all about Search support in the Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements, and more details.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -25,11 +25,11 @@ this.treeGrid.SearchController.Search(TextBox.Text);
 
 You can control where the search is applied in the SfTreeGrid using the [SearchController.SearchScope](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_SearchScope) property. By default SearchScope value set as Both.
 
-* Both – Search will be applied to both RootNodes and ChildNodes in the SfTreeGrid.
+* `Both` – Search will be applied to both RootNodes and ChildNodes in the SfTreeGrid.
 
-* RootNodes – Search will be applied only to the RootNodes in the SfTreeGrid.
+* `RootNodes` – Search will be applied only to the RootNodes in the SfTreeGrid.
 
-* ChildNodes – Search will be applied only to the ChildNodes in the SfTreeGrid.
+* `ChildNodes` – Search will be applied only to the ChildNodes in the SfTreeGrid.
 
 {% tabs %}
 {% highlight c# %}

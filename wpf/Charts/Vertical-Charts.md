@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vertical Charts in WPF Charts control | Syncfusion
-description: Learn here all about Vertical Charts support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+description: Learn here all about Vertical Charts support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Vertical Charts in WPF Charts (SfChart)
 
-SfChart provides support for vertical charts. You can plot vertical chart for any chart using [`IsTransposed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_IsTransposed) and [`OpposedPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_OpposedPosition) properties.
+SfChart provides support for vertical charts. You can plot a vertical chart for any chart using the [`IsTransposed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_IsTransposed) and [`OpposedPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_OpposedPosition) properties.
 
 ## OpposedPosition
 
-Allows to position the axis in the opposite direction to the default position. The following code example illustrates placing the primary and secondary axes in opposite direction.
+Allows positioning the axis in the opposite direction to the default position. The following code example illustrates placing the primary and secondary axes in the opposite direction.
 
 {% tabs %}
 
@@ -225,4 +225,4 @@ chart.Series.Add(series2);
 ![Transposing WPF chart to Vertical Position](Vertical-Charts_images/wpf-transposing-chart-in-vertical.png)
 
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Real%20Time%20Chart/VerticalChart.xaml) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Real%20Time%20Chart/VerticalChart.xaml) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF Charts control | Syncfusion
-description: Learn here about getting started with Syncfusion® WPF Charts (SfChart) control, its elements and more.
+description: Learn here about getting started with Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Getting Started with WPF Charts (SfChart)
 
-This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
+This section explains the steps required to populate the chart with data, header, data labels, legend, and tooltips in the chart. This section covers only the minimal features that you need to learn to get started with the chart.
 
-To get start quickly with [WPF Chart](https://www.syncfusion.com/wpf-controls/charts), you can check this video:
+To get started quickly with [WPF Chart](https://www.syncfusion.com/wpf-controls/charts), you can check this video:
 <style>#WPFChartVideoTutorial{width : 90% !important; height:400px !important }</style>
 <iframe id='WPFChartVideoTutorial' src='https://www.youtube.com/embed/5b8nEevQPC8'></iframe>
 
 ## Adding chart reference
 
-Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion® controls to Visual Studio projects in various ways. You can also refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to learn about the assemblies required for adding Chart to your project. 
+Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion® controls to Visual Studio projects in various ways. You can also refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to learn about the assemblies required for adding Chart to your project.
  
 ## Initialize chart
 
@@ -45,7 +45,7 @@ Imports Syncfusion.UI.Xaml.Charts
 
 {% endtabs %} 
 
-Then initialize an empty chart with two axes as shown below,
+Then initialize an empty chart with two axes as shown below.
 
 {% tabs %} 
 
@@ -88,15 +88,15 @@ chart.SecondaryAxis = secondaryAxis
 
 {% endtabs %} 
 
-Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html).
+Run the project and check if you get the following output to make sure you have configured your project properly to add [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html).
 
 ![WPF Chart](Getting-Started_images/wpf-chart.png)
 
-N> [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly.
+N> [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) supports default axes, so these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will be generated automatically based upon the data bound to the chart if you didn't specify the axes explicitly.
 
 ## Initialize view model
 
-Now, let us define a simple data model that represents a data point in [WPF Chart](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) (SfChart).
+Now, let us define a simple data model that represents a data point in the [WPF Chart](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) (SfChart).
 
 {% tabs %}  
 
@@ -211,9 +211,9 @@ Me.DataContext = New ViewModel()
 
 ## Populate chart with data
 
-As we are going to visualize the comparison of heights in the data model, add [`ColumnSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [`SfChart.Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) property, and then bind the `Data` property of the above `ViewModel` to the [`ColumnSeries.ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property as follows.
+As we are going to visualize the comparison of heights in the data model, add [`ColumnSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to the [`SfChart.Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) property, and then bind the `Data` property of the above `ViewModel` to the [`ColumnSeries.ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property as follows.
 
-N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [`YBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties, so that [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) would fetch values from the respective properties in the data model to plot the series.
+N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [`YBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties, so that [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) fetches values from the respective properties in the data model to plot the series.
 
 {% tabs %}   
 
@@ -287,11 +287,11 @@ chart.Series.Add(series)
 
 {% endtabs %} 
 
-N> Syncfusion® Chart also supports rendering combination of multiple series. Refer to [`this`](https://help.syncfusion.com/wpf/charts/area#multiple-area) for details.
+N> Syncfusion® Chart also supports rendering a combination of multiple series. Refer to [`this`](https://help.syncfusion.com/wpf/charts/area#multiple-area) for details.
 
 ## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of chart as follows.
+The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set the title using the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the chart as follows.
 
 {% tabs %}   
 
@@ -325,20 +325,20 @@ Refer to [`this`](https://help.syncfusion.com/wpf/charts/header) link to learn m
 
 ## Enable data labels
 
-You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentSeries.html#Syncfusion_UI_Xaml_Charts_AdornmentSeries_AdornmentsInfo) property of [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property of [`ChartAdornmentInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html) to True.
+You can add data labels to improve the readability of the chart, and it can be enabled using the [`AdornmentInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentSeries.html#Syncfusion_UI_Xaml_Charts_AdornmentSeries_AdornmentsInfo) property of [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html). By default, no label is displayed; you have to set the [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property of [`ChartAdornmentInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html) to `true`.
 
 {% tabs %}   
 
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-	...
+	<!-- code omitted for brevity -->
   <syncfusion:ColumnSeries> 
      <syncfusion:ColumnSeries.AdornmentsInfo>
           <syncfusion:ChartAdornmentInfo ShowLabel="True"/> 
      </syncfusion:ColumnSeries.AdornmentsInfo> 
   </syncfusion:ColumnSeries>     
-	...
+	<!-- code omitted for brevity -->
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -368,11 +368,11 @@ You can enable legend using the [`SfChart.Legend`](https://help.syncfusion.com/c
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-    ...
+    <!-- code omitted for brevity -->
     <syncfusion:SfChart.Legend>
         <syncfusion:ChartLegend/>
     </syncfusion:SfChart.Legend>
-    ...
+    <!-- code omitted for brevity -->
 </syncfusion:SfChart> 
 
 {% endhighlight %}
@@ -391,20 +391,20 @@ chart.Legend = New ChartLegend()
 
 {% endtabs %} 
 
-Additionally, you need to set label for each series using the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of ChartSeries, which will be displayed in corresponding legend.
+Additionally, you need to set a label for each series using the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of ChartSeries, which will be displayed in the corresponding legend.
 
 {% tabs %}   
 
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-    ...
+    <!-- code omitted for brevity -->
     <syncfusion:ColumnSeries 
         Label="Heights" 
         ItemsSource="{Binding Data}"
         XBindingPath="Name"
         YBindingPath="Height"/>
-    ...
+    <!-- code omitted for brevity -->
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -435,20 +435,20 @@ Refer to this [`link`](https://help.syncfusion.com/uwp/charts/legend) to learn m
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip)  property to true.
+Tooltips are used to show information about the segment when you click the segment. You can enable tooltips by setting the series [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property to `true`.
 
 {% tabs %}   
 
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-    ...
+    <!-- code omitted for brevity -->
     <syncfusion:ColumnSeries 
         ShowTooltip="True"
         ItemsSource="{Binding Data}"
         XBindingPath="Name"
         YBindingPath="Height"/>
-    ...
+    <!-- code omitted for brevity -->
 </syncfusion:SfChart>
 
 {% endhighlight %}
@@ -635,20 +635,15 @@ The following chart is created as a result of the previous codes.
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-SfChart).
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.
 
 ## See also
 
-[`How to create chart in VB .NET WPF?`](https://support.syncfusion.com/kb/article/9550/how-to-create-chart-control-example-in-vb-net-wpf)
-[`How to create a chart control in WPF application using XAML?`](https://support.syncfusion.com/kb/article/9513/how-to-create-a-chart-control-in-wpf-application-using-xaml)
-[`How to create chart in C# WPF?`](https://support.syncfusion.com/kb/article/9466/how-to-create-chart-control-example-in-c-wpf)
-[`How to create Chart in F# WPF?`](https://support.syncfusion.com/kb/article/9843/how-to-create-chart-in-f-wpf)
-[`How to add Context Menu for WPF Chart?`](https://support.syncfusion.com/kb/article/9349/how-to-add-contextmenu-for-wpf-chart)
-[`How to add WPF SfChart inside the SfDataGrid?`](https://support.syncfusion.com/kb/article/9061/how-to-add-wpf-sfchart-inside-the-sfdatagrid)
-[`How to add footer content to WPF Chart?`](https://support.syncfusion.com/kb/article/9097/how-to-add-footer-content-to-wpf-sfchart)
-[`How to access data from Meta Trader to chart using TradePlatform.Net in WPF?`](https://support.syncfusion.com/kb/article/7027/how-to-access-data-from-metatrader-to-wpf-chart-sfchart)
-[`How to synchronize the selection between the chart and data grid?`](https://support.syncfusion.com/kb/article/3753/how-to-synchronize-the-selection-between-wpf-chart-sfchart-and-datagrid)
-[`How to generate dynamic number of series based on common items source?`](https://support.syncfusion.com/kb/article/6858/how-to-generate-dynamic-number-of-series-based-on-common-items-source-in-wpf-chart-sfchart)
+* [`How to create a chart control in WPF application using XAML`](https://support.syncfusion.com/kb/article/9513/how-to-create-a-chart-control-in-wpf-application-using-xaml)
+* [`How to create a Chart control example in C# WPF`](https://support.syncfusion.com/kb/article/9466/how-to-create-a-chart-control-example-in-c-wpf)
+* [`How to create chart control example in VB .NET WPF`](https://support.syncfusion.com/kb/article/9550/how-to-create-chart-control-example-in-vb-net-wpf)
+* [`How to create Chart in F# WPF`](https://support.syncfusion.com/kb/article/9843/how-to-create-chart-in-f-wpf)
+* [`How to Handle Multiple Series in WPF Chart Using MVVM Pattern`](https://support.syncfusion.com/kb/article/21460/how-to-handle-multiple-series-in-wpf-chart-using-mvvm-pattern)
 [`How to display the chart area alone in Chart?`](https://support.syncfusion.com/kb/article/5116/how-to-display-the-chart-area-alone-in-wpf-chart-sfchart)
 [`How to redraw the chart while dragging the series out of the range?`](https://support.syncfusion.com/kb/article/5173/how-to-redraw-wpf-chart-sfchart-while-dragging-the-series-out-of-the-range)
 [`How to create a real time Chart using MVVM in WPF?`](https://support.syncfusion.com/kb/article/10039/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)

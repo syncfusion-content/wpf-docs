@@ -12,29 +12,29 @@ This section explains the steps required to configure the [`SfLinearGauge`](http
 
 ## Adding gauge references
 
-You can add gauge reference using one of the following methods:
+You can add the gauge reference using one of the following methods:
 
 **Method 1: Adding gauge reference from nuget.org**
 
-Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add gauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
+Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add the gauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
 
 ![Adding gauge reference from NuGet](Getting-Started_images/Adding gauge reference.png)
 
 **Method 2: Adding gauge reference from toolbox**
 
-You can drag the linear gauge control from the  toolbox and drop it to the designer. It will add the required assembly references automatically, and add the namespace to the page. 
+You can drag the linear gauge control from the toolbox and drop it onto the designer. It will add the required assembly references automatically and add the namespace to the page.
 
 **Method 3: Adding gauge assemblies manually from the installed location**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of referencing from NuGet, add the following assemblies in the respective projects.
 
 Location: {Installed location}/{version}/WPF/Assemblies
 
-You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies#sfgauge) link to know about the assemblies required for adding gauge to your project.
+Refer to [this](https://help.syncfusion.com/wpf/control-dependencies#sfgauge) link to know about the assemblies required for adding the gauge to your project.
 
-## Initialize gauge
+## Initializing the gauge
 
-Import  the [`SfLinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) namespace to your respective Window as in the following.
+Import the [`SfLinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) namespace to your respective Window as in the following.
 
 {% tabs %}
 
@@ -71,9 +71,9 @@ this.Content = sfLinearGauge;
 
 {% endtabs %}
 
-## Configuring scale
+## Configuring the scale
 
-Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html) which is used to indicate the numeric values. Scale bar, ticks, labels, ranges, and pointers are the sub elements of a scale.
+Scales are a collection of [`LinearScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html) which is used to indicate the numeric values. Scale bar, ticks, labels, ranges, and pointers are the sub-elements of a scale.
 
 The [`Minimum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Maximum) properties allow you to set the scale range.
 
@@ -126,7 +126,7 @@ this.Content = sfLinearGauge;
 
 ## Adding a symbol pointer
 
-`SymbolPointer` is a shape that can be placed to mark the pointer value in gauge.
+`SymbolPointer` is a shape that can be placed to mark the pointer value in the gauge. Add the pointer to the `linearScale` created earlier.
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ linearScale.Pointers.Add(linearPointer);
 
 ## Adding a bar pointer
 
-`BarPointer` is used to mark the scale values. This starts at the beginning of gauge and ends at the pointer value.
+`BarPointer` is used to mark the scale values. This starts at the beginning of the gauge and ends at the pointer value. Add the pointer to the `linearScale` created earlier.
 
 {% tabs %}
 
@@ -190,7 +190,7 @@ linearScale.Pointers.Add(linearPointer1);
 
 ## Adding ranges
 
-You can categorize the scale values using the start and end values properties in [`LinearRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html). You can add multiple ranges for a scale using the [`Ranges`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Ranges) property.
+You can categorize the scale values using the start and end value properties in [`LinearRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html). You can add multiple ranges for a scale using the [`Ranges`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Ranges) property. Add the ranges to the `linearScale` created earlier.
 
 {% tabs %}
 
@@ -318,7 +318,7 @@ linearPointer.SymbolPointerPosition = LinearSymbolPointersPosition.Below;
 linearPointer.SymbolPointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
 linearScale.Pointers.Add(linearPointer);
 
-////Adding bar pointer
+//Adding bar pointer
 LinearPointer linearPointer1 = new LinearPointer();
 linearPointer1.PointerType = LinearPointerType.BarPointer;
 linearPointer1.Value = 50;
@@ -360,7 +360,7 @@ You can find the complete getting started sample from this [`link`](https://git
 
 ## Theme
 
-LinearGauge supports various built-in themes. Refer to the below links to apply themes for the LinearGauge,
+LinearGauge supports various built-in themes. Refer to the below links to apply themes for the LinearGauge:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
@@ -370,4 +370,4 @@ LinearGauge supports various built-in themes. Refer to the below links to apply 
 
 ## See also
 
-[How to apply themes for SfLinearGauge](https://support.syncfusion.com/kb/article/2841/how-to-apply-themes-for-sflineargauge)
+* [How to apply themes for SfLinearGauge](https://support.syncfusion.com/kb/article/2841/how-to-apply-themes-for-sflineargauge)

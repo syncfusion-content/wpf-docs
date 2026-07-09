@@ -155,7 +155,7 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
 
 <Grid>
     <chart:SfChart Width="400" Height="300">
-        ...
+        <!-- code omitted for brevity -->
         <syncfusion:ColumnSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
             <syncfusion:ColumnSeries.AdornmentsInfo>
                 <syncfusion:ChartAdornmentInfo 
@@ -166,7 +166,7 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
                 </syncfusion:ChartAdornmentInfo>
             </syncfusion:ColumnSeries.AdornmentsInfo>
         </syncfusion:ColumnSeries>
-        ...
+        <!-- code omitted for brevity -->
     </chart:SfChart>
 </Grid>
 
@@ -290,7 +290,7 @@ The following code example shows the customization options for connector line:
 
 <Grid>
     <chart:SfChart Width="400" Height="400">
-        ...
+        <!-- code omitted for brevity -->
         <syncfusion:PieSeries Interior="#777777" 
                               ItemsSource="{Binding Demands}" 
                               XBindingPath="Category" 
@@ -305,7 +305,7 @@ The following code example shows the customization options for connector line:
                 </syncfusion:ChartAdornmentInfo>
             </syncfusion:PieSeries.AdornmentsInfo>
         </syncfusion:PieSeries>
-        ...
+        <!-- code omitted for brevity -->
     </chart:SfChart>
 </Grid>
 
@@ -439,7 +439,7 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 ## Smart Labels
 
-When you have more datapoints in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_EnableSmartLabels) property.
+When you have more data points in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_EnableSmartLabels) property.
 
 The following code example demonstrates the EnableSmartLabels property:
 
