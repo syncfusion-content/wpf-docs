@@ -9,7 +9,7 @@ documentation: ug
 
 # Map Providers in WPF Maps (SfMap)
 
-The [SfMap](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) control provides support for various map providers, including [OpenStreetMap](https://www.openstreetmap.org), [Google Maps](https://developers.google.com/maps/documentation), [Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/), and [Bing Maps](https://www.microsoft.com/en-in/bing/features/maps/?msockid=3b94155aeb2660df1b7f03a4ea7b61d3&form=MA13FV). You can also integrate other map providers by adding them as layers.
+The [SfMap](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) control provides support for various map providers, including [OpenStreetMap](https://www.openstreetmap.org), [Google Maps](https://developers.google.com/maps/documentation), [Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/), and [Bing Maps](https://explore.microsoft.com/en-in/bing/features/maps/?form=MA13FV). You can also integrate other map providers by adding them as layers.
 
 ## Open Street Map
 
@@ -162,7 +162,7 @@ The following code example demonstrates how to add multiple layers to an [Imager
 
 ## Bing Map
 
-The [Bing Maps](https://www.microsoft.com/en-in/bing/features/maps/?msockid=3b94155aeb2660df1b7f03a4ea7b61d3&form=MA13FV) is a global mapping service provided by Microsoft. Similar to [OpenStreetMap](https://www.openstreetmap.org) (OSM), it delivers map tile images based on user requests and combines them to render the required map area.
+The [Bing Maps](https://explore.microsoft.com/en-in/bing/features/maps/?form=MA13FV) is a global mapping service provided by Microsoft. Similar to [OpenStreetMap](https://www.openstreetmap.org) (OSM), it delivers map tile images based on user requests and combines them to render the required map area.
 
 ### Enable a Bing Map 
 
@@ -172,7 +172,7 @@ You can enable Bing Maps by setting the [LayerType](https://help.syncfusion.com/
 
 The [BingMapKey](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapKey) is provided as input to this key property. The Bing Map key can be obtained from [https://www.microsoft.com/en-us/maps/create-a-bing-maps-key](https://www.microsoft.com/en-us/maps/bing-maps/create-a-bing-maps-key).
 
-The [Maps](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) control supports the following [Bing Maps](https://www.microsoft.com/en-in/bing/features/maps/?msockid=3b94155aeb2660df1b7f03a4ea7b61d3&form=MA13FV) view styles:
+The [Maps](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) control supports the following [Bing Maps](https://explore.microsoft.com/en-in/bing/features/maps/?form=MA13FV) view styles:
 
 1. Aerial
 2. AerialWithLabel
@@ -275,7 +275,7 @@ The following screenshot illustrates the AerialWithLabel view.
 
 ## Azure Maps
 
-[Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/) is an online map tile provider from Microsoft. Similar to [OSM](https://www.openstreetmap.org) and [Bing Maps](https://www.microsoft.com/en-in/bing/features/maps/?msockid=3b94155aeb2660df1b7f03a4ea7b61d3&form=MA13FV), it serves map tile images on request and composites them to display the map area.
+[Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/) is an online map tile provider from Microsoft. Similar to [OSM](https://www.openstreetmap.org) and [Bing Maps](https://explore.microsoft.com/en-in/bing/features/maps?form=MA13FV), it serves map tile images on request and composites them to display the map area.
 
 ### Adding Azure Maps
 
