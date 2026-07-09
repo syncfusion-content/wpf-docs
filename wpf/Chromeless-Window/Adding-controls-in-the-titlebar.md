@@ -19,8 +19,7 @@ Provided the option to add adaptive controls such as Button, TextBox, Label, etc
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chromeless_Window_Sample"
         mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="Office2016Colorful" TitleTextAlignment="Left"
+        TitleTextAlignment="Left"
         Title="Chromeless Window Sample" IconAlignment="Left" Height="350" Width="550" x:Name="window"
          RightHeaderItemsSource="{DynamicResource rightHeaderItems}">
     <syncfusion:ChromelessWindow.Resources>
@@ -38,25 +37,27 @@ Provided the option to add adaptive controls such as Button, TextBox, Label, etc
 {% endhighlight %}
 {% highlight C# %}
 
-public class MyObservableCollection : ObservableCollection<object> { }
+public class MyObservableCollection : ObservableCollection<object> 
+{ 
 
-/// <summary>
-/// Commmand for the help button.
-/// </summary>
-public DelegateCommand HelpCommand
-{
-    get
+    /// <summary>
+    /// Commmand for the help button.
+    /// </summary>
+    public DelegateCommand HelpCommand
     {
-        return new DelegateCommand(HelpCommandAction);
+        get
+        {
+            return new DelegateCommand(HelpCommandAction);
+        }
     }
-}
 
-/// <summary>
-/// Action that is performed when clicking the help button.
-/// </summary>
-private void HelpCommandAction(object param)
-{
-    System.Diagnostics.Process.Start("https://help.syncfusion.com/wpf/chromeless-window/adding-controls-in-the-titlebar");
+    /// <summary>
+    /// Action that is performed when clicking the help button.
+    /// </summary>
+    private void HelpCommandAction(object param)
+    {
+        System.Diagnostics.Process.Start("https://help.syncfusion.com/wpf/chromeless-window/adding-controls-in-the-titlebar");
+    }
 }
 
 /// <summary>
@@ -125,8 +126,7 @@ In the illustration below, we have defined the [`RightHeaderItemTemplate`](https
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chromeless_Window_Sample"
         mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="Office2016Colorful" TitleTextAlignment="Left"
+        TitleTextAlignment="Left"
         Title="Chromeless Window Sample" IconAlignment="Left" Height="350" Width="550"
         RightHeaderItemsSource="{Binding Utilities}" RightHeaderItemTemplate="{DynamicResource Part_RightItemsTemplate}">
     <syncfusion:ChromelessWindow.DataContext>

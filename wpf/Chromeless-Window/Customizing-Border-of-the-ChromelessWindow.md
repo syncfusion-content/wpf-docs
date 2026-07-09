@@ -21,7 +21,7 @@ To set the ResizeBorderBrush property, use the below code
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-Title="ChromelessWindow" Height="350" Width="525" ResizeBorderBrush="Maroon" syncfusion:SkinStorage.VisualStyle="Metro"     
+Title="ChromelessWindow" Height="350" Width="525" ResizeBorderBrush="Maroon"    
 x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
 <Grid>
 </Grid>
@@ -58,7 +58,7 @@ To set this property, use the following code.
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-Title="ChromelessWindow" Height="350" Width="525" ResizeBorderThickness="8"  syncfusion:SkinStorage.VisualStyle="Metro"     
+Title="ChromelessWindow" Height="350" Width="525" ResizeBorderThickness="8"    
 x:Name="_chromelessWindow"    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
 <Grid>
 </Grid>
