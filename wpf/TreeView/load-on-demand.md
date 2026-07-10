@@ -254,7 +254,7 @@ public class MusicInfo : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-N> `LoadOnDemandCommand` receives the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) as the command parameter by default. The examples use Syncfusion's `NotificationObject` and `BaseCommand` base classes; you can also use a standard `INotifyPropertyChanged` implementation and an `ICommand` of your own.
+N> `LoadOnDemandCommand` receives the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) as the command parameter by default.
 
 ## Handling expander visibility
 

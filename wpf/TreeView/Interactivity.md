@@ -59,8 +59,8 @@ private void SfTreeView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArg
 
 The [ItemHolding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event is triggered whenever an item is long-pressed (held). [ItemHoldingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemHoldingEventArgs.html) has the following members, which provide information for the `ItemHolding` event:
 
- * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and the data associated with the held item.
- * `Position`: Gets the touch position in the held item.
+ * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and the data associated with the hold item as its arguments.
+ * `Position`: Gets the touch position in the hold item.
  
 {% tabs %}
 {% highlight c# %}

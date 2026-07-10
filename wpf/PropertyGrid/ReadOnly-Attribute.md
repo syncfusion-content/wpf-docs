@@ -35,7 +35,7 @@ public class ViewModel {
             Name = "John",
             ID = "381",
             DOB = new DateTime(1995, 12, 24),
-            Experience = 5,
+            Experience = 5
         };
     }
 }
@@ -102,7 +102,7 @@ public class ViewModel {
             Name = "John",
             ID = "381",
             DOB = new DateTime(1995, 12, 24),
-            Experience = 5,
+            Experience = 5
         };
     }
 }
