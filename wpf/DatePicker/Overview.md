@@ -2,7 +2,7 @@
 layout: post
 title: About WPF DatePicker control | Syncfusion®
 description: Learn here all about introduction of Syncfusion® WPF DatePicker (SfDatePicker) control, its elements and more.
-platform: WPF
+platform: wpf
 control: SfDatePicker
 documentation: ug
 ---
@@ -21,7 +21,7 @@ The [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Control
 
 ### Key Features
 
-Formatting – The Control displays  the selected Date value in a various formats.
+Formatting – The control displays the selected Date value in various formats.
 
 Date Selector – The drop-down portion used for selecting the date can be customized.
 
