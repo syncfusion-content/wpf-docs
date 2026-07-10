@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Technical Indicators in WPF Charts control | Syncfusion
-description: Learn here all about Technical Indicators support in Syncfusion® WPF Charts (SfChart) control and more.
+description: Learn here all about Technical Indicators support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -641,4 +641,4 @@ chart.TechnicalIndicators.Add(indicator);
 ![MACD Technical Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-macd-indicator.png)
 
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Line%20Studies/Indicator.xaml) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Line%20Studies/Indicator.xaml) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.

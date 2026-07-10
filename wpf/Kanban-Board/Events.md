@@ -40,10 +40,10 @@ The [`CardDoubleTapped`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.K
 
 ## ColumnDragStarting
 
-The `ColumnDragStarting` event occurs when a column begins to be dragged. We can get the following details from the `ColumnDragStarting` event.
+The [`ColumnDragStarting`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragStarting) event occurs when a column begins to be dragged. We can get the following details from the [`ColumnDragStarting`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragStarting) event.
 
-`Column` - Returns the source column where the column is being dragged.
-`ColumnIndex` - Returns the index of the dragged column within the Kanban column collection.
+[`Column`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDragStartingEventArgs_Column) - Returns the source column where the column is being dragged.
+[`ColumnIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDragStartingEventArgs_ColumnIndex) - Returns the index of the dragged column within the Kanban column collection.
 `Cancel` - Determines whether the column drag operation should be canceled
 
 {% tabs %}
@@ -105,12 +105,12 @@ public class ViewModel
 
 ## ColumnDragOver
 
-The `ColumnDragOver` event occurs when a column is being dragged over another column. We can get the following details from the `ColumnDragOver` event.
+The [`ColumnDragOver`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragOver) event occurs when a column is being dragged over another column. We can get the following details from the [`ColumnDragOver`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragOver) event.
 
-`SourceColumn` - Returns the column where the drag operation originated.
-`CurrentColumn` - Returns the current column over which the dragged column is positioned.
-`PreviousColumnIndex` - Returns the previous column index before entering the current column.
-`CurrentColumnIndex` - Returns the current column index over which the dragged column is positioned
+[`SourceColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDragOverEventArgs_SourceColumn) - Returns the column where the drag operation originated.
+[`CurrentColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDragOverEventArgs_CurrentColumn) - Returns the current column over which the dragged column is positioned.
+[`PreviousColumnIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDragOverEventArgs_PreviousColumnIndex) - Returns the previous column index before entering the current column.
+[`CurrentColumnIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDragOverEventArgs_CurrentColumnIndex) - Returns the current column index over which the dragged column is positioned
 
 {% tabs %}
 {% highlight XAML hl_lines="5" %}
@@ -173,12 +173,12 @@ public class ViewModel
 
 ## ColumnDrop
 
-The `ColumnDrop` event occurs when a dragged column is dropped into a new position. We can get the following details from the `ColumnDrop` event.
+The [`ColumnDrop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDrop) event occurs when a dragged column is dropped into a new position. We can get the following details from the [`ColumnDrop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDrop) event.
 
-`SourceColumn` - Returns the column from which the drag operation originated.
-`PreviousColumnIndex` - Returns the column index before the drop.
-`TargetColumnIndex` - Returns the index where the column is dropped.
-`TargetColumn` - Returns the column from which the dragged column is dropped.
+[`SourceColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDropEventArgs_SourceColumn) - Returns the column from which the drag operation originated.
+[`PreviousColumnIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDropEventArgs_PreviousColumnIndex) - Returns the column index before the drop.
+[`TargetColumnIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDropEventArgs_TargetColumnIndex) - Returns the index where the column is dropped.
+[`TargetColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDropEventArgs_TargetColumn) - Returns the column from which the dragged column is dropped.
 
 {% tabs %}
 {% highlight XAML hl_lines="5" %}

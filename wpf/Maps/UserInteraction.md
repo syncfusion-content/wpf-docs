@@ -450,7 +450,7 @@ The following properties are related to the zooming feature of the Maps control:
 
 #### ZoomLevel
 
-[`ZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomLevel) is the primary property of the zooming feature. It controls the map’s scale size while zooming. Initially, the `ZoomLevel` is set to 1. zoom level cannot be less than 1.
+[`ZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomLevel) is the primary property of the zooming feature. It controls the map's scale size while zooming. Initially, the `ZoomLevel` is set to 1. The zoom level cannot be less than 1.
 
 #### EnableZoom
 
@@ -501,19 +501,19 @@ Maps can be zoomed by using the following methods:
 
 #### Changing the ZoomLevel
 
-A map can be zoomed by changing the zoom level of the Map control. Incrementing the ZoomLevel, zooms in the map, while decrementing the ZoomLevel, zooms it out.
+A map can be zoomed by changing the zoom level of the Map control. Incrementing the ZoomLevel zooms in the map, while decrementing the ZoomLevel zooms it out.
 
 #### Using the Zoom method
 
 Maps can be zoomed using the [`Zoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_Zoom_System_Double_) method. The Zoom method has the parameter zoom value. The map can be zoomed or scaled with the zoom value parameter.
 
-{% highlight C# %}
+{% highlight c# %}
 
    SfMap syncMap = new SfMap();
 
    ShapeFileLayer shapeLayer = new ShapeFileLayer();
 
-   shapeLayer.Uri = "MapApp.ShapeFiles.world1.shp";
+   shapeLayer.Uri = "MapApp.ShapeFiles.world1.shp";
 
    syncMap.Layers.Add(shapeLayer);
 
@@ -525,7 +525,7 @@ Maps can be zoomed using the [`Zoom`](https://help.syncfusion.com/cr/wpf/Syncfus
 
 In addition to the pinching event, the map can be zoomed using the mouse events. The map is zoomed in when the mouse is scrolled up. The map zooms out when the mouse is scrolled down.
 
-![Maps controls Zooming and Padding](Zooming-and-Panning_images/Zooming-and-Panning_img1.png)
+![Maps controls Zooming and Panning](Zooming-and-Panning_images/Zooming-and-Panning_img1.png)
 
 ## Panning the map
 
@@ -574,7 +574,7 @@ The map can be panned with the [`Pan`](https://help.syncfusion.com/cr/wpf/Syncfu
 
 ##### Code sample for the Pan method
 
-{% highlight C# %}
+{% highlight c# %}
 
            SfMap syncMap = new SfMap();
 
@@ -602,18 +602,18 @@ N> The map can be panned only when some parts of the map are outside the view of
 
 ### Calculate a zoom level
 
-This feature allows you to automatically set the initial zoom level automatically in two ways:
+This feature allows you to automatically set the initial zoom level in two ways:
 
 * Distance Radius(KM/miles)
 * Geo-bounds(Northeast, Southwest)
 
 ### Distance radius
 
-N> [`DistanceType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_DistanceType) default value is KiloMeter.
+N> The default value of [`DistanceType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_DistanceType) is KiloMeter.
 
 Calculate the initial zoom level automatically based on the [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_Radius) and [`DistanceType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_DistanceType) properties of ImageryLayer.
 
-* [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_Center) - Represents center point of ImageryLayer.  
+* [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_Center) - Represents the center point of ImageryLayer.  
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -645,30 +645,30 @@ Calculate the initial zoom level automatically based on the [`Radius`](https://h
 
 {% highlight c# %}
 
-            SfMap maps = new SfMap();
-            ImageryLayer layer = new ImageryLayer();
-            layer.Center = new Point(38.909804, -77.043442);
-            layer.Radius = 5;
-            layer.DistanceType = DistanceType.KiloMeter;
-            layer.Markers = obj.Models;
-            layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
-            maps.Layers.Add(layer);
+    SfMap maps = new SfMap();
+    ImageryLayer layer = new ImageryLayer();
+    layer.Center = new Point(38.909804, -77.043442);
+    layer.Radius = 5;
+    layer.DistanceType = DistanceType.KiloMeter;
+    layer.Markers = obj.Models;
+    layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
+    maps.Layers.Add(layer);
 			
-	  public class Model
-      {
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
-      }
-			
-	   public class ViewModel
-       {
-          public ObservableCollection<Model> Models { get; set; }
-          public ViewModel()
-          {
-            this.Models = new ObservableCollection<Model>();
-            this.Models.Add(new Model() { Latitude = "38.909804", Longitude = "-77.043442" });
-         }
-      }
+    public class Model
+    {
+    public string Longitude { get; set; }
+    public string Latitude { get; set; }
+    }
+        
+    public class ViewModel
+    {
+        public ObservableCollection<Model> Models { get; set; }
+        public ViewModel()
+        {
+        this.Models = new ObservableCollection<Model>();
+        this.Models.Add(new Model() { Latitude = "38.909804", Longitude = "-77.043442" });
+        }
+    }
 
 {% endhighlight %}
 

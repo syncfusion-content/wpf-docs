@@ -9,7 +9,7 @@ documentation: ug
 
 # Interactivity in WPF Range Selector (SfDateTimeRangeNavigator)
 
-The date-time range navigator control provides interactive features such as zooming and panning. This control has a resizable scrollbar, which is used to zoom in large amount of data and navigate to particular timespan by moving the scroll bar.
+The date-time range navigator control provides interactive features such as zooming and panning. This control has a resizable scrollbar, which is used to zoom into a large amount of data and navigate to a particular timespan by moving the scroll bar.
 
 The ZoomPosition and ZoomFactor properties of the chart axis can be bound with the SfDateTimeRangeNavigator.
 
@@ -73,18 +73,18 @@ Description</th></tr>
 <tr>
 <td>
 {{'[`ValueChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ValueChanged)'| markdownify }}</td><td>
-ValueChanged (Object sender, EventArgs e)</td><td>
-This event is triggered when the position of the scrollbar is changed</td></tr>
+ValueChanged(Object sender, EventArgs e)</td><td>
+This event is triggered when the position of the scrollbar is changed.</td></tr>
 <tr>
 <td>
 {{'[`LowerBarLabelsCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerBarLabelsCreated)'| markdownify }}<br/><br/></td><td>
 LowerBarLabelsCreated(Object sender, LowerBarLabelsCreatedEventArgs e)<br/><br/></td><td>
-This event is triggered when the lower bar labels gets created.<br/><br/></td></tr>
+This event is triggered when the lower bar labels are created.<br/><br/></td></tr>
 <tr>
 <td>
 {{'[`HigherBarLabelsCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherBarLabelsCreated)'| markdownify }}<br/><br/></td><td>
 HigherBarLabelsCreated(Object sender, HigherBarLabelsCreatedEventArgs e)<br/><br/></td><td>
-This event is triggered when the upper bar labels gets created.<br/><br/></td></tr>
+This event is triggered when the upper bar labels are created.<br/><br/></td></tr>
 </table>
 
 {% tabs %}
@@ -200,7 +200,7 @@ SfDateTimeRangeNavigator [LeftThumbStyle](https://help.syncfusion.com/cr/wpf/Syn
 
 ### SymbolTemplate
 
-[SymbolTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_SymbolTemplate) can be used for gets or sets the data template for the symbol.
+[SymbolTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_SymbolTemplate) gets or sets the data template for the symbol.
 
 {% tabs %}
 
@@ -258,7 +258,7 @@ The following screenshot illustrates the control after customizing the right thu
 
 ### LineStyle
 
-[`LineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_LineStyle) can be used for gets or sets the style for the thumb line.
+[`LineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_LineStyle) gets or sets the style for the thumb line.
 
 {% tabs %}
 
@@ -296,18 +296,18 @@ The following screenshot illustrates the control after customizing the right thu
 
 ThumbStyle thumbLineStyle1 = new ThumbStyle()
 {
-    LineStyle = grid.Resources["lineStyle1"] as DataTemplate
+    LineStyle = grid.Resources["lineStyle1"] as Style
 };
 
 ThumbStyle thumbLineStyle2 = new ThumbStyle()
 {
-    LineStyle = grid.Resources["lineStyle2"] as DataTemplate
+    LineStyle = grid.Resources["lineStyle2"] as Style
 };
 
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {
-    LineStyle = thumbLineStyle1,
-    LineStyle = thumbLineStyle2
+    LeftThumbStyle = thumbLineStyle1,
+    RightThumbStyle = thumbLineStyle2
 };
 
 {% endhighlight %}

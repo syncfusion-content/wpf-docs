@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Positioning Data Markers in WPF Charts control | Syncfusion
-description: Learn here all about Positioning Data Markers support in Syncfusion® WPF Charts (SfChart) control and more.
+description: Learn here all about Positioning Data Markers support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -54,7 +54,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 ![TopAndBottom Adornment](Adornments_images/TopBottom.png)
 
-Also, you can define the label alignment using  [`HorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_VerticalAlignment) properties.
+Also, you can define the label alignment using [`HorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_VerticalAlignment) properties.
 
 
 ## Label Position

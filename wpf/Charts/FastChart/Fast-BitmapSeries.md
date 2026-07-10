@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Bitmap Series in WPF Charts control | Syncfusion
-description: Learn here all about Fast Bitmap Series support in Syncfusion® WPF Charts (SfChart) control and more.
+description: Learn here all about Fast Bitmap Series support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -423,7 +423,7 @@ chart.Series.Add(fastRangeAreaBitmapSeries)
 
 ![WPF Chart Fast Range Area Bitmap Series](FastChart_Images/wpf-chart-fast-range-area-bitmap-series.png)
 
-The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastRangeAreaBitmapSeries_EnableAntiAliasing) property of FastRangeAreaBitmapSeries as in below code snippet:
+The anti-aliasing mode can be enabled using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastRangeAreaBitmapSeries_EnableAntiAliasing) property of FastRangeAreaBitmapSeries as in below code snippet:
 
 {% tabs %}
 

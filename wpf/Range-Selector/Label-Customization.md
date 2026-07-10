@@ -167,7 +167,7 @@ Description</th></tr>
 <tr>
 <td>
 {{'[`LabelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LabelBarStyle.html)'| markdownify }}</td><td>
-Allows to customize the label style using the LabelBarStyle property, and this property can be applied to the {{'[`HigherLevelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherLevelBarStyle)'| markdownify }} or {{'[`LowerLevelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerLevelBarStyle)'| markdownify }}.</td></tr>
+Customizes the label style using the LabelBarStyle property. This property can be applied to the {{'[`HigherLevelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherLevelBarStyle)'| markdownify }} or {{'[`LowerLevelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerLevelBarStyle)'| markdownify }}.</td></tr>
 <tr>
 <td>
 {{'[`SelectedLabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LabelBarStyle.html#Syncfusion_UI_Xaml_Charts_LabelBarStyle_SelectedLabelStyle)'| markdownify }}</td><td>
@@ -221,11 +221,11 @@ The following screenshot illustrates setting the Label HorizontalAlignment to le
 
 ![Label customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img2.png)
 
-### Visibility of label bar 
- 
-SfDateTimeRangeNavigator provides support to customize the visibility of lower bar and upper bar using the `LowerLabelBarVisibility` and `UpperLabelBarVisibility` types.
+### Visibility of label bar
 
-## RangePadding Customization
+SfDateTimeRangeNavigator provides support to customize the visibility of the lower bar and upper bar using the `LowerLabelBarVisibility` and `UpperLabelBarVisibility` properties.
+
+## RangePadding customization
 
 The date-time range navigator supports the following types of padding.
 
@@ -261,7 +261,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator
 
 ### Round
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RangePadding) property is Round, range will be rounded to the nearest possible value by the interval.
+When the value of the [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RangePadding) property is `Round`, the range will be rounded to the nearest possible value by the interval.
 
 {% tabs %}
 

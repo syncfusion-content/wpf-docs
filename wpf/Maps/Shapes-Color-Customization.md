@@ -19,7 +19,7 @@ The important property that makes an impact on shape colors is AutoFillColors. T
 
 ## Properties
 
-The below mentioned properties are available in the ShapesSetting property of the ShapeFileLayer. ShapeSetting defines the basic customization settings of shapes in the map. 
+The properties mentioned below are available in the ShapesSetting property of the ShapeFileLayer. ShapeSetting defines the basic customization settings of shapes in the map. 
 
 ### ShapeFill
 
@@ -33,7 +33,7 @@ The below mentioned properties are available in the ShapesSetting property of th
 
 [`ShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStrokeThickness) is a double type property that sets the border thickness of the shape in the map.
 
-These setting works only when `AutoFillColor` is set as false.
+These settings work only when `AutoFillColor` is set to false.
 
 {% tabs %}
 
@@ -112,10 +112,10 @@ Gets or sets the To value of ColorValuePath</td></tr>
 <td>
 {{'[Color](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ColorMapping.html#Syncfusion_UI_Xaml_Maps_ColorMapping_Color)'| markdownify }}</td><td>
 Color</td><td>
-Gets or sets the color values for the given range based on the From and To .</td></tr>
+Gets or sets the color values for the given range based on the From and To.</td></tr>
 </table>
 
-The fill color of a particular bubble fill is determined by its under-bound value and color range. To provide a Tree Map like impact on the map, the data binding should work properly. For example, consider the following color ranges.
+The fill color of a particular bubble is determined by its under-bound value and color range. To provide a Tree Map-like impact on the map, the data binding should work properly. For example, consider the following color ranges.
 
 {% tabs %}
 
@@ -195,13 +195,13 @@ The fill color of a particular bubble fill is determined by its under-bound valu
 
 {% endtabs %}
 
-When under-bound object value is 750000000, then the fill color of the corresponding bubble is set to #3D9FD8. As mentioned earlier, the under-bound value of the bubble is set through the ShapeValuePath in the ShapeSetting.
+When the under-bound object value is 750000000, then the fill color of the corresponding bubble is set to #3D9FD8. As mentioned earlier, the under-bound value of the bubble is set through the ShapeValuePath in the ShapeSetting.
 
-When the under-bound value is under any of the given sorted range or above the sorted range, then the fill is set to Black.
+When the under-bound value is under any of the given sorted ranges or above the sorted range, the fill is set to Black.
 
 AutoFillColor must be set to false to enable the range color mapping.
 
-N> The shape’s under-bound object value must have numeric property and should be mentioned in ShapeValuePath to work on this. The color between the given ranges is applied only to the shapes that have a proper under-bound values. The color for other shapes is the ShapeFill’s color.
+N> The shape's under-bound object value must have a numeric property and should be mentioned in ShapeValuePath to work on this. The color between the given ranges is applied only to the shapes that have a proper under-bound value. The color for other shapes is the ShapeFill's color.
 
 
 ![Maps control Shapes color customization](Shapes-Color-Customization_images/Shapes-Color-Customization_img2.png)
@@ -214,13 +214,13 @@ N> The shape’s under-bound object value must have numeric property and should 
 1. Metro 
 2. CoolBlue 
 
-ColorPalette has to be set in the ShapeSetting’s ColorPalette property. ColorPalette is the enum property that accepts Metro, CoolBlue and CustomPalette.
+ColorPalette has to be set in the ShapeSetting's ColorPalette property. ColorPalette is the enum property that accepts Metro, CoolBlue, and CustomPalette.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-       <syncfusion:SfMap>
+        <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
                 <syncfusion:ShapeFileLayer Uri="DataMarkers.ShapeFiles.usa_state.shp">
                     <syncfusion:ShapeFileLayer.ShapeSettings>
@@ -238,19 +238,19 @@ ColorPalette has to be set in the ShapeSetting’s ColorPalette property. ColorP
 
 {% highlight c# %}
 
-            SfMap map = new SfMap();
-            ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
-            shapeFileLayer.Uri = "DataMarkers.ShapeFiles.usa_state.shp";
-            map.Layers.Add(shapeFileLayer);
+        SfMap map = new SfMap();
+        ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
+        shapeFileLayer.Uri = "DataMarkers.ShapeFiles.usa_state.shp";
+        map.Layers.Add(shapeFileLayer);
 
-            ShapeSetting setting = new ShapeSetting();
-            setting.ColorPalette = ColorPalettes.Metro;          
+        ShapeSetting setting = new ShapeSetting();
+        setting.ColorPalette = ColorPalettes.Metro;          
 
-            ShapeFillSetting shapeFillSetting = new ShapeFillSetting();
-            shapeFillSetting.AutoFillColors = true;
-            setting.FillSetting = shapeFillSetting;
-            shapeFileLayer.ShapeSettings = setting;
-            this.Content = map;
+        ShapeFillSetting shapeFillSetting = new ShapeFillSetting();
+        shapeFillSetting.AutoFillColors = true;
+        setting.FillSetting = shapeFillSetting;
+        shapeFileLayer.ShapeSettings = setting;
+        this.Content = map;
 
 {% endhighlight %}
 {% endtabs %}
@@ -259,9 +259,9 @@ ColorPalette has to be set in the ShapeSetting’s ColorPalette property. ColorP
 
 ## CustomColorPalette
 
-Besides the built-in the color palettes, the custom colors can be defined for the color palette. The custom colors are defined in the `CustomColors` in `ShapeSetting`. CustomColors is the collection property that accepts the `MapColorPalette`. To apply the custom colors, `ColorPalette` must be set to `CustomPalette` and CustomColors should be defined.
+Besides the built-in color palettes, the custom colors can be defined for the color palette. The custom colors are defined in the `CustomColors` in `ShapeSetting`. CustomColors is the collection property that accepts the `MapColorPalette`. To apply the custom colors, `ColorPalette` must be set to `CustomPalette` and CustomColors should be defined.
 
-MapColorPalette contains a property named `FillBrush`. This property sets the fill color of the shape when custom palette is set.
+MapColorPalette contains a property named `FillBrush`. This property sets the fill color of the shape when the custom palette is set.
 
 {% tabs %}
 {% highlight xaml %}
@@ -288,36 +288,38 @@ MapColorPalette contains a property named `FillBrush`. This property sets the fi
 
 {% endhighlight %}
 
-{% highlight c# %}
-            SfMap map = new SfMap();
-            ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
-            shapeFileLayer.Uri = "DataMarkers.ShapeFiles.usa_state.shp";
-            map.Layers.Add(shapeFileLayer);
+{% highlight C# %}
 
-            ShapeSetting setting = new ShapeSetting();
-            setting.ColorPalette = ColorPalettes.CustomPalette;
-            MapColorPalette palette = new MapColorPalette();
-            palette.FillBrush = new SolidColorBrush(Colors.Gray);
-            setting.CustomColors.Add(palette);
+        SfMap map = new SfMap();
+        ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
+        shapeFileLayer.Uri = "DataMarkers.ShapeFiles.usa_state.shp";
+        map.Layers.Add(shapeFileLayer);
 
-            palette = new MapColorPalette();
-            palette.FillBrush = new SolidColorBrush(Colors.Gold);
-            setting.CustomColors.Add(palette);
+        ShapeSetting setting = new ShapeSetting();
+        setting.ColorPalette = ColorPalettes.CustomPalette;
+        MapColorPalette palette = new MapColorPalette();
+        palette.FillBrush = new SolidColorBrush(Colors.Gray);
+        setting.CustomColors.Add(palette);
 
-            palette = new MapColorPalette();
-            palette.FillBrush = new SolidColorBrush(Colors.LightBlue);
-            setting.CustomColors.Add(palette);
+        palette = new MapColorPalette();
+        palette.FillBrush = new SolidColorBrush(Colors.Gold);
+        setting.CustomColors.Add(palette);
 
-            palette = new MapColorPalette();
-            palette.FillBrush = new SolidColorBrush(Colors.LightCyan);
-            setting.CustomColors.Add(palette);
+        palette = new MapColorPalette();
+        palette.FillBrush = new SolidColorBrush(Colors.LightBlue);
+        setting.CustomColors.Add(palette);
 
-            ShapeFillSetting shapeFillSetting = new ShapeFillSetting();
-            shapeFillSetting.AutoFillColors = true;
-            setting.FillSetting = shapeFillSetting;
-            shapeFileLayer.ShapeSettings = setting;
+        palette = new MapColorPalette();
+        palette.FillBrush = new SolidColorBrush(Colors.LightCyan);
+        setting.CustomColors.Add(palette);
 
-            this.Content = map;
+        ShapeFillSetting shapeFillSetting = new ShapeFillSetting();
+        shapeFillSetting.AutoFillColors = true;
+        setting.FillSetting = shapeFillSetting;
+        shapeFileLayer.ShapeSettings = setting;
+
+        this.Content = map;
+        
 {% endhighlight %}
 {% endtabs %}
 

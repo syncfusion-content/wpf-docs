@@ -9,7 +9,7 @@ documentation: ug
 
 # Bubbles in WPF Maps (SfMap)
 
-Bubbles in the [WPF Maps](https://www.syncfusion.com/wpf-controls/map) control represent the under-bound data values of the map. Bubbles are scattered throughout map shapes that contain bound values.
+Bubbles in the [WPF Maps](https://www.syncfusion.com/wpf-controls/map) control represent the under-bound data values of the map. Bubbles are scattered throughout the map shapes that contain bound values.
 
 Bubbles are included when data binding is set as mentioned above and the BubbleMarkerSetting is set. 
 
@@ -30,7 +30,7 @@ Gets or sets whether the colors should be automatically filled.</td></tr>
 <td>
 {{'[MaxSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MaxSize)'| markdownify }}</td><td>
 Double</td><td>
-Get or sets the maximum height and width of the bubble.</td></tr>
+Gets or sets the maximum height and width of the bubble.</td></tr>
 <tr>
 <td>
 {{'[MinSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MinSize)'| markdownify }}</td><td>
@@ -40,7 +40,7 @@ Gets or sets the minimum height and width of the bubble.</td></tr>
 <td>
 {{'[StrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_StrokeThickness)'| markdownify }}</td><td>
 Double</td><td>
-Get or sets the border thickness of the bubbles.</td></tr>
+Gets or sets the border thickness of the bubbles.</td></tr>
 <tr>
 <td>
 {{'[ValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ValuePath)'| markdownify }}</td><td>
@@ -50,7 +50,7 @@ Gets or sets the name of the under-bound property in ItemsSource.</td></tr>
 <td>
 {{'[ColorValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ColorValuePath)'| markdownify }}</td><td>
 String</td><td>
-Gets or sets colors to bubble shape. </td></tr>
+Gets or sets colors to the bubble shape. </td></tr>
 <tr>
 <td>
 {{'[ColorMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ColorMappings)'| markdownify }}</td><td>
@@ -81,7 +81,7 @@ Gets the Size ratio for the bubbles based on the MinSize and MaxSize.</td></tr>
 
 ## Adding Bubbles to a Map
 
-To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the [`AutoFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_AutoFillColor) as true and set the [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Fill) property. Create the Model and ViewModel as illustrated in the [`Data Binding`](https://help.syncfusion.com/wpf/maps/custom-data-binding) topic and add the following code. 
+To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the [`AutoFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_AutoFillColor) to true and set the [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Fill) property. Create the Model and ViewModel as illustrated in the [`Data Binding`](https://help.syncfusion.com/wpf/maps/custom-data-binding) topic and add the following code. 
 
 Also set the [`MaxSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MaxSize), [`MinSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MinSize), and [`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ValuePath) properties as illustrated in the following code example.
 
@@ -233,7 +233,7 @@ Gets or sets the template to customize the bubble.</td></tr>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 ViewModel viewModel = new ViewModel();
 
@@ -351,7 +351,7 @@ The fill color of a particular bubble fill can be determined by its under-bound 
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
             RangeColorMapping rangeColorMapping = new RangeColorMapping();
             rangeColorMapping.From = 314623001;
@@ -395,9 +395,10 @@ The fill color of a particular bubble fill can be determined by its under-bound 
 
 When the under-bound object value is 22789702, the fill color of the corresponding bubble is set to `#7FEB737C`. As mentioned earlier, the under-bound value of the bubble is set using the [`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ValuePath) in the BubbleMarkerSetting.
 
-When the under-bound value is under any of the given sorted range or above the sorted range, then the fill is set as `Black`.
+When the under-bound value is under any of the given sorted ranges or above the sorted range, the fill is set to `Black`.
 
-[`AutoFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_AutoFillColor) must be set as `false` to enable range color mapping.
+[`AutoFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_AutoFillColor) must be set to `false` to enable range color mapping.
+
 ![RangeColorMapping](Bubbles_images/Bubbles_img3.png)
 
 N> You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
