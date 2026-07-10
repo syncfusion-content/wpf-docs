@@ -2,7 +2,7 @@
 layout: post
 title: Date Formatting in WPF DatePicker control | Syncfusion®
 description: Learn here all about Date Formatting support in Syncfusion® WPF DatePicker (SfDatePicker) control and more.
-platform: WPF
+platform: wpf
 control: SfDatePicker
 documentation: ug
 ---
@@ -13,16 +13,22 @@ The [SfDatePicker](https://www.syncfusion.com/wpf-controls/datepicker) control a
 
 ## Display the date using the FormatString
 
- We can edit and display the selected date with various formatting like date, month and year formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_FormatString) property. The default value of `FormatString` property is `"d"`.
+We can edit and display the selected date with various formatting like date, month and year formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_FormatString) property. The default value of `FormatString` property is `"d"`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker x:Name="sfDatePicker" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfDatePicker x:Name="sfDatePicker" 
                          FormatString="M"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Controls.Input;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.FormatString = "M";
@@ -34,16 +40,21 @@ sfDatePicker.FormatString = "M";
 
 ## Specifying format for the DateSelector
 
-We can allow the user to select the pair of date, month and year selector or any single selector cell from the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_SelectorFormatString) property. The default value of `SelectorFormatString` property is `"M/d/yyyy"` and the date, time and year value selector is enabled in the `SfDateSelector`.
+We can allow the user to select the pair of date, month and year selector or any single selector cell from the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_SelectorFormatString) property. The default value of `SelectorFormatString` property is `"M/d/yyyy"` and the day, month and year value selectors are enabled in the `SfDateSelector`.
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:SfDatePicker x:Name="sfDatePicker" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfDatePicker x:Name="sfDatePicker" 
                          SelectorFormatString="M"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Controls.Input;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.SelectorFormatString = "M";
@@ -53,7 +64,7 @@ sfDatePicker.SelectorFormatString = "M";
 
 ![WPF DatePicker Month Selector](Features_images/wpf-datepicker-month-selector.png)
 
-Here, we can only able to select the month value from the `SfDateSelector`
+Here, we are only able to select the month value from the `SfDateSelector`.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Formatting) to download the sample that showcases the edit, display date formatting and date selection formatting by the `SfDatePicker`.
 
