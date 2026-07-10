@@ -9,9 +9,9 @@ documentation: ug
 
 # Surface Area in WPF Surface Chart (SfSurfaceChart)
 
-Surface area represents the entire surface chart and all its elements. It's a virtual rectangle area that includes all the surface elements like axis, color bar, wall etc. 
+The surface area represents the entire surface chart and all its elements. It is a virtual rectangular area that includes all the surface elements like axis, color bar, wall, etc. 
 
-The surface chart can be customized to enrich your application’s look and feel. SfSurfaceChat provides API’s to customize surface area based on your requirement. This section explains about the elements and API for common customization of surface area.
+The surface chart can be customized to enrich your application's look and feel. SfSurfaceChart provides APIs to customize the surface area based on your requirement. This section explains the elements and APIs for common customization of the surface area.
 
 ## Properties
 
@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 {{'[EnableRotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_EnableRotation)'| markdownify }}<br/><br/></td><td>
-Gets or sets the bool value that represent the value to enable the rotation for surface chart.  <br/><br/></td></tr>
+Gets or sets a bool value that enables rotation for the surface chart.  <br/><br/></td></tr>
 <tr>
 <td>
 {{'[Rotate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_Rotate)'| markdownify }}<br/><br/></td><td>
@@ -67,7 +67,7 @@ Gets or sets a brush for wireframe stroke.  <br/><br/></td></tr>
 <tr>
 <td>
 {{'[Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_Palette)'| markdownify }}<br/><br/></td><td>
-Gets or sets the color palette for the chart surface chart.  <br/><br/></td></tr>
+Gets or sets the color palette for the surface chart.  <br/><br/></td></tr>
 <tr>
 <td>
 {{'[ZoomLevel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ZoomLevel)'| markdownify }}<br/><br/></td><td>
@@ -143,22 +143,22 @@ The following code sample explains the customization of surface area.
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.Type = SurfaceType.WireframeSurface;
-            chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
-            chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
-            chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
-            chart.XBindingPath = "X";
-            chart.YBindingPath = "Y";
-            chart.ZBindingPath = "Z";
-            chart.BrushCount = 4;
-            chart.LeftWallBrush = new SolidColorBrush(Colors.BlanchedAlmond);
-            chart.WireframeStroke = new SolidColorBrush(Colors.Green);
-            chart.WireframeStrokeThickness = 1;
-            chart.CameraProjection = CameraProjection.Perspective;
-            chart.Tilt = 10;
-            chart.Rotate = 20;
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.Type = SurfaceType.WireframeSurface;
+chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
+chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
+chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
+chart.XBindingPath = "X";
+chart.YBindingPath = "Y";
+chart.ZBindingPath = "Z";
+chart.BrushCount = 4;
+chart.LeftWallBrush = new SolidColorBrush(Colors.BlanchedAlmond);
+chart.WireframeStroke = new SolidColorBrush(Colors.Green);
+chart.WireframeStrokeThickness = 1;
+chart.CameraProjection = CameraProjection.Perspective;
+chart.Tilt = 10;
+chart.Rotate = 20;
+grid.Children.Add(chart);
 
 {% endhighlight %}
 
