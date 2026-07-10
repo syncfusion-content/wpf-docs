@@ -32,13 +32,17 @@ You can use the [DropDownView](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit DropDownView="Combined" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   <syncfusion:DateTimeEdit DropDownView="Combined" 
                          Pattern="FullDateTime"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.DropDownView = DropDownViews.Combined;
@@ -64,13 +68,17 @@ The TimeStepInterval property allows you to define a custom increment or decreme
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit DropDownView="Clock" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   <syncfusion:DateTimeEdit DropDownView="Clock" 
                          Name="dateTimeEdit"
-                         TimeStepInterval=3/>
+                         TimeStepInterval="3"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.DropDownView = DropDownViews.Clock;
@@ -85,18 +93,21 @@ You can customize the dropdown button appearance by using the [DropDownButtonTem
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit DropDownView="Calendar"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   <syncfusion:DateTimeEdit DropDownView="Calendar"
                          Name="dateTimeEdit">
-    <syncfusion:DateTimeEdit.DropDownButtonTemplate>
-        <ControlTemplate>
-            <Border Background="Red">
-                <Border Background="Green"
-                        Margin="3"/>
-            </Border>
-        </ControlTemplate>
-    </syncfusion:DateTimeEdit.DropDownButtonTemplate>
-</syncfusion:DateTimeEdit>
+        <syncfusion:DateTimeEdit.DropDownButtonTemplate>
+            <ControlTemplate>
+                <Border Background="Red">
+                    <Border Background="Green"
+                            Margin="3"/>
+                </Border>
+            </ControlTemplate>
+        </syncfusion:DateTimeEdit.DropDownButtonTemplate>
+    </syncfusion:DateTimeEdit>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -117,13 +128,17 @@ You can select the today date and time by setting the [TodayButtonAction](https:
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit TodayButtonAction="DateTime"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit TodayButtonAction="DateTime"
                          Pattern="FullDateTime"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.TodayButtonAction = TodayButtonAction.DateTime;
@@ -142,12 +157,16 @@ You can easily reset the selected datetime value with null value by clicking the
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit IsEmptyDateEnabled="True" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit IsEmptyDateEnabled="True" 
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.IsEmptyDateEnabled = true;
@@ -165,29 +184,33 @@ You can change the popup calendar month names by adding the respective new names
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit Name="dateTimeEdit" >
-    <syncfusion:DateTimeEdit.AbbreviatedMonthNames>
-        <x:Array Type="sys:String" 
-                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
-            <sys:String>[1]Jan</sys:String>
-            <sys:String>[2]Feb</sys:String>
-            <sys:String>[3]Mar</sys:String>
-            <sys:String>[4]Apr</sys:String>
-            <sys:String>[5]May</sys:String>
-            <sys:String>[6]Jun</sys:String>
-            <sys:String>[7]Jul</sys:String>
-            <sys:String>[8]Aug</sys:String>
-            <sys:String>[9]Sep</sys:String>
-            <sys:String>[10]Oct</sys:String>
-            <sys:String>[11]Nov</sys:String>
-            <sys:String>[12]Dec</sys:String>
-        </x:Array>
-    </syncfusion:DateTimeEdit.AbbreviatedMonthNames>    
-</syncfusion:DateTimeEdit>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Name="dateTimeEdit" >
+        <syncfusion:DateTimeEdit.AbbreviatedMonthNames>
+            <x:Array Type="sys:String" 
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                <sys:String>[1]Jan</sys:String>
+                <sys:String>[2]Feb</sys:String>
+                <sys:String>[3]Mar</sys:String>
+                <sys:String>[4]Apr</sys:String>
+                <sys:String>[5]May</sys:String>
+                <sys:String>[6]Jun</sys:String>
+                <sys:String>[7]Jul</sys:String>
+                <sys:String>[8]Aug</sys:String>
+                <sys:String>[9]Sep</sys:String>
+                <sys:String>[10]Oct</sys:String>
+                <sys:String>[11]Nov</sys:String>
+                <sys:String>[12]Dec</sys:String>
+            </x:Array>
+        </syncfusion:DateTimeEdit.AbbreviatedMonthNames>    
+    </syncfusion:DateTimeEdit>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.AbbreviatedMonthNames = new string[]
@@ -215,28 +238,32 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change weekday names
 
-You can change the popup calendar week day names by adding the respective new names to the [AbbreviatedMonthNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_AbbreviatedMonthNames) property. The default value of `AbbreviatedMonthNames` property is `null`.
+You can change the popup calendar week day names by adding the respective new names to the [ShortestDayNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_ShortestDayNames) property. The default value of `ShortestDayNames` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit Name="dateTimeEdit" >
-    <syncfusion:DateTimeEdit.ShortestDayNames>
-        <x:Array Type="sys:String" 
-                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
-            <sys:String>Sunday</sys:String>
-            <sys:String>Monday</sys:String>
-            <sys:String>Tuesday</sys:String>
-            <sys:String>Wednesday</sys:String>
-            <sys:String>Thursday</sys:String>
-            <sys:String>Friday</sys:String>
-            <sys:String>Saturday</sys:String>
-        </x:Array>
-    </syncfusion:DateTimeEdit.ShortestDayNames>    
-</syncfusion:DateTimeEdit>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Name="dateTimeEdit" >
+        <syncfusion:DateTimeEdit.ShortestDayNames>
+            <x:Array Type="sys:String" 
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                <sys:String>Sunday</sys:String>
+                <sys:String>Monday</sys:String>
+                <sys:String>Tuesday</sys:String>
+                <sys:String>Wednesday</sys:String>
+                <sys:String>Thursday</sys:String>
+                <sys:String>Friday</sys:String>
+                <sys:String>Saturday</sys:String>
+            </x:Array>
+        </syncfusion:DateTimeEdit.ShortestDayNames>    
+    </syncfusion:DateTimeEdit>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.ShortestDayNames= new string[]
@@ -263,12 +290,16 @@ You can open the dropdown popup with some delay after clicking the dropdown butt
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit PopupDelay="0:0:2"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit PopupDelay="0:0:2"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.PopupDelay = new TimeSpan(0, 0, 2);
@@ -284,12 +315,16 @@ You can restrict the user to select the datetime from the dropdown popup calenda
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit IsButtonPopUpEnabled="False"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit IsButtonPopUpEnabled="False"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.IsButtonPopUpEnabled = false;
