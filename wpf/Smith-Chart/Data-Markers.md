@@ -9,13 +9,13 @@ documentation: ug
 
 # Data Markers in WPF Smith Chart (SfSmithChart)
 
-Data markers are used to provide information about data point to the user. You can add a shape and label to adorn each data point.
+Data markers are used to provide information about data points to the user. You can add a shape and label to adorn each data point.
 
 ## Add Shapes
 
-Shapes can be added to line series to indicate each data point and it also can be added to the chart by enabling the `ShowMarker` option of the *Series* property. There are different shapes can be added to the chart by using the `MarkerType` option such as rectangle, circle, diamond, etc.
+Shapes can be added to a line series to indicate each data point and they can also be added to the chart by enabling the `ShowMarker` option of the *Series* property. Different shapes can be added to the chart by using the `MarkerType` option such as rectangle, circle, diamond, etc.
 
-The following code example explains how to enable series marker and add shapes,
+The following code example explains how to enable the series marker and add shapes,
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ chart.Series.Add(series);
 
 ## Customizing Marker
 
-The markers interior, stroke, and size can be customized as demonstrated in the below code snippet.
+The marker's interior, stroke, and size can be customized as demonstrated in the below code snippet.
 
 {% tabs %}
 
@@ -75,9 +75,9 @@ chart.Series.Add(series);
 
 **MarkerTemplate**
 
-Apart from the shapes, custom shapes also can be added to mark the data point by using the `MarkerTemplate` property.  To add custom shapes, define the *MarkerType* as **Custom**.
+Apart from the shapes, custom shapes can also be added to mark the data point by using the `MarkerTemplate` property.  To add custom shapes, define the *MarkerType* as **Custom**.
 
-The following code example illustrates  how to add custom shapes,
+The following code example illustrates how to add custom shapes,
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ chart.Series.Add(series);
 
 ## Add Labels
 
-Data label can be added to a chart series by setting the `ShowLabel` property as True in the series **DataLabel** option. By default, the data labels are displayed on top of the data point and it can be automatically adjusted its position when collide with another label.
+A data label can be added to a chart series by setting the `ShowLabel` property as True in the series **DataLabel** option. By default, the data labels are displayed on top of the data point and their position can be automatically adjusted when colliding with another label.
 
 {% tabs %}
 
@@ -137,7 +137,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-N> The position changed data label will be connected by using connector line and the label will be hidden if there is no place to position it around the data point.
+N> The position-changed data label will be connected by using a connector line and the label will be hidden if there is no place to position it around the data point.
 
 The following screenshot illustrates how the data labels can be positioned.
 
@@ -145,7 +145,7 @@ The following screenshot illustrates how the data labels can be positioned.
 
 **LabelStyle**
 
-The style for the data label can be defined by using *LabelStyle* property of **DataLabel**.
+The style for the data label can be defined by using the *LabelStyle* property of **DataLabel**.
 
 {% tabs %}
 
@@ -185,7 +185,7 @@ chart.Series.Add(series);
 
 **LabelTemplate**
 
-The label content can be formatted and customized by  using *LabelTemplate* property of **DataLabel**.  The following code example illustrates how the label content can be formatted and customized.
+The label content can be formatted and customized by using the *LabelTemplate* property of **DataLabel**.  The following code example illustrates how the label content can be formatted and customized.
 
 {% tabs %}
 

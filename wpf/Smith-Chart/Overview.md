@@ -9,9 +9,9 @@ documentation: ug
 
 # WPF Smith Chart (SfSmithChart) Overview
 
-Smith chart is one of the most useful data visualization tools for high frequency circuit applications. It contains two sets of circles to plot the parameters of transmission lines.
+The Smith chart is one of the most useful data visualization tools for high-frequency circuit applications. It contains two sets of circles to plot the parameters of transmission lines.
 
-SfSmithChart provides a perfect way to visualize data with high level of user interactivity that focuses on development, productivity, and simplicity of use. 
+SfSmithChart provides a perfect way to visualize data with a high level of user interactivity that focuses on development, productivity, and simplicity of use. 
 
 ![Overview_img1](Overview_images/Overview_img1.png)
     
@@ -25,6 +25,6 @@ SfSmithChart provides a perfect way to visualize data with high level of user in
 * Interactive tooltip support.
 * Interactive legend.
 * Customizable colors.
-* Allows to map the data from the specified path by achieving [data binding]() concept.
+* Allows mapping the data from the specified path by achieving the [data binding]() concept.
  
 
