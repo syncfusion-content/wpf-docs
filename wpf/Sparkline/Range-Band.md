@@ -9,7 +9,7 @@ documentation: ug
 
 # Range Band in WPF Sparkline (SfSparkline)
 
-The Range band feature is used to highlight the particular mentioned range along Y axis.
+The range band feature is used to highlight a particular range along the Y axis.
 
 {% tabs %}
 
@@ -29,7 +29,7 @@ The Range band feature is used to highlight the particular mentioned range along
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-    ItemsSource = new SparkViewModel().UsersList,
+    ItemsSource = new UsersViewModel().UsersList,
     YBindingPath = "NoOfUsers",
     BandRangeStart = 2000,
     BandRangeEnd = -1000,
@@ -40,6 +40,6 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-The following is the snapshot for range band.
+The following is a snapshot of the range band.
 
 ![Range-Band_img1](Range-Band_images/Range-Band_img1.png)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Customize segment brush in WPF Sparkline (SfSparkline)
 
-We can able to customize the first, last, negative, high and low point brushes as like markers in area and line sparkline.
+You can customize the first, last, negative, high, and low point brushes, similar to markers, in area and line sparklines.
 
 {% tabs %}
 
@@ -34,7 +34,7 @@ We can able to customize the first, last, negative, high and low point brushes a
 
 SfColumnSparkline sparkline = new SfColumnSparkline()
 {
-    ItemsSource = new SparkViewModel().UsersList,
+    ItemsSource = new UsersViewModel().UsersList,
     YBindingPath = "NoOfUsers"
 };
 
@@ -51,6 +51,6 @@ sparkline.SegmentTemplateSelector = selector;
 
 {% endtabs %}
 
-The following is a snapshot of the customize segment.
+The following is a snapshot of the customized segment.
 
 ![Customize-segment-brush_img1](Customize-segment-brush_images/Customize-segment-brush_img1.png)
