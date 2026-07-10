@@ -19,7 +19,7 @@ This section provides a quick overview of working with the WPF [DateTimeEdit](ht
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#datetimeedit) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link: [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
+You can find more details about installing the NuGet package in a WPF application in the following link: [How to install nuget packages](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages)
 
 ## Creating an application with the DateTimeEdit control
 
