@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF TimeSpan Editor control | Syncfusion®
 description: Learn here about getting started with Syncfusion® WPF TimeSpan Editor (TimeSpanEdit) control, its elements and more.
-platform: WPF
+platform: wpf
 control: TimeSpanEdit
 documentation: ug
 ---
@@ -36,7 +36,7 @@ You can add the `WPF TimeSpan Editor` (TimeSpanEdit) control to an application b
 To add the `TimeSpanEdit` control manually in XAML, follow these steps:
 1. Create a new WPF project in Visual Studio.
 
-2. Add the  following assembly references to the project,
+2. Add the following assembly references to the project,
     * Syncfusion.Shared.WPF
  
 3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `TimeSpanEdit` control in XAML page.
@@ -70,7 +70,7 @@ To add the `TimeSpanEdit` control manually in C#, follow these steps:
 
 1. Create a new WPF application via Visual Studio.
 
-2. Add the  following assembly references to the project,
+2. Add the following assembly references to the project,
     * Syncfusion.Shared.WPF
 
 3. Include the required namespace and create an instance of `TimeSpanEdit` and add it to the window.
@@ -81,14 +81,14 @@ To add the `TimeSpanEdit` control manually in C#, follow these steps:
 {% tabs %}
 {% highlight C# %}
 
-using Syncfusion.Windows.Tools.Controls;
+using Syncfusion.Windows.Shared;
 
 public partial class MainWindow : Window {
     public MainWindow() {
         InitializeComponent();
 
         //Creating an instance of TimeSpanEdit control
-        TimeSpanEdit timeSpanEdit = new timeSpanEdit();
+        TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
         timeSpanEdit.Width = 100;
         timeSpanEdit.Height = 25;        
 
@@ -111,11 +111,17 @@ You can set or change the selected time of the `TimeSpanEdit` programmatically b
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TimeSpanEdit Value="10.11:32:43"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:TimeSpanEdit Value="10.11:32:43"
                          Name="timeSpanEdit" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Shared;
 
 TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
 timeSpanEdit.Value = new TimeSpan(10, 11, 32, 43);
@@ -129,7 +135,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Change display format of time span
 
-You can format the each fields to show what the numerals denotes i.e. hours, minutes or days by using the [Format](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_Format) property. The default value of `Format` is `d.h:m:s`. You can show only the days, hours or minutes values by using any one the following respective fields to the `Format` property.
+You can format each field to show what the numerals denote, i.e. days, hours, or minutes by using the [Format](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_Format) property. The default value of `Format` is `d.h:m:s`. You can show only the days, hours or minutes values by using any one of the following respective fields to the `Format` property.
 
 * d - It displays the days value.
 * h - It displays the hours value.
@@ -139,12 +145,18 @@ You can format the each fields to show what the numerals denotes i.e. hours, min
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TimeSpanEdit Format="d 'days' h 'hours' m 'minutes' s 'sec'" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:TimeSpanEdit Format="d 'days' h 'hours' m 'minutes' s 'sec'" 
                          Value="25.08:33:10"
                          Name="timeSpanEdit" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Shared;
 
 TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
 timeSpanEdit.Format = "d 'days' h 'hours' m 'minutes' s 'sec'";
@@ -164,11 +176,17 @@ The selected time span changed in `TimeSpanEdit` can be examined using [ValueCha
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TimeSpanEdit ValueChanged="TimeSpanEdit_ValueChanged"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:TimeSpanEdit ValueChanged="TimeSpanEdit_ValueChanged"
                          Name="timeSpanEdit" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Shared;
 
 TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
 timeSpanEdit.ValueChanged += TimeSpanEdit_ValueChanged;
@@ -192,18 +210,24 @@ private void TimeSpanEdit_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 ## Restrict the time within minimum and maximum time span
 
-The selecting time in `TimeSpanEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits , the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_MaxValue) properties.
+The selecting time in `TimeSpanEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits, the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_MaxValue) properties.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TimeSpanEdit MinValue="2.0:0:0"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:TimeSpanEdit MinValue="2.0:0:0"
                          MaxValue="10.0:0:0"
                          Value="5.2:25:52" 
                          Name="timeSpanEdit" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Shared;
 
 TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
 timeSpanEdit.MinValue = new TimeSpan(2, 0, 0, 0);
@@ -219,9 +243,9 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Localization support
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `TimeSpanEdit` control by adding resource file for each language.
+Localization is the process of translating the application resources into different languages for the specific cultures. You can localize the `TimeSpanEdit` control by adding resource file for each language.
 
-Refer the following links to know more about how provide a localization support for the `TimeSpanEdit`,
+Refer the following links to know more about how to provide localization support for the `TimeSpanEdit`,
 
 * [https://help.syncfusion.com/wpf/localization](https://help.syncfusion.com/wpf/localization)
 * [https://github.com/syncfusion/wpf-controls-localization-resx-files](https://github.com/syncfusion/wpf-controls-localization-resx-files)

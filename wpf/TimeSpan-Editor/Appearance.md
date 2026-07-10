@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF TimeSpan Editor control | Syncfusion®
 description: Learn here all about Appearance support in Syncfusion® WPF TimeSpan Editor (TimeSpanEdit) control and more.
-platform: WPF
+platform: wpf
 control: TimeSpanEdit
 documentation: ug
 ---
@@ -13,18 +13,24 @@ This section explains different UI customization and theming options available i
 
 ## Setting the background
 
-You can change the background color and selection color of `TimeSpanEdit` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `White` and `SelectionBrush` property is `Royal Blue`.
+You can change the background color and selection color of `TimeSpanEdit` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `White` and `SelectionBrush` property is `RoyalBlue`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TimeSpanEdit Background="Yellow"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:TimeSpanEdit Background="Yellow"
                          SelectionBrush="Red"
                          Value="35.12:45:52"
                          Name="timeSpanEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Shared;
 
 TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
 timeSpanEdit.Background = Brushes.Yellow;
@@ -45,12 +51,18 @@ You can change the foreground color by using the `Foreground` property. The defa
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TimeSpanEdit Foreground="Red"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:TimeSpanEdit Foreground="Red"
                          Value="35.12:45:52"
                          Name="timeSpanEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Shared;
 
 TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
 timeSpanEdit.Foreground = Brushes.Red;
@@ -70,12 +82,17 @@ You can change the flow direction of the `TimeSpanEdit` layout from right to lef
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TimeSpanEdit FlowDirection="RightToLeft"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:TimeSpanEdit FlowDirection="RightToLeft"
                          Value="35.12:45:52"
                          Name="timeSpanEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
 timeSpanEdit.FlowDirection = FlowDirection.RightToLeft;
