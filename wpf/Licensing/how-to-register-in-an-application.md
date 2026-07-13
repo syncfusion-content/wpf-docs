@@ -9,7 +9,7 @@ documentation: ug
 
 # Register Syncfusion license key in a WPF application
 
-The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license
+The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
 
 **Registering a single license key**
 
