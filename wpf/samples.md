@@ -72,7 +72,7 @@ Online samples let you explore Syncfusion<sup>&reg;</sup> WPF controls without i
 
 ### Download showcase demos from online
 
-See the repository's `README.md` for the required .NET SDK / Visual Studio version.
+See the repository's `README` for the required .NET SDK / Visual Studio version.
 
 1. Clone the repository:
 
