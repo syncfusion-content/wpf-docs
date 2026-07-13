@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Control Dependencies and Dependency assembly | WPF | Syncfusion
-description: Control and it's Dependency assembly or NuGet reference details for Syncfusion Essential Studio WPF products
+title: Control Dependencies and Dependency Assemblies | WPF | Syncfusion
+description: Control and its dependency assembly or NuGet reference details for Syncfusion Essential Studio WPF products
 platform: wpf
 control: Control Dependencies
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Control Dependencies in Syncfusion<sup>&reg;</sup>'s WPF Controls
 
-This section contains a list of assembly or NuGet references required to use any control in the  application. You can refer to the [installation and deployment section](https://help.syncfusion.com/wpf/installation-and-upgrade/system-requirements) to know about assembly installation location and [NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages) section to know how to add NuGet reference.
+This section contains a list of assembly or NuGet references required to use any control in the application. You can refer to the [installation and deployment section](https://help.syncfusion.com/wpf/installation-and-upgrade/system-requirements) to know where the assemblies are installed and the [NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages) section to know how to add a NuGet reference.
 
-You can refer to the [syncfusion controls section](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add syncfusion<sup>&reg;</sup> control.
+You can refer to the [Syncfusion controls section](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add a Syncfusion<sup>&reg;</sup> control.
 
-N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion WPF controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key), for more information.
+N> Starting with version 16.2 (2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as a reference for all the Syncfusion WPF controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
 
 ## AutoComplete
 
@@ -555,7 +555,7 @@ Syncfusion.OlapChart.WPF
 
 ### Exporting OLAP chart to PDF, Word, and Image
 
-In addition to the above assemblies, the following reference needs to be added to export OLAP chart contents to PDF, word, and image.
+In addition to the above assemblies, the following reference needs to be added to export OLAP chart contents to PDF, Word, and Image.
 
 <table>
 <tr>
@@ -649,7 +649,7 @@ Syncfusion.OlapGrid.WPF
 
 ### Exporting OLAP grid to Excel, Word, PDF, and CSV
 
-In addition to the above assemblies, the following reference needs to be added to export OLAP grid contents to excel, word, PDF, and CSV.
+In addition to the above assemblies, the following reference needs to be added to export OLAP grid contents to Excel, Word, PDF, and CSV.
 
 <table>
 <tr>
@@ -744,7 +744,7 @@ Syncfusion.PivotTable.Wpf
 
 ### Exporting pivot grid to Excel, Word, PDF, and CSV
 
-In addition to the above assemblies, the following reference needs to be added to export pivot grid contents to excel, word, PDF, and CSV.
+In addition to the above assemblies, the following reference needs to be added to export pivot grid contents to Excel, Word, PDF, and CSV.
 <table>
 <tr>
 <th>Assembly references </th>
@@ -859,10 +859,10 @@ Syncfusion.OfficeChart.Base <br/>
 Syncfusion.RichTextBoxAdv.WPF <br/>
 Syncfusion.Shared.WPF 
 <br/>
-For 3.5 and 4.0 frameworks: <br/>
+For .NET Framework 3.5 and 4.0: <br/>
 Syncfusion.DocIO.ClientProfile <br/>
 <br/>
-For 4.5 and higher frameworks: <br/>
+For .NET Framework 4.5 and higher: <br/>
 Syncfusion.DocIO.Base 
 </td>
 <td> 
@@ -1120,7 +1120,7 @@ Syncfusion.SfGrid.WPF
 </table>
 
 ### Exporting DataGrid to Excel, PDF, and CSV
-The following reference needs to be added in your application for exporting DataGrid to excel, pdf, and csv.
+The following reference needs to be added in your application for exporting DataGrid to Excel, PDF, and CSV.
 
 <table>
 <tr>
@@ -1576,9 +1576,9 @@ Syncfusion.Compression.Base <br/>
 Syncfusion.OfficeChart.Base <br/>
 Syncfusion.Shared.WPF 
 <br/>
-For 3.5 and 4.0 frameworks: <br/>
+For .NET Framework 3.5 and 4.0: <br/>
 Syncfusion.DocIO.ClientProfile <br/>
-For 4.5 and higher frameworks: <br/>
+For .NET Framework 4.5 and higher: <br/>
 Syncfusion.DocIO.Base 
 </td>
 <td> 
@@ -1603,9 +1603,9 @@ Syncfusion.SfRichTextBoxAdv.WPF <br/>
 Syncfusion.Shared.WPF <br/>
 Syncfusion.Tools.WPF 
 <br/>
-For 3.5 and 4.0 frameworks: <br/>
+For .NET Framework 3.5 and 4.0: <br/>
 Syncfusion.DocIO.ClientProfile <br/>
-For 4.5 and higher frameworks: <br/>
+For .NET Framework 4.5 and higher: <br/>
 Syncfusion.DocIO.Base 
 </td>
 <td> 
@@ -1716,7 +1716,7 @@ Syncfusion.SfSpreadsheetHelper.WPF
 
 ### Exporting SfSpreadsheet to PDF
 
-The following references need to be added in your application for exporting SfSpreadsheet to pdf.
+The following references need to be added in your application for exporting SfSpreadsheet to PDF.
 
 <table>
 <tr>
@@ -1860,7 +1860,7 @@ Syncfusion.SfGrid.WPF
 
 ### Exporting TreeGrid to Excel, PDF, and CSV
 
-The following references need to be added in your application for exporting TreeGrid to excel, pdf, and csv.
+The following references need to be added in your application for exporting TreeGrid to Excel, PDF, and CSV.
 <table>
 <tr>
 <th>Assembly references </th>
