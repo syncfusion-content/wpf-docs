@@ -8,19 +8,20 @@ documentation: ug
 ---
 # Add Syncfusion<sup>&reg;</sup> WPF Controls
 
-The Syncfusion<sup>&reg;</sup> WPF controls can be added in a Visual Studio projects by using either of the following ways:
+The Syncfusion<sup>&reg;</sup> WPF controls can be added to a Visual Studio project by using any of the following ways:
 
 * Using Designer
+* Using XAML
 * Using Code-Behind
 * Using Project Template
 
 ## Using Designer
 
-Syncfusion<sup>&reg;</sup> UI for WPF are added automatically to the Visual Studio Toolbox during installation. The following steps help you to add the required Essential<sup>&reg;</sup> WPF control using drag and drop from the Toolbox. For example: **SfTextBoxExt**
+Syncfusion<sup>&reg;</sup> UI for WPF controls are added automatically to the Visual Studio Toolbox during the installation. The following steps help you to add the required Essential<sup>&reg;</sup> WPF control using drag and drop from the Toolbox. For example: **SfTextBoxExt**
 
 1. Create a WPF project in Visual Studio.
 
-2. Find **SfTextBoxExt** by typing the name of the "SfTextBoxExt" in the search box.
+2. Find **SfTextBoxExt** by typing "SfTextBoxExt" in the search box of the Toolbox.
 
 ![Drag and drop from toolbox](ThroughDragndDrop_images/AddSyncfusionControls_img1.jpeg)
 
@@ -28,9 +29,9 @@ Syncfusion<sup>&reg;</sup> UI for WPF are added automatically to the Visual Stud
 
 ![WPF TextBoxExt control](ThroughDragndDrop_images/AddSyncfusionControls_img2.jpeg)
 
-### Using XAML
+## Using XAML
 
-The following steps help you to add a required Essential<sup>&reg;</sup> WPF Control using XAML Code, for example: **SfTextBoxExt**.
+The following steps help you to add the required Essential<sup>&reg;</sup> WPF control using XAML, for example: **SfTextBoxExt**.
 
 1. Create a WPF project in Visual Studio and refer the following assemblies:
 
@@ -47,7 +48,7 @@ The following steps help you to add a required Essential<sup>&reg;</sup> WPF Con
 <Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
 {% endhighlight %}
 
@@ -55,7 +56,7 @@ The following steps help you to add a required Essential<sup>&reg;</sup> WPF Con
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. Now, add the SfTextBoxExt control with a required optimal name using the included namespace.
+3. Now, add the SfTextBoxExt control with the required name using the included namespace.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -72,7 +73,7 @@ The following steps help you to add a required Essential<sup>&reg;</sup> WPF Con
 
 ## Using Code-Behind
 
-Syncfusion<sup>&reg;</sup> UI for WPF can be added at runtime using C# / VB. The following steps help you to add required Essential<sup>&reg;</sup> WPF control using code. For example: **SfTextBoxExt**.
+Syncfusion<sup>&reg;</sup> UI for WPF controls can be added at runtime using C# / VB. The following steps help you to add a required Essential<sup>&reg;</sup> WPF control using code. For example: **SfTextBoxExt**.
 
 1. Create a WPF project in Visual Studio and refer to the following assemblies:
 
@@ -86,13 +87,17 @@ Syncfusion<sup>&reg;</sup> UI for WPF can be added at runtime using C# / VB. The
 
 {% highlight C# %}
 
-Syncfusion.Windows.Controls.Input.SfTextBoxExt textBoxExt1 = new Syncfusion.Windows.Controls.Input.SfTextBoxExt();
+using Syncfusion.Windows.Controls.Input;
+
+SfTextBoxExt textBoxExt1 = new SfTextBoxExt();
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim textBoxExt1 As New Syncfusion.Windows.Controls.Input.SfTextBoxExt()
+Imports Syncfusion.Windows.Controls.Input
+
+Dim textBoxExt1 As New SfTextBoxExt()
 
 {% endhighlight %}
 
@@ -100,7 +105,7 @@ Dim textBoxExt1 As New Syncfusion.Windows.Controls.Input.SfTextBoxExt()
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-3. Set the Size and Alignment of the control with required value.
+3. Set the Size and Alignment of the control with the required values.
  
 {% capture codesnippet4 %}
 {% tabs %}
@@ -129,21 +134,24 @@ textBoxExt1.HorizontalAlignment = HorizontalAlignment.Center
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-4. Add the created instance to the parent window (or the needed layout panels).
+4. Add the created instance to the parent window (or to a layout panel such as a `Grid`).
 
 {% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight C# %}
 
-// Here this denotes parent Window
-this.Content = textBoxExt1; 
+// Add to parent Window (replaces existing content)
+this.Content = textBoxExt1;
+
+// Or add to an existing layout panel, e.g., a Grid named "rootGrid"
+// rootGrid.Children.Add(textBoxExt1);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-' Here this denotes parent Window
+' Add to parent Window (replaces existing content)
 Me.Content = textBoxExt1
 
 {% endhighlight %}
@@ -156,21 +164,21 @@ Me.Content = textBoxExt1
 
 ## Using Project Template
 
-Syncfusion<sup>&reg;</sup> provides the Visual Studio Project Templates for the Syncfusion<sup>&reg;</sup> WPF platform to create Syncfusion<sup>&reg;</sup> WPF Application. 
+Syncfusion<sup>&reg;</sup> provides Visual Studio Project Templates for the Syncfusion<sup>&reg;</sup> WPF platform to create a Syncfusion<sup>&reg;</sup> WPF Application.
 
 I> The Syncfusion<sup>&reg;</sup> WPF templates are available from v16.1.0.24. 
 
-### Create Syncfusion<sup>&reg;</sup> WPF project 
+### Create a Syncfusion<sup>&reg;</sup> WPF project
 
-The following steps direct you to create the Syncfusion<sup>&reg;</sup> WPF project using the Visual Studio Project Template. 
+The following steps direct you to create the Syncfusion<sup>&reg;</sup> WPF project using the Visual Studio Project Template.
 
-1. To create a Syncfusion<sup>&reg;</sup> WPF project, choose New Project-> Syncfusion->Windows->Syncfusion WPF Application from Visual Studio.
+1. To create a Syncfusion<sup>&reg;</sup> WPF project, choose **New Project** -> **Syncfusion** -> **Windows** -> **Syncfusion WPF Application** from Visual Studio.
 
 ![Create WPF application](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-1.png)
 
-2. Name the Project, choose the destination location when required and set the framework of the project, then click OK.  
+2. Name the project, choose the destination location when required, set the framework of the project, then click **OK**.
 
-N> Minimum target Framework is 4.0 for Syncfusion<sup>&reg;</sup> WPF project templates. 
+N> Minimum target Framework is 4.0 for Syncfusion<sup>&reg;</sup> WPF project templates.
 
 3. Choose the options to configure the Syncfusion<sup>&reg;</sup> WPF Application by using the following Project Configuration Wizard.  
   
@@ -178,11 +186,11 @@ N> Minimum target Framework is 4.0 for Syncfusion<sup>&reg;</sup> WPF project te
                                                      
 ### Project configurations 
 
-**Language:** Select the language, either C# or VB. 
+**Language:** Select the language, either C# or VB.
 
 ![Different language shows in WPF project](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-3.png)
 
-**Choose Theme:** Choose the required theme. 
+**Choose Theme:** Choose the required theme.
 
 ![Visual studio theme of WPF](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-4.png)
 
@@ -190,15 +198,15 @@ N> Minimum target Framework is 4.0 for Syncfusion<sup>&reg;</sup> WPF project te
 
 ![Choosing assembly location for WPF project](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-5.png)
 
-**Select Control:** Choose the control based on your need. 
+**Select Control:** Choose the control based on your need.
 
 ![Select the WPF Control](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-6.png)
       
-4. Once the Project Configuration Wizard is done, the Syncfusion WPF project is created with required references and XAML. 
+4. Once the Project Configuration Wizard is done, the Syncfusion WPF project is created with the required references and XAML. 
 
 ![Added assemblies for WPF control](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-7.png)
 
-![Shows project folder for added control](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)
+`![Shows project folder for added control](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)
 
 5. Then, Syncfusion<sup>&reg;</sup> licensing registration required message box will be shown as follows, if you have installed the trial setup or NuGet packages since Syncfusion introduced the licensing system with the 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>&reg;</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion<sup>&reg;</sup> license key for your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>&reg;</sup>.
 
