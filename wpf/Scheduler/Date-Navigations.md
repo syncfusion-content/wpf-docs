@@ -179,6 +179,7 @@ You can quickly navigate to the respective day or timeline day view by single-cl
         </syncfusion:SfScheduler>
     </Grid>
 </Window>
+{% endhighlight %}
 {% highlight c#%}
 using Syncfusion.UI.Xaml.Scheduler;
 
