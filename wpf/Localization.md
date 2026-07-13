@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Syncfusion WPF UI Controls | Syncfusion
-description: Learn about Localization support in Syncfusion WPF UI Contorls using .RESX files and also explains editing default strings of WPF controls.
+description: Learn about Localization support in Syncfusion WPF UI Controls using .RESX files and also explains editing default strings of WPF controls.
 platform: wpf
 control: Localization
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization of Syncfusion<sup>&reg;</sup> WPF Controls
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the syncfusion<sup>&reg;</sup> WPF controls by adding a resource file for each language.
+Localization is the process of translating the application resources into different languages for specific cultures. You can localize the Syncfusion<sup>&reg;</sup> WPF controls by adding a resource file for each language.
 
 ## Changing application culture
 
@@ -54,7 +54,7 @@ N> You can get the default resource files of all Syncfusion<sup>&reg;</sup> WPF 
 
 2) Add the [default resource files](https://github.com/syncfusion/wpf-controls-localization-resx-files) to the libraries you are using to the `Resources` folder and ensure `AccessModifier` is specified as `Public`. 
 
-N> Consider, you are using `SfDataGrid` and `Ribbon` in your application. Then, you need to copy and include `Syncfusion.SfGrid.WPF.resx` (since `SfDataGrid` present in `Syncfusion.SfGrid.WPF` library) and `Syncfusion.Tools.Wpf.resx` (since `Ribbon` present in `Syncfusion.Tools.WPF` library) files in your application under `Resources` folder. So, now you can know the key names and values of default stings used in `Syncfusion.Tools.WPF.dll` and `Syncfusion.SfGrid.WPF.dll` libraries.    
+N> Consider, you are using `SfDataGrid` and `Ribbon` in your application. Then, you need to copy and include `Syncfusion.SfGrid.WPF.resx` (since `SfDataGrid` present in `Syncfusion.SfGrid.WPF` library) and `Syncfusion.Tools.Wpf.resx` (since `Ribbon` present in `Syncfusion.Tools.WPF` library) files in your application under `Resources` folder. So, now you can know the key names and values of default strings used in `Syncfusion.Tools.WPF.dll` and `Syncfusion.SfGrid.WPF.dll` libraries.  
 
 ![WPF DataGrid Localization](localization-images/wpf-default-resx-file.png)
 
@@ -75,4 +75,4 @@ N> Download demo from the [GitHub](https://github.com/SyncfusionExamples/wpf-dat
 
 ## Editing default culture strings
 
-You can change default string of any control by adding the default .resx files ([from GitHub](https://github.com/syncfusion/wpf-controls-localization-resx-files)) to `Resources` folder of your application. If it is added, Syncfusion<sup>&reg;</sup> WPF controls reads the default string from the .resx files of application. 
+You can change default strings of any control by adding the default .resx files ([from GitHub](https://github.com/syncfusion/wpf-controls-localization-resx-files)) to the `Resources` folder of your application. If added, Syncfusion<sup>&reg;</sup> WPF controls read the default strings from the .resx files of the application. 
