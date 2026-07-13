@@ -8,19 +8,22 @@ documentation: ug
 ---
 # Add Syncfusion<sup>&reg;</sup> WPF Controls
 
-The Syncfusion<sup>&reg;</sup> WPF controls can be added in a Visual Studio projects by using either of the following ways:
+
+The Syncfusion<sup>&reg;</sup> WPF controls can be added to a Visual Studio project by using any of the following ways:
 
 * Using Designer
+* Using XAML
 * Using Code-Behind
 * Using Project Template
 
 ## Using Designer
 
-Syncfusion<sup>&reg;</sup> UI for WPF are added automatically to the Visual Studio Toolbox during installation. The following steps help you to add the required Essential<sup>&reg;</sup> WPF control using drag and drop from the Toolbox. For example: **SfTextBoxExt**
+
+Syncfusion<sup>&reg;</sup> UI for WPF controls are added automatically to the Visual Studio Toolbox during the installation. The following steps help you to add the required Essential<sup>&reg;</sup> WPF control using drag and drop from the Toolbox. For example: **SfTextBoxExt**
 
 1. Create a WPF project in Visual Studio.
 
-2. Find **SfTextBoxExt** by typing the name of the "SfTextBoxExt" in the search box.
+2. Find **SfTextBoxExt** by typing "SfTextBoxExt" in the search box of the Toolbox.
 
 ![Drag and drop from toolbox](ThroughDragndDrop_images/AddSyncfusionControls_img1.jpeg)
 
@@ -28,12 +31,12 @@ Syncfusion<sup>&reg;</sup> UI for WPF are added automatically to the Visual Stud
 
 ![WPF TextBoxExt control](ThroughDragndDrop_images/AddSyncfusionControls_img2.jpeg)
 
-### Using XAML
 
-The following steps help you to add a required Essential<sup>&reg;</sup> WPF Control using XAML Code, for example: **SfTextBoxExt**.
+## Using XAML
+
+The following steps help you to add the required Essential<sup>&reg;</sup> WPF control using XAML, for example: **SfTextBoxExt**.
 
 1. Create a WPF project in Visual Studio and refer the following assemblies:
-
     * Syncfusion.SfInput.WPF.dll
     * Syncfusion.SfShared.WPF.dll
 
@@ -47,7 +50,7 @@ The following steps help you to add a required Essential<sup>&reg;</sup> WPF Con
 <Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
 {% endhighlight %}
 
@@ -55,7 +58,7 @@ The following steps help you to add a required Essential<sup>&reg;</sup> WPF Con
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. Now, add the SfTextBoxExt control with a required optimal name using the included namespace.
+3. Now, add the SfTextBoxExt control with the required name using the included namespace.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -72,12 +75,14 @@ The following steps help you to add a required Essential<sup>&reg;</sup> WPF Con
 
 ## Using Code-Behind
 
-Syncfusion<sup>&reg;</sup> UI for WPF can be added at runtime using C# / VB. The following steps help you to add required Essential<sup>&reg;</sup> WPF control using code. For example: **SfTextBoxExt**.
+
+Syncfusion<sup>&reg;</sup> UI for WPF controls can be added at runtime using C# / VB. The following steps help you to add a required Essential<sup>&reg;</sup> WPF control using code. For example: **SfTextBoxExt**.
 
 1. Create a WPF project in Visual Studio and refer to the following assemblies:
 
     * Syncfusion.SfInput.WPF.dll
     * Syncfusion.SfShared.WPF.dll
+
 
 2. Create an instance of **SfTextBoxExt**, using its namespace.
 
@@ -86,13 +91,17 @@ Syncfusion<sup>&reg;</sup> UI for WPF can be added at runtime using C# / VB. The
 
 {% highlight C# %}
 
-Syncfusion.Windows.Controls.Input.SfTextBoxExt textBoxExt1 = new Syncfusion.Windows.Controls.Input.SfTextBoxExt();
+using Syncfusion.Windows.Controls.Input;
+
+SfTextBoxExt textBoxExt1 = new SfTextBoxExt();
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim textBoxExt1 As New Syncfusion.Windows.Controls.Input.SfTextBoxExt()
+Imports Syncfusion.Windows.Controls.Input
+
+Dim textBoxExt1 As New SfTextBoxExt()
 
 {% endhighlight %}
 
@@ -100,7 +109,8 @@ Dim textBoxExt1 As New Syncfusion.Windows.Controls.Input.SfTextBoxExt()
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-3. Set the Size and Alignment of the control with required value.
+
+3. Set the Size and Alignment of the control with the required values.
  
 {% capture codesnippet4 %}
 {% tabs %}
@@ -129,7 +139,8 @@ textBoxExt1.HorizontalAlignment = HorizontalAlignment.Center
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-4. Add the created instance to the parent window (or the needed layout panels).
+
+4. Add the created instance to the parent window (or to a layout panel such as a `Grid`).
 
 {% capture codesnippet5 %}
 {% tabs %}
@@ -198,7 +209,8 @@ N> Minimum target Framework is 4.0 for Syncfusion<sup>&reg;</sup> WPF project te
 
 ![Added assemblies for WPF control](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-7.png)
 
-![Shows project folder for added control](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)
+
+`![Shows project folder for added control](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)
 
 5. Then, Syncfusion<sup>&reg;</sup> licensing registration required message box will be shown as follows, if you have installed the trial setup or NuGet packages since Syncfusion introduced the licensing system with the 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>&reg;</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion<sup>&reg;</sup> license key for your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>&reg;</sup>.
 
