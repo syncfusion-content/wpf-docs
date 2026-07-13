@@ -15,6 +15,8 @@ Customize the interval of timeslots in the timeline views by using the [TimeInte
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 {% endhighlight %}
@@ -28,15 +30,23 @@ N> If the timeInterval value (in minutes) is modified, change the time labels fo
 Customize the interval width of timeslots in the Timeline views by setting the [TimeIntervalSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of `TimelineViewSettings.` This property will be applicable to all timeline views. By default, its value is fifty for the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views and 150 for `TimelineMonth` view.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-ViewType="TimelineWeek">
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings 
-            TimeIntervalSize="120"/>
-    </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                ViewType="TimelineWeek">
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings 
+                    TimeIntervalSize="120"/>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
@@ -49,15 +59,23 @@ The default values for the [StartHour](https://help.syncfusion.com/cr/wpf/Syncfu
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings 
-            StartHour="8"
-            EndHour="15"/>
-    </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings 
+                    StartHour="8"
+                    EndHour="15"/>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.StartHour = 8;
 Schedule.TimelineViewSettings.EndHour = 15;
@@ -79,14 +97,22 @@ Change the day's count of timeslots in the timeline view by setting the [DaysCou
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineDay">
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings 
-            DaysCount="2"/>
-    </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineDay">
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings 
+                    DaysCount="2"/>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineDay;
 Schedule.TimelineViewSettings.DaysCount = 2;
 {% endhighlight %}
@@ -99,8 +125,9 @@ Disable the interaction for certain dates in the scheduler `TimelineMonth` view 
 
 {% tabs %}
 {% highlight c#%}
-this.Schedule.ViewType = SchedulerViewType.Month;
+using Syncfusion.UI.Xaml.Scheduler;
 
+this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.BlackoutDates = GetBlackoutDates();
 
 private ObservableCollection<DateTime> GetBlackoutDates()
@@ -127,23 +154,31 @@ Restrict the user interaction such as selection and highlights specific regions 
 Enable or disable the touch interaction of `SpecialTimeRegion` using the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of `SpecialTimeRegion`. By default, its value is true.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek" >
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings>
-            <syncfusion:TimelineViewSettings.SpecialTimeRegions>
-                <syncfusion:SpecialTimeRegion
-                    StartTime="2020/07/08 13:0:0"
-                    EndTime="2020/07/08 14:0:0"
-                    CanEdit="False"
-                    Text="Lunch"
-                    Background="Black"
-                    Foreground="White"/>
-            </syncfusion:TimelineViewSettings.SpecialTimeRegions>
-        </syncfusion:TimelineViewSettings>
-    </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek" >
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings>
+                    <syncfusion:TimelineViewSettings.SpecialTimeRegions>
+                        <syncfusion:SpecialTimeRegion
+                            StartTime="2020/07/08 13:0:0"
+                            EndTime="2020/07/08 14:0:0"
+                            CanEdit="False"
+                            Text="Lunch"
+                            Background="Black"
+                            Foreground="White"/>
+                    </syncfusion:TimelineViewSettings.SpecialTimeRegions>
+                </syncfusion:TimelineViewSettings>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
@@ -170,24 +205,32 @@ This property only restricts the interaction on region and it does not restrict 
 The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceRule) property in `SpecialTimeRegion`.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWorkWeek" >
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings>
-            <syncfusion:TimelineViewSettings.SpecialTimeRegions>
-                <syncfusion:SpecialTimeRegion
-                    StartTime="2020/07/08 13:0:0"
-                    EndTime="2020/07/08 14:0:0"
-                    CanEdit="False"
-                    Text="Lunch"
-                    Background="Black"
-                    Foreground="White"
-                    RecurrenceRule="FREQ=DAILY;INTERVAL=1"/>
-            </syncfusion:TimelineViewSettings.SpecialTimeRegions>
-        </syncfusion:TimelineViewSettings>
-    </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWorkWeek" >
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings>
+                    <syncfusion:TimelineViewSettings.SpecialTimeRegions>
+                        <syncfusion:SpecialTimeRegion
+                            StartTime="2020/07/08 13:0:0"
+                            EndTime="2020/07/08 14:0:0"
+                            CanEdit="False"
+                            Text="Lunch"
+                            Background="Black"
+                            Foreground="White"
+                            RecurrenceRule="FREQ=DAILY;INTERVAL=1"/>
+                    </syncfusion:TimelineViewSettings.SpecialTimeRegions>
+                </syncfusion:TimelineViewSettings>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineWorkWeek;
 Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
@@ -206,6 +249,7 @@ Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 Delete any of occurrence that is an exception from the recurrence pattern time region by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceExceptionDates) property of `SpecialTimeRegion`. The deleted occurrence date will be considered as a recurrence exception date.
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 DateTime recurrenceExceptionDates = new DateTime(2020, 07, 06, 10, 0, 0);
 DateTime recurrenceExceptionDates1 = new DateTime(2020, 07, 08, 10, 0, 0);
@@ -233,39 +277,49 @@ Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 The `SpecialTimeRegion` background color can be customized by using the [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_Background) and [SpecialTimeRegionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegionTemplate) properties of `SpecialTimeRegion` that is used to customize the text style for the image of the `SpecialTimeRegion`.
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
-    <DataTemplate x:Key="specialRegionTemplate">
-        <Grid Background="{Binding Background}"
-            HorizontalAlignment="Stretch"
-            VerticalAlignment="Stretch">
-        <Image x:Name="Image"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Source="../Image/Fork.png"/>
-        </Grid>
-    </DataTemplate>
-</Window.Resources>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+        <Window.Resources>
+            <DataTemplate x:Key="specialRegionTemplate">
+                <Grid Background="{Binding Background}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <Image x:Name="Image"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Source="../Image/Fork.png"/>
+                </Grid>
+            </DataTemplate>
+        </Window.Resources>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings                 SpecialTimeRegionTemplate="{StaticResource specialRegionTemplate}">
-            <syncfusion:TimelineViewSettings.SpecialTimeRegions>
-                <syncfusion:SpecialTimeRegion
-                    StartTime="01/01/2020 13:0:0"
-                    EndTime="01/01/2020 14:0:0"
-                    CanEdit="False"
-                    Text="LUNCH"
-                    RecurrenceRule="FREQ=DAILY;INTERVAL=1"
-                    Foreground="Black"
-                    Background="#FFF5F5F5"/>
-            </syncfusion:TimelineViewSettings.SpecialTimeRegions>
-        </syncfusion:TimelineViewSettings>
-    </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings                 SpecialTimeRegionTemplate="{StaticResource specialRegionTemplate}">
+                    <syncfusion:TimelineViewSettings.SpecialTimeRegions>
+                        <syncfusion:SpecialTimeRegion
+                            StartTime="01/01/2020 13:0:0"
+                            EndTime="01/01/2020 14:0:0"
+                            CanEdit="False"
+                            Text="LUNCH"
+                            RecurrenceRule="FREQ=DAILY;INTERVAL=1"
+                            Foreground="Black"
+                            Background="#FFF5F5F5"/>
+                    </syncfusion:TimelineViewSettings.SpecialTimeRegions>
+                </syncfusion:TimelineViewSettings>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -275,14 +329,22 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
 Scheduler time interval height can be adjusted based on screen height by changing the value of [TimeIntervalSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property to -1. It will auto-fit to the screen height and width.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings 
-            TimeIntervalSize="-1"/>
-    </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings 
+                    TimeIntervalSize="-1"/>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimeIntervalSize = -1;
 {% endhighlight %}
@@ -294,15 +356,23 @@ Schedule.TimelineViewSettings.TimeIntervalSize = -1;
 Customize the size of the time ruler view where the labels mentioning the time are placed by using the [TimeRulerSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property of `TimelineViewSettings.` This property will be applicable to `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek" >
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings   
-            TimeRulerSize="100">
-        </syncfusion:TimelineViewSettings>
-    </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek" >
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings   
+                    TimeRulerSize="100">
+                </syncfusion:TimelineViewSettings>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimeRulerSize = 100;
 {% endhighlight %}
@@ -314,6 +384,7 @@ Schedule.TimelineViewSettings.TimeRulerSize = 100;
 The [MinimumAppointmentDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_MinimumAppointmentDuration) property in the `TimelineViewSettings` is to set an arbitrary height to appointments when it has a minimum duration in timeline view so that the subject can be readable. This property will not be applicable for the `TimelineMonth` view.
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.MinimumAppointmentDuration = new System.TimeSpan(0, 120, 0);
 {% endhighlight %}
@@ -329,6 +400,7 @@ N>
 Customize the format for the labels mentioning the time, by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of `TimelineViewSettings` in the `Scheduler`. This property will not be applicable for the `TimelineMonth` view.
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimeRulerFormat = "hh mm";
 Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
@@ -348,14 +420,22 @@ Customize the default appearance of view header in the timeline views by setting
 Customize the date and day format of ViewHeader by using the `ViewHeaderDateFormat` and `ViewHeaderDayFormat` properties of `TimelineViewSettings`.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings 
-            ViewHeaderDateFormat="dd/MMMM"/>
-        </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings 
+                    ViewHeaderDateFormat="dd/MMMM"/>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.ViewHeaderDateFormat="dd/MMMM";
 {% endhighlight %}
@@ -366,14 +446,22 @@ Schedule.TimelineViewSettings.ViewHeaderDateFormat="dd/MMMM";
 Customize the height of the ViewHeader in timeline views by setting `ViewHeaderHeight` property of `TimelineViewSettings` in `SfScheduler`.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings
-            ViewHeaderHeight="100"/>
-        </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings
+                    ViewHeaderHeight="100"/>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
@@ -386,43 +474,53 @@ Customize the default appearance of view header by setting `ViewHeaderTemplate` 
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
-<DataTemplate x:Key="viewHeaderTemplate">
-    <StackPanel Background="Green"  
-        Width="2000"
-        VerticalAlignment="Stretch" 
-        HorizontalAlignment="Stretch"
-        Orientation="Vertical">
-    <TextBlock 
-        HorizontalAlignment="Left" 
-        Margin="20,0,0,0" 
-        Foreground="#FFFFFF"
-        FontFamily="Arial"
-        Text="{Binding DateText}"
-        FontSize="25"
-        TextTrimming="CharacterEllipsis"
-        TextWrapping="Wrap" />
-    <TextBlock 
-        HorizontalAlignment="Left"  Margin="20,0,0,0" 
-        Foreground="#FFFFFF"
-        FontFamily="Arial"
-        Text="{Binding DayText}"
-        FontSize="10"
-        TextTrimming="CharacterEllipsis"
-        TextWrapping="Wrap" />
-    </StackPanel>
-</DataTemplate>
-</Window.Resources>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Window.Resources>
+        <DataTemplate x:Key="viewHeaderTemplate">
+            <StackPanel Background="Green"  
+                Width="2000"
+                VerticalAlignment="Stretch" 
+                HorizontalAlignment="Stretch"
+                Orientation="Vertical">
+            <TextBlock 
+                HorizontalAlignment="Left" 
+                Margin="20,0,0,0" 
+                Foreground="#FFFFFF"
+                FontFamily="Arial"
+                Text="{Binding DateText}"
+                FontSize="25"
+                TextTrimming="CharacterEllipsis"
+                TextWrapping="Wrap" />
+            <TextBlock 
+                HorizontalAlignment="Left"  Margin="20,0,0,0" 
+                Foreground="#FFFFFF"
+                FontFamily="Arial"
+                Text="{Binding DayText}"
+                FontSize="10"
+                TextTrimming="CharacterEllipsis"
+                TextWrapping="Wrap" />
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings 
-            ViewHeaderTemplate="{StaticResource viewHeaderTemplate}" />
-        </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings 
+                    ViewHeaderTemplate="{StaticResource viewHeaderTemplate}" />
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -432,15 +530,23 @@ Customize the default appearance of view header by setting `ViewHeaderTemplate` 
 Customize the height of the appointment in `TimelineView` using the [TimelineAppointmentHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_TimelineAppointmentHeight) property of the `TimelineViewSettings`. By default, it's value is fifty for the `TimelineWeek,` `TimelineWorkWeek,` and `TimelineDay` views and twenty for the `TimelineMonth` view.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek"> 
-    <syncfusion:SfScheduler.TimelineViewSettings>
-        <syncfusion:TimelineViewSettings 
-            TimelineAppointmentHeight="100">
-        </syncfusion:TimelineViewSettings>
-    </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek"> 
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings 
+                    TimelineAppointmentHeight="100">
+                </syncfusion:TimelineViewSettings>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimelineAppointmentHeight = 100;
 {% endhighlight %}
@@ -453,15 +559,23 @@ Schedule.TimelineViewSettings.TimelineAppointmentHeight = 100;
 To enhance interaction with a scheduler's appointments, you can customize the spacing between appointments and the bottom border of their cells using the [CellBottomPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_CellBottomPadding) property of [TimelineViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html) in the [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
 {% tabs %}
-{% highlight xaml hl_lines="4" %}
-<syncfusion:SfScheduler x:Name="Schedule" 
+{% highlight xaml hl_lines="8" %}
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
                         ViewType="TimelineWeek">
- <syncfusion:SfScheduler.TimelineViewSettings>
-     <syncfusion:TimelineViewSettings CellBottomPadding="30" />
- </syncfusion:SfScheduler.TimelineViewSettings>
-</syncfusion:SfScheduler>
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings CellBottomPadding="30" />
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c# hl_lines="2" %}
+{% highlight c# hl_lines="4" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
 this.Schedule.TimelineViewSettings.CellBottomPadding = 30;
 {% endhighlight %}
