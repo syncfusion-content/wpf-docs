@@ -29,14 +29,20 @@ that contains the Appointment or DateTime of the corresponding cell.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-<syncfusion:SfScheduler.CellContextMenu>
-<ContextMenu>
-<MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Add}}" CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}" Header="Add">
-</MenuItem>
-</ContextMenu>
-</syncfusion:SfScheduler.CellContextMenu>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler.CellContextMenu>
+        <ContextMenu>
+        <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Add}}" CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}" Header="Add">
+        </MenuItem>
+        </ContextMenu>
+        </syncfusion:SfScheduler.CellContextMenu>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -55,23 +61,28 @@ that contains the Appointment or DateTime of the corresponding cell.
 * In the month view, the `AppointmentContextMenu` opens when the [MonthViewSettings.AppointmentDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayMode) is set to `AppointmentDisplayMode.Appointment.`.
 * To enable the touch context menu for appointments in the scheduler, by disabling the appointment drag and drop by setting the [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property except for DragDrop. In this case, the appointment drag & drop cannot be performed. The [AppointmentContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextMenu) will be displayed only on appointments and the appointment selection, should be performed.
 
-
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-<syncfusion:SfScheduler.AppointmentContextMenu>
-<ContextMenu>
-<MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Edit}}"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler.AppointmentContextMenu>
+        <ContextMenu>
+        <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Edit}}"
                     CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}"
                     Header="Edit">
-</MenuItem>
-<MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Delete}}"
-CommandParameter ="{Binding}"
-Header="Delete">
-</MenuItem>
-</ContextMenu>
-</syncfusion:SfScheduler.AppointmentContextMenu>
-</syncfusion:SfScheduler>
+        </MenuItem>
+        <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Delete}}"
+        CommandParameter ="{Binding}"
+        Header="Delete">
+        </MenuItem>
+        </ContextMenu>
+        </syncfusion:SfScheduler.AppointmentContextMenu>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -90,4 +101,4 @@ The [SchedulerContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 * `ContextMenu` – It represents a shortcut context menu that is being opened.
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. For more information on appointment editing, see [Appointment editing](appointment-editing.md).

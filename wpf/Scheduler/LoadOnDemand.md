@@ -19,11 +19,19 @@ The [QueryAppointmentsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Scheduler"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Scheduler"
                         ViewType="Month" QueryAppointments="Scheduler_QueryAppointments">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Scheduler.QueryAppointments += Scheduler_QueryAppointments;
 private void Scheduler_QueryAppointments(object sender, QueryAppointmentsEventArgs e)
 {
@@ -73,14 +81,22 @@ Define a ViewModel class that implements command and handle it by the CanExecute
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Scheduler"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Scheduler"
                         ViewType="Month" 
                         ShowBusyIndicator="{Binding ShowBusyIndicator}"
                         LoadOnDemandCommand="{Binding LoadOnDemandCommand}"
                         ItemsSource="{Binding Events}">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+. . .
 
 public class LoadOnDemandViewModel : NotificationObject
   {
@@ -168,4 +184,4 @@ The scheduler will add the occurrences of recurrence series based on the visible
 
 * If the `RecurrenceRule` is added without an end date, then the recurrence appointment should be added in the scheduler `ItemsSource` when all the visible dates changed from the recurrence start date.
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/load-on-demand-appointments-wpf-scheduler)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/load-on-demand-appointments-wpf-scheduler). For more information on appointments, see [Appointments](appointments.md).

@@ -45,10 +45,18 @@ N>
 
 {% tabs %}
 {% highlight xaml %}
-<scheduler:SfScheduler x:Name="Schedule"
-                       CalendarIdentifier="HijriCalendar" />
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                CalendarIdentifier="HijriCalendar" />
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.CalendarIdentifier = "HijriCalendar";
 {% endhighlight %}
 {% endtabs %}
@@ -63,6 +71,8 @@ All the DateTime values can be given such as [DisplayDate,](https://help.syncfus
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for the schedule appointment collection.
 var appointments = new ScheduleAppointmentCollection();
 
@@ -87,6 +97,8 @@ this.scheduler.ItemsSource = appointments;
 {% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for the schedule appointment collection.
 var appointments = new ScheduleAppointmentCollection();
 
@@ -106,4 +118,4 @@ this.scheduler.ItemsSource = appointments;
 {% endcapture %}
 {{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/CalendarTypes)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/CalendarTypes). For more information on appointments, see [Appointments](appointments.md).

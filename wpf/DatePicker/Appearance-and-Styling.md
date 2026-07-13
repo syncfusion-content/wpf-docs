@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF DatePicker control | Syncfusion®
 description: Learn here all about Appearance support in Syncfusion® WPF DatePicker (SfDatePicker) control and more.
-platform: WPF
+platform: wpf
 control: SfDatePicker
 documentation: ug
 ---
@@ -13,20 +13,24 @@ This section explains different UI customization, styling, theming options avail
 
 ## Setting the Foreground
 
-We can change a foreground of the `SfDatePicker` by using the `Foreground` property and also we can change the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) items and selected date item foreground by using the `Foreground` and [SfDateSelector.SelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_SelectedForeground) properties of `SfDateSelector`.
+We can change the foreground of the `SfDatePicker` by using the `Foreground` property and also we can change the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) items and selected date item foreground by using the `Foreground` and [SfDateSelector.SelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_SelectedForeground) properties of `SfDateSelector`.
 
 {% highlight XAML %}
 
-<syncfusion:SfDatePicker Name="sfDatePicker"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfDatePicker Name="sfDatePicker"
                          Foreground="Red"
                          Width="200">
-    <syncfusion:SfDatePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfDateSelector">
-            <Setter Property="Foreground" Value="Blue"/>
-            <Setter Property="SelectedForeground" Value="Yellow"/>
-        </Style>
-    </syncfusion:SfDatePicker.SelectorStyle>
-</syncfusion:SfDatePicker>
+        <syncfusion:SfDatePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfDateSelector">
+                <Setter Property="Foreground" Value="Blue"/>
+                <Setter Property="SelectedForeground" Value="Yellow"/>
+            </Style>
+        </syncfusion:SfDatePicker.SelectorStyle>
+    </syncfusion:SfDatePicker>
+</Window>
 
 {% endhighlight  %}
 
@@ -36,20 +40,24 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-picker
 
 ## Setting the Background
 
-We can change a background of the `SfDatePicker` by using the `background` property and also we can change the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) items and selected date item background by using the `Background` and [SfDateSelector.AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_AccentBrush) properties of `SfDateSelector`.
+We can change the background of the `SfDatePicker` by using the `Background` property and also we can change the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) items and selected date item background by using the `Background` and [SfDateSelector.AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_AccentBrush) properties of `SfDateSelector`.
 
 {% highlight XAML %}
 
-<syncfusion:SfDatePicker Name="sfDatePicker"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfDatePicker Name="sfDatePicker"
                          Background="Red"
                          AccentBrush="Green"
                  Width="200">
-    <syncfusion:SfDatePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfDateSelector">
-            <Setter Property="Background" Value="Blue"/>
-        </Style>
-    </syncfusion:SfDatePicker.SelectorStyle>
-</syncfusion:SfDatePicker>
+        <syncfusion:SfDatePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfDateSelector">
+                <Setter Property="Background" Value="Blue"/>
+            </Style>
+        </syncfusion:SfDatePicker.SelectorStyle>
+    </syncfusion:SfDatePicker>
+</Window>
 
 {% endhighlight  %}
 
@@ -59,15 +67,21 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-picker
 
 ## Change flow direction
 
-We can change the flow direction of the `SfDatePicker` control from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Default value of `FlowDirection` property is `LeftToRight`.
+We can change the flow direction of the `SfDatePicker` control from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker FlowDirection="RightToLeft" Name="sfDatePicker"/>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfDatePicker FlowDirection="RightToLeft" Name="sfDatePicker"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Controls.Input;
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 sfDatePicker.FlowDirection = FlowDirection.RightToLeft;

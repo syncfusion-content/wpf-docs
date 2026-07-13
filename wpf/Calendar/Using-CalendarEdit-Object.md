@@ -19,9 +19,10 @@ Returns the system datetime, that is, the specified number of days away from the
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.AddDays(calendarEdit.Date, 5);
-MessageBox.Show(calendarEdit.Calendar.AddDays(calendarEdit.Date, 5);.ToString());
+this.calendarEdit.Calendar.AddDays(calendarEdit.Date, 5);
+MessageBox.Show(calendarEdit.Calendar.AddDays(calendarEdit.Date, 5).ToString());
 
 {% endhighlight %}
 {% endtabs %}
@@ -32,8 +33,9 @@ Returns the system datetime, that is, the specified number of hours away from th
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.AddHours(calendarEdit.Date, 2);
+this.calendarEdit.Calendar.AddHours(calendarEdit.Date, 2);
 MessageBox.Show(calendarEdit.Calendar.AddHours(calendarEdit.Date, 2).ToString());
 
 {% endhighlight %}
@@ -45,8 +47,9 @@ Returns the system datetime, that is, the specified number of months away from t
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.AddMonths(calendarEdit.Date, 3);
+this.calendarEdit.Calendar.AddMonths(calendarEdit.Date, 3);
 MessageBox.Show(calendarEdit.Calendar.AddMonths(calendarEdit.Date, 3).ToString());
 
 {% endhighlight %}
@@ -58,8 +61,9 @@ Returns the system datetime, that is, the specified number of milliseconds away 
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.AddMilliseconds(calendarEdit.Date, 200);
+this.calendarEdit.Calendar.AddMilliseconds(calendarEdit.Date, 200);
 MessageBox.Show(calendarEdit.Calendar.AddMilliseconds(calendarEdit.Date, 200).ToString());
 
 {% endhighlight %}
@@ -71,8 +75,9 @@ Returns the system datetime, that is, the specified number of milliseconds away 
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.AddMinutes(calendarEdit.Date, 5);
+this.calendarEdit.Calendar.AddMinutes(calendarEdit.Date, 5);
 MessageBox.Show(calendarEdit.Calendar.AddMinutes(calendarEdit.Date, 5).ToString());
 
 {% endhighlight %}
@@ -84,8 +89,9 @@ Returns the system datetime, that is, specified number of seconds away from the 
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.AddSeconds(calendarEdit.Date, 30);
+this.calendarEdit.Calendar.AddSeconds(calendarEdit.Date, 30);
 MessageBox.Show(calendarEdit.Calendar.AddSeconds(calendarEdit.Date, 30).ToString());
 
 {% endhighlight %}
@@ -97,8 +103,9 @@ Returns the system datetime, that is, specified number of weeks away from the sp
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.AddWeeks(calendarEdit.Date, 2);
+this.calendarEdit.Calendar.AddWeeks(calendarEdit.Date, 2);
 MessageBox.Show(calendarEdit.Calendar.AddWeeks(calendarEdit.Date, 2).ToString());
 
 {% endhighlight %}
@@ -110,8 +117,9 @@ Returns the system datetime, that is, the specified number of years away from th
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.AddYears(calendarEdit.Date, 1);
+this.calendarEdit.Calendar.AddYears(calendarEdit.Date, 1);
 MessageBox.Show(calendarEdit.Calendar.AddYears(calendarEdit.Date, 1).ToString());
 
 {% endhighlight %}
@@ -123,8 +131,9 @@ Returns the day of the month, in the specified System datetime. You can use a Me
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetDayOfMonth(calendarEdit.Date);
+this.calendarEdit.Calendar.GetDayOfMonth(calendarEdit.Date);
 MessageBox.Show(calendarEdit.Calendar.GetDayOfMonth(calendarEdit.Date).ToString());
 
 {% endhighlight %}
@@ -136,8 +145,9 @@ Returns the day of the week, in the specified System datetime. You can use a Mes
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetDayOfWeek(calendarEdit.Date);
+this.calendarEdit.Calendar.GetDayOfWeek(calendarEdit.Date);
 MessageBox.Show(calendarEdit.Calendar.GetDayOfWeek(calendarEdit.Date).ToString());
 
 {% endhighlight %}
@@ -149,21 +159,23 @@ Returns the day of the year, in the specified System datetime. You can use a Mes
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetDayOfYear(calendarEdit.Date);
+this.calendarEdit.Calendar.GetDayOfYear(calendarEdit.Date);
 MessageBox.Show(calendarEdit.Calendar.GetDayOfYear(calendarEdit.Date).ToString());
 
 {% endhighlight %}
 {% endtabs %}
 
-### GetDayOfYear
+### GetDaysInMonth
 
 Returns the number of days, in the specified month and year of the current era. You can use a Message Box to see the content of date after this method is called.
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetDaysInMonth(2009, 2);
+this.calendarEdit.Calendar.GetDaysInMonth(2009, 2);
 MessageBox.Show(calendarEdit.Calendar.GetDaysInMonth(2009, 2).ToString());
 
 {% endhighlight %}
@@ -175,8 +187,9 @@ Returns the number of days, in the specified year of the current era. You can us
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetDaysInYear(2009);
+this.calendarEdit.Calendar.GetDaysInYear(2009);
 MessageBox.Show(calendarEdit.Calendar.GetDaysInYear(2009).ToString());
 
 {% endhighlight %}
@@ -188,8 +201,9 @@ Returns the era, in the specified date time. You can use a Message Box to see th
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetEra(calendarEdit.Date);
+this.calendarEdit.Calendar.GetEra(calendarEdit.Date);
 MessageBox.Show(calendarEdit.Calendar.GetEra(calendarEdit.Date).ToString());
 
 {% endhighlight %}
@@ -201,8 +215,9 @@ Returns the hour, in the specified date time. You can use a Message Box to see t
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetHour(calendarEdit.Date);
+this.calendarEdit.Calendar.GetHour(calendarEdit.Date);
 MessageBox.Show(calendarEdit.Calendar.GetHour(calendarEdit.Date).ToString());
 
 {% endhighlight %}
@@ -214,8 +229,9 @@ Returns the leap month, in the specified year. You can use a Message Box to see 
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetLeapMonth(2009);
+this.calendarEdit.Calendar.GetLeapMonth(2009);
 MessageBox.Show(calendarEdit.Calendar.GetLeapMonth(2009).ToString());
 
 {% endhighlight %}
@@ -227,8 +243,9 @@ Returns the milliseconds, in the specified date time. You can use a Message Box 
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetMilliSeconds(calendarEdit.Date);
+this.calendarEdit.Calendar.GetMilliseconds(calendarEdit.Date);
 MessageBox.Show(calendarEdit.Calendar.GetMilliseconds(calendarEdit.Date).ToString());
 
 {% endhighlight %}
@@ -240,8 +257,9 @@ Returns the minute, in the specified datetime. You can use a Message Box to see 
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetMinute(calendarEdit.Date);
+this.calendarEdit.Calendar.GetMinute(calendarEdit.Date);
 MessageBox.Show(calendarEdit.Calendar.GetMinute(calendarEdit.Date).ToString());
 
 {% endhighlight %}
@@ -253,8 +271,9 @@ Returns the month, in the specified datetime. You can use a Message Box to see t
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetMonth(calendarEdit.Date);
+this.calendarEdit.Calendar.GetMonth(calendarEdit.Date);
 MessageBox.Show(calendarEdit.Calendar.GetMonth(calendarEdit.Date).ToString());
 
 {% endhighlight %}
@@ -266,8 +285,9 @@ Returns the month in the specified year in the current era. You can use a Messag
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetMonthsInYear(2009);
+this.calendarEdit.Calendar.GetMonthsInYear(2009);
 MessageBox.Show(calendarEdit.Calendar.GetMonthsInYear(2009).ToString());
 
 {% endhighlight %}
@@ -279,8 +299,9 @@ Returns the seconds, in the specified date time. You can use a Message Box to se
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetSecond(calendarEdit.Date);
+this.calendarEdit.Calendar.GetSecond(calendarEdit.Date);
 MessageBox.Show(calendarEdit.Calendar.GetSecond(calendarEdit.Date).ToString());
 
 {% endhighlight %}
@@ -292,8 +313,9 @@ Returns the week of the year that includes the date in the specified date time. 
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetWeekOfYear(calendarEdit.Date, System.Globalization.CalendarWeekRule.FirstDay, DayOfWeek.Friday);
+this.calendarEdit.Calendar.GetWeekOfYear(calendarEdit.Date, System.Globalization.CalendarWeekRule.FirstDay, DayOfWeek.Friday);
 MessageBox.Show(calendarEdit.Calendar.GetWeekOfYear(calendarEdit.Date, System.Globalization.CalendarWeekRule.FirstDay, DayOfWeek.Friday).ToString());
 
 {% endhighlight %}
@@ -305,8 +327,9 @@ Returns the week of the year that includes the date in the specified date time. 
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.GetYear(calendarEdit.Date);
+this.calendarEdit.Calendar.GetYear(calendarEdit.Date);
 MessageBox.Show(calendarEdit.Calendar.GetYear(calendarEdit.Date).ToString());
 
 {% endhighlight %}
@@ -318,8 +341,9 @@ Determines whether the specified date in the current era is a leap day. You can 
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.IsLeapDay(2009, 2, 2);
+this.calendarEdit.Calendar.IsLeapDay(2009, 2, 2);
 MessageBox.Show(calendarEdit.Calendar.IsLeapDay(2009, 2, 2).ToString());
 
 {% endhighlight %}
@@ -331,8 +355,9 @@ Determines whether the specified month, in the specified year, in the current er
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.IsLeapMonth(2009, 3);
+this.calendarEdit.Calendar.IsLeapMonth(2009, 3);
 MessageBox.Show(calendarEdit.Calendar.IsLeapMonth(2009, 3).ToString());
 
 {% endhighlight %}
@@ -344,8 +369,9 @@ Determines whether the specified year, in the current era, is a leap year. You c
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.IsLeapYear(2009);
+this.calendarEdit.Calendar.IsLeapYear(2009);
 MessageBox.Show(calendarEdit.Calendar.IsLeapYear(2009).ToString());
 
 {% endhighlight %}
@@ -357,8 +383,9 @@ Gets the latest date and time, supported by the calendar object. You can use a M
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.MaxSupportedDateTime;
+this.calendarEdit.Calendar.MaxSupportedDateTime;
 MessageBox.Show(calendarEdit.Calendar.MaxSupportedDateTime.ToString());
 
 {% endhighlight %}
@@ -370,8 +397,9 @@ Gets the earliest date and time, supported by the calendar object. You can use a
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.MinSupportedDateTime;
+this.calendarEdit.Calendar.MinSupportedDateTime;
 MessageBox.Show(calendarEdit.Calendar.MinSupportedDateTime.ToString());
 
 {% endhighlight %}
@@ -383,8 +411,9 @@ Gets or sets the last year of a 100-year range that can be represented as a 2 di
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.TwoDigitYearMax;
+this.calendarEdit.Calendar.TwoDigitYearMax;
 MessageBox.Show(calendarEdit.Calendar.TwoDigitYearMax.ToString());
 
 {% endhighlight %}
@@ -396,8 +425,9 @@ Returns the datetime that is set to the specified date and time in the current e
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.ToDateTime(2009, 4, 5, 2, 30, 5, 200);
+this.calendarEdit.Calendar.ToDateTime(2009, 4, 5, 2, 30, 5, 200);
 MessageBox.Show(calendarEdit.Calendar.ToDateTime(2009, 4, 5, 2, 30, 5, 200).ToString());
 
 {% endhighlight %}
@@ -409,8 +439,9 @@ Convert specified year to a 4 digit year. You can use a Message Box to see the c
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Calendar.ToFourDigitYear(2009);
+this.calendarEdit.Calendar.ToFourDigitYear(2009);
 MessageBox.Show(calendarEdit.Calendar.ToFourDigitYear(2009).ToString());
 
 {% endhighlight %}

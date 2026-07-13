@@ -17,18 +17,21 @@ You can restrict the users from selecting a date within the particular range by 
 
 {% tabs %}
 {% highlight xaml %}
-
-<!--Setting date range -->
-<syncfusion:CalendarEdit MinDate="05/1/2020" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit MinDate="05/1/2020" 
                          MaxDate="05/10/2020"
                          Name="calendarEdit"/>
+</Window>
 
 {% endhighlight  %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-CalendarEdit calendarEdit = new CalendarEdit();
-calendarEdit.MinDate = new DateTime(2020, 05, 01);
-calendarEdit.MaxDate = new DateTime(2020, 05, 10);
+this.CalendarEdit calendarEdit = new CalendarEdit();
+this.calendarEdit.MinDate = new DateTime(2020, 05, 01);
+this.calendarEdit.MaxDate = new DateTime(2020, 05, 10);
 
 {% endhighlight  %}
 {% endtabs %}
@@ -45,19 +48,23 @@ If you want to show the disabled dates which are not within the range of minimum
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:CalendarEdit MinMaxHidden="False"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit MinMaxHidden="False"
                          MinDate="05/1/2020" 
                          MaxDate="05/10/2020"
                          Name="calendarEdit"/>
+</Window>
 
 {% endhighlight  %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-CalendarEdit calendarEdit = new CalendarEdit();
-calendarEdit.MinDate = new DateTime(2020, 05, 01);
-calendarEdit.MaxDate = new DateTime(2020, 05, 10);
-calendarEdit.MinMaxHidden = false;
+this.CalendarEdit calendarEdit = new CalendarEdit();
+this.calendarEdit.MinDate = new DateTime(2020, 05, 01);
+this.calendarEdit.MaxDate = new DateTime(2020, 05, 10);
+this.calendarEdit.MinMaxHidden = false;
 
 {% endhighlight  %}
 {% endtabs %}
@@ -72,13 +79,18 @@ If you want to restrict the user to select the date, use the [DisableDateSelecti
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:CalendarEdit Name="calendarEdit" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit Name="calendarEdit" 
                          DisableDateSelection="true"/>
+</Window>
+
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.DisableDateSelection = true;
+this.calendarEdit.DisableDateSelection = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -93,23 +105,27 @@ If you want to block particular dates from the date selection, add that date ran
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:CalendarEdit Name="calendarEdit">
-    <syncfusion:CalendarEdit.BlackoutDates>
-        <syncfusion:BlackoutDatesRange StartDate="07/03/2020"
-                                       EndDate="07/07/2020" />
-        <syncfusion:BlackoutDatesRange StartDate="07/22/2020" 
-                                       EndDate="07/25/2020" />
-    </syncfusion:CalendarEdit.BlackoutDates>
-</syncfusion:CalendarEdit>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit Name="calendarEdit">
+        <syncfusion:CalendarEdit.BlackoutDates>
+            <syncfusion:BlackoutDatesRange StartDate="07/03/2020"
+                                        EndDate="07/07/2020" />
+            <syncfusion:BlackoutDatesRange StartDate="07/22/2020" 
+                                        EndDate="07/25/2020" />
+        </syncfusion:CalendarEdit.BlackoutDates>
+    </syncfusion:CalendarEdit>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
+this.calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
     StartDate = new DateTime(2020, 07, 03),
     EndDate = new DateTime(2020, 07, 07)});
-calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
+this.calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
     StartDate = new DateTime(2020, 07, 22), 
     EndDate = new DateTime(2020, 07, 25)});
 
@@ -128,31 +144,35 @@ You can change the background and cross-mark color of the block out days by usin
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:CalendarEdit BlackoutDatesBackground="Yellow" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit BlackoutDatesBackground="Yellow" 
                          BlackoutDatesBorderBrush="Green"
                          BlackoutDatesCrossBrush="Red" 
                          BlackoutDatesForeground="Blue" 
                          Name="calendarEdit">
-    <syncfusion:CalendarEdit.BlackoutDates>
-        <syncfusion:BlackoutDatesRange StartDate="07/03/2020"
-                                       EndDate="07/07/2020" />
-        <syncfusion:BlackoutDatesRange StartDate="07/22/2020" 
-                                       EndDate="07/25/2020" />
-    </syncfusion:CalendarEdit.BlackoutDates>
-</syncfusion:CalendarEdit>
+        <syncfusion:CalendarEdit.BlackoutDates>
+            <syncfusion:BlackoutDatesRange StartDate="07/03/2020"
+                                        EndDate="07/07/2020" />
+            <syncfusion:BlackoutDatesRange StartDate="07/22/2020" 
+                                        EndDate="07/25/2020" />
+        </syncfusion:CalendarEdit.BlackoutDates>
+    </syncfusion:CalendarEdit>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.BlackoutDatesBackground = Brushes.Yellow;
-calendarEdit.BlackoutDatesBorderBrush = Brushes.Green;
-calendarEdit.BlackoutDatesCrossBrush = Brushes.Red;
-calendarEdit.BlackoutDatesForeground = Brushes.Blue;
-calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
+this.calendarEdit.BlackoutDatesBackground = Brushes.Yellow;
+this.calendarEdit.BlackoutDatesBorderBrush = Brushes.Green;
+this.calendarEdit.BlackoutDatesCrossBrush = Brushes.Red;
+this.calendarEdit.BlackoutDatesForeground = Brushes.Blue;
+this.calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
     StartDate = new DateTime(2020, 07, 03),
     EndDate = new DateTime(2020, 07, 07)});
-calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
+this.calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
     StartDate = new DateTime(2020, 07, 22), 
     EndDate = new DateTime(2020, 07, 25)});
 
@@ -169,15 +189,20 @@ If you want show only the currently displaying month's days without displaying p
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:CalendarEdit ShowPreviousMonthDays="False"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit ShowPreviousMonthDays="False"
                          ShowNextMonthDays="False"
                          Name="calendarEdit" />
+</Window>
+
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.ShowNextMonthDays = false;
-calendarEdit.ShowPreviousMonthDays = false;
+this.calendarEdit.ShowNextMonthDays = false;
+this.calendarEdit.ShowPreviousMonthDays = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -192,15 +217,20 @@ If you want to restrict the user to select the date or month or year, use the [A
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:CalendarEdit Date="08/12/2020"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit Date="08/12/2020"
                          Name="calendarEdit" 
                          AllowSelection="False"/>
+</Window>
+
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.AllowSelection = false;
-calendarEdit.Date = new DateTime(2020, 08, 12);
+this.calendarEdit.AllowSelection = false;
+this.calendarEdit.Date = new DateTime(2020, 08, 12);
 
 {% endhighlight %}
 {% endtabs %}

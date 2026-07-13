@@ -14,12 +14,20 @@ The [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 {%tabs %}
 {% highlight xaml %}
- <syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                          ViewType="Week" 
                          ItemsSource="{Binding scheduleAppointmentCollection}">
- </syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for schedule appointment collection
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 //Adding schedule appointment in the schedule appointment collection 
@@ -89,6 +97,9 @@ Create a custom class `Meeting` with mandatory fields `From`, `To` and `EventNam
 
 {% tabs %}
 {% highlight c# %}
+using System;
+using System.Windows.Media;
+
 /// <summary>   
 /// Represents the custom data properties.   
 /// </summary> 
@@ -105,20 +116,28 @@ public class Meeting
 N> You can map those properties of the `Meeting` class to schedule appointment by using the `AppointmentMapping` properties.
 {%tabs %}
 {% highlight xaml %}
- <syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                          ViewType="Week" 
                          ItemsSource="{Binding Meetings}">
-    <syncfusion:SfScheduler.AppointmentMapping>
-        <syncfusion:AppointmentMapping
-            Subject="EventName"
-            StartTime="From"
-            EndTime="To"
-            AppointmentBackground="BackgroundColor"
-            Foreground="ForegroundColor"/>
-    </syncfusion:SfScheduler.AppointmentMapping>
-</syncfusion:SfScheduler>
+            <syncfusion:SfScheduler.AppointmentMapping>
+                <syncfusion:AppointmentMapping
+                    Subject="EventName"
+                    StartTime="From"
+                    EndTime="To"
+                    AppointmentBackground="BackgroundColor"
+                    Foreground="ForegroundColor"/>
+            </syncfusion:SfScheduler.AppointmentMapping>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 //Schedule data mapping for custom appointments
 AppointmentMapping dataMapping = new AppointmentMapping();
 dataMapping.Subject = "EventName";
@@ -134,6 +153,8 @@ Schedule the meetings for a day by setting `From` and `To` of the Meeting class.
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 //Creating an instance for the custom appointment class
 Meeting meeting = new Meeting();
 //Setting the start time of an event
@@ -165,21 +186,29 @@ Spanned Appointment is an appointment that lasts more than 24 hours. It doesn’
 
 {%tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Week"
                         ItemsSource="{Binding Meetings}">
-    <syncfusion:SfScheduler.AppointmentMapping>
-        <syncfusion:AppointmentMapping 
-                Subject="EventName"
-                StartTime="From"
-                EndTime="To"
-                AppointmentBackground="BackgroundColor"
-                Foreground="ForegroundColor">
-        </syncfusion:AppointmentMapping>
-    </syncfusion:SfScheduler.AppointmentMapping>
-</syncfusion:SfScheduler>
+            <syncfusion:SfScheduler.AppointmentMapping>
+                <syncfusion:AppointmentMapping 
+                        Subject="EventName"
+                        StartTime="From"
+                        EndTime="To"
+                        AppointmentBackground="BackgroundColor"
+                        Foreground="ForegroundColor">
+                </syncfusion:AppointmentMapping>
+            </syncfusion:SfScheduler.AppointmentMapping>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for the collection of custom appointments
 var Meetings = new ObservableCollection<Meeting>();
 // Creating an instance for the custom appointment class
@@ -196,7 +225,7 @@ meeting.BackgroundColor = new SolidColorBrush(Colors.SlateBlue);
 meeting.ForegroundColor = new SolidColorBrush(Colors.White);
 // Adding a custom appointment in the CustomAppointmentCollection
 Meetings.Add(meeting);
-//Adding schedule appointment collection to the  ItemsSource of SfSchedule
+//Adding schedule appointment collection to the  ItemsSource of SfScheduler
 Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}
@@ -212,12 +241,20 @@ The all-Day appointment is an appointment that is scheduled for a whole day. It 
 
 {%tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
                         ViewType="Week" 
                         ItemsSource="{Binding scheduleAppointmentCollection}">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for schedule appointment collection
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 //Adding schedule appointment in the schedule appointment collection 
@@ -275,12 +312,20 @@ The SfScheduler appointment recurrenceRule is used to populate the required recu
 
 {%tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
                         ViewType="Week" 
                         ItemsSource="{Binding scheduleAppointmentCollection}">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for schedule appointment collection
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 //Adding schedule appointment in schedule appointment collection 
@@ -311,6 +356,9 @@ For creating the custom recurrence appointment, create a custom class `Meeting` 
 
 {% tabs %}
 {% highlight c# %}
+using System;
+using System.Windows.Media;
+
 /// <summary>
 /// Represents custom data properties.
 /// </summary>
@@ -331,21 +379,29 @@ N> Map those properties of Meeting class to schedule appointment by using the `A
 
 {%tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
-         <syncfusion:SfScheduler.AppointmentMapping>
-            <syncfusion:AppointmentMapping
-            	Subject="EventName"
-           		StartTime="From"
-            	EndTime="To"
-                Id="Id"
-            	AppointmentBackground="BackgroundColor"
-                Foreground="ForegroundColor"
-            	RecurrenceRule="RecurrenceRule"
-            	IsAllDay="IsAllDay"/>
-        </syncfusion:SfScheduler.AppointmentMapping>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
+                 <syncfusion:SfScheduler.AppointmentMapping>
+                <syncfusion:AppointmentMapping
+                	Subject="EventName"
+               		StartTime="From"
+                	EndTime="To"
+                    Id="Id"
+                	AppointmentBackground="BackgroundColor"
+                    Foreground="ForegroundColor"
+                	RecurrenceRule="RecurrenceRule"
+                	IsAllDay="IsAllDay"/>
+            </syncfusion:SfScheduler.AppointmentMapping>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 //Schedule data mapping for custom appointments
 AppointmentMapping dataMapping = new AppointmentMapping();
 dataMapping.Subject = "EventName";
@@ -363,6 +419,8 @@ Schedule the recurring meetings for daily, weekly, monthly, or yearly interval b
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for the custom appointment class
 Meeting meeting = new Meeting();
 // Setting the start time of an event
@@ -383,7 +441,7 @@ meeting.RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10";
 var Meetings = new ObservableCollection<Meeting>();
 // Adding a custom appointment in CustomAppointmentCollection
 Meetings.Add(meeting);
-// Adding custom appointments in ItemsSource of SfSchedule
+// Adding custom appointments in ItemsSource of SfScheduler
 Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs %}
@@ -395,6 +453,8 @@ Get the Recurrence properties from the [RRULE](https://help.syncfusion.com/cr/wp
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 DateTime dateTime = new DateTime(2020, 6, 30, 10, 0, 0);
 RecurrenceProperties recurrenceProperties = RecurrenceHelper.RRuleParser("FREQ=DAILY;INTERVAL=1;COUNT=3", dateTime);
 {% endhighlight %}
@@ -411,6 +471,8 @@ Get the occurrences date-time list of recurring appointment from the RRULE using
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 DateTime dateTime = new DateTime(2020, 6, 27, 9, 0, 0);
 IEnumerable<DateTime> dateCollection = RecurrenceHelper.GetRecurrenceDateTimeCollection("FREQ=DAILY;INTERVAL=1;COUNT=3", dateTime);
 {% endhighlight %}
@@ -427,6 +489,8 @@ Gets the pattern appointment for the specified occurrence.
 To get the pattern appointment by using the following event and passing a parameter as `Scheduler` and Specified `Appointment`.
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.AppointmentTapped += Schedule_AppointmentTapped;
 
 private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
@@ -450,6 +514,8 @@ To get a specific appointment by using the following event and passing a paramet
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Schedule.AppointmentTapped += Schedule_AppointmentTapped;
 
 private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
@@ -481,12 +547,20 @@ Delete any of occurrence which is exception from recurrence pattern appointment 
 
 {%tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
                         ViewType="Week" 
                         ItemsSource="{Binding scheduleAppointmentCollection}">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for schedule appointment collection
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 
@@ -527,12 +601,18 @@ Add an exception appointment which is changed or modified occurrence of the recu
 
 {%tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Week" 
-                        ItemsSource="{Binding scheduleAppointmentCollection}">
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfScheduler x:Name="Schedule" 
+                            ViewType="Week" 
+                            ItemsSource="{Binding scheduleAppointmentCollection}">
+    </syncfusion:SfScheduler>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for schedule appointment collection
 var appointmentCollection = new ScheduleAppointmentCollection();
 // Recurrence and exception appointment
@@ -594,6 +674,9 @@ To add the exception dates in the recurrence series of custom appointment, add t
 
 {% tabs %}
 {% highlight c# %}
+using System;
+using System.Windows.Media;
+
 public class Meeting
 {
     public ObservableCollection<DateTime> RecurrenceExceptions { get; set; } = new ObservableCollection<DateTime>();
@@ -613,27 +696,33 @@ Map this custom property `RecurrenceExceptionDates` of custom class with the `Re
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Week"
-                        ItemsSource="{Binding customAppointmentCollection}>
-    <syncfusion:SfScheduler.AppointmentMapping>
-        <syncfusion:AppointmentMapping
-            Subject="EventName"
-            StartTime="From"
-            EndTime="To"
-            Id="Id"
-            AppointmentBackground="BackgroundColor"
-            Foreground="ForegroundColor"
-            IsAllDay="IsAllDay"
-            StartTimeZone="StartTimeZone"
-            RecurrenceRule="RecurrenceRule"
-            RecurrenceExceptionDates="RecurrenceExceptions"
-            EndTimeZone="EndTimeZone"
-            RecurrenceId="RecurrenceId"/>
-    </syncfusion:SfScheduler.AppointmentMapping>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfScheduler x:Name="Schedule" 
+                            ViewType="Week"
+                            ItemsSource="{Binding customAppointmentCollection}>
+        <syncfusion:SfScheduler.AppointmentMapping>
+            <syncfusion:AppointmentMapping
+                Subject="EventName"
+                StartTime="From"
+                EndTime="To"
+                Id="Id"
+                AppointmentBackground="BackgroundColor"
+                Foreground="ForegroundColor"
+                IsAllDay="IsAllDay"
+                StartTimeZone="StartTimeZone"
+                RecurrenceRule="RecurrenceRule"
+                RecurrenceExceptionDates="RecurrenceExceptions"
+                EndTimeZone="EndTimeZone"
+                RecurrenceId="RecurrenceId"/>
+        </syncfusion:SfScheduler.AppointmentMapping>
+    </syncfusion:SfScheduler>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for custom appointment collection
 ObservableCollection<Meeting> customAppointmentCollection = new ObservableCollection<Meeting>();
 // data mapping for custom appointments.
@@ -689,23 +778,29 @@ public ObservableCollection<Meeting> RecursiveAppointmentCollection
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Week" 
-					    ItemsSource="{Binding RecursiveAppointmentCollection}">
-    <syncfusion:SfScheduler.AppointmentMapping>
-        <syncfusion:AppointmentMapping
-            Subject="EventName"
-            StartTime="From"
-            EndTime="To"
-            Id="Id"
-            AppointmentBackground="BackgroundColor"
-            Foreground="ForegroundColor"
-            RecurrenceRule="RecurrenceRule"
-            RecurrenceId="RecurrenceId"/>
-    </syncfusion:SfScheduler.AppointmentMapping>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfScheduler x:Name="Schedule" 
+                            ViewType="Week" 
+                            ItemsSource="{Binding RecursiveAppointmentCollection}">
+        <syncfusion:SfScheduler.AppointmentMapping>
+            <syncfusion:AppointmentMapping
+                Subject="EventName"
+                StartTime="From"
+                EndTime="To"
+                Id="Id"
+                AppointmentBackground="BackgroundColor"
+                Foreground="ForegroundColor"
+                RecurrenceRule="RecurrenceRule"
+                RecurrenceId="RecurrenceId"/>
+        </syncfusion:SfScheduler.AppointmentMapping>
+    </syncfusion:SfScheduler>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.RecursiveAppointmentCollection = new ObservableCollection<Meeting>();
 //Adding custom appointment in the custom appointment collection 
 Meeting dailyEvent = new Meeting
@@ -765,11 +860,17 @@ To enable tooltip for the scheduler appointments, use the [EnableToolTip](https:
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:SfScheduler x:Name="Schedule"
-                         EnableToolTip="True">
- </syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfScheduler x:Name="Schedule"
+                            EnableToolTip="True">
+    </syncfusion:SfScheduler>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.EnableToolTip = true;
 {% endhighlight %}
 {% endtabs %}
@@ -784,56 +885,60 @@ The following code example shows the usage of DataTemplate.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        EnableToolTip="True">
-  <syncfusion:SfScheduler.ToolTipTemplate>
-     <DataTemplate>
-         <Border CornerRadius="4"
-                 Padding="5">
-             <Grid>
-                 <Grid.ColumnDefinitions>
-                     <ColumnDefinition Width="Auto" />
-                     <ColumnDefinition Width="*" />
-                 </Grid.ColumnDefinitions>
-                 <Rectangle Fill="{Binding AppointmentBackground}"
-                            Grid.Column="0"
-                            VerticalAlignment="Stretch"
-                            HorizontalAlignment="Left"
-                            Width="10"
-                            Margin="0,0,5,0" />
-                 <StackPanel Grid.Column="1"
-                             Orientation="Vertical">
-                     <TextBlock Text="{Binding Subject}"
-                                TextWrapping="Wrap"
-                                FontWeight="Bold"
-                                FontSize="12"
-                                Foreground="White"
-                                TextTrimming="CharacterEllipsis"
-                                Margin="0,0,0,5" />
-                     <StackPanel Orientation="Horizontal">
-                         <TextBlock Text="Start Time: "
-                                    FontWeight="Bold"
-                                    FontSize="12"
-                                    Foreground="White" />
-                         <TextBlock Text="{Binding StartTime, StringFormat='{}{0:MM/dd/yyyy }'}"
-                                    FontSize="12"
-                                    Foreground="White" />
-                     </StackPanel>
-                     <StackPanel Orientation="Horizontal">
-                         <TextBlock Text="End Time: "
-                                    FontWeight="Bold"
-                                    FontSize="12"
-                                    Foreground="White" />
-                         <TextBlock Text="{Binding EndTime, StringFormat='{}{0:MM/dd/yyyy}'}"
-                                    FontSize="12"
-                                    Foreground="White" />
-                     </StackPanel>
-                 </StackPanel>
-             </Grid>
-         </Border>
-     </DataTemplate>
- </syncfusion:SfScheduler.ToolTipTemplate>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfScheduler x:Name="Schedule"
+                            EnableToolTip="True">
+        <syncfusion:SfScheduler.ToolTipTemplate>
+            <DataTemplate>
+                <Border CornerRadius="4"
+                        Padding="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="{Binding AppointmentBackground}"
+                                    Grid.Column="0"
+                                    VerticalAlignment="Stretch"
+                                    HorizontalAlignment="Left"
+                                    Width="10"
+                                    Margin="0,0,5,0" />
+                        <StackPanel Grid.Column="1"
+                                    Orientation="Vertical">
+                            <TextBlock Text="{Binding Subject}"
+                                        TextWrapping="Wrap"
+                                        FontWeight="Bold"
+                                        FontSize="12"
+                                        Foreground="White"
+                                        TextTrimming="CharacterEllipsis"
+                                        Margin="0,0,0,5" />
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Start Time: "
+                                            FontWeight="Bold"
+                                            FontSize="12"
+                                            Foreground="White" />
+                                <TextBlock Text="{Binding StartTime, StringFormat='{}{0:MM/dd/yyyy }'}"
+                                            FontSize="12"
+                                            Foreground="White" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="End Time: "
+                                            FontWeight="Bold"
+                                            FontSize="12"
+                                            Foreground="White" />
+                                <TextBlock Text="{Binding EndTime, StringFormat='{}{0:MM/dd/yyyy}'}"
+                                            FontSize="12"
+                                            Foreground="White" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </DataTemplate>
+        </syncfusion:SfScheduler.ToolTipTemplate>
+    </syncfusion:SfScheduler>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -847,29 +952,33 @@ N>
 The default appearance of schedule appointment can be customized in all the views by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) and [AppointmentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplateSelector) properties of [ViewSettingsBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html). Use the [AllDayAppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayAppointmentTemplate) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) to customize the appearance of all day appointments in day, week and work week views.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ItemsSource="{Binding Appointments}">
-<syncfusion:SfScheduler.DaysViewSettings>
-<syncfusion:DaysViewSettings>
-    <syncfusion:DaysViewSettings.AppointmentTemplate>
-        <DataTemplate>
-            <StackPanel Background="{Binding Data.BackgroundColor}"  
-            VerticalAlignment="Stretch" 
-            HorizontalAlignment="Stretch"
-            Orientation="Horizontal">
-        <TextBlock Margin="5"
-            VerticalAlignment="Center"
-            Text="Meeting" 
-            TextTrimming="CharacterEllipsis"
-            Foreground="{Binding Data.ForegroundColor}"        TextWrapping="Wrap"
-            FontStyle="Italic"                       
-            TextAlignment="Left"
-            FontWeight="Bold"/>
-            </StackPanel>
-        </DataTemplate>
-    </syncfusion:DaysViewSettings.AppointmentTemplate>
-    </syncfusion:DaysViewSettings>
-    </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ItemsSource="{Binding Appointments}">
+        <syncfusion:SfScheduler.DaysViewSettings>
+            <syncfusion:DaysViewSettings>
+                <syncfusion:DaysViewSettings.AppointmentTemplate>
+                    <DataTemplate>
+                        <StackPanel Background="{Binding Data.BackgroundColor}"  
+                        VerticalAlignment="Stretch" 
+                        HorizontalAlignment="Stretch"
+                        Orientation="Horizontal">
+                    <TextBlock Margin="5"
+                        VerticalAlignment="Center"
+                        Text="Meeting" 
+                        TextTrimming="CharacterEllipsis"
+                        Foreground="{Binding Data.ForegroundColor}"        TextWrapping="Wrap"
+                        FontStyle="Italic"                       
+                        TextAlignment="Left"
+                        FontWeight="Bold"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </syncfusion:DaysViewSettings.AppointmentTemplate>
+            </syncfusion:DaysViewSettings>
+        </syncfusion:SfScheduler.DaysViewSettings>
+    </syncfusion:SfScheduler>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -886,13 +995,17 @@ You can customize the appointment selection border brush by using the [Selection
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
-    <Style TargetType="syncfusion:AppointmentControl">
-        <Setter Property="BorderBrush" Value="Blue" />
-        <Setter Property="SelectionBorderBrush" Value="Red"/>
-        <Setter Property="BorderThickness" Value="2"/>
-    </Style>
-</Window.Resources>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Window.Resources>
+        <Style TargetType="syncfusion:AppointmentControl">
+            <Setter Property="BorderBrush" Value="Blue" />
+            <Setter Property="SelectionBorderBrush" Value="Red"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+    </Window.Resources>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
