@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pattern and Practices for Syncfusion Essential WPF controls
-description: Learn about how to use MVVM Commands, Patterns, and Events of the Syncfusion Essential WPF controls
+description: Learn how to implement MVVM commands, patterns, and event handling techniques with Syncfusion Essential WPF controls.
 platform: wpf
 control: Pattern and Practices
 documentation: ug
