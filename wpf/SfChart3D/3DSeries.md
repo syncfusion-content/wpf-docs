@@ -9,25 +9,24 @@ documentation: ug
 
 # Series in WPF SfChart3D
 
-ChartSeries is the visual representation of the data. SfChart3D offers eight types of series. Based on your requirements and specifications, any type of Series can be added for data visualization. 
+ChartSeries is the visual representation of the data. SfChart3D offers eight types of series. Based on your requirements and specifications, any type of series can be added for data visualization. 
 
 * Column
 * Bar
 * Line
 * Scatter
 * Area
-* Stacking column 
-* Stacking column 100 
-* Stacking bar
-* Stacking bar
+* Stacking Column 
+* Stacking Column 100 
+* Stacking Bar
+* Stacking Bar 100
 * Pie
 * Doughnut
 
-The following APIs are common for the most of the series types:
+The following APIs are common for most of the series types:
 
 * [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) – A string property that represents the X values for the series.
 * [`YBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyDataSeries3D.html#Syncfusion_UI_Xaml_Charts_XyDataSeries3D_YBindingPath) – A string property that represents the Y values for the series.
-Eight types of chart [`Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_Series).
 * [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior) – Represents the brush to fill the series.
 
 
@@ -66,7 +65,7 @@ chart3D.Series.Add(series);
 
 ## Bar Charts
 
-[`BarSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries3D.html) are similar to column series, excepts its orientation.
+[`BarSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries3D.html) is similar to column series, except for its orientation.
 
 {% tabs %}
 
@@ -161,7 +160,7 @@ ColumnSeries3D series = new ColumnSeries3D()
 {
     ItemsSource = new CategoryDataViewModel().CategoricalData,
     XBindingPath = "Year",
-    YBindingPath = "Plastic"
+    YBindingPath = "Plastic",
     SegmentSpacing = 0.6,
 };
 
@@ -206,13 +205,13 @@ LineSeries3D line = new LineSeries3D()
     YBindingPath = "Metal"
 };
 
-chart3D.Series.Add(series);
+chart3D.Series.Add(line);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Column Charts support in WPF 3D Chart](3D-Charts_images/Series/LineSeries3D.png)
+![Line Charts support in WPF 3D Chart](3D-Charts_images/Series/LineSeries3D.png)
 
 ## Scatter Chart
 
@@ -283,12 +282,12 @@ chart3D.Series.Add(series);
 
 {% endtabs %}
 
-![Scatter chart support in WPF 3D Chart](3D-Charts_images/Series/AreaSeries3D.png)
+![Area chart support in WPF 3D Chart](3D-Charts_images/Series/AreaSeries3D.png)
 
 
 ## Stacking Charts
 ### Stacking Column
-[`StackingColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumnSeries3D.html#) resembles multiple types of ColumnSeries3D. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
+[`StackingColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumnSeries3D.html#) resembles multiple types of ColumnSeries3D. Each series is vertically stacked one above the other. When there is only one series, it resembles a simple ColumnSeries. 
 
 The following code example illustrates how to use StackingColumnSeries3D:
 
@@ -348,7 +347,7 @@ chart3D.Series.Add(stack3);
 
 ### Stacking Column 100
 
-[`StackingColumn100Series3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumn100Series3D.html#) resembles StackingColumnSeries3D but the cumulative portion of each stacked element always comes to a total of 100%. 
+[`StackingColumn100Series3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumn100Series3D.html#) resembles StackingColumnSeries3D, but the cumulative portion of each stacked element always totals 100%. 
 
 The following code example illustrates how to use StackingColumn100Series3D:
 
@@ -459,7 +458,7 @@ chart3D.Series.Add(stack3);
 
 ### Stacking Bar 100
 
-[`StackingBar100Series3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingBar100Series3D.html#) resembles a StackingBarSeries3D. StackingBar100Series3D displays multiple series as stacked bars and the cumulative portion of each stacked element is always 100%. 
+[`StackingBar100Series3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingBar100Series3D.html#) resembles StackingBarSeries3D. StackingBar100Series3D displays multiple series as stacked bars, and the cumulative portion of each stacked element is always 100%. 
 
 The following code example illustrates how to use StackingBar100Series3D:
 
@@ -506,7 +505,7 @@ chart3D.Series.Add(stack2);
 
 ## Pie Chart
 
-[`PieSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PieSeries3D.html#) is divided into sectors, illustrating numerical proportion.
+[`PieSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PieSeries3D.html#) is divided into sectors, illustrating numerical proportions.
 
 The following code example illustrates the PieSeries3D.
 
@@ -543,9 +542,9 @@ chart3D.Series.Add(series);
 
 ## Doughnut Chart
 
-[`DoughnutSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries3D.html#) is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 
+[`DoughnutSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries3D.html#) is similar to PieSeries3D. It is used to show the relationship between parts of data and the whole data. 
 
-The DoughnutSeries3D can be added to chart as in below code example:
+The DoughnutSeries3D can be added to the chart as shown in the below code example:
 
 {% tabs %}
 
@@ -578,7 +577,7 @@ chart.Series.Add(series);
 
 ### Coefficient
 
-The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries3D.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries3D_DoughnutCoefficient)  and [`CircleCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase3D_CircleCoefficient) property to define the inner circle of Doughnut and Pie Charts.
+The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries3D.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries3D_DoughnutCoefficient)  and [`CircleCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase3D_CircleCoefficient) properties are used to define the inner circle of Doughnut and Pie Charts.
 
 {% tabs %}
 
@@ -650,7 +649,7 @@ chart.Series.Add(series);
 
 ![Doughnut support in WPF 3D Chart](3D-Charts_images/Series/Semi_Doughnut.png)
 
-**Pie**
+### Pie
 {% tabs %}
 
 {% highlight xaml %}
@@ -668,12 +667,14 @@ chart.Series.Add(series);
 
 {% highlight c# %}
 
-DoughnutSeries3D series = new DoughnutSeries3D()
+PieSeries3D series = new PieSeries3D()
 {
-    ItemsSource = new UsersViewModel().CategoricalData,
+    ItemsSource = new CategoryDataViewModel().CategoricalData,
     XBindingPath = "Year",
     YBindingPath = "Iron",
-    DoughnutCoefficient = 0.5
+    CircleCoefficient = 0.7,
+    StartAngle = 180,
+    EndAngle = 360
 };
 
 chart.Series.Add(series);
@@ -682,14 +683,14 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Doughnut support in WPF 3D Chart](3D-Charts_images/Series/Semi_Pie.png)
+![Semi Pie support in WPF 3D Chart](3D-Charts_images/Series/Semi_Pie.png)
 
 ## Dynamic explode
 
 This feature allows users to explode a particular segment in a circular series using [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PieSeries3D.html#Syncfusion_UI_Xaml_Charts_PieSeries3D_ExplodeOnMouseClick). This can also be achieved by setting the [`ExplodeIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase3D_ExplodeIndex) or [`ExplodeAll`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase3D_ExplodeAll) property. 
 
 
-The following code example illustrates how to enable dynamic explode for circular series, for data please refer series category in 3D charts.
+The following code example illustrates how to enable dynamic explode for circular series. For data, please refer to the Series category in 3D charts.
 
 {% tabs %}
 
