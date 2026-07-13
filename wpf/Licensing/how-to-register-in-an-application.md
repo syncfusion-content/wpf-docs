@@ -9,9 +9,7 @@ documentation: ug
 
 # Register Syncfusion license key in a WPF application
 
-N> **Prerequisites:** Install the Syncfusion WPF NuGet package (for example, `Syncfusion.Licensing.Wpf`, or the platform-specific control package that depends on it) from the Syncfusion NuGet feed, and ensure `Syncfusion.Licensing.dll` is referenced in your project. Licensing support is available in Syncfusion Essential Studio version 16.1.0.24 and later.
-
-The generated license key is a string that must be registered before any Syncfusion control is initialized. The `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense` method takes the license-key string as its only parameter and returns `void`. The following code registers the license.
+The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license
 
 **Registering a single license key**
 
