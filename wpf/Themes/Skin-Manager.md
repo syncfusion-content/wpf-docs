@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with WPF Skin Manager
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps you to apply the themes for both Syncfusion<sup>&reg;</sup> and Framework controls. 
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps you apply themes for both Syncfusion<sup>&reg;</sup> and Framework controls.
 
 ## Themes list
 
@@ -124,7 +124,7 @@ Syncfusion.Themes.SystemTheme.Wpf.dll</td><td>
 </td></tr>
 </table>
 
-## Apply a theme to a control
+## Apply a Theme to a Control
 
 ### Add SkinManager reference
 
@@ -151,14 +151,14 @@ There are several ways to include the Syncfusion<sup>&reg;</sup> [SfSkinManager]
 
 ### Add a theme assembly reference
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). To use a theme in the application, add Reference to the corresponding theme assembly. For example, to apply `Windows11Light` theme, attach `Syncfusion.Themes.Windows11Light.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.Windows11Light.WPF/) reference to the project. While applying a theme to a Window, SkinManager inherits the same theme to all the elements inside the Window.
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) supports applying themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). To use a theme in the application, add Reference to the corresponding theme assembly. For example, to apply `Windows11Light` theme, attach `Syncfusion.Themes.Windows11Light.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.Windows11Light.WPF/) reference to the project. While applying a theme to a Window, SkinManager inherits the same theme to all the elements inside the Window.
 
 ![Add theme assembly reference](Skin-Manager_images/Add-Windows11Light-Theme-Assembly-Reference.png)
 
 
 ### Set theme
 
-Themes will be applied to both Syncfusion<sup>&reg;</sup> and Framework controls by using [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_ThemeProperty) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). Also Ensure that the `ApplyThemeAsDefaultStyle` property is set to `true` before calling the SetTheme method
+Themes will be applied to both Syncfusion<sup>&reg;</sup> and Framework controls by using [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_ThemeProperty) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). Also ensure that the `ApplyThemeAsDefaultStyle` property is set to `true` before calling the SetTheme method.
 
 N> While applying the theme to a Window or any element, `SkinManager` inherits the same theme to all its descendants.
 
@@ -207,15 +207,15 @@ SfSkinManager.SetTheme(this, new Theme("Windows11Light"));
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-themes-demo-using-skinmanager).
 
-## Apply a theme globally in the application
+## Apply a Theme Globally in the Application
 
 To apply a theme globally in an application, set the theme using `ApplicationTheme` attached property of the SfSkinManager in the constructor of your MainWindow. This ensures that the selected theme is automatically applied to any new windows when they are loaded.
 
 If you set the theme using the `ApplicationTheme` attached property of [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html), you don’t need to set it again using the [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_ThemeProperty) attached property in xaml or by using [SetTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SetTheme_System_Windows_DependencyObject_Syncfusion_SfSkinManager_Theme_) in code behind.
 
-Also ensure that the `ApplyThemeAsDefaultStyle` property is set to `true`
+Also ensure that the `ApplyThemeAsDefaultStyle` property is set to `true`.
 
-N> The `SfSkinManager.ApplicationTheme` static property should be set before `InitializeComponent` of the window or during application start up, when applying for multiple windows.
+N> The `SfSkinManager.ApplicationTheme` static property should be set before `InitializeComponent` of the window or during application startup, when applying for multiple windows.
 
 {% tabs %}
 
@@ -239,13 +239,13 @@ public partial class MainWindow : Window
 
 ## Customization 
 
-### Customize theme colors and fonts in the application
+### Customize Theme Colors and Fonts in the Application
 
 To customize the theme colors and fonts in the application, call [RegisterThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_RegisterThemeSettings_System_String_Syncfusion_SfSkinManager_IThemeSetting_) method and pass the theme name and respective theme setting instance as parameters.
 
-Each theme supported by the theme studio has its own theme settings class, which begins with the prefix of the themes' name. For example, if the theme name is `Windows11Light`, then there will be theme settings class called `Windows11LightThemeSettings`. 
+Each theme supported by the theme studio has its own theme settings class, which begins with the theme name as a prefix. For example, if the theme name is `Windows11Light`, then there will be theme settings class called `Windows11LightThemeSettings`.  
 
-N> Need to register theme settings before setting respective themes for window or control.
+N> You need to register theme settings before setting respective themes for window or control.
 
 Please find the complete list of theme names, respective theme settings class, and supported palette.
 
@@ -509,6 +509,7 @@ This applies the WPFPrimaryButtonStyle to the button, overriding its default sty
 
 You can retrieve the styles for specific controls from the [Resource Key list](https://help.syncfusion.com/wpf/themes/skin-manager#resource-key-list) according to your requirements.
 
+
 In the example below, a ComboBox is used to toggle between the Windows11Light and Windows11Dark themes. Two buttons are displayed: one applies a different style (WPFPrimaryButtonStyle), while the other uses a different background brush (ErrorBackground).
 
 {% tabs %}
@@ -575,7 +576,7 @@ The control style is resolved automatically from the active theme.
 
 ![Basic StyleVariant output](Skin-Manager_images/StyleVariant-Basic.png)
 
-#### Apply StyleVariant with custom style
+#### Apply StyleVariant with Custom Style
 
 You can also combine StyleVariant with a custom Style to override or extend properties.
 
@@ -620,7 +621,7 @@ SfSkinManager.SetTheme(this, new Theme("Windows11Dark"));
 
 ![StyleVariant with custom style output](Skin-Manager_images/StyleVariant-Custom.png)
 
-### Accessing Theme Resources Using TryFindResource 
+### Accessing Theme Resources Using TryFindResource
 
 To access specific theme resources in your WPF application, you can use the `TryFindResource(key)` method to retrieve a resource by its key and apply it in the code-behind. 
 
@@ -683,7 +684,7 @@ if (currentTheme.ThemeName == "Windows11Light")
 
 {% endtabs %}
 
-This example demonstrates how to dynamically apply a button style, foreground color, and font size using theme resource keys defined in the Brushes.xaml and Common.xaml files for the Windows11Light theme. 
+This example demonstrates how to dynamically apply a button style, foreground color, and font size using theme resource keys defined in the Brushes.xaml and Common.xaml files for the Windows11Light theme.
 
 **Output Screenshot**
 
@@ -744,7 +745,7 @@ This example demonstrates how to dynamically apply a button style, foreground co
 <table>
 <tr><th>Control Name</th><th>Key Name</th></tr>
 <tr><td>AutoComplete</td><td>SyncfusionAutoCompleteStyle</td></tr>
-<tr><td>AssistView</td><td>SyncfusionChatStyle</td></tr>
+<tr><td>AssistView</td><td>SyncfusionAssistViewStyle</td></tr>
 <tr><td>AvatarView</td><td>SyncfusionAvatarViewStyle</td></tr>
 <tr><td>BusyIndicator</td><td>SyncfusionBusyIndicatorStyle</td></tr>
 <tr><td>ButtonAdv</td><td>SyncfusionButtonAdvStyle</td></tr>
@@ -849,9 +850,9 @@ This example demonstrates how to dynamically apply a button style, foreground co
 <tr><td>WizardControl</td><td>SyncfusionWizardControlStyle</td></tr>
 </table>	
 
-## Apply themes to the controls derived from Syncfusion<sup>&reg;</sup> controls
+## Apply Themes to the Controls Derived from Syncfusion<sup>&reg;</sup> Controls
 
-To apply themes to a derived control using `SfSkinManager`, assign the base control type to the DefaultStyleKey property in the constructor of your derived control.Also ensure that the `ApplyThemeAsDefaultStyle` property is set to `true` in the MainWindow Constructor. 
+To apply themes to a derived control using `SfSkinManager`, assign the base control type to the DefaultStyleKey property in the constructor of your derived control. Also ensure that the `ApplyThemeAsDefaultStyle` property is set to `true` in the MainWindow constructor.
 
 {% tabs %}
 
@@ -900,9 +901,9 @@ public class SfDataGridExt : SfDataGrid
 
 {% endtabs %}
 
-### Apply customized theme from Theme Studio
+### Apply Customized Theme from Theme Studio
 
-Create custom themes by [modifying the existing themes from Theme studio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme). To apply a custom theme in the application by using the following reference.
+Create custom themes by [modifying the existing themes from Theme Studio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme). To apply a custom theme in the application, use the following reference.
 
 {% tabs %}
 
@@ -922,7 +923,7 @@ SfSkinManager.SetTheme(this, new Theme("Windows11LightYellow"));
 
 {% endtabs %}
 
-### Apply custom style to active theme
+### Apply Custom Style to Active Theme
 
 You can customize the theme by setting the `ApplyThemeAsDefaultStyle` property to `true`, which applies the theme based on each control’s default style.
 
@@ -936,7 +937,7 @@ SfSkinManager.ApplyThemeAsDefaultStyle = true;
 
 {% endtabs %}
 
-N>The `SfSkinManager.ApplyThemeAsDefaultStyle` static property should be set before `InitializeComponent` of the window or during application start up.
+N>The `SfSkinManager.ApplyThemeAsDefaultStyle` static property should be set before `InitializeComponent` of the window or during application startup.
 
 Enabling this setting allows you to override default theme styles. Follow the steps below to implement this behavior: 
 
@@ -991,9 +992,9 @@ public partial class MainWindow : Window
 
 ![Customizing theme styles for buttons](Skin-Manager_images/Customizing-theme-styles-for-buttons.png)
 
-You can also change a theme dynamically with custom styles. 
+You can also change a theme dynamically with custom styles.
 
-In the following example, a ComboBox is used to toggle between the Windows11Light and Windows11Dark themes. Here we customize the foreground color of the Button to red. 
+In the following example, a ComboBox is used to toggle between the Windows11Light and Windows11Dark themes. The foreground color of the Button is customized to red.
 
 {% tabs %}
 

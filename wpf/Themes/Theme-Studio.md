@@ -92,9 +92,9 @@ The WPF Theme Studio comes with various sets of palettes for each theme variant.
 <li>Cyan</li>
 <li>CyanBlue</li>
 <li>Blue</li>
-<li>BlueMegenta</li>
-<li>Megenta</li>
-<li>MegentaPink</li>
+<li>BlueMagenta</li>
+<li>Magenta</li>
+<li>MagentaPink</li>
 </ul>
 </td>
 <td>
