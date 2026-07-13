@@ -14,10 +14,16 @@ Reminder can be set by setting the [EnableReminder](https://help.syncfusion.com/
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Scheduler"
-                        ViewType="Week"
-                         EnableReminder="True" >
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Scheduler"
+                            ViewType="Week"
+                             EnableReminder="True" >
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,15 +63,24 @@ Configure the appointment reminders with [SchedulerReminder](https://help.syncfu
 
 {% tabs %}
 {% highlight xaml %}
- <Grid.DataContext>
-    <local:ReminderViewModel/>
- </Grid.DataContext>
- <syncfusion:SfScheduler x:Name="Schedule" 
-                ItemsSource="{Binding Events}"
-                EnableReminder="True">
-  </syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+     <Grid.DataContext>
+        <local:ReminderViewModel/>
+     </Grid.DataContext>
+     <syncfusion:SfScheduler x:Name="Schedule" 
+                    ItemsSource="{Binding Events}"
+                    EnableReminder="True">
+      </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+. . .
+
  public class ReminderViewModel 
  {
     ...
@@ -92,6 +107,9 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/appointment-rem
 
 {% tabs %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+. . . 
+
 /// <summary>
 /// Represents custom data properties.
 /// </summary>
@@ -125,6 +143,9 @@ The [ReminderMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sche
 
 {% tabs %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+. . .
+
 /// <summary>
 /// Represents custom data properties.
 /// </summary>
@@ -149,31 +170,40 @@ Map the properties of the `Meeting` class with the [SfScheduler](https://help.sy
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:SfScheduler x:Name="Schedule" 
-                ItemsSource="{Binding Events}"
-                EnableReminder="True">
-            <syncfusion:SfScheduler.AppointmentMapping>
-                <syncfusion:AppointmentMapping
-                    Subject="EventName"
-                    StartTime="From"
-                    EndTime="To"
-                    AppointmentBackground="Color"
-                    IsAllDay="IsAllDay"
-                    StartTimeZone="StartTimeZone"
-                    EndTimeZone="EndTimeZone"
-                    RecurrenceExceptionDates="RecurrenceExceptions"
-                    RecurrenceRule="RecurrenceRule"
-                    RecurrenceId="RecurrenceId"
-                    Reminders="Reminders">
-                    <syncfusion:AppointmentMapping.ReminderMapping>
-                        <syncfusion:ReminderMapping IsDismissed="Dismissed"
-                                                    ReminderTimeInterval="TimeInterval"/>
-                    </syncfusion:AppointmentMapping.ReminderMapping>
-                </syncfusion:AppointmentMapping>
-            </syncfusion:SfScheduler.AppointmentMapping>
-        </syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+     <syncfusion:SfScheduler x:Name="Schedule" 
+                    ItemsSource="{Binding Events}"
+                    EnableReminder="True">
+                <syncfusion:SfScheduler.AppointmentMapping>
+                    <syncfusion:AppointmentMapping
+                        Subject="EventName"
+                        StartTime="From"
+                        EndTime="To"
+                        AppointmentBackground="Color"
+                        IsAllDay="IsAllDay"
+                        StartTimeZone="StartTimeZone"
+                        EndTimeZone="EndTimeZone"
+                        RecurrenceExceptionDates="RecurrenceExceptions"
+                        RecurrenceRule="RecurrenceRule"
+                        RecurrenceId="RecurrenceId"
+                        Reminders="Reminders">
+                        <syncfusion:AppointmentMapping.ReminderMapping>
+                            <syncfusion:ReminderMapping IsDismissed="Dismissed"
+                                                        ReminderTimeInterval="TimeInterval"/>
+                        </syncfusion:AppointmentMapping.ReminderMapping>
+                    </syncfusion:AppointmentMapping>
+                </syncfusion:SfScheduler.AppointmentMapping>
+            </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+. . .
+
 public class ReminderViewModel 
 {
   ...
@@ -202,6 +232,8 @@ Scheduler notifies by the [ReminderAlertOpening](https://help.syncfusion.com/cr/
 
 {% tabs %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 scheduler.ReminderAlertOpening += Scheduler_ReminderAlertOpening;
 
 private void Scheduler_ReminderAlertOpening(object sender, ReminderAlertOpeningEventArgs e)
@@ -226,6 +258,8 @@ The [ReminderAlertActionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syn
 
 {% tabs %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ReminderAlertActionChanged += OnScheduleReminderAlertActionChanged;
 
 private void OnScheduleReminderAlertActionChanged(object sender, Syncfusion.UI.Xaml.Scheduler.ReminderAlertActionChangedEventArgs e)
@@ -247,4 +281,4 @@ private void OnScheduleReminderAlertActionChanged(object sender, Syncfusion.UI.X
 {% endhighlight %}
 {% endtabs %}
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.  For information on appointment data binding, see [Appointments](appointments.md).

@@ -382,7 +382,7 @@ Moves the view to work week view.<br/><br/></td></tr>
 <tr>
 <td>
 Ctrl + Alt + 4 => MonthView<br/><br/></td><td>
-Moves the view to work week view.<br/><br/></td></tr>
+Moves the view to work month view.<br/><br/></td></tr>
 <tr>
 <td>
 Ctrl + Alt + 5 => TimelineDayView<br/><br/></td><td>

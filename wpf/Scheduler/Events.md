@@ -32,12 +32,20 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Month"
                         CellTapped="Scheduler_CellTapped" >
-</syncfusion:SfScheduler>  
+        </syncfusion:SfScheduler>  
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Scheduler_CellTapped(object sender, CellTappedEventArgs e)
 {
     var dateTime = e.DateTime.ToString();
@@ -51,12 +59,20 @@ The [CellDoubleTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sch
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Month" 
 						CellDoubleTapped="Scheduler_CellDoubleTapped">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Scheduler_CellDoubleTapped(object sender, CellDoubleTappedEventArgs e)
 {
     var dateTime = e.DateTime.ToString();
@@ -70,12 +86,20 @@ The [CellLongPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sche
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Month" 
 						CellLongPressed="Schedule_CellLongPressed">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Schedule_CellLongPressed(object sender, CellLongPressedEventArgs e)
 {
     var dateTime = e.DateTime.ToString();
@@ -89,12 +113,20 @@ The [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sch
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Month" 
 						SelectionChanged="Schedule_SelectionChanged">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Schedule_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
     var newdate = e.NewValue.ToString();
@@ -125,12 +157,20 @@ The [SelectionChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.S
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Month" 
 						SelectionChanging="Schedule_SelectionChanging">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Schedule_SelectionChanging(object sender, SelectionChangingEventArgs e)
 {
     var newdate = e.NewValue.ToString();
@@ -153,14 +193,21 @@ The [ViewChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule
     * [OldValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewChangedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_ViewChangedEventArgs_OldValue) : Returns the old date range of the view.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="6" %}
 
-<scheduler:SfScheduler x:Name="Scheduler" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Scheduler" 
                        ViewChanged="OnSchedulerViewChanged" >
-</scheduler:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="3" %}
+using Syncfusion.UI.Xaml.Scheduler;
 
 this.Scheduler.ViewChanged += this.OnSchedulerViewChanged;
 
@@ -184,12 +231,20 @@ The [ViewHeaderCellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Month" 
 						ViewHeaderCellTapped="Schedule_ViewHeaderCellTapped">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Schedule_ViewHeaderCellTapped(object sender, ViewHeaderCellTappedEventArgs e)
 {
     var dateTime = e.DateTime.ToString();
@@ -207,12 +262,20 @@ The [HeaderTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Month" 
 						HeaderTapped="Schedule_HeaderTapped">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Schedule_HeaderTapped(object sender, HeaderTappedEventArgs e)
 {
     var dateTime = e.DateTime.ToString();
@@ -232,12 +295,20 @@ The [WeekNumberTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Month" 
 						WeekNumberTapped="Schedule_WeekNumberTapped">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Schedule_WeekNumberTapped(object sender, WeekNumberTappedEventArgs e)
 {
     var weeknumber = e.WeekNumber.ToString();
@@ -257,12 +328,20 @@ The [AppointmentTappedArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Month" 
 						AppointmentTapped="Schedule_AppointmentTapped">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
 {
     var appointment = e.Appointment.ToString();
