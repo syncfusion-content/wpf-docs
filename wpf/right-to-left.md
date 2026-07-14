@@ -12,12 +12,12 @@ documentation: ug
 
 Right-to-Left (RTL) support displays the content from right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.flowdirection) property to `RightToLeft`. This is helpful to support the Right-to-Left scripted languages like Arabic, Hebrew, Urdu, etc.
 
-All WPF Syncfusion<sup>&reg;</sup> controls support Right-to-Left (RTL) based on the `FlowDirection` property. In addition to that, most controls provide [localization](Localization.md) support to change the language of strings used in the control for any specific culture.
+All WPF Syncfusion<sup>&reg;</sup> controls support Right-to-Left (RTL) based on the `FlowDirection` property. In addition to that, most controls provide [localization](https://help.syncfusion.com/wpf/localization) support to change the language of strings used in the control for any specific culture.
 
 ## Prerequisites
 
 * A Syncfusion WPF application project must be available with at least one Syncfusion control hosted on a window or page.
-* For supported .NET Framework / .NET versions and Visual Studio versions, see [System Requirements](System-Requirements.md).
+* For supported .NET Framework / .NET versions and Visual Studio versions, see [System Requirements](https://helpstaging.syncfusion.com/wpf/system-requirements).
 * RTL support relies on the WPF `FlowDirection` property and works on any control that inherits from `FrameworkElement`.
 
 ## FlowDirection enum values
@@ -78,9 +78,9 @@ RTL support through `FlowDirection` is available in all Syncfusion WPF control r
 
 * All Syncfusion WPF controls that derive from `FrameworkElement` honor `FlowDirection="RightToLeft"`.
 * Complex composite controls (for example, data grids, schedulers, and diagrams) mirror their layout; however, some nested graphical elements may not fully mirror and should be visually verified after enabling RTL.
-* RTL affects layout direction only; to translate display strings, combine RTL with [localization](Localization.md).
+* RTL affects layout direction only; to translate display strings, combine RTL with [localization](https://help.syncfusion.com/wpf/localization).
 
 ## See also
 
-* [Localization](Localization.md)
-* [System Requirements](System-Requirements.md)
+* [Localization](https://help.syncfusion.com/wpf/localization)
+* [System Requirements](https://helpstaging.syncfusion.com/wpf/system-requirements)

@@ -13,7 +13,7 @@ documentation: ug
 ## Prerequisites
 
 * **Essential Studio<sup>&reg;</sup> for WPF** must be installed. See the [Installation](Installation/) topic for setup steps.
-* To open sample source from the Sample Browser, a supported edition of **Visual Studio** must be installed. See [System Requirements](System-Requirements.md) for supported versions.
+* To open sample source from the Sample Browser, a supported edition of **Visual Studio** must be installed. See [System Requirements](https://helpstaging.syncfusion.com/wpf/system-requirements) for supported versions.
 * Running samples requires a **Syncfusion runtime license key**. See [Licensing](Licensing/) for details on registering a license key.
 * The offline and online samples target either **.NET Framework** or **.NET** (formerly .NET Core). Refer to the [Syncfusion WPF release notes](Release-notes/) for the specific framework versions supported by each sample set.
 
