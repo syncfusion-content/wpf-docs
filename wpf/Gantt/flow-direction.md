@@ -9,7 +9,7 @@ documentation: ug
 
 # Flow Direction in WPF Gantt
 
-Gantt provides support to display the contents from right-to-left or left-to-right direction. It can be achieved by setting the `FlowDirection` property value as “RightToLeft” or “LeftToRight” in the Gantt control. The following code sample explains how to set this property.
+Gantt provides support to display the contents from right-to-left or left-to-right direction. This can be achieved by setting the `FlowDirection` property value to `RightToLeft` or `LeftToRight` in the Gantt control. The following code sample explains how to set this property.
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ taskAttributeMapping.DurationMapping = "Duration";
 taskAttributeMapping.MileStoneMapping = "IsMileStone";
 taskAttributeMapping.PredecessorMapping = "Predecessor";
 taskAttributeMapping.ProgressMapping = "Progress";
-taskAttributeMapping.ResourceInfoMapping = "Resource";
+taskAttributeMapping.ResourceInfoMapping = "Resources";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight %}
@@ -165,3 +165,4 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 {% endtabs %}
 
 ![gantt-control-flow-direction-right-to-left](Flow-Direction-Images/gantt-control-flow-direction-right-to-left.png)
+

@@ -9,25 +9,25 @@ documentation: ug
 
 # Zooming in WPF Gantt
 
-Zooming allows you to zoom in and zoom out of the schedule and chart of the Gantt control between year and minute time units. On zooming, the schedule’s time unit and schedule cell size will be dynamically changed based on the zoom factor. You can increase/decrease the width of the tasks in the chart based on the schedule’s time unit. Zooming can be categorized into two types: 
+Zooming allows you to zoom in and zoom out of the schedule and chart of the Gantt control between year and minute time units. On zooming, the schedule’s time unit and schedule cell size will be dynamically changed based on the zoom factor. You can increase/decrease the width of the tasks in the chart based on the schedule’s time unit. Zooming can be categorized into two types:
 
-* Built-in zooming 
+* Built-in zooming
 * Custom zooming
 
 ## Built-in Zooming
 
 Built-in zooming allows you to zoom in and zoom out of the schedule rows. The built-in zoom options are handled by the Gantt control. The zoom operations take place dynamically based on the following zoom factors:
 
-* Zoom-in: Zoom-in increases the cell size dynamically. When the cell size exceeds the specified range, it will split the schedule cells. When a cell cannot be split further, a new schedule row with the next time unit is added beneath the last row of the current schedule. The cell split-up and adding a new row inclusion is based on the zoom factor. 
-* Zoom-out: Zoom-out decreases the cell size dynamically. When the cell size is within the specified range, it will merge the schedule cells. When the cells cannot be merged further, the last row of the current schedule is removed. Merging and removing a row is based on the zoom factor.
+* Zoom-in: Zoom-in increases the cell size dynamically. When the cell size exceeds the specified range, it will split the schedule cells. When a cell cannot be split further, a new schedule row with the next time unit is added beneath the last row of the current schedule. The cell split and the addition of a new row are based on the zoom factor.
+* Zoom-out: Zoom-out decreases the cell size dynamically. When the cell size is within the specified range, it will merge the schedule cells. When the cells cannot be merged further, the last row of the current schedule is removed. Merging and removing a row are based on the zoom factor.
 
 #### Adding Built-in Zooming to an Application
 
 To add the built-in zooming:
 
 1. Define the Gantt with initial values.
-2. Set the [UseOnDemandSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseOnDemandSchedule) API value as _true_. If need to set [BaseCellMinLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMinLength) and [BaseCellMaxLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMaxLength), the default value of these APIs are 20 and 40 respectively.
-3. Use a slider or any control to provide the zoom factor dynamically. Bind the Gantt’s [ZoomFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ZoomFactor) to that control value.
+2. Set the [UseOnDemandSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseOnDemandSchedule) API value to _true_. If you need to set [BaseCellMinLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMinLength) and [BaseCellMaxLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMaxLength), note that the default values of these APIs are 20 and 40, respectively.
+3. Use a slider or any other control to provide the zoom factor dynamically. Bind the Gantt’s [ZoomFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ZoomFactor) to that control's value.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -102,7 +102,7 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 /// Defining the Slider
 Slider slider = new Slider();
 slider.Minimum = 1;
-slider.Minimum = 600;
+slider.Maximum = 600;
 
 //Hooking the value changed event of the slider
 slider.ValueChanged += OnSliderValueChanged;
@@ -245,21 +245,21 @@ To view samples:
 
 ## Custom Zooming
 
-In custom zooming, everything is handled at the application level. You can change the schedule row information and cell size dynamically by handling the provided event handler. While the zooming is handled at the application level, built-in zooming will not work. You cannot use built-in zooming and custom zooming together. 
+In custom zooming, everything is handled at the application level. You can change the schedule row information and cell size dynamically by handling the provided event handler. While the zooming is handled at the application level, built-in zooming will not work. You cannot use built-in zooming and custom zooming together.
 
 #### Use Case Scenarios
 
-When you like to view tasks that are scheduled on a month unit in the day/hours unit, you have to restart the application by changing the schedule type to day/hours unit. Zooming allows you to easily zoom in on the day/hours unit by providing the zoom factor without restarting the application.
+When you want to view tasks that are scheduled on a month unit in the day/hours unit, you would normally have to restart the application by changing the schedule type to a day/hours unit. Zooming allows you to easily zoom in to the day/hours unit by providing the zoom factor without restarting the application.
 
 #### Adding Custom Zooming to an Application
 
 To add custom zooming:
 
 1. Define the Gantt with initial values.
-2. Set the [UseOnDemandSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseOnDemandSchedule) API value as true.
-3. If needed, set [BaseCellMinLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMinLength) and [BaseCellMaxLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMaxLength). The default value of these APIs are 20 and 40 respectively.
-4. Use any control to provide the zoom factor dynamically. Bind the Gantt’s [ZoomFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ZoomFactor) to that control value.
-5. Handle the [ZoomChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ZoomChanged) event handler in code behind and change the schedule row information in that event handler as illustrated in the following code example:
+2. Set the [UseOnDemandSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseOnDemandSchedule) API value to true.
+3. If needed, set [BaseCellMinLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMinLength) and [BaseCellMaxLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaseCellMaxLength). The default values of these APIs are 20 and 40, respectively.
+4. Use any control to provide the zoom factor dynamically. Bind the Gantt’s [ZoomFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ZoomFactor) to that control's value.
+5. Handle the [ZoomChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ZoomChanged) event in code-behind and change the schedule row information in that event handler as illustrated in the following code example:
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -575,7 +575,7 @@ Data Type </th></tr>
 <tr>
 <td>
 {{'[UseOnDemandSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseOnDemandSchedule)'| markdownify }}</td><td>
-To get the expected performance you need to use dynamic schedule rendering. </td><td>
+To get the expected performance, you need to use dynamic schedule rendering.</td><td>
 Dependency</td><td>
 boolean</td></tr>
 <tr>

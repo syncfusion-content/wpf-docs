@@ -9,11 +9,11 @@ documentation: ug
 
 # Highlighting Tasks in WPF Gantt
 
-Highlighting tasks allows you to highlight a specific set of tasks in the Gantt chart region. This feature will get the set of tasks as input and highlight those tasks with the specified color in the Gantt chart region. It will accept a linear set of tasks of type IList as input. You can also specify the highlighting brush through the provided API.
+Highlighting tasks allows you to highlight a specific set of tasks in the Gantt chart region. This feature will get the set of tasks as input and highlight those tasks with the specified color in the Gantt chart region. It will accept a linear set of tasks of type `IList` as input. You can also specify the highlighting brush through the provided API.
 
-## Use Case Scenario
+## Use Case Scenarios
 
-* When you like to view some specific set of tasks with a different color, you can easily achieve that by providing that set of tasks as input.
+* When you want to view a specific set of tasks with a different color, you can easily achieve that by providing that set of tasks as input.
 * This feature also helps the user to highlight tasks that are in a critical path of a project.
 
 ## Properties
@@ -34,7 +34,7 @@ IList</td></tr>
 <tr>
 <td>
 {{'[HighlightItemBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightItemBrush)'| markdownify }}</td><td>
-Specifies the color in which items should be highlight</td><td>
+Specifies the color in which items should be highlighted.</td><td>
 Dependency</td><td>
 Brush</td></tr>
 </table>
@@ -42,11 +42,11 @@ Brush</td></tr>
 
 ## Adding Highlighting Tasks to an Application
 
-To highlight a set of tasks in Gantt chart region:
+To highlight a set of tasks in the Gantt chart region:
 
-1. Define the Gantt with initial setup.
-1. Bind the tasks that need to be highlighted with Gantt’s [HighlightedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightedItems) API.
-2. If required, change the value of the Gantt’s [HighlightItemBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightItemBrush) API to change the item highlight color. The default color is red.
+1. Define the Gantt with the initial setup.
+2. Bind the tasks that need to be highlighted with the Gantt’s [HighlightedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightedItems) API.
+3. If required, change the value of the Gantt’s [HighlightItemBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_HighlightItemBrush) API to change the item highlight color. The default color is red.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -1021,6 +1021,6 @@ To view samples:
 5. Expand the Interactive Features item in the Sample Browser
 6. Choose Highlighting Tasks to launch the sample.
 
-## see also
+## See Also
 
 [How to view the gantt control with the desired date tasks at load time in WPF](https://www.syncfusion.com/kb/7728/how-to-view-the-gantt-control-with-the-desired-date-tasks-at-load-time-in-wpf)
