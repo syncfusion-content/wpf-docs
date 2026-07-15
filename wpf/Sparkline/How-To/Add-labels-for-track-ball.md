@@ -7,9 +7,9 @@ control: SfSparkline
 documentation: ug
 ---
 
-# Add labels for track ball
+# Add labels for the track ball
 
-We can add labels for track ball to show the corresponding values. In order to add labels for the trackball, you need to subscribe the event OnSparklineMouseMove and you can get the following data’s from event argument.
+You can add labels for the track ball to show the corresponding values. To add labels for the track ball, subscribe to the `OnSparklineMouseMove` event. You can get the following data from the event argument.
 
 {% tabs %}
 
@@ -53,4 +53,4 @@ private void SfLineSparkline_OnSparklineMouseMove(object src, SparklineMouseMove
 
 The following is a snapshot of the track ball labels.
 
-![custom label in Sparkline track ball](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)
+![Custom label in Sparkline track ball](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)

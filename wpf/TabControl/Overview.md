@@ -21,7 +21,7 @@ The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Con
 
 **Display mode** - Provides support to customize the display mode of the Close button.
 
-**Layout** - Provides different layout types for enhanced usage to the control. The types are SingleLine, MultiLine, and MultiLineWithFillWidth.
+**Layout** - Provides different layout types for enhanced usage to the control. The types are SingleLine, SingleLineStar, MultiLine, MultiLineWithFullWidth, and MultiLineStar.
 
 **Pin and UnPin** - Provides support to pinning tabs for quick access and allows users to interactively pin and unpin the tabs.
 

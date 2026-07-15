@@ -9,13 +9,13 @@ documentation: ug
 
 # User interaction in WPF Surface Chart (SfSurfaceChart)
 
-The essential surface chart allows you to zoom and rotate the chart for a better visualization of all the axis and their points.
+The Essential Surface Chart allows you to zoom and rotate the chart for better visualization of all the axes and their points.
 
 ## Zooming
 
-Zooming of the surface chart is controlled with the help of [`EnableZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_EnableZooming) property.
+Zooming of the surface chart is controlled with the [`EnableZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_EnableZooming) property.
 
-The following code shows how to enable zooming on surface chart.
+The following code shows how to enable zooming on the surface chart.
 
 {% tabs %}
 
@@ -28,15 +28,15 @@ The following code shows how to enable zooming on surface chart.
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.EnableZooming = true;           
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.EnableZooming = true;
+grid.Children.Add(chart);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Zooming can either be done with pinch zooming or by programmatically with the [`ZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ZoomLevel) property.
+Zooming can either be done with pinch zooming or programmatically using the [`ZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ZoomLevel) property.
 
 {% tabs %}
 
@@ -49,10 +49,10 @@ Zooming can either be done with pinch zooming or by programmatically with the [`
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.EnableZooming = true; 
-            chart.ZoomLevel = 0.5;
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.EnableZooming = true;
+chart.ZoomLevel = 0.5;
+grid.Children.Add(chart);
 
 {% endhighlight %}
 
@@ -63,9 +63,9 @@ Zooming can either be done with pinch zooming or by programmatically with the [`
 
 ## Rotation
 
-Surface chart can be rotated for better visualization of all the axis and their plots.
+The surface chart can be rotated for better visualization of all the axes and their plots.
 
-This can be controlled with the help of [`EnableRotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_EnableRotation) property.
+This can be controlled using the [`EnableRotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_EnableRotation) property.
 
 {% tabs %}
 
@@ -78,15 +78,15 @@ This can be controlled with the help of [`EnableRotation`](https://help.syncfusi
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.EnableRotation = true; 
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.EnableRotation = true;
+grid.Children.Add(chart);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Rotation can either be done with interaction or by programmatically using [`Rotate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_Rotate) property.
+Rotation can either be done with interaction or programmatically using the [`Rotate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_Rotate) property.
 
 {% tabs %}
 
@@ -99,20 +99,20 @@ Rotation can either be done with interaction or by programmatically using [`Rota
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.EnableRotation = true; 
-            chart.Rotate = 50;
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.EnableRotation = true;
+chart.Rotate = 50;
+grid.Children.Add(chart);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Zoom level](surface_chart_images/RotatedImage.png)
+![Rotation](surface_chart_images/RotatedImage.png)
 
 ## Tilt
 
-Surface chart can be tilted to a certain angle using the [`Tilt`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_Tilt) property.
+The surface chart can be tilted to a certain angle using the [`Tilt`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_Tilt) property.
 
 {% tabs %}
 
@@ -125,12 +125,12 @@ Surface chart can be tilted to a certain angle using the [`Tilt`](https://help.s
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.Tilt = 40;
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.Tilt = 40;
+grid.Children.Add(chart);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Zoom level](surface_chart_images/TiltedImage.png)
+![Tilt](surface_chart_images/TiltedImage.png)

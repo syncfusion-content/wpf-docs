@@ -13,7 +13,7 @@ RibbonGallery provides `VisualMode` property, that helps to display items in two
 
 ## Ribbon mode
 
-To display items as a normal gallery control in the ribbon, set `VisualMode` property as `InRibbon mode`
+To display items as a normal gallery control in the ribbon, set `VisualMode` property as `InRibbon`
 
 {% tabs %}
 
@@ -30,7 +30,7 @@ To display items as a normal gallery control in the ribbon, set `VisualMode` pro
 
 ## DropDown mode
 
-To display items as DropDown in the ribbon, set `VisualMode` property as `DropDown mode`
+To display items as DropDown in the ribbon, set `VisualMode` property as `DropDown`
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ To display items as DropDown in the ribbon, set `VisualMode` property as `DropDo
 
 ## Ribbon gallery item
 
-Ribbon control provides `RibbonGalleryItem` that add as items in RibbonGallery.
+The Ribbon control provides `RibbonGalleryItem`, which can be added as items in RibbonGallery.
 
 
 {% tabs %}
@@ -67,7 +67,7 @@ Ribbon control provides `RibbonGalleryItem` that add as items in RibbonGallery.
 </syncfusion:RibbonGallery>
 </syncfusion:RibbonBar>
 </syncfusion:RibbonTab>
-/syncfusion:Ribbon>
+</syncfusion:Ribbon>
 
 {% endhighlight %}
 

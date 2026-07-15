@@ -2,7 +2,7 @@
 layout: post
 title: Styling and Templates in WPF Docking control | Syncfusion®
 description: Learn here all about Styling and Templates support in Syncfusion® WPF Docking (DockingManager) control and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
@@ -88,7 +88,7 @@ The close button for the Docked window can be customized using the `CloseButtonT
 
 <ControlTemplate TargetType="{x:Type ToggleButton}">
 
-<StackPanel
+<StackPanel>
 
 <Border x:Name="Border1">
 
@@ -1092,11 +1092,11 @@ To dock the DockWindow at top, the TopDragProvider is used. It can be customized
 
 <syncfusion:DockingManager  x:Name="DockingManager1" UseDocumentContainer="True" EnableDocumentTabHeaderEdit="True" >
 
-<syncfusion:DockingManager.LeftDragProvider>
+<syncfusion:DockingManager.TopDragProvider>
 
 <ControlTemplate TargetType="{x:Type ContentControl}">
 
-<Image Name="Img" syncfusion:DockPreviewManagerVS2005.ProviderAction="GlobalLeft" Source="Images\synclogo.png" />
+<Image Name="Img" syncfusion:DockPreviewManagerVS2005.ProviderAction="GlobalTop" Source="Images\synclogo.png" />
 
 <ControlTemplate.Triggers>
 
@@ -1112,7 +1112,7 @@ To dock the DockWindow at top, the TopDragProvider is used. It can be customized
 
 </ControlTemplate>
 
-</syncfusion:DockingManager.LeftDragProvider>
+</syncfusion:DockingManager.TopDragProvider>
 
 <ContentControl syncfusion:DockingManager.Header="Child1" syncfusion:DockingManager.State="Dock"/>
 

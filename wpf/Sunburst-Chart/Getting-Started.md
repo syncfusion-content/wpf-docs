@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Sunburst Chart (SfSunburstChart)
 
-This section explains you the steps required to populate the sunburst chart with data, add data labels, legends and header. This section covers only the minimal features that you need to know to get started with the Sunburst chart.
+This section explains the steps required to populate the Sunburst Chart with data, add data labels, legends, and header. This section covers only the minimal features that you need to know to get started with the Sunburst Chart.
 
 ## Adding assembly reference
 
@@ -32,9 +32,9 @@ Now the Syncfusion.SfSunburstChart.WPF reference is added to the application ref
 
 ![Added namespace for SfSunburstChart control in MainWindow](Getting-Started_images/gettingstarted4.png)
 
-## Initialize view model
+## Initialize the View Model
 
-In this section, the data in the following table is used for demonstration,
+In this section, the data in the following table is used for demonstration:
 
 <table>
 <tr>
@@ -297,7 +297,7 @@ Marketing
 </tr>
 </table>
 
-Now, let us define a data model that represents the above data in sunburst chart.
+Now, let us define a data model that represents the above data in the Sunburst Chart.
 
 {% highlight C# %}
 
@@ -313,7 +313,7 @@ public class Model
 
 {% endhighlight %}
 
-Next, create a view model class and initialize a list of Model objects as shown below,
+Next, create a view model class and initialize a list of Model objects as shown below:
 
 {% highlight C# %}
 
@@ -437,7 +437,7 @@ public class ViewModel
 
 {% endhighlight %}
 
-Set the ViewModel instance as the DataContext of your window; this is done to bind properties of ViewModel to Sunburst chart.
+Set the ViewModel instance as the DataContext of your window; this is done to bind properties of the ViewModel to the Sunburst Chart.
 
 N> Add namespace of ViewModel class in your XAML page if you prefer to set DataContext in XAML.
 
@@ -464,10 +464,10 @@ this.DataContext = new ViewModel();
     
 {% endtabs %}
 
-## Populate Sunburst chart with data
+## Populate the Sunburst Chart with Data
 
-Now, bind the `Data` property of the above ViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ItemsSource) property. 
-Add `SunburstHierarchicalLevel` to [`Levels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Levels) property. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstHierarchicalLevel.html#Syncfusion_UI_Xaml_SunburstChart_SunburstHierarchicalLevel_GroupMemberPath) property, and each arc segment size is calculated using [`ValueMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ValueMemberPath).
+Now, bind the `Data` property of the above ViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ItemsSource) property.
+Add `SunburstHierarchicalLevel` to [`Levels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Levels) property. Each hierarchy level is formed based on the property specified in the [`GroupMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstHierarchicalLevel.html#Syncfusion_UI_Xaml_SunburstChart_SunburstHierarchicalLevel_GroupMemberPath) property, and each arc segment size is calculated using [`ValueMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ValueMemberPath).
 
 {% tabs %}
 
@@ -498,9 +498,9 @@ sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobRole"
     
 {% endtabs %}
 
-## Add header 
+## Add Header
 
-You can add header to Sunburst chart to provide quick information to the user about the data being plotted in the chart. ou can also set title using the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Header) property as follows.
+You can add a header to the Sunburst Chart to provide quick information to the user about the data being plotted in the chart. You can also set the title using the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Header) property as follows.
 
 {% tabs %}
 
@@ -519,9 +519,9 @@ sunburst.FontSize = 22d;
     
 {% endtabs %}
 
-## Add legend
+## Add Legend
 
-You can enable legend using the [`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Legend) property as follows.
+You can enable a legend using the [`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Legend) property as follows.
 
 {% tabs %}
 
@@ -536,15 +536,16 @@ You can enable legend using the [`Legend`](https://help.syncfusion.com/cr/wpf/Sy
 {% highlight C# %}
 
 SunburstLegend legend = new SunburstLegend();
-legend.DockPosition= ChartDock.Left;
+legend.DockPosition = ChartDock.Left;
+sunburst.Legend = legend;
 
 {% endhighlight %}
     
 {% endtabs %}
 
-## Add data labels
+## Add Data Labels
 
-You can add data labels to improve the readability of the Sunburst chart. This can be achieved using the [`DataLabelInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_DataLabelInfo) property as follows.
+You can add data labels to improve the readability of the Sunburst Chart. This can be achieved using the [`DataLabelInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_DataLabelInfo) property as follows.
 
 {% tabs %}
 
@@ -558,14 +559,14 @@ You can add data labels to improve the readability of the Sunburst chart. This c
 
 {% highlight C# %}
 
-SunburstDataLabelInfo dataLabel= new SunburstDataLabelInfo();
+SunburstDataLabelInfo dataLabel = new SunburstDataLabelInfo();
 sunburst.DataLabelInfo = dataLabel;
 
 {% endhighlight %}
     
 {% endtabs %}
 
-Below is the complete code to replicate the following output.
+Below is the complete code to replicate the following output:
 
 {% tabs %}
 
@@ -651,7 +652,7 @@ You can find the complete getting started sample from this [link](https://github
 
 ## Theme
 
-Sunburst chart supports various built-in themes. Refer to the below links to apply themes for the Sunburst chart,
+The Sunburst Chart supports various built-in themes. Refer to the below links to apply themes for the Sunburst Chart:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

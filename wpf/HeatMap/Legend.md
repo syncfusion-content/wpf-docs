@@ -1,17 +1,19 @@
 ---
 layout: post
 title: Legend in WPF HeatMap (SfHeatMap) control | Syncfusion®
-description: How to create and configure legend for Syncfusion® Essential Studio® WPF HeatMap (SfHeatMap) control, its elements and more.
+description: Learn how to create and configure a legend for the Syncfusion® Essential Studio® WPF HeatMap (SfHeatMap) control, its elements, and more.
 platform: wpf
 control: SfHeatMap
 documentation: ug
 ---
 
-# Legend in WPF HeatMap (SfHeatMap) control
-Legend is a control used to summarize the range of colors in HeatMap. This gives visual guideline for mapping between value and color.
+# Legend in the WPF HeatMap (SfHeatMap) control
 
-## Create Legend
-Legend can be created with color mapping as shown below,
+The legend is a control used to summarize the range of colors in the HeatMap. This gives a visual guideline for mapping between value and color.
+
+## Create a legend
+
+A legend can be created with color mapping as shown below:
 
 {% highlight xaml %}
 
@@ -19,25 +21,26 @@ Legend can be created with color mapping as shown below,
     <syncfusion:ColorMapping Value="0" Color="#fe0002" Label="Poor"/>
     <syncfusion:ColorMapping Value="3" Color="#ffff01" Label="Average"/>
     <syncfusion:ColorMapping Value="6" Color="#13ab11" Label="Good"/>
-    <syncfusion:ColorMapping Value="10" Color="#005ba2 " Label="Excellent"/>
+    <syncfusion:ColorMapping Value="10" Color="#005ba2" Label="Excellent"/>
 </syncfusion:ColorMappingCollection>
 
 <syncfusion:SfHeatMapLegend ColorMappingCollection="{StaticResource colorMapping}"/>
 
 {% endhighlight %}
 
-Resultant legend will be like following image,
+The resultant legend will be like the following image:
 
 ![Legend_Image](Images/Legend.png)
 
-## Legend Mode
-There are two modes for Legend
+## Legend mode
+
+There are two modes for the legend:
 
 * Gradient
 * List
 
 
-### Gradient:
+### Gradient
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
 	LegendMode="Gradient" 
@@ -46,7 +49,7 @@ There are two modes for Legend
 
 ![Legend_Image](Images/Legend_Gradient.png)
 
-### List:
+### List
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend
 	LegendMode="List" 
@@ -56,11 +59,13 @@ There are two modes for Legend
 ![Legend_Image](Images/Legend_List.png)
 
 ## Orientation
-There are 2 types of Orientation, applicable for Gradient and List Mode
+
+There are 2 types of orientation, applicable for Gradient and List modes:
+
 * Horizontal
 * Vertical
 
-### Horizontal:
+### Horizontal
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
 	LegendMode="List" 
@@ -70,7 +75,7 @@ There are 2 types of Orientation, applicable for Gradient and List Mode
 
 ![Legend_Image](Images/Legend_Horizontal.png)
 
-### Vertical:
+### Vertical
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
 	LegendMode="List" 

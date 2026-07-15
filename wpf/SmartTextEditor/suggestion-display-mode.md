@@ -11,7 +11,7 @@ documentation: ug
 
 The AI-Powered Text Editor supports two display modes for showing completions as you type: `Inline` and `Popup`.
 - `Inline`: Renders the predicted text in place after the caret, matching your text style.
-- `Popup` : Shows a compact hint near the caret that you can tap or accept via key press.
+- `Popup`: Shows a compact hint near the caret that you can tap or accept via key press.
 
 N>
 - Windows and Mac Catalyst default to **Inline**; Android and iOS default to **Popup**.

@@ -13,7 +13,7 @@ This section explains how to select tab item and selection functionalities in th
 
 ## Select tab item using mouse or keyboard
 
-You can select a particular tab item by using the mouse click on the tab header. You can use the `Ctrl + Tab` key to select a next tab item when control not in focused state. You also use the `Left-Arrow` and `Right-Arrow` key , to select the previous tab item or next tab item of current selected tab item when control in focused state. You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
+You can select a particular tab item by using the mouse click on the tab header. You can use the `Ctrl + Tab` key to select the next tab item when the control is in a focused state. You can also use the `Left-Arrow` and `Right-Arrow` keys to select the previous or next tab item relative to the currently selected tab item when the control is focused. You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
 
 N> You can select only one tab item at a time.
 

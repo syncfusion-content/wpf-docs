@@ -9,7 +9,7 @@ documentation: ug
 
 # Commands in WPF AI-Powered Text Editor (SfSmartTextEditor)
 
-The AI-Powered Text Editor provides the `TextChangedCommand` command, is triggered whenever the text in the smart text editor changes.
+The AI-Powered Text Editor provides the `TextChangedCommand`, which is triggered whenever the text in the smart text editor changes.
 
 ### TextChangedCommand
 
@@ -37,9 +37,8 @@ public class SmartTextEditorViewModel
     }
     private void TextChangedCommand()
     {
-        // To do your requirement here.
+        // Handle the text change here.
     }
 }
-
 {% endhighlight %}
 {% endtabs %}

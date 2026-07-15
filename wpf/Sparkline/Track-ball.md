@@ -9,7 +9,7 @@ documentation: ug
 
 # Track ball in WPF Sparkline (SfSparkline)
 
-The Trackball is used to indicate the value point on mouse move and this feature is applicable for line and area sparkline.
+The track ball is used to indicate the value point on mouse move. This feature is applicable for line and area sparklines.
 
 {% tabs %}
 
@@ -27,7 +27,7 @@ The Trackball is used to indicate the value point on mouse move and this feature
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-    ItemsSource = new SparkViewModel().UsersList,
+    ItemsSource = new UsersViewModel().UsersList,
     YBindingPath = "NoOfUsers",
     ShowTrackBall = true
 };
@@ -36,15 +36,17 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-The Following is a snapshot of the Track ball.
+The following is a snapshot of the track ball.
 
 ![Track-ball_img1](Track-ball_images/Track-ball_img1.png)
 
-**Customizing TrackBall**
+**Customizing the track ball**
 
-You can customize the default appearance of the Trackball style by using the TrackballStyle property. 
+**Customizing the track ball**
 
-The following code shows how to apply the style for the Trackball line.
+You can customize the default appearance of the track ball by using the `TrackBallStyle` property. 
+
+The following code shows how to apply the style for the track ball line.
 
 {% tabs %}
 
@@ -83,14 +85,14 @@ The following code shows how to apply the style for the Trackball line.
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-    ItemsSource = new SparkViewModel().Data,
-    YBindingPath = "Day",
+    ItemsSource = new UsersViewModel().UsersList,
+    YBindingPath = "NoOfUsers",
     ShowTrackBall = true,
-    Interior = new SolidColorBrush(Colors.Gray),
+    Interior = new SolidColorBrush(Color.FromRgb(0x4a, 0x4a, 0x4a)),
     BorderBrush = new SolidColorBrush(Colors.DarkGray),
     BorderThickness = new Thickness(1),
-    TrackBallStyle = this.Resources["lineStyle1"] as Style
-    LineStyle = this.Resources["lineStyle2"] as Style,
+    TrackBallStyle = this.Resources["lineStyle1"] as Style,
+    LineStyle = this.Resources["lineStyle2"] as Style
 };
 
 {% endhighlight %}

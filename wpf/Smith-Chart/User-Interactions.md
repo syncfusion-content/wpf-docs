@@ -11,7 +11,7 @@ documentation: ug
 
 ## ToolTip
 
-The ToolTip for data points can be enabled by setting the *ShowToolTip* property as True. ToolTip displays the  duration that is defined by the *ToolTipDuration* property.
+The ToolTip for data points can be enabled by setting the *ShowToolTip* property as True. ToolTip displays for the duration that is defined by the *ToolTipDuration* property.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ chart.Series.Add(series);
 
 **ToolTipTemplate**
 
-*ToolTipTemplate* property allows to customize the default appearance of the tooltip as illustrated in the below code  example.
+The *ToolTipTemplate* property allows customizing the default appearance of the tooltip as illustrated in the below code example.
 
 {% tabs %}
 

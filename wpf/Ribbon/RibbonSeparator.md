@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonSeparator in WPF Ribbon
 
-`RibbonSeparator` used to separate the similar set of Ribbon elements in Ribbon. It can separate RibbonButtons according to their purpose. 
+The `RibbonSeparator` is used to separate similar sets of Ribbon elements in Ribbon. It can separate RibbonButtons according to their purpose. 
 
 ## Add Separator to the RibbonBar
 

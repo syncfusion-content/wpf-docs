@@ -11,9 +11,9 @@ documentation: ug
 
 # Data Label in WPF Sunburst Chart (SfSunburstChart)
 
-Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users. 
+Sunburst data labels are used to display the data related to the segment. They help to provide information about the data points to the users.
 
-You can enable or disable the data labels by using [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_ShowLabel) property as shown in the below code. 
+You can enable or disable the data labels by using the [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_ShowLabel) property as shown in the below code:
 
 {% tabs %}
 
@@ -46,12 +46,12 @@ N> By default, the ShowLabel property value is True.
 
 When you represent huge data with data labels, they may intersect each other. You can avoid this using the [`LabelOverflowMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_LabelOverflowMode) property.
 
-The following properties are used to avoid the overlapping.
+The following modes are used to avoid the overlapping:
 
 * Trim – To trim the large data labels.
 * Hide – To hide the overlapped data labels.
 
-The following code shows how to set Hide and Trim mode.
+The following code shows how to set Hide and Trim modes:
 
 ### Hide
 
@@ -72,6 +72,8 @@ SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
     ShowLabel = true,
     LabelOverflowMode = LabelOverflowMode.Hide
 };
+
+chart.DataLabelInfo = dataLabelInfo;
 
 {% endhighlight %}
 
@@ -96,7 +98,7 @@ SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 {
     ShowLabel = true,
-    LabelOverflowMode =LabelOverflowMode.Trim
+    LabelOverflowMode = LabelOverflowMode.Trim
 };
 
 chart.DataLabelInfo = dataLabelInfo;
@@ -109,9 +111,9 @@ chart.DataLabelInfo = dataLabelInfo;
 
 ## LabelRotationMode
 
-You can rotate the data label by using [`LabelRotationMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_LabelRotationMode) property. 
+You can rotate the data label by using the [`LabelRotationMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_LabelRotationMode) property.
 
-The following code shows how to set [`LabelRotationMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.LabelRotationMode.html) as normal and angle. 
+The following code shows how to set [`LabelRotationMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.LabelRotationMode.html) as Normal and Angle:
 
 {% tabs %}
 
@@ -142,11 +144,11 @@ chart.DataLabelInfo = dataLabelInfo;
 
 N> By default, LabelRotationMode value is Angle.
 
-## Font customization
+## Font Customization
 
-Data label fonts can be customized using [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontFamily), [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontSize), [`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontStyle), [`FontWeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontWeight) properties.
+Data label fonts can be customized using the [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontFamily), [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontSize), [`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontStyle), and [`FontWeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontWeight) properties.
 
-Font color of the label can be customized using the [`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_Foreground) property.
+The font color of the label can be customized using the [`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_Foreground) property.
 
 
 {% tabs %}
@@ -216,9 +218,9 @@ grid.Children.Add(sunburst);
 
 ![DataLabel_img4](DataLabel_images/FontCustomization.png)
 
-## Customizing the data labels
+## Customizing the Data Labels
 
-You can customize the default appearance or display information about the data point using the [`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_LabelTemplate) property.
+You can customize the default appearance or display information about the data point using the [`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_LabelTemplate) property:
 
 {% highlight xaml %}
 
