@@ -113,14 +113,3 @@ N> If no value is assigned to the [`SwimlaneKey`](https://help.syncfusion.com/cr
 {% endtabs %}
 
 ![Swimlane customization in WPF Kanban](SfKanban_images/swimlane_header.png)
-
-N> The example above uses a simple `TextBlock` to display the swimlane title. For a custom expand/collapse icon, you can use a `Path` element with appropriate geometry inside the `DataTemplate`.
-
-## See Also
-
-* [SfKanban API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html)
-* [KanbanModel API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html)
-* [Getting Started with WPF Kanban](Getting-started.md)
-* [Cards in WPF Kanban](Cards.md)
-* [Columns in WPF Kanban](Column.md)
-* [Events in WPF Kanban](Events.md)

@@ -225,9 +225,3 @@ kanban.Columns.Add(kanbanColumn);
 
 {% endhighlight %}
 {% endtabs %}
-
-## See Also
-
-* [SfKanban API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html)
-* [KanbanColumn API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html)
-* [ColumnTag API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ColumnTag.html)

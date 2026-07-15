@@ -18,8 +18,6 @@ The Kanban control supports customizable card sorting within columns based on sp
 
 N> The [`SortingOrder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SortingOrder) property is applicable only when a valid value is assigned to [`SortingMappingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SortingMappingPath).
 
-N> The snippets in this document use the `kanban:` prefix for the Syncfusion namespace. Make sure the following namespace mappings are declared on the root element: `xmlns:kanban="clr-namespace:Syncfusion.UI.Xaml.Kanban;assembly=Syncfusion.SfKanban.WPF"` and `xmlns:local="clr-namespace:YourNamespace"`.
-
 ## Customize Card Order with Sorting Configuration
 
 Sorting in the Kanban control can be implemented using the following approaches:
@@ -178,8 +176,6 @@ N>
 The index-based approach in the Kanban control allows cards to be dropped at precise positions within a column. Upon dropping, the card's index is updated based on the index of the previous card. Additionally, the index of the next card is incremented relative to the drop position to maintain continuous ordering.
 
 N> The [`SortingMappingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SortingMappingPath) property must be mapped to a valid numeric property name from the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) to enable index-based sorting updates.
-
-N> The C# code sample below uses C# 8.0+ nullable reference types (`KanbanColumn?`). Ensure your project targets .NET Core 3.0+ or .NET 5+ with `<Nullable>enable</Nullable>`, or remove the `?` annotation.
 
 The following code example illustrates how a card's numeric property is updated using the index-based sorting approach.
 

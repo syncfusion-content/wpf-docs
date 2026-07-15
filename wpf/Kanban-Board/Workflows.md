@@ -132,14 +132,3 @@ kanban.Columns.Add(doneColumn);
 N> The `Color`, `MinValidationColor`, and `MaxValidationColor` properties of `ErrorBarSettings` accept a `Brush` in C# (use `SolidColorBrush`) but a string color name (e.g., `"Gray"`) in XAML, which WPF automatically converts to a `SolidColorBrush`.
 
 ![Work in progress limit in WPF SfKanban](SfKanban_images/wiplimit.png)
-
-## See Also
-
-* [SfKanban API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html)
-* [KanbanWorkflow API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html)
-* [KanbanColumn API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html)
-* [ErrorBarSettings API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.html)
-* [Getting Started with WPF Kanban](Getting-started.md)
-* [Cards in WPF Kanban](Cards.md)
-* [Columns in WPF Kanban](Column.md)
-* [Events in WPF Kanban](Events.md)

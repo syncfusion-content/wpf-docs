@@ -364,9 +364,3 @@ The Kanban control supports various built-in themes. Refer to the below links to
 * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
 ![Setting theme to WPF SfKanban](sfkanban_images/wpf-kanban-board-theme.jpg)
-
-## See Also
-
-* [SfKanban API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html)
-* [KanbanModel API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html)
-* [KanbanColumn API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html)

@@ -110,8 +110,6 @@ The following example shows how to apply these `CardStyle` properties in XAML:
 
 You can replace the entire card template with your own design using the [`CardTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplate) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html). The following code snippet and screenshot illustrate this.
 
-N> The snippet below uses the `kanban:` prefix for the Syncfusion namespace. Make sure the following namespace mappings are declared on the root element: `xmlns:kanban="clr-namespace:Syncfusion.UI.Xaml.Kanban;assembly=Syncfusion.SfKanban.WPF"` and `xmlns:local="clr-namespace:YourNamespace"`.
-
 {% tabs %}
 {% highlight xaml %}
 
@@ -264,8 +262,6 @@ namespace GettingStarted
 You can customize the tooltip appearance by using the [`ToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ToolTipTemplate) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
 The following code example shows the usage of `DataTemplate`:
-
-N> The `ColorKey` in the model is a string key, not a `Brush`. To display a colored rectangle based on the category, you can either use a value converter to map the key to a brush, or use a different property such as `Category` with a converter. The example below uses a static `Brush` since the `ColorKey` value is not a valid WPF brush value.
 
 {% tabs %}
 {% highlight XAML hl_lines="2 3 4 5 6 7 8 9 10" %}

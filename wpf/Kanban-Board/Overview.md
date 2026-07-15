@@ -24,11 +24,3 @@ The Kanban control is an efficient way to visualize a workflow at each stage of 
 ## Getting Started
 
 To get started with the SfKanban control, refer to the [Getting Started](Getting-started.md) documentation, which walks you through adding the control to a WPF project, populating it with data, and customizing the appearance.
-
-## See Also
-
-* [Getting Started with WPF Kanban](Getting-started.md)
-* [Cards in WPF Kanban](Cards.md)
-* [Columns in WPF Kanban](Column.md)
-* [Events in WPF Kanban](Events.md)
-* [SfKanban API Reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html)
