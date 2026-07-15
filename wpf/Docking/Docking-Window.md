@@ -188,17 +188,23 @@ Initially set [MaximizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfus
 
 SyncDockingManager.MaximizeButtonEnabled = true;
 
+var dockWindow1 = new ContentControl();
+DockingManager.SetHeader(dockWindow1, "Solution Explorer");
 DockingManager.SetSideInDockedMode(dockWindow1, DockSide.Left);
-
-DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Right);
-
-DockingManager.SetSideInDockedMode(dockWindow3, DockSide.Bottom);
-
 DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow1, 200);
+SyncDockingManager.Children.Add(dockWindow1);
 
+var dockWindow2 = new ContentControl();
+DockingManager.SetHeader(dockWindow2, "Output");
+DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Right);
 DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow2, 300);
+SyncDockingManager.Children.Add(dockWindow2);
 
+var dockWindow3 = new ContentControl();
+DockingManager.SetHeader(dockWindow3, "Error List");
+DockingManager.SetSideInDockedMode(dockWindow3, DockSide.Bottom);
 DockingManager.SetDesiredMaxHeightInDockedMode(dockWindow3, 200);
+SyncDockingManager.Children.Add(dockWindow3);
 
 {% endhighlight %}
 

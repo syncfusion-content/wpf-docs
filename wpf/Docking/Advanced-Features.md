@@ -13,7 +13,7 @@ documentation: ug
 
 Visual styles are available for the dockable windows, which give the windows a rich and professional look and feel. The visual style for the DockingManager is set using the VisualStyle property. The following are some of the visual styles that can be applied to the Docking Manager.
 
-> NOTE: `SkinStorage.SetVisualStyle` is a legacy API. For new development, use [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/wpf/themes/skin-manager), which requires the additional assemblies `Syncfusion.SfSkinManager.WPF` and a theme assembly (e.g. `Syncfusion.Themes.VisualStudio2013.WPF`).
+> NOTE: `SkinStorage.SetVisualStyle` is a legacy API. For new development, use [SfSkinManager.SetTheme](https://help.syncfusion.com/wpf/themes/skin-manager#set-theme), which requires the additional assemblies `Syncfusion.SfSkinManager.WPF` and a theme assembly (e.g. `Syncfusion.Themes.FluentLight.WPF`).
 
 #### Property table
 
@@ -254,7 +254,7 @@ DockingManager.CloseButtonClick += new CloseButtonEventHandler(DockingManager_Cl
 
  <!--Declaring Docking Manager with Close AllTabs and CloseOtherTabs-->        
  
- <syncfusion:DockingManager CloseAllTabs="DockingManager_CloseAllTabs" CloseOtherTabs="DockingManager_CloseOtherTabs" CloseButtonClick="DockingManager_CloseButtonClick">
+ <syncfusion:DockingManager CloseAllTabs="DockingManager_CloseAllTabs" CloseOtherTabs="DockingManager_CloseOtherTabs">
 	
 	<!--Children for the Docking Manager-->            
 	

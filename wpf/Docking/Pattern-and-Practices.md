@@ -226,7 +226,7 @@ End Class
 
 {% highlight XAML %}
 
-xmlns:prsm="http://prismlibrary.com/"
+xmlns:prsm="http://www.codeplex.com/prism"
 
 {% endhighlight %}
 {% endcapture %}
@@ -244,7 +244,7 @@ In the following code example, a region called "MainRegion" has been created to 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:prsm="http://prismlibrary.com/"
+        xmlns:prsm="http://www.codeplex.com/prism"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <syncfusion:DockingManager prsm:RegionManager.RegionName="MainRegion"  DockFill="True">
