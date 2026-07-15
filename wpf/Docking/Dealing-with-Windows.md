@@ -489,8 +489,8 @@ You can handle the event as follows,
 {% highlight C# %}
 
 private void DockingManager_ChildrenCollectionChanged(object sender, NotifyCollectionChangedEventArgs e) {
-    //Occurs when children collection changed   
-    MessgeBox.Show(“Children collection was changed”);
+    //Occurs when children collection changed
+    MessageBox.Show("Children collection was changed");
     if(e.Action== NotifyCollectionChangedAction.Add) {
         var added_Item = e.NewItems;
         int addedIndex = e.NewStartingIndex;
@@ -584,11 +584,11 @@ A Docking window can be customized using the property [HeaderBackground](https:/
 
 {% highlight C# %}
 
-SyncDockingManager.SelectedHeaderBackground = new SolidColorBrush(Colors.Red);
+DockingManager1.SelectedHeaderBackground = new SolidColorBrush(Colors.Red);
 
-SyncDockingManager.HeaderBackground = new SolidColorBrush(Colors.Brown);
+DockingManager1.HeaderBackground = new SolidColorBrush(Colors.Brown);
 
-SyncDockingManager.HeaderMouseOverBackground = new SolidColorBrush(Colors.DarkOrchid);
+DockingManager1.HeaderMouseOverBackground = new SolidColorBrush(Colors.DarkOrchid);
 
 {% endhighlight %}
 
@@ -622,17 +622,17 @@ The float window can be customized by setting [FloatWindowHeaderBackground](http
 
 {% highlight C# %}
 
-SyncDockingManager.FloatWindowHeaderBackground = new SolidColorBrush(Colors.Brown);
+DockingManager1.FloatWindowHeaderBackground = new SolidColorBrush(Colors.Brown);
 
-SyncDockingManager.FloatWindowHeaderForeground = new SolidColorBrush(Colors.Blue);
+DockingManager1.FloatWindowHeaderForeground = new SolidColorBrush(Colors.Blue);
 
-SyncDockingManager.FloatWindowMouseOverBorderBrush = new SolidColorBrush(Colors.Orange);
+DockingManager1.FloatWindowMouseOverBorderBrush = new SolidColorBrush(Colors.Orange);
 
-SyncDockingManager.FloatWindowSelectedHeaderBackground = new SolidColorBrush(Colors.Pink);
+DockingManager1.FloatWindowSelectedHeaderBackground = new SolidColorBrush(Colors.Pink);
 
-SyncDockingManager.FloatWindowBorderBrush = new SolidColorBrush(Colors.Red);
+DockingManager1.FloatWindowBorderBrush = new SolidColorBrush(Colors.Red);
 
-SyncDockingManager.FloatWindowSelectedBorderBrush = new SolidColorBrush(Colors.BlueViolet);
+DockingManager1.FloatWindowSelectedBorderBrush = new SolidColorBrush(Colors.BlueViolet);
 
 {% endhighlight %}
 
@@ -673,7 +673,7 @@ To drag child window in Shadow mode, set the [DraggingType](https://help.syncfus
 
 {% highlight XAML %}
 
-<syncfusion:DockingManager x:Name="DockingManager1" DraggingType="ShadowDragging"  >      
+<syncfusion:DockingManager x:Name="DockingManager1" DraggingType="ShadowDragging"  >
 
 <ContentControl syncfusion:DockingManager.Header="Item1"/>
 
@@ -683,7 +683,7 @@ To drag child window in Shadow mode, set the [DraggingType](https://help.syncfus
 
 {% highlight C# %}
 
-SyncDockingManager.DraggingType = DraggingType.ShadowDragging;
+DockingManager1.DraggingType = DraggingType.ShadowDragging;
 
 {% endhighlight %}
 
@@ -702,8 +702,8 @@ To drag child window in Border mode, set the [DraggingType](https://help.syncfus
 {% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" DraggingType="BorderDragging">
-	
-<ContentControl syncfusion:DockingManager.Header="Item1"/>    
+
+<ContentControl syncfusion:DockingManager.Header="Item1"/>
 
 </syncfusion:DockingManager>
 
@@ -711,7 +711,7 @@ To drag child window in Border mode, set the [DraggingType](https://help.syncfus
 
 {% highlight C# %}
 
-SyncDockingManager.DraggingType = DraggingType.BorderDragging;
+DockingManager1.DraggingType = DraggingType.BorderDragging;
 
 {% endhighlight %}
 
@@ -1295,13 +1295,13 @@ To collapse the default context menu in Document state window, set the property 
 
 </syncfusion:DockingManager>
 
-{% endhighlight%}
+{% endhighlight %}
 
 {% highlight C# %}
 
 DockingManager.SetCollapseDefaultContextMenuItemsInDocumentTab(Content1, true);
 
-{% endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 

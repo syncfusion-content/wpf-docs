@@ -13,7 +13,7 @@ This section explains how to show the tab list and tab item context menu and add
 
 ## Default tab item context menu
 
-You can close the one or more tab items by using the context menu. You can enable it by using the  [ShowTabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_ShowTabItemContextMenu) property to `true`. You can open this context menu by right click on tab header. The default value of `ShowTabItemContextMenu` property is `false`.
+You can close one or more tab items by using the context menu. You can enable it by using the  [ShowTabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_ShowTabItemContextMenu) property to `true`. You can open this context menu by right click on tab header. The default value of `ShowTabItemContextMenu` property is `false`.
 
 The built-in tabitem context menu has the following menu items:
 
@@ -61,7 +61,7 @@ You can use the [CloseTabEventArgs.ClosingTabItems](https://help.syncfusion.com/
 
 <syncfusion:TabControlExt OnCloseAllTabs="TabControlExt_OnCloseAllTabs"
                           OnCloseButtonClick="TabControlExt_OnCloseButtonClick"
-                          OnCloseOtherTabs="TabControlExt_OnCloseAllTabs"
+                          OnCloseOtherTabs="TabControlExt_OnCloseOtherTabs"
                           Name="tabControlExt">
 </syncfusion:TabControlExt>
 
@@ -75,7 +75,7 @@ tabControlExt.OnCloseOtherTabs += TabControlExt_OnCloseOtherTabs;
 {% endhighlight %}
 {% endtabs %}
 
-You can handle this events as follows,
+You can handle these events as follows,
 
 {% tabs %}
 {% highlight C# %}

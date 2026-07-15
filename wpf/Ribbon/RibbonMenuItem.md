@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonMenuItem in WPF Ribbon
 
-`RibbonMenuItem` used as entity in menus like ApplicationMenu, DropDownButton, SplitButton, context menu, and so on.
+`RibbonMenuItem` is used as an entity in menus like ApplicationMenu, DropDownButton, SplitButton, context menu, and so on.
 
 ## RibbonMenuItem header
 
