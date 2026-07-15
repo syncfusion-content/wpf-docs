@@ -1,20 +1,20 @@
 ---
 layout: post
 title: ItemsMapping in WPF HeatMap (SfHeatMap) control | Syncfusion®
-description: Learn here about ItemsMapping in Syncfusion® Essential Studio® WPF HeatMap (SfHeatMap) control, its elements and more.
+description: Learn here about the ItemsMapping in the Syncfusion® Essential Studio® WPF HeatMap (SfHeatMap) control, its elements, and more.
 platform: wpf
 control: SfHeatMap
 documentation: ug
 ---
 
-# Items Mapping in WPF HeatMap (SfHeatMap) control
+# Items mapping in the WPF HeatMap (SfHeatMap) control
 
-External data source can be mapped with HeatMap using `ItemsMapping` property. It supports 2 kind of data source.
+An external data source can be mapped with the HeatMap using the `ItemsMapping` property. It supports 2 kinds of data source.
 
-* In `TableMapping` rows represents an objects in collection, columns represents numerical properties of that object.
-* In `CellMapping` each cell represent an object in collection, this collection is grouped based on specific property to form as rows and columns.
+* In `TableMapping`, rows represent objects in a collection, and columns represent numerical properties of that object.
+* In `CellMapping`, each cell represents an object in a collection; this collection is grouped based on a specific property to form rows and columns.
 
-Let us see the difference between two types of mapping. Following table represents two different data structure to represent the same HeatMap.
+Let us see the difference between the two types of mapping. The following table represents two different data structures to represent the same HeatMap.
 
 <table>
 	<tr>
@@ -49,10 +49,10 @@ public class ProductInfo
 	</tr>
 	<tr>
 		<td>
-			Here, a single `ProductInfo` object represent a value for a particular product in a particular year
+			Here, a single `ProductInfo` object represents a value for a particular product in a particular year.
 		</td>
 		<td>
-			Here, a single `ProductInfo` object represents value for a particular product from year 2010 to 2015.	
+			Here, a single `ProductInfo` object represents values for a particular product from year 2010 to 2015.	
 		</td>
 	</tr>
 	<tr>
@@ -93,7 +93,7 @@ public class ProductInfo
 			DisplayName="2011"/>
 		<syncfusion:ColumnMapping 
 			PropertyName="Y2012"
-			 DisplayName="2012"/>
+			DisplayName="2012"/>
 		<syncfusion:ColumnMapping 
 			PropertyName="Y2013" 
 			DisplayName="2013"/>

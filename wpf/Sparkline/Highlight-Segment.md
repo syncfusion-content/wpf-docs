@@ -9,7 +9,7 @@ documentation: ug
 
 # Highlight Segment in WPF Sparkline (SfSparkline)
 
-This feature enable to highlight the column segments on mouse move and this is applicable for column and win-loss sparkline.
+This feature enables highlighting the column segments on mouse move. It is applicable for column and WinLoss sparklines.
 
 {% tabs %}
 
@@ -27,7 +27,7 @@ This feature enable to highlight the column segments on mouse move and this is a
 
 SfColumnSparkline sparkline = new SfColumnSparkline()
 {
-    ItemsSource = new SparkViewModel().UsersList,
+    ItemsSource = new UsersViewModel().UsersList,
     YBindingPath = "NoOfUsers",
     HighlightSegment = true
 };

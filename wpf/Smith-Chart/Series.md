@@ -11,7 +11,7 @@ documentation: ug
 
 Chart series is the visual representation of the given data.
 
-The following APIs are used in line series:
+The following APIs are used in the line series:
 
 * ResistancePath – A string property that represents the X values for the series.
 * ReactancePath – A string property that represents the Y values for the series.
@@ -19,7 +19,7 @@ The following APIs are used in line series:
 * StrokeThickness – Represents the thickness of the series outline.
 * Palette –  Represents the set of pre-defined or custom colors for the series.
 
-The below code example explains how to create a simple `LineSeries` by using given data
+The below code example explains how to create a simple `LineSeries` by using the given data.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ The below code example explains how to create a simple `LineSeries` by using giv
 
 **Customizing LineSeries**
 
-The line stroke and thickness can be customized by using *Interior* and *StrokeThickness* property of line series.
+The line stroke and thickness can be customized by using the *Interior* and *StrokeThickness* properties of the line series.
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ chart.Series.Add(series);
 
 ## Animation
 
-SfSmithChart allows to animate the chart series on loading whenever the *ItemsSource* changes. Animation in the chart can be enabled by setting the *EnableAnimation* property as True and defining the corresponding animation speed with *AnimationDuration* property.
+SfSmithChart allows animating the chart series on loading whenever the *ItemsSource* changes. Animation in the chart can be enabled by setting the *EnableAnimation* property as True and defining the corresponding animation speed with the *AnimationDuration* property.
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ chart.Series.Add(series);
 
 ## Series Visibility
 
-To hide the series segment programmatically, set *IsSeriesVisible* property as False for the specific series.
+To hide the series segment programmatically, set the *IsSeriesVisible* property as False for the specific series.
 
 {% tabs %}
 

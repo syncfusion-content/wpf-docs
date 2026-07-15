@@ -13,15 +13,15 @@ SfChart3D supports various customizing and styling options that allow you to enr
 
 ## Palettes
 
-SfChart3D provides the options to apply the different kinds of themes or palettes to your chart. You can define the [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) either for the entire chart or for an individual series.
+SfChart3D provides the option to apply different kinds of themes or palettes to your chart. You can define the [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) either for the entire chart or for an individual series.
 
-We have some predefined palette such as,
+We have some predefined palettes such as,
 
 * Metro
 * AutumnBrights
 * FloraHues
 * Pineapple
-* TomotoSpectrum
+* TomatoSpectrum
 * RedChrome
 * PurpleChrome
 * BlueChrome
@@ -53,7 +53,7 @@ chart.Palette = ChartColorPalette.Metro;
 
 ![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Series_metro_Palatte.PNG)
 
-The following code example defined the palette as a [`BlueChrome`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
+The following code example defines the palette as [`BlueChrome`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ chart.Palette = ChartColorPalette.BlueChrome;
 
 ### Applying Palette to Segment
 
-Each palette applies a set of predefined brushes to the segment in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
+Each palette applies a set of predefined brushes to the segments in a predefined order. The following code example shows you how to set the Metro Palette for the chart segment.
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ chart.Series.Add(columnSeries);
 
 ![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Segment_Palatte.PNG)
 
-The following code example defined the palette as an **AutumnBrights**.
+The following code example defines the palette as **AutumnBrights**.
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ ColumnSeries3D columnSeries = new ColumnSeries3D()
     Palette = ChartColorPalette.AutumnBrights
 };
 
-chart.Series.Add(series);
+chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
@@ -236,7 +236,7 @@ chart.ColorModel = colorModel;
 
 ## SegmentColorPath
 
-The color for the chart segments can be bound from its items source collection by using the [`SegmentColorPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPathProperty) property of series. The following code shows how to bind the color to the series with the [`SegmentColorPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPathProperty) property.
+The color for the chart segments can be bound from its ItemsSource collection by using the [`SegmentColorPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPathProperty) property of the series. The following code shows how to bind the color to the series using the [`SegmentColorPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPathProperty) property.
 
 {% tabs %}
 

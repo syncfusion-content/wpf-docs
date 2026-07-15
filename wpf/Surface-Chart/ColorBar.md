@@ -9,10 +9,10 @@ documentation: ug
 
 # ColorBar in WPF Surface Chart (SfSurfaceChart)
 
-[`ColorBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ColorBar) is used to represent the value range in surface via colors. You can define ColorBar for surface chart as shown in the following code example. 
+The [`ColorBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ColorBar) is used to represent the value range in a surface via colors. You can define a color bar for the surface chart as shown in the following code example. 
 
-Color bar position can be customized using the [`DockPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorBar.html#Syncfusion_UI_Xaml_Charts_ChartColorBar_DockPosition) property. 
-Color bar can either show or hide the labels and this can be done using the [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorBar.html#Syncfusion_UI_Xaml_Charts_ChartColorBar_ShowLabel) property.
+The color bar position can be customized using the [`DockPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorBar.html#Syncfusion_UI_Xaml_Charts_ChartColorBar_DockPosition) property. 
+The color bar can either show or hide the labels, and this can be done using the [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorBar.html#Syncfusion_UI_Xaml_Charts_ChartColorBar_ShowLabel) property.
 
 {% tabs %}
 
@@ -32,18 +32,18 @@ Color bar can either show or hide the labels and this can be done using the [`Sh
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
-            chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
-            chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
-            chart.XBindingPath = "X";
-            chart.YBindingPath = "Y";
-            chart.ZBindingPath = "Z";
-            ChartColorBar colorBar = new ChartColorBar();
-            colorBar.DockPosition = ChartDock.Right;
-            colorBar.ShowLabel = true;
-            chart.ColorBar = colorBar;
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
+chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
+chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
+chart.XBindingPath = "X";
+chart.YBindingPath = "Y";
+chart.ZBindingPath = "Z";
+ChartColorBar colorBar = new ChartColorBar();
+colorBar.DockPosition = ChartDock.Right;
+colorBar.ShowLabel = true;
+chart.ColorBar = colorBar;
+grid.Children.Add(chart);
 	
 {% endhighlight %}
 

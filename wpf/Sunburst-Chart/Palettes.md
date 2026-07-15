@@ -11,9 +11,9 @@ documentation: ug
 
 # Palette in WPF Sunburst Chart (SfSunburstChart)
 
-Sunburst chart provides support to apply different types of palettes. You can define the palettes by using [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Palette) property.
+The Sunburst Chart provides support to apply different types of palettes. You can define the palettes by using the [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Palette) property.
 
-We have some predefined palette such as:
+The following are some predefined palettes:
 
 * Metro
 * AutumnBrights
@@ -28,9 +28,9 @@ We have some predefined palette such as:
 * LightCandy
 * SandyBeach
 
-## Applying palette to the chart
+## Applying Palette to the Chart
 
-Each palette applies a set of predefined brushes to the sunburst chart in a predefined order. The following code shows how to set predefined palette for sunburst chart.
+Each palette applies a set of predefined brushes to the Sunburst Chart in a predefined order. The following code shows how to set a predefined palette for the Sunburst Chart:
 
 {% tabs %}
 
@@ -87,7 +87,7 @@ grid.Children.Add(sunburst);
 
 ## Custom Palette
 
-Sunburst chart provides option which enables you to define your own color brushes with your preferred order for the Palette, using [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ColorModel) as shown in the following code example.
+The Sunburst Chart provides an option which enables you to define your own color brushes with your preferred order for the Palette, using [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ColorModel) as shown in the following code example:
 
 {% tabs %}
 
@@ -187,5 +187,5 @@ grid.Children.Add(sunburst);
 
 ![Palettes_img2](Palettes_images/Palettes_img2.jpeg)
 
-N> Before applying the color model, you need to set the palette value as Custom.
+N> Before applying the color model, you need to set the Palette value as Custom.
 

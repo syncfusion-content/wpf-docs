@@ -7,9 +7,9 @@ control: SfSparkline
 documentation: ug
 ---
 
-# Customize the marker for specific data point
+# Customize the marker for a specific data point
 
-We can customize the marker for specific data point with custom template for LineSparkline and AreaSparkline, in order to customize the marker we need to inherit the MarkerTemplateSelector class and override the SelectTemplate method.
+You can customize the marker for a specific data point with a custom template for `SfLineSparkline` and `SfAreaSparkline`. To customize the marker, inherit the `MarkerTemplateSelector` class and override the `SelectTemplate` method.
 
 {% tabs %}
 
