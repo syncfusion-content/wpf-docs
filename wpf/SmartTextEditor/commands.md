@@ -41,7 +41,4 @@ public class SmartTextEditorViewModel
     }
 }
 {% endhighlight %}
-
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
