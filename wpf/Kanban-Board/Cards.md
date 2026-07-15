@@ -164,7 +164,7 @@ An interactive tooltip provides additional details about the cards when hovering
 
 ### Enable Tooltip for Cards
 
-To enable the tooltip for the Kanban cards, use the [`IsToolTipEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, `IsToolTipEnabled` is set to `false`. To provide users with additional information or context about cards, set this property to `true`.
+To enable the tooltip for the Kanban cards, use the [`IsToolTipEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, [`IsToolTipEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `false`. To provide users with additional information or context about cards, set this property to `true`.
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}
