@@ -25,15 +25,8 @@ Syncfusion [WPF AI-Powered Text Editor](https://www.syncfusion.com/wpf-controls/
 
 * **Keyboard integration**: Makes it possible to accept ideas quickly by utilizing the Tab or Right Arrow keys.
 
-* **Gesture support**: Allows touch users to tap or click recommendations in the pop-up for quick input.
+* **Gesture support**: Allows touch users to tap or click recommendations in the popup for quick input.
 
 * **Placeholder text**: Enables placeholders to be configured with customizable color styling.
 
 * **Customization**: Enables users to fully customize the user interface by controlling fonts, colors, sizes, and styles.
-
-## See Also
-
-* [Getting started with WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/getting-started): Add the control to your application and configure AI services.
-* [Commands in WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/commands): Handle the `TextChangedCommand` and react to text changes.
-* [Customization in WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/customization): Customize the text, placeholder, suggestion styles, and input limits.
-* [Suggestion display mode](https://help.syncfusion.com/wpf/smarttexteditor/suggestion-display-mode): Switch between inline and popup suggestion modes.

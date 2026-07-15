@@ -11,10 +11,6 @@ documentation: ug
 
 The AI-Powered Text Editor provides the `TextChangedCommand`, which is triggered whenever the text in the smart text editor changes.
 
-## Prerequisites
-
-Before wiring up commands, make sure the control is added to your project as described in [Getting started with WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/getting-started). The examples below assume the `Syncfusion.UI.Xaml.SmartComponents` namespace and a simple `RelayCommand` implementation (such as the one shipped with `CommunityToolkit.Mvvm` or `Prism.Core`).
-
 ### TextChangedCommand
 
 The `SfSmartTextEditor` includes a built-in property called `TextChangedCommand`, which is triggered whenever the text in the smart text editor changes. This event can be invoked through the `TextChangedCommand`.
@@ -41,14 +37,11 @@ public class SmartTextEditorViewModel
     }
     private void TextChangedCommand()
     {
-        // To do your requirement here.
+        // Handle the text change here.
     }
 }
-
 {% endhighlight %}
-{% endtabs %}
-## See Also
 
-* [Getting started with WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/getting-started): Add the control to your application and configure AI services.
-* [Customization in WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/customization): Customize the text, placeholder, suggestion styles, and input limits.
-* [Suggestion display mode](https://help.syncfusion.com/wpf/smarttexteditor/suggestion-display-mode): Switch between inline and popup suggestion modes.
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}

@@ -21,6 +21,7 @@ N>
 ## Inline suggestion mode
 Inline mode displays the suggested text directly within the editor, seamlessly continuing your typing flow. This approach is ideal for desktop environments where uninterrupted input feels natural and efficient.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# tabtitle="XAML" hl_lines="9" %}
 
@@ -49,12 +50,15 @@ var smarttexteditor = new SfSmartTextEditor
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Inline Suggestion in WPF Smart Text Editor.](images/suggestion-display-mode/wpf-smarttexteditor-inline-mode.gif)
 
 ## Popup suggestion mode
 Popup mode displays the suggested text in a small overlay near the caret, making it easy to review and accept without interrupting your typing. This mode is especially useful on touch based devices where tapping the suggestion feels natural and convenient.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# tabtitle="XAML" hl_lines="9" %}
 
@@ -83,11 +87,7 @@ var smarttexteditor = new SfSmartTextEditor
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Popup Suggestion in WPF Smart Text Editor.](images/suggestion-display-mode/wpf-smarttexteditor-popup-mode.gif)
-
-## See Also
-
-* [Getting started with WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/getting-started): Add the control to your application and configure AI services.
-* [Commands in WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/commands): Handle the `TextChangedCommand` and react to text changes.
-* [Customization in WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/customization): Customize the text, placeholder, suggestion styles, and input limits.

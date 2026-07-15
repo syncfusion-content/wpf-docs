@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to add the [WPF SmartTextEditor](https://www.syncfusion.com/wpf-controls/smart-text-editor) control. It covers only the basic features needed to get started with the Syncfusion AI-Powered Text Editor. Follow the steps below to add a WPF AI-Powered Text Editor control to your project.
 
-N> The Smart Text Editor is distributed as part of the `Syncfusion.SfSmartComponents.WPF` package provides advanced AI-assisted features to enhance text editing and content management. Ensure your application has the required AI service configuration to enable these features.
+N> The Smart Text Editor is distributed as part of the `Syncfusion.SfSmartComponents.WPF` package, which provides advanced AI-assisted features to enhance text editing and content management. Ensure your application has the required AI service configuration to enable these features.
 
 ## Prerequisites
 
@@ -176,18 +176,3 @@ Here is the result of the previous codes,
 ![Getting Started in WPF Smart Text Editor.](images/getting-started/wpf-smarttexteditor-getting-started.gif)
 
 N> You can refer to our [WPF Smart Text Editor](https://www.syncfusion.com/wpf-controls/smart-text-editor) feature tour page for its groundbreaking feature representations.
-
-## Troubleshooting
-
-| Issue | Possible cause | Resolution |
-|-------|----------------|------------|
-| The control does not appear in the Toolbox. | The Syncfusion assembly is not registered. | Right-click the Toolbox, choose **Choose Items…**, and add the `Syncfusion.SfSmartComponents.WPF` assembly. |
-| XAML compile errors mentioning the namespace. | The required assembly is not referenced. | Add a reference to `Syncfusion.SfSmartComponents.WPF` in the project. |
-| AI suggestions are not generated. | The AI service is not configured or the key/endpoint is invalid. | Verify `azureApiKey`, `azureEndpoint`, and `deploymentName` in `App.xaml.cs`. |
-| Only offline phrase suggestions are shown. | The AI service step was skipped or the configuration is incorrect. | Complete Step 5 to register the AI service. |
-
-## See Also
-
-* [Commands in WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/commands): Handle the `TextChangedCommand` and react to text changes.
-* [Customization in WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/customization): Customize the text, placeholder, suggestion styles, and input limits.
-* [Suggestion display mode](https://help.syncfusion.com/wpf/smarttexteditor/suggestion-display-mode): Switch between inline and popup suggestion modes.
