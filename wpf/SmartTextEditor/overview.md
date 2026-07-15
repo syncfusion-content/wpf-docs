@@ -15,31 +15,25 @@ Syncfusion [WPF AI-Powered Text Editor](https://www.syncfusion.com/wpf-controls/
 
 ## Key features
 
-Features with a dedicated documentation page are linked below.
+* **Suggestion display modes**: Customization of suggestions is possible in both inline and popup modes.
 
-* **Suggestion display modes** (see [Suggestion display modes](suggestion-display-mode.md)): Customize suggestions using either inline or popup modes.
+* **AI powered suggestions**: IChatInferenceService provides clever, context-aware completions.
 
-* **AI powered suggestions**: The WPF Smart Text Editor provides context-aware completions through a chat client (for example, `IChatClient` from `Microsoft.Extensions.AI`).
+* **Custom phrase library**: Preserves backup phrases in case AI recommendations aren't available.
 
-* **Custom phrase library**: The custom phrase library preserves backup phrases for offline use when AI recommendations aren't available.
+* **Maximum length validation**: To guarantee accurate input control, character restrictions are enforced.
 
-* **Maximum length validation**: The `MaxLength` property enforces a character limit to keep input within the allowed range (see [Maximum input length](customization.md#maximum-input-length)).
+* **Keyboard integration**: Makes it possible to accept ideas quickly by utilizing the Tab or Right Arrow keys.
 
-* **Keyboard integration**: Allows you to accept suggestions quickly by using the Tab or Right Arrow keys.
+* **Gesture support**: Allows touch users to tap or click recommendations in the pop-up for quick input.
 
-* **Gesture support**: Allows touch users to tap or click recommendations in the popup for quick input.
+* **Placeholder text**: Enables placeholders to be configured with customizable color styling.
 
-* **Placeholder text**: The `Placeholder` and `PlaceholderStyle` properties allow configuration of a placeholder with customizable color styling (see [Placeholder text and color customization](customization.md#placeholder-text-and-color-customization)).
+* **Customization**: Enables users to fully customize the user interface by controlling fonts, colors, sizes, and styles.
 
-* **Customization**: Enables users to fully customize the user interface by controlling fonts, colors, sizes, and styles (see [Customization in WPF Smart Text Editor](customization.md)).
+## See Also
 
-* **Commands**: `TextChangedCommand` is raised whenever the text in the editor changes (see [Commands in WPF Smart Text Editor](commands.md)).
-
-## Next steps
-
-- [Getting started with WPF Smart Text Editor](getting-started.md) — Add the control to your project and configure an AI service.
-- [Commands in WPF Smart Text Editor](commands.md) — Handle text-change events through the `TextChangedCommand`.
-- [Customization in WPF Smart Text Editor](customization.md) — Style the editor and customize the suggestion display.
-- [Suggestion display modes](suggestion-display-mode.md) — Switch between inline and popup suggestions.
-
-N> For the complete list of properties, methods, and events, see the [SfSmartTextEditor API reference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmartComponents.html).
+* [Getting started with WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/getting-started): Add the control to your application and configure AI services.
+* [Commands in WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/commands): Handle the `TextChangedCommand` and react to text changes.
+* [Customization in WPF Smart Text Editor](https://help.syncfusion.com/wpf/smarttexteditor/customization): Customize the text, placeholder, suggestion styles, and input limits.
+* [Suggestion display mode](https://help.syncfusion.com/wpf/smarttexteditor/suggestion-display-mode): Switch between inline and popup suggestion modes.
