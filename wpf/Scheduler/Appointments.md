@@ -384,7 +384,7 @@ N> Map those properties of Meeting class to schedule appointment by using the `A
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
         <syncfusion:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
-                 <syncfusion:SfScheduler.AppointmentMapping>
+            <syncfusion:SfScheduler.AppointmentMapping>
                 <syncfusion:AppointmentMapping
                 	Subject="EventName"
                		StartTime="From"
