@@ -1,9 +1,0 @@
-Review the following developer documentation for quality and completeness. Do not rewrite or elaborate — just identify and list issues that need correction, organized by category:
-1. MISSING STEPS   - Any step a developer would need to complete the task that isn't documented   - Implicit prerequisites (installs, config, permissions) not stated   - Steps that assume prior knowledge without a link/reference
-2. MISSING INFORMATION   - Undocumented parameters, props, return values, or config options   - Missing code examples where behavior is non-obvious   - Missing version/compatibility notes (framework versions, package versions)   - Missing error handling or troubleshooting guidance   - Broken or missing links/references
-3. TECHNICAL ACCURACY   - Code samples that won't run as-is (syntax errors, outdated APIs, wrong imports)   - Inconsistencies between text description and code sample   - Outdated instructions (deprecated methods, old package names)
-4. GRAMMATICAL / LANGUAGE ISSUES   - Grammar, spelling, punctuation errors   - Awkward phrasing or unclear sentences   - Inconsistent terminology (e.g., same concept called two different names)   - Inconsistent formatting (heading case, code block style, tone)
-5. STRUCTURE / CLARITY   - Logical ordering issues (step B before step A)   - Redundant or duplicated content   - Sections that don't match their heading
-OUTPUT FORMAT:For each issue found, list:- [Category] Location (section/heading/line) — Issue — Suggested fix (one line)
-Keep the fix suggestions brief (one line each). Do not add general commentary, praise, or lengthy explanations — just the issue list. If a category has no issues, state "No issues found" under that heading.
-Documentation to review: D:\New folder (2)\wpf-docs\wpf\Kanban-Board\Getting-started.md
