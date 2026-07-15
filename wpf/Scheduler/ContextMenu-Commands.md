@@ -34,12 +34,12 @@ that contains the Appointment or DateTime of the corresponding cell.
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
         <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-        <syncfusion:SfScheduler.CellContextMenu>
-        <ContextMenu>
-        <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Add}}" CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}" Header="Add">
-        </MenuItem>
-        </ContextMenu>
-        </syncfusion:SfScheduler.CellContextMenu>
+            <syncfusion:SfScheduler.CellContextMenu>
+                <ContextMenu>
+                    <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Add}}" CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}" Header="Add">
+                    </MenuItem>
+                </ContextMenu>
+            </syncfusion:SfScheduler.CellContextMenu>
         </syncfusion:SfScheduler>
     </Grid>
 </Window>
@@ -68,18 +68,18 @@ that contains the Appointment or DateTime of the corresponding cell.
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
         <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-        <syncfusion:SfScheduler.AppointmentContextMenu>
-        <ContextMenu>
-        <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Edit}}"
-                    CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}"
-                    Header="Edit">
-        </MenuItem>
-        <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Delete}}"
-        CommandParameter ="{Binding}"
-        Header="Delete">
-        </MenuItem>
-        </ContextMenu>
-        </syncfusion:SfScheduler.AppointmentContextMenu>
+            <syncfusion:SfScheduler.AppointmentContextMenu>
+                <ContextMenu>
+                    <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Edit}}"
+                                CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}"
+                                Header="Edit">
+                    </MenuItem>
+                    <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Delete}}"
+                    CommandParameter ="{Binding}"
+                    Header="Delete">
+                    </MenuItem>
+                </ContextMenu>
+            </syncfusion:SfScheduler.AppointmentContextMenu>
         </syncfusion:SfScheduler>
     </Grid>
 </Window>
