@@ -267,9 +267,9 @@ BinaryFormatter format = new BinaryFormatter();
 
 DockingManager1.LoadDockState(format, StorageFormat.Binary, "\\docking_bin.bin");
 
-BinaryFormatter format = new BinaryFormatter();
+BinaryFormatter saveFormat = new BinaryFormatter();
 
-DockingManager1.SaveDockState(format, StorageFormat.Binary, "\\docking_bin.bin");
+DockingManager1.SaveDockState(saveFormat, StorageFormat.Binary, "\\docking_bin.bin");
 
 
 {% endhighlight %}

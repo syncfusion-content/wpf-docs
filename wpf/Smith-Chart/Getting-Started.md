@@ -13,10 +13,10 @@ This section explains the steps required to build the application with SfSmithCh
 
 ## Steps
 
-1. Create new WPF project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
+1. Create a new WPF project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
 2. Add the SfSmithChart assembly to your application. 
-3. Initialize smith chart control.
-4. Add header to the smith chart control.
+3. Initialize the smith chart control.
+4. Add a header to the smith chart control.
 5. Add series to the smith chart control.
 6. Add legends for the series.
    
@@ -32,7 +32,7 @@ These steps are explained below in both XAML and code behind.
 
 ![Reference Manager Dialog Windows in Visual Studio](Getting-Started_images/Getting-Started_img1.png)
 
-3. Select the .NET Framework version with respect  to your application. The version can be identified as below:
+3. Select the .NET Framework version with respect to your application. The version can be identified as below:
 
 <table>
 <tr>
@@ -224,7 +224,7 @@ Reactance
 </tr>
 </table>
 
-Before proceeding with the smith chart, create data model with the above details as follows.
+Before proceeding with the smith chart, create a data model with the above details as follows.
 
 {% highlight C# %}
     public class TransmissionData
@@ -235,7 +235,7 @@ Before proceeding with the smith chart, create data model with the above details
     }
 {% endhighlight %}
 
-Create a collection property in MainWindow class as below:
+Create a collection property in the MainWindow class as below:
 
 {% highlight C# %}
     public partial class MainWindow : Window
@@ -249,7 +249,7 @@ Create a collection property in MainWindow class as below:
     }
 {% endhighlight %}
 
-Add the values to this TraceData property with the values illustrated in the above table.
+Add the values to this Data property with the values illustrated in the above table.
 
 {% highlight C# %}
 
@@ -282,7 +282,7 @@ Add the values to this TraceData property with the values illustrated in the abo
 
 ### Initialize the smith chart 
 
-To to initialize the smith chart,  use the following class Syncfusion.UI.Xaml.SfSmithChart.
+To initialize the smith chart, use the following class Syncfusion.UI.Xaml.SmithChart.SfSmithChart.
 
 {% highlight xaml %}
 
@@ -295,7 +295,7 @@ To to initialize the smith chart,  use the following class Syncfusion.UI.Xaml.Sf
 ![SmithChart with default axes](Getting-Started_images/Getting-Started_img5.png)
 
 
-### Add header to smith chart
+### Add a header to the smith chart
 
 The header of the smith chart acts as the title and it is used to identify the purpose of the smith chart. 
 
@@ -334,20 +334,20 @@ The following code example illustrates how to add and customize the resistance (
 
 ### Adding series 
 
-You can plot the line on smith chart map by adding line series.
+You can plot a line on the smith chart by adding a line series.
 
-You  should initialize the series for representing the **Transmission Data**.
+Initialize the series for representing the **Transmission Data**.
 
 {% highlight xaml %}
     <syncfusion:LineSeries>                
     </syncfusion:LineSeries>		
 {% endhighlight %}
 
-After the series has been added, you  should add ItemSource, ResistancePath, and ReactancePath APIs to populate the data in smith chart.
+After the series has been added, add the ItemsSource, ResistancePath, and ReactancePath APIs to populate the data in the smith chart.
 
-* `ItemsSource` - It is a property to hold the data source, the data source or data collection can be bound with ItemsSource. 
-* `ResistancePath` - It is a string property, used to map properties. It needs to be bound  with Resistance Axis (or HorizontalAxis). It is like a value member path in ListBox.
-* `ReactancePath` - It is a string property, used to map properties. It needs to be bound with the Reactance Axis (Or RadialAxis). It is like a value member path in ListBox.
+* `ItemsSource` - It is a property to hold the data source; the data source or data collection can be bound with ItemsSource. 
+* `ResistancePath` - It is a string property, used to map properties. It needs to be bound with Resistance Axis (or HorizontalAxis). It is like a value member path in ListBox.
+* `ReactancePath` - It is a string property, used to map properties. It needs to be bound with the Reactance Axis (or RadialAxis). It is like a value member path in ListBox.
 * `Label` - This property gives names for the series, which in turn mapped to the Legend.
 
 {% highlight xaml %}
@@ -358,9 +358,9 @@ After the series has been added, you  should add ItemSource, ResistancePath, and
 {% endhighlight %}
 
 
-### Add legends to the smith chart
+### Adding legends to the smith chart
 
-The following code example illustrates how to add the syntax [`legends`]() in smith chart.
+The following code example illustrates how to add the syntax [`legends`]() in the smith chart.
 
 {% highlight xaml %}
 
@@ -371,18 +371,15 @@ The following code example illustrates how to add the syntax [`legends`]() in sm
 
 {% endhighlight %}
 
-Now, the SmithChart has been prepared to demonstrate  the studies related to Transmission Line of Impedance. 
+Now, the smith chart has been prepared to demonstrate the studies related to the Transmission Line of Impedance. 
 
-The following code example  illustrates the complete code for creating a smith chart.
+The following code example illustrates the complete code for creating a smith chart.
 
 {% tabs %}
 
 {% highlight xaml %}
 
         <syncfusion:SfSmithChart Header="Impedance Transmission" Height="400" Width="500">
-            <!--Initialize the series for SfSmithChart-->
-            <syncfusion:LineSeries ResistancePath="Resistance" ReactancePath="Reactance" ItemsSource="{Binding Data}" Label="TransmissionLine">                
-            </syncfusion:LineSeries>
             <!--Initialize the resistance axis for SfSmithChart-->
             <syncfusion:SfSmithChart.HorizontalAxis>
                 <syncfusion:HorizontalAxis FontSize="11"></syncfusion:HorizontalAxis>
@@ -395,6 +392,9 @@ The following code example  illustrates the complete code for creating a smith c
             <syncfusion:SfSmithChart.Legend>
                 <syncfusion:SmithChartLegend></syncfusion:SmithChartLegend>
             </syncfusion:SfSmithChart.Legend>
+            <!--Initialize the series for SfSmithChart-->
+            <syncfusion:LineSeries ResistancePath="Resistance" ReactancePath="Reactance" ItemsSource="{Binding Data}" Label="TransmissionLine">                
+            </syncfusion:LineSeries>
         </syncfusion:SfSmithChart>
 
 {% endhighlight %}
@@ -481,7 +481,7 @@ SfSmithChart chart = new SfSmithChart();
 
 ### Adding header to the smith chart
 
-The header of the SmithChart acts as the title and it is used to identify the purpose of the smith chart.
+The header of the smith chart acts as the title and it is used to identify the purpose of the smith chart.
 
 {% highlight c# %}
 
@@ -512,9 +512,9 @@ The following code example illustrates how to add and customize the resistance (
 
 ### Adding series
 
-You can plot the line on smith chart map by adding line series.
+You can plot a line on the smith chart by adding a line series.
 
-You  should initialize the series for representing the **Transmission Data**.
+Initialize the series for representing the **Transmission Data**.
 
 {% highlight c# %}
 
@@ -522,11 +522,11 @@ LineSeries series = new LineSeries();
 
 {% endhighlight  %}
 
-After the series has been added, you  should add ItemSource, ResistancePath and, ReactancePath APIs to populate the data in smith chart.
+After the series has been added, add the ItemsSource, ResistancePath, and ReactancePath APIs to populate the data in the smith chart.
 
-* `ItemsSource` - It is a property to hold the data source, the data source or data collection can be bound with ItemsSource. 
-* `ResistancePath` - It is a string property, used to map properties. It needs to be bound  with Resistance Axis (or HorizontalAxis). It is like a value member path in ListBox.
-* `ReactancePath` - It is a string property, used to map properties. It needs to be bound with the Reactance Axis (Or RadialAxis). It is like a value member path in ListBox.
+* `ItemsSource` - It is a property to hold the data source; the data source or data collection can be bound with ItemsSource. 
+* `ResistancePath` - It is a string property, used to map properties. It needs to be bound with Resistance Axis (or HorizontalAxis). It is like a value member path in ListBox.
+* `ReactancePath` - It is a string property, used to map properties. It needs to be bound with the Reactance Axis (or RadialAxis). It is like a value member path in ListBox.
 * `Label` - This property gives names for the series, which in turn mapped to the Legend.
 
 {% highlight c# %}
@@ -542,7 +542,7 @@ After the series has been added, you  should add ItemSource, ResistancePath and,
 
 ### Adding legends to the chart
 
-The following code examples illustrates how to add [`legends`]() to your smith chart.
+The following code example illustrates how to add [`legends`]() to your smith chart.
 
 {% highlight c# %}
 
@@ -552,9 +552,9 @@ The following code examples illustrates how to add [`legends`]() to your smith c
 
 {% endhighlight  %}
 
-Now, the SmithChart has been prepared to demonstrate the studies related to Transmission Line of Impedance. 
+Now, the smith chart has been prepared to demonstrate the studies related to the Transmission Line of Impedance. 
 
-The following code example  illustrates the complete code for creating a smith chart.
+The following code example illustrates the complete code for creating a smith chart.
 
 {% highlight c# %}
 
@@ -598,7 +598,7 @@ The following output is displayed as the result of above code example.
 
 ## Theme
 
-Smith chart supports various built-in themes. Refer to the below links to apply themes for the Smith chart,
+The smith chart supports various built-in themes. Refer to the below links to apply themes for the smith chart,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

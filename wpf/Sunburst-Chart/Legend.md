@@ -11,7 +11,7 @@ documentation: ug
 
 # Legend in WPF Sunburst Chart (SfSunburstChart)
 
-The Legend is used to represent the first level of categories in sunburst chart. 
+The Legend is used to represent the first level of categories in the Sunburst Chart.
 
 You can initialize the legend as in the below code snippet:
 
@@ -39,7 +39,7 @@ chart.Legend = legend;
 
 ## Legend Icon
 
-You can specify different shapes of legend icon by using the [`LegendIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_LegendIcon) property. By default, legend icon is Circle. The Sunburst chart have some predefined shapes such as:
+You can specify different shapes of legend icon by using the [`LegendIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_LegendIcon) property. By default, the legend icon is Circle. The Sunburst Chart has some predefined shapes such as:
 
 * Circle
 * Cross
@@ -74,12 +74,12 @@ chart.Legend = legend;
 ![Legend_img2](Legend_images/Legend_img2.jpeg)
 
 
-The following properties are used to customize the legend icons size.
+The following properties are used to customize the legend icon size:
 
-* [`IconHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_IconHeight) – Gets or sets the double value to represents icon(s) height.
-* [`IconWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_IconWidth) – Gets or sets the double value to represents icon(s) width.
+* [`IconHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_IconHeight) – Gets or sets the double value that represents the icon(s) height.
+* [`IconWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_IconWidth) – Gets or sets the double value that represents the icon(s) width.
 
-You can customize your own legend shape by applying custom template using [`LegendIconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_LegendIconTemplate) property as shown in the below code. 
+You can customize your own legend shape by applying a custom template using the [`LegendIconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_LegendIconTemplate) property as shown in the below code:
 
 {% tabs %}
 
@@ -148,11 +148,11 @@ grid.Children.Add(sunburst);
 ![Legend_img3](Legend_images/Legend_img3.jpeg)
 
 
-Note: You need to set [`LegendIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegendIcon.html) value as Custom in order to apply custom template.
+N> You need to set the [`LegendIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegendIcon.html) value as Custom in order to apply a custom template.
 
 ## Positioning the Legend
 
-You can customize the position to left, right, top, bottom for the legend using [`DockPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_DockPosition) property as like in below code snippet
+You can customize the position to left, right, top, bottom for the legend using the [`DockPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_DockPosition) property as shown in the below code snippet:
 
 {% tabs %}
 
@@ -183,11 +183,11 @@ chart.Legend = legend;
 
 ## Customize the Legend
 
-You can arrange the legend items smartly by using ItemPanelTemplate and ItemTemplate property. The following code shows how to arrange the legend items smartly. 
+You can arrange the legend items smartly by using the ItemPanelTemplate and ItemTemplate properties. The following code shows how to arrange the legend items smartly:
 
 {% highlight xaml %}
 
-    <sunburst:SfSunburstChart.Legend>
+<sunburst:SfSunburstChart.Legend>
     <sunburst:SunburstLegend DockPosition="Top" Margin="0,25,0,0">
         <sunburst:SunburstLegend.ItemsPanel>
             <ItemsPanelTemplate>
@@ -231,15 +231,15 @@ You can arrange the legend items smartly by using ItemPanelTemplate and ItemTemp
 
 ## Legend Interactivity
 
-You can select a specific category while clicking on corresponding legend item through [`ClickAction`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_ClickAction) property. It has three types of action 
+You can select a specific category while clicking on the corresponding legend item through the [`ClickAction`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_ClickAction) property. It has three types of action:
 
 * ToggleSegmentSelection
-* ToggleSegmentVisiblity
+* ToggleSegmentVisibility
 * None
 
 ### ToggleSegmentSelection
 
-Used to highlight specific category while clicking on legend item. 
+Used to highlight a specific category while clicking on a legend item:
 
 {% tabs %}
 
@@ -255,7 +255,7 @@ Used to highlight specific category while clicking on legend item.
 
 SunburstLegend legend = new SunburstLegend()
 {
-    ClickAction =LegendClickAction.ToggleSegmentSelection
+    ClickAction = LegendClickAction.ToggleSegmentSelection
 };
 
 chart.Legend = legend;
@@ -269,14 +269,14 @@ chart.Legend = legend;
 
 ### ToggleSegmentVisibility
 
-Used to disable the specific category while clicking on legend item. 
+Used to disable a specific category while clicking on a legend item:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Legend>
-    <sunburst:SunburstLegend ClickAction ="ToggleSegmentVisibility"/>
+    <sunburst:SunburstLegend ClickAction="ToggleSegmentVisibility"/>
 </sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}

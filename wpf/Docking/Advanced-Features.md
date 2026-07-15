@@ -2,7 +2,7 @@
 layout: post
 title: Advanced Features | DockingManager | WPF | Syncfusion®
 description: Advanced features of Syncfusion® Essential Studio® WPF DockingManager Control, its elements, features and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
@@ -13,7 +13,9 @@ documentation: ug
 
 Visual styles are available for the dockable windows, which give the windows a rich and professional look and feel. The visual style for the DockingManager is set using the VisualStyle property. The following are some of the visual styles that can be applied to the Docking Manager.
 
-Property table
+> NOTE: `SkinStorage.SetVisualStyle` is a legacy API. For new development, use [SfSkinManager.SetTheme](https://help.syncfusion.com/wpf/themes/skin-manager#set-theme), which requires the additional assemblies `Syncfusion.SfSkinManager.WPF` and a theme assembly (e.g. `Syncfusion.Themes.FluentLight.WPF`).
+
+#### Property table
 
 <table>
 <tr>
@@ -252,7 +254,7 @@ DockingManager.CloseButtonClick += new CloseButtonEventHandler(DockingManager_Cl
 
  <!--Declaring Docking Manager with Close AllTabs and CloseOtherTabs-->        
  
- <syncfusion:DockingManager CloseAllTabs="DockingManager_CloseAllTabs" CloseOtherTabs="DockingManager_CloseOtherTabs">            
+ <syncfusion:DockingManager CloseAllTabs="DockingManager_CloseAllTabs" CloseOtherTabs="DockingManager_CloseOtherTabs">
 	
 	<!--Children for the Docking Manager-->            
 	
@@ -901,8 +903,8 @@ ControlTemplate</td></tr>
 <td>
 DockWindowState</td><td>
 This property will be used to represent the state of the maximized or minimized window.</td><td>
-</td><td>
-</td></tr>
+Dependency</td><td>
+DockWindowState (enum)</td></tr>
 </table>
 
 

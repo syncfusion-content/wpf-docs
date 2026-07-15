@@ -9,7 +9,7 @@ documentation: ug
 
 # Markers in WPF Sparkline (SfSparkline)
 
-Markers are used to indicate the value point for line and area series, and we can customize with different template.
+Markers are used to indicate the value points for line and area sparklines, and can be customized with different templates.
 
 {% tabs %}
 
@@ -27,7 +27,7 @@ Markers are used to indicate the value point for line and area series, and we ca
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-	ItemsSource = new SparkViewModel().UsersList,
+	ItemsSource = new UsersViewModel().UsersList,
 	YBindingPath = "NoOfUsers",
 	MarkerVisibility = Visibility.Visible
 };

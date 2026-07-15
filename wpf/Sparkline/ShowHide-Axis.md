@@ -7,9 +7,9 @@ control: SfSparkline
 documentation: ug
 ---
 
-# ShowHide Axis in WPF Sparkline (SfSparkline)
+# Show and Hide Axis in WPF Sparkline (SfSparkline)
 
-Following code used to enable the axis and this feature applicable for all the sparkline except WinLoss sparkline, also you can style the axis by AxisStyle property and position the axis by AxisOrigin property.
+The following code is used to enable the axis. This feature is applicable for all sparklines except the WinLoss sparkline. You can also style the axis using the `AxisStyle` property and position the axis using the `AxisOrigin` property.
 
 {% tabs %}
 
@@ -27,7 +27,7 @@ Following code used to enable the axis and this feature applicable for all the s
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-    ItemsSource = new SparkViewModel().UsersList,
+    ItemsSource = new UsersViewModel().UsersList,
     YBindingPath = "NoOfUsers",
     ShowAxis = true
 };
@@ -40,7 +40,7 @@ The following is a snapshot of the axis visibility.
 
 ![ShowHide-Axis_img1](ShowHide-Axis_images/ShowHide-Axis_img1.png)
 
-**Axis Origin**
+**Axis origin**
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ The following is a snapshot of the axis visibility.
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-    ItemsSource = new SparkViewModel().UsersList,
+    ItemsSource = new UsersViewModel().UsersList,
     YBindingPath = "NoOfUsers",
     ShowAxis = true,
     AxisOrigin = 2,
@@ -77,10 +77,10 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![Axis Origin](ShowHide-Axis_images/ShowHideAxis_img2.jpeg)
+![Axis origin](ShowHide-Axis_images/ShowHideAxis_img2.jpeg)
 
 
-**Axis LineStyle**
+**Axis line style**
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-    ItemsSource = new SparkViewModel().UsersList,
+    ItemsSource = new UsersViewModel().UsersList,
     YBindingPath = "NoOfUsers",
     ShowAxis = true,
     AxisOrigin = 1,

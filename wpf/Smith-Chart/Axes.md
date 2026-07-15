@@ -9,7 +9,7 @@ documentation: ug
 
 # Axes in WPF Smith Chart (SfSmithChart)
 
-Typically, SmithChart  has been used two axes that are used to measure and categorize the data. 
+Typically, the Smith chart uses two axes that are used to measure and categorize the data. 
 
 1. Horizontal Axis (Resistance)
 2. Radial Axis (Reactance)
@@ -17,13 +17,13 @@ Typically, SmithChart  has been used two axes that are used to measure and categ
 
 ## Horizontal Axis
 
-Horizontal axis scale is used to measure normalized resistance value.
+The horizontal axis scale is used to measure the normalized resistance value.
 
 The following topics explain in detail about the axis and its parts.
 
 ### MajorGridlines
 
-By default, major gridlines are automatically added to the Axis. SfSmithChart supports the customization of major gridline. The visibility of the major gridlines can be controlled by using the **ShowMajorGridlines** property.
+By default, major gridlines are automatically added to the axis. SfSmithChart supports the customization of major gridlines. The visibility of the major gridlines can be controlled by using the **ShowMajorGridlines** property.
 
 {% tabs %}
 
@@ -85,7 +85,7 @@ chart.HorizontalAxis.MajorGridlineStyle = this.Grid1.Resources["lineStyle"] as S
 
 ### MinorGridlines
 
-By default, minor gridlines are not added to the Axis. The visibility of the minor gridlines can be controlled by using the `ShowMinorGridlines` property.
+By default, minor gridlines are not added to the axis. The visibility of the minor gridlines can be controlled by using the `ShowMinorGridlines` property.
 
 {% tabs %}
 
@@ -114,7 +114,7 @@ chart.HorizontalAxis.ShowMinorGridlines = true;
 
 **MinorGridlinesCount**
 
-Minor gridlines can be added by defining *MinorGridlinesCount* property. By default, this value is  eight. It means, every 100 pixels it renders maximum eight minor gridlines.
+Minor gridlines can be added by defining the *MinorGridlinesCount* property. By default, this value is eight. It means, every 100 pixels it renders a maximum of eight minor gridlines.
 
 {% tabs %}
 
@@ -171,14 +171,14 @@ SfSmithChart provides support to customize the style of the minor gridlines by d
 chart.HorizontalAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style;
 
 {% endhighlight %}
-
+    
 {% endtabs %}
 
 ![Axes_img5](Axes_images/Axes_img5.png)
 
 ## AxisLine
 
-SfSmithChart provides support to customize the style of the axis line by defining the *AxisLineStyle* property and change the visibility by using *ShowAxisLine* property as shown in the below code snippet.
+SfSmithChart provides support to customize the style of the axis line by defining the *AxisLineStyle* property and changing the visibility by using the *ShowAxisLine* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -268,11 +268,11 @@ chart.HorizontalAxis.LabelIntersectAction = LabelIntersectActions.None;
 
 ## Radial Axis
 
-Radial axis scale is used to measure the normalized reactance values.
+The radial axis scale is used to measure the normalized reactance values.
 
 ### MajorGridlines
 
-By default, major gridlines are automatically added to the Axis. SfSmithChart supports customization of major gridline. The visibility of the major gridlines can be controlled by using the *ShowMajorGridlines* property.
+By default, major gridlines are automatically added to the axis. SfSmithChart supports the customization of major gridlines. The visibility of the major gridlines can be controlled by using the *ShowMajorGridlines* property.
 
 {% tabs %}
 
@@ -334,7 +334,7 @@ chart.RadialAxis.MajorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style
 
 ### MinorGridlines
 
-By default, minor gridlines are not added to the Axis. The visibility of the minor gridlines can be controlled by using the *ShowMinorGridlines* property.
+By default, minor gridlines are not added to the axis. The visibility of the minor gridlines can be controlled by using the *ShowMinorGridlines* property.
 
 {% tabs %}
 
@@ -363,7 +363,7 @@ chart.RadialAxis.ShowMinorGridlines = true;
 
 **MinorGridlinesCount**
 
-Minor gridlines can be added by defining *MinorGridlinesCount* property. By default, this value is  eight. It means, every 100 pixels it renders maximum eight minor gridlines.
+Minor gridlines can be added by defining the *MinorGridlinesCount* property. By default, this value is eight. It means, every 100 pixels it renders a maximum of eight minor gridlines.
 
 {% tabs %}
 
@@ -427,7 +427,7 @@ chart.RadialAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style
 
 ### AxisLine
 
-SfSmithChart provides support to customize the style of the axis line by defining the *AxisLineStyle* property and change the visibility by using *ShowAxisLine* property as shown in the below code snippet.
+SfSmithChart provides support to customize the style of the axis line by defining the *AxisLineStyle* property and changing the visibility by using the *ShowAxisLine* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -461,7 +461,7 @@ chart.RadialAxis.AxisLineStyle = this.Grid1.Resources["lineStyle"] as Style;
 
 ### LabelPlacement
 
-The *LabelPlacement* property is used to position the axis label either inside or outside of the chart plotting area. By default, LabelsPlacement is **Outside**.
+The *LabelPlacement* property is used to position the axis label either inside or outside of the chart plotting area. By default, the LabelPlacement is **Outside**.
 
 {% tabs %}
 
@@ -478,7 +478,7 @@ The *LabelPlacement* property is used to position the axis label either inside o
 
 {% highlight C# %}
 
-//Positioning the radial axis labels to inside of Circle
+//Positioning the radial axis labels to inside of the circle
 chart.RadialAxis.LabelPlacement = LabelPlacement.Inside;
 
 {% endhighlight %}
@@ -489,7 +489,7 @@ chart.RadialAxis.LabelPlacement = LabelPlacement.Inside;
 
 ### LabelIntersectAction
 
-When the Axis labels overlap with each other based on the chart dimensions and label size, use the *LabelIntersectAction* property of the axis to avoid overlapping. The default value of the LabelIntersectAction is **Hide**.
+When the axis labels overlap with each other based on the chart dimensions and label size, use the *LabelIntersectAction* property of the axis to avoid overlapping. The default value of the LabelIntersectAction is **Hide**.
 
 {% tabs %}
 

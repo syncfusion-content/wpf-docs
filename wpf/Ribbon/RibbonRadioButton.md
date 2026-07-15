@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonRadioButton in WPF Ribbon
 
-RibbonRadioButton control is used to select a option like normal RadioButton . 
+The RibbonRadioButton control is used to select an option, similar to a normal RadioButton.
 
 ## Add RadioButton to the RibbonBar
 

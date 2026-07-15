@@ -9,7 +9,7 @@ documentation: ug
 
 # Surface Types in WPF Surface Chart (SfSurfaceChart)
 
-Essential Surface Chart provides the following types to plot three dimensional data points.
+The Essential Surface Chart provides the following types to plot three-dimensional data points.
 
 * Surface
 * WireframeSurface
@@ -18,7 +18,7 @@ Essential Surface Chart provides the following types to plot three dimensional d
 
 ### Surface
 
-Surface charts are used to explore the relationship between three dimensional data. 
+Surface charts are used to explore the relationship between three-dimensional data. 
 
 The following code shows how to set the type of surface.
 
@@ -35,56 +35,55 @@ The following code shows how to set the type of surface.
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.Type = SurfaceType.Surface;
-            chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
-            chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
-            chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
-            chart.XBindingPath = "X";
-            chart.YBindingPath = "Y";
-            chart.ZBindingPath = "Z";
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.Type = SurfaceType.Surface;
+chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
+chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
+chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
+chart.XBindingPath = "X";
+chart.YBindingPath = "Y";
+chart.ZBindingPath = "Z";
+grid.Children.Add(chart);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-The following code specifies the view model data bound to the chart for surface type.
+The following code specifies the view model data bound to the chart for the surface type.
 
 {% highlight c# %}
 
-             public class Data
-                {
-                    public double X { get; set; }
-                    public double Y { get; set; }
-                    public double Z { get; set; }
-                }
+public class Data
+{
+    public double X { get; set; }
+    public double Y { get; set; }
+    public double Z { get; set; }
+}
 
-    public class DataViewModel
+public class DataViewModel
+{
+    public ObservableCollection<Data> DataValues { get; set; }
+
+    public int RowSize { get; set; }
+
+    public int ColumnSize { get; set; }
+
+    public DataViewModel()
     {
-        public ObservableCollection<Data> DataValues { get; set; }
-
-        public int RowSize { get; set; }
-
-        public int ColumnSize { get; set; }
-        public DataViewModel()
+        DataValues = new ObservableCollection<Data>();
+        double inc = 8.0 / 35;
+        for (double x = -4; x < 4; x += inc)
         {
-            DataValues = new ObservableCollection<Data>();
-
-            DataValues = new ObservableCollection<Data>();
-            double inc = 8.0 / 35;
-            for (double x = -4; x < 4; x += inc)
+            for (double z = -4; z < 4; z += inc)
             {
-                for (double z = -4; z < 4; z += inc)
-                {
-                    double y = 2 * (x * x) + 2 * (z * z) - 4;
-                    DataValues.Add(new Data() { X = x, Y = y, Z = z });
-                }
+                double y = 2 * (x * x) + 2 * (z * z) - 4;
+                DataValues.Add(new Data() { X = x, Y = y, Z = z });
             }
-            RowSize = 35;
-            ColumnSize = 35;
         }
+        RowSize = 35;
+        ColumnSize = 35;
     }
+}
 
 {% endhighlight %}
 
@@ -93,7 +92,7 @@ The following code specifies the view model data bound to the chart for surface 
 
 ### WireframeSurface
 
-You can draw the wireframe or mesh, for the surface chart.
+You can draw the wireframe or mesh for the surface chart.
 
 {% tabs %}
 
@@ -108,15 +107,15 @@ You can draw the wireframe or mesh, for the surface chart.
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.Type = SurfaceType.WireframeSurface;
-            chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
-            chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
-            chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
-            chart.XBindingPath = "X";
-            chart.YBindingPath = "Y";
-            chart.ZBindingPath = "Z";
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.Type = SurfaceType.WireframeSurface;
+chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
+chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
+chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
+chart.XBindingPath = "X";
+chart.YBindingPath = "Y";
+chart.ZBindingPath = "Z";
+grid.Children.Add(chart);
 
 {% endhighlight %}
 
@@ -126,7 +125,7 @@ You can draw the wireframe or mesh, for the surface chart.
 
 ### Contour
 
-Viewing the surface chart from the top is called contour. It is a graphical technique that represents the three dimensional surface in a two dimensional format.  
+Viewing the surface chart from the top is called a contour. It is a graphical technique that represents the three-dimensional surface in a two-dimensional format.  
 
 {% tabs %}
 
@@ -146,15 +145,15 @@ Viewing the surface chart from the top is called contour. It is a graphical tech
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.Type = SurfaceType.Contour;
-            chart.Rotate = 0;
-            ChartColorBar colorBar = new ChartColorBar();
-            colorBar.DockPosition = ChartDock.Right;
-            colorBar.ShowLabel = true;
-            chart.ColorBar = colorBar;          
-            SetData();
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.Type = SurfaceType.Contour;
+chart.Rotate = 0;
+ChartColorBar colorBar = new ChartColorBar();
+colorBar.DockPosition = ChartDock.Right;
+colorBar.ShowLabel = true;
+chart.ColorBar = colorBar;
+SetData();
+grid.Children.Add(chart);
 
 {% endhighlight %}
 
@@ -189,7 +188,7 @@ The following code specifies the view model data bound to the chart for contour 
 
 ### WireframeContour
 
-You can draw the wireframe or mesh for the contour chart
+You can draw the wireframe or mesh for the contour chart.
 
 {% tabs %}
 
@@ -208,15 +207,15 @@ You can draw the wireframe or mesh for the contour chart
 
 {% highlight c# %}
 
-            SfSurfaceChart chart = new SfSurfaceChart();
-            chart.Type = SurfaceType.WireframeContour;
-            chart.Rotate = 0;
-            ChartColorBar colorBar = new ChartColorBar();
-            colorBar.DockPosition = ChartDock.Right;
-            colorBar.ShowLabel = true;
-            chart.ColorBar = colorBar;          
-            SetData();
-            grid.Children.Add(chart);
+SfSurfaceChart chart = new SfSurfaceChart();
+chart.Type = SurfaceType.WireframeContour;
+chart.Rotate = 0;
+ChartColorBar colorBar = new ChartColorBar();
+colorBar.DockPosition = ChartDock.Right;
+colorBar.ShowLabel = true;
+chart.ColorBar = colorBar;
+SetData();
+grid.Children.Add(chart);
 
 {% endhighlight %}
 

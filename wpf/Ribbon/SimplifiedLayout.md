@@ -39,7 +39,7 @@ documentation: ug
 
 ## Switching between simplified and normal layouts
 
- The Ribbon control allows to switch between simplified and normal layouts at runtime using the Ribbon minimize button located in the lower right corner of the Ribbon. To enable this option, set the [`EnableSimplifiedLayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_EnableSimplifiedLayoutMode) property to **True**. By default, its value is **False**.
+ The Ribbon control allows you to switch between simplified and normal layouts at runtime using the Ribbon minimize button located in the lower right corner of the Ribbon. To enable this option, set the [`EnableSimplifiedLayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_EnableSimplifiedLayoutMode) property to **True**. By default, its value is **False**.
 
  {% tabs %}
 
@@ -80,7 +80,7 @@ documentation: ug
  * **Simplified, OverflowMenu** – The item will be displayed in simplified layout.
  * **Normal, Simplified, OverflowMenu** – The item will be displayed in both normal and simplified layout.
 
- In the below code snippet, the [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings.html#Syncfusion_Windows_Tools_Controls_SimplifiedLayoutSettings_SetDisplayMode_System_Windows_UIElement_Syncfusion_Windows_Tools_DisplayMode_) property for *Paste* option is set to **"Simplified"**, so it will only be displayed only in the simplified layout. The [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings.html#Syncfusion_Windows_Tools_Controls_SimplifiedLayoutSettings_SetDisplayMode_System_Windows_UIElement_Syncfusion_Windows_Tools_DisplayMode_) property for *Underline* option is set to **"Normal, Overflow"**, so it will be displayed in the normal layout and will also be displayed inside the overflow menu in the simplified layout.
+ In the below code snippet, the [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings.html#Syncfusion_Windows_Tools_Controls_SimplifiedLayoutSettings_SetDisplayMode_System_Windows_UIElement_Syncfusion_Windows_Tools_DisplayMode_) property for *Paste* option is set to **"Simplified"**, so it will only be displayed only in the simplified layout. The [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings.html#Syncfusion_Windows_Tools_Controls_SimplifiedLayoutSettings_SetDisplayMode_System_Windows_UIElement_Syncfusion_Windows_Tools_DisplayMode_) property for *Underline* option is set to **"Normal,OverflowMenu"**, so it will be displayed in the normal layout and will also be displayed inside the overflow menu in the simplified layout.
 
  {% tabs %}
 
