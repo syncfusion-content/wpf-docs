@@ -471,6 +471,20 @@ public class Task : NotificationObject
         }
     }
 
+
+    /// <summary>
+    /// Gets or sets the progress value.
+    /// </summary>
+    Public double Progress
+    {
+        get { return this.progress; }
+        set
+        {
+            this.progress = value;
+            RaisePropertyChanged("Progress");
+        }
+    }
+
     /// <summary>
     /// Gets or sets the start date.
     /// </summary>
@@ -561,7 +575,7 @@ public class Task : NotificationObject
     void ChildNodePropertyChanged(object sender, PropertyChangedEventArgs e)
     {
         if (e.PropertyName != null)
-            if (e.PropertyName == "StartDate" || e.PropertyName == "EndDate" || e.PropertyName == "Progress")
+            if (e.PropertyName == "StartDate" || e.PropertyName == "EndDate" || e.PropertyName == "progress")
             {
                 UpdateData();
             }

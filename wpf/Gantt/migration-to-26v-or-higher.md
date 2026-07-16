@@ -179,9 +179,13 @@ AllNodesExpanded</td>
 
 <tr>
 <td>{{'[VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.VisualStyle.html)'| markdownify }}</td>
-<td>Office2010Blue<br/>
+<td>Office 2010 Blue Style<br/>
+Office2010Blue<br/>
 Office2010Black<br/>
-Office2010Silver
+Office2010Silver<br/>
+Metro<br/>
+Blend<br/>
+VS2010
 </td>
 <td>Nil</td>
 <td>Nil</td>
@@ -464,6 +468,19 @@ GanttGridNodeCollapsingCommandWithEventArgs</td>
 <tr>
 <td>GanttGridExpandStateChangingCommandBehavior</td>
 <td>GanttGridNodeExpandingCommandBehavior<br/>
+GanttGridNodeCollapsingCommandBehavior
+</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangingCommand</td>
+<td>GanttGridNodeExpandingCommand<br/>
+GanttGridNodeCollapsingCommand</td>
+</tr>
+
+<tr>
+<td>GanttGridExpandStateChangingCommandBehavior</td>
+<td>GanttGridNodeExpandingCommandBehavior<br/>
 GanttGridNodeCollapsingCommandBehavior</td>
 </tr>
 
@@ -501,7 +518,7 @@ GanttGridNodeCollapsedCommandbehavior</td>
 
 <tr>
 <td>GanttGridExpandStateChangedCommand</td>
-<td>GanttGridNodeExpandedCommand<br/>
+<td>GanttGridNodeExpandStateChangedCommand<br/>
 GanttGridNodeCollapsedCommand</td>
 </tr>
 

@@ -1253,7 +1253,7 @@ The following is the data structure used to build a Resource view Gantt:
 
 ![Resource-View-Gantt-Inline-Items_img3](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img3.png)
 
-* `Team` holds information about the team.
+* `TeamDetails` holds information about the team.
 * `SubItems` of the Team will hold the list of resources in that particular team.
 * `InLineItems` of each resource will hold the tasks assigned to that particular resource.
 
