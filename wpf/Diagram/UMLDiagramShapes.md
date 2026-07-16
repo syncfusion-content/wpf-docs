@@ -52,4 +52,4 @@ The list of UML Diagram Shapes are available in the diagram resource dictionary,
 |  | MultivaluedAttribute | ![MultivaluedAttribute](UMLShapes_images/MultivaluedAttribute.png) |
 |  | StrongRelationship | ![StrongRelationship](UMLShapes_images/StrongRelationship.png) |
 
-N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) page.
+N> Looking for the full WPF Diagram component overview, features, and pricing? Visit the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.

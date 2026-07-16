@@ -362,7 +362,7 @@ The WPF GanttControl supports various built-in themes. Refer to the below links 
 
   ![theming-in-wpf-gantt-control](Getting-Started_images/theming-in-wpf-gantt-control.png)
 
-N> Looking for the full WPF Gantt Chart component overview, features, pricing, and documentation? Visit the [WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) page.
+N> Looking for the full WPF Gantt Chart component overview, features, and pricing? Visit the [WPF Gantt Chart](https://www.syncfusion.com/gantt-sdk/wpf-gantt) page.
 
 ## see also
 

@@ -157,4 +157,4 @@ The GridData control has a rich selection of over 14 built-in styles that provid
 
 ![WPF Overview of expression blend in GridData control](overview_images/wpf-classic-grid-data-expression-blend.png)
 
-N> Looking for the full WPF Data Grid component overview, features, pricing, and documentation? Visit the [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) page.
+N> Looking for the full WPF Data Grid component overview, features, and pricing? Visit the [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) page.

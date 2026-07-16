@@ -497,4 +497,4 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 [How to identify the dragging state of connectors in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)
 
-N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) page.
+N> Looking for the full WPF Diagram component overview, features, and pricing? Visit the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.

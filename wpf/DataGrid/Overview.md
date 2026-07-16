@@ -279,4 +279,4 @@ for the actual data objects that are bound to the DataGrid. For small collection
 </tr>
 </table>
 
-N> Looking for the full WPF Data Grid component overview, features, pricing, and documentation? Visit the [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) page.
+N> Looking for the full WPF Data Grid component overview, features, and pricing? Visit the [WPF Data Grid](https://www.syncfusion.com/wpf-controls/datagrid) page.
