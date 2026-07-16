@@ -9,9 +9,9 @@ documentation: ug
 
 # Legend in WPF Smith Chart (SfSmithChart)
 
-The legend contains the list of chart series that appear in a SmithChart. It can be defined by using the following code example.
+The legend contains the list of chart series that appear in a Smith chart. It can be defined by using the following code example.
 
-N> Add name to `Label` property of **Series**, which in turn mapped to the Legend.
+N> Add a name to the `Label` property of **Series**, which in turn mapped to the legend.
 
 {% tabs %}
 
@@ -71,11 +71,11 @@ this.Grid1.Children.Add(chart);
 
 **Docking**
 
-Legends can be docked at left, right, and top or bottom around the chart area by using *DockPosition* property. 
+Legends can be docked at left, right, top, or bottom around the chart area by using the *DockPosition* property. 
 
-By default, the Smith chart Legend is docked at the Right of the chart.
+By default, the Smith chart legend is docked at the Right of the chart.
 
-To display the legend at the bottom, set the *DockPosition* as Bottom as in below code snippet.
+To display the legend at the bottom, set the *DockPosition* as Bottom as in the below code snippet.
 
 {% tabs %}
 
@@ -106,9 +106,9 @@ chart.Legend = legend;
 
 **Floating Legends**
 
-To position the legend at any arbitrary location inside the chart, set *DockPosition* as **Floating** and provide its relative position by using *OffsetX* and *OffsetY* properties.
+To position the legend at any arbitrary location inside the chart, set the *DockPosition* as **Floating** and provide its relative position by using the *OffsetX* and *OffsetY* properties.
 
-Offset specifies x or y distance from origin.
+The offset specifies the x or y distance from the origin.
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ chart.Legend = legend;
 
 Represents the symbol associated with each legend item. By default, the legend icon is Circle.
 
-Legend Icon can be customized by using the `LegendIcon` property in Smith chart legend as in the below code snippet:
+The legend icon can be customized by using the `LegendIcon` property in the Smith chart legend as in the below code snippet.
 
 {% tabs %}
 
@@ -174,7 +174,7 @@ chart.Legend = legend;
 
 **Custom Legend Icon**
 
-Custom icon for the legend can be added by using **LegendIconTemplate** property in Smith chart Legend as in below code example.
+A custom icon for the legend can be added by using the **LegendIconTemplate** property in the Smith chart legend as in the below code example.
 
 {% tabs %}
 
@@ -211,7 +211,7 @@ chart.Legend = legend;
 
 ## Customizing Legend
 
-The following code example illustrates the customization of legend icon and text.
+The following code example illustrates the customization of the legend icon and text.
 
 {% tabs %}
 
@@ -256,7 +256,7 @@ The following code example illustrates the customization of legend icon and text
 
 ## VisibilityOnLegend
 
-To limit the number of series to be displayed in chart, use *VisibilityOnLegend* property as shown in the below code example.
+To limit the number of series to be displayed in the chart, use the *VisibilityOnLegend* property as shown in the below code example.
 
 {% tabs %}
 
@@ -283,7 +283,7 @@ To limit the number of series to be displayed in chart, use *VisibilityOnLegend*
 //Create line series1
 LineSeries series1 = new LineSeries();
 series1.Label = "Transmission-1";
-//Remove the LegendItem from legend collections.
+//Remove the LegendItem from the legend collections.
 series1.VisibilityOnLegend = false;
 chart.Series.Add(series1);
 
@@ -304,9 +304,9 @@ chart.Legend = legend;
 
 ## Series Visibility
 
-To hide the series segment programmatically, set *IsSeriesVisible* property as False for the specific series. After  the property has been set, the legend item for the specific series will be displayed with shade. 
+To hide the series segment programmatically, set the *IsSeriesVisible* property as False for the specific series. After the property has been set, the legend item for the specific series will be displayed with a shade. 
 
-Now, you can show/hide the series segment on chart by clicking on the particular legend item.
+Now, you can show/hide the series segment on the chart by clicking on the particular legend item.
 
 {% tabs %}
 

@@ -11,9 +11,9 @@ documentation: ug
 
 # Zooming in WPF Sunburst Chart (SfSunburstChart)
 
-Sunburst chart provides zooming (drill down) experience with animation for both mouse and touch enabled devices. It allows you to virtualize large sets of data into minimum data view. 
+The Sunburst Chart provides zooming (drill down) experience with animation for both mouse and touch enabled devices. It allows you to virtualize large sets of data into a minimum data view.
 
-The following code shows how to initialize the zooming behavior.
+The following code shows how to initialize the zooming behavior:
 
 {% tabs %}
 
@@ -35,16 +35,16 @@ chart.Behaviors.Add(zoom);
 
 {% endtabs %}
 
-N> You can enable or disable the zooming by using [`EnableZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_EnableZooming) property. By default, EnableZooming property value is True.
+N> You can enable or disable the zooming by using the [`EnableZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_EnableZooming) property. By default, the EnableZooming property value is True.
 
 ![Zooming_img1](Zooming_images/Zooming_img1.gif)
 
 
 ## Zooming Toolbar
 
-By default, zooming toolbar will be enabled while zooming the segment; it contains both back and reset option.
+By default, the zooming toolbar will be enabled while zooming the segment; it contains both back and reset options.
 
-You can align the zooming toolbar position by using [`ToolBarHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolBarHorizontalAlignment) and [`ToolBarVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolBarVerticalAlignment) property.
+You can align the zooming toolbar position by using the [`ToolBarHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolBarHorizontalAlignment) and [`ToolBarVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolBarVerticalAlignment) properties.
 
 {% highlight xaml %}
 
@@ -58,11 +58,11 @@ You can align the zooming toolbar position by using [`ToolBarHorizontalAlignment
 
 {% endhighlight %}
 
-You can customize the zooming toolbar using the following properties.
+You can customize the zooming toolbar using the following properties:
 
-* [`ToolBarItemHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolBarItemHeight) – Gets or sets height for the toolbar item.
-* [`ToolBarItemWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolBarItemHeight) – Gets or sets width for the toolbar item.
-* [`ToolBarItemMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolBarItemMargin) – Gets or sets margin of the toolbar item.
+* [`ToolBarItemHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolBarItemHeight) – Gets or sets the height for the toolbar item.
+* [`ToolBarItemWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolBarItemWidth) – Gets or sets the width for the toolbar item.
+* [`ToolBarItemMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolBarItemMargin) – Gets or sets the margin of the toolbar item.
 
 {% highlight xaml %}
 
@@ -80,7 +80,7 @@ You can customize the zooming toolbar using the following properties.
 
 ![Zooming_img2](Zooming_images/Zooming_img2.jpeg)
 
-Toolbar position can also be moved using the [`ToolbarOffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolbarOffsetX) and [`ToolbarOffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolbarOffsetX) property. Offset values ranges from 0 to 1 from left to right for x position and top to bottom for y position.
+The toolbar position can also be moved using the [`ToolbarOffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolbarOffsetX) and [`ToolbarOffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstZoomingBehavior_ToolbarOffsetY) properties. The offset values range from 0 to 1 from left to right for the x position and top to bottom for the y position.
 
 {% highlight xaml %}
 

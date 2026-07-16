@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonStatusBar in WPF Ribbon
 
-The [RibbonStatusBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonStatusBar.html) control is added to [RibbonWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonWindow.html) to display the current status of the application or document similar in Microsoft Office.
+The [RibbonStatusBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonStatusBar.html) control is added to [RibbonWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonWindow.html) to display the current status of the application or document, similar to Microsoft Office.
 
 
 {% tabs %}

@@ -9,12 +9,13 @@ documentation: ug
 
 # Data Label in WPF SfChart3D
 
- Data points can be easily annotated with labels to help improve the readability of data.
+Data points can be easily annotated with labels to help improve the readability of data.
 
 ## Define Label Content
-To enable the marker in adornments you have to set the [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property as True. 
 
- [`SegmentLabelContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) property allows you to define the value to be displayed as adornment label.
+To enable the labels in adornments, you have to set the [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property to True. 
+
+The [`SegmentLabelContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) property allows you to define the value to be displayed as the adornment label.
 
 {% tabs %}
 
@@ -71,7 +72,7 @@ The following properties are used to customize the adornment label.
 * [`BorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_BorderBrush) - used to change the border color.
 * [`BorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_BorderThickness) - used to change the thickness of the border.
 * [`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Margin) - used to change the margin size for label.
-* [`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_FontStyle) -  used to change font family of the label.
+* [`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_FontStyle) -  used to change the font style of the label.
 * [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_FontSize) -  used to change font size of the label.
 * [`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Foreground) - used to change the color of the label.
 * [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_FontFamily) -  used to change the font family of the label.
@@ -135,7 +136,7 @@ chart.Series.Add(series);
 
 ## Label Rotation
 
-[`LabelRotationAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelRotationAngle) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
+[`LabelRotationAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelRotationAngle) property is used to define the angle at which the label has to rotate. The following code demonstrates the label rotation angle.
 
 {% tabs %}
 
@@ -243,10 +244,10 @@ chart.Series.Add(series);
 
 ## Connector Line
 
-You can add connector line for the adornments using [`ShowConnectorLine`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowConnectorLine) property. Also this connector line can be customized using [`ConnectorHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorHeight), [`ConnectorLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle) and [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorRotationAngle) properties.
+You can add a connector line for the adornments using the [`ShowConnectorLine`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowConnectorLine) property. Also, this connector line can be customized using the [`ConnectorHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorHeight), [`ConnectorLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle) and [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorRotationAngle) properties.
 
 
-The following code example shows the how to add connector line:
+The following code example shows how to add a connector line:
 
 {% tabs %}
 
@@ -306,7 +307,7 @@ chart.Series.Add(series);
 
 [`ConnectorType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`Bezier`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ConnectorMode.html). This property is only for AccumulationSeries like PieSeries and DoughnutSeries.
 
-The following code example shows the how to specify connector type:
+The following code example shows how to specify the connector type:
 
 {% tabs %}
 
@@ -355,11 +356,11 @@ chart.Series.Add(series);
 |--|--|
 | ![Connector Line in WPF Chart](Adornments-Images/Adorn_Line.png)| ![Bezier in WPF Chart](Adornments-Images/Adorn_Bezier.png)|
 
-N> ConnectorType.StraightLine behavior does not applicable for 3D series.
+N> ConnectorType.StraightLine behavior is not applicable for 3D series.
 
 ### Customization of ConnectorLine Appearance
 
-You can define the style for the connector line using [`ConnectorLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle) properties.
+You can define the style for the connector line using the [`ConnectorLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle) property.
 
 {% tabs %}
 
@@ -398,9 +399,9 @@ You can define the style for the connector line using [`ConnectorLineStyle`](htt
 
 ## Applying Series Brush
 
-The [`UseSeriesPalette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_UseSeriesPalette) property is used to apply the series color to background color of data marker labels.
+The [`UseSeriesPalette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_UseSeriesPalette) property is used to apply the series color to the background color of the data marker labels.
 
-For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior color will be reflected in adornment background.
+For Accumulation series like Pie, Doughnut, Funnel and Pyramid, the segment interior color will be reflected in the adornment background.
 
 {% tabs %}
 
@@ -429,9 +430,9 @@ ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
 
 ## Smart Labels
 
-When you have more datapoints in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart3D provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_EnableSmartLabels) property.
+When you have more data points in Pie or Doughnut series, the adornment labels might overlap with each other. SfChart3D provides built-in support to avoid this overlapping by using the [`EnableSmartLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_EnableSmartLabels) property.
 
-The following code example demonstrates the EnableSmartLabels property:
+The following code example demonstrates the `EnableSmartLabels` property:
 
 {% tabs %}
 

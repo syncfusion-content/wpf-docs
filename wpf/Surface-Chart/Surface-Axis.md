@@ -9,7 +9,7 @@ documentation: ug
 
 # Surface Axis in WPF Surface Chart (SfSurfaceChart)
 
-SurfaceAxis is used to locate a data point inside the surface area. In surface, you require three axis to locate data points, such as X-Axis, Y-Axis and Z-Axis. You can define axis in surface using the following code example. If you do not define the axis, then it automatically takes the default axis with default properties values.
+SurfaceAxis is used to locate a data point inside the surface area. On a surface, you require three axes to locate data points, such as the X-Axis, Y-Axis, and Z-Axis. You can define axes in a surface using the following code example. If you do not define the axes, then it automatically takes the default axis with default property values.
 
 XAML:
 
@@ -55,9 +55,9 @@ surface.ZAxis = new SurfaceAxis();
 
 {% endtabs %}
 
-## Axis customization.
+## Axis customization
 
-Axis of the surface chart can be customized using the following properties.
+The axes of the surface chart can be customized using the following properties.
 
 The following APIs are used to customize the surface axis. 
 
@@ -115,7 +115,7 @@ Gets or sets the double that represents the axis tick line size. <br/><br/></td>
 <tr>
 <td>
 {{'[ShowGridLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_RangePadding)'| markdownify }}<br/><br/></td><td>
-Gets or sets bool that represent whether displaying the axis grid lines. <br/><br/></td></tr>
+Gets or sets a bool that represents whether to display the axis grid lines. <br/><br/></td></tr>
 <tr>
 <td>
 {{'[GridLineStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_GridLineStroke)'| markdownify }}<br/><br/></td><td>
@@ -188,36 +188,36 @@ The following code snippet explains how to customize the axis using the above pr
 
 {% highlight c# %}
 
-            chart = new SfSurfaceChart();
-            chart.Type = SurfaceType.Surface;
-            chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
-            chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
-            chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
-            chart.XBindingPath = "X";
-            chart.YBindingPath = "Y";
-            chart.ZBindingPath = "Z";
+chart = new SfSurfaceChart();
+chart.Type = SurfaceType.Surface;
+chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
+chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
+chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
+chart.XBindingPath = "X";
+chart.YBindingPath = "Y";
+chart.ZBindingPath = "Z";
 
-            SurfaceAxis xAxis = new SurfaceAxis();
-            xAxis.Header = "X-Axis";
-            chart.XAxis = xAxis;
+SurfaceAxis xAxis = new SurfaceAxis();
+xAxis.Header = "X-Axis";
+chart.XAxis = xAxis;
 
-            xAxis.GridLineStroke = new SolidColorBrush(Colors.Red);
-            xAxis.GridLineThickness = 1;
-            xAxis.SmallTicksPerInterval = 1;           
-            xAxis.AxisLineStyle = grid.Resources["lineStyle"] as Style;
-            xAxis.LabelTemplate = grid.Resources["labelTemplate"] as DataTemplate;
+xAxis.GridLineStroke = new SolidColorBrush(Colors.Red);
+xAxis.GridLineThickness = 1;
+xAxis.SmallTicksPerInterval = 1;
+xAxis.AxisLineStyle = grid.Resources["lineStyle"] as Style;
+xAxis.LabelTemplate = grid.Resources["labelTemplate"] as DataTemplate;
 
-            SurfaceAxis yAxis = new SurfaceAxis();
-            yAxis.Header = "Y-Axis";
-            chart.YAxis = yAxis;
+SurfaceAxis yAxis = new SurfaceAxis();
+yAxis.Header = "Y-Axis";
+chart.YAxis = yAxis;
 
-            yAxis.HeaderTemplate = grid.Resources["headerTemplate"] as DataTemplate;
+yAxis.HeaderTemplate = grid.Resources["headerTemplate"] as DataTemplate;
 
-            SurfaceAxis zAxis = new SurfaceAxis();
-            zAxis.Header = "Z-Axis";
-            chart.ZAxis = zAxis;
+SurfaceAxis zAxis = new SurfaceAxis();
+zAxis.Header = "Z-Axis";
+chart.ZAxis = zAxis;
 
-            grid.Children.Add(chart);
+grid.Children.Add(chart);
 
 {% endhighlight %}
 

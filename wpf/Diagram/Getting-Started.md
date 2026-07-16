@@ -11,7 +11,7 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfdiagram) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfdiagram) section to get the list of assemblies or NuGet package that need to be added as a reference to use the control in any application.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
@@ -21,7 +21,7 @@ The following section helps you to build your application with [WPF Diagram](htt
 
 ## Creating the project
 
-Create new WPF project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
+Create a new WPF project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
 
 ### Adding control via Designer
 
@@ -50,7 +50,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial 
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SfDiagram_WPF.MainWindow"
         mc:Ignorable="d" Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <!--Initializes the SfDiagram in XMAL window-->
+        <!--Initializes the SfDiagram in XAML window-->
         <syncfusion:SfDiagram x:Name="diagram"/>
     </Grid> 
 </Window>
@@ -75,6 +75,8 @@ To add control manually in C#, do the following steps:
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Diagram;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace SfDiagram_WPF
 {   
@@ -115,7 +117,7 @@ Let us create a simple flow chart using SfDiagram.
 
 ### Initialize the Diagram
 
-The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram in XAML as shown in the following code example.
+The SfDiagram resides in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram in XAML as shown in the following code example.
 
 {% tabs %}
 
@@ -138,7 +140,7 @@ SfDiagram diagram =new SfDiagram();
 
 ### Initialize nodes and connectors
 
-To initialize the nodes and connectors properties of the SfDiagram, the Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. 
+To initialize the nodes and connectors properties of the SfDiagram, the Nodes property is assigned with the NodeCollection, an ObservableCollection of Node. 
 The Connectors property is assigned with the ConnectorCollection, that is, ObservableCollection of the Connector.
 
 {% tabs %}
@@ -171,11 +173,11 @@ diagram.Connectors = new ConnectorCollection();
 
 ### Add nodes
 
-Let us create and add a NodeViewModel with height, width, shape, shape style, specific position, size, and annotation.
+Let us create and add a NodeViewModel with height, width, shape, shape style, specific position, and annotation.
 
 #### Creating a node
 
-Creating NodeViewModel with specified height and width at a specific position.
+Creating a NodeViewModel with specified height and width at a specific position.
 
 {% tabs %}
 {% highlight xaml %}
@@ -196,7 +198,7 @@ NodeViewModel Begin = new NodeViewModel()
 
 #### Adding shape and style to node
 
-We have provided set of basic shapes for Diagram as ResourceDictionary. To use the built-in shapes, Shapes dictionary should be merged in the application.  
+We have provided a set of basic shapes for Diagram as ResourceDictionary. To use the built-in shapes, Shapes dictionary should be merged into the application.  
 Please refer to [Shapes](https://help.syncfusion.com/wpf/diagram/shapes) to know about built-in Shapes.
  
 {% tabs %}
@@ -340,7 +342,7 @@ You can add multiple nodes with different shapes into diagram as NodeViewModel.
 NodeViewModel Begin = AddNode(300, 60, 120, 40, "Begin", "Ellipse");
 //Create Process node
 NodeViewModel Process = AddNode(300, 140, 120, 60, "Process", "PredefinedProcess");
-//Creae End node
+//Create End node
 NodeViewModel End = AddNode(300, 225, 40, 40, "End", "Ellipse");
 
 //Add Node to Nodes property of the Diagram
@@ -379,11 +381,11 @@ Finally, all the nodes are added to diagram and they will be as follows.
 
 ### Add connectors
 
-Connector is to make connection or link between two nodes, ports, and points.
+A connector is to make connection or link between two nodes, ports, and points.
 
-#### Create connector With source node and target node 
+#### Create connector with source node and target node 
 
-Here, the `SourceNodeID` and `TargetNodeID` properties of the Connector are used. These properties will be assigned with the `ID` property of the node.
+Here, the `SourceNodeID` and `TargetNodeID` properties of the Connector are used. These properties will be assigned with the `ID` property of the node. The default connector type is Orthogonal.
 
 {% tabs %}
 {% highlight xaml %}
@@ -400,7 +402,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 #### Adding connector geometry style
 
-Here, the `ConnectorGeometryStyle` property of the Connector are used to customize the appearance of the line. And, `SourceDecoratorStyle` and `TargetDecoratorStyle` properties are used to customize the appearance of the decorators. 
+Here, the `ConnectorGeometryStyle` property of the Connector is used to customize the appearance of the line. And, `SourceDecoratorStyle` and `TargetDecoratorStyle` properties are used to customize the appearance of the decorators. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -511,7 +513,7 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 
 #### Define SymbolSource
 
-`SymbolSource` is the property of stencil, which is a collection of objects like symbol, node, connector, and more. Based on the SymbolSource, the Stencil will populate the Symbols. And the `SymbolGroupProvider` groups the symbols into SymbolGroup based on the `MappingName` property.
+`SymbolSource` is the property of stencil, which is a collection of objects like symbol, node, connector, and more. Based on the SymbolSource, the Stencil will populate the Symbols. And the `SymbolGroupProvider` groups the symbols into SymbolGroups based on the `MappingName` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -594,7 +596,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
     SourcePoint = new Point(100, 100),
     TargetPoint = new Point(200, 200),
     Key = "Connectors",
-    Segments = new ConnectorSegments()
+    Segments = new ObservableCollection<IConnectorSegment>()
     {
         new StraightSegment()
     }
@@ -692,7 +694,7 @@ xmlns:stencil="clr-namespace:syncfusion.UI.Xaml.Diagram.Stencil;assembly=syncfus
 
     <!--Style for Symbol Group-->
     <Style TargetType="stencil:SymbolGroup">
-        <Setter Property="FontFamily" Value="Regular"/>
+        <Setter Property="FontFamily" Value="Segoe UI"/>
         <Setter Property="Background" Value="#ffffff"/>
         <Setter Property="Foreground" Value="#222222"/>
         <Setter Property="FontSize" Value="14"/>
@@ -736,11 +738,11 @@ For more information about stencil, please [refer](https://help.syncfusion.com/w
 
 ## Organization layout
 
-WPF Diagram (SfDiagram) provides support to auto-arrange the nodes in the diagram area that is referred as Layout.
+WPF Diagram (SfDiagram) provides support to auto-arrange the nodes in the diagram area that is referred to as a Layout.
 
 #### Business object (employee information)
 
-Define employee information as collection of data. The following code example shows the employee information whose, `EmpId` is used as an unique identifier and `ParentId` is used to identify the person to whom an employee report to, in the organization.
+Define employee information as collection of data. The following code example shows the employee information whose, `EmpId` is used as a unique identifier and `ParentId` is used to identify the person to whom an employee reports to, in the organization.
 
 {% tabs %}
 {% highlight xaml %}
@@ -798,7 +800,6 @@ You can configure the above “Employee Information” with diagram, so that the
     <!--Map the DataSourceSettings class with Diagram-->
     <syncfusion:SfDiagram x:Name="sfdiagram" 
                           DataSourceSettings="{StaticResource DataSourcesettings}"/>   
-</syncfusion:SfDiagram> 
 {% endhighlight %}
 
 {% highlight c# %}
@@ -917,7 +918,7 @@ For more information about Layout, [refer](https://help.syncfusion.com/wpf/diagr
 
 ## Theme
 
-SfDiagram supports various built-in themes. Refer to the below links to apply themes for the SfDiagram,
+SfDiagram supports various built-in themes. Refer to the links below to apply themes to the SfDiagram,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

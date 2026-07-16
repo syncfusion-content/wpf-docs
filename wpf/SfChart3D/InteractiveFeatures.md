@@ -13,7 +13,7 @@ documentation: ug
 
 ## Dynamic rotation
 
-3D charts allow us to view the best possible view of data dynamically using a mouse or touch device. To enable dynamic rotation, set the [`EnableRotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_EnableRotation) property to true.
+3D charts allow you to view the best possible view of data dynamically using a mouse or touch device. To enable dynamic rotation, set the [`EnableRotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_EnableRotation) property to true.
 
 The following code example illustrates how to enable the dynamic rotation:
 
@@ -29,9 +29,9 @@ The following code example illustrates how to enable the dynamic rotation:
  
 ## Segment Selection
 
-To enable segment selection in a 3D chart, set the SegmentSelectionBrush property in chart series.
+To enable segment selection in a 3D chart, set the `SegmentSelectionBrush` property of the chart series.
 
-The following code example illustrates how to set the selection brush for individual series. For data refer to the Series category in 3D charts.
+The following code example illustrates how to set the selection brush for individual series. For data, refer to the Series category in 3D charts.
 
 {% tabs %}
 
@@ -92,9 +92,9 @@ The following screenshot illustrates the result of the above code example.
 
 ## Series Selection
 
-Series selection support is used to highlight the series programmatically or by user interaction. Also you can get a series SelectedIndex, PreviousSelectedIndex value in SelectionChanged event arguments. 
+Series selection support is used to highlight the series programmatically or by user interaction. You can also get the series SelectedIndex and PreviousSelectedIndex values in the SelectionChanged event arguments. 
 
-The following code example can be used to set series selection in a SfChart3D.
+The following code example can be used to set series selection in SfChart3D.
 
 {% tabs %}
 

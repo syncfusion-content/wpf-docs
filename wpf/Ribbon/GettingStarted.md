@@ -2,17 +2,18 @@
 layout: post
 title: Getting Started with WPF Ribbon control | Syncfusion®
 description: Learn here about getting started with Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
+
 # Getting Started with WPF Ribbon
 
-This section explains how to implement a similar UI as Microsoft Outlook using Ribbon. 
+This section explains how to implement a similar UI as Microsoft Outlook using Ribbon.
 
 ## Add ribbon
 
-There are several ways to add Syncfusion<sup>®</sup> control in to Visual Studio WPF project, the following steps will helps to add a Ribbon control through XAML Code.
+There are several ways to add Syncfusion<sup>®</sup> control in to Visual Studio WPF project, the following steps will help you add a Ribbon control through XAML Code.
 
 * Create a WPF project in Visual Studio and refer the following assemblies.
 
@@ -72,7 +73,7 @@ public partial class MainWindow : RibbonWindow
 {% highlight VB %}
 
 Imports Syncfusion.Windows.Tools.Controls
-Public class As partial
+Public Class MainWindow : Inherits RibbonWindow
 
 {% endhighlight %}
 
