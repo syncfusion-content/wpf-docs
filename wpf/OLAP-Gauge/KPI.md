@@ -9,7 +9,7 @@ documentation: ug
 
 # KPI in WPF Olap Gauge
 
-The OLAP gauge supports displaying Key Performance Indicators (KPI) from the OLAP cube. KPI value is represented with the help of _Pointers_ and KPI goal is represented with the help of _Markers_. The KPI status and KPI trend values are represented through user friendly images such as traffic light, road signs, and standard arrow in the OLAP gauge of WPF. Each gauge represents a member against one KPI combination.
+The OLAP gauge supports displaying Key Performance Indicators (KPIs) from the OLAP cube. The KPI value is represented with the help of _Pointers_ and the KPI goal is represented with the help of _Markers_. The KPI status and KPI trend values are represented through user-friendly images such as traffic lights, road signs, and standard arrows in the WPF OLAP gauge. Each gauge represents a member against one KPI combination.
 
 ![WPF OLAPGauge displays KPI from the OLAP cube](KPI_images/KPI-image.png)
 

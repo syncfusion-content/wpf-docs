@@ -41,7 +41,7 @@ Me.OlapGauge1.RowsCount = 2
 
 ## Gauge header
 
-The gauge header is the combination of details about the measure and KPI. The header components of the OLAP gauge can be hidden by using the `ShowGaugeHeaders` property as specified in the following code snippet.
+The gauge header is the combination of details about the measure and the KPI. The header components of the OLAP gauge can be hidden by using the `ShowGaugeHeaders` property as specified in the following code snippet.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ OlapGauge1.ShowGaugeHeaders = False
 
 ## Gauge label
 
-The visibility of gauge labels that are displayed inside the gauge can be toggled with the help of `ShowGaugeLabels` property. The following code snippet shows how to hide labels of the OLAP gauge.
+The visibility of gauge labels that are displayed inside the gauge can be toggled with the help of the `ShowGaugeLabels` property. The following code snippet shows how to hide the labels of the OLAP gauge.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip in WPF Olap Gauge
 
-The OLAP gauge provides the information about values when the mouse pointer is moved over the gauge.
+The OLAP gauge provides information about the values when the mouse pointer is moved over the gauge.
 
 ## Pointer tooltip
 

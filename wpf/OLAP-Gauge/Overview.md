@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About WPF Olap Gauge control | Syncfusion
+title: About the WPF Olap Gauge control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Olap Gauge control, its elements and more details.
 platform: wpf
 control: OLAP Gauge
