@@ -40,7 +40,7 @@ The user can close the window by using the Close button at the top-right corner 
 
 The window can be resized by clicking and dragging the resize border.
 
-ChromelessWindow supports the following four resize modes (see the WPF [`ResizeMode`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.resizemode) enumeration). The default value is `CanResize`.
+ChromelessWindow supports the following four resize modes. The default value is `CanResize`.
 
 * `NoResize`
 * `CanMinimize`
