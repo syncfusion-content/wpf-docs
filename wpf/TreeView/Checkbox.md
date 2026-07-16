@@ -219,11 +219,11 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-work-wit
 
 ## CheckBox State
 
-SfTreeView process [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_IsChecked) property (checkbox state) of `TreeViewNode` based on [CheckBoxMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) property. `CheckBoxMode` defines how parent and child node's checkbox state updates when user check or un-check the node. By default, its value is `None`. Checkbox contains the following three states:
+The SfTreeView processes the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_IsChecked) property (checkbox state) of `TreeViewNode` based on the [CheckBoxMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) property. `CheckBoxMode` defines how parent and child node checkbox states are updated when the user checks or unchecks a node. The default value is `None`. The `CheckBoxMode` enum contains the following three values:
 
-* `None`: Check and uncheck are updates only in the view, but it will not affect the CheckedItems collection.
-* `Individual`: Checkbox state affect individual node only, and it does not affect the parent node or child nodes checkbox state or  `IsChecked` property value.
-* `Recursive`: Check and uncheck the node value affects the parent and child nodes checkbox state. For example, If parent nodes checkbox state is check/uncheck then the all of its child nodes checkbox state is check/uncheck. If all the child nodes are check/uncheck within the parent node, then parent node will be check/uncheck. If any of the child node is check, then the parent node will be in intermediate state.
+* `None` — Check and uncheck are updated only in the view, but they do not affect the `CheckedItems` collection.
+* `Individual` — The checkbox state affects only the individual node; it does not affect the parent or child node checkbox state or the `IsChecked` property value.
+* `Recursive` — Checking or unchecking a node affects the parent and child node checkbox states. For example, if a parent node is checked or unchecked, all of its child nodes are checked or unchecked. If all child nodes within a parent are checked or unchecked, the parent node is also checked or unchecked. If some child nodes are checked and others are not, the parent node is in an intermediate state.
 
 {% tabs %}
 {% highlight xaml %}
@@ -238,7 +238,7 @@ sfTreeView.CheckBoxMode = CheckBoxMode.Recursive;
 
 ### Get or Set Checked Items in Bound Mode
 
-You can get or set list of items to be checked or un-checked by using [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property.
+You can get or set the list of items to be checked or unchecked by using the [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property.
 
 When the [CheckBoxMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) is other than `None`, the individual `TreeViewNode` or collection of `TreeViewNode` can be checked from the code by setting the  `CheckedItems`, or adding items to the `CheckedItems` property based on the `CheckBoxMode`.
 
@@ -273,7 +273,7 @@ private void SfTreeView_NodeChecked(object sender, NodeCheckedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> `NodeChecked` event occurs only in UI interactions. You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
+N> The `NodeChecked` event occurs only on UI interactions. You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its key feature highlights. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.
 
 ### Limitations
 

@@ -167,10 +167,10 @@ We can assign the `CustomEditor` to any individual property by name of the prope
 {% tabs %}
 {% highlight C# %}
 
-//CustomEditor for the specfic(EmailID) property
+//CustomEditor for the specific(EmailID) property
 [Editor("EmailID", typeof(EmailEditor))]
 
-//Custom Editor for the multiple(Tnteger type) properties
+//Custom Editor for the multiple(Integer type) properties
 [Editor(typeof(int), typeof(IntegerEditor))]
 public class Employee {
     public string EmailID { get; set; }
@@ -217,7 +217,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 Here, `EmailID` property value editor changed from `TextBox` to  `MaskedEdit` control with email id mask. Also, we assigned the `IntegerEditor` for the integer type properties, so it applied to the `Experience` and `Age` properties. Then, the value editors for the `Experience` and `Age` property is changed from `NumericTextBox` to `Updown` control.
 
-![Property grid with specified custom editors](CustomEditor-support_images/CustomEditor-Attribute.png)
+![Property grid with specified custom editors](CustomEditor-support_images/wpf-propertygrid-customeditor-attribute.png)
 
 ## Assigning a Custom Editor using Collection
 
