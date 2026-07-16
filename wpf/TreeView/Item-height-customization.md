@@ -9,7 +9,7 @@ documentation: ug
 
 # Item Height Customization in WPF TreeView (SfTreeView)
 
-The TreeView provides various options to customize the height of items. To achieve this customization, please walkthrough the below sections:
+The TreeView provides various options to customize the height of items. Walk through the following sections to achieve this customization.
 
 ## Customize Item Height
 
@@ -53,7 +53,7 @@ private void SfTreeView_QueryNodeSize(object sender, Syncfusion.UI.Xaml.TreeView
 {
     if (e.Node.Level == 0)
     {
-        //Returns speified item height for items.
+        //Returns specified item height for items.
         e.Height = 50;
         e.Handled = true;
     }
@@ -105,4 +105,4 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-autofit-
 
  * Define the size of the image when loading image in the [SfTreeView.ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate). Because, it does not return actual measured size when measuring before item layout.
  
-N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its key feature highlights. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.

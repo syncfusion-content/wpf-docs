@@ -13,7 +13,7 @@ We can update the value of property item either immediately when the editor prop
 
 ## Binding modes 
 
- If the property `UpdateSourceMode` is `Immediately`, value of property item will be updated immediately when the editor property changes. Also, if the property `UpdateSourceMode` is `ReturnOrLostFocus`, value of property item will be updated only when editor lost its focus or when enter key is pressed.
+ When the `UpdateSourceMode` property is `Immediately`, the value of the property item will be updated immediately when the editor property changes. When the `UpdateSourceMode` property is `ReturnOrLostFocus`, the value of the property item will be updated only when the editor loses its focus or when the Enter key is pressed.
 
 {% tabs %}
 
