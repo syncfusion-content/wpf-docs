@@ -10,8 +10,6 @@ documentation: ug
 
 The ToolBarAdv control is a container for a group of commands or controls that have related functions. Usually it consists of buttons that invoke the commands. ToolBarAdv can be hosted in a `ToolBarTrayAdv` (for static layout) or in a `ToolBarManager` (for docking, floating, and drag-and-drop).
 
-![ToolBarAdv overview](Overview_images/Overview_img1.png)
-
 ## Key features
 
 * [Specifying the position of ToolBarAdv in a ToolBarTrayAdv](Dealing-with-ToolBarAdv-control.md#specifying-the-position-of-toolbaradvs-in-a-toolbartrayadv) – Place each `ToolBarAdv` on a specific `Band` and `BandIndex`.
@@ -29,6 +27,4 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 
-[How to install nuGet packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages#installing-nuget-packages)
-
-
+[How to install nuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)

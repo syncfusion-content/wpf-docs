@@ -14,10 +14,6 @@ The default value is `0`, which implies sharp corners.
 
 N> `AllowsTransparency` must be set to `True` for the rounded corners to be visible. Without it, the non-client area of the window clips the rounded corners.
 
-## Uniform corner radius
-
-To apply the same radius to all four corners, set `CornerRadius` to a single number.
-
 {% tabs %}
 
 {% highlight XAML %}

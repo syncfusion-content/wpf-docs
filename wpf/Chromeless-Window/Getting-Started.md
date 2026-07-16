@@ -16,7 +16,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet packages in a WPF application in the following link:
 
-[How to install nuGet packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
+[How to install NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 The minimum NuGet package required is `Syncfusion.Shared.WPF`. Refer to [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#chromelesswindow) for the list of additional dependent packages and the supported Syncfusion version.
 
@@ -104,7 +104,7 @@ The following sections describe the most common title bar customizations. For a 
 
 ### Title bar background
 
-You can customize the background of the title bar by setting the [TitleBarBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarBackground) property of ChromelessWindow. The default value is `null` (uses the system accent).
+You can customize the background of the title bar by setting the [TitleBarBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarBackground) property of ChromelessWindow.
 
 {% tabs %}
 {% highlight XAML %}
@@ -126,7 +126,7 @@ You can customize the background of the title bar by setting the [TitleBarBackgr
 
 ### Title bar font
 
-The font size of the caption in the title bar can be customized using the [TitleFontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleFontSize) property. The default value is `12` (in device-independent pixels).
+The font size of the caption in the title bar can be customized using the [TitleFontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleFontSize) property. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -148,7 +148,7 @@ The font size of the caption in the title bar can be customized using the [Title
 
 ### Title bar height
 
-You can customize the caption height by setting the [TitleBarHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarHeight) property of ChromelessWindow. The default value is `30` (in device-independent pixels).
+You can customize the caption height by setting the [TitleBarHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarHeight) property of ChromelessWindow.
 
 {% tabs %}
 {% highlight XAML %}

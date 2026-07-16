@@ -86,7 +86,7 @@ This section describes the properties that can be used to customize the title ba
 
 ## Customizing the font size
 
-The font size of the ChromelessWindow title bar can be changed by using the [`TitleFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleFontSize) property. The default value is `12` (in device-independent pixels).
+The font size of the ChromelessWindow title bar can be changed by using the [`TitleFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleFontSize) property.
 
  {% tabs %}
 

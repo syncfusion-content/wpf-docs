@@ -58,7 +58,6 @@ There are three different `AutoCompleteMode` values.
 
 * `None` – No suggestion is made. This is the default value.
 * `Suggest` – Suggestions are displayed in a drop-down menu based on the typed text.
-* `Append` – The first matching item is appended to the text in the editor.
 
 ### Suggest
 

@@ -30,7 +30,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Sh
 
 {% endtabs %}
 
-For example, use the following code for a `TitleBarTemplate`. Place this template in `App.xaml` so it can be referenced as a static resource.
+For example, use the following code for a `TitleBarTemplate`.
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Sh
 
 {% endtabs %}
 
-For example, use the following code for a `MaximizeButtonTemplate`. Place the template in `App.xaml`.
+For example, use the following code for a `MaximizeButtonTemplate`.
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ This default style needs to be included in the `App.xaml` file of your applicati
 
 N> All the templates should be written in `App.xaml`. To register the default style, merge the downloaded `ResourceDictionary` in `App.xaml` as shown below.
 
-The below example is illustrated to override the ChromelessWindow’s full style 
+The below example is illustrated to override the ChromelessWindow's full style 
 
 {% tabs %}
 

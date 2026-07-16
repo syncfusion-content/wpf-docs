@@ -20,7 +20,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 
-[How to install nuGet packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages#installing-nuget-packages)
+[How to install nuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Creating the project
 
@@ -238,7 +238,7 @@ Point<br/><br/></td></tr>
 <tr>
 <td>
 ControlsResourceDictionary<br/><br/></td><td>
-Gets or sets resource dictionary in which ToolBarAdv will look up for Framework element’s styles.<br/><br/></td><td>
+Gets or sets resource dictionary in which ToolBarAdv will look up for Framework element's styles.<br/><br/></td><td>
 Dependency Property<br/><br/></td><td>
 Resource Dictionary<br/><br/></td></tr>
 <tr>
