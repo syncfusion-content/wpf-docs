@@ -75,11 +75,8 @@ More than one category can be mapped to a column by assigning multiple values to
 
 <kanban:SfKanban>
     <kanban:SfKanban.Columns>
-        <kanban:KanbanColumn Title="In Progress">
-            <kanban:KanbanColumn.Categories>
-                <sys:String>In Progress</sys:String>
-                <sys:String>Validated</sys:String>
-            </kanban:KanbanColumn.Categories>
+        <kanban:KanbanColumn Title="In Progress"
+                             Categories="In Progress,Validated">
         </kanban:KanbanColumn>
     </kanban:SfKanban.Columns>
 </kanban:SfKanban>
@@ -100,8 +97,6 @@ kanban.Columns.Add(progressColumn);
 
 {% endhighlight %}
 {% endtabs %}
-
-N> In the XAML snippet, add `xmlns:sys="clr-namespace:System;assembly=mscorlib"` to the root element so the `sys:String` reference resolves.
 
 ![Multiple category support for a column in WPF Kanban](SfKanban_images/kanban_board_multiple_category_column.png)
 
@@ -148,11 +143,8 @@ The columns can be expanded or collapsed by tapping the toggle button placed at 
 <kanban:SfKanban>
     <kanban:SfKanban.Columns>
         <kanban:KanbanColumn Title="In Progress"
-                             IsExpanded="False">
-            <kanban:KanbanColumn.Categories>
-                <sys:String>In Progress</sys:String>
-                <sys:String>Validated</sys:String>
-            </kanban:KanbanColumn.Categories>
+                             IsExpanded="False"
+                             Categories="In Progress,Validated">
         </kanban:KanbanColumn>
     </kanban:SfKanban.Columns>
 </kanban:SfKanban>
@@ -172,8 +164,6 @@ kanban.Columns.Add(kanbanColumn);
 
 {% endhighlight %}
 {% endtabs %}
-
-N> In the XAML snippet, add `xmlns:sys="clr-namespace:System;assembly=mscorlib"` to the root element so the `sys:String` reference resolves.
 
 ![Expand and Collapse support for a column in WPF Kanban](SfKanban_images/CollapsingColumn.png)
 

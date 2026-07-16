@@ -529,6 +529,7 @@ public class SortingViewModel
 
 ![index-based-sorting-in-wpf-kanban](SfKanban_images/index-based-sorting-in-wpf-kanban.gif)
 
+N>
 View the complete sample on [GitHub](https://github.com/SyncfusionExamples/wpf-kanban-examples/tree/master/IndexBasedSorting).
 
 N>

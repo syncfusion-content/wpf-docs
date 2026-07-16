@@ -12,7 +12,7 @@ The following section provides assistance to create a simple Kanban application 
 
 ## Creating an Application
 
-1. Create a [WPF desktop app for C# and .NET 6 or later](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0) using Visual Studio.
+1. Create a WPF desktop app for C# and .NET 6 or later.
 
 ## Adding the SfKanban Reference
 
