@@ -2,7 +2,7 @@
 layout: post
 title: Installation Errors in WPF - Syncfusion
 description: Learn here about the common installation errors and solution to those errors in Syncfusion WPF Components installation.
-platform: WPF
+platform: wpf
 control: Installation and Deployment
 documentation: ug
 
