@@ -11,7 +11,7 @@ documentation: ug
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Server accelerates WPF application development by providing deep knowledge directly in your AI-powered IDE. [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro) (MCP) integration enables quick access to documentation, API references, and code-generation features from within the development environment.
 
-These tools speed up development and reinforce best practices for Syncfusion component integration.
+These tools speed up development and reinforce best practices for Syncfusion controls integration.
 
 ## Key Benefits
 
@@ -28,7 +28,7 @@ Before beginning, ensure the following prerequisites are met:
 - **.NET Framework** version 4.6 or higher (or .NET Core 3.0+)
 - A **compatible MCP client** (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, JetBrains, etc.)
 - An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://syncfusion.com/account/api-key)
-- A **Blazor application** (existing or new); see [Quick Start](https://blazor.syncfusion.com/documentation/getting-started/blazor-web-app)
+- A **WPF application** (existing or new); see [ WPF application that includes Syncfusion WPF](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
 - An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
   - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)  
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)  
@@ -59,7 +59,7 @@ Create a configuration file in your project folder to install the server for you
   "servers": {
     "sf-wpf-mcp": {
       "type": "stdio",
-      "command": "node",
+      "command": "dnx",
       "args": ["Syncfusion.WPF.MCP"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
@@ -79,7 +79,7 @@ Create a configuration file in your project folder to install the server for you
   "servers": {
     "sf-wpf-mcp": {
       "type": "stdio",
-      "command": "node",
+      "command": "dnx",
       "args": ["Syncfusion.WPF.MCP"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
@@ -100,7 +100,7 @@ Create a configuration file in your project folder to install the server for you
 {
   "mcpServers": {
     "sf-wpf-mcp": {
-      "command": "node",
+      "command": "dnx",
       "args": ["Syncfusion.WPF.MCP"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
@@ -121,7 +121,7 @@ Create a configuration file in your project folder to install the server for you
 {
   "mcpServers": {
     "sf-wpf-mcp": {
-      "command": "node",
+      "command": "dnx",
       "args": ["Syncfusion.WPF.MCP"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
@@ -139,21 +139,13 @@ Create a configuration file in your project folder to install the server for you
 
 **Verifying Installation** Check your editor's MCP Server list for `sf-wpf-mcp` with a **Connected** status to confirm a successful installation.
 
-## Available Tools
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> MCP servers exposes a set of specialized tools for retrieving different types of product knowledge and resources. Tools can be called directly for specific information, or an assistant can choose the most relevant tool automatically.
-
-| # | Tool | Description |
-|---|------|-------------|
-| 1 | `search_docs` | Search Syncfusion WPF documentation for features, examples, and configuration help. |
-
 ## Common use cases
 
 The examples below showcase how the different MCP tools handle real-world WPF development scenarios. Tools can be invoked directly, as shown in the examples below, for specific needs. Alternatively, an AI assistant can automatically select the most appropriate tool based on the request.
 
 **Get Started**
 
-Use `search_docs` to get contextual guidance, code snippets, and configuration examples for any component.
+Use `search_docs` to get contextual guidance, code snippets, and configuration examples for any control.
 
 {% promptcards %}
 {% promptcard Grid with Sorting %}
@@ -169,7 +161,7 @@ Use `search_docs` to get contextual guidance, code snippets, and configuration e
 
 **Implement Features**
 
-Get step-by-step help for adding specific features to components that are already in the project.
+Get step-by-step help for adding specific features to controls that are already in the project.
 
 {% promptcards %}
 {% promptcard Grid Export %}
@@ -179,7 +171,7 @@ Get step-by-step help for adding specific features to components that are alread
 
 {% promptcards %}
 {% promptcard Schedule Features %}
-#search_docs How do I enable drag-and-drop and custom scheduling in the Schedule component?
+#search_docs How do I enable drag-and-drop and custom scheduling in the Schedule control?
 {% endpromptcard %}
 {% endpromptcards %}
 
@@ -206,7 +198,7 @@ To get the most out of the Syncfusion<sup style="font-size:70%">&reg;</sup> WPF 
 - **Provide Context** - Include applicable versions, expected outcomes, and any requirements or limitations that may affect the request.
 - **Use Descriptive Queries** - Avoid overly brief or ambiguous requests. Providing sufficient detail helps improve the accuracy and relevance of the response.
 - **Stay Consistent** - Keep file organization, naming conventions, and coding standards consistent throughout your WPF project.
-- **Start Fresh for New Topics** - Begin a new chat when switching to a different component or task to maintain clean context.
+- **Start Fresh for New Topics** - Begin a new chat when switching to a different control or task to maintain clean context.
 - **Use Advanced AI Models** - For best results, use **Claude Sonnet 4.5 or higher**. Other compatible models include **GPT-5 and Gemini 3 Pro**. Higher-capability models produce more accurate component implementations.
 - **For Troubleshooting** - Use AI suggestions for common issues; consult the [official documentation](https://blazor.syncfusion.com/documentation/introduction) or [support](https://support.syncfusion.com/support/tickets/create) for complex problems.
 - **Minimize Active Tools** - Limit the number of active MCP tools in your IDE to prevent tool-selection ambiguity and improve response accuracy.
@@ -219,7 +211,7 @@ The table below lists frequently encountered issues and suggested resolutions to
 
 | Issue | Solution |
 |-------|----------|
-| **Server failed to start** | Update to Node.js 18+, verify JSON syntax in the config file, and restart your IDE. |
+| **Server failed to start** | Update to .NET 10 SDK or higher, verify JSON syntax in the config file, and restart your IDE. |
 | **Invalid API key** | Verify your key is active at the [Syncfusion Account Page](https://syncfusion.com/account/api-key). |
 | **Incorrect API key config** | For the file path: verify file location and content. For inline key: check the key is correctly updated. |
 | **Wrong config file location** | VS Code: `.vscode/mcp.json` • Code Studio: `.codestudio/mcp.json` • Cursor: `.cursor/mcp.json` in the workspace root. |
