@@ -13,7 +13,7 @@ Cubic curve segments are used to create curve segments and the curves are config
 
 ## how to create cubic curve segments
 
-To create a Curve line, you should specify the segment as [`CubicCurveSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html).
+To create a cubic curve, you should specify the segment as [`CubicCurveSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
 
 ## How to edit the cubic bezier segments
 
-Cubic bezier segments are annotated with thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control point thumbs which are consisting of dashed lines from source point and target point.
+Cubic bezier segments are annotated with thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control point thumbs which consist of dashed lines from source point and target point.
 
 ![Cubic curve segments](Connector_images/CubicSegment.PNG)
 
