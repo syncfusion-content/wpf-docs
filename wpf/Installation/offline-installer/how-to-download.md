@@ -49,14 +49,14 @@ You should initiate an evaluation if you have already obtained our components th
 
 1. Start your 30-day free trial for WPF from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page in your account.
 
-   > N> You can generate the license key for your active trial products from the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key is mandatory to use our trial products in your application. To learn more about license keys, refer to this [help topic](https://help.syncfusion.com/wpf/licensing/overview). 
+   N> You can generate the license key for your active trial products from the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key is mandatory to use our trial products in your application. To learn more about license keys, refer to this [help topic](https://help.syncfusion.com/wpf/licensing/overview). 
 	
    ![Trial and downloads of Syncfusion Essential Studio](images/start-trial-download.png)
    
 2. To access this page, you must sign up or log in with your Syncfusion account.
 3. Begin your trial by selecting the WPF product. 
 
-   > N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
+   N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
 4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://help.syncfusion.com/wpf/licensing/how-to-generate) here at any time before the trial period expires (as shown in the screenshot below).
 

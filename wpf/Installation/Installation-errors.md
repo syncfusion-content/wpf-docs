@@ -47,7 +47,7 @@ Only a licensed unlock key can unlock a licensed installer. So, to unlock the li
 
 **Error Message:** Your license for Syncfusion Essential Studio for WPF has been expired since *{date}*. Please renew your subscription and try again.
 
-> **Note:** In the actual dialog, *{date}* is replaced with the exact expiration date of your license.
+N> In the actual dialog, *{date}* is replaced with the exact expiration date of your license.
 
 **Online Installer**
 

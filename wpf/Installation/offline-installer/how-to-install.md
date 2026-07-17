@@ -25,7 +25,7 @@ The steps below show how to install the Essential Studio WPF installer.
 
     ![Installer extraction wizard](images/Step-by-Step-Installation_img1.png)
 
-    > N> The Installer Wizard extracts the `syncfusionessentialwpf_{version}.exe` dialog, which displays the package's unzip operation.
+    N> The Installer Wizard extracts the `syncfusionessentialwpf_{version}.exe` dialog, which displays the package's unzip operation.
 
 2. To unlock the Syncfusion offline installer, you have two options:
 
@@ -67,9 +67,9 @@ The steps below show how to install the Essential Studio WPF installer.
 
     ![Advanced options](images/Step-by-Step-Installation_img7.png)
 
-    > N> From the 2021 Volume 1 release, Syncfusion has added the option to uninstall previous versions from 18.1 while installing the new version.
+    N> From the 2021 Volume 1 release, Syncfusion has added the option to uninstall previous versions from 18.1 while installing the new version.
 
-    > N> If any version is selected to uninstall, a confirmation screen will appear. If **Continue** is selected, the **Progress** screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
+    N> If any version is selected to uninstall, a confirmation screen will appear. If **Continue** is selected, the **Progress** screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
 
     **Confirmation Alert**
 
@@ -83,7 +83,7 @@ The steps below show how to install the Essential Studio WPF installer.
 
     ![Installing wizard](images/Step-by-Step-Installation_img5.png)
 
-    > N> The **Completed** screen is displayed once the WPF product is installed. If any version is selected to uninstall, the **Completed** screen will display both install and uninstall status.
+    N> The **Completed** screen is displayed once the WPF product is installed. If any version is selected to uninstall, the **Completed** screen will display both install and uninstall status.
 
     ![Completed wizard](images/Step-by-Step-Installation_img10.png)
 
@@ -108,13 +108,13 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     **Arguments:** `"installer file path\SyncfusionEssentialStudio(platform)_{version}.exe" /Install silent /UNLOCKKEY:"(product unlock key)" [/log "{Log file path}"] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]`
 
-    > N> Arguments inside square brackets are optional.
+    N> Arguments inside square brackets are optional.
 
     **Example:** `"D:\Temp\syncfusionessentialwpf_x.x.x.x.exe" /Install silent /UNLOCKKEY:"product unlock key" /log "C:\Temp\EssentialStudio_Platform.log" /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true`
 
 7. Essential Studio for WPF is installed.
 
-    > N> `x.x.x.x` should be replaced with the Essential Studio version, and the Product Unlock Key should be replaced with the Unlock Key for that version.
+    N> `x.x.x.x` should be replaced with the Essential Studio version, and the Product Unlock Key should be replaced with the Unlock Key for that version.
 
 ### Command Line Uninstallation
 
