@@ -15,7 +15,7 @@ This section explains how to create an interactive code editor application like 
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#edit-control) section for the list of assemblies or NuGet packages that need to be added as references to use the control in any application. The minimum NuGet package required is `Syncfusion.Edit.WPF`.
 
-Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuGet packages in a WPF application.
+Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing NuGet packages in a WPF application.
 
 ## Creating a simple application with EditControl
 
@@ -240,7 +240,7 @@ The [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.Edi
 The [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) has built-in syntax highlighting support for the following languages:
 
 * C
-* CSharp
+* C Sharp
 * Custom
 * Delphi
 * HTML
