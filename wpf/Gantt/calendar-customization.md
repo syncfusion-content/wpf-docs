@@ -15,7 +15,7 @@ This feature allows you to set your own schedule for the entire project. Using t
 
 You can use this feature when you want to change the schedule as needed. For example, if April to March is your financial year, you can set this as your fiscal year and schedule the tasks accordingly. 
 
-You can also use this to schedule the works that have different week cycle. For example if your organization follows the week cycle from Wednesday to Tuesday, you can achieve this using calendar Customization feature.
+You can also use this to schedule tasks that have a different week cycle. For example, if your organization follows the week cycle from Wednesday to Tuesday, you can achieve this using the Calendar Customization feature.
 
 ## Properties
 
@@ -43,24 +43,24 @@ Enum</td><td>
 N/A</td></tr>
 <tr>
 <td>
-{{'[IsFYNumberingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_IsFiscalYearNumberingEnabled)'| markdownify }}</td><td>
-Gets or sets the Fiscal Year Numbering. If this property is changed, it will be reflected in the schedule.By default FY Numbering is set to false.</td><td>
+{{'[IsFiscalYearNumberingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_IsFiscalYearNumberingEnabled)'| markdownify }}</td><td>
+Gets or sets the Fiscal Year Numbering. If this property is changed, it will be reflected in the schedule. By default, FY Numbering is set to `false`.</td><td>
 Dependency Property</td><td>
 bool</td><td>
 N/A</td></tr>
 <tr>
 <td>
 {{'[DefaultStartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_DefaultStartTime)'| markdownify }}</td><td>
-Gets or sets the task starting time in a day. This is based on the {{ '_GanttTime_' | markdownify }} class of the Gantt control.By default this is set to 9.00 AM</td><td>
+Gets or sets the task starting time in a day. This is based on the `TimeSpan` structure. By default, this is set to 9:00 AM.</td><td>
 Dependency Property</td><td>
-GanttTime</td><td>
+TimeSpan</td><td>
 N/A</td></tr>
 <tr>
 <td>
 {{'[DefaultEndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_DefaultEndTime)'| markdownify }}</td><td>
-Gets or sets the task ending time in a day. This is based on the {{ '_GanttTime_' | markdownify }} class of the Gantt control.By default this is set to 6.00 PM</td><td>
+Gets or sets the task ending time in a day. This is based on the `TimeSpan` structure. By default, this is set to 6:00 PM.</td><td>
 Dependency Property</td><td>
-GanttTime</td><td>
+TimeSpan</td><td>
 N/A</td></tr>
 <tr>
 <td>
@@ -92,7 +92,7 @@ bool</td><td>
 N/A</td></tr>
 </table>
 
-N> Currently DefaultStartTime and DefaultEndTime will reflect only in the Chart Background Panel.
+N> Currently, `DefaultStartTime` and `DefaultEndTime` will be reflected only in the Chart Background Panel.
 
 
 ## Adding Calendar Customization to an Application 
@@ -385,7 +385,7 @@ public class ViewModel
         ObservableCollection<IGanttTask> Customer = new ObservableCollection<IGanttTask>();
         Customer.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 4), TaskName = "Identify Consumer of Products", TaskId = 21 });
         Customer.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 3), FinishDate = new DateTime(2010, 9, 6), TaskName = "Identify Customer Requirement", TaskId = 22 });
-        Customer.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 5), FinishDate = new DateTime(2010, 9, 8), TaskName = "Analysing Customer Requiremet with current plan", TaskId = 23 });
+        Customer.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 5), FinishDate = new DateTime(2010, 9, 8), TaskName = "Analysing Customer Requirement with current plan", TaskId = 23 });
         Customer.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 7), FinishDate = new DateTime(2010, 9, 10), TaskName = "Design based on Customer Requirement", TaskId = 24 });
         Customer.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 10), FinishDate = new DateTime(2010, 9, 10), TaskName = "Customer Requirement Analysis Complete", TaskId = 25 });
         Customer[1].Predecessor.Add(new Predecessor { GanttTaskIndex = 21, GanttTaskRelationship = GanttTaskRelationship.FinishToStart });
@@ -407,7 +407,7 @@ public class ViewModel
 
         taskDetails[4].Child = Competitor;
 
-        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 9), FinishDate = new DateTime(2010, 9, 20), TaskName = "Defining Sucess Measure", TaskId = 31 });
+        taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 9), FinishDate = new DateTime(2010, 9, 20), TaskName = "Defining Success Measure", TaskId = 31 });
         ObservableCollection<IGanttTask> Measure = new ObservableCollection<IGanttTask>();
         Measure.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 6), TaskName = "Identify Risks", TaskId = 32 });
         Measure.Add(new TaskDetails { StartDate = new DateTime(2010, 9, 2), FinishDate = new DateTime(2010, 9, 6), TaskName = "Define Key success measures", TaskId = 33 });
@@ -466,7 +466,7 @@ public class ViewModel
         taskDetails[8].Child = Development;
 
         taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 8), FinishDate = new DateTime(2010, 11, 13), TaskName = "Product Review", TaskId = 54 });
-        taskDetails[9].Child.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 8), FinishDate = new DateTime(2010, 11, 10), TaskName = "Product Techincal Review", TaskId = 55 });
+        taskDetails[9].Child.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 8), FinishDate = new DateTime(2010, 11, 10), TaskName = "Product Technical Review", TaskId = 55 });
         taskDetails[9].Child.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 9), FinishDate = new DateTime(2010, 11, 13), TaskName = "Product Cost Review", TaskId = 56 });
 
         taskDetails.Add(new TaskDetails { StartDate = new DateTime(2010, 11, 15), FinishDate = new DateTime(2010, 11, 30), TaskName = "Beta Testing", TaskId = 57 });
@@ -510,11 +510,11 @@ public class ViewModel
 {% endhighlight  %}
 {% endtabs %}
 
-The following image shows Customized Calender and Weekends:
+The following image shows Customized Calendar and Weekends:
 
 ![gantt-control-calendar-customization](Calendar-Customization_images/gantt-control-calendar-customization.png)
 
-Customized Calender
+Customized Calendar
 {:.caption}
 
 #### Samples Link

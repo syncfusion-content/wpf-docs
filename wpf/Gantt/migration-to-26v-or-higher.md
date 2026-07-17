@@ -243,7 +243,7 @@ VS2010
 </tr>
 
 <tr>
-<td>{{'[VisualStyle ](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.VisualStyle.html)'| markdownify }}</td>
+<td>{{'[VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.VisualStyle.html)'| markdownify }}</td>
 <td>Enum</td>
 </tr>
 
@@ -315,28 +315,28 @@ VS2010
 <td>{{'[AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AllowDragDrop)'| markdownify }} </td>
 <td>bool</td>
 <td>true</td>
-<td>Gets or sets a value indicating whether to allow the nodes reordering in Gantt.</td>
+<td>Gets or sets a value indicating whether to allow the reordering of nodes in the Gantt.</td>
 </tr>
 
 <tr>
 <td>{{'[AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AutoExpandMode)'| markdownify }}</td>
 <td>GanttAutoExpandMode</td>
 <td>AllNodesExpanded</td>
-<td>Gets or sets the value which indicates how the nodes to be expanded while loading.</td>
+<td>Gets or sets the value that indicates how the nodes are to be expanded while loading.</td>
 </tr>
 
 <tr>
 <td>{{'[AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AllowSorting)'| markdownify }}</td>
 <td>bool</td>
 <td>false</td>
-<td>Gets or sets a value indicating whether to allow sorting of records in Gantt.</td>
+<td>Gets or sets a value indicating whether to allow sorting of records in the Gantt.</td>
 </tr>
 
 <tr>
 <td>{{'[AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AllowFiltering)'| markdownify }}</td>
 <td>bool</td>
 <td>false</td>
-<td>Gets or sets a value indicating whether to allow filtering of records in Gantt.</td>
+<td>Gets or sets a value indicating whether to allow filtering of records in the Gantt.</td>
 </tr>
 </table>
 
@@ -351,7 +351,7 @@ VS2010
 <tr>
 <td>{{'[TreeGridNodeDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_TreeGridNodeDragStarting)'| markdownify }}</td>
 <td>TreeGridNodeDragStartingEventArgs</td>
-<td>Provides data for the TreeGridNodeDragStarting  event, which occurs when an item is to be dragged.</td>
+<td>Provides data for the TreeGridNodeDragStarting event, which occurs when an item is to be dragged.</td>
 </tr>
 
 <tr>
@@ -363,7 +363,7 @@ VS2010
 <tr>
 <td>{{'[TreeGridNodeDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_TreeGridNodeDrop)'| markdownify }}</td>
 <td>TreeGridNodeDropEventArgs</td>
-<td>Provides data for the TreeGridNodeDrop event, which occurs when an item to be dropped within GanttControl.</td>
+<td>Provides data for the TreeGridNodeDrop event, which occurs when an item is to be dropped within the GanttControl.</td>
 </tr>
 
 <tr>
@@ -380,7 +380,7 @@ VS2010
 </table>
 
 ## Gantt.MVVM.WPF
-To make the migration from GridTreeControl to SfTreeGrid, integrating drag-and-drop, filtering, and sorting into the Gantt grid, this transition breaks certain APIs and introduces new ones. Please find the differences in the following topics.
+To migrate from `GridTreeControl` to `SfTreeGrid`, integrating drag-and-drop, filtering, and sorting into the Gantt grid, this transition breaks certain APIs and introduces new ones. Please find the differences in the following topics.
 
 ### Assembly references
 <table>
@@ -412,7 +412,7 @@ Syncfusion.GridCommon.WPF
 <td>{{'[RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_RequestTreeItems)'| markdownify }}</td>
 <td>{{'[TreeGridRequestTreeItemsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRequestTreeItemsEventArgs.html)'| markdownify }}</td>
 <td>{{'[RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems)'| markdownify }}</td>
-<td>This event is used to request an IEnumerable object that holds the child item objects for a particular parent item in on demand loading.</td>
+<td>This event is used to request an IEnumerable object that holds the child item objects for a particular parent item in on-demand loading.</td>
 </tr>
 
 <tr>
@@ -420,7 +420,7 @@ Syncfusion.GridCommon.WPF
 <td>{{'[ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ItemsSourceChanged)'| markdownify }}</td>
 <td>{{'[TreeGridItemsSourceChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridItemsSourceChangedEventArgs.html)'| markdownify }}</td>
 <td>{{'[ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSourceChanged)'| markdownify }}</td>
-<td>Occurs when the ItemsSource changed.</td>
+<td>Occurs when the ItemsSource is changed.</td>
 </tr>
 
 <tr>
@@ -456,7 +456,7 @@ Syncfusion.GridCommon.WPF
 <tr>
 <td>GanttGridExpandStateChangingCommandBehaviorWithEventArgs</td>
 <td>GanttGridNodeExpandingCommandBehaviorWithEventArgs<br/>
- GanttGridNodeCollapsingCommandBehaviorWithEventArgs</td>
+GanttGridNodeCollapsingCommandBehaviorWithEventArgs</td>
 </tr>
 
 <tr>
@@ -525,7 +525,7 @@ GanttGridNodeCollapsedCommand</td>
 <tr>
 <td>GanttGridExpandStateChangedCommandBehavior</td>
 <td>GanttGridNodeExpandedCommandBehavior<br/>
-GanttGridNodeCollapsedCommandbehavior</td>
+GanttGridNodeCollapsedCommandBehavior</td>
 </tr>
 
 <tr>
@@ -536,7 +536,7 @@ GanttGridNodeCollapsedCommand</td>
 </table>
 
 ### Deprecated events
-These events are deprecated. The GridTreeControl has been replaced by the SfTreeGrid in the GanttControl.
+These events are deprecated. The `GridTreeControl` has been replaced by the `SfTreeGrid` in the `GanttControl`.
 <table>
 <tr>
 <th>Structures</th>
@@ -559,19 +559,18 @@ These events are deprecated. The GridTreeControl has been replaced by the SfTree
 <tr>
 <td>{{'[EventHandler< GridTreeCreatingNodeEventArgs>](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeCreatingNodeHandler.html)'| markdownify }}</td>
 <td>{{'[CreatingTreeNode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_CreatingTreeNode)'| markdownify }}</td>
-<td>Event which is raised as GridTreeNodes are created so derived tree nodes can be used.
-</td>
+<td>Event which is raised as GridTreeNodes are created so derived tree nodes can be used.</td>
 </tr>
 
 <tr>
 <td>{{'[EventHandler< SyncfusionRoutedEventArgs>](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.GridRoutedEventHandler.html)'| markdownify }}</td>
 <td>{{'[ParentPropertyNameChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ParentPropertyNameChanged)'| markdownify }}</td>
-<td>Occurs when ParentPropertyName are being changed.</td>
+<td>Occurs when the ParentPropertyName is being changed.</td>
 </tr>
 
 <tr>
 <td>{{'[EventHandler< SyncfusionRoutedEventArgs>](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.GridRoutedEventHandler.html)'| markdownify }}</td>
 <td>{{'[ChildPropertyNameChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ChildPropertyNameChanged)'| markdownify }}</td>
-<td>Occurs when ChildPropertyName are being changed.</td>
+<td>Occurs when the ChildPropertyName is being changed.</td>
 </tr>
 </table>
