@@ -211,8 +211,6 @@ editControl.LoadFile()
 
 ### Saving the text to a file
 
-### Saving the text in a file
-
 The [SaveFile](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_SaveFile) method in the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) class is used to save the text in EditControl to a file. EditControl supports saving all built-in languages, file types, and custom language file types.
 
 {% tabs %}

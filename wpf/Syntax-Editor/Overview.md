@@ -46,11 +46,3 @@ The following are the key features of Essential Edit WPF:
 * **Read only mode** – Displays the contents of a file or source code file and prevents the user from editing the contents.
 * **Editing commands** – Essential Edit WPF ships with built-in `RoutedUICommands` to perform various operations in the edit control externally using command bindings.
 * **Fully functional context menu** – Edit WPF contains a built-in context menu with options to perform editing operations such as undo, redo, cut, copy, paste, select all, and so on. You can enable or disable the built-in context menu.
-
-## Assembly deployment
-
-Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#edit-control) section for the list of assemblies or NuGet packages that need to be added as references to use the EditControl. The minimum NuGet package required is `Syncfusion.Edit.WPF`.
-
-You can find more details about installing the NuGet package in a WPF application in the following link:
-
-[How to install NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)

@@ -193,10 +193,6 @@ ScrollBarVisibility<br/><br/></td><td>
 Gets or sets a value indicating Visibility of Vertical ScrollBar. By default, it is set to Auto, wherein the ScrollBar will be visible when required.<br/><br/></td></tr>
 </table>
 
-
-
-
-
 **Methods**
 
 The following table lists the methods available in EditControl class and its purpose.
@@ -239,16 +235,9 @@ Boolean<br/><br/></td><td>
 Save method is used to save the text in the EditControl under a file name with different supported file types.<br/><br/></td></tr>
 </table>
 
-
-
-
-
- 
 **Events**
 
-
 The following table lists the events available in EditControl class and its purpose.
-
 
 <table>
 <tr>

@@ -43,7 +43,6 @@ Me.editControl.MoveToPreviousIndex()
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-
 ### Word-based navigation
 
 The following functions enables text navigation in the Syntax Editor in terms of words.

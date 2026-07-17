@@ -25,8 +25,6 @@ The `SetLineBackground` method customizes the background color of a single line.
 * `fullLine` – `true` to highlight the full line width; `false` to highlight only the text area.
 * `brush` – the `System.Windows.Media.Brush` used to paint the background.
 
-`brush`: Specifies the `Brush` for background customization.
-
 {% tabs %}
 
 {% highlight C# %}
@@ -57,7 +55,6 @@ The `ResetLineBackground` method clears the background color applied by `SetLine
 
 `ResetLineBackground(lineNumber)`: Helps to reset the background customization of line.
 
-
 ### Parameters
 
 * `lineNumber` – the 1-based line number to reset.
@@ -79,7 +76,6 @@ this.editControl1.ResetLineBackground(this.editControl1.LineNumber)
 {% endhighlight  %}
 
 {% endtabs %}
-
 
 ## On demand line background customization
 
