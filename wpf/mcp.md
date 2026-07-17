@@ -25,13 +25,13 @@ These tools speed up development and reinforce best practices for Syncfusion con
 
 Before beginning, ensure the following prerequisites are met:
 
-- Microsoft [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- Microsoft [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later
 - A **compatible MCP client** (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, JetBrains, etc.)
 - An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://syncfusion.com/account/api-key)
 - A **WPF application** (existing or new); see [ WPF application that includes Syncfusion WPF](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
 - An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
-  - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)  
-  - [Free Community License](https://www.syncfusion.com/products/communitylicense)  
+  - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)
+  - [Free Community License](https://www.syncfusion.com/products/communitylicense)
   - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
 
 ### Getting Your API Key
