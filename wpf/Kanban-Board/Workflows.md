@@ -1,144 +1,134 @@
 ---
 layout: post
-title: Workflows | SfKanban | wpf | Syncfusion
-description: The following section describes about the workflows in Syncfusion Essential Studio WPF Kanban (SfKanban) control, its elements and more.
+title: Workflows | SfKanban | WPF | Syncfusion
+description: This section describes the workflows in the Syncfusion WPF Kanban (SfKanban) control, its elements, and more.
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
 
-# Workflow configuration
+# Workflow Configuration
 
-A Kanban [`Workflows`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
+A Kanban [`Workflows`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) is a set of categories and allowed transitions that an item moves through during its life cycle, typically representing processes within your organization.
 
-* [`Category`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_Category) – It represents a state of an item at a particular point in a specific workflow.
+* [`Category`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_Category) - It represents the state of an item at a particular point in a specific workflow.
+* [`AllowedTransitions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_AllowedTransitions) - It is a list of categories to which the card can be moved from the current category.
 
-* [`AllowedTransitions`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_AllowedTransitions) – It is a list of categories to where the card can be moved from the current category.
+N> The snippets in this document use the `kanban:` prefix for the Syncfusion namespace. Make sure the following namespace mapping is declared on the root element: `xmlns:kanban="clr-namespace:Syncfusion.UI.Xaml.Kanban;assembly=Syncfusion.SfKanban.WPF"`.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<syncfusion:SfKanban.Workflows>
-    
-    <syncfusion:KanbanWorkflow Category="Open">
-    
-        <syncfusion:KanbanWorkflow.AllowedTransitions>
-    
-            <x:String>In Progress</x:String>
-    
-        </syncfusion:KanbanWorkflow.AllowedTransitions>
-    
-    </syncfusion:KanbanWorkflow>
-
-    <syncfusion:KanbanWorkflow Category="In Progress">
-    
-        <syncfusion:KanbanWorkflow.AllowedTransitions>
-    
-            <x:String>Review</x:String>
-    
-            <x:String>Done</x:String>
-    
-        </syncfusion:KanbanWorkflow.AllowedTransitions>
-    
-    </syncfusion:KanbanWorkflow>
-
-</syncfusion:SfKanban.Workflows>
+<kanban:SfKanban x:Name="kanban"
+                 ItemsSource="{Binding Tasks}"
+                 AutoGenerateColumns="False"
+                 ColumnMappingPath="Category">
+    <kanban:SfKanban.Workflows>
+        <kanban:KanbanWorkflow Category="Open">
+            <kanban:KanbanWorkflow.AllowedTransitions>
+                <x:String>In Progress</x:String>
+            </kanban:KanbanWorkflow.AllowedTransitions>
+        </kanban:KanbanWorkflow>
+        <kanban:KanbanWorkflow Category="In Progress">
+            <kanban:KanbanWorkflow.AllowedTransitions>
+                <x:String>Review</x:String>
+                <x:String>Done</x:String>
+            </kanban:KanbanWorkflow.AllowedTransitions>
+        </kanban:KanbanWorkflow>
+    </kanban:SfKanban.Workflows>
+    <kanban:KanbanColumn Title="Open" Categories="Open" />
+    <kanban:KanbanColumn Title="In Progress" Categories="In Progress" />
+    <kanban:KanbanColumn Title="Review" Categories="Review" />
+    <kanban:KanbanColumn Title="Done" Categories="Done" />
+</kanban:SfKanban>
 
 {% endhighlight %}
+{% highlight C# %}
 
-{% highlight c# %}
+using System.Collections.Generic;
+using Syncfusion.UI.Xaml.Kanban;
 
+SfKanban kanban = new SfKanban();
 WorkflowCollection workflows = new WorkflowCollection();
 
 workflows.Add(new KanbanWorkflow()
-
 {
-
     Category = "Open",
-
-    AllowedTransitions = new List<object>() {"In Progress"}
-
+    AllowedTransitions = new List<object>() { "In Progress" }
 });
 
 workflows.Add(new KanbanWorkflow()
-
 {
-
     Category = "In Progress",
-
-    AllowedTransitions = new List<object>() {"Review", "Done"}
-
+    AllowedTransitions = new List<object>() { "Review", "Done" }
 });
 
-Kanban.Workflows = workflows;
+kanban.Workflows = workflows;
 
 {% endhighlight %}
-
 {% endtabs %}
+
+N> In the XAML snippet, add `xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"` to the root element so the `x:String` reference resolves.
 
 ![Workflow configuration in WPF SfKanban](SfKanban_images/workflow.png)
 
-## Work In-Progress limit
+## Work In-Progress (WIP) Limit
 
-[`MinimumLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MinimumLimit) and [`MaximumLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MaximumLimit) properties are used to limit the minimum and maximum items in the Kanban column. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the [`ValidationColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_ValidationColor) of the error bar.
+The [`MinimumLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MinimumLimit) and [`MaximumLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MaximumLimit) properties are used to limit the minimum and maximum number of items in a Kanban column. This does not restrict moving the items from one column to another column. However, a violation of the limit is indicated by changing the color of the error bar.
 
-Following properties of [`ErrorBarSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_ErrorBarSettings) are used to customize the error bar.
+The following properties of [`ErrorBarSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_ErrorBarSettings) are used to customize the error bar:
 
-* [`Color`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.html#Syncfusion_UI_Xaml_Kanban_ErrorBarSettings_Color) – used to set the default color of the error bar.
-
-* [`MinValidationColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.html#Syncfusion_UI_Xaml_Kanban_ErrorBarSettings_MinValidationColor) – used to set the color of the error bar when the items count is lesser than MinimumLimit.
-
-* [`MaxValidationColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.html#Syncfusion_UI_Xaml_Kanban_ErrorBarSettings_MaxValidationColor) – used to set the color of the error bar when the items count is greater than MaximumLimit.
-
-* [`Height`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.html#Syncfusion_UI_Xaml_Kanban_ErrorBarSettings_Height) - used to provide height for error bar. 
+* [`Color`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.html#Syncfusion_UI_Xaml_Kanban_ErrorBarSettings_Color) - Used to set the default color of the error bar.
+* [`MinValidationColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.html#Syncfusion_UI_Xaml_Kanban_ErrorBarSettings_MinValidationColor) - Used to set the color of the error bar when the item count is less than `MinimumLimit`.
+* [`MaxValidationColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.html#Syncfusion_UI_Xaml_Kanban_ErrorBarSettings_MaxValidationColor) - Used to set the color of the error bar when the item count is greater than `MaximumLimit`.
+* [`Height`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.html#Syncfusion_UI_Xaml_Kanban_ErrorBarSettings_Height) - Used to set the height of the error bar.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<syncfusion:KanbanColumn x:Name="column1" Categories="Review,Done"
-                         
-                         Title="Done"
-                         
+<kanban:SfKanban x:Name="kanban"
+                 ItemsSource="{Binding Tasks}"
+                 AutoGenerateColumns="False"
+                 ColumnMappingPath="Category">
+    <kanban:KanbanColumn Title="Done"
+                         Categories="Review,Done"
                          MinimumLimit="1"
-                         
                          MaximumLimit="2">
-	     
-         <syncfusion:KanbanColumn.ErrorBarSettings>
-		
-        	   <syncfusion:ErrorBarSettings Color="Gray" MaxValidationColor="Red"
-        
-                                            MinValidationColor="Green">
-		
-        	   </syncfusion:ErrorBarSettings>
-        
-         </syncfusion:KanbanColumn.ErrorBarSettings>
-
-</syncfusion:KanbanColumn>
+        <kanban:KanbanColumn.ErrorBarSettings>
+            <kanban:ErrorBarSettings Color="Gray"
+                                     MaxValidationColor="Red"
+                                     MinValidationColor="Green" />
+        </kanban:KanbanColumn.ErrorBarSettings>
+    </kanban:KanbanColumn>
+    <kanban:KanbanColumn Title="Open" Categories="Open" />
+    <kanban:KanbanColumn Title="In Progress" Categories="In Progress" />
+</kanban:SfKanban>
 
 {% endhighlight %}
+{% highlight C# %}
 
-{% highlight c# %}
+using Syncfusion.UI.Xaml.Kanban;
+using System.Windows.Media;
 
-column1.MinimumLimit = 1;
-
-column1.MaximumLimit = 2;
-
-column1.ErrorBarSettings = new ErrorBarSettings()
-
+KanbanColumn doneColumn = new KanbanColumn()
 {
-
-    Color = new SolidColorBrush(Colors.Gray),
-
-    MinValidationColor = new SolidColorBrush(Colors.Green),
-
-    MaxValidationColor = new SolidColorBrush(Colors.Red)
-
+    Title = "Done",
+    Categories = "Review,Done",
+    MinimumLimit = 1,
+    MaximumLimit = 2,
+    ErrorBarSettings = new ErrorBarSettings()
+    {
+        Color = new SolidColorBrush(Colors.Gray),
+        MinValidationColor = new SolidColorBrush(Colors.Green),
+        MaxValidationColor = new SolidColorBrush(Colors.Red)
+    }
 };
 
-{% endhighlight %}
+kanban.Columns.Add(doneColumn);
 
+{% endhighlight %}
 {% endtabs %}
 
-![Work in progess limit in WPF SfKanban](SfKanban_images/wiplimit.png)
+N> The `Color`, `MinValidationColor`, and `MaxValidationColor` properties of `ErrorBarSettings` accept a `Brush` in C# (use `SolidColorBrush`) but a string color name (e.g., `"Gray"`) in XAML, which WPF automatically converts to a `SolidColorBrush`.
+
+![Work in progress limit in WPF SfKanban](SfKanban_images/wiplimit.png)
