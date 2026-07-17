@@ -1,15 +1,17 @@
 ---
 layout: post
-title: TitleBarCustomButtons | ChromelessWindow | WPF | Syncfusion
-description: How to use customs buttons on title bar of chromeless window in Syncfusion Essential Studio WPF, its elements and more.
+title: TitleBarCustomButtons in WPF Chromeless Window control | Syncfusion
+description: How to use custom buttons on title bar of chromeless window in Syncfusion Essential Studio WPF, its elements and more.
 platform: WPF
 control: ChromelessWindow
 documentation: ug
 ---
 
-#  TitleBarCustomButtons
+# TitleBarCustomButtons in WPF Chromeless Window
 
-Title bar can be customized by adding custom buttons  to the right and left side of the title bar using stack panel.  **RightCustomButtons** and **LeftCustomButtons** property is used for binding buttons to the right and left side of the Title bar respectively.  The following code snippet is used to set the custom buttons.
+The title bar can be customized by adding custom buttons to the right and left side of the title bar using a `StackPanel`. The `RightCustomButtons` and `LeftCustomButtons` properties are used to bind buttons to the right and left side of the title bar respectively.
+
+The following code snippet is used to set the custom buttons.
 
 {% tabs %}
 

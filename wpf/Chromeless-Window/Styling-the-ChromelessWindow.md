@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Styling the ChromelessWindow in WPF Chromeless Window
 
-This section deals with the Styles and Templates supported by ChromelessWindow control.
+This section describes the styles and templates supported by the ChromelessWindow control.
 
 ## Custom template for the TitleBar
 
-ChromelessWindow allows the end-user to write own templates for the TitleBar. The TitleBar can be customized by using the **TitleBarTemplate** property. The following code snippet illustrates how to set the TitleBarTemplate property.
+ChromelessWindow allows you to write your own templates for the TitleBar. The TitleBar can be customized by using the `TitleBarTemplate` property. The following code snippet illustrates how to set the `TitleBarTemplate` property.
 
 {% tabs %}
 
@@ -30,7 +30,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Sh
 
 {% endtabs %}
 
-For example, use the following code for a TitleBarTemplate.
+For example, use the following code for a `TitleBarTemplate`.
 
 {% tabs %}
 
@@ -48,13 +48,13 @@ For example, use the following code for a TitleBarTemplate.
 
 {% endtabs %}
 
-N> The drag and drop feature for the ChromelessWindow is available only with the TitleBar,to incorporate this feature,include a TitleBar into your ChromelessWindow.Also it is necessary to specify the name of the TitleBar as PART_TitleBar",to enable the drag and drop feature.
+N> The drag-and-drop feature for the ChromelessWindow is available only when a TitleBar is present. To enable this feature, include a TitleBar in your ChromelessWindow and specify its name as `PART_TitleBar`.
 
 ![Styling-the-ChromelessWindow_img1](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img1.jpeg)
 
 ## Custom template for the TitleButton
 
-ChromelessWindow enables the user to write their own templates for the Title button that is used in the TitleBar. **Maximize** **,** **Minimize** **,** **Restore** **and** **Close** Button can be edited with **MaximizeButtonTemplate** **,** **MinimizeButtonTemplate** **,** **RestoreButtonTemplate** **,** **CloseButtonTemplate** property respectively. The below code example is illustrated to change the template of the Maximize Button using **MaximizeButtonTemplate** property
+ChromelessWindow enables you to write your own templates for the title buttons that are used in the TitleBar. The **Maximize**, **Minimize**, **Restore**, and **Close** buttons can be edited with the `MaximizeButtonTemplate`, `MinimizeButtonTemplate`, `RestoreButtonTemplate`, and `CloseButtonTemplate` properties, respectively. The following example changes the template of the Maximize button using the `MaximizeButtonTemplate` property.
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Sh
 
 {% endtabs %}
 
-For example, use the following code for a MaximizeButtonTemplate.
+For example, use the following code for a `MaximizeButtonTemplate`.
 
 {% tabs %}
 
@@ -98,19 +98,19 @@ HorizontalAlignment="Center" VerticalAlignment="Center"  Width="9" Height="8">
 
 ![Styling-the-ChromelessWindow_img2](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img2.jpeg)
 
-Similarly, the template for the desired button can be changed by using the corresponding button property
+Similarly, the template for any other button can be changed by using the corresponding button property.
 
 ## Overriding the default style
 
-ChromelessWindow can be customized by editing the default template. The default style can be downloaded from the following link
+ChromelessWindow can be customized by editing the default template. The default style can be downloaded from the following link:
 
 [https://www.syncfusion.com/downloads/support/directtrac/general/ze/DefaultStyle-1700710349](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DefaultStyle-1700710349)
 
-This default style need to be included in the App.xaml file of your application and the override this style as you desire.
+This default style needs to be included in the `App.xaml` file of your application, and you can override this style as you desire.
 
-N> All the templates should be written in App.xaml file only.
+N> All the templates should be written in `App.xaml`. To register the default style, merge the downloaded `ResourceDictionary` in `App.xaml` as shown below.
 
-The below example is illustrated to override the ChromelessWindow’s full style 
+The below example is illustrated to override the ChromelessWindow's full style 
 
 {% tabs %}
 
@@ -148,7 +148,7 @@ The below example is illustrated to override the ChromelessWindow’s full style
 
 {% endtabs %}
 
-Then apply this style to the ChromelessWindow using Template Property
+Then apply this style to the ChromelessWindow using the `Template` property.
 
 {% tabs %}
 
@@ -166,6 +166,6 @@ xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Sh
 
 {% endtabs %}
 
-The following screen shot shows the Custom ChromelessWindow control created using the preceding code.
+The following screenshot shows the custom ChromelessWindow control created using the preceding code.
 
 ![Styling-the-ChromelessWindow_img3](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img3.jpeg)

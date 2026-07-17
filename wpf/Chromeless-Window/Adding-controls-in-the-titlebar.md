@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Adding controls in the Title bar in WPF Chromeless Window
 
-Provided the option to add adaptive controls such as Button, TextBox, Label, etc on either side of the title bar in the Chromeless Window. The [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_LeftHeaderItemsSource) property holds the controls to be shown on the left side of the title bar likewise the [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemsSource) property holds the controls to be shown on the right side of the title bar.
+You can add adaptive controls such as `Button`, `TextBox`, `Label`, and so on to either side of the title bar in the ChromelessWindow. The [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_LeftHeaderItemsSource) property holds the controls to be shown on the left side of the title bar, and the [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemsSource) property holds the controls to be shown on the right side of the title bar.
 
 {% tabs %}
 {% highlight XAML %}
@@ -38,10 +38,13 @@ Provided the option to add adaptive controls such as Button, TextBox, Label, etc
 {% endhighlight %}
 {% highlight C# %}
 
+/// <summary>
+/// A simple observable collection used as the source for the header items.
+/// </summary>
 public class MyObservableCollection : ObservableCollection<object> { }
 
 /// <summary>
-/// Commmand for the help button.
+/// Command for the help button.
 /// </summary>
 public DelegateCommand HelpCommand
 {
@@ -52,7 +55,7 @@ public DelegateCommand HelpCommand
 }
 
 /// <summary>
-/// Action that is performed when clicking the help button.
+/// Action performed when the help button is clicked.
 /// </summary>
 private void HelpCommandAction(object param)
 {
@@ -60,7 +63,8 @@ private void HelpCommandAction(object param)
 }
 
 /// <summary>
-/// A class that defines the interface for the command.
+/// A simple ICommand implementation. Reuse the same instance to keep
+/// CommandManager requery evaluation working correctly.
 /// </summary>
 public class DelegateCommand : ICommand
 {
@@ -112,9 +116,13 @@ public class DelegateCommand : ICommand
 
 ![Title Bar items added through collection](Getting-Started_images/Title-bar-items-using-collection.png)
 
-We can also apply data template in-order to define the visual appearance of the items stored in the [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_LeftHeaderItemsSource) and [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemsSource). The [`LeftHeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_LeftHeaderItemTemplate) is used to define the visual appearance of the items stored in the [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_LeftHeaderItemsSource) while the [`RightHeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemTemplate) is used to define the visual appearance of the items stored in the [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemsSource).
+N> The `Path` geometry in this sample is a question-mark glyph. For long path data, define the geometry as a resource in `App.xaml` and reference it with `{StaticResource}` to keep the XAML readable.
 
-In the illustration below, we have defined the [`RightHeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemTemplate) with a button control and set the **"Utilities"** collection holding sign-in and help details to the[`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemsSource). Now, the properties of the button are mapped to the properties of the **"Item"** class objects maintained in the **"Utilities"** collection to create a visual appearance. When this is done, the items in the **"Utilities"** collection are visually converted as a sign-in and help button's and are added to the right side of the title bar.
+## Adding items with a data template
+
+You can also apply a data template to define the visual appearance of the items stored in the [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_LeftHeaderItemsSource) and [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemsSource). The [`LeftHeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_LeftHeaderItemTemplate) is used to define the visual appearance of the items stored in the [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_LeftHeaderItemsSource), while the [`RightHeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemTemplate) is used to define the visual appearance of the items stored in the [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemsSource).
+
+In the following example, the `RightHeaderItemTemplate` is defined with a `ButtonAdv` control and the "Utilities" collection (holding sign-in and help details) is bound to the `RightHeaderItemsSource`. The properties of the button are mapped to the properties of the `Item` class objects in the "Utilities" collection to create a visual appearance. The items in the "Utilities" collection are then rendered as Sign-in and Help buttons on the right side of the title bar.
 
 {% tabs %}
 {% highlight XAML %}
@@ -146,7 +154,7 @@ In the illustration below, we have defined the [`RightHeaderItemTemplate`](https
 {% highlight C# %}
 
 /// <summary>
-/// A model class view containing the details of the items to be bound in the title bar.
+/// A view model that contains the items to be bound in the title bar.
 /// </summary>
 public class UtilityViewModel
 {
@@ -247,7 +255,8 @@ public class Item
 }
 
 /// <summary>
-/// A class that defines the interface for the command.
+/// A simple ICommand implementation. The same instance should be reused
+/// across calls so that WPF command manager requery evaluation works correctly.
 /// </summary>
 public class DelegateCommand : ICommand
 {
