@@ -44,7 +44,7 @@ The steps below will assist you in using the Syncfusion Troubleshooter in Visual
 
    ![No configuration changes required dialog box](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img2.png)
 
-N> The Syncfusion Troubleshooter options will be visible only for Syncfusion® projects, which means the project should contain Syncfusion® assemblies or Syncfusion® NuGet packages referred, and the project should be a .NET Framework project.
+I> The Syncfusion Troubleshooter options will be visible only for Syncfusion® projects, which means the project should contain Syncfusion® assemblies or Syncfusion® NuGet packages referred, and the project should be a .NET Framework project.
 
 The Syncfusion Troubleshooter handles the following project configuration issues: 
 
@@ -102,7 +102,7 @@ The Syncfusion Troubleshooter addresses the following NuGet package-related issu
  
    ![Dependent NuGet package missing issue shown in Troubleshooter wizard](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img9.png)
 
-N> Internet connection is required to restore the missing dependent packages. If the internet is not available, the dependent packages will not be restored.
+I> Internet connection is required to restore the missing dependent packages. If the internet is not available, the dependent packages will not be restored.
 
 ### Toolbox Configuration Issues
 

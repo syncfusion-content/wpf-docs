@@ -63,7 +63,7 @@ From 2025 Volume 3 SP 2, Syncfusion® started providing toolbox support for .NET
 
 From 2021 Volume 4, Syncfusion® started providing toolbox support for .NET Framework in Visual Studio 2022 Toolbox. After installing the Syncfusion® WPF installer, Syncfusion® controls will be automatically configured in the Visual Studio 2022 toolbox for WPF projects.
 
-> * Syncfusion® WPF .NET 5.0 controls will be compatible with .NET 6.0, on installing the Syncfusion® WPF installer, the .NET 5.0 controls will be configured in the toolbox for .NET 6.0 projects too.
+N> * Syncfusion® WPF .NET 5.0 controls will be compatible with .NET 6.0, on installing the Syncfusion® WPF installer, the .NET 5.0 controls will be configured in the toolbox for .NET 6.0 projects too.
    
 ## Configuring toolbox for WPF .NET 8.0, 9.0, and 10.0 projects
 

@@ -46,7 +46,7 @@ Create the Syncfusion® WPF project using the Visual Studio Project Template by 
 
 	N> The installed location and GAC options will be available only after the Syncfusion® Essential WPF setup has been installed. Use the NuGet option instead of installing the Syncfusion® Essential WPF setup. Also, the GAC option will not be available when you choose .NET 8.0 or .NET 9.0 from the project type option in Visual Studio.
 
-	N> Visual Basic language support is available in WPF Template Studio starting from version 25.1.35.
+	I> Visual Basic language support is available in WPF Template Studio starting from version 25.1.35.
 
 5.	Click **Next** or navigate to the **Type** tab, then select the desired Syncfusion® WPF application type. When selecting the type of template for your application, you have two options:
 
