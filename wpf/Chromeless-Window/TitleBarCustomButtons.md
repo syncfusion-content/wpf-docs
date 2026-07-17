@@ -2,7 +2,7 @@
 layout: post
 title: TitleBarCustomButtons in WPF Chromeless Window control | Syncfusion
 description: How to use custom buttons on title bar of chromeless window in Syncfusion Essential Studio WPF, its elements and more.
-platform: WPF
+platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
