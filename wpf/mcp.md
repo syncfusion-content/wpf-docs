@@ -25,7 +25,7 @@ These tools speed up development and reinforce best practices for Syncfusion con
 
 Before beginning, ensure the following prerequisites are met:
 
-- **.NET Framework** version 4.6 or higher (or .NET Core 3.0+)
+- Microsoft [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) or later
 - A **compatible MCP client** (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, JetBrains, etc.)
 - An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://syncfusion.com/account/api-key)
 - A **WPF application** (existing or new); see [ WPF application that includes Syncfusion WPF](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
@@ -48,7 +48,9 @@ Generate the Syncfusion<sup style="font-size:70%">&reg;</sup> API key from the [
 
 ### Setting Up in MCP Clients
 
-Create a configuration file in your project folder to install the server for your workspace. **Replace `YOUR_API_KEY_FILE_PATH` with the path to your API key file.**
+Create a configuration file in your project folder to install the server for your workspace. **Replace `YOUR_API_KEY_FILE_PATH` with the path to your API key file.** The tabs below show a working configuration for each supported MCP client.
+
+**For .NET 10** :
 
 {% tabs %}
 {% highlight bash tabtitle="VS Code" %}
@@ -137,6 +139,35 @@ Create a configuration file in your project folder to install the server for you
 {% endhighlight %}
 {% endtabs %}
 
+**For .NET 8 / .NET 9 (using a local tool):**
+
+You can install the Syncfusion WPF MCP server as a local tool without a global installation. For guidance on installing and managing local .NET tools, refer the [documentation](https://learn.microsoft.com/en-us/dotnet/core/tools/local-tools-how-to-use).
+
+1. Install the Syncfusion WPF MCP tool locally:
+
+    ````bash
+    dotnet tool install Syncfusion.WPF.MCP
+    ````
+
+2. In your MCP client config (`.vscode/mcp.json`, `.codestudio/mcp.json`, `.cursor/mcp.json`, or the JetBrains MCP settings), replace the server entry with:
+
+    ````json
+    {
+      "servers": {
+        "sf-wpf-mcp": {
+          "type": "stdio",
+          "command": "dotnet",
+          "args": ["tool", "run", "syncfusion-wpf-mcp"],
+          "env": {
+            "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
+            // or
+            // "Syncfusion_API_Key": "YOUR_API_KEY"
+          }
+        }
+      }
+    }
+    ````
+
 **Verifying Installation** Check your editor's MCP Server list for `sf-wpf-mcp` with a **Connected** status to confirm a successful installation.
 
 ## Common use cases
@@ -200,7 +231,7 @@ To get the most out of the Syncfusion<sup style="font-size:70%">&reg;</sup> WPF 
 - **Stay Consistent** - Keep file organization, naming conventions, and coding standards consistent throughout your WPF project.
 - **Start Fresh for New Topics** - Begin a new chat when switching to a different control or task to maintain clean context.
 - **Use Advanced AI Models** - For best results, use **Claude Sonnet 4.5 or higher**. Other compatible models include **GPT-5 and Gemini 3 Pro**. Higher-capability models produce more accurate component implementations.
-- **For Troubleshooting** - Use AI suggestions for common issues; consult the [official documentation](https://blazor.syncfusion.com/documentation/introduction) or [support](https://support.syncfusion.com/support/tickets/create) for complex problems.
+- **For Troubleshooting** - Use AI suggestions for common issues; consult the [official documentation](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf) or [support](https://support.syncfusion.com/support/tickets/create) for complex problems.
 - **Minimize Active Tools** - Limit the number of active MCP tools in your IDE to prevent tool-selection ambiguity and improve response accuracy.
 
 > Always review AI-generated code before using it in production.
