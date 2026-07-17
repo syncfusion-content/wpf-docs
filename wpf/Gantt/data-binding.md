@@ -11,13 +11,11 @@ documentation: ug
 
 ## TaskDetails Binding
 
-Essential Gantt for WPF includes an built-in class called [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html), which is inherited from the [IGanttTask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.IGanttTask.html) interface. A collection of the [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html) can be bounded as an ItemsSource for the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html).
+Essential Gantt for WPF includes a built-in class called [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html), which inherits from the [IGanttTask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.IGanttTask.html) interface. A collection of the [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html) can be bound as an `ItemsSource` for the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html).
 
 #### Use Case Scenarios
 
-You can easily create the task details collection using the TaskDetails class or by creating a new class by inheriting the [IGanttTask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.IGanttTask.html) interface.
-
-Binding [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html) collection to Gantt Control
+You can easily create the task details collection using the `TaskDetails` class or by creating a new class that inherits the [IGanttTask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.IGanttTask.html) interface.
 
 The following code illustrates how to bind the Task Details to the Gantt Control:
 
@@ -99,7 +97,7 @@ public class ViewModel
         ObservableCollection<TaskDetails> taskDetails = new ObservableCollection<TaskDetails>();
         taskDetails.Add(new TaskDetails { TaskId = 1, TaskName = "Scope", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 40d });
         taskDetails[0].Child.Add(new TaskDetails { TaskId = 2, TaskName = "Determine project office scope", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 5), Progress = 20d });
-        taskDetails[0].Child.Add(new TaskDetails { TaskId = 3, TaskName = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 7), Progress = 20d });
+        taskDetails[0].Child.Add(new TaskDetails { TaskId = 3, TaskName = "Justify Project Office via business model", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 7), Progress = 20d });
         taskDetails[0].Child.Add(new TaskDetails { TaskId = 4, TaskName = "Secure executive sponsorship", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
         taskDetails[0].Child.Add(new TaskDetails { TaskId = 5, TaskName = "Secure complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
 
@@ -113,7 +111,7 @@ public class ViewModel
         taskDetails[2].Child.Add(new TaskDetails { TaskId = 12, TaskName = "Prepare Meeting agenda", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 7, 26), Progress = 30d });
         taskDetails[2].Child.Add(new TaskDetails { TaskId = 13, TaskName = "Conduct review meeting", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 7, 30), Progress = 30d });
         taskDetails[2].Child.Add(new TaskDetails { TaskId = 14, TaskName = "Migrate critical issues", StartDate = new DateTime(2011, 7, 18), FinishDate = new DateTime(2011, 8, 2), Progress = 30d });
-        taskDetails[2].Child.Add(new TaskDetails { TaskId = 15, TaskName = "Estabilish change mgmt Control", StartDate = new DateTime(2011, 8, 3), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 15, TaskName = "Establish change mgmt Control", StartDate = new DateTime(2011, 8, 3), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
         taskDetails[2].Child.Add(new TaskDetails { TaskId = 16, TaskName = "Monitoring Complete", StartDate = new DateTime(2011, 8, 6), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
 
         taskDetails.Add(new TaskDetails { TaskId = 17, TaskName = "Post Implementation", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 19), Progress = 40d });
@@ -143,67 +141,23 @@ To view samples:
 1. Go to the Syncfusion Essential Studio installed location. 
     Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
 2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
-3. Click Run Samples for WPF under User Interface Edition panel.
+3. Click Run Samples for WPF under the User Interface Edition panel.
 4. Select Gantt.
 5. Expand the DataBinding Features item in the Sample Browser.
-6. Choose the Binding Task Details samples to launch.
+6. Choose the Binding Task Details sample to launch.
 
 ## External Property Binding
 
-Essential Gantt for WPF allows you to bind any type of IEnumerable source to Gantt. You can bind any collection to Gantt using the [TaskAttributeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html) class. This will get the mapping name of the required fields from the underlying source. With this mapping the Gantt will get the required information to render the Chart nodes.
+Essential Gantt for WPF allows you to bind any type of `IEnumerable` source to the Gantt. You can bind any collection to the Gantt using the [TaskAttributeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html) class. This will get the mapping name of the required fields from the underlying source. With this mapping, the Gantt will get the required information to render the chart nodes.
 
-The following code illustrate how to map the properties using the [TaskAttributeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html) class:
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:GanttControl x:Name="ganttControl" 
-                         ItemsSource="{Binding TaskDetails}">
-    <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
-                                         TaskNameMapping="Name"
-                                         StartDateMapping="StartDate"
-                                         ChildMapping="ChildCollection"
-                                         FinishDateMapping="EndDate"
-                                         DurationMapping="Duration"
-                                         ProgressMapping="Progress"
-                                         PredecessorMapping="Predecessor"
-                                         ResourceInfoMapping="Resource"/>
-    </syncfusion:GanttControl.TaskAttributeMapping>
-    <syncfusion:GanttControl.DataContext>
-        <local:ViewModel/>
-    </syncfusion:GanttControl.DataContext>
-</syncfusion:GanttControl>
-
-{% endhighlight  %}
-{% highlight c# %}
-
-// Task attribute mapping
-TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
-taskAttributeMapping.TaskIdMapping = "ID";
-taskAttributeMapping.TaskNameMapping = "Name";
-taskAttributeMapping.StartDateMapping = "StartDate";
-taskAttributeMapping.ChildMapping = "ChildCollection";
-taskAttributeMapping.FinishDateMapping = "EndDate";
-taskAttributeMapping.DurationMapping = "Duration";
-taskAttributeMapping.ProgressMapping = "Progress";
-taskAttributeMapping.PredecessorMapping = "Predecessor";
-taskAttributeMapping.ResourceInfoMapping = "Resource";
-this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
-
-this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
-
-{% endhighlight  %}
-{% endtabs %}
-
-The following code illustrates how to bind the external source to Gantt control:
+The following code illustrates how to map the properties using the [TaskAttributeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html) class and bind the external source to the Gantt control:
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:GanttControl x:Name="ganttControl"
                          ItemsSource="{Binding TaskCollection}">
-   <syncfusion:GanttControl.TaskAttributeMapping>
+    <syncfusion:GanttControl.TaskAttributeMapping>
         <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
                                          TaskNameMapping="Name"
                                          StartDateMapping="StartDate"
@@ -468,7 +422,7 @@ public class ViewModel
         var data = new ObservableCollection<Task>();
         data.Add(new Task() { ID = 1, Name = "Scope", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 14), Progress = 40d });
         data[0].ChildCollection.Add((new Task() { ID = 2, Name = "Determine project office scope", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d, }));
-        data[0].ChildCollection.Add((new Task() { ID = 3, Name = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        data[0].ChildCollection.Add((new Task() { ID = 3, Name = "Justify Project Office via business model", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
         data[0].ChildCollection.Add((new Task() { ID = 4, Name = "Secure executive sponsorship", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d, }));
         data[0].ChildCollection.Add((new Task() { ID = 5, Name = "Secure Progress", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
 
@@ -482,7 +436,7 @@ public class ViewModel
         data[2].ChildCollection.Add((new Task() { ID = 12, Name = "Prepare Meeting agenda", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 7, 26), Progress = 20d, }));
         data[2].ChildCollection.Add((new Task() { ID = 13, Name = "Conduct review meeting", StartDate = new DateTime(2011, 7, 27), EndDate = new DateTime(2011, 7, 30), Progress = 20d, }));
         data[2].ChildCollection.Add((new Task() { ID = 14, Name = "Migrate critical issues", StartDate = new DateTime(2011, 7, 31), EndDate = new DateTime(2011, 8, 2), Progress = 20d, }));
-        data[2].ChildCollection.Add((new Task() { ID = 15, Name = "Estabilish change mgmt Control", StartDate = new DateTime(2011, 8, 3), EndDate = new DateTime(2011, 8, 6), Progress = 30d, }));
+        data[2].ChildCollection.Add((new Task() { ID = 15, Name = "Establish change mgmt Control", StartDate = new DateTime(2011, 8, 3), EndDate = new DateTime(2011, 8, 6), Progress = 30d, }));
         data[2].ChildCollection.Add((new Task() { ID = 16, Name = "Monitoring Progress", StartDate = new DateTime(2011, 8, 6), EndDate = new DateTime(2011, 8, 6), Progress = 30d }));
 
         data.Add(new Task() { ID = 17, Name = "Post Implementation", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 8, 12) });
@@ -493,7 +447,7 @@ public class ViewModel
 
         data[0].ChildCollection[0].Resource.Add(new Resource() { ID = 1, Name = "Leslie" });
         data[0].ChildCollection[1].Resource.Add(new Resource() { ID = 2, Name = "John" });
-        data[0].ChildCollection[2].Resource.Add(new Resource() { ID = 3, Name = "DavID" });
+        data[0].ChildCollection[2].Resource.Add(new Resource() { ID = 3, Name = "David" });
         data[0].ChildCollection[3].Resource.Add(new Resource() { ID = 4, Name = "Peter" });
 
         data[1].ChildCollection[0].Resource.Add(new Resource() { ID = 5, Name = "Neil" });
@@ -502,7 +456,7 @@ public class ViewModel
         data[1].ChildCollection[2].Resource.Add(new Resource() { ID = 9, Name = "Peterson" });
         data[1].ChildCollection[3].Resource.Add(new Resource() { ID = 10, Name = "Thomas" });
 
-        data[3].ChildCollection[1].Resource.Add(new Resource() { ID = 5, Name = "DavID" });
+        data[3].ChildCollection[1].Resource.Add(new Resource() { ID = 5, Name = "David" });
         data[3].ChildCollection[2].Resource.Add(new Resource() { ID = 7, Name = "Peter" });
         data[3].ChildCollection[3].Resource.Add(new Resource() { ID = 8, Name = "Thomas" });
 
@@ -538,7 +492,7 @@ To view samples:
 1. Go to the Syncfusion Essential Studio installed location. 
     Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
 2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
-3. Click Run Samples for WPF under User Interface Edition panel.
+3. Click Run Samples for WPF under the User Interface Edition panel.
 4. Select Gantt.
 5. Expand the DataBinding Features item in the Sample Browser.
 6. Choose the External Property Binding sample to launch.

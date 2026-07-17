@@ -81,35 +81,6 @@ taskAttributeMapping.PredecessorMapping = "Predecessor";
 taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
-public partial class MainWindow : Window
-{
-    ViewModel viewModel;
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="MainWindow"/> class.
-    /// </summary>
-    public MainWindow()
-    {
-        InitializeComponent();
-        viewModel = new ViewModel();
-
-        GanttControl gantt = new GanttControl();
-        gantt.ItemsSource = this.viewModel.TaskCollection;
-        gantt.VisualStyle = VisualStyle.Metro;
-        gantt.ShowHolidays = true;
-        gantt.ExcludeHolidays = false;
-        gantt.Holidays = new GanttHolidayCollection
-        {
-            new GanttHoliday { Day = new DateTime(2011, 6, 10), Background = Brushes.CadetBlue },
-            new GanttHoliday { Day = new DateTime(2011, 7, 8), Background = Brushes.CadetBlue },
-            new GanttHoliday { Day = new DateTime(2011, 8, 3), Background = Brushes.CadetBlue },
-            new GanttHoliday { Day = new DateTime(2011, 9, 20), Background = Brushes.CadetBlue }
-        };
-
-        this.AddChild(gantt);
-    }
-}
-
 {% endhighlight %}
 
 {% highlight c# tabtitle="ViewModel.cs" %}

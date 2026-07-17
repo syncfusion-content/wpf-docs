@@ -9,16 +9,16 @@ documentation: ug
 
 # Strip Lines in WPF Gantt
 
-The Gantt provides support to add strip lines in the Gantt chart region that denotes an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
+The Gantt control provides support to add strip lines in the Gantt chart region that denote an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
 
-## Strip lines in Essential Gantt support the following features:
+## Features of Strip Lines in Essential Gantt
 
 Strip lines can be repeatable in the Gantt chart region based on repeat behavior and repeat interval.
 
 * You can modify the content or appearance of the strip lines at run time by changing the values of the underlying collection source.
 * The visibility of strip lines can be toggled using the [`ShowStripLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowStripLines) property in the Gantt control.
 
-The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of StripLineInfo objects and process it to draw the strip lines.
+The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of `StripLineInfo` objects and process it to draw the strip lines.
 
 #### Repeat behavior
 
@@ -32,16 +32,16 @@ The available repeat behaviors are as follows:
 * Minute
 
 #### Style selector
-It used to pass the style of the strip lines dynamically. Based on constraints.
+Used to pass the style of the strip lines dynamically, based on constraints.
 #### Template selector
-It used to pass the content template of the strip lines dynamically based on constraints.
+Used to pass the content template of the strip lines dynamically, based on constraints.
 
-## Types of strip lines
+## Types of Strip Lines
 
 There are two types of strip lines available in Essential Gantt. They are:
 
 * Regular
-* Absolute—Absolute type will place the strip line at any user-defined point. 
+* Absolute—Absolute type will place the strip line at any user-defined point.
 
 ## Properties
 
@@ -99,7 +99,7 @@ Repeat (Enum)</td></tr>
 {{'[RepeatFor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_RepeatFor)'| markdownify }}</td><td>
 Gets/sets the intervals between the repeating strip lines.</td><td>
 CLR</td><td>
-Integer</td></tr>
+int</td></tr>
 <tr>
 <td>
 {{'[RepeatUpto](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_RepeatUpto)'| markdownify }}</td><td>
@@ -129,31 +129,31 @@ VerticalAlignment</td></tr>
 {{'[HorizontalContentAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_HorizontalContentAlignment)'| markdownify }}</td><td>
 Gets/sets the horizontal alignment of the content present in the strip line.</td><td>
 CLR</td><td>
-Horizontal Alignment</td></tr>
+HorizontalAlignment</td></tr>
 <tr>
 <td>
 {{'[Type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Type)'| markdownify }}</td><td>
 Gets/sets the type of the strip line.</td><td>
 CLR</td><td>
-StriplineType(Enum)</td></tr>
+StriplineType (Enum)</td></tr>
 <tr>
 <td>
 {{'[Position](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Position)'| markdownify }}</td><td>
-Gets/sets the absolute position of the strip line for Absolute strip line type.</td><td>
+Gets/sets the absolute position of the strip line for the Absolute strip line type.</td><td>
 CLR</td><td>
 Point</td></tr>
 <tr>
 <td>
 {{'[Height](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Height)'| markdownify }}</td><td>
-Gets/sets the absolute height of the strip line for Absolute strip line type.</td><td>
+Gets/sets the absolute height of the strip line for the Absolute strip line type.</td><td>
 CLR</td><td>
-Double</td></tr>
+double</td></tr>
 <tr>
 <td>
 {{'[Width](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StripLineInfo.html#Syncfusion_Windows_Controls_Gantt_StripLineInfo_Width)'| markdownify }}</td><td>
-Get/sets the absolute width of the strip line for Absolute strip line type.</td><td>
+Gets/sets the absolute width of the strip line for the Absolute strip line type.</td><td>
 CLR</td><td>
-Double</td></tr>
+double</td></tr>
 </table>
 
 
@@ -174,13 +174,13 @@ Data Type</th></tr>
 <tr>
 <td>
 {{'[ShowStripLines](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowStripLines)'| markdownify }}</td><td>
-Get the user option to show the strip lines.</td><td>
+Gets or sets a value indicating whether the strip lines are shown.</td><td>
 Dependency Property</td><td>
-Bool</td></tr>
+bool</td></tr>
 <tr>
 <td>
 {{'[StripLines](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_StripLines)'| markdownify }}</td><td>
-Get/sets the collection of StripLineInfo from the user.</td><td>
+Gets/sets the collection of StripLineInfo from the user.</td><td>
 Dependency Property</td><td>
 IEnumerable</td></tr>
 </table>
@@ -198,7 +198,7 @@ Description</th></tr>
 <tr>
 <td>
 {{'[Repeat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Repeat.html)'| markdownify }}</td><td>
-This property contains the following values:Year: Repeating the strip line on a yearly basis depends on the RepeatFor value in StripLineInfo.Month: Repeating the strip line on a monthly basis depends on the RepeatFor value in StripLineInfo.Week: Repeating the strip line on a weekly basis depends on the RepeatFor value in StripLineInfo.Day: Repeating the strip line on a daily basis depends on the RepeatFor value in StripLineInfo.Hour: Repeating the strip line on an hourly basis depends on the RepeatFor value in StripLineInfo.Minute: Repeating the strip line on per-minute basis depends on the RepeatFor value in StripLineInfo.</td></tr>
+This property contains the following values:<br/>Year: Repeating the strip line on a yearly basis depends on the RepeatFor value in StripLineInfo.<br/>Month: Repeating the strip line on a monthly basis depends on the RepeatFor value in StripLineInfo.<br/>Week: Repeating the strip line on a weekly basis depends on the RepeatFor value in StripLineInfo.<br/>Day: Repeating the strip line on a daily basis depends on the RepeatFor value in StripLineInfo.<br/>Hour: Repeating the strip line on an hourly basis depends on the RepeatFor value in StripLineInfo.<br/>Minute: Repeating the strip line on a per-minute basis depends on the RepeatFor value in StripLineInfo.</td></tr>
 <tr>
 <td>
 {{'[StriplineType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.StriplineType.html#fields)'| markdownify }}</td><td>
@@ -220,9 +220,9 @@ Type</th></tr>
 <tr>
 <td>
 {{'[StripLineCreated](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_StripLineCreated)'| markdownify }}</td><td>
-Whenever a strip line is created, this event will be triggered. the handler of the event will have the newly created strip line (StripLineInfo) in the argument.By handling this event, you can customize the appearance of the strip line.</td><td>
+Whenever a strip line is created, this event will be triggered. The handler of the event will have the newly created strip line (StripLineInfo) in the argument. By handling this event, you can customize the appearance of the strip line.</td><td>
 StripLineCreated(object sender, StriplineCreatedEventArgs args)</td><td>
-Event </td></tr>
+Event</td></tr>
 </table>
 
 ## Adding strip lines to application
@@ -424,13 +424,12 @@ private List<StripLineInfo> GetStripCollection()
 
 The following screenshot illustrates how to render the regular strip lines.
 
-
 ![regular-striplines-in-gantt-control](Strip-Lines_images/regular-striplines-in-gantt-control.png)
 
 Strip lines in the Gantt chart
 {:.caption}
 
-#### Absolute Strip lines
+#### Absolute Strip Lines
 
 The following code sample demonstrates how to bind the absolute strip line collection to strip lines.
 
@@ -644,6 +643,6 @@ To view samples:
 5. Expand the Interactive Features item in the Sample Browser.
 6. Choose the Strip Lines sample to launch.
 
-## see also
+## See Also
 
 [How to enable horizontal lines for gantt chart rows](https://support.syncfusion.com/kb/article/3380/how-to-enable-horizontal-lines-for-ganttcharts-rows)

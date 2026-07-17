@@ -11,7 +11,7 @@ documentation: ug
 
 By default, the Gantt chart will display a single node in a row. This helps you to manage the project. When you want to manage the resources in a project, you need multiple nodes in a single row. A Resource view Gantt enables you to manage the resources involved in a project.
 
-In a normal Gantt, a node represents a task or activity of the project. In a resource view Gantt, the node represents task assigned to a resource. Multiple tasks assigned to a resource can be displayed in a single row. You can achieve this by using the mapping attribute of the [InLineTaskMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_InLineTaskMapping). 
+In a normal Gantt, a node represents a task or activity of the project. In a resource view Gantt, the node represents a task assigned to a resource. Multiple tasks assigned to a resource can be displayed in a single row. You can achieve this by using the mapping attribute of the [InLineTaskMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_InLineTaskMapping).
 
 Essential Gantt will listen to the dynamic inclusion of inline items and refresh the chart region.
 
@@ -38,11 +38,11 @@ viewModel.GanttItemSource[0].SubItems[0].InLineItems.Add(item);
 
 A resource view is very useful when you need to manage the resources in a project.
 
-Example: A very big development project that contains multiple phases to complete the project. The management needs to track the status of the project. In this scenario, they can manage the project with a Resource view Gantt easily. The Resource view Gantt will show all the tasks in a single row that are assigned to a particular resource.
+**Example:** A very large development project contains multiple phases to complete the project. The management needs to track the status of the project. In this scenario, they can manage the project with a Resource view Gantt easily. The Resource view Gantt will show all the tasks in a single row that are assigned to a particular resource.
 
-## Adding Inline Items to an Application 
+## Adding Inline Items to an Application
 
-You can populate a resource view Gantt by populating the collection of tasks in a single row by mapping the corresponding field in the underlying source to the [InLineTaskMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_InLineTaskMapping). 
+You can populate a resource view Gantt by populating the collection of tasks in a single row by mapping the corresponding field in the underlying source to the [InLineTaskMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_InLineTaskMapping).
 
 You can populate a Resource view Gantt for both date-time schedules and numeric schedules. 
 
@@ -267,7 +267,6 @@ To populate a Resource view Gantt in a Custom Numeric Schedule:
         </Setter>
     </Style>
          <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}" />
-         <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}" />
      </syncfusion:GanttControl.Resources>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
@@ -305,7 +304,7 @@ public class Item : NotificationObject
     /// </summary>
     private string name;
 
-    // <summary>
+    /// <summary>
     /// Holds the end value.
     /// </summary>
     private double _end;
@@ -858,7 +857,6 @@ To populate the Resource view Gantt with a date-time schedule:
      </Setter>
  </Style>
         <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}" />
-        <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}" />
     </syncfusion:GanttControl.Resources>
     <syncfusion:GanttControl.DataContext>
         <local:ViewModel/>
@@ -1251,19 +1249,19 @@ The following image shows the resultant output:
 
 ## Data Structure
 
-The following is the data structure used to build a Resource view Gantt: 
+The following is the data structure used to build a Resource view Gantt:
 
 ![Resource-View-Gantt-Inline-Items_img3](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img3.png)
 
-* team holds information about the team. 
-* SubItems of Team will hold the list of Resources in that particular team.
-* InLineItems of each Resource will hold the tasks assigned to the particular resource.
+* `TeamDetails` holds information about the team.
+* `SubItems` of the Team will hold the list of resources in that particular team.
+* `InLineItems` of each resource will hold the tasks assigned to that particular resource.
 
 ## Information Displayed in Gantt
 
-Grid Region:The grid will display only the information about the team and its resources (SubItems). It will not display the information about assigned tasks (InLineItems).
+**Grid Region:** The grid will display only the information about the team and its resources (`SubItems`). It will not display the information about assigned tasks (`InLineItems`).
 
-Chart Region: The chart will display only the information about the team and the tasks assigned to each resource in the team (InLineItems). It will not display the information about resources (SubItems).
+**Chart Region:** The chart will display only the information about the team and the tasks assigned to each resource in the team (`InLineItems`). It will not display the information about resources (`SubItems`).
 
 ## Sample Link
 
