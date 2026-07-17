@@ -13,14 +13,17 @@ This section describes how to customize the appearance of a ToolBarAdv.
 
 ## Customizing the floating ToolBarAdv
 
+This section demonstrates how to customize a floating ToolBarAdv by applying a FloatingToolBarStyle to the ToolBarManager and defining toolbar items.
+
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:ToolBarManager FloatingToolBarStyle="{StaticResource toolstyle}" >
 
-<syncfusion:ToolBarTrayAdv  >
+<syncfusion:ToolBarTrayAdv >
 
-<syncfusion:ToolBarAdv x:Name="Tooladv" ToolBarName="Standard"      >
+<syncfusion:ToolBarAdv x:Name="Tooladv" ToolBarName="Standard" >
 
 <Button syncfusion:ToolBarAdv.Icon="Images\NewDocumentHS.png" >
 
@@ -57,10 +60,6 @@ This section describes how to customize the appearance of a ToolBarAdv.
 </syncfusion:ToolBarTrayAdv>
 
 </syncfusion:ToolBarManager>
-
-## Customizing the foreground
-
-The [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground) property of [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) can be used to customize the toolbar text foreground.
 
 {% endhighlight %}
 
@@ -111,6 +110,8 @@ The following code illustrates how to set the value of the foreground property:
 
 ## Customizing a FrameworkElement's style
 
+This section demonstrates how to customize a ToolBarAdv by loading an external ResourceDictionary that contains style definitions. 
+
 {% tabs %}
 
 {% highlight C# %}
@@ -124,10 +125,6 @@ toolBar.ControlsResourceDictionary = new ResourceDictionary()
 Source = new Uri("ControlsResouce.xaml", UriKind.RelativeOrAbsolute)
 
 };
-
-}
-
-
 
 {% endhighlight %}
 

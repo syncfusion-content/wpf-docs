@@ -20,11 +20,3 @@ The ToolBarAdv control is a container for a group of commands or controls that h
 * [ToolBarAdv state](ToolBarAdv-state.md) – Docking, Floating, or Hidden states via `ToolBarState`.
 * [Specifying location for floating ToolBarAdv](ToolBarAdv-state.md#specifying-location-for-floating-toolbaradv) – Position the floating toolbar using `FloatingBarLocation`.
 * [ToolBarManager](ToolBarManager.md) – A container that supports docking, floating, and content area layout.
-
-## Assembly deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#toolbaradv) section for the list of assemblies or NuGet packages that need to be added as references to use the ToolBarAdv control. The minimum NuGet package required is `Syncfusion.Shared.WPF`.
-
-You can find more details about installing the NuGet package in a WPF application in the following link:
-
-[How to install nuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)

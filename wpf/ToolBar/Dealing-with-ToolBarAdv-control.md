@@ -13,7 +13,7 @@ The following sections describe how to position, customize, and populate the ite
 
 ## Specifying the position of ToolBarAdv in a ToolBarTrayAdv
 
-The position of the ToolBarAdv in the ToolBarTrayAdv can be specified using the `Band` and `BandIndex` properties. `Band` indicates the band in the ToolBarTrayAdv where the ToolBarAdv has to be placed. `BandIndex` indicates the order in which the ToolBarAdv is placed within the band.
+The position of the ToolBarAdv in the ToolBarTrayAdv can be specified using the [Band](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_Band) and [BandIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_BandIndex) properties. `Band` indicates the band in the ToolBarTrayAdv where the ToolBarAdv has to be placed. `BandIndex` indicates the order in which the ToolBarAdv is placed within the band.
 
 {% tabs %}
 
@@ -60,8 +60,6 @@ The position of the ToolBarAdv in the ToolBarTrayAdv can be specified using the 
 </syncfusion:ToolBarAdv>
 
 </syncfusion:ToolBarTrayAdv>
-
-
 
 {% endhighlight %}
 
@@ -130,8 +128,6 @@ tray.ToolBars.Add(toolBar);
 
 Grid1.Children.Add(tray);
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -150,10 +146,9 @@ ToolBarAdv allows you to set the overflow mode for each item.
 
 ![Dealing-with-ToolBarAdv-control-img2](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img2.jpeg)
 
-
 ## Show or hide Gripper
 
-The gripper can show and hide in ToolBarAdv using the `GripperVisibility` property. To collapse the gripper in the ToolBarAdv, set the GripperVisibility as Collapsed. By default its value is visibility.
+The gripper can show and hide in ToolBarAdv using the [GripperVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_GripperVisibility) property. To collapse the gripper in the ToolBarAdv, set the GripperVisibility as Collapsed. By default its value is visibility.
 
 Following code illustrates how to hide the gripper:
 
@@ -161,8 +156,6 @@ Following code illustrates how to hide the gripper:
 
 {% highlight XAML %}
 <syncfusion:ToolBarAdv GripperVisibility="Collapsed"/>
-
-
 
 {% endhighlight %}
 
@@ -172,24 +165,20 @@ ToolBarAdv toolBar = new ToolBarAdv();
 
 toolBar.GripperVisibility = Visibility.Collapsed;
 
-
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Dealing-with-ToolBarAdv-control-img3](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img3.jpeg)
 
-
 ## Orientation of ToolBarTrayAdv
 
-ToolBarAdv provide two different orientation support such as Horizontal and Vertical. The desired orientation for ToolBarAdv can be changed using the `Orientation` property of ToolBarTrayAdv.
+ToolBarAdv provide two different orientation support such as Horizontal and Vertical. The desired orientation for ToolBarAdv can be changed using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_Orientation) property of ToolBarTrayAdv.
 
 {% tabs %}
 
 {% highlight xaml %}
+
 <syncfusion:ToolBarTrayAdv Orientation="Vertical" >
 
 <syncfusion:ToolBarAdv ToolBarName="Standard">
@@ -232,8 +221,6 @@ ToolBarAdv provide two different orientation support such as Horizontal and Vert
 
 </syncfusion:ToolBarTrayAdv>
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
@@ -266,18 +253,15 @@ tray.ToolBars.Add(toolBar);
 
 Grid1.Children.Add(tray);
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Dealing-with-ToolBarAdv-control-img4](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img4.jpeg)
 
-
 ## Add or Remove buttons
 
-ToolBarAdv provides the option to show or hide an item at runtime using the **Add or Remove** button. To enable it, set the `EnableAddRemoveButton` property of ToolBarAdv to `True`. The default value is `false`. Users can unselect the checkboxes of items to hide them from the toolbar.
+ToolBarAdv provides the option to show or hide an item at runtime using the **Add or Remove** button. To enable it, set the [EnableAddRemoveButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_EnableAddRemoveButton) property of ToolBarAdv to `True`. The default value is `false`. Users can unselect the checkboxes of items to hide them from the toolbar.
 
 ### Adding an item to the Add or Remove button
 
@@ -286,6 +270,7 @@ Following code illustrates how to add an item in Add or Remove Buttons:
 {% tabs %}
 
 {% highlight xaml %}
+
 <syncfusion:ToolBarTrayAdv>
 
 <syncfusion:ToolBarAdv EnableAddRemoveButton="True" >
@@ -307,8 +292,6 @@ Following code illustrates how to add an item in Add or Remove Buttons:
 </syncfusion:ToolBarAdv>
 
 </syncfusion:ToolBarTrayAdv>
-
-
 
 {% endhighlight %}
 
@@ -351,14 +334,11 @@ tray.ToolBars.Add(toolBar);
 
 Grid1.Children.Add(tray);
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Dealing-with-ToolBarAdv-control-img5](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img5.jpeg)
-
 
 ## Hiding the ToolBarItem
 
@@ -407,12 +387,8 @@ To hide a particular ToolBarItem, set the `IsAvailable` attached property of the
 
 </syncfusion:ToolBarTrayAdv>
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Dealing-with-ToolBarAdv-control-img6](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img6.jpeg)
-
-

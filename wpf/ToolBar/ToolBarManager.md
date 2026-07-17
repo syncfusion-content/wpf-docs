@@ -71,8 +71,6 @@ The following code illustrates how to place a ToolBarAdv at the top of a ToolBar
 
 </syncfusion:ToolBarManager>     
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
@@ -104,4 +102,3 @@ Grid1.Children.Add(manager);
 {% endhighlight %}
 
 {% endtabs %}
-

@@ -24,6 +24,14 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Creating the project
 
+1. Create a new WPF project in Visual Studio.
+
+2. Add the following required assembly references to the project:
+
+    * Syncfusion.Shared.WPF
+
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**,
+
 {% capture codesnippet1 %}
 {% tabs %}
 
@@ -39,8 +47,6 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
 Title="MainWindow" Height="350" Width="525">
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -55,8 +61,6 @@ Title="MainWindow" Height="350" Width="525">
 {% highlight XAML %}
 
 <syncfusion:ToolBarAdv Height="100" HorizontalAlignment="Left" Margin="92,90,0,0" Name="toolBarAdv1" VerticalAlignment="Top" Width="200" />
-
-
 
 {% endhighlight %}
 
@@ -86,8 +90,8 @@ tool.Height = 50;
 
 ![Appearance and Structure](Getting-Started-images/Getting-Started-img1.jpeg)
 
-* The **Overflow** button is a toggle button that opens the overflow panel.
-* The **Gripper** is used to drag the ToolBarAdv to change its band. The state of the ToolBarAdv can be changed to float and dock by clicking the gripper and dragging the ToolBarAdv, when the ToolBarAdv is hosted in a ToolBarManager.
+* The Overflow button is a toggle button that opens the overflow panel.
+* The Gripper is used to drag the ToolBarAdv to change its band. The state of the ToolBarAdv can be changed to float and dock by clicking the gripper and dragging the ToolBarAdv, when the ToolBarAdv is hosted in a ToolBarManager.
 
 ## Setting icon template
 
@@ -191,7 +195,6 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
  
-
 ![Setting Icon Template](Getting-Started-images/Getting-Started-img2.png)
 
 ## Properties
@@ -385,9 +388,5 @@ ToolBarAdv supports various built-in themes. Apply a theme to the ToolBarAdv usi
 
 * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
-
-  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
-  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
    ![Setting theme to WPF ToolBarAdv](Getting-Started-images/Theme.png)
