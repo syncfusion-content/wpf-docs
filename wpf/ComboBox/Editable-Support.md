@@ -11,7 +11,7 @@ documentation: ug
 
 ## IsEditable
 
-The `IsEditable` property allows the user to edit the text in the ComboBoxAdv. The default value is `false`.
+The [IsEditable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_IsEditable) property allows the user to edit the text in the ComboBoxAdv. The default value is `false`.
 
 <table>
 <tr>
@@ -35,6 +35,7 @@ NA</td></tr>
 The `IsEditable` property can be added directly to an application in the following way.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:ComboBoxAdv IsEditable="true"></syncfusion:ComboBoxAdv>

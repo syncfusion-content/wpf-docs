@@ -11,8 +11,6 @@ documentation: ug
 
 ## Creating the ComboBoxAdv control in expression blend
 
-## Creating the ComboBoxAdv control in Expression Blend
-
 To create a `ComboBoxAdv` instance in Expression Blend:
 
 1. Open Expression Blend.
@@ -40,7 +38,7 @@ You can customize the appearance of the ComboBoxAdv control by editing the style
 
 ### Blendability
 
-You can edit the style of ComboBoxAdv by using Expression Blend. To edit the ComboBoxAdv control’s style in Expression Blend:
+You can edit the style of ComboBoxAdv by using Expression Blend. To edit the ComboBoxAdv control's style in Expression Blend:
 
 1. Drag the ComboBoxAdv control to the Design view. The ComboBoxAdv control will appear as shown in the screen shot displayed below.
 2. Right-click the ComboBoxAdv control, select Edit Template, and then select Edit a Copy.
