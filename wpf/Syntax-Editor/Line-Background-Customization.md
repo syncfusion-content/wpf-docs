@@ -1,27 +1,29 @@
 ---
 layout: post
 title: Line Background Customization in WPF Syntax Editor | Syncfusion
-description: Learn about Line Background Customization support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+description: Learn about Line Background Customization support in Syncfusion Essential Studio WPF Syntax Editor (EditControl) control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Line Background Customization in WPF Syntax Editor
+# Line Background Customization in WPF Syntax Editor (EditControl)
 
-## Applying line background customization
+The EditControl provides several ways to customize the background color of specific lines. The samples below assume `using Syncfusion.Windows.Edit;` and an `EditControl` instance named `editControl1`.
 
-The `SetLineBackground` function helps to customize the background color of specific lines.
+## Applying a line background
 
-### Method
+The `SetLineBackground` method customizes the background color of a single line.
+
+### Method signature
 
 `SetLineBackground(lineNumber, fullLine, brush)`: Helps to customize the background of line.
 
-### Arguments
+### Parameters
 
-`lineNumber`: Specifies the line number where the cursor is currently located in EditControl.
-
-`fullLine`: Specifies whether to highlight full line or not.
+* `lineNumber` – the 1-based line number to which the background is applied.
+* `fullLine` – `true` to highlight the full line width; `false` to highlight only the text area.
+* `brush` – the `System.Windows.Media.Brush` used to paint the background.
 
 `brush`: Specifies the `Brush` for background customization.
 
@@ -47,24 +49,23 @@ this.editControl1.SetLineBackground(this.editControl1.LineNumber, true, Brushes.
 
 ![SetLineBackground](Line-Background-Customization_images/SetLineBackground.png)
 
-## Resetting line background customization
+## Resetting a line background
 
-The `ResetLineBackground` function helps to reset the background color of customized lines.
+The `ResetLineBackground` method clears the background color applied by `SetLineBackground`.
 
-### Method
+### Method signature
 
 `ResetLineBackground(lineNumber)`: Helps to reset the background customization of line.
 
-### Arguments
 
-`lineNumber`: Specifies the line number where the cursor is currently located in EditControl.
+### Parameters
+
+* `lineNumber` – the 1-based line number to reset.
 
 {% tabs %}
 
 {% highlight C# %}
-
-// Reset the background to a specified Line.
-
+// Reset the background of the current line.
 this.editControl1.ResetLineBackground(this.editControl1.LineNumber);
 
 {% endhighlight %}
@@ -109,11 +110,8 @@ public MainWindow()
     if (args.LineItem.LineNumber % 2 == 0)
    
         {
-   
             args.BackgroundColor = Brushes.LightGray;
-   
             args.IsFullLine = false;
-   
         }
 }
 
@@ -156,4 +154,3 @@ public MainWindow()
 N> The on demand line background customization is recommended when the `EditControl` is loaded with huge data.
 
 ![OnBeforeEvent](Line-Background-Customization_images/OnBeforeEvent.png)
-
