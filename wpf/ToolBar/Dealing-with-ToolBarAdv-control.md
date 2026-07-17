@@ -148,10 +148,6 @@ ToolBarAdv allows you to set the overflow mode for each item.
 * `OverflowMode.Never` – the specified item will never be moved to the overflow popup.
 * `OverflowMode.AsNeeded` – the specified item will be listed in the overflow popup if required. This is the default value.
 
-* OverflowMode.Always – Specified item will always be listed in the Overflow popup.
-* OverflowMode.Never - Specified item will never be moved to the Overflow popup.
-* OverflowMode.AsNeeded - Specified item will be listed in the Overflow popup if required.
-
 ![Dealing-with-ToolBarAdv-control-img2](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img2.jpeg)
 
 
