@@ -1,13 +1,13 @@
 ---
 layout: post
 title: RoutedUICommands in WPF Syntax Editor control | Syncfusion
-description: Learn about RoutedUICommands support in Syncfusion Essential Studio WPF Syntax Editor (EditControl) control, its elements and more.
+description: Learn about RoutedUICommands support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# RoutedUICommands in WPF Syntax Editor (EditControl)
+# RoutedUICommands in WPF Syntax Editor
 
 **EditCommands members**
 

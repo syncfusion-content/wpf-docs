@@ -8,7 +8,7 @@ documentation: ug
 ---
 # End user capabilities in WPF Chromeless Window
 
-The user can perform the operations listed below through the UI provided by the ChromelessWindow.
+The user can perform the below listed operations through the UI provided by the ChromelessWindow. 
 
 1. Maximize/Minimize
 
@@ -20,53 +20,56 @@ The user can perform the operations listed below through the UI provided by the 
 
 ## Maximize/Minimize
 
-The end user can maximize or minimize the window by using the Maximize and Minimize buttons at the top-right corner of the ChromelessWindow.
+The end user can maximize or minimize the buttons by using the Maximize and Minimize Buttons at the Top-Right corner of the ChromelessWindow
 
 ![End-user-capabilities_images1](End-user-capabilities_images/End-user-capabilities_img1.jpeg)
 
 ## Restore
 
-After the window is minimized or maximized, the respective button is replaced by a **Restore** button. By clicking this restore button, the user can bring the **ChromelessWindow** to its **Normal** state.
+After minimized or maximized the respective button is replaced by a **Restore** button. By clicking on this restore button the user can bring the **ChromelessWindow** to its **Normal** state.
 
 ![End-user-capabilities_img2](End-user-capabilities_images/End-user-capabilities_img2.jpeg)
 
 ## Close
 
-The user can close the window by using the Close button at the top-right corner of the ChromelessWindow.
+The user can close the Window by using the Close Button at the Top-Right Corner of the ChromelessWindow
 
 ![End-user-capabilities_images3](End-user-capabilities_images/End-user-capabilities_img3.jpeg)
 
 ## Resize
 
-The window can be resized by clicking and dragging the resize border.
+The Window can be resize by clicking and dragging the Resizable Border
 
-ChromelessWindow supports the following four resize modes. The default value is `CanResize`.
+ChromelessWindow supports the following four Resize Modes
 
-* `NoResize`
-* `CanMinimize`
-* `CanResize`
-* `CanResizeWithGrip`
+1. NoResize
 
-### NoResize
+2. CanMinimize
 
-In `NoResize` mode, the window cannot be resized. The Minimize and Maximize buttons are not displayed in the title bar.
+3. CanResize
+
+4. CanResizeWithGrip
+
+**NoResize**
+
+In NoResize mode, the window cannot able to resize. The Minimize and Maximize buttons are not displayed in the title bar
 
 ![End-user-capabilities_img4](End-user-capabilities_images/End-user-capabilities_img4.jpeg)
 
-### CanMinimize
+**CanMinimize**
 
-In `CanMinimize` mode, the window can only be minimized, since only the Minimize button is enabled.
+In this mode the window can only be minimize, since the Minimize button alone enabled.  
 
 ![End-user-capabilities_img5](End-user-capabilities_images/End-user-capabilities_img5.jpeg)
 
-### CanResize
+**CanResize**
 
-In `CanResize` mode, a window can be resized. The Minimize and Maximize buttons are both shown and enabled.
+In CanResize Mode, a window can be resized. The Minimize and Maximize buttons are both shown and enabled
 
 ![End-user-capabilities_img6](End-user-capabilities_images/End-user-capabilities_img6.jpeg)
 
-### CanResizeWithGrip
+**CanResizeWithGrip**
 
-In `CanResizeWithGrip` mode, a window can be resized. A resize grip appears in the bottom-right corner of the window. The Minimize and Maximize buttons are both shown and enabled.
+In CanResizeWithGrip mode, a window can be resized. A resize grip appears in the bottom-right corner of the window. The Minimize and Maximize buttons are both shown and enabled
 
 ![End-user-capabilities_img7](End-user-capabilities_images/End-user-capabilities_img7.jpeg)

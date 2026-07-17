@@ -9,7 +9,7 @@ documentation: ug
 
 # MultiSelection Support in WPF ComboBox (ComboBoxAdv)
 
-This section explains how to select multiple items and how to select items programmatically in the [WPF ComboBox](https://www.syncfusion.com/wpf-controls/combobox) (ComboBoxAdv) control.
+This section explains how to select the multiple items and select the items programmatically in the [WPF ComboBox](https://www.syncfusion.com/wpf-controls/combobox) (ComboBoxAdv) control.
 
 ## Properties
 
@@ -37,9 +37,9 @@ ObservableCollection&lt;object&gt;</td><td>
 NA</td></tr>
 </table>
 
-## Adding multiple selection to an application
+## Adding multiple selections to an application
 
-You can select multiple items in the WPF ComboBox (ComboBoxAdv) control by setting the [`AllowMultiSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property to `true`.
+You can select the multiple items in the WPF ComboBox (ComboBoxAdv) control by setting the [AllowMultiSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property to `true`.
 
 {% tabs %}
 
@@ -58,15 +58,15 @@ comboBoxAdv.AllowMultiSelect = true;
 {% endhighlight %}
 {% endtabs %}
 
-## Selecting items programmatically
+## Selecting an item through programmatically
 
-You can select items programmatically by using the [`SelectedItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_SelectedItems) property. When `AllowMultiSelect` is set to `true`, the `SelectedItems` property exposes the items that are selected in the drop-down list.
+You can select the items programmatically by using the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_SelectedItems) property. When `AllowMultiSelect` is set to `true`, the `SelectedItems` property exposes the items that are selected in the drop-down list.
 
-In the example below, the first two items from the observable collection are bound to the `SelectedItems` property.
+In the below example, first two items from the Observable Collection bound to the `SelectedItems` property.
 
-### Creating the model and view-model
+### Creating Model and ViewModel data for DataBinding
 
-1. Create a data object class named `Country` and declare the property as follows.
+1. Create a data object class named **Country** and declare the property as follows.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -84,7 +84,7 @@ public class Country
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Create a `ViewModel` class with `SelectedItems`, which are initialized with data objects in the constructor.
+2. Create a **ViewModel** class with `SelectedItems`, which are initialized with data objects in constructor.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -146,7 +146,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3. To bind the `ComboBoxAdv` to data, set the `ViewModel` as the `DataContext` and bind `Countries` to the [`ItemsSource`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource) property.
+3. To bind the `ComboBoxAdv` to data, bind the collection created in the previous step to the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=windowsdesktop-8.0&viewFallbackFrom=netcore-3.1#System_Windows_Controls_ItemsControl_ItemsSource) property in XAML by setting the `ViewModel` as `DataContext`.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -168,13 +168,15 @@ public class ViewModel : INotifyPropertyChanged
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Adding multiple selections to an application in WPF ComboBoxAdv](ComboBoxAdv_images/wpf-comboboxadv-multiSelection.png)
+![Adding multiple selections to an application in WPF ComboBoxAdv](Comboboxadv_images/wpf-comboboxadv-multiSelection.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-ComboBoxAdv-MultiSelection)
 
-## Overriding the selected items programmatically
+## Override selected items programmatically
 
-You can override the selected items programmatically by overriding the [`OnItemChecked`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_OnItemChecked_System_Object_System_Collections_ObjectModel_ObservableCollection_System_Object__) and [`OnItemUnchecked`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_OnItemUnchecked_System_Object_System_Collections_ObjectModel_ObservableCollection_System_Object__) methods. Build the project so the custom `ComboBoxExt` is available before the XAML is parsed.
+
+You can override the selected items programmatically by overriding the [`OnItemChecked`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_OnItemChecked_System_Object_System_Collections_ObjectModel_ObservableCollection_System_Object__) and [`OnItemUnchecked`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_OnItemUnchecked_System_Object_System_Collections_ObjectModel_ObservableCollection_System_Object__) method.
+
 
 {% tabs %}
 
@@ -252,17 +254,17 @@ public class ComboBoxExt : ComboBoxAdv
 
 {% endtabs %}
 
-On selecting Asia, the items at indices 1 and 2 (for example, India and China) are automatically added to the selected items.
+On selecting the Asia, then India and China will be automatically added into selected items. 
 
-![WPF ComboBoxAdv override checked and unchecked items](ComboBoxAdv_images/wpf-comboboxadv-override.png)
+![WPF ComboBoxAdv override checked and unchecked items](Comboboxadv_images/wpf-comboboxadv-override.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-combobox-examples/tree/main/Samples/Dynamic-checked-items)
 
-## Multi-select edit using tokens
+## Multiselect edit using tokens
 
-The selected items are represented by a rounded-polygon shape with a close icon, which can be interacted with by pressing the close button. The [`EnableToken`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_EnableToken) property determines whether the ComboBoxAdv's selected items should be displayed as tokens. The default value is `false`.
+The selected items are now represented by a rounded-polygon shape with a close icon, which can be interacted with by pressing the close button. The [`EnableToken`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_EnableToken) property determines whether the ComboBoxAdv's selected items should be displayed as tokens.
 
-When an item is selected from the drop-down, it is added to the text area as a token. The corresponding item is removed from the text box when you click the close icon.
+When an item is selected from the dropdown, it is added to the text area as a token. The appropriate item will be removed from the text box when you click the close icon.
 
 {% tabs %}
 {% highlight XAML %}
@@ -287,19 +289,25 @@ combobox.EnableToken = true;
 
 ![WPF ComboBoxAdv Token support](ComboBoxAdv_images/wpf-comboboxadv-token-support.gif)
 
-N> Token support is available only in multi-selection mode. The text area height automatically increases or decreases based on the placement of the selected items.
+N> Only the multiselection mode has token support. ComboBox's text area height will be increased or decreased automatically based on the placement of the selected items.
 
 ### Editing
 
-You can type any text in the text box, and it will be added as a token only if it matches an item in the drop-down.
+You can type any text in textbox, and it will be added as a token only if it matches the dropdown items.
 
 ![WPF ComboBoxAdv Editing support](ComboBoxAdv_images/wpf-comboboxadv-editing-support.gif)
 
 ### Keyboard access
 
-* Use the **Down Arrow**, **Up Arrow**, **Space**, **Enter**, and **Tab** keys to select an item from the drop-down.
-* Use the **Enter** and **Tab** keys to validate the typed text. It is added as a token only if it matches an item in the drop-down.
-* Use the **Backspace** key to remove the last token from the text area.
-* Press the **Esc** key to close the drop-down if it is open.
+•	Using the **Down Arrow**, **Up Arrow**, **Space**, **Enter** and **Tab** keys item can be selected from the combobox.
+
+•	Using the **Enter** and **Tab** keys, typed text will be validated and added as token if it is available in dropdown items.
+
+•	Using the **Backspace** key, the last positioned token will be removed from the text area.
+
+•	When the **Esc** key is pressed, the drop-down area will be closed if it has been opened already.
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-combobox-examples/tree/main/Samples/Token-support)
+
+
+

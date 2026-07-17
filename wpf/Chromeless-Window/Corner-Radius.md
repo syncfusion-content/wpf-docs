@@ -8,11 +8,9 @@ documentation: ug
 ---
 # Corner Radius in WPF Chromeless Window
 
-The corner radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the window, use the `CornerRadius` property of the ChromelessWindow.
+Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the windows, use **CornerRadius** property of the ChromelessWindow.
 
-The default value is `0`, which implies sharp corners.
-
-N> `AllowsTransparency` must be set to `True` for the rounded corners to be visible. Without it, the non-client area of the window clips the rounded corners.
+The default value is zero, which implies sharp corners
 
 {% tabs %}
 

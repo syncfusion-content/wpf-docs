@@ -9,7 +9,7 @@ documentation: ug
 
 # Watermark Support in WPF ComboBox (ComboBoxAdv)
 
-The watermark displays a default text in the ComboBoxAdv when no item is selected in the drop-down list. The default text is hidden as soon as the user selects an item or starts editing (when `IsEditable` is `true`).
+It displays the default text in the ComboBoxAdv when none of the items is selected in the drop down list.
 
 <table>
 <tr>
@@ -28,9 +28,9 @@ String</td><td>
 NA</td></tr>
 </table>
 
-## Adding the DefaultText property to an application
+## Adding DefaultText property to an application 
 
-The `DefaultText` property can be added directly to an application in the following way.
+DefaultText property can be added directly to an application in the following way: 
 
 {% tabs %}
 {% highlight xaml %}
@@ -48,5 +48,3 @@ comboBox.DefaultText = "..Choose Items..";
 {% endtabs %}
 
 ![Adding default text of watermark-support in WPF combobox](ComboBoxAdv_images/ComboBoxAdv_img10.png)
-
-N> The default text is also shown when the user clears the selected item in the editor. If the bound `ItemsSource` is empty, the default text is still displayed.

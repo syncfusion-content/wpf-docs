@@ -9,11 +9,11 @@ documentation: ug
 
 # WPF ComboBox (ComboBoxAdv) Overview
 
-The [`ComboBoxAdv`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) is a WPF control that allows the user to type a value or choose an option from a list of predefined options. It has several out-of-the-box features such as data binding, multi-selection, editing, watermarking, and templating.
+The [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control allows the component that allows user to type a value or choose an option from a list of predefined options. It has several out of the box features such as data binding, multiselection, editing and more.
 
-![Overview of ComboBoxAdv](Overview_images/Overview_img1.png)
+![Overivew of ComboBoxAdv](Overview_images/Overview_img1.png)
 
-## Key features
+Key features are:
 
 * [AllowMultiSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) : Support to select multiple values from drop-down list.
 * [DefaultText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_DefaultText) :  Helps to prompt user by providing additional hints about the data that should be entered into the text box.

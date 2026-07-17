@@ -8,7 +8,8 @@ documentation: ug
 ---
 # Visual Structure in WPF Chromeless Window
 
-The visual elements of the ChromelessWindow are explained in the snapshot below.
+The ChromelessWindow’s visual elements are explained in the below snapshot 
+
 
 ![Visual-Structure_images1](Visual-Structure_images/Visual-Structure_img1.jpeg)
 
