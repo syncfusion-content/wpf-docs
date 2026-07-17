@@ -370,7 +370,6 @@ ComboBoxAdv supports various built-in themes. Apply a theme to the ComboBoxAdv u
  
   ![Setting theme to WPF comboBoxAdv](Getting-Started_images/ComboBoxAdv_Theme_Support.png)
 
-
 ## See Also
 
 * [How to filter dropdown items in WPF editable ComboBoxAdv?](https://support.syncfusion.com/kb/article/9968/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
