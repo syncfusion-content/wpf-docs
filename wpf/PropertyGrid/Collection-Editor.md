@@ -17,7 +17,7 @@ You can add or remove the new items into the collection type properties by click
 
 ![PropertyGrid collection Editor with collection as selected object](CollectionEditor_Images/CollectionEditor_Structure.png)
 
-N> Collection type property must be derived from the `IList` type to edit the collection properties in  the `SelectedObject`. The `IList` collection property must contain the non-parameter constructor to edit the items in the collection, otherwise only the items in the collection property can be removed.
+N> Collection type property must be derived from the `IList` type to edit the collection properties in the `SelectedObject`. The `IList` collection property must contain a parameterless constructor to edit the items in the collection, otherwise only the items in the collection property can be removed.
 
 N> You will not be able to edit a collection of primitive type, such as `List<int>` and `List<string>`. 
 
@@ -74,7 +74,7 @@ public class ViewModel {
 PropertyGrid propertyGrid = new PropertyGrid();
 propertyGrid.DataContext = new ViewModel();
 propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Persons"));
-propertyGrid1.PropertyExpandMode = PropertyExpandModes.NestedMode;
+propertyGrid.PropertyExpandMode = PropertyExpandModes.NestedMode;
 
 {% endhighlight %}
 {% endtabs %}
