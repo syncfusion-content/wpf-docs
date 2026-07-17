@@ -36,6 +36,7 @@ You can add adaptive controls such as `Button`, `TextBox`, `Label`, and so on to
     </Grid>
 </syncfusion:ChromelessWindow>
 {% endhighlight %}
+
 {% highlight C# %}
 
 /// <summary>
@@ -151,6 +152,7 @@ In the following example, the `RightHeaderItemTemplate` is defined with a `Butto
     </Grid>
 </syncfusion:ChromelessWindow>
 {% endhighlight %}
+
 {% highlight C# %}
 
 /// <summary>
@@ -302,9 +304,6 @@ public class DelegateCommand : ICommand
         }
     }
 }
-
-
-
 
 {% endhighlight %}
 {% endtabs %}

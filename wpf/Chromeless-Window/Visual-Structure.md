@@ -11,7 +11,3 @@ documentation: ug
 The visual elements of the ChromelessWindow are explained in the snapshot below.
 
 ![Visual-Structure_images1](Visual-Structure_images/Visual-Structure_img1.jpeg)
-
-
-
-

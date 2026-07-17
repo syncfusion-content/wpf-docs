@@ -12,7 +12,7 @@ This section describes the styles and templates supported by the ChromelessWindo
 
 ## Custom template for the TitleBar
 
-ChromelessWindow allows you to write your own templates for the TitleBar. The TitleBar can be customized by using the `TitleBarTemplate` property. The following code snippet illustrates how to set the `TitleBarTemplate` property.
+ChromelessWindow allows you to write your own templates for the TitleBar. The TitleBar can be customized by using the [TitleBarTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarTemplate)property. The following code snippet illustrates how to set the `TitleBarTemplate` property.
 
 {% tabs %}
 
