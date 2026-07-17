@@ -61,7 +61,7 @@ To add the Syncfusion® assembly references in Visual Studio, follow the steps b
 
    **Themes Option:** Choose the necessary themes based on your requirements. To learn more about the built-in themes and their available assemblies, click the link below.
 
-   [https://help.syncfusion.com/wpf/themes/](https://help.syncfusion.com/wpf/themes/)
+   [https://help.syncfusion.com/wpf/themes/](https://help.syncfusion.com/wpf/themes)
 
    ![Themes selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img5.png)
 
