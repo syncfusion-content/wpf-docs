@@ -12,7 +12,7 @@ documentation: ug
 > **Important**
 > Starting with v16.2.0.x, if you refer to Syncfusion assemblies from the trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering the Syncfusion license key in your WPF application to use our components.
 
-This section explains how to add the [WPF ToolBar](https://www.syncfusion.com/wpf-controls/toolbar) (ToolBarAdv) control to an application and its structure.
+This section explains how to add the [WPF ToolBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) (ToolBarAdv) control to an application and its structure.
 
 ## Assembly deployment
 
