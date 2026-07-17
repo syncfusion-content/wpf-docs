@@ -33,5 +33,3 @@ documentation: ug
 * **Stencil**: Gallery of reusable symbols and nodes, which can be dragged and dropped onto the diagram surface at any number of times.
 * **Overview control**: Displays a small preview of the full diagram page, which allows you to improve the navigation.
 * **Localization**: Localizes every static text in the control to any supported language.
-
-N> Looking for the full WPF Diagram component overview, features, and pricing? Visit the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.

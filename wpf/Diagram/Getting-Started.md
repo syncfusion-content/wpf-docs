@@ -928,7 +928,6 @@ SfDiagram supports various built-in themes. Refer to the links below to apply th
   
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme)
 
-N> Looking for the full WPF Diagram component overview, features, and pricing? Visit the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.
 
 ## See Also
 
