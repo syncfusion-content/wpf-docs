@@ -17,7 +17,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 
-The following section helps you to build your application with [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram).
+The following section helps you to build your application with [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
 
 ## Creating the project
 
@@ -25,7 +25,7 @@ Create a new WPF project using Visual Studio. For more [details](https://learn.m
 
 ### Adding control via Designer
 
-[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) (SfDiagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) (SfDiagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![WPF Diagram from Designer](getting-started_images\wpf-diagram-designer.png)
 
@@ -928,7 +928,6 @@ SfDiagram supports various built-in themes. Refer to the links below to apply th
   
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Theme)
 
-N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) page.
 
 ## See Also
 
