@@ -16,24 +16,21 @@ ToolBarAdv provides different states such as Docking, Floating or Hidden. It can
 
     <syncfusion:ToolBarManager x:Name="toolBarManager" >
         <syncfusion:ToolBarManager.TopToolBarTray>
-            <syncfusion:ToolBarTrayAdv >
+            <syncfusion:ToolBarTrayAdv>
+
                 <syncfusion:ToolBarAdv ToolBarName="Standard" Band="0">
                     <Button syncfusion:ToolBarAdv.Label="New Document"
                     syncfusion:ToolBarAdv.Icon="Images/New.png">
-                        <Image Source="Images/New.png" Width="16" Height="16"/>
-                    </Button>
-                    <Button syncfusion:ToolBarAdv.Label="Open Document"
-                    syncfusion:ToolBarAdv.Icon="Images/Open.png">
-                        <Image Source="Images/Open.png" Width="16" Height="16"/>
                         <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
                     </Button>
                     <Button syncfusion:ToolBarAdv.Label="Open Document"
                     syncfusion:ToolBarAdv.Icon="Images/Open.png">
                         <Image Source="Images/OpenDocument.png" Width="16" Height="16"/>
                     </Button>
+				</syncfusion:ToolBarAdv>
+
                 <syncfusion:ToolBarAdv Band="1" ToolBarName="Extras"
-                 syncfusion:ToolBarManager.ToolBarState="Floating"
-			FloatingBarLocation="500,300">
+                syncfusion:ToolBarManager.ToolBarState="Floating" FloatingBarLocation="500,300">
                     <Button syncfusion:ToolBarAdv.Label="Save Document"
                      syncfusion:ToolBarAdv.Icon="Images/Save.png">
                         <Image Source="Images/SaveDocument.png" Width="16" Height="16"/>
@@ -42,7 +39,6 @@ ToolBarAdv provides different states such as Docking, Floating or Hidden. It can
                       syncfusion:ToolBarAdv.Icon="Images/Insert.png">
                         <Image Source="Images/InsertTable.png" Width="16" Height="16"/>
                     </Button>
-                </syncfusion:ToolBarAdv>
                 </syncfusion:ToolBarAdv>
             </syncfusion:ToolBarTrayAdv>
         </syncfusion:ToolBarManager.TopToolBarTray>
@@ -115,10 +111,8 @@ The location of the floating ToolBarAdv can be changed using the `FloatingBarLo
 {% endhighlight %}
 
 {% highlight C# %}
-
     ToolBarAdv toolBar = new ToolBarAdv();
     toolBar.FloatingBarLocation = new Point(50, 50);
-
 {% endhighlight %}
 
 {% endtabs%}
@@ -167,18 +161,22 @@ The following code illustrates this :
         <syncfusion:ToolBarManager x:Name="toolBarManager" >
            <syncfusion:ToolBarManager.TopToolBarTray>
                 <syncfusion:ToolBarTrayAdv >
-                        <syncfusion:ToolBarAdv ToolBarStateChanged="Toolbar1_ToolBarStateChanged" ToolBarName="Standard" Band="0">
+				
+                        <syncfusion:ToolBarAdv ToolBarStateChanged="Toolbar1_ToolBarStateChanged" 
+						ToolBarName="Standard" Band="0">
                                 <Button syncfusion:ToolBarAdv.Label="Open Document"
                                 syncfusion:ToolBarAdv.Icon="Images/Open.png">
                                         <Image Source="Images/Open.png" Width="16" Height="16"/>
                                 </Button>
+						</syncfusion:ToolBarAdv>
+								 
                         <syncfusion:ToolBarAdv Band="1" ToolBarName="Extras">
                                 <Button syncfusion:ToolBarAdv.Label="Save Document"
                                 syncfusion:ToolBarAdv.Icon="Images/Save.png">
                                         <Image Source="Images/Save.png" Width="16" Height="16"/>
                                 </Button>
                         </syncfusion:ToolBarAdv>
-                        </syncfusion:ToolBarAdv>
+                       
                 </syncfusion:ToolBarTrayAdv>
            </syncfusion:ToolBarManager.TopToolBarTray>
         </syncfusion:ToolBarManager> 
@@ -189,6 +187,7 @@ The following code illustrates this :
 
         ToolBarManager toolBarManager = new ToolBarManager();
         ToolBarTrayAdv toolBarTray = new ToolBarTrayAdv();
+		
         ToolBarAdv toolbar1 = new ToolBarAdv();
         // Subscribe to the ToolBarStateChanged event for toolbar1
         toolbar1.ToolBarStateChanged += Toolbar1_ToolBarStateChanged;
@@ -204,6 +203,7 @@ The following code illustrates this :
                 ToolTip = "Open Folder",
                 Margin = new Thickness(5, 0, 5, 0)
         });
+		
         ToolBarAdv toolbar2 = new ToolBarAdv();
         toolbar2.Items.Add(new Button
         {
@@ -217,6 +217,7 @@ The following code illustrates this :
                 ToolTip = "Save",
                 Margin = new Thickness(5, 0, 5, 0)
         });
+		
         // Add ToolBars to the ToolBarTrayAdv
         toolBarTray.ToolBars.Add(toolbar1);
         toolBarTray.ToolBars.Add(toolbar2);
@@ -234,4 +235,3 @@ The following code illustrates this :
 {% endhighlight %}
 
 {% endtabs%}
-
