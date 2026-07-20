@@ -198,7 +198,7 @@ Use the [TitleTextAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 
 ![Title text alignment](Getting-Started_images/TitleTextAlignment.png)
 
-## Title bar icon
+### Title bar icon
 
 You can set the caption icon by setting the [Icon](https://learn.microsoft.com/en-us/dotnet/api/system.windows.window.icon) property. The icon file (for example, `App.ico`) must be added to the project with its **Build Action** set to **Resource**.
 
@@ -220,7 +220,7 @@ You can set the caption icon by setting the [Icon](https://learn.microsoft.com/e
 
 ![wpf chromeless window icon](Getting-Started_images/wpf-chromeless-window-icon.png)
 
-## Title bar icon alignment
+### Title bar icon alignment
 
 Use the [IconAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_IconAlignment) property to align the title bar icon in the ChromelessWindow.
 
