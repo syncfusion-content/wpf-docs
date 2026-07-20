@@ -80,7 +80,7 @@ To add [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
 ### Adding control manually in C#
 
-To add [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) manually in C\#, do the steps below.
+To add [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) manually in C#, do the steps below.
 
 1. Add the required assembly reference to the project:
    * `Syncfusion.Shared.WPF`
@@ -127,7 +127,7 @@ Items can be added in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncf
 
 ### Add items using ComboBoxItemAdv
 
-The items in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) can be created by using [`ComboBoxItemAdv`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxItemAdv.html) in XAML or C\# code.
+The items in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) can be created by using [`ComboBoxItemAdv`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxItemAdv.html) in XAML or C# code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -318,7 +318,7 @@ this.comboBoxAdv.DisplayMemberPath = "Country";
 
 N> [View the sample in GitHub](https://github.com/SyncfusionExamples/bind-the-data-to-comboboxadv)
 
-### Defining ItemTemplate
+## Defining ItemTemplate
 
 You can customize the visualization of a data object using the [`ItemTemplate`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate) property.
 

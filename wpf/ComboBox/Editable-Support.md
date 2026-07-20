@@ -55,7 +55,7 @@ comboBox.IsEditable = true;
 
 You can find the expected item from the drop-down of the [`ComboBoxAdv`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) by using the [`AutoCompleteMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AutoCompleteMode) property. It can be used for both single and multiple selections in editable mode.
 
-There are three different `AutoCompleteMode` values.
+There are two different `AutoCompleteMode` values.
 
 * `None` – No suggestion is made. This is the default value.
 * `Suggest` – Suggestions are displayed in a drop-down menu based on the typed text.
