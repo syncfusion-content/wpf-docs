@@ -9,18 +9,21 @@ documentation: ug
 
 # Customization in WPF ToolBar (ToolBarAdv)
 
-## Customizing Floating ToolBarAdv
+This section describes how to customize the appearance of a ToolBarAdv.
 
-The floating ToolBarAdv can be customized using the FloatingToolBarAdvStyle property of ToolBarManager.
+## Customizing the floating ToolBarAdv
+
+This section demonstrates how to customize a floating ToolBarAdv by applying a FloatingToolBarStyle to the ToolBarManager and defining toolbar items.
 
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:ToolBarManager FloatingToolBarStyle="{StaticResource toolstyle}" >
 
-<syncfusion:ToolBarTrayAdv  >
+<syncfusion:ToolBarTrayAdv >
 
-<syncfusion:ToolBarAdv x:Name="Tooladv" ToolBarName="Standard"      >
+<syncfusion:ToolBarAdv x:Name="Tooladv" ToolBarName="Standard" >
 
 <Button syncfusion:ToolBarAdv.Icon="Images\NewDocumentHS.png" >
 
@@ -57,8 +60,6 @@ The floating ToolBarAdv can be customized using the FloatingToolBarAdvStyle prop
 </syncfusion:ToolBarTrayAdv>
 
 </syncfusion:ToolBarManager>
-
-
 
 {% endhighlight %}
 
@@ -103,11 +104,13 @@ The following code illustrates how to set the value of the foreground property:
 
 {% endtabs %}
 
-![Setting floaitng toolbar text forecolor](Getting-Started-images/Floating-ToolBar-Forecolor.png)
+![Setting the toolbar text foreground](Getting-Started-images/Floating-ToolBar-Forecolor.png)
 
-## Customize FrameworkElement’s Style
+> To preview the foreground on a *floating* toolbar, you must first detach the toolbar by clicking its gripper. See [ToolBarAdv state](ToolBarAdv-state.md) for instructions.
 
-In ToolBarAdv, style for FrameworkElement will be picked from a ResourceDictionary assigned in the ControlsResourceDictionary property of ToolBarAdv.
+## Customizing a FrameworkElement's style
+
+This section demonstrates how to customize a ToolBarAdv by loading an external ResourceDictionary that contains style definitions. 
 
 {% tabs %}
 
@@ -123,21 +126,15 @@ Source = new Uri("ControlsResouce.xaml", UriKind.RelativeOrAbsolute)
 
 };
 
-}
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Theme
 
-ToolBarAdv supports various built-in themes. Refer to the below links to apply themes for the ToolBarAdv,
+ToolBarAdv supports various built-in themes. Apply a theme to the ToolBarAdv using the links below.
 
-  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
-  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+* [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+* [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF ToolBarAdv](Getting-Started-images/Theme.png)
-
+![Setting theme to WPF ToolBarAdv](Getting-Started-images/Theme.png)
