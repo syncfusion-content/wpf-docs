@@ -9,32 +9,20 @@ documentation: ug
 
 # ColorValuePath in WPF TreeMap (SfTreeMap)
 
-The ColorValuePath ofSfTreeMap is a path to a field on the source object, which serves as the "color" of the object. 
+The [ColorValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ColorValuePath) of SfTreeMap is a path to a field on the source object, which serves as the "color" of the object. 
 
 {% highlight xaml %}
 
+<Grid Background="Black">
+    <Grid.DataContext>
+        <local:PopulationViewModel />
+    </Grid.DataContext>
 
-
-
-    <Grid Background="Black">
-
-        <Grid.DataContext>
-
-            <local:PopulationViewModel/>
-
-        </Grid.DataContext>
-
-        <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
-
-                              ColorValuePath="Growth"/>
-
-    </Grid> 
+    <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
+                          ColorValuePath="Growth" />
+</Grid>
 
 {% endhighlight %}
 
 
-
 N> The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
-
-
-

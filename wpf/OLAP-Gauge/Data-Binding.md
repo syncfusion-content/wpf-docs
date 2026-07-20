@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in WPF Olap Gauge control | Syncfusion
-description: Learn about Data Binding support in Syncfusion Essential Studio WPF Olap Gauge control, its elements and more details.
+title: Data Binding in WPF OLAP Gauge control | Syncfusion
+description: Learn about Data Binding support in Syncfusion Essential Studio WPF OLAP Gauge control, its elements and more details.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Olap Gauge
 
-## Binding an OLAP gauge to offline cube
+## Binding an OLAP gauge to an offline cube
 
 To connect to an OLAP cube available on the local machine, the physical path of the cube should be specified in the connection string. The following code snippet illustrates the same.
 
@@ -20,9 +20,9 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding an OLAP gauge to cube in local SQL Server
+## Binding an OLAP gauge to a cube in local SQL Server
 
-To connect to the OLAP cube available in SQL Server Analysis Service on the local machine, the server name and database name should be specified in the connection string. The following code example illustrates the same.
+To connect to the OLAP cube available in SQL Server Analysis Services on the local machine, the server name and database name should be specified in the connection string. The following code example illustrates the same.
 
 N> If credentials are required to connect to the cube, specify the user ID and password accordingly.
 
@@ -46,7 +46,7 @@ Dim DataManager As New OlapDataManager(connectionString)
 
 ## Binding OLAP gauge to cube in online SQL Server
 
-To connect to the OLAP cube available in SQL server Analysis Service on a the online server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
+To connect to the OLAP cube available in SQL server Analysis Services on a the online server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
 
 N> If credentials are required to connect to the cube, specify the user ID and password accordingly.
 
@@ -96,7 +96,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 ## Binding OLAP gauge to cube in online ActivePivot Server
 
-To connect to the OLAP cube available in ActivePivot server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
+To connect to the OLAP cube available in ActivePivot Server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
 
 N> If credentials are required to connect to the cube, specify the user ID and password accordingly.
 

@@ -7,7 +7,7 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-# Getting Started with WPF Olap Gauge
+# Getting Started with WPF OLAP Gauge
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from the trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering the Syncfusion license key in your WPF application to use the components.
@@ -182,12 +182,12 @@ End Namespace
 
 3. Then, browse the following assemblies and add them to the project.
 
-* Syncfusion.Gauge.WPF
-* Syncfusion.Core
-* Syncfusion.Olap.Base
-* Syncfusion.OlapGauge.WPF
-* Syncfusion.OlapShared.WPF
-* Syncfusion.Shared.WPF
+    * Syncfusion.Gauge.WPF
+    * Syncfusion.Core
+    * Syncfusion.Olap.Base
+    * Syncfusion.OlapGauge.WPF
+    * Syncfusion.OlapShared.WPF
+    * Syncfusion.Shared.WPF
 
 N> You can find these libraries under the following location:
 
@@ -221,12 +221,12 @@ To add the OlapReport and OlapDataManager in the application, refer to the [Olap
 
 3. Add the following Syncfusion assemblies manually to the project from the installed location.
 
-* Syncfusion.Gauge.WPF
-* Syncfusion.Core
-* Syncfusion.Olap.Base
-* Syncfusion.OlapGauge.WPF
-* Syncfusion.OlapShared.WPF
-* Syncfusion.Shared.WPF
+    * Syncfusion.Gauge.WPF
+    * Syncfusion.Core
+    * Syncfusion.Olap.Base
+    * Syncfusion.OlapGauge.WPF
+    * Syncfusion.OlapShared.WPF
+    * Syncfusion.Shared.WPF
 
 N> You can find these libraries under the following location:
 
@@ -246,9 +246,9 @@ N> You can find these libraries under the following location:
 
 5. Include the following namespaces in the code-behind for using OlapGauge, OlapReport, and OlapDataManager in the application.
 
-* Syncfusion.Olap.Reports
-* Syncfusion.Olap.Manager
-* Syncfusion.Windows.Gauge.Olap
+    * Syncfusion.Olap.Reports
+    * Syncfusion.Olap.Manager
+    * Syncfusion.Windows.Gauge.Olap
 
 {% tabs %}
 
