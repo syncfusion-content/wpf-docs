@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF TreeView (SfTreeView)
 
-The TreeView allows customizing appearance of the underlying data, and provides different functionalities to the end-user.
+The TreeView allows customizing the appearance of the underlying data and provides different functionalities to the end-user.
 
 ## ItemTemplate
 
@@ -80,7 +80,7 @@ The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) allows you 
 
 By default, the binding context of tree view item will be the data model object for Bound Mode and [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) for Unbound Mode.
 
-For Bound Mode, you can change the binding context of the treeview items by using [ItemTemplateContextType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
+For Bound Mode, you can change the binding context of the TreeView items by using the [ItemTemplateDataContextType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -217,7 +217,7 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customiz
 
 ## Indentation
 
-The TreeView allows customizing the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Indentation) property. The default value of this property is 20. This property can be customized at runtime.
+The TreeView allows you to customize the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Indentation) property. The default value of this property is `20`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -253,10 +253,10 @@ sfTreeView.ExpanderWidth = "40";
 
 ## ExpanderPosition
 
-The TreeView allows you change the position of expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderPosition) property. The default value of this property is `Start`. This property has following two positions:
+The TreeView allows you to change the position of the expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderPosition) property. The default value is `Start`. The property has the following values:
 
-Start: Allows displaying the expander view at the start position.
-End: Allows displaying the expander view at the end position.
+* `Start` — Displays the expander view at the start position.
+* `End` — Displays the expander view at the end position.
 
 {% tabs %}
 {% highlight xaml %}
@@ -323,7 +323,7 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customiz
 
 ## Animation
 
-The SfTreeView supports to animate expanding or collapsing the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeNodeView.html). To enable/disable the animation use [IsAnimationEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_IsAnimationEnabled) property of SfTreeView.
+The SfTreeView supports animating the expand and collapse of the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeNodeView.html). To enable or disable the animation, use the [IsAnimationEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_IsAnimationEnabled) property of SfTreeView.
 
 {% tabs %}
 {% highlight xaml %}
@@ -341,4 +341,4 @@ sfTreeView.IsAnimationEnabled = true;
 
 ![WPF TreeView Animation](Appearance_images/wpf-treeview-animation.gif)
 
-N> You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
+N> You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.

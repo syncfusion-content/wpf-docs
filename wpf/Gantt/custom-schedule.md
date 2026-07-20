@@ -9,9 +9,9 @@ documentation: ug
 
 # Custom Schedule in WPF Gantt
 
-Essential Gantt provides the custom schedule support that allows you to define your own schedule for Gantt to track the progress of projects. You can define the schedule for any measurement unit or for different types of date time formats namely quarterly basis scale and so on.
+Essential Gantt provides the custom schedule support that allows you to define your own schedule for Gantt to track the progress of projects. You can define the schedule for any measurement unit or for different types of date time formats, namely quarterly basis scale and so on.
 
-This feature will get the information from you and will draw the Gantt schedule with that information. Custom schedule is categorized into two types namely: 
+This feature will get the information from you and will draw the Gantt schedule with that information. Custom schedule is categorized into two types, namely: 
 
 * Custom Numeric 
 * Custom DateTime
@@ -20,7 +20,7 @@ These types are included in the existing ScheduleType enum.
 
 ## Custom Numeric
 
-Custom Numeric schedule is used to define your own schedule with any numeric measurement unit other than date time. With this schedule, you can track the progress based on your own measurement and there is no need to depend on Date Time. Two new API’s are added to the Mapping attributes to support this schedule in [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html) and [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html).
+Custom Numeric schedule is used to define your own schedule with any numeric measurement unit other than date time. With this schedule, you can track the progress based on your own measurement and there is no need to depend on Date Time. Two new APIs are added to the Mapping attributes to support this schedule in [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html) and [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html).
 
 ## Custom DateTime
 
@@ -34,13 +34,13 @@ In both the custom schedules, Gantt will get the information from the applicatio
 2. CellsPerUnit—Gets the information of a cell size of preceding row in the schedule based on the immediate next row. In CustomDateTime Schedule, the CellsPerUnit will be used to customize the cell. For example, in quarterly basis month cell, You need to draw a schedule by consolidating three months. For this, you need to define the CellsPerUnit of that corresponding row as 3.
 3. TimeUnit—Gets the information about the type of row, when the schedule type is CustomDateTime. The Time unit can be any one of the following:
 
-    * Seconds-represents the corresponding row as second's row.
-    * Minutes—represents the corresponding row as minute’s row.
-    * Hours—represents the corresponding row as hour’s row.
-    * Days—represents the corresponding row as day’s row.
-    * Weeks—represents the corresponding row as week’s row.
-    * Months—represents the corresponding row as month’s row.
-    * Years—represents the corresponding row as year’s row.
+    * Seconds—represents the corresponding row as a seconds row.
+    * Minutes—represents the corresponding row as a minutes row.
+    * Hours—represents the corresponding row as an hours row.
+    * Days—represents the corresponding row as a days row.
+    * Weeks—represents the corresponding row as a weeks row.
+    * Months—represents the corresponding row as a months row.
+    * Years—represents the corresponding row as a years row.
 
 #### Use Case Scenario
 
@@ -48,7 +48,7 @@ This will be useful when you like to define your own schedules with your own mea
 
 Example 1: The Research organizations may follow different measurements to track their work progress and the measurement will depend on their products. In this case, they can use CustomNumeric schedule to define the schedule with their own measure.
 
-Example 2: A very big construction project many have the time period of many years or months. They need some customized way of date time schedule to track their progress. In this scenario, they can use the CustomDateTime schedule to form the custom schedule like the schedule that has the time scale on quarterly basis to track their progress.
+Example 2: A very big construction project may have a time period of many years or months. They need some customized way of date time schedule to track their progress. In this scenario, they can use the CustomDateTime schedule to form the custom schedule like the schedule that has the time scale on quarterly basis to track their progress.
 
 #### Properties
 
@@ -79,7 +79,7 @@ Type </th></tr>
 <tr>
 <td>
 {{'[ScheduleCellCreated](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleCellCreated)'| markdownify }} </td><td>
-Event will be triggered whenever a schedule cell is created. The handler of the event will have the newly created cell (GanttScheduleCell) in the argument.By handling this event, you can customize the appearance of the cell. </td><td>
+Event will be triggered whenever a schedule cell is created. The handler of the event will have the newly created cell (`GanttScheduleCell`) in the argument. By handling this event, you can customize the appearance of the cell.</td><td>
 ScheduleCellCreated (object sender, ScheduleCellCreatedEventArgs args)</td><td>
 Routed Event </td></tr>
 </table>
@@ -125,11 +125,11 @@ Object</td></tr>
 
 ## Adding Custom Schedule to an Application
 
-To Add CustomNumeric Schedule to an application:
+To add the CustomNumeric Schedule to an application:
 
 1. Define the Mapping for [StartPointMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_StartPointMapping) and [FinishPointMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html#Syncfusion_Windows_Controls_Gantt_TaskAttributeMapping_FinishPointMapping) in [TaskAttributeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskAttributeMapping.html).
-1. Set the Gantt [ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) as CustomNumeric.
-2. Bind the [GanttScheduleRowInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleRowInfo.html) collection to the [CustomScheduleSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CustomScheduleSource) property of the Gantt.
+2. Set the Gantt [ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) as `CustomNumeric`.
+3. Bind the [GanttScheduleRowInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleRowInfo.html) collection to the [CustomScheduleSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CustomScheduleSource) property of the Gantt.
 
 The following code illustrates Adding Custom Schedule to an Application:
 
@@ -142,11 +142,11 @@ The following code illustrates Adding Custom Schedule to an Application:
                          ScheduleType="CustomNumeric"
                          UseAutoUpdateHierarchy="False">
     <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping TaskIdMapping="Id"                    
-                                         TaskNameMapping="Name"                
-                                         StartPointMapping="Start" 
-                                         FinishPointMapping="End"              
-                                         ChildMapping="ChildTask"              
+        <syncfusion:TaskAttributeMapping TaskIdMapping="Id"
+                                         TaskNameMapping="Name"
+                                         StartPointMapping="Start"
+                                         FinishPointMapping="End"
+                                         ChildMapping="ChildTopCountries"
                                          ProgressMapping="Complete"
                                          ResourceInfoMapping="Resource">
         </syncfusion:TaskAttributeMapping>
@@ -263,7 +263,7 @@ The following code illustrates Adding Custom Schedule to an Application:
 {% endhighlight  %}
 {% highlight c# %}
 
-this.ganttControl.ItemsSource = new ViewModel().TaskCollections;
+this.ganttControl.ItemsSource = new ViewModel().TopCountriesCollection;
 this.ganttControl.ScheduleType= ScheduleType.CustomNumeric;
 this.ganttControl.UseAutoUpdateHierarchy = false;
 
@@ -271,9 +271,9 @@ this.ganttControl.UseAutoUpdateHierarchy = false;
 TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
 taskAttributeMapping.TaskIdMapping = "Id";
 taskAttributeMapping.TaskNameMapping = "Name";
-taskAttributeMapping.StartDateMapping = "Start";
-taskAttributeMapping.ChildMapping = "ChildTask";
-taskAttributeMapping.FinishDateMapping = "End";
+taskAttributeMapping.StartPointMapping = "Start";
+taskAttributeMapping.ChildMapping = "ChildTopCountries";
+taskAttributeMapping.FinishPointMapping = "End";
 taskAttributeMapping.ProgressMapping = "Complete";
 taskAttributeMapping.ResourceInfoMapping = "Resource";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
@@ -341,7 +341,7 @@ public class TopCountries : NotificationObject
         }
         set
         {
-            // if the TopCountries is parent TopCountries it selects the minimum start date of the childTopCountriess
+            // if the TopCountries is parent TopCountries it selects the minimum start date of the childTopCountries
             if (childTopCountries != null && childTopCountries.Count >= 1)
             {
                 if (this._start != value)
@@ -371,7 +371,7 @@ public class TopCountries : NotificationObject
         }
         set
         {
-            // if the TopCountries is parent TopCountries it selects the maximum end date of the childTopCountriess
+            // if the TopCountries is parent TopCountries it selects the maximum end date of the childTopCountries
             if (this.childTopCountries != null && this.childTopCountries.Count >= 1)
             {
                 if (this._end != value)
@@ -389,10 +389,10 @@ public class TopCountries : NotificationObject
 
 
     /// <summary>
-    /// Gets or sets the complete.
+    /// Gets or sets the rank.
     /// </summary>
     /// <value>
-    /// The complete.
+    /// The rank.
     /// </value>
     public int Rank
     {
@@ -470,7 +470,7 @@ public class TopCountries : NotificationObject
             if (this.childTopCountries == null)
             {
                 this.childTopCountries = new ObservableCollection<TopCountries>();
-                /// Collection changed of child TopCountriess are hooked to listen and refresh the parent node based on the changes made in Child.
+                /// Collection changed of child TopCountries are hooked to listen and refresh the parent node based on the changes made in Child.
                 this.childTopCountries.CollectionChanged += ChildNodesCollectionChanged;
             }
             return this.childTopCountries;
@@ -478,7 +478,7 @@ public class TopCountries : NotificationObject
         set
         {
             this.childTopCountries = value;
-            ///Collection changed of child TopCountriess are hooked to listen and refresh the parent node based on the changes made in Child.
+            ///Collection changed of child TopCountries are hooked to listen and refresh the parent node based on the changes made in Child.
 
             this.childTopCountries.CollectionChanged += ChildNodesCollectionChanged;
 
@@ -515,7 +515,7 @@ public class TopCountries : NotificationObject
     /// </summary>
     private void UpdateData()
     {
-        /// Updating the start and end  based on the chagne occur in the date of child TopCountries
+        /// Updating the start and end  based on the change occur in the date of child TopCountries
         if (this.childTopCountries == null || this.childTopCountries.Count == 0)
         {
             return;
@@ -718,7 +718,7 @@ public class TopCountries : NotificationObject
          countryFlagDetails.Add("Singapore", "Flag_Singapore.png");
          countryFlagDetails.Add("Sri Lanka", "Flag_Sri_Lanka.png");
          countryFlagDetails.Add("Thailand", "Flag_Thailand.png");
-         countryFlagDetails.Add("Turkey", "Flag_Turke.png");
+         countryFlagDetails.Add("Turkey", "Flag_Turkey.png");
          countryFlagDetails.Add("Turkmenistan", "Flag_Turkmenistan.png");
          countryFlagDetails.Add("Uruguay", "Flag_Uruguay.png");
          countryFlagDetails.Add("Uzbekistan", "Flag_Uzbekistan.png");
@@ -754,9 +754,9 @@ To view samples:
 
 ## Adding CustomDateTime Schedule to an Application
 
-To Add CustomDateTime Schedule to an application:
+To add the CustomDateTime Schedule to an application:
 
-1. Define the Gantt [ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) as CustomDateTime.
+1. Define the Gantt [ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) as `CustomDateTime`.
 2. Bind the [GanttScheduleRowInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttScheduleRowInfo.html) collection to the [CustomScheduleSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_CustomScheduleSource) property of the Gantt.
 
 The following code illustrates this:
@@ -789,7 +789,7 @@ The following code illustrates this:
 
 {% highlight c# %}
 
-this.ganttControl.ItemsSource = new ViewModel().TaskCollections;
+this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 this.ganttControl.ScheduleType= ScheduleType.CustomDateTime;
 this.ganttControl.ShowChartLines = false;
 this.ganttControl.ShowNonWorkingHoursBackground = false;
@@ -1114,11 +1114,11 @@ public class ViewModel
         var taskDetails = new ObservableCollection<Task>();
         taskDetails.Add(new Task() { ID = 1, Name = "Scope", StartDate = new DateTime(2011, 8, 9), EndDate = new DateTime(2012, 6, 20), Progress = 40d });
         taskDetails[0].ChildCollection.Add((new Task() { ID = 2, Name = "Determine project office scope", StartDate = new DateTime(2011, 8, 9), EndDate = new DateTime(2012, 2, 20), Progress = 20d, }));
-        taskDetails[0].ChildCollection.Add((new Task() { ID = 3, Name = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 11, 6), EndDate = new DateTime(2012, 4, 7), Progress = 20d, }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 3, Name = "Justify Project Office via business model", StartDate = new DateTime(2011, 11, 6), EndDate = new DateTime(2012, 4, 7), Progress = 20d, }));
         taskDetails[0].ChildCollection.Add((new Task() { ID = 4, Name = "Secure executive sponsorship", StartDate = new DateTime(2012, 2, 10), EndDate = new DateTime(2012, 6, 14), Progress = 10d, }));
         taskDetails[0].ChildCollection.Add((new Task() { ID = 5, Name = "Secure Progress", StartDate = new DateTime(2012, 6, 14), EndDate = new DateTime(2012, 9, 14), Progress = 10d }));
 
-        taskDetails.Add(new Task() { ID = 6, Name = "Risk Assessment", StartDate = new DateTime(2012, 7, 15), EndDate = new DateTime(2011, 7, 24) });
+        taskDetails.Add(new Task() { ID = 6, Name = "Risk Assessment", StartDate = new DateTime(2012, 7, 15), EndDate = new DateTime(2012, 7, 24) });
         taskDetails[1].ChildCollection.Add((new Task() { ID = 7, Name = "Perform risk assessment", StartDate = new DateTime(2012, 2, 15), EndDate = new DateTime(2012, 8, 21), Progress = 20d, }));
         taskDetails[1].ChildCollection.Add((new Task() { ID = 8, Name = "Evaluate risk assessment", StartDate = new DateTime(2012, 5, 21), EndDate = new DateTime(2012, 7, 23), Progress = 20d, }));
         taskDetails[1].ChildCollection.Add((new Task() { ID = 9, Name = "Prepare contingency plans", StartDate = new DateTime(2012, 8, 21), EndDate = new DateTime(2013, 2, 24), Progress = 20d, }));
@@ -1128,10 +1128,10 @@ public class ViewModel
         taskDetails[2].ChildCollection.Add((new Task() { ID = 12, Name = "Prepare Meeting agenda", StartDate = new DateTime(2012, 9, 25), EndDate = new DateTime(2012, 12, 26), Progress = 20d, }));
         taskDetails[2].ChildCollection.Add((new Task() { ID = 13, Name = "Conduct review meeting", StartDate = new DateTime(2013, 1, 27), EndDate = new DateTime(2013, 7, 30), Progress = 20d, }));
         taskDetails[2].ChildCollection.Add((new Task() { ID = 14, Name = "Migrate critical issues", StartDate = new DateTime(2013, 3, 30), EndDate = new DateTime(2013, 7, 2), Progress = 20d, }));
-        taskDetails[2].ChildCollection.Add((new Task() { ID = 15, Name = "Estabilish change mgmt Control", StartDate = new DateTime(2013, 5, 3), EndDate = new DateTime(2013, 9, 6), Progress = 30d, }));
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 15, Name = "Establish change mgmt Control", StartDate = new DateTime(2013, 5, 3), EndDate = new DateTime(2013, 9, 6), Progress = 30d, }));
         taskDetails[2].ChildCollection.Add((new Task() { ID = 16, Name = "Monitoring Progress", StartDate = new DateTime(2013, 7, 6), EndDate = new DateTime(2013, 12, 6), Progress = 30d }));
 
-        taskDetails.Add(new Task() { ID = 17, Name = "Post Implementation", StartDate = new DateTime(2013, 7, 25), EndDate = new DateTime(2012, 3, 12) });
+        taskDetails.Add(new Task() { ID = 17, Name = "Post Implementation", StartDate = new DateTime(2013, 7, 25), EndDate = new DateTime(2014, 4, 12) });
         taskDetails[3].ChildCollection.Add((new Task() { ID = 18, Name = "Obtain User feedback", StartDate = new DateTime(2013, 7, 25), EndDate = new DateTime(2014, 4, 29), Progress = 20d, }));
         taskDetails[3].ChildCollection.Add((new Task() { ID = 19, Name = "Evaluate lessons learned", StartDate = new DateTime(2013, 10, 29), EndDate = new DateTime(2014, 7, 5), Progress = 20d, }));
         taskDetails[3].ChildCollection.Add((new Task() { ID = 20, Name = "Modify items as necessary", StartDate = new DateTime(2014, 1, 2), EndDate = new DateTime(2014, 9, 8), Progress = 20d, }));
@@ -1139,7 +1139,7 @@ public class ViewModel
 
         taskDetails[0].ChildCollection[0].Resource.Add(new Resource() { ID = 1, Name = "Leslie" });
         taskDetails[0].ChildCollection[1].Resource.Add(new Resource() { ID = 2, Name = "John" });
-        taskDetails[0].ChildCollection[2].Resource.Add(new Resource() { ID = 3, Name = "DavID" });
+        taskDetails[0].ChildCollection[2].Resource.Add(new Resource() { ID = 3, Name = "David" });
         taskDetails[0].ChildCollection[3].Resource.Add(new Resource() { ID = 4, Name = "Peter" });
 
         taskDetails[1].ChildCollection[0].Resource.Add(new Resource() { ID = 5, Name = "Neil" });
@@ -1148,7 +1148,7 @@ public class ViewModel
         taskDetails[1].ChildCollection[2].Resource.Add(new Resource() { ID = 9, Name = "Peterson" });
         taskDetails[1].ChildCollection[3].Resource.Add(new Resource() { ID = 10, Name = "Thomas" });
 
-        taskDetails[3].ChildCollection[1].Resource.Add(new Resource() { ID = 5, Name = "DavID" });
+        taskDetails[3].ChildCollection[1].Resource.Add(new Resource() { ID = 5, Name = "David" });
         taskDetails[3].ChildCollection[2].Resource.Add(new Resource() { ID = 7, Name = "Peter" });
         taskDetails[3].ChildCollection[3].Resource.Add(new Resource() { ID = 8, Name = "Thomas" });
 
@@ -1196,5 +1196,5 @@ To view samples:
 
 ## ScheduleCellCreatedEventArgs Class
 
-The ScheduleCellCreatedEventArgs consists of the current schedule cell in the name of CurrentCell. It is the GanttScheduleCell type. 
+The `ScheduleCellCreatedEventArgs` consists of the current schedule cell named `CurrentCell`. It is of the `GanttScheduleCell` type. 
 

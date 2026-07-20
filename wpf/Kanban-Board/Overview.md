@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WPF Kanban (SfKanban) control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Kanban (SfKanban) control, its elements and more.
+title: Overview of WPF Kanban (SfKanban) Control | Syncfusion
+description: Learn here all about the introduction of the Syncfusion WPF Kanban (SfKanban) control, its elements, and more.
 platform: wpf
 control: SfKanban
 documentation: ug
@@ -9,15 +9,18 @@ documentation: ug
 
 # WPF Kanban (SfKanban) Overview
 
-The Kanban control is an efficient way to visualize a workflow at each stage of completion. Kanban helps to define elegant planning and clear visualization of work progression. SfKanban also provide many features that are used to monitor the progressing tasks in software development cycle. 
+The Kanban control is an efficient way to visualize a workflow at each stage of completion. Kanban helps define elegant planning and clear visualization of work progression. The SfKanban control also provides many features that are used to monitor task progress in the software development cycle.
 
 ![SfKanban control in WPF](sfkanban_images/wpf-kanban-board-overview.png)
 
+## Key Features
 
-## Key features
+* **Workflows** - It allows users to control the transitions between tasks from one category (status) to another.
+* **Customization** - Kanban cards and placeholders can be customized.
+* **WIP Limit** - Visualize the Work-In-Progress limit.
+* **Indicator color customization** - The indicator color for Kanban cards can be customized.
+* **Dragging events** - Dragging events are raised while rearranging or repositioning Kanban cards.
 
-* WorkFlows – It allows user to control the transitions between tasks from one category (status) to another.
-* Customization – Kanban cards and place holders can be customized. 
-* WIP Limit – Visualize Work-In Progress limit.
-* Indicator color customization – Indicator color for Kanban cards can be customized.
-* Dragging events – Dragging events occurred while rearranging or repositioning Kanban cards.
+## Getting Started
+
+To get started with the SfKanban control, refer to the [Getting Started](Getting-started.md) documentation, which walks you through adding the control to a WPF project, populating it with data, and customizing the appearance.
