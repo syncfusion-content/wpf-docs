@@ -49,7 +49,7 @@ Me.ResizeBorderBrush = New SolidColorBrush(Colors.Maroon)
 
 ## BorderThickness
 
-To set the thickness for the resize border, use the [`ResizeBorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ResizeBorderThickness) property of the ChromelessWindow.This property virtually sets the region for the resize pointer to appear. Hence, a larger region makes it easier to resize the window.
+To set the thickness for the resize border, use the [`ResizeBorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ResizeBorderThickness) property of the ChromelessWindow. This property virtually sets the region for the resize pointer to appear. Hence, a larger region makes it easier to resize the window.
 
 To set this property, use the following code.
 

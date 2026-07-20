@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with WPF Chromeless Window
 
-This section explains how to implement the ChromelessWindow control.
+This section explains how to add and configure the ChromelessWindow control in a WPF application.
 
 ## Assembly deployment
 
@@ -171,12 +171,12 @@ You can customize the caption height by setting the [TitleBarHeight](https://hel
 
 ### Title bar text alignment
 
-The text alignment of the title can be set using the [`TitleTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleTextAlignment) property. The available options are listed below.
+Use the [TitleTextAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleTextAlignment) property to set the alignment of the title text in the ChromelessWindow. The following alignment options are available:
 
-* `Left`
-* `Right`
-* `Center`
-* `Stretch` – the title fills the available space between the icon and the caption buttons.
+* `Left` - Aligns the title text to the left.
+* `Right` - Aligns the title text to the right.
+* `Center` - Centers the title text within the title bar.
+* `Stretch` - Stretches the title text to fill the available space between the window icon and the caption buttons.
 
 {% tabs %}
 {% highlight XAML %}
@@ -198,7 +198,7 @@ The text alignment of the title can be set using the [`TitleTextAlignment`](http
 
 ![Title text alignment](Getting-Started_images/TitleTextAlignment.png)
 
-### Title bar icon
+## Title bar icon
 
 You can set the caption icon by setting the [Icon](https://learn.microsoft.com/en-us/dotnet/api/system.windows.window.icon) property. The icon file (for example, `App.ico`) must be added to the project with its **Build Action** set to **Resource**.
 
@@ -220,12 +220,14 @@ You can set the caption icon by setting the [Icon](https://learn.microsoft.com/e
 
 ![wpf chromeless window icon](Getting-Started_images/wpf-chromeless-window-icon.png)
 
-### Title bar icon alignment
+## Title bar icon alignment
 
-The title bar icon can be aligned to `Left` or `Right` using the [`IconAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_IconAlignment) property. Available options are:
+Use the [IconAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_IconAlignment) property to align the title bar icon in the ChromelessWindow.
 
-* `Left`
-* `Right`
+The following alignment options are available:
+
+* `Left` - Aligns the icon to the left side of the title bar.
+* `Right` - Aligns the icon to the right side of the title bar.
 
 {% tabs %}
 {% highlight XAML %}
@@ -247,7 +249,7 @@ The title bar icon can be aligned to `Left` or `Right` using the [`IconAlignment
 
 ![Chromeless Window icon alignment](Getting-Started_images/wpf-chromeless-window-icon-alignment.png)
 
-### Customizing the border of ChromelessWindow
+## Customizing the border of ChromelessWindow
 
 You can change the border color of the ChromelessWindow by setting the [ResizeBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ResizeBorderBrush) property. For full border customization, see [Customizing Border of the ChromelessWindow](Customizing-Border-of-the-ChromelessWindow.md).
 
