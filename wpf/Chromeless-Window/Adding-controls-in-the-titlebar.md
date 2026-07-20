@@ -123,9 +123,9 @@ N> The `Path` geometry in this sample is a question-mark glyph. For long path da
 
 ## Adding items with a data template
 
-You can customize the appearance of items displayed in the LeftHeaderItemsSource and RightHeaderItemsSource collections by using data templates.
+You can customize the appearance of items displayed in the `LeftHeaderItemsSource` and `RightHeaderItemsSource` collections by using data templates.
 
-Use the LeftHeaderItemTemplate property to define the visual appearance of items in the LeftHeaderItemsSource collection. Similarly, use the RightHeaderItemTemplate property to define the visual appearance of items in the RightHeaderItemsSource collection.
+Use the `LeftHeaderItemTemplate` property to define the visual appearance of items in the `LeftHeaderItemsSource` collection. Similarly, use the `RightHeaderItemTemplate` property to define the visual appearance of items in the `RightHeaderItemsSource` collection.
 
 {% tabs %}
 {% highlight XAML %}
