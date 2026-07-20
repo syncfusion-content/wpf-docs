@@ -30,7 +30,7 @@ The steps below show how to install Essential Studio WPF Web Installer.
     ![Installer Extraction Wizard](images/Step-by-Step-Installation_img1.png)
 
     
-    > N> The installer wizard extracts the `syncfusionessentialwpfwebinstaller_{version}.exe` dialog, which displays the package's unzip operation.
+    N> The installer wizard extracts the `syncfusionessentialwpfwebinstaller_{version}.exe` dialog, which displays the package's unzip operation.
     
 2. 	The Syncfusion WPF Web Installer's welcome wizard will be displayed. Click the Next button.
 
@@ -60,7 +60,7 @@ The steps below show how to install Essential Studio WPF Web Installer.
 
 	![Existing Version for install](images/Step-by-Step-Installation_img20.png)
 	
-	> N> From the 2021 Volume 1 release, Syncfusion has provided option to uninstall the previous versions from 18.1 while installing the new version.
+	N> From the 2021 Volume 1 release, Syncfusion has provided option to uninstall the previous versions from 18.1 while installing the new version.
 	
 	
 5.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
@@ -72,7 +72,7 @@ The steps below show how to install Essential Studio WPF Web Installer.
 
     ![Confirmation for install/uninstall](images/Step-by-Step-Installation_img15.png)
 	
-	> N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
+	N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 	
 
 7.  The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
@@ -135,7 +135,7 @@ You can uninstall all the installed products by selecting the **Syncfusion Essen
 
 ![Control Panel](images/Step-by-Step-Installation_img22.png)
 	
-> N> If the **Syncfusion Essential Studio for WPF {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio WPF alone will be removed and the below default MSI uninstallation window will be displayed.	
+N> If the **Syncfusion Essential Studio for WPF {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio WPF alone will be removed and the below default MSI uninstallation window will be displayed.	
 
 1. The Syncfusion WPF Web Installer's welcome wizard will be displayed. Click the Next button
 
@@ -165,7 +165,7 @@ You can uninstall all the installed products by selecting the **Syncfusion Essen
 
     ![Confirmation for install/uninstall](images/Step-by-Step-Installation_img15.png)
 	
-	> N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
+	N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 	
 6.	The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
