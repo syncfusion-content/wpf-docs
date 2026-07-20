@@ -9,16 +9,16 @@ documentation: ug
 
 # ToolBarManager in WPF ToolBar (ToolBarAdv)
 
-ToolBarManager is a container in which the ToolBarTrayAdv can place in top, bottom, left or right provided with the following properties.
+ToolBarManager is a container in which a ToolBarTrayAdv can be placed at the top, bottom, left, or right using the following properties.
 
-* TopToolBarTray
-* BottomToolBarTray
-* LeftToolBarTray
-* RightToolBarTray
+* `TopToolBarTray`
+* `BottomToolBarTray`
+* `LeftToolBarTray`
+* `RightToolBarTray`
 
-And the content of the ToolBarManager will be displayed in the remaining space.
+The `Content` of the ToolBarManager is displayed in the remaining space between the trays.
 
-The following code illustrates how to place the ToolBarAdv at the top:
+The following code illustrates how to place a ToolBarAdv at the top of a ToolBarManager.
 
 {% tabs %}
 
@@ -71,8 +71,6 @@ The following code illustrates how to place the ToolBarAdv at the top:
 
 </syncfusion:ToolBarManager>     
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
@@ -101,11 +99,6 @@ manager.TopToolBarTray = tray;
 
 Grid1.Children.Add(manager);
 
-
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
-

@@ -9,7 +9,7 @@ documentation: ug
 
 # Lane interaction in WPF Diagram(SfDiagram)
 
-The [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) provides support to select, resize, or swap the lane interactively. 
+The [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to select, resize, or swap the lane interactively. 
 
 ### Select
 
