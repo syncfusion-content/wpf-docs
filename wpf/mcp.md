@@ -62,7 +62,7 @@ Create a configuration file in your project folder to install the server for you
     "sf-wpf-mcp": {
       "type": "stdio",
       "command": "dnx",
-      "args": ["Syncfusion.Wpf.MCP", "--yes"],
+      "args": ["Syncfusion.WPF.MCP", "--yes"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
         // or
@@ -82,7 +82,7 @@ Create a configuration file in your project folder to install the server for you
     "sf-wpf-mcp": {
       "type": "stdio",
       "command": "dnx",
-      "args": ["Syncfusion.Wpf.MCP", "--yes"],
+      "args": ["Syncfusion.WPF.MCP", "--yes"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
         // or
@@ -103,7 +103,7 @@ Create a configuration file in your project folder to install the server for you
   "mcpServers": {
     "sf-wpf-mcp": {
       "command": "dnx",
-      "args": ["Syncfusion.Wpf.MCP", "--yes"],
+      "args": ["Syncfusion.WPF.MCP", "--yes"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
         // or
@@ -124,7 +124,7 @@ Create a configuration file in your project folder to install the server for you
   "mcpServers": {
     "sf-wpf-mcp": {
       "command": "dnx",
-      "args": ["Syncfusion.Wpf.MCP", "--yes"],
+      "args": ["Syncfusion.WPF.MCP", "--yes"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
         // or
