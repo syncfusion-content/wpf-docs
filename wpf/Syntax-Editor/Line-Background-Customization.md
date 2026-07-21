@@ -17,20 +17,19 @@ The `SetLineBackground` method customizes the background color of a single line.
 
 ### Method signature
 
-`SetLineBackground(lineNumber, fullLine, brush)`: Helps to customize the background of line.
+`SetLineBackground(lineNumber, fullLine, brush)`: Applies a custom background to the specified line.
 
 ### Parameters
 
-* `lineNumber` – the 1-based line number to which the background is applied.
-* `fullLine` – `true` to highlight the full line width; `false` to highlight only the text area.
-* `brush` – the `System.Windows.Media.Brush` used to paint the background.
+* `lineNumber` – Specifies the line number to which the background is applied.
+* `fullLine` – Specifies whether the background is applied to the entire line width or only to the text area.
+* `brush` – Specifies the System.Windows.Media.Brush used to paint the line background.
 
 {% tabs %}
 
 {% highlight C# %}
 
 // Set the background to a specified Line.
-
 this.editControl1.SetLineBackground(this.editControl1.LineNumber, true, Brushes.Yellow);
 
 {% endhighlight %}
@@ -38,7 +37,6 @@ this.editControl1.SetLineBackground(this.editControl1.LineNumber, true, Brushes.
 {% highlight VB %}
 
 ' Set the background to a specified Line.
-
 this.editControl1.SetLineBackground(this.editControl1.LineNumber, true, Brushes.Yellow)
 
 {% endhighlight  %}
@@ -57,11 +55,12 @@ The `ResetLineBackground` method clears the background color applied by `SetLine
 
 ### Parameters
 
-* `lineNumber` – the 1-based line number to reset.
+* `lineNumber` – Specifies the 1-based line number for which the background customization is removed.
 
 {% tabs %}
 
 {% highlight C# %}
+
 // Reset the background of the current line.
 this.editControl1.ResetLineBackground(this.editControl1.LineNumber);
 
@@ -70,7 +69,6 @@ this.editControl1.ResetLineBackground(this.editControl1.LineNumber);
 {% highlight VB %}
 
 ' Reset the background to a specified Line.
-
 this.editControl1.ResetLineBackground(this.editControl1.LineNumber)
 
 {% endhighlight  %}
@@ -86,29 +84,20 @@ The `OnBeforeLineRender` event customizes the background color of the line on de
 {% highlight C# %}
 
 public MainWindow()
-
 {
-
      InitializeComponent();
-
      editControl1.DocumentSource = "../../Source.cs";
-     
      editControl1.OnBeforeLineRender += new 
-     
      Syncfusion.Windows.Edit.OnBeforeLineRenderEventHandler(editControl1_OnBeforeLineRender);
 }
 
-// Invoked when before the Line Render.
-
- private void editControl1_OnBeforeLineRender(object sender, Syncfusion.Windows.Edit.OnBeforeLineRenderArgs args)
+private void editControl1_OnBeforeLineRender(object sender, Syncfusion.Windows.Edit.OnBeforeLineRenderArgs args)
 {
-   
     if (args.LineItem.LineNumber % 2 == 0)
-   
-        {
-            args.BackgroundColor = Brushes.LightGray;
-            args.IsFullLine = false;
-        }
+    {
+          args.BackgroundColor = Brushes.LightGray;
+          args.IsFullLine = false;
+    }
 }
 
 {% endhighlight %}
@@ -116,31 +105,20 @@ public MainWindow()
 {% highlight VB %}
 
 public MainWindow()
-
 {
-
      InitializeComponent()
-
      editControl1.DocumentSource = "../../Source.cs"
-     
      editControl1.OnBeforeLineRender += new 
-     
      Syncfusion.Windows.Edit.OnBeforeLineRenderEventHandler(editControl1_OnBeforeLineRender)
 }
 
-' Invoked when before the Line Render.
-
- private void editControl1_OnBeforeLineRender(object sender, Syncfusion.Windows.Edit.OnBeforeLineRenderArgs args)
+private void editControl1_OnBeforeLineRender(object sender, Syncfusion.Windows.Edit.OnBeforeLineRenderArgs args)
 {
-   
     if (args.LineItem.LineNumber % 2 == 0)
-   
-        {
-   
-            args.BackgroundColor = Brushes.LightGray
-   
-            args.IsFullLine = false;   
-        }
+    {
+          args.BackgroundColor = Brushes.LightGray
+          args.IsFullLine = false;   
+    }
 }
 
 {% endhighlight  %}
