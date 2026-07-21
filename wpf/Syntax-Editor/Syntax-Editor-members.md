@@ -9,7 +9,7 @@ documentation: ug
 
 # Syntax Editor Members in WPF Syntax Editor (EditControl)
 
-The `EditControl` class exposes a variety of properties, methods, and events that enable developers to use this control effectively. It is enhanced with a high level of customization to make the most of these features. This topic describes the properties, methods, and events available in the `EditControl` class.
+The `EditControl` class provides a rich set of properties, methods, and events that allow you to customize and control its behavior. This section describes the key members available in the `EditControl` class and explains how they can be used in your application.
 
 ## Properties
 
