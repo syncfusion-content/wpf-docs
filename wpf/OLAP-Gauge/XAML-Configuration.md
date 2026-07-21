@@ -16,7 +16,7 @@ XAML configuration is an important feature of the OLAP gauge because it allows u
 * **DataSource.ConnectionString**: Specifies the connection string of the data manager.
 * **DataSource.ConnectionName**: Specifies the connection name, which is available in the App.Config file of the application.
 * **DataSource.DataManagerName**: Specifies the data manager name.
-* **SharedDataManagerName**: SSpecifies the name of the data manager available in the shared data manager collection.
+* **SharedDataManagerName**: Specifies the name of the data manager available in the shared data manager collection.
 * **ReportName**: Specifies the name of the OLAP report.
 * **CurrentCubeName**: Specifies the current cube name of the OLAP report.
 * **CategoricalAxis**: Specifies the categorical axis of the OLAP report.
