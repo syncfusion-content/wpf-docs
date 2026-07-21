@@ -1,36 +1,35 @@
 ---
 layout: post
 title: Line Background Customization in WPF Syntax Editor | Syncfusion
-description: Learn about Line Background Customization support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+description: Learn about Line Background Customization support in Syncfusion Essential Studio WPF Syntax Editor (EditControl) control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Line Background Customization in WPF Syntax Editor
+# Line Background Customization in WPF Syntax Editor (EditControl)
 
-## Applying line background customization
+The EditControl provides several ways to customize the background color of specific lines. The samples below assume `using Syncfusion.Windows.Edit;` and an `EditControl` instance named `editControl1`.
 
-The `SetLineBackground` function helps to customize the background color of specific lines.
+## Applying a line background
 
-### Method
+The `SetLineBackground` method customizes the background color of a single line.
 
-`SetLineBackground(lineNumber, fullLine, brush)`: Helps to customize the background of line.
+### Method signature
 
-### Arguments
+`SetLineBackground(lineNumber, fullLine, brush)`: Applies a custom background to the specified line.
 
-`lineNumber`: Specifies the line number where the cursor is currently located in EditControl.
+### Parameters
 
-`fullLine`: Specifies whether to highlight full line or not.
-
-`brush`: Specifies the `Brush` for background customization.
+* `lineNumber` – Specifies the line number to which the background is applied.
+* `fullLine` – Specifies whether the background is applied to the entire line width or only to the text area.
+* `brush` – Specifies the System.Windows.Media.Brush used to paint the line background.
 
 {% tabs %}
 
 {% highlight C# %}
 
 // Set the background to a specified Line.
-
 this.editControl1.SetLineBackground(this.editControl1.LineNumber, true, Brushes.Yellow);
 
 {% endhighlight %}
@@ -38,7 +37,6 @@ this.editControl1.SetLineBackground(this.editControl1.LineNumber, true, Brushes.
 {% highlight VB %}
 
 ' Set the background to a specified Line.
-
 this.editControl1.SetLineBackground(this.editControl1.LineNumber, true, Brushes.Yellow)
 
 {% endhighlight  %}
@@ -47,24 +45,23 @@ this.editControl1.SetLineBackground(this.editControl1.LineNumber, true, Brushes.
 
 ![SetLineBackground](Line-Background-Customization_images/SetLineBackground.png)
 
-## Resetting line background customization
+## Resetting a line background
 
-The `ResetLineBackground` function helps to reset the background color of customized lines.
+The `ResetLineBackground` method clears the background color applied by `SetLineBackground`.
 
-### Method
+### Method signature
 
 `ResetLineBackground(lineNumber)`: Helps to reset the background customization of line.
 
-### Arguments
+### Parameters
 
-`lineNumber`: Specifies the line number where the cursor is currently located in EditControl.
+* `lineNumber` – Specifies the 1-based line number for which the background customization is removed.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Reset the background to a specified Line.
-
+// Reset the background of the current line.
 this.editControl1.ResetLineBackground(this.editControl1.LineNumber);
 
 {% endhighlight %}
@@ -72,13 +69,11 @@ this.editControl1.ResetLineBackground(this.editControl1.LineNumber);
 {% highlight VB %}
 
 ' Reset the background to a specified Line.
-
 this.editControl1.ResetLineBackground(this.editControl1.LineNumber)
 
 {% endhighlight  %}
 
 {% endtabs %}
-
 
 ## On demand line background customization
 
@@ -89,32 +84,20 @@ The `OnBeforeLineRender` event customizes the background color of the line on de
 {% highlight C# %}
 
 public MainWindow()
-
 {
-
      InitializeComponent();
-
      editControl1.DocumentSource = "../../Source.cs";
-     
      editControl1.OnBeforeLineRender += new 
-     
      Syncfusion.Windows.Edit.OnBeforeLineRenderEventHandler(editControl1_OnBeforeLineRender);
 }
 
-// Invoked when before the Line Render.
-
- private void editControl1_OnBeforeLineRender(object sender, Syncfusion.Windows.Edit.OnBeforeLineRenderArgs args)
+private void editControl1_OnBeforeLineRender(object sender, Syncfusion.Windows.Edit.OnBeforeLineRenderArgs args)
 {
-   
     if (args.LineItem.LineNumber % 2 == 0)
-   
-        {
-   
-            args.BackgroundColor = Brushes.LightGray;
-   
-            args.IsFullLine = false;
-   
-        }
+    {
+          args.BackgroundColor = Brushes.LightGray;
+          args.IsFullLine = false;
+    }
 }
 
 {% endhighlight %}
@@ -122,31 +105,20 @@ public MainWindow()
 {% highlight VB %}
 
 public MainWindow()
-
 {
-
      InitializeComponent()
-
      editControl1.DocumentSource = "../../Source.cs"
-     
      editControl1.OnBeforeLineRender += new 
-     
      Syncfusion.Windows.Edit.OnBeforeLineRenderEventHandler(editControl1_OnBeforeLineRender)
 }
 
-' Invoked when before the Line Render.
-
- private void editControl1_OnBeforeLineRender(object sender, Syncfusion.Windows.Edit.OnBeforeLineRenderArgs args)
+private void editControl1_OnBeforeLineRender(object sender, Syncfusion.Windows.Edit.OnBeforeLineRenderArgs args)
 {
-   
     if (args.LineItem.LineNumber % 2 == 0)
-   
-        {
-   
-            args.BackgroundColor = Brushes.LightGray
-   
-            args.IsFullLine = false;   
-        }
+    {
+          args.BackgroundColor = Brushes.LightGray
+          args.IsFullLine = false;   
+    }
 }
 
 {% endhighlight  %}
@@ -156,4 +128,3 @@ public MainWindow()
 N> The on demand line background customization is recommended when the `EditControl` is loaded with huge data.
 
 ![OnBeforeEvent](Line-Background-Customization_images/OnBeforeEvent.png)
-
