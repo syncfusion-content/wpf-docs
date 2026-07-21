@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing in WPF Syntax Editor (EditControl)
 
-The `EditControl` provides support for printing the content displayed in the control using the `Print` method, and for previewing the printed output using the `ShowPrintPreview` method. The samples below assume `using Syncfusion.Windows.Edit;` and an `EditControl` instance named `editControl`.
+The `EditControl` provides support for printing the content displayed in the control using the [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_Print) method, and for previewing the printed output using the [ShowPrintPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_ShowPrintPreview) method. The samples below assume `using Syncfusion.Windows.Edit;` and an `EditControl` instance named `editControl`.
 
 {% tabs %}
 
@@ -21,8 +21,6 @@ editControl.Print();
 
 {% highlight VB %}
 
-' Invoke the print method
-
 editControl.Print 
 
 {% endhighlight %}
@@ -31,7 +29,7 @@ editControl.Print
 
 ## Print Preview
 
-EditControl provides option to display print preview to review and customize the document in desired format before printing. Print preview window can be opened by calling `ShowPrintPreview` method.
+EditControl provides option to display print preview to review and customize the document in desired format before printing. Print preview window can be opened by calling [ShowPrintPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_ShowPrintPreview) method.
 
 {% tabs %}
 
@@ -42,8 +40,6 @@ editControl.ShowPrintPreview();
 {% endhighlight %}
 
 {% highlight VB %}
-
-' Invoke the print Preview Window
 
 editControl.ShowPrintPreview
 
@@ -67,7 +63,7 @@ The print preview window has **Print** and **Quick Print** buttons which are cli
 
 ## Print settings
 
-The `EditControl.PrintSettings` property is of type `PrintSettings` and exposes options to customize page settings.
+The [PrintSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_PrintSettings) property is of type `PrintSettings` and exposes options to customize page settings.
 
 ### Orientation
 
@@ -77,9 +73,7 @@ Switch between Portrait (more rows but fewer columns) and Landscape (more column
 {% highlight c# %}
 
 editControl.PrintSettings = new PrintSettings();
-
 editControl.PrintSettings.Orientation = Syncfusion.Windows.Shared.Printing.PrintOrientation.Landscape;
-
 editControl.ShowPrintPreview();
 
 {% endhighlight %}
@@ -87,9 +81,7 @@ editControl.ShowPrintPreview();
 {% highlight VB %}
 
 editcontrol.PrintSettings = New PrintSettings
-
 editcontrol.PrintSettings.Orientation = Syncfusion.Windows.Shared.Printing.PrintOrientation.Landscape
-
 editcontrol.ShowPrintPreview
 
 {% endhighlight  %}
@@ -103,14 +95,12 @@ The print orientation can be changed in the print preview at runtime by selectin
 ### Page size
 
 Change the page size using the `PrintSettings.PageWidth` and `PrintSettings.PageHeight` properties.
-{% tabs %}
 
+{% tabs %}
 {% highlight c# %}
 
 editControl.PrintSettings = new PrintSettings();
-
 editControl.PrintSettings.PageHeight = 800;            
-
 editControl.PrintSettings.PageWidth = 800;
 editControl.Print();
 
@@ -119,10 +109,8 @@ editControl.Print();
 {% highlight VB %}
 
 editControl.PrintSettings = New PrintSettings
-
 editControl.PrintSettings.PageHeight = 800
 editControl.PrintSettings.PageWidth = 800
-
 editControl.Print
 
 {% endhighlight %}
@@ -149,9 +137,7 @@ editControl.Print();
 {% highlight VB %}
 
 editcontrol.PrintSettings = New PrintSettings
-
 editcontrol.PrintSettings.PageMargin = New Thickness(5)
-
 editcontrol.Print
 
 {% endhighlight %}
@@ -173,6 +159,7 @@ Steps to add page header while printing,
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
+
 <Application.Resources>
     <DataTemplate x:Key="pageHeaderTempalte">
         <Grid Background="Gray">
@@ -184,6 +171,7 @@ Steps to add page header while printing,
         </Grid>
     </DataTemplate>
 </Application.Resources>
+
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
@@ -193,15 +181,11 @@ Steps to add page header while printing,
 
 {% capture codesnippet2 %}
 {% tabs %}
-
 {% highlight c# %}
 
 editcontrol.PrintSettings = new PrintSettings();
-
 editcontrol.PrintSettings.PageHeaderHeight = 30;
-
 editcontrol.PrintSettings.PageHeaderTemplate = Application.Current.Resources["pageHeaderTempalte"] as DataTemplate;
-
 editcontrol.ShowPrintPreview();
 
 {% endhighlight %}
@@ -209,11 +193,8 @@ editcontrol.ShowPrintPreview();
 {% highlight VB %}
 
 editcontrol.PrintSettings = New PrintSettings
-
 editcontrol.PrintSettings.PageHeaderHeight = 30
-
 editcontrol.PrintSettings.PageHeaderTemplate = CType(Application.Current.Resources("pageHeaderTemplate"),DataTemplate)
-
 editcontrol.ShowPrintPreview
 
 {% endhighlight %}
@@ -226,14 +207,13 @@ editcontrol.ShowPrintPreview
 
 ![Print window](Printing_images/header.png)
 
-### Printing Current Date time and Page number
+### Printing Date, Time, and Page Number
 
-You can print current Date and Time at each page by setting the  `PageFooterHeight`.
- 
-You can get the page number from PrintPageControl.
+You can display the current date and time on each printed page by defining a template for the `PageFooter`. You can also display the page number by binding to the `PageIndex` property of the `PrintPageControl`.
 
 {% tabs %}
 {% highlight xaml %}
+
 <Application.Resources>
     <DataTemplate x:Key="pageFooterTempalte">
         <Grid>
@@ -253,6 +233,7 @@ You can get the page number from PrintPageControl.
         </Grid>
     </DataTemplate>
 </Application.Resources>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -261,11 +242,8 @@ You can get the page number from PrintPageControl.
 {% highlight c# %}
 
 editcontrol.PrintSettings = new PrintSettings();
-
 editcontrol.PrintSettings.PageFooterHeight = 30;
-
 editcontrol.PrintSettings.PageFooterTemplate = Application.Current.Resources["pageFooterTempalte"] as DataTemplate;
-
 editcontrol.ShowPrintPreview();
 
 {% endhighlight %}
@@ -273,11 +251,8 @@ editcontrol.ShowPrintPreview();
 {% highlight VB %}
 
 editcontrol.PrintSettings = New PrintSettings
-
 editcontrol.PrintSettings.PageHeaderHeight = 30
-
 editcontrol.PrintSettings.PageFooterTemplate = CType(Application.Current.Resources("pageFooterTemplate"),DataTemplate)
-
 editcontrol.ShowPrintPreview
 
 {% endhighlight %}
