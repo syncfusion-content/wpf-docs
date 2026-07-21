@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Syntax Editor (EditControl)
 
-This section explains how to create an interactive code editor application like the Visual Studio code editor using the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html).
+This section explains how to add and configure the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) in a WPF application and get started with its basic features.
 
 ## Assembly deployment
 
@@ -24,14 +24,14 @@ You can create a WPF application with [EditControl](https://help.syncfusion.com/
 1. [Creating the project](#creating-the-project)
 2. [Adding the control via Designer](#adding-editcontrol-via-designer)
 3. [Adding the control via XAML](#adding-editcontrol-via-xaml)
-4. [Adding the control via C#](#adding-editcontrol-via-c)
+4. [Adding the control via C#](#adding-editcontrol-via-c#)
 5. [Loading a file into the document](#loading-a-file-into-the-document)
 6. [Syntax highlighting](#syntax-highlighting)
 
 ### Creating the project
 
 1. Open Visual Studio and click **Create a new project**.
-2. Select **WPF App (.NET Framework)** (or **WPF Application** for .NET/.NET Core) and click **Next**.
+2. Select **WPF App (.NET Framework)** or (**WPF Application** for .NET/.NET Core) and click **Next**.
 3. Type a project name, choose a location, and click **Create**.
 
 ### Adding EditControl via designer
@@ -95,7 +95,7 @@ VerticalAlignment="Top" Width="300"/>
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding WPF EditControl via C#
+## Adding EditControl via C#
 
 To add the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) manually in C#, follow these steps:
 
@@ -153,7 +153,7 @@ public MainWindow()
 
 ![Adding EditControl to Project](Getting-Started_images/Getting-Started_img3.jpeg)
 
-## Loading a file into document
+## Loading a file into the document
 
 This option helps to load a file into the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html). Essential Edit WPF facilitates users to create, open, modify, and save text files and programming language files. EditControl provides built-in support for a variety of text-based file formats such as `txt`, `cs`, `vb`, `sql`, `xaml`, and `xml`. It also allows you to specify custom file types in custom language configurations.
 
@@ -185,7 +185,6 @@ editControl.DocumentSource = "C:\Content.txt"
 
 {% endtabs %}
 
-
 ![Opening a Document File](Basic-Editing/File-Support_images/File-Support_img1.jpeg)
 
 Files can also be opened using the [LoadFile](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LoadFile) method. LoadFile method displays a FileOpenDialog to enable you to choose the file that needs to be opened in the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html).
@@ -205,7 +204,6 @@ editControl.LoadFile()
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ![LoadFile to open a document file](Basic-Editing/File-Support_images/File-Support_img2.jpeg)
 
