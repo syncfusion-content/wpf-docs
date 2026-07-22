@@ -7,23 +7,31 @@ control: SfScheduler
 documentation: ug
 ---
 # Load On Demand in WPF Scheduler (SfScheduler)
-The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) supports to load appointment on demand with loading indicator and it improves the loading performance when there are appointments range for multiple years.
+The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) supports loading appointments on demand with a loading indicator and improves the loading performance when there are appointments ranging over multiple years.
 
 ![Load on-demand in WPF Scheduler](LoadOnDemand_Images/LoadOnDemand.gif)
 
 ## QueryAppointments event
-The [QueryAppointments](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_QueryAppointments) event is used to load appointments in on-demand for the visible date range. Start and stop the loading indicator animation before and after the appointments loaded using the [ShowBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator).
+The [QueryAppointments](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_QueryAppointments) event is used to load appointments in on-demand for the visible date range. Start and stop the loading indicator animation before and after the appointments are loaded using the [ShowBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator).
 The [QueryAppointmentsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.QueryAppointmentsEventArgs.html) has the following members which provides information for the `QueryAppointments` event.
 
 [VisibleDateRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DateRange.html) - Gets the current visible date range of scheduler that is used to load the appointments.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Scheduler"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Scheduler"
                         ViewType="Month" QueryAppointments="Scheduler_QueryAppointments">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Scheduler.QueryAppointments += Scheduler_QueryAppointments;
 private void Scheduler_QueryAppointments(object sender, QueryAppointmentsEventArgs e)
 {
@@ -68,19 +76,27 @@ The [QueryAppointments](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sc
 The Scheduler notifies by [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_LoadOnDemandCommand) when the user changes the visible date range. Get a visible date range from the [QueryAppointmentsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.QueryAppointmentsEventArgs.html). The default value for this `ICommand` is null. The `QueryAppointmentsEventArgs` passed as a command parameter.
 
 Define a ViewModel class that implements command and handle it by the CanExecute and Execute methods to check and execute on-demand loading. In the execute method, perform the following operations,
-* Start and stop the loading indicator animation before and after the appointments loaded using the [ShowBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator).
-* Once the appointment collection is got, load into the scheduler itemsource.
+* Start and stop the loading indicator animation before and after the appointments are loaded using the [ShowBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator).
+* Once the appointment collection is obtained, load it into the scheduler's Itemsource.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Scheduler"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Scheduler"
                         ViewType="Month" 
                         ShowBusyIndicator="{Binding ShowBusyIndicator}"
                         LoadOnDemandCommand="{Binding LoadOnDemandCommand}"
                         ItemsSource="{Binding Events}">
-</syncfusion:SfScheduler>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+. . .
 
 public class LoadOnDemandViewModel : NotificationObject
   {
@@ -151,9 +167,9 @@ public class LoadOnDemandViewModel : NotificationObject
 
 The [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_LoadOnDemandCommand) will be invoked once any one of the following actions is taken.
 
-* Once the [ViewChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewChanged) event is raised, the `LoadOnDemandCommand` will also be raised.
+* Once the [ViewChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewChanged) event is raised, the `LoadOnDemandCommand` will also be invoked.
 
-* If the appointment has been added, removed, or changed (Resize, drag, and drop) in the current time visible date range, then the `LoadOnDemandCommand` will not be triggered. Since the appointments for that visible date range have been loaded already.
+* If the appointment has been added, removed, or changed (Resize, drag, and drop) in the current time visible date range, then the `LoadOnDemandCommand` will not be triggered, since the appointments for that visible date range have been loaded already.
 
 * The `LoadOnDemandCommand` is triggered when the Schedule [ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection) is updated to load the appointments based on the changed resource collection.
 
@@ -168,4 +184,4 @@ The scheduler will add the occurrences of recurrence series based on the visible
 
 * If the `RecurrenceRule` is added without an end date, then the recurrence appointment should be added in the scheduler `ItemsSource` when all the visible dates changed from the recurrence start date.
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/load-on-demand-appointments-wpf-scheduler)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/load-on-demand-appointments-wpf-scheduler). For more information on appointments, see [Appointments](appointments.md).

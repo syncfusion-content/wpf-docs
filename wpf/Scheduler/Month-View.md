@@ -7,21 +7,29 @@ control: SfScheduler
 documentation: ug
 ---
 # Month View in WPF Scheduler (SfScheduler)
-The month view of the scheduler displays the days of a specific month and current month, by default initially. The current date color is differentiated from other dates of the current month.
+The month view of the scheduler displays the days of a specific month; the current month is shown by default initially. The current date is highlighted differently from other dates of the current month.
 
 ## Month agenda view
 The scheduler month view displays a divided agenda view that is used to show the selected date’s appointments below the month. Show the agenda view by setting the [ShowAgendaView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_ShowAgendaView) property to `true` in the [MonthViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings ShowAgendaView="True"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings ShowAgendaView="True"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.ShowAgendaView = true;
 {% endhighlight %}
@@ -38,16 +46,24 @@ Customize the month agenda view height from the Scheduler by using the [AgendaVi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings AppointmentDisplayMode="Indicator"
-        ShowAgendaView="True"
-        AgendaViewHeight="300"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>   
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings AppointmentDisplayMode="Indicator"
+                ShowAgendaView="True"
+                AgendaViewHeight="300"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>   
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.Indicator;
 this.Schedule.MonthViewSettings.ShowAgendaView = true;
@@ -65,14 +81,22 @@ Handle the Scheduler month view appointment display by using the [AppointmentDis
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-       <syncfusion:SfScheduler.MonthViewSettings>
-            <syncfusion:MonthViewSettings AppointmentDisplayMode="Appointment"/>
-       </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+               <syncfusion:SfScheduler.MonthViewSettings>
+                    <syncfusion:MonthViewSettings AppointmentDisplayMode="Appointment"/>
+               </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month; 
 this.Schedule.MonthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.Appointment;
 {% endhighlight %}
@@ -85,15 +109,23 @@ Customize the number of appointments displayed in a month cell using the [Appoin
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings AppointmentDisplayMode="Indicator"    
-                                      AppointmentDisplayCount="4"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings AppointmentDisplayMode="Indicator"    
+                                              AppointmentDisplayCount="4"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.Indicator;
 this.Schedule.MonthViewSettings.AppointmentDisplayCount = 4;
@@ -111,14 +143,22 @@ The month view of a Scheduler can be navigated in both horizontal and vertical d
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings MonthNavigationDirection="Vertical"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
- </syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings MonthNavigationDirection="Vertical"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+         </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.MonthNavigationDirection = MonthNavigationDirection.Vertical;
 {% endhighlight %}
@@ -131,14 +171,22 @@ Customize the date format of the scheduler month view by using the [DateFormat](
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings DateFormat="dd"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings DateFormat="dd"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.DateFormat = "dd";
 {% endhighlight %}
@@ -147,21 +195,29 @@ this.Schedule.MonthViewSettings.DateFormat = "dd";
 ![WPF Scheduler month view DateFormat](Month-View_Images/wpf-scheduler-date-formatting.png)
 
 ## View header
-Customize the default appearance of view header in month view by setting `ViewHeaderDayFormat`, `DateFormat` ,`ViewHeaderHeight` and `ViewHeaderTemplate` of TimelineViewSettings.
+Customize the default appearance of view header in month view by setting `ViewHeaderDayFormat`, `DateFormat` ,`ViewHeaderHeight` and `ViewHeaderTemplate` of `MonthViewSettings`.
 
 ### View header text formatting
 Customize the day format of the Scheduler view header by using the [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) property of `MonthViewSettings`. By default, the month view header day format is `ddd`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings ViewHeaderDayFormat="dddd"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings ViewHeaderDayFormat="dddd"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.ViewHeaderDayFormat = "dddd";
 {% endhighlight %}
@@ -174,14 +230,22 @@ Customize the view header height by using the [ViewHeaderHeight](https://help.sy
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings ViewHeaderHeight="100"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings ViewHeaderHeight="100"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
@@ -194,28 +258,34 @@ Customize the default appearance of the month view header by using the [ViewHead
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
-    <Style TargetType="syncfusion:ViewHeaderControl">
-        <Setter Property="Background" Value="Blue"/>
-    </Style>
-</Window.Resources>
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings>
-            <syncfusion:MonthViewSettings.ViewHeaderTemplate>
-                <DataTemplate>
-                    <TextBlock FontFamily="Segoe UI"
-                                FontSize="20"
-                                FontStyle="Italic"
-                                Foreground="Red"
-                                Background="AntiqueWhite"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Window.Resources>
+        <Style TargetType="syncfusion:ViewHeaderControl">
+            <Setter Property="Background" Value="Blue"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings>
+                    <syncfusion:MonthViewSettings.ViewHeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock FontFamily="Segoe UI"
+                                        FontSize="20"
+                                        FontStyle="Italic"
+                                        Foreground="Red"
+                                        Background="AntiqueWhite"
                                 Text="{Binding DayText}"/>
-                </DataTemplate>
-            </syncfusion:MonthViewSettings.ViewHeaderTemplate>
-        </syncfusion:MonthViewSettings>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+                        </DataTemplate>
+                    </syncfusion:MonthViewSettings.ViewHeaderTemplate>
+                </syncfusion:MonthViewSettings>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -226,16 +296,24 @@ Customize the leading and trailing days visibility of the scheduler month view b
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings
-         LeadingDaysVisibility="Collapsed"
-         TrailingDaysVisibility="Collapsed"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings
+                 LeadingDaysVisibility="Collapsed"
+                 TrailingDaysVisibility="Collapsed"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.LeadingDaysVisibility = Visibility.Collapsed;
 this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
@@ -249,17 +327,24 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 The number of weeks visible in the month view can be changed by setting the [NumberOfVisibleWeeks](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_NumberOfVisibleWeeks) property of [MonthViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [`SfScheduler`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html). By default, 6 weeks are visible.
 
 {% tabs %}
-{% highlight xaml hl_lines="4" %}
+{% highlight xaml hl_lines="8" %}
 
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Month">
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSetting NumberOfVisibleWeeks="3"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
+                            ViewType="Month">
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSetting NumberOfVisibleWeeks="3"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 
 {% endhighlight %}
-{% highlight c# hl_lines="2" %}
+{% highlight c# hl_lines="4" %}
+using Syncfusion.UI.Xaml.Scheduler;
 
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
@@ -280,6 +365,8 @@ Disable the interaction for certain dates in the scheduler month view by adding 
 
 {% tabs %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.BlackoutDates = GetBlackoutDates();
 
@@ -305,28 +392,32 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
-    <Style TargetType="syncfusion:MonthCell">
-        <Style.Triggers>
-            <Trigger Property="DayType" Value="NormalDay, BlockOutDay">
-                <Setter Property="Foreground" Value="Black"/>
-                <Setter Property="Background" Value="Gray"/>
-            </Trigger>
-            <Trigger Property="DayType" Value="LeadingDay, BlockoutDay">
-                <Setter Property="Foreground" Value="Black"/>
-                <Setter Property="Background" Value="Green"/>
-            </Trigger>
-            <Trigger Property="DayType" Value="TrailingDay, BlockoutDay">
-                <Setter Property="Foreground" Value="Red"/>
-                <Setter Property="Background" Value="Yellow"/>
-            </Trigger>
-            <Trigger Property="DayType" Value="Today, BlockoutDay">
-                <Setter Property="Foreground" Value="Red"/>
-                <Setter Property="Background" Value="Green"/>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-</Window.Resources>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Window.Resources>
+        <Style TargetType="syncfusion:MonthCell">
+            <Style.Triggers>
+                <Trigger Property="DayType" Value="NormalDay, BlockOutDay">
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Background" Value="Gray"/>
+                </Trigger>
+                <Trigger Property="DayType" Value="LeadingDay, BlockoutDay">
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Background" Value="Green"/>
+                </Trigger>
+                <Trigger Property="DayType" Value="TrailingDay, BlockoutDay">
+                    <Setter Property="Foreground" Value="Red"/>
+                    <Setter Property="Background" Value="Yellow"/>
+                </Trigger>
+                <Trigger Property="DayType" Value="Today, BlockoutDay">
+                    <Setter Property="Foreground" Value="Red"/>
+                    <Setter Property="Background" Value="Green"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -337,14 +428,22 @@ Display the week number of a year in the scheduler month view by setting the [Sh
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings ShowWeekNumber="True"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings ShowWeekNumber="True"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.ShowWeekNumber = true;
 {% endhighlight %}
@@ -357,23 +456,29 @@ Customize the default appearance of a week number template in the month view by 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-                <syncfusion:MonthViewSettings ShowWeekNumber="True">
-                    <syncfusion:MonthViewSettings.WeekNumberTemplate>
-                        <DataTemplate>
-                             <Grid >
-                                <Label  Foreground="Red"
-                                        Content="{Binding}"
-                                        VerticalAlignment="Center"
-                                        HorizontalAlignment="Center"/>
-                            </Grid>
-                        </DataTemplate>
-                    </syncfusion:MonthViewSettings.WeekNumberTemplate>
-                </syncfusion:MonthViewSettings>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                        <syncfusion:MonthViewSettings ShowWeekNumber="True">
+                            <syncfusion:MonthViewSettings.WeekNumberTemplate>
+                                <DataTemplate>
+                                     <Grid >
+                                        <Label  Foreground="Red"
+                                                Content="{Binding}"
+                                                VerticalAlignment="Center"
+                                                HorizontalAlignment="Center"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </syncfusion:MonthViewSettings.WeekNumberTemplate>
+                        </syncfusion:MonthViewSettings>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -386,20 +491,26 @@ Customize the default appearance of the month cell by using the [MonthCellTempla
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month">
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings>
-             <syncfusion:MonthViewSettings.MonthCellTemplate>
-                <DataTemplate>
-                    <Border Background="BlueViolet">
-                        <TextBlock HorizontalAlignment="Center" Foreground="White" Text="{Binding DateTime.Day}"/>
-                    </Border>
-                </DataTemplate>
-             </syncfusion:MonthViewSettings.MonthCellTemplate>
-        </syncfusion:MonthViewSettings>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month">
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings>
+                     <syncfusion:MonthViewSettings.MonthCellTemplate>
+                        <DataTemplate>
+                            <Border Background="BlueViolet">
+                                <TextBlock HorizontalAlignment="Center" Foreground="White" Text="{Binding DateTime.Day}"/>
+                            </Border>
+                        </DataTemplate>
+                     </syncfusion:MonthViewSettings.MonthCellTemplate>
+                </syncfusion:MonthViewSettings>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -411,20 +522,28 @@ The `DataTemplateSelector` can choose a DataTemplate at runtime based on the val
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
-        <local:MonthCellTemplateSelector x:Key="monthCellTemplateSelector"/>
-</Window.Resources>   
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Month"
-                        ItemsSource="{Binding Appointments}">          
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings AppointmentDisplayMode="Indicator" 
-                                      MonthCellTemplateSelector="{StaticResource monthCellTemplateSelector}">
-        </syncfusion:MonthViewSettings>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>     
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Window.Resources>
+            <local:MonthCellTemplateSelector x:Key="monthCellTemplateSelector"/>
+    </Window.Resources>   
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
+                            ViewType="Month"
+                            ItemsSource="{Binding Appointments}">          
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings AppointmentDisplayMode="Indicator" 
+                                              MonthCellTemplateSelector="{StaticResource monthCellTemplateSelector}">
+                </syncfusion:MonthViewSettings>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>     
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
  public class MonthCellTemplateSelector : DataTemplateSelector
     {
         public MonthCellTemplateSelector()
@@ -471,24 +590,30 @@ Customize the default appearance of the month cell appointment by using the [App
 
  {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Month" ItemsSource="{Binding Appointments}">
-            <syncfusion:SfScheduler.MonthViewSettings>
-                <syncfusion:MonthViewSettings>
-                    <syncfusion:MonthViewSettings.AppointmentTemplate>
-                        <DataTemplate>
-                        <TextBlock 
-                        Background="{Binding Data.BackgroundColor}"
-                        Text="{Binding Data.EventName}" 
-                        HorizontalAlignment="Stretch"
-                        TextTrimming="CharacterEllipsis"
-                        Foreground="{Binding Data.ForegroundColor}"        
-                        TextWrapping="Wrap"
-                        FontStyle="Italic" />
-                        </DataTemplate>
-                    </syncfusion:MonthViewSettings.AppointmentTemplate>
-                </syncfusion:MonthViewSettings>
-            </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Month" ItemsSource="{Binding Appointments}">
+                    <syncfusion:SfScheduler.MonthViewSettings>
+                        <syncfusion:MonthViewSettings>
+                            <syncfusion:MonthViewSettings.AppointmentTemplate>
+                                <DataTemplate>
+                                <TextBlock 
+                                Background="{Binding Data.BackgroundColor}"
+                                Text="{Binding Data.EventName}" 
+                                HorizontalAlignment="Stretch"
+                                TextTrimming="CharacterEllipsis"
+                                Foreground="{Binding Data.ForegroundColor}"        
+                                TextWrapping="Wrap"
+                                FontStyle="Italic" />
+                                </DataTemplate>
+                            </syncfusion:MonthViewSettings.AppointmentTemplate>
+                        </syncfusion:MonthViewSettings>
+                    </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -501,38 +626,45 @@ The `DataTemplateSelector` can choose a DataTemplate at runtime based on the val
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
-    <local:MonthViewAppointmentTemplateSelector x:Key="appointmentTemplateSelector">
-        <local:MonthViewAppointmentTemplateSelector.CurrentDayAppointmentTemplate>
-             <DataTemplate>
-                <Border>
-                    <TextBlock Text="{Binding Subject}" 
-                                FontStyle="Italic" 
-                                Foreground="Red" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Window.Resources>
+        <local:MonthViewAppointmentTemplateSelector x:Key="appointmentTemplateSelector">
+            <local:MonthViewAppointmentTemplateSelector.CurrentDayAppointmentTemplate>
+                 <DataTemplate>
+                    <Border>
+                        <TextBlock Text="{Binding Subject}" 
+                                    FontStyle="Italic" 
+                                    Foreground="Red" 
+                                    TextWrapping="Wrap" 
+                                    TextTrimming="WordEllipsis"/>
+                    </Border>
+                </DataTemplate>
+            </local:MonthViewAppointmentTemplateSelector.CurrentDayAppointmentTemplate>
+            <local:MonthViewAppointmentTemplateSelector.DefaultAppointmentTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Subject}"
                                 TextWrapping="Wrap" 
                                 TextTrimming="WordEllipsis"/>
-                </Border>
-            </DataTemplate>
-        </local:MonthViewAppointmentTemplateSelector.CurrentDayAppointmentTemplate>
-        <local:MonthViewAppointmentTemplateSelector.DefaultAppointmentTemplate>
-            <DataTemplate>
-                <TextBlock Text="{Binding Subject}"
-                            TextWrapping="Wrap" 
-                            TextTrimming="WordEllipsis"/>
-            </DataTemplate>
-        </local:MonthViewAppointmentTemplateSelector.DefaultAppointmentTemplate>
-    </local:MonthViewAppointmentTemplateSelector>
-</Window.Resources>
-
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings AppointmentTemplateSelector="{StaticResource appointmentTemplateSelector}"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+                </DataTemplate>
+            </local:MonthViewAppointmentTemplateSelector.DefaultAppointmentTemplate>
+        </local:MonthViewAppointmentTemplateSelector>
+    </Window.Resources>
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                            ViewType="Month" >
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings AppointmentTemplateSelector="{StaticResource appointmentTemplateSelector}"/>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 public class MonthViewAppointmentTemplateSelector : DataTemplateSelector
 {
     public DataTemplate CurrentDayAppointmentTemplate { get; set; }
@@ -557,18 +689,24 @@ You can customize the default appearance of more appointments indicator in a mon
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Month">
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings>
-            <syncfusion:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
-                <DataTemplate>
-                    <TextBlock Text = "{Binding StringFormat=+{0}}" Background = "#EAEAEA" Foreground = "Black" Padding="0,5,0,0">
-                    </TextBlock>
-                </DataTemplate>
-            </syncfusion:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
-         </syncfusion:MonthViewSettings>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Month">
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings>
+                    <syncfusion:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
+                        <DataTemplate>
+                            <TextBlock Text = "{Binding StringFormat=+{0}}" Background = "#EAEAEA" Foreground = "Black" Padding="0,5,0,0">
+                            </TextBlock>
+                        </DataTemplate>
+                    </syncfusion:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
+                 </syncfusion:MonthViewSettings>
+            </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -579,15 +717,23 @@ You can customize the default appearance of more appointments indicator in a mon
 To enhance interaction with a scheduler's appointments, you can customize the spacing between appointments and the right border of their cells using the [CellRightPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_CellRightPadding) property of [MonthViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
 {% tabs %}
-{% highlight xaml hl_lines="4" %}
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Month">
- <syncfusion:SfScheduler.MonthViewSettings>
-     <syncfusion:MonthViewSettings CellRightPadding="30" />
- </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
+{% highlight xaml hl_lines="8" %}
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule" 
+                            ViewType="Month">
+         <syncfusion:SfScheduler.MonthViewSettings>
+             <syncfusion:MonthViewSettings CellRightPadding="30" />
+         </syncfusion:SfScheduler.MonthViewSettings>
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
-{% highlight c# hl_lines="2" %}
+{% highlight c# hl_lines="4" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.CellRightPadding = 30;
 {% endhighlight %}
