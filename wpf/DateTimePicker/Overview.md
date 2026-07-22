@@ -15,7 +15,7 @@ The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.
 
 ## Key features
 
-* **Editing mode** - Supports the default text editing and mask mode that helps to restrict the date input in formatted values based on pre-defined or custom date-time pattern.
+* **Editing mode** - Supports the default text editing and mask mode that helps to restrict the date input to formatted values based on a pre-defined or custom date-time pattern.
 
 * **Date-range support** - Supports the maximum and minimum dates in order to prevent users from setting a date or time within a given range.
 

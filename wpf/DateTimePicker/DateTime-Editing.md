@@ -17,13 +17,17 @@ Mask editing is the default editing mode. In this mode, you can provide only val
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit Name="dateTimeEdit"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Name="dateTimeEdit"
                          Height="25" 
                          Width="200"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.Width = 150;
@@ -63,7 +67,7 @@ Ex: If the month field is February, then if we type 29 in day field year field w
 
 <tr>
 <td>
-Day field of DateTimeEdit can not be selected as it cannot be edited.</td><td>
+Day field of DateTimeEdit can not be edited as it will be auto-filled based on month and year fields.</td><td>
 - </td></tr>
 </table>
 
@@ -101,16 +105,16 @@ The following table explains how the navigation performed between datetime field
 <tr>
 <td>3</td>
 <td>Right</td>
-<td>Navigate to the previous field from the currently selected field.</td>
+<td>Navigate to the next field from the currently selected field.</td>
 <td>
-<img src="Keyboard_navigation_images/Right.png" alt="Navigate to the previous field from the currently selected field"/></td>
+<img src="Keyboard_navigation_images/Right.png" alt="Navigate to the next field from the currently selected field"/></td>
 </tr>
 <tr>
 <td>4</td>
 <td>Left</td>
-<td>Navigate to the next field from the currently selected field.</td>
+<td>Navigate to the previous field from the currently selected field.</td>
 <td>
-<img src="Keyboard_navigation_images/Left.png" alt="Navigate to the next field from the currently selected field"/></td>
+<img src="Keyboard_navigation_images/Left.png" alt="Navigate to the previous field from the currently selected field"/></td>
 </tr>
 <tr>
 <td>5</td>
@@ -164,12 +168,16 @@ You can set or change the selected datetime of the `DateTimeEdit` programmatical
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit DateTime="08/06/2020"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit DateTime="08/06/2020"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.DateTime = new DateTime(2020, 06, 30);
@@ -189,6 +197,8 @@ The following code snippets illustrate the value binding from one `DateTimeEdit`
 
 {% tabs %}
 {% highlight C# %}
+using System;
+using Syncfusion.Windows.Shared;
 
 //ViewModel.cs
 class ViewModel : NotificationObject {
@@ -210,23 +220,26 @@ class ViewModel : NotificationObject {
 
 {% tabs %}
 {% highlight XAML %}
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
 
-<Window.DataContext>
-    <local:ViewModel/>
-</Window.DataContext>
-
-<StackPanel HorizontalAlignment="Center" 
-            VerticalAlignment="Center">
-    <syncfusion:DateTimeEdit Name="dateTimeEdit1"
-                             Height="25" 
-                             Width="200" 
-                             DateTime="{Binding SelectedDate, Mode=TwoWay}"/>
-    <syncfusion:DateTimeEdit Name="dateTimeEdit2"
-                             Height="25" 
-                             Width="200" 
-                             DateTime="{Binding SelectedDate, Mode=TwoWay}"
-                             Margin="10"/>
-</StackPanel>
+    <StackPanel HorizontalAlignment="Center" 
+                VerticalAlignment="Center">
+        <syncfusion:DateTimeEdit Name="dateTimeEdit1"
+                                Height="25" 
+                                Width="200" 
+                                DateTime="{Binding SelectedDate, Mode=TwoWay}"/>
+        <syncfusion:DateTimeEdit Name="dateTimeEdit2"
+                                Height="25" 
+                                Width="200" 
+                                DateTime="{Binding SelectedDate, Mode=TwoWay}"
+                                Margin="10"/>
+    </StackPanel>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -237,16 +250,21 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Free form editing
 
-You can change the `DateTime` value like a normal textbox editing by setting the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_CanEdit) property value as `true`. Input given by an end-user, will be validated when pressing `Enter` key or if control lost its focus. If the entered value is invalid, it set the previously selected date as `DateTime` value. Otherwise, it will accept the given input.
+You can change the `DateTime` value like a normal textbox editing by setting the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_CanEdit) property value as `true`. Input given by an end-user will be validated when pressing `Enter` key or if control lost its focus. If the entered value is invalid, it set the previously selected date as `DateTime` value. Otherwise, it will accept the given input.
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit Name="dateTimeEdit"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Name="dateTimeEdit"
                          CanEdit="True"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
+
 DateTimeEdit dateTimeEdit= new DateTimeEdit();
 dateTimeEdit.CanEdit = true;
 
@@ -263,12 +281,16 @@ You can increase or decrease the datetime by select the respective fields and mo
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit EnableMouseWheelEdit="True"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit EnableMouseWheelEdit="True"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit= new DateTimeEdit();
 dateTimeEdit.EnableMouseWheelEdit = true;
@@ -282,17 +304,21 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change date time using up-down button
 
-You can change the value of the datetime by selecting the respective date, month, year, minutes, hours, or seconds field and pressing the up or down button to increase or decrease the selected field respectively. By default, the updown button are hidden. you can show the UpDown button by setting the [IsVisibleRepeatButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_IsVisibleRepeatButton)  property value as `true`.
+You can change the value of the datetime by selecting the respective date, month, year, minutes, hours, or seconds field and pressing the up or down button to increase or decrease the selected field respectively. By default, the updown button is hidden. You can show the UpDown button by setting the [IsVisibleRepeatButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_IsVisibleRepeatButton)  property value as `true`.
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit IsVisibleRepeatButton="True" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit IsVisibleRepeatButton="True" 
                          IsEnabledRepeatButton="True"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.IsVisibleRepeatButton= true;
@@ -311,13 +337,17 @@ You can disable the updown button by setting the [IsEnabledRepeatButton](https:/
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit IsEnabledRepeatButton="False"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit IsEnabledRepeatButton="False"
                          IsVisibleRepeatButton="True" 
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.IsEnabledRepeatButton= false;
@@ -336,14 +366,18 @@ You can show only the updown button by hiding the dropdown button. You can hide 
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit IsButtonPopUpEnabled="False"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit IsButtonPopUpEnabled="False"
                          IsVisibleRepeatButton="True" 
                          IsEnabledRepeatButton="True"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.IsVisibleRepeatButton= true;
@@ -367,17 +401,21 @@ If you want to change the updown button background, use the [RepeatButtonBackgro
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit RepeatButtonBackground="Red" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit RepeatButtonBackground="Red" 
                          DownRepeatButtonMargin="1" 
                          UpRepeatButtonMargin="1"
                          IsVisibleRepeatButton="True"
                          Width="150" 
                          Height="25"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.RepeatButtonBackground= Brushes.Red;
@@ -398,33 +436,36 @@ You can customize the up and down button appearance separately by using the [UpR
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit IsVisibleRepeatButton="True"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit IsVisibleRepeatButton="True"
                          Name="dateTimeEdit">
-    <!--Custom UI for up button--> 
-    <syncfusion:DateTimeEdit.UpRepeatButtonTemplate>
-        <ControlTemplate>
-            <TextBlock Foreground="Yellow"
-                       TextAlignment="Center" 
-                       FontSize="15"
-                       FontWeight="ExtraBold"  
-                       Text="+" 
-                       Background="Green"/>
-        </ControlTemplate>
-    </syncfusion:DateTimeEdit.UpRepeatButtonTemplate>
+        <!--Custom UI for up button--> 
+        <syncfusion:DateTimeEdit.UpRepeatButtonTemplate>
+            <ControlTemplate>
+                <TextBlock Foreground="Yellow"
+                        TextAlignment="Center" 
+                        FontSize="15"
+                        FontWeight="ExtraBold"  
+                        Text="+" 
+                        Background="Green"/>
+            </ControlTemplate>
+        </syncfusion:DateTimeEdit.UpRepeatButtonTemplate>
 
-    <!--Custom UI for down button-->
-    <syncfusion:DateTimeEdit.DownRepeatButtonTemplate>
-        <ControlTemplate>
-            <TextBlock Foreground="Yellow"
-                       TextAlignment="Center"  
-                       FontSize="15"
-                       FontWeight="ExtraBold"
-                       Text="-" 
-                       Background="Red"/>
-        </ControlTemplate>
-    </syncfusion:DateTimeEdit.DownRepeatButtonTemplate>
-</syncfusion:DateTimeEdit>
+        <!--Custom UI for down button-->
+        <syncfusion:DateTimeEdit.DownRepeatButtonTemplate>
+            <ControlTemplate>
+                <TextBlock Foreground="Yellow"
+                        TextAlignment="Center"  
+                        FontSize="15"
+                        FontWeight="ExtraBold"
+                        Text="-" 
+                        Background="Red"/>
+            </ControlTemplate>
+        </syncfusion:DateTimeEdit.DownRepeatButtonTemplate>
+    </syncfusion:DateTimeEdit>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -441,14 +482,18 @@ For example, If you pressing the `j` key, then it will selects `January`. On sub
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit EnableAlphaKeyNavigation="True" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit EnableAlphaKeyNavigation="True" 
                          CanEdit="False" 
                          Pattern="LongDate"
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.EnableAlphaKeyNavigation = true;
@@ -468,13 +513,17 @@ By default, date time field will be selected and you can only override the date 
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit EnableBackspaceKey="True"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit EnableBackspaceKey="True"
                          EnableDeleteKey="True" 
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.EnableBackspaceKey = true;
@@ -497,6 +546,8 @@ If you want to select the Date from the own calendar, use the [DateTimeCalender]
 
 {% tabs %}
 {% highlight C# %}
+using System;
+using Syncfusion.Windows.Shared;
 
 //ViewModel.cs
 class ViewModel : NotificationObject {
@@ -518,22 +569,25 @@ class ViewModel : NotificationObject {
 
 {% tabs %}
 {% highlight XAML %}
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
 
-<Window.DataContext>
-    <local:ViewModel/>
-</Window.DataContext>
-
-<syncfusion:DateTimeEdit DateTime="{Binding SelectedDate, Mode=TwoWay}" 
-                         DropDownView="Calendar" 
-                         Pattern="ShortDate"
-                         Name="dateTimeEdit">
-    <syncfusion:DateTimeEdit.DateTimeCalender>
-        <syncfusion:SfDateSelector SelectorItemWidth="80" 
-                                   SelectorItemHeight="80" 
-                                   ShowDoneButton="False" 
-                                   SelectedDateTime="{Binding SelectedDate, Mode=TwoWay}"/>
-    </syncfusion:DateTimeEdit.DateTimeCalender>
-</syncfusion:DateTimeEdit>
+    <syncfusion:DateTimeEdit DateTime="{Binding SelectedDate, Mode=TwoWay}" 
+                            DropDownView="Calendar" 
+                            Pattern="ShortDate"
+                            Name="dateTimeEdit">
+        <syncfusion:DateTimeEdit.DateTimeCalender>
+            <syncfusion:SfDateSelector SelectorItemWidth="80" 
+                                    SelectorItemHeight="80" 
+                                    ShowDoneButton="False" 
+                                    SelectedDateTime="{Binding SelectedDate, Mode=TwoWay}"/>
+        </syncfusion:DateTimeEdit.DateTimeCalender>
+    </syncfusion:DateTimeEdit>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -548,6 +602,8 @@ If you want to select the time from the own clock, use the [Clock](https://help.
 
 {% tabs %}
 {% highlight C# %}
+using System;
+using Syncfusion.Windows.Shared;
 
 //ViewModel.cs
 class ViewModel : NotificationObject {
@@ -569,19 +625,22 @@ class ViewModel : NotificationObject {
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit DateTime="{Binding SelectedTime, Mode=TwoWay}" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit DateTime="{Binding SelectedTime, Mode=TwoWay}" 
                          DropDownView="Clock"
                          Pattern="ShortDate"
                          Name="dateTimeEdit">
-    <syncfusion:DateTimeEdit.Clock>
-        <syncfusion:SfTimeSelector SelectorItemWidth="70"  
-                                   SelectorItemHeight="70"
-                                   ShowCancelButton="False"
-                                   ShowDoneButton="False"
-                                   SelectedTime="{Binding SelectedTime, Mode=TwoWay}"/>
-    </syncfusion:DateTimeEdit.Clock>
-</syncfusion:DateTimeEdit>
+        <syncfusion:DateTimeEdit.Clock>
+            <syncfusion:SfTimeSelector SelectorItemWidth="70"  
+                                    SelectorItemHeight="70"
+                                    ShowCancelButton="False"
+                                    ShowDoneButton="False"
+                                    SelectedTime="{Binding SelectedTime, Mode=TwoWay}"/>
+        </syncfusion:DateTimeEdit.Clock>
+    </syncfusion:DateTimeEdit>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -599,16 +658,20 @@ If you want to set or change the null value for the `DateTimeEdit`, use the [Nul
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:DateTimeEdit ShowMaskOnNullValue="False"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit ShowMaskOnNullValue="False"
                          NullValue="{x:Null}"
                          IsEmptyDateEnabled="True" 
                          x:Name="dateTimeEdit" 
                          Height="25" 
                          Width="200"  />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.ShowMaskOnNullValue= false;
@@ -624,18 +687,22 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ### Show mask on null value
 
-you can show only the mask on null value by setting the `ShowMaskOnNullValue` property value as `true`.
+You can show only the mask on null value by setting the `ShowMaskOnNullValue` property value as `true`.
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:DateTimeEdit ShowMaskOnNullValue="True"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit ShowMaskOnNullValue="True"
                          NullValue="{x:Null}"
                          IsEmptyDateEnabled="True" 
                          Name="dateTimeEdit" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.ShowMaskOnNullValue= true;
@@ -653,15 +720,19 @@ If you want to display any watermark text instead of null value, use the [NoneDa
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:DateTimeEdit NoneDateText="Select the date"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit NoneDateText="Select the date"
                          ShowMaskOnNullValue="True"
                          NullValue="{x:Null}"
                          IsEmptyDateEnabled="True" 
                          Name="dateTimeEdit"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.NoneDateText= "Select the date";
@@ -684,12 +755,16 @@ N> If control got focus by directly clicking the date time field, `OnFocusBehavi
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:DateTimeEdit OnFocusBehavior="CursorAtEnd" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit OnFocusBehavior="CursorAtEnd" 
                          Name="dateTimeEdit" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.OnFocusBehavior = OnFocusBehavior.CursorAtEnd;
@@ -707,11 +782,15 @@ You can prevent the focus in `DateTimeEdit` automatically moving from one field 
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" AutoForwarding="False" />
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit x:Name="dateTimeEdit" AutoForwarding="False" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.AutoForwarding = false;
@@ -725,12 +804,16 @@ The selected datetime changed in `DateTimeEdit` can be examined using [DateTimeC
 
 {% tabs %}
 {% highlight XAML %}
-
- <syncfusion:DateTimeEdit DateTimeChanged="dateTimeEdit_DateTimeChanged" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit        DateTimeChanged="dateTimeEdit_DateTimeChanged" 
                           Name="dateTimeEdit"/>
-
+</Window>
+ 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.DateTimeChanged += dateTimeEdit_DateTimeChanged;
