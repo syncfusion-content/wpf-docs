@@ -2,14 +2,14 @@
 layout: post
 title: Time Selector in WPF TimePicker control | Syncfusion®
 description: Learn here all about Time Selector support in Syncfusion® WPF TimePicker (SfTimePicker) control and more.
-platform: WPF
+platform: wpf
 control: SfTimePicker
 documentation: ug
 ---
 
 # Time Selector in WPF TimePicker (SfTimePicker)
 
-The [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) is a sub-control of [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) which opens inside the drop-down popup and used to select the time for the `SfTimePicker`. It contains the hour, minutes and meridiem selection cells for select the time. The selected time of the `SfTimeSelector` is assigned to the [SfTimePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) property. 
+The [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) is a sub-control of [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) which opens inside the drop-down popup and used to select the time for the `SfTimePicker`. It contains the hour, minutes and meridiem selection cells for selecting the time. The selected time of the `SfTimeSelector` is assigned to the [SfTimePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html#Syncfusion_Windows_Controls_Input_SfTimePicker_Value) property. 
 
 ![SfTimeSelector](Features_images/Features_img3.png)
 
@@ -17,133 +17,145 @@ The visual elements of the time selector can be customized using the [SelectorSt
 
 ## Change the Cell templates
 
-We can changes the template for the each hour, minute or meridiem selector by using the `HourCellTemplate`,  `MinuteCellTemplate` or `MeridiemCellTemplate` which are available in the `SfTimeSelector`.
+We can change the template for each hour, minute, or meridiem selector by using the `HourCellTemplate`,  `MinuteCellTemplate` or `MeridiemCellTemplate` which are available in the `SfTimeSelector`.
 
 N> The DataContext of Hour, Minute, Meridiem Selection cell is [DateTimeWrapper](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.DateTimeWrapper.html).
 
 ## Change the HourCell Template
 
-We can change the hour selector template by using the [HourCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html#Syncfusion_Windows_Controls_Input_SfTimeSelector_HourCellTemplate) property. In that, we can add like image, icon or text with the hour values.
+We can change the hour selector template by using the [HourCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html#Syncfusion_Windows_Controls_Input_SfTimeSelector_HourCellTemplate) property. In it, we can add an image, icon, or text along with the hour values.
 
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker DropDownHeight="380" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfTimePicker DropDownHeight="380" 
                          SelectorItemHeight="70" 
                          SelectorItemWidth="70" 
                          Width="200"
                          Name="sfTimePicker">
 
-    <syncfusion:SfTimePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfTimeSelector">
-            <Setter Property="HourCellTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <Grid>
-                            <TextBlock VerticalAlignment="Top" 
-                                       HorizontalAlignment="Right"
-                                       Margin="5"
-                                       FontSize="22"
-                                       FontFamily="Segoe UI Symbol"
-                                       Text="&#xE170;"/>
+        <syncfusion:SfTimePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfTimeSelector">
+                <Setter Property="HourCellTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <Grid>
+                                <TextBlock VerticalAlignment="Top" 
+                                        HorizontalAlignment="Right"
+                                        Margin="5"
+                                        FontSize="22"
+                                        FontFamily="Segoe UI Symbol"
+                                        Text="&#xE170;"/>
 
-                            <TextBlock Text="{Binding HourNumber}" 
-                                       VerticalAlignment="Bottom" 
-                                       Margin="5"
-                                       FontSize="22"/>
-                        </Grid>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </syncfusion:SfTimePicker.SelectorStyle>
-</syncfusion:SfTimePicker>
+                                <TextBlock Text="{Binding HourNumber}" 
+                                        VerticalAlignment="Bottom" 
+                                        Margin="5"
+                                        FontSize="22"/>
+                            </Grid>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </syncfusion:SfTimePicker.SelectorStyle>
+    </syncfusion:SfTimePicker>
+</Window>
 
 {% endhighlight %}
 
-![SfSpellChecker with Hour cell template](Features_images/Features_img7.png)
+![SfTimePicker with Hour cell template](Features_images/Features_img7.png)
 
 
 ## Change the MinuteCell Template
 
-We can change the minute selector template by using the [MinuteCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html#Syncfusion_Windows_Controls_Input_SfTimeSelector_MinuteCellTemplate) property. In that, we can add like image, icon or text with the minute values.
+We can change the minute selector template by using the [MinuteCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html#Syncfusion_Windows_Controls_Input_SfTimeSelector_MinuteCellTemplate) property. In it, we can add an image, icon, or text along with the minute values.
 
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker DropDownHeight="380" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfTimePicker DropDownHeight="380" 
                          SelectorItemHeight="70" 
                          SelectorItemWidth="70"
                          Width="200"
                          Name="sfTimePicker">
 
-    <syncfusion:SfTimePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfTimeSelector">
-            <Setter Property="MinuteCellTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <Grid>
-                            <TextBlock VerticalAlignment="Top" 
-                               HorizontalAlignment="Right"
-                               Margin="5"
-                               FontSize="22"
-                               FontFamily="Segoe UI Symbol"
-                               Text="&#xE170;"/>
+        <syncfusion:SfTimePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfTimeSelector">
+                <Setter Property="MinuteCellTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <Grid>
+                                <TextBlock VerticalAlignment="Top" 
+                                HorizontalAlignment="Right"
+                                Margin="5"
+                                FontSize="22"
+                                FontFamily="Segoe UI Symbol"
+                                Text="&#xE170;"/>
 
-                            <TextBlock Text="{Binding MinuteNumber}" 
-                               VerticalAlignment="Bottom" 
-                               Margin="5"
-                               FontSize="22"/>
-                        </Grid>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </syncfusion:SfTimePicker.SelectorStyle>
-</syncfusion:SfTimePicker>
+                                <TextBlock Text="{Binding MinuteNumber}" 
+                                VerticalAlignment="Bottom" 
+                                Margin="5"
+                                FontSize="22"/>
+                            </Grid>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </syncfusion:SfTimePicker.SelectorStyle>
+    </syncfusion:SfTimePicker>
+</Window>
 
 {% endhighlight %}
 
-![SfSpellChecker with Minute cell template](Features_images/Features_img8.png)
+![SfTimePicker with Minute cell template](Features_images/Features_img8.png)
 
 ## Change the MeridiemCell Template
 
-We can change the meridiem selector template by using the [MeridiemCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html#Syncfusion_Windows_Controls_Input_SfTimeSelector_MeridiemCellTemplate) property.In that, we can add like image, icon or text with the meridiem values.
+We can change the meridiem selector template by using the [MeridiemCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html#Syncfusion_Windows_Controls_Input_SfTimeSelector_MeridiemCellTemplate) property. In it, we can add an image, icon, or text along with the meridiem values.
 
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker DropDownHeight="380" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfTimePicker DropDownHeight="380" 
                          SelectorItemHeight="70" 
                          SelectorItemWidth="70"
                          Width="200"
                          Name="sfTimePicker">
 
-    <syncfusion:SfTimePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfTimeSelector">
-            <Setter Property="MeridiemCellTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <Grid>
-                            <TextBlock VerticalAlignment="Top" 
-                               HorizontalAlignment="Right"
-                               Margin="5"
-                               FontSize="22"
-                               FontFamily="Segoe UI Symbol"
-                               Text="&#xE170;"/>
+        <syncfusion:SfTimePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfTimeSelector">
+                <Setter Property="MeridiemCellTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <Grid>
+                                <TextBlock VerticalAlignment="Top" 
+                                HorizontalAlignment="Right"
+                                Margin="5"
+                                FontSize="22"
+                                FontFamily="Segoe UI Symbol"
+                                Text="&#xE170;"/>
 
-                            <TextBlock Text="{Binding AmPmString}" 
-                               VerticalAlignment="Bottom" 
-                               Margin="5"
-                               FontSize="22"/>
-                        </Grid>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </syncfusion:SfTimePicker.SelectorStyle>
-</syncfusion:SfTimePicker>
+                                <TextBlock Text="{Binding AmPmString}" 
+                                VerticalAlignment="Bottom" 
+                                Margin="5"
+                                FontSize="22"/>
+                            </Grid>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </syncfusion:SfTimePicker.SelectorStyle>
+    </syncfusion:SfTimePicker>
+</Window>
 
 {% endhighlight %}
 			
-![SfSpellChecker with Meridiem cell template](Features_images/Features_img9.png)
+![SfTimePicker with Meridiem cell template](Features_images/Features_img9.png)
 
 ## Change size of cells
 
@@ -152,12 +164,18 @@ We can change the cell size in the `SfTimeSelector` control by setting the [Sele
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker SelectorItemWidth="60" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfTimePicker SelectorItemWidth="60" 
                          SelectorItemHeight="60" 
 	                     x:Name="sfTimePicker"/>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.SelectorItemWidth = 60;
@@ -175,11 +193,17 @@ We can change the space between `SfTimeSelector` hour, minutes and meridiem item
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker SelectorItemSpacing="50" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfTimePicker SelectorItemSpacing="50" 
 	                     x:Name="sfTimePicker"/>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.SelectorItemSpacing = 50;
