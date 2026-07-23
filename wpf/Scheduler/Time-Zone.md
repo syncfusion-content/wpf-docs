@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 # Time Zone in WPF Scheduler (SfScheduler)
-[WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) allows to create appointments in various time zones and display them in the respective time zone or any other time zone. Use the time zone in the following four different ways:
+[WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) allows you to create appointments in various time zones and display them in the respective time zone or any other time zone. Use the time zone in the following four different ways:
 * Create appointments in different time zones.
 * Display appointments based on the client’s time zone.
 * Display appointments based on scheduler time zone.
@@ -1165,6 +1165,8 @@ Use the [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedu
 
 {% tabs %}	
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 var appointments = new ScheduleAppointmentCollection();
 appointments.Add(new ScheduleAppointment()
 {
@@ -1184,18 +1186,26 @@ appointments.Add(new ScheduleAppointment()
 * The time zone support is applicable for custom appointments too, so map the corresponding property.
 * Use [TimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimeZone) for custom appointments by mapping the [StartTimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_StartTimeZone) and [EndTimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_EndTimeZone) custom properties of [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html).
 
-## Display Appointments based on client’s  time zone
-Display the appointments based on the client’s local time zone in scheduler. For example, consider a scenario that you are in North Carolina and you want to set up a meeting at 10 A.M. on North Carolina time. You have colleagues in London and Chennai, and they also need to participate. The time for this meeting will be 3 P.M. (15:00) in London and 5.30 A.M. in Chennai. When each view your Scheduler, you need to see the appointment displayed relative to your local time zones 5.30 A.M., 10 A.M., and 3 P.M., respectively. It can be achieved by setting schedule time zone to default (it will consider your device’s local time zone as schedule time zone) and appointment’s time zone to `Eastern Standard Time (North Carolina)` [as you are in North Carolina and it's time zone is Eastern Standard Time].
+## Display appointments based on the client’s time zone
+Display the appointments based on the client’s local time zone in the scheduler. For example, consider a scenario where you are in North Carolina and you want to set up a meeting at 10 A.M. North Carolina time. You have colleagues in London and Chennai, and they also need to participate. The time for this meeting will be 3 P.M. (15:00) in London and 5.30 A.M. in Chennai. When each views your Scheduler, you need to see the appointment displayed relative to your local time zones 5.30 A.M., 10 A.M., and 3 P.M., respectively. It can be achieved by setting schedule time zone to default (it will consider your device’s local time zone as schedule time zone) and appointment’s time zone to `Eastern Standard Time (North Carolina)` [as you are in North Carolina and its time zone is Eastern Standard Time].
 
 ## Display appointments based on Scheduler time zone
 Set the specific time zone to schedule using the [TimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimeZone) property of scheduler. On this scenario, the appointments will be displayed in UTC time when the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment` are set to null. The appointments will be displayed in UTC time based on the given scheduler time zone.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
                         TimeZone="Central America Standard Time"/>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c#%}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.TimeZone = "Central America Standard Time";
 {% endhighlight %}
 {% endtabs %}
@@ -1203,13 +1213,13 @@ this.Schedule.TimeZone = "Central America Standard Time";
 ## Display appointments at same time everywhere regardless of client’s time zone
 Display the appointments at the same time everywhere without considering the time zone while setting the TimeZone property of the scheduler, the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment` to null. The appointments will be displayed based on the given `StartTime` and `EndTime` of appointment everywhere without considering the time zone.
 
-## Updating StartTime and EndTime after drag and drop appointment based on time zone.
+## Updating StartTime and EndTime after drag and drop appointment based on time zone
 After rescheduling an appointment using drag and drop, appointment’s start and end time value will be updated based on scheduler time zone and appointment’s time zone.
 
 For an example, consider the local time zone is `India Standard Time`, if you drag an appointment from 9 AM and drop this on 1 PM and the scheduler’s `TimeZone` is not set and the appointment’s `StartTimeZone` and `EndTimeZone` has set as `AUS Central Standard Time (Darwin)` then appointment’s start time and end time value will be converted from Local time zone to appointment time zone and the appointment’s start time will be saved at 9 AM.
 
 If you set scheduler’s `TimeZone` as `AUS Central Standard Time (Darwin)` and the appointment’s `StartTimeZone` and `EndTimeZone` as `Central Standard Time (Mexico)` then the appointment’s start time and end time value has converted from scheduler’s time zone to appointment time zone and the appointment’s start time will be saved at 3.30 AM of next day.
-If you set scheduler’s `TimeZone` as `AUS Central Standard Time (Darwin)` and appointment’s time zone was not set then the appointment’s start time and end time value converted from scheduler time zone to `UTC time zone` and the appointment’s start time will be saved at 10.30 PM.
+If you set scheduler’s `TimeZone` as `AUS Central Standard Time (Darwin)` and the appointment’s time zone is not set, then the appointment’s start time and end time value is converted from scheduler time zone to `UTC time zone` and the appointment’s start time will be saved at 10.30 PM.
 
 
-N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.  For information on appointments, see [Appointments](appointments.md).

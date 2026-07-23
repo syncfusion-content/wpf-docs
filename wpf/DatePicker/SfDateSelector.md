@@ -2,14 +2,14 @@
 layout: post
 title: Date Selector in WPF DatePicker control | Syncfusion®
 description: Learn here all about Date Selector support in Syncfusion® WPF DatePicker (SfDatePicker) control and more.
-platform: WPF
+platform: wpf
 control: SfDatePicker
 documentation: ug
 ---
 
 # Date Selector in WPF DatePicker (SfDatePicker)
 
-The [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) is a sub-control of [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) which opens inside the drop-down popup and used to select the date for the `SfDatePicker`. It contains the date, month and year selection cells for select the date. The selected date of the `SfDateSelector` is assigned to the [SfDatePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_Value) property. 
+The [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) is a sub-control of [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) which opens inside the drop-down popup and used to select the date for the `SfDatePicker`. It contains the date, month and year selection cells for selecting the date. The selected date of the `SfDateSelector` is assigned to the [SfDatePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_Value) property. 
 
 ![WPF DatePicker Date Selector](Features_images/wpf-datepicker-date-selector.png)
 
@@ -17,45 +17,49 @@ The visual elements of the date selector can be customized using the [SelectorSt
 
 ## Change the Cell templates
 
-We can changes the template for the Date, Month or Year selector by using the `DayCellTemplate`, `MonthCellTemplate` or `YearCellTemplate` which are available in the `SfDateSelector`.
+We can change the template for the Date, Month or Year selector by using the `DayCellTemplate`, `MonthCellTemplate` or `YearCellTemplate` which are available in the `SfDateSelector`.
 
 N> The DataContext of Month, Date and Year selection cell is [DateTimeWrapper](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.DateTimeWrapper.html).
 
 ## Change the DayCell Template
 
-We can change the day selector template by using the [DayCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_DayCellTemplate) property. In that, we can add like image, icon or text with the day numbers.
+We can change the day selector template by using the [DayCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_DayCellTemplate) property. In it, we can add an image, icon, or text along with the day numbers.
 
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
                          HorizontalAlignment="Center"
                          Width="200"
                          Name="sfDatePicker">
 
-    <syncfusion:SfDatePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfDateSelector">
-            <Setter Property="DayCellTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <Grid>
-                            <TextBlock VerticalAlignment="Top" 
-                                       HorizontalAlignment="Right"
-                                       Margin="5"
-                                       FontSize="22"
-                                       FontFamily="Segoe UI Symbol"
-                                       Text="&#xE170;"/>
+        <syncfusion:SfDatePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfDateSelector">
+                <Setter Property="DayCellTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <Grid>
+                                <TextBlock VerticalAlignment="Top" 
+                                        HorizontalAlignment="Right"
+                                        Margin="5"
+                                        FontSize="22"
+                                        FontFamily="Segoe UI Symbol"
+                                        Text="&#xE170;"/>
 
-                            <TextBlock Text="{Binding DayNumber}" 
-                                       VerticalAlignment="Bottom" 
-                                       Margin="5"
-                                       FontSize="22"/>
-                        </Grid>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </syncfusion:SfDatePicker.SelectorStyle>
-</syncfusion:SfDatePicker>
+                                <TextBlock Text="{Binding DayNumber}" 
+                                        VerticalAlignment="Bottom" 
+                                        Margin="5"
+                                        FontSize="22"/>
+                            </Grid>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </syncfusion:SfDatePicker.SelectorStyle>
+    </syncfusion:SfDatePicker>
+</Window>
 
 {% endhighlight %}
 
@@ -64,39 +68,43 @@ We can change the day selector template by using the [DayCellTemplate](https://h
 
 ## Change the MonthCell Template
 
-We can change the month selector template by using the [MonthCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_MonthCellTemplate) property. In that, we can add like image, icon or text with the month numbers.
+We can change the month selector template by using the [MonthCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_MonthCellTemplate) property. In it, we can add an image, icon, or text along with the month numbers.
 
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
                          HorizontalAlignment="Center"
                          Width="200"
                          Name="sfDatePicker">
 
-    <syncfusion:SfDatePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfDateSelector">
-            <Setter Property="MonthCellTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <Grid>
-                            <TextBlock VerticalAlignment="Top" 
-                               HorizontalAlignment="Right"
-                               Margin="5"
-                               FontSize="22"
-                               FontFamily="Segoe UI Symbol"
-                               Text="&#xE170;"/>
+        <syncfusion:SfDatePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfDateSelector">
+                <Setter Property="MonthCellTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <Grid>
+                                <TextBlock VerticalAlignment="Top" 
+                                HorizontalAlignment="Right"
+                                Margin="5"
+                                FontSize="22"
+                                FontFamily="Segoe UI Symbol"
+                                Text="&#xE170;"/>
 
-                            <TextBlock Text="{Binding MonthNumber}" 
-                               VerticalAlignment="Bottom" 
-                               Margin="5"
-                               FontSize="22"/>
-                        </Grid>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </syncfusion:SfDatePicker.SelectorStyle>
-</syncfusion:SfDatePicker>
+                                <TextBlock Text="{Binding MonthNumber}" 
+                                VerticalAlignment="Bottom" 
+                                Margin="5"
+                                FontSize="22"/>
+                            </Grid>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </syncfusion:SfDatePicker.SelectorStyle>
+    </syncfusion:SfDatePicker>
+</Window>
 
 {% endhighlight %}
 
@@ -104,39 +112,43 @@ We can change the month selector template by using the [MonthCellTemplate](https
 
 ## Change the YearCell Template
 
-We can change the year selector template by using the [YearCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_YearCellTemplate) property. In that, we can add like image, icon or text with the year numbers.
+We can change the year selector template by using the [YearCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_YearCellTemplate) property. In it, we can add an image, icon, or text along with the year numbers.
 
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
                          HorizontalAlignment="Center"
                          Width="200"
                          Name="sfDatePicker">
 
-    <syncfusion:SfDatePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfDateSelector">
-            <Setter Property="YearCellTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <Grid>
-                            <TextBlock VerticalAlignment="Top" 
-                               HorizontalAlignment="Right"
-                               Margin="5"
-                               FontSize="22"
-                               FontFamily="Segoe UI Symbol"
-                               Text="&#xE170;"/>
+        <syncfusion:SfDatePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfDateSelector">
+                <Setter Property="YearCellTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <Grid>
+                                <TextBlock VerticalAlignment="Top" 
+                                HorizontalAlignment="Right"
+                                Margin="5"
+                                FontSize="22"
+                                FontFamily="Segoe UI Symbol"
+                                Text="&#xE170;"/>
 
-                            <TextBlock Text="{Binding YearNumber}" 
-                               VerticalAlignment="Bottom" 
-                               Margin="5"
-                               FontSize="22"/>
-                        </Grid>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </syncfusion:SfDatePicker.SelectorStyle>
-</syncfusion:SfDatePicker>
+                                <TextBlock Text="{Binding YearNumber}" 
+                                VerticalAlignment="Bottom" 
+                                Margin="5"
+                                FontSize="22"/>
+                            </Grid>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </syncfusion:SfDatePicker.SelectorStyle>
+    </syncfusion:SfDatePicker>
+</Window>
 
 {% endhighlight %}
 			
@@ -149,12 +161,17 @@ We can change the cell size in the `SfDateSelector` control by setting the [Sele
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfDatePicker SelectorItemWidth="100" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfDatePicker SelectorItemWidth="100" 
                          SelectorItemHeight="100" 
 	                     x:Name="sfDatePicker"/>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.Windows.Controls.Input;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.SelectorItemWidth = 100;
@@ -172,11 +189,16 @@ We can change the space between `SfDateSelector` date, month and year items by u
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfDatePicker SelectorItemSpacing="50" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfDatePicker SelectorItemSpacing="50" 
 	                     x:Name="sfDatePicker"/>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.Windows.Controls.Input;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.SelectorItemSpacing = 50;

@@ -2,13 +2,13 @@
 layout: post
 title: Calendar Types in WPF Scheduler control | Syncfusion
 description: Learn here all about how to change the calendar types in the scheduler (SfScheduler) control, its elements, and more.
-platform: WPF
+platform: wpf
 control: SfScheduler
 documentation: ug
 ---
 
 # Calendar Types in WPF Scheduler (SfScheduler)
-This section describes how to change the calendar types of scheduler control using the [CalendarIdentifier.](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier)
+This section describes how to change the calendar types of the scheduler control using the [CalendarIdentifier.](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier)
 
 ## Types of Calendar
 The scheduler control supports the different types of calendars such as Gregorian, Korean, Hebrew, and more. You can change the calendar types by using the [CalendarIdentifier](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier) property in [Scheduler.](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) The default value of the `CalendarIdentifier` property is [GregorianCalendar.](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.gregoriancalendar?view=net-5.0)
@@ -45,10 +45,18 @@ N>
 
 {% tabs %}
 {% highlight xaml %}
-<scheduler:SfScheduler x:Name="Schedule"
-                       CalendarIdentifier="HijriCalendar" />
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <Grid>
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                CalendarIdentifier="HijriCalendar" />
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.CalendarIdentifier = "HijriCalendar";
 {% endhighlight %}
 {% endtabs %}
@@ -63,6 +71,8 @@ All the DateTime values can be given such as [DisplayDate,](https://help.syncfus
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for the schedule appointment collection.
 var appointments = new ScheduleAppointmentCollection();
 
@@ -87,6 +97,8 @@ this.scheduler.ItemsSource = appointments;
 {% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for the schedule appointment collection.
 var appointments = new ScheduleAppointmentCollection();
 
@@ -94,7 +106,7 @@ var appointments = new ScheduleAppointmentCollection();
 appointments.Add(new ScheduleAppointment()
 {
    Subject = "Meeting",
-  // StartTime and EndTime values specified with local system date will be converted to the Hijiri calendar mentioned.
+   // StartTime and EndTime values specified with local system date will be converted to the Hijri calendar mentioned.
    StartTime = new DateTime(2021, 09, 29, 10, 0, 0, 0),
    EndTime = new DateTime(2021, 09, 29, 11, 0, 0, 0),
 });
@@ -106,4 +118,4 @@ this.scheduler.ItemsSource = appointments;
 {% endcapture %}
 {{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/CalendarTypes)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/CalendarTypes). For more information on appointments, see [Appointments](appointments.md).

@@ -31,20 +31,25 @@ If you want to change the animation time for navigate to the day, month or year 
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:CalendarEdit ChangeModeTime="0"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit ChangeModeTime="0"
                          Name="calendarEdit" />
+</Window>
+
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.ChangeModeTime = 0;
+this.calendarEdit.ChangeModeTime = 0;
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Navigation between day, month or year modes animation time is changed](Navigation_images/ChangeModeTime.gif)
 
-Here, `ChangeModeTime` property value is `0`. So. navigation between day, month or year mode is done without any animation delay.
+Here, `ChangeModeTime` property value is `0`. So, navigation between day, month or year mode is done without any animation delay.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Navigation)
 
@@ -54,15 +59,20 @@ You can change the background and foreground of the `CalendarEdit` header by usi
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:CalendarEdit HeaderBackground="Green"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit HeaderBackground="Green"
                          HeaderForeground="Yellow"
                          Name="calendarEdit" />
+</Window>
+
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.HeaderBackground = Brushes.Green;
-calendarEdit.HeaderForeground = Brushes.Yellow;
+this.calendarEdit.HeaderBackground = Brushes.Green;
+this.calendarEdit.HeaderForeground = Brushes.Yellow;
 
 {% endhighlight %}
 {% endtabs %}
@@ -77,65 +87,73 @@ You can navigate to the previous or next month by clicking on the `Previous-Next
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:CalendarEdit FrameMovingTime="0"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   <syncfusion:CalendarEdit FrameMovingTime="0"
                          Name="calendarEdit" />
+</Window>
+
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.FrameMovingTime = 0;
+this.calendarEdit.FrameMovingTime = 0;
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Navigation between next and previous months animation time is changed](Navigation_images/FrameMovingTime.gif)
 
-Here, `FrameMovingTime` property value is `0`. So. navigation between next and previous month is done without any animation delay.
+Here, `FrameMovingTime` property value is `0`. So, navigation between next and previous month is done without any animation delay.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Navigation)
 
 
 ## Custom UI for previous and next navigation buttons
 
-You can customize the previous and next navigation buttons by using the [PreviousScrollButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_PreviousScrollButtonTemplate) an [NextScrollButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_NextScrollButtonTemplate) properties.
+You can customize the previous and next navigation buttons by using the [PreviousScrollButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_PreviousScrollButtonTemplate) and [NextScrollButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_NextScrollButtonTemplate) properties.
 
 {% tabs %}
 {% highlight XAML %}
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   <Window.Resources>
+        <!--Template for Next Buttons in Calendar Control -->
+        <ControlTemplate x:Key="nextScrollButtonTemplate">
+            <Border>
+                <Button Command="syncfusion:CalendarEdit.NextCommand" >
+                    <Button.Content>
+                        <Image Source="Images/1.png"
+                            Height="16" Width="16"
+                            VerticalAlignment="Center" />
+                    </Button.Content>
+                </Button>
+            </Border>
+        </ControlTemplate>
+        
+        <!--Template for Previous Buttons in Calendar Control -->
+        <ControlTemplate x:Key="previousScrollButtonTemplate">
+            <Border>
+                <Button Command="syncfusion:CalendarEdit.PrevCommand">
+                    <Button.Content>
+                        <Image Source="Images/2.png"
+                            Height="16" Width="16"
+                            VerticalAlignment="Center" />
+                    </Button.Content>
+                </Button>
+            </Border>
+        </ControlTemplate>
+    </Window.Resources>
 
-<Window.Resources>
-    <!--Template for Next Buttons in Calendar Control -->
-    <ControlTemplate x:Key="nextScrollButtonTemplate">
-        <Border>
-            <Button Command="syncfusion:CalendarEdit.NextCommand" >
-                <Button.Content>
-                    <Image Source="Images/1.png"
-                           Height="16" Width="16"
-                           VerticalAlignment="Center" />
-                </Button.Content>
-            </Button>
-        </Border>
-    </ControlTemplate>
-    
-    <!--Template for Previous Buttons in Calendar Control -->
-    <ControlTemplate x:Key="previousScrollButtonTemplate">
-        <Border>
-            <Button Command="syncfusion:CalendarEdit.PrevCommand">
-                <Button.Content>
-                    <Image Source="Images/2.png"
-                           Height="16" Width="16"
-                           VerticalAlignment="Center" />
-                </Button.Content>
-            </Button>
-        </Border>
-    </ControlTemplate>
-</Window.Resources>
-
-<Grid>
-    <syncfusion:CalendarEdit PreviousScrollButtonTemplate="{StaticResource previousScrollButtonTemplate}" 
-                             NextScrollButtonTemplate="{StaticResource nextScrollButtonTemplate}"
-                             Name="calendarEdit" 
-                             Width="200" Height="200"/>
-</Grid>
+    <Grid>
+        <syncfusion:CalendarEdit PreviousScrollButtonTemplate="{StaticResource previousScrollButtonTemplate}" 
+                                NextScrollButtonTemplate="{StaticResource nextScrollButtonTemplate}"
+                                Name="calendarEdit" 
+                                Width="200" Height="200"/>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -150,13 +168,18 @@ You can change previous or next month navigation direction to either `Horizontal
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:CalendarEdit MonthChangeDirection="Vertical"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   <syncfusion:CalendarEdit MonthChangeDirection="Vertical"
                          Name="calendarEdit" />
+</Window>
+
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.MonthChangeDirection = AnimationDirection.Vertical;
+this.calendarEdit.MonthChangeDirection = AnimationDirection.Vertical;
 
 {% endhighlight %}
 {% endtabs %}

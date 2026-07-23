@@ -17,18 +17,22 @@ You can change the default foreground, mouse hover foreground and border brush o
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:CalendarEdit Foreground="Blue"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit Foreground="Blue"
                          MouseOverForeground="Red"
                          MouseOverBorderBrush="DarkGoldenrod"
                          Name="calendarEdit" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Foreground = Brushes.Blue;
-calendarEdit.MouseOverForeground = Brushes.Red;
-calendarEdit.MouseOverBorderBrush = Brushes.DarkGoldenrod;
+this.calendarEdit.Foreground = Brushes.Blue;
+this.calendarEdit.MouseOverForeground = Brushes.Red;
+this.calendarEdit.MouseOverBorderBrush = Brushes.DarkGoldenrod;
 
 {% endhighlight %}
 {% endtabs %}
@@ -43,16 +47,20 @@ You can change the default background and mouse hover background color of the `C
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:CalendarEdit Background="Pink"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit Background="Pink"
                          MouseOverBackground="Green"
                          Name="calendarEdit" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.Background = Brushes.Pink;
-calendarEdit.MouseOverBackground = Brushes.Green;
+this.calendarEdit.Background = Brushes.Pink;
+this.calendarEdit.MouseOverBackground = Brushes.Green;
 
 {% endhighlight %}
 {% endtabs %}
@@ -67,14 +75,18 @@ You can change the flow direction of the `CalendarEdit` layout from right to lef
 
 {% tabs %}
 {% highlight xaml %}
-
-<syncfusion:CalendarEdit FlowDirection="RightToLeft"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:CalendarEdit FlowDirection="RightToLeft"
                          Name="calendarEdit" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
-calendarEdit.FlowDirection = FlowDirection.RightToLeft;
+this.calendarEdit.FlowDirection = FlowDirection.RightToLeft;
 
 {% endhighlight %}
 {% endtabs %}
