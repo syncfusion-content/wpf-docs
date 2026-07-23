@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Edit Commands in WPF Syntax Editor control | Syncfusion
-description: Learn about Edit Commands support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+description: Learn about Edit Commands support in Syncfusion Essential Studio WPF Syntax Editor (EditControl) control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Edit Commands in WPF Syntax Editor
+# Edit Commands in WPF Syntax Editor (EditControl)
 
-Essential edit for WPF contains built-in RoutedUICommands for all editing and file operations such as select all, cut, copy, paste, new, open, save, save as and so on. The built-in RoutedUICommands can be bound to the edit control by using the **Command** property of the external controls such as button, menu item, and so on. The following lines of code can be used to bind the RoutedUICommands with external controls.
+Essential Edit for WPF provides built-in `RoutedUICommand` objects for common editing and file operations such as Select All, Cut, Copy, Paste, New, Open, Save, and Save As. These commands can be bound to the EditControl through the `Command` property of external controls such as Button and MenuItem. The built-in commands are defined in the `EditCommands` class, which belongs to the `Syncfusion.Windows.Edit` namespace.
 
 {% tabs %}
 
@@ -32,6 +32,7 @@ Essential edit for WPF contains built-in RoutedUICommands for all editing and fi
             <MenuItem Command="{x:Static sfedit:EditCommands.Undo}" CommandTarget="{Binding ElementName=Edit1}"/>
         </MenuItem>
     </Menu>
+    
     <sfedit:EditControl Name="Edit1" EnableOutlining="False" Height="270"
                         Background="white" AllowDrop="True" ShowLineNumber="True"/>
 </StackPanel>
@@ -40,9 +41,6 @@ Essential edit for WPF contains built-in RoutedUICommands for all editing and fi
 
 {% endtabs %}
 
-
 The following image displays **Open** edit command window.
 
 ![Edit Commands enabled in Syntax Editor](Edit-Commands_images/edit-commands_img1.png)
-
-
