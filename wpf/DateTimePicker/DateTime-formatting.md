@@ -9,7 +9,7 @@ documentation: ug
 
 # DateTime formatting in WPF DateTimePicker (DateTimeEdit)
 
-you can specify the selected datetime display format in the [WPF DateTimePicker](https://www.syncfusion.com/wpf-controls/datetimepicker) (DateTimeEdit) by using the predefined patterns and custom patterns.
+You can specify the selected datetime display format in the [WPF DateTimePicker](https://www.syncfusion.com/wpf-controls/datetimepicker) (DateTimeEdit) by using the predefined patterns and custom patterns.
 
 ## Predefined display patterns
 
@@ -24,8 +24,8 @@ The `DateTimeEdit` control supports the following patterns:
 * FullDateTime 
 * MonthDay 
 * CustomPattern 
-* ShortableDateTime 
-* UniversalShortableDateTime 
+* SortableDateTime 
+* UniversalSortableDateTime 
 * RFC1123 
 * YearMonth 
 
@@ -33,13 +33,16 @@ The `DateTimeEdit` control supports the following patterns:
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit Pattern="FullDateTime" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Pattern="FullDateTime" 
                          Name="dateTimeEdit" />
-
+</Window>
 
 {% endhighlight  %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.Pattern = DateTimePattern.FullDateTime;
@@ -57,6 +60,7 @@ The `DateTimeEdit` notifies that the pattern is changed through the [PatternChan
 
 {% tabs %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.PatternChanged += DateTimeEdit_PatternChanged;
@@ -72,19 +76,23 @@ private void DateTimeEdit_PatternChanged(DependencyObject d, DependencyPropertyC
 
 ## Change datetime format
 
-you can change the date time format by using the [DateTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_DateTimeFormat)  property. The default value of `` property is ``.
+You can change the date time format by using the [DateTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_DateTimeFormat)  property. The default value of `` property is ``.
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit Name="dateTimeEdit">
-    <syncfusion:DateTimeEdit.DateTimeFormat>
-        <global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/>
-    </syncfusion:DateTimeEdit.DateTimeFormat>
-</syncfusion:DateTimeEdit>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit Name="dateTimeEdit">
+        <syncfusion:DateTimeEdit.DateTimeFormat>
+            <global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/>
+        </syncfusion:DateTimeEdit.DateTimeFormat>
+    </syncfusion:DateTimeEdit>
+</Window>
 
 {% endhighlight  %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.DateTimeFormat = new DateTimeFormatInfo()
@@ -105,14 +113,17 @@ You can also set the custom pattern for displaying the datetime in the `DateTime
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit CustomPattern="MM**dd**yy" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit CustomPattern="MM**dd**yy" 
                          Pattern="CustomPattern" 
                          Name="dateTimeEdit" />
-
+</Window>
 
 {% endhighlight  %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.CustomPattern = "MM**dd**yy";
@@ -131,6 +142,7 @@ The `DateTimeEdit` notifies that the custom pattern is changed through the [Cust
 
 {% tabs %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.CustomPatternChanged += dateTimeEdit_CustomPatternChanged;
@@ -154,14 +166,17 @@ By default, the `DateTimeEdit` supports system’s current culture. You can chan
 
 {% tabs %}
 {% highlight XAML %}
-
-<syncfusion:DateTimeEdit CultureInfo="en-US" 
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:DateTimeEdit CultureInfo="en-US" 
                          Pattern="FullDateTime"
                          Name="dateTimeEdit" />
-
+</Window>
 
 {% endhighlight  %}
 {% highlight C# %}
+using Syncfusion.Windows.Shared;
 
 DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.CultureInfo = new CultureInfo("fr-FR");

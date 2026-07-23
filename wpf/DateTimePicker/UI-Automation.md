@@ -18,7 +18,7 @@ Microsoft UI Automation is the new accessibility Framework for Microsoft Windows
 
 ## Quick Test Professional (QTP)
 
-The QTP tool can recognize the `DateTimeEdit` control. Hence with the `DateTimeEdit` control, it is possible to record interactions such as opening the calendar popup, closing the calendar popup, choosing the date from  the calendar , setting the DateTime value and and so on, for testing using QTP.
+The QTP tool can recognize the `DateTimeEdit` control. Hence with the `DateTimeEdit` control, it is possible to record interactions such as opening the calendar popup, closing the calendar popup, choosing the date from the calendar, setting the DateTime value and so on, for testing using QTP.
 
 ### Mapping the control to the custom server
 
@@ -26,7 +26,7 @@ QTP Tool interacts with the control through CustomServerBase extension through t
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <?xml version="1.0" encoding="UTF-8"?>
 <Controls>
