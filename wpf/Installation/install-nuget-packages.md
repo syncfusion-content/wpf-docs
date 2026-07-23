@@ -10,13 +10,6 @@ documentation: ug
 
 # Install Syncfusion WPF NuGet packages
 
-## Prerequisites
-
-* Visual Studio 2017 or later with the **NuGet Package Manager** workload installed.
-* A WPF project that targets a Syncfusion-supported .NET version.
-* An active internet connection to reach the [nuget.org](https://www.nuget.org/) feed.
-* If you plan to use the CLI method, install the [.NET SDK](https://learn.microsoft.com/en-us/dotnet/core/sdk) matching your project target framework.
-
 ## Compatibility
 
 | Project type | Minimum .NET version |
@@ -29,6 +22,13 @@ documentation: ug
 **NuGet** is a package management system for Visual Studio. It makes it easy to add, update, and remove external libraries in your application. Syncfusion publishes all WPF NuGet packages to [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22wpf%22+syncfusion). The Syncfusion WPF NuGet packages can be used without installing the Syncfusion Essential Studio setup. You can simply consume the Syncfusion WPF NuGet packages in a WPF application to develop with the Syncfusion WPF components.
 
 > From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all Syncfusion WPF components are available as NuGet packages on nuget.org.
+
+## Prerequisites
+
+* Visual Studio 2017 or later with the **NuGet Package Manager** workload installed.
+* A WPF project that targets a Syncfusion-supported .NET version.
+* An active internet connection to reach the [nuget.org](https://www.nuget.org/) feed.
+* If you plan to use the CLI method, install the [.NET SDK](https://learn.microsoft.com/en-us/dotnet/core/sdk) matching your project target framework.
 
 ## Installation using Package Manager UI
 
@@ -54,7 +54,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
 5. Your application now has all the required Syncfusion assemblies, and you are ready to start building a high-performance, responsive app with [Syncfusion WPF components](https://www.syncfusion.com/wpf-controls). You can also refer to the [Syncfusion WPF help document](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf) for development.
 
-## Installation using Dotnet (.NET) CLI
+## Installation using dotnet (.NET) CLI
 
 The [dotnet Command Line Interface (CLI)](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli) allows you to add, restore, pack, publish, and manage packages without making any changes to your application files. [dotnet add package](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package?tabs=netcore2x) adds a package reference to the application file, then runs [dotnet restore](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) to install the package.
 
