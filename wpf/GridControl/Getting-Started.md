@@ -47,7 +47,7 @@ Please follow the steps below to add the Grid control through a designer.
 
 ### Programmatically Adding the Grid Control
 
-Instead of adding it through a designer such a Visual Studio, you can add the Grid control programmatically using either the NuGet package or direct assembly references.
+Instead of adding it through the Visual Studio Designer, you can add the Grid control programmatically using either a NuGet package or direct assembly references.
 
 1. Create a new WPF application.
 
