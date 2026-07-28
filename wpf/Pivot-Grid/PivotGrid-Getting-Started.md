@@ -27,7 +27,6 @@ Open Visual Studio IDE and navigate to File > New > Project > WPF Application (i
 
 Next, you should add the following dependency assemblies to your WPF application. To add them to your WPF application, right-click **References** in the Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following mentioned Syncfusion<sup>®</sup> assemblies are found.
 
-* Syncfusion.Core.dll
 * Syncfusion.Grid.Wpf
 * Syncfusion.GridCommon.Wpf
 * Syncfusion.Linq.Base
@@ -60,7 +59,6 @@ Open Visual Studio IDE and navigate to File > New > Project > WPF Application (i
 
 Add the following dependency assemblies to your WPF application. To add them to your WPF application, right-click **References** in the Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following mentioned Syncfusion<sup>®</sup> assemblies are found.
 
-* Syncfusion.Core.dll
 * Syncfusion.Grid.Wpf
 * Syncfusion.GridCommon.Wpf
 * Syncfusion.Linq.Base
@@ -337,11 +335,3 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
 
 
 N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to know how to organize and summarize business data and display the result in a cross-table format.
-
-## Theme
-
-The pivot grid control supports various built-in themes. Set the `VisualStyle` property as shown in the samples above, or refer to the below links to apply themes,
-
-  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
-  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
