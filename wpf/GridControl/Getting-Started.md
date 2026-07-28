@@ -94,6 +94,8 @@ ScrollViewer.Content = gridControl;
 //To bring the Grid control to the view, ScrollViewer should be set as a child of LayoutRoot      
 this.layoutRoot.Children.Add(ScrollViewer);           
 {% endhighlight %}
+{% endtabs %}
+{% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Populating the Grid control with Data
