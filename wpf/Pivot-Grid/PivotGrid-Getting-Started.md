@@ -9,8 +9,9 @@ documentation: ug
 
 # Getting Started with WPF Pivot Grid
 
->**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup>®</sup> license key in your WPF application to use the components.
+>**Important:** License Key Registration
+>
+>Starting with v16.2.0.x, if you refer to Syncfusion<sup>®</sup> assemblies from the trial setup or from the NuGet feed, include a license key in your projects. Refer to the [Syncfusion License Registration](https://help.syncfusion.com/common/essential-studio/licensing/overview) guide to register the Syncfusion license key in your WPF application.
 
 ## Adding pivot grid through designer
 
@@ -26,6 +27,7 @@ Open Visual Studio IDE and navigate to File > New > Project > WPF Application (i
 
 Next, you should add the following dependency assemblies to your WPF application. To add them to your WPF application, right-click **References** in the Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following mentioned Syncfusion<sup>®</sup> assemblies are found.
 
+* Syncfusion.Core.dll
 * Syncfusion.Grid.Wpf
 * Syncfusion.GridCommon.Wpf
 * Syncfusion.Linq.Base
@@ -58,6 +60,7 @@ Open Visual Studio IDE and navigate to File > New > Project > WPF Application (i
 
 Add the following dependency assemblies to your WPF application. To add them to your WPF application, right-click **References** in the Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following mentioned Syncfusion<sup>®</sup> assemblies are found.
 
+* Syncfusion.Core.dll
 * Syncfusion.Grid.Wpf
 * Syncfusion.GridCommon.Wpf
 * Syncfusion.Linq.Base
@@ -65,7 +68,7 @@ Add the following dependency assemblies to your WPF application. To add them to 
 * Syncfusion.PivotAnalysis.Wpf
 * Syncfusion.Shared.Wpf
 
-N> You can also get the assemblies by browsing to the default assembly location
+N> You can also get the assemblies by browsing to the default assembly location.
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}
 
 Then, add a grid container in MainWindow.xaml file to hold the pivot grid control created and added from code-behind.
@@ -83,9 +86,9 @@ Then, add a grid container in MainWindow.xaml file to hold the pivot grid contro
 
 {% endhighlight %}
 
-Include the *Syncfusion.Windows.Controls.PivotGrid* namespace in the MainWindow.xaml.cs file to create a pivot grid control in code-behind.
+Include the `Syncfusion.Windows.Controls.PivotGrid` namespace in the MainWindow.xaml.cs file to create a pivot grid control in code-behind.
 
-{%highlight C# %}
+{% highlight C# %}
 
     using System.Windows.Media.Imaging;
     using System.Windows.Navigation;
@@ -211,9 +214,11 @@ public class ProductSales {
 
 {% endhighlight %}
 
-Above mentioned GetSalesData method is used to get the collection that needs to be populated in the pivot grid control. Now, bind the collection to the pivot grid control as its ItemSource. It can be done through XAML or code-behind.
+Above mentioned `GetSalesData` method is used to get the collection that needs to be populated in the pivot grid control. Now, bind the collection to the pivot grid control as its `ItemSource`. It can be done through XAML or code-behind.
 
-To initialize the ItemSource through **XAML**, ObjectDataProvider is used. Refer to the following code.
+N> The `VisualStyle` property sets the built-in theme. `Metro` is used here for illustration; the control also supports other built-in themes. Refer to the [Theme](#theme) section below for details.
+
+To initialize the `ItemSource` through **XAML**, ObjectDataProvider is used. Refer to the following code.
 
 {% highlight XAML %}
 
@@ -231,7 +236,7 @@ To initialize the ItemSource through **XAML**, ObjectDataProvider is used. Refer
 
 {% endhighlight %}
 
- To initialize the Itemsource through code-behind, refer to the following code snippet.
+ To initialize the `ItemSource` through code-behind, refer to the following code snippet.
 
 {% highlight C# %}
 
@@ -249,7 +254,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
 
 ### Defining the PivotItems and PivotComputations
 
- **PivotItem** is a container for items in the pivot grid control, and an item can be either a **PivotRow** or **PivotColumn**. Refer to the topic *1.3.1 Pivot Item* for more details. **PivotComputationInfo** holds the value fields for the pivot grid control, and it does have different types of custom calculations. You can summarize the values depends on your requirement and refer to the topic *1.3.2 PivotComputationInfo* for more details. PivotItems and PivotComputations can be defined through XAML and code-behind.
+ **PivotItem** is a container for items in the pivot grid control, and an item can be either a **PivotRow** or **PivotColumn**. Refer to the [Pivot Item](./Pivot-Item) topic for more details. **PivotComputationInfo** holds the value fields for the pivot grid control, and it has different types of custom calculations. You can summarize the values depending on your requirement. Refer to the [Pivot Computation Info](./Pivot-Computation-Info) topic for more details. PivotItems and PivotComputations can be defined through XAML and code-behind.
 
 To define the PivotItems and PivotComputations through XAML, refer to the following code snippet.
 
@@ -274,7 +279,7 @@ To define the PivotItems and PivotComputations through XAML, refer to the follow
 
 {% endhighlight %}
 
-To define through code-behind, include the *Syncfusion.PivotAnalysis.Base*  namespace in MainWindow.xaml.cs. Refer to the following code snippet.
+To define through code-behind, include the `Syncfusion.PivotAnalysis.Base` namespace in MainWindow.xaml.cs. Refer to the following code snippet.
 
 {% highlight C# %}
 
@@ -331,4 +336,12 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
 ![Pivot grid loaded with values](PivotGrid-Getting-Started-images/PivotGrid with Populated values.png)
 
 
-N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to know how to organize and summarize business data and display the result in a cross-table format.
+
+## Theme
+
+The pivot grid control supports various built-in themes. Set the `VisualStyle` property as shown in the samples above, or refer to the below links to apply themes,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
