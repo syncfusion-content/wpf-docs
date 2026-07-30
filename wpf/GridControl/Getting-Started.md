@@ -23,7 +23,7 @@ N> Refer [Choose between different Grid's](https://help.syncfusion.com/wpf/datag
 
 ## Adding the Grid Control to a WPF Application
 
-In this section, we will see how to add the Grid control to a WPF application and load random data. The Grid control can be added to an application through one of the following methods: through a designer or programmatically.
+In this section, we will see how to add the Grid control to a WPF application and load random data. The Grid control can be added to an application through one of the following methods: through a designer, programmatically, or by installing the required NuGet packages.
 
 ### Adding the Grid Control through a Designer
 
@@ -47,7 +47,7 @@ Please follow the steps below to add the Grid control through a designer.
 
 ### Programmatically Adding the Grid Control
 
-Instead of adding it through a designer such a Visual Studio, you can add the Grid control programmatically.
+Instead of adding it through the Visual Studio Designer, you can add the Grid control programmatically using either a NuGet package or direct assembly references.
 
 1. Create a new WPF application.
 
@@ -123,7 +123,7 @@ for (int i = 0; i < 100; i++)
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-2. You can populate data by handling the QueryCellInfo event of gridControl. This will load the data in and on-demand basis, ensuring optimized performance.
+2. You can populate data by handling the QueryCellInfo event of gridControl. This will load the data on demand, ensuring optimized performance, especially when working with millions of rows. Refer to the [Virtualization](https://help.syncfusion.com/wpf/GridControl/virtualization) section for more details.
 
 {% capture codesnippet4 %}
 {% tabs %}
