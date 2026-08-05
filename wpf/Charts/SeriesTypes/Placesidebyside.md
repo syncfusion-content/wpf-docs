@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Side By Side Placement in WPF Charts control | Syncfusion
-description: Learn here all about Side By Side Placement support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
+title: Side By Side Placement in WPF Charts control | Syncfusion®
+description: Learn here all about Side By Side Placement support in WPF Charts control, its elements, and more details.
 platform: wpf
 control: SfChart
 documentation: ug

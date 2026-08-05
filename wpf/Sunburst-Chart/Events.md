@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Events in WPF Sunburst Chart control | Syncfusion
-description: Learn here all about Events support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
+title: Events in WPF Sunburst Chart control | Syncfusion®
+description: Learn here all about Events support in WPF Sunburst Chart control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug

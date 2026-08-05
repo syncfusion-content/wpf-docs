@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize segment brush in WPF Sparkline control | Syncfusion
-description: Learn here all about Customize segment brush support in Syncfusion WPF Sparkline (SfSparkline) control and more.
+title: Customize segment brush in WPF Sparkline control | Syncfusion®
+description: Learn here all about Customize segment brush support in WPF Sparkline control and more.
 platform: wpf
 control: SfSparkline
 documentation: ug

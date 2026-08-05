@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Positioning Data Markers in WPF Charts control | Syncfusion
-description: Learn here all about Positioning Data Markers support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
+title: Positioning Data Markers in WPF Charts control | Syncfusion®
+description: Learn here all about Positioning Data Markers support in WPF Charts control, its elements, and more details.
 platform: wpf
 control: SfChart
 documentation: ug

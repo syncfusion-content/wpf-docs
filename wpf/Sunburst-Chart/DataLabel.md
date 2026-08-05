@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Data Label in WPF Sunburst Chart control | Syncfusion
-description: Learn here all about Data Label support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
+title: Data Label in WPF Sunburst Chart control | Syncfusion®
+description: Learn here all about Data Label support in WPF Sunburst Chart control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug

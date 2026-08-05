@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ColorBar in WPF Surface Chart control | Syncfusion
-description: Learn here all about ColorBar support in Syncfusion WPF Surface Chart (SfSurfaceChart) control and more.
+description: Learn here all about ColorBar support in WPF Surface Chart control and more.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug

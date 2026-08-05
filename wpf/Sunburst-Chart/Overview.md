@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion WPF Sunburst Chart control | Syncfusion
+title: About Syncfusion® WPF Sunburst Chart control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio WPF Sunburst Chart (SfSunburstChart) control and more details.
 platform: wpf
 control: SfSunburstChart

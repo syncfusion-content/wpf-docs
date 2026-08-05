@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF SfChart3D control | Syncfusion
-description: Learn how to get started with the Syncfusion WPF SfChart3D control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF SfChart3D control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF SfChart3D control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfChart3D
 documentation: ug

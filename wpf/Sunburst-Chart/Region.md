@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Region in WPF Sunburst Chart control | Syncfusion
-description: Learn here all about Region support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
+title: Region in WPF Sunburst Chart control | Syncfusion®
+description: Learn here all about Region support in WPF Sunburst Chart control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug

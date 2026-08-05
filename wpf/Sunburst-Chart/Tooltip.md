@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Tooltip in WPF Sunburst Chart control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
+title: Tooltip in WPF Sunburst Chart control | Syncfusion®
+description: Learn here all about Tooltip support in WPF Sunburst Chart control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
