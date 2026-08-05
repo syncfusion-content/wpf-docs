@@ -2,7 +2,7 @@
 layout: post
 title: Release Notes - Syncfusion WPF AI Coding Assistants | Syncfusion
 description: Explore the release notes for Syncfusion WPF AI Coding Assistants, covering MCP Server, Skills, and Agentic UI Builder updates across all versions.
-platform: WPF
+platform: wpf
 control: Syncfusion WPF AI Coding Assistants Release Notes
 documentation: ug
 ---
