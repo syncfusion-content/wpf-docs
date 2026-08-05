@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Syntax Editor Members in WPF Syntax Editor control | Syncfusion
-description: Learn about Syntax Editor Members support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+description: Learn about Syntax Editor Members support in Syncfusion Essential Studio WPF Syntax Editor (EditControl) control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Syntax Editor Members in WPF Syntax Editor
+# Syntax Editor Members in WPF Syntax Editor (EditControl)
 
-EditControl class contains variety of properties, methods and events to enable the developers utilize this control easily. It is enhanced with maximum possible level of customization and facilities that are provided for the developers to use these controls effectively. This topic discusses about the properties, methods and events available in the EditControl class.
+The `EditControl` class provides a rich set of properties, methods, and events that allow you to customize and control its behavior. This section describes the key members available in the `EditControl` class and explains how they can be used in your application.
 
-**Properties**
+## Properties
 
-The following table illustrates the properties in EditControl and its usages.
+The following table lists the properties available in `EditControl` and their descriptions.
 
 <table>
 <tr>
@@ -193,10 +193,6 @@ ScrollBarVisibility<br/><br/></td><td>
 Gets or sets a value indicating Visibility of Vertical ScrollBar. By default, it is set to Auto, wherein the ScrollBar will be visible when required.<br/><br/></td></tr>
 </table>
 
-
-
-
-
 **Methods**
 
 The following table lists the methods available in EditControl class and its purpose.
@@ -239,16 +235,9 @@ Boolean<br/><br/></td><td>
 Save method is used to save the text in the EditControl under a file name with different supported file types.<br/><br/></td></tr>
 </table>
 
-
-
-
-
- 
 **Events**
 
-
 The following table lists the events available in EditControl class and its purpose.
-
 
 <table>
 <tr>

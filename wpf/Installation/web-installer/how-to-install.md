@@ -119,7 +119,7 @@ The steps below show how to install Essential Studio WPF Web Installer.
 Syncfusion WPF installer can be uninstalled in two ways.
 
    * Uninstall the WPF using the Syncfusion WPF web installer
-   * Uninstall the WPF from Windows Control Panel
+   * Uninstall the WPF from Windows control panel
 
 Follow either one of the option below to uninstall Syncfusion Essential Studio WPF installer.
   

@@ -10,6 +10,9 @@ documentation: ug
 
 # Installing Syncfusion WPF offline installer
 
+## Overview
+
+For the Essential Studio WPF product, Syncfusion offers an Offline Installer. This installer bundles all required files into a single downloadable setup, allowing you to install the product on machines without an active internet connection or in restricted network environments. You can simply download the offline installer and run it on your system to install the Essential Studio products of your choice. You can get the most recent version of the Essential Studio Offline Installer [here](https://www.syncfusion.com/downloads/latest-version). 
 
 ## Prerequisites
 
@@ -29,16 +32,16 @@ The steps below show how to install the Essential Studio WPF installer.
 
 2. To unlock the Syncfusion offline installer, you have two options:
 
-    * *Login To Install*
-    * *Use Unlock Key*
+    * *Login to install*
+    * *Use unlock key*
 
-    **Login To Install**
+    **Login to install**
 
     You must enter your Syncfusion email address and password. If you don't already have a Syncfusion account, you can sign up for one by clicking **"Create an account"**. If you have forgotten your password, click **"Forgot Password"** to create a new one. Once you've entered your Syncfusion email and password, click **Next**.
 
     ![Login credentials](images/Step-by-Step-Installation_img2.png)
 
-    **Use Unlock Key**
+    **Use unlock key**
 
     Unlock keys are used to unlock the Syncfusion offline installer, and they are platform- and version-specific. You should use either a Syncfusion licensed or trial unlock key to unlock the Syncfusion WPF installer.
 
@@ -95,7 +98,7 @@ The steps below show how to install the Essential Studio WPF installer.
 
 The Syncfusion Essential Studio WPF Installer supports installation and uninstallation via the command line.
 
-### Command Line Installation
+### Command line installation
 
 To install through the Command Line in Silent mode, follow the steps below.
 
@@ -116,7 +119,7 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     N> `x.x.x.x` should be replaced with the Essential Studio version, and the Product Unlock Key should be replaced with the Unlock Key for that version.
 
-### Command Line Uninstallation
+### Command line uninstallation
 
 Syncfusion Essential WPF can be uninstalled silently using the Command Line.
 
