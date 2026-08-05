@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF SfChart3D control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio® WPF SfChart3D control, its elements and more.
+title: About Syncfusion WPF SfChart3D control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio WPF SfChart3D control and more details.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# WPF SfChart3D Overview
+# About Syncfusion WPF SfChart3D control
 
 3D charts are used to view two-dimensional data in a three-dimensional view, and can be rotated in all 3 dimensions to get the best possible view of the data.
 
