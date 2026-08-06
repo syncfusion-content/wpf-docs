@@ -31,13 +31,13 @@ The OLAP chart can be copied to the clipboard or exported as an image. It can be
 
 ## Exporting to Word document
 
-The OLAP chart for WPF supports exporting an OLAP chart to an Microsoft Word document. It can also be exported into a template Word document file at a position specified by a marker.
+The OLAP chart for WPF supports exporting an OLAP chart to a Microsoft Word document. It can also be exported into a template Word document file at a position specified by a marker.
 
 The following methods are used to export an OLAP chart to a Microsoft Word document:
 
 ### Methods
 
-* **ExportIntoNewDoc**: Exports a chart to a new Word document file with specified file name.
+* **ExportIntoNewDoc**: Exports a chart to a new Word document file with the specified file name.
 * **ExportIntoTemplateDoc**: Exports a chart to an existing Word document file in the default marker string location.
 * **ExportIntoTemplateDoc**: Exports a chart to an existing Word document file in the given marker string location.
 * **ExportIntoTemplateDoc**: Exports a chart to an existing instance of a Word document in the default marker string location.
