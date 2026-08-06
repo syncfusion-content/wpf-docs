@@ -9,38 +9,29 @@ documentation: ug
 
 # TreeMap Layout in WPF TreeMap (SfTreeMap)
 
-The ItemsLayoutMode for SfTreeMap specifies the layout mode of the tree map items. This layout is applied for all the tree map levels. There are four different TreeMap layouts such as,
+The [ItemsLayoutMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ItemsLayoutMode) for SfTreeMap specifies the layout mode of the tree map items. This layout is applied for all the tree map levels. There are four different TreeMap layouts, as follows:
 
 ## Squarified Layout
 
-In this layout the data is visualized in the form of square-like rectangles with best aspect ratio.
+In this layout, the data is visualized in the form of square-like rectangles with the best aspect ratio.
 
-The following code illustrates how to set a squarified layout in Treemap.
+The following code illustrates how to set a squarified layout in the TreeMap.
 
 
 {% highlight xaml %}
 
+<Grid Background="Black">
+    <Grid.DataContext>
+        <local:PopulationViewModel />
+    </Grid.DataContext>
 
+    <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
+                          ItemsLayoutMode="Squarified"
+                          WeightValuePath="Population"
+                          ColorValuePath="Growth">
+    </syncfusion:SfTreeMap>
+</Grid>
 
-    <Grid Background="Black">
-
-        <Grid.DataContext>
-
-            <local:PopulationViewModel/>
-
-        </Grid.DataContext>
-
-        <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
-
-                              ItemsLayoutMode="Squarified"
-
-                              WeightValuePath="Population"                              
-
-                              ColorValuePath="Growth">
-
-        </syncfusion:SfTreeMap>
-
-    </Grid>  
 {% endhighlight %}
 
 
@@ -49,48 +40,28 @@ The following screenshot illustrates a squarified layout.
 ![TreeMap-Layout_img1](TreeMap-Layout_images/TreeMap-Layout_img1.png)
 
 
+## SliceAndDiceAuto Layout
 
-## SliceAndDiceAuto Layout:
+In this layout, the data is visualized in the form of long, thin rectangles with a high aspect ratio, which can be displayed either vertically or horizontally.
 
-In this layout the data is visualized in the form of long-thin rectangles with high aspect ratio, which can be displayed either vertically or horizontally.
-
-The following code illustrates how to set a slice and dice layout in Treemap.
-
-
+The following code illustrates how to set a slice-and-dice layout in the TreeMap.
 
 
 {% highlight xaml %}
 
-    <Grid Background="Black">
+<Grid Background="Black">
+    <Grid.DataContext>
+        <local:PopulationViewModel />
+    </Grid.DataContext>
 
-        <Grid.DataContext>
-
-            <local:PopulationViewModel/>
-
-        </Grid.DataContext>
-
-        <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
-
-                              ItemsLayoutMode=" SliceAndDiceAuto"
-
-                              WeightValuePath="Population"                              
-
-                              ColorValuePath="Growth">
-
-        </syncfusion:SfTreeMap>
-
-    </Grid>
+    <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
+                          ItemsLayoutMode="SliceAndDiceAuto"
+                          WeightValuePath="Population"
+                          ColorValuePath="Growth">
+    </syncfusion:SfTreeMap>
+</Grid>
 
 {% endhighlight %}
-
-
-
-
-
-
-
-
-
 
 
 The following screenshot illustrates a slice-and-dice layout.
@@ -100,80 +71,54 @@ _Slice-and-dice layout_
 ![TreeMap-Layout_images2](TreeMap-Layout_images/TreeMap-Layout_img2.jpeg)
 
 
+## SliceAndDiceHorizontal Layout
 
-## SliceAndDiceHorizontal Layout:
-
-The following code illustrates how to set a slice and dice layout horizontally in TreeMap.
+The following code illustrates how to set a slice-and-dice layout horizontally in the TreeMap.
 
 
 {% highlight xaml %}
 
+<Grid Background="Black">
+    <Grid.DataContext>
+        <local:PopulationViewModel />
+    </Grid.DataContext>
 
+    <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
+                          ItemsLayoutMode="SliceAndDiceHorizontal"
+                          WeightValuePath="Population"
+                          ColorValuePath="Growth">
+    </syncfusion:SfTreeMap>
+</Grid>
 
-    <Grid Background="Black">
-
-        <Grid.DataContext>
-
-            <local:PopulationViewModel/>
-
-        </Grid.DataContext>
-
-        <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
-
-                              ItemsLayoutMode=" SliceAndDiceHorizontal"
-
-                              WeightValuePath="Population"                              
-
-                              ColorValuePath="Growth">
-
-        </syncfusion:SfTreeMap>
-
-    </Grid>
 {% endhighlight %}
 
 
-The following screenshot shows a Slice-and-dice TreeMap in horizontal layout.
+The following screenshot shows a slice-and-dice TreeMap in a horizontal layout.
 
 ![TreeMap-Layout_img3](TreeMap-Layout_images/TreeMap-Layout_img3.png)
 
 
+## SliceAndDiceVertical Layout
 
-## SliceAndDiceVertical Layout:
-
-The following code illustrates how to set a slice and dice layout vertically in TreeMap.
+The following code illustrates how to set a slice-and-dice layout vertically in the TreeMap.
 
 
 {% highlight xaml %}
 
+<Grid Background="Black">
+    <Grid.DataContext>
+        <local:PopulationViewModel />
+    </Grid.DataContext>
 
+    <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
+                          ItemsLayoutMode="SliceAndDiceVertical"
+                          WeightValuePath="Population"
+                          ColorValuePath="Growth">
+    </syncfusion:SfTreeMap>
+</Grid>
 
-    <Grid Background="Black">
-
-        <Grid.DataContext>
-
-            <local:PopulationViewModel/>
-
-        </Grid.DataContext>
-
-        <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
-
-                              ItemsLayoutMode=" SliceAndDiceVertical"
-
-                              WeightValuePath="Population"                              
-
-                              ColorValuePath="Growth">
-
-        </syncfusion:SfTreeMap>
-
-    </Grid>
 {% endhighlight %}
 
-
-The following screenshot shows a Slice-and-dice TreeMap in vertical layout.
-
-
+The following screenshot shows a slice-and-dice TreeMap in a vertical layout.
 
 ![TreeMap-Layout_img4](TreeMap-Layout_images/TreeMap-Layout_img4.png)
-
-
-
