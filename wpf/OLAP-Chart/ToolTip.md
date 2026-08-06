@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip in WPF Olap Chart
 
-The OLAP chart provides the series information such as measure, primary x-axis and y-axis values, and series name through the series tooltip, when the mouse pointer is moved over chart points.
+The OLAP chart provides series information, such as measure values, primary x-axis and y-axis values, and the series name, through series tooltips when the mouse pointer is moved over chart points.
 
 The following code sample shows how to disable the series tooltip using the `ShowToolTip` property.
 

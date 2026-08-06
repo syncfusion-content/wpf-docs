@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip in WPF OLAP Gauge
 
-The OLAP gauge provides the information about values when the mouse pointer is moved over the gauge.
+The OLAP gauge provides information about the values when the mouse pointer is moved over the gauge.
 
 ## Pointer tooltip
 
-The OLAP gauge provides value information when the mouse pointer is moved over the pointer. This can be achieved by enabling the `ShowPointersTooltip` property.
+The OLAP gauge provides value information when the mouse pointer is moved over the pointer. This can be achieved by enabling the [ShowPointersTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ShowPointersTooltip) property.
 
 The following code snippet illustrates how to show a tooltip for pointers.
 
@@ -43,7 +43,7 @@ Me.OlapGauge1.ShowPointersTooltip = True
 
 ## Marker tooltip
 
-The OLAP gauge provides goal information when the mouse pointer is moved over the marker. This can be achieved by enabling the `ShowMarkersTooltip` property.
+The OLAP gauge provides goal information when the mouse pointer is moved over the marker. This can be achieved by enabling the [ShowMarkersTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ShowMarkersTooltip) property.
 
 The following code snippet illustrates how to show a tooltip for markers.
 

@@ -9,40 +9,58 @@ documentation: ug
 
 # XAML Configuration in WPF OLAP Gauge
 
-XAML configuration is one of the important features of the OLAP gauge, as it helps users to configure the control entirely through XAML by eliminating the required code in code behind.
+XAML configuration is an important feature of the OLAP gauge because it allows users to configure the control entirely in XAML, eliminating the need for code-behind.
 
 ## Properties
 
 * **DataSource.ConnectionString**: Specifies the connection string of the data manager.
 * **DataSource.ConnectionName**: Specifies the connection name, which is available in the App.Config file of the application.
 * **DataSource.DataManagerName**: Specifies the data manager name.
-* **SharedDataManagerName**: Specifies the data manager name, which is available in the shared data manager collection.
-* **ReportName**: Species the name of the OLAP report.
+* **SharedDataManagerName**: Specifies the name of the data manager available in the shared data manager collection.
+* **ReportName**: Specifies the name of the OLAP report.
 * **CurrentCubeName**: Specifies the current cube name of the OLAP report.
 * **CategoricalAxis**: Specifies the categorical axis of the OLAP report.
 * **SeriesAxis**: Specifies the series axis of the OLAP report.
 * **SlicerAxis**: Specifies the slicer axis of the OLAP report.
 * **CalculatedMembers**: Specifies the calculated members of the OLAP report.
 
-The following code snippet illustrates about adding an OLAP report to OLAP gauge in design time.
+The following code snippet illustrates how to add an OLAP report to the OLAP gauge at design time.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:OlapGauge x:Name="olapGauge" CurrentCubeName="Adventure Works" ReportName="SalesReport"
-                                         SharedDataManagerName="localManager"
-                                         olapshared:DataSource.DataManagerName="localManager"
-                                         olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=adventure works dw">
-<!-- Adding Elements to Categorical Axis -->
+<syncfusion:OlapGauge x:Name="olapGauge"
+                      CurrentCubeName="Adventure Works"
+                      ReportName="SalesReport"
+                      SharedDataManagerName="localManager"
+                      olapshared:DataSource.DataManagerName="localManager"
+                      olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=adventure works dw">
+
+    <!-- Adding Elements to Categorical Axis -->
     <syncfusion:OlapGauge.CategoricalAxis>
-               <syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  />     <!- Multiple Members where specified by comma separate -->
-               <syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" />
+        <syncfusion:Dimension Name="Date"
+                              HierarchyName="Fiscal"
+                              LevelName="Fiscal Year"
+                              IncludeMembers="FY 2002, FY 2003" />
+
+        <!-- Multiple Members where specified by comma separate -->
+        <syncfusion:Kpi Name="Revenue"
+                        ShowGoal="True"
+                        ShowStatus="True"
+                        ShowValue="True"
+                        ShowTrend="True" />
     </syncfusion:OlapGauge.CategoricalAxis>
-<!-- Adding Elements to Series Axis -->
+
+    <!-- Adding Elements to Series Axis -->
     <syncfusion:OlapGauge.SeriesAxis>
-                <syncfusion:Dimension Name="Sales Channel" HierarchyName="Sales Channel" LevelName="Sales Channel" />
-                <syncfusion:Dimension Name="Product" HierarchyName="Product Model Lines" LevelName="Product Line" IncludeMembers="Road" />
+        <syncfusion:Dimension Name="Sales Channel"
+                              HierarchyName="Sales Channel"
+                              LevelName="Sales Channel" />
+        <syncfusion:Dimension Name="Product"
+                              HierarchyName="Product Model Lines"
+                              LevelName="Product Line"
+                              IncludeMembers="Road" />
     </syncfusion:OlapGauge.SeriesAxis>
 </syncfusion:OlapGauge>
 

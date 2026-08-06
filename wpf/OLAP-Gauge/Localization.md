@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in WPF OLAP Gauge
 
-Localization is the key feature to provide software solutions that are targeted at global users. The OLAP gauge allows users to localize the control to a specific locale and supports “resx” based localization.
+Localization is a key feature for providing software solutions that are targeted at global users. The OLAP gauge allows users to localize the control to a specific locale and supports “resx” based localization.
 
 You should perform the following steps to localize the control:
 
@@ -19,9 +19,9 @@ You should perform the following steps to localize the control:
 
 ## Translation
 
-The first step in localization is translating the strings that can be localized to the destination locale.
+The first step in localization is translating the strings that can be localized into the destination locale.
 
-N> Localization key field should be same for all the locales. Do not translate the key fields.
+N> The localization key field should be the same for all the locales. Do not translate the key fields.
 
 ## Resource file and file name conventions
 
@@ -37,11 +37,11 @@ After translating the strings, perform the following steps in the application:
 
 N> The resource file name should be in the format “Syncfusion.OlapGauge.wpf.&lt;Culture Code&gt;.resx”.
 
-3. Copy and paste the translated locale to the resource file which is created in the previous step.
+3. Copy and paste the translated locale into the resource file that was created in the previous step.
 
 ## Culture specification
 
-You should specify the CurrentUICulture in the Application_Startup method of App.xaml.cs file or in the constructor of MainPage.xaml.cs file.
+You should specify the CurrentUICulture in the Application_Startup method of the App.xaml.cs file or in the constructor of the MainPage.xaml.cs file.
 
 N> If you are specifying the current culture in the constructor of MainPage, then ensure that the culture is specified before calling the InitializeComponent() method.
 
@@ -70,7 +70,7 @@ End Sub
 
 ## RTL
 
-The OLAP gauge provides RTL support to display the content from right-to-left direction by setting the `FlowDirection` property to **RightToLeft**.
+The OLAP gauge provides RTL support to display the content in a right-to-left direction by setting the `FlowDirection` property to **RightToLeft**.
 
 {% tabs %}
 

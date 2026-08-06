@@ -9,7 +9,7 @@ documentation: ug
 
 # XAML Configuration in WPF Olap Chart
 
-XAML configuration is one of the important features of the OLAP chart, as it helps users to configure the control entirely through XAML by eliminating the required code in code behind. 
+XAML configuration is one of the important features of the OLAP chart, as it enables users to configure the control entirely through XAML, eliminating the need for code-behind.
 
 ### Properties 
 * **DataSource.ConnectionString**: Specifies the connection string of the data manager.
@@ -27,20 +27,41 @@ Adding an OLAP report to the OLAP chart in design time is described in the follo
 
 {% highlight xaml %}
 
-<syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Stretch" ReportName="SalesReport"
-		CurrentCubeName="Adventure Works" SharedDataManagerName="localManager"
-		olapshared:DataSource.DataManagerName="localManager"
-		olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=adventure works dw">
-<!- Adding Elements to Categorical Axis -->
-	<syncfusion:OlapChart.CategoricalAxis>
-		 <syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  />   <!- Multiple Members where specified by comma separate -->                 
-		 <syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" />
-	</syncfusion:OlapChart.CategoricalAxis>
-<!- Adding Elements to Series Axis -->
-	<syncfusion:OlapChart.SeriesAxis>
-		 <syncfusion:Dimension Name="Sales Channel" HierarchyName="Sales Channel" LevelName="Sales Channel" />
-	     <syncfusion:Dimension Name="Product" HierarchyName="Product Model Lines" LevelName="Product Line" IncludeMembers="Road" />
-	</syncfusion:OlapChart.SeriesAxis>
+<syncfusion:OlapChart x:Name="olapChart"
+                      HorizontalAlignment="Stretch"
+                      ReportName="SalesReport"
+                      CurrentCubeName="Adventure Works"
+                      SharedDataManagerName="localManager"
+                      olapshared:DataSource.DataManagerName="localManager"
+                      olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=adventure works dw">
+
+    <!-- Adding Elements to Categorical Axis -->
+    <syncfusion:OlapChart.CategoricalAxis>
+        <syncfusion:Dimension Name="Date"
+                              HierarchyName="Fiscal"
+                              LevelName="Fiscal Year"
+                              IncludeMembers="FY 2002, FY 2003" />
+        <!-- Multiple Members are specified as a comma-separated list -->
+
+        <syncfusion:Kpi Name="Revenue"
+                        ShowGoal="True"
+                        ShowStatus="True"
+                        ShowValue="True"
+                        ShowTrend="True" />
+    </syncfusion:OlapChart.CategoricalAxis>
+
+    <!-- Adding Elements to Series Axis -->
+    <syncfusion:OlapChart.SeriesAxis>
+        <syncfusion:Dimension Name="Sales Channel"
+                              HierarchyName="Sales Channel"
+                              LevelName="Sales Channel" />
+
+        <syncfusion:Dimension Name="Product"
+                              HierarchyName="Product Model Lines"
+                              LevelName="Product Line"
+                              IncludeMembers="Road" />
+    </syncfusion:OlapChart.SeriesAxis>
+
 </syncfusion:OlapChart>
 
 {% endhighlight %}

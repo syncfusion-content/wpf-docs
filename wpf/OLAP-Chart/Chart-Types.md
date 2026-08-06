@@ -104,7 +104,7 @@ A sample demo is available at the following location.
 
 ## Stacking column 100 chart
 
-Stacking column 100 chart is a simple form of chart. Like stacking column chart, the stacking column 100 chart also contains segments in each series, which is added to equate each series to 100%. This chart type is widely used for proportional analysis over a particular period of time.
+Stacking column 100 chart is a simple form of chart. Like the stacking column chart, the stacking column 100 chart also contains segments in each series, which are added to equate each series to 100%. This chart type is widely used for proportional analysis over a particular period of time.
 
 ![StackingColumn100 chart](Chart-types_images/Chart-types_img3.png)
 
@@ -140,7 +140,7 @@ A sample demo is available at the following location.
 
 ## Bar chart
 
-The bar chart is same as the column chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for comparison analysis over a particular period of time.
+The bar chart is the same as the column chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for comparison analysis over a particular period of time.
 
 ![Bar chart](Chart-types_images/Chart-types_img4.png)
 
@@ -176,7 +176,7 @@ A sample demo is available at the following location.
 
 ## Stacking bar chart
 
-Stacking bar chart functions same as the stacking column chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for proportional analysis over a particular period of time.
+The stacking bar chart functions the same as the stacking column chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for proportional analysis over a particular period of time.
 
 ![StackingBar chart](Chart-types_images/Chart-types_img5.png)
 
@@ -212,7 +212,7 @@ A sample demo is available at the following location.
 
 ## Stacking bar 100 chart
 
-The stacking bar 100 chart functions same as the stacking column 100 chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for proportional analysis over a particular period of time.
+The stacking bar 100 chart functions the same as the stacking column 100 chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for proportional analysis over a particular period of time.
 
 ![StackingBar100 chart](Chart-types_images/Chart-types_img6.png)
 
@@ -392,7 +392,7 @@ A sample demo is available at the following location.
 
 ## Line chart
 
-The line chart is a simple form of chart, which connects a series of data points. Usually, it is used for Trend analysis, Forecasting, or in the case of large data points.
+The line chart is a simple form of chart, which connects a series of data points. Usually, it is used for trend analysis, forecasting, or in the case of large data points.
 
 ![Line chart](Chart-types_images/Chart-types_img11.png)
 
@@ -536,7 +536,7 @@ A sample demo is available at the following location.
 
 ## Scatter chart
 
-The scatter chart is a collection of points plotted in the rectangular co-ordinate system. It is often used in relationship analysis upto one independent variable.
+The scatter chart is a collection of points plotted in the rectangular co-ordinate system. It is often used in relationship analysis up to one independent variable.
 
 ![Scatter chart](Chart-types_images/Chart-types_img15.png)
 

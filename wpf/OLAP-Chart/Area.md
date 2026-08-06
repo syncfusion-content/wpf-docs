@@ -39,7 +39,7 @@ N> The series will be available only after data is bound to the control. In othe
 
 ## Area customization
 
-An OLAp area is basically derived from the ChartArea class belonging to the base chart WPF control. So, the customization options are available in the chart area. However, 3D charts and multiple chart areas are not supported in an OLAP chart. So, those customizations are not applicable.
+An OLAP area is basically derived from the ChartArea class belonging to the base chart WPF control. So, the customization options are available in the chart area. However, 3D charts and multiple chart areas are not supported in an OLAP chart. So, those customizations are not applicable.
 
 The following are the frequently used customization options that are available in the chart area.
 

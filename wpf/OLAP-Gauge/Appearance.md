@@ -11,7 +11,7 @@ documentation: ug
 
 ## Gauge radius
 
-The OLAP gauge supports adjusting its radius and this can be achieved by assigning a proper value to the `Radius` property of OLAP gauge. The following code snippet illustrates about modifying the radius of OLAP gauge.
+The OLAP gauge supports adjusting its radius, which can be achieved by assigning an appropriate value to the [Radius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_Radius) property of the OLAP gauge. The following code snippet illustrates how to modify the radius of the OLAP gauge.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ A demo sample is available at the following location.
 
 ## Built-in frame types
 
-The OLAP gauge supports four types of built-in frames to provide effective rim styles. The `FrameType` property is used to set the frame type for the OLAP gauge. The following are the frame types supported by the OLAP gauge:
+The OLAP gauge supports four types of built-in frames to provide effective rim styles. The [FrameType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_FrameType) property is used to set the frame type for the OLAP gauge. The following code snippet illustrates how to set the frame type for the OLAP gauge.
 
 * CircularCenterGradient
 
@@ -85,7 +85,7 @@ A demo sample is available at the following location.
 
 ## Skins
 
-Built-in-skins allow you to customize the theme and style to improve the look and feel of the OLAP gauge control in various rich color schemes. You can use the skin manager framework to apply a wide range of skins to the OLAP gauge control. These skins have been designed to suit the needs of wide range of audience.
+Built-in skins allow you to customize the theme and style to improve the look and feel of the OLAP gauge control using various rich color schemes. You can use the skin manager framework to apply a wide range of skins to the OLAP gauge control. These skins have been designed to suit the needs of a wide range of audiences.
 
 **Types of skins:**
 
@@ -131,7 +131,7 @@ To apply a skin to the OLAP gauge, use the `SkinStorage.VisualStyle` property. T
 
 {% highlight xaml %}
 
-<syncfusion:OlapGauge Name="olapGauge1" sfshared:SkinStorage.VisualStyle="Metro"/>
+<syncfusion:OlapGauge Name="olapGauge1" sfshared:SkinStorage.VisualStyle="Metro" />
 
 {% endhighlight %}
 

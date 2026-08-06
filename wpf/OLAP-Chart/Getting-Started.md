@@ -18,7 +18,7 @@ This section covers the information required to create a simple OLAP chart bound
 
 Open the Visual Studio IDE and navigate to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
 
-After the WPF application is created, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the OLAP chart under the **Syncfusion® BI WPF** tag. It will automatically add the required assemblies to the application.
+After the WPF application is created, go to the View menu and select the Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the OLAP chart under the **Syncfusion® BI WPF** tag. It will automatically add the required assemblies to the application.
 
 ![WPF OLAP Chart Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
@@ -165,7 +165,7 @@ Run the application. The following output will be generated.
 
 Open Blend for Visual Studio and navigate to File > New project > WPF > WPF Application to create a new WPF application.
 
-Select the **Project** tab available in the left-corner of the Blend IDE. Right-click the **References** and select **Add Reference**. Now, browse and add the following assemblies to the project.
+Select the **Project** tab available in the left corner of the Blend IDE. Right-click **References** and select **Add Reference**. Now, browse and add the following assemblies to the project.
 
 * Syncfusion.Chart.WPF
 * Syncfusion.Olap.Base
@@ -426,7 +426,7 @@ Namespace SampleApplication
 			' Finally OlapChart gets the information from the OlapDataManager	
 			olapChart.OlapDataManager = _olapDataManager
 			olapChart.DataBind()
-			// OlapChart added to the Main Window Grid region
+			' OlapChart added to the Main Window Grid region
 			chart.Children.Add(olapChart)
 		End Sub
         
@@ -471,7 +471,7 @@ Run the application. The following output will be generated.
 
 ## Design-time binding
 
-Design-time binding support for OLAP chart allows you to reduce the time spent on creating and customizing the report. Normally, it takes 5 to 10 minutes for creating a report and in case of unfamiliar cubes it may extend further. But by using design-time support, you can create a report in a couple of minutes. The following section explains how to create a report during design-time.
+Design-time binding support for the OLAP chart allows you to reduce the time spent creating and customizing the report. Normally, it takes 5 to 10 minutes to create a report, and in the case of unfamiliar cubes, it may extend further. But by using design-time support, you can create a report in a couple of minutes. The following section explains how to create a report at design time.
 
 First drag the OLAP chart control from the toolbox to the Visual Studio designer surface.
 
@@ -493,7 +493,7 @@ When the connection is valid, it displays the summary page of the **Data Source 
 
 ![WPF OLAP Chart Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
 
-For creating or editing a query, click the **Create/Edit** link that is displayed on the top-right side of the MDX query text box. This opens a **Query Designer** dialog. 
+For creating or editing a query, click the **Create/Edit** link that is displayed on the top-right side of the MDX query text box. This opens the **Query Designer** dialog.
 
 ![WPF OLAP Chart Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
 

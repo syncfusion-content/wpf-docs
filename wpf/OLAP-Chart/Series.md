@@ -13,7 +13,7 @@ Series are the data points plotted in the rectangular co-ordinate system.
 
 ## Point label
 
-Point label provides information about the data point. Data point can be added to a series by using the following code sample.
+Point label provides information about the data point. The data point can be added to a series by using the following code sample.
 
 {% tabs %}
 
@@ -58,7 +58,7 @@ The following screenshot shows an OLAP chart with point labels enabled.
 
 ## Color customization
 
-You can set a custom color for each series in the OLAP chart. To apply different colors to different series iterate through the series, apply the custom brush to the series.
+You can set a custom color for each series in the OLAP chart. To apply different colors to different series, iterate through the series and apply the custom brush to the series.
 
 {% tabs %}
 
@@ -78,7 +78,7 @@ Me.olapChart.Series(0).Interior = Brushes.Orange
 
 ## Border customization
 
-You can customize the thickness of series border of the OLAP chart by using the following code sample.
+You can customize the thickness of the series border of the OLAP chart by using the following code sample.
 
 {% tabs %}
 
@@ -100,21 +100,21 @@ Me.olapChart.Series(0).StrokeThickness = 4
 
 N> The behavior of the series border varies for different chart types. The following illustration describes them in detail.
 
-The series border is applied to the first series of a column chart by using the `StrokeThickness` property. Now, the first series element is surrounded with applied border.
+The series border is applied to the first series of a column chart by using the `StrokeThickness` property. Now, the first series element is surrounded with the applied border.
 
 ![Setting StrokeThickness property to first series of column chart](Series_images/Series_img2.png)
 
-Notice the variation. The same series border property is applied to a series in the line chart. Instead of creating a 4 pixel width border it increases the thickness of the particular series line.
+Notice the variation. The same series border property is applied to a series in the line chart. Instead of creating a 4-pixel-wide border, it increases the thickness of the particular series line.
 
 ![StrokeThickness property value maintained after changing into the line chart](Series_images/Series_img3.png)
 
-The pie chart renders everything in a single series; each block in the pie chart known as segments. The border will be applied on each segments. This is illustrated in the following screenshot.
+The pie chart renders everything in a single series; each block in the pie chart is known as a segment. The border will be applied to each segment. This is illustrated in the following screenshot.
 
 ![TO display the series in pie chart](Series_images/Series_img4.png)
 
 ## Custom data templates
 
-Series can be customized with user-defined data templates. The following sample usage describes how to apply a data template to series in the OLAP chart.
+Series can be customized with user-defined data templates. The following sample usage describes how to apply a data template to the series in the OLAP chart.
 
 The following data template can be used to customize the series.
 
@@ -166,7 +166,7 @@ A sample demo is available at the following location.
 
 ## Event
 
-**ChartMouseEventArgs** are the arguments returned when the mouse events are triggered by the ChartSeries. **ChartMouseEventArgs** return the segment on which the mouse events are triggered along with default mouse event args. This event args can be used to customize a segment when the mouse event is encountered. The segment returns different values that are used to perform calculations or operations.
+**ChartMouseEventArgs** are the arguments returned when the mouse events are triggered by the ChartSeries. **ChartMouseEventArgs** returns the segment on which the mouse events are triggered along with the default mouse event args. This event args can be used to customize a segment when a mouse event is encountered. The segment returns different values that are used to perform calculations or operations.
 
 The following code sample demonstrates how the **ChartMouseEventArgs** can be used to retrieve information on the ChartSeries segment.
 
@@ -212,7 +212,7 @@ End Sub
 Animations can be added to the OLAP chart control. This can be achieved through the following properties:
 
 * **SeriesAnimateOption**: Gets or sets animation for each series.
-* **SeriesAnimateOneByOne**: Gets or sets whether each series animate one by one. By default, it is false.
+* **SeriesAnimateOneByOne**: Gets or sets whether each series animates one by one. By default, it is false.
 * **EnableSeriesAnimation**: Gets or sets whether the animation for each series is enabled.
 * **SeriesAnimationDuration**: Gets or sets the animation duration for each series.
 
@@ -267,7 +267,7 @@ The following code sample demonstrates the customization of each series in the p
 
 foreach (ChartSeries series in this. olapchart.Series)
 {
-    //To enable the chart to explode we have pass the ChartSeries and true as parameter to SetExplodedAll method
+    //To enable the chart to explode, we have to pass the ChartSeries and true as parameters to the SetExplodedAll method
     ChartPieType.SetExplodedAll(series, true);
 }
 foreach (ChartSeries series in this. olapchart.Series)
@@ -287,12 +287,12 @@ foreach (ChartSeries series in this. olapchart.Series)
 }
 foreach (ChartSeries series in this. olapchart.Series)
 {
-    //To set the explore index value we have to pass the ChartSeries and the index value of which part of the Chart to explode
+    //To set the explode index value, we have to pass the ChartSeries and the index value of which part of the chart to explode
     ChartPieType.SetExplodedIndex(series, 2);
 }
 foreach (ChartSeries series in this. olapchart.Series)
 {
-    //To set the radius of the exploded chart we have to pass the ChartSeries and the radius which is n double value
+    //To set the radius of the exploded chart, we have to pass the ChartSeries and the radius, which is a double value
     ChartPieType.SetExplodeRadius(series, 8.0);
 }
     
