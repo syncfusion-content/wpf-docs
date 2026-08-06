@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Validation in WPF Diagram (SfDiagram)
 
-The source point, target point, and segements path of a connector can be customized to change their appearance and it can be validated to customize their original functionalities.
+The source point, target point, and segments path of a connector can be customized to change their appearance and it can be validated to customize their original functionalities.
 
 ## Decorator
 
@@ -26,7 +26,7 @@ The [`SourceDecoratorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
     <Setter Property="StrokeThickness" Value="1"/>
 </Style>
 
-<!--Common style for filled decortors-->
+<!--Common style for filled decorators-->
 <Style TargetType="Path" x:Key="DecoratorFillStyle">
     <Setter Property="Stroke" Value="#6BA5D7"/>
     <Setter Property="Fill" Value="#6BA5D7"/>
@@ -99,7 +99,7 @@ Each decorator shapes can be changed as hollow type shapes, which contains a hol
 
 {% tabs %}
 {% highlight xaml %}
-<!--Common style for hollow type decortors-->
+<!--Common style for hollow type decorators-->
 <Style TargetType="Path" x:Key="DecoratorHollowStyle">
     <Setter Property="Stroke" Value="#6BA5D7"/>
     <Setter Property="Fill" Value="White"/>
@@ -111,7 +111,7 @@ Each decorator shapes can be changed as hollow type shapes, which contains a hol
     <Setter Property="StrokeDashCap" Value="Round"/>
 </Style>
 
-<!--Initialize the connector with hollow style for source and target decortors-->
+<!--Initialize the connector with hollow style for source and target decorators-->
 <syncfusion:ConnectorViewModel SourcePoint="500,100" TargetPoint="600,200" 
                                ConnectorGeometryStyle="{StaticResource connectorLineStyle}" 
                                SourceDecorator="{StaticResource Ellipse}" 
@@ -120,7 +120,7 @@ Each decorator shapes can be changed as hollow type shapes, which contains a hol
                                TargetDecoratorStyle="{StaticResource DecoratorHollowStyle}">
 </syncfusion:ConnectorViewModel>
 
-<!--Initialize the connector with hollow style for source and target decortors-->
+<!--Initialize the connector with hollow style for source and target decorators-->
 <syncfusion:ConnectorViewModel SourcePoint="700,100" TargetPoint="800,200" 
                                ConnectorGeometryStyle="{StaticResource connectorLineStyle}"
                                SourceDecorator="{StaticResource Rectangle}" 
@@ -211,7 +211,7 @@ Following table shows available decorators shapes in the diagram control,
 
 ### How to position the decorators shapes 
 
-The [`SourceDecoratorPivot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_SourceDecoratorPivot) and [`TargetDecoratorPivot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_TargetDecoratorPivot) properties allows you to customize the position of the decorators in the connector within 0-1 range. The default pivot value of source and target decorator is (1, 0.5).
+The [`SourceDecoratorPivot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_SourceDecoratorPivot) and [`TargetDecoratorPivot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_TargetDecoratorPivot) properties allow you to customize the position of the decorators in the connector within 0-1 range. The default pivot value of source and target decorator is (1, 0.5).
 
 {% tabs %}
 {% highlight xaml %}
@@ -246,11 +246,11 @@ ConnectorViewModel PivotDecorator = new ConnectorViewModel()
 
 ### Segment decorators
  
-The [`SegmentDecorator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SegmentDecorator.html) class allows you to customize the shape within the segments line. The [`SegmentDecoratorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_SegmentDecoratorStyle) property allows to customize the Style of SegmentDecorator. You can add any shape to the segments of the connector from resource dictionary. The [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SegmentDecorator.html#Syncfusion_UI_Xaml_Diagram_SegmentDecorator_Length) property of [`SegmentDecorator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SegmentDecorator.html) class is used to set the position of the segment decorator on the segment path. By default, the segment decorator will be added at the center of the segment, which is of length 0.5d.
+The [`SegmentDecorator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SegmentDecorator.html) class allows you to customize the shape within the segments line. The [`SegmentDecoratorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_SegmentDecoratorStyle) property allows you to customize the Style of SegmentDecorator. You can add any shape to the segments of the connector from resource dictionary. The [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SegmentDecorator.html#Syncfusion_UI_Xaml_Diagram_SegmentDecorator_Length) property of [`SegmentDecorator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SegmentDecorator.html) class is used to set the position of the segment decorator on the segment path. By default, the segment decorator will be added at the center of the segment, which is of length 0.5d.
  
 {% tabs %}
 {% highlight xaml %}
-<!--Common style for segment decortors-->
+<!--Common style for segment decorators-->
 <Style TargetType="Path" x:Key="SegmentDecoratorStyle">
     <Setter Property="Stroke" Value="#6BA5D7"/>
     <Setter Property="Fill" Value="#6BA5D7"/>
@@ -299,7 +299,7 @@ ConnectorViewModel SegmentDecorator = new ConnectorViewModel()
         {
             //Define the Shape of segment decorator
             Shape = this.Resources["OpenSharp"] as object,
-            //Defines the positon of the decorator on connector
+            //Defines the position of the decorator on connector
             Length = 0.4
         }
     },
@@ -317,7 +317,7 @@ The [`CornerRadius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagr
 
 {% tabs %}
 {% highlight xaml %}
-<!--Initialize the connector with corner radious property-->
+<!--Initialize the connector with corner radius property-->
 <syncfusion:ConnectorViewModel SourcePoint="1300,300" TargetPoint="1400,400" 
                                CornerRadius="10" 
                                ConnectorGeometryStyle="{StaticResource connectorLineStyle}" 
@@ -327,11 +327,11 @@ The [`CornerRadius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagr
 {% endhighlight %}
 
 {% highlight C# %}
-ConnectorViewModel cornerRadious = new ConnectorViewModel()
+ConnectorViewModel cornerradius = new ConnectorViewModel()
 {
     SourcePoint = new Point(1300, 300),
     TargetPoint = new Point(1400, 400),
-    //Defines the corner radious value
+    //Defines the corner radius value
     CornerRadius = 10,
     ConnectorGeometryStyle = this.Resources["connectorLineStyle"] as Style,
     TargetDecorator = this.Resources["OutdentedClosed"] as object,
@@ -363,7 +363,7 @@ Padding is used to leave space between the connector’s end point and the objec
                                SourcePadding="5" TargetPadding="5"  
                                ConnectorGeometryStyle="{StaticResource connectorLineStyle}" 
                                TargetDecorator="{StaticResource ClosedSharp}" 
-                               TargetDecoratorStyle{StaticResource DecoratorFillStyle}"/>
+                               TargetDecoratorStyle="{StaticResource DecoratorFillStyle}"/>
 {% endhighlight %}
 {% highlight C# %}
 
@@ -392,7 +392,7 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 {
     SourceNode = sourceNode,
     TargetNode = targetNode,
-    //Defines the souce point padding value of connector
+    //Defines the source point padding value of connector
     SourcePadding = 5,
     //Defines the target point padding value of connector
     TargetPadding = 5,
@@ -523,7 +523,7 @@ The StrokeThickness, Stroke, and style of the connector and decorators can be cu
     <Setter Property="Opacity" Value="0.8"/>
 </Style>
 
-<!--Common style for filled decortors-->
+<!--Common style for filled decorators-->
 <Style TargetType="Path" x:Key="CustomDecoratorStyle">
     <Setter Property="Stroke" Value="Black"/>
     <Setter Property="Fill" Value="Red"/>
@@ -598,7 +598,7 @@ To explore about arguments, refer to [`ChangedEventArgs`](https://help.syncfusio
 
 ## Customization and validation on connector ends
 
-This support is used to decide on which element connector is going dock with diagramming object at runtime.
+This support is used to decide on which element connector is going dock with a diagramming object at runtime.
 
 ### Connection parameter
 
@@ -612,7 +612,7 @@ The [`ConnectionParameter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 | Property | SourcePort | IPort | Defines the specific port as source of connector. |
 | Property | TargetPort | IPort | Defines the specific port as target of connector. |
 | Property | SourcePoint | Point | Defines the specific point as source of connector. |
-| Property | TargetPoint | Point | Defines the specific point as source of connector. |
+| Property | TargetPoint | Point | Defines the specific point as target of connector. |
 | Property | ConnectorEnd | ConnectorEnd | Returns the connector end, which is edited at runtime.|
 | Property | SourceConnector | object | Defines the specific connector as source of connector. |
 | Property | TargetConnector | object | Defines the specific connector as target of connector. |

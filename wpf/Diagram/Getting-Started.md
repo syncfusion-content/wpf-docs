@@ -516,7 +516,7 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 `SymbolSource` is the property of stencil, which is a collection of objects like symbol, node, connector, and more. Based on the SymbolSource, the Stencil will populate the Symbols. And the `SymbolGroupProvider` groups the symbols into SymbolGroups based on the `MappingName` property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml %}Create connector With source node and target node
 
 <!--Define the Stencil-->
 <stencil:Stencil x:Name="stencil"  ExpandMode="All" 
