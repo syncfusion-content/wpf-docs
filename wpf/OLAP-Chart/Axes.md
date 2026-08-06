@@ -13,7 +13,7 @@ An OLAP area contains two axes, the primary axis and secondary axis, in an OLAP 
 
 ## Grid lines customization
 
-In general, for column type charts, the horizontal grid line belongs to the secondary axis. To disable the horizontal grid lines for these types of charts, you should use the `ShowGridLinesProperty` of the secondary axis.
+In general, for column type charts, the horizontal grid lines belong to the secondary axis. To disable the horizontal grid lines for these types of charts, you should use the `ShowGridLinesProperty` of the secondary axis.
 
 The following illustration describes how the chart will look after the horizontal grid lines are disabled.
 
@@ -39,7 +39,7 @@ Me.olapChart.Series(0).Area.SecondaryAxis.SetValue(ChartArea.ShowGridLinesProper
 
 N> For bar type charts, such as bar, stacking bar, and stacking 100 bar, you can disable the horizontal grid lines by using the `ShowGridLinesProperty` of the primary axis.
 
-In general, for column type charts, the vertical grid line belongs to the primary axis. To disable the vertical grid lines for these types of charts, you should use the `ShowGridLinesProperty` of the primary axis.
+In general, for column type charts, the vertical grid lines belong to the primary axis. To disable the vertical grid lines for these types of charts, you should use the `ShowGridLinesProperty` of the primary axis.
 
 The following illustration describes how the chart will look after the vertical grid lines are disabled.
 

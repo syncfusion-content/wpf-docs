@@ -9,11 +9,11 @@ documentation: ug
 
 # Paging in WPF Olap Chart
 
-Paging in the OLAP chart supports you to load and render the large amount of data without any performance constraint.
+Paging in the OLAP chart allows you to load and render a large amount of data without any performance constraints.
 
-A OLAP pager (user control) is included and bound with the OlapDataManager object of the OLAP chart. To enable paging, set the `EnablePaging` property to true.
+An OLAP pager (user control) is included and bound with the OlapDataManager object of the OLAP chart. To enable paging, set the `EnablePaging` property to true.
 
-When you process the large CellSet, it is split into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible ways by using the UI options in the OLAP pager. You can also change the page size and other pager settings at runtime by using the **PageSetting** window.
+When you process the large CellSet, it is split into a number of segments, and each segment is assigned and rendered on a separate page. You can navigate back and forth in all possible ways by using the UI options in the OLAP pager. You can also change the page size and other pager settings at runtime by using the **PageSetting** window.
 
 Include the following Syncfusion® assembly from the installed location to add the OLAP pager (User Control) with OLAP chart.
 
