@@ -2,8 +2,6 @@
 layout: post
 title: Trackball in WPF Charts | Syncfusion®
 description: Trackball in the WPF Chart displays contextual information across data points, enabling precise data inspection and comparison.
-1
-Trackball in the WPF Chart displays contextual information across data points, enabling precise data inspection and comparison.
 platform: wpf
 control: SfChart
 documentation: ug
