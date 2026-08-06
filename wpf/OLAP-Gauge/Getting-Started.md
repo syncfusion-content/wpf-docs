@@ -7,16 +7,16 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-# Getting Started with WPF Olap Gauge
+# Getting Started with WPF OLAP Gauge
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use the components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from the trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering the Syncfusion license key in your WPF application to use the components.
 
 This section covers the information required to create a simple OLAP gauge control bound to the OLAP data source.
 
 ## Control initialization
 
-The OLAP gauge control can be initialized and added to an application through the following ways:
+The OLAP gauge control can be initialized and added to an application in the following ways:
 
 * Through Visual Studio
 * Through Expression Blend
@@ -28,11 +28,11 @@ The OLAP gauge control can be initialized and added to an application through th
 
 2. Select the toolbox option from the view menu. It will appear inside the Visual Studio IDE. 
 
-3. From the toolbox, select the OLAP gauge control under “Syncfusion BI WPF” group, and then drag it to the designer section of the MainPage.xaml file.
+3. From the toolbox, select the OLAP gauge control under the “Syncfusion BI WPF” group, and then drag it to the designer section of the MainPage.xaml file.
 
 ![WPF OLAP Gauge Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
-4. Then, name the added OLAP gauge control as “OlapGauge1” in MainPage.xaml to refer it in code-behind as follows:
+4. Then, name the added OLAP gauge control as “OlapGauge1” in MainPage.xaml to refer to it in the code-behind as follows:
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ The OLAP gauge control can be initialized and added to an application through th
 
 #### OLAP report and OLAP data manager declaration
 
-Include the following namespaces in the code-behind for using the OlapReport and OlapDataManger in the application.
+Include the following namespaces in the code-behind for using the OlapReport and OlapDataManager in the application.
 
 * Syncfusion.Olap.Reports
 * Syncfusion.Olap.Manager
@@ -180,14 +180,14 @@ End Namespace
 
 2. Select the **Project** tab available in the left corner of the Blend IDE and right-click **References** to select **Add Reference**. 
 
-3. Then, browse the following assemblies and add it to the project.
+3. Then, browse the following assemblies and add them to the project.
 
-* Syncfusion.Gauge.WPF
-* Syncfusion.Core
-* Syncfusion.Olap.Base
-* Syncfusion.OlapGauge.WPF
-* Syncfusion.OlapShared.WPF
-* Syncfusion.Shared.WPF
+    * Syncfusion.Gauge.WPF
+    * Syncfusion.Core
+    * Syncfusion.Olap.Base
+    * Syncfusion.OlapGauge.WPF
+    * Syncfusion.OlapShared.WPF
+    * Syncfusion.Shared.WPF
 
 N> You can find these libraries under the following location:
 
@@ -199,7 +199,7 @@ On adding the above assemblies, the OLAP gauge control will be added under the *
 
 ![WPF OLAP Gauge Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
-5. Then, name the added OLAP gauge control as "OlapGauge1" in MainPage.xaml to refer it in code-behind as follows:
+5. Then, name the added OLAP gauge control as "OlapGauge1" in MainPage.xaml to refer to it in the code-behind as follows:
 
 {% tabs %}
 
@@ -211,7 +211,7 @@ On adding the above assemblies, the OLAP gauge control will be added under the *
 
 {% endtabs %}
 
-To add the OlapReport and OlapDataManger in the application, refer to the [OlapReport and OlapDataManager declaration](#olapreport-and-olapdatamanager-declaration) section.
+To add the OlapReport and OlapDataManager in the application, refer to the [OlapReport and OlapDataManager declaration](#olapreport-and-olapdatamanager-declaration) section.
 
 ### Adding control through code-behind
 
@@ -221,12 +221,12 @@ To add the OlapReport and OlapDataManger in the application, refer to the [OlapR
 
 3. Add the following Syncfusion assemblies manually to the project from the installed location.
 
-* Syncfusion.Gauge.WPF
-* Syncfusion.Core
-* Syncfusion.Olap.Base
-* Syncfusion.OlapGauge.WPF
-* Syncfusion.OlapShared.WPF
-* Syncfusion.Shared.WPF
+    * Syncfusion.Gauge.WPF
+    * Syncfusion.Core
+    * Syncfusion.Olap.Base
+    * Syncfusion.OlapGauge.WPF
+    * Syncfusion.OlapShared.WPF
+    * Syncfusion.Shared.WPF
 
 N> You can find these libraries under the following location:
 
@@ -244,11 +244,11 @@ N> You can find these libraries under the following location:
 
 {% endtabs %}
 
-5. Include the following namespaces in code-behind for using OlapGauge, OlapReport, and OlapDataManger in the application.
+5. Include the following namespaces in the code-behind for using OlapGauge, OlapReport, and OlapDataManager in the application.
 
-* Syncfusion.Olap.Reports
-* Syncfusion.Olap.Manager
-* Syncfusion.Windows.Gauge.Olap
+    * Syncfusion.Olap.Reports
+    * Syncfusion.Olap.Manager
+    * Syncfusion.Windows.Gauge.Olap
 
 {% tabs %}
 
