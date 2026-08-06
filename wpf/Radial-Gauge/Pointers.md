@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pointers in WPF Radial Gauge control | Syncfusion
-description: Learn here all about Pointers support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
+title: Pointers in WPF Radial Gauge | Syncfusion®
+description: Pointers in the WPF Radial Gauge indicate values on the gauge scale using different pointer types and customizable appearance settings.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Pointers in WPF Radial Gauge (SfCircularGauge)
+# Pointers in WPF Radial Gauge
 
 [`Pointers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_Pointers) are used to indicate values on the scale. The pointer value can be modified using the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_Value) property.
 

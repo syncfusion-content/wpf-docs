@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Labels in WPF Radial Gauge control | Syncfusion
-description: Learn here all about Labels support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
+title: Labels in WPF Radial Gauge | Syncfusion®
+description: Labels in the WPF Radial Gauge display scale values and support customization through styling, positioning, and appearance settings.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Labels in WPF Radial Gauge (SfCircularGauge)
+# Labels in WPF Radial Gauge
 
 The `Scale` labels associate numeric values with major scale tick marks.
 

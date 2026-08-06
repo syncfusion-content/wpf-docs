@@ -1,12 +1,15 @@
 ---
 layout: post
-title: About WPF Radial Gauge control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Radial Gauge (SfCircularGauge) control, its elements and more.
+title: About Syncfusion® WPF Radial Gauge Control | Syncfusion®
+
+
+
+description: Learn about the introduction of Syncfusion Essential Studio WPF Radial Gauge control, its features, capabilities, and more details.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
-# WPF Radial Gauge (SfCircularGauge) Overview
+# About Syncfusion WPF Radial Gauge Control
 
 The circular gauge helps to visualize numeric values on a circular scale. The appearance of the gauge is fully customizable to integrate with your applications without fault.
 
