@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Olap Gauge control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Olap Gauge control, its elements and more details.
+title: Getting Started with WPF OLAP Gauge | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF OLAP Gauge control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
 ---
 
-# Getting Started with WPF Olap Gauge
+# Getting Started with WPF OLAP Gauge
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use the components.

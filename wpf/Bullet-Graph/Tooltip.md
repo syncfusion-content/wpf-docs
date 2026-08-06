@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in WPF Bullet Graph control | Syncfusion
-description: Learn all about the Tooltip support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
+title: Tooltip in WPF Bullet Graph | Syncfusion®
+description: Tooltip in the WPF Bullet Graph displays detailed information about values and targets on hover, enabling better data analysis.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Tooltip in WPF Bullet Graph (SfBulletGraph)
+# Tooltip in WPF Bullet Graph
 
 The tooltip in `SfBulletGraph` is used to view the values of FeaturedMeasure, ComparativeMeasure, and QualitativeRange in a required design.
 

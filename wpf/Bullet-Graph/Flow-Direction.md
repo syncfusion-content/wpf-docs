@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Flow Direction in WPF Bullet Graph control | Syncfusion
-description: Learn all about the Flow Direction support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
+title: Flow Direction in WPF Bullet Graph | Syncfusion®
+description: Flow direction in the WPF Bullet Graph controls the layout orientation, enabling content to be displayed from left to right or right to left.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Flow Direction in WPF Bullet Graph (SfBulletGraph)
+# Flow Direction in WPF Bullet Graph
 
 By default, the flow direction of `SfBulletGraph` is Left to Right. It can be customized by using the **FlowDirection** property.
 

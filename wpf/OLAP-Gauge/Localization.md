@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in WPF Olap Gauge control | Syncfusion
-description: Learn about Localization support in Syncfusion WPF Olap Gauge control, its elements and more details.
+title: Localization in WPF OLAP Gauge | Syncfusion®
+description: Localization in the WPF OLAP Gauge enables gauge content, labels, and interface elements to be displayed in different languages.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
 ---
 
-# Localization in WPF Olap Gauge
+# Localization in WPF OLAP Gauge
 
 Localization is the key feature to provide software solutions that are targeted at global users. The OLAP gauge allows users to localize the control to a specific locale and supports “resx” based localization.
 

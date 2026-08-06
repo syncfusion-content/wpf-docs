@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in WPF Olap Gauge control | Syncfusion
-description: Learn about Tooltip support in Syncfusion Essential Studio WPF Olap Gauge control, its elements and more details.
+title: Tooltip in WPF OLAP Gauge | Syncfusion®
+description: Tooltip in the WPF OLAP Gauge displays detailed information about gauge values on hover, helping users analyze data effectively.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
 ---
 
-# Tooltip in WPF Olap Gauge
+# Tooltip in WPF OLAP Gauge
 
 The OLAP gauge provides the information about values when the mouse pointer is moved over the gauge.
 
