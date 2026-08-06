@@ -7,11 +7,11 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-# Gauge Customization in WPF Olap Gauge
+# Gauge Customization in WPF OLAP Gauge
 
 ## Layout customization
 
-The OLAP gauge displays multiple gauges in a structured layout. You can customize the layout by using the `ColumnsCount` and `RowsCount` properties. These properties are used to specify the number of columns and rows for displaying the control.
+The OLAP gauge displays multiple gauges in a structured layout. You can customize the layout by using the [ColumnsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ColumnsCount) and [RowsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_RowsCount) properties. These properties are used to specify the number of columns and rows for displaying the control.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ Me.OlapGauge1.RowsCount = 2
 
 ## Gauge header
 
-The gauge header is the combination of details about the measure and KPI. The header components of the OLAP gauge can be hidden by using the `ShowGaugeHeaders` property as specified in the following code snippet.
+The gauge header is the combination of details about the measure and the KPI. The header components of the OLAP gauge can be hidden by using the [ShowGaugeHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ShowGaugeHeaders) property as specified in the following code snippet.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ OlapGauge1.ShowGaugeHeaders = False
 
 ## Gauge label
 
-The visibility of gauge labels that are displayed inside the gauge can be toggled with the help of `ShowGaugeLabels` property. The following code snippet shows how to hide labels of the OLAP gauge.
+The visibility of gauge labels that are displayed inside the gauge can be toggled with the help of the [ShowGaugeLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ShowGaugeLabels) property. The following code snippet shows how to hide the labels of the OLAP gauge.
 
 {% tabs %}
 
@@ -97,7 +97,7 @@ OlapGauge1.ShowGaugeLabels = False
 
 ## Gauge factor
 
-The gauge factor component can be hidden by using the `ShowGaugeFactors` property as specified in the following code snippet.
+The gauge factor component can be hidden by using the [ShowGaugeFactors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ShowGaugeFactors) property as specified in the following code snippet.
 
 {% tabs %}
 
