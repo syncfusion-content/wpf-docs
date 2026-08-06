@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WPF Olap Chart control | Syncfusion®
-description: Learn about Appearance support in WPF Olap Chart control, its elements and more details.
+title: Appearance in WPF Olap Chart | Syncfusion®
+description: Appearance in the WPF OLAP Chart allows you to customize chart elements, colors, styles, and visual settings for improved presentation.
 platform: wpf
 control: OLAP Chart
 documentation: ug

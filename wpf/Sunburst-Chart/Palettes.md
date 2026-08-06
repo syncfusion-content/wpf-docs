@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Palette in WPF Sunburst Chart control | Syncfusion®
-description: Learn here all about Palette support in WPF Sunburst Chart control and more.
+title: Palette in WPF Sunburst Chart | Syncfusion®
+description: Palette in the WPF Sunburst Chart allows you to customize segment colors, improving visual distinction and chart presentation.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Palette in WPF Sunburst Chart (SfSunburstChart)
+# Palette in WPF Sunburst Chart
 
 The Sunburst Chart provides support to apply different types of palettes. You can define the palettes by using the [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Palette) property.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion WPF Surface Chart Control | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio WPF Surface Chart (SfSurfaceChart) control and more details.
+title: About Syncfusion WPF Surface Chart Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio® WPF Surface Chart control and more details.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
 ---
 
-# About Syncfusion WPF Surface Chart Control
+# About Syncfusion® WPF Surface Chart Control
 
 The Essential Surface Chart shows a three-dimensional surface that connects a set of data points.  
 

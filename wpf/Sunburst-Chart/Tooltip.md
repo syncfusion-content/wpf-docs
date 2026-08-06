@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Tooltip in WPF Sunburst Chart control | Syncfusion®
-description: Learn here all about Tooltip support in WPF Sunburst Chart control and more.
+title: Tooltip in WPF Sunburst Chart | Syncfusion®
+description: Tooltip in the WPF Sunburst Chart displays detailed information about data segments on hover, helping users analyze chart data effectively.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Tooltip in WPF Sunburst Chart (SfSunburstChart)
+# Tooltip in WPF Sunburst Chart
 
 The ToolTip allows you to display any information over a sunburst segment. It appears when the mouse is hovered over or touches any chart segment. By default, it displays the corresponding segment category name and its value. The visibility of the tooltip can be controlled using the [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstToolTipBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstToolTipBehavior_ShowToolTip) property.
 

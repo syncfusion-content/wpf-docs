@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Series in WPF Smith Chart control | Syncfusion®
-description: Learn here all about Series support in WPF Smith Chart control, its elements and more.
+title: Series in WPF Smith Chart | Syncfusion®
+description: Series in the WPF Smith Chart define how data is visualized, enabling different series types and data representations.
 platform: wpf
 control: series
 documentation: ug
 ---
 
-# Series in WPF Smith Chart (SfSmithChart)
+# Series in WPF Smith Chart
 
 Chart series is the visual representation of the given data.
 

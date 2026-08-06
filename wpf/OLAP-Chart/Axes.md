@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axes in WPF Olap Chart control | Syncfusion®
-description: Learn about Axes support in WPF Olap Chart control, its elements and more details.
+title: Axes in WPF Olap Chart | Syncfusion®
+description: Axes in the WPF OLAP Chart define data scales, labels, ranges, and intervals to organize and present multidimensional data effectively.
 platform: wpf
 control: OLAP Chart
 documentation: ug

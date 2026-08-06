@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zooming and Scrolling in WPF Olap Chart control | Syncfusion®
-description: Learn about Zooming and Scrolling support in WPF Olap Chart control, its elements and more details.
+title: Zooming and Scrolling in WPF Olap Chart | Syncfusion®
+description: Zooming and scrolling in the WPF OLAP Chart enable users to navigate, inspect, and analyze specific data ranges with greater detail.
 platform: wpf
 control: OLAP Chart
 documentation: ug

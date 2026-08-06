@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Surface Area in WPF Surface Chart control | Syncfusion
-description: Learn here all about Surface Area support in WPF Surface Chart control and more.
+title: Surface Area in WPF Surface Chart | Syncfusion®
+description: Surface area in the WPF Surface Chart displays three-dimensional data across a continuous surface, enabling analysis of value variations.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
 ---
 
-# Surface Area in WPF Surface Chart (SfSurfaceChart)
+# Surface Area in WPF Surface Chart
 
 The surface area represents the entire surface chart and all its elements. It is a virtual rectangular area that includes all the surface elements like axis, color bar, wall, etc. 
 

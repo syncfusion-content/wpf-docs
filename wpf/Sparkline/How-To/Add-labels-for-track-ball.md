@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to add labels for track ball in WPF Sparkline control | Syncfusion®
-description: The session describes how to add label and customize its appearance inside track ball of WPF spark line.
+title: How to add labels for track ball in WPF Sparkline | Syncfusion®
+description: Add labels for the track ball in the WPF Sparkline to display data values and customize label appearance during data interaction.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# How to add labels for track ball in WPF Sparkline control
+# How to add labels for track ball in WPF Sparkline
 
 You can add labels for the track ball to show the corresponding values. To add labels for the track ball, subscribe to the `OnSparklineMouseMove` event. You can get the following data from the event argument.
 

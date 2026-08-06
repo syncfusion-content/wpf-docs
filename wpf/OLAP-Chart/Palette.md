@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Palette in WPF Olap Chart control | Syncfusion®
-description: Learn about Palette support in WPF Olap Chart control, its elements and more details.
+title: Palette in WPF Olap Chart | Syncfusion®
+description: Palette in the WPF OLAP Chart allows you to customize series colors, improving visual distinction and chart presentation.
 platform: wpf
 control: OLAP Chart
 documentation: ug

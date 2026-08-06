@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Sunburst Chart control | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF Sunburst Chart (SfSunburstChart) control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Sunburst Chart | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Sunburst Chart control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Getting Started with WPF Sunburst Chart (SfSunburstChart)
+# Getting Started with WPF Sunburst Chart
 
 This section explains the steps required to populate the Sunburst Chart with data, add data labels, legends, and header. This section covers only the minimal features that you need to know to get started with the Sunburst Chart.
 

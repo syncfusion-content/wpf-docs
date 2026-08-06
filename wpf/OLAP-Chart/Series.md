@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Series in WPF Olap Chart control | Syncfusion®
-description: Learn about Series support in WPF Olap Chart control, its elements and more details.
+title: Series in WPF Olap Chart | Syncfusion®
+description: Series in the WPF OLAP Chart define how multidimensional data is visualized, enabling different chart types and data representations.
 platform: wpf
 control: OLAP Chart
 documentation: ug

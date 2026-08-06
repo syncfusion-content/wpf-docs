@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Data Label in WPF Sunburst Chart control | Syncfusion®
-description: Learn here all about Data Label support in WPF Sunburst Chart control and more.
+title: Data Label in WPF Sunburst Chart | Syncfusion®
+description: Data labels in the WPF Sunburst Chart display segment values and information directly on the chart for improved readability.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Data Label in WPF Sunburst Chart (SfSunburstChart)
+# Data Label in WPF Sunburst Chart
 
 Sunburst data labels are used to display the data related to the segment. They help to provide information about the data points to the users.
 

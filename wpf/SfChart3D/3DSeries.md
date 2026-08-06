@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Series in WPF SfChart3D control | Syncfusion®
-description: Learn about Series support in WPF SfChart3D control, its elements and more.
+title: Series in WPF SfChart3D | Syncfusion®
+description: Series in the WPF SfChart3D define how data is visualized, enabling different 3D chart types and data representations.
 platform: wpf
 control: SfChart3D
 documentation: ug

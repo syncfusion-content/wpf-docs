@@ -7,7 +7,7 @@ control: SfSmithChart
 documentation: ug
 ---
 
-# Getting Started with WPF Smith Chart (SfSmithChart)
+# Getting Started with WPF Smith Chart control
 
 This section explains the steps required to build the application with SfSmithChart.
 

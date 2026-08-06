@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ShowHide Axis in WPF Sparkline control | Syncfusion®
-description: Learn here all about ShowHide Axis support in WPF Sparkline control and more.
+title: ShowHide Axis in WPF Sparkline | Syncfusion®
+description: Show and hide the axis in the WPF Sparkline to control axis visibility and customize the chart appearance based on data requirements.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Show and Hide Axis in WPF Sparkline (SfSparkline)
+# ShowHide Axis in WPF Sparkline
 
 The following code is used to enable the axis. This feature is applicable for all sparklines except the WinLoss sparkline. You can also style the axis using the `AxisStyle` property and position the axis using the `AxisOrigin` property.
 

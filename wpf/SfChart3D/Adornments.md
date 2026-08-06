@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adornments in WPF SfChart3D control | Syncfusion®
-description: This section explains about adornments behavior and its customization properties in WPF Chart (SfChart3D)
+title: Adornments in WPF SfChart3D | Syncfusion®
+description: Adornments in the WPF SfChart3D display additional information for data points through labels, markers, and customizable visual elements.
 platform: wpf
 control: SfChart3D
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis in WPF SfChart3D control | Syncfusion®
-description: Learn about Axis support in WPF SfChart3D control, its elements and more.
+title: Axis in WPF SfChart3D | Syncfusion®
+description: Axis in the WPF SfChart3D defines data scales, ranges, labels, and intervals to organize and present chart data effectively.
 platform: wpf
 control: SfChart3D
 documentation: ug

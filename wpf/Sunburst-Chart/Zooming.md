@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Zooming in WPF Sunburst Chart control | Syncfusion®
-description: Learn here all about Zooming support in WPF Sunburst Chart control and more.
+title: Zooming in WPF Sunburst Chart | Syncfusion®
+description: Zooming in the WPF Sunburst Chart enables users to focus on specific hierarchical data segments for detailed analysis and navigation.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Zooming in WPF Sunburst Chart (SfSunburstChart)
+# Zooming in WPF Sunburst Chart
 
 The Sunburst Chart provides zooming (drill down) experience with animation for both mouse and touch enabled devices. It allows you to virtualize large sets of data into a minimum data view.
 

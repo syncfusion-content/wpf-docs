@@ -1,7 +1,7 @@
 ---
 layout: post
-title: KPI in WPF Olap Chart control | Syncfusion®
-description: Learn about KPI support in WPF Olap Chart control, its elements and more details.
+title: KPI in WPF Olap Chart | Syncfusion®
+description: KPI in the WPF OLAP Chart displays key performance indicators to monitor, evaluate, and analyze business metrics effectively.
 platform: wpf
 control: OLAP Chart
 documentation: ug

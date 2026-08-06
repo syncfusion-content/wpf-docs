@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Region in WPF Sunburst Chart control | Syncfusion®
-description: Learn here all about Region support in WPF Sunburst Chart control and more.
+title: Region in WPF Sunburst Chart | Syncfusion®
+description: Region in the WPF Sunburst Chart represents hierarchical data segments, enabling visualization and interaction with categorized data.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Region in WPF Sunburst Chart (SfSunburstChart)
+# Region in WPF Sunburst Chart
 
 The Sunburst region represents the entire chart and all its elements. It includes all the chart elements like Legend, DataLabel, Levels, etc. It has some major properties as:
 

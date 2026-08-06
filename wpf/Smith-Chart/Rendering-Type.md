@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rendering Type in WPF Smith Chart control | Syncfusion®
-description: Learn here all about Rendering Type support in WPF Smith Chart control and more.
+title: Rendering Type in WPF Smith Chart | Syncfusion®
+description: Rendering type in the WPF Smith Chart determines how series data is displayed, enabling different visualization styles and layouts.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Rendering Type in WPF Smith Chart (SfSmithChart)
+# Rendering Type in WPF Smith Chart
 
 SfSmithChart plots the transmission line in two different ways by using the `RenderingType` property. The two ways are given below.
 
