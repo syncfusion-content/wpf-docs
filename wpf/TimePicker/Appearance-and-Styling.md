@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF TimePicker control | Syncfusion®
 description: Learn here all about Appearance support in Syncfusion® WPF TimePicker (SfTimePicker) control and more.
-platform: WPF
+platform: wpf
 control: SfTimePicker
 documentation: ug
 ---
@@ -13,20 +13,24 @@ This section explains different UI customization, styling, theming options avail
 
 ## Setting the Foreground
 
-We can change a foreground of the `SfTimePicker` by using the `Foreground` property and also we can change the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) items and selected time item foreground by using the `Foreground` and [SfTimeSelector.SelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html#Syncfusion_Windows_Controls_Input_SfTimeSelector_SelectedForeground) properties of `SfTimeSelector`.
+We can change the foreground of the `SfTimePicker` by using the `Foreground` property and also we can change the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) items and selected time item foreground by using the `Foreground` and [SfTimeSelector.SelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html#Syncfusion_Windows_Controls_Input_SfTimeSelector_SelectedForeground) properties of `SfTimeSelector`.
 
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker Name="sfTimePicker"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfTimePicker Name="sfTimePicker"
                          Foreground="Red"
                          Width="200">
-    <syncfusion:SfTimePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfTimeSelector">
-            <Setter Property="Foreground" Value="Blue"/>
-            <Setter Property="SelectedForeground" Value="Yellow"/>
-        </Style>
-    </syncfusion:SfTimePicker.SelectorStyle>
-</syncfusion:SfTimePicker>
+        <syncfusion:SfTimePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfTimeSelector">
+                <Setter Property="Foreground" Value="Blue"/>
+                <Setter Property="SelectedForeground" Value="Yellow"/>
+            </Style>
+        </syncfusion:SfTimePicker.SelectorStyle>
+    </syncfusion:SfTimePicker>
+</Window>
 
 {% endhighlight  %}
 
@@ -34,20 +38,24 @@ We can change a foreground of the `SfTimePicker` by using the `Foreground` prope
 
 ## Setting the Background
 
-We can change a background of the `SfTimePicker` by using the `background` property and also we can change the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) items and selected time item background by using the `Background` and [SfTimeSelector.AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html#Syncfusion_Windows_Controls_Input_SfTimePicker_AccentBrush) properties of `SfTimeSelector`.
+We can change the background of the `SfTimePicker` by using the `Background` property and also we can change the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) items and selected time item background by using the `Background` and [SfTimeSelector.AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html#Syncfusion_Windows_Controls_Input_SfTimePicker_AccentBrush) properties of `SfTimeSelector`.
 
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker Name="sfTimePicker"
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfTimePicker Name="sfTimePicker"
                          Background="Red"
                          AccentBrush="Green"
                  Width="200">
-    <syncfusion:SfTimePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfTimeSelector">
-            <Setter Property="Background" Value="Blue"/>
-        </Style>
-    </syncfusion:SfTimePicker.SelectorStyle>
-</syncfusion:SfTimePicker>
+        <syncfusion:SfTimePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfTimeSelector">
+                <Setter Property="Background" Value="Blue"/>
+            </Style>
+        </syncfusion:SfTimePicker.SelectorStyle>
+    </syncfusion:SfTimePicker>
+</Window>
 
 {% endhighlight  %}
 
@@ -55,15 +63,21 @@ We can change a background of the `SfTimePicker` by using the `background` prope
 
 ## Change flow direction
 
-We can change the flow direction of the `SfTimePicker` control from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Default value of `FlowDirection` property is `LeftToRight`.
+We can change the flow direction of the `SfTimePicker` control from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker FlowDirection="RightToLeft" Name="sfTimePicker"/>
+<Window 
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    <syncfusion:SfTimePicker FlowDirection="RightToLeft" Name="sfTimePicker"/>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.Windows.Controls.Input;
 
 SfTimePicker sfTimePicker= new SfTimePicker();
 sfTimePicker.FlowDirection = FlowDirection.RightToLeft;
