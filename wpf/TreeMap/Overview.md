@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF TreeMap control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
+title: About Syncfusion® WPF TreeMap Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® WPF TreeMap control, its features, capabilities, and more details.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# WPF TreeMap (SfTreeMap) Overview
+# About Syncfusion® WPF TreeMap Control
 
 TreeMaps are ideal for visualizing large amounts of data. The visualization space is split up into rectangles that are sized and colored based on the quantitative variables. The levels in the hierarchy of the tree map are visualized as rectangles containing other rectangles.
 

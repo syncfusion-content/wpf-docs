@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Events in WPF Maps control | Syncfusion
-description: Learn here all about Events support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Events in WPF Maps | Syncfusion®
+description: Events in the WPF Maps enable you to respond to user interactions and customize map behavior during runtime.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Events in WPF Maps (SfMap)
+# Events in WPF Maps 
+
+
 
 • [`ZoomedIn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs whenever zooming in the map.  
 • [`ZoomedOut`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs when zooming out the map.

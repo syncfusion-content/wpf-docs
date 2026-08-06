@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layers in WPF Maps control | Syncfusion
-description: Learn here all about Layers support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Layers in WPF Maps | Syncfusion®
+description: Layers in the WPF Maps organize and display geographic data, enabling visualization of shapes, markers, bubbles, and other map elements.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Layers in WPF Maps (SfMap)
+# Layers in WPF Maps control
 
 The [WPF Maps](https://www.syncfusion.com/wpf-controls/map) control is maintained through [`Layers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html), a map can accommodate one or more layers.
 

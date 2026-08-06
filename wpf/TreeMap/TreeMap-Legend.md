@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMap Legend in WPF TreeMap control | Syncfusion
-description: Learn here all about TreeMap Legend support in Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
+title: TreeMap Legend in WPF TreeMap | Syncfusion®
+description: TreeMap legend in the WPF TreeMap identifies color mappings and data categories, helping users understand hierarchical data relationships.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# TreeMap Legend in WPF TreeMap (SfTreeMap)
+# TreeMap Legend in WPF TreeMap
 
 TreeMap legend is used to easily demonstrate about the color value of leaf nodes. But this legend could be appropriate only for the treemap having leaf nodes colored by using RangeBrushColorMapping. The labels of the legend item can be customized by specifying LegendLabel of RangeBrush mentioned in the Brushes of RangeBrushColorMapping.
 

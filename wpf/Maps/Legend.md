@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in WPF Maps control | Syncfusion
-description: Learn here all about Legend support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Legend in WPF Maps | Syncfusion®
+description: Legend in the WPF Maps identifies map elements, categories, and data ranges, helping users understand and interpret geographic data clearly.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Legend in WPF Maps (SfMap)
+# Legend in WPF Maps control
 
 A legend is a key to symbolism used on a map, usually containing swatches of symbols with descriptions. It provides valuable information for interpreting what the map is showing you, and can be represented in various colors and shapes based on the data.
 

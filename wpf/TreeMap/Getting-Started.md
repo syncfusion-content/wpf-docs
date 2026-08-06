@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF TreeMap control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
+title: Getting Started with WPF TreeMap | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF TreeMap control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# Getting Started with WPF TreeMap (SfTreeMap)
+# Getting Started with WPF TreeMap
 
 TreeMaps are a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole dataset. The size of each box represents a quantity. TreeMaps also use color to represent any number of values, but it is often used to categorize the various boxes within the tree map.
 

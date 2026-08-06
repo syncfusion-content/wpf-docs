@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubbles in WPF Maps control | Syncfusion
-description: Learn here all about Bubbles support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Bubbles in WPF Maps | Syncfusion®
+description: Bubbles in the WPF Maps visualize location-based data using proportional markers, enabling comparison of values across geographic regions.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Bubbles in WPF Maps (SfMap)
+# Bubbles in WPF Maps 
 
 Bubbles in the [WPF Maps](https://www.syncfusion.com/wpf-controls/map) control represent the under-bound data values of the map. Bubbles are scattered throughout the map shapes that contain bound values.
 
