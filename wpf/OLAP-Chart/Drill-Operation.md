@@ -25,7 +25,7 @@ A sample demo is available at the following location.
 
 ## Drill position
 
-Drill position allows users to drill only the current position of a selected member and it will exclude the drilled data of the selected member in other positions by using the MDX query. It can be enabled by setting the **"DrillType"** enumeration to **"DrillPosition"** in the OLAP report.
+Drill position allows users to drill only the current position of a selected member and it will exclude the drilled data of the selected member in other positions by using the MDX query. It can be enabled by setting the [DrillType](https://help.syncfusion.com/cr/wpf/Syncfusion.Olap.Reports.OlapReport.html#Syncfusion_Olap_Reports_OlapReport_DrillType) enumeration to **"DrillPosition"** in the OLAP report.
 
 {% tabs %}
 
@@ -49,7 +49,7 @@ A sample demo is available at the following location.
  
 ## Show/hide expanders
  
-The visibility of expanders in the OLAP chart can be toggled by using the `ShowExpanders` property available in the OLAP report.
+The visibility of expanders in the OLAP chart can be toggled by using the [ShowExpanders](https://help.syncfusion.com/cr/wpf/Syncfusion.Olap.Reports.OlapReport.html#Syncfusion_Olap_Reports_OlapReport_ShowExpanders) property available in the OLAP report.
 
 {% tabs %}
 

@@ -13,10 +13,10 @@ KPI is a collection of calculations that are associated with a measure group in 
 
 The following are the different types of indicators:
 
-* KPI goal
-* KPI status
-* KPI trend
-* KPI value
+* [KPI goal](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.Olap.Kpi.html#Syncfusion_Windows_Chart_Olap_Kpi_ShowGoal)
+* [KPI status](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.Olap.Kpi.html#Syncfusion_Windows_Chart_Olap_Kpi_ShowStatus)
+* [KPI trend](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.Olap.Kpi.html#Syncfusion_Windows_Chart_Olap_Kpi_ShowTrend)
+*[KPI value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.Olap.Kpi.html#Syncfusion_Windows_Chart_Olap_Kpi_ShowValue)
 
 The KPI elements can be defined in the OLAP report in the following way.
 

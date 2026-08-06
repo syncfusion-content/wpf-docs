@@ -9,7 +9,7 @@ documentation: ug
 
 # Palette in WPF Olap Chart
 
-The chart palette is a pre-defined collection of a set of colors that can be applied to a chart series. The OLAP chart supports 23 chart palettes, which is used to provide rich look for your business applications.
+The chart palette is a predefined collection of a set of colors that can be applied to a chart series. The OLAP chart supports 23 chart palettes, which are used to provide a rich look for your business applications.
 
 The following are the available palettes in the OLAP chart control:
 
@@ -55,13 +55,13 @@ Me.olapChart.ColorModel.Palette = CType(System.Enum.Parse(GetType(Syncfusion.Win
 
 {% endtabs %}
 
-The following image shows before and after applying the *EarthTone* palette.
+The following image shows the chart before and after applying the *EarthTone* palette.
 
 ![Palette_img1](Palette_images/Palette_img1.png)
 
 ## Custom palette
 
-Custom palettes can be applied to the OLAP chart by setting the _“Interior”_ property with custom brush to each series in the OLAP chart.
+Custom palettes can be applied to the OLAP chart by setting the _"Interior"_ property with a custom brush for each series in the OLAP chart.
 
 A sample demo is available at the following location.
 

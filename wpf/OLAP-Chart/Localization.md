@@ -28,7 +28,7 @@ N> Localization key field should be same for all locales. Do not translate it.
 
 After translating the strings that can be localized, perform the following in the application:
 
-Right-click the project file to create a new folder in the project. Select Add > New Folder and rename the folder as "Resources".
+Right-click the project file to create a new folder in the project. Select Add > New Folder and rename the folder as `Resources`.
 
 N> The folder name should strictly be "Resources".
 
@@ -38,7 +38,7 @@ Now, right-click the resources folder to create a new resource file in the Visua
 
 ![Define the resource file name](Localization_images/Localization_img2.png)
 
-Select "Resources File" from the list. Then, name the resource file as Syncfusion.OlapChart.WPF.ar-AE.resx and click Add.
+Select **Resources File** from the list. Then, name the resource file as Syncfusion.OlapChart.WPF.ar-AE.resx and click Add.
 
 N> The resource file name should strictly be in the format "Syncfusion.OlapChart.WPF.&lt;Culture Code&gt;.resx".
    
@@ -63,13 +63,17 @@ public MainWindow()
 
 ## RTL support
 
-RTL support for OLAP chart is used to display the content from right to left by setting the `FlowDirection` property to "RightToLeft". The following code sample explains how to set this property.
+RTL support for OLAP chart is used to display the content from right to left by setting the `FlowDirection` property to **RightToLeft**. The following code sample explains how to set this property.
 
 {% tabs %}
 
 {% highlight xaml %}
 	
-<syncfusion:OlapChart x:Name="olapChart" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" olapshared:DataSource.DataManagerName="localManager" olapshared:DataSource.ConnectionString="{Binding OlapConnectionString}" />
+<syncfusion:OlapChart x:Name="olapChart"
+                      FlowDirection="RightToLeft"
+                      HorizontalAlignment="Stretch"
+                      olapshared:DataSource.DataManagerName="localManager"
+                      olapshared:DataSource.ConnectionString="{Binding OlapConnectionString}" />
 
 {% endhighlight %}
 
@@ -92,6 +96,3 @@ Me.olapChart.FlowDirection = System.Windows.FlowDirection.RightToLeft
 A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Localization
-
-
-
