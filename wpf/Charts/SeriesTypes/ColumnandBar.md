@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column and Bar Chart in WPF Charts control | Syncfusion®
-description: Learn here all about Column and Bar Chart support in WPF Charts control, its elements, and more details.
+title: Column and Bar Chart in WPF Charts | Syncfusion®
+description: Column and bar series in the WPF Chart compare categorical data using vertical and horizontal bars for clear data visualization.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Column and Bar in WPF Charts (SfChart)
+# Column and Bar in WPF Charts
 
 ## Column Chart
 

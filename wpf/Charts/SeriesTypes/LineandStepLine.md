@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Line and StepLine Chart in WPF Charts control | Syncfusion®
-description: Learn here all about Line and StepLine Chart support in WPF Charts control, its elements, and more details.
+title: Line and StepLine Chart in WPF Charts | Syncfusion®
+description: Line and step line series in the WPF Chart display trends and changes over time, enabling clear visualization of continuous data.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Line and StepLine in WPF Charts (SfChart)
+# Line and StepLine in WPF Charts
 
 ## Line Chart
 

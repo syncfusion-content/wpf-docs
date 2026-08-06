@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in WPF Charts control | Syncfusion®
-description: Learn here all about Printing support in WPF Charts control, its elements and more details.
+title: Printing in WPF Charts | Syncfusion®
+description: Printing in the WPF Chart enables chart visuals to be printed directly for reporting, analysis, and presentation purposes.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Printing in WPF Charts (SfChart)
+# Printing in WPF Charts
 
 SfChart supports printing that enables you to print the chart. The following method is used to print the chart.
 

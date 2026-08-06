@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Export Chart to Image in WPF Chart Control | Syncfusion®
-description: Learn here all about export chart to image windows 8.1 support in WPF Chart control, it's elements, and more.
+title: How to Export Chart to Image in WPF Chart | Syncfusion®
+description: Export a chart to an image in the WPF Chart on Windows 8.1 to save chart visuals for sharing, printing, or further use.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# How to Export Chart to Image Windows 8.1 in WPF Chart Control
+# How to Export Chart to Image Windows 8.1 in WPF Chart
 
 The export chart to image feature in the SfChart control enables the user to export the image of the chart in different image file formats. 
 

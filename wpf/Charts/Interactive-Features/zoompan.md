@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming and Panning in WPF Charts control | Syncfusion
-description: Learn here all about Zooming and Panning support in WPF Charts control, its elements, and more details.
+title: Zooming and Panning in WPF Charts | Syncfusion
+description: Zooming and panning in the WPF Chart enable users to navigate, inspect, and analyze specific data ranges with ease.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Zooming and Panning in WPF Charts (SfChart)
+# Zooming and Panning in WPF Charts
 
 SfChart allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are a number of data points inside the chart.
 

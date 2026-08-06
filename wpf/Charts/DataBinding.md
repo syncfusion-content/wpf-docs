@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WPF Charts control | Syncfusion®
-description: Learn here all about Data Binding support in WPF Charts control, its elements and more details.
+title: Data Binding in WPF Charts | Syncfusion®
+description: Data binding in the WPF Chart connects chart series to data sources, enabling dynamic visualization and automatic data updates.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Data Binding in WPF Charts (SfChart)
+# Data Binding in WPF Charts
 
 SfChart offers ItemsSource property to bind various datasource ranges from simple collection property to complex properties.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Fast Series in WPF Charts control | Syncfusion®
-description: Learn here all about Fast Series support in WPF Charts control, its elements and more details.
+title: Fast Series in WPF Charts | Syncfusion®
+description: Fast Series in the WPF Chart renders large datasets with optimized performance, enabling smooth interaction and efficient data analysis.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Fast Series in WPF Charts (SfChart)
+# Fast Series in WPF Charts
 
 A fast series is a special kind of line chart that can render a collection with a huge number of data points. Fast series is rendered using a polyline segment.
 

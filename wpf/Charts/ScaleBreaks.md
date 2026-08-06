@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Scale Breaks in WPF Charts control | Syncfusion®
-description: Learn here all about Scale Breaks support in WPF Charts control, its elements and more details.
+title: Scale Breaks in WPF Charts | Syncfusion®
+description: Scale breaks in the WPF Chart skip specific value ranges on an axis, improving readability when displaying unevenly distributed data.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
-# Scale Breaks in WPF Charts (SfChart)
+# Scale Breaks in WPF Charts
 
 Scale break is a stripe drawn in the chart area to denote the break in the continuity of data points. Scale breaks are useful when there is a large difference in the data points. Scale break allows you to have different ranges on the same axis to visualize data effectively.
 

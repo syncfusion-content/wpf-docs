@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Annotations in WPF Charts control | Syncfusion®
-description: Learn here all about Annotations support in WPF Charts control, its elements and more details.
+title: Annotations in WPF Charts | Syncfusion®	
+description: Annotations in the WPF Chart enable you to add custom text, shapes, and UI elements to highlight and explain chart data.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
-# Annotations in WPF Charts (SfChart)
+# Annotations in WPF Charts
 
 SfChart supports Annotations, which allows you to mark the specific area of interest in the chart area. You can draw custom shapes, also text and images can be added using Annotations. 
 

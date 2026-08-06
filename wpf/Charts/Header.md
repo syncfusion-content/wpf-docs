@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header in WPF Charts control | Syncfusion®
-description: Learn here all about Header support in WPF Charts control, its elements and more details.
+title: Header in WPF Charts | Syncfusion®
+description: Header in the WPF Chart displays a title for the chart, providing context and helping users understand the presented data.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Header in WPF Charts (SfChart)
+# Header in WPF Charts
 
 [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart. This allows you to add any object (.Net object) as content for the chart title.
 

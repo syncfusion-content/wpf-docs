@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resizable Scrollbar in WPF Charts control | Syncfusion®
-description: Learn here all about Resizable Scrollbar support in WPF Charts control, its elements, and more details.
+title: Resizable Scrollbar in WPF Charts | Syncfusion®
+description: Resizable scrollbar in the WPF Chart allows users to adjust the visible data range dynamically for improved navigation and analysis.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Resizable Scrollbar in WPF Charts (SfChart)
+# Resizable Scrollbar in WPF Charts
 
 The resizable scrollbar is a type of scrollbar that can be resized within the track area by adjusting the scrolling thumbs. In the SfChart, a resizable scrollbar is used for zooming and panning across different chart segments.
 

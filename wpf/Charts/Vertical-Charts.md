@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Vertical Charts in WPF Charts control | Syncfusion®
-description: Learn here all about Vertical Charts support in WPF Charts control, its elements, and more details.
+title: Vertical Charts in WPF Charts | Syncfusion®
+description: Vertical charts in the WPF Chart display series with transposed axes, enabling an alternative orientation for data visualization.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Vertical Charts in WPF Charts (SfChart)
+# Vertical Charts in WPF Charts
 
 SfChart provides support for vertical charts. You can plot a vertical chart for any chart using the [`IsTransposed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_IsTransposed) and [`OpposedPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_OpposedPosition) properties.
 

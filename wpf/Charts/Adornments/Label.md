@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Label in WPF Charts control | Syncfusion®
-description: Learn here all about Data Label support in WPF Charts control, its elements and more details.
+title: Data Label in WPF Charts | Syncfusion®
+description: Data labels in the WPF Chart display data point values directly on the chart, improving readability and data interpretation.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Data Label in WPF Charts (SfChart)
+# Data Label in WPF Charts
 
 Data points can be easily annotated with labels to help improve the readability of data. 
 

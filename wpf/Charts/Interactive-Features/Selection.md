@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WPF Charts control | Syncfusion®
-description: Learn here all about Selection support in WPF Charts control, its elements and more details.
+title: Selection in WPF Charts | Syncfusion®
+description: Selection in the WPF Chart enables users to highlight and interact with data points, segments, or series for focused analysis.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Selection in WPF Charts (SfChart)
+# Selection in WPF Charts
 
 SfChart supports selection that allows you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
 

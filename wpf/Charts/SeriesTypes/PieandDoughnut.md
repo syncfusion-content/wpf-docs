@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pie and Doughnut Chart in WPF Charts control | Syncfusion®
-description: Learn here all about Pie and Doughnut Chart support in WPF Charts control, its elements, and more details.
+title: Pie and Doughnut Chart in WPF Charts | Syncfusion®
+description: Pie and doughnut series in the WPF Chart display proportional data as segments, enabling comparison of parts within a whole.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Pie and Doughnut in WPF Charts (SfChart)
+# Pie and Doughnut in WPF Charts
 
 ## Pie Chart
 

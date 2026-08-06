@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Crosshair in WPF Charts control | Syncfusion®
-description: Learn here all about Crosshair support in WPF Charts control, its elements and more details.
+title: Crosshair in WPF Charts | Syncfusion®
+description: Crosshair in the WPF Chart displays intersecting lines and axis values, helping users precisely inspect data point positions.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Crosshair in WPF Charts (SfChart)
+# Crosshair in WPF Charts
 
 ChartCrossHairBehavior is used to view the values at mouse point or touch contact point. By moving these lines horizontally, you can get the X values and by moving these lines vertically, you can get the Y values.
 

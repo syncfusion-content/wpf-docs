@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to add custom track ball labels in WPF Chart | Syncfusion®
-description: Add custom labels to track ball behavior in WPF Chart control, its elements and more.
+description: Add custom labels to track ball behavior in the WPF Chart to display customized information for data points during interaction.
 platform: wpf
 control: SfChart
 documentation: ug

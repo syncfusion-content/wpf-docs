@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Area in WPF Charts control | Syncfusion®
-description: Learn here all about Area support in WPF Charts control, its elements and more details.
+title: Area in WPF Charts | Syncfusion®
+description: Area in the WPF Chart displays data as filled regions between data points and the axis, emphasizing trends and value magnitude.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Area in WPF Charts (SfChart)
+# Area in WPF Charts control
 
 Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
 

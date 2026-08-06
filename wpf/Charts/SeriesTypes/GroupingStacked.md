@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping Stacked Chart in WPF Charts control | Syncfusion®
-description: Learn here all about Grouping Stacked Chart support in WPF Charts control, its elements, and more details.
+title: Grouping Stacked Chart in WPF Charts | Syncfusion®
+description: Grouping stacked series in the WPF Chart organize multiple stacked groups, enabling comparison of related data across categories.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Grouping Stacked in WPF Charts (SfChart)
+# Grouping Stacked in WPF Charts
 
 You can group the stacked similar series using [`GroupingLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackingSeriesBase_GroupingLabel) property of stacked series. The stacked series which contains the same [`GroupingLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackingSeriesBase_GroupingLabel) will be stacked in a single group.
 

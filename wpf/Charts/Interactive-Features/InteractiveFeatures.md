@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WPF Charts control | Syncfusion®
-description: Learn here all about Interactive Features support in WPF Charts control, its elements, and more details.
+title: Interactive Features in WPF Charts | Syncfusion®
+description: Interactive features in the WPF Chart enable zooming, panning, selection, tooltips, and navigation for enhanced data exploration.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Interactive Features in WPF Charts (SfChart)
+# Interactive Features in WPF Charts
 
 SfChart provides interactive features such as tracking data points and resizing the scrollbar.
 

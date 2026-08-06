@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in WPF Charts control | Syncfusion®
-description: Learn here all about Legend support in WPF Charts control, its elements and more details.
+title: Legend in WPF Charts | Syncfusion®
+description: Legend in the WPF Chart identifies series and data categories, helping users understand and interpret chart information clearly.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Legend in WPF Charts (SfChart)
+# Legend in WPF Charts
 
 [`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) provides metadata which helps for identifying elements in chart like [chart series](https://help.syncfusion.com/wpf/charts/seriestypes/series), 
 [technical indicators](https://help.syncfusion.com/wpf/charts/technical-indicators), and [trendlines](https://help.syncfusion.com/wpf/charts/trendlines). 

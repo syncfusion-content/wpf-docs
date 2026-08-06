@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion® WPF Charts control | Syncfusion®
-description: Learn about introduction of Syncfusion® Essential Studio WPF Charts control and more details.
+title: About Syncfusion® WPF Charts | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio® WPF Chart control, its features, capabilities, and more details.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# About Syncfusion WPF Charts (SfChart) Control
+# About Syncfusion WPF Charts Control
 
 SfChart provides a perfect way to visualize data with a high level of user interactivity that focuses on development, productivity, and simplicity of use. SfChart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data, and user customization.
 

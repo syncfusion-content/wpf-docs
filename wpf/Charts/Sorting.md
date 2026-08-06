@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in WPF Charts control | Syncfusion®
-description: Learn here all about Sorting support in WPF Charts control, its elements and more details.
+title: Sorting in WPF Charts | Syncfusion®
+description: Sorting in the WPF Chart arranges data points based on specified values, enabling clearer visualization and comparison of chart data.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Sorting in WPF Charts (SfChart)
+# Sorting in WPF Charts
 
 Chart provides the support for sorting the data point either in ascending or descending based on X or Y axis.
 
