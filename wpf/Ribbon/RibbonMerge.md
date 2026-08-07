@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ribbon Merge in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Ribbon Merge support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: Ribbon Merge in Ribbon lets you merge the ribbon tabs of a child window into the parent window's ribbon for MDI scenarios.
 platform: wpf
 control: Ribbon
 documentation: ug

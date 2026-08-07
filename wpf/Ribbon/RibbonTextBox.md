@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonTextBox in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonTextBox support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The RibbonTextBox in Ribbon lets you add a text input control to ribbon groups for entering and editing text values.
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -52,7 +52,7 @@ _ribbonBar2.Items.Add(_ribbonTextBox)
  
 {% endtabs %}
 
-![Adding text box to the ribbon](RibbonTextBox_images/RibbonTextBox_img1.jpg)
+![Adding text box to the ribbon](RibbonTextBox_images/wpf-ribbon-textbox.jpg)
 
 ## Add TextBox to the simplified layout
 
@@ -117,7 +117,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![RibbonTextBox during simplified layout](RibbonTextBox_images/RibbonTextBox_Simplified.png)
+![RibbonTextBox during simplified layout](RibbonTextBox_images/wpf-ribbon-textbox-in-simplified-layout.png)
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonTextBox can be ignored as it will be resized automatically to the standard width and height. If the RibbonTextBox is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 

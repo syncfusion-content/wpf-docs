@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonTabPanelItem in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonTabPanelItem support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The RibbonTabPanelItem in Ribbon lets you host any custom content within a ribbon tab panel with full layout flexibility.
 platform: wpf
 control: Ribbon
 documentation: ug

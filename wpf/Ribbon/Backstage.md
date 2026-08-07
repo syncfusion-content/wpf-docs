@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Backstage in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Backstage support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The Backstage in Ribbon appears when clicking the application button and provides full-window access to document actions like Save and Print.
 platform: wpf
 control: Ribbon
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Patterns and Practices in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Patterns and Practices support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: Patterns and practices in Ribbon guide you on MVVM usage, command binding, and recommended approaches for ribbon development.
 platform: wpf
 control: Ribbon
 documentation: ug

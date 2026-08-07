@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Floating Window in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Floating Window support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: The floating window in DockingManager lets you undock child windows and drag them anywhere on the screen as independent windows.
 platform: wpf
 control: DockingManager
 documentation: ug

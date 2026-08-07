@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DragProvider in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Interaction with DragProvider support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: The DragProvider in DockingManager provides visual dock hints to guide users while dragging and docking child windows to a target.
 platform: wpf
 control: DockingManager
 documentation: ug

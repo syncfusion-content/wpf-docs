@@ -1,7 +1,7 @@
 ---
 layout: post
 title: KeyBoard Support in WPF Ribbon Control | Syncfusion®
-description: Learn here all about KeyBoard Support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: Keyboard support in Ribbon provides KeyTip support to invoke any ribbon command using keyboard shortcuts and accessibility features.
 platform: wpf
 control: Ribbon
 documentation: ug

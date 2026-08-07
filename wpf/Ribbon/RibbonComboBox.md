@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonComboBox in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonComboBox support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The RibbonComboBox in Ribbon lets you add a combo box control to ribbon tabs to select from a dropdown list of items.
 platform: wpf
 control: Ribbon
 documentation: ug

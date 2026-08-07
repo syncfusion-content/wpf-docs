@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonCheckBox in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonCheckBox support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The RibbonCheckBox in Ribbon lets you add checkable controls with labels to enable or disable options within ribbon groups.
 platform: wpf
 control: Ribbon
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Auto Hide Window in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Auto Hide Window support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: The Auto Hide Window in DockingManager hides docked windows along the edge of the container and slides them into view on hover.
 platform: wpf
 control: DockingManager
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonItemHost in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonItemHost support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The RibbonItemHost in Ribbon lets you host any WPF content or control inside a ribbon group with full layout support.
 platform: wpf
 control: Ribbon
 documentation: ug

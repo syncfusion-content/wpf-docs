@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonMenuItem in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonMenuItem support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The RibbonMenuItem in Ribbon lets you add menu items with sub-menus, icons, and checkable options to ribbon dropdowns.
 platform: wpf
 control: Ribbon
 documentation: ug
