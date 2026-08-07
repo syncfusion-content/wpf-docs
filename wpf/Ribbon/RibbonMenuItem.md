@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonMenuItem in WPF Ribbon control | Syncfusion®
-description: Learn about RibbonMenuItem support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
+title: RibbonMenuItem in WPF Ribbon Control | Syncfusion®
+description: Learn here all about RibbonMenuItem support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
 platform: WPF
 control: Ribbon
 documentation: ug
 ---
-# RibbonMenuItem in WPF Ribbon
+# RibbonMenuItem in WPF Ribbon Control
 
 `RibbonMenuItem` is used as an entity in menus like ApplicationMenu, DropDownButton, SplitButton, context menu, and so on.
 

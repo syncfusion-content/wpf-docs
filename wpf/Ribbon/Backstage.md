@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Backstage in WPF Ribbon control | Syncfusion®
-description: Learn about Backstage support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
+title: Backstage in WPF Ribbon Control | Syncfusion®
+description: Learn here all about Backstage support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 
-# BackStage in WPF Ribbon
+# BackStage in WPF Ribbon Control
 
 Backstage is a separate view containing tabs and buttons that can show an application’s information and basic settings. The backstage items can also be arranged at either the top or bottom. It provides different types of animations such as fade, scale, and zoom as well as support to customize the animation duration.
 

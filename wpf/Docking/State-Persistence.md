@@ -1,12 +1,12 @@
 ---
 layout: post
-title: State Persistence in WPF Docking control | Syncfusion®
+title: State Persistence in WPF DockingManager Control | Syncfusion®
 description: Learn here all about State Persistence support in Syncfusion® WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# State Persistence in WPF Docking (DockingManager)
+# State Persistence in WPF DockingManager Control
 
 State persistence is the combined process of serialization and deserialization. 
 
