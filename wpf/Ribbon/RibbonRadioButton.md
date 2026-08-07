@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonRadioButton in WPF Ribbon control | Syncfusion®
-description: Learn about RibbonRadioButton support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: RibbonRadioButton in WPF Ribbon Control | Syncfusion®
+description: Learn here all about RibbonRadioButton support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonRadioButton in WPF Ribbon
+# RibbonRadioButton in WPF Ribbon Control
 
 The RibbonRadioButton control is used to select an option, similar to a normal RadioButton.
 

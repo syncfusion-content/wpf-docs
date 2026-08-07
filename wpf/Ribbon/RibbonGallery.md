@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonGallery in WPF Ribbon control | Syncfusion®
-description: Learn about RibbonGallery support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
+title: RibbonGallery in WPF Ribbon Control | Syncfusion®
+description: Learn here all about RibbonGallery support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
 platform: WPF
 control: Ribbon
 documentation: ug
 ---
-# RibbonGallery in WPF Ribbon
+# RibbonGallery in WPF Ribbon Control
 
 RibbonGallery provides `VisualMode` property, that helps to display items in two different ways.
 

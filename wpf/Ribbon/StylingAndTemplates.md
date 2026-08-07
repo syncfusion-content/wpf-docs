@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Styling and Templates in WPF Ribbon control | Syncfusion®
-description: Learn about Styling and Templates support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: Styling and Templates in WPF Ribbon Control | Syncfusion®
+description: Learn here all about Styling and Templates support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Styling and Templates in WPF Ribbon
+# Styling and Templates in WPF Ribbon Control
 
 ## Theme
 
