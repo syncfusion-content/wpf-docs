@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Localization support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Steps to localize in WPF Tooltip | Syncfusion
+description: Learn Steps to localize in WPF Tooltip using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Localization in WPF DockingManager Control
+# Steps to localize in WPF Tooltip
 
 Localization customizes the application towards a specific language and region. Syncfusion® Tools allow you to set custom resources through a `.resx` file. The table below shows how each DockingManager property is localized in English and French.
 

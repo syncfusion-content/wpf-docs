@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Docking Window in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Docking Window support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Configuring window in Different Sides in WPF Data Grid | Syncfusion
+description: Learn Configuring window in Different Sides in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Docking Window in WPF DockingManager Control
+# Configuring window in Different Sides in WPF Data Grid
 
 Docking windows is one of the state of DockingManager. Since `Dock` is the default value, so initially all the children stay as Docking Window
 

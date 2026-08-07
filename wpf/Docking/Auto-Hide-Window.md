@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Auto Hide Window in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Auto Hide Window support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Configuring Window in Different Sides in WPF Button | Syncfusion
+description: Learn Configuring Window in Different Sides in WPF Button using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Auto Hide Window in WPF DockingManager Control
+# Configuring Window in Different Sides in WPF Button
 
 AutoHide window is one of the state in the DockingManager. To enable Auto hidden for DockingManager's children, set its `State` value as `AutoHidden`.
 

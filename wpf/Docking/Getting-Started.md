@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with WPF Docking control | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF Docking (DockingManager) control. Explore setup, features, examples, and customization options.
+title: Assembly deployment in WPF Tooltip | Syncfusion
+description: Learn Assembly deployment in WPF Tooltip using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Getting Started with WPF Docking (DockingManager)
+# Assembly deployment in WPF Tooltip
 
 This section explains how to implement a similar UI as Visual Studio by using the [WPF DockingManager](https://www.syncfusion.com/wpf-controls/docking) in your project. 
 

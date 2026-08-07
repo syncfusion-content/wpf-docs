@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to disable TabGroup Resize Preview in WPF Docking | Syncfusion®
-description: Learn here how to disable tabgroup resize preview in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+title: How to disable TabGroup Resize Preview in Docking in WPF Data Grid
+description: Learn How to disable TabGroup Resize Preview in Docking in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# How to disable TabGroup Resize Preview in WPF Docking
+# How to disable TabGroup Resize Preview in Docking in WPF Data Grid
 
 TabGroup preview can be enabled or disabled by using the IsTabPreviewEnabled property. The default value of the TabGroup preview is true. The usage of this property is shown below.
 

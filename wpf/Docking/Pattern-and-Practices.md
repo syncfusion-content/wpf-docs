@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Patterns and Practices in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Patterns and Practices support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: MVVM in WPF Tooltip | Syncfusion
+description: Learn MVVM in WPF Tooltip using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Patterns and Practices in WPF DockingManager Control
+# MVVM in WPF Tooltip
 
 ## MVVM 
 

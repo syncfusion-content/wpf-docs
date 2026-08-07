@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to detect closing of a DockingManager child in WPF | Syncfusion®
-description: Learn here how to detect the closing of a dockingmanagerchild in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+title: How to detect closing of a DockingManager child in in WPF Button
+description: Learn How to detect closing of a DockingManager child in in WPF Button using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# How to detect closing of a DockingManager child in WPF
+# How to detect closing of a DockingManager child in in WPF Button
 
 DockStateChanged and CloseButtonClick are the two events, which can be used to detect whether the child is closed. DockStateChanged event is raised whenever a child changes its State. CloseButtonClick event is raised only when close button of the Document child is clicked. The following code describes how to handle the closing of a child using DockStateChanged event.
 

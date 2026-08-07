@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Other Features in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Other features support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Using Adorner Drag Provider and Adorner FloatWindow in WPF TreeView
+description: Learn Using Adorner Drag Provider and Adorner FloatWindow in WPF TreeView using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Other Features in WPF DockingManager Control
+# Using Adorner Drag Provider and Adorner FloatWindow in WPF TreeView
 
 ## Using Adorner Drag Provider and Adorner FloatWindow
 

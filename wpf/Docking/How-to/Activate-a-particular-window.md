@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to activate a particular window in WPF Docking | Syncfusion®
-description: Learn here how to activate a particular window in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+title: How to activate a particular window in Docking in WPF  | Syncfusion
+description: Learn How to activate a particular window in Docking in WPF  using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# How to activate a particular window in WPF Docking
+# How to activate a particular window in Docking in WPF 
 
 A Particular child window can be activated using its name or using its reference as follows:
 

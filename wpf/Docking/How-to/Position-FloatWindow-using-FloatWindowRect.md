@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to position FloatWindow in WPF DockingManager | Syncfusion®
-description: Learn here how to position floatwindow using floatwindowrect in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+title: How to position FloatWindow in DockingManager in WPF Data Grid
+description: Learn How to position FloatWindow in DockingManager in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# How to position FloatWindow in WPF DockingManager
+# How to position FloatWindow in DockingManager in WPF Data Grid
 
 FloatWindowRect is used to specify the Rect bounds for the float child that is displayed in FloatWindow.
 

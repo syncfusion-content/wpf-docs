@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DragProvider in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Interaction with DragProvider support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Dock a window to desired direction in WPF  | Syncfusion
+description: Learn Dock a window to desired direction in WPF  using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# DragProvider in WPF DockingManager Control
+# Dock a window to desired direction in WPF 
 
 State of the dock children can be changed through the dock hints. This section explains how the dock item can be docked / documented with the help of Dock hints and how the dock hints can be disabled/ enabled at run time.
 

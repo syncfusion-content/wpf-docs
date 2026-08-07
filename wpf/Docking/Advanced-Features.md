@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Advanced Features in WPF DockingManager Control | Syncfusion®
-description: Learn here all about advanced features support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Setting Visual Styles for Document Container in WPF TreeView
+description: Learn Setting Visual Styles for Document Container in WPF TreeView using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Advanced Features in WPF DockingManager Control
+# Setting Visual Styles for Document Container in WPF TreeView
 
 ## Setting Visual Styles for Document Container
 

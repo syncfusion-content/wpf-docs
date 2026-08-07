@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dealing with Windows in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Dealing with Windows support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Activating a window in WPF Button | Syncfusion
+description: Learn Activating a window in WPF Button using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Dealing with Windows in WPF DockingManager Control
+# Activating a window in WPF Button
 
 ## Activating a window
 

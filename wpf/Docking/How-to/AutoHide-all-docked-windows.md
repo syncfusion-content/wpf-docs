@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to AutoHide all docked windows in WPF Docking | Syncfusion®
-description: Learn here how to autohide all docked windows in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+title: How to AutoHide all docked windows in Docking in WPF Data Grid
+description: Learn How to AutoHide all docked windows in Docking in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# How to AutoHide all docked windows in WPF Docking
+# How to AutoHide all docked windows in Docking in WPF Data Grid
 
 You can AutoHide all Docked windows by using the AutoHideAllDockWindow() method. This can be shown below.
 

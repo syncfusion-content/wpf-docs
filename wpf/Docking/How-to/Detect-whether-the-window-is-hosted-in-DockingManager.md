@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to detect hosted window in WPF Docking | Syncfusion®
-description: Learn here how to detect whether the window is hosted in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+title: How to detect hosted window in Docking in WPF  | Syncfusion
+description: Learn How to detect hosted window in Docking in WPF  using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# How to detect hosted window in WPF Docking
+# How to detect hosted window in Docking in WPF 
 
 There two ways to detect whether a FrameworkElement is hosted in DockingManager or not. They are:  
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: State Persistence in WPF DockingManager Control | Syncfusion®
-description: Learn here all about State Persistence support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Auto Save / Load functionalities in WPF Button | Syncfusion
+description: Learn Auto Save / Load functionalities in WPF Button using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# State Persistence in WPF DockingManager Control
+# Auto Save / Load functionalities in WPF Button
 
 State persistence is the combined process of serialization and deserialization. 
 

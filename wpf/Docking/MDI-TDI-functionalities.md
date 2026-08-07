@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MDI/TDI functionalities in WPF DockingManager Control | Syncfusion®
-description: Learn here all about MDI/TDI functionalities support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Setting MDI Window state in WPF Button | Syncfusion
+description: Learn Setting MDI Window state in WPF Button using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# MDI/TDI functionalities in WPF DockingManager Control
+# Setting MDI Window state in WPF Button
 
 The MDI and TDI functionalities are applicable for the Document window in the DockingManager. So Document window can be displayed in both Multiple Document Interface and Tabbed Document Interface.
 

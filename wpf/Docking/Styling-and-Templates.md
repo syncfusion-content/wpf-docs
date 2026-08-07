@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styling and Templates in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Styling and Templates support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Theme in WPF Button | Syncfusion
+description: Learn Theme in WPF Button using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
 
-# Styling and Templates in WPF DockingManager Control
+# Theme in WPF Button
 
 The UI for Dock, Float and Document windows of DockingManager can be changed using different Styles and Templates.
 

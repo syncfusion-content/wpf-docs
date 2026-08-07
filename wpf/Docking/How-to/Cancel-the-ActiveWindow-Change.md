@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to cancel ActiveWindow change in WPF Docking | Syncfusion®
-description: Learn here how to cancel the activewindow change in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+title: How to cancel ActiveWindow change in Docking in WPF Data Grid
+description: Learn How to cancel ActiveWindow change in Docking in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# How to cancel ActiveWindow change in WPF Docking
+# How to cancel ActiveWindow change in Docking in WPF Data Grid
 
 ActiveWindowChanging event is used to cancel the ActiveWindow change. This event will be triggered before the new window is set as active window, the usage is shown below.
 

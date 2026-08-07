@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to hide TDI header on a child in WPF Docking | Syncfusion®
-description: Learn here how to hide the tdi header on a child in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+title: How to hide TDI header on a child in Docking in WPF Data Grid
+description: Learn How to hide TDI header on a child in Docking in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# How to hide TDI header on a child in WPF Docking
+# How to hide TDI header on a child in Docking in WPF Data Grid
 
 This property is used to hide the header of a TDI document when the DocumentTabControl has a TDI child.
 

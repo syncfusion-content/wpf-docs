@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Basic Features in WPF DockingManager Control | Syncfusion®
-description: Learn here all about basic features support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Dealing with States in WPF Data Grid | Syncfusion
+description: Learn Dealing with States in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Basic Features in WPF DockingManager Control
+# Dealing with States in WPF Data Grid
 
 ## Dealing with States
 

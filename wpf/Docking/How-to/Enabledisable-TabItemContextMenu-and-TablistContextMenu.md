@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to enable TabItemContextMenu in WPF Docking | Syncfusion®
-description: Learn here how to enable/disable tabitemcontextmenu and tablistcontextmenu in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+title: How to enable TabItemContextMenu in Docking in WPF Button | Syncfusion
+description: Learn How to enable TabItemContextMenu in Docking in WPF Button using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# How to enable TabItemContextMenu in WPF Docking
+# How to enable TabItemContextMenu in Docking in WPF Button
 
 ShowTabItemContextMenu is the property that is used to disable the showing of Context Menu when right-clicked on the document tab. Similarly, ShowTabListContextMenu is used to disable the showing of Context Menu list when clicked on the TabControl menu toggle button. The usages are given below:
 

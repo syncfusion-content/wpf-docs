@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Interactive features support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Retrieving an Active Window from DockingManager in WPF Button
+description: Learn Retrieving an Active Window from DockingManager in WPF Button using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Interactive Features in WPF DockingManager Control
+# Retrieving an Active Window from DockingManager in WPF Button
 
 A basic requirement in creating any WPF application that uses our DockingManager control, is the ability to set a window as an active window. DockingManager's [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) property can be used for this. [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) is an element, which returns a window object that is currently focused. To set a window as active, use the following code.
 
