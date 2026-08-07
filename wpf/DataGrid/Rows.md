@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows in WPF DataGrid control | Syncfusion®
-description: Learn here all about Rows support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Rows in WPF SfDataGrid | Syncfusion®
+description: Learn about Rows in Syncfusion® WPF SfDataGrid control. Customize row appearance, behavior, selection, and interactions to manage data effectively.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Rows in WPF DataGrid (SfDataGrid)
+# Rows in WPF SfDataGrid
 
 This section explains about various row types in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid).
 
