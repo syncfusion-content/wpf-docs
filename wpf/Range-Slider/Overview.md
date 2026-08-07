@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WPF Range Slider control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF Range Slider (SfRangeSlider) control, its elements and more.
+title: About Syncfusion® WPF SfRangeSlider Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF SfRangeSlider control and more details.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug

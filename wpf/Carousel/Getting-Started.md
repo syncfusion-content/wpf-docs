@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Carousel control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Essential Studio® WPF Carousel control, its elements and more.
+title: Getting Started with WPF Carousel | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Carousel control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: Carousel
 documentation: ug

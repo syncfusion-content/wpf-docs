@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WPF Menu control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
+title: About Syncfusion® WPF MenuAdv Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF MenuAdv control and more details.
 platform: wpf
 control: MenuAdv
 documentation: ug
