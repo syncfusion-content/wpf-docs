@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Range Slider control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Range Slider (SfRangeSlider) control, its elements and more.
+title: Getting Started with WPF RangeSlider | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF RangeSlider control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Getting Started with WPF Range Slider (SfRangeSlider)
+# Getting Started with WPF SfRangeSlider
 
 This section describes how to design a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control in a WPF application and overview of its basic functionalities.
 

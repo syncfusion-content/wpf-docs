@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About WPF MaskedTextBox control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF MaskedTextBox (SfMaskedEdit) control, its elements and more details.
-platform: WPF
+title: About Syncfusion® WPF MaskedTextBox (SfMaskedEdit) Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF MaskedTextBox (SfMaskedEdit) control and more details.
+platform: wpf
 control: SfMaskedEdit
 documentation: ug
 ---
