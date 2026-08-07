@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing Labels in WPF Data Grid | Syncfusion®
-description: Learn Customizing Labels in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
+title: Customizing Labels in WPF Bullet Graph | Syncfusion®
+description: Learn Customizing Labels in WPF Bullet Graph using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Customizing Labels in WPF Data Grid
+# Customizing Labels in WPF Bullet Graph
 
 A quantitative scale label specifies the numeric value according to the major ticks in the range of the scale.
 
