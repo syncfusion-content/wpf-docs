@@ -18,7 +18,7 @@ Before you begin, confirm the following:
 
 - **Supported target frameworks:** .NET Framework 4.5, 4.5.1, 4.6, and 4.6.1, as well as .NET 6.0, 7.0, and 8.0.
 - **Visual Studio:** 2019 or later with the **.NET desktop development** workload installed.
-- **Syncfusion<sup>&reg;</sup> NuGet package version:** Essential Studio 22.1 or later. Install the latest hotfix release for the most recent fixes.
+- **Syncfusion<sup>&reg;</sup> NuGet package version:** Essential Studio 22.1 or later. Install the latest NuGet package release for the most recent fixes.
 - **Syncfusion<sup>&reg;</sup> license:** A valid Syncfusion<sup>&reg;</sup> license, or a free trial. See the [Syncfusion<sup>&reg;</sup> licensing](https://www.syncfusion.com/sales/communitylicense) page for details.
 
 ## Create a New WPF Project
