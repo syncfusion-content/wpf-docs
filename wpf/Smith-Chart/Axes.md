@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axes in WPF Smith Chart control | Syncfusion
-description: Learn here all about Axes support in Syncfusion WPF Smith Chart (SfSmithChart) control, its elements and more.
+title: Axes in WPF Smith Chart | Syncfusion®
+description: Axes in the WPF Smith Chart define coordinate grids, scales, and labels to represent impedance and admittance data effectively.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Axes in WPF Smith Chart (SfSmithChart)
+# Axes in WPF Smith Chart
 
 Typically, the Smith chart uses two axes that are used to measure and categorize the data. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scale | SfLinearGauge | WPF | Syncfusion
-description: Learn how to add a scale to the Syncfusion linear gauge and customize the appearance of the scale in the WPF platform.
+title: Scale in WPF Linear Gauge | Syncfusion®
+description: Scale in the WPF Linear Gauge defines value ranges, intervals, and labels, enabling accurate measurement and data representation.
 platform: wpf
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Scale in SfLinearGauge
+# Scale in WPF Linear Gauge
 
 The [`MainScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_MainScale) is a linear scale that integrates ticks, labels, ranges, and pointers to customize the basic look and feel of the linear gauge.
 

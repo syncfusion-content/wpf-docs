@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Funnel and Pyramid Chart in WPF Charts control | Syncfusion
-description: Learn here all about Funnel and Pyramid Chart support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
+title: Funnel and Pyramid Chart in WPF Charts | Syncfusion®
+description: Funnel and pyramid series in the WPF Chart visualize proportional data across stages, enabling effective comparison and analysis.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Funnel and Pyramid in WPF Charts (SfChart)
+# Funnel and Pyramid in WPF Charts
 
 ## Pyramid Chart
 

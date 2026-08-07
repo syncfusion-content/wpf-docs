@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Markers in WPF Charts control | Syncfusion
-description: Learn here all about Data Markers support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Data Markers in WPF Charts | Syncfusion®
+description: Data markers in the WPF Chart display customizable indicators for data points, improving chart readability and data interpretation.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Data Markers in WPF Charts (SfChart)
+# Data Markers in WPF Charts
 
 Chart adornments (Data Markers) are used to display values related to a chart segment element. Values from a data point (X, Y) or other custom properties from a data source can be displayed.
 

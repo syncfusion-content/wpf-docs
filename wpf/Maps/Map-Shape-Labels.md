@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Shape Labels in WPF Maps control | Syncfusion
-description: Learn here all about Map Shape Labels support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Map Shape Labels in WPF Maps | Syncfusion®
+description: Map shape labels in the WPF Maps display text for geographic regions, helping users identify and interpret location-based data clearly.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Map Shape Labels in WPF Maps (SfMap)
+# Map Shape Labels in WPF Maps
 
 Labels for map shapes can be displayed by using the [`LabelPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_LabelPath) of the ShapeFileLayer. The value of LabelPath must be a field name specified in the .dbf file corresponding to the shapefile. 
 
