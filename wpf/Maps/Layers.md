@@ -7,7 +7,7 @@ control: SfMap
 documentation: ug
 ---
 
-# Layers in WPF Maps control
+# Layer Types in WPF Maps
 
 The [WPF Maps](https://www.syncfusion.com/wpf-controls/map) control is maintained through [`Layers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html), a map can accommodate one or more layers.
 

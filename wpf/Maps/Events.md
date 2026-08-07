@@ -7,7 +7,7 @@ control: SfMap
 documentation: ug
 ---
 
-# Events in WPF Maps control
+# Interaction Events in WPF Maps
 
 • [`ZoomedIn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs whenever zooming in the map.  
 • [`ZoomedOut`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs when zooming out the map.

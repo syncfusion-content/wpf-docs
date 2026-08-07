@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Area in WPF Charts control
+# Chart Area in WPF Chart
 
 Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Axis in WPF Charts control
+# Chart Axis in WPF Chart
 
 [`ChartAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis and a horizontal (X) axis.
 
