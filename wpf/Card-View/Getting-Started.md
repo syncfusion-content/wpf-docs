@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF Card View control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential Studio WPF Card View control, its elements and more.
-platform: WPF
+platform: wpf
 control: CardView
 documentation: ug
 ---
@@ -25,7 +25,7 @@ Install-Package Syncfusion.Tools.WPF
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#cardview) section to get the list of assemblies that are added by the NuGet package.
 
-Refer to the [NuGet Packages Documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing NuGet packages in a WPF application.
+Refer to the [NuGet Packages Documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing NuGet packages in a WPF application.
 
 ## Adding WPF CardView control via designer
 
