@@ -74,7 +74,7 @@ The following screenshot describes the elements of the DataPager control.
 * LastPageButton: Moves the current page index to the last page and displays the last page data.
 * NextPageButton: Moves the current page index to the next page and displays the next page data.
 * NumericButtons: Denotes the available pages. You can directly navigate to the page by clicking the corresponding button.
-* EllipsisButton: Displayed when `AutoEllipsis` mode is set. This button displays the next set of numeric page buttons.
+* EllipsisButton: Displayed when [AutoEllipsis](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_AutoEllipsisMode) mode is set. This button displays the next set of numeric page buttons.
 
 
 
@@ -82,7 +82,7 @@ The following screenshot describes the elements of the DataPager control.
 
 The following steps help you to use the SfDataPager in an application:
 
-### Option A: Add Control via Designer
+### Add Control via Designer
 
 1. Create a new WPF application in Visual Studio.
 
@@ -92,13 +92,14 @@ The following steps help you to use the SfDataPager in an application:
 
 3. When you drag SfDataPager to the window, the required assembly references are automatically added to your project.
 
-### Option B: Add Control Manually in XAML
+### Add Control Manually in XAML
 
 1. Create a new WPF application in Visual Studio.
 
 2. Add the following required assemblies to the project:
    - Syncfusion.SfGrid.WPF
    - Syncfusion.Data.WPF (if using SfDataPager with SfDataGrid)
+   - Syncfusion.Shared.WPF
 
 3. Add the SfDataPager namespace to your XAML page and declare the control.
 

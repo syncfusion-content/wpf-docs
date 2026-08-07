@@ -68,7 +68,7 @@ Syncfusion.Shared.WPF contains various editor controls (such as IntegerTextBox, 
 
 ## Creating simple application with SfSmartDataGrid
 
-In this walkthrough, you will create a WPF application that uses the Syncfusion® WPF DataGrid (`SfSmartDataGrid`) control. The steps below correspond to the key topics needed to add and bind a SfSmartDataGrid in a WPF project.
+In this walkthrough, you will create a WPF application that uses the Syncfusion® WPF `SfSmartDataGrid` control. The steps below correspond to the key topics needed to add and bind a SfSmartDataGrid in a WPF project.
 
 1. [Create a new WPF project](#create-a-new-wpf-project)
 2. [Install required Syncfusion® NuGet packages](#install-the-syncfusion-wpf-nuget-packages)

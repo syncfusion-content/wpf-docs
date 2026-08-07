@@ -125,7 +125,7 @@ for (int i = 0; i < 100; i++)
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-2. You can populate data by handling the `QueryCellInfo` event of gridControl. This will load the data on an on-demand basis, ensuring optimized performance.
+2. You can populate data by handling the `[QueryCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridControlBase.html#Syncfusion_Windows_Controls_Grid_GridControlBase_add_QueryCellInfo_Syncfusion_Windows_Controls_Grid_GridQueryCellInfoEventHandler_)` event of gridControl. This will load the data on an on-demand basis, ensuring optimized performance.
 
 {% capture codesnippet4 %}
 {% tabs %}

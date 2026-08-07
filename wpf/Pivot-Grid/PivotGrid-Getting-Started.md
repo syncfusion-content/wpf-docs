@@ -214,8 +214,6 @@ public class ProductSales {
 
 Above mentioned `GetSalesData` method is used to get the collection that needs to be populated in the pivot grid control. Now, bind the collection to the pivot grid control as its `ItemSource`. It can be done through XAML or code-behind.
 
-N> The `VisualStyle` property sets the built-in theme. `Metro` is used here for illustration; the control also supports other built-in themes. Refer to the [Theme](#theme) section below for details.
-
 To initialize the `ItemSource` through **XAML**, ObjectDataProvider is used. Refer to the following code.
 
 {% highlight XAML %}

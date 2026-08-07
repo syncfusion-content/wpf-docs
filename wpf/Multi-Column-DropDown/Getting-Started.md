@@ -86,6 +86,7 @@ To add the control manually in XAML, follow these steps:
 1. Add the below required assembly references to the project,
     * Syncfusion.Data.WPF
     * Syncfusion.SfGrid.WPF
+    * Syncfusion.Shared.WPF
 2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or `SfMultiColumnDropDownControl` namespace **Syncfusion.UI.Xaml.Grid** in the XAML page.
 3. Declare `SfMultiColumnDropDownControl` in the XAML page.
 
@@ -114,6 +115,7 @@ To add the control manually in C#, follow these steps:
 1. Add the below required assembly references to the project,
     * Syncfusion.Data.WPF
     * Syncfusion.SfGrid.WPF
+    * Syncfusion.Shared.WPF
 2. Import `SfMultiColumnDropDownControl` namespace **Syncfusion.UI.Xaml.Grid**.
 3. Name the root container in the XAML page so the control can be added from code-behind. Then create a `SfMultiColumnDropDownControl` instance and add it as a child of that container.
 
@@ -287,11 +289,9 @@ sfMultiColumn.ItemsSource = viewModel.Orders;
 
 ## Defining DisplayMember and ValueMember
 
-- **[DisplayMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_DisplayMember)**: Specifies the property name to display in the text editor when an item is selected. This is what the user sees in the closed dropdown.
+- **[DisplayMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_DisplayMember)**: Specifies the property name to display in the text editor when an item is selected. This value is displayed to the user when the dropdown is in collapsed state.
 
 - **[ValueMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ValueMember)**: Specifies the property name to use as the [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedValue). This is typically used in data binding scenarios to capture the actual selected value.
-
-**Example:** If `DisplayMember="OrderID"` and `ValueMember="OrderID"`, selecting an order shows its OrderID in the editor and returns that OrderID as the SelectedValue.
 
 For more details, refer to the [SfMultiColumnDropDown Data Binding guide](https://help.syncfusion.com/wpf/sfmulticolumndropdown/data-binding).
 
