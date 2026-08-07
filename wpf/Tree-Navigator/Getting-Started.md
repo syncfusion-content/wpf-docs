@@ -1,51 +1,57 @@
 ---
 layout: post
-title: Getting Started with WPF Tree Navigator control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Tree Navigator (SfTreeNavigator) control, its elements and more.
+title: Getting Started with WPF Tree Navigator | Syncfusion
+description: Learn how to get started with the Syncfusion WPF Tree Navigator (SfTreeNavigator) control and its basic features.
 platform: wpf
-control: SfTreeNavigator 
+control: SfTreeNavigator
 documentation: ug
 ---
 
 # Getting Started with WPF Tree Navigator (SfTreeNavigator)
 
-This section explains the steps required to add the Wpf [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control with its basic features.
+This section explains the steps required to add the WPF [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control with its basic features.
 
-Namespace : Syncfusion.Windows.Controls.Navigation 
+**Namespace:** `Syncfusion.Windows.Controls.Navigation`
 
-Assembly : Syncfusion.SfTreeNavigator.WPF (in Syncfusion.SfTreeNavigator.WPF.dll) 
+**Assembly:** `Syncfusion.SfTreeNavigator.WPF` (in `Syncfusion.SfTreeNavigator.WPF.dll`)
 
-## Adding WPF SfTreeNavigator via xaml
+## Prerequisites
 
-1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
-2. Add reference to [Syncfusion.SfTreeNavigator.Wpf](https://www.nuget.org/packages/Syncfusion.SfTreeNavigator.Wpf) NuGet. 
-3. Import the control namespace `Syncfusion.Windows.Controls.Navigation` in XAML or C# code.
-4. Initialize the [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control.
+- Visual Studio 2019 or later with the **.NET desktop development** workload installed
+- .NET 6 (or the .NET version targeted by your project)
+- Syncfusion WPF controls installed. Install the [Syncfusion.SfTreeNavigator.Wpf](https://www.nuget.org/packages/Syncfusion.SfTreeNavigator.Wpf) NuGet package, or install Essential Studio WPF.
+- A valid Syncfusion license. Register it at application startup with `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");`. Controls will not render correctly without a registered license.
 
-{%tabs%}
+## Adding WPF SfTreeNavigator via XAML
+
+1. Create a [WPF desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0).
+2. Add a reference to the [Syncfusion.SfTreeNavigator.Wpf](https://www.nuget.org/packages/Syncfusion.SfTreeNavigator.Wpf) NuGet package.
+3. Import the namespace `Syncfusion.Windows.Controls.Navigation` in XAML or C# code.
+4. Add an [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) instance to your view (for example, inside `MainWindow.xaml`).
+
+{% tabs %}
 
 {% highlight xaml %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
+    xmlns:navigation="clr-namespace:Syncfusion.Windows.Controls.Navigation;assembly=Syncfusion.SfTreeNavigator.WPF"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Title="Getting Started" Height="450" Width="800">
     <Grid>
-      <navigation:SfTreeNavigator Header="Enterprise Toolkit" >
-          <navigation:SfTreeNavigatorItem Header="WinRT (XAML)">
-          <navigation:SfTreeNavigatorItem Header="Chart"/>
-          <navigation:SfTreeNavigatorItem Header="Tools"/>
-          </navigation:SfTreeNavigatorItem>
-          <navigation:SfTreeNavigatorItem Header="Metro Studio"/>
-      </navigation:SfTreeNavigator>
+        <navigation:SfTreeNavigator Header="Enterprise Toolkit">
+            <navigation:SfTreeNavigatorItem Header="WinRT (XAML)">
+                <navigation:SfTreeNavigatorItem Header="Chart" />
+                <navigation:SfTreeNavigatorItem Header="Tools" />
+            </navigation:SfTreeNavigatorItem>
+            <navigation:SfTreeNavigatorItem Header="Metro Studio" />
+        </navigation:SfTreeNavigator>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 
@@ -53,15 +59,16 @@ Assembly : Syncfusion.SfTreeNavigator.WPF (in Syncfusion.SfTreeNavigator.WPF.dll
 
 ## Adding WPF SfTreeNavigator via C#
 
-1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
-2. Add reference to [Syncfusion.SfTreeNavigator.Wpf](https://www.nuget.org/packages/Syncfusion.SfTreeNavigator.Wpf) NuGet. 
-3. Import the control namespace `Syncfusion.Windows.Controls.Navigation` in XAML or C# code.
-4. Initialize the [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control.
+1. Create a [WPF desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0).
+2. Add a reference to the [Syncfusion.SfTreeNavigator.Wpf](https://www.nuget.org/packages/Syncfusion.SfTreeNavigator.Wpf) NuGet package.
+3. Import the namespace `Syncfusion.Windows.Controls.Navigation` in XAML or C# code.
+4. Add an [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) instance to your window's content.
 
 {% tabs %}
 
 {% highlight C# %}
 
+using System.Windows;
 using Syncfusion.Windows.Controls.Navigation;
 
 namespace GettingStarted
@@ -74,22 +81,26 @@ namespace GettingStarted
         public MainWindow()
         {
             this.InitializeComponent();
-            // Creating an instance of the SfTreeNavigator control
-            SfTreeNavigator sfToolkit = new SfTreeNavigator();
-            SfTreeNavigatorItem winrt = new SfTreeNavigatorItem() {Header = "WinRT (XAML)"};
-            SfTreeNavigatorItem metroStudio = new SfTreeNavigatorItem() {Header = "Metro Studio"};
-            SfTreeNavigatorItem winrt_chart = new SfTreeNavigatorItem() {Header = "Chart"};
-            SfTreeNavigatorItem winrt_tools = new SfTreeNavigatorItem() {Header = "Tools"};
 
-            winrt.Items.Add(winrt_chart);
-            winrt.Items.Add(winrt_tools);
+            // Creating an instance of the SfTreeNavigator control
+            SfTreeNavigator sfToolkit = new SfTreeNavigator() { Header = "Enterprise Toolkit" };
+
+            SfTreeNavigatorItem winrt = new SfTreeNavigatorItem() { Header = "WinRT (XAML)" };
+            SfTreeNavigatorItem metroStudio = new SfTreeNavigatorItem() { Header = "Metro Studio" };
+            SfTreeNavigatorItem winrtChart = new SfTreeNavigatorItem() { Header = "Chart" };
+            SfTreeNavigatorItem winrtTools = new SfTreeNavigatorItem() { Header = "Tools" };
+
+            winrt.Items.Add(winrtChart);
+            winrt.Items.Add(winrtTools);
 
             sfToolkit.Items.Add(winrt);
             sfToolkit.Items.Add(metroStudio);
+
+            this.Content = sfToolkit;
         }
     }
 }
-           
+
 {% endhighlight %}
 
 {% endtabs %}
