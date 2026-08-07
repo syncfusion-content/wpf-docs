@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® WPF Navigation Pane Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF Navigation Pane control and more details.
-platform: WPF
+platform: wpf
 control: Navigation Pane
 documentation: ug
 ---

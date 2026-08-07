@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® WPF SfGridSplitter Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF SfGridSplitter control and more details.
-platform: WPF
+platform: wpf
 control: SfGridSplitter
 documentation: ug
 ---

@@ -17,7 +17,7 @@ This section provides an overview of how to work with [WPF Button](https://www.s
 
 ## Assembly deployment
 
-Refer [ButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#buttonadv) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) needs to be added as reference to use the ButtonAdv control in any application.
+Refer [ButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#buttonadv) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/installation/install-nuget-packages) needs to be added as reference to use the ButtonAdv control in any application.
 
 ## Creating simple application with Button
 

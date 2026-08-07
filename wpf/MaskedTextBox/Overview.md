@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® WPF SfMaskedEdit Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF SfMaskedEdit control and more details.
-platform: WPF
+platform: wpf
 control: SfMaskedEdit
 documentation: ug
 ---
