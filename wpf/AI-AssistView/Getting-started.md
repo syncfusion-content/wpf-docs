@@ -9,13 +9,15 @@ documentation: ug
 
 # Getting Started with WPF AI AssistView
 
-This section explains the steps required to add the Wpf [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control with its basic features.
+This section explains the steps required to add the WPF [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control with its basic features.
 
 ## Structure of SfAIAssistView
 
+The following diagram illustrates the layout of the SfAIAssistView control, including the header, message list, and input area.
+
 ![WPF SfAIAssistView Structure](aiassistview_images/wpf_aiassistview_control_structure.png)
 
-## Adding WPF SfAIAssistview via xaml
+## Adding WPF SfAIAssistView via XAML
 
 1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
 2. Add reference to [Syncfusion.SfChat.Wpf](https://www.nuget.org/packages/Syncfusion.SfChat.Wpf) NuGet. 
@@ -25,20 +27,19 @@ This section explains the steps required to add the Wpf [SfAIAssistView](https:/
 {% tabs %}
 {% highlight xaml %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
+    xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
+    mc:Ignorable="d">
+    <Grid x:Name="grid">
       <syncfusion:SfAIAssistView />
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -76,9 +77,9 @@ namespace GettingStarted
 {% endtabs %}
 
 
-## Creating ViewModel for AI AssistView
+## Creating the ViewModel for the AI AssistView
 
-Create a simple chat collection as shown in the following code example in a new class file. Save it as ViewModel.cs file.
+Create a simple chat collection as shown in the following code example, and save it in a new class file named `ViewModel.cs`.
 
 {% tabs %}
 {% highlight C# %}
@@ -143,32 +144,31 @@ Create a simple chat collection as shown in the following code example in a new 
 {% endhighlight %}
 {% endtabs %}
 
-## Bind Messages
+## Binding Messages to the AI AssistView
 
-Set the ViewModel as the DataContext for the AI AssistView or the parent window. This allows data binding between the UI and the ViewModel properties.
-To populate AI AssistView, bind the chats in ViewModel to Messages property of AI AssistView.
+Set the ViewModel as the `DataContext` for the AI AssistView or the parent window. This allows data binding between the UI and the ViewModel properties.
+To populate the AI AssistView, bind the chats in the ViewModel to the `Messages` property of the AI AssistView.
 
 {% tabs %}
 {% highlight xaml %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
+    xmlns:local="clr-namespace:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
+    xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
+    mc:Ignorable="d">
+    <Grid x:Name="grid">
      <Grid.DataContext>
         <local:ViewModel/>
      </Grid.DataContext>
       <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"  
                                    Messages="{Binding Chats}"/>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %} 
 {% endtabs %}
