@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip in WPF DataGrid control | Syncfusion®
-description: Learn here all about ToolTip support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: ToolTip in WPF SfDataGrid | Syncfusion®
+description: Learn about ToolTip in Syncfusion® WPF SfDataGrid control. Display additional information for cells, rows, and headers using customizable tooltips.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# ToolTip in WPF DataGrid (SfDataGrid)
+# ToolTip in WPF SfDataGrid
 
 ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid). 
 
