@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® WPF ButtonAdv Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF ButtonAdv control and more details.
+title: About Syncfusion® WPF Button (ButtonAdv) Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Button (ButtonAdv) control and more details.
 platform: wpf
 control: ButtonAdv
 documentation: ug

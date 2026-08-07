@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF SfRadialMenu | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF SfRadialMenu control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF RadialMenu | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF RadialMenu control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
 ---
 
-# Getting Started with WPF SfRadialMenu
+# Getting Started with WPF Radial Menu (SfRadialMenu)
 
 Namespace : Syncfusion.Windows.Controls.Navigation 
 

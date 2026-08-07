@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF MenuAdv | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF MenuAdv control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Menu (MenuAdv) | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Menu (MenuAdv) control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# Getting Started with WPF MenuAdv
+# Getting Started with WPF Menu (MenuAdv)
 
 This section provides a quick overview for working with the Menu ([MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html)).
 

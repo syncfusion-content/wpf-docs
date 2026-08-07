@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® WPF SfRadialMenu Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF SfRadialMenu control and more details.
+title: About Syncfusion® WPF RadialMenu Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF RadialMenu control and more details.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug

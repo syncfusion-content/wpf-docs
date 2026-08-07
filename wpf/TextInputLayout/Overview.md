@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® WPF SfTextInputLayout Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF SfTextInputLayout control and more details.
+title: About Syncfusion® WPF TextInputLayout Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF TextInputLayout control and more details.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
