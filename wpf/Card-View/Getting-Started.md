@@ -62,7 +62,6 @@ To add the `CardView` control manually in XAML, follow these steps:
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         mc:Ignorable="d"
         Title="Card View" Height="450" Width="800">
-
     <Grid Name="grid">
         <syncfusion:CardView Name="cardView"/>
     </Grid>
@@ -109,7 +108,6 @@ namespace CardViewSample
             InitializeComponent();
             //Creating an instance of CardView control
             CardView cardView = new CardView();
-
             //Adding CardView as window content
             this.Content = cardView;
         }
@@ -230,11 +228,9 @@ public class ViewModel : NotificationObject
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    
     <Window.DataContext>
         <local:ViewModel/>
     </Window.DataContext>
-
     <syncfusion:CardView ItemsSource="{Binding CardViewItems}"
                       Name="cardView">
         <syncfusion:CardView.HeaderTemplate>
@@ -423,11 +419,9 @@ public class ViewModel : NotificationObject
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-
     <Window.DataContext>
         <local:ViewModel/>
     </Window.DataContext>
-
     <syncfusion:CardView CanGroup="True"
                      ItemsSource="{Binding CardViewItems}"
                      Name="cardView">
@@ -481,7 +475,6 @@ public class ViewModel : NotificationObject
     </syncfusion:CardView>
 </Window>
 
-
 {% endhighlight %}
 {% highlight C# %}
 
@@ -506,7 +499,6 @@ You can sort the cards inside the `CardView` control in the default, ascending, 
 <Window.DataContext>
     <local:ViewModel/>
 </Window.DataContext>
-
 <syncfusion:CardView CanSort="True"
                      ItemsSource="{Binding CardViewItems}"
                      Name="cardView"/>
@@ -537,7 +529,6 @@ N> To perform an edit operation on the selected `CardViewItem`, define the `Card
 <Window.DataContext>
     <local:ViewModel/>
 </Window.DataContext>
-
 <syncfusion:CardView CanEdit="True"
                      ItemsSource="{Binding CardViewItems}"
                      Name="cardView">
@@ -610,7 +601,6 @@ N> If there is not enough space to arrange the cards in the orientation set by t
 <Window.DataContext>
     <local:ViewModel/>
 </Window.DataContext>
-
 <syncfusion:CardView Orientation="Horizontal"
                      ItemsSource="{Binding CardViewItems}"
                      Name="cardView"/>
@@ -637,7 +627,6 @@ You will be notified when the selected card item changes in the [CardView](https
 <Window.DataContext>
     <local:ViewModel/>
 </Window.DataContext>
-
 <syncfusion:CardView SelectedItemChanged="CardView_SelectedItemChanged"
                      ItemsSource="{Binding CardViewItems}"
                      Name="cardView"/>
