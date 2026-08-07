@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion WPF Ribbon Control | Syncfusion®
-description: Learn about introduction/overview of Syncfusion Essential Studio WPF Ribbon control and more details.
+description: Learn about introduction and overview of Syncfusion Essential Studio WPF Ribbon control, its components, and more details.
 platform: wpf
 control: Ribbon
 documentation: ug

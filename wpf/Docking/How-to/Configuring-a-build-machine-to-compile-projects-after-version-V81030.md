@@ -2,7 +2,7 @@
 layout: post
 title: How to configure a build machine in WPF Docking | Syncfusion®
 description: Learn here how to configure a build machine for Syncfusion® WPF Docking (DockingManager) control projects, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

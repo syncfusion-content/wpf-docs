@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WPF Docking Control | Syncfusion®
 description: Learn about introduction/overview of Syncfusion Essential Studio WPF Docking (DockingManager) control and more details.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

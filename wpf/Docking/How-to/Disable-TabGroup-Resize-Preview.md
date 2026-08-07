@@ -2,7 +2,7 @@
 layout: post
 title: How to disable TabGroup Resize Preview in WPF Docking | Syncfusion®
 description: Learn here how to disable tabgroup resize preview in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

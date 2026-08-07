@@ -2,7 +2,7 @@
 layout: post
 title: How to cancel ActiveWindow change in WPF Docking | Syncfusion®
 description: Learn here how to cancel the activewindow change in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

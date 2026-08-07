@@ -16,4 +16,4 @@ Ribbon supports various built-in themes. Refer to the below links to apply theme
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Applying Theme to WPF Ribbon](GettingStarted_images/wpf-ribbon-theme.png)
+  ![Applying Theme to WPF Ribbon](getting-started_images/wpf-ribbon-theme.png)

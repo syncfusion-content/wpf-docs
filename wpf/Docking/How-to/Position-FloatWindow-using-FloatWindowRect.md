@@ -2,7 +2,7 @@
 layout: post
 title: How to position FloatWindow in WPF DockingManager | Syncfusion®
 description: Learn here how to position floatwindow using floatwindowrect in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

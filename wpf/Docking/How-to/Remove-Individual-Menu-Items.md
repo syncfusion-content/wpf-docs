@@ -2,7 +2,7 @@
 layout: post
 title: How to remove Menu Items in WPF Docking | Syncfusion®
 description: Learn here how to remove individual menu items in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
