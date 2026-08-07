@@ -7,13 +7,13 @@ control: SfSmartDataGrid
 documentation: ug
 ---
 
-# Getting Started with WPF SfSmartDataGrid (SfSmartDataGrid)
+# Getting Started with WPF SfSmartDataGrid
 
-This section provides a quick overview for working with the [WPF SfSmartDataGrid](https://www.syncfusion.com/wpf-controls/smart-datagrid) (SfSmartDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for working with the [WPF SfSmartDataGrid](https://www.syncfusion.com/wpf-controls/smart-datagrid) control. Walk through the entire process of creating a real-world application using this control.
 
 ## Assembly deployment
 
-The following list of assemblies needs to be added as reference to use SfSmartDataGrid control in any application,
+The following list of assemblies needs to be added as reference to use the SfSmartDataGrid control in any application,
 
 <table>
 <tr>
@@ -67,7 +67,8 @@ Syncfusion.Shared.WPF contains various editor controls (such as IntegerTextBox, 
 </table>
 
 ## Creating simple application with SfSmartDataGrid
-In this walk-through you will create a WPF application that uses the Syncfusion® WPF DataGrid (`SfSmartDataGrid`) control. The steps below correspond to the seven key topics needed to add and bind a SfSmartDataGrid in a WPF project.
+
+In this walkthrough, you will create a WPF application that uses the Syncfusion® WPF `SfSmartDataGrid` control. The steps below correspond to the key topics needed to add and bind a SfSmartDataGrid in a WPF project.
 
 1. [Create a new WPF project](#create-a-new-wpf-project)
 2. [Install required Syncfusion® NuGet packages](#install-the-syncfusion-wpf-nuget-packages)
@@ -87,8 +88,8 @@ Create new WPF Project in Visual Studio to display SfSmartDataGrid with data obj
 ### Install the Syncfusion® WPF NuGet packages
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for Syncfusion.SfSmartComponents.Wpf and install the latest version.
-3. Ensure the necessary dependencies are installed correctly, and the project is restored.
+2. Search for `Syncfusion.SfSmartComponents.Wpf` and install the latest version.
+3. The `Syncfusion.SfSmartComponents.Wpf` package automatically pulls in the dependent assemblies listed in the [assembly deployment](#assembly-deployment) section (`Syncfusion.Data.WPF`, `Syncfusion.SfGrid.WPF`, `Syncfusion.Shared.WPF`, and `Syncfusion.SfChat.WPF`) as transitive references. Ensure the project is restored successfully.
 
 ### Adding control via Designer
 
@@ -97,9 +98,9 @@ SfSmartDataGrid control can be added to the application by dragging it from Tool
 
 ### Adding control manually in XAML
 
-In order to add control manually in XAML, do the below steps,
+To add the control manually in XAML, follow these steps:
 
-1. Add the below required assembly references to the project,
+1. Add the following required assembly references to the project:
 	* Syncfusion.Data.WPF 
 	* Syncfusion.SfGrid.WPF
 	* Syncfusion.Shared.WPF
@@ -125,9 +126,9 @@ In order to add control manually in XAML, do the below steps,
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-### Adding control manually in C\#
+### Adding control manually in C#
 
-In order to add control manually in C#, do the below steps,
+To add the control manually in C#, follow these steps:
 
 1. Add the below required assembly references to the project,
 	* Syncfusion.Data.WPF 
@@ -135,11 +136,19 @@ In order to add control manually in C#, do the below steps,
 	* Syncfusion.Shared.WPF
     * Syncfusion.SfChat.WPF
     * Syncfusion.SfSmartComponents.WPF
-2. Import SfSmartDataGrid namespace **Syncfusion.UI.Xaml.SmartComponents** .
-3. Create SfSmartDataGrid control instance and add it to the Page.
+2. Import SfSmartDataGrid namespace **Syncfusion.UI.Xaml.SmartComponents**.
+3. Name the root container in the XAML page so the control can be added from code-behind. Then create a `SfSmartDataGrid` instance and add it as a child of that container.
 
 {% capture codesnippet2 %}
 {% tabs %}
+{% highlight xaml %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid x:Name="Root_Grid"/>
+</Window>
+{% endhighlight %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.SmartComponents;
 namespace WpfApplication1
@@ -159,9 +168,9 @@ namespace WpfApplication1
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-### Creating Data Model for sample application
+### Creating Data Model for Sample Application
 
-SfSmartDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
+SfSmartDataGrid is a data-bound control. Before binding data to the control, you must create a data model for your application.
 
 1. Create data object class named **OrderInfo** and declare properties as shown below,
 
@@ -276,11 +285,16 @@ public partial class OrderInfo : INotifyPropertyChanged
 
 N> If you want your data object (OrderInfo class) to automatically reflect property changes, then the object must implement **INotifyPropertyChanged** interface.
  
-2. Create a **ViewModel** class with Orders property and Orders property is initialized with several data objects in constructor.
+2. Create a **ViewModel** class with `OrderInfoCollection` property and initialize the collection with several data objects in the constructor. The `Author` type referenced by the `CurrentUser` property represents the active user for the AssistView layout and can be defined as a simple class with a `Name` property.
 
 {% capture codesnippet4 %}
 {% tabs %} 
 {% highlight c# %}
+public class Author
+{
+    public string Name { get; set; }
+}
+
 public class ViewModel : INotifyPropertyChanged
 { 
     public ObservableCollection<OrderInfo> OrderInfoCollection { get; set; }
@@ -453,7 +467,7 @@ N>Bind the **CurrentUser** property to differentiate outgoing requests (from the
 {% endhighlight %}
 {% highlight c# %}
 ViewModel viewModel = new ViewModel();
-dataGrid.ItemsSource = viewModel.Orders;
+SmartGrid.ItemsSource = viewModel.OrderInfoCollection;
 {% endhighlight %}
 {% endtabs %}
 

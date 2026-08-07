@@ -59,7 +59,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 
     ![WPF Grid Control Assembly References](Getting-Started_images/Getting-Started_img9.png)
 
-3. Name the root Grid as layoutRoot in the application’s XAML page.
+3. Name the root Grid as `layoutRoot` in the application's XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -69,29 +69,31 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
         x:Class="WpfApplication1.MainWindow"
         Title="MainWindow" Height="350" Width="525">
-   <Grid Name="layoutRoot" />  
+   <Grid Name="layoutRoot" />  
 </Window>
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
-      
-4. Create ScrollViewer and GridControl in code. 
+      	
+4. Include the `Syncfusion.Windows.Controls.Grid` namespace in the code-behind file, then create the ScrollViewer and the GridControl in code.
 
-5. To add the grid to the view, add GridControl as content of ScrollViewer and then add the ScrollViewer as a child of layoutRoot (Grid).
+5. To add the grid to the view, add the GridControl as the content of the ScrollViewer and then add the ScrollViewer as a child of `layoutRoot` (Grid).
 
 {% capture codesnippet2 %}
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
+using Syncfusion.Windows.Controls.Grid;
+
 //ScrollViewer defined here
-ScrollViewer ScrollViewer = new ScrollViewer();
-//GridControl defined here
-GridControl gridControl = new GridControl();
+ScrollViewer ScrollViewer = new ScrollViewer();
+//GridControl defined here
+GridControl gridControl = new GridControl();
 //GridControl set as the content of the ScrollViewer
-ScrollViewer.Content = gridControl;     
-//To bring the Grid control to the view, ScrollViewer should be set as a child of LayoutRoot      
-this.layoutRoot.Children.Add(ScrollViewer);           
-{%endhighlight%}
+ScrollViewer.Content = gridControl;     
+//To bring the Grid control to the view, ScrollViewer should be set as a child of LayoutRoot      
+this.layoutRoot.Children.Add(ScrollViewer);           
+{% endhighlight %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
@@ -104,7 +106,7 @@ The Grid control is a cell-based control, so to populate it, RowCount and Column
 
 {% capture codesnippet3 %}
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 //Specifying row and column count
 gridControl.Model.RowCount = 100;
 gridControl.Model.ColumnCount = 20;
@@ -117,17 +119,17 @@ for (int i = 0; i < 100; i++)
         gridControl.Model[i, j].CellValue = string.Format("{0}/{1}", i, j);
     }
 }
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-2. You can populate data by handling the QueryCellInfo event of gridControl. This will load the data in and on-demand basis, ensuring optimized performance.
+2. You can populate data by handling the `[QueryCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridControlBase.html#Syncfusion_Windows_Controls_Grid_GridControlBase_add_QueryCellInfo_Syncfusion_Windows_Controls_Grid_GridQueryCellInfoEventHandler_)` event of gridControl. This will load the data on an on-demand basis, ensuring optimized performance.
 
 {% capture codesnippet4 %}
 {% tabs %}
-{%highlight c#%}
+{% highlight c# %}
 //Specifying row and column count
 gridControl.Model.RowCount = 100;
 gridControl.Model.ColumnCount = 20;
@@ -139,12 +141,12 @@ void gridControl_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Gri
     e.Style.CellValue=string.Format("{0}/{1}", e.Cell.RowIndex, e.Cell.ColumnIndex);
     
 }   
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3.Now, run the application. The grid will appear as follows. 
+3. Now, run the application. The grid will appear as follows. 
 
 ![WPF Grid Control](Getting-Started_images/Getting-Started_img10.png)
 

@@ -9,37 +9,55 @@ documentation: ug
 
 # Getting Started with WPF DataPager (SfDataPager)
 
-This section describes about the assembly that is required for SfDataPagerControl in your WPF application.The following assemblies are required in your application.
-
-
+This section describes the assemblies that are required for the `SfDataPager` control in your WPF application. The following assemblies are required in your application.
 
 <table>
 <tr>
 <th>
-Demanded Assemblies</th><th>
-Description</th></tr>
+Required Assemblies
+</th>
+<th>
+Description
+</th>
+</tr>
 <tr>
 <td>
-Syncfusion.SfGrid.WPF</td><td>
-Covers the SfDataPager and other elements.</td></tr>
+Syncfusion.SfGrid.WPF
+</td>
+<td>
+Contains the SfDataPager control and related UI components.
+</td>
+</tr>
 </table>
 
 
-When you use SfDataPager in the SfDataGrid, You need to add the following assembles with the default assembles.
+When you use SfDataPager with SfDataGrid, you need to add the following assemblies along with the default assemblies.
 
 <table>
 <tr>
 <th>
-Demanded Assemblies</th><th>
-Description</th></tr>
+Required Assemblies
+</th>
+<th>
+Description
+</th>
+</tr>
 <tr>
 <td>
-Syncfusion.Data.WPF</td><td>
-Covers basic processing on data like sorting, grouping, and filtering.</td></tr>
+Syncfusion.Data.WPF
+</td>
+<td>
+Contains base classes for data operations (sorting, grouping, filtering).
+</td>
+</tr>
 <tr>
 <td>
-Syncfusion.Shared.WPF</td><td>
-Covers an editors like CurrencyTextBox, PercentEdit, DateTimeEdit.</td></tr>
+Syncfusion.Shared.WPF
+</td>
+<td>
+Contains editor controls used in data cells (CurrencyTextBox, PercentEdit, DateTimeEdit).
+</td>
+</tr>
 </table>
 
 
@@ -56,7 +74,7 @@ The following screenshot describes the elements of the DataPager control.
 * LastPageButton: Moves the current page index to the last page and displays the last page data.
 * NextPageButton: Moves the current page index to the next page and displays the next page data.
 * NumericButtons: Denotes the available pages. You can directly navigate to the page by clicking the corresponding button.
-* EllipsisButton: Displayed when AutoEllipsis mode is set. This button displays the next set of numeric page buttons are displayed.
+* EllipsisButton: Displayed when [AutoEllipsis](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_AutoEllipsisMode) mode is set. This button displays the next set of numeric page buttons.
 
 
 
@@ -64,22 +82,26 @@ The following screenshot describes the elements of the DataPager control.
 
 The following steps help you to use the SfDataPager in an application:
 
-1. Create a new WPF application
-2. Open a VisualStudio toolbox. Navigate to SyncfusionControls and drag the SfDataPager to the design window.
+### Add Control via Designer
 
+1. Create a new WPF application in Visual Studio.
 
+2. Open the Visual Studio toolbox and locate **SyncfusionControls**. Drag **SfDataPager** to the design window.
 
    ![Displaying the WPF SfDataPager control in designer](getting-started_images/wpf-datapager-designer.png)
 
+3. When you drag SfDataPager to the window, the required assembly references are automatically added to your project.
 
+### Add Control Manually in XAML
 
-3. When you drag the SfDataPager to the window, it automatically adds the required references to the current application.To add the SfDataPager using code, you can add the following assemblies to the project.
-   
-        *Syncfusion.Data.WPF
-   
-        *Syncfusion.SfGrid.WPF
+1. Create a new WPF application in Visual Studio.
 
-4. You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
+2. Add the following required assemblies to the project:
+   - Syncfusion.SfGrid.WPF
+   - Syncfusion.Data.WPF (if using SfDataPager with SfDataGrid)
+   - Syncfusion.Shared.WPF
+
+3. Add the SfDataPager namespace to your XAML page and declare the control.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -102,7 +124,7 @@ The following steps help you to use the SfDataPager in an application:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-5. Create Business object class named as OrderInfo
+4. Create a business object class named `OrderInfo`.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -159,7 +181,7 @@ public class OrderInfo
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-6. Add the following code in ViewModel class
+5. Add the following code in the `ViewModel` class.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -199,7 +221,7 @@ public class ViewModel
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-7. Set the ViewModel instance as DataContext to window. Now, you can bind the data collection to the SfDataPagerSource property.
+6. Set the ViewModel instance as the DataContext of the window. Now, you can bind the data collection to the [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_Source) property of `SfDataPager`.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -220,13 +242,13 @@ public class ViewModel
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-8. Then bind the PagedSource property of the SfDataPager control into the SfDataGridItemsSource property.
+7. Then bind the [PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) property of the `SfDataPager` control to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property of `SfDataGrid`. The `sfGrid` namespace below points to the `Syncfusion.UI.Xaml.Grid` namespace in the `Syncfusion.SfGrid.WPF` assembly.
 
 {% capture codesnippet5 %}
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
-    <local:Viewmodel/>
+    <local:ViewModel/>
 </Window.DataContext>
 <Grid>
     <Grid.RowDefinitions>
@@ -246,7 +268,7 @@ public class ViewModel
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-The following screenshot displays the output for Implementation of the SfDataPager in the SfDataGrid Control.
+The following screenshot displays the output for the implementation of the SfDataPager in the SfDataGrid control.
 
 
 ![Displaying the WPF SfDataPager in the SfDataGrid Control ](getting-started_images/wpf-datapager-displayed-in-datagrid-control.png)
