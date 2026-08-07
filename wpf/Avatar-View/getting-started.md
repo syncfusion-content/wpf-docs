@@ -21,7 +21,7 @@ Follow these steps to integrate the SfAvatarView control into your WPF applicati
 
 ## Initialize AvatarView 
 
-By default, AvatarView control is displayed with the [Avatar1](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarCharacter.html#Syncfusion_Windows_Shared_AvatarCharacter_Avatar1) character image, AvatarShape of [Circle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarShape.html#Syncfusion_Windows_Shared_AvatarShape_Circle), and AvatarSize of [Small](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarSize.html#Syncfusion_Windows_Shared_AvatarSize_Small).
+By default, the AvatarView control is displayed with the [Avatar1](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarCharacter.html#Syncfusion_Windows_Shared_AvatarCharacter_Avatar1) character image, an [AvatarShape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarShape.html) of `Circle`, and an [AvatarSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarSize.html) of `Small`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -40,7 +40,7 @@ By default, AvatarView control is displayed with the [Avatar1](https://help.sync
     </Grid>
 </Window>
 
-{% endhighlight %} 
+{% endhighlight %}
 {% highlight C# %}
 
 // Creating an instance of the AvatarView control.
@@ -53,7 +53,7 @@ SfAvatarView avatarView = new SfAvatarView();
 
 ## Initialize AvatarView with ImageSource
 
-Add any custom image as an avatar in WPF AvatarView control using the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html#Syncfusion_Windows_Shared_SfAvatarView_ImageSource) property.
+Add any custom image as an avatar in the WPF AvatarView control using the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html#Syncfusion_Windows_Shared_SfAvatarView_ImageSource) property. To load a local image, set the project's `Build Action` to `Resource` (or reference the file from an accessible path) and use a WPF `pack://` URI as shown in the C# example.
 
 {% tabs %}
 {% highlight xaml %}
@@ -63,13 +63,14 @@ Add any custom image as an avatar in WPF AvatarView control using the [ImageSour
                          ImageSource="Images\person.png">
 </syncfusion:SfAvatarView>
 
-{% endhighlight %} 
+{% endhighlight %}
 {% highlight C# %}
 
 SfAvatarView avatarView = new SfAvatarView();
 avatarView.ContentType = AvatarContentType.CustomImage;
 avatarView.AvatarSize = AvatarSize.ExtraLarge;
-avatarView.ImageSource = new BitmapImage(new Uri("ms-appx:///Images\\person.png"));
+avatarView.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/person.png"));
+this.Content = avatarView;
            
 {% endhighlight %}
 {% endtabs %}
