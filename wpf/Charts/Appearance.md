@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF Charts control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Appearance in WPF Charts | Syncfusion®
+description: Appearance in the WPF Chart allows you to customize chart elements, colors, styles, and visual settings for enhanced presentation.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Appearance in WPF Charts (SfChart)
+# Appearance in WPF Charts
 
 SfChart supports various customizing and styling options that allows you to enrich the application.
 

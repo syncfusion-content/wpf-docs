@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Other Chart Types in WPF Charts control | Syncfusion
-description: Learn here all about Other Chart Types support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
+title: Other Chart Types in WPF Charts | Syncfusion®
+description: Other chart types in the WPF Chart provide specialized visualizations for representing unique data patterns and analytical scenarios.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Other Types in WPF Charts (SfChart)
+# Other Types in WPF Charts
 
 ## Box and Whisker Chart
 

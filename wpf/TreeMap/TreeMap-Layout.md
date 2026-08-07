@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMap Layout in WPF TreeMap control | Syncfusion
-description: Learn here all about TreeMap Layout support in Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
+title: TreeMap Layout in WPF TreeMap | Syncfusion®
+description: TreeMap layout in the WPF TreeMap determines how hierarchical data items are arranged, enabling effective space utilization and visualization.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# TreeMap Layout in WPF TreeMap (SfTreeMap)
+# TreeMap Layout in WPF TreeMap
 
 The [ItemsLayoutMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ItemsLayoutMode) for SfTreeMap specifies the layout mode of the tree map items. This layout is applied for all the tree map levels. There are four different TreeMap layouts, as follows:
 

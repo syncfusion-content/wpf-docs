@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Selection in WPF Sunburst Chart control | Syncfusion
-description: Learn here all about Selection support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
+title: Selection in WPF Sunburst Chart | Syncfusion®
+description: Selection in the WPF Sunburst Chart enables users to highlight and interact with data segments for focused analysis and exploration.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Selection in WPF Sunburst Chart (SfSunburstChart)
+# Selection in WPF Sunburst Chart
 
 The Sunburst Chart supports selection that enables you to select a segment by using the [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html).
 

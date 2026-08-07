@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multilayer Support in WPF Maps control | Syncfusion
-description: Learn here all about Multilayer Support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Multilayer Support in WPF Maps | Syncfusion®
+description: Multilayer support in the WPF Maps enables multiple map layers to be displayed together for enhanced geographic visualization and analysis.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Multilayer Support in WPF Maps (SfMap)
+# Multilayer Support in WPF Maps
 
 Multilayer support allows you to load multiple shapefiles in a single container, enabling maps to display more detail.
 

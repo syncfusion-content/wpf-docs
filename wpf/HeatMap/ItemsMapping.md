@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ItemsMapping in WPF HeatMap (SfHeatMap) control | Syncfusion®
-description: Learn here about the ItemsMapping in the Syncfusion® Essential Studio® WPF HeatMap (SfHeatMap) control, its elements, and more.
+title: Items Mapping in WPF HeatMap | Syncfusion®
+description: Items mapping in the WPF HeatMap enables data fields to be mapped to rows, columns, and values for effective heat map visualization.
 platform: wpf
 control: SfHeatMap
 documentation: ug
 ---
 
-# Items mapping in the WPF HeatMap (SfHeatMap) control
+# Items Mapping in WPF HeatMap
 
 An external data source can be mapped with the HeatMap using the `ItemsMapping` property. It supports 2 kinds of data source.
 

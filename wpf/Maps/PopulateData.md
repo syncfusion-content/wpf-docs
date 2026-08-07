@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populate Data in WPF Maps control | Syncfusion
-description: Learn here all about Populate Data support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Populate Data in WPF Maps | Syncfusion®
+description: Populate data in the WPF Maps by binding geographic and business data sources to visualize location-based information effectively.
 platform: wpf
 control: SfMap 
 documentation: ug
 ---
 
-# Populate Data in WPF Maps (SfMap)
+# Populate Data in WPF Maps
 
 This section explains how to populate shape data for providing data input to the maps control and the usage of the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ItemsSource) property.
 
