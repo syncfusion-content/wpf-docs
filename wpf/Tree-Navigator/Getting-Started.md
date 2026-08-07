@@ -76,7 +76,6 @@ namespace GettingStarted
             this.InitializeComponent();
             // Creating an instance of the SfTreeNavigator control
             SfTreeNavigator sfToolkit = new SfTreeNavigator() { Header = "Enterprise Toolkit" };
-
             SfTreeNavigatorItem winrt = new SfTreeNavigatorItem() { Header = "WinRT (XAML)" };
             SfTreeNavigatorItem metroStudio = new SfTreeNavigatorItem() { Header = "Metro Studio" };
             SfTreeNavigatorItem winrtChart = new SfTreeNavigatorItem() { Header = "Chart" };
