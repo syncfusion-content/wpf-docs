@@ -12,15 +12,6 @@ keywords: wpf markdownviewer, syncfusion markdownviewer wpf, markdown viewer wpf
 
 This section provides a step-by-step guide to integrate and use the [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control in your WPF applications.
 
-## Prerequisites
-
-Before you begin, confirm the following:
-
-- **Supported target frameworks:** .NET Framework 4.5, 4.5.1, 4.6, and 4.6.1, as well as .NET 6.0, 7.0, and 8.0.
-- **Visual Studio:** 2019 or later with the **.NET desktop development** workload installed.
-- **Syncfusion<sup>&reg;</sup> NuGet package version:** Essential Studio 22.1 or later. Install the latest NuGet package release for the most recent fixes.
-- **Syncfusion<sup>&reg;</sup> license:** A valid Syncfusion<sup>&reg;</sup> license, or a free trial. See the [Syncfusion<sup>&reg;</sup> licensing](https://www.syncfusion.com/sales/communitylicense) page for details.
-
 ## Create a New WPF Project
 
 1. Go to **File > New > Project** and choose the **WPF App** template.
@@ -44,10 +35,6 @@ The SfMarkdownViewer control depends on the following assemblies, which are adde
 - `Syncfusion.Shared.WPF`
 
 For more information, see the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfmarkdownviewer) page. For details about installing NuGet packages in a WPF application, see [Installing NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages).
-
-## Register the Default Syncfusion Theme
-
-Syncfusion<sup>&reg;</sup> WPF controls require a theme to render correctly. Before any SfMarkdownViewer instance is created, set `SfSkinManager.ApplyStylesOnApplication` to `true` in the `App.xaml.cs` constructor. Skipping this step may cause the control to render without styling.
 
 ## Adding WPF SfMarkdownViewer via the Designer
 
@@ -107,7 +94,6 @@ namespace MarkdownViewerGettingStarted
             // Creating an instance of the SfMarkdownViewer control
             SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
             this.Content = markdownViewer;
-
         }
     }
 }
@@ -120,12 +106,6 @@ namespace MarkdownViewerGettingStarted
 ## Setting the Source Property
 
 The `Source` property supplies Markdown content to the control. It accepts a raw Markdown string, a file path, or an HTTP/HTTPS URL, and is set after the control has been added to the visual tree.
-
-> When the Markdown content references a relative image path such as `Images/foo.png`, the path is resolved against the application's working directory. For portable images, reference them with a pack URI such as `pack://application:,,,/Images/foo.png`, or place the image next to the application binary.
-
-> `Source` is a dependency property and supports data binding, so it can be assigned from a view-model.
-
-### Setting the Source to Raw Markdown
 
 {% tabs %} 
 {% highlight xaml %}
