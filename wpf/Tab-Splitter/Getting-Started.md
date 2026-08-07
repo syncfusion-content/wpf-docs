@@ -15,7 +15,7 @@ This section explains about how to create [TabSplitter](https://help.syncfusion.
 
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tabsplitter) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details on how to install nuget packages in WPF application.
+Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuget packages in a WPF application.
 
 ## Adding the TabSplitter control via XAML
 
