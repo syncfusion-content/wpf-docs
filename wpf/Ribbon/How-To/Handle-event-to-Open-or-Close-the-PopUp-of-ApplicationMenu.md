@@ -2,7 +2,7 @@
 layout: post
 title: How to handle PopUp event in WPF Ribbon | Syncfusion®
 description: Learn here how to handle event to detect the opening and closing of applicationmenu in Syncfusion® WPF Ribbon control, its elements and more.
-platform: WPF
+platform: wpf
 control: Ribbon
 documentation: ug
 ---

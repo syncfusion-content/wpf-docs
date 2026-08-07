@@ -2,7 +2,7 @@
 layout: post
 title: How to detect closing of a DockingManager child in WPF | Syncfusion®
 description: Learn here how to detect the closing of a dockingmanagerchild in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How to activate a particular window in WPF Docking | Syncfusion®
 description: Learn here how to activate a particular window in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

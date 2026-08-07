@@ -2,7 +2,7 @@
 layout: post
 title: How to set ActiveWindow in WPF Docking | Syncfusion®
 description: Learn here how to set activewindow using setnewfocusedelement in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

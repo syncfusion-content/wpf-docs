@@ -2,7 +2,7 @@
 layout: post
 title: How to disable resize of FloatWindow in WPF Docking | Syncfusion®
 description: Learn here how to disable the resize of floatwindow in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

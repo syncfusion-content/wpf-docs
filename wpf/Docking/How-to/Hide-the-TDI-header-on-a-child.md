@@ -2,7 +2,7 @@
 layout: post
 title: How to hide TDI header on a child in WPF Docking | Syncfusion®
 description: Learn here how to hide the tdi header on a child in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

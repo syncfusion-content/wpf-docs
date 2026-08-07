@@ -2,7 +2,7 @@
 layout: post
 title: How to enable TabItemContextMenu in WPF Docking | Syncfusion®
 description: Learn here how to enable/disable tabitemcontextmenu and tablistcontextmenu in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

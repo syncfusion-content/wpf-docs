@@ -2,7 +2,7 @@
 layout: post
 title: How to use the FullScreen mode in WPF DockingManager | Syncfusion®
 description: Learn here how to use the fullscreen mode in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---

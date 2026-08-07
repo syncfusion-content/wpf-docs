@@ -2,7 +2,7 @@
 layout: post
 title: How to clear StatePersistence entries in WPF Docking | Syncfusion®
 description: Learn here how to clear statepersistance entries in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
-platform: WPF
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
