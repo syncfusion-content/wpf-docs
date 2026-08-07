@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Advanced Features | DockingManager | WPF | Syncfusion®
-description: Advanced features of Syncfusion® Essential Studio® WPF DockingManager Control, its elements, features and more.
+title: Advanced Features in WPF DockingManager Control | Syncfusion®
+description: Learn here all about advanced features support in Syncfusion® WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug

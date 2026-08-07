@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Retrieve the AutoHidden Window in WPF DockingManager | Syncfusion®
-description: Retrieve the autohidden window height in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+title: How to retrieve AutoHidden Window height in WPF Docking | Syncfusion®
+description: Learn here how to retrieve the autohidden window height in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# Retrieve the AutoHidden Window height
+# How to retrieve AutoHidden Window height in WPF Docking
 
 EndDockHeaderHeight is the property that is used to retrieve the AutoHidden Window height.
 

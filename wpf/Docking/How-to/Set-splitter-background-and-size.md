@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Set splitter background and size | DockingManager | wpf | Syncfusion®
-description: Set splitter background and size in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+title: How to set splitter background and size in WPF Docking | Syncfusion®
+description: Learn here how to set splitter background and size in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-## Set splitter background and size
+# How to set splitter background and size in WPF Docking
 
 SplitterBackground is the property used to apply background to splitter between docked Children.
 

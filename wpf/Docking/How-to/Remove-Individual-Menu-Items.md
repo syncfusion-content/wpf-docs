@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Remove Individual Menu Items | DockingManager | wpf | Syncfusion®
-description: Remove individual menu items in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
+title: How to remove Menu Items in WPF Docking | Syncfusion®
+description: Learn here how to remove individual menu items in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
 platform: WPF
 control: DockingManager
 documentation: ug
 ---
 
-# Remove Individual Menu Items in WPF DockingManager
+# How to remove Menu Items in WPF Docking
 
 We can remove individual MenuItem in ContextMenu using the following properties.  The removal can be done by right clicking on it.
 

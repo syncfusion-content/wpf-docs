@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dealing with Ribbon in WPF Ribbon control | Syncfusion®
-description: Learn about Dealing with Ribbon support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
+title: Dealing with Ribbon in WPF Ribbon Control | Syncfusion®
+description: Learn here all about Dealing with Ribbon support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Dealing with Ribbon in WPF Ribbon
+# Dealing with Ribbon in WPF Ribbon Control
 
 The Ribbon can be changed into three different states: `Normal`, `Hide`, and `Adorner`.
 
