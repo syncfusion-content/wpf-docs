@@ -7,7 +7,7 @@ control: SfMap
 documentation: ug
 ---
 
-# Markers in WPF Maps 
+# Markers in WPF Maps control
 
 Markers are used to show some messages on maps.
 

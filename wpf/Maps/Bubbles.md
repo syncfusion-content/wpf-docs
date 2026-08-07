@@ -7,7 +7,7 @@ control: SfMap
 documentation: ug
 ---
 
-# Bubbles in WPF Maps 
+# Bubbles in WPF Maps control
 
 Bubbles in the [WPF Maps](https://www.syncfusion.com/wpf-controls/map) control represent the under-bound data values of the map. Bubbles are scattered throughout the map shapes that contain bound values.
 
