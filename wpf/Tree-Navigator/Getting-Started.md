@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Tree Navigator | Syncfusion
-description: Learn how to get started with the Syncfusion WPF Tree Navigator (SfTreeNavigator) control and its basic features.
+title: Getting Started with WPF Tree Navigator control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Tree Navigator (SfTreeNavigator) control, its elements and more.
 platform: wpf
 control: SfTreeNavigator
 documentation: ug
@@ -14,13 +14,6 @@ This section explains the steps required to add the WPF [SfTreeNavigator](https:
 **Namespace:** `Syncfusion.Windows.Controls.Navigation`
 
 **Assembly:** `Syncfusion.SfTreeNavigator.WPF` (in `Syncfusion.SfTreeNavigator.WPF.dll`)
-
-## Prerequisites
-
-- Visual Studio 2019 or later with the **.NET desktop development** workload installed
-- .NET 6 (or the .NET version targeted by your project)
-- Syncfusion WPF controls installed. Install the [Syncfusion.SfTreeNavigator.Wpf](https://www.nuget.org/packages/Syncfusion.SfTreeNavigator.Wpf) NuGet package, or install Essential Studio WPF.
-- A valid Syncfusion license. Register it at application startup with `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");`. Controls will not render correctly without a registered license.
 
 ## Adding WPF SfTreeNavigator via XAML
 
