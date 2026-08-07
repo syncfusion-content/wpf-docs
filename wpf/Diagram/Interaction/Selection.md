@@ -13,7 +13,7 @@ documentation: ug
 
 ### Single Selection
 
-An element can be selected by clicking that element. During single click, all previously selected items are cleared.The following image shows how the selected elements are visually represented.
+An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
 
 ![Single Selection](Interaction_images/Singleselect.gif)
 
@@ -23,7 +23,7 @@ When a child element of any [Group](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 ### Multiple Selection
 
-Multiple elements can be selected with the following ways.
+Multiple elements can be selected in the following ways.
 
 1. Shift+Click
 
@@ -31,26 +31,32 @@ Multiple elements can be selected with the following ways.
 
 2. Ctrl+Click
 
-    During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
+    During single click, any existing item in the selection list will be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be held down when clicking.
 
 3. Selection rectangle / Rubber band selection
 
-    Clicking and dragging the Diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
+    Clicking and dragging the Diagram area allows you to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
 Multiple selected elements are visually represented as shown.
 
 ![multiple selection](Interaction_images/multiselect.gif)
 
-* [SelectorChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_SelectorChangedEvent) will notify you the OffsetX, OffsetY, Height, Width, Rotate Angle and interaction state with their old and new values. To explore about arguments, please refer to [SelectorChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) .
+* [SelectorChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_SelectorChangedEvent) will notify you the OffsetX, OffsetY, Height, Width, Rotate Angle and interaction state with their old and new values. To learn about arguments, please refer to [SelectorChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) .
 
 #### Selection mode
 
-[SingleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SingleSelectionMode) and [MultipleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_MultipleSelectionMode) properties of `SfDiagram` allows us to decide which kind of selection need to be handle .To explore about modes, please refer to [SingleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SingleSelectionMode.html) and [MultipleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MultipleSelectionMode.html).
+[SingleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SingleSelectionMode) and [MultipleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_MultipleSelectionMode) properties of `SfDiagram` allows you to decide which kind of selection need to be handle .To learn about modes, please refer to [SingleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SingleSelectionMode.html) and [MultipleSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MultipleSelectionMode.html).
+
+**Default Values**
+
+* By default, **SingleSelectionMode** is set to **ToggleSelection**, which allows a selected node to be deselected by clicking it again.
+
+* By default, **MultipleSelectionMode** is set to **Default**, which enables all standard multiple-selection behaviors supported by the control.
 
 |SingleSelectionMode|Description|
 |--|--|
-|Select|Enables or disables single selection mode as Select. It is used to stop Unselection again click the same node which means the node remains always selected.|
-|ToggleSelection|Enables or disables single selection mode as ToggleSelection.It is used to perform selection or unselection again click the same node.|
+|Select|Enables single selection mode as Select. Clicking an already selected node does not deselect it; the node remains selected.|
+|ToggleSelection|Enables single selection mode as ToggleSelection. Clicking an already selected node toggles its selection state, allowing it to be selected or deselected.|
 
 {% tabs %}
 {% highlight Xaml %}
@@ -87,10 +93,10 @@ The following code example illustrates how to select/unselect an item  programma
 {% tabs %}
 {% highlight C# %}
 
-// Selects an elements 
+// Selects an element 
 node.IsSelected = true;
 
-// Unselect an element
+// Unselects an element
 node.IsSelected = false;
 
 {% endhighlight %}
@@ -102,7 +108,7 @@ node.IsSelected = false;
 
 ### Selection Indicator Style
 
-Multiple Selection will show the preview for the selected items. We have provided customization option for the appearance of the Preview.
+Multiple selection shows a preview of the selected items. We have provided customization option for the appearance of the Preview.
 
 | Style | Behavior |
 | --|--|
@@ -165,9 +171,9 @@ Diagram control provides support to change the selection handle display mode of 
 
 ## Events
 
-* [ItemSelectingEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemSelectingEvent) and [ItemSelectedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemSelectedEvent) for selecting an element, will notify you the item and its original source. To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
+* [ItemSelectingEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemSelectingEvent) and [ItemSelectedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemSelectedEvent) for selecting an element, will notify you the item and its original source. To learn about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
 
-* [ItemUnselectingEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemUnSelectingEvent) and [ItemUnselectedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemUnSelectedEvent) for unselecting an element, will notify you the item and its original source.To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html) .
+* [ItemUnselectingEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemUnSelectingEvent) and [ItemUnselectedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemUnSelectedEvent) for unselecting an element, will notify you the item and its original source.To learn about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html) .
 
 ## See Also 
 
