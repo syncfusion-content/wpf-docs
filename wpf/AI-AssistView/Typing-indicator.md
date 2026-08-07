@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TypingIndicator in WPF AI AssistView control | Syncfusion
-description: Learn about the typing indicator feature displayed in the AI AssistView control while the AI processes or generates a response.
+title: Typing Indicator in WPF SfAIAssistView | Syncfusion®
+description: The typing indicator in WPF SfAIAssistView provides visual feedback while AI processes prompts or generates responses, enhancing user engagement.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Initialize the typing indicator in WPF AI AssistView
+# Typing Indicator in WPF SfAIAssistView
 
 By using the [TypingIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_TypingIndicator) property, a typing indicator is shown while the AI is processing or generating a response, giving users real-time feedback and enhancing conversational flow
 
