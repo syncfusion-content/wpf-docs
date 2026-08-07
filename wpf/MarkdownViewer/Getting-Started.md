@@ -71,8 +71,6 @@ Import the control namespace `Syncfusion.UI.Xaml.Markdown` in XAML, and declare 
 {% endhighlight %}
 {% endtabs %}
 
-> Set explicit `Width` and `Height` (or alignment that fills the parent) on the `SfMarkdownViewer` element. Without sizing, the control may not render.
-
 ## Adding WPF SfMarkdownViewer via C#
 
 This section assumes that you have already created a WPF project and installed the `Syncfusion.SfMarkdownViewer.WPF` NuGet package, as described in the earlier sections. To add the [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) in code-behind, instantiate the control and assign it to the `Content` of a window or a child element.
@@ -100,8 +98,6 @@ namespace MarkdownViewerGettingStarted
 
 {% endhighlight %}
 {% endtabs %}
-
-> Make sure the file imports both `Syncfusion.UI.Xaml.Markdown` and `System.Windows` for the snippet above to compile. Set `Width` and `Height` on the control so that it has room to render at run time.
 
 ## Setting the Source Property
 

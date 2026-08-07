@@ -13,11 +13,11 @@ This section explains the steps required to add the WPF [SfTreeNavigator](https:
 
 **Namespace:** `Syncfusion.Windows.Controls.Navigation`
 
-**Assembly:** `Syncfusion.SfTreeNavigator.WPF` (in `Syncfusion.SfTreeNavigator.WPF.dll`)
+**Assembly:** `Syncfusion.SfTreeNavigator.WPF.dll`
 
 ## Adding WPF SfTreeNavigator via XAML
 
-1. Create a [WPF desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0).
+1. Create a [WPF desktop app for C#](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio).
 2. Add a reference to the [Syncfusion.SfTreeNavigator.Wpf](https://www.nuget.org/packages/Syncfusion.SfTreeNavigator.Wpf) NuGet package.
 3. Import the namespace `Syncfusion.Windows.Controls.Navigation` in XAML or C# code.
 4. Add an [SfTreeNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) instance to your view (for example, inside `MainWindow.xaml`).
@@ -74,7 +74,6 @@ namespace GettingStarted
         public MainWindow()
         {
             this.InitializeComponent();
-
             // Creating an instance of the SfTreeNavigator control
             SfTreeNavigator sfToolkit = new SfTreeNavigator() { Header = "Enterprise Toolkit" };
 

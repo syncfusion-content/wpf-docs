@@ -13,7 +13,7 @@ This section explains the steps required to add the WPF [SfAIAssistView](https:/
 
 ## Structure of SfAIAssistView
 
-The following diagram shows the high-level structure of the SfAIAssistView control, including the header, message list, and input area.
+The following diagram illustrates the layout of the SfAIAssistView control, including the header, message list, and input area.
 
 ![WPF SfAIAssistView Structure](aiassistview_images/wpf_aiassistview_control_structure.png)
 
