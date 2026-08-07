@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Transformation of Characters in WPF Digital Gauge | Syncfusion®
-
 description: Transformation of characters in the WPF Digital Gauge enables character rotation, scaling, and visual customization for digital displays.
 platform: wpf
 control: SfDigitalGauge

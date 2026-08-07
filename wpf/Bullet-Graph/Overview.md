@@ -1,7 +1,6 @@
 ---
 layout: post
 title: About Syncfusion® WPF Bullet Graph Control | Syncfusion®
-
 description: Learn about the introduction of Syncfusion Essential Studio® WPF Bullet Graph control, its features, capabilities, and more details.
 platform: wpf
 control: SfBulletGraph

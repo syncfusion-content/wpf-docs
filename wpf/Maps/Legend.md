@@ -7,7 +7,7 @@ control: SfMap
 documentation: ug
 ---
 
-# Legend in WPF Maps control
+# Legend Customization in WPF Maps
 
 A legend is a key to symbolism used on a map, usually containing swatches of symbols with descriptions. It provides valuable information for interpreting what the map is showing you, and can be represented in various colors and shapes based on the data.
 

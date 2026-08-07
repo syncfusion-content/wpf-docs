@@ -7,7 +7,7 @@ control: SfMap
 documentation: ug
 ---
 
-# About Syncfusion WPF Maps Control
+# About Syncfusion® WPF Maps Control
 
 A map is a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on Earth. By using pan and zoom, the maps can be navigated. Maps supports enhanced data visualization with bubbles and labels. Bubbles visualize the data that is bound to the map.
 
