@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Ribbon control | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF Ribbon control. Explore setup, features, examples, and customization options.
+title: Add ribbon in WPF Toolbar | Syncfusion
+description: Learn Add ribbon in WPF Toolbar using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 
-# Getting Started with WPF Ribbon
+# Add ribbon in WPF Toolbar
 
 This section explains how to implement a similar UI as Microsoft Outlook using Ribbon.
 

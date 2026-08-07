@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon Merge in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Ribbon Merge support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Creating MDI window and enabling menu merging in WPF Data Grid
+description: Learn Creating MDI window and enabling menu merging in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 
-# Ribbon Merge in WPF Ribbon Control
+# Creating MDI window and enabling menu merging in WPF Data Grid
 
 WPF [Ribbon](https://help.syncfusion.com/wpf/ribbon/gettingstarted) allows merging the [RibbonTab](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) and [RibbonBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) of two different Ribbon controls in MDI applications. [DocumentContainer.MDIParentRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIParentRibbon.html), [RibbonTab.MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) and [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeOrder.html) properties helps to perform menu merging.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonStatusBar in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonStatusBar support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: RibbonStatusBar in Ribbon in WPF Data Grid | Syncfusion
+description: Learn RibbonStatusBar in Ribbon in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonStatusBar in WPF Ribbon Control
+# RibbonStatusBar in Ribbon in WPF Data Grid
 
 The [RibbonStatusBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonStatusBar.html) control is added to [RibbonWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonWindow.html) to display the current status of the application or document, similar to Microsoft Office.
 

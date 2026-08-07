@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonItemHost in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonItemHost support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Adding custom items to the Ribbon in WPF ComboBox | Syncfusion
+description: Learn Adding custom items to the Ribbon in WPF ComboBox using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonItemHost in WPF Ribbon Control
+# Adding custom items to the Ribbon in WPF ComboBox
 
 WPF Ribbon allows adding any control within the RibbonBar but it does not provide support to add that control in QAT or customize using QAT customization dialog. However, the [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html) allows hosting any control, such as a ComboBox, TextBox, RadioButton, CheckBox, and more to be displayed on the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) and also allows to add in [`QuickAccessToolBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html) or customize using QAT customization dialog.
 

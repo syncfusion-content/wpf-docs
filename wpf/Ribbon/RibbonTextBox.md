@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonTextBox in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonTextBox support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Add TextBox to the RibbonBar in WPF Data Grid | Syncfusion
+description: Learn Add TextBox to the RibbonBar in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonTextBox in WPF Ribbon Control
+# Add TextBox to the RibbonBar in WPF Data Grid
 
 The `RibbonTextBox` control provides a similar set of functionalities to a normal TextBox control in a Ribbon instance.
 

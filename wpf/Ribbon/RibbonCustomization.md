@@ -6,7 +6,7 @@ platform: WPF
 control: Ribbon
 documentation: ug
 ---
-# Ribbon Context Menu in WPF Ribbon Control
+# Adding custom item to the ContextMenu in WPF Toolbar
 
 RibbonContextMenu allows you to customize the Ribbon with the Right Click and it displays different functions for Ribbon and RibbonItems.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dealing with Ribbon in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Dealing with Ribbon support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Three types of RibbonState in WPF ComboBox | Syncfusion
+description: Learn Three types of RibbonState in WPF ComboBox using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Dealing with Ribbon in WPF Ribbon Control
+# Three types of RibbonState in WPF ComboBox
 
 The Ribbon can be changed into three different states: `Normal`, `Hide`, and `Adorner`.
 

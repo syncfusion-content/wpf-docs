@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dealing with Ribbon Items in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Dealing with Ribbon Items support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Adding items to ButtonPanel in XAML in WPF Button | Syncfusion
+description: Learn Adding items to ButtonPanel in XAML in WPF Button using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Dealing with Ribbon Items in WPF Ribbon Control
+# Adding items to ButtonPanel in XAML in WPF Button
 
 A Button Panel represents a panel control that can display a horizontal row of Ribbon Items in a single border. It is used to manage the place for the controls.
 

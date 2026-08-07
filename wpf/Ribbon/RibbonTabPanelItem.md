@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonTabPanelItem in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonTabPanelItem support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: RibbonTabPanelItem in Ribbon in WPF Button | Syncfusion
+description: Learn RibbonTabPanelItem in Ribbon in WPF Button using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonTabPanelItem in WPF Ribbon Control
+# RibbonTabPanelItem in Ribbon in WPF Button
 
 `RibbonTabPanelItem` is used to display items below application Close button and above the `RibbonBar` content area. It is usually aligned in the right side of the Ribbon and we can place desired items like emojis, help button etc., in this Tab panel. 
 

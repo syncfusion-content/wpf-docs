@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonGallery in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonGallery support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Ribbon mode in WPF Data Grid | Syncfusion
+description: Learn Ribbon mode in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WPF
 control: Ribbon
 documentation: ug
 ---
-# RibbonGallery in WPF Ribbon Control
+# Ribbon mode in WPF Data Grid
 
 RibbonGallery provides `VisualMode` property, that helps to display items in two different ways.
 

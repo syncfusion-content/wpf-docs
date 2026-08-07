@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Application Menu in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Application Menu support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Adding MenuItems in ApplicationMenu in WPF Tooltip | Syncfusion
+description: Learn Adding MenuItems in ApplicationMenu in WPF Tooltip using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 
-# Application Menu in WPF Ribbon Control
+# Adding MenuItems in ApplicationMenu in WPF Tooltip
 
 The [`ApplicationMenu`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ApplicationMenu.html) can be added by using [`ApplicationMenu`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_ApplicationMenu) property of Ribbon. To show the [`ApplicationMenu`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ApplicationMenu.html), click the **FILE** button in Ribbon like in Microsoft Outlook.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonListBox in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonListBox support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Add ListBox to the RibbonBar in WPF Data Grid | Syncfusion
+description: Learn Add ListBox to the RibbonBar in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonListBox in WPF Ribbon Control
+# Add ListBox to the RibbonBar in WPF Data Grid
 
 `RibbonListBox` control is used to display a list of items in a Ribbon. It accepts any type of content as RibbonListBox items, but uses `ListBoxItem` by default.
 

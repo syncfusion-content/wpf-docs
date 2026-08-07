@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Ribbon ModelTab in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Ribbon ModelTab support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Use case scenarios in WPF Chart | Syncfusion
+description: Learn Use case scenarios in WPF Chart using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Ribbon ModelTab in WPF Ribbon Control
+# Use case scenarios in WPF Chart
 
 Modal Tabs in the Ribbon Control are used to display a collection of commands other than the commands which are available in the core tabs. At this point, the core tab gets disabled.
 

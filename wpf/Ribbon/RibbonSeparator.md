@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonSeparator in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonSeparator support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Add Separator to the RibbonBar in WPF Data Grid | Syncfusion
+description: Learn Add Separator to the RibbonBar in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonSeparator in WPF Ribbon Control
+# Add Separator to the RibbonBar in WPF Data Grid
 
 The `RibbonSeparator` is used to separate similar sets of Ribbon elements in Ribbon. It can separate RibbonButtons according to their purpose. 
 

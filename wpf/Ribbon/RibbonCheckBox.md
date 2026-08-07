@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonCheckBox in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonCheckBox support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Add CheckBox to the simplified layout in WPF Data Grid | Syncfusion
+description: Learn Add CheckBox to the simplified layout in WPF Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonCheckBox in WPF Ribbon Control
+# Add CheckBox to the simplified layout in WPF Data Grid
 
 [RibbonCheckBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCheckBox.html) is used to select or unselect options. It provides a similar set of functionalities to a normal CheckBox control in [Ribbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html).
 

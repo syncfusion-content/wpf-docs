@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Patterns and Practices in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Patterns and Practices support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Ribbon with MVVM in WPF Tooltip | Syncfusion
+description: Learn Ribbon with MVVM in WPF Tooltip using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Patterns and Practices in WPF Ribbon Control
+# Ribbon with MVVM in WPF Tooltip
 
 ## Ribbon with MVVM
 

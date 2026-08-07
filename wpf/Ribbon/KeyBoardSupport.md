@@ -1,12 +1,12 @@
 ---
 layout: post
-title: KeyBoard Support in WPF Ribbon Control | Syncfusion®
-description: Learn here all about KeyBoard Support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+title: Adding KeyTip to the ribbon items in WPF ComboBox | Syncfusion
+description: Learn Adding KeyTip to the ribbon items in WPF ComboBox using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# KeyBoard Support in WPF Ribbon Control
+# Adding KeyTip to the ribbon items in WPF ComboBox
 
 To invoke any command using KeyBoard, Ribbon control provides KeyTip support to access the RibbonItem. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed. 
 
