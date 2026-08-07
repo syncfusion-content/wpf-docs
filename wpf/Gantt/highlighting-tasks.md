@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Highlighting Tasks in WPF Gantt control | Syncfusion
-description: Learn about Highlighting Tasks support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: Highlighting Tasks in WPF Gantt | Syncfusion
+description: Learn about Highlighting Tasks support in Syncfusion   WPF Gantt using HighlightedItems and HighlightItemBrush, including critical path visualization.
 platform: wpf
 control: Gantt
 documentation: ug

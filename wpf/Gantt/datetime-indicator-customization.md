@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DateTime Indicator Customization in WPF Gantt control | Syncfusion
-description: Learn about DateTime Indicator Customization support in Syncfusion WPF Gantt control, its elements and more details.
+title: DateTime Indicator Customization in WPF Gantt | Syncfusion
+description: Learn about DateTime Indicator Customization support in Syncfusion WPF Gantt, including Today, LoadedTime, DynamicTime, and Absolute positioning options.
 platform: wpf
 control: Gantt
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Virtualization in WPF Gantt control | Syncfusion®
-description: Learn about Data Virtualization support in Syncfusion Essential Studio® WPF Gantt control, its elements and more.
+title: Data Virtualization in WPF Gantt | Syncfusion®
+description: Learn about Data Virtualization support in Syncfusion Essential Studio® WPF Gantt by using row and timeline virtualization to efficiently handle large datasets.
 platform: wpf
 control: Gantt
 documentation: ug
