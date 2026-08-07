@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drag and drop in WPF GanttControl | Syncfusion
-description: Learn about drag and drop support in Syncfusion Essential Studio WPF GanttControl, its elements and more details.
+title: Drag and drop in WPF Gantt | Syncfusion
+description: Learn about drag and drop support in Syncfusion WPF Gantt using drag-and-drop operations and related events.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Drag and drop support in GanttControl
+# Drag and drop in WPF Gantt
 The WPF [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) allows you to reorder rows and columns within the [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html) and rearrange nodes in the [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html) by dragging and dropping them. You can disable drag and drop by setting the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AllowDragDrop) property to false. The default value is `true`.
 
 ![drag-and-drop-in-wpf-gantt-control](Drag-drop-images/drag-and-drop-in-wpf-gantt-control.gif)

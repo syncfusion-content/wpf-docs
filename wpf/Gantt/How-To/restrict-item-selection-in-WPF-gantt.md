@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Restrict item selection | Gantt | Wpf | Syncfusion
-description: This section describes how to implement the SelectionMode behavior in the Syncfusion Essential Studio WPF Gantt control.
+title: How to Restrict item selection in WPF Gantt | Syncfusion
+description: Learn how to restrict item selection in Syncfusion WPF Gantt by using the SelectionMode property to disable task and row selection.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Restrict item selection
+# How to Restrict item selection in WPF Gantt
 
 To restrict item selection, set the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_SelectionMode) property of the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) to [None](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttSelectionMode.html#Syncfusion_Windows_Controls_Gantt_GanttSelectionMode_None). 
 
