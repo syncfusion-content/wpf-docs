@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gauge Customization in WPF Olap Gauge control | Syncfusion
-description: Learn about Gauge Customization support in Syncfusion WPF Olap Gauge control, its elements and more details.
+title: Gauge Customization in WPF OLAP Gauge | Syncfusion®
+description: Gauge customization in the WPF OLAP Gauge allows you to modify gauge elements, styles, colors, and visual settings for personalized displays.
 platform: wpf
 control: OLAP Gauge
 documentation: ug

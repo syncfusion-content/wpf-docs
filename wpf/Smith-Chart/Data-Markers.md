@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Markers in WPF Smith Chart control | Syncfusion
-description: Learn here all about Data Markers support in Syncfusion WPF Smith Chart (SfSmithChart) control and more.
+title: Data Markers in WPF Smith Chart | Syncfusion®
+description: Data markers in the WPF Smith Chart highlight individual data points with customizable shapes and styles for improved visualization.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Data Markers in WPF Smith Chart (SfSmithChart)
+# Data Markers in WPF Smith Chart
 
 Data markers are used to provide information about data points to the user. You can add a shape and label to adorn each data point.
 

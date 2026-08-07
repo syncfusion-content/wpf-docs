@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Headers and Labels in WPF TreeMap control | Syncfusion
-description: Learn here all about Headers and Labels support in Syncfusion WPF TreeMap (SfTreeMap) control and more.
+title: Headers and Labels in WPF TreeMap | Syncfusion®
+description: Headers and labels in the WPF TreeMap display hierarchical group names and item information, improving data readability and interpretation.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# Headers and Labels in WPF TreeMap (SfTreeMap)
+# Headers and Labels in WPF TreeMap
 
 ## Headers
 

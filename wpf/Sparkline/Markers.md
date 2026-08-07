@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Markers in WPF Sparkline control | Syncfusion
-description: Learn here all about Markers support in Syncfusion WPF Sparkline (SfSparkline) control, its elements and more.
+title: Markers in WPF Sparkline | Syncfusion®
+description: Markers in the WPF Sparkline highlight specific data points, making trends, values, and key points easier to identify and analyze.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Markers in WPF Sparkline (SfSparkline)
+# Markers in WPF Sparkline 
 
 Markers are used to indicate the value points for line and area sparklines, and can be customized with different templates.
 
