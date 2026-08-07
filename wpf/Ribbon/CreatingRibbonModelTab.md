@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ribbon ModelTab in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Ribbon ModelTab support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The Ribbon ModelTab in Ribbon lets you build ribbon tabs from a data model using MVVM-friendly API for dynamic tab generation.
 platform: wpf
 control: Ribbon
 documentation: ug

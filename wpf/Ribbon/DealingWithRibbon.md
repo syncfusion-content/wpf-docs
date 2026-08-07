@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Ribbon in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Dealing with Ribbon support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: Dealing with Ribbon covers ribbon state management, configuration, and customization to build a complete ribbon-based application UI.
 platform: wpf
 control: Ribbon
 documentation: ug

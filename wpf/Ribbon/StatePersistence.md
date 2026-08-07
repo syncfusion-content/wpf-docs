@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization and Deserialization in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Serialization and Deserialization support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: Serialization and Deserialization in Ribbon lets you save and load the ribbon state, tab order, and QAT items to persist UI.
 platform: wpf
 control: Ribbon
 documentation: ug

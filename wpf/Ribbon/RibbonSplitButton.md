@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonSplitButton in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonSplitButton support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The RibbonSplitButton in Ribbon combines a button and a dropdown to provide a primary action and related secondary options.
 platform: wpf
 control: Ribbon
 documentation: ug

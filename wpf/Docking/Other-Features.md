@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Other Features in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Other features support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: Other features in DockingManager include custom context menus, drag-and-drop indicators, and runtime window customization options.
 platform: wpf
 control: DockingManager
 documentation: ug

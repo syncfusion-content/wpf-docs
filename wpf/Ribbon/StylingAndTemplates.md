@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Templates in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Styling and Templates support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: Styling and templates in Ribbon let you customize the visual appearance of ribbon tabs, items, and controls using XAML templates.
 platform: wpf
 control: Ribbon
 documentation: ug

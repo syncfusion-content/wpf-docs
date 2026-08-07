@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Localization support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: The localization in DockingManager lets you translate caption, context menu, and tab text of docked windows into any desired language.
 platform: wpf
 control: DockingManager
 documentation: ug

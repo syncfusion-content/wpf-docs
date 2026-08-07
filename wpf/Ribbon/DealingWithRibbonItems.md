@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Ribbon Items in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Dealing with Ribbon Items support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: Dealing with Ribbon items covers working with individual ribbon controls like buttons, galleries, drop-downs, and their properties.
 platform: wpf
 control: Ribbon
 documentation: ug

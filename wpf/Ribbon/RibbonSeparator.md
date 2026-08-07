@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonSeparator in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonSeparator support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The RibbonSeparator in Ribbon lets you add visual separators between ribbon items to organize and group related controls.
 platform: wpf
 control: Ribbon
 documentation: ug

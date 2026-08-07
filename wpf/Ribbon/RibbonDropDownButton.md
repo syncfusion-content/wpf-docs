@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonDropDownButton in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonDropDownButton support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The RibbonDropDownButton in Ribbon lets you add a button that opens a dropdown with multiple commands or options.
 platform: wpf
 control: Ribbon
 documentation: ug

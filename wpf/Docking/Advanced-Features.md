@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced Features in WPF DockingManager Control | Syncfusion®
-description: Learn here all about advanced features support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: The advanced features in DockingManager offer MDI/TDI support, state persistence, drag providers, and layout customization for docked windows.
 platform: wpf
 control: DockingManager
 documentation: ug

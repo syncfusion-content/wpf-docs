@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonStatusBar in WPF Ribbon Control | Syncfusion®
-description: Learn here all about RibbonStatusBar support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The RibbonStatusBar in Ribbon lets you display status information, indicators, and controls at the bottom of the ribbon window.
 platform: wpf
 control: Ribbon
 documentation: ug

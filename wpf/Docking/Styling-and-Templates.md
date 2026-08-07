@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Templates in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Styling and Templates support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: Styling and templates in DockingManager let you customize the look and feel of docked, floating, auto-hide, and tabbed windows.
 platform: wpf
 control: DockingManager
 documentation: ug

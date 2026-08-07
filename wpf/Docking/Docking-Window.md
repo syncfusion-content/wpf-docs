@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docking Window in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Docking Window support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: The docking window in DockingManager lets you dock child windows to any side of the form and customize their caption and behavior.
 platform: wpf
 control: DockingManager
 documentation: ug

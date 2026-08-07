@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive Features in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Interactive features support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: The interactive features in DockingManager enable drag, resize, dock, float, and tab interactions for child windows at run-time.
 platform: wpf
 control: DockingManager
 documentation: ug

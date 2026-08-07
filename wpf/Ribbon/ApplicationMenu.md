@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Application Menu in WPF Ribbon Control | Syncfusion®
-description: Learn here all about Application Menu support in Syncfusion® WPF Ribbon control, its elements, features, and more details.
+description: The Application Menu in Ribbon provides a dropdown menu at the top-left corner of the form to add commands and access application options.
 platform: wpf
 control: Ribbon
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State Persistence in WPF DockingManager Control | Syncfusion®
-description: Learn here all about State Persistence support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: The state persistence in DockingManager lets you save and restore the layout, state, and position of docked child windows.
 platform: wpf
 control: DockingManager
 documentation: ug

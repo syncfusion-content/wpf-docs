@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Data Binding support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: Data binding in DockingManager lets you bind child windows, side panel visibility, and other properties to your data source.
 platform: wpf
 control: DockingManager
 documentation: ug

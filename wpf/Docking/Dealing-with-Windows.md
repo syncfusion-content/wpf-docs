@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Windows in WPF DockingManager Control | Syncfusion®
-description: Learn here all about Dealing with Windows support in Syncfusion® WPF Docking (DockingManager) control and more.
+description: Dealing with windows in DockingManager lets you activate, pin, close, and customize the behavior of docked and floating child windows.
 platform: wpf
 control: DockingManager
 documentation: ug
