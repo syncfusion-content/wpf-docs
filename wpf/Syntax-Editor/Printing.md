@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in WPF Syntax Editor control | Syncfusion
-description: Learn about Printing support in Syncfusion Essential Studio WPF Syntax Editor (EditControl) control, its elements and more.
+title: Printing in WPF Syntax Editor | Syncfusion®
+description: Printing support in WPF Syntax Editor enables printing code and text content with formatting, helping create readable and well-organized output.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Printing in WPF Syntax Editor (EditControl)
+# Printing in WPF Syntax Editor
 
 The `EditControl` provides support for printing the content displayed in the control using the [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_Print) method, and for previewing the printed output using the [ShowPrintPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_ShowPrintPreview) method. The samples below assume `using Syncfusion.Windows.Edit;` and an `EditControl` instance named `editControl`.
 
