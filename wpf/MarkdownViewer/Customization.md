@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize WPF MarkdownViewer Appearance | Syncfusion
-description: Learn how to customize the appearance and behavior of the Syncfusion® WPF SfMarkdownViewer control, including styling elements and modifying themes.
+title: Customization in WPF SfMarkdownViewer | Syncfusion®
+description: Customization support in WPF SfMarkdownViewer enables styling markdown elements, modifying themes, and adjusting the viewer appearance.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Customization in WPF Markdown Viewer
+# Customization in WPF SfMarkdownViewer
 
 The `SfMarkdownViewer` control in Wpf provides a flexible styling system through the `MarkdownStyleSettings` class. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
 
