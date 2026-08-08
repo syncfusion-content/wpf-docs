@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Syntax Editor control | Syncfusion
-description: Learn here all about introduction to Syncfusion Essential Studio WPF Syntax Editor (EditControl) control, its elements and more.
+title: About Syncfusion® WPF Syntax Editor Control | Syncfusion®
+description: Learn about the introduction and overview of Syncfusion® Essential Studio WPF Syntax Editor control, its elements, features, and capabilities.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# WPF Syntax Editor (EditControl) Overview
+# About Syncfusion® WPF Syntax Editor Control
 
 This section covers information on the Essential Edit for WPF, its key features, prerequisites, version compatibility, and the documentation details for using the control. It comprises the following sub-sections.
 

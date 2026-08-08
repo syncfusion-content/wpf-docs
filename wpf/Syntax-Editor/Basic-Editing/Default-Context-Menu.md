@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Default Context Menu in WPF Syntax Editor control | Syncfusion
-description: Learn about Default Context Menu support in Syncfusion WPF Syntax Editor control, its elements and more.
+title: Default Context Menu in WPF Syntax Editor | Syncfusion®
+description: The default context menu in WPF Syntax Editor provides quick access to common editing commands, enabling efficient text editing and code management.
 platform: wpf
 control: Syntax Editor
 documentation: ug

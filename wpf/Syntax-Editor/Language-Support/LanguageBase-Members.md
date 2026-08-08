@@ -1,7 +1,7 @@
 ---
 layout: post
-title: LanguageBase Members in WPF Syntax Editor control | Syncfusion
-description: Learn here about LanguageBase Members support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+title: LanguageBase Members in WPF Syntax Editor | Syncfusion®
+description: LanguageBase members in WPF Syntax Editor provide APIs for defining language-specific behavior, syntax parsing, highlighting, and editing functionality.
 platform: wpf
 control: Syntax Editor
 documentation: ug

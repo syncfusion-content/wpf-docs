@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MarkupLanguageBase Class in WPF Syntax Editor control | Syncfusion
-description: Learn about MarkupLanguageBase Class support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+title: MarkupLanguageBase Class in WPF Syntax Editor | Syncfusion®
+description: The MarkupLanguageBase class in WPF Syntax Editor provides a foundation for defining markup language behavior, parsing, and syntax highlighting.
 platform: wpf
 control: Syntax Editor
 documentation: ug
