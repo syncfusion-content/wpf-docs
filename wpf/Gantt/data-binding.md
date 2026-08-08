@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in WPF Gantt control | Syncfusion
-description: Learn about Data Binding support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: Data Binding in WPF Gantt | Syncfusion
+description: Learn about Data Binding support in Syncfusion WPF Gantt with built-in TaskDetails objects and custom business objects using TaskAttributeMapping.
 platform: wpf
 control: Gantt
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Strip Lines in WPF Gantt control | Syncfusion
-description: Learn about Strip Lines support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: Strip Lines in WPF Gantt | Syncfusion
+description: Learn about Strip Lines support in Syncfusion WPF Gantt to highlight important events, milestones, and recurring dates in the project timeline.
 platform: wpf
 control: Gantt
 documentation: ug
