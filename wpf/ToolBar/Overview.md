@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About WPF ToolBar control | Syncfusion
-description: Learn here all about introduction to Syncfusion WPF ToolBar (ToolBarAdv) control, its elements and more.
+title: About Syncfusion® WPF ToolBarAdv Control | Syncfusion®
+description: Learn about the introduction and overview of Syncfusion® Essential Studio WPF ToolBarAdv control, its elements, features, and capabilities.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
-# WPF ToolBar (ToolBarAdv) Overview
+# About Syncfusion® WPF ToolBarAdv Control
 
 The ToolBarAdv control is a container for a group of commands or controls that have related functions. Usually it consists of buttons that invoke the commands. ToolBarAdv can be hosted in a `ToolBarTrayAdv` (for static layout) or in a `ToolBarManager` (for docking, floating, and drag-and-drop).
 
