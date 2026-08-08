@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Flow Direction in WPF Gantt control | Syncfusion
-description: Learn about Flow Direction support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: Flow Direction in WPF Gantt | Syncfusion
+description: Learn about Flow Direction support in Syncfusion WPF Gantt to customize left-to-right and right-to-left layout behavior.
 platform: wpf
 control: Gantt
 documentation: ug
