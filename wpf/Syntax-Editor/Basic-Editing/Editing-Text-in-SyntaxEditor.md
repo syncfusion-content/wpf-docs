@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing Text in Syntax Editor in WPF Syntax Editor | Syncfusion
-description: Learn about Editing Text in Syntax Editor support in Syncfusion WPF Syntax Editor control, its elements and more.
+title: Editing Text in WPF Syntax Editor | Syncfusion®
+description: Text editing in WPF Syntax Editor provides features for inserting, modifying, and managing code efficiently, improving the overall editing experience.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Editing Text in EditControl WPF
+# Editing Text in WPF Syntax Editor
 
 [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) supports displaying or editing string values with any number of lines. It also supports all basic editing operations such as typing, cut, copy, paste, delete, backspace, undo and redo operations.
 

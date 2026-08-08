@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Language Support in WPF Syntax Editor control | Syncfusion
-description: Learn about Custom Language Support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+title: Custom Language Support in WPF Syntax Editor | Syncfusion®
+description: Custom language support in WPF Syntax Editor enables defining and integrating custom languages with syntax highlighting, parsing, and editing features.
 platform: wpf
 control: Syntax Editor
 documentation: ug
