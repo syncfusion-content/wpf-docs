@@ -332,7 +332,7 @@ public class PythonLanguage : ProceduralLanguageBase
     IEnumerable<ILexem> commentsCollection = null;
 
     /// <summary>
-    /// Local variable to stor previous block end line.
+    /// Local variable to store previous block end line.
     /// </summary>
     int lastBlockEndLine = 0;
 
@@ -342,7 +342,7 @@ public class PythonLanguage : ProceduralLanguageBase
 
     /// <summary>
     /// Constructor a new instance of the <see
-    /// cref="T:syncfusion.syntaxeditordemos.wpf.PythonLanguage">PythonLanguage</see> class.
+    /// <see cref="T:syncfusion.syntaxeditordemos.wpf.PythonLanguage">PythonLanguage</see> class.
     /// </summary>
     /// <param name="control">represents the EditControl to which to which this instance
     /// has to be hooked</param>
