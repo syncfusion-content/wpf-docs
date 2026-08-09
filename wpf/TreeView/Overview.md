@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WPF TreeView control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Essential Studio® WPF TreeView (SfTreeView) control, its elements and more.
+title: About Syncfusion® WPF TreeView Control | Syncfusion®
+description: Learn about Syncfusion® Essential Studio WPF TreeView control, its features, hierarchical data presentation, and customization options.
 platform: wpf
 control: SfTreeView
 documentation: ug
