@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CustomToolTip in WPF Gantt control | Syncfusion
-description: Learn about CustomToolTip support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: CustomToolTip in WPF Gantt | Syncfusion
+description: Learn about CustomToolTip support in Syncfusion WPF Gantt using the ToolTipTemplate property to display custom content and visuals.
 platform: wpf
 control: Gantt
 documentation: ug
