@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® WPF Autocomplete (SfTextBoxExt) Control | Syncfusion®
+title: About Syncfusion® WPF Autocomplete Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF Autocomplete (SfTextBoxExt) control and more details.
 platform: wpf
 control: SfTextBoxExt
