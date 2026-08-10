@@ -9,9 +9,9 @@ documentation: ug
 
 # Zoom Command in WPF Diagram (SfDiagram)
 
-The [Zoom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Zoom) commands are used to do zoom-in and zoom-out operations on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) view. This command is also used to do scroll and pan operations with its parameter. 
+The [Zoom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Zoom) commands are used to perform zoom-in and zoom-out operations on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) view. This command is also used to do scroll and pan operations through its parameters.
 
-To execute zoom commands, parameter of type [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) have to be passed.
+To execute zoom commands, parameter of type [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) has to be passed.
 
 ## Zoom position parameter
 
@@ -19,7 +19,7 @@ The `ZoomPositionParameter` is used to represent the position parameters for exe
 
 | Property name | Description |
 | --- | --- |
-| [FocusPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_FocusPoint) | It is used to set the point of focus when zooming, Usually used to specify a particular point within the diagram view. |
+| [FocusPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_FocusPoint) | It is used to set the point of focus when zooming, usually used to specify a particular point within the diagram view. |
 | [PanDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_PanDelta) | It is used to set the finite increment in the pan value. |
 | [ScrollDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ScrollDelta) | It is used to set the finite increment in the scroll value. |
 | [ZoomCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ZoomCommand) | It is used to set the operation to be performed. |
@@ -39,6 +39,9 @@ For ZoomIn operation
 {% endhighlight %}
 
 {% highlight C# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -65,6 +68,9 @@ For ZoomOut operation
 {% endhighlight %}
 
 {% highlight C# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -94,6 +100,9 @@ For ZoomTo specific value
 
 {% highlight C# %}
 
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
+
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
 // For ZoomTo specific value
@@ -113,12 +122,15 @@ For Panning
 {% tabs %}
 {% highlight C# %}
 
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
+
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
 // For horizontal scroll
 graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 {
-    ZoomCommand = ZoomCommand.HorizondalScroll,
+    ZoomCommand = ZoomCommand.HorizontalScroll,
     ScrollDelta = 50,
 });
 
@@ -132,7 +144,7 @@ For HorizontalScroll
 
 {% highlight Xaml%}
 
-<Syncfusion:ZoomPositionParameter ZoomCommand="HorizondalScroll" ScrollDelta="5" x:Key="HorizontalScrollParameter"/>
+<Syncfusion:ZoomPositionParameter ZoomCommand="HorizontalScroll" ScrollDelta="5" x:Key="HorizontalScrollParameter"/>
 
 <Button Height="50" Content="HorizontalScroll" Name="HorizontalScroll" Command="Syncfusion:DiagramCommands.Zoom" CommandParameter="{StaticResource HorizontalScrollParameter}"></Button>
 
@@ -140,12 +152,15 @@ For HorizontalScroll
 
 {% highlight C# %}
 
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
+
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
 // For horizontal scroll
 graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 {
-    ZoomCommand = ZoomCommand.HorizondalScroll,
+    ZoomCommand = ZoomCommand.HorizontalScroll,
     ScrollDelta = 50,
 });
 
@@ -166,6 +181,9 @@ For VerticalScroll
 
 {% highlight C# %}
 
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
+
 IGraphInfo graphinfo = Diagram.Info as IGraphInfo;
 
 // For vertical scroll
@@ -183,6 +201,8 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 ## Reset
 
 The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Reset) command is used to reset [HorizontalOffset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_HorizontalOffset), [VerticalOffset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_VerticalOffset), and [CurrentZoom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.IScrollInfo.html#Syncfusion_UI_Xaml_Diagram_Controls_IScrollInfo_CurrentZoom) of the Diagram. If you want to customize the `Reset` command, you can use the parameter of type [ResetParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html).
+
+The `ResetParameter` allows you to control which view settings are restored. Use `Pan` to reset only the diagram position, `Zoom` to reset only the zoom level, and `ZoomPan` to reset both the zoom level and diagram position. Choose the appropriate reset mode based on the aspect of the diagram view that you want to restore.
 
 ### ResetParameter
 
@@ -207,6 +227,9 @@ The `Reset` parameter is used to define the behavior of the Reset Command.
 {% endhighlight %}
 
 {% highlight C# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
