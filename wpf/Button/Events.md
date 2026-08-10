@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in WPF Button (ButtonAdv) | Syncfusion®
-description: Events in Button (ButtonAdv) provide notifications for user interactions and button state changes.
+description: Events in ButtonAdv provide notifications for user interactions, command execution, and button state changes.
 platform: wpf
 control: ButtonAdv
 documentation: ug

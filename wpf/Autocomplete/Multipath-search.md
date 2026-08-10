@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multi-Path Search in WPF AutoComplete | Syncfusion®
-description: Multi-Path Search in SfTextBoxExt enables searching across multiple fields or data paths.
+description: Multi-Path Search in SfTextBoxExt enables searching across multiple properties and data paths within suggestion sources.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
