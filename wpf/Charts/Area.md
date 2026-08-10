@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Area in WPF Charts | Syncfusion®
-description: Area in the WPF Chart displays data as filled regions between data points and the axis, emphasizing trends and value magnitude.
+title: Chart Area in WPF Charts | Syncfusion®
+description: Chart Area in the WPF Chart displays data as filled regions between data points and the axis, emphasizing trends and value magnitude.
 platform: wpf
 control: SfChart
 documentation: ug

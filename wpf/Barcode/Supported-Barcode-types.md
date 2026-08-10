@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Barcode Types in WPF Barcode | Syncfusion®
-description: Supported barcode types in the WPF Barcode include various 1D and 2D symbologies for encoding and displaying data in barcode formats.
+title: Symbology Types in WPF Barcode | Syncfusion®
+description: Symbology Types in the WPF Barcode include various 1D and 2D symbologies for encoding and displaying data in barcode formats.
 platform: wpf
 control: SfBarcode
 documentation: ug
 ---
 
-# Supported Barcode Types in WPF Barcode
+# Symbology Types in WPF Barcode
 
 The following table lists the supported barcode types and their associated valid characters.
 

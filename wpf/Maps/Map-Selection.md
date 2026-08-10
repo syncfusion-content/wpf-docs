@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Selection in WPF Maps | Syncfusion®
+title: Selection in WPF Maps | Syncfusion®
 description: Map selection in the WPF Maps enables users to highlight and interact with map elements for focused analysis and data exploration.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Map Selection in WPF Maps
+# Selection in WPF Maps
 
 Each shape in the map can be selected and unselected when interacted with shapes. There are two ways to select the map shapes:
 
