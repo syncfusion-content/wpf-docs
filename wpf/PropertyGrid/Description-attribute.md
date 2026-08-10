@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Description Attribute in WPF PropertyGrid | Syncfusion®
+title: Description Attribute Support in WPF PropertyGrid | Syncfusion®
 description: Description Support in PropertyGrid enables displaying property information using attributes, runtime customization, and custom description panels.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Description attribute in WPF PropertyGrid
+# Description attribute support in WPF PropertyGrid
 
 You can display the description about the property using the  description panel which is placed on the bottom of the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control. Description panel visibility can be managed by [DescriptionPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelVisibility.html) property . The default value of the `DescriptionPanelVisibility` is `Collapsed`. To display the description panel, you should set `DescriptionPanelVisibility`  property value as `Visible`.
 

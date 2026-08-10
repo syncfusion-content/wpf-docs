@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Collection Editor in WPF PropertyGrid | Syncfusion®
-description: Collection Editor in PropertyGrid enables adding, removing, and editing collection items, including nested collections and read-only modes..
+description: Collection Editor in PropertyGrid enables adding, removing, and editing collection items, including nested collections and read-only modes.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

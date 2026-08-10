@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dropdown Customization in WPF AutoComplete Control | Syncfusion®
+title: Dropdown Customization in WPF AutoComplete | Syncfusion®
 description: Dropdown customization in SfTextBoxExt enables tailoring the appearance and behavior of suggestion lists.
 platform: wpf
 control: SfTextBoxExt

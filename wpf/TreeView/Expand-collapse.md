@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expand and Collapse in WPF SfTreeView | Syncfusion®
+title: Expand and Collapse in WPF TreeView | Syncfusion®
 description: Expand and Collapse in SfTreeView supports user-driven, programmatic, and data-bound node expansion with customizable behavior.
 platform: wpf
 control: SfTreeView

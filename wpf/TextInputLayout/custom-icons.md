@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# custom icons in WPF SfTextInputLayout
+# Custom Icons in WPF TextInputLayout (SfTextInputLayout)
 
 Any custom icons can be added to the leading edge or the trailing edge of the input view in the text input layout control. Events and commands linked to custom icons should be handled at the application level.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in WPF AutoComplete Control | Syncfusion®
+title: Selection in WPF AutoComplete | Syncfusion®
 description: Selection support in SfTextBoxExt enables choosing single or multiple items from suggestions.
 platform: wpf
 control: SfTextBoxExt

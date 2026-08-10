@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu in WPF SfTreeView | Syncfusion®
+title: Context Menu in WPF TreeView | Syncfusion®
 description: Context Menu in SfTreeView enables node-specific actions through built-in commands, custom commands, and context menu events.
 platform: wpf
 control: SfTreeView

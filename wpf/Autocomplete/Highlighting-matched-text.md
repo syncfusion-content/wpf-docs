@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Highlighting Matched Text in WPF AutoComplete Control | Syncfusion®
+title: Highlighting Matched Text in WPF AutoComplete | Syncfusion®
 description: Matched text highlighting in SfTextBoxExt visually emphasizes search results within suggestions.
 platform: wpf
 control: SfTextBoxExt
