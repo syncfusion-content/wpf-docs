@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Status Bar in WPF Syntax Editor | Syncfusion®
-description: The status bar in WPF Syntax Editor displays editor information such as line numbers, column positions, and editing status for improved productivity.
+description: Status bar support in WPF Syntax Editor displays file path, encoding type, line numbers, and column positions to enhance editing productivity.
 platform: wpf
 control: Syntax Editor
 documentation: ug

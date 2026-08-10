@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: File Support in WPF Syntax Editor | Syncfusion®
-description: File support in WPF Syntax Editor enables loading, editing, saving, and managing text files efficiently, simplifying code and document workflows.
+description: File support in WPF Syntax Editor enables loading, editing, saving, and managing various types of text files for efficient code and document workflows.
 platform: wpf
 control: Syntax Editor
 documentation: ug

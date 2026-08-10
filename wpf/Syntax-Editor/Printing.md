@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in WPF Syntax Editor | Syncfusion®
-description: Printing support in WPF Syntax Editor enables printing code and text content with formatting, helping create readable and well-organized output.
+description: Printing support in WPF Syntax Editor enables printing code and text content with formatting, ensuring readable and well-organized output.
 platform: wpf
 control: Syntax Editor
 documentation: ug
