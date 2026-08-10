@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WPF SfSmartTextEditor | Syncfusion®
-description: Customize the appearance and behavior of Syncfusion® WPF SfSmartTextEditor control with text styles, placeholders, and suggestion behavior customization options.
+description: Customize the appearance and behavior of Syncfusion® WPF SfSmartTextEditor control with text styles, placeholders, and suggestion behavior customization options
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
