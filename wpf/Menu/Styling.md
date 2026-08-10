@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling in WPF Menu (MenuAdv) | Syncfusion®
-description: Styling support in MenuAdv enables customizing the appearance of menus and menu items.
+description: Styling in MenuAdv enables customizing the appearance of menus and menu items.
 platform: wpf
 control: MenuAdv
 documentation: ug

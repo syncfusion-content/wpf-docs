@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Description Attribute Support in WPF PropertyGrid | Syncfusion®
+title: Description Support in WPF PropertyGrid | Syncfusion®
 description: Description Support in PropertyGrid enables displaying property information using attributes, runtime customization, and custom description panels.
 platform: wpf
 control: PropertyGrid 

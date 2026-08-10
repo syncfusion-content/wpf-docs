@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Empty Content in WPF TreeView | Syncfusion®
-description: Empty Content in SfTreeView enables displaying customizable messages or templates when no items are available in the treeview.
+description: Empty Content in SfTreeView enables displaying customizable messages or templates when no items are available in the TreeView.
 platform: wpf
 control: SfTreeView
 documentation: ug

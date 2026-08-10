@@ -2,7 +2,7 @@
 layout: post
 title: Styles and Templates in WPF Button (ButtonAdv) | Syncfusion®
 description: Styles and templates in Button (ButtonAdv) enable complete customization of button appearance and structure.
-platform: WPF
+platform: wpf
 control: ButtonAdv
 documentation: ug
 ---

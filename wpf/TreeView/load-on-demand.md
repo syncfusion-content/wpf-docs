@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load on Demand in WPF TreeView | Syncfusion®
-description: Load On Demand in SfTreeView enables loading child nodes when expanded using commands, improving performance for hierarchical data.
+description: Load on Demand in SfTreeView enables loading child nodes when expanded using commands, improving performance for hierarchical data.
 platform: wpf
 control: SfTreeView
 documentation: ug

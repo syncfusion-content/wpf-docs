@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Command Binding and Command Target Support in WPF Menu (MenuAdv) | Syncfusion®
+title:  Command Binding Support in WPF Menu (MenuAdv) | Syncfusion®
 description: Command Binding Support in MenuAdv enables executing routed commands through menu items by using command, parameter, and target bindings.
 platform: wpf
 control: MenuAdv
