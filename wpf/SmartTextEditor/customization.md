@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Customization in AI-Powered Text Editor control | Syncfusion®
-description: Learn here all about how to customize behavior and features of Syncfusion® WPF AI-Powered Text Editor (SfSmartTextEditor) control and more.
+title: Customization in WPF SfSmartTextEditor | Syncfusion®
+description: Learn how to customize the appearance and behavior of the WPF SfSmartTextEditor control.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
 ---
 
-# Customization in WPF AI-Powered Text Editor (SfSmartTextEditor)
+# Customization in WPF SfSmartTextEditor
+
 This section explains how to change the AI-Powered Text Editor’s appearance and suggestion behavior. You can set text styles, placeholder options, and customize how suggestions are shown.
 
 ## Text customization
