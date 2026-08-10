@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Built-in Editor in WPF PropertyGrid control | Syncfusion
-description: Learn about Built-in Editor support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Built-in Editor Support in WPF PropertyGrid | Syncfusion®
+description: Built-in Editor Support in PropertyGrid automatically assigns editors based on property types and supports input validation using masks.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Built-in Editor in WPF PropertyGrid
+# Built in Editor support in WPF PropertyGrid
 
  The [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties and it allows only the valid inputs based on property type.
 

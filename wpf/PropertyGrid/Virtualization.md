@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in WPF PropertyGrid control | Syncfusion
-description: Learn about Virtualization support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Virtualization in WPF PropertyGrid | Syncfusion®
+description: Virtualization in PropertyGrid improves performance by loading and rendering only the property items visible within the viewport.
 platform: wpf
 control: PropertyGrid
 documentation: ug
