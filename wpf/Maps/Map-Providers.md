@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Providers in WPF Maps | Syncfusion®
-description: Map providers in the WPF Maps supply map tile sources and geographic data, enabling visualization of locations and spatial information.
+title: Providers in WPF Maps | Syncfusion®
+description: Providers in the WPF Maps supply map tile sources and geographic data, enabling visualization of locations and spatial information.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Map Providers in WPF Maps
+# Providers in WPF Maps
 
 The [SfMap](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) control provides support for various map providers, including [OpenStreetMap](https://www.openstreetmap.org), [Google Maps](https://developers.google.com/maps/documentation), [Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/), and [Bing Maps](https://explore.microsoft.com/en-in/bing/features/maps/?form=MA13FV). You can also integrate other map providers by adding them as layers.
 

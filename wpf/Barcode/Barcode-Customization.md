@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Barcode Customization in WPF Barcode | Syncfusion®
-description: Barcode customization in the WPF Barcode allows you to modify appearance, colors, sizing, labels, and styling to meet application requirements.
+title: Customization in WPF Barcode | Syncfusion®
+description: Customization in the WPF Barcode allows you to modify appearance, colors, sizing, labels, and styling to meet application requirements.
 platform: wpf
 control: SfBarcode
 documentation: ug
 ---
 
-# Barcode Customization in WPF Barcode
+# Customization in WPF Barcode
 
 ## Overview
 
