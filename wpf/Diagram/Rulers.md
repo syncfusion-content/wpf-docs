@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rulers in WPF Diagram control | Syncfusion®
-description: Learn here all about Rulers support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Rulers in WPF SfDiagram | Syncfusion®
+description: Measure, align, and position diagram elements in Syncfusion® WPF SfDiagram using horizontal and vertical rulers with customizable units.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Rulers in WPF Diagram (SfDiagram)
+# Rulers in WPF SfDiagram
 
 The [Ruler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Ruler.html) provides a Horizontal and Vertical guide for measuring in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default [Unit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LengthUnit.html#Syncfusion_UI_Xaml_Diagram_LengthUnit_Unit) of measure is pixels. The ruler also includes a Position Indicator that displays the precise location of the mouse cursor on the diagram canvas, and the default color of position indicator marker is black.
 

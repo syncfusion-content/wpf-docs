@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MindMap tree layout in WPF Diagram control | Syncfusion®
-description: Learn here all about MindMap tree layout support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: MindMap Tree Layout in WPF SfDiagram | Syncfusion®
+description: Create balanced mind maps in Syncfusion® WPF SfDiagram with customizable orientations, split modes, and branch arrangements.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# MindMap tree layout in WPF Diagram (SfDiagram)
+# MindMap Tree Layout in WPF SfDiagram
 
 A mind map is a diagram that displays the nodes as a spider diagram that organizes information around a central concept. You can use the `LayoutManager.Layout` property to specify the [`MindMapTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html) algorithm.
 
