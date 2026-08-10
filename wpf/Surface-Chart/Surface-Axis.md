@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Surface Axis in WPF Surface Chart | Syncfusion®
-description: Surface axis in the WPF Surface Chart defines data scales, ranges, and coordinates for accurately displaying three-dimensional data.
+title: Axis in WPF Surface Chart | Syncfusion®
+description: Axis in the WPF Surface Chart defines data scales, ranges, and coordinates for accurately displaying three-dimensional data.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
 ---
 
-# Surface Axis in WPF Surface Chart
+# Axis in WPF Surface Chart
 
 SurfaceAxis is used to locate a data point inside the surface area. On a surface, you require three axes to locate data points, such as the X-Axis, Y-Axis, and Z-Axis. You can define axes in a surface using the following code example. If you do not define the axes, then it automatically takes the default axis with default property values.
 
