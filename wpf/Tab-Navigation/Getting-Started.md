@@ -11,26 +11,42 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tabnavigation) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in WPF application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tabnavigation) section for the list of assemblies or NuGet packages that need to be added as references in order to use the control in a WPF application.
 
-## Creating simple application with TabNavigation
+To install via the NuGet Package Manager Console, run:
 
-You can create the WPF application with TabNavigation control as follows:
+```powershell
+Install-Package Syncfusion.Tools.WPF
+```
 
-1. [Creating project](#creating-the-project)
+## Creating simple application with TabNavigationControl
+
+You can create a WPF application that uses the TabNavigationControl as follows:
+
+1. [Creating the project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
 3. [Adding control manually in XAML](#adding-control-manually-in-xaml)
 4. [Adding control manually in C#](#adding-control-manually-in-c)
 
-###  Creating the project
+### Creating the project
 
-Create a new WPF project in the Visual Studio to display the TabNavigation with functionalities.
+Create a new WPF project in Visual Studio to display the TabNavigationControl with its built-in functionalities.
+
+1. Open Visual Studio and click **File → New → Project**.
+2. Select **WPF App (.NET Framework)** or **WPF Application** depending on your installed workloads, then click **Next**.
+3. Enter a project name (for example, `TabNavigationSample`), choose a location, and click **Create**.
+4. Ensure the target framework is supported by your installed version of Syncfusion Essential Studio (see [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tabnavigation)).
 
 ### Adding control via Designer
 
-The TabNavigation control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The required assembly references will be added automatically.
+The TabNavigationControl can be added to the application by dragging it from the **Toolbox** and dropping it onto a designer view. The required assembly references will be added automatically.
 
-![wpf tab navigation control structure](Getting-Started_images/wpf-tabnavigation-control-added-by-designer.png)
+1. Make sure the Syncfusion WPF Toolbox is installed (this happens when you install Essential Studio or the WPF add-on).
+2. Open **View → Toolbox** and search for **TabNavigationControl** under the **Syncfusion Controls** tab.
+3. Drag **TabNavigationControl** onto the design surface of `MainWindow.xaml`.
+4. Build and run the project to verify that the control renders.
+
+![TabNavigationControl added via the WPF designer](Getting-Started_images/wpf-tabnavigation-control-added-by-designer.png)
 
 ### Adding control manually in XAML
 
@@ -47,11 +63,11 @@ In order to add control manually in XAML, do the below steps,
 {% highlight XAML %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-        x:Class="WpfApplication1.MainWindow"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        x:Class="TabNavigationSample.MainWindow"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <!-- TabNavigation Control -->
+    <Grid x:Name="grid">
+        <!-- TabNavigationControl -->
         <syncfusion:TabNavigationControl x:Name="tabNavigation"/>
     </Grid>
 </Window>
@@ -73,7 +89,9 @@ In order to add control manually in C#, do the below steps,
 {% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
+using System.Windows;
 using Syncfusion.Windows.Tools.Controls;
+
 namespace TabNavigationSample
 {
     /// <summary>
@@ -84,10 +102,11 @@ namespace TabNavigationSample
         public MainWindow()
         {
             InitializeComponent();
-			//For adding TabNavigation Control
-			TabNavigationControl tabNavigation = new TabNavigationControl();
-			grid.Children.Add(tabNavigation);
-        }       
+
+            // Adding TabNavigationControl programmatically
+            TabNavigationControl tabNavigation = new TabNavigationControl();
+            grid.Children.Add(tabNavigation);
+        }
     }
 }
 {% endhighlight %}
@@ -137,6 +156,7 @@ You can populate the TabNavigation control by adding objects directly to the [It
 	</syncfusion:TabNavigationItem>
 </syncfusion:TabNavigationControl>
 {% endhighlight %}
+
 {% highlight C# %}
 TabNavigationControl tabNavigation = new TabNavigationControl();
 //TabNavigationItem
@@ -161,6 +181,7 @@ tabNavigation.Items.Add(item1);
 tabNavigation.Items.Add(item2);
 tabNavigation.Items.Add(item3);
 tabNavigation.Items.Add(item4);
+this.Content= tabNavigation;
 {% endhighlight %}
 {% endtabs %}
 
