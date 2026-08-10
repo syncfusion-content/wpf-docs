@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF ToolBar control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF ToolBar (ToolBarAdv) control, its elements and more.
+title: Getting Started with WPF ToolBarAdv | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF ToolBarAdv control. Explore setup, elements, features, examples, and customization options.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
 
-# Getting Started with WPF ToolBar (ToolBarAdv)
+# Getting Started with WPF ToolBarAdv
 
 > **Important**
 > Starting with v16.2.0.x, if you refer to Syncfusion assemblies from the trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering the Syncfusion license key in your WPF application to use our components.

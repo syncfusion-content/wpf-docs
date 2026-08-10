@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with ToolBarAdv control in WPF ToolBar control | Syncfusion
-description: Learn here all about Dealing with ToolBarAdv control support in Syncfusion WPF ToolBar (ToolBarAdv) control and more.
+title: Dealing with Toolbars in WPF ToolBarAdv | Syncfusion®
+description: Dealing with toolbars in WPF ToolBarAdv includes managing toolbar positioning, overflow items, gripper visibility, orientation, and toolbar items.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
 
-# Dealing with ToolBarAdv control in WPF ToolBar (ToolBarAdv)
+# Dealing with Toolbars in WPF ToolBarAdv
 
 The following sections describe how to position, customize, and populate the items in a `ToolBarAdv`.
 

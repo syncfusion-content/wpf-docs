@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of WPF Kanban (SfKanban) Control | Syncfusion
-description: Learn here all about the introduction of the Syncfusion WPF Kanban (SfKanban) control, its elements, and more.
+title: About Syncfusion WPF SfKanban Control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio WPF SfKanban control, its element and more details.
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
 
-# WPF Kanban (SfKanban) Overview
+# About Syncfusion WPF SfKanban Control
 
 The Kanban control is an efficient way to visualize a workflow at each stage of completion. Kanban helps define elegant planning and clear visualization of work progression. The SfKanban control also provides many features that are used to monitor task progress in the software development cycle.
 

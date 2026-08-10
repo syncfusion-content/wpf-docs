@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OpenAI in WPF AI AssistView control | Syncfusion
-description: Learn about how to connect the AI AssistView control with OpenAI and chat gpt conversation experience.
+title: OpenAI in WPF SfAIAssistView | Syncfusion®
+description: The OpenAI connection feature in WPF SfAIAssistView enables integration with OpenAI services to provide AI-powered conversations and chat experiences.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
 ---
 
-# OpenAI connection for AI AssistView
+# OpenAI in WPF SfAIAssistView
 
 This section explains about how to connect the AI AssistView with OpenAI.
 
