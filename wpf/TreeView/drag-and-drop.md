@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag and drop in WPF TreeView control | Syncfusion®
-description: Learn here all about Drag and drop support in Syncfusion® WPF TreeView (SfTreeView) control and more.
+title: Drag and Drop in WPF SfTreeView | Syncfusion®
+description: Drag and Drop in SfTreeView enables moving nodes within or across controls, with support for customization through drag-and-drop events.
 platform: wpf
 control: SfTreeView
 documentation: ug

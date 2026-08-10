@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Binding and DataTemplate Support in WPF Menu control | Syncfusion
-description: Learn here all about Binding and DataTemplate Support in Syncfusion WPF Menu (MenuAdv) control and more.
+title: Binding and Data Template Support in WPF Menu (MenuAdv) | Syncfusion®
+description: Binding and DataTemplate support in Menu (MenuAdv) enable flexible data-driven menu item presentation.
 platform: wpf
 control: MenuAdv
 documentation: ug

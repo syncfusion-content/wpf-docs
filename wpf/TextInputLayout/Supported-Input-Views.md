@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supported Input Views in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Supported Input Views support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+title: Supported Input Views in WPF TextInputLayout | Syncfusion®
+description: Supported Input Views in SfTextInputLayout enable hosting controls such as TextBox, PasswordBox, ComboBox, and autocomplete inputs.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug

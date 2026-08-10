@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiline Text in WPF Button control | Syncfusion
-description: Learn here all about Multiline Text support in Syncfusion WPF Button (ButtonAdv) control, its elements and more details.
+title: Multiline Text Support in WPF Button (ButtonAdv) | Syncfusion®
+description: Multiline text support in Button (ButtonAdv) enables displaying button content across multiple lines.
 platform: WPF
 control: ButtonAdv
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in WPF TreeView control | Syncfusion®
-description: Learn here all about Editing support in Syncfusion® WPF TreeView (SfTreeView) control, its elements and more.
+title: Editing in WPF TreeView | Syncfusion®
+description: Editing in SfTreeView enables modifying node content with customizable edit triggers, templates, programmatic editing, and events.
 platform: wpf
 control: SfTreeView
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ordering in WPF PropertyGrid control | Syncfusion
-description: Learn about Ordering support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Ordering in WPF PropertyGrid | Syncfusion®
+description: Ordering in PropertyGrid enables arranging properties using display order attributes, declaration order, or runtime customization.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

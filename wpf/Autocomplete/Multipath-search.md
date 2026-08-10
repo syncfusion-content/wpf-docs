@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Perform multi-path search in WPF Autocomplete | Syncfusion®
-description: Learn here all about Perform multi-path search in Syncfusion® WPF Autocomplete (SfTextBoxExt) control, its elements and more.
+title: Multi-Path Search in WPF AutoComplete Control | Syncfusion®
+description: Multi-path search in SfTextBoxExt enables searching across multiple fields or data paths.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Perform multi-path search in WPF Autocomplete
+# Multi-Path Search in WPF Autocomplete
 
 Multi-path search can be achieved using the custom search feature by setting the [SuggestionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionMode) property as `Custom`. Users can define a custom filter and can be assigned to the [Filter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Filter) property.
 

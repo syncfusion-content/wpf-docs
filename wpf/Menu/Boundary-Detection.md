@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Boundary Detection in WPF Menu control | Syncfusion
-description: Learn here all about Boundary Detection support in Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
+title: Boundary Detection in WPF Menu (MenuAdv | Syncfusion®
+description: Boundary detection in MenuAdv automatically adjusts submenu positioning to remain within view.
 platform: wpf
 control: MenuAdv
 documentation: ug

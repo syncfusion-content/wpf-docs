@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scroll Support in WPF Menu control | Syncfusion
-description: Learn here all about Scroll Support in Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
+title: Scroll Support in WPF Menu (MenuAdv) | Syncfusion®
+description: Scroll support in MenuAdv enables accessing menu items that extend beyond available display space.
 platform: wpf
 control: MenuAdv
 documentation: ug

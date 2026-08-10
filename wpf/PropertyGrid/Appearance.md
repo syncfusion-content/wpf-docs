@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WPF PropertyGrid control | Syncfusion
-description: Learn about Appearance support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Appearance in WPF PropertyGrid | Syncfusion®
+description: Appearance support in PropertyGrid enables customizing colors, fonts, item styling, tooltips, and themes to enhance the user experience.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

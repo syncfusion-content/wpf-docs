@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CRUD Operations in WPF TreeView control | Syncfusion®
-description: Learn here all about CRUD Operations support in Syncfusion® WPF TreeView (SfTreeView) control and more.
+title: CRUD Operations in WPF TreeView | Syncfusion®
+description: CRUD Operations in SfTreeView support adding, deleting, and editing nodes in bound and unbound modes with event customization.
 platform: wpf
 control: SfTreeView
 documentation: ug

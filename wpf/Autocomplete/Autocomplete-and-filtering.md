@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Autocomplete and filtering in WPF Autocomplete control | Syncfusion®
-description: Learn here all about Autocomplete and filtering support in Syncfusion® WPF Autocomplete (SfTextBoxExt) control and more.
+title: Autocomplete and Filtering in WPF AutoComplete Control | Syncfusion®
+description: Autocomplete and filtering in SfTextBoxExt provide relevant suggestions as users enter text.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
