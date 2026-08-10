@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blendability in WPF ComboBox control | Syncfusion
-description: Learn here all about Blendability support in Syncfusion WPF ComboBox (ComboBoxAdv) control and more.
+title: Blendability in WPF ComboBoxAdv | Syncfusion®
+description: Blendability support in WPF ComboBoxAdv enables seamless customization and design-time editing in Microsoft Blend, improving UI development efficiency.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Blendability in WPF ComboBox (ComboBoxAdv)
+# Blendability in WPF ComboBoxAdv
 
 ## Creating the ComboBoxAdv control in expression blend
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in WPF ToolBar control | Syncfusion
-description: Learn here all about Customization support in Syncfusion WPF ToolBar (ToolBarAdv) control, its elements and more.
+title: Customization in WPF ToolBarAdv | Syncfusion®
+description: Customization support in WPF ToolBarAdv enables personalized toolbar layouts, item customization, and appearance modifications to suit application requirements.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
 
-# Customization in WPF ToolBar (ToolBarAdv)
+# Customization in WPF ToolBarAdv
 
 This section describes how to customize the appearance of a ToolBarAdv.
 
