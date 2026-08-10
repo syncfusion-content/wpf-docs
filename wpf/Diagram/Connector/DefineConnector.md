@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connector in WPF Diagram control | Syncfusion®
-description: Learn here all about Connector support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Connector in WPF SfDiagram | Syncfusion®
+description: Learn about connectors in Syncfusion® WPF SfDiagram control, including connector types, node connections, ports, drawing tools, and routing.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Connector in WPF Diagram (SfDiagram)
+# Connector in WPF SfDiagram
 
 Connectors are objects used to create link between two points or nodes to indicate the flow of operation or relationships between them.
 

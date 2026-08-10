@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Node in WPF Diagram control | Syncfusion®
-description: Learn here all about Node support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Node in WPF SfDiagram | Syncfusion®
+description: Learn about nodes in Syncfusion® WPF SfDiagram control, including node creation, visualization, positioning, interaction, appearance, and constraints.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Node in WPF Diagram (SfDiagram)
+# Node in WPF SfDiagram
 
 The nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data, and it represents the functions of a complete system in regards of how it interacts with external entities.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Group in WPF Diagram control | Syncfusion®
-description: Learn here all about Group support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Group in WPF SfDiagram | Syncfusion®
+description: Learn about group in Syncfusion® WPF SfDiagram control, including creating groups, managing grouped nodes and connectors, and group interactions.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Group in WPF Diagram (SfDiagram)
+# Group in WPF SfDiagram
 
 Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Connectors). Every change made to the Group also affects the children. Child elements can be edited individually.
 

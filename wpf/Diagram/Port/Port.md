@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Port in WPF Diagram control | Syncfusion®
-description: Learn here all about Port support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Ports in WPF SfDiagram | Syncfusion®
+description: Learn about ports in Syncfusion® WPF SfDiagram control, including node ports, connector ports, dock ports, connections, appearance, and behavior.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Port in WPF Diagram (SfDiagram)
+# Ports in WPF SfDiagram
 
 Port is a special connection point on a Node or Connector that you can glue the connectors. When you glue a connector to a node or port, they stay connected, even if one of the node is moved.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using Swimlanes | Syncfusion®
-description: How to select, resize(with and without selection) and swap the lane and how to add the child element into lane?
+title: Lane Interactions in WPF SfDiagram | Syncfusion®
+description: Learn about lane interactions in Syncfusion® WPF SfDiagram control, including lane selection, resizing, swapping, child node interactions, and events.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Lane interaction in WPF Diagram(SfDiagram)
+# Lane Interactions in WPF SfDiagram
 
 The [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to select, resize, or swap the lane interactively. 
 

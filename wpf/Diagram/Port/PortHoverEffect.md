@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Port hovering effect in WPF Diagram control | Syncfusion®
-description: Learn here all about Port hovering animation effect support in Syncfusion® WPF Diagram (SfDiagram) control ports.
+title: Port Hover Effects in WPF SfDiagram | Syncfusion®
+description: Learn about port hover effects in Syncfusion® WPF SfDiagram control, including ripple, shrink, filled ripple, and connection animation options.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Port hovering animation effect in WPF Diagram (SfDiagram)
+# Port Hover Effects in WPF SfDiagram
 
 When establishing a new connection or modifying the start/end points of existing connector over port, an animation will be shown while hovering on port. This animation is used to indicate that the user is hovering over the tiny port, which helps to start/end the connection to the ports. The [PortHoverEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramViewModel.html#Syncfusion_UI_Xaml_Diagram_DiagramViewModel_PortHoverEffect) property of [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramViewModel.html#Syncfusion_UI_Xaml_Diagram) class allows you to specify the any one of the following animation effect. The default effect is `Ripple`.
 

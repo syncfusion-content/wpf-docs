@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orthogonal segment connectors | Syncfusion®
-description: How to create the orthogonal segments, how to edit and customize the Orthogonal segments and how orthogonal connectors are avoiding overlapping.
+title: Orthogonal Segments in WPF SfDiagram | Syncfusion®
+description: Learn about orthogonal connector segments in Syncfusion® WPF SfDiagram control, including creation, editing, customization, and routing.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Orthogonal segment creation and routing
+# Orthogonal Segments in WPF SfDiagram
 
 Orthogonal segments are used to create line segments that are perpendicular at their point of intersection.
 

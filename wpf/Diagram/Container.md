@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Container in WPF Diagram control | Syncfusion®
-description: Learn here all about Container support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Container in WPF SfDiagram | Syncfusion®
+description: Learn about container in Syncfusion® WPF SfDiagram control, including container creation, headers, child management, interactions, and events.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Container in WPF Diagram (SfDiagram)
+# Container in WPF SfDiagram
 
 Containers are collections of logically grouped shapes surrounded by a visible border, which the shapes can be dragged in and out of during runtime. Every change made to the Container has no effect on its children. Child elements can be edited individually.
 

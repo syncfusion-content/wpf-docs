@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactions in WPF Diagram control | Syncfusion®
-description: Learn here all about Interactions support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Interactions in WPF SfDiagram | Syncfusion®
+description: Learn about connector interactions in Syncfusion® WPF SfDiagram control, including selection, dragging, routing, routing options, and editing.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Interactions in WPF Diagram (SfDiagram)
+# Interactions in WPF SfDiagram
 
 Connectors can be selected, dragged and routed over the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page. 
 
