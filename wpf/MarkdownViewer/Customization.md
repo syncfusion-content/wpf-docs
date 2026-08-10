@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WPF SfMarkdownViewer | Syncfusion®
-description: Customization support in WPF SfMarkdownViewer enables styling markdown elements, modifying themes, and adjusting the viewer appearance.
+description: Customization support in WPF SfMarkdownViewer enables styling Markdown elements, modifying themes, and adjusting the viewer appearance.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
