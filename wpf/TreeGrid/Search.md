@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Search in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Search support in the Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements, and more details.
+title: Search in WPF SfTreeGrid | Syncfusion®
+description: Learn about Search in the Syncfusion® WPF SfTreeGrid control. Quickly locate records with built-in search options for efficient navigation.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Search in WPF TreeGrid (SfTreeGrid)
+# Search in WPF SfTreeGrid
 
 [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) control allows you to search the data displayed in the SfTreeGrid. You can search the data by using [SearchController.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridSearchController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridSearchController_Search_System_String_) method.
 

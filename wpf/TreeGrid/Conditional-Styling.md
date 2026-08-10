@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Styling in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Conditional Styling support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
+title: Conditional Styling in WPF SfTreeGrid | Syncfusion®
+description: Learn about Conditional Styling in the Syncfusion® WPF SfTreeGrid control. Apply styles dynamically based on conditions to enhance data visualization.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Conditional Styling in WPF TreeGrid (SfTreeGrid)
+# Conditional Styling in WPF SfTreeGrid
 
 You can style the treegrid and its inner elements conditionally based on data in three ways,
 

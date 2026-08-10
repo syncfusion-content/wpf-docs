@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Paging support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more details.
+title: Paging in WPF SfTreeGrid | Syncfusion®
+description: Learn about Paging in the Syncfusion® WPF SfTreeGrid control. Navigate large data sets efficiently by splitting records into multiple pages.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Paging in WPF TreeGrid (SfTreeGrid)
+# Paging in WPF SfTreeGrid
 
 SfTreeGrid provides support to manipulate the nodes using SfDataPager control. You can refer [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
 

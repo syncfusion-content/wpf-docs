@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Clipboard Operations in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Clipboard Operations support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
+title: Clipboard Operations in WPF SfTreeGrid | Syncfusion®
+description: Learn about Clipboard Operations in the Syncfusion® WPF SfTreeGrid control. Copy, paste, and manage grid data efficiently with built-in support.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Clipboard Operations in WPF TreeGrid (SfTreeGrid)
+# Clipboard Operations in WPF SfTreeGrid 
 
 SfTreeGrid provides support to the clipboard operations such as cut, copy, and paste the data within control and between other applications such as Notepad and Excel. The clipboard operations of copy and paste are enabled by default. You can copy selected nodes/cells from tree grid by clicking `Ctrl+C` and paste the content from the [Clipboard](https://learn.microsoft.com/en-us/dotnet/api/system.windows.clipboard?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&redirectedfrom=MSDN) to tree grid by clicking `Ctrl+V`.
 
