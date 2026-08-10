@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Read Only Mode in WPF Syntax Editor control | Syncfusion
-description: Learn about Read Only Mode support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+title: Read Only Mode in WPF Syntax Editor | Syncfusion®
+description: Read only mode in WPF Syntax Editor prevents text modifications while allowing users to view, navigate, and interact with code content safely.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Read Only Mode support
+# Read Only Mode in WPF Syntax Editor
 
 Edit WPF can also be used as a static control in order to view only the contents of the file. ReadOnly mode is enabled/disabled by using the [IsReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_IsReadOnlyProperty) property of the EditControl class. The following code is used to set the ReadOnly mode for EditControl.
 

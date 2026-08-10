@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selected Text Drag and Drop in WPF Syntax Editor control | Syncfusion
-description: Learn about Selected Text Drag and Drop support in Syncfusion WPF Syntax Editor control, its elements and more.
+title: Selected Text Drag and Drop in WPF Syntax Editor | Syncfusion®
+description: Selected text drag and drop in WPF Syntax Editor allows users to move or copy selected text within the editor, improving editing efficiency and workflow.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Selected Text Drag and Drop
+# Selected Text Drag and Drop in WPF Syntax Editor
 
 You can drag and drop the selected text in a paragraph by setting the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_AllowDragDrop) property to true. By default, Dragging the selected text will perform a move operation, while dragging using the <kbd>Ctrl</kbd> key will perform a copy operation.
 
