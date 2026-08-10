@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting in WPF Diagram control | Syncfusion®
-description: Learn here all about Exporting support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Exporting in WPF SfDiagram | Syncfusion®
+description: Export diagrams from Syncfusion® WPF SfDiagram to image and XPS formats with customizable settings, regions, sizes, and backgrounds.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Exporting in WPF Diagram (SfDiagram)
+# Exporting in WPF SfDiagram
 
 [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides the support to export its content as image/XPS files using the [Export](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Export) method.
 SfDiagram can be exported in the following File formats.

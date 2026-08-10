@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in WPF Diagram control | Syncfusion®
-description: Learn here all about Events support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Annotation Events in WPF SfDiagram | Syncfusion®
+description: Learn about annotation events in Syncfusion® WPF SfDiagram control, including annotation change notifications and selection-related events.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Events in WPF Diagram (SfDiagram)
+# Annotation Events in WPF SfDiagram
 ## Annotation Changed Event
 The [AnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_AnnotationChanged) event will notify the annotation related actions and value changes. The [AnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) class is used to get or set the entire annotation related properties and their values.  
 

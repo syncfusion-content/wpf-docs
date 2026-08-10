@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Quadratic bezier segments | Syncfusion®
-description: how to add quadratic bezier segements into a connector and how to edit the quadratic bezier segments
+title: Quadratic Curve Segments in WPF SfDiagram | Syncfusion®
+description: Learn about quadratic curve connector segments in Syncfusion® WPF SfDiagram control, including creation, editing, control points, and customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Quadratic Curve Segments
+# Quadratic Curve Segments in WPF SfDiagram
 
 Quadratic curve segments are used to create curve segments as quadratic shape and the curves are configurable with middle control point. 
 
