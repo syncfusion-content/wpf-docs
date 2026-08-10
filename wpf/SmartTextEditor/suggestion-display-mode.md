@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Suggestion Display Modes in WPF SfSmartTextEditor | Syncfusion®
-description: Explore inline and popup suggestion display modes in the WPF SfSmartTextEditor control.
+description: Explore suggestion display modes in Syncfusion® WPF SfSmartTextEditor control with inline and popup modes for text completion display.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
