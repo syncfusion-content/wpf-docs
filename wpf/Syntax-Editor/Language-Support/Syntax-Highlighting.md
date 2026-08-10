@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syntax Highlighting in WPF Syntax Editor | Syncfusion®
-description: Syntax highlighting in WPF Syntax Editor applies distinct colors and styles to code elements such as keywords, literals, and comments, improving readability and coding efficiency.
+description: Syntax highlighting in WPF Syntax Editor applies distinct colors and styles to keywords, literals, and comments, enhancing readability and coding efficiency.
 platform: wpf
 control: Syntax Editor
 documentation: ug
