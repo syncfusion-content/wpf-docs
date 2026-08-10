@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMap Levels in WPF TreeMap | Syncfusion®
-description: TreeMap levels in the WPF TreeMap define hierarchical data groups, enabling structured visualization and navigation across multiple levels.
+title: Levels in WPF TreeMap | Syncfusion®
+description: Levels in the WPF TreeMap define hierarchical data groups, enabling structured visualization and navigation across multiple levels.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# TreeMap Levels in WPF TreeMap
+# Levels in WPF TreeMap
 
 The levels of the TreeMap can be categorized into two types, as follows:
 
