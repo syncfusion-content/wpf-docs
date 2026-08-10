@@ -15,7 +15,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application at the following link:
 
-[How to install NuGet packages](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
+[How to install NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Create a simple application with SfAccordion
 
