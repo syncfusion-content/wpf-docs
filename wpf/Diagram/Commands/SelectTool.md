@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SelectTool Command in WPF Diagram control | Syncfusion®
-description: Learn here all about SelectTool Command support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: SelectTool Command in WPF SfDiagram | Syncfusion®
+description: Switch tools and drawing modes in Syncfusion® WPF SfDiagram using the SelectTool command to create nodes, connectors, and text elements.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# SelectTool Command in WPF Diagram (SfDiagram)
+# SelectTool Command in WPF SfDiagram
 
 The [SelectTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SelectTool) command of the diagram helps to change the [DrawingTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool) and [Tool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) properties to a specified value. The [SelectToolCommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectToolCommandParameter.html) of `SelectTool` command is used to represent a specific tool.
 

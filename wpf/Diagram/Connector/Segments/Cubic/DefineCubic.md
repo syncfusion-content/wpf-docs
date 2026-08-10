@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Create cubic curve segments of connectors | Syncfusion®
-description: Create and editing simple cubic curve segments and adding mutilple cubic curve segments of connectors
+title: Cubic Curve Segments in WPF SfDiagram | Syncfusion®
+description: Learn about cubic curve connector segments in Syncfusion® WPF SfDiagram control, including creation, editing, control points, and customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Cubic Curve Segments
+# Cubic Curve Segments in WPF SfDiagram
 
 Cubic curve segments are used to create curve segments and the curves are configurable with end control points.
 

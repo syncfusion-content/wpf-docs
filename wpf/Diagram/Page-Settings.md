@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Page Settings in WPF Diagram control | Syncfusion®
-description: Learn here all about Page Settings support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Page Settings in WPF SfDiagram | Syncfusion®
+description: Customize page settings in Syncfusion® WPF SfDiagram, including page size, orientation, margins, scaling, appearance, and multiple-page support.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Page Settings in WPF Diagram (SfDiagram)
+# Page Settings in WPF SfDiagram
 
 By default, [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page size is decided based on the position of diagramming elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html ) property of `SfDiagram`. 
 

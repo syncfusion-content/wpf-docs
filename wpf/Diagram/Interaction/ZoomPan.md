@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zoom Pan in WPF Diagram control | Syncfusion®
-description: Learn here all about Zoom Pan support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Zoom Pan in WPF SfDiagram | Syncfusion®
+description: Navigate large diagrams in Syncfusion® WPF SfDiagram with zooming, panning, IntelliMouse support, and viewport exploration features.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Zoom Pan in WPF Diagram
+# Zoom Pan in WPF SfDiagram
 
 * We can Zoom in or Zoom out the diagram view. [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) can be zoomed in or out by simply holding down the Ctrl key and scrolling with your mouse wheel.
 
@@ -33,10 +33,10 @@ documentation: ug
 
 [How to get notification when zooming and panning the diagram page?](https://support.syncfusion.com/kb/article/5470/how-to-get-notification-when-zooming-and-panning-the-wpf-diagram-sfdiagram)
 
-[How to Use the Mouse Middle Button for Pan and Middle Button Scroll for Zoom in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15645/how-to-use-the-mouse-middle-button-for-pan-and-middle-button-scroll-for-zoom-in-wpf-diagram-sfdiagram)
+[How to Use the Mouse Middle Button for Pan and Middle Button Scroll for Zoom in WPF SfDiagram?](https://support.syncfusion.com/kb/article/15645/how-to-use-the-mouse-middle-button-for-pan-and-middle-button-scroll-for-zoom-in-wpf-diagram-sfdiagram)
 
 [How to do Panning in all the directions at a time in WPF Diagram?](https://support.syncfusion.com/kb/article/5874/how-to-do-panning-in-all-the-directions-at-a-time-in-wpf-diagram)
 
-[How to deactivate the rubberbandzoom in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15535/how-to-deactivate-the-rubberbandzoom-in-the-wpf-diagram-sfdiagram)
+[How to deactivate the rubber band zoom in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15535/how-to-deactivate-the-rubberbandzoom-in-the-wpf-diagram-sfdiagram)
 
 [How to use the Magnifier control in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17727/how-to-use-the-magnifier-control-in-the-wpf-diagram-sfdiagram)

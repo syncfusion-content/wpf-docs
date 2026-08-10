@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Snapping in WPF Diagram control | Syncfusion®
-description: Learn here all about Snapping support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Snapping in WPF SfDiagram | Syncfusion®
+description: Learn about snapping in Syncfusion® WPF SfDiagram, including snap-to-objects, snap-to-lines, dock port snapping, and indicator customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Snapping in WPF Diagram (SfDiagram)
+# Snapping in WPF SfDiagram
 
 When you draw, resize, or move a diagramming element in the page, you can set it, so that it will align or snap to the nearest intersection in the page even when the grid is visible or not. However, you can control the alignment and snap-to capabilities of elements by using the snapping option of `SfDiagram`.
 
