@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF AI AssistView control | Syncfusion
-description: Learn about getting started with the Syncfusion WPF AI AssistView (SfAIAssistView) control with its basic features.
+title: Getting Started with WPF SfAIAssistView | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF SfAIAssistView control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: AI AssistView
 documentation: ug
 ---
 
-# Getting Started with WPF AI AssistView
+# Getting Started with WPF SfAIAssistView
 
 This section explains the steps required to add the WPF [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control with its basic features.
 
