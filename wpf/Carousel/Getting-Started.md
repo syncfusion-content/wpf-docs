@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Carousel control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Essential Studio® WPF Carousel control, its elements and more.
+title: Getting Started with WPF Carousel | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Carousel control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: Carousel
 documentation: ug
@@ -19,7 +19,7 @@ This section explains how to create a [WPF Carousel](https://www.syncfusion.com/
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#carousel) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
+Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuget packages in a WPF application.
 
 ## Adding WPF Carousel via designer
 

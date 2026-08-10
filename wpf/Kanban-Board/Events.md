@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events | SfKanban | WPF | Syncfusion
-description: This section contains the detailed information about the Kanban dragging and column generated events.
+title: Events in WPF SfKanban | Syncfusion
+description: Learn about Events support in Syncfusion WPF SfKanban, including card selection, drag-and-drop operations, and workflow-related interactions.
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
 
-# Events in WPF Kanban (SfKanban) Control
+# Events in WPF SfKanban
 
 This section describes the events raised by the [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control for card interactions, drag-and-drop operations, and column generation.
 
