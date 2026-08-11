@@ -9,50 +9,41 @@ documentation: ug
 
 # Getting Started with WPF TaskBar
 
-This section guides you on getting started with the TaskBar control. It covers the following topics:
-
-## Overview of the TaskBar control
-
-The TaskBar control provides a UI similar to the Windows Explorer taskbar. It provides a consistent UI for placing commonly used functionalities as grouped items. You can place any container panel control inside the TaskBar. For example, when a customized `Grid` with other controls is placed inside a `TaskBarItem`, they are automatically arranged within the `TaskBar.Items` collection. The TaskBar supports the following built-in visual styles: Office2007Blue, Office2007Black, Office2007Silver, Office2003, and Blend.
-
-![Displaying TaskBar control](Getting-Started_images/Getting-Started_img1.jpeg)
-
-## Why choose the TaskBar control
-
-Here are some highlights of the TaskBar control.
-
-* Windows Explorer taskbar appearance can be achieved
-* Horizontal and vertical layouts for TaskBar boxes
-* Provides support to customize the background, header size, and collapse/expand the TaskBar header
-* Keyboard navigation support
-* Ability to specify custom group margin and padding
-* Supports built-in visual styles - Default, Win XP, Zune, Aero, Office2007Blue, Office2007Black, Office2007Silver, Office2003, Blend, LunaRoyale, LunaHomestead, and LunaMetallic
+This section explains how to get started with the TaskBar control. It covers the following topics:
 
 ## Creating the TaskBar
 
-There are two possible ways to create a simple TaskBar control.
+You can create a TaskBar control in the following ways:
 
 ### Through the designer
 
-To create the TaskBar control through the designer, do the following steps:
+To create the TaskBar control using the designer, follow these steps:
 
-1. Drag the TaskBar control from the toolbox onto your WPF application.
+1. Drag the TaskBar control from the Toolbox and drop it onto your WPF application.
+   ![Adding TaskBar control via designer](Getting-Started_images/Getting-Started_img2.jpeg)
 
-     ![Adding TaskBar control via designer](Getting-Started_images/Getting-Started_img2.jpeg)
-
-2. Set the properties for the TaskBar in design mode by using the Smart Tag feature (for example, set `Name`, `Orientation`, and add `TaskBarItem` children).
+2. Use the Smart Tag feature to configure TaskBar properties such as Name, Orientation, and TaskBarItem children.
 
 ### Programmatically
 
-The TaskBar control is created by using either XAML or C# code. Before using the control, install the required NuGet package and reference the necessary assemblies/namespaces:
+You can create the TaskBar control using either XAML or C# code. Before using the TaskBar control, install the required NuGet package and add the necessary assembly references and namespaces.
 
-* **NuGet package:** `Syncfusion.Tools.WPF` (install with `Install-Package Syncfusion.Tools.WPF`)
-* **Assemblies added by the package:**
+#### Required NuGet Package
+
+Install the package using the NuGet Package Manager Console:
+
+```powershell
+Install-Package Syncfusion.Tools.WPF
+```
+#### Required Assemblies
+
+Add the following assemblies to your project:
   * `Syncfusion.Tools.WPF`
   * `Syncfusion.Shared.WPF`
-* **Namespaces to register:**
-  * XAML: `xmlns:syncfusion="http://schemas.syncfusion.com/wpf"` on the root element
-  * C#: `using Syncfusion.Windows.Tools.Controls;`
+
+#### Required Namespaces
+  * XAML: `xmlns:syncfusion="http://schemas.syncfusion.com/wpf"`
+  * C#: `Syncfusion.Windows.Tools.Controls`
 
 {%tabs%}
 {% highlight xaml %}
@@ -92,15 +83,15 @@ public partial class MainWindow : Window
 {% endhighlight %}
 {%endtabs%}
 
-The following screenshot shows the TaskBar control.
+Build and run the application. The TaskBar control is displayed in the main window, as shown below.
 
-![Programmatically adding TaskBar control](Getting-Started_images/Getting-Started_img3.jpeg)
+![WPF TaskBar Control](Getting-Started_images/Getting-Started_img3.jpeg)
 
 ## Theme
 
-The TaskBar supports various built-in themes. Refer to the following links to apply themes to the TaskBar:
+The TaskBar control supports a variety of built-in themes. Refer to the following pages to learn how to apply themes to the TaskBar control:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF TaskBar control](Getting-Started_images/Theme.png)
+![Setting theme to WPF TaskBar Control](Getting-Started_images/Theme.png)
