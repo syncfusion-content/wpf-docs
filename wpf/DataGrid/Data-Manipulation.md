@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CRUD Operations in WPF DataGrid control | Syncfusion®
-description: Learn here all about CRUD Operations support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
+title: CRUD Operations in WPF SfDataGrid | Syncfusion®
+description: CRUD Operations in SfDataGrid enables creating, reading, updating, and deleting records with flexible editing and data management features.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# CRUD Operations in WPF DataGrid (SfDataGrid)
+# CRUD Operations in WPF SfDataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/wpf/datagrid/editing), [add new row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#built-in-addnewrow), [delete row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#deletion) by pressing <kbd>Delete</kbd> key.
 
