@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Tabbed MDI Form control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control, its elements and more.
+title: About Syncfusion WPF Tabbed MDI Form Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF Tabbed MDI Form control and more details.
 platform: WPF
 control: DocumentContainer
 documentation: ug
 ---
 
-# WPF Tabbed MDI Form (DocumentContainer) Overview
+# About Syncfusion WPF Tabbed MDI Form Control
 
 A DocumentContainer is a control that is used for holding the documents, controls and panels inside it. Using a DocumentContainer you can create interfaces like MDI and TDI, which can make the end-user to create easily navigable applications. This help section will demonstrate all the important properties of the DocumentContainer that will help the end-user to know about all the available features.
 

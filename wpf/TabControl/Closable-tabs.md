@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Close tabs in WPF TabControl control | Syncfusion®
-description: Learn here all about Close tabs support in Syncfusion® WPF TabControl (TabControlExt) control and more.
+title: Close Tabs in WPF TabControl | Syncfusion®
+description: Close tab items in the Syncfusion WPF TabControl (TabControlExt) using the built-in close button and close button type options.
 platform: WPF
 control: TabControlExt
 documentation: ug
 ---
 
-# Close tabs in WPF TabControl (TabControlExt)
+# Close Tabs in WPF TabControl
 
 This section explains how to close the tab item and its functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 

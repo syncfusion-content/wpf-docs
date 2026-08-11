@@ -1,13 +1,13 @@
 ---
 layout: post
-title: setting mode for document container in Tabbed MDI Form | Syncfusion®
-description: Learn here all about setting mode for document container support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
+title: Setting Mode in WPF Tabbed MDI Form | Syncfusion®
+description: Switch the document container between MDI and TDI modes in the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control as needed.
 platform: WPF
 control: DocumentContainer
 documentation: ug
 ---
 
-# setting mode for document container in WPF Tabbed MDI Form
+# Setting Mode in WPF Tabbed MDI Form
 
 Document Container supports two important modes which are listed below. 
 

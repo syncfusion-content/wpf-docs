@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF Toast Notification | Syncfusion®
-description: Learn how to get started with Syncfusion® WPF Toast Notification (SfToastNotification) by showing a basic toast and using supported toast modes.
+description: Learn how to get started with the Syncfusion WPF Toast Notification control, its elements, and more details.
 platform: wpf
 control: SfToastNotification
 documentation: ug

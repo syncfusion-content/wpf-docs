@@ -1,13 +1,13 @@
 ---
 layout: post
-title: State Persistence in WPF Tabbed MDI Form control | Syncfusion®
-description: Learn here all about State Persistence support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
+title: State Persistence in WPF Tabbed MDI Form | Syncfusion®
+description: Persist the layout and state of the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control across application sessions using serialization.
 platform: WPF
 control: DocumentContainer
 documentation: ug
 ---
 
-# State Persistence in WPF Tabbed MDI Form (DocumentContainer)
+# State Persistence in WPF Tabbed MDI Form
 
 This topic illustrates loading and saving the dock state in various places. It also gives information about resetting and deleting the states.
 

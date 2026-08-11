@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hint Position in WPF TextInputLayout | Syncfusion®
-description: Hint Position in SfTextInputLayout enables controlling how hint labels float, remain visible, or hide based on input focus.
+title: Hint Position in WPF TextInputLayout | Syncfusion
+description: Place the hint or label of the Syncfusion WPF TextInputLayout (SfTextInputLayout) control at the desired floating or persistent position.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Hint Position in WPF TextInputLayout (SfTextInputLayout)
+# Hint Position in WPF TextInputLayout
 
 We can decide how the floating label will display by setting the `HintFloatMode` property.
 

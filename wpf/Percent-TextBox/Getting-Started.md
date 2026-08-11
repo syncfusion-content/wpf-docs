@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Percent TextBox control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Essential Studio® WPF Percent TextBox control, its elements and more.
+title: Getting Started with WPF Percent TextBox | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF Percent TextBox control. Explore setup, features, examples, and customization options.
 platform: WPF
 control: PercentTextBox
 documentation: ug

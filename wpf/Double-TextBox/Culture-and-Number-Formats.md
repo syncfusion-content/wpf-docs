@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Culture and Formatting in WPF Double TextBox control | Syncfusion®
-description: Learn about Culture and Formatting support in Syncfusion® WPF Double TextBox control, its elements and more.
+title: Culture and Formatting in WPF Double TextBox | Syncfusion®
+description: Format the double value in the Syncfusion WPF Double TextBox control using culture settings, number formats, and grouping separators.
 platform: WPF
 control: DoubleTextBox
 documentation: ug

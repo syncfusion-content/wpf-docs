@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | PinnableListBox | wpf | Syncfusion®
-description: Learn here about Appearance in Syncfusion® Essential Studio® WPF PinnableListBox control, its elements, and more.
+title: Appearance in WPF PinnableListBox | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF PinnableListBox control using built-in themes, custom templates, and styling options.
 platform: WPF
 control: PinnableListBox 
 documentation: ug
 ---
 
-# Appearance in WPF PinnableListBox Control   
+# Appearance in WPF PinnableListBox   
 
 ## Setting VisualStyle for PinnableListBox
 
