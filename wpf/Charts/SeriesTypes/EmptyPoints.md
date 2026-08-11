@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Empty Points in WPF Charts control | Syncfusion
-description: Learn here all about Empty Points support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Empty Points in WPF Charts | Syncfusion®
+description: Empty points in the WPF Chart handle missing data values by skipping, displaying, or interpolating points within a series.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Empty Points in WPF Charts (SfChart)
+# Empty Points in WPF Charts
 
 The data collection that is passed to the chart can have NaN or Null values that are considered as empty points. The empty point can be defined as in the below code example.
 

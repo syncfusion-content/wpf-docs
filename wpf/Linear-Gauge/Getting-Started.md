@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with WPF LinearGauge Control | Syncfusion
-description: A quick tour to adding gauge reference, initial users for getting started with Syncfusion linear gauge control for WPF platform.
+title: Getting Started with WPF Linear Gauge | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Linear Gauge control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfLinearGauge
 documentation: ug
 ---
-# Getting Started with SfLinearGauge
+# Getting Started with WPF Linear Gauge
 
 This section explains the steps required to configure the [`SfLinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control in a real-time scenario and provides a walk-through on its customization features.
 

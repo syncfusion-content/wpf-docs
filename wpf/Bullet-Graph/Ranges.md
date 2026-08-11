@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ranges in WPF Bullet Graph control | Syncfusion
-description: Learn about range support in the Syncfusion WPF SfBulletGraph control, including range customization, styling, and value visualization.
+title: Ranges in WPF Bullet Graph | Syncfusion®
+description: Ranges in the WPF Bullet Graph highlight specific value intervals, helping visualize performance levels, thresholds, and target comparisons.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Ranges in WPF Bullet Graph (SfBulletGraph)
+# Ranges in WPF Bullet Graph
 
 Ranges for a bullet graph are a collection of qualitative ranges. A qualitative range is a visual element that begins at [`RangeStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeStart) and ends at a specified [`RangeEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.QualitativeRange.html#Syncfusion_UI_Xaml_BulletGraph_QualitativeRange_RangeEnd), continuing from the previous range's RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
 

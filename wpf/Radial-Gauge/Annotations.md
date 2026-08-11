@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotations in WPF Radial Gauge control | Syncfusion
-description: Learn here all about Annotations support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
+title: Annotations in WPF Radial Gauge | Syncfusion®
+description: Annotations in the WPF Radial Gauge allow you to add custom text, shapes, and UI elements to provide additional gauge information.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Annotations in WPF Radial Gauge (SfCircularGauge)
+# Annotations in WPF Radial Gauge
 
 SfCircularGauge supports annotations, which allow you to mark a specific area of interest in the circular gauge. You can place custom views as annotations. Text and images can also be added by using the `Annotations` property.
 

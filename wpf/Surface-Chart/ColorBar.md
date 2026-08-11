@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ColorBar in WPF Surface Chart control | Syncfusion
-description: Learn here all about ColorBar support in Syncfusion WPF Surface Chart (SfSurfaceChart) control and more.
+title: ColorBar in WPF Surface Chart | Syncfusion®
+description: ColorBar in the WPF Surface Chart displays the relationship between colors and data values, improving interpretation of surface data.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
 ---
 
-# ColorBar in WPF Surface Chart (SfSurfaceChart)
+# ColorBar in WPF Surface Chart
 
 The [`ColorBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ColorBar) is used to represent the value range in a surface via colors. You can define a color bar for the surface chart as shown in the following code example. 
 

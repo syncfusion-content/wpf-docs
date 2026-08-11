@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Animation in WPF Sunburst Chart control | Syncfusion
-description: Learn here all about Animation support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
+title: Animation in WPF Sunburst Chart | Syncfusion®
+description: Animation in the WPF Sunburst Chart provides smooth visual transitions for rendering hierarchical data and interactive updates.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Animation in WPF Sunburst Chart (SfSunburstChart)
+# Animation in WPF Sunburst Chart
 
 The Sunburst Chart allows you to animate the chart segments. You can enable animation using the [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_EnableAnimation) property. You can also set the duration for animation by using the [`AnimationDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_AnimationDuration) property.
 
