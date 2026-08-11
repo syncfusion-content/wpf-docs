@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Symbology Settings in WPF Barcode control | Syncfusion
-description: Learn about Symbology Settings in the Syncfusion WPF SfBarcode control and configure barcode-specific encoding options.
+title: Symbology Settings in WPF Barcode | Syncfusion®
+description: Symbology settings in the WPF Barcode allow you to configure barcode-specific encoding options and customize barcode generation.
 platform: wpf
 control: SfBarcode
 documentation: ug
 ---
 
-# Symbology Settings in WPF Barcode (SfBarcode)
+# Symbology Settings in WPF Barcode
 
 Each Barcode symbol can be associated with optional settings that may affect that specific barcode. The code sample below shows the settings of a Code39 barcode.
 

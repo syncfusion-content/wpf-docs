@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Charts control | Syncfusion
-description: Learn here about getting started with Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
+title: Getting Started with WPF Charts control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Charts control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Getting Started with WPF Charts (SfChart)
+# Getting Started with WPF Charts
 
 This section explains the steps required to populate the chart with data, header, data labels, legend, and tooltips in the chart. This section covers only the minimal features that you need to learn to get started with the chart.
 

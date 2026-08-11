@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axis in WPF SfChart3D control | Syncfusion
-description: Learn about Axis support in Syncfusion Essential Studio® WPF SfChart3D control, its elements and more.
+title: Axis in WPF 3D Chart | Syncfusion®
+description: Axis in the WPF 3D Chart defines data scales, ranges, labels, and intervals to organize and present chart data effectively.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Axis in WPF SfChart3D
+# Axis in WPF 3D Chart
 
 [`ChartAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis and a horizontal (X) axis. 
 

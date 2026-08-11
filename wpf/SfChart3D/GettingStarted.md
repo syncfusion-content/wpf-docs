@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF SfChart3D control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio® WPF SfChart3D control, its elements and more.
+title: Getting Started with WPF 3D Chart control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF 3D Chart control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Getting Started with WPF SfChart3D
+# Getting Started with WPF 3D Chart
 
 This section explains the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
 
