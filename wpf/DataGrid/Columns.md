@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in WPF SfDataGrid | Syncfusion®
-description: Learn about Columns in Syncfusion® WPF SfDataGrid control. Configure, customize, and manage column types, layouts, and behaviors efficiently.
+description: Columns in SfDataGrid supports auto-generated and custom columns, column types, resizing, reordering, freezing, and data binding.
 platform: wpf
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in WPF SfDataGrid | Syncfusion®
-description: Learn about Grouping in Syncfusion® WPF SfDataGrid control. Organize and display data in groups to improve readability and simplify data analysis.
+description: Grouping in SfDataGrid organizes and displays data in groups to improve readability, navigation, and data analysis.
 platform: wpf
 control: SfDataGrid
 documentation: ug

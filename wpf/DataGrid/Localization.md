@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in WPF SfDataGrid | Syncfusion®
-description: Learn about Localization in Syncfusion® WPF SfDataGrid control. Customize grid content and UI elements to support multiple languages and regional settings.
+description: Localization in SfDataGrid customizes grid content and user interface elements to support multiple languages and regional settings.
 platform: wpf
 control: SfDataGrid
 documentation: ug

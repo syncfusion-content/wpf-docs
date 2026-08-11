@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Automation in WPF SfDataGrid | Syncfusion®
-description: Learn about UI Automation in Syncfusion® WPF SfDataGrid control. Enable accessibility and automated testing support through UI Automation providers.
+description: UI Automation in  SfDataGrid enables accessibility and automated testing support through built in UI Automation providers for grid elements.
 platform: wpf
 control: SfDataGrid
 documentation: ug

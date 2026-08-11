@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Themes in WPF SfDataGrid | Syncfusion®
-description: Learn about Themes in Syncfusion® WPF SfDataGrid control. Apply built-in themes to customize the grid appearance and deliver a consistent user experience.
+description: Themes in SfDataGrid apply built in themes to customize grid appearance and maintain a consistent visual experience across applications.
 platform: wpf
 control: SfDataGrid
 documentation: ug

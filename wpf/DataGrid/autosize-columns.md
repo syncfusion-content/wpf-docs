@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoSize Columns in WPF SfDataGrid | Syncfusion®
-description: Learn about AutoSize Columns in Syncfusion® WPF SfDataGrid control. Automatically size columns based on content, headers, and available space.
+description: AutoSize Columns in SfDataGrid automatically adjusts column widths based on content, headers, and available space, with customizable sizing options.
 platform: wpf
 control: SfDataGrid
 documentation: ug

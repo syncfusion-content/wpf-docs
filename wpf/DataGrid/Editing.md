@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in WPF SfDataGrid | Syncfusion®
-description: Learn about Editing in Syncfusion® WPF SfDataGrid control. Modify, update, and manage data records with built-in editing capabilities.
+description: Editing in SfDataGrid provides built-in features to add, modify, and update records with validation and customizable editing behavior.
 platform: wpf
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive Features in WPF SfDataGrid | Syncfusion®
-description: Learn about Interactive Features in Syncfusion® WPF SfDataGrid control. Use the Column Chooser to show or hide grid columns dynamically at runtime.
+description: Interactive Features in SfDataGrid provides Column Chooser support to show or hide grid columns dynamically at runtime.
 platform: wpf
 control: SfDataGrid
 documentation: ug

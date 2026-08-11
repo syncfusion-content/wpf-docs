@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVVM in WPF SfDataGrid | Syncfusion®
-description: Learn about MVVM in Syncfusion® WPF SfDataGrid control. Integrate the grid with the MVVM pattern to manage data, commands, and UI interactions effectively.
+description: MVVM in SfDataGrid enables seamless integration with the MVVM pattern for managing data, commands, and user interactions effectively.
 platform: wpf
 control: SfDataGrid
 documentation: ug

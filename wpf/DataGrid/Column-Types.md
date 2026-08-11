@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types in WPF SfDataGrid | Syncfusion®
-description: Learn about Column Types in Syncfusion® WPF SfDataGrid control. Use different column types to display, edit, and customize data effectively.
+description: Column Types in SfDataGrid provides built-in and custom column types to display, edit, format, and customize data effectively.
 platform: wpf
 control: SfDataGrid
 documentation: ug

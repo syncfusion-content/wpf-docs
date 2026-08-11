@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Master Details View in WPF SfDataGrid | Syncfusion®
-description: Learn about Master Details View in Syncfusion® WPF SfDataGrid control. Display hierarchical data with expandable views to show related records and details.
+description: Master Details View in SfDataGrid displays hierarchical data through expandable views to show related records and details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

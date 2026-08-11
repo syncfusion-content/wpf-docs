@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Validation in WPF SfDataGrid | Syncfusion®
-description: Learn about Data Validation in Syncfusion® WPF SfDataGrid control. Validate user input, display errors, and maintain data integrity effectively.
+description: Data Validation in SfDataGrid helps validate user input, display validation errors, and maintain accurate data with customizable validation rules.
 platform: wpf
 control: SfDataGrid
 documentation: ug
