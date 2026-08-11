@@ -9,17 +9,18 @@ documentation: ug
 
 # Getting Started with WPF Rating (SfRating)
 
-This section explains how to configure the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in the SfRating control.
+This section explains how to get started with the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control and demonstrates some of its basic customization features.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfrating) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfrating) section for the list of assemblies and NuGet packages required to use the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control in a WPF application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link:
+For more information about installing NuGet packages in a WPF application, refer to the following article:
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Creating Application with SfRating control
-In this walkthrough, you will create a WPF application that contains the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control.
+In this walkthrough, you will create a WPF application that hosts the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control.
+
 1. [Creating the project](#creating-the-project)
 2. [Adding the control via the designer](#adding-the-control-via-the-designer)
 3. [Adding the control manually in XAML](#adding-the-control-manually-in-xaml)
@@ -27,33 +28,33 @@ In this walkthrough, you will create a WPF application that contains the [SfRati
 
 ## Creating the project
 
-The following section provides detailed information to create a new project in Visual Studio to display the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control.
+The following steps describe how to create a WPF project in Visual Studio and add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control to it.
 
 1. Open Visual Studio and click **File → New → Project**.
 2. Select **WPF App (.NET Framework)** or **WPF Application (.NET)** depending on your target framework.
-3. Name the project **SfRating_GettingStarted** and click **Create**.
+3. Name the project **SfRatingSample** and click **Create**.
 
 ## Adding the control via the designer
-The [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control can be added to the application by dragging it from the Toolbox and dropping it in the designer. The required assembly will be added automatically.
+You can add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control to your application by dragging it from the **Toolbox** and dropping it onto the designer surface. The required assembly references are added automatically.
 
 1. If the Toolbox is not visible, open it from **View → Toolbox**.
 2. In the Toolbox search box, type **SfRating** and locate the control under the **Syncfusion WPF** tab.
 3. Drag **SfRating** onto the designer surface of `MainWindow.xaml`.
 
-![Adding Control via Designer in WPF Rating](getting-started-images/wpf-rating-add-control-designer.png)
+![Adding WPF SfRating Control via Designer](getting-started-images/wpf-rating-add-control-designer.png)
 
 ## Adding the control manually in XAML
 
-To add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control manually in XAML, do the following:
+To add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control manually in XAML, follow these steps:
 
 1. Add the required assembly references to the project:
 
    * Syncfusion.SfInput.WPF
    * Syncfusion.SfShared.WPF
    
-2. Import the Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` in the XAML page.
+2. Import the Syncfusion WPF namespace `http://schemas.syncfusion.com/wpf` in the XAML page.
 
-3. Declare [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) in the XAML page.
+3. Add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control to the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -80,7 +81,7 @@ To add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Cont
 
 ## Adding the control manually in C#
 
-To add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control manually in C#, do the following:
+To add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control manually in C#, follow these steps:
 
 1. Add the required assembly references to the project:
 
@@ -89,7 +90,7 @@ To add the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Cont
 
 2. Import the SfRating namespace `Syncfusion.Windows.Controls.Input`.
 
-3. Create an SfRating control instance and add it to the window.
+3. Create an instance of the SfRating control and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -127,7 +128,7 @@ namespace SfRatingSample
 
 ## Customizing the number of rating items
 
-The number of rating items to be displayed can be customized using the [ItemsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html#Syncfusion_Windows_Controls_Input_SfRating_ItemsCount) property in the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control.
+Use the [ItemsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html#Syncfusion_Windows_Controls_Input_SfRating_ItemsCount) property to specify the number of rating items displayed in the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control.
 
 N> The default value of `ItemsCount` is `0`, so no items render until you set this property to a positive integer.
 
@@ -146,7 +147,6 @@ SfRating rating = new SfRating()
     ItemsCount = 5,
     Width = 150
 };
-this.Content = rating;
 
 {% endhighlight %}
 
@@ -154,7 +154,7 @@ this.Content = rating;
 
 ## Setting the value
 
-You can set the selected value among the rating items in the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html#Syncfusion_Windows_Controls_Input_SfRating_Value) property. The valid range is `0` to `ItemsCount`.
+Use the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html#Syncfusion_Windows_Controls_Input_SfRating_Value) property to specify the currently selected rating. The valid range is from 0 to the value specified by _ItemsCount_.
 
 N> By default, the value of this property is `0`.
 
@@ -174,7 +174,6 @@ SfRating rating = new SfRating()
     Width = 150,
     Value = 3
 };
-this.Content = rating
 
 {% endhighlight %}
 
@@ -182,7 +181,7 @@ this.Content = rating
 
 ## Setting the selection precision
 
-The [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control provides options to rate items as full, half, or exact values using the [Precision](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html#Syncfusion_Windows_Controls_Input_SfRating_Precision) property.
+Use the [Precision](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html#Syncfusion_Windows_Controls_Input_SfRating_Precision) property to control whether users can select full, half, or exact rating values.
 
 N> By default, the value of the `Precision` property is `Standard`.
 
@@ -190,7 +189,7 @@ N> By default, the value of the `Precision` property is `Standard`.
 
 {% highlight xaml %}
 
-<syncfusion:SfRating ItemsCount="5" Precision="Exact" Width="150"/>
+<syncfusion:SfRating ItemsCount="5" Value="3" Precision="Exact" Width="150"/>
 	
 {% endhighlight %}
 
@@ -200,24 +199,24 @@ SfRating rating = new SfRating()
 {
     ItemsCount = 5,
     Width = 150,
+	Value = 3,
     Precision = Syncfusion.Windows.Primitives.Precision.Exact
 };
-this.Content=rating;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![SfRating Getting Started](images/gettingstarted.png)
+![WPF SfRating Control](images/gettingstarted.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/SfRating-getting-started)
 
 ## Theme
 
-SfRating supports various built-in themes. Refer to the links below to apply themes for the SfRating:
+SfRating supports a variety of built-in themes. Refer to the following articles to learn how to apply themes:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting Theme in WPF Rating](getting-started-images/wpf-rating-setting-theme.png)
+![Setting Theme in WPF Rating](getting-started-images/wpf-rating-setting-theme.png)
