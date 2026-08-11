@@ -1,25 +1,27 @@
 ---
 layout: post
-title: Syncfusion AI Tools Prompt Library | Syncfusion
-description: Explore the AI Tools Prompt Library to enhance WPF development productivity with code generation, configuration examples, and contextual guidance.
-control: Syncfusion AI Tools Prompt Library
+title: Syncfusion AI Coding Assistants Tools Prompt Library | Syncfusion
+description: Explore the AI Coding Assistants Tools Prompt Library to boost WPF productivity with code generation, configuration examples, and contextual guidance.
+control: Syncfusion AI Coding Assistants Tools Prompt Library
 platform: wpf
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prompt Library for Syncfusion AI Tools
+# Prompt Library for Syncfusion AI Coding Assistants Tools
 
 Speed up WPF development using these ready-made prompts for popular Syncfusion components. Each prompt is short, easy to understand, and focused on real tasks—like quick setups, tweaks, and fixes.
 
 ## How to use
 
-These prompts can be used with the MCP server or agent skills to streamline your development workflow.
+These prompts can be used with the MCP server or agent skills to streamline your development workflows.
 
 * Choose a prompt that fits your needs.
-* Customize the prompt for your specific use case.
-* Execute the prompt using your preferred AI tool (MCP server or agent skills).
-* Always review and test the generated code before adding it to your project.
+* Customize the prompt as needed before running it.
+* Run the prompt using either of the following AI tools:
+  * **MCP Server**: Tool can start automatically based on the query, or can be invoked explicitly using `#search_docs`.
+  * **Skills**: Skills can also run automatically based on the query, or can be called explicitly using the `/syncfusion-wpf-grid` skill.
+* Always review and test the generated code before adding it to the project.
 
 ## Component-specific Prompts
 
