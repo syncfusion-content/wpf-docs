@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export To PDF in WPF SfDataGrid | Syncfusion®
-description: Export to PDF in SfDataGrid exports grid data to PDF documents while preserving content, layouts, formatting, and visual styles.
+description: Export To PDF in SfDataGrid exports grid data to PDF documents while preserving content, layouts, formatting, and visual styles.
 platform: wpf
 control: SfDataGrid
 documentation: ug

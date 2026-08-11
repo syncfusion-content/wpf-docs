@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Rows in WPF SfDataGrid | Syncfusion®
-description: Unbound Rows in  SfDataGrid display custom rows for calculations, summaries, and additional information independent of the data source.
+description: Unbound Rows in SfDataGrid display custom rows for calculations, summaries, and additional information independent of the data source.
 platform: wpf
 control: SfDataGrid
 documentation: ug
