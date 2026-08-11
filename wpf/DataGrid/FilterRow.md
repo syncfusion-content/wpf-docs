@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filter Row in WPF DataGrid control | Syncfusion®
-description: Learn here all about Filter Row support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Filter Row in WPF SfDataGrid | Syncfusion®
+description: Learn about Filter Row in Syncfusion® WPF SfDataGrid control. Filter data directly within the grid using an interactive row for quick data refinement.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Filter Row in WPF DataGrid (SfDataGrid)
+# Filter Row in WPF SfDataGrid
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterRowPosition.html) property.
 
 {% tabs %}
