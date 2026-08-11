@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Custom Snapping in WPF Diagram control | Syncfusion®
-description: Learn here all about Custom Snapping support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: Custom Snapping in WPF SfDiagram | Syncfusion®
+description: Customize snapping behavior in Syncfusion® WPF SfDiagram by defining snap intervals and rotation angles for precise element alignment.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Custom Snapping in WPF Diagram (SfDiagram)
+# Custom Snapping in WPF SfDiagram
 
 Snapping process can be customized by changing its snapping interval and snapping angle.
 

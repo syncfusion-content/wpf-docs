@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Straight segments of connectors | Syncfusion®
-description: What are the segment types and how to draw, select, and edit the straight segments of connectors in the diagram control.
+title: Straight Segments in WPF SfDiagram | Syncfusion®
+description: Learn about straight connector segments in Syncfusion® WPF SfDiagram control, including segment creation, editing, splitting, and runtime customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Straight Segments creation and customization
+# Straight Segments in WPF SfDiagram
 
 The path of the Connector is defined with a collection of [`Segments`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Segments) and each segment represents a line between two points. By default, connector type will be identified using the value of `DefaultConnectorType` property of Diagram. It changes the entire connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are four types of segments,
 

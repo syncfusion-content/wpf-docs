@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Preview Settings in WPF Diagram Control | Syncfusion®
+title: Preview Settings in WPF SfDiagram control | Syncfusion®
 description: How to select and edit nodes and connectors during runtime and how to arrange the node and connectors while dragging?
 platform: wpf
 control: SfDiagram

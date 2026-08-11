@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gridlines in WPF Diagram control | Syncfusion®
-description: Learn here all about Gridlines support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Gridlines in WPF SfDiagram | Syncfusion®
+description: Learn about gridlines in Syncfusion® WPF SfDiagram control, including grid visibility, styling, spacing customization, and static gridline behavior.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Gridlines in WPF Diagram (SfDiagram)
+# Gridlines in WPF SfDiagram
 
 [Gridlines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html) are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
 
