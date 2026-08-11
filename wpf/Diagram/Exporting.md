@@ -202,10 +202,10 @@ SfDiagram provides the supports to strech the exported image within given image 
 
 | ImageShrunk | Description |
 |---|---|
-| None | Exported image will not be streched |
-| Expand | Exported image will be expaned to the given image size |
-| Shrink| Exported image will be shrinked to the given image size |
-| BestFit| Exported image will be expaned/shrinked depends on given image size |
+| None | Exported image will not be stretched |
+| Expand | Exported image will be expand to the given image size |
+| Shrink| Exported image will be shrink to the given image size |
+| BestFit| Exported image will be expand/shrink depends on given image size |
 
 {% tabs %}
 {% highlight xaml %}
