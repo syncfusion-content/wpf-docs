@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Transform Latitude and Longitude in WPF Maps | Syncfusion®
+title: How to transform latitude and longitude in WPF Maps | Syncfusion®
 description: Transform latitude and longitude values to pixel coordinates and convert pixel values back to geographic coordinates in WPF Maps.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# How to Transform Latitude and Longitude in WPF Maps
+# How to transform latitude and longitude in WPF Maps
 
 SfMap offers two utility methods to transform the pixel values to longitude and latitude values and vice-versa. These methods are used for both ShapeFileLayer and ImageryLayer.
 

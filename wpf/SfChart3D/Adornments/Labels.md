@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Label in WPF SfChart3D | Syncfusion®
-description: Data labels in the WPF SfChart3D display data point values directly on the chart, improving readability and data interpretation.
+title: Data Label in WPF 3D Chart | Syncfusion®
+description: Data labels in the WPF 3D Chart display data point values directly on the chart, improving readability and data interpretation.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Data Label in WPF SfChart3D
+# Data Label in WPF 3D Chart
 
 Data points can be easily annotated with labels to help improve the readability of data.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Dynamically Add a Range of Points in WPF Chart| Syncfusion®
+title: How to dynamically add a range of points in WPF Chart| Syncfusion®
 description: Add a range of points dynamically in the WPF Chart to update chart data efficiently and reflect changes in real time.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# How to Dynamically Add a Range of Points in WPF Chart
+# How to dynamically add a range of points in WPF Chart
 
 Whenever you add a data point to ItemsSource dynamically, corresponding data will be updated inside chart series synchronously. This operation will be happening for each and every data point that we add subsequently. You can avoid this by calling SuspendSeriesNotification method of Chart before adding range of data points and then call ResumeSeriesNotification to update all the data points that have been added between these two method calls.
 

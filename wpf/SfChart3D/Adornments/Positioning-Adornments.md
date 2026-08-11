@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Positioning Data Markers in WPF SfChart3D | Syncfusion®
-description: Positioning data markers in the WPF SfChart3D allows you to customize marker placement relative to data points for better visibility.
+title: Positioning Data Markers in WPF 3D Chart | Syncfusion®
+description: Positioning data markers in the WPF 3D Chart allows you to customize marker placement relative to data points for better visibility.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Positioning Data Markers in WPF SfChart3D
+# Positioning Data Markers in WPF 3D Chart
 
 The positioning of adornments inside the series is defined using the [`AdornmentPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
 
