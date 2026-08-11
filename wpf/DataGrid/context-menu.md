@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu in WPF SfDataGrid | Syncfusion®
-description: Learn about Context Menu in Syncfusion® WPF SfDataGrid control. Add and customize context menu options to enhance user interaction and data management.
+description: Context Menu in SfDataGrid provides customizable menu options for rows, cells, and columns to enhance user interaction and productivity.
 platform: wpf
 control: SfDataGrid
 documentation: ug

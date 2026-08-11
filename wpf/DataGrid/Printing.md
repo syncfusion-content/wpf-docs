@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in WPF SfDataGrid | Syncfusion®
-description: Learn about Printing in Syncfusion® WPF SfDataGrid control. Print grid data with customizable layouts, formatting, and page settings for professional output.
+description: Printing in SfDataGrid prints grid data with customizable layouts, formatting, and page settings for professional output.
 platform: wpf
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in WPF SfDataGrid | Syncfusion®
-description: Learn about Filtering in Syncfusion® WPF SfDataGrid control. Filter and refine data using built-in filtering options for efficient data analysis.
+description: Filtering in SfDataGrid refines and displays relevant data through built-in filtering options for efficient analysis and management.
 platform: wpf
 control: SfDataGrid
 documentation: ug

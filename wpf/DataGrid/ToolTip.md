@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in WPF SfDataGrid | Syncfusion®
-description: Learn about ToolTip in Syncfusion® WPF SfDataGrid control. Display additional information for cells, rows, and headers using customizable tooltips.
+description: ToolTip in SfDataGrid displays additional information for cells, rows, and headers through customizable tooltip support.
 platform: wpf
 control: SfDataGrid
 documentation: ug

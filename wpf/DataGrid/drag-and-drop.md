@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Drag and Drop in WPF SfDataGrid | Syncfusion®
-description: Learn about Row Drag and Drop in Syncfusion® WPF SfDataGrid control. Reorder, move, and manage rows interactively with drag-and-drop support.
+description: Row Drag and Drop in SfDataGrid provides drag-and-drop support for moving, reordering, and managing rows interactively.
 platform: wpf
 control: SfDataGrid
 documentation: ug

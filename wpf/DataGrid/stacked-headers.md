@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stacked Headers in WPF SfDataGrid | Syncfusion®
-description: Learn about Stacked Headers in Syncfusion® WPF SfDataGrid control. Group multiple columns under a common header to organize and present related data clearly.
+description: Stacked Headers in SfDataGrid groups related columns under shared header rows to organize data presentation and improve readability.
 platform: wpf
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Lines Customization in WPF SfDataGrid | Syncfusion®
-description: Learn about Grid Lines Customization in Syncfusion® WPF SfDataGrid control. Customize grid and header cell lines to enhance data presentation and readability.
+description: Grid Lines Customization in SfDataGrid customizes grid and header lines to improve data presentation, organization, and readability.
 platform: wpf
 control: SfDataGrid
 documentation: ug

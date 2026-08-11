@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WPF SfDataGrid | Syncfusion®
-description: Learn about Data Binding in Syncfusion® WPF SfDataGrid control. Bind data sources, manage collections, and display data with ease.
+description: Data Binding in SfDataGrid provides flexible data source binding, collection management, and efficient data display capabilities.
 platform: wpf
 control: SfDataGrid
 documentation: ug

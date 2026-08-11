@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Helpers in WPF SfDataGrid | Syncfusion®
-description: Learn about Helpers in Syncfusion® WPF SfDataGrid control. Use helper classes and methods to customize grid behavior and streamline development.
+description: Helpers in SfDataGrid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.
 platform: wpf
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging in WPF SfDataGrid | Syncfusion®
-description: Learn about Paging in Syncfusion® WPF SfDataGrid control. Display data in pages to improve navigation, performance, and user experience.
+description: Paging in SfDataGrid displays data in pages to improve navigation, performance, and the overall browsing experience.
 platform: wpf
 control: SfDataGrid
 documentation: ug

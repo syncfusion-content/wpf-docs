@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Operations in WPF SfDataGrid | Syncfusion®
-description: Learn about CRUD Operations in Syncfusion® WPF SfDataGrid control. Create, read, update, and delete records with flexible data management.
+description: CRUD Operations in SfDataGrid enables creating, reading, updating, and deleting records with flexible editing and data management features.
 platform: wpf
 control: SfDataGrid
 documentation: ug
