@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Validation in WPF DataGrid control | Syncfusion®
-description: Learn here all about Data Validation support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
+title: Data Validation in WPF SfDataGrid | Syncfusion®
+description: Data Validation in SfDataGrid helps validate user input, display validation errors, and maintain accurate data with customizable validation rules.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Data Validation in WPF DataGrid (SfDataGrid)
+# Data Validation in WPF SfDataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
  
