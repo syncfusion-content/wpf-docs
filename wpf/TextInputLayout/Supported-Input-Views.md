@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Input Views in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Supported Input Views support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+title: Supported Input Views in WPF TextInputLayout | Syncfusion
+description: Use the Syncfusion WPF TextInputLayout (SfTextInputLayout) control with its supported input views such as TextBox, ComboBox, and DatePicker.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Supported Input Views in WPF TextInputLayout (SfTextInputLayout)
+# Supported Input Views in WPF TextInputLayout
 
 Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property is applied with the ContentPropertyAttribute. The [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html) has the following controls as the supported input views.
 

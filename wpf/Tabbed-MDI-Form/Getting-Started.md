@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Tabbed MDI Form control | Syncfusion®
-description: Learn here all about getting started with Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
+title: Getting Started with WPF Tabbed MDI | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF Tabbed MDI Form control. Explore setup, features, examples, and customization options.
 platform: WPF
 control: DocumentContainer
 documentation: ug
 ---
 
-# Getting Started with WPF Tabbed MDI Form (DocumentContainer)
+# Getting Started with WPF Tabbed MDI
 
 This section describes how to add [WPF Tabbed MDI Form](https://www.syncfusion.com/wpf-controls/tabbed-mdi-form) (DocumentContainer) control into wpf application and its basic functionalities.
 

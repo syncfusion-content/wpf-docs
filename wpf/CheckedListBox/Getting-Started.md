@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF CheckedListBox control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF CheckedListBox (CheckListBox) control, its elements and more.
+title: Getting Started with WPF CheckedListBox | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF CheckedListBox control. Explore setup, features, examples, and customization options.
 platform: WPF
 control: CheckListBox
 documentation: ug
 ---
 
-# Getting Started with WPF CheckedListBox (CheckListBox)
+# Getting Started with WPF CheckedListBox
 
 This section explains how to display and select the required items using the [WPF CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Binding Support | PinnableListBox | wpf | Syncfusion®
-description: Learn here about Binding support in Syncfusion® Essential Studio® WPF PinnableListBox control, its elements, and more.
+title: Binding Support in WPF PinnableListBox | Syncfusion®
+description: Bind the Syncfusion WPF PinnableListBox control to data sources such as collections and IEnumerable objects with full MVVM support.
 platform: WPF
 control: PinnableListBox 
 documentation: ug
 ---
 
-# Binding Support in WPF PinnableListBox Control   
+# Binding Support in WPF PinnableListBox   
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source to target) or bidirectional (source to target and target to source). You can bind the data to the integer textbox through the Value property.
 
