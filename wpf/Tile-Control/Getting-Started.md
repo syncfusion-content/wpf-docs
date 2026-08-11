@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF Tile Control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential Studio WPF Tile Control, its elements and more.
-platform: WPF
+platform: wpf
 control: SfHubTile
 documentation: ug
 ---
