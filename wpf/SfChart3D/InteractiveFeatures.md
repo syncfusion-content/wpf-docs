@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WPF SfChart3D | Syncfusion®
-description: Interactive features in the WPF SfChart3D enable zooming, selection, tooltips, and navigation for enhanced data exploration.
+title: Interactive Features in WPF 3D Chart | Syncfusion®
+description: Interactive features in the WPF 3D Chart enable zooming, selection, tooltips, and navigation for enhanced data exploration.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Interactive Features in WPF SfChart3D
+# Interactive Features in WPF 3D Chart
 
 3D charts provide interactive features such as dynamic rotation, segment selection, and dynamic segment explode for circular series.
 
