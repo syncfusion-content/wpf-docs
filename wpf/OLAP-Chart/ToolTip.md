@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in WPF Olap Chart control | Syncfusion
-description: Learn about Tooltip support in Syncfusion Essential Studio® WPF Olap Chart control, its elements and more details.
+title: Tooltip in WPF Olap Chart | Syncfusion®
+description: Tooltip in the WPF OLAP Chart displays detailed information about data points on hover, helping users analyze chart data effectively.
 platform: wpf
 control: OLAP Chart
 documentation: ug

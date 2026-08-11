@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shapes Color Customization in WPF Maps control | Syncfusion
-description: Learn here all about Shapes Color Customization support in Syncfusion WPF Maps (SfMap) control and more.
+title: Shapes Color Customization in WPF Maps | Syncfusion®
+description: Shapes color customization in the WPF Maps allows you to apply custom colors to map shapes for improved visualization and data representation.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Shapes Color Customization in WPF Maps (SfMap)
+# Shapes Color Customization in WPF Maps
 
 [WPF Maps](https://www.syncfusion.com/wpf-controls/map) highly support the customization of the shape’s color. The shape’s color can be customized by using the following methods:
 

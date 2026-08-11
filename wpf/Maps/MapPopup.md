@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MapPopup in WPF Maps control | Syncfusion
-description: Learn here all about MapPopup support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Interactive Popup in WPF Maps | Syncfusion®
+description: Interactive popup in the WPF Maps displays additional information for map elements, enabling users to view detailed location-based data.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# MapPopup in WPF Maps (SfMap)
+# Interactive Popup in WPF Maps
 
 MapPopup is a hanging window, displayed when the shape is tapped. It shows additional information from the object bound with the shape. By default, it takes the property of the bound object that is referred to in the ShapeValuePath and displays its content when the corresponding shape is tapped.
 

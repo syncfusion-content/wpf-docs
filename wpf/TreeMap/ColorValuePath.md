@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ColorValuePath in WPF TreeMap control | Syncfusion
-description: Learn here all about ColorValuePath support in Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
+title: Color Value Path in WPF TreeMap | Syncfusion®
+description: Color value path in the WPF TreeMap maps data values to color ranges, enabling meaningful visualization and analysis of hierarchical data.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# ColorValuePath in WPF TreeMap (SfTreeMap)
+# Color Value Path in WPF TreeMap
 
 The [ColorValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ColorValuePath) of SfTreeMap is a path to a field on the source object, which serves as the "color" of the object. 
 

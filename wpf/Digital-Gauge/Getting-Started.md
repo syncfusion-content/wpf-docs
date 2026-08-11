@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Digital Gauge control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Digital Gauge (SfDigitalGauge) control, its elements and more details.
+title: Getting Started with WPF Digital Gauge | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Digital Gauge control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Getting Started with WPF Digital Gauge (SfDigitalGauge)
+# Getting Started with WPF Digital Gauge
 
 This section explains the steps required to configure the **SfDigitalGauge** and also explains how to add basic elements of **SfDigitalGauge** through various APIs available within it.
 
