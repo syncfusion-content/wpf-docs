@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® WPF SfSmartDataGrid Control | Syncfusion
+title: About Syncfusion® WPF SfSmartDataGrid Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF SfSmartDataGrid control and its AI-assisted features.
 platform: wpf
 control: SfSmartDataGrid
