@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Organization layout in WPF Diagram control | Syncfusion®
-description: Learn here all about Organization layout support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: Organization Layout in WPF SfDiagram | Syncfusion®
+description: Build organizational charts in Syncfusion® WPF SfDiagram with custom orientations, assistants, and hierarchical relationships.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Organization layout in WPF Diagram (SfDiagram)
+# Organization Layout in WPF SfDiagram
 
 An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, type should be set to LayoutType.Organization in `DirectedTreeLayout`.
 

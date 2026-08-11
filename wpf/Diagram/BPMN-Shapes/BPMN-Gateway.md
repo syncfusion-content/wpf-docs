@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gateway in WPF Diagram control | Syncfusion®
-description: Learn here all about Gateway support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Gateway in WPF SfDiagram | Syncfusion®
+description: Learn about BPMN gateways in Syncfusion® WPF SfDiagram control, including exclusive, parallel, inclusive, event-based, and complex gateways.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Gateway in WPF Diagram (SfDiagram)
+# Gateway in WPF SfDiagram
 
 Gateway is used to control the flow of a process and it is represented as a diamond shape. To create a gateway shape, the [`Type`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_Type) property of the [`BpmnNodeViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) should be set to [Gateway](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#GateWay) and the [`GatewayType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_GatewayType) property can be set to any of the appropriate [GatewayType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.GatewayType.html). The default `GatewayType` will be [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.GatewayType.html#fields). The following code example explains how to create a BPMN Gateway.
 

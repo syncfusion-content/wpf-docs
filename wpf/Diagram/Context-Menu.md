@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Menu in WPF Diagram control | Syncfusion®
-description: Learn here all about Context Menu support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Context Menu in WPF SfDiagram | Syncfusion®
+description: Customize context menus in Syncfusion® WPF SfDiagram with built-in commands, custom menu items, node menus, and connector menus.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Context Menu in WPF Diagram (SfDiagram)
+# Context Menu in WPF SfDiagram
 
 In graphical user interface (GUI), a ContextMenu is a type of Menu that appears when you perform right-click operation. Nested level of Context Menu items can be created. [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provided some in-built ContextMenu items and allows to define custom menu items.
 
@@ -125,14 +125,14 @@ void MainPage_MenuItemClickedEvent(object sender,
 
 [How to add a node as a child of a container using the context menu in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18053/how-to-add-a-node-as-a-child-of-a-container-using-the-context-menu-in-the-wpf-diagram-sfdiagram)
 
-[How to display the paste context menu only after cutting or copying nodes in a diagram in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17759/how-to-display-the-paste-context-menu-only-after-cutting-or-copying-nodes-in-a-diagram-in-wpf-diagram-sfdiagram)
+[How to display the paste context menu only after cutting or copying nodes in a diagram in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17759/how-to-display-the-paste-context-menu-only-after-cutting-or-copying-nodes-in-a-diagram-in-wpf-diagram-sfdiagram)
 
-[How to enable or disable custom context menu items based on a node's selection in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17784/how-to-enable-or-disable-custom-context-menu-items-based-on-a-nodes-selection-in-wpf-diagram-sfdiagram-)
+[How to enable or disable custom context menu items based on a node's selection in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17784/how-to-enable-or-disable-custom-context-menu-items-based-on-a-nodes-selection-in-wpf-diagram-sfdiagram-)
 
 [How to add a container as parent of the selected node using the context menu in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17747/how-to-add-a-container-as-parent-of-the-selected-node-using-the-context-menu-in-the-wpf-diagram-sfdiagram)
 
-[How to set a shortcut key for menu items in the Context Menu in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14975/how-to-set-a-shortcut-key-for-menu-items-in-the-context-menu-in-wpf-diagram-sfdiagram)
+[How to set a shortcut key for menu items in the Context Menu in WPF SfDiagram?](https://support.syncfusion.com/kb/article/14975/how-to-set-a-shortcut-key-for-menu-items-in-the-context-menu-in-wpf-diagram-sfdiagram)
 
-[How to change the annotation content of a node using context menu in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14962/how-to-change-the-annotation-content-of-a-node-using-context-menu-in-wpf-diagram-sfdiagram)
+[How to change the annotation content of a node using context menu in WPF SfDiagram?](https://support.syncfusion.com/kb/article/14962/how-to-change-the-annotation-content-of-a-node-using-context-menu-in-wpf-diagram-sfdiagram)
 
-[How to implement color palette functionality using context menu in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14963/how-to-implement-color-palette-functionality-using-context-menu-in-wpf-diagram-sfdiagram)
+[How to implement color palette functionality using context menu in WPF SfDiagram?](https://support.syncfusion.com/kb/article/14963/how-to-implement-color-palette-functionality-using-context-menu-in-wpf-diagram-sfdiagram)

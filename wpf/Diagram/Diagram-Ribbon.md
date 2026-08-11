@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Diagram Ribbon in WPF Diagram control | Syncfusion®
-description: Learn here all about Diagram Ribbon support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Diagram Ribbon in WPF SfDiagram | Syncfusion®
+description: Use the Diagram Ribbon in Syncfusion® WPF SfDiagram to access editing, formatting, layout, navigation, and customization tools.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Diagram Ribbon in WPF Diagram (SfDiagram)
+# Diagram Ribbon in WPF SfDiagram
 
 The [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) ribbon control is a user interface that hosts a Quick Access Toolbar, Application Menu, and Tabs to provide the most common features and settings for the WPF Diagram. The diagram ribbon control contains the UI elements that allow end-users to load and save diagrams, add diagram items to the canvas, format text within the diagram items, rearrange and recolor shapes, change the canvas size and orientation, and perform a copy and paste operations.
 
@@ -302,7 +302,7 @@ private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
 ## See Also
 [How to change the visibility of the BackStageButton in the SfDiagramRibbon control?](https://support.syncfusion.com/kb/article/18414/how-to-change-the-visibility-of-the-backstagebutton-in-the-sfdiagramribbon-control)
 
-[How to change the background color of the diagram using the color picker in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18351/how-to-change-the-background-color-of-the-diagram-using-the-color-picker-in-wpf-diagram-sfdiagram)
+[How to change the background color of the diagram using the color picker in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18351/how-to-change-the-background-color-of-the-diagram-using-the-color-picker-in-wpf-diagram-sfdiagram)
 
 [How to modify the Save and Open commands in both the Quick Access Toolbar and the Backstage items of the SfDiagramRibbon control?](https://support.syncfusion.com/kb/article/17754/how-to-modify-the-save-and-open-commands-in-both-the-quick-access-toolbar-and-the-backstage-items-of-the-sfdiagramribbon-control)
 

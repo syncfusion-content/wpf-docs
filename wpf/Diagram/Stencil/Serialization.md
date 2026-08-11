@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Stencil Serialization in WPF Diagram | Syncfusion®
-description: Learn how to serialize and deserialize stencils in Syncfusion WPF Diagram (SfDiagram) control, including individual symbol groups.
+description: Serialize and deserialize stencil symbols in Syncfusion® WPF SfDiagram while preserving custom symbol data and configurations.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Stencil Serialization in WPF Diagram (SfDiagram)
+# Stencil Serialization in WPF SfDiagram
 
 [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) serialization is the process of converting the state of stencil into a stream of bytes to recreate them when needed. Such streams can be stored in a database, as a file, or in memory. The reverse process is called deserialization.
 
