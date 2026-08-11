@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Update value on lost focus in WPF PropertyGrid control | Syncfusion
-description: Learn about Update value on lost focus support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Update Value on Lost Focus in WPF PropertyGrid | Syncfusion®
+description: Update Value on Lost Focus in PropertyGrid enables controlling when edited values are committed, either immediately or on focus loss.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

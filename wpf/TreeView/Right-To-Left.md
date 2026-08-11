@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right to left(RTL) in WPF TreeView control | Syncfusion®
-description: Learn here all about Right to left(RTL) support in Syncfusion® WPF TreeView (SfTreeView) control and more.
+title: Right-to-Left Support in WPF TreeView | Syncfusion®
+description: Right-to-Left in SfTreeView enables displaying hierarchical content with proper layout flow for RTL languages.
 platform: wpf
 control: SfTreeView
 documentation: ug

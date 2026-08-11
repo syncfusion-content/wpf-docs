@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering and Searching in WPF PropertyGrid control | Syncfusion
-description: Learn about Filtering and Searching support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Filtering Property Items in WPF PropertyGrid | Syncfusion®
+description: Filtering Property Items in PropertyGrid enables hiding, displaying, and searching properties using collections, attributes, and runtime events.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Filtering and Searching in WPF PropertyGrid
+# Filtering PropertyItems in WPF PropertyGrid
 
 We can decide the properties that need to be displayed in [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) by hiding the unwanted properties using collection and attributes. We can navigate to the particular property by using the default SearchBox.
 

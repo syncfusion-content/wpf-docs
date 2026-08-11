@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard Navigation in WPF PropertyGrid control | Syncfusion
-description: Learn about Keyboard Navigation support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Keyboard Navigation Support in WPF PropertyGrid | Syncfusion®
+description: Keyboard Navigation Support in PropertyGrid enables navigating properties, managing editor focus, and customizing keyboard behavior for editors.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Keyboard Navigation in WPF PropertyGrid
+# Keyboard Navigation support in WPF PropertyGrid
 
 In this section, we will see available keyboard shortcuts and how to override the default navigation.
 

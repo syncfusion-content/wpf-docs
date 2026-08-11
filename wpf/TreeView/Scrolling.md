@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling in WPF TreeView control | Syncfusion®
-description: Learn here all about Scrolling support in Syncfusion® WPF TreeView (SfTreeView) control, its elements and more.
+title: Scrolling in WPF TreeView | Syncfusion®
+description: Scrolling in SfTreeView enables programmatic navigation to nodes, custom scroll positioning, and horizontal scrolling support.
 platform: wpf
 control: SfTreeView
 documentation: ug

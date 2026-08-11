@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Editor in WPF PropertyGrid control | Syncfusion
-description: Learn about Custom Editor support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Custom Editor Support in WPF PropertyGrid | Syncfusion®
+description: Custom Editor Support in PropertyGrid enables creating and assigning custom editors to specific properties or property types for tailored editing.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Custom Editor in WPF PropertyGrid
+# CustomEditor support in WPF PropertyGrid
 
 The [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties. You can assign own value editor(control) for the properties instead of default value editor by using the [Editor](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection).
 
