@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WPF OLAP Gauge control | Syncfusion
-description: Learn about Data Binding support in Syncfusion Essential Studio WPF OLAP Gauge control, its elements and more details.
+title: Data Binding in WPF OLAP Gauge | Syncfusion®
+description: Data binding in the WPF OLAP Gauge connects multidimensional data sources to gauge elements, enabling dynamic visualization and analysis.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
 ---
 
-# Data Binding in WPF Olap Gauge
+# Data Binding in WPF OLAP Gauge
 
 ## Binding an OLAP gauge to an offline cube
 

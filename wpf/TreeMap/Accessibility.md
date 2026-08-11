@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Accessibility in WPF TreeMap control | Syncfusion
-description: Learn here about Accessibility support with the Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
+title: Accessibility in WPF TreeMap | Syncfusion®
+description: Accessibility in the WPF TreeMap enables keyboard navigation, screen reader support, and improved usability for all users.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-#  Accessibility support in WPF TreeMap (SfTreeMap)
+#  Accessibility in WPF TreeMap
 
 The TreeMap is designed to efficiently interact with its elements, offering voice descriptions for each item in the treemap.
 

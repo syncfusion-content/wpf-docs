@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WPF SfChart3D control | Syncfusion
-description: Learn about Appearance support in Syncfusion Essential Studio® WPF SfChart3D control, its elements and more.
+title: Appearance in WPF SfChart3D | Syncfusion®
+description: Appearance in the WPF SfChart3D allows you to customize chart elements, colors, styles, and visual settings for enhanced presentation.
 platform: wpf
 control: SfChart3D
 documentation: ug

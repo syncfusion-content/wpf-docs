@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rim in WPF Radial Gauge control | Syncfusion
-description: Learn here all about Rim support in Syncfusion WPF Radial Gauge (SfCircularGauge) control, its elements and more.
+title: Rim in WPF Radial Gauge | Syncfusion®
+description: Rim in the WPF Radial Gauge customizes the outer boundary of the gauge, enhancing appearance and improving visual presentation.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Rim in WPF Radial Gauge (SfCircularGauge)
+# Rim in WPF Radial Gauge
 
 Scale determines the structure of a circular gauge by using a circular rim. By setting the [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_StartAngle) and [`SweepAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_SweepAngle) properties, you can change the shape of the circular gauge to a full-circular gauge, half-circular gauge, or quarter-circular gauge.
 

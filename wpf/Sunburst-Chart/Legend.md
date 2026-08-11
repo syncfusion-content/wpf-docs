@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Legend in WPF Sunburst Chart control | Syncfusion
-description: Learn here all about Legend support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
+title: Legend in WPF Sunburst Chart | Syncfusion®
+description: Legend in the WPF Sunburst Chart identifies segments and categories, helping users understand and interpret hierarchical data clearly.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Legend in WPF Sunburst Chart (SfSunburstChart)
+# Legend in WPF Sunburst Chart
 
 The Legend is used to represent the first level of categories in the Sunburst Chart.
 
