@@ -111,7 +111,6 @@ namespace WpfApplication1
 }
 
 {% endhighlight %}
-{% endtabs %}
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
