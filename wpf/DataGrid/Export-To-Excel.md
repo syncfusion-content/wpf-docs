@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export to Excel in WPF SfDataGrid | Syncfusion®
-description: Learn about Export to Excel in Syncfusion® WPF SfDataGrid control. Export grid data to Excel files while preserving formatting and data structure.
+title: Export To Excel in WPF SfDataGrid | Syncfusion®
+description: Learn about Export To Excel in Syncfusion® WPF SfDataGrid control. Export grid data to Excel files while preserving formatting and data structure.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Export to Excel in WPF SfDataGrid
+# Export To Excel in WPF SfDataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
 
