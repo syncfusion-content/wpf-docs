@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Excel-Like Filtering in WPF Pivot Grid control | Syncfusion®
-description: Learn about Excel-Like Filtering support in Syncfusion® WPF Pivot Grid control, its elements and more.
+title: Excel-Like Filtering in WPF PivotGrid | Syncfusion®
+description: Apply Excel-like filtering in the Syncfusion® WPF PivotGrid control to filter data interactively and refine pivot table analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Excel-Like Filtering in WPF Pivot Grid
+# Excel-Like Filtering in WPF PivotGrid
 
 The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) control provides Excel-like sorting and filtering features applied to a pivot item. You can enable or disable the Excel-like sorting and filtering pop-up in the pivot grid by setting the `AllowMultiFunctionalSortFilter` property of grouping bar in the pivot grid control.
 

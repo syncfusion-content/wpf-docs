@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display Options in WPF Pivot Grid control | Syncfusion®
-description: Learn about Display Options support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Display Options in WPF PivotGrid | Syncfusion®
+description: Configure display options in the Syncfusion® WPF PivotGrid control to customize layout, headers, and data presentation at runtime.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Display Options in WPF Pivot Grid
+# Display Options in WPF PivotGrid
 
 The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) control provides support for the PivotComputationInfo to display calculation values in preferred areas of the pivot grid using the `DisplayOption` property.
 

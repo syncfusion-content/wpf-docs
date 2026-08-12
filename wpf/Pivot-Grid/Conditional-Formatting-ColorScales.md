@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting using gradient color scales in WPF Pivot Grid | Syncfusion®
-description: Learn about Formatting using gradient color scales support in Syncfusion® WPF Pivot Grid control and more.
+title: Formatting using gradient color scales in WPF PivotGrid | Syncfusion®
+description: Apply gradient color scale formatting in the Syncfusion® WPF PivotGrid control to highlight cell values visually for better analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Formatting using gradient color scales in WPF Pivot Grid
+# Formatting using gradient color scales in WPF PivotGrid
 
 Conditional formatting is a process of applying customized styles to any object based on specified conditions. In this scenario, styles are applied in the form of gradient color scales through-out the control. 
 
