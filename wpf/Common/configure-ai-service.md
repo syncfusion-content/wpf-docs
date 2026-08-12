@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Chat Client in WPF Smart Components | Syncfusion®
-description: Learn how to configure a chat client with WPF Smart Components for seamless AI service integration.
+description: Learn how to configure a chat client with WPF Smart Components for seamless integration with AI services.
 platform: wpf
 control: SmartComponents
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The Smart Components uses a chat inference service resolved from dependency injection to generate contextual suggestions. Register a compatible chat client and an inference adapter in `App.xaml.cs`.
 
-### Azure OpenAI
+## Azure OpenAI
 
 For **Azure OpenAI**, first [deploy an Azure OpenAI Service resource and model](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource), then values for `azureOpenAIKey`, `azureOpenAIEndpoint` and `azureOpenAIModel` will all be provided to you.
 
@@ -69,7 +69,7 @@ using System.Windows;
 {% endhighlight %}
 {% endtabs %}
 
-### OpenAI
+## OpenAI
 
 For **OpenAI**, create an API key and place it at `openAIApiKey`. The value for `openAIModel` is the model you wish.
 
@@ -117,7 +117,7 @@ SyncfusionAIExtension.ConfigureSyncfusionAIServices();
 {% endhighlight %}
 {% endtabs %}
 
-### Ollama
+## Ollama
 
 To use Ollama for running self hosted models:
 

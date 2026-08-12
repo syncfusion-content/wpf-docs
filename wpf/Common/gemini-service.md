@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gemini AI Service in WPF Smart Components | Syncfusion®
-description: Integrate Google Gemini AI with WPF Smart Components using the IChatInferenceService interface.
+description: Integrate Google Gemini AI with WPF Smart Components using the IChatInferenceService interface for fast AI responses.
 platform: wpf
 control: SmartComponents
 documentation: ug
