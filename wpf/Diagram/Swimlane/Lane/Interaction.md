@@ -11,7 +11,7 @@ documentation: ug
 
 The [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to select, resize, or swap the lane interactively. 
 
-### Select
+## Select
 
 A Lane can be selected by clicking (tap) the header of the lane.
 

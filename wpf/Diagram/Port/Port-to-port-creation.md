@@ -11,7 +11,7 @@ documentation: ug
 
 The connector’s `SourcePort` or `SourcePortID` and `TargetPort` or `TargetPortID` properties allow you to create connections between two specific points of same or different nodes and connectors.
 
-### Connection between ports (NodePort, ConnectorPort) programmatically
+## Connection between ports (NodePort, ConnectorPort) programmatically
 
 You can create a static connection between the ports by specifying the SourcePortID and TargetPortID for the connector. Refer to [connections-with-ports](https://help.syncfusion.com/wpf/diagram/connector/defineconnector#connections-with-ports) for code example.
 
