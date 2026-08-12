@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF Docking control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Docking (DockingManager) control, its elements and more details.
+description: Learn how to get started with the Syncfusion WPF Docking (DockingManager) control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: DockingManager
 documentation: ug

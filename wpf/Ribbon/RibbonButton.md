@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonButton in WPF Ribbon control | Syncfusion®
-description: Learn about RibbonButton support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
+title: RibbonButton in WPF Ribbon Control | Syncfusion®
+description: The RibbonButton in Ribbon lets you add clickable buttons with icons, labels, and tooltips to ribbon tabs and quick access toolbar.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonButton in WPF Ribbon
+# RibbonButton in WPF Ribbon Control
 
  **RibbonButton** provides functionality similar to a normal button. Additionally, it comes in different sizes and can be easily placed inside the **RibbonBar** in the Ribbon control.
 

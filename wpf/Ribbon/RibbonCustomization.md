@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Quick Access ToolBar in WPF Ribbon control | Syncfusion®
-description: Learn about Quick Access ToolBar support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: Quick Access ToolBar in WPF Ribbon Control | Syncfusion®
+description: Ribbon Customization lets you customize ribbon context menu, add or remove items from the Quick Access Toolbar, and modify layout.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Ribbon Context Menu in WPF Ribbon
+# Ribbon Context Menu in WPF Ribbon Control
 
 RibbonContextMenu allows you to customize the Ribbon with the Right Click and it displays different functions for Ribbon and RibbonItems.
 
