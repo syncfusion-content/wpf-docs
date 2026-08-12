@@ -125,7 +125,7 @@ public class OrderInfo
 
 ![WPF DataGrid displays Multiple Pages using SfDataPager](paging_images/wpf-datagrid-multiple-page.png)
 
-#### Limitations
+### Limitations
 
 1. SfDataPager doesn’t accepts `DataTable` as Source. 
 2. `AddNewRow` is not supported in SfDataPager.
