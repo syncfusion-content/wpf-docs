@@ -83,7 +83,7 @@ In this walk-through you will create a WPF application that uses the SyncfusionÂ
 
 Create new WPF Project in Visual Studio to display SfSmartDataGrid with data objects.
 
-<a id="install-the-syncfusion-wpf-nuget-packages"></a>
+<a id="install-the-syncfusion-wpf-nuget-packages" aria-label="Install the Syncfusion WPF NuGet Packages"></a>
 ### Install the SyncfusionÂ® WPF NuGet packages
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
