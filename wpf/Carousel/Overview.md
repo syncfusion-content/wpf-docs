@@ -1,13 +1,13 @@
 ---
 layout: post
 title: About Syncfusion® WPF Carousel Control | Syncfusion®
-description: Learn about Syncfusion® Essential Studio WPF Carousel control, its features, interactive layouts, animations, and customization options.
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Carousel control and more details.
 platform: wpf
 control: Carousel
 documentation: ug
 ---
 
-# WPF Carousel Overview
+# About Syncfusion® WPF Carousel Control
 
 The [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) is a circular conveyor used on which objects are displayed and rotated. The `Carousel` control provides a `3D` interface for displaying objects with interactive navigation, Data Binding Path, ItemsPerPage, Scaling and Skewing.
 

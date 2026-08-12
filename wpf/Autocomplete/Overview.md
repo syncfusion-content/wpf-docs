@@ -7,7 +7,7 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# WPF Autocomplete (SfTextBoxExt) Overview
+# About Syncfusion® WPF SfTextBoxExt Control
 
 ### Description 
 

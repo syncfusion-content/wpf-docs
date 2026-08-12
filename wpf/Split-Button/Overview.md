@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Split Button control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Essential Studio® WPF Split Button control, its elements and more.
+title: About Syncfusion® WPF SplitButton Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF SplitButton (SplitButtonAdv) control and more details.
 platform: WPF
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# WPF Split Button Overview
+# About Syncfusion® WPF SplitButton (SplitButtonAdv) Control
 
 The split button is a combination of a button and a menu control. The button itself provides a default selection or when the arrow is clicked, displays a dropdown list for other possible selections.
 

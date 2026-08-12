@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Split Button control | Syncfusion
-description: Learn here about getting started with Syncfusion® Essential Studio® WPF Split Button control, its elements and more.
+title: Getting Started with WPF SplitButton | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF SplitButton (SplitButtonAdv) control. Explore setup, features, examples, and customization options.
 platform: WPF
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Getting Started with WPF Split Button
+# Getting Started with WPF Split Button (SplitButtonAdv)
 
 This section provides an overview of how to work with WPF Split Button control. It describes the control structure, the control initialization and the image setting for the control and add items to the control.
 
