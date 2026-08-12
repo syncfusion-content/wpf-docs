@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DeepSeek AI for AI-Powered Components | Syncfusion®
-description: Learn how to integrate the DeepSeek AI services with Syncfusion<sup>&reg;</sup> AI-Powered Components.
+title: DeepSeek AI Service in WPF Smart Components | Syncfusion®
+description: Integrate DeepSeek AI with WPF Smart Components using the IChatInferenceService interface for intelligent features.
 platform: wpf
 control: SmartComponents
 documentation: ug
 ---
 
-# DeepSeek AI Integration with WPF Smart Components
+# DeepSeek AI Service in WPF Smart Components
 
 The Syncfusion WPF AI-powered components can enhance applications with intelligent capabilities. You can integrate DeepSeek using the `IChatInferenceService` interface, which standardizes communication between the editor and your custom AI service.
 

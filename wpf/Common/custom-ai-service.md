@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom AI for AI-Powered Components | Syncfusion®
-description: Learn how to use IChatInferenceService to integrate custom AI services with Syncfusion® WPF AI-Powered Components.
+title: Custom AI Service in WPF Smart Components | Syncfusion®
+description: Integrate custom AI services with WPF Smart Components using the IChatInferenceService interface.
 platform: wpf
 control: SmartComponents
 documentation: ug
 ---
 
-# Custom AI Service Integration with WPF Smart Components
+# Custom AI Service in WPF Smart Components
 
 The Syncfusion WPF Smart Components can leverage AI to provide intelligent assistance during user interaction. By default, it works with providers like `OpenAI` or `Azure OpenAI`, but you can also integrate your own AI service using the `IChatInferenceService` interface. This interface ensures smooth communication between the smart components and your custom AI logic.
 

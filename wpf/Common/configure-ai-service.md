@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configure Chat Client with AI-Powered Components | Syncfusion®
-description: Learn how to implement a configure chat client with Syncfusion<sup>&reg;</sup> AI-Powered Components.
+title: Configure Chat Client in WPF Smart Components | Syncfusion®
+description: Learn how to configure a chat client with WPF Smart Components for seamless AI service integration.
 platform: wpf
 control: SmartComponents
 documentation: ug
 ---
 
-# Configure Chat Client With Smart Components
+# Configure Chat Client in WPF Smart Components
 
 The Smart Components uses a chat inference service resolved from dependency injection to generate contextual suggestions. Register a compatible chat client and an inference adapter in `App.xaml.cs`.
 
