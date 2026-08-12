@@ -62,6 +62,12 @@ An annotation can be added to a node or connector by defining the annotation obj
 //Initialize the diagram
 SfDiagram diagram = new SfDiagram();
 
+//Initialize NodeCollection to SfDiagram
+diagram.Nodes = new NodeCollection();
+
+//Initialize ConnectorCollection to SfDiagram
+diagram.Connectors = new ConnectorCollection();
+
 //Initialize the Node View Model
 NodeViewModel node = new NodeViewModel()
 {
@@ -128,7 +134,7 @@ You can add any number of annotations to a node or connector.
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
 {
-    //Initialize the multiple annotation
+    //Initialize multiple annotation
     new AnnotationEditorViewModel()
     {
         Content = "Annotation",
@@ -152,7 +158,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ##  See Also
 
-[How to add annotations to nodes/connectors and its customization?](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations)
+[How to add annotations to nodes/connectors and their customization?](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations)
 
 [How to add image annotations to a Node?](https://support.syncfusion.com/kb/article/6078/how-to-add-image-annotations-to-a-node-in-wpf-diagram-sfdiagram-control)
 
