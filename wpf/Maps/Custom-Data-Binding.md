@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Data Binding in WPF Maps control | Syncfusion
-description: Learn here all about Custom Data Binding support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Custom Data Binding in WPF Maps | Syncfusion®
+description: Custom data binding in the WPF Maps enables map elements to be connected with custom data sources for dynamic visualization and interaction.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Custom Data Binding in WPF Maps (SfMap)
+# Custom Data Binding in WPF Maps
 
 A map can be bound with custom objects. For custom data binding, a .dbf file is not required. In Data Binding, an object is bound to a shape. In custom data binding, an object is bound to a point based on latitude and longitude values. [`CustomDataSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_CustomDataSource) is the API exposed in the custom data source. It is an IEnumerable type API. Each item in the CustomDataSource should have latitude and longitude properties with each mentioned name. Stick to the following rules for custom data binding:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Attached Properties in WPF PropertyGrid control | Syncfusion
-description: Learn about Attached Properties support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Attached Properties in WPF PropertyGrid | Syncfusion®
+description: Attached Properties support in PropertyGrid enables displaying and controlling the visibility of attached properties for a selected object.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

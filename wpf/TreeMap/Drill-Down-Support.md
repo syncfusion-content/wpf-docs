@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill Down Support in WPF TreeMap control | Syncfusion
-description: Learn here all about Drill Down Support in Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
+title: Drill Down Support in WPF TreeMap | Syncfusion®
+description: Drill down support in the WPF TreeMap enables users to navigate hierarchical data levels for detailed analysis and data exploration.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# Drill Down Support in WPF TreeMap (SfTreeMap)
+# Drill Down Support in WPF TreeMap
 
 The TreeMap enables drill down to expose the hierarchy by clicking on a treemap node and allows drill up by clicking on the drill down header. At a time, only one level of the hierarchy can be seen in the treemap.
 

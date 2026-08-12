@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip Support in WPF Range Selector control | Syncfusion
-description: Learn here all about ToolTip Support in Syncfusion® WPF Range Selector (SfDateTimeRangeNavigator) control and more.
+title: Tooltip Support in WPF Range Selector | Syncfusion®
+description: Tooltip support in the WPF Range Selector displays additional information for selected ranges and supports customization of tooltip content.
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# ToolTip Support in WPF Range Selector (SfDateTimeRangeNavigator)
+# Tooltip Support in WPF Range Selector
 
 The date-time range navigator control provides tooltip support to sliders. Sliders are used to select a particular region of data in the control. Tooltips for sliders show the selected start and end date-time values. You can view the exact date values with the milliseconds precision.
 

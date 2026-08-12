@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Olap Gauge control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Olap Gauge control, its elements and more details.
+title: Getting Started with WPF OLAP Gauge | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF OLAP Gauge control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: OLAP Gauge
 documentation: ug

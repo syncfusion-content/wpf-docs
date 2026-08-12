@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commands in AI-Powered Text Editor control | Syncfusion®
-description: Learn here all about commands support in Syncfusion® WPF AI-Powered Text Editor (SfSmartTextEditor) control and more.
+title: Commands in WPF SfSmartTextEditor | Syncfusion®
+description: Learn about commands in the WPF SfSmartTextEditor control for handling text changes and user interactions.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
 ---
 
-# Commands in WPF AI-Powered Text Editor (SfSmartTextEditor)
+# Commands in WPF SfSmartTextEditor
 
 The AI-Powered Text Editor provides the `TextChangedCommand`, which is triggered whenever the text in the smart text editor changes.
 

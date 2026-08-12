@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in WPF DataGrid Control | Syncfusion®
-description: Learn here all about Serialization and Deserialization support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
+title: Serialization and Deserialization in WPF SfDataGrid | Syncfusion®
+description: Serialization and Deserialization in SfDataGrid saves and restores grid settings, layouts, and configurations to preserve the user interface state.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Serialization and Deserialization in WPF DataGrid
+# Serialization and Deserialization in WPF SfDataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0).
  

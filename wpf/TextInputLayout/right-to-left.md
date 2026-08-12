@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right to Left in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Right to Left support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+title: Right-to-Left in WPF TextInputLayout | Syncfusion®
+description: Right-to-Left Support in SfTextInputLayout enables displaying text and input layouts correctly for RTL languages.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug

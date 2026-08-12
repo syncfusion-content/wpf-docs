@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keyboard Navigation Support in WPF Menu control | Syncfusion
-description: Learn here all about Keyboard Navigation Support in Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
+title: Keyboard Navigation Support in WPF Menu (MenuAdv) | Syncfusion®
+description: Keyboard Navigation Support in MenuAdv enables accessing and operating menu items using the keyboard.
 platform: wpf
 control: MenuAdv
 documentation: ug

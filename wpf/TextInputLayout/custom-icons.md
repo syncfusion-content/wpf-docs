@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Icons in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Custom Icons support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+title: Custom Icons in WPF TextInputLayout | Syncfusion®
+description: Custom Icons in SfTextInputLayout enable adding and positioning leading or trailing icons to enhance input field appearance.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug

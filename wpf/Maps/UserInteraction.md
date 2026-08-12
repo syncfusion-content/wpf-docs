@@ -1,13 +1,13 @@
 ---
 layout: post
-title: User interaction in WPF Maps control | Syncfusion
-description: Learn here all about user interaction support such as tooltip, zooming, and panning in Syncfusion WPF Maps (SfMap) control, its elements.
+title: User Interaction in WPF Maps | Syncfusion®
+description: User interaction in the WPF Maps enables tooltips, zooming, panning, and navigation for enhanced map exploration and data analysis.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# User interaction in WPF Maps (SfMap)
+# User Interaction in WPF Maps
 
 ## Tooltip
 

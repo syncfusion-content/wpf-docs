@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting in WPF Charts control | Syncfusion
-description: Learn here all about Exporting support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Exporting in WPF Charts | Syncfusion®
+description: Exporting in the WPF Chart enables chart data and visuals to be saved in supported formats for sharing, printing, and reporting.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Exporting in WPF Charts (SfChart)
+# Exporting in WPF Charts
 
 Chart can be exported into image format. The following are the supported image formats:
 

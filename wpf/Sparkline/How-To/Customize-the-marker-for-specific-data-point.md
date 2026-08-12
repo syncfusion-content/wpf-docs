@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize the marker for data point in SfSparkline | Syncfusion
-description: customize the marker for specific data point in Syncfusion WPF SfSparkline control, its elements and more.
+title: How to customize a data point marker in WPF Sparkline | Syncfusion®
+description: Customize a data point marker in the WPF Sparkline to apply distinct styles and improve the visibility of specific data points.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Customize the marker for a specific data point
+# How to customize a data point marker in WPF Sparkline
 
 You can customize the marker for a specific data point with a custom template for `SfLineSparkline` and `SfAreaSparkline`. To customize the marker, inherit the `MarkerTemplateSelector` class and override the `SelectTemplate` method.
 

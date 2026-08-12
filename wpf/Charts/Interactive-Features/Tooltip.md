@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip in WPF Charts control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion® WPF Charts (SfChart) control, its elements, and more details.
+title: Tooltip in WPF Charts | Syncfusion®
+description: Tooltip in the WPF Chart displays detailed information about data points on hover, helping users analyze chart data effectively.
 platform: wpf
 control: SfChart
 documentation: ug
 
 ---
 
-# Tooltip in WPF Charts (SfChart)
+# Tooltip in WPF Charts
 
 The Tooltip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer or at the data point position. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 

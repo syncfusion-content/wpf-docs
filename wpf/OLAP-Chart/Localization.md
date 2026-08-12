@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in WPF Olap Chart control | Syncfusion
-description: Learn about Localization support in Syncfusion® WPF Olap Chart control, its elements and more details.
+title: Localization in WPF Olap Chart | Syncfusion®
+description: Localization in the WPF OLAP Chart enables chart content, labels, and interface elements to be displayed in different languages.
 platform: wpf
 control: OLAP Chart
 documentation: ug

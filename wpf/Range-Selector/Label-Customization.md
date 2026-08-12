@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in WPF Range Selector control | Syncfusion
-description: Learn here all about Customization support in Syncfusion® WPF Range Selector (SfDateTimeRangeNavigator) control and more.
+title: Customization in WPF Range Selector | Syncfusion®
+description: Customization in the WPF Range Selector enables modification of visual elements, selection appearance, labels, and navigation settings.
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Customization in WPF Range Selector (SfDateTimeRangeNavigator)
+# Customization in WPF Range Selector
 
 ## Interval customization
 
