@@ -13,6 +13,8 @@ The [Undo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagra
 
 `Undo` and `Redo` actions are disabled by default, to enable this you can use the `Constraints` property of the SfDiagram.  Please refer to the [GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GraphConstraints.html).
 
+N> Undo and Redo commands are available only when the `GraphConstraints.Undoable` constraint is enabled on the `SfDiagram`. Ensure that this constraint is set before executing the Undo or Redo commands.
+
 {% tabs %}
 {% highlight Xaml%}
 
@@ -24,6 +26,9 @@ The [Undo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagra
 
 {% endhighlight %}
 {% highlight C# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 // To enable the Undo and Redo action
 diagramcontrol.Constraints |= GraphConstraints.Undoable;
@@ -38,6 +43,10 @@ graphinfo.Commands.Redo.Execute(null);
 
 {% endhighlight %}
 {% endtabs %}
+
+N> The Undo command reverses the most recent tracked action in the diagram. If there are no actions available in the undo stack, the command will not perform any operation.
+
+N> The Redo command restores the most recently undone action. If there are no actions available in the redo stack, the command will not perform any operation.
 
 ![Undo Redo gif](Commands_Images/Commands_img16.gif)
 
