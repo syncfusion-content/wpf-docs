@@ -14,23 +14,25 @@ documentation: ug
 
 ![WPF Diagram Overview](Overview_images/wpf-diagram-overview.png)
 
-## Key features of SfDiagram are as follows:
+## Key Features of SfDiagram are as follows:
 
 * **Data visualization**: Supports visualizing any graphical objects such as text, image, shapes, or any UIElement or template.
-* **Built-in Shapes**: Provided 445+ standard built-in shapes as ResourceDictionary.
+* **Built-in Shapes**: Provides 445+ standard built-in shapes as ResourceDictionary.
 * **High Performance**: Supports loading large diagrams quickly using UI-virtualization techniques.
 * **Interaction**: Diagram elements can be selected, rotated, resized, and moved.
-* **Z-Order**: Diagram elements overlapping can be controlled by changing its Z-Order value.
+* **Z-Order**: Diagram elements overlapping can be controlled by changing their Z-Order value.
 * **Pan and Zoom**: Allows you to pan, zoom in or out of your current diagram. 
 * **Snapping**: Snaps the diagram elements towards the nearest element or gridlines.
 * **Undo/Redo**: Allows you to keep track of the recent changes made in a Diagram to correct your mistakes.
-* **Commands**: Built-in commands for various interactions that allows you to easily implement Diagram interaction logic in MVVM pattern.
+* **Commands**: Built-in commands for various interactions that allow you to easily implement Diagram interaction logic in MVVM pattern.
 * **Keyboard Shortcuts**: Allows you to trigger the diagramming features using keyboard shortcuts.
 * **Clipboard Operations**: Ability to cut, copy, and paste or duplicate selected Diagram elements within and across diagrams.
-* **Business objects**: Ability to populate diagram from datasource (business object) with the help of automatic-layouts.
-* **Automatic Layouts**: Built-in automatic nodes arrangement support for organization chart layout, hierarchical tree layout, flowchart layout, and radial tree layout.
-* **Serialization**: Saves current state of diagram as an XML file, and load them back when needed.
-* **Printing and Exporting**: Supports printing and also exporting the diagram as image. 
-* **Stencil**: Gallery of reusable symbols and nodes, which can be dragged and dropped onto the diagram surface at any number of times.
-* **Overview control**: Displays a small preview of the full diagram page, which allows you to improve the navigation.
-* **Localization**: Localizes every static text in the control to any supported language.
+* **Business objects**: Ability to populate diagram from data source (business object) with the help of automatic-layouts.
+* **Automatic Layouts**: Built-in automatic nodes arrangement support for organization chart layout, hierarchical tree layout, mind map tree layout, flowchart layout, force directed tree layout, and radial tree layout.
+* **Serialization**: Saves current state of diagram as an XML file, and loads them back when needed.
+* **Printing and Exporting**: Supports printing and also exporting the diagram as an image. 
+* **Stencil**: Gallery of reusable symbols and nodes, which can be dragged and dropped onto the diagram surface any number of times.
+* **Overview control**: Displays a small preview of the full diagram page, which allows you to improve navigation.
+* **Localization**: Localizes all static text in the control to any supported language.
+
+N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.
