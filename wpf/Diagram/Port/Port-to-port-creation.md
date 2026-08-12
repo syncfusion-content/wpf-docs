@@ -9,15 +9,15 @@ documentation: ug
 
 # Port-to-Port Connections in WPF SfDiagram
 
-The connector’s `SourcePort` or `SourcePortID` and `TargetPort` or `TargetPortID` properties allows you to create connections between two specific points of same or different nodes and connectors.
+The connector’s `SourcePort` or `SourcePortID` and `TargetPort` or `TargetPortID` properties allow you to create connections between two specific points of same or different nodes and connectors.
 
 ## Connection between ports (NodePort, ConnectorPort) programmatically
 
-You can create static connection between the ports by specifying the SourcePortID and TargetPortID for the connector. Refer to [connections-with-ports](https://help.syncfusion.com/wpf/diagram/connector/defineconnector#connections-with-ports) for code example.
+You can create a static connection between the ports by specifying the SourcePortID and TargetPortID for the connector. Refer to [connections-with-ports](https://help.syncfusion.com/wpf/diagram/connector/defineconnector#connections-with-ports) for code example.
 
 ### Connection between ports interactively
 
-You can create connection between the ports interactively by performing click and drag action on the port.
+You can create a connection between the ports interactively by performing click and drag action on the port.
 
 {% tabs %}
 {% highlight xaml %}
