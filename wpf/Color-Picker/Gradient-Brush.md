@@ -234,7 +234,7 @@ colorPicker.IsCenterVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker with show/hide RadialGradientBrush properties](ColorPicker-with-Gradient-Support_images/RadialGradient_IsCentreVisible)
+![ColorPicker with show/hide RadialGradientBrush properties](ColorPicker-with-Gradient-Support_images/RadialGradient_IsCentreVisible.png)
 
 ## Reverse the Gradient Colors
 
