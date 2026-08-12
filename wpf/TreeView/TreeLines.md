@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tree lines in WPF TreeView control | Syncfusion®
-description: Learn here all about Tree lines support in Syncfusion® WPF TreeView (SfTreeView) control, its elements and more.
+title: Tree Lines in WPF TreeView | Syncfusion®
+description: Tree Lines in SfTreeView enable visualizing hierarchical relationships with customizable line display, color, and thickness.
 platform: wpf
 control: SfTreeView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Tree lines in WPF TreeView (SfTreeView)
 
-TreeView allows to show the tree lines for treeview nodes by enabling the [ShowLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property as `true`. The default value is `false`.
+TreeView allows to show the tree lines for treeview nodes by enabling the [ShowLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property to `true`. The default value is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,7 +30,7 @@ sfTreeView.ShowLines = true;
 
 ## Enable tree line for root nodes
 
-TreeView also supports to show the tree lines for root nodes by enabling the [ShowRootLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowRootLines) property as `true`. The default value is `false`.
+The TreeView also supports showing tree lines for root nodes by enabling the [ShowRootLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowRootLines) property to `true`. The default value is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,4 +99,4 @@ sfTreeView.LineStrokeThickness = 1.5;
 
 ![WPF TreeView TreeLines Thickness](TreeLine_images/wpf-treeview-custom-treelines-thickness.png)
 
-N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its key feature highlights. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Editor in WPF PropertyGrid control | Syncfusion
-description: Learn about Custom Editor support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Custom Editor Support in WPF PropertyGrid | Syncfusion®
+description: Custom Editor Support in PropertyGrid enables creating and assigning custom editors to specific properties or property types for tailored editing.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Custom Editor in WPF PropertyGrid
+# CustomEditor support in WPF PropertyGrid
 
 The [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties. You can assign own value editor(control) for the properties instead of default value editor by using the [Editor](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection).
 
@@ -167,10 +167,10 @@ We can assign the `CustomEditor` to any individual property by name of the prope
 {% tabs %}
 {% highlight C# %}
 
-//CustomEditor for the specfic(EmailID) property
+//CustomEditor for the specific(EmailID) property
 [Editor("EmailID", typeof(EmailEditor))]
 
-//Custom Editor for the multiple(Tnteger type) properties
+//Custom Editor for the multiple(Integer type) properties
 [Editor(typeof(int), typeof(IntegerEditor))]
 public class Employee {
     public string EmailID { get; set; }
@@ -217,7 +217,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 Here, `EmailID` property value editor changed from `TextBox` to  `MaskedEdit` control with email id mask. Also, we assigned the `IntegerEditor` for the integer type properties, so it applied to the `Experience` and `Age` properties. Then, the value editors for the `Experience` and `Age` property is changed from `NumericTextBox` to `Updown` control.
 
-![Property grid with specified custom editors](CustomEditor-support_images/CustomEditor-Attribute.png)
+![Property grid with specified custom editors](CustomEditor-support_images/wpf-propertygrid-customeditor-attribute.png)
 
 ## Assigning a Custom Editor using Collection
 

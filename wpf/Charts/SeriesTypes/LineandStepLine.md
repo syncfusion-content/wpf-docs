@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Line and StepLine Chart in WPF Charts control | Syncfusion
-description: Learn here all about Line and StepLine Chart support in Syncfusion® WPF Charts (SfChart) control and more.
+title: Line and StepLine Chart in WPF Charts | Syncfusion®
+description: Line and step line series in the WPF Chart display trends and changes over time, enabling clear visualization of continuous data.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Line and StepLine in WPF Charts (SfChart)
+# Line and StepLine in WPF Charts
 
 ## Line Chart
 
@@ -94,7 +94,7 @@ N> You can explore our [WPF Step Line Chart](https://www.syncfusion.com/wpf-cont
 
 ## See also
 
-[`How to remove the blended color effect in multiple line series of Chart?`](https://www.syncfusion.com/kb/10463/how-to-remove-the-blended-color-effect-in-multiple-line-series-of-sfchart)
-[`Comparison between line series and fast line series?`](https://www.syncfusion.com/kb/6609/comparison-between-line-series-and-fast-line-series)
-[`How to bind the array property in Chart?`](https://www.syncfusion.com/kb/4923/how-to-bind-the-array-property-in-sfchart)
-[`How to draw dotted line using line series in Chart?`](https://www.syncfusion.com/kb/2550/how-to-draw-dotted-line-using-line-series-in-sfchart)
+* [`Comparison of line series, fast line series, and fast line bitmap series in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/6191/comparison-of-line-series-fast-line-series-and-fast-line-bitmap-series-in-wpf-chart-sfchart)
+* [`How to render the stacked step line series in WPF Chart`](https://support.syncfusion.com/kb/article/8959/how-to-render-the-stacked-step-line-series-in-wpf-chart)
+* [`How to remove the blended color effect in multiple line series of SfChart`](https://support.syncfusion.com/kb/article/9298/how-to-remove-the-blended-color-effect-in-multiple-line-series-of-sfchart)
+* [`How to draw dotted line in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/2806/how-to-draw-dotted-line-in-wpf-chart-sfchart)

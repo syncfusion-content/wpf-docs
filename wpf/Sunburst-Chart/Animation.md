@@ -1,17 +1,17 @@
 ---
 
 layout: post
-title: Animation in WPF Sunburst Chart control | Syncfusion
-description: Learn here all about Animation support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
+title: Animation in WPF Sunburst Chart | Syncfusion®
+description: Animation in the WPF Sunburst Chart provides smooth visual transitions for rendering hierarchical data and interactive updates.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Animation in WPF Sunburst Chart (SfSunburstChart)
+# Animation in WPF Sunburst Chart
 
-Sunburst chart allows you to animate the chart segments. You can enable animation using [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_EnableAnimation) property. Also you can set the duration for animation by using [`AnimationDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_AnimationDuration) property.
+The Sunburst Chart allows you to animate the chart segments. You can enable animation using the [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_EnableAnimation) property. You can also set the duration for animation by using the [`AnimationDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_AnimationDuration) property.
 
 {% tabs %}
 
@@ -33,17 +33,17 @@ sunburstChart.AnimationDuration = 5000;
 
 {% endtabs %}
 
-## Animation types
+## Animation Types
 
-Sunburst chart provide options to animate the chart segments in different ways using [`AnimationType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_AnimationType) property. 
+The Sunburst Chart provides options to animate the chart segments in different ways using the [`AnimationType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_AnimationType) property.
 
-FadeIn – It gradually changes opacity of the chart segment.
+FadeIn – It gradually changes the opacity of the chart segment.
 
-Rotation – During an animation, control rotate from 0 to 360 angle. 
+Rotation – During an animation, the control rotates from 0 to 360 degrees.
 
 ### FadeIn
 
-The following example shows, how to enable the FadeIn animation. 
+The following example shows how to enable the FadeIn animation:
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ sunburstChart.AnimationType = AnimationType.FadeIn;
 
 ### Rotation
 
-The following example shows, how to enable the Rotation animation. 
+The following example shows how to enable the Rotation animation:
 
 {% tabs %}
 

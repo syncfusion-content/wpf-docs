@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Header in WPF Radial Gauge control | Syncfusion
-description: Learn here all about Header support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
+title: Header in WPF Radial Gauge | Syncfusion®
+description: Header in the WPF Radial Gauge displays a title for the gauge, providing context and helping users understand displayed values.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Header in WPF Radial Gauge (SfCircularGauge)
+# Header in WPF Radial Gauge
 
-Header allows you to show text or any UI content inside the gauge control using [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader) option. This provides information about the data that is being plotted in the circular gauge.
+Header allows you to show text or any UI content inside the gauge control using the [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader) option. This provides information about the data that is being plotted in the circular gauge.
 
-## Setting Header for Circular Gauge
+## Setting a header for the circular gauge
 
-The [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader) is an object that can be used to set a unique header for the circular gauge. You can add text and images as header in the circular gauge. Only one header can be added in a circular gauge.
+The [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader) is an object that can be used to set a unique header for the circular gauge. You can add text and images as a header in the circular gauge. Only one header can be added to a circular gauge.
 
 {% tabs %}
 
@@ -87,7 +87,7 @@ this.Content = sfCircularGauge;
 
 ![CircularGauge Header](Header_images/Header_img1.png)
 
-## Setting alignment for header
+## Setting alignment for the header
 
 The gauge header can be positioned by using the [`HeaderAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_HeaderAlignment) property. The default value of this property is `Left`.
 
@@ -185,9 +185,9 @@ this.Content = sfCircularGauge;
 
 ![CircularGauge Header with customization](Header_images/Header_img2.png)
 
-## Setting position for header
+## Setting the position for the header
 
-The [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeaderPosition) property is used to place header in the circular gauge. The value for `GaugeHeaderPosition` should be specified in offset value. In the point value, which has been given for the `GaugeHeaderPosition`, the first value represent x-coordinate and the second value represents y-coordinate. First, set the `HeaderAlignment` to custom, then set the position of header.
+The [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeaderPosition) property is used to place the header in the circular gauge. The value for `GaugeHeaderPosition` should be specified as an offset value. In the point value given for `GaugeHeaderPosition`, the first value represents the x-coordinate and the second value represents the y-coordinate. First, set the `HeaderAlignment` to custom, then set the position of the header.
 
 {% tabs %}
 
@@ -263,9 +263,9 @@ The [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 ![CircularGauge header with custom position](Header_images/Header_img3.png)
 
-## Customization of header font
+## Customization of the header font
 
-You can customize the header’s text by using the `FontFamily`, `FontStyle`, `FontSize`, and `Foreground` properties.
+You can customize the header's text by using the `FontFamily`, `FontStyle`, `FontSize`, and `Foreground` properties.
 
 {% tabs %}
 
@@ -346,8 +346,3 @@ You can customize the header’s text by using the `FontFamily`, `FontStyle`, `F
 {% endtabs %}
 
 ![CircularGauge Header with customization](Header_images/Header_img4.png)
-
-
-
-
-

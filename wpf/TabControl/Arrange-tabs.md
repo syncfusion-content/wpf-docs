@@ -13,7 +13,7 @@ This section explains how to arrange the tab item and its alignment functionalit
 
 ## Rearrange position of tab items
 
-If you want to rearrange the tab items position, drag that item and drop to anywhere you want to place it in the tab panel. You can restrict it by setting the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_AllowDragDrop) property value as `false`. The default value of `AllowDragDrop` property is `true`. The drag marker will preview the location, where you drop the dragged tab item.
+If you want to rearrange the tab items position, drag the item and drop it anywhere you want to place it in the tab panel. You can restrict it by setting the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_AllowDragDrop) property value as `false`. The default value of `AllowDragDrop` property is `true`. The drag marker will preview the location, where you drop the dragged tab item.
 
 {% tabs %}
 {% highlight XAML %}
@@ -67,7 +67,7 @@ tabControlExt.EnableAutoScroll = true;
 
 ![Tab items are rearranged by drag and drop](Tab-Item-Header_images/EnableAutoScroll.gif)
 
-### change drag marker color
+### Change drag marker color
 
 You can change the drag marker color by setting the color value for the [DragMarkerColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_DragMarkerColor) property. The default value of `DragMarkerColor` property is `Black`.
 
@@ -95,7 +95,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Tab item order changed notification
 
-You will be notified when the tab item's order is changed by using the [TabOrderChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabOrderChanged) event. You can get the order changed item with its old and new index values by using the [TargetItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_TabOrderChangedEventArgs_TargetItem), [OldIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_TabOrderChangedEventArgs_OldIndex) and [NewIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_TabOrderChangedEventArgs_NewIndex) properties.
+You will be notified when the tab item's order is changed by using the [TabOrderChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabOrderChanged) event. You can get the order changed item with its old and new index values by using the [TargetItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_TabOrderChangedEventArgs_TargetItem), [OldIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_TabOrderChangedEventArgs_OldIndex) and [NewIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_TabOrderChangedEventArgs_NewIndex) properties.
 
 N> The `TabOrderChanged` event occurs only during drag and drop operation. Not occurs when add or remove items interactively or using code behind.  
 
@@ -139,7 +139,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Restrict tab item reordering
 
-If you want to restrict the user to reordering the tab item by drag and drop operation, use the [TabOrderChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabOrderChanging) event and set `Cancel` property value as `true`.
+If you want to restrict the user to reordering the tab item by drag and drop operation, use the [TabOrderChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabOrderChanging) event and set `Cancel` property value as `true`.
 
 N> The `TabOrderChanging` event occurs only during drag and drop operation. Not occurs when add or remove items using code behind.  
 
@@ -167,7 +167,7 @@ You can handle the event as follows,
 {% tabs %}
 {% highlight c# %}
 
-private void TabControlExt_TabOrderChanging(object sender, Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs e)
+private void TabControlExt_TabOrderChanging(object sender, Syncfusion.Windows.Tools.Controls.TabOrderChangingEventArgs e)
 {
     // Restrict the Tab item order changing
     e.Cancel = true;
@@ -184,7 +184,7 @@ private void TabControlExt_TabOrderChanging(object sender, Syncfusion.Windows.To
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabOrderChangeNotification)
 
-## Tab items alignment
+## Align tab items
 
 Tab items can be aligned to any side of the `TabControl` by using the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlSettings.html#Syncfusion_Windows_Tools_Controls_TabControlSettings_TabStripPlacement) property. The default value of `TabStripPlacement` property is `Top`.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Customization support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+title: Customization in WPF TextInputLayout | Syncfusion®
+description: Customization in SfTextInputLayout enables personalizing input layout colors, container appearance, and outline styles for different states.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug

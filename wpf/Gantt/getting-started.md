@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Gantt control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: Getting Started with WPF Gantt | Syncfusion
+description: Learn how to get started with the Syncfusion WPF Gantt Control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: Gantt
 documentation: ug
@@ -21,22 +21,22 @@ Gantt control is composed of three controls. They are:
 
 #### Gantt grid
 
-Gantt Grid is a table view control which displays the scheduled tasks/activities of the project with its hierarchy. You can edit the fields of the bounded tasks using this grid.
+Gantt Grid is a table view control which displays the scheduled tasks/activities of the project with its hierarchy. You can edit the fields of the bound tasks using this grid.
 
 ![gantt-control-gantt-grid](Getting-Started_images/gantt-control-gantt-grid.png)
 
-* Header— Header represents the table header which contains the field name of the task.
+* Header—Header represents the table header which contains the field name of the task.
 * Parent Task—Parent task represents the summary of the child tasks. This is an activity which will be further split into various child tasks.
 * Child Task—Child task represents an individual task. This contains only the information about the specific task. The Child task is a part of parent task.
 * Expand/Collapse Button—Expand/Collapse button allows you to expand or collapse the particular hierarchy.
 
 #### Gantt chart
 
-Gantt Chart is an items control which provides a graphically representation of the task/activity that are currently scheduled. Gantt Chart have different components to represent the type of Task, Progress of the Task and Relationship between Tasks.
+Gantt Chart is an items control that provides a graphical representation of the task/activity that is currently scheduled. The Gantt Chart has different components to represent the type of Task, Progress of the Task, and Relationship between Tasks.
 
 ![gantt-control-gantt-chart](Getting-Started_images/gantt-control-gantt-chart.png)
 
-* Node— Node represents an individual or child task.
+* Node—Node represents an individual or child task.
 * Header Node—HeaderNode represents the parent or summary task of the projects.
 * Milestone—Milestone represents the target to be completed in a day.
 * Progress Indicator—Progress indicator represents the percentage of work completed for the task.
@@ -51,7 +51,7 @@ Gantt Schedule is a medium to measure the progress in the Gantt control. Using t
 
 ## Class diagram
 
-![WPF Gantt flow diagram](Getting-Started_images/Getting-Started_img5.png)
+![WPF Gantt class diagram](Getting-Started_images/Getting-Started_img5.png)
 
 ## Feature summary
 
@@ -63,7 +63,7 @@ The following features are available in the Essential Gantt for WPF:
 * Dependency Relationship
 * Auto Update Hierarchy
 * Baseline Support
-* CustomToolTip
+* Custom Tooltip
 * Custom Schedule
 * Calendar Customization
 * Holidays Customization
@@ -109,7 +109,7 @@ GanttControl ganttControl = new GanttControl();
 {% endtabs %}
 
 
-When the code runs, an empty Gantt with in-built TaskDetails collection will be displayed.
+When the code runs, an empty Gantt with built-in `TaskDetails` collection will be displayed.
 
 #### Binding data to GanttControl
 
@@ -176,7 +176,7 @@ public class ViewModel
 
         taskDetails.Add(new TaskDetails { TaskId = 1, TaskName = "Scope", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 40d });
         taskDetails[0].Child.Add(new TaskDetails { TaskId = 2, TaskName = "Determine project office scope", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 5), Progress = 20d });
-        taskDetails[0].Child.Add(new TaskDetails { TaskId = 3, TaskName = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 7), Progress = 20d });
+        taskDetails[0].Child.Add(new TaskDetails { TaskId = 3, TaskName = "Justify Project Office via business model", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 7), Progress = 20d });
         taskDetails[0].Child.Add(new TaskDetails { TaskId = 4, TaskName = "Secure executive sponsorship", StartDate = new DateTime(2011, 7, 3), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
         taskDetails[0].Child.Add(new TaskDetails { TaskId = 5, TaskName = "Secure complete", StartDate = new DateTime(2011, 7, 14), FinishDate = new DateTime(2011, 7, 14), Progress = 20d });
 
@@ -190,7 +190,7 @@ public class ViewModel
         taskDetails[2].Child.Add(new TaskDetails { TaskId = 12, TaskName = "Prepare Meeting agenda", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 7, 26), Progress = 30d });
         taskDetails[2].Child.Add(new TaskDetails { TaskId = 13, TaskName = "Conduct review meeting", StartDate = new DateTime(2011, 7, 13), FinishDate = new DateTime(2011, 7, 30), Progress = 30d });
         taskDetails[2].Child.Add(new TaskDetails { TaskId = 14, TaskName = "Migrate critical issues", StartDate = new DateTime(2011, 7, 18), FinishDate = new DateTime(2011, 8, 2), Progress = 30d });
-        taskDetails[2].Child.Add(new TaskDetails { TaskId = 15, TaskName = "Estabilish change mgmt Control", StartDate = new DateTime(2011, 8, 3), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
+        taskDetails[2].Child.Add(new TaskDetails { TaskId = 15, TaskName = "Establish change mgmt Control", StartDate = new DateTime(2011, 8, 3), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
         taskDetails[2].Child.Add(new TaskDetails { TaskId = 16, TaskName = "Monitoring Complete", StartDate = new DateTime(2011, 8, 6), FinishDate = new DateTime(2011, 8, 6), Progress = 30d });
 
         taskDetails.Add(new TaskDetails { TaskId = 17, TaskName = "Post Implementation", StartDate = new DateTime(2011, 8, 7), FinishDate = new DateTime(2011, 8, 19), Progress = 40d });
@@ -233,7 +233,7 @@ The following are the steps to create Gantt control through designer.
 
 ## Adjusting chart and grid size
 
-The GanttControl allows users to set the width for GanttChart and GanttGrid  using the [`ChartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ChartWidth) and [`GridWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_GridWidth) properties. The following code sample demonstrates how to set width for chart and grid.
+The GanttControl allows users to set the width for GanttChart and GanttGrid using the [`ChartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ChartWidth) and [`GridWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_GridWidth) properties. The following code sample demonstrates how to set width for chart and grid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -362,9 +362,8 @@ The WPF GanttControl supports various built-in themes. Refer to the below links 
 
   ![theming-in-wpf-gantt-control](Getting-Started_images/theming-in-wpf-gantt-control.png)
 
-N> Looking for the full WPF Gantt Chart component overview, features, pricing, and documentation? Visit the [WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) page.
 
-## see also
+## See Also
 
 [How to show horizontal and vertical grid lines in WPF gantt control](https://support.syncfusion.com/kb/article/10135/how-to-show-horizontal-and-vertical-grid-lines-in-wpf-gantt-control)
 
@@ -375,3 +374,4 @@ N> Looking for the full WPF Gantt Chart component overview, features, pricing, a
 [How to create a gantt chart by hiding the gantt grid](https://support.syncfusion.com/kb/article/8961/how-to-create-a-ganttchart-by-hiding-the-ganttgrid)
 
 [How to wrap WPF gantt in Windows Forms](https://support.syncfusion.com/kb/article/8200/how-to-wrap-wpf-gantt-in-windows-forms)
+

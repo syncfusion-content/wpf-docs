@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SymbolGroup appearance in WPF Diagram control | Syncfusion®
-description: Learn here all about the appearance of the SymbolGroup in Stencil of the Syncfusion® WPF Diagram (SfDiagram) .
+title: Appearance of SymbolGroup in WPF SfDiagram | Syncfusion®
+description: Customize SymbolGroup appearance in Syncfusion® WPF SfDiagram by displaying symbol groups in accordion, list, or tab views.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Appearance of SymbolGroup in WPF Diagram (SfDiagram)
+# Appearance of SymbolGroup in WPF SfDiagram
 
 The appearance of the SymbolGroup in the Stencil can be changed by the SymbolGroupDisplayMode property. Symbol groups can be viewed in the Accordion, List, and Tab views in the Stencil. The default value of the SymbolGroupDisplayMode is Accordion.
 

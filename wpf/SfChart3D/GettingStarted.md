@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with WPF SfChart3D control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio® WPF SfChart3D control, its elements and more.
+title: Getting Started with WPF 3D Chart control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF 3D Chart control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Getting Started with WPF SfChart3D
+# Getting Started with WPF 3D Chart
 
-This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
+This section explains the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
 
 ## Adding chart reference
 
@@ -73,7 +73,7 @@ SfChart3D Chart3D = new SfChart3D()
 
 ## Initialize view model
 
-Since, the above step will produce only an empty column 3D chart, plotting data must be added to the chart. This step illustrates how to create a sample data source. The data source must implement the IEnumerable interface.
+Since the above step will produce only an empty 3D chart, plotting data must be added to the chart. This step illustrates how to create a sample data source. The data source must implement the IEnumerable interface.
 
 {% highlight C# %}
 
@@ -92,6 +92,7 @@ Next, create a view model class and initialize a list of `UserProfile` objects a
 public class UsersViewModel
 {
     public ObservableCollection<UserProfile> UsersList { get; set; }
+
     public UsersViewModel()
     {
         UsersList = new ObservableCollection<UserProfile>();
@@ -110,8 +111,6 @@ public class UsersViewModel
 {% endhighlight %}
 
 Set the ViewModel instance as the DataContext of your window; this is done to bind properties of ViewModel.
-
-N> Add namespace of `ViewModel` class to your XAML window if you prefer to set `DataContext` in XAML.
 
 
 {% tabs %} 
@@ -145,9 +144,11 @@ this.DataContext = new UsersViewModel();
 
 {% endtabs %}
 
+N> Add the namespace of the `ViewModel` class to your XAML window if you prefer to set the `DataContext` in XAML.
+
 ## Populate chart with data
 
-As we are going to visualize the comparison of heights in the data model, add [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)  to [`SfChart3D.Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_Series) property, and then bind the Data property of the above ViewModel to the [`ColumnSeries3D.ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property as follows.
+As we are going to visualize the data from the model, add [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)  to [`SfChart3D.Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_Series) property, and then bind the Data property of the above ViewModel to the [`ColumnSeries3D.ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property as follows.
 
 >N You need to set [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [`YBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyDataSeries3D.html#Syncfusion_UI_Xaml_Charts_XyDataSeries3D_YBindingPath) properties, so that [`SfChart3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html) would fetch values from the respective properties in the data model to plot the series.
 
@@ -202,9 +203,9 @@ chart3D.Series.Add(series);
 
 {% endtabs %}
 
-## Add Title
+## Add title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property of chart as follows.
+The header of the chart acts as the title to provide users with quick information about the data being plotted in the chart. You can set the title using the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property of the chart as follows.
 
 {% tabs %}
   
@@ -218,9 +219,10 @@ The header of the chart acts as the title to provide quick information to the us
 
 {% highlight c# %}
 
-series.AdornmentsInfo = new ChartAdornmentInfo3D() 
+// Initialize the chart with header as shown for code brevity.
+SfChart3D chart = new SfChart3D() 
 { 
-    ShowLabel = true 
+    Header = "Chart" 
 };
 
 {% endhighlight %}
@@ -229,7 +231,7 @@ series.AdornmentsInfo = new ChartAdornmentInfo3D()
 
 ## Enable data labels
 
-You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentsInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries3D.html#Syncfusion_UI_Xaml_Charts_ChartSeries3D_AdornmentsInfo) property of [`ChartSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries3D.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property of [`ChartAdornmentInfo3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo3D.html) to True.
+You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentsInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries3D.html#Syncfusion_UI_Xaml_Charts_ChartSeries3D_AdornmentsInfo) property of [`ChartSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries3D.html). By default, no label is displayed; you have to set the [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property of [`ChartAdornmentInfo3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo3D.html) to True.
 
 {% tabs %}
   
@@ -243,7 +245,7 @@ You can add data labels to improve the readability of the chart and it can be en
             XBindingPath="TimeStamp"
             YBindingPath="NoOfUsers">
             <chart:ColumnSeries3D.AdornmentsInfo>
-                <chart:ChartAdornmentInfo3D></chart:ChartAdornmentInfo3D>
+                <chart:ChartAdornmentInfo3D ShowLabel="True"></chart:ChartAdornmentInfo3D>
             </chart:ColumnSeries3D.AdornmentsInfo>
         </chart:ColumnSeries3D>    
         ...
@@ -294,7 +296,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-Additionally, you need to set label for each series using the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of ChartSeries, which will be displayed in corresponding legend.
+Additionally, you need to set a label for each series using the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of ChartSeries, which will be displayed in the corresponding legend.
 
 {% tabs %}
   
@@ -329,7 +331,7 @@ ColumnSeries3D series = new ColumnSeries3D()
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip)  property to true.
+Tooltips are used to show information about the segment when you click the segment. You can enable tooltip by setting the series [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip)  property to true.
 
 {% tabs %}
   
@@ -364,7 +366,7 @@ ColumnSeries3D series = new ColumnSeries3D()
 
 {% endtabs %}
 
-The following code example gives you the complete code of above configurations.
+The following code example gives you the complete code of the above configurations.
 
 {% tabs %}
 

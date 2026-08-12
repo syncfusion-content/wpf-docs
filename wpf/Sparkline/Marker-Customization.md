@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Marker Customization in WPF Sparkline control | Syncfusion
-description: Learn here all about Marker Customization support in Syncfusion WPF Sparkline (SfSparkline) control and more.
+title: Marker Customization in WPF Sparkline | Syncfusion®
+description: Marker customization in the WPF Sparkline allows you to modify marker appearance, styles, colors, and sizes for better data visualization.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Marker Customization in WPF Sparkline (SfSparkline)
+# Marker Customization in WPF Sparkline
 
-We can customize the markers by initializing the marker template selector class, and we can differentiate the first, last, high, low, negative points.
+Markers can be customized by initializing the marker template selector class. This allows differentiating the first, last, high, low, and negative points.
 
 {% tabs %}
 
@@ -62,17 +62,17 @@ The following is a snapshot of the above code.
 
 ![Marker-Customization_img1](Marker-Customization_images/Marker-Customization_img1.png)
 
-**Marker Template**
+**Marker template**
 
-You can customize default appearance of the marker symbol by using the MarkerTemplate property in the sparkline.
+You can customize the default appearance of the marker symbol by using the `MarkerTemplate` property in the sparkline.
 
-The following code shows how to apply the template for the Marker.
+The following code shows how to apply the template for the marker.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:SfLineSparkline
+<Syncfusion:SfLineSparkline
     Interior="#4a4a4a"
     BorderBrush="DarkGray"
     MarkerVisibility="Visible"
@@ -80,7 +80,7 @@ The following code shows how to apply the template for the Marker.
     ItemsSource="{Binding UsersList}"
     YBindingPath="NoOfUsers">
 
-    <syncfusion:SfLineSparkline.Resources>
+    <Syncfusion:SfLineSparkline.Resources>
         <DataTemplate x:Key="markerTemplate">
             <Grid>
                 <Ellipse
@@ -100,13 +100,13 @@ The following code shows how to apply the template for the Marker.
                     StrokeThickness="1"/>
             </Grid>
         </DataTemplate>
-    </syncfusion:SfLineSparkline.Resources>
+    </Syncfusion:SfLineSparkline.Resources>
 
-    <syncfusion:SfLineSparkline.MarkerTemplateSelector>
-        <syncfusion:MarkerTemplateSelector MarkerTemplate="{StaticResource markerTemplate}"/>
-    </syncfusion:SfLineSparkline.MarkerTemplateSelector>
+    <Syncfusion:SfLineSparkline.MarkerTemplateSelector>
+        <Syncfusion:MarkerTemplateSelector MarkerTemplate="{StaticResource markerTemplate}"/>
+    </Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
-</syncfusion:SfLineSparkline>
+</Syncfusion:SfLineSparkline>
 
 {% endhighlight %}
 
@@ -114,12 +114,12 @@ The following code shows how to apply the template for the Marker.
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-	ItemsSource = new SparkViewModel().UsersList,
+	ItemsSource = new UsersViewModel().UsersList,
 	YBindingPath = "NoOfUsers",
 	MarkerVisibility = Visibility.Visible,
-	Interior =new SolidColorBrush(Colors.Gray),
+	Interior = new SolidColorBrush(Color.FromRgb(0x4a, 0x4a, 0x4a)),
 	BorderBrush = new SolidColorBrush(Colors.DarkGray),
-	BorderThickness = new Thickness (1)
+	BorderThickness = new Thickness(1)
 };
 
 MarkerTemplateSelector selector = new MarkerTemplateSelector()

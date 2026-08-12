@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CustomToolTip in WPF Gantt control | Syncfusion
-description: Learn about CustomToolTip support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: CustomToolTip in WPF Gantt | Syncfusion
+description: Learn about CustomToolTip support in Syncfusion WPF Gantt using the ToolTipTemplate property to display custom content and visuals.
 platform: wpf
 control: Gantt
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # CustomToolTip in WPF Gantt
 
-Essential Gantt provides tooltip support for the TaskBar. Tooltip is a small pop-up box, which is usually displayed on mouse hover. This is used to display additional information about the elements without increasing the window size. Essential Gantt provides support to add customizable tooltip. You can add text or image to your tooltip as needed. 
+Essential Gantt provides tooltip support for the task bar. A tooltip is a small pop-up box that is usually displayed on mouse hover. This is used to display additional information about the elements without increasing the window size. Essential Gantt provides support to add a customizable tooltip. You can add text or an image to your tooltip as needed.
 
 ## Properties
 
@@ -24,7 +24,7 @@ Data Type </th></tr>
 <tr>
 <td>
 {{'[ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ToolTipTemplate)'| markdownify }}</td><td>
-Gets or set the TaskBarCollection Property of GanttControl</td><td>
+Gets or sets the data template used to render the tooltip for the task bar in the Gantt control.</td><td>
 Dependency Property</td><td>
 DataTemplate</td></tr>
 </table>
@@ -271,7 +271,7 @@ public class Task : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the Name.
+    /// Gets or sets the name.
     /// </summary>
     public string Name
     {
@@ -387,11 +387,11 @@ public class ViewModel
         var taskDetails = new ObservableCollection<Task>();
         taskDetails.Add(new Task() { ID = 1, Name = "Scope", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 14), Progress = 40d, Resource = new ObservableCollection<Resource>() { new Resource() { Name = "John" } } });
         taskDetails[0].ChildCollection.Add((new Task() { ID = 2, Name = "Determine project office scope", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
-        taskDetails[0].ChildCollection.Add((new Task() { ID = 3, Name = "Justify Project Offfice via business model", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 3, Name = "Justify Project Office via business model", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
         taskDetails[0].ChildCollection.Add((new Task() { ID = 4, Name = "Secure executive sponsorship", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
         taskDetails[0].ChildCollection.Add((new Task() { ID = 5, Name = "Secure Progress", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
 
-        taskDetails.Add(new Task() { ID = 6, Name = "Risk Assessment", StartDate = new DateTime(2011, 7, 15), EndDate = new DateTime(2011, 7, 24), Resource = new ObservableCollection<Resource>() { new Resource() { Name = "DavID" } } });
+        taskDetails.Add(new Task() { ID = 6, Name = "Risk Assessment", StartDate = new DateTime(2011, 7, 15), EndDate = new DateTime(2011, 7, 24), Resource = new ObservableCollection<Resource>() { new Resource() { Name = "David" } } });
         taskDetails[1].ChildCollection.Add((new Task() { ID = 7, Name = "Perform risk assessment", StartDate = new DateTime(2011, 7, 15), EndDate = new DateTime(2011, 7, 21), Progress = 20d }));
         taskDetails[1].ChildCollection.Add((new Task() { ID = 8, Name = "Evaluate risk assessment", StartDate = new DateTime(2011, 7, 21), EndDate = new DateTime(2011, 7, 23), Progress = 20d }));
         taskDetails[1].ChildCollection.Add((new Task() { ID = 9, Name = "Prepare contingency plans", StartDate = new DateTime(2011, 7, 21), EndDate = new DateTime(2011, 7, 24), Progress = 20d }));
@@ -401,7 +401,7 @@ public class ViewModel
         taskDetails[2].ChildCollection.Add((new Task() { ID = 12, Name = "Prepare Meeting agenda", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 7, 26), Progress = 20d }));
         taskDetails[2].ChildCollection.Add((new Task() { ID = 13, Name = "Conduct review meeting", StartDate = new DateTime(2011, 7, 27), EndDate = new DateTime(2011, 7, 30), Progress = 20d }));
         taskDetails[2].ChildCollection.Add((new Task() { ID = 14, Name = "Migrate critical issues", StartDate = new DateTime(2011, 7, 31), EndDate = new DateTime(2011, 8, 2), Progress = 20d }));
-        taskDetails[2].ChildCollection.Add((new Task() { ID = 15, Name = "Estabilish change mgmt Control", StartDate = new DateTime(2011, 8, 3), EndDate = new DateTime(2011, 8, 6), Progress = 30d }));
+        taskDetails[2].ChildCollection.Add((new Task() { ID = 15, Name = "Establish change mgmt Control", StartDate = new DateTime(2011, 8, 3), EndDate = new DateTime(2011, 8, 6), Progress = 30d }));
         taskDetails[2].ChildCollection.Add((new Task() { ID = 16, Name = "Monitoring Progress", StartDate = new DateTime(2011, 8, 6), EndDate = new DateTime(2011, 8, 6), Progress = 30d }));
 
         taskDetails.Add(new Task() { ID = 17, Name = "Post Implementation", StartDate = new DateTime(2011, 7, 25), EndDate = new DateTime(2011, 8, 12) });
@@ -447,10 +447,10 @@ To view samples:
 1. Go to the Syncfusion Essential Studio installed location. 
     Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
 2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
-2. Click Run Samples for WPF under User Interface Edition panel .
-3. Select Gantt.
-4. Expand the Interactive Features item in the Sample Browser.
-5. Choose the CustomToolTip samples to launch.
+3. Click Run Samples for WPF under the User Interface Edition panel.
+4. Select Gantt.
+5. Expand the Interactive Features item in the Sample Browser.
+6. Choose the CustomToolTip sample to launch.
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with Syncfusion® Essential® SfHeatMap for WPF.
-description: This section explain about how to integrate WPF HeatMap (SfHeatMap) into an applicationl and enable its basic features with example. 
+title: Getting Started with WPF HeatMap | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF HeatMap control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfHeatMap
 documentation: ug
 ---
 
-# Getting Started with WPF HeatMap (SfHeatMap)
+# Getting Started with WPF HeatMap
 
 ## Initialize the SfHeatMap
 
@@ -37,7 +37,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial 
 
 ## Prepare data
 
-Create a class to store Product information to be visualized using SfHeatMap 
+Create a class to store product information to be visualized using SfHeatMap.
 
 {% highlight c# %}
 
@@ -70,7 +70,7 @@ public class Products : ObservableCollection<Product>
 
 ## Populate data
 
-Populate product information in a collection
+Populate product information in a collection.
 
 {% highlight xaml %}
 
@@ -103,30 +103,30 @@ Populate product information in a collection
 
 {% endhighlight %}
 
-## Map data into SfHeatMap 
+## Map data into SfHeatMap
 
-Now data is ready, next we need to configure data source and map rows and columns to visualize.
+Now the data is ready. Next, configure the data source and map rows and columns to visualize.
 
 * Prepare ItemsMapping add it in resource.
 
 {% capture codesnippet1 %}
 {% highlight xaml %}
 
-<syncfusion:TableMapping x:Key="ItemsMapping">
+<syncfusion:TableMapping x:Key="itemsMapping">
     <syncfusion:TableMapping.HeaderMapping>
-        <syncfusion:ColumnMapping PropertyName="ProductName" DisplayName="Product Name"/>
+        <syncfusion:ColumnMapping PropertyName="ProductName" DisplayName="Product"/>
     </syncfusion:TableMapping.HeaderMapping>
     <syncfusion:TableMapping.ColumnMapping>
-        <syncfusion:ColumnMapping PropertyName="Y2007" DisplayName="Y2007"/>
-        <syncfusion:ColumnMapping PropertyName="Y2008" DisplayName="Y2008"/>
-        <syncfusion:ColumnMapping PropertyName="Y2009" DisplayName="Y2009"/>
-        <syncfusion:ColumnMapping PropertyName="Y2010" DisplayName="Y2010"/>
-        <syncfusion:ColumnMapping PropertyName="Y2011" DisplayName="Y2011"/>
-        <syncfusion:ColumnMapping PropertyName="Y2012" DisplayName="Y2012"/>
-        <syncfusion:ColumnMapping PropertyName="Y2013" DisplayName="Y2013"/>
-        <syncfusion:ColumnMapping PropertyName="Y2014" DisplayName="Y2014"/>
-        <syncfusion:ColumnMapping PropertyName="Y2015" DisplayName="Y2015"/>
-        <syncfusion:ColumnMapping PropertyName="Y2016" DisplayName="Y2016"/>
+        <syncfusion:ColumnMapping PropertyName="Y2007" DisplayName="2007"/>
+        <syncfusion:ColumnMapping PropertyName="Y2008" DisplayName="2008"/>
+        <syncfusion:ColumnMapping PropertyName="Y2009" DisplayName="2009"/>
+        <syncfusion:ColumnMapping PropertyName="Y2010" DisplayName="2010"/>
+        <syncfusion:ColumnMapping PropertyName="Y2011" DisplayName="2011"/>
+        <syncfusion:ColumnMapping PropertyName="Y2012" DisplayName="2012"/>
+        <syncfusion:ColumnMapping PropertyName="Y2013" DisplayName="2013"/>
+        <syncfusion:ColumnMapping PropertyName="Y2014" DisplayName="2014"/>
+        <syncfusion:ColumnMapping PropertyName="Y2015" DisplayName="2015"/>
+        <syncfusion:ColumnMapping PropertyName="Y2016" DisplayName="2016"/>
     </syncfusion:TableMapping.ColumnMapping>
 </syncfusion:TableMapping>
 
@@ -147,13 +147,13 @@ Now data is ready, next we need to configure data source and map rows and column
 {% endcapture %}
 {{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
-* This will show a grid with data as in following image.
+* This will show a grid with data as in the following image.
 
 ![Showing grid with data](Getting-Started_images/Getting-Started_img1.jpeg)
 
-## Color Mapping
+## Color mapping
 
-Next we can configure color range for these values using color mapping
+Next, configure a color range for these values using color mapping.
 
 * Configure items mapping based on items source.
 
@@ -169,7 +169,7 @@ Next we can configure color range for these values using color mapping
 {% endcapture %}
 {{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
-* Set ColorMapping
+* Set the color mapping.
 
 {% capture codesnippet4 %}
 {% highlight xaml %}
@@ -177,18 +177,19 @@ Next we can configure color range for these values using color mapping
 <syncfusion:SfHeatMap ItemsSource="{StaticResource productsData}" 
                       ItemsMapping="{StaticResource itemsMapping}"
                       ColorMappingCollection="{StaticResource colorMapping}">
+</syncfusion:SfHeatMap>
 
 {% endhighlight %}
 {% endcapture %}
 {{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
-* This will show the grid data with color based on the range given.
+* This will show the grid data with color based on the given range.
 
 ![Showing the grid data with color based on the range](Getting-Started_images/Getting-Started_img2.jpeg)
 
 ## Legend
 
-A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
+A legend control is used to represent range values in a gradient. Create a legend with the same color mapping as shown below.
 
 {% highlight xaml %}
 
@@ -196,7 +197,9 @@ A legend control is used to represent range value in a gradient, create a legend
 
 {% endhighlight %}
 
-Final MainPage.cs looks like this.
+## Complete example
+
+The final `MainWindow.xaml.cs` looks like this.
 
 {% highlight c# %}
 
@@ -241,7 +244,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Final MainPage.xaml looks like this.
+The final `MainWindow.xaml` looks like this.
 
 {% highlight xaml %}
 
@@ -306,18 +309,17 @@ Final MainPage.xaml looks like this.
                                     Margin="20"
                                     MaxWidth="300"
                                     ColorMappingCollection="{StaticResource colorMapping}"/>
-    </Grid> 
+    </Grid>
 </Window>
 
-	
 {% endhighlight %}
 
 ## Theme
 
-SfHeatMap supports various built-in themes. Refer to the below links to apply themes for the SfHeatMap,
+SfHeatMap supports various built-in themes. Refer to the following links to apply themes to the SfHeatMap:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
+
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Setting theme to WPF SfHeatMap](Getting-Started_images/Theme.png)

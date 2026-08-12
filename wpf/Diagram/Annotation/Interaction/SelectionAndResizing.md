@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotation Selection and Resizing | Syncfusion® 
-description: how to define basic annotations for Node and Connectors in Syncfusion® WPF Diagram (SfDiagram) control, its elements, and more.
+title: Annotation Selection and Resizing in WPF SfDiagram | Syncfusion®
+description: Learn about annotation selection and resizing in Syncfusion® WPF SfDiagram control, including constraints, interaction, and annotation events.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# How to Select and Resize the Annotation
+# Annotation Selection and Resizing in WPF SfDiagram
 
 Basic interactions of selecting and resizing can be applied over annotation. These interactions can be controlled by annotation and its parent node or connector.
 

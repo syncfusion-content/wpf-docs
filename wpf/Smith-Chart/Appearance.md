@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Appearance in WPF Smith Chart control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion WPF Smith Chart (SfSmithChart) control and more.
+title: Appearance in WPF Smith Chart | Syncfusion®
+description: Appearance in the WPF Smith Chart allows you to customize chart elements, colors, styles, and visual settings for enhanced presentation.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Appearance in WPF Smith Chart (SfSmithChart)
+# Appearance in WPF Smith Chart
 
 ## SmithChart Palette
 
-The Smith chart displays different series in different color by using [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SmithChartColorModel.html#Syncfusion_UI_Xaml_SmithChart_SmithChartColorModel_Palette) property of [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_ColorModel). By default, Metro palette color has been applied.
+The Smith chart displays different series in different colors by using the [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SmithChartColorModel.html#Syncfusion_UI_Xaml_SmithChart_SmithChartColorModel_Palette) property of [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_ColorModel). By default, the Metro palette color has been applied.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ chart.ColorModel.Palette = ColorPalette.BlueChrome;
 
 **Series Palette**
 
-The palette color to each data points of specific series can be defined by using [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SmithChartColorModel.html#Syncfusion_UI_Xaml_SmithChart_SmithChartColorModel_Palette) property of [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_ColorModel) in the Series.
+The palette color for each data point of a specific series can be defined by using the [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SmithChartColorModel.html#Syncfusion_UI_Xaml_SmithChart_SmithChartColorModel_Palette) property of [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_ColorModel) in the series.
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ chart.Series.Add(series);
 
 ## Chart Area Customization
 
-Chart and chart area (circle plotting area) can be customized by using the below properties in [`SfSmithChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html).
+The chart and chart area (circle plotting area) can be customized by using the below properties in [`SfSmithChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html).
 
 {% tabs %}
 
@@ -149,11 +149,10 @@ Point centerPoint = smithChart.ChartAreaInfo.CenterPoint;
 
 ### Radius
 
-You can get the radius of the smith chart by using the [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html#Syncfusion_UI_Xaml_SmithChart_ChartAreaInfo_Radius) property in the [`ChartAreaInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html)
-Code.
+You can get the radius of the smith chart by using the [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html#Syncfusion_UI_Xaml_SmithChart_ChartAreaInfo_Radius) property in the [`ChartAreaInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html).
 
 {% highlight C# %}
 
-double radiuss = smithChart.ChartAreaInfo.Radius;
+double radius = smithChart.ChartAreaInfo.Radius;
 
 {% endhighlight %}

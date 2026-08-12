@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Trendlines in WPF Charts control | Syncfusion
-description: Learn here all about Trendlines support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Trendlines in WPF Charts | Syncfusion®
+description: Trendlines in the WPF Chart display data trends and patterns using fitted lines, helping analyze and predict data behavior.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Trendlines in WPF Charts (SfChart)
+# Trendlines in WPF Charts
 
-Trendlines are used to analyze and display the trends in the data graphically. It is built on the assumptions based on current and past price trends. 
+Trendlines are used to analyze and display the trends in the data graphically. They are built on the assumptions based on current and past price trends.
 
 The following code examples illustrate how to add trend lines to the chart.
 
@@ -649,8 +649,8 @@ chart.Series.Add(fastSeries);
 
 ![Customization of Trendlines in WPF Chart](Trendlines_images/wpf-chart-trendline-customization.png)
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Line%20Studies/Trendline.xaml) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Line%20Studies/Trendline.xaml) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.
 
 ## See also
 
-[`How to show the average line in a WPF Chart (SfChart) using Trendlines?`](https://support.syncfusion.com/kb/article/2804/how-to-get-line-graph-average-for-wpf-chart-sfchart)
+* [`How to show the average line in a WPF Chart (SfChart) using Trendlines`](https://support.syncfusion.com/kb/article/2804/how-to-show-the-average-line-in-a-wpf-chart-sfchart-using-trendlines)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add References| Wpf | Syncfusion
-description: Syncfusion Reference Manger extension is add-in to add the Syncfusion references into the WinForms application
+description: Syncfusion Reference Manager extension is an add-in to add the Syncfusion references into the WPF application
 platform: wpf
 control: Syncfusion Extensions
 documentation: ug
@@ -15,11 +15,11 @@ N> This Reference Manager can be applied to a project for Syncfusion® assembly 
 
 To add the Syncfusion® assembly references in Visual Studio, follow the steps below:
 
-> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](download-and-installation) help topic.
+> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](download-and-installation) help topic.
 
 1. Open a new or existing **WPF** application.
 
-2. To open Syncfusion Reference Manager Wizard, follow either one of the options below:
+2. To open the Syncfusion Reference Manager Wizard, follow either one of the options below:
 
    **Option 1:**  
    Click **Extensions->Syncfusion Menu** and choose **Essential Studio® for WPF > Add References…** in **Visual Studio**.
@@ -40,13 +40,13 @@ To add the Syncfusion® assembly references in Visual Studio, follow the steps b
 
    ![Syncfusion Reference Manger Wizard](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img2.png)
 
-   **Platform Selection:** Platform selection option will appear as an option in Syncfusion Reference Manager if opened from a Console/Class Library project. Select the appropriate platform. 
+   **Platform Selection:** The platform selection option will appear in Syncfusion Reference Manager if it is opened from a Console/Class Library project. Select the appropriate platform. 
 
    ![Platform selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img3.png)
 
    N> The platform selection option will appear only if Essential Studio® for Enterprise Edition with the platforms WPF and Windows Forms has been installed, or if both Essential Studio® for WPF and WinForms have been installed.
 
-   **Assembly From:** Choose the assembly location, from where the assembly is added to the project.
+   **Assembly From:** Choose the assembly location from where the assembly is added to the project.
 
    ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
 
@@ -59,30 +59,30 @@ To add the Syncfusion® assembly references in Visual Studio, follow the steps b
 
    N> WPF (.NET Core 3.1 and .NET 5.0) applications in Visual Studio 2019 are supported from version 18.2.0.44, .NET 6.0 applications in Visual Studio 2022 are supported from 19.4.0.38, .NET 7.0 applications in Visual Studio 2022 are supported from 20.4.0.38, and .NET 8.0 applications in Visual Studio 2022 are supported from 23.2.4. The version combo box is not visible for the NuGet option. 
 
-   **Themes Option:** Choose the necessary themes based on your requirements. To learn more about built-in themes and their available assembly, click the link below.
+   **Themes Option:** Choose the necessary themes based on your requirements. To learn more about the built-in themes and their available assemblies, click the link below.
 
-   [https://help.syncfusion.com/wpf/themes/](https://help.syncfusion.com/wpf/themes/)
+   [https://help.syncfusion.com/wpf/themes/](https://help.syncfusion.com/wpf/themes)
 
    ![Themes selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img5.png)
 
-   N> Themes option will be enabled only if we selected theme supported controls.
+   N> Themes option will be enabled only if theme-supported controls are selected.
 
    ![Themes selection option notification in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img6.png)
 
 
-4. Select the required controls you want to add to your project. Then click **Done** to add the project's required assemblies for the specified controls. The list of required assemblies for the selected controls to be added is shown in the screenshot below.
+4. Select the required controls you want to add to your project. Then click **Done** to add the required assemblies for the specified controls to the project. The list of required assemblies to be added for the selected controls is shown in the screenshot below.
 
    ![Syncfusion Reference Manager new assemblies add information dialog](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img7.png)
 
-5. Click **OK**. The listed Syncfusion assemblies are added to project. Then it notifies “Syncfusion assemblies have been added successfully” in Visual Studio status bar.
+5. Click **OK**. The listed Syncfusion assemblies are added to the project. Then it notifies, "Syncfusion assemblies have been added successfully," in the Visual Studio status bar.
 
    ![Syncfusion Reference Manager success status in Visual Studio status bar](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img8.png)
 
-6. Then, Syncfusion® licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion® introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion® license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio®.
+6. Then, a message box stating that Syncfusion® license registration is required will be shown if you installed the trial setup or NuGet packages, since Syncfusion® introduced the licensing system starting with the 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box, to generate and register the Syncfusion® license key in your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post to understand the licensing changes introduced in Essential Studio®.
 
    ![Syncfusion license registration required information dialog in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img9.png)
 
-N>  Reference Manager support is provided by Syncfusion® for select versions of the .NET Framework that are included (as assemblies) in the Syncfusion® Essential Studio® installation. If you try to add Syncfusion assemblies to a project and the project framework isn't compatible with the specified Syncfusion® version assemblies, a dialogue box shows with the message "**Current build v{version} isn't compatible with this framework v{Framework} Version**."
+N>  Reference Manager support is provided by Syncfusion® for select versions of the .NET Framework that are included (as assemblies) in the Syncfusion® Essential Studio® installation. If you try to add Syncfusion assemblies to a project and the project framework isn't compatible with the specified Syncfusion® version assemblies, a dialog box appears with the message, "**Current build v{version} isn't compatible with this framework v{Framework} Version**."
 
 
 

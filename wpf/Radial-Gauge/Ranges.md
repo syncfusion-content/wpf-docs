@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Ranges in WPF Radial Gauge control | Syncfusion
-description: Learn here all about Ranges support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
+title: Ranges in WPF Radial Gauge | Syncfusion®
+description: Ranges in the WPF Radial Gauge highlight specific value intervals on the gauge scale, helping visualize thresholds, targets, and data groups.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Ranges in WPF Radial Gauge (SfCircularGauge)
+# Ranges in WPF Radial Gauge
 
 Range is a visual element, which begins and ends at the specified values within a scale.
 
-## Setting a start and end values for range
+## Setting start and end values for a range
 
 The start and end values of ranges are set by using the [`StartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_EndValue) properties.
 
@@ -75,7 +75,7 @@ The start and end values of ranges are set by using the [`StartValue`](https://h
 
 ## Range customization
 
-A ranges  appearance is customized by using the [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_Stroke), [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_StrokeThickness), and [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_Offset) properties. First, set the `RangePosition` property to custom in scale, and then set the `Offset`.
+A range's appearance is customized by using the [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_Stroke), [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_StrokeThickness), and [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_Offset) properties. First, set the `RangePosition` property to custom in the scale, and then set the `Offset`.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ A ranges  appearance is customized by using the [`Stroke`](https://help.syncfusi
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img2.png)
 
-## Setting a width for range
+## Setting a width for a range
 
 The circular range width is customized by setting the [`StartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_EndWidth) properties.
 
@@ -209,9 +209,9 @@ The circular range width is customized by setting the [`StartWidth`](https://hel
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img3.png)
 
-## Binding range color to scale tick and labels
+## Binding range color to scale ticks and labels
 
-You can bind the ranges stroke to the tick lines and labels within its range by setting the [`BindRangeStrokeToLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_BindRangeStrokeToLabels) and [`BindRangeStrokeToTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_BindRangeStrokeToTicks) properties to true.
+You can bind the range's stroke to the tick lines and labels within its range by setting the [`BindRangeStrokeToLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_BindRangeStrokeToLabels) and [`BindRangeStrokeToTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_BindRangeStrokeToTicks) properties to true.
 
 {% tabs %}
 
@@ -309,11 +309,11 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img4.png)
 
-## Setting a position for range
+## Setting a position for a range
 
-The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
+The range can be placed inside the scale, outside the scale, or on the scale using the following two ways:
 
-### By setting direct range position
+### By setting a direct range position
 
 You can place the range by selecting one of the options available in the [`RangePosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePosition) property.
 
@@ -418,19 +418,19 @@ this.Content = sfCircularGauge;
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img5.png)
 
-### By setting range offset
+### By setting the range offset
 
-The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
+The range can be placed inside the scale, outside the scale, or on the scale using the following two ways:
 
-1. Setting `Offset` and `StrokeThickness` properties.
+1. Setting the `Offset` and `StrokeThickness` properties.
 
-2. Setting `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties.
+2. Setting the `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties.
 
-N>For using this feature need to set the `RangePosition` as custom in the `Rim`.
+N> To use this feature, you need to set the `RangePosition` as custom in the `Rim`.
 
 #### By setting Offset and StrokeThickness
 
-For absolute position, you can use `Offset` and `StrokeThickness` properties of Range. For setting the `Offset` and `StrokeThickness` to the range.
+For absolute position, you can use the `Offset` and `StrokeThickness` properties of the range. Set the `Offset` and `StrokeThickness` to the range.
 
 {% tabs %}
 
@@ -480,7 +480,7 @@ For absolute position, you can use `Offset` and `StrokeThickness` properties of 
 
 #### By setting InnerStartOffset, InnerEndOffset, OuterStartOffset, and OuterEndOffset
 
-For relative position, you can use `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties of Range. This positions is responsive for all the window size. 
+For relative position, you can use the `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties of the range. This position is responsive for all window sizes.
 
 {% tabs %}
 
@@ -533,7 +533,7 @@ For relative position, you can use `InnerStartOffset`, `InnerEndOffset`, `OuterS
 
 ![Inner,Outer Offset Image for Range](Ranges_images/Range-Inner-Outer-Offset.png)
 
-## Setting a multiple ranges
+## Setting multiple ranges
 
 In addition to the default range, you can add n number of ranges to a scale by using the [`Ranges`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_Ranges) property.
 
@@ -633,9 +633,9 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img7.png)
 
-### Setting gradient color for range
+### Setting a gradient color for a range
 
-You can give color transition to range by specifying the different colors using the [`GradientStops`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_GradientStops) property of range. By using the `Value` and `Color` properties of `GradientStops`, you can adjust the color transition range for each color.
+You can give a color transition to a range by specifying the different colors using the [`GradientStops`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html#Syncfusion_UI_Xaml_Gauges_CircularRange_GradientStops) property of the range. By using the `Value` and `Color` properties of `GradientStops`, you can adjust the color transition range for each color.
 
 {% tabs %}
 
@@ -726,3 +726,11 @@ You can give color transition to range by specifying the different colors using 
 {% endtabs %}
 
 ![Ranges - GradientStops](Ranges_images/Gradient-image.png)
+
+## See also
+
+[How to apply gradient color for ranges in WPF circular gauge (SfCircularGauge)](https://support.syncfusion.com/kb/article/10343/how-to-apply-gradient-color-for-ranges-in-wpf-circular-gauge-sfcirculargauge)
+
+[How to create a WPF circular gauge (SfCircularGauge) range pointer with rounded corner edge](https://support.syncfusion.com/kb/article/10366/how-to-create-a-wpf-circular-gauge-sfcirculargauge-range-pointer-with-rounded-corner-edge)
+
+[How to prepare car dashboard demo using SfCircularGauge](https://support.syncfusion.com/kb/article/2720/how-to-prepare-car-dashboard-demo-using-sfcirculargauge)

@@ -13,7 +13,7 @@ You can add a tab item using data binding in the WPF [TabControl](https://help.s
 
 ## Adding tab items using data binding
 
-The `TabControl` can bound to an external source to auto create tabs and display the data using `ItemsSource` property. When you are auto generating tabitem using `ItemsSource`, you need to set `HeaderTemplate` property in `ItemContainerStyle` or `ItemTemplate` to define header and use `ContentTemplate` for display the content of the tab item.  
+The `TabControl` can be bound to an external source to automatically create tabs and display the data using `ItemsSource` property. When you are auto generating tabitem using `ItemsSource`, you need to set `HeaderTemplate` property in `ItemContainerStyle` or `ItemTemplate` to define header and use `ContentTemplate` to display the content of the tab item.  
 
 If the data source implements `INotifyCollectionChanged` interface, then `TabControl` will automatically refresh the UI when item is added, removed or cleared in the collection. When an item is added or removed in `ObservableCollection`, `TabControl` automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when an item is added or removed in `List`, `TabControl` will not refresh the UI automatically.
 
@@ -36,6 +36,8 @@ public class Model {
 }
 
 //ViewModel.cs
+using Syncfusion.Windows.Shared;
+
 public class ViewModel : NotificationObject {
     private ObservableCollection<Model> tabItems;
     public ObservableCollection<Model> TabItems {
@@ -57,11 +59,11 @@ public class ViewModel : NotificationObject {
             Content = "This is the content of first tabitem."
         };
         Model model2 = new Model() {
-            Header = "tab1",
+            Header = "tab2",
             Content = "This is the content of second tabitem."
         };
 
-        //Adding the tab tems into the collection
+        //Adding the tab items into the collection
         tabItems.Add(model1);
         tabItems.Add(model2);
     }

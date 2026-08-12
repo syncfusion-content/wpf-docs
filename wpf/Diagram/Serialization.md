@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Serialization in WPF Diagram control | Syncfusion®
-description: Learn here all about Serialization support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Serialization in WPF SfDiagram | Syncfusion®
+description: Save, load, and serialize diagrams in Syncfusion® WPF SfDiagram, including custom properties, custom classes, and Mermaid syntax support.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Serialization in WPF Diagram (SfDiagram)
+# Serialization in WPF SfDiagram
 
 Serialization is the process of converting the state of SfDiagram's objects into a stream of bytes to recreate them when needed. Such streams can be stored in a database,as a file or memory. The reverse process is called deserialization.
 
 ## Save
 
-In [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram), DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram serialization. It supports saving the SfDiagram into stream. The SfDiagram gets saved with all its properties. 
+In [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram serialization. It supports saving the SfDiagram into stream. The SfDiagram gets saved with all its properties. 
 
 {% tabs %}
 

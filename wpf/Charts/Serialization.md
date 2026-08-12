@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in WPF Charts control | Syncfusion
-description: Learn here all about Serialization support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Serialization in WPF Charts | Syncfusion®
+description: Serialization in the WPF Chart enables chart state, settings, and data to be saved and restored across application sessions.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Serialization in WPF Charts (SfChart)
+# Serialization in WPF Charts
 
 SfChart provides the support for serializing and deserializing control. This section explains on how to serialize and deserialize SfChart.
 
@@ -108,4 +108,4 @@ private void Load_Click(object sender, RoutedEventArgs e)
 ![WPF Chart Serialization](Serialization_images/wpf-chart-serialization.png)
 
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Serialization) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Serialization) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.

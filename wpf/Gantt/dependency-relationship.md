@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dependency Relationship in WPF Gantt control | Syncfusion
-description: Learn about Dependency Relationship support in Syncfusion WPF Gantt control, its elements and more details.
+title: Dependency Relationship in WPF Gantt | Syncfusion
+description: Learn about Dependency Relationship support in Syncfusion WPF Gantt using predecessors and task relationship types.
 platform: wpf
 control: Gantt
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Dependency Relationship in WPF Gantt
 
-Dependency relationship is the relationship between two tasks. These relationship has been categorized into four types based on the start and finish date of the task. They are:
+Dependency relationship is the relationship between two tasks. These relationships have been categorized into four types based on the start and finish date of the task. They are:
 
 * FinishToStart 
 * FinishToFinish
@@ -28,7 +28,7 @@ Start-to-start—You cannot start a task until the other task is also started.
 
 ![Dependency-Relationship_img3](Dependency-Relationship_images/Dependency-Relationship_img3.png)
 
-Start-to-Finish—You cannot finish a task until another the other task is started.
+Start-to-Finish—You cannot finish a task until the other task is started.
 
 ![Dependency-Relationship_img4](Dependency-Relationship_images/Dependency-Relationship_img4.png)
 
@@ -37,36 +37,30 @@ Start-to-Finish—You cannot finish a task until another the other task is start
 <table>
 <tr>
 <th>
-Property </th><th>
+Class </th><th>
 Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
+Data Type </th></tr>
 <tr>
 <td>
 {{'[Predecessor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Predecessor.html)'| markdownify }}</td><td>
-This enables you to set the relationship between the tasks.</td><td>
-Object</td><td>
-Object</td><td>
-NA</td></tr>
+Represents a predecessor task and enables you to set the relationship between the tasks.</td><td>
+Class</td></tr>
 <tr>
 <td>
 {{'[GanttTaskRelationship](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.Predecessor.html#Syncfusion_Windows_Controls_Gantt_Predecessor_GanttTaskRelationship)'| markdownify }}</td><td>
-This contains four relationships. They are:
+Contains the four relationship types. They are:
 
 * StartToStart
 * StartToFinish
 * FinishToFinish
 * FinishToStart
 
-You can assign this to the {{ '_TaskDetails_' | markdownify }} to set the relationship between tasks.</td><td>
-Predecessor</td><td>
-Enum</td><td>
-NA</td></tr>
+You can assign this to a `Predecessor` to set the relationship between tasks.</td><td>
+Enum</td></tr>
 </table>
 
 
-Specifying the Relationship between Tasks 
+## Specifying the Relationship between Tasks
 
 The following code illustrates how to add the Dependency Relationship between tasks:
 
@@ -341,9 +335,9 @@ public class ViewModel
     {
         var taskDetails = new ObservableCollection<Task>();
         taskDetails.Add(new Task() { ID = 1, Name = "Analysis/Planning", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 8, 14), Progress = 40d });
-        taskDetails[0].ChildCollection.Add((new Task() { ID = 2, Name = "IDentify Components to be Localized", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 2, Name = "Identify Components to be Localized", StartDate = new DateTime(2011, 7, 3), EndDate = new DateTime(2011, 7, 5), Progress = 20d }));
         taskDetails[0].ChildCollection.Add((new Task() { ID = 3, Name = "Ensure file localizability", StartDate = new DateTime(2011, 7, 6), EndDate = new DateTime(2011, 7, 7), Progress = 20d }));
-        taskDetails[0].ChildCollection.Add((new Task() { ID = 4, Name = "IDentify tools", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
+        taskDetails[0].ChildCollection.Add((new Task() { ID = 4, Name = "Identify tools", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 7, 14), Progress = 10d }));
         taskDetails[0].ChildCollection.Add((new Task() { ID = 5, Name = "Test tools", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 8, 1), Progress = 10d }));
         taskDetails[0].ChildCollection.Add((new Task() { ID = 6, Name = "Develop delivery timeline", StartDate = new DateTime(2011, 7, 10), EndDate = new DateTime(2011, 8, 1), Progress = 10d }));
         taskDetails[0].ChildCollection.Add((new Task() { ID = 7, Name = "Analysis Progress", StartDate = new DateTime(2011, 7, 14), EndDate = new DateTime(2011, 8, 10), Progress = 10d }));
@@ -417,18 +411,18 @@ To view samples:
 1. Go to the Syncfusion Essential Studio installed location. 
     Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
 2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
-3. Click Run Samples for WPF under User Interface Edition panel .
+3. Click Run Samples for WPF under the User Interface Edition panel.
 4. Select Gantt.
 5. Expand the Connectors Features item in the Sample Browser.
 6. Choose the Predecessor sample to launch. 
 
 ## Dynamic Predecessors and Resources
 
-Essential Gantt provides support for dynamic editing of predecessors in the Grid area. Using this feature, you can dynamically add the predecessor on-demand basis to Gantt. You can add/remove the predecessor in the corresponding cell in the GanttGrid.
+Essential Gantt provides support for dynamic editing of predecessors in the Grid area. Using this feature, you can dynamically add the predecessor on an on-demand basis to the Gantt. You can add/remove the predecessor in the corresponding cell in the GanttGrid.
 
 You can add/remove/update the predecessors and resources of tasks at run time. Initially, the Gantt is loaded with the Predecessor/Resource information in the underlying collection and you can update this information if required.
 
-You can edit the predecessor information from the [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html). For resource, you can edit in the underlying source, Gantt will listen to the change in the underlying source and reflect it in both [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html) and [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html).
+You can edit the predecessor information from the [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html). For resources, you can edit in the underlying source; the Gantt will listen to the change in the underlying source and reflect it in both [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html) and [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html).
 
 ## Predecessor Validation
 
@@ -467,7 +461,7 @@ The following image shows the Predecessor in Auto Mode:
 
 ![gantt-control-predecessors-in-auto-mode](Dependency-Relationship_images/gantt-control-predecessors-in-auto-mode.png)
 
-#### Editing Predecessors
+### Editing Predecessors
 
 While creating a new predecessor in Grid, it should be in the following format:
 
@@ -493,7 +487,7 @@ The following are what you should use for different relationships:
 
 If any other data is added, the current editing relationship will be deleted and only the valid predecessors remain for the task.
 
-#### Editing Resources
+### Editing Resources
 
 As of now, resources cannot be edited in Grid. You can update the resource collection in the underlying source whenever you need. Gantt will listen to the changes in the collection and will update the [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html) and [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html) accordingly.
 
@@ -503,7 +497,7 @@ This helps to change the dependency relationships and resources of the tasks dyn
 
 ![gantt-control-predecessor-editing](Dependency-Relationship_images/gantt-control-predecessor-editing.png)
 
-Adding Dynamic Predecessors and Resources to an Application
+## Adding Dynamic Predecessors and Resources to an Application
 
 The dynamic editing of predecessor will be automatically included in the Gantt by default. There is no need to provide any additional data for that. The following codes illustrate this:
 

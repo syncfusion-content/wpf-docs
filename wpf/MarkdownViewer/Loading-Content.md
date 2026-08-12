@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Load Markdown Content in WPF Markdown Viewer | Syncfusion
-description: Learn how to load Markdown content from various sources (strings, local files, URLs) in the Syncfusion WPF SfMarkdownViewer control.
+title: Loading Markdown Content in WPF SfMarkdownViewer | Syncfusion®
+description: Loading Markdown content in WPF SfMarkdownViewer supports content from strings, local files, and URLs, enabling flexible and efficient Markdown rendering.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Loading Markdown Content in WPF Markdown Viewer
+# Loading Markdown Content in WPF SfMarkdownViewer
 
 The SfMarkdownViewer control provides flexible options for loading Markdown content from multiple sources. The `Source` property intelligently detects the input type and handles content loading automatically, supporting raw Markdown strings, local file paths, and HTTP/HTTPS URLs.
 

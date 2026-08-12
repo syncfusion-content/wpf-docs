@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Commands Support for Stencil in WPF Diagram control | Syncfusion®
-description: Learn here all about keyboard commands support for Stencil in Syncfusion® WPF Diagram (SfDiagram) control ports.
+title: Command Manager for Stencil in WPF SfDiagram | Syncfusion®
+description: Manage keyboard shortcuts and custom commands in Syncfusion® WPF SfDiagram Stencil for navigation, selection, and clipboard operations.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Command Manager for Stencil in WPF Diagram (SfDiagram)
+# Command Manager for Stencil in WPF SfDiagram
 
-The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) in the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) (SfDiagram) library now supports a variety of keyboard commands. These enhancements allow users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently, all without using a mouse. The [`CommandManager`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CommandManager) for the `Stencil` control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the `Stencil`.
+The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) (SfDiagram) library now supports a variety of keyboard commands. These enhancements allow users to navigate through symbols, select multiple symbols, and perform clipboard operations efficiently, all without using a mouse. The [`CommandManager`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CommandManager) for the `Stencil` control enhances this functionality by enabling users to map keyboard gestures to specific Stencil commands, add new gesture commands, and remove existing ones. This integration significantly improves the flexibility and usability of the `Stencil`.
 
 ## Built-in Commands and Key Gestures
 

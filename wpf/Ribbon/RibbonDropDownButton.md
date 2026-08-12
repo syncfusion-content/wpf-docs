@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonDropDownButton in WPF Ribbon
 
-DropDownButton appears like normal button that contains a drop arrow. It displays some items, while click on it. It accepts `DropDownMenuItem` as its children.
+DropDownButton appears like normal button that contains a drop arrow. It displays some items when clicked. It accepts `DropDownMenuItem` as its children.
 
 ## Add DropDownMenuItem
 

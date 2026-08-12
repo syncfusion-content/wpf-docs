@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UML Diagrams in WPF Diagram control | Syncfusion®
-description: Learn here all about UML Diagram Shapes support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: UML Diagrams in WPF SfDiagram | Syncfusion®
+description: Learn about UML diagram shapes in Syncfusion® WPF SfDiagram control, including activity, use case, state, and relationship diagram elements.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# UML Diagrams
+# UML Diagrams in WPF SfDiagram
 
 UML (Unified Modeling Language) Diagrams serve as a standardized means to represent diverse facets of a system, facilitating communication and comprehension for software developers, analysts, and stakeholders. UML Behavioral Diagrams, specifically, play a crucial role in visualizing, specifying, constructing, and documenting the dynamic aspects of a system. They aid in visualizing and determining the model, execution flow, state, or behavior of the system at a specific time.
 
@@ -51,5 +51,3 @@ The list of UML Diagram Shapes are available in the diagram resource dictionary,
 |  | Attribute | ![Attribute](UMLShapes_images/Attribute.png) |
 |  | MultivaluedAttribute | ![MultivaluedAttribute](UMLShapes_images/MultivaluedAttribute.png) |
 |  | StrongRelationship | ![StrongRelationship](UMLShapes_images/StrongRelationship.png) |
-
-N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) page.

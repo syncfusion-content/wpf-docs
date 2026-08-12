@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Search in WPF DataGrid control | Syncfusion®
-description: Learn here all about Search support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Search in WPF SfDataGrid | Syncfusion®
+description:  Search in SfDataGrid quickly locates records across grid data to improve navigation, data access, and productivity.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Search in WPF DataGrid (SfDataGrid)
+# Search in WPF SfDataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) control allows you to search the data displayed in the SfDataGrid. You can search the data by using [SearchHelper.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_Search_System_String_) method.
 
@@ -22,7 +22,7 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 ![WPF DataGrid with Search Panel](Search_images/wpf-datagrid-search-panel.png)
 
 
-### Filtering
+## Filtering
 
 You can enable filter based on search by setting [SearchHelper.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_AllowFiltering) property to true.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Series in WPF Charts control | Syncfusion
-description: Learn here all about Series support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Series in WPF Charts | Syncfusion®
+description: Series in the WPF Chart define how data is visualized, enabling different chart types, styles, and data representations.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Series in WPF Charts (SfChart)
+# Series in WPF Charts
 
 ChartSeries is the visual representation of the data. SfChart offers many types of series ranging from LineSeries to FinancialSeries like HiLo and Candle. Based on your requirements and specifications, any type of Series can be added for data visualization. 
 
@@ -22,4 +22,4 @@ The following APIs are common for the most of the series types:
 * [`IsSeriesVisible`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_IsSeriesVisible) – A bool property, which is used to enable or disable the series visibility.
 
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.

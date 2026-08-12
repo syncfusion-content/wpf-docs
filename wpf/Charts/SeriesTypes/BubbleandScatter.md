@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubble and Scatter Chart in WPF Charts control | Syncfusion
-description: Learn here all about Bubble and Scatter Chart support in Syncfusion® WPF Charts (SfChart) control and more.
+title: Bubble and Scatter Chart in WPF Charts | Syncfusion®
+description: Bubble and scatter series in the WPF Chart visualize relationships between data points using coordinates and variable-sized markers.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Bubble and Scatter in WPF Charts (SfChart)
+# Bubble and Scatter in WPF Charts
 
 ## Bubble Chart
 
@@ -109,7 +109,7 @@ series.ShowZeroBubbles = false;
     Interior="#4A4A4A" 
     ScatterHeight="4" 
     ScatterWidth="4" 
-    ItemsSource="{Binding DataPoints}" 
+    ItemsSource="{Binding data points}" 
     XBindingPath="Eruptions"
     YBindingPath="WaitingTime">
 </chart:ScatterSeries>
@@ -120,7 +120,7 @@ series.ShowZeroBubbles = false;
 
 ScatterSeries series = new ScatterSeries()
 {
-    ItemsSource = new ViewModel().DataPoints,
+    ItemsSource = new ViewModel().data points,
     XBindingPath = "Eruptions",
     YBindingPath = "WaitingTime",
     ScatterHeight = 4,
@@ -137,4 +137,6 @@ chart.Series.Add(series);
 
 ## See also
 
-[`How to change the size and color of scatter series?`](https://www.syncfusion.com/kb/3857/how-to-change-the-size-and-color-of-scatter-series)
+* [`How to select multiple scatter data points with mouse drag in WPF Chart`](https://support.syncfusion.com/kb/article/14773/how-to-select-multiple-scatter-data-points-with-mouse-drag-in-wpf-chart)
+* [`How to change the size of scatter series in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/3774/how-to-change-the-size-of-scatter-series-in-wpf-chart-sfchart)
+* [`How to set the Z-Index for a scatter series in a WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/3014/how-to-set-the-z-index-for-a-scatter-series-in-a-wpf-chart-sfchart)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Find and Replace in WPF Syntax Editor control | Syncfusion
-description: Learn about Find and Replace support in Syncfusion WPF Syntax Editor control, its elements and more.
+title: Find and Replace in WPF Syntax Editor | Syncfusion®
+description: Find and replace in WPF Syntax Editor enables searching and replacing text or code patterns efficiently, helping improve editing productivity.
 platform: wpf
 control: Syntax Editor
 documentation: ug

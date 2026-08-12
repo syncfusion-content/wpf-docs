@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Supported Barcode types in WPF Barcode control | Syncfusion
-description: Learn here all about Supported Barcode types support in Syncfusion WPF Barcode (SfBarcode) control and more.
+title: Symbology Types in WPF Barcode | Syncfusion®
+description: Symbology Types in the WPF Barcode include various 1D and 2D symbologies for encoding and displaying data in barcode formats.
 platform: wpf
 control: SfBarcode
 documentation: ug
 ---
 
-# Supported Barcode types in WPF Barcode (SfBarcode)
+# Symbology Types in WPF Barcode
 
-The following table contains the supported types and associated valid characters.
+The following table lists the supported barcode types and their associated valid characters.
 
 <table>
 <tr>
 <th>Symbol</th>
-<th>Enum Value</th>
+<th>Enum value</th>
 <th>Supported characters</th>
 <th>Length</th>
 </tr>
@@ -82,7 +82,7 @@ variable</td></tr>
 <td>
 {{'[Code 128B](https://en.wikipedia.org/wiki/Code_128)'| markdownify }}</td><td>
 Code128B</td><td>
-[0-9]; [A-Z]; [a-z]; [SPACE (0x20) ! " # $ % & ' ( ) * + , - . / :; &lt; = &gt; ? @ [ / ]^ _ `  { | } ~ DEL (•) ]</td><td>
+[0-9]; [A-Z]; [a-z]; [SPACE (0x20) ! " # $ % & ' ( ) * + , - . / : &lt; = &gt; ? @ [ / ]^ _ `  { | } ~ DEL (•) ]</td><td>
 variable</td></tr>
 <tr>
 <td>

@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Getting Started with WPF Range Selector control | Syncfusion
-description: Learn here about getting started with Syncfusion® WPF Range Selector (SfDateTimeRangeNavigator) control, its elements and more.
+title: Getting Started with WPF Range Selector | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Range Selector control. Explore setup, configuration, range selection, and customization options.
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Getting Started with WPF Range Selector (SfDateTimeRangeNavigator)
+# Getting Started with WPF Range Selector
 
 ## Visual structure
 
-The date-time range navigator control is composed of various elements such as higher level bar, lower Level bar, content, and resizable scroll bar.
+The date-time range navigator control is composed of various elements such as higher level bar, lower level bar, content, and resizable scroll bar.
 
 * Higher level bar: Contains timespan format that is one level higher than date-time values of lower level bar, e.g. the higher level bar contains year format (yyyy) and the lower level bar contains month format (MMM).
-* Lower level bar: Contains timespan format that is one lever lower than date-time values of higher level bar, e.g. the lower level bar contains month format (MMM) and the higher level bar contains year format (yyyy).
+* Lower level bar: Contains timespan format that is one level lower than date-time values of higher level bar, e.g. the lower level bar contains month format (MMM) and the higher level bar contains year format (yyyy).
 * Content: Holds any type of UI element inside the navigator.
 * Resizable scroll bar: Allows users to zoom and scroll the content and label bars.
 
@@ -60,7 +60,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
 
 ### Set ItemsSource for SfDateTimeRangeNavigator
 
-Since the above steps are enough to create only empty date-time range navigator, you need to set the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_ItemsSource) and [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_XBindingPath) for the SfDateTimeRangeNavigator. The ItemsSource must implement the IEnumerable interface. 
+Since the above steps create only an empty date-time range navigator, you need to set the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_ItemsSource) and [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_XBindingPath) for the SfDateTimeRangeNavigator. The ItemsSource must implement the IEnumerable interface.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator
 
 Add content that needs to be displayed inside the date-time range navigator.
 
-### Property 
+### Properties
 
 <table>
 <tr>
@@ -184,7 +184,7 @@ This section explains how to create an application using the date-time range nav
 
 1. Open the Add Reference window in your project.
 2. Choose Windows > Extensions > Syncfusion.SfChart.WPF.
-3. Add the following namespace in your C# file: MainPage.xaml.cs.
+3. Add the following namespace in your C# file: MainWindow.xaml.cs.
 
 {% capture codesnippet2 %}
 {% highlight c# %}
@@ -199,7 +199,7 @@ using Syncfusion.UI.Xaml.Charts;
 
 {% highlight c# %}
 
-SfDateTimeRangNavigator rangenavigator = new SfDateTimeRangNavigator ();
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
 
 {% endhighlight  %}
 
@@ -207,7 +207,7 @@ SfDateTimeRangNavigator rangenavigator = new SfDateTimeRangNavigator ();
 
 {% highlight c# %}
 
-public class ItemsSource
+public class UserDetail
 {
     public DateTime Date { get; set; }
     public double NoOfUsers { get; set; }
@@ -215,20 +215,20 @@ public class ItemsSource
 
 public class UsersViewModel
 {
-    public ObservableCollection<ItemsSource> UsersList { get; set; }
+    public ObservableCollection<UserDetail> UsersList { get; set; }
 
     public UsersViewModel()
     {
-        this.UsersList = new ObservableCollection<ItemsSource>();
+        this.UsersList = new ObservableCollection<UserDetail>();
 
         DateTime date = DateTime.Today;
 
-        UsersList.Add(new ItemsSource { Date = date.AddHours(1), NoOfUsers = 3000 });
-        UsersList.Add(new ItemsSource { Date = date.AddHours(2), NoOfUsers = 5000 });
-        UsersList.Add(new ItemsSource { Date = date.AddHours(3), NoOfUsers = 2000 });
-        UsersList.Add(new ItemsSource { Date = date.AddHours(4), NoOfUsers = 7000 });
-        UsersList.Add(new ItemsSource { Date = date.AddHours(5), NoOfUsers = 6000 });
-        UsersList.Add(new ItemsSource { Date = date.AddHours(6), NoOfUsers = 3000 });
+        UsersList.Add(new UserDetail { Date = date.AddHours(1), NoOfUsers = 3000 });
+        UsersList.Add(new UserDetail { Date = date.AddHours(2), NoOfUsers = 5000 });
+        UsersList.Add(new UserDetail { Date = date.AddHours(3), NoOfUsers = 2000 });
+        UsersList.Add(new UserDetail { Date = date.AddHours(4), NoOfUsers = 7000 });
+        UsersList.Add(new UserDetail { Date = date.AddHours(5), NoOfUsers = 6000 });
+        UsersList.Add(new UserDetail { Date = date.AddHours(6), NoOfUsers = 3000 });
     }
 }
 
@@ -242,10 +242,10 @@ N> You can set any IEnumerable collection as ItemsSource.
 
 {% highlight c# %}
 
-//Intialize the SfDateTimeRangNavigator.
+// Initialize the SfDateTimeRangeNavigator.
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator
 {
-    ItemsSource  = UsersList,
+    ItemsSource  = new UsersViewModel().UsersList,
     XBindingPath = "Date"
 };
 
@@ -261,9 +261,11 @@ Add the content that needs to be displayed inside the date-time range navigator 
 // Initialize the SfChart
 SfChart chart = new SfChart();
 
+var userList = new UsersViewModel().UsersList;
+
 LineSeries series = new LineSeries
 {
-    ItemsSource  = UsersList,
+    ItemsSource  = userList,
     XBindingPath = "Date",
     YBindingPath = "NoOfUsers"
 };

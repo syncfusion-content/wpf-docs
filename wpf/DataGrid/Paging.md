@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging in WPF DataGrid control | Syncfusion®
-description: Learn here all about Paging support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Paging in WPF SfDataGrid | Syncfusion®
+description: Paging in SfDataGrid displays data in pages to improve navigation, performance, and the overall browsing experience.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Paging in WPF DataGrid (SfDataGrid)
+# Paging in WPF SfDataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
 
@@ -19,7 +19,7 @@ Follow the below steps to bind SfDataGrid with SfDataPager.
 
 2. Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property to specify the number of records to be displayed per page.
 
-3. Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property. So whenever the page is changed, `PagedSource` will be update based on current page.
+3.  Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property. So whenever the page is changed, `PagedSource` will be updated based on the current page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -123,9 +123,9 @@ public class OrderInfo
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![WPF DataGrid diplays Multiple Pages using SfDataPager](paging_images/wpf-datagrid-multiple-page.png)
+![WPF DataGrid displays Multiple Pages using SfDataPager](paging_images/wpf-datagrid-multiple-page.png)
 
-#### Limitations
+### Limitations
 
 1. SfDataPager doesn’t accepts `DataTable` as Source. 
 2. `AddNewRow` is not supported in SfDataPager.
@@ -483,7 +483,7 @@ private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Control
 {% endtabs %}
 
 
-![WPF DataGrid displys Sorting with loaded DataPager](paging_images/wpf-datagrid-sorting.png)
+![WPF DataGrid displays Sorting with loaded DataPager](paging_images/wpf-datagrid-sorting.png)
 
 ### Loading ItemsSource for page using async and await
 
@@ -565,7 +565,7 @@ public class EmployeeInfoRepository
 
 
 ### Limitations
-1. UI Filtering is not supported. You can code in application level to filter the data.
-2. Data processing operations (Sorting, Grouping) are done only in the current page. 
-3. Deleting is not supported. You can code to delete row in application level. 
-4. Only the navigated pages are exported when `OnDemandPaging’ is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
+1. UI Filtering is not supported. You can code at the application level to filter the data.
+2. Data processing operations (Sorting, Grouping) are done only on the current page. 
+3. Deleting is not supported. You can code to delete a row at the application level. 
+4. Only the navigated pages are exported when `OnDemandPaging` is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.

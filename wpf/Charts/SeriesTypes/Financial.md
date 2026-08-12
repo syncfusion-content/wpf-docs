@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Financial Chart in WPF Charts control | Syncfusion
-description: Learn here all about Financial Chart support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Financial Chart in WPF Charts | Syncfusion®
+description: Financial series in the WPF Chart visualize stock market and financial data using specialized chart types for trend analysis.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Financial in WPF Charts (SfChart)
+# Financial in WPF Charts
 
 The APIs present in the financial series are,
 
-* [`High`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_High)-Gets or sets the string that describes high value in Y-axis.
+* [`High`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_High) -Gets or sets the string that describes high value in Y-axis.
 * [`Low`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Low)- Gets or sets the string that describes low value in Y-axis.
-* [`Open`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Open)-Gets or sets the string that describes open value in Y-axis.
+* [`Open`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Open) -Gets or sets the string that describes open value in Y-axis.
 * [`Close`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Close)- Gets or sets the string that describes close value in Y-axis.
-* [`BearFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BearFillColor)-Represents the brush color for the segments that show stock price has gone up in measured time interval.
-* [`BullFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BullFillColor)-Represents that brush color for the segments that show stock price has gone down in measured time interval.
+* [`BearFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BearFillColor) -Represents the brush color for the segments that show stock price has gone up in measured time interval.
+* [`BullFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BullFillColor) -Represents that brush color for the segments that show stock price has gone down in measured time interval.
 * [`ComparisonMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_ComparisonMode) - Specifies which price need to be considered for the formation from [`High`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialPrice.html), [`Low`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialPrice.html), [`Open`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialPrice.html), [`Close`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialPrice.html) or [`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialPrice.html) financial price.
 
 ## OHLC Chart

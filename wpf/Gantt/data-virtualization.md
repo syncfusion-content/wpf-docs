@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Virtualization in WPF Gantt control | Syncfusion®
-description: Learn about Data Virtualization support in Syncfusion Essential Studio® WPF Gantt control, its elements and more.
+title: Data Virtualization in WPF Gantt | Syncfusion®
+description: Learn about Data Virtualization support in Syncfusion Essential Studio® WPF Gantt by using row and timeline virtualization to efficiently handle large datasets.
 platform: wpf
 control: Gantt
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Virtualization in WPF Gantt
 
-The [WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt) control supports data virtualization to improve performance when working with large datasets. When virtualization is enabled, the control renders only the nodes that are currently visible in the viewport, reducing memory usage and improving scrolling responsiveness.
+The [WPF Gantt Chart](https://www.syncfusion.com/gantt-sdk/wpf-gantt) control supports data virtualization to improve performance when working with large datasets. When virtualization is enabled, the control renders only the nodes that are currently visible in the viewport, reducing memory usage and improving scrolling responsiveness.
 
 ## How virtualization works
 
@@ -183,7 +183,7 @@ public class Task : NotificationObject
             {
                 _subItems.ToList().ForEach(n =>
                 {
-                    /// To listen the changes occuring in child task.
+                    /// To listen to the changes occurring in child task.
                     n.PropertyChanged += this.OnItemPropertyChanged;
                 });
 
@@ -211,7 +211,7 @@ public class Task : NotificationObject
             {
                 _inLineItems.ToList().ForEach(n =>
                 {
-                    /// To listen the changes occuring in child task.
+                    /// To listen to the changes occurring in child task.
                     n.PropertyChanged += this.OnItemPropertyChanged;
                 });
 
@@ -251,7 +251,7 @@ public class Task : NotificationObject
         var tempCal = 0d;
         if (_subItems.Count > 0)
         {
-            /// Updating the start and end date based on the changes occur in the date of child task
+            /// Updating the start and end date based on the changes that occur in the date of a child task
             StartDate = _subItems.Select(c => c.StartDate).Min();
             FinishDate = _subItems.Select(c => c.FinishDate).Max();
             Progress = (_subItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _subItems.Count;
@@ -259,7 +259,7 @@ public class Task : NotificationObject
 
         if (_inLineItems.Count > 0)
         {
-            /// Updating the start and end date based on the changes occur in the date of child task
+            /// Updating the start and end date based on the changes that occur in the date of a child task
             StartDate = _inLineItems.Select(c => c.StartDate).Min();
             FinishDate = _inLineItems.Select(c => c.FinishDate).Max();
             Progress = (_inLineItems.Aggregate(tempCal, (cur, task) => cur + task.Progress)) / _inLineItems.Count;
@@ -874,4 +874,6 @@ public class ViewModel
 {% endhighlight  %}
 {% endtabs %}
 
-![gantt-control-data-virtualization](Data-Virtualization-Images/data-virtualizaton-for-gantt-control.gif){:width="725" height="325"}
+The following image illustrates the Gantt control with timeline virtualization enabled:
+
+![gantt-control-data-virtualization](Data-Virtualization-Images/data-virtualization-for-gantt-control.gif){:width="725" height="325"}

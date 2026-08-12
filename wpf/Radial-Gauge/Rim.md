@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rim in WPF Radial Gauge control | Syncfusion
-description: Learn here all about Rim support in Syncfusion WPF Radial Gauge (SfCircularGauge) control, its elements and more.
+title: Rim in WPF Radial Gauge | Syncfusion®
+description: Rim in the WPF Radial Gauge customizes the outer boundary of the gauge, enhancing appearance and improving visual presentation.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Rim in WPF Radial Gauge (SfCircularGauge)
+# Rim in WPF Radial Gauge
 
 Scale determines the structure of a circular gauge by using a circular rim. By setting the [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_StartAngle) and [`SweepAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_SweepAngle) properties, you can change the shape of the circular gauge to a full-circular gauge, half-circular gauge, or quarter-circular gauge.
 
@@ -70,7 +70,7 @@ this.Content = sfCircularGauge;
 
 {% endtabs %}
 
-![Rim startValue enadValue image](Rim_images/Rim_StartValue_EnadValue.png)
+![Rim startValue endValue image](Rim_images/Rim_StartValue_EnadValue.png)
 
 ## Rim customization
 
@@ -128,15 +128,15 @@ this.Content = sfCircularGauge;
 
 ![Rim customization image](Rim_images/Rim_customization.png)
 
-## Setting a position for rim
+## Setting a position for the rim
 
-You can customize the position of [`Scales`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularGauge.html#Syncfusion_Windows_Gauge_CircularGauge_Scales) in the following two ways:
-1.	 [`RadiusFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RadiusFactor) property.
-2.	 [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_Radius) property.
+You can customize the position of the [`Scales`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularGauge.html#Syncfusion_Windows_Gauge_CircularGauge_Scales) in the following two ways:
+1.	 The [`RadiusFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RadiusFactor) property.
+2.	 The [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_Radius) property.
 
-### Setting a radius factor for rim
+### Setting a radius factor for the rim
 
-The value for `RadiusFactor` should be specified in offset value. It value should be 0 to 1.  `RadiusFactor` sets the scale responsive with the window. 
+The value for `RadiusFactor` should be specified as an offset value. The value should be from 0 to 1. `RadiusFactor` sets the scale responsive with the window.
 
 {% tabs %}
 
@@ -188,9 +188,9 @@ this.Content = sfCircularGauge;
 
 ![Rim with RadiusFactor image](Rim_images/Rim_with_RadiusFactor.png)
 
-### Setting a radius for rim
+### Setting a radius for the rim
 
-You can set the `Radius` of rim in pixel value. `Radius` sets the scale fixed with the given pixel value. 
+You can set the `Radius` of the rim in pixel value. `Radius` sets the scale fixed with the given pixel value.
 
 {% tabs %}
 
@@ -242,9 +242,9 @@ this.Content = sfCircularGauge;
 
 ### Setting rim visibility
 
-The [`ShowRim`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_ShowRim) property is a Boolean property, which is used to enable or disable the rim in circular gauge.
+The [`ShowRim`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_ShowRim) property is a Boolean property, which is used to enable or disable the rim in the circular gauge.
 
-N> Default value of the ShowRim property is true.
+N> The default value of the `ShowRim` property is true.
 
 {% tabs %}
 
@@ -279,7 +279,7 @@ N> Default value of the ShowRim property is true.
 
 ![Show rim support in WPF Circular Gauge](Rim_images/show-rim.png)
 
-### Set offset value for a responsive size in rim
+### Setting an offset value for a responsive size in the rim
 
 * [`RimStartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RimStartOffset) - Sets the rim start offset position. Its range is from 0 to 1.
 * [`RimEndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RimEndOffset) - Sets the rim end offset position. Its range is from 0 to 1.

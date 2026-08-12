@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Category Editor in WPF PropertyGrid control | Syncfusion
-description: Learn about Category Editor support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Category Editor Support in WPF PropertyGrid | Syncfusion®
+description: Category Editor Support in PropertyGrid enables grouping related properties under a category and customizing their editors using templates.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Category Editor in WPF PropertyGrid
+# CategoryEditor support in WPF PropertyGrid
 
 The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. `CategoryEditor` support enables us to set the related properties (one or more properties) under single or multiple category based on the need. `CategoryEditor` can be applied in category view. While sorted view, default editors will be applied.
 
@@ -15,7 +15,7 @@ The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) cont
 
 If we want to display some related properties under the specific category, we can do it by the `CategoryEditor`. We can add any number of `CategoryEditor`. We must add property names in the `CategoryEditor.Properties` collection which are need to be categorized in the same category. Using the `CategoryEditor.EditorTemplate`, we can create the own template for the categorized properties with its required value editors. The properties and its value editor can be placed in the `PropertyGrid` as our wish. To display the `CategoryEditor`, we need the enable the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableGrouping) property as `true`.   
 
-For example, the `Background`, `BorderBrush` and `Foreground` are brush type properties. They will categorized under 'A-Brushes' category. ColorEdit controls will assigned as the value editor for the above properties and located in the same place. Based on the property selection, respective `ColorEdit` control will be in the view to pick the color for that property.
+For example, the `Background`, `BorderBrush` and `Foreground` are brush type properties. They will categorized under 'A-Brushes' category. ColorEdit controls are assigned as the value editor for the above properties and located in the same place. Based on the property selection, respective `ColorEdit` control will be in the view to pick the color for that property.
 
 a. `ColorEdit` control visibility converter
 

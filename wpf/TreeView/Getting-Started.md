@@ -1,49 +1,56 @@
 ---
 layout: post
-title: Getting Started with WPF TreeView control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Essential Studio® WPF TreeView (SfTreeView) control, its elements and more.
+title: Getting Started with WPF TreeView | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF TreeView control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Getting Started with WPF TreeView (SfTreeView)
+# Getting Started with WPF SfTreeView
 
-This section provides a quick overview for getting started with the `SfTreeView` for WPF. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for getting started with the `SfTreeView` for WPF. Walk through the entire process of creating a real-world example of this control.
 
 ## Assembly Deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftreeview) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftreeview) section to get the list of assemblies and the NuGet package that needs to be added as a reference to use the control in any application.
 
 Refer to this documentation to find more details about installing nuget packages in a WPF application.
 
 ## Creating simple application with SfTreeView
 
+Follow the steps below to create a new WPF application and add the SfTreeView control:
+
 * Creating the project
 * Add SfTreeView to Project
-* Populating Nodes without data source - Unbound Mode
-* Bind to a hierarchical data source - Bound Mode
-* Bind to a Hierarchy Property Descriptors data source - Bound Mode
+* Populating Nodes without data source – Unbound Mode
+* Bind to a hierarchical data source – Bound Mode
+* Bind to a Hierarchy Property Descriptors data source – Bound Mode
 
 ### Creating the project
 
-Create new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) with data objects.
+Create a new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) with data objects.
 
 ### Add SfTreeView to Project
 
-The WPF TreeView (SfTreeView) control can be added to project by the following ways.
+The WPF TreeView (SfTreeView) control can be added to a project in the following ways.
 
-#### Adding SfTreeView by designer.
+#### Adding SfTreeView by designer
 
-WPF TreeView (SfTreeView) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+To add the SfTreeView control by designer:
+
+1. Open the **Toolbox** in Visual Studio (View → Toolbox).
+2. Search for `SfTreeView` (or locate it under the Syncfusion WPF tab).
+3. Drag the `SfTreeView` control and drop it onto the Designer view.
+4. The required assembly references will be added automatically.
 
 ![WPF TreeView Designer](GettingStarted_images/wpf-treeview-designer.png)
 
-#### Adding SfTreeView by XAML.
+#### Adding SfTreeView by XAML
 
-In order to add control manually in XAML, do the below steps,
+To add the control manually in XAML, do the following steps:
 
-1. Add the below required assembly references to the project,
+1. Add the following required assembly reference to the project:
 
 	* Syncfusion.SfBusyIndicator.WPF
 	* Syncfusion.SfTreeView.WPF
@@ -75,9 +82,9 @@ In order to add control manually in XAML, do the below steps,
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-#### Adding SfTreeView by C#.
+#### Adding SfTreeView by C#
 
-In order to add control manually in C#, do the below steps,
+To add the control manually in C#, do the following steps:
 
 1. Add the below required assembly references to the project,
 	* Syncfusion.SfBusyIndicator.WPF
@@ -676,7 +683,7 @@ public class FileManagerViewModel
 
 ## Theme
 
-WPF TreeView (SfTreeView) supports various built-in themes. Refer to the below links to apply themes for the SfTreeView,
+WPF TreeView (SfTreeView) supports various built-in themes. Refer to the links below to apply themes to the SfTreeView.
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

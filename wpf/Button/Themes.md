@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Themes in WPF Button control | Syncfusion
-description: Learn here all about Themes support in Syncfusion Essential Studio WPF Button (ButtonAdv) control, its elements and more details.
-platform: WPF
+title: Themes in WPF Button (ButtonAdv) | Syncfusion®
+description: Themes in Button (ButtonAdv) provide consistent visual styles that align with application design requirements.
+platform: wpf
 control: ButtonAdv
 documentation: ug
 ---

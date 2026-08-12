@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Customization in AI-Powered Text Editor control | Syncfusion®
-description: Learn here all about how to customize behavior and features of Syncfusion® WPF AI-Powered Text Editor (SfSmartTextEditor) control and more.
+title: Customization in WPF SfSmartTextEditor | Syncfusion®
+description: Customize the appearance and behavior of Syncfusion® WPF SfSmartTextEditor control with text styles, placeholders, and suggestion behavior customization options
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
 ---
 
-# Customization in WPF AI-Powered Text Editor (SfSmartTextEditor)
+# Customization in WPF SfSmartTextEditor
+
 This section explains how to change the AI-Powered Text Editor’s appearance and suggestion behavior. You can set text styles, placeholder options, and customize how suggestions are shown.
 
 ## Text customization
-Set or bind the smart text editor’s text using the `Text` property. You can use this to preloaded content or bind it to a field in your view model for data binding.
+Set or bind the smart text editor’s text using the `Text` property. You can use this to preloaded content or bind it to a field in your view model for data binding. The `Text` property supports two-way binding.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
@@ -121,7 +122,7 @@ Change the background color of the suggestion popup using the `SuggestionPopupSt
 ![Customization in WPF Smart Text Editor.](images/customization/wpf-smarttexteditor-customization.gif)
 
 ## Maximum input length
-Set a limit on the number of characters the user can enter in the smart text editor using the `MaxLength` property.
+Set a limit on the number of characters the user can enter in the smart text editor using the `MaxLength` property. When the limit is reached, additional input is restricted.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}

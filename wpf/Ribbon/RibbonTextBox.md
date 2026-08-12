@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonTextBox in WPF Ribbon
 
-`RibbonTextBox` control provide similar set of functionalities like normal TextBox control in Ribbon Instance. 
+The `RibbonTextBox` control provides a similar set of functionalities to a normal TextBox control in a Ribbon instance.
 
 ## Add TextBox to the RibbonBar
 
@@ -18,7 +18,7 @@ documentation: ug
 
 <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 <syncfusion:RibbonTab Name="_ribbonTab1" Caption="HOME"  IsChecked="True">
-<syncfusion:RibbonBar Name="_ribbonBar2" Header="RibbonBar1">
+<syncfusion:RibbonBar Name="_ribbonBar1" Header="RibbonBar1">
 <syncfusion:RibbonButton   Label="Cut"/>
 </syncfusion:RibbonBar>
 <syncfusion:RibbonBar  Name="_ribbonBar2" Width="150" Header="RibbonBar2">

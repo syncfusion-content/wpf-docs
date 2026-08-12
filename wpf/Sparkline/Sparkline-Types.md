@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Sparkline Types in WPF Sparkline control | Syncfusion
-description: Learn here all about Sparkline Types support in Syncfusion WPF Sparkline (SfSparkline) control and more.
+title: Types in WPF Sparkline | Syncfusion®
+description: Types in the WPF Sparkline provide multiple visualization options to represent trends, variations, and data patterns effectively.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Sparkline Types in WPF Sparkline (SfSparkline)
+# Types in WPF Sparkline
 
-## Line Sparkline
+## Line sparkline
 
-Line sparkline rendered using polyline and the following code is used to create line sparkline.
+The line sparkline is rendered using a polyline. The following code is used to create a line sparkline.
 
 {% tabs %}
 
@@ -32,7 +32,7 @@ Line sparkline rendered using polyline and the following code is used to create 
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-	ItemsSource = new SparkViewModel().UsersList,
+	ItemsSource = new UsersViewModel().UsersList,
 	YBindingPath = "NoOfUsers"
 };
 
@@ -40,14 +40,14 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-The following illustrates the result of the above code sample,
+The following illustrates the result of the above code sample.
 
 ![Sparkline-Types_img1](Sparkline-Types_images/Sparkline-Types_img1.png)
 
 
-## Column Sparkline
+## Column sparkline
 
-Column sparkline used to visualize the raw data as a rectangle and following code is used to create column sparkline.
+The column sparkline is used to visualize the raw data as rectangles. The following code is used to create a column sparkline.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ Column sparkline used to visualize the raw data as a rectangle and following cod
 
 SfColumnSparkline sparkline = new SfColumnSparkline()
 {
-	ItemsSource = new SparkViewModel().UsersList,
+	ItemsSource = new UsersViewModel().UsersList,
 	YBindingPath = "NoOfUsers"
 };
 
@@ -72,13 +72,13 @@ SfColumnSparkline sparkline = new SfColumnSparkline()
 
 {% endtabs %}
 
-Following is the snapshot for Column Sparkline,
+The following is a snapshot of the column sparkline.
 
 ![Sparkline-Types_img2](Sparkline-Types_images/Sparkline-Types_img2.png)
 
 ## Area sparkline
 
-The following code is used to create area sparkline and all the line sparkline features are applicable for area sparkline.
+The following code is used to create an area sparkline. All line sparkline features are applicable for the area sparkline.
 
 {% tabs %}
 
@@ -95,7 +95,7 @@ The following code is used to create area sparkline and all the line sparkline f
 
 SfAreaSparkline sparkline = new SfAreaSparkline()
 {
-	ItemsSource = new SparkViewModel().UsersList,
+	ItemsSource = new UsersViewModel().UsersList,
 	YBindingPath = "NoOfUsers"
 };
 
@@ -107,9 +107,9 @@ The following is a snapshot of the area sparkline.
 
 ![Sparkline-Types_img3](Sparkline-Types_images/Sparkline-Types_img3.png)
 
-## WinLoss Sparkline
+## WinLoss sparkline
 
-WinLoss sparkline render as a column segment and it show the positive, negative and neutral values.
+The WinLoss sparkline renders as column segments and shows the positive, negative, and neutral values.
 
 {% tabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Node Style in WPF Gantt control | Syncfusion
-description: Learn about Custom Node Style support in Syncfusion WPF Gantt control, its elements and more details.
+title: Custom Node Style in WPF Gantt | Syncfusion
+description: Learn about Custom Node Style support in Syncfusion WPF Gantt, including custom templates, progress bar styling, and built-in node interactions.
 platform: wpf
 control: Gantt
 documentation: ug
@@ -15,13 +15,13 @@ Custom node style enables you to design your own style to the nodes that will be
 * Task Node
 * Milestone
 
-You can apply custom styles for all the three nodes. The basic functionalities of the Gantt nodes like resizing, drag and drop and tooltip are available only when the custom node style has the built-in node style’s such as drag and drop the thumb and resizing the thumbs. Otherwise the custom node will work properly, but you cannot access these features of Gantt. 
+You can apply custom styles for all the three nodes. The basic functionalities of the Gantt nodes like resizing, drag and drop, and tooltip are available only when the custom node style has the built-in node style's named parts, such as the drag-and-drop thumb and the resizing thumbs. Otherwise, the custom node will not work properly, and you cannot access these features of the Gantt.
 
 ## Use Case Scenarios
 
-You can customize the node to give a similar look and feel of your product. For example if you are from a steel company, then you can add a style that gives steel rod like look and feel to the node. 
+You can customize the node to give a similar look and feel of your product. For example, if you are from a steel company, then you can add a style that gives a steel-rod-like look and feel to the node. 
 
-You can also design the node based on your organization’s logo.
+You can also design the node based on your organization's logo.
 
 ## Adding Custom Node Style to an Application 
 
@@ -53,6 +53,9 @@ MileStone</td></tr>
 {% tabs %}
 {% highlight xaml %}
 
+<!-- Declare the Syncfusion Gantt namespace on the root element:
+     xmlns:chart="clr-namespace:Syncfusion.Windows.Controls.Gantt;assembly=Syncfusion.Gantt" -->
+
 <syncfusion:GanttControl x:Name="ganttControl"
                          ItemsSource="{Binding TaskCollection}">
      <syncfusion:GanttControl.TaskAttributeMapping>
@@ -64,6 +67,7 @@ MileStone</td></tr>
                                            DurationMapping="Duration"
                                            MileStoneMapping="IsMileStone"
                                            PredecessorMapping="Predecessor"
+                                           ResourceInfoMapping="Resources"
                                            ProgressMapping="Progress" />
      </syncfusion:GanttControl.TaskAttributeMapping>
     <syncfusion:GanttControl.Resources>
@@ -157,7 +161,7 @@ MileStone</td></tr>
            TargetType="{x:Type chart:GanttNode}">
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type  chart:GanttNode}">
+                <ControlTemplate TargetType="{x:Type chart:GanttNode}">
                     <Border Name="PART_Border"
                             Height="18"
                             VerticalAlignment="Center"
@@ -318,7 +322,7 @@ MileStone</td></tr>
 
 {% highlight c#  %}
 
- this.ganttControl.ItemsSource = new ViewModel().TaskDetails;
+ this.ganttControl.ItemsSource = new ViewModel().TaskCollection;
 
 // Task attribute mapping
 TaskAttributeMapping taskAttributeMapping = new TaskAttributeMapping();
@@ -331,7 +335,7 @@ taskAttributeMapping.DurationMapping = "Duration";
 taskAttributeMapping.MileStoneMapping = "IsMileStone";
 taskAttributeMapping.PredecessorMapping = "Predecessor";
 taskAttributeMapping.ProgressMapping = "Progress";
-taskAttributeMapping.ResourceInfoMapping = "Resource";
+taskAttributeMapping.ResourceInfoMapping = "Resources";
 this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 {% endhighlight  %}
@@ -445,7 +449,8 @@ this.ganttControl.TaskAttributeMapping = taskAttributeMapping;
 
 ![gantt-custom-node-style-with-gradient](Custom-Node-Style_images/gantt-custom-node-style-with-gradient.png)
 
-_Custom Node Style_
+Custom Node Style with Gradient
+{:.caption}
 
 ![gantt-custom-node-style](Custom-Node-Style_images/gantt-custom-node-style.png)
 
