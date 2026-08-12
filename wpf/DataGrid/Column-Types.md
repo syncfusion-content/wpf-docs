@@ -2087,7 +2087,7 @@ In the below code `GridImageColumn` defined with `ImageLink` property using `Map
 {% endhighlight %}
 {% endtabs %}
 
-#### Read image from path using ValueBinding
+### Read image from path using ValueBinding
 
 You can use converter to read image from resource by setting `Converter` in `ValueBinding` definition.
 
