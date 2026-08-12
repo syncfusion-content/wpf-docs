@@ -35,4 +35,4 @@ documentation: ug
 * **Overview control**: Displays a small preview of the full diagram page, which allows you to improve navigation.
 * **Localization**: Localizes all static text in the control to any supported language.
 
-N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) page.
+N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.
