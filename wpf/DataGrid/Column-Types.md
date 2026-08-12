@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Types in WPF DataGrid control | Syncfusion®
-description: Learn here all about Column Types support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Column Types in WPF SfDataGrid | Syncfusion®
+description: Column Types in SfDataGrid provides built-in and custom column types to display, edit, format, and customize data effectively.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Column Types in WPF DataGrid (SfDataGrid)
+# Column Types in WPF SfDataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
 
@@ -2087,7 +2087,7 @@ In the below code `GridImageColumn` defined with `ImageLink` property using `Map
 {% endhighlight %}
 {% endtabs %}
 
-#### Read image from path using ValueBinding
+### Read image from path using ValueBinding
 
 You can use converter to read image from resource by setting `Converter` in `ValueBinding` definition.
 

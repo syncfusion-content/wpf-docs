@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging in WPF DataGrid control | Syncfusion®
-description: Learn here all about Paging support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Paging in WPF SfDataGrid | Syncfusion®
+description: Paging in SfDataGrid displays data in pages to improve navigation, performance, and the overall browsing experience.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Paging in WPF DataGrid (SfDataGrid)
+# Paging in WPF SfDataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](https://help.syncfusion.com/wpf/datapager/overview) control user guide for more information.
 
@@ -125,7 +125,7 @@ public class OrderInfo
 
 ![WPF DataGrid displays Multiple Pages using SfDataPager](paging_images/wpf-datagrid-multiple-page.png)
 
-#### Limitations
+### Limitations
 
 1. SfDataPager doesn’t accepts `DataTable` as Source. 
 2. `AddNewRow` is not supported in SfDataPager.
