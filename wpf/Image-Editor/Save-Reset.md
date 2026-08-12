@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Saving edited image in syncfusion SfImageEditor WPF.
-description: This section describes how to save the image using toolbar and programmatically, reset the image, and saving events in SfImageEditor control for WPF platform.
+title: Save and Reset in WPF ImageEditor | Syncfusion®
+description: Save and Reset feature in Syncfusion® WPF ImageEditor allows you to save edited images and reset changes through toolbar and programmatic methods.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Save and Reset functionality in Image Editor
+# Save and Reset in WPF ImageEditor
 
 Image can be saved along with the changes. An image can be saved in the following two ways:
 

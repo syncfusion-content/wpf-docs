@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Z ordering of shapes in syncfusion SfImageEditor WPF.
-description: This section describes how to arrange the shapes added in the image editor as required by changing its Z order.
+title: Z Ordering in WPF ImageEditor | Syncfusion®
+description: Z Ordering feature in Syncfusion® WPF ImageEditor allows you to arrange shapes by changing their Z order using front, back, and directional methods.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Z ordering in WPF ImageEditor (SfImageEditor)
+# Z Ordering in WPF ImageEditor
 
 The image editor allows you to change the position of shapes that are arranged in the editor. This can be achieved using the following methods:
 
