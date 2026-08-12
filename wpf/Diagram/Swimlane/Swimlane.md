@@ -150,7 +150,7 @@ The following code example explains how to customize the swimlane header.
  <DataTemplate x:Key="viewTemplate">
    <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
                FontStyle="Italic" FontSize="12" 
-               FontFamily="TimesNewRoman" 
+               FontFamily="Times New Roman" 
                TextDecorations="Underline" 
                FontWeight="Bold" 
                Foreground="AliceBlue"/>

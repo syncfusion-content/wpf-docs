@@ -425,7 +425,7 @@ Default appearance of the annotations can be customized by using the [`EditTempl
   <DataTemplate x:Key="viewTemplate">
      <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
                FontStyle="Italic" FontSize="12" 
-               FontFamily="TimesNewRomen" 
+               FontFamily="Times New Roman" 
                TextDecorations="Underline" 
                FontWeight="Bold" 
                Foreground="Black"/>
@@ -435,7 +435,7 @@ Default appearance of the annotations can be customized by using the [`EditTempl
   <DataTemplate x:Key="editTemplate">
       <TextBox Text="{Binding Path=Content, Mode=TwoWay}" 
              FontStyle="Oblique" FontSize="12" 
-             FontFamily="TimesNewRomen" 
+             FontFamily="Times New Roman" 
              FontWeight="Bold" Foreground="Red"/>
   </DataTemplate>
 
