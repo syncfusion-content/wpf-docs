@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WPF Olap Chart control | Syncfusion
-description: Learn about Appearance support in Syncfusion Essential Studio® WPF Olap Chart control, its elements and more details.
+title: Appearance in WPF Olap Chart | Syncfusion®
+description: Appearance in the WPF OLAP Chart allows you to customize chart elements, colors, styles, and visual settings for improved presentation.
 platform: wpf
 control: OLAP Chart
 documentation: ug
@@ -15,7 +15,7 @@ The OLAP chart supports customizing the appearance of charts. You can customize 
 
 The OLAP chart provides options to set the chart type, chart color, chart legend position, chart legend, and legend check box visibility:
 
-* **ChartType**: Sets the chart type for the OLAP chart control.
+* [ChartType](https://help.syncfusion.com/cr/wpf/Syncfusion.Olap.Reports.ChartAppearanceSettings.html#Syncfusion_Olap_Reports_ChartAppearanceSettings_ChartType): Sets the chart type for the OLAP chart control.
 * **ColorModel.Palette**: Specifies the chart color for the OLAP chart control.
 * **Legend.Visibility**: Specifies the visibility of the chart legend.
 * **Legend.CheckBoxVisibility**: Specifies the visibility of the chart legend check box.

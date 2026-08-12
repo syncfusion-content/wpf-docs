@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Key Features in WPF Bullet Graph control | Syncfusion
-description: Learn all about the Key Features in the Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
+title: Key Features in WPF Bullet Graph | Syncfusion®
+description: Key features in the WPF Bullet Graph include comparative measurement, target indicators, qualitative ranges, and customizable visualization.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Key Features in WPF Bullet Graph (SfBulletGraph)
+# Key Features in WPF Bullet Graph
 
 [`SfBulletGraph`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html) is a composite UI element with the following sub-parts:
 

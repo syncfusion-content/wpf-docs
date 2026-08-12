@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toggle State in WPF Button control | Syncfusion
-description: Learn here all about Toggle State support in Syncfusion WPF Button (ButtonAdv) control, its elements and more details.
+title: Toggle State in WPF Button (ButtonAdv) | Syncfusion®
+description: Toggle State in Button (ButtonAdv) enables buttons to maintain checked and unchecked states using the IsCheckable and IsChecked properties.
 platform: wpf
 control: ButtonAdv
 documentation: ug

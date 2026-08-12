@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drag Limit in WPF Diagram control | Syncfusion®
-description: Learn here all about Drag Limit support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Drag Limit in WPF SfDiagram | Syncfusion®
+description: Restrict diagram object dragging in Syncfusion® WPF SfDiagram using drag limits and editable areas to control movement boundaries.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Drag Limit in WPF Diagram (SfDiagram)
+# Drag Limit in WPF SfDiagram
 
 The drag limit allows you to define the dragging region of the Diagram while diagram objects are getting dragged. The [DragLimit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_DragLimit) property of scroll settings class helps to limit the dragging area. It includes the following options:
 

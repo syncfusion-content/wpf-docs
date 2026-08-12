@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in WPF Olap Chart control | Syncfusion
-description: Learn about Tooltip support in Syncfusion Essential Studio® WPF Olap Chart control, its elements and more details.
+title: Tooltip in WPF Olap Chart | Syncfusion®
+description: Tooltip in the WPF OLAP Chart displays detailed information about data points on hover, helping users analyze chart data effectively.
 platform: wpf
 control: OLAP Chart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip in WPF Olap Chart
 
-The OLAP chart provides the series information such as measure, primary x-axis and y-axis values, and series name through the series tooltip, when the mouse pointer is moved over chart points.
+The OLAP chart provides series information, such as measure values, primary x-axis and y-axis values, and the series name, through series tooltips when the mouse pointer is moved over chart points.
 
 The following code sample shows how to disable the series tooltip using the `ShowToolTip` property.
 

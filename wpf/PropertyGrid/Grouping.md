@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in WPF PropertyGrid control | Syncfusion
-description: Learn about Grouping support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Grouping in WPF PropertyGrid | Syncfusion®
+description: Grouping in PropertyGrid enables organizing properties into categories using attributes or runtime events, with support for category expansion.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

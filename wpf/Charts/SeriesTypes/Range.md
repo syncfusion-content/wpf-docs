@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range Chart in WPF Charts control | Syncfusion
-description: Learn here all about Range Chart support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Range Chart in WPF Charts | Syncfusion®
+description: Range series in the WPF Chart display minimum and maximum values across data points, enabling visualization of value ranges and variations.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Range in WPF Charts (SfChart)
+# Range Chart in WPF Charts
 
 ## HiLo Chart
 

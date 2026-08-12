@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with Syncfusion® Essential® SfHeatMap for WPF.
-description: This section explains how to integrate the WPF HeatMap (SfHeatMap) into an application and enable its basic features with an example. 
+title: Getting Started with WPF HeatMap | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF HeatMap control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfHeatMap
 documentation: ug
 ---
 
-# Getting Started with WPF HeatMap (SfHeatMap)
+# Getting Started with WPF HeatMap
 
 ## Initialize the SfHeatMap
 

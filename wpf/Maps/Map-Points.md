@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Points in WPF Maps control | Syncfusion
-description: Learn here all about Map Points support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Point customization in WPF Maps | Syncfusion®
+description: Point customization in the WPF Maps display location-based data using markers, enabling visualization and interaction with geographic coordinates.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Map Points in WPF Maps (SfMap)
+# Point customization in WPF Maps
 
 Points are one of the record types in the shape file layer. Points are used to specify a specific point in the map. For example, used to specify the capital of countries. Points in the shape file are given as latitude and longitude coordinates in the shapes file. Those points should be converted as MapPoints.
 

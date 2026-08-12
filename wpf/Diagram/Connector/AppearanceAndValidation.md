@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Validation in WPF Diagram control | Syncfusion®
-description: Learn here all about Appearance and Validation support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: Appearance and Validation in WPF SfDiagram | Syncfusion®
+description: Learn about connector appearance and validation in Syncfusion® WPF SfDiagram control, including decorators, bridging, styling, padding, and events.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Appearance and Validation in WPF Diagram (SfDiagram)
+# Appearance and Validation in WPF SfDiagram
 
 The source point, target point, and segements path of a connector can be customized to change their appearance and it can be validated to customize their original functionalities.
 
@@ -697,9 +697,9 @@ Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tre
 
 [How to prevent the Connector lines from overlapping the Connector's target decorator in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18404/how-to-prevent-the-connector-lines-from-overlapping-the-connectors-target-decorator-in-wpf-diagramsfdiagram)
 
-[How to restrict the Connector's source and target decorator from being positioned in different places in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18413/how-to-restrict-the-connectors-source-and-target-decorator-from-being-positioned-in-different-places-in-wpf-diagram-sfdiagram)
+[How to restrict the Connector's source and target decorator from being positioned in different places in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18413/how-to-restrict-the-connectors-source-and-target-decorator-from-being-positioned-in-different-places-in-wpf-diagram-sfdiagram)
 
-[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)
+[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)
 
 [How to manage the visibility of node and connector objects in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
 

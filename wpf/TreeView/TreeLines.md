@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tree lines in WPF TreeView control | Syncfusion®
-description: Learn here all about Tree lines support in Syncfusion® WPF TreeView (SfTreeView) control, its elements and more.
+title: Tree Lines in WPF TreeView | Syncfusion®
+description: Tree Lines in SfTreeView enable visualizing hierarchical relationships with customizable line display, color, and thickness.
 platform: wpf
 control: SfTreeView
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtualization in WPF Diagram control | Syncfusion®
-description: Learn here all about Virtualization support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Virtualization in WPF SfDiagram | Syncfusion®
+description: Improve performance in Syncfusion® WPF SfDiagram by loading only visible elements and enabling deferred scrolling with virtualization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Virtualization in WPF Diagram (SfDiagram)
+# Virtualization in WPF SfDiagram
 
 Virtualization is the process of loading the diagramming objects available in the visible area of the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded and remaining objects will be loaded only when they come into view. 
 

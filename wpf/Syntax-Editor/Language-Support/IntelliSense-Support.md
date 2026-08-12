@@ -1,7 +1,7 @@
 ---
 layout: post
-title: IntelliSense Support in WPF Syntax Editor control | Syncfusion
-description: Learn about IntelliSense Support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+title: IntelliSense Support in WPF Syntax Editor | Syncfusion®
+description: IntelliSense support in WPF Syntax Editor provides code completion, parameter information, and member suggestions to improve coding speed and accuracy.
 platform: wpf
 control: Syntax Editor
 documentation: ug

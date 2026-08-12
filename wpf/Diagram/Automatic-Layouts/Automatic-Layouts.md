@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Automatic Layout in WPF Diagram control | Syncfusion®
-description: Learn here all about Automatic Layout support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: Automatic Layout in WPF SfDiagram | Syncfusion®
+description: Automatically arrange diagram elements in Syncfusion® WPF SfDiagram using built-in layout algorithms, spacing, orientation, and layout updates.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Automatic Layout in WPF Diagram (SfDiagram)
+# Automatic Layout in WPF SfDiagram
 
 [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides a set of built-in automatic layout algorithms, which is used to arrange nodes automatically based on a predefined layout logic. SfDiagram supports the following built-in automatic layout algorithms:
 
@@ -367,6 +367,6 @@ diagram.LayoutManager = new LayoutManager()
 
 [How to generate tree like diagram with nested objects in WPF ?](https://support.syncfusion.com/kb/article/3478/how-to-generate-tree-like-diagram-with-nested-objects-in-wpf-)
 
-[How to drag and drop elements from treeview in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
+[How to drag and drop elements from treeview in WPF SfDiagram?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
 
 [How to do Expand/Collapse for MultiParent Layout in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11417/how-to-do-expand-collapse-for-multiparent-layout-in-wpf-diagramsfdiagram)
