@@ -18,7 +18,9 @@ Diagram tracks the history of actions that are performed after initializing the 
 The redo function restores any actions that have been previously undone using an undo
 Undo is a function performed to reverse the action of an earlier action.
 
-Undo/redo actions can be executed through shortcut keys. Shortcut key for undo is Ctrl+z and shortcut key for redo is Ctrl+y. 
+Undo/redo actions can be executed through shortcut keys. Shortcut key for undo is Ctrl+Z and shortcut key for redo is Ctrl+Y. 
+
+N> The `Undo` operation reverses the most recent action in the undo stack, while the `Redo` operation restores the most recently undone action from the redo stack. If the corresponding stack is empty, the operation will not perform any action.
 
 Undo/Redo for diagram can be enabled/disabled with the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Constraints) property of SfDiagram class.
 
@@ -28,13 +30,16 @@ Undo/Redo for diagram can be enabled/disabled with the [`Constraints`](https://h
 <!--Initialize SfDiagram with undo/redo constraint-->
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Undoable">
 </syncfusion:SfDiagram>
+
 {% endhighlight %}
 
 {% highlight C# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
+
 //Enable the undo and reso actions
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -43,13 +48,17 @@ Undo/redo actions can be executed using commands of diagram control instead of u
 
 {% tabs %}
 {% highlight xaml %}
+
 <!--Initialize SfDiagram with undo constraint-->
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Undoable">
 </syncfusion:SfDiagram>
+
 {% endhighlight %}
 {% highlight C# %}
+
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
+
 //Enable the undo and redo actions
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
 
@@ -93,6 +102,7 @@ The [`StackLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 
 {% tabs %}
 {% highlight xaml %}
+
 <!--Initialize SfDiagram with undo and redo constraint-->
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Undoable">
     <Syncfusion:SfDiagram.HistoryManager>
@@ -101,10 +111,13 @@ The [`StackLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight C# %}
+
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
+
 //Enable the undo and redo actions
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
+
 diagram.HistoryManager = new HistoryManager()
 {
     StackLimit = 3,
@@ -118,16 +131,23 @@ The `BeginComposite()` method of `HistoryManager` class allows you to log multip
 
 {% tabs %}
 {% highlight C# %}
+
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
+
 //Enable the undo and redo actions
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
+
 //Initialize the history manager class
 diagram.HistoryManager = new HistoryManager();
+
 //method to initiate the group action
 diagram.HistoryManager.BeginComposite();
+
 {% endhighlight %}
 {% endtabs %}
+
+N> After calling the `BeginComposite()` method, you must call the `EndComposite()` method to complete the grouped transaction and add the composite action to the undo/redo history stack.
 
 ## End group action
 
@@ -135,12 +155,16 @@ The `EndComposite()` method of the `HistoryManager` class allows you to end the 
 
 {% tabs %}
 {% highlight C# %}
+
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
+
 //Enable the undo and redo actions
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
+
 //Initialize the history manager class
 diagram.HistoryManager = new HistoryManager();
+
 //method to stop the group action
 diagram.HistoryManager.EndComposite();
 {% endhighlight %}
@@ -154,10 +178,13 @@ History manager class of SfDiagram control allows you to view the undo and redo 
 
 {% tabs %}
 {% highlight C# %}
+
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
+
 //Hook the history changed event.
 (diagram.Info as IGraphInfo).HistoryChangedEvent += HistoryChangedEvent;
+
  private void HistoryChangedEvent(object sender, HistoryChangedEventArgs args)
 {
     UndoText = string.Empty;
@@ -205,8 +232,10 @@ To achieve this you need to customize the [HistoryManager](https://help.syncfusi
 
 {% tabs %}
 {% highlight C# %}
+
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
+
 //Assigning the custom history manager class
 diagram.HistoryManager = new HistoryManager();
 
@@ -463,18 +492,24 @@ History manager class of `SfDiagram` control provides `HistoryChangedEvent` and 
 
 {% tabs %}
 {% highlight xaml %}
+
 <!--Initialize SfDiagram with undo and redo constraint-->
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Undoable" 
 HistoryChangedCommand="{Binding HistoryChangedCommand}">
 </syncfusion:SfDiagram>
+
 {% endhighlight %}
 {% highlight C# %}
+
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
+
 //Enable the undo and redo actions
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
+
 //Hook history changed event
 (diagram.Info as IGraphInfo).HistoryChangedEvent += HistoryChangedEvent;
+
 private void HistoryChangedEvent(object sender, HistoryChangedEventArgs args)
 {
 }
@@ -496,8 +531,10 @@ Diagram allows to notify undo/redo action for the below events,
 
 {% tabs %}
 {% highlight C# %}
+
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
+
 //Register the node changed event
 (diagram.Info as IGraphInfo).NodeChangedEvent += Diagram_NodeChangedEvent;
 
