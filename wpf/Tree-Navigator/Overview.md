@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Tree Navigator control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Tree Navigator (SfTreeNavigator) control, its elements and more.
+title: About Syncfusion® WPF SfTreeNavigator Control | Syncfusion®
+description: Learn about the introduction and overview of Syncfusion® Essential Studio WPF SfTreeNavigator control and explore its features, usage, and more details.
 platform: wpf
 control: SfTreeNavigator 
 documentation: ug
 ---
 
-# WPF Tree Navigator (SfTreeNavigator) Overview
+# About Syncfusion® WPF SfTreeNavigator Control
 
 The tree navigator control provides a unique interface that can expand a tree structure in-place without taking up more space on the screen.
 
