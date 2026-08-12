@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About WPF Smart DataGrid control | Syncfusion®
-description: Learn about the Syncfusion® WPF Smart DataGrid (SfSmartDataGrid) control and its AI-assisted features.
+title: About Syncfusion® WPF SfSmartDataGrid Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF SfSmartDataGrid control and its AI-assisted features.
 platform: wpf
 control: SfSmartDataGrid
 documentation: ug
 keywords: wpf smart datagrid, ai datagrid wpf, smart grid wpf, ai gridview wpf, wpf smart datagrid, wpf ai grid
 ---
 
-# WPF Smart DataGrid (SfSmartDataGrid) Overview
+# About Syncfusion® WPF SfSmartDataGrid Control
 
 The WPF Smart DataGrid is an AI-assisted data grid control that enhances how users interact with data. It enables natural language–driven operations for sorting, filtering, grouping, and highlighting, helping users perform complex tasks more intuitively and efficiently.
 
