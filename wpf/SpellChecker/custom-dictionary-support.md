@@ -2,7 +2,7 @@
 layout: post
 title: Custom Dictionary in WPF SpellChecker | Syncfusion®
 description: Configure a custom dictionary with the Syncfusion WPF SpellChecker (SfSpellChecker) control to add domain-specific words to spell checking.
-platform: WPF
+platform: wpf
 control: SfSpellChecker
 documentation: ug
 ---

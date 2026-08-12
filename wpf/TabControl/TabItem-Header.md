@@ -2,7 +2,7 @@
 layout: post
 title: TabItem Header in WPF TabControl | Syncfusion®
 description: Customize the header of a tab item in the Syncfusion WPF TabControl (TabControlExt) using built-in header templates and labels.
-platform: WPF
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---

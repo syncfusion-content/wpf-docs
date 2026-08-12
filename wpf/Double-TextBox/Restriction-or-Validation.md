@@ -2,7 +2,7 @@
 layout: post
 title: Restriction or Validation in WPF Double TextBox | Syncfusion®
 description: Restrict or validate user input in the Syncfusion WPF Double TextBox control using min, max, and custom validation rules.
-platform: WPF
+platform: wpf
 control: DoubleTextBox 
 documentation: ug
 ---

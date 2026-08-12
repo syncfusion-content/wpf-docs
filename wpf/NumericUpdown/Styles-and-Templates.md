@@ -2,7 +2,7 @@
 layout: post
 title: Styles and Templates in WPF NumericUpdown | Syncfusion®
 description: Customize the appearance of the Syncfusion WPF NumericUpdown (UpDown) control using built-in styles and reusable control templates.
-platform: WPF
+platform: wpf
 control: UpDown
 documentation: ug
 ---

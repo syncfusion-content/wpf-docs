@@ -2,7 +2,7 @@
 layout: post
 title: Context Menu in WPF TabControl | Syncfusion®
 description: Attach a context menu to tab items in the Syncfusion WPF TabControl (TabControlExt) for quick access to common actions.
-platform: WPF
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---

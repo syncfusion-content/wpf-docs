@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in WPF Tile View | Syncfusion®
 description: Bind the Syncfusion WPF Tile View (TileViewControl) to data sources such as collections and IEnumerable objects with full MVVM support.
-platform: WPF
+platform: wpf
 control: TileViewControl
 documentation: ug
 ---

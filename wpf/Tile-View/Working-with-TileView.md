@@ -2,7 +2,7 @@
 layout: post
 title: Working with TileView in WPF Tile View | Syncfusion®
 description: Work with the Syncfusion WPF Tile View (TileViewControl) to add items, switch states, customize templates, and configure interactions.
-platform: WPF
+platform: wpf
 control: TileViewControl
 documentation: ug
 ---

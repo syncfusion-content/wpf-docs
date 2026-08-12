@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WPF TabControl Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio WPF TabControl control, its features and more details.
-platform: WPF
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---

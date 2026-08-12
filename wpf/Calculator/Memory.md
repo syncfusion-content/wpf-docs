@@ -13,23 +13,23 @@ documentation: ug
 
 N> Memory property is a **Read-Only** property that is of decimal type.
 
-### MS
+## MS
 
 MS performs memory storage. Clicking MS button will store the current value to the memory which can be retrieve and used later whenever necessary.
 
-### MR
+## MR
 
 MR performs memory restore. Clicking MR button will restore the value stored in the memory. It retrieves the value stored in the memory for the further usage in the calculation.
 
-### M+
+## M+
 
 Clicking M+ button will increment the value already stored in the memory by the value which we want to add. The newly calculated value gets stored in the memory now. 
 
-### M-
+## M-
 
 Clicking M- button  will decrement the value already stored in the memory by the value which we want to subtract. The newly calculated value gets stored in the memory now. 
 
-### MC
+## MC
 
 Clicking MC button, clears the value stored in the memory by resetting memory to 0.
 

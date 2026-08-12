@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WPF Tabbed MDI Form Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio WPF Tabbed MDI Form control and more details.
-platform: WPF
+platform: wpf
 control: DocumentContainer
 documentation: ug
 ---

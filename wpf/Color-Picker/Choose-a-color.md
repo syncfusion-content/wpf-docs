@@ -2,7 +2,7 @@
 layout: post
 title: Select Solid Color in WPF Color Picker | Syncfusion®
 description: Select a solid color in the Syncfusion WPF Color Picker (ColorPicker) control from standard, theme, and custom color palettes.
-platform: WPF
+platform: wpf
 control: ColorPicker
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to select a solid color from different color models, how to modify their individual properties and also gives brief information about eye dropper, standard colors.
 
-### What is solid color?
+## What is solid color?
 
 Solid color comprises a single color with its alpha, red, blue and green channels or use one of the predefined color provided by the `Colors` class.
 

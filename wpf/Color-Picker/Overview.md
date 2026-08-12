@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WPF Color Picker Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio WPF Color Picker control, its features and more details.
-platform: WPF
+platform: wpf
 control: ColorPicker
 documentation: ug
 ---

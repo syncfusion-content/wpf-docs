@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in WPF TabControl | Syncfusion®
 description: Bind the Syncfusion WPF TabControl (TabControlExt) to data sources such as collections and IEnumerable objects with full MVVM support.
-platform: WPF
+platform: wpf
 control: TabControl
 documentation: ug
 ---

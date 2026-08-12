@@ -2,7 +2,7 @@
 layout: post
 title: AutoReverse in WPF Domain Updown | Syncfusion®
 description: Cycle back to the first item automatically when the last item is reached in the Syncfusion WPF Domain Updown (SfDomainUpDown) control.
-platform: WPF
+platform: wpf
 control: DomainUpDown
 documentation: ug
 ---

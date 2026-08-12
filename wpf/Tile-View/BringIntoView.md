@@ -2,7 +2,7 @@
 layout: post
 title: BringIntoView in WPF Tile View | Syncfusion®
 description: Scroll a specific TileViewItem into view in the Syncfusion WPF Tile View (TileViewControl) using the built-in BringIntoView support.
-platform: WPF
+platform: wpf
 control: TileViewControl
 documentation: ug
 ---

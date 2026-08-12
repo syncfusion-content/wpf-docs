@@ -2,7 +2,7 @@
 layout: post
 title: Culture and Formatting in WPF Integer TextBox | Syncfusion®
 description: Format the integer value in the Syncfusion WPF Integer TextBox control using culture settings, number formats, and grouping separators.
-platform: WPF
+platform: wpf
 control: IntegerTextBox 
 documentation: ug
 ---

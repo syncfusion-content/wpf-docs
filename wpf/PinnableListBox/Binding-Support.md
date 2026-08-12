@@ -2,7 +2,7 @@
 layout: post
 title: Binding Support in WPF PinnableListBox | Syncfusion®
 description: Bind the Syncfusion WPF PinnableListBox control to data sources such as collections and IEnumerable objects with full MVVM support.
-platform: WPF
+platform: wpf
 control: PinnableListBox 
 documentation: ug
 ---

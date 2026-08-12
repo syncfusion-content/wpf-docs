@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WPF Double TextBox Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio WPF Double TextBox control and more details.
-platform: WPF
+platform: wpf
 control: DoubleTextBox
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Changing Double Value in WPF Double TextBox | Syncfusion®
 description: Update the double value of the Syncfusion WPF Double TextBox control programmatically, by spinner buttons, or via keyboard interactions.
-platform: WPF
+platform: wpf
 control: DoubleTextBox 
 documentation: ug
 ---

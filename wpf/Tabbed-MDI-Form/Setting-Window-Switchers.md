@@ -2,7 +2,7 @@
 layout: post
 title: Setting Window Switchers in WPF Tabbed MDI Form | Syncfusion®
 description: Enable window switchers in the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control to quickly switch between open MDI documents.
-platform: WPF
+platform: wpf
 control: DocumentContainer
 documentation: ug
 ---

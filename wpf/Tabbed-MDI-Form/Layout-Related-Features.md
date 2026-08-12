@@ -2,7 +2,7 @@
 layout: post
 title: Layout Related Features in WPF Tabbed MDI Form | Syncfusion®
 description: Configure the layout of the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control with flexible alignment, splitters, and arrangement options.
-platform: WPF
+platform: wpf
 control: DocumentContainer
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WPF SpellChecker Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio WPF SpellChecker control, its features and more details.
-platform: WPF
+platform: wpf
 control: SfSpellChecker 
 documentation: ug
 ---

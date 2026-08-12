@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF SpellChecker | Syncfusion®
 description: Learn how to get started with the Syncfusion WPF SpellChecker control, its elements, and more details.
-platform: WPF
+platform: wpf
 control: SfSpellChecker
 documentation: ug
 --- 
@@ -21,7 +21,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Adding WPF SfSpellChecker to an application
 

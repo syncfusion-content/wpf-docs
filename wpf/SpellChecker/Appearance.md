@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF SpellChecker | Syncfusion®
 description: Customize the look and feel of the Syncfusion WPF SpellChecker (SfSpellChecker) control with built-in themes and custom templates.
-platform: WPF
+platform: wpf
 control: SfSpellChecker
 documentation: ug
 ---

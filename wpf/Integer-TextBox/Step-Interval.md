@@ -2,7 +2,7 @@
 layout: post
 title: Step Interval in WPF Integer TextBox | Syncfusion®
 description: Define the increment or decrement step used by the Syncfusion WPF Integer TextBox control when changing the value with spinner or keys.
-platform: WPF
+platform: wpf
 control: IntegerTextBox 
 documentation: ug
 ---

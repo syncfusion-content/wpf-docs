@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF Double TextBox | Syncfusion®
 description: Customize the look and feel of the Syncfusion WPF Double TextBox control using built-in themes, custom templates, and styling options.
-platform: WPF
+platform: wpf
 control: DoubleTextBox
 documentation: ug
 ---

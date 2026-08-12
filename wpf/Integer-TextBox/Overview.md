@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WPF Integer TextBox Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio WPF Integer TextBox control and more details.
-platform: WPF
+platform: wpf
 control: IntegerTextBox 
 documentation: ug
 ---

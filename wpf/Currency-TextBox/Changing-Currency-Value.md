@@ -2,7 +2,7 @@
 layout: post
 title: Changing Currency Value in WPF Currency TextBox | Syncfusion®
 description: Update the currency value of the Syncfusion WPF Currency TextBox control programmatically, by spinner buttons, or via keyboard interactions.
-platform: WPF
+platform: wpf
 control: CurrencyTextBox 
 documentation: ug
 ---

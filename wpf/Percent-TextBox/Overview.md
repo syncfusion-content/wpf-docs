@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WPF Percent TextBox Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio WPF Percent TextBox control and more details.
-platform: WPF
+platform: wpf
 control: PercentTextBox 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Arrange TileViewItem in WPF Tile View | Syncfusion®
 description: Arrange TileViewItem elements in the Syncfusion WPF Tile View (TileViewControl) by configuring their row, column, and matrix positions.
-platform: WPF
+platform: wpf
 control: TileViewControl
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF TabControl | Syncfusion®
 description: Customize the look and feel of the Syncfusion WPF TabControl (TabControlExt) using built-in themes, custom templates, and styling options.
-platform: WPF
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---

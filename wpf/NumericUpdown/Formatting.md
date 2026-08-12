@@ -2,7 +2,7 @@
 layout: post
 title: Number Formatting in WPF NumericUpdown | Syncfusion®
 description: Format the numeric value in the Syncfusion WPF NumericUpdown (UpDown) control using number formats, padding, and special format strings.
-platform: WPF
+platform: wpf
 control: UpDown
 documentation: ug
 ---

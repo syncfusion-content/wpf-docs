@@ -2,7 +2,7 @@
 layout: post
 title: Disabling Drag and Drop in WPF Tabbed MDI Form | Syncfusion®
 description: Disable the drag and drop behavior of TDI items in the Syncfusion WPF DockingManager and WPF Tabbed MDI Form (DocumentContainer) controls.
-platform: WPF
+platform: wpf
 control: Tabbed MDI Form
 documentation: ug
 ---
