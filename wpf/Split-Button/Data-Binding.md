@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in WPF SplitButton | Syncfusion®
 description: Bind collections and commands to SplitButton dropdown items using view models, item templates, and ItemsSource support.
-platform: WPF
+platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---

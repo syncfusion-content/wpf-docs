@@ -2,7 +2,7 @@
 layout: post
 title: Events in WPF SplitButton | Syncfusion®
 description: Handle SplitButton and dropdown menu item events including click actions and popup opening or closing notifications.
-platform: WPF
+platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---

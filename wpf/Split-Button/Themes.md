@@ -2,7 +2,7 @@
 layout: post
 title: Themes in WPF SplitButton | Syncfusion®
 description: Apply built-in themes and custom visual styles to personalize the appearance of the WPF SplitButton control.
-platform: WPF
+platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---

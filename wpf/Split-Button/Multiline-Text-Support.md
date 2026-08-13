@@ -2,7 +2,7 @@
 layout: post
 title: Multiline Text Support in WPF SplitButton | Syncfusion®
 description: Display button labels across multiple lines in large size mode to improve readability and presentation.
-platform: WPF
+platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---

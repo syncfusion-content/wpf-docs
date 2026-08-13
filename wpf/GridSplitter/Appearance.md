@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF GridSplitter | Syncfusion®
 description: Customize the appearance of GridSplitter (SfGridSplitter) with background styling, preview customization, themes, and visual enhancements.
-platform: WPF
+platform: wpf
 control: SfGridSplitter
 documentation: ug
 ---
