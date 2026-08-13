@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features | SfDataPagerControl | wpf | Syncfusion®
-description: Learn here about features of Syncfusion® Essential Studio® WPF SfDataPagerControl, its elements, and more.
+title: Features in WPF SfDataPager | Syncfusion®
+description: Explore the key features of SfDataPager, including data binding, paging, appearance customization, page navigation, on-demand paging, and UI automation.
 platform: wpf
-control: SfDataPager Control
+control: SfDataPager
 documentation: ug
 ---
 
-# Features in WPF DataPager (SfDataPagerControl)
+# Features in WPF SfDataPager
 
 This section explains the key Features of SfDataPager.
 

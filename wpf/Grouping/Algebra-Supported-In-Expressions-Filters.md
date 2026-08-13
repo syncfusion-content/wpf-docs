@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Algebra Supported In Expressions Filters in WPF Grouping | Syncfusion®
-description: Learn about Algebra Supported In Expressions Filters support in Syncfusion® WPF Grouping control and more.
-platform: WindowsForms
+title: Algebra Supported in Expression Filters in WPF Grouping | Syncfusion®
+description: Expression filters in WPF Grouping support algebraic operations, logical expressions, comparison operators, special filter operators, and custom functions.
+platform: wpf
 control: Grouping
 documentation: ug
 ---
 
-# Algebra Supported In Expressions Filters in WPF Grouping
+# Algebra Supported in Expression Filters in WPF Grouping
 
 Expressions can be any well-formed algebraic combination of the following: 
 
