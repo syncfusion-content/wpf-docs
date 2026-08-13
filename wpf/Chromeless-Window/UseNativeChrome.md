@@ -1,12 +1,12 @@
 ---
 layout: post
-title: UseNativeChrome in WPF Chromeless Window control | Syncfusion
-description: Learn about UseNativeChrome support in Syncfusion WPF Chromeless Window control, its elements and more details.
+title: UseNativeChrome in WPF ChromelessWindow | Syncfusion®
+description: UseNativeChrome support in the ChromelessWindow enables native window chrome behavior while preserving custom window functionality.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# UseNativeChrome in WPF Chromeless Window
+# UseNativeChrome in WPF ChromelessWindow
 
 Windows can be arranged side by side by using the `UseNativeChrome` property, which is helpful when moving and comparing windows. To enable this docking behavior, set the `UseNativeChrome` property to `true`. This property allows the ChromelessWindow to behave like the standard Windows (MS Window) chrome. Windows can be docked to the left and right side of the screen to resize them to half of the screen, docked to the corners to resize to a quarter of the screen, and maximized when docked at the top of the screen.
 

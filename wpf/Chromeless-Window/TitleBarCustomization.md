@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Title bar Customization in WPF Chromeless Window control | Syncfusion
-description: Learn about Title bar Customization support in Syncfusion WPF Chromeless Window control, its elements and more details.
+title: TitleBar Customization in WPF ChromelessWindow | Syncfusion®
+description: TitleBar customization in the ChromelessWindow allows modification of title bar content, commands, icons, and overall appearance.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Title bar Customization in WPF Chromeless Window
+# TitleBar Customization in WPF ChromelessWindow
 
 This section describes the properties that can be used to customize the title bar of a ChromelessWindow.
 
