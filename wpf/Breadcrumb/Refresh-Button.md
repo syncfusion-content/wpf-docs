@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Refresh Button in WPF Breadcrumb control | Syncfusion
-description: Learn here all about Refresh Button support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
+title: Refresh Button in WPF Breadcrumb | Syncfusion®
+description: Use the refresh button to trigger navigation refresh actions and handle refresh-related events in the Breadcrumb control.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug

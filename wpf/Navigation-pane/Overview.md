@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion® WPF Navigation Pane (GroupBar) Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF Navigation Pane (GroupBar) control and more details.
+title: About Syncfusion® WPF Navigation Pane Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Navigation Pane control and more details.
 platform: wpf
 control: Navigation Pane
 documentation: ug
 ---
 
-# WPF Navigation Pane (GroupBar) Overview
+# About Syncfusion® WPF NavigationPane (GroupBar) Control
 
 The GroupBar control implements list-type controls in the UI, similar to the Microsoft Outlook Bar. It has a container to host controls within it. Use it to host a categorized collection of command items and custom controls wired to execute custom commands. It includes several customizable features which can be easily implemented in WPF applications.
 

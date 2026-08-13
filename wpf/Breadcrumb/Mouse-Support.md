@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Mouse Support in WPF Breadcrumb control | Syncfusion
-description: Learn here all about Mouse Support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control, its elements and more details.
+title: Mouse Support in WPF Breadcrumb | Syncfusion®
+description: Use mouse interactions to select items, open navigation popups, scroll content, and browse hierarchical paths efficiently.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug

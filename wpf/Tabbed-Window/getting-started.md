@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF Tabbed Window | Syncfusion
-description: Learn how to create and use WPF Tabbed Window by combining SfChromelessWindow with SfTabControl for document management applications.
+description: Learn how to get started with the Syncfusion WPF Tabbed Window control, its elements, and more details.
 platform: wpf
 control: SfTabControl
 documentation: ug

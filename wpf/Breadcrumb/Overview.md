@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Breadcrumb control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Breadcrumb (HierarchyNavigator) control, its elements and more details.
+title: About Syncfusion® WPF Breadcrumb Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Breadcrumb (HierarchyNavigator) control and more details.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# WPF Breadcrumb (HierarchyNavigator) Overview
+# About Syncfusion®  WPF Breadcrumb (HierarchyNavigator) Control
 
 The HierarchyNavigator control in WPF provides a bread-crumb interface, similar to the Windows Explorer address bar in Windows 7, which enables hierarchical navigation. 
 

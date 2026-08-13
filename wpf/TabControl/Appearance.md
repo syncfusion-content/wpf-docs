@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF TabControl control | Syncfusion®
-description: Learn here all about Appearance support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPF
+title: Appearance in WPF TabControl | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF TabControl (TabControlExt) using built-in themes, custom templates, and styling options.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Appearance in WPF TabControl (TabControlExt)
+# Appearance in WPF TabControl
 
 This section explains different UI customization and theming options available in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
@@ -39,7 +39,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 ## TabItemHeaderStyle
 
 The tab header style can be customized using the `TabItemHeaderStyle` property in ThemeStudio themes. The default value of `TabItemHeaderStyle`  is `Underline`.
-The available header styes are,
+The available header styles are,
 
 * **Underline**
 

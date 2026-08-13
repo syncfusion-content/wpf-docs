@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF AutoComplete Control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF AutoComplete (Classic) control, its elements and more details.
+title: About Syncfusion® WPF AutoComplete (Classic) Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF AutoComplete control and more details.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# WPF AutoComplete (Classic) Overview
+# About Syncfusion® WPF AutoComplete (Classic) Control
 
 W> This control has been marked as classic, please use [SfTextBoxExt (AutoComplete)](/wpf/SfTextBoxExt/Overview) "AutoComplete") instead.
 
