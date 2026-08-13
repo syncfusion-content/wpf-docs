@@ -1,12 +1,12 @@
----
+﻿---
 layout: post
-title: Sorting TreeViewItemAdv in WPF Wizard Control control | Syncfusion
-description: Learn here all about Sorting TreeViewItemAdv support in Syncfusion WPF TreeViewAdv (Classic) control and more.
+title: Sort TreeViewItemAdv in WPF TreeViewAdv (Classic) | Syncfusion®
+description: Sort TreeViewAdv items in ascending or descending order by specifying custom sorting fields and criteria.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Sorting TreeViewItemAdv in WPF TreeViewAdv (Classic)
+# Sort TreeViewItemAdv in WPF TreeViewAdv (Classic)
 
 TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run time. The `Sorting` property of the control allows you to specify the direction of sorting. The sorting options are as follows.
 

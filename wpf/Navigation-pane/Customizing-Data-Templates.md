@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Customizing-Data-Templates in WPF Navigation Pane control | Syncfusion
-description: Learn here all about Customizing-Data-Templates support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
+title: Data Templates in WPF Navigation Pane | Syncfusion®
+description: Customize item, header, and content presentation using data templates and template selectors in the Navigation Pane control.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Customizing-Data-Templates in WPF Navigation Pane (GroupBar)
+# Data Templates in WPF Navigation Pane (GroupBar)
 
 Data templates can be customized for items, headers, and content. The next sections explain how to customize data templates.
 

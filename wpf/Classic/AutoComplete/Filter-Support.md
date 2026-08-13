@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Filter Support in WPF AutoComplete Control | Syncfusion
-description: Learn here all about Filter Support in Syncfusion WPF AutoComplete (Classic) control, its elements and more details.
+title: Filter Support in WPF AutoComplete (Classic) | Syncfusion®
+description: Filter matching items dynamically as users type and display relevant suggestions from the underlying source.
 platform: wpf
 control: AutoComplete
 documentation: ug

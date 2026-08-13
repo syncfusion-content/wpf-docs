@@ -1,14 +1,13 @@
----
+﻿---
 layout: post
-title: Navigation Pane in GroupBar in WPF Navigation Pane | Syncfusion
-description: Learn here all about GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control, its elements and more.
+title: Configure Navigation Pane Features in WPF GroupBar | Syncfusion®
+description: Configure navigation pane popup resizing, gripper support, and layout behavior within the WPF GroupBar control.
 platform: wpf
 control: Navigation Pane
 documentation: ug
 ---
 
-# Navigation Pane in GroupBar in WPF Navigation Pane (GroupBar)
-
+# Configure Navigation Pane Features in WPF GroupBar
 Resizing the Navigation Pane Pop-up
 
 You can resize the navigation pane pop-up in any direction using the PopupResizeDirection property. This dependency property sets the value indicating the resize directions of the navigation pane's pop-up. There are four built-in resize directions.
