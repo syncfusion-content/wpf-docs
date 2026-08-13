@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Search in WPF SfDataGrid | Syncfusion®
-description:  Search in SfDataGrid quickly locates records across grid data to improve navigation, data access, and productivity.
+description: Search in SfDataGrid quickly locates records across grid data to improve navigation, data access, and productivity.
 platform: wpf
 control: SfDataGrid
 documentation: ug
