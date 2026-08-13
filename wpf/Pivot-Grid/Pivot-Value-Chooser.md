@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Value Chooser in WPF Pivot Grid control | Syncfusion®
-description: Learn about Pivot Value Chooser support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Pivot Value Chooser in WPF PivotGrid | Syncfusion®
+description: Pivot Value Chooser in the Syncfusion® WPF PivotGrid control lets users select, reorder, and manage PivotCalculations interactively at runtime.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Pivot Value Chooser in WPF Pivot Grid
+# Pivot Value Chooser in WPF PivotGrid
 
 The pivot value chooser is used to list all the PivotFields available in the data source when the pivot grid is in RowPivotsOnly mode. This window enables users to select a PivotCalculation and add it to the pivot grid, drag and drop the PivotFields, and rearrange the calculation column in the pivot grid control at runtime.
 

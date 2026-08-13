@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in WPF Pivot Grid control | Syncfusion®
-description: Learn about Filtering support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Filtering in WPF PivotGrid | Syncfusion®
+description: Apply filtering in the Syncfusion® WPF PivotGrid control to display subsets of data using FilterExpressions and supporting multiple conditions for refined analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Filtering in WPF Pivot Grid
+# Filtering in WPF PivotGrid
 
 Filtered data displays only a subset of data that meets a specified criterion. **Pivot grid filters** are automatically reapplied every time the pivot grid is refreshed or updated until you remove those filters. In the pivot grid, filters are additive, which means that each additional filter is based on the current filter and reduces the subset of data. You can apply 'n' number of filtering conditions to the pivot grid at a time. While applying filters, a **FilterExpression** is created and data is filtered based on that specified FilterExpression.
 

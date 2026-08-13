@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RTL Support in WPF Pivot Grid control | Syncfusion®
-description: Learn about RTL Support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: RTL Support in WPF PivotGrid | Syncfusion®
+description: RTL Support in the Syncfusion® WPF PivotGrid control enables right-to-left text flow for languages like Arabic and Hebrew, improving localization.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# RTL Support in WPF Pivot Grid
+# RTL Support in WPF PivotGrid
 
 The pivot grid displays the contents of the grid from right-to-left. It can be achieved by setting the `FlowDirection` property of the pivot grid control to "RightToLeft".
 

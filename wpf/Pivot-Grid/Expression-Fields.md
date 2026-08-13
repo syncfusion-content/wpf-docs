@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Expression Fields in WPF Pivot Grid control | Syncfusion®
-description: Learn about Expression Fields support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Expression Fields in WPF PivotGrid | Syncfusion®
+description: Add expression fields in the Syncfusion® WPF PivotGrid control to create calculated fields and extend pivot table analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Expression Fields in WPF Pivot Grid
+# Expression Fields in WPF PivotGrid
 
 The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) supports adding expression fields and handles other features similar to normal fields. You can add new expression field information by using the `AllowedFields` class in the pivot grid control and you can use the following property to load the allowed fields in the pivot grid:
 

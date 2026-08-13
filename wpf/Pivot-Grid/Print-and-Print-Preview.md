@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in WPF Pivot Grid control | Syncfusion®
-description: Learn about Printing support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Printing in WPF PivotGrid | Syncfusion®
+description: Printing in the Syncfusion® WPF PivotGrid control allows users to export and print pivot reports with customized layouts and formatting options.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Printing in WPF Pivot Grid
+# Printing in WPF PivotGrid
 
 The printing support for pivot grid control is provided along with grouping bar. You can use the `ShowPrintPreview` method to preview the pivot grid control before printing. The `PrintHeader` and `PrintFooter` properties are used to add or remove the header and footer information while printing.
 

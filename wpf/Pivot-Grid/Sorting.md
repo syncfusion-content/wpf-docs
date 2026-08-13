@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting | PivotGrid | Syncfusion®
-description: Support to quickly visualize, understand, organize, and find data either in ascending or descending order.
+title: Sorting in WPF PivotGrid | Syncfusion®
+description: Sorting in the Syncfusion® WPF PivotGrid control organizes data in ascending or descending order using built-in or custom comparers for better analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Sorting in WPF Pivot Grid Control
+# Sorting in WPF PivotGrid
 
 Sorting enables you to quickly visualize, understand, organize, and find data that you want. By default, the pivot grid holds built-in comparers for all data types so that it will populate data in ascending/descending order according to its data type. You can also define your own custom comparer to view the data.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in WPF Pivot Grid control | Syncfusion®
-description: Learn about Localization support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Localization in WPF PivotGrid | Syncfusion®
+description: Apply localization in the Syncfusion® WPF PivotGrid control to display culture-specific text, formats for globalized applications.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Localization in WPF Pivot Grid
+# Localization in WPF PivotGrid
 
 Localization deals with customizing data and resources for specific culture or language. The built-in localization and globalization mechanism in WPF allows you to localize any string resource used by pivot grid controls. Localization can be done in the following ways.
 
