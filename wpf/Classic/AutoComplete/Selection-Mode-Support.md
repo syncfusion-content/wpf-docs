@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Selection Mode Support in WPF AutoComplete (Classic) | Syncfusion®
+title: Selection Mode Support in WPF AutoComplete | Syncfusion®
 description: Select single, multiple, or extended items using configurable selection modes and separator-based entry support.
 platform: wpf
 control: AutoComplete

@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Virtualization in WPF TreeViewAdv (Classic) | Syncfusion®
+title: Virtualization in WPF TreeViewAdv | Syncfusion®
 description: Improve TreeViewAdv (Classic) performance using built-in virtualization modes and support for large hierarchical datasets.
 platform: wpf
 control: TreeViewAdv

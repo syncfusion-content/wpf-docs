@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing Data Templates in WPF Menu (MenuAdv) | Syncfusion®
+title: Customizing Data Templates in WPF Menu | Syncfusion®
 description: Data template customization in MenuAdv enables personalized layouts and visual presentation of menu items.
 platform: wpf
 control: MenuAdv

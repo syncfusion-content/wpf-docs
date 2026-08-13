@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Popup Resize Support in WPF AutoComplete (Classic) | Syncfusion®
+title: Popup Resize Support in WPF AutoComplete | Syncfusion®
 description: Allow users to resize the autocomplete popup dynamically to improve dropdown visibility and usability.
 platform: wpf
 control: AutoComplete
