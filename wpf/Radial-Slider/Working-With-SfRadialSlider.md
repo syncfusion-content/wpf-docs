@@ -15,7 +15,7 @@ This section explains different UI customization and common features available i
 
 You can select any tick value by dragging the pointer along the circular track or clicking on the corresponding track value. You can get the selected value by using the `Value` property. The default value of `Value` property is `0`.
 
-![Selecting a value by clicking and draging](getting-started_images\wpf-radial-slider-drag-select-value.gif)
+![Selecting a value by clicking and draging](getting-started_images/wpf-radial-slider-drag-select-value.gif)
 
 ### Select tick value programmatically
 
@@ -35,7 +35,7 @@ radialSlider.Value = 34;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider selecting a value programmatically](getting-started_images\wpf-radial-slider-selected-value.png)
+![SfRadialSlider selecting a value programmatically](getting-started_images/wpf-radial-slider-selected-value.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -77,7 +77,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider displays the selected value](getting-started_images\wpf-radial-slider-display-selected-value.png)
+![SfRadialSlider displays the selected value](getting-started_images/wpf-radial-slider-display-selected-value.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -148,7 +148,7 @@ radialSlider.Maximum = 200;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with changed minimum and maximum values](getting-started_images\wpf-radial-slider-min-max-values.png)
+![SfRadialSlider with changed minimum and maximum values](getting-started_images/wpf-radial-slider-min-max-values.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -172,7 +172,7 @@ radialSlider.EndAngle = 300;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider ticks start and end position changed](getting-started_images\wpf-radial-slider-start-end-angle.png)
+![SfRadialSlider ticks start and end position changed](getting-started_images/wpf-radial-slider-start-end-angle.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -194,7 +194,7 @@ radialSlider.TickFrequency = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider ticks display interval changed to 20](getting-started_images\wpf-radial-slider-tick-frequency.png)
+![SfRadialSlider ticks display interval changed to 20](getting-started_images/wpf-radial-slider-tick-frequency.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -216,7 +216,7 @@ radialSlider.SmallChange = 5;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider value selection interval changed](getting-started_images\wpf-radial-slider-value-selection.gif)
+![SfRadialSlider value selection interval changed](getting-started_images/wpf-radial-slider-value-selection.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -240,7 +240,7 @@ radialSlider.SweepDirection = SweepDirection.Counterclockwise;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider ticks displayed in counter-clockwise](getting-started_images\wpf-radial-slider-sweep-direction.png)
+![SfRadialSlider ticks displayed in counter-clockwise](getting-started_images/wpf-radial-slider-sweep-direction.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -588,7 +588,7 @@ private void sfRadialSlider_DrawLabel(object sender, DrawLabelEventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 
-![Change tick label text formatting](Ticks_images\wpf-radial-slider-label-edit.gif)
+![Change tick label text formatting](Ticks_images/wpf-radial-slider-label-edit.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Label-Formatting)
 
