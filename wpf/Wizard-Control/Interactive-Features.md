@@ -338,7 +338,7 @@ This topic illustrates the following about Navigation buttons of [Wizard Page](h
 * Showing or Hiding the Navigation Buttons
 * Text for the Navigation Buttons
 
-#### Enabling or Disabling the Navigation Buttons
+### Enabling or Disabling the Navigation Buttons
 
 You can enable or disable the Back, Cancel, Next and Finish navigation buttons in the wizard control and wizard page. This is done by using the [BackEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_BackEnabled), [CancelEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_CancelEnabled), [NextEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_NextEnabled) and [FinishEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_FinishEnabled) properties.
 

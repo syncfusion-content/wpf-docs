@@ -2,7 +2,7 @@
 layout: post
 title: Appearance and Styling in WPF SfAccordion | Syncfusion®
 description: The Appearance and Styling support in SfAccordion lets you customize headers, content, icons, and themes for a consistent UI.
-platform: WPF
+platform: wpf
 control: SfAccordion
 documentation: ug
 

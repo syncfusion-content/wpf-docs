@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in WPF TabNavigation | Syncfusion®
 description: Data binding in WPF TabNavigation enables seamless connection to data sources, ensuring dynamic content updates and flexible navigation.
-platform: WPF
+platform: wpf
 control: TabNavigation
 documentation: ug
 ---

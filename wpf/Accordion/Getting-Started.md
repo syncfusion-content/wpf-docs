@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF SfAccordion | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF SfAccordion control. Explore setup, features, examples, and customization options.
-platform: WPF
+platform: wpf
 control: SfAccordion
 documentation: ug
 ---

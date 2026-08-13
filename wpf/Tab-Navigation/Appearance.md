@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF TabNavigation | Syncfusion®
 description: Appearance in WPF TabNavigation allows customization of tab styles, colors, and layouts to create visually appealing interfaces.
-platform: WPF
+platform: wpf
 control: TabNavigation
 documentation: ug
 ---

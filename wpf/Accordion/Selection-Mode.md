@@ -2,7 +2,7 @@
 layout: post
 title: Selection Mode in WPF SfAccordion | Syncfusion®
 description: The Selection Mode support in SfAccordion allows you to configure single or multiple item expansion for flexible content navigation.
-platform: WPF
+platform: wpf
 control: SfAccordion
 documentation: ug
 ---
