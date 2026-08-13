@@ -2,7 +2,7 @@
 layout: post
 title: Comment Tip in WPF GridControl | Syncfusion®
 description: Add and customize comment tips in GridControl cells, rows, and columns with configurable indicators, templates, events, and positions.
-platform: WPF
+platform: wpf
 control: GridControl
 documentation: ug
 ---

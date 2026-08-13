@@ -287,7 +287,7 @@ Combo-boxes can be added to the Grid in two different ways as follows:
 1. Using ChoiceList
 2. Using ItemsSource
 
-#### Using ChoiceList
+### Using ChoiceList
 
 Let us see how to build different kinds of combo boxes using ChoiceList. This allows you to customize the options to be displayed in a drop-down.
 
@@ -381,7 +381,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ![Exclusive Combo box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img4.jpeg)
 
-#### Using ItemsSource
+### Using ItemsSource
 
 The combo boxes created using ItemsSource class ensure that the options available in the drop-down list are populated from the data source the combo box is bound to. The user cannot customize the list unlike combo boxes created using ChoiceList class. The combo boxes in the following examples are bound to Northwind Employee table. The values of the FirstName column form the ItemsSource. The FirstName column is used as the display member of the combo box whose value member is EmployeeID.
 

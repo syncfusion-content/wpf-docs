@@ -11,7 +11,7 @@ documentation: ug
 
 Essential<sup>®</sup> GridControl supports Serialization. The whole grid can be serialized and deserialized at run-time. 
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 Serialization can be implemented for the applications which need to save its data and structure after the application is closed. Serialization supports to save the structure and data of the GridControl to an XML file and it can be loaded at any time.
 

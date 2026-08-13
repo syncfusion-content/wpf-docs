@@ -2,7 +2,7 @@
 layout: post
 title: Input Message Tip in WPF GridControl | Syncfusion®
 description: Display and customize input message tips in GridControl for cells, rows, and columns using tooltips, templates, and runtime events.
-platform: WPF
+platform: wpf
 control: GridControl
 documentation: ug
 ---
