@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes in WPF Tile Control
 
-Hub Tile and Pulsing Tile supports various themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) and also provided support to create custom theme using [Theme Studio](https://help.syncfusion.com/wpf/themes/theme-studio). 
+Hub Tile and Pulsing Tile supports various themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager) and also provided support to create custom theme using [Theme Studio](https://help.syncfusion.com/wpf/themes/theme-studio). 
 
 ## Theme
 
