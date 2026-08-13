@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WPF SfTextBoxExt Control
 
-### Description 
+## Description 
 
 [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) is an extended version of the TextBox control. Most of the functionality of [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) is inherited from the [TextBox](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1) class.
 

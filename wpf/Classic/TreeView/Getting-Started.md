@@ -14,7 +14,7 @@ This section explains how to create Tree layout using [TreeViewAdv](https://help
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#treeviewadv) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
+Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuget packages in a WPF application.
 
 ## Add TreeViewAdv to Project
 
@@ -303,7 +303,7 @@ End Class
 
 ## Multiple Selection in TreeViewAdv
 
-The [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control supports selecting multiple items by using the CTRL or SHIFT keys. The selected items are dragged to any item or node within the same control or to another TreeViewAdv control. This is achieved by enabling the [AllowMultiSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_AllowMultiSelect) property. Click [here](https://help.syncfusion.com/wpf/treeview/selecting-node#enable-to-allow-multiple-selection-in-treeviewadv) to get detailed information on AllowMultiSelect function.
+The [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control supports selecting multiple items by using the CTRL or SHIFT keys. The selected items are dragged to any item or node within the same control or to another TreeViewAdv control. This is achieved by enabling the [AllowMultiSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_AllowMultiSelect) property. Click [here](https://help.syncfusion.com/wpf/classic/treeview/selecting-node#enable-to-allow-multiple-selection-in-treeviewadv) to get detailed information on AllowMultiSelect function.
 
 ![Multi Selecting of TreeViewAdv](Getting_Started_images/Getting_Started_img3.png)
 

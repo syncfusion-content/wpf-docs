@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF SplitButton | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF SplitButton (SplitButtonAdv) control. Explore setup, features, examples, and customization options.
-platform: WPF
+platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
@@ -17,7 +17,7 @@ This section provides an overview of how to work with WPF Split Button control. 
 
 ## Assembly deployment
 
-Refer [SplitButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#splitbutton) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) needs to be added as reference to use the SplitButtonAdv control in any application.
+Refer [SplitButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#splitbutton) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/installation/install-nuget-packages) needs to be added as reference to use the SplitButtonAdv control in any application.
 
 ## Creating simple application with SplitButton
 

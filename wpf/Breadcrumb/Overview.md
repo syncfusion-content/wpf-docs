@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® WPF Breadcrumb (HierarchyNavigator) Control | Syncfusion®
+title: About Syncfusion® WPF Breadcrumb Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF Breadcrumb (HierarchyNavigator) control and more details.
 platform: wpf
 control: Hierarchical Navigator
