@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Data Source Support in WPF AutoComplete (Classic) | Syncfusion®
+title: Data Source Support in WPF AutoComplete | Syncfusion®
 description: Load suggestions from file paths, registry entries, or custom business objects using supported data source modes.
 platform: wpf
 control: AutoComplete

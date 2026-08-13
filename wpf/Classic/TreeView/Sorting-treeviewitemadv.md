@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Sort TreeViewItemAdv in WPF TreeViewAdv (Classic) | Syncfusion®
+title: Sort TreeViewItemAdv in WPF TreeViewAdv | Syncfusion®
 description: Sort TreeViewAdv items in ascending or descending order by specifying custom sorting fields and criteria.
 platform: wpf
 control: TreeViewAdv

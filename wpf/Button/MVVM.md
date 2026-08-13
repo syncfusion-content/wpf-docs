@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MVVM in WPF Button (ButtonAdv) | Syncfusion®
+title: MVVM in WPF Button | Syncfusion®
 description: MVVM support in Button (ButtonAdv) enables seamless integration with commands, bindings, and view models.
 platform: wpf
 control: ButtonAdv

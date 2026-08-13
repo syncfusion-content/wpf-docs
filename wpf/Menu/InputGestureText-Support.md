@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Input Gesture Text Support in WPF Menu (MenuAdv) | Syncfusion®
+title: Input Gesture Text Support in WPF Menu | Syncfusion®
 description: Input Gesture Text Support in MenuAdv enables showing keyboard shortcut text with menu item headers using InputGestureText or commands.
 platform: wpf
 control: MenuAdv

@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Basic Core Features in WPF AutoComplete (Classic) | Syncfusion®
+title: Basic Core Features in WPF AutoComplete | Syncfusion®
 description: Work with selection, values, display members, dropdown behavior, and text change notifications in AutoComplete.
 platform: wpf
 control: AutoComplete

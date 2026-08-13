@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Menu Item Separator Support in WPF Menu (MenuAdv) | Syncfusion®
+title: Menu Item Separator Support in WPF Menu | Syncfusion®
 description: Menu Item Separator Support in MenuAdv enables visual separation and grouping of related menu items for improved organization.
 platform: wpf
 control: MenuAdv

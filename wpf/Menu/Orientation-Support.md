@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation Support in WPF Menu (MenuAdv) | Syncfusion®
+title: Orientation Support in WPF Menu | Syncfusion®
 description: Orientation Support in MenuAdv enables arranging menu items horizontally or vertically to suit application layout requirements.
 platform: wpf
 control: MenuAdv
