@@ -149,7 +149,6 @@ The following example shows how to display the employee name and email address i
 
 {% endtabs %}
 
-
 ![Customize Token Content Using TokenContentTemplate](Single_and_multiple_selection_images/TokenContentTemplate_Customizaation.png)
 
 ### Achieve a consistent appearance between suggestion items and tokens
@@ -188,6 +187,10 @@ The `TokenContentTemplate` property can be used to customize token content so th
 {% endtabs %}
 
 ![Match Suggestion Item and Token Appearance](Single_and_multiple_selection_images\TokenItem-SuggestionItem_Appearance.png.png)
+
+N> The `TokenContentTemplate` property is applicable only when `MultiSelectMode` is set to `Token`.
+
+N> When displaying images using controls defined inside the `TokenContentTemplate`, do not set the `ImageMemberPath` property simultaneously. Use either the TokenContentTemplate or the ImageMemberPath property to display images in tokens.
 
 ### Enable autosize in token mode 
 
