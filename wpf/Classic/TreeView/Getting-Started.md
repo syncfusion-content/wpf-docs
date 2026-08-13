@@ -309,13 +309,13 @@ The [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Co
 
 ## Drag and Drop in TreeViewAdv
 
-By enabling the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_AllowDragDrop) property TreeViewAdv control allows us to drag TreeView items from one location to another. By using the [DraggingContainerOpacity](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_DraggingContainerOpacity) property, we can change the opacity value of the dragged element. It is useful to be able to view the content behind the dragged element. Click [here](https://help.syncfusion.com/wpf/treeview/dragging-treeview-items) to get detailed information on drag and drop of TreeViewAdv items.
+By enabling the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_AllowDragDrop) property TreeViewAdv control allows us to drag TreeView items from one location to another. By using the [DraggingContainerOpacity](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_DraggingContainerOpacity) property, we can change the opacity value of the dragged element. It is useful to be able to view the content behind the dragged element. Click [here](https://help.syncfusion.com/wpf/classic/treeview/dragging-treeview-items) to get detailed information on drag and drop of TreeViewAdv items.
 
 ![DragAndDrop with DraggingContainerOpacity](Getting_Started_images/Getting_Started_img4.png)
 
 ## MultiColumn TreeView in TreeViewAdv
 
-TreeView control can be created with multiple columns by setting the [MultiColumnEnable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_MultiColumnEnable) property to true. Click [here](https://help.syncfusion.com/wpf/treeview/creating-a-multicolumn-treeview) to get detailed information on how to create MultiColumn TreeViewAdv.
+TreeView control can be created with multiple columns by setting the [MultiColumnEnable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_MultiColumnEnable) property to true. Click [here](https://help.syncfusion.com/wpf/classic/treeview/creating-a-multicolumn-treeview) to get detailed information on how to create MultiColumn TreeViewAdv.
 
 ![MultiColumnTreeView in TreeViewAdv](Getting_Started_images/Getting_Started_img5.png)
 
