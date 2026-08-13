@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in WPF TextInputLayout | Syncfusion
-description: Customize the look and feel of the Syncfusion WPF TextInputLayout (SfTextInputLayout) control using built-in themes and custom templates.
+title: Customization in WPF TextInputLayout | Syncfusion®
+description: Customization in SfTextInputLayout enables personalizing input layout colors, container appearance, and outline styles for different states.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Customization in WPF TextInputLayout
+# Customization in WPF TextInputLayout (SfTextInputLayout)
 
 Based on the text input layout state, the colors will be applied to the hint label, base line, border and assistive labels.
 

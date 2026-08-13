@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Right to Left in WPF TextInputLayout | Syncfusion
-description: Display the Syncfusion WPF TextInputLayout (SfTextInputLayout) control in right-to-left layouts for languages such as Arabic and Hebrew.
+title: Right-to-Left in WPF TextInputLayout | Syncfusion®
+description: Right-to-Left Support in SfTextInputLayout enables displaying text and input layouts correctly for RTL languages.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Right to Left in WPF TextInputLayout
+# Right to Left in WPF TextInputLayout (SfTextInputLayout)
 
 The TextInputLayout supports to change the flow of text to the right-to-left direction by setting the `FlowDirection` to `RightToLeft`.
 

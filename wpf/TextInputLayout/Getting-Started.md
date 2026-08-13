@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF TextInputLayout | Syncfusion
-description: Learn how to get started with the Syncfusion WPF TextInputLayout control, its elements, and more details.
+title: Getting Started with WPF TextInputLayout | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF TextInputLayout control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Getting Started with WPF TextInputLayout
+# Getting Started with WPF TextInputLayout (SfTextInputLayout)
 
 This section explains the steps needed to configure the control of the text input layout.
 
