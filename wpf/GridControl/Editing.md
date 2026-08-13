@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in WPF GridControl | Syncfusion®
-description: Learn about Editing support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Control editing operations in GridControl with flexible clipboard options, custom data formats, and transaction-based undo and redo support.
 platform: wpf
 control: GridControl
 documentation: ug

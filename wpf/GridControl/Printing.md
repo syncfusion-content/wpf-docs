@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in WPF GridControl | Syncfusion®
-description: Learn about Printing support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Print and preview GridControl content with customizable print settings, page layouts, navigation options, and support for headers and footers.
 platform: wpf
 control: GridControl
 documentation: ug

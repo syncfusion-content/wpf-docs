@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF GridControl | Syncfusion®
-description: Learn here about getting started with Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Learn how to get started with the Syncfusion® WPF GridControl. Explore setup, data population, configuration, examples, and customization options.
 platform: wpf
 control: Grid Control
 documentation: ug

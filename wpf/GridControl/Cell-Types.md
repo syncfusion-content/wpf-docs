@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell Types in WPF GridControl | Syncfusion®
-description: Learn about Cell Types support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Explore the built-in and custom cell types in GridControl, including check boxes, buttons, editors, drop-downs, nested grids, and templates.
 platform: wpf
 control: Grid Control
 documentation: ug

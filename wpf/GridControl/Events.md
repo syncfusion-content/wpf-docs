@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in WPF GridControl | Syncfusion®
-description: Learn about Events support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Handle GridControl events for cell customization, editing, clipboard operations, mouse interaction, resizing, validation, and current cell management.
 platform: wpf
 control: GridControl
 documentation: ug

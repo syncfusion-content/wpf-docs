@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtualization in WPF GridControl | Syncfusion®
-description: Learn about Virtualization support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Improve GridControl performance with virtual mode and virtual cells for on-demand data loading, optimized rendering, and efficient handling of large datasets.
 platform: wpf
 control: Grid Control
 documentation: ug
