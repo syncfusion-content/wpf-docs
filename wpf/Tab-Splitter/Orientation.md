@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Orientation in WPF Tab Splitter control | Syncfusion
-description: Learn about Orientation support in Syncfusion Essential Studio WPF Tab Splitter control, its elements and more.
+title: Orientation in WPF TabSplitter | Syncfusion®
+description: Arrange TabSplitter items horizontally or vertically by configuring the orientation of tab groups and panels.
 platform: wpf
 control: TabSplitter
 documentation: ug

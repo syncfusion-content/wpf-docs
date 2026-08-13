@@ -22,7 +22,7 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 ![WPF DataGrid with Search Panel](Search_images/wpf-datagrid-search-panel.png)
 
 
-### Filtering
+## Filtering
 
 You can enable filter based on search by setting [SearchHelper.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_AllowFiltering) property to true.
 

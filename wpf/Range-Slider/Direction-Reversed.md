@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Direction Reversed in WPF Range Slider control | Syncfusion®
-description: Learn here all about Direction Reversed support in Syncfusion® WPF Range Slider (SfRangeSlider) control and more.
+title: Direction Reversed in WPF RangeSlider | Syncfusion®
+description: Reverse the value progression direction in horizontal or vertical RangeSlider orientations using the IsDirectionReversed property.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
