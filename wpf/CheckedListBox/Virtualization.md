@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtualization in WPF CheckedListBox | Syncfusion
+title: Virtualization in WPF CheckedListBox | Syncfusion®
 description: Improve performance in the Syncfusion WPF CheckedListBox control by virtualizing items so only the visible entries are generated and rendered.
 platform: wpf
 control: CheckListBox

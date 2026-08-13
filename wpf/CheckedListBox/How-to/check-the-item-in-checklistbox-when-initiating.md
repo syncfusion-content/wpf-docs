@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Check an Item on Init in WPF CheckedListBox | Syncfusion
+title: How to Check an Item on Init in WPF CheckedListBox | Syncfusion®
 description: This section describes how to check an item using the SelectedItems API of the Syncfusion WPF CheckedListBox control when the control is being initialized.
 platform: wpf
 control: CheckListBox

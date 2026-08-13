@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Item Selection in WPF CheckedListBox | Syncfusion
+title: Item Selection in WPF CheckedListBox | Syncfusion®
 description: Handle single or multiple item selection in the Syncfusion WPF CheckedListBox control using selection mode and related selection events.
 platform: wpf
 control: CheckListBox
