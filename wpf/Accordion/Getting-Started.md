@@ -11,7 +11,7 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfaccordion) section to get the list of assemblies and the NuGet package that need to be added as references to use the control in any application. The control is available in Syncfusion Essential Studio version 19.2.0.30 and later.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfaccordion) section to get the list of assemblies and the NuGet package that need to be added as references to use the control in WPF application. The control is available from Syncfusion Essential Studio version 19.2.0.30 and later.
 
 You can find more details about installing the NuGet package in a WPF application at the following link:
 
@@ -19,17 +19,17 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Create a simple application with SfAccordion
 
-You can create a WPF application with the SfAccordion control by following these steps:
+Follow these steps to create a WPF application that uses the SfAccordion control.
 
 ## Create a project
 
 1. Open Visual Studio and select **File → New → Project**.
-2. Choose **WPF App (.NET Framework)** or **WPF Application (.NET)** depending on your target.
+2. Choose **WPF App (.NET Framework)** or **WPF App (.NET)** based on your target framework.
 3. Name the project (for example, `SfAccordionSample`) and click **Create**.
 
 ## Add control through designer
 
-The SfAccordion control can be added to an application by dragging it from the toolbox to the designer view. The **Syncfusion.SfAccordion.WPF** assembly reference will be added automatically to the project. Before using the toolbox, ensure the Syncfusion WPF extensions are installed in Visual Studio.
+You can add the SfAccordion control to an application by dragging it from the Toolbox and dropping it onto the designer surface. The required assembly references are added automatically. Before using the Toolbox, ensure that the Syncfusion WPF extensions are installed in Visual Studio.
 
 ![WPF Accordion Control](Getting-Started_images/wpf-accordion-control.png)
 
@@ -38,8 +38,8 @@ The SfAccordion control can be added to an application by dragging it from the t
 To add the control manually in XAML, follow the given steps:
 
 1. Add the **Syncfusion.SfAccordion.WPF** assembly reference to the project.
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Declare the SfAccordion control in the XAML page.
+2. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3. Add the SfAccordion control to the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -64,8 +64,8 @@ To add the control manually in XAML, follow the given steps:
 To add the control manually in C#, follow the given steps:
 
 1. Add the **Syncfusion.SfAccordion.WPF** assembly reference to the project. 
-2. Import SfAccordion namespace **using Syncfusion.Windows.Controls.Layout;**.
-3. Create a SfAccordion instance, and add it to the window.
+2. Import the **Syncfusion.Windows.Controls.Layout** namespace.
+3. Create an instance of SfAccordion and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -97,7 +97,7 @@ namespace SfAccordionSample
 
 ## Add items using SfAccordionItem
 
-You can add items to SfAccordion directly by using [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html) as its child, or you can populate them from code-behind using the `Items` collection.
+You can populate the SfAccordion control by adding [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html) objects directly in XAML or programmatically through the _Items_ collection.
 
 {% tabs %}
 {% highlight XAML %}
@@ -142,7 +142,9 @@ this.Content = accordion;
 
 ## Bind data
 
-SfAccordion accepts any collection of .NET objects to be bound using its [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
+SfAccordion supports data binding through the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property and can be bound to any collection of .NET objects.
+
+The following example demonstrates how to bind a collection of business objects to the SfAccordion control.
 
 * **Model.cs**
 
@@ -285,7 +287,7 @@ To bind data to the `SfAccordion`, set the `DataContext` and provide a `HeaderTe
 
 ## Apply template to item header
 
-SfAccordion provides the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property; it allows you to apply a common data template to all accordion item headers.
+Use the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property to apply a common data template to all accordion item headers.
 
 {% tabs %}
 {% highlight XAML %}
@@ -305,7 +307,7 @@ SfAccordion provides the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syn
 
 ## Set content to children
 
-You can set content to SfAccordionItem using the [Content](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?view=netframework-4.7.2) property of SfAccordion.
+You can set content for an SfAccordionItem using its [Content](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?view=netframework-4.7.2) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -322,10 +324,9 @@ You can set content to SfAccordionItem using the [Content](https://learn.microso
 
 ## Theme
 
-SfAccordion supports various built-in themes. Refer to the below links to apply themes for the SfAccordion,
+SfAccordion supports a variety of built-in themes. Refer to the following articles to learn how to apply themes:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![WPF Accordion Themes](Getting-Started_images/wpf-accordion-themes.png)
+![WPF Accordion Themes](Getting-Started_images/wpf-accordion-themes.png)
