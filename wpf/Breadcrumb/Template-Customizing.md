@@ -7,7 +7,7 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Template Customizing in WPF Breadcrumb (HierarchyNavigator)
+# Template Customization in WPF Breadcrumb (HierarchyNavigator)
 
 When Business Objects are used for data binding, ItemTemplate should be used to determine how the user interface will be displayed. A HierarchicalDataTemplate can be used as an ItemTemplate specifying the template for each item.
 

@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# Populating data in WPF Navigation Drawer (SfNavigationDrawer)
+# Populate Data in WPF Navigation Drawer (SfNavigationDrawer)
 
 This section explains how to populate the drawer menu. 
 

@@ -7,7 +7,7 @@ control: Navigation Pane
 documentation: ug
 ---
 
-# Adding GroupBar Item to GroupBar in WPF Navigation Pane (GroupBar)
+# Add GroupBar Items in WPF Navigation Pane (GroupBar)
 
 GroupBar Item is added to the GroupBar using XAML or C# code. The following code illustrates this. 
 

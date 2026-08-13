@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-#  Commands and events in SfNavigationDrawer
+# Commands and Events in WPF NavigationDrawer
 
 This section describes the events and command support available in the Navigation Drawer sidebar.
 

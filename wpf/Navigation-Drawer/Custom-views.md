@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# Custom views in WPF Navigation Drawer (SfNavigationDrawer)
+# Custom Views in WPF Navigation Drawer (SfNavigationDrawer)
 
 ## Populating the with custom views
 
