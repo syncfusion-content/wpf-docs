@@ -11,9 +11,13 @@ documentation: ug
 
 This section deals with the appearance of `CurrencyTextBox` control and contains the following topics.
 
+## Assembly Deployment
+
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#currencytextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+
 ## Setting the Foreground
 
-The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `CurrencyTextBox` control.
+The [CurrencyTextBox](https://www.syncfusion.com/wpf-controls/currency-textbox) control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `CurrencyTextBox` control.
 
 ### Foreground for Positive Value
 
@@ -110,11 +114,11 @@ currencyTextBox.Background = Brushes.Cyan;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF CurrencyTextBox with Cyan Bbackground](Appearance_images/wpf-currency-textbox-background.png)
+![WPF CurrencyTextBox with Cyan Background](Appearance_images/wpf-currency-textbox-background.png)
 
 ## Setting the Corner Radius
 
-Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `CurrencyTextBox`, use [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of `CornerRadius` property is 1.
+Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `CurrencyTextBox`, use [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of `CornerRadius` property is 1. In XAML, a single value applies the same radius to all four corners; in C#, use the `System.Windows.CornerRadius` struct (which can be initialized with one, two, or four values).
 
 {% tabs %}
 
@@ -143,7 +147,7 @@ currencyTextBox.CornerRadius = new CornerRadius(5);
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" SelectionBrush="Red" SelectionOpacity="0.5"/>
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" SelectionBrush="Red" SelectionOpacity="0.3"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -159,7 +163,7 @@ currencyTextBox.SelectionOpacity = 0.3;
 
 ![WPF CurrencyTextBox with Red Selection Background](Appearance_images/wpf-currency-textbox-selection.png)
 
-## Align Value
+## Aligning the Value
 
 `CurrencyTextBox` allows to display the value from right or center or left side by setting the [TextAlignment](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock.textalignment?view=netframework-4.8) property to `Right` or `Left` or `Center`. The Default value of `TextAlignment` is `Left`.
 
@@ -212,3 +216,9 @@ CurrencyTextBox supports various built-in themes. Refer to the below links to ap
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
  ![Applying Theme to WPF CurrencyTextBox](Getting-Started_images/wpf-currency-textbox-theme.png)
+
+## See Also
+
+* [Getting Started](Getting-Started.md)
+* [Culture and Number Formats](Culture-and-Number-Formats.md)
+* [Restriction or Validation](Restriction-or-Validation.md)

@@ -8,8 +8,10 @@ documentation: ug
 ---
 
 # Changing Currency Value in WPF Currency TextBox
+## Assembly Deployment
 
-The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) property.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#currencytextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+The [CurrencyTextBox](https://www.syncfusion.com/wpf-controls/currency-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) property.
 
 {%tabs%}
 {% highlight xaml %}
@@ -32,13 +34,15 @@ currencyTextBox.Value = 10;
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `CurrencyTextBox` value.
 
-The following code snippets illustrate the value binding from one `CurrencyTextBox` to another.
+The following code snippets illustrate the value binding from one `CurrencyTextBox` to another. Set the `DataContext` of the parent container to a `ViewModel` instance so the `{Binding MyValue}` expression resolves.
 
 {%tabs%}
 {% highlight xaml %}
 
+<StackPanel DataContext="{Binding MyValue, RelativeSource={RelativeSource Self}}">
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox1" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Height="25" Width="100"/>
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox2" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Width="100" Height="25"  />
+</StackPanel>
 
 {% endhighlight %}
 {%endtabs%}
@@ -48,7 +52,9 @@ ViewModel.cs
 {% tabs %}
 {% highlight C# %}
 
-class ViewModel : NotificationObject
+using Syncfusion.Windows.Shared;
+
+public class ViewModel : NotificationObject
 {
     private double myValue;
     public double MyValue
@@ -70,9 +76,9 @@ class ViewModel : NotificationObject
 
 ![WPF CurrencyTextBox displays Binding Value](Changing-Currency-Value_images/wpf-currency-textbox-binding-value.png)
 
-## Change currency value by pasting the clipboard's text
+## Change Currency Value by Pasting the Clipboard's Text
 
-By default, `CurrencyTextBox` simply replaces the whole value by copied value with the current number format. If you want to replace or insert the copied value on specific place, use the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property value as `Advanced`. The default value of `PasteMode` property is `Default`. 
+By default, `CurrencyTextBox` simply replaces the whole value with the copied value using the current number format. If you want to replace or insert the copied value at a specific position, set the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property to `Advanced`. The default value of `PasteMode` is `Default` (always replace the entire value, regardless of the cursor position or selection).
 
 The following table explains the pasting behaviour in `Advanced` paste mode,
 
@@ -152,7 +158,7 @@ currencyTextBox.ShowSpinButton = true;
 
 ## Value Changed Event
 
-The `CurrencyTextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.
+The `CurrencyTextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. In the `ValueChanged` event, you can get the old and new value from the `OldValue` and `NewValue` properties.
 
 {%tabs%}
 {% highlight xaml %}
@@ -163,7 +169,7 @@ The `CurrencyTextBox` control can notify changes in value through the [ValueChan
 {% highlight C# %} 
 
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
-currencyTextBox.ValueChanged += new PropertyChangedCallback(CurrencyTextBox_ValueChanged);
+currencyTextBox.ValueChanged += CurrencyTextBox_ValueChanged;
 
 {% endhighlight %}
 {%endtabs%}
@@ -235,7 +241,7 @@ currencyTextBox.UseNullOption = true;
 
 ## Setting Watermark Text
 
-We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkText) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextIsVisible) property is `true` and the value is `null` or empty, the control is not in focus and the `UseNullOption` property is `true`.
+You can display placeholder text within the control by setting the [WatermarkText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkText) property. The `WatermarkText` is shown only when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextIsVisible) property is `true`, the `Value` is `null` or empty (which requires the `UseNullOption` property to be `true` because `Value` is non-nullable by default), the control is not in focus, and the `UseNullOption` property is `true`.
 
 ### Setting the WatermarkText Foreground
 
@@ -290,3 +296,9 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
 N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `CurrencyTextBox` control.
 
 N> If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
+
+## See Also
+
+* [Getting Started](Getting-Started.md)
+* [Appearance](Appearance.md)
+* [Culture and Number Formats](Culture-and-Number-Formats.md)

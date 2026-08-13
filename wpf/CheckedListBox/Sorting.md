@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting Items in WPF CheckedListBox (CheckListBox)
 
- By default, the [CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) are arranged based on the order they added in to the `Items`  collection. We can sort the `CheckListBox` items by adding the sorting direction to the `CollectionView.SortDescriptions` collection. The `CheckListBox` items can be sorted either in ascending or descending order based on the user’s perspective.
+ By default, the [CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) items are arranged based on the order in which they were added to the `Items` collection. You can sort the `CheckListBox` items by adding a `SortDescription` to the `CollectionView.SortDescriptions` collection. The `CheckListBox` items can be sorted in either ascending or descending order, based on the user's preference.
 
 {% tabs %}
 {% highlight C# %}
@@ -69,7 +69,8 @@ class ViewModel {
 
 {% endhighlight %}
 {% endtabs %}
-
+N> The `i:` namespace refers to `http://schemas.microsoft.com/expression/2010/interactivity` and requires a reference to the `System.Windows.Interactivity` assembly. Add the following namespace declaration to the root element of your XAML:
+`xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"`
 Here, the `Vegetables` items are sorted in ascending order based on their name.
 
 ![CheckListBox with default and ascending sorted order](Grouping-Sorting_images/Sorting_image.png)

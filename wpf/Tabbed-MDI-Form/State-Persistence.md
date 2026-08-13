@@ -9,182 +9,138 @@ documentation: ug
 
 # State Persistence in WPF Tabbed MDI Form (DocumentContainer)
 
-This topic illustrates loading and saving the dock state in various places. It also gives information about resetting and deleting the states.
+## Assembly Deployment
 
-## Load and Save in Registry
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-In the Document Container, you can save and load dock states into the Registry using the SaveDockState and LoadDockState methods. Refer to the following code snippet for setting these methods.
+This topic illustrates how to load and save the dock state in various places. It also gives information about resetting and deleting the states.
 
-
-
-{% highlight C# %}
-
-
-
-// Code to Save State:
-
-BinaryFormatter formatter1 = new BinaryFormatter();
-
-DocContainer.SaveDockState(formatter1);
-
-
-
-// Code to Load State:
-
-BinaryFormatter formatter1 = new BinaryFormatter();
-
-DocContainer.LoadDockState(formatter1);
-
-
-{% endhighlight %}
+N> The examples in this topic use `BinaryFormatter` and `SoapFormatter`. Both types are marked obsolete starting in .NET 5 (`SYSLIB0011`) and will throw at runtime on .NET 5 and later unless the obsolete warning is suppressed. For new development, consider replacing them with a modern serializer (for example, `System.Text.Json`) by serializing the dock state to a `Stream` using `XmlSerializer` or `DataContractSerializer`, or by using a `BinaryWriter` over a `MemoryStream`.
 
 ## Load and Save in Isolated Storage
 
-In the Document Container you can Load/Save/Reset the dock state in the Isolated Storage. To Load, Save and Reset, use the following code snippet.
+The simplest way to load and save the DocumentContainer state is by using its built-in Isolated Storage methods. To load, save, and reset the state, use the following code.
 
-
-
-{% highlight C# %} 
-
-
-
-// Code to Save:
-
+{% tabs %}
+{% highlight C# %}
+// Save the state to Isolated Storage
 DocContainer.SaveDockState();
 
-
-
-// Code to Load:
-
+// Load the state from Isolated Storage
 DocContainer.LoadDockState();
 
-
-
-// Code to Reset:
-
+// Reset and delete the Isolated Storage used by the DocumentContainer
 DocContainer.DeleteInternalIsolatedStorage();
 {% endhighlight %}
+{% endtabs %}
 
+## Load and Save in a Stream
+
+You can also save the DocumentContainer state to any `Stream` using a `BinaryFormatter` (or any other `IFormatter`). The `SaveDockState(IFormatter)` and `LoadDockState(IFormatter)` overloads accept a formatter that the DocumentContainer uses to write/read its state.
+
+{% tabs %}
+{% highlight C# %}
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
+BinaryFormatter formatter = new BinaryFormatter();
+
+using (FileStream stream = new FileStream("dockstate.bin", FileMode.Create))
+{
+    DocContainer.SaveDockState(formatter, stream);
+}
+
+using (FileStream stream = new FileStream("dockstate.bin", FileMode.Open))
+{
+    DocContainer.LoadDockState(formatter, stream);
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## Load and Save in XML
 
-You can save and load the data for the Document Container in XML also. To Load and Save data in XML use the following code snippet. This is done by using both Binary Formatter as well as Soap Formatter as follows.
+You can save and load the DocumentContainer state in XML format using either the `BinaryFormatter` or the `SoapFormatter`. The `StorageFormat` parameter selects between XML and binary storage.
 
-
-
+{% tabs %}
 {% highlight C# %}
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization.Formatters.Soap;
 
+string xmlPath = @"d:\docum_xml.xml";
 
+// Save in XML using BinaryFormatter
+BinaryFormatter binaryFormatter = new BinaryFormatter();
+DocContainer.SaveDockState(binaryFormatter, StorageFormat.Xml, xmlPath);
 
- // Code to Save in XML using Binary Formatter:
+// Save in XML using SoapFormatter
+SoapFormatter soapFormatter = new SoapFormatter();
+DocContainer.SaveDockState(soapFormatter, StorageFormat.Xml, xmlPath);
 
-BinaryFormatter formatter1 = new BinaryFormatter();
+// Load XML using BinaryFormatter
+DocContainer.LoadDockState(binaryFormatter, StorageFormat.Xml, xmlPath);
 
-DocContainer.SaveDockState(formatter1, StorageFormat.Xml, @"d:\docum_xml.xml");
-
-
-
-// Code save in XML using SOAP formatter:
-
-SoapFormatter formatter1 = new SoapFormatter();
-
-DocContainer.SaveDockState(formatter1, StorageFormat.Xml, @"d:\docum_xml.xml");
-
-
-
-// Code to Load XML using Binary formatter:
-
-BinaryFormatter formatter1 = new BinaryFormatter();
-
-DocContainer.LoadDockState(formatter1, StorageFormat.Xml, @"d:\docum_xml.xml");
-
-
-
-// Code to Load XML using Soap Formatter:
-
-SoapFormatter formatter1 = new SoapFormatter();
-
-DocContainer.LoadDockState(formatter1, StorageFormat.Xml, @"d:\docum_xml.xml");
-
+// Load XML using SoapFormatter
+DocContainer.LoadDockState(soapFormatter, StorageFormat.Xml, xmlPath);
 {% endhighlight %}
+{% endtabs %}
 
-## Load and Save in Bin
+## Load and Save in Binary
 
-Document Container enables the user to save and load the data in BIN. Refer to the following code snippet for saving or loading data in BIN. This is achieved by using Binary Formatter and Soap Formatter as well.
+You can also save and load the DocumentContainer state in a binary file using either `BinaryFormatter` or `SoapFormatter`.
 
-
-
+{% tabs %}
 {% highlight C# %}
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization.Formatters.Soap;
 
+string binPath = @"d:\docum_bin.bin";
 
+// Save using BinaryFormatter
+BinaryFormatter binaryFormatter = new BinaryFormatter();
+DocContainer.SaveDockState(binaryFormatter, StorageFormat.Binary, binPath);
 
-// Code to Save Using Binary Formatter:
+// Save using SoapFormatter
+SoapFormatter soapFormatter = new SoapFormatter();
+DocContainer.SaveDockState(soapFormatter, StorageFormat.Binary, binPath);
 
-BinaryFormatter formatter1 = new BinaryFormatter();
+// Load using BinaryFormatter
+DocContainer.LoadDockState(binaryFormatter, StorageFormat.Binary, binPath);
 
-DocContainer.SaveDockState(formatter1, StorageFormat.Binary, @"d:\docum_bin.bin");
-
-
-
-// Code to Save Using Soap Formatter:
-
-SoapFormatter formatter1 = new SoapFormatter();
-
-DocContainer.SaveDockState(formatter1, StorageFormat.Binary, @"d:\docum_bin.bin");
-
-
-
-// Code to Load using Binary Formatter:
-
-BinaryFormatter formatter1 = new BinaryFormatter();
-
-DocContainer.LoadDockState(formatter1, StorageFormat.Binary, @"d:\docum_bin.bin");
-
-
-
-// Code to Load using Soap Formatter:
-
-SoapFormatter formatter1 = new SoapFormatter();
-
-DocContainer.LoadDockState(formatter1, StorageFormat.Binary, @"d:\docum_bin.bin");
-
+// Load using SoapFormatter
+DocContainer.LoadDockState(soapFormatter, StorageFormat.Binary, binPath);
 {% endhighlight %}
+{% endtabs %}
 
-## Reset the states in Document Container
+## Reset the State
 
-You can easily reset the states in Document Container by using the ResetState method as in the below code snippet.
+You can reset the DocumentContainer state using the `ResetState` method.
 
-
-
+{% tabs %}
 {% highlight C# %}
-
-
-
-DocumentContainer DocContainer = new DocumentContainer();
-
-
-
-// Reset the states
-
+// Reset the state
 DocContainer.ResetState();
-
 {% endhighlight %}
+{% endtabs %}
 
 ## Delete the State
 
-You can delete all the states you have created in the Document Container by using the DeleteDockState property. Refer to the below code example.
+You can delete a saved state file or the Isolated Storage state using the `DeleteDockState` method overloads.
 
-
-
+{% tabs %}
 {% highlight C# %}
-
-
-
+// Delete a state file from disk
 DocContainer.DeleteDockState(@"d:\docum_xml.xml");
-
 DocContainer.DeleteDockState(@"d:\docum_bin.bin");
 
+// Delete the Isolated Storage state
 DocContainer.DeleteDockState();
-
-
 {% endhighlight %}
+{% endtabs %}
+
+## See Also
+
+* [Getting Started](Getting-Started.md)
+* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)
+* [Adding and Removing Items](Adding-and-Removing-Items-from-the-Document-Container-Control.md)

@@ -7,35 +7,42 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Minimizing MDI window in WPF Tabbed MDI Form (DocumentContainer)
+# Minimizing MDI Window in WPF Tabbed MDI Form (DocumentContainer)
 
-You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMinimize) property as `true`. The default value of `CanMDIMinimize` property is `false`. The minimized  MDI windows are arranged one by one in the bottom-left corner of the window.
+## Assembly Deployment
+
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+
+You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMinimize) property to `true`. The default value of `CanMDIMinimize` is `false`. The minimized MDI windows are arranged one by one in the bottom-left corner of the window.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DocumentContainer Name="DocContainer"
-                              CanMDIMinimize="True" 
+                              CanMDIMinimize="True"
                               Mode="MDI">
     <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"/>
     <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Window1"/>
     <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Document Container"/>
 </syncfusion:DocumentContainer>
 
+{% endhighlight %}
+{% highlight C# %}
+DocContainer.CanMDIMinimize = true;
 {% endhighlight %}
 {% endtabs %}
 
 ![Minimizing MDI window in Document Container](Minimizing-MDI-window_images/Minimizing-MDI-window_img1.jpeg)
 
-## Restrict Minimizing the MDI window
+## Restricting Minimizing the MDI Window
 
-You can restrict minimizing the `MDI` window by setting the `CanMDIMinimize` property as `false`.
+You can restrict minimizing the `MDI` window by setting the `CanMDIMinimize` property to `false` (the default). When set to `false`, the minimize button is hidden from the MDI chrome and the user cannot minimize the window through the UI.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DocumentContainer Name="DocContainer"
-                              CanMDIMinimize="False" 
+                              CanMDIMinimize="False"
                               Mode="MDI">
     <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"/>
     <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Window1"/>
@@ -43,7 +50,17 @@ You can restrict minimizing the `MDI` window by setting the `CanMDIMinimize` pro
 </syncfusion:DocumentContainer>
 
 {% endhighlight %}
+{% highlight C# %}
+DocContainer.CanMDIMinimize = false;
+{% endhighlight %}
 {% endtabs %}
 
 ![Restrict the Minimizing MDI window in Document Container](Minimizing-MDI-window_images/Restrict_Minimizing.png)
+
+## See Also
+
+* [Getting Started](Getting-Started.md)
+* [Maximizing MDI Window](Maximizing-MDI-window.md)
+* [MDI Resize](MDI-Resize.md)
+* [Setting Window State](Setting-Window-State.md)
 

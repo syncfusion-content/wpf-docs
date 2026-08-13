@@ -9,51 +9,45 @@ documentation: ug
 
 # Setting Window Switchers in WPF Tabbed MDI Form
 
-Document Container enables the users to switch between the windows using keyboard keys. This feature facilitates easy navigation between the documents. By using CTRL + TAB combination of keys in the keyboard, user can navigate between windows. Window switchers are available for the Document Container for this purpose.
+## Assembly Deployment
 
-Currently five modes of window switchers are supported. They are as follows.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-* Immediate 
-* List
-* QuickTabs 
-* VS2005 
-* VistaFlip 
+The DocumentContainer enables the user to switch between the open windows using the keyboard. The `CTRL + TAB` keyboard shortcut opens the window switcher, which the user can then navigate through to switch to another window. The window switcher style is controlled by the [SwitchMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_SwitchMode) property, which uses the `Syncfusion.Windows.Tools.Controls.SwitchMode` enum.
 
-To set the Quick Tab Mode for the window switchers, use the following code.
+## Supported Switcher Modes
 
+| Value | Description |
+|---|---|
+| `Immediate` | Switches immediately to the next window when `CTRL + TAB` is pressed (no switcher UI). |
+| `List` | Displays a list-style switcher showing all open windows. |
+| `QuickTabs` | Displays a thumbnail-style switcher with previews of each window. |
+| `VS2005` | Mimics the Visual Studio 2005 style of switcher. |
+| `VistaFlip` | Mimics the Windows Vista Flip 3D switcher. |
+
+## Setting the Switcher to QuickTabs
 
 {% tabs %}
-{% highlight xaml %}
-<!-- Adding Document Container -->
-<syncfusion:DocumentContainer Name="DocContainer" SwitchMode="QuickTabs" Mode="MDI">  …....  …....
+{% highlight XAML %}
+<syncfusion:DocumentContainer Name="DocContainer" SwitchMode="QuickTabs" Mode="MDI">
+    <!-- child elements -->
 </syncfusion:DocumentContainer>
 {% endhighlight %}
 
 {% highlight C# %}
-//Creating instance of Document Container
-DocumentContainer DocContainer = new DocumentContainer();
-//Set mode as MDIDocContainer.
-Mode = DocumentContainerMode.MDI;
-//Set switch modeDocContainer.SwitchMode = SwitchMode.QuickTabs;  ….......….......
-//Adding control to the window this.
-Content = DocContainer;
+// Creating an instance of DocumentContainer
+DocumentContainer docContainer = new DocumentContainer();
+// Set the mode to MDI
+docContainer.Mode = DocumentContainerMode.MDI;
+// Set the switcher to QuickTabs
+docContainer.SwitchMode = SwitchMode.QuickTabs;
+// Add the control to the window
+this.Content = docContainer;
 {% endhighlight %}
 {% endtabs %}
 
+## See Also
 
-![Setting window switchers](Setting-Window-Switchers_images/Setting-Window-Switchers_img1.jpeg)
-
-
-
-
-
-![Setting window switchers](Setting-Window-Switchers_images/Setting-Window-Switchers_img2.jpeg)
-
-
-
-
-
-![Setting window switchers](Setting-Window-Switchers_images/Setting-Window-Switchers_img3.jpeg)
-
-
-
+* [Getting Started](Getting-Started.md)
+* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)
+* [Setting Window State](Setting-Window-State.md)

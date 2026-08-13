@@ -41,7 +41,8 @@ To add the CurrencyTextBox control manually in XAML, follow these steps:
 {% highlight XAML %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:numberformat="clr-namespace:System.Globalization;assembly=mscorlib"
         x:Class="CurrencyTextBoxSample.MainWindow"
         Title="CurrencyTextBox Sample" Height="350" Width="525">
     <Grid>
@@ -94,6 +95,9 @@ currencyTextBox.Width = 100;
 
 this.Content = currencyTextBox;
 
+// Show the window (typical WPF startup)
+this.Show();
+
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
@@ -121,7 +125,7 @@ currencyTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Currency TextBox diplays Value](getting-started_images/wpf-currency-textbox-value.png)
+![WPF Currency TextBox displays Value](getting-started_images/wpf-currency-textbox-value.png)
 
 N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the CurrencyTextBox. Use only the `Value` property.
 
@@ -129,11 +133,11 @@ N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.wind
 
 Data binding is the method of forming a connection between the application  UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the `CurrencyTextBox` using the `Value` Property.
 
-The following code snippets illustrate the value binding from one `CurrencyTextBox` to another.
+The following code snippets illustrate the value binding from one `CurrencyTextBox` to another. Set the `DataContext` of the `StackPanel` (or window) to a `ViewModel` instance so the `{Binding MyValue}` expression resolves.
 
 {% tabs %}
 {% highlight XAML %}
-<StackPanel>
+<StackPanel DataContext="{Binding MyValue, RelativeSource={RelativeSource Self}}">
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox1" Height="25" Width="100" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}"/>
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox2" Width="100" Height="25" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" />
 </StackPanel>
@@ -145,7 +149,9 @@ ViewModel.cs
 {% tabs %}
 {% highlight C# %}
 
-class ViewModel : NotificationObject
+using Syncfusion.Windows.Shared;
+
+public class ViewModel : NotificationObject
 {
     private double myValue;
     public double MyValue
@@ -169,7 +175,7 @@ class ViewModel : NotificationObject
 
 ## Value Changed Notification
 
-The `CurrencyTextBox` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
+The `CurrencyTextBox` control can notify value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. You can get the old and new value from the `OldValue` and `NewValue` properties in the `ValueChanged` event.
 
 {%tabs%}
 {% highlight xaml %} 
@@ -180,7 +186,7 @@ The `CurrencyTextBox` control can notifies the value changes through the [ValueC
 {% highlight C# %} 
 
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
-currencyTextBox.ValueChanged += new PropertyChangedCallback(CurrencyTextBox_ValueChanged);
+currencyTextBox.ValueChanged += CurrencyTextBox_ValueChanged;
 
 {% endhighlight %}
 {%endtabs%}
@@ -319,3 +325,13 @@ CurrencyTextBox supports various built-in themes. Refer to the below links to ap
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Applying Theme to WPF Currency TextBox](getting-started_images/wpf-currency-textbox-theme.png)
+
+## See Also
+
+* [Overview](Overview.md)
+* [Culture and Number Formats](Culture-and-Number-Formats.md)
+* [Appearance](Appearance.md)
+* [Step Interval](Step-Interval.md)
+* [Range Adorner](Range-Adorner.md)
+* [Restriction or Validation](Restriction-or-Validation.md)
+* [Changing Currency Value](Changing-Currency-Value.md)

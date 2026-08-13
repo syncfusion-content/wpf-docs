@@ -9,7 +9,11 @@ documentation: ug
 
 # Culture and Formatting in WPF Currency TextBox
 
-Value of `CurrencyTextBox` can be formatted in following ways:
+## Assembly Deployment
+
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#currencytextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+
+Value of `CurrencyTextBox` can be formatted in the following ways:
 
 * Culture
 * NumberFormatInfo
@@ -47,21 +51,30 @@ By default the US culture uses “,” as the `CurrencyGroupSeparator` "$" as `C
 
 ![WPF CurrencyTextBox with France Culture](Culture-and-Number-Formats_images/wpf-currency-textbox-france-culture.png)
 
-## NumberFormatInfo based formatting
+## NumberFormatInfo-Based Formatting
 
-The number formatting of `CurrencyTextBox` can be customized by setting [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NumberFormat) property.
+The number formatting of `CurrencyTextBox` can be customized by setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NumberFormat) property.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  Value="1234567">
-    <syncfusion:CurrencyTextBox.NumberFormat >
-        <numberformat:NumberFormatInfo CurrencyGroupSeparator="/" 
-                                       CurrencyDecimalDigits="4" 
-                                       CurrencyDecimalSeparator="*" 
-                                       CurrencySymbol="$"/>
-    </syncfusion:CurrencyTextBox.NumberFormat>
-</syncfusion:CurrencyTextBox>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:numberformat="clr-namespace:System.Globalization;assembly=mscorlib"
+        x:Class="CurrencyTextBoxSample.MainWindow"
+        Title="CurrencyTextBox Sample" Height="350" Width="525">
+    <Grid>
+        <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Value="1234567">
+            <syncfusion:CurrencyTextBox.NumberFormat>
+                <numberformat:NumberFormatInfo CurrencyGroupSeparator="/"
+                                               CurrencyDecimalDigits="4"
+                                               CurrencyDecimalSeparator="*"
+                                               CurrencySymbol="$"/>
+            </syncfusion:CurrencyTextBox.NumberFormat>
+        </syncfusion:CurrencyTextBox>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 
@@ -84,10 +97,12 @@ currencyTextBox.NumberFormat = new NumberFormatInfo()
 
 ![WPF CurrencyTextBox with Formatting](Culture-and-Number-Formats_images/wpf-currency-textbox-formatting.png)
 
-The following code illustrate how to set currency group size by using the `NumberFormat` property.
+The following code illustrates how to set the currency group size by using the `NumberFormat` property.
 
 {% tabs %}
 {% highlight C# %}
+
+using System.Globalization;
 
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.Width = 150;
@@ -111,9 +126,9 @@ currencyTextBox.NumberFormat = new NumberFormatInfo()
 
 ## Formatting with dedicated properties
 
-The number formatting of `CurrencyTextBox` can also be customized by setting the [CurrencyGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyGroupSeparator), [CurrencyGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyGroupSizes), [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyDecimalDigits) and [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyDecimalSeparator), [CurrencySymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencySymbol), [CurrencyNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyNegativePattern), and [CurrencyPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyPositivePattern) properties of CurrencyTextBox. You can show the group separator by enable the [GroupSeperatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_GroupSeperatorEnabled) property to `true`. 
+The number formatting of `CurrencyTextBox` can also be customized by setting the [CurrencyGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyGroupSeparator), [CurrencyGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyGroupSizes), [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyDecimalDigits) and [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyDecimalSeparator), [CurrencySymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencySymbol), [CurrencyNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyNegativePattern), and [CurrencyPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyPositivePattern) properties of CurrencyTextBox. You can show the group separator by enabling the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_GroupSeparatorEnabled) property (`true`).
 
-The following code illustrate how to format using the `CurrencyDecimalSeparator`, `CurrencyDecimalDigits`, `CurrencyGroupSeparator`, `CurrencyGroupSizes` property of the `CurrencyTextBox`.
+The following code illustrates how to format using the `CurrencyDecimalSeparator`, `CurrencyDecimalDigits`, `CurrencyGroupSeparator`, and `CurrencyGroupSizes` properties of the `CurrencyTextBox`.
 
 {% tabs %}
 {% highlight C# %}
@@ -124,19 +139,19 @@ currencyTextBox.Height = 25;
 currencyTextBox.Value = 123456789;
 currencyTextBox.CurrencySymbol = "#";
 currencyTextBox.CurrencyDecimalDigits = 4;
-currencyTextBox.GroupSeperatorEnabled = true;
+currencyTextBox.GroupSeparatorEnabled = true;
 currencyTextBox.CurrencyGroupSeparator = "/";
 currencyTextBox.CurrencyDecimalSeparator = "*";
 
 // Adding the currency group size via CurrencyGroupSizes property.
-currencyTextBox.CurrencyGroupSizes = new Int32Collection() { 4, 3, 2 };
+currencyTextBox.CurrencyGroupSizes = new int[] { 4, 3, 2 };
 
 {% endhighlight %}
 {% endtabs %}
 
 ![WPF CurrencyTextBox with Formatting](Culture-and-Number-Formats_images/wpf-currency-textbox-number-format.png)
 
-N> When you use both the `NumberFormat` and the dedicated properties (`CurrencyGroupSeparator`, `CurrencySymbol`, `CurrencyDecimalDigits`, `CurrencyDecimalSeparator` and `CurrencyGroupSizes`) to format the value of `CurrencyTextBox`, the `CurrencyGroupSeparator`and `CurrencyGroupSizes` properties have higher priority.
+N> When you use both the `NumberFormat` and the dedicated properties (`CurrencyGroupSeparator`, `CurrencySymbol`, `CurrencyDecimalDigits`, `CurrencyDecimalSeparator` and `CurrencyGroupSizes`) to format the value of `CurrencyTextBox`, the `CurrencyGroupSeparator` and `CurrencyGroupSizes` properties have higher priority.
 
 N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
 
@@ -188,7 +203,7 @@ currencyTextBox.CurrencyPositivePattern = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF CurrencyTextBox displays Postive Value Pattern](Culture-and-Number-Formats_images/wpf-currency-textbox-positive-value.png)
+![WPF CurrencyTextBox displays Positive Value Pattern](Culture-and-Number-Formats_images/wpf-currency-textbox-positive-value.png)
 
 ###  Negative Value Pattern
 
@@ -287,3 +302,9 @@ currencyTextBox.CurrencyNegativePattern = 0;
 {% endtabs %}
 
 ![WPF CurrencyTextBox displays Negative Value Pattern](Culture-and-Number-Formats_images/wpf-currency-textbox-negative-value.png)
+
+## See Also
+
+* [Getting Started](Getting-Started.md)
+* [Appearance](Appearance.md)
+* [Restriction or Validation](Restriction-or-Validation.md)
