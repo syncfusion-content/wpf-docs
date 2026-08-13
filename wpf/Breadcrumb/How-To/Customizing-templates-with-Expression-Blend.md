@@ -56,7 +56,7 @@ The steps to customize templates by using Expression Blend are as follows:
 
 
    
-#### Customized sample styles
+## Customized sample styles
 
 The steps to customize sample styles are as follows:
 
@@ -113,7 +113,7 @@ The steps to customize sample styles are as follows:
 
 
 
-#### Sample XAML for ItemContainerStyle
+### Sample XAML for ItemContainerStyle
 
 The XAML displayed below is used to customize the item-container style.
 

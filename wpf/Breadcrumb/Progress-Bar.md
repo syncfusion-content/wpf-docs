@@ -15,7 +15,7 @@ The progress bar for the HierarchyNavigator control can be displayed or removed.
 
 
 
-### There are two methods to display the progress bar:
+## There are two methods to display the progress bar:
 
 1. Calling the ShowProgressBar method in HierarchyNavigator, which displays the progress bar for a time span of 500 ms.
 
