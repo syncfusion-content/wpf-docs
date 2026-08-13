@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in WPF SfDataGrid | Syncfusion®
-description: Sorting in SfDataGrid provides single, multi-column sorting, custom sorting, and programmatic sorting support for efficient data organization.
+description: Sorting in SfDataGrid provides single and multi-column sorting, custom sorting, programmatic sorting, and sorting event support for efficient data organization.
 platform: wpf
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WPF SfDataGrid | Syncfusion®
-description:  Selection in SfDataGrid provides flexible row, cell, and multi-selection options with customizable modes and selection behaviors.
+description: Selection in SfDataGrid provides flexible row, cell, and multi-selection options with customizable modes and selection behaviors.
 platform: wpf
 control: SfDataGrid
 documentation: ug
