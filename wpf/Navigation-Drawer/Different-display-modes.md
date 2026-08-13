@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Different display modes in WPF Navigation Drawer control | Syncfusion®
-description: Learn here all about Different display modes support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
+title: Display Modes in WPF NavigationDrawer | Syncfusion®
+description: Configure compact, expanded, and default display modes with responsive behavior, automatic mode switching, and collapsible navigation panes.
 platform: wpf
 control: NavigationDrawer
 documentation: ug

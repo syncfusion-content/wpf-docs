@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Working With RadialSlider in WPF Radial Slider control | Syncfusion
-description: Learn here all about Working With RadialSlider support in Syncfusion WPF Radial Slider (SfRadialSlider) control and more.
+title: Customize the UI of WPF Radial Slider | Syncfusion®
+description: Customize the appearance and behavior of the WPF SfRadialSlider, including ticks, labels, pointers, rims, and value selection.
 platform: WPF
 control: SfRadialSlider
 documentation: ug
 ---
 
-# Working With RadialSlider in WPF Radial Slider (SfRadialSlider)
+# Customize the UI of WPF Radial Slider (SfRadialSlider)
 
 This section explains different UI customization and common features available in [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) control.
 

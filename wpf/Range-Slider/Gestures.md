@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Gestures in WPF Range Slider control | Syncfusion®
-description: Learn here all about Gestures support in Syncfusion® WPF Range Slider (SfRangeSlider) control and more.
+title: Gestures in WPF RangeSlider | Syncfusion®
+description: Interact with the RangeSlider using keyboard navigation and mouse gestures for precise value and range selection.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug

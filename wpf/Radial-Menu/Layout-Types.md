@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Layout Types in WPF Radial Menu control | Syncfusion®
-description: Learn here all about Layout Types support in Syncfusion® WPF Radial Menu (SfRadialMenu) control and more.
+title: Layout Types in WPF RadialMenu | Syncfusion®
+description: Configure default and custom radial layouts using visible segment counts, segment indexes, and circular panel arrangements.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug

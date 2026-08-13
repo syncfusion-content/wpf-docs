@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Progress Bar in WPF Breadcrumb control | Syncfusion
-description: Learn here all about Progress Bar support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
+title: Progress Bar in WPF Breadcrumb | Syncfusion®
+description: Display or cancel a progress bar during navigation operations with configurable display and timeout settings.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug

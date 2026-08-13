@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Commands and events in WPF Navigation Drawer control | Syncfusion®
-description: Learn here all about Commands and events support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
+title: Commands and Events in WPF NavigationDrawer | Syncfusion®
+description: Handle drawer opening, closing, item interaction events, and execute commands for navigation items in the WPF NavigationDrawer control.
 platform: wpf
 control: NavigationDrawer
 documentation: ug

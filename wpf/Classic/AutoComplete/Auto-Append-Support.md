@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Auto Append Support in WPF AutoComplete Control | Syncfusion
-description: Learn here all about Auto Append Support in Syncfusion WPF AutoComplete (Classic) control, its elements and more.
+title: Auto Append Support in WPF AutoComplete (Classic) Control | Syncfusion®
+description: Automatically append matching text from the data source as users type to improve input speed and accuracy.
 platform: wpf
 control: AutoComplete
 documentation: ug

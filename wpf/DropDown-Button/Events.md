@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Events in WPF Dropdown Button control | Syncfusion
-description: Learn here all about Events support in Syncfusion WPF Dropdown Button (DropDownButtonAdv) control and more.
+title: Events in WPF DropDown Button | Syncfusion®
+description: Handle dropdown opening, closing, selection, and check state events to customize menu interaction behavior.
 platform: WPF
 control: DropDownButtonAdv
 documentation: ug

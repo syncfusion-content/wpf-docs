@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance and Styling in WPF Radial Menu control | Syncfusion®
-description: Learn here all about Appearance and Styling support in Syncfusion® WPF Radial Menu (SfRadialMenu) control and more.
+title: Appearance and Styling in WPF RadialMenu | Syncfusion®
+description: Customize the appearance of the WPF RadialMenu using radius settings, rim styling, navigation buttons, and item background customization.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Command Binding in WPF Dropdown Button control | Syncfusion
-description: Learn here all about Command Binding support in Syncfusion WPF Dropdown Button (DropDownButtonAdv) control and more.
+title: Command Binding in WPF DropDown Button | Syncfusion®
+description: Execute commands from dropdown menu items and pass command parameters using ICommand and MVVM patterns.
 platform: WPF
 control: DropDownButtonAdv
 documentation: ug

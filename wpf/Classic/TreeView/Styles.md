@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Styles in WPF TreeViewAdv Control | Syncfusion
-description: Learn here all about Styles support in Syncfusion WPF TreeViewAdv (Classic) control, its elements and more details.
+title: Styles in WPF TreeViewAdv (Classic) | Syncfusion®
+description: Customize TreeViewAdv (Classic) styles for drag indicators, expanders, and item containers to control visual appearance.
 platform: wpf
 control: TreeViewAdv
 documentation: ug

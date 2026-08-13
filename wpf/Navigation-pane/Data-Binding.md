@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Data-Binding in WPF Navigation Pane control | Syncfusion
-description: Learn here all about Data-Binding support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
+title: Data Binding in WPF Navigation Pane | Syncfusion®
+description: Bind business objects and XML data sources to GroupBar items using templates, styles, and data context support.
 platform: wpf
 control: GroupBar
 documentation: ug

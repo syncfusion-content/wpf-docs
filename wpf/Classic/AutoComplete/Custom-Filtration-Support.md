@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Custom Filtration Support in WPF AutoComplete Control | Syncfusion
-description: Learn here all about Custom Filtration Support in Syncfusion WPF AutoComplete (Classic) control and more.
+title: Custom Filtration Support in WPF AutoComplete (Classic) | Syncfusion®
+description: Filter autocomplete suggestions using StartChar, IndexBased, and AnyChar search modes for customized matching.
 platform: wpf
 control: AutoComplete
 documentation: ug

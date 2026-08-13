@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® WPF DropDown ButtonControl | Syncfusion®
+title: About Syncfusion® WPF DropDown Button Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF DropDownButtonAdv control and more details.
 platform: wpf
 control: DropDownButtonAdv

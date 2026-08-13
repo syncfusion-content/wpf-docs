@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Template Customizing in WPF Breadcrumb control | Syncfusion
-description: Learn here all about Template Customizing support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
+title: Template Customization in WPF Breadcrumb | Syncfusion®
+description: Customize Breadcrumb item presentation and hierarchical data display using templates and HierarchicalDataTemplate support.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug

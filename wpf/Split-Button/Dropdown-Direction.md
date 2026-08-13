@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Dropdown Direction in WPF Split Button control | Syncfusion®
-description: Learn about Dropdown Direction support in Syncfusion® Essential Studio® WPF Split Button control, its elements and more.
+title: Dropdown Direction in WPF SplitButton | Syncfusion®
+description: Control the dropdown popup position by configuring left, right, top, or bottom dropdown directions.
 platform: WPF
 control: SplitButtonAdv
 documentation: ug

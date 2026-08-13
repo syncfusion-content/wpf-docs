@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Tooltip| Hierarchical Navigator | Wpf | Syncfusion
-description: Learn here about tooltip in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
+title: Tooltip in WPF Breadcrumb | Syncfusion®
+description: Display tooltips for Breadcrumb items to provide additional navigation information and improve user experience.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Tooltip in WPF Hierarchical Navigator control
+# Tooltip in WPF Breadcrumb (HierarchicalNavigator) 
 
 A ToolTip can be displayed for each HierarchyNavigator item.
 
