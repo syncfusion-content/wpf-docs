@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About WPF TreeViewAdv Control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF TreeViewAdv (Classic) control, its elements and more.
+title: About Syncfusion® WPF TreeViewAdv (Classic) Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF TreeViewAdv (Classic) control and more details.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# WPF TreeViewAdv (Classic) Overview
+# About Syncfusion® WPF TreeViewAdv (Classic) Control
 
 TreeViewAdv control displays hierarchical data in a tree structure, and has items that can be expanded and collapsed. TreeViewAdv includes all essential features as well as certain advanced features that make the control unique and extra-ordinary. Properties of the TreeViewAdv control enable users to achieve desired layouts and outputs by using both XAML and C# code with ease.
 
