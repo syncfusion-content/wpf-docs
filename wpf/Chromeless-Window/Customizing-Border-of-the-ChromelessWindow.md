@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Customizing Border of the WPF ChromelessWindow | Syncfusion®
+title: Customizing Border in WPF ChromelessWindow | Syncfusion®
 description: Customizing the border of the ChromelessWindow allows you to modify border appearance, thickness, and colors to match application themes.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Customizing Border of the WPF ChromelessWindow
+# Customizing Border in WPF ChromelessWindow
 
 This section describes the properties that can be used to customize the resize border of a ChromelessWindow.
 
