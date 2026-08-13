@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gemini AI for AI-Powered Components | Syncfusion®
-description: Learn how to implement a custom AI service using Google's Gemini API with Syncfusion<sup>&reg;</sup> AI-Powered Components.
+title: Gemini AI Service in WPF Smart Components | Syncfusion®
+description: Integrate Google Gemini AI with WPF Smart Components using the IChatInferenceService interface for fast AI responses.
 platform: wpf
 control: SmartComponents
 documentation: ug
 ---
 
-# Gemini AI Integration with WPF Smart Components
+# Gemini AI Service in WPF Smart Components
 
 The Syncfusion WPF AI-powered components can enhance applications with intelligent capabilities. By default, it works with providers like OpenAI or Azure OpenAI, but you can integrate `Google Gemini AI` using the `IChatInferenceService` interface. This guide explains how to implement and register Gemini AI for the Smart Text Editor in a WPF app.
 
