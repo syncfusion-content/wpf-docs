@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selected Hierarchy Navigator Item Changed in WPF | Syncfusion
-description: Selected hierarchy navigator item changed in Syncfusion Essential Studio WPF, its elements and more.
+title: Selected Item Changed in WPF HierarchyNavigator | Syncfusion®
+description: Selected Item Changed in WPF HierarchyNavigator notifies applications of selection updates, enabling responsive actions.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-## Selected Hierarchy Navigator Item Changed
+# Selected Item Changed in WPF HierarchyNavigator	
 
 Users can handle selected item changed by using the methods Command (ICommand) property or HierarchyNavigatorSelectedItemChanged event in Hierarchy Navigator control.
 

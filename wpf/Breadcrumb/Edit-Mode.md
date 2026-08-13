@@ -1,13 +1,13 @@
-﻿---
+---
 layout: post
-title: Edit Mode in WPF Breadcrumb (HierarchyNavigator) | Syncfusion®
-description: Enable edit mode with autocomplete support to edit navigation paths and quickly locate matching hierarchical items.
+title: Edit Mode in WPF HierarchyNavigator | Syncfusion®
+description: Edit mode in WPF HierarchyNavigator allows users to modify hierarchy items directly, improving data management and navigation workflows.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Edit Mode in WPF Breadcrumb (HierarchyNavigator)
+# Edit Mode in WPF HierarchyNavigator
 
 This feature allows you to easily edit a navigation path by setting the [IsEnableEditMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_IsEnableEditMode) property to `true`. The filter support is available in edit mode, which suggests matching nodes based on the path entered in the editor like the Windows Explorer.
 

@@ -1,13 +1,13 @@
-﻿---
+---
 layout: post
-title: Themes in WPF Breadcrumb | Syncfusion®
-description: Apply built-in themes and custom visual styles to customize the appearance of the WPF Breadcrumb control.
+title: Skins in WPF HierarchyNavigator | Syncfusion®
+description: Skins in WPF HierarchyNavigator allow visual customization through themes, helping create consistent and attractive user interfaces.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Themes in WPF Breadcrumb (HierarchyNavigator)
+# Skins in WPF HierarchyNavigator
 
 ## Theme
 

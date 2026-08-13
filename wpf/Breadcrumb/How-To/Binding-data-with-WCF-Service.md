@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Binding data with WCF in WPF Hierarchical Navigator | Syncfusion
-description: Binding data with WCF in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
+title: Binding Data with WCF Service in WPF HierarchyNavigator | Syncfusion®
+description: Binding Data with WCF Service in WPF HierarchyNavigator enables seamless integration with service data sources, ensuring efficient data presentation.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Binding data with WCF Service in WPF Hierarchical Navigator
+# Binding Data with WCF Service in WPF HierarchyNavigator
 
 XML data can be bound through WCF Services by using a WPF application enabled with WCF Services.
 

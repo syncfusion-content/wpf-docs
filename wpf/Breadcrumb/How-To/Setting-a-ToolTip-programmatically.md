@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip programmatically in WPF Hierarchical Navigator | Syncfusion
-description: Setting a tooltip programmatically in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
+title: Setting Tooltips in WPF HierarchyNavigator | Syncfusion®
+description: Setting Tooltips in WPF HierarchyNavigator allows informative hints to be displayed programmatically, improving usability and guidance.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-## Setting a ToolTip programmatically
+# Setting Tooltips in WPF HierarchyNavigator
 
 Setting the ShowToolTip Boolean property to true in the HierarchyNavigator control enables ToolTips for all items. By default, this property is set to false, preventing ToolTips from being shown.
 
