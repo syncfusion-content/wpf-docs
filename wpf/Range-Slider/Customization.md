@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Styling and Appearance in WPF Range Slider control | Syncfusion®
-description: Learn here all about Styling and Appearance support in Syncfusion® WPF Range Slider (SfRangeSlider) control and more.
+title: Styling and Appearance in WPF RangeSlider | Syncfusion®
+description: Customize RangeSlider tracks, thumbs, ticks, value labels, and visual styles to create tailored slider experiences.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug

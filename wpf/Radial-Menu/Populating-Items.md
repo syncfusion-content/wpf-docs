@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Populating Items in WPF Radial Menu control | Syncfusion®
-description: Learn here all about Populating Items support in Syncfusion® WPF Radial Menu (SfRadialMenu) control and more.
+title: Populate Items in WPF RadialMenu | Syncfusion®
+description: Populate RadialMenu items from business objects using data binding, display member paths, commands, and item templates.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
 ---
 
-# Populating Items in WPF Radial Menu (SfRadialMenu)
+# Populate Items in WPF Radial Menu (SfRadialMenu)
 
 ## Items Source  
 

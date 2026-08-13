@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Populating data in WPF Navigation Drawer control | Syncfusion®
-description: Learn here all about Populating data support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
+title: Populate Data in WPF NavigationDrawer | Syncfusion®
+description: Populate navigation menus using built-in items, data binding, hierarchical data, custom icons, and multiple navigation item types.
 platform: wpf
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Populating data in WPF Navigation Drawer (SfNavigationDrawer)
+# Populate Data in WPF Navigation Drawer (SfNavigationDrawer)
 
 This section explains how to populate the drawer menu. 
 

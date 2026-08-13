@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header Template in WPF Tree Navigator control | Syncfusion
-description: Learn here all about Header Template support in Syncfusion WPF Tree Navigator (SfTreeNavigator) control and more.
+title: Header Template in WPF SfTreeNavigator | Syncfusion®
+description: Header Template support in SfTreeNavigator allows customization of item headers using templates to display content with a tailored appearance.
 platform: wpf
 control: SfTreeNavigator 
 documentation: ug
 ---
 
-# Header Template in WPF Tree Navigator (SfTreeNavigator)
+# Header Template in WPF SfTreeNavigator
 
 The HeaderTemplate property of Tree Navigator can be used to customize the Tree Navigator header. 
 
