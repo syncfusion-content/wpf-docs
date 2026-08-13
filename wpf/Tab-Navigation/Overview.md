@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® WPF TabNavigation Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio® WPF TabNavigation control and discover its features, navigation capabilities, and more details.
+description: Learn about the introduction of Syncfusion® Essential Studio WPF TabNavigation control and discover its features, navigation capabilities, and more details.
 platform: WPF
 control: TabNavigation
 documentation: ug
