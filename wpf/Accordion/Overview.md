@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® WPF SfAccordion Control | Syncfusion®
-description: Learn about the introduction and overview of the Syncfusion® Essential Studio WPF SfAccordion control and its key features, benefits, and customization options.
+description: Learn about the introduction of Syncfusion® Essential Studio WPF SfAccordion control and discover its features, usage, and more details.
 platform: WPF
 control: SfAccordion
 documentation: ug
