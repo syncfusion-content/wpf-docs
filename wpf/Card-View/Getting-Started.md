@@ -17,36 +17,36 @@ This section describes how to create a [CardView](https://help.syncfusion.com/cr
 
 ## Assembly deployment
 
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#cardview) section to get the list of assemblies that are added by the NuGet package.
+
+Refer to the [NuGet Packages Documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing NuGet packages in a WPF application.
+
 Install the Syncfusion WPF `Tools` NuGet package to add the required assemblies to your project:
 
 ```console
 Install-Package Syncfusion.Tools.WPF
 ```
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#cardview) section to get the list of assemblies that are added by the NuGet package.
+## Adding the CardView control using the Designer
 
-Refer to the [NuGet Packages Documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing NuGet packages in a WPF application.
-
-## Adding WPF CardView control via designer
-
-1. The `CardView` control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+1. You can add the _CardView_ control to an application by dragging it from the **Toolbox** and dropping it onto the designer surface. The following dependent assemblies are added automatically:
 	* Syncfusion.Shared.WPF
 	* Syncfusion.Tools.WPF
 
 ![wpf card view control added by designer](Getting-Started_images/wpf-card-view-control-added-by-designer.png)
 
-2. Set the properties for the `CardView` control in design mode using the SmartTag feature.
+2. Use the **Smart Tag** feature to configure the _CardView_ control properties in design mode.
 
 ## Adding WPF CardView control via XAML
 
-To add the `CardView` control manually in XAML, follow these steps:
+To add the _CardView_ control manually in XAML, follow these steps:
 
 1. Create a new WPF project in Visual Studio.
-2. Add the following required assembly references to the project:
+2. Add the following assembly references to the project:
 	* Syncfusion.Shared.WPF
 	* Syncfusion.Tools.WPF
-3. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**.
-4. Declare the `CardView` control in the XAML page.
+3. Import the Syncfusion WPF schema namespace **http://schemas.syncfusion.com/wpf** in the XAML page.
+4. Add the CardView control to the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -74,13 +74,13 @@ To add the `CardView` control manually in XAML, follow these steps:
 
 ## Adding WPF CardView control via C#
 
-To add the `CardView` control manually in C#, follow these steps:
+To add the _CardView_ control manually in C#, follow these steps:
 
-1. Create a new WPF application via Visual Studio.
+1. Create a new WPF application in Visual Studio.
 2. Add the following required assembly references to the project:
 	* Syncfusion.Shared.WPF
 	* Syncfusion.Tools.WPF
-3. Include the required namespace.
+3. Import the required namespace.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -93,7 +93,7 @@ using Syncfusion.Windows.Tools.Controls;
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of `CardView` control, and add it to the window.
+4. Create an instance of **CardView** and add it to the window.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -119,13 +119,13 @@ namespace CardViewSample
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![wpf card view control added manually](Getting-Started_images/wpf-card-view-control-added-manually.png)
+![WPF CardView Control](Getting-Started_images/wpf-card-view-control-added-manually.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Getting-Started)
 
 ## Populating items using CardViewItem
 
-You can add the card items inside the control by adding the [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html) into the `CardView.Items` collection property.
+You can populate the CardView control by adding [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html) objects directly to the _Items_ collection.
 
 {% tabs %}
 {% highlight XAML %}
@@ -176,7 +176,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Populating items using ItemsSource
 
-You can populate the card items in the `CardView` control by using the `ItemsSource` property. You need to use [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_HeaderTemplate) and `ItemTemplate` to render the items in the view.
+You can populate the _CardView_ control by binding a collection to its _ItemsSource_ property. Use the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_HeaderTemplate) and `ItemTemplate` properties to define how items are displayed in the view.
 
 N> Grouping, sorting, filtering, and editing are supported only when the card items are populated through the `ItemsSource` property.
 
@@ -260,7 +260,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Select a CardViewItem
 
-You can select any card item by mouse click on the specific item. You can get the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_SelectedItem) property. The default value of `SelectedItem` property is `null`.
+You can select a card item by clicking it. Use the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_SelectedItem) property to retrieve the currently selected item. The default value of the _SelectedItem_ property is null.
 
 N> You can select only one item at a time.
 
@@ -311,9 +311,9 @@ this.Content = cardView;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Getting-Started)
 
-## Select CardViewItem programmatically using property
+## Select CardViewItem programmatically
 
-You can select a particular card item programmatically by using the [CardViewItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html#Syncfusion_Windows_Tools_Controls_CardViewItem_IsSelected) property. The default value of `CardViewItem.IsSelected` property is `false`.
+You can select a specific card item programmatically by setting the [CardViewItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html#Syncfusion_Windows_Tools_Controls_CardViewItem_IsSelected) property to true. The default value of `CardViewItem.IsSelected` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -366,7 +366,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Group the CardViewItems
 
-You can group the cards inside the `CardView` control by dragging the required fields from the list and dropping them into the drop region of the `CardView` control header. The field names in the drop region are automatically populated from the `HeaderTemplate` data context. To disable grouping, set the [CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanGroup) property to `false`. The default value of `CanGroup` is `true`.
+You can group cards by dragging fields from the field list and dropping them into the grouping area in the CardView header. The field names in the drop region are automatically populated from the `HeaderTemplate` data context. To disable grouping, set the [CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanGroup) property to `false`. The default value of `CanGroup` is `true`.
 
 {% tabs %}
 {% highlight C# %}
@@ -491,7 +491,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Sort the CardViewItems
 
-You can sort the cards inside the `CardView` control in the default, ascending, or descending order by clicking the field names listed in the header. To disable sorting, set the [CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanSort) property to `false`. The default value of `CanSort` is `true`.
+You can sort cards in ascending, descending, or default order by clicking the field names displayed in the header. To disable sorting, set the [CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanSort) property to `false`. The default value of `CanSort` is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -519,9 +519,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Edit the CardViewItems
 
-You can edit the selected `CardViewItem` value by double-clicking on that item or by pressing the `F2` key. To exit editing mode, press the `Esc` or `Enter` key. Enable the editing mode of card items by setting the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property to `true`. The default value of `CanEdit` is `false`.
+You can edit the selected _CardViewItem_ by double-clicking it or pressing the `F2` key. To exit editing mode, press the `Esc` or `Enter` key. Enable editing by setting the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property to true. The default value of `CanEdit` is `false`.
 
-N> To perform an edit operation on the selected `CardViewItem`, define the `CardViewItem` edit mode UI with editable functionalities by using [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate). The binding context of `EditItemTemplate` is the underlying data item.
+N> To support editing, define an editable UI using the [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate) property. The binding context of _EditItemTemplate_ is the underlying data item.
 
 {% tabs %}
 {% highlight XAML %}
@@ -589,11 +589,11 @@ cardView.CanEdit = true;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
-## Orientation of CardViewItems
+## Set the Orientation of CardViewItems
 
-You can arrange the cards either vertically or horizontally by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_Orientation) property. The default value of the `Orientation` property is `Vertical`.
+Use the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_Orientation) property to arrange cards either vertically or horizontally. The default value of the `Orientation` property is `Vertical`.
 
-N> If there is not enough space to arrange the cards in the orientation set by the `Orientation` property, `CardView` will automatically arrange the cards in the available space.
+N> If sufficient space is not available, CardView automatically arranges the cards to fit the available layout area.
 
 {% tabs %}
 {% highlight XAML %}
@@ -619,7 +619,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Selected item changed notification
 
-You will be notified when the selected card item changes in the [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) by using the [SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_SelectedItemChanged) callback. The `SelectedItemChanged` callback receives a `DependencyPropertyChangedEventArgs` that contains the previously selected card item in the `OldValue` property and the newly selected card item in the `NewValue` property.
+The [SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_SelectedItemChanged) event is raised whenever the selected item changes. The `SelectedItemChanged` callback receives a `DependencyPropertyChangedEventArgs` that contains the previously selected card item in the `OldValue` property and the newly selected card item in the `NewValue` property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -659,12 +659,11 @@ private void CardView_SelectedItemChanged(DependencyObject d, DependencyProperty
 
 ## Theme
 
-CardView supports various built-in themes. Refer to the below links to apply themes for the CardView,
+CardView supports a variety of built-in themes. Refer to the following articles to learn how to apply themes:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Themes)
 
-  ![Setting theme to WPF CardView](Getting-Started_images/wpf-card-view-theme-support.png)
+![Setting theme to WPF CardView](Getting-Started_images/wpf-card-view-theme-support.png)
