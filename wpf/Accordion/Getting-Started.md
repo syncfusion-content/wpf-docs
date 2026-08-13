@@ -11,7 +11,7 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfaccordion) section to get the list of assemblies and the NuGet package that need to be added as references to use the control in WPF application. The control is available from Syncfusion Essential Studio version 19.2.0.30 and later.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfaccordion) section to get the list of assemblies and the NuGet package that need to be added as references to use the control in WPF application.
 
 You can find more details about installing the NuGet package in a WPF application at the following link:
 
