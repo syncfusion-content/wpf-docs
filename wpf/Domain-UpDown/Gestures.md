@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gestures in WPF Domain Updown control | Syncfusion®
-description: Learn here all about Gestures support in Syncfusion® WPF Domain Updown (SfDomainUpDown) control and more.
-platform: WPF
+title: Gestures in WPF Domain Updown | Syncfusion®
+description: Handle keyboard and touch gestures to navigate items in the Syncfusion WPF Domain Updown (SfDomainUpDown) control smoothly.
+platform: wpf
 control: DomainUpDown
 documentation: ug
 ---
 
-# Gestures in WPF Domain Updown (SfDomainUpDown)
+# Gestures in WPF Domain Updown
 
 ## Mouse Wheel
 
