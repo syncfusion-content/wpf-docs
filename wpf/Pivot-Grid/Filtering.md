@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in WPF PivotGrid | Syncfusion®
-description: Apply filtering in the Syncfusion® WPF PivotGrid control to display subsets of data using FilterExpressions and supporting multiple conditions for refined analysis.
+description: Apply filtering in Syncfusion WPF PivotGrid control using FilterExpressions with multiple conditions for refined data analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug

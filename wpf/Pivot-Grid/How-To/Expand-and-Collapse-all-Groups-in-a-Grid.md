@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Expand and Collapse Entire Groups in WPF PivotGrid | Syncfusion®
+title: Expand and Collapse Entire Groups in WPF PivotGrid | Syncfusion®
 description: Expand or collapse all groups programmatically in Syncfusion® WPF PivotGrid control using ExpandAllGroup and CollapseAllGroup methods.
 platform: wpf
 control: PivotGridControl
