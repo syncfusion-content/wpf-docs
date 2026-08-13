@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Group Padding in WPF TaskBar control | Syncfusion
-description: Learn about Setting Group Padding support in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
+title: Setting Group Padding in WPF TaskBar | Syncfusion®
+description: Setting Group padding in WPF TaskBar controls internal spacing within groups, enhancing readability and content presentation.
 platform: wpf
 control: TaskBar
 documentation: ug
