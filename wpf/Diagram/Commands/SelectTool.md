@@ -17,7 +17,7 @@ The [SelectTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.I
 | DrawingTool | It is used to specify the drawing tool, which is valid only if the `Tool` is set as either `ContinuesDraw` or `DrawOnce`. |
 | ConnectorType | It is used to specify the type (such as Orthogonal, Straight and Cubic-Curve etc.) of the connector to be drawn. |
 
-### Tool
+## Tool
 
 The `Tool` property is used to specify the active tool behavior of the diagram. The supported values are:
 
@@ -30,7 +30,7 @@ The `Tool` property is used to specify the active tool behavior of the diagram. 
 
 The default value of the `Tool` property is `MultipleSelect`.
 
-### DrawingTool
+## DrawingTool
 
 The `DrawingTool` property is used to specify the type of object to be drawn. The supported values are:
 
@@ -44,7 +44,7 @@ The `DrawingTool` property is used to specify the type of object to be drawn. Th
 
 The default value of the `DrawingTool` property is `None`.
 
-### ConnectorType
+## ConnectorType
 
 The `ConnectorType` property is used to specify the type of connector to be drawn. The supported values are:
 

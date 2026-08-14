@@ -48,7 +48,7 @@ List of Commands and Key Gestures:
 | BringToFront | ] | Control+Shift |
 | BringForward | ] | Control |
 
-#### List of Commands and Mouse Gestures with Parameters
+## List of Commands and Mouse Gestures with Parameters
 
 | Command | Key | KeyModifier | Parameter |
 |---|---|---|---|
@@ -57,13 +57,13 @@ List of Commands and Key Gestures:
 | Reset | 0 | Control | new ResetParameter { Reset = Diagram.Reset.ZoomPan } |
 | FitToPage | W | Control + Shift | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
 
-#### List of Commands and Mouse Gestures with Parameters
+## List of Commands and Mouse Gestures with Parameters
 
 | Command | Scroll State | Parameter |
 |---|---|---|
 | Vertical Scroll using ‘Zoom’ command | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.VerticalScroll} |
 
-#### List of Commands and Key and Mouse Gestures with Parameter
+## List of Commands and Key and Mouse Gestures with Parameter
 
 | Command | KeyModifier | Scroll State | Parameter |
 |---|---|---|---|
