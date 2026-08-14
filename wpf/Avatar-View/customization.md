@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Customization in WPF AvatarView Control | Syncfusion
-description: Learn about the various customization in Syncfusion Essential WPF AvatarView control, its elements, and more.
-platform: wpf, and more.
+title: Customization in WPF SfAvatarView | Syncfusion®
+description: Customization in WPF SfAvatarView enables tailoring avatar appearance, size, shape, colors, and content to match application needs.
 platform: wpf
 control: AvatarView
 documentation: ug

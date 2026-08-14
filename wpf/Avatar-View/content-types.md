@@ -1,13 +1,13 @@
 ---
 layout: post 
-title: Content Types in WPF AvatarView Control | Syncfusion
-description: Learn about the available content types in Syncfusion Essential WPF AvatarView control, its elements, and more.
+title: Content Types in WPF SfAvatarView | Syncfusion®
+description: Content types in WPF SfAvatarView allow displaying images, initials, or custom content, providing flexible avatar representation options.
 platform: wpf
 control: AvatarView
 documentation: ug
 ---
 
-# Content Types in WPF AvatarView
+# Content Types in WPF SfAvatarView
 
 The [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control supports five types of content: [Default](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_Default), [Initials](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_Initials), [CustomImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_CustomImage), [AvatarCharacter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_AvatarCharacter), and [GroupView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.AvatarContentType.html#Syncfusion_Windows_Shared_AvatarContentType_Group).
 
