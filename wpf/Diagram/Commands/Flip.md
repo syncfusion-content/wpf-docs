@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Flip Command in WPF Diagram control | Syncfusion®
-description: Learn here all about Flip Command support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Flip Command in WPF SfDiagram | Syncfusion®
+description: Mirror nodes, ports, and groups in Syncfusion® WPF SfDiagram using flip commands with configurable modes and directions.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Flip Command in WPF Diagram (SfDiagram)
+# Flip Command in WPF SfDiagram
 
 The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Flip) command is used to mirror the selected object's content and port in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page in both horizontal and vertical directions. 
 

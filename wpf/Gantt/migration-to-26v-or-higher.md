@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Migrate GridTreeControl to SfTreeGrid in WPF GanttControl | Syncfusion
-description: Learn about GridTreeControl to SfTreeGrid migration in Syncfusion Essential Studio WPF GanttControl.
+title: Migrate GridTreeControl to SfTreeGrid in WPF Gantt | Syncfusion
+description: Learn about GridTreeControl to SfTreeGrid migration in Syncfusion WPF Gantt, including API changes, deprecated features, and newly introduced capabilities.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Migrate from GridTreeControl to SfTreeGrid
+# Migrate GridTreeControl to SfTreeGrid in WPF Gantt
 To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html) to [`SfTreeGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html), aimed at integrating drag-and-drop, filtering, and sorting capabilities into the GanttGrid, this transition results in the breaking of certain APIs and the introduction of new ones. Please find the differences in the following topics.
 
 ## Assembly references

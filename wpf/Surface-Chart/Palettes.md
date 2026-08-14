@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Palettes in WPF Surface Chart control | Syncfusion
-description: Learn here all about Palettes support in Syncfusion WPF Surface Chart (SfSurfaceChart) control and more.
+title: Palettes in WPF Surface Chart | Syncfusion®
+description: Palettes in the WPF Surface Chart allow you to customize color schemes for surface data, improving visualization and data interpretation.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
 ---
 
-# Palettes in WPF Surface Chart (SfSurfaceChart)
+# Palettes in WPF Surface Chart 
 
 [WPF Surface Chart](https://www.syncfusion.com/wpf-controls/surface-chart) provides options to apply different kinds of palettes.
 

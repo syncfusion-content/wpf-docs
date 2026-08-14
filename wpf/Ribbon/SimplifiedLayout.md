@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Simplified Layout in WPF Ribbon control | Syncfusion®
-description: Learn about Simplified Layout support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: Simplified Layout in WPF Ribbon Control | Syncfusion®
+description: The Simplified Layout in Ribbon displays commonly used commands in a single line, allowing more screen space for content viewing.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Simplified Layout in WPF Ribbon
+# Simplified Layout in WPF Ribbon Control
 
  The Ribbon is available in simplified layout which is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact viewing of the content. For the best user experience, the other Ribbon commands are located under the overflow menu. It also provides option to switch back and forth between the simplified and the normal layout using the minimize button.
 

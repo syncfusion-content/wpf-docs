@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Textbox customization in WPF Autocomplete control | Syncfusion®
-description: Learn here all about Textbox customization support in Syncfusion® WPF Autocomplete (SfTextBoxExt) control and more.
+title: TextBox Customization in WPF AutoComplete | Syncfusion®
+description: TextBox Customization in SfTextBoxExt enables modifying text input appearance, editing behavior, and visual presentation.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug

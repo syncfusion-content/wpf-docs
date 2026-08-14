@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Stacked Headers in WPF DataGrid control | Syncfusion®
-description: Learn here all about Stacked Headers support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
+title: Stacked Headers in WPF SfDataGrid | Syncfusion®
+description: Stacked Headers in SfDataGrid groups related columns under shared header rows to organize data presentation and improve readability.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Stacked Headers in WPF DataGrid (SfDataGrid)
+# Stacked Headers in WPF SfDataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) supports additional unbound header rows known as `stacked header rows` or  that span across the DataGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.StackedHeaderRows.html). You can group one or more columns under each stacked header.
 

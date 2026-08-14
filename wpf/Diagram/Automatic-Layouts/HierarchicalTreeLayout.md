@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hierarchical tree layout in WPF Diagram control | Syncfusion®
-description: Learn here all about Hierarchical tree layout support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: Hierarchical Tree Layout in WPF SfDiagram | Syncfusion®
+description: Arrange nodes in a hierarchical tree structure in Syncfusion® WPF SfDiagram using parent-child relationships and layout settings.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Hierarchical tree layout in WPF Diagram (SfDiagram)
+# Hierarchical Tree Layout in WPF SfDiagram
 
 The hierarchical tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
 

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Arc segments of connectors | Syncfusion®
-description: How to draw the arc segments and how to edit, and customize the arc segments of connectors in the diagram control.
+title: Arc Segments in WPF SfDiagram | Syncfusion®
+description: Learn about arc connector segments in Syncfusion® WPF SfDiagram control, including creation, editing, control points, and customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Arc Segment of the connectors
+# Arc Segments in WPF SfDiagram
 
 Arc segments are used to create curved lines and the curvature is configurable with end control points.
 
 ## how to create arc segments
 
-To create a arc segment, you should specify the segment as [`ArcSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ArcSegment.html).
+To create an arc segment, you should specify the segment as [`ArcSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ArcSegment.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -67,7 +67,7 @@ Arc segments are annotated with thumbs to represent the control points. Control 
 
 ![control points editing at runtime using arc segment](Connector_images/ArcControlPoint.gif)
 
-## How to customize the arc segemnts
+## How to customize the arc segments
 
 Arc segments can be customized by using below properties of `ArcSegment` class,
 

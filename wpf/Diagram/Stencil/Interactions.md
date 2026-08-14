@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Varies interactions of stencil in WPF Diagram control | Syncfusion®
-description: Learn here all about varies interaction on stencil in Syncfusion® WPF Diagram (SfDiagram) control ports.
+title: Stencil Interactions in WPF SfDiagram | Syncfusion®
+description: Manage stencil interactions in Syncfusion® WPF SfDiagram with symbol selection, drag-and-drop, reordering, duplication, and keyboard support.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Stencil interactions in WPF Diagram (SfDiagram)
+# Stencil interactions in WPF SfDiagram
 
 Stencil symbols can be selected, dragged, and reordered over stencil control.
 
@@ -197,7 +197,7 @@ private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
 
 ## Keyboard Support for Stencil in WPF Diagram
 
-The `Stencil` in WPF Diagram (SfDiagram) provides support for interacting with its elements using keyboard shortcuts. By default, certain built-in commands are bound to specific key combinations to enhance user efficiency. 
+The `Stencil` in WPF SfDiagram provides support for interacting with its elements using keyboard shortcuts. By default, certain built-in commands are bound to specific key combinations to enhance user efficiency. 
 
 The following table illustrates the list of commands along with their associated key gestures:
 

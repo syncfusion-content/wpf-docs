@@ -1,12 +1,12 @@
 ---
 layout: post
-title: TreeViewVirtualization in WPF Wizard Control control | Syncfusion
-description: Learn here all about TreeViewVirtualization support in Syncfusion WPF TreeViewAdv (Classic) control and more.
+title: Virtualization in WPF TreeViewAdv | Syncfusion®
+description: Improve TreeViewAdv (Classic) performance using built-in virtualization modes and support for large hierarchical datasets.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# TreeViewVirtualization in WPF TreeViewAdv (Classic)
+# Virtualization in WPF TreeViewAdv (Classic)
 
 The TreeViewVirtualization feature enables users to reduce the loading time of TreeViewItems regardless of the items count.
 

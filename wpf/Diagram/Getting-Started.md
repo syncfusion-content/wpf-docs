@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Diagram control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Diagram (SfDiagram) control, its elements and more details.
+title: Getting Started with WPF SfDiagram | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF SfDiagram control. Explore setup, diagram elements, flowchart creation, layouts, themes, and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Getting Started with WPF Diagram (SfDiagram)
+# Getting Started with WPF SfDiagram
 
 ## Assembly deployment
 
@@ -517,7 +517,6 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 
 {% tabs %}
 {% highlight xaml %}
-
 <!--Define the Stencil-->
 <stencil:Stencil x:Name="stencil"  ExpandMode="All" 
                  BorderBrush="Black" BorderThickness="0,0,2,0">
@@ -740,7 +739,7 @@ For more information about stencil, please [refer](https://help.syncfusion.com/w
 
 WPF Diagram (SfDiagram) provides support to auto-arrange the nodes in the diagram area that is referred to as a Layout.
 
-#### Business object (employee information)
+### Business object (employee information)
 
 Define employee information as collection of data. The following code example shows the employee information whose, `EmpId` is used as a unique identifier and `ParentId` is used to identify the person to whom an employee reports to, in the organization.
 
@@ -937,4 +936,4 @@ SfDiagram supports various built-in themes. Refer to the links below to apply th
 
 [How to Automate Diagram using WinAppDriver](https://support.syncfusion.com/kb/article/15642/how-to-automate-diagram-using-winappdriver)
 
-[How to get the coordinates of the current viewport in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18032/how-to-get-the-coordinates-of-the-current-viewport-in-wpf-diagram-sfdiagram)
+[How to get the coordinates of the current viewport in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18032/how-to-get-the-coordinates-of-the-current-viewport-in-wpf-diagram-sfdiagram)

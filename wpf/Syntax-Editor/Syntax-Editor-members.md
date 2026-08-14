@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syntax Editor Members in WPF Syntax Editor control | Syncfusion
-description: Learn about Syntax Editor Members support in Syncfusion Essential Studio WPF Syntax Editor (EditControl) control, its elements and more.
+title: Syntax Editor Members in WPF Syntax Editor | Syncfusion®
+description: Syntax Editor members in WPF Syntax Editor provide properties, methods, and events to customize editor behavior and manage code editing functionality.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Syntax Editor Members in WPF Syntax Editor (EditControl)
+# Syntax Editor Members in WPF Syntax Editor
 
 The `EditControl` class provides a rich set of properties, methods, and events that allow you to customize and control its behavior. This section describes the key members available in the `EditControl` class and explains how they can be used in your application.
 

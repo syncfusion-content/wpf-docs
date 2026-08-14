@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in WPF Smith Chart control | Syncfusion
-description: Learn here all about Legend support in Syncfusion WPF Smith Chart (SfSmithChart) control, its elements and more.
+title: Legend in WPF Smith Chart | Syncfusion®
+description: Legend in the WPF Smith Chart identifies series and data categories, helping users understand and interpret chart information clearly.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Legend in WPF Smith Chart (SfSmithChart)
+# Legend in WPF Smith Chart
 
 The legend contains the list of chart series that appear in a Smith chart. It can be defined by using the following code example.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Navigation Drawer control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control, its elements and more details.
+title: Getting Started with WPF NavigationDrawer | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF NavigationDrawer control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started with WPF Navigation Drawer (SfNavigationDrawer)
+# Getting Started with WPF NavigationDrawer (SfNavigationDrawer)
 
 This section helps you to build your application with SfNavigationDrawer.
 

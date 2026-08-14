@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactivity in WPF TreeView control | Syncfusion®
-description: Learn here all about Interactivity support in Syncfusion® WPF TreeView (SfTreeView) control and more.
+title: Interactivity in WPF TreeView | Syncfusion®
+description: Interactivity in SfTreeView supports tap, double-tap, and hold interactions, enabling responsive handling of tree node actions.
 platform: wpf
 control: SfTreeView
 documentation: ug

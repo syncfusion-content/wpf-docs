@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Language Support in WPF Syntax Editor control | Syncfusion
-description: Learn about Custom Language Support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+title: Custom Language Support in WPF Syntax Editor | Syncfusion®
+description: Custom language support in WPF Syntax Editor enables defining and integrating custom languages with syntax highlighting, parsing, and editing features.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -332,7 +332,7 @@ public class PythonLanguage : ProceduralLanguageBase
     IEnumerable<ILexem> commentsCollection = null;
 
     /// <summary>
-    /// Local variable to stor previous block end line.
+    /// Local variable to store previous block end line.
     /// </summary>
     int lastBlockEndLine = 0;
 
@@ -342,7 +342,7 @@ public class PythonLanguage : ProceduralLanguageBase
 
     /// <summary>
     /// Constructor a new instance of the <see
-    /// cref="T:syncfusion.syntaxeditordemos.wpf.PythonLanguage">PythonLanguage</see> class.
+    /// <see cref="T:syncfusion.syntaxeditordemos.wpf.PythonLanguage">PythonLanguage</see> class.
     /// </summary>
     /// <param name="control">represents the EditControl to which to which this instance
     /// has to be hooked</param>

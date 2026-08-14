@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Connector in WPF Diagram control | Syncfusion®
-description: Learn here all about Connector support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Connector in WPF SfDiagram | Syncfusion®
+description: Learn about connectors in Syncfusion® WPF SfDiagram control, including connector types, node connections, ports, drawing tools, and routing.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Connector in WPF Diagram (SfDiagram)
+# Connector in WPF SfDiagram
 
-Connectors are objects used to create link between two points or nodes to indicate the flow of operation or relationships between them.
+Connectors are objects used to create a link between two points or nodes to indicate the flow of operation or relationships between them.
 
 ![WPF Diagram Point to Point Connection](Connector_images/wpf-diagram-point-to-point-connection.PNG)
 
 ## Connector types
 
-Diagram supports to create five types of connectors. They are:
+The diagram supports five connector types. They are:
 
 *   `Line`
 *   `Orthogonal`
@@ -66,6 +66,9 @@ The [DefaultConnectorType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 
+//Initialize ConnectorCollection to SfDiagram
+diagram.Connectors = new ConnectorCollection();
+
 //Define the Connector Type as line
 diagram.DefaultConnectorType = ConnectorType.Line;
 
@@ -86,7 +89,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ### How to draw polyline
 
-Polyline is a continuous line of a segment or a continuous line composed of more line segments. When you click the diagram page, a line will be drawn, and then new segments will be kept on added for every click on page. Line drawing will be stopped when double-click the page. This polyline will be drawn using the [`Tool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool), [`DrawingTool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool), and `DefaultConnectorType` properties.
+Polyline is a continuous line of a segment or a continuous line composed of more line segments. When you click the diagram page, a line will be drawn, and then new segments will be kept on added for every click on page. Line drawing will be stopped when you double-click the page. This polyline will be drawn using the [`Tool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool), [`DrawingTool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool), and `DefaultConnectorType` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -170,6 +173,9 @@ The connector can be created by defining the source and target point of the conn
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 
+//Initialize ConnectorCollection to SfDiagram
+diagram.Connectors = new ConnectorCollection();
+
 //Define the Connector Type
 diagram.DefaultConnectorType = ConnectorType.Line;
 
@@ -228,6 +234,12 @@ The connector can be created between nodes to display the relationship between t
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
+
+//Initialize NodeCollection to SfDiagram
+diagram.Nodes = new NodeCollection();
+
+//Initialize ConnectorCollection to SfDiagram
+diagram.Connectors = new ConnectorCollection();
 
 //creating source node
 NodeViewModel sourcenode = new NodeViewModel()
@@ -333,6 +345,12 @@ The [`SourcePort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
+
+//Initialize NodeCollection to SfDiagram
+diagram.Nodes = new NodeCollection();
+
+//Initialize ConnectorCollection to SfDiagram
+diagram.Connectors = new ConnectorCollection();
 
 //Create source node port
 NodePortViewModel sourcePort = new NodePortViewModel()
@@ -477,15 +495,15 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 [How to prevent the Connector lines from overlapping the Connector's target decorator in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18404/how-to-prevent-the-connector-lines-from-overlapping-the-connectors-target-decorator-in-wpf-diagramsfdiagram)
 
-[How to restrict the Connector's source and target decorator from being positioned in different places in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18413/how-to-restrict-the-connectors-source-and-target-decorator-from-being-positioned-in-different-places-in-wpf-diagram-sfdiagram)
+[How to restrict the Connector's source and target decorator from being positioned in different places in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18413/how-to-restrict-the-connectors-source-and-target-decorator-from-being-positioned-in-different-places-in-wpf-diagram-sfdiagram)
 
 [How to change the source and target ports of the connector at runtime in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18302/how-to-change-the-source-and-target-ports-of-the-connector-at-runtime-in-the-wpf-diagram-sfdiagram)
 
 [How to Fit Selected Nodes and Connectors to the WPF Diagram Window?](https://support.syncfusion.com/kb/article/18062/how-to-fit-selected-nodes-and-connectors-to-the-wpf-diagram-window)
 
-[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)
+[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)
 
-[How to prevent the connector segment from collapsing while dragging a node in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)
+[How to prevent the connector segment from collapsing while dragging a node in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)
 
 [How to Get the Node or Connector in the MouseMove Event in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15646/how-to-get-the-node-or-connector-in-the-mousemove-event-in-the-wpf-diagram-sfdiagram)
 
@@ -493,6 +511,6 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 [How to manage the visibility of node and connector objects in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
 
-[How to change the connector style based on its SourcePort style in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)
+[How to change the connector style based on its SourcePort style in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)
 
 [How to identify the dragging state of connectors in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18846/how-to-identify-the-dragging-state-of-connectors-in-the-wpf-diagram-sfdiagram)

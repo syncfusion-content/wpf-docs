@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ranges in WPF Radial Gauge control | Syncfusion
-description: Learn here all about Ranges support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
+title: Ranges in WPF Radial Gauge | Syncfusion®
+description: Ranges in the WPF Radial Gauge highlight specific value intervals on the gauge scale, helping visualize thresholds, targets, and data groups.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Ranges in WPF Radial Gauge (SfCircularGauge)
+# Ranges in WPF Radial Gauge
 
 Range is a visual element, which begins and ends at the specified values within a scale.
 

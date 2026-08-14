@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual Structure in WPF Wizard Control control | Syncfusion
-description: Learn here all about Visual Structure support in Syncfusion WPF TreeViewAdv (Classic) control and more.
+title: Visual Structure in WPF TreeViewAdv | Syncfusion®
+description: Understand the visual elements of TreeViewAdv (Classic) including nodes, expanders, root lines, and item images.
 platform: wpf
 control: TreeViewAdv
 documentation: ug

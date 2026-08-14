@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Single and multiple selection in WPF Autocomplete | Syncfusion®
-description: Learn here all about Single and multiple selection support in Syncfusion® WPF Autocomplete (SfTextBoxExt) control and more.
+title: Selection Support in WPF AutoComplete | Syncfusion®
+description: Selection support in AutoComplete (SfTextBoxExt) enables choosing single or multiple items from suggestions with configurable selection behavior.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Single and multiple selection in WPF Autocomplete (SfTextBoxExt)
+# Selection in WPF Autocomplete (SfTextBoxExt)
 
 In AutoComplete selection can be performed using single selection or multi-selection. This can be handled by [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property. The default value of `MultiSelectMode` is `None` which performs single selection.
 

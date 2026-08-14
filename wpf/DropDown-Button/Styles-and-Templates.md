@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Styles and Templates in WPF Dropdown Button control | Syncfusion
-description: Learn here all about Styles and Templates support in Syncfusion WPF Dropdown Button (DropDownButtonAdv) control and more.
+title: Styles and Templates in WPF DropDown Button | Syncfusion®
+description: Customize the visual appearance of the DropDownButtonAdv control using styles, templates, Expression Blend, and Visual Studio.
 platform: wpf
 control: DropDownButtonAdv
 documentation: ug

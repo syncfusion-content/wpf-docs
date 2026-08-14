@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF PinnableListBox control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Essential Studio® WPF PinnableListBox control, its elements and more.
-platform: WPF
+title: About Syncfusion WPF PinnableListBox Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF PinnableListBox control, its features and more details.
+platform: wpf
 control: PinnableListBox
 documentation: ug
 ---
 
-# WPF PinnableListBox Overview
+# About Syncfusion WPF PinnableListBox Control
 
 The `PinnableListBox` control allow pinnable support for the ListBox items which includes support for Header, data binding and Blendability support. It provides many customization options to enhance its appearance and to suit an applications.
 

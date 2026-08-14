@@ -1,13 +1,14 @@
 ---
 layout: post
-title: ProceduralLanguageBase Class in WPF Syntax Editor control | Syncfusion
-description: Learn about ProceduralLanguageBase Class support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+title: ProceduralLanguageBase Class in WPF Syntax Editor | Syncfusion®
+description: The ProceduralLanguageBase class in WPF Syntax Editor provides syntax highlighting, code outlining, and IntelliSense support for procedural languages.
+
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# ProceduralLanguageBase Class in WPF Syntax Editor Control
+# ProceduralLanguageBase Class in WPF Syntax Editor
 
 ProceduralLanguageBase class contains syntax highlighting, outlining, and Auto mode IntelliSense implementations for procedural languages. C# and Visual Basic language support have been implemented using ProceduralLanguageBase class.
 

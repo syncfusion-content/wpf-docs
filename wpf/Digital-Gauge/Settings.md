@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Settings in WPF Digital Gauge control | Syncfusion
-description: Learn here all about Settings support in Syncfusion WPF Digital Gauge (SfDigitalGauge) control and more.
+title: Settings in WPF Digital Gauge | Syncfusion®
+description: Settings in the WPF Digital Gauge allow you to configure display behavior, appearance, values, and customization options.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Settings in WPF Digital Gauge (SfDigitalGauge)
+# Settings in WPF Digital Gauge
 
 There are some other elements and behaviors in SfDigitalGauge that can also be customized. 
 

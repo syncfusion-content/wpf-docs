@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Tab Splitter control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Tab Splitter control, its elements and more.
+title: About Syncfusion® WPF TabSplitter Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF TabSplitter control and more details.
 platform: wpf
 control: TabSplitter
 documentation: ug
 ---
 
-# WPF Tab Splitter Overview
+# About Syncfusion® WPF TabSplitter Control
 
 TabSplitter is similar to VS 2008 style Split view of Tabbed Groups.
 

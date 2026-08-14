@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in WPF GridControl | Syncfusion®
-description: Learn about Printing support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Print and preview GridControl content with customizable print settings, page layouts, navigation options, and support for headers and footers.
 platform: wpf
 control: GridControl
 documentation: ug
@@ -13,7 +13,7 @@ Essential<sup>®</sup> Grid for WPF provides an in-built support for printing an
 
 The GridPrintDialog class plays a vital role in the implementation of printing support. It is built based on Microsoft PrintDialog class that will handle the internal operations for GridPrintDialog. The GridPrintDialog class defines the designer for the Print dialog and exposes a number of properties and APIs to handle the UI requirements and define the interaction logic for the Print Dialog. The users can use these properties to configure the Print and Print Preview options.
 
-### Example
+## Example
 
 Enabling the printing feature is like invoking an API – ShowPrintDialog() on the instances of the grid.
 

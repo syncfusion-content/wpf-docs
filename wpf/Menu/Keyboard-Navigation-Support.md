@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keyboard Navigation Support in WPF Menu control | Syncfusion
-description: Learn here all about Keyboard Navigation Support in Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
+title: Keyboard Navigation Support in WPF Menu | Syncfusion®
+description: Keyboard Navigation Support in MenuAdv enables accessing and operating menu items using the keyboard.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -16,7 +16,7 @@ The MenuAdv control supports keyboard navigation, which allows users to select M
 * Esc key - The Esc key can be used to close the submenu.
 * Tab key - The Tab key can be used to navigate to items inside the submenu.
 
-### Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

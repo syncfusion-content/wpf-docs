@@ -1,13 +1,13 @@
 ---
 layout: post
-title: KML Format in WPF Maps control | Syncfusion
-description: Learn here all about KML Format support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: KML Format in WPF Maps | Syncfusion®
+description: KML format in the WPF Maps enables geographic data from KML files to be loaded and visualized for location-based mapping applications.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# KML Format in WPF Maps (SfMap)
+# KML Format in WPF Maps
 
 KML is a file format used for rendering geographical data. It uses a tag-based structure with nested elements and attributes. KML is based on the XML standard, and all tags of a KML file are case-sensitive.
 

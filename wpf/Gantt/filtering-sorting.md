@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering and Sorting in WPF GanttControl | Syncfusion
-description: Learn about Filtering and sorting support in Syncfusion Essential Studio WPF GanttControl, its elements and more details.
+title: Filtering and Sorting in WPF Gantt | Syncfusion
+description: Learn about Filtering and sorting support in Syncfusion WPF Gantt using Excel-like filtering and ascending or descending column sorting.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Filtering and sorting support in GanttControl
+# Filtering and Sorting in WPF Gantt
 `Filtering` is the process of retrieving values from a collection that satisfy specified conditions. In the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html), filtering can be applied through the user interface, allowing users to narrow down the displayed data based on their criteria.
 Additionally, the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) enables sorting of data against one or more columns in either ascending or descending order. When sorting is applied, the rows are rearranged based on the specified sort criteria, providing users with organized and easily navigable data views.
 

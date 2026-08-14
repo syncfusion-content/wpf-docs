@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Spline Chart in WPF Charts control | Syncfusion
-description: Learn here all about Spline Chart support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Spline Chart in WPF Charts | Syncfusion®
+description: Spline series in the WPF Chart display smooth curves between data points, helping visualize trends and patterns in continuous data.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Spline in WPF Charts (SfChart)
+# Spline in WPF Charts
 
 ## Spline Chart
 
