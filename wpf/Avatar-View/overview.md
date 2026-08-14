@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of WPF AvatarView Control | Syncfusion
-description: Learn about the introduction of Syncfusion Essential WPF AvatarView Control (SfAvatarView), its elements, and more.
+title: About Syncfusion® WPF SfAvatarView Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF SfAvatarView control and discover its features, avatar customization options, and more details.
 platform: wpf
 control: AvatarView
 documentation: ug
 ---
 
-# Overview of WPF AvatarView
+# About Syncfusion® WPF SfAvatarView Control
 
 The [WPF AvatarView control](https://www.syncfusion.com/wpf-controls/avatar-view) provides a graphical representation of a user image that allows you to customize the view by adding an image, background color, icon, text, and more.
 

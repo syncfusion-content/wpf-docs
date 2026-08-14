@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF GridControl | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Customize the appearance of GridControl cells using styles, backgrounds, borders, fonts, data formats, and rendering options.
 platform: wpf
 control: GridControl
 documentation: ug

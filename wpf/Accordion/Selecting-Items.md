@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selecting Items in WPF Accordion control | Syncfusion
-description: Learn here all about Selecting Items support in Syncfusion WPF Accordion (SfAccordion) control and more.
+title: Selecting Items in WPF SfAccordion | Syncfusion®
+description: The Selecting Items support in SfAccordion enables users to choose and manage expanded accordion items for an intuitive navigation experience.
 platform: wpf
 control: SfAccordion
 documentation: ug
 ---
 
-# Selecting Items in WPF Accordion (SfAccordion)
+# Selecting Items in WPF SfAccordion
 
 Items can be selected programmatically using the properties [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedIndex), [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItem) and [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItems).
 

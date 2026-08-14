@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Changing Orientation of Taskbar in WPF TaskBar control | Syncfusion
-description: Learn about Changing Orientation of Taskbar support in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
+title: Changing Orientation in WPF TaskBar | Syncfusion®
+description: Changing Orientation in WPF TaskBar allows switching between horizontal and vertical layouts to suit different application designs.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Changing Orientation of Taskbar in WPF TaskBar
+# Changing Orientation in WPF TaskBar
 
 TaskBar control is placed horizontally or vertically by using the [GroupOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_GroupOrientation) property. This is a dependency property, which sets the orientation of the TaskBar.
 

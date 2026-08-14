@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zooming in WPF GridControl | Syncfusion®
-description: Learn about Zooming support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Adjust the zoom level in GridControl to magnify content, view more cells, and improve readability without affecting the grid's actual size.
 platform: wpf
 control: GridControl
 documentation: ug
