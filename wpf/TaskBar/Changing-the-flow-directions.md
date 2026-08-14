@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changing Flow Direction in WPF TaskBar | Syncfusion®
-description: Changing Flow direction in WPF TaskBar controls content arrangement for left-to-right or right-to-left user interface layouts.
+description: Changing Flow Direction in WPF TaskBar enables content arrangement for left-to-right (LTR) and right-to-left (RTL) user interface layouts.
 platform: wpf
 control: TaskBar
 documentation: ug
