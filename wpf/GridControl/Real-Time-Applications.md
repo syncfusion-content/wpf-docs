@@ -3,7 +3,7 @@ layout: post
 title: Real Time Applications in WPF GridControl | Syncfusion®
 description: Build real-time applications with GridControl using high-frequency data updates, virtual mode, and Excel-like user interface capabilities.
 platform: wpf
-control: Grid
+control: GridControl
 documentation: ug
 ---
 

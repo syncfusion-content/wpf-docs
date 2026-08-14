@@ -3,7 +3,7 @@ layout: post
 title: Virtualization in WPF GridControl | Syncfusion®
 description: Improve GridControl performance with virtual mode and virtual cells for on-demand data loading, optimized rendering, and efficient handling of large datasets.
 platform: wpf
-control: Grid Control
+control: GridControl
 documentation: ug
 ---
 
