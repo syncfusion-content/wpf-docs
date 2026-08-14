@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® WPF Grouping Control | Syncfusion®
-description: Learn about overview of Syncfusion® Essential Studio WPF Grouping control, including grouping, filtering, expressions, and data management features.
+description: Learn about overview of Syncfusion® Essential Studio WPF Grouping control, its features and more details.
 platform: wpf
 control: Grouping
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® WPF SfDataPager Control | Syncfusion®
-description: Learn about the overview of Syncfusion® Essential Studio WPF SfDataPager control. Explore features, paging support, data binding, and customization options.
+description: Learn about the overview of Syncfusion® Essential Studio WPF SfDataPager control, its features and more details.
 platform: wpf
 control: SfDataPager
 documentation: ug
