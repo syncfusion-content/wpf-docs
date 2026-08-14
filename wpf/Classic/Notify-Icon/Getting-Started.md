@@ -16,7 +16,7 @@ This section provides you an overview of working with [NotifyIcon](https://www.s
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#notifyicon) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
 Further information on installing the NuGet package can be found in the following link:
-[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages).
+[How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages).
 
 You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the NotifyIcon's dependent assemblies.
 
