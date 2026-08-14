@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Import and Export Support in WPF Gantt control | Syncfusion
-description: Learn about Import and Export Support in Syncfusion WPF Gantt control, its elements and more details.
+title: Import and Export in WPF Gantt | Syncfusion
+description: Learn about Import and Export Support in Syncfusion WPF Gantt and Microsoft Project using XML files and built-in import/export APIs.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Import and Export Support in WPF Gantt
+# Import and Export in WPF Gantt
 
-Essential Gantt allows you to export and import the task details. You can export the task details as XML files and import them again when needed. You can open the exported XML files in MS Project too. The XML file, exported from MS Project can also be opened in Gantt control. You can import and export the details using the provided APIs.
+Essential Gantt allows you to export and import the task details. You can export the task details as XML files and import them again when needed. You can also open the exported XML files in MS Project. The XML file exported from MS Project can also be opened in the Gantt control. You can import and export the details using the provided APIs.
 
 ## Properties
 
@@ -23,13 +23,13 @@ Data Type </th></tr>
 <tr>
 <td>
 {{'[ImportFromXMLCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ImportFromXMLCommand)'| markdownify }}</td><td>
-Command binding used to import the XML file generated from MS Project to populate data’s in Gantt control.</td><td>
+Command binding used to import the XML file generated from MS Project to populate data in the Gantt control.</td><td>
 Command</td><td>
 DelegateCommand</td></tr>
 <tr>
 <td>
 {{'[ExportToXMLCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ExportToXMLCommand)'| markdownify }}</td><td>
-Command binding used to export the XML file generated from Gantt control to populate data’s in MS Project.</td><td>
+Command binding used to export the XML file generated from the Gantt control to populate data in MS Project.</td><td>
 Command</td><td>
 DelegateCommand</td></tr>
 </table>
@@ -64,7 +64,7 @@ bool</td></tr>
 
 ## Importing and Exporting tasks from/to XML
 
-### Using default model (TaskDetails)
+### Using the default model (TaskDetails)
 
 The following code illustrates how to Import and Export Task Details from or to XML.
 
@@ -639,7 +639,7 @@ The following image shows Importing the exported document in MS Project:
 ![Import-and-Export-Support_img2](Import-and-Export-Support_images/Import-and-Export-Support_img2.png)
 
 Exported document opened in MS Project
-{:caption}
+{:.caption}
 
 #### Samples Link
 
@@ -648,7 +648,7 @@ To view samples:
 1. Go to the Syncfusion Essential Studio installed location. 
     Location: Installed Location\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion Control Panel 
 2. Open the Syncfusion Control Panel in the above location (or) Double click on the Syncfusion Control Panel desktop shortcut menu.
-3. Click Run Samples for WPF under User Interface Edition panel .
+3. Click Run Samples for WPF under User Interface Edition panel.
 4. Select Gantt.
 5. Expand the Import Export Features item in the Sample Browser.
 6. Choose the Import Export Demo sample to launch.

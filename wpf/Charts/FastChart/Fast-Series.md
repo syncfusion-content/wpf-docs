@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Fast Series in WPF Charts control | Syncfusion
-description: Learn here all about Fast Series support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Fast Series in WPF Charts | Syncfusion®
+description: Fast Series in the WPF Chart renders large datasets with optimized performance, enabling smooth interaction and efficient data analysis.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Fast Series in WPF Charts (SfChart)
+# Fast Series in WPF Charts
 
 A fast series is a special kind of line chart that can render a collection with a huge number of data points. Fast series is rendered using a polyline segment.
 
 ## Fast Line
 
-The [`FastLineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastLineSeries.html?tabs=tabid-1) is a special kind of line series that can render a collection with a huge number of datapoints. FastLine is rendered using polyline segment. 
+The [`FastLineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastLineSeries.html?tabs=tabid-1) is a special kind of line series that can render a collection with a huge number of data points. FastLine is rendered using a polyline segment.
 
 {% tabs %}
 
@@ -56,7 +56,7 @@ The following line properties are available for FastLineSeries:
 
 ## Fast Stacking Column
 
-[`FastStackingColumnBitmapSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html) similar to StackingColumnSeries except that it loads faster and provides better performance. 
+[`FastStackingColumnBitmapSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html) is similar to StackingColumnSeries except that it loads faster and provides better performance.
 
 {% tabs %}
 

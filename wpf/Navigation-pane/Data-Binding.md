@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Data-Binding in WPF Navigation Pane control | Syncfusion
-description: Learn here all about Data-Binding support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
+title: Data Binding in WPF Navigation Pane | Syncfusion®
+description: Bind business objects and XML data sources to GroupBar items using templates, styles, and data context support.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Data-Binding in WPF Navigation Pane (GroupBar)
+# Data Binding in WPF Navigation Pane (GroupBar)
 
 You can bind the custom object to the DataContext property of the GroupBar control and their corresponding elements can be binded with the children of the GroupBar control. When a DataContext is set to a window or to a GroupBar, it gets inherited to all its logical children. The OnInitialized method will get this DataContext value. As you use this DataContext in the template with DataTriggers, you need to set that property to active host tab or null.
 

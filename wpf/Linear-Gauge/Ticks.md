@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ticks | SfCLinearGauge | Wpf | Syncfusion
-description: Ticks in WPF Linear Gauge are used to indicate the interval value. And able to customize the tick UI with its properties. 
+title: Ticks in WPF Linear Gauge | Syncfusion®
+description: Ticks in the WPF Linear Gauge indicate scale intervals and support customization of size, position, style, and appearance settings.
 platform: wpf
-control: SfCLinearGauge
+control: SfLinearGauge
 documentation: ug
 ---
 
-# Ticks support in WPF Linear Gauge (SfLinearGauge) with customization
+# Ticks in WPF Linear Gauge
 
-Ticks are used to identify the gauge’s data value by marking the gauge scale in regular increments.
+Ticks are used to identify the gauge's data value by marking the gauge scale in regular increments.
 
 ## Tick customization
 

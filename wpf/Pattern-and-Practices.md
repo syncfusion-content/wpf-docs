@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pattern and Practices for Syncfusion Essential WPF controls
-description: Learn here about how to use MVVM Commands, Patterns, and Events of the Syncfusion Essential WPF controls
+description: Learn how to implement MVVM commands, patterns, and event handling techniques with Syncfusion Essential WPF controls.
 platform: wpf
 control: Pattern and Practices
 documentation: ug
@@ -10,9 +10,10 @@ documentation: ug
 
 ## Getting Started with MVVM
 
-Essential<sup>&reg;</sup> WPF controls are suitable for MVVM Pattern. Since, the controls are provided with built-in commands. 
+Essential<sup>&reg;</sup> WPF controls are suitable for the MVVM pattern, as the controls provide built-in commands and support data binding.
 
-The `DataContext` property specifies the default source for Data Binding in MVVM pattern.
+
+The `DataContext` property specifies the default source for data binding in the MVVM pattern.
 
 {% tabs %}
 
@@ -39,17 +40,19 @@ public partial class MainWindow : Window
 
 {% endtabs %}
 
-This section explains how to perform TabControlExt’s `selectionChanged` event by creating a ViewModel and defining a Model collection that is used to bind with the TabControl’s `ItemSource` property.
+
+This section explains how to handle the TabControlExt’s `SelectionChanged` event by creating a ViewModel and defining a Model collection that is used to bind with the TabControlExt’s `ItemsSource` property.
 
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<Syncfusion:TabControlExt ItemsSource="{Binding tabcollection}">
+
+<Syncfusion:TabControlExt ItemsSource="{Binding TabCollection}">
 	<Syncfusion:TabControlExt.ItemTemplate>
 		<DataTemplate>
-			<TextBlock  Text="{Binding HeaderName}"></TextBlock>
+			<TextBlock Text="{Binding HeaderName}" />
 		</DataTemplate>
 	</Syncfusion:TabControlExt.ItemTemplate>
 </Syncfusion:TabControlExt>
@@ -62,59 +65,43 @@ This section explains how to perform TabControlExt’s `selectionChanged` event 
 
 {% highlight C# %}
 
-public class ViewModel:NotificationObject
+
+public class ViewModel : NotificationObject
 {
-	private ObservableCollection<model> _tabcollection;
-	public ObservableCollection<model> tabcollection
+	private ObservableCollection<Model> _tabCollection;
+	public ObservableCollection<Model> TabCollection
 	{
-		get
-		{
-			return _tabcollection;
-		}
-		set
-		{
-			_tabcollection = value;
-		}
+		get { return _tabCollection; }
+		set { _tabCollection = value; }
 	}
-	private void Collection()
+
+	private void PopulateCollection()
 	{
-		model model = new model()
-		{
-			HeaderName = "item1"
-		};
-		model model1 = new model()
-		{
-			HeaderName = "item2"
-		};
-		model model2 = new model()
-		{
-			HeaderName = "item3"
-		};
-		tabcollection.Add(model);
-		tabcollection.Add(model1);
-		tabcollection.Add(model2);
+		var model1 = new Model { HeaderName = "item1" };
+		var model2 = new Model { HeaderName = "item2" };
+		var model3 = new Model { HeaderName = "item3" };
+		TabCollection.Add(model1);
+		TabCollection.Add(model2);
+		TabCollection.Add(model3);
 	}
+
 	public ViewModel()
 	{
-		tabcollection=new ObservableCollection<model>();
-		Collection();
+		TabCollection = new ObservableCollection<Model>();
+		PopulateCollection();
 	}
 }
 
-public class model:NotificationObject
+public class Model : NotificationObject
 {
-	public model() {}
-	private string _headername;
+	private string _headerName;
 	public string HeaderName
 	{
-		get
-		{
-			return _headername;
-		}
+		get { return _headerName; }
 		set
 		{
-			_headername = value;
-			this.RaisePropertyChanged("HeaderName");
+			_headerName = value;
+			this.RaisePropertyChanged(nameof(HeaderName));
 		}
 	}
 }
@@ -123,43 +110,45 @@ public class model:NotificationObject
 
 {% highlight VB %}
 
+
+' VB.NET
 Public Class ViewModel
 	Inherits NotificationObject
-	Private _tabcollection As ObservableCollection(Of model)
-	Public Property tabcollection() As ObservableCollection(Of model)
+	Private _tabCollection As ObservableCollection(Of Model)
+	Public Property TabCollection() As ObservableCollection(Of Model)
 		Get
-			Return _tabcollection
+			Return _tabCollection
 		End Get
-		Set(ByVal value As ObservableCollection(Of model))
-			_tabcollection = value
+		Set(ByVal value As ObservableCollection(Of Model))
+			_tabCollection = value
 		End Set
 	End Property
-	Private Sub Collection()
-		Dim model As New model() With {.HeaderName = "item1"}
-		Dim model1 As New model() With {.HeaderName = "item2"}
-		Dim model2 As New model() With {.HeaderName = "item3"}
-		tabcollection.Add(model)
-		tabcollection.Add(model1)
-		tabcollection.Add(model2)
+
+	Private Sub PopulateCollection()
+		Dim model1 As New Model() With {.HeaderName = "item1"}
+		Dim model2 As New Model() With {.HeaderName = "item2"}
+		Dim model3 As New Model() With {.HeaderName = "item3"}
+		TabCollection.Add(model1)
+		TabCollection.Add(model2)
+		TabCollection.Add(model3)
 	End Sub
+
 	Public Sub New()
-		tabcollection = New ObservableCollection(Of model)()
-		Collection()
+		TabCollection = New ObservableCollection(Of Model)()
+		PopulateCollection()
 	End Sub
 End Class
 
-Public Class model
+Public Class Model
 	Inherits NotificationObject
-	Public Sub New()
-	End Sub
-	Private _headername As String
+	Private _headerName As String
 	Public Property HeaderName() As String
 		Get
-			Return _headername
+			Return _headerName
 		End Get
 		Set(ByVal value As String)
-			_headername = value
-			Me.RaisePropertyChanged("HeaderName")
+			_headerName = value
+			Me.RaisePropertyChanged(NameOf(HeaderName))
 		End Set
 	End Property
 End Class
@@ -168,18 +157,20 @@ End Class
 
 {% endtabs %}
 
-To handle the `SelectionChanged` event of the TabControlExt in ViewModel, use `TabControlExtSelectionChangedCommand` and define a SelectionChanged command using `ICommand`. 
-The `TabControlExtSelectionChangedCommand` command is available in `Syncfusion.Tools.MVVM.WPF` assembly. It also requires `Syncfusion.Shared.MVVM.WPF` as a dependency assembly.  
+
+To handle the `SelectionChanged` event of the TabControlExt in the ViewModel, use the `TabControlExtSelectionChangedCommand` and define a `SelectionChanged` command using `ICommand`.
+The `TabControlExtSelectionChangedCommand` is available in the `Syncfusion.Tools.MVVM.WPF` assembly. It also requires `Syncfusion.Shared.MVVM.WPF` as a dependency assembly.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<Syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
-                          Syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}">
+
+<Syncfusion:TabControlExt ItemsSource="{Binding TabCollection}"
+						  Syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}">
 	<Syncfusion:TabControlExt.ItemTemplate>
 		<DataTemplate>
-			<TextBlock  Text="{Binding HeaderName}"/>
+			<TextBlock Text="{Binding HeaderName}" />
 		</DataTemplate>
 	</Syncfusion:TabControlExt.ItemTemplate>
 </Syncfusion:TabControlExt>
@@ -193,19 +184,19 @@ The `TabControlExtSelectionChangedCommand` command is available in `Syncfusion.T
 
 {% highlight C# %}
 
-private ICommand selectionchanged;
+
+private ICommand selectionChanged;
 public ICommand SelectionChanged
 {
-    get
-	{
-		return selectionchanged;
-	}
+	get { return selectionChanged; }
 }
+
 public ViewModel()
 {
-	selectionchanged = new DelegateCommand<object>(PropertyChangedHandled);
+	selectionChanged = new DelegateCommand<object>(OnSelectionChanged);
 }
-private void PropertyChangedHandled (object obj)
+
+private void OnSelectionChanged(object obj)
 {
 	MessageBox.Show("Command Executed");
 }
@@ -214,18 +205,21 @@ private void PropertyChangedHandled (object obj)
 
 {% highlight VB %}
 
-Private selectionchanged_Renamed As ICommand
+
+Private selectionChanged As ICommand
 Public ReadOnly Property SelectionChanged() As ICommand
 	Get
-		Return selectionchanged_Renamed
+		Return selectionChanged
 	End Get
 End Property
+
 Public Sub New()
-	selectionchanged_Renamed = New DelegateCommand(Of Object)(AddressOf PropertyChangedHandled)
+	selectionChanged = New DelegateCommand(Of Object)(AddressOf OnSelectionChanged)
 End Sub
-Private Sub PropertyChangedHandled(ByVal obj As Object)
+
+Private Sub OnSelectionChanged(ByVal obj As Object)
 	MessageBox.Show("Command Executed")
-End Sub 
+End Sub
 
 {% endhighlight %}
 
@@ -247,8 +241,9 @@ The following section covers how to use commands in code-behind using ViewModel.
 
 {% highlight XAML %}
 
-<Syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
-            Syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"
+
+<Syncfusion:TabControlExt ItemsSource="{Binding TabCollection}"
+			Syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"
 			Syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="SelectedItem Command Parameter">
 
 {% endhighlight %}
@@ -260,7 +255,8 @@ The following section covers how to use commands in code-behind using ViewModel.
 
 {% highlight C# %}
 
-private void PropertyChangedHandled (object obj)
+
+private void OnSelectionChanged(object obj)
 {
 	MessageBox.Show(obj.ToString());
 }
@@ -269,7 +265,8 @@ private void PropertyChangedHandled (object obj)
 
 {% highlight VB %}
 
-Private Sub PropertyChangedHandled(ByVal obj As Object)
+
+Private Sub OnSelectionChanged(ByVal obj As Object)
 	MessageBox.Show(obj.ToString())
 End Sub
 
@@ -288,10 +285,10 @@ Any property can bind with the `CommandParameter` to pass it as command in ViewM
 
 {% highlight XAML %}
 
-<Syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
-            Syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"
-			Syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="{Binding Path=SelectedItem.HeaderName,
-			RelativeSource={RelativeSource Self}}">
+
+<Syncfusion:TabControlExt ItemsSource="{Binding TabCollection}"
+			Syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}"
+			Syncfusion:TabControlExtSelectionChangedCommand.CommandParameter="{Binding Path=SelectedItem.HeaderName, RelativeSource={RelativeSource Self}}">
 
 
 {% endhighlight %}
@@ -302,18 +299,20 @@ Any property can bind with the `CommandParameter` to pass it as command in ViewM
 
 {% highlight C# %}
 
-private void PropertyChangedHandled (object obj)
+
+private void OnSelectionChanged(object obj)
 {
-	MessageBox.Show("SelectedItem" +obj.ToString());
+	MessageBox.Show("SelectedItem: " + obj.ToString());
 }
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Private Sub PropertyChangedHandled(ByVal obj As Object)
-	MessageBox.Show("SelectedItem" & obj.ToString())
-End Sub 
+
+Private Sub OnSelectionChanged(ByVal obj As Object)
+	MessageBox.Show("SelectedItem: " & obj.ToString())
+End Sub
 
 {% endhighlight %}
 

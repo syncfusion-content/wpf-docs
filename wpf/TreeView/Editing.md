@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in WPF TreeView control | Syncfusion®
-description: Learn here all about Editing support in Syncfusion® WPF TreeView (SfTreeView) control, its elements and more.
+title: Editing in WPF TreeView | Syncfusion®
+description: Editing in SfTreeView enables modifying node content with customizable edit triggers, templates, programmatic editing, and events.
 platform: wpf
 control: SfTreeView
 documentation: ug
@@ -9,9 +9,15 @@ documentation: ug
 
 # Editing in WPF TreeView (SfTreeView)
 
-The TreeView provides support for editing and it can be enabled or disabled by using [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode in a node by pressing <kbd>F2</kbd> key and also by single click or double click by setting [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTrigger) property. The editing changes in a node will be committed only when user move to next node or pressing <kbd>Enter</kbd> key.
+The TreeView provides support for editing. Editing can be enabled or disabled by using the [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode on a node by pressing the <kbd>F2</kbd> key, and also by single-click or double-click, by setting the [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTrigger) property. The edit changes for a node are committed only when the user moves to another node or presses the <kbd>Enter</kbd> key.
 
-It is necessary to define [EditTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTemplate) / [EditTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTemplateSelector) for bound mode, to enable editing. For UnboundMode, textbox will be loaded in edit mode by default.
+The `EditTrigger` property accepts the following values:
+
+* `F2` — Press <kbd>F2</kbd> to start editing. This is the default.
+* `Tap` — Single tap or click to start editing.
+* `DoubleTap` — Double tap or double click to start editing.
+
+It is necessary to define an [EditTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTemplate) or [EditTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTemplateSelector) for bound mode, to enable editing. For unbound mode, a `TextBox` is loaded in edit mode by default.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,7 +51,7 @@ sfTreeView.AllowEditing = true;
 
 ## Edit mode
 
-By default, you can move to edit mode by pressing <kbd>F2</kbd> key. TreeView allows you to edit the node in single click(Tap) or double click(DoubleTap) by setting [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTrigger) property.
+By default, you can enter edit mode by pressing the <kbd>F2</kbd> key. The TreeView also allows entering edit mode with a single click (Tap) or a double click (DoubleTap) by setting the [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTrigger) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,7 +74,7 @@ this.sfTreeView.EditTrigger = Syncfusion.UI.Xaml.TreeView.TreeViewEditTrigger.Do
 
 ### Begin the editing
 
-The TreeView allows you to edit the node programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_BeginEdit_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) method.
+The TreeView allows you to start editing a node programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_BeginEdit_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,11 +87,11 @@ private void TreeView_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> [CurrentItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CurrentItem) is set to the node when the BeginEdit is called.
+N> The [CurrentItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CurrentItem) is set to the node when `BeginEdit` is called.
 
 ### End the editing
 
-You can call [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EndEdit_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) method to programmatically end the editing for specific node.
+You can call the [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EndEdit_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) method to programmatically end editing for a specific node.
 
 {% tabs %}
 {% highlight c# %}
@@ -98,13 +104,13 @@ private void TreeView_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Revert the edited changes while pressing Escape key
+## Revert the edited changes while pressing the Escape key
 
-By default, TreeView does not have support for rollback the changes when pressing the <kbd>ESC</kbd> key while editing the TreeView node. But it supports to rollback the changes when an underlying data object implements the [IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
+By default, the TreeView does not support rolling back changes when the <kbd>ESC</kbd> key is pressed while editing a node. It does support rolling back changes when the underlying data object implements the [IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
 
-The user can take a backup of existing data of a node in the [BeginEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_BeginEdit) method and can change the existing data to the current data in the [CancelEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit) method to rollback the changes.
+The user can take a backup of the existing data of a node in the [BeginEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_BeginEdit) method and revert to the previous values in the [CancelEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit) method to roll back the changes.
 
-The below code snippet explains the simple implementation of IEditableObject interface to rollback the changes.
+The following code example shows a simple implementation of the `IEditableObject` interface to roll back the changes.
 
 {% tabs %}
 {% highlight c# %}
@@ -247,4 +253,4 @@ private void TreeView_ItemEndEdit(object sender, TreeViewItemEndEditEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its key feature highlights. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.

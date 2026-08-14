@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Data Marker in WPF SfChart3D control | Syncfusion
-description: Learn about Data Marker support in Syncfusion Essential Studio® WPF SfChart3D control, its elements and more.
+title: Data Marker in WPF 3D Chart | Syncfusion®
+description: Data markers in the WPF 3D Chart highlight individual data points with customizable shapes and styles for improved data visualization.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Data Marker in WPF SfChart3D
+# Data Marker in WPF 3D Chart
 
 Data Marker is used to mark the data points with built-in available shapes.
 
 ## Define Data Marker
 
-To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property as True. By default, there is no symbol displayed, you have to add the desired symbol using Symbol property.
+To enable the marker in adornments, you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property to True. By default, no symbol is displayed; you have to add the desired symbol using the Symbol property.
 
-The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
+The following code example demonstrates the column series with the [`Diamond`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
 
 
 {% tabs %}
@@ -66,13 +66,13 @@ chart.Series.Add(series);
 
 ### Customization of Symbol
 
-SfChart3D provides support more customization for symbol in adornments.
+SfChart3D provides more customization support for symbols in adornments.
 
 * [`SymbolHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolHeight) - used to change the height of the symbol.
 * [`SymbolWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolWidth) - used to change the width of the symbol.
-* [`SymbolInterior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolInterior) - used to change the color of symbol.
-* [`SymbolStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolStroke) - used to change the stroke color of symbol.
-* [`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolTemplate) - used to customize the appearance of symbol.
+* [`SymbolInterior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolInterior) - used to change the color of the symbol.
+* [`SymbolStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolStroke) - used to change the stroke color of the symbol.
+* [`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolTemplate) - used to customize the appearance of the symbol.
 
 The following code example demonstrates the basic customization of symbol size and appearance.
 
@@ -100,7 +100,7 @@ The following code example demonstrates the basic customization of symbol size a
 
 {% highlight c# %}
 
-ColumnSeries series = new ColumnSeries()
+ColumnSeries3D series = new ColumnSeries3D()
 {
     ItemsSource = new CategoryDataViewModel().CategoricalData,
     XBindingPath = "Year",
@@ -128,9 +128,9 @@ chart.Series.Add(series);
 
 ![ Custom Symbol in Adornment](Adornments-Images/SymblBasic.png) 
 
-**Symbol Template**
+### Symbol Template
 
-The following code example demonstrates how to use SymbolTemplate.
+The following code example demonstrates how to use the SymbolTemplate.
 
 {% tabs %}
 

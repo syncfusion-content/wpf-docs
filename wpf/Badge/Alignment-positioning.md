@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Alignment and positioning in WPF Badge control | Syncfusion®
-description: Learn here all about Alignment and positioning support in Syncfusion® WPF Badge (SfBadge) control and more.
+title: Alignment and Positioning in WPF Badge | Syncfusion®
+description: Position and align the Syncfusion WPF Badge control relative to its target using built-in alignment and positioning options.
 platform: wpf
 control: SfBadge
 documentation: ug
 ---
 
-# Alignment and positioning in WPF Badge (SfBadge)
+# Alignment and Positioning in WPF Badge
 
 This section explains the alignment and positioning functionalities available in the WPF [Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control.
 

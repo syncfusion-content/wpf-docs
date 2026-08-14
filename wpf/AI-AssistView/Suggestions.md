@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Suggestions in WPF AI AssistView control | Syncfusion
-description: Learn about the suggestion feature that displays AI-driven suggestions in the bottom right corner of the AI AssistView control.
+title: Suggestions in WPF SfAIAssistView | Syncfusion®
+description: The suggestions feature in WPF SfAIAssistView displays AI-driven recommendations, helping users quickly interact with and refine their prompts.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Suggestions in WPF AI AssistView
+# Suggestions in WPF SfAIAssistView
 
 By using the [Suggestions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_Suggestions) property, the AssistView displays AI-driven suggestions in the bottom right corner, making it easy for users to quickly respond or choose from relevant options.
 
@@ -15,22 +15,24 @@ By using the [Suggestions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 
 {% highlight xaml %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
+    xmlns:local="clr-namespace:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
+    mc:Ignorable="d">
     <Grid>
-      <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"
+        <Grid.DataContext>
+            <local:ViewModel/>
+        </Grid.DataContext>
+        <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"
                                    Suggestions="{Binding Suggestion}" 
                                    Messages="{Binding Chats}"/>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %} 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pie and Doughnut Chart in WPF Charts control | Syncfusion
-description: Learn here all about Pie and Doughnut Chart support in Syncfusion® WPF Charts (SfChart) control and more.
+title: Pie and Doughnut Chart in WPF Charts | Syncfusion®
+description: Pie and doughnut series in the WPF Chart display proportional data as segments, enabling comparison of parts within a whole.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Pie and Doughnut in WPF Charts (SfChart)
+# Pie and Doughnut in WPF Charts
 
 ## Pie Chart
 
@@ -488,7 +488,7 @@ You can add any content to the center of the doughnut chart using the [`CenterVi
 {% highlight xaml %}
 
 <chart:SfChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:DoughnutSeries 
         XBindingPath="Category" 
         YBindingPath="Expenditure" 
@@ -540,7 +540,7 @@ The following properties are used to explode the individual segments in Pie and 
 * [`ExplodeRadius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ExplodeRadius) - Used to define the explode distance.
 * [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeOnMouseClick) -Used to explode the segment when segment is clicked.
 
-**Explode** **Index**
+**Explode Index**
 
 {% tabs %}
 
@@ -578,7 +578,7 @@ chart.Series.Add(series);
 
 N> We have defined ExplodeRadius as 30, by default its value is zero. So you need to define explode, when you set ExplodeIndex or ExplodeAll.
 
-**Explode** **All**
+**Explode All**
 
 {% tabs %}
 
@@ -617,4 +617,10 @@ N> You can refer to our [WPF Doughnut Chart](https://www.syncfusion.com/wpf-cont
 
 ## See also
 
-[`How to create Pie Chart in C# WPF?`](https://www.syncfusion.com/kb/10789/how-to-create-pie-chart-in-c-wpf)
+* [`How to show adornment labels for grouped values in WPF Circular Chart`](https://support.syncfusion.com/kb/article/21684/how-to-show-adornment-labels-for-grouped-values-in-wpf-circular-chart)
+* [`How to deselect a chart segment by using code behind in WPF Chart`](https://support.syncfusion.com/kb/article/5119/how-to-deselect-a-chart-segment-by-using-code-behind-in-wpf-chart)
+* [`How to view corner segments without cutting in edge of WPF Chart`](https://support.syncfusion.com/kb/article/9372/how-to-view-corner-segments-without-cutting-in-edge-of-wpf-chart)
+* [`How to customize the space between segments in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/5110/how-to-customize-the-space-between-segments-in-wpf-chart-sfchart)
+* [`How to display the labels inside segments in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/2773/how-to-display-the-labels-inside-segments-in-wpf-chart-sfchart)
+* [`How to show tooltip when segment is underneath axis line of WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/4467/how-to-show-tooltip-when-segment-is-underneath-axis-line-of-wpf-chart-sfchart)
+* [`How to create pie chart example in C# WPF`](https://support.syncfusion.com/kb/article/9435/how-to-create-pie-chart-example-in-c-wpf)

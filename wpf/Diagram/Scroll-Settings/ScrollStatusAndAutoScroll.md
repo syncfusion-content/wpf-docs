@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scroll-Settings in WPF Diagram control | Syncfusion®
-description: Learn here all about Scroll-Settings support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: Scroll Settings in WPF SfDiagram | Syncfusion®
+description: Manage scrolling in Syncfusion® WPF SfDiagram with scroll status tracking, viewport updates, autoscroll behavior, and border customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Scroll-Settings in WPF Diagram (SfDiagram)
+# Scroll Settings in WPF SfDiagram
 
 The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, mouse wheel can be used to scroll the diagram. Diagram’s scroll settings allows you to read the current scroll status, view port size, current zoom, and zoom factor values.
 
@@ -106,4 +106,4 @@ Find the [Scroll Settings sample](https://github.com/SyncfusionExamples/WPF-Diag
 
 [How to restrict diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)
 
-[How to bring the specific node to the center or viewport in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/9918/how-to-bring-the-specific-node-to-the-center-or-viewport-in-wpf-diagram-sfdiagram)
+[How to bring the specific node to the center or viewport in WPF SfDiagram?](https://support.syncfusion.com/kb/article/9918/how-to-bring-the-specific-node-to-the-center-or-viewport-in-wpf-diagram-sfdiagram)

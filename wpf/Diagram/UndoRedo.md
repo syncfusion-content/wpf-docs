@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Undo and Redo in WPF Diagram control | Syncfusion®
-description: Learn here all about Undo and Redo support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Undo and Redo in WPF SfDiagram | Syncfusion®
+description: Reverse or restore diagram changes in Syncfusion® WPF SfDiagram using undo and redo for editing operations.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Undo and Redo in WPF Diagram (SfDiagram)
+# Undo and Redo in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
 
 ## Undo and Redo actions
 
@@ -516,4 +516,4 @@ private void Diagram_NodeChangedEvent(object sender, ChangeEventArgs<object, Nod
 
 [How to enable Undo/Redo feature for Diagram?](https://support.syncfusion.com/kb/article/11090/how-to-enable-undo-redo-feature-in-wpf-diagram-sfdiagram)
 
-[How to enable undo or redo in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/5471/how-to-enable-undo-or-redo-in-wpf-diagram-sfdiagram)
+[How to enable undo or redo in WPF SfDiagram?](https://support.syncfusion.com/kb/article/5471/how-to-enable-undo-or-redo-in-wpf-diagram-sfdiagram)

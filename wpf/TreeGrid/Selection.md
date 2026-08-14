@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Selection in WPF TreeGrid control | Syncfusion®
 description: Learn here all about Selection support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
@@ -991,7 +991,7 @@ You can customize the cell selection by editing the control template of the corr
                             BorderThickness="0.5"
                             IsHitTestVisible="False"
                             Visibility="Collapsed"/>
-                    <!—Adding new border to show inner border to the CurrentCellBorder -->
+                    <!--Adding new border to show inner border to the CurrentCellBorder -->
                     <Border x:Name="PART_InnerCurrentCellBorder"
                             Margin="2,2,3,3"
                             Background="Transparent"
@@ -1320,4 +1320,4 @@ private void TreeGrid_Loaded(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.

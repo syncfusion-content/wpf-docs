@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance in WPF Radial Slider control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion WPF Radial Slider (SfRadialSlider) control and more.
+title: Appearance in WPF RadialSlider | Syncfusion®
+description: Customize the appearance of the WPF RadialSlider using foreground, background, flow direction, and theme settings.
 platform: wpf
 control: SfRadialSlider
 documentation: ug
@@ -85,4 +85,4 @@ SfRadialSlider supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfRadialSlider](GettingStarted_images/Theme.png)
+  ![Setting theme to WPF SfRadialSlider](getting-started_images/wpf-radial-slider-theme-setting.png)

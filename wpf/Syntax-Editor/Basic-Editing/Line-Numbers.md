@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Line Numbers in WPF Syntax Editor control | Syncfusion
-description: Learn about Line Numbers support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
+title: Line Numbers in WPF Syntax Editor | Syncfusion®
+description: Line numbers in WPF Syntax Editor display the numbering for each line of code, helping developers navigate, reference, and manage code efficiently.
 platform: wpf
 control: Syntax Editor
 documentation: ug

@@ -577,7 +577,7 @@ this.treeGrid.Columns.Clear();
 {% endhighlight %}
 {% endtabs %}
 
-You can remove a column using Remove and RemoveAt methods.
+You can remove a column using the `Remove` and `RemoveAt` methods.
 
 {% tabs %}
 {% highlight c# %}

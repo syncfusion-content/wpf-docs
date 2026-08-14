@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with WPF Sparkline control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Sparkline (SfSparkline) control, its elements and more.
+title: Getting Started with WPF Sparkline control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Sparkline control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Getting Started with WPF Sparkline (SfSparkline)
+# Getting Started with WPF Sparkline
 
-## Creating sparkline
+## Creating a Sparkline
 
-Following steps explain how to create sparkline,
+The following steps explain how to create a sparkline.
 
-### Adding the assembly reference:
+### Adding the assembly reference
 
 * Open the [Add Reference](https://www.microsoft.com/en-us/download/details.aspx?id=55984) window from your project.
 * Choose Assemblies -> Extensions -> Syncfusion.SfChart.WPF
@@ -35,11 +35,11 @@ using Syncfusion.UI.Xaml.Charts;
 
 {% endtabs %}
 
-N> This window differs for the Visual Basic project.
+N> The Add Reference window differs for Visual Basic projects.
 
 ### Initialize the sparkline
 
-You need to initialize the sparkline represented by the following class Syncfusion.UI.Xaml.Charts.SfChart,
+You need to initialize the sparkline represented by the `SfLineSparkline` class (`Syncfusion.UI.Xaml.Charts.SfLineSparkline`).
 
 {% tabs %}
 
@@ -53,13 +53,13 @@ You need to initialize the sparkline represented by the following class Syncfusi
 
 {% highlight c# %}
 
-SfLineSparkline sparkline = new SfLineSparkline()
+SfLineSparkline sparkline = new SfLineSparkline();
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Create a Sample Data Source
+### Create a sample data source
 
 Since the above step will produce only an empty sparkline, we need to add some data to the sparkline for plotting. In this step, let’s create a sample data source.
 
@@ -79,22 +79,22 @@ public class UsersViewModel
         this.UsersList = new ObservableCollection<UserProfile>();
         DateTime date = DateTime.Today;
         UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });
-        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 5000 });
-        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = -3000 });
-        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = -4000 });
-        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 2000 });
-        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(1), NoOfUsers = 5000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(1.5), NoOfUsers = -3000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(2), NoOfUsers = -4000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(2.5), NoOfUsers = 2000 });
+        UsersList.Add(new UserProfile { TimeStamp = date.AddHours(3), NoOfUsers = 3000 });
     }
 }
 
 {% endhighlight  %}
 
-N> Syncfusion sparkline also supports items source as collection of double values and collection inherited from IEnumerable.
+N> Syncfusion Sparkline also supports an ItemsSource as a collection of double values and any collection inherited from IEnumerable.
 
 
-### Binding Data to sparkline
+### Binding data to the sparkline
 
-We need to add the above UsersViewModel to the DataContext of the sparkline, bind the data source to the ItemsSource property of the SfLineSparkline, and then map the data using YBindingPath and XBindingPath.
+We need to add the above `UsersViewModel` to the `DataContext` of the sparkline, bind the data source to the `ItemsSource` property of the `SfLineSparkline`, and then map the data using `YBindingPath` and `XBindingPath`.
 
 {% tabs %}
 
@@ -106,6 +106,7 @@ We need to add the above UsersViewModel to the DataContext of the sparkline, bin
 
 <Syncfusion:SfLineSparkline
     ItemsSource="{Binding UsersList}"
+    XBindingPath="TimeStamp"
     YBindingPath="NoOfUsers">
 </Syncfusion:SfLineSparkline>
 
@@ -115,7 +116,8 @@ We need to add the above UsersViewModel to the DataContext of the sparkline, bin
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-  ItemsSource = new SparkViewModel().UsersList,
+  ItemsSource = new UsersViewModel().UsersList,
+  XBindingPath = "TimeStamp",
   YBindingPath = "NoOfUsers"
 };
 
@@ -123,21 +125,20 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-N> if we do not map the XBindingPath means sparkline data positioned as indexed.
+N> If `XBindingPath` is not mapped, the sparkline data is positioned as indexed.
 
-The following illustrates the result of the above code sample,
+The following illustrates the result of the above code sample:
 
-![Binding Data to WPF sparkline](Getting-started_images/Getting-started_img1.png)
+![Binding data to WPF Sparkline](Getting-started_images/Getting-started_img1.png)
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-WPF-Sparkline).
 
 ## Theme
 
-SfSparkline supports various built-in themes. Refer to the below links to apply themes for the SfSparkline,
+SfSparkline supports various built-in themes. Refer to the following links to apply themes to SfSparkline:
 
-  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
-  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+* [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+* [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to wpf document container](Getting-started_images/Theme.png)
+![Setting theme to WPF Sparkline](Getting-started_images/Theme.png)
    

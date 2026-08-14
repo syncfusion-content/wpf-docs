@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ranges| Linear Gauge | WPF | Syncfusion
-description: Ranges in WPF Linear Gauge are used to specify or group the scale values. It specifies a start value and end value in the LinearGauge within a scale.
+title: Ranges in WPF Linear Gauge | Syncfusion®
+description: Ranges in the WPF Linear Gauge highlight specific value intervals on the scale, helping visualize thresholds, targets, and data groups.
 platform: wpf
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Ranges support in WPF Linear Gauge (SfLinearGauge)
+# Ranges in WPF Linear Gauge
 
-Range is a visual element, which begins and ends at specified values within a scale. You can add any number of ranges to a scale using the array of range objects.
+A range is a visual element, which begins and ends at specified values within a scale. You can add any number of ranges to a scale using the array of range objects.
 
 ## Setting start and end values for range
 
@@ -89,7 +89,7 @@ The start and end values of ranges are set using the [`StartValue`](https://help
 
 ## Range customization
 
-The UI element of a range is customized by changing the [`RangeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html#Syncfusion_UI_Xaml_Gauges_LinearRange_RangeStroke) of the linear range, and the appearance of linear range is customized by setting the [`StartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html#Syncfusion_UI_Xaml_Gauges_LinearRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html#Syncfusion_UI_Xaml_Gauges_LinearRange_EndWidth) properties. By setting the [`RangeOpacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html#Syncfusion_UI_Xaml_Gauges_LinearRange_RangeOpacity) of LinearRange, the opacity of the range can be modified.
+The UI element of a range is customized by changing the [`RangeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html#Syncfusion_UI_Xaml_Gauges_LinearRange_RangeStroke) of the linear range, and the appearance of the linear range is customized by setting the [`StartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html#Syncfusion_UI_Xaml_Gauges_LinearRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html#Syncfusion_UI_Xaml_Gauges_LinearRange_EndWidth) properties. By setting the [`RangeOpacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html#Syncfusion_UI_Xaml_Gauges_LinearRange_RangeOpacity) of the LinearRange, the opacity of the range can be modified.
 
 {% tabs %}
 
@@ -165,7 +165,7 @@ The UI element of a range is customized by changing the [`RangeStroke`](https://
 
 ## Binding range stroke to ticks and labels
 
-You can bind the range’s stroke to tick lines and labels within its range by setting the [`BindWithRangeStrokeToLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_BindRangeStrokeToLabels). Stroke of the labels can be set related to stroke of the specified ranges. Similarly, by setting the [`BindWithRangeStrokeToTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_BindRangeStrokeToTicks), stroke of the ticks can be set related to stroke of the specified ranges.
+You can bind the range's stroke to tick lines and labels within its range by setting the [`BindRangeStrokeToLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_BindRangeStrokeToLabels). The stroke of the labels can be set related to the stroke of the specified ranges. Similarly, by setting the [`BindRangeStrokeToTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_BindRangeStrokeToTicks), the stroke of the ticks can be set related to the stroke of the specified ranges.
 
 {% tabs %}
 
@@ -287,7 +287,7 @@ You can bind the range’s stroke to tick lines and labels within its range by s
 
 ## Setting range position
 
-The range can be placed above or below the scale by one of the following ways:
+The range can be placed above or below the scale in one of the following ways:
 
 ### Setting range offset for linear range
 
@@ -371,7 +371,7 @@ Using the [`RangeOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 The range can be placed above or below the scale by choosing one of the following options available in the [`RangePosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_RangePosition) property:
 
-1. Above(Default)
+1. Above (Default)
 2. Below
 
 {% capture codesnippet1 %}
@@ -451,7 +451,7 @@ The range can be placed above or below the scale by choosing one of the followin
 
 ### Adding multiple ranges
 
-You can add “n” number of ranges to a scale using the `LinearRange` property of range as shown in the following code.
+You can add any number of ranges to a scale using the `LinearRange` property of the range as shown in the following code.
 
 {% tabs %}
 

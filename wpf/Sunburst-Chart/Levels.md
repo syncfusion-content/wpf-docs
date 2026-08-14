@@ -1,19 +1,19 @@
 ---
 
 layout: post
-title: Levels in WPF Sunburst Chart control | Syncfusion
-description: Learn here all about Levels support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
+title: Levels in WPF Sunburst Chart control | Syncfusion®
+description: Levels in the WPF Sunburst Chart define hierarchical data groups, enabling structured visualization and navigation across categories.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Levels in WPF Sunburst Chart (SfSunburstChart)
+# Levels in WPF Sunburst Chart
 
-Sunburst chart is used to display hierarchical data. You can add more than one hierarchical data in [`Levels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Levels) collection of Sunburst chart. Each level of the hierarchy is represented by circle. 
+The Sunburst Chart is used to display hierarchical data. You can add more than one hierarchical data in the [`Levels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Levels) collection of the Sunburst Chart. Each level of the hierarchy is represented by a circle.
 
-The following code shows how to add the hierarchical level in Levels collection.
+The following code shows how to add the hierarchical level in the Levels collection:
 
 {% tabs %}
 
@@ -37,9 +37,9 @@ sunburstChart.Levels.Add(level);
 
 ## GroupMemberPath
 
-It is the string property used to map the group category value in sunburst ItemsSource.
+It is the string property used to map the group category value in the sunburst ItemsSource.
 
-You can define the Levels as shown in the code sample.
+You can define the Levels as shown in the below code sample:
 
 {% tabs %}
 
@@ -56,13 +56,13 @@ You can define the Levels as shown in the code sample.
 {% highlight c# %}
 
 SunburstHierarchicalLevel level1 = new SunburstHierarchicalLevel();
-level1.GroupMemberPath = "Level_1";
+level1.GroupMemberPath = "Level1";
 
 SunburstHierarchicalLevel level2 = new SunburstHierarchicalLevel();
-level2.GroupMemberPath = "Level_2";
+level2.GroupMemberPath = "Level2";
 
 SunburstHierarchicalLevel level3 = new SunburstHierarchicalLevel();
-level3.GroupMemberPath = "Level_3";
+level3.GroupMemberPath = "Level3";
 
 sunburstChart.Levels.Add(level1);
 sunburstChart.Levels.Add(level2);

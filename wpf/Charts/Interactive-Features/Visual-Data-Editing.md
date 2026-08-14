@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual Data Editing in WPF Charts control | Syncfusion
-description: Learn here all about Visual Data Editing support in Syncfusion® WPF Charts (SfChart) control and more.
+title: Visual Data Editing in WPF Charts | Syncfusion
+description: Visual data editing in the WPF Chart allows users to modify data points directly within the chart for interactive data updates.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Visual Data Editing in WPF Charts (SfChart)
+# Visual Data Editing in WPF Charts
 
 SfChart has a feature that allows you to edit an entire series or a single data point at run time by dragging the single point or the series as a whole.
 
@@ -335,7 +335,7 @@ series.DragTooltipStyle = new ChartDragTooltipStyle()
 
 ![Customizing tooltip while dragging in WPF Chart](Interactive-Features_images/Interactive-Features_img56.jpg)
 
-**Rounding** **Off** **the** **Dragged** **Value**
+**Rounding Off** **the Dragged** **Value**
 
 To round off the dragged values, you have to set the [`SnapToPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_SnapToPoint) and [`RoundToDecimal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_RoundToDecimal) properties. The following code snippet explains rounding the dragged y value to 2 decimal digits.
 
@@ -378,7 +378,7 @@ chart.Series.Add(series);
 
 ### Updating the Dragged Values to the Source
 
-When dragging the series or segment at run time, to update the underlying data based on the values you have to set the [`UpdateSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_UpdateSource) property to true as in the following code snippet.
+When dragging the series or segment at run time, to update the underlying data based on the values you have to set the [`UpdateSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_UpdateSource) property to `true` as in the following code snippet.
 
 {% tabs %}
 

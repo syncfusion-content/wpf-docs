@@ -1,15 +1,15 @@
 ---
 layout: post
-title: ReadOnly Properties in WPF PropertyGrid control | Syncfusion
-description: Learn about ReadOnly Properties support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: ReadOnly Support in WPF PropertyGrid | Syncfusion®
+description: ReadOnly Support in PropertyGrid enables displaying non-editable properties using attributes or runtime customization while preserving visibility.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# ReadOnly Properties in WPF PropertyGrid
+# ReadOnly Attribute in WPF PropertyGrid
 
-We can display the readonly properties with its value editor in the non editable state by default. If we want to change any property as readonly, it can be achieved by attributes and event in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid).
+We can display the readonly properties with their value editor in the non-editable state by default. If we want to change any property as readonly, it can be achieved by attributes and event in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid).
 
 ## ReadOnly properties using attributes
 
@@ -35,12 +35,12 @@ public class ViewModel {
             Name = "John",
             ID = "381",
             DOB = new DateTime(1995, 12, 24),
-            Experience = 5;
+            Experience = 5
         };
     }
 }
 
-{% endhighlight %} 
+{% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
@@ -102,13 +102,13 @@ public class ViewModel {
             Name = "John",
             ID = "381",
             DOB = new DateTime(1995, 12, 24),
-            Experience = 5;
+            Experience = 5
         };
     }
 }
 
-{% endhighlight %} 
-{% endtabs %} 
+{% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight xaml %}
@@ -147,6 +147,6 @@ private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGen
 
 ![DOB is not editable in PropertyGrid](Attribute-Images\ReadOnly-Editable-Attribute.png)
 
-Here, the `DOB` property non-editable.
+Here, the `DOB` property is non-editable.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the `ReadOnly` support using `AutoGeneratingPropertyGridItem` event.

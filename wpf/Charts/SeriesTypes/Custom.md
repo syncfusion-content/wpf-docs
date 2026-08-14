@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Chart in WPF Charts control | Syncfusion
-description: Learn here all about Custom Chart support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Custom Chart in WPF Charts | Syncfusion®
+description: Custom charts in the WPF Chart allow you to create tailored chart visualizations by extending and customizing chart behavior and rendering.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Custom Charts in WPF (SfChart)
+# Custom Charts in WPF
 
 [`CustomTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_CustomTemplate) property is used to customize the chart series. It supports the following series
 
@@ -27,10 +27,10 @@ documentation: ug
 
 The respective segment of each series will be your DataTemplate context, which contains the following properties in common. This will be used to plot the custom shapes for the series.
 
-* [`XData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSegment.html#Syncfusion_UI_Xaml_Charts_ColumnSegment_XData)-Returns the actual X value of the segment.
-* [`YData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSegment.html#Syncfusion_UI_Xaml_Charts_ColumnSegment_YData)-Returns the actual Y value of the segment.
-* [`Item`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item)-Returns the underlying model object of the segment.
-* [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Interior)-Returns the brush color of the segment.
+* [`XData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSegment.html#Syncfusion_UI_Xaml_Charts_ColumnSegment_XData) -Returns the actual X value of the segment.
+* [`YData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSegment.html#Syncfusion_UI_Xaml_Charts_ColumnSegment_YData) -Returns the actual Y value of the segment.
+* [`Item`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item) -Returns the underlying model object of the segment.
+* [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Interior) -Returns the brush color of the segment.
 
 The following code example illustrates the use of [`CustomTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_CustomTemplate) property:
 
@@ -101,5 +101,5 @@ The BarSeries, BubbleSeries, ColumnSeries, LineSeries, ScatterSeries and StepLin
 
 ## See also
 
-[`How to customize the default shape of any series with the required shapes?`](https://www.syncfusion.com/kb/3853/how-to-customize-the-default-shape-of-any-series-with-the-required-shapes)
-[`How to create the Tornado Chart in WPF Charts?`](https://www.syncfusion.com/kb/11657/how-to-create-the-tornado-chart-in-wpf-charts)
+* [`How to customize the default shape in WPF Chart`](https://support.syncfusion.com/kb/article/3773/how-to-customize-the-default-shape-in-wpf-chart)
+* [`How to create a Tornado Chart using WPF SfCharts`](https://support.syncfusion.com/kb/article/10210/how-to-create-a-tornado-chart-using-wpf-sfcharts)

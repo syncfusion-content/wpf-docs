@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Range Adorner in WPF Double TextBox control | Syncfusion®
-description: Learn about Range Adorner support in Syncfusion® WPF Double TextBox control, its elements and more details.
-platform: WPF
+title: Range Adorner in WPF Double TextBox | Syncfusion®
+description: Visualize the current value within a range using the built-in range adorner of the Syncfusion WPF Double TextBox control.
+platform: wpf
 control: DoubleTextBox 
 documentation: ug
 ---

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Theme for diagram element | Syncfusion.
-description: How to apply theme for diagramming elements such as Nodes, Connectors, Annotations, and Theme properties to create custom Diagram theme
+title: Themes in WPF SfDiagram | Syncfusion
+description: Apply built-in themes and variant styles in Syncfusion® WPF SfDiagram to customize the appearance of nodes, connectors, and annotations.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Themes with WPF Diagram (SfDiagram)
+# Themes in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) themes are predefined sets of diagram item styles that can be applied easily to the diagram elements. In Diagram, nearly 20 Built-In themes are available. DiagramTheme has NodeStyles, ConnectorStyles, and Theme properties that can be used to create custom Diagram theme.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) themes are predefined sets of diagram item styles that can be applied easily to the diagram elements. In Diagram, nearly 20 Built-In themes are available. DiagramTheme has NodeStyles, ConnectorStyles, and Theme properties that can be used to create custom Diagram theme.
 
 To know more about DiagramTheme properties, refer to the [DiagramTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.DiagramTheme.html).
 

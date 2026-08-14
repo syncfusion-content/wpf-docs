@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Axis in WPF SfChart3D control | Syncfusion
-description: Learn about Axis support in Syncfusion Essential Studio® WPF SfChart3D control, its elements and more.
+title: Axis in WPF 3D Chart | Syncfusion®
+description: Axis in the WPF 3D Chart defines data scales, ranges, labels, and intervals to organize and present chart data effectively.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Axis in WPF SfChart3D
+# Axis in WPF 3D Chart
 
 [`ChartAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis and a horizontal (X) axis. 
 
-* [`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_PrimaryAxis) – Gets or sets the horizontal x axis for the chart.
-* [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_SecondaryAxis) – Gets or sets the vertical y axis for the chart.
+* [`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_PrimaryAxis) – Gets or sets the horizontal x-axis for the chart.
+* [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_SecondaryAxis) – Gets or sets the vertical y-axis for the chart.
 
-Additionally, SfChart3D have horizontal (z) Axis called Depth Axis.
+Additionally, SfChart3D has a horizontal (z) axis called the Depth Axis.
 
 * [`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis) - Gets or sets the horizontal z axis for the chart.
 
@@ -94,7 +94,7 @@ SfChart3D Chart3D = new SfChart3D()
 
 ### DateTime Axis
 
-[`DateTimeAxis3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis3D.html#) is used to plot DateTime values and  it is widely used to make financial charts in places like the Stock Market, where index plotting is done every day.
+[`DateTimeAxis3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis3D.html#) is used to plot DateTime values and it is widely used to make financial charts in places like the Stock Market, where index plotting is done every day.
 
 {% tabs %}
 
@@ -142,7 +142,7 @@ SfChart3D Chart3D = new SfChart3D()
 SfChart3D Chart3D = new SfChart3D()
 {
     SecondaryAxis = new LogarithmicAxis3D()
-}
+};
 
 {% endhighlight %}
 
@@ -150,7 +150,7 @@ SfChart3D Chart3D = new SfChart3D()
 
 ### TimeSpan Axis
 
-[`TimeSpanAxis3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TimeSpanAxis3D.html#) is used to plot the time span values in the PrimaryAxis. TimeSpanAxis has the advantage of plotting data with milliseconds difference. The limitation of TimeSpanAxis is that it can only accept timespan values (hh:mm:ss) and date time values are not accepted.
+[`TimeSpanAxis3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TimeSpanAxis3D.html#) is used to plot the time span values in the PrimaryAxis. TimeSpanAxis has the advantage of plotting data with millisecond differences. The limitation of TimeSpanAxis is that it can only accept timespan values (hh:mm:ss) and date time values are not accepted.
 
 {% tabs %}
 
@@ -178,9 +178,9 @@ SfChart3D Chart3D = new SfChart3D()
 
 ## Depth Axis
 
-[`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis) helps us to plot chart data based on X, Y and Z Co – ordinates. This feature is supported in [`Line`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html), [`Column`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html), [`Bar`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries3D.html), [`StackingColumnSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumnSeries3D.html), [`StackingBarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingBarSeries3D.html) and [`Scatter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries3D.html) series. 
+[`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis) helps you to plot chart data based on X, Y and Z Co-ordinates. This feature is supported in [`Line`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html), [`Column`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html), [`Bar`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries3D.html), [`StackingColumnSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumnSeries3D.html), [`StackingBarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingBarSeries3D.html) and [`Scatter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries3D.html) series. 
 
-The depth axis is implemented by defining the required axis type to the [`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis) property of the [`SfChart3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html) and by mapping the  Z data points to the series using the [`ZBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyzDataSeries3D.html#Syncfusion_UI_Xaml_Charts_XyzDataSeries3D_ZBindingPath) of the series. When [`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis) is not defined, by default it is created based on the [`ZBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyzDataSeries3D.html#Syncfusion_UI_Xaml_Charts_XyzDataSeries3D_ZBindingPath) data type.
+The depth axis is implemented by defining the required axis type to the [`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis) property of the [`SfChart3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html) and by mapping the Z data points to the series using the [`ZBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyzDataSeries3D.html#Syncfusion_UI_Xaml_Charts_XyzDataSeries3D_ZBindingPath) of the series. When [`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis) is not defined, by default it is created based on the [`ZBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyzDataSeries3D.html#Syncfusion_UI_Xaml_Charts_XyzDataSeries3D_ZBindingPath) data type.
 
 The following code example illustrates how to create Depth Axis.
 
@@ -240,7 +240,7 @@ this.Content = chart;
 
 ## 3D Manhattan Chart
 
-In this type of chart, multiple series can be plotted in [`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis). To enable Manhattan chart add the required number of series and define the [`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis). The Manhattan axis is of type category with the axis labels mapped to the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of the series. If the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of the series is not defined, the labels are displayed as Series1, Series2 and so on.
+In this type of chart, multiple series can be plotted in the [`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis). To enable Manhattan chart, add the required number of series and define the [`DepthAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_DepthAxis). The Manhattan axis is of type category, with the axis labels mapped to the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of the series. If the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of the series is not defined, the labels are displayed as Series1, Series2 and so on.
 
 {% tabs %}
 
@@ -314,4 +314,4 @@ this.Content = chart;
 
 ![Manhattan support in WPF 3D Chart](3D-Charts_images/Axis/Manhattan_Chart.png)
 
-The sample with Manhattan chart can be downloaded from the [link](https://github.com/SyncfusionExamples/3D-Chart-with-DepthAxis-Z-Axis-).
+The Manhattan chart sample can be downloaded from this [link](https://github.com/SyncfusionExamples/3D-Chart-with-DepthAxis-Z-Axis-).

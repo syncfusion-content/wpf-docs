@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Other Chart Types in WPF Charts control | Syncfusion
-description: Learn here all about Other Chart Types support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Other Chart Types in WPF Charts | Syncfusion®
+description: Other chart types in the WPF Chart provide specialized visualizations for representing unique data patterns and analytical scenarios.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Other Types in WPF Charts (SfChart)
+# Other Types in WPF Charts
 
 ## Box and Whisker Chart
 
-[`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangle and lines to show the distribution of the dataset. The following code illustrates how to define the series in chart.
+[`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangle and lines to show the distribution of the dataset. The following code illustrates how to define the series in the chart.
 
 {% tabs %}
 
@@ -39,16 +39,16 @@ boxWhiskerChart.Series.Add(boxAndWhisker);
 
 ![WPF Box and Whisker Chart](Series_images/wpf-box-and-whisker-chart.png)
 
-N>By default, the `BoxPlotMode` property value is Exclusive.
+N> By default, the `BoxPlotMode` property value is Exclusive.
 
 N> You can refer to our [WPF Box and Whisker Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-box-and-whisker-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Box and Whisker Chart example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Basic%20Charts/Box%20Plot) to know how to render and configure the box and whisker chart.
 
 **Customize the series Box mode**
 
-The series box plotting mode can be changed by using [`BoxPlotMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_BoxPlotMode) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:
+The series box plotting mode can be changed by using the [`BoxPlotMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_BoxPlotMode) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The plotting mode of the series can be calculated as follows:
 
-* [`Exclusive`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N+1) * P (N count, P percentile) and its index value starts from 1 in the list.
-* [`Inclusive`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N−1) * P (N count, P percentile) and its index value starts from 0 in the list.
+* [`Exclusive`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N+1) * P (N count, P percentile), and the index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N−1) * P (N count, P percentile), and the index value starts from 0 in the list.
 * [`Normal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by splitting the list and getting the median values.
 
 **Normal**
@@ -99,7 +99,7 @@ boxAndWhisker.BoxPlotMode = BoxPlotMode.Inclusive;
 
 **ShowMedian**
 
-The Median values of given dataset is viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowMedian) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The following code illustrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowMedian) property.
+The Median values of a given dataset are viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowMedian) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The following code illustrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowMedian) property.
 
 {% tabs %}
 
@@ -120,9 +120,9 @@ boxAndWhisker.ShowMedian = true;
 
 ![WPF Box and Whisker Chart displays based on Median Value](Series_images/wpf-box-and-whisker-chart-median-value.png)
 
-N>
-* The middle number of data points is the median for the odd number of data points.
-* The average of the middle two numbers is a median for the even number of data points.
+N> The median is calculated as follows:
+* The middle number of data points is the median for an odd number of data points.
+* The average of the middle two numbers is the median for an even number of data points.
 
 
 ### Outlier
@@ -131,7 +131,7 @@ The outlier is used to display the outlier point that lies either below the lowe
 
 **ShowOutlier**
 
-The outlier value in the box plot can be viewed by enabling the [`ShowOutlier`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowOutlier) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). By default, [ShowOutlier](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowOutlier) value is true. The following code demonstrates how to disable the [`ShowOutlier`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowOutlier) property.
+The outlier value in the box plot can be viewed by enabling the [`ShowOutlier`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowOutlier) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). By default, the [`ShowOutlier`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowOutlier) value is `true`. The following code demonstrates how to disable the [`ShowOutlier`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowOutlier) property.
 
 {% tabs %}
 
@@ -187,9 +187,9 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 
 ## Waterfall Chart
 
-[`WaterfallSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. 
+[`WaterfallSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of a set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles.
 
-The following code illustrates how to use the series in chart.
+The following code illustrates how to use the series in the chart.
 
 {% tabs %}
 
@@ -221,9 +221,9 @@ chart.Series.Add(waterfallSeries);
 
 **SummarySegmentPath and SummarySegmentBrush**
 
-[`SummaryBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_SummaryBindingPath) gets or sets the string value that indicates the sum of previous segments in series. 
+[`SummaryBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_SummaryBindingPath) gets or sets the string value that indicates the sum of previous segments in the series.
 
-The summary segment can be differentiated by applying the [`SummarySegmentBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_SummarySegmentBrush) in series.
+The summary segment can be differentiated by applying the [`SummarySegmentBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_SummarySegmentBrush) in the series.
 
 {% tabs %}
 
@@ -258,7 +258,7 @@ chart.Series.Add(waterfallSeries);
 
 **NegativeSegmentBrush**
 
-The appearance of the negative segment can be changed by using the [`NegativeSegmentBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_NegativeSegmentBrush) property of series.
+The appearance of the negative segment can be changed by using the [`NegativeSegmentBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_NegativeSegmentBrush) property of the series.
 
 The following code illustrates how to change the appearance of the negative segment.
 
@@ -284,7 +284,7 @@ waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
 
 **AllowAutoSum**
 
-The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_AllowAutoSum) property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
+The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_AllowAutoSum) property. By default, the property is `true`. When disabling this property, it renders the segment by using the Y value of the provided ItemsSource collection.
 
 The following code example illustrates how the AllowAutoSum property value can be set.
 
@@ -317,7 +317,7 @@ chart.Series.Add(waterfallSeries);
 
 ### ConnectorLine
 
-The connector line of series can be enabled or disabled by using its [`ShowConnector`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_ShowConnector) line property. By default, the property value  is true.
+The connector line of the series can be enabled or disabled by using its [`ShowConnector`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_ShowConnector) line property. By default, the property value is `true`.
 
 {% tabs %}
 
@@ -340,7 +340,7 @@ waterfallSeries.ShowConnector = false;
 
 **Connector line customization**
 
-The connector line can be customized by applying [`ConnectorLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_ConnectorLineStyle) property of the series. The following code example illustrates how to apply style for connector line.
+The connector line can be customized by applying the [`ConnectorLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_ConnectorLineStyle) property of the series. The following code example illustrates how to apply a style for the connector line.
 
 {% tabs %}
 

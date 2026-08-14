@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Suggestion Mode in AI-Powered Text Editor | Syncfusion®
-description: Learn about suggestion mode with Syncfusion® WPF AI-Powered Text Editor (SfSmartTextEditor) control.
+title: Suggestion Display Modes in WPF SfSmartTextEditor | Syncfusion®
+description: Explore suggestion display modes in Syncfusion® WPF SfSmartTextEditor control with inline and popup modes for text completion display.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
 ---
 
-# Choose how suggestions are displayed
+# Suggestion Display Modes in WPF SfSmartTextEditor
 
 The AI-Powered Text Editor supports two display modes for showing completions as you type: `Inline` and `Popup`.
 - `Inline`: Renders the predicted text in place after the caret, matching your text style.
-- `Popup` : Shows a compact hint near the caret that you can tap or accept via key press.
+- `Popup`: Shows a compact hint near the caret that you can tap or accept via key press.
 
 N>
 - Windows and Mac Catalyst default to **Inline**; Android and iOS default to **Popup**.

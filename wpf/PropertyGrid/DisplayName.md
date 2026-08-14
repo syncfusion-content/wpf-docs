@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DisplayName of Property in WPF PropertyGrid control | Syncfusion
-description: Learn about DisplayName of Property support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Display Name Support in WPF PropertyGrid | Syncfusion®
+description: Display Name Support in PropertyGrid enables customizing property names using attributes or runtime events for improved readability.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# DisplayName of Property in WPF PropertyGrid
+# Display Name Support in WPF PropertyGrid
 
 By default, the property name is displayed in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) . We can change the display name of the properties instead of the property name by using the attributes and event.
 
@@ -67,7 +67,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 ![Value specified in the Name field of the Display attribute and DisplayName attributes is displayed as Name of the property in PropertyGrid](Attribute-Images\Display-Name-Attribute.png)
 
-Here, the `Name` and `ID` properties is displayed as `Employee Name` and  `Employee ID` respectively. 
+Here, the `Name` and `ID` properties are displayed as `Employee Name` and  `Employee ID` respectively.
 
 N> If you use both the `DisplayName` attribute and `Name` field of the `Display` attribute, the `Name` field of the `Display` attribute will have higher priority.
 
@@ -146,7 +146,7 @@ private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGen
 
 ![Display name of the ID property changed to Employee ID by the DisplayName property of the AutoGeneratingPropertyGridItemEventArgs](Attribute-Images\DisplayName-AutoGeneratingPropertyGridItem.png)
 
-Here, the `Name` and `DOB`property display name is changed as `Employee Name` and `Date of Birth` by the `AutoGeneratingPropertyGridItemEventArgs.Name` property of the `AutoGeneratingPropertyGridItem` event, not by any attributes.
+Here, the `Name` and `DOB` property display name is changed as `Employee Name` and `Date of Birth` by the `AutoGeneratingPropertyGridItemEventArgs.Name` property of the `AutoGeneratingPropertyGridItem` event, not by any attributes.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Display Name` support using `AutoGeneratingPropertyGridItem` event.
 

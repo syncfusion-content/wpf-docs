@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summaries in WPF DataGrid control | Syncfusion®
-description: Learn here all about Summaries support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Summaries in WPF SfDataGrid | Syncfusion®
+description: Summaries in SfDataGrid display aggregate values such as count, sum, average, minimum, and maximum using table, group, caption, and custom summaries.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Summaries in WPF DataGrid (SfDataGrid)
+# Summaries in WPF SfDataGrid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
 

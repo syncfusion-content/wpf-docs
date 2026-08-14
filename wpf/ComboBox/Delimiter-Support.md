@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Delimiter Support in WPF ComboBox control | Syncfusion
-description: Learn here all about Delimiter Support in Syncfusion WPF ComboBox (ComboBoxAdv) control, its elements and more.
+title: Delimiter Support in WPF ComboBoxAdv | Syncfusion®
+description: Delimiter support in WPF ComboBoxAdv enables separation of selected items using custom delimiters, improving readability and multi-selection display.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Delimiter String Customization in WPF ComboBox
+# Delimiter Support in WPF ComboBoxAdv
 
-A Delimiter string in a ComboBoxAdv is “A string that can be displayed between the selected items in the ComboBoxAdv”. We can customize this string by using the property called `SelectedValueDelimiter` in the ComboBoxAdv.
+A delimiter string in a ComboBoxAdv is the string displayed between the selected items in the ComboBoxAdv. You can customize this string by using the `SelectedValueDelimiter` property. The default value is `"-"` (hyphen).
 
 <table>
 <tr>
@@ -28,9 +28,9 @@ String</td><td>
 NA</td></tr>
 </table>
 
-## Adding delimiter string customization to an application 
+## Adding delimiter string customization to an application
 
-Delimiter string customization can be added directly to an application using the following code snippet: 
+Delimiter string customization can be added directly to an application using the following code snippet.
 
 {% tabs %}
 {% highlight xaml %}

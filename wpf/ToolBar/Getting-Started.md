@@ -1,29 +1,36 @@
 ---
 layout: post
-title: Getting Started with WPF ToolBar control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF ToolBar (ToolBarAdv) control, its elements and more.
+title: Getting Started with WPF ToolBarAdv | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF ToolBarAdv control. Explore setup, elements, features, examples, and customization options.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
 
-# Getting Started with WPF ToolBar (ToolBarAdv)
+# Getting Started with WPF ToolBarAdv
 
->**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your WPF application to use our components.
+> **Important**
+> Starting with v16.2.0.x, if you refer to Syncfusion assemblies from the trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering the Syncfusion license key in your WPF application to use our components.
 
-This section explains how to add the [WPF ToolBar](https://www.syncfusion.com/wpf-controls/toolbar) (ToolBarAdv) control to an application and its structure.
+This section explains how to add the [WPF ToolBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) (ToolBarAdv) control to an application and its structure.
 
-## Adding ToolBarAdv to a WPF Application
+## Assembly deployment
 
-ToolBarAdv can be added to an application in a following way.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#toolbaradv) section for the list of assemblies or NuGet packages that need to be added as references to use the ToolBarAdv control. The minimum NuGet package required is `Syncfusion.Shared.WPF`.
 
-### Create the ToolBarAdv Control to an application by using XAML:
+You can find more details about installing the NuGet package in a WPF application in the following link:
 
-The following ways explains how to add ToolBarAdv control using XAML code:
+[How to install NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-* Create a WPF project in Visual Studio and refer “Syncfusion.Shared.Wpf” assembly to the project.    
-* Include an XML namespace for the above assemblies to the Main window.
+## Creating the project
+
+1. Create a new WPF project in Visual Studio.
+
+2. Add the following required assembly references to the project:
+
+    * Syncfusion.Shared.WPF
+
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**,
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -40,8 +47,6 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
 Title="MainWindow" Height="350" Width="525">
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -56,8 +61,6 @@ Title="MainWindow" Height="350" Width="525">
 {% highlight XAML %}
 
 <syncfusion:ToolBarAdv Height="100" HorizontalAlignment="Left" Margin="92,90,0,0" Name="toolBarAdv1" VerticalAlignment="Top" Width="200" />
-
-
 
 {% endhighlight %}
 
@@ -79,10 +82,6 @@ tool.Width = 100;
 
 tool.Height = 50;
 
-
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -91,13 +90,12 @@ tool.Height = 50;
 
 ![Appearance and Structure](Getting-Started-images/Getting-Started-img1.jpeg)
 
-
-* The Overflow button is a toggle button that displays on clicking the Overflow panel.
-* The Gripper is used to drag the ToolBarAdv to change its Band. The state of the ToolBarAdv can be changed to float and dock by clicking the gripper and dragging the ToolBarAdv, when the ToolBarAdv is hosted in ToolBarManager.
+* The Overflow button is a toggle button that opens the overflow panel.
+* The Gripper is used to drag the ToolBarAdv to change its band. The state of the ToolBarAdv can be changed to float and dock by clicking the gripper and dragging the ToolBarAdv, when the ToolBarAdv is hosted in a ToolBarManager.
 
 ## Setting icon template
 
-The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_IconTemplateProperty) supports adding any type of images such as path data, font icons, etc. as template in ToolBar. The icon will automatically resize the template content according to its size provided in the data template.
+The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_IconTemplateProperty) supports adding any type of image such as path data, font icons, and so on as a template in the ToolBar. The icon automatically resizes the template content according to its size provided in the data template.
 {% tabs %}
 
 {% highlight XAML %}
@@ -197,8 +195,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
  {% endtabs %}
  
-
- ![Setting Icon Template](Getting-Started-images/Getting-Started-img2.png)
+![Setting Icon Template](Getting-Started-images/Getting-Started-img2.png)
 
 ## Properties
 
@@ -244,7 +241,7 @@ Point<br/><br/></td></tr>
 <tr>
 <td>
 ControlsResourceDictionary<br/><br/></td><td>
-Gets or sets resource dictionary in which ToolBarAdv will look up for Framework element’s styles.<br/><br/></td><td>
+Gets or sets resource dictionary in which ToolBarAdv will look up for Framework element's styles.<br/><br/></td><td>
 Dependency Property<br/><br/></td><td>
 Resource Dictionary<br/><br/></td></tr>
 <tr>
@@ -387,10 +384,9 @@ ToolBarState<br/><br/></td><td>
 
 ## Theme
 
-ToolBarAdv supports various built-in themes. Refer to the below links to apply themes for the ToolBarAdv,
+ToolBarAdv supports various built-in themes. Apply a theme to the ToolBarAdv using the links below.
 
-  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
-  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+* [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+* [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
    ![Setting theme to WPF ToolBarAdv](Getting-Started-images/Theme.png)

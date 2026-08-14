@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Stencil in WPF Diagram control | Syncfusion®
-description: Learn here all about Stencil support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Stencil in WPF SfDiagram| Syncfusion®
+description: Create and manage reusable symbols in Syncfusion® WPF SfDiagram Stencil using diagram elements, SymbolViewModel, and symbol collections.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Stencil in WPF Diagram (SfDiagram)
+# Stencil in WPF SfDiagram
 
-The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) surface multiple times.
+The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) surface multiple times.
 
 {% tabs %}
 {% highlight xaml %}
@@ -395,7 +395,7 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to drag and drop both default and custom node from the stencil into the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18459/how-to-drag-and-drop-both-default-and-custom-node-from-the-stencil-into-the-wpf-diagram-sfdiagram)
 
-[How to enable/disable the Stencil symbol in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17888/how-to-enabledisable-the-stencil-symbol-in-wpf-diagram-sfdiagram)
+[How to enable/disable the Stencil symbol in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17888/how-to-enabledisable-the-stencil-symbol-in-wpf-diagram-sfdiagram)
 
 [How to Achieve the Stencil Preview Effect Without Dragging a Symbol in the WPF Diagram (SfDiagram)](https://support.syncfusion.com/kb/article/15537/how-to-achieve-the-stencil-preview-effect-without-dragging-a-symbol-in-the-wpf-diagram-sfdiagram)
 
@@ -403,4 +403,4 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to create the WPF Diagram (SfDiagram) with stencil?](https://support.syncfusion.com/kb/article/8908/how-to-create-the-wpf-diagram-sfdiagram-with-stencil)
 
-[How to achieve the AutoConnect functionality in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-autoconnect-functionality-in-wpf-diagram-sfdiagram)
+[How to achieve the AutoConnect functionality in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-autoconnect-functionality-in-wpf-diagram-sfdiagram)

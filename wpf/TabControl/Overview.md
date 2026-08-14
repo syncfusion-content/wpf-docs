@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF TabControl control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF TabControl (TabControlExt) control, its elements and more.
-platform: WPF
+title: About Syncfusion WPF TabControl Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF TabControl control, its features and more details.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# WPF TabControl (TabControlExt) Overview
+# About Syncfusion WPF TabControl Control
 
 The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) is similar to the dividers in a notebook or the labels in a file cabinet. By using `TabControl`, an application can define multiple pages for the same area of a window. `TabControl` contains the [TabItemExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html), which is used to define Tab Items for `TabControl`. By clicking a tab item header, the data corresponding to that particular tab item will be displayed.
 
@@ -21,7 +21,7 @@ The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Con
 
 **Display mode** - Provides support to customize the display mode of the Close button.
 
-**Layout** - Provides different layout types for enhanced usage to the control. The types are SingleLine, MultiLine, and MultiLineWithFillWidth.
+**Layout** - Provides different layout types for enhanced usage to the control. The types are SingleLine, SingleLineStar, MultiLine, MultiLineWithFullWidth, and MultiLineStar.
 
 **Pin and UnPin** - Provides support to pinning tabs for quick access and allows users to interactively pin and unpin the tabs.
 

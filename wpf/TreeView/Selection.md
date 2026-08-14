@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in WPF TreeView control | Syncfusion®
-description: Learn here all about Selection support in Syncfusion® WPF TreeView (SfTreeView) control, its elements and more.
+title: Selection in WPF TreeView | Syncfusion®
+description: Selection in SfTreeView enables single and multiple node selection, programmatic selection, selection binding, and selection events.
 platform: wpf
 control: SfTreeView
 documentation: ug
@@ -12,13 +12,13 @@ documentation: ug
 This section explains how to perform selection and its related operations in the TreeView.
 
 ## UI Selection
-The TreeView allows selecting the items either programmatically or touch interactions by setting the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) property value to other than `None`. The control has different selection modes to perform selection operations as listed as follows.
+The TreeView allows selecting items either programmatically or by touch interactions by setting the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) property to a value other than `None`. The control supports the following selection modes:
 
-* `None`: Allows disabling the selection.
-* `Single`: Allows selecting the single item only. When clicking on the selected item, selection will not be cleared. This is the default value for `SelectionMode`.
-* `SingleDeselect`: Allows selecting the single item only. When clicking on the selected item, selection gets cleared.
-* `Multiple`: Allows selecting more than one item. Selection is not cleared when selecting more than one items. When clicking on the selected item, selection gets cleared.
-* `Extended`: Allows to select the multiple items using the common key modifiers.
+* `None` — Disables selection.
+* `Single` — Allows selecting a single item only. When clicking on the selected item, selection is not cleared. This is the default value for `SelectionMode`.
+* `SingleDeselect` — Allows selecting a single item only. When clicking on the selected item, selection is cleared.
+* `Multiple` — Allows selecting more than one item. Selection is not cleared when selecting more than one item; clicking on a selected item clears its selection.
+* `Extended` — Allows selecting multiple items using the common key modifiers (Shift and Ctrl).
 
 {% tabs %}
 {% highlight xaml %}
@@ -270,12 +270,17 @@ The TreeView allows to select or navigate the items through keyboard interaction
 
 ## FocusBorderColor
 
-The [FocusBorderColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_FocusBorderColor) property is used to set the border color for the current focused item. The default color is `LightSlateGray`.
+The [FocusBorderColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_FocusBorderColor) property sets the border color for the current focused item. The default color is `LightSlateGray`.
 
 ## FocusBorderThickness
-The [FocusBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_FocusBorderThickness) property is used to set the border thickness for the current focused item. The default thickness is `1`.
 
-## How to add selection on right click
+The [FocusBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_FocusBorderThickness) property sets the border thickness for the current focused item. The default thickness is `1`.
+
+## FullRowSelect
+
+The [FullRowSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_FullRowSelect) property controls whether the entire row of a node is highlighted on selection (when `true`) or only the content area (when `false`, the default).
+
+## How to add selection on right-click
 By default, TreeView doesn't allow selection on right click. However, selection can be added in application level by adding the tree node content to `TreeView.SelectedItems` collection, for this we retrieve the node at the specified mouse point using [GetNodeAt](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_GetNodeAt_System_Windows_Point_) method. 
 
 Below is the code example, which adds the node content to selected items upon right click on the tree node by checking the exact behavior of `FullRowSelect` support.
@@ -320,6 +325,6 @@ private void treeView_MouseRightButtonDown(object sender, MouseButtonEventArgs e
 
 ## Limitation
 * When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionBackgroundColor) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of grid in the  `ItemTemplate`.
-* When the `TreeView` contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.
+* When the collection contains duplicate item instances, only the first instance created is selected or deselected.
 
-N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its key feature highlights. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.

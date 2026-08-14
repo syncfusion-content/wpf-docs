@@ -1,20 +1,20 @@
 ---
 layout: post
-title: ErrorBar Chart in WPF Charts control | Syncfusion
-description: Learn here all about ErrorBar Chart support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: ErrorBar Chart in WPF Charts | Syncfusion®
+description: Error bars in the WPF Chart represent data variability and uncertainty, helping users analyze ranges, deviations, and accuracy.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# ErrorBar in WPF Charts (SfChart)
+# ErrorBar in WPF Charts
 
 [ErrorBarSeries](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#) is used to indicate the errors or uncertainty in reported values. This will find the possible variations in measurements, and in Chart control these values are displayed as data points.
 
 
-The [`HorizontalErrorValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalErrorValue) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalErrorValue) is used to set the error value(variation) to the series.
+The [`HorizontalErrorValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalErrorValue) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalErrorValue) properties are used to set the error value (variation) to the series.
 
-The following code examples illustrates how to create error bar series:
+The following code example illustrates how to create an error bar series:
 
 {% tabs %}
 
@@ -80,7 +80,7 @@ This [`Mode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Error
 
 **Horizontal**
 
-To view horizontal error value, you can set the Mode as Horizontal as shown in the below code example.
+To view the horizontal error value, you can set the Mode to Horizontal as shown in the below code example.
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ chart.Series.Add(errorBar);
 
 **Vertical**
 
-To view vertical error value, you can set the Mode as Vertical as shown in the below code example.
+To view the vertical error value, you can set the Mode to Vertical as shown in the below code example.
 
 {% tabs %}
 
@@ -187,7 +187,7 @@ The following code illustrates how to set the [`HorizontalDirection`](https://he
 ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 errorBarSeries.HorizontalDirection = ErrorBarDirection.Both;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -212,7 +212,7 @@ The following code illustrates how to set the [`HorizontalDirection`](https://he
 ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 errorBarSeries.HorizontalDirection = ErrorBarDirection.Minus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -237,7 +237,7 @@ The following code illustrates how to set the [`HorizontalDirection`](https://he
 ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 errorBarSeries.HorizontalDirection = ErrorBarDirection.Plus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -268,9 +268,9 @@ The following code illustrates how to set the [`VerticalDirection`](https://help
 {% highlight c# %}
 
 ErrorBarSeries errorBarSeries = new ErrorBarSeries();
-errorBarSeries.VerticalDirection= ErrorBarDirection.Both;
+errorBarSeries.VerticalDirection = ErrorBarDirection.Both;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -293,9 +293,9 @@ The following code illustrates how to set the [`VerticalDirection`](https://help
 {% highlight c# %}
 
 ErrorBarSeries errorBarSeries = new ErrorBarSeries();
-errorBarSeries.VerticalDirection= ErrorBarDirection.Minus;
+errorBarSeries.VerticalDirection = ErrorBarDirection.Minus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -318,9 +318,9 @@ The following code illustrates how to set the [`VerticalDirection`](https://help
 {% highlight c# %}
 
 ErrorBarSeries errorBarSeries = new ErrorBarSeries();
-errorBarSeries.VerticalDirection= ErrorBarDirection.Plus;
+errorBarSeries.VerticalDirection = ErrorBarDirection.Plus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -496,7 +496,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![WPF Chart with Standard Deviation ErrorBar](ErrorBar_images/wpf-chart-standard-errorbar.png)
+![WPF Chart with Standard Errors ErrorBar](ErrorBar_images/wpf-chart-standard-errorbar.png)
 
 
 ## Custom

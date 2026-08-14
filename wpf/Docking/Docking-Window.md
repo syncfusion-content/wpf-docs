@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Docking Window in WPF Docking control | Syncfusion®
-description: Learn here all about Docking Window support in Syncfusion® WPF Docking (DockingManager) control and more.
-platform: WPF
+title: Docking Window in WPF DockingManager Control | Syncfusion®
+description: The docking window in DockingManager lets you dock child windows to any side of the form and customize their caption and behavior.
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Docking Window in WPF Docking (DockingManager)
+# Docking Window in WPF DockingManager Control
 
 Docking windows is one of the state of DockingManager. Since `Dock` is the default value, so initially all the children stay as Docking Window
 
@@ -188,17 +188,23 @@ Initially set [MaximizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfus
 
 SyncDockingManager.MaximizeButtonEnabled = true;
 
+var dockWindow1 = new ContentControl();
+DockingManager.SetHeader(dockWindow1, "Solution Explorer");
 DockingManager.SetSideInDockedMode(dockWindow1, DockSide.Left);
-
-DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Right);
-
-DockingManager.SetSideInDockedMode(dockWindow3, DockSide.Bottom);
-
 DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow1, 200);
+SyncDockingManager.Children.Add(dockWindow1);
 
+var dockWindow2 = new ContentControl();
+DockingManager.SetHeader(dockWindow2, "Output");
+DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Right);
 DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow2, 300);
+SyncDockingManager.Children.Add(dockWindow2);
 
-DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow3, 200);
+var dockWindow3 = new ContentControl();
+DockingManager.SetHeader(dockWindow3, "Error List");
+DockingManager.SetSideInDockedMode(dockWindow3, DockSide.Bottom);
+DockingManager.SetDesiredMaxHeightInDockedMode(dockWindow3, 200);
+SyncDockingManager.Children.Add(dockWindow3);
 
 {% endhighlight %}
 
@@ -434,8 +440,8 @@ menu2.Items.Add(customMenuItem2);
 menu2.Items.Add(customMenuItem3);
 
 //Adding custom context menu items with sub menu items
-dockingManager.FloatWindowContextMenuItems.Add(menu1);
-dockingManager.FloatWindowContextMenuItems.Add(menu2);
+dockingManager.DockWindowContextMenuItems.Add(menu1);
+dockingManager.DockWindowContextMenuItems.Add(menu2);
 
 {% endhighlight %}
 {% endtabs %}

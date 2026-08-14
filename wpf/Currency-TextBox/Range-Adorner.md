@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Range Adorner in WPF Currency TextBox control | Syncfusion®
-description: Learn about Range Adorner support in Syncfusion® WPF Currency TextBox control, its elements and more details.
-platform: WPF
+title: Range Adorner in WPF Currency TextBox | Syncfusion®
+description: Visualize the current value within a range using the built-in range adorner of the Syncfusion WPF Currency TextBox control.
+platform: wpf
 control: CurrencyTextBox 
 documentation: ug
 ---

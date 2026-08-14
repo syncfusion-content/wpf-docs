@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Baseline Support in WPF Gantt control | Syncfusion
-description: Learn about Baseline Support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: Baseline Support in WPF Gantt | Syncfusion
+description: Learn about Baseline Support in Syncfusion WPF Gantt, including variance views, baseline chart visualization, dynamic baseline columns, and project statistics.
 platform: wpf
 control: Gantt
 documentation: ug
@@ -23,7 +23,7 @@ N> Variance view will have the read-only Grid. You cannot edit the cells in Gant
 
 ## Use Case Scenario
 
-This will help the Project Leads to compare the current progress of the project to the baseline and modify or rework the plan of existing tasks in order to meet deadlines. Organizations can use this to compare the current progress of the project to the initial estimation, analyze the rework of the plan or the budget of the project in to meet deadlines and exact user requirements.
+This will help the Project Leads to compare the current progress of the project to the baseline and modify or rework the plan of existing tasks in order to meet deadlines. Organizations can use this to compare the current progress of the project to the initial estimation, analyze the rework of the plan or the budget of the project to meet deadlines and exact user requirements.
 
 #### Methods
 
@@ -447,7 +447,7 @@ public class ViewModel
     {
         var taskDetails = new ObservableCollection<Task>();
 
-        // Collection to Strore the Required Resources.
+        // Collection to Store the Required Resources.
         ObservableCollection<Resource> ResidentialConstructionResources = new ObservableCollection<Resource>();
         ResidentialConstructionResources = GetResources();
 
@@ -667,12 +667,12 @@ public class ViewModel
         Resources.Add(new Resource() { ID = 9, Name = "Framing Contractor" });
         Resources.Add(new Resource() { ID = 10, Name = "Roofing Contractor" });
         Resources.Add(new Resource() { ID = 11, Name = "Insulation Contractor" });
-        Resources.Add(new Resource() { ID = 12, Name = "Drywall contractor" });
+        Resources.Add(new Resource() { ID = 12, Name = "Drywall Contractor" });
         Resources.Add(new Resource() { ID = 13, Name = "Painting Contractor" });
         Resources.Add(new Resource() { ID = 14, Name = "Flooring Contractor" });
         Resources.Add(new Resource() { ID = 15, Name = "Appliance Contractor" });
         Resources.Add(new Resource() { ID = 16, Name = "Masonry Contractor" });
-        Resources.Add(new Resource() { ID = 17, Name = "MaID Service" });
+        Resources.Add(new Resource() { ID = 17, Name = "Maid Service" });
 
         return Resources;
     }
@@ -740,7 +740,7 @@ NA</td></tr>
 {{'[BaselineStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_BaselineStrokeThickness)'| markdownify }}</td><td>
 Used to customize the baseline thickness. Default value is 3d</td><td>
 DependencyProperty</td><td>
-bool</td><td>
+double</td><td>
 NA</td></tr>
 </table>
 
@@ -791,7 +791,7 @@ bool</td></tr>
 </table>
 
 
-Adding On-Demand Baseline Column Inclusion to an Application
+## Adding On-Demand Baseline Column Inclusion to an Application
 
 To add the On-Demand Baseline Column Inclusion to an application you need to enable the AddNewColumn of Gantt Grid, which will have a drop down cell on its head, which in turn will have the baseline columns that can be added dynamically. To enable this feature:
 
@@ -1187,7 +1187,7 @@ public class ViewModel
     {
         var taskDetails = new ObservableCollection<Task>();
 
-        // Collection to Strore the Required Resources.
+        // Collection to Store the Required Resources.
         ObservableCollection<Resource> ResidentialConstructionResources = new ObservableCollection<Resource>();
         ResidentialConstructionResources = GetResources();
 
@@ -1409,12 +1409,12 @@ public class ViewModel
         Resources.Add(new Resource() { ID = 9, Name = "Framing Contractor" });
         Resources.Add(new Resource() { ID = 10, Name = "Roofing Contractor" });
         Resources.Add(new Resource() { ID = 11, Name = "Insulation Contractor" });
-        Resources.Add(new Resource() { ID = 12, Name = "Drywall contractor" });
+        Resources.Add(new Resource() { ID = 12, Name = "Drywall Contractor" });
         Resources.Add(new Resource() { ID = 13, Name = "Painting Contractor" });
         Resources.Add(new Resource() { ID = 14, Name = "Flooring Contractor" });
         Resources.Add(new Resource() { ID = 15, Name = "Appliance Contractor" });
         Resources.Add(new Resource() { ID = 16, Name = "Masonry Contractor" });
-        Resources.Add(new Resource() { ID = 17, Name = "MaID Service" });
+        Resources.Add(new Resource() { ID = 17, Name = "Maid Service" });
 
         return Resources;
     }
@@ -1470,9 +1470,9 @@ ProjectInfo </td></tr>
 
 To add Project Statistics to an application:
 
-1. Initialize new instance of ‘ProjectInfo’ class.
-2. Assign the GetProjectStatistics() Methods’ return value to that instance.
-3. Use the instance for further process.
+1. Initialize a new instance of the `ProjectInfo` class.
+2. Assign the return value of the `GetProjectStatistics()` method to that instance.
+3. Use the instance for further processing.
 
 The following codes illustrate adding Project Statistics to an application:
 
@@ -1480,7 +1480,7 @@ The following codes illustrate adding Project Statistics to an application:
 {% highlight xaml %}
 
 <syncfusion:GanttControl x:Name="ganttControl"
-                         ItemsSource="{Binding TaskDetails}>
+                         ItemsSource="{Binding TaskDetails}">
  <syncfusion:GanttControl.TaskAttributeMapping>
         <syncfusion:TaskAttributeMapping TaskIdMapping="ID"
                                          TaskNameMapping="Name"
@@ -1866,7 +1866,7 @@ public class ViewModel
     {
         var taskDetails = new ObservableCollection<Task>();
 
-        // Collection to Strore the Required Resources.
+        // Collection to Store the Required Resources.
         ObservableCollection<Resource> ResidentialConstructionResources = new ObservableCollection<Resource>();
         ResidentialConstructionResources = GetResources();
 
@@ -2088,12 +2088,12 @@ public class ViewModel
         Resources.Add(new Resource() { ID = 9, Name = "Framing Contractor" });
         Resources.Add(new Resource() { ID = 10, Name = "Roofing Contractor" });
         Resources.Add(new Resource() { ID = 11, Name = "Insulation Contractor" });
-        Resources.Add(new Resource() { ID = 12, Name = "Drywall contractor" });
+        Resources.Add(new Resource() { ID = 12, Name = "Drywall Contractor" });
         Resources.Add(new Resource() { ID = 13, Name = "Painting Contractor" });
         Resources.Add(new Resource() { ID = 14, Name = "Flooring Contractor" });
         Resources.Add(new Resource() { ID = 15, Name = "Appliance Contractor" });
         Resources.Add(new Resource() { ID = 16, Name = "Masonry Contractor" });
-        Resources.Add(new Resource() { ID = 17, Name = "MaID Service" });
+        Resources.Add(new Resource() { ID = 17, Name = "Maid Service" });
 
         return Resources;
     }
@@ -2102,7 +2102,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-Sample Project Statistic Visual:
+The following image shows the sample Project Statistics visual:
 
 ![gantt-control-project-statistics](Baseline-Support_images/gantt-control-project-statistics.png)
 

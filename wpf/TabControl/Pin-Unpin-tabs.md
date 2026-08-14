@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pin and Unpin TabItems in WPF TabControl control | Syncfusion®
-description: Learn here all about Pin and Unpin TabItems support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPF
+title: Pin and Unpin Tabs in WPF TabControl | Syncfusion®
+description: Pin or unpin tab items in the Syncfusion WPF TabControl (TabControlExt) so important tabs stay readily available.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Pin and Unpin TabItems in WPF TabControl (TabControlExt)
+# Pin and Unpin Tabs in WPF TabControl
 
 This section explains the pin and unpin tab items in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
 
@@ -38,7 +38,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Functionality of PinButton
 
- When the corresponding tab item is pinned, it will be inserted at first position of the tab header panel(if its not have any pinned tab. Otherwise, the pinned tab item will be added next to last pinned item). When the tab item is unpinned, it will be placed after to the pinned tab items.
+ When the corresponding tab item is pinned, it will be inserted at first position of the tab header panel (if it does not have any pinned tab. Otherwise, the pinned tab item will be added next to last pinned item). When the tab item is unpinned, it will be placed after the pinned tab items.
 
 ## Pin and Unpin tab items using PinButton
 
@@ -158,6 +158,6 @@ tabItemExt2.AllowPin = true;
 
 ## Re-order pinned tabs
 
-You can re-order the pinned item within the pinned items and re-order the un-pinned item within the unpinned, but re-ordering between pinned and unpinned or unpinned and pinned has been restricted. If the pinned tab item is dropped inside the unpinned tab items, the dragged item will be inserted at the last position of pinned tab item and if the unpinned tab item is dropped inside pinned tab items, the dragged item will be inserted after the last pinned item. You can disable this reordering by using th `AllowDragDrop` property as `false`.
+You can re-order the pinned item within the pinned items and re-order the un-pinned item within the unpinned, but re-ordering between pinned and unpinned or unpinned and pinned has been restricted. If the pinned tab item is dropped inside the unpinned tab items, the dragged item will be inserted at the last position of pinned tab item and if the unpinned tab item is dropped inside pinned tab items, the dragged item will be inserted after the last pinned item. You can disable this reordering by using the `AllowDragDrop` property as `false`.
 
 ![Re-ordering pin and unpinned tab items](pin-unpin-tabs-images\Reorder.gif)

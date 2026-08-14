@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting started with AI-Powered Text Editor control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF AI-Powered Text Editor (SfSmartTextEditor) control, its elements and more.
+title: Getting Started with WPF SfSmartTextEditor | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF SfSmartTextEditor control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
 ---
 
-# Getting started with WPF Smart Text Editor
+# Getting Started with WPF SfSmartTextEditor
 
 This section explains how to add the [WPF SmartTextEditor](https://www.syncfusion.com/wpf-controls/smart-text-editor) control. It covers only the basic features needed to get started with the Syncfusion AI-Powered Text Editor. Follow the steps below to add a WPF AI-Powered Text Editor control to your project.
 
-N> The Smart Text Editor is distributed as part of the `Syncfusion.SfSmartComponents.WPF` package provides advanced AI-assisted features to enhance text editing and content management. Ensure your application has the required AI service configuration to enable these features.
+N> The Smart Text Editor is distributed as part of the `Syncfusion.SfSmartComponents.WPF` package, which provides advanced AI-assisted features to enhance text editing and content management. Ensure your application has the required AI service configuration to enable these features.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Before proceeding, ensure the following are set up:
 
 1. Go to **File > New > Project** and choose the **WPF App** template.
 2. Name the project and choose a location. Then click **Next**.
-3. Select the .NET framework version and click **Create**.
+3. Select the .NET version and click **Create**.
 
 ## Step 2: Install the Syncfusion<sup>&reg;</sup> WPF SmartComponents NuGet Package
 

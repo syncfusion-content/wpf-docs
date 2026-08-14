@@ -1,19 +1,19 @@
 ---
 
 layout: post
-title: Selection in WPF Sunburst Chart control | Syncfusion
-description: Learn here all about Selection support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
+title: Selection in WPF Sunburst Chart | Syncfusion®
+description: Selection in the WPF Sunburst Chart enables users to highlight and interact with data segments for focused analysis and exploration.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Selection in WPF Sunburst Chart (SfSunburstChart)
+# Selection in WPF Sunburst Chart
 
-Sunburst chart supports selection that enables you to select a segment by using [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html). 
+The Sunburst Chart supports selection that enables you to select a segment by using the [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html).
 
-The below code shows, how to enable the selection behavior.  
+The below code shows how to enable the selection behavior:
 
 {% tabs %}
 
@@ -40,12 +40,12 @@ chart.Behaviors.Add(selection);
 
 ## SelectionDisplayMode
 
-You can customize the selected segment appearance by using brush or opacity. You can choose between color or opacity using the [`SelectionDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionDisplayMode) property in the selection behavior 
+You can customize the selected segment appearance by using a brush or opacity. You can choose between color or opacity using the [`SelectionDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionDisplayMode) property in the selection behavior:
 
-* HighlightByColor – To display the selected segment appearance using brush.
+* HighlightByColor – To display the selected segment appearance using a brush.
 * HighlightByOpacity – To display the selected segment appearance using opacity.
 
-The following code shows, how to set the display mode using brush.
+The following code shows how to set the display mode using a brush:
 
 {% tabs %}
 
@@ -81,7 +81,7 @@ N> The default value of SelectionDisplayMode is HighlightByOpacity.
 
 ## SelectionMode
 
-Sunburst chart provides support to select or highlight the segment by clicking or hovering the mouse over a segment. By default, this property value is MouseClick.
+The Sunburst Chart provides support to select or highlight the segment by clicking or hovering the mouse over a segment. By default, this property value is MouseClick.
 
 * Both – Select the segment using mouse move and mouse click.
 * MouseClick – Select the segment using mouse click.
@@ -111,16 +111,16 @@ chart.Behaviors.Add(selection);
 
 ## SelectionType
 
-Sunburst chart provides multiple option to represent the selected categories. You can select the segment categories by using the [`SelectionType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionType) property in selection behavior.
+The Sunburst Chart provides multiple options to represent the selected categories. You can select the segment categories by using the [`SelectionType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionType) property in the selection behavior.
 
-* Child – To select the child of selected parent.
-* Group – To select the entire categories in group.
-* Parent – To select the parent of selected child.
-* Single - To select single item in the category.
+* Child – To select the child of the selected parent.
+* Group – To select the entire categories in the group.
+* Parent – To select the parent of the selected child.
+* Single - To select a single item in the category.
 
 ### Child
 
-The following code shows, how to set the selection type as child.
+The following code shows how to set the selection type as Child:
 
 {% tabs %}
 
@@ -149,7 +149,7 @@ chart.Behaviors.Add(selection);
 
 ### Group
 
-The following code shows, how to set the selection type as group.
+The following code shows how to set the selection type as Group:
 
 {% tabs %}
 
@@ -178,7 +178,7 @@ chart.Behaviors.Add(selection);
 
 ### Parent
 
-The following code shows, how to set the selection type as parent.
+The following code shows how to set the selection type as Parent:
 
 {% tabs %}
 
@@ -206,7 +206,7 @@ chart.Behaviors.Add(selection);
 
 ### Single
 
-The following code shows, how to set the selection type as single.
+The following code shows how to set the selection type as Single:
 
 {% tabs %}
 
@@ -234,9 +234,9 @@ chart.Behaviors.Add(selection);
 
 ## Selection Cursor
 
-SelectionCursor property allows you to customize the cursor when mouse is hovered over the segment. 
+The SelectionCursor property allows you to customize the cursor when the mouse is hovered over the segment.
 
-The following code shows, how to set the selection cursor as hand.
+The following code shows how to set the selection cursor as Hand:
 
 {% tabs %}
 
