@@ -9,7 +9,7 @@ documentation: ug
 
 # UI Automation in WPF SfTreeGrid
 
-### Requirements and configuration
+## Requirements and configuration
 
 To test SfTreeGrid control with CUITs, build the extension project and place it in the mentioned location. You can get the extension project from the following location.
 
