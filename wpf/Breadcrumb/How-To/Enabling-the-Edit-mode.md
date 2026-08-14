@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Enabling Edit Mode in WPF HierarchyNavigator | Syncfusion®
-description: Enabling edit mode in WPF HierarchyNavigator allows interactive modification of hierarchy items, supporting efficient data updates.
+title: Enabling the Edit mode| Hierarchical Navigator | Wpf | Syncfusion
+description: Enabling the edit mode in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Enabling Edit Mode in WPF HierarchyNavigator
+## Enabling the Edit mode
 
 A navigation path can be edited by using the AutoComplete functionality. By default, editing is disabled (set to false). If the IsEnableEditMode Boolean property is set to True, then editing will be enabled.
 

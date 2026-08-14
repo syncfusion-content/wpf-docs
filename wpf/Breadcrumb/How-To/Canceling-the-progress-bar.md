@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Canceling Progress Bar in WPF HierarchyNavigator | Syncfusion®
-description: Canceling Progress Bar in WPF HierarchyNavigator provides control over ongoing operations, improving responsiveness and user experience.
+title: Canceling the progress bar| Hierarchical Navigator | Wpf | Syncfusion
+description: Canceling the progress bar in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Canceling Progress Bar in WPF HierarchyNavigator
+## Canceling the progress bar
 
 There are two methods to cancel a progress bar:
 

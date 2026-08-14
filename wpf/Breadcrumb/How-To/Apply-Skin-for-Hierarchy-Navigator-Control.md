@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Applying Skin in WPF HierarchyNavigator | Syncfusion®
-description: Apply skin in WPF HierarchyNavigator allows customization of visual themes and styles, creating a consistent and engaging user experience.
+title: Apply Skin for WPF Hierarchy Navigator Control | Syncfusion
+description: Apply skin for Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements, features and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Applying Skin in WPF HierarchyNavigator
+## Apply Skin for Hierarchy Navigator Control
 
 Add the following assemblies to apply corresponding theme for the Hierarchy Navigator control. SkinStorage class is used to apply different visual style for a control, which is available in Syncfusion.Shared.WPF project.
 

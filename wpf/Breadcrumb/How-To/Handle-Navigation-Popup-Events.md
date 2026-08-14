@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Handle Navigation Popup Events in WPF HierarchyNavigator | Syncfusion®
-description: Handle Navigation Popup Events in WPF HierarchyNavigator helps manage user interactions and customize navigation behavior effectively.
+title: Handle Navigation Popup in WPF Hierarchical Navigator | Syncfusion
+description: Handle navigation popup events in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Handle Navigation Popup Events in WPF HierarchyNavigator
+## Handle Navigation Popup Events 
 
 Passing the argument “HierarchyNavigator item” in a method called ShowNavigationPopupItems can open the Navigation Popup for the corresponding item passed in the method.
 
@@ -20,7 +20,7 @@ HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 hierarchyNavigator.ShowNavigationPopupItems(hierarchyitem);
 {% endhighlight  %}
 
-## NavigationPopupOpening
+### NavigationPopupOpening
 
 NavigationPopupOpening occurs when the navigation pop-up window is in the process of opening.
 

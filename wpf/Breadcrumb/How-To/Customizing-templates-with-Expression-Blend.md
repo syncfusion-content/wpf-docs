@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing Template in WPF HierarchyNavigator | Syncfusion®
-description: Customizing Template in WPF HierarchyNavigator enables personalized layouts and visual styles using Expression Blend tools.
+title: Customizing templates in WPF Hierarchical Navigator | Syncfusion
+description: Customizing templates with expression blend in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Customizing Template in WPF HierarchyNavigator
+## Customizing templates with Expression Blend
 
 The steps to customize templates by using Expression Blend are as follows:
 
@@ -56,7 +56,7 @@ The steps to customize templates by using Expression Blend are as follows:
 
 
    
-## Customized sample styles
+#### Customized sample styles
 
 The steps to customize sample styles are as follows:
 
@@ -113,7 +113,7 @@ The steps to customize sample styles are as follows:
 
 
 
-### Sample XAML for ItemContainerStyle
+#### Sample XAML for ItemContainerStyle
 
 The XAML displayed below is used to customize the item-container style.
 

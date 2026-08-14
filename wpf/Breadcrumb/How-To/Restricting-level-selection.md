@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Restricting Level Selection in WPF HierarchyNavigator | Syncfusion®
-description: RestrictingLevel selection in WPF HierarchyNavigator enables control over selectable hierarchy levels to match application requirements.
+title: Restricting level selection| Hierarchical Navigator | Wpf | Syncfusion
+description: Restricting level selection in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Restricting Level Selection in WPF HierarchyNavigator
+## Restricting level selection
 
 You can restrict the number of levels that can be selected in a navigation path.
 

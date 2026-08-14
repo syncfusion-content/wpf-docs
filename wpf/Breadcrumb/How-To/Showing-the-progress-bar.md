@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Showing Progress Bar in WPF HierarchyNavigator | Syncfusion®
-description: Showing Progress Bar in WPF HierarchyNavigator provides visual feedback during lengthy operations, enhancing user awareness.
+title: Showing the progress bar| Hierarchical Navigator | Wpf | Syncfusion
+description: Showing the progress bar in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Showing Progress Bar in WPF HierarchyNavigator
+## Showing the progress bar
 
 There are two methods to show the progress bar: 
 
