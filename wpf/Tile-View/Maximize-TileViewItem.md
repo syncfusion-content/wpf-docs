@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Maximize TileViewItem in WPF Tile View control | Syncfusion®
-description: Learn about Maximize TileViewItem support in Syncfusion® Essential Studio® WPF Tile View control, its elements and more.
-platform: WPF
+title: Maximize TileViewItem in WPF Tile View | Syncfusion®
+description: Maximize a TileViewItem in the Syncfusion WPF Tile View (TileViewControl) to fill the available area and focus on its content.
+platform: wpf
 control: TileViewControl
 documentation: ug
 ---

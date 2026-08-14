@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Visual Structure in WPF TreeViewAdv (Classic) | Syncfusion®
+title: Visual Structure in WPF TreeViewAdv | Syncfusion®
 description: Understand the visual elements of TreeViewAdv (Classic) including nodes, expanders, root lines, and item images.
 platform: wpf
 control: TreeViewAdv

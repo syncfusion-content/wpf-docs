@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Filter Support in WPF AutoComplete (Classic) | Syncfusion®
+title: Filter Support in WPF AutoComplete | Syncfusion®
 description: Filter matching items dynamically as users type and display relevant suggestions from the underlying source.
 platform: wpf
 control: AutoComplete

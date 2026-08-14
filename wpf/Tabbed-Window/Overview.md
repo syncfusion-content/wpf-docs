@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Tabbed Window | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Tabbed Window control, combining SfChromelessWindow with SfTabControl for document management.
+title: About Syncfusion WPF Tabbed Window Control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio WPF Tabbed Window control, its features and more details.
 platform: wpf
 control: SfTabControl
 documentation: ug
 ---
 
-# WPF Tabbed Window Overview
+# About Syncfusion WPF Tabbed Window Control
 
 The Tabbed Window is a powerful combination of SfChromelessWindow and SfTabControl that enables you to create professional document-based applications with advanced tab management. It provides a modern, browser-style interface with features like drag-drop reordering, tear-off floating windows, and cross-window tab merging.
 

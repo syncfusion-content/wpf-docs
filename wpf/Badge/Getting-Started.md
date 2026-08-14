@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Badge control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Badge (SfBadge) control, its elements and more details.
+title: Getting Started with WPF Badge | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF Badge control, its elements, and additional details.
 platform: wpf
 control: SfBadge
 documentation: ug
 ---
 
-# Getting Started with WPF Badge (SfBadge)
+# Getting Started with WPF Badge
 
 This section explains the steps required to add the [Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control and its elements such as shapes, alignment and predefined colors. This section covers only basic features needed to get started with Syncfusion `Badge` control.
 
@@ -19,7 +19,7 @@ This section explains the steps required to add the [Badge](https://help.syncfus
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfbadge) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
+Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuget packages in a WPF application.
 
 ## Adding WPF SfBadge via XAML
 

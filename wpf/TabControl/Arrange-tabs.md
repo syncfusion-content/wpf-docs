@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Arrange tabs in WPF TabControl control | Syncfusion®
-description: Learn here all about Arrange tabs support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPf
+title: Arrange Tabs in WPF TabControl | Syncfusion®
+description: Arrange tab items in the Syncfusion WPF TabControl (TabControlExt) using built-in tab strip alignment and orientation options.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Arrange tabs in WPF TabControl (TabControlExt)
+# Arrange Tabs in WPF TabControl
 
 This section explains how to arrange the tab item and its alignment functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 

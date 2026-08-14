@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Tab Navigation control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF Tab Navigation control, its elements and more.
+title: Getting Started with WPF TabNavigation | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF TabNavigation control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: TabNavigation
 documentation: ug
 ---
 
-# Getting Started with WPF Tab Navigation
+# Getting Started with WPF TabNavigation
 
 ## Assembly deployment
 

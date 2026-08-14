@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scroll Support in WPF Menu (MenuAdv) | Syncfusion®
+title: Scroll Support in WPF Menu | Syncfusion®
 description: Scroll Support in MenuAdv enables accessing menu items that extend beyond the available display area.
 platform: wpf
 control: MenuAdv
@@ -13,7 +13,7 @@ MenuAdv allows users to scroll through the submenu items so that all the items o
 
 ![Scroll-Support_img1](Scroll-Support_images/Scroll-Support_img1.png)
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv will be very useful in the case of adding more number of items to the single MenuItemAdv and the size of the submenu crosses the vertical boundary.
 

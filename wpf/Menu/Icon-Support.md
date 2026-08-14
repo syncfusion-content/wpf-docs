@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icon Support in WPF Menu (MenuAdv) | Syncfusion®
+title: Icon Support in WPF Menu | Syncfusion®
 description: Icon support in MenuAdv enables displaying graphical icons alongside menu items for better usability.
 platform: wpf
 control: MenuAdv

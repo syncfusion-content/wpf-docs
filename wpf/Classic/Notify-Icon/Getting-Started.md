@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Notify Icon control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Notify Icon control, its elements and more details.
+title: Getting Started with WPF NotifyIcon | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF NotifyIcon control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: NotifyIcon
 documentation: ug
 ---
 
-# Getting Started with WPF Notify Icon
+# Getting Started with WPF NotifyIcon
 
 This section provides you an overview of working with [NotifyIcon](https://www.syncfusion.com/wpf-controls/notify-icon) for WPF and provides a walkthrough to configure the NotifyIcon control in a real-time scenario.
 
@@ -16,7 +16,7 @@ This section provides you an overview of working with [NotifyIcon](https://www.s
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#notifyicon) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
 Further information on installing the NuGet package can be found in the following link:
-[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages).
+[How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages).
 
 You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the NotifyIcon's dependent assemblies.
 

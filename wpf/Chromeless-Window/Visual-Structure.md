@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Visual Structure in WPF Chromeless Window control | Syncfusion
-description: Learn about Visual Structure support in Syncfusion WPF Chromeless Window control, its elements and more details.
+title: Visual Structure in WPF ChromelessWindow | Syncfusion®
+description: Visual Structure in WPF ChromelessWindow provides a clear view of window elements, helping developers understand and customize the window layout.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Visual Structure in WPF Chromeless Window
+# Visual Structure in WPF ChromelessWindow
 
 The visual elements of the ChromelessWindow are explained in the snapshot below.
 

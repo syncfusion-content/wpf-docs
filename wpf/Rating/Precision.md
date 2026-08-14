@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Precision in WPF Rating control | Syncfusion®
-description: Learn here all about Precision support in Syncfusion® WPF Rating (SfRating) control, its elements and more.
+title: Precision in WPF SfRating | Syncfusion®
+description: Precision in WPF SfRating enables whole, half, or custom rating values, allowing accurate and flexible user feedback collection.
 platform: wpf
 control: SfRating
 documentation: ug
 ---
 
-# Precision in WPF Rating (SfRating)
+# Precision in WPF SfRating
 
 The precision mode defines the accuracy level of the SfRating control. It has Standard, Half, and Exact options. By default, the precision mode of the SfRating control is set to `Standard`.
 
-### Standard
+## Standard
 
 When the precision mode of the SfRating control is set to `Standard`, the rating item will be filled completely based on the rating value.
 
@@ -41,7 +41,7 @@ public MainWindow()
 
 ![SfRating standard precision mode](images/Precision_Standard.png)
 
-### Half
+## Half
 
 When the precision mode of the SfRating control is set to `Half`, the rating item will be filled partially based on the rating value.
 
@@ -71,7 +71,7 @@ public MainWindow()
 
 ![SfRating half precision mode](images/Precision_Half.png)
 
-### Exact
+## Exact
 
 If the precision mode of SfRating is set to `Exact`, the rating item will be filled exactly based on the rating value.
 

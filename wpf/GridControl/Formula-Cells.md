@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formula Cells in WPF GridControl | Syncfusion®
-description: Learn about Formula Cells support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Create and evaluate spreadsheet-style formulas in GridControl using cell references, built-in functions, custom formulas, and a comprehensive formula library.
 platform: wpf
 control: GridControl
 documentation: ug

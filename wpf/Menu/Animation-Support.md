@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation Support in WPF Menu (MenuAdv) | Syncfusion®
+title: Animation Support in WPF Menu | Syncfusion®
 description: Animation Support in MenuAdv provides visual transition effects when opening and interacting with menu items.
 platform: wpf
 control: MenuAdv
