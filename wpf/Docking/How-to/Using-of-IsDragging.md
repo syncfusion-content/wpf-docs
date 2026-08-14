@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using of IsDragging | DockingManager | wpf | Syncfusion®
-description: Using of isdragging in Syncfusion® Essential Studio® WPF DockingManager control, its elements and more.
-platform: WPF
+title: How to use IsDragging in WPF DockingManager | Syncfusion®
+description: Learn here how to use isdragging in Syncfusion® WPF Docking (DockingManager) control, its elements and more.
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Using of IsDragging in WPF DockingManager control
+# How to use IsDragging in WPF DockingManager
 
 IsDragging property is used to find whether dragging takes place or not.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF Accordion control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Accordion (SfAccordion) control, its elements and more.
-platform: WPF
+platform: wpf
 control: SfAccordion
 documentation: ug
 ---
@@ -11,23 +11,25 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfaccordion) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfaccordion) section to get the list of assemblies and the NuGet package that need to be added as references to use the control in WPF application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link: 
+You can find more details about installing the NuGet package in a WPF application at the following link:
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
+[How to install NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Create a simple application with SfAccordion
 
-You can create a WPF application with SfAccordion control using the following steps:
+Follow these steps to create a WPF application that uses the SfAccordion control.
 
 ## Create a project
 
-Create a new WPF project in Visual Studio to display the SfAccordion with functionalities.
+1. Open Visual Studio and select **File → New → Project**.
+2. Choose **WPF App (.NET Framework)** or **WPF App (.NET)** based on your target framework.
+3. Name the project (for example, `SfAccordionSample`) and click **Create**.
 
 ## Add control through designer
 
-The SfAccordion control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.SfAccordion.WPF** assembly reference will be added automatically to the project.
+You can add the SfAccordion control to an application by dragging it from the Toolbox and dropping it onto the designer surface. The required assembly references are added automatically. Before using the Toolbox, ensure that the Syncfusion WPF extensions are installed in Visual Studio.
 
 ![WPF Accordion Control](Getting-Started_images/wpf-accordion-control.png)
 
@@ -36,8 +38,8 @@ The SfAccordion control can be added to an application by dragging it from the t
 To add the control manually in XAML, follow the given steps:
 
 1. Add the **Syncfusion.SfAccordion.WPF** assembly reference to the project.
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Declare the SfAccordion control in the XAML page.
+2. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3. Add the SfAccordion control to the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -62,13 +64,15 @@ To add the control manually in XAML, follow the given steps:
 To add the control manually in C#, follow the given steps:
 
 1. Add the **Syncfusion.SfAccordion.WPF** assembly reference to the project. 
-2. Import SfAccordion namespace **using Syncfusion.Windows.Controls.Layout;**.
-3. Create a SfAccordion instance, and add it to the window.
+2. Import the **Syncfusion.Windows.Controls.Layout** namespace.
+3. Create an instance of SfAccordion and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
+using System.Windows;
 using Syncfusion.Windows.Controls.Layout;
+
 namespace SfAccordionSample
 {
     /// <summary>
@@ -78,12 +82,12 @@ namespace SfAccordionSample
     {
         public MainWindow()
         {
-                InitializeComponent();
-	        //Creating an instance of SfAccordion control
-	        SfAccordion accordion = new SfAccordion();
-                //Adding SfAccordion as window content
-		this.Content = accordion;
-        }       
+            InitializeComponent();
+            // Creating an instance of SfAccordion control
+            SfAccordion accordion = new SfAccordion();
+            // Adding SfAccordion as window content
+            this.Content = accordion;
+        }
     }
 }
 {% endhighlight %}
@@ -93,7 +97,7 @@ namespace SfAccordionSample
 
 ## Add items using SfAccordionItem
 
-SfAccordion accepts [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html) as its child when adding it directly.
+You can populate the SfAccordion control by adding [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html) objects directly in XAML or programmatically through the _Items_ collection.
 
 {% tabs %}
 {% highlight XAML %}
@@ -106,6 +110,8 @@ SfAccordion accepts [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfus
 </syncfusion:SfAccordion>
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.Windows.Controls.Layout;
+
 SfAccordion accordion = new SfAccordion();
 
 //Instance of SfAccordionItem control
@@ -136,35 +142,40 @@ this.Content = accordion;
 
 ## Bind data
 
-SfAccordion accepts any business object collection to be bound using its [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
+SfAccordion supports data binding through the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property and can be bound to any collection of .NET objects.
+
+The following example demonstrates how to bind a collection of business objects to the SfAccordion control.
 
 * **Model.cs**
 
 {% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
+using System.Windows.Media;
+
 public class Person
 {
-        public ImageSource Image { get; set; }
-        public string Name { get; set; }
-        public string Position { get; set; }
-        public string organization { get; set; }
-        public string DateOfBirth { get; set; }
-        public string Location { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
-        public string TileColor { get; set; }
-        public Person(string name, ImageSource image, string position, string organization, string birth, string location, string phone, string email)
-        {
-            Name = name;
-            Image = image;
-            Position = position;
-            organization = organization;
-            DateOfBirth = birth;
-            Location = location;
-            Phone = phone;
-            Email = email;
-        }
+    public ImageSource Image { get; set; }
+    public string Name { get; set; }
+    public string Position { get; set; }
+    public string Organization { get; set; }
+    public string DateOfBirth { get; set; }
+    public string Location { get; set; }
+    public string Phone { get; set; }
+    public string Email { get; set; }
+    public string TileColor { get; set; }
+
+    public Person(string name, ImageSource image, string position, string organization, string birth, string location, string phone, string email)
+    {
+        Name = name;
+        Image = image;
+        Position = position;
+        Organization = organization;
+        DateOfBirth = birth;
+        Location = location;
+        Phone = phone;
+        Email = email;
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -176,29 +187,32 @@ public class Person
 {% capture codesnippet4 %}
 {% tabs %}
 {% highlight C# %}
+using System;
+using System.Collections.ObjectModel;
+using System.Windows.Media.Imaging;
+
 public class ViewModel
 {
-        private ObservableCollection<Person> _employee;
-        public ObservableCollection<Person> Employees
-        {
-            get { return _employee; }
-            set { _employee = value; }
-        }
-        public ViewModel()
-        {
-            Employees = new ObservableCollection<Person>();
-            Employees.Add(new Person("Eric Joplin", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_02.png")), "Chairman", "Management", "27/09/1973", "Boston", "+800 9899 9929", "Joplin@syncfusion.com"));
-            Employees.Add(new Person("Paul Vent", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_04.png")), "Chief Executive Officer", "Management", "27/09/1975", "New York", "+800 9899 9930", "Paul@syncfusion.com"));
-            Employees.Add(new Person("Clara Venus", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_06.png")), "Chief Executive Assistant", "Management", "27/09/1978", "California", "+800 9899 9931", "Clara@syncfusion.com"));
-            Employees.Add(new Person("Maria Even", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_11.png")), "Executive Manager", "Operational Unit", "27/09/1970", "New York", "+800 9899 9932", "Maria@syncfusion.com"));
-            Employees.Add(new Person("Mark Zune", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_13.png")), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "Mark@syncfusion.com"));
-            Employees.Add(new Person("Robin Ranee", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_16.png")), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "Robin@syncfusion.com"));
-            Employees.Add(new Person("Chris Marker", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_21.png")), "Team Manager", "Customer Service", "27/09/1963", "California", "+800 9899 9935", "Chris@syncfusion.com"));
-			Employees.Add(new Person("Serra Sum", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_23.png")), "Coordinator", "Customer Service", "27/09/1961", "New York", "+800 9899 9936", "Serra@syncfusion.com"));
-			Employees.Add(new Person("Mathew Fleming", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_25.png")), "Recruitment Manager", "Human Resource", "27/09/1986", "Boston", "+800 9899 9937", "Mathew@syncfusion.com"));
+    private ObservableCollection<Person> _employee;
+    public ObservableCollection<Person> Employees
+    {
+        get { return _employee; }
+        set { _employee = value; }
+	}
+    public ViewModel()
+    {
+     	Employees = new ObservableCollection<Person>();
+        Employees.Add(new Person("Eric Joplin", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_02.png")), "Chairman", "Management", "27/09/1973", "Boston", "+800 9899 9929", "Joplin@syncfusion.com"));
+        Employees.Add(new Person("Paul Vent", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_04.png")), "Chief Executive Officer", "Management", "27/09/1975", "New York", "+800 9899 9930", "Paul@syncfusion.com"));
+        Employees.Add(new Person("Clara Venus", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_06.png")), "Chief Executive Assistant", "Management", "27/09/1978", "California", "+800 9899 9931", "Clara@syncfusion.com"));
+        Employees.Add(new Person("Maria Even", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_11.png")), "Executive Manager", "Operational Unit", "27/09/1970", "New York", "+800 9899 9932", "Maria@syncfusion.com"));
+        Employees.Add(new Person("Mark Zune", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_13.png")), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "Mark@syncfusion.com"));
+        Employees.Add(new Person("Robin Ranee", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_16.png")), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "Robin@syncfusion.com"));
+        Employees.Add(new Person("Chris Marker", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_21.png")), "Team Manager", "Customer Service", "27/09/1963", "California", "+800 9899 9935", "Chris@syncfusion.com"));
+		Employees.Add(new Person("Serra Sum", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_23.png")), "Coordinator", "Customer Service", "27/09/1961", "New York", "+800 9899 9936", "Serra@syncfusion.com"));
+		Employees.Add(new Person("Mathew Fleming", new BitmapImage(new Uri("pack://application:,,,/DataBinding;Component/Images/Emp_25.png")), "Recruitment Manager", "Human Resource", "27/09/1986", "Boston", "+800 9899 9937", "Mathew@syncfusion.com"));
 	} 
 }
-
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
@@ -206,46 +220,74 @@ public class ViewModel
 
 * **MainWindow.Xaml**
 
-<Window.DataContext>
-        <local:ViewModel/>
-</Window.DataContext>
+To bind data to the `SfAccordion`, set the `DataContext` and provide a `HeaderTemplate` and `ContentTemplate` as shown below:
 
-<syncfusion:SfAccordion x:Name="accordion" ItemsSource="{Binding Employees}" HorizontalAlignment="Center" VerticalAlignment="Center" SelectionMode="ZeroOrOne" >
-        <syncfusion:SfAccordion.HeaderTemplate>
+{% capture codesnippet5 %}
+{% tabs %}
+{% highlight XAML %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:SfAccordionSample"
+        x:Class="SfAccordionSample.MainWindow"
+        Title="SfAccordion Sample" Height="350" Width="525">
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <syncfusion:SfAccordion x:Name="accordion"
+                                ItemsSource="{Binding Employees}"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                SelectionMode="ZeroOrOne">
+            <syncfusion:SfAccordion.HeaderTemplate>
                 <DataTemplate>
-                        <Grid>
-                                <TextBlock Text="{Binding Name}" Width="450" FontSize="18"  VerticalAlignment="Center" Margin="8" />
-			</Grid>
-		</DataTemplate>
-	</syncfusion:SfAccordion.HeaderTemplate>
-        <syncfusion:SfAccordion.ContentTemplate>
+                    <Grid>
+                        <TextBlock Text="{Binding Name}"
+                                   Width="450"
+                                   FontSize="18"
+                                   VerticalAlignment="Center"
+                                   Margin="8" />
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfAccordion.HeaderTemplate>
+            <syncfusion:SfAccordion.ContentTemplate>
                 <DataTemplate>
-                        <Grid>
-			        <TextBlock Text="Position "/>
-			        <TextBlock Text="{Binding Position}" Grid.Column="1"/>
-			        <TextBlock Text="Organization " Grid.Row="1"/>
-			        <TextBlock Text="{Binding organization}" Grid.Row="1" Grid.Column="1"/>
-			        <TextBlock Text="Date Of Birth " Grid.Row="2"/>
-			        <TextBlock Text="{Binding DateOfBirth}" Grid.Row="2" Grid.Column="1"/>
-			        <TextBlock Text="Location " Grid.Row="3"/>
-			        <TextBlock Text="{Binding Location}" Grid.Row="3" Grid.Column="1"/>
-       			        <TextBlock Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top" Margin="20" FontSize="14" FontWeight="Light" >
-                                        <TextBlock TextWrapping="Wrap" Text= "Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus."/>
-                                </TextBlock>
-			        <TextBlock Text=")" FontFamily="Wingdings"/>
-			        <TextBlock Text="{Binding Phone}" Grid.Column="1" Margin="5 0" VerticalAlignment="Center"/>
-			        <TextBlock Text="*" FontFamily="Wingdings" Grid.Column="2"/>
-        		        <TextBlock Text="{Binding Email}" Grid.Column="3" Margin="5 0" VerticalAlignment="Center"/> 
-			</Grid>
-		</DataTemplate>
-	</syncfusion:SfAccordion.ContentTemplate>
-</syncfusion:SfAccordion>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Position "/>
+                        <TextBlock Text="{Binding Position}" Grid.Column="1"/>
+                        <TextBlock Text="Organization " Grid.Row="1"/>
+                        <TextBlock Text="{Binding Organization}" Grid.Row="1" Grid.Column="1"/>
+                        <TextBlock Text="Date Of Birth " Grid.Row="2"/>
+                        <TextBlock Text="{Binding DateOfBirth}" Grid.Row="2" Grid.Column="1"/>
+                        <TextBlock Text="Location " Grid.Row="3"/>
+                        <TextBlock Text="{Binding Location}" Grid.Row="3" Grid.Column="1"/>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfAccordion.ContentTemplate>
+        </syncfusion:SfAccordion>
+    </Grid>
+</Window>
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![WPF Accordion Item Binding](Getting-Started_images/wpf-accordion-item-binding.png)
 
 ## Apply template to item header
 
-SfAccordion provides the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property; it allows to apply a common data template to all accordion items header.
+Use the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property to apply a common data template to all accordion item headers.
 
 {% tabs %}
 {% highlight XAML %}
@@ -265,7 +307,7 @@ SfAccordion provides the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syn
 
 ## Set content to children
 
-You can set content to SfAccordionItem using the [Content](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?view=netframework-4.7.2) property of SfAccordion.
+You can set content for an SfAccordionItem using its [Content](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?view=netframework-4.7.2) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -282,10 +324,9 @@ You can set content to SfAccordionItem using the [Content](https://learn.microso
 
 ## Theme
 
-SfAccordion supports various built-in themes. Refer to the below links to apply themes for the SfAccordion,
+SfAccordion supports a variety of built-in themes. Refer to the following articles to learn how to apply themes:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
-	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![WPF Accordion Themes](Getting-Started_images/wpf-accordion-themes.png)
+![WPF Accordion Themes](Getting-Started_images/wpf-accordion-themes.png)

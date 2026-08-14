@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Node in WPF Diagram control | Syncfusion®
-description: Learn here all about Node support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Node in WPF SfDiagram | Syncfusion®
+description: Learn about nodes in Syncfusion® WPF SfDiagram control, including node creation, visualization, positioning, interaction, appearance, and constraints.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Node in WPF Diagram (SfDiagram)
+# Node in WPF SfDiagram
 
-The nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data, and it represents the functions of a complete system in regards of how it interacts with external entities.
+The nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data, and they represent the functions of a complete system in regards to how it interacts with external entities.
 
 ![WPF Diagram Node Content](Node_images/wpf-diagram-node-content.PNG)
 
@@ -25,16 +25,20 @@ To create a node, you have to define the [`node object`](https://help.syncfusion
 {% highlight xaml %}
 
 <!--Resource Dictionary which contains predefined shapes for Node-->
-<ResourceDictionary.MergedDictionaries>
-  <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
-</ResourceDictionary.MergedDictionaries>
+<Window.Resources>
+ <ResourceDictionary>
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
+  </ResourceDictionary.MergedDictionaries>
 
-<!--Shape style for Node-->
-<Style x:Key="ShapeStyle" TargetType="Path">
-  <Setter Property="Fill" Value="#FF5B9BD5"/>
-  <Setter Property="Stretch" Value="Fill"/>
-  <Setter Property="Stroke" Value="#FFEDF1F6"/>
-</Style>
+  <!--Shape style for Node-->
+  <Style x:Key="ShapeStyle" TargetType="Path">
+    <Setter Property="Fill" Value="#FF5B9BD5"/>
+    <Setter Property="Stretch" Value="Fill"/>
+    <Setter Property="Stroke" Value="#FFEDF1F6"/>
+  </Style>
+ </ResourceDictionary>
+</Window.Resources>
 
 <!--Initialize the Sfdiagram-->
 <syncfusion:SfDiagram x:Name="diagram">
@@ -283,7 +287,7 @@ NodeViewModel node = new NodeViewModel()
     //sets the position
     OffsetX = 100,
     OffsetY = 100,
-    Shape= App.Current.Resources["Rectangle"] as Style,
+    Shape= App.Current.Resources["Rectangle"],
     //Apply style to Shape
     ShapeStyle = App.Current.Resources["ShapeStyle"] as Style,
 };
@@ -480,7 +484,7 @@ The following table explains how `Pivot` relates `Offset` values with `Node` bou
 
 | Pivot | Offset |
 |---|---|
-| (0,5, 0.5) |  OffsetX and OffsetY values are considered as the node’s center point. |
+| (0.5, 0.5) |  OffsetX and OffsetY values are considered as the node’s center point. |
 | (0,0) | OffsetX and OffsetY values are considered as the top left corner of node. |
 | (1,1) | OffsetX and OffsetY values are considered as the bottom right corner of the node. |
 
@@ -595,6 +599,8 @@ The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.
 
 {% highlight c# %}
 
+//Initialize the SfDiagram.
+SfDiagram diagram = new SfDiagram();
 //Define NodeProperty
 NodeViewModel node1 = AddNode(200,200,65,100);
 //Space between Connector and Node
@@ -694,7 +700,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * The [`BoundaryConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ChangeEventArgs-2.html#Syncfusion_UI_Xaml_Diagram_ChangeEventArgs_2_BoundaryConstraints) argument in the [`NodeChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_NodeChangedEvent) is used to restrict the dragging of the Nodes in the given region.
 
-* The [`NodeChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_NodeChangedEvent) will notify the [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetY) changes with their old and new values. Along with that, this event will give information about interaction state. To explore about aruguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* The [`NodeChangedEvent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_NodeChangedEvent) will notify the [`OffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Node.html#Syncfusion_UI_Xaml_Diagram_Node_OffsetY) changes with their old and new values. Along with that, this event will give information about interaction state. To explore the arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![WPF Diagram Drag Node](Node_images/wpf-diagram-drag-node.gif)
 
@@ -711,7 +717,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 ### Rotate
 
-* A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
+* A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction leads to rotate the node.
 * The node is rotated with reference to the static pivot point.
 * `Pivot` thumb (thumb at the middle of the Node) appears when rotating the node to represent the static point. For more information about pivot, refer to [`Position`](https://help.syncfusion.com/wpf/diagram/node#position)
 
@@ -753,8 +759,6 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to customize the context menu?](https://support.syncfusion.com/kb/article/9270/how-to-customize-the-contextmenu-in-wpf-diagram-sfdiagram)
 
-[How to drag node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
-
 [How to restrict node’s dragging from native lane to other lanes in diagram?](https://support.syncfusion.com/kb/article/11744/how-to-restrict-nodes-dragging-from-native-lane-to-other-lanes-in-wpf-diagramsfdiagram)
 
 [How to add ToolTip for Diagram objects of Node, NodePort in Diagram?](https://support.syncfusion.com/kb/article/11748/how-to-add-tooltip-for-diagram-objects-of-node-nodeport-in-wpf-diagramsfdiagram)
@@ -762,8 +766,6 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 [How to add image annotations to a Node?](https://support.syncfusion.com/kb/article/6078/how-to-add-image-annotations-to-a-node-in-wpf-diagram-sfdiagram-control)
 
 [How to notify state of operation performed on node?](https://support.syncfusion.com/kb/article/5523/how-to-notify-state-of-operation-performed-on-node-in-wpf-diagram)
-
-[How to remove all its children nodes when deleting a parent node?](https://support.syncfusion.com/kb/article/10027/how-to-remove-all-its-children-when-deleting-a-parent-node-in-wpf-diagram-sfdiagram)
 
 [How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
 
@@ -785,7 +787,7 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to customize the appearance of the node selector?](https://support.syncfusion.com/kb/article/10605/how-to-customize-the-appearance-of-the-selector-in-wpf-diagram-sfdiagram)
 
-[How to update the Zindex of the dragged node?](https://support.syncfusion.com/kb/article/10388/how-to-update-the-zindex-of-the-dragged-node-in-wpf-diagram-sfdiagram)
+[How to update the ZIndex of the dragged node?](https://support.syncfusion.com/kb/article/10388/how-to-update-the-zindex-of-the-dragged-node-in-wpf-diagram-sfdiagram)
 
 [How to restrict diagram objects dragging in the positive side?](https://support.syncfusion.com/kb/article/9917/how-to-restrict-diagram-objects-dragging-in-the-positive-side-in-wpf-diagram)
 
@@ -793,7 +795,7 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to add multiple ports for Node?](https://support.syncfusion.com/kb/article/9948/how-to-add-multiple-ports-for-node-in-the-wpf-diagram-sfdiagram)
 
-[How to override the default cursors while interact on diagram objects?](https://support.syncfusion.com/kb/article/9997/how-to-override-the-default-cursors-while-interaction-in-wpf-diagram-sfdiagram)
+[How to override the default cursors while interacting on diagram objects?](https://support.syncfusion.com/kb/article/9997/how-to-override-the-default-cursors-while-interaction-in-wpf-diagram-sfdiagram)
 
 [How to create parent and child relationship by drag and drop nodes?](https://support.syncfusion.com/kb/article/10008/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagram-sfdiagram)
 
@@ -817,7 +819,7 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to select the node that is outside of the selection region in the WPF Diagram ?](https://support.syncfusion.com/kb/article/18896/how-to-select-the-node-that-is-outside-of-the-selection-region-in-the-wpf-diagram-sfdiagram)
 
-[How to manage the node's visibility when it is dropped onto another node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18312/how-to-manage-the-nodes-visibility-when-it-is-dropped-onto-another-node-in-wpf-diagram-sfdiagram)
+[How to manage the node's visibility when it is dropped onto another node in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18312/how-to-manage-the-nodes-visibility-when-it-is-dropped-onto-another-node-in-wpf-diagram-sfdiagram)
 
 [How to use the WPF SfDiagram as the Content of the Node?](https://support.syncfusion.com/kb/article/18397/how-to-use-the-wpf-sfdiagram-as-the-content-of-the-node)
 
@@ -833,15 +835,15 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to add a node as a child of a container using the context menu in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18053/how-to-add-a-node-as-a-child-of-a-container-using-the-context-menu-in-the-wpf-diagram-sfdiagram)
 
-[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)
+[How to set the rotation angle for a node based on the angle of the connector decorator's shape in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17744/how-to-set-the-rotation-angle-for-a-node-based-on-the-angle-of-the-connector-decorators-shape-in-wpf-diagram-sfdiagram)
 
 [How to set the semi-transparent color to Nodes in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17882/how-to-set-the-semi-transparent-color-to-nodes-in-the-wpf-diagram-sfdiagram)
 
-[How to update the ShapeStyle of the selected node at runtime in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17728/how-to-update-the-shapestyle-of-the-selected-node-at-runtime-in-wpf-diagram-sfdiagram-)
+[How to update the ShapeStyle of the selected node at runtime in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17728/how-to-update-the-shapestyle-of-the-selected-node-at-runtime-in-wpf-diagram-sfdiagram-)
 
 [How to add a container as parent of the selected node using the context menu in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17747/how-to-add-a-container-as-parent-of-the-selected-node-using-the-context-menu-in-the-wpf-diagram-sfdiagram)
 
-[How to prevent nodes from moving to a negative index when nudging in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17732/how-to-prevent-nodes-from-moving-to-a-negative-index-when-nudging-in-wpf-diagram-sfdiagram)
+[How to prevent nodes from moving to a negative index when nudging in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17732/how-to-prevent-nodes-from-moving-to-a-negative-index-when-nudging-in-wpf-diagram-sfdiagram)
 
 [How to clone the NodeViewModel in SfDiagram?](https://support.syncfusion.com/kb/article/17763/how-to-clone-the-nodeviewmodel-in-sfdiagram)
 
@@ -849,28 +851,21 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to Get the Node or Connector in the MouseMove Event in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15646/how-to-get-the-node-or-connector-in-the-mousemove-event-in-the-wpf-diagram-sfdiagram)
 
-[How to Restrict Node is being removed from its Parent Container when Dragging in WPF Diagram (SfDiagram)](https://support.syncfusion.com/kb/article/15644/how-to-restrict-node-is-being-removed-from-its-parent-container-when-dragging-in-wpf-diagram-sfdiagram)
+[How to Restrict Node is being removed from its Parent Container when Dragging in WPF SfDiagram](https://support.syncfusion.com/kb/article/15644/how-to-restrict-node-is-being-removed-from-its-parent-container-when-dragging-in-wpf-diagram-sfdiagram)
 
 [How to avoid the node clipping while export in the WPF Diagram?](https://support.syncfusion.com/kb/article/15536/how-to-avoid-the-node-clipping-while-export-in-the-wpf-diagram)
 
 [How to manage the visibility of node and connector objects in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/14995/how-to-manage-the-visibility-of-node-and-connector-objects-in-the-wpf-diagram-sfdiagram)
 
-[How to customize the connection indicator style of node and port in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
 
-[How to notify state of operation performed on node in WPF Diagram?](https://support.syncfusion.com/kb/article/5523/how-to-notify-state-of-operation-performed-on-node-in-wpf-diagram)
-
-[How to remove all its children when deleting a parent node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10027/how-to-remove-all-its-children-when-deleting-a-parent-node-in-wpf-diagram-sfdiagram)
+[How to remove all its children when deleting a parent node in WPF SfDiagram?](https://support.syncfusion.com/kb/article/10027/how-to-remove-all-its-children-when-deleting-a-parent-node-in-wpf-diagram-sfdiagram)
 
 [How to restrict annotation editing by double-clicking the node or connector in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
 
-[How to hide specific default QuickCommands of node in WPF Diagram?](https://support.syncfusion.com/kb/article/11519/how-to-hide-specific-default-quickcommands-of-node-in-wpf-diagram)
-
 [How to restrict Connector's source/target changing from native Nodes to other Nodes in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11796/how-to-restrict-connectors-source-target-changing-from-native-nodes-to-other-nodes-in-wpf)
-
-[How to serialize Content and ContentTemplate properties of a Node in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/11574/how-to-serialize-content-and-contenttemplate-properties-of-a-node-in-wpf-diagramsfdiagram)
 
 [How to create filled PolyLine Node in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10255/how-to-create-filled-polyline-node-in-wpf-diagram-sfdiagram)
 
-[How to bring the specific node to the center or viewport in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/9918/how-to-bring-the-specific-node-to-the-center-or-viewport-in-wpf-diagram-sfdiagram)
+[How to bring the specific node to the center or viewport in WPF SfDiagram?](https://support.syncfusion.com/kb/article/9918/how-to-bring-the-specific-node-to-the-center-or-viewport-in-wpf-diagram-sfdiagram)
 
-[How to switch the visibility of an icon in the ContentTemplate in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17725/how-to-switch-the-visibility-of-an-icon-in-the-contenttemplate-in-wpf-diagram-sfdiagram-)
+[How to switch the visibility of an icon in the ContentTemplate in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17725/how-to-switch-the-visibility-of-an-icon-in-the-contenttemplate-in-wpf-diagram-sfdiagram-)

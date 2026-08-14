@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Assistive Labels in WPF TextInputLayout control | Syncfusion
-description: Learn here all about Assistive Labels support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
+title: Assistive Labels in WPF TextInputLayout | Syncfusion®
+description: Assistive Labels in SfTextInputLayout provide helper text, error messages, and character counters to guide and validate user input.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug

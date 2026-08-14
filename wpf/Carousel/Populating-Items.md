@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Populating Items in WPF Carousel control | Syncfusion®
-description: Learn about Populating Items support in Syncfusion® Essential Studio® WPF Carousel control, its elements and more details.
+title: Populate Items in WPF Carousel | Syncfusion®
+description: Populate the Carousel control using CarouselItem objects, collection binding, templates, styles, virtualization, and selection support.
 platform: wpf
 control: Carousel
 documentation: ug

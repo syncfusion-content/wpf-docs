@@ -1,13 +1,13 @@
 ---
 layout: post
-title: FilePath Registry in WPF AutoComplete Control | Syncfusion
-description: Learn here all about FilePath Registry Custom Data Source Support in Syncfusion WPF AutoComplete (Classic) control and more.
+title: Data Source Support in WPF AutoComplete | Syncfusion®
+description: Load suggestions from file paths, registry entries, or custom business objects using supported data source modes.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# FilePath Registry Custom Data Source Support in WPF AutoComplete
+# Data Source Support in WPF AutoComplete (Classic)
 
 AutoComplete can be used with different kinds of Data Source like FilePath, Registry & CustomSource. The Data 
 Source of the AutoComplete control can be set using the [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_Source) property.

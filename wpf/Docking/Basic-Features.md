@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Basic Features | DockingManager | WPF | Syncfusion®
-description: Basic features of Syncfusion® Essential Studio® WPF DockingManager Control, its elements, features and more.
+title: Basic Features in WPF DockingManager Control | Syncfusion®
+description: The basic features in DockingManager include docking, floating, tabbed, auto-hide, and state persistence for child windows.
 platform: wpf
 control: DockingManager
 documentation: ug

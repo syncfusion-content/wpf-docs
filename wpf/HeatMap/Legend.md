@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in WPF HeatMap (SfHeatMap) control | Syncfusion®
-description: Learn how to create and configure a legend for the Syncfusion® Essential Studio® WPF HeatMap (SfHeatMap) control, its elements, and more.
+title: Legend in WPF HeatMap | Syncfusion®
+description: Legend in the WPF HeatMap identifies data value ranges through color indicators, helping users interpret heat map data effectively.
 platform: wpf
 control: SfHeatMap
 documentation: ug
 ---
 
-# Legend in the WPF HeatMap (SfHeatMap) control
+# Legend in WPF HeatMap
 
 The legend is a control used to summarize the range of colors in the HeatMap. This gives a visual guideline for mapping between value and color.
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Minimize TileViewItem in WPF Tile View control | Syncfusion®
-description: Learn about Minimize TileViewItem support in Syncfusion® Essential Studio® WPF Tile View control, its elements and more.
-platform: WPF
+title: Minimize TileViewItem in WPF Tile View | Syncfusion®
+description: Minimize a TileViewItem in the Syncfusion WPF Tile View (TileViewControl) to display it as a compact header-only tile.
+platform: wpf
 control: TileViewControl
 documentation: ug
 ---

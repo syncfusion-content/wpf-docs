@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diacritic Sensitivity in WPF Autocomplete control | Syncfusion®
-description: Learn here all about Diacritic Sensitivity support in Syncfusion® WPF Autocomplete (SfTextBoxExt) control and more.
+title: Diacritic Sensitivity in WPF AutoComplete | Syncfusion®
+description: Diacritic Sensitivity in SfTextBoxExt controls whether accented and non-accented characters are treated as matching values.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug

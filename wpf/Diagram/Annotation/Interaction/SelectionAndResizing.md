@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Annotation Selection and Resizing | Syncfusion® 
-description: how to define basic annotations for Node and Connectors in Syncfusion® WPF Diagram (SfDiagram) control, its elements, and more.
+title: Annotation Selection and Resizing in WPF SfDiagram | Syncfusion®
+description: Learn about annotation selection and resizing in Syncfusion® WPF SfDiagram control, including constraints, interaction, and annotation events.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# How to Select and Resize the Annotation
+# Annotation Selection and Resizing in WPF SfDiagram
 
-Basic intersections of selecting and resizing can be applied over annotation. These interactions can be controlled by annotation and its parent node or connector.
+Basic interactions of selecting and resizing can be applied over annotation. These interactions can be controlled by annotation and its parent node or connector.
 
 To learn about annotation constraints, refer to the [Annotation Constraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html).
 
 ## Selecting the annotation
 
-Selection of annotation can be enabled by using the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Constraints) property of [`AnnotationEditorViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html) class and setting its value as `AnnotationConstraints.Selectable`.
+Selection of an annotation can be enabled by using the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Constraints) property of [`AnnotationEditorViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html) class and setting its value as `AnnotationConstraints.Selectable`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -52,7 +52,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ## Resizing the annotation
 
-Resizing of annotation can be enabled by using the `Constraints` property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Resizable`.
+Resizing an annotation can be enabled by using the `Constraints` property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Resizable`.
 
 {% tabs %}
 {% highlight xaml %}

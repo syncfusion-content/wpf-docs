@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Data Object in WPF Diagram control | Syncfusion®
-description: Learn here all about Data Object support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Data Object in WPF SfDiagram | Syncfusion®
+description: Learn about BPMN data objects in Syncfusion® WPF SfDiagram control, including data input, data output, collective data, and process data representation.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Data Object in WPF Diagram (SfDiagram)
+# Data Object in WPF SfDiagram
+
 
 A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a Data Object, the [`Type`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_Type) property of the [`BpmnNodeViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) should be set to [`DataObject`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#DataObject) and the [DataObjectType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_DataObjectType) property defines whether the data is an input or output.
 You can indicate the collection of data object by setting the [`IsCollectiveData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNode.html#Syncfusion_UI_Xaml_Diagram_BpmnNode_IsCollectiveData) property to `true`.

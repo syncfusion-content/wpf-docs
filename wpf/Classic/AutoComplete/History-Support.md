@@ -1,7 +1,7 @@
 ---
 layout: post
-title: History Support in WPF AutoComplete Control | Syncfusion
-description: Learn here all about History Support in Syncfusion WPF AutoComplete (Classic) control, its elements and more details.
+title: History Support in WPF AutoComplete | Syncfusion®
+description: Store, retrieve, and manage previously selected autocomplete values using built-in history functionality.
 platform: wpf
 control: AutoComplete
 documentation: ug

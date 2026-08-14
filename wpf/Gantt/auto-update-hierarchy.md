@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Auto Update Hierarchy in WPF Gantt control | Syncfusion
-description: Learn about Auto Update Hierarchy support in Syncfusion WPF Gantt control, its elements and more details.
+title: Auto Update Hierarchy in WPF Gantt | Syncfusion
+description: Learn about Auto Update Hierarchy support in Syncfusion WPF Gantt to automatically synchronize parent tasks with changes in child tasks.
 platform: wpf
 control: Gantt
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deletion in WPF Diagram control | Syncfusion®
-description: Learn here all about Deletion support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Deletion in WPF SfDiagram | Syncfusion®
+description: Delete selected elements in Syncfusion® WPF SfDiagram using commands and events, with options to control item and connector removal.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Deletion in WPF Diagram (SfDiagram)
+# Deletion in WPF SfDiagram
 
 Selected objects can be deleted by using the Delete key or the built-in Delete command through QuickCommand. For more information about configuring and using QuickCommands, refer to the [QuickCommand](https://help.syncfusion.com/wpf/diagram/interaction/userhandle) documentation.
 

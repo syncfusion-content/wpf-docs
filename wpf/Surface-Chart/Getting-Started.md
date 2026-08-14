@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Surface Chart control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Surface Chart (SfSurfaceChart) control, its elements and more.
+title: Getting Started with WPF Surface Chart | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Surface Chart control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
 ---
 
-# Getting Started with WPF Surface Chart (SfSurfaceChart)
+# Getting Started with WPF Surface Chart
 
 This section helps you get started with [`SfSurfaceChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html) control.
 

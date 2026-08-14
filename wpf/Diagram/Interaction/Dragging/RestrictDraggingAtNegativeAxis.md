@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Support to restrict dragging at negative axis | Syncfusion.
-description: How to restrict diagram control objects of Node, Connectors, Groups, and Symbols dragging at negative axis during runtime
+title: Restrict Dragging at Negative Axis in WPF SfDiagram | Syncfusion®
+description: Restrict nodes, connectors, groups, and symbols from dragging into negative coordinates in Syncfusion® WPF SfDiagram.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Restrict objects dragging at negative axis in WPF Diagram (SfDiagram)
+# Restrict Dragging at Negative Axis in WPF SfDiagram
 
 [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) allows you to restrict diagram elements from being dragged into the negative axis region. When `RestrictNegativeAxisDragDrop` is enabled, diagram elements such as Node, Connector, Connector end thumbs, Groups, Swim lane objects, and stencil symbols can be restricted from dragging when the drag operation enters the negative region.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Syncfusion® Diagram supports to drag nodes and connectors at runtime.
-description: How to drag the preview of the nodes and connectors instead of dragging the original nodes and connectors ?
+title: Preview Settings in WPF SfDiagram | Syncfusion®
+description: Configure preview dragging in Syncfusion® WPF SfDiagram with outline-based movement, connector refresh timing, and preview appearance customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Preview Settings in WPF Diagram (SfDiagram)
+# Preview Settings in WPF SfDiagram
 
 [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to drag objects as an outline without affecting the original object. When multiple elements are selected, the outline of every selected element is moved.
 

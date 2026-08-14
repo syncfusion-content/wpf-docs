@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Striplines in WPF Charts control | Syncfusion
-description: Learn here all about Striplines support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Striplines in WPF Charts | Syncfusion®
+description: Striplines in the WPF Chart highlight specific ranges or regions on an axis, helping emphasize important values and thresholds.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Striplines in WPF Charts (SfChart)
+# Striplines in WPF Charts
 
 SfChart allows you to add Striplines to the chart, which shades the specific region or range in the plot area background at regular or custom intervals. 
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Swimlane-Stencil in WPF Diagram control | Syncfusion®
-description: Learn here all about Swimlane-Stencil support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: Swimlane Stencil in WPF SfDiagram | Syncfusion®
+description: Learn about swimlane stencil support in Syncfusion® WPF SfDiagram control, including lane and phase symbols, palettes, categories, and drag-and-drop.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Swimlane-Stencil in WPF Diagram (SfDiagram)
-The Diagram control provides support for adding lanes and phases to the stencil. 
+# Swimlane Stencil in WPF SfDiagram
+
+Diagram provides support to add lanes and phases to Stencil. 
+
 ## Add lanes and phases into stencil
 
 [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) elements such as [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html), and [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) can be used to visualize the Symbol.

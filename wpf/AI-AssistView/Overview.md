@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF AI AssistView control | Syncfusion
-description: Learn about the introduction of Syncfusion WPF AI AssistView Control (SfAvatarView) with essential features and more.
+title: About Syncfusion® WPF SfAIAssistView Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF SfAIAssistView control and explore its features, capabilities, and more details.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Overview of WPF AI AssistView (SfAIAssistView)
+# About Syncfusion® WPF SfAIAssistView Control
 
 The Syncfusion [WPF AI AssistView control](https://www.syncfusion.com/wpf-controls/aiassist-view) is used to enhance interaction between users and AI services. It offers a user-friendly interface for creating intelligent and responsive applications with AI services, allowing users to customize the appearance easily.
 
