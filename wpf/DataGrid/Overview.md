@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® WPF SfDataGrid Control | Syncfusion®
 canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
-description: Learn about the overview of Syncfusion® WPF SfDataGrid control, its features, architecture, data presentation capabilities, and customization options.
+description: Learn about the overview of Syncfusion® Essential Studio WPF SfDataGrid control, its features and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
