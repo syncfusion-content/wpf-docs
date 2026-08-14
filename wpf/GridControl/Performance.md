@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance in WPF GridControl | Syncfusion®
-description: Learn about Performance support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Optimize GridControl performance with virtual mode, high-frequency data updates, efficient rendering, real-time editing, and large data handling.
 platform: wpf
 control: GridControl
 documentation: ug
