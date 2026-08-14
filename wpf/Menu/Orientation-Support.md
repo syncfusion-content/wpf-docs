@@ -23,7 +23,7 @@ Similarly, when the value of the Orientation property is set to Vertical, the It
 
 
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv helps users to set the Menu items in Horizontal or Vertical orientations.
 

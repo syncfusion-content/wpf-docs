@@ -13,7 +13,7 @@ Commands are a way to bind the UI to the logic that performs the action, which i
 
 The command target is the element on which the command is to be executed with regards to a RoutedCommand and routing of the Executed and CanExecute starts. This can be attained by using the CommandTarget property of MenuItemAdv.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv helps users handle any command that can be routed outside the boundaries of the logical tree and do not require handling logic in code behind.
 

@@ -11,7 +11,7 @@ documentation: ug
 
 InputGestureText is used to set MenuItemAdv to display shortcut keys along with its Header. This support can be utilized by using the InputGestureText property. The value given by using this property will be displayed along with the Header of MenuItemAdv. Also, InputGestureText can be displayed in MenuItemAdv by using the command support. If you set the value of the Command property by using ApplicationCommands the corresponding InputGestureText will be displayed along with its header value automatically.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv helps users to display the shortcut keys along with the MenuItemAdv header.
 
