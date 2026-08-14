@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Covered Ranges in WPF GridControl | Syncfusion®
-description: Learn about Covered Ranges support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
-platform: WPF
+description: Create, manage, find, extend, and remove covered cell ranges in GridControl using covered ranges, events, and runtime customization.
+platform: wpf
 control: GridControl
 documentation: ug
 ---
