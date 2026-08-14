@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® WPF GridControl | Syncfusion®
-description: Learn about the overview of Syncfusion® Essential Studio WPF GridControl, its key features, Excel-like capabilities, virtual mode, and customization options.
+description: Learn about the overview of Syncfusion® Essential Studio WPF GridControl, its features and more details.
 platform: wpf
 control: GridControl
 documentation: ug
