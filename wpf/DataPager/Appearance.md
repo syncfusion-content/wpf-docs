@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF DataPager control | Syncfusion®
-description: Learn here all about Appearance support in Syncfusion® WPF DataPager (SfDataPager) control, its elements and more details.
+title: Appearance in WPF SfDataPager | Syncfusion®
+description: Customize the appearance of SfDataPager with support for auto ellipsis modes, accent brushes, display modes, orientation settings, and button styling.
 platform: wpf
-control: SfDataPager Control
+control: SfDataPager
 documentation: ug
 ---
 
-# Appearance in WPF DataPager (SfDataPager)
+# Appearance in WPF SfDataPager
 
 SfDataPager supports appearance styles by using the following properties.
 
