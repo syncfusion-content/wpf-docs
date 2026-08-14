@@ -11,7 +11,7 @@ documentation: ug
 
 [Selector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Selector.html) provides a visual representation of selected elements. It behaves like a container and enables you to update the size, position, and rotation angle of the selected elements through interaction and programmatically. Single or multiple elements can be selected at a time.
 
-### Single Selection
+## Single Selection
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
 
@@ -21,7 +21,7 @@ An element can be selected by clicking that element. During single click, all pr
 
 When a child element of any [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html) is clicked, its contained Group is selected instead of the child element. With consecutive clicks on the selected element, selection is changed from top to bottom in the hierarchy of parent Group to its children.
 
-### Multiple Selection
+## Multiple Selection
 
 Multiple elements can be selected in the following ways.
 
