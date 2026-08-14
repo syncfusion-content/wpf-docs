@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WPF TaskBar control | Syncfusion
-description: Learn about Appearance support in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
+title: Appearance in WPF TaskBar | Syncfusion®
+description: Appearance in WPF TaskBar allows customization of styles, colors, and visual elements to create attractive user interfaces.
 platform: wpf
 control: TaskBar
 documentation: ug

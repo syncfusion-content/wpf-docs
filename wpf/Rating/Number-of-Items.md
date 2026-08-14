@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Number of Items | SfRating | wpf | Syncfusion®
-description: Learn here about Number of items in Syncfusion® Essential Studio® WPF Rating (SfRating) control, its elements, and more.
+title: Number of Items in WPF SfRating | Syncfusion®
+description: Number of items in WPF SfRating determines the total rating elements displayed, enabling flexible rating scales for applications.
 platform: wpf
 control: SfRating
 documentation: ug
 ---
 
-# Number of Items in WPF Rating (SfRating) control
+# Number of Items in WPF SfRating
 
 The control allows the user to rate items from a predefined list of items.
 

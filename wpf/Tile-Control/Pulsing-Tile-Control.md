@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pulsing Tile in WPF Tile Control | Syncfusion
-description: Learn about Pulsing Tile support in Syncfusion Essential Studio WPF Tile Control, its elements and more.
-platform: WPF
+title: SfPulsingTile in WPF Tile Control | Syncfusion®
+description: SfPulsingTile in WPF Tile Control highlights content with pulsing visual effects, drawing user attention to important information and updates.
+platform: wpf
 control: SfPulsingTile
 documentation: ug
 ---
 
-# Pulsing Tile in WPF Tile Control
+# SfPulsingTile in WPF Tile Control
 
 The Pulsing Tile control (extended from [HubTileBase](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html) class) allows to create a tile similar to music and video tiles in Windows Phone. The content zooms in/out randomly with random movement along the X-axis and Y-axis. This section explains about the supporting features of Pulsing Tile control.
 
