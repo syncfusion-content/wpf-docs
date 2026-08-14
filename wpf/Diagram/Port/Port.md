@@ -452,10 +452,10 @@ port.ConnectionDirection = ConnectionDirection.Right;
 {% endhighlight %}
 {% endtabs %}
 
-#### Before ConnectionDirection 
+### Before ConnectionDirection 
 ![WPF Diagram Before Connection Direction](Port_images/wpf-diagram-before-connection-direction.PNG)
 
-#### After ConnectionDirection
+### After ConnectionDirection
 ![WPF Diagram After Connection Direction](Port_images/wpf-diagram-after-connection-direction.PNG)
 
 For more information , refer to [ConnectionDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectionDirection.html)
