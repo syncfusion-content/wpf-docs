@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Pin and Unpin TabItems in WPF Tabbed MDI Form control | Syncfusion®
-description: Learn here all about Pin and Unpin TabItems support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: WPF
+title: Pin and Unpin TabItems in WPF Tabbed MDI Form | Syncfusion®
+description: Pin or unpin tab items in the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control so important documents stay readily available.
+platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
-# Pin and Unpin TabItems in WPF Tabbed MDI Form (DocumentContainer)
+# Pin and Unpin TabItems in WPF Tabbed MDI Form
 
 This section explains the pin and unpin tab items support in DocumentContainer.
 

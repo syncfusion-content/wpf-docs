@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Select gradient color in WPF color picker control | Syncfusion®
-description: Learn here all about Select gradient color support in Syncfusion® WPF color picker (ColorPicker) control and more.
-platform: WPF
+title: Select Gradient Color in WPF Color Picker | Syncfusion®
+description: Select gradient colors in the Syncfusion WPF Color Picker (ColorPicker) control using the built-in gradient brush editor.
+platform: wpf
 control: ColorPicker
 documentation: ug
 ---
 
-# Select gradient color in WPF color picker (ColorPicker)
+# Select Gradient Color in WPF Color Picker
 
 This section gives a brief note on how to create gradient color, modify their colors and modify their properties.
 
-### What is a gradient color? 
+## What is a gradient color?
 
 A gradient color paints an area with multiple colors that blend into each other along an axis. [ColorPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) now comes with Gradient tools which returns a brush of type Linear and Radial gradient colors. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
 
@@ -115,11 +115,11 @@ Here, Linear Gradient created by the gradient colors and their location along th
 
 ![ColorPicker with Horizontal Linear Gradient Editor](ColorPicker-with-Gradient-Support_images/Default_LinearGradient.png)
 
-#### Diagonal Linear Gradient (StartPoint(0,0), EndPoint(1,1))
+### Diagonal Linear Gradient (StartPoint(0,0), EndPoint(1,1))
 
 ![ColorPicker Linear Gradient Editor](ColorPicker-with-Gradient-Support_images/LinearGradient_Example_1.png)
 
-#### Vertical Linear Gradient (StartPoint(0, 0.5), EndPoint(1, 0.5)
+### Vertical Linear Gradient (StartPoint(0, 0.5), EndPoint(1, 0.5)
 
 ![ColorPicker Linear Gradient Editor](ColorPicker-with-Gradient-Support_images/LinearGradient_Example_2.png)
 
@@ -202,15 +202,15 @@ Here, Radial Gradient created by the gradient colors and their location along th
 
 ![ColorPicker with Radial Gradient Editor](ColorPicker-with-Gradient-Support_images/Default_RadialGradient.png)
 
-#### Gradient Origin (0.25, 0.25)
+### Gradient Origin (0.25, 0.25)
 
 ![ColorPicker Radial Gradient Editor with Gradient Origin point](ColorPicker-with-Gradient-Support_images/RadialGradient_Origin.png)
 
-#### Centre (0.25, 0.25)
+### Centre (0.25, 0.25)
 
 ![ColorPicker Radial Gradient Editor with Centre point](ColorPicker-with-Gradient-Support_images/RadialGradient_Centre.png)
 
-#### Radius (0.25, 0.25)
+### Radius (0.25, 0.25)
 
 ![ColorPicker Radial Gradient Editor with Radius](ColorPicker-with-Gradient-Support_images/RadialGradient_Radius.png)
 
@@ -234,7 +234,7 @@ colorPicker.IsCenterVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker with show/hide RadialGradientBrush properties](ColorPicker-with-Gradient-Support_images/RadialGradient_IsCentreVisible)
+![ColorPicker with show/hide RadialGradientBrush properties](ColorPicker-with-Gradient-Support_images/RadialGradient_IsCentreVisible.png)
 
 ## Reverse the Gradient Colors
 

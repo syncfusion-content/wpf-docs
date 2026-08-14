@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Calculator control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF Calculator (SfCalculator) control, its elements and more details.
+title: About Syncfusion WPF Calculator Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF Calculator control, its features and more details.
 platform: wpf
 control: SfCalculator
 documentation: ug
 ---
 
-# WPF Calculator (SfCalculator) Overview
+# About Syncfusion WPF Calculator Control
 
 The [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control allows us to perform mathematical operations as like in calculator.
 
