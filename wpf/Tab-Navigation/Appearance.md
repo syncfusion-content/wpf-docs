@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF Tab Navigation control | Syncfusion
-description: Learn about Appearance support in Syncfusion Essential Studio WPF Tab Navigation control, its elements and more.
-platform: WPF
+title: Appearance in WPF TabNavigation | Syncfusion®
+description: Appearance in WPF TabNavigation allows customization of tab styles, colors, and layouts to create visually appealing interfaces.
+platform: wpf
 control: TabNavigation
 documentation: ug
 ---
 
-# Appearance in WPF Tab Navigation
+# Appearance in WPF TabNavigation
 
 ## Show/hide the Header
 
