@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Appearance in WPF AutoComplete (Classic) | Syncfusion®
+title: Appearance in WPF AutoComplete | Syncfusion®
 description: Customize the look and feel of the AutoComplete (Classic) control with built-in themes, skins, and visual effects support.
 platform: wpf
 control: AutoComplete
