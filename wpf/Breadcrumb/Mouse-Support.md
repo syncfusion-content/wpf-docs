@@ -1,13 +1,13 @@
-﻿---
+---
 layout: post
-title: Mouse Support in WPF Breadcrumb | Syncfusion®
-description: Use mouse interactions to select items, open navigation popups, scroll content, and browse hierarchical paths efficiently.
+title: Mouse Support in WPF HierarchyNavigator | Syncfusion®
+description: Mouse Support in WPF HierarchyNavigator allows intuitive navigation, selection, and manipulation of hierarchy items.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Mouse Support in WPF Breadcrumb (HierarchyNavigator)
+# Mouse Support in WPF HierarchyNavigator	
 
 An item can be selected by rolling the mouse over it. The highlight that appears on the rolled over item helps identify the item that is currently selected. You can click next to an item to view a navigation pop-up window.
 
