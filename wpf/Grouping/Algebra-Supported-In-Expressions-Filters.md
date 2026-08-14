@@ -35,7 +35,7 @@ Given below is some more information on special logical operators:
 
 
 
-### Example
+## Example
 
 [CompanyName] match 'RTR' returns 0 for any record whose CompanyName field does not contain RTR anywhere in the string. 
 
@@ -43,7 +43,7 @@ Given below is some more information on special logical operators:
 
 
 
-### Example 
+## Example 
 
 [CompanyName] like 'RTR' returns 1 for any record whose CompanyName field is exactly 'RTR'. You can use an asterisk as a wildcard. [CompanyName] like 'RTR*' returns 1 for any record whose CompanyName field starts with 'RTR'. [CompanyName] like '*RTR' returns 1 for any record whose CompanyName field ends with 'RTR'. 
 
@@ -51,7 +51,7 @@ Given below is some more information on special logical operators:
 
 
 
-### Example 
+## Example 
 
 [code] in {1,10,21}, returns 1 for any record whose code field contains 1 or 10 or 21. [CompanyName] in {RTR,MAS} returns 1 for any record whose CompanyName field is RTR or MAS. 
 
@@ -65,7 +65,7 @@ Given below is some more information on special logical operators:
 
 
 
-### Example
+## Example
 
 [date] between {2/25/2004, 3/2/2004} returns 1 for any record whose date field is greater than or equal to 2/25/2004 and less than 3/2/2004. To represent the current date, use the token TODAY. To represent DateTime.MinValue, leave the first argument empty. To represent DateTime.MaxValue, leave the second argument empty. 
 
