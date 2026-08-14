@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Collapsing the GroupBar in WPF Navigation Pane control | Syncfusion
-description: Learn here all about Collapsing the GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
+title: Collapse GroupBar in WPF Navigation Pane | Syncfusion®
+description: Enable collapsing behavior, configure collapse settings, and manage expanded or collapsed states in stack mode.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Collapsing the GroupBar in WPF Navigation Pane (GroupBar)
+# Collapse GroupBar in WPF Navigation Pane (GroupBar)
 
 Enabling this property allows the GroupBar to be collapsed when clicked. The GroupBar will collapse similar to the collapsing action in Microsoft office Outlook. AllowCollapse property is used to enable or disable the collapse button of the GroupBar.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Boundary Detection in WPF Menu control | Syncfusion
-description: Learn here all about Boundary Detection support in Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
+title: Boundary Detection in WPF Menu | Syncfusion®
+description: Boundary Detection in MenuAdv automatically adjusts popup and submenu placement to ensure they remain visible on screen.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -25,7 +25,7 @@ MenuItemAdv detects the boundaries and opens its submenu in the opposite directi
 
 
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv will be very useful when the number of submenu item levels are more and the opening of the submenu crosses the boundary, this feature allows the submenu be always visible by adjusting its position.
 

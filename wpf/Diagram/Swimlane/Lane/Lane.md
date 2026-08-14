@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Lane in WPF Diagram control | Syncfusion®
-description: Learn here all about Lane support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Lane in WPF SfDiagram | Syncfusion®
+description: Learn about lane in Syncfusion® WPF SfDiagram control, including lane creation, headers, customization, child nodes, and runtime management.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Lane in WPF Diagram (SfDiagram)
+# Lane in WPF SfDiagram
 
 A [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html) is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
 
-The number of lanes can be added to swimlane and rendered in the [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram). The lanes are automatically stacked inside swimlane based on the order they are added.
+The number of lanes can be added to swimlane and rendered in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram). The lanes are automatically stacked inside swimlane based on the order they are added.
 
 ## Create an empty lane
 
-* You can create the [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html) and add into the [Lanes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Lanes) collection of the Swimlane.
+* You can create the [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html) and add to the [Lanes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Lanes) collection of the Swimlane.
 
 >Note: For the Horizontal Swimlane, you must set the UnitHeight of the Lane. For the Vertical Swimlane, you must set UnitWidth of the Lane.
 
@@ -96,7 +96,7 @@ The following code example explains how to define a swimlane with lane.
 
 * The [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html#Syncfusion_UI_Xaml_Diagram_LaneViewModel_Header) property of lane allows you to textually describe the lane and to customize the appearance of the description.
 * The size of lane header can be controlled by using the [`UnitWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneChildViewModel_UnitWidth) and [`UnitHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneChildViewModel_UnitHeight) properties of header.
-* The appearance of lane header can be set by using the [`ShapeStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneChildViewModel_ShapeStyle) properties.
+* The appearance of the lane header can be set by using the [`ShapeStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneChildViewModel_ShapeStyle) properties.
 
 The following code example explains how to define a lane header and its customization.
 
@@ -114,7 +114,7 @@ The following code example explains how to define a lane header and its customiz
 <DataTemplate x:Key="viewTemplate">
     <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
                FontStyle="Italic" FontSize="12" 
-               FontFamily="TimesNewRomen" 
+               FontFamily="Times New Roman" 
                TextDecorations="Underline" 
                FontWeight="Bold" 
                Foreground="AliceBlue"/>
@@ -205,7 +205,7 @@ N> Default RotateAngle value of LaneHeader's Annotation is 270 degrees. If you w
 
 ## Add and Remove the lane at runtime
 
- You can add and remove the lane at runtime by using the `Add` and `Remove` method of the [`SfDiagram.Lanes`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Lanes) Collection. The following code explains how to dynamically add and remove lane to swimlane.
+ You can add and remove the lane at runtime by using the `Add` and `Remove` method of the [`SfDiagram.Lanes`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Lanes) Collection. The following code explains how to dynamically add and remove lane from the swimlane.
 
 {% tabs %}
 {% highlight xaml %}
@@ -438,9 +438,9 @@ NodeViewModel node = new NodeViewModel() { UnitHeight = 50, UnitWidth = 50, Lane
 
 ## Header Selection and Resize
 
- * You can select the individual lane header by clicking on the header twice. For first click, the respective lane can select. 
+ * You can select the individual lane header by clicking on the header twice. For first click, the respective lane is selected.
 
- * You can support to resize the individual lane  header. While resizing lane, it has maintain 20px distances from the Lane children.
+ * You can support to resize the individual lane  header. While resizing lane, it has maintain 20px distance from the Lane children.
  * The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) 
 
  The following image shows how to select and resize the lane header.
@@ -449,7 +449,7 @@ NodeViewModel node = new NodeViewModel() { UnitHeight = 50, UnitWidth = 50, Lane
   
 ## Lane header editing
 
-Diagram provides the support to edit Lane headers at runtime. You can achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
+Diagram provides the support to edit Lane headers at runtime. You can achieve the header editing by double click event. Double clicking the header label will enable the editing of that.
 The following image shows how to edit the lane header.
 
 ![Lane Header Editing](../Swimlane-images/Lane_Header_Edit.gif)

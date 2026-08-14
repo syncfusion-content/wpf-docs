@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Serialization and Deserialization in WPF Ribbon control | Syncfusion®
-description: Learn about Serialization and Deserialization support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: Serialization and Deserialization in WPF Ribbon Control | Syncfusion®
+description: Serialization and Deserialization in Ribbon lets you save and load the ribbon state, tab order, and QAT items to persist UI.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
 
-# Serialization and Deserialization in WPF Ribbon
+# Serialization and Deserialization in WPF Ribbon Control
 
-State persistence is a combined process of serialization and deserialization. Serialization is the process of converting the state of the object to the format in which it can be stored as a file in the memory. Deserialization is a complement process of serialization that converts into the object from the stored state information.
+State persistence is a combined process of serialization and deserialization. Serialization is the process of converting the state of the object to the format in which it can be stored as a file in the memory. Deserialization is a complementary process of serialization that converts the stored state information back into an object.
 
 The Ribbon control has built-in serialization support to serialize the entire Ribbon control state and details of the layout mode. It also provides supports to save and load the Ribbon at any time while running the application, either with simplified or normal layout.
 

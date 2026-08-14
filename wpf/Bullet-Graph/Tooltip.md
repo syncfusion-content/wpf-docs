@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Tooltip in WPF Bullet Graph control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
+title: Tooltip in WPF Bullet Graph | Syncfusion®
+description: Tooltip in the WPF Bullet Graph displays detailed information about values and targets on hover, enabling better data analysis.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Tooltip in WPF Bullet Graph (SfBulletGraph)
+# Tooltip in WPF Bullet Graph
 
-Tooltip in `SfBulletGraph` is used to view the values of FeaturedMeasure, ComparativeMeasure and QualitativeRange in required design.
+The tooltip in `SfBulletGraph` is used to view the values of FeaturedMeasure, ComparativeMeasure, and QualitativeRange in a required design.
 
-This tooltip is displayed when the mouse is over the FeaturedMeasure, ComparativeMeasure or QualitativeRange. Whereas, in touch device it is displayed on holding over the FeaturedMeasure, ComparativeMeasure and QualitativeRange of SfBulletGraph.
+The tooltip is displayed when the mouse is over the FeaturedMeasure, ComparativeMeasure, or QualitativeRange. On a touch device, it is displayed on holding over the FeaturedMeasure, ComparativeMeasure, or QualitativeRange of SfBulletGraph.
 
 The SfBulletGraph tooltip is displayed only when the [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ShowToolTip) property is set to true.
 
@@ -81,7 +81,7 @@ The SfBulletGraph tooltip is displayed only when the [`ShowToolTip`](https://hel
 
 ## Customizing FeaturedMeasureToolTip
 
-You can display the value of [`FeaturedMeasure`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_FeaturedMeasure) of SfBulletGraph in ToolTip that is used to view the FeaturedMeasure value .The [`FeaturedMeasureToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_FeaturedMeasureToolTipTemplate) is DataTemplate type by using this property, the default appearance of the FeaturedMeasure tooltip can be customized.
+You can display the value of [`FeaturedMeasure`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_FeaturedMeasure) of SfBulletGraph in a tooltip to view the FeaturedMeasure value. The [`FeaturedMeasureToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_FeaturedMeasureToolTipTemplate) is a DataTemplate type. By using this property, the default appearance of the FeaturedMeasure tooltip can be customized.
 
 {% tabs %}
 {% highlight xaml %}
@@ -163,7 +163,7 @@ You can display the value of [`FeaturedMeasure`](https://help.syncfusion.com/cr/
 
 ## Customizing ComparativeMeasureToolTip
 
-You can display the value of [`ComparativeMeasure`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ComparativeMeasure) of SfBulletGraph in ToolTip that is used to view the ComparativeMeasure value. The [`ComparativeMeasureToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ComparativeMeasureToolTipTemplate) is DataTemplate type by using this property, the default appearance of the ComparativeMeasure tooltip can be customized.
+You can display the value of [`ComparativeMeasure`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ComparativeMeasure) of SfBulletGraph in a tooltip to view the ComparativeMeasure value. The [`ComparativeMeasureToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ComparativeMeasureToolTipTemplate) is a DataTemplate type. By using this property, the default appearance of the ComparativeMeasure tooltip can be customized.
 
 {% tabs %}
 {% highlight xaml %}
@@ -245,7 +245,7 @@ You can display the value of [`ComparativeMeasure`](https://help.syncfusion.com/
 
 ## Customizing QualitativeRangeToolTip
 
-You can display the value of QualitativeRange of SfBulletGraph in ToolTip that is used to view the Start and End value of QualitativeRange. The [`QualitativeRangeToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QualitativeRangeToolTipTemplate) is DataTemplate type by using this property, the default appearance of the QualitativeRange tooltip can be customized.
+You can display the value of QualitativeRange of SfBulletGraph in a tooltip to view the Start and End values of the QualitativeRange. The [`QualitativeRangeToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QualitativeRangeToolTipTemplate) is a DataTemplate type. By using this property, the default appearance of the QualitativeRange tooltip can be customized.
 
 {% tabs %}
 {% highlight xaml %}
@@ -295,13 +295,13 @@ You can display the value of QualitativeRange of SfBulletGraph in ToolTip that i
             bulletgraph.Minimum = 0;
             bulletgraph.Maximum = 10;
             bulletgraph.FeaturedMeasure = 5;
-            bulletgraph.ShowToolTip = "True";
             bulletgraph.ComparativeMeasure = 4;
             bulletgraph.Interval = 2;
             bulletgraph.MinorTickSize = 8;
             bulletgraph.MinorTicksPerInterval = 3;
             bulletgraph.QualitativeRangesSize = 30;
             bulletgraph.FeaturedMeasureBarStroke = new SolidColorBrush(Colors.Black);
+            bulletgraph.ShowToolTip = true;
             bulletgraph.QualitativeRangeToolTipTemplate = grid.Resources["tooltipTemplate"] as DataTemplate;
             bulletgraph.QualitativeRanges.Add(new QualitativeRange()
             {

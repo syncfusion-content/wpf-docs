@@ -1,14 +1,14 @@
 ---
 layout: post
-title: RibbonListBox in WPF Ribbon control | Syncfusion®
-description: Learn about RibbonListBox support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: RibbonListBox in WPF Ribbon Control | Syncfusion®
+description: The RibbonListBox in Ribbon lets you add a list of selectable items to ribbon groups with single or multiple selection support.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonListBox in WPF Ribbon
+# RibbonListBox in WPF Ribbon Control
 
-`RibbonListBox` control is used to display a list of items in a Ribbon. It accepts any type of content as RibbonListBox items but `ListBoxItem` by default.
+`RibbonListBox` control is used to display a list of items in a Ribbon. It accepts any type of content as RibbonListBox items, but uses `ListBoxItem` by default.
 
 ## Add ListBox to the RibbonBar
 

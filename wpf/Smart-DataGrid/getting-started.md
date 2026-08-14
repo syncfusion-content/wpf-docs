@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF SfSmartDataGrid control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF SfSmartDataGrid (SfSmartDataGrid) control, its elements and more.
+title: Getting Started with WPF SfSmartDataGrid | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF SfSmartDataGrid control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfSmartDataGrid
 documentation: ug
 ---
 
-# Getting Started with WPF SfSmartDataGrid (SfSmartDataGrid)
+# Getting Started with WPF SfSmartDataGrid
 
 This section provides a quick overview for working with the [WPF SfSmartDataGrid](https://www.syncfusion.com/wpf-controls/smart-datagrid) (SfSmartDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
 
@@ -83,7 +83,7 @@ In this walk-through you will create a WPF application that uses the Syncfusion�
 
 Create new WPF Project in Visual Studio to display SfSmartDataGrid with data objects.
 
-<a id="install-the-syncfusion-wpf-nuget-packages"></a>
+<a id="install-the-syncfusion-wpf-nuget-packages" aria-label="Install the Syncfusion WPF NuGet Packages"></a>
 ### Install the Syncfusion® WPF NuGet packages
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.

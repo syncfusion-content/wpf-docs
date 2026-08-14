@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Height Customization in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Row Height Customization support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
+description: Learn here all about Row Height Customization support in the Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Row Height Customization in WPF TreeGrid (SfTreeGrid)
 
-You can change the header row height by setting **SfTreeGrid.HeaderRowHeight** and the other rows height can be changed by setting **SfTreeGrid.RowHeight** property.
+You can change the header row height by setting [SfTreeGrid.HeaderRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderRowHeight) and the other rows height can be changed by setting [SfTreeGrid.RowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_RowHeight)  property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -27,7 +27,7 @@ this.treeGrid.RowHeight = 30;
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the particular row height using **TreeGridPanel.RowHeights** property.
+You can also change the particular row height using [TreeGridPanel.RowHeights](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPanel.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPanel_RowHeights) property.
 
 
 {% tabs %}
@@ -47,7 +47,7 @@ void treeGrid_Loaded(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-You can also change the row height of particular row using **QueryRowHeight** event.
+You can also change the row height of particular row using [QueryRowHeight](#_QueryRowHeight) event.
 
 
 {% tabs %}
@@ -69,15 +69,15 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 
 ## QueryRowHeight event
 
-You can change the row height in on-demand based on the row index or row data using **SfTreeGrid.QueryRowHeight** event.
+You can change the row height in on-demand based on the row index or row data using [SfTreeGrid.QueryRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_QueryRowHeight) event.
 
-**QueryRowHeight** event triggered for each row when it becomes visible. **TreeGridQueryRowHeightEventArgs** provides information to **QueryRowHeight** event with following members,
+`QueryRowHeight` event triggered for each row when it becomes visible. [TreeGridQueryRowHeightEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryRowHeightEventArgs.html) provides information to `QueryRowHeight` event with following members,
 
-* **RowIndex** – denotes index of the row in SfTreeGrid.
+* `RowIndex` – denotes index of the row in SfTreeGrid.
 
-* **Height** – Gets or sets the height of the row.
+* `Height` – Gets or sets the height of the row.
 
-* **Handled** – Gets or sets a value indicating whether the **QueryRowHeight** event handled to change height of the row. Its default value is `false`.
+* `Handled` – Gets or sets a value indicating whether the `QueryRowHeight` event handled to change height of the row. Its default value is `false`.
 
 
 
@@ -101,15 +101,15 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 
 ## Fit the Row Height based on its content
 
-You can fit the row height based on its content in **QueryRowHeight** event handler using **GetAutoRowHeight** method. This improves the readability of the content and it does not affect the loading performance of the SfTreeGrid as the **QueryRowHeight** event triggered for rows in on-demand.
+You can fit the row height based on its content in `QueryRowHeight` event handler using [GetAutoRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumnSizer_GetAutoRowHeight_Syncfusion_UI_Xaml_TreeGrid_TreeNode_Syncfusion_UI_Xaml_Grid_GridRowSizingOptions_System_Double__) method. This improves the readability of the content and it does not affect the loading performance of the SfTreeGrid as the `QueryRowHeight` event triggered for rows in on-demand.
 
-**GetAutoRowHeight** method returns `true` when the row height is calculated for record and header rows and returns `false` for other rows. Calculated height based on content set to the `out` parameter and you can assign the calculated height to the `Height` property of **TreeGridQueryRowHeightEventArgs**.
+`GetAutoRowHeight` method returns `true` when the row height is calculated for record and header rows and returns `false` for other rows. Calculated height based on content set to the `out` parameter and you can assign the calculated height to the `Height` property of `TreeGridQueryRowHeightEventArgs`.
 
-Below are the parameter to **GetAutoRowHeight** method, 
+Below are the parameter to `GetAutoRowHeight` method, 
 
-1. **RowIndex** – denotes the index of row in SfTreeGrid.
+1. `RowIndex` – denotes the index of row in SfTreeGrid.
 
-2. **GridRowSizingOptions** – A class with properties to customize the row height calculation.
+2. `GridRowSizingOptions` – A class with properties to customize the row height calculation.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -157,17 +157,17 @@ Here, row heights are customized based on the large text content.
 
 ### GridRowSizingOptions
 
-**GridRowSizingOptions** have the following properties,
+[GridRowSizingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowSizingOptions.html) have the following properties,
 
-1. **ExcludeColumns** – If you want to skips specific column from row height calculation, you can add that columns to **GridRowSizingOptions.ExcludeColumns**. By default, **GetAutoRowHeight** method calculates the row height based on all columns.
+1. `ExcludeColumns` – If you want to skips specific column from row height calculation, you can add that columns to [GridRowSizingOptions.ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowSizingOptions.html#Syncfusion_UI_Xaml_Grid_GridRowSizingOptions_ExcludeColumns). By default, `GetAutoRowHeight` method calculates the row height based on all columns.
  
-2. **CanIncludeHiddenColumns** – If you want to consider the hidden columns while calculating row height, you can set **GridRowSizingOptions.CanIncludeHiddenColumns** as `true`.
+2. `CanIncludeHiddenColumns` – If you want to consider the hidden columns while calculating row height, you can set [GridRowSizingOptions.CanIncludeHiddenColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowSizingOptions.html#Syncfusion_UI_Xaml_Grid_GridRowSizingOptions_CanIncludeHiddenColumns) as `true`.
 
 ### Calculate Height based on certain columns
 
-You can exclude columns from row height calculation using **GridRowSizingOptions.ExcludeColumns**. This will helps to reduce the count of loop run for height calculation for better performance.
+You can exclude columns from row height calculation using `GridRowSizingOptions.ExcludeColumns`. This will helps to reduce the count of loop run for height calculation for better performance.
 
-You can add the columns which needs to exclude from height calculation using **GridRowSizingOptions.ExcludeColumns** collection.
+You can add the columns which needs to exclude from height calculation using `GridRowSizingOptions.ExcludeColumns` collection.
 
 
 {% tabs %}
@@ -205,9 +205,9 @@ Here `FirstName`,`LastName`, `Title` and `Salary` columns are excluded from heig
 
 ## Reset Row Height at runtime
 
-You can reset height of the particular or all rows in View at runtime to get the updated height from **QueryRowHeight** event handler using below methods. You have to call **InvalidateMeasureInfo** method of **TreeGridPanel** to refresh the View.
+You can reset height of the particular or all rows in View at runtime to get the updated height from `QueryRowHeight` event handler using below methods. You have to call [InvalidateMeasureInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPanel.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPanel_InvalidateMeasureInfo) method of `TreeGridPanel` to refresh the View.
  
-* **InvalidateRowHeight** – Resets the height of particular row.
+* [InvalidateRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_InvalidateRowHeight_System_Int32_) – Resets the height of particular row.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -221,7 +221,7 @@ treeGrid.GetTreePanel().InvalidateMeasureInfo();
 {% endcapture %}
 {{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
-* **TreeGridRowHeightManager.Reset** – Resets the height for all rows in View.
+* [TreeGridRowHeightManager.Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowHeightManager.html#Syncfusion_UI_Xaml_Grid_RowHeightManager_Reset) – Resets the height for all rows in View.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -238,9 +238,9 @@ treeGrid.GetTreePanel().InvalidateMeasureInfo();
 
 ### Update Row Height while editing
 
-You can set the height of the row based on the content after editing by refreshing the row height in **SfTreeGrid.CurrentCellEndEdit** event.
+You can set the height of the row based on the content after editing by refreshing the row height in [SfTreeGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellEndEdit) event.
 
-You can call the `InvalidateRowHeight` method in **CurrentCellEndEdit** event to reset the particular row height. Then call the **InvalidateMeasureInfo** method of **TreeGridPanel** to refresh the view. Now the **QueryRowHeight** event is called again for edited row alone and row height is calculated based on edited content.
+You can call the `InvalidateRowHeight` method in `CurrentCellEndEdit` event to reset the particular row height. Then call the `InvalidateMeasureInfo` method of `TreeGridPanel` to refresh the view. Now the `QueryRowHeight` event is called again for edited row alone and row height is calculated based on edited content.
 
  
 {% tabs %}
@@ -280,7 +280,7 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 
 ## Change HeaderRow Height based on its Content
 
-By default, auto height is supported for the headers is **QueryRowHeight** event. If you want to set the auto height to header row alone, you can use the **GetHeaderIndex** method to decide whether the row index is header or not in **QueryRowHeight** event.
+By default, auto height is supported for the headers is `QueryRowHeight` event. If you want to set the auto height to header row alone, you can use the [GetHeaderIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridIndexResolver_GetHeaderIndex_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_) method to decide whether the row index is header or not in `QueryRowHeight` event.
 
 
 {% tabs %}
@@ -333,8 +333,8 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 
 ## Change StackedHeaderRow Height based on its content
 
-By default, auto height is supported for **StackedHeaderRows** in **QueryRowHeight** event. You can also set the auto height to the StackedHeaderRows alone using **QueryRowHeight** event by checking the row index with StackedHeaderRows count.
-Also you can wrap stacked header text by writing style of TargetType **GridStackedHeaderCellControl** and set the **TextWrapping** as Wrap as below,
+By default, auto height is supported for `StackedHeaderRows` in `QueryRowHeight` event. You can also set the auto height to the StackedHeaderRows alone using `QueryRowHeight` event by checking the row index with StackedHeaderRows count.
+Also you can wrap stacked header text by writing style of TargetType [GridStackedHeaderCellControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridStackedHeaderCellControl.html) and set the `TextWrapping` as Wrap as below,
 
 
 {% tabs %}

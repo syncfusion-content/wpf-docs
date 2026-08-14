@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand and Collapse in WPF TreeView control | Syncfusion®
-description: Learn here all about Expand and Collapse support in Syncfusion® WPF TreeView (SfTreeView) control and more.
+title: Expand and Collapse in WPF TreeView | Syncfusion®
+description: Expand and Collapse in SfTreeView supports user-driven, programmatic, and data-bound node expansion with customizable behavior.
 platform: wpf
 control: SfTreeView
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Expand and Collapse in WPF TreeView (SfTreeView)
 
-The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. 
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) allows you to expand and collapse nodes either by user interaction on the nodes or programmatically.
 
-##  Expand Action Trigger
+## Expand Action Trigger
 
- Expanding and Collapsing of nodes can be performed either by tapping the expander view or in both expander view and content view by setting the [ExpandActionTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandActionTrigger) property.
+Expanding and collapsing nodes can be performed either by tapping the expander view, or in both the expander view and the content view, by setting the [ExpandActionTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandActionTrigger) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,17 +31,17 @@ sfTreeView.ExpandActionTrigger = ExpandActionTrigger.Node;
 
 ## Auto Expand Mode
 
-By default, the treeview items will be in collapsed state. You can define how the nodes to be expanded while loading the TreeView by using [AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AutoExpandMode) property.
+By default, TreeView items are collapsed. You can define how nodes are expanded when the TreeView is loaded by using the [AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AutoExpandMode) property.
 
-The `AutoExpandMode` property is only applicable for bound mode. For Unbound mode you need to set `IsExpanded` property to `true` while creating the nodes, to be in expanded state while loading the TreeView.
+The `AutoExpandMode` property is only applicable for bound mode. For unbound mode, set the `IsExpanded` property to `true` on each `TreeViewNode` when creating the nodes to have them expanded when the TreeView loads.
 
-* None : All items are collapsed when loaded.
-* RootNodes : Expands only the root item when loaded.
-* AllNodes : Expands all the items when loaded.
+* `None` — All items are collapsed when loaded.
+* `RootNodes` — Expands only the root items when loaded.
+* `AllNodes` — Expands all items when loaded.
 
 ## Expand or collapse the nodes based on property of underlying data object
 
-You can bind expand state of node to the bool property in underlying data object by using [IsExpandedPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.HierarchyPropertyDescriptor.html#Syncfusion_UI_Xaml_TreeView_Engine_HierarchyPropertyDescriptor_IsExpandedPropertyName) property. TreeView updates the expanded of node when underlying data object property gets changed and vice versa.
+You can bind the expanded state of a node to a `bool` property on the underlying data object by using the [IsExpandedPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.HierarchyPropertyDescriptor.html#Syncfusion_UI_Xaml_TreeView_Engine_HierarchyPropertyDescriptor_IsExpandedPropertyName) property. The TreeView updates the expanded state of the node when the underlying data object's property changes, and vice versa.
 
 {% tabs %}
 {% highlight xaml %}
@@ -174,8 +174,8 @@ TreeView allows programmatic expand and collapse based on the [TreeViewNode](htt
 
 * [ExpandNode(TreeViewNode item)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandNode_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) - Method to expand the particular `TreeViewNode` passed to it.
 * [CollapseNode(TreeViewNode item)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CollapseNode_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) - Method to collapse the particular `TreeViewNode` passed to it.
-* [ExpandNodes(int level)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandNodes_System_Int32_) - Method to expand the all items of level passed to it.
-* [CollapseNodes(int level)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CollapseNodes_System_Int32_) - Method to expand the all items of level passed to it.
+* [ExpandNodes(int level)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandNodes_System_Int32_) — Method to expand all items at the specified level.
+* [CollapseNodes(int level)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CollapseNodes_System_Int32_) — Method to collapse all items at the specified level.
 
 {% tabs %}
 {% highlight c# %}
@@ -212,17 +212,17 @@ sfTreeView.CollapseAll();
 
 ## Expand and Collapse using Keyboard
 
-TreeView allows to expand and collapse the nodes by using right and left arrows keys. To expand a node, press the right arrow key and to collapse a node, press the left arrow key on the focused item.
+The TreeView allows expanding and collapsing nodes using the right and left arrow keys. To expand a node, press the right arrow key on the focused item; to collapse a node, press the left arrow key.
 
 ## Events
 
 TreeView exposes following events to handle expanding and collapsing of items.
 
-* [NodeCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) - It occurs when a node is being collapsed.
-* [NodeExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) - It occurs when a node is being expanded.
-* [NodeCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) - It occurs when a node is collapsed.
-* [NodeExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) - It occurs when a node is expanded.
+* [NodeCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) — Occurs when a node is being collapsed.
+* [NodeExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) — Occurs when a node is being expanded.
+* [NodeCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) — Occurs after a node is collapsed.
+* [NodeExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) — Occurs after a node is expanded.
 
-The expanding and collapsing interactions can be handled with the help of `NodeCollapsing` and `NodeExpanding` events and expanded and collapsed interactions can be handled with help of `NodeCollapsed` and `NodeExpanded` events.
+Use the `NodeCollapsing` and `NodeExpanding` events to handle expanding and collapsing interactions. Use the `NodeCollapsed` and `NodeExpanded` events to react after the expansion or collapse has completed.
 
- N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.                                                                                                                                                                                                                             
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its key feature highlights. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.                                                                                                                                                                                                                             

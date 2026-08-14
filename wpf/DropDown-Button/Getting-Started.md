@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Dropdown Button control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Dropdown Button (DropDownButtonAdv) control, its elements and more details.
+title: Getting Started with WPF DropDown Button | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF DropDownButtonAdv (DropDownButtonAdv) control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: DropDownButtonAdv
 documentation: ug
@@ -17,7 +17,7 @@ This section provides an overview of how to work with [Dropdown Button](https://
 
 ## Assembly deployment
 
-Refer [DropDownButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#dropdownbuttonadv) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) needs to be added as reference to use the DropDownButtonAdv control in any application.
+Refer [DropDownButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#dropdownbuttonadv) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/installation/install-nuget-packages) needs to be added as reference to use the DropDownButtonAdv control in any application.
 
 ## Creating simple application with Dropdown Button
 

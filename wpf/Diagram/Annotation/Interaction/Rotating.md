@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotation Rotation | Syncfusion® 
-description: how to rotate the annotations in Syncfusion® Essential Studio® WPF Diagram (SfDiagram) control, its elements, and more.
+title: Annotation Rotation in WPF SfDiagram | Syncfusion®
+description: Learn about annotation rotation in Syncfusion® WPF SfDiagram control, including rotating annotations, rotation constraints, and rotation reference settings.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# How to Rotate the Annotation
+# Annotation Rotation in WPF SfDiagram
 
 Rotation process can be applied over annotation and rotation can be controlled by annotation and its parent node or connector.
 
@@ -15,7 +15,7 @@ To learn about annotation constraints, refer to the [Annotation Constraints](htt
 
 ## Rotating the annotation
 
-Rotation of annotation can be enabled by using the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Constraints) property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Rotatable`.
+Annotation rotation can be enabled by using the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Constraints) property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Rotatable`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,7 +47,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ## How to customize the annotation rotation
 
- The [`RotationReference`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_RotationReference) property of the annotation is to define the rotation based on Page or its host node or connector.To learn about the Rotate Reference property, refer to the [RotationReference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
+ The [`RotationReference`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_RotationReference) property of the annotation is to define the rotation based on Page or its host node or connector. To learn about the Rotate Reference property, refer to the [RotationReference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
 
 {% tabs %}
 {% highlight xaml %}
@@ -76,6 +76,6 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endtabs %}
 
 | Values | Description | Node |
-|---|---|---|---|
+|---|---|---|
 | Page | While rotating the node, annotation will not be rotated. | ![WPF Diagram Annotation Rotation Page](Annotation_images/wpf-diagram-annotation-rotation-page.gif) |
-| Wrap | While rotating the node, annotation will also be rotated with node. | ![WPF Diagram Annotation Rotation Parent](Annotation_images/wpf-diagram-annotation-rotation-parent.gif) |
+| Wrap | While rotating the node, annotation will also be rotated with the node. | ![WPF Diagram Annotation Rotation Parent](Annotation_images/wpf-diagram-annotation-rotation-parent.gif) |

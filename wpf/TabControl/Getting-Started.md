@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF TabControl control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF TabControl (TabControlExt) control, its elements and more.
-platform: WPF
-control: TabControl
+title: Getting Started with WPF TabControl | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF TabControl control, its elements, and more details.
+platform: wpf
+control: TabControlExt
 documentation: ug
 ---
 
-# Getting Started with WPF TabControl (TabControlExt)
+# Getting Started with WPF TabControl
 
 This section explains how to create a WPF [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) and explains about its structure.
 
@@ -21,7 +21,7 @@ The various elements of `TabControl` are illustrated in the following images.
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#tabcontrolext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
+Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuget packages in a WPF application.
 
 ## Adding WPF TabControl via designer
 
@@ -78,10 +78,9 @@ To add the [TabControl](https://www.syncfusion.com/wpf-controls/tabcontrol) cont
 
 2. Add the  following assembly references to the project,
     * Syncfusion.Shared.WPF
+    * Syncfusion.Tools.WPF
 
 3. Include the required namespace and create an instance of `TabControl` and add it to the window.
-
-4. Declare the `TabControl` control using C#.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -196,7 +195,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Selecting TabItem
 
-You can select a particular tab item by using the mouse click on the tab header. You can use the `Ctrl + Tab` key to select a tab item when control not in focused state. You also use the `Left-Arrow` and `Right-Arrow` key , to select the previous tab item or next tab item of current selected tab item when control in focused . You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
+You can select a particular tab item by using the mouse click on the tab header. You can use the `Ctrl + Tab` key to select a tab item when the control is in a focused state. You can also use the `Left-Arrow` and `Right-Arrow` keys to select the previous tab item or next tab item of the currently selected tab item when the control is focused. You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
 
 N> You can select only one tab item at a time.
 

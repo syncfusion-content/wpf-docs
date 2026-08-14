@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Touch Support in WPF Ribbon control | Syncfusion®
-description: Learn here about Touch Support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: Touch Support in WPF Ribbon Control | Syncfusion®
+description: Touch support in Ribbon provides touch-friendly interactions with larger tap targets and gesture support for tablet and touch devices.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Touch Support in WPF Ribbon
+# Touch Support in WPF Ribbon Control
 
-Ribbon control have touch support and it provides Touch UI which is easy to access the element in Ribbon. 
+The Ribbon control has touch support and it provides a Touch UI which is easy to access the element in Ribbon. 
 
 ### How to enable touch in RibbonWindow
 

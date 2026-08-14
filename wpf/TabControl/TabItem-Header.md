@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TabItem Header in WPF TabControl control | Syncfusion®
-description: Learn here all about TabItem Header support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPF
+title: TabItem Header in WPF TabControl | Syncfusion®
+description: Customize the header of a tab item in the Syncfusion WPF TabControl (TabControlExt) using built-in header templates and labels.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# TabItem Header in WPF TabControl (TabControlExt)
+# TabItem Header in WPF TabControl
 
 This section explains how to set header text and UI customization of the tab header in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
@@ -15,7 +15,7 @@ This section explains how to set header text and UI customization of the tab hea
 
 ## Setting tab item header
 
-You can add a text for the each tab headers by using the `TabItemExt.Header` property.
+You can add text to each tab header by using the `TabItemExt.Header` property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -47,7 +47,7 @@ tabControlExt.Items.Add(tabItemExt3);
 
 ## Edit tab item header at runtime
 
-You can edit the text of the tab header at runtime by double clicking the tab header or selected a tab and pressing `Ctrl + F2` key. You can restrict all the tab header editing by using the [EnableLabelEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_EnableLabelEdit) property value as `false`. The default value of `EnableLabelEdit` property is `true`.
+You can edit the text of the tab header at runtime by double clicking the tab header or selecting a tab and pressing the `Ctrl + F2` key. Press `Enter` to commit the change or `Esc` to cancel the edit. You can restrict all the tab header editing by using the [EnableLabelEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_EnableLabelEdit) property value as `false`. The default value of `EnableLabelEdit` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -113,7 +113,7 @@ private void tabControlExt_BeforeLabelEdit(object sender, BeforeLabelEditEventAr
 
 ## Custom UI for the edit tab item header
 
-You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_EditHeaderTemplate) property.
+You can customize the editing tab item header appearance for each tab item by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_EditHeaderTemplate) property.
 
 Please refer [Editing tab header](https://help.syncfusion.com/wpf/tabcontrol/databinding#editing-tab-header) topic to know more details about `EditHeaderTemplate`.
 
@@ -121,7 +121,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Setting size and alignment of tab header
 
-You can set a size of the each tabs by using the `TabItemExt.Width` and `TabItemExt.Height` properties. You can also align the header content horizontally and vertically by using the `TabItemExt.HorizontalContentAlignment` and `TabItemExt.VerticalContentAlignment` properties. The default value of `TabItemExt.HorizontalContentAlignment` and `TabItemExt.VerticalContentAlignment` properties is `Stretch`.
+You can set a size of each tab by using the `TabItemExt.Width` and `TabItemExt.Height` properties. You can also align the header content horizontally and vertically by using the `TabItemExt.HorizontalContentAlignment` and `TabItemExt.VerticalContentAlignment` properties. The default value of `TabItemExt.HorizontalContentAlignment` and `TabItemExt.VerticalContentAlignment` properties is `Stretch`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -144,15 +144,15 @@ You can set a size of the each tabs by using the `TabItemExt.Width` and `TabItem
 
 //Adding size and alignment of tabItemExt1 header
 tabItemExt1.Width = 200;
-tabItemExt1.Height = 300;
+tabItemExt1.Height = 30;
 tabItemExt1.HorizontalContentAlignment = HorizontalAlignment.Left;
 tabItemExt1.VerticalContentAlignment = VerticalAlignment.Center;
 
 //Adding size and alignment of tabItemExt2 header
-tabItemExt1.Width = 100;
-tabItemExt1.Height = 30;
-tabItemExt1.HorizontalContentAlignment = HorizontalAlignment.Right;
-tabItemExt1.VerticalContentAlignment = VerticalAlignment.Bottom;
+tabItemExt2.Width = 100;
+tabItemExt2.Height = 30;
+tabItemExt2.HorizontalContentAlignment = HorizontalAlignment.Right;
+tabItemExt2.VerticalContentAlignment = VerticalAlignment.Bottom;
 
 {% endhighlight %}
 {% endtabs %}
@@ -235,7 +235,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Setting tooltip
 
-ToolTip is used to show the information about the segment, when you mouse over on the segment. You can add a tooltip information for the each tab items by using the [TabItemExt.ItemToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html#Syncfusion_Windows_Tools_Controls_TabItemExt_ItemToolTip) property and show it by hovering the mouse on the respective header of the tab item.
+ToolTip is used to show the information about the segment, when you mouse over on the segment. You can add a tooltip information for each tab item by using the [TabItemExt.ItemToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html#Syncfusion_Windows_Tools_Controls_TabItemExt_ItemToolTip) property and show it by hovering the mouse on the respective header of the tab item.
 
 {% tabs %}
 {% highlight XAML %}
@@ -287,7 +287,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 You can change the tab item header background and foreground.
 
-## Change tab item background
+### Change tab item background
 
 If you want to change the tab item and its header panel background, use the `Background` and [TabPanelBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabPanelBackground) properties. You can change the hover background of all tab headers by using the [TabItemHoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabItemHoverBackground) property. You can also change the individual tab item header background and its hover background by using the `TabItemExt.Background` and [TabItemExt.HoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html#Syncfusion_Windows_Tools_Controls_TabItemExt_HoverBackground) properties. 
 
@@ -329,7 +329,7 @@ tabItemExt2.HoverBackground = Brushes.Green;
 
 ![Tab items with various background](Tab-Item-Header_images/Background.png)
 
-## Change tab item foreground
+### Change tab item foreground
 
  You can change the hover foreground of all tab headers by using the [TabItemHoverForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabItemHoverForeground) property. You can also change the individual tab item header foreground by using the `TabItemExt.Foreground` property. The default value of `TabItemHoverForeground` and `TabItemExt.Foreground`  properties is `Black`. 
 

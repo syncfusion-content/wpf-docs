@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Styling and Templates in WPF Ribbon control | Syncfusion®
-description: Learn about Styling and Templates support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: Styling and Templates in WPF Ribbon Control | Syncfusion®
+description: Styling and templates in Ribbon let you customize the visual appearance of ribbon tabs, items, and controls using XAML templates.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Styling and Templates in WPF Ribbon
+# Styling and Templates in WPF Ribbon Control
 
 ## Theme
 
@@ -16,4 +16,4 @@ Ribbon supports various built-in themes. Refer to the below links to apply theme
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Applying Theme to WPF Ribbon](GettingStarted_images/wpf-ribbon-theme.png)
+  ![Applying Theme to WPF Ribbon](getting-started_images/wpf-ribbon-theme.png)

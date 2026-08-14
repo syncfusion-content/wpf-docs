@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Supports to drag nodes, connectors and page at runtime | Syncfusion®
-description: How to drag the nodes and connectors and avoid overlapping of the nodes with connectors during runtime?
+title: Collision State in WPF SfDiagram | Syncfusion®
+description: Prevent element overlaps in Syncfusion® WPF SfDiagram using collision detection, spacing control, collision-free positioning, and ignore settings.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Collision State in WPF Diagram (SfDiagram)
+# Collision State in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) provide supports to arrange the nodes and connectors neatly by adjusting node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provide supports to arrange the nodes and connectors neatly by adjusting node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
 
 Using [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html) and [GetCollisionFreeLocation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_GetCollisionFreeLocation_Syncfusion_UI_Xaml_Diagram_CollisionState_) method, you can able to find a possible position without intersecting others for any given node.
 

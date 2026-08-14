@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Close tabs in WPF TabControl control | Syncfusion®
-description: Learn here all about Close tabs support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPF
+title: Close Tabs in WPF TabControl | Syncfusion®
+description: Close tab items in the Syncfusion WPF TabControl (TabControlExt) using the built-in close button and close button type options.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Close tabs in WPF TabControl (TabControlExt)
+# Close Tabs in WPF TabControl
 
-This section explains how to closing the tab item and its functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+This section explains how to close the tab item and its functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ## Closing tab item 
 
@@ -51,7 +51,7 @@ The following Close button modes are supported by the `TabControl`.
 * Common – The single close button is displayed commonly for all tab items in the tab panel.
 * Individual – The close button is displayed individually for each tab items in the tab panel.
 * Both – The close button is displayed individually for each tab item and also displayed in the tab panel.
-* Hide – All close buttons is hidden in the tab panel.
+* Hide – All close buttons are hidden in the tab panel.
 * IndividualOnMouseOver - The close button is displayed when the mouse hovers over the tab item in the tab panel.
 * Extended - The Close button is displayed in the selected tab and mousing hovering tab in the tab panel.
 
@@ -74,7 +74,7 @@ tabControlExt.CloseButtonType = CloseButtonType.Both;
 {% endhighlight %}
 {% endtabs %}
 
-![Common close button and individul close buttons shown in tab panel](Closable-tabs-images/CloseButtonType_Both.png)
+![Common close button and individual close buttons shown in tab panel](Closable-tabs-images/CloseButtonType_Both.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
@@ -199,7 +199,7 @@ Here, `tabItem1` cannot be closed.
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
-## Hide or delete item when closing a tab
+## Hide or delete an item when closing a tab
 
 You can decide whether the tab item can be only hidden from the view or removed from the items collection of `TabControl` by using the [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_CloseMode) property while closing it. If you set `CloseMode` property as `Hide`, the tab item will be hidden and the selection will be moved to previous index while hiding it. Also, if the property `CloseMode` is `Delete`, the tab item will be removed from the items collection and the selection will be retained in the same index while removing it. The default value of the `CloseMode` property is `Hide`.
 

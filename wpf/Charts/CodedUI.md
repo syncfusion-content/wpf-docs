@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Coded UI in WPF Charts control | Syncfusion
-description: Learn here all about Coded UI support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Coded UI in WPF Charts | Syncfusion®
+description: Coded UI in the WPF Chart supports automated UI testing by enabling interaction, validation, and verification of chart elements.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Coded UI in WPF Charts (SfChart)
+# Coded UI in WPF Charts
 
-Automated tests that drive your application through its user interface (UI) are known as **coded** **UI** **tests** (CUITs). These tests include functional testing of the UI controls. SfChart supports Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
+Automated tests that drive your application through its user interface (UI) are known as **coded UI** **tests** (CUITs). These tests include functional testing of the UI controls. SfChart supports Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
 
 ## Levels
 
@@ -218,4 +218,4 @@ IconVisibility, CheckBoxVisibility, VisibilityOnLegend, IsSeriesVisible, Label, 
 </table>
 
 
-N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.

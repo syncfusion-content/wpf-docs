@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Constraints in WPF Diagram Control | Syncfusion®
-description: Learn here all about constraints support in Syncfusion® WPF Diagram (SfDiagram) control, it's elements, and more.
+title: Constraints in WPF SfDiagram | Syncfusion®
+description: Control diagram behaviors in Syncfusion® WPF SfDiagram using graph, node, connector, port, annotation, selector, and snap constraints.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Constraints in WPF Diagram (SfDiagram)
+# Constraints in WPF SfDiagram
 
 `Constraints` are used to enable/disable certain behaviors of the [diagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html), [node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), [port](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePortViewModel.html) and [annotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html). Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (&, |, ~, <<, etc.). 
 To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations).
 
 ## Graph Constraints
 
-[GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allows to enable or disable the following behaviors.By default , `Zoomable` , `Pannable` , `PanRails` , `Relationship` , `Events` , `AutoScroll` , `PageEditing` constraints are enabled for diagram.
+[GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allows to enable or disable the following behaviors. By default  `Zoomable` , `Pannable` , `PanRails` , `Relationship` , `Events` , `AutoScroll` , `PageEditing` constraints are enabled for diagram.
 
 |Constraints|Description|
 |--|--|
@@ -39,7 +39,7 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 |`PannableY`	|Enables or disables the panning of diagram over Y -axis.|
 |`PanRails`	|Enables or disables the panning actions on the x-axis (horizontal panning) and y-axis (vertical panning) in SfDiagram.|
 |`PanRailsX`	|Enables or disables the pan rails of diagram in X-axis|
-|`PanRailsY	`|Enables or disables the pan rails of diagram in Y -axis|
+|`PanRailsY`|Enables or disables the pan rails of diagram in Y -axis|
 |`Relationship`	|Enables or disables the properties based on Node and Connector relationships on dragging at run time.|
 |`Resizable`	|Enables or disables the resize action on diagram or node.|
 |`Rotatable`	|Enables or disables the rotation action on diagram or node.|
@@ -61,7 +61,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
 ## Node Constraints
 
-[NodeConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allows to enable or disable the following behaviors of Node.By default `Selectable`, `Connectable`, `Inherit`, `RoutingObstacle`, `PivotDraggable`, `Delete` and `ThemeStyle` constraints are enabled for Node.
+[NodeConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allows to enable or disable the following behaviors of Node. By default `Selectable`, `Connectable`, `Inherit`, `RoutingObstacle`, `PivotDraggable`, `Delete` and `ThemeStyle` constraints are enabled for Node.
 
 |Constraints	|Description|
 |--|--|
@@ -116,7 +116,7 @@ The following code example illustrates how to disable rotation.
 {% highlight C# %}
 
 //Create NodeViewModel collection
-diagram.nodes = new ObservableCollection<NodeViewModel>();
+diagram.Nodes = new ObservableCollection<NodeViewModel>();
 
 //Create NodeViewModel 
 NodeViewModel node = new NodeViewModel()
@@ -201,12 +201,12 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 ## Port Constraints
 
-[PortConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortConstraints.html) allows to enable or disable the following behaviors of port.By default Inherit constraints are enabled for port.
+[PortConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortConstraints.html) allows to enable or disable the following behaviors of port. By default Inherit constraints are enabled for port.
 
 |Constraints	|Description|
 |--|--|
 |`Connectable`	|Enables or disables the connector creation from port.|
-|`ConnectionDirection`	|Decides the connection direction of port based on PortBase.ConnectionDirection|
+|`ConnectionDirection`	|Decides the connection direction of port based on PortBase.[ConnectionDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortBase.html#Syncfusion_UI_Xaml_Diagram_PortBase_ConnectionDirection)|
 |`Default`	|Enables or disables the Inheritable constraints.|
 |`Draggable`	|Enables or disables whether port to be dragged at boundaries of node|
 |`Dynamic`	|Defines whether port to be connected at boundaries of node and pointed to the port.|
@@ -242,7 +242,7 @@ NodePortViewModel port=	new NodePortViewModel()
 
 ## Annotation Constraints
 
-[AnnotationConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) allows to enable or disable the following behaviors of Annotation.By default Inherit and Editable constraints are enabled for annotation.
+[AnnotationConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) allows to enable or disable the following behaviors of Annotation. By default Inherit and Editable constraints are enabled for annotation.
 
 |Constraints	|Description|
 |--|--|
@@ -278,7 +278,7 @@ AnnotationEditorViewModel anno = new AnnotationEditorViewModel()
 {
     Content="Annotation",
     //Assign Constraint to Drag
-    Constraints=AnnotationConstraints.Draggable,
+    Constraints=AnnotationConstraints.Selectable | AnnotationConstraints.Draggable,
 };
 
 {% endhighlight %}
@@ -432,11 +432,11 @@ In the above example, you can check whether the rotate constraints are enabled i
 
 [How to do Panning the diagram in all the directions at a time?](https://support.syncfusion.com/kb/article/5874/how-to-do-panning-in-all-the-directions-at-a-time-in-wpf-diagram)
 
-[How to enable the behaviour of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
+[How to enable the behavior of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
 
 [How to enable the virtualization?](https://support.syncfusion.com/kb/article/6081/how-to-enable-the-virtualization-in-wpf-diagram-sfdiagram)
 
-[How to disable the page editing behaviour?](https://support.syncfusion.com/kb/article/5860/how-to-disable-page-editing-in-wpf-diagram-sfdiagram)
+[How to disable the page editing behavior?](https://support.syncfusion.com/kb/article/5860/how-to-disable-page-editing-in-wpf-diagram-sfdiagram)
 
 [How to remove the rotator thumb of the node?](https://support.syncfusion.com/kb/article/5943/how-to-remove-rotator-of-the-node-in-wpf-diagram-sfdiagram)
 
@@ -448,6 +448,6 @@ In the above example, you can check whether the rotate constraints are enabled i
 
 [How to disable the events of Diagram?](https://support.syncfusion.com/kb/article/5475/how-to-disable-the-events-of-wpf-diagram-sfdiagram)
 
-[How to prevent nodes from moving to a negative index when nudging in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17732/how-to-prevent-nodes-from-moving-to-a-negative-index-when-nudging-in-wpf-diagram-sfdiagram)
+[How to prevent nodes from moving to a negative index when nudging in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17732/how-to-prevent-nodes-from-moving-to-a-negative-index-when-nudging-in-wpf-diagram-sfdiagram)
 
-[How to enable undo or redo in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/5471/how-to-enable-undo-or-redo-in-wpf-diagram-sfdiagram)
+[How to enable undo or redo in WPF SfDiagram?](https://support.syncfusion.com/kb/article/5471/how-to-enable-undo-or-redo-in-wpf-diagram-sfdiagram)

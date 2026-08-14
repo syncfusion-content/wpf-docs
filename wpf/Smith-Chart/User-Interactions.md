@@ -1,17 +1,17 @@
 ---
 layout: post
-title: User Interactions in WPF Smith Chart control | Syncfusion
-description: Learn here all about User Interactions support in Syncfusion WPF Smith Chart (SfSmithChart) control and more.
+title: User Interactions in WPF Smith Chart | Syncfusion®
+description: User interactions in the WPF Smith Chart enable selection, tooltips, and data exploration for enhanced chart analysis and navigation.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# User Interactions in WPF Smith Chart (SfSmithChart)
+# User Interactions in WPF Smith Chart
 
 ## ToolTip
 
-The ToolTip for data points can be enabled by setting the *ShowToolTip* property as True. ToolTip displays the  duration that is defined by the *ToolTipDuration* property.
+The ToolTip for data points can be enabled by setting the *ShowToolTip* property as True. ToolTip displays for the duration that is defined by the *ToolTipDuration* property.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ chart.Series.Add(series);
 
 **ToolTipTemplate**
 
-*ToolTipTemplate* property allows to customize the default appearance of the tooltip as illustrated in the below code  example.
+The *ToolTipTemplate* property allows customizing the default appearance of the tooltip as illustrated in the below code example.
 
 {% tabs %}
 

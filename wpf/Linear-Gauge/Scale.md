@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Scale | SfLinearGauge | Wpf | Syncfusion
-description: Learn how to add scale to the Syncfusion linear gauge and customize the appearance of the scale in WPF platform 
+title: Scale in WPF Linear Gauge | Syncfusion®
+description: Scale in the WPF Linear Gauge defines value ranges, intervals, and labels, enabling accurate measurement and data representation.
 platform: wpf
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Scale in SfLinearGauge 
+# Scale in WPF Linear Gauge
 
-The [`MainScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_MainScale) is a linear scale integrates ticks, labels, ranges, and pointers to customize the basic look and feel of the linear gauge.
+The [`MainScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_MainScale) is a linear scale that integrates ticks, labels, ranges, and pointers to customize the basic look and feel of the linear gauge.
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ To change the minimum and maximum values of a linear scale, use the [`Minimum`](
 
 ## Setting interval for a scale
 
-The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Interval) property allows to set intervals for scale. The default value of the `Interval` property is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
+The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Interval) property allows you to set intervals for the scale. The default value of the `Interval` property is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
 
 {% tabs %}
 
@@ -152,7 +152,7 @@ The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.Li
 
 ## Scale customization
 
-You can customize the color, length, size, and position of the `LinearScale` using the [`ScaleBarStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarStroke), [`ScaleBarBorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarBorderThickness), and [`ScaleBarBorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarBorderBrush) properties, respectively.
+You can customize the color, length, size, and position of the `LinearScale` using the [`ScaleBarStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarStroke), [`ScaleBarBorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarBorderThickness), and [`ScaleBarBorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarBorderBrush) properties.
 
 {% tabs %}
 
@@ -206,10 +206,10 @@ You can customize the color, length, size, and position of the `LinearScale` usi
 
 ### Size customization
 
-Size of the scale can be customized using the following two properties.
+The size of the scale can be customized using the following two properties.
 
-* [`ScaleBarSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarSize) - Customizes the size of the scale bar (i.e height in case of landscape orientation).
-* [`ScaleBarLength`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarLength) - Customizes the length of the scale bar (i.e width in case of landscape orientation).
+* [`ScaleBarSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarSize) - Customizes the size of the scale bar (i.e., height in case of landscape orientation).
+* [`ScaleBarLength`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarLength) - Customizes the length of the scale bar (i.e., width in case of landscape orientation).
 
 {% tabs %}
 
@@ -241,7 +241,7 @@ Size of the scale can be customized using the following two properties.
 
             sfLinearGauge.Height = 300;
 
-            sfLinearGauge.Width=500;
+            sfLinearGauge.Width = 500;
 
             LinearScale linearScale = new LinearScale();
 
@@ -263,7 +263,7 @@ Size of the scale can be customized using the following two properties.
 
 ## Setting scale direction
 
-You can set the scale position to its forward and backward using the [`ScaleDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleDirection) property.
+You can set the scale direction to forward or backward using the [`ScaleDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleDirection) property.
 
 {% tabs %}
 
@@ -313,7 +313,7 @@ You can set the scale position to its forward and backward using the [`ScaleDire
 
 ## Setting position for a scale
 
-You can set the scale position using the [`ScaleBarPositionFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarPositionFactor) property. First, set the [`ElementsPositionMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ElementsPositionMode) to custom, and then set [`ScaleBarPositionFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarPositionFactor).
+You can set the scale position using the [`ScaleBarPositionFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarPositionFactor) property. First, set the [`ElementsPositionMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ElementsPositionMode) to Custom, and then set the [`ScaleBarPositionFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarPositionFactor).
 
 {% tabs %}
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Exporting in WPF Diagram control | Syncfusion®
-description: Learn here all about Exporting support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Exporting in WPF SfDiagram | Syncfusion®
+description: Export diagrams from Syncfusion® WPF SfDiagram to image and XPS formats with customizable settings, regions, sizes, and backgrounds.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Exporting in WPF Diagram (SfDiagram)
+# Exporting in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) provides the support to export its content as image/XPS files using the [Export](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Export) method.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides the support to export its content as image/XPS files using the [Export](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Export) method.
 SfDiagram can be exported in the following File formats.
 
 * PNG
@@ -202,10 +202,10 @@ SfDiagram provides the supports to strech the exported image within given image 
 
 | ImageShrunk | Description |
 |---|---|
-| None | Exported image will not be streched |
-| Expand | Exported image will be expaned to the given image size |
-| Shrink| Exported image will be shrinked to the given image size |
-| BestFit| Exported image will be expaned/shrinked depends on given image size |
+| None | Exported image will not be stretched |
+| Expand | Exported image will be expand to the given image size |
+| Shrink| Exported image will be shrink to the given image size |
+| BestFit| Exported image will be expand/shrink depends on given image size |
 
 {% tabs %}
 {% highlight xaml %}

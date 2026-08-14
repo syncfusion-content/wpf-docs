@@ -1,12 +1,12 @@
 ---
 layout: post
-title: State Persistence in WPF Docking control | Syncfusion®
-description: Learn here all about State Persistence support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: State Persistence in WPF DockingManager Control | Syncfusion®
+description: The state persistence in DockingManager lets you save and restore the layout, state, and position of docked child windows.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# State Persistence in WPF Docking (DockingManager)
+# State Persistence in WPF DockingManager Control
 
 State persistence is the combined process of serialization and deserialization. 
 
@@ -267,9 +267,9 @@ BinaryFormatter format = new BinaryFormatter();
 
 DockingManager1.LoadDockState(format, StorageFormat.Binary, "\\docking_bin.bin");
 
-BinaryFormatter format = new BinaryFormatter();
+BinaryFormatter saveFormat = new BinaryFormatter();
 
-DockingManager1.SaveDockState(format, StorageFormat.Binary, "\\docking_bin.bin");
+DockingManager1.SaveDockState(saveFormat, StorageFormat.Binary, "\\docking_bin.bin");
 
 
 {% endhighlight %}

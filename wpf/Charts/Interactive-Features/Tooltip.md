@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Tooltip in WPF Charts control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Tooltip in WPF Charts | Syncfusion®
+description: Tooltip in the WPF Chart displays detailed information about data points on hover, helping users analyze chart data effectively.
 platform: wpf
 control: SfChart
 documentation: ug
 
 ---
 
-# Tooltip in WPF Charts (SfChart)
+# Tooltip in WPF Charts
 
 The Tooltip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer or at the data point position. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 
 ## Define Tooltip
 
-By default, a small box containing the data points y values are displayed as the Tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in the Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#), high, low, open, and close values are displayed in Tooltip.
+By default, a small box containing the data point's Y values is displayed as the Tooltip. The Y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single Y value is usually displayed in the Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#), high, low, open, and close values are displayed in the Tooltip.
 
-The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as in the below code snippet.
+The tooltip will be visible if you enable the [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as in the below code snippet.
 
 {% tabs %}
 
@@ -65,9 +65,9 @@ chart.Series.Add(series2);
 
 ## Customizing tooltip using ChartTooltipBehavior
 
-The [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is commonly used for all series to customize the tooltip. For customizing the tooltip, you can create an instance [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and add it to the SfChart [`Behaviors`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors) collection.
+The [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is commonly used for all series to customize the tooltip. For customizing the tooltip, you can create an instance of [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and add it to the SfChart [`Behaviors`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors) collection.
 
-The following properties are used to customize and configure tooltip which is available in the [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html).
+The following properties are used to customize and configure the tooltip, which is available in the [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html).
 
 * [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_EnableAnimation) - Used to enable the animation when showing the tooltip.
 * [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) - Used to position the tooltip at the data point position or the cursor position.
@@ -78,7 +78,7 @@ The following properties are used to customize and configure tooltip which is av
 * [`HorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalAlignment) - Used to align the tooltip label at left, right, and center of the data point position or cursor position horizontally.
 * [`VerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalAlignment) - Used to align the tooltip label at top, center, and bottom of the data point position or cursor position vertically.
 * [`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_ShowDuration) - Used to set the amount of time that the tooltip remains visible in milliseconds.
-* [`InitialShowDelay`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_InitialShowDelay) - Used to delay in milliseconds to show the tooltip once the user interacts with series.
+* [`InitialShowDelay`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_InitialShowDelay) - Used to set the delay in milliseconds to show the tooltip once the user interacts with the series.
 
 {% tabs %}
 
@@ -103,11 +103,11 @@ chart.Behaviors.Add(behavior);
 
 ### Positioning the tooltip
 
-Tooltip can be positioned at the data point position or the cursor position using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) property. The `Auto` will position the tooltip at the data point position and the `Pointer` will display the tooltip in conjunction with the mouse pointer itself when hovering the mouse inside any chart segment.
+Tooltip can be positioned at the data point position or the cursor position using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) property. The `Auto` value will position the tooltip at the data point position, and the `Pointer` value will display the tooltip in conjunction with the mouse pointer itself when hovering the mouse inside any chart segment.
 
-N> By default, the tooltip [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) is set to Auto.
+N> By default, the tooltip [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) is set to `Auto`.
 
-The following code example explains positioning the tooltip at `Pointer` position.
+The following code example explains positioning the tooltip at the `Pointer` position.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ The following code example explains positioning the tooltip at `Pointer` positio
 {% highlight c# %}
 
 SfChart chart = new SfChart();
-...
+// code omitted for brevity
 ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
 chartTooltipBehavior.Position = TooltipPosition.Pointer;
 
@@ -136,9 +136,9 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 ### Customizing the tooltip background
 
-The tooltip's fill and stroke color can be customized using the [`Style`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) property. To define a style for the tooltip background, specify the style of `TargetType` as `Path.`
+The tooltip's fill and stroke color can be customized using the [`Style`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) property. To define a style for the tooltip background, specify the style of `TargetType` as `Path`.
 
-The following code example explains applying the style for tooltip.
+The following code example explains applying the style for the tooltip.
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ The following code example explains applying the style for tooltip.
         <Setter Property="Fill" Value="Gray"/>
     </Style>
 </chart:SfChart.Resources>
-...
+<!-- code omitted for brevity -->
 <chart:SfChart.Behaviors>
     <chart:ChartTooltipBehavior Style = "{StaticResource style}"/>
 </chart:SfChart.Behaviors>
@@ -165,13 +165,13 @@ Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
 
-...
+// code omitted for brevity
 
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
 
 chart.Behaviors.Add(tooltipBehavior);
-...
+// code omitted for brevity
 
 {% endhighlight %}
 
@@ -181,7 +181,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ### Customizing the tooltip label style
 
-The tooltip label style can be customized using the [`LabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) property. To define a style for the tooltip label, specify the style of `TargetType` as `TextBlock.`
+The tooltip label style can be customized using the [`LabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) property. To define a style for the tooltip label, specify the style of `TargetType` as `TextBlock`.
 
 The following code example explains applying the style for a tooltip label.
 
@@ -195,7 +195,7 @@ The following code example explains applying the style for a tooltip label.
         <Setter Property="Foreground" Value="Red"/>
     </Style>
 </chart:SfChart.Resources>
-...
+<!-- code omitted for brevity -->
 <chart:SfChart.Behaviors>
     <chart:ChartTooltipBehavior LabelStyle = "{StaticResource labelStyle}"/>
 </chart:SfChart.Behaviors>
@@ -209,12 +209,12 @@ SfChart chart = new SfChart();
 Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
-...
+// code omitted for brevity
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.LabelStyle = labelStyle;
 
 chart.Behaviors.Add(tooltipBehavior);
-...
+// code omitted for brevity
 
 {% endhighlight %}
 
@@ -230,7 +230,7 @@ The tooltip can be aligned with respect to the cursor position using the [`Horiz
 
 **HorizontalAlignment**
 
-The following code example explains the positioning of tooltip to the left of the cursor.
+The following code example explains the positioning of the tooltip to the left of the cursor.
 
 {% tabs %}
 
@@ -283,11 +283,11 @@ chart.Series.Add(series2);
 
 ![Tooltip alignment support in WPF Chart](Interactive-Features_images/Interactive-Features_image5.png)
 
-N> By default the horizontal alignment is center for the tooltip.
+N> By default, the horizontal alignment is `Center` for the tooltip.
 
 **VerticalAlignment**
 
-The following code example explains the positioning of tooltip to the bottom of the cursor.
+The following code example explains the positioning of the tooltip to the bottom of the cursor.
 
 {% tabs %}
 
@@ -338,11 +338,11 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_image6.png)
+![Tooltip alignment support in WPF Chart](Interactive-Features_images/Interactive-Features_image6.png)
 
 **TooltipMargin**
 
-You can also set the distance for the margin to be positioned from the cursor using the TooltipMargin property as in the following code sample.
+You can also set the distance for the margin to be positioned from the cursor using the [`TooltipMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_TooltipMargin) property as in the following code sample.
 
 {% tabs %}
 
@@ -401,13 +401,13 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_image7.png)
+![Margin for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_image7.png)
 
-N>By default, the VerticalAlignment of the Tooltip is Top.
+N> By default, the VerticalAlignment of the Tooltip is `Top`.
 
 **VerticalOffset and HorizontalOffset**
 
-The tooltip can be positioned at a particular distance from the cursor horizontally using the [`HorizontalOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalOffset) and vertically using [`VerticalOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalOffset) properties.
+The tooltip can be positioned at a particular distance from the cursor horizontally using the [`HorizontalOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalOffset) property and vertically using the [`VerticalOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalOffset) property.
 
 {% tabs %}
 
@@ -470,9 +470,9 @@ chart.Series.Add(series2);
 
 ### Tooltip duration
 
-This property [`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_ShowDuration) in [`ChartToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for tooltip to be displayed in milliseconds.
+This property [`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_ShowDuration) in [`ChartToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for the tooltip to be displayed in milliseconds.
 
-The following code example demonstrates the duration of the tooltip set as 5 seconds.
+The following code example demonstrates the duration of the tooltip set to 5 seconds.
 
 {% tabs %}
 
@@ -509,13 +509,13 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-N> The tooltip by default will be displayed for 1000 milliseconds.
+N> By default, the tooltip will be displayed for 1000 milliseconds.
 
 **Show delay**
 
-ToolTip also has support to delay the time to display by setting the [`SetInitialShowDelay`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetInitialShowDelay_System_Windows_DependencyObject_System_Int32_) property in milliseconds.
+The tooltip also has support to delay the time to display by setting the [`SetInitialShowDelay`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetInitialShowDelay_System_Windows_DependencyObject_System_Int32_) property in milliseconds.
 
-The following code example demonstrates the tooltip will be delayed for 1 second at the before display.
+The following code example demonstrates that the tooltip will be delayed for 1 second before display.
 
 {% tabs %}
 
@@ -554,7 +554,7 @@ chart.Series.Add(series);
 
 ### Animation for Tooltip
 
-You can also provide animation effects for tooltip by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_EnableAnimation) property to true as shown in the following code snippet.
+You can also provide animation effects for the tooltip by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_EnableAnimation) property to `true` as shown in the following code snippet.
 
 {% tabs %}
 
@@ -607,7 +607,7 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
     </Style>
 </chart:SfChart.Resources>
 
-...
+<!-- code omitted for brevity -->
 
 <chart:ColumnSeries
     ShowTooltip="True"
@@ -681,19 +681,19 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 
 </chart:ColumnSeries>
 
-...
+<!-- code omitted for brevity -->
 
 <chart:SfChart.Behaviors>
     <chart:ChartTooltipBehavior
         Style="{StaticResource style}" />
 </chart:SfChart.Behaviors>
-...
+<!-- code omitted for brevity -->
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-...
+// code omitted for brevity
 
 DataTemplate tooltip = new DataTemplate();
 
@@ -741,7 +741,7 @@ ColumnSeries series1 = new ColumnSeries()
 };
 
 chart.Series.Add(series1);
-...
+// code omitted for brevity
         
 {% endhighlight %}
 
@@ -749,12 +749,13 @@ chart.Series.Add(series1);
 
 ![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_image9.png)
 
-N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
+N> The [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is commonly used for all series to customize the tooltip. You can use the attached [`ChartTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series-attached properties are considered as a high precedence.
 
 ## See also
 
-[`How to display the tooltip when the mouse is in any region of the FastLineBitmapSeries in WPF Chart?`](https://www.syncfusion.com/kb/10921/how-to-display-the-tooltip-when-the-mouse-is-in-any-region-of-the-fastlinebitmapseries-in)
-[`How to customize the tooltip in chart?`](https://www.syncfusion.com/kb/10723/how-to-customize-the-tooltip-in-chart)
-[`How to set the duration for chart tooltip?`](https://www.syncfusion.com/kb/5474/how-to-set-the-duration-for-chart-tooltip)
-[`How to make the tooltip to display x and y values together or any other value from the underlying model?`](https://www.syncfusion.com/kb/5231/how-to-make-the-tooltip-to-display-x-and-y-values-together-or-any-other-value-from-the)
-[`How to view the tooltip when segment is underneath the axis line?`](https://www.syncfusion.com/kb/4722/how-to-view-the-tooltip-when-segment-is-underneath-the-axis-line)
+* [`How to position tooltip relative to mouse pointer in WPF Charts`](https://support.syncfusion.com/kb/article/10946/how-to-position-tooltip-relative-to-mouse-pointer-in-wpf-charts)
+* [`How to customize the default tooltip background in WPF Chart`](https://support.syncfusion.com/kb/article/10945/how-to-customize-the-default-tooltip-background-in-wpf-chart)
+* [`How to display additional data in the tooltip of WPF Chart`](https://support.syncfusion.com/kb/article/4956/how-to-display-additional-data-in-the-tooltip-of-wpf-chart-)
+* [`How to customize the Tooltip in WPF SfChart`](https://support.syncfusion.com/kb/article/9351/how-to-customize-the-tooltip-in-wpf-sfchart)
+* [`How to set the duration for WPF Chart (SfChart) tooltip`](https://support.syncfusion.com/kb/article/5118/how-to-set-the-duration-for-wpf-chart-sfchart-tooltip)
+* [`How to restrict the tooltip on a WPF Chart`](https://support.syncfusion.com/kb/article/12326/how-to-restrict-the-tooltip-on-a-wpf-chart)

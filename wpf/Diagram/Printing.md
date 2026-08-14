@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Printing in WPF Diagram control | Syncfusion®
-description: Learn here all about Printing support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Printing in WPF SfDiagram | Syncfusion®
+description: Print diagrams in Syncfusion® WPF SfDiagram with print preview, page settings, scaling, headers, footers, and custom paper sizes.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Printing in WPF Diagram (SfDiagram)
+# Printing in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "PrintingService.Print") method.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "PrintingService.Print") method.
 
 ## Direct print
 
@@ -409,6 +409,6 @@ diagram.PrintingService.ShowClassicPrintPreview();
 
 [How to show classic print preview?](https://support.syncfusion.com/kb/article/8186/how-to-show-classic-print-preview-in-wpf-diagram-sfdiagram)
 
-[How to enable the Print Properties option in the Print dialog in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18697/how-to-enable-the-print-properties-option-in-the-print-dialog-in-wpf-diagram-sfdiagram)
+[How to enable the Print Properties option in the Print dialog in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18697/how-to-enable-the-print-properties-option-in-the-print-dialog-in-wpf-diagram-sfdiagram)
 
 [How to ignore empty pages while printing the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/8537/how-to-ignore-empty-pages-while-printing-the-wpf-diagram-sfdiagram)

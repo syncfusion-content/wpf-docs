@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF AI-Powered Text Editor control | Syncfusion®
-description: Explore the core features and intelligent capabilities of the Syncfusion® WPF AI-powered Text Editor (SfSmartTextEditor) control.
+title: About Syncfusion® WPF SfSmartTextEditor Control | Syncfusion®
+description: Learn about introduction and overview of Syncfusion® WPF SfSmartTextEditor control and more details.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
 ---
 
-# Overview of WPF Smart Text Editor
+# About Syncfusion® WPF SfSmartTextEditor Control
 
 Syncfusion [WPF AI-Powered Text Editor](https://www.syncfusion.com/wpf-controls/smart-text-editor) (SfSmartTextEditor) is a multiline input control that uses predictive suggestions to speed up typing. It can integrate with an AI inference service for context-aware completions, enables inline and popup suggestion display, and reverts to your custom phrase list in the event that AI is not available. The control offers command/event hooks for text changes, full text style, and customizable placeholders.
 
@@ -25,7 +25,7 @@ Syncfusion [WPF AI-Powered Text Editor](https://www.syncfusion.com/wpf-controls/
 
 * **Keyboard integration**: Makes it possible to accept ideas quickly by utilizing the Tab or Right Arrow keys.
 
-* **Gesture support**: Allows touch users to tap or click recommendations in the pop-up for quick input.
+* **Gesture support**: Allows touch users to tap or click recommendations in the popup for quick input.
 
 * **Placeholder text**: Enables placeholders to be configured with customizable color styling.
 

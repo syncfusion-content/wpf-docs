@@ -1,7 +1,7 @@
 ---
 layout: post
-title: KPI in WPF Olap Chart control | Syncfusion
-description: Learn about KPI support in Syncfusion Essential Studio® WPF Olap Chart control, its elements and more details.
+title: KPI in WPF Olap Chart | Syncfusion®
+description: KPI in the WPF OLAP Chart displays key performance indicators to monitor, evaluate, and analyze business metrics effectively.
 platform: wpf
 control: OLAP Chart
 documentation: ug
@@ -13,10 +13,10 @@ KPI is a collection of calculations that are associated with a measure group in 
 
 The following are the different types of indicators:
 
-* KPI goal
-* KPI status
-* KPI trend
-* KPI value
+* [KPI goal](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.Olap.Kpi.html#Syncfusion_Windows_Chart_Olap_Kpi_ShowGoal)
+* [KPI status](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.Olap.Kpi.html#Syncfusion_Windows_Chart_Olap_Kpi_ShowStatus)
+* [KPI trend](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.Olap.Kpi.html#Syncfusion_Windows_Chart_Olap_Kpi_ShowTrend)
+*[KPI value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Chart.Olap.Kpi.html#Syncfusion_Windows_Chart_Olap_Kpi_ShowValue)
 
 The KPI elements can be defined in the OLAP report in the following way.
 

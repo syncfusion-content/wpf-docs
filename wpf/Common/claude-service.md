@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Claude AI for AI-Powered Components | Syncfusion®
-description: Learn how to implement a custom AI service using the Claude API with Syncfusion<sup>&reg;</sup> AI-Powered Components.
+title: Claude AI Service in WPF Smart Components | Syncfusion®
+description: Integrate Claude AI with WPF Smart Components using the IChatInferenceService interface for intelligent AI-powered features.
 platform: wpf
 control: SmartComponents
 documentation: ug
 ---
 
-# Claude AI Integration with WPF Smart Components
+# Claude AI Service in WPF Smart Components
 
 The Syncfusion WPF AI-powered components can enhance applications with intelligent capabilities. You can integrate Anthropic `Claude AI` using the `IChatInferenceService` interface, which acts as a bridge between the editor and your custom AI service.
 

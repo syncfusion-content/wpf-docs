@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data Binding in WPF Docking control | Syncfusion®
-description: Learn here all about Data Binding support in Syncfusion® WPF Docking (DockingManager) control and more.
+title: Data Binding in WPF DockingManager Control | Syncfusion®
+description: Data binding in DockingManager lets you bind child windows, side panel visibility, and other properties to your data source.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Data Binding in WPF Docking (DockingManager)
+# Data Binding in WPF DockingManager Control
 
-Data Binding is the process of establishing a connection between the application UI and business logic. Data Binding can be unidirectional (Source -> Target or Target -> Source) or bidirectional (Source &lt;-&gt; target). 
+Data Binding is the process of establishing a connection between the application UI and business logic. Data Binding can be unidirectional (Source → Target or Target → Source) or bidirectional (Source ↔ Target).
 
 ## Adding Docking Window child through ItemsSource:
 
@@ -97,9 +97,9 @@ _dockcollection = value;
 ![WPF Docking Data Binding](Data-Binding-images/wpf-docking-data-binding.jpeg)
 
 
-## Docking Window in Different side
+## Docking Window in Different Sides
 
-We have docked the docking child window in five sides these are,
+We have docked the docking child window in five sides. They are:
 
 * Left
 * Right 
@@ -107,7 +107,7 @@ We have docked the docking child window in five sides these are,
 * Bottom
 * Tabbed
 
-To dock the children of `DockingManager` in different side, use [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode) mode property of [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) class.
+To dock the children of `DockingManager` in different sides, use the [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode) property of the [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) class.
 
 {% tabs %}
 
@@ -173,7 +173,7 @@ DockCollections.Add(new DockItem() { Header = "Find Results", State = DockState.
 
 ## Customizing the Header of DockItem
 
-Header of each [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) can be customizable using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderStyleProperty). The `Header` property supports objects, allowing flexible customization with text, images, or other UI elements. This enables unique header styling for each DockItem, providing better control over its appearance and visibility.
+Header of each [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) can be customized using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderTemplateProperty) property. The `Header` property supports objects, allowing flexible customization with text, images, or other UI elements. This enables unique header styling for each DockItem, providing better control over its appearance and visibility.
 
 {% tabs %}
 

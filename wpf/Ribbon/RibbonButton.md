@@ -1,14 +1,14 @@
 ---
 layout: post
-title: RibbonButton in WPF Ribbon control | Syncfusion®
-description: Learn about RibbonButton support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: RibbonButton in WPF Ribbon Control | Syncfusion®
+description: The RibbonButton in Ribbon lets you add clickable buttons with icons, labels, and tooltips to ribbon tabs and quick access toolbar.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonButton in WPF Ribbon
+# RibbonButton in WPF Ribbon Control
 
- **RibbonButton** provides functionality similar to a normal button. Additionally, it comes in different sizes and can be easily placed inside the **RibbonBar** in the Ribbon control.  
+ **RibbonButton** provides functionality similar to a normal button. Additionally, it comes in different sizes and can be easily placed inside the **RibbonBar** in the Ribbon control.
 
 ## Setting various size modes
 
@@ -84,13 +84,13 @@ documentation: ug
 
  RibbonButton copyButton = new RibbonButton();
  copyButton.Label = "Copy";
- cutButton.SizeForm = SizeForm.Small;
- copyButton.SmallIcon = new BitmapImage(new Uri(@"/Resources/Copy16.png", UriKind.RelativeOrAbsolute));
+copyButton.SizeForm = SizeForm.Small;
+copyButton.SmallIcon = new BitmapImage(new Uri(@"/Resources/Copy16.png", UriKind.RelativeOrAbsolute));
 
- RibbonButton formatButton = new RibbonButton();
- formatButton.Label = "Format Painter";
- cutButton.SizeForm = SizeForm.Small;
- formatButton.SmallIcon = new BitmapImage(new Uri(@"/Resources/FormatPainter16.png", UriKind.RelativeOrAbsolute))
+RibbonButton formatButton = new RibbonButton();
+formatButton.Label = "Format Painter";
+formatButton.SizeForm = SizeForm.Small;
+formatButton.SmallIcon = new BitmapImage(new Uri(@"/Resources/FormatPainter16.png", UriKind.RelativeOrAbsolute));
  // Adding items to bar
  clipboardBar.Items.Add(pasteButton);
  clipboardBar.Items.Add(cutButton);

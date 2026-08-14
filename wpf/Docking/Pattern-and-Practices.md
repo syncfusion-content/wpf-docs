@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Patterns and Practices in WPF Docking control | Syncfusion®
-description: Learn here all about Patterns and Practices support in Syncfusion® WPF Docking (DockingManager) control and more.
-platform: WPF
+title: Patterns and Practices in WPF DockingManager Control | Syncfusion®
+description: Patterns and practices in DockingManager guide you on best practices for layout design, performance, and docking scenarios.
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Patterns and Practices in WPF Docking (DockingManager)
+# Patterns and Practices in WPF DockingManager Control
 
 ## MVVM 
 
@@ -108,7 +108,7 @@ This section explains how to create MVVMLight sample with DockingManager. Since 
 
 The following steps explains how to create sample project with MVVMLight templates.
 
-1.Download MVVMLight toolkit and install it to avail the predefined MVVMLight templates for all platforms MMVMLight extension can be install from Tools and Extension.
+1.Download MVVMLight toolkit and install it to avail the predefined MVVMLight templates for all platforms. The MVVMLight extension can be installed from Extensions and Updates.
 
 2.Create a new WPF project and select MVVMLight WPF template.
 
@@ -232,7 +232,7 @@ xmlns:prsm="http://www.codeplex.com/prism"
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-In the following code example, a region called “MainRegion” has been created to load DockingManager Module views.
+In the following code example, a region called "MainRegion" has been created to load DockingManager Module views.
 
 {% capture codesnippet4 %}
 

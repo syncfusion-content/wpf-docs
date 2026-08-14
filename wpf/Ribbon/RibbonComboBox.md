@@ -1,18 +1,18 @@
 ---
 layout: post
-title: RibbonComboBox in WPF Ribbon control | Syncfusion®
-description: Learn about RibbonComboBox support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: RibbonComboBox in WPF Ribbon Control | Syncfusion®
+description: The RibbonComboBox in Ribbon lets you add a combo box control to ribbon tabs to select from a dropdown list of items.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonComboBox in WPF Ribbon
+# RibbonComboBox in WPF Ribbon Control
 
 RibbonComboBox control is used to display the list of items, as ComboBox.
 
 ## Add ComboBoxItems
 
-ComboBoxItems are the items with `Header` property that is used to set header.
+ComboBoxItems are items with a `Header` property used to set the header.
 
 
 {% tabs %}
@@ -63,9 +63,9 @@ RibbonComboBoxItem comboBoxItem3 = new RibbonComboBoxItem() { Content = "Tahoma"
 RibbonComboBoxItem comboBoxItem4 = new RibbonComboBoxItem() { Content = "11" };
 RibbonComboBoxItem comboBoxItem5 = new RibbonComboBoxItem() { Content = "12" };
 RibbonComboBoxItem comboBoxItem6 = new RibbonComboBoxItem() { Content = "13" };     
-_ribbonComboBox.Items.Add(comboBoxItem1);
-_ribbonComboBox.Items.Add(comboBoxItem2);
-_ribbonComboBox.Items.Add(comboBoxItem3);
+_ribbonComboBox1.Items.Add(comboBoxItem1);
+_ribbonComboBox1.Items.Add(comboBoxItem2);
+_ribbonComboBox1.Items.Add(comboBoxItem3);
 _RibbonComboBox1.Items.Add(comboBoxItem4);
 _ribbonComboBox1.Items.Add(comboBoxItem5);
 _ribbonComboBox1.Items.Add(comboBoxItem6);
@@ -86,9 +86,9 @@ Dim comboBoxItem3 As New RibbonComboBoxItem() With {.Content = "Tahoma"}
 Dim comboBoxItem4 As New RibbonComboBoxItem() With {.Content = "11"}
 Dim comboBoxItem5 As New RibbonComboBoxItem() With {.Content = "12"}
 Dim comboBoxItem6 As New RibbonComboBoxItem() With {.Content = "13"}
-_ribbonComboBox.Items.Add(comboBoxItem1)
-_ribbonComboBox.Items.Add(comboBoxItem2)
-_ribbonComboBox.Items.Add(comboBoxItem3)
+_ribbonComboBox1.Items.Add(comboBoxItem1)
+_ribbonComboBox1.Items.Add(comboBoxItem2)
+_ribbonComboBox1.Items.Add(comboBoxItem3)
 _RibbonComboBox1.Items.Add(comboBoxItem4)
 _ribbonComboBox1.Items.Add(comboBoxItem5)
 _ribbonComboBox1.Items.Add(comboBoxItem6)

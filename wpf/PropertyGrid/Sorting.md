@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in WPF PropertyGrid control | Syncfusion
-description: Learn about Sorting support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Sorting in WPF PropertyGrid | Syncfusion®
+description: Sorting in PropertyGrid enables arranging properties and categories in ascending or descending order and controlling sorting behavior.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
@@ -15,7 +15,7 @@ You can sort the properties according to your needs. You can change the sorting 
 
 ## Sorting the Properties
 
-Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property. They sorted based only on the name of the property, not by the display name of the property. If the properties are in the grouped view, then the groups are sorted based on the group name either `Ascending` or `Descending` order. 
+Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property. They are sorted based only on the name of the property, not by the display name of the property. If the properties are in the grouped view, then the groups are sorted based on the group name either `Ascending` or `Descending` order. 
 
 {% tabs %}
 {% highlight C# %}

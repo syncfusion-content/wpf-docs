@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Transform latitude and longitude to pixel | SfMap | Wpf | Syncfusion
-description: Transform SfMap latitude and longitude value to pixel value and vice-versa by using GeopointToViewPoint and GetLatLonFromPoint methods. 
+title: How to transform latitude and longitude in WPF Maps | Syncfusion®
+description: Transform latitude and longitude values to pixel coordinates and convert pixel values back to geographic coordinates in WPF Maps.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Transform latitude and longitude value to pixel value and vice-versa
+# How to transform latitude and longitude in WPF Maps
 
-SfMap offers two utility methods to transform the pixel values to longitude and latitude values and vice-versa. This method is used for both ShapeFileLayer and ImageryLayer.
+SfMap offers two utility methods to transform the pixel values to longitude and latitude values and vice-versa. These methods are used for both ShapeFileLayer and ImageryLayer.
 
-1. [`GeopointToViewPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_GeopointToViewPoint_System_Double_System_Double_) - Converts the latitude and longitude values to screen point. Here, pass the parameters as latitude and longitude values, from that values we can get screen points x and y.
-2. [`GetLatLonFromPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_GetLatLonFromPoint_System_Windows_Point_) - Converts the screen point to longitude and latitude values. Here, pass the parameters as screen points x and y, from that points we can get longitude(Point.X) and latitude(Point.Y) values.
+1. [`GeopointToViewPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_GeopointToViewPoint_System_Double_System_Double_) - Converts the latitude and longitude values to a screen point. Here, pass the parameters as latitude and longitude values, from those values we can get the screen points x and y.
+2. [`GetLatLonFromPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_GetLatLonFromPoint_System_Windows_Point_) - Converts the screen point to longitude and latitude values. Here, pass the parameters as screen points x and y, from those points we can get the longitude(Point.X) and latitude(Point.Y) values.
 
 {% tabs %}
 

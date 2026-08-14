@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Rendering Type in WPF Smith Chart control | Syncfusion
-description: Learn here all about Rendering Type support in Syncfusion WPF Smith Chart (SfSmithChart) control and more.
+title: Rendering Type in WPF Smith Chart | Syncfusion®
+description: Rendering type in the WPF Smith Chart determines how series data is displayed, enabling different visualization styles and layouts.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Rendering Type in WPF Smith Chart (SfSmithChart)
+# Rendering Type in WPF Smith Chart
 
-SfSmithChart  plots the transmission line in two different ways by using `RenderingType` property. The two  ways are given below.
+SfSmithChart plots the transmission line in two different ways by using the `RenderingType` property. The two ways are given below.
 
 
 ## Impedance
 
-In impedance smith chart, normalized resistance circles and normalized reactance curves are drawn from right to left.  Axis label ranges are start from left to right.
+In the impedance smith chart, normalized resistance circles and normalized reactance curves are drawn from right to left.  Axis label ranges start from left to right.
 
 Impedance is the default rendering type of SmithChart.
 
@@ -41,7 +41,7 @@ chart.RenderingType = RenderingType.Impedance;
 
 ## Admittance
 
-In Admittance smith chart, normalized resistance circles and normalized reactance curves are drawn from left to right.  Axis label ranges are start from right to left.
+In the admittance smith chart, normalized resistance circles and normalized reactance curves are drawn from left to right.  Axis label ranges start from right to left.
 
 {% tabs %}
 

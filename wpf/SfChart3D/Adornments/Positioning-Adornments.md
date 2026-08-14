@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Positioning Data Markers in WPF SfChart3D control | Syncfusion
-description: Learn about Positioning Data Markers support in Syncfusion Essential Studio® WPF SfChart3D control, its elements and more.
+title: Positioning Data Markers in WPF 3D Chart | Syncfusion®
+description: Positioning data markers in the WPF 3D Chart allows you to customize marker placement relative to data points for better visibility.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Positioning Data Markers in WPF SfChart3D
+# Positioning Data Markers in WPF 3D Chart
 
-The positioning of adornments inside the series is defined using [`AdornmentPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
+The positioning of adornments inside the series is defined using the [`AdornmentPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
 
 * [`Top`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the top edge point of a chart segment.
 * [`Bottom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the bottom edge point of a chart segment.
@@ -17,7 +17,7 @@ The positioning of adornments inside the series is defined using [`AdornmentPosi
 
 N> This behavior varies based on the chart series type.
 
-The following code example shows the how to specify connector type:
+The following code example shows how to specify the adornments position:
 
 {% tabs %}
 
@@ -69,13 +69,13 @@ chart.Series.Add(series);
 
 ## Label Position
 
-SfChart3D provides additional customization option to position the adornments smartly based on series types using [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelPosition) property.
+SfChart3D provides additional customization options to position the adornments smartly based on series types using the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelPosition) property.
 
-The following section shows few examples for this LabelPosition behavior with respect to the series.
+The following section shows a few examples of this LabelPosition behavior with respect to the series.
 
-**Auto**
+### Auto
 
-The [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of Labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html) and [`LineSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
+The [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html) and [`LineSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
 
  {% tabs %}
 
@@ -110,9 +110,9 @@ ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
 |--|--|
 |![Auto Position in WPF Chart](Adornments-Images/Label_Auto_Column.png) |![Auto Position in WPF Chart](Adornments-Images/Label_Auto_Line.png)|
 
-**Inner**
+### Inner
 
-The [`Inner`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of Labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html) and [`LineSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
+The [`Inner`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html) and [`LineSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
 
  {% tabs %}
 
@@ -147,9 +147,9 @@ ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
 |--|--|
 |![Inner Position in WPF Chart](Adornments-Images/Label_Inner_Column.png)| ![Inner Position in WPF Chart](Adornments-Images/Label_Inner_Line.png)|
 
-**Outer**
+### Outer
 
-The [`Outer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of Labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html) and [`LineSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
+The [`Outer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html) and [`LineSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
 
  {% tabs %}
 
@@ -182,11 +182,11 @@ ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
 
 |Column Series|Line Series|
 |--|--|
-|![Outer Position in WPF Chart](Adornments-Images/Label_Outer_Column.png) | ![Auto Position in WPF Chart](Adornments-Images/Label_Outer_Line.png)|
+|![Outer Position in WPF Chart](Adornments-Images/Label_Outer_Column.png) | ![Outer Position in WPF Chart](Adornments-Images/Label_Outer_Line.png)|
 
-**Center**
+### Center
 
-The [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of Labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html) and [`LineSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
+The [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html) and [`LineSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
 
  {% tabs %}
 
@@ -219,5 +219,5 @@ ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
 
 |Column Series|Line Series|
 |--|--|
-|![Auto Position in WPF Chart](Adornments-Images/Label_Center_Column.png)| ![Auto Position in WPF Chart](Adornments-Images/Label_Center_Line.png)|
+|![Center Position in WPF Chart](Adornments-Images/Label_Center_Column.png)| ![Center Position in WPF Chart](Adornments-Images/Label_Center_Line.png)|
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: KPI in WPF Olap Gauge control | Syncfusion
-description: Learn about KPI support in Syncfusion Essential Studio WPF Olap Gauge control, its elements and more details.
+title: KPI in WPF OLAP Gauge | Syncfusion®
+description: KPI in the WPF OLAP Gauge displays key performance indicators to monitor, evaluate, and analyze business metrics effectively.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
 ---
 
-# KPI in WPF Olap Gauge
+# KPI in WPF OLAP Gauge
 
-The OLAP gauge supports displaying Key Performance Indicators (KPI) from the OLAP cube. KPI value is represented with the help of _Pointers_ and KPI goal is represented with the help of _Markers_. The KPI status and KPI trend values are represented through user friendly images such as traffic light, road signs, and standard arrow in the OLAP gauge of WPF. Each gauge represents a member against one KPI combination.
+The OLAP gauge supports displaying Key Performance Indicators (KPIs) from an OLAP cube. The KPI value is represented using pointers, while the KPI goal is represented using markers. The KPI status and trend values are represented in the WPF OLAP Gauge using user-friendly images, such as traffic lights, road signs, and standard arrows. Each gauge represents a member associated with a single KPI combination.
 
 ![WPF OLAPGauge displays KPI from the OLAP cube](KPI_images/KPI-image.png)
 

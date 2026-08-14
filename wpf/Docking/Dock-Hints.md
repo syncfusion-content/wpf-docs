@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interaction with DragProvider in WPF Docking control | Syncfusion®
-description: Learn here all about Interaction with DragProvider support in Syncfusion® WPF Docking (DockingManager) control and more.
-platform: WPF
+title: DragProvider in WPF DockingManager Control | Syncfusion®
+description: The DragProvider in DockingManager provides visual dock hints to guide users while dragging and docking child windows to a target.
+platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Interaction with DragProvider in WPF Docking (DockingManager)
+# DragProvider in WPF DockingManager Control
 
 State of the dock children can be changed through the dock hints. This section explains how the dock item can be docked / documented with the help of Dock hints and how the dock hints can be disabled/ enabled at run time.
 
@@ -15,10 +15,10 @@ Terminologies:
 
 1. Source Window - Window that is being dragged
 2. Target Window - Window on which source window is going to be dropped
-5. Document Window - A special window which is usually used to host document for editing
-6. Dock Window - A normal window used to dock its child window in all four directions
-3. Drag Provider - A prompt indicating dockable regions for docking
-4. Dock Hints - Iconic indication of a region
+3. Document Window - A special window which is usually used to host document for editing
+4. Dock Window - A normal window used to dock its child window in all four directions
+5. Drag Provider - A prompt indicating dockable regions for docking
+6. Dock Hints - Iconic indication of a region
 
 Dock to document window
 ![WPF Docking Dock to Document Window](Dock-hints-images/wpf-docking-dock-to-document-window.png)
@@ -498,6 +498,23 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-ma
 ## Restrict outer dockability
 
 By setting `DockAbility` property to the dragged window, both inner and outer dockability has been handled. To disabled of the outer dockability alone, [OuterDockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_OuterDockAbilityProperty) property is used. The values which is assinged to the `OuterDockAbility` will be effective only if the [UseOuterDockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseOuterDockAbility) property is true.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:DockingManager x:Name="dockingManager" UseOuterDockAbility="True">
+    <ContentControl x:Name="outputWindow" syncfusion:DockingManager.Header="Output" />
+    <ContentControl x:Name="teamExp" syncfusion:DockingManager.Header="Team Explorer" />
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+{% highlight C# %}
+
+// Restrict outer dockability to only the top edge
+DockingManager.SetOuterDockAbility(dockingManager, OuterDockAbility.Top);
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Restrict docking at run-time
 

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Labels in WPF Bullet Graph control | Syncfusion
-description: Learn here all about Labels support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
+title: Label Customization in WPF Bullet Graph | Syncfusion®
+description: Learn Label Customization in WPF Bullet Graph using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Labels in WPF Bullet Graph (SfBulletGraph)
+# Label Customization in WPF Bullet Graph
 
 A quantitative scale label specifies the numeric value according to the major ticks in the range of the scale.
 
 ## Customizing Labels
 
-The labels can be positioned far away from the quantitative scale by using the [`LabelOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_LabelOffset) property and the default value of this is 0. The foreground of the label is customized by setting [`LabelStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_LabelStroke). By setting [`LabelSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_LabelSize), the font size of the labels is modified. The label content can be formatted by using [`LabelFormat`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_LabelSize) property.
+The labels can be positioned far away from the quantitative scale by using the [`LabelOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_LabelOffset) property, and the default value is 0. The foreground of the label is customized by setting the [`LabelStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_LabelStroke) property. By setting the [`LabelSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_LabelSize) property, the font size of the labels is modified. The label content can be formatted by using the [`LabelFormat`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_LabelFormat) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -46,7 +46,7 @@ The labels can be positioned far away from the quantitative scale by using the [
 
 ## Label Position
 
-The labels in the scale can be placed above or below the qualitative ranges by choosing the following options available in the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_LabelPosition) property. 
+The labels in the scale can be placed above or below the qualitative ranges using the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_LabelPosition) property, which supports the following options:
 
 1. Below (Default)
 2. Above

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Funnel and Pyramid Chart in WPF Charts control | Syncfusion
-description: Learn here all about Funnel and Pyramid Chart support in Syncfusion® WPF Charts (SfChart) control and more.
+title: Funnel and Pyramid Chart in WPF Charts | Syncfusion®
+description: Funnel and pyramid series in the WPF Chart visualize proportional data across stages, enabling effective comparison and analysis.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Funnel and Pyramid in WPF Charts (SfChart)
+# Funnel and Pyramid in WPF Charts
 
 ## Pyramid Chart
 
@@ -41,7 +41,7 @@ chart.Series.Add(series);
 
 The [`PyramidMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries_PyramidMode) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) or [`Linear`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) pyramid segments.
 
-**PyramidMode** **as** **Surface**
+**PyramidMode as** **Surface**
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ chart.Series.Add(series);
 ![WPF Chart with Surface Pyramid Mode](Series_images/wpf-chart-pyramid-surface.png)
 
 
-**PyramidMode** **as** **Linear**
+**PyramidMode as** **Linear**
 
 {% tabs %}
 
@@ -215,9 +215,9 @@ The following properties are used to explode the individual segments in Funnel a
 * [`ExplodeAll`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeAll) - Used to explode all the segments of these series.
 * [`ExplodeIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeIndex) - Used to explode any specific segment.
 * [`ExplodeOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TriangularSeriesBase.html#Syncfusion_UI_Xaml_Charts_TriangularSeriesBase_ExplodeOffset)- Used to define the explode distance like ExplodeRadius for Pie.
-* [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeOnMouseClick)-Used to explode the segment when segment is clicked.
+* [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeOnMouseClick) -Used to explode the segment when segment is clicked.
 
-**Explode** **Offset**
+**Explode Offset**
 
 {% tabs %}
 
@@ -251,7 +251,7 @@ chart.Series.Add(series);
 
 ![WPF Chart displays Exploded Segments of Accumlation Series](Series_images/wpf-funnel-chart-exploded-mode.png)
 
-**Gap** **Ratio**
+**Gap Ratio**
 
 The gap between each segment using [`GapRatio`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TriangularSeriesBase.html#Syncfusion_UI_Xaml_Charts_TriangularSeriesBase_GapRatio) property as in the following code example.
 
@@ -289,4 +289,4 @@ N> You can refer to our [WPF Funnel Chart](https://www.syncfusion.com/wpf-contro
 
 ## See also
 
-[`How to add gaps between segments in a pyramid or funnel series?`](https://www.syncfusion.com/kb/2708/how-to-add-gaps-between-segments-in-a-pyramid-or-funnel-series)
+* [`How to add gaps between segments in a pyramid or funnel series in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/2974/how-to-add-gaps-between-segments-in-a-pyramid-or-funnel-series-in-wpf-chart-sfchart)

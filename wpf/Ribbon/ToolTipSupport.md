@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ToolTip in WPF Ribbon control | Syncfusion®
-description: Learn about ToolTip support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: ToolTip in WPF Ribbon Control | Syncfusion®
+description: ToolTip support in Ribbon displays helpful hints and information when the user hovers over ribbon items, with rich content support.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# ToolTip in WPF Ribbon
+# ToolTip in WPF Ribbon Control
 
-Tooltip is used to display small information about the specific element while hovering mouse on it and it is implemented as like in MS Outlook. 
+Tooltip is used to display small information about the specific element while hovering mouse on it and it is implemented similarly to MS Outlook. 
 
 `ScreenTip` is an enhanced ToolTip and it is used to show a popup window when the mouse cursor is hovered over `RibbonItem`. The popup is used to provide details of the `RibbonItem’s` function. The difference between ToolTip and ScreenTip is that, ToolTip hosts controls to show a small popup window, whereas ScreenTip includes predefined properties. With these predefined properties, you can create ScreenTip easily.
 

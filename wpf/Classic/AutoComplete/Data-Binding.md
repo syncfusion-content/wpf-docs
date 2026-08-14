@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in WPF AutoComplete Control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion WPF AutoComplete (Classic) control and more.
+title: Data Binding in WPF AutoComplete | Syncfusion®
+description: Bind business objects to AutoComplete (Classic) using custom sources, display member paths, and selected value mappings.
 platform: wpf
 control: AutoComplete
 documentation: ug

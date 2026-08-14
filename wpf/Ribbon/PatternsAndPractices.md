@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Patterns and Practices in WPF Ribbon control | Syncfusion®
-description: Learn about Patterns and Practices support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: Patterns and Practices in WPF Ribbon Control | Syncfusion®
+description: Patterns and practices in Ribbon guide you on MVVM usage, command binding, and recommended approaches for ribbon development.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Patterns and Practices in WPF Ribbon
+# Patterns and Practices in WPF Ribbon Control
 
 ## Ribbon with MVVM
 
-For better control customization MVVM pattern can be followed. The following steps illustrate a simple MVVM pattern with Ribbon control
+For better control customization, the MVVM pattern can be followed. The following steps illustrate a simple MVVM pattern with Ribbon control
 
 1. Create new WPF project
 
@@ -22,6 +22,8 @@ For better control customization MVVM pattern can be followed. The following ste
 {% tabs %}
 
 {% highlight C# %}
+
+using System.Collections.ObjectModel;
 
 public class CustomRibbonTab
 {

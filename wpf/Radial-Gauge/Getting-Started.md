@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with WPF Radial Gauge control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Radial Gauge (SfCircularGauge) control, its elements and more.
+title: Getting Started with WPF Radial Gauge | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Radial Gauge control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
-# Getting Started with WPF Radial Gauge (SfCircularGauge)
+# Getting Started with WPF Radial Gauge
 
 This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) and add basic elements to it using various APIs.
 
@@ -32,9 +32,9 @@ Location: {Installed location}/{version}/WPF/Assemblies
 
 You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies#sfgauge) link to know about the assemblies required for adding gauge to your project.
 
-## Initialize gauge
+## Initialize the gauge
 
-Import  the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) namespace to your respective Window as follows.
+Import the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) namespace to your respective Window as follows.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 ## Configuring scales
 
-You can configure the [`CircularScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html) elements by using the following APIs:
+You can configure the [`CircularScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html) elements by using the following properties:
 
 * StartAngle
 
@@ -144,7 +144,7 @@ You can configure the [`CircularScale`](https://help.syncfusion.com/cr/wpf/Syncf
 
 <gauge:SfCircularGauge.Scales>
     <gauge:CircularScale />
-<gauge:SfCircularGauge.Scales>
+</gauge:SfCircularGauge.Scales>
 
 {% endhighlight %}
 
@@ -199,7 +199,7 @@ SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 ## Adding a needle pointer
 
-Create a `Needle Pointer`, and associate it with a scale that is to be displayed the current value.
+Create a `Needle Pointer`, and associate it with a scale that is to display the current value.
 
 {% tabs %}
 
@@ -331,7 +331,7 @@ The `Symbol Pointer` points to the current value in a scale.
 
 {% endtabs %}
 
-The following code example is the complete code of the previous configurations.
+The following code example combines all of the previous configurations.
 
 {% tabs %}
 
@@ -499,4 +499,4 @@ SfCircularGauge supports various built-in themes. Refer to the below links to ap
 
 [How to apply themes for SfCircularGauge](https://support.syncfusion.com/kb/article/2832/how-to-apply-themes-for-sfcirculargauge)
 
-[How to create dynamic application driven by excelling formulas using SfCircularGauge](https://support.syncfusion.com/kb/article/2720/how-to-prepare-car-dashboard-demo-using-sfcirculargauge)
+[How to prepare car dashboard demo using SfCircularGauge](https://support.syncfusion.com/kb/article/2720/how-to-prepare-car-dashboard-demo-using-sfcirculargauge)
