@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in WPF Diagram control | Syncfusion®
-description: Learn here all about the Tooltip support in Syncfusion® WPF Diagram (SfDiagram) control, its types and more.
+title: Tooltip in WPF SfDiagram | Syncfusion®
+description: Display informative tooltips in Syncfusion® WPF SfDiagram to show position, size, and rotation details during element interactions.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Tooltip in WPF Diagram (SfDiagram)
+# Tooltip in WPF SfDiagram
 
 In Graphical User Interface (GUI), the tooltip is a message that is displayed when the mouse hovers over an element. In [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), The tooltip is used to provide information about the position, size, and rotation angle while dragging, resizing, and rotating the diagram elements.
 

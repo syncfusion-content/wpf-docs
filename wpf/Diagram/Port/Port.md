@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Port in WPF Diagram control | Syncfusion®
-description: Learn here all about Port support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Ports in WPF SfDiagram | Syncfusion®
+description: Learn about ports in Syncfusion® WPF SfDiagram control, including node ports, connector ports, dock ports, connections, appearance, and behavior.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Port in WPF Diagram (SfDiagram)
+# Ports in WPF SfDiagram
 
-Port is a special connection point on a Node or Connector that you can glue the connectors. When you glue a connector to a node or port, they stay connected, even if one of the node is moved.
+Port is a special connection point on a Node or Connector that you can glue the connectors. When you glue a connector to a node or port, they stay connected, even if one of the nodes is moved.
 
 ![WPF Diagram Port](Port_images/wpf-diagram-port.PNG)
 
@@ -29,7 +29,7 @@ SfDiagram supports three types of ports: Node Port, Connector Port, and DockPort
 
 ## Node port
 
-A port on a node can be created using the instance of `NodePort` object. The [`NodeOffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html#Syncfusion_UI_Xaml_Diagram_NodePort_NodeOffsetX) and [`NodeOffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html#Syncfusion_UI_Xaml_Diagram_NodePort_NodeOffsetY) properties of [`NodePort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html) class is used to specify the position of the port on a node.
+A port on a node can be created using the instance of `NodePort` object. The [`NodeOffsetX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html#Syncfusion_UI_Xaml_Diagram_NodePort_NodeOffsetX) and [`NodeOffsetY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html#Syncfusion_UI_Xaml_Diagram_NodePort_NodeOffsetY) properties of [`NodePort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePort.html) class are used to specify the position of the port on a node.
 
 {% tabs %}
 
@@ -140,7 +140,7 @@ The `NodeOffsetX` and `NodeOffsetY` properties of port is used to position the p
 | (1,1) | ![Left](Port_images/offset9.PNG) |
 
 ### Displacement
-The [`Displacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePortViewModel.html#Syncfusion_UI_Xaml_Diagram_NodePortViewModel_Displacement) property is used to dislocate the port by the value given. By default, port will be in the center of the node. When you assign value to the `Displacement` property, port will be displaced from its position by displacment value. Default value is 0d.
+The [`Displacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePortViewModel.html#Syncfusion_UI_Xaml_Diagram_NodePortViewModel_Displacement) property is used to dislocate the port by the value given. By default, port will be in the center of the node. When you assign value to the `Displacement` property, port will be displaced from its position by displacement value. Default value is 0d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -221,7 +221,7 @@ Find the common style for Connector and ConnectorPort.
       <!--Initialize the Connector-->
       <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200">
         <syncfusion:ConnectorViewModel.Ports>
-          <!--Iitializes the PortCollection-->
+          <!--Initializes the PortCollection-->
           <syncfusion:PortCollection>
             <!--Initializes the ConnectorPort-->
             <syncfusion:ConnectorPortViewModel x:Name="Port"  Length="0.5"/>
@@ -356,7 +356,7 @@ The appearance of `DockPort` such as stroke and stroke thickness can be customiz
 
 ![WPF Diagram Port Geometry Style](Port_images/wpf-diagram-port-geometry-style.PNG)
 
-N> To visualize the DockPort, it is must to specify the SourcePoint , TargetPoint, and ConnectorGeometryStyle properties.
+N> To visualize the DockPort, it is necessary to specify the SourcePoint , TargetPoint, and ConnectorGeometryStyle properties.
 
 ## Padding
 
@@ -446,16 +446,16 @@ NodePortViewModel port = new NodePortViewModel()
   NodeOffsetY = 0.5 
 };
 port.Constraints = PortConstraints.Connectable | PortConstraints.ConnectionDirection;
-//Specifying the direction in which connector need to connected to the port
+//Specifying the direction in which connector needs to be connected to the port
 port.ConnectionDirection = ConnectionDirection.Right;
 
 {% endhighlight %}
 {% endtabs %}
 
-#### Before ConnectionDirection 
+### Before ConnectionDirection 
 ![WPF Diagram Before Connection Direction](Port_images/wpf-diagram-before-connection-direction.PNG)
 
-#### After ConnectionDirection
+### After ConnectionDirection
 ![WPF Diagram After Connection Direction](Port_images/wpf-diagram-after-connection-direction.PNG)
 
 For more information , refer to [ConnectionDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectionDirection.html)
@@ -558,8 +558,8 @@ The [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 [How to change the source and target ports of the connector at runtime in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18302/how-to-change-the-source-and-target-ports-of-the-connector-at-runtime-in-the-wpf-diagram-sfdiagram)
 
-[How to display only the ports of the same color in the target node based on the source node's port color in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17723/how-to-display-only-the-ports-of-the-same-color-in-the-target-node-based-on-the-source-nodes-port-color-in-wpf-diagram-sfdiagram)
+[How to display only the ports of the same color in the target node based on the source node's port color in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17723/how-to-display-only-the-ports-of-the-same-color-in-the-target-node-based-on-the-source-nodes-port-color-in-wpf-diagram-sfdiagram)
 
-[How to customize the connection indicator style of node and port in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
+[How to customize the connection indicator style of node and port in WPF SfDiagram?](https://support.syncfusion.com/kb/article/10048/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagram-sfdiagram)
 
-[How to change the connector style based on its SourcePort style in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)
+[How to change the connector style based on its SourcePort style in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18851/how-to-change-the-connector-style-based-on-its-sourceport-style-in-wpf-diagram-sfdiagram)

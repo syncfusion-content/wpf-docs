@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commands in WPF Maps control | Syncfusion
-description: Learn here all about Commands support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
+title: Commands in WPF Maps | Syncfusion®
+description: Commands in the WPF Maps enable interaction handling and action execution through command bindings, supporting flexible application workflows.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Commands in WPF Maps (SfMap)
+# Commands in WPF Maps
 
 The [WPF Map](https://www.syncfusion.com/wpf-controls/map) control contains the following commands:
 

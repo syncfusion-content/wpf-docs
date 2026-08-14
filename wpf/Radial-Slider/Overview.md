@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Radial Slider control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Radial Slider (SfRadialSlider) control, its elements and more.
+title: About Syncfusion® WPF RadialSlider Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF RadialSlider (SfRadialSlider) control and more details.
 platform: wpf
 control: SfRadialSlider
 documentation: ug
 ---
 
-# WPF Radial Slider (SfRadialSlider) Overview
+# About Syncfusion® WPF RadialSlider (SfRadialSlider) Control
 
 The [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) provides an optimized interface for selecting a numeric value within the minimum and maximum range in the circular track.
 

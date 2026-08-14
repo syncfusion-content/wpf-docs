@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Selected Page in WPF Tab Splitter control | Syncfusion
-description: Learn about Selected Page support in Syncfusion Essential Studio WPF Tab Splitter control, its elements and more.
+title: Selected Page in WPF TabSplitter | Syncfusion®
+description: Select and manage active splitter pages programmatically by using the IsSelectedPage property to control page selection behavior.
 platform: wpf
 control: TabSplitter
 documentation: ug

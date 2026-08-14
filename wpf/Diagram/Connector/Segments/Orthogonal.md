@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Orthogonal segment connectors | Syncfusion®
-description: How to create the orthogonal segments, how to edit and customize the Orthogonal segments and how orthogonal connectors are avoiding overlapping.
+title: Orthogonal Segments in WPF SfDiagram | Syncfusion®
+description: Learn about orthogonal connector segments in Syncfusion® WPF SfDiagram control, including creation, editing, customization, and routing.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Orthogonal segment creation and routing
+# Orthogonal Segments in WPF SfDiagram
 
 Orthogonal segments are used to create line segments that are perpendicular at their point of intersection.
 
 ## How to create orthogonal segments
 
-To create a orthogonal segment, specify the segment as [`OrthogonalSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OrthogonalSegment.html) and add it to the connector's segments collection.
+To create an orthogonal segment, specify the segment as [`OrthogonalSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OrthogonalSegment.html) and add it to the connector's segments collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -157,7 +157,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ## Avoid overlapping
 
-Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target Nodes.
+Orthogonal segments are automatically rerouted to avoid overlapping with the source and target nodes.
 
 ![basic routing](Connector_images/Connector_img10.PNG)
 
@@ -169,8 +169,8 @@ N> Overlapping with Source and Target nodes are only avoided. Other nodes are no
 
 [How to detect or get notification when editing the thumbs of connector?](https://support.syncfusion.com/kb/article/9030/how-to-detect-or-get-notification-when-editing-the-thumbs-of-connector-in-wpf-diagram)
 
-[How to avoid overlapping connector segments for the Orthogonal Connector in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/17740/how-to-avoid-overlapping-connector-segments-for-the-orthogonal-connector-in-wpf-diagram-sfdiagram)
+[How to avoid overlapping connector segments for the Orthogonal Connector in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17740/how-to-avoid-overlapping-connector-segments-for-the-orthogonal-connector-in-wpf-diagram-sfdiagram)
 
 [How to update the same length for connector segments in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15538/how-to-update-the-same-length-for-connector-segments-in-the-wpf-diagram-sfdiagram)
 
-[How to prevent the connector segment from collapsing while dragging a node in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)
+[How to prevent the connector segment from collapsing while dragging a node in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17746/how-to-prevent-the-connector-segment-from-collapsing-while-dragging-a-node-in-wpf-diagram-sfdiagram-)

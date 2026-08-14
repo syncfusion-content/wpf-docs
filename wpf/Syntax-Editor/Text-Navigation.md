@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Navigation in WPF Syntax Editor control | Syncfusion
-description: Learn about Text Navigation support in Syncfusion Essential Studio WPF Syntax Editor (EditControl) control, its elements and more.
+title: Text Navigation in WPF Syntax Editor | Syncfusion®
+description: Text navigation in WPF Syntax Editor enables efficient movement through code and text, helping users locate, review, and edit content with ease.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Text Navigation in WPF Syntax Editor (EditControl)
+# Text Navigation in WPF Syntax Editor
 
 Syntax Editor offers extensive support to text navigation. Users can perform navigation between characters, words, and line items using the built-in functions or keyboard shortcut keys.
 

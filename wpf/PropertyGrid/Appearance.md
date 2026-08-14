@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in WPF PropertyGrid control | Syncfusion
-description: Learn about Appearance support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Appearance in WPF PropertyGrid | Syncfusion®
+description: Appearance support in PropertyGrid enables customizing colors, fonts, item styling, tooltips, and themes to enhance the user experience.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
@@ -269,4 +269,4 @@ PropertyGrid supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF PropertyGrid](Getting-Started_images/Theme.png)
+![Setting theme to WPF PropertyGrid](Getting-Started_images/wpf-propertygrid-theme.png)

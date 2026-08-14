@@ -1,12 +1,12 @@
 ---
 layout: post
-title: End user capabilities in WPF Chromeless Window control | Syncfusion
-description: Learn about End user capabilities support in Syncfusion WPF Chromeless Window control, its elements and more details.
+title: End-User Capabilities in WPF ChromelessWindow | Syncfusion®
+description: End-user capabilities in the ChromelessWindow provide support for window operations such as moving, resizing, minimizing, and maximizing.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# End user capabilities in WPF Chromeless Window
+# End-User Capabilities in WPF ChromelessWindow
 
 The user can perform the operations listed below through the UI provided by the ChromelessWindow.
 

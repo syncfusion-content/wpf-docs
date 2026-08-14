@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Button control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Button (ButtonAdv) control, its elements and more.
+title: About Syncfusion® WPF Button (ButtonAdv) Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Button (ButtonAdv) control and more details.
 platform: wpf
 control: ButtonAdv
 documentation: ug
 ---
 
-# WPF Button (ButtonAdv) Overview
+# About Syncfusion® WPF Button (ButtonAdv) Control
 
 The Button (or ButtonAdv) is a basic button control with image options and multi-line support which is used to design complex forms and applications. The control is shipped with a commanding support that provides compatibility in MVVM design pattern by attaching commands to the control, which will get executed when it gets clicked.
 

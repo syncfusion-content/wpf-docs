@@ -1,13 +1,13 @@
 ---
 layout: post
-title: creating multiple segments | Syncfusion®
-description: How to add multiple and different types of segments into a single connector and how to edit the multiple connectors
+title: Multiple Connector Segments in WPF SfDiagram | Syncfusion®
+description: Learn about multiple connector segments in Syncfusion® WPF SfDiagram control, including combining straight, orthogonal, and curve segments.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Multiple segments creation
+# Multiple Connector Segments in WPF SfDiagram
 
 Multiple segments can be added in a single connector one after another. You can add above four type of segments in single connector at a time.
 

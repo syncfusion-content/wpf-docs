@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Quadratic bezier segments | Syncfusion®
-description: how to add quadratic bezier segements into a connector and how to edit the quadratic bezier segments
+title: Quadratic Curve Segments in WPF SfDiagram | Syncfusion®
+description: Learn about quadratic curve connector segments in Syncfusion® WPF SfDiagram control, including creation, editing, control points, and customization.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Quadratic Curve Segments
+# Quadratic Curve Segments in WPF SfDiagram
 
 Quadratic curve segments are used to create curve segments as quadratic shape and the curves are configurable with middle control point. 
 
@@ -22,7 +22,7 @@ To create a quadratic curve line, you should specify the segment as [`QuadraticC
     <syncfusion:SfDiagram.Connectors>
         <!--Initialize the Connector Collection-->
         <syncfusion:ConnectorCollection>
-            <!--create the connector with qudratic curve segments-->
+            <!--create the connector with quadratic curve segments-->
             <syncfusion:ConnectorViewModel SourcePoint="1000,100" TargetPoint="1100,200">
                 <syncfusion:ConnectorViewModel.Segments>
                     <syncfusion:ConnectorSegments>
@@ -39,8 +39,8 @@ To create a quadratic curve line, you should specify the segment as [`QuadraticC
 {% highlight C# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
-//create the connector with qudratic bezier segments
-ConnectorViewModel qudraticBezierConnector = new ConnectorViewModel()
+//create the connector with quadratic bezier segments
+ConnectorViewModel quadraticBezierConnector = new ConnectorViewModel()
 {
     SourcePoint = new Point(1000, 100),
     TargetPoint = new Point(1100, 200),
@@ -52,7 +52,7 @@ ConnectorViewModel qudraticBezierConnector = new ConnectorViewModel()
 };
 
 //Adding connector into Collection
-(diagram.Connectors as ConnectorCollection).Add(qudraticBezierConnector);
+(diagram.Connectors as ConnectorCollection).Add(quadraticBezierConnector);
 
 {% endhighlight %}
 {% endtabs %}

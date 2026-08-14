@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Menu control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
+title: About Syncfusion® WPF Menu (MenuAdv) Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Menu (MenuAdv) control and more details.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# WPF Menu (MenuAdv) Overview
+# About Syncfusion® WPF Menu (MenuAdv) Control
 
 A MenuAdv control allows the hierarchal organization of elements that are associated with commands and event handlers. This control contains a collection of MenuItemAdv, which can be expanded to display additional MenuItemAdv’s or to perform a specific action when being clicked. 
 

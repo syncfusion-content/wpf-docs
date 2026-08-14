@@ -1,12 +1,12 @@
 ---
 layout: post
-title: ToolBarAdv State in WPF ToolBar control | Syncfusion
-description: Learn here all about ToolBarAdv State support in Syncfusion WPF ToolBar (ToolBarAdv) control and more.
+title: Toolbar State in WPF ToolBarAdv | Syncfusion®
+description: Toolbar state support in WPF ToolBarAdv enables saving and restoring toolbar layouts, preserving item positions and user customizations across sessions.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
-# ToolBarAdv State in WPF ToolBar (ToolBarAdv)
+# Toolbar State in WPF ToolBarAdv
 
 ToolBarAdv provides different states such as Docking, Floating or Hidden. It can be change using the property `ToolBarState` of the ToolBarManager. 
 

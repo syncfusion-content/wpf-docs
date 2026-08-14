@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactivity in WPF Range Selector control | Syncfusion
-description: Learn here all about Interactivity support in Syncfusion® WPF Range Selector (SfDateTimeRangeNavigator) control and more.
+title: Interactivity in WPF Range Selector | Syncfusion®
+description: Interactivity in the WPF Range Selector enables user interaction, range selection, navigation, and customization of selection behavior.
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Interactivity in WPF Range Selector (SfDateTimeRangeNavigator)
+# Interactivity in WPF Range Selector
 
 The date-time range navigator control provides interactive features such as zooming and panning. This control has a resizable scrollbar, which is used to zoom into a large amount of data and navigate to a particular timespan by moving the scroll bar.
 

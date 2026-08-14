@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Group in WPF Diagram control | Syncfusion®
-description: Learn here all about Group support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Group in WPF SfDiagram | Syncfusion®
+description: Learn about group in Syncfusion® WPF SfDiagram control, including creating groups, managing grouped nodes and connectors, and group interactions.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Group in WPF Diagram (SfDiagram)
+# Group in WPF SfDiagram
 
-Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Connectors). Every change made to the Group also affects the children. Child elements can be edited individually.
+A Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Connectors). Every change made to the Group also affects the children. Child elements can be edited individually.
 
 ## Create Group
 
@@ -18,6 +18,9 @@ Group is used to cluster multiple Nodes and Connectors into a single element. It
 The following code illustrates how to create a Group Node.
 
 {% highlight C# %}
+
+//Initialize the diagram
+SfDiagram diagram = new SfDiagram();
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 NodeViewModel node = new NodeViewModel()
@@ -56,7 +59,7 @@ diagram.Groups = groups;
 
 ### Group from Stencil
 
-Group Nodes can be predefined and added to stencil. You can drop those Groups into Diagram, when required. 
+Group Nodes can be predefined and added to a stencil. You can drop those Groups into the diagram, when required. 
 
 To explore how to add Groups from stencil, refer to [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil).
 
@@ -70,8 +73,8 @@ You can edit the Group and its children at runtime. For more information about h
 
 [How to Notify when diagramming object is duplicated with source?](https://support.syncfusion.com/kb/article/6268/how-to-notify-when-diagramming-object-is-duplicated-with-source-in-wpf-diagram-sfdiagram)
 
-[How to Obtain InConnectors and OutConnectors of Node in WPF Diagram?](https://support.syncfusion.com/kb/article/18250/how-to-obtain-inconnectors-and-outconnectors-of-node-in-wpf-diagram)
+[How to Obtain InConnectors and OutConnectors of a Node in WPF Diagram?](https://support.syncfusion.com/kb/article/18250/how-to-obtain-inconnectors-and-outconnectors-of-node-in-wpf-diagram)
 
-[How to prevent the node from moving outside the group in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18852/how-to-prevent-the-node-from-moving-outside-the-group-in-wpf-diagram-sfdiagram)
+[How to prevent the node from moving outside the group in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18852/how-to-prevent-the-node-from-moving-outside-the-group-in-wpf-diagram-sfdiagram)
 
-[How to switch the visibility of an icon in the ContentTemplate in WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/17725/how-to-switch-the-visibility-of-an-icon-in-the-contenttemplate-in-wpf-diagram-sfdiagram-)
+[How to switch the visibility of an icon in the ContentTemplate in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17725/how-to-switch-the-visibility-of-an-icon-in-the-contenttemplate-in-wpf-diagram-sfdiagram-)

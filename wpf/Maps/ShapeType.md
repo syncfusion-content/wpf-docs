@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shape Types in WPF Maps control | Syncfusion
-description: Learn about the Shape Types support in the Syncfusion WPF Maps (SfMaps) control, including its elements and more.
+title: Shape Types in WPF Maps | Syncfusion®
+description: Shape types in the WPF Maps define how geographic regions are rendered, enabling visualization of location-based data using map shapes.
 platform: wpf
 control: SfMaps
 documentation: ug
 ---
 
-# Shape Types in WPF Maps (SfMaps)
+# Shape Types in WPF Maps
 
 This feature allows you to draw a polygon, polyline, or circle on the map. You can provide input as geo points to draw shapes in two different ways:
 

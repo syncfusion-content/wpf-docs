@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UML Sequence Diagram Model in WPF Diagram control | Syncfusion®
-description: Learn here all about UML Sequence Diagram Model support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: UML Sequence Diagram Model in WPF SfDiagram | Syncfusion®
+description: Learn about the UML Sequence Diagram Model in Syncfusion® WPF SfDiagram control, including participants, messages, activation boxes, and fragments.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# UML Sequence Diagram Model in WPF Diagram (SfDiagram)
+# UML Sequence Diagram Model in WPF SfDiagram
 
 A UML Sequence Diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control provides comprehensive support for creating and visualizing UML Sequence Diagrams through the [UMLSequenceDiagramModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceDiagramModel.html) class. You need to assign the `UMLSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Model) property of the `SfDiagram` control to enable this functionality.
 
@@ -93,7 +93,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 ### Messages
 
-[UMLSequenceMessage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceMessage.html) represent communication between participants and is displayed as arrows connecting lifelines.
+[UMLSequenceMessage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceMessage.html) represent communication between participants and are displayed as arrows connecting lifelines.
 
 #### Types of Messages
 
@@ -401,7 +401,7 @@ var messages = new MessageCollection
     }
 };
 
-// Intialize Diagram
+// Initialize Diagram
 SfDiagram Diagram = new SfDiagram();
 
 // Update Participants and Messages to the Model
@@ -663,7 +663,7 @@ var fragments = new FragmentCollection
 };
 
 
-// Intialize Diagram
+// Initialize Diagram
 SfDiagram Diagram = new SfDiagram();
 
 // Update Participants, Messages and Fragments to the Model
@@ -724,7 +724,7 @@ The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 </syncfusion:SfDiagram>
 {% endhighlight %}  
 {% highlight c# %}  
-// Intialize Diagram
+// Initialize Diagram
 SfDiagram Diagram = new SfDiagram();
 
 // Initialize the UML Sequence Diagram model with custom spacing and predefined elements  

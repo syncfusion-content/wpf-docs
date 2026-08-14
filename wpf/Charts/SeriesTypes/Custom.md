@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Chart in WPF Charts control | Syncfusion
-description: Learn here all about Custom Chart support in Syncfusion® WPF Charts (SfChart) control, its elements and more details.
+title: Custom Chart in WPF Charts | Syncfusion®
+description: Custom charts in the WPF Chart allow you to create tailored chart visualizations by extending and customizing chart behavior and rendering.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Custom Charts in WPF (SfChart)
+# Custom Charts in WPF
 
 [`CustomTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_CustomTemplate) property is used to customize the chart series. It supports the following series
 

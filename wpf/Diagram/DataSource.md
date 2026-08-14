@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataSource in WPF Diagram control | Syncfusion®
-description: Learn here all about DataSource support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: DataSource in WPF SfDiagram | Syncfusion®
+description: Populate Syncfusion® WPF SfDiagram from data sources, define layouts, manage hierarchical relationships, and support flowchart mapping.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# DataSource in WPF Diagram (SfDiagram)
+# DataSource in WPF SfDiagram
 
 [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) can be populated with the nodes and connectors based on the information provided from an external data source.
 

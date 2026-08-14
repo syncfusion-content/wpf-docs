@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Edit and Format Text Commands in WPF Diagram control | Syncfusion®
-description: Learn here all about Edit and Format Text Commands support in Syncfusion® WPF Diagram (SfDiagram) control and more.
+title: Edit and Format Text Commands in WPF SfDiagram | Syncfusion®
+description: Edit annotations and format text in Syncfusion® WPF SfDiagram using commands for bold, italic, underline, strikethrough, and editing.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Edit and Format Text Commands in WPF Diagram (SfDiagram)
+# Edit and Format Text Commands in WPF SfDiagram
 
 ## EditAnnotation
 

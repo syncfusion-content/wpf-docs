@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ticks in WPF Bullet Graph control | Syncfusion
-description: Learn all about the Ticks support in Syncfusion WPF Bullet Graph (SfBulletGraph) control, its elements, and more details.
+title: Ticks in WPF Bullet Graph | Syncfusion®
+description: Ticks in the WPF Bullet Graph indicate scale intervals and support customization of size, position, style, and appearance settings.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Ticks in WPF Bullet Graph (SfBulletGraph)
+# Ticks in WPF Bullet Graph
 
 The quantitative scale is displayed with two types of ticks:
 

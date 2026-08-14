@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in WPF Diagram control | Syncfusion®
-description: Learn here all about Localization support in Syncfusion® WPF Diagram (SfDiagram) control, its elements and more.
+title: Localization in WPF SfDiagram | Syncfusion®
+description: Localize annotations and context menu content in Syncfusion® WPF SfDiagram using resource files and ResourceManager support.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Localization in WPF Diagram (SfDiagram)
+# Localization in WPF SfDiagram
 
 Localization is the process of configuring the application to a specific language. [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to localize all the static text used for annotation and context menu contents.
 

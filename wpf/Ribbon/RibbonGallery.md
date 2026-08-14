@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonGallery in WPF Ribbon control | Syncfusion®
-description: Learn about RibbonGallery support in Syncfusion® Essential Studio® WPF Ribbon control, its elements and more.
-platform: WPF
+title: RibbonGallery in WPF Ribbon Control | Syncfusion®
+description: The RibbonGallery in Ribbon lets you display a collection of items in a visual grid for selection, similar to Microsoft Office galleries.
+platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonGallery in WPF Ribbon
+# RibbonGallery in WPF Ribbon Control
 
 RibbonGallery provides `VisualMode` property, that helps to display items in two different ways.
 

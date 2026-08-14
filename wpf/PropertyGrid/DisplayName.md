@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DisplayName of Property in WPF PropertyGrid control | Syncfusion
-description: Learn about DisplayName of Property support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
+title: Display Name Support in WPF PropertyGrid | Syncfusion®
+description: Display Name Support in PropertyGrid enables customizing property names using attributes or runtime events for improved readability.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# DisplayName of Property in WPF PropertyGrid
+# Display Name Support in WPF PropertyGrid
 
 By default, the property name is displayed in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) . We can change the display name of the properties instead of the property name by using the attributes and event.
 
