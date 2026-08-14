@@ -516,8 +516,7 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 `SymbolSource` is the property of stencil, which is a collection of objects like symbol, node, connector, and more. Based on the SymbolSource, the Stencil will populate the Symbols. And the `SymbolGroupProvider` groups the symbols into SymbolGroups based on the `MappingName` property.
 
 {% tabs %}
-{% highlight xaml %}Create connector With source node and target node
-
+{% highlight xaml %}
 <!--Define the Stencil-->
 <stencil:Stencil x:Name="stencil"  ExpandMode="All" 
                  BorderBrush="Black" BorderThickness="0,0,2,0">
@@ -740,7 +739,7 @@ For more information about stencil, please [refer](https://help.syncfusion.com/w
 
 WPF Diagram (SfDiagram) provides support to auto-arrange the nodes in the diagram area that is referred to as a Layout.
 
-#### Business object (employee information)
+### Business object (employee information)
 
 Define employee information as collection of data. The following code example shows the employee information whose, `EmpId` is used as a unique identifier and `ParentId` is used to identify the person to whom an employee reports to, in the organization.
 
