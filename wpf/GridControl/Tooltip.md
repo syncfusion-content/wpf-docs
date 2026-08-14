@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in WPF GridControl | Syncfusion®
-description:  Display and customize tooltips in GridControl for cells, rows, and columns with support for templates, events, delay settings, and runtime updates.
+description: Display and customize tooltips in GridControl for cells, rows, and columns with support for templates, events, delay settings, and runtime updates.
 platform: wpf
 control: GridControl
 documentation: ug
