@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Step ProgressBar control | Syncfusion
-description: Learn here all about introduction of Syncfusion<sup>&reg;</sup>; WPF Step ProgressBar (SfStepProgressBar) control, its elements and more.
-platform: WPF
+title: About Syncfusion® WPF SfStepProgressBar Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF SfStepProgressBar control and explore its features, capabilities, and more details.
+platform: wpf
 control: SfStepProgressBar
 documentation: ug
 ---
 
-# WPF Step ProgressBar (SfStepProgressBar) Overview
+# About Syncfusion® WPF SfStepProgressBar Control
 
 The SfStepProgressBar control is used to show the progress of a multiple-step process, such as new user registration or package status tracking. You can customize its appearance by changing the step shape, progress bar color, step template, and content template.
 

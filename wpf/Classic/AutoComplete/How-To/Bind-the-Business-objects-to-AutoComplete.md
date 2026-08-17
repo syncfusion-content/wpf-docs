@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bind the Business objects to AutoComplete | wpf | Syncfusion
-description: Learn here all about Bind the Business objects to AutoComplete support in Syncfusion WPF AutoComplete (Classic) control and more.
+title: How to Bind Business Objects to WPF AutoComplete | Syncfusion®
+description: Learn how to bind business objects to Syncfusion® WPF AutoComplete (Classic) control, its custom data sources, display members, and selected values.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Bind the Business objects in WPF AutoComplete (Classic)
+# How to Bind Business Objects to WPF AutoComplete (Classic)
 
 AutoComplete supports binding the Business objects as its Data Source.
 

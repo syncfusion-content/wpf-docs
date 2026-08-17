@@ -1,13 +1,13 @@
 ---
 layout: post
-title: States of the WPF Linear ProgressBar control | Syncfusion&reg;
-description: Learn here about states like determinate, indeterminate and Buffer in the Syncfusion<sup>&reg;</sup>; WPF Linear ProgressBar control and more details.
+title: States in WPF SfLinearProgressBar | Syncfusion®
+description: Learn how states in WPF SfLinearProgressBar visually represent progress changes using customized appearances for different progress values.
 platform: wpf
 control: SfLinearProgressBar
 documentation: ug
 ---
 
-# Different states in Linear ProgressBar
+# States in WPF SfLinearProgressBar
 States help to visualize the progress of a task in different modes. You can configure states of the linear progressbar control depending on its usage in following ways.
 
 
