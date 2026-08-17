@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion license and unlock keys - Syncfusion
-description: Learn here about the Syncfusion license and unlock keys and difference between license and unlock keys.
+title: About Syncfusion® WPF Essential Studio Licensing | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio WPF licensing, difference between license and unlock keys and more details.
 platform: WPF
 control: Essential Studio
 documentation: ug
@@ -16,7 +16,7 @@ margin-top: 1.5em;     margin-bottom: 1.5em;
 }
 </style>
 
-# Syncfusion Licensing Overview
+# About Syncfusion® WPF Essential Studio Licensing
 
 We have introduced a new licensing system starting with version 16.2.0.x release of Essential Studio. These modifications apply to all evaluators and only to paid customers who use NuGet packages from [nuget.org](https://www.nuget.org/). Starting with v16.2.0.x, if you use the evaluation installer or the NuGet feed to reference Syncfusion assemblies, you must also include the corresponding platform and version license key in your projects.
 
