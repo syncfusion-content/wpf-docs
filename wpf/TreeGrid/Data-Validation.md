@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Validation in WPF SfTreeGrid | Syncfusion®
-description: Learn about Data Validation in the Syncfusion® WPF SfTreeGrid control. Validate user input and ensure data accuracy with built-in rules.
+description: Validate user input in SfTreeGrid with built-in rules, IDataErrorInfo, and custom validation logic for accurate data.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

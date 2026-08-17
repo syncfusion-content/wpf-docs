@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Automation in WPF SfTreeGrid | Syncfusion®
-description: Learn about UI Automation in the Syncfusion® WPF SfTreeGrid control. Enable automated testing and accessibility with UI Automation support.
+description: Enable UI Automation in SfTreeGrid to support automated testing, accessibility tools, and Coded UI Tests.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

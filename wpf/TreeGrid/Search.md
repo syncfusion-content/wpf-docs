@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Search in WPF SfTreeGrid | Syncfusion®
-description: Learn about Search in the Syncfusion® WPF SfTreeGrid control. Quickly locate records with built-in search options for efficient navigation.
+description: Search SfTreeGrid records using SearchController to find and highlight matching text across all visible columns efficiently.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Merge Cells in WPF SfTreeGrid | Syncfusion®
-description: Learn about Merge Cells in the Syncfusion® WPF SfTreeGrid control. Combine adjacent cells to improve readability and data presentation.
+description: Merge adjacent cells in SfTreeGrid rows using QueryCoveredRange for better readability and visual data grouping.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

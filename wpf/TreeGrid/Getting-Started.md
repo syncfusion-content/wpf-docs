@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF SfTreeGrid | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF SfTreeGrid control. Explore setup, features, examples, and customization options.
+description: Get started with SfTreeGrid to display hierarchical data, configure columns, populate data sources, and explore key features.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

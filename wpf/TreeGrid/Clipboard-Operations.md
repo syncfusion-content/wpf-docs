@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard Operations in WPF SfTreeGrid | Syncfusion®
-description: Learn about Clipboard Operations in the Syncfusion® WPF SfTreeGrid control. Copy, paste, and manage grid data efficiently with built-in support.
+description: Clipboard Operations in SfTreeGrid enables copy, cut, and paste actions with configurable settings, events, and custom clipboard behavior.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

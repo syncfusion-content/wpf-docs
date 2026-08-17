@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in WPF SfTreeGrid | Syncfusion®
-description: Learn about ToolTip in the Syncfusion® WPF SfTreeGrid control. Show helpful info when hovering over cells or header cells for better context.
+description: Show tooltips in SfTreeGrid for record cells and header cells to display additional context on mouse hover.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in WPF SfTreeGrid | Syncfusion®
-description: Learn about Columns in the Syncfusion® WPF SfTreeGrid control. Configure, customize, and manage column types and behaviors effectively.
+description: Manage columns in SfTreeGrid to add, remove, and customize column collections with built-in properties and behaviors.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
