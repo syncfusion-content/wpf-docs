@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Formatting in WPF Olap Grid control | Syncfusion®
-description: Learn about Conditional Formatting support in Syncfusion® WPF Olap Grid control, its elements and more details.
+title: Conditional Formatting in WPF OlapGrid | Syncfusion®
+description: The conditional formatting support in OlapGrid allows you to format grid cells based on conditions such as font, color, and border settings.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Conditional Formatting in WPF Olap Grid
+# Conditional Formatting in WPF OlapGrid
 
 Conditional formatting allows you to format the grid cells based on a certain condition.
  

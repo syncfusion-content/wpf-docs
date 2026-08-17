@@ -1,13 +1,13 @@
 ---
 layout: post
-title: KPI in WPF Olap Grid control | Syncfusion®
-description: Learn about KPI support in Syncfusion® Essential Studio® WPF Olap Grid control, its elements and more details.
+title: KPI in WPF OlapGrid | Syncfusion®
+description: The KPI support in OlapGrid evaluates business success by displaying Key Performance Indicator calculations associated with a measure group in a cube.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# KPI in WPF Olap Grid
+# Key Performance Indictor (KPI) in WPF OlapGrid
 
 KPI is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how grid applications should display the results of KPI calculations.
 
