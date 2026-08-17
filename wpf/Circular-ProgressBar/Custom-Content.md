@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Content in WPF circular progressbar control | Syncfusion&reg;
-description: Learn here all about Custom Content support in Syncfusion<sup>&reg;</sup>; WPF circular progressbar (SfCircularProgressBar) control and more.
+title: Custom Content in WPF SfCircularProgressBar | Syncfusion®
+description: Learn how to add custom content in Syncfusion® WPF SfCircularProgressBar to display personalized text, templates, icons, and visual elements.
 platform: wpf
 control: SfCircularProgressBar
 documentation: ug
 ---
 
-# Custom Content in WPF circular progressbar (SfCircularProgressBar)
+# Custom Content in WPF SfCircularProgressBar
 In the circular progress bar, you can add any custom content to the center of the control using [ProgressContent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfCircularProgressBar_ProgressContent) property.
 For example, you can include add, play or pause button to control the progress. You can also add an image that indicates the actual task in progress or add custom text that conveys how far the task is completed.
 

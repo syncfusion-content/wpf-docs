@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing Data Templates in WPF Step ProgressBar | Syncfusion
-description: Learn here all about Customizing Data Templates support in Syncfusion<sup>&reg;</sup>; WPF Step ProgressBar (SfStepProgressBar) control and more.
+title: Customizing Data Templates in WPF SfStepProgressBar | Syncfusion®
+description: Learn how to customize data templates in Syncfusion® WPF SfStepProgressBar to personalize step content, visuals, and user interaction.
 platform: wpf
 control: Step ProgressBar
 documentation: ug
 ---
 
-# Customizing Data Templates in WPF Step ProgressBar (SfStepProgressBar)
+# Customizing Data Templates in WPF SfStepProgressBar
 
 Data templates can be customized for the step markers and step content. The next sections explain how to customize the data templates.
 

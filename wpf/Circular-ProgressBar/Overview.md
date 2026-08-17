@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Circular ProgressBar control | Syncfusion
-description: Learn here all about introduction of Syncfusion<sup>&reg;</sup>; WPF Circular ProgressBar (SfCircularProgressBar) control, its elements and more details.
+title: About Syncfusion® WPF SfCircularProgressBar Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio® WPF SfCircularProgressBar control and explore its features, capabilities, and more details.
 platform: wpf
 control: SfCircularProgressBar
 documentation: ug
 ---
 
-# WPF Circular ProgressBar (SfCircularProgressBar) Overview
+# About Syncfusion® WPF SfCircularProgressBar Control
 
 The SfCircularProgressBar control indicates the progress of an operation and let users know the remaining time for completion visualizes in circular fashion.
 

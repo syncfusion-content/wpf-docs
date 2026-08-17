@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layouts in WPF Step ProgressBar control | Syncfusion
-description: Learn here all about Layouts support in Syncfusion<sup>&reg;</sup>; WPF Step ProgressBar (SfStepProgressBar) control and more.
+title: Layouts in WPF SfStepProgressBar | Syncfusion®
+description: Learn about layout customization in Syncfusion® WPF SfStepProgressBar, including step arrangement, alignment, and visual presentation options.
 platform: WPF
 control: Step ProgressBar
 documentation: ug
 ---
 
-# Layouts in WPF Step ProgressBar (SfStepProgressBar)
+# Layouts in WPF SfStepProgressBar
 You can customize the layout of the Step progress bar in the following ways.
 
 ## ItemsStretch
