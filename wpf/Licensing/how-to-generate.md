@@ -2,7 +2,7 @@
 layout: post
 title: How to generate Syncfusion® license key in WPF | Syncfusion®
 description: Learn how to generate Syncfusion® WPF license keys for your Essential Studio applications through the Syncfusion® account dashboard.
-platform: WPF
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---

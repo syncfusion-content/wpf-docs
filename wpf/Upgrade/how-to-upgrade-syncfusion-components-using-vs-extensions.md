@@ -2,7 +2,7 @@
 layout: post
 title: How to upgrade WPF components using VS extensions | Syncfusion®
 description: Learn how to upgrade Syncfusion® WPF components to the latest version using the Syncfusion® Visual Studio extension from the marketplace.
-platform: WPF
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---

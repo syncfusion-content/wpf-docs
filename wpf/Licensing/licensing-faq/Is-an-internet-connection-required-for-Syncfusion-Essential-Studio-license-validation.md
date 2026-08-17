@@ -2,7 +2,7 @@
 layout: post
 title: How to validate license offline in WPF | Syncfusion®
 description: Learn how to validate the Syncfusion® WPF license key offline without an internet connection during application execution and deployment.
-platform: WPF
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---

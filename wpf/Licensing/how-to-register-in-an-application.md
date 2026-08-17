@@ -42,7 +42,7 @@ N> * Place the license key between double quotes. Also, ensure that Syncfusion.L
 
 I> Syncfusion license keys can be validated during the Continuous Integration (CI) processes to ensure proper licensing and prevent licensing errors during deployment. Refer to the [CI License Validation](https://help.syncfusion.com/wpf/licensing/licensing-faq/ci-license-validation) section for detailed instructions on how to implement it.
 
-### WPF
+## WPF
 
 You can register the license key in App constructor of **App.xaml.cs** in C#. If App constructor not available in **App.xaml.cs**, create the "App()" constructor in **App.xaml.cs** and register the license key inside the constructor. In Visual Basic, register the license code in **App.xaml.vb**.
 

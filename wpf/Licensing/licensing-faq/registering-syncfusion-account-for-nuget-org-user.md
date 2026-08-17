@@ -2,7 +2,7 @@
 layout: post
 title: How to register account for NuGet.org users in WPF | Syncfusion®
 description: Learn how to register a Syncfusion® account for direct NuGet.org users to obtain a free 30-day trial license key for WPF.
-platform: WPF
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---

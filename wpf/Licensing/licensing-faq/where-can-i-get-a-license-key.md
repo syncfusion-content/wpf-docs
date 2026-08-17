@@ -2,7 +2,7 @@
 layout: post
 title: How to get a license key in WPF | Syncfusion®
 description: Learn how to get a Syncfusion® WPF license key from the License & Downloads or Trial & Downloads section of the Syncfusion® website.
-platform: WPF
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---
