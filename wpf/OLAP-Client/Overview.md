@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion WPF OlapClient Control | Syncfusion®
-description: Learn about introduction of Syncfusion® OlapClient and more details.
+description: Learn about Syncfusion® OlapClient's introduction and more details.
 platform: wpf
 control: OlapClient
 documentation: ug

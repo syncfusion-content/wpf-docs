@@ -264,4 +264,4 @@ Select the required report from the report list. The selected report will be set
 
 ## OLAP grid and OLAP chart
 
-The [OLAP grid](http://help.syncfusion.com/wpf/olapgrid/overview/) and [OLAP chart](http://help.syncfusion.com/wpf/olapchart/overview) controls will be rendered with respect to the operations done in the axis element builder.
+The [OLAP grid](https://help.syncfusion.com/wpf/olap-grid/overview) and [OLAP chart](http://help.syncfusion.com/wpf/olapchart/overview) controls will be rendered with respect to the operations done in the axis element builder.
