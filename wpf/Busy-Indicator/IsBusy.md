@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IsBusy in WPF SfBusyIndicator | Syncfusion®
-description: The IsBusy property in WPF SfBusyIndicator controls the busy state, enabling responsive feedback and indicating ongoing processing tasks to users.
+description: The IsBusy property in WPF SfBusyIndicator enables visual feedback during long-running operations by indicating when the application is busy.
 platform: wpf
 control: Busy Indicator
 documentation: ug
