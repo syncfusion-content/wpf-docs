@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Events | SfRangeSlider | wpf | Syncfusion®
-description: This section provides details about all events and their arguments in Syncfusion® WPF RangeSlider (SfRangeSlider). 
+title: How to Trigger Events in WPF RangeSlider | Syncfusion®
+description: Learn how to trigger events in Syncfusion® WPF RangeSlider (SfRangeSlider) control, its event arguments, notifications, and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Events in WPF RangeSlider(SfRangeSlider)
+# How to Trigger Events in WPF RangeSlider (SfRangeSlider)
+
+This section explains how to trigger and handle events in the Syncfusion® WPF RangeSlider (SfRangeSlider) control. Learn about the available events, their event arguments, and how to respond to value and range changes programmatically.
 
 ## How to trigger LabelLoaded event? 
 
