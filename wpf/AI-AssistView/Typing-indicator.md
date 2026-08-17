@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Typing Indicator in WPF SfAIAssistView | Syncfusion®
-description: The typing indicator in WPF SfAIAssistView provides visual feedback while AI processes prompts or generates responses, enhancing user engagement.
+title: TypingIndicator in WPF AI AssistView control | Syncfusion
+description: Learn about the typing indicator feature displayed in the AI AssistView control while the AI processes or generates a response.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Typing Indicator in WPF SfAIAssistView
+# Initialize the typing indicator in WPF AI AssistView
 
 By using the [TypingIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_TypingIndicator) property, a typing indicator is shown while the AI is processing or generating a response, giving users real-time feedback and enhancing conversational flow
 
@@ -122,14 +122,15 @@ When the application runs, the TypingIndicator will show an animation representi
 {% highlight xaml %}
 
 <Window
-    x:Class="GettingStarted.MainWindow"
+    x:Class="GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:GettingStarted"
+    xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
-    mc:Ignorable="d">
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
      <Grid.DataContext>
         <local:ViewModel/>

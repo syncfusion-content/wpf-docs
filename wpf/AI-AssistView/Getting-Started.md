@@ -1,23 +1,21 @@
 ---
 layout: post
-title: Getting Started with WPF SfAIAssistView | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF SfAIAssistView control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF AI AssistView control | Syncfusion
+description: Learn about getting started with the Syncfusion WPF AI AssistView (SfAIAssistView) control with its basic features.
 platform: wpf
 control: AI AssistView
 documentation: ug
 ---
 
-# Getting Started with WPF SfAIAssistView
+# Getting Started with WPF AI AssistView
 
-This section explains the steps required to add the WPF [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control with its basic features.
+This section explains the steps required to add the Wpf [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control with its basic features.
 
 ## Structure of SfAIAssistView
 
-The following diagram illustrates the layout of the SfAIAssistView control, including the header, message list, and input area.
-
 ![WPF SfAIAssistView Structure](aiassistview_images/wpf_aiassistview_control_structure.png)
 
-## Adding WPF SfAIAssistView via XAML
+## Adding WPF SfAIAssistview via xaml
 
 1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
 2. Add reference to [Syncfusion.SfChat.Wpf](https://www.nuget.org/packages/Syncfusion.SfChat.Wpf) NuGet. 
@@ -27,19 +25,20 @@ The following diagram illustrates the layout of the SfAIAssistView control, incl
 {% tabs %}
 {% highlight xaml %}
 
-<Window
-    x:Class="GettingStarted.MainWindow"
+<Page
+    x:Class="GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
-    mc:Ignorable="d">
-    <Grid x:Name="grid">
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
       <syncfusion:SfAIAssistView />
     </Grid>
-</Window>
+</Page>
 
 {% endhighlight %}
 {% endtabs %}
@@ -77,9 +76,9 @@ namespace GettingStarted
 {% endtabs %}
 
 
-## Creating the ViewModel for the AI AssistView
+## Creating ViewModel for AI AssistView
 
-Create a simple chat collection as shown in the following code example, and save it in a new class file named `ViewModel.cs`.
+Create a simple chat collection as shown in the following code example in a new class file. Save it as ViewModel.cs file.
 
 {% tabs %}
 {% highlight C# %}
@@ -144,31 +143,32 @@ Create a simple chat collection as shown in the following code example, and save
 {% endhighlight %}
 {% endtabs %}
 
-## Binding Messages to the AI AssistView
+## Bind Messages
 
-Set the ViewModel as the `DataContext` for the AI AssistView or the parent window. This allows data binding between the UI and the ViewModel properties.
-To populate the AI AssistView, bind the chats in the ViewModel to the `Messages` property of the AI AssistView.
+Set the ViewModel as the DataContext for the AI AssistView or the parent window. This allows data binding between the UI and the ViewModel properties.
+To populate AI AssistView, bind the chats in ViewModel to Messages property of AI AssistView.
 
 {% tabs %}
 {% highlight xaml %}
 
-<Window
-    x:Class="GettingStarted.MainWindow"
+<Page
+    x:Class="GettingStarted.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:GettingStarted"
+    xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
-    mc:Ignorable="d">
-    <Grid x:Name="grid">
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
      <Grid.DataContext>
         <local:ViewModel/>
      </Grid.DataContext>
       <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"  
                                    Messages="{Binding Chats}"/>
     </Grid>
-</Window>
+</Page>
 
 {% endhighlight %} 
 {% endtabs %}
