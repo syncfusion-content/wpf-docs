@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles and Templates in WPF DataPager control | Syncfusion®
-description: Learn here all about Styles and Templates support in Syncfusion® WPF DataPager (SfDataPager) control and more.
+title: Styles and Templates in WPF SfDataPager | Syncfusion®
+description: Customize the appearance of SfDataPager using styles and templates. Modify visual elements, edit control templates, and create custom themes.
 platform: wpf
-control: SfDataPager Control
+control: SfDataPager
 documentation: ug
 ---
 
-# Styles and Templates in WPF DataPager (SfDataPager)
+# Styles and Templates in WPF SfDataPager
 
 WPF Styles and Templates is a suite of features (styles and templates) that allow developers and designers to create visual compelling effects and consistent appearance of the products.
 
