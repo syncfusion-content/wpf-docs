@@ -8,30 +8,66 @@ documentation: ug
 ---
 # Preview Settings in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to drag objects as an outline without affecting original object. When multiple elements are selected, outline of every selected element will be moved.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to drag objects as an outline without affecting the original object. When multiple elements are selected, the outline of every selected element is moved.
 
 Preview Dragging can be enabled by assigning values other than [PreviewMode.Preview](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PreviewMode.html) to [SfDiagram.PreviewSettings.PreviewMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PreviewSettings.html#Syncfusion_UI_Xaml_Diagram_PreviewSettings_PreviewMode).
 
 ![Drag the preview of the node instead of original object](PreviewSettings_Images/PreviewDragging_img1.gif)
 
-By default, Outline of the connectors connected to the dragging objects will be in disabled state. But, you can able to view the outline of the connectors, by holding dragging objects for certain time span. [`ConnectorRefreshingSpan`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PreviewSettings.html#Syncfusion_UI_Xaml_Diagram_PreviewSettings_ConnectorRefreshingSpan) property of [PreviewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PreviewSettings.html) allows you to specify the time span and the value should be greater than 300ms.
+By default, Outline of the connectors connected to the dragging objects will be disabled state. But, you can view the outline of the connectors, by holding dragged objects for certain time span. [`ConnectorRefreshingSpan`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PreviewSettings.html#Syncfusion_UI_Xaml_Diagram_PreviewSettings_ConnectorRefreshingSpan) property of [PreviewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PreviewSettings.html) allows you to specify the time span and the value should be greater than 300ms.
 
 {% tabs %}
+
+{% highlight Xaml %}
+
+  <!--Create SfDiagram Instance-->
+  <syncfusion:SfDiagram x:Name="Diagram">
+      <syncfusion:SfDiagram.PreviewSettings>
+          <syncfusion:PreviewSettings PreviewMode="Preview" ConnectorRefreshingSpan="300"></syncfusion:PreviewSettings>
+      </syncfusion:SfDiagram.PreviewSettings>
+  </syncfusion:SfDiagram>
+
+{% endhighlight %}
 {% highlight C# %}
+
+SfDiagram diagram = new SfDiagram();
 
 this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode.Preview, ConnectorRefreshingSpan = 300 };
 
 {% endhighlight %}
 {% endtabs %}
 
-![Refresh the orginal object with specific time](PreviewSettings_Images/PreviewDragging_img2.gif)
+![Refresh the original object with specific time](PreviewSettings_Images/PreviewDragging_img2.gif)
 
 ## Appearance
 
-Appearance of the preview can be modified using [`PreviewStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PreviewSettings.html#Syncfusion_UI_Xaml_Diagram_PreviewSettings_PreviewStyle) property of `PreviewSettings`.
+Appearance of the preview can be customized using [`PreviewStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PreviewSettings.html#Syncfusion_UI_Xaml_Diagram_PreviewSettings_PreviewStyle) property of `PreviewSettings`.
 
 {% tabs %}
+
+{% highlight Xaml %}
+
+<Style TargetType="Shape" x:Key="previewstyle">
+    <Setter Property="Stroke"
+            Value="CornflowerBlue"></Setter>
+    <Setter Property="StrokeThickness"
+            Value="1.5"></Setter>
+    <Setter Property="StrokeDashArray"
+            Value="3,3"></Setter>
+</Style>
+
+
+  <!--Create SfDiagram Instance-->
+  <syncfusion:SfDiagram x:Name="Diagram">
+      <syncfusion:SfDiagram.PreviewSettings>
+          <syncfusion:PreviewSettings PreviewMode="Preview" ConnectorRefreshingSpan="300" PreviewStyle="{StaticResource previewstyle}"></syncfusion:PreviewSettings>
+      </syncfusion:SfDiagram.PreviewSettings>
+  </syncfusion:SfDiagram>
+
+{% endhighlight %}
 {% highlight C# %}
+
+SfDiagram diagram = new SfDiagram();
 
 var previewStyle = new Style();
 previewStyle.TargetType = typeof(Shape);
