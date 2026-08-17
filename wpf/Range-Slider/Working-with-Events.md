@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Trigger Events in WPF RangeSlider (SfRangeSlider) | Syncfusion®
+title: How to Trigger Events in WPF RangeSlider | Syncfusion®
 description: Learn how to trigger events in Syncfusion® WPF RangeSlider (SfRangeSlider) control, its event arguments, notifications, and more.
 platform: wpf
 control: SfRangeSlider 
