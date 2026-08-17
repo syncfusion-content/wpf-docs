@@ -11,15 +11,15 @@ documentation: ug
 
 The [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) control allows the user to select time values in a touch friendly manner.
 
-### Normal view:
+## Normal view:
 
 ![SfTimePicker with normal view](Overview_images/Overview_img1.png)
 
-### Expanded view:
+## Expanded view:
 
 ![SfTimePicker with dropdown time selector](Overview_images/Overview_img2.png)
 
-### Key Features
+## Key Features
 
 * **Formatting** – The control displays the selected time value in various formats.
 
