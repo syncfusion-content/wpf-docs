@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Storing and Retrieving Report as Stream in WPF OlapClient | Syncfusion®
+title: Storing and Retrieving Report as Stream in OlapClient | Syncfusion®
 description: The store and retrieve report as stream support in OlapClient saves and loads the current report session as a stream in WPF applications.
 platform: wpf
 control: OlapClient
