@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selected Item in WPF SfStepProgressBar | Syncfusion®
-description: Learn how the Selected Item feature in WPF SfStepProgressBar highlights the current step and supports progress tracking.
+description: Selected Item in WPF SfStepProgressBar highlights the active step and helps visualize progress in multi-step workflows.
 platform: wpf
 control: Step ProgressBar
 documentation: ug
