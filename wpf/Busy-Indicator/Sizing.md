@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sizing in WPF Busy Indicator control | Syncfusion®
-description: Learn here all about Sizing support in Syncfusion® WPF Busy Indicator (SfBusyIndicator) control and more.
+title: Sizing in WPF SfBusyIndicator | Syncfusion®
+description: The Sizing support in WPF SfBusyIndicator allows customization of indicator dimensions, ensuring optimal visibility and seamless layout integration.
 platform: wpf
 control: Busy Indicator
 documentation: ug
 ---
 
-# Sizing in WPF Busy Indicator (SfBusyIndicator)
+# Sizing in WPF SfBusyIndicator
 
 ## ViewBoxHeight
 

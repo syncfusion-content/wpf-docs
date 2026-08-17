@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data Binding in WPF Grouping control | Syncfusion®
-description: Learn about Data Binding support in Syncfusion® Essential Studio® WPF Grouping control, its elements and more details.
-platform: WindowsForms
+title: Data Binding in WPF Grouping | Syncfusion®
+description: Data binding in Grouping enables you to bind IList data sources, access records through the grouping engine, and iterate grouped data efficiently.
+platform: wpf
 control: Grouping
 documentation: ug
 ---
