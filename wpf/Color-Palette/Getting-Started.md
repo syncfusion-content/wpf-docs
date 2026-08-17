@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Color Palette | Syncfusion®
+title: Getting Started with WPF ColorPalette | Syncfusion®
 description: Learn how to get started with the Syncfusion WPF Color Palette control, its elements, and more details.
 platform: wpf
 control: SfColorPalette
 documentation: ug
 ---
 
-# Getting Started with WPF Color Palette
+# Getting Started with WPF ColorPalette
 
 This section explains how to create a WPF [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) and explains about its structure and features.
 

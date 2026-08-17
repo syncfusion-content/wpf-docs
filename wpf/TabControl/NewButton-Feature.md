@@ -1,13 +1,13 @@
 ---
 layout: post
-title: New Button in WPF TabControl | Syncfusion®
+title: New Button in WPF TabControlExt | Syncfusion®
 description: Add a new tab button to the Syncfusion WPF TabControl (TabControlExt) so users can create new tab items with a single click.
 platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# New Button in WPF TabControl
+# New Button in WPF TabControlExt
 
 This section explains how to create new tab items using new button and its UI customization in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
 
