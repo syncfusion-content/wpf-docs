@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF SfStepProgressBar | Syncfusion®
 description: Customize the appearance of WPF SfStepProgressBar with styling options for step indicators, connectors, colors, and visual states.
-platform: WPF
+platform: wpf
 control: Step ProgressBar
 documentation: ug
 ---
