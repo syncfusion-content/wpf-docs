@@ -9,13 +9,19 @@ documentation: ug
 
 # Delete Command in WPF SfDiagram
 
-The [`Delete`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Delete) commands are used to do delete operation on the Diagram view for currently selected item. This command is also used to delete any un-selected diagram objects with its parameter. 
+The [`Delete`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Delete) command is used to perform delete operations on the Diagram view for the currently selected item. This command is also used to delete any unselected diagram objects with its parameter. 
 
-To execute delete commands, the [DeleteParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DeleteParameter.html) type has to be passed.
+To execute delete commands, the [DeleteParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DeleteParameter.html) type must be passed.
+
+N> When `null` is passed to the Delete command, the currently selected diagram elements are deleted. If no diagram elements are selected, the command will not perform any operation.
 
 ## Delete command parameter
 
 The `DeleteParameter` is used to represent the item's parameters for executing the delete command. The DeleteParameter contains a [`Items`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DeleteParameter.html#Syncfusion_UI_Xaml_Diagram_DeleteParameter_Items) property and it is used to specify a list of diagram objects that need to be deleted using the delete command.
+
+N> When `null` is passed to the Delete command, the currently selected diagram objects are deleted. If no diagram objects are selected, the command will not perform any operation.
+
+The following example locates nodes and connectors by using their `ID` property. Ensure that unique IDs are assigned to the diagram objects when they are created or loaded so that the required objects can be identified before executing the delete command.
 
 {% tabs %}
 
@@ -45,7 +51,7 @@ if (selectedConnector != null)
 
 if (deleteableObjects.Count > 0)
 {
-    //Adding deleteable objects to the DeleteParameter class using Items property.
+    //Adding deletable objects to the DeleteParameter class using Items property.
     var parameter = new DeleteParameter() { Items = deleteableObjects };
     //Executing delete command with DeleteParameter items.
     (diagram.Info as IGraphInfo).Commands.Delete.Execute(parameter);

@@ -9,21 +9,26 @@ documentation: ug
 
 # Grouping Commands in WPF SfDiagram
 
-The Grouping commands are used to group or ungroup the selected diagramming objects such as node and connector in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
+Grouping commands are used to group or ungroup the selected diagramming objects such as nodes and connectors in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
 
 ## Group command
 
-The [`Group`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramCommands.html#Syncfusion_UI_Xaml_Diagram_DiagramCommands_Group) command is used to group the selected diagramming objects in the diagram page. The Group command can be executed by the keyboard shortcut CTRL + G.
+The [`Group`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramCommands.html#Syncfusion_UI_Xaml_Diagram_DiagramCommands_Group) command is used to group the selected diagramming objects on the diagram page. The Group command can be executed by the keyboard shortcut CTRL + G.
+
+N> The Group command requires at least two diagram objects to be selected. If fewer than two objects are selected, the command will not perform any operation.
 
 {% tabs %}
 
 {% highlight Xaml%}
 
-<Button Height="50" Content="Cancel" Name="Cancel" Command="Syncfusion:DiagramCommands.Group"></Button>
+<Button Height="50" Content="Group" Name="Group" Command="Syncfusion:DiagramCommands.Group"></Button>
 
 {% endhighlight %}
 
 {% highlight C# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -35,21 +40,26 @@ graphinfo.Commands.Group.Execute(null);
 
 ## UnGroup command
 
-The [`UnGroup`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_UnGroup) command is used to ungroup the selected group diagramming objects in the diagram page. UnGroup command can be executed by the keyboard shortcut CTRL + SHIFT + U.
+The [`UnGroup`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_UnGroup) command is used to ungroup the selected grouped diagramming objects in the diagram page. The UnGroup command can be executed by the keyboard shortcut CTRL + SHIFT + U.
+
+N> The UnGroup command can be executed only when a grouped object is selected. If the current selection does not contain a group, the command will not perform any operation.
 
 {% tabs %}
 
 {% highlight Xaml%}
 
-<Button Height="50" Content="Cancel" Name="Cancel" Command="Syncfusion:DiagramCommands.UnGroup"></Button>
+<Button Height="50" Content="UnGroup" Name="UnGroup" Command="Syncfusion:DiagramCommands.UnGroup"></Button>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
+
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-//UnGroups the selected group elements.
+//UnGroups the selected grouped elements.
 graphinfo.Commands.UnGroup.Execute(null);
 
 {% endhighlight %}
