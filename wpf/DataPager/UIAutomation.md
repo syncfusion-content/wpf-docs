@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UIAutomation in WPF DataPager control | Syncfusion®
-description: Learn here all about UIAutomation support in Syncfusion® WPF DataPager (SfDataPager) control and more.
+title: UI Automation in WPF SfDataPager | Syncfusion®
+description: Automate testing of SfDataPager using UI automation tools such as Coded UI and Quick Test Professional, with support for control properties and actions.
 platform: wpf
-control: SfDataPager Control
+control: SfDataPager
 documentation: ug
 ---
 
-# UIAutomation in WPF DataPager (SfDataPager)
+# UI Automation in WPF SfDataPager 
 
 SfDataPager supports the following UIAutomation,
 

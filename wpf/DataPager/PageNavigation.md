@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PageNavigation in WPF DataPager control | Syncfusion®
-description: Learn here all about PageNavigation support in Syncfusion® WPF DataPager (SfDataPager) control and more.
+title: PageNavigation in WPF SfDataPager | Syncfusion®
+description: Navigate pages in SfDataPager using built-in paging methods, page index events, and user interaction options for seamless page navigation.
 platform: wpf
-control: SfDataPager Control
+control: SfDataPager
 documentation: ug
 ---
 
-# PageNavigation in WPF DataPager (SfDataPager)
+# PageNavigation in WPF SfDataPager
 
 SfDataPager allows you to move from the current Page to various Pages.For example, when you want to move the CurrentPage to the last page directly, you can use the method MoveToLastPage() . When this method is called, the current page moves to the last page. 
 
