@@ -9,9 +9,11 @@ documentation: ug
 
 # Edit and Format Text Commands in WPF SfDiagram
 
+N> The `EditAnnotation`, `ToggleBold`, `ToggleItalic`, `ToggleUnderline`, and `ToggleStrikeThrough` commands are applicable only when a diagram element with an annotation is selected. If no annotated element is selected, the command will not perform any operation.
+
 ## EditAnnotation
 
-The [EditAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_EditAnnotation) command is used to enable editing mode for the annotation of the selected element. And in the case of multiple selection, editing will be enabled for the first selected element.
+The [EditAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_EditAnnotation) command is used to enable editing mode for the annotation of the selected element. In the case of multiple selection, editing will be enabled for the first selected element.
 
 {% tabs %}
 
@@ -22,6 +24,9 @@ The [EditAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagr
 {% endhighlight %}
 
 {% highlight C# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 graphinfo.Commands.EditAnnotation.Execute(null);
@@ -43,6 +48,9 @@ The [ToggleBold](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.I
 
 {% highlight C# %}
 
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
+
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 graphinfo.Commands.ToggleBold.Execute(null);
 
@@ -62,6 +70,9 @@ The [ToggleItalic](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 {% endhighlight %}
 
 {% highlight C# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 graphinfo.Commands.ToggleItalic.Execute(null);
@@ -83,6 +94,9 @@ The [ToggleUnderline](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diag
 
 {% highlight C# %}
 
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
+
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 graphinfo.Commands.ToggleUnderline.Execute(null);
 
@@ -102,6 +116,9 @@ The [ToggleStrikeThrough](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 {% endhighlight %}
 
 {% highlight C# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 graphinfo.Commands.ToggleStrikeThrough.Execute(null);
@@ -124,6 +141,9 @@ The [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiag
 {% endhighlight %}
 
 {% highlight C# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 graphinfo.Commands.Cancel.Execute(null);

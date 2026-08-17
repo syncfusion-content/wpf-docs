@@ -11,6 +11,10 @@ documentation: ug
 
 The [SelectByType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SelectByType) command is used to select the specified type (such as NodeViewModel, BpmnNodeViewModel, etc.) of elements in the diagram.
 
+To execute the `SelectByType` command, pass a .NET `Type` object that represents the diagram element type to be selected. For example, use `typeof(NodeViewModel)` in C# or `{x:Type Syncfusion:NodeViewModel}` in XAML to select all elements of the specified type.
+
+N> If the diagram does not contain any elements of the specified type, the `SelectByType` command will not perform any selection and the current selection state remains unchanged.
+
 {% tabs %}
 
 {% highlight Xaml%}
@@ -20,6 +24,9 @@ The [SelectByType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 {% endhighlight %}
 
 {% highlight C# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 graphinfo.Commands.SelectByType.Execute(typeof(NodeViewModel));
