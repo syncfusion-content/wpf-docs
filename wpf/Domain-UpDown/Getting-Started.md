@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Domain Updown | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF Domain Updown control, its elements, and more details.
+title: Getting Started with WPF SfDomainUpdown | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF SfDomainUpdown control, its elements, and more details.
 platform: wpf
 control: DomainUpDown
 documentation: ug
 ---
 
-# Getting Started with WPF Domain Updown
+# Getting Started with WPF SfDomainUpdown
 
 This section provides you an overview of working with [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) for WPF and provides a walk through to configure the `SfDomainUpDown` control in a real time scenario.
 

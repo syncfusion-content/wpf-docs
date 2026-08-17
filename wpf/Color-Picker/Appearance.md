@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF Color Picker | Syncfusion®
-description: Customize the look and feel of the Syncfusion WPF Color Picker (ColorPicker) control using built-in themes, custom templates, and styling options.
+title: Appearance in WPF ColorPicker | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF ColorPicker control using built-in themes, custom templates, and styling options.
 platform: wpf
 control: ColorPicker
 documentation: ug
 ---
 
-# Appearance in WPF Color Picker
+# Appearance in WPF ColorPicker
 
 This section explains different UI customization, styling, theming options available in [ColoPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) control.
 

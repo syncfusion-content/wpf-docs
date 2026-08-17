@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TileViewItem Header in WPF Tile View | Syncfusion®
-description: Customize the header of a TileViewItem in the Syncfusion WPF Tile View (TileViewControl) using built-in header templates.
+title: TileViewItem Header in WPF TileView | Syncfusion®
+description: Customize the header of a TileViewItem in the Syncfusion WPF TileView (TileViewControl) using built-in header templates.
 platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# TileViewItem Header in WPF Tile View
+# TileViewItem Header in WPF TileView
 
 This section explains how to set header text and UI customization of the `TileViewItem` header in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
