@@ -17,8 +17,6 @@ N> At least three objects must be selected to apply spacing commands effectively
 
 ## SpaceAcross command
 
-## SpaceAcross command
-
 The [`SpaceAcross`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SpaceAcross) command is used to place selected objects on the page at equal horizontal intervals.
 
 {% tabs %}
