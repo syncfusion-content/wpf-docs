@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fluent Theme in WPF Themes | Syncfusion®
+title: Fluent Theme in WPF Skin Manager | Syncfusion®
 description: The Fluent theme provides an elegant UI design with reveal animations, keyboard focus visuals, and acrylic effects in WPF applications.
 platform: wpf
 control: Themes

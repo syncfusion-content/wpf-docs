@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Skin Manager Classic in WPF Themes | Syncfusion®
-description: The Classic Skin Manager applies themes by merging style definitions from theme assemblies for WPF and Syncfusion® controls.
+title: Getting Started with Skin Manager Classic in WPF | Syncfusion®
+description: Explore Skin Manager Classic for WPF and learn how it applies consistent themes across Syncfusion® and native WPF controls using theme assemblies.
 platform: wpf
 control: Themes
 documentation: ug
 ---
-# Skin Manager Classic in WPF Themes
+# Getting Started with Skin Manager Classic in WPF
 
 The Classic Skin Manager in WPF applies themes by merging style definitions from theme assemblies into the application's visual tree. Each theme assembly contains resource dictionaries with styles for controls. When the `Theme` property is set, the Skin Manager merges the appropriate theme resources into the resource dictionary of the target element or into `Application.Current.Resources`, ensuring consistent styling across the element and its descendants. 
 
