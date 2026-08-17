@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check or Uncheck All Items in WPF CheckedListBox | Syncfusion
+title: Check or Uncheck All Items in WPF CheckedListBox | Syncfusion®
 description: Select or clear every item at once in the Syncfusion WPF CheckedListBox control using the built-in Select All and Uncheck All support.
 platform: wpf
 control: CheckListBox

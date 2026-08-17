@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Wizard Control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Wizard control, its elements and more.
+title: About Syncfusion® WPF WizardControl | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF WizardControl and discover its features, navigation capabilities, and more details.
 platform: wpf
 control: Wizard
 documentation: ug
 ---
 
-# WPF Wizard Control Overview
+# About Syncfusion® WPF WizardControl 
 
 Wizard Control is similar to the wizard displayed in the installation process. Wizard control contains the Wizard Page which is used to define the wizard pages. You can switch between the pages by using the Next button, Back button, and so on. Navigation to the wizard page and look and feel is fully customizable.
 

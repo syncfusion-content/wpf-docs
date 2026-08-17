@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF AvatarView Control | Syncfusion
-description: Learn about getting started with the Syncfusion Essential WPF AvatarView (SfAvatarView) control, its elements, and more.
+title: Getting Started with WPF SfAvatarView | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF SfAvatarView control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: AvatarView
 documentation: ug
 ---
 
-# Getting Started with WPF AvatarView
+# Getting Started with WPF SfAvatarView
 
 This section explains the steps required to add the WPF [SfAvatarView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SfAvatarView.html) control with its basic features.
 

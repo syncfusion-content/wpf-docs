@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Tile Control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Tile Control, its elements and more.
-platform: WPF
+title: About Syncfusion® WPF Tile Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Tile Control and discover its features, layout customization capabilities, and more details.
+platform: wpf
 control: SfHubTile
 documentation: ug
 ---
 
-# WPF Tile Control Overview
+# About Syncfusion® WPF Tile Control
 
 The WPF hub tile and pulsing tile controls are used to create a UI similar to the tile feature in Windows Desktop and Mobile. It can be arranged in different layouts and provides updates and notifications with various transitions effects.
 

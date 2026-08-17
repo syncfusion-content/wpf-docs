@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Using Grouping in WPF Grouping control | Syncfusion®
-description: Learn about Using Grouping support in Syncfusion® Essential Studio® WPF Grouping control, its elements and more details.
-platform: WindowsForms
+title: Using Grouping in WPF Grouping | Syncfusion®
+description: Using grouping in Grouping enables you to organize data into groups, access grouped records, create summaries, and retrieve aggregate values efficiently.
+platform: wpf
 control: Grouping
 documentation: ug
 ---

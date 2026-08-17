@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Testing in WPF GridControl | Syncfusion®
-description: Learn about Testing support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Test GridControl applications using UI Automation and Visual Studio Coded UI testing with support for automation patterns, cell access, and validation.
 platform: wpf
 control: GridControl
 documentation: ug
