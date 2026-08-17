@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Segment in WPF SfCircularProgressBar | Syncfusion®
-description: Learn how segment customization in Syncfusion® WPF SfCircularProgressBar helps visualize progress using multiple segments, spacing, and styling options.
+title: Segments in WPF SfCircularProgressBar | Syncfusion®
+description: Learn how segments customization in WPF SfCircularProgressBar helps visualize progress using multiple segments, spacing, and styling options.
 platform: wpf
 control: SfCircularProgressBar
 documentation: ug
 ---
-# Segment in WPF SfCircularProgressBar
+# Segments in WPF SfCircularProgressBar
 Segmentation helps to divide the progressbar into multiple potions. To visualize the progress of multiple sequential tasks, split the progressbar into multiple segments by setting the [SegmentCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_SegmentCountProperty) property.
 
 {% tabs %}

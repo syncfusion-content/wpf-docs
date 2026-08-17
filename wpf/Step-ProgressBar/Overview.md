@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® WPF SfStepProgressBar Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio® WPF SfStepProgressBar control and explore its features, capabilities, and more details.
+description: Learn about the introduction of Syncfusion® Essential Studio WPF SfStepProgressBar control and explore its features, capabilities, and more details.
 platform: WPF
 control: SfStepProgressBar
 documentation: ug

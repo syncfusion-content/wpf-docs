@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® WPF SfLinearProgressBar Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio® WPF SfLinearProgressBar control and explore its features, capabilities, and more details.
+description: Learn about the introduction of Syncfusion® Essential Studio WPF SfLinearProgressBar control and explore its features, capabilities, and more details.
 platform: wpf
 control: SfLinearProgressBar
 documentation: ug

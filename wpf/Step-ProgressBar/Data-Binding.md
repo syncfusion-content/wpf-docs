@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WPF SfStepProgressBar | Syncfusion®
-description: Learn how data binding in Syncfusion® WPF SfStepProgressBar enables dynamic step generation, data synchronization, and efficient UI updates.
+description: Learn how data binding in WPF SfStepProgressBar enables dynamic step generation, data synchronization, and efficient UI updates.
 platform: wpf
 control: Step ProgressBar
 documentation: ug

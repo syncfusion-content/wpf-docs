@@ -1,7 +1,7 @@
 ---
 layout: post
 title: States in WPF SfCircularProgressBar | Syncfusion®
-description: Learn how states in Syncfusion® WPF SfCircularProgressBar visually represent progress changes using customized appearances for different progress values.
+description: Learn how states in WPF SfCircularProgressBar visually represent progress changes using customized appearances for different progress values.
 platform: wpf
 control: SfCircularProgressBar
 documentation: ug

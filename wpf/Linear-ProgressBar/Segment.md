@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Segment in WPF SfLinearProgressBar | Syncfusion®
-description: Learn how segment customization in Syncfusion® WPF SfLinearProgressBar helps visualize progress using multiple segments, spacing, and styling options.
+title: Segments in WPF SfLinearProgressBar | Syncfusion®
+description: Learn how segments customization in WPF SfLinearProgressBar helps visualize progress using multiple segments, spacing, and styling options.
 platform: wpf
 control: SfLinearProgressBar
 documentation: ug
 ---
-# Segment in WPF SfLinearProgressBar
+# Segments in WPF SfLinearProgressBar
 Divides the progressbar into multiple segements using the API.
 
 ## Segment

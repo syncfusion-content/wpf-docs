@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF SfLinearProgressBar | Syncfusion®
-description: Customize the appearance of Syncfusion® WPF SfLinearProgressBar with styling options for progress tracks, colors, segments, and visual elements.
+description: Customize the appearance of WPF SfLinearProgressBar with styling options for progress tracks, colors, segments, and visual elements.
 platform: wpf
 control: SfLinearProgressBar
 documentation: ug

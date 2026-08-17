@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Content in WPF SfCircularProgressBar | Syncfusion®
-description: Learn how to add custom content in Syncfusion® WPF SfCircularProgressBar to display personalized text, templates, icons, and visual elements.
+description: Learn how to add custom content in WPF SfCircularProgressBar to display personalized text, templates, icons, and visual elements.
 platform: wpf
 control: SfCircularProgressBar
 documentation: ug

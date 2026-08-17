@@ -1,7 +1,7 @@
 ---
 layout: post
 title: States in WPF SfLinearProgressBar | Syncfusion®
-description: Learn how states in Syncfusion® WPF SfLinearProgressBar visually represent progress changes using customized appearances for different progress values.
+description: Learn how states in WPF SfLinearProgressBar visually represent progress changes using customized appearances for different progress values.
 platform: wpf
 control: SfLinearProgressBar
 documentation: ug
