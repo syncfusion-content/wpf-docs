@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resource ID for Syncfusion Themes | SkinStorage | Wpf | Syncfusion
-description: Learn here all about Resource ID for Syncfusion Themes support in Syncfusion WPF SkinStorage (Classic) control and more.
+title: How to Get Resource ID for Themes in WPF SkinStorage | Syncfusion®
+description: Get resource IDs for Syncfusion® themes in Syncfusion® WPF SkinStorage (Classic) control, its elements and more.
 platform: wpf
 control: SkinStorage
 documentation: ug
 ---
 
-# Resource ID for Syncfusion Themes in WPF SkinStorage (Classic)
+# How to Get Resource ID for Themes in WPF SkinStorage
 
 The WPF Skin Manager provides a swatch of theme colors that contains all Syncfusion theme brushes. These brushes are used by getting key names for the given particular theme. Brush names are stored as properties in the ThemeColors class.
 

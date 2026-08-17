@@ -1,12 +1,12 @@
 ---
 layout: post
-title: System Requirements in WPF - Syncfusion
-description: Checkout and learn here all about the system requirements needed to use the Syncfusion WPF Components.
+title: About Syncfusion® WPF System Requirements | Syncfusion®
+description: Learn about overview of Syncfusion® Essential Studio WPF system requirements for development and more details.
 platform: wpf
 control: System Requirement
 documentation: ug
 ---
-# System Requirements for WPF Components
+# About Syncfusion® WPF System Requirements
 
 This section describes the system requirements to use Syncfusion<sup>&reg;</sup> WPF Controls for development.
 

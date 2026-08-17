@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to upgrade to licensed WPF | Syncfusion®
+title: How to upgrade from trial version to licensed WPF | Syncfusion®
 description: Learn how to upgrade from the trial version of Syncfusion® Essential Studio to a fully licensed version for WPF applications.
 platform: wpf
 control: Essential Studio
 documentation: ug
 ---
 
-# How to upgrade to licensed WPF
+# How to upgrade from trial version to licensed WPF
 
 To upgrade from trial version, there are two possible solutions.
 

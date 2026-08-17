@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Downloading Syncfusion WPF offline installer - Syncfusion
-description: Learn here about how to download the Syncfusion WPF offline installer from our Syncfusion website with license.
+title: How to download WPF offline installer | Syncfusion®
+description: Learn how to download the Syncfusion® WPF offline installer as a trial or licensed version from the Syncfusion® website with license.
 platform: wpf
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Downloading Syncfusion WPF offline installer
+# How to download WPF offline installer
 
 The Syncfusion WPF offline installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/wpf-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 

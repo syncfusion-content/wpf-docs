@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Section 508 Compliance for Syncfusion Essential Studio WPF products
-description: Learn here about Section 508 Compliance for Syncfusion Essential Studio WPF products, its elements and more.
+title: About Syncfusion® WPF Section 508 Compliance Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio WPF Section 508 Compliance and more details.
 platform: wpf
 control: Section 508 Compliance
 documentation: ug
 ---
 
-# Section 508 Compliance - Voluntary Product Accessibility Template
+# About Syncfusion® WPF Section 508 Compliance Control
 
 The following Voluntary Product Accessibility information refers to Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> for WPF.
 

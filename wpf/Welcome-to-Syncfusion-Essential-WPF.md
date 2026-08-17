@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Essential Studio WPF products
-description: Essential WPF is a collection of 90 enterprise-grade WPF components including Tools, Charts, Grids and Diagram for building modern Desktop applications.
+title: About Syncfusion® WPF Essential Studio Controls | Syncfusion®
+description: Learn about overview of Syncfusion® Essential Studio WPF controls, a collection of 90+ controls like DataGrid, Chart, Diagram and more details.
 platform: wpf
 control: Overview
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 > With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .Net 8.0 or higher.
 
-# Welcome to Syncfusion<sup>&reg;</sup> WPF UI controls
+# About Syncfusion® WPF Essential Studio Controls
 
 Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> for WPF is a comprehensive collection of over 90+ essential WPF controls like DataGrid, Chart, Diagram, and PDF Viewer for building powerful line-of-business Windows applications faster. Syncfusion<sup>&reg;</sup> WPF controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template Studio | Wpf | Syncfusion
-description: Syncfusion provides the Visual Studio Project Templates for the Syncfusion WPF platform to create Syncfusion WPF Application by adding the required assemblies
+title: How to Create a WPF Application Using Template Studio | Syncfusion®
+description: Learn how to create a Syncfusion® WPF application using the WPF Template Studio in Visual Studio with predefined namespaces and code.
 platform: wpf
-control: Syncfusion Extensions
+control: Syncfusion® Extensions
 documentation: ug
 ---
 
 
-# Syncfusion WPF Template Studio
+# How to Create a WPF Application Using Template Studio
 
 The WPF Template Studio is a tool Syncfusion® provides specifically for building applications using their WPF components. This studio streamlines the development process by including essential Syncfusion® components, managing necessary NuGet references, providing predefined namespaces, and generating component render code. It acts as a template studio wizard, making it easier for developers to create WPF applications using Syncfusion® components.
 

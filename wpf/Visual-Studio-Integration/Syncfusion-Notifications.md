@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Notifications | Wpf | Syncfusion
-description: For displaying the notifications about trial and newer version update information for Syncfusion applications.
+title: How to Configure Notifications in WPF Visual Studio Extension | Syncfusion®
+description: Learn how to configure the trial, license, and version notifications in the Syncfusion® WPF Visual Studio Extension for your application.
 platform: wpf
-control: Syncfusion Extensions
+control: Syncfusion® Extensions
 documentation: ug
 ---
 
-# Syncfusion® Notifications
+# How to Configure Notifications in WPF Visual Studio Extension
 
 Syncfusion® enhances the user experience in WPF applications through notification messages. These notifications cover various aspects, including alerts for trial applications when utilizing Syncfusion® trial assemblies, updates regarding the availability of the latest Syncfusion® NuGet package, and notifications regarding newer releases of Essential Studio®. By keeping users informed, Syncfusion® ensures that developers stay updated with the latest Syncfusion® features and enhancements.
 

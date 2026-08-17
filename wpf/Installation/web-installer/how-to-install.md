@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installing Syncfusion WPF web installer - Syncfusion
-description: Learn here about how to install Syncfusion WPF web installer after downloading from our Syncfusion website.
+title: How to install WPF web installer | Syncfusion®
+description: Learn how to install and uninstall the Syncfusion® WPF web installer after downloading it from the Syncfusion® website.
 platform: wpf
 control: Installation and Deployment
 documentation: ug
 ---
 
-# Installing Syncfusion WPF web installer
+# How to install WPF web installer
 
 
 ## Overview

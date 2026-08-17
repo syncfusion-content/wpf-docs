@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Downloading Syncfusion WPF web installer - Syncfusion
-description: Learn here about how to download Syncfusion WPF web installer from our Syncfusion website with license.
+title: How to download WPF web installer | Syncfusion®
+description: Learn how to download the Syncfusion® WPF web installer as a trial or licensed version from the Syncfusion® website with license.
 platform: wpf
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Downloading Syncfusion WPF web Installer
+# How to download WPF web installer
 
 The Syncfusion WPF web installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/wpf-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 
