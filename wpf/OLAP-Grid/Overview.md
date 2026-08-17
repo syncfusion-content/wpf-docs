@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Olap Grid control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF Olap Grid control, its elements and more details.
+title: About Syncfusion WPF OlapGrid Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio WPF OlapGrid control, features and more details.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# WPF Olap Grid Overview
+# About Syncfusion WPF OlapGrid Control
 
 The OLAP grid is an easily configurable, presentation-quality business control that reads OLAP data source to create multi-dimensional views for analyzing and satisfying business user needs.
 

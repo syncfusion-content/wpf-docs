@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Style Dialog in WPF Olap Grid control | Syncfusion®
-description: Learn about Grid Style Dialog support in Syncfusion® WPF Olap Grid control, its elements and more details.
+title: Grid Style Dialog in WPF OlapGrid | Syncfusion®
+description: The grid style dialog in OlapGrid provides a built-in dialog for formatting the grid's appearance, including fonts, colors, and border settings.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Grid Style Dialog in WPF Olap Grid
+# Grid Style Dialog in WPF OlapGrid
 
 The OLAP grid can be formatted the following ways:
 
