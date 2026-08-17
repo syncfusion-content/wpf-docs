@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion WPF Docking Control | Syncfusion®
+title: About Syncfusion® WPF DockingManager Control | Syncfusion®
 description: Learn about introduction/overview of Syncfusion Essential Studio WPF Docking (DockingManager) control and more details.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# About Syncfusion WPF Docking (DockingManager) Control
+# About Syncfusion® WPF DockingManager Control
 
 The [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control implements an architecture that allows child controls to be docked at any part of a window as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the window. These windows can also be floated, tabbed, and auto hidden at run time.
 

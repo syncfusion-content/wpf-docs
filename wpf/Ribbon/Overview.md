@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About Syncfusion WPF Ribbon Control | Syncfusion®
+title: About Syncfusion® WPF Ribbon Control | Syncfusion®
 description: Learn about introduction and overview of Syncfusion Essential Studio WPF Ribbon control, its components, and more details.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# About Syncfusion WPF Ribbon Control
+# About Syncfusion® WPF Ribbon Control
 
 The [WPF Ribbon](https://www.syncfusion.com/wpf-controls/ribbon) illustrates the implementation of Office UI with Ribbon items and Backstage. Also RibbonWindow has been implemented for giving a themed Office UI look and feel for the traditional window. Functionality of keyboard navigation, Tooltips and Key tips are provided for access to items present in the ribbon. 
 
