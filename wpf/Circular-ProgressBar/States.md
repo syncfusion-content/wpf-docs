@@ -1,13 +1,13 @@
 ---
 layout: post
-title: States in WPF circular progressbar control | Syncfusion&reg;
-description: Learn here all about States support in Syncfusion<sup>&reg;</sup>; WPF circular progressbar (SfCircularProgressBar) control and more.
+title: States in WPF SfCircularProgressBar | Syncfusion®
+description: Learn how states in WPF SfCircularProgressBar visually represent progress changes using customized appearances for different progress values.
 platform: wpf
 control: SfCircularProgressBar
 documentation: ug
 ---
 
-# States in WPF circular progressbar (SfCircularProgressBar)
+# States in WPF SfCircularProgressBar
 States help to visualize the progress of a task in different modes. You can configure states of the circular progressbar control depending on its usage in following ways.
 
 ## Determinate
