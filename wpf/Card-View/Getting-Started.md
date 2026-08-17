@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF CardView | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF CardView control.Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion® WPF CardView control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: CardView
 documentation: ug
