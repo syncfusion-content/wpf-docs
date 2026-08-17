@@ -7,7 +7,7 @@ control: OlapGrid
 documentation: ug
 ---
 
-#  Localization in WPF OlapGrid
+# Localization in WPF OlapGrid
 
 Localization is the key feature for providing software solutions targeted at global users. The OLAP grid allows users to localize the control to a specific locale and supports "resx" based localization.
 
@@ -18,7 +18,7 @@ The following steps should be performed to localize the control:
 * Tag inclusion into the project file.
 * Specification of the CurrentUICulture.
 
-### Translation
+## Translation
 
 The first step in localization is translating the strings that can be localized to the destination locale.
 

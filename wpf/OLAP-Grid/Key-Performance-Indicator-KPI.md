@@ -7,7 +7,7 @@ control: OlapGrid
 documentation: ug
 ---
 
-# Key Performance Indictor (KPI) in WPF OlapGrid
+# Key Performance Indicator (KPI) in WPF OlapGrid
 
 KPI is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how grid applications should display the results of KPI calculations.
 

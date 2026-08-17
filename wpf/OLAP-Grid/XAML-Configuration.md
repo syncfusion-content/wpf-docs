@@ -11,7 +11,7 @@ documentation: ug
 
 XAML configuration is one of the most important features of the OLAP grid, as it helps users to configure the control entirely through XAML by eliminating the required code in code behind.
 
-### Properties
+## Properties
 
 * **DataSource.ConnectionString**: Specifies the connection string of the data manager.
 * **DataSource.ConnectionName**: Specifies the connection name, which is available in the App.Config file of the application.
