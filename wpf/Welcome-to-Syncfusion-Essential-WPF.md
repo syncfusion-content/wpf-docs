@@ -387,7 +387,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/calculator/getting-started" aria-label="Open the Calculator Documentation">Calculator</a><br/>
+			<a href="https://help.syncfusion.com/wpf/calculator/getting-started" aria-label="Open the Calculator Documentation" >Calculator</a><br/>
 		</td>
 	</tr>
 </table>
