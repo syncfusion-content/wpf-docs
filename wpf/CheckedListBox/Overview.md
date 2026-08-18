@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion WPF CheckedListBox Control | Syncfusion®
+title: About Syncfusion® WPF CheckedListBox Control | Syncfusion®
 description: Learn about introduction of Syncfusion Essential Studio WPF CheckedListBox control and more details.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# About Syncfusion WPF CheckedListBox Control
+# About Syncfusion® WPF CheckedListBox Control
 
 The [CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) control implements a classic list box with check list box items. The control displays items with a check box to enable multiple selection of items. Custom templates are defined to customize its appearance.
 
