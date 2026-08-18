@@ -13,7 +13,7 @@ This section explains the alignment and positioning functionalities available in
 
 ## Alignment of Badge
 
-you can align the `Badge` either horizontally or vertically by using the `HorizontalAlignment` or `VerticalAlignment` properties. The default value of `HorizontalAlignment` property is `Right` and `VerticalAlignment` property is `Top`.
+You can align the `Badge` either horizontally or vertically by using the `HorizontalAlignment` or `VerticalAlignment` properties. The default value of the `HorizontalAlignment` property is `Right` and the `VerticalAlignment` property is `Top`.
 
 <style>
 table, td, th { 
@@ -98,9 +98,21 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Positioning of Badge
 
-You can change the horizontal or vertical position of the `Badge` either inside, outside or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalAnchor) properties. It will be placed based on the value of `HorizontalAlignment` and `VerticalAlignment` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
+You can change the horizontal or vertical position of the `Badge` to inside, center, outside, or custom by using the [HorizontalAnchor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalAnchor) properties. The `Badge` is placed based on the value of the `HorizontalAlignment` and `VerticalAlignment` properties. The default value of the `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
 
-For example, you will change the `HorizontalAnchor` and `VerticalAnchor` property values on when the value of `HorizontalAlignment` properties is `Right` and `VerticalAlignment` property is `Top`. `Badge` will be positioned as follows,
+The table below shows the positioning behavior when `HorizontalAlignment="Right"` and `VerticalAlignment="Top"`. The C# `BadgeAnchor` enum ([API reference](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.BadgeAnchor.html)) provides the following values: `Inside`, `Center`, `Outside`, and `Custom`.
+
+| HorizontalAnchor | VerticalAnchor | Behavior on a `Right` / `Top`-aligned badge |
+|------------------|----------------|----------------------------------------------|
+| `Inside`         | `Inside`       | The badge is moved into the container.       |
+| `Center`         | `Inside`       | The badge is centered on the horizontal edge.|
+| `Outside`        | `Inside`       | The badge is moved out of the container.     |
+| `Inside`         | `Center`       | The badge is centered on the vertical edge.  |
+| `Center`         | `Center`       | The badge is centered on the corner.         |
+| `Outside`        | `Center`       | The badge is centered past the corner.       |
+| `Inside`         | `Outside`      | The badge is moved further into the container.|
+| `Center`         | `Outside`      | The badge is centered further out.           |
+| `Outside`        | `Outside`      | The badge is moved furthest from the corner. |
 
 <style>
 table, td, th { 
@@ -171,11 +183,11 @@ badge.Content = "10";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
-## Place the Badge any where on the container
+## Place the Badge anywhere on the container
 
-If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to`1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
+If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalPosition) properties. The values are relative to the badge's parent container: `0` represents the left/top edge and `1` represents the right/bottom edge. The valid range is `0` to `1`. The default value of the `HorizontalPosition` property is `1` and the `VerticalPosition` property is `0`.
 
-For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalPosition` and `VerticalPosition` properties.
+For example, if you use a circular container, you can easily place the `Badge` anywhere on its perimeter by using the `HorizontalPosition` and `VerticalPosition` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -213,7 +225,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom alignment and positioning of Badge
 
-You can customize the horizontal or vertical position of the `Badge` either inside, outside or in the middle with any point by using the `HorizontalPosition` & `VerticalPosition` properties and [HorizontalAnchorPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalAnchorPosition) & [VerticalAnchorPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalAnchorPosition) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
+You can customize the horizontal or vertical position of the `Badge` to any point by using the `HorizontalPosition` and `VerticalPosition` properties together with the [HorizontalAnchorPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalAnchorPosition) and [VerticalAnchorPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalAnchorPosition) properties. This is effective only when the `HorizontalAnchor` and `VerticalAnchor` properties are set to `Custom`. The valid range for both `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to `1`. The default value of the `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0`.
 
 <style>
 table, td, th { 
@@ -295,7 +307,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Badge content alignment
 
-you can place the `Badge` content either horizontally or vertically by using the `HorizontalContentAlignment` or `VerticalContentAlignment` properties. The default value of `HorizontalContentAlignment` and `VerticalContentAlignment` properties is `Center`.
+You can place the `Badge` content either horizontally or vertically by using the `HorizontalContentAlignment` or `VerticalContentAlignment` properties. The default value of the `HorizontalContentAlignment` and `VerticalContentAlignment` properties is `Center`.
 
 {% tabs %}
 {% highlight XAML %}

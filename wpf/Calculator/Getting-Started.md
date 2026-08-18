@@ -8,27 +8,27 @@ documentation: ug
 ---
 
 # Getting Started with WPF Calculator (SfCalculator)
-This section provides a quick overview for working with the [WPF Calculator](https://www.syncfusion.com/wpf-controls/calculator) (SfCalculator).
+This section provides a quick overview for working with the Syncfusion [WPF Calculator](https://www.syncfusion.com/wpf-controls/calculator) (SfCalculator).
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfcalculator) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfcalculator) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link:
+You can find more details about installing the NuGet package in a WPF application at the following link:
 [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages#installing-nuget-packages)
 
 ## Creating Application with SfCalculator control
-In this walk through, user will create a WPF application that contains [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control.
-1. [Creating project](#Creating-the-project)
-2. [Adding control via designer](#Adding-control-via-designer)
-3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
-4. [Adding control manually in C#](#Adding-control-manually-in-C#)
+In this walkthrough, you will create a WPF application that contains the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control.
+1. [Creating project](#creating-project)
+2. [Add control via designer](#add-control-via-designer)
+3. [Add control manually in XAML](#add-control-manually-in-xaml)
+4. [Add control manually in C#](#add-control-manually-in-c#)
 
 ## Creating project
-Below section provides detailed information to create new project in Visual Studio to display [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#sfcalculator) will be added automatically.
+The section below provides detailed information on how to create a new WPF project in Visual Studio to host the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control.
 
 ## Add control via designer
 
-The [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
+The [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control can be added to an application by dragging it from the toolbox to the designer view.
 
 ![wpf SfCalculator control added by designer](Getting-Started_images/wpf-sfcalculator-control-added-by-designer.png)
 
@@ -64,16 +64,16 @@ In order to add [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
 
 ## Add control manually in C#
 
-In order to add [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control manually in C#, do the below steps,
+In order to add the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control manually in C#, do the steps below.
 
-1. Add the below required assembly references to the project,
+1. Add the following required assembly references to the project:
 
     * Syncfusion.SfInput.WPF
     * Syncfusion.Shared.WPF
 
-2. Import SfCalculator namespace **Syncfusion.Windows.Controls.Input**.
+2. Import the SfCalculator namespace **Syncfusion.Windows.Controls.Input**.
 
-3. Create SfCalculator control instance and add it to the window.
+3. Create an SfCalculator control instance and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -104,12 +104,12 @@ namespace SfCalculatorSample
 ![wpf SfCalculator control added by code](Getting-Started_images/wpf-sfcalculator-control-added-manually.png)
 
 ## Setting watermark
-You can set watermark for [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control using [DefaultText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html#Syncfusion_Windows_Controls_Input_SfCalculator_DisplayText) property.
+You can set a watermark for the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control using the [DisplayText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html#Syncfusion_Windows_Controls_Input_SfCalculator_DisplayText) property. The default value of `DisplayText` is an empty string.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfCalculator HorizontalAlignment="Stretch" DisplayText="Empty value here"  />
+<syncfusion:SfCalculator HorizontalAlignment="Stretch" DisplayText="Empty value here" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -127,14 +127,14 @@ SfCalculator sfCalculator = new SfCalculator()
 
 ## Setting value 
 
-You can set the value to be displayed on the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control using [DefaultValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html#Syncfusion_Windows_Controls_Input_SfCalculator_DefaultValue) property.
+You can set the initial value displayed in the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control using the [DefaultValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html#Syncfusion_Windows_Controls_Input_SfCalculator_DefaultValue) property. The default value of `DefaultValue` is `0`.
 
-N> The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html#Syncfusion_Windows_Controls_Input_SfCalculator_Value) property of [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) is **Read-only** which will allow you to get the value calculated from last expression and will be in decimal format.
+N> The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html#Syncfusion_Windows_Controls_Input_SfCalculator_Value) property of [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) is **Read-only**; it returns the value calculated from the last expression as a `decimal`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfCalculator HorizontalAlignment="Stretch"  DefaultValue="30"  />
+<syncfusion:SfCalculator HorizontalAlignment="Stretch" DefaultValue="30" />
 
 {% endhighlight %}
 {% highlight C# %}
