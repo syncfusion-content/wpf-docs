@@ -13,7 +13,7 @@ You can get the object of the CalendarEdit control by using the Calendar propert
 
 N> In the following code examples, calendarEdit is used as the instance of the CalendarEdit control.
 
-### AddDays
+## AddDays
 
 Returns the system datetime, that is, the specified number of days away from the specified system datetime. Use MessageBox to see the content of date after this method is called. 
 
