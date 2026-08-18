@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Sizing in WPF SfTreeGrid | Syncfusion®
-description: Set column widths in SfTreeGrid using auto, star, or pixel sizing options to fit content and layout requirements.
+description: Column Sizing in SfTreeGrid adjusts column widths automatically or manually using the ColumnSizer property.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
