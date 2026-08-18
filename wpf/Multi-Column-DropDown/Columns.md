@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in WPF Multi Column Dropdown control | Syncfusion®
-description: Learn here all about Columns support in Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
+title: Columns in WPF Multi Column Dropdown | Syncfusion®
+description: Columns in Syncfusion® WPF Multi Column Dropdown can be auto-generated or manually defined with customization options.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Columns in WPF Multi Column Dropdown (SfMultiColumnDropDown)
+# Columns in WPF Multi Column Dropdown
 
 SfMultiColumnDropDownControl enables you to define the columns as like in SfDataGrid. You can let the `SfMultiColumnDropDownControl` to create columns or you can manually defined columns to de displayed. Below sections explains both ways,
  

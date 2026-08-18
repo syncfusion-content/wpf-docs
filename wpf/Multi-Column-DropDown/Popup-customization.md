@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Popup customization in WPF Multi Column Dropdown control | Syncfusion®
-description: Learn here all about Popup customization support in Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
+title: Popup customization in WPF Multi Column Dropdown | Syncfusion®
+description: Popup customization in Syncfusion® WPF Multi Column Dropdown lets you style popup background, borders, size, enable resizing, auto sizing, and manage events.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug

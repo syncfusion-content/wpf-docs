@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing and AutoComplete in WPF Multi Column Dropdown | Syncfusion®
-description: Learn here all about Editing and AutoComplete support in Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
+description: Editing and AutoComplete in Syncfusion® WPF Multi Column Dropdown lets users edit text, enable auto completion, allow null input, and manage popup behavior.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
