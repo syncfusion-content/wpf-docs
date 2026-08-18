@@ -39,7 +39,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 			SMART COMPONENTS<br/>
 		</td>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/smart-datagrid/getting-started" aria-label="SmartDataGrid">SmartDataGrid </a><br/>
+			<a href="https://help.syncfusion.com/wpf/smart-datagrid/getting-started" aria-label="Open the SmartDataGrid Documentation">SmartDataGrid </a><br/>
 		</td>
 	</tr>
 	<tr>
@@ -47,27 +47,27 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 			GRID<br/>
 		</td>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/datagrid/getting-started" aria-label="DataGrid">DataGrid </a><br/>
+			<a href="https://help.syncfusion.com/wpf/datagrid/getting-started" aria-label="Open the DataGrid Documentation">DataGrid </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/treegrid/getting-started" aria-label="TreeGrid">TreeGrid</a><br/>
+			<a href="https://help.syncfusion.com/wpf/treegrid/getting-started" aria-label="Open the TreeGrid Documentation">TreeGrid</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/propertygrid/getting-started" aria-label="PropertyGrid">PropertyGrid </a><br/>
+			<a href="https://help.syncfusion.com/wpf/propertygrid/getting-started" aria-label="Open the PropertyGrid Documentation">PropertyGrid </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/gridcontrol/getting-started" aria-label="Excel-like Grid">Excel-like Grid </a><br/>
+			<a href="https://help.syncfusion.com/wpf/gridcontrol/getting-started" aria-label="Open the Excel-like Grid Documentation">Excel-like Grid </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/datapager/getting-started" aria-label="DataPager">DataPager</a><br/>
+			<a href="https://help.syncfusion.com/wpf/datapager/getting-started" aria-label="Open the DataPager Documentation">DataPager</a><br/>
 		</td>
 	</tr>
 	<tr>
@@ -75,82 +75,82 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 			DATA VISUALIZATION<br/>
 		</td>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/charts/getting-started" aria-label="Charts">Charts </a><br/>
+			<a href="https://help.syncfusion.com/wpf/charts/getting-started" aria-label="Open the Charts Documentation">Charts </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/diagram/getting-started" aria-label="Diagram">Diagram </a><br/>
+			<a href="https://help.syncfusion.com/wpf/diagram/getting-started" aria-label="Open the Diagram Documentation">Diagram </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/maps/getting-started" aria-label="Map">Map </a><br/>
+			<a href="https://help.syncfusion.com/wpf/maps/getting-started" aria-label="Open the Map Documentation">Map </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/surface-chart/getting-started" aria-label="Surface Chart">Surface Chart </a><br/>
+			<a href="https://help.syncfusion.com/wpf/surface-chart/getting-started" aria-label="Open the Surface Chart Documentation">Surface Chart </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/smith-chart/getting-started" aria-label="Smith Chart">Smith Chart</a><br/>
+			<a href="https://help.syncfusion.com/wpf/smith-chart/getting-started" aria-label="Open the Smith Chart Documentation">Smith Chart</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/gantt/getting-started" aria-label="Gantt">Gantt</a><br/>
+			<a href="https://help.syncfusion.com/wpf/gantt/getting-started" aria-label="Open the Gantt Documentation">Gantt</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/radial-gauge/getting-started" aria-label="Radial Gauge">Radial Gauge</a><br/>
+			<a href="https://help.syncfusion.com/wpf/radial-gauge/getting-started" aria-label="Open the Radial Gauge Documentation">Radial Gauge</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/digital-gauge/getting-started" aria-label="Digital Gauge">Digital Gauge</a><br/>
+			<a href="https://help.syncfusion.com/wpf/digital-gauge/getting-started" aria-label="Open the Digital Gauge Documentation">Digital Gauge</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/linear-gauge/getting-started" aria-label="Linear Gauge">Linear Gauge </a><br/>
+			<a href="https://help.syncfusion.com/wpf/linear-gauge/getting-started" aria-label="Open the Linear Gauge Documentation">Linear Gauge </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/kanban-board/getting-started" aria-label="Kanban Board">Kanban Board</a><br/>
+			<a href="https://help.syncfusion.com/wpf/kanban-board/getting-started" aria-label="Open the Kanban Board Documentation">Kanban Board</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/barcode/getting-started" aria-label="Barcode">Barcode</a><br/>
+			<a href="https://help.syncfusion.com/wpf/barcode/getting-started" aria-label="Open the Barcode Documentation">Barcode</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/bullet-graph/getting-started" aria-label="Bullet Graph">Bullet Graph</a><br/>
+			<a href="https://help.syncfusion.com/wpf/bullet-graph/getting-started" aria-label="Open the Bullet Graph Documentation">Bullet Graph</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/sunburst-chart/getting-started" aria-label="Sunburst Chart">Sunburst Chart</a><br/>
+			<a href="https://help.syncfusion.com/wpf/sunburst-chart/getting-started" aria-label="Open the Sunburst Chart Documentation">Sunburst Chart</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/sparkline/getting-started" aria-label="Sparkline">Sparkline</a><br/>
+			<a href="https://help.syncfusion.com/wpf/sparkline/getting-started" aria-label="Open the Sparkline Documentation">Sparkline</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/range-selector/getting-started" aria-label="Range Selector">Range Selector</a><br/>
+			<a href="https://help.syncfusion.com/wpf/range-selector/getting-started" aria-label="Open the Range Selector Documentation">Range Selector</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/treemap/getting-started" aria-label="TreeMap">TreeMap</a><br/>
+			<a href="https://help.syncfusion.com/wpf/treemap/getting-started" aria-label="Open the TreeMap Documentation">TreeMap</a><br/>
 		</td>
 	</tr>
 	<tr>
@@ -158,42 +158,42 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 			LAYOUT<br/>
 		</td>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/docking/getting-started" aria-label="Docking">Docking </a><br/>
+			<a href="https://help.syncfusion.com/wpf/docking/getting-started" aria-label="Open the Docking Documentation">Docking </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/carousel/getting-started" aria-label="Carousel">Carousel </a><br/>
+			<a href="https://help.syncfusion.com/wpf/carousel/getting-started" aria-label="Open the Carousel Documentation">Carousel </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/card-view/getting-started" aria-label="Card View">Card View</a><br/>
+			<a href="https://help.syncfusion.com/wpf/card-view/getting-started" aria-label="Open the Card View Documentation">Card View</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started" aria-label="Tabbed MDI Form">Tabbed MDI Form</a><br/>
+			<a href="https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started" aria-label="Open the Tabbed MDI Form Documentation">Tabbed MDI Form</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/chromeless-window/getting-started" aria-label="Chromeless Window">Chromeless Window</a><br/>
+			<a href="https://help.syncfusion.com/wpf/chromeless-window/getting-started" aria-label="Open the Chromeless Window Documentation">Chromeless Window</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/tab-splitter/getting-started" aria-label="Tab Splitter">Tab Splitter</a><br/>
+			<a href="https://help.syncfusion.com/wpf/tab-splitter/getting-started" aria-label="Open the Tab Splitter Documentation">Tab Splitter</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/gridsplitter/getting-started" aria-label="GridSplitter">GridSplitter</a><br/>
+			<a href="https://help.syncfusion.com/wpf/gridsplitter/getting-started" aria-label="Open the GridSplitter Documentation">GridSplitter</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/tile-view/getting-started" aria-label="Tile View">Tile View</a><br/>
+			<a href="https://help.syncfusion.com/wpf/tile-view/getting-started" aria-label="Open the Tile View Documentation">Tile View</a><br/>
 		</td>
 	</tr>
 	<tr>
@@ -201,24 +201,24 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 			FILE VIEWERS & EDITORS<br/>
 		</td>	
 		<td>
-			<a href="https://help.syncfusion.com/document-processing/pdf/pdf-viewer/wpf/getting-started" aria-label="PDF Viewer">PDF Viewer</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/pdf/pdf-viewer/wpf/getting-started" aria-label="Open the PDF Viewer Documentation">PDF Viewer</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/image-editor/getting-started" aria-label="ImageEditor">ImageEditor</a><br/>
+			<a href="https://help.syncfusion.com/wpf/image-editor/getting-started" aria-label="Open the ImageEditor Documentation">ImageEditor</a><br/>
 		</td>
 	</tr>
 	<tr>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/document-processing/word/word-processor/wpf/getting-started" aria-label="RichTextBox">RichTextBox</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/word/word-processor/wpf/getting-started Documentation" aria-label="Open the RichTextBox">RichTextBox</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/syntax-editor/getting-started" aria-label="Syntax Editor">Syntax Editor</a><br/>
+			<a href="https://help.syncfusion.com/wpf/syntax-editor/getting-started Documentation" aria-label="Open the Syntax Editor">Syntax Editor</a><br/>
 		</td>
 	</tr>
 	<tr>
@@ -226,22 +226,22 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 		FILE FORMAT FRAMEWORKS<br/>
 		</td>
 		<td>
-			<a href="https://help.syncfusion.com/file-formats/xlsio/getting-started-create-excel-file-csharp-vbnet" aria-label="Excel">Excel</a><br/>
+			<a href="https://help.syncfusion.com/file-formats/xlsio/getting-started-create-excel-file-csharp-vbnet" aria-label="Open the Excel Documentation">Excel</a><br/>
 		</td>
 	</tr>	
     <tr>
 		<td>
-			<a href="https://help.syncfusion.com/document-processing/pdf/pdf-library/net/create-pdf-file-in-wpf" aria-label="PDF">PDF</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/pdf/pdf-library/net/create-pdf-file-in-wpf" aria-label="Open the PDF Documentation">PDF</a><br/>
 		</td>
 	</tr>
     <tr>
 	    <td>
-			<a href="https://help.syncfusion.com/document-processing/word/word-library/net/getting-started" aria-label="Word">Word</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/word/word-library/net/getting-started" aria-label="Open the Word Documentation">Word</a><br/>
 		</td>
 	</tr>
     <tr>
 	    <td>
-			<a href="https://help.syncfusion.com/document-processing/powerpoint/powerpoint-library/net/getting-started" aria-label="PowerPoint">PowerPoint</a><br/>
+			<a href="https://help.syncfusion.com/document-processing/powerpoint/powerpoint-library/net/getting-started" aria-label="Open the PowerPoint Documentation">PowerPoint</a><br/>
 		</td>
 	</tr>
     <tr>
@@ -249,72 +249,72 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 		NAVIGATION<br/>
 		</td>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/tabcontrol/getting-started" aria-label="TabControl">TabControl</a><br/>
+			<a href="https://help.syncfusion.com/wpf/tabcontrol/getting-started" aria-label="Open the TabControl Documentation">TabControl</a><br/>
 		</td>
 	</tr>
     <tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/ribbon/gettingstarted" aria-label="Ribbon">Ribbon </a><br/>
+			<a href="https://help.syncfusion.com/wpf/ribbon/gettingstarted" aria-label="Open the Ribbon Documentation">Ribbon </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/treeview/getting-started" aria-label="TreeView">TreeView</a><br/>
+			<a href="https://help.syncfusion.com/wpf/treeview/getting-started" aria-label="Open the TreeView Documentation">TreeView</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/breadcrumb/getting-started" aria-label="BreadCrumb">BreadCrumb</a><br/>
+			<a href="https://help.syncfusion.com/wpf/breadcrumb/getting-started" aria-label="Open the BreadCrumb Documentation">BreadCrumb</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/accordion/getting-started" aria-label="Accordion" >Accordion</a><br/>
+			<a href="https://help.syncfusion.com/wpf/accordion/getting-started" aria-label="Open the Accordion Documentation" >Accordion</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/navigation-pane/getting-started" aria-label="Navigation Pane">Navigation Pane</a><br/>
+			<a href="https://help.syncfusion.com/wpf/navigation-pane/getting-started" aria-label="Open the Navigation Pane Documentation">Navigation Pane</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/navigation-drawer/getting-started" aria-label="Navigation Drawer">Navigation Drawer</a><br/>
+			<a href="https://help.syncfusion.com/wpf/navigation-drawer/getting-started" aria-label="Open the Navigation Drawer Documentation">Navigation Drawer</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/menu/getting-started" aria-label="Menu">Menu</a><br/>
+			<a href="https://help.syncfusion.com/wpf/menu/getting-started" aria-label="Open the Menu Documentation">Menu</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/taskbar/getting-started" aria-label="TaskBar" >TaskBar</a><br/>
+			<a href="https://help.syncfusion.com/wpf/taskbar/getting-started" aria-label="Open the TaskBar Documentation" >TaskBar</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/tab-navigation/getting-started" aria-label="Tab Navigation">Tab Navigation</a><br/>
+			<a href="https://help.syncfusion.com/wpf/tab-navigation/getting-started" aria-label="Open the Tab Navigation Documentation">Tab Navigation</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/radial-menu/getting-started" aria-label="Radial Menu">Radial Menu</a><br/>
+			<a href="https://help.syncfusion.com/wpf/radial-menu/getting-started" aria-label="Open the Radial Menu Documentation">Radial Menu</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/toolbar/getting-started" aria-label="Toolbar" >Toolbar</a><br/>
+			<a href="https://help.syncfusion.com/wpf/toolbar/getting-started" aria-label="Open the Toolbar Documentation" >Toolbar</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/tree-navigator/getting-started" aria-label="Tree Navigator">Tree Navigator</a><br/>
+			<a href="https://help.syncfusion.com/wpf/tree-navigator/getting-started" aria-label="Open the Tree Navigator Documentation">Tree Navigator</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/wizard-control/getting-started" aria-label="Wizard">Wizard</a><br/>
+			<a href="https://help.syncfusion.com/wpf/wizard-control/getting-started" aria-label="Open the Wizard Documentation">Wizard</a><br/>
 		</td>
 	</tr>
 	<tr>
@@ -322,72 +322,72 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 		INPUT CONTROLS<br/>
 		</td>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/maskedtextbox/getting-started" aria-label="MaskedTextBox">MaskedTextBox</a><br/>
+			<a href="https://help.syncfusion.com/wpf/maskedtextbox/getting-started" aria-label="Open the MaskedTextBox Documentation">MaskedTextBox</a><br/>
 		</td>
 	</tr>
     <tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/color-picker/getting-started" aria-label="Color Picker">Color Picker </a><br/>
+			<a href="https://help.syncfusion.com/wpf/color-picker/getting-started" aria-label="Open the Color Picker Documentation">Color Picker </a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/color-palette/getting-started" aria-label="Color Palette">Color Palette</a><br/>
+			<a href="https://help.syncfusion.com/wpf/color-palette/getting-started" aria-label="Open the Color Palette Documentation">Color Palette</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/color-picker-palette/getting-started" aria-label="Color Picker Palette">Color Picker Palette</a><br/>
+			<a href="https://help.syncfusion.com/wpf/color-picker-palette/getting-started" aria-label="Open the Color Picker Palette Documentation">Color Picker Palette</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/currency-textbox/getting-started" aria-label="Currency TextBox">Currency TextBox</a><br/>
+			<a href="https://help.syncfusion.com/wpf/currency-textbox/getting-started" aria-label="Open the Currency TextBox Documentation">Currency TextBox</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/integer-textbox/getting-started" aria-label="Integer TextBox">Integer TextBox</a><br/>
+			<a href="https://help.syncfusion.com/wpf/integer-textbox/getting-started" aria-label="Open the Integer TextBox Documentation">Integer TextBox</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/double-textbox/getting-started" aria-label="Double TextBox">Double TextBox</a><br/>
+			<a href="https://help.syncfusion.com/wpf/double-textbox/getting-started" aria-label="Open the Double TextBox Documentation">Double TextBox</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/percent-textbox/getting-started" aria-label="Percent TextBox">Percent TextBox</a><br/>
+			<a href="https://help.syncfusion.com/wpf/percent-textbox/getting-started" aria-label="Open the Percent TextBox Documentation">Percent TextBox</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/domain-updown/getting-started" aria-label="Domain Updown">Domain Updown</a><br/>
+			<a href="https://help.syncfusion.com/wpf/domain-updown/getting-started" aria-label="Open the Domain Updown Documentation">Domain Updown</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/numericupdown/getting-started" aria-label="NumericUpdown">NumericUpdown</a><br/>
+			<a href="https://help.syncfusion.com/wpf/numericupdown/getting-started" aria-label="Open the NumericUpdown Documentation">NumericUpdown</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/radial-slider/getting-started" aria-label="Radial Slider">Radial Slider</a><br/>
+			<a href="https://help.syncfusion.com/wpf/radial-slider/getting-started" aria-label="Open the Radial Slider Documentation">Radial Slider</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/range-slider/getting-started" aria-label="Range Slider">Range Slider</a><br/>
+			<a href="https://help.syncfusion.com/wpf/range-slider/getting-started" aria-label="Open the Range Slider Documentation">Range Slider</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/rating/getting-started" aria-label="Rating">Rating</a><br/>
+			<a href="https://help.syncfusion.com/wpf/rating/getting-started" aria-label="Open the Rating Documentation">Rating</a><br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="https://help.syncfusion.com/wpf/calculator/getting-started" aria-label="Calculator">Calculator</a><br/>
+			<a href="https://help.syncfusion.com/wpf/calculator/getting-started" aria-label="Open the Calculator Documentation">Calculator</a><br/>
 		</td>
 	</tr>
 </table>
