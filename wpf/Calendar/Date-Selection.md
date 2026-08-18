@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date-Selection in WPF Calendar control | Syncfusion®
-description: Learn here all about Date-Selection support in Syncfusion® WPF Calendar (CalendarEdit) control and more.
-platform: wpf
+title: Date Selection in WPF Calendar | Syncfusion
+description: Learn how to select dates and customize the date selection user interface in WPF Calendar control easily.
+platform: scheduler-sdk
 control: CalendarEdit
 documentation: ug
 ---
 
-# Date-Selection in WPF Calendar (CalendarEdit)
+# Date Selection in WPF Calendar
 
 This section explains how to select a date and custom UI of the WPF [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html) control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF DatePicker control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF DatePicker (SfDatePicker) control, its elements and more.
-platform: wpf
+title: Getting Started with WPF DatePicker | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF DatePicker control. Explore setup, features, examples, and customization options.
+platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
 ---
 
-# Getting Started with WPF DatePicker (SfDatePicker)
+# Getting Started with WPF DatePicker
 
 This section explains how to create a [WPF DatePicker](https://www.syncfusion.com/wpf-controls/datepicker) and explains about its structure.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF DatePicker control | Syncfusion®
-description: Learn here all about Appearance support in Syncfusion® WPF DatePicker (SfDatePicker) control and more.
-platform: wpf
+title: Appearance in WPF DatePicker | Syncfusion
+description: Learn about appearance customization and styling options available in WPF DatePicker control easily.
+platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
 ---
 
-# Appearance in WPF DatePicker (SfDatePicker)
+# Appearance in WPF DatePicker
 
 This section explains different UI customization, styling, theming options available in [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) control.
 

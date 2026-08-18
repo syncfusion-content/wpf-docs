@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DateTime Editing in WPF DateTimePicker control | Syncfusion
-description: Learn here all about DateTime Editing support in Syncfusion WPF DateTimePicker (DateTimeEdit) control and more.
-platform: wpf
+title: DateTime Editing in WPF DateTimePicker | Syncfusion
+description: Learn how to edit date and time values in WPF DateTimePicker using text box with mask or free form editing.
+platform: scheduler-sdk
 control: DateTimeEdit
 documentation: ug
 ---
 
-# DateTime Editing in WPF DateTimePicker (DateTimeEdit)
+# DateTime Editing in WPF DateTimePicker
 
 The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) control provides support for changing date time using text box. It supports both free form editing and mask based editing. 
 

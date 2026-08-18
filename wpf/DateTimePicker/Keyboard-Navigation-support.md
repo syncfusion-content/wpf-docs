@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard Navigation in WPF DateTimeEdit control | Syncfusion
-description: This section explains about how the keyboard navigation works between the date time in the DateTimeEdit
-platform: wpf
+title: Keyboard Navigation in WPF DateTimePicker | Syncfusion
+description: Learn about keyboard navigation shortcuts and how to navigate date time values using keyboard in DateTimePicker.
+platform: scheduler-sdk
 control: DateTimeEdit 
 documentation: ug
 ---
 
-# Keyboard Navigation in WPF DateTimeEdit control
+# Keyboard Navigation in WPF DateTimePicker
 
 In this section, you will see available keyboard shortcuts key to navigate or change the datetime in the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html).
 
