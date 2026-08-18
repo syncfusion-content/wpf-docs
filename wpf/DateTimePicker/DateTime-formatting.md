@@ -2,7 +2,7 @@
 layout: post
 title: DateTime Formatting in WPF DateTimePicker | Syncfusion
 description: Learn how to format and display date time values in different formats in WPF DateTimePicker control.
-platform: scheduler-sdk
+platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---

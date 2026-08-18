@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard Navigation in WPF DateTimePicker | Syncfusion
 description: Learn about keyboard navigation shortcuts and how to navigate date time values using keyboard in DateTimePicker.
-platform: scheduler-sdk
+platform: wpf
 control: DateTimeEdit 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Date Selector in WPF DatePicker | Syncfusion
 description: Learn about SfDateSelector in WPF DatePicker that enables date selection with cells for selecting date values.
-platform: scheduler-sdk
+platform: wpf
 control: SfDatePicker
 documentation: ug
 ---

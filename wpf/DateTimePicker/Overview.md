@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® WPF DateTimePicker Control | Syncfusion
 description: Learn about introduction of Syncfusion® Essential Studio WPF DateTimePicker control, its key features, date and time selection functionality, and more details.
-platform: scheduler-sdk
+platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---

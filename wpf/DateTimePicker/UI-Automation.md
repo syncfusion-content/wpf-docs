@@ -2,7 +2,7 @@
 layout: post
 title: UI Automation in WPF DateTimePicker | Syncfusion
 description: Learn about UI automation support in WPF DateTimePicker control for testing and accessibility requirements.
-platform: scheduler-sdk
+platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---

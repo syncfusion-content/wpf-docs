@@ -2,7 +2,7 @@
 layout: post
 title: Date Formatting in WPF DatePicker | Syncfusion
 description: Learn how to format and display dates in various formats in WPF DatePicker control with FormatString.
-platform: scheduler-sdk
+platform: wpf
 control: SfDatePicker
 documentation: ug
 ---

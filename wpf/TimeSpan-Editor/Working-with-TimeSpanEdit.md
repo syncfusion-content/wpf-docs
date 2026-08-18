@@ -2,7 +2,7 @@
 layout: post
 title: Working with TimeSpanEdit in WPF TimeSpan Editor | Syncfusion
 description: Learn how to work with TimeSpanEdit to change time values and formats in WPF TimeSpan Editor control.
-platform: scheduler-sdk
+platform: wpf
 control: TimeSpanEdit
 documentation: ug
 ---

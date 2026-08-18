@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WPF TimePicker Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio WPF TimePicker control, its key features, time selection functionality, and more details.
-platform: scheduler-sdk
+platform: wpf
 control: SfTimePicker
 documentation: ug
 ---

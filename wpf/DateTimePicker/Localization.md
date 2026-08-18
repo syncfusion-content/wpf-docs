@@ -2,7 +2,7 @@
 layout: post
 title: Localization in WPF DateTimePicker | Syncfusion
 description: Learn how to localize and support multiple languages in WPF DateTimePicker control for global applications.
-platform: scheduler-sdk
+platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---

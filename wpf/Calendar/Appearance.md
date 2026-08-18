@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF Calendar | Syncfusion
 description: Learn about appearance customization including styling and theming options available in WPF Calendar control.
-platform: scheduler-sdk
+platform: wpf
 control: CalendarEdit
 documentation: ug
 ---

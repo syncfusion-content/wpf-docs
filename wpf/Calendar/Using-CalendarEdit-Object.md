@@ -2,7 +2,7 @@
 layout: post
 title: Using CalendarEdit Object in WPF Calendar | Syncfusion
 description: Learn how to work with CalendarEdit object in WPF Calendar control to access and manipulate calendar features.
-platform: scheduler-sdk
+platform: wpf
 control: CalendarEdit
 documentation: ug
 ---

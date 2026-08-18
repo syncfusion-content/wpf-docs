@@ -2,7 +2,7 @@
 layout: post
 title: Time Selector in WPF TimePicker | Syncfusion
 description: Learn about SfTimeSelector in WPF TimePicker that enables time selection with cells for selecting time values.
-platform: scheduler-sdk
+platform: wpf
 control: SfTimePicker
 documentation: ug
 ---

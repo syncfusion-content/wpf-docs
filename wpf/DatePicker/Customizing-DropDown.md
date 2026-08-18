@@ -2,7 +2,7 @@
 layout: post
 title: Customizing DropDown in WPF DatePicker | Syncfusion
 description: Learn how to customize dropdown visibility and height in WPF DatePicker control for better user experience.
-platform: scheduler-sdk
+platform: wpf
 control:  SfDatePicker
 documentation: ug
 ---
