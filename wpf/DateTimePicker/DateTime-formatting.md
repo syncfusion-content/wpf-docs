@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DateTime formatting in WPF DateTimePicker control | Syncfusion
-description: Learn here all about DateTime formatting support in Syncfusion WPF DateTimePicker (DateTimeEdit) control and more.
-platform: wpf
+title: DateTime Formatting in WPF DateTimePicker | Syncfusion
+description: Learn how to format and display date time values in different formats in WPF DateTimePicker control.
+platform: scheduler-sdk
 control: DateTimeEdit
 documentation: ug
 ---
 
-# DateTime formatting in WPF DateTimePicker (DateTimeEdit)
+# DateTime Formatting in WPF DateTimePicker
 
 You can specify the selected datetime display format in the [WPF DateTimePicker](https://www.syncfusion.com/wpf-controls/datetimepicker) (DateTimeEdit) by using the predefined patterns and custom patterns.
 

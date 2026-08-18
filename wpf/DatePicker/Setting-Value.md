@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Date in WPF DatePicker control | Syncfusion®
-description: Learn here all about Setting Date support in Syncfusion® WPF DatePicker (SfDatePicker) control and more.
-platform: wpf
+title: Setting Date in WPF DatePicker | Syncfusion
+description: Learn how to set and change date values in WPF DatePicker using date selector and keyboard interaction.
+platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
 ---
 
-# Setting Date in WPF DatePicker (SfDatePicker)
+# Setting Date in WPF DatePicker
 
 We can change the value of [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) by using the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) and keyboard interaction.
 
