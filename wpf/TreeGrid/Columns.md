@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in WPF SfTreeGrid | Syncfusion®
-description: Manage columns in SfTreeGrid to add, remove, and customize column collections with built-in properties and behaviors.
+description: Columns in SfTreeGrid supports auto-generated and custom columns, column types, resizing, reordering, freezing, and data binding.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

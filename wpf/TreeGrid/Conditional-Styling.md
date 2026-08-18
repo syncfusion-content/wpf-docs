@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional Styling in WPF SfTreeGrid | Syncfusion®
-description: Apply conditional styling in SfTreeGrid using converters, data triggers, and selectors to dynamically style rows and cells.
+description: Conditional Styling in SfTreeGrid applies custom styles to cells, rows, and columns dynamically based on data values and conditions.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

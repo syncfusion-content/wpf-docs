@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Height Customization in WPF SfTreeGrid | Syncfusion®
-description: Customize row heights in SfTreeGrid for header and data rows to control layout and improve content visibility.
+description: Row Height Customization in SfTreeGrid customizes row heights dynamically to improve data display, readability, and user experience.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
