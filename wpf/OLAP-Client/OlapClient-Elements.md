@@ -7,7 +7,7 @@ control: OlapClient
 documentation: ug
 ---
 
-# OlapClient Elements in WPF
+# Elements in WPF OlapClient
 
 The cube selector allows you to select any one of the cubes available in the connected database. This can be achieved with a drop-down list displaying the list of cube names. On selecting a cube from the drop-down list, the corresponding cube element gets loaded.
 
