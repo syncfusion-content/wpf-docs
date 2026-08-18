@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WPF Calendar Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio WPF Calendar control, its key features, calendar functionality, and more details.
-platform: scheduler-sdk
+platform: wpf
 control: CalendarEdit
 documentation: ug
 ---

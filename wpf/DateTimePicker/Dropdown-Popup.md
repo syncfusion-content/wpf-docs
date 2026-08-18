@@ -2,7 +2,7 @@
 layout: post
 title: Dropdown Popup in WPF DateTimePicker | Syncfusion
 description: Learn how to customize and use the dropdown popup with calendar and clock in WPF DateTimePicker control.
-platform: scheduler-sdk
+platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---

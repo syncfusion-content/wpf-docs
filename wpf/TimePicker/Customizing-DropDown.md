@@ -2,7 +2,7 @@
 layout: post
 title: Customizing DropDown in WPF TimePicker | Syncfusion
 description: Learn how to customize dropdown visibility and height in WPF TimePicker control for better user experience.
-platform: scheduler-sdk
+platform: wpf
 control: SfTimePicker
 documentation: ug
 ---

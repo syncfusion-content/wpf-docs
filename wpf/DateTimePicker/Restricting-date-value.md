@@ -2,7 +2,7 @@
 layout: post
 title: Restricting Date Value in WPF DateTimePicker | Syncfusion
 description: Learn how to restrict date and time values within a particular range in WPF DateTimePicker control easily.
-platform: scheduler-sdk
+platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Time Formatting in WPF TimePicker | Syncfusion
 description: Learn how to format and display time values in various formats in WPF TimePicker control with FormatString.
-platform: scheduler-sdk
+platform: wpf
 control: SfTimePicker
 documentation: ug
 ---

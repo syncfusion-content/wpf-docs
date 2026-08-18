@@ -2,7 +2,7 @@
 layout: post
 title: Restrict Date Selection in WPF Calendar | Syncfusion
 description: Learn how to restrict date selection within a particular range in WPF Calendar control for validation.
-platform: scheduler-sdk
+platform: wpf
 control: CalendarEdit
 documentation: ug
 ---

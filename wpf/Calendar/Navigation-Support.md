@@ -2,7 +2,7 @@
 layout: post
 title: Date Navigation in WPF Calendar | Syncfusion
 description: Learn about date navigation features in WPF Calendar to move between day, month and year modes easily.
-platform: scheduler-sdk
+platform: wpf
 control: CalendarEdit
 documentation: ug
 ---

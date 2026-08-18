@@ -2,7 +2,7 @@
 layout: post
 title: Setting Time in WPF TimePicker | Syncfusion
 description: Learn how to set and change time values in WPF TimePicker using time selector and keyboard interaction.
-platform: scheduler-sdk
+platform: wpf
 control: SfTimePicker
 documentation: ug
 ---

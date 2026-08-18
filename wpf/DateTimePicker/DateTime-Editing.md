@@ -2,7 +2,7 @@
 layout: post
 title: DateTime Editing in WPF DateTimePicker | Syncfusion
 description: Learn how to edit date and time values in WPF DateTimePicker using text box with mask or free form editing.
-platform: scheduler-sdk
+platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---

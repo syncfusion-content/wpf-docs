@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WPF Calendar | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF Calendar control. Explore setup, features, examples, and customization options.
-platform: scheduler-sdk
+platform: wpf
 control: CalendarEdit
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Setting Date in WPF DatePicker | Syncfusion
 description: Learn how to set and change date values in WPF DatePicker using date selector and keyboard interaction.
-platform: scheduler-sdk
+platform: wpf
 control: SfDatePicker
 documentation: ug
 ---

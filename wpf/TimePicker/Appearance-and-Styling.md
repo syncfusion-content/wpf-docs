@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in WPF TimePicker | Syncfusion
 description: Learn about appearance customization and styling options available in WPF TimePicker control easily.
-platform: scheduler-sdk
+platform: wpf
 control: SfTimePicker
 documentation: ug
 ---
