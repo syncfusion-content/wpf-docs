@@ -7,7 +7,7 @@ control: SkinStorage
 documentation: ug
 ---
 
-# How to Get Resource ID for Themes in WPF SkinStorage
+# How to Get Resource ID for Themes in WPF SkinStorage (Classic)
 
 The WPF Skin Manager provides a swatch of theme colors that contains all Syncfusion theme brushes. These brushes are used by getting key names for the given particular theme. Brush names are stored as properties in the ThemeColors class.
 
