@@ -1,17 +1,17 @@
 ---
 layout: post
-title: XAML Configuration in WPF Olap Grid control | Syncfusion®
-description: Learn about XAML Configuration support in Syncfusion® WPF Olap Grid control, its elements and more details.
+title: XAML Configuration in WPF OlapGrid | Syncfusion®
+description: The XAML configuration feature in OlapGrid lets you configure the control entirely through XAML, eliminating the code required in code behind.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# XAML Configuration in WPF Olap Grid
+# XAML Configuration in WPF OlapGrid
 
 XAML configuration is one of the most important features of the OLAP grid, as it helps users to configure the control entirely through XAML by eliminating the required code in code behind.
 
-### Properties
+## Properties
 
 * **DataSource.ConnectionString**: Specifies the connection string of the data manager.
 * **DataSource.ConnectionName**: Specifies the connection name, which is available in the App.Config file of the application.

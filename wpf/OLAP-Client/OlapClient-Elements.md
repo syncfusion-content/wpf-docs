@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Elements support in WPF Olap Client control | Syncfusion®
-description: Learn here all about elements support in Syncfusion® Essential Studio® WPF Olap Client control and more.
+title:  OlapClient Elements in WPF | Syncfusion®
+description: Explore the OlapClient elements in WPF including cube selector, cube dimension browser, axis element builder, member editor, measure editor, and toolbar.
 platform: wpf
-control: OLAP Client
+control: OlapClient
 documentation: ug
 ---
 
-# Cube Selector in WPF Olap Client
+# Elements in WPF OlapClient
 
 The cube selector allows you to select any one of the cubes available in the connected database. This can be achieved with a drop-down list displaying the list of cube names. On selecting a cube from the drop-down list, the corresponding cube element gets loaded.
 
@@ -264,4 +264,4 @@ Select the required report from the report list. The selected report will be set
 
 ## OLAP grid and OLAP chart
 
-The [OLAP grid](http://help.syncfusion.com/wpf/olapgrid/overview/) and [OLAP chart](http://help.syncfusion.com/wpf/olapchart/overview) controls will be rendered with respect to the operations done in the axis element builder.
+The [OLAP grid](https://help.syncfusion.com/wpf/olap-grid/overview) and [OLAP chart](http://help.syncfusion.com/wpf/olapchart/overview) controls will be rendered with respect to the operations done in the axis element builder.
