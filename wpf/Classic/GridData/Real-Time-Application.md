@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Real-Time-Application in WPF Wizard Control control | Syncfusion
-description: Learn here all about Real-Time-Application support in Syncfusion WPF GridDataControl (Classic) control and more.
+title: Real Time Application in WPF GridDataControl | Syncfusion®
+description: Real Time Application in GridDataControl supports handling large volumes of live data with virtual mode and high-frequency updates.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Real-Time-Application in WPF GridDataControl (Classic)
+# Real Time Application in WPF GridDataControl
 
 Essential Grid finds a wide range of applications in real time. It is completely optimized to deal with large amount of real time data. Its virtual mode support and high frequency updates behavior make the grid to take part in stock portfolio applications.
 

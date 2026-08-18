@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Grid-Localization-Support in WPF Wizard Control control | Syncfusion
-description: Learn here all about Localization support in Syncfusion WPF GridDataControl (Classic) control and more.
+title: Localization Support in WPF GridDataControl | Syncfusion®
+description: Localization Support in GridDataControl enables customization of grid text through resource files and culture-specific settings.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Grid-Localization-Support in WPF GridDataControl (Classic)
+# Localization Support in WPF GridDataControl
 
 Localization is the process of making your application multi-lingual, by formatting content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and the location (e.g. En-US is the culture for English spoken in  United States; En-GB is the culture for English spoken in  Great Britain). Syncfusion Grid allows you to set custom resource through the Resx file. The user can simply give the string values in the resource file for a specific culture and set the culture in the application. The given string values are set to the Grid that does not affect the Code Block of the Grid
 
