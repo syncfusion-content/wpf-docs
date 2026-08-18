@@ -10,7 +10,7 @@ documentation: ug
 
 This section describes the system requirements to use Syncfusion<sup>&reg;</sup> WPF Controls for development.
 
-### Operating Systems
+## Operating Systems
 
 * Windows XP
 * Windows Vista SP2

@@ -13,7 +13,7 @@ The WPF Skin Manager provides a swatch of theme colors that contains all Syncfus
 
 N> ThemeColors class has been referred at application level by adding Syncfusion.Shared.WPF assembly.
 
-### Use case scenarios
+## Use case scenarios
 
 Users can customize brushes easily to get unique colors for all controls in the application.
 
