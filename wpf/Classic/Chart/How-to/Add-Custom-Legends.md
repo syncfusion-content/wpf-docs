@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add Custom Legends | wpf | Syncfusion
-description: Learn here all about Add-Custom-Legends support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Add Custom Legends | wpf | Syncfusion®
+description: Learn here all about Add-Custom-Legends support in WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Sparkline in WPF Chart Control | Syncfusion
-description: Learn here all about Sparkline support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Sparkline in WPF Classic Chart | Syncfusion®
+description: Sparkline in WPF Classic Chart provides compact data visualizations that display trends, variations, and patterns within a small space.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Sparkline in WPF Chart (Classic)
+# Sparkline in WPF Classic Chart
 
 A Sparklinecontrolis a type of information graphic characterized by its small size, high data density and lightweight. It presents trends and variations in a very condensed fashion. The Sparkline does not contain an axis scale and is intended to give a high level overview of what happened to the data over time.
 

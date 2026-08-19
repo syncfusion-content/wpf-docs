@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart Appearance in WPF Chart (Classic) Control | Syncfusion
-description: Chart Appearance in Syncfusion Essential Studio WPF Chart (Classic) control, its elements, features and more.
+title: Appearance in WPF Classic Chart | Syncfusion®
+description: Appearance in WPF Classic Chart enables customization of visual elements, including backgrounds, borders, colors, and styling options.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart Appearance in WPF Chart (Classic) Control
+# Appearance in WPF Classic Chart
 
 ## Chart Styles
 

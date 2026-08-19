@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind Commands With Chart Or Chart Area | wpf | Syncfusion
-description: Learn here all about Bind Commands With Chart Or Chart Area support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: How to bind commands in WPF Classic Chart | Syncfusion®
+description: Bind commands in WPF Classic Chart to handle chart and chart area interactions and execute actions through command bindings.
 platform: wpf
 control: Chart (Classic)
 documentation: ug

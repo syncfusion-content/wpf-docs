@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Timeline in WPF Chart Control | Syncfusion
-description: Learn here all about Timeline support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Timeline in WPF Classic Chart | Syncfusion®
+description: Timeline in WPF Classic Chart displays chronological data with visual representation of events, durations, and time-based information.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Timeline in WPF Chart (Classic)
+# Timeline in WPF Classic Chart
 
 
 TimeLine control can be added to other controls like Chart, Grid, etc. It is mainly used to set the ViewPort for a limited time to view the selected data. Following are the list of characteristics of TimeLine Control:
