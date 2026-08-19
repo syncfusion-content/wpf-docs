@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WPF Multi Column Dropdown control | Syncfusion®
-description: Learn here all about Selection support in Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
+title: Selection in WPF Multi Column Dropdown | Syncfusion®
+description:  Selection in Syncfusion® WPF Multi Column Dropdown lets you choose single or multiple items, customize separators, access selected values, and handle events.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Selection in WPF Multi Column Dropdown (SfMultiColumnDropDown)
+# Selection in WPF Multi Column Dropdown
 
 [SfMultiColumnDropDownControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) allows you to select one or more rows based on the SelectionMode. You can get the selected item in the SfDataGrid by using [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedItem) property and the selected index by using [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedIndex) property. 
 
