@@ -4,7 +4,7 @@ title: Getting Started with WPF GridDataControl | Syncfusion®
 canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
 description: Learn how to get started with the Syncfusion® WPF GridDataControl. Explore setup, features, examples, and customization options.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 

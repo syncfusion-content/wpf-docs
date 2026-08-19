@@ -3,7 +3,7 @@ layout: post
 title: Events in WPF GridDataControl | Syncfusion®
 description: Events in GridDataControl handle user interactions, cell editing, mouse actions, and row validation within the grid.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 # Events in WPF GridDataControl

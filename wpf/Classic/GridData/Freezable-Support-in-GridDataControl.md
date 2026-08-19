@@ -3,7 +3,7 @@ layout: post
 title: Freezable Support in WPF GridDataControl | Syncfusion®
 description: Freezable Support in GridDataControl enables data binding for elements outside the visual tree, such as column headers.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 # Freezable Support in WPF GridDataControl

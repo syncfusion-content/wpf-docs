@@ -161,7 +161,7 @@ If there is no parameter set in the View, then the parameter is passed in the me
 
 ![Null parameter value set in View of WPF GridData control](Getting-Started_images/Getting-Started_img165.png)
 
-#### Sample Location
+### Sample Location
 
 A sample application can be downloaded from the following location:
 

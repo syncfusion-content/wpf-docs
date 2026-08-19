@@ -3,7 +3,7 @@ layout: post
 title: Localization Support in WPF GridDataControl | Syncfusion®
 description: Localization Support in GridDataControl enables customization of grid text through resource files and culture-specific settings.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 # Localization Support in WPF GridDataControl

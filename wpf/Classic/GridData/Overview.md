@@ -16,7 +16,7 @@ The display system also hosts a powerful and complete styles architecture. Setti
 
 With this version, our core focus has been on the underlying architecture for displaying cells with virtualized cell editors in a manner that enables good performance characteristics. The core display system also supports several building-block features such as nested grids, virtual modes, and support for a virtually unlimited number of rows and columns.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 EssentialGrid for WPF can be applied to a variety of industries such as finance, banking, software, etc. Some of its important features are:
 

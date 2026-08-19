@@ -2683,7 +2683,7 @@ Grid exposes a style property named TooltipTemplateKey that is the name of the t
 
 N> If style.ShowTooltip is not set, then the default template associated with the Grid is loaded, and the default template would try to show the style.CellValue in a tooltip.
 
-#### Example
+### Example
 
 The example below displays a Chart control in the tooltip host. The grid is bound to the Customers table in which the second column is assigned with a tooltip template that holds a data bound chart for tooltip display. Follow the steps below:
 
@@ -3183,7 +3183,7 @@ PredicateType</td><td>
 Specifies the PredicateType that is used to combine more than one condition. There are two types-AND, OR.</td></tr>
 </table>
 
-#### Example
+### Example
 
 Now, let us consider an example for conditional formatting. The first conditional formatter in the following example specifies the filter criteria, “{Freight} > 200 OR {Freight} < 500” that applies Yellow background to the cells satisfying this condition. 
 

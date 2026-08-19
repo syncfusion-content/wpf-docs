@@ -3,7 +3,7 @@ layout: post
 title: Performance in WPF GridDataControl | Syncfusion®
 description: Performance in GridDataControl supports high-frequency data updates, virtual mode, and PLINQ-based operations for large datasets.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 # Performance in WPF GridDataControl

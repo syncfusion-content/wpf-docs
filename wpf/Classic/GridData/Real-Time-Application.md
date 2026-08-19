@@ -3,7 +3,7 @@ layout: post
 title: Real Time Application in WPF GridDataControl | Syncfusion®
 description: Real Time Application in GridDataControl supports handling large volumes of live data with virtual mode and high-frequency updates.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 # Real Time Application in WPF GridDataControl

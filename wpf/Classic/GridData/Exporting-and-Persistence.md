@@ -3,7 +3,7 @@ layout: post
 title: Exporting and Persistence in WPF GridDataControl | Syncfusion®
 description: Exporting and Persistence in GridDataControl support exporting grid data to Excel, CSV, and PDF and saving grid state in XML format.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 

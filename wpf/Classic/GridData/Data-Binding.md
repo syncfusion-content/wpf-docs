@@ -3,7 +3,7 @@ layout: post
 title: Data Binding in WPF GridDataControl | Syncfusion®
 description: Data binding in GridDataControl binds the grid to data tables, datasets, and custom collections for seamless data presentation.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 # Data Binding in WPF GridDataControl

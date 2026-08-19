@@ -3,7 +3,7 @@ layout: post
 title: Data Model in WPF GridDataControl | Syncfusion®
 description: Data Model in GridDataControl manage records internally with grouping, sorting, filtering, and summaries.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 
