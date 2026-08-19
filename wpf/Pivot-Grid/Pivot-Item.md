@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PivotItem in WPF PivotGrid | Syncfusion®
-description: PivotItem in the Syncfusion® WPF PivotGrid control defines field properties like header, mapping, format, sorting, filtering, and grouping.
+title: PivotItem in WPF Pivot Grid | Syncfusion®
+description: PivotItem in the Syncfusion® WPF Pivot Grid control defines field properties like header, mapping, format, sorting, filtering, and grouping.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# PivotItem in WPF PivotGrid
+# PivotItem in WPF Pivot Grid
 
 A pivot item is a container for items in the pivot grid control. An item in a pivot table field provides the information needed to define an item. The items are individual data entries in a field category. The pivot item object is a member of the pivot items collection and consists of the following fields.
 

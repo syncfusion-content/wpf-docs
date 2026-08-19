@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting by Values in WPF PivotGrid | Syncfusion®
-description: Sorting by Values in the Syncfusion® WPF PivotGrid control lets users sort value columns, totals, or grand totals in ascending or descending order.
+title: Sorting by Values in WPF Pivot Grid | Syncfusion®
+description: Sorting by Values in the Syncfusion® WPF Pivot Grid control lets users sort value columns, totals, or grand totals in ascending or descending order.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Sorting by Values in WPF PivotGrid
+# Sorting by Values in WPF Pivot Grid
 
 Sorting-by-Values provides the following sort options:
 

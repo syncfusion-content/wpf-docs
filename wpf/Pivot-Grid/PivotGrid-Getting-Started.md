@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF PivotGrid | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF PivotGrid control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Pivot Grid | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Pivot Grid control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Getting Started with WPF PivotGrid
+# Getting Started with WPF Pivot Grid
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup>®</sup> license key in your WPF application to use the components.

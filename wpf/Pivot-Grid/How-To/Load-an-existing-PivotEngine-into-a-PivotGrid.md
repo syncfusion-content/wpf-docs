@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Load an Existing PivotEngine into WPF PivotGrid | Syncfusion®
-description: Load an existing or external PivotEngine into Syncfusion® WPF PivotGrid control programmatically by enabling IsExternalEngine and assigning PivotEngine.
+title: How to Load an Existing PivotEngine into WPF Pivot Grid | Syncfusion®
+description: Load an existing or external PivotEngine into Syncfusion® WPF Pivot Grid control programmatically by enabling IsExternalEngine and assigning PivotEngine.
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-# How to Load an Existing PivotEngine into WPF PivotGrid
+# How to Load an Existing PivotEngine into WPF Pivot Grid
 
 After defining the PivotGrid control, set the property `IsExternalEngine` as true. Now create a new PivotEngine using `PivotEngine` class and assign it to your PivotGrid control's PivotEngine.
 

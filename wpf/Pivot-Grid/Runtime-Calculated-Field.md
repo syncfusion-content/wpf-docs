@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calculated Field in WPF PivotGrid | Syncfusion®
-description: Calculated Field in the Syncfusion® WPF PivotGrid control lets users create custom formulas and derive new values for advanced pivot analysis.
+title: Calculated Field in WPF Pivot Grid | Syncfusion®
+description: Calculated Field in the Syncfusion® WPF Pivot Grid control lets users create custom formulas and derive new values for advanced pivot analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Calculated Field in WPF PivotGrid
+# Calculated Field in WPF Pivot Grid
 
 The pivot grid inserts a new calculated field based on the existing calculated items using the calculated field window. This option is available as a menu item in the grouping bar context menu.
 

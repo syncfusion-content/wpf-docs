@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Calculations in WPF PivotGrid | Syncfusion®
-description: Define custom calculations in the Syncfusion® WPF PivotGrid control to create user-defined formulas and extend pivot table analysis.
+title: Custom Calculations in WPF Pivot Grid | Syncfusion®
+description: Define custom calculations in the Syncfusion® WPF Pivot Grid control to create user-defined formulas and extend pivot table analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Custom Calculations in WPF PivotGrid
+# Custom Calculations in WPF Pivot Grid
 
 **CalculationType** is an enumerator defined in the PivotComputationInfo class that is used to specify the type of calculation. The various types of calculations are:
 

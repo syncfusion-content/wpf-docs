@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Summary Types in WPF PivotGrid | Syncfusion®
-description: Summary Types in the Syncfusion® WPF PivotGrid control define how data is aggregated, including sum, average, max, min, variance, count, and custom summaries.
+title: Summary Types in WPF Pivot Grid | Syncfusion®
+description: Summary Types in the Syncfusion® WPF Pivot Grid control define how data is aggregated, including sum, average, max, min, variance, count, and custom summaries.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Summary Types in WPF PivotGrid
+# Summary Types in WPF Pivot Grid
 
 The pivot grid summarizes the data for various data types by using the `SummaryType` enumerator. SummaryType should be defined while defining the pivot calculation using `PivotComputationInfo` class to specify the type of summary. It holds the following summary types.
 

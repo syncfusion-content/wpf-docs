@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Style and Template in WPF PivotGrid | Syncfusion®
-description: Cell Style and Template in the Syncfusion® WPF PivotGrid control customizes appearance of column, row, summary, and value cells using styles or templates.
+title: Cell Style and Template in WPF Pivot Grid | Syncfusion®
+description: Cell Style and Template in the Syncfusion® WPF Pivot Grid control customizes appearance of column, row, summary, and value cells using styles or templates.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Cell Style and Template in WPF PivotGrid
+# Cell Style and Template in WPF Pivot Grid
 
 ## Cell styles
 

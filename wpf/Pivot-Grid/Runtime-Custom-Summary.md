@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Summary in WPF PivotGrid | Syncfusion®
-description: Custom Summary in the Syncfusion® WPF PivotGrid control lets users define personalized calculations and display results in pivot reports.
+title: Custom Summary in WPF Pivot Grid | Syncfusion®
+description: Custom Summary in the Syncfusion® WPF Pivot Grid control lets users define personalized calculations and display results in pivot reports.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Custom Summary in WPF PivotGrid
+# Custom Summary in WPF Pivot Grid
 
 The pivot grid enables you to set the custom summaries for the PivotItem values at both load time and runtime (using pivot computation info dialog).
 

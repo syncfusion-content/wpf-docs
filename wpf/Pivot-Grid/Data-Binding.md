@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WPF PivotGrid | Syncfusion®
-description: Bind data sources to the Syncfusion® WPF PivotGrid control to display and analyze relational data in a pivot table format.
+title: Data Binding in WPF Pivot Grid | Syncfusion®
+description: Bind data sources to the Syncfusion® WPF Pivot Grid control to display and analyze relational data in a pivot table format.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Data Binding in WPF PivotGrid
+# Data Binding in WPF Pivot Grid
 
 ## Binding pivot grid to list
 

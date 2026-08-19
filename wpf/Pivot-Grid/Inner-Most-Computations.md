@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display Innermost Computations in WPF PivotGrid | Syncfusion®
-description: Use the InnerMostComputationsOnly property in the Syncfusion® WPF PivotGrid control to show detailed values alone without totals.
+title: Display Innermost Computations in WPF Pivot Grid | Syncfusion®
+description: Use the InnerMostComputationsOnly property in the Syncfusion® WPF Pivot Grid control to show detailed values alone without totals.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Display Innermost Computations in WPF PivotGrid
+# Display Innermost Computations in WPF Pivot Grid
 
 The pivot grid supports displaying the grid with inner most computations alone without displaying the total values by using the `InnerMostComputationsOnly` property. It can be mentioned in XAML or code-behind.
 

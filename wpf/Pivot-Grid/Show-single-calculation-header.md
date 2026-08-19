@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Single Calculation Header in WPF PivotGrid | Syncfusion®
-description: Single Calculation Header in the Syncfusion® WPF PivotGrid control shows calculation headers even when only one PivotCalculation is present.
+title: Single Calculation Header in WPF Pivot Grid | Syncfusion®
+description: Single Calculation Header in the Syncfusion® WPF Pivot Grid control shows calculation headers even when only one PivotCalculation is present.
 
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Single Calculation Header in WPF PivotGrid
+# Single Calculation Header in WPF Pivot Grid
 
 By default, the pivot grid does not show the calculation headers when there is only one PivotCalculation. To show the calculation headers even when there is only one PivotCalculation, use the `ShowSingleCalculationHeader` property of pivot grid control.
 
