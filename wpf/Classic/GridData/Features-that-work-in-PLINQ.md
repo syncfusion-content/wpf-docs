@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Features-that-work-in-PLINQ in WPF Wizard Control control | Syncfusion
-description: Learn here all about Features-that-work-in-PLINQ support in Syncfusion WPF GridDataControl (Classic) control and more.
+title: Features that Work in PLINQ in WPF GridDataControl | Syncfusion®
+description: Features that work in PLINQ in GridDataControl support sorting, grouping, and summary operations when UsePLINQ is enabled.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
-# Features-that-work-in-PLINQ in WPF GridDataControl (Classic)
+# Features that Work in PLINQ in WPF GridDataControl
 
 The following features work by default when UsePLINQ is set to true:
 

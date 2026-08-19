@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Loclization in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Loclization support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Localization in WPF Schedule (Classic) | Syncfusion
+description: Learn how Localization in WPF Schedule (Classic) customizes the user interface based on culture-specific regional data using localized resource files.
 platform: wpf
 control: SfSchedule
 documentation: ug

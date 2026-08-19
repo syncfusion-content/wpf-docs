@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Number Formatting in WPF NumericUpdown | Syncfusion®
-description: Format the numeric value in the Syncfusion WPF NumericUpdown (UpDown) control using number formats, padding, and special format strings.
+title: Number Formatting in WPF UpDown | Syncfusion®
+description: Format the numeric value in the Syncfusion WPF UpDown control using number formats, padding, and special format strings.
 platform: wpf
 control: UpDown
 documentation: ug
 ---
 
-# Number Formatting in WPF NumericUpdown
+# Number Formatting in WPF UpDown
 
 This section explains how to format the value in WPF UpDown control.
 

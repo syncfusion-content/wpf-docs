@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Display Innermost Computations in WPF Pivot Grid control | Syncfusion®
-description: Learn about Display Innermost Computations support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Display Innermost Computations in WPF Pivot Grid | Syncfusion®
+description: Innermost computations in the Syncfusion® WPF Pivot Grid control display detailed values alone without totals for precise pivot analysis.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

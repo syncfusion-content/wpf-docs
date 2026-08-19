@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UIAutomation in WPF Multi Column Dropdown control | Syncfusion®
-description: Learn here all about UIAutomation support in Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
+title: UIAutomation in WPF MultiColumn Dropdown | Syncfusion®
+description: UIAutomation in Syncfusion® WPF MultiColumn Dropdown supports Coded UI, QTP tests, custom properties, and methods to automate actions and validate elements.
 platform: wpf
-control: SfMultiColumnDropDownControl
+control: MultiColumn Dropdown
 documentation: ug
 ---
 
-# UIAutomation in WPF Multi Column Dropdown (SfMultiColumnDropDown)
+# UIAutomation in WPF MultiColumn Dropdown
 
 SfMultiColumnDropDownControl supports the following UIAutomations,
 

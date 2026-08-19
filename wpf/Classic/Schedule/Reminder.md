@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reminder in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Reminder support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Reminder in WPF Schedule (Classic) | Syncfusion
+description: Learn how Reminder in WPF Schedule (Classic) alerts users for appointments with a reminder window that supports dismiss, dismiss all, and snooze.
 platform: wpf
 control: SfSchedule
 documentation: ug
@@ -119,7 +119,7 @@ Download demo from [GitHub](https://github.com/SyncfusionExamples/SfSchedule_Rem
 
 ## Handling Reminder events
 
-#### ReminderOpening event
+### ReminderOpening event
 
 [ReminderOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) – occurs when appearing the reminder window.
 
@@ -140,12 +140,12 @@ private void Schedule_ReminderOpening(object sender, ReminderControlOpeningEvent
 {% endhighlight %}
 {% endtabs %}
 
-#### ReminderClosed event
+### ReminderClosed event
 
 [ReminderClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) – occurs when closing the reminder window.
 [ReminderControlClosedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ReminderControlClosedEventArgs.html) provides information for [ReminderClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event.
 
-#### ReminderFormActionChanged event
+### ReminderFormActionChanged event
 
 [ReminderFormActionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) – occurs when change the reminder window action for the appointment.
 

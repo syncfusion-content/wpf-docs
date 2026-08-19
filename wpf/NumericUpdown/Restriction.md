@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Restriction in WPF NumericUpdown | Syncfusion®
-description: Restrict the valid input range of the Syncfusion WPF NumericUpdown (UpDown) control using minimum, maximum, and custom validation rules.
+title: Restriction in WPF UpDown | Syncfusion®
+description: Restrict the valid input range of the Syncfusion WPF UpDown control using minimum, maximum, and custom validation rules.
 platform: wpf
 control: UpDown
 documentation: ug
 ---
 
-# Restriction in WPF NumericUpdown
+# Restriction in WPF UpDown
 
 This section explains about how to set the value and restrict the minimum and maximum value in WPF UpDown control.
 

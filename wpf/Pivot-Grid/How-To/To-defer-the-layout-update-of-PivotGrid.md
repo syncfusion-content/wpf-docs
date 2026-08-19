@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 145-Display-the-Calculation-Columns-in-Row | Syncfusion
-description: Section helps to know how to set defer layout update either programmatically or dynamically in pivot grid control | Syncfusion
+title: How to Set Defer Layout Update in WPF Pivot Grid | Syncfusion®
+description: Set defer layout update in Syncfusion® WPF Pivot Grid control by enabling the DeferLayoutUpdate property.
 platform: wpf
-control: PivotGridControl
+control: Pivot Grid
 documentation: ug
 ---
 
-# How to set defer layout update in PivotGrid?
+# How to Set Defer Layout Update in WPF Pivot Grid
 
 It can be achieved by setting the property `DeferLayoutUpdate` to true via code or through the DeferLayoutUpdate check-box (UI option) inside PivotSchemaDesigner control. 
 

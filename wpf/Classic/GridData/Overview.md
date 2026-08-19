@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About WPF GridData Control | Syncfusion
+title: About Syncfusion WPF GridDataControl | Syncfusion®
 canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
-description: Learn here all about introduction of Syncfusion WPF GridDataControl (Classic) control, its elements and more details.
+description: Learn about introduction of Syncfusion® Essential Studio WPF GridDataControl and exploring its features.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 
-# WPF GridDataControl (Classic) Overview
+# About Syncfusion WPF GridDataControl.
 
 The grid at its core functions as a very efficient display engine for tabular data that can be customized down to the cell level. It does not make any assumptions on the structure of the data (many grid controls implemented as straight data-bound controls make such explicit assumptions). This leads to a very flexible design that can be easily adapted to a variety of tasks including the display of completely unstructured data and the display of structured data from a database. 
 
@@ -16,7 +16,7 @@ The display system also hosts a powerful and complete styles architecture. Setti
 
 With this version, our core focus has been on the underlying architecture for displaying cells with virtualized cell editors in a manner that enables good performance characteristics. The core display system also supports several building-block features such as nested grids, virtual modes, and support for a virtually unlimited number of rows and columns.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 EssentialGrid for WPF can be applied to a variety of industries such as finance, banking, software, etc. Some of its important features are:
 
@@ -97,7 +97,7 @@ This section provides basic information, such as definitions and usage, regardin
 
 ### GridData Control 
 
-The GridData control is a data-bound control that supports editing, sorting, and grouping. The main features of the GridData control are explained in the following list.
+The GridData control is a data-bound control that supports editing, sorting, and grouping. It is specifically designed for the scenarios, where you need to bound the grid to an external data source and customize the data view by performing the operations such as grouping, sorting, summarizing, filtering, conditional formats and unbound fields. It attains the fundamental features by deriving from the GridControlBase class and hence adapts most of the features of Grid control. It can display nested grids with hierarchical data and can also display multiple unrelated tables in one grid. The main features of the GridData control are explained in the following list.
 
 #### Working with Data: 
 
@@ -123,7 +123,27 @@ Complex objects can bind with the GridData control and the GridData control can 
 
 ![WPF Overview of GridData control](overview_images/wpf-classic-grid-data-hierarchies.png)
 
+#### Major Control Classes
 
+* GridDataControl (GDC) is the main control class of this control. It is templated with GridDataControlBaseImpl class that is based on GridControlBase class. GDC exposes numerous properties and methods that are available for the end-user to setup the grid in the desired manner.
+* The GridDataTableModel serves as the model class for GDC. It stores all the data information of the grid and provides methods to completely initialize the grid.  It also provides methods to attach the grid later to the GDC, for rendering.
+* The GridDataTableProperties defines property values for the Grid Table that lets you customize the appearance and behavior of the GDC.
+* As a data bound grid, GDC displays tabular data where each row corresponds to a data record and every column stands for data field of the data source. You wrap all the columns in a group together and manipulate them. The GridDataVisibleColumn class is used for this purpose. It groups the columns that are visible in the screen and holds information about each column.
+* The GridDataStyleInfo class, which is derived from GridStyleInfo, provides user-friendly access to all the cell level properties that control the appearance of the cell. It holds all the information  of the cell.
+* GridDataTable provides the virtual representation of the entity set and manages all the underlying records in the data source.
+* GridDataGroupDropAreaGridImpl is the class that defines the group drop area for a GDC. It displays a panel on the top of the GDC, where the user can drag-and-drop any column header in order to group the grid against that column. GridDataGroupDropAreaModel is the model class for this purpose.
+
+N> There are several other classes that assist the user in creating groups, summaries, filters, sorted columns, etc.
+
+The following sections elaborate the properties of the GridData control:
+
+* Data Binding-Elaborates on the data binding concept in GDC
+* Data Presentation-Discusses different data presentation techniques
+* Events- Events that are handled in GDC are discusses here
+* Look and Feel-Different appearance settings are elaborated here
+* Exporting GDC to Excel-Discusses the steps to export a GDC into the Excel
+* Performance-High performance of the Grid with large amount of data is discussed in this section
+* Real Time Application-Illustrates how to employ the grid in portfolio applications
 
 ## Data Presentation
 

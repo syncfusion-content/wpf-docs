@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Commands in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Commands support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Commands in WPF Schedule (Classic) | Syncfusion
+description: Learn how Commands in WPF Schedule (Classic) perform context menu actions like add, edit, delete, copy, paste, and drag and drop appointments.
 platform: wpf
 control: SfSchedule
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Full Screen in DocumentContainer in WPF Tabbed MDI | Syncfusion®
+title: Full Screen in WPF DocumentContainer | Syncfusion®
 description: Display the active document of the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control in full-screen mode for focused viewing.
 platform: wpf
 control: Tabbed MDI Form
 documentation: ug
 ---
 
-# Full Screen in DocumentContainer in WPF Tabbed MDI
+# Full Screen in WPF DocumentContainer
 
 TDIFullScreenMode is the property used to define the full-screen mode for TDI items. When a value is set for this property, the parent window will be displayed as a full screen and the tab item header will be visible only when the cursor passes over the top of the window. This property is an enum type with the following values:
 
