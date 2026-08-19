@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Month View in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Month View support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Month View in WPF Schedule (Classic) | Syncfusion
+description: Learn how Month View in WPF Schedule (Classic) displays entire dates of a specific month and renders appointments for each day in a cell.
 platform: wpf
 control: SfSchedule
 documentation: ug

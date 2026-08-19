@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appointment Editing in WPF Wizard Control control | Syncfusion
-description: Learn here all about Appointment Editing support in Syncfusion WPF Schedule (Classic) control and more.
+title: Appointment Editing in WPF Schedule (Classic) | Syncfusion
+description: Learn how Appointment Editing in WPF Schedule (Classic) lets users edit, resize, and drag and drop appointments using the appointment editor.
 platform: wpf
 control: SfSchedule
 documentation: ug

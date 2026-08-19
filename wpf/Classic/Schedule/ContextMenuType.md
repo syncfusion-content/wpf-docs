@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ContextMenuType in WPF SfSchedule Control | Syncfusion
-description: Learn here all about ContextMenuType support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: ContextMenuType in WPF Schedule (Classic) | Syncfusion
+description: Learn how ContextMenuType in WPF Schedule (Classic) organizes the collection of MenuItem elements using the ContextMenuType property.
 platform: wpf
 control: SfSchedule
 documentation: ug

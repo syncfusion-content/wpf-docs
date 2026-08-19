@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Timeline View in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Timeline View support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Timeline View in WPF Schedule (Classic) | Syncfusion
+description: Learn how Timeline View in WPF Schedule (Classic) displays dates with day count in the horizontal time axis with drag-and-drop support.
 platform: wpf
 control: SfSchedule
 documentation: ug

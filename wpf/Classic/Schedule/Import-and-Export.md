@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Import-and-Export in WPF Wizard Control control | Syncfusion
-description: Learn here all about Import-and-Export support in Syncfusion WPF Schedule (Classic) control and more.
+title: Import and Export in WPF Schedule (Classic) | Syncfusion
+description: Learn how Import and Export in WPF Schedule (Classic) lets users share appointments as .ics files with Outlook, Google Calendar, and other schedulers.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Import-and-Export in WPF Schedule (Classic)
+# Import and Export in WPF Schedule (Classic)
 
 The schedule control allows users to export or import appointments and events as an .ics files. Appointments and events scheduled with the control can be exported as an .ics file and opened or imported in other schedulers such as Microsoft Outlook, Google Calendar, or any other scheduler supporting .ics files. 
 
