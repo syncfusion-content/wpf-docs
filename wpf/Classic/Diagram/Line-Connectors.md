@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Line Connectors in WPF Diagram Control | Syncfusion
-description: Learn here all about Line Connectors support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Line Connectors in WPF Diagram | Syncfusion®
+description: Learn about line connectors in the Syncfusion® WPF Diagram, including connector types, labels, decorators, routing, bridging, and customization.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Line Connectors in WPF Diagram (classic)
+# Line Connectors in WPF Diagram
 
 Connectors are objects that are used to create a link between two nodes. Each connector has two ends whose position can be specified as point or directly connected to Node. One end of the connector can be defined either by using the ‘Start Point Position’ or ‘Head Node’, similarly other end can be defined using ‘End Point Position’ or ‘Tail Node’. 
 
@@ -2547,7 +2547,7 @@ NA</td></tr>
 
 
 
-#### Applying Style for CustomPathStyle
+### Applying Style for CustomPathStyle
 
 Appearance of the LineConnector can be customized by applying style for the CustomPathStyle property. Style can be applied for CustomPathStyle as illustrated in the following code:
 
@@ -2632,7 +2632,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-#### DecoratorStyle
+### DecoratorStyle
 
 The decorator shapes used for the connector can be customized by specifying the property values under the DecoratorStyle property. To change the decorator style, the HeadDecoratorStyle and TailDecoratorStyle properties can be used. 
 
@@ -2695,7 +2695,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-### First Segment Orientation 
+## First Segment Orientation 
 
 This feature enables you to orient the FirstSegment of the Orthogonal LineConnector as needed. 
 

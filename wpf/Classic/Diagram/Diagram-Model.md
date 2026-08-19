@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Diagram Model in WPF Diagram Control | Syncfusion
-description: Learn here all about Diagram Model support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Diagram Model in WPF Diagram | Syncfusion®
+
+description: Learn about the Diagram Model in the Syncfusion® WPF Diagram, including layouts, data binding, spacing, orientation, and table settings.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Diagram Model in WPF Diagram (classic)
+# Diagram Model in WPF Diagram
 
 A model represents data for an application and contains the logic for adding, accessing, and manipulating the data. Nodes and connectors are added to the Diagram control using the Model property. A predefined layout can be applied using the LayoutType property of the DiagramModel. The position of the nodes can be manually specified.
 
