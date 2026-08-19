@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in WPF Diagram Control | Syncfusion
-description: Learn here all about Serialization support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Serialization in WPF Diagram | Syncfusion®
+description: Learn about serialization in the Syncfusion® WPF Diagram, including saving and loading diagrams, XAML serialization, streams, and localization.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Serialization in WPF Diagram (classic)
+# Serialization in WPF Diagram
 
 Serialization is the process of saving and retrieving the Essential Diagram file. Essential Diagram WPF supports saving the diagram page as an XAML file. The page and all its properties get saved. On loading, the page gets loaded in the current view with all its nodes and connections. This load and save feature allows you to save their diagram page for future use. You can continue working on their page by loading the appropriate XAML file.
 

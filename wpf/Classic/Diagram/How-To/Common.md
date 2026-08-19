@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Common in WPF Diagram (classic) Control | Syncfusion
-description: Learn here all about Common support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Common Support in WPF Diagram | Syncfusion®
+description: Learn common WPF Diagram tasks in Syncfusion®, including layout refresh, custom node content, shape customization, port restrictions, and interactions.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
 
-# Common in WPF Diagram (classic)
+# Common Support in WPF Diagram
 
 This section comprises an assembled list of questions and answers to provide expert solutions on product and its usage. It contains the following:
 

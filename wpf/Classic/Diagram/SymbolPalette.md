@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SymbolPalette in WPF Diagram Control | Syncfusion
-description: Learn here all about SymbolPalette support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: SymbolPalette in WPF Diagram | Syncfusion®
+description: Learn about the SymbolPalette in the Syncfusion® WPF Diagram, including symbol groups, filters, custom symbols, serialization, and customization.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# SymbolPalette in WPF Diagram (classic)
+# SymbolPalette in WPF Diagram
 
 The SymbolPalette control displays node shapes and allows you to drag and drop symbols onto diagrams. It supports grouping and filtering symbols. It allows you to classify items as groups so they can be navigated easily. Also, custom shapes can be added to the SymbolPalette.
 
