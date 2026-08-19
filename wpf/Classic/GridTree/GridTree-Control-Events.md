@@ -3,7 +3,7 @@ layout: post
 title: Events in WPF GridTreeControl | Syncfusion® 
 description: Learn about the events available in Syncfusion® WPF GridTreeControl, including data loading, node expansion, image loading, and event handling features.
 platform: wpf
-control: GridTree
+control: GridTreeControl
 documentation: ug
 ---
 

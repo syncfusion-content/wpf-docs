@@ -3,7 +3,7 @@ layout: post
 title: Architecture in WPF GridTreeControl | Syncfusion®
 description: Learn about the architecture of Syncfusion® WPF GridTreeControl , including its core components, node structure, and underlying grid functionality.
 platform: wpf
-control: GridTree 
+control: GridTreeControl 
 documentation: ug
 ---
 

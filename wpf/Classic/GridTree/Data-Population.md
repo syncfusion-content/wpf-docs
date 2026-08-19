@@ -3,7 +3,7 @@ layout: post
 title: Data Population in WPF GridTreeControl | Syncfusion®
 description: Learn how data is populated in Syncfusion® WPF GridTreeControl, including loading hierarchical data, managing child nodes, and configuring column display.
 platform: wpf
-control: GridTree 
+control: GridTreeControl 
 documentation: ug
 ---
 

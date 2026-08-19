@@ -3,7 +3,7 @@ layout: post
 title: GridTreeNode Objects in WPF GridTreeControl | Syncfusion®
 description: Learn about GridTreeNode objects in Syncfusion® WPF GridTreeControl , including node hierarchy, selection, expansion, navigation, and data management features.
 platform: wpf
-control: GridTree 
+control: GridTreeControl 
 documentation: ug
 ---
 
