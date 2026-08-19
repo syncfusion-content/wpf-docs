@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Apply Formatting for Measure and Value Elements | Syncfusion
-description: Section helps to know how to apply formatting for the measure and value elements in olap grid. | Syncfusion
+title: Formatting for measure and value elements in OLAP Grid | Syncfusion®
+description: Apply formatting for measure and value elements in Syncfusion® WPF OLAP Grid control using the supported format types and the Format property.
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-# Apply Formatting for Measure and Value Elements
+# How to apply formatting for measure and value element in WPF OLAP Grid
 
 The values of measure and value element can be formatted by using the `Format` property of corresponding elements. The following are the format types supported by measure and value elements:
 
@@ -27,7 +27,7 @@ The values of measure and value element can be formatted by using the `Format` p
 * Custom
 * None
 
-N> To read the [DisplayMeasuresInDesiredOrder](https://help.syncfusion.com/wpf/olap-grid/how-to/display-measures-and-kpis-in-desired-order) section of the documentation for adding the value elements.
+N> To read the [Display Measures](https://help.syncfusion.com/wpf/olap-grid/how-to/display-measures-and-kpis-in-desired-order) section of the documentation for adding the value elements.
 
 ## Percent format
 
