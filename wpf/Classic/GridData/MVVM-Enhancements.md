@@ -1,12 +1,12 @@
 ---
 layout: post
-title: MVVM-Enhancements in WPF Wizard Control control | Syncfusion
-description: Learn here all about MVVM-Enhancements support in Syncfusion WPF GridDataControl (Classic) control and more.
+title: MVVM Enhancements in WPF GridDataControl | Syncfusion®
+description: MVVM Enhancements in GridDataControl provide command-based event handling, custom parameters, and View-ViewModel communication support.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# MVVM-Enhancements in WPF GridDataControl (Classic)
+# MVVM Enhancements in WPF GridDataControl
 
 ## View – View Model Communication
 

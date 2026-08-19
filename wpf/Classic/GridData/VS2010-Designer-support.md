@@ -1,13 +1,13 @@
 ---
 layout: post
-title: VS2010-Designer-support in WPF GridData Control | Syncfusion
-description: Learn here all about VS2010-Designer-support in Syncfusion WPF GridDataControl (Classic) control, its elements and more.
+title: VS2010 Designer Support in WPF GridDataControl | Syncfusion®
+description: VS2010 Designer Support in GridDataControl provides design-time configuration of grid, row, column, and cell properties through the Visual Studio designer.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
 
-# VS2010-Designer-support in WPF GridDataControl (Classic)
+# VS2010 Designer Support in WPF GridDataControl
 
 GridDataControl provides rich design time experience by associating a designer. This allows the users to modify the various grid settings to change the look and feel of the grid.
 
