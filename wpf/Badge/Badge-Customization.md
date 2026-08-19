@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in WPF Badge | Syncfusion®
-description: Customize the appearance of the Syncfusion WPF Badge control with custom shapes, predefined colors, and template options.
+title: Customization in WPF SfBadge | Syncfusion®
+description: Customize the appearance of the Syncfusion WPF SfBadge control with custom shapes, predefined colors, and template options.
 platform: wpf
 control: SfBadge
 documentation: ug
 ---
 
-# Customization in WPF Badge
+# Customization in WPF SfBadge
 
 This section explains the customization features available in the WPF [Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control.
 

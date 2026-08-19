@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Performance in WPF Wizard Control control | Syncfusion
-description: Learn here all about Performance support in Syncfusion WPF GridDataControl (Classic) control and more.
+title: Performance in WPF GridDataControl | Syncfusion®
+description: Performance in GridDataControl supports high-frequency data updates, virtual mode, and PLINQ-based operations for large datasets.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
-# Performance in WPF GridDataControl (Classic)
+# Performance in WPF GridDataControl
 
 Essential Grid has a high performance standard, where you can make the grid to work with large amounts of data with few property settings, without a performance hit. It provides complete support for Virtual Mode, where the data is loaded only on demand and thus saves the memory consumption and provides quick response. It also handles very high frequency updates and refresh scenarios. The following topic discusses this:
 

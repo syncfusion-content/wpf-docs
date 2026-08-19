@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Check Items in WPF CheckedListBox | Syncfusion®
-description: Select or clear individual items in the Syncfusion WPF CheckedListBox control with built-in check box support and flexible item interactions.
+title: Check Items in WPF CheckListBox | Syncfusion®
+description: Select or clear individual items in the Syncfusion WPF CheckListBox control with built-in check box support and flexible item interactions.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Check Items in WPF CheckedListBox
+# Check Items in WPF CheckListBox
 
 In [CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox), items present in the control can be checked or unchecked either by using any one of the following ways:
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Restrict Resizing of Row Header in WPF Pivot Grid control | Syncfusion®
-description: Learn about Restrict Resizing of Row Header support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Restrict Resizing of Row Header in WPF Pivot Grid | Syncfusion®
+description: Restrict Resizing of Row Header in the Syncfusion® WPF Pivot Grid control prevents row headers from stretching when multiple PivotCalculation items are added.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

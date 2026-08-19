@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Events in WPF GridData Control | Syncfusion
-description: Learn here all about Events support in Syncfusion WPF GridDataControl (Classic) control, its elements and more details.
+title: Events in WPF GridDataControl | Syncfusion®
+description: Events in GridDataControl handle user interactions, cell editing, mouse actions, and row validation within the grid.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
-# Events in WPF GridDataControl (Classic)
+# Events in WPF GridDataControl
 
 The GridData control declares a number of events that it can handle, in response to the activities either by the end user or by the system. An event is a message that is handled, to notify an object or a class of the occurrence of an action. When an event is handled, all the event handlers are notified.
 

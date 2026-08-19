@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Badge | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF Badge control, its elements, and additional details.
+title: Getting Started with WPF SfBadge | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF SfBadge control, its elements, and additional details.
 platform: wpf
 control: SfBadge
 documentation: ug
 ---
 
-# Getting Started with WPF Badge
+# Getting Started with WPF SfBadge
 
 This section explains the steps required to add the [Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control and its elements such as shapes, alignment and predefined colors. This section covers only basic features needed to get started with Syncfusion `Badge` control.
 

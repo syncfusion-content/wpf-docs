@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Localization in WPF Pivot Grid control | Syncfusion®
-description: Learn about Localization support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Localization in WPF Pivot Grid | Syncfusion®
+description: Apply localization in the Syncfusion® WPF Pivot Grid control to display culture-specific text, formats for globalized applications.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

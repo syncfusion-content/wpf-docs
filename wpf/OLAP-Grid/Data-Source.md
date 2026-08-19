@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Source in WPF Olap Grid control | Syncfusion®
-description: Learn about Data Source support in Syncfusion® Essential Studio® WPF Olap Grid control, its elements and more details.
+title: Data Source in WPF OLAP Grid | Syncfusion®
+description: The data source support in OLAP Grid enables binding the grid to offline cubes and other OLAP data sources for multidimensional analysis.
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-# Data Source in WPF Olap Grid
+# Data Source in WPF OLAP Grid
 
 ## Binding OLAP grid to offline cube
 

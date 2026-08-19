@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styling and formatting using MDX query | OLAP Grid | Syncfusion
-description: Section helps to know how to apply styling and formatting to grid cells using MDX query in OLAP Grid control | Syncfusion
+title: Styling and formatting using MDX query in WPF OLAP Grid | Syncfusion®
+description: Style and format grid cells using MDX query in Syncfusion® WPF OLAP Grid control with supported cell properties for multidimensional data sources.
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-# Styling and formatting using MDX query
+# How to style and format grid cells using MDX query in WPF OLAP Grid
 
 In OlapGrid, grid cells can be formatted and styled by using **Cell Properties** in MDX (Multidimensional Expressions). Cell Properties contains information about the content and format of cells in a multidimensional data source, such as OLAP cube. Following cell properties are supported for styling and formatting the grid cell values.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Popup customization in WPF Multi Column Dropdown control | Syncfusion®
-description: Learn here all about Popup customization support in Syncfusion® WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
+title: Popup customization in WPF MultiColumn Dropdown | Syncfusion®
+description: Popup customization in Syncfusion® WPF MultiColumn Dropdown lets users style popup background, borders, size, enable resizing, auto sizing, and manage events.
 platform: wpf
-control: SfMultiColumnDropDownControl
+control: MultiColumn Dropdown
 documentation: ug
 ---
 
-# Popup customization in WPF Multi Column Dropdown
+# Popup customization in WPF MultiColumn Dropdown
 SfMultiColumnDropDownControl allows you to customize the Popup appearance by setting [PopupBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBackground), [PopupBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBorderBrush), [PopupDropDownGridBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupDropDownGridBackground) and [PopupBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBorderThickness) properties.
 
 {% tabs %}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Spin Button Alignment in WPF Domain Updown | Syncfusion®
-description: Configure the alignment of the spin buttons in the Syncfusion WPF Domain Updown (SfDomainUpDown) control to match your application layout.
+title: Spin Button Alignment in WPF SfDomainUpdown | Syncfusion®
+description: Configure the alignment of the spin buttons in the Syncfusion WPF SfDomainUpDown control to match your application layout.
 platform: wpf
 control: DomainUpDown
 documentation: ug
 ---
 
-# Spin Button Alignment in WPF Domain Updown
+# Spin Button Alignment in WPF SfDomainUpdown
 
 The spin button’s position in the DomainUpDown control can be changed using SpinButtonsAlignment. It contains three modes for positioning spin buttons:
 

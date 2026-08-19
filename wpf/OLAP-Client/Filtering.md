@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in WPF Olap Client control | Syncfusion®
-description: Learn about Filtering support in Syncfusion® Essential Studio® WPF Olap Client control, its elements and more details.
+title: Filtering in WPF OLAP Client | Syncfusion®
+description: The filtering support in OLAP Client filters multidimensional data by member and by value using custom filter conditions on rows and columns.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Filtering in WPF Olap Client
+# Filtering in WPF OLAP Client
 
 ## Filtering by member
 

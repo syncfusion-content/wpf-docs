@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® WPF NumericUpdown Control | Syncfusion®
-description: Learn about introduction of Syncfusion Essential Studio WPF NumericUpdown control, its features and more details.
+title: About Syncfusion® WPF UpDown Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF UpDown control, its features and more details.
 platform: wpf
 control: UpDown
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# About Syncfusion® WPF NumericUpdown Control
+# About Syncfusion® WPF UpDown Control
 
 The WPF [Updown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control displays numeric values. The value can be edited by scrolling the values and by using the Increment and Decrement buttons of the UpDown control. It allows to define maximum and minimum values to which the user can increment/decrement the input’s value. Also can specify the interval, that will be applied to the value upon each increase/decrease.
 

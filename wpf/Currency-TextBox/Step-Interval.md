@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Step Interval in WPF Currency TextBox | Syncfusion®
-description: Define the increment or decrement step used by the Syncfusion WPF Currency TextBox control when changing the value with spinner or keys.
+title: Step Interval in WPF CurrencyTextBox | Syncfusion®
+description: Define the increment or decrement step used by the Syncfusion WPF CurrencyTextBox control when changing the value with spinner or keys.
 platform: wpf
 control: CurrencyTextBox 
 documentation: ug
 ---
 
-# Step Interval in WPF Currency TextBox
+# Step Interval in WPF CurrencyTextBox
 
 The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control allows you to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_ScrollInterval) property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 

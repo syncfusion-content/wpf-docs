@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Keyboard Support| SfMultiColumnDropDownControl | Wpf | Syncfusion®
-description: Keyboard support in Syncfusion® WPF MultiColumnDropDown (SfMultiColumnDropDown) control, its elements and more.
+title: Keyboard Support in WPF MultiColumn Dropdown | Syncfusion®
+description: Keyboard support in Syncfusion® WPF MultiColumn Dropdown provides shortcuts to select items, toggle popup, and manage navigation efficiently.
 platform: wpf
-control: SfMultiColumnDropDownControl
+control: MultiColumn Dropdown
 documentation: ug
 ---
 
-# Keyboard Support in WPF MultiColumnDropDown
+# Keyboard Support in WPF MultiColumn Dropdown
 
 The following table lists the keyboard shortcuts supported by the MultiColumnDropDown control.
 
-### List of Keyboard Shortcut
+## List of Keyboard Shortcut
 
 <table>
 <tr>

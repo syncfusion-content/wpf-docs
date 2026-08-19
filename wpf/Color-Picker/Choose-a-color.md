@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Select Solid Color in WPF Color Picker | Syncfusion®
-description: Select a solid color in the Syncfusion WPF Color Picker (ColorPicker) control from standard, theme, and custom color palettes.
+title: Select Solid Color in WPF ColorPicker | Syncfusion®
+description: Select a solid color in the Syncfusion WPF ColorPicker control from standard, theme, and custom color palettes.
 platform: wpf
 control: ColorPicker
 documentation: ug
 ---
 
-# Select Solid Color in WPF Color Picker
+# Select Solid Color in WPF ColorPicker
 
 This section explains how to select a solid color from different color models, how to modify their individual properties and also gives brief information about eye dropper, standard colors.
 
