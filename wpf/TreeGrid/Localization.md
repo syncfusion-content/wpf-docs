@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in WPF SfTreeGrid | Syncfusion®
-description: Learn about Localization in the Syncfusion® WPF SfTreeGrid control. Customize culture, language, and resources for global applications.
+description: Localization in SfTreeGrid customizes grid content to support multiple languages and regional settings for global usability.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

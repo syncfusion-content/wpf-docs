@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Sorting in WPF SfTreeGrid | Syncfusion®
-description: Learn about Sorting in the Syncfusion® WPF SfTreeGrid control. Organize records by columns with ascending, descending, and custom sort options.
+description: Sorting in SfTreeGrid provides single and multi-column sorting, custom sorting, programmatic sorting, and sorting event support for efficient data organization.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -198,7 +198,7 @@ You can implement [ISortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion
 
 Follow the below steps to add custom comparer to sort using custom logic,
 
-#### Define custom comparer with custom sort logic
+### Define custom comparer with custom sort logic
 
 In the below code snippet, `FirstName` property is compared based on its string length, instead of default string comparison. 
  

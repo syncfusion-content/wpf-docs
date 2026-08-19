@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types in WPF SfTreeGrid | Syncfusion®
-description: Learn about Column Types in the Syncfusion® WPF SfTreeGrid control. Explore available column types, customization options, and usage details.
+description: Column Types in SfTreeGrid provides built-in and custom column types to display, edit, format, and customize data effectively.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

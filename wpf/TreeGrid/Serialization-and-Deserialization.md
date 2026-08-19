@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization in WPF SfTreeGrid | Syncfusion®
-description: Learn about Serialization and Deserialization in the Syncfusion® WPF SfTreeGrid control. Save and restore grid state.
+description: Serialization in SfTreeGrid enables saving and restoring grid state with options to customize sorting, filtering, columns, and headers.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

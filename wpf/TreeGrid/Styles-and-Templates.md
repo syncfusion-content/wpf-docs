@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles and Templates in WPF SfTreeGrid | Syncfusion®
-description: Learn about Styles and Templates in the Syncfusion® WPF SfTreeGrid control. Customize appearance and layout with flexible styling options.
+description: Styles and Templates in SfTreeGrid provide flexible customization of headers, cells, and rows using styles, control templates, and triggers.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

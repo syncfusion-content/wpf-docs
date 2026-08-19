@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Filtering in WPF SfTreeGrid | Syncfusion®
-description: Learn about Filtering in the Syncfusion® WPF SfTreeGrid control. Apply filter conditions to display relevant data quickly and efficiently.
+description: Filter SfTreeGrid records using built-in filter predicates, UI options, and advanced filter conditions for relevant data.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

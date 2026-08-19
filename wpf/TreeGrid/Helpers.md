@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Helpers in WPF SfTreeGrid | Syncfusion®
-description: Learn about Helpers in the Syncfusion® WPF SfTreeGrid control. Use helper classes and methods to simplify customization and data handling.
+description: Helpers in SfTreeGrid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

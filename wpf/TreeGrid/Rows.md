@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Rows in WPF SfTreeGrid | Syncfusion®
-description: Learn about Rows in the Syncfusion® WPF SfTreeGrid control. Customize row appearance and manage data presentation effectively.
+description: Rows in SfTreeGrid include headers, unbound, and data rows with customizable styles, indicators, and flexible layouts.
 
 platform: wpf
 control: SfTreeGrid

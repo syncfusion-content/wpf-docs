@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Editing in WPF SfTreeGrid | Syncfusion®
-description: Learn about Editing in the Syncfusion® WPF SfTreeGrid control. Enable, customize, and manage editing features for efficient data updates.
+description: Enable cell editing in SfTreeGrid with support for custom editors, edit modes, and validation during data updates.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load On Demand in WPF SfTreeGrid | Syncfusion®
-description: Learn about Load On Demand in the Syncfusion® WPF SfTreeGrid control. Load records dynamically to improve performance and memory usage.
+description: Load SfTreeGrid child nodes on demand to improve performance when working with large hierarchical data sources.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
