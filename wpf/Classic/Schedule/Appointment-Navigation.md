@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appointment-Navigation in WPF Wizard Control control | Syncfusion
-description: Learn here all about Appointment-Navigation support in Syncfusion WPF Schedule (Classic) control and more.
+title: Appointment Navigation in WPF Schedule (Classic) | Syncfusion
+description: Learn how Appointment Navigation in WPF Schedule (Classic) lets users move between previous and next appointments from the current view.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Appointment-Navigation in WPF Schedule (Classic)
+# Appointment Navigation in WPF Schedule (Classic)
 
 When there is no appointment in the current view, we can navigate to view the previous appointment or next appointment from the current view. This can be enabled or disabled using the property ShowNavigationTap. The default value of ShowNavigationTap property is False.  
 {% tabs %}

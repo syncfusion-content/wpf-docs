@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dropdown Popup in WPF DateTimePicker control | Syncfusion
-description: Learn here all about Dropdown Popup support in Syncfusion WPF DateTimePicker (DateTimeEdit) control and more.
+title: Dropdown Popup in WPF DateTimePicker | Syncfusion
+description: Learn how to customize and use the dropdown popup with calendar and clock in WPF DateTimePicker control.
 platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---
 
-# Dropdown Popup in WPF DateTimePicker (DateTimeEdit)
+# Dropdown Popup in WPF DateTimePicker
 
 You can display the dropdown popup by clicking the dropdown button. You can select the datetime by using the dropdown popup calendar and clock. The dropdown pop-up in [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) controls contains the following parts:
 

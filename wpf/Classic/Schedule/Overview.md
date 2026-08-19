@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF SfSchedule Control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: About Syncfusion WPF Schedule (Classic) Control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio WPF Schedule (Classic) control and more details.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# WPF Schedule (Classic) Overview
+# About Syncfusion WPF Schedule (Classic) Control
 
 ## Introduction
 
