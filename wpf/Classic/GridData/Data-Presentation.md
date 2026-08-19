@@ -3,7 +3,7 @@ layout: post
 title: Data Presentation in WPF GridDataControl | Syncfusion®
 description: Data Presentation in GridDataControl enables grouping, sorting, filtering, summaries, hierarchy, stacked headers, and tooltips for user display.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 # Data Presentation in WPF GridDataControl

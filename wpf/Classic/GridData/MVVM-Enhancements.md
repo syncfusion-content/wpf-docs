@@ -3,7 +3,7 @@ layout: post
 title: MVVM Enhancements in WPF GridDataControl | Syncfusion®
 description: MVVM Enhancements in GridDataControl provide command-based event handling, custom parameters, and View-ViewModel communication support.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 # MVVM Enhancements in WPF GridDataControl

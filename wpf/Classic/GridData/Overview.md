@@ -4,7 +4,7 @@ title: About Syncfusion WPF GridDataControl | Syncfusion®
 canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
 description: Learn about introduction of Syncfusion® Essential Studio WPF GridDataControl and exploring its features.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 
