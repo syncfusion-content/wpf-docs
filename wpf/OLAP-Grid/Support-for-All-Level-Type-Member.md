@@ -1,13 +1,13 @@
 ---
 layout: post
-title: All-Level Type Member in WPF OlapGrid control | Syncfusion®
-description: Learn about All-Level Type Member support in Syncfusion® WPF OlapGrid control, its elements and more details
+title: All-Level Type Member in WPF OLAP Grid control | Syncfusion®
+description: Learn about All-Level Type Member support in Syncfusion® WPF OLAP Grid control, its elements and more details
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-#  All-Level Type Member in WPF OlapGrid control
+#  All-Level Type Member in WPF OLAP Grid control
 
 This feature enables you to display the “All” level type member across the rows and columns in the OLAP grid. This member behaves as parent to other members in its hierarchy by controlling their visibility through an expander.
 

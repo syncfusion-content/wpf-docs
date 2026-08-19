@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill Position in WPF OlapGrid | Syncfusion®
-description: The drill position support in OlapGrid allows drilling only current position of selected member while excluding drilled data of that member in other positions.
+title: Drill Position in WPF OLAP Grid | Syncfusion®
+description: The drill position support in OLAP Grid allows drilling only current position of selected member while excluding drilled data of that member in other positions.
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-#  Drill Position in WPF OlapGrid
+#  Drill Position in WPF OLAP Grid
 
 Drill position allows users to drill only the current position of the selected member and exclude the drilled data of selected member in other positions by using the MDX query. This can be enabled by setting the **"DrillType"** enumeration to **"DrillPosition"** in the OLAP report.
 
