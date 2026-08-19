@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appointments in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Appointments support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Appointments in WPF Schedule (Classic) | Syncfusion
+description: Learn how Appointments in WPF Schedule (Classic) display schedule details such as StartTime, EndTime, and Subject, and support data binding.
 platform: wpf
 control: SfSchedule
 documentation: ug

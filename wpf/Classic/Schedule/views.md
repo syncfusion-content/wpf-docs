@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Views in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Views support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Views in WPF Schedule (Classic) | Syncfusion
+description: Learn how Views in WPF Schedule (Classic) support day, week, workweek, timeline, and month views with customizable settings.
 platform: wpf
 control: SfSchedule
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resources in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Resources support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Resources in WPF Schedule (Classic) | Syncfusion
+description: Learn how Resources in WPF Schedule (Classic) let you define and assign resources to appointments and group them accordingly.
 platform: wpf
 control: SfSchedule
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reminder in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Reminder support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Reminder in WPF Schedule (Classic) | Syncfusion
+description: Learn how Reminder in WPF Schedule (Classic) alerts users for appointments with a reminder window that supports dismiss, dismiss all, and snooze.
 platform: wpf
 control: SfSchedule
 documentation: ug

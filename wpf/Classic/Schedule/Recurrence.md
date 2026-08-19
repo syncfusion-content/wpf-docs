@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Recurrence in WPF SfSchedule Control | Syncfusion
-description: Learn here all about Recurrence support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
+title: Recurrence in WPF Schedule (Classic) | Syncfusion
+description: Learn how Recurrence in WPF Schedule (Classic) generates recurring appointments on a daily, weekly, monthly, or yearly interval.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Recurrence Appointment
+# Recurrence in WPF Schedule (Classic)
 Recurring appointments can generate on a daily, weekly, monthly, or yearly interval. By setting [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_RecurrenceRule) and activating the [IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_IsRecursive) property in Schedule appointment which will build recurring appointments.
 
 ## Recurrence Rule
