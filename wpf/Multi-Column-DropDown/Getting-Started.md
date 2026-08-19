@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Multi Column Dropdown | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF Multi Column Dropdown control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF MultiColumn Dropdown | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF MultiColumn Dropdown control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: SfMultiColumnDropDownControl
+control: MultiColumn Dropdown
 documentation: ug
 ---
 
-# Getting Started with WPF Multi Column Dropdown
+# Getting Started with WPF MultiColumn Dropdown
 SfMultiColumnDropDownControl displays multiple columns in dropdown by embedding SfDataGrid control for rich look up selection.
 
 Features,
