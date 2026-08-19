@@ -2547,7 +2547,7 @@ NA</td></tr>
 
 
 
-#### Applying Style for CustomPathStyle
+### Applying Style for CustomPathStyle
 
 Appearance of the LineConnector can be customized by applying style for the CustomPathStyle property. Style can be applied for CustomPathStyle as illustrated in the following code:
 
@@ -2632,7 +2632,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-#### DecoratorStyle
+### DecoratorStyle
 
 The decorator shapes used for the connector can be customized by specifying the property values under the DecoratorStyle property. To change the decorator style, the HeadDecoratorStyle and TailDecoratorStyle properties can be used. 
 
@@ -2695,7 +2695,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-### First Segment Orientation 
+## First Segment Orientation 
 
 This feature enables you to orient the FirstSegment of the Orthogonal LineConnector as needed. 
 

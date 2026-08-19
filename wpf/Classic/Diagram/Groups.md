@@ -1026,7 +1026,7 @@ diagramModel.Layers.Add(Lan1)
 
 ## Hidden or Active Layer
 
-#### Active Layer
+### Active Layer
 
 When a new Node or LineConnector is dropped from SymbolPalette into the DiagramPage, it will be added into all the active layers automatically. A layer can be activated or deactivated as shown in following code snippet.
 
