@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node CheckBox in WPF SfTreeGrid | Syncfusion®
-description: Enable check boxes in SfTreeGrid nodes for hierarchical selection with parent, child, and independent check modes.
+description: Node CheckBox in WPF SfTreeGrid adds checkboxes to nodes for selection, tri-state, and recursive checking.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
