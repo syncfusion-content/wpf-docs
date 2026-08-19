@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Sizing in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Column Sizing support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
+title: Column Sizing in WPF SfTreeGrid | Syncfusion®
+description: Column Sizing in SfTreeGrid adjusts column widths automatically or manually using the ColumnSizer property.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Column Sizing in WPF TreeGrid (SfTreeGrid)
+# Column Sizing in WPF SfTreeGrid 
 
 SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnSizer) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnSizer) property. 
 
@@ -104,7 +104,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
 
 N> The `TreeGridColumn.ColumnSizer` takes higher priority than the `SfTreeGrid.ColumnSizer`.
 
-### Refreshing ColumnSizer at runtime
+## Refreshing ColumnSizer at runtime
 
 You can refresh the `ColumnSizer` at runtime by calling [SfTreeGrid.TreeGridColumnSizer.Refresh](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumnSizer_Refresh) method.
 SfTreeGrid support to recalculates the column auto width by calling reset methods of `TreeGridColumnSizer`. [TreeGridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [TreeGridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grid_GridColumnBase_) method reset the width to particular column.
