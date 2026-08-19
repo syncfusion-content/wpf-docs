@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WPF Wizard Control control | Syncfusion
-description: Learn here all about Interactive Features support in Syncfusion WPF GridTreeControl (Classic) control and more.
+title: Interactive Features in WPF GridTreeControl | Syncfusion®
+description: Learn about interactive features in Syncfusion® WPF GridTreeControl , including selection, sorting, column sizing, styling, customization, and serialization.
 platform: wpf
-control: GridTree 
+control: GridTreeControl 
 documentation: ug
 ---
 
-# Interactive Features in WPF GridTreeControl (Classic)
+# Interactive Features in WPF GridTreeControl 
 
 This section elaborates on the following run time interactive features:
 

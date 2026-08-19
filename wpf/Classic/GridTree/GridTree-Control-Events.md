@@ -1,13 +1,13 @@
 ---
 layout: post
-title: GridTree Control Events in WPF Wizard Control control | Syncfusion
-description: Learn here all about GridTree Control Events support in Syncfusion WPF GridTreeControl (Classic) control and more.
+title: Events in WPF GridTreeControl | Syncfusion® 
+description: Learn about the events available in Syncfusion® WPF GridTreeControl, including data loading, node expansion, image loading, and event handling features.
 platform: wpf
-control: GridTree
+control: GridTreeControl
 documentation: ug
 ---
 
-# GridTree Control Events in WPF GridTreeControl (Classic)
+# GridTree Control Events in WPF GridTreeControl 
 
 Here is the list of events exposed in GridTree control. Additionally, you have access to all the GridControl events exposed on the GridTreeControl.InternalGrid.
 
