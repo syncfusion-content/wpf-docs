@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using CalendarEdit Object in WPF Calendar control | Syncfusion®
-description: Learn here all about Using CalendarEdit Object support in Syncfusion® WPF Calendar (CalendarEdit) control and more.
+title: Using CalendarEdit Object in WPF Calendar | Syncfusion
+description: Learn how to work with CalendarEdit object in WPF Calendar control to access and manipulate calendar features.
 platform: wpf
 control: CalendarEdit
 documentation: ug
 ---
 
-# Using CalendarEdit Object in WPF Calendar (CalendarEdit)
+# Using CalendarEdit Object in WPF Calendar
 
 You can get the object of the CalendarEdit control by using the Calendar property. When you want to see the content after calling the methods, you can store the date in one variable to display or use a MessageBox. The description of each calendar option and code is described as follows.
 

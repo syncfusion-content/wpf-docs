@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF DateTimePicker control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF DateTimePicker (DateTimeEdit) control, its elements and more.
+title: Getting Started with WPF DateTimePicker | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF DateTimePicker control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---
 
-# Getting Started with WPF DateTimePicker (DateTimeEdit)
+# Getting Started with WPF DateTimePicker
 
 This section provides a quick overview of working with the WPF [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html).
 

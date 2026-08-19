@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF DateTimePicker control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF DateTimePicker (DateTimeEdit) control, its elements and more.
+title: About Syncfusion® WPF DateTimePicker Control | Syncfusion
+description: Learn about introduction of Syncfusion® Essential Studio WPF DateTimePicker control, its key features, date and time selection functionality, and more details.
 platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---
 
-# WPF DateTimePicker (DateTimeEdit) Overview
+# About Syncfusion® WPF DateTimePicker Control
 
 The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) allows you to quickly navigate and select dates using months, years, and decades of calendar. The `DateTimeEdit` comprises text box and a dropdown with calendar and clock to pick or edit a date with time. It supports data binding, null value, maximum and minimum dates, date validation, watermark, culture and much more. It also provides flexible options for displaying the date-time according to the format required, as well as many customization options to enhance its appearance.
 
