@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in WPF Olap Grid control | Syncfusion®
-description: Learn about Localization support in Syncfusion® WPF Olap Grid control, its elements and more details.
+title: Localization in WPF OLAP Grid | Syncfusion®
+description: The localization support in OLAP Grid allows you to localize the control to a specific locale using resx-based localization for a global audience.
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-# Localization in WPF Olap Grid
+# Localization in WPF OLAP Grid
 
 Localization is the key feature for providing software solutions targeted at global users. The OLAP grid allows users to localize the control to a specific locale and supports "resx" based localization.
 
@@ -18,7 +18,7 @@ The following steps should be performed to localize the control:
 * Tag inclusion into the project file.
 * Specification of the CurrentUICulture.
 
-### Translation
+## Translation
 
 The first step in localization is translating the strings that can be localized to the destination locale.
 

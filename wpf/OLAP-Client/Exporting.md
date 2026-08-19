@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting in WPF Olap Client control | Syncfusion®
-description: Learn about Exporting support in Syncfusion® Essential Studio® WPF Olap Client control, its elements and more details.
+title: Exporting in WPF OLAP Client | Syncfusion®
+description: The exporting support in OLAP Client exports the current OLAP chart and grid views to PDF, Excel, Word, CSV, and image formats.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Exporting in WPF Olap Client
+# Exporting in WPF OLAP Client
 
 When creating an OLAP report in the OLAP client, the report will be visualized in the OLAP chart and OLAP grid. The OLAP client has an option to export the current view of the OLAP chart and OLAP grid to various forms.
 
