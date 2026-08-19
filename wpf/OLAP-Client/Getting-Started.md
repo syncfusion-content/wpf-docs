@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF OlapClient | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF OlapClient control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF OLAP Client | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF OLAP Client control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: OlapClient
+control: OLAP Client
 documentation: ug
 ---
 
-# Getting Started with WPF OlapClient
+# Getting Started with WPF OLAP Client
 
 
 >**Important**

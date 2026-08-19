@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging in WPF OlapClient | Syncfusion®
-description: The paging support in OlapClient splits large CellSets into segments rendered on separate pages, enabling navigation through large multidimensional data.
+title: Paging in WPF OLAP Client | Syncfusion®
+description: The paging support in OLAP Client splits large CellSets into segments rendered on separate pages, enabling navigation through large multidimensional data.
 platform: wpf
-control: OlapClient
+control: OLAP Client
 documentation: ug
 ---
 
-# Paging in WPF OlapClient
+# Paging in WPF OLAP Client
 
 Paging in the OLAP client supports you to load and render the large amount of data without any performance constraint.
 
