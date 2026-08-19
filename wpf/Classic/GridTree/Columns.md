@@ -1935,7 +1935,7 @@ TimeSpanEdit Cell Type
 
 The ImageCell type is used to load images inside the graphic cells. To load the graphic image cell in the GridTree control, you have to set the CellType as ImageCell and the CellValue as BitmapImage.
 
-#### Image CellType properties
+### Image CellType properties
 
 
 

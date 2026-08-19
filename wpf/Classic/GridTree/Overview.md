@@ -1,13 +1,13 @@
 ---
 layout: post
 title: About Syncfusion® WPF GridTreeControl Control | Syncfusion®
-description: Learn about the overview of Syncfusion® WPF GridTreeControl , including data binding, cell types, interactive features, customization, and serialization support.
+description: Learn about introduction of Syncfusion® Essential Studio WPF GridTreeControl and exploring its features.
 platform: wpf
 control: GridTreeControl 
 documentation: ug
 ---
 
-# About Syncfusion® WPF GridTreeControl Control
+# About Syncfusion® WPF GridTreeControl
 
 The grid at its core functions as a very efficient display engine for tabular data that can be customized down to the cell level. It does not make any assumptions on the structure of the data (many grid controls implemented as straight data-bound controls make such explicit assumptions). This leads to a very flexible design that can be easily adapted to a variety of tasks including the display of completely unstructured data and the display of structured data from a database. 
 
@@ -15,7 +15,7 @@ The display system also hosts a powerful and complete styles architecture. Setti
 
 With this version, our core focus has been on the underlying architecture for displaying cells with virtualized cell editors in a manner that enables good performance characteristics. The core display system also supports several building-block features such as nested grids, virtual modes, and support for a virtually unlimited number of rows and columns.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 EssentialGrid for WPF can be applied to a variety of industries such as finance, banking, software, etc. Some of its important features are:
 
