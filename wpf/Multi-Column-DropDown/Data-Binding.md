@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WPF MultiColumn Dropdown | Syncfusion®
-description: Data Binding in Syncfusion® WPF MultiColumn Dropdown lets users bind ItemsSource, DisplayMember, and ValueMember with support for complex and indexer properties.
+description: Data Binding in Syncfusion® WPF MultiColumn Dropdown lets users bind ItemsSource, DisplayMember, and ValueMember with complex and indexer property support.
 platform: wpf
 control: MultiColumn Dropdown
 documentation: ug
