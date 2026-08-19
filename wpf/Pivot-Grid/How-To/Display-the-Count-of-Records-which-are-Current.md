@@ -3,7 +3,7 @@ layout: post
 title: How to Get Count of Visible Records in WPF Pivot Grid | Syncfusion®
 description: Get the count of records currently visible in Syncfusion® WPF Pivot Grid control using the VisibleRecords property of PivotEngine.
 platform: wpf
-control: PivotGridControl
+control: Pivot Grid
 documentation: ug
 ---
 

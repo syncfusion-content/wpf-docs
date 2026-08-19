@@ -3,7 +3,7 @@ layout: post
 title: Calculated Field in WPF Pivot Grid | Syncfusion®
 description: Calculated Field in the Syncfusion® WPF Pivot Grid control lets users create custom formulas and derive new values for advanced pivot analysis.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Visibility of Grouping Bar in WPF Pivot Grid | Syncfusion®
 description: Grouping bar visibility in Syncfusion® WPF Pivot Grid to show headers in row only or in both row and column areas.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

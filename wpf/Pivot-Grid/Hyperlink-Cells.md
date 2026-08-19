@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Hyperlink Cells in WPF Pivot Grid | Syncfusion®
-description: Enable hyperlink cells in the Syncfusion® WPF Pivot Grid control to drill down into raw data records by clicking value or summary cells for detailed analysis.
+description: Hyperlink cells in the Syncfusion® WPF Pivot Grid control allow users to click value or summary cells to navigate and access raw data for detailed analysis.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

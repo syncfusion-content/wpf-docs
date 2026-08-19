@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Context Menu in WPF Pivot Grid | Syncfusion®
-description: Use the context menu in the Syncfusion® WPF Pivot Grid control to access quick actions and manage pivot table operations efficiently.
+description: Context Menu in the Syncfusion® WPF Pivot Grid control provides quick actions and manages pivot table operations efficiently.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

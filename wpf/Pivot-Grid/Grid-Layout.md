@@ -3,7 +3,7 @@ layout: post
 title: Grid Layout in WPF Pivot Grid | Syncfusion®
 description: Configure grid layout in the Syncfusion® WPF Pivot Grid control to arrange pivot items, customize structure, and improve data visualization.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

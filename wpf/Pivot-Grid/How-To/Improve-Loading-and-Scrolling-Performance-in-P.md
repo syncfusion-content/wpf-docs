@@ -3,7 +3,7 @@ layout: post
 title: How to Improve Performance in WPF Pivot Grid | Syncfusion®
 description: Improve loading and scrolling performance in Syncfusion® WPF Pivot Grid control by enabling on-demand calculations and disabling auto-sizing.
 platform: wpf
-control: PivotGridControl
+control: Pivot Grid
 documentation: ug
 ---
 

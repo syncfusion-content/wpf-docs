@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Grouping Bar in WPF Pivot Grid | Syncfusion®
-description: Use the grouping bar in the Syncfusion® WPF Pivot Grid control to drag, drop, and arrange fields interactively for customizing pivot table layout and analysis.
+description: Grouping bar in the Syncfusion® WPF Pivot Grid control provides quick actions to drag, drop, and arrange fields for customizing pivot table layout.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

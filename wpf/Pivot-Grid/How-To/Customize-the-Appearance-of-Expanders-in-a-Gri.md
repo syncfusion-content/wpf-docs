@@ -3,7 +3,7 @@ layout: post
 title: How to Customize Expanders Appearance in WPF Pivot Grid | Syncfusion®
 description: Customize the appearance of expanders in Syncfusion® WPF Pivot Grid control using custom styles and templates for styling and binding.
 platform: wpf
-control: PivotGridControl
+control: Pivot Grid
 documentation: ug
 ---
 

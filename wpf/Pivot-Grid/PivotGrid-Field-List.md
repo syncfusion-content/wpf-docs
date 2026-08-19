@@ -3,7 +3,7 @@ layout: post
 title: PivotGrid Field List in WPF Pivot Grid | Syncfusion®
 description: Manage fields using the PivotGrid Field List in the Syncfusion® WPF Pivot Grid control to customize layouts and configure pivot analysis.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

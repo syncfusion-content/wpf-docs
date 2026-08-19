@@ -3,7 +3,7 @@ layout: post
 title: Formatting using data conditions in WPF Pivot Grid | Syncfusion®
 description: Apply conditional formatting in the Syncfusion® WPF Pivot Grid control to highlight cells based on data values for better analysis.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

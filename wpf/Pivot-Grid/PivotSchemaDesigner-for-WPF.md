@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion WPF PivotSchemaDesigner Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio WPF PivotSchemaDesigner control and more details.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

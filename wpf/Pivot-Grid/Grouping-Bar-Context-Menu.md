@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Grouping Bar Context Menu in WPF Pivot Grid | Syncfusion®
-description: Use the grouping bar context menu in the Syncfusion® WPF Pivot Grid control to manage fields with options for flexible pivot table customization.
+description: Grouping bar context menu in the Syncfusion® WPF Pivot Grid control provides quick actions to manage fields and customize pivot tables efficiently.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Serialization and Deserialization in WPF Pivot Grid | Syncfusion®
 description: Serialization and Deserialization in the Syncfusion® WPF Pivot Grid control saves and restores pivot settings and layouts easily.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

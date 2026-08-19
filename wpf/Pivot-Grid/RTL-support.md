@@ -3,7 +3,7 @@ layout: post
 title: RTL Support in WPF Pivot Grid | Syncfusion®
 description: RTL Support in the Syncfusion® WPF Pivot Grid control enables right-to-left text flow for languages like Arabic and Hebrew, improving localization.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

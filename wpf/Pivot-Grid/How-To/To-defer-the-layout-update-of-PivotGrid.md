@@ -3,7 +3,7 @@ layout: post
 title: How to Set Defer Layout Update in WPF Pivot Grid | Syncfusion®
 description: Set defer layout update in Syncfusion® WPF Pivot Grid control by enabling the DeferLayoutUpdate property.
 platform: wpf
-control: PivotGridControl
+control: Pivot Grid
 documentation: ug
 ---
 

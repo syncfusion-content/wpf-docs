@@ -3,7 +3,7 @@ layout: post
 title: Editing in WPF Pivot Grid | Syncfusion®
 description: Enable editing in the Syncfusion® WPF Pivot Grid control to modify cell values directly and update pivot table data at runtime.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

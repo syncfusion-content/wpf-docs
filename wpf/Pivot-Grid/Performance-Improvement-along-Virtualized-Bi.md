@@ -3,7 +3,7 @@ layout: post
 title: Virtualized Binding in WPF Pivot Grid | Syncfusion®
 description: Improve performance in the Syncfusion® WPF Pivot Grid control with virtualized binding to efficiently handle large datasets and optimize memory usage.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Printing in WPF Pivot Grid | Syncfusion®
 description: Printing in the Syncfusion® WPF Pivot Grid control allows users to export and print pivot reports with customized layouts and formatting options.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

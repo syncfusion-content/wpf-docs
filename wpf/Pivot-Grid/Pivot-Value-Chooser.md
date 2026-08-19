@@ -3,7 +3,7 @@ layout: post
 title: Pivot Value Chooser in WPF Pivot Grid | Syncfusion®
 description: Pivot Value Chooser in the Syncfusion® WPF Pivot Grid control lets users select, reorder, and manage PivotCalculations interactively at runtime.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

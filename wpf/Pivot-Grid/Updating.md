@@ -3,7 +3,7 @@ layout: post
 title: Updating in WPF Pivot Grid | Syncfusion®
 description: Updating in the Syncfusion® WPF Pivot Grid control enables real-time changes with automatic recalculation and refresh throttling using ThrottleUpdateRate.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

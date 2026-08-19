@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WPF Pivot Grid | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF Pivot Grid control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

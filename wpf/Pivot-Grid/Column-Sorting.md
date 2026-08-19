@@ -3,7 +3,7 @@ layout: post
 title: Column Sorting in WPF Pivot Grid | Syncfusion®
 description: Column Sorting in the Syncfusion® WPF Pivot Grid control supports ascending, descending, and custom options for organized pivot data.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

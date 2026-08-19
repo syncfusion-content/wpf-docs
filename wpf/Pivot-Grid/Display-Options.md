@@ -3,7 +3,7 @@ layout: post
 title: Display Options in WPF Pivot Grid | Syncfusion®
 description: Configure display options in the Syncfusion® WPF Pivot Grid control to customize layout, headers, and data presentation at runtime.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 
