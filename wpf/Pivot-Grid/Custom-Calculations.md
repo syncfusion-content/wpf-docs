@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Custom Calculations in WPF Pivot Grid control | Syncfusion®
-description: Learn about Custom Calculations support in Syncfusion® WPF Pivot Grid control, its elements and more.
+title: Custom Calculations in WPF Pivot Grid | Syncfusion®
+description: Define custom calculations in the Syncfusion® WPF Pivot Grid control to create user-defined formulas and extend pivot table analysis.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 
