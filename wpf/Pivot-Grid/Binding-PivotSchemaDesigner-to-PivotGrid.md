@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Binding PivotSchemaDesigner in WPF Pivot Grid control | Syncfusion®
-description: Learn about Binding PivotSchemaDesigner support in Syncfusion® WPF Pivot Grid control, its elements and more.
+title: Binding PivotSchemaDesigner in WPF Pivot Grid | Syncfusion®
+description: Bind the PivotSchemaDesigner to the Syncfusion® WPF Pivot Grid control to configure fields, measures, and hierarchies interactively for pivot analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug

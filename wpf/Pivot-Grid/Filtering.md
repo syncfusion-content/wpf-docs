@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in WPF Pivot Grid control | Syncfusion®
-description: Learn about Filtering support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Filtering in WPF Pivot Grid | Syncfusion®
+description: Apply filtering in Syncfusion WPF Pivot Grid control using FilterExpressions with multiple conditions for refined data analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotItem in WPF Pivot Grid control | Syncfusion®
-description: Learn about PivotItem support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: PivotItem in WPF Pivot Grid | Syncfusion®
+description: PivotItem in the Syncfusion® WPF Pivot Grid control defines field properties like header, mapping, format, sorting, filtering, and grouping.
 platform: wpf
 control: Pivot grid
 documentation: ug

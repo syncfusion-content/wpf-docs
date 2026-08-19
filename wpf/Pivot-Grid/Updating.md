@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Updating in WPF Pivot Grid control | Syncfusion®
-description: Learn about Updating support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Updating in WPF Pivot Grid | Syncfusion®
+description: Updating in the Syncfusion® WPF Pivot Grid control enables real-time changes with automatic recalculation and refresh throttling using ThrottleUpdateRate.
 platform: wpf
 control: Pivot grid
 documentation: ug
