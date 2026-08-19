@@ -3,7 +3,7 @@ layout: post
 title: Properties in WPF GridTreeControl | Syncfusion®
 description: Learn about the properties available in Syncfusion® WPF GridTreeControl  to customize appearance, behavior, selection, sorting, sizing, and data display.
 platform: wpf
-control: GridTree 
+control: GridTreeControl 
 documentation: ug
 ---
 

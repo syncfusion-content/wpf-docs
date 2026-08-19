@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WPF GridTreeControl Control | Syncfusion®
 description: Learn about the overview of Syncfusion® WPF GridTreeControl , including data binding, cell types, interactive features, customization, and serialization support.
 platform: wpf
-control: GridTree 
+control: GridTreeControl 
 documentation: ug
 ---
 

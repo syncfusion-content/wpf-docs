@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WPF GridTreeControl | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF GridTreeControl . Explore setup, data population, data binding, features, and customization options.
 platform: wpf
-control: GridTree
+control: GridTreeControl
 documentation: ug
 ---
 

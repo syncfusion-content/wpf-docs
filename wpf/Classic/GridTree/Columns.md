@@ -3,7 +3,7 @@ layout: post
 title: Columns in WPF GridTreeControl | Syncfusion
 description: Explore the column support in Syncfusion WPF GridTreeControl. Learn how to create, customize, and display data using different column types.
 platform: wpf
-control: GridTree 
+control: GridTreeControl 
 documentation: ug
 ---
 
