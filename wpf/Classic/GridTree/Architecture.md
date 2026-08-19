@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Architecture in WPF Wizard Control control | Syncfusion
-description: Learn here all about Architecture support in Syncfusion WPF GridTreeControl (Classic) control and more.
+title: Architecture in WPF GridTreeControl | Syncfusion®
+description: Learn about the architecture of Syncfusion® WPF GridTreeControl , including its core components, node structure, and underlying grid functionality.
 platform: wpf
 control: GridTree 
 documentation: ug
 ---
 
-# Architecture in WPF GridTreeControl (Classic)
+# Architecture in WPF GridTreeControl 
 
 The GridTree control derives from the WPF ContentControl, which allows it to support a ControlTemplate to define its content. By default, its content includes a Border object, which contains a ScrollViewer object that contains a GridControlImpl object. GridControlImpl is a GridControlBase derived class that provides the ‘multi-column grid’ functionality to the GridTree control.
 
