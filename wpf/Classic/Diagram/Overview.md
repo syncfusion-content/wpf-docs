@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Diagram (Classic) Control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: About Syncfusion® WPF Diagram | Syncfusion®
+description: Learn about the introduction and key features of Syncfusion® WPF Diagram, including nodes, connectors, layouts, layers, ports, and serialization.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# WPF Diagram (classic) Overview
+# About Syncfusion® WPF Diagram
 
 Essential Diagram WPF is an extensible and high-performance diagramming Framework for WPF applications. It can be used by the developers who want to develop Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects on the screen.  
 
