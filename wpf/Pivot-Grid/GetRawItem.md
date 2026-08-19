@@ -1,7 +1,7 @@
 ---
 layout: post
-title: GetRawItem in WPF Pivot Grid control | Syncfusion®
-description: Learn about GetRawItem support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: GetRawItem in WPF Pivot Grid | Syncfusion®
+description: Retrieve raw data objects in the Syncfusion® WPF Pivot Grid for value, total, or grand total cells with hyperlink support for detailed records.
 platform: wpf
 control: Pivot grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotComputationInfo in WPF Pivot Grid control | Syncfusion®
-description: Learn about PivotComputationInfo support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: PivotComputationInfo in WPF Pivot Grid | Syncfusion®
+description: Define PivotComputationInfo in the Syncfusion® WPF Pivot Grid control to configure calculations, aggregation types, and display options for pivot values.
 platform: wpf
 control: Pivot grid
 documentation: ug

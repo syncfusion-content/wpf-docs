@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization and Deserialization in WPF Pivot Grid | Syncfusion®
-description: Learn about Serialization and Deserialization support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+description: Serialization and Deserialization in the Syncfusion® WPF Pivot Grid control saves and restores pivot settings and layouts easily.
 platform: wpf
 control: Pivot grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting Caption in PivotTableFieldList in WPF Pivot Grid | Syncfusion®
-description: Learn about Setting Caption in PivotTableFieldList support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+description: Setting Caption in PivotTableFieldList of the Syncfusion® WPF Pivot Grid control customizes field captions in the field list for clarity and better usability.
 platform: wpf
 control: Pivot grid
 documentation: ug

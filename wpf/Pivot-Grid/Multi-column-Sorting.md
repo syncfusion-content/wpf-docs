@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multi-Column Sorting in WPF Pivot Grid control | Syncfusion®
-description: Learn about Multi-Column Sorting support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Multi-Column Sorting in WPF Pivot Grid | Syncfusion®
+description: Apply multi-column sorting in the Syncfusion® WPF Pivot Grid control to organize data by multiple fields, enabling flexible and detailed pivot analysis.
 platform: wpf
 control: Pivot grid
 documentation: ug

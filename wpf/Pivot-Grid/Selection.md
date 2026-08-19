@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Selection in WPF Pivot Grid control | Syncfusion®
-description: Learn about Cell Selection support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Cell Selection in WPF Pivot Grid | Syncfusion®
+description: Cell Selection in the Syncfusion® WPF Pivot Grid control allows selecting rows, columns, or headers to highlight and analyze pivot data.
 platform: wpf
 control: Pivot grid
 documentation: ug
