@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion® WPF Currency TextBox Control | Syncfusion®
-description: Learn about introduction of Syncfusion Essential Studio WPF Currency TextBox control and more details.
+title: About Syncfusion® WPF CurrencyTextBox Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF CurrencyTextBox control and more details.
 platform: wpf
 control: CurrencyTextBox
 documentation: ug
 ---
 
-# About Syncfusion® WPF Currency TextBox Control
+# About Syncfusion® WPF CurrencyTextBox Control
 
 The `CurrencyTextBox` is a specialized input control designed to accept, format, and display numeric values as currency in WPF applications. It enforces numeric input, formats numbers according to currency conventions, and exposes a concise API for common scenarios such as data binding, range validation, culture-aware formatting, and UI-driven value adjustment. The control is intended for forms, financial entry screens, reporting dialogs, dashboards, and any UI that requires reliable currency input and presentation.
 

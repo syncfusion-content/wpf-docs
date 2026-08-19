@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling in WPF Domain Updown | Syncfusion®
-description: Customize the look and feel of the Syncfusion WPF Domain Updown (SfDomainUpDown) control with built-in themes, custom templates, and styling.
+title: Appearance and Styling in WPF SfDomainUpdown | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF SfDomainUpDown control with built-in themes, custom templates, and styling.
 platform: wpf
 control: DomainUpDown
 documentation: ug
 ---
 
-# Appearance and Styling in WPF Domain Updown
+# Appearance and Styling in WPF SfDomainUpdown
 
 ## Spin animation
 

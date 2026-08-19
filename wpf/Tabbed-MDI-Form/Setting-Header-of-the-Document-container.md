@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Header in WPF Tabbed MDI Form | Syncfusion®
+title: Setting Header in WPF DocumentContainer | Syncfusion®
 description: Set or customize the header text of documents in the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control for clear identification.
 platform: wpf
 control: Tabbed MDI Form
 documentation: ug
 ---
 
-# Setting Header in WPF Tabbed MDI Form
+# Setting Header in WPF DocumentContainer
 
 Using the `Header` property, user can set the header for the DocumentContainer elements. Use the following code snippet, to set the header for the DocumentContainer element.
 
