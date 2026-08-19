@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in WPF OlapGrid | Syncfusion®
-description: The tooltip support in OlapGrid displays member information within a tooltip when the mouse pointer is moved over the header or value cells of the grid.
+title: Tooltip in WPF OLAP Grid | Syncfusion®
+description: The tooltip support in OLAP Grid displays member information within a tooltip when the mouse pointer is moved over the header or value cells of the grid.
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-# Tooltip in WPF OlapGrid
+# Tooltip in WPF OLAP Grid
 
 The OLAP grid can additionally display the member information within a tooltip when the mouse pointer is moved over the header cells or value cells of the OLAP grid control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in WPF OlapClient | Syncfusion®
-description: The sorting support in OlapClient sorts results by rows or columns in ascending or descending order based on row and column totals.
+title: Sorting in WPF OLAP Client | Syncfusion®
+description: The sorting support in OLAP Client sorts results by rows or columns in ascending or descending order based on row and column totals.
 platform: wpf
-control: OlapClient
+control: OLAP Client
 documentation: ug
 ---
 
-# Sorting in WPF OlapClient
+# Sorting in WPF OLAP Client
 
 The sorting tab in the Filtering and Sorting dialog box provides an option to sort the results by rows or columns in ascending or descending order.
 

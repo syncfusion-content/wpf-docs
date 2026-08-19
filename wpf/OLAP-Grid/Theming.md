@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theming in WPF OlapGrid | Syncfusion®
-description: The theming support in OlapGrid applies particular settings to the visual elements of the control, offering built-in theme options.
+title: Theming in WPF OLAP Grid | Syncfusion®
+description: The theming support in OLAP Grid applies particular settings to the visual elements of the control, offering built-in theme options.
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-# Theming in WPF OlapGrid
+# Theming in WPF OLAP Grid
 
 Theming is the process of applying particular settings to the visual elements of a control. This feature provides the following themes options:
 

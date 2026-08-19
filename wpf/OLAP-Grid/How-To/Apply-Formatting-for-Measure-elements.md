@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting for measure and value elements in OlapGrid | Syncfusion®
-description: Apply formatting for measure and value elements in Syncfusion® WPF OlapGrid control using the supported format types and the Format property.
+title: Formatting for measure and value elements in OLAP Grid | Syncfusion®
+description: Apply formatting for measure and value elements in Syncfusion® WPF OLAP Grid control using the supported format types and the Format property.
 platform: wpf
-control: OlapGrid
+control: OLAP Grid
 documentation: ug
 ---
 
-# How to apply formatting for measure and value elements in WPF OlapGrid
+# How to apply formatting for measure and value elements in WPF OLAP Grid
 
 The values of measure and value element can be formatted by using the `Format` property of corresponding elements. The following are the format types supported by measure and value elements:
 

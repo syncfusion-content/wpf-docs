@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theming in WPF OlapClient | Syncfusion®
-description: The theming support in OlapClient applies visual themes like Office 2010 Blue, Black, and Silver to visual elements in the WPF control.
+title: Theming in WPF OLAP Client | Syncfusion®
+description: The theming support in OLAP Client applies visual themes like Office 2010 Blue, Black, and Silver to visual elements in the WPF control.
 platform: wpf
-control: OlapClient
+control: OLAP Client
 documentation: ug
 ---
 
-# Theming in WPF OlapClient
+# Theming in WPF OLAP Client
 
 Theming is the process of applying particular settings to visual elements of a product. This feature provides the following theming options:
 

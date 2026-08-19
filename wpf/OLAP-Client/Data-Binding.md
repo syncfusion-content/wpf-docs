@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WPF OlapClient | Syncfusion®
-description: The data binding support in OlapClient connects to offline cubes and data sources to visualize multidimensional data in WPF applications.
+title: Data Binding in WPF OLAP Client | Syncfusion®
+description: The data binding support in OLAP Client connects to offline cubes and data sources to visualize multidimensional data in WPF applications.
 platform: wpf
-control: OlapClient
+control: OLAP Client
 documentation: ug
 ---
 
-# Data Binding in WPF OlapClient
+# Data Binding in WPF OLAP Client
 
 ## Binding OLAP client to offline cube
 
