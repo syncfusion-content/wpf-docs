@@ -1,13 +1,13 @@
 ---
 layout: post
-title: General in WPF Diagram Control | Syncfusion
-description: Learn here all about General support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: General Features in WPF Diagram | Syncfusion®
+description: Explore general features in the Syncfusion® WPF Diagram, including selection, movement, label customization, and context menu support.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# General in WPF Diagram (classic)
+# General Features in WPF Diagram
 
 This section illustrates the general features pertaining to both Node and LineConnector.
 

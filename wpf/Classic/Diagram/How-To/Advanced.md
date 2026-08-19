@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Advanced support in WPF Diagram Control | Syncfusion
-description: Learn here all about Advanced support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Advanced Support in WPF Diagram | Syncfusion®
+description: Explore advanced features in the Syncfusion® WPF Diagram, including node animation, printing, zoom settings, label alignment, and label resizing.
 platform: wpf
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-#  Advanced support in WPF Diagram (Classic)
+#  Advanced Support in WPF Diagram
 
 This section answers the following questions that are in an advanced level, meant for experts.
 

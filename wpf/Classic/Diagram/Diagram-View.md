@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Diagram View in WPF Diagram Control | Syncfusion
-description: Learn here all about Diagram View support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Diagram View in WPF Diagram | Syncfusion®
+description: Learn about the Diagram View in the Syncfusion® WPF Diagram, including zooming, panning, rulers, grid lines, snapping, virtualization, and page settings.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Diagram View in WPF Diagram (classic)
+# Diagram View in WPF Diagram
 
 The Diagram View is responsible for bringing the objects and data which are added into the view through the model. In other words, it deals with the visual representation of data. Zooming and panning are done with respect to the view. 
 
