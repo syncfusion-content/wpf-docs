@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion WPF Pivot Grid Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio WPF Pivot Grid control and exploring its features.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 
