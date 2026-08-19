@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® WPF CheckListBox Control | Syncfusion®
-description: Learn about introduction of Syncfusion Essential Studio WPF CheckListBox control and more details.
+description: Learn about the Syncfusion® Essential Studio WPF CheckListBox control, its overview, key features, and usage details.
 platform: wpf
 control: CheckListBox
 documentation: ug
