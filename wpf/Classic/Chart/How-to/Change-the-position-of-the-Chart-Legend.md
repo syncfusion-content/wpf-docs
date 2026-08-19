@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Change the position of the Chart Legend | wpf | Syncfusion
-description: Learn here all about Change the position of the Chart Legend support in Syncfusion WPF Chart (Classic) control and more.
+title: How to change legend position in WPF Classic Chart | Syncfusion®
+description: Change the legend position in WPF Classic Chart to display legend items at the desired location and improve chart presentation.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
 
-# Change the position of the Legend in WPF Chart
+# How to change legend position in WPF Classic Chart
 
 Chart Legend can be docked by using the Dock property of DockPanel class. The Legend can be docked to the top, left, bottom or right of either the Chart or Chart Area; also it can be placed anywhere inside or outside the Chart Area (floating).
 

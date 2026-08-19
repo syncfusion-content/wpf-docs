@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Print in WPF Chart Control | Syncfusion
-description: Learn here all about Print support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Print in WPF Classic Chart | Syncfusion®
+description: Print in WPF Classic Chart enables chart content to be printed with visual elements, layout, and formatting preserved for output.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Print in WPF Chart (Classic)
+# Print in WPF Classic Chart
 
 Essential Chart for WPF now comes with support to print the chart and printing options such as page orientation, print preview, color mode, and more.
 

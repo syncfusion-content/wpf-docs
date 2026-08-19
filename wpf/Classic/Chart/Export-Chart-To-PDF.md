@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Export Chart To PDF in WPF Chart Control | Syncfusion
-description: Learn here all about Export Chart To PDF support in Syncfusion WPF Chart (Classic) control, its elements and more.
+title: Export to PDF in WPF Classic Chart | Syncfusion®
+description: Export to PDF in WPF Classic Chart enables saving chart content as PDF documents while preserving layout, visuals, and formatting.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Export Chart To PDF in WPF Chart (Classic)
+# Export to PDF in WPF Classic Chart
 
 
 Essential Chart for WPF now comes with the support to export the chart to a PDF file; this conversion can be done using the Syncfusion.ChartConversion.WPF assembly.
