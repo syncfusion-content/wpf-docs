@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Switch between overridden Styles| SkinStorage | Wpf | Syncfusion
-description: Learn here all about Switch between Overridden Styles support in Syncfusion WPF SkinStorage (Classic) control and more.
+title: How to Switch Overridden Styles in WPF SkinStorage | Syncfusion®
+description: Switch between overridden styles in Syncfusion® WPF SkinStorage (Classic) control, its elements and more.
 platform: wpf
 control: SkinStorage
 documentation: ug
 ---
 
-# Switch between Overridden Styles in WPF SkinStorage (Classic)
+# How to Switch Overridden Styles in WPF SkinStorage
 
 Switching between the overridden styles should be done manually. The overridden styles should be merged into the Resource Dictionary. 
 

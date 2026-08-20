@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Switch between Skins | SkinStorage | Wpf | Syncfusion
-description: Learn here all about Switch between Skins at Run time support in Syncfusion WPF SkinStorage (Classic) control and more.
+title: How to Switch Skins at Run Time in WPF SkinStorage | Syncfusion®
+description: Switch between skins at run time in Syncfusion® WPF SkinStorage (Classic) control, its elements and more.
 platform: wpf
 control: SkinStorage
 documentation: ug
 ---
 
-# Switch between Skins at Run time in WPF SkinStorage (Classic)
+# How to Switch Skins at Run Time in WPF SkinStorage
 
 Themes can be dynamically switched.
 

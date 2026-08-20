@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Control Dependencies and Dependency Assemblies | WPF | Syncfusion
-description: Control and its dependency assembly or NuGet reference details for Syncfusion Essential Studio WPF products
+title: Control Dependencies in WPF Controls | Syncfusion®
+description: Learn about the assembly and NuGet references required to use each Syncfusion® WPF control in your application.
 platform: wpf
 control: Control Dependencies
 documentation: ug
 ---
 
-# Control Dependencies in Syncfusion<sup>&reg;</sup>'s WPF Controls
+# Control Dependencies in WPF Controls
 
 This section contains a list of assembly or NuGet references required to use any control in the application. You can refer to the [installation and deployment section](https://help.syncfusion.com/wpf/installation-and-upgrade/system-requirements) to know where the assemblies are installed and the [NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages) section to know how to add a NuGet reference.
 

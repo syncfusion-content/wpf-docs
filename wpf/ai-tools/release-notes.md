@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Release Notes - Syncfusion WPF AI Coding Assistants | Syncfusion
-description: Explore the release notes for Syncfusion WPF AI Coding Assistants, covering MCP Server, Skills, and Agentic UI Builder updates across all versions.
+title: Release Notes - Syncfusion® WPF AI Coding Assistants | Syncfusion®
+description: Explore the release notes for Syncfusion® WPF AI Coding Assistants, covering MCP Server, Skills, and Agentic UI Builder updates across all versions.
 platform: wpf
-control: Syncfusion WPF AI Coding Assistants Release Notes
+control: Syncfusion® WPF AI Coding Assistants Release Notes
 documentation: ug
 ---
 
-# Syncfusion WPF AI Coding Assistants Release Notes
+# Syncfusion® WPF AI Coding Assistants Release Notes
 
 This document provides information about the changes and new features included in each version of the Syncfusion WPF AI Coding Assistants, including the [Syncfusion.WPF.MCP](https://www.nuget.org/packages/Syncfusion.WPF.MCP) MCP Server, Skills, Agentic UI Builder and so on.
 
