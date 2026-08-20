@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to change legend position in WPF Classic Chart | Syncfusion®
-description: Change the legend position in WPF Classic Chart to display legend items at the desired location and improve chart presentation.
+description: Change the legend position in Syncfusion® WPF Classic Chart to display legend items at the desired location and improve chart presentation.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
