@@ -293,8 +293,6 @@ private void MoveToLastInColumn_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Gif for Stencil Move Commands](Stencil_Images/StencilMoveCommands.gif)
-
 ## Removing a Particular Command from the CommandManager
 
 Removing a command from the `CommandManager` is straightforward. To do this, you need to identify the command by its name and then remove it from the CommandManager's collection of commands.
