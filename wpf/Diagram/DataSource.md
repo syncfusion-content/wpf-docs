@@ -23,7 +23,11 @@ To explore those properties, refer to [DataSourceSettings](https://help.syncfusi
 
 ## Defining DataSource
 
-[DataSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_DataSource) can be a collection of any business objects or collection of nodes. If you use collection of business objects as datasource, then nodes has been created automatically to populate a layout. As a collection of objects, datasource has the functionalities of add, remove, reset, and move. The following code example explains the defining of `DataSource` using business objects.
+[DataSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_DataSource) can be a collection of any business objects or collection of nodes. If you use a collection of business objects as the DataSource, then nodes are created automatically to populate a layout. As a collection, the data source supports add, remove, reset, and move operations. The following code shows how to define a `DataSource` using business objects.
+
+> **Note:** For the diagram to reflect changes to the underlying data, implement `INotifyPropertyChanged` on the business object and use a collection that implements `INotifyCollectionChanged` (for example, `ObservableCollection<T>`). When both `Nodes`/`Connectors` collections and `DataSourceSettings` are populated, the items generated from `DataSourceSettings` are added to the existing collections; setting `DataSourceSettings` does not replace manually created nodes or connectors.
+
+The following built-in layout types are supported with `DataSourceSettings`: `Hierarchical`, `Organizational`, `Tree`, `MindMap`, and `Flowchart`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -114,7 +118,7 @@ private Employees GetData()
 {% endhighlight%}
 {% endtabs %}
 
-N> ParentId and Id must be in same type to populate a layout.
+N> ParentId and Id must be in the same type to populate a layout.
 
 ## Defining layout
 
@@ -158,9 +162,9 @@ Diagram.LayoutManager = new LayoutManager()
 
 To learn more about the supported built-in layout, refer to the [Automatic Layouts](https://help.syncfusion.com/wpf/diagram/automatic-layouts) page.
 
-### How to done Add, Remove, Reset and Move in DataSource
+### Performing Add, Remove, Reset, and Move Operations on DataSource
 
-As `DataSource` is a collection of any business objects or nodes, it has the functionalities of add, remove, reset, and move.
+As `DataSource` is a collection of any business objects or nodes, it supports add, remove, reset, and move operations.
 
 {% tabs %}
 {% highlight c# %}
@@ -186,7 +190,7 @@ Diagram.DataSourceSettings.DataSource = new Employees();
 
 ## Root
 
-By default, the node without parent is treated as root of the layout. Now, `DataSourceSettings` have option to specify the root node of the layout.
+By default, a node without a parent is treated as the root of the layout. Now, `DataSourceSettings` has an option to specify the root node of the layout.
 
 {% tabs %}
 {% highlight xaml %}
@@ -210,7 +214,7 @@ diagram.DataSourceSettings.Root = "1";
 
 ## Layout with multiple parents
 
-Tree layout and data sources will now support nodes having multiple parents by defining more than one parent ID to the `ParentID` property. The child node is arranged in center of the parent positions. The following code explains the defining of multiple parent ID's to single node.
+Tree layout and data sources support nodes that have multiple parents by defining more than one parent ID for the `ParentID` property. The child node is arranged in the center of the parent positions. The following code explains how to define multiple parent IDs for a single node.
 
 {% tabs %}
 {% highlight xaml %}
@@ -229,6 +233,12 @@ Tree layout and data sources will now support nodes having multiple parents by d
         </local:ItemInfo.ReportingPerson>
     </local:ItemInfo>
 </local:DataItems>
+
+<!--Helper collection types used above (define these in your code-behind)-->
+<!--
+public class StringList : List<string> { }
+public class DataItems : ObservableCollection<ItemInfo> { }
+-->
 
 <syncfusion:SfDiagram>
     <syncfusion:SfDiagram.DataSourceSettings>
@@ -342,6 +352,11 @@ data.Add(new ItemInfo("n21", "#941100")
     </local:ItemInfo.ParentId>
 </local:ItemInfo>
 </local:DataItems>
+
+<!--Helper collection types used above (define these in your code-behind)-->
+<!--
+public class LabelList : List<string> { }
+-->
 
 <!--Initializes the Layout-->
 <syncfusion:FlowchartLayout x:Key="Layout" Orientation="TopToBottom" 
@@ -480,6 +495,11 @@ private DataItems GetData()
 //Data Object Class
 public class ItemInfo
 {
+    // Parameterless constructor required for XAML usage
+    public ItemInfo()
+    {
+    }
+
     public string Name { get; set; }
     public string Id { get; set; }
     public List<string> ParentId { get; set; }
@@ -492,7 +512,7 @@ public class ItemInfo
 //Collection to hold the Data Object class
 public class DataItems : ObservableCollection<ItemInfo>
 {
-}        
+}
 
 {% endhighlight %}
 {% endtabs %} 

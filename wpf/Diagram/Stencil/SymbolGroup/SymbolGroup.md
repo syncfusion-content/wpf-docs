@@ -178,7 +178,7 @@ GroupViewModel group = new GroupViewModel()
 
 ![Symbol](SymbolGroup_images/stencil2.PNG)
 
-## Customize the appearance of the symbol group header
+## Customize the Appearance of the Symbol Group Header
 
 You can customize the appearance of each [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html) header by changing the [`header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Header.html) property style. The following code explains how to customize the appearance of the symbol group header.
 
@@ -231,14 +231,18 @@ When there is more number of symbol groups in the stencil, then you can expand a
 
 ## SymbolGroupViewModel in Stencil
 
-The [SymbolGroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html) class provides the support to create the view models to the symbol group and provides supports to add symbols to it as Node, Connectors, groups and list of predefined symbols. It includes the following properties:
+The [SymbolGroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html) class lets you create view models for symbol groups and add symbols (nodes, connectors, groups, or predefined lists) to them.
 
-* [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Name): Specifies the display name of the symbol group. It also adds the symbols to the symbol groups defined through the `SymbolSource` property which symbol has same `Key` value as this `Name` property.
-* [Symbols](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Symbols): Specifies the list of symbols need to be added to the symbol group. It can be any diagram elements such as Nodes, Connectors, Groups, Containers, BPMN elements.
-* [CategorySource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_CategorySource): Specifies the list of symbols need to be added to the `SymbolGroupViewModel` using the static resource key value from the predefined category collections.
-* [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_IsChecked): Shows or hides SymbolGroups in the [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) when the [SymbolGroupDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolGroupDisplayMode) is set to List or Tab. The default value is true. 
+### Properties
 
-Additionally, You can dynamically add new symbols to symbol groups or remove existing ones at runtime. Similarly, you can also add or remove entire symbol groups within the stencil as needed.
+| Property | Description | Type | Default |
+|---|---|---|---|
+| [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Name) | Specifies the display name of the symbol group. It also adds symbols from the `SymbolSource` whose `Key` matches this `Name`. | `string` | `string.Empty` |
+| [Symbols](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_Symbols) | Specifies the list of symbols to be added to the symbol group. It can be any diagram elements such as Nodes, Connectors, Groups, Containers, or BPMN elements. | `SymbolCollection` | `null` |
+| [CategorySource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_CategorySource) | Specifies the list of symbols to be added to the `SymbolGroupViewModel` using the static resource key value from the predefined category collections. | `IEnumerable` | `null` |
+| [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupViewModel_IsChecked) | Shows or hides the `SymbolGroup` in the [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) when the [SymbolGroupDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolGroupDisplayMode) is set to `List` or `Tab`. | `bool` | `true` |
+
+Additionally, you can dynamically add new symbols to symbol groups or remove existing ones at runtime. Similarly, you can also add or remove entire symbol groups within the stencil as needed.
 
 ### Adding Symbols via Symbols Property in SymbolGroupViewModel
 
@@ -349,9 +353,9 @@ To add symbols to a Stencil through `SymbolGroupViewModel`, you can utilize the 
     </syncfusion:Stencil.SymbolGroups>
 </syncfusion:Stencil>
 
-![Category Source](SymbolGroup_images/BuiltInShapesList.png)
-
 {% endhighlight %}
+
+![Category Source](SymbolGroup_images/BuiltInShapesList.png)
 
 ## Customize the appearance of the symbols in the built-in categories 
 
@@ -361,10 +365,10 @@ The symbol sizes for the built-in symbol categories are equivalent to the Visio 
 * `SymbolName`: To know the name of the symbol.
 * `CategoryName`: To know the name of the category.
 
-Also, you can decide whether a symbol can be added to the stencil symbol collection or not. It can be achieved by using the `Cancel` property of [CanAddSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CanAddSymbol_System_String_System_String_), the virtual method of stencil class. 
+You can also decide whether a symbol is added to the Stencil's symbol collection by overriding the [CanAddSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CanAddSymbol_System_String_System_String_) virtual method and returning `false` for symbols that should be excluded.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 /// <summary>
 /// The custom class for the stencil view model.
 /// </summary>

@@ -9,11 +9,24 @@ documentation: ug
 
 # Symbol Filtering in WPF SfDiagram
 
-The grouped symbols can be filtered or hidden using the [SymbolFilters](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilters). The `SymbolFilters` are a collection of [SymbolFilterProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html), which contains the [`SymbolFilter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_SymbolFilter) delegate property to filter the specific symbol group.
+You can filter or hide grouped symbols using the [`SymbolFilters`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilters) property. The `SymbolFilters` collection contains [`SymbolFilterProvider`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html) instances. Each provider has a [`SymbolFilter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_SymbolFilter) delegate that decides whether a symbol belongs to the group.
 
-The [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_Content) and [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_ContentTemplate) property of the `SymbolFilterProvider` is used to update the content of the symbol filter.
+The [`Content`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_Content) and [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_ContentTemplate) properties of `SymbolFilterProvider` define the content shown for the filter.
 
-The following code explains how to create a symbol filter in the stencil.
+N> `SymbolFilters` and `SymbolFilterProvider` are only honored when [`SymbolGroupDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolGroupDisplayMode) is set to `Accordion`.
+
+## Properties
+
+| Property | Description | Type | Default |
+|---|---|---|---|
+| `SymbolFilters` | Collection of `SymbolFilterProvider` instances shown as filter buttons above the Stencil. | `SymbolFilters` | `null` |
+| `SelectedFilter` | The filter that is currently selected in the Stencil. Its `SymbolFilter` delegate decides which symbols are visible. | `SymbolFilterProvider` | `null` |
+| `Content` | Header text or UI shown for a filter button. | `object` | `null` |
+| `ContentTemplate` | Template used to render a filter button. | `DataTemplate` | `null` |
+| `SymbolFilter` | Delegate on `SymbolFilterProvider` that runs against each symbol and returns `true` when the symbol should be visible. | `FilterPredicate` | `null` |
+
+
+The following XAML and C# sample demonstrates how to filter the symbols shown in the Stencil by category. Property names in the XAML bindings (`Symbolfilters`, `Selectedfilter`) are **case-sensitive** and must match the C# view-model exactly.
 
 {% tabs %}
 {% highlight xaml %}
@@ -168,6 +181,4 @@ public class StencilVM : INotifyPropertyChanged
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolFilters-sample)
 
-![SymbolFilter](Stencil_images/Stencil_img12.PNG)
-
-N> SymbolFilters and SymbolFilterProviders can only be used when the SymbolGroupDisplayMode in Stencil is set to Accordion.
+![Symbol filtering in a Stencil](Stencil_images/Stencil_img12.PNG)
