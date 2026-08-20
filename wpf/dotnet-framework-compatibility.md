@@ -1,12 +1,12 @@
 ---
 layout: post
-title: .NET Framework Compatibility of Syncfusion WPF controls
-description: Learn here about the compatibility of .NET Framework support for the Syncfusion Essential Studio for WPF.
+title: About Syncfusion® WPF .NET Framework Compatibility | Syncfusion®
+description: Learn about overview of Syncfusion® Essential Studio WPF controls .NET Framework compatibility and more details.
 platform: wpf
 control: .Net Framework support History
 documentation: ug
 ---
-# .NET Framework Compatibility
+# About Syncfusion® WPF .NET Framework Compatibility
 
 Syncfusion<sup>&reg;</sup> WPF Controls are always compatible latest .NET Framework versions. 
 

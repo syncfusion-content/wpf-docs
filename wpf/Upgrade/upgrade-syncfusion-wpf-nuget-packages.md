@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Upgrade Syncfusion WPF NuGet packages to a latest version
-description: Learn here about the how to upgrading Syncfusion WPF NuGet packages to a latest version using NuGet manager and package manager UI.
-platform: WPF
+title: How to upgrade WPF NuGet packages | Syncfusion®
+description: Learn how to upgrade Syncfusion® WPF NuGet packages to the latest version using Package Manager UI, .NET CLI and Package Manager Console.
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WPF NuGet packages to a latest version
+# How to upgrade WPF NuGet packages
 
 Every three months, Syncfusion releases new volumes with interesting new features. For this volume, there will be weekly NuGet release and one service pack. Syncfusion WPF NuGet packages are released on a weekly basis to address critical issue fixes.
 

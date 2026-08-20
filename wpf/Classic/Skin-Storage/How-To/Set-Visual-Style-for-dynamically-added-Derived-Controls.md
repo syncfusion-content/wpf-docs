@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Set VisualStyle for Derived in SkinStorage | Wpf | Syncfusion
-description: Learn here all about Set Visual Style for dynamically added Derived Controls support in Syncfusion WPF SkinStorage (Classic) control and more.
+title: How to Set Style for Derived Controls in WPF SkinStorage | Syncfusion®
+description: Set visual style for dynamically added derived controls in Syncfusion® WPF SkinStorage (Classic) and more.
 platform: wpf
 control: SkinStorage
 documentation: ug
 ---
 
-# Set VisualStyle for Derived in SkinStorage
+# How to Set Style for Derived Controls in WPF SkinStorage
 
 This page explains Set VisualStyle for Derived in SkinStorage and more details.
 

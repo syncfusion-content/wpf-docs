@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SyncfusionWPF MCP Server | Syncfusion
-description: Learn how to configure and use SyncfusionWPF MCP server for intelligent code generation, documentation, and troubleshooting in WPF apps.
+title: Syncfusion® WPF MCP Server | Syncfusion®
+description: Learn how to configure and use Syncfusion® WPF MCP server for intelligent code generation, documentation, and troubleshooting in WPF apps.
 platform: wpf
-control: Getting started with SyncfusionWPF MCP Server
+control: Getting started with Syncfusion® WPF MCP Server
 documentation: ug
 ---
 
-# Syncfusion WPF MCP Server
+# Syncfusion® WPF MCP Server
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Server accelerates WPF application development by providing deep knowledge directly in your AI-powered IDE. [Model Context Protocol](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) (MCP) integration enables quick access to documentation, API references, and code-generation features from within the development environment.
 
