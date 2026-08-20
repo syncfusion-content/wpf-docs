@@ -9,7 +9,7 @@ documentation: ug
 
 # Swimlane in WPF SfDiagram
 
-A [Swimlane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Swimlane.html) is a type of diagram nodes, which is typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities.
+A [Swimlane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Swimlane.html) is a type of diagram node, which is typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities.
 
 ![Swimlane Content](Swimlane-images/Swimlane_Default.PNG)
 
@@ -150,7 +150,7 @@ The following code example explains how to customize the swimlane header.
  <DataTemplate x:Key="viewTemplate">
    <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
                FontStyle="Italic" FontSize="12" 
-               FontFamily="TimesNewRomen" 
+               FontFamily="Times New Roman" 
                TextDecorations="Underline" 
                FontWeight="Bold" 
                Foreground="AliceBlue"/>
@@ -168,7 +168,7 @@ The following code example explains how to customize the swimlane header.
                          <!--Initialize the Swimlane Header-->
                             <syncfusion:SwimlaneHeaderViewModel UnitHeight="32" ShapeStyle="{StaticResource SwimlaneHeaderStyle}">
                                 <syncfusion:SwimlaneHeaderViewModel.Annotation>
-                                    <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART" ViewTemplate="{StaticResource viewTemplate">
+                                    <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART" ViewTemplate="{StaticResource viewTemplate}">
                                     </syncfusion:AnnotationEditorViewModel>
                                 </syncfusion:SwimlaneHeaderViewModel.Annotation>
                             </syncfusion:SwimlaneHeaderViewModel>
@@ -242,7 +242,7 @@ You can customize the Swimlane background by changing its `ShapeStyle` property.
 
 ### Header editing
 
-The diagram provides the support to edit swimlane headers at runtime. You can achieve the header editing by double clicking on it. Double clicking the header label will enables the editing mode.
+The diagram provides the support to edit swimlane headers at runtime. You can achieve the header editing by double clicking on it. Double clicking the header label will enable the editing mode.
 The following image shows how to edit the swimlane header.
 
 ![Header Editing](Swimlane-images/Header_Edit.gif).
@@ -303,11 +303,11 @@ SwimlaneViewModel swimlane = new SwimlaneViewModel()
 
 Swimlane can be selected by clicking (tap) the header of the swimlane.
 
-* The `IsSelected` Property is used to select or unselect the swimlane at runtime.
+* The `IsSelected` Property is used to select or deselect the swimlane at runtime.
 
-* The `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html).
+* The `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To learn about the arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html).
 
-* The `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html).
+* The `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source. To learn about the arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html).
 
 ### Drag  
 
@@ -315,7 +315,7 @@ Swimlane can be selected by clicking (tap) the header of the swimlane.
 
 * Instead of dragging original object, preview of the node alone can be dragged. For preview dragging, refer to the [PreviewSettings](https://help.syncfusion.com/wpf/sfdiagram/preview-settings). 
 
-* The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To learn about the arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![Drag Node](Swimlane-images/Swimlane_Select_Drag.gif)
 

@@ -13,7 +13,7 @@ Orthogonal segments are used to create line segments that are perpendicular at t
 
 ## How to create orthogonal segments
 
-To create a orthogonal segment, specify the segment as [`OrthogonalSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OrthogonalSegment.html) and add it to the connector's segments collection.
+To create an orthogonal segment, specify the segment as [`OrthogonalSegment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OrthogonalSegment.html) and add it to the connector's segments collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -157,7 +157,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ## Avoid overlapping
 
-Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target Nodes.
+Orthogonal segments are automatically rerouted to avoid overlapping with the source and target nodes.
 
 ![basic routing](Connector_images/Connector_img10.PNG)
 

@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Custom Snapping in WPF SfDiagram
 
-Snapping process can be customized by changing its snapping interval and snapping angle.
+The snapping process can be customized by changing its snapping interval and snapping angle.
 
 ## Changing the snapping interval
 
-Snapping helps you to drag or resize the elements completely and sharp from one position to another position by some amount of distance. This snapping distance can be customized using the `SnapInterval` property of `SnapSettings` class. Default snapping interval is 20.
+Snapping helps you to drag or resize the elements completely and sharp from one position to another position by some amount of distance. This snapping distance can be customized using the `SnapInterval` property of `SnapSettings` class. The default snapping interval is 20.
 
 {% tabs %}
 {% highlight xaml %}
@@ -81,7 +81,7 @@ public class DoubleExt : List<double>
 
 ## Changing the snapping angle
 
-Diagram allows the diagram object to rotate at specific angle intervals while rotating. This interval can be customized using the [`SnapAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapAngle) property of SnapSettings class. Default snap angle value is 5d.
+The diagram allows objects to rotate at specific angle intervals while rotating. This interval can be customized using the [`SnapAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapAngle) property of SnapSettings class. Default snap angle value is 5d.
 
 Snapping on rotation can be enabled or disabled using the [`SnapConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapConstraints) property of SnapSettings class.
 

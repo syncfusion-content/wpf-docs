@@ -9,19 +9,19 @@ documentation: ug
 
 # Snapping in WPF SfDiagram
 
-When you draw, resize, or move a diagramming element in the page, you can set it, so that it will align or snap to the nearest intersection in the page even when the grid is visible or not. However, you can control the alignment and snap-to capabilities of elements by using the snapping option of `SfDiagram`.
+When you draw, resize, or move a diagramming element on the page, you can set it, so that it will align or snap to the nearest intersection in the page even when the grid is visible or not. However, you can control the alignment and snap-to capabilities of elements by using the snapping option of `SfDiagram`.
 
-The `SnapSettings` class and its properties allows you to snap the shapes to the ruler subdivisions more easily.
+The `SnapSettings` class and its properties allow you to snap the shapes to the ruler subdivisions more easily.
 
 Refer to the [SnapSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html) properties.
 
 ## Snap-to-objects
 
-The snap-to-object provides visual cues to assist with aligning and spacing diagram. A node or group can be snapped with its neighboring objects based on certain alignments (same size and same position). Such alignments are visually represented as smart guide lines, which are in cyan shade color and its color code is #83F6F0.  
+The snap-to-object provides visual cues to assist with aligning and spacing diagram elements. A node or group can be snapped with its neighboring objects based on certain alignments (same size and same position). Such alignments are visually represented as smart guide lines, which are in cyan shade color and its color code is #83F6F0.  
 
 Refer to the members of [SnapToObject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
 
-Snapping to objects can be enabled by assigning values to the `SnapToObject` property of `SnapSettings` class. Default value is None.
+Snapping to objects can be enabled by assigning values to the `SnapToObject` property of `SnapSettings` class. The default value is None.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,7 +71,7 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 
 ## How to change the snap indication style
 
-When snapping, cyan shade color indication lines will be shown. These indication lines styles can be customized by using the [SnapIndicatorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapIndicatorStyle) property of `SnapSettings` class.
+When snapping, cyan-colored indicator lines will be shown. These indication lines styles can be customized by using the [SnapIndicatorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapIndicatorStyle) property of `SnapSettings` class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -116,7 +116,7 @@ diagram.SnapSettings = new SnapSettings()
 
 ## Snap to Lines
 
-This feature allows the diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
+This feature allows the diagram objects to snap to the nearest intersection of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
 Snapping to gridlines can be enabled or disabled with the [SnapConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of `SnapSettings`. Default value is None.
 
@@ -149,7 +149,7 @@ Diagram allows snapping on dock ports while making new connection on it and drag
 
 ![Snap to object](Gridlines_images/DockPortSnapping.gif)
 
-Find the [Snapping sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Snapping) to depict the Snapping.
+Find the [Snapping sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Snapping) to demonstrate snapping.
 
 ## See Also
 

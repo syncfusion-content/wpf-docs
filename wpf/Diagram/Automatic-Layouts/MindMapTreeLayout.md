@@ -9,7 +9,28 @@ documentation: ug
 
 # MindMap Tree Layout in WPF SfDiagram
 
-A mind map is a diagram that displays the nodes as a spider diagram that organizes information around a central concept. You can use the `LayoutManager.Layout` property to specify the [`MindMapTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html) algorithm.
+A mind map is a diagram that organizes information around a central concept, with branches radiating outward like a spider diagram. Use the `LayoutManager.Layout` property to specify the [`MindMapTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html) algorithm.
+
+The `MindMapTreeLayout` class is defined in the `Syncfusion.UI.Xaml.Diagram.Layout` namespace. The `RootChildDirection` enum (used to control the side each branch is positioned on) is in the same namespace, and its values are:
+
+| Value | Description |
+| --- | --- |
+| `Left` | Positions the branch on the left of the parent. Supported only for `Horizontal` orientation. |
+| `Right` | Positions the branch on the right of the parent. Supported only for `Horizontal` orientation. |
+| `Top` | Positions the branch above the parent. Supported only for `Vertical` orientation. |
+| `Bottom` | Positions the branch below the parent. Supported only for `Vertical` orientation. |
+
+The `MindMapTreeMode` enum (used by the `SplitMode` property) has the following values:
+
+| Value | Description |
+| --- | --- |
+| `RootChildrenCount` | Balances branches by the immediate children count of the root node. |
+| `TreeNodesCount` | Balances branches by the total children count (including sub-children) of the root node. |
+| `Level` | Balances branches by comparing the sub-tree levels of the immediate children of the root node. |
+| `Area` | Balances branches by the height and width of the immediate child branches of the root node. |
+| `Custom` | Specifies that the branches should be arranged in a defined direction. The direction is supplied by overriding `GetRootChildDirection` in a `MindMapTreeLayout` subclass. |
+
+The default value of `SplitMode` is `RootChildrenCount`.
 
 {% tabs %}
 
@@ -181,46 +202,48 @@ A mind map is a diagram that displays the nodes as a spider diagram that organiz
 
 ## Tree orientation in layout
 
-An [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_MindMapTreeLayout_Orientation) of a `MindMapTreeLayout` is used to arrange the tree layout based on the direction. The default value for the orientation is Horizontal. The different orientation types are defined in the following table:
+The [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_MindMapTreeLayout_Orientation) property of `MindMapTreeLayout` arranges branches by direction. The default value is `Horizontal`. The `Orientation` enum (`Syncfusion.UI.Xaml.Diagram.Layout.Orientation`) supports the following values:
 
 | Orientation Type | Description |
-|---|---|---|
-| Horizontal | Aligns the tree layout from left to right|
-| Vertical | Aligns the tree layout from top to bottom|
+| --- | --- |
+| `Horizontal` (default) | Aligns the tree layout from left to right. The root node is placed at the left edge and branches grow to the right. |
+| `Vertical` | Aligns the tree layout from top to bottom. The root node is placed at the top and branches grow downward. |
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:MindMapTreeLayout Orientation="Horizontal" />        
+<syncfusion:MindMapTreeLayout Orientation="Horizontal" />
 {% endhighlight %}
 {% highlight c# %}
 diagram.LayoutManager = new LayoutManager()
 {
     Layout = new MindMapTreeLayout()
     {
-        Orientation = Orientation.Horizontal,
+        Orientation = Syncfusion.UI.Xaml.Diagram.Layout.Orientation.Horizontal,
     },
 };
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Diagram displays MindMapTreeLayout Direction in Both Direction](Automatic-Layouts_images/wpf-diagram-mindmap-in-both-side.gif)
+![WPF Diagram displays MindMapTreeLayout with horizontal branches](Automatic-Layouts_images/wpf-diagram-mindmap-in-both-side.gif)
 
-## Arrange Layout in a balanced way
+## Arranging the layout in a balanced way
 
-The [`SplitMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_MindMapTreeLayout_SplitMode) property of `MindMapTreeLayout` is used to specify the criteria for arranging the mind-map tree branches.The different SplitMode types are defined as follows:
+The [`SplitMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_MindMapTreeLayout_SplitMode) property of `MindMapTreeLayout` specifies the criteria for arranging the mind-map tree branches. The default value is `RootChildrenCount`. The supported `MindMapTreeMode` enum values are:
 
-* Area
-* TreeNodesCount
-* Level
-* RootChildrenCount
-* Custom
+* `RootChildrenCount` (default) — Balances by the immediate children count of the root node.
+* `TreeNodesCount` — Balances by the overall children (with sub-children) count of the root node.
+* `Level` — Balances by comparing the sub-tree levels of the immediate children of the root node.
+* `Area` — Balances by the height and width of the immediate child branches of the root node.
+* `Custom` — Specifies that the mind-map branches should be arranged in a defined direction. See [How to create a custom mind map](#how-to-create-a-custom-mind-map) below.
+
+N> The XAML attribute is `SplitMode`, but the corresponding C# type is `MindMapTreeMode`. In XAML the value is a string; in C# the value is an enum member.
 
 ### Area
 Balances the mind-map based on the height and width of the immediate child branches of the root node.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:MindMapTreeLayout SplitMode="Area" />        
+<syncfusion:MindMapTreeLayout SplitMode="Area" />
 {% endhighlight %}
 {% highlight c# %}
 diagram.LayoutManager = new LayoutManager()
@@ -234,11 +257,11 @@ diagram.LayoutManager = new LayoutManager()
 {% endtabs %}
 
 ### Level
-Balances the mind-map by comparing the sub-tree levels of the immediate child of the root node.
+Balances the mind-map by comparing the sub-tree levels of the immediate children of the root node.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:MindMapTreeLayout SplitMode="Level" />        
+<syncfusion:MindMapTreeLayout SplitMode="Level" />
 {% endhighlight %}
 {% highlight c# %}
 diagram.LayoutManager = new LayoutManager()
@@ -251,77 +274,87 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-### RootChildrenLayout
-Balances the mind-map based on the immediate children count of the root node. The right side of the root node will be prioritized while adding the children to the root node.
+### RootChildrenCount
+Balances the mind-map based on the immediate children count of the root node. The right side of the root node is prioritized when adding children.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:MindMapTreeLayout SplitMode="RootChildrenLayout" />        
+<syncfusion:MindMapTreeLayout SplitMode="RootChildrenCount" />
 {% endhighlight %}
 {% highlight c# %}
 diagram.LayoutManager = new LayoutManager()
 {
     Layout = new MindMapTreeLayout()
     {
-        SplitMode = MindMapTreeMode.RootChildrenLayout,
+        SplitMode = MindMapTreeMode.RootChildrenCount,
     },
 };
 {% endhighlight %}
 {% endtabs %}
 
-### TreeNodeLayout
-Balances the mind-map based on the overall children (with sub child) count of the root node.
+### TreeNodesCount
+Balances the mind-map based on the overall children (with sub-children) count of the root node.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:MindMapTreeLayout SplitMode="TreeNodeLayout" />        
+<syncfusion:MindMapTreeLayout SplitMode="TreeNodesCount" />
 {% endhighlight %}
 {% highlight c# %}
 diagram.LayoutManager = new LayoutManager()
 {
     Layout = new MindMapTreeLayout()
     {
-        SplitMode = MindMapTreeMode.TreeNodeLayout,
+        SplitMode = MindMapTreeMode.TreeNodesCount,
     },
 };
 {% endhighlight %}
 {% endtabs %}
 
 ### Custom
-
-Specifies the mind-map branches should be arranged in a defined direction.
+Specifies that the mind-map branches should be arranged in a defined direction. The direction is supplied by overriding the [`GetRootChildDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_MindMapTreeLayout_GetRootChildDirection_Syncfusion_UI_Xaml_Diagram_INode_) method of `MindMapTreeLayout`. The method receives the root `INode` and must return a `RootChildDirection` value that tells the layout which side to place the child branch on.
 
 ![WPF Diagram MindMapTreeLayout with SplitMode](Automatic-Layouts_images/wpf-diagram-mindmap-splitmode.gif)
 
-#### How to create custom MindMap
+#### How to create a custom mind map
 
-We can arrange the branches in a defined direction to create a custom layout by using the [`GetRootChildDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.MindMapTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_MindMapTreeLayout_GetRootChildDirection_Syncfusion_UI_Xaml_Diagram_INode_) method of MindMapTreeLayout and by specifying the SplitMode as Custom.
+To create a custom layout, set `SplitMode` to `Custom` and override the `GetRootChildDirection` method of `MindMapTreeLayout` to control branch direction.
+
+N> `SplitMode="Custom"` set in XAML alone is not enough: the override must be assigned in code by passing an instance of the subclass to the `LayoutManager`. The XAML shown below is therefore paired with the C# subclass below it.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:MindMapTreeLayout SplitMode="Custom" />        
+<!--The SplitMode attribute is set on the layout instance. The actual
+    GetRootChildDirection override is supplied in code-behind, because
+    it must return a value derived from the data item.-->
+<syncfusion:MindMapTreeLayout x:Key="MindmapLayout"
+                              SplitMode="Custom" />
 {% endhighlight %}
 {% highlight c# %}
+
+//Assign the custom subclass so the override is wired into the layout.
 diagram.LayoutManager = new LayoutManager()
 {
-    Layout = new MindMapTreeLayout()
+    Layout = new SfMindMapTreeLayout()
     {
         SplitMode = MindMapTreeMode.Custom,
     },
 };
 
- public class SfMindMapTreeLayout : MindMapTreeLayout
+public class SfMindMapTreeLayout : MindMapTreeLayout
+{
+    protected override RootChildDirection GetRootChildDirection(INode node)
     {
-        protected override RootChildDirection GetRootChildDirection(INode node)
+        // The example below returns the Direction property stored on the
+        // data item. If the node's content is not a MindMapDataItem,
+        // fall back to the base implementation.
+        if (node.Content is MindMapDataItem item)
         {
-            if (node.Content is MindmapDataItem)
-            {
-                return (node.Content as MindmapDataItem).Direction=RootChildDirection.Left;;
-            }
-
-            return base.GetRootChildDirection(node);
+            return item.Direction;
         }
+
+        return base.GetRootChildDirection(node);
     }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -329,7 +362,7 @@ diagram.LayoutManager = new LayoutManager()
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Mindmap%20Layout)
 
-## Spacing and Updating Layout
+## Spacing and updating layout
 
-N> Spacing and UpdatingLayout refer to the [Customize spacing between nodes in layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts#customize-spacing-between-nodes-in-layout) and [Updating layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts#updating-layout).
+The `HorizontalSpacing` and `VerticalSpacing` properties of `MindMapTreeLayout` are used the same way as in the other layout types; see [Customize spacing between nodes in layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts#customize-spacing-between-nodes-in-layout) and [Updating layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts#updating-layout) for the shared reference.
 
