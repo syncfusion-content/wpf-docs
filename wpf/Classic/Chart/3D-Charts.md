@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 3D-Charts in WPF Chart Control | Syncfusion
-description: Learn here all about 3D-Charts support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: 3D Charts in WPF Classic Chart | Syncfusion®
+description: 3D charts in the WPF Classic Chart enable visualization of data in three dimensions and support interactive chart presentation.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# 3D-Charts in WPF Chart (Classic)
+# 3D Charts in WPF Classic Chart
 
 ## Enabling 3D Mode
 

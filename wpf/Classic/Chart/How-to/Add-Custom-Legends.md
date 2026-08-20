@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add Custom Legends | wpf | Syncfusion
-description: Learn here all about Add-Custom-Legends support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: How to add custom legends in WPF Classic Chart | Syncfusion®
+description: Add custom legends in Syncfusion® WPF Classic Chart to display tailored legend items, customize legend content, and improve chart readability.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
 
-# Add Custom Legends in WPF Chart
+# How to add custom legends in WPF Classic Chart
 
 It's easy to replace existing, default, legend items with custom items in Chart or Chart Area legends.
 

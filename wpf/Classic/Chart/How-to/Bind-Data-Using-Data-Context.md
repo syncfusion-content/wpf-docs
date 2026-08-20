@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bind Data Using Data Context | wpf | Syncfusion
-description: Learn here all about Bind Data Using Data Context support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: How to bind data using data context in WPF Classic Chart | Syncfusion®
+description: Bind data using data context in Syncfusion® WPF Classic Chart to connect chart elements to data sources and automatically reflect data updates.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
 
-# Bind Data Using Data Context
+# How to bind data using data context in WPF Classic Chart
 
 When using multiple series' in the Chart, it might be convenient to set the Data Contexts at the Chart or Chart Area levels and refer to that context from the Chart Series.
 {% highlight xaml %}

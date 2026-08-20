@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Auto scale Y axis when X axis is zoomed | wpf | Syncfusion
-description: Learn here all about Auto-scale-Y-axis-when-X-axis-is-zoomed support in Syncfusion WPF Chart (Classic) control and more.
+title: How to auto scale Y axis on zoom in WPF Classic Chart | Syncfusion®
+description: Auto scale the Y axis in Syncfusion® WPF Classic Chart when the X axis is zoomed to dynamically adjust the displayed range based on visible data.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
 
-# Auto scale Y axis when X axis is zoomed
+# How to auto scale Y axis on zoom in WPF Classic Chart
 
  The auto scale of y-axis when the x-axis is zoomed can be achieved by the following steps:
 

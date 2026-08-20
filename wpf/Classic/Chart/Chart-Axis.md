@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart-Axis in WPF Chart Control | Syncfusion
-description: Learn here all about Chart-Axis support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Axis in WPF Classic Chart | Syncfusion®
+description: Axis in WPF Classic Chart supports value representation, scale customization, labels, ticks, ranges, and axis appearance settings.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart-Axis in WPF Chart (Classic)
+# Axis in WPF Classic Chart
 
 ## Indexed X Values
 
