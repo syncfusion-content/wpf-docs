@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Data Binding in WPF Chart Control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Data Binding in WPF Classic Chart | Syncfusion®
+description: Data binding in WPF Classic Chart connects chart series to data sources and supports mapping, updates, and visualization of bound data.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Data Binding in WPF Chart (Classic)
+# Data Binding in WPF Classic Chart
 
 ## IList Data Source
 

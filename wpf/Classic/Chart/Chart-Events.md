@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart-Events in WPF Chart Control | Syncfusion
-description: Learn here all about Chart-Events support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Events in WPF Classic Chart | Syncfusion®
+description: Events in WPF Classic Chart enable handling of user interactions and chart actions through event notifications and callbacks.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart-Events in WPF Chart (Classic)
+# Events in WPF Classic Chart
 
 ## Chart Axis Events
 

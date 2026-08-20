@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart-Types in WPF Chart Control | Syncfusion
-description: Learn here all about Chart-Types support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Types in WPF Classic Chart | Syncfusion®
+description: Types in WPF Classic Chart provide multiple visualization options for representing data, including categorical, financial, and statistical charts.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart-Types in WPF Chart (Classic)
+# Types in WPF Classic Chart
 
 ## Line Charts
 

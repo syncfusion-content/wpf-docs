@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Licensing FAQ – Net need for ES license validation | Syncfusion
-description: Learn here some information about whether syncfusion Essential Studio license validation needs internet conncetion.
-platform: WPF
+title: How to validate license offline in WPF | Syncfusion®
+description: Learn how to validate the Syncfusion® WPF license key offline without an internet connection during application execution and deployment.
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---
 
-# Is an internet required for Essential Studio license validation?
+# How to validate license offline in WPF
 
 * Syncfusion license validation is done offline during application execution and does not require internet access. 
 

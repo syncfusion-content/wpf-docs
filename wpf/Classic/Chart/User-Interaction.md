@@ -1,12 +1,12 @@
 ---
 layout: post
-title: User-Interaction in WPF Chart Control | Syncfusion
-description: Learn here all about User-Interaction support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: User Interaction in WPF Classic Chart | Syncfusion®
+description: User interaction in WPF Classic Chart supports selection, zooming, panning, tooltips, and other interactive chart behaviors.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# User-Interaction in WPF Chart (Classic)
+# User Interaction in WPF Classic Chart
 
 ## Zooming
 

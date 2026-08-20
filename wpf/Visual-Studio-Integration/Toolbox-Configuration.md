@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toolbox Configuration | Wpf | Syncfusion
-description: This section provides information regarding all the Syncfusion Essential Studio® utilities and its usage
+title: How to Configure Toolbox in WPF Visual Studio Extension | Syncfusion®
+description: Learn how to configure the Syncfusion® WPF components into the Visual Studio toolbox using the Syncfusion® Toolbox Installer.
 platform: wpf
 control: Essential Studio®
 documentation: ug
 ---
 
-# Toolbox Configuration
+# How to Configure Toolbox in WPF Visual Studio Extension
 
 The Syncfusion Toolbox Installer utility incorporates the Syncfusion® WPF components into the Visual Studio .NET toolbox.
 

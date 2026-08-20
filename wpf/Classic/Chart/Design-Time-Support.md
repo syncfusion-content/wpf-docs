@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Design Time Support in WPF Chart Control | Syncfusion
-description: Learn here all about Design Time Support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Design Time Support in WPF Classic Chart | Syncfusion®
+description: Design time support in WPF Classic Chart enables configuration, customization, and preview of chart elements within the Visual Studio designer.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Design Time Support in WPF Chart (Classic)
+# Design Time Support in WPF Classic Chart
 
 ## Chart Control Smart Tag Support
 

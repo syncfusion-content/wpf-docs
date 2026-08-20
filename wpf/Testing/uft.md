@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with QTP/UFT Testing for WPF control | Syncfusion
-description: This section explains about how to test with QTP/UFT for Syncfusion Essential WPF controls and its supported methods
+title: How to test WPF controls using UFT | Syncfusion®
+description: Learn how to test Syncfusion® Essential WPF controls using QTP/UFT and its supported methods and more details.
 platform: wpf
 control: Testing
 documentation: ug
 ---
-# Overview in UFT Testing 
+# How to test WPF controls using UFT
 UFT (formerly known as HP Quick Test Professional - QTP) is an automated testing software designed for testing various software applications and environments. Syncfusion provides QTP add-in that contains custom libraries, that help UFT or QTP to recognize Syncfusion controls. These custom libraries are built with the help of .NET add-in extensibility.
 
 ## Prerequisites and Compatibility
