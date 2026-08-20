@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart-Area in WPF Chart Control | Syncfusion
-description: Learn here all about Chart-Area support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Chart Area in WPF Classic Chart | Syncfusion®
+description: Chart area in WPF Classic Chart defines the plotting region and supports customization of layout, background, borders, and visual elements.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart-Area in WPF Chart (Classic)
+# Chart Area in WPF Classic Chart
 
 ## Adding Chart Area
 
