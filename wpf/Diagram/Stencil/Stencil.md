@@ -55,7 +55,7 @@ Stencil stencil = new Stencil()
 {% endhighlight %}
 {% endtabs %}
 
-![Stencil with SfDiagram host](Stencil_images/stencil-diagram.png)
+![Stencil with SfDiagram host](Stencil_images/Stencil_img1.png)
 
 ## Properties
 

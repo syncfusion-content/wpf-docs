@@ -24,7 +24,7 @@ The following properties are used to configure the Force-Directed Tree Layout. D
     - **Trade-off:** Increase for more separation; decrease for denser layouts. Large values may slow layout.
 
 - **[AttractionStrength](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_ForceDirectedTreeLayout_AttractionStrength)** (double, default: `0.5`, range: 0..1)
-    - How strongly connected nodes are pulled toward each other (a unitless coefficient between 0 and 1).
+    - How strongly connected nodes are pulled toward each other (a unit less coefficient between 0 and 1).
     - **Trade-off:** Values closer to 1 create tighter clusters; lower values allow connected nodes to spread out and ease congestion.
 
 ## Create a layout using Nodes and Connectors
