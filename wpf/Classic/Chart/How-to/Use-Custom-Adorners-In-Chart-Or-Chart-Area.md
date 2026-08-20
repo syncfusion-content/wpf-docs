@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to use custom adorners in WPF Classic Chart | Syncfusion®
-description: Use custom adorners in WPF Classic Chart to add visual elements, highlight data points, and customize chart presentation.
+description: Use custom adorners in Syncfusion® WPF Classic Chart to add visual elements, highlight data points, and customize chart presentation.
 platform: wpf
 control: Chart (Classic)
 documentation: ug

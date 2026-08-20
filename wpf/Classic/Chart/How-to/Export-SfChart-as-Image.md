@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to export chart as image in WPF Classic Chart | Syncfusion®
-description: Export chart as an image in WPF Classic Chart to save chart visuals in image formats for sharing, reporting, and documentation.
+description: Export chart as an image in Syncfusion® WPF Classic Chart to save chart visuals in image formats for sharing, reporting, and documentation.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
