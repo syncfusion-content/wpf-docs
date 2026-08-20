@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Apply the Patch for Major\Service Pack Version | Syncfusion
-description: Learn here about how to apply the patch for major or service pack version of Syncfusion Essential Studio.
+title: How to apply patch in WPF | Syncfusion®
+description: Learn how to apply the Syncfusion® patch installer for major or service pack versions of Essential Studio in WPF.
 platform: wpf
 control: Essential Studio
 documentation: ug
 ---
 
-# Applying the Patches
+# How to apply patch in WPF
 
 Syncfusion provides patch installer for major version or service pack version, either to add new features or to fix issues. You have to install the patches in the order you have received.
 

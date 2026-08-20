@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Syncfusion WPF Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion WPF component guidance.
+title: Syncfusion® WPF Agent Skills for AI Assistants | Syncfusion®
+description: Learn how to install and use Syncfusion® Agent Skills to enhance AI assistants with accurate Syncfusion® WPF component guidance.
 control: Skills
 platform: wpf
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion WPF Agent Skills for AI Assistants
+# Syncfusion® WPF Agent Skills for AI Assistants
 
 This guide introduces **Syncfusion WPF Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate WPF code using official APIs, patterns, and theming guidelines.
 
