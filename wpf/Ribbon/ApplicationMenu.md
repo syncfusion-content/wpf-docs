@@ -1516,3 +1516,17 @@ N> The [`BackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 ![Displaying Application Menu Item in WPF Ribbon](ApplicationMenu-images/wpf-ribbon-application-menu-items.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/How-to-set-application-menu-in-Ribbon) in GitHub.
+
+## Appearance
+
+The appearance of the Application Menu varies based on the applied theme. The [`ApplicationButtonImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ApplicationMenu.html#Syncfusion_Windows_Tools_Controls_ApplicationMenu_ApplicationButtonImage) property specifies the image displayed in the Application Menu button. In the **Default** theme, the assigned image is displayed as the Application Menu button. When **Office2010 or later themes** (including all classic themes and Theme Studio themes) are applied, the Application Menu is rendered as a Backstage-based **File** button, and the image specified through [`ApplicationButtonImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ApplicationMenu.html#Syncfusion_Windows_Tools_Controls_ApplicationMenu_ApplicationButtonImage) is not displayed.
+
+**Application Menu in Default Theme:**
+
+![Displaying Application Menu in Default Theme](ApplicationMenu-images/wpf-ribbon-applicationmenu-default.png)
+
+**Application Menu in Theme Studio and Classic Themes**
+
+![Displaying Application Menu in Theme Studio and Classic Themes](ApplicationMenu-images/wpf-ribbon-applicationmenu-theme.png)
+
+N> When Office2010 or later themes are applied, the Application Menu is implemented using a Backstage button. If an icon is required alongside the File button, or if additional customization is needed, customize the `BackstageHeaderTemplate` of the Backstage button header by applying a DataTemplate. This enables you to define a custom layout, such as displaying an icon together with text. You can find more details about customizing the Backstage button header using the `BackstageHeaderTemplate` property in the following link: [BackstageHeaderTemplate](https://help.syncfusion.com/wpf/ribbon/backstage#backstageheadertemplate)
