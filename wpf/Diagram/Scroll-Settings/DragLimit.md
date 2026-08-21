@@ -29,7 +29,7 @@ Drag limit behavior is enabled by handling the `SelectorChangedEvent` and its ar
     </syncfusion:SfDiagram.ScrollSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Register the selector changed event to handle it

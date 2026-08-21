@@ -36,7 +36,7 @@ To create an arc segment, you should specify the segment as [`ArcSegment`](https
 </syncfusion:SfDiagram>
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //create the connector with arc segments
@@ -100,7 +100,7 @@ Arc segments can be customized by using below properties of `ArcSegment` class,
 </syncfusion:SfDiagram>
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //create the connector with arc segments

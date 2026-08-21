@@ -21,7 +21,7 @@ Quick Commands are used to execute commonly used commands for the [Nodes](https:
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight xaml %}
 
 <ResourceDictionary.MergedDictionaries>
     <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
@@ -35,7 +35,7 @@ Quick Commands are used to execute commonly used commands for the [Nodes](https:
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiagram Diagram = new SfDiagram();
 
@@ -84,7 +84,7 @@ The Alignment of QuickCommand is similar  to [Annotation Alignment](https://help
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight xaml %}
 
 <ResourceDictionary.MergedDictionaries>
     <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
@@ -98,7 +98,7 @@ The Alignment of QuickCommand is similar  to [Annotation Alignment](https://help
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiagram Diagram = new SfDiagram();
 

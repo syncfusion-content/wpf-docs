@@ -27,7 +27,7 @@ The default value is `Infinity`.
     </syncfusion:SfDiagram.ScrollSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the ScrollSetting with auto scroll limit and scrolling area

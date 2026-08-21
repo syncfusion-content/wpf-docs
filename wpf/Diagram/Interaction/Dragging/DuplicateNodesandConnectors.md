@@ -15,7 +15,7 @@ The [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) simplifies
 N> To duplicate connectors using Ctrl + Drag, the connector must first be enabled for dragging by setting the [`ConnectorConstraints.Draggable`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html#Syncfusion_UI_Xaml_Diagram_ConnectorConstraints_Draggable) constraint.
 
 {% tabs %}
-{% highlight Xaml %}
+{% highlight xaml %}
 
  <!--Initialize the Sfdiagram-->
  <syncfusion:SfDiagram x:Name="diagram" >
@@ -32,7 +32,7 @@ N> To duplicate connectors using Ctrl + Drag, the connector must first be enable
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 SfDiagram diagram = new SfDiagram();

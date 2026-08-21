@@ -21,13 +21,13 @@ N> If the selected element is already at the highest Z-order level, executing th
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="BringToFront" Name="BringToFront" Command="Syncfusion:DiagramCommands.BringToFront"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -48,13 +48,13 @@ N> If the selected element is already at the lowest Z-order level, executing the
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="SendToBack" Name="SendToBack" Command="Syncfusion:DiagramCommands.SendToBack"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -77,13 +77,13 @@ N> The `SendBackward` command moves the selected element one level backward in t
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="SendBackward" Name="SendBackward" Command="Syncfusion:DiagramCommands.SendBackward"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -104,13 +104,13 @@ N> The `BringForward` command moves the selected element one level forward in th
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="BringForward" Name="BringForward" Command="Syncfusion:DiagramCommands.BringForward"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

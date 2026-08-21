@@ -21,13 +21,13 @@ The [`SameSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.I
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="SameSize" Name="SameSize" Command="Syncfusion:DiagramCommands.SameSize"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -46,13 +46,13 @@ The [`SameHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="SameHeight" Name="SameHeight" Command="Syncfusion:DiagramCommands.SameHeight"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -71,13 +71,13 @@ The [`SameWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="SameWidth" Name="SameWidth" Command="Syncfusion:DiagramCommands.SameWidth"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

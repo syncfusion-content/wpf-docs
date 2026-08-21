@@ -54,7 +54,7 @@ The following code example illustrates how to assign [`Shape`](https://help.sync
     </syncfusion:SfDiagram.Nodes>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the diagram
 SfDiagram diagram = new SfDiagram();
