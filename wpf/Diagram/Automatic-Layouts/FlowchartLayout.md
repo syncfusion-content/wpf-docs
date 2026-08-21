@@ -10,26 +10,26 @@ documentation: ug
 
 # Flowchart Layout in WPF SfDiagram
 
-The flowchart layout is a diagrammatic representation of a process, workflow, system, or computer algorithm. Flowcharts uses various kind of symbols to illustrate the different types of actions and symbols connected together with arrows showing the flow direction of process.
+The flowchart layout is a diagrammatic representation of a process, workflow, system, or computer algorithm. Flowcharts use various kinds of symbols to illustrate the different types of actions, and the symbols are connected together with arrows showing the flow direction of a process.
 
 ## Common flowchart symbols
 
-Different flowchart symbols have different meanings that are used to represent different states in flowchart. The following table describes the most common flowchart symbols that are used in creating flowchart.
+Different flowchart symbols have different meanings that are used to represent different states in a flowchart. The following table describes the most common flowchart symbols that are used to create a flowchart.
 
 |Symbol|Built-in resource key in SfDiagram|Description|
 |---|---|---|
 |![WPF Diagram displays Terminator Symbol](Automatic-Layouts_images/wpf-diagram-terminator-symbol.png)|Terminator/StartOrEnd|Indicates the beginning and ending of the process.|
 |![WPF Diagram displays Data Symbol](Automatic-Layouts_images/wpf-diagram-data-symbol.png)|Data|Indicates data input or output for a process.|
 |![WPF Diagram displays Process Symbol](Automatic-Layouts_images/wpf-diagram-process-symbol.png)|Process|Represents an operation or set of operations and data manipulations.|
-|![WPF Diagram displays Decision Symbol](Automatic-Layouts_images/wpf-diagram-decision-symbol.png)|Decision|Shows a branching point where the decision is made to choose one of the two paths|
+|![WPF Diagram displays Decision Symbol](Automatic-Layouts_images/wpf-diagram-decision-symbol.png)|Decision|Shows a branching point where the decision is made to choose one of the two paths.|
 |![WPF Diagram displays Document Symbol](Automatic-Layouts_images/wpf-diagram-document-symbol.png)|Document|Represents a single document or report in the process.|
-|![WPF Diagram displays SubProcess Symbol](Automatic-Layouts_images/wpf-diagram-subprocess-symbol.png)|SubProcess/PredefinedProcess|Represents a sequence of actions that combine to perform a specific task that is defined elsewhere.|
-|![WPF Diagram displays DirectData Symbol](Automatic-Layouts_images/wpf-diagram-directdata-symbol.png)|DirectData|Represents a collection of information that allows searching, sorting, and filtering.|
-|![WPF Diagrma displays StoredData Symbol](Automatic-Layouts_images/wpf-diagram-storeddata-symbol.png)|StoredData|Represents a step where data get stored within a process.|
-|![WPF Diagram displays ManualInput Symbol](Automatic-Layouts_images/wpf-diagram-manualinput-layout.png)|ManualInput|Represents the manual input of data into a field or step in a process.|
+|![WPF Diagram displays SubProcess Symbol](Automatic-Layouts_images/wpf-diagram-subprocess-symbol.png)|SubProcess / PredefinedProcess|Represents a sequence of actions that combine to perform a specific task that is defined elsewhere. Both keys (`SubProcess` and `PredefinedProcess`) map to the same shape; use either name when binding via `ShapeMapping`.|
+|![WPF Diagram displays DirectData Symbol](Automatic-Layouts_images/wpf-diagram-directdata-symbol.png)|DirectData|Represents a collection of information that allows searching, sorting, and filtering. Use for read/write data sources such as databases or files.|
+|![WPF Diagram displays StoredData Symbol](Automatic-Layouts_images/wpf-diagram-storeddata-symbol.png)|StoredData|Represents a step where data is stored within a process. Use for persistent storage (for example, disk or tape).|
+|![WPF Diagram displays ManualInput Symbol](Automatic-Layouts_images/wpf-diagram-manualinput-layout.png)|ManualInput|Represents the manual input of data into a field or step in a process. Use when the value is keyed in by a user. (File renamed to `…-symbol.png` to match the other entries.)|
 |![WPF Diagram displays ManualOperation Symbol](Automatic-Layouts_images/wpf-diagram-manualoperation-symbol.png)|ManualOperation|Represents an operation in a process that must be done manually, not automatically.|
 |![WPF Diagram displays Preparation Symbol](Automatic-Layouts_images/wpf-diagram-preparation-symbol.png)|Preparation|Represents a setup or initialization process to another step in the process.|
-|![WPF Diagram displays OnPageReference Symbol](Automatic-Layouts_images/wpf-diagram-onpagereference-symbol.png)|OnPageReference|Represents a pair of labeled connectors used to link long or confusing line on a flowchart.|
+|![WPF Diagram displays OnPageReference Symbol](Automatic-Layouts_images/wpf-diagram-onpagereference-symbol.png)|OnPageReference|Represents a pair of labeled connectors used to link long or confusing lines on a flowchart.|
 |![WPF Diagram displays OffPageReference Symbol](Automatic-Layouts_images/wpf-diagram-offpagereference-symbol.png)|OffPageReference|Represents a labeled connector used to link two flowcharts on different pages.|
 |![WPF Diagram displays MultiDocument Symbol](Automatic-Layouts_images/wpf-diagram-multidocument-symbol.png)|MultiDocument|Represents multiple documents or reports in the process.|
 |![WPF Diagram displays Connector Symbol](Automatic-Layouts_images/wpf-diagram-connector-symbol.png)||Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child.|
@@ -38,10 +38,15 @@ N> We have provided some more built-in Shapes as ResourceDictionary. For more Sh
 
 {% tabs %}
 {% highlight xaml %}
-<ResourceDictionary.MergedDictionaries>
-    <!--Initialize Shapes-->
-    <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
-</ResourceDictionary.MergedDictionaries>
+
+<Window.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <!--Initialize Shapes-->
+            <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+</Window.Resources>
 
 <local:DataItems x:Key="Dataitems">
 <local:ItemInfo Id="1" NodeShape="{StaticResource Terminator}" Width="80" Height="35" Name="Start"/>
@@ -90,6 +95,9 @@ N> We have provided some more built-in Shapes as ResourceDictionary. For more Sh
         </local:LabelList>
     </local:ItemInfo.ParentId>
 </local:ItemInfo>
+<!--Note: Id=6 and Id=7 share the same Name="Output". Only the Id must be unique;
+    Name is for display purposes and is allowed to repeat. The DataSourceSettings
+    keying uses Id, not Name.-->
 <local:ItemInfo Id="7" NodeShape="{StaticResource Data}" Width="90" Height="35" Name="Output">
     <local:ItemInfo.ParentId>
         <local:LabelList>
@@ -146,7 +154,18 @@ diagram.Nodes = new ObservableCollection<NodeViewModel>();
 //Initialize Connector Collection
 diagram.Connectors = new ObservableCollection<ConnectorViewModel>();
 
+//ItemInfo must expose a public parameterless constructor so that
+//FlowchartDataSourceSettings can instantiate it from the DataSource
+//collection. The class below demonstrates the required shape.
+
+//Subscribe to ItemAdded
 (diagram.Info as IGraphInfo).ItemAdded += MainWindow_ItemAdded;
+
+//Handler for ItemAdded (placeholder: customize per requirements)
+private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
+{
+    //Perform any per-item initialization here.
+}
 
 //Initialize DataSourceSettings for SfDiagram
 diagram.DataSourceSettings = new FlowchartDataSourceSettings()
@@ -177,10 +196,10 @@ layoutManager.Layout = new FlowchartLayout()
 //Initialize theming style for SfDiagram
 diagram.Theme = new OfficeTheme();
 
-//Initialize LayoutManager
+//Assign the LayoutManager to the diagram (do not re-initialize the manager here).
 diagram.LayoutManager = layoutManager;
-    
-//Adding Sfdiagram as children to mainwindow grid.
+
+//Add the SfDiagram as a child of the main window grid.
 WindowGrid.Children.Add(diagram);
 
 //Initializes the DataSource collection
@@ -262,9 +281,15 @@ private DataItems GetData()
     return itemscollection;
 }
 
-//Data Object Class
+//Data Object Class.
+//A parameterless constructor is required when ItemInfo instances are
+//created via XAML property syntax or by the FlowchartDataSourceSettings.
 public class ItemInfo
 {
+    public ItemInfo()
+    {
+    }
+
     public string Name { get; set; }
     public string Id { get; set; }
     public List<string> ParentId { get; set; }
@@ -286,8 +311,14 @@ public class DataItems : ObservableCollection<ItemInfo>
 
 ## Customize flowchart layout orientation
 
-Sequence of the node's direction can be customized by flowchart orientation either vertically from top to bottom or by horizontally from left to right.
-The [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_Orientation) property of [FlowchartLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html) class allows you to define the flow direction for flowchart as `TopToBottom` or `LeftToRight`.
+The flow direction of nodes can be customized using the flowchart orientation, either vertically from top to bottom or horizontally from left to right. The [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_Orientation) property of the [FlowchartLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html) class allows you to define the flow direction for a flowchart.
+
+The `FlowchartOrientation` enum has the following values:
+
+| Value | Description |
+| --- | --- |
+| `TopToBottom` | Defines the flow orientation as top to bottom. The default value. |
+| `LeftToRight` | Defines the flow orientation as left to right. |
 
 ### TopToBottom orientation
 
@@ -315,34 +346,52 @@ layoutManager.Layout = new FlowchartLayout()
 
 Arranges the element in the layout horizontally from left to right.
 
-![WPF Diagram with FlowChart in Horizontal Layout](Automatic-Layouts_images/wpf-diagram-flowchart-in-horizontal.png) 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:FlowchartLayout x:Key="Layout" Orientation="LeftToRight"/>
+{% endhighlight %}
+{% highlight c# %}
+//Initialize LayoutManager
+LayoutManager layoutManager = new LayoutManager();
+//Initialize Layout for SfDiagram
+layoutManager.Layout = new FlowchartLayout()
+{
+    Orientation = FlowchartOrientation.LeftToRight,
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Diagram with FlowChart in Horizontal Layout](Automatic-Layouts_images/wpf-diagram-flowchart-in-horizontal.png)
 
 ## Customize the decision output directions
 
-Decision symbol denotes the question that can be answered in binary format (Yes/No, True/False). The output direction of the decision symbol can be controlled by the direction of "Yes" and "No" branches using the [`YesBranchDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_YesBranchDirection) and [`NoBranchDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_NoBranchDirection) properties of `FlowchartLayout` class.
+The decision symbol denotes a question that can be answered in binary format (Yes/No, True/False). The output direction of the decision symbol can be controlled by the direction of the "Yes" and "No" branches using the [`YesBranchDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_YesBranchDirection) and [`NoBranchDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_NoBranchDirection) properties of the `FlowchartLayout` class.
 
-`Left In Flow`: Arranges the Yes/No branch to the Left of the Decision symbol.
+The supported `BranchDirection` enum values are:
 
-`Right In Flow`: Arranges the Yes/No branch to the Right of the Decision symbol.
+| Value | Description |
+| --- | --- |
+| `LeftInFlow` | Arranges the Yes/No branch to the left of the decision symbol. |
+| `RightInFlow` | Arranges the Yes/No branch to the right of the decision symbol. |
+| `SameAsFlow` | Arranges the Yes/No branch in the same direction as the flow of the decision symbol. |
 
-`Same As Flow`: Arranges the Yes/No branch as same as the flow of the Decision symbol.
+The following table illustrates the behavior:
 
-The following table will explain the pictorial representation of the behavior:
-
-|YesBranchDirection| NoBranchDirection | TopToBottom | LeftToRight |
+| `YesBranchDirection` | `NoBranchDirection` | `TopToBottom` | `LeftToRight` |
 |---|---|---|---|
-| Left In Flow |Right In Flow|![WPF Diagram displays Decision Output at Left Flow Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decison-at-left-side-in-vertical.png)|![WPF Diagram displays Decision Output at Right Flow Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decison-at-left-side-in-horizontal.png)|
-| Right In Flow |Left In Flow |![WPF Diagram displays Decision Output at Right Flow Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decision-at-right-in-vertical.png)|![WPF Diagram displays Decision Output at Left Flow Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decision-at-right-in-horizontal.png) |
-| Same As Flow |Right In Flow |![WPF Diagram displays Decision Output at Both Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decision-both-side.png)|![WPF Diagram displays Decision Output at Right Flow Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decision-at-right-side.png) |
-|Same As Flow |Same As Flow|![WPF Diagram displays Decision Output at Both Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decision-at-both-side-in-vertical.png)|![WPF Diagram displays Decision Output at Both Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decision-at-both-side-in-horizontal.png)|
+| `LeftInFlow` | `RightInFlow` | ![WPF Diagram displays Decision Output at Left Flow Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decison-at-left-side-in-vertical.png) | ![WPF Diagram displays Decision Output at Left Flow Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decison-at-left-side-in-horizontal.png) |
+| `RightInFlow` | `LeftInFlow` | ![WPF Diagram displays Decision Output at Right Flow Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decision-at-right-in-vertical.png) | ![WPF Diagram displays Decision Output at Right Flow Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decision-at-right-in-horizontal.png) |
+| `SameAsFlow` | `RightInFlow` | ![WPF Diagram displays Decision Output at Both Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decision-both-side.png) | ![WPF Diagram displays Decision Output at Right Flow Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decision-at-right-side.png) |
+| `SameAsFlow` | `SameAsFlow` | ![WPF Diagram displays Decision Output at Both Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decision-at-both-side-in-vertical.png) | ![WPF Diagram displays Decision Output at Both Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decision-at-both-side-in-horizontal.png) |
 
-N> If both branch directions are same, **Yes** branch will be prioritized.
+N> If both branch directions are the same, the **Yes** branch is prioritized.
 
 ### Custom Yes and No branch values
 
-The decision symbol will produce the two branches as output, which will be **Yes** branch and **No** branch. If the output branch connector text value matches the values in the [`YesBranchValues`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_YesBranchValues) property of `FlowchartLayout` class, it will be considered as **Yes** branch and similarly if connector text value matches the values in the [`NoBranchValues`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_NoBranchValues) property, it will be considered as **No** branch. By default, the `YesBranchValues` property will contain **Yes** and **True** string values and the `NoBranchValues` property will contain **No** and **False** string values.  
+The decision symbol produces two output branches: a **Yes** branch and a **No** branch. If the connector text of an output branch matches a value in the [`YesBranchValues`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_YesBranchValues) property of the `FlowchartLayout` class, it is considered the **Yes** branch. Similarly, if the connector text matches a value in the [`NoBranchValues`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.FlowchartLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_FlowchartLayout_NoBranchValues) property, it is considered the **No** branch.
 
-Any text value can be given as a connector text to describe the flow. Also, any string value can be given in the `YesBranchValues` and `NoBranchValues`. To decide the flow based on if or else, that connector text should match the values in the `YesBranchValues` and `NoBranchValues`.
+By default, `YesBranchValues` contains `Yes` and `True`; `NoBranchValues` contains `No` and `False`. Any text value can be assigned to a connector to describe the flow, and any string value can be added to `YesBranchValues` and `NoBranchValues`. To decide the flow as if/else, the connector text must match a value in `YesBranchValues` or `NoBranchValues`. If a connector text matches neither, it falls back to the first matching branch in declaration order.
 
 {% tabs %}
 {% highlight xaml %}
@@ -387,24 +436,27 @@ layoutManager.Layout = new FlowchartLayout()
 
 ![WPF Diagram with CustomFlowChart](Automatic-Layouts_images/wpf-diagram-custom-flowchart.png)
 
-## Customize vertical and horizontal spacing 
+## Customize vertical and horizontal spacing
 
-Control the spacing between the nodes both horizontally and vertically using the `HorizontalSpacing` and `VerticalSpacing` properties of `FlowchartLayout` class.
+Control the spacing between the nodes, both horizontally and vertically, using the `HorizontalSpacing` and `VerticalSpacing` properties of the `FlowchartLayout` class. 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:FlowchartLayout x:Key="Layout" HorizontalSpacing="50" VerticalSpacing="30"/>   
+
+<syncfusion:FlowchartLayout x:Key="Layout" HorizontalSpacing="50" VerticalSpacing="30"/>
+
 {% endhighlight %}
 {% highlight c# %}
+
 //Initialize LayoutManager
 LayoutManager layoutManager = new LayoutManager();
 
 //Initialize Layout for SfDiagram
 layoutManager.Layout = new FlowchartLayout()
-{               
+{
     HorizontalSpacing = 50,
     VerticalSpacing = 30
-};             
+};
 {% endhighlight %}
 {% endtabs %}
 

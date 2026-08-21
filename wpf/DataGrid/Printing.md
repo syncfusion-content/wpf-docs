@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in WPF SfDataGrid | Syncfusion®
-description: Printing in SfDataGrid prints grid data with customizable layouts, formatting, and page settings for professional output.
+title: Printing in WPF Data Grid | Syncfusion®
+description: Printing in Data Grid prints grid data with customizable layouts, formatting, and page settings for professional output.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Printing in WPF SfDataGrid
+# Printing in WPF Data Grid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Print) method. It also provides support to display print preview window by calling   [SfDataGrid.ShowPrintPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ShowPrintPreview) method.
 

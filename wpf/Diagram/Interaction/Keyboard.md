@@ -9,9 +9,9 @@ documentation: ug
 
 # Keyboard Support in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to interact with elements using key gestures. By default, some built-in commands are mapped to keyboard shortcuts.
 
-The following table illustrates list of Commands with key Gesture.
+The following table illustrates the list of commands and their key gestures.
 
 
 | Shortcut Key | Command | Description |
@@ -19,7 +19,7 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl + A | Select all | Select all the Nodes/Connectors in diagram. |
 | Ctrl + C | Copy | Copy the selected elements in the diagram. |
 | Ctrl + X | Cut | Cut the selected elements in the diagram. |
-| Ctrl + V | Paste | Paste the cut or copy the elements in the diagram. |
+| Ctrl + V | Paste | Paste the cut or copied elements in the diagram. |
 | Ctrl + Z | Undo | Undo(Reverse the last editing action performed on diagram). |
 | Ctrl + Y | Redo | Redo(Restores the last editing action when no other actions have occurred since the last undo on diagram). |
 | Ctrl + D | Duplicate | Copies the selected element from the diagram and pastes the copied element into the diagram. |
@@ -39,8 +39,8 @@ The following table illustrates list of Commands with key Gesture.
 | MouseScroll | Zoom | Scrolls the diagram page up and down in a vertical direction. |
 | Shift + MouseScroll | Zoom | Scrolls the diagram page left and right in a horizontal direction. |
 | Ctrl + MouseScroll | Zoom | Zoom(Zoom in/Zoom out the diagram). |
-| Ctrl + G | Group | Grouping the element in the diagram. |
-| Ctrl + Shift + U | UnGroup | UnGrouping the element in the diagram. |
+| Ctrl + G | Group | Groups the selected elements in the diagram. |
+| Ctrl + Shift + U | UnGroup | Ungroups the selected group in the diagram. |
 | Ctrl + Shift + B | SendToBack | Moves the selected element behind all the other overlapped elements. |
 | Ctrl + [ | SendBackward | Moves the selected element behind the underlying element. |
 | Ctrl + Shift + F | BringToFront | Brings the selected element to front over all the other overlapped elements. |
@@ -48,7 +48,7 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl + PlusKey(+)|Zoom | Zoom in the diagram. |
 | Ctrl + MinusKey(-)| Zoom | Zoom out the diagram. |
 | Ctrl + 0 (number 0) | Reset | To reset horizontal Offset, vertical Offset, and zoom level of the Diagram. |
-| Ctrl + Shift + W | FitToPage | Fit the diagram content into the view with respect to either width, height, or at the whole. |
+| Ctrl + Shift + W | FitToPage | Fit the diagram content into the view with respect to either width, height, or as the whole. |
 | F2 | EditAnnotation | Enable annotation editing mode of the first selected diagram element. |
 | Enter | SelectFocusedItem | Selects the focused item. |
 | Tab | FocusToNextItem | Focus on the item next to the selected item. |
@@ -62,14 +62,14 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl + U | ToggleUnderline | Adds and removes the Underline text style to the annotation. |
 | Ctrl + 1 | Pointer Tool | To select, move or resize the elements in the diagram. |
 | Ctrl + 2 | Text Tool | To draw a text node. |
-| Ctrl + 3 | Connector Tool | To draw a orthogonal connector. |
-| Ctrl + 5 | Freehand Tool | To draw a free hand connections. |
+| Ctrl + 3 | Connector Tool | To draw an orthogonal connector. |
+| Ctrl + 5 | Freehand Tool | To draw a freehand connections. |
 | Ctrl + 6 | Line Tool | To draw a straight line connector. |
 | Ctrl + 8 | Rectangle Tool | To draw a rectangle shaped node. |
 | Ctrl + 9 | Ellipse Tool | To draw an ellipse shaped node.|
 | Esc | Cancel | Stops the annotation editing or clears the selection of a diagram element. |
 
-To add custom commands, configure or modify key or mouse gesture through [Command Manager](/wpf/diagram/commands/alignment#command-manager "Command Manager")
+To add custom commands, configure or modify key or mouse gesture through [Command Manager](https://help.syncfusion.com/wpf/diagram/commands/command-manager)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Interaction/KeyboardShortcuts-sample)
 

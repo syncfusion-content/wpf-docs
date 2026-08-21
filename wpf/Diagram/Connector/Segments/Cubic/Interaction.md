@@ -36,7 +36,7 @@ While interacting with multiple cubic bezier segments, you can maintain their co
 </syncfusion:ConnectorViewModel>
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //create the connector with cubic bezier segments
 ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()

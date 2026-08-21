@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF SfSmartDataGrid | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF SfSmartDataGrid control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Smart Data Grid | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Smart Data Grid control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: SfSmartDataGrid
+control: Smart Data Grid
 documentation: ug
 ---
 
-# Getting Started with WPF SfSmartDataGrid
+# Getting Started with WPF Smart Data Grid
 
 This section provides a quick overview for working with the [WPF SfSmartDataGrid](https://www.syncfusion.com/wpf-controls/smart-datagrid) (SfSmartDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance in WPF SfDataGrid | Syncfusion®
-description: Performance in SfDataGrid provides optimizations for efficient rendering, scrolling, and data operations with large datasets.
+title: Performance in WPF Data Grid | Syncfusion®
+description: Performance in Data Grid provides optimizations for efficient rendering, scrolling, and data operations with large datasets.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Performance in WPF SfDataGrid
+# Performance in WPF Data Grid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
  

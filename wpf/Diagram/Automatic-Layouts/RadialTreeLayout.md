@@ -9,9 +9,11 @@ documentation: ug
 
 # Radial Tree Layout in WPF SfDiagram
 
-The [Radial-Tree](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout.html) layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radically around the child nodes.  
+The [Radial Tree](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout.html) layout is a specialization of the Directed Tree Layout Manager that uses a circular algorithm for locating diagram nodes. It arranges nodes in a circular pattern, positioning the root node at the center of the graph with child nodes in a circle around the root. Sub-trees are placed radially around their parent.
 
-The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout as the Radial-Tree Layout positions the nodes based on the [`LayoutRoot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_RadialTreeLayout_LayoutRoot).
+The arrangement produces ever-expanding concentric rings; the radial distance from the root indicates the node level in the hierarchy. You must specify a layout root because the radial tree layout positions the nodes based on the [`LayoutRoot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_RadialTreeLayout_LayoutRoot) property of `RadialTreeLayout`. `LayoutRoot` is of type `object` and accepts either an `INode` instance or an id string that matches a node's `Id`.
+
+N> `DataSourceSettings.Root` and `RadialTreeLayout.LayoutRoot` serve different purposes. `DataSourceSettings.Root` (a string) identifies the record in the data source that should be treated as the data-level root. `RadialTreeLayout.LayoutRoot` (an `object`) identifies the rendered node around which the layout is positioned. In the examples below we use `DataSourceSettings.Root="1"` to select the root record and let the layout pick the corresponding node automatically.
 
 {% tabs %}
 {% highlight xaml %}
@@ -70,19 +72,40 @@ The arrangement results in an ever-expanding concentric arrangement with radial 
 </local:Employees>
 
 <!--Initializes the DataSourceSettings -->
-<syncfusion:DataSourceSettings x:Key="DataSourceSettings" 
+<syncfusion:DataSourceSettings x:Key="DataSourceSettings"
                                ParentId="ParentId" Id="EmpId"
-                               DataSource="{StaticResource employees}" 
+                               DataSource="{StaticResource employees}"
                                Root="1"/>
-    <!--Initialize the Layout-->
-    <syncfusion:RadialTreeLayout x:Key="treeLayout" 
-                                 HorizontalSpacing="30" 
-                                 VerticalSpacing="50" />
-    <!--Initialize the Layout Manager-->
-    <syncfusion:LayoutManager x:Key="layoutManager" Layout="{StaticResource treeLayout}" />
+<!--Initialize the Layout. HorizontalSpacing controls the radius step;
+    VerticalSpacing controls the angular step between sibling nodes.-->
+<syncfusion:RadialTreeLayout x:Key="treeLayout"
+                             HorizontalSpacing="30"
+                             VerticalSpacing="50" />
+<!--Initialize the Layout Manager-->
+<syncfusion:LayoutManager x:Key="layoutManager" Layout="{StaticResource treeLayout}" />
+
+<!--Bind the diagram to the DataSourceSettings and LayoutManager defined above-->
+<syncfusion:SfDiagram x:Name="diagram"
+                      DataSourceSettings="{StaticResource DataSourceSettings}"
+                      LayoutManager="{StaticResource layoutManager}">
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection/>
+    </syncfusion:SfDiagram.Nodes>
+    <syncfusion:SfDiagram.Connectors>
+        <syncfusion:ConnectorCollection/>
+    </syncfusion:SfDiagram.Connectors>
+</syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initialize employee collection
+//Add the required using directives at the top of the file:
+//using Syncfusion.UI.Xaml.Diagram;
+//using Syncfusion.UI.Xaml.Diagram.Layout;
+//using System.Collections.ObjectModel;
+
+//Initialize the SfDiagram instance
+SfDiagram diagram = new SfDiagram();
+
+//Initialize the employee collection
 Employees employee = new Employees();
 
 employee.Add(new Employee() { EmpId = "1", ParentId = "", Imageurl = "./Assets/Thomas.png" });
@@ -136,7 +159,7 @@ employee.Add(new Employee() { EmpId = "48", ParentId = "21", Imageurl = "./Asset
 employee.Add(new Employee() { EmpId = "49", ParentId = "22", Imageurl = "./Assets/Thomas.png" });
 employee.Add(new Employee() { EmpId = "50", ParentId = "22", Imageurl = "./Assets/John.png" });
 
-//Initialize Datatsource settings
+//Initialize the DataSourceSettings. EmpId is the unique key.
 diagram.DataSourceSettings = new DataSourceSettings()
 {
     Id = "EmpId",
@@ -145,11 +168,13 @@ diagram.DataSourceSettings = new DataSourceSettings()
     Root = "1",
 };
 
-//Initialize LayoutManager
+//Initialize the LayoutManager with a RadialTreeLayout.
 diagram.LayoutManager = new LayoutManager()
 {
     Layout = new RadialTreeLayout()
     {
+        // HorizontalSpacing controls the radius step; VerticalSpacing
+        // controls the angular step between sibling nodes.
         HorizontalSpacing = 10,
         VerticalSpacing = 30,
     }
@@ -161,9 +186,9 @@ diagram.LayoutManager = new LayoutManager()
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Radial%20Tree)
 
-## Customize Bounds in layout
+## Customizing the bounds of the layout
 
-The [Bounds](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutBase_Bounds) Property of `RadialTreeLayout` is used to define the region where the layout to be rendered based on its root. It is valid only for `RadialTreeLayout`.
+The [`Bounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutBase_Bounds) property of `RadialTreeLayout` defines the rectangular region in which the layout is rendered. It accepts a `System.Windows.Rect` value (`x`, `y`, `width`, `height`). This property applies only to `RadialTreeLayout`. The default value is `Rect.Empty`, which lets the diagram page size determine the bounds.
 
 {% tabs %}
 {% highlight xaml %}

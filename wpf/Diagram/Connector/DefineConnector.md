@@ -9,13 +9,13 @@ documentation: ug
 
 # Connector in WPF SfDiagram
 
-Connectors are objects used to create link between two points or nodes to indicate the flow of operation or relationships between them.
+Connectors are objects used to create a link between two points or nodes to indicate the flow of operation or relationships between them.
 
 ![WPF Diagram Point to Point Connection](Connector_images/wpf-diagram-point-to-point-connection.PNG)
 
 ## Connector types
 
-Diagram supports to create five types of connectors. They are:
+The diagram supports five connector types. They are:
 
 *   `Line`
 *   `Orthogonal`
@@ -61,10 +61,13 @@ The [DefaultConnectorType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
+
+//Initialize ConnectorCollection to SfDiagram
+diagram.Connectors = new ConnectorCollection();
 
 //Define the Connector Type as line
 diagram.DefaultConnectorType = ConnectorType.Line;
@@ -86,7 +89,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ### How to draw polyline
 
-Polyline is a continuous line of a segment or a continuous line composed of more line segments. When you click the diagram page, a line will be drawn, and then new segments will be kept on added for every click on page. Line drawing will be stopped when double-click the page. This polyline will be drawn using the [`Tool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool), [`DrawingTool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool), and `DefaultConnectorType` properties.
+Polyline is a continuous line of a segment or a continuous line composed of more line segments. When you click the diagram page, a line will be drawn, and then new segments will be kept on added for every click on page. Line drawing will be stopped when you double-click the page. This polyline will be drawn using the [`Tool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool), [`DrawingTool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool), and `DefaultConnectorType` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -96,7 +99,7 @@ Polyline is a continuous line of a segment or a continuous line composed of more
                       Tool="ContinuesDraw" DrawingTool="Connector" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -124,7 +127,7 @@ Diagram has support for free-hand drawing to draw anything on the diagram page i
 <syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="FreeHand" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -165,10 +168,13 @@ The connector can be created by defining the source and target point of the conn
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
+
+//Initialize ConnectorCollection to SfDiagram
+diagram.Connectors = new ConnectorCollection();
 
 //Define the Connector Type
 diagram.DefaultConnectorType = ConnectorType.Line;
@@ -224,10 +230,16 @@ The connector can be created between nodes to display the relationship between t
 </syncfusion:SfDiagram>
              
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
+
+//Initialize NodeCollection to SfDiagram
+diagram.Nodes = new NodeCollection();
+
+//Initialize ConnectorCollection to SfDiagram
+diagram.Connectors = new ConnectorCollection();
 
 //creating source node
 NodeViewModel sourcenode = new NodeViewModel()
@@ -329,10 +341,16 @@ The [`SourcePort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
     </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
+
+//Initialize NodeCollection to SfDiagram
+diagram.Nodes = new NodeCollection();
+
+//Initialize ConnectorCollection to SfDiagram
+diagram.Connectors = new ConnectorCollection();
 
 //Create source node port
 NodePortViewModel sourcePort = new NodePortViewModel()

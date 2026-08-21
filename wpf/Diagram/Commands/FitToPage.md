@@ -9,17 +9,20 @@ documentation: ug
 
 # FitToPage Command in WPF SfDiagram
 
-The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_FitToPage) commands are used to bring the entire Diagram into the view. The [FitToPageParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) parameter is used to customize the `FitToPage` command behavior. If the parameter is null, the entire diagram fits into the view.
+The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_FitToPage) command is used to bring the entire diagram into view. The [FitToPageParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) parameter is used to customize the `FitToPage` command behavior. If the parameter is null, the entire diagram fits into view.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="FitToPage" Name="FitToPage" Command="Syncfusion:DiagramCommands.FitToPage"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 // To fit the Diagram into the view
@@ -30,11 +33,11 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 ## FitToPageParameter
 
-The `FitToPageParameter` is used to customize the `FitToPage` command behavior.
+The `FitToPageParameter` parameter is used to customize the `FitToPage` command behavior. If the parameter is null, the entire diagram fits into the view.
 
 ### CanZoomIn
 
-The [CanZoomIn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html#Syncfusion_UI_Xaml_Diagram_FitToPageParameter_CanZoomIn) is used to set whether small diagram gets zoom in to whole view or not.
+The [CanZoomIn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html#Syncfusion_UI_Xaml_Diagram_FitToPageParameter_CanZoomIn) is used to set whether small diagrams are zoomed to fit the view or not.
 
 ![CanZoomIn](Commands_Images/Commands_img18.gif)
 
@@ -44,7 +47,7 @@ The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Fi
 
 | Values | Description |
 | --- | --- |
-| None | It is used disable the fit to page behavior. |
+| None | It is used to disable the FitToPage behavior. |
 | FitToHeight | It is used to enable the fit to page behavior only with respect to height. |
 | FitToWidth | It is used to enable the fit to page behavior only with respect to width. |
 | FitToPage | It is used to enable the fit to page behavior with respect to both height and width of the diagram. |
@@ -61,9 +64,31 @@ The [Region](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitTo
 | PageSettings | It is used to perform fit to page based on the page width and page height. |
 | Custom | It is used to perform fit to page for custom region. |
 
+N> When the `Region` property is set to `Custom`, you must define the `FocusArea` property to specify the region that should be fitted into the view. Without a valid `FocusArea`, the custom fit-to-page operation cannot determine the target region.
+
 ### FocusArea 
 
-The [FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html#Syncfusion_UI_Xaml_Diagram_FitToPageParameter_FocusArea) is used to set the focus area to execute the  `FitToPage` command in custom region. 
+The [FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html#Syncfusion_UI_Xaml_Diagram_FitToPageParameter_FocusArea) is used to set the focus area to execute the `FitToPage` command in a custom region. 
+
+The following example shows how to create a `FitToPageParameter` instance and pass it to the `FitToPage` command.
+
+{% tabs %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagram = new SfDiagram();
+
+IGraphInfo graphinfo = diagram.Info as IGraphInfo;
+
+graphinfo.Commands.FitToPage.Execute(
+    new FitToPageParameter()
+    {
+        // To fit the diagram with respect to both width and height.
+        FitToPage = FitToPage.FitToPage
+    });
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Region](Commands_Images/Commands_img20.gif)
 

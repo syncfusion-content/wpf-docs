@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Lines Customization in WPF SfDataGrid | Syncfusion®
-description: Grid Lines Customization in SfDataGrid customizes grid and header lines to improve data presentation, organization, and readability.
+title: Grid Lines Customization in WPF Data Grid | Syncfusion®
+description: Grid Lines Customization in Data Grid customizes grid and header lines to improve data presentation, organization, and readability.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Grid Lines Customization in WPF SfDataGrid
+# Grid Lines Customization in WPF Data Grid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 

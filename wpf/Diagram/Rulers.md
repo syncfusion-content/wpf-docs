@@ -9,14 +9,16 @@ documentation: ug
 
 # Rulers in WPF SfDiagram
 
-The [Ruler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Ruler.html) provides a Horizontal and Vertical guide for measuring in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default [Unit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LengthUnit.html#Syncfusion_UI_Xaml_Diagram_LengthUnit_Unit) of measure is pixels. The ruler also includes a Position Indicator that displays the precise location of the mouse cursor on the diagram canvas, and the default color of position indicator marker is black.
+The [Ruler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Ruler.html) provides horizontal and vertical guides for measuring in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control. The Ruler can be used to measure diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default [Unit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LengthUnit.html#Syncfusion_UI_Xaml_Diagram_LengthUnit_Unit) of measure is pixels. The ruler also includes a Position Indicator that displays the precise location of the mouse cursor on the diagram canvas, and the default color of the position indicator marker is black.
+
+N> By default, rulers are not displayed in the diagram. To display rulers, assign `Ruler` instances to the `HorizontalRuler` and `VerticalRuler` properties of the `SfDiagram`.
 
 Please refer to the sample from Dashboard->Desktop->WPF->Diagram->GettingStarted->Rulers and Units.
 
 ## Define Rulers
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <syncfusion:SfDiagram x:Name="diagram">
     <syncfusion:SfDiagram.HorizontalRuler>
@@ -28,7 +30,7 @@ Please refer to the sample from Dashboard->Desktop->WPF->Diagram->GettingStarted
 </syncfusion:SfDiagram>
 		
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.HorizontalRuler = new Ruler();
 diagram.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
@@ -50,10 +52,11 @@ Segment width, the textual description of the ruler segment, and the appearance 
 
 ### Customizing Position Indicator Marker Brush Color
 
-You can change the color of the ruler's position indicator marker to any preferred shade by using [`MarkerBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Ruler.html#Syncfusion_UI_Xaml_Diagram_Controls_Ruler_MarkerBrush) property of the `Ruler` class.
+You can change the color of the ruler's position indicator marker y desired color by using [`MarkerBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Ruler.html#Syncfusion_UI_Xaml_Diagram_Controls_Ruler_MarkerBrush) property of the `Ruler` class.
+
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <syncfusion:SfDiagram x:Name="diagram">
     <syncfusion:SfDiagram.HorizontalRuler>
@@ -65,7 +68,7 @@ You can change the color of the ruler's position indicator marker to any preferr
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.HorizontalRuler = new Ruler() { MarkerBrush = Brushes.Red };
 diagram.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical,  MarkerBrush = Brushes.Green };

@@ -11,7 +11,7 @@ documentation: ug
 
 The [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to select, resize, or swap the lane interactively. 
 
-### Select
+## Select
 
 A Lane can be selected by clicking (tap) the header of the lane.
 
@@ -19,7 +19,7 @@ A Lane can be selected by clicking (tap) the header of the lane.
 
 * Lane can be resized in the bottom and right direction.
 * Lane can be resized by using the resize selector of the lane.
-* Lane can be resized by resizing the bottom and right border of the lane without make a selection.
+* Lane can be resized by resizing the bottom and right border of the lane without making a selection.
 * Once you can resize the lane, the swimlane will be resized automatically.
 * The lane can be resized either resizing the selector or the tight bounds of the child object. If the child node move to edge of the lane it can be automatically resized.
 * The `SwimlaneChildChangedEvent` will notify the [`UnitHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneChildViewModel_UnitHeight) and [`UnitWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneChildViewModel_UnitWidth) changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [SwimlaneChildChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_SwimlaneChildChangedEvent) 
@@ -31,7 +31,9 @@ The following image shows how to resize the lane.
 ## Lane swapping
 
 * Lanes can be swapped by dragging the lanes over another lane.
+
 * The `SwimlaneChildChangedEvent` will notify the [`RowIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneChildChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SwimlaneChildChangedEventArgs_RowIndex) and [`ColumnIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneChildChangedEventArgs.html#Syncfusion_UI_Xaml_Diagram_SwimlaneChildChangedEventArgs_ColumnIndex) changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [SwimlaneChildChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_SwimlaneChildChangedEvent) 
+
 * Helper should intimate the insertion point while lane swapping.
 
 The following image shows how to swap the lane.
