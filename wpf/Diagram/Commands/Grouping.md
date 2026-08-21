@@ -19,13 +19,13 @@ N> The Group command requires at least two diagram objects to be selected. If fe
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Group" Name="Group" Command="Syncfusion:DiagramCommands.Group"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -46,13 +46,13 @@ N> The UnGroup command can be executed only when a grouped object is selected. I
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="UnGroup" Name="UnGroup" Command="Syncfusion:DiagramCommands.UnGroup"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

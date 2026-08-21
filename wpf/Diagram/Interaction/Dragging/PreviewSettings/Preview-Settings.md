@@ -18,7 +18,7 @@ By default, Outline of the connectors connected to the dragging objects will be 
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight xaml %}
 
   <!--Create SfDiagram Instance-->
   <syncfusion:SfDiagram x:Name="Diagram">
@@ -28,7 +28,7 @@ By default, Outline of the connectors connected to the dragging objects will be 
   </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiagram diagram = new SfDiagram();
 
@@ -45,7 +45,7 @@ Appearance of the preview can be customized using [`PreviewStyle`](https://help.
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight xaml %}
 
 <Style TargetType="Shape" x:Key="previewstyle">
     <Setter Property="Stroke"
@@ -65,7 +65,7 @@ Appearance of the preview can be customized using [`PreviewStyle`](https://help.
   </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiagram diagram = new SfDiagram();
 

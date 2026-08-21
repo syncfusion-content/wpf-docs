@@ -52,7 +52,7 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 The following code example illustrates how to disable page editing.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
@@ -113,7 +113,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 The following code example illustrates how to disable rotation.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Create NodeViewModel collection
 diagram.Nodes = new ObservableCollection<NodeViewModel>();
@@ -180,7 +180,7 @@ NodeViewModel node = new NodeViewModel()
 The following code example illustrates how to disable selection.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.connectors = new ObservableCollection<ConnectorViewModel>();
 
@@ -222,7 +222,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 The following code example illustrates how to disable creating connections with a port.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 
 NodePortViewModel port=	new NodePortViewModel()
@@ -272,7 +272,7 @@ NodePortViewModel port=	new NodePortViewModel()
 The following code example illustrates how to enable annotation dragging.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 AnnotationEditorViewModel anno = new AnnotationEditorViewModel()
 {
@@ -309,7 +309,7 @@ Selector visually represents the selected elements with certain editable thumbs.
 The following code example illustrates how to hide rotator.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 (diagram.SelectedItems as SelectorViewModel).SelectorConstraints = (diagram.SelectedItems as  SelectorViewModel).SelectorConstraints & ~SelectorConstraints.Rotator;
 
@@ -339,7 +339,7 @@ The following code example illustrates how to hide rotator.
 The following code example illustrates how to show only Horizontal Gridlines
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToHorizontalLines;
 
@@ -355,7 +355,7 @@ Some of the behaviors can be defined through both the specific object (Node/Conn
 The following code example illustrates how to inherit the line bridging behavior from the Diagram.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
 
@@ -383,7 +383,7 @@ Bitwise Operations are used to manipulate the flagged enumerations [enum]. In th
 You can add or enable multiple values at a time	by using Bitwise `|` (OR) operator or Add() method of constraints.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Using OR operator
 node.Constraints = NodeConstraints.Selectable | NodeConstraints.Rotatable;
@@ -401,7 +401,7 @@ In the above example, you can do both the selection and rotation.
 You can remove or disable values by using Bitwise ‘&~’ (XOR) operator or Remove() method of constraints.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Using XOR operator
 node.Constraints = node.Constraints & ~(NodeConstraints.Rotatable);
@@ -419,7 +419,7 @@ In the above example, Rotation is disabled but other constraints are enabled.
 You can check any value by using Bitwise ‘&’ (AND) operator.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 if ((node.Constraints & (NodeConstraints.Rotatable)) == (NodeConstraints.Rotatable))
 

@@ -38,7 +38,7 @@ Also, the entire connector can be dragged over the page by using the [`Constrain
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -79,7 +79,7 @@ The routing is the process of updating the connector's geometry to avoid overlap
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Routing"/>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -98,7 +98,7 @@ N> Routing is applicable only for orthogonal connectors.
 By default, all nodes are treated as an obstacles for a connector that is connections will go around the node boundary.  You can disable the node's routing obstacles by removing the `NodeConstraints.RoutingObstacle` from the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Constraints) property of node.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 NodeViewModel node = new NodeViewModel()
 {
@@ -120,7 +120,7 @@ node.Constraints.Remove(NodeConstraints.RoutingObstacle);
 By default, each connector's routing process is inherited based on the value of the `Constraints` property of the diagram. To control the individual connector's routing regardless of the diagram, you should remove the `ConnectorConstraints.InheritRouting` enum value from the [`Constraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Constraints) property of the connector and add `ConnectorConstraints.Routing` enum value to the Constraints property or remove `ConnectorConstraints.Routing` enum value from the Constraints property to enable or disable the routing respectively.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 ConnectorViewModel connector = new ConnectorViewModel()
 {
@@ -158,7 +158,7 @@ The routing algorithm can be specified by using [`RoutingType`](https://help.syn
 </syncfusion:SfDiagram>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();

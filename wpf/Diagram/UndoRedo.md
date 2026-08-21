@@ -32,7 +32,7 @@ Undo/Redo for diagram can be enabled/disabled with the [`Constraints`](https://h
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 
@@ -53,7 +53,7 @@ Undo/redo actions can be executed using commands of diagram control instead of u
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -109,7 +109,7 @@ The [`StackLimit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
     </Syncfusion:SfDiagram.HistoryManager>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -129,7 +129,7 @@ diagram.HistoryManager = new HistoryManager()
 The `BeginComposite()` method of `HistoryManager` class allows you to log multiple actions at a time in the history manager stack. It is easier to undo or revert the changes made in the diagram in a single undo/redo process instead of reverting every action one by one.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -153,7 +153,7 @@ N> After calling the `BeginComposite()` method, you must call the `EndComposite(
 The `EndComposite()` method of the `HistoryManager` class allows you to end the group actions that are stored in the stack history.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -176,7 +176,7 @@ diagram.HistoryManager.EndComposite();
 History manager class of SfDiagram control allows you to view the undo and redo stack values where you can get what the actions, values, and elements are stored in the history manager stack by using the `HistoryChangedEventArgs` argument value of `HistoryChangedEvent` event.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -230,7 +230,7 @@ History list allows to revert or restore single and multiple changes through a s
 To achieve this you need to customize the [HistoryManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryManager.html) class of diagram control and need to override the Undo Redo methods.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -434,7 +434,7 @@ public struct NodeState
 The undo/redo process can be disabled for a particular element by using [CanLogHistoryEntry](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_CanLogHistoryEntry_Syncfusion_UI_Xaml_Diagram_LogDataArgs_) virtual method of diagram control.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the custom diagram class
 CustomDiagram diagram = new CustomDiagram();
 
@@ -498,7 +498,7 @@ HistoryChangedCommand="{Binding HistoryChangedCommand}">
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -529,7 +529,7 @@ Diagram notifies undo/redo actions through the following events,
 * [ViewPortChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ViewPortChanged)
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();

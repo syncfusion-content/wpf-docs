@@ -17,7 +17,7 @@ N> The `SetShapeStyle` command requires a valid `Style` object as its command pa
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Style TargetType="Path" x:Key="SetShapeStyleParameter">
   <Setter Property="Stretch" Value="Fill"></Setter>
@@ -28,7 +28,7 @@ N> The `SetShapeStyle` command requires a valid `Style` object as its command pa
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

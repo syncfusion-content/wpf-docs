@@ -30,7 +30,7 @@ The [IsUpdateLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagr
 N> In the following example, `args.Item` represents the node associated with the current diagram interaction event (such as a node click or command invocation event). Ensure that the item is a valid `NodeViewModel` with child nodes before executing the `ExpandCollapse` command.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

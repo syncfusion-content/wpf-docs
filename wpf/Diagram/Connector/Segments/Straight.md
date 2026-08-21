@@ -42,7 +42,7 @@ Straight segment allows you to create a straight-line connector between two end 
     </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 

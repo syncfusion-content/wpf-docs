@@ -58,7 +58,7 @@ The [`SourceDecoratorStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Define the Connector
 ConnectorViewModel EllipseDecorator = new ConnectorViewModel()
 {
@@ -130,7 +130,7 @@ Each decorator shapes can be changed as hollow type shapes, which contains a hol
 </syncfusion:ConnectorViewModel>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Define the Connector
 ConnectorViewModel HollowEllipseDecorator = new ConnectorViewModel()
 {
@@ -219,7 +219,7 @@ The [`SourceDecoratorPivot`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 <syncfusion:ConnectorViewModel SourcePoint="900,100" TargetPoint="1000,200" ConnectorGeometryStyle="{StaticResource connectorLineStyle}" SourceDecoratorPivot="0,0" SourceDecorator="{StaticResource Ellipse}" SourceDecoratorStyle="{StaticResource DecoratorFillStyle}" TargetDecoratorPivot="0,0" TargetDecorator="{StaticResource ClosedSharp}" TargetDecoratorStyle="{StaticResource DecoratorFillStyle}">
 </syncfusion:ConnectorViewModel>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 ConnectorViewModel PivotDecorator = new ConnectorViewModel()
 {
     SourcePoint = new Point(900, 100),
@@ -326,7 +326,7 @@ The [`CornerRadius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagr
 </syncfusion:ConnectorViewModel>
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 ConnectorViewModel cornerradius = new ConnectorViewModel()
 {
     SourcePoint = new Point(1300, 300),
@@ -365,7 +365,7 @@ Padding is used to leave space between the connector’s end point and the objec
                                TargetDecorator="{StaticResource ClosedSharp}" 
                                TargetDecoratorStyle="{StaticResource DecoratorFillStyle}"/>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Creating source node
 NodeViewModel sourceNode = new NodeViewModel()
@@ -428,7 +428,7 @@ Line bridging creates a bridge for lines to smartly cross over other lines, at p
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Enabling the bridging constraint
@@ -568,7 +568,7 @@ Connection can be made from/to nodes, connectors, port or on empty area in a dia
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Create connector with hit padding value
 ConnectorViewModel paddingConnector = new ConnectorViewModel()
 {
@@ -620,7 +620,7 @@ The [`ConnectionParameter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 The following code explains how to override ValidateConnection.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 /// <summary>
 /// Create custom class for diagram

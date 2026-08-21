@@ -73,7 +73,7 @@ diagram.Menu.MenuItems.Add(menu);
 The default value of the `Menu` property for `Node` and `Connector` is `null`. The following code example illustrates how to set the `Menu` and `MenuItems` on a node. Add the `.ico` file to your project as a `Resource`, then reference it with the `pack://` URI.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 node.Constraints = node.Constraints | NodeConstraints.Menu;
 node.Constraints = node.Constraints & ~NodeConstraints.InheritMenu;

@@ -36,7 +36,7 @@ To create a cubic curve, you should specify the segment as [`CubicCurveSegment`]
 </syncfusion:SfDiagram>
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //create the connector with cubic bezier segments
@@ -90,7 +90,7 @@ Cubic bezier segments are annotated with thumbs to represent the control points.
                  
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //create the connector with cubic bezier segments
 ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
@@ -137,7 +137,7 @@ Vectors also can be used to define the control points of the cubic bezier segmen
                  
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //create the connector with cubic bezier segments
 ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()

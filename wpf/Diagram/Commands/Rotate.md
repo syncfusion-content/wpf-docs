@@ -26,7 +26,7 @@ The `Angle` property is used to specify the rotation angle in degrees. The defau
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Syncfusion:RotateParameter RotationDirection="Clockwise" Angle="45"  x:Key="RotateCommandParameter"/>
 
@@ -34,7 +34,7 @@ The `Angle` property is used to specify the rotation angle in degrees. The defau
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

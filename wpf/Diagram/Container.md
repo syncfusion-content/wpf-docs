@@ -47,7 +47,7 @@ The following code illustrates how to create a Container Node.
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the diagram
 SfDiagram diagram = new SfDiagram();
@@ -148,7 +148,7 @@ The following code example explains how to define a container header and its cus
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the diagram
 SfDiagram diagram = new SfDiagram();

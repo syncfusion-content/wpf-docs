@@ -19,13 +19,13 @@ N> The Cut command is applicable only when one or more diagram elements are sele
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Cut" Name="Cut" Command="Syncfusion:DiagramCommands.Cut"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -46,13 +46,13 @@ N> The Copy command is applicable only when one or more diagram elements are sel
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Copy" Name="Copy" Command="Syncfusion:DiagramCommands.Copy"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -73,13 +73,13 @@ N> The Paste command is applicable only when the clipboard contains supported di
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Paste" Name="Paste" Command="Syncfusion:DiagramCommands.Paste"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -102,13 +102,13 @@ N> The Duplicate command creates copies of the selected diagram elements within 
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Duplicate" Name="Duplicate" Command="Syncfusion:DiagramCommands.Duplicate"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

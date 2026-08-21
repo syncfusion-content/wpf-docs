@@ -139,7 +139,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 </syncfusion:AnnotationCollection>
  
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -181,7 +181,7 @@ Connector's annotation can be aligned over its segment path using the [`Alignmen
 </syncfusion:AnnotationCollection>
  
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -216,7 +216,7 @@ The [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Ann
 </syncfusion:AnnotationCollection>
  
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -248,7 +248,7 @@ The [`Displacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagr
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Displacement="60" />
 </syncfusion:AnnotationCollection>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
 {
@@ -281,7 +281,7 @@ Position of an annotation is controlled by using its `Length` property, which re
 </syncfusion:AnnotationCollection>
  
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -391,7 +391,7 @@ When text overflows node boundaries, you can control it by using the [`WrapText`
 </syncfusion:AnnotationCollection>                    
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new AnnotationCollection()
@@ -450,7 +450,7 @@ Default appearance of the annotations can be customized by using the [`EditTempl
 </syncfusion:AnnotationCollection>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -478,13 +478,13 @@ Also, diagram has `TextAnnotationViewModel` class to customize the appearance of
 <syncfusion:AnnotationCollection>
     <!--Initialize the Text Annotation View Model class-->
     <syncfusion:TextAnnotationViewModel Text="Annotation" FontStyle="Italic" 
-                                        FontSize="12" FontFamily="TimesNewRomen" 
+                                        FontSize="12" FontFamily="Times New Romen" 
                                         TextDecorations="Underline" 
                                         FontWeight="Bold" Foreground="Black"/>
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -495,7 +495,7 @@ Annotations = new ObservableCollection<IAnnotation>()
         Text = "Annotation",
         FontStyle = FontStyles.Italic,
         FontSize = 12,
-        FontFamily = new FontFamily("TimesNewRomen"),
+        FontFamily = new FontFamily("Times New Romen"),
         TextDecorations = TextDecorations.Underline,
         FontWeight = FontWeights.Bold,
         Foreground = new SolidColorBrush(Colors.Black),
@@ -521,7 +521,7 @@ Diagram allows you to show the annotation in view or edit mode while loading the
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -557,7 +557,7 @@ Also, the [`ReadOnly`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Dia
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()

@@ -23,7 +23,7 @@ The [`SnapConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Di
     </syncfusion:SfDiagram.SnapSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize SnapSettings constraints to show Gridlines
@@ -74,7 +74,7 @@ The [`HorizontalGridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -146,7 +146,7 @@ The thickness and space between the gridlines can be customized by using [`Lines
     </syncfusion:SfDiagram.SnapSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -205,7 +205,7 @@ Find the [Gridlines Custom Spacing Sample](https://github.com/SyncfusionExamples
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram Diagram = new SfDiagram();

@@ -61,7 +61,7 @@ The [DefaultConnectorType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -99,7 +99,7 @@ Polyline is a continuous line of a segment or a continuous line composed of more
                       Tool="ContinuesDraw" DrawingTool="Connector" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -127,7 +127,7 @@ Diagram has support for free-hand drawing to draw anything on the diagram page i
 <syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="FreeHand" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -168,7 +168,7 @@ The connector can be created by defining the source and target point of the conn
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -230,7 +230,7 @@ The connector can be created between nodes to display the relationship between t
 </syncfusion:SfDiagram>
              
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -341,7 +341,7 @@ The [`SourcePort`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
     </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();

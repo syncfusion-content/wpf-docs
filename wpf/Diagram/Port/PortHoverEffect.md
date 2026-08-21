@@ -21,7 +21,7 @@ When establishing a new connection or modifying the start/end points of existing
 <syncfusion:SfDiagram x:Name="diagram" PortHoverEffect="Ripple">
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //defines the port hover connection effect as ripple.

@@ -25,7 +25,7 @@ The following example locates nodes and connectors by using their `ID` property.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 List<IGroupable> deleteableObjects = new List<IGroupable>();
 

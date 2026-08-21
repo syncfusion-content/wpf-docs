@@ -72,7 +72,7 @@ To add control manually in C#, do the following steps:
 {% capture codesnippet2 %}
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 using Syncfusion.UI.Xaml.Diagram;
 using System.Windows;
