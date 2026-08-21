@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helpers in WPF SfDataGrid | Syncfusion®
-description: Helpers in SfDataGrid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.
+title: Helpers in WPF Data Grid | Syncfusion®
+description: Helpers in Data Grid provides helper classes and methods to customize grid behavior, access grid elements, and simplify development tasks.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Helpers in WPF SfDataGrid
+# Helpers in WPF Data Grid
 
 ## IndexResolver
 
