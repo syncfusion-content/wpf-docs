@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Filtering in WPF SfDataGrid | Syncfusion®
-description: Filtering in SfDataGrid refines and displays relevant data through built-in filtering options for efficient analysis and management.
+title: Filtering in WPF Data Grid | Syncfusion®
+description: Filtering in Data Grid refines and displays relevant data through built-in filtering options for efficient analysis and management.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
-# Filtering in WPF SfDataGrid
+# Filtering in WPF Data Grid
 Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) the filtering can be applied though the UI as well as the programmatic filters. 
 
 ## Programmatic filtering

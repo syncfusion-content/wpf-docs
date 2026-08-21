@@ -1,14 +1,14 @@
 ---
 layout: post
-title: AI-Powered Features in WPF SfSmartDataGrid | Syncfusion®
-description: The AI-powered features in SfSmartDataGrid provide natural language-driven data operations, including sorting, grouping, filtering, and highlighting.
+title: AI-Powered Features in WPF Smart Data Grid | Syncfusion®
+description: The AI-powered features in Smart Data Grid provide natural language-driven data operations, including sorting, grouping, filtering, and highlighting.
 platform: wpf
-control: SfSmartDataGrid
+control: Smart Data Grid
 documentation: ug
 keywords : WPF datagrid, ai assist, natural language commands, sorting, grouping, filtering, highlighting
 ---
 
-# AI-Powered Features in WPF SfSmartDataGrid
+# AI-Powered Features in WPF Smart Data Grid
 
 The `SfSmartDataGrid` provides AI-powered capabilities that enable grid operations through natural language prompts, removing the need for manual configuration. Actions such as sorting, grouping, filtering, highlighting, and clearing can be applied using simple text commands. Multi-column operations are supported in a single prompt for efficient interaction with the grid.
 
