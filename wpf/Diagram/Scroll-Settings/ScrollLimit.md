@@ -27,7 +27,7 @@ The default value is `Diagram`.
     </syncfusion:SfDiagram.ScrollSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the scroll settings with scroll limit
@@ -71,7 +71,7 @@ You can restrict scrolling beyond a specific rectangular area by using the `Scro
     </syncfusion:SfDiagram.ScrollSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the scroll settings with scroll limit and scrollable area value

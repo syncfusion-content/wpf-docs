@@ -20,7 +20,7 @@ N> By default, virtualization is disabled. To enable virtualization and improve 
 <!--Initialize the SfDiagram and enable the virtualize constraint-->
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Virtualize"/>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -43,7 +43,7 @@ N> Deferred scrolling (`Outline`) depends on virtualization and works only when 
 <!--Initialize the SfDiagram and enable the virtualize and outline constraint-->
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Virtualize,Outline"/>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -85,7 +85,7 @@ Options are provided to customize the appearance, style, and render interval of 
 </syncfusion:SfDiagram>
 	
 {% endhighlight %}	
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();

@@ -18,7 +18,7 @@ Please refer to the sample from Dashboard->Desktop->WPF->Diagram->GettingStarted
 ## Define Rulers
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <syncfusion:SfDiagram x:Name="diagram">
     <syncfusion:SfDiagram.HorizontalRuler>
@@ -30,7 +30,7 @@ Please refer to the sample from Dashboard->Desktop->WPF->Diagram->GettingStarted
 </syncfusion:SfDiagram>
 		
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.HorizontalRuler = new Ruler();
 diagram.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
@@ -56,7 +56,7 @@ You can change the color of the ruler's position indicator marker y desired colo
 
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <syncfusion:SfDiagram x:Name="diagram">
     <syncfusion:SfDiagram.HorizontalRuler>
@@ -68,7 +68,7 @@ You can change the color of the ruler's position indicator marker y desired colo
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.HorizontalRuler = new Ruler() { MarkerBrush = Brushes.Red };
 diagram.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical,  MarkerBrush = Brushes.Green };

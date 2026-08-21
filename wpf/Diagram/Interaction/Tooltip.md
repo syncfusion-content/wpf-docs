@@ -24,7 +24,7 @@ By default, the diagram displays the tooltip at a static position during an inte
 Diagram control displays the tooltip at a dynamic position when the [`SelectorHandleDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorHandleDisplayMode.html) is set to `Compact`. When resizing a diagram element, the tooltip is positioned closer to the resizer thumbs, and when dragging, the tooltip is positioned automatically in the nearest available viewport area around that diagram element. The following image illustrates how the dynamic tooltip works.
 
 {% tabs %}
-{% highlight Xaml %}
+{% highlight xaml %}
 
 <syncfusion:SfDiagram x:Name="diagram" SelectorHandleDisplayMode="Compact" >
 
@@ -32,7 +32,7 @@ Diagram control displays the tooltip at a dynamic position when the [`SelectorHa
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiagram Diagram = new SfDiagram();
 

@@ -31,7 +31,7 @@ In `Stencil`, [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/
 Here is a simple code example to demonstrate how to save the stencil.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // To save as stream in file.
 SaveFileDialog dialog = new SaveFileDialog();
@@ -61,7 +61,7 @@ N> Before calling `Load`, the Stencil may already contain `SymbolGroup`s. The lo
 The following example demonstrates how to load a Stencil with its saved settings:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Load from saved XAML file.
 OpenFileDialog dialog = new OpenFileDialog();
@@ -93,7 +93,7 @@ The Stencil also supports exporting and importing specific symbol groups. This f
 In Stencil, the [ExportGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ExportGroup_System_IO_Stream_System_String___) method allows you to export SymbolGroups. By providing the symbol group names as parameters to this method, you can save the specified SymbolGroups to a stream, preserving all their properties for easy sharing or future use. Here is a simple code example showing how to export the symbol groups:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 string[] symbolGroupNames = { "Basic Shapes", "Flow Shapes", "BPMN Editor Shapes" };
 
@@ -116,7 +116,7 @@ if (dialog.ShowDialog() == true)
 To import the saved symbol groups back into the stencil, use the [ImportGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ImportGroup_System_IO_Stream_) method with the saved stream. This will load the stencil with the saved symbol groups. Here is a simple code example showing how to import the symbol groups:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 OpenFileDialog dialog = new OpenFileDialog();
 if (dialog.ShowDialog() == true)

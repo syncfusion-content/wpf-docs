@@ -13,13 +13,13 @@ The [`Flip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiag
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Flip" Name="Flip" Command="Syncfusion:DiagramCommands.Flip"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram Diagram = new SfDiagram();
@@ -58,7 +58,7 @@ The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.ht
 | None | It is used to disables all the flip behavior. |
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram Diagram = new SfDiagram();

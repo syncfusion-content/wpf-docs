@@ -225,13 +225,13 @@ The [`MoveToLastInRow`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Di
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="MoveToLastInRow" Click="MoveToLastInRow_Click" ToolTip="End"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 private void MoveToLastInRow_Click(object sender, RoutedEventArgs e)
 {
@@ -250,13 +250,13 @@ The [`MoveToFirstInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="MoveToFirstInColumn" Click="MoveToFirstInColumn_Click" ToolTip="Page Up"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 private void MoveToFirstInColumn_Click(object sender, RoutedEventArgs e)
 {
@@ -275,13 +275,13 @@ private void MoveToFirstInColumn_Click(object sender, RoutedEventArgs e)
 The [`MoveToLastInColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.IStencilCommand.html#Syncfusion_UI_Xaml_Diagram_Stencil_IStencilCommand_MoveToLastInColumn) command moves selection to the last symbol in the current column of the `SymbolGroup` or the last symbol of the symbol group if none is selected. MoveToLastInColumn command can be executed by pressing the PageDown key.
 
 {% tabs %}
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="MoveToLastInColumn" Click="MoveToLastInColumn_Click" ToolTip="Page Down"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 private void MoveToLastInColumn_Click(object sender, RoutedEventArgs e)
 {
     if (Stencil != null)
@@ -300,7 +300,7 @@ Removing a command from the `CommandManager` is straightforward. To do this, you
 Here is an example of how to remove a specific command from the CommandManager:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Removing a particular stencil command from the CommandManager
 if (Stencil != null)

@@ -48,7 +48,7 @@ Snapping helps you to drag or resize the elements completely and sharp from one 
 </syncfusion:SfDiagram>
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the Snap Settings
@@ -97,7 +97,7 @@ Snapping on rotation can be enabled or disabled using the [`SnapConstraints`](ht
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();

@@ -33,7 +33,7 @@ Snapping to objects can be enabled by assigning values to the `SnapToObject` pro
   </syncfusion:SfDiagram.SnapSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -93,7 +93,7 @@ When snapping, cyan-colored indicator lines will be shown. These indication line
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -131,7 +131,7 @@ Snapping to gridlines can be enabled or disabled with the [SnapConstraints](http
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();

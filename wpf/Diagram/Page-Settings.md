@@ -29,7 +29,7 @@ By default, [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) pa
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 
@@ -68,7 +68,7 @@ Based on the position of diagram elements, the size of the page dynamically incr
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -109,7 +109,7 @@ The appearance of the pages can be customized by using the following properties 
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and its properties
@@ -145,7 +145,7 @@ The area between the main content of a page and the page edges can be changed us
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and print margin property
@@ -180,7 +180,7 @@ The measurement units of the page can be changed by using the [Unit](https://hel
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and unit property.
@@ -215,7 +215,7 @@ The [PrintScale](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.P
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and print scale value.
@@ -250,7 +250,7 @@ You can restrict the diagram page scaling to minimum and maximum values by using
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the page settings and print scale value.
@@ -284,7 +284,7 @@ The `AdjustPageOrigin` method contains the [Info](https://help.syncfusion.com/cr
 | PageOrigin | Gets the origin of the page. | ![PageOrigin](Page-Settings_images/PageOrigin.png)  |
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();

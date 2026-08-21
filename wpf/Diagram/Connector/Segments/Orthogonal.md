@@ -35,7 +35,7 @@ To create an orthogonal segment, specify the segment as [`OrthogonalSegment`](ht
     </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //create the connector with orthogonal segments
@@ -111,7 +111,7 @@ When necessary, some segments are added or removed automatically, when dragging 
     </syncfusion:ConnectorViewModel.Segments>
 </syncfusion:ConnectorViewModel>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //create the connector with orthogonal segments.
 ConnectorViewModel simpleConnector = new ConnectorViewModel()

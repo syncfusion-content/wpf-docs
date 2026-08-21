@@ -26,7 +26,7 @@ While a symbol is being dragged from the stencil control, it will be added into 
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,RestrictNegativeAxisDragDrop">
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -51,7 +51,7 @@ To define a different behavior for a specific node or connector, remove the `Inh
 The following code example illustrates how to enable restrict object dragging at negative region behavior for a particular Node or specific connector.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 //Here node is instance of a NodeViewModel
 //Remove inherit constraint.
 node.Constraints &= ~NodeConstraints.InheritRestrictNegativeAxisDragDrop;

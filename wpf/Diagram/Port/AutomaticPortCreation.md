@@ -21,7 +21,7 @@ documentation: ug
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //We need to enable tool and drawingtool to draw connector by clicking and dragging the mouse over the node.
 diagram.Tool = Tool.ContinuesDraw;

@@ -133,7 +133,7 @@ The following XAML and C# sample demonstrates how to filter the symbols shown in
      </stencil:Stencil>
 </Grid>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 public class StencilVM : INotifyPropertyChanged
 {

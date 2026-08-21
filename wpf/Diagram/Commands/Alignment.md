@@ -17,13 +17,13 @@ The [`AlignLeft`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignLeft" Name="AlignLeft" Command="Syncfusion:DiagramCommands.AlignLeft"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -42,13 +42,13 @@ The [`AlignRight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignRight" Name="AlignRight" Command="Syncfusion:DiagramCommands.AlignRight"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -66,13 +66,13 @@ The [`AlignCenter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignCenter" Name="AlignCenter" Command="Syncfusion:DiagramCommands.AlignCenter"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -92,13 +92,13 @@ The [`AlignTop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.I
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignTop" Name="AlignTop" Command="Syncfusion:DiagramCommands.AlignTop"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -116,13 +116,13 @@ The [`AlignBottom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignBottom" Name="AlignBottom" Command="Syncfusion:DiagramCommands.AlignBottom"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -140,13 +140,13 @@ The [`AlignMiddle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignMiddle" Name="AlignMiddle" Command="Syncfusion:DiagramCommands.AlignMiddle"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

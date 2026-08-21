@@ -17,7 +17,7 @@ In [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), DataContra
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiagram sfDiagram = new SfDiagram();
 
@@ -45,7 +45,7 @@ sfDiagram.Save(str);
 On deserialization, the saved stream is used to load the SfDiagram's nodes and connectors into the current view. With this, you can continue working on the earlier saved SfDiagram by loading the appropriate stream.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiagram sfDiagram = new SfDiagram();
 
@@ -82,7 +82,7 @@ N> By default, `HasChanges` is set to `false`. It is automatically updated to `t
 <Button x:Name="SaveButton" Content="Save" Click="SaveButton_Click">
 </Button>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Method to promote the save dialouge box when diagram has any unsaved changes.
 private void SaveButton_Click(object sender, RoutedEventArgs e)
 {
@@ -124,7 +124,7 @@ In SfDiagram, you cannot serialize the Content and ContentTemplate of each and e
 The custom properties in custom class derived from any of our SfDiagram's interface or from any of the view model classes are serialized with the help of the DataMember attribute.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 public class NodeContent : INode
 {
@@ -146,7 +146,7 @@ N> SfDiagram's interface and view model classes are created without DataContract
 You can serialize a business class with the help of the DataContract attribute and SfDiagram's `KnownTypes` property. You have to add DataContract attribute to serialize the whole class, which is not derived from a base class without DataContract attribute.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 [DataContract]
 public class NodeContent
@@ -174,7 +174,7 @@ Diagram.KnownTypes = () => new List<Type>()
 You can load any of the old version SfDiagram's stream in new version with the help of upgrade method. Refer to the following code example.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 using (Stream myStream = dialog.OpenFile())
 {
@@ -194,7 +194,7 @@ The [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Sf
 The [SaveDiagramAsMermaid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SaveDiagramAsMermaid) method serializes your diagram into a Mermaid-compatible string. This method works for diagrams using Flowchart, Mind Map, or Sequence Diagram layouts. The following example shows how to save a diagram:
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Initialize the SfDiagram
 SfDiagram Diagram = new SfDiagram();
@@ -255,7 +255,7 @@ string mermaidData = Diagram.SaveDiagramAsMermaid();
 You can load a [diagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) from the serialized Mermaid syntax data using the [LoadDiagramFromMermaid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_LoadDiagramFromMermaid_System_String_) method. The following code illustrates how to load a diagram from a Mermaid string data.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Initialize the SfDiagram
 SfDiagram Diagram = new SfDiagram();

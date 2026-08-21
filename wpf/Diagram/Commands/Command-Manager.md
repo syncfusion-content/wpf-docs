@@ -13,7 +13,7 @@ The [CommandManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagr
 
 The `CommandManager` can be accessed through the `SfDiagram` instance and is used to manage built-in and custom gesture commands.
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -84,7 +84,7 @@ The following code example represents how to define a custom Save command (Contr
 
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // To define the mouse and keyboard gesture for the commands
 GestureCommand saveGesture = new GestureCommand()

@@ -26,7 +26,7 @@ N> Nudge commands are applicable only when one or more diagram elements are sele
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Syncfusion:MoveParameter MoveDelta="5" x:Key="MoveupCommandParameter"/> 
 
@@ -34,7 +34,7 @@ N> Nudge commands are applicable only when one or more diagram elements are sele
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

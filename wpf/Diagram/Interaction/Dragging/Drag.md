@@ -25,7 +25,7 @@ In `SelectorChangedEvent` based on the arguments the process occurs,
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiargam Diagram = new SfDiagram();
 
@@ -71,7 +71,7 @@ Diagram provides support to drag its elements in either vertical or horizontal d
 Diagram provides support to drop a [node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) over another node or [connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html). Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can be enabled with the [AllowDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) constraints property for both nodes and connectors.
 
 {% tabs %}
-{% highlight Xaml %}
+{% highlight xaml %}
 
 <syncfusion:SfDiagram.Nodes>
     <syncfusion:NodeCollection>
@@ -82,7 +82,7 @@ Diagram provides support to drop a [node](https://help.syncfusion.com/cr/wpf/Syn
 </syncfusion:SfDiagram.Nodes>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Enable AllowDrop Constraints for Node
 
@@ -105,7 +105,7 @@ Drag and drop a node over another node or connector will show a preview for the 
 | [ConnectorDropIndicatorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_ConnectorDropIndicatorStyle) | Defines the customization option for preview for the Connector.|
 
 {% tabs %}
-{% highlight Xaml %}
+{% highlight xaml %}
 
 <Style TargetType="Shape" x:Key="Nodedropindicator">
     <Setter Property="StrokeThickness" Value="4"/>
@@ -123,7 +123,7 @@ Drag and drop a node over another node or connector will show a preview for the 
                       ConnectorDropIndicatorStyle="{StaticResource connectordropindicator}">
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiagram Diagram = new SfDiagram();
 

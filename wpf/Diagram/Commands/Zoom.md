@@ -30,7 +30,7 @@ For ZoomIn operation
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Syncfusion:ZoomPositionParameter ZoomCommand="ZoomIn" ZoomFactor="0.2" x:Key="ZoomInParameter"/>
 
@@ -38,7 +38,7 @@ For ZoomIn operation
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -59,7 +59,7 @@ For ZoomOut operation
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Syncfusion:ZoomPositionParameter ZoomCommand="ZoomOut" ZoomFactor="0.2" x:Key="ZoomOutParameter"/>
 
@@ -67,7 +67,7 @@ For ZoomOut operation
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -90,7 +90,7 @@ For ZoomTo specific value
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Syncfusion:ZoomPositionParameter ZoomCommand="Zoom" ZoomTo="2" x:Key="ZoomToParameter"/>
 
@@ -98,7 +98,7 @@ For ZoomTo specific value
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -120,7 +120,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 For Panning
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -142,7 +142,7 @@ For HorizontalScroll
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Syncfusion:ZoomPositionParameter ZoomCommand="HorizontalScroll" ScrollDelta="5" x:Key="HorizontalScrollParameter"/>
 
@@ -150,7 +150,7 @@ For HorizontalScroll
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -171,7 +171,7 @@ For VerticalScroll
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Syncfusion:ZoomPositionParameter ZoomCommand="VerticalScroll" ScrollDelta="50"  x:Key="ZoomPositionCommandParameter"/>
 
@@ -179,7 +179,7 @@ For VerticalScroll
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -218,7 +218,7 @@ The `Reset` parameter is used to define the behavior of the Reset Command.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Syncfusion:ResetParameter Reset="ZoomPan" x:Key="ResetParameterCommandParameter"/>
 
@@ -226,7 +226,7 @@ The `Reset` parameter is used to define the behavior of the Reset Command.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

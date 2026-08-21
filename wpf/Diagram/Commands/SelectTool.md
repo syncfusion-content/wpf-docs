@@ -64,7 +64,7 @@ For details , refer [Tools and DrawingTools](https://help.syncfusion.com/wpf/dia
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
  <!-- To draw an ellipse node-->
  <Syncfusion:SelectToolCommandParameter DrawingTool="Ellipse" Tool="ContinuesDraw"  x:Key="SelectToolEllipseCommandParameter"/>
@@ -83,7 +83,7 @@ For details , refer [Tools and DrawingTools](https://help.syncfusion.com/wpf/dia
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();

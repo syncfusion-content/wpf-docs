@@ -129,7 +129,7 @@ You can add any number of annotations to a node or connector.
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()

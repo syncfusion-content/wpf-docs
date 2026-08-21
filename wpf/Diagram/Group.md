@@ -17,7 +17,7 @@ A Group is used to cluster multiple Nodes and Connectors into a single element. 
 
 The following code illustrates how to create a Group Node.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the diagram
 SfDiagram diagram = new SfDiagram();

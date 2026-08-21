@@ -13,13 +13,13 @@ The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ID
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="FitToPage" Name="FitToPage" Command="Syncfusion:DiagramCommands.FitToPage"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
@@ -73,7 +73,7 @@ The [FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Fi
 The following example shows how to create a `FitToPageParameter` instance and pass it to the `FitToPage` command.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagram = new SfDiagram();

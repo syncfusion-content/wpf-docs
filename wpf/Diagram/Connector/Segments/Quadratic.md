@@ -36,7 +36,7 @@ To create a quadratic curve line, you should specify the segment as [`QuadraticC
 </syncfusion:SfDiagram>
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //create the connector with quadratic bezier segments

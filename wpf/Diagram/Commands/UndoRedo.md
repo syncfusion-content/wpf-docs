@@ -16,7 +16,7 @@ The [Undo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagra
 N> Undo and Redo commands are available only when the `GraphConstraints.Undoable` constraint is enabled on the `SfDiagram`. Ensure that this constraint is set before executing the Undo or Redo commands.
 
 {% tabs %}
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Syncfusion:SfDiagram x:Name="diagramcontrol" Constraints="Default,Undoable"/>
 
@@ -25,7 +25,7 @@ N> Undo and Redo commands are available only when the `GraphConstraints.Undoable
 <Button Height="50" Content="Redo" Name="Redo" Command="Syncfusion:DiagramCommands.Redo"></Button>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram 
 SfDiagram diagramcontrol = new SfDiagram();
