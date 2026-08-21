@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in WPF SfDataGrid | Syncfusion®
-description: Columns in SfDataGrid supports auto-generated and custom columns, column types, resizing, reordering, freezing, and data binding.
+title: Columns in WPF Data Grid | Syncfusion®
+description: Columns in Data Grid supports auto-generated and custom columns, column types, resizing, reordering, freezing, and data binding.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Columns in WPF SfDataGrid
+# Columns in WPF Data Grid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`.
 
