@@ -47,9 +47,11 @@ The following code illustrates how to create a Container Node.
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+//Initialize the diagram
+SfDiagram diagram = new SfDiagram();
+
 NodeViewModel node = new NodeViewModel()
 {
 	UnitWidth = 100,
@@ -146,9 +148,11 @@ The following code example explains how to define a container header and its cus
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+//Initialize the diagram
+SfDiagram diagram = new SfDiagram();
+
 NodeViewModel node = new NodeViewModel()
 {
 	UnitWidth = 100,
@@ -202,13 +206,13 @@ N> You can edit the header by double-clicking the region of the container's head
 
 ### Container from Stencil
 
-Container Nodes can be predefined and added to the stencil. You can drop those Containers into Diagram when required.
+Container Nodes can be predefined and added to the stencil. You can drop those Containers into the Diagram when required.
 
 To explore how to add Containers from stencil, refer to [Stencil](https://help.syncfusion.com/wpf/diagram/stencil/stencil).
 
 ## Interactively add or remove diagram elements into Container
 
-You can interactively add or remove diagram elements from the Container in the runtime. Container will adjust its size when you drop diagram element into its edges.
+You can interactively add or remove diagram elements from the Container at runtime. Container will adjust its size when you drop diagram element into its edges.
 
 ![WPF Diagram Container Interaction](Container_images/Container.gif)
 
@@ -220,11 +224,11 @@ Diagram provides support to drag or resize the container interactively.
 
 Container can be selected by clicking (tap) it.
 
-* The `IsSelected` Property is used to select or unselect the node at runtime.
+* The `IsSelected` Property is used to select or deselect the node at runtime.
 
-* `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html).
+* `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To learn about the arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html).
 
-* `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html).
+* `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source. To learn about the arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html).
 
 ![WPF Diagram Container Selection](Container_images/Container-Selection.png)
 
@@ -238,7 +242,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/diagram/snapping "Snapping").
 
-* The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html).
+* The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To learn about the arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html).
 
 ![WPF Diagram Drag Container](Container_images/Container-Drag.gif)
 
@@ -246,18 +250,18 @@ To explore about selection and selection related events, refer to the [Selection
 
 * The selector is surrounded by eight thumbs. By dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
-* Enable [AspectRatio](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) NodeConstraints to maintain the aspect ratio of the container when its being resized. 
+* Enable [AspectRatio](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) NodeConstraints to maintain the aspect ratio of the container when it is being resized. 
 * While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/diagram/snapping/definesnapping "Snapping").
 
-* The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html).
+* The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To learn about the arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html).
 
 ![WPF Diagram Resize Container](Container_images/Container-Resize.gif)
 
 ## Events
 
-* The `ItemTappedEvent` is invoked on clicking the container. To explore about arguments, refer to the [ItemTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemTappedEventArgs.html).
-* The `ItemDoubleTappedEvent` is invoked on double-clicking the container. To explore about arguments, refer to the [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventArgs.html).
-* The `MouseDown` and `MouseUp` are invoked as similar to framework element that is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, refer to the [MouseDownEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
+* The `ItemTappedEvent` is triggered on clicking the container. To learn about the arguments, refer to the [ItemTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemTappedEventArgs.html).
+* The `ItemDoubleTappedEvent` is triggered on double-clicking the container. To learn about the arguments, refer to the [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventArgs.html).
+* The `MouseDown` and `MouseUp` are triggered as similar to framework element that is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To learn about the arguments, refer to the [MouseDownEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
 [MouseUpEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).
 
 ## See Also

@@ -9,15 +9,15 @@ documentation: ug
 
 # Phase in WPF SfDiagram
 
-The [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) is the subprocess which will split each lanes as horizontally or vertically based on the swimlane orientation. The multiple number of phase can be added to swimlane.
+The [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) is the subprocess which will split each lanes as horizontally or vertically based on the swimlane orientation. Multiple phases can be added to a swimlane.
 
 ## Create an empty Phase
 
-You can create the [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) and add into the [Phases](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Phases) collection of the Swimlane.
+You can create the [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) and add to the [Phases](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Phases) collection of the Swimlane.
 
 N> For Horizontal Swimlane, you must set the `UnitWidth` of the Phase. For Vertical Swimlane, you must set `UnitHeight` of the Phase.
 
-The following code example explains how to add phase at swimlane.
+The following code example explains how to add phase to a swimlane.
 
 {% tabs %}
 {% highlight xaml %}
@@ -107,7 +107,7 @@ The following code example explains how to add phase at swimlane.
 
 ## Dynamically add phase to Swimlane
 
-You can add the a phase at runtime by using the `Add` and `Remove` method of the [`SfDiagram.Phases`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Phases) collection. The following code example explains how to add and remove phase at run time.
+You can add the phase at runtime by using the `Add` and `Remove` method of the [`SfDiagram.Phases`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel.html#Syncfusion_UI_Xaml_Diagram_SwimlaneViewModel_Phases) collection. The following code example explains how to add and remove phase at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -236,22 +236,23 @@ The following code example explains how to define a Phase header and its customi
 
 {% tabs %}
 {% highlight xaml %}
-
-<Style x:Key="PhaseHeaderStyle" TargetType="Path">
-   <Setter Property="Fill" Value="CadetBlue"/>
-   <Setter Property="Stretch" Value="Fill"/>
-   <Setter Property="Stroke" Value="#41719C"/>
-   <Setter Property="StrokeThickness" Value="1"/>
-</Style>
- <!--Template overriding for view template-->
-<DataTemplate x:Key="viewTemplate">
-    <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
-               FontStyle="Italic" FontSize="12" 
-               FontFamily="TimesNewRomen" 
-               TextDecorations="Underline" 
-               FontWeight="Bold" 
-               Foreground="AliceBlue"/>
-</DataTemplate>
+<Window.Resources>
+  <Style x:Key="PhaseHeaderStyle" TargetType="Path">
+    <Setter Property="Fill" Value="CadetBlue"/>
+    <Setter Property="Stretch" Value="Fill"/>
+    <Setter Property="Stroke" Value="#41719C"/>
+    <Setter Property="StrokeThickness" Value="1"/>
+  </Style>
+  <!--Template overriding for view template-->
+  <DataTemplate x:Key="viewTemplate">
+      <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
+                FontStyle="Italic" FontSize="12" 
+                FontFamily="Times New Roman" 
+                TextDecorations="Underline" 
+                FontWeight="Bold" 
+                Foreground="AliceBlue"/>
+  </DataTemplate>
+</Window.Resources>
 
  <syncfusion:SfDiagram x:Name="diagram" >
                 <syncfusion:SfDiagram.Swimlanes>
@@ -270,10 +271,10 @@ The following code example explains how to define a Phase header and its customi
                             </syncfusion:SwimlaneViewModel.Header>
                             <syncfusion:SwimlaneViewModel.Phases>
                             <syncfusion:PhaseCollection>
-                                <!--Initialize the Lane-->
+                                <!--Initialize the Phase-->
                                 <syncfusion:PhaseViewModel UnitHeight="100">
                                     <syncfusion:PhaseViewModel.Header>
-                                        <!--Create a header for Lane-->
+                                        <!--Create a header for Phase-->
                                         <syncfusion:SwimlaneHeaderViewModel UnitWidth="30" ShapeStyle="{StaticResource phaseHeaderStyle}" >
                                             <syncfusion:SwimlaneHeaderViewModel.Annotation>
                                                 <syncfusion:AnnotationEditorViewModel Content="Phase 1" ViewTemplate="{StaticResource viewTemplate}"></syncfusion:AnnotationEditorViewModel>
@@ -339,7 +340,7 @@ The following code example explains how to define a Phase header and its customi
 
  * You can select the individual phase header by clicking on the header twice. For first click, the respective phase can select. 
 
- * You can support to resize the individual phase header. While resizing the phase, it has maintain 20px distances from Lane children.
+ * You can support to resize the individual phase header. While resizing the phase, it has maintain 20px distance from Lane children.
 
  * The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) 
 
@@ -349,7 +350,7 @@ The following code example explains how to define a Phase header and its customi
 
 ## Phase header editing
 
-The diagram provides the support to edit phase headers at runtime. You can achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
+The diagram provides the support to edit phase headers at runtime. You can achieve the header editing by double click event. Double clicking the header label will enable the editing of that.
 
 The following image shows how to edit the phase header.
 

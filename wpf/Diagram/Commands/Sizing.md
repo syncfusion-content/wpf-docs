@@ -9,21 +9,28 @@ documentation: ug
 
 # Sizing Commands in WPF SfDiagram
 
-Sizing commands are used to resize all selected object based on width, height, and size of the reference object (FirstSelectedItem).
+Sizing commands are used to resize all selected objects based on width, height, or size of the reference object (FirstSelectedItem).
+
+N> Sizing commands use the `FirstSelectedItem` as the reference object. The size of this object is preserved, and all other selected objects are resized to match its width, height, or overall size, depending on the command being executed. Therefore, the sizing result depends on which object is selected first.
+
+N> Sizing commands require at least two selected objects. The first selected object is used as the reference object, and the remaining selected objects are resized based on it. If only one object is selected or no objects are selected, the sizing command will not produce any change.
 
 ## SameSize command
 
-The [`SameSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SameSize) command is used to resize all the selected object based on the size of the first item in the selection list.
+The [`SameSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SameSize) command is used to resize all the selected objects based on the size of the first item in the selection list.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="SameSize" Name="SameSize" Command="Syncfusion:DiagramCommands.SameSize"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -35,17 +42,20 @@ graphinfo.Commands.SameSize.Execute(null);
 
 ## SameHeight command
 
-The [`SameHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SameHeight) command is used to resize all the selected object based on the height of the first item in the selection list.
+The [`SameHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SameHeight) command is used to resize all the selected objects based on the height of the first item in the selection list.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="SameHeight" Name="SameHeight" Command="Syncfusion:DiagramCommands.SameHeight"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -57,17 +67,20 @@ graphinfo.Commands.SameHeight.Execute(null);
 
 ## SameWidth command
 
-The [`SameWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SameWidth) command is used to resize all the selected object based on the width of the first item in the selection list.
+The [`SameWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SameWidth) command is used to resize all the selected objects based on the width of the first item in the selection list.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="SameWidth" Name="SameWidth" Command="Syncfusion:DiagramCommands.SameWidth"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 

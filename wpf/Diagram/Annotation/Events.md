@@ -12,7 +12,7 @@ documentation: ug
 The [AnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_AnnotationChanged) event will notify the annotation related actions and value changes. The [AnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) class is used to get or set the entire annotation related properties and their values.  
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Register the AnnotationChanged event
 (diagram.Info as IGraphInfo).AnnotationChanged += Diagram_AnnotationChanged;

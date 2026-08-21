@@ -9,9 +9,19 @@ documentation: ug
 
 # Hierarchical Tree Layout in WPF SfDiagram
 
-The hierarchical tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
+The hierarchical tree layout arranges nodes in a tree-like structure and supports multiple parents per node. You do not need to specify a layout root; the algorithm infers it from the data. To create a tree with a single explicit root, set the [`Root`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_Root) property of `DataSourceSettings`.
 
-To arrange the nodes in hierarchical structure, specify the [LayoutType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_Type) as hierarchical tree.
+To arrange the nodes in a hierarchical structure, set [`Type`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_Type) to `LayoutType.Hierarchical` on [`DirectedTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html).
+
+The `DirectedTreeLayout` properties used in this article are:
+
+| Property | Description |
+| --- | --- |
+| `Type` | The layout algorithm. Use `LayoutType.Hierarchical` for a hierarchical tree. |
+| `Orientation` | The direction the tree grows. Use `TreeOrientation.TopToBottom`, `LeftToRight`, `BottomToTop`, or `RightToLeft`. |
+| `HorizontalSpacing` | The horizontal space between adjacent nodes. The default value is `20`. |
+| `VerticalSpacing` | The vertical space between adjacent nodes. The default value is `50`. |
+| [`SpaceBetweenSubTrees`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_SpaceBetweenSubTrees) | The space between sub-trees when the root has multiple children that themselves have children. The default value is `20`. |
 
 {% tabs %}
 {% highlight xaml %}
@@ -38,23 +48,44 @@ To arrange the nodes in hierarchical structure, specify the [LayoutType](https:/
 </local:Employees>
 
 <!--Initializes the DataSourceSettings -->
-<syncfusion:DataSourceSettings x:Key="DataSourceSettings" Id="EmpId" 
+<syncfusion:DataSourceSettings x:Key="DataSourceSettings" Id="EmpId"
                                ParentId="ParentId"
                                DataSource="{StaticResource employees}" />
-<!--Initialize the Layout-->
-<syncfusion:DirectedTreeLayout x:Name="DirectedTreeLayout" 
-                               x:Key="treeLayout" 
-                               HorizontalSpacing="30" 
-                               VerticalSpacing="50" 
-                               Orientation="TopToBottom" 
-                               Type="Hierarchical" 
+<!--Initialize the Layout. SpaceBetweenSubTrees controls the gap between
+    sibling sub-trees when the root has multiple children that each have
+    their own children. The default is 20.-->
+<syncfusion:DirectedTreeLayout x:Key="treeLayout"
+                               HorizontalSpacing="30"
+                               VerticalSpacing="50"
+                               Orientation="TopToBottom"
+                               Type="Hierarchical"
                                SpaceBetweenSubTrees="20" />
 <!--Initialize the Layout Manager-->
-<syncfusion:LayoutManager x:Key="layoutManager" 
+<syncfusion:LayoutManager x:Key="layoutManager"
                           Layout="{StaticResource treeLayout}"/>
+
+<!--Bind the diagram to the DataSourceSettings and LayoutManager defined above-->
+<syncfusion:SfDiagram x:Name="diagram"
+                      DataSourceSettings="{StaticResource DataSourceSettings}"
+                      LayoutManager="{StaticResource layoutManager}">
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection/>
+    </syncfusion:SfDiagram.Nodes>
+    <syncfusion:SfDiagram.Connectors>
+        <syncfusion:ConnectorCollection/>
+    </syncfusion:SfDiagram.Connectors>
+</syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Initializes the employee collection
+//Add the required using directives at the top of the file:
+//using Syncfusion.UI.Xaml.Diagram;
+//using Syncfusion.UI.Xaml.Diagram.Layout;
+//using System.Collections.ObjectModel;
+
+//Initialize the SfDiagram instance
+SfDiagram diagram = new SfDiagram();
+
+//Initialize the employee collection
 Employees employee = new Employees();
 employee.Add(new Employee() { EmpId = "1", ParentId = "", Name = "Plant Manager", _Color = "#034d6d" });
 employee.Add(new Employee() { EmpId = "2", ParentId = "1", Name = "Production Manager", _Color = "#1b80c6" });
@@ -74,7 +105,9 @@ employee.Add(new Employee() { EmpId = "15", ParentId = "9", Name = "Craft Person
 employee.Add(new Employee() { EmpId = "16", ParentId = "9", Name = "Craft Personnel", _Color = "#76d13b" });
 employee.Add(new Employee() { EmpId = "17", ParentId = "10", Name = "Craft Personnel", _Color = "#76d13b" });
 
-//Initializes the DataSourceSettings
+//Initialize the DataSourceSettings. EmpId is the unique key; Name does not
+//need to be unique (the data contains several "Craft Personnel" and
+//"Foreman" entries, and they are keyed by EmpId only).
 diagram.DataSourceSettings = new DataSourceSettings()
 {
     Id = "EmpId",
@@ -82,22 +115,26 @@ diagram.DataSourceSettings = new DataSourceSettings()
     DataSource = employee,
 };
 
-//Initialize the Layout
+//Initialize the LayoutManager with a DirectedTreeLayout. The default
+//RefreshFrequency is FirstLoad; ArrangeParsing is used here so the layout
+//re-runs on add/remove/move/reset/resize operations.
 diagram.LayoutManager = new LayoutManager()
 {
     Layout = new DirectedTreeLayout()
     {
         Type = LayoutType.Hierarchical,
+        // TreeOrientation is in the Syncfusion.UI.Xaml.Diagram.Layout namespace
         Orientation = TreeOrientation.TopToBottom,
         HorizontalSpacing = 30,
         VerticalSpacing = 50,
     },
-                
+
     RefreshFrequency = RefreshFrequency.ArrangeParsing,
 };
 
 {% endhighlight %}
 {% endtabs %}
+
 
 ![WPF Diagram with HierarchicalLayout](Automatic-Layouts_images/wpf-diagram-hierarchical-layout.png)
 

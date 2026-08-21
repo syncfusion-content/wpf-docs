@@ -8,13 +8,15 @@ documentation: ug
 ---
 # Collision State in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provide supports to arrange the nodes and connectors neatly by adjusting node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to arrange the nodes and connectors neatly by adjusting the node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
 
-Using [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html) and [GetCollisionFreeLocation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_GetCollisionFreeLocation_Syncfusion_UI_Xaml_Diagram_CollisionState_) method, you can able to find a possible position without intersecting others for any given node.
+Using [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html) and [GetCollisionFreeLocation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_GetCollisionFreeLocation_Syncfusion_UI_Xaml_Diagram_CollisionState_) method, you can find a possible position without intersecting others for any given node.
 
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
+
+SfDiagram diagram = new SfDiagram();
 
 // Invoking SelectorChanged Event
 (this.diagram.Info as IGraphInfo).SelectorChangedEvent += OnSelectorChangedEvent;
@@ -22,7 +24,7 @@ Using [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Dia
 // SelectorChanged event - custom code
 private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args)
 {
-    // Need to adjust selected node's position, if it in contact with any other elements on drag complete
+    // Need to adjust selected node's position, “if it is in contact with any other elements on drag complete
     if (args.Item is SelectorViewModel && args.NewValue.InteractionState == NodeChangedInteractionState.Dragged)
     {
         var selectorViewModel = (SelectorViewModel)args.Item;
@@ -51,7 +53,7 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
 In some cases, there may be requirement for repositioning overlapping objects, rather than selected object. Using [GetOverlappingObjects](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_GetOverlappingObjects_Syncfusion_UI_Xaml_Diagram_CollisionState_) method, you can able to find all overlapping objects(such as Node or Connector or Annotation) for a given node.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args)
 {
@@ -66,7 +68,7 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
                 var selectedNode = (NodeViewModel)selectedNodes[0];
                 var collisionState = new CollisionState() { Item = selectedNode };
                 
-                // Finding overlapping nodes & connectors for the selected node.
+                // Finding overlapping nodes and connectors for the selected node.
                 var intercepts = ((IGraphInfo)this.diagram.Info).GetOverlappingObjects(collisionState);
 
                 foreach (var intercept in intercepts)
@@ -94,10 +96,10 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
 
 ## Spacing
 
-The [`Space`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_Space) property of [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html) allows you to change the spacing distance.
+The [`Space`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_Space) property of [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html) allows you to specify the spacing distance.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 var selectedNode = (NodeViewModel)selectedNodes[0];
 var collisionState = new CollisionState() { Item = selectedNode, Space = 5 };
@@ -108,10 +110,10 @@ var collisionState = new CollisionState() { Item = selectedNode, Space = 5 };
 
 ## Ignore objects as an overlap
 
-By default, annotation's of other elements were also considered as an intercepts for any given node. This can be disabled with the help of [IncludeSubElements](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_IncludeSubElements) property of CollisionState.
+By default, annotations of other elements are also considered intersections for any given node. This can be disabled using [IncludeSubElements](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_IncludeSubElements) property of CollisionState.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 var selectedNode = (NodeViewModel)selectedNodes[0];
 var collisionState = new CollisionState() { Item = selectedNode, IncludeSubElements = false };
@@ -120,7 +122,7 @@ var collisionState = new CollisionState() { Item = selectedNode, IncludeSubEleme
 {% endhighlight %}
 {% endtabs %}
 
-In addition to this,[`IgnoreList`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_IgnoreList) property of CollisionState allows you to restrict specific elements as not an intercepts. For example, you can ignore aligning nodes if same shaped node were collided.
+In addition to this,[`IgnoreList`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CollisionState.html#Syncfusion_UI_Xaml_Diagram_CollisionState_IgnoreList) property of CollisionState allows you to exclude specific elements from collision detection. For example, you can ignore aligning nodes if same-shaped nodes collide.
 
 ![list to ignore detect overlapping](Drag_images/AutomaticAlignment_img3.gif)
 
