@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Merge Cells in WPF SfDataGrid | Syncfusion®
-description: Merge Cells in SfDataGrid combines adjacent cells with matching values to improve data organization and readability.
+title: Merge Cells in WPF Data Grid | Syncfusion®
+description: Merge Cells in Data Grid combines adjacent cells with matching values to improve data organization and readability.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Merge Cells in WPF SfDataGrid
+# Merge Cells in WPF Data Grid
 	
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to merge the range of adjacent cells using [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_QueryCoveredRange) event. Merged cells can be exported and printed.
 

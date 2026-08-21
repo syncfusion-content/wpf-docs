@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Row Drag and Drop in WPF SfDataGrid | Syncfusion®
-description: Row Drag and Drop in SfDataGrid provides drag-and-drop support for moving, reordering, and managing rows interactively.
+title: Row Drag and Drop in WPF Data Grid | Syncfusion®
+description: Row Drag and Drop in Data Grid provides drag-and-drop support for moving, reordering, and managing rows interactively.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Row Drag and Drop in WPF SfDataGrid
+# Row Drag and Drop in WPF Data Grid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows drag and drop the rows within and between controls by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) property as `true`. It is also possible to drag and drop the rows between datagrid and other controls such as `ListView` and `SfTreeGrid`. SfDataGrid allows dropping rows when `AllowDrop` is `true` and allows dragging when `AllowDraggingRows` is `true`.
 
