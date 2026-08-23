@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Event Mechanism in WPF Diagram Control | Syncfusion
-description: Learn here all about Event Mechanism support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Event Mechanism in WPF Diagram | Syncfusion®
+description: Learn about events in the Syncfusion® WPF Diagram, including node, connector, selection, drag, drop, editing, and connection events.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Event Mechanism in WPF Diagram (classic)
+# Event Mechanism in WPF Diagram
 
 This section describes several events triggered and handled while using Essential Diagram WPF in the following topic:
 

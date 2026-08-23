@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Annotations in WPF Chart Control | Syncfusion
-description: Learn here all about Annotations support in Syncfusion WPF Chart (Classic) control, its elements and more details.
+title: Annotations in WPF Classic Chart | Syncfusion®
+description: Annotations in the WPF Classic Chart enable custom content to be displayed at specific chart locations for enhanced data visualization.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Annotations in WPF Chart (Classic)
+# Annotations in WPF Classic Chart
 
 ## Annotations in WPF Chart (Classic) at X-Y Coordinates
 

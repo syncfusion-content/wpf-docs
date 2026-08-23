@@ -11,34 +11,34 @@ documentation: ug
 
 ## Tool Selection
 
-There are some functionalities that can be achieved by clicking and dragging on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) surface. They are as follows.
+You can achieve several functions by clicking and dragging on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) surface. They are as follows.
 
 * Draw selection rectangle – MultipleSelect tool
-* Pan the Diagram – Zoom pan
+* Pan the Diagram – ZoomPan tool
 * Draw Nodes/Connectors – ContinuousDraw / DrawOnce
 
-As all the three behaviors are completely different, You can achieve only one behavior at a time based on the tool that you choose. When more than one of those are applied, a tool is activated based on the precedence given in the following table.
+Because the three behaviors are mutually exclusive, you can achieve only one at a time based on the tool that you choose. When more than one of those are applied, a tool is activated based on the precedence given in the following table.
 
 | Tools | Description |
 |---|---|
-| ContinuesDraw | Allows you to draw the Nodes or Connectors continuously. Once it is activated, you cannot perform any other interaction in the Diagram. |
-| DrawOnce | Allows you to draw single Node or Connector. Once you complete the DrawOnce action, SingleSelect and MultipleSelect tools are automatically enabled. |
-| ZoomPan | Allows you to pan the Diagram. When you enable both the SingleSelect and ZoomPan tools, you can perform the basic interaction as the cursor hovers Node/Connector. Panning is enebled when cursor hovers the Diagram. |
-| MultipleSelect | Allows you to select multiple Nodes and Connectors. When you enable both the MultipleSelect and ZoomPan tools, cursor hovers the Diagram. When panning is enabled, you cannot select multiple Nodes. |
-| SingleSelect | Allows you to select individual or Connectors. |
-| None | Disables all tools. |
+| ContinuesDraw | Allows you to draw Nodes or Connectors continuously. Once it is activated, no other interaction is allowed in the Diagram. |
+| DrawOnce | Allows you to draw a single Node or Connector. Once you complete the DrawOnce action, SingleSelect and MultipleSelect tools are automatically enabled. |
+| ZoomPan | Allows you to pan the Diagram. When you enable both the SingleSelect and ZoomPan tools, you can perform the basic interaction as the cursor hovers a Node/Connector. Panning is enabled when the cursor hovers the Diagram. |
+| MultipleSelect | Allows you to select multiple Nodes and Connectors. When you enable both the MultipleSelect and ZoomPan tools, the cursor hovers the Diagram. When panning is enabled, you cannot select multiple Nodes. |
+| SingleSelect | Allows you to select individual Nodes or Connectors. |
+| None | Disables every tool. |
 
-You can set the desired tool to the [`Tool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) property of the Diagram. The following code illustrates how to enable single/multiple tools.
+The [`Tool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) property is a flag enum. When multiple values are combined, the tool with the highest precedence in the order above (ContinuesDraw → DrawOnce → ZoomPan → MultipleSelect → SingleSelect → None) takes effect. The following code illustrates how to enable single/multiple tools.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
-//To Enable Single Tool
+// To enable a single tool.
 diagram.Tool = Tool.SingleSelect;
 
-//To Enable multiple tools
-diagram.Tool = Tool.SingleSelect | Tool.ZoomPan; 
- 
+// To enable multiple tools.
+diagram.Tool = Tool.SingleSelect | Tool.ZoomPan;
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -46,11 +46,21 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Exa
 
 ## Drawing Tools
 
-[DrawingTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool) allow you to draw any kind of node/connector during runtime by clicking and dragging on the Diagram page.
+The [`DrawingTool`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool) property lets you draw any kind of node/connector during runtime by clicking and dragging on the Diagram page. Supported values are:
+
+| DrawingTool value | Description |
+|---|---|
+| `None` | Disables all behaviors of the control. |
+| `Connector` | Enables drawing a connector. |
+| `Node` | Enables drawing a node. |
+| `FreeHand` | Enables drawing a node or connector. |
+| `Rectangle` | Enables drawing a rectangle-shaped node. |
+| `Ellipse` | Enables drawing an ellipse-shaped node. |
+| `TextNode` | Enables drawing a text-box node. |
 
 ### Shapes
 
-To draw a shape, You have to activate the drawing tool by using the `Tool` property and you need to set the event for GetDrawType.
+To draw a shape, activate the drawing tool by using the `Tool` property and handle the `GetDrawType` event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -63,17 +73,17 @@ To draw a shape, You have to activate the drawing tool by using the `Tool` prope
 
 <Style TargetType="{x:Type diagram:Node}">
   <Setter Property="Shape" Value="M13.560 67.524 L 21.941 41.731 L 0.000 25.790 L
-                                  27.120 25.790 L 35.501 0.000 L 43.882 25.790 L 71.000 
-                                  25.790 L 49.061 41.731 L 57.441 67.524 L 35.501 
+                                  27.120 25.790 L 35.501 0.000 L 43.882 25.790 L 71.000
+                                  25.790 L 49.061 41.731 L 57.441 67.524 L 35.501
                                   51.583 z"/>
   <Setter Property="ShapeStyle" Value="{StaticResource shapestyle}"/>
 </Style>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-//GetDrawType event is used to specify which item have to be drawn by the user.
+// The GetDrawType event specifies which item to draw when the user starts drawing.
 
 (diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
 diagram.DrawingTool = DrawingTool.Node;
@@ -81,24 +91,25 @@ diagram.Tool = Tool.ContinuesDraw;
 
 private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 {
-	args.DrawItem = new TextBlock()
-	{
-		Text="Path",
-		HorizontalAlignment = HorizontalAlignment.Center,
-		VerticalAlignment = VerticalAlignment.Center
-	};
+    args.DrawItem = new NodeViewModel()
+    {
+        UnitWidth = 100,
+        UnitHeight = 100,
+        Shape = new EllipseGeometry() { RadiusX = 50, RadiusY = 50 },
+        ShapeStyle = this.Resources["shapestyle"] as Style,
+    };
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-![draw star shape](Tools_images/Tools_img2.jpeg)
+![Draw a star shape on the diagram](Tools_images/Tools_img2.jpeg)
 
-* `GetDrawType` event will invoke when start drawing and get DrawItem (i.e which item you will draw) from the user.To explore about arguments, please refer to the [DrawTypeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DrawTypeEventArgs.html) .
+* The `GetDrawType` event fires when drawing starts and asks for the `DrawItem` from the user. To explore about arguments, please refer to the [DrawTypeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DrawTypeEventArgs.html).
 
 ### Text
 
-Diagram allows you to create a text Node as soon as you click on the Diagram page. The following code illustrates how to draw a text.
+Diagram allows you to create a text Node as soon as you click on the Diagram page. The following code illustrates how to draw text. `Tool.ContinuesDraw` lets you place multiple text nodes in a row; switch to `Tool.DrawOnce` if you only want a single one.
 
 {% tabs %}
 
@@ -115,7 +126,7 @@ Diagram allows you to create a text Node as soon as you click on the Diagram pag
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.DrawingTool = DrawingTool.TextNode;
 diagram.Tool = Tool.ContinuesDraw;
@@ -125,7 +136,7 @@ diagram.Tool = Tool.ContinuesDraw;
 
 ### Connectors
 
-To draw Connectors, you have to set the Connector to `DrawingTool` property. The `DrawingTool` can be activated by using the `Tool` property as shown. The following code example illustrates how to draw a straight line Connector.
+To draw Connectors, set `DrawingTool` to `DrawingTool.Connector`. The `DrawingTool` is activated by using the `Tool` property as shown. The following code example illustrates how to draw a straight line Connector.
 
 {% tabs %}
 {% highlight xaml %}
@@ -142,29 +153,37 @@ To draw Connectors, you have to set the Connector to `DrawingTool` property. The
 </Style>
 
 <Style TargetType="{x:Type diagram:Connector}">
-  <Setter Property="TargetDecoratorStyle" Value="{StaticResource decoratorstyle1}"/>
+  <Setter Property="TargetDecoratorStyle" Value="{StaticResource decoratorstyle}"/>
   <Setter Property="ConnectorGeometryStyle" Value="{StaticResource connectorstyle}"/>
 </Style>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.DrawingTool = DrawingTool.Connector;
 diagram.Tool = Tool.DrawOnce;
 
+// Subscribe to ObjectDrawn to react after the connector is created.
+(diagram.Info as IGraphInfo).ObjectDrawn += MainWindow_ObjectDrawn;
+
+private void MainWindow_ObjectDrawn(object sender, ObjectDrawnEventArgs args)
+{
+    // Inspect args.State and args.DrawObject here.
+}
+
 {% endhighlight %}
 {% endtabs %}
 
-![draw straight line connector](Tools_images/Tools_img3.jpg)
+![Draw a straight line connector on the diagram](Tools_images/Tools_img3.jpg)
 
-Diagram allows you to establish connection with Node/Port as soon as you click on the Node/Port.
+Diagram allows you to establish a connection with a Node/Port as soon as you click on the Node/Port.
 
-* `ObjectDrawn` event will invoke with drawing state.To explore about arguments,  please refer to the [ObjectDrawnEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html) .
+* The `ObjectDrawn` event fires when drawing finishes. To explore about arguments, please refer to the [ObjectDrawnEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html).
 
-### FreeHand drawing
+### Freehand Drawing
 
-Free hand connections will be drawn by using `DrawingTool` property.
+Set `DrawingTool` to `DrawingTool.FreeHand` to draw freehand connectors.
 
 {% tabs %}
 
@@ -181,21 +200,22 @@ Free hand connections will be drawn by using `DrawingTool` property.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-// Enable the FreeHand drawing
+// Enable FreeHand drawing.
 diagram.DrawingTool = DrawingTool.FreeHand;
+diagram.Tool = Tool.ContinuesDraw;
 
 {% endhighlight %}
 {% endtabs %}
 
-![free hand drawing](Tools_images/FreeHand_img1.gif)
+![Freehand connector drawn on the diagram](Tools_images/FreeHand_img1.gif)
 
-[FreeFormEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html) will notify the current drawing Connector and drawing State in [FreeFormDrawingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FreeFormDrawingEventArgs.html). 
+The `FreeFormDrawing` event on `IGraphInfo` notifies the current drawing Connector and drawing state via [FreeFormDrawingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FreeFormDrawingEventArgs.html).
 
-### Ellipse 
+### Ellipse
 
-Diagram allows you to create a ellipse shaped node as soon as you click and drag on the Diagram page. The following code illustrates how to draw an ellipse shaped node.
+Diagram allows you to create an ellipse-shaped node as soon as you click and drag on the Diagram page. The following code illustrates how to draw an ellipse-shaped node.
 
 {% tabs %}
 
@@ -212,7 +232,7 @@ Diagram allows you to create a ellipse shaped node as soon as you click and drag
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.DrawingTool = DrawingTool.Ellipse;
 diagram.Tool = Tool.ContinuesDraw;
@@ -220,9 +240,10 @@ diagram.Tool = Tool.ContinuesDraw;
 {% endhighlight %}
 {% endtabs %}
 
+
 ### Rectangle
 
-Diagram allows you to create a rectangle shaped node as soon as you click and drag on the Diagram page. The following code illustrates how to draw a rectangle shaped node.
+Diagram allows you to create a rectangle-shaped node as soon as you click and drag on the Diagram page. The following code illustrates how to draw a rectangle-shaped node.
 
 {% tabs %}
 
@@ -239,7 +260,7 @@ Diagram allows you to create a rectangle shaped node as soon as you click and dr
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.DrawingTool = DrawingTool.Rectangle;
 diagram.Tool = Tool.ContinuesDraw;
@@ -247,28 +268,30 @@ diagram.Tool = Tool.ContinuesDraw;
 {% endhighlight %}
 {% endtabs %}
 
-## How to override the default tool of diagram elements
+![Rectangle node drawn on the diagram](Tools_images/Tools_img1.jpeg)
 
-Each objects in diagram control have deafult actions while interact on them. Those default actions can be customized by overriding the virtual method [SetTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SetTool_Syncfusion_UI_Xaml_Diagram_SetToolArgs_) of the `SfDiagram` class. The `SetTool` method takes the [SetToolArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SetToolArgs.html) as an argument that is used to know the objects under the mouse when modifying the tools of them.
+## Override the Default Tool of Diagram Elements
 
-* [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SetToolArgs.html#Syncfusion_UI_Xaml_Diagram_SetToolArgs_Source) –  To know the object on which item the mouse is interacting.
+Each object in the diagram control has default actions when the user interacts with it. Those default actions can be customized by overriding the virtual method [SetTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SetTool_Syncfusion_UI_Xaml_Diagram_SetToolArgs_) of the `SfDiagram` class. The `SetTool` method takes the [SetToolArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SetToolArgs.html) as an argument that is used to know the objects under the mouse when modifying the tools of them.
+
+* [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SetToolArgs.html#Syncfusion_UI_Xaml_Diagram_SetToolArgs_Source) –  To know the object on which the mouse is interacting.
 
 * [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SetToolArgs.html#Syncfusion_UI_Xaml_Diagram_SetToolArgs_Action) - To customize the tools of the diagram object.
 
 {% tabs %}
 {% highlight xaml %}
 
-<!--Create new diagram for custom diagram class-->
+<!-- Define a custom diagram with the overridden SetTool method. -->
 <local:CustomClass PortVisibility="Visible" x:Name="diagram"/>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-//Create custom class of SfDiagram to override the tools.
-public class CustomClass:SfDiagram
+// Create a custom SfDiagram class to override the default tools.
+public class CustomClass : SfDiagram
 {
-    //Override method to customize the default tools of diagram objects
+    // Override the method to customize the default tools of diagram objects.
     protected override void SetTool(SetToolArgs args)
     {
         if (args.Source is INode)
@@ -292,15 +315,15 @@ public class CustomClass:SfDiagram
 {% endhighlight %}
 {% endtabs %}
 
-![Set Tool](Tools_images/SetToolOverride.gif)
+![Set Tool override applied to nodes, connectors, and ports](Tools_images/SetToolOverride.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools/SetToolSample)
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools/SetToolSample)
 
-## How to override the default cursors while interaction
+## Override the Default Cursors During Interaction
 
-While mouse hovers on the diagramming objects, different cursors will be appearing on each object for different actions. For example, when we mouse hover on the rotator thumb, then rotator cursor will be shown.
+When the mouse hovers on diagramming objects, different cursors appear over each object for different actions. For example, when the mouse hovers over the rotator thumb, the rotator cursor is shown.
 
-![Rotator Cursor](Tools_images/RotatorCursor.png)
+![Rotator cursor in WPF Diagram](Tools_images/RotatorCursor.png)
 
 These cursors can be customized by overriding the virtual method [SetCursor()](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_SetCursor_Syncfusion_UI_Xaml_Diagram_SetCursorArgs_) of the `SfDiagram` class. The `SetCursor()` method takes the [SetCursorArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SetCursorArgs.html) as an argument that is used to know the objects under the mouse cursor when modifying the cursors of them.
 
@@ -310,59 +333,61 @@ These cursors can be customized by overriding the virtual method [SetCursor()](h
 
 * [Cursor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SetCursorArgs.html#Syncfusion_UI_Xaml_Diagram_SetCursorArgs_Cursor) – To customize the cursor of the object.
 
-* [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SetCursorArgs.html#Syncfusion_UI_Xaml_Diagram_SetCursorArgs_Source) –  To know the object on which item the mouse is interacting.
+* [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SetCursorArgs.html#Syncfusion_UI_Xaml_Diagram_SetCursorArgs_Source) –  To know the object on which the mouse is interacting.
 
 * [SourceType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SetCursorArgs.html#Syncfusion_UI_Xaml_Diagram_SetCursorArgs_SourceType) – To know the parent element of the object.
 
 {% tabs %}
 {% highlight xaml %}
 
-<!--Create new diagram for custom diagram class-->
+<!-- Define a custom diagram with the overridden SetCursor method. -->
 <local:CustomClass PortVisibility="Visible" x:Name="diagram"/>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-//Create custom class of SfDiagram to override the cursor.
-public class CustomClass:SfDiagram
+// Create a custom SfDiagram class to override the default cursors.
+public class CustomClass : SfDiagram
 {
-    //Override method to customize the default cursors of diagram objects
+    // Override the method to customize the default cursors of diagram objects.
     protected override void SetCursor(SetCursorArgs args)
     {
         if (args.Source is INode)
         {
+            // Cursors.No displays the "no-drop" indicator.
             args.Cursor = Cursors.No;
         }
         else if (args.Source is IConnector)
         {
+            // Cursors.Hand shows the link/select cursor.
             args.Cursor = Cursors.Hand;
         }
         else if (args.Source is IPort)
         {
+            // Cursors.SizeAll shows the four-way move cursor.
             args.Cursor = Cursors.SizeAll;
         }
         else
         {
-           base.SetCursor(args);
+            base.SetCursor(args);
         }
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Set Cursor](Tools_images/SetCursor.gif)
+N> `Cursors` is the `System.Windows.Input.Cursors` static class. Other commonly used values are `Cursors.NoMove` (no-move indicator) and `Cursors.None` (invisible cursor). For a custom cursor, pass a `new Cursor(stream)` loaded from a `.cur` file.
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools)
+![Custom cursors applied to nodes, connectors, and ports](Tools_images/SetCursor.gif)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools)
 
 ## See Also
 
-[How to override the default cursors while interaction?](https://www.syncfusion.com/kb/11407/how-to-override-the-default-cursors-while-interaction-in-wpf-diagramsfdiagram)
 
-[How to switch between tools at runtime through the SetTool?](https://support.syncfusion.com/kb/article/9943/how-to-switch-between-tools-at-runtime-through-the-settool-in-wpf-diagram-sfdiagram)
-
-[How to create port at runtime through set tool?](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
-
-[How to draw nodes in diagram?](https://support.syncfusion.com/kb/article/5989/how-to-draw-node-in-wpf-diagram-sfdiagram)
-
-[How to Obtain the Polyline Connector Completed status in WPF Diagram?](https://support.syncfusion.com/kb/article/18899/how-to-obtain-the-completed-status-of-a-polyline-connector-in-the-wpf-diagram-sfdiagram)
+- [How to override the default cursors during interaction in WPF Diagram](https://support.syncfusion.com/kb/article/11407/how-to-override-the-default-cursors-while-interaction-in-wpf-diagramsfdiagram)
+- [How to switch between tools at runtime through the SetTool in WPF Diagram](https://support.syncfusion.com/kb/article/9943/how-to-switch-between-tools-at-runtime-through-the-settool-in-wpf-diagram-sfdiagram)
+- [How to create a port at runtime through the SetTool in WPF Diagram](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
+- [How to draw nodes in WPF Diagram](https://support.syncfusion.com/kb/article/5989/how-to-draw-node-in-wpf-diagram-sfdiagram)
+- [How to obtain the polyline connector completed status in WPF Diagram](https://support.syncfusion.com/kb/article/18899/how-to-obtain-the-completed-status-of-a-polyline-connector-in-the-wpf-diagram-sfdiagram)

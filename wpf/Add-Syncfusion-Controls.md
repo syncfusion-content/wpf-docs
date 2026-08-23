@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Steps to add Syncfusion Essential WPF controls
-description: Learn about the different ways to add Syncfusion Essential WPF controls to the Visual Studio project.
+title: How to add Syncfusion® controls in WPF | Syncfusion®
+description: Add Syncfusion® WPF controls to your Visual Studio project using designer, XAML, code-behind, or project templates.
 platform: wpf
 control: common
 documentation: ug
 ---
-# Add Syncfusion<sup>&reg;</sup> WPF Controls
+# How to add Syncfusion® controls in WPF
 
 
 The Syncfusion<sup>&reg;</sup> WPF controls can be added to a Visual Studio project by using any of the following ways:

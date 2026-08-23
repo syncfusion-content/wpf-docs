@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Hyperlink Cells in WPF Pivot Grid control | Syncfusion®
-description: Learn about Hyperlink Cells support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Hyperlink Cells in WPF Pivot Grid | Syncfusion®
+description: Hyperlink cells in the Syncfusion® WPF Pivot Grid control allow users to click value or summary cells to navigate and access raw data for detailed analysis.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 

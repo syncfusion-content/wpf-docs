@@ -9,9 +9,23 @@ documentation: ug
 
 # Command Manager in WPF SfDiagram
 
-The [CommandManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CommandManager.html) is used to map the user gestures (keyboard, mouse) with SfDiagram commands and helps to include new gesture commands in [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram). Refer to the following table for built-in commands with Key gesture and Mouse gesture.
+The [CommandManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CommandManager.html) is used to map user gestures (keyboard and mouse) to SfDiagram commands and helps to include new gesture commands in [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram). 
 
-List of Commands and Key Gesture:
+The `CommandManager` can be accessed through the `SfDiagram` instance and is used to manage built-in and custom gesture commands.
+
+{% highlight c# %}
+
+// Initialize the SfDiagram
+SfDiagram diagram = new SfDiagram();
+
+// Access the CommandManager
+CommandManager commandManager = diagram.CommandManager;
+
+{% endhighlight %}
+
+Refer to the following table for built-in commands with Key gesture and Mouse gesture.
+
+List of Commands and Key Gestures:
 
 | Command | Key | Key Modifiers |
 |---|---|---|
@@ -34,7 +48,7 @@ List of Commands and Key Gesture:
 | BringToFront | ] | Control+Shift |
 | BringForward | ] | Control |
 
-#### List of Commands and Key Gestures with Parameter
+## List of Commands and Mouse Gestures with Parameters
 
 | Command | Key | KeyModifier | Parameter |
 |---|---|---|---|
@@ -43,30 +57,34 @@ List of Commands and Key Gesture:
 | Reset | 0 | Control | new ResetParameter { Reset = Diagram.Reset.ZoomPan } |
 | FitToPage | W | Control + Shift | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
 
-#### List of Commands and Mouse Gesture with Parameter
+## List of Commands and Mouse Gestures with Parameters
 
 | Command | Scroll State | Parameter |
 |---|---|---|
 | Vertical Scroll using ‘Zoom’ command | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.VerticalScroll} |
 
-#### List of Commands and Key and Mouse Gesture with Parameter
+## List of Commands and Key and Mouse Gestures with Parameter
 
 | Command | KeyModifier | Scroll State | Parameter |
 |---|---|---|---|
 | Horizontal Scroll using ‘Zoom’ command | Shift | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.HorizontalScroll} |
-| Zoom | Control | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.ZoomIn \| ZoomCommand.ZoomOut} |
+| Zoom | Control | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.ZoomIn | ZoomCommand.ZoomOut} |
 
-N> When different commands are registered for the same key / mouse gestures, you need to handle the command while execution.
+N> When multiple commands are registered for the same key or mouse gesture, gesture conflicts can occur. In such cases, handle the command execution logic to determine which command should be executed for the registered gesture.
+
+N> The built-in key and mouse gestures are scoped to the `SfDiagram` control and are available when the diagram has input focus. These gestures do not apply globally across the application.
 
 ### Custom command
 
 `CommandManager` provides support to define custom commands. The custom commands are executed when the specified key gesture is recognized. The [GestureCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GestureCommand.html) and [Gesture](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gesture.html) help you to define a custom command.
 
-The following code example represents how to define custom command to Save Command (Control + S).
+N> In the following example, `Save` represents a user-defined `ICommand` instance that must be created before registering it with the `CommandManager`.
+
+The following code example represents how to define a custom Save command (Control + S).
 
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // To define the mouse and keyboard gesture for the commands
 GestureCommand saveGesture = new GestureCommand()

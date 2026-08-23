@@ -13,7 +13,7 @@ documentation: ug
 
 ## How to position node's annotation 
 
-Annotation can be aligned relative to the node boundaries. It has Margin, Offset, Horizontal, and Vertical alignment settings. It is quite tricky when all four alignments are used together but gives more control over alignments properties of [`AnnotationEditorViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html) class.
+Annotation can be aligned relative to the node boundaries. It has Margin, Offset, Horizontal, and Vertical alignment settings. It is quite tricky when all four alignments are used together but gives more control over alignment properties of [`AnnotationEditorViewModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html) class.
 
 Annotations of a node can be positioned using the following properties of `AnnotationEditorViewModel` class.
 
@@ -139,7 +139,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 </syncfusion:AnnotationCollection>
  
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -181,7 +181,7 @@ Connector's annotation can be aligned over its segment path using the [`Alignmen
 </syncfusion:AnnotationCollection>
  
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -216,7 +216,7 @@ The [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Ann
 </syncfusion:AnnotationCollection>
  
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -238,21 +238,21 @@ The following image shows the relationship between the annotation position and L
 
 ### Displacement
 
-The [`Displacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Displacement) property is used to dislocate the annotation by the value given. By default, annotation will be in center of the connector path. When you assign value to the `Displacement` property, annotation will be displaced from its position by displacment value. Default value is 0d.
+The [`Displacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html#Syncfusion_UI_Xaml_Diagram_AnnotationEditorViewModel_Displacement) property is used to dislocate the annotation by the value given. By default, annotation will be in the center of the connector path. When you assign value to the `Displacement` property, annotation will be displaced from its position by displacement value. Default value is 0d.
 
 {% tabs %}
 {% highlight xaml %}
-<!--Initialize the Annotation ollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the Annotation with dispalcement property-->
+    <!--Initialize the Annotation with displacement property-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Displacement="60" />
 </syncfusion:AnnotationCollection>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
 {
-    //Initialize the Annotation with dispalcement property
+    //Initialize the Annotation with displacement property
     new AnnotationEditorViewModel()
     {
         Content = "Annotation",
@@ -281,7 +281,7 @@ Position of an annotation is controlled by using its `Length` property, which re
 </syncfusion:AnnotationCollection>
  
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -303,7 +303,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 |Pivot | (0.5,0.5) | ![Target](Annotation_images/Pivot5.PNG) |
 | | (0,0) | ![Source](Annotation_images/Pivot0,0.png) |
 | | (0,1) | ![Center](Annotation_images/Pivot0,1.PNG) |
-| | 1,0) | ![Target](Annotation_images/Pivot1,0.PNG) |
+| | (1,0) | ![Target](Annotation_images/Pivot1,0.PNG) |
 | | (1,1) | ![Target](Annotation_images/Pivot1,1.png) |
 
 ### Margin
@@ -350,7 +350,7 @@ Diagram allows you to set size for annotations by using the [`UnitWidth`](https:
 
 <!--Initialize the AnnotationCollection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the annotation wih size-->
+    <!--Initialize the annotation with size-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" 
                                           UnitWidth="50" UnitHeight="50" />
 </syncfusion:AnnotationCollection>                       
@@ -391,7 +391,7 @@ When text overflows node boundaries, you can control it by using the [`WrapText`
 </syncfusion:AnnotationCollection>                    
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new AnnotationCollection()
@@ -408,7 +408,7 @@ Annotations = new AnnotationCollection()
 {% endtabs %}
 
 | Values | Description | Node |
-|---|---|---|---|
+|---|---|---|
 | NoWrap | Text will not be wrapped. | ![NoWrap](Annotation_images/Annotation_img18.png) |
 | Wrap | Text-wrapping occurs when the text overflows beyond the available annotation container width. | ![Wrap](Annotation_images/Annotation_img19.png) |
 | WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available annotation container width. However, the text may overflow beyond the annotation container width in the case of a very long word. | ![Overflow](Annotation_images/annotation_img20.png) |
@@ -419,24 +419,27 @@ Default appearance of the annotations can be customized by using the [`EditTempl
 
 {% tabs %}
 {% highlight xaml %}
+<Window.Resources>
 
-<!--Template overriding for view template-->
-<DataTemplate x:Key="viewTemplate">
-    <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
+  <!--Template overriding for view template-->
+  <DataTemplate x:Key="viewTemplate">
+     <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
                FontStyle="Italic" FontSize="12" 
-               FontFamily="TimesNewRomen" 
+               FontFamily="Times New Roman" 
                TextDecorations="Underline" 
                FontWeight="Bold" 
                Foreground="Black"/>
-</DataTemplate>
+  </DataTemplate>
 
-<!--Template overriding for edit template-->
-<DataTemplate x:Key="editTemplate">
-    <TextBox Text="{Binding Path=Content, Mode=TwoWay}" 
+  <!--Template overriding for edit template-->
+  <DataTemplate x:Key="editTemplate">
+      <TextBox Text="{Binding Path=Content, Mode=TwoWay}" 
              FontStyle="Oblique" FontSize="12" 
-             FontFamily="TimesNewRomen" 
+             FontFamily="Times New Roman" 
              FontWeight="Bold" Foreground="Red"/>
-</DataTemplate>
+  </DataTemplate>
+
+</Window.Resources>
 
 <!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
@@ -447,7 +450,7 @@ Default appearance of the annotations can be customized by using the [`EditTempl
 </syncfusion:AnnotationCollection>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -466,7 +469,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ![WPF Diagram Annotation Appearance](Annotation_images/wpf-diagram-annotation-appearance.PNG) &ensp;&ensp;&ensp;&ensp;&ensp; ![WPF Diagram Annotation EditTemplate](Annotation_images/wpf-diagram-annotation-edittemplate.png)
 
-Also, diagram have `TextAnnotationViewModel` class to customize the appearance of the annotation directly instead of overriding view and edit templates of the annotation. This class customization will be applied for both view and edit mode of annotation.
+Also, diagram has `TextAnnotationViewModel` class to customize the appearance of the annotation directly instead of overriding view and edit templates of the annotation. This class customization will be applied for both view and edit mode of annotation.
 
 {% tabs %}
 {% highlight xaml %}
@@ -475,24 +478,24 @@ Also, diagram have `TextAnnotationViewModel` class to customize the appearance o
 <syncfusion:AnnotationCollection>
     <!--Initialize the Text Annotation View Model class-->
     <syncfusion:TextAnnotationViewModel Text="Annotation" FontStyle="Italic" 
-                                        FontSize="12" FontFamily="TimesNewRomen" 
+                                        FontSize="12" FontFamily="Times New Romen" 
                                         TextDecorations="Underline" 
                                         FontWeight="Bold" Foreground="Black"/>
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
 {
-    //Intialize the Text Annotation View Model class
+    //Initialize the Text Annotation View Model class
     new TextAnnotationViewModel()
     {
         Text = "Annotation",
         FontStyle = FontStyles.Italic,
         FontSize = 12,
-        FontFamily = new FontFamily("TimesNewRomen"),
+        FontFamily = new FontFamily("Times New Romen"),
         TextDecorations = TextDecorations.Underline,
         FontWeight = FontWeights.Bold,
         Foreground = new SolidColorBrush(Colors.Black),
@@ -518,7 +521,7 @@ Diagram allows you to show the annotation in view or edit mode while loading the
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
@@ -554,7 +557,7 @@ Also, the [`ReadOnly`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Dia
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()

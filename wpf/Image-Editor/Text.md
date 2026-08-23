@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text of Syncfusion SfImageEditor WPF.
-description: This section explains how the image can be annotated by adding the required text on it and also it can be customized.
+title: Text in WPF ImageEditor | Syncfusion®
+description: Text annotation feature in Syncfusion® WPF ImageEditor allows you to add customizable text to images through toolbar and programmatic methods.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Text in SfImageEditor
+# Text in WPF ImageEditor
 
 You can annotate an image by adding the desired text to it. This can be done in the following two ways:
 

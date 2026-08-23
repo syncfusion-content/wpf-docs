@@ -9,7 +9,7 @@ documentation: ug
 
 # Gridlines in WPF SfDiagram
 
-[Gridlines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html) are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
+[Gridlines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html) are crisscross lines drawn on the diagram page like the lines on traditional graph paper. They help position diagram elements on the diagram page.
 
 The [`SnapConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html#Syncfusion_UI_Xaml_Diagram_SnapSettings_SnapConstraints) property of SnapSettings class allows you to control the visibility of the gridlines.
 
@@ -23,7 +23,7 @@ The [`SnapConstraints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Di
     </syncfusion:SfDiagram.SnapSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Initialize SnapSettings constraints to show Gridlines
@@ -74,7 +74,7 @@ The [`HorizontalGridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -110,7 +110,7 @@ Find the [Gridlines Styling Sample](https://github.com/SyncfusionExamples/WPF-Di
 
 ## Change grid spacing
 
-The thickness and space between the gridlines can be customized by using [`LinesInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html#Syncfusion_UI_Xaml_Diagram_Gridlines_LinesInterval) property of Gridlines class. The `LinesInterval` is a type of List<double> collection, where the values at the odd indexes are referred as thickness of the lines and the values at the even indexes are referred as space between the gridlines.
+The thickness and space between the gridlines can be customized by using [`LinesInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gridlines.html#Syncfusion_UI_Xaml_Diagram_Gridlines_LinesInterval) property of Gridlines class. The `LinesInterval` is a type of List<double> collection, where the values at the odd indexes are referred to as the thickness of the lines and the values at the even indexes are referred to as the space between gridlines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -146,7 +146,7 @@ The thickness and space between the gridlines can be customized by using [`Lines
     </syncfusion:SfDiagram.SnapSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -205,7 +205,7 @@ Find the [Gridlines Custom Spacing Sample](https://github.com/SyncfusionExamples
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize SfDiagram
 SfDiagram Diagram = new SfDiagram();

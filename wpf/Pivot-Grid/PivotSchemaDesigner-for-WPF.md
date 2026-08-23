@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview in WPF Pivot Grid control | Syncfusion®
-description: Learn about Overview support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: About Syncfusion WPF PivotSchemaDesigner Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio WPF PivotSchemaDesigner control and more details.
 platform: wpf
-control: Pivot grid
+control: Pivot Grid
 documentation: ug
 ---
 
-# Overview in WPF Pivot Grid
+# About Syncfusion WPF PivotSchemaDesigner Control
 
 The pivot schema designer can be supported in the pivot grid, so that it can be presented like an **ExcelPivotTable**. By using the pivot schema designer, you can add, rearrange, or remove fields to show data in the pivot grid exactly the way you want. It contains two sections, consisting of the following items:
 

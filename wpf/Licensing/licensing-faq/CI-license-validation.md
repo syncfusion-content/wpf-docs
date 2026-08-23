@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion license validation in CI services - Syncfusion
-description: Learn here about how to register Syncfusion license key for Syncfusion application for license validation.
+title: How to validate license in CI services in WPF | Syncfusion®
+description: Learn how to validate the Syncfusion® WPF license key in CI services to prevent licensing errors during application deployment.
 platform: wpf
 control: Essential Studio
 documentation: ug
@@ -17,7 +17,7 @@ margin-top: 1.5em;     margin-bottom: 1.5em;
 </style>
 
 
-# Syncfusion license key validation in CI services
+# How to validate license in CI services in WPF
 
 Syncfusion license key validation in CI services ensures that Syncfusion Essential Studio components are properly licensed during CI processes. Validating the license key at the CI level can prevent licensing errors during deployment. You can validate the license key using the `LicenseKeyValidator` utility or programmatically using the `ValidateLicense` method.
 

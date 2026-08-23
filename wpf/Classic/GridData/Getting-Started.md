@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with WPF GridData Control | Syncfusion
+title: Getting Started with WPF GridDataControl | Syncfusion®
 canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
-description: Learn here all about getting started with Syncfusion WPF GridDataControl (Classic) control and more.
+description: Learn how to get started with the Syncfusion® WPF GridDataControl. Explore setup, features, examples, and customization options.
 platform: wpf
-control: GridData (Classic)
+control: GridDataControl
 documentation: ug
 ---
 
-# Getting Started with WPF GridDataControl (Classic)
+# Getting Started with WPF GridDataControl
 
 This section is designed to help you understand and quickly get started using Essential Grid in your WPF application. Control appearance and structure are defined and the Essential Grid’s relevant classes are depicted.
 

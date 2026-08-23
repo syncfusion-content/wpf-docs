@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Nodes in WPF Diagram Control | Syncfusion
-description: Learn here all about Nodes support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Nodes in WPF Diagram | Syncfusion®
+description: Learn about nodes in the Syncfusion® WPF Diagram, including node shapes, content, labels, positioning, resizing, rotation, and customization.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Nodes in WPF Diagram (classic)
+# Nodes in WPF Diagram
 
 Nodes are graphical objects that can be placed on the page. It is usually used to represent visual data to be placed on the page.
 

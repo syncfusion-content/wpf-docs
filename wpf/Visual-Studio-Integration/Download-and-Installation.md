@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Download and Installation | Wpf | Syncfusion
-description: How to download and install the Syncfusion WPF Visual Studio Extensions from Visual Studio Market Place
+title: How to Download and Install WPF Visual Studio Extension | Syncfusion®
+description: Learn how to download and install the Syncfusion® WPF Visual Studio Extension from Visual Studio Marketplace in a WPF application.
 platform: wpf
-control: Syncfusion Extensions
+control: Syncfusion® Extensions
 documentation: ug
 ---
 
 
-# Download and Installation
+# How to Download and Install WPF Visual Studio Extension
 
 In the below Visual Studio Marketplace link, Syncfusion® is publishing the WPF Visual Studio extension. You can either use Visual Studio to install it or go to the Visual Studio Marketplace to download and install it.
 

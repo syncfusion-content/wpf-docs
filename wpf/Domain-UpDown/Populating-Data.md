@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Data in WPF Domain Updown | Syncfusion®
-description: Populate the Syncfusion WPF Domain Updown (SfDomainUpDown) control with data from collections, data sources, or custom item providers.
+title: Populating Data in WPF SfDomainUpdown | Syncfusion®
+description: Populate the Syncfusion WPF SfDomainUpDown control with data from collections, data sources, or custom item providers.
 platform: wpf
 control: DomainUpDown
 documentation: ug
 ---
 
-# Populating Data in WPF Domain Updown
+# Populating Data in WPF SfDomainUpdown
 
 The DomainUpDown control can be populated with a predefined list of items. 
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Guide to run online and offline samples from WPF Studio | Syncfusion
-description: Learn how to run the online samples and offline samples of Syncfusion Essential Studio WPF controls and components.
+title: How to run WPF samples from Essential Studio | Syncfusion®
+description: Learn how to run the online and offline samples of Syncfusion® Essential Studio WPF controls and components.
 platform: wpf
 control: Featured Samples
 documentation: ug
 ---
 
 
-# Featured Samples for Syncfusion<sup>&reg;</sup> WPF Controls
+# How to run WPF samples from Syncfusion® Essential Studio
 
 ## Prerequisites
 

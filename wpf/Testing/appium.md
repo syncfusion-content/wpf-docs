@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appium Testing in WPF | WPF | Syncfusion
-description: This section explains the fundamental procedures for evaluating WPF controls utilizing Appium along with WinAppDriver.
+title: How to test WPF controls using Appium | Syncfusion®
+description: Learn how to automate WPF control testing using Appium with WinAppDriver and UI Recorder tool for automated UI tests.
 platform: wpf
 control: Testing
 documentation: ug
 ---
-# Appium Testing in WPF
+# How to test WPF controls using Appium
 
 Appium is an open-source tool that allows you to create automated UI tests for applications. This section will guide you on how to automate your WPF application by utilizing Appium along with [Windows Application Driver](https://github.com/Microsoft/WinAppDriver) and the UI Recorder tool.
 

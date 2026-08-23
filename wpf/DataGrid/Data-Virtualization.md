@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Virtualization in WPF SfDataGrid | Syncfusion®
-description: Data Virtualization in SfDataGrid enables efficient handling of large datasets through on-demand data loading and virtualization.
+title: Data Virtualization in WPF Data Grid | Syncfusion®
+description: Data Virtualization in Data Grid enables efficient handling of large datasets through on-demand data loading and virtualization.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Data Virtualization in WPF SfDataGrid
+# Data Virtualization in WPF Data Grid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 

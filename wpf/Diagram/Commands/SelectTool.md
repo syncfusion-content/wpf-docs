@@ -13,15 +13,58 @@ The [SelectTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.I
 
 | Property | Description |
 |---|---|
-| Tool | It is used to customize the tools of the diagram.|
+| Tool | It is used to specify the active tool for the diagram.|
 | DrawingTool | It is used to specify the drawing tool, which is valid only if the `Tool` is set as either `ContinuesDraw` or `DrawOnce`. |
 | ConnectorType | It is used to specify the type (such as Orthogonal, Straight and Cubic-Curve etc.) of the connector to be drawn. |
+
+## Tool
+
+The `Tool` property is used to specify the active tool behavior of the diagram. The supported values are:
+
+- `None` - Disables all tool behaviors.
+- `SingleSelect` - Enables single-object selection.
+- `MultipleSelect` - Enables multiple selection.
+- `ZoomPan` - Enables zooming and panning.
+- `DrawOnce` - Enables drawing a node or connector only once.
+- `ContinuesDraw` - Enables drawing nodes or connectors continuously.
+
+The default value of the `Tool` property is `MultipleSelect`.
+
+## DrawingTool
+
+The `DrawingTool` property is used to specify the type of object to be drawn. The supported values are:
+
+- `None`
+- `Connector`
+- `Node`
+- `FreeHand`
+- `Rectangle`
+- `Ellipse`
+- `TextNode`
+
+The default value of the `DrawingTool` property is `None`.
+
+## ConnectorType
+
+The `ConnectorType` property is used to specify the type of connector to be drawn. The supported values are:
+
+- `Line`
+- `Orthogonal`
+- `QuadraticBezier`
+- `CubicBezier`
+- `PolyLine`
+
+The default value of the `ConnectorType` property is `Orthogonal`.
+
+N> To use the `DrawingTool` property, set the `Tool` property to either `ContinuesDraw` or `DrawOnce` in the `SelectToolCommandParameter`. After the tool mode is configured, specify the required drawing tool, such as `Ellipse`, `Connector`, or `TextNode`, through the `DrawingTool` property.
+
+N> The `ConnectorType` property is applicable only when the `DrawingTool` property is set to `Connector`. If `DrawingTool` is set to any other value, the `ConnectorType` property has no effect.
 
 For details , refer [Tools and DrawingTools](https://help.syncfusion.com/wpf/diagram/tools) 
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
  <!-- To draw an ellipse node-->
  <Syncfusion:SelectToolCommandParameter DrawingTool="Ellipse" Tool="ContinuesDraw"  x:Key="SelectToolEllipseCommandParameter"/>
@@ -40,7 +83,10 @@ For details , refer [Tools and DrawingTools](https://help.syncfusion.com/wpf/dia
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 

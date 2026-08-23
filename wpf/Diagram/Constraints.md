@@ -14,7 +14,7 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 
 ## Graph Constraints
 
-[GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allows to enable or disable the following behaviors.By default , `Zoomable` , `Pannable` , `PanRails` , `Relationship` , `Events` , `AutoScroll` , `PageEditing` constraints are enabled for diagram.
+[GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allows to enable or disable the following behaviors. By default  `Zoomable` , `Pannable` , `PanRails` , `Relationship` , `Events` , `AutoScroll` , `PageEditing` constraints are enabled for diagram.
 
 |Constraints|Description|
 |--|--|
@@ -39,7 +39,7 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 |`PannableY`	|Enables or disables the panning of diagram over Y -axis.|
 |`PanRails`	|Enables or disables the panning actions on the x-axis (horizontal panning) and y-axis (vertical panning) in SfDiagram.|
 |`PanRailsX`	|Enables or disables the pan rails of diagram in X-axis|
-|`PanRailsY	`|Enables or disables the pan rails of diagram in Y -axis|
+|`PanRailsY`|Enables or disables the pan rails of diagram in Y -axis|
 |`Relationship`	|Enables or disables the properties based on Node and Connector relationships on dragging at run time.|
 |`Resizable`	|Enables or disables the resize action on diagram or node.|
 |`Rotatable`	|Enables or disables the rotation action on diagram or node.|
@@ -52,7 +52,7 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 The following code example illustrates how to disable page editing.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
@@ -61,7 +61,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
 ## Node Constraints
 
-[NodeConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allows to enable or disable the following behaviors of Node.By default `Selectable`, `Connectable`, `Inherit`, `RoutingObstacle`, `PivotDraggable`, `Delete` and `ThemeStyle` constraints are enabled for Node.
+[NodeConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allows to enable or disable the following behaviors of Node. By default `Selectable`, `Connectable`, `Inherit`, `RoutingObstacle`, `PivotDraggable`, `Delete` and `ThemeStyle` constraints are enabled for Node.
 
 |Constraints	|Description|
 |--|--|
@@ -113,10 +113,10 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 The following code example illustrates how to disable rotation.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Create NodeViewModel collection
-diagram.nodes = new ObservableCollection<NodeViewModel>();
+diagram.Nodes = new ObservableCollection<NodeViewModel>();
 
 //Create NodeViewModel 
 NodeViewModel node = new NodeViewModel()
@@ -180,7 +180,7 @@ NodeViewModel node = new NodeViewModel()
 The following code example illustrates how to disable selection.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.connectors = new ObservableCollection<ConnectorViewModel>();
 
@@ -201,12 +201,12 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 ## Port Constraints
 
-[PortConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortConstraints.html) allows to enable or disable the following behaviors of port.By default Inherit constraints are enabled for port.
+[PortConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortConstraints.html) allows to enable or disable the following behaviors of port. By default Inherit constraints are enabled for port.
 
 |Constraints	|Description|
 |--|--|
 |`Connectable`	|Enables or disables the connector creation from port.|
-|`ConnectionDirection`	|Decides the connection direction of port based on PortBase.ConnectionDirection|
+|`ConnectionDirection`	|Decides the connection direction of port based on PortBase.[ConnectionDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortBase.html#Syncfusion_UI_Xaml_Diagram_PortBase_ConnectionDirection)|
 |`Default`	|Enables or disables the Inheritable constraints.|
 |`Draggable`	|Enables or disables whether port to be dragged at boundaries of node|
 |`Dynamic`	|Defines whether port to be connected at boundaries of node and pointed to the port.|
@@ -222,7 +222,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 The following code example illustrates how to disable creating connections with a port.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 
 NodePortViewModel port=	new NodePortViewModel()
@@ -242,7 +242,7 @@ NodePortViewModel port=	new NodePortViewModel()
 
 ## Annotation Constraints
 
-[AnnotationConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) allows to enable or disable the following behaviors of Annotation.By default Inherit and Editable constraints are enabled for annotation.
+[AnnotationConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) allows to enable or disable the following behaviors of Annotation. By default Inherit and Editable constraints are enabled for annotation.
 
 |Constraints	|Description|
 |--|--|
@@ -272,13 +272,13 @@ NodePortViewModel port=	new NodePortViewModel()
 The following code example illustrates how to enable annotation dragging.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 AnnotationEditorViewModel anno = new AnnotationEditorViewModel()
 {
     Content="Annotation",
     //Assign Constraint to Drag
-    Constraints=AnnotationConstraints.Draggable,
+    Constraints=AnnotationConstraints.Selectable | AnnotationConstraints.Draggable,
 };
 
 {% endhighlight %}
@@ -309,7 +309,7 @@ Selector visually represents the selected elements with certain editable thumbs.
 The following code example illustrates how to hide rotator.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 (diagram.SelectedItems as SelectorViewModel).SelectorConstraints = (diagram.SelectedItems as  SelectorViewModel).SelectorConstraints & ~SelectorConstraints.Rotator;
 
@@ -339,7 +339,7 @@ The following code example illustrates how to hide rotator.
 The following code example illustrates how to show only Horizontal Gridlines
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToHorizontalLines;
 
@@ -355,7 +355,7 @@ Some of the behaviors can be defined through both the specific object (Node/Conn
 The following code example illustrates how to inherit the line bridging behavior from the Diagram.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
 
@@ -383,7 +383,7 @@ Bitwise Operations are used to manipulate the flagged enumerations [enum]. In th
 You can add or enable multiple values at a time	by using Bitwise `|` (OR) operator or Add() method of constraints.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Using OR operator
 node.Constraints = NodeConstraints.Selectable | NodeConstraints.Rotatable;
@@ -401,7 +401,7 @@ In the above example, you can do both the selection and rotation.
 You can remove or disable values by using Bitwise ‘&~’ (XOR) operator or Remove() method of constraints.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Using XOR operator
 node.Constraints = node.Constraints & ~(NodeConstraints.Rotatable);
@@ -419,7 +419,7 @@ In the above example, Rotation is disabled but other constraints are enabled.
 You can check any value by using Bitwise ‘&’ (AND) operator.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 if ((node.Constraints & (NodeConstraints.Rotatable)) == (NodeConstraints.Rotatable))
 
@@ -432,11 +432,11 @@ In the above example, you can check whether the rotate constraints are enabled i
 
 [How to do Panning the diagram in all the directions at a time?](https://support.syncfusion.com/kb/article/5874/how-to-do-panning-in-all-the-directions-at-a-time-in-wpf-diagram)
 
-[How to enable the behaviour of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
+[How to enable the behavior of drag the node from one diagram to another diagram?](https://support.syncfusion.com/kb/article/6270/how-to-enable-drag-the-node-from-one-diagram-to-another-wpf-diagram-sfdiagram)
 
 [How to enable the virtualization?](https://support.syncfusion.com/kb/article/6081/how-to-enable-the-virtualization-in-wpf-diagram-sfdiagram)
 
-[How to disable the page editing behaviour?](https://support.syncfusion.com/kb/article/5860/how-to-disable-page-editing-in-wpf-diagram-sfdiagram)
+[How to disable the page editing behavior?](https://support.syncfusion.com/kb/article/5860/how-to-disable-page-editing-in-wpf-diagram-sfdiagram)
 
 [How to remove the rotator thumb of the node?](https://support.syncfusion.com/kb/article/5943/how-to-remove-rotator-of-the-node-in-wpf-diagram-sfdiagram)
 

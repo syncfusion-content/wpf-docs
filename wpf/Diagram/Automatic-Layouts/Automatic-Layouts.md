@@ -9,16 +9,16 @@ documentation: ug
 
 # Automatic Layout in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides a set of built-in automatic layout algorithms, which is used to arrange nodes automatically based on a predefined layout logic. SfDiagram supports the following built-in automatic layout algorithms:
+[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides a set of built-in automatic layout algorithms, which are used to arrange nodes automatically based on a predefined layout logic. SfDiagram supports the following built-in automatic layout algorithms:
 
-* Organizational layout
-* Flowchart layout
-* MindMap tree layout
-* Hierarchical tree layout
-* Force directed tree layout
-* Radial tree layout
+* [Organizational layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts/organizationlayout)
+* [Flowchart layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts/flowchartlayout)
+* [MindMap tree layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts/mindmaptreelayout)
+* [Hierarchical tree layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts/hierarchicaltreelayout)
+* [Force directed tree layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts/forcedirectedtreelayout)
+* [Radial tree layout](https://help.syncfusion.com/wpf/diagram/automatic-layouts/radialtreelayout)
 
-Automatic layout algorithm uses the nodes and connectors defined in NodeCollection and ConnectorCollection or business objects defined in DataSource as input to generate the layout. To generate layout from NodeCollection and ConnectorCollection, you have to create all the nodes and connectors required for layout and add those items in NodeCollection and ConnectorCollection as defined in the following code snippet.
+Automatic layout algorithm uses the nodes and connectors defined in NodeCollection and ConnectorCollection or business objects defined in DataSource as input to generate the layout. To generate a layout from `NodeCollection` and `ConnectorCollection`, create the required nodes and connectors and add them to those collections as defined in the following code snippet.
 
 {% tabs %}
 {% highlight xaml %}
@@ -81,7 +81,7 @@ Automatic layout algorithm uses the nodes and connectors defined in NodeCollecti
 {% highlight c# %}
 
 //Create SfDiagram instance
-SfDiagram diagram = new SfDiagram;
+SfDiagram diagram = new SfDiagram();
 
 //Initialize Nodes and Connectors Collection
 
@@ -180,7 +180,9 @@ diagram.DataSourceSettings = new DataSourceSettings()
 
 ## Defining layout
 
-You can use the [`LayoutManager.Layout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutManager__ctor) property to specify any one of the layouting algorithm.
+You can use the [`LayoutManager.Layout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutManager_Layout) property to specify any one of the layout algorithms.
+
+> **Note:** After the `LayoutManager` is assigned, the layout runs automatically based on the configured `RefreshFrequency`. To trigger a manual refresh at any time, call `LayoutManager.UpdateLayout()`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -224,19 +226,19 @@ diagram.LayoutManager = new LayoutManager()
 
 ## Updating layout
 
-The [`RefreshFrequency`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutManager_RefreshFrequency) property of LayoutManager is used to re-arrange the nodes in the diagram area when a node is added, deleted, moved, or resized. Also, you can decide when the nodes should be arranged for every diagram load or only for the first load. Find the description for each condition in the following table.
+The [`RefreshFrequency`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutManager_RefreshFrequency) property of `LayoutManager` is used to re-arrange the nodes in the diagram area when a node is added, deleted, moved, or resized. You can decide when the nodes should be arranged for every diagram load or only for the first load. Find the description for each condition in the following table. The default value of `RefreshFrequency` is `FirstLoad`.
 
 | Refresh Frequencies | Description|
 | --- | --- |
 | Add | Used to update the layout after adding a new element to the datasource. |
 | Remove | Used to update the layout after removing an existing element from datasource. |
-| Move | Used to update the layout after moving element in the datasource. |
+| Move | Used to update the layout after moving an element in the datasource. |
 | Reset | Used to update the layout after resetting the datasource. | 
 | Load | Used to update the layout when loading the diagram. |
 | FirstLoad | Used to update the layout in the first load of the diagram. |
 | Resizing | Used to update the layout when resizing an element in the layout. |
 | Resized | Used to update the layout when resizing of an element is completed. |
-| ArrangeParsing | Used to update the layout when the operations like Add, Remove, Move, Reset, Resizing, and Resized are performed in layout. |
+| ArrangeParsing | Used to update the layout when the operations like Add, Remove, Move, Reset, Resizing, and Resized are performed in the layout. |
 
 {% tabs %}
 {% highlight xaml %}
@@ -250,9 +252,11 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-## Customize spacing between nodes in layout 
+N> The default value of `RefreshFrequency` is `FirstLoad`. Because `RefreshFrequency` is a `[Flags]` enumeration, multiple values can be combined using the bitwise OR operator, for example `RefreshFrequency = RefreshFrequency.Add | RefreshFrequency.Remove`. `ArrangeParsing` itself is a combined flag that includes `Add | Remove | Move | Reset | Resizing | Resized`.
 
-The Horizontal and Vertical spacing properties of Layouts are used to customize the space between successive nodes in both horizontally and vertically. The default value for horizontal spacing is `20` and vertical spacing is `50`.
+## Customize spacing between nodes in layout
+
+The `HorizontalSpacing` and `VerticalSpacing` properties of a layout are used to customize the space between successive nodes, both horizontally and vertically. The default value for horizontal spacing is `20` and vertical spacing is `50`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -272,18 +276,18 @@ diagram.LayoutManager = new LayoutManager()
 
 ![WPF Diagram displays Spacing between Nodes](Automatic-Layouts_images/wpf-diagram-spacing.png)
 
-N> `HorizontalSpacing` and `VerticalSpacing` is not valid for `ForceDirectedTreeLayout`.
+N> `HorizontalSpacing` and `VerticalSpacing` are not valid for `ForceDirectedTreeLayout`; it uses a physics-based algorithm and does not expose fixed spacing properties.
 
 ## Customize tree orientation in layout
 
-[`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_Orientation) of [`DirectedTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html) is used to arrange the tree layout based on the direction. Orientation is only valid for hierarchical and organization layout. The default value for orientation is TopToBottom. The different orientation types are defined in the following table:
+[`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_Orientation) of [`DirectedTreeLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html) is used to arrange the tree layout based on the direction. Orientation is only valid for the hierarchical and organization layouts (and `DirectedTreeLayout` configured with a `Tree` type). The default value for orientation is `TopToBottom`. The different orientation types are defined in the following table:
 
 | Orientation Type | Description |
 |---|---|---|
-| TopToBottom | Aligns the tree layout from top to bottom. All the roots are placed at top of diagram. |
-| LeftToRight | Aligns the tree layout from left to right. All the roots are placed at left of diagram. |
-| BottomToTop | Aligns the tree layout from bottom to top. All the roots are placed at bottom of the diagram. |
-| RightToLeft | Aligns the tree layout from right to left. All the roots are placed at right of the diagram. |
+| TopToBottom | Aligns the tree layout from top to bottom. All the roots are placed at the top of the diagram. |
+| LeftToRight | Aligns the tree layout from left to right. All the roots are placed at the left of the diagram. |
+| BottomToTop | Aligns the tree layout from bottom to top. All the roots are placed at the bottom of the diagram. |
+| RightToLeft | Aligns the tree layout from right to left. All the roots are placed at the right of the diagram. |
 
 {% tabs %}
 {% highlight xaml %}
@@ -307,12 +311,12 @@ N> `Orientation` is not valid for [`RadialTreeLayout`](https://help.syncfusion.c
 
 ## Avoiding connector segment overlapping in layout
 
-The [`AvoidSegmentOverlapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_AvoidSegmentOverlapping) property of `DirectedTreeLayout` is used to decide whether segment of each connector from a single parent is distributed automatically or not. It is only valid for hierarchical and multi-parent layout.
+The [`AvoidSegmentOverlapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_DirectedTreeLayout_AvoidSegmentOverlapping) property of `DirectedTreeLayout` is used to decide whether the segment of each connector from a single parent is distributed automatically or not. It is only valid for the hierarchical and multi-parent layouts (that is, `DirectedTreeLayout` with `Type="Hierarchical"` or `Type="Organizational"`, and `DirectedTreeLayout` configured for multi-parent). The default value is `false`.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:DirectedTreeLayout AvoidSegmentOverlapping="True">
-</Syncfusion:DirectedTreeLayout>        
+</syncfusion:DirectedTreeLayout>
 {% endhighlight %}
 {% highlight c# %}
 diagram.LayoutManager = new LayoutManager()
@@ -327,16 +331,18 @@ diagram.LayoutManager = new LayoutManager()
 
 ![WPF Diagram without Overlapping Segment in Tree Layout](Automatic-Layouts_images/wpf-diagram-without-overlapping-segment.png)
 
-N> `AvoidSegmentOverlapping` is not valid for `RadialTreeLayout`and `ForceDirectedTreeLayout`.
+N> `AvoidSegmentOverlapping` is not valid for `RadialTreeLayout` and `ForceDirectedTreeLayout`.
 
 ## Customize margin in layout
 
-The [`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutBase_Margin) property of [`LayoutBase`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html) is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
+The [`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html#Syncfusion_UI_Xaml_Diagram_Layout_LayoutBase_Margin) property of [`LayoutBase`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase.html) is used to provide space between the bounds of the layout and the diagram. The default margin value is `50`.
+
+N> The `Margin` property is of type `Thickness`. In XAML, `Margin="200"` is a shortcut that applies a uniform `200`-pixel thickness on all four sides. For asymmetric values, use the full syntax `Margin="Left,Top,Right,Bottom"`.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:DirectedTreeLayout Margin="200">
-</Syncfusion:DirectedTreeLayout>        
+</syncfusion:DirectedTreeLayout>        
 {% endhighlight %}
 {% highlight c# %}
 diagram.LayoutManager = new LayoutManager()

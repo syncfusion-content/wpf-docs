@@ -9,21 +9,26 @@ documentation: ug
 
 # Clipboard Commands in WPF SfDiagram
 
-Clipboard commands are used to cut or copy the selected diagram objects to the clipboard and paste the valid clipboard content into the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.
+Clipboard commands are used to cut or copy the selected diagram objects to the clipboard and paste the valid clipboard content onto the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.
 
 ## Cut command
 
-The [`Cut`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Cut) command is used to cut the selected diagram objects to the clipboard. Cut command can be executed by the keyboard shortcut CTRL + X.
+The [`Cut`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Cut) command is used to cut the selected diagram objects to the clipboard. Cut command can be executed using the keyboard shortcut CTRL + X.
+
+N> The Cut command is applicable only when one or more diagram elements are selected. If no elements are selected, the command will not perform any operation.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Cut" Name="Cut" Command="Syncfusion:DiagramCommands.Cut"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -35,17 +40,22 @@ graphinfo.Commands.Cut.Execute(null);
 
 ## Copy command
 
-The [`Copy`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Copy) command is used to copy the selected diagram objects to the clipboard. Copy command can be executed by the keyboard shortcut CTRL + C.
+The [`Copy`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Copy) command is used to copy the selected diagram objects to the clipboard. Copy command can be executed using the keyboard shortcut CTRL + C.
+
+N> The Copy command is applicable only when one or more diagram elements are selected. If no elements are selected, the command will not perform any operation.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Copy" Name="Copy" Command="Syncfusion:DiagramCommands.Copy"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -57,17 +67,22 @@ graphinfo.Commands.Copy.Execute(null);
 
 ## Paste command
 
-The [`Paste`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Paste) command is used to paste the clipboard content to the diagram page. Paste command can be executed by the keyboard shortcut CTRL + V.
+The [`Paste`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Paste) command is used to paste the clipboard content to the diagram page. Paste command can be executed using the keyboard shortcut CTRL + V.
+
+N> The Paste command is applicable only when the clipboard contains supported diagram content. If the clipboard is empty or contains unsupported content, the command will not perform any operation.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Paste" Name="Paste" Command="Syncfusion:DiagramCommands.Paste"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -79,17 +94,24 @@ graphinfo.Commands.Paste.Execute(null);
 
 ## Duplicate command
 
-The [`Duplicate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Duplicate) command is used to copy the selected diagram objects to the clipboard and paste the clipboard content to the diagram page. Duplicate command can be executed by the keyboard shortcut CTRL + D.
+The [`Duplicate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Duplicate) command is used to copy the selected diagram objects to the clipboard and paste the clipboard content to the diagram page. Duplicate command can be executed using the keyboard shortcut CTRL + D.
+
+N> When the Duplicate command is executed, a copy of the selected diagram elements is created and placed with a slight offset from the original elements to make the duplicated elements immediately visible.
+
+N> The Duplicate command creates copies of the selected diagram elements within the diagram. This operation does not modify or replace the existing contents of the clipboard.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="Duplicate" Name="Duplicate" Command="Syncfusion:DiagramCommands.Duplicate"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 

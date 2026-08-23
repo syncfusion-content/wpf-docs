@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing in WPF SfDataGrid | Syncfusion®
-description: Editing in SfDataGrid provides built-in features to add, modify, and update records with validation and customizable editing behavior.
+title: Editing in WPF Data Grid | Syncfusion®
+description: Editing in Data Grid provides built-in features to add, modify, and update records with validation and customizable editing behavior.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Editing in WPF SfDataGrid
+# Editing in WPF Data Grid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
 

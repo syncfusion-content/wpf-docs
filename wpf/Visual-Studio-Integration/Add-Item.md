@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Syncfusion Item Template for WPF | Wpf | Syncfusion
-description: Syncfusion item template extension supports to add the Syncfusion WPF Window into WPF application with add Syncfusion WPF references.
+title: How to Add Item in WPF Visual Studio Extension | Syncfusion®
+description: Learn how to add Syncfusion® WPF components to your WPF application using the Syncfusion® Item Template in Visual Studio.
 platform: wpf
-control: Syncfusion Extensions
+control: Syncfusion® Extensions
 documentation: ug
 ---
 
 
-# Add Syncfusion® components to the WPF Application
+# How to Add Item in WPF Visual Studio Extension
 
 Syncfusion® provides robust support for Visual Studio Item Templates, which facilitate the seamless integration of Syncfusion® WPF components and preconfigured windows into your WPF application. These templates include all necessary Syncfusion® WPF libraries, ensuring a smooth development experience.
 
