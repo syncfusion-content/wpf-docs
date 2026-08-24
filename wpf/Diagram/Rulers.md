@@ -18,7 +18,7 @@ Please refer to the sample from Dashboard->Desktop->WPF->Diagram->GettingStarted
 ## Define Rulers
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml%}
 
 <syncfusion:SfDiagram x:Name="diagram">
     <syncfusion:SfDiagram.HorizontalRuler>
@@ -56,7 +56,7 @@ You can change the color of the ruler's position indicator marker y desired colo
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml%}
 
 <syncfusion:SfDiagram x:Name="diagram">
     <syncfusion:SfDiagram.HorizontalRuler>

@@ -36,73 +36,23 @@ The default value of `SplitMode` is `RootChildrenCount`.
 
 {% highlight xaml %}
 
-<model:MindmapDataItems x:Key="datasource">
-            <model:MindmapDataItem Label="Creativity"
-                                   ParentId=""></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Brainstorming"
-                                   ParentId="Creativity"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Complementing"
-                                   ParentId="Creativity"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Sessions"
-                                   ParentId="Brainstorming"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Generate"
-                                   ParentId="Brainstorming"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Local"
-                                   ParentId="Sessions"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Remote"
-                                   ParentId="Sessions"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Individual"
-                                   ParentId="Sessions"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Teams"
-                                   ParentId="Sessions"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Ideas"
-                                   ParentId="Generate"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Engagement"
-                                   ParentId="Generate"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Product"
-                                   ParentId="Ideas"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Service"
-                                   ParentId="Ideas"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Business Direction"
-                                   ParentId="Ideas"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Empowering"
-                                   ParentId="Engagement"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Ownership"
-                                   ParentId="Engagement"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Information"
-                                   ParentId="Complementing"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Expectations"
-                                   ParentId="Complementing"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Competitors"
-                                   ParentId="Information"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Products"
-                                   ParentId="Information"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Features"
-                                   ParentId="Information"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Other Data"
-                                   ParentId="Information"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Organization"
-                                   ParentId="Expectations"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Customer"
-                                   ParentId="Expectations"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Staff"
-                                   ParentId="Expectations"></model:MindmapDataItem>
-            <model:MindmapDataItem Label="Stakeholders"
-                                   ParentId="Expectations"></model:MindmapDataItem>
-</model:MindmapDataItems>
-
-        <!--Initializes the DataSourceSettings -->
-<syncfusion:DataSourceSettings x:Key="DataSourceSettings" Id="Label" 
-                               ParentId="ParentId"
-                               DataSource="{StaticResource datasource}" />
-<syncfusion:MindMapTreeLayout x:Key="Mindmaplayout"
-                                      HorizontalSpacing="50"
-                                      VerticalSpacing="30"
-                                      Orientation="Horizontal"
-                                      SplitMode="Custom" />   
-<!--Initialize the Layout Manager-->
-<syncfusion:LayoutManager x:Key="layoutManager" 
-                          Layout="{StaticResource Mindmaplayout}"/>                                           
+<syncfusion:SfDiagram x:Name="diagram" x:Class="...">
+    <syncfusion:SfDiagram.DataSourceSettings>
+        <syncfusion:DataSourceSettings Id="Id"
+                                       ParentId="ParentId"
+                                       DataSource="{StaticResource DataItems}"/>
+    </syncfusion:SfDiagram.DataSourceSettings>
+    <syncfusion:SfDiagram.LayoutManager>
+        <syncfusion:LayoutManager>
+            <syncfusion:LayoutManager.Layout>
+                <syncfusion:MindMapTreeLayout HorizontalSpacing="50"
+                                              VerticalSpacing="30"
+                                              Orientation="Horizontal"
+                                              SplitMode="Custom"/>
+            </syncfusion:LayoutManager.Layout>
+        </syncfusion:LayoutManager>
+    </syncfusion:SfDiagram.LayoutManager>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
