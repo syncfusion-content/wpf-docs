@@ -212,11 +212,6 @@ public class ViewModel : NotificationObject {
 {%endhighlight%}
 {% endtabs %}
 
-N> The `i:` namespace refers to `http://schemas.microsoft.com/expression/2010/interactivity` and requires a reference to the `System.Windows.Interactivity` assembly. Add the following namespace declaration to the root element of your XAML:
-`xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"`
-
-N> When binding `IsChecked` directly to a model property, virtualization must be disabled so that the bound value and `SelectedItems` stay synchronized. For details, see [Virtualization](Virtualization.md).
-
 ![CheckListBox items checked using IsChecked property](item-Selection_images/CheckedItems_property.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/CheckItem-By-Property) to download the sample that showcases check the items by using the `IsChecked` property.

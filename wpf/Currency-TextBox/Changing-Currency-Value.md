@@ -9,8 +9,7 @@ documentation: ug
 
 # Changing Currency Value in WPF CurrencyTextBox
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#currencytextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-The [CurrencyTextBox](https://www.syncfusion.com/wpf-controls/currency-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) property.
+The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) property.
 
 {%tabs%}
 {% highlight xaml %}
@@ -33,15 +32,13 @@ currencyTextBox.Value = 10;
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `CurrencyTextBox` value.
 
-The following code snippets illustrate the value binding from one `CurrencyTextBox` to another. Set the `DataContext` of the parent container to a `ViewModel` instance so the `{Binding MyValue}` expression resolves.
+The following code snippets illustrate the value binding from one `CurrencyTextBox` to another.
 
 {%tabs%}
 {% highlight xaml %}
 
-<StackPanel DataContext="{Binding MyValue, RelativeSource={RelativeSource Self}}">
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox1" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Height="25" Width="100"/>
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox2" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Width="100" Height="25"  />
-</StackPanel>
 
 {% endhighlight %}
 {%endtabs%}
@@ -295,9 +292,3 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
 N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `CurrencyTextBox` control.
 
 N> If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Appearance](Appearance.md)
-* [Culture and Number Formats](Culture-and-Number-Formats.md)

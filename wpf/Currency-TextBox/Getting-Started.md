@@ -42,7 +42,6 @@ To add the CurrencyTextBox control manually in XAML, follow these steps:
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:numberformat="clr-namespace:System.Globalization;assembly=mscorlib"
         x:Class="CurrencyTextBoxSample.MainWindow"
         Title="CurrencyTextBox Sample" Height="350" Width="525">
     <Grid>
@@ -95,9 +94,6 @@ currencyTextBox.Width = 100;
 
 this.Content = currencyTextBox;
 
-// Show the window (typical WPF startup)
-this.Show();
-
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
@@ -133,14 +129,12 @@ N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.wind
 
 Data binding is the method of forming a connection between the application  UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the `CurrencyTextBox` using the `Value` Property.
 
-The following code snippets illustrate the value binding from one `CurrencyTextBox` to another. Set the `DataContext` of the `StackPanel` (or window) to a `ViewModel` instance so the `{Binding MyValue}` expression resolves.
+The following code snippets illustrate the value binding from one `CurrencyTextBox` to another.
 
 {% tabs %}
 {% highlight XAML %}
-<StackPanel DataContext="{Binding MyValue, RelativeSource={RelativeSource Self}}">
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox1" Height="25" Width="100" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}"/>
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox2" Width="100" Height="25" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" />
-</StackPanel>
 {% endhighlight %}
 {% endtabs %}
 
@@ -325,13 +319,3 @@ CurrencyTextBox supports various built-in themes. Refer to the below links to ap
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Applying Theme to WPF Currency TextBox](getting-started_images/wpf-currency-textbox-theme.png)
-
-## See Also
-
-* [Overview](Overview.md)
-* [Culture and Number Formats](Culture-and-Number-Formats.md)
-* [Appearance](Appearance.md)
-* [Step Interval](Step-Interval.md)
-* [Range Adorner](Range-Adorner.md)
-* [Restriction or Validation](Restriction-or-Validation.md)
-* [Changing Currency Value](Changing-Currency-Value.md)

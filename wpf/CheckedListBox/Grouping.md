@@ -68,9 +68,6 @@ class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-N> The `i:` namespace refers to `http://schemas.microsoft.com/expression/2010/interactivity` and requires a reference to the `System.Windows.Interactivity` assembly. Add the following namespace declaration to the root element of your XAML:
-`xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"`
-
 Here, the `Vegetables` items are grouped based on their price.
 
 ![CheckListBox items grouped by the Price property](Grouping-Sorting_images/Grouping_image.png)

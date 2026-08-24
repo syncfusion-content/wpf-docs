@@ -69,8 +69,7 @@ class ViewModel {
 
 {% endhighlight %}
 {% endtabs %}
-N> The `i:` namespace refers to `http://schemas.microsoft.com/expression/2010/interactivity` and requires a reference to the `System.Windows.Interactivity` assembly. Add the following namespace declaration to the root element of your XAML:
-`xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"`
+
 Here, the `Vegetables` items are sorted in ascending order based on their name.
 
 ![CheckListBox with default and ascending sorted order](Grouping-Sorting_images/Sorting_image.png)

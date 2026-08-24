@@ -9,10 +9,6 @@ documentation: ug
 
 # Culture and Formatting in WPF CurrencyTextBox
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#currencytextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 Value of `CurrencyTextBox` can be formatted in the following ways:
 
 * Culture
@@ -302,9 +298,3 @@ currencyTextBox.CurrencyNegativePattern = 0;
 {% endtabs %}
 
 ![WPF CurrencyTextBox displays Negative Value Pattern](Culture-and-Number-Formats_images/wpf-currency-textbox-negative-value.png)
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Appearance](Appearance.md)
-* [Restriction or Validation](Restriction-or-Validation.md)

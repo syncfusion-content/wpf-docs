@@ -111,8 +111,6 @@ By default, only the items that are currently visible are loaded. If you want to
 CheckListBox checkListBox = new CheckListBox();
 checkListBox.ItemsPanel = new ItemsPanelTemplate(new FrameworkElementFactory(typeof(StackPanel)));
 
-N> `FrameworkElementFactory` is marked as obsolete in newer versions of WPF. For modern codebases, prefer defining the `ItemsPanelTemplate` in XAML or in a resource.
-
 {% endhighlight %}
 {% endtabs %}
 

@@ -11,13 +11,9 @@ documentation: ug
 
 This section deals with the appearance of `CurrencyTextBox` control and contains the following topics.
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#currencytextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 ## Setting the Foreground
 
-The [CurrencyTextBox](https://www.syncfusion.com/wpf-controls/currency-textbox) control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `CurrencyTextBox` control.
+The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `CurrencyTextBox` control.
 
 ### Foreground for Positive Value
 
@@ -216,9 +212,3 @@ CurrencyTextBox supports various built-in themes. Refer to the below links to ap
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
  ![Applying Theme to WPF CurrencyTextBox](Getting-Started_images/wpf-currency-textbox-theme.png)
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Culture and Number Formats](Culture-and-Number-Formats.md)
-* [Restriction or Validation](Restriction-or-Validation.md)

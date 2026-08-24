@@ -9,10 +9,6 @@ documentation: ug
 
 # Restriction or Validation in WPF CurrencyTextBox
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#currencytextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 This section explains how to validate or restrict the `CurrencyTextBox` control value.
 
 ## Restrict the value within minimum and maximum value
@@ -135,9 +131,3 @@ currencyTextBox.IsReadOnlyCaretVisible = true;
 {% endtabs %}
 
 ![CurrencyTextBox in read-only mode](Restriction-or-Validation_images/wpf-currency-textbox-readonly.jpeg)
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Range Adorner](Range-Adorner.md)
-* [Culture and Number Formats](Culture-and-Number-Formats.md)

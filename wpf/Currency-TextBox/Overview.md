@@ -53,13 +53,3 @@ To add a `CurrencyTextBox` to your view and get started quickly, see the step-by
 ## Theming, Styling and Extensibility
 
 The `CurrencyTextBox` supports built-in visual themes and can be styled using standard WPF templates and brushes. Visual states for positive, negative and zero values can be customized to make value meaning immediately perceptible. For examples and theming notes see the related Getting Started and Culture/Formatting documentation.
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Appearance](Appearance.md)
-* [Culture and Number Formats](Culture-and-Number-Formats.md)
-* [Changing Currency Value](Changing-Currency-Value.md)
-* [Step Interval](Step-Interval.md)
-* [Range Adorner](Range-Adorner.md)
-* [Restriction or Validation](Restriction-or-Validation.md)
