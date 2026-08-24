@@ -1937,6 +1937,8 @@ This ContextTabGroup can also be kept hidden and shown while required cases like
 
 ![WPF Ribbon displays ContextTabGroup](GroupingRibbonTabsusingContextTabGroups_images/wpf-ribbon-context-tab-group.jpeg)
 
+N> ContextTabGroup header visuals are supported only when the Ribbon is hosted in a `RibbonWindow`. When the Ribbon is hosted in other window types, such as `ChromelessWindow` or a standard Microsoft Window, the contextual tabs are displayed, but the corresponding ContextTabGroup header is not rendered.
+
 ## Add ContextTabGroup to the simplified layout
 
 When the simplified layout is enabled, the ContextTabGroup can be added and its items will be displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
