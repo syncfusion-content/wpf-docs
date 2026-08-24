@@ -159,7 +159,7 @@ The DocumentContainer supports the following document modes:
 * **TDI** - Tabbed Document Interface (default)
 * **MDI** - Multiple Document Interface
 
-You can change the mode using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property of DocumentContainer. The default value is `TDI`. See [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md) for more details.
+You can change the mode using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property of DocumentContainer. The default value is `TDI`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -180,7 +180,7 @@ documentContainer.Mode = DocumentContainerMode.TDI;
 
 ## Minimizing an MDI Window
 
-You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMinimize) property to `true`. The default value of `CanMDIMinimize` is `false`. The minimized MDI windows are arranged one by one in the bottom-left corner of the window. See [Minimizing MDI Window](Minimizing-MDI-window.md) for the full reference.
+You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMinimize) property to `true`. The default value of `CanMDIMinimize` is `false`. The minimized MDI windows are arranged one by one in the bottom-left corner of the window.
 
 {% tabs %}
 {% highlight xaml %}
@@ -212,23 +212,3 @@ DocumentContainer supports various built-in themes. Refer to the below links to 
   ![Setting theme to wpf document container](Getting-Started_images/wpf-document-container-MDI-Theme.png)
    
   ![Setting theme to wpf document container](Getting-Started_images/wpf-document-container-TDI-Theme.png)
-
-## See Also
-
-* [Overview](Overview.md)
-* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)
-* [Setting Header of the DocumentContainer](Setting-Header-of-the-Document-container.md)
-* [Adding and Removing Items](Adding-and-Removing-Items-from-the-Document-Container-Control.md)
-* [State Persistence](State-Persistence.md)
-* [Maximizing MDI Window](Maximizing-MDI-window.md)
-* [Minimizing MDI Window](Minimizing-MDI-window.md)
-* [MDI Resize](MDI-Resize.md)
-* [Setting Window State](Setting-Window-State.md)
-* [Setting MDIBounds](Setting-MDIBounds.md)
-* [Full Screen in DocumentContainer](Full-Screen-in-DocumentContainer.md)
-* [Pin and Unpin TabItems](Pin-Unpin-tabs.md)
-* [Creating Tab Groups](Creating-Tab-Groups.md)
-* [Disabling Drag and Drop of TDI Items](Disabling-Dragging-and-Dropping-of-TDI-Items-in-DockingManager-and-DocumentContainer.md)
-* [Setting Window Switchers](Setting-Window-Switchers.md)
-* [Localization](Localization.md)
-* [Layout Related Features](Layout-Related-Features.md)

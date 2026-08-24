@@ -9,10 +9,6 @@ documentation: ug
 
 # Localization in WPF DocumentContainer
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 The DocumentContainer exposes a set of resource keys that you can override in a `.resx` file to localize its context menu items and command labels to a specific culture. You can simply provide translated string values in the resource file for a specific culture and set the culture in the application.
 
 ## Localizable Resource Keys
@@ -56,9 +52,3 @@ Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
 {% endhighlight %}
 {% endtabs %}
 
-N> The exact resource name prefix may differ between Syncfusion versions. If the menu strings do not change after following the steps above, use a tool such as `ILSpy` to inspect the built `Syncfusion.Tools.WPF.resources` assembly and confirm the key prefix for your installed version.
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)

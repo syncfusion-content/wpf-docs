@@ -8,12 +8,6 @@ documentation: ug
 ---
 # Setting Window State in WPF DocumentContainer 
 
-# Setting Window State in WPF Tabbed MDI Form
-
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 The DocumentContainer supports the following three window states for MDI child windows:
 
 * **Maximized**
@@ -91,10 +85,3 @@ private void DocContainer_MDIWindowStateChanging(object sender, MDIWindowStateCh
 }
 {% endhighlight %}
 {% endtabs %}
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)
-* [Maximizing MDI Window](Maximizing-MDI-window.md)
-* [Minimizing MDI Window](Minimizing-MDI-window.md)

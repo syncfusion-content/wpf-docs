@@ -9,10 +9,6 @@ documentation: ug
 
 # Creating Tab Groups in WPF DocumentContainer
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 You can create tab groups for the tab items of a TDI mode [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) by dragging a tab item, by using the context menu items, or programmatically. Tab groups are only supported in `TDI` mode.
 
 ## Creating Tab Groups Using the Context Menu
@@ -88,10 +84,3 @@ private void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 ![Vertical Tab Groups created programmatically](Creating-Tab-Groups_images/Tabgroup_programmatically.png)
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Disabling Drag and Drop of TDI Items](Disabling-Dragging-and-Dropping-of-TDI-Items-in-DockingManager-and-DocumentContainer.md)
-* [Pin and Unpin TabItems](Pin-Unpin-tabs.md)
-* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)

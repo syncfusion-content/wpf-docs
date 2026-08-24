@@ -9,10 +9,6 @@ documentation: ug
 
 # Disabling Drag and Drop in WPF DocumentContainer
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 You can disable the dragging and dropping of TDI items in DocumentContainer and DockingManager by setting the [IsTDIDragDropEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsTDIDragDropEnabled) property to `false`. By default, `IsTDIDragDropEnabled` is `true`.
 
 {% tabs %}
@@ -167,14 +163,7 @@ private void Documentcontainer1_DocumentTabOrderChanging(object sender, Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![Restricting the TDI items order changing via drag and drop](Disabling-Dragging-and-Dropping-of-TDI-Items-in-DockingManager-and-DocumentContainer_images/Restrictordering.png)
+![Restricting the TDI items order changing via drag and drop](Creating-Tab-Groups_images/Restrictordering.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/DocumentTabOrdering)
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Creating Tab Groups](Creating-Tab-Groups.md)
-* [Pin and Unpin TabItems](Pin-Unpin-tabs.md)
-* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)
 

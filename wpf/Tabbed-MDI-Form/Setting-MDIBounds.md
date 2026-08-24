@@ -9,10 +9,6 @@ documentation: ug
 
 # Setting MDIBounds in WPF DocumentContainer
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 The `MDIBounds` attached property helps the DocumentContainer place its elements within the container in MDI mode. The property is set on each child element, not on the DocumentContainer itself.
 
 The general syntax of the `MDIBounds` attached property is given below.
@@ -43,13 +39,6 @@ DocContainer.Items.Add(flow);
 {% endtabs %}
 
 ![DocumentContainer with a child window placed using MDIBounds](Setting-MDIBounds_images/Setting-MDIBounds_img1.jpeg)
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)
-* [Setting Header of the DocumentContainer](Setting-Header-of-the-Document-container.md)
-* [MDI Resize](MDI-Resize.md)
 
 
 

@@ -9,13 +9,7 @@ documentation: ug
 
 # State Persistence in WPF DocumentContainer
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 This topic illustrates how to load and save the dock state in various places. It also gives information about resetting and deleting the states.
-
-N> The examples in this topic use `BinaryFormatter` and `SoapFormatter`. Both types are marked obsolete starting in .NET 5 (`SYSLIB0011`) and will throw at runtime on .NET 5 and later unless the obsolete warning is suppressed. For new development, consider replacing them with a modern serializer (for example, `System.Text.Json`) by serializing the dock state to a `Stream` using `XmlSerializer` or `DataContractSerializer`, or by using a `BinaryWriter` over a `MemoryStream`.
 
 ## Load and Save in Isolated Storage
 
@@ -138,9 +132,3 @@ DocContainer.DeleteDockState(@"d:\docum_bin.bin");
 DocContainer.DeleteDockState();
 {% endhighlight %}
 {% endtabs %}
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)
-* [Adding and Removing Items](Adding-and-Removing-Items-from-the-Document-Container-Control.md)

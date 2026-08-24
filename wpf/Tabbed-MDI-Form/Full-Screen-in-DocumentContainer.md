@@ -9,10 +9,6 @@ documentation: ug
 
 # Full Screen in WPF DocumentContainer
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 ## TDIFullScreenMode
 
 `TDIFullScreenMode` is the property used to define the full-screen mode for TDI items. When a value is set for this property, the parent window is displayed in full-screen mode and the tab item header is visible only when the cursor passes over the top of the window. This property is an enum (`Syncfusion.Windows.Tools.Controls.FullScreenMode`) with the following values:
@@ -132,12 +128,4 @@ tabcontrol.ToolBarTray = tooltray;
 DocumentContainer.SetSizeToContentInMDI(grid1, true);
 {% endhighlight %}
 {% endtabs %}
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)
-* [Setting Window State](Setting-Window-State.md)
-* [Maximizing MDI Window](Maximizing-MDI-window.md)
-* [Minimizing MDI Window](Minimizing-MDI-window.md)
 

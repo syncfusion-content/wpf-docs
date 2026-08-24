@@ -9,10 +9,6 @@ documentation: ug
 
 # Adding and Removing Items in WPF DocumentContainer
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 This topic illustrates how to add and remove items from the DocumentContainer control.
 
 ## Adding Items
@@ -45,11 +41,3 @@ DocContainer.Items.Remove(a);
 DocContainer.Items.Clear();
 {% endhighlight %}
 {% endtabs %}
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)
-* [Setting Header of the DocumentContainer](Setting-Header-of-the-Document-container.md)
-* [State Persistence](State-Persistence.md)
-

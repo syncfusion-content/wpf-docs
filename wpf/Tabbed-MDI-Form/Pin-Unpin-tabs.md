@@ -8,10 +8,6 @@ documentation: ug
 ---
 # Pin and Unpin TabItems in WPF DocumentContainer
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 This section explains how to pin and unpin tab items in a DocumentContainer.
 
 ## Enabling or Disabling Pinning Behavior
@@ -334,10 +330,3 @@ The following images illustrate the same.
 ![Displaying the Pin Tab option in the context menu](Pin-Unpin-tabs-images/pintab-option-contextmenu.png)
 
 ![Displaying the Unpin Tab option in the context menu](Pin-Unpin-tabs-images/unpintab-option-contextmenu.png)
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Setting Mode for Document Container](Setting-Mode-for-Document-Container.md)
-* [Creating Tab Groups](Creating-Tab-Groups.md)
-* [Disabling Drag and Drop of TDI Items](Disabling-Dragging-and-Dropping-of-TDI-Items-in-DockingManager-and-DocumentContainer.md)

@@ -9,10 +9,6 @@ documentation: ug
 
 # Minimizing MDI Window in WPF DocumentContainer
 
-## Assembly Deployment
-
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#documentcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
-
 You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMinimize) property to `true`. The default value of `CanMDIMinimize` is `false`. The minimized MDI windows are arranged one by one in the bottom-left corner of the window.
 
 {% tabs %}
@@ -56,11 +52,3 @@ DocContainer.CanMDIMinimize = false;
 {% endtabs %}
 
 ![Restrict the Minimizing MDI window in Document Container](Minimizing-MDI-window_images/Restrict_Minimizing.png)
-
-## See Also
-
-* [Getting Started](Getting-Started.md)
-* [Maximizing MDI Window](Maximizing-MDI-window.md)
-* [MDI Resize](MDI-Resize.md)
-* [Setting Window State](Setting-Window-State.md)
-
