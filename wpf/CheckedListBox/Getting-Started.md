@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF CheckedListBox control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF CheckedListBox (CheckListBox) control, its elements and more.
-platform: WPF
+title: Getting Started with WPF CheckListBox | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF CheckListBox control. Explore setup, features, examples, and customization options.
+platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Getting Started with WPF CheckedListBox (CheckListBox)
+# Getting Started with WPF CheckListBox
 
 This section explains how to display and select the required items using the [WPF CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) control.
 
@@ -18,7 +18,7 @@ This section explains how to display and select the required items using the [WP
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#checklistbox) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
 
-Further information on installing the NuGet package can be found in the following link: [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages).
+Further information on installing the NuGet package can be found in the following link: [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages).
 
 You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the CheckListBox's dependent assemblies.
 

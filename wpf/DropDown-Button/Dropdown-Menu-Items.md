@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
-title: Dropdown Menu Items in WPF Dropdown Button control | Syncfusion
-description: Learn here all about Dropdown Menu Items support in Syncfusion WPF Dropdown Button (DropDownButtonAdv) control and more.
-platform: WPF
+title: Dropdown Menu Items in WPF DropDown Button | Syncfusion®
+description: Customize dropdown menu items with icons, check states, scrollbars, resizing support, and custom content.
+platform: wpf
 control: DropDownButtonAdv
 documentation: ug
 ---

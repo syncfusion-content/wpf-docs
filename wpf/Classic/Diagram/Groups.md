@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Groups in WPF Diagram Control | Syncfusion
-description: Learn here all about Groups support in Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Groups in WPF Diagram | Syncfusion®
+description: Learn about groups in the Syncfusion® WPF Diagram, including grouping, ungrouping, editing groups, connections, layers, and visibility management.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Groups in WPF Diagram (classic)
+# Groups in WPF Diagram
 
 Essential Diagram WPF provides support to group and ungroup nodes. Grouping feature comes in handy when you want to apply the same edits to a number of objects and yet retain their individuality. All the operations performed on the group also affect the individual items in the group. However any item in the group can also be edited individually. On ungrouping, the items in the group again act as individual entities.
 
@@ -1026,7 +1026,7 @@ diagramModel.Layers.Add(Lan1)
 
 ## Hidden or Active Layer
 
-#### Active Layer
+### Active Layer
 
 When a new Node or LineConnector is dropped from SymbolPalette into the DiagramPage, it will be added into all the active layers automatically. A layer can be activated or deactivated as shown in following code snippet.
 

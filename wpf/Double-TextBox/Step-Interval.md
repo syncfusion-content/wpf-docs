@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Step Interval in WPF Double TextBox control | Syncfusion®
-description: Learn about Step Interval support in Syncfusion® WPF Double TextBox control, its elements and more details.
-platform: WPF
+title: Step Interval in WPF DoubleTextBox | Syncfusion®
+description: Define the increment or decrement step used by the Syncfusion WPF DoubleTextBox control when changing the value with spinner or keys.
+platform: wpf
 control: DoubleTextBox 
 documentation: ug
 ---
 
-# Step Interval in WPF Double TextBox
+# Step Interval in WPF DoubleTextBox
 
 The [DoubleTextBox](https://www.syncfusion.com/wpf-controls/double-textbox) control allows you to increase or decrease the value by pressing the up and down arrow keys on the keyboard or by scrolling the mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_ScrollInterval) property specifies the increment or decrement interval. The default value of `ScrollInterval` is 1.
 

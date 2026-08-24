@@ -10,26 +10,28 @@ documentation: ug
 
 # Force-Directed Tree Layout in WPF SfDiagram
 
-The **Force-Directed Tree Layout** arranges nodes using a physics simulation: nodes repel each other to reduce overlap, while connectors behave like springs that pull related nodes together. This produces organic, visually balanced diagrams that work well for social graphs, dependency maps, and knowledge networks.
+The **Force-Directed Tree Layout** arranges nodes using a physics simulation: nodes repel each other to avoid overlap, while connectors behave like springs that pull related nodes together. This produces organic, visually balanced diagrams that work well for scenarios such as social graphs, dependency maps, and knowledge networks.
 
 ## Properties for Configuring Force-Directed Tree Layout (WPF)
-The following properties are used to configure the Force-Directed Tree Layout:
+The following properties are used to configure the Force-Directed Tree Layout. Default values are taken from the `ForceDirectedTreeLayout` class:
 
-- **[MaximumIteration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_ForceDirectedTreeLayout_MaximumIteration)** (integer, recommended range: 100–5000)
+- **[MaximumIteration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_ForceDirectedTreeLayout_MaximumIteration)** (integer, default: `300`, recommended range: 100–5000)
     - Number of simulation cycles the algorithm runs to stabilize node positions.
     - **Trade-off:** Higher values produce more stable layouts but increase CPU time. Start with 500–2500 for typical diagrams.
 
-- **[RepulsionStrength](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_ForceDirectedTreeLayout_RepulsionStrength)** (double, typical range: 3000–50000)
-    - Magnitude of the repulsive force between nodes, preventing overlap and crowding.
+- **[RepulsionStrength](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_ForceDirectedTreeLayout_RepulsionStrength)** (double, default: `5000`, typical range: 3000–50000)
+    - Magnitude of the repulsive force between nodes, preventing overlap and crowding. The values are abstract units; larger numbers produce stronger repulsion and more spread between nodes.
     - **Trade-off:** Increase for more separation; decrease for denser layouts. Large values may slow layout.
 
-- **[AttractionStrength](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_ForceDirectedTreeLayout_AttractionStrength)** (double, range: 0..1)
-    - How strongly connected nodes are pulled toward each other.
+- **[AttractionStrength](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html#Syncfusion_UI_Xaml_Diagram_Layout_ForceDirectedTreeLayout_AttractionStrength)** (double, default: `0.5`, range: 0..1)
+    - How strongly connected nodes are pulled toward each other (a unit less coefficient between 0 and 1).
     - **Trade-off:** Values closer to 1 create tighter clusters; lower values allow connected nodes to spread out and ease congestion.
 
-## Create a layout using Nodes and Connectors 
+## Create a layout using Nodes and Connectors
 
-Define nodes and connectors directly in XAML, then let the [ForceDirectedTreeLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html?tabs=tabid-1) arrange them.
+Define the nodes and connectors in XAML, then configure the layout with [ForceDirectedTreeLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html).
+
+The XAML below uses a custom `NodeViewModel`-derived type, `CustomNodeViewModel`, that exposes a `Tag` property and a parameterless constructor (required so that the type can be instantiated through XAML property syntax). You can place it in the same project as your `SfDiagram`:
 
 {% tabs %}
 {% highlight xaml %}
@@ -442,10 +444,24 @@ Define nodes and connectors directly in XAML, then let the [ForceDirectedTreeLay
 {% endhighlight %}
 
 {% highlight c# %}
+// Add the required using directives at the top of the file:
+// using Syncfusion.UI.Xaml.Diagram;
+// using Syncfusion.UI.Xaml.Diagram.ViewModel;
+// using System.Collections.ObjectModel;
+// using System.Windows;
+// using System.Windows.Media;
+
 // Configure the layout and create nodes/connectors in code-behind
 
-CreatedNode();
-Diagram.LayoutManager = new LayoutManager()
+// Replace "diagram" with the name of your SfDiagram instance in the visual tree.
+var diagram = new SfDiagram();
+WindowGrid.Children.Add(diagram);
+
+diagram.Nodes = new ObservableCollection<NodeViewModel>();
+diagram.Connectors = new ObservableCollection<ConnectorViewModel>();
+
+CreatedNode(diagram);
+diagram.LayoutManager = new LayoutManager()
 {
     Layout = new ForceDirectedTreeLayout()
     {
@@ -455,7 +471,7 @@ Diagram.LayoutManager = new LayoutManager()
     }
 };
 
-private void CreatedNode()
+private void CreatedNode(SfDiagram diagram)
 {
     // Create nodes first
     string[] labels = new[]
@@ -497,11 +513,11 @@ private void CreatedNode()
         string role = GetRoleForIndex(i); // "Root","Parent","Child"
         string id = $"Node{i}";
         string label = labels[i - 1];
-        (Diagram.Nodes as NodeCollection).Add(CreateNode(id, role, label));
+        diagram.Nodes.Add(CreateNode(id, role, label));
     }
 
     // Connectors (parent -> child)
-    var cons = Diagram.Connectors as ConnectorCollection;
+    var cons = diagram.Connectors;
 
     // Level 0 -> Level 1
     cons.Add(Edge("Node1", "Node2"));
@@ -586,6 +602,18 @@ private ConnectorViewModel Edge(string sourceId, string targetId)
         TargetNodeID = targetId
     };
 }
+
+// CustomNodeViewModel class
+
+public class CustomNodeViewModel : NodeViewModel
+{
+    public CustomNodeViewModel()
+    {
+    }
+
+    public string Tag { get; set; }
+}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -597,7 +625,11 @@ private ConnectorViewModel Edge(string sourceId, string targetId)
 
 ## Create a Force-Directed Tree from a data source
 
-Bind a collection to [DataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html). At least one item must have a null or empty `Manager` property to act as the root node. Configure the `LayoutManager` with [ForceDirectedTreeLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html?tabs=tabid-1).
+Bind a collection to [DataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html). One item must omit or null its `Manager` property to act as the root. Configure the `LayoutManager` with [ForceDirectedTreeLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Layout.ForceDirectedTreeLayout.html).
+
+The shape size, label, and fill color consumed by the data-driven example are set on the `ForceDirectedDetails` business object (`Width`, `Height`, `Role`, `Color`) but are applied in code by a custom `NodeStyle` or via the `ItemAdded` event, because `DataSourceSettings` (unlike `FlowchartDataSourceSettings`) does not provide `WidthMapping`/`HeightMapping` mappings. The example below sets the labels on the diagram via a custom node view model after item creation.
+
+N> The `Commands` collection on `IGraphInfo` exposes built-in commands such as `FitToPage`, which sizes the viewport to fit the entire diagram. It is only available after the diagram is loaded.
 
 {% tabs %}
 {% highlight xaml %}

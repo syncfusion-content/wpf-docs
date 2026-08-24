@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting Items in WPF CheckedListBox control | Syncfusion
-description: Learn here all about Sorting Items support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
+title: Sorting in WPF CheckListBox | Syncfusion®
+description: Sort items in the Syncfusion WPF CheckListBox control using built-in sort descriptions and custom sort comparers for flexible ordering.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Sorting Items in WPF CheckedListBox (CheckListBox)
+# Sorting in WPF CheckListBox
 
  By default, the [CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) items are arranged based on the order in which they were added to the `Items` collection. You can sort the `CheckListBox` items by adding a `SortDescription` to the `CollectionView.SortDescriptions` collection. The `CheckListBox` items can be sorted in either ascending or descending order, based on the user's preference.
 

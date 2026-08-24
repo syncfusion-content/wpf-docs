@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion licensing errors - Syncfusion 
-description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion WPF applications.
+title: About Syncfusion® WPF Essential Studio licensing errors | Syncfusion®
+description: Learn about overview of Syncfusion® Essential Studio WPF licensing errors, their causes and resolution details.
 platform: wpf
 control: Essential Studio
 documentation: ug
 ---
 
-# Syncfusion Licensing Errors
+# About Syncfusion® WPF Essential Studio Licensing Errors
 
 Licensing error popup is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 

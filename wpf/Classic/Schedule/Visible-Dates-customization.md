@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visible-Dates-customization in WPF Wizard Control control | Syncfusion
-description: Learn here all about Visible-Dates-customization support in Syncfusion WPF Schedule (Classic) control and more.
+title: Visible Dates Customization in WPF Schedule (Classic) | Syncfusion
+description: Learn how Visible Dates Customization in WPF Schedule (Classic) allows users to view multiple specific dates in day and time line views.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Visible-Dates-customization in WPF Schedule (Classic)
+# Visible Dates Customization in WPF Schedule (Classic)
 
 All views in the schedule have their own number of visible dates. The SfSchedule control allows users to view multiple dates in the day and time line views.
 

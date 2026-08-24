@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Diagram Control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Diagram (classic) control, its elements and more details.
+title: Getting Started with WPF Diagram | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Diagram. Explore setup, diagram architecture, layouts, symbols, views, and customization options.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Getting Started with WPF Diagram (classic)
+# Getting Started with WPF Diagram
 
 This section helps you to get started with Essential Diagram and has the following topics:
 

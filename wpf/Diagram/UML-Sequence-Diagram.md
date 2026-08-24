@@ -93,7 +93,7 @@ Diagram.Model = new UMLSequenceDiagramModel()
 
 ### Messages
 
-[UMLSequenceMessage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceMessage.html) represent communication between participants and is displayed as arrows connecting lifelines.
+[UMLSequenceMessage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.UMLSequenceMessage.html) represent communication between participants and are displayed as arrows connecting lifelines.
 
 #### Types of Messages
 
@@ -401,7 +401,7 @@ var messages = new MessageCollection
     }
 };
 
-// Intialize Diagram
+// Initialize Diagram
 SfDiagram Diagram = new SfDiagram();
 
 // Update Participants and Messages to the Model
@@ -663,7 +663,7 @@ var fragments = new FragmentCollection
 };
 
 
-// Intialize Diagram
+// Initialize Diagram
 SfDiagram Diagram = new SfDiagram();
 
 // Update Participants, Messages and Fragments to the Model
@@ -724,7 +724,7 @@ The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 </syncfusion:SfDiagram>
 {% endhighlight %}  
 {% highlight c# %}  
-// Intialize Diagram
+// Initialize Diagram
 SfDiagram Diagram = new SfDiagram();
 
 // Initialize the UML Sequence Diagram model with custom spacing and predefined elements  

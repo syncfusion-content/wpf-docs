@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Minimizing MDI window in WPF Tabbed MDI Form control | Syncfusion®
-description: Learn here all about Minimizing MDI window support in Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: WPF
+title: Minimizing MDI Window in WPF DocumentContainer | Syncfusion®
+description: Minimize an MDI child window inside the Syncfusion WPF Tabbed MDI Form (DocumentContainer) control to keep it accessible but out of view.
+platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 
-# Minimizing MDI Window in WPF Tabbed MDI Form (DocumentContainer)
+# Minimizing MDI Window in WPF DocumentContainer
 
 ## Assembly Deployment
 

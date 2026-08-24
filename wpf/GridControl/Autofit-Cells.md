@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autofit Cells in WPF GridControl | Syncfusion®
-description: Learn about Autofit Cells support in Syncfusion® Essential Studio® WPF GridControl, its elements and more details.
+description: Automatically fit row heights and column widths in GridControl based on cell content, wrap text, covered cells, and resize options.
 platform: wpf
 control: GridControl
 documentation: ug

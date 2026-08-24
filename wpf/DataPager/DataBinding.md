@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataBinding in WPF DataPager control | Syncfusion®
-description: Learn here all about DataBinding support in Syncfusion® WPF DataPager (SfDataPager) control and more.
+title: DataBinding in WPF SfDataPager | Syncfusion®
+description: Bind and paginate data in SfDataPager using source collections, paged views, on-demand paging, page navigation, and dynamic page size options.
 platform: wpf
-control: SfDataPager Control
+control: SfDataPager
 documentation: ug
 ---
 
-# DataBinding in WPF DataPager (SfDataPager)
+# DataBinding in WPF SfDataPager
 
 
 Data binding is the master feature of SfDataPager. SfDataPager is bound to an external data source to display the data. 

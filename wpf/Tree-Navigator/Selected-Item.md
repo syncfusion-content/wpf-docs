@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selected Item in WPF Tree Navigator control | Syncfusion
-description: Learn here all about Selected Item support in Syncfusion WPF Tree Navigator (SfTreeNavigator) control and more.
+title: Selected Item in WPF SfTreeNavigator | Syncfusion®
+description: Selected Item support in SfTreeNavigator enables tracking and managing the currently selected item, allowing responsive navigation and state updates.
 platform: wpf
 control: SfTreeNavigator 
 documentation: ug
 ---
 
-# Selected Item in WPF Tree Navigator (SfTreeNavigator)
+# Selected Item in WPF SfTreeNavigator
 
 The SelectedItem property of SfTreeNavigator can be used to get or set the SelectedItem in SfTreeNavigator.
 

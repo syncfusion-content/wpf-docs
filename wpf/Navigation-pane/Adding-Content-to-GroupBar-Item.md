@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Adding Content to GroupBar Item in WPF Navigation Pane | Syncfusion
-description: Learn here all about Adding Content to GroupBar Item support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
+title: Add Content to GroupBar Items in WPF Navigation Pane | Syncfusion®
+description: Add panels, GroupView controls, and GroupView items to GroupBar items and handle item-related events in the Navigation Pane (GroupBar).
 platform: wpf
 control: Navigation Pane
 documentation: ug
 ---
 
-# Adding Content to GroupBar Item in WPF Navigation Pane (GroupBar)
+# Add Content to GroupBar Items in WPF Navigation Pane (GroupBar)
 
 You can add content to a GroupBar Item using a Panel or a GroupView control. Any content can be added to the GroupBar Item by adding any control inside the panel. To view the contents of a GroupBar Item in ListView mode, add the GroupView as content in the GroupBar Item.
 

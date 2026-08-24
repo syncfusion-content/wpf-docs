@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout Related Features | CheckListBox | wpf | Syncfusion
-description: Layout related features in Syncfusion Essential Studio WPF CheckListBox control, its elements and more.
+title: Layout Related Features in WPF CheckListBox | Syncfusion®
+description: Configure the layout of the Syncfusion WPF CheckListBox control by adjusting item height, width, padding, alignment, and visual arrangement.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Layout Related Features
+# Layout Related Features in WPF CheckListBox
 
 This section illustrates the layout-related features of the `CheckListBox` control. The following features are discussed:
 

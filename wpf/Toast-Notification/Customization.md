@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of WPF Toast Notification | Syncfusion®
-description: Learn how to customize action buttons and close button behavior in Syncfusion® WPF Toast Notification control.
+title: Customization in WPF Toast Notification | Syncfusion®
+description: Customize action buttons and close button behavior in the Syncfusion WPF Toast Notification (SfToastNotification) control for interactive notifications.
 platform: wpf
 control: SfToastNotification
 documentation: ug
 ---
 
-# Actions and Customization in WPF Toast Notification
+# Customization in WPF Toast Notification
 
 This section explains how to customize toast interaction elements such as action buttons, callbacks, templates, and close button behavior.
 

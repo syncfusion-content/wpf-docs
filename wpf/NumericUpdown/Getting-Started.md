@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with WPF NumericUpdown control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF NumericUpdown (UpDown) control, its elements and more details.
-platform: WPF
+title: Getting Started with WPF UpDown | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF UpDown control. Explore setup, features, examples, and customization options.
+platform: wpf
 control: UpDown
 documentation: ug
 ---
-# Getting Started with WPF NumericUpdown (UpDown)
+# Getting Started with WPF UpDown
 
 This section explains how to create the [WPF NumericUpDown](https://www.syncfusion.com/wpf-controls/numericupdown) (UpDown) control and describes its structure.
 
@@ -24,7 +24,7 @@ The following are the elements of the UpDown control:
 
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#updown) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in a WPF application.
+[Click_here](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details on how to install nuget packages in WPF application.
 
 ## Adding WPF UpDown control via designer
 

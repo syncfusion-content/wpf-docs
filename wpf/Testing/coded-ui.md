@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Coded UI Testing | WPF | Syncfusion
-description: This section expalins the basic steps to test the controls using CodedUI for Syncfusion Essential Studio WPF
+title: How to test WPF controls using Coded UI | Syncfusion®
+description: Learn how to test Syncfusion® WPF controls using Coded UI Tests to record actions, create assertions and automate UI testing.
 platform: wpf
 control: Testing
 documentation: ug
 ---
-# Coded UI Testing in WPF
+# How to test WPF controls using Coded UI
 
 Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. Our controls support CUITs Coded UI automation that helps you to create automated tests for inner elements and records the sequence of actions. When dragging the crosshair shown in Coded UI Test Builder on UI elements, it shows the properties of the respective UI elements. You can also add assertion for each of the properties.
 

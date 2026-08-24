@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutoReverse in WPF Domain Updown control | Syncfusion®
-description: Learn here all about AutoReverse support in Syncfusion® WPF Domain Updown (SfDomainUpDown) control and more.
-platform: WPF
+title: AutoReverse in WPF SfDomainUpdown | Syncfusion®
+description: Cycle back to the first item automatically when the last item is reached in the Syncfusion WPF SfDomainUpDown control.
+platform: wpf
 control: DomainUpDown
 documentation: ug
 ---
 
-# AutoReverse in WPF Domain Updown (SfDomainUpDown)
+# AutoReverse in WPF SfDomainUpdown
 
 The `AutoReverse` property controls how the value wraps when it reaches the upper or lower bound. When `AutoReverse` is `True`, incrementing past the maximum value continues from the minimum value, and decrementing past the minimum value continues from the maximum value. The default value of `AutoReverse` is `False`.
 

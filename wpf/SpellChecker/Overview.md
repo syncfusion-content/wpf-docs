@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF SpellChecker control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF SpellChecker (SfSpellChecker) control, its elements and more.
-platform: WPF
-control: SfSpellChecker
+title: About Syncfusion® WPF SfSpellChecker Control | Syncfusion®
+description: Learn about introduction of Syncfusion Essential Studio WPF SfSpellChecker control, its features and more details.
+platform: wpf
+control: SfSpellChecker 
 documentation: ug
 ---
 
-# WPF SpellChecker (SfSpellChecker) Overview
+# About Syncfusion® WPF SfSpellChecker Control
 
 [SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) control provides a simple and intuitive interface to check for spelling errors in text-editor controls. You can perform spell-checking on a text editor, and it provides suggestions for misspelled words through both a dialog and a context menu. You can use spell-checking for any language (culture) input text, and add custom dictionary support.
 

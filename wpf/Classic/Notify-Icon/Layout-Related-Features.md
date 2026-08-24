@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout Related Features in WPF Notify Icon control | Syncfusion
-description: Learn about Layout Related Features support in Syncfusion WPF Notify Icon control, its elements and more details.
+title: Layout Related Features in WPF NotifyIcon | Syncfusion®
+description: Layout related features in WPF NotifyIcon provide flexible arrangement of tray icon elements, ensuring seamless integration with applications.
 platform: wpf
 control: NotifyIcon
 documentation: ug
 ---
 
-# Layout Related Features in WPF Notify Icon
+# Layout Related Features in WPF NotifyIcon
 
 This section illustrates the following Layout-related feature of NotifyIcon control.
 

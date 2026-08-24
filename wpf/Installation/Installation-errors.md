@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installation Errors in WPF - Syncfusion
-description: Learn here about the common installation errors and solution to those errors in Syncfusion WPF Components installation.
+title: About Syncfusion® WPF Installation Errors | Syncfusion®
+description: Learn about overview of Syncfusion® Essential Studio WPF installation errors, their causes and solutions and more details.
 platform: wpf
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Common installation errors
+# About Syncfusion® WPF Installation Errors
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors.
 

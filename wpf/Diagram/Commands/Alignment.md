@@ -13,19 +13,23 @@ Alignment commands are used to align the selected objects such as Nodes and Conn
 
 ## AlignLeft command 
 
-The [`AlignLeft`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignLeft) command is used to align all the selected objects along the left corner of the reference object.
+The [`AlignLeft`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignLeft) command is used to align all the selected objects along the left edge of the reference object.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignLeft" Name="AlignLeft" Command="Syncfusion:DiagramCommands.AlignLeft"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+
 // sets direction to Left
 graphinfo.Commands.AlignLeft.Execute(null);
 
@@ -34,17 +38,20 @@ graphinfo.Commands.AlignLeft.Execute(null);
 
 ## AlignRight command
 
-The [`AlignRight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignRight) command is used to align all the selected objects along the right corner of the reference object.
+The [`AlignRight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignRight) command is used to align all the selected objects along the right edge of the reference object.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignRight" Name="AlignRight" Command="Syncfusion:DiagramCommands.AlignRight"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 // sets direction to Right
@@ -59,13 +66,16 @@ The [`AlignCenter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignCenter" Name="AlignCenter" Command="Syncfusion:DiagramCommands.AlignCenter"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 // sets direction to Center vertically
@@ -78,17 +88,20 @@ graphinfo.Commands.AlignCenter.Execute(null);
 
 ## AlignTop command 
 
-The [`AlignTop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignTop) command is used to align all the selected objects along the top corner of the reference object.
+The [`AlignTop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignTop) command is used to align all the selected objects along the top edge of the reference object.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignTop" Name="AlignTop" Command="Syncfusion:DiagramCommands.AlignTop"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 // sets direction to Top
@@ -99,17 +112,20 @@ graphinfo.Commands.AlignTop.Execute(null);
 
 ## AlignBottom command
 
-The [`AlignBottom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignBottom) command is used to align all the selected objects along the bottom corner of the reference object.
+The [`AlignBottom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_AlignBottom) command is used to align all the selected objects along the bottom edge of the reference object.
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignBottom" Name="AlignBottom" Command="Syncfusion:DiagramCommands.AlignBottom"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 // sets direction as Bottom
@@ -124,17 +140,20 @@ The [`AlignMiddle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagra
 
 {% tabs %}
 
-{% highlight Xaml%}
+{% highlight xaml%}
 
 <Button Height="50" Content="AlignMiddle" Name="AlignMiddle" Command="Syncfusion:DiagramCommands.AlignMiddle"></Button>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
+
+//Initialize the SfDiagram 
+SfDiagram diagramcontrol = new SfDiagram();
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 // sets direction to Center horizontally
-graphinfo.Commands.AlignCenter.Execute(null);
+graphinfo.Commands.AlignMiddle.Execute(null);
 
 {% endhighlight %}
 {% endtabs %}

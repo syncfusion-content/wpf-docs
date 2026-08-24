@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Handling Selection in WPF Navigation Drawer control | Syncfusion®
-description: Learn here all about Handling Selection support in Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) control and more.
+title: Selection in WPF NavigationDrawer | Syncfusion®
+description: Get or set the selected navigation item when working with built-in navigation items or custom data-bound objects.
 platform: wpf
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Handling Selection in WPF Navigation Drawer (SfNavigationDrawer)
+# Selection in WPF Navigation Drawer (SfNavigationDrawer)
 
 This section explains the handling of selection in SfNavigationDrawer. 
 

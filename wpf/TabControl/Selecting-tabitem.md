@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Select tab in WPF TabControl control | Syncfusion®
-description: Learn here all about Select tab support in Syncfusion® WPF TabControl (TabControlExt) control and more.
-platform: WPF
+title: Select Tab in WPF TabControlExt | Syncfusion®
+description: Select a tab item in the Syncfusion WPF TabControl (TabControlExt) programmatically or through user interaction.
+platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Select tab in WPF TabControl (TabControlExt)
+# Select Tab in WPF TabControlExt
 
 This section explains how to select tab item and selection functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 

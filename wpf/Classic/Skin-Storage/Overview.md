@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF SkinStorage Control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF SkinStorage (Classic) control, its elements and more details.
+title: About Syncfusion® WPF SkinStorage Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio WPF SkinStorage (Classic) control and more details.
 platform: wpf
 control: SkinStorage
 documentation: ug
 ---
 
-# WPF SkinStorage (Classic) Overview
+# About Syncfusion® WPF SkinStorage Control
 
 The Skin Manager Framework provides a convenient way to give the appealing appearance to the WPF controls as well as the Syncfusion controls.
 

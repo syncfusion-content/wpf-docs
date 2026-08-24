@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Statistical Formula and Utility Functions in WPF Chart | Syncfusion
-description: Learn here all about Statistical-Formula-and-Utility-Functions support in Syncfusion WPF Chart (Classic) control and more.
+title: Utility Functions in WPF Classic Chart | Syncfusion®
+description: Statistical formula and utility functions in WPF Classic Chart provide calculations, data analysis, and derived values for chart visualization.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Statistical Formula and Utility Functions in WPF Chart (Classic)
+# Utility Functions in WPF Classic Chart
 
 This feature allows the user to calculate basic statistical functions that include mean, median, standard deviation, variance, variance based estimator, variance unbased estimator, correlation coefficient and covariance, ANOVA, T-test, Z-test, and F-test performed based on sample series, and utility functions like normal distribution, T-cumulative distribution and F-cumulative distribution.
 

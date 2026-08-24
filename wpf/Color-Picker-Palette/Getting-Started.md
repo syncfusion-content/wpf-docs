@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Color Picker Palette | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Color Picker Palette control, its elements, and more.
+title: Getting Started with WPF ColorPickerPalette | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF ColorPickerPalette control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: ColorPickerPalette
 documentation: ug
 ---
 
-# Getting Started with WPF Color Picker Palette
+# Getting Started with WPF ColorPickerPalette
 
 This section explains how to create a [WPF ColorPickerPalette](https://www.syncfusion.com/wpf-controls/color-picker-palette) and explains about its structure and features.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Breadcrumb (HierarchyNavigator) | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF Breadcrumb (HierarchicalNavigator) control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF HierarchyNavigator | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF HierarchyNavigator control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Getting Started with WPF Breadcrumb (HierarchyNavigator)
+# Getting Started with WPF HierarchyNavigator
 
 ## Assembly deployment
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creating Different Views in WPF Diagram | Syncfusion
-description: Learn here all about Creating Different Views in the ContextViewManager support in Syncfusion WPF Diagram (classic) control and more.
+title: Creating Different Views in WPF Diagram | Syncfusion®
+description: Learn how to create different context views in the Syncfusion® WPF Diagram, including predecessor, successor, and neighborhood views.
 platform: wpf
 control: Diagram
 documentation: ug

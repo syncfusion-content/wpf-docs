@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling in WPF Toast Notification control | Syncfusion®
-description: Learn how to customize Syncfusion® WPF Toast Notification (SfToastNotification) using severity, variants, accent brush, placement, and animations.
+title: Appearance and Styling in WPF Toast Notification | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF Toast Notification (SfToastNotification) using severity, variants, accent brush, placement, and animations.
 platform: wpf
 control: SfToastNotification
 documentation: ug

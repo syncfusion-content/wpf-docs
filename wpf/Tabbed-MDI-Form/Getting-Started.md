@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Tabbed MDI Form control | Syncfusion®
-description: Learn here all about getting started with Syncfusion® WPF Tabbed MDI Form (DocumentContainer) control and more.
-platform: WPF
+title: Getting Started with WPF DocumentContainer | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF Tabbed MDI Form control. Explore setup, features, examples, and customization options.
+platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 
-# Getting Started with WPF Tabbed MDI Form (DocumentContainer)
+# Getting Started with WPF DocumentContainer
 
 This section describes how to add [WPF Tabbed MDI Form](https://www.syncfusion.com/wpf-controls/tabbed-mdi-form) (DocumentContainer) control into wpf application and its basic functionalities.
 
@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Create a simple application with DocumentContainer
 

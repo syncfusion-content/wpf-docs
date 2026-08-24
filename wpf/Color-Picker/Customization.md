@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization | ColorPicker | wpf | Syncfusion®
-description: This section explains about layout related properties such as FlowDirection, ColorPalette enabled and display mode etc.
+title: Customization in WPF ColorPicker | Syncfusion®
+description: Customize the Syncfusion WPF ColorPicker control with layout properties such as FlowDirection, ColorPalette visibility, and display mode.
 platform: wpf
 control: ColorPicker
 documentation: ug

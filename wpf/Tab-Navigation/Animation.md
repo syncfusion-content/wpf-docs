@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animation in WPF Tab Navigation control | Syncfusion
-description: Learn about Animation support in Syncfusion Essential Studio WPF Tab Navigation control, its elements and more.
+title: Animation in WPF TabNavigation | Syncfusion®
+description: Animation in WPF TabNavigation enhances user experience with smooth transitions between tabs, creating intuitive and visually engaging navigation.
 platform: wpf
 control: TabNavigation
 documentation: ug
 ---
 
-# Animation in WPF Tab Navigation
+# Animation in WPF TabNavigation
 
 Transition Effect property is used to set the animation effect for the tab navigation control. The Transition effect is an enum that contains five values namely:
 

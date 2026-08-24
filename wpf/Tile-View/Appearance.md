@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF Tile View control | Syncfusion®
-description: Learn about Appearance support in Syncfusion® Essential Studio® WPF TileView Control, its elements and more.
-platform: WPF
+title: Appearance in WPF TileView | Syncfusion®
+description: Customize the look and feel of the Syncfusion WPF TileView (TileViewControl) using built-in themes, custom templates, and styling options.
+platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# Appearance in WPF Tile View
+# Appearance in WPF TileView
 
 This section explains different styling, theming options available in [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Changing Percent Value in WPF Percent TextBox control | Syncfusion®
-description: Learn about Changing Percent Value support in Syncfusion® WPF Percent TextBox control, its elements and more.
-platform: WPF
+title: Changing Percent Value in WPF PercentTextBox | Syncfusion®
+description: Update the percent value of the Syncfusion WPF PercentTextBox control programmatically, by spinner buttons, or via keyboard interactions.
+platform: wpf
 control: PercentTextBox 
 documentation: ug
 ---
 
-# Changing Percent Value in WPF Percent TextBox
+# Changing Percent Value in WPF PercentTextBox
 
 The [PercentTextBox](https://www.syncfusion.com/wpf-controls/percent-textbox) allows the user to change the percent value using the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValue) property.
 

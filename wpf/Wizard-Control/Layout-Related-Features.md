@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout Related Features in WPF Wizard Control | Syncfusion
-description: Learn about Layout Related Features support in Syncfusion WPF Wizard Control, its elements and more.
+title: Layout Related Features in WPF WizardControl | Syncfusion®
+description: The Layout-related features in WPF WizardControl provide flexible page organization, responsive arrangement, and customizable wizard interfaces.
 platform: wpf
 control: Wizard
 documentation: ug
 ---
 
-# Layout Related Features in WPF Wizard Control
+# Layout Related Features in WPF WizardControl
 
 This section illustrates the following Layout-related features of [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
 
@@ -148,4 +148,4 @@ WizardControl supports various built-in themes. Refer to the below links to appl
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
- ![Setting theme to WPF WizardControl](Getting-Started_images/Theme.png)
+ ![Setting theme to WPF WizardControl](getting-started_images\wpf-wizard-control-theme.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Percent TextBox control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Essential Studio® WPF Percent TextBox control, its elements and more.
-platform: WPF
+title: Getting Started with WPF PercentTextBox | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF PercentTextBox control. Explore setup, features, examples, and customization options.
+platform: wpf
 control: PercentTextBox
 documentation: ug
 ---
 
-# Getting Started with WPF Percent TextBox
+# Getting Started with WPF PercentTextBox
 
 This section explains how to create a WPF `PercentTextBox` control and its features.
 
@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Adding WPF PercentTextBox via designer
 

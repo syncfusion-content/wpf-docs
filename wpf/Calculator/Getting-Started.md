@@ -1,20 +1,20 @@
----
+﻿---
 layout: post
-title: Getting Started with WPF Calculator control | Syncfusion®
-description: Learn here about getting started with Syncfusion® WPF Calculator (SfCalculator) control, its elements and more.
+title: Getting Started with WPF SfCalculator | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF SfCalculator control, its elements, and more details.
 platform: wpf
 control: SfCalculator
 documentation: ug
 ---
 
-# Getting Started with WPF Calculator (SfCalculator)
-This section provides a quick overview for working with the Syncfusion [WPF Calculator](https://www.syncfusion.com/wpf-controls/calculator) (SfCalculator).
+# Getting Started with WPF SfCalculator
+This section provides a quick overview for working with the [WPF Calculator](https://www.syncfusion.com/wpf-controls/calculator) (SfCalculator).
 
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfcalculator) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control in any application.
 
-You can find more details about installing the NuGet package in a WPF application at the following link:
-[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages#installing-nuget-packages)
+You can find more details about installing the NuGet package in a WPF application in the following link:
+[How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages#installing-nuget-packages)
 
 ## Creating Application with SfCalculator control
 In this walkthrough, you will create a WPF application that contains the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control.

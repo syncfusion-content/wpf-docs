@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows in WPF SfDataGrid | Syncfusion®
-description: Rows in SfDataGrid provides support for row headers, header rows, frozen rows, footer rows, and row customization features.
+title: Rows in WPF Data Grid | Syncfusion®
+description: Rows in Data Grid provides support for row headers, header rows, frozen rows, footer rows, and row customization features.
 platform: wpf
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Rows in WPF SfDataGrid
+# Rows in WPF Data Grid
 
 This section explains about various row types in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid).
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Item Selection | CheckListBox | wpf | Syncfusion
-description: Learn here about Item Selection in Syncfusion Essential Studio WPF CheckListBox control, its elements and more.
+title: Item Selection in WPF CheckListBox | Syncfusion®
+description: Handle single or multiple item selection in the Syncfusion WPF CheckListBox control using selection mode and related selection events.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Item Selection in WPF CheckListBox Control
+# Item Selection in WPF CheckListBox
 
 In `CheckListBox`, checking of an item can be done with a single click using the [IsCheckOnFirstClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_IsCheckOnFirstClick) property. If this property is set to `false`, the item is checked only when a double click is detected. By default, the value of this property is `True`.
 

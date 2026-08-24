@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OpenAI in WPF AI AssistView control | Syncfusion
-description: Learn about how to connect the AI AssistView control with OpenAI and chat gpt conversation experience.
+title: OpenAI in WPF SfAIAssistView | Syncfusion®
+description: The OpenAI connection feature in WPF SfAIAssistView enables integration with OpenAI services to provide AI-powered conversations and chat experiences.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
 ---
 
-# OpenAI connection for AI AssistView
+# OpenAI in WPF SfAIAssistView
 
 This section explains about how to connect the AI AssistView with OpenAI.
 
@@ -183,16 +183,15 @@ Set the ViewModel as the DataContext for the AI AssistView or the parent window.
 {% tabs %}
 {% highlight xaml %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
+    xmlns:local="clr-namespace:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
+    mc:Ignorable="d">
     <Grid>
      <Grid.DataContext>
         <local:ViewModel/>
@@ -203,7 +202,7 @@ Set the ViewModel as the DataContext for the AI AssistView or the parent window.
                                    TypingIndicator="{Binding TypingIndicator}"
                                    Messages="{Binding Chats}"/>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %} 
 {% endtabs %}
@@ -221,17 +220,16 @@ This approach lets you tailor the appearance of assistant messages without modif
 
 {% tabs %}
 {% highlight xaml %}
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GettingStarted"
+    xmlns:local="clr-namespace:GettingStarted"
     xmlns:mdxam="clr-namespace:MdXaml;assembly=MdXaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Chat;assembly=Syncfusion.SfChat.Wpf"
+    mc:Ignorable="d">
     <Window.Resources>
         <local:ViewTemplateSelector x:Key="viewTS">
             <local:ViewTemplateSelector.AITemplate>
@@ -287,7 +285,7 @@ This approach lets you tailor the appearance of assistant messages without modif
                                    Messages="{Binding Chats}"
                                    ViewTemplateSelector="{StaticResource viewTS}"/>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WPF Wizard Control | Syncfusion
-description: Learn about Interactive Features support in Syncfusion Essential Studio WPF Wizard Control, its elements and more.
+title: Interactive Features in WPF WizardControl | Syncfusion®
+description: The Interactive features in WPF WizardControl enable seamless step-by-step navigation, user guidance, validation, and dynamic workflow customization.
 platform: wpf
 control: Wizard
 documentation: ug
 ---
 
-# Interactive Features in WPF Wizard Control
+# Interactive Features in WPF WizardControl
 
 This section illustrates the following interactive feature of [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html). 
 
@@ -338,7 +338,7 @@ This topic illustrates the following about Navigation buttons of [Wizard Page](h
 * Showing or Hiding the Navigation Buttons
 * Text for the Navigation Buttons
 
-#### Enabling or Disabling the Navigation Buttons
+### Enabling or Disabling the Navigation Buttons
 
 You can enable or disable the Back, Cancel, Next and Finish navigation buttons in the wizard control and wizard page. This is done by using the [BackEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_BackEnabled), [CancelEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_CancelEnabled), [NextEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_NextEnabled) and [FinishEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html#Syncfusion_Windows_Tools_Controls_WizardPage_FinishEnabled) properties.
 

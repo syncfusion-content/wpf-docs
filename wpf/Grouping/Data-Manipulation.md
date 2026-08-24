@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data Manipulation in WPF Grouping control | Syncfusion®
-description: Learn about Data Manipulation support in Syncfusion® Essential Studio® WPF Grouping control, its elements and more details.
-platform: WindowsForms
+title: Data Manipulation in WPF Grouping | Syncfusion®
+description: Data manipulation in Grouping enables filtering, expression-based calculations, sorting, and custom sorting to organize and analyze data efficiently.
+platform: wpf
 control: Grouping
 documentation: ug
 ---

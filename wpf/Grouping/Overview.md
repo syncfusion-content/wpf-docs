@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Grouping control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® WPF Grouping control, its elements and more details.
+title: About Syncfusion® WPF Grouping Control | Syncfusion®
+description: Learn about overview of Syncfusion® Essential Studio WPF Grouping control, its features and more details.
 platform: wpf
 control: Grouping
 documentation: ug
 ---
 
-# WPF Grouping Overview
+# About Syncfusion® WPF Grouping Control
 
 This section covers information on Essential<sup>®</sup> Grouping, its key features, prerequisites to use the control, its compatibility with various OS and browsers, and finally the documentation details complimentary with the product. It comprises the following subsections:
 

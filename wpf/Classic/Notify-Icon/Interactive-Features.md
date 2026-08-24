@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WPF Notify Icon control | Syncfusion
-description: Learn about Interactive Features support in Syncfusion WPF Notify Icon control, its elements and more details.
+title: Interactive Features in WPF NotifyIcon | Syncfusion®
+description: Interactive features in WPF NotifyIcon enable user engagement through tray icon actions, context menus, notifications, and event handling.
 platform: wpf
 control: NotifyIcon
 documentation: ug
 ---
 
-# Interactive Features in WPF Notify Icon
+# Interactive Features in WPF NotifyIcon
 
 This section illustrates the following interactive features of NotifyIcon control. 
 

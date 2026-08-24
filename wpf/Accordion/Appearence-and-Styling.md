@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance and Styling in WPF Accordion control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion WPF Accordion (SfAccordion) control and more.
-platform: WPF
+title: Appearance and Styling in WPF SfAccordion | Syncfusion®
+description: The Appearance and Styling support in SfAccordion lets you customize headers, content, icons, and themes for a consistent UI.
+platform: wpf
 control: SfAccordion
 documentation: ug
 
 ---
 
-# Appearance and Styling in WPF Accordion (SfAccordion)
+# Appearance and Styling in WPF SfAccordion
 
 ## Applying accent colors
 
