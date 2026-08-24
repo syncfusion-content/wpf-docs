@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WPF color picker (ColorPicker)
 
-This section explains different UI customization, styling, theming options available in [ColoPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) control.
+This section explains the UI customization, styling, and theming options available for the [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) control.
 
 ## Change Header Template
 
-We can customize the header of the `ColorPicker` by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_HeaderTemplate) property.
+You can customize the header of the `ColorPicker` by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_HeaderTemplate) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,7 +45,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-colorpicker
 
 ## Change flow direction
 
-We can change the flow direction of the `ColorPicker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Default value of `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `ColorPicker` layout to right-to-left by setting the `FlowDirection` property to `RightToLeft`. The default value of `FlowDirection` is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -67,7 +67,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-colorpicker
 
 ## Setting ToolTip
 
-ToolTip is used to show the information about the segment, when you mouse over on the segment. We can show information about the selected color name using tooltip when click and dragging the mouse on the color palette. Tooltip is enabled by default, you can disable it by setting [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_EnableToolTip) to `false`.
+The tooltip shows information about the color under the cursor. The selected color name is shown in a tooltip when you click and drag the mouse on the color palette. The tooltip is enabled by default; you can disable it by setting [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_EnableToolTip) to `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -83,7 +83,7 @@ colorPicker.EnableToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker with TooTip support](Selection-Mode_images/ColorPicker_Tooltip.png)
+![ColorPicker with ToolTip support](Selection-Mode_images/ColorPicker_Tooltip.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Appearance)
 

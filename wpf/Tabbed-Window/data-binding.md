@@ -13,6 +13,8 @@ This section explains how to bind tabs to a collection in a WPF Tabbed Window us
 
 When data binding is used, the tab header and tab content are generated from the bound data by defining appropriate header and content templates.
 
+N> The example below uses a regular `Window`, but the same bindings work identically inside an `SfChromelessWindow`. Use whichever root element matches your application.
+
 ## Populating Tab Items Using ItemsSource
 
 The SfTabControl supports data binding through the `ItemsSource` property, which allows tabs to be created automatically based on a collection in the ViewModel. Each item in the collection represents a tab, and its properties can be used to define both the tab header and the tab content.
@@ -24,6 +26,10 @@ The following example demonstrates how to bind tab items using the MVVM pattern.
 {% tabs %}
 
 {% highlight C# %}
+
+// Required usings:
+// using System.Collections.ObjectModel;
+// using Syncfusion.Windows.Shared;   // NotificationObject
 
 // TabModel.cs
 public class TabModel

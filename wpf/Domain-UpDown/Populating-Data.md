@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Data in WPF Domain Updown (SfDomainUpDown)
 
-The DomainUpDown control can be populated with a predefined list of items. 
+The `DomainUpDown` control can be populated with a predefined list of items. The following example shows how to populate the control with a list of employees.
 
 For example, in the following code, the DomainUpDown populates a list of employees:
 
@@ -25,10 +25,13 @@ public class Employee
 {%endhighlight%}
 {% endtabs %}
 
-Create a collection attribute:
+Create a collection property:
 
 {% tabs %}
 {%highlight c#%}
+
+// Required usings:
+// using System.Collections.Generic;
 
 private List<Employee> employees;
 public List<Employee> Employees
@@ -55,30 +58,35 @@ Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
 
 ## ItemsSource
 
-Bind the Employees collection to the ItemsSource property of DomainUpDown:
+Bind the `Employees` collection to the `ItemsSource` property of the `DomainUpDown` control. Set the `DataContext` to an instance of your view model so the binding resolves.
 
 {% tabs %}
-{%highlight c#%}
+{%highlight xaml%}
 
-<Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf">
-<Grid>
-<editors:SfDomainUpDown x:Name="domainUpDown"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       Width="200"
-                      ItemsSource="{Binding Employees}" >           
-</editors:SfDomainUpDown>
-</Grid>
-</Page>
+<Window x:Class="DomainUpDownSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.WPF">
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <Grid>
+        <editors:SfDomainUpDown x:Name="domainUpDown"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Width="200"
+                               ItemsSource="{Binding Employees}" />
+    </Grid>
+</Window>
 
 {%endhighlight%}
 {% endtabs %}
 
-N> When the ContentTemplate property of the DomainUpDown control is not set, Items will be displayed as business objects in the control.
+N> When the `ContentTemplate` property of the `DomainUpDown` control is not set, items are displayed by calling `ToString()` on each data object.
 
 ## ContentTemplate
 
-ContentTemplate helps the user decorate the content with visual elements. At this point, the control is populated with list of employees, and the Employee model contains two properties: Name and Email. In this example, the control is set to display content based on Name.
+`ContentTemplate` lets you decorate the content with visual elements. In the example below, the control is set to display the `Name` property of each `Employee` alongside an image.
 
 {% tabs %}
 {%highlight xaml%}
@@ -87,18 +95,18 @@ ContentTemplate helps the user decorate the content with visual elements. At thi
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        Width="200"
-                      ItemsSource="{Binding Employees}">
-<editors:SfDomainUpDown.ContentTemplate>
-<DataTemplate>
-<StackPanel Orientation="Horizontal">
-<Image Height="24" Width="24" Source="Image.png"/>
-<TextBlock Text="{Binding Name}"/>
-</StackPanel>
-</DataTemplate>
-</editors:SfDomainUpDown.ContentTemplate>
+                       ItemsSource="{Binding Employees}">
+    <editors:SfDomainUpDown.ContentTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <Image Height="24" Width="24" Source="/Resources/Image.png"/>
+                <TextBlock Text="{Binding Name}"/>
+            </StackPanel>
+        </DataTemplate>
+    </editors:SfDomainUpDown.ContentTemplate>
 </editors:SfDomainUpDown>
 
 {%endhighlight%}
 {% endtabs %}
 
-![Populating-Data_img1](Populating-Data_images/Populating-Data_img1.png)
+![Populating Data](Populating-Data_images/Populating-Data_img1.png)

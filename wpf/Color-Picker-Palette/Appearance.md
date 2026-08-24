@@ -13,7 +13,7 @@ This section explains different UI customization, styling, theming options avail
 
 ## Change flow direction
 
-We can change the flow direction of the `ColorPickerPalette` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Default value of `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `ColorPickerPalette` layout to right-to-left by setting the `FlowDirection` property to `RightToLeft`. The default value of `FlowDirection` is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}

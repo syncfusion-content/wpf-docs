@@ -11,78 +11,82 @@ documentation: ug
 
 # Customization in WPF ColorPicker
 
-[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) has build-in color palette to select solid color easily. This can be enabled using [IsColorPaletteVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_IsColorPaletteVisible) property.
+[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) has a built-in color palette to select a solid color easily. This can be enabled using the [IsColorPaletteVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_IsColorPaletteVisible) property.
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:ColorEdit  x:Name="ColorEdit2"   IsColorPaletteVisible="True"/>
+
+<syncfusion:ColorEdit x:Name="colorEdit" IsColorPaletteVisible="True"/>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
- IsColorPaletteVisible.IsColorPaletteVisible = true;
+colorEdit.IsColorPaletteVisible = true;
 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF ColorPicker IsColorPaletteVisible](ScRGB-Color_images/ColorPicker_ColorPalleteEnabled.png)
-
+![WPF ColorPicker with color palette enabled](ScRGB-Color_images/ColorPicker_ColorPalleteEnabled.png)
 
 ## Gradient brush display mode
 
-Brush representation of ColorPicker can be customized using [GradientBrushDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_GradientBrushDisplayMode) property.
+The brush representation of `ColorPicker` can be customized using the [GradientBrushDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_GradientBrushDisplayMode) property. The default value of `GradientBrushDisplayMode` is `Default`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ColorPicker  GradientBrushDisplayMode = "Extended"/>
+<syncfusion:ColorPicker x:Name="colorPicker" GradientBrushDisplayMode="Extended"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-colorPicker1.GradientBrushDisplayMode = Syncfusion.Windows.Tools.GradientBrushDisplayMode.Extended;
+colorPicker.GradientBrushDisplayMode = Syncfusion.Windows.Tools.GradientBrushDisplayMode.Extended;
 
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker-HeaderTemplate-WPF](New-User-Interface-Support_images/GradientDisplayMode_Default.png)
+![ColorPicker with Extended gradient display mode](New-User-Interface-Support_images/GradientDisplayMode_Default.png)
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ColorPicker  GradientBrushDisplayMode = "Default"/>
+<syncfusion:ColorPicker x:Name="colorPicker" GradientBrushDisplayMode="Default"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-colorPicker1.GradientBrushDisplayMode = Syncfusion.Windows.Tools.GradientBrushDisplayMode.Default;
+colorPicker.GradientBrushDisplayMode = Syncfusion.Windows.Tools.GradientBrushDisplayMode.Default;
 
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker-HeaderTemplate-WPF](New-User-Interface-Support_images/GradientDisplayMode_Extended.png)
+![ColorPicker with Default gradient display mode](New-User-Interface-Support_images/GradientDisplayMode_Extended.png)
 
-## Inverted Color 
+## Inverted Color
 
-[ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html) has option to get the contrast/inverted color of the selected color using [InvertColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_InvertColor) property.
+[ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html) provides a way to get the inverted color of the selected color using the [InvertColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_InvertColor) property. This is useful for generating a contrast color for the current selection.
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:ColorEdit  x:Name="ColorEdit2"    />
-   <TextBlock  Name="textblock2" Text="a"  TextAlignment="Center"  FontSize="70"  Background="{Binding ElementName=ColorEdit2, Path=Brush,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" Height="110" Width="110">
-     <TextBlock.Foreground>
-       <SolidColorBrush Color="{Binding ElementName=ColorEdit2,Path=InvertColor,UpdateSourceTrigger=PropertyChanged}"/>
-     </TextBlock.Foreground>
- </TextBlock>
+
+<syncfusion:ColorEdit x:Name="colorEdit"/>
+<TextBlock Name="textBlock" Text="a" TextAlignment="Center" FontSize="70"
+           Background="{Binding ElementName=colorEdit, Path=Brush, UpdateSourceTrigger=PropertyChanged}"
+           HorizontalAlignment="Center" VerticalAlignment="Center" Height="110" Width="110">
+    <TextBlock.Foreground>
+        <SolidColorBrush Color="{Binding ElementName=colorEdit, Path=InvertColor, UpdateSourceTrigger=PropertyChanged}"/>
+    </TextBlock.Foreground>
+</TextBlock>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-textblock2.Background = ColorEdit2.Brush;
-
-textblock2.Foreground = new SolidColorBrush(ColorEdit3.InvertColor);
+textBlock.Background = colorEdit.Brush;
+textBlock.Foreground = new SolidColorBrush(colorEdit.InvertColor);
 
 {% endhighlight %}
 {% endtabs %}
@@ -91,18 +95,22 @@ textblock2.Foreground = new SolidColorBrush(ColorEdit3.InvertColor);
 
 ## ScRGB-Color
 
-ScRGB color can be obtained by setting [IsScRGBColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_IsScRGBColor) property in ColorEdit.
+ScRGB is a wide-gamut color space that allows color values outside the sRGB range (such as those beyond 1.0 or below 0.0). To enable ScRGB color editing in `ColorEdit`, set the [IsScRGBColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_IsScRGBColor) property to `true`. The default value of `IsScRGBColor` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:ColorEdit  x:Name="ColorEdit2"   IsScRGBColor="True"/>
+
+<syncfusion:ColorEdit x:Name="colorEdit" IsScRGBColor="True"/>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
- ColorEdit2.IsScRGBColor = true;
+colorEdit.IsScRGBColor = true;
 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF ColorPicker IsAlphaVisible](ScRGB-Color_images/ColorPicker_IsScRGBColor.png)
+![WPF ColorPicker with ScRGB color editing](ScRGB-Color_images/ColorPicker_IsScRGBColor.png)
+
+N> `IsScRGBColor` is a `ColorEdit`-only property and is not available on `ColorPicker`.

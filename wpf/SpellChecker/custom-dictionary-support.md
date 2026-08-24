@@ -13,28 +13,28 @@ You can use a default and custom dictionaries to spell check the document based 
 
 ## Default SpellCheck Dictionary
 
-[SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) provides built-in dictionary for `English` language and it provides  suitable suggestion of the error words.
+[SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) provides a built-in dictionary for the `English` language and returns suitable suggestions for misspelled words.
 
 ## Load your own dictionaries for any language
 
-You can add your own dictionary to [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_Dictionaries) collection. `SfSpellChecker` support 3 standard dictionary file format:
+You can add your own dictionary to the [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_Dictionaries) collection. `SfSpellChecker` supports three standard dictionary file formats:
 
- * 1.Hunspell
- * 2.Ispell
- * 3.OpenOffice
- 
-N> Built-in dictionary will be disabled once custom dictionary is added to SfSpellChecker
+1. Hunspell
+2. Ispell
+3. OpenOffice
+
+N> The built-in dictionary is disabled when a custom dictionary is added to `SfSpellChecker`.
 
 ## SpellCheck using Hunspell dictionary
 
-You can check spelling mistakes using `Hunspell` dictionary format. This format contains files as follows,
+You can check spelling mistakes using the `Hunspell` dictionary format. This format contains the following files:
 
-* Affix file with grammar rules- `*.aff`, 
-* Basic Words file - `*.dic` file.
+* Affix file with grammar rules - `*.aff`
+* Basic-words file - `*.dic`
 
 ### Adding Hunspell Dictionary
 
-1. Add your [HunspellDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.HunspellDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1. Add the [HunspellDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.HunspellDictionary.html)'s required-culture `*.aff` and `*.dic` files to the project, and include them as `Resource` items. In Visual Studio, select the files in **Solution Explorer**, open the **Properties** window, and set **Build Action** to `Resource`.
 
 ![Adding Basic word and Grammar files as resource into the application](Dictionary_images/HunspellAdding.png)
 
@@ -44,7 +44,7 @@ You can check spelling mistakes using `Hunspell` dictionary format. This format 
 
 4. Setting the required culture to the [SfSpellChecker.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_Culture) property.
 
-N> The following code snippets shows how to add Hunspell dictionary to the `SpellChecker`. Please refer [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) to know how to configure SfSpellChecker.
+N> The following code snippets show how to add a Hunspell dictionary to the SpellChecker. Please refer to [Adding WPF SfSpellChecker to an application](Getting-Started.md#adding-wpf-sfspellchecker-to-an-application) to learn how to configure `SfSpellChecker`.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -132,16 +132,14 @@ N> You can add multiple `HunspellDictionary` with various culture files into the
 
 ## SpellCheck using Ispell dictionary
 
-You can check spelling mistakes using `Ispell` dictionary format. This format contains files as follows,
+You can check spelling mistakes using the `Ispell` dictionary format. The `Ispell` dictionary contains the following files:
 
-`Ispell` dictionary contains two files as follows,
-
-* Affix file with grammar rules- `*.aff`, 
-* Basic Words file - `*.xlg` or `*.dic` file.
+* Affix file with grammar rules - `*.aff`
+* Basic-words file - `*.xlg` or `*.dic`
 
 ### Adding Ispell Dictionary
 
-1. Add your [IspellDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.IspellDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1. Add the [IspellDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.IspellDictionary.html)'s required-culture `*.aff` and `*.dic` files to the project, and include them as `Resource` items.
 
 ![Adding Basic word and Grammar files as resource into the application](Dictionary_images/IspellAdding.png)
 
@@ -237,16 +235,14 @@ N> You can add multiple `IspellDictionary` with various culture files into the `
 
 ## SpellCheck using OpenOffice dictionary
 
-You can check spelling mistakes using `OpenOffice` dictionary format. This format contains files as follows,
+You can check spelling mistakes using the `OpenOffice` dictionary format. The `OpenOffice` dictionary contains the following files:
 
-`OpenOffice` dictionary contains two files as follows,
-
-* Affix file with grammar rules- `*.aff`, 
-* Basic Words file - `*.dic` file.
+* Affix file with grammar rules - `*.aff`
+* Basic-words file - `*.dic`
 
 ### Adding OpenOffice Dictionary
 
-1. Add your [OpenOfficeDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.OpenOfficeDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1. Add the [OpenOfficeDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.OpenOfficeDictionary.html)'s required-culture `*.aff` and `*.dic` files to the project, and include them as `Resource` items.
 
 ![Adding Basic word and Grammar files as resource into the application](Dictionary_images/OpenOfficeAdding.png)
 
@@ -463,21 +459,20 @@ N> You can add multiple `CustomDictionary` with various culture word files into 
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/CustomSpellCheck) 
 
-## Switch language(Culture) at runtime
+## Switch language (culture) at runtime
 
-You can add `Hunspell`, `Ispell`, or `OpenOffice` dictionaries one or more times with various culture into the `SfSpellChecker.Dictionaries` collection. You can change the spell check culture at runtime by changing the `SfSpellChecker.Culture` property. Based on the current `SfSpellChecker.Culture` respective dictionary is used to spell check.
+You can add `Hunspell`, `Ispell`, or `OpenOffice` dictionaries one or more times with various cultures into the `SfSpellChecker.Dictionaries` collection. The dictionary that matches the current `SfSpellChecker.Culture` is used for spell checking. You can change the spell-check culture at runtime by changing the `SfSpellChecker.Culture` property.
 
 {% tabs %}
 {% highlight xaml %}
 
 <Grid>
     <StackPanel>
-        <TextBox 
+        <TextBox
             Text="Nous sommevs heureusre de vous avochir ici"
             Name="textbox"
             TextWrapping="Wrap">
-
-            <!--Adding Spellchecker to the TextBox-->
+            <!--Adding SpellChecker to the TextBox-->
             <syncfusion:SfSpellChecker.SpellChecker>
                 <syncfusion:SfSpellChecker
                     Culture="fr-FR"
@@ -495,28 +490,33 @@ You can add `Hunspell`, `Ispell`, or `OpenOffice` dictionaries one or more times
                                                          GrammarUri="/HunSpellCheck;component/Spanish/es-ES.aff"
                                                          Culture="es-ES"/>
 
-                        !--Adding english cultured Hunspell dictionary-->
+                        <!--Adding English cultured Hunspell dictionary-->
                         <syncfusion:HunspellDictionary DictionaryUri="/HunSpellCheck;component/US/en-US.dic"
                                                          GrammarUri="/HunSpellCheck;component/US/en-US.aff"
                                                          Culture="en-US"/>
-                        
+
                     </syncfusion:SfSpellChecker.Dictionaries>
                 </syncfusion:SfSpellChecker>
             </syncfusion:SfSpellChecker.SpellChecker>
         </TextBox>
-        <Button 
+        <Button
             Content="Spell Check"
-            Click="SpellCheck_ButtonClick"                
-            HorizontalAlignment="Center"></Button>
+            Click="SpellCheck_ButtonClick"
+            HorizontalAlignment="Center"/>
     </StackPanel>
 </Grid>
 
 {% endhighlight %}
 {% highlight c# %}
 
+// Required usings:
+// using System;
+// using System.Globalization;
+// using Syncfusion.Windows.Controls;
+
 SfSpellChecker spellChecker = new SfSpellChecker();
 
-// Adding Hunspell dictonaries in Dictionaries collection
+// Adding Hunspell dictionaries in Dictionaries collection
 spellChecker.Dictionaries = new DictionaryCollection();
 
 //Add French culture Hunspell dictionary
@@ -524,33 +524,30 @@ spellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = new CultureInfo("fr-FR"),
-        GrammarUri = new Uri("/HunSpellCheck;component//French/fr-FR.aff", UriKind.Relative),
-        DictionaryUri = new Uri("/HunSpellCheck;component//French/fr-FR.dic", UriKind.Relative)
-    }
-);
+        GrammarUri = new Uri("/HunSpellCheck;component/French/fr-FR.aff", UriKind.Relative),
+        DictionaryUri = new Uri("/HunSpellCheck;component/French/fr-FR.dic", UriKind.Relative)
+    });
 
 //Add Spanish culture Hunspell dictionary
 spellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = new CultureInfo("es-ES"),
-        GrammarUri = new Uri("/HunSpellCheck;component//Spanish/es-ES.aff", UriKind.Relative),
-        DictionaryUri = new Uri("/HunSpellCheck;component//Spanish/es-ES.dic", UriKind.Relative)
-    }
-);
+        GrammarUri = new Uri("/HunSpellCheck;component/Spanish/es-ES.aff", UriKind.Relative),
+        DictionaryUri = new Uri("/HunSpellCheck;component/Spanish/es-ES.dic", UriKind.Relative)
+    });
 
 //Add US culture Hunspell dictionary
 spellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = new CultureInfo("en-US"),
-        GrammarUri = new Uri("/HunSpellCheck;component//US/en-US.aff", UriKind.Relative),
-        DictionaryUri = new Uri("/HunSpellCheck;component//US/en-US.dic", UriKind.Relative)
-    }
-);
+        GrammarUri = new Uri("/HunSpellCheck;component/US/en-US.aff", UriKind.Relative),
+        DictionaryUri = new Uri("/HunSpellCheck;component/US/en-US.dic", UriKind.Relative)
+    });
 
-//Setting a required dictionary's french culture for SpellChecker 
-spellChecker.Culture = spellChecker.Dictionaries[0].Culture;;
+//Set the initial culture for the SpellChecker
+spellChecker.Culture = spellChecker.Dictionaries[0].Culture;
 
 //Assigning a spellchecker to the TextBox
 SfSpellChecker.SetSpellChecker(textbox, spellChecker);
@@ -571,5 +568,5 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 
 ![SpellCheck using Hunspell dictionary](Dictionary_images/HunSpell.png)
 
-Here, `SpellChecker.Culture` is `fr-FR` culture. So, `fr-FR` cultured `Hunspell` dictionary is used as speck check dictionary.
+Here, `SpellChecker.Culture` is initially `fr-FR`, so the `fr-FR` Hunspell dictionary is used as the spell-check dictionary. After switching the `Culture` to `es-ES`, the Spanish dictionary is used.
 

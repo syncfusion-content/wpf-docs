@@ -9,7 +9,12 @@ documentation: ug
 
 # AutoReverse in WPF Domain Updown (SfDomainUpDown)
 
-Incrementing the value starts from the maximum value once it has reached the minimum value and starts from the minimum value once it has reached the maximum value.
+The `AutoReverse` property controls how the value wraps when it reaches the upper or lower bound. When `AutoReverse` is `True`, incrementing past the maximum value continues from the minimum value, and decrementing past the minimum value continues from the maximum value. The default value of `AutoReverse` is `False`.
+
+N> The `editors:` namespace must be declared on the root element:
+`xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.WPF"`
+
+A `DataContext` that exposes an `Employees` property must also be set for the binding below to resolve.
 
 {% tabs %}
 {%highlight xaml%}
@@ -17,10 +22,9 @@ Incrementing the value starts from the maximum value once it has reached the min
 <editors:SfDomainUpDown x:Name="domainUpDown"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
-                       Width="200" 
+                       Width="200"
                        AutoReverse="True"
-                       ItemsSource="{Binding Employees}">
-</editors:SfDomainUpDown >
+                       ItemsSource="{Binding Employees}" />
 
 {%endhighlight%}
 {% endtabs %}

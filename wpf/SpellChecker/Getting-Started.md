@@ -17,48 +17,55 @@ This section explains how to create a [WPF SpellChecker](https://www.syncfusion.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfspellchecker) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfspellchecker) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link: 
+You can find more details about installing the NuGet package in a WPF application in the following link:
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Adding WPF SfSpellChecker to an application
 
-Spell checking operation can be done on text editor controls through `SfSpellChecker` in WPF application.
+Spell-checking operations can be performed on text-editor controls through `SfSpellChecker` in a WPF application.
 
-You can add the `SfSpellChecker` to an application by the following steps,
+You can add the `SfSpellChecker` to an application by following these steps:
 
-1. Create a WPF project in Visual Studio and include following assembly.
+1. Create a WPF project in Visual Studio and include the following assembly:
 
     * Syncfusion.SfSpellChecker.WPF
 
-2. Add `TextBox` control and set [SfSpellChecker.SpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_SpellCheckerProperty) attached property to perform spell check.
+2. Add a `TextBox` control and set the [SfSpellChecker.SpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_SpellCheckerProperty) attached property to perform spell check.
+
+N> The `syncfusion:` prefix used below requires `xmlns:syncfusion="http://schemas.syncfusion.com/wpf"` to be declared on the root `<Window>` element.
 
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
-<Grid>
-    <StackPanel>
-        <TextBox 
-            Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
-            Name="textbox"
-            TextWrapping="Wrap">
-
-            <!--Adding Spellchecker to the TextBox-->
-            <syncfusion:SfSpellChecker.SpellChecker>
-                <syncfusion:SfSpellChecker 
-                    x:Name="spellChecker"
-                    EnableSpellCheck="True"/>
-            </syncfusion:SfSpellChecker.SpellChecker>
-        </TextBox>
-        <Button 
-            Content="Spell Check"
-            Click="SpellCheck_ButtonClick"                
-            HorizontalAlignment="Center"></Button>
-    </StackPanel>
-</Grid>
+<Window x:Class="SpellCheckerSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBox
+                Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
+                Name="textbox"
+                TextWrapping="Wrap">
+                <!--Adding SpellChecker to the TextBox-->
+                <syncfusion:SfSpellChecker.SpellChecker>
+                    <syncfusion:SfSpellChecker
+                        x:Name="spellChecker"
+                        EnableSpellCheck="True"/>
+                </syncfusion:SfSpellChecker.SpellChecker>
+            </TextBox>
+            <Button
+                Content="Spell Check"
+                Click="SpellCheck_ButtonClick"
+                HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -66,7 +73,7 @@ You can add the `SfSpellChecker` to an application by the following steps,
 //Creating a spell checker instance
 SfSpellChecker spellChecker = new SfSpellChecker();
 
-//Enabling the spell check
+//Enabling the spell check (default is true)
 spellChecker.EnableSpellCheck = true;
 
 //Assigning a spellchecker to the TextBox
@@ -99,11 +106,11 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 ## Fix spelling mistakes using spell check dialog
 
-1. You can open a `SfSpellChecker` by clicking `Spell Check` button and then `SpellChecker` opened as pop-up with `TextSpellEditor`. 
+1. Open a `SfSpellChecker` by clicking the **Spell Check** button; it opens as a pop-up containing a `TextSpellEditor`.
 
-2. The error words are highlight with `Red` foreground. 
+2. Error words are highlighted with a red foreground.
 
-3. You can replace error words with correct words by double click the suitable word listed in the suggestion listbox or select the suggestion word from the listbox and then press the `Change` button.
+3. Replace an error word with a suggested word by double-clicking the suggestion in the list, or by selecting it and pressing the **Change** button.
 
 ![SpeckCheck using SfSpellChecker](gettingstarted-images/SpellCheck_Button.gif)
 
@@ -111,33 +118,30 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 ## Fix spelling mistakes using context menu
 
-You can simply correct the spell error words by choosing the correct option from listed suggestions from the ContextMenu. You can get the suggestion words by right click on the error word. The Error words are differentiated by red underlining. You can disable the context menu suggestion by using the `EnableContextMenu` property value as `false`. The default value of `EnableContextMenu` property is `true`.
+You can correct misspelled words by choosing the correct option from the suggestions listed in the context menu. You can get the suggestions by right-clicking the error word. Error words are differentiated by a red underline. You can disable context-menu suggestions by setting the `EnableContextMenu` property to `false`. The default value of `EnableContextMenu` is `true`.
 
 {% tabs %}
 {% highlight xaml %}
 
 <Grid>
     <StackPanel>
-        <TextBox 
+        <TextBox
             Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
             Name="textbox"
-            TextWrapping="Wrap"                
+            TextWrapping="Wrap"
             VerticalContentAlignment="Top">
-
-            <!--Adding Spellchecker to the TextBox-->
+            <!--Adding SpellChecker to the TextBox-->
             <syncfusion:SfSpellChecker.SpellChecker>
-                <syncfusion:SfSpellChecker 
+                <syncfusion:SfSpellChecker
                     x:Name="spellChecker"
-
-                    <!--Enable Contextmenu to spellcheck-->
                     EnableContextMenu="True"
                     EnableSpellCheck="True"/>
             </syncfusion:SfSpellChecker.SpellChecker>
         </TextBox>
-        <Button 
+        <Button
             Content="Spell Check"
-            Click="SpellCheck_ButtonClick"                
-            HorizontalAlignment="Center"></Button>
+            Click="SpellCheck_ButtonClick"
+            HorizontalAlignment="Center"/>
     </StackPanel>
 </Grid>
 
@@ -175,24 +179,21 @@ If you want to disable the spell check operation, use the `EnableSpellCheck` pro
 
 <Grid>
     <StackPanel>
-        <TextBox 
+        <TextBox
             Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
             Name="textbox"
             TextWrapping="Wrap">
-
-            <!--Adding Spellchecker to the TextBox-->
+            <!--Adding SpellChecker to the TextBox-->
             <syncfusion:SfSpellChecker.SpellChecker>
-                <syncfusion:SfSpellChecker 
+                <syncfusion:SfSpellChecker
                     x:Name="spellChecker"
-
-                    <!--Restrict the  spell check operation-->
                     EnableSpellCheck="False"/>
             </syncfusion:SfSpellChecker.SpellChecker>
         </TextBox>
-        <Button 
+        <Button
             Content="Spell Check"
-            Click="SpellCheck_ButtonClick"                
-            HorizontalAlignment="Center"></Button>
+            Click="SpellCheck_ButtonClick"
+            HorizontalAlignment="Center"/>
     </StackPanel>
 </Grid>
 
@@ -224,53 +225,21 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 You can get the suggestion list by passing the error word in the below methods.
 
-* [GetSuggestions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_GetSuggestions_System_String_) - To get a list of suggestion words for an error word
-* [GetPhoneticWords](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_GetPhoneticWords_System_String_) - To get a list of phonetic words for an error word
-* [GetAnagrams](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_GetAnagrams_System_String_) - To get a list of anagram words for an error word
+* [GetSuggestions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_GetSuggestions_System_String_) - Returns a list of suggestion words for an error word.
+* [GetPhoneticWords](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_GetPhoneticWords_System_String_) - Returns a list of phonetic words for an error word.
+* [GetAnagrams](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_GetAnagrams_System_String_) - Returns a list of anagram words for an error word.
 
 {% tabs %}
-{% highlight xaml %}
-
-<Grid>
-    <StackPanel>
-        <TextBox 
-            Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
-            Name="textbox"
-            TextWrapping="Wrap">
-
-            <!--Adding Spellchecker to the TextBox-->
-            <syncfusion:SfSpellChecker.SpellChecker>
-                <syncfusion:SfSpellChecker 
-                    x:Name="spellChecker"
-
-                    <!--Enable Contextmenu to spellcheck-->
-                    EnableContextMenu="True"
-                    EnableSpellCheck="True"/>
-            </syncfusion:SfSpellChecker.SpellChecker>
-        </TextBox>
-        <Button 
-            Content="Spell Check"
-            Click="SpellCheck_ButtonClick"                
-            HorizontalAlignment="Center"></Button>
-    </StackPanel>
-</Grid>
-
-{% endhighlight %}
 {% highlight c# %}
 
-//Enable Contextmenu to spellcheck
-spellChecker.EnableContextMenu = true;
+//Get a list of suggestion words for an error word
+List<string> suggestions = spellChecker.GetSuggestions("Natusre");
 
-{% endhighlight %}
-{% endtabs %}
+//Get a list of phonetic words for an error word
+List<string> phoneticWords = spellChecker.GetPhoneticWords("Natusre");
 
-{% tabs %}
-{% highlight C# %}
-
-//Call SpellCheck method to open SpellCheck on button click
-private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog();
-}
+//Get a list of anagram words for an error word
+List<string> anagramWords = spellChecker.GetAnagrams("Natusre");
 
 {% endhighlight %}
 {% endtabs %}
@@ -315,7 +284,7 @@ IgnoreAlphaNumericWords | Specifies whether or not to Spell Check numbers or wor
         <Button 
             Content="Spell Check"
             Click="SpellCheck_ButtonClick"                
-            HorizontalAlignment="Center"></Button>
+            HorizontalAlignment="Center"/>
     </StackPanel>
 </Grid>
 
@@ -374,20 +343,19 @@ By default, when the spell check is completed, it will be notified by using the 
             Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
             Name="textbox"
             TextWrapping="Wrap">
-
-            <!--Adding Spellchecker to the TextBox-->
+            <!--Adding SpellChecker to the TextBox-->
             <syncfusion:SfSpellChecker.SpellChecker>
-                <syncfusion:SfSpellChecker 
+                <syncfusion:SfSpellChecker
                     x:Name="spellChecker"
                     SpellCheckCompleted="SpellChecker_SpellCheckCompleted"
                     EnableContextMenu="True"
                     EnableSpellCheck="True"/>
             </syncfusion:SfSpellChecker.SpellChecker>
         </TextBox>
-        <Button 
+        <Button
             Content="Spell Check"
-            Click="SpellCheck_ButtonClick"                
-            HorizontalAlignment="Center"></Button>
+            Click="SpellCheck_ButtonClick"
+            HorizontalAlignment="Center"/>
     </StackPanel>
 </Grid>
 
@@ -407,10 +375,10 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
     spellChecker.PerformSpellCheckUsingDialog();
 }
 
-private void SpellChecker_SpellCheckCompleted(object sender, EventArgs e) {
-        //Restrict the message box showing
-        (e as SpellCheckCompletedEventArgs).ShowMessageBox = false;
-    }
+private void SpellChecker_SpellCheckCompleted(object sender, SpellCheckCompletedEventArgs e) {
+    //Suppress the completion message box
+    e.ShowMessageBox = false;
+}
 
 {% endhighlight %}
 {% endtabs %}

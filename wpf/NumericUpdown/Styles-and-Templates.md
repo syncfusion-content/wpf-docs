@@ -9,13 +9,11 @@ documentation: ug
 
 # Styles and Templates in WPF NumericUpdown (UpDown)
 
-
-The background and foreground of the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control can be customized by editing its style or by using the properties exposed by the `UpDown` control.
-
+You can customize the background and foreground of the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control by editing its style or by setting the exposed properties.
 
 ## Positive color
 
-The background and foreground for the positive value can be customized using the `Background` and `Foreground` properties of the UpDown control.
+You can customize the background and foreground for positive values using the `Background` and `Foreground` properties of the `UpDown` control.
 
 {% tabs %}
 
@@ -43,7 +41,7 @@ grid.Children.Add(updown);
 
 ## Negative color
 
-The background and foreground for the negative value can be customized using the [NegativeBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NegativeBackground) and [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NegativeForeground) properties of UpDown control. The `NegativeBackground` and `NegativeForeground` properties are enabled by setting the [EnableNegativeColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_EnableNegativeColors) property is set to `True`.
+You can customize the background and foreground for negative values using the [NegativeBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NegativeBackground) and [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NegativeForeground) properties of the `UpDown` control. The negative colors are enabled by setting [EnableNegativeColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_EnableNegativeColors) to `True`.
 
 {% tabs %}
 
@@ -68,7 +66,7 @@ updown.NegativeForeground = Brushes.BlueViolet;
 
 ## Zero color
 
-The color of zero value can be changed by using the [ZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_ZeroColor) property. The `ZeroColor` property can be enabled by setting the [ApplyZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_ApplyZeroColor) property is set to `True`.
+You can change the color of the zero value using the [ZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_ZeroColor) property. The zero color is enabled by setting [ApplyZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_ApplyZeroColor) to `True`.
 
 {% tabs %}
 
@@ -91,7 +89,7 @@ updown.ZeroColor = Brushes.DarkViolet;
 
 ## Focused color
 
-The background, foreground and border color for the UpDown control can be customized using the [FocusedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedBackground), [FocusedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedBorderBrush) and [FocusedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedForeground) properties when the control is focused. These properties will work only when value of `EnableFocusedColors` property is **True**. By default, the value of  [EnableFocusedColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_EnableFocusedColors) property is **True**. 
+You can customize the background, foreground, and border color for the `UpDown` control while focused using the [FocusedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedBackground), [FocusedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedBorderBrush), and [FocusedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedForeground) properties. These properties take effect only when [EnableFocusedColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_EnableFocusedColors) is `True`. The default value of `EnableFocusedColors` is `True`.
 
 {% tabs %}
 
@@ -115,7 +113,7 @@ updown.FocusedBorderBrush = Brushes.Green;
 
 ![Changing Focused Value Color in WPF UpDown](StylesandTemplates-images/wpf-updown-focused.png)
 
-N> The positive, negative and zero value colors get default color of the control while focusing the Updown control.
+N> While the control is focused, the positive, negative, and zero colors revert to the default focus colors.
 
 ## Theme
 
