@@ -88,7 +88,7 @@ doubleTextBox.ZeroColor = Brushes.DarkGoldenrod;
 
 ## Setting the Background
 
-`DoubleTextBox` allows different brushes to fill the control. The [Background](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netframework-4.8) property can be used to modify the control background color. The default color of `Background` is `White`. For the `NegativeForeground` brush to take effect when entering negative values, see [Foreground for Negative Value](#foreground-for-negative-value).
+`DoubleTextBox` allows different brushes to fill the control. The [Background](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netframework-4.8) property can be used to modify the control background color. The default color of `Background` is `White`.
 
 {% tabs %}
 {% highlight XAML %}

@@ -212,8 +212,6 @@ private void IntegerTextBox_ValueChanged(DependencyObject d, DependencyPropertyC
 
 The `Value` of `IntegerTextBox` can be restricted within a maximum and minimum limit. You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MaxValue) properties. It allows the user to enter a value between `MinValue` and `MaxValue`.
 
-For details on validation behavior (`OnKeyPress`, `OnLostFocus`, `MaxValueOnExceedMaxDigit`, `MinValueOnExceedMinDigit`), see [Restriction or Validation](Restriction-or-Validation.md).
-
 {% tabs %}
 {% highlight XAML %}
 
@@ -271,8 +269,6 @@ integerTextBox.ScrollInterval = 4;
 
 You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NumberFormat) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_NumberGroupSeparator) and the [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_NumberGroupSizes) properties of `IntegerTextBox`. Decimal properties (`NumberDecimalDigits` and `NumberDecimalSeparator`) are not applicable to integer values.
 
-For details, see [Culture and Number Formats](Culture-and-Number-Formats.md).
-
 {% tabs %}
 {% highlight XAML %}
 
@@ -324,7 +320,7 @@ integerTextBox.Culture = new CultureInfo("en-US");
 
 ![WPF IntegerTextBox with Localization](getting-started_images/wpf-integer-textbox-localization.png)
 
-N> When you use both `NumberFormat` and `Culture`, the `NumberFormat` will have a higher priority. For details, see [Culture and Number Formats](Culture-and-Number-Formats.md).
+N> When you use both `NumberFormat` and `Culture`, the `NumberFormat` will have a higher priority.
 
 ## Theme
 
