@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formula Cells in WPF GridControl | Syncfusion®
-description: Create and evaluate spreadsheet-style formulas in GridControl using cell references, built-in functions, custom formulas, and a comprehensive formula library.
+title: Formula Cells in WPF Excel-like Grid | Syncfusion®
+description: Create and evaluate spreadsheet-style formulas in Excel-like Grid using cell references, built-in functions, custom formulas, and a comprehensive formula library.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Formula Cells in WPF GridControl
+# Formula Cells in WPF Excel-like Grid
 
 Setting the CellType of a cell to a FormulaCell will allow you to enter algebraic expressions using formulas and cell references. Cell references are entries such as A11 for column A row 11 or BA3 for column BA row 3. A formula is a defined calculation from the Formula Library which, is included with Essential<sup>®</sup> Grid. This Formula Library is extensible and allows you to add additional formulas.
 

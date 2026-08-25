@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming in WPF GridControl | Syncfusion®
-description: Adjust the zoom level in GridControl to magnify content, view more cells, and improve readability without affecting the grid's actual size.
+title: Zooming in WPF Excel-like Grid | Syncfusion®
+description: Adjust the zoom level in Excel-like Grid to magnify content, view more cells, and improve readability without affecting the grid's actual size.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Zooming in WPF GridControl
+# Zooming in WPF Excel-like Grid
 
 This feature enables the user to change the zoom level of the Grid control that brings either more or fewer cells into the view. By zooming in you can get a magnified view of the grid cells, and by zooming out you can bring more cells in to the view. This does not change the underlying size of Grid control, and the printout of the Grid control remains constant, regardless of the selected zoom scale.
 
