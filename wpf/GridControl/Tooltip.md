@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip in WPF GridControl | Syncfusion®
-description: Display and customize tooltips in GridControl for cells, rows, and columns with support for templates, events, delay settings, and runtime updates.
+title: ToolTip in WPF Excel-like Grid | Syncfusion®
+description: Display and customize tooltips in Excel-like Grid for cells, rows, and columns with support for templates, events, delay settings, and runtime updates.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# ToolTip in WPF GridControl
+# ToolTip in WPF Excel-like Grid
 
 Tooltip can be added to individual cells, rows and columns to show more information about the particular cell on mouse hover. ToolTip services can be enabled by setting [GridTooltipService.SetShowTooltips](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTooltipService.html#Syncfusion_Windows_Controls_Grid_GridTooltipService_SetShowTooltips_System_Windows_DependencyObject_System_Boolean_) attached property to `true`. ToolTip for particular cell or row or column can be enabled by setting the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowTooltip) property of [GridStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html).
 
