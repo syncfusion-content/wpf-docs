@@ -85,7 +85,7 @@ To add the `ColorPickerPalette` in Visual Studio.
 
     * Syncfusion.Shared.WPF
 
-3. Include the required namespace, create an instance of `ColorPickerPalette`, and add it to the windowance of `ColorPickerPalette` and add it to the window.
+3. Include the required namespace, create an instance of `ColorPickerPalette`, and add it to the window.
 
 4. Declare the `ColorPickerPalette` control using C#.
 
@@ -117,7 +117,7 @@ public partial class MainWindow : Window {
 
 You can set or change the selected color of the `ColorPickerPalette` programmatically by setting the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_Color) property. To get the selected color's name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property, which holds the name of the selected color item. The default value of `Color` is `Black`, and the default value of `ColorName` is the string `"Color"`.
 
-N> You can also set or change the selected color brush by using the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property. Setting either `Color` or `SelectedBrush` updates the othererPalette_Color) property. If we want know the selected color name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property that holds the name of the selected color item. The default value of `Color` and `ColorName` property is `Black` and `Color`.
+N> You can also set or change the selected color brush by using the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property. Setting either `Color` or `SelectedBrush` updates the other Palette_Color property. If we want know the selected color name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property that holds the name of the selected color item. The default value of `Color` and `ColorName` property is `Black` and `Color`.
 
 N> You can also set or changes the selected color brush by using the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property.
 

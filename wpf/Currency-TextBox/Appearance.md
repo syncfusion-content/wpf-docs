@@ -114,7 +114,7 @@ currencyTextBox.Background = Brushes.Cyan;
 
 ## Setting the Corner Radius
 
-Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `CurrencyTextBox`, use [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of `CornerRadius` property is 1. In XAML, a single value applies the same radius to all four corners; in C#, use the `System.Windows.CornerRadius` struct (which can be initialized with one, two, or four values).
+Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `CurrencyTextBox`, use [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of `CornerRadius` property is 1.
 
 {% tabs %}
 

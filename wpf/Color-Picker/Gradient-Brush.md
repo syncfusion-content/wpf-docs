@@ -11,7 +11,7 @@ documentation: ug
 
 This section gives a brief note on how to create gradient color, modify their colors and modify their properties.
 
-### What is a gradient color?
+## What is a gradient color?
 
 A gradient color paints an area with multiple colors that blend along an axis. [ColorPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) includes gradient tools that return a brush of type `LinearGradientBrush` or `RadialGradientBrush`. Offsets can be added or removed dynamically, and their positions can be changed to produce different color combinations.
 

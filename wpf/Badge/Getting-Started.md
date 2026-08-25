@@ -448,8 +448,6 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
 | `Scale`             | Scale-in/scale-out animation.|
 | `Opacity`           | Fade-in/fade-out animation.  |
 
-> The `notification:UpDown` control used in the sample below belongs to the Syncfusion<sup>®</sup> WPF editors. See the [UpDown](https://help.syncfusion.com/wpf/numeric-updown) control for more information. The C# event handler below requires the `using System;` namespace for `Convert`.
-
 {% tabs %}
 {% highlight XAML %}
 

@@ -169,6 +169,9 @@ When you enter an input greater than the specified maximum, the [MaxValueOnExcee
 ### MinValueOnExceedMinDigit
 
 Similarly, when you enter an input less than the specified minimum, the [MinValueOnExceedMinDigit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_MinValueOnExceedMinDigit) property decides whether the entered value is reset to the minimum or retained as a partial value
+
+{% tabs %}
+
 {% highlight XAML %}
 
 <syncfusion:UpDown Name="upDown" Height="25" Width="90" MinValueOnExceedMinDigit="True" MaxValueOnExceedMaxDigit="True" MaxValidation="OnKeyPress" MinValidation="OnKeyPress" MinValue="0" MaxValue="100" />

@@ -117,8 +117,6 @@ percentTextBox.Background = Brushes.Cyan;
 
 Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `PercentTextBox`, use the [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of the `CornerRadius` property is 1.
 
-> The C# sample below requires the `using System.Windows;` namespace for the `CornerRadius` struct.
-
 {% tabs %}
 
 {% highlight XAML %}
