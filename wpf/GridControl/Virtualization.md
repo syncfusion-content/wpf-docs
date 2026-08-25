@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtualization in WPF Excel-like Grid | Syncfusion®
-description: Improve Excel-like Grid performance with virtual mode and virtual cells for on-demand data loading, optimized rendering, and efficient handling of large datasets.
+description: Improve Excel-like Grid performance with virtual mode, virtual cells for on-demand data loading, optimized rendering, and efficient handling of large datasets.
 platform: wpf
 control: Excel-like Grid
 documentation: ug
