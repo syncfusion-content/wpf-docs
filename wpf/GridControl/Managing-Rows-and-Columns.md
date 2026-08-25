@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Managing Rows and Columns in WPF GridControl | Syncfusion®
-description: Manage rows and columns in GridControl with support for sizing, hiding, freezing, resizing, inserting, moving, and removing rows and columns.
+title: Managing Rows and Columns in WPF Excel-like Grid | Syncfusion®
+description: Manage rows and columns in Excel-like Grid with support for sizing, hiding, freezing, resizing, inserting, moving, and removing rows and columns.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Managing Rows and Columns in WPF GridControl
+# Managing Rows and Columns in WPF Excel-like Grid
 
 This section explains about Managing the rows and columns of WPF GridControl.
 

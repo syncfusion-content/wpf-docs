@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in WPF GridControl | Syncfusion®
-description: Print and preview GridControl content with customizable print settings, page layouts, navigation options, and support for headers and footers.
+title: Printing in WPF Excel-like Grid | Syncfusion®
+description: Print and preview Excel-like Grid content with customizable print settings, page layouts, navigation options, and support for headers and footers.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Printing in WPF GridControl
+# Printing in WPF Excel-like Grid
 
 Essential<sup>®</sup> Grid for WPF provides an in-built support for printing and print preview.  This feature populates a print dialog that allows you to preview the output and make required modifications if necessary, before sending the grid content for printing.
 

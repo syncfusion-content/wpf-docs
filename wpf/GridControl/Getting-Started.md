@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF GridControl | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF GridControl. Explore setup, data population, configuration, examples, and customization options.
+title: Getting Started with WPF Excel-like Grid | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Excel-like Grid. Explore setup, data population, configuration, examples, and customization options.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Getting Started with WPF GridControl
+# Getting Started with WPF Excel-like Grid
 
 This section is designed to help you understand and quickly get started using Essential<sup>®</sup> Grid in your WPF application.
 

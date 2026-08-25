@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Types in WPF GridControl | Syncfusion®
-description: Explore the built-in and custom cell types in GridControl, including check boxes, buttons, editors, drop-downs, nested grids, and templates.
+title: Cell Types in WPF Excel-like Grid | Syncfusion®
+description: Explore the built-in and custom cell types in Excel-like Grid, including check boxes, buttons, editors, drop-downs, nested grids, and templates.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Cell Types in WPF GridControl
+# Cell Types in WPF Excel-like Grid
 
 Essential<sup>®</sup> Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the grid control. This attribute of a grid cell is referred to as its Cell Type. This section lists out various cell controls that can be placed inside the grid cells. Essential<sup>®</sup> Grid currently supports 20+ cell types. It also provides support to create and use custom cell types.
 

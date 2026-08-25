@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export To Excel in WPF GridControl | Syncfusion®
-description: Export GridControl data to Excel and CSV formats, including entire grids, selected ranges, custom worksheets, and Excel engine integration.
+title: Export To Excel in WPF Excel-like Grid | Syncfusion®
+description: Export Excel-like Grid data to Excel and CSV formats, including entire grids, selected ranges, custom worksheets, and Excel engine integration.
 platform: wpf
-control: GridControl
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Export To Excel in WPF GridControl
+# Export To Excel in WPF Excel-like Grid
 
 This section explains about Exporting to Excel and its features of WPF GridControl
 
