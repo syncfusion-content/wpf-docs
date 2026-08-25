@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formula Cells in WPF Excel-like Grid | Syncfusion®
-description: Create and evaluate spreadsheet-style formulas in Excel-like Grid using cell references, built-in functions, custom formulas, and a comprehensive formula library.
+description: Create and evaluate spreadsheet-style formulas in Excel-like Grid using cell references, built-in functions, custom formulas, and comprehensive formula library.
 platform: wpf
 control: Excel-like Grid
 documentation: ug
