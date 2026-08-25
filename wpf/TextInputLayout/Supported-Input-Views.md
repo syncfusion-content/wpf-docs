@@ -11,15 +11,25 @@ documentation: ug
 
 Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property is applied with the ContentPropertyAttribute. The [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html) has the following controls as the supported input views.
 
-* TextBox 
+* [TextBox](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/textbox) 
 
-* PasswordBox
+* [PasswordBox](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/passwordbox)
 
-* ComboBox
+* [ComboBox](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/combobox)
 
-* [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overview)
+* [ComboBoxAdv](https://help.syncfusion.com/wpf/combobox/overview)
 
-* [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/overview)
+* [SfTextBoxExt](https://help.syncfusion.com/wpf/autocomplete/overview)
+
+* [DatePicker](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/datepicker)
+
+* [SfDatePicker](https://help.syncfusion.com/wpf/datepicker/overview)
+
+* [SfTimePicker](https://help.syncfusion.com/wpf/timepicker/overview)
+
+* [UpDown](https://help.syncfusion.com/wpf/numericupdown/overview)
+
+* [SfMaskedEdit](https://help.syncfusion.com/wpf/maskedtextbox/overview)
 
 ## TextBox
 
@@ -79,7 +89,7 @@ You can enter the password characters as an input by adding the [PasswordBox](ht
 
 ## ComboBox
 
-You can use the [`ComboBox`](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/combobox?view=netframeworkdesktop-4.8) control as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+You can use the [ComboBox](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/combobox?view=netframeworkdesktop-4.8) control as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 
 {% tabs %} 
 
@@ -111,7 +121,7 @@ You can use the [`ComboBox`](https://docs.microsoft.com/en-us/dotnet/desktop/wpf
 
 ## ComboBoxAdv
 
-You can use the [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overview) control as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+You can use the [ComboBoxAdv](https://help.syncfusion.com/wpf/combobox/overview) control as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 
 {% tabs %} 
 
@@ -143,7 +153,7 @@ You can use the [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overvie
 
 ## Autocomplete (SfTextBoxExt)
 
-You can use the [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/overview) control to enter the text as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+You can use the [SfTextBoxExt](https://help.syncfusion.com/wpf/autocomplete/overview) control to enter the text as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 
 {% tabs %} 
 
@@ -176,3 +186,165 @@ You can use the [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/ov
 {% endtabs %}
 
 ![Image for Autocomplete](Images/SfTextboxExt.PNG)
+
+## DatePicker
+
+You can use the standard WPF [DatePicker](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/datepicker) control to enter or select date values as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Date" HelperText="Select your date of birth" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <DatePicker x:Name="datePicker" Width="150"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Date" };
+            sfTextInputLayout.HelperText = "Select your date of birth";
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            DatePicker datePicker = new DatePicker();
+            datePicker.Width = 150;
+            sfTextInputLayout.InputView = datePicker;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for DatePicker](Images/DatePicker_Img.PNG)
+
+## SfDatePicker
+
+You can use the [SfDatePicker](https://help.syncfusion.com/wpf/datepicker/overview) control to enter or select date values as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Date" HelperText="Select your date of birth" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:SfDatePicker Width="150"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Date" };
+            sfTextInputLayout.HelperText = "Select your date of birth";
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            SfDatePicker sfDatePicker = new SfDatePicker();
+            sfDatePicker.Width = 150;
+            sfTextInputLayout.InputView = sfDatePicker;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for SfDatePicker](Images/SfDatePicker_Img.PNG)
+
+## SfTimePicker
+
+You can use the [SfTimePicker](https://help.syncfusion.com/wpf/timepicker/overview) control to enter or select time values as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Time" HelperText="Select appointment time" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:SfTimePicker Width="150"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Time" };
+            sfTextInputLayout.HelperText = "Select appointment time";
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            SfTimePicker sfTimePicker = new SfTimePicker();
+            sfTimePicker.Width = 150;
+            sfTextInputLayout.InputView = sfTimePicker;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for SfTimePicker](Images/SfTimePicker_Img.PNG)
+
+## UpDown
+
+You can use the [UpDown](https://help.syncfusion.com/wpf/numericupdown/overview) control to enter numeric values as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Quantity" HelperText="Enter quantity" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:UpDown Width="150" Height="25" MinValue="0" MaxValue="100" Value="1"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Quantity" };
+            sfTextInputLayout.HelperText = "Enter quantity";
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            UpDown upDown = new UpDown();
+            upDown.Width = 150;
+            upDown.Height = 25;
+            upDown.MinValue = 0;
+            upDown.MaxValue = 100;
+            upDown.Value = 1;
+            sfTextInputLayout.InputView = upDown;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for UpDown](Images/UpDown_Img.PNG)
+
+## SfMaskedEdit
+
+You can use the [MaskedTextBox](https://help.syncfusion.com/wpf/maskedtextbox/overview) (SfMaskedEdit) control to enter masked text as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Phone Number" HelperText="Enter your phone number" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:SfMaskedEdit x:Name="sfMaskedEdit" Width="150" Height="25" MaskType="Simple" Mask="(###) ###-####"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Phone Number" };
+            sfTextInputLayout.HelperText = "Enter your phone number";
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            SfMaskedEdit sfMaskedEdit = new SfMaskedEdit();
+            sfMaskedEdit.Width = 150;
+            sfMaskedEdit.Height = 25;
+            sfMaskedEdit.MaskType = MaskType.Simple;
+            sfMaskedEdit.Mask = "(###) ###-####";
+            sfTextInputLayout.InputView = sfMaskedEdit;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for SfMaskedEdit](Images/SfMaskedEdit_Img.PNG)
