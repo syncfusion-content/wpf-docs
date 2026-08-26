@@ -84,7 +84,7 @@ chart.Series.Add(series);
 
 ## Animation
 
-SfSmithChart allows animating the chart series on loading whenever the *ItemsSource* changes. Animation in the chart can be enabled by setting the *EnableAnimation* property as True and defining the corresponding animation speed with the *AnimationDuration* property.
+WPF Smith Chart allows animating the chart series on loading whenever the *ItemsSource* changes. Animation in the chart can be enabled by setting the *EnableAnimation* property as True and defining the corresponding animation speed with the *AnimationDuration* property.
 
 {% tabs %}
 

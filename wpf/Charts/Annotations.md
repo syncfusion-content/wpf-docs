@@ -8,9 +8,9 @@ documentation: ug
 ---
 # Annotations in WPF Charts
 
-SfChart supports Annotations, which allows you to mark the specific area of interest in the chart area. You can draw custom shapes, also text and images can be added using Annotations. 
+WPF Charts supports Annotations, which allows you to mark the specific area of interest in the chart area. You can draw custom shapes, also text and images can be added using Annotations. 
 
-The following annotations are supported in SfChart
+The following annotations are supported in WPF Charts
 
 * [Text Annotation](https://help.syncfusion.com/wpf/charts/annotations#text-annotation)
 * [Shape Annotation](https://help.syncfusion.com/wpf/charts/annotations#shape-annotation)
@@ -324,7 +324,7 @@ chart.Annotations.Add(annotation);
 
 ### Customizing Text Annotation
 
-SfChart provides you with an editing option for the text in any annotations. When text annotation is enabled editing, if we click the text annotation it switches to edit mode which provide easy way of customizing the text at run time.
+WPF Charts provides you with an editing option for the text in any annotations. When text annotation is enabled editing, if we click the text annotation it switches to edit mode which provide easy way of customizing the text at run time.
 
 The following properties are used to customize the text:
 
@@ -707,7 +707,7 @@ N> [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 ### Customizing the Shape Annotation
 
-SfChart allows customization of shape annotation using the following properties.
+WPF Charts allows customization of shape annotation using the following properties.
 
 * [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Stroke) - Represents the brush for the annotation outline.
 * [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_StrokeThickness) - Represents the thickness of the annotation outline.
@@ -771,7 +771,7 @@ chart.Annotations.Add(annotation);
 
 ## Image Annotation
 
-SfChart provides support to add images as Annotation over the chart area, using the class [ImageAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ImageAnnotation.html#). 
+WPF Charts provides support to add images as Annotation over the chart area, using the class [ImageAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ImageAnnotation.html#). 
 
 The following API’s are used in ImageAnnotation.
 
@@ -819,7 +819,7 @@ ImageAnnotation annotation = new ImageAnnotation()
 
 ## Interaction
 
-SfChart provides dragging and resizing support for [`ShapeAnnotations`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#).
+WPF Charts provides dragging and resizing support for [`ShapeAnnotations`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#).
 
 The following API’s are used for dragging and resizing the annotation
 
@@ -923,7 +923,7 @@ Also, the direction of resizing can be customized by using [`ResizingMode`](http
 
 ## ToolTip
 
-SfChart provides support to view the tooltip when mouse hovered on the annotation. To view to tooltip you have to enable the [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ShowToolTip) property. By default for tooltip there is no content, you have to set the content for the tooltip in [`ToolTipContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ToolTipContent) property.
+WPF Charts provides support to view the tooltip when mouse hovered on the annotation. To view to tooltip you have to enable the [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ShowToolTip) property. By default for tooltip there is no content, you have to set the content for the tooltip in [`ToolTipContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ToolTipContent) property.
 
 * [`ToolTipPlacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ToolTipPlacement) - Used to position the Tooltip with top, bottom, left or right side of the cursor.
 
@@ -1035,7 +1035,7 @@ chart.Annotations.Add(annotation);
 
 ## Annotation Clipping
 
-SfChart allows you to clip the annotation if the annotation crosses the boundary by setting [`EnableClipping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_EnableClipping) property to `true` as in the below code snippet.
+WPF Charts allows you to clip the annotation if the annotation crosses the boundary by setting [`EnableClipping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_EnableClipping) property to `true` as in the below code snippet.
 
 {% tabs %}
 
@@ -1182,7 +1182,7 @@ chart.Annotations.Add(annotation);
 
 ## Events
 
-SfChart provides the following events in [`Annotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#).
+WPF Charts provides the following events in [`Annotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#).
 
 * [`Selected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Selected) - Occurs when the annotation is selected.
 * [`UnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_UnSelected) - Occurs when annotation is deselected.
@@ -1204,7 +1204,7 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 ## See also
 
 * [`How to create and dynamically update target line for WPF Chart`](https://support.syncfusion.com/kb/article/18542/how-to-create-and-dynamically-update-target-line-for-wpf-chart)
-* [`How to add annotation in axis label click in WPF SfChart`](https://support.syncfusion.com/kb/article/18485/how-to-add-annotation-in-axis-label-click-in-wpf-sfchart)
+* [`How to add annotation in axis label click in WPF Charts`](https://support.syncfusion.com/kb/article/18485/how-to-add-annotation-in-axis-label-click-in-wpf-sfchart)
 * [`How to bind content template of text annotation in WPF Chart`](https://support.syncfusion.com/kb/article/3009/how-to-bind-content-template-of-text-annotation-in-wpf-chart)
 * [`How to change the cursor of annotation in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/4574/how-to-change-the-cursor-of-annotation-in-wpf-chart-sfchart)
 * [`How to create a custom annotation in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/12315/how-to-create-a-custom-annotation-in-wpf-chart-sfchart)

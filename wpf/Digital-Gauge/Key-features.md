@@ -9,7 +9,7 @@ documentation: ug
 
 # Key Features in WPF Digital Gauge
 
-A digital gauge is composed of segments, which are a major UI component of the digital gauge. `SfDigitalGauge` comprises the following segments to display the digital characters.
+A digital gauge is composed of segments, which are a major UI component of the digital gauge. WPF Digital Gauge comprises the following segments to display the digital characters.
 
 * 7-Segment Display
 * 14-Segment Display
@@ -34,5 +34,5 @@ This type of digital gauge displays the digital characters in 8×8 dot matrix se
 
 **Easy to use**
 
-**SfDigitalGauge** is available in the Visual Studio toolbox itself; you can easily drag and drop the control from the toolbox.
+**WPF Digital Gauge** is available in the Visual Studio toolbox itself; you can easily drag and drop the control from the toolbox.
 

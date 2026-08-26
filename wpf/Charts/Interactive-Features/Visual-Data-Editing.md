@@ -9,7 +9,7 @@ documentation: ug
 
 # Visual Data Editing in WPF Charts
 
-SfChart has a feature that allows you to edit an entire series or a single data point at run time by dragging the single point or the series as a whole.
+WPF Charts has a feature that allows you to edit an entire series or a single data point at run time by dragging the single point or the series as a whole.
 
 ## Segment dragging
 
@@ -135,7 +135,7 @@ N> By default, the DragDirection of the scatter series is XY.
 
 ## Series dragging
 
-SfChart provides support to drag the LineSeries and SplineSeries. This allows the series to move to a new position by dragging. To enable the series dragging, you have to set [`EnableSeriesDragging`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySeriesDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySeriesDraggingBase_EnableSeriesDragging) property to true.
+WPF Charts provides support to drag the LineSeries and SplineSeries. This allows the series to move to a new position by dragging. To enable the series dragging, you have to set [`EnableSeriesDragging`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XySeriesDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySeriesDraggingBase_EnableSeriesDragging) property to true.
 
 The following code snippet explains the series dragging feature in LineSeries.
 

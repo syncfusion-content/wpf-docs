@@ -74,7 +74,7 @@ The image will be saved in the specified location in the SaveFileDialog.
 
 ![WPF Chart Exported](Exporting_images/wpf-chart-exported.png)
 
-### Export SfChart to image without rendering in UI
+### Export WPF Charts to image without rendering in UI
 
 You can export the chart to image without rendering in UI by setting the chart to **RootVisual** in **HwndSource** and passing **HwndSourceParameters** to the **HwndSource**. The following code snippet demonstrates this.
 

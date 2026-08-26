@@ -20,9 +20,9 @@ The date-time range navigator control is composed of various elements such as hi
 
 ![Visual Structure in WPF Range Selector](getting-started_images/wpf-range-selector-visual-structure.png)
 
-## Create SfDateTimeRangeNavigator
+## Create WPF Range Selector
 
-The following section explains how to create SfDateTimeRangeNavigator.
+The following section explains how to create WPF Range Selector.
 
 ### Add the assembly reference
 
@@ -38,7 +38,7 @@ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-### Initialize the SfDateTimeRangeNavigator
+### Initialize the WPF Range Selector
 
 {% tabs %}
 
@@ -58,7 +58,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
 
 {% endtabs %}
 
-### Set ItemsSource for SfDateTimeRangeNavigator
+### Set ItemsSource for WPF Range Selector
 
 Since the above steps create only an empty date-time range navigator, you need to set the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_ItemsSource) and [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_XBindingPath) for the SfDateTimeRangeNavigator. The ItemsSource must implement the IEnumerable interface.
 
@@ -101,7 +101,7 @@ Description</th></tr>
 <tr>
 <td>
 {{'[`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_ItemsSource)'| markdownify }}</td><td>
-Sets the ItemsSource for SfDateTimeRangeNavigator.</td></tr>
+Sets the ItemsSource for WPF Range Selector.</td></tr>
 <tr>
 <td>
 {{'[`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_XBindingPath)'| markdownify }}</td><td>
@@ -290,7 +290,7 @@ N> The [`SelectedData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 
 ## Theme
 
-SfDateTimeRangeNavigator supports various built-in themes. Refer to the below links to apply themes for the SfDateTimeRangeNavigator,
+WPF Range Selector supports various built-in themes. Refer to the below links to apply themes for the WPF Range Selector,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

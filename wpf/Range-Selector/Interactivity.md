@@ -11,7 +11,7 @@ documentation: ug
 
 The date-time range navigator control provides interactive features such as zooming and panning. This control has a resizable scrollbar, which is used to zoom into a large amount of data and navigate to a particular timespan by moving the scroll bar.
 
-The ZoomPosition and ZoomFactor properties of the chart axis can be bound with the SfDateTimeRangeNavigator.
+The ZoomPosition and ZoomFactor properties of the chart axis can be bound with the WPF Range Selector.
 
 ## Properties
 
@@ -187,16 +187,16 @@ chart.Series.Add(candleSeries);
 
 The following screenshot illustrates selecting one quarter of data.
 
-![Zooming support in WPF SfDateTimeRangeNavigator](Interactivity_images/Interactivity_img1.png)
+![Zooming support in WPF Range Selector](Interactivity_images/Interactivity_img1.png)
 
 The following screenshot illustrates the control after zooming into weeks of data from 6 months of data.
 
-![Zooming support in WPF SfDateTimeRangeNavigator](Interactivity_images/Interactivity_img2.png)
+![Zooming support in WPF Range Selector](Interactivity_images/Interactivity_img2.png)
 
 
 ## Thumb style customization
 
-SfDateTimeRangeNavigator [LeftThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftThumbStyle) and [RightThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightThumbStyle) can be customized by using the following properties:
+WPF Range Selector [LeftThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WPF Range Selector.html#Syncfusion_UI_Xaml_Charts_WPF Range Selector_LeftThumbStyle) and [RightThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WPF Range Selector.html#Syncfusion_UI_Xaml_Charts_WPF Range Selector_RightThumbStyle) can be customized by using the following properties:
 
 ### SymbolTemplate
 
@@ -254,7 +254,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 The following screenshot illustrates the control after customizing the right thumb.
 
-![Thumb customization support in WPF SfDateTimeRangeNavigator](Interactivity_images/Interactivity_img3.png)
+![Thumb customization support in WPF Range Selector](Interactivity_images/Interactivity_img3.png)
 
 ### LineStyle
 

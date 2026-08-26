@@ -20,7 +20,7 @@ TreeMapFlatLevel is used to define levels for a flat data collection.
 
 ### ItemsSource
 
-The ItemsSource set for the SfTreeMap must be a flat collection of data. The following code shows how to bind a flat collection as the ItemsSource to a TreeMap.
+The ItemsSource set for the WPF TreeMap must be a flat collection of data. The following code shows how to bind a flat collection as the ItemsSource to a TreeMap.
 
 {%tabs%}
 {% highlight xaml %}

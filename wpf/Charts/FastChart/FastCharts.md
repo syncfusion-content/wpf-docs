@@ -9,7 +9,7 @@ documentation: ug
 
 # Fast Charts in WPF Charts
 
-SfChart includes functionality for fast-plotting more than 10 fast chart types. Each chart type is easily configurable with built-in support for creating stunning visual effects.
+WPF Charts includes functionality for fast-plotting more than 10 fast chart types. Each chart type is easily configurable with built-in support for creating stunning visual effects.
 
 * Fast Series - Segments of the series are rendered using a polyline segment.
 * Fast Bitmap Series - Segments of the series are rendered using a WritableBitmap.

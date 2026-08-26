@@ -9,7 +9,7 @@ documentation: ug
 
 # Coded UI in WPF Charts
 
-Automated tests that drive your application through its user interface (UI) are known as **coded UI** **tests** (CUITs). These tests include functional testing of the UI controls. SfChart supports Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
+Automated tests that drive your application through its user interface (UI) are known as **coded UI** **tests** (CUITs). These tests include functional testing of the UI controls. WPF Charts supports Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
 
 ## Levels
 
@@ -44,7 +44,7 @@ For more info about the platforms and configurations refer [here](https://learn.
 
 ## Configuration
 
-To test SfChart with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project  of SfChart from [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1453395823.zip).
+To test WPF Charts with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project  of WPF Charts from [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1453395823.zip).
 
 1. Open the extension project and build it.
 
@@ -184,7 +184,7 @@ Open the test explorer and check test was passed or failed.
 
 ## Tables of Properties
 
-The following properties are for each of the UI elements in SfChart,
+The following properties are for each of the UI elements in WPF Charts,
 
 <table>
 <tr>
