@@ -114,7 +114,7 @@ Tooltip is displayed by tapping the following elements:
 
 {% endtabs %}
 
-![WPF SfMaps marker tooltip image](Tooltip_images/Shapes_Tooltip.png)
+![WPF Maps marker tooltip image](Tooltip_images/Shapes_Tooltip.png)
 
 ### Tooltip customization
 
@@ -162,7 +162,7 @@ The following code sample shows all the above customizations.
 
 N> Similarly we can customize the bubble and marker tooltip also.
 
-![WPF SfMaps marker tooltip image](Tooltip_images/Tooltip_Customization.png)
+![WPF Maps marker tooltip image](Tooltip_images/Tooltip_Customization.png)
 
 ### Custom template for tooltip
 
@@ -367,7 +367,7 @@ The maps control provides options to design your own template for tooltip using 
 
 {% endtabs %}
 
-![WPF SfMaps marker tooltip image](Tooltip_images/MarkerTooltip.png)
+![WPF Maps marker tooltip image](Tooltip_images/MarkerTooltip.png)
 
 ## Tooltip for markers in imagery layer
 
@@ -429,7 +429,7 @@ The maps control provides options to design your own template for tooltip using 
 
 {% endtabs %}
 
-![WPF SfMaps marker tooltip image](Tooltip_images/ImageryLayer_Tooltip.png)
+![WPF Maps marker tooltip image](Tooltip_images/ImageryLayer_Tooltip.png)
 
 ## Zooming and panning
 
@@ -749,7 +749,7 @@ Calculate the initial zoom level automatically based on the [`LatLngBounds`](htt
 
 N> When setting the [`LatLngBounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_LatLngBounds) and [`DistanceType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_DistanceType) at the same time, the priority is distance radius, and calculate zoom level based on [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_Radius) value.
 
-![WPF SfMaps zoom level changed image](Map-Providers_images/Zoom_Level.jpg)
+![WPF Maps zoom level changed image](Map-Providers_images/Zoom_Level.jpg)
 
 ### Calculate the map tile layer bounds
 

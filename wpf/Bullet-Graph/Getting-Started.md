@@ -11,11 +11,11 @@ documentation: ug
 
 This section explains the steps required to configure the [`SfBulletGraph`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html) and to add the basic elements of `SfBulletGraph` using the various APIs available within it.
 
-## Configuring SfBulletGraph using Syncfusion Reference Manager
+## Configuring WPF Bullet Graph using Syncfusion Reference Manager
 
 The Syncfusion Reference Manager is used to add Syncfusion tools.
 
-Follow these steps to add the `SfBulletGraph` control using the Syncfusion Reference Manager.
+Follow these steps to add the WPF Bullet Graph control using the Syncfusion Reference Manager.
 
 Create a simple WPF application using Visual Studio.
 
@@ -29,15 +29,15 @@ The Syncfusion Reference Manager wizard opens as shown in the figure below.
 
 ![Opening Syncfusion Reference Manager Wizard](Getting-Started_images/Getting-Started_img3.jpeg)
 
-Search for `SfBulletGraph` using the search box and select the `SfBulletGraph` control. Click `Done` to add the selected SfBulletGraph control.
+Search for WPF Bullet Graph using the search box and select the `SfBulletGraph` control. Click `Done` to add the selected SfBulletGraph control.
 
 ![Selecting SfBulletGraph Control in Syncfusion Reference Manager](Getting-Started_images/Getting-Started_img4.jpeg)
 
-The `SfBulletGraph` assemblies will be automatically added to the project after clicking `Done`.
+The WPF Bullet Graph assemblies will be automatically added to the project after clicking `Done`.
 
-![Adding SfBulletGraph assemblies in WPF application](Getting-Started_images/Getting-Started_img5.jpeg)
+![Adding WPF Bullet Graph assemblies in WPF application](Getting-Started_images/Getting-Started_img5.jpeg)
 
-![Added SfBulletGraph assemblies in WPF application](Getting-Started_images/Getting-Started_img6.jpeg)
+![Added WPF Bullet Graph assemblies in WPF application](Getting-Started_images/Getting-Started_img6.jpeg)
 
 Create a namespace reference to the SfBulletGraph control using Syncfusion's global namespace reference **schemas.Syncfusion.com** or the SfBulletGraph control's namespace reference using **Syncfusion.UI.Xaml.BulletGraph** available in the **Syncfusion.SfBulletGraph.WPF** assembly.
 
@@ -80,9 +80,9 @@ The SfBulletGraph control will be created as shown in the figure below.
 
 >**Note:** The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 to the current version, and the Syncfusion Reference Manager can be used only in Visual Studio 2015.
 
-## Configuring SfBulletGraph
+## Configuring WPF Bullet Graph
 
-**SfBulletGraph** is available in the following assembly and namespace:
+**WPF Bullet Graph** is available in the following assembly and namespace:
 
 **Assembly**: Syncfusion.SfBulletGraph.Wpf
 
@@ -115,7 +115,7 @@ Create a namespace reference to the SfBulletGraph control using Syncfusion's glo
 
 ![Displaying SfBulletGraph control](Getting-Started_images/Getting-Started_img7.jpg)
 
-As shown in the above image, the SfBulletGraph displays its default elements. To customize the elements, add the respective elements to SfBulletGraph. The following section contains the steps to add the basic elements to SfBulletGraph.
+As shown in the above image, the WPF Bullet Graph displays its default elements. To customize the elements, add the respective elements to WPF Bullet Graph. The following section contains the steps to add the basic elements to WPF Bullet Graph.
 
 ## Adding Caption
 
@@ -157,7 +157,7 @@ You can assign a caption to the bullet graph by using the [`Caption`](https://he
 
 ## Configuring Ticks and Labels
 
-You can configure the ticks and labels of the quantitative scale by using the following APIs available in SfBulletGraph:
+You can configure the ticks and labels of the quantitative scale by using the following APIs available in WPF Bullet Graph:
 
 They are:
 
@@ -289,7 +289,7 @@ You can add ranges to bullet graph by creating ranges collection using [`Qualita
 {% endhighlight %}
 {% endtabs %}
 
-SfBulletGraph ranges are displayed as follows.
+WPF Bullet Graph ranges are displayed as follows.
 
 You can get the complete getting started sample [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BulletGraphDemo-1174716111).
 

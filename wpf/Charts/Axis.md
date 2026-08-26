@@ -284,7 +284,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Custom Labels**
 
-SfChart allows the user to define the labels for the axis. For defining the axis label, you have to set the [`LabelContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_LabelContent) and [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) properties. You can define the labels using the [`CustomLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CustomLabels) property as in the below code snippet.
+WPF Charts allows the user to define the labels for the axis. For defining the axis label, you have to set the [`LabelContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_LabelContent) and [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) properties. You can define the labels using the [`CustomLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CustomLabels) property as in the below code snippet.
 
 {% tabs %}
 
@@ -613,7 +613,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Smart Axis Labels**
 
-When there are a larger number of axis labels, they may overlap with each other. SfChart provides support to handle the overlapping labels using the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) property. By default, the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) value is [`Hide`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html).
+When there are a larger number of axis labels, they may overlap with each other. WPF Charts provides support to handle the overlapping labels using the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) property. By default, the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) value is [`Hide`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html).
 
 The following are the options for the intersecting action.
 
@@ -734,7 +734,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **EdgeLabelsDrawingMode**
 
-SfChart provides support to customize the position of the edge labels in the axis using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. The [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property default value is [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
+WPF Charts provides support to customize the position of the edge labels in the axis using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. The [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property default value is [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
 
 The following are the customizing options in [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode).
 
@@ -988,7 +988,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Grid lines
 
-By default, gridlines are automatically added to the [`ChartAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html) in its defined intervals. SfChart supports customization of gridline. The visibility of the gridlines can be controlled using the [`ShowGridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowGridLines) property.
+By default, gridlines are automatically added to the [`ChartAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html) in its defined intervals. WPF Charts supports customization of gridline. The visibility of the gridlines can be controlled using the [`ShowGridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowGridLines) property.
 
 The following code example illustrates the [`ShowGridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowGridLines) property as false in the primary axis.
 
@@ -1421,7 +1421,7 @@ chart.SecondaryAxis = secondaryAxis;
 
 ## AxisLine
 
-SfChart provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
+WPF Charts provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -1486,7 +1486,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Origin Customization
 
-SfChart allows you to customize the origin.By default the axis will be rendered having (0,0) as origin in x and y axes.
+WPF Charts allows you to customize the origin.By default the axis will be rendered having (0,0) as origin in x and y axes.
 
 **ShowAxisNextToOrigin**
 
@@ -2070,7 +2070,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Business Hours** **Range Calculation**
 
-SfChart provides support to plot only the business hours in DateTimeAxis.This support is enabled by setting [`EnableBusinessHours`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_EnableBusinessHours) property to true.
+WPF Charts provides support to plot only the business hours in DateTimeAxis.This support is enabled by setting [`EnableBusinessHours`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_EnableBusinessHours) property to true.
 
 The following properties are used for business hour range calculation
 
@@ -3222,7 +3222,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ## Multiple Axes
 
-SfChart provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis. These axes can be arranged in a stacking order or in a side by side pattern.
+WPF Charts provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis. These axes can be arranged in a stacking order or in a side by side pattern.
 
 By default, all the series are plotted based on primary and secondary axis. You can add more axes by adding additional axis to the series. There are two properties [`XAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxis) and [`YAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxis) in all the series type which is used to provide Multiple axes support, except [`AccumulationSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html).
 
