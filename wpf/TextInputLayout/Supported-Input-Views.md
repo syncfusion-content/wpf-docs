@@ -348,3 +348,11 @@ You can use the [MaskedTextBox](https://help.syncfusion.com/wpf/maskedtextbox/ov
 {% endtabs %}
 
 ![Image for SfMaskedEdit](Images/SfMaskedEdit_Img.PNG)
+
+## Input Views Limitations
+
+The following are the limitations when using [DatePicker](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/datepicker), [SfDatePicker](https://help.syncfusion.com/wpf/datepicker/overview) and [SfTimePicker](https://help.syncfusion.com/wpf/timepicker/overview) as the InputView of SfTextInputLayout.
+
+1. The hint is always displayed in the `AlwaysFloat` state and does not move to the inline position based on the control's focus state or the presence of a selected date/time value.
+
+2. When `CharCountVisibility` is enabled, the character count is always displayed as `0`, regardless of the selected date or time value.
