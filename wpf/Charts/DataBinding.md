@@ -11,7 +11,7 @@ documentation: ug
 
 WPF Charts offers ItemsSource property to bind various datasource ranges from simple collection property to complex properties.
 
-### Binding a simple collection to the chart
+## Binding a simple collection to the chart
 
 {% tabs %}
 

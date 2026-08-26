@@ -531,7 +531,7 @@ In addition to the pinching event, the map can be zoomed using the mouse events.
 
 The panning feature enables navigation using the map.
 
-#### Enable and disable pan
+### Enable and disable pan
 
 The [`EnablePan`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_EnablePan) property enables or disables the panning feature of the map. A `True` value enables the panning feature. A `False` value disables the panning feature of the map.
 
