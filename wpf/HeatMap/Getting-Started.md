@@ -11,7 +11,7 @@ documentation: ug
 
 ## Initialize the WPF HeatMap
 
-The WPF HeatMap exists in the Syncfusion.UI.Xaml.HeatMap namespace. Initialize WPF HeatMap to the XAML Page as shown in the following code sample.
+The WPF HeatMap is available in the Syncfusion.UI.Xaml.HeatMap namespace. Initialize it on the XAML page as shown in the following code sample.
 
 {% highlight xaml %}
 

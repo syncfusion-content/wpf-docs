@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion WPF Charts Control
 
-WPF Charts provides a perfect way to visualize data with a high level of user interactivity that focuses on development, productivity, and simplicity of use. WPF Charts also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data, and user customization.
+WPF Charts provides an excellent way to visualize data with a high level of user interactivity, focusing on development productivity and ease of use. It also offers a wide range of charting features for visualizing large volumes of data, flexible data binding, and extensive customization options.
 
 ![Overview of WPF Chart](Overview_images/wpf-chart-overview.png)
 

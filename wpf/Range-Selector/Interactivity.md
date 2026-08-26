@@ -196,7 +196,7 @@ The following screenshot illustrates the control after zooming into weeks of dat
 
 ## Thumb style customization
 
-WPF Range Selector [LeftThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WPF Range Selector.html#Syncfusion_UI_Xaml_Charts_WPF Range Selector_LeftThumbStyle) and [RightThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WPF Range Selector.html#Syncfusion_UI_Xaml_Charts_WPF Range Selector_RightThumbStyle) can be customized by using the following properties:
+WPF Range Selector [LeftThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftThumbStyle) and [RightThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightThumbStyle) can be customized by using the following properties:
 
 ### SymbolTemplate
 
