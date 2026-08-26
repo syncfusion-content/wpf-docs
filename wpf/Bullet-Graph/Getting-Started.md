@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with WPF Bullet Graph
 
-This section explains the steps required to configure the [`SfBulletGraph`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html) and to add the basic elements of `SfBulletGraph` using the various APIs available within it.
+This section explains the steps required to configure the [`SfBulletGraph`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html) and to add the basic elements of WPF Bullet Graph using the various APIs available within it.
 
 ## Configuring WPF Bullet Graph using Syncfusion Reference Manager
 
 The Syncfusion Reference Manager is used to add Syncfusion tools.
 
-Follow these steps to add the WPF Bullet Graph control using the Syncfusion Reference Manager.
+Follow these steps to add the SfBulletGraph control using the Syncfusion Reference Manager.
 
 Create a simple WPF application using Visual Studio.
 
@@ -115,7 +115,7 @@ Create a namespace reference to the SfBulletGraph control using Syncfusion's glo
 
 ![Displaying SfBulletGraph control](Getting-Started_images/Getting-Started_img7.jpg)
 
-As shown in the above image, the WPF Bullet Graph displays its default elements. To customize the elements, add the respective elements to WPF Bullet Graph. The following section contains the steps to add the basic elements to WPF Bullet Graph.
+As shown in the image above, the WPF Bullet Graph displays its default elements. To customize them, add the required elements as needed. The following section explains how to add the basic elements.
 
 ## Adding Caption
 

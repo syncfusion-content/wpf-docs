@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Digital Gauge
 
-This section explains the steps required to configure the **WPF Digital Gauge** and also explains how to add basic elements of **WPF Digital Gauge** through various APIs available within it.
+This section explains the steps required to configure the **WPF Digital Gauge** and describes how to add its basic elements using the available APIs.
 
 ## Adding gauge references
 

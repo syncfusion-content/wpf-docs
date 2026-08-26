@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization in WPF Charts
 
-WPF Charts provides the support for serializing and deserializing control. This section explains on how to serialize and deserialize WPF Charts.
+WPF Charts supports serialization and deserialization. This section explains how to serialize and deserialize the control.
 
 <table>
 <tr>
