@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming and Panning in WPF ImageEditor | Syncfusion®
-description: Zooming and Panning feature in Syncfusion® WPF ImageEditor allows you to zoom in/out and pan images for detailed viewing and editing operations.
+title: Zooming and Panning in WPF Image Editor | Syncfusion®
+description: Zooming and Panning feature in Syncfusion® WPF Image Editor allows you to zoom in/out and pan images for detailed viewing and editing operations.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Zooming and Panning in WPF ImageEditor
+# Zooming and Panning in WPF Image Editor
 
 ## Zooming
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Serialization in WPF ImageEditor | Syncfusion®
-description: Serialization feature in Syncfusion® WPF ImageEditor allows you to save and restore annotation states including shapes, text, and custom views.
+title: Serialization in WPF Image Editor | Syncfusion®
+description: Serialization feature in Syncfusion® WPF Image Editor allows you to save and restore annotation states including shapes, text, and custom views.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Serialization in WPF ImageEditor
+# Serialization in WPF Image Editor
 
-The Image Editor control provides support to serialize and deserialize the shape, text, pen annotations, and custom view along with their settings. You can save the current state of the image editor annotations and load it back when it is needed.
+The Image Editor control provides support to serialize and deserialize the shape, text, pen annotations, and custom view along with their settings. You can save the current state of the Image Editor annotations and load it back when it is needed.
 
 ## Serialization
 
@@ -58,7 +58,7 @@ The [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEdi
 
 ## Annotations collection
 
-The Image Editor provides the read-only collection of annotations using the [Annotations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) property. The [Annotations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) property contains all the annotations currently visible in image editor.
+The Image Editor provides the read-only collection of annotations using the [Annotations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) property. The [Annotations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Annotations) property contains all the annotations currently visible in Image Editor.
 
 N> This collection will be reset if the background image has been changed.
 
