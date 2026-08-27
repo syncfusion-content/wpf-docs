@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column in WPF SfKanban | Syncfusion
-description: Learn about Column support in Syncfusion WPF SfKanban, including headers, categories, drag-and-drop behavior, constraints, and appearance settings.
+title: Column in WPF Kanban Board | Syncfusion
+description: Learn about Column support in Syncfusion WPF Kanban Board, including headers, categories, drag-and-drop behavior, constraints, and appearance settings.
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
 
-# Column in WPF SfKanban
+# Column in WPF Kanban Board
 
 ## Customizing Column Size
 
@@ -173,7 +173,7 @@ The Kanban control provides built-in support to enable or disable drag-and-drop 
 
 ### Reordering Columns
 
-Columns can be reordered in the WPF Kanban control using built-in drag-and-drop. Enable this by setting the [`AllowColumnReorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AllowColumnReorder) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to `true`. The default value is `false`.
+Columns can be reordered in the WPF Kanban Board control using built-in drag-and-drop. Enable this by setting the [`AllowColumnReorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AllowColumnReorder) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to `true`. The default value is `false`.
 
 {% tabs %}
 {% highlight xaml hl_lines="1" %}

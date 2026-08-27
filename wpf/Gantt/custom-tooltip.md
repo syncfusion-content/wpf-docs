@@ -32,7 +32,7 @@ DataTemplate</td></tr>
 
 ## Adding CustomToolTip to Gantt 
 
-The following code illustrates how to add a custom tooltip to the Gantt control.
+The following code illustrates how to add a custom tooltip to the WPF Gantt control.
 
 {% tabs %}
 {% highlight xaml %}

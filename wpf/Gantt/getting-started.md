@@ -11,7 +11,7 @@ documentation: ug
 
 ## Appearance and structure of Gantt
 
-Gantt control is composed of three controls. They are:
+WPF Gantt control is composed of three controls. They are:
 
 * GanttGrid
 * ScheduleHeader  
@@ -44,7 +44,7 @@ Gantt Chart is an items control that provides a graphical representation of the 
 
 #### Gantt schedule 
 
-Gantt Schedule is a medium to measure the progress in the Gantt control. Using this you can track or measure the progress of the task or activity.
+Gantt Schedule is a medium to measure the progress in the WPF Gantt Control. Using this you can track or measure the progress of the task or activity.
 
 
 ![WPF Gantt schedule allotment](Getting-Started_images/Getting-Started_img4.png)
@@ -79,23 +79,23 @@ The following features are available in the Essential Gantt for WPF:
 * Flow Direction
 * Localization
 
-## Adding GanttControl to an application
+## Adding WPF Gantt Control to an application
 
 You can create a project management application using Essential Gantt WPF. 
 
-You can create Gantt control in two methods. They are:
+You can create WPF Gantt Control in two methods. They are:
 
 * Programmatically
 * Through Designer 
 
-### Programmatically creating GanttControl 
+### Programmatically creating WPF Gantt Control
 
 
-The following are the steps to create GanttControl programmatically: 
+The following are the steps to create WPF Gantt Control programmatically: 
 
-#### Adding GanttControl
+#### Adding WPF Gantt Control
 
-You can add Gantt control to the application using the following code:
+You can add WPF Gantt control to the application using the following code:
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ When the code runs, an empty Gantt with built-in `TaskDetails` collection will b
 
 #### Binding data to GanttControl
 
-Create a collection of tasks and bind it to the newly created GanttControl as given in the following code:
+Create a collection of tasks and bind it to the newly created WPF Gantt Control as given in the following code:
 
 {% tabs %}
 
@@ -211,29 +211,29 @@ public class ViewModel
 
 ### Adding GanttControl through designer
 
-The following are the steps to create Gantt control through designer.
+The following are the steps to create WPF Gantt control through designer.
 
 1. Open the XAML page of the application.
 
 ![Designer page in application](Getting-Started_images/Getting-Started_img6.png)
 
-2. Select GanttControl from ToolBox.
+2. Select WPF Gantt Control from ToolBox.
 
 ![ToolBox window in application](Getting-Started_images/Getting-Started_img7.png)
 
-3. Drag-and-drop the GanttControl to Designer View.
+3. Drag-and-drop the WPF Gantt Control to Designer View.
 
 ![Loading WPF gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
 
-4. Gantt control is added to the window. Assembly reference will also be added to Project file.
+4. WPF Gantt Control is added to the window. Assembly reference will also be added to Project file.
 
 ![WPF Gantt control loaded in designer page](Getting-Started_images/Getting-Started_img9.png)
 
-5. Now you can customize the properties of Gantt control in the Properties Window.
+5. Now you can customize the properties of WPF Gantt Control in the Properties Window.
 
 ## Adjusting chart and grid size
 
-The GanttControl allows users to set the width for GanttChart and GanttGrid using the [`ChartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ChartWidth) and [`GridWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_GridWidth) properties. The following code sample demonstrates how to set width for chart and grid.
+The WPF Gantt Control allows users to set the width for GanttChart and GanttGrid using the [`ChartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ChartWidth) and [`GridWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_GridWidth) properties. The following code sample demonstrates how to set width for chart and grid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -354,7 +354,7 @@ this.ganttControl.AutoExpandMode = GanttAutoExpandMode.None;
 {% endtabs %}
 
 ## Theme
-The WPF GanttControl supports various built-in themes. Refer to the below links to apply themes for the Gantt control,
+The WPF Gantt Control supports various built-in themes. Refer to the below links to apply themes for the WPF Gantt,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

@@ -617,7 +617,7 @@ public class Task : NotificationObject
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-2. Create a collection of business objects to bind it as ItemsSource of the Gantt control.
+2. Create a collection of business objects to bind it as ItemsSource of the WPF Gantt control.
 
 {% capture codesnippet5 %}
 {% highlight c# tabtitle="ViewModel.cs" %}
@@ -729,7 +729,7 @@ public class ViewModel
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-3. Set the `UseAutoUpdateHierarchy` property as `false` to handle the custom calculations on the business objects. Set the collection as `ItemsSource` of the Gantt control.
+3. Set the `UseAutoUpdateHierarchy` property as `false` to handle the custom calculations on the business objects. Set the collection as `ItemsSource` of the WPF Gantt control.
 
    N> If you use the TaskDetails class as your business object, then you should not set the UseAutoUpdateHierarchy property as false.
 
