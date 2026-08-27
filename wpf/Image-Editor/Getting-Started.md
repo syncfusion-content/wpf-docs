@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Getting Started with WPF ImageEditor | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF ImageEditor control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Image Editor | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Image Editor control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Getting Started with WPF ImageEditor
+# Getting Started with WPF Image Editor
 
-This section explains the steps required to load an image to the image editor control. It has a built-in toolbar that helps in performing various editing operations such as flip, crop, rotate, save, annotating with shapes, text, path (i.e. free hand drawing), zoom, and pan.
+This section explains the steps required to load an image to the Image Editor control. It has a built-in toolbar that helps in performing various editing operations such as flip, crop, rotate, save, annotating with shapes, text, path (i.e. free hand drawing), zoom, and pan.
 
-## Adding ImageEditor reference
+## Adding Image Editor reference
 
-Refer to this [document](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls in Visual Studio projects through various ways. Refer to this [document](https://help.syncfusion.com/wpf/control-dependencies) to learn about the assemblies required for adding ImageEditor to your project.
+Refer to this [document](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls in Visual Studio projects through various ways. Refer to this [document](https://help.syncfusion.com/wpf/control-dependencies) to learn about the assemblies required for adding Image Editor to your project.
 
-## Initialize ImageEditor
+## Initialize Image Editor
 
 Import the Image editor namespace as demonstrated in the following code snippet.
 
@@ -35,7 +35,7 @@ using Syncfusion.UI.Xaml.ImageEditor;
 
 {% endtabs %} 
 
-You can either use the below schemas or the above mentioned namespace to refer the ImageEditor control in xaml.
+You can either use the below schemas or the above mentioned namespace to refer the Image Editor control in xaml.
 
 {% tabs %} 
 
@@ -47,7 +47,7 @@ xmlns:editor="http://schemas.syncfusion.com/wpf"
 
 {% endtabs %} 
 
-Then, initialize the image editor as demonstrated in the following code snippet.
+Then, initialize the Image Editor as demonstrated in the following code snippet.
 
 {% tabs %} 
 
@@ -66,7 +66,7 @@ Then, initialize the image editor as demonstrated in the following code snippet.
 
 {% endtabs %} 
 
-## Loading image in ImageEditor
+## Loading image in Image Editor
 
 Image can be loaded in the following two ways:
 
@@ -121,8 +121,8 @@ You can load the image as stream using the [`Image`](https://help.syncfusion.com
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF ImageEditor](Images/Theme.jpg)   
+  ![Setting theme to WPF Image Editor](Images/Theme.jpg)   
 
 ## See also
 
-[How to retrieve a edited image as a stream in an image editor](https://support.syncfusion.com/kb/article/9828/how-to-retrieve-a-edited-image-as-a-stream-in-wpf-image-editor)
+[How to retrieve a edited image as a stream in an Image Editor](https://support.syncfusion.com/kb/article/9828/how-to-retrieve-a-edited-image-as-a-stream-in-wpf-image-editor)

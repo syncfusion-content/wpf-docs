@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Undo and Redo in WPF ImageEditor | Syncfusion®
-description: Undo and Redo feature in Syncfusion® WPF ImageEditor allows you to navigate through edit history and revert or reapply image editing operations.
+title: Undo and Redo in WPF Image Editor | Syncfusion®
+description: Undo and Redo feature in Syncfusion® WPF Image Editor allows you to navigate through edit history and revert or reapply image editing operations.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Undo and Redo in WPF ImageEditor
+# Undo and Redo in WPF Image Editor
 
 The undo and redo supports help in performing the edited image transition from current state to previous state or from current state to next state.
 
