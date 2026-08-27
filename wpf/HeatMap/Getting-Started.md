@@ -316,7 +316,7 @@ The final `MainWindow.xaml` looks like this.
 
 ## Theme
 
-WPF HeatMap supports various built-in themes. Refer to the following links to apply themes to the WPF HeatMap:
+WPF HeatMap supports various built-in themes. Refer to the following links to learn how to apply them:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 

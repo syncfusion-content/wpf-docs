@@ -44,7 +44,7 @@ For more info about the platforms and configurations refer [here](https://learn.
 
 ## Configuration
 
-To test WPF Charts with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project  of WPF Charts from [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1453395823.zip).
+To test WPF Charts with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project from [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1453395823.zip).
 
 1. Open the extension project and build it.
 

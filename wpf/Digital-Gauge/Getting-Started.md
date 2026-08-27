@@ -194,7 +194,7 @@ You can find the complete getting started sample from this [`link`](https://git
 
 ## Theme
 
-WPF Digital Gauge supports various built-in themes. Refer to the below links to apply themes for the WPF Digital Gauge,
+WPF Digital Gauge supports various built-in themes. Refer to the following links to learn how to apply them,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

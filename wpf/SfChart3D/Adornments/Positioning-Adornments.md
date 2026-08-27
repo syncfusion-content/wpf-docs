@@ -69,7 +69,7 @@ chart.Series.Add(series);
 
 ## Label Position
 
-SfChart3D provides additional customization options to position the adornments smartly based on series types using the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelPosition) property.
+WPF 3D Chart provides additional customization options to position the adornments smartly based on series types using the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelPosition) property.
 
 The following section shows a few examples of this LabelPosition behavior with respect to the series.
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Printing in WPF Olap Chart
 
-The OLAP chart can be printed in black, color, or white modes. It supports the cropping feature used to print a particular part of the chart.
+The WPF OLAP Chart can be printed in black, color, or white modes. It supports the cropping feature used to print a particular part of the chart.
 
 The following image illustrates printing a cropped image.
 
-![To print the OlapChart](Printing_images/Printing_img1.png)
+![To print the WPF OLAP Chart](Printing_images/Printing_img1.png)
 
 A sample demo is available at the following location.
 
