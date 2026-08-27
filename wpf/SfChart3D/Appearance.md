@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF 3D Chart
 
-SfChart3D supports various customizing and styling options that allow you to enrich the application.
+WPF 3D Chart supports various customizing and styling options that allow you to enrich the application.
 
 ## Palettes
 
@@ -147,7 +147,7 @@ N> Metro palette is the default palette for both Series and Segment.
 
 ## Custom Palette
 
-SfChart3D provides an option that enables you to define your own color brushes with your preferred order for the Palette using the [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) as shown in the following code example.
+WPF 3D Chart provides an option that enables you to define your own color brushes with your preferred order for the Palette using the [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) as shown in the following code example.
 
 {% tabs %}
 
