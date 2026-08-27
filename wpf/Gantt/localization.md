@@ -31,7 +31,7 @@ public MainWindow()
 To localize the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) based on `CurrentUICulture` using resource files, follow the steps below.
 
 1. Create a new folder named **Resources** in your application.
-2. Add the default resource file of `GanttControl` into the **Resources** folder. You can download the Syncfusion.Gantt.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources-2137559261.zip).
+2. Add the default resource file into the **Resources** folder. You can download the Syncfusion.Gantt.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources-2137559261.zip).
 
 ![ResourceReference](Localization_images/ResourceReference.png)
 
@@ -53,4 +53,4 @@ For example, you have to give the name as **Syncfusion.Gantt.WPF.fr.resx** for t
 
 ![localization-in-wpf-gantt-control](Localization_images/localization-in-wpf-gantt-control.png)
 
-You can download the sample for localization of the Gantt control from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Gantt-1030234357.zip)
+You can download the localization sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Gantt-1030234357.zip)

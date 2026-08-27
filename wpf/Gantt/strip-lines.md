@@ -9,7 +9,7 @@ documentation: ug
 
 # Strip Lines in WPF Gantt
 
-The WPF Gantt control provides support to add strip lines in the Gantt chart region that denote an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
+The control provides support to add strip lines in the Gantt chart region that denote an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
 
 ## Features of Strip Lines in Essential Gantt
 
@@ -18,7 +18,7 @@ Strip lines can be repeatable in the Gantt chart region based on repeat behavior
 * You can modify the content or appearance of the strip lines at run time by changing the values of the underlying collection source.
 * The visibility of strip lines can be toggled using the [`ShowStripLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowStripLines) property in the Gantt control.
 
-The WPF Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of `StripLineInfo` objects and process it to draw the strip lines.
+The control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of `StripLineInfo` objects and process it to draw the strip lines.
 
 #### Repeat behavior
 
