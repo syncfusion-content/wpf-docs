@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toolbar Customization in WPF ImageEditor | Syncfusion®
-description: Toolbar customization feature in Syncfusion® WPF ImageEditor allows you to customize toolbar appearance and handle toolbar item selection events.
+title: Toolbar Customization in WPF Image Editor | Syncfusion®
+description: Toolbar customization feature in Syncfusion® WPF Image Editor allows you to customize toolbar appearance and handle toolbar item selection events.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Toolbar Customization in WPF ImageEditor
+# Toolbar Customization in WPF Image Editor
 
 ## Customization
 
@@ -117,7 +117,7 @@ You can browse images in a local folder and load them in the Image Editor using 
 
 ## Commands
 
-Invoke commands from the custom toolbar to customize toolbar items of the image editor. Must set the `CommandTarget` while using the Command.
+Invoke commands from the custom toolbar to customize toolbar items of the Image Editor. Must set the `CommandTarget` while using the Command.
 
 <table>
 <tr>
@@ -127,7 +127,7 @@ Description<br/><br/></td></tr>
 <tr>
 <td>
 BrowseImage<br/><br/></td><td>
-Browses the local folder to pick and load the image  to an image editor.<br/><br/></td></tr>
+Browses the local folder to pick and load the image  to an Image Editor.<br/><br/></td></tr>
 <tr>
 <td>
 Save<br/><br/></td><td>

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Crop in WPF ImageEditor | Syncfusion®
-description: Crop feature in Syncfusion® WPF ImageEditor allows you to select and crop image areas with specified bounds through toolbar and programmatic methods.
+title: Crop in WPF Image Editor | Syncfusion®
+description: Crop feature in Syncfusion® WPF Image Editor allows you to select and crop image areas with specified bounds through toolbar and programmatic methods.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Crop in WPF ImageEditor
+# Crop in WPF Image Editor
 
 An image can be cropped using toolbar and programmatically.
 
@@ -42,7 +42,7 @@ An image can be cropped in rectangle and circle format. By default, rectangle fo
 
 ## Programmatic cropping
 
-Cropping can be done programmatically using  the following two methods in image editor:
+Cropping can be done programmatically using  the following two methods in Image Editor:
 
 * [`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) - Selects the cropping area.
 * [`Crop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Crop_System_Windows_Rect_System_Boolean_) - Crops the selected area in an image.
@@ -129,7 +129,7 @@ editor.ToggleCropping(1, 1, true);
 
 ### Crop
 
-After selecting the crop area, use the [`crop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Crop_System_Windows_Rect_System_Boolean_) method in the image editor to crop the selected portion as demonstrated in the following method.
+After selecting the crop area, use the [`crop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Crop_System_Windows_Rect_System_Boolean_) method in the Image Editor to crop the selected portion as demonstrated in the following method.
 
 {% tabs %} 
 
@@ -159,4 +159,4 @@ editor.Crop(new Rect(0, 0, 0, 0)
 
 ## See also
 
-[How to crop an image based on the ratio in the image editor](https://www.syncfusion.com/kb/11225/how-to-crop-an-image-based-on-the-ratio-in-the-image-editor)
+[How to crop an image based on the ratio in the Image Editor](https://www.syncfusion.com/kb/11225/how-to-crop-an-image-based-on-the-ratio-in-the-image-editor)
