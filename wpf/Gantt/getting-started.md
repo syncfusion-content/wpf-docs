@@ -19,7 +19,7 @@ WPF Gantt control is composed of three controls. They are:
 
 ![gantt-control-appearance-and-structure](Getting-Started_images/gantt-control-appearance-and-structure.png)
 
-#### Gantt grid
+### Gantt grid
 
 Gantt Grid is a table view control which displays the scheduled tasks/activities of the project with its hierarchy. You can edit the fields of the bound tasks using this grid.
 
@@ -30,7 +30,7 @@ Gantt Grid is a table view control which displays the scheduled tasks/activities
 * Child Task—Child task represents an individual task. This contains only the information about the specific task. The Child task is a part of parent task.
 * Expand/Collapse Button—Expand/Collapse button allows you to expand or collapse the particular hierarchy.
 
-#### Gantt chart
+### Gantt chart
 
 Gantt Chart is an items control that provides a graphical representation of the task/activity that is currently scheduled. The Gantt Chart has different components to represent the type of Task, Progress of the Task, and Relationship between Tasks.
 
@@ -42,7 +42,7 @@ Gantt Chart is an items control that provides a graphical representation of the 
 * Progress Indicator—Progress indicator represents the percentage of work completed for the task.
 * Connector—Connector represents the dependency relationship between the tasks.
 
-#### Gantt schedule 
+### Gantt schedule 
 
 Gantt Schedule is a medium to measure the progress in the WPF Gantt control. Using this you can track or measure the progress of the task or activity.
 
@@ -273,7 +273,7 @@ this.ganttControl.ScheduleRangePadding = 5;
 
 ## ScheduleType
 
-By using the [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) enum in the GanttControl, you can define the specific schedule range. The [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) is an enum, which contains the following schedule types: 
+By using the [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) enum in the Control, you can define the specific schedule range. The [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) is an enum, which contains the following schedule types: 
 
 * HoursWithSeconds
 * MinutesWithSeconds

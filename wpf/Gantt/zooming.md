@@ -21,7 +21,7 @@ Built-in zooming allows you to zoom in and zoom out of schedule rows. The built-
 * Zoom-in: Zoom-in increases the cell size dynamically. When the cell size exceeds the specified range, it will split the schedule cells. When a cell cannot be split further, a new schedule row with the next time unit is added beneath the last row of the current schedule. The cell split and the addition of a new row are based on the zoom factor.
 * Zoom-out: Zoom-out decreases the cell size dynamically. When the cell size is within the specified range, it will merge the schedule cells. When the cells cannot be merged further, the last row of the current schedule is removed. Merging and removing a row are based on the zoom factor.
 
-#### Adding Built-in Zooming to an Application
+### Adding Built-in Zooming to an Application
 
 To add the built-in zooming:
 
@@ -247,7 +247,7 @@ To view samples:
 
 In custom zooming, everything is handled at the application level. You can change the schedule row information and cell size dynamically by handling the provided event handler. While the zooming is handled at the application level, built-in zooming will not work. You cannot use built-in zooming and custom zooming together.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 When you want to view tasks that are scheduled on a month unit in the day/hours unit, you would normally have to restart the application by changing the schedule type to a day/hours unit. Zooming allows you to easily zoom in to the day/hours unit by providing the zoom factor without restarting the application.
 
@@ -563,7 +563,7 @@ To view samples:
 
 ## Tables for Zooming Properties and Events
 
-#### Properties
+### Properties
 
 <table>
 <tr>
