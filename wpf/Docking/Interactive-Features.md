@@ -54,7 +54,7 @@ Handled when an active window is changed.</td></tr>
 </table>
 
 
-#### Method
+## Method
 
 <table>
 <tr>
@@ -68,7 +68,7 @@ This method is called when an active window is changed. </td></tr>
 </table>
 
 
-### Retrieving an Active Window from WPF Docking Control
+## Retrieving an Active Window from WPF Docking Control
 
 Sometimes, you need to identify an active window to perform some operations at run time. For this, create an object for the FrameWorkElement and set the WPF Docking Control active window to it. Now the FrameWorkElement object returns the active window.
 
