@@ -15,7 +15,7 @@ Visual styles are available for the dockable windows, which give the windows a r
 
 > NOTE: `SkinStorage.SetVisualStyle` is a legacy API. For new development, use [SfSkinManager.SetTheme](https://help.syncfusion.com/wpf/themes/skin-manager#set-theme), which requires the additional assemblies `Syncfusion.SfSkinManager.WPF` and a theme assembly (e.g. `Syncfusion.Themes.FluentLight.WPF`).
 
-#### Property table
+### Property table
 
 <table>
 <tr>

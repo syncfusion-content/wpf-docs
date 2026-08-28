@@ -40,7 +40,7 @@ DockingManager.ActivateWindow("Name of the Window");
 {% endtabs %} 
 
 
-#### Event
+## Event
 
 <table>
 <tr>
@@ -149,7 +149,7 @@ You can also iterate through all the child elements of the WPF Docking Control, 
 
 {% endhighlight %}
 
-#### Refer Also
+### Refer Also
 
 How to Activate Particular Window
 

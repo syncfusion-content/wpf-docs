@@ -318,7 +318,7 @@ bool mdimax = DockingManager.IsInMDIMaximizedState;
 * Horizontal
 * Vertical
 
-#### Cascade:
+### Cascade:
 
 Cascade layout just cascades the window one by one as shown below:
 
