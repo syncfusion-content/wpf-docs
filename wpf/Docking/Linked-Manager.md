@@ -112,7 +112,7 @@ End Class
 
 ### Adding TargetManager list of WPF Docking Control
 
-To add TargetManager list in the WPF Docking Control, call [AddToTargetManagersList](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.ControlsDockingManager.html#Syncfusion_Windows_Tools_Controls_WPF Docking Control_AddToTargetManagersList_Syncfusion_Windows_Tools_Controls_WPF Docking Control_) method of the WPF Docking Control with the valid WPF Docking Control instance as argument.
+To add TargetManager list in the WPF Docking Control, call [AddToTargetManagersList](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AddToTargetManagersList_Syncfusion_Windows_Tools_Controls_DockingManager_) method of the WPF Docking Control with the valid WPF Docking Control instance as argument.
 
 When only one WPF Docking Control has TargetManagerList, the window drop to TargetManager cannot drag back to Owner DockingManger. For example WPF Docking Control1 and WPF Docking Control2 are the WPF Docking Control instance and the WPF Docking Control2 is added to TargetManagerList of WPF Docking Control1, but the WPF Docking Control2 is not aware of its TargetManager.
 

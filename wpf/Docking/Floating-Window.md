@@ -95,7 +95,7 @@ SyncDockingManager.ShowFloatWindowInTaskbar = true;
 
 ### Show or Hide the Taskbar Support for Selective Windows
 
-To enable or disable the taskbar support for a particular window, use the attached property [ShowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowInTaskbar) of `WPF Docking Control`. The default value is `true`. It is necessary to set the [ShowFloatWindowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.ControlsDockingManager.html#Syncfusion_Windows_Tools_Controls_WPF Docking Control_ShowFloatWindowInTaskbar) property of `WPF Docking Control` to `true` for displaying even a single `NativeFloatWindow` in the taskbar.
+To enable or disable the taskbar support for a particular window, use the attached property [ShowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowInTaskbar) of `WPF Docking Control`. The default value is `true`. It is necessary to set the [ShowFloatWindowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ShowFloatWindowInTaskbar) property of `WPF Docking Control` to `true` for displaying even a single `NativeFloatWindow` in the taskbar.
 
 {% tabs %}
 
