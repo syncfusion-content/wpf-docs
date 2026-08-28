@@ -25,7 +25,7 @@ This event is triggered when you click (or tap) on a card. The [`KanbanDragEvent
 
 ### Command
 
-	The [`CardTappedCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTappedCommand) property is used to associate a command with the control. This property is most often set with the MVVM pattern to bind callbacks back into the ViewModel.
+The [`CardTappedCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTappedCommand) property is used to associate a command with the control. This property is most often set with the MVVM pattern to bind callbacks back into the ViewModel.
 
 ### CommandParameter
 
