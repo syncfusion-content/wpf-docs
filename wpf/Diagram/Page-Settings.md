@@ -9,7 +9,7 @@ documentation: ug
 
 # Page Settings in WPF SfDiagram
 
-By default, [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page size is determined by the position of diagram elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html ) property of `SfDiagram`. 
+By default, [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page size is determined by the position of diagram elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html ) property of `SfDiagram`. 
 
 * The [PageWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageWidth) and [PageHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageHeight) properties of `PageSettings` define the size of the page. 
 * The [PageOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PageSettings.html#Syncfusion_UI_Xaml_Diagram_PageSettings_PageOrientation) property of `PageSettings` is used to change the page orientation to portrait or landscape.
@@ -338,4 +338,4 @@ Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagra
 
 [How to disable the page editing behaviour?](https://support.syncfusion.com/kb/article/5860/how-to-disable-page-editing-in-wpf-diagram-sfdiagram)
 
-[How to set the image background for the Diagram page in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/14932/how-to-set-the-image-background-for-the-diagram-page-in-wpf-diagramsfdiagram)
+[How to set the image background for the Diagram page in WPF SfDiagram?](https://support.syncfusion.com/kb/article/14932/how-to-set-the-image-background-for-the-diagram-page-in-wpf-diagramsfdiagram)

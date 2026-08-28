@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Printing in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "PrintingService.Print") method.
+[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "PrintingService.Print") method.
 
 ## Direct print
 
@@ -409,7 +409,7 @@ diagram.PrintingService.ShowClassicPrintPreview();
 
 [How to customize the header or footer of the print preview](https://support.syncfusion.com/kb/article/11481/how-to-customize-the-header-or-footer-of-the-print-preview-in-the-wpf-diagramsfdiagram)
 
-[How to ignore empty pages while printing the WPF Diagram](https://support.syncfusion.com/kb/article/8537/how-to-ignore-empty-pages-while-printing-the-wpf-diagram-sfdiagram)
+[How to ignore empty pages while printing the WPF SfDiagram](https://support.syncfusion.com/kb/article/8537/how-to-ignore-empty-pages-while-printing-the-wpf-diagram-sfdiagram)
 
 [How to get progress notification while printing the diagram pages](https://support.syncfusion.com/kb/article/8465/how-to-get-progress-notification-while-printing-in-wpf-diagram-sfdiagram)
 

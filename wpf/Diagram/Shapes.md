@@ -11,7 +11,7 @@ documentation: ug
 
 We have provided some basic built-in shapes as ResourceDictionary.
 
-The following code example illustrates how to add shape resources to [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
+The following code example illustrates how to add shape resources to [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
 
 {% tabs %}
 {% highlight xaml %}
@@ -212,4 +212,4 @@ The list of shapes are available in the resource dictionary as follows
 
 See the [Shapes sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Shapes)  for examples of these shape.
 
-N> Looking for the full WPF Diagram component overview, features, pricing, and documentation? Visit the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.
+N> Looking for the full WPF SfDiagram component  overview, features, pricing, and documentation? Visit the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page.
