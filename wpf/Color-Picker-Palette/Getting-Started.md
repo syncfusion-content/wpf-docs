@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WPF ColorPickerPalette | Syncfusion®
 description: Learn how to get started with the Syncfusion WPF ColorPickerPalette control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: colorPickerPalette
+control: ColorPickerPalette
 documentation: ug
 ---
 
@@ -15,14 +15,14 @@ This section explains how to create a [WPF ColorPickerPalette](https://www.syncf
 
 ![WPF Color Picker Palette control structure](getting-started_images/wpf-color-picker-palette-control-structure.png)
 
-* The Selected Color represents the color that you select.
-* The Drop-Down represents a button, `ColorPickerPalette` window will open when you click on it.
-* The Automatic Color represents the Color, which can be set by you as default color.
-* The ToolTip with Color Details represents the ToolTip, when the mouse hovers on the Color.
-* The Standard Colors stores the standard colors like Red, Green, Blue and so on.
-* The Recently User Colors stores the Colors that are recently selected.
-* The More Colors Option provides wide range of color in addition to colors in the palette.
-* The Theme Variant Colors represents the Theme colors with variant.
+* The selected color represents the color that you have selected.
+* The drop-down represents a button; the `ColorPickerPalette` window opens when you click it.
+* The automatic color represents the default color that you can configure.
+* The tooltip with color details is shown when the mouse hovers over a color.
+* The standard colors store colors such as red, green, and blue.
+* The recently used colors store the colors that have been recently selected.
+* The more-colors option provides a wide range of colors in addition to those in the palette.
+* The theme-variant colors represent the theme colors and their variants.
 
 ### More Color Window
 
@@ -30,15 +30,15 @@ This section explains how to create a [WPF ColorPickerPalette](https://www.syncf
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#colorpickerpalette) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#colorpickerpalette) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link: 
+You can find more details about installing the NuGet package in a WPF application in the following link:
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Adding WPF ColorPickerPalette via designer
 
-You can add the WPF Color Picker Palette control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
+You can add the WPF Color Picker Palette control to an application by dragging it from the toolbox onto a view in the designer. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.WPF
 
@@ -47,14 +47,14 @@ You can add the WPF Color Picker Palette control to an application by dragging i
 ## Adding WPF ColorPickerPalette via XAML
 
 To add the `ColorPickerPalette` control manually in XAML, follow these steps:
+
 1. Create a new WPF project in Visual Studio.
 
-2. Add the  following assembly references to the project,
+2. Add the following assembly references to the project:
+
    * Syncfusion.Shared.WPF
  
-3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `ColorPickerPalette` control in XAML page.
-
-4. Declare the `ColorPickerPalette` control in XAML page.
+3. Import the Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `ColorPickerPalette` control on the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -79,14 +79,13 @@ To add the `ColorPickerPalette` control manually in XAML, follow these steps:
 
 ## Adding WPF ColorPickerPalette via C\#
 
-To add the `ColorPickerPalette` control manually in C#, follow these steps:
+To add the `ColorPickerPalette` in Visual Studio.
 
-1. Create a new WPF application via Visual Studio.
+2. Add the following assembly reference to the project:
 
-2. Add the  following assembly references to the project,
     * Syncfusion.Shared.WPF
 
-3. Include the required namespace and create an instance of `ColorPickerPalette` and add it to the window.
+3. Include the required namespace, create an instance of `ColorPickerPalette`, and add it to the window.
 
 4. Declare the `ColorPickerPalette` control using C#.
 
@@ -103,8 +102,7 @@ public partial class MainWindow : Window {
         //Creating an instance of ColorPickerPalette control
         ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
         colorPickerPalette.Width = 60;
-        colorPickerPalette.Height = 40;        
-
+        colorPickerPalette.Height = 40;
         //Adding ColorPickerPalette as window content
         this.Content = colorPickerPalette;
     }
@@ -117,9 +115,9 @@ public partial class MainWindow : Window {
 
 ![WPF Color Picker Palette control added by xaml and code](getting-started_images/wpf-color-picker-palette-control-added-via-xaml-code.png)
 
-## Accessing a Color programmatically
+You can set or change the selected color of the `ColorPickerPalette` programmatically by setting the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_Color) property. To get the selected color's name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property, which holds the name of the selected color item. The default value of `Color` is `Black`, and the default value of `ColorName` is the string `"Color"`.
 
-We can set or change the selected color of the `ColorPickerPalette` programmatically by setting the value for [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_Color) property. If we want know the selected color name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property that holds the name of the selected color item. The default value of `Color` and `ColorName` property is `Black` and `Color`.
+N> You can also set or change the selected color brush by using the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property. Setting either `Color` or `SelectedBrush` updates the other Palette_Color property. If we want know the selected color name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property that holds the name of the selected color item. The default value of `Color` and `ColorName` property is `Black` and `Color`.
 
 N> You can also set or changes the selected color brush by using the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property.
 
@@ -149,7 +147,7 @@ Here, `Red` color is selected color in the `ColorPickerPalette`.
 
 ## Select color from color palette
 
-We can select a different colors from Theme Color and Standard Color panels. we can show or hide the variant colors of the base Theme Colors and Standard Colors by using the [GenerateThemeVariants](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_GenerateThemeVariants) and [GenerateStandardVariants](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_GenerateStandardVariants) properties value as `true` or `false`.
+You can select different colors from the Theme Color and Standard Color panels. You can show or hide the variant colors of the base Theme Colors and Standard Colors by setting the [GenerateThemeVariants](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_GenerateThemeVariants) and [GenerateStandardVariants](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_GenerateStandardVariants) properties to `true` or `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -177,10 +175,14 @@ colorPickerPalette.Height = 40;
 
 ## Add your own color in the palette
 
-If we want to allow the user to select a color from own colors, add that color with its name using [CustomColor.ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CustomColor.html#Syncfusion_Windows_Tools_Controls_CustomColor_ColorName) and [CustomColor.Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CustomColor.html#Syncfusion_Windows_Tools_Controls_CustomColor_Color) into the [CustomColorsCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_CustomColorsCollection) and set the [SetCustomColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SetCustomColors) property value as `true`. The provided `CustomColor.ColorName` is shown in the tooltip while mouse hovering on the color item. We can change the custom color panel header text and its visibility by using the [CustomHeaderText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_CustomHeaderText) and [CustomHeaderVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_CustomHeaderVisibility) properties. The default value of `CustomHeaderText` is `CustomColors` and  default value of `CustomHeaderVisibility` is `Visible`.
+To allow the user to select from your own colors, add the color and its name using [CustomColor.ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CustomColor.html#Syncfusion_Windows_Tools_Controls_CustomColor_ColorName) and [CustomColor.Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CustomColor.html#Syncfusion_Windows_Tools_Controls_CustomColor_Color) to the [CustomColorsCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_CustomColorsCollection), and set the [SetCustomColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SetCustomColors) property to `true`. The `CustomColor.ColorName` is shown in the tooltip when the mouse hovers over the color item. You can change the custom-color panel header text and its visibility by using the [CustomHeaderText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_CustomHeaderText) and [CustomHeaderVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_CustomHeaderVisibility) properties. The default value of `CustomHeaderText` is `CustomColors`, and the default value of `CustomHeaderVisibility` is `Visible`.
 
 {% tabs %}
 {% highlight C# %}
+
+// Required usings:
+// using System.Collections.ObjectModel;
+// using Syncfusion.Windows.Shared;  // for NotificationObject
 
 public class ViewModel : NotificationObject {
     private ObservableCollection<CustomColor> newColorCollection;
@@ -221,15 +223,17 @@ public class ViewModel : NotificationObject {
     </local:ViewModel>
 </Window.Resources>
 
-<syncfusion:ColorPickerPalette CustomColorsCollection="{Binding NewColorCollection}"  
+<syncfusion:ColorPickerPalette CustomColorsCollection="{Binding NewColorCollection}"
                                CustomHeaderText="New Colors"
                                CustomHeaderVisibility="Visible"
                                SetCustomColors="True"
                                DataContext="{StaticResource viewModel}"
-                               Name="colorPickerPalette" 
+                               Name="colorPickerPalette"
                                Width="60"
                                Height="40">
 </syncfusion:ColorPickerPalette>
+
+N> The `local:` xmlns used above refers to the namespace of your `ViewModel` class. Add `xmlns:local="clr-namespace:YourNamespace"` to the root element of your XAML.
 
 {% endhighlight %}
 {% endtabs %}
@@ -258,7 +262,7 @@ ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
 colorPickerPalette.RecentlyUsedPanelVisibility = Visibility.Visible;
 colorPickerPalette.Width = 60;
 colorPickerPalette.Height = 40;
-
+To choose from a wider range of standard and custom colors, click the **More Color** option and select a color from either the Standard Colors tab or the Custom Colors tab, then click **OK**.
 {% endhighlight %}
 {% endtabs %}
 
@@ -294,7 +298,7 @@ N> We can show or hide all color panels. Refer the [Dealing with ColorPickerPale
 
 ## Reset selected color
 
-If you want to reset the selected color as `Transparent` color, click the `No Color` button. You will be display the `No color` button only by setting the [NoColorVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_NoColorVisibility) property value as `Visible`. The default value of `NoColorVisibility` property is `Collapsed`.
+To reset the selected color to `Transparent`, click the **No Color** button. The **No Color** button is displayed only when the [NoColorVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_NoColorVisibility) property is set to `Visible`. The default value of `NoColorVisibility` property is `Collapsed`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -316,7 +320,7 @@ N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-col
 
 ## Selected brush or color changed notification
 
-The selected brush or color changed in `ColorPickerPalette` can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`,`NewBrush` and `OldColor`, `NewColor` properties.
+The selected brush or color in `ColorPickerPalette` can be observed using the [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`, `NewBrush`, `OldColor`, and `NewColor` properties.
 
 {% tabs %}
 {% highlight xaml %}

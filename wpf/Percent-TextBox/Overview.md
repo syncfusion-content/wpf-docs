@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WPF PercentTextBox Control
 
-The [PercentTextBox](https://www.syncfusion.com/wpf-controls/percent-textbox) control restricts text box input to only double values and displays the percentage of the given value with support for data binding, Watermark, Null Value, and culture support. It provides many customization options to enhance the appearance and to suit the applications.
+The [PercentTextBox](https://www.syncfusion.com/wpf-controls/percent-textbox) control restricts text box input to only double values and displays the value as a percentage, with support for data binding, watermark, null value, and culture. It provides many customization options to enhance the appearance and to suit the applications.
 
 ## Control structure
 
@@ -21,11 +21,11 @@ The [PercentTextBox](https://www.syncfusion.com/wpf-controls/percent-textbox) co
 
 The core features of the PercentTextBox are as follows: 
 
-* Provides the ability to control the range of the input values by using the `MinValue` and `MaxValue` properties.
-* Provides different foreground brushes for positive, negative, and zero values.
+* Provides the ability to control the range of the input values by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_MaxValue) properties.
+* Provides different foreground brushes for positive, negative, and zero values using `PositiveForeground`, `NegativeForeground` (`ApplyNegativeForeground`), and `ZeroColor` (`ApplyZeroColor`) properties.
 * Provides data binding support.
 * Provides built-in Visual Styles and themes.
-* Provides Watermark support.
-* Provides Number Format support. 
-* Provides Null Value support.
+* Provides watermark support.
+* Provides number format support. 
+* Provides null value support.
 * Provides culture support.
