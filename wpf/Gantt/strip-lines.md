@@ -20,7 +20,7 @@ Strip lines can be repeatable in the Gantt chart region based on repeat behavior
 
 The control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of `StripLineInfo` objects and process it to draw the strip lines.
 
-#### Repeat behavior
+### Repeat behavior
 
 The available repeat behaviors are as follows:
 
@@ -157,7 +157,7 @@ double</td></tr>
 </table>
 
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 * You can mark the important dates and meetings in the scheduled time line.
 * Strip lines help you to avoid missing important events.
@@ -227,7 +227,7 @@ Event</td></tr>
 
 ## Adding strip lines to application
 
-#### Regular strip lines
+### Regular strip lines
 
 The following code sample demonstrates how to bind the regular strip line collection to strip lines.
 
