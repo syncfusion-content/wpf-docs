@@ -9,38 +9,35 @@ documentation: ug
 
 # Adding and Removing Items in WPF DocumentContainer
 
-This topic illustrates how to add and remove items from Document Container control.
+This topic illustrates how to add and remove items from the DocumentContainer control.
 
-## Adding items
+## Adding Items
 
-Document Container allows the user to add new elements to its container(such as button, text block), using Items.Add method. Use the following code snippet, for calling this method.
-
-
+The DocumentContainer allows you to add new elements (such as a `Button` or `TextBlock`) to its container by using the `Items.Add` method. Use the following code snippet to add an item.
 
 {% tabs %}
-{% highlight xaml %}
-<syncfusion:DocumentContainer Name="DocContainer">
-<Button ></Button></syncfusion:DocumentContainer>
+{% highlight XAML %}
+<syncfusion:DocumentContainer Name="DocContainer" Mode="TDI">
+    <Button Content="Click Me" />
+</syncfusion:DocumentContainer>
 {% endhighlight %}
 
 {% highlight C# %}
-Button a = new Button();
+Button a = new Button() { Content = "Click Me" };
 DocContainer.Items.Add(a);
 {% endhighlight %}
 {% endtabs %}
 
+## Removing Items
 
-## Remove item
+You can remove a specific item from the DocumentContainer by using the `Items.Remove` method, or remove all items at once with the `Items.Clear` method.
 
-You can remove all the items in the Document Container using Items.Clear method. To remove all the items in the Document Container, use the following code snippet.
-
-
-
+{% tabs %}
 {% highlight C# %}
+// Remove a specific item
+DocContainer.Items.Remove(a);
 
-
-
+// Remove all items
 DocContainer.Items.Clear();
-
 {% endhighlight %}
-
+{% endtabs %}

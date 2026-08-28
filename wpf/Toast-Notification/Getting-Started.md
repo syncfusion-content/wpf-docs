@@ -18,37 +18,34 @@ Add references to the following assemblies to use [SfToastNotification](https://
 - `Syncfusion.SfToastNotification.WPF`
 - `Syncfusion.Shared.WPF`
 
-Alternatively, you can install the **Syncfusion.SfToastNotification.WPF** NuGet package, which automatically installs the required dependent assemblies. 
+Alternatively, you can install the **Syncfusion.SfToastNotification.WPF** NuGet package, which automatically installs the required dependent assemblies.
 
 ## Showing a Basic Toast
 
-Since [SfToastNotification](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) is a non-UI control, you can create and display toast notifications entirely through C# code without adding any XAML configuration. You can display a basic toast notification by using the [Show](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.SfToastNotification.html#Syncfusion_UI_Xaml_SfToastNotification_SfToastNotification_Show_System_Windows_DependencyObject_Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_) method. 
+Since [SfToastNotification](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) is a non-UI control, you can create and display toast notifications entirely through C# code without adding any XAML configuration. You can display a basic toast notification by using the [Show](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.SfToastNotification.html#Syncfusion_UI_Xaml_SfToastNotification_SfToastNotification_Show_System_Windows_DependencyObject_Syncfusion_UI_Xaml_SfToastNotification_ToastOptions_) method.
+
+The following XAML wires up the trigger button.
+
+{% highlight XAML %}
+
+<Button Content="Show Toast" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click"/>
+
+{% endhighlight %}
 
 {% tabs %}
 {% highlight C# %}
 
-using System;
-using System.Windows;
-using Syncfusion.UI.Xaml.SfToastNotification;
+// Required usings:
+// using System.Windows;
+// using Syncfusion.UI.Xaml.SfToastNotification;
 
-namespace ToastNotificationDemo
+private void Button_Click(object sender, RoutedEventArgs e)
 {
-    public partial class MainWindow : Window
+    SfToastNotification.Show(this, new ToastOptions
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            SfToastNotification.Show(this, new ToastOptions
-            {
-                Title = "Welcome",
-                Message = "Hello! This is your first toast notification."
-            });
-        }
-    }
+        Title = "Welcome",
+        Message = "Hello! This is your first toast notification."
+    });
 }
 
 {% endhighlight %}
@@ -64,7 +61,7 @@ The following properties are used to define the textual content of a toast notif
 
 - **Title** – Represents the bold text displayed at the top of the toast and is typically used to summarize the purpose of the notification.
 - **Message** – Represents the main body text of the toast and conveys the primary notification information.
-- **Header** – Represents an additional header displayed above or beside the message. This property applies only to in-app toast modes (`Window` and `Screen`) and is ignored in native (`Default`) mode.
+- **Header** – Represents an additional header displayed above the message. This property applies only to in-app toast modes (`Window` and `Screen`) and is ignored in native (`Default`) mode.
 
 ## Toast Modes
 
@@ -81,18 +78,17 @@ To use native OS toast notifications, import the `Syncfusion.UI.Xaml.SfToastNoti
 {% tabs %}
 {% highlight C# %}
 
-using System.Windows;
-using Syncfusion.UI.Xaml.SfToastNotification;
+// Required usings:
+// using System.Windows;
+// using Syncfusion.UI.Xaml.SfToastNotification;
 
-namespace ToastNotificationDemo
+public partial class App : Application
 {
-    public partial class App : Application
+    private void Application_Startup(object sender, StartupEventArgs e)
     {
-        private void Application_Startup(object sender, StartupEventArgs e)
-        {
-            WindowsToastBootstrapper.RemoveShortcutOnUnload = true;
-            WindowsToastBootstrapper.Initialize("ToastNotificationDemo.App", "ToastNotificationDemo");
-        }
+        //Create the Start Menu shortcut once during application startup
+        WindowsToastBootstrapper.RemoveShortcutOnUnload = true;
+        WindowsToastBootstrapper.Initialize("ToastNotificationDemo.App", "ToastNotificationDemo");
     }
 }
 

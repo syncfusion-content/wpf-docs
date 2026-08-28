@@ -9,84 +9,46 @@ documentation: ug
 
 # Localization in WPF DocumentContainer
 
-The following table describes how a DocumentContainer property can be localized to a specific culture. You can simply provide the string values in the resource file for a specific culture and set the culture in the application.
+The DocumentContainer exposes a set of resource keys that you can override in a `.resx` file to localize its context menu items and command labels to a specific culture. You can simply provide translated string values in the resource file for a specific culture and set the culture in the application.
 
+## Localizable Resource Keys
 
+The following table lists the resource keys that the DocumentContainer (and DockingManager) read at runtime.
 
-<table>
-<tr>
-<th colspan = "5">
-Property</th><th>
-Description</th></tr>
-<tr>
-<td colspan = "5">
-MDIRestore,
-MDIMove,
-MDIResize,
-MDIFloating,
-MDIDockable,
-MDIDocument,
-MDIMinimize,
-MDIMaximizeMDIClose</td><td>
-Sets the string for the context menu item in DocumentContainer.</td></tr>
-<tr>
-<td colspan = "6">
-{{ '![Localization_images1](Localization_images/Localization_img1.png)' | markdownify}}
+| Resource key | Description | Default menu text (en-US) |
+|---|---|---|
+| `MDIRestore` | Restores an MDI window from maximized or minimized state. | Restore |
+| `MDIMove` | Allows the MDI window to be moved. | Move |
+| `MDIResize` | Allows the MDI window to be resized. | Resize |
+| `MDIFloating` | Floats the MDI window. | Floating |
+| `MDIDockable` | Docks the MDI window. | Dockable |
+| `MDIDocument` | Shows the window as a document. | Document |
+| `MDIMinimize` | Minimizes the MDI window. | Minimize |
+| `MDIMaximize` | Maximizes the MDI window. | Maximize |
+| `MDIClose` | Closes the MDI window. | Close |
+| `MoveToNextTabGroup` | Moves the tab to the next tab group (DockingManager and DocumentContainer). | Move to Next Tab Group |
+| `MoveToPreviousTabGroup` | Moves the tab to the previous tab group (DockingManager and DocumentContainer). | Move to Previous Tab Group |
+| `NewTabgroupMenuItemCancel` | Cancels a new tab group drag operation. | Cancel |
+| `TabClose` | Closes the active tab. | Close |
+| `CloseAllButThis` | Closes all tabs except the active one. | Close All But This |
+| `TabCloseAll` | Closes all tabs. | Close All |
+| `Floating` | Floats the active tab. | Floating |
+| `Document` | Shows the active tab as a document. | Document |
+| `Dockable` | Docks the active tab. | Dockable |
+| `NewHorizontalTabGroup` | Creates a new horizontal tab group. | New Horizontal Tab Group |
+| `NewVerticalTabGroup` | Creates a new vertical tab group. | New Vertical Tab Group |
 
-{{ '![Localization_images2](Localization_images/Localization_img2.png)' | markdownify}}
+## Localizing the DocumentContainer
 
-{{ '_ContextMenu(en-US)                                                      ContextMenu(fr-FR)_' | markdownify }}</td></tr>
-<tr>
-<td colspan = "4">
-MoveToNextTabGroup </td><td colspan = "2">
-Sets the string for MoveToNextTabGroup context menu item in DockingManager and DocumentContainer.</td></tr>
-<tr>
-<td colspan = "6">
-{{ '![Localization_images3](Localization_images/Localization_img3.png)' | markdownify}}
+To localize the DocumentContainer, create a resource file (for example `Syncfusion.Tools.WPF.fr-FR.resx`) in your project, add the keys above with translated values, and set the application culture at startup.
 
-{{ '![Localization_images4](Localization_images/Localization_img4.png)' | markdownify}}
+{% tabs %}
+{% highlight C# %}
+using System.Globalization;
+using System.Threading;
 
-{{ '_MoveToNextTabGroup(en-US)                                       MoveToNextTabGroup(fr-FR)_' | markdownify }}</td></tr>
-<tr>
-<td colspan = "3">
-MoveToPreviousTabGroup</td><td colspan = "3">
-Sets the string for MoveToPreviousTabGroup context menu item in DockingManager and DocumentContainer.</td></tr>
-<tr>
-<td colspan = "6">
-{{ '![Localization_images5](Localization_images/Localization_img5.png)' | markdownify}}
-
-{{ '![Localization_images6](Localization_images/Localization_img6.png)' | markdownify}}
-
-{{ '_MoveToPreviousTabGroup(en-US)                           MoveToPreviousTabGroup(fr-FR)_' | markdownify }}</td></tr>
-<tr>
-<td colspan = "2">
-NewTabgroupMenuItemCancel</td><td colspan = "4">
-Sets the string for the Tab context menu item in DockingManager and DocumentContainer.</td></tr>
-<tr>
-<td colspan = "6">
-{{ '![Localization_images7](Localization_images/Localization_img7.png)' | markdownify}}
-
-{{ '![Localization_images8](Localization_images/Localization_img8.png)' | markdownify}}
-
-{{ '_NewTabGroup(en-US)                                NewTabGroup(fr-FR)_' | markdownify }}</td></tr>
-<tr>
-<td>
-TabClose,
-CloseAllButThis,
-TabCloseAll,
-Floating,
-Document,
-Dockable,
-NewHorizontalTabGroup,
-NewVerticalTabGroup</td><td colspan = "5">
-Sets the string for the menu item in DocumentContainer and DockingManager.</td></tr>
-<tr>
-<td colspan = "6">
-{{ '![Localization_images9](Localization_images/Localization_img9.png)' | markdownify}}
-
-{{ '![Localization_images10](Localization_images/Localization_img10.png)' | markdownify}}
-
-{{ '_MenuItem(en-US)                                                 MenuItem(fr-FR)_' | markdownify }}</td></tr>
-</table>
-
+Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-FR");
+Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+{% endhighlight %}
+{% endtabs %}
 

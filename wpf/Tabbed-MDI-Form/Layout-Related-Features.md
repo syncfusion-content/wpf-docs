@@ -9,6 +9,8 @@ documentation: ug
 
 # Layout Related Features in WPF DocumentContainer
 
+This section describes the layout-related features of the DocumentContainer, such as the supported visual themes and how to apply them.
+
 ## Theme
 
 DocumentContainer supports various built-in themes. Refer to the below links to apply themes for the DocumentContainer,
@@ -17,6 +19,6 @@ DocumentContainer supports various built-in themes. Refer to the below links to 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-   ![Setting theme to wpf document container](Getting-Started_images/wpf-document-container-MDI-Theme.png)
+   ![MDI mode of the DocumentContainer with the default theme](Getting-Started_images/wpf-document-container-MDI-Theme.png)
    
-  ![Setting theme to wpf document container](Getting-Started_images/wpf-document-container-TDI-Theme.png)
+  ![TDI mode of the DocumentContainer with the default theme](Getting-Started_images/wpf-document-container-TDI-Theme.png)

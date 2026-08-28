@@ -11,7 +11,7 @@ documentation: ug
 
 ## Spin animation
 
-Items will spin up or down with smooth transition. The transition can be disabled using the EnableSpinAnimation property.
+Items will spin up or down with a smooth transition. The transition can be disabled using the `EnableSpinAnimation` property. The default value of `EnableSpinAnimation` is `True`.
 
 {% tabs %}
 {%highlight xaml%}
@@ -26,36 +26,45 @@ Items will spin up or down with smooth transition. The transition can be disable
 
 ## Accent brush
 
-The AccentBrush property is used to decorate the hot spots of a control with a solid color. 
+The `AccentBrush` property is used to decorate the hot spots of the `SfDomainUpDown` control with a solid color. The default value is the system accent color.
 
 {% tabs %}
 {%highlight xaml%}
 
-<Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf">
-<Grid>
-<editors:SfDomainUpDown x:Name="domainUpDown"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       Width="200" 
-                      AccentBrush="Black"
-                      Value="James">
-</editors:SfDomainUpDown >
-</Grid>
-</Page>
+<Window x:Class="DomainUpDownSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.WPF">
+    <Grid>
+        <editors:SfDomainUpDown x:Name="domainUpDown"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Width="200"
+                               AccentBrush="Black"
+                               Value="James" />
+    </Grid>
+</Window>
 
 {%endhighlight%}
 {% endtabs %}
 
-## Customize Up,Down button Style
+## Customize Up, Down button Style
 
-We can customize the appearance of the up/down buttons in the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control by using the [UpDownStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_UpDownStyle) property. 
+You can customize the appearance of the up/down buttons in the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control by using the [UpDownStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_UpDownStyle) property.
 
-This property allows you to apply a custom style and template to the internal SfUpDown control, which hosts the up/down buttons.
+This property allows you to apply a custom style and template to the internal `SfUpDown` control, which hosts the up/down buttons.
 
 {% tabs %}
 {%highlight xaml%}
 
-<Window xmlns:editors="clr-namespace:Syncfusion.Windows.Controls;assembly=Syncfusion.SfInput.WPF">
+<Window x:Class="DomainUpDownSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls;assembly=Syncfusion.SfInput.WPF">
+<Window.DataContext>
+    <local:ViewModel />
+</Window.DataContext>
 <Window.Resources>
 
     <!-- Style for Up/Down Buttons-->

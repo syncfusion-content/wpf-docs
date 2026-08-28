@@ -9,65 +9,51 @@ documentation: ug
 
 # Setting Mode in WPF DocumentContainer
 
-Document Container supports two important modes which are listed below. 
+The DocumentContainer supports the following two modes:
 
-* TDI - Tabbed Document Interface
-* MDI - Multiple Document Interface
+* **TDI** - Tabbed Document Interface (default)
+* **MDI** - Multiple Document Interface
 
-To set the Document Container in TDI mode, use the following code snippet.
+You can change the mode using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property of the DocumentContainer, which uses the `Syncfusion.Windows.Tools.Controls.DocumentContainerMode` enum.
 
-
+## Setting the Mode to TDI
 
 {% tabs %}
-{% highlight xaml %}
-<!-- Adding Document Container -->
-<syncfusion:DocumentContainer Name="DocContainer" Mode="TDI">…....…....
+{% highlight XAML %}
+<syncfusion:DocumentContainer Name="DocContainer" Mode="TDI">
+    <!-- child elements -->
 </syncfusion:DocumentContainer>
 {% endhighlight %}
 
 {% highlight C# %}
-//Creating instance of Document ContainerDocumentContainer DocContainer = new DocumentContainer();
-//Set mode as TDIDocContainer.Mode = DocumentContainerMode.TDI;….......….......
-//Adding control to window this. Content = DocContainer;
+// Creating an instance of DocumentContainer
+DocumentContainer docContainer = new DocumentContainer();
+// Set the mode to TDI
+docContainer.Mode = DocumentContainerMode.TDI;
+// Add the control to the window
+this.Content = docContainer;
 {% endhighlight %}
 {% endtabs %}
 
+![DocumentContainer in TDI mode](Setting-Mode-for-Document-Container_images/Setting-Mode-for-Document-Container_img1.jpeg)
 
-The following is the screen shot of a document container, which is in TDI mode.
+## Setting the Mode to MDI
 
-
-
-![Setting-Mode-for-Document-Container_img1](Setting-Mode-for-Document-Container_images/Setting-Mode-for-Document-Container_img1.jpeg)
-
-
-
-
-
-To set the Document Container in MDI mode, use the following code snippet.
-
-
-{% highlight xaml %}
-<!-- Adding Document Container -->
-<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">  …....  …....
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">
+    <!-- child elements -->
 </syncfusion:DocumentContainer>
 {% endhighlight %}
 
-{% highlight C# %} 
-//Creating instance of Document Container
-DocumentContainer DocContainer = new DocumentContainer();
-//Set mode as MDIDocContainer.
-Mode = DocumentContainerMode.MDI;….......….......
-//Adding control to window this.
-Content = DocContainer;
+{% highlight C# %}
+// Creating an instance of DocumentContainer
+DocumentContainer docContainer = new DocumentContainer();
+// Set the mode to MDI
+docContainer.Mode = DocumentContainerMode.MDI;
+// Add the control to the window
+this.Content = docContainer;
 {% endhighlight %}
+{% endtabs %}
 
-
-
-The following screen shot shows the document container in MDI mode.
-
-
-
-![Setting-Mode-for-Document-Container_img2](Setting-Mode-for-Document-Container_images/Setting-Mode-for-Document-Container_img2.jpeg)
-
-
-
+![DocumentContainer in MDI mode](Setting-Mode-for-Document-Container_images/Setting-Mode-for-Document-Container_img2.jpeg)

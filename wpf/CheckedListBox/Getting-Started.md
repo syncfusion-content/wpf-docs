@@ -20,15 +20,15 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 Further information on installing the NuGet package can be found in the following link: [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages).
 
-You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the CheckListBox's dependent assemblies.
+You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the CheckListBox's dependent assemblies.
 
 ## Creating simple application with CheckListBox control
 
-In this walk through, the user will create a WPF application that contains the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control.
+In this walkthrough, you will create a WPF application that contains the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control.
 
 ## Creating project
 
-In Visual Studio, create a new WPF project to show the features of the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control and add the following namespace to the added assemblies.
+In Visual Studio, create a new WPF project to show the features of the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control, and then add the following namespace to the referenced assemblies.
 
 ## Adding control via designer
 
@@ -59,7 +59,7 @@ To add the WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GettingStartedComboBox"
+        xmlns:local="clr-namespace:GettingStarted"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="GettingStarted.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -95,7 +95,8 @@ To add the `CheckListBox` control manually in C#, follow these steps,
 
 using System.Windows;
 using Syncfusion.Windows.Tools.Controls;
-namespace ComboBox
+
+namespace GettingStarted
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -248,7 +249,7 @@ checkListBox.DisplayMemberPath = "Name";
 
 ## Check or Uncheck items
 
-You can check or uncheck the items in the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) by clicking on the CheckBox or the content of the item. You can use `Space` key to uncheck or check the previously selected item.
+You can check or uncheck the items in the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) by clicking on the CheckBox or the content of the item. You can use the `Space` key to uncheck or check the previously selected item.
 
 You can programmatically check the items in CheckListBox by adding the items in the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItems) property.
 
@@ -312,7 +313,7 @@ N> Refer [Localization of Syncfusion WPF Controls](https://help.syncfusion.com/w
 
 The following screenshot shows the localized `CheckListBox` control.
 
-![WPF CheckListBox contain localized SelectAll item](Getting-Started_images/localized.png)
+![WPF CheckListBox contains localized SelectAll item](Getting-Started_images/localized.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Localization)
 

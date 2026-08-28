@@ -13,7 +13,7 @@ This section explains how to create a tabbed window interface using the [SfChrom
 
 ## Assembly Deployment
 
-To integrate the Tabbed Window in you WPF application, add the following required assemblies or NuGet packages:
+To integrate the Tabbed Window in your WPF application, add the following required assemblies or NuGet packages:
 
 - Syncfusion.SfChromelessWindow.WPF
 - Syncfusion.Shared.WPF
@@ -22,13 +22,10 @@ To integrate the Tabbed Window in you WPF application, add the following require
 
 To add the Tabbed Window manually in XAML, follow these steps:
 
-1. Create a new WPF project in Visual Studio  with required .NET Framework or .NET Core version.
-
+1. Create a new WPF project in Visual Studio targeting the required .NET Framework or .NET Core version.
 2. Add the required assembly references or NuGet packages mentioned in the Assembly Deployment section.
-
 3. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in your XAML file.
-
-4. Create a window that uses [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) and set its [WindowType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html#Syncfusion_Windows_Controls_SfChromelessWindow_WindowType) property to `Tabbed`, and include an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) with the required tab items.
+4. Create a window that uses [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html) and set its [WindowType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html#Syncfusion_Windows_Controls_SfChromelessWindow_WindowType) property to `Tabbed`, then include an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) with the required tab items.
 
 {% tabs %}
 
@@ -62,11 +59,9 @@ To add the Tabbed Window manually in XAML, follow these steps:
 
 To add the Tabbed Window control manually in C#, follow these steps:
 
-1. Create a new WPF project in Visual Studio with the required .NET Framework or .NET Core version.
-
+1. Create a new WPF project in Visual Studio targeting the required .NET Framework or .NET Core version.
 2. Add the required assembly references or NuGet packages mentioned in the Assembly Deployment section.
-
-3. Include the required namespace, create a window that inherits from [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html), set its [WindowType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html#Syncfusion_Windows_Controls_SfChromelessWindow_WindowType) to `Tabbed`, and include an [SfTabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfTabControl.html) with the required tab items.
+3. Include the required namespace and create a window that inherits from [SfChromelessWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html), set its [WindowType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfChromelessWindow.html#Syncfusion_Windows_Controls_SfChromelessWindow_WindowType) to `Tabbed`, and add the required tab items.
 
 {% tabs %}
 
@@ -102,5 +97,7 @@ public partial class MainWindow : SfChromelessWindow
 {% endhighlight %}
 
 {% endtabs %}
+
+N> `partial` requires a companion XAML file with `<syncfusion:SfChromelessWindow ...>` as the root element. If you do not want to use code-behind XAML, remove `partial` and `InitializeComponent()` and instantiate the control fully in C# (an `App.xaml` `StartupUri` is not required in that case).
 
 ![WPF Tabbed Window](getting-started_images/tabbedwindow_csharp.png)

@@ -9,23 +9,26 @@ documentation: ug
 
 # About Syncfusion® WPF Integer TextBoxControl
 
-The [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) control restricts text box input to only integer values with support for data binding, Watermark, Null Value, and culture support. It provides many customization options to improve its appearance and to suit your applications.
+The [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) control restricts text box input to integer values (up to `Int64`) with support for data binding, Watermark, Null Value, and culture. It provides many customization options to improve its appearance and to suit your application.
 
 ## Control structure
 
-![WPF IntegerTextBox](getting-started_images/wpf-integer-textbox.png)
+![WPF IntegerTextBox](Getting-Started_images/wpf-integer-textbox.png)
 
-![WPF IntegerTextBox with Watermark Text](getting-started_images/wpf-integer-textbox-watermark-text.png)
+![WPF IntegerTextBox with Watermark Text](Getting-Started_images/wpf-integer-textbox-watermark-text.png)
 
 ## Features
 
 The core features of the `IntegerTextBox` are as follows:
 
-* Supports upto Int64 data type.
-* Provides the ability to control the range of input values by using the `MinValue` and `MaxValue` properties.
+* Supports up to `Int64` data type (the `Value` property is of type `long`).
+* Provides the ability to control the range of input values by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MaxValue) properties.
 * Provides different foreground brushes for positive and negative numbers.
 * Provides data binding support.
 * Provides built-in Visual Styles and themes.
 * Provides Watermark support.
 * Provides Number Format support. 
+* Provides Null Value support.
 * Provides culture support.
+* Provides Range Adorner support.
+* Provides Step Interval support.

@@ -9,115 +9,123 @@ documentation: ug
 
 # Full Screen in WPF DocumentContainer
 
-TDIFullScreenMode is the property used to define the full-screen mode for TDI items. When a value is set for this property, the parent window will be displayed as a full screen and the tab item header will be visible only when the cursor passes over the top of the window. This property is an enum type with the following values:
+## TDIFullScreenMode
 
-* ControlMode—Makes the tab header visible on mouseover.
-* WindowMode—Performs the full-screen operation and makes the tab header visible on mouseover.
-* None—Does not do anything; it is the default value.
+`TDIFullScreenMode` is the property used to define the full-screen mode for TDI items. When a value is set for this property, the parent window is displayed in full-screen mode and the tab item header is visible only when the cursor passes over the top of the window. This property is an enum (`Syncfusion.Windows.Tools.Controls.FullScreenMode`) with the following values:
 
-
+* `ControlMode` — Makes the tab header visible on mouseover.
+* `WindowMode` — Performs the full-screen operation and makes the tab header visible on mouseover.
+* `None` — Default value; full-screen mode is disabled.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" TDIFullScreenMode="WindowMode" />
 {% endhighlight %}
 
 {% highlight C# %}
-documentcontainer1. TDIFullScreenMode=FullScreenMode.WindowMode;
+using Syncfusion.Windows.Tools.Controls;
+
+documentcontainer1.TDIFullScreenMode = FullScreenMode.WindowMode;
 {% endhighlight %}
 {% endtabs %}
 
-
-N> This feature also applicable for the TabControlExt.
+N> This feature is also applicable for `TabControlExt`, where the equivalent property is `FullScreenMode` of type `Syncfusion.Windows.Tools.Controls.FullScreenMode`.
 
 {% tabs %}
-
-{% highlight xaml %}
+{% highlight XAML %}
 <syncfusion:TabControlExt Name="tabcontrol1" FullScreenMode="WindowMode"/>
 {% endhighlight %}
 
-{% highlight C# %} 
-tabcontrol1. FullScreenMode= FullScreenMode.WindowMode;
- {% endhighlight %}
+{% highlight C# %}
+tabcontrol1.FullScreenMode = FullScreenMode.WindowMode;
+{% endhighlight %}
 {% endtabs %}
 
+## Adding a Toolbar to the Header Panel of TDI Items
 
-## Toolbar in DocumentContainer
-
-A toolbar can be placed with headers in the header panel of TDI items in DocumentContainer; for this, the TDIToolBarTray property is used. 
-
-
+A toolbar can be placed in the header panel of TDI items in the DocumentContainer; for this, the `TDIToolBarTray` attached property is used.
 
 ![Full-Screen-in-DocumentContainer_img1](Full-Screen-in-DocumentContainer_images/Full-Screen-in-DocumentContainer_img1.jpeg)
 
-
-
-
-
 {% tabs %}
-{% highlight xaml %}     
-   <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" >           
-   <syncfusion:DocumentContainer.TDIToolBarTray>         
-   <ToolBarTray>                    <ToolBar>            
-   <Button Content="Tool" />                    </ToolBar>      
-   </ToolBarTray>            </syncfusion:DocumentContainer.TDIToolBarTray>   
-   <Grid syncfusion:DocumentContainer.Header="tab1" />           
-   <Grid syncfusion:DocumentContainer.Header="tab2"/>       
-   </syncfusion:DocumentContainer>
-   {% endhighlight %}
+{% highlight XAML %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        x:Class="DocumentContainerSample.MainWindow"
+        Title="DocumentContainer Sample" Height="350" Width="525">
+    <Grid>
+        <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI">
+            <syncfusion:DocumentContainer.TDIToolBarTray>
+                <ToolBarTray>
+                    <ToolBar>
+                        <Button Content="Tool" />
+                    </ToolBar>
+                </ToolBarTray>
+            </syncfusion:DocumentContainer.TDIToolBarTray>
+            <Grid syncfusion:DocumentContainer.Header="tab1" />
+            <Grid syncfusion:DocumentContainer.Header="tab2" />
+        </syncfusion:DocumentContainer>
+    </Grid>
+</Window>
+{% endhighlight %}
 
 {% highlight C# %}
- ToolBarTray tooltray = new ToolBarTray();
- ToolBar toolbar = new ToolBar(); 
- toolbar.Items.Add(new Button{Content="Tool"});
- tooltray.ToolBars.Add(toolbar);
- documentcontainer1.TDIToolBarTray = tooltray;
- {% endhighlight %}
+using System.Windows.Controls;
+
+ToolBarTray tooltray = new ToolBarTray();
+ToolBar toolbar = new ToolBar();
+toolbar.Items.Add(new Button { Content = "Tool" });
+tooltray.ToolBars.Add(toolbar);
+documentcontainer1.TDIToolBarTray = tooltray;
+{% endhighlight %}
 {% endtabs %}
 
-
-This feature is also applicable to TabControlExt, as demonstrated in the following code.
-
+This feature is also applicable to `TabControlExt`, as demonstrated in the following code.
 
 {% tabs %}
-{% highlight xaml %}     
-   <syncfusion:TabControlExt Name="tabcontrol">           
-   <syncfusion:TabControlExt.ToolBarTray>             
-   <ToolBarTray>                
-   <ToolBar>                     
-   <Button Content="Tool" />  
-   </ToolBar>                
-   </ToolBarTray>         
-   </syncfusion:TabControlExt.ToolBarTray>     
-   </syncfusion:TabControlExt>
-   {% endhighlight %}
+{% highlight XAML %}
+<syncfusion:TabControlExt Name="tabcontrol">
+    <syncfusion:TabControlExt.ToolBarTray>
+        <ToolBarTray>
+            <ToolBar>
+                <Button Content="Tool" />
+            </ToolBar>
+        </ToolBarTray>
+    </syncfusion:TabControlExt.ToolBarTray>
+</syncfusion:TabControlExt>
+{% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 ToolBarTray tooltray = new ToolBarTray();
-ToolBar toolbar = new ToolBar(); 
-toolbar.Items.Add(new Button{Content="Tool"}); 
+ToolBar toolbar = new ToolBar();
+toolbar.Items.Add(new Button { Content = "Tool" });
 tooltray.ToolBars.Add(toolbar);
 tabcontrol.ToolBarTray = tooltray;
 {% endhighlight %}
 {% endtabs %}
 
-## SizeToContent for MDI Window in DocumentContainer
+## SizeToContent for an MDI Window
 
-SizetoContentInMDI is used to resize an MDI window to its child size. This is an attached property and can be applied to individual children inside DocumentContainer.
-
-
+`SizeToContentInMDI` is used to resize an MDI window to its child size. This is an attached property and can be applied to individual children inside the DocumentContainer. The `Mode` of the `DocumentContainer` must be `MDI` for this attached property to have an effect.
 
 {% tabs %}
-{% highlight xaml %}        
-<syncfusion:DocumentContainer Mode="MDI">   
-         <Grid Name="grid1" syncfusion:DocumentContainer.SizetoContentInMDI="True" Width="200"  Height="200" />  
-		 </syncfusion:DocumentContainer>
-		 {% endhighlight %}
+{% highlight XAML %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        x:Class="DocumentContainerSample.MainWindow"
+        Title="DocumentContainer Sample" Height="350" Width="525">
+    <Grid>
+        <syncfusion:DocumentContainer Mode="MDI">
+            <Grid x:Name="grid1" syncfusion:DocumentContainer.SizeToContentInMDI="True" Width="200" Height="200" />
+        </syncfusion:DocumentContainer>
+    </Grid>
+</Window>
+{% endhighlight %}
 
-{% highlight C# %} 
-DocumentContainer.SetSizetoContentInMDI(grid1,true);
+{% highlight C# %}
+DocumentContainer.SetSizeToContentInMDI(grid1, true);
 {% endhighlight %}
 {% endtabs %}
-
-
 
