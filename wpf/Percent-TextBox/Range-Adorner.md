@@ -9,7 +9,7 @@ documentation: ug
 
 # Range Adorner in WPF PercentTextBox
 
-[Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html) of [PercentTextBox](https://www.syncfusion.com/wpf-controls/percent-textbox) can be visually indicated like a progress bar using range-adorner feature, this feature is disabled by default. You can show the adorner over `PercentTextBox` control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableRangeAdorner) property to `true`. default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value. Range Adorner is not displayed when a `MinValue` or `MaxValue` property is not set.
+The [PercentTextBox](https://www.syncfusion.com/wpf-controls/percent-textbox) control provides a range-adorner feature that visually indicates the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValue) like a progress bar. This feature is disabled by default. You can show the adorner over the `PercentTextBox` control by setting the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableRangeAdorner) property to `true`. The default value of `EnableRangeAdorner` is `false`. The adorner fills the control area based on the minimum and maximum values, considering the current value. The Range Adorner is not displayed when the `MinValue` or `MaxValue` property is not set.
 
 {% tabs %}
 {% highlight XAML %}

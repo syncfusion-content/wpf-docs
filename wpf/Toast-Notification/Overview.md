@@ -17,9 +17,10 @@ Since it is a non-UI control, it is typically created and configured programmati
 
 ## Key Features
 
-* **Multiple Display Modes** – Supports Default, Screen, and Window modes to display notifications based on different application contexts.  
-* **Severity Levels and Variants** – Supports multiple notification types (such as success, warning, or error) with built-in styling, along with Text, Filled, and Outlined variants.  
-* **Flexible Placement** – Allows notifications to be displayed at various positions within the application window or on the screen.  
-* **Animation Support** – Provides built-in animations for showing and hiding toast notifications.  
-* **Action Buttons** – Enables interactive action buttons with optional callback handling
+* **Multiple Display Modes** – Supports `Default`, `Screen`, and `Window` modes to display notifications based on different application contexts.
+* **Severity Levels and Variants** – Supports multiple notification types (such as success, warning, or error) with built-in styling, along with `Text`, `Filled`, and `Outlined` variants.
+* **Flexible Placement** – Allows notifications to be displayed at various positions within the application window or on the screen.
+* **Animation Support** – Provides built-in animations for showing and hiding toast notifications.
+* **Action Buttons** – Enables interactive action buttons with optional callback handling.
 * **Template Customization** – Allows customization of action buttons using templates for flexible UI presentation.
+* **Sound Support** – Supports predefined sounds for in-app toasts and system sounds for native toasts, as well as custom audio files.

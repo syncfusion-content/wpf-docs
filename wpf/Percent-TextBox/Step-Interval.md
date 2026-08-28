@@ -39,7 +39,7 @@ percentTextBox.ScrollInterval = 2;
 
 ## Change Value on Mouse Wheel
 
-The `PercentTextBox` allows you to increase or decrease the `PercentValue` based on the `ScrollInterval` by the Mouse scrolling over the control When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Editorbase.html#Syncfusion_Windows_Shared_EditorBase_IsScrollingOnCircle) property is `true`. The default value of `IsScrollingOnCircle` property is `true`.
+The `PercentTextBox` allows you to increase or decrease the `PercentValue` based on the `ScrollInterval` by scrolling the mouse wheel over the control when the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_IsScrollingOnCircle) property is `true`. The default value of the `IsScrollingOnCircle` property is `true`. If `ScrollInterval` is set to `0` or a negative value, the value will not change.
 
 {% tabs %}
 {% highlight XAML %}
@@ -64,7 +64,7 @@ percentTextBox.ScrollInterval = 3;
 
 ## Change Value on Click and Drag
 
-The `PercentTextBox` allows you to increase or decrease the percent value based on the `ScrollInterval` by clicking and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableExtendedScrolling) property is `true`. `PercentTextBox` percent value increases when the cursor moves to the right or the top of the screen and decreases when you click and drag the mouse to the left or the bottom of the screen. Before that, the control should be in an unfocused state.
+The `PercentTextBox` allows you to increase or decrease the percent value based on the `ScrollInterval` by clicking and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableExtendedScrolling) property is `true`. The `PercentTextBox` percent value increases when the cursor moves to the right or top of the screen and decreases when you click and drag the mouse to the left or bottom of the screen. Before that, the control must be unfocused (must not have keyboard focus).
 
 {% tabs %}
 {% highlight XAML %}
@@ -89,7 +89,7 @@ percentTextBox.EnableExtendedScrolling = true;
 
 ## Allow or restrict selection on focus
 
-`PercentTextBox` allows you to automatically select text by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_TextSelectionOnFocus) property to `true` and when the control got focus.  If you want to restrict the selection on when control got focus, use the `TextSelectionOnFocus` property value as `false`. The default value of the `TextSelectionOnFocus` property is `true`.
+`PercentTextBox` allows you to automatically select text when the control gets focus by setting the [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_TextSelectionOnFocus) property to `true`. If you want to restrict the selection when the control gets focus, set the `TextSelectionOnFocus` property value to `false`. The default value of the `TextSelectionOnFocus` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -105,10 +105,10 @@ percentTextBox.TextSelectionOnFocus = true;
 {% endhighlight %}
 {% endtabs %}
 
-**TextSelectionOnFocus = "False"**
+**TextSelectionOnFocus = False**
 
 ![Restrict Text Selection in WPF PercentTextBox](Step-Interval_images/wpf-percent-textbox-restrict-selection.png)
 
-**TextSelectionOnFocus = "True"**
+**TextSelectionOnFocus = True**
 
 ![WPF PercentTextBox displays Text Selection](Step-Interval_images/wpf-percent-textbox-text-selection.png)

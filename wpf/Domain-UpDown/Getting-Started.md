@@ -13,13 +13,13 @@ This section provides you an overview of working with [SfDomainUpDown](https://h
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfdomainupdown) section to get the list of assemblies or NuGet package needs to be added as a reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfdomainupdown) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the control in any application.
 
 Further information on installing the NuGet package can be found in the following link. [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages). You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the SfDomainUpDown's dependent assemblies.
 
 ## Creating Application with SfDomainUpDown control
 
-In this walk through, you will create a WPF application that contains the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control.
+In this walkthrough, you will create a WPF application that contains the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control.
 
 ## Creating project
 
@@ -54,8 +54,7 @@ To add the control manually in XAML page, follow the given steps:
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GettingStartedComboBox"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="GettingStartedComboBox.MainWindow"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="GettingStartedDomainUpDown.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -89,7 +88,8 @@ To add the control manually in C#, follow the given steps:
 
 using System.Windows;
 using Syncfusion.Windows.Controls.Input;
-namespace ComboBox
+
+namespace GettingStartedDomainUpDown
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -116,7 +116,7 @@ namespace ComboBox
 ![SfDomainUpDown control implemented](Getting-Started_images/Spin-Button_img6.png)
 
 
-## Populating by DataBinding
+## Populating with Data Binding
 
 You can populate the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control using the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
 
@@ -208,7 +208,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GettingStar
 
 ## Spin button alignment
 
-You can customize the position of the spin button in the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control using the [SpinButtonsAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_SpinButtonsAlignment) property.
+You can customize the position of the spin button in the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control using the [SpinButtonsAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_SpinButtonsAlignment) property. The `SpinButtonsAlignment` enum is defined in the `Syncfusion.Windows.Controls` namespace. For more details and additional examples, see [Spin Button Alignment](Spin-Button-Alignment.md).
 
 {% tabs %}
 {% highlight XAML %}
@@ -218,22 +218,25 @@ You can customize the position of the spin button in the [SfDomainUpDown](https:
 {% endhighlight %}
 {% highlight C# %}
 
+using Syncfusion.Windows.Controls;
+
 SfDomainUpDown domainUpDown1 = new SfDomainUpDown();
 domainUpDown1.Height = 30;
 domainUpDown1.Width = 150;
-domainUpDown1.SpinButtonsAlignment = Syncfusion.Windows.Controls.SpinButtonsAlignment.Right;
+domainUpDown1.SpinButtonsAlignment = SpinButtonsAlignment.Right;
+domainUpDown1.Value = "James";
 
 {% endhighlight %}
 {% endtabs %}
 
-1.Right
+1. Right
 
 ![SpinButton aligned right](Getting-Started_images/Spin-Button-Alignment_img1.png)
 
-2.Left
+2. Left
 
 ![SpinButton aligned left](Getting-Started_images/Spin-Button-Alignment_img3.png)
 
-3.Both
+3. Both
 
 ![SpinButton aligned both](Getting-Started_images/Spin-Button-Alignment_img5.png)
