@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to position FloatWindow in WPF DockingManager
+# How to position FloatWindow in WPF Docking Control
 
 FloatWindowRect is used to specify the Rect bounds for the float child that is displayed in FloatWindow.
 

@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to use the FullScreen mode in WPF DockingManager
+# How to use the FullScreen mode in WPF Docking Control
 
 The FullScreen Mode is used to display the control in full screen. This will be effective while you use TDI Modes. The TabPanel will be hidden and visible on mouse roll-over. For this, you have TDIFullScreenMode property. This property is of type FullScreen mode which has following values.
 

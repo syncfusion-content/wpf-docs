@@ -7,11 +7,11 @@ control: DockingManager
 documentation: ug
 ---
 
-# Advanced Features in WPF DockingManager Control
+# Advanced Features in WPF Docking Control
 
 ## Setting Visual Styles for Document Container
 
-Visual styles are available for the dockable windows, which give the windows a rich and professional look and feel. The visual style for the DockingManager is set using the VisualStyle property. The following are some of the visual styles that can be applied to the Docking Manager.
+Visual styles are available for the dockable windows, which give the windows a rich and professional look and feel. The visual style for the WPF Docking Control is set using the VisualStyle property. The following are some of the visual styles that can be applied to the WPF Docking Control.
 
 > NOTE: `SkinStorage.SetVisualStyle` is a legacy API. For new development, use [SfSkinManager.SetTheme](https://help.syncfusion.com/wpf/themes/skin-manager#set-theme), which requires the additional assemblies `Syncfusion.SfSkinManager.WPF` and a theme assembly (e.g. `Syncfusion.Themes.FluentLight.WPF`).
 
@@ -25,7 +25,7 @@ Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Sets the visual style for the DockingManager. The options provided are as follows.
+Sets the visual style for the WPF Docking Control. The options provided are as follows.
 <ul>
 <li>BlendOffice2003 </li>
 <li>Office2007Blue</li>
@@ -41,7 +41,7 @@ Sets the visual style for the DockingManager. The options provided are as follow
 </table>
 
 
-The following is the code snippet to apply visual styles to the DockingManager.
+The following is the code snippet to apply visual styles to the WPF Docking Control.
 
 
 {% highlight c# %}
@@ -62,68 +62,68 @@ SkinStorage.SetVisualStyle(this.DockingManager, Office2007Silver);
 
 ![Advanced-Features_images1](Advanced-Features_images/Advanced-Features_img1.png)
 
-DockingManager with "Office2007Blue" Visual Style
+WPF Docking Control with "Office2007Blue" Visual Style
 {:.caption}
 
 
 ![Advanced-Features_images2](Advanced-Features_images/Advanced-Features_img2.png)
 
-DockingManager with "Office2007Black" Visual Style
+WPF Docking Control with "Office2007Black" Visual Style
 {:.caption}
 
 
 ![Advanced-Features_images3](Advanced-Features_images/Advanced-Features_img3.png)
 
-DockingManager with "Office2007Silver" Visual Style
+WPF Docking Control with "Office2007Silver" Visual Style
 {:.caption}
 
 ![Advanced-Features_images4](Advanced-Features_images/Advanced-Features_img4.png)
 
-DockingManager with "Office2010Blue" Visual Style
+WPF Docking Control with "Office2010Blue" Visual Style
 {:.caption}
 
 ![Advanced-Features_images5](Advanced-Features_images/Advanced-Features_img5.png)
 
-DockingManager with "Office2010Black" Visual Style
+WPF Docking Control with "Office2010Black" Visual Style
 {:.caption}
 
 
 ![Advanced-Features_images6](Advanced-Features_images/Advanced-Features_img6.png)
 
-DockingManager with "Office2010Silver" Visual Style
+WPF Docking Control with "Office2010Silver" Visual Style
 {:.caption}
 
 
 ![Advanced-Features_images7](Advanced-Features_images/Advanced-Features_img7.png)
 
-DockingManager with "Blend” Visual Style
+WPF Docking Control with "Blend” Visual Style
 {:.caption}
 
 
 ![Advanced-Features_images8](Advanced-Features_images/Advanced-Features_img8.png)
 
-DockingManager with “VS2010” Visual Style
+WPF Docking Control with “VS2010” Visual Style
 {:.caption}
 
 
 ![Advanced-Features_images9](Advanced-Features_images/Advanced-Features_img9.png)
 
-DockingManager with “Metro” Visual Style
+WPF Docking Control with “Metro” Visual Style
 {:.caption}
 
 
 ![Advanced-Features_images10](Advanced-Features_images/Advanced-Features_img10.png)
 
-DockingManager with “Transparent” Visual Style
+WPF Docking Control with “Transparent” Visual Style
 {:.caption}
 
 ## Hosting a Client Control
 
-Our DockingManager control is completely integrated with MDI / TDI children elements. There are some situations wherein you need to disintegrate the MDI / TDI children from the DockingManager control. In such a case, you need to make use of the UseDocumentContainer property. This property gets or sets the Boolean value indicating whether to use the Document Container or not within the DockingManager. 
+Our WPF Docking Control is completely integrated with MDI / TDI children elements. There are some situations wherein you need to disintegrate the MDI / TDI children from the WPF Docking Control. In such a case, you need to make use of the UseDocumentContainer property. This property gets or sets the Boolean value indicating whether to use the Document Container or not within the WPF Docking Control. 
 
-When this property is set to False, the MDI / TDI children will be disintegrated from the DockingManager control.
+When this property is set to False, the MDI / TDI children will be disintegrated from the WPF Docking Control.
 
-To create the document window in DockingManager, you need to set the state of the Docking Manager children element to document.State. This will create the TDI / MDI elements of the children.
+To create the document window, you need to set the state of the WPF Docking Control children element to document.State. This will create the TDI / MDI elements of the children.
 
 By default, this property is set to true. Once the MDI / TDI children are not required, you need to set the UseDocumentContainer property to False.
 
@@ -165,9 +165,9 @@ UseDocumentContainer = "False"
 {:.caption}
 
 
-In the above image, the Document Container is removed from the DockingManager control. When you remove the TDI / MDI children from the DockingManager, there will not be any client area for the other control. Now, to set the client area, you need to use a UI element called Client Control. You need to implement all your required client area data inside the Client Control. This will display in the client area of the DockingManager.
+In the above image, the Document Container is removed from the WPF Docking Control. When the TDI or MDI child elements are removed, no client area is available for displaying other content. To define a client area, use a UI element called `Client Control` and place the required content within it. The content is then displayed in the client area of the WPF Docking control.
 
-The below code snippet creates a client control for the DockingManager.
+The below code snippet creates a client control for the WPF Docking Control.
 
 {% highlight xaml %}
 
@@ -204,12 +204,12 @@ The below code snippet creates a client control for the DockingManager.
 
 ![Advanced-Features_images12](Advanced-Features_images/Advanced-Features_img12.jpeg)
 
-Client Control Created for the Docking Manager
+Client Control Created for the WPF Docking Control
 {:.caption}
 
 ### Triggering Actions while closing the TDI / MDI items
 
-In the DockingManager with MDI / TDI children, there will be every necessity to trigger some actions when you close the tabs. The following events are certainly very handy when you close the tabs.
+In the WPF Docking Control with MDI / TDI children, there will be every necessity to trigger some actions when you close the tabs. The following events are certainly very handy when you close the tabs.
 
 * CloseButtonClick – This event is handled when you click the close button on the element in the Document state.
 
@@ -365,9 +365,9 @@ this.dockingManager.DockFillDocumentMode =DockFillDocumentMode.Normal;
 DockFillDocumentMode = “Normal” (when DockFill is set to True)
 {:.caption}
 
-## DataBinding Support in DockingManager
+## DataBinding Support in WPF Docking Control
 
-You can bind the custom object to the DataContext property of the DockingManager control, and their corresponding elements to the children of the DockingManager control. When a DataContext is set to a window or to a DockingManager, it gets inherited to all its logical children. The OnInitialized method is used to get the DataContext. As you use DataContext in the template with DataTriggers, you should set that property to active host tab or null.
+You can bind a custom object to the DataContext property of the WPF Docking Control and bind the corresponding elements to its child elements. When a DataContext is assigned to a window or the control, it is inherited by all logical child elements. The OnInitialized method is used to retrieve the DataContext. When using DataContext with DataTrigger objects in a template, set the property to the active host tab or null.
 
 {% highlight xaml %}
 
@@ -510,9 +510,9 @@ public class Person
 DataBinding Demo
 {:.caption}                                           
 
-## State Persistence in DockingManager
+## State Persistence in WPF Docking Control
 
-The DockingManager enables you to save the dock states of its elements and load it whenever required. It provides different methods to save the states of the elements. The following are the types of storing states for docking elements:
+The WPF Docking Control enables you to save the dock states of its elements and load it whenever required. It provides different methods to save the states of the elements. The following are the types of storing states for docking elements:
 
 * XML with Binary Format 
 * XML with SOAP Format 
@@ -524,7 +524,7 @@ The DockingManager enables you to save the dock states of its elements and load 
 ### XML with Binary Format
 
 
-The DockingManager enables you to save or load the states of the elements on an XML file in binary format. To save the state in XML using binary format, use the following code.
+The WPF Docking Control enables you to save or load the states of the elements on an XML file in binary format. To save the state in XML using binary format, use the following code.
 
 
 {% highlight c# %}
@@ -564,7 +564,7 @@ DocManager1.LoadDockState(formatter1, StorageFormat.Xml, @"c:\docking_xml_soap.x
 
 ### Binary with Binary format
 
-DockingManager also supports saving and loading the states of its elements in a binary file with binary format. To save or load using binary file with binary format, use the following code.
+WPF Docking Control also supports saving and loading the states of its elements in a binary file with binary format. To save or load using binary file with binary format, use the following code.
 
 {% highlight c# %}
 
@@ -603,7 +603,7 @@ DocManager1.LoadDockState(formatter1, StorageFormat.Xml, @"c:\docking_bin.bin");
 
 ### Registry
 
-You can save or load the States of the DockingManager elements from the registry. To save or load the states to or from the system registry respectively, use the following code.
+You can save or load the States of the WPF Docking Control elements from the registry. To save or load the states to or from the system registry respectively, use the following code.
 
 
 {% highlight c# %}
@@ -642,9 +642,9 @@ Refer Also
 
 How to Clearing StatePersistence Entries
 
-## Hosting Windows Form control in DockingManager
+## Hosting Windows Form control in WPF Docking Control
 
-Hosting a Windows Form Host in DockingManager is an easy process for which you need to set UseInteropCompatibilityMode=true in order to use WinForm controls with in DockingManager. The following codes show how to use web browser control with in DockingManager.
+Hosting a Windows Forms control in the WPF Docking Control is straightforward. To use Windows Forms controls within the control, set UseInteropCompatibilityMode to true. The following code example demonstrates how to host a WebBrowser control. 
 
 {% tabs %}
 
@@ -672,18 +672,18 @@ web1.Navigate(new Uri("http://syncfusion.com"));
 
 ![Advanced-Features_images15](Advanced-Features_images/Advanced-Features_img15.jpeg)
 
-WebBrowser as child of DockingManager
+WebBrowser as child of WPF Docking Control
 {:.caption}
 
 
 ## Linked Manager Support
 
-Linked Manager Support is an important feature that helps to drag and drop windows from one docking manager to any other docking manager.
+Linked Manager Support is an important feature that helps to drag and drop windows from one WPF Docking Control to any other WPF Docking Control.
 
 Use Case Scenario
 
-* This Drag and Drop support will enhance the Linked Manager functionality between Docking Managers.
-* It permits the user to have better usability of any windows residing in any Docking Manager.
+* This Drag and Drop support will enhance the Linked Manager functionality between WPF Docking Controls.
+* It permits the user to have better usability of any windows residing in any WPF Docking Control.
 
 ![Advanced-Features_images16](Advanced-Features_images/Advanced-Features_img16.png)
 
@@ -722,7 +722,7 @@ Reference links </th></tr>
 <tr>
 <td>
 AddToTargetManagersList </td><td>
- Adds the DockingManager to the Target Providers List, belonging to the current manager. The parameter is, docking - DockingManager to be added to the target list.</td><td>
+ Adds the WPF Docking Control to the Target Providers List, belonging to the current manager. The parameter is, docking - WPF Docking Control to be added to the target list.</td><td>
  (DockingManager docking)</td><td>
 NA</td><td>
 void </td><td>
@@ -730,7 +730,7 @@ http://help.syncfusion.com/windowsforms/tools</td></tr>
 <tr>
 <td>
 RemoveFromTargetManagersList</td><td>
-Removes the DockingManager from the Target Providers List, belonging to the current manager. The parameter is,{{'_docking_'| markdownify }} - docking manager to be removed from the target list.</td><td>
+Removes the WPF Docking Control from the Target Providers List, belonging to the current manager. The parameter is,{{'_docking_'| markdownify }} - WPF Docking Control to be removed from the target list.</td><td>
 (DockingManager docking)</td><td>
 NA</td><td>
 void </td><td>
@@ -750,14 +750,14 @@ Reference links </th></tr>
 <tr>
 <td>
 TransferredToManager </td><td>
-The TransferredToManager event occurs after a dockable control that previously belonged to some other Docking Manager has been transferred to the docking layout hosted by the current Docking Manager.</td><td>
+The TransferredToManager event occurs after a dockable control that previously belonged to some other WPF Docking Control has been transferred to the docking layout hosted by the current WPF Docking Control.</td><td>
 DockingManager PreviousManager, FrameworkElement TargetElement, DockingManager TargetManager</td><td>
 TransferManagerEventArgs</td><td>
 http://help.syncfusion.com/windowsforms/tools</td></tr>
 <tr>
 <td>
 TransferringFromManager </td><td>
-The TransferringFromManager event occurs when a dockable control hosted by a Docking Manager is about to be transferred to the docking layout hosted by some other Docking Manager.</td><td>
+The TransferringFromManager event occurs when a dockable control hosted by a WPF Docking Control is about to be transferred to the docking layout hosted by some other WPF Docking Control.</td><td>
 DockingManager PreviousManager, FrameworkElement TargetElement, DockingManager TargetManager</td><td>
 TransferManagerEventArgs</td><td>
 http://help.syncfusion.com/windowsforms/tools</td></tr>
@@ -765,9 +765,9 @@ http://help.syncfusion.com/windowsforms/tools</td></tr>
 
 ### Features of Linked Manager Support
 
-### Adding DockingManager to TargetManagers List
+### Adding WPF Docking Control to TargetManagers List
 
-To add DockingManager to TargetManagers List
+To add WPF Docking Control to TargetManagers List
 
 {% tabs %}
 
@@ -794,9 +794,9 @@ Me.dockingManager1.AddToTargetManagersList(dockingManager2)
 {% endtabs %} 
 
 
-### Removing DockingManager from TargetManagers List
+### Removing WPF Docking Control from TargetManagers List
 
-To remove DockingManager from TargetManagers List
+To remove WPF Docking Control from TargetManagers List
 
 {% tabs %}
 
@@ -866,13 +866,13 @@ Data Type </th></tr>
 <tr>
 <td>
 MaximizeButtonEnabled</td><td>
-This property will be used to enable or disable the maximization support in Docking Manager.</td><td>
+This property will be used to enable or disable the maximization support in WPF Docking Control.</td><td>
 Dependency </td><td>
 bool</td></tr>
 <tr>
 <td>
 MinimizeButtonEnabled</td><td>
-This property will be used to enable or disable the minimization support in Docking Manager.</td><td>
+This property will be used to enable or disable the minimization support in WPF Docking Control.</td><td>
 Dependency</td><td>
 bool</td></tr>
 <tr>
@@ -979,7 +979,7 @@ Data Type </th></tr>
 <tr>
 <td>
 MaximizeMode</td><td>
-Chooses the mode in which the docked window should be maximized.If the MaximizeMode is set to FullScreen, it will maximize the docked window respective to Docking Manager size.If the MaximizeMode is set to Default, it will maximize the docked window respective to its parent DockedElementsContainer size.</td><td>
+Chooses the mode in which the docked window should be maximized.If the MaximizeMode is set to FullScreen, it will maximize the docked window respective to WPF Docking Control size.If the MaximizeMode is set to Default, it will maximize the docked window respective to its parent DockedElementsContainer size.</td><td>
 Dependency </td><td>
 MaximizeMode</td></tr>
 </table>
@@ -991,7 +991,7 @@ SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<Version_
 
 ### Adding MaximizeMode to an Application 
 
-The user can decide whether the docked windows should be maximized to full screen or normal size as per default behavior using the MaximizeMode property. To make the docked window maximize respective to the Docking Manager size, set this property to MaximizeMode.FullScreen. To make the docked window maximize respective to its parent DockedElementsContainer size, set this property to MaximizeMode.Default. By default the value of the MaximizeMode property is set to MaximizeMode.Default.
+The user can decide whether the docked windows should be maximized to full screen or normal size as per default behavior using the MaximizeMode property. To make the docked window maximize respective to the WPF Docking Control size, set this property to MaximizeMode.FullScreen. To make the docked window maximize respective to its parent DockedElementsContainer size, set this property to MaximizeMode.Default. By default the value of the MaximizeMode property is set to MaximizeMode.Default.
 
 The following code snippet shows how to set values for the MaximizeMode property: 
 
@@ -1172,7 +1172,7 @@ dockingManager.EnableScrollableSidePanel = true;
 
 ### Customization of Scroll Buttons
 
-In the DockingManager control, the scrolling panel can be set in a side panel and its style can be customized using the ScrollButtonBarStyle property. You can use the ScrollButtonMode property to change the behavior of the scroll button. Setting the ScrollButtonMode property as Normal will enable the scrolling panel and show the scroll button only when scrolling. Setting this property as Extended will make the scroll button appears dimmed when the scroll bar reaches the beginning or ending point.
+In the WPF Docking Control, the scrolling panel can be set in a side panel and its style can be customized using the ScrollButtonBarStyle property. You can use the ScrollButtonMode property to change the behavior of the scroll button. Setting the ScrollButtonMode property as Normal will enable the scrolling panel and show the scroll button only when scrolling. Setting this property as Extended will make the scroll button appears dimmed when the scroll bar reaches the beginning or ending point.
 
 The following code example explains how to set the scroll button in normal mode.
 
@@ -1283,7 +1283,7 @@ this.dockingManager.ContainerSplitterResize=SplitterResizeMode.EdgeChildren;
 
 ## Support to add Absolute DockFillMode
 
-Support for adding absolute sizing for initial load of child elements residing inside the Docking Manager.
+Support for adding absolute sizing for initial load of child elements residing inside the WPF Docking Control.
 
 ### Use Case Scenarios
 
@@ -1309,7 +1309,7 @@ DockFillModes</td></tr>
 
 ### Adding DockFillMode to an Application 
 
-Users can decide whether child elements should load initially with an absolute size or a default proportional size using the DockFillMode property. To load the elements with an absolute size initially, set this attached property to DockFillModes.Absolute. To load the elements with default proportional sizing relative to the DockingManager size, set this attached property to DockFillModes.Default. By default the value of the DockFillMode property’s values is set to DockFillModes.Default.
+Users can decide whether child elements should load initially with an absolute size or a default proportional size using the DockFillMode property. To load the elements with an absolute size initially, set this attached property to DockFillModes.Absolute. To load the elements with default proportional sizing relative to the WPF Docking Control size, set this attached property to DockFillModes.Default. By default the value of the DockFillMode property’s values is set to DockFillModes.Default.
 
 The following code snippet shows how to set values for the DockFillMode property: 
 

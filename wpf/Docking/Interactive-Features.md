@@ -7,9 +7,9 @@ control: DockingManager
 documentation: ug
 ---
 
-# Interactive Features in WPF DockingManager Control
+# Interactive Features in WPF Docking Control
 
-A basic requirement in creating any WPF application that uses our DockingManager control, is the ability to set a window as an active window. DockingManager's [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) property can be used for this. [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) is an element, which returns a window object that is currently focused. To set a window as active, use the following code. 
+A basic requirement in creating any WPF application that uses our WPF Docking Control, is the ability to set a window as an active window. WPF Docking Control's [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) property can be used for this. [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) is an element, which returns a window object that is currently focused. To set a window as active, use the following code.
 
 {% tabs %}
 
@@ -68,11 +68,11 @@ This method is called when an active window is changed. </td></tr>
 </table>
 
 
-### Retrieving an Active Window from DockingManager
+### Retrieving an Active Window from WPF Docking Control
 
-Sometimes, you need to identify an active window to perform some operations at run time. For this, create an object for the FrameWorkElement and set the DockingManager active window to it. Now the FrameWorkElement object returns the active window.
+Sometimes, you need to identify an active window to perform some operations at run time. For this, create an object for the FrameWorkElement and set the WPF Docking Control active window to it. Now the FrameWorkElement object returns the active window.
 
-The following code snippet explains how to retrieve the Active window from the Docking Manager control.
+The following code snippet explains how to retrieve the Active window from the WPF Docking Control.
 
 
 {% highlight c# %}
@@ -99,7 +99,7 @@ if (DockingManager1.ActiveWindow != null)
 
 Where, the 'ffelement' returns the active window.
 
-You can also iterate through all the child elements of the DockingManager control, and get the active window to perform the actions, if any. This behavior is demonstrated in the following example on a button click event.
+You can also iterate through all the child elements of the WPF Docking Control, and get the active window to perform the actions, if any. This behavior is demonstrated in the following example on a button click event.
 
 
 {% highlight c# %}
@@ -141,7 +141,7 @@ You can also iterate through all the child elements of the DockingManager contro
 
 ## Using ActiveWindow Property
 
-[ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) Property is used to Get/Set ActiveWindow for DockingManager
+[ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) Property is used to Get/Set ActiveWindow for WPF Docking Control
 
 {% highlight c# %}
 
@@ -197,7 +197,7 @@ Customized Float Window
 
 ### Border Thickness of Child Elements
 
-You can set the border thickness for the hosted children of the Docking Manager control. The following properties are used to set the thickness for the individual child elements in various dock states.
+You can set the border thickness for the hosted children of the WPF Docking Control. The following properties are used to set the thickness for the individual child elements in various dock states.
 
 * [ElementBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ElementBorderThickness) 
 * [FloatWindowBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowBorderThickness) 
@@ -212,7 +212,7 @@ You can set the border thickness for the hosted children of the Docking Manager 
 
 [ElementBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ElementBorderThickness) property is used to store border thickness value for host. The default value of this property is 1. It is a dependency property, which defines the border thickness of the element inside the window. 
 
-The below code snippet is used to set an element border thickness for the Docking Manager control.
+The below code snippet is used to set an element border thickness for the WPF Docking Control.
 
 {% tabs %}
 
@@ -287,7 +287,7 @@ FloatWindowBorderThickness = "20"
 
 ### SidePanelBorderThickness
 
-This dependency property defines the border thickness of the side panel, which is usually seen once you auto hide the children of the DockingManager control. The default value is 0.
+This dependency property defines the border thickness of the side panel, which is usually seen once you auto hide the children of the WPF Docking Control. The default value is 0.
 
 {% tabs %}
 
@@ -629,7 +629,7 @@ The following description gives you a clear knowledge about docking, float and c
 
 ###	Docking a Dockable Window
 
-DockingManager facilitates the users to allow or restrict a dockable window to move to the docked state. This is done by using the [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDock) property of the DockingManager. When this property is set to False, the dockable window will be restricted to enter the docked state; it can either be in floating or in auto hidden state. Also this setting will not allow the transition of states from Auto Hide to Float or vice versa, as the window needs to change the dock state as a part of the transition.
+WPF Docking Control facilitates the users to allow or restrict a dockable window to move to the docked state. This is done by using the [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDock) property of the WPF Docking Control. When this property is set to False, the dockable window will be restricted to enter the docked state; it can either be in floating or in auto hidden state. Also this setting will not allow the transition of states from Auto Hide to Float or vice versa, as the window needs to change the dock state as a part of the transition.
 
 For settings, [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDock) property, use the following code.
 
@@ -654,7 +654,7 @@ DockingManager.SetCanDock(Properties, true);
 
 The Floating state of a dockable window is controlled by using the CanFloat property. When the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloat) property is set to False, the window can take either docked or auto hidden states. It will not be allowed to float until the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloat) property is enabled.
 
-To enable the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloat) property of DockingManager, use the following code. 
+To enable the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloat) property of WPF Docking Control, use the following code. 
 
 {% tabs %}
 
@@ -685,7 +685,7 @@ CanFloat = "True"
 
 ### Closing a Dock Window
 
-The DockingManager gives the option for users to control the closing functionality of the dockable window. A window is restricted from closing by disabling the [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanClose) property of the DockingManager. When this property is set to False, it will not display the close button in the header of the window.
+The WPF Docking Control gives the option for users to control the closing functionality of the dockable window. A window is restricted from closing by disabling the [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanClose) property of the WPF Docking Control. When this property is set to False, it will not display the close button in the header of the window.
 
 To set this property, refer the following code.
 
@@ -818,7 +818,7 @@ The following events are handled while Auto hiding.
 
 ### Using AutoHide Animation Modes
 
-DockingManager supports three different built–in animations for auto-hiding the windows. They are listed below.
+WPF Docking Control supports three different built–in animations for auto-hiding the windows. They are listed below.
 
 * Slide: Elements auto hides in a sliding style.
 * Scale: Elements follows a particular scale while auto hiding.
@@ -826,7 +826,7 @@ DockingManager supports three different built–in animations for auto-hiding th
 
 
 
-The animation modes can be applied by using the [AutoHideAnimationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AutoHideAnimationMode) property of the Docking Manager. 
+The animation modes can be applied by using the [AutoHideAnimationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AutoHideAnimationMode) property of the WPF Docking Control. 
 
 To apply different animation styles to the docking windows, use the following code. This setting will get reflected when the user auto hides a window at run time.
 
@@ -854,7 +854,7 @@ this.DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Fade;
 
 ### Animation Duration
 
-DockingManager enables you to control the duration for animation or the animation delay, while auto hiding the docking windows. Animation delay is set by using the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_AnimationDelay) property of the DockingManager. It accepts the duration in milliseconds. 
+WPF Docking Control enables you to control the duration for animation or the animation delay, while auto hiding the docking windows. Animation delay is set by using the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_AnimationDelay) property of the WPF Docking Control. It accepts the duration in milliseconds. 
 
 The following code sets the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_AnimationDelay) property.
 
@@ -894,7 +894,7 @@ this.DockingManager.CloseTabs = CloseTabsMode.CloseActive;
 
 ### Enable/Disable Dragging a Window
 
-The DockingManager enables you to restrict an element to be dragged from one side to another. The dragging functionality is disabled for a window by setting the [CanDrag](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDrag) property to false.
+The WPF Docking Control enables you to restrict an element to be dragged from one side to another. The dragging functionality is disabled for a window by setting the [CanDrag](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDrag) property to false.
 
 The following code is used to enable the [CanDrag](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDrag) property.
 
@@ -938,7 +938,7 @@ This topic illustrates the following features:
 ### DockHost Alignment
 
 
-The [DockTabAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockTabAlignment) property is used as a tab strip placement for all TabbedHosts that are docked, inside the DockingManager instance. By default its value is set to Bottom.
+The [DockTabAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockTabAlignment) property is used as a tab strip placement for all TabbedHosts that are docked, inside the WPF Docking Control instance. By default its value is set to Bottom.
 
 You can set the [DockTabAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockTabAlignment) to Left, Right, Bottom or Top.
 
@@ -985,7 +985,7 @@ DockTabAlignment = "Right"
 
 ### DockHost Style
 
-This dependency property will get or set the style used by the TabbedHosts that are docked, when it is rendered. It provides [DockedElementTabbedHostStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockedElementTabbedHostStyle) value for the Docking Manager. 
+This dependency property will get or set the style used by the TabbedHosts that are docked, when it is rendered. It provides [DockedElementTabbedHostStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockedElementTabbedHostStyle) value for the WPF Docking Control. 
 
 The user can initialize the style of the docked element host by setting the [DockedElementTabbedHostStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockedElementTabbedHostStyle) property in XAML as follows.
 
@@ -1024,7 +1024,7 @@ The user can initialize the style of the docked element host by setting the [Doc
 
 ## Using Drag modes
 
-The DockingManager enables you to set different drag modes, when a docking window is being dragged. It supports the following three drag modes.
+The WPF Docking Control enables you to set different drag modes, when a docking window is being dragged. It supports the following three drag modes.
 
 * Normal DragMode
 * Border DragMode and
@@ -1036,7 +1036,7 @@ The [DraggingType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 * BorderDragging (Border DragMode) and
 * ShadowDragging (Shadow DragMode)
 
-The following code snippet is used to change the Drag mode of the DockingManager. 
+The following code snippet is used to change the Drag mode of the WPF Docking Control. 
 
 {% tabs %}
 
@@ -1100,7 +1100,7 @@ Shadow Drag Mode
 
 ### Default Context Menu
 
-A dockable window will be associated with a default context menu with default menu items. The DockingManager provides options to add custom context menu for the dockable window. You can set a context menu using the following code snippet. 
+A dockable window will be associated with a default context menu with default menu items. The WPF Docking Control provides options to add custom context menu for the dockable window. You can set a context menu using the following code snippet. 
 
 
 {% highlight xaml %}
@@ -1207,7 +1207,7 @@ void DockingManager_ContextMenuItemClick(object sender, RoutedEventArgs e)
 
 A dockable window is well associated with a default context menu with default menu items. You can also add custom menu items to the existing context menu items of the dockable window. [CustomMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CustomMenuItems) property is used for this purpose.
 
-[CustomMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CustomMenuItems) - This property is attached to a docking manager child, and gives an ability to add some additional menu items to the context menu. This can easily extend GUI functionality by using the Custom menu items.
+[CustomMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CustomMenuItems) - This property is attached to a WPF Docking Control child, and gives an ability to add some additional menu items to the context menu. This can easily extend GUI functionality by using the Custom menu items.
 
 To add the custom menu item:
 
@@ -1355,7 +1355,7 @@ DockingManager.IsContextMenuVisible= "false";
 
 
 
-The default value is set to True.  This property can also be applied to every child inside the DockingManager as shown below:
+The default value is set to True.  This property can also be applied to every child inside the WPF Docking Control as shown below:
 
 {% tabs %}
 
@@ -1413,7 +1413,7 @@ IsContextMenuButtonVisible=”False”
 {:.caption}
 
 
-This property can also be applied to every child inside the DockingManager as shown below.
+This property can also be applied to every child inside the WPF Docking Control as shown below.
 
 
 {% tabs %}
@@ -1449,7 +1449,7 @@ IsContextMenuButtonVisible=”True” for Individual Child
 
 Height and width of the docking window in the docked state is set by using properties like [DesiredWidthInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DesiredWidthInDockedMode) and [DesiredHeightInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DesiredHeightInDockedMode) respectively.
 
-To set the height and width for the DockingManager elements in the docked state, use the following code snippet.
+To set the height and width for the WPF Docking Control elements in the docked state, use the following code snippet.
 
 {% tabs %}
 
@@ -1476,7 +1476,7 @@ this.DockingManager.SetDesiredHeightInDockedMode(Properties, 400);
 {% endtabs %} 
 
 
-The Height and Width of the DockingManager elements in the floating state is set using the [DesiredWidthInFloatingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DesiredWidthInFloatingMode) and DesiredHeightInFloatingMode properties, respectively.
+The Height and Width of the WPF Docking Control elements in the floating state is set using the [DesiredWidthInFloatingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DesiredWidthInFloatingMode) and DesiredHeightInFloatingMode properties, respectively.
 
 Use the following code to set the above properties.
 
@@ -1509,7 +1509,7 @@ this.DockingManager.SetDesiredHeightInFloatingMode(Properties, 200);
 
 The docking elements can be highlighted when the mouse is hovered over a Docking window. This feature is enabled using the [IsEnableHotTracking](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsEnableHotTracking) property.
 
-To enable / disable hot tracking feature in DockingManager, use the following code.
+To enable / disable hot tracking feature in WPF Docking Control, use the following code.
 
 {% tabs %}
 
@@ -1578,7 +1578,7 @@ When user control is dragged out from Dock state the Float window generated will
 
 ### Customizing Document Tab Control and MDI Document
 
-The following three properties allow you to customize the styles of Tab control and MDI document. This feature is integrated with both DockingManager and Document Container. 
+The following three properties allow you to customize the styles of Tab control and MDI document. This feature is integrated with both WPF Docking Control and Document Container. 
 
 * [DocumentTabControlStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DocumentTabControlStyle) 
 * [DocumentTabItemStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DocumentTabItemStyle) 
@@ -1588,7 +1588,7 @@ The following three properties allow you to customize the styles of Tab control 
 
 ### DocumentTabControlStyle
 
-This property allows you to specify the your own customized style for the Tab control in both DockingManager and Document Container. The following code snippet will illustrate this.
+This property allows you to specify the your own customized style for the Tab control in both WPF Docking Control and Document Container. The following code snippet will illustrate this.
 
 {% highlight XAML %}
 
@@ -1619,7 +1619,7 @@ DocumentTabControlStyle in TDI mode
 
 ### DocumentTabItemStyle
 
-This property allows you to specify your customized style for tab items inside the Tab control in both DockingManager and Document Container. The following code snippet will illustrate this.
+This property allows you to specify your customized style for tab items inside the Tab control in both WPF Docking Control and Document Container. The following code snippet will illustrate this.
 
 {% highlight xaml %}
 
@@ -1646,7 +1646,7 @@ DocumentTabItemStyle in TDI mode
 
 ### DocumentMDIHeaderStyle
 
-This property is used to specify the customized style for the MDI window header, in both DockingManager and Document Container. The following code snippet will illustrate this.
+This property is used to specify the customized style for the MDI window header, in both WPF Docking Control and Document Container. The following code snippet will illustrate this.
 
 {% highlight xaml %}
 

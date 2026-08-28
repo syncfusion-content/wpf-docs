@@ -6,11 +6,11 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Patterns and Practices in WPF DockingManager Control
+# Patterns and Practices in WPF Docking Control
 
 ## MVVM 
 
-This section explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an Items Control, it is not possible to have a traditional [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) binding to a collection of objects in the view model. However this can be achieved by creating a wrapper or adapter for the DockingManager.
+This section explains how to adapt the Syncfusion WPF Docking Control to an MVVM application. Since the WPF Docking Control is not an Items Control, it is not possible to have a traditional [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) binding to a collection of objects in the view model. However this can be achieved by creating a wrapper or adapter for the WPF Docking Control.
 
 Here a simple text-reader application is used to demonstrate this approach.
 
@@ -27,7 +27,7 @@ Here a simple text-reader application is used to demonstrate this approach.
 
 
 ### Docking Adapter
-The adapter is simply a user control that contains DockingManager as its content. The adapter has two properties — ItemsSource and ActiveDocument. Binding a collection of objects to the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property triggers a collection change where the adapter creates a corresponding Framework element, example: ContentControl in the DockingManager, setting the underlying data context of the control to the business model.
+The adapter is simply a user control that contains WPF Docking Control as its content. The adapter has two properties — ItemsSource and ActiveDocument. Binding a collection of objects to the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property triggers a collection change where the adapter creates a corresponding Framework element, example: ContentControl in the WPF Docking Control, setting the underlying data context of the control to the business model.
 
 {% tabs %}
 
@@ -48,22 +48,22 @@ The text-reader application maintains a collection of workspaces. A workspace ca
 
 The text-reader application is just for the sample and contains very basic operations.
 
-This article and sample intend to showcase the MVVM support for the docking manager.
+This article and sample intend to showcase the MVVM support for the WPF Docking Control.
 
-The adapter user control also determines the state of the element, whether it should be added to the DockingManager as a dock element or document tab.
+The adapter user control also determines the state of the element, whether it should be added to the WPF Docking Control as a dock element or document tab.
 
 The adapter can be further customized to add elements as floating or auto-hidden.
 
-The DockingManager provides an [ActiveWindowChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindowChanged) event. Using this, the [ActiveDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_ActiveDocument) property in the adapter needs to be updated every time focus changes to other panes.
+The WPF Docking Control provides an [ActiveWindowChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindowChanged) event. Using this, the [ActiveDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_ActiveDocument) property in the adapter needs to be updated every time focus changes to other panes.
 
 ### Application structure
 
 ![WPF Docking Application Structure](PatternandPractices_images/wpf-docking-application-structure.jpeg)
 
 
-The view model has a collection of workspaces that is data-bound to the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the DockingManager.
+The view model has a collection of workspaces that is data-bound to the [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the WPF Docking Control.
 
-Every dock element in the application is a workspace. There are three kinds of workspaces: the All Documents view, the Properties view, and the Document view. The docking adapter hooks up the “active window changed” event of the docking manager; the view model receives the message whenever the active document is changed.
+Every dock element in the application is a workspace. There are three kinds of workspaces: the All Documents view, the Properties view, and the Document view. The docking adapter hooks up the “active window changed” event of the WPF Docking Control; the view model receives the message whenever the active document is changed.
 
 #### Data Template
 
@@ -104,7 +104,7 @@ N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-w
 
 ## MVVMLight
 
-This section explains how to create MVVMLight sample with DockingManager. Since DockingManager is not an Items Control, it is not possible to have a traditional ItemsSource binding to a collection of objects in the view model. It can be achieved using DockingAdapter from the above MVVM sample creation section.
+This section explains how to create MVVMLight sample with WPF Docking Control. Since WPF Docking Control is not an Items Control, it is not possible to have a traditional ItemsSource binding to a collection of objects in the view model. It can be achieved using DockingAdapter from the above MVVM sample creation section.
 
 The following steps explains how to create sample project with MVVMLight templates.
 
@@ -120,7 +120,7 @@ The following steps explains how to create sample project with MVVMLight templat
 
 4.Attach DockingAdapter project to the DockingManagerMVVMLight project from MVVM sample. Create necessary ViewModels and Views with perfect naming conventions. Once the ItemsSource has been set to DockingAdapter children will be populate.
 
-DockingManager MVVMLight sample has been created following the above steps.
+WPF Docking Control MVVMLight sample has been created following the above steps.
 
 N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-mvvm-light)
 
@@ -232,7 +232,7 @@ xmlns:prsm="http://www.codeplex.com/prism"
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-In the following code example, a region called "MainRegion" has been created to load DockingManager Module views.
+In the following code example, a region called "MainRegion" has been created to load WPF Docking Control Module views.
 
 {% capture codesnippet4 %}
 
@@ -276,7 +276,7 @@ Also add the following Prism assemblies:
 * Microsoft.Practices.ServiceLocation.dll
 * Microsoft.Practices.Unity.dll
 
-7. In the Shell project, add the reference to the type of DockingManager module by registering with ModuleCatalog instance in the ConfigureModuleCatalog method.
+7. In the Shell project, add the reference to the type of WPF Docking Control module by registering with ModuleCatalog instance in the ConfigureModuleCatalog method.
 
 {% capture codesnippet5 %}
 {% tabs %}
@@ -382,13 +382,13 @@ Then when run the project, it is added as three of the Module in the Shell. The 
 
 ![WPF Docking Prism](PatternandPractices_images/wpf-docking-prism.jpeg)
 
-## Configuring DockingManager with Prism 6.1
+## Configuring WPF Docking Control with Prism 6.1
 
 `Prism` is a practice of building loosely coupled applications in WPF. It is intended to provide flexibility for testing and maintaining applications that are maintained in long term.
 
 ### PRISM 6.1
 
-Essential WPF controls are flexible with all the `Prism` versions. This section explains about creating a simple application using `DockingManager` in `PRISM 6.1` pattern. 
+Essential WPF controls are flexible with all the `Prism` versions. This section explains about creating a simple application using `WPF Docking Control` in `PRISM 6.1` pattern. 
 
 ### Setting up WPF application
 
@@ -427,7 +427,7 @@ Essential WPF controls are flexible with all the `Prism` versions. This section 
 {% endcapture %}
 {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-5. Create an instance of the control in Shell.xaml file and set the attached property RegionManager.RegionName for it. Here we have used `DockingManager` control.
+5. Create an instance of the control in Shell.xaml file and set the attached property RegionManager.RegionName for it. Here we have used `WPF Docking Control` control.
 
 {% capture codesnippet9 %}
 {% tabs %}
@@ -442,7 +442,7 @@ Essential WPF controls are flexible with all the `Prism` versions. This section 
 {% endcapture %}
 {{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-When we create an instance for Shell, it will resolve the value of the RegionManager.RegionName attached property and create a region for connecting it with the DockingManager. 
+When we create an instance for Shell, it will resolve the value of the RegionManager.RegionName attached property and create a region for connecting it with the WPF Docking Control. 
 
 ### Setting up the Bootstrapper
 
@@ -522,7 +522,7 @@ protected override void OnStartup(StartupEventArgs e)
 
 1. Create as many ClassLibrary projects for the modules. Here three class libraries are created for three modules.
 
-2. Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `DockingManager` for it. 
+2. Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `WPF Docking Control` for it. 
 
 {% capture codesnippet13 %}
 {% tabs %}
@@ -610,11 +610,11 @@ protected override void ConfigureModuleCatalog()
 {% endcapture %}
 {{ codesnippet15 | OrderList_Indent_Level_1 }}
 
-### Create RegionAdapter for DockingManager
+### Create RegionAdapter for WPF Docking Control
 
-So far implementations will work as expected for an ItemsControl. Since `DockingManager` is not an ItemsControl, we need a region adapter to notify that regions should be mapped into Children property. 
+So far implementations will work as expected for an ItemsControl. Since `WPF Docking Control` is not an ItemsControl, we need a region adapter to notify that regions should be mapped into Children property. 
 
-Create a ClassLibrary project for defining the region adapter and the class should inherit from RegionAdapterBase class. In that override the methods, Adapt and CreateRegion. In Adapt method, add the regions to DockingManager.Children whenever the regions collection is changed as shown below:
+Create a ClassLibrary project for defining the region adapter and the class should inherit from RegionAdapterBase class. In that override the methods, Adapt and CreateRegion. In Adapt method, add the regions to WPF Docking Control.Children whenever the regions collection is changed as shown below:
 
 {% tabs %}
 
@@ -678,9 +678,9 @@ The final output of application is given below:
 
 N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism/tree/master/PRISM-6.1)
 
-## Configuring DockingManager with Prism 7.1
+## Configuring WPF Docking Control with Prism 7.1
 
-This section explains about creating a simple application using `DockingManager` in `PRISM 7.1` pattern. 
+This section explains about creating a simple application using `WPF Docking Control` in `PRISM 7.1` pattern. 
 
 ### Setting up WPF application
 
@@ -716,7 +716,7 @@ This section explains about creating a simple application using `DockingManager`
 
 {% endtabs %}
 
-**Step 5:** Create an instance of the control in Shell.xaml file and set the attached property `RegionManager.RegionName` for it. Here we have used `DockingManager` control.
+**Step 5:** Create an instance of the control in Shell.xaml file and set the attached property `RegionManager.RegionName` for it. Here we have used `WPF Docking Control` control.
 
 {% tabs %}
 
@@ -728,7 +728,7 @@ This section explains about creating a simple application using `DockingManager`
 
 {% endtabs %}
 
-When we create an instance for Shell, it will resolve the value of the RegionManager.RegionName attached property and create a region for connecting it with the DockingManager. 
+When we create an instance for Shell, it will resolve the value of the RegionManager.RegionName attached property and create a region for connecting it with the WPF Docking Control. 
 
 **Step 6:** Add the following required assembly references in App.xaml.cs file.
 
@@ -797,7 +797,7 @@ public partial class App : PrismApplication
 
 **Step 1:** Create as ClassLibrary projects for the modules. Here three class libraries are created for three modules.
 
-**Step 2:** Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `DockingManager` for it. 
+**Step 2:** Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `WPF Docking Control` for it. 
 
 {% tabs %}
 
@@ -885,9 +885,9 @@ protected override IModuleCatalog CreateModuleCatalog()
 
 {% endtabs %}
 
-### Create RegionAdapter for DockingManager
+### Create RegionAdapter for WPF Docking Control
 
-So, far implementations will work as expected for an ItemsControl. Since `DockingManager` is not an ItemsControl, we need a region adapter to notify that regions should be mapped into Children property. 
+So, far implementations will work as expected for an ItemsControl. Since `WPF Docking Control` is not an ItemsControl, we need a region adapter to notify that regions should be mapped into Children property. 
 
 **Step 1:** Create a ClassLibrary project for defining the region adapter and the class should inherit from `RegionAdapterBase` class. In that override the methods, `Adapt` and `CreateRegion`. There are three types of region class to create a region based on the `ContentControlRegionAdapter`, `ItemsControlRegionAdapter` and `SelectorRegionAdapter` as follows: 
 
@@ -895,7 +895,7 @@ So, far implementations will work as expected for an ItemsControl. Since `Dockin
 * AllActiveRegion - The Region that keeps all the views in it as active and de-activation of views are not allowed.
 * Region - The Region that allows multiple active views and and de-activation of views are allowed.
 
-In Adapt method, add the regions to DockingManager.Children whenever the regions collection is changed as shown below:
+In Adapt method, add the regions to WPF Docking Control.Children whenever the regions collection is changed as shown below:
 
 {% tabs %}
 
@@ -1012,7 +1012,7 @@ public class DocumentRegionActiveAwareBehavior : RegionBehavior, IHostAwareRegio
 
 {% endtabs %}
 
-**Step 3:** Override the method `AttachBehaviors` in `DockingManagerRegionAdapter` class and add the created behavior to the region as like below code snippet:
+**Step 3:** Override the method `AttachBehaviors` in `WPF Docking ControlRegionAdapter` class and add the created behavior to the region as like below code snippet:
 
 {% tabs %}
 

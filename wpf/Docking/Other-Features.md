@@ -7,11 +7,11 @@ control: DockingManager
 documentation: ug
 ---
 
-# Other Features in WPF DockingManager Control
+# Other Features in WPF Docking Control
 
 ## Using Adorner Drag Provider and Adorner FloatWindow
 
-There are two ways to display the Drag provider in DockingManager. One is to display it as a popup, which is default and the other is to display it in an adorner layer for this you need to enable [UseAdornerDragProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseAdornerDragProvider) property to display the Drag provider as Adorner layer.
+There are two ways to display the Drag provider in WPF Docking Control. One is to display it as a popup, which is default and the other is to display it in an adorner layer for this you need to enable [UseAdornerDragProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseAdornerDragProvider) property to display the Drag provider as Adorner layer.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ DockingManager.UseAdornerFloatWindow = true;
 
 ## ActiveWindow Changed Event
 
-The [ActiveWindowChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event is raised whenever the [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) property of DockingManager is changed. This event is used whenever you need to track the change in ActiveChild and do some content changes to the child. The following example demonstrates the changing of the Child header, based on the ActiveWindow.
+The [ActiveWindowChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event is raised whenever the [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) property of WPF Docking Control is changed. This event is used whenever you need to track the change in ActiveChild and do some content changes to the child. The following example demonstrates the changing of the Child header, based on the ActiveWindow.
 
 {% tabs %}
 
@@ -386,7 +386,7 @@ DockingManager.SetIsRollupFloatWindow(grid1, true);
 
 ![Rolling the float window up](Other-Features_images/Other-Features_img7.jpeg)
 
-This can also be applied to all the children of DockingManager as follows:
+This can also be applied to all the children of WPF Docking Control as follows:
 
 {% tabs %}
 
@@ -457,7 +457,7 @@ DockingManager.IsRollupFloatWindow = true;
 
 
 
-## VS2010 Behavior of Docking Manager
+## VS2010 Behavior of WPF Docking Control
 
 This feature enables the user to drag the TDI Windows, which will automatically generate the Float window which will then be dropped at any corner of the docked windows or dropped at any specific TDI Index.
 
@@ -474,7 +474,7 @@ Users can drag the TDI window which will automatically generate the Float window
 
 The VS2010 behavior can be enabled by setting [IsVS2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2010DraggingEnabled) property to true which will enable the VS2010 drag and drop support of TDI Windows. The default value is set to false.
 
-The property in Docking Manager and can be set in the following ways:
+The property in WPF Docking Control and can be set in the following ways:
 
 * Through XAML
 * Through Code behind
@@ -866,7 +866,7 @@ dockingManager.CreateHorizontalTabGroup(newelement);
 
 {% endhighlight %}
 
-To create a horizontal tab group as an existing element in the docking manager children collection, use the following code:
+To create a horizontal tab group as an existing element in the WPF Docking Control children collection, use the following code:
 
 {% highlight c# %}
 
@@ -891,7 +891,7 @@ dockingManager.CreateVerticalTabGroup(newelement);
 
 {% endhighlight  %}
 
-To create a vertical tab group as an existing element in the docking manager children collection, use the following code:
+To create a vertical tab group as an existing element in the WPF Docking Control children collection, use the following code:
 
 
 {% highlight c# %}

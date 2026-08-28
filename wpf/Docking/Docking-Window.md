@@ -6,9 +6,9 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Docking Window in WPF DockingManager Control
+# Docking Window in WPF Docking Control
 
-Docking windows is one of the state of DockingManager. Since `Dock` is the default value, so initially all the children stay as Docking Window
+Docking windows is one of the state of WPF Docking Control. Since `Dock` is the default value, so initially all the children stay as Docking Window
 
 ![WPF Docking Window](DockingWindow_images/wpf-docking-window.jpeg)
 
@@ -22,7 +22,7 @@ The five sides that can be docked are
 * Bottom
 * Tabbed
 
-To dock 4 children of a DockingManager in 4 different sides, then use [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode) property with the required values.
+To dock 4 children of a WPF Docking Control in 4 different sides, then use [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode) property with the required values.
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ DockingManager.SetSideInDockedMode(dockWindow4, DockSide.Bottom);
 
 Docking window can also be docked at any side of the Target Docking Window through an attached property named [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_TargetNameInDockedMode).
  
-Also to set as Tabbed Window, the window should aware of a Target window name. The following code helps to arrange children of DockingManager that targets a single Docking window docked along Left, Top, Right and Tabbed.
+Also to set as Tabbed Window, the window should aware of a Target window name. The following code helps to arrange children of WPF Docking Control that targets a single Docking window docked along Left, Top, Right and Tabbed.
 {% tabs %}
 
 {% highlight XAML %}
@@ -161,7 +161,7 @@ SyncDockingManager.MaximizeButtonEnabled = true;
 
 ### Limit Maximized Dock item
 
-DockingManager has properties named `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode` to limit the size and height respectively to the specific window.
+WPF Docking Control has properties named `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode` to limit the size and height respectively to the specific window.
 Initially set [MaximizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MaximizeButtonEnabled) to `True` and set values for `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode`and the specific window will gets maximized based on the values respectively.
 
 
@@ -266,7 +266,7 @@ SyncDockingManager.MinimizeButtonEnabled = true;
 
 ### Restrict Maximization or Minimization for a specific children
 
-DockingManager provides two attached property named [CanMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanMaximize) and [CanMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanMinimize) to enable or disable Maximizing and Minimizing buttons respectively to the specific window.
+WPF Docking Control provides two attached property named [CanMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanMaximize) and [CanMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanMinimize) to enable or disable Maximizing and Minimizing buttons respectively to the specific window.
 
 {% tabs %}
 
