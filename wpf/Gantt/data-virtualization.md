@@ -13,7 +13,7 @@ The [WPF Gantt Chart](https://www.syncfusion.com/gantt-sdk/wpf-gantt) control su
 
 ## How virtualization works
 
-Data virtualization in the Gantt control includes the following:
+Data virtualization in the WPF Gantt control includes the following:
 
 * **Row virtualization** – Only visible task rows (including inline/child tasks) are created during vertical scrolling.
 * **Timeline virtualization** – Only the tasks within the visible timeline viewport are rendered during horizontal scrolling.
@@ -874,6 +874,6 @@ public class ViewModel
 {% endhighlight  %}
 {% endtabs %}
 
-The following image illustrates the Gantt control with timeline virtualization enabled:
+The following image illustrates the WPF Gantt control with timeline virtualization enabled:
 
 ![gantt-control-data-virtualization](Data-Virtualization-Images/data-virtualization-for-gantt-control.gif){:width="725" height="325"}

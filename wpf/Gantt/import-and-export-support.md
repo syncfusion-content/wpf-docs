@@ -48,14 +48,14 @@ Return Type </th></tr>
 <tr>
 <td>
 {{'[ExportToXML()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ExportToXML)'| markdownify }}</td><td>
-Responsible for exporting the GanttControl to MSProject XML File.</td><td>
+Responsible for exporting the WPF Gantt to MSProject XML File.</td><td>
 -</td><td>
 -</td><td>
 bool</td></tr>
 <tr>
 <td>
 {{'[ImportFromXML()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ImportFromXML)'| markdownify }}</td><td>
-Responsible for importing the data from MS Project XML file to GanttControl.</td><td>
+Responsible for importing the data from MS Project XML file to WPF Gantt.</td><td>
 -</td><td>
 -</td><td>
 bool</td></tr>

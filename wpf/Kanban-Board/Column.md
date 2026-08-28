@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column in WPF SfKanban | Syncfusion
-description: Learn about Column support in Syncfusion WPF SfKanban, including headers, categories, drag-and-drop behavior, constraints, and appearance settings.
+title: Column in WPF Kanban Board | Syncfusion
+description: Learn about Column support in Syncfusion WPF Kanban Board, including headers, categories, drag-and-drop behavior, constraints, and appearance settings.
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
 
-# Column in WPF SfKanban
+# Column in WPF Kanban Board
 
 ## Customizing Column Size
 
@@ -125,7 +125,7 @@ The [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.Colu
 
 ## Column Tag
 
-The [`Tags`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Tags) property of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) customizes the header of a Kanban column. The following properties of [`ColumnTag`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ColumnTag.html) are used to customize the column header:
+The [`Tags`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Tags) property of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) customizes the header of a column. The following properties of [`ColumnTag`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ColumnTag.html) are used to customize the column header:
 
 * [`CardCount`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_CardCount) - Gets or sets the count of cards available in the column.
 * [`Maximum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_Maximum) - Gets or sets a value that indicates the maximum card limit of the `KanbanColumn`.
@@ -135,7 +135,7 @@ The [`Tags`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.Kanban
 
 ## Expand/Collapse Column
 
-The columns can be expanded or collapsed by tapping the toggle button placed at the top-right corner of the Kanban column header. The [`IsExpanded`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) is used to programmatically expand or collapse a Kanban column.
+The columns can be expanded or collapsed by tapping the toggle button placed at the top-right corner of the column header. The [`IsExpanded`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) is used to programmatically expand or collapse a column.
 
 {% tabs %}
 {% highlight xaml %}
@@ -173,7 +173,7 @@ The Kanban control provides built-in support to enable or disable drag-and-drop 
 
 ### Reordering Columns
 
-Columns can be reordered in the WPF Kanban control using built-in drag-and-drop. Enable this by setting the [`AllowColumnReorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AllowColumnReorder) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to `true`. The default value is `false`.
+Columns can be reordered in the WPF Kanban Board control using built-in drag-and-drop. Enable this by setting the [`AllowColumnReorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AllowColumnReorder) property of [`SfKanban`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to `true`. The default value is `false`.
 
 {% tabs %}
 {% highlight xaml hl_lines="1" %}
