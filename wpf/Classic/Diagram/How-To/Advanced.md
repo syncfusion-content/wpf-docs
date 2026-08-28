@@ -13,7 +13,7 @@ documentation: ug
 
 This section answers the following questions that are in an advanced level, meant for experts.
 
-## Animate the Nodes in the Diagram
+## Animate the Nodes in the WPF Diagram
 
 You can perform many kinds of animations on nodes by using the double animation. Rotation and Translation are some of the basic operations performed on the nodes. You can use double animation to perform these operations on the node in a specific pattern.
 
@@ -161,9 +161,9 @@ nodeObj.RenderTransform = rt
 rt.BeginAnimation(TranslateTransform.XProperty, nodeanimation)
 {% endhighlight  %}
 
-## Print DiagramPage in Uniform Print Mode Using Framework Print Dialog
+## Print WPF DiagramPage in Uniform Print Mode Using Framework Print Dialog
 
-DiagramPage can also be printed using Framework PrintDialog instead of using Syncfusion DiagramControlPrintPreview Dialog, as shown in the following code example.
+WPF DiagramPage can also be printed using Framework PrintDialog instead of using Syncfusion WPF DiagramControlPrintPreview Dialog, as shown in the following code example.
 
 {% highlight c# %}
 
@@ -185,7 +185,7 @@ DiagramPage can also be printed using Framework PrintDialog instead of using Syn
 
             {
 
-                //Print the Diagram Page.
+                //Print the WPF Diagram Page.
 
                 //Get Printer Capabilities.
 
@@ -195,7 +195,7 @@ DiagramPage can also be printed using Framework PrintDialog instead of using Syn
 
 
 
-                //Visual Brush for the DiagramPage to be printed.
+                //Visual Brush for the WPF DiagramPage to be printed.
 
                 VisualBrush VisualBrush = new VisualBrush(diagramView.Page);
 
