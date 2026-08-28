@@ -27,7 +27,7 @@ DockingManager.DeleteDockState(filename);
 
 {% endhighlight %}
 
-### Refer Also
+## Refer Also
 
 State Persistence in WPF Docking Control
 
