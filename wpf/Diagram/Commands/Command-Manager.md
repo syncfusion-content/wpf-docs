@@ -9,7 +9,7 @@ documentation: ug
 
 # Command Manager in WPF SfDiagram
 
-The [CommandManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CommandManager.html) is used to map user gestures (keyboard and mouse) to SfDiagram commands and helps to include new gesture commands in [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram). 
+The [CommandManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CommandManager.html) is used to map user gestures (keyboard and mouse) to SfDiagram commands and helps to include new gesture commands in [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram). 
 
 The `CommandManager` can be accessed through the `SfDiagram` instance and is used to manage built-in and custom gesture commands.
 
@@ -114,4 +114,4 @@ diagram.CommandManager.Commands.Add(saveGesture);
 
 [How to map the custom commands to existing gestures (keyboard shortcuts and mouse)?](https://support.syncfusion.com/kb/article/8709/how-to-map-the-custom-commands-to-existing-gestures-keyboard-shortcuts-and-mouse-in-wpf)
 
-[How to add a custom gesture command in the WPF Diagram (SfDiagram )?](https://support.syncfusion.com/kb/article/18237/how-to-add-a-custom-gesture-command-in-the-wpf-diagram-sfdiagram-)
+[How to add a custom gesture command in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18237/how-to-add-a-custom-gesture-command-in-the-wpf-diagram-sfdiagram-)

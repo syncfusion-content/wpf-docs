@@ -9,7 +9,7 @@ documentation: ug
 
 # Rulers in WPF SfDiagram
 
-The [Ruler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Ruler.html) provides horizontal and vertical guides for measuring in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control. The Ruler can be used to measure diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default [Unit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LengthUnit.html#Syncfusion_UI_Xaml_Diagram_LengthUnit_Unit) of measure is pixels. The ruler also includes a Position Indicator that displays the precise location of the mouse cursor on the diagram canvas, and the default color of the position indicator marker is black.
+The [Ruler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Ruler.html) provides horizontal and vertical guides for measuring in the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control. The Ruler can be used to measure diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default [Unit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LengthUnit.html#Syncfusion_UI_Xaml_Diagram_LengthUnit_Unit) of measure is pixels. The ruler also includes a Position Indicator that displays the precise location of the mouse cursor on the diagram canvas, and the default color of the position indicator marker is black.
 
 N> By default, rulers are not displayed in the diagram. To display rulers, assign `Ruler` instances to the `HorizontalRuler` and `VerticalRuler` properties of the `SfDiagram`.
 
@@ -84,4 +84,4 @@ Please refer to the sample to [Customize the Ruler](https://github.com/Syncfusio
 
 [How to customize the ruler units?](https://support.syncfusion.com/kb/article/5944/how-to-customize-the-ruler-units-in-wpf-diagram-sfdiagram)
 
-[How to round off the ruler's value if it displays a decimal value in the WPF Diagram (SfDiagram) ?](https://support.syncfusion.com/kb/article/18665/how-to-round-off-the-rulers-value-if-it-displays-a-decimal-value-in-the-wpf-diagram-sfdiagram)
+[How to round off the ruler's value if it displays a decimal value in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18665/how-to-round-off-the-rulers-value-if-it-displays-a-decimal-value-in-the-wpf-diagram-sfdiagram)

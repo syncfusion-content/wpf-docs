@@ -58,4 +58,4 @@ private void Diagram_AnnotationChanged(object sender, ChangeEventArgs<object, An
 
 [How to restrict annotation editing by double-clicking the node or connector?](https://support.syncfusion.com/kb/article/8539/how-to-restrict-annotation-editing-by-double-clicking-the-node-or-connector-in-wpf-diagram)
 
-[How to get parent of annotation using changed command in WPF Diagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)
+[How to get parent of annotation using changed command in WPF SfDiagram?](https://support.syncfusion.com/kb/article/16202/how-to-get-parent-of-annotation-using-changed-command-in-wpf-diagram)

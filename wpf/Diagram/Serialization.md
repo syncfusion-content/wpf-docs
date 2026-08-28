@@ -13,7 +13,7 @@ Serialization is the process of converting the state of SfDiagram's objects into
 
 ## Save
 
-In [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram serialization. It supports saving the SfDiagram to a stream. The SfDiagram gets saved with all its properties. 
+In [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram serialization. It supports saving the SfDiagram to a stream. The SfDiagram gets saved with all its properties. 
 
 {% tabs %}
 
@@ -295,12 +295,12 @@ N> Mermaid syntax data serialization and deserialization are supported only for 
 
 [How to serialize the Content and ContentTemplate properties of a Node?](https://support.syncfusion.com/kb/article/11574/how-to-serialize-content-and-contenttemplate-properties-of-a-node-in-wpf-diagramsfdiagram)
 
-[How to change the color of a node in the stencil and diagram while loading a saved file in WPF Diagram(SfDiagram)?](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
+[How to change the color of a node in the stencil and diagram while loading a saved file in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
 
-[How to serialize the LinearGradientBrush type as a Fill value in the ShapeStyle of a Node in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18058/how-to-serialize-the-lineargradientbrush-type-as-a-fill-value-in-the-shapestyle-of-a-node-in-the-wpf-diagram-sfdiagram)
+[How to serialize the LinearGradientBrush type as a Fill value in the ShapeStyle of a Node in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18058/how-to-serialize-the-lineargradientbrush-type-as-a-fill-value-in-the-shapestyle-of-a-node-in-the-wpf-diagram-sfdiagram)
 
-[How to serialize and deserialize the image nodes in WPF Diagram( SfDiagram) ?](https://support.syncfusion.com/kb/article/17743/how-to-serialize-and-deserialize-the-image-nodes-in-wpf-diagram-sfdiagram-)
+[How to serialize and deserialize the image nodes in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/17743/how-to-serialize-and-deserialize-the-image-nodes-in-wpf-diagram-sfdiagram-)
 
-[How to serialize multiple diagram pages in WPF Diagram?](https://support.syncfusion.com/kb/article/16204/how-to-serialize-multiple-diagram-pages-in-wpf-diagram)
+[How to serialize multiple diagram pages in WPF SfDiagram?](https://support.syncfusion.com/kb/article/16204/how-to-serialize-multiple-diagram-pages-in-wpf-diagram)
 
-[How to preserve the state of the diagram while switching tabs in the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18230/how-to-preserve-the-state-of-the-diagram-while-switching-tabs-in-the-wpf-diagram-sfdiagram)
+[How to preserve the state of the diagram while switching tabs in the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18230/how-to-preserve-the-state-of-the-diagram-while-switching-tabs-in-the-wpf-diagram-sfdiagram)
