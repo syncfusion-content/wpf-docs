@@ -9,7 +9,7 @@ documentation: ug
 
 # Auto Update Hierarchy in WPF Gantt
 
-Essential Gantt provides support for auto updating hierarchy, in which the Gantt control will listen to the change in child tasks/activities and automatically update them in the parent task/activity accordingly. There is no need to have any custom logic in business objects to update the hierarchy. You can enable or disable this functionality by using the [UseAutoUpdateHierarchy](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseAutoUpdateHierarchy) property. 
+Auto-update hierarchy support automatically listens for changes in child tasks or activities and updates the corresponding parent task or activity. No custom business logic is required to maintain the hierarchy. You can enable or disable this functionality using [UseAutoUpdateHierarchy](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_UseAutoUpdateHierarchy) property. 
 
 ## Use Case Scenario
 
@@ -617,7 +617,7 @@ public class Task : NotificationObject
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-2. Create a collection of business objects to bind it as ItemsSource of the Gantt control.
+2. Create a collection of business objects to bind it as ItemsSource of the WPF Gantt control.
 
 {% capture codesnippet5 %}
 {% highlight c# tabtitle="ViewModel.cs" %}
@@ -729,7 +729,7 @@ public class ViewModel
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-3. Set the `UseAutoUpdateHierarchy` property as `false` to handle the custom calculations on the business objects. Set the collection as `ItemsSource` of the Gantt control.
+3. Set the `UseAutoUpdateHierarchy` property as `false` to handle the custom calculations on the business objects. Set the collection as `ItemsSource` of the WPF Gantt control.
 
    N> If you use the TaskDetails class as your business object, then you should not set the UseAutoUpdateHierarchy property as false.
 
