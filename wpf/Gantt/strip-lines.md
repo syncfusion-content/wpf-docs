@@ -429,7 +429,7 @@ The following screenshot illustrates how to render the regular strip lines.
 Strip lines in the Gantt chart
 {:.caption}
 
-#### Absolute Strip Lines
+### Absolute Strip Lines
 
 The following code sample demonstrates how to bind the absolute strip line collection to strip lines.
 
