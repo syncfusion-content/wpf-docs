@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar State in WPF ToolBarAdv | Syncfusion®
-description: Toolbar state support in WPF ToolBarAdv enables saving and restoring toolbar layouts, preserving item positions and user customizations across sessions.
+title: Toolbar State in WPF ToolBar | Syncfusion®
+description: Toolbar state support in WPF ToolBar enables saving and restoring toolbar layouts, preserving item positions and user customizations across sessions.
 platform: wpf
-control: ToolBarAdv
+control: ToolBar
 documentation: ug
 ---
-# Toolbar State in WPF ToolBarAdv
+# Toolbar State in WPF ToolBar
 
-ToolBarAdv provides different states such as Docking, Floating or Hidden. It can be change using the property `ToolBarState` of the ToolBarManager. 
+ToolBar provides different states such as Docking, Floating or Hidden. It can be change using the property `ToolBarState` of the ToolBarManager. 
 
 {% tabs %}
 
@@ -94,13 +94,13 @@ ToolBarAdv provides different states such as Docking, Floating or Hidden. It can
 
 {% endtabs %}
 
-![ToolBarAdv-state-img1](ToolBarAdv-state-images/ToolBarAdv-state-img1.jpeg)
+![ToolBar-state-img1](ToolBarAdv-state-images/ToolBarAdv-state-img1.jpeg)
 
-ToolBarAdv can be floated only when it is hosted in ToolBarManager.
+ToolBar can be floated only when it is hosted in ToolBarManager.
 
-## Specifying location for floating ToolBarAdv.
+## Specifying location for floating ToolBar.
 
-The location of the floating ToolBarAdv can be changed using the `FloatingBarLocation` property. The following code illustrates this
+The location of the floating ToolBar can be changed using the `FloatingBarLocation` property. The following code illustrates this
 
 {% tabs %}
 
@@ -117,9 +117,9 @@ The location of the floating ToolBarAdv can be changed using the `FloatingBarLo
 
 {% endtabs%}
 
-## Restrict Docking of ToolBarAdv for a specific position
+## Restrict Docking of ToolBar for a specific position
 
-By default, the ToolBarAdv can be docked to any position. To restrict docking of ToolBarAdv to particular position, the following properties can be used. Each will restrict docking at corresponding positions in ToolBarManager.
+By default, the ToolBar can be docked to any position. To restrict docking of ToolBar to particular position, the following properties can be used. Each will restrict docking at corresponding positions in ToolBarManager.
 
 * CanDockAtLeft—restricts docking at the left.
 * CanDockAtTop—restricts docking at the top.
@@ -147,10 +147,10 @@ Following code restricts docking at the top:
 
 ## ToolBarStateChanged event
 
-The [`ToolBarStateChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_ToolBarStateChanged) event is triggered when the state of a ToolBarAdv changes, such as when it is hidden, floated, or docked. The handler receives an instance of [`ToolBarStateChangedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarStateChangedEventArgs.html), which contains information about the state change.
+The [`ToolBarStateChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_ToolBarStateChanged) event is triggered when the state of a ToolBar changes, such as when it is hidden, floated, or docked. The handler receives an instance of [`ToolBarStateChangedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarStateChangedEventArgs.html), which contains information about the state change.
 
-* `NewState` — gets the current state of the ToolBarAdv control.
-* `OldState` — gets the previous state of the ToolBarAdv control.
+* `NewState` — gets the current state of the ToolBar control.
+* `OldState` — gets the previous state of the ToolBar control.
 
 The following code illustrates this : 
 

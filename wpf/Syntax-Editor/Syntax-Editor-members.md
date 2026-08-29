@@ -9,11 +9,11 @@ documentation: ug
 
 # Syntax Editor Members in WPF Syntax Editor
 
-The `EditControl` class provides a rich set of properties, methods, and events that allow you to customize and control its behavior. This section describes the key members available in the `EditControl` class and explains how they can be used in your application.
+The `Syntax Editor` class provides a rich set of properties, methods, and events that allow you to customize and control its behavior. This section describes the key members available in the `Syntax Editor` class and explains how they can be used in your application.
 
 ## Properties
 
-The following table lists the properties available in `EditControl` and their descriptions.
+The following table lists the properties available in `Syntax Editor` and their descriptions.
 
 <table>
 <tr>
@@ -25,12 +25,12 @@ Description<br/><br/></td></tr>
 <td>
 AcceptsTab<br/><br/></td><td>
 Boolean<br/><br/></td><td>
-Gets or sets a boolean property to allow or restrict the usage of TAB key in EditControl.<br/><br/></td></tr>
+Gets or sets a boolean property to allow or restrict the usage of TAB key in Syntax Editor.<br/><br/></td></tr>
 <tr>
 <td>
 AssemblyReferences<br/><br/></td><td>
 IEnumerable(Uri)<br/><br/></td><td>
-Gets or sets a collection of type Uri, this property enables you to specify the path of assemblies from EditControl and it should fetch Intellisense items automatically.<br/><br/></td></tr>
+Gets or sets a collection of type Uri, this property enables you to specify the path of assemblies from Syntax Editor and it should fetch Intellisense items automatically.<br/><br/></td></tr>
 <tr>
 <td>
 CurrentLanguage<br/><br/></td><td>
@@ -40,7 +40,7 @@ Gets a LanguageBase instance based on the DocumentLanguage property. <br/><br/><
 <td>
 CursorIndex<br/><br/></td><td>
 Int<br/><br/></td><td>
-Gets current index of text where the cursor is located in EditControl pane.<br/><br/></td></tr>
+Gets current index of text where the cursor is located in Syntax Editor pane.<br/><br/></td></tr>
 <tr>
 <td>
 CustomLanguage<br/><br/></td><td>
@@ -50,22 +50,22 @@ Gets or sets an instance of LanguageBase type indicating the custom language.<br
 <td>
 DocumentLanguage<br/><br/></td><td>
 Languages<br/><br/></td><td>
-Gets or sets Language for the text in EditControl. Syntax highlighting and outlining of text in EditControl are performed based on the language set using this property.<br/><br/></td></tr>
+Gets or sets Language for the text in Syntax Editor. Syntax highlighting and outlining of text in Syntax Editor are performed based on the language set using this property.<br/><br/></td></tr>
 <tr>
 <td>
 DocumentSource<br/><br/></td><td>
 String<br/><br/></td><td>
-Gets or sets Source for EditControl. The filename specified will be loaded in the EditControl.<br/><br/></td></tr>
+Gets or sets Source for Syntax Editor. The filename specified will be loaded in the Syntax Editor.<br/><br/></td></tr>
 <tr>
 <td>
 EnableIntellisense<br/><br/></td><td>
 Boolean<br/><br/></td><td>
-Gets or sets a value indicating whether Intellisense is enabled in this instance of EditControl.<br/><br/></td></tr>
+Gets or sets a value indicating whether Intellisense is enabled in this instance of Syntax Editor.<br/><br/></td></tr>
 <tr>
 <td>
 EnableOutlining<br/><br/></td><td>
 Boolean<br/><br/></td><td>
-Gets or sets a value indicating whether Outlining of text in EditControl should be applied.<br/><br/></td></tr>
+Gets or sets a value indicating whether Outlining of text in Syntax Editor should be applied.<br/><br/></td></tr>
 <tr>
 <td>
 FindOptions<br/><br/></td><td>
@@ -120,7 +120,7 @@ Gets or sets a value indicating desired width of IntellisensePopup.<br/><br/></t
 <td>
 IsFindResultsTabClosed<br/><br/></td><td>
 Boolean<br/><br/></td><td>
-Gets or sets a value indicating whether the Find Results Tab is closed or not. This property has a value `true` if the Find results tab in the EditControl is closed; otherwise, `false`.<br/><br/></td></tr>
+Gets or sets a value indicating whether the Find Results Tab is closed or not. This property has a value `true` if the Find results tab in the Syntax Editor is closed; otherwise, `false`.<br/><br/></td></tr>
 <tr>
 <td>
 IsReadOnly<br/><br/></td><td>
@@ -140,7 +140,7 @@ Gets or sets a value indicating whether this instance supports Undo operation or
 <td>
 LineHeight<br/><br/></td><td>
 Double<br/><br/></td><td>
-Gets and sets the height of each line in EditControl.<br/><br/></td></tr>
+Gets and sets the height of each line in Syntax Editor.<br/><br/></td></tr>
 <tr>
 <td>
 LineNumber<br/><br/></td><td>
@@ -150,7 +150,7 @@ Gets the line number where the cursor is currently located.<br/><br/></td></tr>
 <td>
 Lines<br/><br/></td><td>
 LinesCollection<br/><br/></td><td>
-Gets the Collection of Lines in EditControl.  <br/><br/></td></tr>
+Gets the Collection of Lines in Syntax Editor.  <br/><br/></td></tr>
 <tr>
 <td>
 SearchResults<br/><br/></td><td>
@@ -160,7 +160,7 @@ Gets or sets a value indicating the Search results.<br/><br/></td></tr>
 <td>
 SelectedText<br/><br/></td><td>
 String<br/><br/></td><td>
-Gets a value indicating the Selected text of EditControl. <br/><br/></td></tr>
+Gets a value indicating the Selected text of Syntax Editor. <br/><br/></td></tr>
 <tr>
 <td>
 ShowDefaultContextMenu<br/><br/></td><td>
@@ -185,7 +185,7 @@ Gets or sets a value indicating the number of Spaces to include when the tab key
 <td>
 Text<br/><br/></td><td>
 String<br/><br/></td><td>
-Gets or sets a value indicating text in EditControl.<br/><br/></td></tr>
+Gets or sets a value indicating text in Syntax Editor.<br/><br/></td></tr>
 <tr>
 <td>
 VerticalScrollBarVisibility<br/><br/></td><td>
@@ -195,7 +195,7 @@ Gets or sets a value indicating Visibility of Vertical ScrollBar. By default, it
 
 **Methods**
 
-The following table lists the methods available in EditControl class and its purpose.
+The following table lists the methods available in Syntax Editor class and its purpose.
 
 <table>
 <tr>
@@ -222,7 +222,7 @@ Returns the text between Start and End lines. Start and End denotes the index of
 <td>
 LoadFile()<br/><br/></td><td>
 Boolean<br/><br/></td><td>
-LoadFile method is used to open a file in the EditControl. It shows up a OpenFileDialog in order to select the file to be opened using EditControl and returns a boolean value stating whether file opened  is successful.<br/><br/></td></tr>
+LoadFile method is used to open a file in the Syntax Editor. It shows up a OpenFileDialog in order to select the file to be opened using Syntax Editor and returns a boolean value stating whether file opened  is successful.<br/><br/></td></tr>
 <tr>
 <td>
 LoadFile(string filename)<br/><br/></td><td>
@@ -232,12 +232,12 @@ This method does not display OpenFileDialog and loads the file specified as the 
 <td>
 SaveFile()<br/><br/></td><td>
 Boolean<br/><br/></td><td>
-Save method is used to save the text in the EditControl under a file name with different supported file types.<br/><br/></td></tr>
+Save method is used to save the text in the Syntax Editor under a file name with different supported file types.<br/><br/></td></tr>
 </table>
 
 **Events**
 
-The following table lists the events available in EditControl class and its purpose.
+The following table lists the events available in Syntax Editor class and its purpose.
 
 <table>
 <tr>
@@ -269,20 +269,20 @@ Drill down in Intellisense occurs when the user types  drill down char specified
 <td>
 SelectedTextChanged<br/><br/></td><td>
 PropertyChangedCallback<br/><br/></td><td>
-A PropertyChangedCallback gets raised when the text in the EditControl is selected.<br/><br/></td></tr>
+A PropertyChangedCallback gets raised when the text in the Syntax Editor is selected.<br/><br/></td></tr>
 <tr>
 <td>
 TextChanged<br/><br/></td><td>
 PropertyChangedCallback<br/><br/></td><td>
-A PropertyChangedCallback get raised when the text in the EditControl gets changed.<br/><br/></td></tr>
+A PropertyChangedCallback get raised when the text in the Syntax Editor gets changed.<br/><br/></td></tr>
 <tr>
 <td>
 CaretPositionChanged<br/><br/></td><td>
 EventHandler<br/><br/></td><td>
-This event will be raised when the caret position of the text in the EditControl is changed. The <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CaretPositionChanged">CaretPositionChanged </a> event receives the `sender` and <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.CaretPositionEventArgs.html">CaretPositionEventArgs </a> as argument which has the following properties.
+This event will be raised when the caret position of the text in the Syntax Editor is changed. The <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CaretPositionChanged">CaretPositionChanged </a> event receives the `sender` and <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.CaretPositionEventArgs.html">CaretPositionEventArgs </a> as argument which has the following properties.
 <ul>
-<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LineNumber">Line Number </a> : Gets the current line number value of the EditControl.</li>
-<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex">Cursor Index </a> : Gets the current cursor index value of the EditControl.</li>
+<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LineNumber">Line Number </a> : Gets the current line number value of the Syntax Editor.</li>
+<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex">Cursor Index </a> : Gets the current cursor index value of the Syntax Editor.</li>
 </ul>
 <br/><br/></td></tr>
 <tr>

@@ -9,7 +9,7 @@ documentation: ug
 
 # Line Background Customization in WPF Syntax Editor
 
-The EditControl provides several ways to customize the background color of specific lines. The samples below assume `using Syncfusion.Windows.Edit;` and an `EditControl` instance named `editControl1`.
+The Syntax Editor provides several ways to customize the background color of specific lines. The samples below assume `using Syncfusion.Windows.Edit;` and an `Syntax Editor` instance named `editControl1`.
 
 ## Applying a line background
 
@@ -125,6 +125,6 @@ private void editControl1_OnBeforeLineRender(object sender, Syncfusion.Windows.E
 
 {% endtabs %}
 
-N> The on demand line background customization is recommended when the `EditControl` is loaded with huge data.
+N> The on demand line background customization is recommended when the `Syntax Editor` is loaded with huge data.
 
 ![OnBeforeEvent](Line-Background-Customization_images/OnBeforeEvent.png)
