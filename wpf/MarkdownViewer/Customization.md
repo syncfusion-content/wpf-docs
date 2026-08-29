@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in WPF SfMarkdownViewer | Syncfusion®
-description: Customization support in WPF SfMarkdownViewer enables styling Markdown elements, modifying themes, and adjusting the viewer appearance.
+title: Customization in WPF Markdown Viewer | Syncfusion®
+description: Customization support in WPF Markdown Viewer enables styling Markdown elements, modifying themes, and adjusting the viewer appearance.
 platform: wpf
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 
-# Customization in WPF SfMarkdownViewer
+# Customization in WPF Markdown Viewer
 
 The `SfMarkdownViewer` control in Wpf provides a flexible styling system through the `MarkdownStyleSettings` class. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
 
@@ -125,4 +125,4 @@ Used to define major sections within your Markdown content.
 The following image shows the rendered output with customized heading and paragraph styles:
 ![Syncfusion Wpf Markdown Viewer](Images/wpf-markdown-viewer-customization.WEBP)
 
-N> Customizing theme colors and fonts in the application using WPF ThemeStudio [`ThemeSettings`](https://help.syncfusion.com/wpf/themes/skin-manager#customization) is not supported in `MarkdownViewer` when WPF ThemeStudio themes are applied.
+N> Customizing theme colors and fonts in the application using WPF ThemeStudio [`ThemeSettings`](https://help.syncfusion.com/wpf/themes/skin-manager#customization) is not supported in `Markdown Viewer` when WPF ThemeStudio themes are applied.

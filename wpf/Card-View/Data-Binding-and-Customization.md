@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Data Binding and Customization in WPF CardView | Syncfusion®
-description: Data-binding and customization support in WPF CardView enables seamless data integration, flexible layouts, custom templates, and personalized card appearances.
+title: Data Binding and Customization in WPF Card View | Syncfusion®
+description: Data-binding and customization support in WPF Card View enables seamless data integration, flexible layouts, custom templates, and personalized card appearances.
 platform: wpf
-control: CardView
+control: Card View
 documentation: ug
 ---
 
-# Data Binding and Customization in WPF CardView
+# Data Binding and Customization in WPF Card View
 
-This section describes the data binding support and control customization supports available in the [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
+This section describes the data binding support and control customization supports available in the [Card View](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
 
 ## Data binding to objects
 
-The `CardView` control can bound to an external source to auto create [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html) and display the data using `ItemsSource` property. When you are auto generating the `CardViewItem` using `ItemsSource`, you need to use [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_HeaderTemplate) or `ItemContainerStyle` to define header and use the `ItemTemplate` or  `ItemContainerStyle` to display the content of the `CardViewItem` item.
+The `Card View` control can bound to an external source to auto create [Card View Item](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html) and display the data using `ItemsSource` property. When you are auto generating the `Card View Item` using `ItemsSource`, you need to use [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_HeaderTemplate) or `ItemContainerStyle` to define header and use the `ItemTemplate` or  `ItemContainerStyle` to display the content of the `Card View Item` item.
 
 N> You can use the grouping, sorting, filtering and editing functionalities only by populating the card items through the `ItemsSource` property.
 
@@ -113,13 +113,13 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![wpf card view items added into CardView control using data binding](Data-Binding-to-Objects_images/databinding_withUI.png)
+![wpf card view items added into Card View control using data binding](Data-Binding-to-Objects_images/databinding_withUI.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
 
-## Custom UI for CardViewItem header
+## Custom UI for Card View Item header
 
-You can change the appearance of card item's header by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_HeaderTemplate) property. The `DataContext` of the `HeaderTemplate` property is `CardViewItem`.
+You can change the appearance of card item's header by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_HeaderTemplate) property. The `DataContext` of the `HeaderTemplate` property is `Card View Item`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -144,9 +144,9 @@ You can change the appearance of card item's header by using the [HeaderTemplate
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/CustomUI)
 
-## Custom UI for CardViewItem content
+## Custom UI for Card View Item content
 
-You can change the appearance of card item's content by using the `ItemTemplate` property. The `DataContext` of the `ItemTemplate` property is `CardViewItem`.
+You can change the appearance of card item's content by using the `ItemTemplate` property. The `DataContext` of the `ItemTemplate` property is `Card View Item`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -207,9 +207,9 @@ You can change the appearance of card item's content by using the `ItemTemplate`
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/CustomUI)
 
-## Custom UI for edit mode CardViewItem
+## Custom UI for edit mode Card View Item
 
-You can change the appearance of card items in edit mode by using `EditItemTemplate` property. The `DataContext` of `EditItemTemplate` property is `CardViewItem`.
+You can change the appearance of card items in edit mode by using `EditItemTemplate` property. The `DataContext` of `EditItemTemplate` property is `Card View Item`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -281,7 +281,7 @@ cardView.CanEdit = true;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/CustomUI)
 
-## Different UI styles for specific CardViewItem
+## Different UI styles for specific Card View Item
 
 You can change the UI style of specific card item based on the field values or any other logics by using the `ItemContainerStyleSelector` property.
 
@@ -386,7 +386,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change flow direction
 
-You can change the flow direction of the `CardView` control layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `Card View` control layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -409,7 +409,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Theme
 
-You can customize the appearance of the `CardView` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `CardView` control.
+You can customize the appearance of the `Card View` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `Card View` control.
 
 * Blend
 * Lime
@@ -456,8 +456,8 @@ SfSkinManager.SetVisualStyle(cardView, VisualStyles.Blend);
 {% endhighlight %}
 {% endtabs %}
 
-![CardView control with Blend visual style](Data-Binding-to-Objects_images/blend.png)
+![Card View control with Blend visual style](Data-Binding-to-Objects_images/blend.png)
 
-Here, the `Blend` style is applied to the `CardView` control.
+Here, the `Blend` style is applied to the `Card View` control.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Themes)

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Sorting Mode in WPF CardView | Syncfusion®
-description: Sorting mode support in WPF CardView enables users to organize cards efficiently by field values, improving data analysis, navigation, and presentation.
+title: Sorting Mode in WPF Card View | Syncfusion®
+description: Sorting mode support in WPF Card View enables users to organize cards efficiently by field values, improving data analysis, navigation, and presentation.
 platform: wpf
-control: CardView
+control: Card View
 documentation: ug
 ---
 
-# Sorting Mode in WPF CardView
+# Sorting Mode in WPF Card View
 
-This section describes how to enable or disable the sorting mode and perform sort operations in [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
+This section describes how to enable or disable the sorting mode and perform sort operations in [Card View](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
 
 ## Enable/disable the sorting mode
 
@@ -31,9 +31,9 @@ cardView.CanSort = true;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
 
-## Sort the CardViewItems
+## Sort the Card View Items
 
-You can sort the cards inside the `CardView` control either default order, ascending or descending order by clicking the field name listed in the header. If you want to disable the sorting, use the [CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanSort) property value as `false`.
+You can sort the cards inside the `Card View` control either default order, ascending or descending order by clicking the field name listed in the header. If you want to disable the sorting, use the [CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanSort) property value as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,13 +139,13 @@ cardView.CanSort = true;
 
 ![wpf card view items sorted in ascending and descending order](Grouping-Sorting-Filtering_images/sorting.gif)
 
-Here, `CardViewItems` sorted based on `FirstName` field.
+Here, `Card View Items` sorted based on `FirstName` field.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
 
-## Sort the grouped CardViewItems
+## Sort the grouped Card View Items
 
-You can sort the grouped items either default order, ascending or descending order by directly clicking the grouped fields that is available in the dropping region of the `CardView` header.
+You can sort the grouped items either default order, ascending or descending order by directly clicking the grouped fields that is available in the dropping region of the `Card View` header.
 
 {% tabs %}
 {% highlight XAML %}

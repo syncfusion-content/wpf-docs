@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items in WPF SfTreeNavigator | Syncfusion®
-description: Populating Items in WPF SfTreeNavigator enables adding, binding, and displaying hierarchical data for structured navigation scenarios.
+title: Populating Items in WPF Tree Navigator | Syncfusion®
+description: Populating Items in WPF Tree Navigator enables adding, binding, and displaying hierarchical data for structured navigation scenarios.
 platform: wpf
-control: SfTreeNavigator 
+control: Tree Navigator 
 documentation: ug
 ---
 
-# Populating Items in WPF SfTreeNavigator
+# Populating Items in WPF Tree Navigator
 
 ## Items source 
 
@@ -128,5 +128,5 @@ This will populate the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncf
 
 ## See Also
 
-[How to enable/disable menu items in WPF SfTreeNavigator using MVVM?](https://www.syncfusion.com/forums/153051/enable-disable-items-in-sftreenavigator)
+[How to enable/disable menu items in WPF Tree Navigator using MVVM?](https://www.syncfusion.com/forums/153051/enable-disable-items-in-sftreenavigator)
 

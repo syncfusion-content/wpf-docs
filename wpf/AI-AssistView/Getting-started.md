@@ -1,28 +1,28 @@
 ---
 layout: post
-title: Getting Started with WPF SfAIAssistView | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF SfAIAssistView control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF AI AssistView | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF AI AssistView control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: AI AssistView
 documentation: ug
 ---
 
-# Getting Started with WPF SfAIAssistView
+# Getting Started with WPF AI AssistView
 
-This section explains the steps required to add the WPF [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control with its basic features.
+This section explains the steps required to add the WPF [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control with its basic features.
 
-## Structure of SfAIAssistView
+## Structure of AI AssistView
 
-The following diagram illustrates the layout of the SfAIAssistView control, including the header, message list, and input area.
+The following diagram illustrates the layout of the AI AssistView control, including the header, message list, and input area.
 
-![WPF SfAIAssistView Structure](aiassistview_images/wpf_aiassistview_control_structure.png)
+![WPF AI AssistView Structure](aiassistview_images/wpf_aiassistview_control_structure.png)
 
-## Adding WPF SfAIAssistView via XAML
+## Adding WPF AI AssistView via XAML
 
 1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
 2. Add reference to [Syncfusion.SfChat.Wpf](https://www.nuget.org/packages/Syncfusion.SfChat.Wpf) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Chat` in XAML or C# code.
-4. Initialize the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
+4. Initialize the [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -44,12 +44,12 @@ The following diagram illustrates the layout of the SfAIAssistView control, incl
 {% endhighlight %}
 {% endtabs %}
 
-## Adding WPF SfAIAssistview via C#
+## Adding WPF AI AssistView via C#
 
 1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
 2. Add reference to [Syncfusion.SfChat.Wpf](https://www.nuget.org/packages/Syncfusion.SfChat.Wpf) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Chat` in XAML or C# code.
-4. Initialize the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
+4. Initialize the [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
 
 {% tabs %}
 {% highlight C# %}

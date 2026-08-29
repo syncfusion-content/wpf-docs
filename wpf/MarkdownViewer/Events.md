@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Events in WPF SfMarkdownViewer | Syncfusion®
-description: Events in WPF SfMarkdownViewer provide notifications for user interactions and content rendering, enabling customized behavior and event-driven functionality.
+title: Events in WPF Markdown Viewer | Syncfusion®
+description: Events in WPF Markdown Viewer provide notifications for user interactions and content rendering, enabling customized behavior and event-driven functionality.
 platform: wpf
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 
-# Events in WPF SfMarkdownViewer
+# Events in WPF Markdown Viewer
 
-This section explains how to handle hyperlink interactions in the [SfMarkdownViewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) using the [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event.
+This section explains how to handle hyperlink interactions in the [Markdown Viewer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) using the [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event.
 
 The [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event is triggered when a hyperlink in the Markdown content is clicked. It provides access to the clicked URL and allows you to control or cancel the default navigation behavior.
 

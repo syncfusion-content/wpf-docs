@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion® WPF SfMarkdownViewer Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF SfMarkdownViewer control, its rendering capabilities, and key features.
+title: About Syncfusion® WPF Markdown Viewer Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Markdown Viewer control, its rendering capabilities, and key features.
 platform: wpf
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 
-# About Syncfusion® WPF SfMarkdownViewer Control
+# About Syncfusion® WPF Markdown Viewer Control
 
 The [WPF Markdown Viewer](https://www.syncfusion.com/wpf-controls) is a UI control that converts Markdown input into a fully formatted visual representation without requiring external rendering engines or manual formatting. It provides a flexible way to display rich Markdown content within WPF applications, making it ideal for presenting documentation, release notes, help content, and other Markdown‑based information.
 

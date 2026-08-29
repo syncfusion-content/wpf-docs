@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grouping Mode in WPF CardView | Syncfusion®
-description: Grouping mode support in WPF CardView helps organize cards into logical categories based on field values, improving data readability and navigation.
+title: Grouping Mode in WPF Card View | Syncfusion®
+description: Grouping mode support in WPF Card View helps organize cards into logical categories based on field values, improving data readability and navigation.
 platform: wpf
-control: CardView
+control: Card View
 documentation: ug
 ---
 
-# Grouping Mode in WPF CardView
+# Grouping Mode in WPF Card View
 
-This section describes how to enable or disable the grouping mode and perform group operations in [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
+This section describes how to enable or disable the grouping mode and perform group operations in [Card View](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
 
 ## Enable/disable the grouping mode
 
@@ -31,9 +31,9 @@ cardView.CanGroup = true;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
 
-## Group the CardViewItems
+## Group the Card View Items
 
-You can group the cards inside the `CardView` control by dragging the available field from the list and drop it into the dropping region of the `CardView` control header. Based on the dropped field, the cards are grouped.
+You can group the cards inside the `Card View` control by dragging the available field from the list and drop it into the dropping region of the `Card View` control header. Based on the dropped field, the cards are grouped.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,7 +139,7 @@ cardView.CanGroup = true;
 
 ![wpf card view items grouped based on age field](Grouping-Sorting-Filtering_images/grouping.gif)
 
-Here, `CardViewItems` grouped based on `Age` field.
+Here, `Card View Items` grouped based on `Age` field.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
 
@@ -163,9 +163,9 @@ Here, the cards are grouped programmatically based on the `Age` and `FirstName` 
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/CardView-EditMode)
 
-## Nested grouping of CardViewItems
+## Nested grouping of Card View Items
 
-You can group the card items in multiple nested level by dragging the required fields from the list and drop it into the dropping region of the `CardView` control header. Based on the fields add into the dropping region, the card items will be  grouped in nested level.
+You can group the card items in multiple nested level by dragging the required fields from the list and drop it into the dropping region of the `Card View` control header. Based on the fields add into the dropping region, the card items will be  grouped in nested level.
 
 {% tabs %}
 {% highlight XAML %}
