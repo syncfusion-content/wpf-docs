@@ -61,6 +61,7 @@ The value assigned by using the InputGestureText property will be displayed in M
     <shared:MenuItemAdv Header="Build" />
 </shared:MenuAdv>
 
+
 {% endhighlight %}
 
 ![InputGestureText-Support_img1](InputGestureText-Support_images/InputGestureText-Support_img1.png)

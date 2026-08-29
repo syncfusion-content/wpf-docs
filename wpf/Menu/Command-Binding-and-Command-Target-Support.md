@@ -72,6 +72,7 @@ To use the Command Binding support in an application users have to create a Dele
     </shared:MenuItemAdv>
 </shared:MenuAdv>
 
+
 {% endhighlight %}
 
 {% highlight C# %}
