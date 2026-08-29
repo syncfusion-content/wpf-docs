@@ -8,7 +8,7 @@ documentation: ug
 ---
 # CornerRadius in WPF Chromeless Window
 
-The corner radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the window, use the [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Chromeless Window.html#Syncfusion_Windows_Shared_Chromeless Window_CornerRadius) property of the Chromeless Window.
+The corner radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the window, use the [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_Chromeless Window_CornerRadius) property of the Chromeless Window.
 
 N> `AllowsTransparency` must be set to `True` for the rounded corners to be visible. Without it, the non-client area of the window clips the rounded corners.
 
