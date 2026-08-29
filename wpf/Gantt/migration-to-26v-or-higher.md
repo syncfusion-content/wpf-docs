@@ -357,13 +357,13 @@ VS2010
 <tr>
 <td>{{'[TreeGridNodeDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_TreeGridNodeDragging)'| markdownify }}</td>
 <td>TreeGridNodeDraggingEventArgs</td>
-<td>Provides data for the TreeGridNodeDragging event, which occurs when an item is being dragged over the GanttControl.</td>
+<td>Provides data for the TreeGridNodeDragging event, which occurs when an item is being dragged over the Control.</td>
 </tr>
 
 <tr>
 <td>{{'[TreeGridNodeDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_TreeGridNodeDrop)'| markdownify }}</td>
 <td>TreeGridNodeDropEventArgs</td>
-<td>Provides data for the TreeGridNodeDrop event, which occurs when an item is to be dropped within the GanttControl.</td>
+<td>Provides data for the TreeGridNodeDrop event, which occurs when an item is to be dropped within the Control.</td>
 </tr>
 
 <tr>
@@ -536,7 +536,7 @@ GanttGridNodeCollapsedCommand</td>
 </table>
 
 ### Deprecated events
-These events are deprecated. The `GridTreeControl` has been replaced by the `SfTreeGrid` in the `GanttControl`.
+These events are deprecated. The `GridTreeControl` has been replaced by the `SfTreeGrid` in the `WPF Gantt`.
 <table>
 <tr>
 <th>Structures</th>

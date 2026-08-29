@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Placeholder in WPF SfKanban | Syncfusion
-description: Learn about Placeholder support in Syncfusion WPF SfKanban using PlaceholderStyle and PlaceholderTemplate properties.
+title: Placeholder in WPF Kanban Board | Syncfusion
+description: Learn about Placeholder support in Syncfusion WPF Kanban Board using PlaceholderStyle and PlaceholderTemplate properties.
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
 
-# Placeholder in WPF SfKanban
+# Placeholder in WPF Kanban Board
 
 The placeholder denotes a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). It appears while dragging a card over the column.
 
