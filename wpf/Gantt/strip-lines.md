@@ -9,7 +9,7 @@ documentation: ug
 
 # Strip Lines in WPF Gantt
 
-The Gantt control provides support to add strip lines in the Gantt chart region that denote an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
+The control provides support to add strip lines in the Gantt chart region that denote an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
 
 ## Features of Strip Lines in Essential Gantt
 
@@ -18,9 +18,9 @@ Strip lines can be repeatable in the Gantt chart region based on repeat behavior
 * You can modify the content or appearance of the strip lines at run time by changing the values of the underlying collection source.
 * The visibility of strip lines can be toggled using the [`ShowStripLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowStripLines) property in the Gantt control.
 
-The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of `StripLineInfo` objects and process it to draw the strip lines.
+The control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of `StripLineInfo` objects and process it to draw the strip lines.
 
-#### Repeat behavior
+### Repeat behavior
 
 The available repeat behaviors are as follows:
 
@@ -31,9 +31,9 @@ The available repeat behaviors are as follows:
 * Hour
 * Minute
 
-#### Style selector
+### Style selector
 Used to pass the style of the strip lines dynamically, based on constraints.
-#### Template selector
+### Template selector
 Used to pass the content template of the strip lines dynamically, based on constraints.
 
 ## Types of Strip Lines
@@ -157,7 +157,7 @@ double</td></tr>
 </table>
 
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 * You can mark the important dates and meetings in the scheduled time line.
 * Strip lines help you to avoid missing important events.
@@ -227,7 +227,7 @@ Event</td></tr>
 
 ## Adding strip lines to application
 
-#### Regular strip lines
+### Regular strip lines
 
 The following code sample demonstrates how to bind the regular strip line collection to strip lines.
 
@@ -429,7 +429,7 @@ The following screenshot illustrates how to render the regular strip lines.
 Strip lines in the Gantt chart
 {:.caption}
 
-#### Absolute Strip Lines
+### Absolute Strip Lines
 
 The following code sample demonstrates how to bind the absolute strip line collection to strip lines.
 

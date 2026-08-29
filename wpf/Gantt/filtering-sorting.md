@@ -27,7 +27,7 @@ this.ganttControl.AllowFiltering = true;
 {% endhighlight  %}
 {% endtabs %}
 
-N> By default, the WPF GanttControl uses the `Extended` filter level. This setting ensures that all parent nodes of any node that meets the filter criteria are shown.
+N> By default, the WPF Gantt uses the `Extended` filter level. This setting ensures that all parent nodes of any node that meets the filter criteria are shown.
 
 ## Sorting
 The [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) allows you to sort column data in either ascending or descending order. When sorting is applied, the rows are rearranged based on the specified sort criteria. You can sort the data by touching or clicking the column header. Sorting can be enabled by setting the [AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AllowSorting) property to `true`.
