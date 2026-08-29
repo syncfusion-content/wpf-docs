@@ -231,7 +231,7 @@ The following image shows Built-in Zooming in Gantt:
 
 ![gantt-control-built-in-zooming](Zooming_images/gantt-control-built-in-zooming.png)
 
-#### Samples Link
+### Samples Link
 
 To view samples:
 
@@ -251,7 +251,7 @@ In custom zooming, everything is handled at the application level. You can chang
 
 When you want to view tasks that are scheduled on a month unit in the day/hours unit, you would normally have to restart the application by changing the schedule type to a day/hours unit. Zooming allows you to easily zoom in to the day/hours unit by providing the zoom factor without restarting the application.
 
-#### Adding Custom Zooming to an Application
+### Adding Custom Zooming to an Application
 
 To add custom zooming:
 
@@ -549,7 +549,7 @@ The following image shows Custom Zooming in Gantt:
 
 ![gantt-control-custom-zooming](Zooming_images/gantt-control-custom-zooming.png)
 
-#### Samples Link
+### Samples Link
 
 To view samples:
 
@@ -599,7 +599,7 @@ double</td></tr>
 </table>
 
 
-#### Events
+### Events
 
 <table>
 <tr>

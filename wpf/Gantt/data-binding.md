@@ -134,7 +134,7 @@ The following image shows the binding TaskDetails:
 
 ![gantt-control-taskdetails-binding](Data-Binding_images/gantt-control-taskdetails-binding.png)
 
-#### Samples Link
+### Samples Link
 
 To view samples: 
 

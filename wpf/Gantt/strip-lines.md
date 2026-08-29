@@ -31,9 +31,9 @@ The available repeat behaviors are as follows:
 * Hour
 * Minute
 
-#### Style selector
+### Style selector
 Used to pass the style of the strip lines dynamically, based on constraints.
-#### Template selector
+### Template selector
 Used to pass the content template of the strip lines dynamically, based on constraints.
 
 ## Types of Strip Lines
