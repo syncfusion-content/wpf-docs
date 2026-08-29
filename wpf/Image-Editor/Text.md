@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text of Syncfusion SfImageEditor WPF.
-description: This section explains how the image can be annotated by adding the required text on it and also it can be customized.
+title: Text in Syncfusion SfImageEditor WPF
+description: This section explains how an image can be annotated by adding the required text on it and how the text can be customized.
 platform: wpf
 control: SfImageEditor
 documentation: ug
@@ -31,9 +31,9 @@ The following properties of the added text can be customized:
 * Alignment (center, left, and right)
 * Text effects (bold, italic, and underline)
 
-Upon selecting the Text icon in the toolbar, a sub toolbar will be generated below the main toolbar for providing the text customizing options. 
+Upon selecting the Text icon in the toolbar, a sub-toolbar will be generated below the main toolbar for providing the text customizing options. 
 
->N Text needs to be selected to apply the customization from the sub toolbar.
+> N The text needs to be selected to apply the customization from the sub-toolbar.
 
 ### Background
 
@@ -67,14 +67,25 @@ You can add text to an image using the AddText method programmatically. This met
 * TextSettings - Allows customization of the text's appearance, including options for background, font family, font size, and font color. You can adjust the alignment (center, left, right) and improve the text with effects such as bold, italic, and underline.
 
 {% tabs %} 
-{% highlight XAML %} 
+{% highlight XAML %}
 
-<editor:SfImageEditor x:Name="editor"                         
-                      Loaded="OnImageEditorLoaded">
-</editor:SfImageEditor>
+<Window x:Class="SfImageEditorSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:editor="clr-namespace:Syncfusion.UI.Xaml.ImageEditor;assembly=Syncfusion.SfImageEditor.WPF"
+        Title="SfImageEditor Sample" Height="600" Width="800">
+    <Grid>
+        <editor:SfImageEditor x:Name="editor"
+                              Loaded="OnImageEditorLoaded">
+        </editor:SfImageEditor>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# hl_lines="5" %}
+
+using System.Windows;
+using Syncfusion.UI.Xaml.ImageEditor;
 
 this.editor.Loaded += this.OnImageEditorLoaded;
 
@@ -84,13 +95,13 @@ private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-{% endtabs %} 
+{% endtabs %}
 
 ## Text settings
 
 Using the following properties in TextSettings, text can be customized.
 
-* [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Background) - Specifies the background color of the text annotation. The default value is `Brush.Transparent.`
+* [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Background) - Specifies the background color of the text annotation. The default value is `Brush.Transparent`.
 * [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_FontFamily) - Changes the font family of the text.
 * [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_FontSize) - Changes the font size of the text.
 * [`Color`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_Color) - Modifies the font color of the text.
@@ -105,13 +116,25 @@ Using the following properties in TextSettings, text can be customized.
 {% tabs %} 
 {% highlight XAML %}
 
-<editor:SfImageEditor x:Name="editor"                         
-                      Loaded="OnImageEditorLoaded">
-</editor:SfImageEditor>
+<Window x:Class="SfImageEditorSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:editor="clr-namespace:Syncfusion.UI.Xaml.ImageEditor;assembly=Syncfusion.SfImageEditor.WPF"
+        Title="SfImageEditor Sample" Height="600" Width="800">
+    <Grid>
+        <editor:SfImageEditor x:Name="editor"
+                              Loaded="OnImageEditorLoaded">
+        </editor:SfImageEditor>
+    </Grid>
+</Window>
 
 {% endhighlight %}
-{% highlight C# %} 
-       
+{% highlight C# %}
+
+using System.Windows;
+using System.Windows.Media;
+using Syncfusion.UI.Xaml.ImageEditor;
+
 this.editor.Loaded += this.OnImageEditorLoaded;
 
 private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
@@ -130,14 +153,14 @@ private void OnImageEditorLoaded(object sender, RoutedEventArgs e)
     textSettings.FontFamily = new FontFamily("Bell MT");
     textSettings.FontSize = 22;
     textSettings.Color = new SolidColorBrush(Colors.Teal);
-    textSettings.TextEffects =  TextEffects.Italic;
+    textSettings.TextEffects = TextEffects.Italic;
     textSettings.Bounds = new Rect(50, 23, 30, 15);
     textSettings.TextAlignment = TextAlignment.Center;
     this.editor.AddText("The happiness of your \nlife depend upon the \nquality of your thoughts.", textSettings);
 }
 
 {% endhighlight %}
-{% endtabs %} 
+{% endtabs %}
 
 ![Text-settings-in-WPF-Image-editor](Images/text-settings-in-wpf-image-editor.jpg)   
 
