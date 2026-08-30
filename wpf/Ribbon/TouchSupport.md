@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Touch Support in WPF Ribbon Control
 
-The Ribbon control has touch support and it provides a Touch UI which is easy to access the element in Ribbon. 
+The WPF Ribbon Control includes touch support and provides a Touch UI for easy access to its elements.
 
 ### How to enable touch in RibbonWindow
 

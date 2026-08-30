@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonListBox in WPF Ribbon Control
 
-`RibbonListBox` control is used to display a list of items in a Ribbon. It accepts any type of content as RibbonListBox items, but uses `ListBoxItem` by default.
+`RibbonListBox` control is used to display a list of items in a WPF Ribbon Control. It accepts any type of content as RibbonListBox items, but uses `ListBoxItem` by default.
 
 ## Add ListBox to the RibbonBar
 

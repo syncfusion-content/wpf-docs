@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Dealing with Ribbon in WPF Ribbon Control
 
-The Ribbon can be changed into three different states: `Normal`, `Hide`, and `Adorner`.
+The WPF Ribbon Control can be changed into three different states: `Normal`, `Hide`, and `Adorner`.
 
 ## Three types of RibbonState
 
-**Normal** – Ribbon control displays the RibbonTab content and the window content is arranged below the Ribbon. This is the default state
+**Normal** - WPF Ribbon Control control displays the RibbonTab content and the window content is arranged below the WPF Ribbon Control. This is the default state
 
 {% tabs %}
 
@@ -105,7 +105,7 @@ The Ribbon can be changed into three different states: `Normal`, `Hide`, and `Ad
 
 ## How to change the RibbonState in run time
 
-Ribbon State can also be changed at the Runtime.In the below code, Ribbon State has been changed dynamically in the button click event
+WPF Ribbon Control State can also be changed at the Runtime.In the below code, WPF Ribbon Control State has been changed dynamically in the button click event
 
 {% tabs %}
 
@@ -156,15 +156,15 @@ _ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Adorner
 {% endtabs %}
 
 ## Resize Ribbon Window
-The ribbon control dynamically resizes as width of the window decreases, when the windows border touches the last placed Ribbon bar, the Ribbon will begin to resize its elements with the following priority.
+The WPF Ribbon Control dynamically resizes as width of the window decreases, when the windows border touches the last placed RibbonBar, the WPF Ribbon Control will begin to resize its elements with the following priority.
 
-1. **Compress Gallery** - If there is a [`RibbonGallery`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonGallery.html) in a [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html), it will be resized until it is converted to a dropdown button. Once it is converted into dropdown button, then the Ribbon will begin to resize the [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items.
+1. **Compress Gallery** - If there is a [`RibbonGallery`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonGallery.html) in a [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html), it will be resized until it is converted to a dropdown button. Once it is converted into dropdown button, then the WPF Ribbon Control will begin to resize the [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items.
 
-2. **Compress Large items** - When there are three or more continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) items, then Ribbon will reduce each pair of three continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items, starting from the right side, into [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items. Once each pair of three continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items are converted into [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form, then Ribbon will begin to resize the [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items.
+2. **Compress Large items** - When there are three or more continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) items, then WPF Ribbon Control will reduce each pair of three continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items, starting from the right side, into [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items. Once each pair of three continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items are converted into [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form, then WPF Ribbon Control will begin to resize the [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items.
 
-3. **Compress Small items** - When there are three or more continuous [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) items, then Ribbon will reduce each pair of three continuous [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items, starting from the right side, into [`ExtraSmall`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items. Once each pair of three continuous [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items are converted into [`ExtraSmall`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form, then Ribbon will begin convert the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) into dropdown button.
+3. **Compress Small items** - When there are three or more continuous [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) items, then WPF Ribbon Control will reduce each pair of three continuous [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items, starting from the right side, into [`ExtraSmall`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items. Once each pair of three continuous [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items are converted into [`ExtraSmall`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form, then WPF Ribbon Control will begin convert the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) into dropdown button.
 
-4. **Collapsing the RibbonBar** - When there are no three or more continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) or [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items and when there are other ribbon items such as CheckBox, RadioButton, ComboBox, TextBox, ListBox or any other custom items, then, starting with the last bar, each [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will be converted into a dropdown button, with its items accessible by clicking on the dropdown arrow.
+4. **Collapsing the RibbonBar** - When there are no three or more continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) or [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items and when there are other WPF Ribbon Control items such as CheckBox, RadioButton, ComboBox, TextBox, ListBox or any other custom items, then, starting with the last bar, each [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will be converted into a dropdown button, with its items accessible by clicking on the dropdown arrow.
 
 When the size of the window is increased, the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will become visible if the spacing between the window border and the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) is large enough to accommodate its items. These items will then be expanded in the order, starting with the most recently collapsed item and ending with the initially collapsed item.
 
@@ -187,10 +187,10 @@ The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 ## RibbonBar Positioning
 
-The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) can be positioned either at the left or right side of the [`Ribbon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_Position) property. The RibbonBar's `Position` property has following two values,
+The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) can be positioned either at the left or right side of the [`WPF Ribbon Control`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_Position) property. The RibbonBar's `Position` property has following two values,
 
-* Left - RibbonBar is placed on the left side of the Ribbon
-* Right - RibbonBar is placed on the right side of the Ribbon
+* Left - RibbonBar is placed on the left side of the WPF Ribbon Control
+* Right - RibbonBar is placed on the right side of the WPF Ribbon Control
 
 The following code snippet illustrates this RibbonBar positioning support.
 
@@ -640,17 +640,17 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Resize based on collapse order
 
-The Ribbon control provides support to resize the RibbonBar's based on the order specified in the [`SizeReductionOrder`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html#Syncfusion_Windows_Tools_Controls_RibbonTab_SizeReductionOrder) property in the [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html). The `SizeReductionOrder` property accepts the names of the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) that determines the order in which [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) size is reduced. The Ribbon will begin to resize its elements with the following priority. 
+The WPF Ribbon Control provides support to resize the RibbonBar's based on the order specified in the [`SizeReductionOrder`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html#Syncfusion_Windows_Tools_Controls_RibbonTab_SizeReductionOrder) property in the [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html). The `SizeReductionOrder` property accepts the names of the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) that determines the order in which [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) size is reduced. The WPF Ribbon Control will begin to resize its elements with the following priority. 
 
 1. **Compressing the RibbonBar specified in the SizeReductionOrder:**
 
-    a)  The Ribbon will initially retrieve the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) corresponding to the first name specified in the `SizeReductionOrder` and resize its elements based on its SizeForm. This [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will be converted to a dropdown if there are no three or more consecutive Large or Small size form items.
+    a)  The WPF Ribbon Control will initially retrieve the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) corresponding to the first name specified in the `SizeReductionOrder` and resize its elements based on its SizeForm. This [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will be converted to a dropdown if there are no three or more consecutive Large or Small size form items.
 
-    b)	Once the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) corresponding to the first name specified in the `SizeReductionOrder` is collapsed, the Ribbon will retrieve the next name and its corresponding [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) and begin resizing in the same manner as in the previous step. This process continues until all of the `SizeReductionOrder` property's corresponding RibbonBar's are collapsed into a dropdown.
+    b)	Once the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) corresponding to the first name specified in the `SizeReductionOrder` is collapsed, the WPF Ribbon Control will retrieve the next name and its corresponding [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) and begin resizing in the same manner as in the previous step. This process continues until all of the `SizeReductionOrder` property's corresponding RibbonBar's are collapsed into a dropdown.
 
 2. **Compressing the other RibbonBar’s:**
 
-    The remaining RibbonBar's that are not specified in the `SizeReductionOrder` property will be resized according to the Ribbon's default resizing behaviour once the corresponding [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) of the names specified in the `SizeReductionOrder` property are resized and collapsed. To know more about the default resizing behavior, refer [here](https://help.syncfusion.com/wpf/ribbon/dealingwithribbon#resize-ribbon-window).
+    The remaining RibbonBar's that are not specified in the `SizeReductionOrder` property will be resized according to the WPF Ribbon Control's default resizing behaviour once the corresponding [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) of the names specified in the `SizeReductionOrder` property are resized and collapsed. To know more about the default resizing behavior, refer [here](https://help.syncfusion.com/wpf/ribbon/dealingwithribbon#resize-ribbon-window).
 
 When the size of the window is increased, the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will become visible if the spacing between the window border and the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) is large enough to accommodate its items. These items will then be expanded in the order, starting with the most recently collapsed item and ending with the initially collapsed item.
 
@@ -1937,7 +1937,7 @@ This ContextTabGroup can also be kept hidden and shown while required cases like
 
 ![WPF Ribbon displays ContextTabGroup](GroupingRibbonTabsusingContextTabGroups_images/wpf-ribbon-context-tab-group.jpeg)
 
-N> ContextTabGroup header visuals are supported only when the Ribbon is hosted in a `RibbonWindow`. When the Ribbon is hosted in other window types, such as `ChromelessWindow` or a standard Microsoft Window, the contextual tabs are displayed, but the corresponding ContextTabGroup header is not rendered.
+N> ContextTabGroup header visuals are supported only when the WPF Ribbon Control is hosted in a `RibbonWindow`. When the WPF Ribbon Control is hosted in other window types, such as `ChromelessWindow` or a standard Microsoft Window, the contextual tabs are displayed, but the corresponding ContextTabGroup header is not rendered.
 
 ## Add ContextTabGroup to the simplified layout
 
@@ -2869,7 +2869,7 @@ End Class
 
 ## Detecting selection changes in RibbonTab
 
-The [`SelectionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) event notifies when the user attempts to switch tab in the Ribbon control. The [`SelectionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) event  receives an argument of the type **CancelEventArgs** that allows us to cancel the switching operation. 
+The [`SelectionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) event notifies when the user attempts to switch tab in the WPF Ribbon Control control. The [`SelectionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) event  receives an argument of the type **CancelEventArgs** that allows us to cancel the switching operation. 
 
 {% tabs %}
 
@@ -2910,7 +2910,7 @@ End Sub
 
 ## Customizing the Header in RibbonTab
 
-The Ribbon control allows customization of the tab headers using The CaptionTemplate property. This enables users to enhance the visual appearance of tabs by adding icons and styled caption text.
+The WPF Ribbon Control allows customization of the tab headers using The CaptionTemplate property. This enables users to enhance the visual appearance of tabs by adding icons and styled caption text.
 
 Below is an example where the Home, Send / Receive, and Folder tabs are customized with an icon and caption text:
  
