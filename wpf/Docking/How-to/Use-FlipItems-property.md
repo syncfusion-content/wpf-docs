@@ -7,9 +7,9 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to use FlipItems property in WPF DockingManager
+# How to use FlipItems property in WPF Docking Control
 
-Returns the collection of children from DockingManager, without duplication of elements.
+Returns the collection of children from WPF Docking Control, without duplication of elements.
 
 {% highlight xaml %}
 
