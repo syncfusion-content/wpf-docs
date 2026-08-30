@@ -9,7 +9,7 @@ documentation: ug
 
 # How to resize FloatWindow dynamically in WPF Docking
 
-Normally SizetoContentInFloat property can be used to resize the FloatWindow to its child size while initializing the FloatWindow. But when Float child of DockingManager is resized,dynamically it doesn’t have any options to resize the FloatWindow to that content size. FloatWindowHeight and FloatWindowWidth are introduced for this purpose.. The usage has been shown below.
+Normally SizetoContentInFloat property can be used to resize the FloatWindow to its child size while initializing the FloatWindow. But when Float child of WPF Docking Control is resized,dynamically it doesn’t have any options to resize the FloatWindow to that content size. FloatWindowHeight and FloatWindowWidth are introduced for this purpose.. The usage has been shown below.
 
 {% tabs %}
 

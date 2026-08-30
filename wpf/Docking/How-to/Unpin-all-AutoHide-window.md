@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to unpin all AutoHide window in WPF DockingManager
+# How to unpin all AutoHide window in WPF Docking Control
 
 You can Unpin all AutoHidden windows by using the method UnPinAutoHide().This can be shown below:
 

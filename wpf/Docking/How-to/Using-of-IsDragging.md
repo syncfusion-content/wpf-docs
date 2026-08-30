@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to use IsDragging in WPF DockingManager
+# How to use IsDragging in WPF Docking Control
 
 IsDragging property is used to find whether dragging takes place or not.
 

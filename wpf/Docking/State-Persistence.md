@@ -6,15 +6,15 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# State Persistence in WPF DockingManager Control
+# State Persistence in WPF Docking Control
 
 State persistence is the combined process of serialization and deserialization. 
 
-DockingManager provides built-in state persistence functionality to save and load at different states and sides. It also provides [DeleteDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DeleteDockState().html) and [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ResetState) Method to work on state functionality.
+WPF Docking Control provides built-in state persistence functionality to save and load at different states and sides. It also provides [DeleteDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DeleteDockState().html) and [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ResetState) Method to work on state functionality.
 
-To reset the DockingManager state, call [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ResetState) method of DockingManager instance.
+To reset the WPF Docking Control state, call [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ResetState) method of WPF Docking Control instance.
 
-N> DockingManager serializes and de-serializes the controls using `Name` property. So, ensure to set `Name` property for all child controls. The name of children in saved layout should be same as the name of children in DockingManager to load the saved layout. `LoadDockState` returns `true` or `false` to notify whether de-serialization process has been successful.
+N> WPF Docking Control serializes and de-serializes the controls using `Name` property. So, ensure to set `Name` property for all child controls. The name of children in saved layout should be same as the name of children in WPF Docking Control to load the saved layout. `LoadDockState` returns `true` or `false` to notify whether de-serialization process has been successful.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ DockingManager1.ResetState()
 
 {% endtabs %}
 
-To delete the DockState of the DockingManager, call [DeleteDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DeleteDockState.html) of DockingManager instance
+To delete the DockState of the WPF Docking Control, call [DeleteDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DeleteDockState.html) of WPF Docking Control instance
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ DockingManager1.DeleteDockState()
 
 ## Auto Save / Load functionalities
 
-DockingManager supports AutoSave support, that allows to persist its state automatically. To enable this functionality, set the [PersistState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_PersistState) property as `True`. The default value of the [PersistState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_PersistState) property is `False`. It saves the state of the DockingManager in an isolated storage format while [WindowClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html). 
+WPF Docking Control supports AutoSave support, that allows to persist its state automatically. To enable this functionality, set the [PersistState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_PersistState) property as `True`. The default value of the [PersistState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_PersistState) property is `False`. It saves the state of the WPF Docking Control in an isolated storage format while [WindowClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html). 
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ DockingManager1.PersistState = True
 
 {% endtabs %}
 
-To load the AutoPersist state of the DockingManager, call the [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_LoadDockState().html) method of the DockingManager in its loaded event.
+To load the AutoPersist state of the WPF Docking Control, call the [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_LoadDockState().html) method of the WPF Docking Control in its loaded event.
 
 {% tabs %}
 
@@ -101,21 +101,21 @@ End Sub
 
 ## Serialize a complex layout
 
-DockingManager allows to save a complex layout also. For example, it also saves the complex layout like Nested DockingManager.
+The WPF Docking Control allows you to save complex layouts, including nested docking layouts. For example, layouts containing nested WPF Docking Control instances can be saved and restored.
 
 ## Serialize the dynamically added children
 
-By default, DockingManager cannot de-serialize its Saved Layout properly, when its child collection is modified after DockState is saved. 
+By default, WPF Docking Control cannot de-serialize its Saved Layout properly, when its child collection is modified after DockState is saved. 
 
-Since the DockingManager state persistence feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads properly when DockingManager children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
+Since the state persistence feature of the WPF Docking Control is implemented in such a way that it matches the child collection in the saved layout with the current child collection during restoration, the layout is restored correctly only when the child collection remains unchanged. When the child collection changes dynamically, it results in an improper layout restoration.
 
 ### Notification for load DockState
 
-When the children collection of DockingManager is changed dynamically after persisting the layout, incorrect layout may load.  Success of loading of persisted state can be decided by return value of [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_LoadDockState().html) method. When the child count is same and then DockingManager checks the Name of the child in the collection. if the Name of the child in loaded state is different from the persisted child in the collection, DockingManager fails to load the saved layout. In such cases, `false` value will be returned by the `LoadDockState` method of DockingManager.
+When the child collection of the WPF Docking Control changes dynamically after the layout is persisted, an incorrect layout may be loaded. The success of loading the persisted state can be determined from the return value of the [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_LoadDockState().html) method. If the child count remains the same, the control checks the Name of each child in the collection. If a child name in the loaded state differs from the corresponding persisted child name, the saved layout cannot be loaded. In such cases, the `LoadDockState` method returns `false`.
 
 ## Various formats to Save / Load states
 
-DockingManager allows to save and load the DockStates of windows in DockingManager in different format.
+WPF Docking Control allows to save and load the DockStates of windows in DockingManager in different format.
 
 Some of the formats are:
 
@@ -126,7 +126,7 @@ Some of the formats are:
 
 ### Where to call the Save and Load dock state:
 
-To save the DockState of the DockingManager, call the [SaveDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SaveDockState) method. You can call this method during any specific or desired scenario where preserving the layout is needed. For instance, before a window is closed or when switching between views.
+To save the DockState of the WPF Docking Control, call the [SaveDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SaveDockState) method. You can call this method during any specific or desired scenario where preserving the layout is needed. For instance, before a window is closed or when switching between views.
 
 {% tabs %}
 {% highlight C# %}
@@ -166,7 +166,7 @@ End Sub
 
 ### Load and save the DockState using Isolated Storage:
 
-DockingManager allows to save and load the dock state from isolated storage.  
+WPF Docking Control allows to save and load the dock state from isolated storage.  
 
 {% tabs %}
 
@@ -200,7 +200,7 @@ DockingManager1.ResetState()
 
 ### Save and Load using XML file 
 
-DockingManager allows to save and load the XML file. It is done using binary formatter and soap formatter. The code example is below:
+WPF Docking Control allows to save and load the XML file. It is done using binary formatter and soap formatter. The code example is below:
 
 {% tabs %}
 
@@ -255,7 +255,7 @@ DocContainer.SaveDockState(formatter1, StorageFormat.Xml, "\docking_xml_soap.xml
 
 ### Save and Load using Binary
 
-DockingManager allows to load and save the dock state in the binary format file. 
+WPF Docking Control allows to load and save the dock state in the binary format file. 
 
 {% tabs %}
 
@@ -294,7 +294,7 @@ DockingManager1.SaveDockState(format, StorageFormat.Binary, "\docking_bin.bin"
 
 ### Save and Load using XmlWriter 
 
-DockingManager allows to load and save the DockState using XMLWriter.
+WPF Docking Control allows to load and save the DockState using XMLWriter.
 
 {% tabs %}
 
@@ -341,7 +341,7 @@ reader.Close()
 
 ## Restrict state persistence for specific child
 
-The [CanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanSerializeProperty) attached property of DockingManager decides whether the child can be serialized or not. The default value of the [CanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanSerializeProperty) property is true. When the property is false, while performing deserialization the non-serialized child will move to its default state. This can also be done programmatically by using the [SetCanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetCanSerialize_System_Windows_DependencyObject_System_Boolean_) function of DockingManager.
+The [CanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanSerializeProperty) attached property of WPF Docking Control decides whether the child can be serialized or not. The default value of the [CanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanSerializeProperty) property is true. When the property is false, while performing deserialization the non-serialized child will move to its default state. This can also be done programmatically by using the [SetCanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetCanSerialize_System_Windows_DependencyObject_System_Boolean_) function of WPF Docking Control.
 
 {% tabs %}
 
@@ -367,9 +367,9 @@ DockingManager.SetCanSerialize(solutionExplorer, false);
 
 {% endtabs %}
 
-N> Restrict state persistence does not support to children that were added at run time in DockingManager when performing serialization and de-serialization using [XmlWriter](https://help.syncfusion.com/wpf/tabbed-mdi-form/state-persistence#various-formats-to-save--load-states).
+N> Restrict state persistence does not support to children that were added at run time in WPF Docking Control when performing serialization and de-serialization using [XmlWriter](https://help.syncfusion.com/wpf/tabbed-mdi-form/state-persistence#various-formats-to-save--load-states).
 
-N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into DockingManager before applying Deserialization process.
+N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into WPF Docking Control before applying Deserialization process.
 
-N> The `LoadDockState` method will return true only when all the children in DockingManager match precisely with the children in the serialized file.
+N> The `LoadDockState` method will return true only when all the children in WPF Docking Control match precisely with the children in the serialized file.
 
