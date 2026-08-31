@@ -121,7 +121,7 @@ internal class CustomAdorner : Adorner
 
         drawingContext.DrawRectangle(b, new Pen(Brushes.Red, 1), new Rect(new Point(0, 0), DesiredSize));
 
-        FormattedText text = new FormattedText("This is a custom Syncfusion WPF Classic Chart adorner", Thread.CurrentThread.CurrentUICulture,
+        FormattedText text = new FormattedText("This is a custom Syncfusion WPF Chart adorner", Thread.CurrentThread.CurrentUICulture,
 
         FlowDirection.LeftToRight, new Typeface("Arial"), 14, Brushes.White);
 

@@ -11,7 +11,7 @@ documentation: ug
 
 Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
 
-The following are the major properties of WPF Charts:
+The following are the major properties of chart(SfChart):
 
 * [`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) –  Gets or sets the horizontal x axis for the chart.
 * [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis) –  Gets or sets the vertical y axis for the chart.
@@ -250,7 +250,7 @@ chart.Series.Add(lineSeries);
 
 ## Clone or copy the chart
 
-More like serialization, you can use [`Clone`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Clone) method for WPF Charts control state persistence. This method creates a copy of the chart instance.
+More like serialization, you can use [`Clone`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Clone) method for SfChart control state persistence. This method creates a copy of the chart instance.
 
 {% highlight C# %}
 

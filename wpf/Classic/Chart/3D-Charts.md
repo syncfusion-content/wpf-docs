@@ -47,7 +47,7 @@ chart.Areas[0].Series.Add(new ChartSeries(ChartTypes.Column));
 
 {% endtabs %}
 
-![Enabling 3D Mode in WPF Classic Chart](Chart-Controls_images/Chart-Controls_img222.jpeg)
+![Enabling 3D Mode in WPF chart](Chart-Controls_images/Chart-Controls_img222.jpeg)
 
 3D Mode is supported in the following chart types.
 
@@ -155,7 +155,7 @@ chart1.Areas[0].Chart3DSettings.BottomWallBackground = Brushes.AliceBlue;
 
 {% endtabs %}
 
-![Customizing Side Walls in WPF Classic Chart](Chart-Controls_images/Chart-Controls_img223.jpeg)
+![Customizing Side Walls in WPF chart](Chart-Controls_images/Chart-Controls_img223.jpeg)
 
 ## Camera Projection Views
 

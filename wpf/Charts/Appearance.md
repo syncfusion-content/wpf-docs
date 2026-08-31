@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WPF Charts
 
-WPF Charts supports various customizing and styling options that allows you to enrich the application.
+SfChart supports various customizing and styling options that allows you to enrich the application.
 
 ## Palettes
 
-WPF Charts provides options to apply different kinds of themes or palettes to your chart. You can define [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) either for the entire chart or for an individual series.
+SfChart provides options to apply different kinds of themes or palettes to your chart. You can define [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) either for the entire chart or for an individual series.
 
 We have some predefined palette such as:
 
@@ -147,7 +147,7 @@ N> Metro palette is the default palette for both Series and Segment.
 
 ## Custom Palette
 
-WPF Charts provides option which enables you to define your own color brushes with your preferred order for the Palette, using [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) as shown in the following code example.
+SfChart provides option which enables you to define your own color brushes with your preferred order for the Palette, using [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) as shown in the following code example.
 
 {% tabs %}
 
@@ -437,7 +437,7 @@ N> SegmentColorPath property is not applicable for Area, SplineArea, StepArea, R
 
 ## Customize Legends
 
-WPF Charts provides many options to customize the chart legends. Basically it is an ItemsControl. So, you can customize the ItemTemplate, ItemsPanel, etc.
+SfChart provides many options to customize the chart legends. Basically it is an ItemsControl. So, you can customize the ItemTemplate, ItemsPanel, etc.
 
 The following code example demonstrates applying the palette color to the legend icon interior.
 
@@ -500,7 +500,7 @@ chart.Legend = new ChartLegend()
 If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/4846/how-to-add-multiple-legend-items-in-scroll-viewer-of-wpf-chart-sfchart) kb for more details
 ## Customize ToolTip
 
-WPF Charts provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property.
+SfChart provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property.
 
 {% tabs %}
 

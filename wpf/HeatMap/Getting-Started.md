@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started with WPF HeatMap
 
-## Initialize the WPF HeatMap
+## Initialize the SfHeatMap
 
-The WPF HeatMap is available in the Syncfusion.UI.Xaml.HeatMap namespace. Initialize it on the XAML page as shown in the following code sample.
+The SfHeatMap exists in the Syncfusion.UI.Xaml.HeatMap namespace. Initialize SfHeatMap to the XAML Page as shown in the following code sample.
 
 {% highlight xaml %}
 
@@ -37,7 +37,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial 
 
 ## Prepare data
 
-Create a class to store product information to be visualized using WPF HeatMap.
+Create a class to store product information to be visualized using SfHeatMap.
 
 {% highlight c# %}
 
@@ -103,7 +103,7 @@ Populate product information in a collection.
 
 {% endhighlight %}
 
-## Map data into WPF HeatMap
+## Map data into SfHeatMap
 
 Now the data is ready. Next, configure the data source and map rows and columns to visualize.
 
@@ -316,10 +316,10 @@ The final `MainWindow.xaml` looks like this.
 
 ## Theme
 
-WPF HeatMap supports various built-in themes. Refer to the following links to learn how to apply them:
+SfHeatMap supports various built-in themes. Refer to the following links to apply themes to the SfHeatMap:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF HeatMap](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF SfHeatMap](Getting-Started_images/Theme.png)

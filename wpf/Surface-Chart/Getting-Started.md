@@ -526,7 +526,7 @@ You can get the complete getting started sample [`here`](https://www.syncfusion.
 
 ## Theme
 
-WPF Surface Chart supports various built-in themes. Refer to the following links to learn how to apply them:
+WPF Surface Chart supports various built-in themes. Refer to the following links to apply themes for the WPF Surface Chart:
 
   * [Apply a theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

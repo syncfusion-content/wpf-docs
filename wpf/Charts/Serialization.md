@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization in WPF Charts
 
-WPF Charts supports serialization and deserialization. This section explains how to serialize and deserialize the control.
+SfChart provides the support for serializing and deserializing control. This section explains on how to serialize and deserialize SfChart.
 
 <table>
 <tr>
@@ -31,7 +31,7 @@ Serialize the control and saves as the XML file in the given stream.</td></tr>
 <tr>
 <td>
 Deserialize()</td><td>
-Deserialize the XML file from the parent folder and returns the WPF Charts control object.</td></tr>
+Deserialize the XML file from the parent folder and returns the SfChart control object.</td></tr>
 <tr>
 <td>
 Deserialize(string filePath)</td><td>
@@ -39,7 +39,7 @@ Deserialize the XML file from the given file path and returns the SfChart contro
 <tr>
 <td>
 Deserialize(Stream stream)</td><td>
-Deserialize the XML file from the given stream and returns the WPF Charts control object.</td></tr>
+Deserialize the XML file from the given stream and returns the SfChart control object.</td></tr>
 </table>
 
 

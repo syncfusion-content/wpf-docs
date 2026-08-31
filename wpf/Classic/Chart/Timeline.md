@@ -61,7 +61,7 @@ Samples Link
 To view sample,
 
 1. Open the WPF sample browser from the dashboard. 
-2. Navigate to WPF Classic Chart-> TimeLine Control>TimeLine Control Demo.
+2. Navigate to WPF Chart-> TimeLine Control>TimeLine Control Demo.
 
 
 ## Properties

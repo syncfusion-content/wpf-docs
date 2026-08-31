@@ -290,7 +290,7 @@ N> The [`SelectedData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 
 ## Theme
 
-WPF Range Selector supports various built-in themes. Refer to the following links to learn how to apply them,
+WPF Range Selector supports various built-in themes. Refer to the below links to apply themes for the WPF Range Selector,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

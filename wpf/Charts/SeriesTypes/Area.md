@@ -85,7 +85,7 @@ N> You can explore our [WPF Step Area Chart](https://www.syncfusion.com/wpf-cont
 
 ## Closed Area Chart
 
-If you wish to draw the open area series (Area with stroke only at top), WPF Charts provides [`IsClosed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AreaSeries.html#Syncfusion_UI_Xaml_Charts_AreaSeries_IsClosed) property. By default, this property is true.
+If you wish to draw the open area series (Area with stroke only at top), SfChart provides [`IsClosed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AreaSeries.html#Syncfusion_UI_Xaml_Charts_AreaSeries_IsClosed) property. By default, this property is true.
 
 {% tabs %}
 

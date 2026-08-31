@@ -9,9 +9,9 @@ documentation: ug
 
 # Interactive Features in WPF Charts
 
-WPF Charts provides interactive features such as tracking data points and resizing the scrollbar.
+SfChart provides interactive features such as tracking data points and resizing the scrollbar.
 
-The following interactive features are supported in WPF Charts:
+The following interactive features are supported in SfChart:
 
 * Visual Data Editing
 * Resizing Scrollbar

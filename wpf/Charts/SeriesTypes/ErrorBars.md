@@ -331,7 +331,7 @@ chart.Series.Add(errorBarSeries);
 
 ## Type
 
-WPF Charts supports the following type of error bar series.
+SfChart supports the following type of error bar series.
 
 * [`Fixed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html) 
 * [`Percentage`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html) 
@@ -544,7 +544,7 @@ chart.Series.Add(errorBar);
 
 ## Customization 
 
-WPF Charts provides customization properties for the error bar lines as in the following section.
+SfChart provides customization properties for the error bar lines as in the following section.
 
 ### Line Style
 
