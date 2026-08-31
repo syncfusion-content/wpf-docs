@@ -203,7 +203,7 @@ internal class MultiConverter : IMultiValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Loading custom control in dropdown of WPF SfMultiColumn DropdownControl](Selection_images/Selection_img4.png)
+![Loading custom control in dropdown](Selection_images/Selection_img4.png)
 
 You can refer `Search with TextBox in DropDown` section in this [sample](https://github.com/syncfusion/wpf-demos/tree/master/dropdown/Multi%20Column%20Dropdown).
 
