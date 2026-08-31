@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF Olap Chart
 
-## Binding OLAP chart to offline cube
+## Binding WPF OLAP Chart to offline cube
 
 To connect to an OLAP cube available in the local machine, set the physical path of the cube set in the connection string. The following code sample illustrates the same.
 
@@ -20,7 +20,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding OLAP chart to cube in local SQL Server
+## Binding WPF OLAP Chart to cube in local SQL Server
 
 To connect to the OLAP cube available in SQL Server Analysis Service in the local machine, set the server name and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates the same.
 
@@ -31,7 +31,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding OLAP chart to cube in online SQL Server
+## Binding WPF OLAP Chart to cube in online SQL Server
 
 To connect to the OLAP cube available in SQL Server Analysis Service in the online server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates the same.
 
@@ -42,7 +42,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding OLAP chart to cube in online Mondrian Server
+## Binding WPF OLAP Chart to cube in online Mondrian Server
 
 To connect to the OLAP cube available in the Mondrian Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates the same.
 
@@ -54,7 +54,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endhighlight %}
 
-## Binding OLAP chart to cube in online ActivePivot Server
+## Binding WPF OLAP Chart to cube in online ActivePivot Server
 
 To connect to the OLAP cube available in the ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates the same.
 

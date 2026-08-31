@@ -429,7 +429,7 @@ string</td></tr>
 
 ### Sample Link
 
-To run the UI WPF Chart samples:
+To run the UI WPF Classic Chart samples:
 
 1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio <<Version Number>> -> Dashboard.
 2. Click Run locally installed samples from the WPF drop-down list on the User Interface pane.
