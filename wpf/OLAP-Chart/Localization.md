@@ -18,13 +18,13 @@ The following steps should be performed to localize the control.
 * Tag inclusion into the project file.
 * Specifying the CurrentUICulture.
 
-### Translation
+## Translation
 
 The first step in localization is translating the strings that can be localized to the destination locale.
 
 N> Localization key field should be same for all locales. Do not translate it.
 
-### Resource file and file name conventions
+## Resource file and file name conventions
 
 After translating the strings that can be localized, perform the following in the application:
 
@@ -44,7 +44,7 @@ N> The resource file name should strictly be in the format "Syncfusion.OlapChart
    
 Copy and paste the translated locale to the resource file created in the earlier step.
 
-### Specifying the CurrentUICulture
+## Specifying the CurrentUICulture
 
 Now, you need to specify the CurrentUICulture of the application. You can specify the CurrentUICulture either from Application_Startup in App.xaml.cs or from the constructor in the main page. (If you are specifying the current culture on the main page, then make sure that it is assigned before the InitializeComponent method).
 
