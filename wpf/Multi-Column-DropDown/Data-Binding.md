@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF MultiColumn Dropdown
 
-You can populate the drop down list for MultiColumn Dropdown Control by setting [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_ItemsSource) property.
+You can populate the drop down list for WPF MultiColumn Dropdown Control by setting [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_ItemsSource) property.
 [DisplayMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_DisplayMember) denotes the path to a value on the data object for visual presentation of the Textbox and [ValueMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ValueMember) denotes the path to a value on the data object to get the [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedValue). 
 
 {% tabs %}

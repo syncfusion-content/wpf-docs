@@ -9,7 +9,7 @@ documentation: ug
 
 # Filtering in WPF MultiColumn Dropdown
 
-MultiColumn Dropdown Control provides support to filter the drop down display list based on typed text by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_AllowIncrementalFiltering) as `true`. The records are filter based on `DisplayMember`. 
+WPF MultiColumn Dropdown Control provides support to filter the drop down display list based on typed text by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_AllowIncrementalFiltering) as `true`. The records are filter based on `DisplayMember`. 
 
 By default, drop down list is filtered based on `SearchCondition.StartsWith` condition. You can change the filtering search condition by setting [SearchCondition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SearchCondition) (StartsWith, Contains, Equals options).
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Getting Started with WPF MultiColumn Dropdown
-MultiColumn Dropdown Control displays multiple columns in dropdown by embedding Data Grid control for rich look up selection.
+WPF MultiColumn Dropdown Control displays multiple columns in dropdown by embedding Data Grid control for rich look up selection.
 
 Features,
 

@@ -11,7 +11,7 @@ documentation: ug
 
 WPF styles and templates refer to a suite of features (styles and templates) that allows you to create visually compelling effects and to create consistent appearance for the products.
 
-This section elaborates the information to understand the possible ways, by which you can change the visual appearance of the MultiColumn Dropdown Control. In addition, you can edit the structure of MultiColumn Dropdown Control by using Blend and VisualStudio that enables you to customize the appearance. 
+This section elaborates the information to understand the possible ways, by which you can change the visual appearance of the WPF MultiColumn Dropdown Control. In addition, you can edit the structure of MultiColumn Dropdown Control by using Blend and VisualStudio that enables you to customize the appearance. 
 
 ## Edit Appearance in Expression Blend
 

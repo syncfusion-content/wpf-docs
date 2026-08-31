@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns in WPF MultiColumn Dropdown
 
-MultiColumn Dropdown Control enables you to define the columns as like in Data Grid. You can let the `MultiColumn Dropdown` to create columns or you can manually defined columns to be displayed. Below sections explains both ways,
+MultiColumn Dropdown Control enables you to define the columns as like in Data Grid. You can let the `WPF MultiColumn Dropdown` to create columns or you can manually defined columns to be displayed. Below sections explains both ways,
  
     1. Automatically generating columns
     2. Manually define columns

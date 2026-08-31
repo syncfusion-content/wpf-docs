@@ -7,13 +7,13 @@ control: MultiColumn Dropdown
 documentation: ug
 ---
 
-# UIAutomation in WPF MultiColumn Dropdown
+# UIAutomation in WPF MultiColumn Dropdown 
 
-MultiColumn Dropdown Control supports the following UIAutomations,
+WPF MultiColumn Dropdown Control supports the following UIAutomations,
 
 ## Coded UI
 
-MultiColumn Dropdown Control supports CodedUITest automation that enables you to create an automation test with MultiColumn Dropdown Control elements and record the sequence of actions.
+WPF MultiColumn Dropdown Control supports CodedUITest automation that enables you to create an automation test with MultiColumn Dropdown Control elements and record the sequence of actions.
 
 There are three level of support in CodedUITest for MultiColumn Dropdown Control.
 
@@ -69,6 +69,14 @@ The following screenshot illustrates the QTP Test for MultiColumn Dropdown Contr
 
 
 Following are methods for MultiColumn Dropdown Control.
+png)
+
+
+
+Following are methods for SfMultiColumnDropDownControl.
+ollowing are methods for SfMultiColumnDropDownControl.
+
+Following are methods for SfMultiColumnDropDownControl.
 
 ### Methods Table
 

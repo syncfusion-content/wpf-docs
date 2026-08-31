@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in WPF MultiColumn Dropdown
 
-[MultiColumn Dropdown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html) allows you to select one or more rows based on the SelectionMode. You can get the selected item in the Data Grid by using [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumn DropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_SelectedItem) property and the selected index by using [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_SelectedIndex) property. 
+[WPF MultiColumn Dropdown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html) allows you to select one or more rows based on the SelectionMode. You can get the selected item in the Data Grid by using [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumn DropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_SelectedItem) property and the selected index by using [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_SelectedIndex) property. 
 
 By using [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedValue) property, you can get the selected value from the selected item based on the `ValueMember` property.
 
