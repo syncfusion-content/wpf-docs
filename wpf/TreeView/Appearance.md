@@ -78,7 +78,7 @@ The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) allows you 
 
 ## BindingContext for ItemTemplate
 
-By default, the binding context of WPF TreeView item will be the data model object for Bound Mode and [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) for Unbound Mode.
+By default, the binding context of [TreeViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) will be the data model object for Bound Mode and [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) for Unbound Mode.
 
 For Bound Mode, you can change the binding context of the WPF TreeView items by using the [ItemTemplateDataContextType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
 
