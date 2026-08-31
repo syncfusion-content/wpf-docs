@@ -17,11 +17,11 @@ MultiColumn DropdownControl enables you to define the columns as like in Data Gr
 ## Automatically generating columns
 
 The automatic column generation based on properties of data object can be enabled or disabled by setting [SfMultiColumnDropDownControl.AutoGenerateColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AutoGenerateColumns). 
-You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#defining-columns) to know more about the automatic column generation in MultiColumn
+You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#defining-columns) to know more about the automatic column generation in MultiColumn DropdownControl.
 DropdownControl.
 
 ## Manually defining columns
-
+MultiColumn Dropdown control allows you to define the columns manually by adding desired column to the [SfMultiColumnDropdownControl.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_Columns) collection.
 MultiColumn
 Dropdown control allows you to define the columns manually by adding desired column to the [SfMultiColumnDropdownControl.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_Columns) collection.
 
@@ -49,7 +49,7 @@ sfMultiColumn.Columns.Add(new GridCurrencyColumn() { MappingName = "OrderID" });
 sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = "CustomerID" });
 sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = "Country" });
 {% endhighlight %}
-{% endtabs %}
+![Manually generated the columns](Columns_images/Columns_img1.png)
 
 ![Manually generated the columns in WPF SfMultiColumnDropDown](Columns_images/Columns_img1.png)
 

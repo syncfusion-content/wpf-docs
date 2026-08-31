@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Popup customization in WPF MultiColumn Dropdown
-SfMultiColumnDropDownControl allows you to customize the Popup appearance by setting [PopupBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBackground), [PopupBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBorderBrush), [PopupDropDownGridBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupDropDownGridBackground) and [PopupBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBorderThickness) properties.
+MultiColumn Dropdown Control allows you to customize the Popup appearance by setting [PopupBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_PopupBackground), [PopupBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_PopupBorderBrush), [PopupDropDownGridBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_PopupDropDownGridBackground) and [PopupBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_PopupBorderThickness) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +64,7 @@ Similarly, the `PopupHeight` will be set based on[PopupMinHeight](https://help.s
 
 ### Auto sizing
 
-SfMultiColumnDropDownControl can automatically adjust the popup width and height based on the width and height of SfDataGrid when setting [IsAutoPopupSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_IsAutoPopupSize) as `true`.
+MultiColumn Dropdown Control can automatically adjust the popup width and height based on the width and height of Data Grid when setting [IsAutoPopupSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_IsAutoPopupSize) as `true`.
 N> When `IsAutoPopupSize` is `true`, then the popup width and height is not calculated based on `PopupHeight` and `PopupWidth`.
 
 ## Resizing popup
@@ -73,7 +73,8 @@ You can allow the end-user to resize the drop-down popup through resizing thumb 
 
 ## Keep DropDownPopup as StaysOpen
 
-You can keep the popup in SfMultiColumnDropDownControl as always open by using `StaysOpen` property. You can get the popup from template of SfMultiColumnDropDownControl in its loaded event and set the `StaysOpen` property as `true`.
+You can keep the popup in MultiColumn
+Dropdown Control as always open by using `StaysOpen` property. You can get the popup from template of SfMultiColumn DropdownControl in its loaded event and set the `StaysOpen` property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +88,7 @@ sfMultiColumn.Loaded += (o, e) =>
 
 ## Events
 
-SfMultiColumnDropDownControl provides the following events for popup customizations,
+MultiColumn Dropdown Control provides the following events for popup customizations,
  
 ### PopupClosing event
 
