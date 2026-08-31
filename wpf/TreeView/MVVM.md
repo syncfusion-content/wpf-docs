@@ -9,13 +9,13 @@ documentation: ug
 
 # MVVM in WPF TreeView (SfTreeView)
 
-This section explains how to work with the MVVM pattern in TreeView.
+This section explains how to work with the MVVM pattern in WPF TreeView.
 
 ## Binding properties in MVVM pattern
 
 ### Binding SelectedItem
 
-The TreeView supports selecting items by binding the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property to a property on the view model. Implement the `INotifyPropertyChanged` interface on the view model so that changes are propagated back to the UI.
+The WPF TreeView supports selecting items by binding the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property to a property on the view model. Implement the `INotifyPropertyChanged` interface on the view model so that changes are propagated back to the UI.
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,7 +103,7 @@ sfTreeView.SetBinding(SfTreeView.SelectedItemProperty, new Binding("SelectedNode
 
 ### Binding SelectedItems
 
-The TreeView supports selecting multiple items by binding the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property to a view-model property of type `ObservableCollection<object>`.
+The WPF TreeView supports selecting multiple items by binding the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property to a view-model property of type `ObservableCollection<object>`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -195,7 +195,7 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-bind-sel
 
 ## Event to command
 
-The `TreeView` event can be converted into commands using [Behaviors](https://devblogs.microsoft.com/dotnet/open-sourcing-xaml-behaviors-for-wpf/). To achieve this, create a command in the ViewModel class and associate it to the TreeView event using `Behaviors`.
+The `TreeView` event can be converted into commands using [Behaviors](https://devblogs.microsoft.com/dotnet/open-sourcing-xaml-behaviors-for-wpf/). To achieve this, create a command in the ViewModel class and associate it to the WPF TreeView event using `Behaviors`.
 
 {% tabs %}
 {% highlight xaml %}

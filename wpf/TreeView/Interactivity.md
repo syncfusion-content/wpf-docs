@@ -9,9 +9,9 @@ documentation: ug
 
 # Interactivity in WPF TreeView (SfTreeView)
 
-This section explains how to interact with the TreeView and its items.
+This section explains how to interact with the WPF TreeView and its items.
 
-## Interacting with TreeView items
+## Interacting with WPF TreeView items
 
 ### ItemTapped event
 

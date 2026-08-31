@@ -9,11 +9,11 @@ documentation: ug
 
 # CRUD Operations in WPF TreeView (SfTreeView)
 
-TreeView listens to and responds to CRUD operations such as add, delete, and data update (property change) at runtime. It also supports [editing](https://help.syncfusion.com/wpf/treeview/editing) and deleting by pressing the <kbd>Delete</kbd> key.
+WPF TreeView listens to and responds to CRUD operations such as add, delete, and data update (property change) at runtime. It also supports [editing](https://help.syncfusion.com/wpf/treeview/editing) and deleting by pressing the <kbd>Delete</kbd> key.
 
 ## Add nodes
 
-The TreeView allows users to add a new node directly by adding a new data object to the underlying collection in bound mode, and by adding a [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) to the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection in unbound mode.
+The WPF TreeView allows users to add a new node directly by adding a new data object to the underlying collection in bound mode, and by adding a [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) to the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection in unbound mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -27,7 +27,7 @@ sfTreeView.Nodes.Add(new TreeViewNode(){ Content = "Germany" });
 
 ## Delete nodes
 
-The TreeView provides built-in support to delete the selected nodes in the user interface (UI) by pressing the <kbd>Delete</kbd> key. You can enable delete support by setting the [SfTreeView.AllowDeleting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDeleting) property to `true`.
+The WPF TreeView provides built-in support to delete the selected nodes in the user interface (UI) by pressing the <kbd>Delete</kbd> key. You can enable delete support by setting the [SfTreeView.AllowDeleting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDeleting) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -110,6 +110,6 @@ private void TreeView_ItemDeleted (object sender, ItemDeletedEventArgs e)
 
 ## Modify nodes
 
-The TreeView allows users to modify the data in a node by [editing](https://help.syncfusion.com/wpf/treeview/editing).
+The WPF TreeView allows users to modify the data in a node by [editing](https://help.syncfusion.com/wpf/treeview/editing).
 
 N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its key feature highlights. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to know how to represent hierarchical data in a tree-like structure with expand and collapse node options.
