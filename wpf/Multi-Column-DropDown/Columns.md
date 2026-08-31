@@ -40,7 +40,7 @@ MultiColumn Dropdown control allows you to define the columns manually by adding
     </syncfusion:SfMultiColumnDropDownControl.Columns>
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
-{% highlight c# %}
+{% endtabs c# %}
 SfMultiColumnDropDownControl sfMultiColumn = new SfMultiColumnDropDownControl();
 sfMultiColumn.AutoGenerateColumns = false;
 sfMultiColumn.Columns.Add(new GridCurrencyColumn() { MappingName = "OrderID" });
