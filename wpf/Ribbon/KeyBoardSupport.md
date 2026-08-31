@@ -8,11 +8,11 @@ documentation: ug
 ---
 # KeyBoard Support in WPF Ribbon Control
 
-To invoke any command using KeyBoard, Ribbon control provides KeyTip support to access the RibbonItem. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed. 
+To invoke any command using KeyBoard, WPF Ribbon Control provides KeyTip support to access the RibbonItem. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed. 
 
-## Adding KeyTip to the ribbon items
+## Adding KeyTip to the WPF Ribbon Control items
 
-RibbonControl provides with an attached property called `KeyTip` that helps to set the Key tip for the RibbonItem. It also allows you to set the Key tip for the RibbonTab,Launcher Button,and for the controls that are needed to add in the Ribbon like RibbonButton,SplitButton…etc
+WPF Ribbon Control provides with an attached property called `KeyTip` that helps to set the Key tip for the RibbonItem. It also allows you to set the Key tip for the RibbonTab,Launcher Button,and for the controls that are needed to add in the WPF Ribbon Control like RibbonButton,SplitButton…etc
 
 {% tabs %}
 
@@ -77,9 +77,9 @@ syncfusion:RibbonCommandManager.SynchronizedItem="Save" SmallIcon="/Resources/Sa
 ![WPF Ribbon displays KeyTips for QAT Items](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/wpf-ribbon-keytip-for-qat-items.jpeg)
 
 
-## How to access particular item in ribbon using KeyTip
+## How to access particular item in WPF Ribbon Control using KeyTip
 
-The below example illustrates how to access particular Ribbon item using KeyTip
+The below example illustrates how to access particular WPF Ribbon Control item using KeyTip.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ Finally, Press the RibbonComboBox KeyTip to access it
 
 ## How does BackStage can be accessed using KeyTip
 
-The backstage feature of the Ribbon control provides KeyTip support to display KeyTips on pressing the Alt key. It is also possible to set KeyTip for the BackStage elements which includes BackStageCommandButton, BackStageTabItem
+The backstage feature of the WPF Ribbon Control provides KeyTip support to display KeyTips on pressing the Alt key. It is also possible to set KeyTip for the BackStage elements which includes BackStageCommandButton, BackStageTabItem
 
 {% tabs %}
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonTextBox in WPF Ribbon Control
 
-The `RibbonTextBox` control provides a similar set of functionalities to a normal TextBox control in a Ribbon instance.
+The `RibbonTextBox` control provides a similar set of functionalities to a normal TextBox control in a WPF Ribbon Control instance.
 
 ## Add TextBox to the RibbonBar
 
