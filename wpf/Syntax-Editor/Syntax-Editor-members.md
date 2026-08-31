@@ -70,7 +70,8 @@ Gets or sets a value indicating whether Outlining of text in Syntax Editor shoul
 <td>
 FindOptions<br/><br/></td><td>
 FindOptions<br/><br/></td><td>
-Gets or sets an instance of FindOptions indicating the options selected in the FindReplace Window. Click <a href="https://help.syncfusion.com/wpf/syntax-editor/basic-editing/find-and-replace#find-options">here</a> for more details about the FindOptions.<br/><br/></td></tr>
+Gets or sets an instance of FindOptions indicating the options selected in the FindReplace Window. 
+Click <a href="https://help.syncfusion.com/wpf/syntax-editor/basic-editing/find-and-replace#find-options" aria-label="FindOptions documentation in Syncfusion WPF Syntax Editor">FindOptions in Syntax Editor</a> for more details about the FindOptions.<br/><br/></td></tr>
 <tr>
 <td>
 FindResultsTabHeight<br/><br/></td><td>
@@ -279,10 +280,16 @@ A PropertyChangedCallback get raised when the text in the Syntax Editor gets cha
 <td>
 CaretPositionChanged<br/><br/></td><td>
 EventHandler<br/><br/></td><td>
-This event will be raised when the caret position of the text in the Syntax Editor is changed. The <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CaretPositionChanged">CaretPositionChanged </a> event receives the `sender` and <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.CaretPositionEventArgs.html">CaretPositionEventArgs </a> as argument which has the following properties.
+This event will be raised when the caret position of the text in the Syntax Editor is changed. 
+The <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CaretPositionChanged" aria-label="CaretPositionChanged event in Syncfusion WPF EditControl">CaretPositionChanged</a> event receives the `sender` and 
+<a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.CaretPositionEventArgs.html" aria-label="CaretPositionEventArgs class in Syncfusion WPF">CaretPositionEventArgs</a> as argument which has the following properties.
 <ul>
-<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LineNumber">Line Number </a> : Gets the current line number value of the Syntax Editor.</li>
-<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex">Cursor Index </a> : Gets the current cursor index value of the Syntax Editor.</li>
+  <li>
+    <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LineNumber" aria-label="Line Number property in Syncfusion WPF EditControl">Line Number</a> : Gets the current line number value of the Syntax Editor.
+  </li>
+  <li>
+    <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex" aria-label="Cursor Index property in Syncfusion WPF EditControl">Cursor Index</a> : Gets the current cursor index value of the Syntax Editor.
+  </li>
 </ul>
 <br/><br/></td></tr>
 <tr>
