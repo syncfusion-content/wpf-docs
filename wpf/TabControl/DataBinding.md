@@ -7,17 +7,17 @@ control: TabControl
 documentation: ug
 ---
 
-# Data Binding in WPF TabControlExt
+# Data Binding in WPF Tab Control
 
-You can add a tab item using data binding in the WPF [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+You can add a tab item using data binding in the WPF [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ## Adding tab items using data binding
 
-The `TabControl` can be bound to an external source to automatically create tabs and display the data using `ItemsSource` property. When you are auto generating tabitem using `ItemsSource`, you need to set `HeaderTemplate` property in `ItemContainerStyle` or `ItemTemplate` to define header and use `ContentTemplate` to display the content of the tab item.  
+The `WPF Tab Control` can be bound to an external source to automatically create tabs and display the data using `ItemsSource` property. When you are auto generating tabitem using `ItemsSource`, you need to set `HeaderTemplate` property in `ItemContainerStyle` or `ItemTemplate` to define header and use `ContentTemplate` to display the content of the tab item.  
 
-If the data source implements `INotifyCollectionChanged` interface, then `TabControl` will automatically refresh the UI when item is added, removed or cleared in the collection. When an item is added or removed in `ObservableCollection`, `TabControl` automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when an item is added or removed in `List`, `TabControl` will not refresh the UI automatically.
+If the data source implements `INotifyCollectionChanged` interface, then `WPF Tab Control` will automatically refresh the UI when item is added, removed or cleared in the collection. When an item is added or removed in `ObservableCollection`, `WPF Tab Control` automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when an item is added or removed in `List`, `WPF Tab Control` will not refresh the UI automatically.
 
-N> To bind `ItemsSource` to `TabControl`, you need to have collection with data object which holds header and content details.
+N> To bind `ItemsSource` to `WPF Tab Control`, you need to have collection with data object which holds header and content details.
 
 Here, `Model` class defined with `Header` and `Content` properties and `ViewModel` class has `ItemsSource` property of type `ObservableCollection<Model>`.
 
