@@ -23,7 +23,7 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-depe
 
 Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-## Adding WPF WPF Tab Control via designer
+## Adding WPF Tab Control via designer
 
 You can add the `WPF Tab Control` to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
 
@@ -70,7 +70,7 @@ To add the `WPF Tab Control` manually in XAML, follow these steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding WPF WPF Tab Control via C#
+## Adding WPF Tab Control via C#
 
 To add the [TabControl](https://www.syncfusion.com/wpf-controls/tabcontrol) control manually in C#, follow these steps:
 
