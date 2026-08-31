@@ -17,7 +17,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 
-The following section helps you to build your application with [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
+The following section helps you to build your application with [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
 
 ## Creating the project
 
@@ -25,7 +25,7 @@ Create a new WPF project using Visual Studio. For more [details](https://learn.m
 
 ### Adding control via Designer
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) (SfDiagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![WPF Diagram from Designer](getting-started_images\wpf-diagram-designer.png)
 
@@ -517,6 +517,7 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 
 {% tabs %}
 {% highlight xaml %}
+
 <!--Define the Stencil-->
 <stencil:Stencil x:Name="stencil"  ExpandMode="All" 
                  BorderBrush="Black" BorderThickness="0,0,2,0">
@@ -930,7 +931,7 @@ SfDiagram supports various built-in themes. Refer to the links below to apply th
 
 ## See Also
 
-[How to create treeview and diagram with editing options in the WPF Diagram?](https://support.syncfusion.com/kb/article/9926/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagram-sfdiagram)
+[How to create treeview and diagram with editing options in the WPF SfDiagram?](https://support.syncfusion.com/kb/article/9926/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagram-sfdiagram)
 
 [How to create a WPF SfDiagram?](https://support.syncfusion.com/kb/article/8853/how-to-create-a-wpf-diagram-sfdiagram)
 

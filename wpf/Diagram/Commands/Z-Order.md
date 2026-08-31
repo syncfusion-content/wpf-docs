@@ -9,7 +9,7 @@ documentation: ug
 
 # Z-Order Commands in WPF SfDiagram
 
-Z – Order commands are used to visually arrange the selected objects such as Nodes and Connectors on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page with its Z-order values.
+Z – Order commands are used to visually arrange the selected objects such as Nodes and Connectors on the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) page with its Z-order values.
 
 Z-order determines the visual stacking order of diagram elements on the page. When two or more elements overlap, the element with a higher Z-order value appears in front of elements with lower Z-order values. Z-Order commands can be used to change this stacking order and control the visibility of overlapping elements.
 
