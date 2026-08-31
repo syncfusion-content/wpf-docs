@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar State in WPF ToolBarAdv  | Syncfusion®
+title: Toolbar State in WPF ToolBarAdv | Syncfusion®
 description: Toolbar state support in WPF ToolBarAdv enables saving and restoring toolbar layouts, preserving item positions and user customizations across sessions.
 platform: wpf
 control: ToolBarAdv

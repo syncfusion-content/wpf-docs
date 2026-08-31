@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion® WPF ToolBarAdv  Control | Syncfusion®
+title: About Syncfusion® WPF ToolBarAdv Control | Syncfusion®
 description: Learn about the introduction and overview of Syncfusion® Essential Studio WPF ToolBarAdv control, its elements, features, and capabilities.
 platform: wpf
 control: ToolBarAdv
