@@ -7,9 +7,9 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Command Binding in WPF HierarchyNavigator
+# Command Binding in WPF BreadCrumb
 
-The HierarchyNavigator control enables command binding when a selected item is changed. There are two properties that occur when this happens.
+The BreadCrumb control enables command binding when a selected item is changed. There are two properties that occur when this happens.
 
 The steps to listen to the command binding are as follows:
 
@@ -97,7 +97,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-1. Bind the command in the HierarchyNavigator control.
+1. Bind the command in the BreadCrumb control.
 2. To do this, create a new instance of the ViewModel sample class and set DataContext for the parent StackPanel. This will reflect changes in the children. Whenever the selected item changes, the TextBox Text value will change.
 
 {% capture codesnippet3 %}

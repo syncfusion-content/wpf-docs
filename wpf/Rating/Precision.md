@@ -7,13 +7,13 @@ control: SfRating
 documentation: ug
 ---
 
-# Precision in WPF SfRating
+# Precision in WPF Rating
 
-The precision mode defines the accuracy level of the SfRating control. It has Standard, Half, and Exact options. By default, the precision mode of the SfRating control is set to `Standard`.
+The precision mode defines the accuracy level of the Rating control. It has Standard, Half, and Exact options. By default, the precision mode of the Rating control is set to `Standard`.
 
 ## Standard
 
-When the precision mode of the SfRating control is set to `Standard`, the rating item will be filled completely based on the rating value.
+When the precision mode of the Rating control is set to `Standard`, the rating item will be filled completely based on the rating value.
 
 {% tabs %}
 
@@ -39,11 +39,11 @@ public MainWindow()
 
 {% endtabs %}
 
-![SfRating standard precision mode](images/Precision_Standard.png)
+![Rating standard precision mode](images/Precision_Standard.png)
 
 ## Half
 
-When the precision mode of the SfRating control is set to `Half`, the rating item will be filled partially based on the rating value.
+When the precision mode of the Rating control is set to `Half`, the rating item will be filled partially based on the rating value.
 
 {% tabs %}
 
@@ -69,11 +69,11 @@ public MainWindow()
 
 {% endtabs %}
 
-![SfRating half precision mode](images/Precision_Half.png)
+![Rating half precision mode](images/Precision_Half.png)
 
 ## Exact
 
-If the precision mode of SfRating is set to `Exact`, the rating item will be filled exactly based on the rating value.
+If the precision mode of Rating is set to `Exact`, the rating item will be filled exactly based on the rating value.
 
 {% tabs %}
 
@@ -99,4 +99,4 @@ public MainWindow()
 
 {% endtabs %}
 
-![SfRating exact precision mode](images/Precision_Exact.png) 
+![Rating exact precision mode](images/Precision_Exact.png) 

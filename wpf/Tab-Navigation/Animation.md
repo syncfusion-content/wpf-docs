@@ -7,7 +7,7 @@ control: TabNavigation
 documentation: ug
 ---
 
-# Animation in WPF TabNavigation
+# Animation in WPF Tab Navigation
 
 Transition Effect property is used to set the animation effect for the tab navigation control. The Transition effect is an enum that contains five values namely:
 

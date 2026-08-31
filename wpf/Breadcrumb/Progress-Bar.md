@@ -7,9 +7,9 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Progress Bar in WPF HierarchyNavigator
+# Progress Bar in WPF BreadCrumb
 
-The progress bar for the HierarchyNavigator control can be displayed or removed.
+The progress bar for the BreadCrumb control can be displayed or removed.
 
 ![Progress-Bar_img1](Progress-Bar_images/Progress-Bar_img1.png)
 
@@ -17,7 +17,7 @@ The progress bar for the HierarchyNavigator control can be displayed or removed.
 
 ## There are two methods to display the progress bar:
 
-1. Calling the ShowProgressBar method in HierarchyNavigator, which displays the progress bar for a time span of 500 ms.
+1. Calling the ShowProgressBar method in BreadCrumb, which displays the progress bar for a time span of 500 ms.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -47,7 +47,7 @@ hierarchyNavigator.ShowProgressBar(new TimeSpan(0, 0, 0, 0, 1000));
 
 ### The progress bar can be canceled by using two methods:
 
-1. Calling the CancelProgressBar method in HierarchyNavigator.
+1. Calling the CancelProgressBar method in BreadCrumb.
 
 {% capture codesnippet3 %}
 {% tabs %}

@@ -7,11 +7,11 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Tooltip in WPF HierarchyNavigator
+# Tooltip in WPF BreadCrumb
 
-A ToolTip can be displayed for each HierarchyNavigator item.
-
-Setting the ShowToolTip Boolean property to true in the HierarchyNavigator control will enable the ToolTips for all items.
+A ToolTip can be displayed for each BreadCrumb item.
+BreadCrumb
+Setting the ShowToolTip Boolean property to true in the BreadCrumb control will enable the ToolTips for all items.
 
 {% tabs %}
 {% highlight xaml %}

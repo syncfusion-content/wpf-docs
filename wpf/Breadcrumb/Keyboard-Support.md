@@ -7,9 +7,9 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Keyboard Support in WPF HierarchyNavigator
+# Keyboard Support in WPF BreadCrumb
 
-The HierarchyNavigator control supports keyboard navigation. This allows you to select an item and open a pop-up menu by using the keyboard.
+The BreadCrumb control supports keyboard navigation. This allows you to select an item and open a pop-up menu by using the keyboard.
 
 ## Keyboard functionality table
 

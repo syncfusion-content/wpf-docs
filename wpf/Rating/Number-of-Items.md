@@ -7,7 +7,7 @@ control: SfRating
 documentation: ug
 ---
 
-# Number of Items in WPF SfRating
+# Number of Items in WPF Rating
 
 The control allows the user to rate items from a predefined list of items.
 

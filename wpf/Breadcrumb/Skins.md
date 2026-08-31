@@ -7,9 +7,9 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Themes in WPF HierarchyNavigator
+# Themes in WPF BreadCrumb
 
-HierarchyNavigator supports various built-in themes. Refer to the below links to apply themes for the HierarchyNavigator,
+BreadCrumb supports various built-in themes. Refer to the below links to apply themes for the BreadCrumb,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

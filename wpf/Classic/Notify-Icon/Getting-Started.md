@@ -7,9 +7,9 @@ control: NotifyIcon
 documentation: ug
 ---
 
-# Getting Started with WPF NotifyIcon
+# Getting Started with WPF Notify Icon
 
-This section provides you an overview of working with [NotifyIcon](https://www.syncfusion.com/wpf-controls/notify-icon) for WPF and provides a walkthrough to configure the NotifyIcon control in a real-time scenario.
+This section provides you an overview of working with [Notify Icon](https://www.syncfusion.com/wpf-controls/notify-icon) for WPF and provides a walkthrough to configure the Notify Icon control in a real-time scenario.
 
 ## Assembly deployment
 
@@ -18,15 +18,15 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 Further information on installing the NuGet package can be found in the following link:
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages).
 
-You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the NotifyIcon's dependent assemblies.
+You can also use the [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer to the Notify Icon's dependent assemblies.
 
-## Creating an application with NotifyIcon control
+## Creating an application with Notify Icon control
 
-In this walkthrough, you will create a WPF application that contains the NotifyIcon control.
+In this walkthrough, you will create a WPF application that contains the Notify Icon control.
 
 ## Creating a project
 
-Create a new WPF project to show the [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) control in Visual Studio.
+Create a new WPF project to show the [Notify Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) control in Visual Studio.
 
 ## Adding the control manually in XAML
 
@@ -41,7 +41,7 @@ To add the control manually to the XAML page, follow the given steps:
 
 2. Import Syncfusion.WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page or **clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Wpf.Classic** namespace.
 
-3. Declare the `NotifyIcon` control in XAML page.
+3. Declare the `Notify Icon` control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -80,9 +80,9 @@ To add the control manually in C#, follow the given steps:
     * Syncfusion.Shared.WPF.Classic
     * Syncfusion.Tools.WPF.Classic
 
-2. Import the `NotifyIcon` namespace **Syncfusion.Windows.Tools.Controls**.
+2. Import the `Notify Icon` namespace **Syncfusion.Windows.Tools.Controls**.
 
-3. Create the `NotifyIcon` control instance and add it to the page.
+3. Create the `Notify Icon` control instance and add it to the page.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -118,7 +118,7 @@ namespace NotifyIcon_GettingStarted
 
 ## Show the notify icon
 
-You can set the icon to the [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) control using the [Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_Icon) property and then display the notify icon by setting the [ShowInTaskBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_ShowInTaskBar) property to `true`.
+You can set the icon to the [Notify Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) control using the [Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_Icon) property and then display the notify icon by setting the [ShowInTaskBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_ShowInTaskBar) property to `true`.
 
 {% tabs %}
 
@@ -130,11 +130,11 @@ You can set the icon to the [NotifyIcon](https://help.syncfusion.com/cr/wpf/Sync
 
 {% endtabs %}
 
-![Set the icon to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-icon.png)
+![Set the icon to WPF Notify Icon](Getting-Started_images/wpf-notifyicon-icon.png)
 
 ## Text
 
-You can use the [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_Text) property to add text to the `NotifyIcon` control. It will be shown on the notify icon while hovering.
+You can use the [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_Text) property to add text to the `Notify Icon` control. It will be shown on the notify icon while hovering.
 
 {% tabs %}
 
@@ -152,11 +152,11 @@ notify.Text = "Notify me";
 
 {% endtabs %}
 
-![Set the text value to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-text.png)
+![Set the text value to WPF Notify Icon](Getting-Started_images/wpf-notifyicon-text.png)
 
 ## Tooltip
 
-You can show the tooltip for `NotifyIcon` control by using the [ShowBalloonTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_ShowBalloonTip_System_Int32_) method. You can also add a title and text by using the [BalloonTipTitle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_BalloonTipTitle) and [BalloonTipText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_BalloonTipText) properties. You can enable the title by setting the [BalloonTipHeaderVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_BalloonTipHeaderVisibility) property to `true`.
+You can show the tooltip for `Notify Icon` control by using the [ShowBalloonTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_ShowBalloonTip_System_Int32_) method. You can also add a title and text by using the [BalloonTipTitle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_BalloonTipTitle) and [BalloonTipText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_BalloonTipText) properties. You can enable the title by setting the [BalloonTipHeaderVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_BalloonTipHeaderVisibility) property to `true`.
 
 {% tabs %}
 
@@ -178,16 +178,16 @@ notify.ShowBalloonTip(3000);
 
 {% endtabs %}
 
-![Set the tooltip to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-tooltip.png)
+![Set the tooltip to WPF Notify Icon](Getting-Started_images/wpf-notifyicon-tooltip.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/GettingStarted-WPF-NotifyIcon).
 
 ## Theme
 
-NotifyIcon supports various built-in themes. Refer to the below links to apply themes for the NotifyIcon,
+Notify Icon supports various built-in themes. Refer to the below links to apply themes for the Notify Icon,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-theme.png)
+  ![Setting theme to WPF Notify Icon](Getting-Started_images/wpf-notifyicon-theme.png)

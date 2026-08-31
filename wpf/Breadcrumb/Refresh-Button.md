@@ -7,9 +7,9 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Refresh Button in WPF HierarchyNavigator
+# Refresh Button in WPF BreadCrumb
 
-The Refresh button enables the HierarchyNavigatorRefreshButtonClick event to initiate in the HierarchyNavigator control.
+The Refresh button enables the HierarchyNavigatorRefreshButtonClick event to initiate in the BreadCrumb control.
 
 ![Refresh-Button_img1](Refresh-Button_images/Refresh-Button_img1.png)
 

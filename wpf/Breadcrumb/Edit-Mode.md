@@ -7,7 +7,7 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Edit Mode in WPF HierarchyNavigator
+# Edit Mode in WPF BreadCrumb
 
 This feature allows you to easily edit a navigation path by setting the [IsEnableEditMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_IsEnableEditMode) property to `true`. The filter support is available in edit mode, which suggests matching nodes based on the path entered in the editor like the Windows Explorer.
 
@@ -24,7 +24,7 @@ N> If you enter an incorrect path or text in the editor, the dropdown suggestion
 		x:Class="HierarchicalNavigatorSample.MainWindow"
 		Title="HierarchicalNavigator Sample" Height="350" Width="525">
 	<Grid>
-		<!--Adding HierarchicalNavigator control -->
+		<!--Adding BreadCrumb control -->
 		<syncfusion:HierarchicalNavigator x:Name="hierarchicalNavigator" Width="100" Height="100" IsEnableEditMode="true" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 	</Grid>
 </Window>
@@ -56,7 +56,7 @@ namespace HierarchicalNavigatorSample
 {% endhighlight %}
 {% endtabs %}
 
-![Hierarchy Naviagtor with AutoComplete](Edit-Mode_images/AutoComplete_image.png)
+![BreadCrumb with AutoComplete](Edit-Mode_images/AutoComplete_image.png)
 
 
 

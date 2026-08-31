@@ -7,9 +7,9 @@ control: NotifyIcon
 documentation: ug
 ---
 
-# Interactive Features in WPF NotifyIcon
+# Interactive Features in WPF Notify Icon
 
-This section illustrates the following interactive features of NotifyIcon control. 
+This section illustrates the following interactive features of Notify Icon control. 
 
 ## BalloonTip
 
@@ -17,7 +17,7 @@ This section illustrates the following parts of a BalloonTip.
 
 ### Header of BalloonTip
 
-Using the BalloonTipHeaderVisibility property, user can collapse or show the header of the NotifyIcon control.
+Using the BalloonTipHeaderVisibility property, user can collapse or show the header of the Notify Icon control.
 
 The following code snippet is used to set this property.
 
@@ -58,7 +58,7 @@ notifyIcon.BalloonTipHeaderVisibility = Visibility.Collapsed;
 
 ### Text and Title of BalloonTip
 
-BalloonTipText property is used to set the text that should be displayed in the Notify icon. BalloonTipTitle is used to set the title for NotifyIcon. The following code snippet is used to set these properties.
+BalloonTipText property is used to set the text that should be displayed in the Notify icon. BalloonTipTitle is used to set the title for Notify Icon. The following code snippet is used to set these properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,7 +88,7 @@ BalloonTipTitle = "AntiVirus Software"
 
 ### Icon of BalloonTip
 
-You can display the following five different icons in the NotifyIcon control. 
+You can display the following five different icons in the Notify Icon control. 
 
 * Custom
 * Info
@@ -122,11 +122,11 @@ notifyIcon.BalloonTipIcon = BalloonTipIcon.Warning;
 
 ## Animation
 
-This topic illustrates the animation type and animation time for NotifyIcon control.
+This topic illustrates the animation type and animation time for Notify Icon control.
 
 ### Animation Type
 
-You can set different animation effects for the NotifyIcon by using the BalloonTipAnimationEffect property. They are listed below.
+You can set different animation effects for the Notify Icon by using the BalloonTipAnimationEffect property. They are listed below.
 
 * Custom
 * Fade
@@ -135,7 +135,7 @@ You can set different animation effects for the NotifyIcon by using the BalloonT
 
 ### Animation Time
 
-NotifyIcon display time is set by using the property called ShowBalloonTipTime. The time during which the NotifyIcon is hidden is set by using the property called HideBalloonTipTime.
+Notify Icon display time is set by using the property called ShowBalloonTipTime. The time during which the Notify Icon is hidden is set by using the property called HideBalloonTipTime.
 
 The following code snippet is used to set these properties.
 
@@ -174,7 +174,7 @@ notifyIcon.HideBalloonTipTime = 1000;
 
 ## Setting the position of the Notify Icon
 
-The position where the NotifyIcon is to be displayed is specified using the property called BalloonTipLocation. To set this property, refer the below code.
+The position where the Notify Icon is to be displayed is specified using the property called BalloonTipLocation. To set this property, refer the below code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,13 +194,13 @@ defaults.BalloonTipLocation = new Point(500, 500);
 
 ## Setting the Shape of the Notify Icon
 
-NotifyIcon can take the following three different shapes.
+Notify Icon can take the following three different shapes.
 
 * Balloon
 * Rectangle
 * RoundedRectangle
 
-The shape for the NotifyIcon is set by using the BalloonTipShape property. The following code snippet is used to change the Shape of the NotifyIcon control.
+The shape for the Notify Icon is set by using the BalloonTipShape property. The following code snippet is used to change the Shape of the Notify Icon control.
 
 {% tabs %}
 {% highlight xaml %}

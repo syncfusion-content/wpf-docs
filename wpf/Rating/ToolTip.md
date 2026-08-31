@@ -7,9 +7,9 @@ control: SfRating
 documentation: ug
 ---
 
-# ToolTip in WPF SfRating
+# ToolTip in WPF Rating
 
-Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the WPF SfRating control, tooltip shows the data of `Value` property. It will be displayed when the mouse is hovered over the rating items, and it will be disappeared when the mouse is moved from the rating items. The tooltip is enabled or disabled using the `ShowToolTip` property. The default value of this property is true.
+Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the WPF Rating control, tooltip shows the data of `Value` property. It will be displayed when the mouse is hovered over the rating items, and it will be disappeared when the mouse is moved from the rating items. The tooltip is enabled or disabled using the `ShowToolTip` property. The default value of this property is true.
 
 {% tabs %}
 
@@ -36,7 +36,7 @@ public MainWindow()
 
 {% endtabs %}
 
-![SfRating tooltip](images/ToolTip.png)
+![Rating tooltip](images/ToolTip.png)
 
 ## Set tooltip precision
 
@@ -70,4 +70,4 @@ public MainWindow()
 
 {% endtabs %}
 
-![SfRating tooltip precision](images/toolTipPrecision.png)
+![Rating tooltip precision](images/toolTipPrecision.png)

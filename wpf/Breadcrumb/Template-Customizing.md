@@ -7,7 +7,7 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Template Customizing in WPF HierarchyNavigator
+# Template Customizing in WPF BreadCrumb
 
 When Business Objects are used for data binding, ItemTemplate should be used to determine how the user interface will be displayed. A HierarchicalDataTemplate can be used as an ItemTemplate specifying the template for each item.
 
@@ -90,7 +90,7 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4. Add hierarchicalItemsSource with the HierarchyNavigator control ItemsSource property.
+4. Add hierarchicalItemsSource with the BreadCrumb control ItemsSource property.
 
 {% capture codesnippet3 %}
 {% tabs %}
