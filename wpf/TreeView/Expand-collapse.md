@@ -212,7 +212,7 @@ sfTreeView.CollapseAll();
 
 ## Expand and Collapse using Keyboard
 
-The WPF TreeView allows expanding and collapsing nodes using the right and left arrow keys. To expand a node, press the right arrow key on the focused item; to collapse a node, press the left arrow key.
+The WPF TreeView allows expanding and collapsing nodes using the right and left arrow keys. To expand a node, press the right arrow key on the focused item; to collapse a node, press the left arrow key. 
 
 ## Events
 
