@@ -162,7 +162,7 @@ public class FileManagerViewModel
 
 [ItemContextMenuOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemContextMenuOpeningEventArgs.html) has the following members which provides the information about `ItemContextMenuOpening` event
 
-* [MenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemContextMenuOpeningEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemContextMenuOpeningEventArgs_MenuInfo) - Gets an instance of [TreeViewContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemContextMenuInfo.html) that contains information about WPF TreeView and WPF TreeView node.
+* [MenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemContextMenuOpeningEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemContextMenuOpeningEventArgs_MenuInfo) - Gets an instance of [TreeViewContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemContextMenuInfo.html) that contains information about WPF TreeView and [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html).
 * [ContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemContextMenuOpeningEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemContextMenuOpeningEventArgs_ContextMenu) - Gets or sets the context menu getting opened. 
 
 You can cancel showing of [ItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextMenuOpening) for certain nodes using custom logic within this event by setting `ItemContextMenuOpeningEventArgs.Cancel` as true.

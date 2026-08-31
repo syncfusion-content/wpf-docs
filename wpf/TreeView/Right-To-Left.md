@@ -9,7 +9,7 @@ documentation: ug
 
 # Right to left(RTL) in WPF TreeView (SfTreeView)
 
-WPF TreeView supports changing the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.0) property to `RightToLeft`.
+The WPF TreeView supports changing the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.0) property to `RightToLeft`.
 
 {% tabs %}
 {% highlight xaml %}

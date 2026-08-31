@@ -170,7 +170,7 @@ N> `IsExpandedPropertyName` property is not supported for unbound mode and it ac
 
 ## Programmatic Expand and Collapse
 
-WPF TreeView allows programmatic expand and collapse based on the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and level by using following methods.
+The WPF TreeView allows programmatic expand and collapse based on the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) and level by using following methods.
 
 * [ExpandNode(TreeViewNode item)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandNode_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) - Method to expand the particular `TreeViewNode` passed to it.
 * [CollapseNode(TreeViewNode item)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CollapseNode_Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_) - Method to collapse the particular `TreeViewNode` passed to it.
@@ -216,7 +216,7 @@ The WPF TreeView allows expanding and collapsing nodes using the right and left 
 
 ## Events
 
-WPF TreeView exposes following events to handle expanding and collapsing of items.
+The WPF TreeView exposes following events to handle expanding and collapsing of items.
 
 * [NodeCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) — Occurs when a node is being collapsed.
 * [NodeExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) — Occurs when a node is being expanded.

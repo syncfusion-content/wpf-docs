@@ -195,7 +195,7 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-bind-sel
 
 ## Event to command
 
-The `TreeView` event can be converted into commands using [Behaviors](https://devblogs.microsoft.com/dotnet/open-sourcing-xaml-behaviors-for-wpf/). To achieve this, create a command in the ViewModel class and associate it to the WPF TreeView event using `Behaviors`.
+The `TreeView` event can be converted into commands using [Behaviors](https://devblogs.microsoft.com/dotnet/open-sourcing-xaml-behaviors-for-wpf/). To achieve this, create a command in the ViewModel class and associate it to the TreeView event using `Behaviors`.
 
 {% tabs %}
 {% highlight xaml %}
