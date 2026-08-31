@@ -7,15 +7,15 @@ control: PercentTextBox
 documentation: ug
 ---
 
-# Step Interval in WPF PercentTextBox
+# Step Interval in WPF Percent TextBox
 
-The [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) control allows you to increase or decrease the percent value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_ScrollInterval) property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
+The [WPF Percent TextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) control allows you to increase or decrease the percent value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_ScrollInterval) property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
- For example, the `ScrollInterval` value is set to 4. So, that the `PercentTextBox` control [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValue) increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
+ For example, the `ScrollInterval` value is set to 4. So, that the `WPF Percent TextBox` control [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValue) increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
 
 ## Change Value on Up, Down arrow key
 
-The `PercentTextBox` control allows you to increase or decrease the `PercentValue` of `PercentTextBox` based on the `ScrollInterval` by pressing the up arrow and down arrow keys on the keyboard.
+The `WPF Percent TextBox` control allows you to increase or decrease the `PercentValue` of `WPF Percent TextBox` based on the `ScrollInterval` by pressing the up arrow and down arrow keys on the keyboard.
 
 {% tabs %}
 {% highlight XAML %}
@@ -39,7 +39,7 @@ percentTextBox.ScrollInterval = 2;
 
 ## Change Value on Mouse Wheel
 
-The `PercentTextBox` allows you to increase or decrease the `PercentValue` based on the `ScrollInterval` by scrolling the mouse wheel over the control when the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_IsScrollingOnCircle) property is `true`. The default value of the `IsScrollingOnCircle` property is `true`. If `ScrollInterval` is set to `0` or a negative value, the value will not change.
+The `WPF Percent TextBox` allows you to increase or decrease the `PercentValue` based on the `ScrollInterval` by scrolling the mouse wheel over the control when the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_IsScrollingOnCircle) property is `true`. The default value of the `IsScrollingOnCircle` property is `true`. If `ScrollInterval` is set to `0` or a negative value, the value will not change.
 
 {% tabs %}
 {% highlight XAML %}
@@ -64,7 +64,7 @@ percentTextBox.ScrollInterval = 3;
 
 ## Change Value on Click and Drag
 
-The `PercentTextBox` allows you to increase or decrease the percent value based on the `ScrollInterval` by clicking and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableExtendedScrolling) property is `true`. The `PercentTextBox` percent value increases when the cursor moves to the right or top of the screen and decreases when you click and drag the mouse to the left or bottom of the screen. Before that, the control must be unfocused (must not have keyboard focus).
+The `WPF Percent TextBox` allows you to increase or decrease the percent value based on the `ScrollInterval` by clicking and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableExtendedScrolling) property is `true`. The `WPF Percent TextBox` percent value increases when the cursor moves to the right or top of the screen and decreases when you click and drag the mouse to the left or bottom of the screen. Before that, the control must be unfocused (must not have keyboard focus).
 
 {% tabs %}
 {% highlight XAML %}
@@ -89,7 +89,7 @@ percentTextBox.EnableExtendedScrolling = true;
 
 ## Allow or restrict selection on focus
 
-`PercentTextBox` allows you to automatically select text when the control gets focus by setting the [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_TextSelectionOnFocus) property to `true`. If you want to restrict the selection when the control gets focus, set the `TextSelectionOnFocus` property value to `false`. The default value of the `TextSelectionOnFocus` property is `true`.
+`WPF Percent TextBox` allows you to automatically select text when the control gets focus by setting the [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_TextSelectionOnFocus) property to `true`. If you want to restrict the selection when the control gets focus, set the `TextSelectionOnFocus` property value to `false`. The default value of the `TextSelectionOnFocus` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
