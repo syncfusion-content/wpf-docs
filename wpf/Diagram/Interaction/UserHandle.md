@@ -17,7 +17,7 @@ Quick Commands are used to execute commonly used commands for the [Nodes](https:
 
 ## Define Custom QuickCommand
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to define custom QuickCommands for the Nodes, Connectors and Groups.
+[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides support to define custom QuickCommands for the Nodes, Connectors and Groups.
 
 {% tabs %}
 

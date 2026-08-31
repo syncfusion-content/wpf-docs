@@ -8,7 +8,7 @@ documentation: ug
 ---
 # RibbonButton in WPF Ribbon Control
 
- **RibbonButton** provides functionality similar to a normal button. Additionally, it comes in different sizes and can be easily placed inside the **RibbonBar** in the Ribbon control.
+ **RibbonButton** provides functionality similar to a normal button. Additionally, it comes in different sizes and can be easily placed inside the **RibbonBar** in the WPF Ribbon Control.
 
 ## Setting various size modes
 

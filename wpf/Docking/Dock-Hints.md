@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# DragProvider in WPF DockingManager Control
+# DragProvider in WPF Docking Control
 
 State of the dock children can be changed through the dock hints. This section explains how the dock item can be docked / documented with the help of Dock hints and how the dock hints can be disabled/ enabled at run time.
 
@@ -53,11 +53,11 @@ Otherwise the provider will be displayed with 5 hints.
 
 ## Restrict docking by disabling inner and outer dock hints
 
-Dock hints of the DragProvider can be disabled / enabled through attached property [DockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockAbility.html) of the DockingManager.
+Dock hints of the DragProvider can be disabled / enabled through attached property [DockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockAbility.html) of the WPF Docking Control.
 
 ### All
 
-When the DockAbility of the window is set as `All`, all the dock hints of the DockingManager will be enabled in the DockingManager's DragProvider. Default value of the `DockAbility` property is `All`.
+When the DockAbility of the window is set as `All`, all the dock hints are enabled in the DragProvider of the WPF Docking Control. Default value of the `DockAbility` property is `All`.
 
 ![WPF Docking DragProvider with all Dock Hints](Dock-hints-images/wpf-docking-dragprovider-with-all-dock-hints.png)
 
@@ -518,7 +518,7 @@ DockingManager.SetOuterDockAbility(dockingManager, OuterDockAbility.Top);
 
 ## Restrict docking at run-time
 
-You can disabled the dock hints at run-time by handling [PreviewDockHints](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event in the `DockingManager`. It helps to handle before displaying the dock hints when drag the windows in `DockingManager` based on mouse hovered window. This event will be triggered for both inner dockability and outer dockability while drag the windows. It receives an argument of type [PreviewDockHintsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.PreviewDockHintsEventArgs.html) containing the following information about the event.
+You can disabled the dock hints at run-time by handling [PreviewDockHints](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event in the `WPF Docking Control`. It helps to handle before displaying the dock hints when drag the windows in `WPF Docking Control` based on mouse hovered window. This event will be triggered for both inner dockability and outer dockability while drag the windows. It receives an argument of type [PreviewDockHintsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.PreviewDockHintsEventArgs.html) containing the following information about the event.
 
 <table>
 <tr>

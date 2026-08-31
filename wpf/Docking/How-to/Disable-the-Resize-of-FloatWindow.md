@@ -9,7 +9,7 @@ documentation: ug
 
 # How to disable resize of FloatWindow in WPF Docking
 
-CanResizeInFloatState is the attached property which can be applied on float state child of DockingManager to disable the manual resize of FloatWindow.  If this property is set, the float window is no longer resizable. The usage is shown below.
+CanResizeInFloatState is the attached property which can be applied on float state child of WPF Docking Control to disable the manual resize of FloatWindow.  If this property is set, the float window is no longer resizable. The usage is shown below.
 
 {% tabs %}
 

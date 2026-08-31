@@ -13,7 +13,7 @@ This section explains how to format the value in WPF UpDown control.
 
 ## Decimal digit
 
-The [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NumberDecimalDigits) property is used to specify the number of digits to be displayed after the decimal point in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control.
+The [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NumberDecimalDigits) property is used to specify the number of digits displayed after the decimal point. The default value is `0`.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ grid.Children.Add(updown);
 
 ## Group separator
 
-The group separator is the character used to group the values. You can show the group separator in UpDown control by enable [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_GroupSeperatorEnabled) property. The default value is `False`.
+The group separator is the character used to group the values. To show the group separator, enable the [GroupSeperatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_GroupSeperatorEnabled) property (note the historical API spelling "Seperator"). The default value is `False`.
 
 {% tabs %}
 
@@ -62,17 +62,25 @@ updown.GroupSeperatorEnabled = true;
 
 ## NumberFormatInfo
 
-The number formatting of UpDown control can be customized by setting [UpDown.NumberFormatInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NumberFormatInfo) property by specifying the culture-specific group separator, decimal separator, and the number of decimal digits. You can show the group separator by enable the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_GroupSeperatorEnabled) property.
+The number formatting of `UpDown` can be customized by setting the [NumberFormatInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NumberFormatInfo) property, which specifies the culture-specific group separator, decimal separator, and number of decimal digits. You can show the group separator by enabling the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_GroupSeperatorEnabled) property.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:UpDown Name="upDown" Value="5555555" GroupSeperatorEnabled="True">
-<syncfusion:UpDown.NumberFormatInfo>
-<globalization:NumberFormatInfo NumberGroupSeparator="/" NumberDecimalDigits="4" NumberDecimalSeparator="*"/>
-</ syncfusion:UpDown.NumberFormatInfo>  
-</ syncfusion:UpDown>
+<Window x:Class="NumericUpDownSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:globalization="clr-namespace:System.Globalization"
+        Title="MainWindow" Height="350" Width="525">
+
+    <syncfusion:UpDown x:Name="upDown" Value="5555555" GroupSeperatorEnabled="True">
+        <syncfusion:UpDown.NumberFormatInfo>
+            <globalization:NumberFormatInfo NumberGroupSeparator="/" NumberDecimalDigits="4" NumberDecimalSeparator="*"/>
+        </syncfusion:UpDown.NumberFormatInfo>
+    </syncfusion:UpDown>
+</Window>
 
 {% endhighlight %}
 

@@ -3340,7 +3340,7 @@ The labels rotate when values are given for the label angle.
 
 ### Label Orientation
 
-Essential Diagram for WPF provides support to orient the LineConnector label as needed. 
+WPF Diagram provides support to orient the LineConnector label as needed. 
 
 Use Case Scenarios
 
@@ -4033,7 +4033,7 @@ lc.LineBridgingEnabled = False
 {% endhighlight  %}
 The Line Routing is disabled.
 
-Enable LineRouting from DiagramView
+Enable LineRouting from WPF DiagramView
 
 When LineRouting for DiagramView is enabled, LineRouting for all the lines will be enabled. You can change this binding by specifying a value for an individual LineConnector. 
 

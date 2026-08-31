@@ -32,7 +32,7 @@ To add the `SfBadge` manually in XAML, follow these steps:
     * Syncfusion.Shared.WPF
     * Syncfusion.Tools.WPF
 
-3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `SfBadge` in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** as the `notification:` namespace, and declare the `SfBadge` in the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -46,7 +46,7 @@ To add the `SfBadge` manually in XAML, follow these steps:
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:notification="http://schemas.syncfusion.com/wpf"
     mc:Ignorable="d">
-    <Grid>
+    <Grid x:Name="grid">
         <notification:SfBadge Name="badge"/>
     </Grid>
 </Window>
@@ -67,7 +67,7 @@ To add the `SfBadge` control manually in C#, follow these steps:
     * Syncfusion.Shared.WPF
     * Syncfusion.Tools.WPF
 
-3. Include the required namespace and create an instance of `SfBadge` and add it to the window.
+3. Include the required namespaces, create an instance of `SfBadge`, and add it to the window.
 
 4. Declare the `SfBadge` control using C#.
 
@@ -171,7 +171,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Alignment of Badge
 
-you can align the `Badge` either horizontally or vertically by using the `HorizontalAlignment` or `VerticalAlignment` properties. The default value of `HorizontalAlignment` property is `Right` and `VerticalAlignment` property is `Top`.
+You can align the `Badge` either horizontally or vertically by using the `HorizontalAlignment` or `VerticalAlignment` properties. The default value of the `HorizontalAlignment` property is `Right` and the `VerticalAlignment` property is `Top`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -276,43 +276,36 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can directly add the `Badge` to any objects without using the `SfBadge.Badge` container.
 
+The C# sample below defines a `MailItem` class and a `ViewModel` that exposes a list of `MailItem` instances. Place both classes in your project (for example, in a `Models` folder) and add an `xmlns:local` namespace mapping in the XAML that points to the namespace where these classes live.
+
 {% tabs %}
 {% highlight C# %}
 
-public class ViewModel {
- public string ItemName { get; set; }
- public int? UnreadMessageount { get; set; }
-}
+using System.Collections.Generic;
 
-public class ViewModel {
-    public List<Model> MailItems { get; set; }
-    public ViewModel(){
-        MailItems = new List<Model>();
-        MailItems.Add(new Model()
+namespace GettingStarted.Models
+{
+    public class MailItem
+    {
+        public string ItemName { get; set; }
+        public int? UnreadMessageCount { get; set; }
+    }
+
+    public class ViewModel
+    {
+        public List<MailItem> MailItems { get; set; }
+
+        public ViewModel()
         {
-            ItemName = "Inbox",
-            UnreadMessageount = 20
-        });
-        MailItems.Add(new Model()
-        {
-            ItemName = "Drafts",
-            UnreadMessageount = null
-        });
-        MailItems.Add(new Model()
-        {
-            ItemName = "Sent Items",
-            UnreadMessageount = 5
-        });
-        MailItems.Add(new Model()
-        {
-            ItemName = "Deleted Items",
-            UnreadMessageount = null
-        });
-        MailItems.Add(new Model()
-        {
-            ItemName = "Junk Email",
-            UnreadMessageount = null
-        });
+            MailItems = new List<MailItem>
+            {
+                new MailItem { ItemName = "Inbox",         UnreadMessageCount = 20  },
+                new MailItem { ItemName = "Drafts",        UnreadMessageCount = null },
+                new MailItem { ItemName = "Sent Items",    UnreadMessageCount = 5   },
+                new MailItem { ItemName = "Deleted Items", UnreadMessageCount = null },
+                new MailItem { ItemName = "Junk Email",    UnreadMessageCount = null }
+            };
+        }
     }
 }
 
@@ -323,7 +316,7 @@ public class ViewModel {
 {% highlight XAML %}
 
 <Window.DataContext>
-    <local:ViewModel></local:ViewModel>
+    <local:ViewModel/>
 </Window.DataContext>
 <Grid>
     <ListView BorderThickness="1"
@@ -347,7 +340,7 @@ public class ViewModel {
                                           Height="20" 
                                           Width="40" 
                                           Background="Orange"
-                                          Content="{Binding UnreadMessageount}"
+                                          Content="{Binding UnreadMessageCount}"
                                           Shape="Oval"/>
                 </Grid>
             </DataTemplate>
@@ -364,23 +357,19 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Predefined colors for displaying the badges
 
-You can change background color of the `Badge` by using the [Fill](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Fill) property. Based on the value of `Fill` property, respective background color will be applied to the `Badge`. The default value of `Fill` property is `Accent`.
+You can change the background color of the `Badge` by using the [Fill](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Fill) property. Based on the value of the `Fill` property, the respective background color will be applied to the `Badge`. The default value of the `Fill` property is `Accent`.
 
-The `Badge` supports the following different essential states :
+The `Badge` supports the following essential states:
 
-* Accent - DarkSlateBlue background will be applied
-
-* Alt - DarkSlateGray background will be applied
-
-* Default - WhiteSmoke background will be applied
-
-* Error - OrangeRed background will be applied
-
-* Information - RoyalBlue background will be applied
-
-* Success - Green background will be applied
-
-* Warning - Chocolate background will be applied
+| Fill value     | Applied background |
+|----------------|--------------------|
+| `Accent`       | DarkSlateBlue      |
+| `Alt`          | DarkSlateGray      |
+| `Default`      | WhiteSmoke         |
+| `Error`        | OrangeRed          |
+| `Information`  | RoyalBlue          |
+| `Success`      | Green              |
+| `Warning`      | Chocolate          |
 
 ![WPF Badge Predefined Colors](Getting-Started_images/wpf-badge-predefined-colors.png)
 
@@ -412,7 +401,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Predefined shapes for displaying the Badge
 
-You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes , use the `Shape` property value as `None`. The default value of `Shape` property is `Oval`.
+You can change the default shape to either `Rectangle`, `Oval`, or `Ellipse` by using the [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `Badge` content without any default shape, use the `Shape` property value as `None`. The default value of the `Shape` property is `Ellipse`.
+
+| Shape value   | Description                              |
+|---------------|------------------------------------------|
+| `Ellipse`     | Circular badge. (default)                |
+| `Oval`        | Rounded-rectangle badge.                 |
+| `Rectangle`   | Rectangular badge.                       |
+| `None`        | No shape; only the badge content renders.|
 
 ![WPF Badge Predefined Shapes](Getting-Started_images/wpf-badge-predefined-shapes.png)
 
@@ -444,7 +440,13 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Animate when content changes
 
-You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [AnimationType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of `AnimationType` property is `None`.
+You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using the [AnimationType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of the `AnimationType` property is `None`.
+
+| AnimationType value | Description                  |
+|---------------------|------------------------------|
+| `None`              | No animation. (default)      |
+| `Scale`             | Scale-in/scale-out animation.|
+| `Opacity`           | Fade-in/fade-out animation.  |
 
 {% tabs %}
 {% highlight XAML %}
@@ -468,7 +470,8 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
                          NumberDecimalDigits="0"
                          Value="1"
                          x:Name="badgeContent"
-                         ValueChanged="BadgeContent_ValueChanged"/> 
+                         ValueChanged="BadgeContent_ValueChanged"/>
+</StackPanel>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -503,7 +506,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom Content Formats
 
-You can format the numbers which are displayed in the `Badge` content by using the converters. For example, you can display the number as `99+` which is greater than or equal to `100`.
+You can format the numbers which are displayed in the `Badge` content by using conditional logic in an event handler or value converter. For example, you can display the number as `99+` for any value greater than or equal to `100`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -521,7 +524,7 @@ You can format the numbers which are displayed in the `Badge` content by using t
 <StackPanel Orientation="Vertical">
     <TextBlock Text="Badge content" 
                TextAlignment="Center" />
-    <syncfusion1:UpDown MinValue="1"
+    <notification:UpDown MinValue="1"
                         MaxValue="10000000"
                         Step="1" 
                         NumberDecimalDigits="0"

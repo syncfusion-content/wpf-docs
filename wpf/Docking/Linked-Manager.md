@@ -6,13 +6,13 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Linked Manager in WPF DockingManager Control
+# Linked Manager in WPF Docking Control
 
 ## Linked Manager
 
-The windows from one DockingManager cannot be dragged and dropped to another DockingManager by default. But Linked Manager support allows to drag and drop the windows from one DockingManager to another by setting `TargetDockingManager` list.
+The windows from one WPF Docking Control cannot be dragged and dropped to another WPF Docking Control by default. But Linked Manager support allows to drag and drop the windows from one WPF Docking Control to another by setting `TargetDockingManager` list.
 
-Source Docking Manager
+Source WPF Docking Control 
 
 {% tabs %}
 
@@ -110,11 +110,11 @@ End Class
 ![Linked manager](LinkedManager_images/LinkedManager_img1.jpeg)
 
 
-### Adding TargetManager list of DockingManager
+### Adding TargetManager list of WPF Docking Control
 
-To add TargetManager list in the DockingManager, call [AddToTargetManagersList](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AddToTargetManagersList_Syncfusion_Windows_Tools_Controls_DockingManager_) method of the DockingManager with the valid DockingManager instance as argument.
+To add TargetManager list in the WPF Docking Control, call [AddToTargetManagersList](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AddToTargetManagersList_Syncfusion_Windows_Tools_Controls_DockingManager_) method of the WPF Docking Control with the valid WPF Docking Control instance as argument.
 
-When only one DockingManager has TargetManagerList, the window drop to TargetManager cannot drag back to Owner DockingManger. For example DockingManager1 and DockingManager2 are the DockingManager instance and the DockingManager2 is added to TargetManagerList of DockingManager1, but the DockingManager2 is not aware of its TargetManager.
+When only one WPF Docking Control has TargetManagerList, the window drop to TargetManager cannot drag back to Owner DockingManger. For example WPF Docking Control1 and WPF Docking Control2 are the WPF Docking Control instance and the WPF Docking Control2 is added to TargetManagerList of WPF Docking Control1, but the WPF Docking Control2 is not aware of its TargetManager.
 
 Here, the windows from DockingManager1 are only allowed to be dragged and dropped in DockingManager2, 
 
@@ -161,7 +161,7 @@ MainWindow.DockingManager2.AddToTargetManagersList(Me.DockingManager1)
 {% endtabs %}
 ### Removing Target Manager list
 
-To remove DockingManager from the TargetManagerList, call [RemoveFromTargetManagerList](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_RemoveFromTargetManagersList_Syncfusion_Windows_Tools_Controls_DockingManager_) of DockingManager with the valid DockingManager instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow the below code snippets:
+To remove WPF Docking Control from the TargetManagerList, call [RemoveFromTargetManagerList](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_RemoveFromTargetManagersList_Syncfusion_Windows_Tools_Controls_DockingManager_) of WPF Docking Control with the valid WPF Docking Control instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow the below code snippets:
 
 {% tabs %}
 
@@ -182,11 +182,11 @@ MainWindow.DockingManager2.RemoveFromTargetManagersList(Me.DockingManager1)
 
 ## Nested Docking
 
-DockingManager provides the NestedDockingManager support, that allows to add DockingManager as a child window to another DockingManager. 
+The WPF Docking Control supports nested docking layouts, allowing one WPF Docking Control to be added as a child window of another.
 
-In Nested DockingManager, the whole DockingManager can be dragged and dropped inside the Parent DockingManager and DockWindows inside the DockingManager cannot be dragged and dropped on the owner DockingManager.
+In a nested layout, the whole WPF Docking Control can be dragged and dropped within its parent WPF Docking Control. However, dock windows contained within the nested control cannot be dragged and dropped onto the parent WPF Docking Control.
 
-### Adding DockingManager as Child in DockingManager
+### Adding WPF Docking Control as Child in WPF Docking Control
 
 {% tabs %}
 

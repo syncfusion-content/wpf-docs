@@ -9,41 +9,25 @@ documentation: ug
 
 # Setting Header in WPF DocumentContainer
 
-Using the `Header` property, user can set the header for the DocumentContainer elements. Use the following code snippet, to set the header for the DocumentContainer element.
-
-
-{% highlight xaml %}
-
-<!-- Adding Document Container -->
-
-<syncfusion:DocumentContainer Name="DocContainer"  Mode="MDI">
-
-<FlowDocumentScrollViewer x:Name="flow" syncfusion:DocumentContainer.Header="Features">
-
-</FlowDocumentScrollViewer>
-
-…....
-
-…....
-
-</syncfusion:DocumentContainer>
-
-{% endhighlight %}
-
-## Setting header programmatically
-
-Header of the DocumentContainer elements can be set by `SetHeader` method. 
+Using the `Header` attached property, the user can set the header for each DocumentContainer child element. The `Header` accepts any `object`, so the header text can be customized using a `HeaderTemplate`. Use the following code snippet to set the header for a DocumentContainer element.
 
 {% tabs %}
-
-{% highlight C# %}
-
-//Set the Header of the DocumentContainer
-
-DocumentContainer.SetHeader(flow, "Features");
-
+{% highlight XAML %}
+<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">
+    <FlowDocumentScrollViewer x:Name="flow" syncfusion:DocumentContainer.Header="Features" />
+    <!-- additional child windows -->
+</syncfusion:DocumentContainer>
 {% endhighlight %}
+{% endtabs %}
 
+## Setting the Header Programmatically
+
+The header of a DocumentContainer element can be set by the `SetHeader` static method.
+
+{% tabs %}
+{% highlight C# %}
+DocumentContainer.SetHeader(flow, "Features");
+{% endhighlight %}
 {% endtabs %}
 
 ![Setting-Header-of-the-Document-container_img1](Setting-Header-of-the-Document-container_images/Setting-Header-of-the-Document-container_img1.jpeg)

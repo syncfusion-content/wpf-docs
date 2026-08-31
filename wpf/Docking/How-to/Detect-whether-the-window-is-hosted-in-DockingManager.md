@@ -9,10 +9,10 @@ documentation: ug
 
 # How to detect hosted window in WPF Docking
 
-There two ways to detect whether a FrameworkElement is hosted in DockingManager or not. They are:  
+There two ways to detect whether a FrameworkElement is hosted in WPF Docking Control or not. They are:  
 
-1. Getting DockingManager instance for a FrameworkElement and checking whether it is null or not.
-2. Detecting whether the FrameworkElement is present in the Children collection of DockingManager.
+1. Getting WPF Docking Control instance for a FrameworkElement and checking whether it is null or not.
+2. Detecting whether the FrameworkElement is present in the Children collection of WPF Docking Control.
 
 The two ways are shown below:
 

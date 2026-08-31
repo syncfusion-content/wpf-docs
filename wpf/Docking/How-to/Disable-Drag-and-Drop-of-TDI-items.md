@@ -7,9 +7,9 @@ control: DockingManager
 documentation: ug
 ---
 
-# Disable TDI drag and drop in WPF DockingManager  
+# Disable TDI drag and drop in WPF Docking Control  
 
-IsTDIDragDropEnabled property is used to disable the drag and drop of TDI items in DockingManager. The usage is follows: 
+IsTDIDragDropEnabled property is used to disable the drag and drop of TDI items in WPF Docking Control. The usage is follows: 
 
 {% tabs %}
 

@@ -8,13 +8,13 @@ documentation: ug
 ---
 # Patterns and Practices in WPF Ribbon Control
 
-## Ribbon with MVVM
+## WPF Ribbon Control with MVVM
 
-For better control customization, the MVVM pattern can be followed. The following steps illustrate a simple MVVM pattern with Ribbon control
+For better control customization, the MVVM pattern can be followed. The following steps illustrate a simple MVVM pattern with WPF Ribbon Control
 
 1. Create new WPF project
 
-2. Add `Model` class for each element which need to be included in Ribbon control. In this sample class has been created for RibbonTab, RibbonBar and RibbonItem
+2. Add `Model` class for each element which need to be included in WPF Ribbon Control. In this sample class has been created for RibbonTab, RibbonBar and RibbonItem
 
 ### Model
 
@@ -231,7 +231,7 @@ End Class
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4. In XAML bind the collection to Ribbon control and use ItemContainerStyle to bind the inner level items like RibbonBar and RibbonItems
+4. In XAML bind the collection to WPF Ribbon Control and use ItemContainerStyle to bind the inner level items like RibbonBar and RibbonItems
 
 #### MainWindow.xaml
 
@@ -295,7 +295,7 @@ ItemsSource="{Binding CustomRibbonTabs}"
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-5. Converter class is used to set `SizeForm` for the Ribbon items and to set images.
+5. Converter class is used to set `SizeForm` for the WPF Ribbon Control items and to set images.
 
 #### Converter.cs
 
@@ -414,7 +414,7 @@ End Class
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 
-Now the output displays the Ribbon control with the populated items
+Now the output displays the WPF Ribbon Control with the populated items
 
 ![WPF Ribbon Items with MVVM](PatternsandPractices_images/wpf-ribbon-items-with-mvvm.jpeg)
 
@@ -422,7 +422,7 @@ Now the output displays the Ribbon control with the populated items
 ## Practice with PRISM
 
 
-Ribbon control provides PRISM support. The following steps explain about creating simple sample project in the PRISM.
+WPF Ribbon Control provides PRISM support. The following steps explain about creating simple sample project in the PRISM.
 
 1. Create new WPF project and add the following references to the solution project.
 		

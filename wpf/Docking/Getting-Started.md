@@ -6,18 +6,18 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Getting Started with WPF DockingManager
+# Getting Started with WPF Docking Control
 
-This section explains how to implement a similar UI as Visual Studio by using the [WPF DockingManager](https://www.syncfusion.com/wpf-controls/docking) in your project. 
+This section explains how to implement a similar UI as Visual Studio by using the [WPF Docking Control](https://www.syncfusion.com/wpf-controls/docking) in your project. 
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#dockingmanager) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#dockingmanager) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control in any application.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-## Creating Application with DockingManager control
-In this walkthrough, you will create a WPF application with [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control.
+## Creating Application with WPF Docking Control
+In this walkthrough, you will create a WPF application with [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control.
 
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
@@ -25,15 +25,15 @@ In this walkthrough, you will create a WPF application with [DockingManager](htt
 4. [Adding control manually in C#](#Adding-control-manually-in-C#)
 
 ## Creating project 
-Below section provides detailed information to create new project in Visual Studio with [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control.
+Below section provides detailed information to create new project in Visual Studio with [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control.
 
 ## Adding control via designer
-The [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
+The [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
 
 ![WPF Docking Add via Designer](GettingStarted_images/wpf-docking-add-via-designer.png)
 
 ## Adding control manually in XAML
-In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control manually in XAML, do the below steps,
+In order to add [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control manually in XAML, do the below steps,
 
 1. Add the below required assembly references to the project,
 
@@ -42,7 +42,7 @@ In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page or Syncfusion.Windows.Tools.Controls namespace.
 
-3. Declare [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) in XAML page.
+3. Declare [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -76,16 +76,16 @@ In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
-In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control manually in C#, do the below steps,
+In order to add [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
 
     * Syncfusion.Shared.Wpf
     * Syncfusion.Tools.Wpf
 
-2. Import DockingManager namespace **Syncfusion.Windows.Tools.Controls**.
+2. Import WPF Docking Control namespace **Syncfusion.Windows.Tools.Controls**.
 
-3. Create DockingManager control instance and add it to the page.
+3. Create WPF Docking Control instance and add it to the page.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -141,7 +141,7 @@ namespace DockingManager_Sample
 
 ## Set Header for each child window
 
-You can set title for each child windows in [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) using [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderProperty) attached property.
+You can set title for each child windows in [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) using [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderProperty) attached property.
 
 {% tabs %}
 
@@ -185,16 +185,16 @@ DockingManager.SetHeader(StartPage, "StartPage");
 
 ## Set States for each child window
 
-You can set the states of each children window in [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) using the [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_StateProperty) attached property. Since `Dock` is the default value, initially all the children are docked  Docking Window. 
+You can set the states of each children window in [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) using the [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_StateProperty) attached property. Since `Dock` is the default value, initially all the children are docked  Docking Window. 
 
 The value of State property can be customized with below,
 
  * `AutoHidden` : Auto hides the assigned child window.
- * `Dock` : Docks the assigned child window in DockingManager.
+ * `Dock` : Docks the assigned child window in WPF Docking Control.
  * `Float` : Allows child window to float the assigned child window.
  * `Document` : Docks the assigned child window as tab item in DocumentContainer.
 
- N> To set `Document` state for any child window [UseDocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseDocumentContainer) property of DockingManager must be enabled.
+ N> To set `Document` state for any child window [UseDocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseDocumentContainer) property of WPF Docking Control must be enabled.
 
 {% tabs %}
 
@@ -247,7 +247,7 @@ DockingManager.SetState(StartPage, DockState.Document);
 
 ## Set Sides for children
 
-You can customize the position of child windows in [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) using the [SideInDockMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetSideInDockedMode_System_Windows_DependencyObject_Syncfusion_Windows_Tools_Controls_DockSide_) attached property. Since `Left` is the default value, initially all the windows are docked at left side. 
+You can customize the position of child windows in [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) using the [SideInDockMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetSideInDockedMode_System_Windows_DependencyObject_Syncfusion_Windows_Tools_Controls_DockSide_) attached property. Since `Left` is the default value, initially all the windows are docked at left side. 
 
 {% tabs %}
 
@@ -288,7 +288,7 @@ DockingManager.SetSideInDockedMode(Output, DockSide.Tabbed);
 
 ## Save / Load the layout 
 
-You can automatically save the current layout of [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) while closing the MainWindow by enabling the [PersistState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_PersistState) property.
+You can automatically save the current layout of [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) while closing the MainWindow by enabling the [PersistState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_PersistState) property.
 
 {% tabs %}
 
@@ -332,7 +332,7 @@ Me.dockingManager.LoadDockState()
 
 ## Set Visual Styles
 
-You can customize the visual styles of [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) using [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). To apply Visual Studio style on the current layout, refer to the following steps.
+You can customize the visual styles of [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) using [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). To apply Visual Studio style on the current layout, refer to the following steps.
 
 * Refer the following assemblies in your project.
 
@@ -372,7 +372,7 @@ using Syncfusion.SfSkinManager;
 {% endcapture %}
 {{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
-* Now apply the value as `VisualStudio2013` to the [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) property of the SfSkinManager for the DockingManager control.
+* Now apply the value as `VisualStudio2013` to the [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) property of the SfSkinManager for the WPF Docking Control.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -409,7 +409,7 @@ SfSkinManager.SetVisualStyle(dockingManager, VisualStyles.VisualStudio2013);
 
 ## ToolTip for child window
 
-You can show ToolTip when hover the mouse over the header of child windows in [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) using the [CaptionToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CaptionToolTipProperty) attached property in XAML and [SetCaptionToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetCaptionToolTip_System_Windows_DependencyObject_System_Object_) method in code behind.
+You can show ToolTip when hover the mouse over the header of child windows in [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) using the [CaptionToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CaptionToolTipProperty) attached property in XAML and [SetCaptionToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetCaptionToolTip_System_Windows_DependencyObject_System_Object_) method in code behind.
 
 {% tabs %}
 
@@ -438,7 +438,7 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 
 ## Theme
 
-[DockingManager](https://www.syncfusion.com/wpf-controls/docking) supports various built-in themes. Refer to the below links to apply themes for the DockingManager,
+[WPF Docking Control](https://www.syncfusion.com/wpf-controls/docking) supports various built-in themes. Refer to the below links to apply themes for the WPF Docking Control,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

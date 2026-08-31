@@ -9,7 +9,7 @@ documentation: ug
 
 # Stencil in WPF SfDiagram
 
-The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) surface multiple times.
+The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) surface multiple times.
 
 {% tabs %}
 {% highlight xaml %}
@@ -414,15 +414,15 @@ stencil.Constraints = StencilConstraints.AllowDragDrop
 
 ## See Also
 
-[How to drag and drop elements from a TreeView in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
+[How to drag and drop elements from a TreeView in WPF SfDiagram (SfDiagram)?](https://support.syncfusion.com/kb/article/9277/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagram-sfdiagram)
 
-[How to drag and drop different shapes from SfTreeView to WPF Diagram?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
+[How to drag and drop different shapes from SfTreeView to WPF SfDiagram?](https://support.syncfusion.com/kb/article/10960/how-to-drag-and-drop-different-shapes-from-sftreeview-to-wpf-diagram-sfdiagram)
 
 [How to refresh the stencil when adding a new symbol in the symbol source?](https://www.syncfusion.com/kb/9928/how-to-refresh-the-stencil-when-adding-new-symbol-in-symbol-source)
 
 [How to refresh the stencil with a new collection or new symbol?](https://support.syncfusion.com/kb/article/8714/how-to-refresh-stencil-with-new-collection-or-symbol-in-wpf-diagram)
 
-[How to create the WPF Diagram (SfDiagram) with a Stencil?](https://support.syncfusion.com/kb/article/8908/how-to-create-the-wpf-diagram-sfdiagram-with-stencil)
+[How to create the WPF SfDiagram with a Stencil?](https://support.syncfusion.com/kb/article/8908/how-to-create-the-wpf-diagram-sfdiagram-with-stencil)
 
 [How to host different UI elements as node content?](https://www.syncfusion.com/kb/9456/how-to-host-different-ui-elements-as-node-content)
 
@@ -442,9 +442,9 @@ stencil.Constraints = StencilConstraints.AllowDragDrop
 
 [How to expand all symbol groups in a Stencil?](https://support.syncfusion.com/kb/article/5492/how-to-expand-all-symbol-groups-in-wpf-diagram-sfdiagram)
 
-[How to change the color of a node in the Stencil and diagram while loading a saved file in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
+[How to change the color of a node in the Stencil and diagram while loading a saved file in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18669/how-to-change-the-color-of-a-node-in-the-stencil-and-diagram-while-loading-a-saved-file-in-wpf-diagramsfdiagram)
 
-[How to group all the SymbolViewModels into the same group in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
+[How to group all the SymbolViewModels into the same group in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18672/how-to-group-all-the-symbolviewmodels-into-the-same-group-in-the-wpf-diagram-sfdiagram)
 
 [How to create a customized Stencil using SVG images in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18251/how-to-create-customized-stencil-using-svg-images-in-wpf-sfdiagram)
 
@@ -452,10 +452,10 @@ stencil.Constraints = StencilConstraints.AllowDragDrop
 
 [How to change the background color of a symbol in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18241/how-to-change-the-background-color-of-a-symbol-in-wpf-sfdiagram)
 
-[How to drag and drop both default and custom nodes from the Stencil into the WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/18459/how-to-drag-and-drop-both-default-and-custom-node-from-the-stencil-into-the-wpf-diagram-sfdiagram)
+[How to drag and drop both default and custom nodes from the Stencil into the WPF SfDiagram ?](https://support.syncfusion.com/kb/article/18459/how-to-drag-and-drop-both-default-and-custom-node-from-the-stencil-into-the-wpf-diagram-sfdiagram)
 
 [How to enable or disable Stencil symbols in WPF SfDiagram?](https://support.syncfusion.com/kb/article/17888/how-to-enabledisable-the-stencil-symbol-in-wpf-diagram-sfdiagram)
 
-[How to achieve the Stencil preview effect without dragging a symbol in WPF Diagram (SfDiagram)?](https://support.syncfusion.com/kb/article/15537/how-to-achieve-the-stencil-preview-effect-without-dragging-a-symbol-in-the-wpf-diagram-sfdiagram)
+[How to achieve the Stencil preview effect without dragging a symbol in WPF SfDiagram ?](https://support.syncfusion.com/kb/article/15537/how-to-achieve-the-stencil-preview-effect-without-dragging-a-symbol-in-the-wpf-diagram-sfdiagram)
 
 [How to achieve the AutoConnect functionality in WPF SfDiagram?](https://support.syncfusion.com/kb/article/18252/how-to-achieve-the-autoconnect-functionality-in-wpf-diagram-sfdiagram)

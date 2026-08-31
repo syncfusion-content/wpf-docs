@@ -32,16 +32,16 @@ percentTextBox.PercentValue = 10;
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a percent value to the `PercentValue` property by binding, you can change the `PercentTextBox` percent value.
 
-The following code snippets illustrate the percent value binding from one `PercentTextBox` to another.
+The following code snippets illustrate the percent value binding from one `PercentTextBox` to another. To make the binding work, set the `DataContext` of the Window to an instance of `ViewModel` (for example, `DataContext = new ViewModel()` in the code-behind).
 
-{%tabs%}
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:PercentTextBox x:Name="percentTextBox1" PercentValue="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Height="25" Width="100"/>
 <syncfusion:PercentTextBox x:Name="percentTextBox2" PercentValue="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Width="100" Height="25"  />
 
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
 ViewModel.cs
 
@@ -72,7 +72,7 @@ class ViewModel : NotificationObject
 
 ## Change percent value by pasting the clipboard's text
 
-By default, `PercentTextBox` simply replaces the whole value by copied value with the current number format. If you want to replace or insert the copied value on specific place, use the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property value as `Advanced`. The default value of `PasteMode` property is `Default`. 
+By default, `PercentTextBox` simply replaces the whole value with the copied value using the current number format. If you want to replace or insert the copied value at a specific place, use the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property value as `Advanced`. The default value of the `PasteMode` property is `Default`. 
 
 The following table explains the pasting behaviour in `Advanced` paste mode,
 
@@ -111,7 +111,7 @@ If the selected text does not contain a number decimal separator, then copied va
 </tr>
 </table>
 
-{%tabs%}
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:PercentTextBox PasteMode="Advanced" 
@@ -126,35 +126,37 @@ percentTextBox.PasteMode = PasteMode.Advanced;
 percentTextBox.PercentValue = 12345.67;
 
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
 ![WPF PercentTextBox displays Pasting Copied Value in Specific Place](Changing-Percent-Value_images/wpf-percent-textbox-paste-value.png)
 
-## Show UpDown Button
+## Showing the UpDown Button
 
-You can increment or decrement the percent value of `PercentTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the percent value. The default value of `ShowSpinButton` property is `false`.
+You can increment or decrement the percent value of `PercentTextBox` by setting the `ShowSpinButton` property value to `true`. Click the Up button to increment or the Down button to decrement the percent value. The default value of the `ShowSpinButton` property is `false`. When using the spin buttons, you may also need to set the `MinValue` and `MaxValue` properties to control the valid range.
 
-{%tabs%}
+{% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PercentTextBox Height="30" Width="150" ShowSpinButton="True" />
+<syncfusion:PercentTextBox Height="30" Width="150" MinValue="0" MaxValue="100" ShowSpinButton="True" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.MinValue = 0;
+percentTextBox.MaxValue = 100;
 percentTextBox.ShowSpinButton = true;
 
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
 ![WPF PercentTextBox displays SpinButton](Changing-Percent-Value_images/wpf-percent-textbox-spinbutton.gif)
 
 ## Value Changed Event
 
-The `PercentTextBox` control can notify changes in percent value through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValueChanged) event. In `PercentValueChanged` event, you can get old percent value and new percent value from the `OldValue` and  `NewValue` properties.
+The `PercentTextBox` control can notify changes in percent value through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValueChanged) event. In the `PercentValueChanged` event, you can get the old percent value and new percent value from the `OldValue` and `NewValue` properties.
 
-{%tabs%}
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:PercentTextBox PercentValueChanged="PercentTextBox_PercentValueChanged"/>
@@ -166,7 +168,7 @@ PercentTextBox percentTextBox = new PercentTextBox();
 percentTextBox.PercentValueChanged += new PropertyChangedCallback(PercentTextBox_PercentValueChanged);
 
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
 You can handle the event as follows:
 
@@ -185,9 +187,9 @@ private void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPr
 
 ## Setting the Null value
 
- By default, the `PercentTextBox` control will display zero value when the `PercentValue` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_NullValue) and [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_UseNullOption) properties to show the null or any other percent value instead of zero.
+ By default, the `PercentTextBox` control will display zero when the `PercentValue` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_NullValue) and [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_UseNullOption) properties to show the null value or any other percent value instead of zero.
  
- The default value of the `NullValue` property is `null`, you can reset this to any other percent value. It will display only on setting the `UseNullOption` property is set to `true`.
+ The default value of the `NullValue` property is `null`; you can reset this to any other percent value. The `NullValue` is displayed only when the `UseNullOption` property is set to `true`. The default value of `UseNullOption` is `false`.
  
 **NullValue = Null**
 
@@ -235,11 +237,11 @@ percentTextBox.UseNullOption = true;
 
 ## Setting Watermark Text
 
-We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkText) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextIsVisible) property is `true` and the Percent value is `null` or empty, the control is not in focus and the `UseNullOption` property is `true`.
+You can display certain information within the control by using the [WatermarkText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkText) property. `WatermarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextIsVisible) property is `true`, the `PercentValue` is `null` or empty, the control is not in focus, and the `UseNullOption` property is `true`. The default value of `WatermarkTextIsVisible` is `false`.
 
 ### Setting the WatermarkText Foreground
 
-The `PercentTextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using [WaterMarkTextForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextForeground) property. The default color of `WaterMarkTextForeground` is `Black`.
+`PercentTextBox` allows you to set the desired brush as a foreground for `WatermarkText` using the [WatermarkTextForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextForeground) property. The default color of `WatermarkTextForeground` is `Black`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -266,8 +268,9 @@ percentTextBox.WatermarkTextForeground = Brushes.Red;
 
 ### Setting Watermark Template
 
-You can customize the Visual appearance of the `WatermarkText` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTemplate) property.
+You can customize the visual appearance of the `WatermarkText` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTemplate) property. The `WatermarkOpacity` property (used in the sample below) controls the opacity of the watermark content; its default value is `1`.
 
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="25"
@@ -284,9 +287,10 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
 </syncfusion:PercentTextBox>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![Customizing Watermark Text in WPF PercentTextBox](Changing-Percent-Value_images/wpf-percent-textbox-watermark-customization.png)
 
-N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `PercentTextBox` control.
+N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WatermarkText` in the `PercentTextBox` control.
 
-N> If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
+N> If both `NullValue` and `WatermarkText` are specified, you will only see `NullValue` but not `WatermarkText`.

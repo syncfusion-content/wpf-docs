@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Dealing with Ribbon Items in WPF Ribbon Control
 
-A Button Panel represents a panel control that can display a horizontal row of Ribbon Items in a single border. It is used to manage the place for the controls.
+A Button Panel represents a panel control that can display a horizontal row of WPF Ribbon Control Items in a single border. It is used to manage the place for the controls.
 
 ## Adding items to ButtonPanel in XAML
 
@@ -107,9 +107,9 @@ _buttonPanel.Items.Add(_splitButton)
 ![Adding Ribbon Items to ButtonPanel in WPF Ribbon](ArrangingRibbonitemsusingButtonPanel_images/wpf-ribbon-item-in-button-panel.jpeg)
 
 
-## Changing size of ribbon items
+## Changing size of WPF Ribbon Control items
 
-`SizeForm` is used to set the size of the Ribbon items that are added inside the Ribbon control.
+`SizeForm` is used to set the size of the WPF Ribbon Control items that are added inside the control.
 
 Possible values of `SizeForm` are Large, Small and ExtraSmall.
 
@@ -163,7 +163,7 @@ The code to set SizeForm for the above controls is illustrated below
 
 ## Add command to RibbonLauncherButton
 
-Ribbon instance now provides command support for RibbonBar LauncherButton. It provides the following options.
+WPF Ribbon Control instance now provides command support for RibbonBar LauncherButton. It provides the following options.
 
 * Setting LauncherButton Command
 * Setting LauncherButton CommandTarget
@@ -224,7 +224,7 @@ Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="
 ![WPF Ribbon displays Help Button](ShowHelpButtoninRibbonWindow_images/wpf-ribbon-help-button.jpeg)
 
 
-To set the HelpButton at the right of the RibbonWindow for the themes except Office2013, use `TabPanelItem` property of the Ribbon
+To set the HelpButton at the right of the RibbonWindow for the themes except Office2013, use `TabPanelItem` property of the WPF Ribbon Control.
 
 The TabPanelItem is located at the right corner below the main window close button in the following screen shot.
 

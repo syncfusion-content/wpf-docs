@@ -7,7 +7,7 @@ control: Ribbon
 documentation: ug
 ---
 
-# How to handle PopUp event in WPF Ribbon
+# How to handle PopUp event in WPF Ribbon Control
 
 To perform the action based on opening and closing of the ApplicationMenu, make use of `IsPopupOpenChanged` event.
 

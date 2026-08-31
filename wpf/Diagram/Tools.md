@@ -11,7 +11,7 @@ documentation: ug
 
 ## Tool Selection
 
-You can achieve several functions by clicking and dragging on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) surface. They are as follows.
+You can achieve several functions by clicking and dragging on the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) surface. They are as follows.
 
 * Draw selection rectangle – MultipleSelect tool
 * Pan the Diagram – ZoomPan tool
@@ -386,8 +386,8 @@ N> `Cursors` is the `System.Windows.Input.Cursors` static class. Other commonly 
 ## See Also
 
 
-- [How to override the default cursors during interaction in WPF Diagram](https://support.syncfusion.com/kb/article/11407/how-to-override-the-default-cursors-while-interaction-in-wpf-diagramsfdiagram)
-- [How to switch between tools at runtime through the SetTool in WPF Diagram](https://support.syncfusion.com/kb/article/9943/how-to-switch-between-tools-at-runtime-through-the-settool-in-wpf-diagram-sfdiagram)
-- [How to create a port at runtime through the SetTool in WPF Diagram](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
-- [How to draw nodes in WPF Diagram](https://support.syncfusion.com/kb/article/5989/how-to-draw-node-in-wpf-diagram-sfdiagram)
-- [How to obtain the polyline connector completed status in WPF Diagram](https://support.syncfusion.com/kb/article/18899/how-to-obtain-the-completed-status-of-a-polyline-connector-in-the-wpf-diagram-sfdiagram)
+- [How to override the default cursors during interaction in WPF SfDiagram](https://support.syncfusion.com/kb/article/11407/how-to-override-the-default-cursors-while-interaction-in-wpf-diagramsfdiagram)
+- [How to switch between tools at runtime through the SetTool in WPF SfDiagram](https://support.syncfusion.com/kb/article/9943/how-to-switch-between-tools-at-runtime-through-the-settool-in-wpf-diagram-sfdiagram)
+- [How to create a port at runtime through the SetTool in WPF SfDiagram](https://support.syncfusion.com/kb/article/9967/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
+- [How to draw nodes in WPF SfDiagram](https://support.syncfusion.com/kb/article/5989/how-to-draw-node-in-wpf-diagram-sfdiagram)
+- [How to obtain the polyline connector completed status in WPF SfDiagram](https://support.syncfusion.com/kb/article/18899/how-to-obtain-the-completed-status-of-a-polyline-connector-in-the-wpf-diagram-sfdiagram)

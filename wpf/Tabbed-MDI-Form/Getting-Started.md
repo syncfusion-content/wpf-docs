@@ -89,7 +89,7 @@ namespace DocumentContainerSample
             DocumentContainer documentContainer = new DocumentContainer();
             //Adding DocumentContainer as window content
             this.Content = documentContainer;
-        } 
+        }
     }
 }
 {% endhighlight %}
@@ -97,22 +97,22 @@ namespace DocumentContainerSample
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Add document windows
+## Add Documents
 
-The document container allows users add new framework elements such as button and text block to its container using the [Items](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.7.2) property. 
+The document container allows you to add new framework elements such as a Button or TextBlock to its container using the [Items](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.8) property. Set the [Mode](Setting-Mode-for-Document-Container.md) property to `TDI` or `MDI` to choose how the children are arranged.
 
 {% tabs %}
 {% highlight XAML %}
 <syncfusion:DocumentContainer x:Name="documentContainer" Mode="TDI">
-<Button></Button>
-<Button/></Button>
-<Button/></Button>
+    <Button Content="Button 1" />
+    <Button Content="Button 2" />
+    <Button Content="Button 3" />
 </syncfusion:DocumentContainer>
 {% endhighlight %}
 {% highlight C# %}
-Button button1 = new Button();
-Button button2 = new Button();
-Button button3 = new Button();
+Button button1 = new Button() { Content = "Button 1" };
+Button button2 = new Button() { Content = "Button 2" };
+Button button3 = new Button() { Content = "Button 3" };
 //Adding buttons as document container window
 documentContainer.Items.Add(button1);
 documentContainer.Items.Add(button2);
@@ -120,9 +120,9 @@ documentContainer.Items.Add(button3);
 {% endhighlight %}
 {% endtabs %}
 
-## Set header to document
+## Set Header for a Document
 
-You can set header to the DocumentContainer elements by setting the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentHeader.html#Syncfusion_Windows_Tools_Controls_DocumentHeader_Header) property.
+You can set the header of any DocumentContainer element by setting the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentHeader.html#Syncfusion_Windows_Tools_Controls_DocumentHeader_Header) attached property. The `Header` accepts any `object`, so you can also use a `HeaderTemplate` to customize its appearance.
 
 {% tabs %}
 {% highlight XAML %}
@@ -133,38 +133,40 @@ You can set header to the DocumentContainer elements by setting the [Header](htt
             <Paragraph TextAlignment="Center">
                 Syncfusion WPF Document Container</Paragraph>
             <Paragraph>
-                This sample exhibits the special features of the Syncfusion Document Container Control for Windows Presentation Foundation(WPF).
+                This sample exhibits the special features of the Syncfusion Document Container Control for Windows Presentation Foundation (WPF).
             </Paragraph>
             <Paragraph>
-                View this document to experience the features of the Document Container.Document Container supports both TDI and MDI.
+                View this document to experience the features of the Document Container. The Document Container supports both TDI and MDI.
             </Paragraph>
         </FlowDocument>
     </FlowDocumentScrollViewer>
 </syncfusion:DocumentContainer>
 {% endhighlight %}
 {% highlight C# %}
-//Setting header for document container elements
+// Create the child element and set its header
+FlowDocumentScrollViewer flowScrollViewer = new FlowDocumentScrollViewer();
 DocumentContainer.SetHeader(flowScrollViewer, "Document Container");
+documentContainer.Items.Add(flowScrollViewer);
 {% endhighlight %}
 {% endtabs %}
 
-![wpf document container control added by code](Getting-Started_images/wpf-document-container-items.png)
+![wpf document container control with header](Getting-Started_images/wpf-document-container-items.png)
 
-## Set TDI/MDI document mode
+## Set TDI/MDI Document Mode
 
-The DocumentContainer supports the following document modes :
+The DocumentContainer supports the following document modes:
 
-* **TDI** - Tabbed Document Interface
+* **TDI** - Tabbed Document Interface (default)
 * **MDI** - Multiple Document Interface
 
-You can change the above modes using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property of DocumentContainer.
+You can change the mode using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property of DocumentContainer. The default value is `TDI`.
 
 {% tabs %}
 {% highlight XAML %}
 <syncfusion:DocumentContainer Name="documentContainer" Mode="TDI" />
 {% endhighlight %}
 {% highlight C# %}
-documentContainer.Mode=DocumentContainerMode.TDI;
+documentContainer.Mode = DocumentContainerMode.TDI;
 {% endhighlight %}
 {% endtabs %}
 
@@ -176,21 +178,24 @@ documentContainer.Mode=DocumentContainerMode.TDI;
 
 ![wpf document conainer mdi mode](Getting-Started_images/wpf-document-container-mdi.png)
 
-## Minimizing MDI window
+## Minimizing an MDI Window
 
-You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMinimize) property as `true`. The default value of `CanMDIMinimize` property is `false`. The minimized  MDI windows are arranged one by one in the bottom-left corner of the window.
+You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMinimize) property to `true`. The default value of `CanMDIMinimize` is `false`. The minimized MDI windows are arranged one by one in the bottom-left corner of the window.
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:DocumentContainer Name="DocContainer"
-                              CanMDIMinimize="True" 
+                              CanMDIMinimize="True"
                               Mode="MDI">
     <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"/>
     <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Window1"/>
     <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Document Container"/>
 </syncfusion:DocumentContainer>
 
+{% endhighlight %}
+{% highlight C# %}
+DocContainer.CanMDIMinimize = true;
 {% endhighlight %}
 {% endtabs %}
 

@@ -277,7 +277,7 @@ public partial class MainWindow
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil%20Drag%20Drop%20Template)
 
-## Keyboard Support for Stencil in WPF Diagram
+## Keyboard Support for Stencil in WPF SfDiagram
 
 The Stencil supports keyboard shortcuts for common actions.
 

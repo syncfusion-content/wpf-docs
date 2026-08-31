@@ -9,7 +9,7 @@ documentation: ug
 
 # SetShapeStyle Commands in WPF SfDiagram
 
-The [SetShapeStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SetShapeStyle) command is used to set a specific style for the selected elements in the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
+The [SetShapeStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SetShapeStyle) command is used to set a specific style for the selected elements in the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram).
 
 N> The `SetShapeStyle` command is applicable only when one or more diagram elements are selected. If no elements are selected, the command will not perform any operation.
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Creating Tab Groups in WPF DocumentContainer
 
-you can create tab groups for the tabitem of TDI mode [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) by dragging and also using the options in context menu items.
+You can create tab groups for the tab items of a TDI mode [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) by dragging a tab item, by using the context menu items, or programmatically. Tab groups are only supported in `TDI` mode.
 
-## Creating tab groups using context menu item
+## Creating Tab Groups Using the Context Menu
 
-You can create a new horizontal or vertical tab groups for the TDI `DocumentContainer` by clicking the `New Horizontal Tab Group` or `New Vertical Tab Group` options available in the tabitem context menu. 
+You can create new horizontal or vertical tab groups for the TDI `DocumentContainer` by clicking the `New Horizontal Tab Group` or `New Vertical Tab Group` options available in the tab item context menu.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,11 +31,11 @@ You can create a new horizontal or vertical tab groups for the TDI `DocumentCont
 
 ![Tab Groups created by ContextMenuItem](Creating-Tab-Groups_images/Tabgroup_Contextmenu.gif)
 
-N> Tab groups created only in TDI mode of the `DocumentContainer`. You can enable it by setting the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property value as `TDI`.
+N> Tab groups can only be created in TDI mode of the `DocumentContainer`. You can enable it by setting the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property to `TDI`.
 
-## Creating tab groups using tabitem dragging
+## Creating Tab Groups by Dragging a Tab Item
 
-You can create new horizontal tab group for the TDI `DocumentContainer` tab item by dragging the tabitem into the Document area and click the `New Tab Group` menu item from context menu item. You can cancel this tab group creation by clicking the `Cancel` menu item from context menu item.
+You can create a new horizontal tab group for the TDI `DocumentContainer` tab item by dragging the tab item into the document area and then clicking the `New Tab Group` menu item from the context menu. You can cancel the tab group creation by clicking the `Cancel` menu item from the context menu.
 
 {% tabs %}
 {% highlight xaml %}
@@ -53,20 +53,20 @@ You can create new horizontal tab group for the TDI `DocumentContainer` tab item
 
 ![Horizontal Tab Groups created by dragging](Creating-Tab-Groups_images/Tabgroup_dragging.gif)
 
-## Creating tab groups programmatically
+## Creating Tab Groups Programmatically
 
-You can programmatically creates a tab group on horizontally or vertically by using the [CreateHorizontalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CreateHorizontalTabGroup_System_Windows_UIElement_) and [CreateVerticalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CreateVerticalTabGroup_System_Windows_UIElement_) methods.
+You can create a tab group horizontally or vertically by using the [CreateHorizontalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CreateHorizontalTabGroup_System_Windows_UIElement_) and [CreateVerticalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CreateVerticalTabGroup_System_Windows_UIElement_) methods. Both methods accept the `UIElement` that should be moved into a new tab group.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
-<syncfusion:DocumentContainer Mode="TDI" 
+<syncfusion:DocumentContainer Mode="TDI"
                               Loaded="DocumentContainer_Loaded"
-                              x:Name="documentContainer" >
+                              x:Name="documentContainer">
     <ContentControl syncfusion:DocumentContainer.Header="item1"
-                    Name="item1" />
+                    x:Name="item1" />
     <ContentControl syncfusion:DocumentContainer.Header="item2"
-                    Name="item2" />
+                    x:Name="item2" />
 </syncfusion:DocumentContainer>
 
 {% endhighlight %}
@@ -75,8 +75,9 @@ You can programmatically creates a tab group on horizontally or vertically by us
 {% tabs %}
 {% highlight C# %}
 
-private void DocumentContainer_Loaded(object sender, RoutedEventArgs e) {
-    documentContainer.CreateVerticalTabGroup(item1 as UIElement);
+private void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
+{
+    documentContainer.CreateVerticalTabGroup(item1);
 }
 
 {% endhighlight %}
