@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Adding Controls in the TitleBar in WPF Chromeless Window | Syncfusion®
-description: Adding controls in the title bar of the Chromeless Window allows custom UI elements such as buttons, menus, and input controls to be integrated directly.
+title: Adding Controls in the TitleBar in WPF ChromelessWindow | Syncfusion®
+description: Adding controls in the title bar of the ChromelessWindow allows custom UI elements such as buttons, menus, and input controls to be integrated directly.
 platform: wpf
-control: Chromeless Window
+control: ChromelessWindow
 documentation: ug
 ---
 # Adding Controls in the TitleBar in WPF Chromeless Window
 
 You can add controls such as Button, TextBox, Label, and other UI elements to either side of the title bar in the Chromeless Window.
 
-Use the [LeftHeaderItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_Chromeless Window_LeftHeaderItemsSource) property to display controls on the left side of the title bar, and the [RightHeaderItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_Chromeless Window_RightHeaderItemsSource) property to display controls on the right side of the title bar.
+Use the [LeftHeaderItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_LeftHeaderItemsSource) property to display controls on the left side of the title bar, and the [RightHeaderItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemsSource) property to display controls on the right side of the title bar.
 
 {% tabs %}
 {% highlight XAML %}

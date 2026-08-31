@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Editable Support in WPF ComboBox | Syncfusion®
-description: Editable support in WPF ComboBox allows users to enter and edit text directly in the control, enhancing flexibility and user input experiences.
+title: Editable Support in WPF ComboBoxAdv | Syncfusion®
+description: Editable support in WPF ComboBoxAdv allows users to enter and edit text directly in the control, enhancing flexibility and user input experiences.
 platform: wpf
-control: ComboBox
+control: ComboBoxAdv
 documentation: ug
 ---
 

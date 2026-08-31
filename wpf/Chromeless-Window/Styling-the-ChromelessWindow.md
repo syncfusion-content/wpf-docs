@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Styling in WPF Chromeless Window | Syncfusion®
-description: Styling support in the Chromeless Window enables customization of window appearance through styles, templates, and visual properties.
+title: Styling in WPF ChromelessWindow | Syncfusion®
+description: Styling support in the ChromelessWindow enables customization of window appearance through styles, templates, and visual properties.
 platform: wpf
-control: Chromeless Window
+control: ChromelessWindow
 documentation: ug
 ---
 # Styling in WPF Chromeless Window

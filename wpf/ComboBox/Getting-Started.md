@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with WPF ComboBox | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF ComboBox control. Explore setup, elements, features, examples, and customization options.
+title: Getting Started with WPF ComboBoxAdv | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF ComboBoxAdv  control. Explore setup, elements, features, examples, and customization options.
 platform: wpf
-control: ComboBox
+control: ComboBoxAdv 
 documentation: ug
 ---
 # Getting Started with WPF ComboBox

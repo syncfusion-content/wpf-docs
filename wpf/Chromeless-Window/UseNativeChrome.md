@@ -1,9 +1,9 @@
 ---
 layout: post
-title: UseNativeChrome in WPF Chromeless Window | Syncfusion®
-description: UseNativeChrome support in the Chromeless Window enables native window chrome behavior while preserving custom window functionality.
+title: UseNativeChrome in WPF ChromelessWindow | Syncfusion®
+description: UseNativeChrome support in the ChromelessWindow enables native window chrome behavior while preserving custom window functionality.
 platform: wpf
-control: Chromeless Window
+control: ChromelessWindow
 documentation: ug
 ---
 # UseNativeChrome in WPF Chromeless Window
