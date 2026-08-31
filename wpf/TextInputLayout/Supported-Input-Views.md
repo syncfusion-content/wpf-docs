@@ -31,6 +31,14 @@ Input views can be added to the text input layout control by setting the [InputV
 
 * [SfMaskedEdit](https://help.syncfusion.com/wpf/maskedtextbox/overview)
 
+* [IntegerTextBox](https://help.syncfusion.com/wpf/integer-textbox/overview)
+
+* [DoubleTextBox](https://help.syncfusion.com/wpf/double-textbox/overview)
+
+* [PercentTextBox](https://help.syncfusion.com/wpf/percent-textbox/overview)
+
+* [CurrencyTextBox](https://help.syncfusion.com/wpf/currency-textbox/overview)
+
 ## TextBox
 
 You can enter the text as an input by adding the [TextBox](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/textbox-overview?view=netframeworkdesktop-4.8) in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
@@ -348,6 +356,146 @@ You can use the [MaskedTextBox](https://help.syncfusion.com/wpf/maskedtextbox/ov
 {% endtabs %}
 
 ![Image for SfMaskedEdit](Images/SfMaskedEdit_Img.PNG)
+
+## IntegerTextBox
+
+You can use the [IntegerTextBox](https://help.syncfusion.com/wpf/integer-textbox/overview) control to enter integer values as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Age" HelperText="Enter your age" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:IntegerTextBox x:Name="integerTextBox" Width="150" Height="25" MinValue="0" MaxValue="120" Value="25"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Age" };
+            sfTextInputLayout.HelperText = "Enter your age";
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            IntegerTextBox integerTextBox = new IntegerTextBox();
+            integerTextBox.Width = 150;
+            integerTextBox.Height = 25;
+            integerTextBox.MinValue = 0;
+            integerTextBox.MaxValue = 120;
+            integerTextBox.Value = 25;
+            sfTextInputLayout.InputView = integerTextBox;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for IntegerTextBox](Images/IntegerTextBox_Img.PNG)
+
+## DoubleTextBox
+
+You can use the [DoubleTextBox](https://help.syncfusion.com/wpf/double-textbox/overview) control to enter double values as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Price" HelperText="Enter the price" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25" MinValue="0" MaxValue="10000" Value="99.99"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Price" };
+            sfTextInputLayout.HelperText = "Enter the price";
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            DoubleTextBox doubleTextBox = new DoubleTextBox();
+            doubleTextBox.Width = 150;
+            doubleTextBox.Height = 25;
+            doubleTextBox.MinValue = 0;
+            doubleTextBox.MaxValue = 10000;
+            doubleTextBox.Value = 99.99;
+            sfTextInputLayout.InputView = doubleTextBox;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for DoubleTextBox](Images/DoubleTextBox_Img.PNG)
+
+## PercentTextBox
+
+You can use the [PercentTextBox](https://help.syncfusion.com/wpf/percent-textbox/overview) control to enter percentage values as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Discount" HelperText="Enter the discount percentage" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:PercentTextBox x:Name="percentTextBox" Width="150" Height="25" MinValue="0" MaxValue="100" PercentValue="10"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Discount" };
+            sfTextInputLayout.HelperText = "Enter the discount percentage";
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            PercentTextBox percentTextBox = new PercentTextBox();
+            percentTextBox.Width = 150;
+            percentTextBox.Height = 25;
+            percentTextBox.MinValue = 0;
+            percentTextBox.MaxValue = 100;
+            percentTextBox.PercentValue = 10;
+            sfTextInputLayout.InputView = percentTextBox;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for PercentTextBox](Images/PercentTextBox_Img.PNG)
+
+## CurrencyTextBox
+
+You can use the [CurrencyTextBox](https://help.syncfusion.com/wpf/currency-textbox/overview) control to enter currency values as an input in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Amount" HelperText="Enter the amount" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:CurrencyTextBox x:Name="currencyTextBox" Width="150" Height="25" MinValue="0" MaxValue="100000" Value="1000"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Amount" };
+            sfTextInputLayout.HelperText = "Enter the amount";
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+            currencyTextBox.Width = 150;
+            currencyTextBox.Height = 25;
+            currencyTextBox.MinValue = 0;
+            currencyTextBox.MaxValue = 100000;
+            currencyTextBox.Value = 1000;
+            sfTextInputLayout.InputView = currencyTextBox;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for CurrencyTextBox](Images/CurrencyTextBox_Img.PNG)
 
 ## Input Views Limitations
 
