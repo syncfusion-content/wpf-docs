@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Double TextBox
 
-This section explains how to create a WPF `WPF Double TextBox` control and its features.
+This section explains how to create a `WPF Double TextBox` control and its features.
 
 ## Assembly deployment
 
