@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Smart Data Grid
 
-This section provides a quick overview for working with the [WPF Smart Data Grid](https://www.syncfusion.com/wpf-controls/smart-datagrid) (Smart Data Grid) for WPF. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for working with the [WPF Smart Data Grid](https://www.syncfusion.com/wpf-controls/smart-datagrid). Walk through the entire process of creating a real world of this control.
 
 ## Assembly deployment
 
@@ -93,7 +93,7 @@ Create new WPF Project in Visual Studio to display WPF Smart Data Grid with data
 ### Adding control via Designer
 
 WPF Smart Data Grid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-    ![Dragging WPF SfSmartDataGrid Control from Toolbox to Designer](getting-started_images/wpf-smart-datagrid-toolbox.png)
+    ![Dragging Control from Toolbox to Designer](getting-started_images/wpf-smart-datagrid-toolbox.png)
 
 ### Adding control manually in XAML
 
@@ -399,9 +399,9 @@ public class ViewModel : INotifyPropertyChanged
 
 ### Binding to Data
 
-To bind the WPF Smart Data Grid to data, set the [WPF Smart Data Grid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property to an IEnumerable implementation. Each row in WPF Smart Data Grid is bound to an object in data source and each column in WPF Smart Data Grid bound to a property in data object. 
+To bind the data, set the [SfSmartDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property to an IEnumerable implementation. Each row is bound to an object in data source and each column is bound to a property in data object. 
  
-Bind the collection created in previous step to `WPF Smart Data Grid.ItemsSource` property in XAML by setting ViewModel as `DataContext`.
+Bind the collection created in previous step to `SfSmartDataGrid.ItemsSource` property in XAML by setting ViewModel as `DataContext`.
 
 N>Bind the **CurrentUser** property to differentiate outgoing requests (from the user) and incoming responses (from AI) in the AssistView layout. If **CurrentUser** is not set, the control cannot distinguish between outgoing and incoming messages, and all messages will appear with the same alignment and style.
 
@@ -499,7 +499,7 @@ namespace WpfApplication1
 
 ### Running the Application
 
-Press **F5** to build and run the application. Once compiled, the smart WPF Smart Data Grid will be displayed with the data provided, and AI features will be available after configuration.
+Press **F5** to build and run the application. Once compiled, the WPF Smart Data Grid will be displayed with the data provided, and AI features will be available after configuration.
 
 Here is the result of the previous codes,
 
@@ -507,7 +507,7 @@ Here is the result of the previous codes,
 
 ## Theme
 
-WPF Smart Data Grid supports various built-in themes. Refer to the below links to apply themes for the WPF Smart Data Grid,
+WPF Smart Data Grid supports various built-in themes. Refer to the below links to apply themes for the grid,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
