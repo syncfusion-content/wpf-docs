@@ -66,6 +66,8 @@ The following screenshot illustrates the QTP Test for MultiColumn Dropdown Contr
 
 ![WPF Multi Column Dropdown Quick Test Professional](Features_images/Features_img13.png)
 
+Following are methods for MultiColumn DropDown Control.
+
 ### Methods Table
 
 <table>

@@ -9,11 +9,11 @@ documentation: ug
 
 # Editing and AutoComplete in WPF MultiColumn Dropdown
 
-WPF MultiColumn Dropdown Control allows you to edit via TextBox. You can make the editor as read-only by setting [SfMultiColumnDropdownControl.ReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_ReadOnly) property as `true`.
+WPF MultiColumn Dropdown Control allows you to edit via TextBox. You can make the editor as read-only by setting [SfMultiColumnDropdownControl.ReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ReadOnly) property as `true`.
 
 ## Auto Completion of Text
 
-MultiColumn Dropdown Control auto append the text based on `ItemsSource` when end-user edits in the TextBox when setting [AllowAutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_AllowAutoComplete) to `true`.
+MultiColumn Dropdown Control auto append the text based on `ItemsSource` when end-user edits in the TextBox when setting [AllowAutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowAutoComplete) to `true`.
  
 ![Editing-and-AutoComplete_img1](Editing-and-AutoComplete_images/Editing-and-AutoComplete_img1.png)
 
@@ -36,7 +36,7 @@ You can open the popup while typing the value in editor itself by setting [Allow
  
 ## Open popup while loading
 
-You can specify whether the popup is need to open or close by setting [IsDropDownOpen](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropdownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropdownControl_IsDropDownOpen) as `true`. You can open the popup while loading the MultiColumn Dropdown Control itself by setting `IsDropDownOpen` as `true`.
+You can specify whether the popup is need to open or close by setting [IsDropDownOpen](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_IsDropDownOpen) as `true`. You can open the popup while loading the MultiColumn Dropdown Control itself by setting `IsDropDownOpen` as `true`.
 
 {% tabs %}
 {% highlight xml %}
