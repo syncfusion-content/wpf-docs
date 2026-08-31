@@ -1,9 +1,9 @@
 ---
 layout: post
 title: MultiSelection Support in WPF ComboBoxAdv | Syncfusion®
-description: MultiSelection support in WPF ComboBoxAdv  enables users to select multiple items within the control, improving flexibility and selection management.
+description: MultiSelection support in WPF ComboBoxAdv enables users to select multiple items within the control, improving flexibility and selection management.
 platform: wpf
-control: ComboBoxAdv 
+control: ComboBoxAdv
 documentation: ug
 ---
 

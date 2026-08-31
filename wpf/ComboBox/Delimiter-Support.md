@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Delimiter Support in WPF ComboBoxAdv | Syncfusion®
-description: Delimiter support in WPF ComboBoxAdv  enables separation of selected items using custom delimiters, improving readability and multi-selection display.
+description: Delimiter support in WPF ComboBoxAdv enables separation of selected items using custom delimiters, improving readability and multi-selection display.
 platform: wpf
-control: ComboBoxAdv 
+control: ComboBoxAdv
 documentation: ug
 ---
 
