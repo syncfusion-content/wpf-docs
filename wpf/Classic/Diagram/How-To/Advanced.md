@@ -161,9 +161,9 @@ nodeObj.RenderTransform = rt
 rt.BeginAnimation(TranslateTransform.XProperty, nodeanimation)
 {% endhighlight  %}
 
-## Print WPF DiagramPage in Uniform Print Mode Using Framework Print Dialog
+## Print DiagramPage in Uniform Print Mode Using Framework Print Dialog
 
-WPF DiagramPage can also be printed using Framework PrintDialog instead of using Syncfusion WPF DiagramControlPrintPreview Dialog, as shown in the following code example.
+DiagramPage can also be printed using Framework PrintDialog instead of using Syncfusion WPF DiagramControlPrintPreview Dialog, as shown in the following code example.
 
 {% highlight c# %}
 
@@ -195,7 +195,7 @@ WPF DiagramPage can also be printed using Framework PrintDialog instead of using
 
 
 
-                //Visual Brush for the WPF DiagramPage to be printed.
+                //Visual Brush for the DiagramPage to be printed.
 
                 VisualBrush VisualBrush = new VisualBrush(diagramView.Page);
 
