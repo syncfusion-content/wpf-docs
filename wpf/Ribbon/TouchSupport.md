@@ -10,7 +10,7 @@ documentation: ug
 
 The WPF Ribbon Control includes touch support and provides a Touch UI for easy access to its elements.
 
-### How to enable touch in RibbonWindow
+## How to enable touch in RibbonWindow
 
 To enable touch in the RibbonWindow, set `EnableTouch` property of the SkinStorage as `True`. The following code snippet illustrates this
 
