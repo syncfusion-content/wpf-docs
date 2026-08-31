@@ -7,9 +7,9 @@ control: PercentTextBox
 documentation: ug
 ---
 
-# Culture and Formatting in WPF PercentTextBox
+# Culture and Formatting in WPF Percent TextBox
 
-Value of `PercentTextBox` can be formatted in following ways:
+Value of `WPF Percent TextBox` can be formatted in following ways:
 
 * Culture
 * NumberFormatInfo
@@ -17,7 +17,7 @@ Value of `PercentTextBox` can be formatted in following ways:
 
 ## Culture based formatting
 
-The [PercentTextBox](https://www.syncfusion.com/wpf-controls/percent-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` property is used to format the decimal separator and group separator of the `PercentTextBox` value based on the respective culture.
+The [WPF Percent TextBox](https://www.syncfusion.com/wpf-controls/percent-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` property is used to format the decimal separator and group separator of the `WPF Percent TextBox` value based on the respective culture.
 
 {% tabs %}
 {% highlight xaml %}
@@ -53,7 +53,7 @@ By default, the US culture uses “.” as the `PercentDecimalSeparator` and ","
 
 ## NumberFormatInfo based formatting
 
-The number formatting of `PercentTextBox` can be customized by setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NumberFormat) property.
+The number formatting of `WPF Percent TextBox` can be customized by setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NumberFormat) property.
 
 To use the XAML sample below, add the `xmlns:numberformat="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"` namespace mapping to the root element. The `NumberFormatInfo` type used here is `Syncfusion.Windows.Shared.NumberFormatInfo`.
 
@@ -120,7 +120,7 @@ percentTextBox.NumberFormat = new NumberFormatInfo()
 
 ## Formatting with dedicated properties
 
-The number formatting of `PercentTextBox` can also be customized by setting the [PercentGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentGroupSeparator), [PercentGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentGroupSizes), [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentDecimalDigits), [PercentDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentDecimalSeparator), [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentNegativePattern), [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentPositivePattern), and [PercentageSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentageSymbol) properties of `PercentTextBox`. You can show the group separator by setting the [GroupSeperatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_GroupSeperatorEnabled) property to `true`. The default value of `GroupSeperatorEnabled` is `false`.
+The number formatting of `WPF Percent TextBox` can also be customized by setting the [PercentGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentGroupSeparator), [PercentGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentGroupSizes), [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentDecimalDigits), [PercentDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentDecimalSeparator), [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentNegativePattern), [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentPositivePattern), and [PercentageSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentageSymbol) properties of `WPF Percent TextBox`. You can show the group separator by setting the [GroupSeperatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_GroupSeperatorEnabled) property to `true`. The default value of `GroupSeperatorEnabled` is `false`.
 
 The following code illustrates how to format using the `PercentDecimalSeparator`, `PercentDecimalDigits`, `PercentGroupSeparator`, and `PercentGroupSizes` properties of the `PercentTextBox`.
 

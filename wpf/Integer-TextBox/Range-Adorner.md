@@ -7,9 +7,9 @@ control: IntegerTextBox
 documentation: ug
 ---
 
-# Range Adorner in WPF IntegerTextBox
+# Range Adorner in WPF Integer TextBox
 
-The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) of the [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) can be visually indicated like a progress bar using the range adorner feature. This feature is disabled by default. You can show the adorner over the `IntegerTextBox` control by setting the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableRangeAdorner) property to `true`. The default value of `EnableRangeAdorner` is `false`. The adorner layer fills the control area on the basis of the minimum and maximum values, taking the current `Value` into account. The Range Adorner is not displayed when the `MinValue` or `MaxValue` property is not set. When the `Value` is outside the `[MinValue, MaxValue]` range, the adorner is clamped to the nearest bound.
+The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) of the [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) can be visually indicated like a progress bar using the range adorner feature. This feature is disabled by default. You can show the adorner over the `WPF Integer TextBox` control by setting the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableRangeAdorner) property to `true`. The default value of `EnableRangeAdorner` is `false`. The adorner layer fills the control area on the basis of the minimum and maximum values, taking the current `Value` into account. The Range Adorner is not displayed when the `MinValue` or `MaxValue` property is not set. When the `Value` is outside the `[MinValue, MaxValue]` range, the adorner is clamped to the nearest bound.
 
 {% tabs %}
 {% highlight XAML %}

@@ -7,9 +7,9 @@ control: IntegerTextBox
 documentation: ug
 ---
 
-# Culture and Formatting in WPF IntegerTextBox
+# Culture and Formatting in WPF Integer TextBox
 
-Value of `IntegerTextBox` can be formatted in following ways:
+Value of `WPF Integer TextBox` can be formatted in following ways:
 
 * Culture
 * NumberFormatInfo
@@ -17,7 +17,7 @@ Value of `IntegerTextBox` can be formatted in following ways:
 
 ## Culture based formatting
 
-The [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` property is used to format the number group size and group separator of the `IntegerTextBox` value based on the respective culture.
+The [WPF Integer TextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` property is used to format the number group size and group separator of the `WPF Integer TextBox` value based on the respective culture.
 
 {% tabs %}
 {% highlight XAML %}
@@ -53,7 +53,7 @@ By default the US culture uses “,” as the `NumberGroupSeparator`, whereas th
 
 ## NumberFormatInfo based formatting
 
-The number formatting of `IntegerTextBox` can be customized by setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NumberFormat) property.
+The number formatting of `WPF Integer TextBox` can be customized by setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NumberFormat) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -124,7 +124,7 @@ integerTextBox.NumberFormat = new NumberFormatInfo()
 
 The number formatting of `IntegerTextBox` can also be customized by setting the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_NumberGroupSeparator) and [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_NumberGroupSizes) properties. You can show the group separator by enabling the [GroupSeperatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_GroupSeperatorEnabled) property to `true`. The default value of `GroupSeperatorEnabled` is `false`.
 
-The following code illustrates how to format using the `NumberGroupSeparator` and `NumberGroupSizes` properties of the `IntegerTextBox`. Use a standard `int[]` for the `NumberGroupSizes` property.
+The following code illustrates how to format using the `NumberGroupSeparator` and `NumberGroupSizes` properties of the `WPF Integer TextBox`. Use a standard `int[]` for the `NumberGroupSizes` property.
 
 {% tabs %}
 {% highlight C# %}
@@ -144,6 +144,6 @@ integerTextBox.NumberGroupSizes = new int[] { 2, 3, 0 };
 
 ![WPF IntegerTextBox with Formatting](Culture-and-Number-Formats_images/wpf-integer-textbox-number-format.png)
 
-N> When you use both the `NumberFormat` and the dedicated properties (`NumberGroupSeparator` and `NumberGroupSizes`) to format the value of `IntegerTextBox`, the dedicated properties take priority over `NumberFormat`.
+N> When you use both the `NumberFormat` and the dedicated properties (`NumberGroupSeparator` and `NumberGroupSizes`) to format the value of `WPF Integer TextBox`, the dedicated properties take priority over `NumberFormat`.
 
 N> When you use both `NumberFormat` and `Culture`, the `NumberFormat` will have a higher priority.
