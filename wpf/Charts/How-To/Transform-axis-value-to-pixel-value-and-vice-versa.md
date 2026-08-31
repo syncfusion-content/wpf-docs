@@ -9,7 +9,7 @@ documentation: ug
 
 # How to transform axis value to pixel value in WPF Chart
 
-SfChart offers two utility methods for converting your data points into pixel values (device coordinates).
+WPF Charts offers two utility methods for converting your data points into pixel values (device coordinates).
 
 * ValueToPoint(ChartAxis axis, double value)
 * PointToValue(ChartAxis axis, Point point)

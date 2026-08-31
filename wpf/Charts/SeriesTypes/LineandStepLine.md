@@ -96,5 +96,5 @@ N> You can explore our [WPF Step Line Chart](https://www.syncfusion.com/wpf-cont
 
 * [`Comparison of line series, fast line series, and fast line bitmap series in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/6191/comparison-of-line-series-fast-line-series-and-fast-line-bitmap-series-in-wpf-chart-sfchart)
 * [`How to render the stacked step line series in WPF Chart`](https://support.syncfusion.com/kb/article/8959/how-to-render-the-stacked-step-line-series-in-wpf-chart)
-* [`How to remove the blended color effect in multiple line series of SfChart`](https://support.syncfusion.com/kb/article/9298/how-to-remove-the-blended-color-effect-in-multiple-line-series-of-sfchart)
+* [`How to remove the blended color effect in multiple line series of WPF Charts`](https://support.syncfusion.com/kb/article/9298/how-to-remove-the-blended-color-effect-in-multiple-line-series-of-sfchart)
 * [`How to draw dotted line in WPF Chart (SfChart)`](https://support.syncfusion.com/kb/article/2806/how-to-draw-dotted-line-in-wpf-chart-sfchart)
