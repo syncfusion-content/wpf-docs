@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Currency TextBox
 
-This section explains how to create a WPF `WPF Currency TextBox` control and its features.
+This section explains how to create a `WPF Currency TextBox` control and its features.
 
 ## Assembly deployment
 
