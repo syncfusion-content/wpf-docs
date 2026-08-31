@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Response Toolbar in WPF AI AssistView | Syncfusion®
-description: The response toolbar in WPF AI AssistView offers quick actions through toolbar items, enabling efficient interaction with AI-generated chat responses.
+title: Response Toolbar in WPF SfAIAssistView  | Syncfusion®
+description: The response toolbar in WPF SfAIAssistView  offers quick actions through toolbar items, enabling efficient interaction with AI-generated chat responses.
 platform: wpf
-control: AI AssistView
+control: SfAIAssistView 
 documentation: ug
 ---
 

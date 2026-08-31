@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Input Toolbar in WPF AI AssistView | Syncfusion®
-description: The input toolbar in WPF AI AssistView offers quick actions through toolbar items, streamlining prompt entry and enhancing user interactions.
+title: Input Toolbar in WPF SfAIAssistView  | Syncfusion®
+description: The input toolbar in WPF SfAIAssistView  offers quick actions through toolbar items, streamlining prompt entry and enhancing user interactions.
 platform: wpf
-control: AI AssistView
+control: SfAIAssistView 
 documentation: ug
 ---
 

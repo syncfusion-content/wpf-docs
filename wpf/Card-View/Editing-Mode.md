@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Editing Mode in WPF Card View | Syncfusion®
-description: Editing mode support in WPF Card View allows users to create, modify, and manage card data efficiently with customizable editors and validation options.
+title: Editing Mode in WPF CardView | Syncfusion®
+description: Editing mode support in WPF CardView allows users to create, modify, and manage card data efficiently with customizable editors and validation options.
 platform: wpf
-control: Card View
+control: CardView
 documentation: ug
 ---
 
@@ -35,9 +35,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Card editing using keyboard and mouse interaction
 
-You can edit the selected `Card View Item` value by double-clicking on that item or by pressing the `F2` key. To get out from the editing mode, you need to press the `Esc` or `Enter` key.
+You can edit the selected `CardViewItem` value by double-clicking on that item or by pressing the `F2` key. To get out from the editing mode, you need to press the `Esc` or `Enter` key.
 
-N> To perform an edit operation on selected `CardViewItem`, you need to define the `Card View Item` edit mode UI with editable functionalities by using [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate). `EditItemTemplate` is applied to the selected item in the edit mode, and `ItemTemplate` is applied to the selected item in the view mode.
+N> To perform an edit operation on selected `CardViewItem`, you need to define the `CardViewItem` edit mode UI with editable functionalities by using [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate). `EditItemTemplate` is applied to the selected item in the edit mode, and `ItemTemplate` is applied to the selected item in the view mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -190,7 +190,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Start card editing programmatically
 
-If you want to programmatically start the edit mode of selected `Card View Item`, use the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_BeginEdit)  method. You can also programmatically change the edit mode to view mode by using the [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EndEdit) method.
+If you want to programmatically start the edit mode of selected `CardViewItem`, use the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_BeginEdit)  method. You can also programmatically change the edit mode to view mode by using the [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EndEdit) method.
 
 N> You must set the `CanEdit` property as `true` to perform `BeginEdit` or `EndEdit`.
 
@@ -281,9 +281,9 @@ private void EndEdit_Click(object sender, RoutedEventArgs e) {
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/CardView-EditMode)
 
-## Custom UI for edit mode Card View Item
+## Custom UI for edit mode CardViewItem
 
-You can change the appearance of card items in edit mode by using `EditItemTemplate` property. The `DataContext` of `EditItemTemplate` property is `Card View Item`.
+You can change the appearance of card items in edit mode by using `EditItemTemplate` property. The `DataContext` of `EditItemTemplate` property is `CardViewItem`.
 
 {% tabs %}
 {% highlight XAML %}

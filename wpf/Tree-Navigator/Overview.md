@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Syncfusion® WPF Tree Navigator Control | Syncfusion®
-description: Learn about the introduction and overview of Syncfusion® Essential Studio WPF Tree Navigator control and explore its features, usage, and more details.
+title: About Syncfusion® WPF SfTreeNavigator Control | Syncfusion®
+description: Learn about the introduction and overview of Syncfusion® Essential Studio WPF SfTreeNavigator control and explore its features, usage, and more details.
 platform: wpf
-control: Tree Navigator 
+control: SfTreeNavigator 
 documentation: ug
 ---
 

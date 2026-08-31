@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with WPF Card View | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF Card View control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF CardView | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF CardView control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: Card View
+control: CardView
 documentation: ug
 ---
 
@@ -123,9 +123,9 @@ namespace CardViewSample
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Getting-Started)
 
-## Populating items using Card View Item
+## Populating items using CardViewItem
 
-You can populate the Card View control by adding [Card View Item](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html) objects directly to the _Items_ collection.
+You can populate the Card View control by adding [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html) objects directly to the _Items_ collection.
 
 {% tabs %}
 {% highlight XAML %}
@@ -258,7 +258,7 @@ public class ViewModel : NotificationObject
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/PopulateItems)
 
-## Select a Card View Item
+## Select a CardViewItem
 
 You can select a card item by clicking it. Use the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_SelectedItem) property to retrieve the currently selected item. The default value of the _SelectedItem_ property is null.
 
@@ -311,7 +311,7 @@ this.Content = cardView;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Getting-Started)
 
-## Select Card View Item programmatically
+## Select CardViewItem programmatically
 
 You can select a specific card item programmatically by setting the [CardViewItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html#Syncfusion_Windows_Tools_Controls_CardViewItem_IsSelected) property to true. The default value of `CardViewItem.IsSelected` property is `false`.
 
@@ -364,7 +364,7 @@ this.Content = cardView;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Getting-Started)
 
-## Group the Card View Items
+## Group the CardViewItems
 
 You can group cards by dragging fields from the field list and dropping them into the grouping area in the Card View header. The field names in the drop region are automatically populated from the `HeaderTemplate` data context. To disable grouping, set the [CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanGroup) property to `false`. The default value of `CanGroup` is `true`.
 
@@ -485,11 +485,11 @@ cardView.CanGroup = true;
 
 ![wpf card view items grouped based on age field](Grouping-Sorting-Filtering_images/grouping.gif)
 
-Here, `Card View Items` grouped based on `Age` field.
+Here, `CardViewItems` grouped based on `Age` field.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
-## Sort the Card View Items
+## Sort the CardViewItems
 
 You can sort cards in ascending, descending, or default order by clicking the field names displayed in the header. To disable sorting, set the [CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanSort) property to `false`. The default value of `CanSort` is `true`.
 
@@ -513,11 +513,11 @@ cardView.CanSort = true;
 
 ![wpf card view items sorted in ascending and descending order](Grouping-Sorting-Filtering_images/sorting.gif)
 
-Here, `Card View Items` sorted based on `FirstName` field.
+Here, `CardViewItems` sorted based on `FirstName` field.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
-## Edit the Card View Items
+## Edit the CardViewItems
 
 You can edit the selected _CardViewItem_ by double-clicking it or pressing the `F2` key. To exit editing mode, press the `Esc` or `Enter` key. Enable editing by setting the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property to true. The default value of `CanEdit` is `false`.
 
@@ -589,7 +589,7 @@ cardView.CanEdit = true;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
-## Set the Orientation of Card View Items
+## Set the Orientation of CardViewItems
 
 Use the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_Orientation) property to arrange cards either vertically or horizontally. The default value of the `Orientation` property is `Vertical`.
 

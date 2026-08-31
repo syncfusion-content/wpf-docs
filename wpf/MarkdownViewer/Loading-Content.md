@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Loading Markdown Content in WPF Markdown Viewer | Syncfusion®
-description: Loading Markdown content in WPF Markdown Viewer supports content from strings, local files, and URLs, enabling flexible and efficient Markdown rendering.
+title: Loading Markdown Content in WPF SfMarkdownViewer | Syncfusion®
+description: Loading Markdown content in WPF SfMarkdownViewer supports content from strings, local files, and URLs, enabling flexible and efficient Markdown rendering.
 platform: wpf
-control: Markdown Viewer
+control: SfMarkdownViewer
 documentation: ug
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Populating Items in WPF Tree Navigator | Syncfusion®
-description: Populating Items in WPF Tree Navigator enables adding, binding, and displaying hierarchical data for structured navigation scenarios.
+title: Populating Items in WPF SfTreeNavigator | Syncfusion®
+description: Populating Items in WPF SfTreeNavigator enables adding, binding, and displaying hierarchical data for structured navigation scenarios.
 platform: wpf
-control: Tree Navigator 
+control: SfTreeNavigator 
 documentation: ug
 ---
 

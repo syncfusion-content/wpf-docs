@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Localization in WPF Card View | Syncfusion®
-description: Localization support in WPF Card View allows the interface to adapt to different languages and regional settings, enhancing user experience.
+title: Localization in WPF CardView | Syncfusion®
+description: Localization support in WPF CardView allows the interface to adapt to different languages and regional settings, enhancing user experience.
 platform: wpf
-control: Card View
+control: CardView
 documentation: ug
 ---
 

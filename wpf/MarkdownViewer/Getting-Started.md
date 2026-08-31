@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with WPF Markdown Viewer | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF Markdown Viewer control. Explore setup, rendering features, examples, and customization options.
+title: Getting Started with WPF SfMarkdownViewer | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF SfMarkdownViewer   control. Explore setup, rendering features, examples, and customization options.
 platform: wpf
-control: Markdown Viewer
+control: SfMarkdownViewer  
 documentation: ug
 keywords: wpf markdownviewer, syncfusion markdownviewer wpf, markdown viewer wpf, wpf markdown rendering, sfmarkdownviewer wpf, wpf markdown control, markdown rendering wpf, wpf markdown getting started
 ---

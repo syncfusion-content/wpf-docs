@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Syncfusion® WPF AI AssistView Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF AI AssistView control and explore its features, capabilities, and more details.
+title: About Syncfusion® WPF SfAIAssistView  Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF SfAIAssistView  control and explore its features, capabilities, and more details.
 platform: wpf
-control: AI AssistView
+control: SfAIAssistView 
 documentation: ug
 ---
 

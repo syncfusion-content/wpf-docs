@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Mermaid Diagram Support in WPF Markdown Viewer | Syncfusion®
-description: Mermaid diagram support in WPF Markdown Viewer enables rendering of flowcharts, sequence diagrams, and other visual diagrams from Markdown content.
+title: Mermaid Diagram Support in WPF SfMarkdownViewer | Syncfusion®
+description: Mermaid diagram support in WPF SfMarkdownViewer enables rendering of flowcharts, sequence diagrams, and other visual diagrams from Markdown content.
 platform: wpf
-control: Markdown Viewer
+control: SfMarkdownViewer
 documentation: ug
 ---
 
