@@ -17,7 +17,7 @@ The chart header is the title of the chart, which is usually displayed at the to
 
 ![Area_img1](Area_images/Area_img1.png)
 
-In general, chart series contains a chart area instance, which can be used to customize the OLAP area. The following code sample describes how to add a chart header to an WPF OLAP Chart.
+In general, chart series contains a chart area instance, which can be used to customize the OLAP area. The following code sample describes how to add a chart header to an OLAP chart.
 
 {% tabs %}
 
@@ -35,11 +35,11 @@ Me.olapchart1.Series(0).Area.Header = "Simple Report"
 
 {% endtabs %}
    
-N> The series will be available only after data is bound to the control. In other words, you can access the series property of the WPF OLAP Chart only after the call to DataBind() is made.
+N> The series will be available only after data is bound to the control. In other words, you can access the series property of the OLAP chart only after the call to DataBind() is made.
 
 ## Area customization
 
-An OLAP area is basically derived from the ChartArea class belonging to the base chart WPF control. So, the customization options are available in the chart area. However, 3D charts and multiple chart areas are not supported in an WPF OLAP Chart. So, those customizations are not applicable.
+An OLAP area is basically derived from the ChartArea class belonging to the base chart WPF control. So, the customization options are available in the chart area. However, 3D charts and multiple chart areas are not supported in an OLAP chart. So, those customizations are not applicable.
 
 The following are the frequently used customization options that are available in the chart area.
 

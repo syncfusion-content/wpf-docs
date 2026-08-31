@@ -651,7 +651,7 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## Theme
 
-WPF Charts supports various built-in themes. Refer to the below links to apply themes for the WPF Charts,
+SfChart supports various built-in themes. Refer to the below links to apply themes for the SfChart,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

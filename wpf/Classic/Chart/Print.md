@@ -52,7 +52,7 @@ Void</td></tr>
 
 ..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Export and Print\Printing Chart Demo
 
-## Print a WPF Classic Chart
+## Print in WPF Chart (Classic)ing a Chart
 
 Charts can be printed by using the following code example.
 

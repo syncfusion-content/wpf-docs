@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in WPF Olap Chart
 
-Localization is the key feature for providing software solutions targeted at global users. The WPF OLAP Chart allows users to localize the control to a specific locale and supports "resx" based localization.
+Localization is the key feature for providing software solutions targeted at global users. The OLAP chart allows users to localize the control to a specific locale and supports "resx" based localization.
 
 The following steps should be performed to localize the control.
 
@@ -63,7 +63,7 @@ public MainWindow()
 
 ## RTL support
 
-RTL support for WPF OLAP Chart is used to display the content from right to left by setting the `FlowDirection` property to **RightToLeft**. The following code sample explains how to set this property.
+RTL support for OLAP chart is used to display the content from right to left by setting the `FlowDirection` property to **RightToLeft**. The following code sample explains how to set this property.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ Me.olapChart.FlowDirection = System.Windows.FlowDirection.RightToLeft
 
 {% endtabs %}
   
-![WPF OLAP Chart displays the data from right to left](Localization_images/Localization_img3.png)
+![OlapChart displays the data from right to left](Localization_images/Localization_img3.png)
   
 A sample demo is available at the following location.
 

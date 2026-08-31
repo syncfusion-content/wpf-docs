@@ -9,9 +9,9 @@ documentation: ug
 
 # Data Binding in WPF Charts
 
-WPF Charts offers ItemsSource property to bind various datasource ranges from simple collection property to complex properties.
+SfChart offers ItemsSource property to bind various datasource ranges from simple collection property to complex properties.
 
-## Binding a simple collection to the chart
+### Binding a simple collection to the chart
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ public class DataPointWithMulData
 
 ### Binding array property to the chart
 
-The WPF Charts supports array values for the XBindingPath and YBindingPath. XBindingPath and YBindingPath are bound with the property name in the corresponding index value. You can bind the same property with different index values.
+The SfChart supports array values for the XBindingPath and YBindingPath. XBindingPath and YBindingPath are bound with the property name in the corresponding index value. You can bind the same property with different index values.
 
 The following code example demonstrates how to bind the array values for the XBindingPath and YBindingPath.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Series in WPF Charts
 
-ChartSeries is the visual representation of the data. WPF Charts offers many types of series ranging from LineSeries to FinancialSeries like HiLo and Candle. Based on your requirements and specifications, any type of Series can be added for data visualization. 
+ChartSeries is the visual representation of the data. SfChart offers many types of series ranging from LineSeries to FinancialSeries like HiLo and Candle. Based on your requirements and specifications, any type of Series can be added for data visualization. 
 
 The following APIs are common for the most of the series types:
 

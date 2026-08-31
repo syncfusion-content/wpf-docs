@@ -137,7 +137,7 @@ SfMap map = new SfMap();
 
 {% endtabs %}
 
-![Map Points icon image in WPF WPF Map](Map-Points_images/Map_Points_Icon_image.png)
+![Map Points icon image in WPF SfMap](Map-Points_images/Map_Points_Icon_image.png)
 
 ## MapPointPopup
 
@@ -297,6 +297,6 @@ MapPointPopup is a popup, displayed when the point is hovered over the MapPoint.
 
 {% endtabs %}
 
-![Map Points and popup image in WPF Map](Map-Points_images/Map_Points_Popup_image.png)
+![Map Points and popup image in WPF SfMap](Map-Points_images/Map_Points_Popup_image.png)
 
 N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.

@@ -11,17 +11,17 @@ documentation: ug
 
 This section explains the steps required to configure the [`SfMap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) and add basic elements to it using various APIs.
 
-## Adding WPF Map reference
+## Adding SfMap reference
 
-You can add WPF Map reference using one of the following methods:
+You can add SfMap reference using one of the following methods:
 
-**Method 1: Adding WPF Map reference from nuget.org**
+**Method 1: Adding SfMap reference from nuget.org**
 
-Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add WPF Map to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfMaps.WPF](https://www.nuget.org/packages/Syncfusion.SfMaps.WPF), and then install it.
+Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add SfMap to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfMaps.WPF](https://www.nuget.org/packages/Syncfusion.SfMaps.WPF), and then install it.
 
-![Adding WPF Map reference from NuGet](Getting-Started_images/Adding SfMaps reference.png)
+![Adding SfMap reference from NuGet](Getting-Started_images/Adding SfMaps reference.png)
 
-**Method 2: Adding WPF Map reference from toolbox**
+**Method 2: Adding SfMap reference from toolbox**
 
 You can drag the SfMap control from the toolbox and drop it on the designer. It will automatically reference the required assemblies and add the namespace to the page. 
 
@@ -55,7 +55,7 @@ The SfMap control can also be created and configured by using Expression Blend. 
    1. Syncfusion.SfMaps.Wpf
    2. Syncfusion.Shared.Wpf
 2. Search for SfMap in the Toolbox.
-3. Drag WPF Map to the designer. It generates the SfMap control with one child element.
+3. Drag SfMap to the designer. It generates the SfMap control with one child element.
 
 
 
@@ -599,7 +599,7 @@ You can download the complete [`Getting started`](https://github.com/SyncfusionE
 
 ## Theme
 
-WPF Map supports various built-in themes. Refer to the below links to apply themes for the WPF Map,
+SfMap supports various built-in themes. Refer to the below links to apply themes for the SfMap,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
@@ -611,11 +611,11 @@ N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) f
 
 ## See also
 
-[How to show google map in WPF Map](https://www.syncfusion.com/kb/11928/how-to-show-google-map-in-wpf-map-sfmap)
+[How to show google map in WPF SfMap](https://www.syncfusion.com/kb/11928/how-to-show-google-map-in-wpf-map-sfmap)
 
-[How to view bing map using WPF WPF Map](https://www.syncfusion.com/kb/10799/how-to-view-bing-map-using-wpf-map-control-sfmap)
+[How to view bing map using WPF SfMap](https://www.syncfusion.com/kb/10799/how-to-view-bing-map-using-wpf-map-control-sfmap)
 
-[How to render custom data source in WPF Map](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)
+[How to render custom data source in SfMap](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)
 
 [How to customize the markers in maps](https://www.syncfusion.com/kb/7656/how-to-customize-the-markers-in-maps)
 

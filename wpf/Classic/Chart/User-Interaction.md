@@ -728,7 +728,7 @@ The modified settings can be applied to the Main Chart when you click Apply or O
 
 ### Custom Tab
 
-The WPF Classic Chart property settings dialog allows you to add your own custom tabs in the dialog. The added custom tab also has features through other tabs, like initializing the properties, changing the settings of the properties, Applying settings to the main chart. The following segment illustrates this special feature.
+The WPF Chart property settings dialog allows you to add your own custom tabs in the dialog. The added custom tab also has features through other tabs, like initializing the properties, changing the settings of the properties, Applying settings to the main chart. The following segment illustrates this special feature.
 
 This option is to allow the developer to add his/her own tab into the property settings dialog. To add custom tab, AddCustomTabs API is used.
 
@@ -1153,7 +1153,7 @@ NA</td></tr>
 To view sample:
 
 1. Open the WPF sample browser from the dashboard. 
-2. Navigate to WPF Classic Chart -> User Interaction->Drag and Drop support demo
+2. Navigate to WPF Chart -> User Interaction->Drag and Drop support demo
 
 
 

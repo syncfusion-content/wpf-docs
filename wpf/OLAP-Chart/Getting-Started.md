@@ -12,17 +12,17 @@ documentation: ug
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion® assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion® license key in your WPF application to use the components.
 
-This section covers the information required to create a simple WPF OLAP Chart bound to the OLAP data source.
+This section covers the information required to create a simple OLAP chart bound to the OLAP data source.
 
 ## Through Visual Studio
 
 Open the Visual Studio IDE and navigate to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
 
-After the WPF application is created, go to the View menu and select the Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the WPF OLAP Chart under the **Syncfusion® BI WPF** tag. It will automatically add the required assemblies to the application.
+After the WPF application is created, go to the View menu and select the Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the OLAP chart under the **Syncfusion® BI WPF** tag. It will automatically add the required assemblies to the application.
 
 ![WPF OLAP Chart Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
-Add a **Name** to the WPF OLAP Chart component for accessing it through code-behind as shown in the following code sample.
+Add a **Name** to the OLAP chart component for accessing it through code-behind as shown in the following code sample.
 
 {% highlight xaml %}
   
@@ -180,7 +180,7 @@ On adding the above assemblies, the OLAP chart control will be added under the *
 
 ![WPF OLAP Chart Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
-Add a **Name** to the WPF OLAP Chart component for accessing it through the code-behind as shown in the following code sample.
+Add a **Name** to the OLAP chart component for accessing it through the code-behind as shown in the following code sample.
 
 {% highlight xaml %}
 
@@ -423,10 +423,10 @@ Namespace SampleApplication
 			_olapDataManager = New OlapDataManager(_connectionString)
 			' A default OlapReport is set to OlapDataManager
 			_olapDataManager.SetCurrentReport(CreateOlapReport())
-			' Finally WPF OLAP Chart gets the information from the OlapDataManager	
+			' Finally OlapChart gets the information from the OlapDataManager	
 			olapChart.OlapDataManager = _olapDataManager
 			olapChart.DataBind()
-			' WPF OLAP Chart added to the Main Window Grid region
+			' OlapChart added to the Main Window Grid region
 			chart.Children.Add(olapChart)
 		End Sub
         
@@ -471,13 +471,13 @@ Run the application. The following output will be generated.
 
 ## Design-time binding
 
-Design-time binding support for the WPF OLAP Chart allows you to reduce the time spent creating and customizing the report. Normally, it takes 5 to 10 minutes to create a report, and in the case of unfamiliar cubes, it may extend further. But by using design-time support, you can create a report in a couple of minutes. The following section explains how to create a report at design time.
+Design-time binding support for the OLAP chart allows you to reduce the time spent creating and customizing the report. Normally, it takes 5 to 10 minutes to create a report, and in the case of unfamiliar cubes, it may extend further. But by using design-time support, you can create a report in a couple of minutes. The following section explains how to create a report at design time.
 
-First drag the WPF OLAP Chart control from the toolbox to the Visual Studio designer surface.
+First drag the OLAP chart control from the toolbox to the Visual Studio designer surface.
 
 ![WPF OLAP Chart Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
-Right-click the WPF OLAP Chart available in the designer and go to **Configure data source > Create/Edit data source…** option in the context menu. Now, the **Data Source Properties** wizard opens.
+Right-click the OLAP chart available in the designer and go to **Configure data source > Create/Edit data source…** option in the context menu. Now, the **Data Source Properties** wizard opens.
 
 ![WPF OLAP Chart Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
