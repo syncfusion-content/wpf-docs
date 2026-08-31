@@ -1,9 +1,9 @@
 ---
 layout: post
-title: OpenAI in WPF SfAIAssistView  | Syncfusion®
-description: The OpenAI connection feature in WPF SfAIAssistView  enables integration with OpenAI services to provide AI-powered conversations and chat experiences.
+title: OpenAI in WPF SfAIAssistView | Syncfusion®
+description: The OpenAI connection feature in WPF SfAIAssistView enables integration with OpenAI services to provide AI-powered conversations and chat experiences.
 platform: wpf
-control: SfAIAssistView 
+control: SfAIAssistView
 documentation: ug
 ---
 

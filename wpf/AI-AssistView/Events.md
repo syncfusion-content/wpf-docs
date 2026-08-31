@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Events in WPF SfAIAssistView  | Syncfusion®
-description: Events in WPF SfAIAssistView  provide notifications for user interactions and AI response workflows, enabling customized behavior and event-driven functionality.
+title: Events in WPF SfAIAssistView | Syncfusion®
+description: Events in WPF SfAIAssistView provide notifications for user interactions and AI response workflows, enabling customized behavior and event-driven functionality.
 platform: wpf
-control: SfAIAssistView 
+control: SfAIAssistView
 documentation: ug
 ---
 

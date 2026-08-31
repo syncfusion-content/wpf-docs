@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Events in WPF SfMarkdownViewer  | Syncfusion®
-description: Events in WPF SfMarkdownViewer  provide notifications for user interactions and content rendering, enabling customized behavior and event-driven functionality.
+title: Events in WPF SfMarkdownViewer | Syncfusion®
+description: Events in WPF SfMarkdownViewer provide notifications for user interactions and content rendering, enabling customized behavior and event-driven functionality.
 platform: wpf
-control: SfMarkdownViewer 
+control: SfMarkdownViewer
 documentation: ug
 ---
 
