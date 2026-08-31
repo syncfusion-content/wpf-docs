@@ -9,7 +9,7 @@ documentation: ug
 
 # Settings in WPF Digital Gauge
 
-There are some other elements and behaviors in SfDigitalGauge that can also be customized. 
+There are some other elements and behaviors in WPF Digital Gauge that can also be customized. 
 
 They are:
 

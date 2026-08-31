@@ -23,7 +23,7 @@ Theming is the process of applying particular settings to visual elements of a p
 * Office 2003
 * Default
 
-The `VisualStyle` property allows users to set the visual style of the OLAP chart control. The following code sample demonstrates how theming is added to the OLAP chart control.
+The `VisualStyle` property allows users to set the visual style of the WPF OLAP Chart control. The following code sample demonstrates how theming is added to the OLAP chart control.
 
 {% tabs %}
 

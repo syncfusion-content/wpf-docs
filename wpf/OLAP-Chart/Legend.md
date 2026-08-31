@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend in WPF Olap Chart
 
-Legends are used to display the names of data series. The chart legend can be added to an OLAP chart by adding the chart legend of the chart WPF, which is found under the Syncfusion.Windows.Chart namespace. The following code sample explains how to add a legend to an OLAP chart.
+Legends are used to display the names of data series. The chart legend can be added to a WPF OLAP Chart by adding the chart legend of the chart WPF, which is found under the Syncfusion.Windows.Chart namespace. The following code sample explains how to add a legend to a WPF OLAP Chart.
 
 {% tabs %}
 
@@ -35,11 +35,11 @@ Me.olapChart.Legend = New ChartLegend()
 
 {% endtabs %}
 
-![Adding the legend into OlapChart](Legend_images/Legend_img1.png)
+![Adding the legend into WPF OLAP Chart](Legend_images/Legend_img1.png)
 
 ## Show/hide legend
 
-The chart legend has a `Visibility` property using which you can show or hide the chart legend in the OLAP chart. The following code sample shows how you can collapse the visibility of the chart legend.
+The chart legend has a `Visibility` property using which you can show or hide the chart legend in the WPF OLAP Chart. The following code sample shows how you can collapse the visibility of the chart legend.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ Me.olapChart.Legend.Visibility = System.Windows.Visibility.Collapsed
 
 ## Visibility customization
 
-The visibility of the legend check box can be toggled by using the `CheckBoxVisibility` property in the chart legend. The following code sample shows how to toggle the visibility of the check box in the legend of the OLAP chart.
+The visibility of the legend check box can be toggled by using the `CheckBoxVisibility` property in the chart legend. The following code sample shows how to toggle the visibility of the check box in the legend of the WPF OLAP Chart.
 
 {% tabs %}
 
@@ -95,7 +95,7 @@ Me.olapChart.Legend.CheckBoxVisibility = System.Windows.Visibility.Collapsed
 
 {% endtabs %}
 
-The visibility of the legend icon can be toggled by using the `IconVisibility` property in the chart legend. The following code sample shows how to toggle the visibility of icons in the OLAP chart legend.
+The visibility of the legend icon can be toggled by using the `IconVisibility` property in the chart legend. The following code sample shows how to toggle the visibility of icons in the WPF OLAP Chart legend.
 
 {% tabs %}
 
@@ -123,7 +123,7 @@ Me.olapChart.Legend.IconVisibility = System.Windows.Visibility.Collapsed
 
 ## Dock position
 
-The chart legend contains an enum property called ChartDock, which has the following values **Floating**, **Right**, **Left**, **Top**, and **Bottom**. You can choose the required docking position to dock the legend. The following code sample explains how to set the docking position for the OLAP chart legend.
+The chart legend contains an enum property called ChartDock, which has the following values **Floating**, **Right**, **Left**, **Top**, and **Bottom**. You can choose the required docking position to dock the legend. The following code sample explains how to set the docking position for the WPF OLAP Chart legend.
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Right)
 
 ## Row/column setting
 
-You can use the `RowsCount` and `ColumnsCount` properties to create the rows or columns of the OLAP chart legend. The **RowsCount** and **ColumnsCount** will be used internally to create a grid layout control to place the legends. The following code sample shows how to set the number of rows or columns in a legend.
+You can use the `RowsCount` and `ColumnsCount` properties to create the rows or columns of the WPF OLAP Chart legend. The **RowsCount** and **ColumnsCount** will be used internally to create a grid layout control to place the legends. The following code sample shows how to set the number of rows or columns in a legend.
 
 {% tabs %}
 

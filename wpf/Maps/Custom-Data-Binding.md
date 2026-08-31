@@ -197,6 +197,6 @@ N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) f
 
 ## See also
 
-[How to render CustomDataSource in SfMap?](https://support.syncfusion.com/kb/article/3412/how-to-render-customdatasource-in-wpf-map)
+[How to render CustomDataSource in WPF Map?](https://support.syncfusion.com/kb/article/3412/how-to-render-customdatasource-in-wpf-map)
 
 
