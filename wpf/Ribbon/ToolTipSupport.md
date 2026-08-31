@@ -20,9 +20,9 @@ ScreenTip has four properties.
 4.	HelpText - Specifies the HelpText of the ScreenTip.
 
 
-## Adding tooltip for ribbon items
+## Adding tooltip for WPF Ribbon Control items
 
-Ribbon ToolTip  can be set to each Ribbon items by defining ScreenTip inside the ToolTip.
+ToolTip  can be set to each WPF Ribbon Control items by defining ScreenTip inside the ToolTip.
 
 {% tabs %}
 

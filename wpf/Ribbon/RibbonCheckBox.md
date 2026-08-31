@@ -8,9 +8,9 @@ documentation: ug
 ---
 # RibbonCheckBox in WPF Ribbon Control
 
-[RibbonCheckBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCheckBox.html) is used to select or unselect options. It provides a similar set of functionalities to a normal CheckBox control in [Ribbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html).
+[RibbonCheckBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCheckBox.html) is used to select or unselect options. It provides a similar set of functionalities to a normal CheckBox control in [WPF Ribbon Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html).
 
-The following code example illustrates how to use [RibbonCheckBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCheckBox.html) control in [Ribbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) instance.
+The following code example illustrates how to use [RibbonCheckBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCheckBox.html) control in [WPF Ribbon Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) instance.
 
 {% tabs %}
 
