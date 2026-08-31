@@ -7,7 +7,7 @@ control: Wizard
 documentation: ug
 ---
 
-# Interactive Features in WPF WizardControl
+# Interactive Features in WPF Wizard Control
 
 This section illustrates the following interactive feature of [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html). 
 
@@ -49,7 +49,7 @@ wizardControl.Items.Add(wizardPage2);
 
 {%endtabs%}
 
-![WizardControl FinalPage](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![Wizard Control FinalPage](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
 ## Populating by Data Binding
 
@@ -159,7 +159,7 @@ private void PopulatePageItems()
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-5. Bind the PageItems collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property of the WizardControl. Content of the WizardPage can be displayed using the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property.
+5. Bind the PageItems collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property of the Wizard Control. Content of the WizardPage can be displayed using the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property.
 
 {% capture codesnippet5 %}
 {% highlight XAML %}
@@ -190,14 +190,14 @@ private void PopulatePageItems()
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-![DataBinding of WizardControl](Interactive-Features_images/data-binding_img1.png)
+![DataBinding of Wizard Control](Interactive-Features_images/data-binding_img1.png)
 
 N> [ViewSample in GitHub](https://github.com/SyncfusionExamples/Populating-WPF-wizard-control-by-DataBinding).
 
 
 ### Selecting an Wizard Page 
 
-[SelectedWizardPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_SelectedWizardPage) property is used to select the wizard page from the WizardControl. Since the type of [SelectedWizardPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_SelectedWizardPage) is WizardPage, binding is needed to set selected wizard page through XAML. The following code explains how to select the wizard page in XAML and in C#,
+[SelectedWizardPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_SelectedWizardPage) property is used to select the wizard page from the Wizard Control. Since the type of [SelectedWizardPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#Syncfusion_Windows_Tools_Controls_WizardControl_SelectedWizardPage) is WizardPage, binding is needed to set selected wizard page through XAML. The following code explains how to select the wizard page in XAML and in C#,
 
 {% tabs %}
 
@@ -247,7 +247,7 @@ wizardControl.SelectedWizardPage = wizardPage2;
 
 {% endtabs %}
 
-![WizardControl MultiplePages](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![Wizard Control MultiplePages](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
 ### Title and Description

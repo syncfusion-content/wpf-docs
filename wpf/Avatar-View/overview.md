@@ -7,7 +7,7 @@ control: AvatarView
 documentation: ug
 ---
 
-# About Syncfusion® WPF SfAvatarView Control
+# About Syncfusion® WPF AvatarView  Control
 
 The [WPF AvatarView control](https://www.syncfusion.com/wpf-controls/avatar-view) provides a graphical representation of a user image that allows you to customize the view by adding an image, background color, icon, text, and more.
 

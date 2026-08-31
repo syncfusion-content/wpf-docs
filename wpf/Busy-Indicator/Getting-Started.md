@@ -7,13 +7,13 @@ control: Busy Indicator
 documentation: ug
 ---
 
-# Getting Started with WPF SfBusyIndicator
+# Getting Started with WPF Busy Indicator
 
 Namespace: Syncfusion.Windows.Controls.Notification.
 
 Assembly: Syncfusion.SfBusyIndicator.WPF (in Syncfusion.SfBusyIndicator.WPF.dll)
 
-The following code example shows how to create the SfBusyIndicator from XAML and code behind respectively.
+The following code example shows how to create the Busy Indicator from XAML and code behind respectively.
 
 {% tabs %}
 
@@ -44,10 +44,10 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-example
 
 ## Theme
 
-SfBusyIndicator supports various built-in themes. Refer to the below links to apply themes for the SfBusyIndicator,
+Busy Indicator supports various built-in themes. Refer to the below links to apply themes for the Busy Indicator,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfBusyIndicator](IsBusy_images/Theme.png)
+  ![Setting theme to WPF Busy Indicator](IsBusy_images/Theme.png)

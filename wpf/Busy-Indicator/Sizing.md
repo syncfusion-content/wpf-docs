@@ -7,7 +7,7 @@ control: Busy Indicator
 documentation: ug
 ---
 
-# Sizing in WPF SfBusyIndicator
+# Sizing in WPF Busy Indicator
 
 ## ViewBoxHeight
 
@@ -17,7 +17,7 @@ The ViewBoxHeight property allows the user to set the height of the ViewBox.
 
 {% highlight xaml%}
 
- <!--To set the ViewboxHeight for SfBusyIndicator-->
+ <!--To set the ViewboxHeight for Busy Indicator-->
 <Notification:SfBusyIndicator Foreground="White" Header="Loading..." Background="CornflowerBlue" ViewboxHeight="200" >
 </Notification:SfBusyIndicator>
 
@@ -25,7 +25,7 @@ The ViewBoxHeight property allows the user to set the height of the ViewBox.
 
 {% highlight C# %}
 
-// To set the ViewboxHeight for SfBusyIndicator
+// To set the ViewboxHeight for Busy Indicator
 SfBusyIndicator SfBusyIndicator = new SfBusyIndicator();
 SfBusyIndicator.Header = "Loading..";
 SfBusyIndicator.Foreground = Brushes.White;
@@ -37,7 +37,7 @@ Grid1.Children.Add(SfBusyIndicator);
 
 {% highlight VB %}
 
-' To set the ViewboxHeight for SfBusyIndicator
+' To set the ViewboxHeight for Busy Indicator
 Dim SfBusyIndicator As New SfBusyIndicator()
 SfBusyIndicator.Header = "Loading.."
 SfBusyIndicator.Foreground = Brushes.White
@@ -62,7 +62,7 @@ ViewBoxWidth property allows the user to set the width of the ViewBox.
 {% highlight xaml %}
 
 
-<!--To set the ViewBoxWidth for SfBusyIndicator-->
+<!--To set the ViewBoxWidth for Busy Indicator-->
 
 <Notification:SfBusyIndicator Foreground="White" Header="Loading..." Background="CornflowerBlue" ViewboxWidth="50" >
 
@@ -72,7 +72,7 @@ ViewBoxWidth property allows the user to set the width of the ViewBox.
 
 {% highlight C# %}
 
-// To set the ViewBoxWidth for SfBusyIndicator
+// To set the ViewBoxWidth for Busy Indicator
 SfBusyIndicator SfBusyIndicator = new SfBusyIndicator();
 SfBusyIndicator.Header = "Loading..";
 SfBusyIndicator.Foreground = Brushes.White;
@@ -84,7 +84,7 @@ Grid1.Children.Add(SfBusyIndicator);
 
 {% highlight VB %}
 
-' To set the ViewBoxWidth for SfBusyIndicator
+' To set the ViewBoxWidth for Busy Indicator
 Dim SfBusyIndicator As New SfBusyIndicator()
 SfBusyIndicator.Header = "Loading.."
 SfBusyIndicator.Foreground = Brushes.White

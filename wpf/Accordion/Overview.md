@@ -7,7 +7,7 @@ control: SfAccordion
 documentation: ug
 ---
 
-# About Syncfusion® WPF SfAccordion Control
+# About Syncfusion® WPF Accordion Control
 
 The [WPF Accordion](https://www.syncfusion.com/wpf-controls/accordion) control organizes content into multiple collapsible sections that can be expanded on demand. Single or multiple content can be expanded at a time.
 

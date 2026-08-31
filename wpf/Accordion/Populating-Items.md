@@ -7,17 +7,17 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Populating Items in WPF SfAccordion
+# Populating Items in WPF Accordion
 
-`SfAccordionItem` are added as items of `SfAccordion`. Items can be added using `Items` or `ItemSource` property.
+`SfAccordionItem` are added as items of `Accordion`. Items can be added using `Items` or `ItemSource` property.
 
 ## Using Items
 
-SfAccordion accepts `SfAccordionItem` as its children when added directly.
+Accordion accepts `SfAccordionItem` as its children when added directly.
 
 ### Adding items to the control 
 
-Here five SfAccordionItems are added as the children of the `SfAccordion`.
+Here five SfAccordionItems are added as the children of the `Accordion`.
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 {% endtabs %}
 
-`SfAccordion` control is populated as follows:
+`Accordion` control is populated as follows:
 
 ![WPF Accordion Setting Header for Items](Populating-Items-images/wpf-accordion-setting-header-for-items.jpeg)
 
@@ -230,7 +230,7 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 ## Using ItemsSource
 
-SfAccordion accepts any business object collection to be bound to its [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property. 
+Accordion accepts any business object collection to be bound to its [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property. 
 
 ### Adding items to the control
 
@@ -357,7 +357,7 @@ Follow the below steps to add the Items through [ItemsSource](https://learn.micr
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4. Bind the Employees collection to [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of `SfAccordion` Control
+4. Bind the Employees collection to [ItemsSource](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of `Accordion` Control
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -372,7 +372,7 @@ Follow the below steps to add the Items through [ItemsSource](https://learn.micr
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-`SfAccordion` control is populated as follows:
+`Accordion` control is populated as follows:
 
 ![Adding Items to WPF Accordion](Populating-Items-images/wpf-accordion-adding-items.jpeg)
 

@@ -7,9 +7,9 @@ control: Busy Indicator
 documentation: ug
 ---
 
-# IsBusy in WPF SfBusyIndicator
+# IsBusy in WPF Busy Indicator
 
-The IsBusy property in the BusyIndicator control is used to determine whether an animation needs to be executed or not.
+The IsBusy property in the Busy Indicator control is used to determine whether an animation needs to be executed or not.
 
 {% tabs %}
 

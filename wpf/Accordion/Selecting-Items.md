@@ -7,7 +7,7 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Selecting Items in WPF SfAccordion
+# Selecting Items in WPF Accordion
 
 Items can be selected programmatically using the properties [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedIndex), [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItem) and [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItems).
 
@@ -34,7 +34,7 @@ Items can be selected programmatically using the properties [SelectedIndex](http
 
 {% highlight C# %}
 
-// Create SfAccordion control
+// Create Accordion control
 SfAccordion accordion = new SfAccordion();
 accordion.Width = 500;
 accordion.Height = 200;
@@ -389,7 +389,7 @@ For example: In One SelectionMode, the selected item cannot be collapsed directl
 
 ## Select All Items
 
-`SfAccordion` provides a method [SelectAll](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectAll) to select all the items. In One and ZeroOrOne SelectionModes, only the last item is selected.
+`Accordion` provides a method [SelectAll](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectAll) to select all the items. In One and ZeroOrOne SelectionModes, only the last item is selected.
 
 {% tabs %}
 
@@ -409,7 +409,7 @@ For example: In One SelectionMode, the selected item cannot be collapsed directl
  
 ## Unselect All Items
 
-`SfAccordion` provides a method [UnselectAll](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_UnselectAll) to unselect all the items. In One [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode), there is no change in calling this method. In OneOrMore SelectionMode, the element which has higher index remains selected whereas others are unselected.
+`Accordion` provides a method [UnselectAll](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_UnselectAll) to unselect all the items. In One [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode), there is no change in calling this method. In OneOrMore SelectionMode, the element which has higher index remains selected whereas others are unselected.
 
 {% tabs %}
 

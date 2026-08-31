@@ -7,7 +7,7 @@ control: Busy Indicator
 documentation: ug
 ---
 
-# About Syncfusion® WPF SfBusyIndicator Control
+# About Syncfusion® WPF SfBusyInBusy Indicatordicator Control
 
 The Busy Indicator control includes over 37 built-in animations that can be displayed within your applications.
 

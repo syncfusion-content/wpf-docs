@@ -7,7 +7,7 @@ control: Wizard
 documentation: ug
 ---
 
-# Layout Related Features in WPF WizardControl
+# Layout Related Features in WPF Wizard Control
 
 This section illustrates the following Layout-related features of [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
 
@@ -69,7 +69,7 @@ wizardPage.BannerBackground = Brushes.Navy;
 
 {%endtabs%}
 
-![BannerBackground in WizardControl](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
+![BannerBackground in Wizard Control](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
 ## Setting the Banner Image
 
@@ -142,10 +142,10 @@ wizardControl.ExteriorPageBannerImageMinWidth = 10;
 
 ## Theme
 
-WizardControl supports various built-in themes. Refer to the below links to apply themes for the WizardControl,
+Wizard Control supports various built-in themes. Refer to the below links to apply themes for the Wizard Control,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
- ![Setting theme to WPF WizardControl](getting-started_images\wpf-wizard-control-theme.png)
+ ![Setting theme to WPF Wizard Control](getting-started_images\wpf-wizard-control-theme.png)
