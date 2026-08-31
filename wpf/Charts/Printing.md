@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing in WPF Charts
 
-SfChart supports printing that enables you to print the chart. The following method is used to print the chart.
+WPF Charts supports printing that enables you to print the chart. The following method is used to print the chart.
 
 ## Print()
 
@@ -71,7 +71,7 @@ private void Button_Click_1(object sender, RoutedEventArgs e)
 
 The following image shows the printing dialog window upon invoking print method.
 
-![SfChart Printing Dialog Window](Printing_images/Printing_img1.png)
+![WPF Charts Printing Dialog Window](Printing_images/Printing_img1.png)
 
 
 N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos/tree/master/chart/Views/Exporting) to know various chart types and how to easily configure them with built-in support for creating stunning visual effects.

@@ -11,7 +11,7 @@ documentation: ug
 
 ChartCrossHairBehavior is used to view the values at mouse point or touch contact point. By moving these lines horizontally, you can get the X values and by moving these lines vertically, you can get the Y values.
 
-## Adding CrossHairBehavior to SfChart
+## Adding CrossHairBehavior to WPF Charts
 
 You can create an instance [`ChartCrossHairBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior.html#) and add it to the Behaviors collection.
 

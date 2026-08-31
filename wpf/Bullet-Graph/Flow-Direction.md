@@ -9,7 +9,7 @@ documentation: ug
 
 # Flow Direction in WPF Bullet Graph
 
-By default, the flow direction of `SfBulletGraph` is Left to Right. It can be customized by using the **FlowDirection** property.
+By default, the flow direction of WPF Bullet Graph is Left to Right. It can be customized by using the **FlowDirection** property.
 
 >**Note:** When the orientation of [`SfBulletGraph`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html) is **Horizontal**, the default flow direction is left to right, and when the orientation is **Vertical**, the default flow direction is top to bottom.
 
