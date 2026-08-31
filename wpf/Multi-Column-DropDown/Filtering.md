@@ -106,8 +106,7 @@ Here, `Title` is defined as a `DisplayMember`. But it also searches the match ca
 ![The image describes the custom filtering by FilterRecord method](Filtering_images/Filtering_img2.png)
 
 
-N> Excel-like filtering is not supported in MultiColumn Dropdown Control. You can customize the MultiColumn Dropdown
-ControlTemplate to enable the Excel-like filtering by setting `AllowFiltering` as true in SfDataGrid.
+N> Excel-like filtering is not supported in MultiColumn Dropdown Control. You can customize the MultiColumn Dropdown ControlTemplate to enable the Excel-like filtering by setting `AllowFiltering` as true in SfDataGrid.
 
 ## Filtering Delay
 By default, filtering and auto-completion operations performed while typing in the editor will be delayed for a specified amount of time (milliseconds). The period of delaying filtering and auto-completion operations can be specified by the `FilterDelay` property. The default value for the `FilterDelay` property is `500`.

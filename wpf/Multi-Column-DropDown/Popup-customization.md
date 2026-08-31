@@ -73,8 +73,7 @@ You can allow the end-user to resize the drop-down popup through resizing thumb 
 
 ## Keep DropDownPopup as StaysOpen
 
-You can keep the popup in MultiColumn
-Dropdown Control as always open by using `StaysOpen` property. You can get the popup from template of SfMultiColumn DropdownControl in its loaded event and set the `StaysOpen` property as `true`.
+You can keep the popup in MultiColumn Dropdown Control as always open by using `StaysOpen` property. You can get the popup from template of SfMultiColumn DropdownControl in its loaded event and set the `StaysOpen` property as `true`.
 
 {% tabs %}
 {% highlight c# %}
