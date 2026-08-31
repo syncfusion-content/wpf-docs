@@ -9,11 +9,11 @@ documentation: ug
 
 # Event Mechanism in WPF Diagram
 
-This section describes several events triggered and handled while using Essential Diagram WPF in the following topic:
+This section describes several events triggered and handled while using WPF Diagram in the following topic:
 
 ## Events for Nodes and Connections
 
-Diagram control has several events which respond to several actions performed on nodes and connections.
+WPF Diagram control has several events which respond to several actions performed on nodes and connections.
 
 The various events and their descriptions are explained in the following table.
 

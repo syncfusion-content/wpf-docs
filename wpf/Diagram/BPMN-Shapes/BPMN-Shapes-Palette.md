@@ -9,7 +9,7 @@ documentation: ug
 
 # Shapes Palette in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides the support to add BPMN shapes to Stencil. 
+[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) provides the support to add BPMN shapes to Stencil. 
 
 ## Add BPMN shapes into stencil
 

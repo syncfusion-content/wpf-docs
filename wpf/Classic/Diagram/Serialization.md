@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization in WPF Diagram
 
-Serialization is the process of saving and retrieving the Essential Diagram file. Essential Diagram WPF supports saving the diagram page as an XAML file. The page and all its properties get saved. On loading, the page gets loaded in the current view with all its nodes and connections. This load and save feature allows you to save their diagram page for future use. You can continue working on their page by loading the appropriate XAML file.
+Serialization is the process of saving and retrieving the WPF Diagram file. WPF Diagram supports saving the diagram page as an XAML file. The page and all its properties get saved. On loading, the page gets loaded in the current view with all its nodes and connections. This load and save feature allows you to save their diagram page for future use. You can continue working on their page by loading the appropriate XAML file.
 
 
 <table>
@@ -134,7 +134,7 @@ dc.Save("C:\TestPage.xaml")
 
 {% endhighlight %}
 
-N> Essential Diagram WPF does not support serializing bindings and bitmap Images.
+N> WPF Diagram does not support serializing bindings and bitmap Images.
 
 Saving to a stream
 
@@ -231,7 +231,7 @@ dc.Load("C:\TestPage.xaml")
 
 {% endhighlight %}
 
-N> Essential Diagram WPF does not support serializing bindings and bitmap Images.
+N> WPF Diagram does not support serializing bindings and bitmap Images.
 
 Loading from a stream
 
@@ -279,7 +279,7 @@ Localizing the Application
 
 Adding Resource Files
 
-To localize the Syncfusion Diagram WPF control, you need to create a resource file for each culture. The following steps should be performed when localizing strings for your culture:
+To localize the Syncfusion WPF Diagram control, you need to create a resource file for each culture. The following steps should be performed when localizing strings for your culture:
 
 1. Add the resource (.resx) files in the Resources folder for different cultures. The .resx files for the different cultures or invariant cultures should be placed in the Resources folder of your project.
 2. Name the resource files according to the formats specified, namely AssemblyName.CultureName.resx and AssemblyName.resx for the invariant cultures. Here, AssemblyName is the Syncfusion WPF control assembly name and CultureName is the culture code of the resource file that you want to show in the UI. If your conversion is only for the invariant culture, then the .resx file does not require a culture suffix.

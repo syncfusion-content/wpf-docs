@@ -10,7 +10,7 @@ documentation: ug
 
 # Connection Port in WPF Diagram
 
-Essential Diagram WPF provides the ability to define custom ports for making connections. The ConnectionPort class can be used for defining custom ports on the nodes. Any number of ports can be defined on a node. By default every node has a center port.  
+WPF Diagram provides the ability to define custom ports for making connections. The ConnectionPort class can be used for defining custom ports on the nodes. Any number of ports can be defined on a node. By default every node has a center port.  
 
 ConnectionPort has the following properties:
 
