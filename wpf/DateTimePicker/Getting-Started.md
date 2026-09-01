@@ -394,7 +394,7 @@ dateTimeEdit.NullValue = null;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit displays the watermark text](Watermark-Support_images/wpf-datetimeedit-watermark.png)
+![WPF DateTimePicker displays the watermark text](Watermark-Support_images/wpf-datetimeedit-watermark.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/NullValue-Options).
 
@@ -452,7 +452,7 @@ dateTimeEdit.AbbreviatedMonthNames = new string[]
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with changed month names](Dropdown-Popup_images/AbbreviatedMonthNames.png)
+![WPF DateTimePicker with changed month names](Dropdown-Popup_images/AbbreviatedMonthNames.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/MonthNames).
 
@@ -500,7 +500,7 @@ dateTimeEdit.ShortestDayNames= new string[]
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with changed weekday names](Dropdown-Popup_images/ShortestDayNames.png)
+![WPF DateTimePicker with changed weekday names](Dropdown-Popup_images/ShortestDayNames.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/WeekDayNames).
 

@@ -12,7 +12,7 @@ documentation: ug
 
 [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html) is a compact, keyboard-friendly editor for representing and editing a time interval in a Days:Hours:Minutes:Seconds (and optional milliseconds) format. Each segment (days, hours, minutes, seconds, milliseconds) is editable independently and can be adjusted by keyboard arrows, mouse wheel, spinner buttons, or programmatically through the `Value` property.
 
-![TimeSpanEdit control structure](Getting-Started_images/Control_Structure.png)
+![WPF TimeSpan Editor control structure](Getting-Started_images/Control_Structure.png)
 
 ## Main Capabilities
 

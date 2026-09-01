@@ -35,7 +35,7 @@ sfTimePicker.DropDownHeight = 300;
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker with DropDownHeight](Features_images/Customizing-DropDown_img2.png)
+![WPF TimePicker with DropDownHeight](Features_images/Customizing-DropDown_img2.png)
 
 ## Show or hide DropDown button
 
@@ -61,6 +61,6 @@ sfTimePicker.ShowDropDownButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker hides the drop-down button](Features_images/Customizing-DropDown_img3.png)
+![WPF TimePicker hides the drop-down button](Features_images/Customizing-DropDown_img3.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/TimeSelectorItem) to download the sample that showcases the DropDown customization support.

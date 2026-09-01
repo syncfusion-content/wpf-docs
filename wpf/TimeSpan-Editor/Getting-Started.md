@@ -13,7 +13,7 @@ This section explains how to create a [WPF TimeSpan Editor](https://www.syncfusi
 
 ## Control Structure
 
-![TimeSpanEdit control structure](Getting-Started_images/Control_Structure.png)
+![WPF TimeSpan Editor control structure](Getting-Started_images/Control_Structure.png)
 
 ## Assembly deployment
 
@@ -29,7 +29,7 @@ You can add the `WPF TimeSpan Editor` (TimeSpanEdit) control to an application b
 
 * Syncfusion.Shared.WPF
 
-![TimeSpanEdit Control added by designer](Getting-Started_images/img1.png) 
+![WPF TimeSpan Editor Control added by designer](Getting-Started_images/img1.png) 
  
 ## Adding WPF TimeSpanEdit via XAML
 
@@ -102,7 +102,7 @@ public partial class MainWindow : Window {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![TimeSpanEdit control added by xaml and code](Getting-Started_images/Getting-Started_Designer.png)
+![WPF TimeSpan Editor control added by xaml and code](Getting-Started_images/Getting-Started_Designer.png)
 
 ## Set or change time span value
 
@@ -165,7 +165,7 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10);
 {% endhighlight %}
 {% endtabs %}
 
-![TimeSpanEdit formats the displayed time span](Deals-with-TimeSpanEdit_images/Formatting.png)
+![WPF TimeSpan Editor formats the displayed time span](Deals-with-TimeSpanEdit_images/Formatting.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
