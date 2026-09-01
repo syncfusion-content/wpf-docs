@@ -11,7 +11,7 @@ documentation: ug
 
 ## Layout customization
 
-The OLAP gauge displays multiple gauges in a structured layout. You can customize the layout by using the [ColumnsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ColumnsCount) and [RowsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_RowsCount) properties. These properties are used to specify the number of columns and rows for displaying the control.
+The WPF OLAP Gauge displays multiple gauges in a structured layout. You can customize the layout by using the [ColumnsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ColumnsCount) and [RowsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_RowsCount) properties. These properties are used to specify the number of columns and rows for displaying the control.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ Me.OlapGauge1.RowsCount = 2
 
 {% endtabs %}
 
-![WPF OLAPGauge displays multiple gauges in a structured layout](Gauge-Customization_images/Gauge-customization.png)
+![WPF OLAP Gauge displays multiple gauges in a structured layout](Gauge-Customization_images/Gauge-customization.png)
 
 ## Gauge header
 
@@ -65,7 +65,7 @@ OlapGauge1.ShowGaugeHeaders = False
 
 {% endtabs %}
 
-![Hidden header component in WPF OLAPGauge](Gauge-Customization_images/Gauge-customization-header.png)
+![Hidden header component in WPF OLAP Gauge](Gauge-Customization_images/Gauge-customization-header.png)
 
 ## Gauge label
 
@@ -93,7 +93,7 @@ OlapGauge1.ShowGaugeLabels = False
 
 {% endtabs %}
 
-![Hide the label in WPF OLAPGauge](Gauge-Customization_images/Gauge-customization-label.png)
+![Hide the label in WPF OLAP Gauge](Gauge-Customization_images/Gauge-customization-label.png)
 
 ## Gauge factor
 
@@ -121,4 +121,4 @@ OlapGauge1.ShowGaugeFactors = False
 
 {% endtabs %}
 
-![Hide the gauge factor component in WPF OLAPGauge](Gauge-Customization_images/Gauge-customization-factor.png)
+![Hide the gauge factor component in WPF OLAP Gauge](Gauge-Customization_images/Gauge-customization-factor.png)
