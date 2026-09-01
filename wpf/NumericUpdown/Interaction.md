@@ -7,17 +7,17 @@ control: UpDown
 documentation: ug
 ---
 
-# Interaction in WPF UpDown
+# Interaction in WPF Numeric UpDown
 
-This section explains about how to change the value by using mouse and keyboard in WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control.
+This section explains about how to change the value by using mouse and keyboard in [WPF Numeric UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control.
 
 ## Keyboard and Mouse support
 
-The `UpDown` control allows you to increase or decrease the value by pressing the <kbd>up-arrow</kbd> or <kbd>down-arrow</kbd> keys, or by using the mouse wheel over the control. The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Step) property specifies the increment or decrement interval.
+The `WPF Numeric UpDown` control allows you to increase or decrease the value by pressing the <kbd>up-arrow</kbd> or <kbd>down-arrow</kbd> keys, or by using the mouse wheel over the control. The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Step) property specifies the increment or decrement interval.
 
 ### Increment or decrement value with the mouse wheel
 
-You can increase or decrease the current value by scrolling over the `UpDown` control. To enable mouse-wheel scrolling, set the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_IsScrollingOnCircle) property to `true`. Set it to `false` to disable value changes on mouse scroll. The default value of `IsScrollingOnCircle` is `true`.
+You can increase or decrease the current value by scrolling over the `WPF Numeric UpDown` control. To enable mouse-wheel scrolling, set the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_IsScrollingOnCircle) property to `true`. Set it to `false` to disable value changes on mouse scroll. The default value of `IsScrollingOnCircle` is `true`.
 
 {% tabs %}
 
@@ -42,7 +42,7 @@ grid.Children.Add(updown);
 
 ## Step
 
-The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Step) property is used to specify the interval applied to the value when the spin buttons are pressed. For example, if `Step` is set to `5`, the `UpDown` value increases or decreases by `5` each time a spin button is pressed. The default value of `Step` is `1`.
+The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Step) property is used to specify the interval applied to the value when the spin buttons are pressed. For example, if `Step` is set to `5`, the `WPF Numeric UpDown` value increases or decreases by `5` each time a spin button is pressed. The default value of `Step` is `1`.
 
 You can also increase or decrease the current value by pressing the <kbd>up-arrow</kbd> or <kbd>down-arrow</kbd> keys.
 
@@ -96,7 +96,7 @@ updown.AnimationSpeed = 0.5;
 
 ## Range Adorner
 
-You can show a visual adorner over the `UpDown` control that represents the minimum and maximum range by setting the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_EnableRangeAdorner) property to `true`. The default value is `false`. You can also change the background color of the range adorner using the [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_RangeAdornerBackground) property.
+You can show a visual adorner over the `WPF Numeric UpDown` control that represents the minimum and maximum range by setting the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_EnableRangeAdorner) property to `true`. The default value is `false`. You can also change the background color of the range adorner using the [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_RangeAdornerBackground) property.
 
 N> Both `MinValue` and `MaxValue` must be set for the range adorner to be visible.
 

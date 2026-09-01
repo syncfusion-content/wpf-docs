@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip in WPF OLAP Gauge
 
-The OLAP gauge provides information about the values when the mouse pointer is moved over the gauge.
+The WPF OLAP Gauge provides information about the values when the mouse pointer is moved over the gauge.
 
 ## Pointer tooltip
 
-The OLAP gauge provides value information when the mouse pointer is moved over the pointer. This can be achieved by enabling the [ShowPointersTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ShowPointersTooltip) property.
+The WPF OLAP Gauge provides value information when the mouse pointer is moved over the pointer. This can be achieved by enabling the [ShowPointersTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ShowPointersTooltip) property.
 
 The following code snippet illustrates how to show a tooltip for pointers.
 
@@ -39,11 +39,11 @@ Me.OlapGauge1.ShowPointersTooltip = True
 
 {% endtabs %}
 
-![Shows the tooltip of pointer in WPF OLAPGauge](Tooltip_images/Pointer-tooltip.png)
+![Shows the tooltip of pointer in WPF OLAP Gauge](Tooltip_images/Pointer-tooltip.png)
 
 ## Marker tooltip
 
-The OLAP gauge provides goal information when the mouse pointer is moved over the marker. This can be achieved by enabling the [ShowMarkersTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ShowMarkersTooltip) property.
+The WPF OLAP Gauge provides goal information when the mouse pointer is moved over the marker. This can be achieved by enabling the [ShowMarkersTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.Olap.OlapGauge.html#Syncfusion_Windows_Gauge_Olap_OlapGauge_ShowMarkersTooltip) property.
 
 The following code snippet illustrates how to show a tooltip for markers.
 
@@ -69,7 +69,7 @@ Me.OlapGauge1.ShowMarkersTooltip = True
 
 {% endtabs %}
 
-![Shows the tooltip of marker in WPF OLAPGauge](Tooltip_images/Marker-tooltip.png)
+![Shows the tooltip of marker in WPF OLAP Gauge](Tooltip_images/Marker-tooltip.png)
 
 A demo sample is available at the following location.
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Striplines in WPF Charts
 
-SfChart allows you to add Striplines to the chart, which shades the specific region or range in the plot area background at regular or custom intervals. 
+WPF Charts allows you to add Striplines to the chart, which shades the specific region or range in the plot area background at regular or custom intervals. 
 
 ## Positioning the Striplines
 
-SfChart provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Start) and [`Width`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Width) property for defining the Stripline start and end range. These values correspond to the axis values (or range). The Stripline can be filled using brush set in [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Background) property.
+WPF Charts provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Start) and [`Width`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Width) property for defining the Stripline start and end range. These values correspond to the axis values (or range). The Stripline can be filled using brush set in [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Background) property.
 
 {% tabs %}
 
@@ -95,7 +95,7 @@ chart.SecondaryAxis = axis;
 
 ## Label 
 
-We can define any text inside the stripline using [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Label) property. Also SfChart provides various customization options for this label like alignment, templates, etc.
+We can define any text inside the stripline using [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Label) property. Also WPF Charts provides various customization options for this label like alignment, templates, etc.
 
 The [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelHorizontalAlignment) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelVerticalAlignment) property can be used for positioning the labels inside the stripline.
 
@@ -334,7 +334,7 @@ chart.SecondaryAxis = axis;
 ![Multiple Striplines in WPF Chart](Striplines_images/wpf-chart-multiple-striplines.png)
 
 
-If you want to repeat the same type of stripline at regular intervals, SfChart provides two properties[`RepeatEvery`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_RepeatEvery) and [`RepeatUntil`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_RepeatUntil).
+If you want to repeat the same type of stripline at regular intervals, WPF Charts provides two properties[`RepeatEvery`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_RepeatEvery) and [`RepeatUntil`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_RepeatUntil).
 
 N> This can be used to fill plot area background alternatively.
 

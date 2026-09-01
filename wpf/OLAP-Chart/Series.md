@@ -52,13 +52,13 @@ Next i
 
 {% endtabs %}
 
-The following screenshot shows an OLAP chart with point labels enabled.
+The following screenshot shows a WPF OLAP Chart with point labels enabled.
 
-![To enable the point labels in OlapChart](Series_images/Series_img1.png)
+![To enable the point labels in WPF OLAP Chart](Series_images/Series_img1.png)
 
 ## Color customization
 
-You can set a custom color for each series in the OLAP chart. To apply different colors to different series, iterate through the series and apply the custom brush to the series.
+You can set a custom color for each series in the WPF OLAP Chart. To apply different colors to different series, iterate through the series and apply the custom brush to the series.
 
 {% tabs %}
 
@@ -78,7 +78,7 @@ Me.olapChart.Series(0).Interior = Brushes.Orange
 
 ## Border customization
 
-You can customize the thickness of the series border of the OLAP chart by using the following code sample.
+You can customize the thickness of the series border of the WPF OLAP Chart by using the following code sample.
 
 {% tabs %}
 
@@ -114,7 +114,7 @@ The pie chart renders everything in a single series; each block in the pie chart
 
 ## Custom data templates
 
-Series can be customized with user-defined data templates. The following sample usage describes how to apply a data template to the series in the OLAP chart.
+Series can be customized with user-defined data templates. The following sample usage describes how to apply a data template to the series in the WPF OLAP Chart.
 
 The following data template can be used to customize the series.
 
@@ -209,7 +209,7 @@ End Sub
 
 ## Chart animation
 
-Animations can be added to the OLAP chart control. This can be achieved through the following properties:
+Animations can be added to the WPF OLAP Chart control. This can be achieved through the following properties:
 
 * **SeriesAnimateOption**: Gets or sets animation for each series.
 * **SeriesAnimateOneByOne**: Gets or sets whether each series animates one by one. By default, it is false.
@@ -234,15 +234,15 @@ The following code sample is used for enabling chart animations.
 
 {% highlight c# %}
 
-// To set the Series Animate Option to Bottom in OlapChart.
+// To set the Series Animate Option to Bottom in WPF OLAP Chart.
 this.olapChart.SeriesAnimateOption = Syncfusion.Windows.Chart.AnimationOptions.Bottom;
-// To enable the Series Animate OneByOne in OlapChart.
+// To enable the Series Animate OneByOne in WPF OLAP Chart.
 this.olapChart.SeriesAnimateOneByOne = true;
-// To disable Series Animate OneByOne in OlapChart.
+// To disable Series Animate OneByOne in WPF OLAP Chart.
 this.olapChart.SeriesAnimateOneByOne = false;
-// To disable Series Animation in OlapChart.
+// To disable Series Animation in WPF OLAP Chart.
 this.olapChart.EnableSeriesAnimation = false;
-// To set the Series Animation Duration in OlapChart.
+// To set the Series Animation Duration in WPF OLAP Chart.
 this.olapChart.SeriesAnimationDuration = new TimeSpan(1);
 
 {% endhighlight %}
@@ -251,7 +251,7 @@ this.olapChart.SeriesAnimationDuration = new TimeSpan(1);
 
 The following illustration shows the chart animations.
 
-![To enable the chart animations in OlapChart](Series_images/Series_img6.png)
+![To enable the chart animations in WPF OLAP Chart](Series_images/Series_img6.png)
 
 A sample demo is available at the following location.
 

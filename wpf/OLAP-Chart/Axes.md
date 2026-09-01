@@ -93,7 +93,7 @@ To display the currency symbol in the secondary axis, you should set the seconda
 
 ## Label font settings
 
-The label font settings of the primary and secondary axes can be easily applied to an OLAP chart by specifying the label font properties, which are available under the primary and secondary axes of the OLAP chart.
+The label font settings of the primary and secondary axes can be easily applied to an WPF OLAP Chart by specifying the label font properties, which are available under the primary and secondary axes of it.
 
 {% tabs %}
 
@@ -170,10 +170,10 @@ Me.olapChart.PrimaryAxisLabelVisibility = System.Windows.Visibility.Collapsed
 
 {% endtabs %}
 
-The following illustration shows how the OLAP chart will look before collapsing the primary axis label.
+The following illustration shows how the WPF OLAP Chart will look before collapsing the primary axis label.
 
 ![Before collapsing the primary axis label](Axes_images/Axes_img5.png)
 
-The following illustration shows how the OLAP chart will look after collapsing the primary axis label.
+The following illustration shows how the WPF OLAP Chart will look after collapsing the primary axis label.
 
 ![After collapsing the primary axis label](Axes_images/Axes_img6.png)

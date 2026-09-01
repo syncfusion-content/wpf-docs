@@ -7,9 +7,9 @@ control: TileView Control
 documentation: ug
 ---
 
-# About Syncfusion® WPF TileView Control
+# About Syncfusion® WPF Tile View Control
 
-The [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) acts as a container that holds a set of [TileViewItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html), in which you can host rich information. You can maximize, minimize and drag the items of the `TileViewControl` in a matrix position to achieve the best layout. 
+The [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) acts as a container that holds a set of [TileViewItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html), in which you can host rich information. You can maximize, minimize and drag the items of the `WPF Tile View Control` in a matrix position to achieve the best layout. 
 
 ## Structure of the TileViewControl
 

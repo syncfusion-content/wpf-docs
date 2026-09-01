@@ -9,7 +9,7 @@ documentation: ug
 
 # How to transform latitude and longitude in WPF Maps
 
-SfMap offers two utility methods to transform the pixel values to longitude and latitude values and vice-versa. These methods are used for both ShapeFileLayer and ImageryLayer.
+WPF Map offers two utility methods to transform the pixel values to longitude and latitude values and vice-versa. These methods are used for both ShapeFileLayer and ImageryLayer.
 
 1. [`GeopointToViewPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_GeopointToViewPoint_System_Double_System_Double_) - Converts the latitude and longitude values to a screen point. Here, pass the parameters as latitude and longitude values, from those values we can get the screen points x and y.
 2. [`GetLatLonFromPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_GetLatLonFromPoint_System_Windows_Point_) - Converts the screen point to longitude and latitude values. Here, pass the parameters as screen points x and y, from those points we can get the longitude(Point.X) and latitude(Point.Y) values.

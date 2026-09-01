@@ -9,12 +9,12 @@ documentation: ug
 
 # Getting Started with WPF Smith Chart control
 
-This section explains the steps required to build the application with SfSmithChart.
+This section explains the steps required to build the application with WPF Smith Chart.
 
 ## Steps
 
 1. Create a new WPF project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
-2. Add the SfSmithChart assembly to your application. 
+2. Add the WPF Smith Chart assembly to your application. 
 3. Initialize the smith chart control.
 4. Add a header to the smith chart control.
 5. Add series to the smith chart control.
@@ -67,7 +67,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.SmithChart;assembly=Syncfusio
 
 
 
-### Add SfSmithChart from Toolbox
+### Add WPF Smith Chart from Toolbox
 
 Drag and drop the SfSmithChart control from the Toolbox into your application.
 
@@ -315,7 +315,7 @@ Specify **Impedance Transmission** as header in the below code example.
 
 ### Adding Axes
 
-The following code example illustrates how to add and customize the resistance (Horizontal) and reactance (Radial) axes in the SfSmithChart.
+The following code example illustrates how to add and customize the resistance (Horizontal) and reactance (Radial) axes in the WPF Smith Chart.
 
 {% highlight xaml %}
 
@@ -445,12 +445,12 @@ The following code example illustrates the complete code for creating a smith ch
     
 The following smith chart is created as the result of above codes.
 
-![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
+![WPF Smith Chart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
 
 
 ## Create a simple smith chart from code behind (C#)
 
-Some developers prefer code behind as the first approach for development to create things dynamically. This section explains the steps required to create SfSmithChart from code behind.
+Some developers prefer code behind as the first approach for development to create things dynamically. This section explains the steps required to create WPF Smith Chart from code behind.
 
 ### Adding assembly reference
 
@@ -469,7 +469,7 @@ using Syncfusion.UI.Xaml.SmithChart;
 
 ### Initialize the chart
 
-To initialize the chart, create an instance for the SfSmithChart as below.
+To initialize the chart, create an instance for the WPF Smith Chart as below.
 
 {% highlight c# %}
 
@@ -492,7 +492,7 @@ chart.Header = "Impedance Transmission";
 
 ### Adding Axes
 
-The following code example illustrates how to add and customize the resistance (Horizontal) and reactance (Radial) axes to the SfSmithChart.
+The following code example illustrates how to add and customize the resistance (Horizontal) and reactance (Radial) axes to the WPF Smith Chart.
 
 {% highlight c# %}
 
@@ -594,7 +594,7 @@ The following code example illustrates the complete code for creating a smith ch
 
 The following output is displayed as the result of above code example.
 
-![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
+![WPF Smith Chart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
 
 ## Theme
 
@@ -604,4 +604,4 @@ The smith chart supports various built-in themes. Refer to the below links to ap
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF SfSmithChart](Getting-Started_images/Theme.png)
+![Setting theme to WPF WPF Smith Chart](Getting-Started_images/Theme.png)

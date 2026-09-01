@@ -7,13 +7,13 @@ control: UpDown
 documentation: ug
 ---
 
-# Restriction in WPF UpDown
+# Restriction in WPF Numeric UpDown
 
-This section explains how to set the value and restrict the minimum and maximum value of the WPF `UpDown` control.
+This section explains how to set the value and restrict the minimum and maximum value of the `WPF Numeric UpDown` control.
 
 ## Value
 
-The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Value) property is used to set the value of the `UpDown` control. The default value is `0` (or `null` when `UseNullOption` is enabled).
+The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Value) property is used to set the value of the `WPF Numeric UpDown` control. The default value is `0` (or `null` when `UseNullOption` is enabled).
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ grid.Children.Add(updown);
 
 ### Value event
 
-The `UpDown` control notifies value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_ValueChanged) and [ValueChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_ValueChanging) events. Use the `OldValue` and `NewValue` properties of `ValueChanged` to read the new and old values. In the `ValueChanging` event, set the `Cancel` property on the event argument to prevent the change.
+The `WPF Numeric UpDown` control notifies value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_ValueChanged) and [ValueChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_ValueChanging) events. Use the `OldValue` and `NewValue` properties of `ValueChanged` to read the new and old values. In the `ValueChanging` event, set the `Cancel` property on the event argument to prevent the change.
 
 {% highlight XAML %}
 
@@ -76,7 +76,7 @@ private void Up_ValueChanged(object sender, RoutedPropertyChangedEventArgs<objec
 
 ## Null value
 
-The [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control accepts null values. When the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Value) is set to null, the control shows `0` by default. To display a different numerical value when `Value` is null, set the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NullValue) property. The [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_UseNullOption) property must be enabled for `NullValue` to take effect.
+The [WPF Numeric UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control accepts null values. When the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Value) is set to null, the control shows `0` by default. To display a different numerical value when `Value` is null, set the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NullValue) property. The [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_UseNullOption) property must be enabled for `NullValue` to take effect.
 
 
 {% tabs %}
@@ -101,7 +101,7 @@ updown.NullValue = 2;
 
 ## Watermark
 
-The [NullValueText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NullValueText) property enables the `UpDown` control to display watermark text instead of a numeric value when [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Value) is null. The [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_UseNullOption) property must be enabled for `NullValueText` to take effect.
+The [NullValueText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NullValueText) property enables the `WPF Numeric UpDown` control to display watermark text instead of a numeric value when [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Value) is null. The [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_UseNullOption) property must be enabled for `NullValueText` to take effect.
 
 {% tabs %}
 
@@ -123,12 +123,12 @@ updown.NullValueText = "Enter a value";
 ![WPF UpDown displays Null Value Text](Restriction_images/wpf-updown-nullvaluetext.png)
 
 
-N> The `UseNullOption` property must be enabled if you want to see the `NullValue` or `NullValueText` in UpDown control. If both `NullValue` and `NullValueText` is specified, you will see only `NullValue` but not `NullValueText`.
+N> The `UseNullOption` property must be enabled if you want to see the `NullValue` or `NullValueText` in WPF Numeric UpDown control. If both `NullValue` and `NullValueText` is specified, you will see only `NullValue` but not `NullValueText`.
 
 
 ## Minimum and Maximum value
 
-The value of the `UpDown` control can be restricted to a maximum and minimum limit. The spin button increments or decrements the value by mouse interaction; once the increment or decrement reaches the predefined maximum or minimum, the value stops changing.
+The value of the `WPF Numeric UpDown` control can be restricted to a maximum and minimum limit. The spin button increments or decrements the value by mouse interaction; once the increment or decrement reaches the predefined maximum or minimum, the value stops changing.
 
 Similarly, the keyboard does not allow you to enter a value above or below the predefined maximum or minimum.
 
@@ -191,7 +191,7 @@ updown.MaxValueOnExceedMaxDigit = true;
 
 ## AllowEdit
 
-The [AllowEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_AllowEdit) property is used to restrict the editing in `UpDown` control by setting it's value to `False`. The default value is `True`.
+The [AllowEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_AllowEdit) property is used to restrict the editing in `WPF Numeric UpDown` control by setting it's value to `False`. The default value is `True`.
 
 {% tabs %}
 

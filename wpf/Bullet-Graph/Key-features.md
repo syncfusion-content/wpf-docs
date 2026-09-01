@@ -49,7 +49,7 @@ The bullet graph types can be differentiated by their orientation. The control d
 
 ### Easy to use
 
-SfBulletGraph is available in the Visual Studio toolbox itself, so you can easily drag and drop the control from the toolbox.
+WPF Bullet Graph is available in the Visual Studio toolbox itself, so you can easily drag and drop the control from the toolbox.
 
 ## Data Binding Support
 
@@ -59,6 +59,6 @@ The control can be bound to your application data from a variety of data sources
 
 The Model-View-ViewModel (MVVM) pattern should be followed to get better control customization.
 
-## SfBulletGraph Elements
+## WPF Bullet Graph Elements
 
 ![Key-features_img1](Key-features_images/Key-features_img1.jpeg)

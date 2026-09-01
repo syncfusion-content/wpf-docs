@@ -11,7 +11,7 @@ documentation: ug
 
 TreeMaps are a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole dataset. The size of each box represents a quantity. TreeMaps also use color to represent any number of values, but it is often used to categorize the various boxes within the tree map.
 
-## Configuring the SfTreeMap Control
+## Configuring the WPF TreeMap Control
 
 ### Through Visual Studio
 
@@ -26,8 +26,8 @@ The [SfTreeMap](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.Sf
 
 1. Create a WPF project in Expression Blend and reference the following assemblies:
     1. Syncfusion.SfTreeMap.WPF
-2. Search for the SfTreeMap in the Toolbox.
-3. Drag the SfTreeMap to the designer. It will generate the SfTreeMap control with one child element.
+2. Search for the WPF TreeMap in the Toolbox.
+3. Drag the WPF TreeMap to the designer. It will generate the SfTreeMap control with one child element.
 
 
 ![Getting-Started_blendimage](Getting-Started_images/Getting-Started_img2.png)
@@ -174,8 +174,8 @@ TreeMap supports various built-in themes. Refer to the below links to apply them
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF SfTreeMap](Getting-Started_images/Theme.png).
+![Setting theme to WPF TreeMap](Getting-Started_images/Theme.png).
 
 ## See also
 
-[How to apply gradient color mapping to SfTreeMap](https://support.syncfusion.com/kb/article/8597/how-to-apply-gradientcolormapping-to-sftreemap).
+[How to apply gradient color mapping to WPF TreeMap](https://support.syncfusion.com/kb/article/8597/how-to-apply-gradientcolormapping-to-sftreemap).

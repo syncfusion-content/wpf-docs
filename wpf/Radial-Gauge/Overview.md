@@ -46,8 +46,8 @@ The [`Header`](https://help.syncfusion.com/wpf/radial-gauge/header) can be used 
 
 ## See also
 
-[How to apply themes for SfCircularGauge](https://support.syncfusion.com/kb/article/2832/how-to-apply-themes-for-sfcirculargauge)
+[How to apply themes for WPF Radial Gauge](https://support.syncfusion.com/kb/article/2832/how-to-apply-themes-for-sfcirculargauge)
 
-[How to prepare car dashboard demo using SfCircularGauge](https://support.syncfusion.com/kb/article/2720/how-to-prepare-car-dashboard-demo-using-sfcirculargauge)
+[How to prepare car dashboard demo using WPF Radial Gauge](https://support.syncfusion.com/kb/article/2720/how-to-prepare-car-dashboard-demo-using-sfcirculargauge)
 
 

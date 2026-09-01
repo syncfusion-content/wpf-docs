@@ -7,9 +7,9 @@ control: TileViewControl
 documentation: ug
 ---
 
-# TileViewItem Header in WPF TileView
+# TileViewItem Header in WPF Tile View Control
 
-This section explains how to set header text and UI customization of the `TileViewItem` header in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
+This section explains how to set header text and UI customization of the `TileViewItem` header in the [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ![TileViewItems with header text](TileViewHeader_images/Header_base.png)
 
