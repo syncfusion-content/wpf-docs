@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Input Message Tip in WPF Excel-like Grid | Syncfusion®
 description: Display and customize input message tips in Excel-like Grid for cells, rows, and columns using tooltips, templates, and runtime events.
@@ -35,7 +35,7 @@ grid.Model[1, 2].ShowDataValidationTooltip = true;
 
 {% endtabs %}
 
-![Input message tip for specific cell in WPF GridControl](Inputmessagetip_images/input-message-tip-cell.png)
+![Input message tip for specific cell](Inputmessagetip_images/input-message-tip-cell.png)
 
 ## Input Message Tip for row and column
 
@@ -57,7 +57,7 @@ grid.Model.ColStyles[1].ShowDataValidationTooltip = true;
 
 {% endtabs %}
 
-![Input message tip for specific row and column in WPF GridControl](Inputmessagetip_images/input-messagetip-rowcolumn.png)
+![Input message tip for specific row and column](Inputmessagetip_images/input-messagetip-rowcolumn.png)
 
 An another way to set the input message tip for specific row and column.
 
@@ -85,7 +85,7 @@ for (int i = 1; i <= 4; i++)
 
 {% endtabs %}
 
-![Input message tip for specific row and column in WPF GridControl](Inputmessagetip_images/input-messagetip-row-and-column.png)
+![Input message tip for specific row and column](Inputmessagetip_images/input-messagetip-row-and-column.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol-input-message)
 
@@ -118,7 +118,7 @@ private void Grid_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.
 
 {% endtabs %}
 
-![Input message tip for specific cell or row or column in WPF GridControl](Inputmessagetip_images/input-messagetip-in-querycellinfo.png)
+![Input message tip for specific cell or row or column](Inputmessagetip_images/input-messagetip-in-querycellinfo.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol-input-message)
 
@@ -138,7 +138,7 @@ grid.Model[1, 2].ShowDataValidationTooltip = false;
 
 ## Identify whether cell has Input Message Tip
 
-The [HasShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_HasShowDataValidationTooltip) property is used to identify whether the cell has an input message tip in a cell or row or column in GridControl. You can also highlight the cell or row or column applied to the input message tip.
+The [HasShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_HasShowDataValidationTooltip) property is used to identify whether the cell has an input message tip in a cell or row or column in Excel-like Grid. You can also highlight the cell or row or column applied to the input message tip.
 
 {% tabs %}
 
@@ -161,7 +161,7 @@ private void Grid_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.
 
 {% endtabs %}
 
-![Highlight the row applied to input message tip in WPF GridControl](Inputmessagetip_images/input-messagetip-highlight.png)
+![Highlight the row applied to input message tip](Inputmessagetip_images/input-messagetip-highlight.png)
 
 ## Customize the Input Message Tip
 
@@ -204,13 +204,13 @@ private void Grid_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.
 
 {% endtabs %}
 
-![Customize the input message tip for WPF GridControl](Inputmessagetip_images/input-messagetip-customization.png)
+![Customize the input message tip](Inputmessagetip_images/input-messagetip-customization.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol-input-message)
 
 ## Remove the Input Message Tip
 
-The `ResetValue()` method is used to remove the input message tip for specific cell or row or column in GridControl and to reset the input message value to the default values.
+The `ResetValue()` method is used to remove the input message tip for specific cell or row or column in Excel-like Grid and to reset the input message value to the default values.
 
 {% tabs %}
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Import from Excel in WPF Excel-like Grid | Syncfusion®
 description: Import Excel workbooks into Excel-like Grid with support for styles, formulas, conditional formatting, comments, hyperlinks, and freeze panes.
@@ -19,7 +19,7 @@ Essential<sup>®</sup> Grid WPF provides an in-built support for Excel Importing
 * Improving Performance—Excel Importing feature supports the virtualization. By using this you can optimize the performance.
 * Run-time Features—Imports the comments from the excel worksheet to GridControl.
 
-The following assemblies are needs to be added for importing the Excel to GridControl.
+The following assemblies are needs to be added for importing the Excel to Excel-like Grid.
 
 * Syncfusion.GridConverter.WPF
 * Syncfusion.XlsIO.Base
@@ -117,7 +117,7 @@ NA</td></tr>
 <tr>
 <td>
 ImportFromExcelToVirtualGrid</td><td>
-this method imports the entire workbook styles to the virtual GridControl</td><td>
+this method imports the entire workbook styles to the virtual Excel-like Grid</td><td>
 ImportFromExcelToVirtualGrid (IWorkbook book)</td><td>
 </td><td>
 GridModel[]</td><td>
@@ -125,7 +125,7 @@ NA</td></tr>
 <tr>
 <td>
 ImportFromExcelToVirtualGrid</td><td>
-this method imports the entire workbook styles to the virtual GridControl With the importing event handler.</td><td>
+this method imports the entire workbook styles to the virtual Excel-like Grid With the importing event handler.</td><td>
 ImportFromExcelToVirtualGrid (IWorkbook book, GridCellImportFromExcelHandler importhandler)</td><td>
 </td><td>
 GridModel[]</td><td>
@@ -133,7 +133,7 @@ NA</td></tr>
 <tr>
 <td>
 ConvertExcelRangeToVirtualGrid</td><td>
-this method imports a particular range of cells to the virtual GridControl</td><td>
+this method imports a particular range of cells to the virtual Excel-like Grid</td><td>
 ConvertExcelRangeToVirtualGrid(GridStyleInfo cell,IWorksheet sheet,IRange excelRange, GridCellImportFromExcelHandler importhandler)</td><td>
 </td><td>
 void</td><td>
@@ -163,9 +163,9 @@ NA</td></tr>
 
 ##  Adding Excel Importing to an Application 
 
-You can Import the entire Excel Spreadsheet to a GridControl. You can also import the Excel97to2003 and Excel2007to2010 formats
+You can Import the entire Excel Spreadsheet to a Excel-like Grid. You can also import the Excel97to2003 and Excel2007to2010 formats
 
-In order to import the single sheet to grid control, open the file and pass this file as stream to the ImportFromExcel method as illustrated in the following code snippet:
+In order to import the single sheet to Excel-like Grid, open the file and pass this file as stream to the ImportFromExcel method as illustrated in the following code snippet:
 
 {% tabs %}
 {% highlight c# %}
@@ -178,9 +178,9 @@ this.gridControl.Model.ImportFromExcel(new MemoryStream(file));
 {% endtabs %}
 
 
-### Importing the entire workbook to a GridControl
+### Importing the entire workbook to a Excel-like Grid
 
-To import the entire workbook to a GridControl, initially you have to open the workbook by using the XlsIO library as shown in the following code snippet:
+To import the entire workbook to a Excel-like Grid, initially you have to open the workbook by using the XlsIO library as shown in the following code snippet:
 
 {% tabs %}
 {% highlight c# %}
@@ -206,9 +206,9 @@ GridModel[] modelCollection = GridModelImportExtensions.ImportFromExcel(workBook
 {% endhighlight  %}
 {% endtabs %}
 
-### Importing the entire workbook to a virtual GridControl
+### Importing the entire workbook to a virtual Excel-like Grid
 
-To import the entire workbook to a virtual GridControl, initially you have to open the workbook by using the XlsIO library as shown in the following code snippet. 
+To import the entire workbook to a virtual Excel-like Grid, initially you have to open the workbook by using the XlsIO library as shown in the following code snippet. 
 
 {% tabs %}
 {% highlight c# %}
@@ -267,7 +267,7 @@ gridModel.Data[e.Cell.RowIndex, e.Cell.ColumnIndex] = e.Style.Store;
 
 ### Change the CellType while importing the Workbook?
 
-You can also change the cell type and other styles while importing the workbook to GridControl, for that you have to pass the delegate handler in the importing method as shown in the following code snippet.
+You can also change the cell type and other styles while importing the workbook to Excel-like Grid, for that you have to pass the delegate handler in the importing method as shown in the following code snippet.
 
 {% tabs %}
 {% highlight c# %}
@@ -295,7 +295,7 @@ e.Handled = true;
 {% endhighlight  %}
 {% endtabs %}
 
-### Enable the ExcelLikeFrozen Row and Column in a GridControl
+### Enable the ExcelLikeFrozen Row and Column in a Excel-like Grid
 
 To enable the thick borders to indicate the Excel like freeze panes, you have to set the ExcelLikeFreezePane property as true as show in the following code snippet.
 
@@ -305,7 +305,7 @@ grid.Model.Options.ExcelLikeFreezePane = true;
 {% endhighlight  %}
 {% endtabs %}
 
-### Enable the comment service in GridControl
+### Enable the comment service in Excel-like Grid
 
 To enable the comment service you have to set the attached property show comment service as true as shown in the following code snippet.
 

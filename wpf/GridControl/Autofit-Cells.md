@@ -9,13 +9,13 @@ documentation: ug
 
 # Autofit Cells in WPF Excel-like Grid
 
-GridControl provides support to autofit rows and columns based on the content of cells.
+The Excel-like Grid provides support to autofit rows and columns based on the content of cells.
 
 ## Autofit row height
 
-GridControl provides the support to auto fit the row height based on content of the cells using [ResizeRowsToFit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_ResizeRowsToFit_Syncfusion_Windows_Controls_Grid_GridRangeInfo_Syncfusion_Windows_Controls_Grid_GridResizeToFitOptions_) method which accepts the following parameters,
+The Excel-like Grid provides the support to auto fit the row height based on content of the cells using [ResizeRowsToFit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_ResizeRowsToFit_Syncfusion_Windows_Controls_Grid_GridRangeInfo_Syncfusion_Windows_Controls_Grid_GridResizeToFitOptions_) method which accepts the following parameters,
 
-* [GridRangeInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridRangeInfo.html) - Specifies the range where `GridControl` auto fits the rows based on the cell content.
+* [GridRangeInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridRangeInfo.html) - Specifies the range where `Excel-like Grid` auto fits the rows based on the cell content.
 * [GridResizeToFitOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridResizeToFitOptions.html) - Specifies the auto fit settings to customize the auto fit behavior.
 
 {% tabs %}
@@ -40,9 +40,9 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/fit-the-column-
 
 ## Autofit column width
 
-GridControl provides the support to auto fit the column width based on content of the cells using [ResizeColumnsToFit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_ResizeColumnsToFit_Syncfusion_Windows_Controls_Grid_GridRangeInfo_Syncfusion_Windows_Controls_Grid_GridResizeToFitOptions_) method which accepts the following parameters,
+The Excel-like Grid provides the support to auto fit the column width based on content of the cells using [ResizeColumnsToFit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_ResizeColumnsToFit_Syncfusion_Windows_Controls_Grid_GridRangeInfo_Syncfusion_Windows_Controls_Grid_GridResizeToFitOptions_) method which accepts the following parameters,
 
-* [GridRangeInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridRangeInfo.html) - Specifies the range where `GridControl` auto fits the columns based on the cell content.
+* [GridRangeInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridRangeInfo.html) - Specifies the range where `Excel-like Grid` auto fits the columns based on the cell content.
 * [GridResizeToFitOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridResizeToFitOptions.html) - Specifies the auto fit settings to customize the auto fit behavior.
 
 {% tabs %}
@@ -99,7 +99,7 @@ autofit the columns or rows before the last one also.</td></tr>
 <tr>
 <td>
 IncludeHiddenCells</td><td>
-This option includes the hidden cells while auto fitting the cells. By default, visible cells only will be auto fitted and if you want to autofit all the cells including hidden cells in `GridControl`, then need to use this option.</td></tr>
+This option includes the hidden cells while auto fitting the cells. By default, visible cells only will be auto fitted and if you want to autofit all the cells including hidden cells in `Excel-like Grid`, then need to use this option.</td></tr>
 </table>
 
 ## Autofit Cells based on Wrap Text
@@ -119,7 +119,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/fit-the-column-
 
 ## How to avoid rendering issues due to fractions when auto fit the cells
 
-When you autofit the cells, you may face scrolling and rendering issues in GridControl. You can set [GridColumnAutoSizer.CanRoundCalculation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridColumnAutoSizer.html#Syncfusion_Windows_Controls_Grid_GridColumnAutoSizer_CanRoundCalculation) to `true` to avoid rendering issues if needed.
+When you autofit the cells, you may face scrolling and rendering issues in the Excel-like Grid. You can set [GridColumnAutoSizer.CanRoundCalculation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridColumnAutoSizer.html#Syncfusion_Windows_Controls_Grid_GridColumnAutoSizer_CanRoundCalculation) to `true` to avoid rendering issues if needed.
 
 {% tabs %}
 {% highlight c# %}
@@ -131,7 +131,7 @@ GridColumnAutoSizer.CanRoundCalculation = true;
 
 ## Change the size of row height and column width to fit all cells in View
 
- When GridControl is placed inside custom control and if you want to auto fit the row/column size of GridControl based on custom control resized position, then you can invoke [SizeChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.sizechanged?view=netframework-4.8) event of GridControl and set the [RowHeights](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_RowHeights) and [ColumnWidths](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_ColumnWidths) property of [GridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html) to the resized height/width.
+ When the Excel-like Grid is placed inside a custom control and you want to auto fit its row/column size based on the custom control’s resized position, then you can invoke the [SizeChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.sizechanged?view=netframework-4.8) event and set the [RowHeights](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_RowHeights) and [ColumnWidths](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_ColumnWidths) property of [GridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html) to the resized height/width.
 
 {% tabs %}
 {% highlight c# %}
@@ -160,4 +160,4 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/fit-the-columns
 
 ## See also
 
-[How to auto fit all the columns in a GridControl based on the Window size](https://www.syncfusion.com/kb/7810)
+[How to auto fit all the columns based on the Window size](https://www.syncfusion.com/kb/7810)

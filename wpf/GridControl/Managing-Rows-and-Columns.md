@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Managing Rows and Columns in WPF Excel-like Grid | Syncfusion®
 description: Manage rows and columns in Excel-like Grid with support for sizing, hiding, freezing, resizing, inserting, moving, and removing rows and columns.
@@ -9,13 +9,13 @@ documentation: ug
 
 # Managing Rows and Columns in WPF Excel-like Grid
 
-This section explains about Managing the rows and columns of WPF GridControl.
+This section explains about Managing the rows and columns of WPF Excel-like Grid.
 
-Each Grid instance is tied to a model, which contains the data represented by the Grid control. The grid model exposes properties that allow the user to manipulate grid rows and columns.
+Each Grid instance is tied to a model, which contains the data represented by the Excel-like Grid. The grid model exposes properties that allow the user to manipulate grid rows and columns.
 
 ## Rows and columns count
 
-The grid model has RowCount and ColumnCount properties. These can be set to change the number of rows and columns in the grid control, as shown below:
+The grid model has RowCount and ColumnCount properties. These can be set to change the number of rows and columns in the Excel-like Grid, as shown below:
 
 {% tabs %}
 {% highlight c# %}
@@ -46,7 +46,7 @@ grid.Model.RowHeights[3] = 40;
 {% endhighlight  %}
 {% endtabs %}
 
-![Setting Row heights and Column widths in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img1.jpeg)
+![Setting Row heights and Column widths](Working-with-Grid_images/Working-with-Grid_img1.jpeg)
 
 You can also specify the DefaultLineSize setting on ColumnWidths and RowHeights in order to set the default width or height.
 
@@ -89,7 +89,7 @@ grid.Model.ColumnWidths.SetHidden(1010, 10000, false);
 {% endhighlight  %}
 {% endtabs %}
 
-![Hiding rows and columns in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img2.jpeg)
+![Hiding rows and columns](Working-with-Grid_images/Working-with-Grid_img2.jpeg)
 
 ## Freeze rows and columns
 
@@ -103,7 +103,7 @@ grid.Model.FrozenColumns = 3;
 {% endhighlight  %}
 {% endtabs %}
 
-![Frozen rows and columns in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img3.jpeg)
+![Frozen rows and columns](Working-with-Grid_images/Working-with-Grid_img3.jpeg)
 
 You can also fix rows to the right of the grid and columns to the bottom. Such fixed rows and columns are referred to as Footer rows and Footer columns. The properties FooterRows and FooterColumns determine the number of footer rows and footer columns. The footer row or column can be customized by using the FooterStyle property.
 
@@ -118,7 +118,7 @@ grid.Model.FooterStyle.Background = Brushes.LightCoral;
 {% endhighlight  %}
 {% endtabs %}
 
-![Footer rows and footer columns in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img4.jpeg)
+![Footer rows and footer columns](Working-with-Grid_images/Working-with-Grid_img4.jpeg)
 
 ## Header rows and columns
 
@@ -135,16 +135,16 @@ grid.Model.HeaderStyle.Font.FontStyle = FontStyles.Italic;
 {% endhighlight  %}
 {% endtabs %}
 
-![Header rows and header columns in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img5.jpeg)
+![Header rows and header columns](Working-with-Grid_images/Working-with-Grid_img5.jpeg)
 
 ## Resize rows and columns
 
 Grid allows the user to resize the rows and columns at run time. When this feature is enabled and if you move the mouse over the row or column divider, it will show a resize cursor using which you can resize the row or column to the required level. The following images illustrate the resizing of a column and a row:
 
 
-![Column Resizing in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img6.jpeg)
+![Column Resizing](Working-with-Grid_images/Working-with-Grid_img6.jpeg)
 
-![Row Resizing in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img7.jpeg)
+![Row Resizing](Working-with-Grid_images/Working-with-Grid_img7.jpeg)
 
 This feature is turned on by default. To disable column or row resizing, you need to detach the corresponding mouse controllers from grid, as shown below:
 
@@ -183,9 +183,9 @@ grid.Model.InsertRows(5, 2);
 {% endhighlight  %}
 {% endtabs %}
 
-![Inserted new Column at index 2 in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img8.jpeg)
+![Inserted new Column at index 2](Working-with-Grid_images/Working-with-Grid_img8.jpeg)
 
-![Inserted new Row at index 7 in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img9.jpeg)
+![Inserted new Row at index 7](Working-with-Grid_images/Working-with-Grid_img9.jpeg)
 
 N> You can track the moment the rows or columns are inserted by handling the RowsInserted and ColumnsInserted events.
 
@@ -216,7 +216,7 @@ grid.Model.MoveColumns(1, 2, 4);
 {% endhighlight  %}
 {% endtabs %}
 
-![Moving rows and columns in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img10.jpeg)
+![Moving rows and columns](Working-with-Grid_images/Working-with-Grid_img10.jpeg)
 
 N> You can track the moment the rows or columns are moved by handling the RowsMoved and  ColumnsMoved event.
 
@@ -239,7 +239,7 @@ grid.Model.RemoveColumns(2, 3);
 {% endhighlight  %}
 {% endtabs %}
 
-![Removing columns 2, 3 and 4 in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img11.jpeg)
+![Removing columns 2, 3 and 4](Working-with-Grid_images/Working-with-Grid_img11.jpeg)
 
 You can track the moment the rows or columns are inserted by handling the RowsRemoved and ColumnsRemoved events.
 

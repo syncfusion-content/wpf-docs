@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Selection in WPF Excel-like Grid | Syncfusion®
 description: Select cells, rows, columns, and records in Excel-like Grid with range selection, record selection, selection customization, and Excel-like selection features.
@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection in WPF Excel-like Grid
 
-WPF GridControl supports for range and record selection modes. Selection will highlight the specified range. 
+WPF Excel-like Grid supports for range and record selection modes. Selection will highlight the specified range. 
 
 ## Selection modes
 
-There are two modes of selection available in the GridControl. They are,
+There are two modes of selection available in the Excel-like Grid. They are,
 
 * Range selection
 * Record selection 

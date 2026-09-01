@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Covered Ranges in WPF Excel-like Grid | Syncfusion®
 description: Create, manage, find, extend, and remove covered cell ranges in Excel-like Grid using covered ranges, events, and runtime customization.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Covered Ranges in WPF Excel-like Grid
 
-This section explains the covered range of cells in WPF GridControl.
+This section explains the covered range of cells in WPF Excel-like Grid.
 
 ## Creating covered cells
 
@@ -53,7 +53,7 @@ private void Grid_QueryCoveredRange(object sender, Syncfusion.Windows.Controls.G
 
 {% endtabs %}
 
-![Create the covered range in WPF GridControl](Coveredranges_images/wpf-gridcontrol-coveredcells.png)
+![Create the covered range](Coveredranges_images/wpf-gridcontrol-coveredcells.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol-coveredcells)
 
@@ -76,7 +76,7 @@ MessageBox.Show("Cover range for cell (2,3) is " + "R" + coverRanges.Left + "C" 
 
 {% endtabs %}
 
-![Find the covered range in WPF GridControl](Coveredranges_images/wpf-gridcontrol-findrange.png)
+![Find the covered range](Coveredranges_images/wpf-gridcontrol-findrange.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol-coveredcells)
 

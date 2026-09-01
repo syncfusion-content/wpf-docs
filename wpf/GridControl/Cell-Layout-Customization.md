@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Cell Layout Customization in WPF Excel-like Grid | Syncfusion®
 description: Customize cell layouts in Excel-like Grid using covered cells, banner cells, overlapping cells, graphic cells, and custom cell rendering options.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Cell Layout Customization in WPF Excel-like Grid
 
-This section explains the Covered Cells, Banner Cells, Overlapping Cells and Graphic cell of the WPF GridControl.
+This section explains the Covered Cells, Banner Cells, Overlapping Cells and Graphic cell of the WPF Excel-like Grid.
 
 ## Covered Cells
 
@@ -52,7 +52,7 @@ cell.HorizontalAlignment = HorizontalAlignment.Center;
 
 The following output is generated using the code above.
 
-![Cells spanned in rows or column in WPF GridControl](Celllayout_images/covered_cells.jpeg)
+![Cells spanned in rows or column](Celllayout_images/covered_cells.jpeg)
 
 ## Banner Cells
 
@@ -102,7 +102,7 @@ void grid_QueryCellSpanBackgrounds(object sender, GridQueryCellSpanBackgroundsEv
 
 The following output is generated using the code above.
 
-![Cell spans with gradient background in WPF GridControl](Celllayout_images/banner_cells.jpeg)
+![Cell spans with gradient background](Celllayout_images/banner_cells.jpeg)
 
 
 ## Overlapping Cells 
@@ -129,7 +129,7 @@ grid.Model.Options.FloodCell = false;
 {% endhighlight  %}
 {% endtabs %}
 
-![Overlapping cells in WPF GridControl](Celllayout_images/overlapping_cells.png)
+![Overlapping cells](Celllayout_images/overlapping_cells.png)
 
 
 ### Properties
@@ -185,7 +185,7 @@ this.grid.Model.Options.EnableFloatingCell = true;
 
 ## Graphic Cell
 
-A graphic cell is a special type of cell that helps users render any content over the Grid control regardless of the underlying cell. Graphic cells have a separate style info class and model (GraphicModel) which is used to decide the styles and behaviors of graphic cells and their content.
+A graphic cell is a special type of cell that helps users render any content over the Excel-like Grid regardless of the underlying cell. Graphic cells have a separate style info class and model (GraphicModel) which is used to decide the styles and behaviors of graphic cells and their content.
 
 ### GraphicStyleInfo Properties
 
@@ -266,7 +266,7 @@ VerticalAlignment</td></tr>
 
 ### Cell Types
 
-The Grid control allows any controls to be loaded inside graphic cells. This greatly improves the usability and appearance of the Grid control. This attribute of a grid cell is referred to as its cell type.
+The Excel-like Grid allows any controls to be loaded inside graphic cells. This greatly improves the usability and appearance of the Excel-like Grid. This attribute of a grid cell is referred to as its cell type.
 
 #### Built-in Cell Types
 
@@ -278,7 +278,7 @@ Graphic cells have built-in support for the following cell types:
 
 ### Image Cell
 
-The image cell type is used to load images inside graphic cells. To load the graphic image cell in the Grid control you have to set the CellType as ImageCell and the CellValue as BitmapImage as shown in the following code sample.
+The image cell type is used to load images inside graphic cells. To load the graphic image cell in the Excel-like Grid you have to set the CellType as ImageCell and the CellValue as BitmapImage as shown in the following code sample.
 
 {% tabs %}
 {% highlight c# %}
@@ -290,11 +290,11 @@ style.CellValue = bi;
 {% endtabs %}
 
 
-![Image Graphic Cell in WPF GridControl](Celllayout_images/image_graphic_cell.png)
+![Image Graphic Cell](Celllayout_images/image_graphic_cell.png)
 
 ### RichTextBox Cell
 
-The RichTextBox cell type is used to load a rich text box inside graphic cells. To load the rich text box over the Grid control, you have to set the CellType as RichTextBox and the CellValue as FlowDocument as shown in the following code sample.
+The RichTextBox cell type is used to load a rich text box inside graphic cells. To load the rich text box over the Excel-like Grid, you have to set the CellType as RichTextBox and the CellValue as FlowDocument as shown in the following code sample.
 
 {% tabs %}
 {% highlight c# %}
@@ -325,7 +325,7 @@ style.CellValue = _flowDocument;
 {% endhighlight %}
 {% endtabs %}
 
-![RichTextBox Graphic Cell in WPF GridControl](Celllayout_images/textbox_graphic_cell.png)
+![RichTextBox Graphic Cell](Celllayout_images/textbox_graphic_cell.png)
 
 ### Custom Cell Types
 
@@ -398,7 +398,7 @@ void</td></tr>
 
 ### Custom Graphic Chart Cell Renderer
 
-This cell displays a chart control over the grid cells as seen in Microsoft Excel when importing an Excel file to the Grid control. To render the Chart control over the Grid control, you need to derive from the GraphicCellModel and GraphicCellRendererBase classes.
+This cell displays a chart control over the grid cells as seen in Microsoft Excel when importing an Excel file to the Excel-like Grid. To render the Chart control over the Excel-like Grid, you need to derive from the GraphicCellModel and GraphicCellRendererBase classes.
 
 #### CellModel class
 
@@ -444,7 +444,7 @@ public class GraphicChartCellRenderer : GraphicCellRendererBase<Chart>
 {% endhighlight %}
 {% endtabs %}
 
-The ChartExtensions class is used to create the Chart control (Syncfusion.Windows.Chart) from the IChartShape object (Syncfusion.XlsIO.IChartShape). While importing the Excel file to the Grid control, the chart in the Excel file is added to the graphic cell collection and the cell value is set as IChartShape.
+The ChartExtensions class is used to create the Chart control (Syncfusion.Windows.Chart) from the IChartShape object (Syncfusion.XlsIO.IChartShape). While importing the Excel file to the Excel-like Grid, the chart in the Excel file is added to the graphic cell collection and the cell value is set as IChartShape.
 
 {% tabs %}
 {% highlight c# %}
@@ -665,11 +665,11 @@ GraphicCommitCellInfoEventArgs</td><td>
 This event is similar to the CommittedCellInfo event in GridModel. The changes made in the graphic cell will be saved by the GraphicCommittedCellInfo event.</td></tr>
 </table>
 
-### Adding Graphic Cell to the Grid Control
+### Adding Graphic Cell to the Excel-like Grid
 
-To add the graphic cell to the Grid control, you have to create the instance for GraphicCellSpanInfo and add that object to the GraphicCells collection in the GraphicModel. For the GraphicCellSpanInfo constructor you have to pass the row index and column index (which will decide the starting point of the graphic cell) along with the height and width of the graphic cell. 
+To add the graphic cell to the Excel-like Grid, you have to create the instance for GraphicCellSpanInfo and add that object to the GraphicCells collection in the GraphicModel. For the GraphicCellSpanInfo constructor you have to pass the row index and column index (which will decide the starting point of the graphic cell) along with the height and width of the graphic cell. 
 
-The following code sample demonstrates adding GraphicCell to the Grid control through GraphicModel.
+The following code sample demonstrates adding GraphicCell to the Excel-like Grid through GraphicModel.
 
 {% tabs %}
 {% highlight c# %}
@@ -678,11 +678,11 @@ this.grid.Model.GraphicModel.GraphicCells.Add(cellspan);
 {% endhighlight  %}
 {% endtabs %}
 
-![Graphic Cell in WPF GridControl](Celllayout_images/graphic_cell.png)
+![Graphic Cell](Celllayout_images/graphic_cell.png)
 
 #### Setting Cell Type to the Graphic Cell
 
-After adding the graphic cell to GraphicModel you can see the empty cell over the Grid control in the specified position. Now you have set the CellType, CellValue, and other style information by accessing the GraphicStyleInfo from GraphicModel. You can get the graphic cell style from the GraphicModel by passing the row and column index. Then by using that style you can set the cell type, cell values and other customization options for the Graphic cell, as shown in the following code sample.
+After adding the graphic cell to GraphicModel you can see the empty cell over the Excel-like Grid in the specified position. Now you have set the CellType, CellValue, and other style information by accessing the GraphicStyleInfo from GraphicModel. You can get the graphic cell style from the GraphicModel by passing the row and column index. Then by using that style you can set the cell type, cell values and other customization options for the Graphic cell, as shown in the following code sample.
 
 {% tabs %}
 {% highlight c# %}
@@ -693,6 +693,6 @@ style.CellValue = bi;
 {% endhighlight  %}
 {% endtabs %}
 
-![Image Graphic Cell in WPF GridControl](Celllayout_images/graphic_cell_with_image.png)
+![Image Graphic Cell](Celllayout_images/graphic_cell_with_image.png)
 
 If you do not set the offset value in the GraphicCellSpanInfo object, the control inside the graphic cells will be loaded in the starting position of the row and column index. By setting the offset value in the GraphicCellSpanInfo you can place the control anywhere in the cell.

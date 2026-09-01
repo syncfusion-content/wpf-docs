@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Serialization in WPF Excel-like Grid | Syncfusion®
 description: Serialize and deserialize Excel-like Grid data, layout, and settings using XML files, streams, and strings to persist grid state at runtime.
@@ -9,17 +9,17 @@ documentation: ug
 
 # Serialization in WPF Excel-like Grid
 
-Essential<sup>®</sup> GridControl supports Serialization. The whole grid can be serialized and deserialized at run-time. 
+Essential<sup>®</sup> Excel-like Grid supports Serialization. The whole grid can be serialized and deserialized at run-time. 
 
 ## Use Case Scenarios
 
-Serialization can be implemented for the applications which need to save its data and structure after the application is closed. Serialization supports to save the structure and data of the GridControl to an XML file and it can be loaded at any time.
+Serialization can be implemented for the applications which need to save its data and structure after the application is closed. Serialization supports to save the structure and data of the Excel-like Grid to an XML file and it can be loaded at any time.
 
 ## Adding Serialization to an Application 
 
 The following sample application explains the implementation of the Serialization support to GirdControl.
 
-1.Create an application. Create a WPF application and add the GridControl to it. 
+1.Create an application. Create a WPF application and add the Excel-like Grid to it. 
 2.Call the Serialization support methods
 
 In the application, create three buttons. The first button to call the Serialize() method, the second button to make changes to the Grid and the third button is to call the Deserialize() method. The following code snippet explains the implementation of Serialization.
@@ -39,11 +39,11 @@ this.grid.Model.Deserialize("Data.xml");
 
 3.Run the application
 
-Run the application. Click the Serialize button to serialize the initial load; this creates an XML file and saves it. Click the second button ModifyGridStyle to make some changes in the GridControl. Now click the Deserialize button which restores the old settings of the GridControl. 
+Run the application. Click the Serialize button to serialize the initial load; this creates an XML file and saves it. Click the second button ModifyGridStyle to make some changes in the Excel-like Grid. Now click the Deserialize button which restores the old settings of the Excel-like Grid. 
 
 ### Supported Properties for Serialization
 
-The following properties are Serialized in the GridControl.
+The following properties are Serialized in the Excel-like Grid.
 
 * RowCount
 * ColCount
@@ -80,14 +80,14 @@ Return Type </th></tr>
 <tr>
 <td>
 Serialize()</td><td>
-A virtual method called to Serialize the GridControl. It stores the settings in an XML file named as specified in its parameter.</td><td>
-string  fileName</td><td>
+A virtual method called to Serialize the Excel-like Grid. It stores the settings in an XML file named as specified in its parameter.</td><td>
+string fileName</td><td>
 public</td><td>
 void</td></tr>
 <tr>
 <td>
 Deserialize()</td><td>
-A virtual method called to Deserialize the GridControl. It restores the settings in an XML file named as specified in its parameter.</td><td>
+A virtual method called to Deserialize the Excel-like Grid. It restores the settings in an XML file named as specified in its parameter.</td><td>
 string  fileName</td><td>
 public</td><td>
 void</td></tr>

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: About Syncfusion® WPF Excel-like Grid | Syncfusion®
 description: Learn about the overview of Syncfusion® Essential Studio WPF Excel-like Grid, its features and more details.
@@ -17,9 +17,9 @@ With this version, our core focus has been on the underlying architecture for di
 
 ## Key Features
 
-The Excel like WPF grid control (virtual grid) is a cell-oriented control for displaying tabular data. It does not make any assumptions regarding the structure of the data. 
+The Excel-like WPF Grid (virtual grid) is a cell-oriented control for displaying tabular data. It does not make any assumptions regarding the structure of the data. 
 
-Below are key features of WPF Grid Control:
+Below are key features of the WPF Excel-like Grid:
 
 * Easy APIs to add, delete, or move rows and columns – You can easily add, delete, or move rows and columns throughout the Grid control using its well-defined APIs.
 * Clipboard Support – Essential<sup>®</sup> Grid provides excellent clipboard support that allows users to copy and paste grid cell content to text or any format.
@@ -44,9 +44,9 @@ Below are key features of WPF Grid Control:
 
 This section provides basic information, such as definitions and usage, regarding important features of Essential<sup>®</sup> Grid.
 
-### Grid Control Features
+### Excel-like Grid Features
 
-The Grid control is a cell-based, data-representation control. It can load millions of rows very quickly and is very easy to customize. The following features are just a sampling of what you can expect from Essential<sup>®</sup> Grid.
+The Excel-like Grid is a cell-based, data-representation control. It can load millions of rows very quickly and is very easy to customize. The following features are just a sampling of what you can expect from Essential<sup>Â®</sup> Grid.
 
 #### Data Population and Virtual Mode
 
@@ -59,9 +59,9 @@ Virtual Grid
 
 #### Data Presentation and Formatting
 
-The Grid control supports many cell types to present data. In addition to built-in cell types, any WPF control or any custom control can be placed inside a cell by using a data-template cell.
+The grid supports many cell types to present data. In addition to built-in cell types, any WPF control or any custom control can be placed inside a cell by using a data-template cell.
 
-![Various Cell Types of the Grid Control](Overview_images/Overview_img5.png)
+![Various Cell Types](Overview_images/Overview_img5.png)
 
 #### Appearance
 
@@ -69,14 +69,14 @@ The Grid control’s appearance can be customized very easily. Common style prop
 
 ![Common customization of grid cells](Overview_images/Overview_img6.png)
 
-#### Customization Possibilities of the Grid Control
+#### Customization Possibilities of the Excel-like Grid
 
-* Excel-Like Behaviors: The Grid control supports most Excel behaviors, including the following:
-* Various Cell Support: Cells in the Grid control are very similar to Excel cells. Unique cells such as covered cells and floating cells are supported.
-* Formula Support: The Grid control supports Excel-like formulas in each cell. The control comes with an extensive formula function library that supports more than 150 built-in formulas. 
-* Printing: The Grid control provides built-in support for printing grid content.
-* Excel-Like Interactions: The Grid control supports Excel-like user interaction features such as cell range drag-and-drop, auto-fill selections, and visual indicators to show hidden rows and columns.
-* Excel-Like Rows and Columns: The Grid control provides various row and column options such as interactive column rearranging with drag-and-drop operations; hiding or displaying a range of rows and columns; resizing row heights and column widths to fit cell content; and options to fix rows and columns to the left, right, top, or bottom of the grid, similar to freezing panes in Excel.
+* Excel-Like Behaviors: The grid supports most Excel behaviors, including the following:
+* Various Cell Support: Cells in the grid are very similar to Excel cells. Unique cells such as covered cells and floating cells are supported.
+* Formula Support: The grid supports Excel-like formulas in each cell. The control comes with an extensive formula function library that supports more than 150 built-in formulas. 
+* Printing: The grid provides built-in support for printing grid content.
+* Excel-Like Interactions: The grid supports Excel-like user interaction features such as cell range drag-and-drop, auto-fill selections, and visual indicators to show hidden rows and columns.
+* Excel-Like Rows and Columns: The grid provides various row and column options such as interactive column rearranging with drag-and-drop operations; hiding or displaying a range of rows and columns; resizing row heights and column widths to fit cell content; and options to fix rows and columns to the left, right, top, or bottom of the grid, similar to freezing panes in Excel.
 * Excel-Like key navigation:
 * Arrow keys – To move current cell focus.
 * PageUp/PageDown – To scroll a grid by page.
@@ -87,9 +87,9 @@ The Grid control’s appearance can be customized very easily. Common style prop
 * CTRL+X, CTRL+V, CTRL+C, INSERT & DELETE – For common clipboard operations.
 * Cell Selection – The Grid control also supports Excel-like cell selection.
 
-![Excel Features of the Grid Control](Overview_images/Overview_img7.png)
+![Excel Features](Overview_images/Overview_img7.png)
 
 #### Excel Compatibility
 
 * Import Options: The import feature allows an Excel workbook to be imported into a grid while preserving the workbook’s look and feel. The following items can be imported: entire spreadsheets, formulas, styles, conditional formats, frozen panes, backgrounds, foregrounds, and comments.
-* Export Options: The Grid control provides inherent support for exporting content to Excel files (.xls and .xlsx format) and to .csv files. 
+* Export Options: The grid provides inherent support for exporting content to Excel files (.xls and .xlsx format) and to .csv files. 

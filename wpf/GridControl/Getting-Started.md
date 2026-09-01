@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with WPF Excel-like Grid | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF Excel-like Grid. Explore setup, data population, configuration, examples, and customization options.
@@ -15,39 +15,39 @@ Syncfusion<sup>®</sup> WPF suite comes up with a package of powerful grid contr
 
 The Essential Studio<sup>®</sup> for WPF is comprised of following three types of grid controls:
 
-* [Grid Control](https://www.syncfusion.com/wpf-controls/excel-like-grid)
+* [Excel-like Grid](https://www.syncfusion.com/wpf-controls/excel-like-grid)
 * [SfDataGrid](https://www.syncfusion.com/wpf-controls/datagrid) and GridDataControl (classic)
 * [SfTreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) and GridTreeControl (classic)
 
 N> Refer [Choose between different Grid's](https://help.syncfusion.com/wpf/datagrid/overview#choose-between-different-grids) to take closer look at the characteristics of each of these controls. 
 
-## Adding the Grid Control to a WPF Application
+## Adding the Excel-like Grid to a WPF Application
 
-In this section, we will see how to add the Grid control to a WPF application and load random data. The Grid control can be added to an application through one of the following methods: through a designer or programmatically.
+In this section, we will see how to add the Excel-like Grid to a WPF application and load random data. The grid can be added to an application through one of the following methods: through a designer or programmatically.
 
-### Adding the Grid Control through a Designer
+### Adding the Excel-like Grid through a Designer
 
-Please follow the steps below to add the Grid control through a designer.
+Please follow the steps below to add the grid through a designer.
 
 1. Create new WPF application.
 
 2. Open the Designer window.
 
-3. Drag ScrollViewer from the Toolbox and drop it in the Designer window (Since the Grid control doesn’t have a built-in ScrollViewer, to make the grid flow based on data, the grid should be placed inside the ScrollViewer control.
+3. Drag ScrollViewer from the Toolbox and drop it in the Designer window (Since the grid doesn’t have a built-in ScrollViewer, to make the grid flow based on data, the grid should be placed inside the ScrollViewer control.
 
    ![WPF Designer](Getting-Started_images/Getting-Started_img6.png)
 
-4. Drag GridControl from the Toolbox and drop it inside the ScrollViewer.
+4. Drag the Excel-like Grid from the Toolbox and drop it inside the ScrollViewer.
 
-   ![WPF Grid Control](Getting-Started_images/Getting-Started_img7.png)
+   ![Excel-like Grid in the Toolbox](Getting-Started_images/Getting-Started_img7.png)
 
-5. Once you drag GridControl and drop it in ScrollViewer, the grid control will be added to the designer and its dependent assemblies will be added to the project.
+5. Once you drop it in the ScrollViewer, the grid will be added to the designer and its dependent assemblies will be added to the project.
 
-   ![Designer after Dropping GridControl](Getting-Started_images/Getting-Started_img8.png)
+   ![Designer after dropping the grid](Getting-Started_images/Getting-Started_img8.png)
 
-### Programmatically Adding the Grid Control
+### Programmatically Adding the Excel-like Grid
 
-Instead of adding it through a designer such a Visual Studio, you can add the Grid control programmatically.
+Instead of adding it through a designer such a Visual Studio, you can add the Excel-like Grid programmatically.
 
 1. Create a new WPF application.
 
@@ -57,7 +57,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
    * Syncfusion.GridCommon.Wpf.dll
    * Syncfusion.Shared.Wpf.dll
 
-    ![WPF Grid Control Assembly References](Getting-Started_images/Getting-Started_img9.png)
+    ![Assembly References](Getting-Started_images/Getting-Started_img9.png)
 
 3. Name the root Grid as layoutRoot in the application’s XAML page.
 
@@ -78,7 +78,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
       
 4. Create ScrollViewer and GridControl in code. 
 
-5. To add the grid to the view, add GridControl as content of ScrollViewer and then add the ScrollViewer as a child of layoutRoot (Grid).
+5. To add the grid to the view, add Excel-like Grid as content of ScrollViewer and then add the ScrollViewer as a child of layoutRoot (Grid).
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -87,7 +87,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 ScrollViewer ScrollViewer = new ScrollViewer();
 //GridControl defined here
 GridControl gridControl = new GridControl();
-//GridControl set as the content of the ScrollViewer
+//Excel-like Grid set as the content of the ScrollViewer
 ScrollViewer.Content = gridControl;     
 //To bring the Grid control to the view, ScrollViewer should be set as a child of LayoutRoot      
 this.layoutRoot.Children.Add(ScrollViewer);           
@@ -96,11 +96,11 @@ this.layoutRoot.Children.Add(ScrollViewer);           
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Populating the Grid control with Data
+## Populating the Excel-like Grid with Data
 
-The Grid control is a cell-based control, so to populate it, RowCount and ColumnCount are mandatory. Once ColumnCount and RowCount are specified, data can be populated by using one of the following methods. 
+The Excel-like Grid is a cell-based control, so to populate it, RowCount and ColumnCount are mandatory. Once ColumnCount and RowCount are specified, data can be populated by using one of the following methods. 
 
-1. You can populate data by looping through the cells in the Grid control. The following code explains this scenario.
+1. You can populate data by looping through the cells. The following code explains this scenario.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -123,7 +123,7 @@ for (int i = 0; i < 100; i++)
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-2. You can populate data by handling the QueryCellInfo event of gridControl. This will load the data in and on-demand basis, ensuring optimized performance.
+2. You can populate data by handling the QueryCellInfo event of Excel-like Grid. This will load the data in and on-demand basis, ensuring optimized performance.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -146,7 +146,7 @@ void gridControl_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Gri
 
 3.Now, run the application. The grid will appear as follows. 
 
-![WPF Grid Control](Getting-Started_images/Getting-Started_img10.png)
+![Initialized grid](Getting-Started_images/Getting-Started_img10.png)
 
    
 

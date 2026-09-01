@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Virtualization in WPF Excel-like Grid | Syncfusion®
 description: Improve Excel-like Grid performance with virtual mode, virtual cells for on-demand data loading, optimized rendering, and efficient handling of large datasets.
@@ -20,7 +20,7 @@ Essential<sup>®</sup> Grid for WPF supports virtual mode, which lets you dynami
 
 ### Example
 
-In this example, the Grid Control displays 99,000,000 x 1,000,000 cells (i.e., 99 million rows and 1 million columns). It is also possible to resize millions of rows instantly without any performance hits. The data is loaded only on demand through the QueryCellInfo event and the changes are saved back to the data source by the CommitCellInfo event.
+In this example, the Excel-like Grid displays 99,000,000 x 1,000,000 cells (i.e., 99 million rows and 1 million columns). It is also possible to resize millions of rows instantly without any performance hits. The data is loaded only on demand through the QueryCellInfo event and the changes are saved back to the data source by the CommitCellInfo event.
 
 {% tabs %}
 {% highlight c# %}
@@ -80,11 +80,11 @@ void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 ### Output
 
-![Virtual Mode in WPF GridControl](Grid-Virtualization_images/Grid-Virtualization_img1.png)
+![Virtual Mode](Grid-Virtualization_images/Grid-Virtualization_img1.png)
 
 ## Virtual Cells
 
-The Grid control supports virtual cell architecture where the cell contents are drawn statically until a live cell is required. For example, when you move the mouse over the grid, the cells under the mouse pointer needs to handle mouse inputs. Dynamically, the static cells are turned into live cells that can handle those mouse interactions, as required. These live cells stay in scope until they are no longer needed (which is usually when they are scrolled off the screen). Using static drawing for cells, and thus minimizing the need for large numbers of live cells, provides an optimal way to display large data sources very quickly.
+The Excel-like Grid supports virtual cell architecture where the cell contents are drawn statically until a live cell is required. For example, when you move the mouse over the grid, the cells under the mouse pointer needs to handle mouse inputs. Dynamically, the static cells are turned into live cells that can handle those mouse interactions, as required. These live cells stay in scope until they are no longer needed (which is usually when they are scrolled off the screen). Using static drawing for cells, and thus minimizing the need for large numbers of live cells, provides an optimal way to display large data sources very quickly.
 
 ### Example
 
@@ -188,7 +188,7 @@ grid.Model.TableStyle.CellValue = "Edit Me!";
 {% endhighlight  %}
 {% endtabs %}
 
-![Virtual cells to the WPF GridControl](Grid-Virtualization_images/Grid-Virtualization_img2.jpeg)
+![Virtual cells](Grid-Virtualization_images/Grid-Virtualization_img2.jpeg)
 
 
 
