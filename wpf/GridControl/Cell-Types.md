@@ -9,7 +9,7 @@ documentation: ug
 
 # Cell Types in WPF Excel-like Grid
 
-Essential<sup>®</sup> Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the Excel-like Grid. This attribute of a grid cell is referred to as its Cell Type. This section lists out various cell controls that can be placed inside the grid cells. Essential<sup>Â®</sup> Grid currently supports 20+ cell types. It also provides support to create and use custom cell types.
+Essential<sup>®</sup> Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the Excel-like Grid. This attribute of a grid cell is referred to as its Cell Type. This section lists out various cell controls that can be placed inside the grid cells. Essential<sup>®</sup> Grid currently supports 20+ cell types. It also provides support to create and use custom cell types.
 
 Following is the list of built-in cell types:
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Zooming in WPF Excel-like Grid
 
-This feature enables the user to change the zoom level of the Excel-like Grid that brings either more or fewer cells into the view. By zooming in you can get a magnified view of the grid cells, and by zooming out you can bring more cells in to the view. This does not change the underlying size of Excel-like Grid, and the printout of the Excel-like Grid remains constant, regardless of the selected zoom scale.
+This feature enables the user to change the zoom level of the Excel-like Grid that brings either more or fewer cells into the view. By zooming in you can get a magnified view of the grid cells, and by zooming out you can bring more cells in to the view. This does not change the underlying size of control, and the printout remains constant, regardless of the selected zoom scale.
 
 ## Use Case Scenarios
 

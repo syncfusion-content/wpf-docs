@@ -398,7 +398,7 @@ void</td></tr>
 
 ### Custom Graphic Chart Cell Renderer
 
-This cell displays a chart control over the grid cells as seen in Microsoft Excel when importing an Excel file to the Excel-like Grid. To render the Chart control over the Excel-like Grid, you need to derive from the GraphicCellModel and GraphicCellRendererBase classes.
+This cell displays a chart control over the grid cells as seen in Microsoft Excel when importing an Excel file to the Excel-like Grid. To render the Chart control over the control, you need to derive from the GraphicCellModel and GraphicCellRendererBase classes.
 
 #### CellModel class
 

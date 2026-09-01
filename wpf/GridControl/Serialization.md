@@ -39,7 +39,7 @@ this.grid.Model.Deserialize("Data.xml");
 
 3.Run the application
 
-Run the application. Click the Serialize button to serialize the initial load; this creates an XML file and saves it. Click the second button ModifyGridStyle to make some changes in the Excel-like Grid. Now click the Deserialize button which restores the old settings of the Excel-like Grid. 
+Run the application. Click the Serialize button to serialize the initial load; this creates an XML file and saves it. Click the second button ModifyGridStyle to make some changes in the Excel-like Grid. Now click the Deserialize button which restores the old settings of the control. 
 
 ### Supported Properties for Serialization
 

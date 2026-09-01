@@ -100,7 +100,7 @@ The following image shows the next button highlighted for an example.
 
 Headers and Footers can be added to the document to be printed. 
 
-* Excel-like Grid.PrintHeaderTemplate determines the content for the print header. It is a property of Excel-like Grid and any value assigned to this property will be provided as an output in the Header section of the print output. For example: A text block outlined with a border is assigned to this property and hence the header also is printed with a border. 
+* Excel-like Grid.PrintHeaderTemplate determines the content for the print header. It is a property and any value assigned to this property will be provided as an output in the Header section of the print output. For example: A text block outlined with a border is assigned to this property and hence the header also is printed with a border. 
 * Excel-like Grid.PrintFooterTemplate defines the print footer. The content represented by the print header will appear at the top of each printed page and likewise, the content represented by the print footer will appear at the bottom of each printed page. 
 * The height of the header and footer can be adjusted using the Excel-like Grid properties- PrintHeaderHeight and PrintFooterHeight.
 
