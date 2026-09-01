@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns in WPF MultiColumn Dropdown
 
-WPF MultiColumn Dropdown enables you to define the columns as like in Data Grid. You can let the `MultiColumn Dropdown` to create columns or you can manually defined columns to be displayed. Below sections explains both ways,
+WPF MultiColumn Dropdown enables you to define the columns as like in Data Grid. You can let the control to create columns or you can manually defined columns to be displayed. Below sections explains both ways,
  
     1. Automatically generating columns
     2. Manually define columns
@@ -21,7 +21,7 @@ You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#defining-
 
 ## Manually defining columns
 
-MultiColumn Dropdown allows you to define the columns manually by adding desired column to the [SfMultiColumnDropdownControl.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_Columns) collection.
+MultiColumn Dropdown allows you to define the columns manually by adding desired column to the [SfMultiColumnDropDownControl.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_Columns) collection.
 
 {% tabs %}
 {% highlight xaml %}
