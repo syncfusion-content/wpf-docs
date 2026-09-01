@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in WPF Excel-like Grid | Syncfusion®
 description: Customize the appearance of Excel-like Grid cells using styles, backgrounds, borders, fonts, data formats, and rendering options.

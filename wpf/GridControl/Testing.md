@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Testing in WPF Excel-like Grid | Syncfusion®
 description: Test Excel-like Grid applications using UI Automation and Visual Studio Coded UI testing with support for automation patterns, cell access, and validation.

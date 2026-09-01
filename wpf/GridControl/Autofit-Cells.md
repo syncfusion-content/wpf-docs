@@ -160,4 +160,4 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/fit-the-columns
 
 ## See also
 
-[How to auto fit all the columns based on the Window size](https://www.syncfusion.com/kb/7810)
+[How to auto fit all the columns based on the Window size](https://support.syncfusion.com/kb/article/7030/how-to-auto-fit-all-the-columns-in-a-gridcontrol-based-on-the-window-size)

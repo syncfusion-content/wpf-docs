@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Import from Excel in WPF Excel-like Grid | Syncfusion®
 description: Import Excel workbooks into Excel-like Grid with support for styles, formulas, conditional formatting, comments, hyperlinks, and freeze panes.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ToolTip in WPF Excel-like Grid | Syncfusion®
 description: Display and customize tooltips in Excel-like Grid for cells, rows, and columns with support for templates, events, delay settings, and runtime updates.

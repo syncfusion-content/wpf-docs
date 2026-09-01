@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Cell Types in WPF Excel-like Grid | Syncfusion®
 description: Explore the built-in and custom cell types in Excel-like Grid, including check boxes, buttons, editors, drop-downs, nested grids, and templates.
@@ -1402,7 +1402,7 @@ N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-dem
 
 The Nested grid's can be added inside a row, column or covered range. When you nest a grid inside a covered range you can specify whether the rows or columns derive their state from the parent control. You have multiple independent options for both rows and columns.
 
-The Nested grid cell type of WPF [Excel-like Grid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.Excel-like Grid.html) allows to host the one grid into another Excel-like Grid. When you scroll within the parent grid, the nested grid also scrolls based on the parent grid scroller.
+The Nested grid cell type of WPF [Excel-like Grid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridControl.html) allows to host the one grid into another Excel-like Grid. When you scroll within the parent grid, the nested grid also scrolls based on the parent grid scroller.
 
 You can add the nested grids within the other Excel-like Grid by the following ways.
 

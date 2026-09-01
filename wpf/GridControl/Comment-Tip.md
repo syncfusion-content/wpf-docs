@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Comment Tip in WPF Excel-like Grid | Syncfusion®
 description: Add and customize comment tips in Excel-like Grid cells, rows, and columns with configurable indicators, templates, events, and positions.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Export To Excel in WPF Excel-like Grid | Syncfusion®
 description: Export Excel-like Grid data to Excel and CSV formats, including entire grids, selected ranges, custom worksheets, and Excel engine integration.
@@ -13,7 +13,7 @@ This section explains about Exporting to Excel and its features of WPF Excel-lik
 
 ## Exporting to Excel
 
-The GridExcelConverter class provides support for exporting data from a Excel-like Grid to an Excel spreadsheet for verification and/or computation. This control copies the Grid's styles and formats to Excel automatically. The GridExcelConverter classÂ is derived from GridExcelConverterBase. The XlsIO libraries are used to support the conversion of the grid contents to Excel. Following assembly files must be added along with the default assembly files in the reference folder:
+The GridExcelConverter class provides support for exporting data from a Excel-like Grid to an Excel spreadsheet for verification and/or computation. This control copies the Grid's styles and formats to Excel automatically. The GridExcelConverter class is derived from GridExcelConverterBase. The XlsIO libraries are used to support the conversion of the grid contents to Excel. Following assembly files must be added along with the default assembly files in the reference folder:
 
 * Syncfusion.XlsIO.Base
 * Syncfusion.XlsIO.WPF  

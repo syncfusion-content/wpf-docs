@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Cell Layout Customization in WPF Excel-like Grid | Syncfusion®
 description: Customize cell layouts in Excel-like Grid using covered cells, banner cells, overlapping cells, graphic cells, and custom cell rendering options.

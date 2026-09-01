@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Managing Rows and Columns in WPF Excel-like Grid | Syncfusion®
 description: Manage rows and columns in Excel-like Grid with support for sizing, hiding, freezing, resizing, inserting, moving, and removing rows and columns.

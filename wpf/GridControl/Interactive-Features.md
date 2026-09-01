@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Interactive Features in WPF Excel-like Grid | Syncfusion®
 description: Enable interactive features in Excel-like Grid, including column drag and drop, Excel-like cell drag and drop, and row and column resizing.

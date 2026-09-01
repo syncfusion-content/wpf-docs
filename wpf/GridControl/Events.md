@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in WPF Excel-like Grid | Syncfusion®
 description: Handle Excel-like Grid events for cell customization, editing, clipboard operations, mouse interaction, resizing, validation, and current cell management.

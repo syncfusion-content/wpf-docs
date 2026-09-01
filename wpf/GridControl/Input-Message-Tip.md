@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Input Message Tip in WPF Excel-like Grid | Syncfusion®
 description: Display and customize input message tips in Excel-like Grid for cells, rows, and columns using tooltips, templates, and runtime events.

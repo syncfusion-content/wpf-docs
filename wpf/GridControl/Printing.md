@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Printing in WPF Excel-like Grid | Syncfusion®
 description: Print and preview Excel-like Grid content with customizable print settings, page layouts, navigation options, and support for headers and footers.

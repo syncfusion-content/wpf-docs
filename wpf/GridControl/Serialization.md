@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Serialization in WPF Excel-like Grid | Syncfusion®
 description: Serialize and deserialize Excel-like Grid data, layout, and settings using XML files, streams, and strings to persist grid state at runtime.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: About Syncfusion® WPF Excel-like Grid | Syncfusion®
 description: Learn about the overview of Syncfusion® Essential Studio WPF Excel-like Grid, its features and more details.
@@ -17,7 +17,7 @@ With this version, our core focus has been on the underlying architecture for di
 
 ## Key Features
 
-The Excel-like WPF Grid (virtual grid) is a cell-oriented control for displaying tabular data. It does not make any assumptions regarding the structure of the data. 
+WPF Excel-like Grid (virtual grid) is a cell-oriented control for displaying tabular data. It does not make any assumptions regarding the structure of the data. 
 
 Below are key features of the WPF Excel-like Grid:
 
@@ -59,7 +59,7 @@ Virtual Grid
 
 #### Data Presentation and Formatting
 
-The grid supports many cell types to present data. In addition to built-in cell types, any WPF control or any custom control can be placed inside a cell by using a data-template cell.
+The Excel-like Grid supports many cell types to present data. In addition to built-in cell types, any WPF control or any custom control can be placed inside a cell by using a data-template cell.
 
 ![Various Cell Types](Overview_images/Overview_img5.png)
 
@@ -92,4 +92,4 @@ The Grid control’s appearance can be customized very easily. Common style prop
 #### Excel Compatibility
 
 * Import Options: The import feature allows an Excel workbook to be imported into a grid while preserving the workbook’s look and feel. The following items can be imported: entire spreadsheets, formulas, styles, conditional formats, frozen panes, backgrounds, foregrounds, and comments.
-* Export Options: The grid provides inherent support for exporting content to Excel files (.xls and .xlsx format) and to .csv files. 
+* Export Options: The Excel-like Grid provides inherent support for exporting content to Excel files (.xls and .xlsx format) and to .csv files. 

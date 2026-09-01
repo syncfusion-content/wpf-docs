@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Editing in WPF Excel-like Grid | Syncfusion®
 description: Control editing operations in Excel-like Grid with flexible clipboard options, custom data formats, and transaction-based undo and redo support.
@@ -270,7 +270,7 @@ The undo/redo architecture is extensible, thereby allowing users to derive the b
 
 Essential<sup>®</sup> Grid has a GridModelCommandManager class that implements support for the undo/redo commands in the Grid control. Depending upon the grid settings, as a user makes changes to the grid these changes will be tracked in stack structures which will be found in the GridModelCommandManager class. This class has methods that allow you to undo the last action, redo the last undone action, and batch transactions so that a series of actions can be undone or redone in a single step.
 
-The CommandStack property of the Excel-like Grid class will return a reference to the GridCommandStack object that is associated with a grid. It is through this property that you can access the undo/redo support in Essential<sup>Â®</sup> Grid. For example, you can use the enabled property of the CommandStack to control whether or not the grid supports undo/redo at any given moment. The following code samples show you some CommandStack properties.
+The CommandStack property of the Excel-like Grid class will return a reference to the GridCommandStack object that is associated with a grid. It is through this property that you can access the undo/redo support in Essential<sup>®</sup> Grid. For example, you can use the enabled property of the CommandStack to control whether or not the grid supports undo/redo at any given moment. The following code samples show you some CommandStack properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -356,7 +356,7 @@ It is also possible to nest transactions. If you are in the middle of a transact
 
 The undo or redo architecture of Essential<sup>®</sup> Grid is complete as shipped with the product. If, for some reason, you need to handle special grid requirements that cannot be performed with the standard implementation, the undo/redo architecture is extensible. To extend it, you need to derive custom command classes from either the abstract class SyncfusionCommand or the abstract class GridModelCommand. In your derived class, you will need to add whatever members you need in order to track enough state information that will allow you to undo or redo the action that is being done. Then you have to implement an execute method and other abstract members of the base class. If you do a search in the Essential<sup>®</sup> Grid source code for GridModelCommand, you will see many examples of the derived command classes.
 
- Once you have your derived SyncfusionCommand class, whenever the action is taken, you will have to create a proper instance of your derived SyncfusionCommand class and add it to the Excel-like Grid.Model.CommandStack.UndoStack. Thus, when Essential<sup>Â®</sup> Grid needs to undo this action, your command will be popped from the UndoStack, and its execute method will be called indicating that this action needs to be undone (also at this point, Essential<sup>Â®</sup> Grid will add this same instance to the RedoStack so that the action can later be redone if necessary).
+ Once you have your derived SyncfusionCommand class, whenever the action is taken, you will have to create a proper instance of your derived SyncfusionCommand class and add it to the Excel-like Grid.Model.CommandStack.UndoStack. Thus, when Essential<sup>®</sup> Grid needs to undo this action, your command will be popped from the UndoStack, and its execute method will be called indicating that this action needs to be undone (also at this point, Essential<sup>®</sup> Grid will add this same instance to the RedoStack so that the action can later be redone if necessary).
 
 The following code snippet demonstrates how to implement support for current cell activated action in undo/redo operations.
 
@@ -519,6 +519,6 @@ N> [View sample in GitHub](https://github.com/syncfusion/wpf-demos/tree/master/g
 
 ## See also
 
-[How to exclude header while copying](https://www.syncfusion.com/kb/11194)
+[How to exclude header while copying](https://support.syncfusion.com/kb/article/9711/how-to-exclude-header-while-copying-in-wpf-gridcontrol-when-table-is-selected)
 
-[How to invoke CommitCellInfo event](https://www.syncfusion.com/kb/11193)
+[How to invoke CommitCellInfo event](https://support.syncfusion.com/kb/article/9744/how-to-invoke-commitcellinfo-event-of-wpf-gridcontrol-when-selecting-an-item-in-dropdown)

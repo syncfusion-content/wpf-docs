@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Real Time Applications in WPF Excel-like Grid | Syncfusion®
 description: Build real-time applications with Excel-like Grid using high-frequency data updates, virtual mode, and Excel-like user interface capabilities.

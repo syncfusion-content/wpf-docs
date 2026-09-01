@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with WPF Excel-like Grid | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF Excel-like Grid. Explore setup, data population, configuration, examples, and customization options.
@@ -27,7 +27,7 @@ In this section, we will see how to add the Excel-like Grid to a WPF application
 
 ### Adding the Excel-like Grid through a Designer
 
-Please follow the steps below to add the grid through a designer.
+Please follow the steps below to add the Excel-like Grid through a designer.
 
 1. Create new WPF application.
 
