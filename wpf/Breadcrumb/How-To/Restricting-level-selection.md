@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to restrict level selection in WPF Hierarchical Navigator | Syncfusion
+title: How to restrict level selection in WPF Breadcrumb | Syncfusion
 description: Learn how to restrict level selection in Syncfusion® WPF Hierarchical Navigator control using the MaxDrillDownLevel property to limit navigation depth.
 platform: wpf
 control: Hierarchical Navigator

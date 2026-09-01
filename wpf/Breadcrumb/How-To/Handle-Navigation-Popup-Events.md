@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to handle navigation popups in WPF Hierarchical Navigator | Syncfusion
+title: How to handle navigation popups in WPF Breadcrumb | Syncfusion
 description: Learn how to handle navigation popup events in Syncfusion® WPF Hierarchical Navigator control, including opening, opened, closing, and closed events.
 platform: wpf
 control: Hierarchical Navigator
@@ -16,7 +16,7 @@ HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 hierarchyNavigator.ShowNavigationPopupItems(hierarchyItem);
 {% endhighlight %}
 
-### NavigationPopupOpening
+## NavigationPopupOpening
 
 The `NavigationPopupOpening` event occurs when the navigation popup is about to open.
 
@@ -37,7 +37,7 @@ private void NavigationPopupOpening(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### NavigationPopupOpened
+## NavigationPopupOpened
 
 The `NavigationPopupOpened` event occurs after the navigation popup has been opened.
 
@@ -58,7 +58,7 @@ private void NavigationPopupOpened(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### NavigationPopupClosing
+## NavigationPopupClosing
 
 The `NavigationPopupClosing` event occurs when the navigation popup is about to close.
 
@@ -79,7 +79,7 @@ private void NavigationPopupClosing(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### NavigationPopupClosed
+## NavigationPopupClosed
 
 The `NavigationPopupClosed` event occurs after the navigation popup has been closed.
 

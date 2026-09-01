@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to handle selected item changes in WPF Hierarchical Navigator | Syncfusion
-description: Learn how to handle selected item changes in Syncfusion® WPF Hierarchical Navigator control using the HierarchyNavigatorSelectedItemChanged event and command support.
+title: How to handle selected item changes in WPF Breadcrumb | Syncfusion
+description: Learn how to handle selected item changes in Syncfusion® WPF Breadcrumb control using events and command support.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
