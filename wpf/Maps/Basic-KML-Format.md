@@ -29,7 +29,7 @@ Currently, the SfMaps control supports the following KML elements:
 
 ## KML Shapes Support in ShapeFileLayer
 
-A KML file can be rendered with the help of the ShapeFileLayer in SfMap. The KML file should be added as an Embedded Resource to the application project. The URI of the KML file must be given in the following order:
+A KML file can be rendered with the help of the ShapeFileLayer in WPF Map. The KML file should be added as an Embedded Resource to the application project. The URI of the KML file must be given in the following order:
 
 1. Namespace of project
 2. Folder names
@@ -53,7 +53,7 @@ A KML file can be rendered with the help of the ShapeFileLayer in SfMap. The KML
 
 ## KML Shapes Support in SubShapeFileLayer
 
-A KML file can be rendered with the help of the SubShapeFileLayer in SfMap. The URI of the KML file is given in the SubShapeFileLayer as follows. 
+A KML file can be rendered with the help of the SubShapeFileLayer in WPF Map. The URI of the KML file is given in the SubShapeFileLayer as follows. 
 
 {% highlight xaml %}
 
