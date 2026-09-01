@@ -51,7 +51,7 @@ The following screenshot illustrates how a Chart Series is associated to the Cha
 
 
 
-### Data-Binding in WPF Chart (Classic) for Child Level Properties
+### Data-Binding in WPF Classic Chart for Child Level Properties
 
 ## XML Data Source
 
@@ -674,7 +674,7 @@ The following screenshot illustrates how a Chart Series is associated to the Cha
 ![Chart-Controls_img5](Chart-Controls_images/Chart-Controls_img5.jpeg)
 
 
-## Data-Binding in WPF Chart (Classic) for Child Level Properties
+## Data-Binding in WPF Classic Chart for Child Level Properties
 
 The child level properties can be bound to the chart series using BindingPathX and BindingPathsY values. BindingPathX and BindingPathsY are the properties that belong to chart series which holds the x-axis and y-axis binding path values.
 
