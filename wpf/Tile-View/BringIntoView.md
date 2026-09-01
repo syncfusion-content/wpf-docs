@@ -7,13 +7,13 @@ control: TileViewControl
 documentation: ug
 ---
 
-# BringIntoView in WPF TileView
+# BringIntoView in WPF Tile View Control
 
-This section explains how to bring the `TileViewItem` which is out of view to view programmatically in TileView control. 
+This section explains how to bring the `TileViewItem` which is out of view to view programmatically in WPF Tile View Control. 
 
 ## BringIntoView
 
-The TileViewControl allows programmatically to bring the `TileViewItem` to view using `BringIntoView` method.
+The WPF Tile View Control allows programmatically to bring the `TileViewItem` to view using `BringIntoView` method.
 
 ### BringIntoView using TileViewItem
 
