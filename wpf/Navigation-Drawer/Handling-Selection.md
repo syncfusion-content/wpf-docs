@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Selection in WPF Navigation Drawer | Syncfusion®
 description: Get or set the selected navigation item when working with built-in navigation items or custom data-bound objects.

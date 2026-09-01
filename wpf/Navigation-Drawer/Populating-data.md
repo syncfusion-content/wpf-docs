@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Populate Data in WPF Navigation Drawer | Syncfusion®
 description: Populate navigation menus using built-in items, data binding, hierarchical data, custom icons, and multiple navigation item types.

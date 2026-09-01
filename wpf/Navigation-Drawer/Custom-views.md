@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Custom Views in WPF Navigation Drawer | Syncfusion®
 description: Create custom navigation layouts using header, content, and footer views, and customize drawer position, animations, and panel sizing.

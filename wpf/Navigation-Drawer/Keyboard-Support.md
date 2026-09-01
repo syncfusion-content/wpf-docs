@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Keyboard Support in WPF Navigation Drawer | Syncfusion®
 description: Navigate, focus, and select navigation items efficiently using built-in keyboard shortcuts and accessibility support.

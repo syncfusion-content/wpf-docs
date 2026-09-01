@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Display Modes in WPF Navigation Drawer | Syncfusion®
 description: Configure compact, expanded, and default display modes with responsive behavior, automatic mode switching, and collapsible navigation panes.

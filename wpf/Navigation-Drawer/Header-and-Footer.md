@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Header and Footer in WPF Navigation Drawer | Syncfusion®
 description: Customize the WPF Navigation Drawer header, footer, toggle button, and create fully customized header and footer views.
