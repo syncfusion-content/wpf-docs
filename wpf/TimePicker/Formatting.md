@@ -9,7 +9,7 @@ documentation: ug
 
 # Time Formatting in WPF TimePicker
 
-The [SfTimePicker](https://www.syncfusion.com/wpf-ui-controls/timepicker) control allows the user to select and display the time in various formats.
+The [WPF TimePicker](https://www.syncfusion.com/wpf-ui-controls/timepicker) control allows the user to select and display the time in various formats.
 
 ## Display the time using the FormatString
 
@@ -36,7 +36,7 @@ sfTimePicker.FormatString = "HH:mm:ss";
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker with 24 hour time format](Features_images/Features_img1.png)
+![WPF TimePicker with 24 hour time format](Features_images/Features_img1.png)
 
 Here, `SfTimePicker` displays a 24-hour time format.
 
@@ -65,7 +65,7 @@ sfTimePicker.SelectorFormatString = "M";
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker contains only hour and meridiem value selector](Features_images/Features_img2.png)
+![WPF TimePicker contains only hour and meridiem value selector](Features_images/Features_img2.png)
 
 Here, we are only able to select the hour and meridiem value from the `SfTimeSelector`.
 

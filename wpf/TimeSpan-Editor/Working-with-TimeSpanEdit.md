@@ -11,13 +11,13 @@ documentation: ug
 
 This section explains how to change the time value and time formats in the WPF [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html).
 
-![TimeSpanEdit control time fields](Getting-Started_images/Control_Structure.png)
+![WPF TimeSpan Editor control time fields](Getting-Started_images/Control_Structure.png)
 
 ## Day, hour and minute field navigation
 
 By default, the focus field will be navigated automatically after the value has been validated to the corresponding field. If you want to manually change the day, hour or minute values, before that you navigate to the respective field by using the mouse or move the `Left-Right` keys in the keyboard.
 
-![Day, hour and minute field navigation in TimeSpanEdit](Deals-with-TimeSpanEdit_images/Time_field.gif)
+![Day, hour and minute field navigation in WPF TimeSpanEdit](Deals-with-TimeSpanEdit_images/Time_field.gif)
 
 ## Increase or decrease the time fields with specific interval
 
@@ -48,7 +48,7 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10);
 {% endhighlight %}
 {% endtabs %}
 
-![TimeSpanEdit seconds value incremented by 10](Deals-with-TimeSpanEdit_images/StepInterval.png)
+![WPF TimeSpan Editor seconds value incremented by 10](Deals-with-TimeSpanEdit_images/StepInterval.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
@@ -211,7 +211,7 @@ timeSpanEdit.Value = null;
 {% endhighlight %}
 {% endtabs %}
 
-![TimeSpanEdit contains the null value](Deals-with-TimeSpanEdit_images/NullValue.png)
+![WPF TimeSpan Editor contains the null value](Deals-with-TimeSpanEdit_images/NullValue.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
@@ -243,7 +243,7 @@ timeSpanEdit.Value = null;
 {% endhighlight %}
 {% endtabs %}
 
-![TimeSpanEdit contains the null text](Deals-with-TimeSpanEdit_images/NullString.png)
+![WPF TimeSpan Editor contains the null text](Deals-with-TimeSpanEdit_images/NullString.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
@@ -278,7 +278,7 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10);
 {% endhighlight %}
 {% endtabs %}
 
-![TimeSpanEdit formats the displayed time span](Deals-with-TimeSpanEdit_images/Formatting.png)
+![WPF TimeSpan Editor formats the displayed time span](Deals-with-TimeSpanEdit_images/Formatting.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
@@ -311,7 +311,7 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10, 6);
 {% endhighlight %}
 {% endtabs %}
 
-![TimeSpanEdit displays the milliseconds](Deals-with-TimeSpanEdit_images/Milliseconds.png)
+![WPF TimeSpan Editor displays the milliseconds](Deals-with-TimeSpanEdit_images/Milliseconds.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
@@ -379,7 +379,7 @@ timeSpanEdit.IsReadOnly = true;
 {% endhighlight %}
 {% endtabs %}
 
-![TimeSpanEdit restrict the user input](Deals-with-TimeSpanEdit_images/IsReadOnly.png)
+![WPF TimeSpan Editor restrict the user input](Deals-with-TimeSpanEdit_images/IsReadOnly.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
