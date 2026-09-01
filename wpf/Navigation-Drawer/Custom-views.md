@@ -1,9 +1,9 @@
 ﻿---
 layout: post
-title: Custom Views in WPF NavigationDrawer | Syncfusion®
+title: Custom Views in WPF Navigation Drawer | Syncfusion®
 description: Create custom navigation layouts using header, content, and footer views, and customize drawer position, animations, and panel sizing.
 platform: wpf
-control: NavigationDrawer
+control: Navigation Drawer
 documentation: ug
 ---
 
@@ -904,11 +904,11 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![WPF NavigationDrawer shows in Bottom Position](concepts-and-features_images/wpf-navigation-drawer-bottom-position.png)   
+![WPF Navigation Drawer shows in Bottom Position](concepts-and-features_images/wpf-navigation-drawer-bottom-position.png)   
 
 ## Swipe gesture and sensitivity                              
 
-The NavigationDrawer supports swipe gesture for opening and closing the drawer. 
+The WPF Navigation Drawer supports swipe gesture for opening and closing the drawer. 
 
 ### Enabling swipe gesture
 
@@ -1218,7 +1218,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![WPF NavigationDrawer with Slidebar at Top Position](concepts-and-features_images/wpf-navigation-drawer-slide-bar.png)
+![WPF Navigation Drawer with Slidebar at Top Position](concepts-and-features_images/wpf-navigation-drawer-slide-bar.png)
 
 
 The following code example shows how to set [Transition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Transition) as [Push](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.Transition.html) to SfNavigationDrawer. This transition moves the Drawer and main content simultaneously.
@@ -1359,7 +1359,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![WPF NavigationDrawer with Slidebar](concepts-and-features_images/wpf-navigation-drawer-slidebar-push.png)                                              
+![WPF Navigation Drawer with Slidebar](concepts-and-features_images/wpf-navigation-drawer-slidebar-push.png)                                              
 
 
 The following code example shows how to set [Transition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Transition) as [Reveal](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.Transition.html) to SfNavigationDrawer. In this transition, the Drawer content is stable and the main content is moved to reveal the drawer content.
@@ -1501,7 +1501,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![WPF NavigationDrawer with Slidebar](concepts-and-features_images/wpf-navigation-drawer-slidebar-reveal.png)  
+![WPF Navigation Drawer with Slidebar](concepts-and-features_images/wpf-navigation-drawer-slidebar-reveal.png)  
 
 ### Animation duration
 

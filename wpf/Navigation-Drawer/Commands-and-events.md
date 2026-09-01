@@ -1,15 +1,15 @@
 ﻿---
 layout: post
-title: Commands and Events in WPF NavigationDrawer | Syncfusion®
-description: Handle drawer opening, closing, item interaction events, and execute commands for navigation items in the WPF NavigationDrawer control.
+title: Commands and Events in WPF Navigation Drawer | Syncfusion®
+description: Handle drawer opening, closing, item interaction events, and execute commands for navigation items in the WPF Navigation Drawer control.
 platform: wpf
-control: NavigationDrawer
+control: Navigation Drawer
 documentation: ug
 ---
 
-# Commands and Events in WPF NavigationDrawer
+# Commands and Events in WPF Navigation Drawer
 
-This section describes the events and command support available in the Navigation Drawer sidebar.
+This section describes the events and command support available in the WPF Navigation Drawer sidebar.
 
 ## Opening event
 
@@ -935,7 +935,7 @@ public class DelegateCommand<T> : ICommand
 
 {% endtabs %}
 
-![WPF NavigationDrawer displays Command](Command_image/wpf-navigation-drawer-command.png)
+![WPF Navigation Drawer displays Command](Command_image/wpf-navigation-drawer-command.png)
 
 N> The `Command` execution is only applicable for compact and expanded display mode.
 

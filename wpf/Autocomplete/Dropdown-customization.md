@@ -7,9 +7,9 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Dropdown customization in WPF Autocomplete (SfTextBoxExt)
+# Dropdown customization in WPF AutoComplete (SfTextBoxExt)
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties and customizations that deals with drop-down list in the `AutoComplete` control.
+Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties and customizations that deals with drop-down list in the `WPF AutoComplete` control.
 
 ## Customize the background 
 
@@ -136,7 +136,7 @@ textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
 
 ## Setting the maximum height 
 
-The maximum height of the suggestion box in the AutoComplete control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MaxDropDownHeight) property.
+The maximum height of the suggestion box in the WPF AutoComplete control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MaxDropDownHeight) property.
 
 {% tabs %}
 

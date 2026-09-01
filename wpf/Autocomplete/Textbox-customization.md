@@ -7,9 +7,9 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Textbox customization in WPF Autocomplete (SfTextBoxExt)
+# Textbox customization in WPF AutoComplete (SfTextBoxExt)
 
-AutoComplete provides the user-friendly customizing options for text box. This section explains how to customize the entire AutoComplete control.
+The WPF AutoComplete provides the user-friendly customizing options for text box. This section explains how to customize the entire AutoComplete control.
 
 
 ## Water mark 
@@ -95,7 +95,7 @@ Any business object can be bound to the Watermark property and that object can b
 
 ## Customizing the TextBox
 
-The [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), and [FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase) properties are used to customize the text in the AutoComplete control.
+The [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), and [FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase) properties are used to customize the text in the WPF AutoComplete control.
 
 {% tabs %}
 
@@ -123,7 +123,7 @@ textBoxExt.FontFamily = new FontFamily("Times New Roman");
 
 {% endtabs %}
 
-![AutoComplete Customization](Textbox_customization_images/Customization.png)
+![WPF AutoComplete Customization](Textbox_customization_images/Customization.png)
 
 
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Autocomplete and Filtering in WPF AutoComplete | Syncfusion®
-description: Autocomplete and Filtering in SfTextBoxExt provide relevant suggestions, dynamic filtering, and search assistance as users enter text.
+title: AutoComplete and Filtering in WPF AutoComplete | Syncfusion®
+description: AutoComplete and Filtering in SfTextBoxExt provide relevant suggestions, dynamic filtering, and search assistance as users enter text.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Autocomplete and filtering in WPF Autocomplete (SfTextBoxExt)
+# AutoComplete and filtering in WPF AutoComplete (SfTextBoxExt)
 
-The AutoComplete functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or can be displayed in a drop-down list so that searched item can be chosen based on the filtering option set.
+The WPF AutoComplete functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or can be displayed in a drop-down list so that searched item can be chosen based on the filtering option set.
 
 ## AutoComplete source
 
@@ -30,7 +30,7 @@ The [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Control
 {% endhighlight %}
 {% endtabs %}
 
-For further details, refer to [Populating Autocomplete with Data](https://help.syncfusion.com/wpf/autocomplete/getting-started#populating-autocomplete-with-data).
+For further details, refer to [Populating WPF AutoComplete with Data](https://help.syncfusion.com/wpf/autocomplete/getting-started#populating-autocomplete-with-data).
 
 ![AutoCompleteSource](AutoComplete_and_filtering_images/AutoCompleteSource.png)
 
@@ -465,7 +465,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/t
 
 ## Display a message when suggestions are empty 
 
-When the entered item is not in the suggestion list, AutoComplete displays a text indicating that there is no search results found. Th text to be displayed for this can be customized using the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_NoResultsFoundTemplate) property.
+When the entered item is not in the suggestion list, the WPF AutoComplete displays a text indicating that there is no search results found. Th text to be displayed for this can be customized using the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_NoResultsFoundTemplate) property.
 
 {% tabs %}
 {% highlight xaml %}

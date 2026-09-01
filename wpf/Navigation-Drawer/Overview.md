@@ -1,24 +1,24 @@
 ---
 layout: post
-title: About Syncfusion® WPF NavigationDrawer Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF NavigationDrawer control and more details.
+title: About Syncfusion® WPF Navigation Drawer Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Navigation Drawer control and more details.
 platform: wpf
-control: NavigationDrawer
+control: Navigation Drawer
 documentation: ug
 ---
 
-# About Syncfusion® WPF NavigationDrawer (SfNavigationDrawer) Control
+# About Syncfusion® WPF Navigation Drawer (SfNavigationDrawer) Control
 
 The WPF Navigation Drawer control is a sidebar navigation view that is used to create a navigation menu for easy navigation. It provides compact and extended display modes with built-in navigation view items with ability to switch between both modes based on available size. It also provides default mode which allows to have a custom pane view.
 
-![Overview of WPF NavigationDrawer](overview_images/wpf-navigation-drawer-overview.png) 
+![Overview of WPF Navigation Drawer](overview_images/wpf-navigation-drawer-overview.png) 
                                               
 SfNavigationDrawer
 {:.caption}
 
 ## Use case scenarios
 
-The Navigation Drawers are used in applications where navigating to the major module or page is a basic requirement. The Navigation Drawer is available in the following apps that signify the importance of navigating through pages:
+The Navigation Drawers are used in applications where navigating to the major module or page is a basic requirement. The WPF Navigation Drawer is available in the following apps that signify the importance of navigating through pages:
 
 1. Facebook
 2. Play Store
@@ -36,12 +36,12 @@ The Navigation Drawers are used in applications where navigating to the major mo
 
 ### Visual Structure
 
-This section describes the visual elements of the NavigationDrawer control and defines terms and concepts used in the DisplayMode.
+This section describes the visual elements of the WPF Navigation Drawer control and defines terms and concepts used in the DisplayMode.
 
-![WPF NavigationDrawer Structure](overview_images/wpf-navigation-drawer-structure.png)
+![WPF Navigation Drawer Structure](overview_images/wpf-navigation-drawer-structure.png)
 
 
 * **Header** —  Represents the header of the drawer 
 * **Footer** — Represents the footer of the drawer. 
-* **NavigationDrawer Items** — Built-in items used to populate the items in the drawer pane body and footer.
+* **Navigation Drawer Items** — Built-in items used to populate the items in the drawer pane body and footer.
 * **ToggleButton** — Built-in toggle button used to collapse and expand the drawer menu. 

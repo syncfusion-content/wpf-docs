@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Autocomplete | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF Autocomplete (SfTextBoxExt) control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF AutoComplete | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF AutoComplete (SfTextBoxExt) control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Getting Started with WPF Autocomplete (SfTextBoxExt)
+# Getting Started with WPF AutoComplete (SfTextBoxExt)
 
 ## Assembly deployment
 
@@ -111,9 +111,9 @@ namespace TextBoxExt
 
 ![GettingStarted](GettingStarted_images/GettingStarted.png)
 
-## Populating AutoComplete with Data
+## Populating WPF AutoComplete with Data
 
-AutoComplete is a data-bound control. So before create binding to the control, you must create data model for Application.
+The WPF AutoComplete is a data-bound control. So before create binding to the control, you must create data model for Application.
 
 For illustration, let us create a textbox, which will populate a list of employees.
 
@@ -178,7 +178,7 @@ public class Employee
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3. To populate the AutoComplete with data, set the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property to `IEnumerable` implementation.
+3. To populate the WPF AutoComplete with data, set the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property to `IEnumerable` implementation.
 
 
 Bind the collection created in previous step to [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property in XAML by setting EmployeeViewModel as `DataContext`.
@@ -231,11 +231,11 @@ this.Content = textBoxExt;
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-For further details, refer to [AutoComplete source](https://help.syncfusion.com/wpf/autocomplete/autocomplete-and-filtering#autocomplete-source).
+For further details, refer to [WPF AutoComplete source](https://help.syncfusion.com/wpf/autocomplete/autocomplete-and-filtering#autocomplete-source).
 
 ![GettingStarted](GettingStarted_images/AutoCompleteSource.png)
 
-## AutoComplete modes 
+## WPF AutoComplete modes 
 
 Suggestions can be shown in number of ways. [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) supports the following.
 
@@ -298,15 +298,15 @@ textBoxExt.AutoCompleteMode = AutoCompleteMode.Suggest;
 
 ## Selection 
 
-By default single selection is enable in AutoComplete control. It can set the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to specify whether a single or multiple selection.
+By default single selection is enable in WPF AutoComplete control. It can set the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to specify whether a single or multiple selection.
 
 Index of the selected items can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionIndex) property. 
 
-The selected items of the AutoComplete can be retrieved using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property for single selection. 
+The selected items of the WPF AutoComplete can be retrieved using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property for single selection. 
 
 In Multi-selection, [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) property contains the items that are selected in the control.
 
-The selected values of the AutoComplete can be retrieved using the [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedValue) property.
+The selected values of the WPF AutoComplete can be retrieved using the [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedValue) property.
 
 For further details, refer to the [Retrieving SelectedValue](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#retrieving-selectedvalue) and [Setting and retrieving SelectedItem](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#setting-and-retrieving-selecteditem).
 

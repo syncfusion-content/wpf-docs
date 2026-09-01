@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF NavigationDrawer | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF NavigationDrawer control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Navigation Drawer | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Navigation Drawer control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: NavigationDrawer
+control: Navigation Drawer
 documentation: ug
 ---
 
-# Getting Started with WPF NavigationDrawer (SfNavigationDrawer)
+# Getting Started with WPF Navigation Drawer (SfNavigationDrawer)
 
 This section helps you to build your application with SfNavigationDrawer.
 
@@ -34,13 +34,13 @@ Create new WPF Project in Visual Studio to display SfNavigationDrawer with data 
 
 Drag and drop the SfNavigationDrawer control from the Toolbox to your application.
 
-![WPF NavigationDrawer shows in Toolbox](getting-started_images/wpf-navigation-drawer-toolbox.png)
+![WPF Navigation Drawer shows in Toolbox](getting-started_images/wpf-navigation-drawer-toolbox.png)
 
 Now, the Syncfusion<sup>®</sup> Controls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
 ![Displaying Reference of WPF NavigationDrawer](getting-started_images/wpf-navigation-drawer-reference.png)
 
-![WPF NavigationDrawer with Namespace](getting-started_images/wpf-navigation-drawer-namespace.png)
+![WPF Navigation Drawer with Namespace](getting-started_images/wpf-navigation-drawer-namespace.png)
 
 ### Adding control manually in XAML
 
@@ -347,6 +347,6 @@ See also [Different display modes](https://help.syncfusion.com/wpf/navigation-dr
 
 {% endtabs %}
 
-![WPF NavigationDrawer](getting-started_images/wpf-navigation-drawer.png)
+![WPF Navigation Drawer](getting-started_images/wpf-navigation-drawer.png)
                    
 N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Getting_Started) in GitHub
