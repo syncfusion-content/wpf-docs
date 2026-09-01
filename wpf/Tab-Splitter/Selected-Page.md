@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Selected Page in WPF TabSplitter | Syncfusion®
+title: Selected Page in WPF Tab Splitter | Syncfusion®
 description: Select and manage active splitter pages programmatically by using the IsSelectedPage property to control page selection behavior.
 platform: wpf
 control: TabSplitter

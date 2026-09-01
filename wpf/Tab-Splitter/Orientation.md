@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
-title: Orientation in WPF TabSplitter | Syncfusion®
-description: Arrange TabSplitter items horizontally or vertically by configuring the orientation of tab groups and panels.
+title: Orientation in WPF Tab Splitter | Syncfusion®
+description: Arrange WPF Tab Splitter items horizontally or vertically by configuring the orientation of tab groups and panels.
 platform: wpf
 control: TabSplitter
 documentation: ug
@@ -9,10 +9,10 @@ documentation: ug
 
 # Orientation in WPF Tab Splitter
 
-TabSplitter Items are placed horizontally or vertically by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_Orientation) property. This is a dependency property which sets the orientation of the TabSplitter Item. It supports the following types of orientation.
+The WPF Tab Splitter Items are placed horizontally or vertically by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_Orientation) property. This is a dependency property which sets the orientation of the TabSplitterItem. It supports the following types of orientation.
 
-* Horizontal: TabSplitter Item in the TabSplitter is placed horizontally
-* Vertical: TabSplitter Item in the TabSplitter is placed vertically
+* Horizontal: TabSplitterItem in the WPF Tab Splitter is placed horizontally
+* Vertical: TabSplitterItem in the WPF Tab Splitter is placed vertically
 
 
 
