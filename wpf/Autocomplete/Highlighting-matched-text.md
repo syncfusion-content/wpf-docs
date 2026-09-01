@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Highlighting Matched Text in WPF AutoComplete | Syncfusion®
-description: Highlighting Matched Text in SfTextBoxExt visually emphasizes matching characters within filtered suggestion results.
+description: Highlighting Matched Text in WPF AutoComplete visually emphasizes matching characters within filtered suggestion results.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug

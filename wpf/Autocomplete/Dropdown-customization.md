@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropdown Customization in WPF AutoComplete | Syncfusion®
-description: Dropdown Customization in SfTextBoxExt enables tailoring the appearance and behavior of suggestion lists.
+description: Dropdown Customization in WPF AutoComplete enables tailoring the appearance and behavior of suggestion lists.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
@@ -240,7 +240,7 @@ textBoxExt.SelectionBackgroundColor = new SolidColorBrush(Colors.Red);
 
 ## Highlighting matched text in DropDown
 
-`SfTextBoxExt` supports highlighting the first matched item when a dropdown is opened by setting the `AutoHighlightMatchedItem` API to true. The default value is false.
+The `WPF AutoComplete` supports highlighting the first matched item when a dropdown is opened by setting the `AutoHighlightMatchedItem` API to true. The default value is false.
 
 {% tabs %}
 
