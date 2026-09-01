@@ -155,7 +155,7 @@ propertyGrid1.CategoryForeground = Brushes.Red;
 
 ## Customize the height of PropertyViewItem and PropertyCatagoryViewItem 
 
-We can customize the height of [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) and [PropertyCatagoryViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyCatagoryViewItem.html) using its `Padding` property by overriding style in PropertyGrid. 
+We can customize the height of [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) and [PropertyCatagoryViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyCatagoryViewItem.html) using its `Padding` property by overriding style in WPF PropertyGrid. 
 
 {% tabs %}
 
@@ -263,7 +263,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-example
 
 ## Theme
 
-PropertyGrid supports various built-in themes. Refer to the below links to apply themes for the PropertyGrid,
+The WPF PropertyGrid supports various built-in themes. Refer to the below links to apply themes for the WPF PropertyGrid,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

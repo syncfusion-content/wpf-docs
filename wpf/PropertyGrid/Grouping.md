@@ -82,7 +82,7 @@ N> If we use both the `Category` attribute and `GroupName` field of the `Display
 
 ## Grouping the Properties at runtime
 
-We can group the properties in the `PropertyGrid` without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event with [AutoGeneratingPropertyGridItemEventArgs.Category](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Category) property. Based on the value of `Category` property, the properties are grouped.
+We can group the properties in the `WPF PropertyGrid` without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event with [AutoGeneratingPropertyGridItemEventArgs.Category](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Category) property. Based on the value of `Category` property, the properties are grouped.
 
 {% tabs %}
 {% highlight C# %}
@@ -170,7 +170,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Expand or Collapse Category group
 
-We can expand or collapse the grouped properties programmatically by using [ExpandCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ExpandCategory_System_String_) and [CollapseCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CollapseCategory_System_String_) methods in the `PropertyGrid`. These methods will accept group name as argument.
+We can expand or collapse the grouped properties programmatically by using [ExpandCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_ExpandCategory_System_String_) and [CollapseCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CollapseCategory_System_String_) methods in the `WPF PropertyGrid`. These methods will accept group name as argument.
 
 ### Expand Category group 
 

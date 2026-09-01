@@ -14,7 +14,7 @@ The [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Propert
  For example, if you creates an `EmailID` property as a string type, `TextBox` is assigned as a value editor and all the text will be allowed. If you want to accept the input that is only in the mail id format, you can assign [SfMaskedEdit](https://www.syncfusion.com/wpf-ui-controls/maskedtextbox) control with email-id mask as the value editor for the `EmailID` property. 
 
 ## Best practice to follow
-When using the [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection) property to assign a custom editor to multiple properties of the same data type in the `PropertyGrid`, it is recommended to use the [`EditorType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_EditorType),[`PropertyType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_PropertyType) and [`HasPropertyType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_HasPropertyType) properties of the [`CustomEditor`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html) class. Otherwise, for proper functionality, you must create a new `CustomEditor` class and assign it to each property using the `Properties` collection property.
+When using the [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection) property to assign a custom editor to multiple properties of the same data type in the `WPF PropertyGrid`, it is recommended to use the [`EditorType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_EditorType),[`PropertyType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_PropertyType) and [`HasPropertyType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_HasPropertyType) properties of the [`CustomEditor`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html) class. Otherwise, for proper functionality, you must create a new `CustomEditor` class and assign it to each property using the `Properties` collection property.
 
 ## Creating the Custom Editor
 
@@ -352,7 +352,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Assigning a Custom Editor by the editor type
 
-By default, when we use the [CustomEditor.Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_Editor) to target multiple properties in `PropertyGrid`, the same custom editor instance is used for all those properties. To maintain a dedicated or separate instance of the custom editor for each property, use [CustomEditor.EditorType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_EditorType). The default value of the `EditorType` property is **null**. 
+By default, when we use the [CustomEditor.Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_Editor) to target multiple properties in `WPF PropertyGrid`, the same custom editor instance is used for all those properties. To maintain a dedicated or separate instance of the custom editor for each property, use [CustomEditor.EditorType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_EditorType). The default value of the `EditorType` property is **null**. 
 
 You can set the value for `EditorType` property when custom editor is initialized in `ViewModel` class as shown below.
 
@@ -409,6 +409,9 @@ class ViewModel
 
 You can also set value for `CustomEditorType` property for `CustomEditor` class in the xaml file as shown below.
 
+{% tabs %}
+{% highlight xaml %}
+
 <syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}" 
                             x:Name="propertyGrid1" >
     <syncfusion:PropertyGrid.DataContext>
@@ -421,15 +424,18 @@ You can also set value for `CustomEditorType` property for `CustomEditor` class 
         </syncfusion:PropertyGrid.CustomEditorCollection>
 </syncfusion:PropertyGrid>
 
+{% endhighlight  %}
+{% endtabs %}
+
 ![CustomEditor applied for integer type properties](CustomEditor-support_images/CustomEditor-Collection2.png)
 
 ## Use constructor with parameters in custom editor
 
-By default, [`PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid) control only invokes the constructor without parameter in custom editor. You can invoke and pass arguments to the constructors with any number of parameters in custom editor using the [ConstructorParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_ConstructorParameters) property of [CustomEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor) class. The default value of `ConstructorParameter` is **null**. This can be achieved by following the below steps.
+By default, [`WPF PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid) control only invokes the constructor without parameter in custom editor. You can invoke and pass arguments to the constructors with any number of parameters in custom editor using the [ConstructorParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_ConstructorParameters) property of [CustomEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor) class. The default value of `ConstructorParameter` is **null**. This can be achieved by following the below steps.
 
 N> `ConstructorParameter` property will work only if a value is assigned for the `EditorType` property in the `CustomEditor` class.
 
-1. Create a custom editor for the desired property item in `PropertyGrid`. Add constructor with parameters in the custom editor class.
+1. Create a custom editor for the desired property item in `WPF PropertyGrid`. Add constructor with parameters in the custom editor class.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -584,7 +590,7 @@ Since we have assigned the custom editor for property type **long(Int64)**, the 
 ![ConstructorParameter passed in CustomEditor](CustomEditor-support_images/propertygrid-wpf-constructor-with-parameter-customeditor.png)
 
 ## Create custom editor control for the property item
-The [`PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid) control allows users to create their editor controls using the [CustomEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html) class and [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection) property for property items. The custom editors can be inherited from [ITypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html) and [BaseTypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html) interfaces. 
+The [`WPF PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid) control allows users to create their editor controls using the [CustomEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html) class and [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection) property for property items. The custom editors can be inherited from [ITypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html) and [BaseTypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html) interfaces. 
 
 The [`Create`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Create_System_Reflection_PropertyInfo_) method in the custom editor class can be used to create and assign the required editor controls for specific property items. The Create method's PropertyInfo parameter allows users to customize the editor control based on the value of [`PropertyInfo`](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.propertyinfo?view=net-5.0) class.
 
@@ -613,7 +619,7 @@ public object Create(PropertyInfo propertyInfo)
 N> If a [CustomEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html) class is inherited from [BaseTypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html) interface, the Create method will have [`PropertyDescriptor`](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertydescriptor?view=net-5.0) parameter value which can be used as per requirement.
 
 ## Attach the custom editor with property item
-The [`PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid) control control allows users to bind the essential properties of the custom editor control with the properties of the property items using the [`Attach`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Attach_Syncfusion_Windows_PropertyGrid_PropertyViewItem_Syncfusion_Windows_PropertyGrid_PropertyItem_) method. You can also customize the property items using the [PropertyItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyItem.html) and [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) using the parameters in the `Attach` method.
+The [`WPF PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid) control control allows users to bind the essential properties of the custom editor control with the properties of the property items using the [`Attach`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Attach_Syncfusion_Windows_PropertyGrid_PropertyViewItem_Syncfusion_Windows_PropertyGrid_PropertyItem_) method. You can also customize the property items using the [PropertyItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyItem.html) and [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) using the parameters in the `Attach` method.
 
 {% tabs %}
 {% highlight C# %}
@@ -640,7 +646,7 @@ public void Attach(PropertyViewItem property, PropertyItem info)
 ![WPF PropertyGrid custom editor Attach method](Editor_images/propertygrid_attach_method.png)
 
 ## Dispose the custom editor
-The [`PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid) control control allows you to dispose the custom editor control and it's dependent properties in CustomEditor class by using the [`Detach`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Detach_Syncfusion_Windows_PropertyGrid_PropertyViewItem_) method. You can also dispose the [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) which will be available from the parameter of `Detach` method.
+The [`WPF PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid) control control allows you to dispose the custom editor control and it's dependent properties in CustomEditor class by using the [`Detach`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Detach_Syncfusion_Windows_PropertyGrid_PropertyViewItem_) method. You can also dispose the [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) which will be available from the parameter of `Detach` method.
 
 {% tabs %}
 {% highlight C# %}

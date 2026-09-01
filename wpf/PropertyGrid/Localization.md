@@ -25,7 +25,7 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 
-To localize the `PropertyGrid` based on `CurrentUICulture` using resource files, follow the below steps. 
+To localize the `WPF PropertyGrid` based on `CurrentUICulture` using resource files, follow the below steps. 
 
 **Step 1:** Create new folder and named as `Resources` in your application. 
 
@@ -43,7 +43,7 @@ To localize the `PropertyGrid` based on `CurrentUICulture` using resource files,
 
 ![Added string property of PropertyGrid which need to localized in resource file](Localization_images/wpf-PropertyGrid-localized-string-properties.png)
 
-The following screenshot shows the localized `PropertyGrid` control.
+The following screenshot shows the localized `WPF PropertyGrid` control.
 
 ![WPF PropertyGrid contain localized today and none button text](Localization_images/wpf-PropertyGrid-localization.png)
 

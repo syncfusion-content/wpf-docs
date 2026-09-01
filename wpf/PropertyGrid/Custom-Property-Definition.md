@@ -15,13 +15,13 @@ In this section, you will learn how to configure properties manually (in `xaml` 
 
 By default, property items of `PropertyGrid.SelectedObject` are automatically generated in the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) control by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event. Now, you can restrict the auto generated items and manually define a property items through the `XAML` by using the [PropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem).
 
-### Adding defined PropertyGridItems into PropertyGrid
+### Adding defined PropertyGridItems into WPF PropertyGrid
 
-If you want to load the manually defined property items into the `PropertyGrid`, add that `Items` collection property. You can enable it only by setting the [AutoGenerateItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGenerateItems) property value as `false`. The default value of `AutoGenerateItems` property is `true`.
+If you want to load the manually defined property items into the `WPF PropertyGrid`, add that `Items` collection property. You can enable it only by setting the [AutoGenerateItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGenerateItems) property value as `false`. The default value of `AutoGenerateItems` property is `true`.
 
 N> When `AutoGenerateItems` is `false`, `AutoGeneratingPropertyGridItem` event will not be triggered.
 
-In the following example, `AutoGeneratingPropertyGridItem` event not triggered by disabling the `AutoGenerateItems` and items which are manually added in the `Items` collection only loaded in the `PropertyGrid`.
+In the following example, `AutoGeneratingPropertyGridItem` event not triggered by disabling the `AutoGenerateItems` and items which are manually added in the `Items` collection only loaded in the `WPF PropertyGrid`.
 
 {% tabs %}
 {% highlight C# %}
@@ -90,7 +90,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-gr
 
 ## Add or remove PropertyItem at runtime
 
-You can manually add or remove the property item at runtime by adding or removing that item from the [Items](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_Items) collection property. You can also clear all the property items from the `PropertyGrid`.
+You can manually add or remove the property item at runtime by adding or removing that item from the [Items](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_Items) collection property. You can also clear all the property items from the `WPF PropertyGrid`.
 
 {% tabs %}
 {% highlight C# %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Virtualization in WPF PropertyGrid
 
-By loading only items that are within the viewport, UI virtualization allows `PropertyGrid` to load faster. Virtualization is enabled by default.
+By loading only items that are within the viewport, UI virtualization allows `WPF PropertyGrid` to load faster. Virtualization is enabled by default.
 
 {% tabs %}
 {% highlight C# %}

@@ -32,12 +32,12 @@ The following table explains how navigation is performed between properties,
 <tr>
 <td>3</td>
 <td>Home</td>
-<td>Selection will be moved from current property to first property of the PropertyGrid.</td>
+<td>Selection will be moved from current property to first property of the WPF PropertyGrid.</td>
 </tr>
 <tr>
 <td>4</td>
 <td>End</td>
-<td>Selection will be moved from current property to last property of the PropertyGrid.</td>
+<td>Selection will be moved from current property to last property of the WPF PropertyGrid.</td>
 </tr>
 <tr>
 <td>5</td>
@@ -52,7 +52,7 @@ The following table explains how navigation is performed between properties,
 <tr>
 <td>7</td>
 <td>Tab</td>
-<td>Selecting the first item when no item is chosen and moving out of the PropertyGrid on subsequent Tab key presses when the focus is already within.
+<td>Selecting the first item when no item is chosen and moving out of the WPF PropertyGrid on subsequent Tab key presses when the focus is already within.
 <br/> 
 <br/>
 <img src="KeyNavigation-Images/first_time_tab_key_press.png" alt="Pressing the Tab key focuses on the first item"/>
@@ -63,7 +63,7 @@ The following table explains how navigation is performed between properties,
 <tr>
 <td>8</td>
 <td>Shift + Tab</td>
-<td>Selecting the last item when no selection exists, while subsequent Shift + Tab presses moves the focus out of the PropertyGrid when the focus is within.
+<td>Selecting the last item when no selection exists, while subsequent Shift + Tab presses moves the focus out of the WPF PropertyGrid when the focus is within.
 <br/>
 <br/>
 <img src="KeyNavigation-Images/shift+tab_key_press.png" alt="Pressing the Shift + Tab key focuses on the last item"/>
@@ -80,9 +80,9 @@ The following table explains how navigation is performed between properties,
 
 ## Handling focus of the editors
 
-By default, `PropertyGrid` will handle the keyboard navigation, so pressing keydown(Up and Down) will move the focus to next/previous editor from current editor. For all built-in editors, moving focus to next editor will be handled by `PropertyGrid`. For custom editors, property navigation (focus) will not happen if custom editor handles up or down key. To override keyboard navigation for custom editors, override [ShouldPropertyGridTryToHandleKeyDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html#Syncfusion_Windows_PropertyGrid_BaseTypeEditor_ShouldPropertyGridTryToHandleKeyDown_System_Windows_Input_Key_) method from `BaseTypeEditor`.
+By default, `WPF PropertyGrid` will handle the keyboard navigation, so pressing keydown(Up and Down) will move the focus to next/previous editor from current editor. For all built-in editors, moving focus to next editor will be handled by `WPF PropertyGrid`. For custom editors, property navigation (focus) will not happen if custom editor handles up or down key. To override keyboard navigation for custom editors, override [ShouldPropertyGridTryToHandleKeyDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html#Syncfusion_Windows_PropertyGrid_BaseTypeEditor_ShouldPropertyGridTryToHandleKeyDown_System_Windows_Input_Key_) method from `BaseTypeEditor`.
 
-For example, if you use `ComboBox` as custom editor, up and down key will be handled by it. So, property navigation will not happen. You can override `ShouldPropertyGridTryToHandleKeyDown` and return `true`, to allow property grid control to handle the key down events. When it returns `false`, the editor will handles the key down event.
+For example, if you use `ComboBox` as custom editor, up and down key will be handled by it. So, property navigation will not happen. You can override `ShouldPropertyGridTryToHandleKeyDown` and return `true`, to allow WPF PropertyGrid control to handle the key down events. When it returns `false`, the editor will handles the key down event.
 
 {% tabs %}
 {% highlight C# %}

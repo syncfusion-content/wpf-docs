@@ -77,7 +77,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 We can change the properties as read only without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html)  event with [AutoGeneratingPropertyGridItemEventArgs.ReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_ReadOnly) property.
 
-When `AutoGeneratingPropertyGridItemEventArgs.ReadOnly` property value sets as `true`, the property will be classified as read only, then the `PropertyGrid` will not allow the user to edit the property values. The Default value of `AutoGeneratingPropertyGridItemEventArgs.ReadOnly` property is `false`.
+When `AutoGeneratingPropertyGridItemEventArgs.ReadOnly` property value sets as `true`, the property will be classified as read only, then the `WPF PropertyGrid` will not allow the user to edit the property values. The Default value of `AutoGeneratingPropertyGridItemEventArgs.ReadOnly` property is `false`.
 
 {% tabs %}
 {% highlight C# %}
