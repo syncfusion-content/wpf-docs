@@ -211,7 +211,7 @@ N> You can load custom control in drop-down only when SelectionMode is Multiple.
 
 ## Events
 
-You can handle the selection operations in MultiColumn Dropdown Control by using [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectionChanged) event.
+You can handle the selection operations in MultiColumn Dropdown by using [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectionChanged) event.
 
 ### SelectionChanged
 

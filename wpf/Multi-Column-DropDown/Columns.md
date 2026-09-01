@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns in WPF MultiColumn Dropdown
 
-WPF MultiColumn Dropdown Control enables you to define the columns as like in Data Grid. You can let the `MultiColumn Dropdown` to create columns or you can manually defined columns to be displayed. Below sections explains both ways,
+WPF MultiColumn Dropdown enables you to define the columns as like in Data Grid. You can let the `MultiColumn Dropdown` to create columns or you can manually defined columns to be displayed. Below sections explains both ways,
  
     1. Automatically generating columns
     2. Manually define columns
@@ -17,11 +17,11 @@ WPF MultiColumn Dropdown Control enables you to define the columns as like in Da
 ## Automatically generating columns
 
 The automatic column generation based on properties of data object can be enabled or disabled by setting [SfMultiColumnDropDownControl.AutoGenerateColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AutoGenerateColumns). 
-You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#defining-columns) to know more about the automatic column generation in MultiColumn Dropdown Control.
+You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#defining-columns) to know more about the automatic column generation in MultiColumn Dropdown.
 
 ## Manually defining columns
 
-MultiColumn Dropdown control allows you to define the columns manually by adding desired column to the [SfMultiColumnDropdownControl.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_Columns) collection.
+MultiColumn Dropdown allows you to define the columns manually by adding desired column to the [SfMultiColumnDropdownControl.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_Columns) collection.
 
 {% tabs %}
 {% highlight xaml %}

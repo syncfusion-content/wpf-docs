@@ -9,13 +9,13 @@ documentation: ug
 
 # UIAutomation in WPF MultiColumn Dropdown 
 
-WPF MultiColumn Dropdown Control supports the following UIAutomations,
+WPF MultiColumn Dropdown supports the following UIAutomations,
 
 ## Coded UI
 
-WPF MultiColumn Dropdown Control supports CodedUITest automation that enables you to create an automation test with MultiColumn Dropdown Control elements and record the sequence of actions.
+WPF MultiColumn Dropdown supports CodedUITest automation that enables you to create an automation test with its elements and record the sequence of actions.
 
-There are three level of support in CodedUITest for MultiColumn Dropdown Control.
+There are three level of support in CodedUITest for MultiColumn Dropdown.
 
 
 <table>
@@ -36,13 +36,13 @@ Provide custom properties for UI elements when you drag the Cross hair to any UI
 Level – 3</td><td>
 Coded UI Test Builder generates code from recorded session and custom class is implemented to access custom properties, so the generated code is simplified.</td></tr>
 </table>
-The following screenshot illustrates the MultiColumn Dropdown Control properties, when you drag the crosshair to the MultiColumn Dropdown control.
+The following screenshot illustrates the MultiColumn Dropdown properties, when you drag the crosshair to the control.
 
 ![WPF Multi Column Dropdown Coded UI](Features_images/Features_img12.png)
 
 
 
-Following are the properties for MultiColumn Dropdown Control.
+Following are the properties for MultiColumn Dropdown.
 
 ### Property Table
 
@@ -60,13 +60,13 @@ SfMultiColumnDropDownControl</td><td>
 ### Quick Test Professional
 
 
-MultiColumn Dropdown Control supports for QTP test. You can record the actions performed in the control, by mentioning the corresponding method name with Syncfusion<sup>®</sup> namespace. To know more about QTP test refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp).
+MultiColumn Dropdown supports for QTP test. You can record the actions performed in the control, by mentioning the corresponding method name with Syncfusion<sup>®</sup> namespace. To know more about QTP test refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp).
 
-The following screenshot illustrates the QTP Test for MultiColumn Dropdown Control.
+The following screenshot illustrates the QTP Test for MultiColumn Dropdown.
 
 ![WPF Multi Column Dropdown Quick Test Professional](Features_images/Features_img13.png)
 
-Following are methods for MultiColumn DropDown Control.
+Following are methods for MultiColumn DropDown.
 
 ### Methods Table
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Filtering in WPF MultiColumn Dropdown
 
-WPF MultiColumn Dropdown Control provides support to filter the drop down display list based on typed text by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowIncrementalFiltering) as `true`. The records are filter based on `DisplayMember`. 
+WPF MultiColumn Dropdown provides support to filter the drop down display list based on typed text by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowIncrementalFiltering) as `true`. The records are filter based on `DisplayMember`. 
 
 By default, drop down list is filtered based on `SearchCondition.StartsWith` condition. You can change the filtering search condition by setting [SearchCondition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SearchCondition) (StartsWith, Contains, Equals options).
 
@@ -41,7 +41,7 @@ You can decides whether the automatic completion of text and the filtering are c
 
 ## Ignore Diacritic Sensitivity
 
-By default, MultiColumn Dropdown Control filter or auto-complete the data based on an input character only. For example, if we type normal character in editor, it will not filter or auto-complete the record containing a diacritic character. You can disable the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property if you want to filter or auto-complete data that also contains a diacritic character while typing normal character in the editor.
+By default, MultiColumn Dropdown filter or auto-complete the data based on an input character only. For example, if we type normal character in editor, it will not filter or auto-complete the record containing a diacritic character. You can disable the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property if you want to filter or auto-complete data that also contains a diacritic character while typing normal character in the editor.
     
 {% tabs %}
 {% highlight xml %}
@@ -60,9 +60,9 @@ By default, MultiColumn Dropdown Control filter or auto-complete the data based 
 
 ![The image describes the AllowDiacriticSensitiveFiltering support](Filtering_images/Filtering_img3.gif)
 
-## How to filter MultiColumn Dropdown Control based on various column values
+## How to filter MultiColumn Dropdown based on various column values
 
-By default, MultiColumn Dropdown Control filter the text based on `DisplayMember` (considers single column text only). You can also filter the text based on multiple columns by overriding the [FilterRecord](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_FilterRecord_System_Object_) method in `MultiColumn Dropdown` and use the [SearchText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SearchText) property to get the entered text in editor.
+By default, MultiColumn Dropdown filter the text based on `DisplayMember` (considers single column text only). You can also filter the text based on multiple columns by overriding the [FilterRecord](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_FilterRecord_System_Object_) method and use the [SearchText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SearchText) property to get the entered text in editor.
  
 {% tabs %}
 {% highlight c# %}
@@ -106,7 +106,7 @@ Here, `Title` is defined as a `DisplayMember`. But it also searches the match ca
 ![The image describes the custom filtering by FilterRecord method](Filtering_images/Filtering_img2.png)
 
 
-N> Excel-like filtering is not supported in MultiColumn Dropdown Control. You can customize the MultiColumn Dropdown ControlTemplate to enable the Excel-like filtering by setting `AllowFiltering` as true in SfDataGrid.
+N> Excel-like filtering is not supported in MultiColumn Dropdown. You can customize its ControlTemplate to enable the Excel-like filtering by setting `AllowFiltering` as true in Data Grid.
 
 ## Filtering Delay
 By default, filtering and auto-completion operations performed while typing in the editor will be delayed for a specified amount of time (milliseconds). The period of delaying filtering and auto-completion operations can be specified by the `FilterDelay` property. The default value for the `FilterDelay` property is `500`.
