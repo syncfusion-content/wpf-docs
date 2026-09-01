@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in WPF Button | Syncfusion®
-description: Events in ButtonAdv provide notifications for user interactions, command execution, and button state changes.
+description: Events in WPF Button provide notifications for user interactions, command execution, and WPF Button state changes.
 platform: wpf
 control: ButtonAdv
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Events in WPF Button (ButtonAdv)
 
-The ButtonAdv comprises of the pre-defined events that are illustrated below.
+The WPF Button comprises of the pre-defined events that are illustrated below.
 
 ## Click
 
-The events occurs when the button control is clicked and any action can be handled in the respective event handler.
+The events occurs when the WPF Button control is clicked and any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %}
@@ -36,7 +36,7 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 ## Checked
 
-The event occurs when the button control is utilized as toggle button, that is, when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsCheckable) property value is set to **true**. Any action can be handled in the respective event handler.
+The event occurs when the WPF Button control is utilized as ToggleButton, that is, when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsCheckable) property value is set to **true**. Any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %}

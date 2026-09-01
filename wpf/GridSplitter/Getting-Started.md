@@ -9,15 +9,15 @@ documentation: ug
 
 # Getting Started with WPF GridSplitter (SfGridSplitter)
 
-This section explains how to create a [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) (SfGridSplitter) and explains about its structure.
+This section explains how to create a [WPF GridSplitter](https://www.syncfusion.com/wpf-controls/gridsplitter) (WPF GridSplitter) and explains about its structure.
 
-## Structure of SfGridSplitter
+## Structure of WPF GridSplitter
 
-![WPF SfGridSplitter Control](Getting-Started-images/Grid-Splitter.png)
+![WPF GridSplitter Control](Getting-Started-images/Grid-Splitter.png)
 
 ## Visual representation 
 
-![Getting started with SfGridSplitter](Positioning-GridSplitter-images/Getting_started1.gif)
+![Getting started with WPF GridSplitter](Positioning-GridSplitter-images/Getting_started1.gif)
 
 ## Assembly deployment
 
@@ -35,7 +35,7 @@ To add the control manually in XAML, follow the given steps:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
 2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Declare the `SfGridSplitter` control in the XAML page.
+3. Declare the `WPF GridSplitter` control in the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -65,8 +65,8 @@ To add the control manually in C#, follow the given steps:
 1. Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2. Import the `SfGridSplitter` namespace **using Syncfusion.Windows.Controls.Input;**.
-3. Create an `SfGridSplitter` instance, and add it to the window.
+2. Import the `WPF GridSplitter` namespace **using Syncfusion.Windows.Controls.Input;**.
+3. Create an `WPF GridSplitter` instance, and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -93,13 +93,13 @@ namespace SfGridSplitterSample {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![SfGridSplitter control added by code](Getting-Started-images/WPF-Grid-Splitter.png)
+![WPF GridSplitter control added by code](Getting-Started-images/WPF-Grid-Splitter.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter)
 
 ## Resize the grid rows
 
-If we want to resize the specific grid rows, place the `SfGridSplitter` on next or previous row and set the `HorizontalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
+If we want to resize the specific grid rows, place the `WPF GridSplitter` on next or previous row and set the `HorizontalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -140,13 +140,13 @@ If we want to resize the specific grid rows, place the `SfGridSplitter` on next 
 {% endhighlight %}
 {% endtabs %}
 
-![Resize the grid rows using SfGridSplitter](Positioning-GridSplitter-images/Horizontal_Splitter_img.png)
+![Resize the grid rows using WPF GridSplitter](Positioning-GridSplitter-images/Horizontal_Splitter_img.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter)
 
 ## Resize the grid columns
 
-If we want to resize the specific grid columns, place the `SfGridSplitter` on next or previous column and set the `VerticalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
+If we want to resize the specific grid columns, place the `WPF GridSplitter` on next or previous column and set the `VerticalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -187,11 +187,11 @@ If we want to resize the specific grid columns, place the `SfGridSplitter` on ne
 {% endhighlight %}
 {% endtabs %}
 
-![Resize the grid columns using SfGridSplitter](Positioning-GridSplitter-images/Vertical_Splitter_img.png)
+![Resize the grid columns using WPF GridSplitter](Positioning-GridSplitter-images/Vertical_Splitter_img.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
-N> We can restrict the moving location of the grid splitter (Left or Right or Bottom or Top) by setting the value for `ResizeBehavior` property. The `ResizeBehavior` value must be assigned based on the row or column where the grid splitter placed.
+N> We can restrict the moving location of the WPF GridSplitter (Left or Right or Bottom or Top) by setting the value for `ResizeBehavior` property. The `ResizeBehavior` value must be assigned based on the row or column where the grid splitter placed.
 
 ## Resizing the grid rows and columns with specific pixel
 
@@ -434,7 +434,7 @@ N> You can see the effect of collapse button templates only on when `EnableColla
 {% endhighlight %}
 {% endtabs %}
 
-![SfGridSplitter with expand or collapse button template](Positioning-GridSplitter-images/Collapsebuttontemplate.png)
+![WPF GridSplitter with expand or collapse button template](Positioning-GridSplitter-images/Collapsebuttontemplate.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) 
 
@@ -535,13 +535,13 @@ If you you want to change the UI of vertical and horizontal splitter gripper sep
 {% endhighlight %}
 {% endtabs %}
 
-![SfGridSplitter with custom gripper](Positioning-GridSplitter-images/Gripper.png)
+![WPF GridSplitter with custom gripper](Positioning-GridSplitter-images/Gripper.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Custom-Gripper)
 
 ## Deferred resizing
 
-We can directly redistribute the row or columns by using `SfGridSplitter`. If we want to preview the location of redistributing row or columns before it changed, we can use the [ShowsPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property as `true`.
+We can directly redistribute the row or columns by using `WPF GridSplitter`. If we want to preview the location of redistributing row or columns before it changed, we can use the [ShowsPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property as `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -581,13 +581,13 @@ We can directly redistribute the row or columns by using `SfGridSplitter`. If we
 {% endhighlight %}
 {% endtabs %}
 
-![SfGridSplitter with deferred resizing](Positioning-GridSplitter-images/ShowsPreview.png)
+![WPF GridSplitter with deferred resizing](Positioning-GridSplitter-images/ShowsPreview.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
-## Grid splitter for the merged columns or rows
+## WPF GridSplitter for the merged columns or rows
 
-If we want resize the merged columns or rows, place the grid splitter on next or previous row or column of the grid.
+If we want resize the merged columns or rows, place the WPF GridSplitter on next or previous row or column of the grid.
 
 {% tabs %}
 {% highlight XAML %}
@@ -643,16 +643,16 @@ If we want resize the merged columns or rows, place the grid splitter on next or
 {% endhighlight %}
 {% endtabs %}
 
-![Grid splitter for the merged columns or rows](Positioning-GridSplitter-images/Columspan_img.png)
+![WPF GridSplitter for the merged columns or rows](Positioning-GridSplitter-images/Columspan_img.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
 ## Theme
 
-SfGridSplitter supports various built-in themes. Refer to the below links to apply themes for the SfGridSplitter,
+The WPF GridSplitter supports various built-in themes. Refer to the below links to apply themes for the WPF GridSplitter,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfGridSplitter](Getting-Started-images/WPF-Grid-Splitter-theme-support.png)
+  ![Setting theme to WPF GridSplitter](Getting-Started-images/WPF-Grid-Splitter-theme-support.png)

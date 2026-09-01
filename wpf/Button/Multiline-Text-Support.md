@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiline Text Support in WPF Button | Syncfusion®
-description: Multiline text support in Button (ButtonAdv) enables displaying button content across multiple lines.
+description: Multiline text support in WPF Button (ButtonAdv) enables displaying Button content across multiple lines.
 platform: wpf
 control: ButtonAdv
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Multiline Text in WPF Button (ButtonAdv)
 
-Multiline support is used to render text content of the Button control in multiple lines for precise view. One can apply the multiline text by using the [IsMultiLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsMultiLine) property.
+Multiline support is used to render text content of the WPF Button control in multiple lines for precise view. One can apply the multiline text by using the [IsMultiLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsMultiLine) property.
 
-N> This property is only applicable for large size mode button.
+N> This property is only applicable for large size mode WPF Button.
 
 {% tabs %}
 {% highlight XAML %}
@@ -30,4 +30,4 @@ button.Label = "Sign in with your Syncfusion Account";
 {% endhighlight %}
 {% endtabs %}
 
-![WPF ButtonAdv MultiLine](Multi-Line-Support_images/Multi-Line-Support_img1.png)
+![WPF Button MultiLine](Multi-Line-Support_images/Multi-Line-Support_img1.png)

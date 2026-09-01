@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Themes in WPF Button | Syncfusion®
-description: Themes in Button (ButtonAdv) provide consistent visual styles that align with application design requirements.
+description: Themes in WPF Button (ButtonAdv) provide consistent visual styles that align with application design requirements.
 platform: wpf
 control: ButtonAdv
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes in WPF Button (ButtonAdv)
 
-Button supports various built-in themes. Refer to the below links to apply themes for the Button,
+The WPF Button supports various built-in themes. Refer to the below links to apply themes for the WPF Button,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
