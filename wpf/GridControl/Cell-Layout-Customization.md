@@ -266,7 +266,7 @@ VerticalAlignment</td></tr>
 
 ### Cell Types
 
-The Excel-like Grid allows any controls to be loaded inside graphic cells. This greatly improves the usability and appearance of the Excel-like Grid. This attribute of a grid cell is referred to as its cell type.
+The Excel-like Grid allows any controls to be loaded inside graphic cells. This greatly improves the usability and appearance of the control. This attribute of a grid cell is referred to as its cell type.
 
 #### Built-in Cell Types
 

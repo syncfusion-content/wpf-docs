@@ -33,7 +33,7 @@ Please follow the steps below to add the Excel-like Grid through a designer.
 
 2. Open the Designer window.
 
-3. Drag ScrollViewer from the Toolbox and drop it in the Designer window (Since the grid doesn’t have a built-in ScrollViewer, to make the grid flow based on data, the grid should be placed inside the ScrollViewer control.
+3. Drag ScrollViewer from the Toolbox and drop it in the Designer window (Since the Excel-like Grid doesn’t have a built-in ScrollViewer, to make the grid flow based on data, the grid should be placed inside the ScrollViewer control.
 
    ![WPF Designer](Getting-Started_images/Getting-Started_img6.png)
 
@@ -43,7 +43,7 @@ Please follow the steps below to add the Excel-like Grid through a designer.
 
 5. Once you drop it in the ScrollViewer, the grid will be added to the designer and its dependent assemblies will be added to the project.
 
-   ![Designer after dropping the grid](Getting-Started_images/Getting-Started_img8.png)
+   ![Designer after dropping](Getting-Started_images/Getting-Started_img8.png)
 
 ### Programmatically Adding the Excel-like Grid
 
