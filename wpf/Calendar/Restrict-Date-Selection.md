@@ -36,7 +36,7 @@ this.calendarEdit.MaxDate = new DateTime(2020, 05, 10);
 {% endhighlight  %}
 {% endtabs %}
 
-![CalendarEdit showing dates that are disabled](Getting-Started_images/wpf-calendar-control-min-max-dates.png)
+![WPF Calendar showing dates that are disabled](Getting-Started_images/wpf-calendar-control-min-max-dates.png)
 
 N> The `MaxDate` should be greater than `MinDate` of the `CalendarEdit`. If the `MinDate` property is greater than the new `MaxDate`, then the `MinDate` will be reset to the `MaxDate`.
 
@@ -95,7 +95,7 @@ this.calendarEdit.DisableDateSelection = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Restrict date selection in the CalendarEdit control](Restrict-Date-Selection_images/DisableDateSelection.png)
+![Restrict date selection in the WPF Calendar control](Restrict-Date-Selection_images/DisableDateSelection.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Restrict-Date)
 
@@ -179,7 +179,7 @@ this.calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
 {% endhighlight %}
 {% endtabs %}
 
-![Blockout days custom appearance in CalendarEdit](Restrict-Date-Selection_images/BlockOutDays.png)
+![Blockout days custom appearance in WPF Calendar](Restrict-Date-Selection_images/BlockOutDays.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Blackoutdates)
 
@@ -207,7 +207,7 @@ this.calendarEdit.ShowPreviousMonthDays = false;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarEdit display only the current month days](Restrict-Date-Selection_images/ShowCurrentMonthDays.png)
+![WPF Calendar display only the current month days](Restrict-Date-Selection_images/ShowCurrentMonthDays.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Restrict-Date)
 
@@ -235,7 +235,7 @@ this.calendarEdit.Date = new DateTime(2020, 08, 12);
 {% endhighlight %}
 {% endtabs %}
 
-![ReadOnly mode of the CalendarEdit control](Restrict-Date-Selection_images/AllowSelection.png)
+![ReadOnly mode of the WPF Calendar control](Restrict-Date-Selection_images/AllowSelection.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Restrict-Date)
 

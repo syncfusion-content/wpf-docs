@@ -37,7 +37,7 @@ this.calendarEdit.MouseOverBorderBrush = Brushes.DarkGoldenrod;
 {% endhighlight %}
 {% endtabs %}
 
-![Changed the default and mouse hover background of CalendarEdit](Appearance_images/Foreground.png)
+![Changed the default and mouse hover background of WPF Calendar](Appearance_images/Foreground.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Appearance)
 
@@ -65,7 +65,7 @@ this.calendarEdit.MouseOverBackground = Brushes.Green;
 {% endhighlight %}
 {% endtabs %}
 
-![Changed the default and mouse hover background of CalendarEdit](Appearance_images/Background.png)
+![Changed the default and mouse hover background of WPF Calendar](Appearance_images/Background.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Appearance)
 
@@ -103,4 +103,4 @@ CalendarEdit supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
- ![Setting theme to WPF CalendarEdit](Getting-Started_images/wpf-calendar-theme.png)
+ ![Setting theme to WPF WPF Calendar](Getting-Started_images/wpf-calendar-theme.png)

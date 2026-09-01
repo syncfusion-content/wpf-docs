@@ -34,7 +34,7 @@ dateTimeEdit.Foreground = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with Red foreground](appearance-images/Appearance_Foreground.png)
+![WPF DateTimePicker with Red foreground](appearance-images/Appearance_Foreground.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Appearance) in GitHub
 
@@ -63,7 +63,7 @@ dateTimeEdit.SelectionBrush = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with Red background](appearance-images/Appearance_Background.png)
+![WPF DateTimePicker with Red background](appearance-images/Appearance_Background.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Appearance) in GitHub
 
@@ -90,7 +90,7 @@ dateTimeEdit.FocusedBorderBrush = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with Red focused border](appearance-images/FocusedBorderBrush.png)
+![WPF DateTimePicker with Red focused border](appearance-images/FocusedBorderBrush.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Appearance) in GitHub
 
@@ -117,7 +117,7 @@ dateTimeEdit.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with RightToLeft flow direction](appearance-images/FlowDirection_RightToLeft.png)
+![WPF DateTimePicker with RightToLeft flow direction](appearance-images/FlowDirection_RightToLeft.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Appearance) in GitHub
 
