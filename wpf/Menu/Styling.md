@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling in WPF Menu | Syncfusion®
-description: Styling in MenuAdv enables customizing menu and menu item appearance through styles, templates, and visual settings.
+description: Styling in WPF Menu enables customizing menu and menu item appearance through styles, templates, and visual settings.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -11,10 +11,10 @@ documentation: ug
 
 ## Theme
 
-MenuAdv supports various built-in themes. Refer to the below links to apply themes for the MenuAdv,
+The WPF Menu supports various built-in themes. Refer to the below links to apply themes for the WPF Menu,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-   ![Setting Theme to WPF MenuAdv](Getting-Started_images/wpf-menu-theme.png)
+   ![Setting Theme to WPF Menu](Getting-Started_images/wpf-menu-theme.png)
