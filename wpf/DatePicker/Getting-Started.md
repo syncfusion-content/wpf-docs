@@ -25,7 +25,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Add control through designer
 
-The `SfDatePicker` control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
+The `WPF DatePicker` control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF

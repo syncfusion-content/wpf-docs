@@ -36,7 +36,7 @@ dateTimeEdit.Height = 25;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with mask editing](Editing-Support_images/wpf-datetimeedit-mask-mode.png)
+![WPF DateTimePicker with mask editing](Editing-Support_images/wpf-datetimeedit-mask-mode.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/SettingDate) in GitHub
 
@@ -185,7 +185,7 @@ dateTimeEdit.DateTime = new DateTime(2020, 06, 30);
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with mask editing](Editing-Support_images/DateTime.png)
+![WPF DateTimePicker with mask editing](Editing-Support_images/DateTime.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/SettingDate) in GitHub
 
@@ -271,7 +271,7 @@ dateTimeEdit.CanEdit = true;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with free form editing](Editing-Support_images/wpf-datetimeedit-default-mode.png)
+![WPF DateTimePicker with free form editing](Editing-Support_images/wpf-datetimeedit-default-mode.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -298,7 +298,7 @@ dateTimeEdit.EnableMouseWheelEdit = true;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit value changed on mouse wheel](Editing-Support_images/wpf-datetimeedit-mask-mode.png)
+![WPF DateTimePicker value changed on mouse wheel](Editing-Support_images/wpf-datetimeedit-mask-mode.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -327,7 +327,7 @@ dateTimeEdit.IsEnabledRepeatButton= true;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with updown button to edit value](Editing-Support_images/IsVisibleRepeatButton.gif)
+![WPF DateTimePicker with updown button to edit value](Editing-Support_images/IsVisibleRepeatButton.gif)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -356,7 +356,7 @@ dateTimeEdit.IsVisibleRepeatButton= true;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with updown button to edit value](Editing-Support_images/IsEnabledRepeatButton.png)
+![WPF DateTimePicker with updown button to edit value](Editing-Support_images/IsEnabledRepeatButton.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -387,7 +387,7 @@ dateTimeEdit.IsButtonPopUpEnabled = false;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit show only updown button](Editing-Support_images/show_only_updown.png)
+![WPF DateTimePicker show only updown button](Editing-Support_images/show_only_updown.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -426,7 +426,7 @@ dateTimeEdit.IsVisibleRepeatButton= true;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with red color background](Editing-Support_images/RepeatButtonBackground.png)
+![WPF DateTimePicker with red color background](Editing-Support_images/RepeatButtonBackground.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -470,7 +470,7 @@ You can customize the up and down button appearance separately by using the [UpR
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit updown with custom UI](Editing-Support_images/UpDown_UI.png)
+![WPF DateTimePicker updown with custom UI](Editing-Support_images/UpDown_UI.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/NullValue-Options) in GitHub
 
@@ -503,7 +503,7 @@ dateTimeEdit.Pattern = DateTimePattern.LongDate;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit changed month value using alpha keys](Editing-Support_images/EnableAlphaKeyNavigation.png)
+![WPF DateTimePicker changed month value using alpha keys](Editing-Support_images/EnableAlphaKeyNavigation.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -532,7 +532,7 @@ dateTimeEdit.EnableDeleteKey = true;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit deleting the datetime field values](Editing-Support_images/EnableDeleteKey.png)
+![WPF DateTimePicker deleting the datetime field values](Editing-Support_images/EnableDeleteKey.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -681,7 +681,7 @@ dateTimeEdit.NullValue = null;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit display null value](Watermark-Support_images/wpf-datetimeedit-null-value.png)
+![WPF DateTimePicker display null value](Watermark-Support_images/wpf-datetimeedit-null-value.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/NullValue-Options) in GitHub
 
@@ -712,7 +712,7 @@ dateTimeEdit.NullValue = null;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit display null value](Watermark-Support_images/wpf-datetimeedit-maks-value.png)
+![WPF DateTimePicker display null value](Watermark-Support_images/wpf-datetimeedit-maks-value.png)
 
 ## Show watermark when value is null
 
@@ -743,7 +743,7 @@ dateTimeEdit.NullValue = null;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit displays the watermark text](Watermark-Support_images/wpf-datetimeedit-watermark.png)
+![WPF DateTimePicker displays the watermark text](Watermark-Support_images/wpf-datetimeedit-watermark.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/NullValue-Options) in GitHub
 
@@ -772,7 +772,7 @@ dateTimeEdit.OnFocusBehavior = OnFocusBehavior.CursorAtEnd;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit select the date time field on focus](Editing-Support_images/OnFocusBehavior.png)
+![WPF DateTimePicker select the date time field on focus](Editing-Support_images/OnFocusBehavior.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 

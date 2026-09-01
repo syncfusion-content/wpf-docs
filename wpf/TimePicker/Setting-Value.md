@@ -36,7 +36,7 @@ sfTimePicker.Value = new TimeSpan(04, 45, 00);
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker displaying selected value](Features_images/Features_img17.png)
+![WPF TimePicker displaying selected value](Features_images/Features_img17.png)
 
 ## Setting Null Value
 
@@ -65,7 +65,7 @@ sfTimePicker.Value = null;
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker displaying null value](Features_images/Features_img13.png)
+![WPF TimePicker displaying null value](Features_images/Features_img13.png)
 
 ## Setting WaterMark text
 
@@ -97,7 +97,7 @@ sfTimePicker.Value = null;
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker with watermark text](Features_images/Watermark.png)
+![WPF TimePicker with watermark text](Features_images/Watermark.png)
 
 ### Setting WaterMark Template
 
@@ -129,7 +129,7 @@ We can change the template of the `Watermark` by using the [WatermarkTemplate](h
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker with watermarktemplate](Features_images/WatermarkTemplate.png)
+![WPF TimePicker with watermarktemplate](Features_images/WatermarkTemplate.png)
 
 ## Set selected value on lost focus
 
@@ -156,7 +156,7 @@ sfTimePicker.SetValueOnLostFocus = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker value updated when SfTimeSelector lost its focus](Features_images/Features_img15.gif)
+![WPF TimePicker value updated when SfTimeSelector lost its focus](Features_images/Features_img15.gif)
 
 ## Setting the time using editing
 
@@ -185,7 +185,7 @@ sfTimePicker.AllowInlineEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker with inline time editing](Features_images/AllowInlineEditing.gif)
+![WPF TimePicker with inline time editing](Features_images/AllowInlineEditing.gif)
 
 ## Setting the Input Scope for the On-Screen Keyboard
 
@@ -216,7 +216,7 @@ sfTimePicker.InputScope = InputScopeNameValue.Time;
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker with Input Scope for the On-Screen Keyboard](Features_images/Features_img14.png)
+![WPF TimePicker with Input Scope for the On-Screen Keyboard](Features_images/Features_img14.png)
 
 ## Restrict selecting time limit
 
@@ -245,7 +245,7 @@ sfTimePicker.MaxTime = new TimeSpan(09,00,00);
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker with max-min time range](Features_images/Features_img16.png)
+![WPF TimePicker with max-min time range](Features_images/Features_img16.png)
 
 Here, the users can select the hour from 7 to 9 only. 
 

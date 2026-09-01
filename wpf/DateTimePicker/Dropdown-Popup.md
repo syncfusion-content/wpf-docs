@@ -17,7 +17,7 @@ You can display the dropdown popup by clicking the dropdown button. You can sele
 * None Button
 
 DropDown_Structure
-![DateTimeEdit with dropdown pop-up structure](Dropdown-Popup_images/DropDown_Structure.png)
+![WPF DateTimePicker with dropdown pop-up structure](Dropdown-Popup_images/DropDown_Structure.png)
 
 ## Open and close the datetime selector popup using short-cut keys
 
@@ -51,7 +51,7 @@ dateTimeEdit.Pattern = DateTimePattern.FullDateTime;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with combined clock and calendar](Dropdown-Popup_images/Combined.png)
+![WPF DateTimePicker with combined clock and calendar](Dropdown-Popup_images/Combined.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -112,7 +112,7 @@ You can customize the dropdown button appearance by using the [DropDownButtonTem
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit dropdown button with custom UI](Dropdown-Popup_images/DropDownButtonTemplate.png)
+![WPF DateTimePicker dropdown button with custom UI](Dropdown-Popup_images/DropDownButtonTemplate.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Custom-DropDownButton) in GitHub
 
@@ -120,7 +120,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 You can easily select the today date by clicking the dropdown popup `Today` button.
 
-![DateTimeEdit dropdown today button](Dropdown-Popup_images/TodayButton.png)
+![WPF DateTimePicker dropdown today button](Dropdown-Popup_images/TodayButton.png)
 
 ### Select today date and time
 
@@ -174,7 +174,7 @@ dateTimeEdit.IsEmptyDateEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with combined clock and calendar](Dropdown-Popup_images/ResetDate.gif)
+![WPF DateTimePicker with combined clock and calendar](Dropdown-Popup_images/ResetDate.gif)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
@@ -232,7 +232,7 @@ dateTimeEdit.AbbreviatedMonthNames = new string[]
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with changed month names](Dropdown-Popup_images/AbbreviatedMonthNames.png)
+![WPF DateTimePicker with changed month names](Dropdown-Popup_images/AbbreviatedMonthNames.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/MonthNames) in GitHub
 
@@ -280,7 +280,7 @@ dateTimeEdit.ShortestDayNames= new string[]
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with changed weekday names](Dropdown-Popup_images/ShortestDayNames.png)
+![WPF DateTimePicker with changed weekday names](Dropdown-Popup_images/ShortestDayNames.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/WeekDayNames) in GitHub
 
@@ -307,7 +307,7 @@ dateTimeEdit.PopupDelay = new TimeSpan(0, 0, 2);
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit opens the popup date time selector with delay](Dropdown-Popup_images/PopupDelay.gif)
+![WPF DateTimePicker opens the popup date time selector with delay](Dropdown-Popup_images/PopupDelay.gif)
 
 ## Disable dropdown date time selector
 
@@ -332,7 +332,7 @@ dateTimeEdit.IsButtonPopUpEnabled = false;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit disables the dropdown date time selector](Dropdown-Popup_images/IsButtonPopUpEnabled.png)
+![WPF DateTimePicker disables the dropdown date time selector](Dropdown-Popup_images/IsButtonPopUpEnabled.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
