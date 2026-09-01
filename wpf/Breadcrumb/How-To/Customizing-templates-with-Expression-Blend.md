@@ -7,7 +7,7 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# How to customize templates using Expression Blend in WPF Hierarchical Navigator
+# How to customize templates in WPF Hierarchical Navigator
 
 The steps to customize templates by using Expression Blend are as follows:
 
