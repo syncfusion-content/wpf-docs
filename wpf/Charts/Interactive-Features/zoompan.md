@@ -9,7 +9,7 @@ documentation: ug
 
 # Zooming and Panning in WPF Charts
 
-SfChart allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are a number of data points inside the chart.
+WPF Charts allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are a number of data points inside the chart.
 
 Zooming and panning provides you to take a close-up look of the data point plotted in the series
 
@@ -503,7 +503,7 @@ The following image demonstrates the cursor panning in the left direction.
 
 ## Resetting the Zooming/Panning
 
-SfChart provides support to reset to the default view when you double tap the chart area by setting [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ResetOnDoubleTap) property to true.
+WPF Charts provides support to reset to the default view when you double tap the chart area by setting [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ResetOnDoubleTap) property to true.
 
 {% tabs %}
 

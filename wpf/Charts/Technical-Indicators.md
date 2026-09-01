@@ -116,7 +116,7 @@ chart.TechnicalIndicators.Add(indicator);
 ![AccumulationDistribution Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-accumulation-indicator.png)
 
 
-The following sections covers all the different types of technical indicators available in SfChart.
+The following sections covers all the different types of technical indicators available in WPF Charts.
 
 Most of the indicators are having the [`Period`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html#Syncfusion_UI_Xaml_Charts_AverageTrueRangeIndicator_Period) and [`SignalLineColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html#Syncfusion_UI_Xaml_Charts_AverageTrueRangeIndicator_SignalLineColor) properties as common, in which Period property indicates the moving average period and the SignalLineColor defines the color for the respective indicator line.
 
