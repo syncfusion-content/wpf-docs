@@ -6,15 +6,15 @@ platform: wpf
 control: UpDown
 documentation: ug
 ---
-# Getting Started with WPF UpDown
+# Getting Started with WPF Numeric UpDown
 
-This section explains how to create the [WPF NumericUpDown](https://www.syncfusion.com/wpf-controls/numericupdown) (UpDown) control and describes its structure.
+This section explains how to create the [WPF Numeric UpDown](https://www.syncfusion.com/wpf-controls/numericupdown) control and describes its structure.
 
-## Structure of UpDown
+## Structure of WPF Numeric UpDown
 
 ![WPF UpDown Control](gettingstarted-images/wpf-updown-structure.jpeg)
 
-The following are the elements of the UpDown control:
+The following are the elements of the WPF Numeric UpDown control:
 
 * **Text area** - The area where the numeric values are displayed.
 * **Increment button** - A repeat button that can be clicked to increment the current value.
@@ -26,17 +26,17 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 [Click_here](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details on how to install nuget packages in WPF application.
 
-## Adding WPF UpDown control via designer
+## Adding WPF Numeric UpDown control via designer
 
-The [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control can be added to an application by dragging it from the toolbox onto a view in the designer. The following dependent assembly will be added automatically:
+The [WPF Numeric UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control can be added to an application by dragging it from the toolbox onto a view in the designer. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.WPF
 
 ![Dragging WPF UpDown from Toolbox to Designer Page](gettingstarted-images/wpf-updown-toolbox.png)
 
-## Adding WPF UpDown control via XAML
+## Adding WPF Numeric UpDown control via XAML
 
-To add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control manually in XAML, follow these steps:
+To add the [WPF Numeric UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control manually in XAML, follow these steps:
 
 1. Create a new WPF project in Visual Studio.
 
@@ -44,7 +44,7 @@ To add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared
 
     * Syncfusion.Shared.WPF
 
-3. Import the Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `UpDown` control on the XAML page.
+3. Import the Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `WPF Numeric UpDown` control on the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -69,9 +69,9 @@ To add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared
 
 ![WPF UpDown Control](gettingstarted-images/wpf-updown-designer.jpeg)
 
-## Adding WPF UpDown control via C#
+## Adding WPF Numeric UpDown control via C#
 
-To add the `UpDown` control manually in C#, follow these steps:
+To add the `WPF Numeric UpDown` control manually in C#, follow these steps:
 
 1. Create a new WPF application in Visual Studio.
 
@@ -79,7 +79,7 @@ To add the `UpDown` control manually in C#, follow these steps:
 
     * Syncfusion.Shared.WPF
 
-3. Include the required namespace and create an instance of `UpDown`.
+3. Include the required namespace and create an instance of `WPF Numeric UpDown`.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -104,7 +104,7 @@ grid.Children.Add(updown);
 
 ## Value
 
-The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Value) property is used to set the value of the `UpDown` control. The default value is `0` (or `null` if `UseNullOption` is enabled).
+The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Value) property is used to set the value of the `WPF Numeric UpDown` control. The default value is `0` (or `null` if `UseNullOption` is enabled).
 
 {% tabs %}
 
@@ -149,7 +149,7 @@ updown.Step = 5;
 
 ## Number formatting
 
-The number formatting of UpDown control can be customized by setting [UpDown.NumberFormatInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NumberFormatInfo) property by specifying the culture-specific group separator, decimal separator, and the number of decimal digits. You can show the group separator by enable the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_GroupSeperatorEnabled) property.
+The number formatting of WPF Numeric UpDown control can be customized by setting [UpDown.NumberFormatInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NumberFormatInfo) property by specifying the culture-specific group separator, decimal separator, and the number of decimal digits. You can show the group separator by enable the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_GroupSeperatorEnabled) property.
 
 {% tabs %}
 
@@ -213,7 +213,7 @@ updown.Culture = cultureInfo;
 
 ## Theme
 
-UpDown supports various built-in themes. Refer to the below links to apply themes for the UpDown,
+The WPF Numeric UpDown supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
