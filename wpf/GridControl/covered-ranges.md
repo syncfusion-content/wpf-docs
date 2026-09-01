@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Covered Ranges in WPF Excel-like Grid | Syncfusion®
 description: Create, manage, find, extend, and remove covered cell ranges in Excel-like Grid using covered ranges, events, and runtime customization.

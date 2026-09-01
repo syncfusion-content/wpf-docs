@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Zooming in WPF Excel-like Grid | Syncfusion®
 description: Adjust the zoom level in Excel-like Grid to magnify content, view more cells, and improve readability without affecting the grid's actual size.
