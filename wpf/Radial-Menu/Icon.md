@@ -1,7 +1,7 @@
 ﻿---
 layout: post
-title: Icon Customization in WPF RadialMenu | Syncfusion®
-description: Customize the icon displayed in the center of the WPF RadialMenu to provide a distinctive navigation experience.
+title: Icon Customization in WPF Radial Menu | Syncfusion®
+description: Customize the icon displayed in the center of the WPF Radial Menu to provide a distinctive navigation experience.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Icon Customization in WPF Radial Menu (SfRadialMenu)
 
-The Icon property of the RadialMenu is used to customize the icon displayed in the center of RadialMenu circle.   
+The Icon property of the WPF Radial Menu is used to customize the icon displayed in the center of WPF Radial Menu circle.   
 
 {%highlight xaml%}
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About Syncfusion® WPF RadialMenu Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF RadialMenu (SfRadialMenu) control and more details.
+title: About Syncfusion® WPF Radial Menu Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Radial Menu (SfRadialMenu) control and more details.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
 ---
 
-# About Syncfusion® WPF RadialMenu (SfRadialMenu) Control
+# About Syncfusion® WPF Radial Menu (SfRadialMenu) Control
 
-The Radial Menu displays a hierarchical menu in a circular layout. Typically used as a context menu, it can expose more menu items in the same space than traditional menus.
+The WPF Radial Menu displays a hierarchical menu in a circular layout. Typically used as a context menu, it can expose more menu items in the same space than traditional menus.
 
 ## Key Features
 

@@ -1,7 +1,7 @@
 ﻿---
 layout: post
-title: Appearance and Styling in WPF RadialMenu | Syncfusion®
-description: Customize the appearance of the WPF RadialMenu using radius settings, rim styling, navigation buttons, and item background customization.
+title: Appearance and Styling in WPF Radial Menu | Syncfusion®
+description: Customize the appearance of the WPF Radial Menu using radius settings, rim styling, navigation buttons, and item background customization.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Radius
 
-RadiusX and RadiusY properties in the Radial Menu can be used to define the X and Y axis radius to render the control. 
+RadiusX and RadiusY properties in the WPF Radial Menu can be used to define the X and Y axis radius to render the control. 
 
 
 {%highlight xaml%}
@@ -56,7 +56,7 @@ RimBackground property used to fill the outer rim (outer circle).
 
 
 
-RadialMenu outer ring filled with color
+The WPF Radial Menu outer ring filled with color
 
 
 
@@ -123,7 +123,7 @@ The RimHoverBrush property can be used to fill the expander rim while the pointe
 
 ## IsExpanderVisible
 
-Expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed by `IsExpanderVisible` property of `SfRadialMenuItem`. By default, `IsExpanderVisible` value is True.
+Expander arrow in the OuterRim of `WPF Radial Menu` visibility can be changed by `IsExpanderVisible` property of `SfRadialMenuItem`. By default, `IsExpanderVisible` value is True.
 
 {%highlight xaml%}
 
@@ -151,7 +151,7 @@ Expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed by `I
 
 ## RimRadiusFactor
 
-RimRadiusFactor property of Radial Menu can be used to set the radius of the items panel. Lowest values to this factor increases the thickness of the outer rim. Highest values to this factor decreases the thickness of the outer rim. 
+RimRadiusFactor property of WPF Radial Menu can be used to set the radius of the items panel. Lowest values to this factor increases the thickness of the outer rim. Highest values to this factor decreases the thickness of the outer rim. 
 
 {%highlight xaml%}
 
@@ -168,7 +168,7 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 
 ## Navigation Button Style
 
-The navigation button displayed in the center of radial menu can be styled using NavigationButtonStyle property. 
+The navigation button displayed in the center of WPF Radial Menu can be styled using NavigationButtonStyle property. 
 
 {%highlight xaml%}
 

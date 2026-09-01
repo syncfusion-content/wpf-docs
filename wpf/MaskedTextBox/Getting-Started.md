@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WPF MaskedTextBox (SfMaskedEdit)
 
-This section explains how to create a [WPF MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) (SfMaskedEdit) and explains about its structure and features.
+This section explains how to create a [WPF MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) (WPF MaskedTextBox) and explains about its structure and features.
 
 ## Control Structure
 
-![WPF MaskedEdit](Getting-Started_images/wpf-maskededit-structure.png)
+![WPF MaskedTextBox](Getting-Started_images/wpf-maskededit-structure.png)
 
 ## Assembly deployment
 
@@ -23,18 +23,18 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-## Adding WPF SfMaskedEdit via designer
+## Adding WPF MaskedTextBox via designer
 
-You can add the `SfMaskedEdit` control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
+You can add the `WPF MaskedTextBox` control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
 
-![Dragging WPF MaskedEdit Control from Toolbox to Designer](Getting-Started_images/wpf-maskededit-toolbox.png)
+![Dragging WPF MaskedTextBox Control from Toolbox to Designer](Getting-Started_images/wpf-maskededit-toolbox.png)
  
-## Adding WPF SfMaskedEdit via XAML
+## Adding WPF MaskedTextBox via XAML
 
-To add the `SfMaskedEdit` control manually in XAML, follow these steps:
+To add the `MaskedTextBox` control manually in XAML, follow these steps:
 1. Create a new WPF project in Visual Studio.
 
 2. Add the  following assembly references to the project,
@@ -42,9 +42,9 @@ To add the `SfMaskedEdit` control manually in XAML, follow these steps:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
  
-3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `SfMaskedEdit` control in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** and declare the `MaskedTextBox` control in XAML page.
 
-4. Declare the `SfMaskedEdit` control in XAML page.
+4. Declare the `MaskedTextBox` control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -67,18 +67,18 @@ To add the `SfMaskedEdit` control manually in XAML, follow these steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding WPF SfMaskedEdit via C\#
+## Adding WPF MaskedTextBox via C\#
 
-To add the `SfMaskedEdit` control manually in C#, follow these steps:
+To add the `MaskedTextBox` control manually in C#, follow these steps:
 
 1. Create a new WPF application via Visual Studio.
 
 2. Add the  following assembly references to the project,
    * Syncfusion.SfInput.WPF
    * Syncfusion.SfShared.WPF
-3. Include the required namespace and create an instance of `SfMaskedEdit` and add it to the window.
+3. Include the required namespace and create an instance of `MaskedTextBox` and add it to the window.
 
-4. Declare the `SfMaskedEdit` control using C#.
+4. Declare the `MaskedTextBox` control using C#.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -105,7 +105,7 @@ public partial class MainWindow : Window {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![WPF MaskedEdit Control](Getting-Started_images/wpf-maskededit-control.png)
+![WPF MaskedTextBox Control](Getting-Started_images/wpf-maskededit-control.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/blob/master/Samples/Getting-Started) in GitHub
 
@@ -130,9 +130,9 @@ sfMaskedEdit.Mask = @"-?\d+\.?\d*";
 {% endhighlight %}
 {% endtabs %}
 
-![WPF MaskedEdit displays Value in RegularExpression](MaskOptions_images/wpf-maskededit-negative-value.png)
+![WPF MaskedTextBox displays Value in RegularExpression](MaskOptions_images/wpf-maskededit-negative-value.png)
 
-Here, the `SfMaskedEdit` accept the positive and negative whole or float type numbers.
+Here, the `WPF MaskedTextBox` accept the positive and negative whole or float type numbers.
 
 N> Please refer the [Restrict the user to enter valid data](https://help.syncfusion.com/wpf/maskedtextbox/input-restriction#restrict-the-user-to-enter-valid-data) page to know more about the various mask pattern with examples.
 
@@ -140,7 +140,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ## Setting the value
 
-You can set the value for the `SfMaskedEdit` by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_Value) property. Based on the mask, the value of `Value` property is formatted. The default value of `Value` property is `null`.
+You can set the value for the `WPF MaskedTextBox` by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html#Syncfusion_Windows_Controls_Input_SfMaskedEdit_Value) property. Based on the mask, the value of `Value` property is formatted. The default value of `Value` property is `null`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -161,7 +161,7 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![WPF MaskedEdit displays Value without Prompt and Literals](Working_with_SfMaskedEdit_images/wpf-maskededit-value.png)
+![WPF MaskedTextBox displays Value without Prompt and Literals](Working_with_SfMaskedEdit_images/wpf-maskededit-value.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -193,7 +193,7 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![WPF MaskedEdit displays Value in Various Formats](Working_with_SfMaskedEdit_images/wpf-maskededit-value-format.png)
+![WPF MaskedTextBox displays Value in Various Formats](Working_with_SfMaskedEdit_images/wpf-maskededit-value-format.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -216,7 +216,7 @@ sfMaskedEdit.ErrorBorderBrush = Brushes.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF MaskedEdit displays Error Validation](Working_with_SfMaskedEdit_images/wpf-maskededit-error-validation.gif)
+![WPF MaskedTextBox displays Error Validation](Working_with_SfMaskedEdit_images/wpf-maskededit-error-validation.gif)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -243,7 +243,7 @@ sfMaskedEdit.Mask = @"\+1 [0-9]\d{2}-[0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![WPF MaskedEdit displays Prompt Character](Working_with_SfMaskedEdit_images/wpf-maskededit-prompt-char.png)
+![WPF MaskedTextBox displays Prompt Character](Working_with_SfMaskedEdit_images/wpf-maskededit-prompt-char.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -283,12 +283,12 @@ private void SfMaskedEdit_ValueChanged(object sender, EventArgs e) {
 
 ## Theme
 
-SfMaskedEdit supports various built-in themes. Refer to the below links to apply themes for the SfMaskedEdit,
+The WPF MaskedTextBox supports various built-in themes. Refer to the below links to apply themes for the The WPF MaskedTextBox,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Applying Theme to WPF MaskedEdit](Getting-Started_images/wpf-maskededit-theme.png)
+  ![Applying Theme to WPF MaskedTextBox](Getting-Started_images/wpf-maskededit-theme.png)
   
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Themes) in GitHub

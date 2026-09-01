@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WPF MaskedTextBox (SfMaskedEdit)
 
-This section explains different UI customization and theming options available in [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html).
+This section explains different UI customization and theming options available in [WPF MaskedTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html).
 
 ## Setting the background
 
-You can change the default background color and selection color of `SfMaskedEdit` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `White` and `SelectionBrush` property is `Royal Blue`.
+You can change the default background color and selection color of `WPF MaskedTextBox` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `White` and `SelectionBrush` property is `Royal Blue`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -32,7 +32,7 @@ sfMaskedEdit.SelectionBrush = Brushes.Green;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Background Color of WPF MaskedEdit](Appearence_Images/wpf-maskededit-background.png)
+![Changing Background Color of WPF MaskedTextBox](Appearence_Images/wpf-maskededit-background.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
 
@@ -57,13 +57,13 @@ sfMaskedEdit.CaretBrush = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Foreground Color of WPF MaskedEdit](Appearence_Images/wpf-maskededit-foreground.png)
+![Changing Foreground Color of WPF MaskedTextBox](Appearence_Images/wpf-maskededit-foreground.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
 
 ## Setting the border color
 
-You can change the default border color of `SfMaskedEdit` by using the `BorderBrush` property. The default value of `BorderBrush` property is `Lavender`.
+You can change the default border color of `WPF MaskedTextBox` by using the `BorderBrush` property. The default value of `BorderBrush` property is `Lavender`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -80,13 +80,13 @@ sfMaskedEdit.BorderBrush = Brushes.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Border Color of WPF MaskedEdit](Appearence_Images/wpf-maskededit-border-color.png)
+![Changing Border Color of WPF MaskedTextBox](Appearence_Images/wpf-maskededit-border-color.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
 
 ## Change flow direction
 
-You can change the flow direction of the `SfMaskedEdit` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `WPF MaskedTextBox` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -103,16 +103,16 @@ sfMaskedEdit.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Flow Direction of WPF MaskedEdit](Appearence_Images/wpf-maskededit-flow-direction.png)
+![Changing Flow Direction of WPF MaskedTextBox](Appearence_Images/wpf-maskededit-flow-direction.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
 
 ## Theme
 
-SfMaskedEdit supports various built-in themes. Refer to the below links to apply themes for the SfMaskedEdit,
+The WPF MaskedTextBox supports various built-in themes. Refer to the below links to apply themes for the WPF MaskedTextBox,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
-  ![Applying Theme to WPF SfMaskedEdit](Getting-Started_images/wpf-maskededit-theme.png)
+  ![Applying Theme to WPF MaskedTextBox](Getting-Started_images/wpf-maskededit-theme.png)

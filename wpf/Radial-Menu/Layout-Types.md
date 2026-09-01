@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Layout Types in WPF RadialMenu | Syncfusion®
+title: Layout Types in WPF Radial Menu | Syncfusion®
 description: Configure default and custom radial layouts using visible segment counts, segment indexes, and circular panel arrangements.
 platform: wpf
 control: SfRadialMenu 
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Layout Types in WPF Radial Menu (SfRadialMenu)
 
-There are two different layout types available for SfRadialMenu.
+There are two different layout types available for WPF Radial Menu.
 
 * Default
 * Custom
@@ -17,7 +17,7 @@ There are two different layout types available for SfRadialMenu.
 
 ## Default
 
-Number of segments in the panel is determined by children count in the level. Hence segment count in each hierarchical level differs. RadialMenuItem is arranged in the sequential order as added in the RadialMenu.
+Number of segments in the panel is determined by children count in the level. Hence segment count in each hierarchical level differs. RadialMenuItem is arranged in the sequential order as added in the WPF Radial Menu.
 
 ## Custom
 

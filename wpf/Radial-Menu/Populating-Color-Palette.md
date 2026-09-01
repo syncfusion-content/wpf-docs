@@ -1,7 +1,7 @@
 ﻿---
 layout: post
-title: Color Palette in WPF RadialMenu | Syncfusion®
-description: Create interactive color palettes using radial color items to display and select colors within the WPF RadialMenu.
+title: Color Palette in WPF Radial Menu | Syncfusion®
+description: Create interactive color palettes using radial color items to display and select colors within the WPF Radial Menu.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Color Palette in WPF Radial Menu (SfRadialMenu)
 
-Color Palette can be formed in Radial Menu with the Radial Color Items. 
+Color Palette can be formed in WPF Radial Menu with the Radial Color Items. 
 
 {%highlight xaml%}
 
