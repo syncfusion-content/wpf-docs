@@ -23,7 +23,7 @@ The following topics explain in detail about the axis and its parts.
 
 ### MajorGridlines
 
-By default, major gridlines are automatically added to the axis. SfSmithChart supports the customization of major gridlines. The visibility of the major gridlines can be controlled by using the **ShowMajorGridlines** property.
+By default, major gridlines are automatically added to the axis. WPF Smith Chart supports the customization of major gridlines. The visibility of the major gridlines can be controlled by using the **ShowMajorGridlines** property.
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ chart.HorizontalAxis.ShowMajorGridlines = false;
 
 **MajorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the major gridlines by defining the *MajorGridlineStyle* property as shown in the below code snippet.
+WPF Smith Chart provides support to customize the style of the major gridlines by defining the *MajorGridlineStyle* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ chart.HorizontalAxis.MinorGridlinesCount = 12;
 
 **MinorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the minor gridlines by defining the *MinorGridlineStyle* property as shown in the below code snippet.
+WPF Smith Chart provides support to customize the style of the minor gridlines by defining the *MinorGridlineStyle* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -178,7 +178,7 @@ chart.HorizontalAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as S
 
 ## AxisLine
 
-SfSmithChart provides support to customize the style of the axis line by defining the *AxisLineStyle* property and changing the visibility by using the *ShowAxisLine* property as shown in the below code snippet.
+WPF Smith Chart provides support to customize the style of the axis line by defining the *AxisLineStyle* property and changing the visibility by using the *ShowAxisLine* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -272,7 +272,7 @@ The radial axis scale is used to measure the normalized reactance values.
 
 ### MajorGridlines
 
-By default, major gridlines are automatically added to the axis. SfSmithChart supports the customization of major gridlines. The visibility of the major gridlines can be controlled by using the *ShowMajorGridlines* property.
+By default, major gridlines are automatically added to the axis. WPF Smith Chart supports the customization of major gridlines. The visibility of the major gridlines can be controlled by using the *ShowMajorGridlines* property.
 
 {% tabs %}
 
@@ -301,7 +301,7 @@ chart.RadialAxis.ShowMajorGridlines = false;
 
 **MajorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the major gridlines by defining the *MajorGridlineStyle* property as shown in the below code snippet.
+WPF Smith Chart provides support to customize the style of the major gridlines by defining the *MajorGridlineStyle* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -393,7 +393,7 @@ chart.RadialAxis.MinorGridlinesCount = 12;
 
 **MinorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the minor gridlines by defining the *MinorGridlineStyle* property as shown in the below code snippet.
+WPF Smith Chart provides support to customize the style of the minor gridlines by defining the *MinorGridlineStyle* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -427,7 +427,7 @@ chart.RadialAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style
 
 ### AxisLine
 
-SfSmithChart provides support to customize the style of the axis line by defining the *AxisLineStyle* property and changing the visibility by using the *ShowAxisLine* property as shown in the below code snippet.
+WPF Smith Chart provides support to customize the style of the axis line by defining the *AxisLineStyle* property and changing the visibility by using the *ShowAxisLine* property as shown in the below code snippet.
 
 {% tabs %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The surface area represents the entire surface chart and all its elements. It is a virtual rectangular area that includes all the surface elements like axis, color bar, wall, etc. 
 
-The surface chart can be customized to enrich your application's look and feel. SfSurfaceChart provides APIs to customize the surface area based on your requirement. This section explains the elements and APIs for common customization of the surface area.
+The surface chart can be customized to enrich your application's look and feel. WPF Surface Chart provides APIs to customize the surface area based on your requirement. This section explains the elements and APIs for common customization of the surface area.
 
 ## Properties
 
