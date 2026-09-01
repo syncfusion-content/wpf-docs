@@ -1,7 +1,7 @@
 ﻿---
 layout: post
-title: Appearance in WPF RadialSlider | Syncfusion®
-description: Customize the appearance of the WPF RadialSlider using foreground, background, flow direction, and theme settings.
+title: Appearance in WPF Radial Slider | Syncfusion®
+description: Customize the appearance of the WPF Radial Slider using foreground, background, flow direction, and theme settings.
 platform: wpf
 control: SfRadialSlider
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WPF Radial Slider (SfRadialSlider)
 
-This section explains different styling, theming options available in [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) control.
+This section explains different styling, theming options available in [WPF Radial Slider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) control.
 
 ## Setting the foreground
 
-You can change the foreground color of the `SfRadialSlider` by using the `Foreground` property. The default value of `Foreground` property is `Black`.
+You can change the foreground color of the `WPF Radial Slider` by using the `Foreground` property. The default value of `Foreground` property is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -29,13 +29,13 @@ radialSlider.Foreground = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with red foreground](Appearance_images/Foreground.png)
+![WPF Radial Slider with red foreground](Appearance_images/Foreground.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
 ## Setting the background
 
-You can change the background color of the `SfRadialSlider` by using the `Background` property. The default value of `Background` property is `White`.
+You can change the background color of the `WPF Radial Slider` by using the `Background` property. The default value of `Background` property is `White`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,13 +51,13 @@ radialSlider.Background = Brushes.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with yellow background](Appearance_images/Background.png)
+![WPF Radial Slider with yellow background](Appearance_images/Background.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
 ## Change flow direction
 
-You can change the flow direction of the `SfRadialSlider` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `WPF Radial Slider` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,16 +73,16 @@ radialSlider.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with right to left flow direction](Appearance_images/rtl.png)
+![WPF Radial Slider with right to left flow direction](Appearance_images/rtl.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
 ## Theme
 
-SfRadialSlider supports various built-in themes. Refer to the below links to apply themes for the SfRadialSlider,
+The WPF Radial Slider supports various built-in themes. Refer to the below links to apply themes for the WPF Radial Slider,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfRadialSlider](getting-started_images/wpf-radial-slider-theme-setting.png)
+  ![Setting theme to WPF Radial Slider](getting-started_images/wpf-radial-slider-theme-setting.png)

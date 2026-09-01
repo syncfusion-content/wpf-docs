@@ -75,7 +75,7 @@ Create a ViewModel class with CustomCollection property.
 
 {% endtabs %}
 
-In the following code example, the CustomCollection property is bound to [CustomLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~CustomLabels.html) property in the SfRangeSlider control that populates the custom labels collection.
+In the following code example, the CustomCollection property is bound to [CustomLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~CustomLabels.html) property in the WPF Range Slider control that populates the custom labels collection.
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ In the following code example, the CustomCollection property is bound to [Custom
 
 ![Label-Support_img1](Label-Support_images/Label-Support_img1.png)
 
-RangeSlider with CustomLabels
+WPF Range Slider with CustomLabels
 
 ## ShowCustomLabels
 
@@ -169,7 +169,7 @@ The default value for [ShowCustomLabels](https://help.syncfusion.com/cr/wpf/Sync
 
 ![Label-Support_img2](Label-Support_images/Label-Support_img2.png)
 
-RangeSlider with ShowCustomLabels
+WPF Range Slider with ShowCustomLabels
 
 ## LabelPlacement
 

@@ -18,7 +18,7 @@ documentation: ug
 
 ### MoveToTapPosition
 
-To move the thumb of [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) to the tapped position, set the [MoveToPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) property to MoveToTapPosition, and then tap or click the track of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html). This moves the thumb to the tapped position.
+To move the thumb of [WPF Range Slider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) to the tapped position, set the [MoveToPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) property to MoveToTapPosition, and then tap or click the track of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html). This moves the thumb to the tapped position.
 
 The following code example and screenshot illustrates the above.
 
@@ -62,7 +62,7 @@ The following code example and screenshot illustrates the above.
 
 ### IncrementBySmallChange
 
-To move the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) thumb based on the SmallChange value, set the [MoveToPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) property to IncrementBySmallChange, and then tap or click the track of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html). This increments the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) value by the SmallChange value.
+To move the [WPF Range Slider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) thumb based on the SmallChange value, set the [MoveToPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) property to IncrementBySmallChange, and then tap or click the track of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html). This increments the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) value by the SmallChange value.
 
 The following code example and screenshot illustrates the above.
 
@@ -106,7 +106,7 @@ The following code example and screenshot illustrates the above.
 
 ### IncrementByLargeChange
 
-To move the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) thumb based on the LargeChange value, set the [MoveToPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) property to IncrementByLargeChange, and then tap the track of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html). This increments the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) value by the LargeChange value.
+To move the [WPF Range Slider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) thumb based on the LargeChange value, set the [MoveToPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) property to IncrementByLargeChange, and then tap the track of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html). This increments the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) value by the LargeChange value.
 
 The following code example and screenshot illustrates the above.
 
@@ -151,7 +151,7 @@ The following code example and screenshot illustrates the above.
 
 ### None
 
-To fix the thumb movement of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html), set the MoveToPoint property to _None_. This does not allow thumb movement of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html).
+To fix the thumb movement of the [WPF Range Slider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html), set the MoveToPoint property to _None_. This does not allow thumb movement of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html).
 
 The following code example and screenshot illustrates the above.
 

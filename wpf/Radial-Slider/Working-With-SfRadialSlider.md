@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Customize the UI of WPF Radial Slider | Syncfusion®
-description: Customize the appearance and behavior of the WPF SfRadialSlider, including ticks, labels, pointers, rims, and value selection.
+description: Customize the appearance and behavior of the WPF Radial Slider, including ticks, labels, pointers, rims, and value selection.
 platform: wpf
 control: SfRadialSlider
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Customize the UI of WPF Radial Slider (SfRadialSlider)
 
-This section explains different UI customization and common features available in [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) control.
+This section explains different UI customization and common features available in [WPF Radial Slider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) control.
 
 ## Select tick value
 
@@ -35,13 +35,13 @@ radialSlider.Value = 34;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider selecting a value programmatically](getting-started_images/wpf-radial-slider-selected-value.png)
+![WPF Radial Slider selecting a value programmatically](getting-started_images/wpf-radial-slider-selected-value.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
 ## Display selected value
 
-You can display the selected value in the content area of the `SfRadialSlider` by setting the selected value to the [Content](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_Content) property. The default value of `Content` property is `null`.
+You can display the selected value in the content area of the `WPF Radial Slider` by setting the selected value to the [Content](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_Content) property. The default value of `Content` property is `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -77,13 +77,13 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider displays the selected value](getting-started_images/wpf-radial-slider-display-selected-value.png)
+![WPF Radial Slider displays the selected value](getting-started_images/wpf-radial-slider-display-selected-value.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
 ## Custom UI for display content
 
-You can customize the appearance of display content area by using the `ContentTemplate` property. The default value of `ContentTemplate` property is `null`. The `DataContext` of the `ContentTemplate` property is `SfRadialSlider`.
+You can customize the appearance of display content area by using the `ContentTemplate` property. The default value of `ContentTemplate` property is `null`. The `DataContext` of the `ContentTemplate` property is `WPF Radial Slider`.
 
 {% tabs %}
 {% highlight C# %}
@@ -126,11 +126,11 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with customized content area](Working-With-SfRadialSlider_images/ContentTemplate.png)
+![WPF Radial Slider with customized content area](Working-With-SfRadialSlider_images/ContentTemplate.png)
 
 ## Change min-max tick value
 
-You can change the minimum and maximum ticks value of the `SfRadialSlider` by using the `Minimum` and `Maximum` properties. The default value of `Minimum` property is `0` and `Maximum` property is `100`.
+You can change the minimum and maximum ticks value of the `WPF Radial Slider` by using the `Minimum` and `Maximum` properties. The default value of `Minimum` property is `0` and `Maximum` property is `100`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -148,7 +148,7 @@ radialSlider.Maximum = 200;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with changed minimum and maximum values](getting-started_images/wpf-radial-slider-min-max-values.png)
+![WPF Radial Slider with changed minimum and maximum values](getting-started_images/wpf-radial-slider-min-max-values.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -172,7 +172,7 @@ radialSlider.EndAngle = 300;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider ticks start and end position changed](getting-started_images/wpf-radial-slider-start-end-angle.png)
+![WPF Radial Slider ticks start and end position changed](getting-started_images/wpf-radial-slider-start-end-angle.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -194,13 +194,13 @@ radialSlider.TickFrequency = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider ticks display interval changed to 20](getting-started_images/wpf-radial-slider-tick-frequency.png)
+![WPF Radial Slider ticks display interval changed to 20](getting-started_images/wpf-radial-slider-tick-frequency.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
 ## Step interval
 
-If you want to control the smallest possible range of value to be selected in `SfRadialSlider`, use the `SmallChange` property. The default value of `SmallChange` property is `0.1`. For example, if `SmallChange` is set to `5`, then it is only possible to select values that are multiples of `5`.
+If you want to control the smallest possible range of value to be selected in `WPF Radial Slider`, use the `SmallChange` property. The default value of `SmallChange` property is `0.1`. For example, if `SmallChange` is set to `5`, then it is only possible to select values that are multiples of `5`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -216,7 +216,7 @@ radialSlider.SmallChange = 5;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider value selection interval changed](getting-started_images/wpf-radial-slider-value-selection.gif)
+![WPF Radial Slider value selection interval changed](getting-started_images/wpf-radial-slider-value-selection.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -240,13 +240,13 @@ radialSlider.SweepDirection = SweepDirection.Counterclockwise;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider ticks displayed in counter-clockwise](getting-started_images/wpf-radial-slider-sweep-direction.png)
+![WPF Radial Slider ticks displayed in counter-clockwise](getting-started_images/wpf-radial-slider-sweep-direction.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
 ## Display maximum value
 
-By default, the maximum value is not shown in the `SfRadialSlider`. If you want to show the maximum value when difference of the minimum and maximum value is not a `TickFrequency` multiples, use the [ShowMaximumValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_ShowMaximumValue) property value as `true`. The default value of `ShowMaximumValue` property is `false`.
+By default, the maximum value is not shown in the `WPF Radial Slider`. If you want to show the maximum value when difference of the minimum and maximum value is not a `TickFrequency` multiples, use the [ShowMaximumValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_ShowMaximumValue) property value as `true`. The default value of `ShowMaximumValue` property is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -264,7 +264,7 @@ radialSlider.ShowMaximumValue = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider shows the maximum value](Working-With-SfRadialSlider_images/ShowMaximumValue.png)
+![WPF Radial Slider shows the maximum value](Working-With-SfRadialSlider_images/ShowMaximumValue.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -288,13 +288,13 @@ radialSlider.TickVisibility = Visibility.Visible;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider ticks radius factor changed to 0.5](Working-With-SfRadialSlider_images/TickRadiusFactor.png)
+![WPF Radial Slider ticks radius factor changed to 0.5](Working-With-SfRadialSlider_images/TickRadiusFactor.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
 ### Custom UI of ticks
 
-You can customize the appearance of ticks by using the `TickTemplate` property. The default value of `TickTemplate` property is `null`. The `DataContext` of the `TickTemplate` property is `SfRadialSlider` tick value count.
+You can customize the appearance of ticks by using the `TickTemplate` property. The default value of `TickTemplate` property is `null`. The `DataContext` of the `TickTemplate` property is `WPF Radial Slider` tick value count.
 
 {% tabs %}
 {% highlight xaml %}
@@ -310,7 +310,7 @@ You can customize the appearance of ticks by using the `TickTemplate` property. 
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with customized ticks](Working-With-SfRadialSlider_images/TickTemplate.png)
+![WPF Radial Slider with customized ticks](Working-With-SfRadialSlider_images/TickTemplate.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Custom-UI)
 
@@ -334,13 +334,13 @@ radialSlider.LabelVisibility = Visibility.Visible;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider tick label radius factor changed to 0.5](Working-With-SfRadialSlider_images/LabelRadiusFactor.png)
+![WPF Radial Slider tick label radius factor changed to 0.5](Working-With-SfRadialSlider_images/LabelRadiusFactor.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
 ### Custom UI of tick labels
 
-You can customize the appearance of tick labels by using the `LabelTemplate` property. The default value of `LabelTemplate` property is `null`. The `DataContext` of the `LabelTemplate` property is `SfRadialSlider` tick values.
+You can customize the appearance of tick labels by using the `LabelTemplate` property. The default value of `LabelTemplate` property is `null`. The `DataContext` of the `LabelTemplate` property is `WPF Radial Slider` tick values.
 
 {% tabs %}
 {% highlight xaml %}
@@ -358,13 +358,13 @@ You can customize the appearance of tick labels by using the `LabelTemplate` pro
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with customized tick labels](Working-With-SfRadialSlider_images/LabelTemplate.png)
+![WPF Radial Slider with customized tick labels](Working-With-SfRadialSlider_images/LabelTemplate.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Custom-UI)
 
 ## Change inner rim radius
 
-You can change inner rim(circle in the center of radial slider) radius of the `SfRadialSlider` by using the [InnerRimRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_InnerRimRadiusFactor) property. The default value of `InnerRimRadiusFactor` property is `0.2`.
+You can change inner rim(circle in the center of radial slider) radius of the `WPF Radial Slider` by using the [InnerRimRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_InnerRimRadiusFactor) property. The default value of `InnerRimRadiusFactor` property is `0.2`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -380,7 +380,7 @@ radialSlider.InnerRimRadiusFactor = 0.5;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider inner rim radius changed](Working-With-SfRadialSlider_images/InnerRadius.png)
+![WPF Radial Slider inner rim radius changed](Working-With-SfRadialSlider_images/InnerRadius.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -407,13 +407,13 @@ radialSlider.InnerRimStrokeThickness = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider inner rim appearance changed](Working-With-SfRadialSlider_images/InnerUI.png)
+![WPF Radial Slider inner rim appearance changed](Working-With-SfRadialSlider_images/InnerUI.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
 ## Change outer rim radius
 
-You can change outer rim radius of the `SfRadialSlider` by using the [OuterRimRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_OuterRimRadiusFactor) properties. The default value of `OuterRimRadiusFactor` property is `0.7`.
+You can change outer rim radius of the `WPF Radial Slider` by using the [OuterRimRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_OuterRimRadiusFactor) properties. The default value of `OuterRimRadiusFactor` property is `0.7`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -429,7 +429,7 @@ radialSlider.OuterRimRadiusFactor = 0.5;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider outer rim radius changed](Working-With-SfRadialSlider_images/OuterRadius.png)
+![WPF Radial Slider outer rim radius changed](Working-With-SfRadialSlider_images/OuterRadius.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -453,7 +453,7 @@ radialSlider.OuterRimStroke = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider outer rim appearance changed](Working-With-SfRadialSlider_images/OuterUI.png)
+![WPF Radial Slider outer rim appearance changed](Working-With-SfRadialSlider_images/OuterUI.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -475,7 +475,7 @@ radialSlider.PointerRadiusFactor = 0.5;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider selection pointer radius factor changed to 0.5](Working-With-SfRadialSlider_images/PointerRadiusFactor.png)
+![WPF Radial Slider selection pointer radius factor changed to 0.5](Working-With-SfRadialSlider_images/PointerRadiusFactor.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -504,7 +504,7 @@ You can customize the appearance of selection pointer by using the [PointerStyle
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with customized selection pointer](Working-With-SfRadialSlider_images/PointerStyle.png)
+![WPF Radial Slider with customized selection pointer](Working-With-SfRadialSlider_images/PointerStyle.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Custom-UI)
 
@@ -533,7 +533,7 @@ You can customize the appearance of preview selection pointer by using the [Prev
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with customized preview selection pointer](Working-With-SfRadialSlider_images/PreviewPointerStyle.png)
+![WPF Radial Slider with customized preview selection pointer](Working-With-SfRadialSlider_images/PreviewPointerStyle.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Custom-UI)
 
@@ -594,7 +594,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Value changed notification
 
-The selected value changed in `SfRadialSlider` can be examined using `ValueChanged` event. The `ValueChanged` event contains the old and newly selected tick value in the `OldValue` and `NewValue` properties.
+The selected value changed in `WPF Radial Slider` can be examined using `ValueChanged` event. The `ValueChanged` event contains the old and newly selected tick value in the `OldValue` and `NewValue` properties.
 
 {% tabs %}
 {% highlight XAML %}

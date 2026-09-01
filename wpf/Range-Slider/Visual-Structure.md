@@ -9,7 +9,7 @@ documentation: ug
 
 # Visual Structure in WPF Range Slider (SfRangeSlider)
 
-This section describes the visual elements of the RangeSlider control and defines terms and concepts used in the RangeSlider.
+This section describes the visual elements of the WPF Range Slider control and defines terms and concepts used in the WPF Range Slider.
 
 ![VisualStructure](Overview_images/VisualStructure.png)
 
@@ -23,4 +23,4 @@ This section describes the visual elements of the RangeSlider control and define
 * **Inactive Track** — The horizontal or vertical line is used to move the thumbs along it.
 * **Range Start** — Thumb indicates the start of the selection range.
 * **Range End** — Thumb indicates the end of the selection range.
-* **Value Label** — indicates the value of the RangeSlider.
+* **Value Label** — indicates the value of the WPF Range Slider.

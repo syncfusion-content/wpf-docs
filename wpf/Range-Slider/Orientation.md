@@ -51,7 +51,7 @@ The default option is Horizontal.
 ![Horizontal](Orientation_images/Orientation_img1.png)
 
 
-The following code sample illustrates how to set vertical orientation to [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html).  
+The following code sample illustrates how to set vertical orientation to [WPF Range Slider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html).  
 
 {% tabs %}
 
