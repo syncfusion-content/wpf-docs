@@ -7,9 +7,9 @@ control: TileViewControl
 documentation: ug
 ---
 
-# Close TileViewItem in WPF TileView
+# Close TileViewItem in WPF Tile View Control
 
-This section explains how to closing the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) and its functionalities in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
+This section explains how to closing the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) and its functionalities in the [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Show close button
 
@@ -136,7 +136,7 @@ private void CloseItem_Click(object sender, RoutedEventArgs e) {
 
 ## Hide or delete TileViewItem when closing a item
 
-You can decide whether the `TileViewItem` can be only hidden from the view or removed from the items collection of `TileViewControl` by using the [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_CloseMode) property while closing it. If you set `CloseMode` property as `Hide`, the `TileViewItem` will be hidden and the selection will be moved to previous index while hiding it. Also, if the property `CloseMode` is `Delete`, the `TileViewItem` will be removed from the items collection and the selection will be retained in the same index while removing it. The default value of the `CloseMode` property is `Hide`.
+You can decide whether the `TileViewItem` can be only hidden from the view or removed from the items collection of `WPF Tile View Control` by using the [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_CloseMode) property while closing it. If you set `CloseMode` property as `Hide`, the `TileViewItem` will be hidden and the selection will be moved to previous index while hiding it. Also, if the property `CloseMode` is `Delete`, the `TileViewItem` will be removed from the items collection and the selection will be retained in the same index while removing it. The default value of the `CloseMode` property is `Hide`.
 
 {% tabs %}
 {% highlight XAML %}

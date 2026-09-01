@@ -7,15 +7,15 @@ control: TileViewControl
 documentation: ug
 ---
 
-# Data Binding in WPF TileView
+# Data Binding in WPF Tile View Control
 
-You can add a [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) using data binding in the WPF [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
+You can add a [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) using data binding in the [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Data binding to Objects
 
-The `TileViewControl` can bound to an external source to auto create `TileViewItem` and display the data using `ItemsSource` property. When you are auto generating `TileViewItem` using `ItemsSource`, you need to set `Header` property or `HeaderTemplate` in `ItemContainerStyle` to define header and use `Content` property or `ContentTemplate` in `ItemContainerStyle` to display the content of the `TileViewItem` item.  
+The `WPF Tile View Control` can bound to an external source to auto create `TileViewItem` and display the data using `ItemsSource` property. When you are auto generating `TileViewItem` using `ItemsSource`, you need to set `Header` property or `HeaderTemplate` in `ItemContainerStyle` to define header and use `Content` property or `ContentTemplate` in `ItemContainerStyle` to display the content of the `TileViewItem` item.  
 
-N> To bind `ItemsSource` to `TileViewControl`, you need to have collection with data object which holds header and content details.
+N> To bind `ItemsSource` to `WPF Tile View Control`, you need to have collection with data object which holds header and content details.
 
 Here, `TileItem` class defined with `Header` and `Content` properties and `ViewModel` class has `ItemsSource` property of type `ObservableCollection<TileItem>`.
 
@@ -84,7 +84,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Data binding with XML
 
-You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in the `TileViewControl`. You can easily populates the items from the `XML` files using the `ItemTemplate` and `ContentTemplate` or `ItemContainerStyle` properties. 
+You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in the `WPF Tile View Control`. You can easily populates the items from the `XML` files using the `ItemTemplate` and `ContentTemplate` or `ItemContainerStyle` properties. 
 
 1. Create an `XML` file with the required details and name it as `Data.xml`.
 
@@ -115,7 +115,7 @@ You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in 
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Add `XmlDataProvider` for the above `Data.xml` document and bind the data to `ItemsSource` property for the `TileViewControl`.
+2. Add `XmlDataProvider` for the above `Data.xml` document and bind the data to `ItemsSource` property for the `WPF Tile View Control`.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -154,7 +154,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Virtualization support
 
-You can enable the UI virtualization support in `TileViewControl`, which allows the users to load large sets of data without affecting loading or scrolling performance by setting the [IsVirtualizing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_IsVirtualizing) property value as `true`. This feature allows users to reduce the loading time of `TileView` items regardless of items count. The default value of `IsVirtualizing` property is `false`. When using virtualization, it is recommended to use `RowCount` and `ColumnCount` instead of `RowHeight` and `ColumnWidth`. The `RowHeight` and `ColumnWidth` properties are not compatible with virtualization, and the layout will be updated based on the values of `RowCount` and `ColumnCount`.
+You can enable the UI virtualization support in `WPF Tile View Control`, which allows the users to load large sets of data without affecting loading or scrolling performance by setting the [IsVirtualizing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_IsVirtualizing) property value as `true`. This feature allows users to reduce the loading time of `WPF Tile View Control` items regardless of items count. The default value of `IsVirtualizing` property is `false`. When using virtualization, it is recommended to use `RowCount` and `ColumnCount` instead of `RowHeight` and `ColumnWidth`. The `RowHeight` and `ColumnWidth` properties are not compatible with virtualization, and the layout will be updated based on the values of `RowCount` and `ColumnCount`.
 
 {% tabs %}
 {% highlight XAML %}

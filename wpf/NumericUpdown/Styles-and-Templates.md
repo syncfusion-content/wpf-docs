@@ -7,13 +7,13 @@ control: UpDown
 documentation: ug
 ---
 
-# Styles and Templates in WPF UpDown
+# Styles and Templates in WPF Numeric UpDown
 
-You can customize the background and foreground of the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control by editing its style or by setting the exposed properties.
+You can customize the background and foreground of the [WPF Numeric UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control by editing its style or by setting the exposed properties.
 
 ## Positive color
 
-You can customize the background and foreground for positive values using the `Background` and `Foreground` properties of the `UpDown` control.
+You can customize the background and foreground for positive values using the `Background` and `Foreground` properties of the `WPF Numeric UpDown` control.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ grid.Children.Add(updown);
 
 ## Negative color
 
-You can customize the background and foreground for negative values using the [NegativeBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NegativeBackground) and [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NegativeForeground) properties of the `UpDown` control. The negative colors are enabled by setting [EnableNegativeColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_EnableNegativeColors) to `True`.
+You can customize the background and foreground for negative values using the [NegativeBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NegativeBackground) and [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_NegativeForeground) properties of the `WPF Numeric UpDown` control. The negative colors are enabled by setting [EnableNegativeColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_EnableNegativeColors) to `True`.
 
 {% tabs %}
 
@@ -89,7 +89,7 @@ updown.ZeroColor = Brushes.DarkViolet;
 
 ## Focused color
 
-You can customize the background, foreground, and border color for the `UpDown` control while focused using the [FocusedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedBackground), [FocusedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedBorderBrush), and [FocusedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedForeground) properties. These properties take effect only when [EnableFocusedColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_EnableFocusedColors) is `True`. The default value of `EnableFocusedColors` is `True`.
+You can customize the background, foreground, and border color for the `WPF Numeric UpDown` control while focused using the [FocusedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedBackground), [FocusedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedBorderBrush), and [FocusedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_FocusedForeground) properties. These properties take effect only when [EnableFocusedColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_EnableFocusedColors) is `True`. The default value of `EnableFocusedColors` is `True`.
 
 {% tabs %}
 
@@ -117,7 +117,7 @@ N> While the control is focused, the positive, negative, and zero colors revert 
 
 ## Theme
 
-UpDown supports various built-in themes. Refer to the below links to apply themes for the UpDown,
+The WPF Numeric UpDown supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
