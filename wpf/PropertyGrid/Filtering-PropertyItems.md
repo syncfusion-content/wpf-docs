@@ -404,8 +404,6 @@ Here, The SearchBox is hidden in the `WPF PropertyGrid`.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Grouping-Sorting-Ordering) to download the sample that showcases the property searching in the SearchBox support.
 
-## 
-
                                            
 
 
