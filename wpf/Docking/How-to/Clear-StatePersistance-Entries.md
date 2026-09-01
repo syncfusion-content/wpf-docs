@@ -9,7 +9,7 @@ documentation: ug
 
 # How to clear StatePersistence entries in WPF Docking
 
-In StatePersistence of DockingManager we have five ways to store the state. Similarly, we have ways to clear those entries as given below
+In StatePersistence of WPF Docking Control we have five ways to store the state. Similarly, we have ways to clear those entries as given below
 
 {% highlight c# %}
 
@@ -27,7 +27,7 @@ DockingManager.DeleteDockState(filename);
 
 {% endhighlight %}
 
-#### Refer Also
+## Refer Also
 
-State Persistence in DockingManager
+State Persistence in WPF Docking Control
 

@@ -7,13 +7,13 @@ control: TabControlExt
 documentation: ug
 ---
 
-# Getting Started with WPF TabControlExt
+# Getting Started with WPF Tab Control
 
-This section explains how to create a WPF [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) and explains about its structure.
+This section explains how to create a WPF [WPF Tab Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) and explains about its structure.
 
-## Structure of TabControl
+## Structure of WPF Tab Control
 
-The various elements of `TabControl` are illustrated in the following images.
+The various elements of `WPF Tab Control` are illustrated in the following images.
 
 ![Structure of WPF TabControl](Getting-Started_images/wpf-tabcontrol-structure.png)
 
@@ -23,18 +23,18 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-depe
 
 Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-## Adding WPF TabControl via designer
+## Adding WPF Tab Control via designer
 
-You can add the `TabControl` control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
+You can add the `WPF Tab Control` to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
 
 * Syncfusion.Tools.WPF
 * Syncfusion.Shared.WPF
 
 ![Drag and drop WPF TabControl from toolbox](Getting-Started_images/wpf-tabcontrol-toolbox.png)
 
-## Adding WPF TabControl via XAML
+## Adding WPF Tab Control via XAML
 
-To add the `TabControl` manually in XAML, follow these steps:
+To add the `WPF Tab Control` manually in XAML, follow these steps:
 
 1. Create a new WPF project in Visual Studio.
 
@@ -43,7 +43,7 @@ To add the `TabControl` manually in XAML, follow these steps:
     * Syncfusion.Tools.WPF
     * Syncfusion.Shared.WPF
 
-3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `TabControl` in XAML page.
+3. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `WPF Tab Control` in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -70,7 +70,7 @@ To add the `TabControl` manually in XAML, follow these steps:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding WPF TabControl via C#
+## Adding WPF Tab Control via C#
 
 To add the [TabControl](https://www.syncfusion.com/wpf-controls/tabcontrol) control manually in C#, follow these steps:
 
@@ -80,7 +80,7 @@ To add the [TabControl](https://www.syncfusion.com/wpf-controls/tabcontrol) cont
     * Syncfusion.Shared.WPF
     * Syncfusion.Tools.WPF
 
-3. Include the required namespace and create an instance of `TabControl` and add it to the window.
+3. Include the required namespace and create an instance of `WPF Tab Control` and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -113,7 +113,7 @@ public partial class MainWindow : Window {
 
 ## Adding TabItem
 
-You can add the tab item using the `Items` property of `TabControl`. You can set the tab item name using `TabItemExt` property and add the content to each tab item by using `TabItemExt.Content` property.
+You can add the tab item using the `Items` property of `WPF Tab Control`. You can set the tab item name using `TabItemExt` property and add the content to each tab item by using `TabItemExt.Content` property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -169,7 +169,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Placement of TabItem
 
-You can place the tab item header at any of the four sides of `TabControl` using the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlSettings.html#Syncfusion_Windows_Tools_Controls_TabControlSettings_TabStripPlacement) property.
+You can place the tab item header at any of the four sides of `WPF Tab Control` using the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlSettings.html#Syncfusion_Windows_Tools_Controls_TabControlSettings_TabStripPlacement) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -205,7 +205,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ### Tab selection changed notification
 
-The `TabControl` notifies that the selected tab item is changed by user through the [SelectedItemChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_SelectedItemChangedEvent) event. You can use the [OldSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_SelectedItemChangedEventArgs_OldSelectedItem) and [NewSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_SelectedItemChangedEventArgs_NewSelectedItem) properties to get the old and new selected tabitem in the `SelectedItemChangedEvent` event.
+The `WPF Tab Control` notifies that the selected tab item is changed by user through the [SelectedItemChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_SelectedItemChangedEvent) event. You can use the [OldSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_SelectedItemChangedEventArgs_OldSelectedItem) and [NewSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_SelectedItemChangedEventArgs_NewSelectedItem) properties to get the old and new selected tabitem in the `SelectedItemChangedEvent` event.
 
 {% tabs %}
 {% highlight XAML %}
@@ -242,14 +242,15 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 
 ## Closing the tab item
 
-`TabControl` allows end-users to close the tabs using close button. The close button can be displayed in `Tabcontrol` using [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_CloseButtonType) property. 
-The following options are supported to show close the button in `TabControl`.
+`WPF Tab Control` allows end-users to close the tabs using close button. The close button can be displayed in `WPF Tab Control` using [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_CloseButtonType) property. 
 
-* **Common** - Only, `TabControl` shows the close button.
+The following options are supported to show close the button in `WPF Tab Control`.
+
+* **Common** - Only, `WPF Tab Control` shows the close button.
 
 * **Individual** - The close button displayed only in the headers of tab items.
 
-* **Both** - `TabControl` and tab items displays the close button.
+* **Both** - `WPF Tab Control` and tab items displays the close button.
 
 * **Hide** - The close button is not visible.
 
@@ -257,7 +258,7 @@ The following options are supported to show close the button in `TabControl`.
 
 * **Extended** - The close button displayed only for the selected tabitem and the remaining tab item displays close button while mouse is over the tab header.
 
-For example, when you set the `TabControlExt.CloseButtonType` as `Both`, then the close button is displayed in both TabItem and TabControl. 
+For example, when you set the `TabControlExt.CloseButtonType` as `Both`, then the close button is displayed in both TabItem and WPF Tab Control. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -306,7 +307,7 @@ tabItem2.CanClose = false;
 {% endhighlight %}
 {% endtabs %}
 
-In the below screenshot, second tabitem `TabItemExt.CanClose` property is `false`. So, close button in tabitem header and `TabControl` is in disabled state for second tabitem.
+In the below screenshot, second tabitem `TabItemExt.CanClose` property is `false`. So, close button in tabitem header and `WPF Tab Control` is in disabled state for second tabitem.
 
 ![Disable the second tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-disableclosebutton.png)
 
@@ -350,7 +351,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Add new TabItem using new button
 
-You can add the new tab item by clicking the New button. You can show the new tab button by setting the [TabControlExt.IsNewButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsNewButtonEnabled) property to `true` in `TabControl`. The [NewButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_NewButtonClick) event handles the click action of new tab button to add new tab item in `TabControl`.
+You can add the new tab item by clicking the New button. You can show the new tab button by setting the [TabControlExt.IsNewButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsNewButtonEnabled) property to `true`. The [NewButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_NewButtonClick) event handles the click action of new tab button to add new tab item in `WPF Tab Control`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -445,7 +446,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Enable or disable tab navigation bar
 
-You can enable or disable the  the tab navigation bar in `TabControl` by using the [TabScrollButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabScrollButtonVisibility) property value as `Visible` or `Hidden`. You can show the different tab navigation style in `TabControl` using the [TabScrollStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabScrollStyle) property.
+You can enable or disable the  the tab navigation bar in `WPF Tab Control` by using the [TabScrollButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabScrollButtonVisibility) property value as `Visible` or `Hidden`. You can show the different tab navigation style in `WPF Tab Control` using the [TabScrollStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabScrollStyle) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -472,7 +473,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Show or hide built-in context menu
 
-You can show the built-in context menu of the tab item by setting the [ShowTabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_ShowTabItemContextMenu) property to `true` in `TabControl`.
+You can show the built-in context menu of the tab item by setting the [ShowTabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_ShowTabItemContextMenu) property to `true` in `WPF Tab Control`.
 
 The built-in context menu of the tab item has following menu items:
 
@@ -500,7 +501,7 @@ tabControlExt.ShowTabItemContextMenu = true;
 
 ![Enable the built-in context menu in WPF TabControl](Getting-Started_images/wpf-tabcontrol-contextmenu.png)
 
-You can add custom context menu item using the [TabItemExt.ContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html#Syncfusion_Windows_Tools_Controls_TabItemExt_ContextMenuItems) property in `TabControl`. This property is enabled by setting the [IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsCustomTabItemContextMenuEnabled) property to `true`.
+You can add custom context menu item using the [TabItemExt.ContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html#Syncfusion_Windows_Tools_Controls_TabItemExt_ContextMenuItems) property in `WPF Tab Control`. This property is enabled by setting the [IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsCustomTabItemContextMenuEnabled) property to `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -542,9 +543,9 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Localization support
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `TabControl` control by adding resource file for each language.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `WPF Tab Control` by adding resource file for each language.
 
-Refer the following links to know more about how provide a localization support for the `TabControl`,
+Refer the following links to know more about how provide a localization support for the `WPF Tab Control`,
 
 * [https://help.syncfusion.com/wpf/localization](https://help.syncfusion.com/wpf/localization)
 * [https://github.com/syncfusion/wpf-controls-localization-resx-files](https://github.com/syncfusion/wpf-controls-localization-resx-files)
@@ -552,7 +553,7 @@ Refer the following links to know more about how provide a localization support 
 
 ## Theme
 
-The WPF TabControl supports various built-in themes. Refer to the below links to apply themes for the TabControl,
+The WPF Tab Control supports various built-in themes. Refer to the below links to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Ribbon ModelTab in WPF Ribbon Control
 
-Modal Tabs in the Ribbon Control are used to display a collection of commands other than the commands which are available in the core tabs. At this point, the core tab gets disabled.
+Modal Tabs in the WPF Ribbon Control are used to display a collection of commands other than the commands which are available in the core tabs. At this point, the core tab gets disabled.
 
 ## Use case scenarios
 
@@ -165,9 +165,9 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 ## How to handle modal tabs in ribbon
 
-The `ShowModalTab` and `CloseModalTabs` method handle the visibility of the Modal Tabs in the Ribbon control. Any ModalTab from the ModalTabCollection can be displayed whenever required.
+The `ShowModalTab` and `CloseModalTabs` method handle the visibility of the Modal Tabs in the WPF Ribbon Control. Any ModalTab from the ModalTabCollection can be displayed whenever required.
 
-To show specific Modal Tab in ribbon, call ShowModalTab method. This can be done from any event of core Ribbon Tab control.
+To show specific Modal Tab in ribbon, call ShowModalTab method. This can be done from any event of core RibbonTab control.
 
 {% tabs %}
 
@@ -190,7 +190,7 @@ End Sub
 
 {% endtabs %}
 
-`CloseModalTabs` method is used to close the currently opened Modal Tab in Ribbon control. This method should be called in any event of currently displaying Modal Tab element.This is illustrated in the code given below.
+`CloseModalTabs` method is used to close the currently opened Modal Tab in WPF Ribbon Control. This method should be called in any event of currently displaying Modal Tab element.This is illustrated in the code given below.
 
 {% tabs %}
 

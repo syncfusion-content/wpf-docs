@@ -9,7 +9,7 @@ documentation: ug
 
 # Zoom Command in WPF SfDiagram
 
-The [Zoom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Zoom) commands are used to perform zoom-in and zoom-out operations on the [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) view. This command is also used to do scroll and pan operations through its parameters.
+The [Zoom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Zoom) commands are used to perform zoom-in and zoom-out operations on the [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) view. This command is also used to do scroll and pan operations through its parameters.
 
 To execute zoom commands, parameter of type [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) has to be passed.
 

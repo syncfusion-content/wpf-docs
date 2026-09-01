@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip in WPF SfDiagram
 
-In Graphical User Interface (GUI), the tooltip is a message that is displayed when the mouse hovers over an element. In [WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), The tooltip is used to provide information about the position, size, and rotation angle while dragging, resizing, and rotating the diagram elements.
+In Graphical User Interface (GUI), the tooltip is a message that is displayed when the mouse hovers over an element. In [WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram), The tooltip is used to provide information about the position, size, and rotation angle while dragging, resizing, and rotating the diagram elements.
 
 N> By default, tooltips are enabled and displayed during dragging, resizing, and rotating interactions. The tooltip is shown in a static position unless the `SelectorHandleDisplayMode` property is set to `Compact`.
 
@@ -21,7 +21,7 @@ By default, the diagram displays the tooltip at a static position during an inte
 
 ## Dynamic Tooltip
 
-Diagram control displays the tooltip at a dynamic position when the [`SelectorHandleDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorHandleDisplayMode.html) is set to `Compact`. When resizing a diagram element, the tooltip is positioned closer to the resizer thumbs, and when dragging, the tooltip is positioned automatically in the nearest available viewport area around that diagram element. The following image illustrates how the dynamic tooltip works.
+WPF SfDiagram control displays the tooltip at a dynamic position when the [`SelectorHandleDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorHandleDisplayMode.html) is set to `Compact`. When resizing a diagram element, the tooltip is positioned closer to the resizer thumbs, and when dragging, the tooltip is positioned automatically in the nearest available viewport area around that diagram element. The following image illustrates how the dynamic tooltip works.
 
 {% tabs %}
 {% highlight xaml %}

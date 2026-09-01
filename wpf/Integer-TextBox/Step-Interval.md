@@ -7,15 +7,15 @@ control: IntegerTextBox
 documentation: ug
 ---
 
-# Step Interval in WPF IntegerTextBox
+# Step Interval in WPF Integer TextBox
 
-The [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) control allows you to increase or decrease the value by pressing the up and down arrow keys on the keyboard or by scrolling the mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ScrollInterval) property specifies the increment or decrement interval. The default value of `ScrollInterval` is 1.
+The [WPF Integer TextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) control allows you to increase or decrease the value by pressing the up and down arrow keys on the keyboard or by scrolling the mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ScrollInterval) property specifies the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
- For example, if the `ScrollInterval` value is set to 4, the `IntegerTextBox` control [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) increases or decreases by 4 while pressing the Up arrow or Down arrow keys and mouse wheel scrolling up or down.
+ For example, if the `ScrollInterval` value is set to 4, the `WPF Integer TextBox` control [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) increases or decreases by 4 while pressing the Up arrow or Down arrow keys and mouse wheel scrolling up or down.
 
 ## Change Value on Up, Down Arrow Key
 
-The `IntegerTextBox` control allows you to increase or decrease the `Value` based on the `ScrollInterval` by pressing the up arrow and down arrow keys on the keyboard.
+The `WPF Integer TextBox` control allows you to increase or decrease the `Value` based on the `ScrollInterval` by pressing the up arrow and down arrow keys on the keyboard.
 
 {% tabs %}
 {% highlight XAML %}
@@ -41,7 +41,7 @@ integerTextBox.ScrollInterval = 2;
 
 ## Change Value on Mouse Wheel
 
-The `IntegerTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` when scrolling the mouse wheel over the control. This is enabled when the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_IsScrollingOnCircle) property is `true`. The default value of `IsScrollingOnCircle` is `true`.
+The `WPF Integer TextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` when scrolling the mouse wheel over the control. This is enabled when the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_IsScrollingOnCircle) property is `true`. The default value of `IsScrollingOnCircle` is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -68,7 +68,7 @@ integerTextBox.ScrollInterval = 3;
 
 ## Change Value on Click and Drag
 
-The `IntegerTextBox` allows you to increase or decrease the value based on the `ScrollInterval` by clicking and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableExtendedScrolling) property is `true`. The `IntegerTextBox` value increases when you click and drag the mouse to the right or top of the screen, and decreases when you click and drag the mouse to the left or bottom of the screen. Before that, the control should be in an unfocused state. The default value of `EnableExtendedScrolling` is `false`.
+The `WPF Integer TextBox` allows you to increase or decrease the value based on the `ScrollInterval` by clicking and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableExtendedScrolling) property is `true`. The `WPF Integer TextBox` value increases when you click and drag the mouse to the right or top of the screen, and decreases when you click and drag the mouse to the left or bottom of the screen. Before that, the control should be in an unfocused state. The default value of `EnableExtendedScrolling` is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -95,7 +95,7 @@ integerTextBox.EnableExtendedScrolling = true;
 
 ## Allow or Restrict Selection on Focus
 
-`IntegerTextBox` allows you to automatically select the text when the control receives focus, by setting the [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_TextSelectionOnFocus) property to `true`. If you want to restrict selection when the control receives focus, set `TextSelectionOnFocus` to `false`. The default value of `TextSelectionOnFocus` is `true`.
+`WPF Integer TextBox` allows you to automatically select the text when the control receives focus, by setting the [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_TextSelectionOnFocus) property to `true`. If you want to restrict selection when the control receives focus, set `TextSelectionOnFocus` to `false`. The default value of `TextSelectionOnFocus` is `true`.
 
 {% tabs %}
 {% highlight XAML %}

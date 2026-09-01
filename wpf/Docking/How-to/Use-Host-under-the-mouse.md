@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to use Host under the mouse in WPF DockingManager
+# How to use Host under the mouse in WPF Docking Control
 
 HostUnderMouse is the property, which is used to get the DockedElementTabHost that was under the dragged host. This can be used to update the relevant properties of Element Host while dragging the Float child.
 

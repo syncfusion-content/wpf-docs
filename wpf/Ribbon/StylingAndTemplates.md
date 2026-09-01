@@ -10,7 +10,7 @@ documentation: ug
 
 ## Theme
 
-Ribbon supports various built-in themes. Refer to the below links to apply themes for the Ribbon,
+WPF Ribbon Control supports various built-in themes. Refer to the below links to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

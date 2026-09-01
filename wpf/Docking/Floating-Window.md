@@ -6,11 +6,11 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Floating Window in WPF DockingManager Control
+# Floating Window in WPF Docking Control
 
-Floating window is one of the state in the DockingManager. To make children of the DockingManager as Float, set its [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_State) values as `Float`.
+Floating window is one of the state in the WPF Docking Control. To make children as Float, set its [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_State) values as `Float`.
 
-Floating window is like a Popup and it has some limitation in resizing. To avoid this limitation, set the [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseNativeFloatWindow) property of the DockingManager as `True`.
+Floating window is like a Popup and it has some limitation in resizing. To avoid this limitation, set the [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseNativeFloatWindow) property of the WPF Docking Control as `True`.
 
 {% tabs %}
 
@@ -63,7 +63,7 @@ SyncDockingManager.IsRollupFloatWindow = true;
 
 ## Displaying Float Windows in Taskbar
 
-Taskbar displays the icon of running applications for the purpose of switching between applications. Similarly `DockingManager` allows to display [NativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NativeFloatWindow.html) in taskbar. It can be set using [ShowFloatWindowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ShowFloatWindowInTaskbar) property for all the [NativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NativeFloatWindow.html) in `DockingManager` and default is false. Only [NativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NativeFloatWindow.html) icon can be displayed in taskbar so it is necessary to set [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseNativeFloatWindow) to true. 
+Taskbar displays the icon of running applications for the purpose of switching between applications. Similarly `WPF Docking Control` allows to display [NativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NativeFloatWindow.html) in taskbar. It can be set using [ShowFloatWindowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ShowFloatWindowInTaskbar) property for all the [NativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NativeFloatWindow.html) in `WPF Docking Control` and default is false. Only [NativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NativeFloatWindow.html) icon can be displayed in taskbar so it is necessary to set [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseNativeFloatWindow) to true. 
 
 {% tabs %}
 
@@ -95,7 +95,7 @@ SyncDockingManager.ShowFloatWindowInTaskbar = true;
 
 ### Show or Hide the Taskbar Support for Selective Windows
 
-To enable or disable the taskbar support for a particular window, use the attached property [ShowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowInTaskbar) of `DockingManager`. The default value is `true`. It is necessary to set the [ShowFloatWindowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ShowFloatWindowInTaskbar) property of `DockingManager` to `true` for displaying even a single `NativeFloatWindow` in the taskbar.
+To enable or disable the taskbar support for a particular window, use the attached property [ShowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowInTaskbar) of `WPF Docking Control`. The default value is `true`. It is necessary to set the [ShowFloatWindowInTaskbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ShowFloatWindowInTaskbar) property of `WPF Docking Control` to `true` for displaying even a single `NativeFloatWindow` in the taskbar.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ DockingManager.SetShowInTaskbar(Toolbox, false);
 
 ## Multiple Monitor functionalities
 
-The default behavior of the float window remains as Popup in the DockingManager. 
+The default behavior of the float window remains as Popup in the WPF Docking Control. 
 
 On using MultiMonitor scenario, the FloatWindow behavior as follows:
 
@@ -232,7 +232,7 @@ DockingManager.SetCanFloatMaximize(Content1, true);
 
 ## Float or Maximize on double clicking the header
 
-The [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DoubleClickAction) property of DockingManager decides whether the NativeFloatWindow can be maximized or moved to dock state while double clicking on header. If the property [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DoubleClickAction) is [DockOrFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DoubleClickAction.html), the NativeFloatWindow will moved to dock state while double clicking on header. Also, if the property [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DoubleClickAction) is [MaximizeOrRestore](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DoubleClickAction.html), the NativeFloatWindow will moved to maximized or restored window state while double clicking on header only when its [CanFloatMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloatMaximize) attached property is true. The default value of the [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DoubleClickAction) property is [DockOrFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DoubleClickAction.html).
+The [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DoubleClickAction) property of WPF Docking Control decides whether the NativeFloatWindow can be maximized or moved to dock state while double clicking on header. If the property [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DoubleClickAction) is [DockOrFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DoubleClickAction.html), the NativeFloatWindow will moved to dock state while double clicking on header. Also, if the property [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DoubleClickAction) is [MaximizeOrRestore](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DoubleClickAction.html), the NativeFloatWindow will moved to maximized or restored window state while double clicking on header only when its [CanFloatMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloatMaximize) attached property is true. The default value of the [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DoubleClickAction) property is [DockOrFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DoubleClickAction.html).
 
 {% tabs %}
 
@@ -255,11 +255,11 @@ dockingManager.DoubleClickAction = DoubleClickAction.DockOrFloat;
 
 {% endtabs %}
 
-N> The [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DoubleClickAction) property works only when [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseNativeFloatWindow) property is true in DockingManager.  
+N> The [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DoubleClickAction) property works only when [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseNativeFloatWindow) property is true in WPF Docking Control.  
 
 ## Positioning on desire location
 
-The FloatWindow can be placed at any desired location. To position the FloatWindow at the desired location with the required Rect Bounds, call [SetFloatingWindowRect](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetFloatingWindowRect_System_Windows_DependencyObject_System_Windows_Rect_) method of the DockingManager.
+The FloatWindow can be placed at any desired location. To position the FloatWindow at the desired location with the required Rect Bounds, call [SetFloatingWindowRect](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetFloatingWindowRect_System_Windows_DependencyObject_System_Windows_Rect_) method of the WPF Docking Control.
 
 
 {% tabs %}
@@ -281,7 +281,7 @@ DockingManager.SetFloatingWindowRect(Content1, New Rect(200, 200, 200, 200))
 
 ## Snapping Float window
 
-Float window can be snapped with the edge of another float window and moving all together in `DockingManager`. To enable snapping window feature for the Float window, set [AllowSnap](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AllowSnapProperty) for the specific child as `True` and set [EnableSnappingFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_EnableSnappingFloatWindowProperty) as `True` in `DockingManager`. By default, its value is `False`
+Float window can be snapped with the edge of another float window and moving all together in `WPF Docking Control`. To enable snapping window feature for the Float window, set [AllowSnap](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AllowSnapProperty) for the specific child as `True` and set [EnableSnappingFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_EnableSnappingFloatWindowProperty) as `True` in `WPF Docking Control`. By default, its value is `False`
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes in WPF SfDiagram
 
-[WPF Diagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) themes are predefined sets of diagram item styles that can be applied to diagram elements. In Diagram, nearly 20 built-in themes are available. The `DiagramTheme` class exposes `NodeStyles` and `ConnectorStyles` properties that can be used to build a custom theme.
+[WPF SfDiagram](https://www.syncfusion.com/diagram-sdk/wpf-diagram) themes are predefined sets of diagram item styles that can be applied to diagram elements. In Diagram, nearly 20 built-in themes are available. The `DiagramTheme` class exposes `NodeStyles` and `ConnectorStyles` properties that can be used to build a custom theme.
 
 To know more about `DiagramTheme` properties, refer to the [DiagramTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Theming.DiagramTheme.html) API reference.
 
@@ -17,7 +17,7 @@ To know more about `DiagramTheme` properties, refer to the [DiagramTheme](https:
 
 Built-in themes are predefined themes inherited from `DiagramTheme`. Each built-in theme has variants. Based on the selected theme and variant, the styles of nodes and connectors are applied. By default, the first variant of the specified built-in theme is applied to the diagram elements.
 
-The 19 built-in themes available in the WPF Diagram are listed below. Each entry links to the corresponding `DiagramTheme` subclass in the API reference.
+The 19 built-in themes available in the WPF SfDiagram are listed below. Each entry links to the corresponding `DiagramTheme` subclass in the API reference.
 
 | # | Theme Class | API Reference |
 |---|-------------|---------------|
@@ -137,4 +137,4 @@ N> When you apply a theme, it affects all [SfDiagram](https://help.syncfusion.co
 
 - [How to apply built-in theme for node and connector](https://support.syncfusion.com/kb/article/9995/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagram-sfdiagram)
 
-- [How to create a custom theme using the SfDiagram control in the WPF Diagram](https://support.syncfusion.com/kb/article/18673/how-to-create-a-custom-theme-using-the-sfdiagram-control-in-the-wpf-diagram)
+- [How to create a custom theme using the Diagram control in the WPF SfDiagram](https://support.syncfusion.com/kb/article/18673/how-to-create-a-custom-theme-using-the-sfdiagram-control-in-the-wpf-diagram)

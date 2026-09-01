@@ -7,9 +7,9 @@ control: IntegerTextBox
 documentation: ug
 ---
 
-# About Syncfusion® WPF Integer TextBoxControl
+# About Syncfusion® WPF Integer TextBox control
 
-The [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) control restricts text box input to integer values (up to `Int64`) with support for data binding, Watermark, Null Value, and culture. It provides many customization options to improve its appearance and to suit your application.
+The [WPF Integer TextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) control restricts text box input to integer values (up to `Int64`) with support for data binding, Watermark, Null Value, and culture. It provides many customization options to improve its appearance and to suit your application.
 
 ## Control structure
 
@@ -19,7 +19,7 @@ The [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) co
 
 ## Features
 
-The core features of the `IntegerTextBox` are as follows:
+The core features of the `WPF Integer TextBox` are as follows:
 
 * Supports up to `Int64` data type (the `Value` property is of type `long`).
 * Provides the ability to control the range of input values by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_MaxValue) properties.

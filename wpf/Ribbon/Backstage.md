@@ -11,11 +11,11 @@ documentation: ug
 
 Backstage is a separate view containing tabs and buttons that can show an application’s information and basic settings. The backstage items can also be arranged at either the top or bottom. It provides different types of animations such as fade, scale, and zoom as well as support to customize the animation duration.
 
-N> The BackStage feature is not available when using the default Ribbon style. In the default style and in older themes, the Ribbon supports only the [`ApplicationMenu`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ApplicationMenu.html). The BackStage feature is supported only in the latest ThemeStudio themes. To use BackStage in your application, you must apply one of the latest ThemeStudio themes.
+N> The BackStage feature is not available when using the default WPF Ribbon Control style. In the default style and in older themes, the WPF Ribbon Control supports only the [`ApplicationMenu`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ApplicationMenu.html). The BackStage feature is supported only in the latest ThemeStudio themes. To use BackStage in your application, you must apply one of the latest ThemeStudio themes.
 
-## BackStage settings in Ribbon
+## BackStage settings in WPF Ribbon Control
 
-The BackStage can be added by using [BackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_BackStage) property of Ribbon. To show the BackStage, click the `FILE` Menu in Ribbon like in Microsoft Outlook. 
+The BackStage can be added by using [BackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_BackStage) property. To show the BackStage, click the `FILE` Menu in WPF Ribbon Control like in Microsoft Outlook. 
 
 {% tabs %}
 
@@ -107,7 +107,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ### Customize the BackStage Visibility 
 
-The [`IsBackStageVisible`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_IsBackStageVisible) property of Ribbon enables you to show/hide the BackStage. The following code example illustrates how to show or hide BackStage.
+The [`IsBackStageVisible`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_IsBackStageVisible) property enables you to show/hide the BackStage. The following code example illustrates how to show or hide BackStage.
 
 1. Through Property 
 
@@ -171,7 +171,7 @@ End Sub
 
 3. Through Commands
 
-Ribbon control provides the static command [OpenBackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_RibbonCommands_OpenBackStage) to show/hide the BackStage based on the parameter passed to it.
+WPF Ribbon Control provides the static command [OpenBackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_RibbonCommands_OpenBackStage) to show/hide the BackStage based on the parameter passed to it.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -1033,7 +1033,7 @@ N> View [sample](https://github.com/SyncfusionExamples/How-to-set-different-type
 
 ## Placement Customization
 
-The Backstage can be opened or closed within any window or placement target specified using the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementType) and [`PlacementTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementTarget) properties in BackStage. It allows us to open the Backstage under the Ribbon tab or occupies the window or placement target's entire client area.
+The Backstage can be opened or closed within any window or placement target specified using the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementType) and [`PlacementTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementTarget) properties in BackStage. It allows us to open the Backstage under the RibbonTab or occupies the window or placement target's entire client area.
 
 The [`PlacementTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementTarget) property specifies the element relative to which the Backstage should be positioned while it is opened.
 
@@ -1696,7 +1696,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 #### Backstage placed in RibbonWindow
 
-When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementType) is set to [`BelowTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStagePlacementType.html) and the [`PlacementTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementTarget) is not set, the Backstage will appear below the ribbon tabs instead of occupying the entire Ribbon Window while it is opened. 
+When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementType) is set to [`BelowTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStagePlacementType.html) and the [`PlacementTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementTarget) is not set, the Backstage will appear below the WPF Ribbon Control tabs instead of occupying the entire RibbonWindow while it is opened. 
 
  {% tabs %}
 
@@ -1910,7 +1910,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 #### Backstage placed in MS Window
 
-When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementType) is set to [`BelowTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStagePlacementType.html) and the [`PlacementTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementTarget) is not set, the Backstage will appear below the ribbon tabs instead of occupying the entire MS Window while it is opened. 
+When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementType) is set to [`BelowTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStagePlacementType.html) and the [`PlacementTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementTarget) is not set, the Backstage will appear below the WPF Ribbon Control tabs instead of occupying the entire MS Window while it is opened. 
 
  {% tabs %}
 
@@ -2124,7 +2124,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 #### Backstage placed in Placement target
 
-When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementType) is set to [`BelowTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStagePlacementType.html) and the [`PlacementTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementTarget) is set to an element, the Backstage will occupy the area of the target element minus the ribbon tab area while it is opened. 
+When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementType) is set to [`BelowTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStagePlacementType.html) and the [`PlacementTarget`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_PlacementTarget) is set to an element, the Backstage will occupy the area of the target element minus the WPF Ribbon Control tab area while it is opened. 
 
  {% tabs %}
 
@@ -2346,11 +2346,11 @@ N> View [sample](https://github.com/SyncfusionExamples/How-to-set-placement-type
 
 ## Customization of BackStageButton
 
-The BackStage button in Ribbon can be customized to change its header text, apply a custom header template, or control its visibility.
+The BackStage button in WPF Ribbon Control can be customized to change its header text, apply a custom header template, or control its visibility.
 
 ### BackStageHeader
 
-The `BackStageHeader` property allows you to set the header text for the Backstage button in the Ribbon. By default, this header is displayed as File in plain text.
+The `BackStageHeader` property allows you to set the header text for the Backstage button in the WPF Ribbon Control. By default, this header is displayed as File in plain text.
 
 {% tabs %}
 
@@ -2505,7 +2505,7 @@ The following code example illustrates how to customize the Backstage header.
 
 ### BackStageButton visibility
 
-Ribbon control allows to show or hide the `BackStageButton` by using its `Visibility` property.
+WPF Ribbon Control allows to show or hide the `BackStageButton` by using its `Visibility` property.
 
 The following code example illustrates how to show or hide  the `BackStageButton`.
 

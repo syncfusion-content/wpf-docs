@@ -8,12 +8,12 @@ documentation: ug
 ---
 # Simplified Layout in WPF Ribbon Control
 
- The Ribbon is available in simplified layout which is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact viewing of the content. For the best user experience, the other Ribbon commands are located under the overflow menu. It also provides option to switch back and forth between the simplified and the normal layout using the minimize button.
+ The WPF Ribbon Control is available in simplified layout which is designed to display the most commonly used commands in a single line interface, allowing more screen space for compact viewing of the content. For the best user experience, the other WPF Ribbon Control commands are located under the overflow menu. It also provides option to switch back and forth between the simplified and the normal layout using the minimize button.
 
- The [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) enumeration property provides an option to load the Ribbon control in simplified layout. It contains the following options like:
+ The [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) enumeration property provides an option to load the WPF Ribbon Control in simplified layout. It contains the following options like:
 
- * **Normal** - The Ribbon items are arranged in the standard layout. This is the default value.
- * **Simplified** - The Ribbon items are arranged in the simplified layout.
+ * **Normal** - The WPF Ribbon Control items are arranged in the standard layout. This is the default value.
+ * **Simplified** - The WPF Ribbon Control items are arranged in the simplified layout.
 
  {% tabs %}
 
@@ -39,7 +39,7 @@ documentation: ug
 
 ## Switching between simplified and normal layouts
 
- The Ribbon control allows you to switch between simplified and normal layouts at runtime using the Ribbon minimize button located in the lower right corner of the Ribbon. To enable this option, set the [`EnableSimplifiedLayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_EnableSimplifiedLayoutMode) property to **True**. By default, its value is **False**.
+ The WPF Ribbon Control allows you to switch between simplified and normal layouts at runtime using the control minimize button located in the lower right corner of the control. To enable this option, set the [`EnableSimplifiedLayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_EnableSimplifiedLayoutMode) property to **True**. By default, its value is **False**.
 
  {% tabs %}
 
@@ -67,7 +67,7 @@ documentation: ug
 
 ## Visibility of the Ribbon items between normal and simplified layout
 
- The Ribbon items can be set common between different layouts or can be made visible only in a particular layout using the [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings.html#Syncfusion_Windows_Tools_Controls_SimplifiedLayoutSettings_SetDisplayMode_System_Windows_UIElement_Syncfusion_Windows_Tools_DisplayMode_) attached property. By default, items will be displayed in both normal and simplified layout. The [`DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.DisplayMode.html) is of flag enumeration type that contains the following values.
+ The WPF Ribbon Control items can be set common between different layouts or can be made visible only in a particular layout using the [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings.html#Syncfusion_Windows_Tools_Controls_SimplifiedLayoutSettings_SetDisplayMode_System_Windows_UIElement_Syncfusion_Windows_Tools_DisplayMode_) attached property. By default, items will be displayed in both normal and simplified layout. The [`DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.DisplayMode.html) is of flag enumeration type that contains the following values.
 
  * **Normal** - The item will be displayed only in the normal layout.
  * **Simplified** - The item will be displayed only in the simplified layout.
@@ -126,7 +126,7 @@ documentation: ug
 
  {% endtabs %}
 
- When using simplified layout, the **Margin**, **Width** and **Height** values of the Ribbon items can be ignored as they are changed based on the size form and layout mode. If the item to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers. 
+ When using simplified layout, the **Margin**, **Width** and **Height** values of the WPF Ribbon Control items can be ignored as they are changed based on the size form and layout mode. If the item to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers. 
 
  {% tabs %}
 
@@ -150,9 +150,9 @@ documentation: ug
 
  {% endtabs %}
 
-## Setting image for Ribbon items
+## Setting image for WPF Ribbon Control items
 
- For **"Normal"** layout mode, the images from the [`SmallIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SmallIcon) and [`LargeIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_LargeIcon) properties are used inside the Ribbon items based on the size mode (extra small, small and large). However, the simplified layout mode uses 20 * 20 image size for the Ribbon items as standard and it can be obtained from the [`MediumIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_MediumIcon) property. In-case if the [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonButton.html#Syncfusion_Windows_Tools_Controls_RibbonButton_IconTemplate) property is used to display the image, the simplified layout will automatically resize it to 20 * 20 size.
+ For **"Normal"** layout mode, the images from the [`SmallIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SmallIcon) and [`LargeIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_LargeIcon) properties are used inside the WPF Ribbon Control items based on the size mode (extra small, small and large). However, the simplified layout mode uses 20 * 20 image size for the WPF Ribbon Control items as standard and it can be obtained from the [`MediumIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_MediumIcon) property. In-case if the [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonButton.html#Syncfusion_Windows_Tools_Controls_RibbonButton_IconTemplate) property is used to display the image, the simplified layout will automatically resize it to 20 * 20 size.
 
  {% tabs %}
 
@@ -193,15 +193,15 @@ documentation: ug
 
  {% endtabs %}
 
- The following screenshot shows the simplified layout within the Ribbon control.
+ The following screenshot shows the simplified layout within the WPF Ribbon Control.
 
  ![WPF Ribbon with Simplified Layout](SimplifiedLayout_images/wpf-ribbon-simplified-layout.png)
  
  N> View [sample](https://github.com/SyncfusionExamples/How-to-customize-the-simplified-layout-in-Ribbon) in GitHub.
 
-## Customizing the Ribbon during runtime through the QAT window
+## Customizing the WPF Ribbon Control during runtime through the QAT window
 
- The Ribbon control allows to customize the Ribbon and Ribbon items through the QAT window, where user can add the Ribbon items to a new [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) or [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html). The newly added [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) or [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will only be visible in the respective layout in which items were added originally. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) is set as **"Simplified"** and a new [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) named *Folder* is created and added using the QAT window. This tab will now be visible only in the simplified layout and not in the normal layout which is the default behavior. 
+The WPF Ribbon Control provides a QAT customization window that allows customization of the WPF Ribbon Control and its items. Through this window, items can be added to a new [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) or [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html). The newly added [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) or [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will only be visible in the respective layout in which items were added originally. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) is set as **"Simplified"** and a new [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) named *Folder* is created and added using the QAT window. This tab will now be visible only in the simplified layout and not in the normal layout which is the default behavior. 
 
  
  ![Customizing WPF Ribbon in Normal Layout at Runtime](SimplifiedLayout_images/wpf-ribbon-customized-in-normal-layout.png)
@@ -211,7 +211,7 @@ documentation: ug
  *Simplified layout*
 
 
- In the meantime, the Ribbon control also allows to add items to the Quick Access Toolbar (QAT) with the help of the QAT window or through the context menu shortcut. Items added during normal or simplified layout will always be visible even when switching between layouts. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) is set as **"Simplified"** and the *Bold* item is added to the QAT through the context menu. This item will now be constantly visible in both normal and simplified layouts.
+ In the meantime, the WPF Ribbon Control also allows to add items to the Quick Access Toolbar (QAT) with the help of the QAT window or through the context menu shortcut. Items added during normal or simplified layout will always be visible even when switching between layouts. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) is set as **"Simplified"** and the *Bold* item is added to the QAT through the context menu. This item will now be constantly visible in both normal and simplified layouts.
 
   ![Customizing WPF Ribbon in Normal Layout at Runtime](SimplifiedLayout_images/wpf-ribbon-qat-items-in-normal-layout.png)
  *Normal layout*
@@ -220,9 +220,9 @@ documentation: ug
  *Simplified layout*
  
 
-## Resizing Ribbon in simplified layout
+## Resizing WPF Ribbon Control in simplified layout
 
- While re-sizing the Ribbon, when the width of the window decreases and touches the last positioned item in the Ribbon, the appropriate item will be moved inside the overflow menu automatically. The same behavior will continue for each item when the window is resized continuously.
+ While re-sizing the WPF Ribbon Control, when the width of the window decreases and touches the last positioned item in the WPF Ribbon Control, the appropriate item will be moved inside the overflow menu automatically. The same behavior will continue for each item when the window is resized continuously.
 
  ![Resizing WPF Ribbon at Runtime](SimplifiedLayout_images/wpf-ribbon-resize-window.gif)
 
