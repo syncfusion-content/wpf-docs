@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MultiSelection Support in WPF ComboBoxAdv | Syncfusion®
-description: MultiSelection support in WPF ComboBoxAdv enables users to select multiple items within the control, improving flexibility and selection management.
+title: MultiSelection Support in WPF ComboBox | Syncfusion®
+description: MultiSelection support in WPF ComboBox enables users to select multiple items within the control, improving flexibility and selection management.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # MultiSelection Support in WPF ComboBox
 
-This section explains how to select multiple items and how to select items programmatically in the [WPF ComboBox](https://www.syncfusion.com/wpf-controls/combobox) (ComboBox) control.
+This section explains how to select multiple items and programmatically select items in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
 
 ## Properties
 
@@ -39,7 +39,7 @@ NA</td></tr>
 
 ## Adding multiple selection to an application
 
-You can select multiple items in the WPF ComboBox (ComboBox) control by setting the [`AllowMultiSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property to `true`.
+You can select multiple items in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control by setting the [`AllowMultiSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property to `true`.
 
 {% tabs %}
 
@@ -146,7 +146,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3. To bind the `ComboBox` to data, set the `ViewModel` as the `DataContext` and bind `Countries` to the [`ItemsSource`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource) property.
+3. To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control to data, set the `ViewModel` as the `DataContext` and bind the `Countries` collection to the [`ItemsSource`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource) property.
 
 {% capture codesnippet3 %}
 {% tabs %}

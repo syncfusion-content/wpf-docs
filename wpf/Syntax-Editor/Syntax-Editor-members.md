@@ -9,11 +9,11 @@ documentation: ug
 
 # Syntax Editor Members in WPF Syntax Editor
 
-The `Syntax Editor` class provides a rich set of properties, methods, and events that allow you to customize and control its behavior. This section describes the key members available in the `Syntax Editor` class and explains how they can be used in your application.
+The `EditControl` (Syntax Editor) class provides a rich set of properties, methods, and events that allow you to customize and control its behavior. This section describes the key members available in the `EditControl` class and explains how they can be used in your application.
 
 ## Properties
 
-The following table lists the properties available in `Syntax Editor` and their descriptions.
+The following table lists the properties available in `EditControl` and their descriptions.
 
 <table>
 <tr>
@@ -280,15 +280,15 @@ A PropertyChangedCallback get raised when the text in the Syntax Editor gets cha
 <td>
 CaretPositionChanged<br/><br/></td><td>
 EventHandler<br/><br/></td><td>
-This event will be raised when the caret position of the text in the Syntax Editor is changed. 
+This event will be raised when the caret position of the text in the `EditControl` is changed. 
 The <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CaretPositionChanged" aria-label="CaretPositionChanged event in Syncfusion WPF EditControl">CaretPositionChanged</a> event receives the `sender` and 
 <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.CaretPositionEventArgs.html" aria-label="CaretPositionEventArgs class in Syncfusion WPF">CaretPositionEventArgs</a> as argument which has the following properties.
 <ul>
   <li>
-    <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LineNumber" aria-label="Line Number property in Syncfusion WPF EditControl">Line Number</a> : Gets the current line number value of the Syntax Editor.
+    <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LineNumber" aria-label="Line Number property in Syncfusion WPF EditControl">Line Number</a> : Gets the current line number value of the `EditControl`.
   </li>
   <li>
-    <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex" aria-label="Cursor Index property in Syncfusion WPF EditControl">Cursor Index</a> : Gets the current cursor index value of the Syntax Editor.
+    <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex" aria-label="Cursor Index property in Syncfusion WPF EditControl">Cursor Index</a> : Gets the current cursor index value of the `EditControl`.
   </li>
 </ul>
 <br/><br/></td></tr>

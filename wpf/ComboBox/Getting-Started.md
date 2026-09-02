@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with WPF ComboBoxAdv | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF ComboBoxAdv control. Explore setup, elements, features, examples, and customization options.
+title: Getting Started with WPF ComboBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF ComboBox control. Explore setup, elements, features, examples, and customization options.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
 ---
 # Getting Started with WPF ComboBox
-This section provides a quick overview for working with the ComboBox ([ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html)).
+This section provides a quick overview for working with the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-combobox-example/tree/master/ComboBoxAdv).
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#comboboxadv) section to get the list of assemblies or NuGet packages that need to be added as references to use the [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control in any application. The minimum NuGet package required is `Syncfusion.Shared.WPF`.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#comboboxadv) section to get the list of assemblies or NuGet packages that need to be added as references to use the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control in any application. The minimum NuGet package required is `Syncfusion.Shared.WPF`.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 
@@ -21,7 +21,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Creating an application with ComboBox
 
-In this walk-through, the user will create a WPF application that contains the [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
+In this walk-through, the user will create a WPF application that contains the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
 
 1. [Creating the project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
@@ -32,7 +32,7 @@ In this walk-through, the user will create a WPF application that contains the [
 
 ### Creating the project
 
-The section below provides detailed information to create a new project in Visual Studio to display [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
+The section below provides detailed information to create a new project in Visual Studio to display [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
 
 1. Open Visual Studio and click **Create a new project**.
 2. Select **WPF App (.NET Framework)** (or **WPF Application** for .NET/.NET Core) and click **Next**.
@@ -40,18 +40,18 @@ The section below provides detailed information to create a new project in Visua
 
 ### Adding control via designer
 
-The [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control can be added to the application by dragging it from the Toolbox and dropping it on the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#comboboxadv) will be added automatically.
+The [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control can be added to the application by dragging it from the Toolbox and dropping it on the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#comboboxadv) will be added automatically.
 
 ![Adding control via designer](Getting-Started_images/ComboBoxAdv_img2.png)
 
 ### Adding control manually in XAML
 
-To add [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) manually in XAML, do the steps below.
+To add [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) manually in XAML, do the steps below.
 
 1. Add the required assembly reference to the project:
    * `Syncfusion.Shared.WPF`
 2. Import the Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` in the XAML page, or the `Syncfusion.Windows.Tools.Controls` namespace in code.
-3. Declare [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) in the XAML page.
+3. Declare [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) in the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -80,12 +80,12 @@ To add [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Co
 
 ### Adding control manually in C#
 
-To add [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) manually in C#, do the steps below.
+To add [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) manually in C#, do the steps below.
 
 1. Add the required assembly reference to the project:
    * `Syncfusion.Shared.WPF`
 2. Import the `Syncfusion.Windows.Tools.Controls` namespace.
-3. Create a `ComboBox` instance and add it to the page.
+3. Create a `ComboBoxAdv` instance and add it to the page.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -94,7 +94,7 @@ To add [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Co
 
 using System.Windows;
 using Syncfusion.Windows.Tools.Controls;
-namespace ComboBox
+namespace GettingStartedComboBox
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -120,14 +120,14 @@ namespace ComboBox
 
 ## Adding items in ComboBox
 
-Items can be added in the [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control in the following ways.
+Items can be added in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control in the following ways.
 
 1. Adding items by `ComboBoxItemAdv`.
 2. Adding items by data binding.
 
 ### Add items using ComboBoxItemAdv
 
-The items in [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) can be created by using [`ComboBoxItemAdv`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxItemAdv.html) in XAML or C# code.
+The items in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) can be created by using [`ComboBoxItemAdv`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxItemAdv.html) in XAML or C# code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -174,7 +174,7 @@ public MainWindow()
 
 ### Adding items by data binding
 
-The items in [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) can be added by data binding by following the procedure below.
+The items in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) can be added by data binding by following the procedure below.
 
 #### Creating the data model for the sample application
 
@@ -257,7 +257,7 @@ public class PopulationViewModel
 
 #### Binding to data
 
-To bind the [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) to data, bind the collection created in the previous step to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) property by setting the `PopulationViewModel` as the `DataContext`.
+To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) to data, bind the collection created in the previous step to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) property by setting the `PopulationViewModel` as the `DataContext`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -280,7 +280,7 @@ To bind the [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Too
 
 {% endhighlight %}
 {% highlight c# %}
-namespace ComboBox
+namespace GettingStartedComboBox
 {
     public partial class MainWindow : Window
     {
@@ -296,7 +296,7 @@ namespace ComboBox
 
 #### Binding display member
 
-The [`DisplayMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) property denotes the path to a value on the data object for visual presentation of items in the drop-down list and for displaying the selected item in [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html). The default value is an empty string.
+The [`DisplayMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) property denotes the path to a value on the data object for visual presentation of items in the drop-down list and for displaying the selected item in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html). The default value is an empty string.
 
 {% tabs %}
 {% highlight xaml %}
@@ -349,14 +349,14 @@ You can customize the visualization of a data object using the [`ItemTemplate`](
 
 ## Selection
 
-[ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) supports single and multiple selection of items. By default, selection in ComboBox is single selection. To select multiple items, enable the [`AllowMultiSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property and select those items from the drop-down list. For more details, see [MultiSelection Support](MultiSelection-Support.md).
+[ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control supports single and multiple selection of items. By default, selection in ComboBox is single selection. To select multiple items, enable the [`AllowMultiSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property and select those items from the drop-down list. For more details, see [MultiSelection Support](MultiSelection-Support.md).
 
 ![MultiSelection](Getting-Started_images/ComboBoxAdv_img5.png)
 
- You can select the item or get the index of the selected item by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) property. When an item is selected in [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html), you can get their information using [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) or [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) property. For multiple selected items, use [SelectedItems]([SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_SelectedItems)) property. The selection of the items can be handled using [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) event.
+ You can select the item or get the index of the selected item by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) property. When an item is selected in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html), you can get their information using [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) or [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) property. For multiple selected items, use [SelectedItems]([SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_SelectedItems)) property. The selection of the items can be handled using [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) event.
 
 ## Editing
-[IsEditable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_IsEditable) property helps to edit the text in [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
+[IsEditable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_IsEditable) property helps to edit the text in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
 
 ![Editable](Getting-Started_images/ComboBoxAdv_img6.png)
 

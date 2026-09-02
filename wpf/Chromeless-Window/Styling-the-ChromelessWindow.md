@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styling in WPF ChromelessWindow | Syncfusion®
-description: Styling support in the ChromelessWindow enables customization of window appearance through styles, templates, and visual properties.
+title: Styling in WPF Chromeless Window | Syncfusion®
+description: Styling support in the Chromeless Window enables customization of window appearance through styles, templates, and visual properties.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
 # Styling in WPF Chromeless Window
 
-This section describes the styles and templates supported by the Chromeless Window control.
+This section describes the styles and templates supported by the `ChromelessWindow` control.
 
 ## Custom template for the TitleBar
 
@@ -50,7 +50,7 @@ For example, use the following code for a `TitleBarTemplate`.
 
 N> The drag-and-drop feature for the Chromeless Window is available only when a TitleBar is present. To enable this feature, include a TitleBar in your Chromeless Window and specify its name as `PART_TitleBar`.
 
-![Styling-the-Chromeless Window_img1](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img1.jpeg)
+![Styling the Chromeless Window with custom TitleBar](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img1.jpeg)
 
 ## Custom template for the TitleButton
 
@@ -96,7 +96,7 @@ HorizontalAlignment="Center" VerticalAlignment="Center"  Width="9" Height="8">
 
 {% endtabs %}
 
-![Styling-the-Chromeless Window_img2](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img2.jpeg)
+![Styling the Chromeless Window with custom title button](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img2.jpeg)
 
 Similarly, the template for any other button can be changed by using the corresponding button property.
 
@@ -166,6 +166,6 @@ xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Sh
 
 {% endtabs %}
 
-The following screenshot shows the custom Chromeless Window control created using the preceding code.
+The following screenshot shows the custom `ChromelessWindow` control created using the preceding code.
 
-![Styling-the-Chromeless Window_img3](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img3.jpeg)
+![Styling the Chromeless Window](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img3.jpeg)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Watermark Support in WPF ComboBoxAdv | Syncfusion®
-description: Watermark support in WPF ComboBoxAdv displays placeholder text when no item is selected, improving usability and guiding user input.
+title: Watermark Support in WPF ComboBox | Syncfusion®
+description: Watermark support in WPF ComboBox displays placeholder text when no item is selected, improving usability and guiding user input.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug

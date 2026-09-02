@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with WPF ChromelessWindow | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF ChromelessWindow control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Chromeless Window | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Chromeless Window control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
 # Getting Started with WPF Chromeless Window
 
-This section explains how to add and configure the Chromeless Window control in a WPF application.
+This section explains how to add and configure the `ChromelessWindow` control in a WPF application.
 
 ## Assembly deployment
 
@@ -22,7 +22,7 @@ The minimum NuGet package required is `Syncfusion.Shared.WPF`. Refer to [Control
 
 ## Creating a simple application with Chromeless Window
 
-You can create a WPF application with Chromeless Window using the following steps:
+You can create a WPF application with `ChromelessWindow` using the following steps:
 
 1.	[Create a project.](#creating-the-project)
 2.	[Add Chromeless Window.](#add-chromelesswindow)
@@ -35,11 +35,11 @@ You can create a WPF application with Chromeless Window using the following step
 
 ### Creating the project
 
-Create a new WPF project in Visual Studio to display the Chromeless Window.
+Create a new WPF project in Visual Studio to display the `ChromelessWindow`.
 
 ### Add Chromeless Window
 
-The following steps help you add Chromeless Window to your project:
+The following steps help you add `ChromelessWindow` to your project:
 
 1. Create a WPF project and add a reference to the following assembly:
    * `Syncfusion.Shared.WPF.dll`
@@ -62,7 +62,7 @@ The following steps help you add Chromeless Window to your project:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. Change the `Window` to `Chromeless Window`.
+3. Change the `Window` to `ChromelessWindow`.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -78,7 +78,7 @@ The following steps help you add Chromeless Window to your project:
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4. Add the `Syncfusion.Windows.Shared` namespace and inherit `MainWindow` from `Chromeless Window` in code-behind.
+4. Add the `Syncfusion.Windows.Shared` namespace and inherit `MainWindow` from `ChromelessWindow` in code-behind.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -104,7 +104,7 @@ The following sections describe the most common title bar customizations. For a 
 
 ### Title bar background
 
-You can customize the background of the title bar by setting the [TitleBarBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarBackground) property of Chromeless Window.
+You can customize the background of the title bar by setting the [TitleBarBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarBackground) property of `ChromelessWindow`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -148,7 +148,7 @@ The font size of the caption in the title bar can be customized using the [Title
 
 ### Title bar height
 
-You can customize the caption height by setting the [TitleBarHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarHeight) property of Chromeless Window.
+You can customize the caption height by setting the [TitleBarHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarHeight) property of `ChromelessWindow`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -171,7 +171,7 @@ You can customize the caption height by setting the [TitleBarHeight](https://hel
 
 ### Title bar text alignment
 
-Use the [TitleTextAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleTextAlignment) property to set the alignment of the title text in the Chromeless Window. The following alignment options are available:
+Use the [TitleTextAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleTextAlignment) property to set the alignment of the title text in the `ChromelessWindow`. The following alignment options are available:
 
 * `Left` - Aligns the title text to the left.
 * `Right` - Aligns the title text to the right.
@@ -222,7 +222,7 @@ You can set the caption icon by setting the [Icon](https://learn.microsoft.com/e
 
 ### Title bar icon alignment
 
-Use the [IconAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_IconAlignment) property to align the title bar icon in the Chromeless Window.
+Use the [IconAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_IconAlignment) property to align the title bar icon in the `ChromelessWindow`.
 
 The following alignment options are available:
 
@@ -251,7 +251,7 @@ The following alignment options are available:
 
 ## Customizing the border of Chromeless Window
 
-You can change the border color of the Chromeless Window by setting the [ResizeBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ResizeBorderBrush) property. For full border customization, see [Customizing Border of the Chromeless Window](Customizing-Border-of-the-ChromelessWindow.md).
+You can change the border color of the `ChromelessWindow` by setting the [ResizeBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ResizeBorderBrush) property. For full border customization, see [Customizing Border of the Chromeless Window](Customizing-Border-of-the-ChromelessWindow.md).
 
 {% tabs %}
 {% highlight XAML %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WPF ToolBarAdv | Syncfusion®
-description: Customization support in WPF ToolBarAdv enables personalized toolbar layouts, item customization, and appearance modifications to suit application requirements.
+title: Customization in WPF ToolBar | Syncfusion®
+description: Customization support in WPF ToolBar enables personalized toolbar layouts, item customization, and appearance modifications to suit application requirements.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
@@ -67,7 +67,7 @@ This section demonstrates how to customize a floating ToolBar by applying a Floa
 
 ## Customizing Foreground
 
-The [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=windowsdesktop-7.0) property of [ToolBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) can be used to customize the floating ToolBar text foreground.
+The [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=windowsdesktop-7.0) property of [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) control can be used to customize the floating ToolBar text foreground.
 
 The following code illustrates how to set the value of the foreground property:
 

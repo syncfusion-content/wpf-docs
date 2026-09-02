@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Toolbars in WPF ToolBarAdv | Syncfusion®
-description: Dealing with toolbars in WPF ToolBarAdv includes managing toolbar positioning, overflow items, gripper visibility, orientation, and toolbar items.
+title: Dealing with Toolbars in WPF ToolBar | Syncfusion®
+description: Dealing with toolbars in WPF ToolBar includes managing toolbar positioning, overflow items, gripper visibility, orientation, and toolbar items.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with Toolbars in WPF ToolBar
 
-The following sections describe how to position, customize, and populate the items in a `ToolBar`.
+The following sections describe how to position, customize, and populate the items in a [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) control.
 
 ## Specifying the position of ToolBar in a ToolBarTrayAdv
 
@@ -136,7 +136,7 @@ Grid1.Children.Add(tray);
 
 ## ToolBar with overflow items
 
-When a ToolBar control contains more items than can be displayed within its size, the additional items are listed in the overflow popup. On clicking the overflow button, the items are listed.
+When a [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) control contains more items than can be displayed within its size, the additional items are listed in the overflow popup. On clicking the overflow button, the items are listed.
 
 ToolBar allows you to set the overflow mode for each item.
 
@@ -144,7 +144,7 @@ ToolBar allows you to set the overflow mode for each item.
 * `OverflowMode.Never` – the specified item will never be moved to the overflow popup.
 * `OverflowMode.AsNeeded` – the specified item will be listed in the overflow popup if required. This is the default value.
 
-![Dealing-with-ToolBar-control-img2](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img2.jpeg)
+![Overflow items with ToolBar control](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img2.jpeg)
 
 ## Show or hide Gripper
 
@@ -169,7 +169,7 @@ toolBar.GripperVisibility = Visibility.Collapsed;
 
 {% endtabs %}
 
-![Dealing-with-ToolBar-control-img3](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img3.jpeg)
+![Enable or disable the gripper in ToolBar control](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img3.jpeg)
 
 ## Orientation of ToolBarTrayAdv
 
@@ -257,11 +257,11 @@ Grid1.Children.Add(tray);
 
 {% endtabs %}
 
-![Dealing-with-ToolBar-control-img4](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img4.jpeg)
+![ToolBar control with orientation](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img4.jpeg)
 
 ## Add or Remove buttons
 
-ToolBar provides the option to show or hide an item at runtime using the **Add or Remove** button. To enable it, set the [EnableAddRemoveButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_EnableAddRemoveButton) property of ToolBar to `True`. The default value is `false`. Users can unselect the checkboxes of items to hide them from the toolbar.
+ToolBar provides the option to show or hide an item at runtime using the **Add or Remove** button. To enable it, set the [EnableAddRemoveButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_EnableAddRemoveButton) property of [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) control to `True`. The default value is `false`. Users can unselect the checkboxes of items to hide them from the toolbar.
 
 ### Adding an item to the Add or Remove button
 
@@ -338,11 +338,11 @@ Grid1.Children.Add(tray);
 
 {% endtabs %}
 
-![Dealing-with-ToolBar-control-img5](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img5.jpeg)
+![Enabling the add or remove button in ToolBar control](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img5.jpeg)
 
 ## Hiding the ToolBarItem
 
-To hide a particular ToolBarItem, set the `IsAvailable` attached property of the ToolBar to `False`. The default value is `True`.
+To hide a particular ToolBarItem, set the `IsAvailable` attached property of the [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) control to `False`. The default value is `True`.
 
 {% tabs %}
 
@@ -391,4 +391,4 @@ To hide a particular ToolBarItem, set the `IsAvailable` attached property of the
 
 {% endtabs %}
 
-![Dealing-with-ToolBar-control-img6](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img6.jpeg)
+![Hiding a ToolbarItem in a ToolBar control](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img6.jpeg)

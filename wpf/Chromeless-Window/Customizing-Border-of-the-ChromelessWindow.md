@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing Border in WPF ChromelessWindow | Syncfusion®
-description: Customizing the border of the ChromelessWindow allows you to modify border appearance, thickness, and colors to match application themes.
+title: Customizing Border in WPF Chromeless Window | Syncfusion®
+description: Customizing the border of the Chromeless Window allows you to modify border appearance, thickness, and colors to match application themes.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
@@ -49,7 +49,7 @@ Me.ResizeBorderBrush = New SolidColorBrush(Colors.Maroon)
 
 ## BorderThickness
 
-To set the thickness for the resize border, use the [`ResizeBorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ResizeBorderThickness) property of the Chromeless Window. This property virtually sets the region for the resize pointer to appear. Hence, a larger region makes it easier to resize the window.
+To set the thickness for the resize border, use the [`ResizeBorderThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ResizeBorderThickness) property of the `ChromelessWindow`. This property virtually sets the region for the resize pointer to appear. Hence, a larger region makes it easier to resize the window.
 
 To set this property, use the following code.
 

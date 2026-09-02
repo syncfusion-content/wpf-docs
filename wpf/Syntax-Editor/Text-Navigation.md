@@ -13,7 +13,7 @@ Syntax Editor offers extensive support to text navigation. Users can perform nav
 
 ## Programmatic navigation
 
-The following `Syntax Editor` methods move the caret programmatically. The C# samples assume `using Syncfusion.Windows.Edit;` and an `Syntax Editor` instance named `editControl`.
+The following `EditControl` methods move the caret programmatically. The C# samples assume `using Syncfusion.Windows.Edit;` and an `EditControl` instance named `editControl`.
 
 ### Character-based navigation
 

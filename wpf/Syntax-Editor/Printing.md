@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing in WPF Syntax Editor
 
-The `Syntax Editor` provides support for printing the content displayed in the control using the [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_Print) method, and for previewing the printed output using the [ShowPrintPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_ShowPrintPreview) method. The samples below assume `using Syncfusion.Windows.Edit;` and an `Syntax Editor` instance named `editControl`.
+The Syntax Editor provides support for printing the content displayed in the control using the [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_Print) method, and for previewing the printed output using the [ShowPrintPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_ShowPrintPreview) method. The samples below assume `using Syncfusion.Windows.Edit;` and an `EditControl` instance named `editControl`.
 
 {% tabs %}
 

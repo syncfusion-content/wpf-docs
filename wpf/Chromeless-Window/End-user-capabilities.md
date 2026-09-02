@@ -1,7 +1,7 @@
 ---
 layout: post
-title: End-User Capabilities in WPF ChromelessWindow | Syncfusion®
-description: End-user capabilities in the ChromelessWindow provide support for window operations such as moving, resizing, minimizing, and maximizing.
+title: End-User Capabilities in WPF Chromeless Window | Syncfusion®
+description: End-user capabilities in the Chromeless Window provide support for window operations such as moving, resizing, minimizing, and maximizing.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
@@ -26,7 +26,7 @@ The end user can maximize or minimize the window by using the Maximize and Minim
 
 ## Restore
 
-After the window is minimized or maximized, the respective button is replaced by a **Restore** button. By clicking this restore button, the user can bring the **Chromeless Window** to its **Normal** state.
+After the window is minimized or maximized, the respective button is replaced by a **Restore** button. By clicking this restore button, the user can bring the **ChromelessWindow** to its **Normal** state.
 
 ![End-user-capabilities_img2](End-user-capabilities_images/End-user-capabilities_img2.jpeg)
 

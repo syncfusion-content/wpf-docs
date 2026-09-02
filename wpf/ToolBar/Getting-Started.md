@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF ToolBarAdv | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF ToolBarAdv control. Explore setup, elements, features, examples, and customization options.
+title: Getting Started with WPF ToolBar | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF ToolBar control. Explore setup, elements, features, examples, and customization options.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
@@ -12,11 +12,11 @@ documentation: ug
 > **Important**
 > Starting with v16.2.0.x, if you refer to Syncfusion assemblies from the trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering the Syncfusion license key in your WPF application to use our components.
 
-This section explains how to add the [WPF ToolBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) (ToolBar) control to an application and its structure.
+This section explains how to add the [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) (ToolBar) control to an application and its structure.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#toolbaradv) section for the list of assemblies or NuGet packages that need to be added as references to use the ToolBar control. The minimum NuGet package required is `Syncfusion.Shared.WPF`.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#toolbaradv) section for the list of assemblies or NuGet packages that need to be added as references to use the [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) control. The minimum NuGet package required is `Syncfusion.Shared.WPF`.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 
@@ -53,7 +53,7 @@ Title="MainWindow" Height="350" Width="525">
 {% endcapture %}
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
-* Now add the WPF ToolBar (ToolBar) control with a required optimal name using the namespace 
+* Now add the WPF [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) control with a required optimal name using the namespace 
 
 {% capture codesnippet2 %}
 {% tabs %}

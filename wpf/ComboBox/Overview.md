@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® WPF ComboBoxAdv Control | Syncfusion®
-description: Learn about the introduction and overview of Syncfusion® Essential Studio WPF ComboBoxAdv control, its elements, features, and capabilities.
+title: About Syncfusion® WPF ComboBox Control | Syncfusion®
+description: Learn about the introduction and overview of Syncfusion® Essential Studio WPF ComboBox control, its elements, features, and capabilities.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WPF ComboBox Control
 
-The [`ComboBox`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) is a WPF control that allows the user to type a value or choose an option from a list of predefined options. It has several out-of-the-box features such as data binding, multi-selection, editing, watermarking, and templating.
+The [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) is a WPF control that allows the user to type a value or choose an option from a list of predefined options. It has several out-of-the-box features such as data binding, multi-selection, editing, watermarking, and templating.
 
 ![Overview of ComboBox](Overview_images/Overview_img1.png)
 
