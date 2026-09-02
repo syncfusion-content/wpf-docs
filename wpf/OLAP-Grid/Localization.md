@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in WPF OLAP Grid
 
-Localization is the key feature for providing software solutions targeted at global users. The OLAP grid allows users to localize the control to a specific locale and supports "resx" based localization.
+Localization is the key feature for providing software solutions targeted at global users. The OLAP Grid allows users to localize the control to a specific locale and supports "resx" based localization.
 
 The following steps should be performed to localize the control:
 
@@ -63,7 +63,7 @@ public MainWindow()
 
 ## RTL support
 
-The RTL support for OLAP grid is used to display the content from right-to-left by setting the `FlowDirection` property to "RightToLeft". The following code sample explains how to set this property.
+The RTL support for OLAP Grid is used to display the content from right-to-left by setting the `FlowDirection` property to "RightToLeft". The following code sample explains how to set this property.
 
 {% tabs %}
   
@@ -87,7 +87,7 @@ Me.olapGrid.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 {% endtabs %}
 
-![Localized OlapGrid and also display the data from right to left](Localization_images/Localization_img53.png)
+![Localized content displayed from right to left](Localization_images/Localization_img53.png)
 
 A sample is locally available in the following location.
 

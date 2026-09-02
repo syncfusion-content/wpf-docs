@@ -9,14 +9,14 @@ documentation: ug
 
 # Grid Style Dialog in WPF OLAP Grid
 
-The OLAP grid can be formatted the following ways:
+The OLAP Grid can be formatted in the following ways:
 
 * Style dialog.
 * Configuring the properties of cell style.
 
 ## Style dialog
 
-The OLAP grid style dialog is used to format the cells of the control. Styling can be applied to column headers, row headers, summary cells, and value cells. The following properties of headers and summary cells can be formatted:
+The grid style dialog is used to format the cells of the control. Styling can be applied to column headers, row headers, summary cells, and value cells. The following properties of headers and summary cells can be formatted:
 
 * Background color
 * Foreground color
@@ -32,7 +32,7 @@ The following are the properties of value cells that can be formatted:
 
 ![Grid Style Dialog](Grid-Style-Dialog_images/Grid-Style-Dialog_img1.png)
 
-The following code sample will launch the OLAP grid style dialog.
+The following code sample will launch the grid style dialog.
 
 {% tabs %}
   
@@ -54,7 +54,7 @@ Me.OlapGrid1.ShowStyleDialog()
 
 ## Configuring the properties of cell style
 
-The following properties allow the OLAP grid cell to be customized, so that it appears in a custom style rather than the default one.
+The following properties allow the cells to be customized, so that they appear in a custom style rather than the default one.
 
 * **Background**: Gets or sets the background color of the cell.
 * **FontFamily**: Gets or sets the font family of the cell.
@@ -62,7 +62,7 @@ The following properties allow the OLAP grid cell to be customized, so that it a
 * **FontWeight**: Gets or sets the font weight of the cell.
 * **Foreground**: Gets or sets the foreground color of the cell.
 
-The column, row, summary, and value cells of OLAP grid can be formatted independently using the following properties.
+The column, row, summary, and value cells of the control can be formatted independently using the following properties.
 
 * ColumnHeaderStyle
 * RowHeaderStyle
@@ -96,7 +96,7 @@ Me.OlapGrid1.SummaryColumnStyle.Background = New SolidColorBrush(Color.FromRgb(2
 
 {% endtabs %}
 
-The value cell text alignment can be changed using the following property of the OLAP grid.
+The value cell text alignment can be changed using the following property of the control.
 
 {% tabs %}
 
@@ -116,7 +116,7 @@ Me.OlapGrid1.ValueCellTextAlignment = HorizontalAlignment.Center
 
 {% endtabs %}
 
-![Customized OlapGrid](Grid-Style-Dialog_images/Grid-Style-Dialog_img2.png)
+![Customized grid](Grid-Style-Dialog_images/Grid-Style-Dialog_img2.png)
 
 A sample demo is available in the following location.
 
