@@ -9,11 +9,11 @@ documentation: ug
 
 # Items Navigation in WPF Carousel
 
-You can navigate to the WPF Carousel items by using the mouse or key navigation in the [WPF Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) control. 
+You can navigate to WPF Carousel items by using the mouse or keyboard navigation in the [WPF Carousel](https://www.syncfusion.com/wpf-controls/carousel) control.
 
 ## Navigate WPF CarouselItem using keyboard navigation
 
-You can navigate to the previous or next WPF Carousel items one by one either backward or forward direction by pressing the keys in the keyboard.
+You can navigate to the previous or next WPF Carousel items one at a time in either direction by pressing the keyboard keys.
 
 {% tabs %}
 {% highlight C# %}
@@ -78,7 +78,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-The following table explains how to navigating the WPF CarouselItem using keyboard,
+The following table explains how to navigate the WPF CarouselItem using the keyboard:
 
 <table>
 <tr>
@@ -118,14 +118,14 @@ The following table explains how to navigating the WPF CarouselItem using keyboa
 <tr>
 <td>5</td>
 <td>Page Up</td>
-<td>Navigate to the previous page item from the current page item based on the ItemsPerPage property value. Here, ItemsPerPage value is 5.</td>
+<td>Navigate to the previous page item from the current page item based on the `ItemsPerPage` property value. Here, the `ItemsPerPage` value is 5.</td>
 <td>
 <img src="Scrolling_images/PageUp.png" alt="Navigate to the previous page item from the current page item"/></td>
 </tr>
 <tr>
 <td>6</td>
 <td>Page Down</td>
-<td>Navigate to the next page item from the current page item based on the ItemsPerPage property value. Here, ItemsPerPage value is 5.</td>
+<td>Navigate to the next page item from the current page item based on the `ItemsPerPage` property value. Here, the `ItemsPerPage` value is 5.</td>
 <td>
 <img src="Scrolling_images/PageDown.png" alt="Navigate to the next page item from the current page item"/></td>
 </tr>
@@ -135,9 +135,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Navigate WPF CarouselItem using scroll bar
 
-By default, scroll bars are in collapsed state. If you want to navigate to the previous or next item one by one from the currently selected item using scroll bars, you need to enable the visibility of vertical or horizontal scroll bars by setting the `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.HorizontalScrollBarVisibility` properties value as `Visible` or `auto`. 
+By default, scroll bars are collapsed. To navigate to the previous or next item from the currently selected item by using scroll bars, enable the vertical or horizontal scroll bars by setting the `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.HorizontalScrollBarVisibility` properties to `Visible` or `auto`.
 
-N> If you set `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.HorizontalScrollBarVisibility` properties value as `Auto`, the scroll bar is automatically visible, based on the items.
+N> If you set the `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.HorizontalScrollBarVisibility` properties to `Auto`, the scroll bar is automatically visible based on the items.
 
 {% tabs %}
 {% highlight xaml %}
@@ -192,7 +192,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Navigate using commands
 
-You can easily navigate to the first, last, previous or next items and also previous page or next pages by using the built-in commands in the `WPF Carousel` control.
+You can navigate to the first, last, previous, or next items, as well as the previous or next page, by using the built-in commands in the `Carousel` control.
 
 <table>
 <tr>
@@ -243,7 +243,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Looping items in Custom path view
 
-The WPF Carousel has looping functionality, it allows users to loop items after reaching the last item. In the `Standard` visual mode, the carousal items can be scrolled on the circular manner. But, on the `CustomPath` visual mode, the carousal items scrolled in linear manner and first or last item hidden from the view. If you want to bring the first or last item into view in circular manner, use [EnableLooping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableLooping) property value as `true`. The default value of `EnableLooping` property is `false`.
+The WPF Carousel supports looping, which allows items to loop after the last item is reached. In `Standard` visual mode, Carousel items can be scrolled in a circular manner. In `CustomPath` visual mode, Carousel items are scrolled linearly, and the first or last item can be hidden from view. To bring the first or last item into view in a circular manner, set the [EnableLooping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableLooping) property to `true`. The default value of the `EnableLooping` property is `false`.
 
 {% tabs %}
 {% highlight xaml %}

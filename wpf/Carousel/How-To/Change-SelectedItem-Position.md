@@ -9,7 +9,7 @@ documentation: ug
 
 # Change SelectedItem Position in WPF Carousel
 
-To change the position of SelectedItem in a given path, use **TopItemPosition** property
+In the [WPF Carousel](https://www.syncfusion.com/wpf-controls/carousel), you can change the position of `SelectedItem` in a given path by using the `TopItemPosition` property.
 
 <table>
 <tr>
@@ -25,7 +25,7 @@ Sets the SelectedItemPosition in Panel.<br/><br/></td><td>
 DependencyProperty<br/><br/></td><td>
 Double<br/><br/></td></tr>
 </table>
-In the below example, TopItemPosition is set to 0.0. So the SelectedItem will be displayed at the beginning of the Path.
+In the following example, `TopItemPosition` is set to `0.0`, so the `SelectedItem` is displayed at the beginning of the path.
 
 {% tabs %}
 

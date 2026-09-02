@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with WPF Tab Splitter
 
-This section explains about how to create [WPF Tab Splitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) control.
+This section explains how to create the [WPF Tab Splitter](https://www.syncfusion.com/wpf-controls/tab-splitter) control. The WPF Tab Splitter is implemented through the [Tab Splitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) class.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tabsplitter) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tabsplitter) section for the list of assemblies or NuGet packages that need to be added as references to use the control in an application.
 
-Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) to find more details about installing nuget packages in a WPF application.
+Refer to this [documentation](https://help.syncfusion.com/wpf/installation/install-nuget-packages) for more information about installing NuGet packages in a WPF application.
 
 ## Adding the WPF Tab Splitter control via XAML
 
@@ -28,7 +28,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
     * Syncfusion.Shared.WPF
     * Syncfusion.Tools.WPF
 
-3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the [WPF Tab Splitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) control in XAML page.
+3. Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the [WPF Tab Splitter](https://www.syncfusion.com/wpf-controls/tab-splitter) control on the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -79,7 +79,7 @@ using Syncfusion.Windows.Tools.Controls;
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of [WPF Tab Splitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) control and add it to the window.
+4. Create an instance of the [WPF Tab Splitter](https://www.syncfusion.com/wpf-controls/tab-splitter) control and add it to the window.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -104,7 +104,7 @@ grid.Children.Add(tabSplitter);
 
 ## Adding TabSplitterItem
 
-1. You can add the TabSplitterItem into the WPF Tab Splitter control by using [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_Header) property. The TabSplitter items contains a collection of panel items. The panel items are [TopPanelItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_TopPanelItems) and [BottomPanelItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_BottomPanelItems). You can also split the pages in TabSplitterItem by using the [SplitterPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitterPage.html).
+1. You can add a TabSplitterItem to the WPF Tab Splitter control by using the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_Header) property. TabSplitter items contain a collection of panel items. The panel items are [TopPanelItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_TopPanelItems) and [BottomPanelItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_BottomPanelItems). You can also split the pages in a TabSplitterItem by using the [SplitterPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitterPage.html).
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -148,7 +148,7 @@ tabSplitter.Items.Add(tabSplitterItem1);
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-2. Add any one of the control to the splitter page of WPF Tab Splitter and add the content into the splitter page.
+2. Add a control to the splitter page of the WPF Tab Splitter and add content to the splitter page.
 
 {% capture codesnippet5 %}
 {% tabs %}
@@ -218,7 +218,7 @@ tabSplitterItem1.Orientation = Orientation.Vertical;
 
 ## Collapsing bottom panel
 
-You can collapse or expand the bottom panel by setting the [IsCollapsedBottomPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_IsCollapsedBottomPanel) property to `true`. The default value is `false`.
+You can collapse or expand the bottom panel by setting the [IsCollapsedBottomPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_IsCollapsedBottomPanel) property to `true`. The default value of the `IsCollapsedBottomPanel` property is `false`.
 
 {% tabs %}
 
@@ -241,7 +241,7 @@ tabSplitterItem1.IsCollapsedBottomPanel = true;
 
 ## Theme
 
-The WPF Tab Splitter supports various built-in themes. Refer to the below links to apply themes for the WPF Tab Splitter,
+The WPF Tab Splitter supports various built-in themes. Refer to the following links to apply themes for the WPF Tab Splitter:
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

@@ -9,11 +9,11 @@ documentation: ug
 
 # Populating Items in WPF Carousel
 
-This section explains how to populate items and different UI customization features available in [WPF Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) control.
+This section explains how to populate items and use the different UI customization features available in the [WPF Carousel](https://www.syncfusion.com/wpf-controls/carousel) control.
 
 ## Populating items using CarouselItem
 
-You can add the WPF Carousel items inside the control using the [CarouselItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CarouselItem.html) property.
+You can add items to the WPF Carousel control by using [CarouselItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CarouselItem.html) objects.
 
 {% tabs %}
 {% highlight XAML %}
@@ -132,7 +132,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Populating items using collection binding
 
-You can populate items to the `WPF Carousel` control by setting the collection value to the `ItemsSource` property. 
+You can populate items in the `Carousel` control by setting the collection value to the `ItemsSource` property.
 
 {% tabs %}
 {% highlight C# %}
@@ -205,7 +205,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Custom UI for WPF CarouselItem using template
 
-You can customize the appearance of each WPF CarouselItem by using the `ItemTemplate` property. If you want to change the appearance of particular WPF Carousel item appearance, use `ItemTemplateSelector` property. The `DataContext` of the `ItemTemplate` property is `CarouselItem`.
+You can customize the appearance of each WPF CarouselItem by using the `ItemTemplate` property. To change the appearance of a particular WPF Carousel item, use the `ItemTemplateSelector` property. The `DataContext` of the `ItemTemplate` property is `CarouselItem`.
 
 {% tabs %}
 {% highlight C# %}
@@ -276,9 +276,9 @@ public class ViewModel {
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/ItemTemplate)
 
-## Custom UI for WPF CarouselItem using style
+## Custom UI for WPF CarouselItem using a style
 
-You can change the each WPF CarouselItem appearance by using the `ItemContainerStyle` which is applied to the container element that generated for each WPF CarouselItem. The default value of `ItemContainerStyle` is `null`. The `DataContext` of the `ItemContainerStyle` property is `CarouselItem`.
+You can change the appearance of each WPF CarouselItem by using the `ItemContainerStyle`, which is applied to the container element generated for each WPF CarouselItem. The default value of the `ItemContainerStyle` property is `null`. The `DataContext` of the `ItemContainerStyle` property is `CarouselItem`.
 
 {% tabs %}
 {% highlight C# %}
@@ -411,7 +411,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Custom UI for specific WPF CarouselItem using style selector
 
-You can select a various custom appearance for the WPF Carousel items by using the `ItemContainerStyleSelector` property. The `DataContext` of the `ItemContainerStyleSelector` property is `CarouselItem`.
+You can select from various custom appearances for WPF Carousel items by using the `ItemContainerStyleSelector` property. The `DataContext` of the `ItemContainerStyleSelector` property is `CarouselItem`.
 
 {% tabs %}
 {% highlight C# %}
@@ -527,7 +527,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Virtualization support
 
-You can enable the UI virtualization support in `WPF Carousel`, which allows the users to load large sets of data without affecting loading or scrolling performance by setting the [EnableVirtualization](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableVirtualization) property value as `true`. This feature allows users to reduce the loading time of `WPF Carousel` items regardless of items count. The default value of `EnableVirtualization` property is `false`. 
+You can enable UI virtualization support in the `Carousel`, which allows users to load large data sets without affecting loading or scrolling performance, by setting the [EnableVirtualization](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableVirtualization) property to `true`. This feature reduces the loading time of `Carousel` items regardless of the item count. The default value of the `EnableVirtualization` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -546,7 +546,7 @@ carousel.EnableVirtualization = true;
 
 ## Select WPF CarouselItem
 
-You can select a WPF CarouselItem by mouse click on the specific item. You can get the selected item and its value by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedItem) and [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedValue) properties. You can also get the selected item index by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedIndex) property. You can only select a single item at a time.
+You can select a WPF CarouselItem by clicking the item. You can get the selected item and its value by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedItem) and [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedValue) properties. You can also get the selected item index by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SelectedIndex) property. You can select only one item at a time.
 
 ![WPF Carousel items rotation speed changed](Rotation-images/RotationSpeed.gif)
 
@@ -600,7 +600,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Selected item changed notification
 
-The selected item changed in `WPF Carousel` can be examined using [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) event. The `SelectionChanged` event contains the old and newly selected item in the `OldValue` and `NewValue` properties.
+You can examine changes to the selected item in the `Carousel` by using the [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) event. The `SelectionChanged` event contains the old and newly selected items in the `OldValue` and `NewValue` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -633,7 +633,7 @@ private void Carousel_SelectionChanged(DependencyObject d, DependencyPropertyCha
 
 ## Change flow direction
 
-You can change the flow direction of the `WPF Carousel` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `Carousel` layout from right to left by setting the `FlowDirection` property to `RightToLeft`. The default value of the `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight XAML %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Selected Page in WPF Tab Splitter
 
-You can set the selected page by using the [IsSelectedPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitterPage.html#Syncfusion_Windows_Tools_Controls_SplitterPage_IsSelectedPage) property. If this property is set to _true_, the page is selected, else it is not selected.
+In the [WPF Tab Splitter](https://www.syncfusion.com/wpf-controls/tab-splitter), you can set the selected page by using the [IsSelectedPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitterPage.html#Syncfusion_Windows_Tools_Controls_SplitterPage_IsSelectedPage) property. If this property is set to `true`, the page is selected; otherwise, it is not selected.
 
 {%tabs%}
 {% highlight xaml %}
