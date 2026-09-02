@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Commands in WPF SfSmartTextEditor | Syncfusion®
-description: Learn about commands in the WPF SfSmartTextEditor control for handling text changes and user interactions.
+title: Commands in WPF Smart Text Editor | Syncfusion®
+description: Learn about commands in the WPF Smart Text Editor control for handling text changes and user interactions.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
 ---
 
-# Commands in WPF SfSmartTextEditor
+# Commands in WPF Smart Text Editor
 
-The AI-Powered Text Editor provides the `TextChangedCommand`, which is triggered whenever the text in the smart text editor changes.
+The WPF Smart Text Editor provides the `TextChangedCommand`, which is triggered whenever the text changes.
 
 ### TextChangedCommand
 
-The `SfSmartTextEditor` includes a built-in property called `TextChangedCommand`, which is triggered whenever the text in the smart text editor changes. This event can be invoked through the `TextChangedCommand`.
+The `TextChangedCommand` is a built-in command that is triggered whenever the text changes, allowing user to handle text change notifications in the view model.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}

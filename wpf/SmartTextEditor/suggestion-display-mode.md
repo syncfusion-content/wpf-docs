@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Suggestion Display Modes in WPF SfSmartTextEditor | Syncfusion®
-description: Explore suggestion display modes in Syncfusion® WPF SfSmartTextEditor control with inline and popup modes for text completion display.
+title: Suggestion Display Modes in WPF Smart Text Editor | Syncfusion®
+description: Explore suggestion display modes in Syncfusion® WPF Smart Text Editor control with inline and popup modes for text completion display.
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
 ---
 
-# Suggestion Display Modes in WPF SfSmartTextEditor
+# Suggestion Display Modes in WPF Smart Text Editor
 
-The AI-Powered Text Editor supports two display modes for showing completions as you type: `Inline` and `Popup`.
+The WPF Smart Text Editor supports two display modes for showing completions as you type: `Inline` and `Popup`.
 - `Inline`: Renders the predicted text in place after the caret, matching your text style.
 - `Popup`: Shows a compact hint near the caret that you can tap or accept via key press.
 
@@ -19,6 +19,7 @@ N>
 - Applying inline suggestions with the **Tab** key is not supported on Android and iOS.
 
 ## Inline suggestion mode
+
 Inline mode displays the suggested text directly within the editor, seamlessly continuing your typing flow. This approach is ideal for desktop environments where uninterrupted input feels natural and efficient.
 
 {% tabs %}
@@ -53,6 +54,7 @@ var smarttexteditor = new SfSmartTextEditor
 ![Inline Suggestion in WPF Smart Text Editor.](images/suggestion-display-mode/wpf-smarttexteditor-inline-mode.gif)
 
 ## Popup suggestion mode
+
 Popup mode displays the suggested text in a small overlay near the caret, making it easy to review and accept without interrupting your typing. This mode is especially useful on touch based devices where tapping the suggestion feels natural and convenient.
 
 {% tabs %}
