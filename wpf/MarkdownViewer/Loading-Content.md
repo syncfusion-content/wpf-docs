@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Loading Markdown Content in WPF SfMarkdownViewer | Syncfusion®
-description: Loading Markdown content in WPF SfMarkdownViewer supports content from strings, local files, and URLs, enabling flexible and efficient Markdown rendering.
+title: Loading Markdown Content in WPF Markdown Viewer | Syncfusion®
+description: Loading Markdown content in WPF Markdown Viewer supports content from strings, local files, and URLs, enabling flexible and efficient Markdown rendering.
 platform: wpf
 control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Loading Markdown Content in WPF SfMarkdownViewer
+# Loading Markdown Content in WPF Markdown Viewer
 
-The SfMarkdownViewer control provides flexible options for loading Markdown content from multiple sources. The `Source` property intelligently detects the input type and handles content loading automatically, supporting raw Markdown strings, local file paths, and HTTP/HTTPS URLs.
+The Markdown Viewer control provides flexible options for loading Markdown content from multiple sources. The `Source` property intelligently detects the input type and handles content loading automatically, supporting raw Markdown strings, local file paths, and HTTP/HTTPS URLs.
 
 ## Loading from Raw Markdown String
 
-Assign a Markdown-formatted string to the Source property of the SfMarkdownViewer control to render markdown content directly within your application.
+Assign a Markdown-formatted string to the Source property of the Markdown Viewer control to render markdown content directly within your application.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -95,7 +95,7 @@ public partial class MainWindow : Window
 
 ## Loading from URL
 
-The `SfMarkdownViewer` can load Markdown content directly from publicly accessible URLs. This is particularly useful for displaying remote documentation, release notes, or any Markdown content hosted online.
+The Markdown Viewer can load Markdown content directly from publicly accessible URLs. This is particularly useful for displaying remote documentation, release notes, or any Markdown content hosted online.
 
 {% tabs %}
 {% highlight xaml %}
