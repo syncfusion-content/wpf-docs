@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Input Toolbar in WPF SfAIAssistView | Syncfusion®
-description: The input toolbar in WPF SfAIAssistView offers quick actions through toolbar items, streamlining prompt entry and enhancing user interactions.
+title: Input Toolbar in WPF AI AssistView | Syncfusion®
+description: The input toolbar in WPF AI AssistView offers quick actions through toolbar items, streamlining prompt entry and enhancing user interactions.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Input Toolbar in WPF AI AssistView
 
-The [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a toolbar feature inside the input textbox. This toolbar allows users to add custom toolbar items directly within the text input area, providing quick access to frequently used actions and tools.
+The [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a toolbar feature inside the input textbox. This toolbar allows users to add custom toolbar items directly within the text input area, providing quick access to frequently used actions and tools.
 
 ## InputToolbarItem
 
@@ -22,7 +22,7 @@ The **InputToolbarItem** class is used to define and add items to the input text
 
 ## Adding an input toolbar item to the input toolbar
 
-The **InputToolbarItem** in [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) the text area does not include built-in toolbar items like the response toolbar (e.g., Copy, Like, Dislike, Regenerate). However, you can add custom items using the InputToolbarItem class.
+The **InputToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) the text area does not include built-in toolbar items like the response toolbar (e.g., Copy, Like, Dislike, Regenerate). However, you can add custom items using the InputToolbarItem class.
 
 Use the ItemTemplate property to define the appearance and behavior of each toolbar item. This allows you to display icons, buttons, text, or even complex UI elements such as Path, Image, or TextBlock within the toolbar.
 
@@ -55,7 +55,7 @@ Data="M10.2656 3.0293C10.5 3.0293 10.7207 3.07422 10.9277 3.16406C11.1348 3.2539
 
 ## Input toolbar position
 
-The **InputToolbarPosition** property of the [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control specifies the placement of the input toolbar within the control. By default, the toolbar is positioned on the right side of the control.
+The **InputToolbarPosition** property of the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control specifies the placement of the input toolbar within the control. By default, the toolbar is positioned on the right side of the control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -78,7 +78,7 @@ aiAssistView.InputToolbarPosition = ToolbarPosition.Left;
 
 ## Input toolbar visibility
 
-The **IsInputToolbarVisible** property of the [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the input toolbar is displayed in the AI AssistView. When set to true, the input toolbar becomes visible. By default, this property is set to false.
+The **IsInputToolbarVisible** property of the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the input toolbar is displayed in the AI AssistView. When set to true, the input toolbar becomes visible. By default, this property is set to false.
 
 {% tabs %}
 {% highlight xaml %}

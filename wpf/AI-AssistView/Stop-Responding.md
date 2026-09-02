@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stop Responding in WPF SfAIAssistView | Syncfusion®
-description: The Stop Responding feature in WPF SfAIAssistView allows users to cancel AI response generation, providing greater control over ongoing interactions.
+title: Stop Responding in WPF AI AssistView | Syncfusion®
+description: The Stop Responding feature in WPF AI AssistView allows users to cancel AI response generation, providing greater control over ongoing interactions.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## EnableStopResponding
 
-The **AI AssistView** control includes a **Stop Responding** feature, allowing users to cancel an ongoing AI response by clicking the Stop Responding button. This feature ensures that users can interrupt the response if it is no longer needed.
+The AI AssistView control includes a Stop Responding feature, allowing users to cancel an ongoing AI response by clicking the Stop Responding button. This feature ensures that users can interrupt the response if it is no longer needed.
 
 By default, the Stop Responding button is not displayed. To enable it, set the EnableStopResponding property to true.
 
@@ -46,7 +46,7 @@ sfAIAssistView.EnableStopResponding = true;
 
 ### Event and Command
 
-The **AI AssistView** control provides the **StopResponding** event and **StopRespondingCommand**. These are triggered when the Stop Responding button is clicked. You can handle these actions to stop an ongoing AI response, as shown below.
+The AI AssistView control provides the `StopResponding` event and `StopRespondingCommand`. These are triggered when the Stop Responding button is clicked. You can handle these actions to stop an ongoing AI response, as shown below.
 
 #### StopResponding Event
 
@@ -112,7 +112,7 @@ public class ViewModel : INotifyPropertyChanged
 
 #### StopRespondingTemplate
 
-The **StopRespondingTemplate** property in AI AssistView defines the UI template for the Stop Responding button. This allows customization of the button’s appearance and behavior.
+The `StopRespondingTemplate` property in AI AssistView defines the UI template for the Stop Responding button. This allows customization of the button’s appearance and behavior.
 
 {% tabs %}
 
@@ -146,4 +146,4 @@ if (this.TryFindResource("stopRespondingTemplate") is DataTemplate template)
 {% endhighlight %}
 {% endtabs %}
 
-![StopRespondingTemplate feature in WPF AI AssistView control](aiassistview_images/wpf_aiassistview_stopresponding_template.gif)
+![StopResponding template feature in WPF AI AssistView control](aiassistview_images/wpf_aiassistview_stopresponding_template.gif)

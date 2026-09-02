@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing Mode in WPF CardView | Syncfusion®
-description: Editing mode support in WPF CardView allows users to create, modify, and manage card data efficiently with customizable editors and validation options.
+title: Editing Mode in WPF Card View | Syncfusion®
+description: Editing mode support in WPF Card View allows users to create, modify, and manage card data efficiently with customizable editors and validation options.
 platform: wpf
 control: CardView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing Mode in WPF Card View
 
-This section describes how to enable or disable the edit mode and perform edit operation in [Card View](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
+This section describes how to enable or disable the edit mode and perform edit operation in [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
 
 ## Enable/disable the editing mode
 

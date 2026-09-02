@@ -1,7 +1,7 @@
 ---
 layout: post
-title: OpenAI in WPF SfAIAssistView | Syncfusion®
-description: The OpenAI connection feature in WPF SfAIAssistView enables integration with OpenAI services to provide AI-powered conversations and chat experiences.
+title: OpenAI in WPF AI AssistView | Syncfusion®
+description: The OpenAI connection feature in WPF AI AssistView enables integration with OpenAI services to provide AI-powered conversations and chat experiences.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
@@ -16,7 +16,7 @@ This section explains about how to connect the AI AssistView with OpenAI.
 1. Create a [Wpf desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-9.0).
 2. Add reference to [Syncfusion.SfChat.Wpf](https://www.nuget.org/packages/Syncfusion.SfChat.Wpf) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Chat` in XAML or C# code.
-4. Initialize the [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
+4. Initialize the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
 5. Add reference to [Microsoft Semantic NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet. 
 
 ## Creating the OpenAI view model class.

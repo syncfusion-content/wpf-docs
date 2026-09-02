@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF CardView | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF CardView control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF Card View | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF Card View control. Explore setup, features, examples, and customization options.
 platform: wpf
 control: CardView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Card View
 
-This section describes how to create a [Card View](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control in a WPF application and overview of its basic functionalities.
+This section describes how to create a [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control in a WPF application and overview of its basic functionalities.
 
 ## Structure of Card View control
 
@@ -46,7 +46,7 @@ To add the _CardView_ control manually in XAML, follow these steps:
 	* Syncfusion.Shared.WPF
 	* Syncfusion.Tools.WPF
 3. Import the Syncfusion WPF schema namespace **http://schemas.syncfusion.com/wpf** in the XAML page.
-4. Add the Card View control to the XAML page.
+4. Add the [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control to the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -93,7 +93,7 @@ using Syncfusion.Windows.Tools.Controls;
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4. Create an instance of **Card View** and add it to the window.
+4. Create an instance of [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control and add it to the window.
 
 {% capture codesnippet3 %}
 {% tabs %}

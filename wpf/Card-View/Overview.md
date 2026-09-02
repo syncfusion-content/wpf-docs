@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion® WPF CardView Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WPF CardView control and discover its features, capabilities, and more details.
+title: About Syncfusion® WPF Card View Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WPF Card View control and discover its features, capabilities, and more details.
 platform: wpf
 control: CardView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WPF Card View Control
 
-The WPF [Card View](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control is a panel that helps organize a list of items in cards. It supports grouping, sorting, filtering, and editing options. Also, supports listing the grouped items in a tree structure.
+The WPF [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control is a panel that helps organize a list of items in cards. It supports grouping, sorting, filtering, and editing options. Also, supports listing the grouped items in a tree structure.
 
 ## Control Structure
 

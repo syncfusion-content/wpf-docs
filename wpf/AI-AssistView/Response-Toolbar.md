@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Response Toolbar in WPF SfAIAssistView | Syncfusion®
-description: The response toolbar in WPF SfAIAssistView offers quick actions through toolbar items, enabling efficient interaction with AI-generated chat responses.
+title: Response Toolbar in WPF AI AssistView | Syncfusion®
+description: The response toolbar in WPF AI AssistView offers quick actions through toolbar items, enabling efficient interaction with AI-generated chat responses.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Response Toolbar in WPF AI AssistView
 
-The [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature, which provides built-in options such as Copy, Regenerate, Like, and Dislike for each chat response. These items provide quick actions to enhance user interactions. In addition to the built-in options, users can personalize the Response Toolbar by adding their own custom toolbar items to suit specific application needs.
+The [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature, which provides built-in options such as Copy, Regenerate, Like, and Dislike for each chat response. These items provide quick actions to enhance user interactions. In addition to the built-in options, users can personalize the Response Toolbar by adding their own custom toolbar items to suit specific application needs.
 
 ## ResponseToolbarItem
 
@@ -37,7 +37,7 @@ The **ResponseToolbarItem** class is used to define and add items in the respons
 
 ## Response toolbar visibility
 
-The **IsResponseToolbarVisible** property of the [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the response toolbar is displayed below each chat items responses. When set to false, the response toolbar is hidden. By default, this property is set to true.
+The **IsResponseToolbarVisible** property of the [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the response toolbar is displayed below each chat items responses. When set to false, the response toolbar is hidden. By default, this property is set to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -60,7 +60,7 @@ aiAssistView.IsResponseToolbarVisible = false;
 
 ## Customization of Response toolbar item using ItemTemplate
 
-The **ResponseToolbarItem** in [AI AssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even UI elements such as Path, Image, or TextBlock within the toolbar.
+The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even UI elements such as Path, Image, or TextBlock within the toolbar.
 
 {% tabs %}
 {% highlight xaml %}
