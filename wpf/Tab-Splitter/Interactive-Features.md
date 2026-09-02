@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
-title: Interactive Features in WPF TabSplitter | Syncfusion®
-description: Work with TabSplitter items, splitter pages, panel collections, panel sizing, and collapse or expand functionality.
+title: Interactive Features in WPF Tab Splitter | Syncfusion®
+description: Work with WPF Tab Splitter items, splitter pages, panel collections, panel sizing, and collapse or expand functionality.
 platform: wpf
 control: TabSplitter
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Interactive Features in WPF Tab Splitter
 
-This section illustrates the following interactive features of TabSplitter control. 
+This section illustrates the following interactive features of the [WPF Tab Splitter](https://www.syncfusion.com/wpf-controls/tab-splitter) control.
 
-## Adding TabSplitterItem to the TabSplitter Control
+## Adding TabSplitterItem to the WPF Tab Splitter control
 
-TabSplitter contains one or more pages that are defined as TabSplitter Items. Use the following code to add a TabSplitter Item to the TabSplitter control.
+The WPF Tab Splitter contains one or more pages defined as Tab Splitter items. Use the following code to add a TabSplitterItem to the WPF Tab Splitter control.
 
 
 {%tabs%}
@@ -72,24 +72,24 @@ this.Content = tabsplitter;
 
 {%endtabs%}
 
-![Adding tab splitter item to the tab splitter](Interactive-Features_images/Interactive-Features_img1.png)
+![Adding TabSplitterItem to the WPF Tab Splitter](Interactive-Features_images/Interactive-Features_img1.png)
 
 
 
 
 
-## Panel Items
+## Panel items
 
-TabSplitter Items contains a collection of pages. These pages are defined as Panel Items. 
+The WPF Tab Splitter items contain a collection of pages. These pages are defined as panel items.
 
  There are two types of panel Items:
 
-* [TopPanelItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_TopPanelItems): consists of collection of pages that are placed at the top panel of the TabSplitter
-* [BottomPanelItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_BottomPanelItems): consists of collection of pages that are placed at the bottom panel of the TabSplitter
+* [TopPanelItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_TopPanelItems): consists of a collection of pages placed in the top panel of the WPF Tab Splitter.
+* [BottomPanelItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_BottomPanelItems): consists of a collection of pages placed in the bottom panel of the WPF Tab Splitter.
 
 
 
- The following code example can be used to add Panel Items to the TabSplitter Item:
+ The following code example can be used to add Panel Items to the TabSplitterItem:
 
 
 {%tabs%}
@@ -225,7 +225,7 @@ this.Content = tabsplitter;
 
 ## Splitter Page
 
-You can split the pages in the TabSplitter Item by using the [SplitterPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitterPage.html). The following code example illustrates how to add a SplitterPage to the TabSplitter Item.
+You can split the pages in a TabSplitterItem by using the [SplitterPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitterPage.html). The following code example illustrates how to add a SplitterPage to the TabSplitterItem.
 
 {%tabs%}
 {% highlight xaml %}
@@ -357,9 +357,9 @@ this.Content = tabsplitter;
 
 
 
-## Collapsing Bottom Panel
+## Collapsing bottom panel
 
-You can collapse or expand the Bottom Panel by using the [IsCollapsedBottomPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_IsCollapsedBottomPanel) property. The default value is _false_. To collapse the Bottom Panel, refer to the following code snippet:
+You can collapse or expand the bottom panel by using the [IsCollapsedBottomPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_IsCollapsedBottomPanel) property. The default value of the `IsCollapsedBottomPanel` property is `false`. To collapse the bottom panel, refer to the following code snippet:
 
 {%tabs%}
 {% highlight xaml %}
@@ -439,9 +439,9 @@ tabSplitterItem1.IsCollapsedBottomPanel = true; 
 
 
 
-## Setting BottomPanelHeight of TabSplitter
+## Setting BottomPanelHeight of WPF Tab Splitter
 
-You can set the height of the BottomPanel in TabSplitter using [BottomPanelHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html#Syncfusion_Windows_Tools_Controls_TabSplitter_BottomPanelHeight) property. To set the height of the BottomPanel, refer the following code snippet: 
+You can set the height of the bottom panel in the WPF Tab Splitter by using the [BottomPanelHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html#Syncfusion_Windows_Tools_Controls_TabSplitter_BottomPanelHeight) property. To set the height of the bottom panel, refer to the following code snippet:
 
 {%tabs%}
 {% highlight xaml %}
