@@ -7,7 +7,7 @@ control: DomainUpDown
 documentation: ug
 ---
 
-# AutoReverse in WPF SfDomainUpdown
+# AutoReverse in WPF Domain UpDown
 
 The `AutoReverse` property controls how the value wraps when it reaches the upper or lower bound. When `AutoReverse` is `True`, incrementing past the maximum value continues from the minimum value, and decrementing past the minimum value continues from the maximum value. The default value of `AutoReverse` is `False`.
 

@@ -7,9 +7,9 @@ control: DomainUpDown
 documentation: ug
 ---
 
-# Gestures in WPF SfDomainUpdown
+# Gestures in WPF Domain UpDown
 
-The `SfDomainUpDown` control supports the following input gestures for moving between items. All gestures are enabled by default.
+The `WPF Domain UpDown` control supports the following input gestures for moving between items. All gestures are enabled by default.
 
 ## Mouse Wheel
 
