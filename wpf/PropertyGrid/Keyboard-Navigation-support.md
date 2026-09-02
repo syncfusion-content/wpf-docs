@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard Navigation support in WPF PropertyGrid
 
-In this section, we will see available keyboard shortcuts and how to override the default navigation.
+In this section, we will see the available keyboard shortcuts and how to override the default navigation in the WPF PropertyGrid control.
 
 ## Keyboard Navigation between property items
 
@@ -22,37 +22,37 @@ The following table explains how navigation is performed between properties,
 <tr>
 <td>1</td>
 <td>Up</td>
-<td>Selection will be moved from current property to previous property.</td>
+<td>Selection will be moved from the current property to the previous property.</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Down</td>
-<td>Selection will be moved from current property to next property.</td>
+<td>Selection will be moved from the current property to the next property.</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Home</td>
-<td>Selection will be moved from current property to first property of the PropertyGrid.</td>
+<td>Selection will be moved from the current property to the first property of the WPF PropertyGrid.</td>
 </tr>
 <tr>
 <td>4</td>
 <td>End</td>
-<td>Selection will be moved from current property to last property of the PropertyGrid.</td>
+<td>Selection will be moved from the current property to the last property of the WPF PropertyGrid.</td>
 </tr>
 <tr>
 <td>5</td>
 <td>Left</td>
-<td>Selection will be moved from current property to previous property. When the property {{'**EnableGrouping**'| markdownify }} is 'true' and the Header of the Category group is selected, and the group is expanded, then the Category group will be collapsed, and collapsed category group header remains selected.</td>
+<td>Selection will be moved from the current property to the previous property. When the property {{'**EnableGrouping**'| markdownify }} is 'true' and the Header of the Category group is selected and the group is expanded, then the Category group will be collapsed, and the collapsed category group header remains selected.</td>
 </tr>
 <tr>
 <td>6</td>
 <td>Right</td>
-<td>Selection will be moved from current property to next property. When the property {{'**EnableGrouping**'| markdownify }} is true and the Header of the Category group is selected and the group is not expanded, then the Category group will be expanded, and expanded category group header remains selected.</td>
+<td>Selection will be moved from the current property to the next property. When the property {{'**EnableGrouping**'| markdownify }} is true and the Header of the Category group is selected and the group is not expanded, then the Category group will be expanded, and the expanded category group header remains selected.</td>
 </tr>
 <tr>
 <td>7</td>
 <td>Tab</td>
-<td>Selecting the first item when no item is chosen and moving out of the PropertyGrid on subsequent Tab key presses when the focus is already within.
+<td>Selecting the first item when no item is chosen and moving out of the WPF PropertyGrid on subsequent Tab key presses when the focus is already within.
 <br/> 
 <br/>
 <img src="KeyNavigation-Images/first_time_tab_key_press.png" alt="Pressing the Tab key focuses on the first item"/>
@@ -63,7 +63,7 @@ The following table explains how navigation is performed between properties,
 <tr>
 <td>8</td>
 <td>Shift + Tab</td>
-<td>Selecting the last item when no selection exists, while subsequent Shift + Tab presses moves the focus out of the PropertyGrid when the focus is within.
+<td>Selecting the last item when no selection exists, while subsequent Shift + Tab presses moves the focus out of the WPF PropertyGrid when the focus is within.
 <br/>
 <br/>
 <img src="KeyNavigation-Images/shift+tab_key_press.png" alt="Pressing the Shift + Tab key focuses on the last item"/>
@@ -74,15 +74,15 @@ The following table explains how navigation is performed between properties,
 <tr>
 <td>9</td>
 <td>Esc</td>
-<td>If the property’s value field is focused, then the focus has been moved to property’s name field.</td>
+<td>If the property’s value field is focused, then the focus will be moved to the property’s name field.</td>
 </tr>
 </table>
 
 ## Handling focus of the editors
 
-By default, `PropertyGrid` will handle the keyboard navigation, so pressing keydown(Up and Down) will move the focus to next/previous editor from current editor. For all built-in editors, moving focus to next editor will be handled by `PropertyGrid`. For custom editors, property navigation (focus) will not happen if custom editor handles up or down key. To override keyboard navigation for custom editors, override [ShouldPropertyGridTryToHandleKeyDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html#Syncfusion_Windows_PropertyGrid_BaseTypeEditor_ShouldPropertyGridTryToHandleKeyDown_System_Windows_Input_Key_) method from `BaseTypeEditor`.
+By default, the `PropertyGrid` will handle the keyboard navigation, so pressing the Up and Down keys will move the focus to the next or previous editor from the current editor. For all built-in editors, moving focus to the next editor will be handled by the `PropertyGrid`. For custom editors, property navigation (focus) will not happen if the custom editor handles the up or down key. To override keyboard navigation for custom editors, override the [ShouldPropertyGridTryToHandleKeyDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html#Syncfusion_Windows_PropertyGrid_BaseTypeEditor_ShouldPropertyGridTryToHandleKeyDown_System_Windows_Input_Key_) method from `BaseTypeEditor`.
 
-For example, if you use `ComboBox` as custom editor, up and down key will be handled by it. So, property navigation will not happen. You can override `ShouldPropertyGridTryToHandleKeyDown` and return `true`, to allow property grid control to handle the key down events. When it returns `false`, the editor will handles the key down event.
+For example, if you use the `ComboBox` as a custom editor, the up and down keys will be handled by it, so property navigation will not happen. You can override `ShouldPropertyGridTryToHandleKeyDown` and return `true` to allow the WPF PropertyGrid control to handle the key down events. When it returns `false`, the editor will handle the key down event.
 
 {% tabs %}
 {% highlight C# %}

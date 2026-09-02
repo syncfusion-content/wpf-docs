@@ -13,15 +13,15 @@ In this section, you will learn how to configure properties manually (in `xaml` 
 
 ## Define PropertyItem manually 
 
-By default, property items of `PropertyGrid.SelectedObject` are automatically generated in the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) control by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event. Now, you can restrict the auto generated items and manually define a property items through the `XAML` by using the [PropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem).
+By default, property items of `PropertyGrid.SelectedObject` are automatically generated in the [WPF PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) control by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event. Now, you can restrict the auto generated items and manually define the property items through the `XAML` by using the [PropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem).
 
-### Adding defined PropertyGridItems into PropertyGrid
+### Adding defined PropertyGridItems into WPF PropertyGrid
 
-If you want to load the manually defined property items into the `PropertyGrid`, add that `Items` collection property. You can enable it only by setting the [AutoGenerateItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGenerateItems) property value as `false`. The default value of `AutoGenerateItems` property is `true`.
+If you want to load the manually defined property items into the `PropertyGrid`, add them to the `Items` collection property. You can enable it only by setting the [AutoGenerateItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGenerateItems) property value to `false`. The default value of the `AutoGenerateItems` property is `true`.
 
-N> When `AutoGenerateItems` is `false`, `AutoGeneratingPropertyGridItem` event will not be triggered.
+N> When `AutoGenerateItems` is `false`, the `AutoGeneratingPropertyGridItem` event will not be triggered.
 
-In the following example, `AutoGeneratingPropertyGridItem` event not triggered by disabling the `AutoGenerateItems` and items which are manually added in the `Items` collection only loaded in the `PropertyGrid`.
+In the following example, the `AutoGeneratingPropertyGridItem` event is not triggered by disabling the `AutoGenerateItems`, and only the items which are manually added in the `Items` collection are loaded in the `PropertyGrid`.
 
 {% tabs %}
 {% highlight C# %}
@@ -202,7 +202,7 @@ private void ClearItems_Click(object sender, RoutedEventArgs e) {
 
 ## Custom definition of PropertyItem
 
-You can customize the display name, description, category, nested mode, readonly state and value editor for any property items.
+You can customize the display name, description, category, nested mode, readonly state, and value editor for any property items.
 
 * [PropertyGridItem.DisplayName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_DisplayName) - To customize the display name for the property items.
 
@@ -222,9 +222,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-gr
 
 ## Manually add own value editor and categorize the properties
 
-If you want to add own value editor and categorize the property items manually, use the `PropertyGridItem.Editor` and `PropertyGridItem.CategoryName` properties to the required property items.
+If you want to add your own value editor and categorize the property items manually, use the `PropertyGridItem.Editor` and `PropertyGridItem.CategoryName` properties for the required property items.
 
-N> You can refer [Create Custom Value Editor](https://help.syncfusion.com/wpf/propertygrid/customeditor-support#creating-the-custom-editor) page to know more about how to create a own value editors.
+N> You can refer to the [Create Custom Value Editor](https://help.syncfusion.com/wpf/propertygrid/customeditor-support#creating-the-custom-editor) page to know more about how to create own value editors.
 
 {% tabs %}
 {% highlight C# %}
@@ -341,7 +341,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-gr
 
 ## Manually define nested properties for PropertyItem
 
-If you want to manually explore only particular nested properties of any property item, add that particular nested properties into the respective property item's `PropertyGridItem.Items` collection. You must enable nested property mode by using `PropertyGridItem.PropertyExpandMode` property value as `NestedMode` to explore the nested properties. The default value of `PropertyGridItem.PropertyExpandMode` property is `null`.
+If you want to manually explore only particular nested properties of any property item, add those particular nested properties into the respective property item's `PropertyGridItem.Items` collection. You must enable nested property mode by setting the `PropertyGridItem.PropertyExpandMode` property value to `NestedMode` to explore the nested properties. The default value of the `PropertyGridItem.PropertyExpandMode` property is `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -445,7 +445,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-gr
 
 ## Manually customize the UI of description panel
 
-You can customize the different UI for specific property's description panel by using the [PropertyGridItem.DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_DescriptionTemplate) property. The `DataContext` of `PropertyGridItem.DescriptionTemplate` property is `PropertyGridItem`.
+You can customize the UI for a specific property's description panel by using the [PropertyGridItem.DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_DescriptionTemplate) property. The `DataContext` of the `PropertyGridItem.DescriptionTemplate` property is `PropertyGridItem`.
 
 {% tabs %}
 {% highlight C# %}

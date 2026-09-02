@@ -9,11 +9,11 @@ documentation: ug
 
 # Description attribute support in WPF PropertyGrid
 
-You can display the description about the property using the  description panel which is placed on the bottom of the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control. Description panel visibility can be managed by [DescriptionPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelVisibility.html) property . The default value of the `DescriptionPanelVisibility` is `Collapsed`. To display the description panel, you should set `DescriptionPanelVisibility`  property value as `Visible`.
+You can display the description of a property using the description panel, which is placed at the bottom of the [WPF PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control. The description panel visibility can be managed by the [DescriptionPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelVisibility.html) property. The default value of `DescriptionPanelVisibility` is `Collapsed`. To display the description panel, you should set the `DescriptionPanelVisibility` property value to `Visible`.
 
 ## Property Description using attributes
 
-We can give a meaningful description about the properties by using the [Description](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.descriptionattribute?view=netframework-4.8) attribute and [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute's [Description](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.description?view=netframework-4.8) field. This description will be displayed in `PropertyGrid` Description panel while focusing the property or its value editor.
+We can give a meaningful description about the properties by using the [Description](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.descriptionattribute?view=netframework-4.8) attribute and the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute's [Description](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.description?view=netframework-4.8) field. This description will be displayed in the `PropertyGrid` description panel while focusing on the property or its value editor.
 
 
 {% tabs %}
@@ -72,11 +72,11 @@ propertyGrid1.DescriptionPanelHeight = new GridLength(50);
 
 ![Value specified in the Description field of the Display attribute is displayed in the Description Panel](Attribute-Images\Display-Description-Attribute.png)
 
-Here, the description about the `Name` property  is displayed by using the `Display` attribute's `Description` field.
+Here, the description of the `Name` property is displayed by using the `Display` attribute's `Description` field.
 
 ![Value specified in the Description attribute is displayed in the Description Panel](Attribute-Images\Description-Attribute.png)
 
-Here, the description about the `DOB` property  is displayed by using the `Description` attribute.
+Here, the description of the `DOB` property is displayed by using the `Description` attribute.
 
 N> If you use both the `Description` attribute and `Description` field of the `Display` attribute, the `Description` attribute will have higher priority.
 
@@ -86,7 +86,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-gr
 
 ## Change Property Description at runtime
 
-We can set the property description without using the attributes and can change the property description at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html)  event with [AutoGeneratingPropertyGridItemEventArgs.Description](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~Description.html) property.
+We can set the property description without using attributes, and change the property description at runtime, by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event with the [AutoGeneratingPropertyGridItemEventArgs.Description](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~Description.html) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -166,9 +166,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-gr
 
 ## Setting description panel height
 
-By default, the height of the description panel is automatically adjusted, based on the description text length of the property items. If you want to set description panel height manually, use the [DescriptionPanelHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelHeight.html) property. The default value of `DescriptionPanelHeight` property is `Auto`.
+By default, the height of the description panel is automatically adjusted based on the description text length of the property items. If you want to set the description panel height manually, use the [DescriptionPanelHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelHeight.html) property. The default value of the `DescriptionPanelHeight` property is `Auto`.
 
-N> If length of the description text exceeds the `DescriptionPanelHeight` when manually setting the value to `DescriptionPanelHeight`, particular text is trimmed. you can see the full description text using the tooltip.
+N> If the length of the description text exceeds the `DescriptionPanelHeight` when manually setting the value of `DescriptionPanelHeight`, the particular text is trimmed. You can see the full description text using the tooltip.
 
 {% tabs %}
 {% highlight C# %}
@@ -228,7 +228,7 @@ propertyGrid1.DescriptionPanelHeight = new GridLength(60);
 
 ## Custom UI for description panel
 
-You can customize the UI of description panel by using the [DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_DescriptionTemplate) property. The `DataContext` of `` property is `PropertyItem`.
+You can customize the UI of the description panel by using the [DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_DescriptionTemplate) property. The `DataContext` of `` property is `PropertyItem`.
 
 {% tabs %}
 {% highlight C# %}
@@ -290,7 +290,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-gr
 
 ## Different custom UI for specific property's description panel
 
-You can customize the different UI for specific property's description panel by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event and using the [AutoGeneratingPropertyGridItemEventArgs.DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DescriptionTemplate) property. You can also use the `DescriptionTemplateSelector` property to customize the UI for specific property's description panel.
+You can customize the UI for a specific property's description panel by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event and using the [AutoGeneratingPropertyGridItemEventArgs.DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DescriptionTemplate) property. You can also use the `DescriptionTemplateSelector` property to customize the UI for a specific property's description panel.
 
 {% tabs %}
 {% highlight C# %}
