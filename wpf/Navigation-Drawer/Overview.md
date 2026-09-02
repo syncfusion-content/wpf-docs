@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WPF Navigation Drawer Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio WPF Navigation Drawer control and more details.
 platform: wpf
-control: Navigation Drawer
+control: NavigationDrawer
 documentation: ug
 ---
 

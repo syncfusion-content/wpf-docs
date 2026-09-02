@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WPF Navigation Drawer | Syncfusion®
 description: Learn how to get started with the Syncfusion® WPF Navigation Drawer control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: Navigation Drawer
+control: NavigationDrawer
 documentation: ug
 ---
 
