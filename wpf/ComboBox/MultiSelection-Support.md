@@ -1,15 +1,15 @@
 ---
 layout: post
-title: MultiSelection Support in WPF ComboBoxAdv | Syncfusion®
-description: MultiSelection support in WPF ComboBoxAdv enables users to select multiple items within the control, improving flexibility and selection management.
+title: MultiSelection Support in WPF ComboBox | Syncfusion®
+description: MultiSelection support in WPF ComboBox enables users to select multiple items within the control, improving flexibility and selection management.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# MultiSelection Support in WPF ComboBoxAdv
+# MultiSelection Support in WPF ComboBox
 
-This section explains how to select multiple items and how to select items programmatically in the [WPF ComboBox](https://www.syncfusion.com/wpf-controls/combobox) (ComboBoxAdv) control.
+This section explains how to select multiple items and programmatically select items in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
 
 ## Properties
 
@@ -39,7 +39,7 @@ NA</td></tr>
 
 ## Adding multiple selection to an application
 
-You can select multiple items in the WPF ComboBox (ComboBoxAdv) control by setting the [`AllowMultiSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property to `true`.
+You can select multiple items in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control by setting the [`AllowMultiSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property to `true`.
 
 {% tabs %}
 
@@ -146,7 +146,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3. To bind the `ComboBoxAdv` to data, set the `ViewModel` as the `DataContext` and bind `Countries` to the [`ItemsSource`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource) property.
+3. To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control to data, set the `ViewModel` as the `DataContext` and bind the `Countries` collection to the [`ItemsSource`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource) property.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -168,7 +168,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Adding multiple selections to an application in WPF ComboBoxAdv](ComboBoxAdv_images/wpf-comboboxadv-multiSelection.png)
+![Adding multiple selections to an application in WPF ComboBox](ComboBoxAdv_images/wpf-comboboxadv-multiSelection.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-ComboBoxAdv-MultiSelection)
 
@@ -254,13 +254,13 @@ public class ComboBoxExt : ComboBoxAdv
 
 On selecting Asia, the items at indices 1 and 2 (for example, India and China) are automatically added to the selected items.
 
-![WPF ComboBoxAdv override checked and unchecked items](ComboBoxAdv_images/wpf-comboboxadv-override.png)
+![WPF ComboBox override checked and unchecked items](ComboBoxAdv_images/wpf-comboboxadv-override.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-combobox-examples/tree/main/Samples/Dynamic-checked-items)
 
 ## Multi-select edit using tokens
 
-The selected items are represented by a rounded-polygon shape with a close icon, which can be interacted with by pressing the close button. The [`EnableToken`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_EnableToken) property determines whether the ComboBoxAdv's selected items should be displayed as tokens. The default value is `false`.
+The selected items are represented by a rounded-polygon shape with a close icon, which can be interacted with by pressing the close button. The [`EnableToken`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_EnableToken) property determines whether the ComboBox's selected items should be displayed as tokens. The default value is `false`.
 
 When an item is selected from the drop-down, it is added to the text area as a token. The corresponding item is removed from the text box when you click the close icon.
 
@@ -285,7 +285,7 @@ combobox.EnableToken = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF ComboBoxAdv Token support](ComboBoxAdv_images/wpf-comboboxadv-token-support.gif)
+![WPF ComboBox Token support](ComboBoxAdv_images/wpf-comboboxadv-token-support.gif)
 
 N> Token support is available only in multi-selection mode. The text area height automatically increases or decreases based on the placement of the selected items.
 
@@ -293,7 +293,7 @@ N> Token support is available only in multi-selection mode. The text area height
 
 You can type any text in the text box, and it will be added as a token only if it matches an item in the drop-down.
 
-![WPF ComboBoxAdv Editing support](ComboBoxAdv_images/wpf-comboboxadv-editing-support.gif)
+![WPF ComboBox Editing support](ComboBoxAdv_images/wpf-comboboxadv-editing-support.gif)
 
 ### Keyboard access
 

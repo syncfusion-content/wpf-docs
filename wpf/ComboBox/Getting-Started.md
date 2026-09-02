@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF ComboBoxAdv | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF ComboBoxAdv control. Explore setup, elements, features, examples, and customization options.
+title: Getting Started with WPF ComboBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF ComboBox control. Explore setup, elements, features, examples, and customization options.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
 ---
-# Getting Started with WPF ComboBoxAdv
-This section provides a quick overview for working with the ComboBox ([ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html)).
+# Getting Started with WPF ComboBox
+This section provides a quick overview for working with the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-combobox-example/tree/master/ComboBoxAdv).
 
@@ -19,7 +19,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install NuGet packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
-## Creating an application with ComboBoxAdv
+## Creating an application with ComboBox
 
 In this walk-through, the user will create a WPF application that contains the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
 
@@ -94,7 +94,7 @@ To add [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
 using System.Windows;
 using Syncfusion.Windows.Tools.Controls;
-namespace ComboBox
+namespace GettingStartedComboBox
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -118,7 +118,7 @@ namespace ComboBox
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Adding items in ComboBoxAdv
+## Adding items in ComboBox
 
 Items can be added in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control in the following ways.
 
@@ -280,7 +280,7 @@ To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
 
 {% endhighlight %}
 {% highlight c# %}
-namespace ComboBox
+namespace GettingStartedComboBox
 {
     public partial class MainWindow : Window
     {
@@ -309,7 +309,7 @@ The [`DisplayMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
 
 {% endhighlight %}
 {% highlight c# %}
-// Initialize the display member path for the ComboBoxAdv.
+// Initialize the display member path for the ComboBox.
 this.comboBoxAdv.DisplayMemberPath = "Country";
 {% endhighlight %}
 {% endtabs %}
@@ -349,28 +349,28 @@ You can customize the visualization of a data object using the [`ItemTemplate`](
 
 ## Selection
 
-[ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) supports single and multiple selection of items. By default, selection in ComboBoxAdv is single selection. To select multiple items, enable the [`AllowMultiSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property and select those items from the drop-down list. For more details, see [MultiSelection Support](MultiSelection-Support.md).
+[ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control supports single and multiple selection of items. By default, selection in ComboBox is single selection. To select multiple items, enable the [`AllowMultiSelect`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property and select those items from the drop-down list. For more details, see [MultiSelection Support](MultiSelection-Support.md).
 
 ![MultiSelection](Getting-Started_images/ComboBoxAdv_img5.png)
 
  You can select the item or get the index of the selected item by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) property. When an item is selected in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html), you can get their information using [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) or [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) property. For multiple selected items, use [SelectedItems]([SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_SelectedItems)) property. The selection of the items can be handled using [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#) event.
 
 ## Editing
-[IsEditable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_IsEditable) property helps to edit the text in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
+[IsEditable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_IsEditable) property helps to edit the text in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
 
 ![Editable](Getting-Started_images/ComboBoxAdv_img6.png)
 
 ## Theme
 
-ComboBoxAdv supports various built-in themes. Apply a theme to the ComboBoxAdv using the links below.
+ComboBox supports various built-in themes. Apply a theme to the ComboBox using the links below.
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
  
-  ![Setting theme to WPF comboBoxAdv](Getting-Started_images/ComboBoxAdv_Theme_Support.png)
+  ![Setting theme to WPF ComboBox](Getting-Started_images/ComboBoxAdv_Theme_Support.png)
 
 ## See Also
 
-* [How to filter dropdown items in WPF editable ComboBoxAdv?](https://support.syncfusion.com/kb/article/9968/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
+* [How to filter dropdown items in WPF editable ComboBox?](https://support.syncfusion.com/kb/article/9968/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
 * [How to define maximum number of items to be shown in combobox drop-down?](https://www.syncfusion.com/forums/153490/number-of-visible-items-in-comboboxadv-wpf)
