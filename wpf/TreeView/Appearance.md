@@ -323,7 +323,7 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customiz
 
 ## Animation
 
-The SfTreeView supports animating the expand and collapse of the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeNodeView.html). To enable or disable the animation, use the [IsAnimationEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_IsAnimationEnabled) property of SfTreeView.
+The WPF TreeView supports animating the expand and collapse of the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeNodeView.html). To enable or disable the animation, use the [IsAnimationEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_IsAnimationEnabled) property of SfTreeView.
 
 {% tabs %}
 {% highlight xaml %}

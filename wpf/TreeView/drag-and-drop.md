@@ -143,7 +143,7 @@ private void SfTreeView_ItemDropped(object sender, Syncfusion.UI.Xaml.TreeView.T
 
 ### Disable dragging of certain items in WPF TreeView
 
-You can restrict the dragging of certain nodes in SfTreeView by using the [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event.
+You can restrict the dragging of certain nodes in WPF TreeView by using the [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -161,7 +161,7 @@ private void SfTreeView_ItemDragStarting(object sender, Syncfusion.UI.Xaml.TreeV
 
 ### Disable dropping on certain items in WPF TreeView
 
-You can restrict dropping items onto certain nodes in SfTreeView by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event.
+You can restrict dropping items onto certain nodes in WPF TreeView by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -178,7 +178,7 @@ private void SfTreeView_ItemDropping(object sender, Syncfusion.UI.Xaml.TreeView.
 
 ### Customize the drop position
 
-You can customize the drop position of dragging nodes in SfTreeView by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event.
+You can customize the drop position of dragging nodes in WPF TreeView by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event.
 
 {% tabs %}
 {% highlight c# %}

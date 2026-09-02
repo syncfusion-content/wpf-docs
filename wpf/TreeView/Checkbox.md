@@ -15,7 +15,7 @@ The WPF TreeView provides support for loading `CheckBox` in each node, and allow
 
 When you are populating WPF TreeView nodes from [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource), then you can get or set the checked items by using [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property.
 
-SfTreeView supports to check multiple items through binding the [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property from view model with `ObservableCollection<object>` type.
+The WPF TreeView supports to check multiple items through binding the [CheckedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property from view model with `ObservableCollection<object>` type.
 
 N> Set [ItemTemplateDataContextType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) as `Node` to bind the `TreeViewNode.IsChecked` property to `CheckBox` in `ItemTemplate`.
 
@@ -219,7 +219,7 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-work-wit
 
 ## CheckBox State
 
-The SfTreeView processes the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_IsChecked) property (checkbox state) of `TreeViewNode` based on the [CheckBoxMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) property. `CheckBoxMode` defines how parent and child node checkbox states are updated when the user checks or unchecks a node. The default value is `None`. The `CheckBoxMode` enum contains the following three values:
+The WPF TreeView processes the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_Engine_TreeViewNode_IsChecked) property (checkbox state) of `TreeViewNode` based on the [CheckBoxMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) property. `CheckBoxMode` defines how parent and child node checkbox states are updated when the user checks or unchecks a node. The default value is `None`. The `CheckBoxMode` enum contains the following three values:
 
 * `None` — Check and uncheck are updated only in the view, but they do not affect the `CheckedItems` collection.
 * `Individual` — The checkbox state affects only the individual node; it does not affect the parent or child node checkbox state or the `IsChecked` property value.
