@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WPF PropertyGrid Control
 
-The [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control provides an interface for browsing and editing an object's properties with Blendability support, custom editors, category editors, sorting, and grouping support. The WPF PropertyGrid is implemented through the `PropertyGrid` class and provides features similar to the Windows Forms `PropertyGrid` control.
+The [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control provides an interface for browsing and editing an object's properties with Blendability support, custom editors, category editors, sorting, and grouping support. The WPF PropertyGrid is implemented through the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) class and provides features similar to the Windows Forms `PropertyGrid` control.
 
 ## Control structure
 

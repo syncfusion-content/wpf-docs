@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF PropertyGrid
 
-This section explains the different UI customization, styling, and theming options available in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control. The WPF PropertyGrid is implemented through the `PropertyGrid` class.
+This section explains the different UI customization, styling, and theming options available in the [WPF PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control. The WPF PropertyGrid is implemented through the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) class.
 
 ## Setting the Foreground
 

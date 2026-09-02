@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to interact with the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control and its items.
 
-## Interacting with WPF TreeView items
+## Interacting with TreeView items
 
 ### ItemTapped event
 
