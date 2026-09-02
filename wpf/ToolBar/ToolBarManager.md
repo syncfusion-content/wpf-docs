@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolBarManager in WPF ToolBarAdv | Syncfusion®
-description: ToolBarManager in WPF ToolBarAdv enables placing ToolBarTrayAdv containers on different sides of a layout and managing toolbar content efficiently.
+title: ToolBarManager in WPF ToolBar | Syncfusion®
+description: ToolBarManager in WPF ToolBar enables placing ToolBarTrayAdv containers on different sides of a layout and managing toolbar content efficiently.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
 
-# ToolBarManager in WPF ToolBarAdv
+# ToolBarManager in WPF ToolBar
 
 ToolBarManager is a container in which a ToolBarTrayAdv can be placed at the top, bottom, left, or right using the following properties.
 
@@ -18,7 +18,7 @@ ToolBarManager is a container in which a ToolBarTrayAdv can be placed at the top
 
 The `Content` of the ToolBarManager is displayed in the remaining space between the trays.
 
-The following code illustrates how to place a ToolBarAdv at the top of a ToolBarManager.
+The following code illustrates how to place a ToolBar at the top of a ToolBarManager.
 
 {% tabs %}
 
