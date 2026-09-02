@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with WPF SfTreeGrid | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF SfTreeGrid control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF TreeGrid | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF TreeGrid control. Explore setup, features, examples, and customization options.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Getting Started with WPF SfTreeGrid
+# Getting Started with WPF TreeGrid
 
-The [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) (SfTreeGrid) is a data oriented control that displays the self-relational and hierarchical data in tree structure with columns. The data can be loaded on-demand also.
+The [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) is a data oriented control that displays the self-relational and hierarchical data in tree structure with columns. The data can be loaded on-demand also.
 
 ## Assembly Deployment
 
-The following list of assemblies needs to be added as reference to use SfTreeGrid control in any application,
+The following list of assemblies needs to be added as reference to use TreeGrid control in any application,
 
 <table>
 <tr>
@@ -37,8 +37,8 @@ Syncfusion.Data.WPF assembly is dependent assembly for Syncfusion.SfGrid. WPF
 Syncfusion.SfGrid.WPF
 </td>
 <td>
-Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of SfTreeGrid.
-SfTreeGrid control present in <b>Syncfusion.UI.Xaml.TreeGrid</b> namespace.
+Syncfusion.SfGrid.WPF assembly contains classes that handles all UI operations of TreeGrid.
+this control present in <b>Syncfusion.UI.Xaml.TreeGrid</b> namespace.
 This namespace also added in <b>http://schemas.syncfusion.com/wpf Syncfusion</b> WPF schema.
 
 </td>
@@ -48,12 +48,12 @@ This namespace also added in <b>http://schemas.syncfusion.com/wpf Syncfusion</b
 Syncfusion.Shared.WPF
 </td>
 <td>
-Syncfusion.Shared.WPF contains various editor controls (such as IntegerTextBox, DoubleTextBox and etc) which are used in SfTreeGrid.
+Syncfusion.Shared.WPF contains various editor controls (such as IntegerTextBox, DoubleTextBox and etc) which are used in TreeGrid.
 </td>
 </tr>
 </table>
 
-In order to use export to excel and export to PDF functionalities of SfTreeGrid control, add the reference to following assemblies,
+In order to use export to excel and export to PDF functionalities of TreeGrid control, add the reference to following assemblies,
 
 <table>
 <tr>
@@ -69,7 +69,7 @@ Description
 Syncfusion.SfGridConverter.WPF
 </td>
 <td>
-Syncfusion.SfGridConverter.WPF contains static extension classes for exporting SfTreeGrid to excel and PDF in Syncfusion.UI.Xaml.TreeGrid.Converter namespace.
+Syncfusion.SfGridConverter.WPF contains static extension classes for exporting TreeGrid to excel and PDF in Syncfusion.UI.Xaml.TreeGrid.Converter namespace.
 </td>
 </tr>
 <tr>
@@ -90,16 +90,16 @@ Syncfusion.Pdf.Base contains fundamental and base classes for creating PDF.
 </tr>
 </table>
 
-### Creating simple application with SfTreeGrid
-In this walk through, you will create WPF application with SfTreeGrid control.
+### Creating simple application with TreeGrid
+In this walk through, you will create WPF application with TreeGrid control.
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
 3. [Adding control manually in XAML](#adding-control-manually-in-xaml)
 4. [Adding control manually in C#](#adding-control-manually-in-c)
-5. [Binding self-relational data in SfTreeGrid](#binding-self-relational-data-in-sftreegrid)
-6. [Binding nested collection with SfTreeGrid](#binding-nested-collection-with-sftreegrid) 
-7. [Populate SfTreeGrid in on-demand](https://help.syncfusion.com/wpf/treegrid/load-on-demand)
+5. [Binding self-relational data in TreeGrid](#binding-self-relational-data-in-sftreegrid)
+6. [Binding nested collection with TreeGrid](#binding-nested-collection-with-sftreegrid) 
+7. [Populate TreeGrid in on-demand](https://help.syncfusion.com/wpf/treegrid/load-on-demand)
 8. [Defining Columns](#defining-columns)
 9. [Selection](#selection)
 10. [Sorting](#sorting)
@@ -109,12 +109,12 @@ In this walk through, you will create WPF application with SfTreeGrid control.
 
 #### Creating the project
 
-Create new WPF project in Visual Studio to display SfTreeGrid with data objects.
+Create new WPF project in Visual Studio to display TreeGrid with data objects.
 
 #### Adding control via Designer
 
-WPF TreeGrid (SfTreeGrid) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-![Dragging WPF TreeGrid from Toolbox to Designer](Getting-Started_images/wpf-treegrid-toolbox.png)
+WPF TreeGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+![Dragging from Toolbox to Designer](Getting-Started_images/wpf-treegrid-toolbox.png)
 
 #### Adding control manually in XAML
 In order to add control manually in XAML, do the below steps,
@@ -123,8 +123,8 @@ In order to add control manually in XAML, do the below steps,
     * Syncfusion.Data.WPF
     * Syncfusion.SfGrid.WPF
     * Syncfusion.Shared.WPF
-2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or SfTreeGrid control namespace **Syncfusion.UI.Xaml.TreeGrid** in XAML page.
-3. Declare SfTreeGrid control in XAML page.
+2. Import Syncfusion<sup>®</sup> WPF schema **http://schemas.syncfusion.com/wpf** or TreeGrid control namespace **Syncfusion.UI.Xaml.TreeGrid** in XAML page.
+3. Declare TreeGrid control in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -153,8 +153,8 @@ To add control manually in C#, do the below steps,
     * Syncfusion.Data.WPF
     * Syncfusion.SfGrid.WPF
     * Syncfusion.Shared.WPF
-2. Import SfTreeGrid namespace **Syncfusion.UI.Xaml.TreeGrid**.
-3. Create SfTreeGrid control instance and add it to the Page.
+2. Import TreeGrid namespace **Syncfusion.UI.Xaml.TreeGrid**.
+3. Create TreeGrid control instance and add it to the Page.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -180,9 +180,9 @@ namespace WpfApplication1
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
-#### Binding self-relational data in SfTreeGrid
+#### Binding self-relational data in TreeGrid
 
-WPF TreeGrid (SfTreeGrid) supports to bind self-relational data by setting [SfTreeGrid.ParentPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ParentPropertyName) and [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) properties where tree structure is formed based on these two properties.
+WPF TreeGrid supports to bind self-relational data by setting [SfTreeGrid.ParentPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ParentPropertyName) and [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) properties where tree structure is formed based on these two properties.
 
 `SfTreeGrid.ParentPropertyName` – Denotes the property in data object which is used to identify the root nodes.
 `SfTreeGrid.ChildPropertyName` - Denotes the property in data object which is used identify its parent by matching the property value with `ParentPropertyName` property value of other data objects.
@@ -191,7 +191,7 @@ The data objects which has unique property value in `SfTreeGrid.ParentPropertyNa
 
 #### Creating Data Model for self-relational collection
 
-SfTreeGrid is a data-bound control. So, before binding to the control, you must create data model for application.
+TreeGrid is a data-bound control. So, before binding to the control, you must create data model for application.
 
 1. Creating data object class named `EmployeeInfo` and declare properties as shown below,
 
@@ -330,7 +330,7 @@ private  ObservableCollection<EmployeeInfo> GetEmployees()
 
 #### Binding to Data
 
-To bind the SfTreeGrid to data, set [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property to an IEnumerable of implementation and to form tree structure from self-relational data, set [SfTreeGrid.ParentPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ParentPropertyName) and [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) properties. Each row is SfTreeGrid is bound to an object in ItemsSource and each column is bound to a property in data object.
+To bind the TreeGrid to data, set [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property to an IEnumerable of implementation and to form tree structure from self-relational data, set [SfTreeGrid.ParentPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ParentPropertyName) and [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) properties. Each row is TreeGrid is bound to an object in ItemsSource and each column is bound to a property in data object.
 
 Bind the self-relations collection created in the previous step to `SfTreeGrid.ItemsSource` property and set `ParentPropertyName` as `ID` and `ChildPropertyName` as `ReportsTo` to form the tree structure as shown below,
 
@@ -386,11 +386,11 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid with Binding Data](Getting-Started_images/wpf-treegrid-binding-data.png)
+[with Binding Data](Getting-Started_images/wpf-treegrid-binding-data.png)
 
-### Binding Nested collection with SfTreeGrid
+### Binding Nested collection with TreeGrid
 
-WPF TreeGrid (SfTreeGrid) supports to bind nested or hierarchical collection (where each data object has hierarchy within) by setting the property name to [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) which holds the child collection.
+WPF TreeGrid supports to bind nested or hierarchical collection (where each data object has hierarchy within) by setting the property name to [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) which holds the child collection.
 
 #### Creating Data Model for nested collection
 
@@ -491,7 +491,7 @@ public class ViewModel
 
 #### Binding to Data
 
-To bind the SfTreeGrid to data, set ItemsSource property to an IEnumerable of implementation and to form tree structure from nested collection data, set [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName). Each row in SfTreeGrid is bound to an object in ItemsSource and each column is bound to a property in data object.
+To bind the TreeGrid to data, set ItemsSource property to an IEnumerable of implementation and to form tree structure from nested collection data, set [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName). Each row in TreeGrid is bound to an object in ItemsSource and each column is bound to a property in data object.
 Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property and set `ChildPropertyName` as `Children` to form the tree structure as shown below, 
 
 {% tabs %}
@@ -538,11 +538,11 @@ namespace NestedCollectionDemo
 }
 {% endhighlight %}
 {% endtabs %}
-![WPF TreeGrid with Nested Collection](Getting-Started_images/wpf-treegrid-nested-collection.png)
+![Nested Collection](Getting-Started_images/wpf-treegrid-nested-collection.png)
 
 ### Defining Columns
 
-By default, the WPF TreeGrid (SfTreeGrid) control generates the columns automatically when value assigned to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with.
+By default, the WPF TreeGrid control generates the columns automatically when value assigned to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with.
 
 The following table lists the column types and its constraints for auto column generation.
 <table>
@@ -612,7 +612,7 @@ Property of type Uri
 </tr>
 </table>
 
-When columns are auto-generated, you can handle the [SfTreeGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoGeneratingColumn) event to customize or cancel the columns before they are added to the SfTreeGrid.
+When columns are auto-generated, you can handle the [SfTreeGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoGeneratingColumn) event to customize or cancel the columns before they are added to the TreeGrid.
 You can prevent the automatic column generation by setting [SfTreeGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns) property to false. When `SfTreeGrid.AutoGenerateColumns` property is false, you should define the columns to be displayed as below,
 
 {% tabs %}
@@ -634,7 +634,7 @@ You can prevent the automatic column generation by setting [SfTreeGrid.AutoGener
 {% endhighlight %}
 {% endtabs %}
 
-Below is the list of column types provided in SfTreeGrid.
+Below is the list of column types provided in TreeGrid.
 <table>
 <tr>
 <th>
@@ -649,7 +649,7 @@ Comments
 {{'[TreeGridTextColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts textual content in its cells.
+Represents TreeGrid column that hosts textual content in its cells.
 </td>
 </tr>
 <tr>
@@ -657,7 +657,7 @@ Represents SfTreeGrid column that hosts textual content in its cells.
 {{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts {{'[DoubleTextBox](https://help.syncfusion.com/wpf/double-textbox/overview)'| markdownify }} control in its cells which is used to format and display Numeric values.
+Represents TreeGrid column that hosts {{'[DoubleTextBox](https://help.syncfusion.com/wpf/double-textbox/overview)'| markdownify }} control in its cells which is used to format and display Numeric values.
 </td>
 </tr>
 <tr>
@@ -665,7 +665,7 @@ Represents SfTreeGrid column that hosts {{'[DoubleTextBox](https://help.syncfusi
 {{'[TreeGridDateTimeColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts {{'[DateTimeEdit](https://help.syncfusion.com/wpf/datetimepicker/overview)'| markdownify }} control in its cells which is used to display and format DateTime values.
+Represents TreeGrid column that hosts {{'[DateTimeEdit](https://help.syncfusion.com/wpf/datetimepicker/overview)'| markdownify }} control in its cells which is used to display and format DateTime values.
 </td>
 </tr>
 <tr>
@@ -673,7 +673,7 @@ Represents SfTreeGrid column that hosts {{'[DateTimeEdit](https://help.syncfusio
 {{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts `ComboBox`control in its cells.
+Represents TreeGrid column that hosts `ComboBox`control in its cells.
 </td>
 </tr>
 <tr>
@@ -681,7 +681,7 @@ Represents SfTreeGrid column that hosts `ComboBox`control in its cells.
 {{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts `CheckBox` control in its cells.
+Represents TreeGrid column that hosts `CheckBox` control in its cells.
 </td>
 </tr>
 <tr>
@@ -689,7 +689,7 @@ Represents SfTreeGrid column that hosts `CheckBox` control in its cells.
 {{'[TreeGridMaskColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridMaskColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts `MaskedTextBox` control in its cells which is used to display textual content by applying Mask.
+Represents TreeGrid column that hosts `MaskedTextBox` control in its cells which is used to display textual content by applying Mask.
 </td>
 </tr>
 <tr>
@@ -697,7 +697,7 @@ Represents SfTreeGrid column that hosts `MaskedTextBox` control in its cells wh
 {{'[TreeGridCurrencyColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts 
+Represents TreeGrid column that hosts 
 {{'[CurrencyTextBox](https://help.syncfusion.com/wpf/currency-textbox/overview)'| markdownify }} control in its cells which is used to display numeric values with currency format.
 </td>
 </tr>
@@ -706,7 +706,7 @@ Represents SfTreeGrid column that hosts
 {{'[TreeGridPercentColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts {{'[PercentTextBox](https://help.syncfusion.com/wpf/percent-textbox/overview)'| markdownify }} control in its cells which is used to display numeric values with percent format.
+Represents TreeGrid column that hosts {{'[PercentTextBox](https://help.syncfusion.com/wpf/percent-textbox/overview)'| markdownify }} control in its cells which is used to display numeric values with percent format.
 </td>
 </tr>
 <tr>
@@ -714,7 +714,7 @@ Represents SfTreeGrid column that hosts {{'[PercentTextBox](https://help.syncfus
 {{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts `HyperLink` control in its cells.
+Represents TreeGrid column that hosts `HyperLink` control in its cells.
 </td>
 </tr>
 <tr>
@@ -722,19 +722,19 @@ Represents SfTreeGrid column that hosts `HyperLink` control in its cells.
 {{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts template-specified content in its cells
+Represents TreeGrid column that hosts template-specified content in its cells
 </td>
 </tr>
 </table>
 
 ### Selection
 
-By default, the entire row is selected when a user clicks a cell in a SfTreeGrid. You can set the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property to specify whether a user can select single row or cell, or multiple rows or cells. 
+By default, the entire row is selected when a user clicks a cell in a TreeGrid. You can set the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property to specify whether a user can select single row or cell, or multiple rows or cells. 
 You can handle the selection operations with the help of [SfTreeGrid.SelectionChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionChanging) and [SfTreeGrid.SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionChanged) events.
 
 ### Sorting
 
-By default, you can sort columns in a SfTreeGrid by clicking the column header. You can configure the sorting by setting [SfTreeGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SortColumnDescriptions) property.
+By default, you can sort columns in a TreeGrid by clicking the column header. You can configure the sorting by setting [SfTreeGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SortColumnDescriptions) property.
 You can customize sorting by handling the [SfTreeGrid.SortColumnsChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortColumnsChanging) and [SfTreeGrid.SortColumnsChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortColumnsChanged) events. To cancel the default sort, set the Cancel property to true in `SfTreeGrid.SortColumnsChanging` event.
 
 ### Editing
@@ -743,19 +743,19 @@ Editing can be enabled by setting [SfTreeGrid.AllowEditing](https://help.syncfus
 
 ### Filtering
 
-Filtering can be enabled by setting the [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering) property to true, where advanced filter UI can be opened by clicking the filter icon in column header to filter the nodes in SfTreeGrid. The filtering operations can be customized by handling the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanging) and [SfTreeGrid.FilterChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanged) events.
+Filtering can be enabled by setting the [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering) property to true, where advanced filter UI can be opened by clicking the filter icon in column header to filter the nodes in TreeGrid. The filtering operations can be customized by handling the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanging) and [SfTreeGrid.FilterChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterChanged) events.
 
-![WPF TreeGrid with Filtering](Getting-Started_images/wpf-treegrid-filter.png)
+![with Filtering](Getting-Started_images/wpf-treegrid-filter.png)
 
 ## Theme
 
-SfTreeGrid supports various built-in themes. Refer to the below links to apply themes for the SfTreeGrid,
+TreeGrid supports various built-in themes. Refer to the below links to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Applying Theme in WPF TreeGrid](Getting-Started_images/wpf-treegrid-theme.png)
+  ![Applying Theme](Getting-Started_images/wpf-treegrid-theme.png)
 
 
-  N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+  N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.

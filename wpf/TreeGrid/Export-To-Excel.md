@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Export To Excel in WPF SfTreeGrid | Syncfusion®
-description: Export SfTreeGrid data to Excel with support for headers, stacked headers, sorting, and filtering preservation.
+title: Export To Excel in WPF TreeGrid | Syncfusion®
+description: Export TreeGrid data to Excel with support for headers, stacked headers, sorting, and filtering preservation.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Export To Excel in WPF SfTreeGrid
+# Export To Excel in WPF TreeGrid
 
-SfTreeGrid provides support to export the data to Excel file. This also provides support to export the headers and stacked headers. This maintains the sorting and filtering processes when exporting.
+WPF TreeGrid provides support to export the data to Excel file. This also provides support to export the headers and stacked headers. This maintains the sorting and filtering processes when exporting.
 
-The following assemblies should be added for exporting a tree grid to Excel:-
+The following assemblies should be added for exporting a TreeGrid to Excel:-
 
 * Syncfusion.SfGridConverter.WPF
 * Syncfusion.XlsIO.Base
@@ -19,7 +19,7 @@ The following assemblies should be added for exporting a tree grid to Excel:-
 
 For NuGet package, have to install [Syncfusion.DataGridExcelExport.WPF](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.WPF) package. For more details refer this [UG link](https://help.syncfusion.com/wpf/control-dependencies#exporting-treegrid-to-excel-pdf-and-csv).
 
-You can export the tree grid to Excel by using the [ExportToExcel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportExtension.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportExtension_ExportToExcel_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_) extension method present in [Syncfusion.UI.Xaml.TreeGrid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.html) namespace.
+You can export the TreeGrid to Excel by using the [ExportToExcel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportExtension.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportExtension_ExportToExcel_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_) extension method present in [Syncfusion.UI.Xaml.TreeGrid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.html) namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -32,7 +32,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfTreeGrid exports the data to Excel using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the exported work sheets.
+N> TreeGrid exports the data to Excel using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the exported work sheets.
 
 ## Export options
 
@@ -55,7 +55,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ### Export without outlines	
 
-By default, all the children in the tree grid will be exported in expanded state. You can disable the outlines in Excel by setting the [AllowOutliningGroups](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_AllowOutliningGroups) property to false in [TreeGridExcelExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html) class.
+By default, all the children in the TreeGrid will be exported in expanded state. You can disable the outlines in Excel by setting the [AllowOutliningGroups](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_AllowOutliningGroups) property to false in [TreeGridExcelExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -68,11 +68,11 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Data Exporting to Excel without Outlines](Export-To-Excel_images/wpf-treegrid-export-to-excel.jpeg)
+![Data Exporting to Excel without Outlines](Export-To-Excel_images/wpf-treegrid-export-to-excel.jpeg)
 
 ### Exclude columns when exporting
 
-By default, all the columns (including hidden columns) in the tree grid will be exported to Excel. To exclude some columns, use [ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_ExcludeColumns) field in [TreeGridExcelExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html) class.
+By default, all the columns (including hidden columns) in the TreeGrid will be exported to Excel. To exclude some columns, use [ExcludeColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_ExcludeColumns) field in [TreeGridExcelExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -153,7 +153,7 @@ The default value of the [ExportColumnWidth](https://help.syncfusion.com/cr/wpf/
 
 ### Export with customized row height
 
-You can export the tree grid to Excel with customized row height by using the [DefaultRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_DefaultRowHeight) property.
+You can export the TreeGrid to Excel with customized row height by using the [DefaultRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_DefaultRowHeight) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -168,7 +168,7 @@ workBook.SaveAs("Sample1.xlsx");
 
 ### Export without grid lines
 
-You can export the tree grid to Excel without grid lines by setting the [IsGridLinesVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_IsGridLinesVisible) property to `false`.
+You can export the TreeGrid to Excel without grid lines by setting the [IsGridLinesVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_IsGridLinesVisible) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -185,7 +185,7 @@ The default value of the [IsGridLinesVisible](https://help.syncfusion.com/cr/wpf
 
 ### Export with indent column
 
-You can export the tree grid to Excel with indent column to denote the nodes level by setting the [AllowIndentColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_AllowIndentColumn) property to true.
+You can export the TreeGrid to Excel with indent column to denote the nodes level by setting the [AllowIndentColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_AllowIndentColumn) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -231,7 +231,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Row and Column Index while Exporting from WPF TreeGrid to Excel](Export-To-Excel_images/wpf-treegrid-change-row-column-index.jpeg)
+![Changing Row and Column Index while Exporting to Excel](Export-To-Excel_images/wpf-treegrid-change-row-column-index.jpeg)
 
 ## Save options
 
@@ -331,7 +331,7 @@ window1.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid Data Exporting to Spreadsheet without Saving](Export-To-Excel_images/wpf-treegrid-export-to-spreadsheet.jpeg)
+![Data Exporting to Spreadsheet without Saving](Export-To-Excel_images/wpf-treegrid-export-to-spreadsheet.jpeg)
 
 ## Export to HTML
 
@@ -352,7 +352,7 @@ It is also possible to save the worksheet as HTML by using the [SaveAsHtml](htt
 
 ## Export to mail
 
-You can export the tree grid to mail by converting to Excel and save the exported worksheet as HTML. Then the exported HTML contents should be embedded in the mail body.
+You can export the TreeGrid to mail by converting to Excel and save the exported worksheet as HTML. Then the exported HTML contents should be embedded in the mail body.
 
 {% tabs %}
 {% highlight c# %}
@@ -483,7 +483,7 @@ private static void ExportingHandler(object sender, TreeGridExcelExportingEventA
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Cell Style in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-cell-style-customization.jpeg)
+![Customizing Cell Style in Exported Data](Export-To-Excel_images/wpf-treegrid-cell-style-customization.jpeg)
 
 ### Customize the exporting content to Excel 
 
@@ -517,7 +517,7 @@ private static void CellExportingHandler(object sender, TreeGridCellExcelExporti
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Exported WPF TreeGrid Content to Excel](Export-To-Excel_images/wpf-treegrid-export-customization.jpeg)
+![Customizing Exported Content to Excel](Export-To-Excel_images/wpf-treegrid-export-customization.jpeg)
 
 Here, the cell values changed for the IsClosed column are based on the custom condition.
 
@@ -549,7 +549,7 @@ private static void CellExportingHandler(object sender, TreeGridCellExcelExporti
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Row Style in Excel Sheet based on WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-row-style.jpeg)
+![Changing Row Style in Excel Sheet based Data](Export-To-Excel_images/wpf-treegrid-row-style.jpeg)
 
 ### Customize the cells based on column name
 
@@ -577,11 +577,11 @@ private static void CellExportingHandler(object sender, TreeGridCellExcelExporti
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Cells based on Column in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-column-cell-customization.jpeg)
+![Customizing Cells based on Column in Exported Data](Export-To-Excel_images/wpf-treegrid-column-cell-customization.jpeg)
 
 ## Customize exported workbook and worksheet
 
-The tree grid can be exported to Excel using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating the workbooks and sheets after exporting.
+The TreeGrid can be exported to Excel using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating the workbooks and sheets after exporting.
 
 ### Set borders
 
@@ -599,7 +599,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Cell Border Style in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-cell-border-style.jpeg)
+![Changing Cell Border Style in Exported Data](Export-To-Excel_images/wpf-treegrid-cell-border-style.jpeg)
 
 ### Enable filters
 
@@ -616,7 +616,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Filter in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-filter.jpeg)
+![Displaying Filter in Exported Data](Export-To-Excel_images/wpf-treegrid-filter.jpeg)
 
 When using the `stacked headers`, you can specify the `range` based on the stacked headers count.
 
@@ -650,7 +650,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Range of Cells in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-range-of-cells.jpeg)
+![Customizing Range of Cells in Exported Data](Export-To-Excel_images/wpf-treegrid-range-of-cells.jpeg)
 
 ## Performance
 
@@ -676,7 +676,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Formatting Column in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-column-formatting.jpeg)
+![Formatting Column in Exported Data](Export-To-Excel_images/wpf-treegrid-column-formatting.jpeg)
 
 ### Alternate row styling without using CellsExportingEventHandler
 
@@ -705,13 +705,13 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Style of Alternate Rows in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-changing-row-style.jpeg)
+![Changing Style of Alternate Rows in Exported Data](Export-To-Excel_images/wpf-treegrid-changing-row-style.jpeg)
 
 ## How to
 
-### Export multiple tree grids to single Excel sheet
+### Export multiple TreeGrid's to single Excel sheet
 
-You can export multiple tree grids to single Excel sheet by merging one tree grid worksheet into another using the `Worksheet.UsedRange.CopyTo` method.
+You can export multiple tree grids to single Excel sheet by merging one TreeGrid worksheet into another using the `Worksheet.UsedRange.CopyTo` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -733,9 +733,9 @@ workBook1.SaveAs("sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-### Export the tree grid that is not loaded in view
+### Export the TreeGrid that is not loaded in view
 
-You can export the tree grid that is not loaded in view by calling the ApplyTemplate() method before exporting.
+You can export the TreeGrid that is not loaded in view by calling the ApplyTemplate() method before exporting.
 
 {% tabs %}
 {% highlight c# %}
@@ -751,7 +751,7 @@ workBook1.SaveAs("sample.xlsx");
 
 ### Export parent and expanded child nodes
 
-By default, all the tree grid nodes will be exported when calling the `ExportToExcel` method. You can export only the parent and expanded child nodes by overriding the[ExportNodesToExcel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToExcelConverter.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridToExcelConverter_ExportNodesToExcel_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_TreeNodes_Syncfusion_XlsIO_IWorksheet_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_) method of [TreeGridToExcelConverter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToExcelConverter.html) class,
+By default, all the TreeGrid nodes will be exported when calling the `ExportToExcel` method. You can export only the parent and expanded child nodes by overriding the[ExportNodesToExcel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToExcelConverter.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridToExcelConverter_ExportNodesToExcel_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_TreeNodes_Syncfusion_XlsIO_IWorksheet_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_) method of [TreeGridToExcelConverter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToExcelConverter.html) class,
 
 {% tabs %}
 {% highlight c# %}
@@ -787,4 +787,4 @@ protected override void ExportNodesToExcel(SfTreeGrid treeGrid, TreeNodes nodes,
 You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ExcelExportingDemo1880731953.zip).
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.

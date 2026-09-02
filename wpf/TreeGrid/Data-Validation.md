@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Data Validation in WPF SfTreeGrid | Syncfusion®
-description: Validate user input in SfTreeGrid with built-in rules, IDataErrorInfo, and custom validation logic for accurate data.
+title: Data Validation in WPF TreeGrid | Syncfusion®
+description: Validate user input in TreeGrid with built-in rules, IDataErrorInfo, and custom validation logic for accurate data.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
 
-# Data Validation in WPF SfTreeGrid
+# Data Validation in WPF TreeGrid
 
-SfTreeGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [TreeGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
+WPF TreeGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [TreeGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
 
 ## Built-in validations
 
@@ -22,7 +22,7 @@ Built-in validations through[IDataErrorInfo](https://learn.microsoft.com/en-us/d
 
 ## Built-in validation using IDataErrorInfo / INotifyDataErrorInfo
 
-SfTreeGrid provides support to validate the data based on [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0)/[INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0).
+TreeGrid provides support to validate the data based on [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0)/[INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0).
 
 ### Using IDataErrorInfo 
 
@@ -83,7 +83,7 @@ treeGrid.GridValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![Data Validation in WPF TreeGrid using IDataErrorInfo](Data-Validation_images/wpf-treegrid-data-validation.png)
+![Data Validation using IDataErrorInfo](Data-Validation_images/wpf-treegrid-data-validation.png)
 
 ### INotifyDataErrorInfo
 You can validate the data by implementing the [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) interface in model class.
@@ -139,7 +139,7 @@ Enable built-in validation support by setting `SfTreeGrid.GridValidationMode` or
 {% endhighlight %}
 {% endtabs %}
 
-![Data Validation in WPF TreeGrid using INotifyDataErrorInfo](Data-Validation_images/wpf-treegrid-validation.png)
+![Data Validation using INotifyDataErrorInfo](Data-Validation_images/wpf-treegrid-validation.png)
 
 ## Built-in validation using Data Annotation
 
@@ -210,7 +210,7 @@ public string CustomerID
 
 ## Custom validation through events
 
-You can validate the cells and rows using [CurrentCellValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) and [RowValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) events. SfTreeGrid will not allow user to edit other cell / row if validation failed.
+You can validate the cells and rows using [CurrentCellValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) and [RowValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) events. TreeGrid will not allow user to edit other cell / row if validation failed.
 
 ### Cell Validation
 
@@ -380,7 +380,7 @@ You can change the validation error template shape of the `TreeGridCell` by ch
 {% endhighlight %}
 {% endtabs %}
 
-![Data Validation Error Icon with Custom Color in WPF TreeGrid](Data-Validation_images/wpf-treegrid-data-validation-error-icon.png)
+![Data Validation Error Icon with Custom Color](Data-Validation_images/wpf-treegrid-data-validation-error-icon.png)
 
 #### Change the color of error icon
 
@@ -472,7 +472,7 @@ You can change the validation error template color of the `TreeGridCell` by cha
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid - Error Tip Foreground and Background Customization](Data-Validation_images/wpf-treegrid-data-validation-error-tip-customization.png)
+![Error Tip Foreground and Background Customization](Data-Validation_images/wpf-treegrid-data-validation-error-tip-customization.png)
 
 #### Change the cursor on error icon
 
@@ -565,7 +565,7 @@ You can change the validation error template cursor of the `TreeGridCell` by c
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Cursor on Error Icon of WPF TreeGrid](Data-Validation_images/wpf-treegrid-cursor-style.png)
+![Changing Cursor on Error Icon](Data-Validation_images/wpf-treegrid-cursor-style.png)
 
 ### Customizing error tip
 
@@ -656,11 +656,11 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Error Tip Background Color in WPF TreeGrid](Data-Validation_images/wpf-treegrid-error-tip.png)
+![Changing Error Tip Background Color](Data-Validation_images/wpf-treegrid-error-tip.png)
 
 ### Showing error details in RowHeader
 
-SfTreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IDataErrorInfo_Error) or [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_INotifyDataErrorInfo_HasErrors) property.
+TreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IDataErrorInfo_Error) or [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_INotifyDataErrorInfo_HasErrors) property.
 
 #### Using IDataErrorInfo
 
@@ -683,7 +683,7 @@ public string Error
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid displays Error Tip on Row Header](Data-Validation_images/wpf-treegrid-error-tip-on-row-header.png)
+![displays Error Tip on Row Header](Data-Validation_images/wpf-treegrid-error-tip-on-row-header.png)
 
 #### Using INotifyDataErrorInfo
 
@@ -706,11 +706,11 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid displays Error Tip on Row Header using INotifyDataErrorInfo](Data-Validation_images/wpf-treegrid-error-tip-on-header-row.png)
+![displays Error Tip on Row Header using INotifyDataErrorInfo](Data-Validation_images/wpf-treegrid-error-tip-on-header-row.png)
 
 ## Validation with CheckBox column
 
-SfTreeGrid doesn’t support to validate the [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) through validating events. You can validate the check box column value by setting `TreeGridValidationHelper.IsCurrentCellValidated` and `TreeGridValidationHelper.IsCurrentRowValidated` static properties by calling [SetCurrentRowValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridValidationHelper_SetCurrentRowValidated_System_Boolean_) and [SetCurrentCellValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridValidationHelper_SetCurrentCellValidated_System_Boolean_) methods from [TreeGridValidationHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper.html).
+TreeGrid doesn’t support to validate the [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) through validating events. You can validate the check box column value by setting `TreeGridValidationHelper.IsCurrentCellValidated` and `TreeGridValidationHelper.IsCurrentRowValidated` static properties by calling [SetCurrentRowValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridValidationHelper_SetCurrentRowValidated_System_Boolean_) and [SetCurrentCellValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridValidationHelper_SetCurrentCellValidated_System_Boolean_) methods from [TreeGridValidationHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridValidationHelper.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -758,7 +758,7 @@ void treeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueCha
 {% endhighlight %}
 {% endtabs %}
 
-![Data Validation with CheckBox in WPF TreeGrid](Data-Validation_images/wpf-treegrid-data-validation-checkbox.png)
+![Data Validation with CheckBox](Data-Validation_images/wpf-treegrid-data-validation-checkbox.png)
 
 ## Limitations 
 
@@ -766,4 +766,4 @@ void treeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueCha
 2. [CurrentCellValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellValidating) event will not triggered for [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html).
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.

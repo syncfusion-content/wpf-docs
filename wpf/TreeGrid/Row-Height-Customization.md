@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Row Height Customization in WPF SfTreeGrid | Syncfusion®
-description: Row Height Customization in SfTreeGrid customizes row heights dynamically to improve data display, readability, and user experience.
+title: Row Height Customization in WPF TreeGrid | Syncfusion®
+description: Row Height Customization in TreeGrid customizes row heights dynamically to improve data display, readability, and user experience.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Row Height Customization in WPF SfTreeGrid
+# Row Height Customization in WPF TreeGrid
 
 You can change the header row height by setting [SfTreeGrid.HeaderRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderRowHeight) and the other rows height can be changed by setting [SfTreeGrid.RowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_RowHeight)  property.
 
@@ -65,7 +65,7 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Particular Row Height in WPF TreeGrid](Row-Height-Customization_images/wpf-treegrid-customizing-row-height.png)
+![Customizing Particular Row Height](Row-Height-Customization_images/wpf-treegrid-customizing-row-height.png)
 
 ## QueryRowHeight event
 
@@ -73,7 +73,7 @@ You can change the row height in on-demand based on the row index or row data us
 
 `QueryRowHeight` event triggered for each row when it becomes visible. [TreeGridQueryRowHeightEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryRowHeightEventArgs.html) provides information to `QueryRowHeight` event with following members,
 
-* `RowIndex` – denotes index of the row in SfTreeGrid.
+* `RowIndex` – denotes index of the row in TreeGrid.
 
 * `Height` – Gets or sets the height of the row.
 
@@ -96,18 +96,18 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Specific Row Height in WPF TreeGrid](Row-Height-Customization_images/wpf-treegrid-change-row-height.png)
+![Changing Specific Row Height](Row-Height-Customization_images/wpf-treegrid-change-row-height.png)
 
 
 ## Fit the Row Height based on its content
 
-You can fit the row height based on its content in `QueryRowHeight` event handler using [GetAutoRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumnSizer_GetAutoRowHeight_Syncfusion_UI_Xaml_TreeGrid_TreeNode_Syncfusion_UI_Xaml_Grid_GridRowSizingOptions_System_Double__) method. This improves the readability of the content and it does not affect the loading performance of the SfTreeGrid as the `QueryRowHeight` event triggered for rows in on-demand.
+You can fit the row height based on its content in `QueryRowHeight` event handler using [GetAutoRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumnSizer_GetAutoRowHeight_Syncfusion_UI_Xaml_TreeGrid_TreeNode_Syncfusion_UI_Xaml_Grid_GridRowSizingOptions_System_Double__) method. This improves the readability of the content and it does not affect the loading performance of the TreeGrid as the `QueryRowHeight` event triggered for rows in on-demand.
 
 `GetAutoRowHeight` method returns `true` when the row height is calculated for record and header rows and returns `false` for other rows. Calculated height based on content set to the `out` parameter and you can assign the calculated height to the `Height` property of `TreeGridQueryRowHeightEventArgs`.
 
 Below are the parameter to `GetAutoRowHeight` method, 
 
-1. `RowIndex` – denotes the index of row in SfTreeGrid.
+1. `RowIndex` – denotes the index of row in TreeGrid.
 
 2. `GridRowSizingOptions` – A class with properties to customize the row height calculation.
 
@@ -153,7 +153,7 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 
 Here, row heights are customized based on the large text content.
 
-![AutoFit RowHeight in WPF TreeGrid](Row-Height-Customization_images/wpf-treegrid-auto-fit-row-height.png)
+![AutoFit RowHeight](Row-Height-Customization_images/wpf-treegrid-auto-fit-row-height.png)
 
 ### GridRowSizingOptions
 
@@ -201,7 +201,7 @@ void TreeGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here `FirstName`,`LastName`, `Title` and `Salary` columns are excluded from height calculation and the row height is calculated based on `About` column only.
  
-![AutoFit RowHeight for Specific Columns in WPF TreeGrid](Row-Height-Customization_images/wpf-treegrid-autofit-height-based-on-column.png)
+![AutoFit RowHeight for Specific Columns](Row-Height-Customization_images/wpf-treegrid-autofit-height-based-on-column.png)
 
 ## Reset Row Height at runtime
 
@@ -329,7 +329,7 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![AutoFit Header RowHeight based on Content in WPF TreeGrid](Row-Height-Customization_images/wpf-treegrid-header-row-height.png)
+![AutoFit Header RowHeight based on Content](Row-Height-Customization_images/wpf-treegrid-header-row-height.png)
 
 ## Change StackedHeaderRow Height based on its content
 
@@ -392,4 +392,4 @@ void TreeGrid_QueryRowHeight(object sender, TreeGridQueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![AutoFit Stacked HeaderRow Height based on Content in WPF TreeGrid](Row-Height-Customization_images/wpf-treegrid-stacked-header-row-height.png)
+![AutoFit Stacked HeaderRow Height based on Content](Row-Height-Customization_images/wpf-treegrid-stacked-header-row-height.png)

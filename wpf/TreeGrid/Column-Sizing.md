@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Column Sizing in WPF SfTreeGrid | Syncfusion®
-description: Column Sizing in SfTreeGrid adjusts column widths automatically or manually using the ColumnSizer property.
+title: Column Sizing in WPF TreeGrid | Syncfusion®
+description: Column Sizing in TreeGrid adjusts column widths automatically or manually using the ColumnSizer property.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Column Sizing in WPF SfTreeGrid 
+# Column Sizing in WPF TreeGrid 
 
-SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnSizer) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnSizer) property. 
+WPF TreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnSizer) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnSizer) property. 
 
 Below is the list of predefined column sizing options available.
 
@@ -100,14 +100,14 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
 {% endhighlight %}
 {% endtabs %}
 
-![Column Sizing in WPF TreeGrid](ColumnSizer_images/wpf-treegrid-column-size.png)
+![Column Sizing](ColumnSizer_images/wpf-treegrid-column-size.png)
 
 N> The `TreeGridColumn.ColumnSizer` takes higher priority than the `SfTreeGrid.ColumnSizer`.
 
 ## Refreshing ColumnSizer at runtime
 
 You can refresh the `ColumnSizer` at runtime by calling [SfTreeGrid.TreeGridColumnSizer.Refresh](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumnSizer_Refresh) method.
-SfTreeGrid support to recalculates the column auto width by calling reset methods of `TreeGridColumnSizer`. [TreeGridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [TreeGridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grid_GridColumnBase_) method reset the width to particular column.
+TreeGrid support to recalculates the column auto width by calling reset methods of `TreeGridColumnSizer`. [TreeGridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [TreeGridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grid_GridColumnBase_) method reset the width to particular column.
 
 N> The `TreeGridColumnSizer.ResetAutoCalculationforAllColumns` or `TreeGridColumnSizer.ResetAutoCalculation` methods applicable for Auto, FillColumn, AutoFillColumn, SizeToCells types.
 
@@ -141,7 +141,7 @@ this.treeGrid.TreeGridColumnSizer.Refresh();
 
 ### Customizing built-in column sizing logic
 
-SfTreeGrid process column sizing operations in [TreeGridColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html) class. You can customize the column sizing operations by overriding `GridColumnSizer` and set it to `SfTreeGrid.TreeGridColumnSizer`.
+TreeGrid process column sizing operations in [TreeGridColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html) class. You can customize the column sizing operations by overriding `GridColumnSizer` and set it to `SfTreeGrid.TreeGridColumnSizer`.
 
 {% tabs %}
 {% highlight c# %}
@@ -186,7 +186,7 @@ this.treeGrid.TreeGridColumnSizer.SortIconWidth = 20;
 {% endhighlight %}
 {% endtabs %}
 
-#### Changing Font settings for SfTreeGrid
+#### Changing Font settings for TreeGrid
 
 You can change the `font settings` for column width calculation by setting [TreeGridColumnSizer.FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_FontSize), [TreeGridColumnSizer.FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_FontFamily) and [TreeGridColumnSizer.Margin](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_Margin) properties.  This settings will be considered for all columns.
 
@@ -327,7 +327,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Column Size in WPF TreeGrid](ColumnSizer_images/wpf-treegrid-column-size-customization.png)
+![Customizing Column Size](ColumnSizer_images/wpf-treegrid-column-size-customization.png)
 
 ### Change the width of TreeGridComboBoxColumn based on it&#39;s ItemsSource
 
@@ -375,4 +375,4 @@ public class CustomColumnSizer : TreeGridColumnSizer
 {% endtabs %}
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.

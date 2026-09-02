@@ -1,16 +1,16 @@
-﻿---
+---
 layout: post
-title: Sorting in WPF SfTreeGrid | Syncfusion®
-description: Sorting in SfTreeGrid provides single and multi-column sorting, custom sorting, programmatic sorting, and sorting event support for efficient data organization.
+title: Sorting in WPF TreeGrid | Syncfusion®
+description: Sorting in TreeGrid provides single and multi-column sorting, custom sorting, programmatic sorting, and sorting event support for efficient data organization.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
 
-# Sorting in WPF SfTreeGrid
+# Sorting in WPF TreeGrid
 
-SfTreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
+WPF TreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -60,7 +60,7 @@ N> The[TreeGridColumn.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-![WPF TreeGrid with Sorting](Sorting_images/wpf-treegrid-sorting.png)
+![Sorting](Sorting_images/wpf-treegrid-sorting.png)
 
 ## Sort column in double click
 
@@ -97,10 +97,10 @@ Following are the sequence of sorting orders when clicking column header,
 
 ## Multi column sorting
 
-SfTreeGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
+TreeGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
 In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
 
-![Multi Column Sorting in WPF TreeGrid](Sorting_images/wpf-treegrid-multi-column-sorting.png)
+![Multi Column Sorting](Sorting_images/wpf-treegrid-multi-column-sorting.png)
 
 ### Display sort order
 
@@ -124,7 +124,7 @@ this.treeGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid displays Sorting Order](Sorting_images/wpf-treegrid-sorting-order.png)
+![displays Sorting Order](Sorting_images/wpf-treegrid-sorting-order.png)
 
 ## Programmatic Sorting
 
@@ -186,7 +186,7 @@ this.treeGrid.SortColumnDescriptions.Clear();
 
 ## Custom sorting
 
-SfTreeGrid allows you to sort the columns based on the custom logic. The custom sorting can be applied by adding the [SortComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html) instance to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortComparers). 
+TreeGrid allows you to sort the columns based on the custom logic. The custom sorting can be applied by adding the [SortComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html) instance to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortComparers). 
 
 The [SortComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html) have the following properties,
 
@@ -247,7 +247,7 @@ public class CustomSortComparer : IComparer<object>, ISortDirection
 {% endhighlight %}
 {% endtabs %}
 
-#### Adding custom comparer to SfTreeGrid
+#### Adding custom comparer to TreeGrid
 
 Custom comparer can be added to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortComparers) property. `SortComparers` maintains custom comparers and the custom comparer gets called when corresponding column gets sorted by clicking column header or programmatically.
 
@@ -270,7 +270,7 @@ this.treeGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomSortCo
 
 Sorting `First Name` column sorts the data using custom sort comparer available in `SfTreeGrid.SortComparers`.
 
-![WPF TreeGrid with Custom Sorting](Sorting_images/wpf-treegrid-custom-sorting.png)
+![Custom Sorting](Sorting_images/wpf-treegrid-custom-sorting.png)
 
 ## Handling events
 

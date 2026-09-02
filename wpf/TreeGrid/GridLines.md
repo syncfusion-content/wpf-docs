@@ -1,15 +1,15 @@
----
+﻿---
 layout: post
-title: Grid Lines in WPF SfTreeGrid | Syncfusion®
-description: Customize grid lines in SfTreeGrid to show vertical, horizontal, or both borders for cells and header cells.
+title: Grid Lines in WPF TreeGrid | Syncfusion®
+description: Customize grid lines in TreeGrid to show vertical, horizontal, or both borders for cells and header cells.
 platform: wpf
 control: TreeGrid
 documentation: ug
 ---
 
-# Grid Lines in WPF SfTreeGrid
+# Grid Lines in WPF TreeGrid
 
-SfTreeGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
+WPF TreeGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 
 [SfTreeGrid.GridLinesVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridLinesVisibility): To set the border lines for the cells other than header and stacked header cells.
 [SfTreeGrid.HeaderLinesVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderLinesVisibility): To set the border lines only for header and stacked header cells.
@@ -45,7 +45,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Both;
 {% endhighlight %}
 {% endtabs %}
 
-![GridLinesVisibility in WPF TreeGrid](GridLines_images/GridLines_image1.png)
+![GridLinesVisibility](GridLines_images/GridLines_image1.png)
 
 ### Horizontal
 
@@ -69,7 +69,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontal GridLinesVisibility in WPF TreeGrid](GridLines_images/GridLines_image2.png)
+![Horizontal GridLinesVisibility](GridLines_images/GridLines_image2.png)
 
 ### Vertical
 
@@ -93,7 +93,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Vertical;
 {% endhighlight %}
 {% endtabs %}
 
-![Vertical GridLinesVisibility in WPF TreeGrid](GridLines_images/GridLines_image3.png)
+![Vertical GridLinesVisibility](GridLines_images/GridLines_image3.png)
 
 ### None
 [GridLinesVisibility.None](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grid_GridLinesVisibility_None) displays the TreeGrid without grid lines.
@@ -116,7 +116,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.None;
 {% endhighlight %}
 {% endtabs %}
 
-![None GridLinesVisibility in WPF TreeGrid](GridLines_images/GridLines_image4.png)
+![None GridLinesVisibility](GridLines_images/GridLines_image4.png)
 
 ## Header rows
 
@@ -139,11 +139,11 @@ this.sfTreeGrid.HeaderLinesVisibility = GridLinesVisibility.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontal HeaderLinesVisibility in WPF TreeGrid](GridLines_images/GridLines_image5.png)
+![Horizontal HeaderLinesVisibility](GridLines_images/GridLines_image5.png)
 
 ## Limitations
 
 * Grid lines customization is not supported for RowHeader.
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.

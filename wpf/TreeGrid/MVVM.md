@@ -1,19 +1,19 @@
 ---
 layout: post
-title: MVVM in WPF SfTreeGrid | Syncfusion®
-description: MVVM in SfTreeGrid enables seamless integration with the MVVM pattern for managing data, commands, and user interactions effectively.
+title: MVVM in WPF TreeGrid | Syncfusion®
+description: MVVM in TreeGrid enables seamless integration with the MVVM pattern for managing data, commands, and user interactions effectively.
 platform: wpf
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# MVVM in WPF SfTreeGrid
+# MVVM in WPF TreeGrid
 
-This section explains various MVVM requirements using SfTreeGrid.
+This section explains various MVVM requirements using TreeGrid.
 
-## Bind the SelectedItem property of treegrid
+## Bind the SelectedItem property of TreeGrid
 
-You can bind the [SelectedItem ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property directly to treegrid by setting the `SfTreeGrid.SelectedItem` property.
+You can bind the [SelectedItem ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property directly to TreeGrid by setting the `SfTreeGrid.SelectedItem` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,7 +57,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ## Bind button command to view model
 
-You can load a button for the columns in treegrid using [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html). When loading the buttons, you can bind a command in ViewModel using `ElementName` binding.
+You can load a button for the columns in TreeGrid using [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html). When loading the buttons, you can bind a command in ViewModel using `ElementName` binding.
 
 In the following example, ViewModel command receives the underlying data object as command parameter, since the DataContext is bound as command parameter.
 
@@ -74,7 +74,7 @@ In the following example, ViewModel command receives the underlying data object 
 {% endhighlight %}
 {% endtabs %}
 
-![Binding Button Command to ViewModel in WPF TreeGrid](MVVM_images/wpf-treegrid-binding-command.jpeg)
+![Binding Button Command to ViewModel](MVVM_images/wpf-treegrid-binding-command.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-bind-button-command-to-view-model-in-wpf-and-uwp-treegrid-in-mvvm/tree/master/WPF).
 
@@ -100,7 +100,7 @@ public ObservableCollection<string> TitleList
 {% endhighlight %}
 {% endtabs %}
 
-![Binding ComboBox Column in WPF TreeGrid](MVVM_images/wpf-treegrid-binding-combobox-column.jpeg)
+![Binding ComboBox Column](MVVM_images/wpf-treegrid-binding-combobox-column.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-bind-combobox-column-ItemsSource-from-view-model-in-wpf-and-uwp-treegrid-in-mvvm/tree/master/WPF).
 
@@ -125,7 +125,7 @@ You can load a ComboBox inside [TreeGridTemplateColumn](https://help.syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeGrid displays ComboBox with MVVM Data Template Binding](MVVM_images/wpf-treegrid-mvvm-data-template-binding.jpeg)
+![displays ComboBox with MVVM Data Template Binding](MVVM_images/wpf-treegrid-mvvm-data-template-binding.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-bind-view-model-ItemsSource-to-combo-box-inside-template-in-wpf-and-uwp-treegrid-in-mvvm/tree/master/WPF).
 
@@ -184,4 +184,4 @@ public class ViewModel: NotificationObject
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-bind-columns-from-view-model-in-wpf-and-uwp-treegrid-in-mvvm/tree/master/WPF).
 
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the TreeGrid.
