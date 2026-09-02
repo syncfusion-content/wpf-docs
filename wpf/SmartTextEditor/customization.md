@@ -13,7 +13,7 @@ This section explains how to change the WPF Smart Text Editor appearance and sug
 
 ## Text customization
 
-Set or bind the text using the `Text` property. You can use this to preload content or bind it to a field in your view model for data binding. The `Text` property supports two-way binding.
+Set or bind the text using the `Text` property. You can use this to preloaded content or bind it to a field in your view model for data binding. The `Text` property supports two-way binding.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}

@@ -11,7 +11,7 @@ documentation: ug
 
 The WPF Smart Text Editor provides the `TextChangedCommand`, which is triggered whenever the text changes.
 
-### TextChangedCommand
+## TextChangedCommand
 
 The `TextChangedCommand` is a built-in command that is triggered whenever the text changes, allowing user to handle text change notifications in the view model.
 
