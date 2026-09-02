@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Getting Started with WPF ToolBarAdv | Syncfusion®
-description: Learn how to get started with the Syncfusion® WPF ToolBarAdv control. Explore setup, elements, features, examples, and customization options.
+title: Getting Started with WPF ToolBar | Syncfusion®
+description: Learn how to get started with the Syncfusion® WPF ToolBar control. Explore setup, elements, features, examples, and customization options.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
 
-# Getting Started with WPF ToolBarAdv
+# Getting Started with WPF ToolBar
 
 > **Important**
 > Starting with v16.2.0.x, if you refer to Syncfusion assemblies from the trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering the Syncfusion license key in your WPF application to use our components.
 
-This section explains how to add the [WPF ToolBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) (ToolBarAdv) control to an application and its structure.
+This section explains how to add the [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) (ToolBar) control to an application and its structure.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#toolbaradv) section for the list of assemblies or NuGet packages that need to be added as references to use the ToolBarAdv control. The minimum NuGet package required is `Syncfusion.Shared.WPF`.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#toolbaradv) section for the list of assemblies or NuGet packages that need to be added as references to use the [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) control. The minimum NuGet package required is `Syncfusion.Shared.WPF`.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 
@@ -53,7 +53,7 @@ Title="MainWindow" Height="350" Width="525">
 {% endcapture %}
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
-* Now add the WPF ToolBar (ToolBarAdv) control with a required optimal name using the namespace 
+* Now add the WPF [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) control with a required optimal name using the namespace 
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -68,7 +68,7 @@ Title="MainWindow" Height="350" Width="525">
 {% endcapture %}
 {{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
-### Create the ToolBarAdv control to an application by C#:
+### Create the ToolBar control to an application by C#:
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ tool.Height = 50;
 ![Appearance and Structure](Getting-Started-images/Getting-Started-img1.jpeg)
 
 * The Overflow button is a toggle button that opens the overflow panel.
-* The Gripper is used to drag the ToolBarAdv to change its band. The state of the ToolBarAdv can be changed to float and dock by clicking the gripper and dragging the ToolBarAdv, when the ToolBarAdv is hosted in a ToolBarManager.
+* The Gripper is used to drag the ToolBar to change its band. The state of the ToolBar can be changed to float and dock by clicking the gripper and dragging the ToolBar, when the ToolBar is hosted in a ToolBarManager.
 
 ## Setting icon template
 
@@ -199,7 +199,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
 ## Properties
 
-### Properties of ToolBarAdv
+### Properties of ToolBar
 
 <table>
 <tr>
@@ -211,19 +211,19 @@ Data Type<br/><br/></td></tr>
 <tr>
 <td>
 Band<br/><br/></td><td>
-Gets or sets a value indicating where the ToolBarAdv should be placed in the ToolBarTrayAdv.<br/><br/></td><td>
+Gets or sets a value indicating where the ToolBar should be placed in the ToolBarTrayAdv.<br/><br/></td><td>
 Dependency Property<br/><br/></td><td>
 Int<br/><br/></td></tr>
 <tr>
 <td>
 BandIndex<br/><br/></td><td>
-Gets or sets the band index number indicating the position of the ToolBarAdv on the band.<br/><br/></td><td>
+Gets or sets the band index number indicating the position of the ToolBar on the band.<br/><br/></td><td>
 Dependency Property<br/><br/></td><td>
 Int<br/><br/></td></tr>
 <tr>
 <td>
 ToolBarName<br/><br/></td><td>
-Gets or sets the name of the ToolBarAdv.<br/><br/></td><td>
+Gets or sets the name of the ToolBar.<br/><br/></td><td>
 Dependency Property<br/><br/></td><td>
 String<br/><br/></td></tr>
 <tr>
@@ -235,13 +235,13 @@ Bool<br/><br/></td></tr>
 <tr>
 <td>
 FloatingBarLocation<br/><br/></td><td>
-Gets or sets the location for the floating ToolBarAdv.<br/><br/></td><td>
+Gets or sets the location for the floating ToolBar.<br/><br/></td><td>
 Dependency Property<br/><br/></td><td>
 Point<br/><br/></td></tr>
 <tr>
 <td>
 ControlsResourceDictionary<br/><br/></td><td>
-Gets or sets resource dictionary in which ToolBarAdv will look up for Framework element's styles.<br/><br/></td><td>
+Gets or sets resource dictionary in which ToolBar will look up for Framework element's styles.<br/><br/></td><td>
 Dependency Property<br/><br/></td><td>
 Resource Dictionary<br/><br/></td></tr>
 <tr>
@@ -305,7 +305,7 @@ bool<br/><br/></td></tr>
 <tr>
 <td>
 Orientation<br/><br/></td><td>
-Gets or Sets the orientation of the ToolBarAdv.<br/><br/></td><td>
+Gets or Sets the orientation of the ToolBar.<br/><br/></td><td>
 Dependency property<br/><br/></td><td>
 Orientation<br/><br/></td></tr>
 <tr>
@@ -384,9 +384,9 @@ ToolBarState<br/><br/></td><td>
 
 ## Theme
 
-ToolBarAdv supports various built-in themes. Apply a theme to the ToolBarAdv using the links below.
+ToolBar supports various built-in themes. Apply a theme to the ToolBar using the links below.
 
 * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
-   ![Setting theme to WPF ToolBarAdv](Getting-Started-images/Theme.png)
+   ![Setting theme to WPF ToolBar](Getting-Started-images/Theme.png)

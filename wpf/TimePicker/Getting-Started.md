@@ -13,7 +13,7 @@ This section explains how to create a [WPF TimePicker](https://www.syncfusion.co
 
 ## Structure of SfTimePicker
 
-![WPF SfTimePicker Control](GettingStarted_images/SfTimePicker.png)
+![WPF TimePicker Control](GettingStarted_images/SfTimePicker.png)
 
 ## Assembly deployment
 
@@ -30,7 +30,7 @@ The [WPF TimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Contr
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
 
-![SfTimePicker control added by designer](GettingStarted_images/img1.png)
+![WPF TimePicker control added by designer](GettingStarted_images/img1.png)
 
 ## Adding control manually in XAML
 
@@ -97,7 +97,7 @@ namespace SfTimePickerSample {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![SfTimePicker control added by code](GettingStarted_images/wpf-time-picker.png)
+![WPF TimePicker control added by code](GettingStarted_images/wpf-time-picker.png)
 
 ## Setting the time
 
@@ -124,7 +124,7 @@ sfTimePicker.Value = new TimeSpan(04, 45, 00);
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker displaying selected value](Features_images/Features_img17.png)
+![WPF TimePicker displaying selected value](Features_images/Features_img17.png)
 
 ## Time changed notification
 
@@ -193,7 +193,7 @@ sfTimePicker.FormatString = "HH:mm:ss";
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker with 24 hour time format](Features_images/Features_img1.png)
+![WPF TimePicker with 24 hour time format](Features_images/Features_img1.png)
 
 Here, `SfTimePicker` displays a 24-hour time format.
 
@@ -222,7 +222,7 @@ sfTimePicker.SelectorFormatString = "h/t";
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker contains only hour and meridiem value selector](Features_images/Features_img2.png)
+![WPF TimePicker contains only hour and meridiem value selector](Features_images/Features_img2.png)
 
 Here, the `SfTimeSelector` with only hour and meridiem value selector.
 
@@ -253,7 +253,7 @@ sfTimePicker.SetValueOnLostFocus = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker value updated when SfTimeSelector lost its focus](Features_images/Features_img15.gif)
+![WPF TimePicker value updated when SfTimeSelector lost its focus](Features_images/Features_img15.gif)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the value setting support in the `SfTimePicker`.
 

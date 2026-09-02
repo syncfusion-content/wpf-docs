@@ -1,18 +1,19 @@
 ---
 layout: post
-title: Customization in WPF SfSmartTextEditor | Syncfusion®
-description: Customize the appearance and behavior of Syncfusion® WPF SfSmartTextEditor control with text styles, placeholders, and suggestion behavior customization options
+title: Customization in WPF Smart Text Editor | Syncfusion®
+description: Customize the appearance and behavior of Syncfusion® WPF Smart Text Editor control with text styles, placeholders, and suggestion behavior customization options
 platform: wpf
 control: SfSmartTextEditor
 documentation: ug
 ---
 
-# Customization in WPF SfSmartTextEditor
+# Customization in WPF Smart Text Editor
 
-This section explains how to change the AI-Powered Text Editor’s appearance and suggestion behavior. You can set text styles, placeholder options, and customize how suggestions are shown.
+This section explains how to change the WPF Smart Text Editor appearance and suggestion behavior. You can set text styles, placeholder options, and customize how suggestions are shown.
 
 ## Text customization
-Set or bind the smart text editor’s text using the `Text` property. You can use this to preloaded content or bind it to a field in your view model for data binding. The `Text` property supports two-way binding.
+
+Set or bind the text using the `Text` property. You can use this to preloaded content or bind it to a field in your view model for data binding. The `Text` property supports two-way binding.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
@@ -101,6 +102,7 @@ Customize the color of the suggestion text using the `SuggestionInlineStyle` pro
 ![Suggestion Text Color in WPF Smart Text Editor.](images/customization/wpf-smarttexteditor-inline-textcolor.gif)
 
 ## Suggestion popup background
+
 Change the background color of the suggestion popup using the `SuggestionPopupStyle` property in Popup mode to align with your app's design.
 
 {% tabs %}
@@ -122,7 +124,8 @@ Change the background color of the suggestion popup using the `SuggestionPopupSt
 ![Customization in WPF Smart Text Editor.](images/customization/wpf-smarttexteditor-customization.gif)
 
 ## Maximum input length
-Set a limit on the number of characters the user can enter in the smart text editor using the `MaxLength` property. When the limit is reached, additional input is restricted.
+
+Set a limit on the number of characters the user can enter in the WPF Smart Text Editor using the `MaxLength` property. When the limit is reached, additional input is restricted.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}

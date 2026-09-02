@@ -64,7 +64,7 @@ We can change the hour selector template by using the [HourCellTemplate](https:/
 
 {% endhighlight %}
 
-![SfTimePicker with Hour cell template](Features_images/Features_img7.png)
+![WPF TimePicker with Hour cell template](Features_images/Features_img7.png)
 
 
 ## Change the MinuteCell Template
@@ -110,7 +110,7 @@ We can change the minute selector template by using the [MinuteCellTemplate](htt
 
 {% endhighlight %}
 
-![SfTimePicker with Minute cell template](Features_images/Features_img8.png)
+![WPF TimePicker with Minute cell template](Features_images/Features_img8.png)
 
 ## Change the MeridiemCell Template
 
@@ -155,7 +155,7 @@ We can change the meridiem selector template by using the [MeridiemCellTemplate]
 
 {% endhighlight %}
 			
-![SfTimePicker with Meridiem cell template](Features_images/Features_img9.png)
+![WPF TimePicker with Meridiem cell template](Features_images/Features_img9.png)
 
 ## Change size of cells
 

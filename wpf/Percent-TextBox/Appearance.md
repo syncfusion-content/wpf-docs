@@ -7,17 +7,17 @@ control: PercentTextBox
 documentation: ug
 ---
 
-# Appearance in WPF PercentTextBox
+# Appearance in WPF Percent TextBox
 
-This section deals with the appearance of `PercentTextBox` control and contains the following topics.
+This section deals with the appearance of `WPF Percent TextBox` control and contains the following topics.
 
 ## Setting the Foreground
 
-The [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the percent value of the control. The following are the foreground for `PercentTextBox` control.
+The [WPF Percent TextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the percent value of the control. The following are the foreground for `WPF Percent TextBox` control.
 
 ### Foreground for Positive Value
 
-You can change the color for positive percent values of `PercentTextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PositiveForeground) property; it will be applied when the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValue) is positive. The default color of `PositiveForeground` is `Black`.
+You can change the color for positive percent values of `WPF Percent TextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PositiveForeground) property; it will be applied when the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValue) is positive. The default color of `PositiveForeground` is `Black`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -40,7 +40,7 @@ percentTextBox.PositiveForeground = Brushes.Blue;
 
 ### Foreground for Negative Value
 
-You can change the color for negative percent values of `PercentTextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NegativeForeground) property; it will be applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyNegativeForeground) property is `true` and the `PercentValue` is negative. The default color of `NegativeForeground` is `Red`. The default value of `ApplyNegativeForeground` is `false`.
+You can change the color for negative percent values of `WPF Percent TextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NegativeForeground) property; it will be applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyNegativeForeground) property is `true` and the `PercentValue` is negative. The default color of `NegativeForeground` is `Red`. The default value of `ApplyNegativeForeground` is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -65,7 +65,7 @@ percentTextBox.NegativeForeground = Brushes.SpringGreen;
 
 ### Foreground for Zero Value
 
-You can change the color for zero percent values of `PercentTextBox` by setting the [ZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ZeroColor) property; it will be applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyZeroColor) property is `true` and the `PercentValue` is zero. The default color of `ZeroColor` is `Green`. The default value of `ApplyZeroColor` is `false`.
+You can change the color for zero percent values of `WPF Percent TextBox` by setting the [ZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ZeroColor) property; it will be applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyZeroColor) property is `true` and the `WPF Percent TextBox` is zero. The default color of `ZeroColor` is `Green`. The default value of `ApplyZeroColor` is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -90,7 +90,7 @@ percentTextBox.ZeroColor = Brushes.DarkGoldenrod;
 
 ## Setting the Background
 
-`PercentTextBox` allows different brushes to fill the control. The [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netframework-4.8) property can be used to modify the control background color. The default color of `Background` is `White`.
+`WPF Percent TextBox` allows different brushes to fill the control. The [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netframework-4.8) property can be used to modify the control background color. The default color of `Background` is `White`.
 
 > The C# sample below requires the `using System.Windows.Media;` namespace for `Brushes`.
 
@@ -115,7 +115,7 @@ percentTextBox.Background = Brushes.Cyan;
 
 ## Setting the Corner Radius
 
-Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `PercentTextBox`, use the [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of the `CornerRadius` property is 1.
+Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `WPF Percent TextBox`, use the [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of the `CornerRadius` property is 1.
 
 {% tabs %}
 
@@ -139,7 +139,7 @@ percentTextBox.CornerRadius = new CornerRadius(5);
 
 ## Apply Background for Selection
 
-`PercentTextBox` allows different brushes to highlight the selected text by setting the [SelectionBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionbrush?view=netframework-4.8) and [SelectionOpacity](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionopacity?view=netframework-4.8) properties. The `SelectionOpacity` property specifies the opacity of the `SelectionBrush`.
+`WPF Percent TextBox` allows different brushes to highlight the selected text by setting the [SelectionBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionbrush?view=netframework-4.8) and [SelectionOpacity](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionopacity?view=netframework-4.8) properties. The `SelectionOpacity` property specifies the opacity of the `SelectionBrush`.
 
 > The C# sample below requires the `using System.Windows.Media;` namespace for `Brushes`.
 
@@ -164,7 +164,7 @@ percentTextBox.SelectionOpacity = 0.5;
 
 ## Aligning the Value
 
-`PercentTextBox` allows you to display the value on the right, left, or center by setting the [TextAlignment](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock.textalignment?view=netframework-4.8) property to `Right`, `Left`, or `Center`. The default value of `TextAlignment` is `Left`.
+`WPF Percent TextBox` allows you to display the value on the right, left, or center by setting the [TextAlignment](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock.textalignment?view=netframework-4.8) property to `Right`, `Left`, or `Center`. The default value of `TextAlignment` is `Left`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -186,7 +186,7 @@ percentTextBox.TextAlignment = TextAlignment.Center;
 
 ## Setting ToolTip
 
-`PercentTextBox` provides support for ToolTip to display certain information when the mouse hovers on the `PercentTextBox`. You can customize the tooltip information by setting the [ToolTip](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.tooltip?view=netframework-4.8) property.
+`WPF Percent TextBox` provides support for ToolTip to display certain information when the mouse hovers on the control. You can customize the tooltip information by setting the [ToolTip](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.tooltip?view=netframework-4.8) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -208,7 +208,7 @@ percentTextBox.ToolTip = "Enter Percentage value";
 
 ## Theme
 
-PercentTextBox supports various built-in themes. Refer to the below links to apply themes for the PercentTextBox,
+The WPF Percent TextBox supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

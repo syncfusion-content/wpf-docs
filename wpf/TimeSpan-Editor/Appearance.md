@@ -40,7 +40,7 @@ timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 {% endhighlight %}
 {% endtabs %}
 
-![TimeSpanEdit with yellow background](Apperance_images/Background.png)
+![WPF TimeSpan Editor with yellow background](Apperance_images/Background.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/Appearance) in GitHub
 
@@ -71,7 +71,7 @@ timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 {% endhighlight %}
 {% endtabs %}
 
-![TimeSpanEdit with red foreground](Apperance_images/Foreground.png)
+![WPF TimeSpan Editor with red foreground](Apperance_images/Foreground.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/Appearance) in GitHub
 
@@ -101,7 +101,7 @@ timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 {% endhighlight %}
 {% endtabs %}
 
-![TimeSpanEdit with RightToLeft flow direction](Apperance_images/FlowDirection.png)
+![WPF TimeSpan Editor with RightToLeft flow direction](Apperance_images/FlowDirection.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/Appearance) in GitHub
 

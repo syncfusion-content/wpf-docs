@@ -9,7 +9,7 @@ documentation: ug
 
 # Annotations in WPF Radial Gauge
 
-SfCircularGauge supports annotations, which allow you to mark a specific area of interest in the circular gauge. You can place custom views as annotations. Text and images can also be added by using the `Annotations` property.
+WPF Radial Gauge supports annotations, which allow you to mark a specific area of interest in the circular gauge. You can place custom views as annotations. Text and images can also be added by using the `Annotations` property.
 
 ## Setting a view annotation
 
@@ -95,5 +95,5 @@ The following code is used to create the Annotations.
 
 {% endtabs %}
 
-![Annotations image for SfCircularGauge](Getting-Started_images/Annotations.png)
+![Annotations image for WPF Radial Gauge](Getting-Started_images/Annotations.png)
 

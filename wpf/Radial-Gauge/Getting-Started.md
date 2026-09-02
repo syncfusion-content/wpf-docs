@@ -487,16 +487,16 @@ You can find the complete getting started sample from this [`link`](https://git
 
 ## Theme
 
-SfCircularGauge supports various built-in themes. Refer to the below links to apply themes for the SfCircularGauge,
+WPF Radial Gauge supports various built-in themes. Refer to the below links to apply themes for the WPF Radial Gauge,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfCircularGauge](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF Radial Gauge](Getting-Started_images/Theme.png)
 
 ## See also
 
-[How to apply themes for SfCircularGauge](https://support.syncfusion.com/kb/article/2832/how-to-apply-themes-for-sfcirculargauge)
+[How to apply themes for WPF Radial Gauge](https://support.syncfusion.com/kb/article/2832/how-to-apply-themes-for-sfcirculargauge)
 
-[How to prepare car dashboard demo using SfCircularGauge](https://support.syncfusion.com/kb/article/2720/how-to-prepare-car-dashboard-demo-using-sfcirculargauge)
+[How to prepare car dashboard demo using WPF Radial Gauge](https://support.syncfusion.com/kb/article/2720/how-to-prepare-car-dashboard-demo-using-sfcirculargauge)

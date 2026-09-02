@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation in WPF Charts
 
-SfChart allows you to animate the chart series on loading and whenever the ItemsSource changes. Animation in a chart can be enabled by setting the EnableAnimation property to `true` and defining the corresponding animation speed with the AnimationDuration property.
+WPF Charts allows you to animate the chart series on loading and whenever the ItemsSource changes. Animation in a chart can be enabled by setting the EnableAnimation property to `true` and defining the corresponding animation speed with the AnimationDuration property.
 
 The following types of series support Animation.
 

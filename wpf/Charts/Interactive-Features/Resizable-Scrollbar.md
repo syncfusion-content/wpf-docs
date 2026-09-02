@@ -9,7 +9,7 @@ documentation: ug
 
 # Resizable Scrollbar in WPF Charts
 
-The resizable scrollbar is a type of scrollbar that can be resized within the track area by adjusting the scrolling thumbs. In the SfChart, a resizable scrollbar is used for zooming and panning across different chart segments.
+The resizable scrollbar is a type of scrollbar that can be resized within the track area by adjusting the scrolling thumbs. In the WPF Charts, a resizable scrollbar is used for zooming and panning across different chart segments.
 
 ## Adding ScrollBar to the Axis
 
@@ -40,7 +40,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ## Deferred Scrolling
 
-SfChart provides support to suspend the value updates for every thumb values. This can be done using [`DeferredScrolling`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_DeferredScrolling) property in chart axis.The following code snippet demonstrates the deferred scrolling.
+WPF Charts provides support to suspend the value updates for every thumb values. This can be done using [`DeferredScrolling`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_DeferredScrolling) property in chart axis.The following code snippet demonstrates the deferred scrolling.
 
 {% tabs %}
 
@@ -66,7 +66,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ## Resizing the scrollbar
 
-SfChart allows you to resize the scrollbar using [`EnableScrollBarResizing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_EnableScrollBarResizing) property to true. By default the EnableScrollBarResizing property is true. The following code example and image demonstrates scrollbar without resizing option.
+WPF Charts allows you to resize the scrollbar using [`EnableScrollBarResizing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_EnableScrollBarResizing) property to true. By default the EnableScrollBarResizing property is true. The following code example and image demonstrates scrollbar without resizing option.
 
 {% tabs %}
 

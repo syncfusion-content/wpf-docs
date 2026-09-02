@@ -7,9 +7,9 @@ control: TileViewControl
 documentation: ug
 ---
 
-# TileView Operations in WPF TileView
+# TileView Operations in WPF Tile View Control
 
-This section explains different UI customization and common features available in [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) control.
+This section explains different UI customization and common features available in [WPF Tile View Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 
 ## Populating items using TileViewItem
@@ -48,9 +48,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Populating items using binding
 
-You can populate items to the `TileView` control by setting the collection value to the `ItemsSource` property.
+You can populate items to the `WPF Tile View Control` by setting the collection value to the `ItemsSource` property.
 
-N> Please refer [Data Binding](https://help.syncfusion.com/wpf/tile-view/data-binding-support) page to know more details about binding support available in the `TileViewControl`.
+N> Please refer [Data Binding](https://help.syncfusion.com/wpf/tile-view/data-binding-support) page to know more details about binding support available in the `WPF Tile View Control`.
 
 ## Select a TileViewItem
 
@@ -125,7 +125,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Selected item changed notification
 
-The selected item changed in `TileViewControl` can be examined using `SelectionChanged` event. The `SelectionChanged` event contains the old and newly selected item in the `RemovedItems` and `AddedItems` properties.
+The selected item changed in `WPF Tile View Control` can be examined using `SelectionChanged` event. The `SelectionChanged` event contains the old and newly selected item in the `RemovedItems` and `AddedItems` properties.
 
 {% tabs %}
 {% highlight XAML %}

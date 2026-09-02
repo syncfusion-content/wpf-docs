@@ -316,7 +316,7 @@ The following screenshot illustrates Chart with customized Series Labels.
 
 
 
-## Chart-Series in WPF Chart (Classic) Types
+## Chart-Series in WPF Classic Chart Types
 
 Chart control supports 34 types of charts, among which 12 types are supported in 3D mode as well. The Type property is used to specify the Chart Type.
 
@@ -361,7 +361,7 @@ Chart1.Areas[0].Series.Add(series);
 
 
 
-## Chart-Series in WPF Chart (Classic) Look and Feel
+## Chart-Series in WPF Classic Chart Look and Feel
 
 Chart for WPF provides various options to customize the look and feel of the Chart Series. The following are some of the properties that are used for this purpose.
 
@@ -440,7 +440,7 @@ Chart1.Areas[0].Series.Add(series);
 
 
 
-## Chart-Series in WPF Chart (Classic) Template
+## Chart-Series in WPF Classic Chart Template
 
 Chart for WPF enables you to apply custom Data Templates to the Chart Series. By applying the custom data templates, the Chart Series Segments can be altered. The following code example illustrates how to create a sample data template to draw a Line Chart.
 
@@ -502,7 +502,7 @@ N> Data templates cannot be customized for a single segment in a series. As eac
 
 
 
-## Chart-Series in WPF Chart (Classic) Adornments
+## Chart-Series in WPF Classic Chart Adornments
 
 Chart Series Adornments are used to display values in a Chart Segment related to it. Values from data points (x value, y value) or other properties from a data source can be displayed. ChartAdornmentsInfo class is used to display Chart Series Adornments. ChartAdornmentsInfo class provides the following properties to customize the chart series adornments.
 
@@ -1056,7 +1056,7 @@ N> To show the segment lines, the SegmentShowLine property must be set to true a
  
 
 
-## Chart-Series in WPF Chart (Classic) Empty Points
+## Chart-Series in WPF Classic Chart Empty Points
 
 Essential Chart provides support for Empty Points. The data collection that is passed to the chart can have NaN or infinite values that will be considered as Empty Points. You can also hide the empty points by setting the ShowEmptyPoints property to _false_.
 
