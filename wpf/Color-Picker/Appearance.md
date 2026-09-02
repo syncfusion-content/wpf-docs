@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WPF ColorPicker
 
-This section explains the UI customization, styling, and theming options available for the [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) control.
+This section explains the UI customization, styling, and theming options available for the [WPF ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) control.
 
 ## Change Header Template
 
-You can customize the header of the `ColorPicker` by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_HeaderTemplate) property.
+You can customize the header of the `WPF ColorPicker` by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_HeaderTemplate) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,7 +45,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-colorpicker
 
 ## Change flow direction
 
-You can change the flow direction of the `ColorPicker` layout to right-to-left by setting the `FlowDirection` property to `RightToLeft`. The default value of `FlowDirection` is `LeftToRight`.
+You can change the flow direction of the `WPF ColorPicker` layout to right-to-left by setting the `FlowDirection` property to `RightToLeft`. The default value of `FlowDirection` is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -89,7 +89,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-colorpicker
 
 ## Theme
 
-ColorPicker supports various built-in themes. Refer to the below links to apply themes for the ColorPicker,
+The WPF ColorPicker supports various built-in themes. Refer to the links below to apply themes,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

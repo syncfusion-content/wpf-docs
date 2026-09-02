@@ -13,7 +13,7 @@ This section gives a brief note on how to create gradient color, modify their co
 
 ## What is a gradient color?
 
-A gradient color paints an area with multiple colors that blend along an axis. [ColorPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) includes gradient tools that return a brush of type `LinearGradientBrush` or `RadialGradientBrush`. Offsets can be added or removed dynamically, and their positions can be changed to produce different color combinations.
+A gradient color paints an area with multiple colors that blend along an axis. [WPF ColorPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) includes gradient tools that return a brush of type `LinearGradientBrush` or `RadialGradientBrush`. Offsets can be added or removed dynamically, and their positions can be changed to produce different color combinations.
 
 ![ColorPicker with Gradient Mode](ColorPicker-with-Gradient-Support_images/ColorPicker_Gradient_Mode.png)
 
@@ -39,7 +39,7 @@ You can rearrange the color combination of the gradient by adjusting the gradien
 
 ### Change GradientStops Colors
 
-You can change the colors of a created gradient by changing the color of its gradient stops. The color of a gradient stop is changed by selecting that particular gradient stop and choosing a new color from the color picker.
+You can change the colors of a created gradient by changing the color of its gradient stops. The color of a gradient stop is changed by selecting that particular gradient stop and choosing a new color from the WPF ColorPicker.
 
 ![ColorPicker with changing the gradient colors](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_Changing.gif)
 
@@ -238,13 +238,13 @@ colorPicker.IsCenterVisible = false;
 
 ## Reverse the Gradient Colors
 
-[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) includes a reverse button that flips the gradient — vertically for a linear gradient, and inside-out for a radial gradient.
+[WPF ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) includes a reverse button that flips the gradient — vertically for a linear gradient, and inside-out for a radial gradient.
 
 ![ColorPicker with gradient color reverse button](ColorPicker-with-Gradient-Support_images/ColorPicker_Reverse_Button_change.png)
 
 ## Show selected gradient color name
 
-By default, the selected gradient mode name is displayed in `ColorPicker`. To display the selected gradient color name instead, set the [GradientBrushDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_GradientBrushDisplayMode) property to `Extended`. The default value of `GradientBrushDisplayMode` is `Default`.
+By default, the selected gradient mode name is displayed in the `WPF ColorPicker`. To display the selected gradient color name instead, set the [GradientBrushDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_GradientBrushDisplayMode) property to `Extended`. The default value of `GradientBrushDisplayMode` is `Default`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -284,7 +284,7 @@ colorPicker.GradientPropertyEditorMode = GradientPropertyEditorMode.Popup;
 
 ## Switch between Solid, Linear, and Gradient brush mode
 
-You can switch the brush mode from solid to linear or radial gradient (and vice versa) either at runtime or programmatically. By default, the `Solid` brush mode is enabled. To enable the `Gradient` brush mode, set the [BrushMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_BrushMode) property to `Gradient`. You can also switch the brush mode by clicking the corresponding Solid, Linear, or Gradient button placed in the bottom-right corner of the `ColorPicker`. To hide these buttons, set [EnableSolidToGradientSwitch](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_EnableSolidToGradientSwitch) to `false`. The default value of `EnableSolidToGradientSwitch` is `true`.
+You can switch the brush mode from solid to linear or radial gradient (and vice versa) either at runtime or programmatically. By default, the `Solid` brush mode is enabled. To enable the `Gradient` brush mode, set the [BrushMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_BrushMode) property to `Gradient`. You can also switch the brush mode by clicking the corresponding Solid, Linear, or Gradient button placed in the bottom-right corner of the `WPF ColorPicker`. To hide these buttons, set [EnableSolidToGradientSwitch](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_EnableSolidToGradientSwitch) to `false`. The default value of `EnableSolidToGradientSwitch` is `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -303,11 +303,11 @@ colorPicker.BrushMode = BrushModes.Gradient;
 
 ![ColorPicker is in Gradient brush mode](ColorPicker-with-Gradient-Support_images/Brush_mode.png)
 
-Here, The `ColorPicker` is in Gradient brush mode.
+Here, The `WPF ColorPicker` is in Gradient brush mode.
 
 ### Switch between Solid, Linear and Gradient brush mode
 
-We can change the brush mode directly by clicking on the corresponding Solid, Linear or Gradient mode buttons which are placed in the bottom right corner of the `ColorPicker`.
+We can change the brush mode directly by clicking on the corresponding Solid, Linear or Gradient mode buttons which are placed in the bottom right corner of the `WPF ColorPicker`.
 
 ![ColorPicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/Brush_mode.png)
 
@@ -333,7 +333,7 @@ colorPicker.EnableSolidToGradientSwitch = false;
 
 ## Gradient color changed notification
 
-The selected gradient color in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be observed using the [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_SelectedBrushChanged) event.
+The selected gradient color in the [WPF ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be observed using the [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_SelectedBrushChanged) event.
 
 {% tabs %}
 {% highlight xaml %}
