@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Response Toolbar in WPF SfAIAssistView | Syncfusion®
-description: The response toolbar in WPF SfAIAssistView offers quick actions through toolbar items, enabling efficient interaction with AI-generated chat responses.
+title: Response Toolbar in WPF AI AssistView | Syncfusion®
+description: The response toolbar in WPF AI AssistView offers quick actions through toolbar items, enabling efficient interaction with AI-generated chat responses.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Response Toolbar in WPF SfAIAssistView
+# Response Toolbar in WPF AI AssistView
 
 The [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature, which provides built-in options such as Copy, Regenerate, Like, and Dislike for each chat response. These items provide quick actions to enhance user interactions. In addition to the built-in options, users can personalize the Response Toolbar by adding their own custom toolbar items to suit specific application needs.
 
 ## ResponseToolbarItem
 
-The **ResponseToolbarItem** class is used to define and add items in the response toolbar of chat responses for SfAIAssistView. The following properties are available in this class:
+The **ResponseToolbarItem** class is used to define and add items in the response toolbar of chat responses for AI AssistView. The following properties are available in this class:
 
 - **Index**: Specifies the internal order or position of the toolbar item.
 - **IsEnabled**: Specifies whether the toolbar item is enabled (interactive) or disabled (non-interactive).
@@ -32,7 +32,7 @@ The **ResponseToolbarItem** class is used to define and add items in the respons
 {% endhighlight %} 
 {% endtabs %}
 
-![Response toolbar feature in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_responsetoolbar.png)
+![Response toolbar feature in WPF AI AssistView control](aiassistview_images/wpf_aiassistview_responsetoolbar.png)
 
 
 ## Response toolbar visibility
@@ -55,12 +55,12 @@ aiAssistView.IsResponseToolbarVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Response toolbar visibility in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_isresponsetoolbarvisible.png)
+![Response toolbar visibility in WPF AI AssistView control](aiassistview_images/wpf_aiassistview_isresponsetoolbarvisible.png)
 
 
 ## Customization of Response toolbar item using ItemTemplate
 
-The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even UI elements such as Path, Image, or TextBlock within the toolbar.
+The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even UI elements such as Path, Image, or TextBlock within the toolbar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -91,7 +91,7 @@ The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/w
 {% endhighlight %} 
 {% endtabs %}
 
-![Customization of response toolbar item using ItemTemplate feature in WPF SfAIAssistView control](aiassistview_images/wpf_aiassistview_customizedresponsetoolbartemplate.png)
+![Customization of response toolbar item using ItemTemplate feature in WPF AI AssistView control](aiassistview_images/wpf_aiassistview_customizedresponsetoolbartemplate.png)
 
 ## Item clicked event 
 
