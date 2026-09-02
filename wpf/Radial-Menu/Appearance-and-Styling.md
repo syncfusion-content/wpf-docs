@@ -123,7 +123,7 @@ The RimHoverBrush property can be used to fill the expander rim while the pointe
 
 ## IsExpanderVisible
 
-Expander arrow in the OuterRim of `WPF Radial Menu` visibility can be changed by `IsExpanderVisible` property of `SfRadialMenuItem`. By default, `IsExpanderVisible` value is True.
+Expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed by `IsExpanderVisible` property of `SfRadialMenuItem`. By default, `IsExpanderVisible` value is True.
 
 {%highlight xaml%}
 

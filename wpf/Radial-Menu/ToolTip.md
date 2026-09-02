@@ -13,13 +13,13 @@ Tooltip support available for the WPF Radial Menu items. This will show when mou
 
 ToolTip Placement
 
-Position of the tooltip displayed relative to the WPF Radial Menu can be customized using ToolTipPlacement property. This have the following options.
+Position of the tooltip displayed relative to the WPF Radial Menu can be customized using ToolTipPlacement property. The following tooltip positions are supported:
 
-* None: Tooltip is hidden from the display.
-* Left: Tooltip is displayed left of the WPF Radial Menu. 
-* Top: Tooltip is displayed on top of the WPF Radial Menu.
-* Right: Tooltip is displayed right of the WPF Radial Menu.
-* Bottom: Tooltip is displayed at the bottom of the WPF Radial Menu.
+* None: Hides the tooltip.
+* Left: Displays the tooltip to the left of the WPF Radial Menu.
+* Top: Displays the tooltip above the control.
+* Right: Displays the tooltip to the right of the control.
+* Bottom: Displays the tooltip below the control.
 
 {%highlight xaml%}
 

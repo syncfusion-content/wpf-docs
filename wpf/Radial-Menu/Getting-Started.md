@@ -70,7 +70,7 @@ radialMenu.Items.Add(paste);
 
 ## Theme
 
-The WPF Radial Menu supports various built-in themes. Refer to the below links to apply themes for the WPF Radial Menu,
+The WPF Radial Menu supports various built-in themes. Refer to the following links to apply them.
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
