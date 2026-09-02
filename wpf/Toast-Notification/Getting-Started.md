@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Toast Control
 
-This section explains how to get started with [WPF Toast Control](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) in a WPF application by adding the required assemblies, showing a basic notification, configuring application startup for native support, defining content, and using the supported modes.
+This section explains how to get started with [WPF Toast Control](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SfToastNotification.html) in a WPF application by adding the required assemblies, showing a basic notification, configuring application startup for native notification support, defining notification content, and using the supported display modes.
 
 ## Assembly Deployment
 
