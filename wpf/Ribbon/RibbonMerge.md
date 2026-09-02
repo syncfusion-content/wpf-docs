@@ -11,15 +11,15 @@ documentation: ug
 
 The [WPF Ribbon Control](https://help.syncfusion.com/wpf/ribbon/gettingstarted) allows merging the [RibbonTab](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) and [RibbonBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) of two different WPF Ribbon Controls in MDI applications. [DocumentContainer.MDIParentRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIParentRibbon.html), [RibbonTab.MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) and [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeOrder.html) properties helps to perform menu merging.
 
-In WPF, you can create MDI application using [DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) control. Also, [WPF Ribbon Control](https://help.syncfusion.com/wpf/ribbon/gettingstarted) allows to merge [RibbonTab](https://help.syncfusion.com/wpf/ribbon/gettingstarted#add-ribbontab) and [RibbonBar](https://help.syncfusion.com/wpf/ribbon/gettingstarted#add-ribbonbar) of active child window to the [WPF Ribbon Control](https://help.syncfusion.com/wpf/ribbon/gettingstarted) in parent window. 
+In WPF, you can create MDI application using [WPF Document Container](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) control. Also, [WPF Ribbon Control](https://help.syncfusion.com/wpf/ribbon/gettingstarted) allows to merge [RibbonTab](https://help.syncfusion.com/wpf/ribbon/gettingstarted#add-ribbontab) and [RibbonBar](https://help.syncfusion.com/wpf/ribbon/gettingstarted#add-ribbonbar) of active child window to the [WPF Ribbon Control](https://help.syncfusion.com/wpf/ribbon/gettingstarted) in parent window. 
 
 ## Creating MDI window and enabling menu merging
 
-[DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) helps to create MDI window in WPF Application. The [DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) allows you to create MDI window and Tabbed MDI window layouts.
+The [WPF Document Container](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) helps to create MDI window in WPF Application. It allows you to create MDI window and Tabbed MDI window layouts.
 
 Follow the below steps to create simple sample to understand WPF Ribbon Control menu merging,
 
- 1. Creating main [RibbonWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonWindow.html) with [WPF Ribbon Control](https://help.syncfusion.com/wpf/ribbon/gettingstarted) and [DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started)
+ 1. Creating main [RibbonWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonWindow.html) with [WPF Ribbon Control](https://help.syncfusion.com/wpf/ribbon/gettingstarted) and [WPF Document Container](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started)
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -153,7 +153,7 @@ Child View 2
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
- 3. Now, add the both child view's into the [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) and set the the [DocumentContainer.MDIParentRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIParentRibbon.html) property of [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html).
+ 3. Now, add the both child view's into the [WPF Document Container](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) and set the the [DocumentContainer.MDIParentRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIParentRibbon.html) property.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -200,7 +200,7 @@ Now run the application and you can see an output like this.
 
 ![WPF Ribbon in MDI Windows](menu-merging-images/wpf-ribbon-in-mdi-windows.PNG)
 
- 4. Now the child view's has been added inside the [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html), and now lets see how to merge the child WPF Ribbon Control into the parent WPF Ribbon Control.
+ 4. Now the child view's has been added inside the [WPF Document Container](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html), and now lets see how to merge the child WPF Ribbon Control into the parent WPF Ribbon Control.
 
     The merging operation performed based on [DocumentContainer.Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html) (`MDI` and `TDI`) property. 
 
@@ -210,7 +210,7 @@ Now run the application and you can see an output like this.
 
 * [TDI](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainerMode.html) - The child view's will be loaded in tabs. In this mode, the child view's WPF Ribbon Control of the active tab will be merged to the MDI parent WPF Ribbon Control.
 
-In the below example the [DocumentContainer.Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html) property for [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) is set to [TDI](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainerMode.html).
+In the below example the [DocumentContainer.Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html) property for [WPF Document Container](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) is set to [TDI](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainerMode.html).
 
 {% capture codesnippet5 %}
 
