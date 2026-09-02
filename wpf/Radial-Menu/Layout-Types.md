@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Layout Types in WPF Radial Menu | Syncfusion®
 description: Configure default and custom radial layouts using visible segment counts, segment indexes, and circular panel arrangements.

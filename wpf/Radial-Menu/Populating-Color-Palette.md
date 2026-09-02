@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Color Palette in WPF Radial Menu | Syncfusion®
 description: Create interactive color palettes using radial color items to display and select colors within the WPF Radial Menu.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Icon Customization in WPF Radial Menu | Syncfusion®
 description: Customize the icon displayed in the center of the WPF Radial Menu to provide a distinctive navigation experience.

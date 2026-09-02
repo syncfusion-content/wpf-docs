@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance and Styling in WPF Radial Menu | Syncfusion®
 description: Customize the appearance of the WPF Radial Menu using radius settings, rim styling, navigation buttons, and item background customization.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: ToolTips in WPF Radial Menu | Syncfusion®
 description: Display tooltips for WPF Radial Menu items and customize tooltip placement around the WPF Radial Menu control.
