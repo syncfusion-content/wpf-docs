@@ -7,15 +7,15 @@ control: SfTreeView
 documentation: ug
 ---
 
-# ContextMenu in WPF TreeView (SfTreeView)
+# ContextMenu in WPF TreeView
 
-This section explains how to show a ContextMenu and how to use built-in and custom commands in the WPF TreeView.
+This section explains how to show a context menu and use built-in and custom commands in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control. The WPF TreeView is implemented through the `SfTreeView` class.
 
 ## ContextMenu for Nodes
 
 The WPF TreeView provides a fully customizable context menu to expose functionality on the user interface. You can create a context menu for nodes in an efficient manner.
 
-You can set context menu for the nodes by using [SfTreeView.ItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextMenu) property.
+You can set a context menu for nodes by using the [SfTreeView.ItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextMenu) property.
 
 ## Built-in Commands
 

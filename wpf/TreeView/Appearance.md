@@ -7,9 +7,9 @@ control: SfTreeView
 documentation: ug
 ---
 
-# Appearance in WPF TreeView (SfTreeView)
+# Appearance in WPF TreeView
 
-The WPF TreeView allows customizing the appearance of the underlying data and provides different functionalities to the end-user.
+This section explains the appearance customization options available in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control. The WPF TreeView is implemented through the `SfTreeView` class.
 
 ## ItemTemplate
 

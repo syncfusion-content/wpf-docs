@@ -7,13 +7,13 @@ control: SfTreeView
 documentation: ug
 ---
 
-# CRUD Operations in WPF TreeView (SfTreeView)
+# CRUD Operations in WPF TreeView
 
-The WPF TreeView listens to and responds to CRUD operations such as add, delete, and data update (property change) at runtime. It also supports [editing](https://help.syncfusion.com/wpf/treeview/editing) and deleting by pressing the <kbd>Delete</kbd> key.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control listens to and responds to CRUD operations such as adding, deleting, and updating data at runtime. It also supports [editing](https://help.syncfusion.com/wpf/treeview/editing) and deleting by pressing the <kbd>Delete</kbd> key. The WPF TreeView is implemented through the `SfTreeView` class.
 
 ## Add nodes
 
-The WPF TreeView allows users to add a new node directly by adding a new data object to the underlying collection in bound mode, and by adding a [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) to the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection in unbound mode.
+The WPF TreeView allows users to add a new node by adding a data object to the underlying collection in bound mode or a [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) to the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection in unbound mode.
 
 {% tabs %}
 {% highlight c# %}

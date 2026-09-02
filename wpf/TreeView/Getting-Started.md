@@ -7,9 +7,9 @@ control: SfTreeView
 documentation: ug
 ---
 
-# Getting Started with WPF TreeView (SfTreeView)
+# Getting Started with WPF TreeView
 
-This section provides a quick overview for getting started with the `TreeView` for WPF. Walk through the entire process of creating a real-world example of this control.
+This section explains how to get started with the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control. The WPF TreeView is implemented through the `SfTreeView` class.
 
 ## Assembly Deployment
 
@@ -29,11 +29,11 @@ Follow the steps below to create a new WPF application and add the WPF TreeView 
 
 ### Creating the project
 
-Create a new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) with data objects.
+Create a new WPF project in Visual Studio to display the [WPF TreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) control with data objects.
 
 ### Add WPF TreeView to Project
 
-The WPF TreeView (SfTreeView) control can be added to a project in the following ways.
+The WPF TreeView control can be added to a project in the following ways.
 
 #### Adding WPF TreeView by designer
 

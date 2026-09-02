@@ -7,9 +7,9 @@ control: SfTreeView
 documentation: ug
 ---
 
-# Item Height Customization in WPF TreeView (SfTreeView)
+# Item Height Customization in WPF TreeView
 
-The WPF TreeView provides various options to customize the height of items. Walk through the following sections to achieve this customization.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control provides various options to customize the height of items. The WPF TreeView is implemented through the `SfTreeView` class.
 
 ## Customize Item Height
 
@@ -25,7 +25,7 @@ sfTreeView.ItemHeight = 30;
 {% endtabs %}
 
 ## Customize Item height using `QueryNodeSize` event
- The WPF TreeView allows customizing the height of the items using [QueryNodeSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event. This event is raised whenever the item comes into view and triggered with [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html).
+You can customize the height of items using the [QueryNodeSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event. This event is raised whenever an item comes into view and is triggered with [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html).
 
 The `SfTreeView.QueryNodeSize` event provides the following arguments:
  

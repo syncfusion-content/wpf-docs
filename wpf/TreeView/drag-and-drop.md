@@ -7,9 +7,9 @@ control: SfTreeView
 documentation: ug
 ---
 
-# Drag and drop in WPF TreeView (SfTreeView)
+# Drag and drop in WPF TreeView
 
-The WPF TreeView allows dragging and dropping items within the control by setting the [AllowDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDragging) property to `true`. It also supports dragging and dropping items between the TreeView and other controls, such as `ListView` and `SfDataGrid`.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control supports dragging and dropping items within the control by setting the [AllowDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDragging) property to `true`. It also supports dragging and dropping items between the TreeView and other controls, such as `ListView` and `SfDataGrid`. The WPF TreeView is implemented through the `SfTreeView` class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,12 +30,12 @@ While dropping, the dragged items can be added above or below to the target item
 
 ## Dragging multiple items
 
-SfTreeView allows dragging multiple selected items. To enable multiple selection, set the [SfTreeView.SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) to `Multiple` or `Extended`.
+The control allows dragging multiple selected items. To enable multiple selection, set the [SfTreeView.SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) property to `Multiple` or `Extended`.
 
 ![WPF TreeView Drag Multiple Items](DragDrop_images/wpf-treeview-drag-multiple-items.png)
 ## Drag and drop events
 
-SfTreeView triggers the following events when drag and drop:
+The control triggers the following events during drag and drop:
 
 ### ItemDragStarting event
 

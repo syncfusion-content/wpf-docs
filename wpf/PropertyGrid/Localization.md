@@ -9,9 +9,9 @@ documentation: ug
 
 # Localization in WPF PropertyGrid
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) by adding resource file. Application culture can be changed by setting `CurrentUICulture` after `InitializeComponent` method. 
+Localization is the process of translating the application resources into different languages for specific cultures. You can localize the [WPF PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) by adding a resource file. The application culture can be changed by setting `CurrentUICulture` after the `InitializeComponent` method. 
 
-Below application culture changed to `French`.
+In the below example, the application culture is changed to `French`.
 
 {% tabs %}
 {% highlight C# %}
@@ -27,7 +27,7 @@ public MainWindow()
 
 To localize the `PropertyGrid` based on `CurrentUICulture` using resource files, follow the below steps. 
 
-**Step 1:** Create new folder and named as `Resources` in your application. 
+**Step 1:** Create a new folder named `Resources` in your application. 
 
 **Step 2:** Right-click on the `Resources` folder, select `Add` and then `NewItem`.
 
