@@ -115,9 +115,9 @@ The token can be customized by overriding the default style targeting the `Token
 
 ![Token_Customization](Single_and_multiple_selection_images/Token_Customization.png)
 
-### Customize token content using TokenContentTemplate
+### Customizing Token Content Using TokenItemTemplate
 
-The `TokenContentTemplate` property allows you to customize the content displayed within a token when the `MultiSelectMode` is set to Token. By defining a custom DataTemplate, you can display additional information, images, or custom formatted content for each selected item.
+The `TokenItemTemplate` property allows you to customize the content displayed within a token when the `MultiSelectMode` is set to Token. This property accepts a DataTemplate and enables rendering custom content such as images, icons, and formatted text instead of the default token text representation.
 
 The following example shows how to display the employee name and email address in a token.
 
@@ -133,27 +133,63 @@ The following example shows how to display the employee name and email address i
                       TokensWrapMode="Wrap"
                       EnableAutoSize="True"
                       AutoCompleteSource="{Binding Employees}">
-    <editors:SfTextBoxExt.TokenContentTemplate>
+    <editors:SfTextBoxExt.TokenItemTemplate>
         <DataTemplate>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Name}"
-                           FontWeight="SemiBold"/>
-                <TextBlock Text="{Binding Email}" Margin="5,0,0,0"
-                           Foreground="Gray"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Image Width="20"
+                       Height="20"
+                       Source="{Binding Image}" />
+                <StackPanel Orientation="Vertical" Margin="5,0,0,0">
+                    <TextBlock VerticalAlignment="Center"
+                               Text="{Binding Name}" />
+                    <TextBlock VerticalAlignment="Center"
+                               Text="{Binding Email}" />
+                </StackPanel>
             </StackPanel>
         </DataTemplate>
-    </editors:SfTextBoxExt.TokenContentTemplate>
+    </editors:SfTextBoxExt.TokenItemTemplate>
 </editors:SfTextBoxExt>                    
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Customize Token Content Using TokenContentTemplate](Single_and_multiple_selection_images/TokenContentTemplate_Customizaation.png)
+![Customize Token Content Using TokenItemTemplate](Single_and_multiple_selection_images/TokenItemTemplate_Customization.png)
+
+### Customizing Token Appearance Using TokenItemContainerStyle
+
+The `TokenItemContainerStyle` property allows you to customize the appearance of generated token items without overriding the default TokenItem control template.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<editors:SfTextBoxExt x:Name="textBoxExt"
+                      Width="250" 
+                      Height="30"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      TokensWrapMode="Wrap"
+                      EnableAutoSize="True"
+                      AutoCompleteSource="{Binding Employees}">
+    <editors:SfTextBoxExt.TokenItemContainerStyle>
+        <Style TargetType="editors:TokenItem">
+                <Setter Property="Background" Value="LightCoral"/>
+                <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </editors:SfTextBoxExt.TokenItemContainerStyle>
+</editors:SfTextBoxExt>                 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customize Token Content Using TokenItemContainerStyle](Single_and_multiple_selection_images/TokenItemContainerStyle_Customization.png)
+
 
 ### Achieve a consistent appearance between suggestion items and tokens
 
-The `TokenContentTemplate` property can be used to customize token content so that it matches the appearance of the items displayed in the suggestion drop-down. This helps maintain a consistent visual representation between the selected tokens and the corresponding suggestion items.
+The `TokenItemTemplate` property can be used to customize token content so that it matches the appearance of the items displayed in the suggestion drop-down. This helps maintain a consistent visual representation between the selected tokens and the corresponding suggestion items.
 
 {% tabs %}
 
@@ -179,7 +215,7 @@ The `TokenContentTemplate` property can be used to customize token content so th
                       EnableAutoSize="True"
                       AutoCompleteSource="{Binding Employees}"
                       AutoCompleteItemTemplate="{StaticResource EmployeeTemplate}"
-                      TokenContentTemplate="{StaticResource EmployeeTemplate}" />
+                      TokenItemTemplate="{StaticResource EmployeeTemplate}" />
 </Grid>
 
 {% endhighlight %}
@@ -188,9 +224,9 @@ The `TokenContentTemplate` property can be used to customize token content so th
 
 ![Match Suggestion Item and Token Appearance](Single_and_multiple_selection_images\TokenItem-SuggestionItem_Appearance.png.png)
 
-N> The `TokenContentTemplate` property is applicable only when `MultiSelectMode` is set to `Token`.
+N> The `TokenItemTemplate` property is applicable only when `MultiSelectMode` is set to `Token`.
 
-N> When displaying images using controls defined inside the `TokenContentTemplate`, do not set the `ImageMemberPath` property simultaneously. Use either the TokenContentTemplate or the ImageMemberPath property to display images in tokens.
+N> When displaying images using controls defined inside the `TokenItemTemplate`, do not set the `ImageMemberPath` property simultaneously. Use either the TokenItemTemplate or the ImageMemberPath property to display images in tokens.
 
 ### Enable autosize in token mode 
 
