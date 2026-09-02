@@ -9,7 +9,7 @@ documentation: ug
 
 # Advanced Features in WPF Docking Control
 
-## Setting Visual Styles for Document Container
+## Setting Visual Styles for WPF Document Container
 
 Visual styles are available for the dockable windows, which give the windows a rich and professional look and feel. The visual style for the WPF Docking Control is set using the VisualStyle property. The following are some of the visual styles that can be applied to the WPF Docking Control.
 
@@ -119,7 +119,7 @@ WPF Docking Control with “Transparent” Visual Style
 
 ## Hosting a Client Control
 
-Our WPF Docking Control is completely integrated with MDI / TDI children elements. There are some situations wherein you need to disintegrate the MDI / TDI children from the WPF Docking Control. In such a case, you need to make use of the UseDocumentContainer property. This property gets or sets the Boolean value indicating whether to use the Document Container or not within the WPF Docking Control. 
+Our WPF Docking Control is completely integrated with MDI / TDI children elements. There are some situations wherein you need to disintegrate the MDI / TDI children from the WPF Docking Control. In such a case, you need to make use of the UseDocumentContainer property. This property gets or sets the Boolean value indicating whether to use the WPF Document Container or not within the WPF Docking Control. 
 
 When this property is set to False, the MDI / TDI children will be disintegrated from the WPF Docking Control.
 
@@ -165,7 +165,7 @@ UseDocumentContainer = "False"
 {:.caption}
 
 
-In the above image, the Document Container is removed from the WPF Docking Control. When the TDI or MDI child elements are removed, no client area is available for displaying other content. To define a client area, use a UI element called `Client Control` and place the required content within it. The content is then displayed in the client area of the WPF Docking control.
+In the above image, the WPF Document Container is removed from the WPF Docking Control. When the TDI or MDI child elements are removed, no client area is available for displaying other content. To define a client area, use a UI element called `Client Control` and place the required content within it. The content is then displayed in the client area of the WPF Docking control.
 
 The below code snippet creates a client control for the WPF Docking Control.
 

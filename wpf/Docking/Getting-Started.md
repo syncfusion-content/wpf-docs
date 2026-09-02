@@ -192,7 +192,7 @@ The value of State property can be customized with below,
  * `AutoHidden` : Auto hides the assigned child window.
  * `Dock` : Docks the assigned child window in WPF Docking Control.
  * `Float` : Allows child window to float the assigned child window.
- * `Document` : Docks the assigned child window as tab item in DocumentContainer.
+ * `Document` : Docks the assigned child window as tab item in WPF Document Container.
 
  N> To set `Document` state for any child window [UseDocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseDocumentContainer) property of WPF Docking Control must be enabled.
 

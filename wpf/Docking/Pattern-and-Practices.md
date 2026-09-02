@@ -938,7 +938,7 @@ public class DockingManagerRegionAdapter : RegionAdapterBase<DockingManager>
 
 {% endtabs %}
 
-**Step 2:** Also, we can activate and deactivate views by creating a behavior class and the class should inherit from `RegionBehavior`, `IHostAwareRegionBehavior` classes. In below code example, shown how to activate and deactivate the document views using `ActiveDocumentChanged` event of `DocumentContainer`.
+**Step 2:** Also, we can activate and deactivate views by creating a behavior class and the class should inherit from `RegionBehavior`, `IHostAwareRegionBehavior` classes. In below code example, shown how to activate and deactivate the document views using `ActiveDocumentChanged` event of `WPF Document Container`.
 
 {% tabs %}
 
