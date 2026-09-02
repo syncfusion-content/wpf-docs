@@ -11,13 +11,13 @@ documentation: ug
 This section explains how to implement a similar UI as Visual Studio by using the [WPF Docking Control](https://www.syncfusion.com/wpf-controls/docking) in your project. 
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#dockingmanager) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#dockingmanager) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) in any application.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 [How to install nuget packages](https://help.syncfusion.com/wpf/installation/install-nuget-packages)
 
 ## Creating Application with WPF Docking Control
-In this walkthrough, you will create a WPF application with [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control.
+In this walkthrough, you will create a WPF application with [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html).
 
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
@@ -25,15 +25,15 @@ In this walkthrough, you will create a WPF application with [WPF Docking Control
 4. [Adding control manually in C#](#Adding-control-manually-in-C#)
 
 ## Creating project 
-Below section provides detailed information to create new project in Visual Studio with [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control.
+Below section provides detailed information to create new project in Visual Studio with [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html).
 
 ## Adding control via designer
-The [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
+The [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
 
 ![WPF Docking Add via Designer](GettingStarted_images/wpf-docking-add-via-designer.png)
 
 ## Adding control manually in XAML
-In order to add [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control manually in XAML, do the below steps,
+In order to add [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) manually in XAML, do the below steps,
 
 1. Add the below required assembly references to the project,
 
@@ -76,7 +76,7 @@ In order to add [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfus
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
-In order to add [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control manually in C#, do the below steps,
+In order to add [WPF Docking Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
 
