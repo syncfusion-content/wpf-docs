@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing in WPF TreeView
 
-The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control supports editing. Editing can be enabled or disabled by using the [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode on a node by pressing the <kbd>F2</kbd> key, or by setting the [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTrigger) property to enable single-click or double-click editing. The edit changes for a node are committed only when the user moves to another node or presses the <kbd>Enter</kbd> key. The WPF TreeView is implemented through the `SfTreeView` class.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control supports editing. Editing can be enabled or disabled by using the [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode on a node by pressing the <kbd>F2</kbd> key, or by setting the [EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTrigger) property to enable single-click or double-click editing. The edit changes for a node are committed only when the user moves to another node or presses the <kbd>Enter</kbd> key.
 
 The `EditTrigger` property accepts the following values:
 

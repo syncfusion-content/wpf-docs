@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Scrolling in WPF TreeView
-The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control provides various options for programmatic scrolling. The WPF TreeView is implemented through the `SfTreeView` class.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control provides various options for programmatic scrolling.
 
 ## Bring Into View
 

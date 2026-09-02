@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in WPF TreeView
 
-This section explains how to perform selection and related operations in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control. The WPF TreeView is implemented through the `SfTreeView` class.
+This section explains how to perform selection and related operations in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control.
 
 ## UI Selection
 The WPF TreeView allows selecting items either programmatically or by touch interactions by setting the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) property to a value other than `None`. The control supports the following selection modes:

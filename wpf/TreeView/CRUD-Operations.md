@@ -9,7 +9,7 @@ documentation: ug
 
 # CRUD Operations in WPF TreeView
 
-The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control listens to and responds to CRUD operations such as adding, deleting, and updating data at runtime. It also supports [editing](https://help.syncfusion.com/wpf/treeview/editing) and deleting by pressing the <kbd>Delete</kbd> key. The WPF TreeView is implemented through the `SfTreeView` class.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control listens to and responds to CRUD operations such as adding, deleting, and updating data at runtime. It also supports [editing](https://help.syncfusion.com/wpf/treeview/editing) and deleting by pressing the <kbd>Delete</kbd> key.
 
 ## Add nodes
 

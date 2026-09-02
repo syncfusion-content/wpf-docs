@@ -9,7 +9,7 @@ documentation: ug
 
 # MVVM in WPF TreeView
 
-This section explains how to work with the MVVM pattern in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control. The WPF TreeView is implemented through the `SfTreeView` class.
+This section explains how to work with the MVVM pattern in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control.
 
 ## Binding properties in MVVM pattern
 

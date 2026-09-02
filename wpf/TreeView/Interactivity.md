@@ -9,7 +9,7 @@ documentation: ug
 
 # Interactivity in WPF TreeView
 
-This section explains how to interact with the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control and its items. The WPF TreeView is implemented through the `SfTreeView` class.
+This section explains how to interact with the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control and its items.
 
 ## Interacting with WPF TreeView items
 

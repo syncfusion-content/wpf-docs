@@ -9,7 +9,7 @@ documentation: ug
 
 # Item Height Customization in WPF TreeView
 
-The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control provides various options to customize the height of items. The WPF TreeView is implemented through the `SfTreeView` class.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control provides various options to customize the height of items.
 
 ## Customize Item Height
 

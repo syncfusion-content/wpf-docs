@@ -9,7 +9,7 @@ documentation: ug
 
 # Expand and Collapse in WPF TreeView
 
-The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control allows you to expand and collapse nodes either through user interaction or programmatically. The WPF TreeView is implemented through the `SfTreeView` class.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control allows you to expand and collapse nodes either through user interaction or programmatically.
 
 ## Expand Action Trigger
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # ContextMenu in WPF TreeView
 
-This section explains how to show a context menu and use built-in and custom commands in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control. The WPF TreeView is implemented through the `SfTreeView` class.
+This section explains how to show a context menu and use built-in and custom commands in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control.
 
 ## ContextMenu for Nodes
 

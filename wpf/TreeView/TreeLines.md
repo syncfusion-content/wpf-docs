@@ -9,7 +9,7 @@ documentation: ug
 
 # Tree lines in WPF TreeView
 
-The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control allows you to show tree lines for its nodes by setting the [ShowLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property to `true`. The default value of the `ShowLines` property is `false`. The WPF TreeView is implemented through the `SfTreeView` class.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control allows you to show tree lines for its nodes by setting the [ShowLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property to `true`. The default value of the `ShowLines` property is `false`.
 
 {% tabs %}
 {% highlight xaml %}

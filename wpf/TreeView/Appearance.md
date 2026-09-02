@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF TreeView
 
-This section explains the appearance customization options available in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control. The WPF TreeView is implemented through the `SfTreeView` class.
+This section explains the appearance customization options available in the [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control.
 
 ## ItemTemplate
 

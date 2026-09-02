@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag and drop in WPF TreeView
 
-The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control supports dragging and dropping items within the control by setting the [AllowDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDragging) property to `true`. It also supports dragging and dropping items between the TreeView and other controls, such as `ListView` and `SfDataGrid`. The WPF TreeView is implemented through the `SfTreeView` class.
+The [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) control supports dragging and dropping items within the control by setting the [AllowDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDragging) property to `true`. It also supports dragging and dropping items between the TreeView and other controls, such as `ListView` and `SfDataGrid`.
 
 {% tabs %}
 {% highlight xaml %}
