@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Navigation Mode in WPF SfTreeNavigator | Syncfusion®
-description: Navigation Mode support in SfTreeNavigator enables configurable navigation behavior, allowing users to browse and interact with hierarchical items efficiently.
+title: Navigation Mode in WPF Tree Navigator | Syncfusion®
+description: Navigation Mode support in Tree Navigator enables configurable navigation behavior, allowing users to browse and interact with hierarchical items efficiently.
 platform: wpf
 control: SfTreeNavigator 
 documentation: ug
 ---
 
-# Navigation Mode in WPF SfTreeNavigator
+# Navigation Mode in WPF Tree Navigator
 
 Two types of Navigation mode are supported by Tree Navigator to navigate between hierarchy levels. 
 
@@ -28,7 +28,7 @@ In this navigation mode, the header of current hierarchy level item can be displ
 {% endhighlight %}
 {% endtabs %}
 
-![Navigation-Mode_img1](Navigation-Mode_images/Navigation-Mode_img1.png)
+![Default navigation mode in Tree Navigator](Navigation-Mode_images/Navigation-Mode_img1.png)
 
 ## Extended 
 
@@ -47,6 +47,6 @@ In this navigation mode, header of each level from the root to current level sta
 {% endhighlight %}
 {% endtabs %}
 
-![Navigation-Mode_img2](Navigation-Mode_images/Navigation-Mode_img2.png)
+![Extended navigation mode in Tree Navigator](Navigation-Mode_images/Navigation-Mode_img2.png)
 
 N> Header of the Extended mode can be styled using TreeNavigatorHeaderItem available in the same namespace.

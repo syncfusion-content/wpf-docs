@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Suggestions in WPF SfAIAssistView | Syncfusion®
-description: The suggestions feature in WPF SfAIAssistView displays AI-driven recommendations, helping users quickly interact with and refine their prompts.
+title: Suggestions in WPF AI AssistView | Syncfusion®
+description: The suggestions feature in WPF AI AssistView displays AI-driven recommendations, helping users quickly interact with and refine their prompts.
 platform: wpf
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Suggestions in WPF SfAIAssistView
+# Suggestions in WPF AI AssistView
 
 By using the [Suggestions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_Suggestions) property, the AssistView displays AI-driven suggestions in the bottom right corner, making it easy for users to quickly respond or choose from relevant options.
 
