@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WPF TreeView | Syncfusion®
-description: Selection in SfTreeView enables single and multiple node selection, programmatic selection, selection binding, and selection events.
+description: Selection in WPF TreeView enables single and multiple node selection, programmatic selection, selection binding, and selection events.
 platform: wpf
 control: SfTreeView
 documentation: ug

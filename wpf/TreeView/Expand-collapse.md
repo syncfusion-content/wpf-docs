@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand and Collapse in WPF TreeView | Syncfusion®
-description: Expand and Collapse in SfTreeView supports user-driven, programmatic, and data-bound node expansion with customizable behavior.
+description: Expand and Collapse in WPF TreeView supports user-driven, programmatic, and data-bound node expansion with customizable behavior.
 platform: wpf
 control: SfTreeView
 documentation: ug
@@ -31,7 +31,7 @@ sfTreeView.ExpandActionTrigger = ExpandActionTrigger.Node;
 
 ## Auto Expand Mode
 
-By default, WPF TreeView items are collapsed. You can define how nodes are expanded when the WPF TreeView is loaded by using the [AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AutoExpandMode) property.
+By default, TreeView items are collapsed. You can specify how nodes are expanded when the control is loaded by using the [AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AutoExpandMode) property.
 
 The `AutoExpandMode` property is only applicable for bound mode. For unbound mode, set the `IsExpanded` property to `true` on each `TreeViewNode` when creating the nodes to have them expanded when the WPF TreeView loads.
 

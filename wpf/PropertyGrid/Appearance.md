@@ -269,4 +269,4 @@ The WPF PropertyGrid supports various built-in themes. Refer to the below links 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF PropertyGrid](Getting-Started_images/wpf-propertygrid-theme.png)
+![Setting theme to PropertyGrid](Getting-Started_images/wpf-propertygrid-theme.png)

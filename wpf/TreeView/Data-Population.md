@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Data Population in WPF TreeView | Syncfusion®
-description: Data Population in SfTreeView supports displaying hierarchical data through data binding or manual node creation in bound and unbound modes.
+description: Data Population in WPF TreeView supports displaying hierarchical data through data binding or manual node creation in bound and unbound modes.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 # Data Population in WPF TreeView (SfTreeView)
 
-WPF TreeView can be populated either with a data source by using the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property, or by creating and adding the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) in a hierarchical structure to the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) property.
+The WPF TreeView can be populated either with a data source by using the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property, or by creating and adding the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) in a hierarchical structure to the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) property.
 
 ## Populating Nodes by data binding – Bound Mode
 

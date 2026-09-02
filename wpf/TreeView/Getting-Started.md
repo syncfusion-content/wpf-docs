@@ -29,7 +29,7 @@ Follow the steps below to create a new WPF application and add the WPF TreeView 
 
 ### Creating the project
 
-Create a new WPF Project in Visual Studio to display [TreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) with data objects.
+Create a new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.html) with data objects.
 
 ### Add WPF TreeView to Project
 
@@ -187,7 +187,7 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/
 
 ### Bind to a hierarchical data source - Bound Mode
 
-You can create a WPF TreeView by binding the ItemsSource to a hierarchical data source. To create a TreeView using data binding, set a hierarchical collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property. Then in the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) and [ExpanderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderTemplate), set the child items collection to the `ItemsSource` property.
+You can create a WPF TreeView by binding a hierarchical data source to the `ItemsSource` property. To display child items, specify the child item collection through the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property in the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) and [ExpanderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderTemplate).
 
 {% tabs %}
 {% highlight xaml %}
@@ -398,7 +398,7 @@ public class FileManagerViewModel
 
 ### Bind to a Hierarchy Property Descriptors data source - Bound Mode
 
- You can create a WPF TreeView by binding the `ItemsSource` to a hierarchy property descriptors data source. To create a TreeView using hierarchical data binding, set a hierarchical collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property, and then set the TargetType and [ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ChildPropertyName) property values in [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_HierarchyPropertyDescriptors).
+ You can create a WPF TreeView by binding the `ItemsSource` property to a hierarchical data source. To establish the hierarchy, set the TargetType and [ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ChildPropertyName) values in [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_HierarchyPropertyDescriptors).
  
  {% tabs %}
 {% highlight xaml %}

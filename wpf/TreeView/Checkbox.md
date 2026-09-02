@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Checkbox in WPF TreeView | Syncfusion®
-description: Checkbox in SfTreeView supports checking nodes, managing checked items, and controlling parent-child checkbox state behavior.
+description: Checkbox in WPF TreeView supports checking nodes, managing checked items, and controlling parent-child checkbox state behavior.
 platform: wpf
 control: SfTreeView
 documentation: ug

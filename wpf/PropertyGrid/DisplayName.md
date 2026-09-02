@@ -152,7 +152,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Change width of property's name column
 
-By default, you can change the width of property's name column by using grid splitter after loading the control. If you want to set or changes the width of property's name column when loading the `WPF PropertyGrid`, use the [PropertyNameColumnDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_PropertyNameColumnDefinition) property. 
+By default, you can change the width of property's name column by using grid splitter after loading the control. If you want to set or changes the width of property's name column when loading the `PropertyGrid`, use the [PropertyNameColumnDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_PropertyNameColumnDefinition) property. 
 
 You can use the `double` or `Star` values for changing the column definition. The default value of `PropertyNameColumnDefinition` property is `1*`. Property's value column always occupiers `1*`, which cannot be changed.
 

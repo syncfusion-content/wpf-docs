@@ -56,6 +56,6 @@ private void PropertyGrid_AutoGeneratingPropertyGridItem(object sender, AutoGene
 
 Here, `Grid.Column` and `SkinStorage.VisualStyle` are the attached properties of SelectedObject.
 
-![Show / hide attached properties in WPF PropertyGrid](Attached-properties-images/wpf-propertygrid-attached-properties.png)
+![Show / hide attached properties in PropertyGrid](Attached-properties-images/wpf-propertygrid-attached-properties.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Attached-properties).

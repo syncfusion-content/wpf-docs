@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF TreeView | Syncfusion®
-description: Appearance in SfTreeView enables customizing node templates, styling, indentation, expanders, and animations for tailored tree views.
+description: Appearance in WPF TreeView enables customizing node templates, styling, indentation, expanders, and animations for tailored tree views.
 platform: wpf
 control: SfTreeView
 documentation: ug

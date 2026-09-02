@@ -172,7 +172,7 @@ propertyGrid1.SortDirection = null;
 
 ![PropertyGrid explore the nested properties of the specific property item in FlatMode](Expand-Nested-Properties_images/PropertyGridAttribute.png)
 
-Here, the `PropertyExpandMode` property value is `FlatMode`. But, Specific properties like `Bank, DOB` and `Address` property's nested properties are explored in the `WPF PropertyGrid`.
+Here, the `PropertyExpandMode` property value is `FlatMode`. But, Specific properties like `Bank, DOB` and `Address` property's nested properties are explored in the `PropertyGrid`.
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Attribute_NestedMode) in GitHub
 
@@ -270,6 +270,6 @@ private void PropertyGrid_AutoGeneratingPropertyGridItem(object sender, AutoGene
 
 ![PropertyGrid hides the nested properties of the specific property item in NestedMode](Expand-Nested-Properties_images/AutoGeneratingPropertyGridItem.png)
 
-Here, the `PropertyExpandMode` property value is `NestedMode`. But, specific properties like `JoiningDate` and `Address` property's nested properties are hidden in the `WPF PropertyGrid`.
+Here, the `PropertyExpandMode` property value is `NestedMode`. But, specific properties like `JoiningDate` and `Address` property's nested properties are hidden in the `PropertyGrid`.
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem_NestedMode) in GitHub

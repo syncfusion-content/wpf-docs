@@ -53,8 +53,8 @@ propertyGrid.UpdateSourceMode = UpdateSourceMode.ReturnOrLostFocus;
 
 The SelectedObject value changes immediately when the target element property changes, as shown below:
 
-![Wpf PropertyGrid selected object value changes immediately](Binding-with-any-object_images/wpf-propertygrid-updatesourcemode-immediately.gif)
+![PropertyGrid selected object value changes immediately](Binding-with-any-object_images/wpf-propertygrid-updatesourcemode-immediately.gif)
 
 The SelectedObject value changes only when the target element lost its focus or when enter key is pressed, as shown below.
 
-![Wpf PropertyGrid selected object value changes during editor lost focus](Binding-with-any-object_images/wpf-propertygrid-updatesourcemode-lost-focus.gif)
+![PropertyGrid selected object value changes during editor lost focus](Binding-with-any-object_images/wpf-propertygrid-updatesourcemode-lost-focus.gif)

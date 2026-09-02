@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tree Lines in WPF TreeView | Syncfusion®
-description: Tree Lines in SfTreeView enable visualizing hierarchical relationships with customizable line display, color, and thickness.
+description: Tree Lines in WPF TreeView enable visualizing hierarchical relationships with customizable line display, color, and thickness.
 platform: wpf
 control: SfTreeView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Tree lines in WPF TreeView (SfTreeView)
 
-WPF TreeView allows to show the tree lines for its nodes by enabling the [ShowLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property to `true`. The default value is `false`.
+The WPF TreeView allows to show the tree lines for its nodes by enabling the [ShowLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property to `true`. The default value is `false`.
 
 {% tabs %}
 {% highlight xaml %}
